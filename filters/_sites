@@ -2,24 +2,24 @@
 
 !! banners
 ! generalized
-##[class*="banner"]
-##[id*="banner"]
-##[class*="Banner"]
-##[id*="Banner"]
-##[class*="adfox"]
-##[id*="adfox"]
-##[class*="adriver"]
-##[id*="adriver"]
-##[class*="adsense"]
-##[id*="adsense"]
-##[class*="marketing"]
-##[id*="marketing"]
-##[class*="Promo"]
-##[id*="Promo"]
-##[class*="promo"]
-##[id*="promo"]
-##[class*="sponsor"]
-##[id*="sponsor"]
+##[class*="banner"]:not(html):not(body)
+##[id*="banner"]:not(html):not(body)
+##[class*="Banner"]:not(html):not(body)
+##[id*="Banner"]:not(html):not(body)
+##[class*="adfox"]:not(html):not(body)
+##[id*="adfox"]:not(html):not(body)
+##[class*="adriver"]:not(html):not(body)
+##[id*="adriver"]:not(html):not(body)
+##[class*="adsense"]:not(html):not(body)
+##[id*="adsense"]:not(html):not(body)
+##[class*="marketing"]:not(html):not(body)
+##[id*="marketing"]:not(html):not(body)
+##[class*="Promo"]:not(html):not(body)
+##[id*="Promo"]:not(html):not(body)
+##[class*="promo"]:not(html):not(body)
+##[id*="promo"]:not(html):not(body)
+##[class*="sponsor"]:not(html):not(body)
+##[id*="sponsor"]:not(html):not(body)
 ! other
 ###abAlert
 ###abnban
@@ -253,22 +253,26 @@
 
 !! social buttons
 ! generalized
-##[class*="Facebook"]
-##[id*="Facebook"]
-##[class*="facebook"]
-##[id*="facebook"]
-##[class*="Social"]
-##[id*="Social"]
-##[class*="social"]
-##[id*="social"]
-##[class*="Share"]
-##[id*="Share"]
-##[class*="share"]
-##[id*="share"]
-##[class*="Sharing"]
-##[id*="Sharing"]
-##[class*="sharing"]
-##[id*="sharing"]
+##[class*="Facebook"]:not(html):not(body)
+##[id*="Facebook"]:not(html):not(body)
+##[class*="facebook"]:not(html):not(body)
+##[id*="facebook"]:not(html):not(body)
+##[class*="Follow"]:not(html):not(body)
+##[id*="Follow"]:not(html):not(body)
+##[class*="follow"]:not(html):not(body)
+##[id*="follow"]:not(html):not(body)
+##[class*="Social"]:not(html):not(body)
+##[id*="Social"]:not(html):not(body)
+##[class*="social"]:not(html):not(body)
+##[id*="social"]:not(html):not(body)
+##[class*="Share"]:not(html):not(body)
+##[id*="Share"]:not(html):not(body)
+##[class*="share"]:not(html):not(body)
+##[id*="share"]:not(html):not(body)
+##[class*="Sharing"]:not(html):not(body)
+##[id*="Sharing"]:not(html):not(body)
+##[class*="sharing"]:not(html):not(body)
+##[id*="sharing"]:not(html):not(body)
 ! other
 ##.customGPlusSignIn
 ##.button-like
@@ -276,12 +280,10 @@
 ##.fa-twitter
 ##.fa-vk
 ##.fb-sign-in
-##.footer__follow-us
 ##.footer_soc
 ##.footer-soc-block
 ##.google-icon
 ##.hp-panel__newsletter-signup
-##.hp_box-followus
 ##.hp_sociaisIcons
 ##.ic_fb
 ##.ic_googleplus
@@ -290,10 +292,6 @@
 ##.ic_twitter
 ##.ic-alert-email-newsletter-signup
 ##.icn_fcbk
-##.icn_follow_email
-##.icn_follow_mobile
-##.icn_follow_text
-##.icn_follow_twitter
 ##.icn_twitter
 ##.icn_twtr
 ##.icn_youtube
@@ -325,7 +323,6 @@
 ##.ico_tumblr
 ##.ico_twitter
 ##.ico-fb
-##.ico-follow-us
 ##.ico-googleplus
 ##.ico-google-plus
 ##.ico-gplus
@@ -491,7 +488,6 @@
 ##.icons-flickr
 ##.icons-googleplus
 ##.icons-gplus
-##.icons-gplus_follow_small
 ##.icons-icon-twitter
 ##.icon-sina-weibo
 ##.icons-instagram
@@ -503,7 +499,6 @@
 ##.icon-stumbleupon
 ##.icons-twitter
 ##.icon-s-twitter
-##.icons-twitter_follow_small
 ##.icons-vimeo
 ##.icons-youtube
 ##.icon-telegram
@@ -768,174 +763,19 @@ irecommend.ru#@#.rate
 
 !! cookies
 ! generalized
-~adblockplus.org##[class*="cookie"]
+##[class*="Cookie"]:not(html):not(body)
+##[id*="Cookie"]:not(html):not(body)
+! exception is from AdGuard Annoyances filter
+~1plus1.ua##[class*="cookie"]:not(html):not(body)
+##[id*="cookie"]:not(html):not(body)
 ! other
-###ab1_cookie_bar
 ###abe-gdpr
-###aboutCookieUsageBox
-###acceptcookie
-###accept_cookie
-###accept_cookie_box
-###accept_cookie_widget
-###accept_cookies
-###accept_cookies_cont_outer
-###accept_cookies_div
-###acceptance-cookie-modal
-###ac_cookiesvalidation
-###agree_cookie_id
-##.b-cookie-notification
-##.bottom__cookie-block
-###cadre_alert_cookies
-###ck-cookie-statement
-###clearfy-cookie
-##.clearfy-cookie
 ##.coockie-notification-block
-##.cookie
-###cookie-agreement
-##.cookie-agreement
-##.cookiealert
-###cookie-alert
-##.cookie-announce
-###cookie_bar
-###cookie-bar
-###cookiebar
-###cookie-bottom
-##.cookie-bottom-layer
-##.cookieBox
-###cookieChoiceModalOverlay
-###cookieDisclaimerContainer
-##.cookieHide
-###cookie-law-info-bar
-##.cookie-message
-###__cookiemsg
-###cookiemsgbox
-###cookie-notice
-##.cookie-notification
-##.cookie-notify
-##.CookieNotifyWidget__wrapper
-##.cookie-overlay
-###cookie_policy
-##.CookiePopup__popup____KSqw
-###cookie-popup-rappler
-###cookie-prompt
-##.cookies
-###__cookies_
-###__cookies__
-###cookies-agree
-###cookiesBar
-###cookies-bar
-###cookiesBarAnnouncement
-###CookiesBox
-###cookies-box
-###cookies-box-inner
-###cookies-box-outer-layer
-###cookies-button-container
-###cookiesCapa
-###cookiesCard
-###cookies-charter
-###cookiescheck
-###cookiesCheck
-###cookiesChecker
-###cookieschoice
-###cookies-cnil-info
-###cookies-cnil-infos-content
-###cookiesck
-##.cookies-container
-###cookiescript_injected
-##.cookies-message
-##.cookies-notification
-###cookies_policy_wrap
-##.cookie-ui__cookieUI___3fxp1
-###cookieWarning
-###cookie-warning
-###cookie_warning
-###cookie_warning_container
-###CookieWrapper
-###CybotCookiebotDialog
-##.devsite-notification-eu-cookie
-###dfx-cookies-notification
-##.ds2-cookie-disclaimer
-###eu-cookie-law
-###eucookie
-###euCookieDialog
-##.footer__cookie
 ###gdprbar
 ##.gdrp-popup-content
-##.gpm-cookie-accepted
-##.j-cookieContainer
-##.jix_acceptcookies_box
-##.jnews-cookie-law-policy
-##.js-cookie-bar
-! exception is from AdGuard Annoyances filter
-##.js-cookie-compliance:not(html):not(body)
-##.js-cookieComply
-##.js-cookie-consent
-##.js-cookie-container
-##.js-cookie-disclaimer
-##.js-cookie-light
-##.js-cookie-message
-##.js-cookieMessage
-##.js-cookie-notice
-##.js-cookie-policy
-##.js-cookie-policy-header
-! exception is from AdGuard Annoyances filter
-~1plus1.ua##.js-cookies
-##.js-cookie-widget
-###modalCookieContainer
-##.Navbar-cookieCompliance
-###nbcCookieChoice
-###oupcookiepolicy_message
-###pjAcceptCookieBar
-###qb_cookie_consent_main
-###rbiCookiePolicy_pushDownBoxWrapper
-###rdm-cookie-consent
-###section-cookie_notitication
-###stCookiebox
-###StCookieStyle-bar
-###stdCookie
 ###sticky-bar-gdpr
-###stickycookiePolicy
-###sticky-cookies
-###stickynote4cookies
-###sticky-popup-cookies
-###stk-cookie-bar
 ###stm_gdpr_popup-main
-###stnc-cookiecontract
-###sto-cookieMessage
-###storefront_cookie_widget
-###storm-cookie
-###stormCookieMelding
-###stormCookiePopup
-###stormCookieWall
-###stormdigital-cookieWallId
-###strawberry-cookiebar
-###stripe-cookie
-###subserviceCookiesBar
-###sun-cookieMessage
-###sun-cookieMessageInner
-###sv-cookie-consent
-###SVDv3_cookie
-###svtCookieInfoContainer
-###svtCookieInformationContainer
-###sw_cookies
-###swEUCookiesID
-###swl-cookie-wrapper
-###SwOverlayCookies
-###sysCookies
-###szCookiePolicy
-###szcookiewrp
-###szkCookieInfoBox
-###szoCookieBar
 ###__tealiumGDPRecModal
-###tid_cookieWarning
-###tify_cookie_policy
-###tiFy_CookieLaw
-###tins_cookie_bar
-###tipCookies
-###tiroir_cookie
-###_ubuntu-it_cookie_policy
-##.warning-cookie-block
-##.widget_eu_cookie_law_widget
 
 ! register alert
 ##.cGuestTeaser
@@ -1075,7 +915,6 @@ irecommend.ru#@#.rate
 
 ! js off
 ##.javascriptoff
-##.js-nocookies.warning
 ##.no-jscript
 ###noscript-warning
 
@@ -1146,6 +985,9 @@ irecommend.ru#@#.rate
 @@||vk.com/js/api/openapi.js$badfilter
 
 
+
+! exception is from AdGuard Annoyances filter
+1plus1.ua#$#.js-cookies { display: none!important; }
 
 220-volt.ru##.toolsbar-wrap
 
