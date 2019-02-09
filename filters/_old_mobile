@@ -1,40 +1,148 @@
 ! It seems, Ublock Origin for mobile cannot understand wildcard filters
 ! So, this file will be some sort of archive (or trashbin)
 
+!! banners
 
-
-
+! ##[class*="callback"]:not(html):not(body):not(article)
+! ##[id*="callback"]:not(html):not(body):not(article)
 ##.callback
 ###callback-popup
 
+! ##[class*="Chat"]:not(html):not(body):not(article)
+! ##[id*="Chat"]:not(html):not(body):not(article)
+! ##[class*="chat"]:not(html):not(body):not(article)
+! ##[id*="chat"]:not(html):not(body):not(article)
+! ##[class*="copyright"]:not(html):not(body):not(article)
+! ##[id*="copyright"]:not(html):not(body):not(article)
+! ##[class*="-cta-"]:not(html):not(body):not(article)
+! ##[id*="-cta-"]:not(html):not(body):not(article)
+! ##[class^="dfp"]:not(html):not(body):not(article)
+! ##[id^="dfp"]:not(html):not(body):not(article)
+! ##[class$="dfp"]:not(html):not(body):not(article)
+! ##[id$="dfp"]:not(html):not(body):not(article)
+! ##[class*="-dfp"]:not(html):not(body):not(article)
+! ##[id*="-dfp"]:not(html):not(body):not(article)
+! ##[class*="fonbet"]:not(html):not(body):not(article)
+! ##[id*="fonbet"]:not(html):not(body):not(article)
+! ##[class*="leaderboard"]:not(html):not(body):not(article)
+! ##[id*="leaderboard"]:not(html):not(body):not(article)
+! ##[class*="Marketing"]:not(html):not(body):not(article)
+! ##[id*="Marketing"]:not(html):not(body):not(article)
+! ##[class*="marketing"]:not(html):not(body):not(article)
+! ##[id*="marketing"]:not(html):not(body):not(article)
+! ##[class*="partner"]:not(html):not(body):not(article)
+! ##[id*="partner"]:not(html):not(body):not(article)
+! ##[class*="paywall"]:not(html):not(body):not(article)
+! ##[id*="paywall"]:not(html):not(body):not(article)
+! ##[class*="Promo"]:not(html):not(body):not(article)
+! ##[id*="Promo"]:not(html):not(body):not(article)
+! ##[class*="promo"]:not(html):not(body):not(article)
+! ##[id*="promo"]:not(html):not(body):not(article)
+! ##[class*="reklam"]:not(html):not(body):not(article)
+! ##[id*="reklam"]:not(html):not(body):not(article)
+! ##[class*="Sponsor"]:not(html):not(body):not(article)
+! ##[id*="Sponsor"]:not(html):not(body):not(article)
+! ##[class*="sponsor"]:not(html):not(body):not(article)
+! ##[id*="sponsor"]:not(html):not(body):not(article)
+! ##[class^="WNAd"]:not(html):not(body):not(article)
+! ##[id^="WNAd"]:not(html):not(body):not(article)
+
+
+!! social buttons
+! ##[class*="addthis"]:not(html):not(body):not(article)
+! ##[id*="addthis"]:not(html):not(body):not(article)
+! ##[class*="Facebook"]:not(html):not(body):not(article)
+! ##[id*="Facebook"]:not(html):not(body):not(article)
+! ##[class*="facebook"]:not(html):not(body):not(article)
+! ##[id*="facebook"]:not(html):not(body):not(article)
+! ##[class^="FB"]:not(html):not(body):not(article)
+! ##[id^="FB"]:not(html):not(body):not(article)
+! ##[class$="FB"]:not(html):not(body):not(article)
+! ##[id$="FB"]:not(html):not(body):not(article)
+! ~aliexpress.com##[class^="fb"]:not(html):not(body):not(article)
+! ~aliexpress.com##[id^="fb"]:not(html):not(body):not(article)
+! ##[class$="fb"]:not(html):not(body):not(article)
+! ##[id$="fb"]:not(html):not(body):not(article)
+! ##[class*="-fb"]:not(html):not(body):not(article)
+! ##[id*="-fb"]:not(html):not(body):not(article)
+! ##[class*="_fb"]:not(html):not(body):not(article)
+! ##[id*="_fb"]:not(html):not(body):not(article)
+! ##[class*="FBLIKE"]:not(html):not(body):not(article)
+! ##[id*="FBLIKE"]:not(html):not(body):not(article)
+! ##[class*="FBLike"]:not(html):not(body):not(article)
+! ##[id*="FBLike"]:not(html):not(body):not(article)
+! ##[class*="FbLike"]:not(html):not(body):not(article)
+! ##[id*="FbLike"]:not(html):not(body):not(article)
+! ##[class*="fblike"]:not(html):not(body):not(article)
+! ##[id*="fblike"]:not(html):not(body):not(article)
+! ##[class*="Follow"]:not(html):not(body):not(article)
+! ##[id*="Follow"]:not(html):not(body):not(article)
+! ##[class*="follow"]:not(html):not(body):not(article)
+! ##[id*="follow"]:not(html):not(body):not(article)
+! ##[class*="GooglePlus"]:not(html):not(body):not(article)
+! ##[id*="GooglePlus"]:not(html):not(body):not(article)
+! ##[class*="Googleplus"]:not(html):not(body):not(article)
+! ##[id*="Googleplus"]:not(html):not(body):not(article)
+! ##[class*="googlePlus"]:not(html):not(body):not(article)
+! ##[id*="googlePlus"]:not(html):not(body):not(article)
+! ##[class*="googleplus"]:not(html):not(body):not(article)
+! ##[id*="googleplus"]:not(html):not(body):not(article)
+! ##[class*="google_plus"]:not(html):not(body):not(article)
+! ##[id*="google_plus"]:not(html):not(body):not(article)
+! ##[class*="google-plus"]:not(html):not(body):not(article)
+! ##[id*="google-plus"]:not(html):not(body):not(article)
+! ##[class*="GPlus"]:not(html):not(body):not(article)
+! ##[id*="GPlus"]:not(html):not(body):not(article)
+! ##[class*="gplus"]:not(html):not(body):not(article)
+! ##[id*="gplus"]:not(html):not(body):not(article)
+! ##[class*="Instagram"]:not(html):not(body):not(article)
+! ##[id*="Instagram"]:not(html):not(body):not(article)
+! ##[id$="-soc"]:not(html):not(body):not(article)
+! ##[class$="_soc"]:not(html):not(body):not(article)
+! ##[id$="_soc"]:not(html):not(body):not(article)
+! ##[class^="soc_"]:not(html):not(body):not(article)
+! ##[id^="soc_"]:not(html):not(body):not(article)
+! ##[class^="soc-"]:not(html):not(body):not(article)
+! ##[id^="soc-"]:not(html):not(body):not(article)
+! ##[class*="-soc-"]:not(html):not(body):not(article)
+! ##[id*="-soc-"]:not(html):not(body):not(article)
+! ##[class*="_soc_"]:not(html):not(body):not(article)
+! ##[id*="_soc_"]:not(html):not(body):not(article)
+! ##[class*="Social"]:not(html):not(body):not(article)
+! ##[id*="Social"]:not(html):not(body):not(article)
+! ##[class*="social"]:not(html):not(body):not(article)
+! ##[id*="social"]:not(html):not(body):not(article)
+! ##[class*="Sociaux"]:not(html):not(body):not(article)
+! ##[id*="Sociaux"]:not(html):not(body):not(article)
+! ##[class*="sociaux"]:not(html):not(body):not(article)
+! ##[id*="sociaux"]:not(html):not(body):not(article)
+! ##[class*="Tweet"]:not(html):not(body):not(article)
+! ##[id*="Tweet"]:not(html):not(body):not(article)
+! ##[class*="tweet"]:not(html):not(body):not(article)
+! ##[id*="tweet"]:not(html):not(body):not(article)
+! ##[class*="Twitter"]:not(html):not(body):not(article)
+! ##[id*="Twitter"]:not(html):not(body):not(article)
+! ##[class*="twitter"]:not(html):not(body):not(article)
+! ##[id*="twitter"]:not(html):not(body):not(article)
+! ##[class*="zocial"]:not(html):not(body):not(article)
+! ##[id*="zocial"]:not(html):not(body):not(article)
+
+
+!! ratings and surveys
+! ~aliexpress.com##[class*="feedback"]:not(html):not(body)
+! ~aliexpress.com##[id*="feedback"]:not(html):not(body)
+! ##[class*="Survey"]:not(html):not(body)
+! ##[id*="Survey"]:not(html):not(body)
+! ##[class*="survey"]:not(html):not(body)
+! ##[id*="survey"]:not(html):not(body)
+
+
 !! up button
+
 ! ##[class*="scroll-top"]:not(html):not(body)
 ! ##[id*="scroll-top"]:not(html):not(body)
 ##.hz-scroll-top__button
-
-! ##[class*="scroll_top"]:not(html):not(body)
-! ##[id*="scroll_top"]:not(html):not(body)
-! ##[class*="scrolltop"]:not(html):not(body)
-! ##[id*="scrolltop"]:not(html):not(body)
-! ##[class*="ScrollTop"]:not(html):not(body)
-! ##[id*="ScrollTop"]:not(html):not(body)
-! ##[class*="scrollTop"]:not(html):not(body)
-! ##[id*="scrollTop"]:not(html):not(body)
-! ##[class*="_to_top"]:not(html):not(body)
-! ##[id*="_to_top"]:not(html):not(body)
-! ##[class*="-to-top"]:not(html):not(body)
-! ##[id*="-to-top"]:not(html):not(body)
-! ##[class*="ToTop"]:not(html):not(body)
-! ##[id*="ToTop"]:not(html):not(body)
-###BackToTop
-###backToTop
-
-
-
 ##.scroll-top
-##.scrollTop
-##.scrolltop
-###scrollTop
 ##.scroll-top-arrow
 ##.scroll-top-btn
 ##.scroll-top-button
@@ -43,9 +151,94 @@
 ##.scroll-top-inner
 ##.scroll-top-wrapper
 
+! ##[class*="scroll_top"]:not(html):not(body)
+! ##[id*="scroll_top"]:not(html):not(body)
+
+! ##[class*="scrolltop"]:not(html):not(body)
+! ##[id*="scrolltop"]:not(html):not(body)
+##.scrolltop
+
+! ##[class*="ScrollTop"]:not(html):not(body)
+! ##[id*="ScrollTop"]:not(html):not(body)
+##.scrollTop
+###scrollTop
+
+! ##[class*="scrollTop"]:not(html):not(body)
+! ##[id*="scrollTop"]:not(html):not(body)
+
+! ##[class*="_to_top"]:not(html):not(body)
+! ##[id*="_to_top"]:not(html):not(body)
+
+! ##[class*="-to-top"]:not(html):not(body)
+! ##[id*="-to-top"]:not(html):not(body)
+
+! ##[class*="ToTop"]:not(html):not(body)
+! ##[id*="ToTop"]:not(html):not(body)
+###BackToTop
+###backToTop
 
 
+!! cookies
+
+! ##[class*="Cookie"]:not(html):not(body):not(article)
+! ##[id*="Cookie"]:not(html):not(body):not(article)
+
+! exception is from AdGuard Annoyances filter
+! ~1plus1.ua##[class*="cookie"]:not(html):not(body):not(article)
+! ##[id*="cookie"]:not(html):not(body):not(article)
+! ##[class*="GDPR"]:not(html):not(body):not(article)
+! ##[id*="GDPR"]:not(html):not(body):not(article)
+! ##[class*="Gdpr"]:not(html):not(body):not(article)
+! ##[id*="Gdpr"]:not(html):not(body):not(article)
+! ##[class*="gdpr"]:not(html):not(body):not(article)
+! ##[id*="gdpr"]:not(html):not(body):not(article)
+! ##[class*="Privacy"]:not(html):not(body):not(article)
+! ##[id*="Privacy"]:not(html):not(body):not(article)
+! ##[class*="privacy"]:not(html):not(body):not(article)
+! ##[id*="privacy"]:not(html):not(body):not(article)
+
+
+!! register alert
+
+
+!! apps
+
+
+!! signatures on forums
+
+
+!! subscribe forms
+
+! ##[class*="Letter"]:not(html):not(body):not(article)
+! ##[id*="Letter"]:not(html):not(body):not(article)
+! ##[class*="letter"]:not(html):not(body):not(article)
+! ##[id*="letter"]:not(html):not(body):not(article)
+
+! ##[class*="morning_email"]:not(html):not(body):not(article)
+! ##[id*="morning_email"]:not(html):not(body):not(article)
 ###dc_morning_email-53
 ###dc_morning_email-60
 ###dc_morning_email-66
+
+! ##[class*="Subscr"]:not(html):not(body):not(article)
+! ##[id*="Subscr"]:not(html):not(body):not(article)
+! ##[class*="subscr"]:not(html):not(body):not(article)
+! ##[id*="subscr"]:not(html):not(body):not(article)
 ##.post_subscr
+
+
+!! js off
+
+
+!! consultants
+
+
+!! modals
+
+
+
+
+
+
+
+
