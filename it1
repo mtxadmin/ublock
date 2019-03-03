@@ -1,0 +1,31 @@
+! Title: Yet another small uBlock filter list
+! Description: 
+! Expires: 2 days
+! Please report any problems via GitHub issue ticket.
+
+
+! Todo readme: https://github.com/yourduskquibbles/webannoyances
+! Manual add friendly projects: (mostly from filterlists.com)
+! https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
+! https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
+! https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/modal.txt
+! https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/news.txt
+! https://easylist-downloads.adblockplus.org/cntblock.txt
+! https://easylist-downloads.adblockplus.org/bitblock.txt  ! exclude rss
+
+! Load hosts
+!#include hosts/_consultants
+!#include hosts/_marketing
+!#include hosts/_search_spam
+!#include hosts/_malware
+
+! Load sublists
+!#include filters/_sites
+!#include filters/_social
+!#include filters/google
+!#include filters/microsoft
+!#include filters/stackexchange
+!#include filters/yandex
+
+
+
