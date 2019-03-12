@@ -220,6 +220,7 @@
 ##.ya-taxi-widget__label
 ##.ya-taxi-widget__link
 
+
 !! callouts and calls to action
 ##[class*="-callout"]:not(html):not(body):not(article)
 ##[id*="-callout"]:not(html):not(body):not(article)
@@ -351,10 +352,8 @@
 ##[id*="Twitter"]:not(html):not(body):not(article)
 ##[class*="twitter"]:not(html):not(body):not(article)
 ##[id*="twitter"]:not(html):not(body):not(article)
-
 ##[class$="-vk"]:not(html):not(body):not(article)
 ##[id$="-vk"]:not(html):not(body):not(article)
-
 ##[class*="zocial"]:not(html):not(body):not(article)
 ##[id*="zocial"]:not(html):not(body):not(article)
 ! other
@@ -704,6 +703,7 @@ irecommend.ru#@#.rate
 ###WidgetScrollToTop
 ##.x-page-up-arrow
 
+
 !! cookies
 ! generalized
 ##[class*="Cookie"]:not(html):not(body):not(article)
@@ -847,12 +847,17 @@ irecommend.ru#@#.rate
 ##.v-footer__pays
 
 
+!! countdowns
+##[class*="Countdown"]:not(html):not(body):not(article)
+##[id*="Countdown"]:not(html):not(body):not(article)
+##[class*="countdown"]:not(html):not(body):not(article)
+##[id*="countdown"]:not(html):not(body):not(article)
+
+
 !! bottom bars and other sticky elements
 ! https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
 ! Important: If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO
 ##.bottom-bar
-###fixed-countdown-bar
-##.FixedCountdownBar_trigger
 ##.fixed_footer
 ##.footer-line
 ##.sticky-box
@@ -863,7 +868,6 @@ irecommend.ru#@#.rate
 ##.float-mail
 ##.float-phone
 ##.js-stickyFooter
-##sp-fixed-countdown-bar
 ##.sticky-code-block
 ##.toolbar-bottom
 
@@ -1195,9 +1199,6 @@ aliexpress.com##.shopping-history
 ! promotions
 aliexpress.com##.festival-header
 aliexpress.com###j-aliexpress-notice
-! countdowns
-aliexpress.com##.marking-countdown
-!aliexpress.com##.promotion-timerbar
 ! carousel sliders (only active)
 aliexpress.com##.prime-slideshow
 ! social login
@@ -1320,8 +1321,6 @@ aquavivo.ru##.company-wrap
 ||aquavivo.ru/bitrix/templates/aquavivo/images/header-bg.jpg$image
 ||aquavivo.ru/images/Document_aquavivo/Logo_1_1.png$image
 aquavivo.ru##.company-wrap
-aquavivo.ru##.countdown
-aquavivo.ru###countdown_dashboard
 aquavivo.ru##.es-elemen-sticky:style(position:static !important)
 
 arch-pro.ru##.flex-active-slide
@@ -1701,8 +1700,6 @@ doginhouse.ru###ez-toc-container
 dogsecrets.ru##.td-affix:style(position:static !important)
 
 doma-karkas.ru##.cf.header_slide
-doma-karkas.ru##.bookmark.favorite
-doma-karkas.ru##.footer_counters
 
 domamo.ru##.more_filtr_sticker
 
@@ -2041,7 +2038,6 @@ howtogeek.com##.footer-email
 hp.com##.footer-fixed
 hp.com##.reply-metoo-wrapper
 hp.com##.email_signup
-hp.com###disclaimer
 hp.com##.lia-quilt-column-icons.lia-quilt-column-single.lia-quilt-column-24.lia-quilt-column
 hp.com##.footer_lang_section
 hp.com##.open.hide.notifications-bg
@@ -2352,7 +2348,6 @@ leroymerlin.ru##.smrt42-button-red:style(background-color: rgb(75, 168, 66) !imp
 ! on the other hand, product on-shelf availability is much more important than designers think.
 leroymerlin.ru##.product__avalible > p > strong:style(color:red)
 ! seo texts
-leroymerlin.ru##.product__disclaimer
 leroymerlin.ru##.under-stores:has-text(Данные о ценах и наличии товаров находятся в режиме тестирования)
 leroymerlin.ru##.under-stores:has-text(Действительный цвет и текстура товаров)
 ! other
@@ -2657,7 +2652,6 @@ my-shop.ru##.footer_icon
 
 mysku.ru##.lite-center.login_in_comments
 
-mysql.com##.login-callout
 mysql.com###footer-bottom
 
 myaso-portal.ru##div > [href^="/bitrix/rk.php"]
@@ -2709,8 +2703,6 @@ novayagazeta.ru##div:matches-css(width:60px)
 !jumping header and background
 novayagazeta.ru###headerForAdditionalAds:style(position:absolute !important; transform:none !important)
 novayagazeta.ru##div:style(background-position:center 0px !important)
-!counter
-novayagazeta.ru/counter/
 
 obi.ru##.deliveryinfo
 obi.ru##.mobile-pd-lr15.empty-ratings.ratings.row-fluid
@@ -2723,7 +2715,6 @@ obi.ru##.fixed.default.auto-init.flyout-container
 obi.ru##.footer-top
 obi.ru##.js-tmt-layer-close.tmt-layer__greyout
 obi.ru##.tmt-layer
-obi.ru###Main-Content > .disclaimer
 obi.ru##.auto-init.js-wt-rightclick.slick-slider-last-view
 obi.ru##.slick--has-pagination.auto-init.js-wt-rightclick.slick-slider-last-view
 obi.ru##.advantages--centered.advantages.row-fluid
@@ -3281,7 +3272,6 @@ sekret-mastera.ru###header
 sekret-mastera.ru###respond
 
 serverwatch.com###header
-serverwatch.com###footerDisclaimerText
 
 shipilov.com##noindex
 
