@@ -112,15 +112,16 @@ yandex.*##.map-advert-control
 yandex.*##.sidebar-view:has-text(Развлечения)
 yandex.*##.content-panel-view
 yandex.*##.content-panel-view__show-more
-yandex.ru##._type_tooltip.popup
-yandex.ru##div.catalog-small-item-view:has(>._branding)
-yandex.ru##.showcase-button-view
+yandex.*##._type_tooltip.popup
+yandex.*##div.catalog-small-item-view:has(>._branding)
+yandex.*##.showcase-button-view
 
 yandex.*##.layout__right
 !yandex.*##.content__right_cols_12.content__right
 !yandex.*##.content__right_cols_8.content__right
 yandex.*##.button2_theme_orange
 yandex.*##.entity-search__ugc
+yandex.*##.home-panel-content-view__section
 
 ! context-age button, like 8+ or 12+
 yandex.*##.label_font_own.label_color_white.label:has-text(/^[0-9]+\+$/)
@@ -148,7 +149,7 @@ yastatic.net/s3/distribution/promo/
 ||money.yandex.ru/quickpay/
 
 ! answers
-yandex.ru##.answer-form
+yandex.*##.answer-form
 
 market.yandex.ru##.n-carousel
 market.yandex.ru##.n-entrypoint-carousel__inner
@@ -196,7 +197,7 @@ zen.yandex.ru##.article-right-block__stick-wrapper:has-text(Понравилос
 ||static-mon.yandex.net/static/main.js$important
 
 ! disable any whitelists
-||yandex.ru/metrika/$third-party,important
+||yandex.*/metrika/$third-party,important
 ||metrika.yandex.ru$third-party,important
 ||an.yandex.ru$important
 ||awaps.yandex.ru$important
