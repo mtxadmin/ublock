@@ -953,6 +953,10 @@ irecommend.ru#@#.rate
 ##.sticky-tagline
 ##.toolbar-bottom
 /plugins/q2w3-fixed-widget/
+/plugins/wp-ulike/
+/plugins/wp-fluid-images/
+/plugins/easy-table-of-contents/
+
 
 !! quickorder buttons
 ! generalized
@@ -3321,16 +3325,19 @@ planetgeek.ch##.typology-header:style(position:absolute !important)
 
 planetpowershell.com##.navbar-fixed-top:style(position:static !important)
 
-||planirovkainfo.ru/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/
-||planirovkainfo.ru/wp-content/plugins/q2w3-fixed-widget/
-||planirovkainfo.ru/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/
-||planirovkainfo.ru/wp-content/plugins/wp-ulike/
+!||planirovkainfo.ru/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/
+!||planirovkainfo.ru/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/
 ||planirovkainfo.ru/wp-content/themes/hotel-melbourne/js/flexslider/
-||planirovkainfo.ru/wp-content/plugins/wp-fluid-images/
-||planirovkainfo.ru/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/
-! todo: remove annoying scrolling
-!||planirovkainfo.ru/wp-content/themes/hotel-melbourne/js/aos.js
-!##div:style(opacity:1 !important)
+!||planirovkainfo.ru/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/
+! remove annoying scrolling
+||planirovkainfo.ru/*/aos.js
+planirovkainfo.ru##[data-aos="fade-up"]:style(opacity:1 !important; transform:none !important)
+! menu
+planirovkainfo.ru##.custom-logo-link
+planirovkainfo.ru##.nav:style(padding-top:0px !important; padding-bottom:0px !important)
+! other
+planirovkainfo.ru##.yuzo_related_post_widget
+planirovkainfo.ru##.planirov
 
 playground.ru###notificationBlock
 playground.ru##.announcement-block
