@@ -55,7 +55,9 @@
 ![](https://user-images.githubusercontent.com/22258847/39937403-1da7b8b8-553f-11e8-865a-73a3f2fa4bb8.PNG). 
 4. Пролистайте в самый низ и добавьте следующий адрес:
 
-> ```https://raw.githubusercontent.com/mtxadmin/ublock/master/it```
+> ```
+``https://raw.githubusercontent.com/mtxadmin/ublock/master/it``
+> ```
 
 Я заметил, что иногда он не добавляется с первой попытки. Да, бывает, честно говоря, не знаю, с чем это связано. Попробуйте еще раз. После успешной установки вы увидите там надпись "Yet another small uBlock filter list". Значит, у вас получилось.
 
