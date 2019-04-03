@@ -33,15 +33,17 @@
 
 Во-первых, если вы еще не установили [uBlock Origin](https://github.com/gorhill/uBlock) (вариант: [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore)), сделайте это прямо сейчас. На сегодняшний день это лучшая баннерорезка из существующих. Подумайте об этом так: десятки людей по всему миру будут стараться, чтобы вы увидели как можно *меньше* рекламы. 
 
-### На компьютере
+#### На компьютере
 - [uBlock Origin для Google Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 - [uBlock Origin для Mozilla FireFox](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 - [Nano Adblocker для Microsoft Edge](https://www.microsoft.com/en-us/p/nano-adblocker/9nsxdx2tdb3v/)
 - [uBlock Origin для Apple Safari](https://github.com/el1t/uBlock-Safari#installation)
 - [uBlock Origin для Opera](https://addons.opera.com/extensions/details/ublock/)
 
-### На телефоне
+#### На телефоне
 - [uBlock Origin для Mozilla FireFox на Android](https://addons.mozilla.org/EN-US/android/addon/ublock-origin/) 
+
+## Установка списка
 
 После установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). В предложении установки списка нажимаете Ok и всё, готово.
 
@@ -53,7 +55,7 @@
 ![](https://user-images.githubusercontent.com/22258847/39937403-1da7b8b8-553f-11e8-865a-73a3f2fa4bb8.PNG). 
 4. Пролистайте в самый низ и добавьте следующий адрес:
 
-https://raw.githubusercontent.com/mtxadmin/ublock/master/it
+**https://raw.githubusercontent.com/mtxadmin/ublock/master/it**
 
 Я заметил, что иногда он не добавляется с первой попытки. Да, бывает, честно говоря, не знаю, с чем это связано. Попробуйте еще раз. После успешной установки вы увидите там надпись "Yet another small uBlock filter list". Значит, у вас получилось.
 
