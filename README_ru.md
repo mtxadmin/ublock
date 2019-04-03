@@ -47,9 +47,9 @@
 
 Иногда этот метод может не работать. Пойдём длинным путём.
 
-1. Откройте окно uBlock Origin, нажав на кнопку !(https://user-images.githubusercontent.com/22258847/39936895-7ca7a8fc-553d-11e8-9496-45a96b623614.png).
-2. Перейдите в раздел настройки !(https://user-images.githubusercontent.com/22258847/39938114-5dc5cf00-5541-11e8-996d-5d583611f76f.png)
-3. Выберите вкладку [Списки](https://user-images.githubusercontent.com/22258847/39937403-1da7b8b8-553f-11e8-865a-73a3f2fa4bb8.PNG). 
+1. Откройте окно uBlock Origin, нажав на кнопку ![](https://user-images.githubusercontent.com/22258847/39936895-7ca7a8fc-553d-11e8-9496-45a96b623614.png).
+2. Перейдите в раздел настройки ![](https://user-images.githubusercontent.com/22258847/39938114-5dc5cf00-5541-11e8-996d-5d583611f76f.png)
+3. Выберите вкладку Списки ![](https://user-images.githubusercontent.com/22258847/39937403-1da7b8b8-553f-11e8-865a-73a3f2fa4bb8.PNG). 
 4. Пролистайте в самый низ и добавьте следующий адрес:
 
 https://raw.githubusercontent.com/mtxadmin/ublock/master/it
