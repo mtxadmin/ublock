@@ -1,3 +1,3 @@
-[Русская версия здесь](README_en.md)
+[Русская версия здесь](README_ru.md)
 
 Filters for uBlock Origin.
