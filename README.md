@@ -1,4 +1,4 @@
-[English version here](README.md)
+[English version here](README_en.md)
 
 Фильтры для uBlock Origin.
 
