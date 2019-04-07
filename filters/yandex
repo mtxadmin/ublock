@@ -175,8 +175,8 @@ market.yandex.ru##.n-marketplace-informer
 market.yandex.ru##.main > noindex
 
 mc.yandex.ru
-! disable any whitelists
-||mc.yandex.ru$third-party,important
+! disable any whitelists. Third-party option doesn't work on search pages on yandex.ru, so block it completely
+||mc.yandex.ru$important
 
 ! $third-party will not work, it loads in frame
 ||money.yandex.ru/quickpay/
@@ -202,7 +202,6 @@ zen.yandex.ru##.article-right-block__stick-wrapper:has-text(Понравилос
 ! disable any whitelists
 ||yandex.*/metrika/$third-party,important
 ||metrika.yandex.ru$third-party,important
-||mc.yandex.ru/metrika/$third-party,important
 ||an.yandex.ru$important
 ||awaps.yandex.ru$important
 ||direct.yandex.ru$important
