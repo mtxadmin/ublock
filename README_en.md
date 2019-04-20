@@ -1,4 +1,4 @@
-[Нажмите сюда для русской версии](README_ru.md)
+[Нажмите сюда для русской версии](README.md)
 
 Constantly updated filter list for uBlock Origin. Removes banners and spying modules. And also removes different [annoyances](docs/policy_en.md) from internet pages. Let's make sites cleaner and reading more comfortable!
 
