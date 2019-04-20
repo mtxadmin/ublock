@@ -153,24 +153,22 @@ https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-
 
 <details>
     <summary>
-        Sites, mimicking to the well-known services, 
+        Sites that mimic the well-known services, phishing
     </summary>
-    То есть, делающие вид, что вы зашли на ВКонтакте, например, и предлагающие вам ввести пароль. Мошенники, в общем. И эти сайтики плодятся, как грибы после дождя. На самом деле, лучшая защита от мошенников - здравый смысл.
+    That is, pretending that you have logged on to Facebook, for example, and prompting you to enter a password. Scammers, in general. And there are many of these scam sites. In fact, the best defense against fraudsters is common sense.
 </details>
 
 <details>
     <summary>
-        Микрофинансовые организации, онлайн-казино
+        Microfinance organizations, online casinos
     </summary>
-    На самом деле, заблокировать какое-нибудь Азино777 не получается даже у государства со всеми его ресурсами. Но попробовать-то можно.
-
+    In fact, for example, blocking Azino777 is impossible even for a Russian state with all its resources. But we can try.
 </details>
 
 <details>
     <summary>
-        Мошеннические сайты
+        Fraudulent sites
     </summary>
-    "Вы выиграли автомобиль! Только заплатите 200 рублей на почтовые расходы"
-
+    "You won a car! Just pay us 5 dollars to cover postage."
 </details>
 
