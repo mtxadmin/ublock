@@ -1,4 +1,4 @@
-## To focus on the content, and remove annoying elements:
+## To focus on content, and remove annoying elements:
 
 <!-- realiation of spoilers in Markdown: 
 https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-wiki-pages -->
