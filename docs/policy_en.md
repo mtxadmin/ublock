@@ -114,7 +114,7 @@ https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-
     <summary>
         Warnings about age
     </summary>
-    Is that requirements or stupidity of web designers? But it looks pretty ridiculous.
+    Is that legal requirements or stupidity of web designers? But it looks pretty ridiculous.
 </details>
 
 <details>
