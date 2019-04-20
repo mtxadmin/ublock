@@ -59,6 +59,50 @@ https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-
     Taking up space and often fixed
 </details>
 
+</details>
+
+<details>
+    <summary>
+        App buttons
+    </summary>
+    It is obvious that many large sites have their own mobile applications. If the visitor is interested in them, he will find them perfectly in the market. Another question is what quality they are and how much they are needed.
+</details>
+
+<details>
+    <summary>
+        Links to add to favorites
+    </summary>
+    It is a standard function of a browser, visual garbage is not needed.
+</details>
+
+<details>
+    <summary>
+        Subscription forms (enter email, subscribe to our materials)
+    </summary>
+    A good feature, but relevant only on a separate page of the site. And most likely, they will send any little meaningful spam.
+</details>
+
+<details>
+    <summary>
+        Large and expanded by default answer forms
+    </summary>
+    In general, these are useful things, but often designers make them very cumbersome and disturbing. In an amicable way, it should be either a small form, or expanded by click element. So far, a part of the large form removed, with the hope of a better solution in the future.
+</details>
+
+<details>
+    <summary>
+        Large and expanded by default search form
+    </summary>
+    It should be a pretty small form, or you can use instead Google/Yandex/Bing.
+</details>
+
+<details>
+    <summary>
+        Bulky forms of content (TOC)
+    </summary>
+    Are you reading a book from the table of contents? Ok, we see headlines, please let us move on to the material for which we came.
+</details>
+
 <details>
     <summary>
         Warnings about cookies and GDPR
