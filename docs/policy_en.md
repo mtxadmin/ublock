@@ -1,4 +1,4 @@
-## Focus on the content, remove annoying elements:
+## To focus on the content, and remove annoying elements:
 
 <!-- realiation of spoilers in Markdown: 
 https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-wiki-pages -->
@@ -174,7 +174,7 @@ https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-
     Usually this is done by online shops. Search engines are allowed to fix the string, the rest, sorry, no. There is not much space on the screen.
 </details>
 
-## Block requests to hosts by category:
+## To block requests to hosts by category:
 
 <details>
     <summary>
