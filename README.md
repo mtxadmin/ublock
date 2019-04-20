@@ -1,4 +1,4 @@
-[English version here](README_en.md)
+[Click here for English version](README_en.md)
 
 <!-- [Добавить подписку](abp:subscribe?location=https%3A//raw.githubusercontent.com/mtxadmin/ublock/master/it) -->
 
