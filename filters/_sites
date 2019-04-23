@@ -167,7 +167,11 @@ _doubleclick_ad.
 /pubads/*
 /seohide/*
 /show_ads.js
+! disable exclusion from Fanboy’s Enhanced Tracking List 
+/showads.$important
 /test-widget/*
+! from AdGuard Tracking Protection and EasyPrivacy 
+/uedata?
 /widget/*$domain!=hypercomments.com
 ##[href^="https://ad.admitad.com/"]
 ###abAlert
@@ -1537,6 +1541,8 @@ alternativeto.net##.btn.notloggedin
 altfishing-club.ru###branding
 
 amazon.com##.rhf-border
+! from EasyPricacy
+||amazon.*/ajax/counter?
 
 american-boffin.com##.site-credits
 
