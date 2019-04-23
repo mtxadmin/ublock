@@ -2147,7 +2147,15 @@ drive2.ru##.c-nightdrive
 drive2.ru##.l-header:style(position:static !important)
 drive2.ru##.c-pc-grid
 
+! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
+drivetribe.com##.hyBTKR.sc-DNdyV
+drivetribe.com##.fnrkLU.sc-ipZHIp
+drivetribe.com##.kxTRAT.sc-cqPOvA
+
 dtonias.com###respond
+
+! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
+duckduckgo.com##.js-badge-link.ddg-extension-hide.badge-link--fadein.badge-link--top.badge-link
 
 dushlux.ru##.logo
 dushlux.ru##.ico_block
@@ -2251,7 +2259,11 @@ f1comp.ru###header
 connect.facebook.net$important
 ! from EasyList
 ||facebook.com/audiencenetwork/$third-party
-
+! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
+facebook.com##div[id^="hyperfeed_story_id_"]:not(div:contains(/^[class="timestampContent"])):not(span:contains(/^m$/)):not(span:contains(/^M$/)):not(span:contains(/^h$/)):not(span:contains(/^:$/)):not(span:contains(/^J$/)):has(span:contains(/^S$/))
+facebook.com##:xpath(//div[starts-with(@id, 'pagelet') and (.//a[.='Sponsored'])]  )
+facebook.com###pagelet_ego_pane
+facebook.com###pagelet_video_home_watch_list_rhc
 
 forum.fairphone.com##.extra-info-wrapper
 forum.fairphone.com##.d-header:style(position:static !important)
@@ -5101,6 +5113,12 @@ yaplakal.com,yap.ru##.pformleft
 ||yaplakal.com/html/static/noavatar.gif$image
 ||yap.ru/html/static/noavatar.gif$image
 ||yapfiles.ru/action/track/
+
+! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
+yelp.com##li.border-color--default__373c0__2oFDT.lemon--li__373c0__1r9wz:nth-of-type(2) > .border-color--default__373c0__2oFDT.u-padding-b3.u-padding-t3.lemon--div__373c0__1mboc
+yelp.com##li.border-color--default__373c0__2oFDT.lemon--li__373c0__1r9wz:nth-of-type(1) > .border-color--default__373c0__2oFDT.lemon--div__373c0__1mboc > .border-color--default__373c0__2oFDT.u-padding-b1.u-padding-t1.lemon--div__373c0__1mboc
+yelp.com##li.border-color--default__373c0__2oFDT.lemon--li__373c0__1r9wz:nth-of-type(3) > .border-color--default__373c0__2oFDT.border--top__373c0__19Owr.u-padding-b3.u-padding-t3.lemon--div__373c0__1mboc
+yelp.com##li.border-color--default__373c0__2oFDT.lemon--li__373c0__1r9wz:nth-of-type(4) > .border-color--default__373c0__2oFDT.border--top__373c0__19Owr.u-padding-b3.u-padding-t3.lemon--div__373c0__1mboc
 
 moban.yixunhl.cn
 
