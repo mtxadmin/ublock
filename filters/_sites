@@ -164,7 +164,7 @@ _doubleclick_ad.
 /mads/gma
 /metrika/*
 /pcs/click^
-/promo/$domain!=livejournal.com
+/promo/$domain=~livejournal.com
 /pubads/*
 /seohide/*
 /show_ads.js
@@ -173,7 +173,7 @@ _doubleclick_ad.
 /test-widget/*
 ! from AdGuard Tracking Protection and EasyPrivacy 
 /uedata?
-/widget/*$domain!=hypercomments.com
+/widget/*$domain=~hypercomments.com
 ##[href^="https://ad.admitad.com/"]
 ###abAlert
 ###abDetected
@@ -4722,9 +4722,9 @@ trest.market##.logo
 
 tripadvisor.com$third-party
 ! tripadvisor CDNs
-jscache.com$domain!=tripadvisor.com
-tacdn.com$domain!=tripadvisor.com
-static.tacdn.com$domain!=tripadvisor.com
+jscache.com$domain=~tripadvisor.com
+tacdn.com$domain=~tripadvisor.com
+static.tacdn.com$domain=~tripadvisor.com
 
 ||tulup.ru/static/images/icons/*$image
 tulup.ru##.col_right_bottom
