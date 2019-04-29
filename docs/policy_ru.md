@@ -1,3 +1,5 @@
+[Click here for English version](policy_en.md)
+
 ## Концентрируем внимание на содержании, убираем раздражающие элементы:
 
 <!-- realization of spoilers in Markdown: 
