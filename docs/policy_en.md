@@ -1,3 +1,5 @@
+[Нажмите сюда для русской версии](hosts_file_ru.md)
+
 ## To focus on content, and remove annoying elements:
 
 <!-- realiation of spoilers in Markdown: 
