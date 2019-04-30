@@ -1,7 +1,7 @@
 [Click here for English version](hosts_file_en.md)
 
 
-У этого проекта - [Yet another small uBlock filter list](../README.md) - есть также [файл hosts](https://ru.wikipedia.org/wiki/Hosts), сгенерированный из его файлов.
+У этого проекта - [Yet another small uBlock filter list](../README.md) - есть также [файл hosts](https://ru.wikipedia.org/wiki/Hosts), сгенерированный из его файлов и периодически обновляемый.
 
 В контексте блокировки рекламы и прочего, hosts может быть полезен для общей блокировки рекламы в системе, а не только в браузере. 
 
