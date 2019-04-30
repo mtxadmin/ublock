@@ -1,4 +1,4 @@
-[Нажмите сюда для русской версии](policy_en.md)
+[Нажмите сюда для русской версии](policy_ru.md)
 
 ## To focus on content, and remove annoying elements:
 
