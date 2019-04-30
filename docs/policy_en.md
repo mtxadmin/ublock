@@ -1,4 +1,4 @@
-[Нажмите сюда для русской версии](hosts_file_ru.md)
+[Нажмите сюда для русской версии](policy_en.md)
 
 ## To focus on content, and remove annoying elements:
 
