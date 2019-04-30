@@ -188,6 +188,7 @@ https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-
     <summary>
         Counters, telemetry
     </summary>
+    Different analytic services of users' behavior. Including web and mail analytics. 
 </details>
 
 <details>
