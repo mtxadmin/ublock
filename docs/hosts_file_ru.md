@@ -24,5 +24,5 @@
 
 Адрес файла hosts данного проекта:
 > ```
-``https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt
+``https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt``
 > ```
