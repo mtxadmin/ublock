@@ -12,7 +12,19 @@ streamguard.cc/stats/$important
 
 !! General rules for those video sites 
 
-! Remove body backgrounds
-cinema-hd.club,dostfilms.cc,fhd.watch,kinoup.org,online-film.net,onlinelife.club##body:style(background-image:none !important) .logo .footer
+! Remove body backgrounds and margins
+cinema-24.tv,cinemafilms.org,cinema-hd.club,cinemaxx.tv,dostfilms.cc,fhd.watch,kinodoza.net,kinosky.org,kinoup.org,kinozachet.net,kotofilm.net,online-film.net,onlinelife.club,online-smotret.net,smotrim.me,wkino4.net##body:style(background-image:none !important; padding-top:0px !important)
+
+
+! Remove logo
+cinema-hd.club,dostfilms.cc,fhd.watch,kinoup.org,online-film.net,onlinelife.club##[class^=logo]
+
+! Remove footer
+cinema-hd.club,dostfilms.cc,fhd.watch,kinoup.org,online-film.net,onlinelife.club##[class^=footer]
+
+! Remove overlay icons
+cinema-hd.club,dostfilms.cc,fhd.watch,kinoup.org,online-film.net,onlinelife.club##.fa
+
+! Remove local ratings
 
 
