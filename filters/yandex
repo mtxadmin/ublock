@@ -69,7 +69,6 @@ yandex.*##.i-dbn-cookie
 
 yandex.*##.stickers-card
 
-
 yandex.*##.horndq_hide-on-popups_yes
 yandex.*##.horndq_animation_fade-show-bounce
 yandex.*##.horndq_shadow_yes
@@ -148,7 +147,6 @@ ya.ru##.mtabs
 
 yastatic.net/s3/distribution/promo/
 ||avatars.mds.yandex.net/get-market_banners$image
-||money.yandex.ru/quickpay/
 
 ! answers
 yandex.*##.answer-form
@@ -175,17 +173,9 @@ market.yandex.ru##div.section:has-text(Подпишитесь)
 market.yandex.ru##.n-marketplace-informer
 market.yandex.ru##.main > noindex
 
-mc.yandex.ru
-! disable any whitelists. Third-party option doesn't work on search pages on yandex.ru, so block it completely
-||mc.yandex.ru$important
-
 ! $third-party will not work, it loads in frame
 ||money.yandex.ru/quickpay/
 ||money.yandex.ru/embed/
-
-yabs.yandex.ru
-! disable any whitelists
-||yabs.yandex.ru$important
 
 realty.yandex.ru##.GalleryGuadeloupe:has-text(Яндекс.Директ)
 realty.yandex.ru###offer-gallery-aside-ad__rtb
@@ -203,37 +193,12 @@ zen.yandex.ru##.article-right-block__stick-wrapper:has-text(Понравилос
 ! disable any whitelists
 ||yandex.*/metrika/$third-party,important
 ||metrika.yandex.ru$third-party,important
-||an.yandex.ru$important
-||awaps.yandex.ru$important
-||direct.yandex.ru$important
-||share.yandex.ru$important
 ||yandex.st/share/share.js$important
 ||yandex.st/swf/ad-sdk-module/$important
 ||yastatic.net/share/$important
 ||yastatic.net/share2/$important
-||share.yandex.net$important
 ! disable exception from RUS: AdGuard Russian filter 
 @@/\/yandex.*\/search/$generichide,badfilter
-
-tracking.ott.yandex.net
-yandexadexchange.net
-mobile.yandexadexchange.net
-
-ad-constructor.yandex.ru
-adsdk.yandex.ru
-
-z5h64q92x9.net
-
-appmetrica.yandex.net
-appmetrica.yandex.com
-||appmetrica.yandex.net^$important
-||appmetrica.yandex.com^$important
-report.appmetrica.yandex.net
-rosenberg.appmetrica.yandex.net
-api.passport.yandex.ru/suggested_accounts/
-api.browser.yandex.ru
-startup.mobile.yandex.net
-
 
 ! from Ru Adlist
 yandex.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^discussion$/)
