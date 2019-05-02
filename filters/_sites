@@ -437,18 +437,37 @@ _doubleclick_ad.
 ##[id*="Sharing"]:not(html):not(body):not(article)
 ##[class*="sharing"]:not(html):not(body):not(article)
 ##[id*="sharing"]:not(html):not(body):not(article)
+
+! ends with -soc
 ##[class$="-soc"]:not(html):not(body):not(article)
 ##[id$="-soc"]:not(html):not(body):not(article)
+##[class*="-soc "]:not(html):not(body):not(article)
+##[id*="-soc "]:not(html):not(body):not(article)
+
+! ends with _soc
 ##[class$="_soc"]:not(html):not(body):not(article)
 ##[id$="_soc"]:not(html):not(body):not(article)
+##[class*="_soc "]:not(html):not(body):not(article)
+##[id*="_soc "]:not(html):not(body):not(article)
+
+! begins with soc_
 ##[class^="soc_"]:not(html):not(body):not(article)
 ##[id^="soc_"]:not(html):not(body):not(article)
+##[class*=" soc_"]:not(html):not(body):not(article)
+##[id*=" soc_"]:not(html):not(body):not(article)
+
+! begins with soc-
 ##[class^="soc-"]:not(html):not(body):not(article)
 ##[id^="soc-"]:not(html):not(body):not(article)
+##[class*=" soc-"]:not(html):not(body):not(article)
+##[id*=" soc-"]:not(html):not(body):not(article)
+
+! contains soc
 ##[class*="-soc-"]:not(html):not(body):not(article)
 ##[id*="-soc-"]:not(html):not(body):not(article)
 ##[class*="_soc_"]:not(html):not(body):not(article)
 ##[id*="_soc_"]:not(html):not(body):not(article)
+
 ##[class*="Social"]:not(html):not(body):not(article)
 ##[id*="Social"]:not(html):not(body):not(article)
 ~github.com,~koofr.eu##[class*="social"]:not(html):not(body):not(article)
