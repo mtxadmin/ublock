@@ -4,28 +4,28 @@
 
 This is the [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) for blocking ads, counters and [other things](policy_en.md). It is generated from the files of [the parent project](../README_en.md) and is periodically updated.
 
-В контексте блокировки рекламы и прочего, hosts может быть полезен для общей блокировки рекламы в системе, а не только в браузере. 
+Applying of the hosts file can be useful for general ad blocking in the system, not just in the browser.
 
-**Ограничения:**
-- Возможности hosts ограничиваются только блокировкой узлов по имени
-- Подстановочные символы и маски имён не поддерживаются
-- Вообще ничего другого из богатого арсенала браузерных баннерорезок типа uBlock Origin не поддерживается
-- Для изменения файла hosts необходимы полные права в системе. Администратор в Windows, root в Андроид, jailbreak в iOS
-- При подключении через прокси-сервер файл hosts, скорее всего, не будет применяться
-- При обновлении файла hosts желательно перезагрузить систему
-- Приложений, обновляющих hosts, нет в официальных маркетах (например, Гугл удаляет их за блокировку рекламы). 
+**Restrictions:**
+- The capabilities of the hosts file are limited only by blocking nodes by name
+- Wildcard characters and name masks are not supported
+- In general, nothing else from the rich arsenal of browser-type banner cutters like uBlock Origin is supported
+- To change the hosts file, you need full rights in the system. Administrator on Windows, root on Android, jailbreak on iOS
+- When connecting via a proxy server, the hosts file will most likely not be used
+- When updating the hosts file, it is desirable to reboot the system
+- There are no applications updating hosts on official app markets (for example, Google deletes them for blocking ads).
 
-Тем не менее, есть и **преимущества:**
-- Блокировка с применением hosts распространяется на всю систему. Баннеры и рекламные ролики в приложениях, разнообразная телеметрия и прочее
-- Блокировка работает постоянно и не требует ресурсов
+However, there are **advantages:**
+- Blocking with the use of hosts applies to the entire system. Banners and commercials in applications, various telemetry and other
+- Blocking works continuously and does not require resources
 
-Таким образом, лучше всего установить **И** баннерорезку в браузер, **И** приложение, обновляющее hosts. 
+Thus, it is best to install **AND** banner cutter in the browser, **AND** application that updates the hosts.
 
-Какое приложение ставить? Любое, которое умеет скачивать новые версии hosts из интернета. Конечно, намного лучше, если можно задавать сразу несколько источников для их объединения. Например, можете посмотреть на [AdAway](https://github.com/AdAway/AdAway) - свободный, открытый, бесплатный проект. Или же любой другой по вкусу, требования, в отличие от баннерной баннерорезки, к такому приложению минимальные.
+What application to install? Anyone that can download new versions of hosts from the Internet. Of course, it is much better if you can specify several sources at once to combine them. For Android, for example, you can look at [AdAway] (https://github.com/AdAway/AdAway) - an open, free project. Or any other to your taste. Unlike the banner banner cutter, there are minimum requirements for such an application.
 
-Адрес файла hosts данного проекта:
+The address of the hosts file of this project:
 > ```
 ``https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt``
 > ```
 
-Обратите внимание, что нет смысла вставлять данный файл в uBlock Origin, хотя он и понимает этот формат - используйте лучше [полную версию подписки](../README.md) для этого. 
+Please note that there is no point in inserting this file into uBlock Origin, although it understands this format - use better [the full version of the subscription] (../README.md) for this.
