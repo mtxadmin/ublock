@@ -8,7 +8,11 @@
 
 <!-- https://github.com/github/markup/issues/933 -->
 
+#### Yet another small uBlock filter list
+
 Постоянно обновляемый и пополняемый список фильтров для uBlock Origin. Удаляет рекламу и следящие модули. А также убирает всякие отвлекающие [финтифлюшки](docs/policy_ru.md) с интернет-страниц. Сделаем сайты чище и просмотр удобнее!
+
+Также есть дочерний проект - [Yet another small hosts file](docs/hosts_file_ru.md) 
 
 ## Как это работает?
 
