@@ -19,7 +19,7 @@ However, there are **advantages:**
 - Blocking with the use of hosts applies to the entire system. Banners and commercials in applications, various telemetry and other
 - Blocking works continuously and does not require resources
 
-Thus, it is best to install **AND** banner cutter in the browser, **AND** application that updates the hosts.
+Thus, it is best to install **AND** an ad blocker in the browser, **AND** an application that updates the hosts.
 
 What application to install? Anyone that can download new versions of hosts from the Internet. Of course, it is much better if you can specify several sources at once to combine them. For Android, for example, you can look at [AdAway] (https://github.com/AdAway/AdAway) - an open, free project. Or any other to your taste. Unlike the banner banner cutter, there are minimum requirements for such an application.
 
