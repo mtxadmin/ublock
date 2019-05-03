@@ -1,8 +1,12 @@
 [Нажмите сюда для русской версии](README.md)
 
+#### Yet another small uBlock filter list
+
 Constantly updated filter list for uBlock Origin. Removes banners and spying modules. And also removes different [annoyances](docs/policy_en.md) from internet pages. Let's make sites cleaner and reading more comfortable!
 
-## How it's work?
+Also, there is a child project - [Yet another small hosts file](docs/hosts_file_en.md) 
+
+## How it works?
 
 ### Example of site *BEFORE* installing this filter list:
 
