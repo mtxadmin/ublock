@@ -28,4 +28,4 @@ The address of the hosts file of this project:
 ``https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt``
 > ```
 
-Please note that there is no point in inserting this file into uBlock Origin, although it understands this format - use better [the full version of the subscription] (../README.md) for this.
+Please note that there is no point in inserting this file into uBlock Origin, although it understands this format - use better [the full version of the subscription](../README.md) for this.
