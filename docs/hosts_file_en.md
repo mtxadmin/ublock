@@ -2,7 +2,7 @@
 
 #### Yet another small hosts file
 
-This is the [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) for blocking ads, counters and [other things](policy_en.md). It is generated from the files of [the parent project](../README_en.md) and is periodically updated.
+This is the [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) for blocking ads, countersб telemetry and [other things](policy_en.md). It is generated from the files of [the parent project](../README_en.md) and is periodically updated.
 
 Applying of the hosts file can be useful for general ad blocking in the system, not just in the browser.
 
