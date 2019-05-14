@@ -6,18 +6,23 @@ facebook.com/tr?$important
 ! from AdGuard Social Media
 ||facebook.com/plugins/$domain=~facebook.com
 
+
 ||vk.com/js^$third-party
 ||userapi.com/js/api/$domain=~vk.com
 ! from EasyPrivacy
 ||vk.com/rtrg?
 ! modified filter from AdGuard
 ||vk.com/widget_$domain=~vk.com,important
+! from AdGuard
+||vk.com/share.php$third-party
+
 
 !todo: blocking window
 !ok.ru##.media-layer_close_ovr
 !ok.ru###mtLayer
 ! don't block, it needed by embedded video player
 !ok.ru/res/js/
+
 
 platform.twitter.com/widgets.js
 ! even that way: https://cdn.api.twitter.com/1/urls/count.json?url=
