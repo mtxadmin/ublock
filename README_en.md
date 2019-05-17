@@ -79,3 +79,6 @@ The author of [the friendly project](https://github.com/yourduskquibbles/webanno
 
 ![](https://user-images.githubusercontent.com/22258847/39935902-25add6be-553a-11e8-82b0-badc73f44ed3.gif)
 
+
+Is something not working? Something is missing? Write about it here:
+https://github.com/mtxadmin/ublock/issues/new
