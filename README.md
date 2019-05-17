@@ -78,3 +78,5 @@
 
 ![](https://user-images.githubusercontent.com/22258847/39935902-25add6be-553a-11e8-82b0-badc73f44ed3.gif)
 
+Что-то не работает? Напишите об этом здесь:
+https://github.com/mtxadmin/ublock/issues/new
