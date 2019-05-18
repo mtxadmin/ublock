@@ -35,6 +35,9 @@
 
 Во-первых, если вы еще не установили [uBlock Origin](https://github.com/gorhill/uBlock) (вариант: [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore)), сделайте это прямо сейчас. На сегодняшний день это лучшая баннерорезка из существующих. Подумайте об этом так: десятки людей по всему миру будут стараться, чтобы вы увидели как можно *меньше* рекламы. :-)
 
+[Зачем мне вообще баннерорезка?](docs/page_example_ru.md)
+
+
 #### На компьютере
 - [uBlock Origin для Google Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 - [uBlock Origin для Mozilla FireFox](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
