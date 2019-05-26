@@ -180,7 +180,7 @@ https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-
 
 <details>
     <summary>
-        Advertising, banner networks
+        Advertising, banner, teaser networks
     </summary>
 </details>
 
