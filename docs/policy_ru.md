@@ -185,7 +185,7 @@ https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-
 ## Блокируем запросы к узлам по категориям:
 <details>
     <summary>
-        Рекламные, баннерные сети
+        Рекламные, баннерные, тизерные сети
     </summary>
     
 </details>
