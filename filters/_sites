@@ -145,6 +145,7 @@ _468x60.
 /pagead/*
 /pagead2/*
 /pcs/click^
+/profitwell.js
 ! mts.ru loads not-ad /Promo/ links in lk
 /promo/*$domain=~livejournal.com|~mts.ru
 /pubads/*
@@ -378,6 +379,8 @@ _loghuman=
 /piwikapi.js
 /piwikC_
 /piwikTracker.
+! from Fanboy's
+/pum-site-scripts.
 ! from EasyPrivacy
 /px.gif?
 /stat.php
@@ -544,6 +547,8 @@ _loghuman=
 /sharedaddy/*$image
 ! from Fanboy’s
 _social_fb.
+/social-proof/*
+/social-proof-
 /vk_easy.js
 ! from AdGuard. Sharing plugin for WP
 /wp-content/plugins/monarch/*$script
@@ -2171,6 +2176,9 @@ cnet.com###leaderTopWrap
 cnews.ru##.tizer_stick:style(position:static !important)
 cnews.ru##.header-inner
 
+! from EasyPrivacy
+||cnn.com/analytics/
+
 computerperformance.co.uk###header:style(position:static !important)
 computerperformance.co.uk###catcher
 computerperformance.co.uk##.sidebar
@@ -2597,6 +2605,12 @@ ferra.ru##.text.commercial-item
 
 findmysoft.com###header_case
 findmysoft.com###download_btn
+
+! Firebase: app platform. Good, but it has push messaging, ads, ab tests, reflinks
+firebaseio.com$third-party
+s-usc1c-nss-223.firebaseio.com
+squadcast-7fa10.firebaseio.com
+firebase.google.com$third-party
 
 ||fishboatlive.ru/forum/images/logos/$image
 ||fishboatlive.ru/forum/images/ranks/$image
