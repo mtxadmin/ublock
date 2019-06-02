@@ -1383,7 +1383,8 @@ tarif-24.ru##.mh-ticker-bottom
 /adclick$important
 ! from EasyList
 /ad-inserter/*
-*/ads/*$important
+! exclusion - cnn loads page through json: https://cdn.cnn.com/ads/cnni/cnni_homepage.json
+*/ads/*$important,domain=~cnn.com
 /ads_$important
 /ads.
 /ads?
