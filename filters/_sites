@@ -2,7 +2,7 @@
 
 !! banners
 ! generalized
-##[class$="-ad"]:not(html):not(body):not(article)
+~cnn.com##[class$="-ad"]:not(html):not(body):not(article)
 ##[id$="-ad"]:not(html):not(body):not(article)
 ##[class$="_ad"]:not(html):not(body):not(article)
 ##[id$="_ad"]:not(html):not(body):not(article)
@@ -11,11 +11,11 @@
 ##[class^="Ad_"]:not(html):not(body):not(article)
 ##[id^="Ad_"]:not(html):not(body):not(article)
 ##[class^="ad_"]:not(html):not(body):not(article)
-##[id^="ad_"]:not(html):not(body):not(article)
-~ferra.ru##[class^="ad-"]:not(html):not(body):not(article)
+~cnn.com##[id^="ad_"]:not(html):not(body):not(article)
+~cnn.com,~ferra.ru##[class^="ad-"]:not(html):not(body):not(article)
 ##[id^="ad-"]:not(html):not(body):not(article)
-##[class*="-ad-"]:not(html):not(body):not(article)
-~afisha.ru##[id*="-ad-"]:not(html):not(body):not(article)
+~cnn.com##[class*="-ad-"]:not(html):not(body):not(article)
+~afisha.ru,~cnn.com##[id*="-ad-"]:not(html):not(body):not(article)
 ##[class*="_ad_"]:not(html):not(body):not(article)
 ##[id*="_ad_"]:not(html):not(body):not(article)
 ##[class*="Adblock"]:not(html):not(body):not(article)
@@ -145,6 +145,8 @@ _468x60.
 /pagead/*
 /pagead2/*
 /pcs/click^
+! from EasyList
+/prebid/*
 /profitwell.js
 ! mts.ru loads not-ad /Promo/ links in lk
 /promo/*$domain=~livejournal.com|~mts.ru
@@ -1381,7 +1383,8 @@ tarif-24.ru##.mh-ticker-bottom
 /adclick$important
 ! from EasyList
 /ad-inserter/*
-*/ads/*$important
+! exclusion - cnn loads page through json: https://cdn.cnn.com/ads/cnni/cnni_homepage.json
+*/ads/*$important,domain=~cnn.com
 /ads_$important
 /ads.
 /ads?
@@ -2121,6 +2124,8 @@ calculator-ipoteki.ru##.blue
 
 ads.callofdutyblackopsforum.net
 
+capterra.com$third-party
+
 carguts.ru##noindex
 carguts.ru###colophon
 
@@ -2176,6 +2181,7 @@ cnet.com###leaderTopWrap
 cnews.ru##.tizer_stick:style(position:static !important)
 cnews.ru##.header-inner
 
+cnn.com###breaking-news
 ! from EasyPrivacy
 ||cnn.com/analytics/
 
