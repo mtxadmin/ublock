@@ -385,6 +385,10 @@ _loghuman=
 /pum-site-scripts.
 ! from EasyPrivacy
 /px.gif?
+! from EasyPrivacy
+/px.js?ch=$script
+! from EasyPrivacy
+.ru/0.gif?
 /stat.php
 ! from EasyPrivacy
 /track_click?
@@ -456,7 +460,7 @@ _loghuman=
 ##[id*="pinterest"]:not(html):not(body):not(article)
 ##[class*="plusone"]:not(html):not(body):not(article)
 ##[id*="plusone"]:not(html):not(body):not(article)
-##[class*="Share"]:not(html):not(body):not(article)
+~officeapps.live.com##[class*="Share"]:not(html):not(body):not(article)
 ##[id*="Share"]:not(html):not(body):not(article)
 ~microsoft.com##[class*="share"]:not(html):not(body):not(article)
 ##[id*="share"]:not(html):not(body):not(article)
@@ -557,6 +561,7 @@ _social_fb.
 /youtube.svg
 -googleplus.
 -pinterest.
+/share42.js
 ! from Fanboy's
 -sharebar.
 ! from Fanboy's
@@ -970,6 +975,8 @@ irecommend.ru#@#.rate
 ##.updown--shown
 ##.v-moveup__wrap
 ##.x-page-up-arrow
+! from Fanboy's
+/scroll-top.
 ! from Fanboy’s Annoyance List
 /scrolltoplugin.
 ! from Fanboy's
@@ -2337,6 +2344,7 @@ dns-shop.ru,technopoint.ru##.one-click-button-wrap
 dns-shop.ru,technopoint.ru##.btn-one-click
 dns-shop.ru##.dropdown-city
 dns-shop.ru,technopoint.ru##.news-widget
+dns-shop.ru##.viewed-products-slider
 dns-shop.ru##.viewed-products-widget-wrapper
 dns-shop.ru##.gift-bonuses-container
 dns-shop.ru##.complaint-container
@@ -3467,6 +3475,10 @@ wf.mail.ru###header
 xray.mail.ru
 ! from AdGuard Tracking Protection
 mediator.imgsmail.ru
+! from EasyPrivacy
+||mail.ru/k?
+! from EasyPrivacy
+imgsmail.ru/gstat?
 ! disable strange exceptions from Ru AdList
 ! В одном из тестовых браузеров поехала верстка после удаления, но по выяснению, это не из-за отсутствия исключений, а из-за запрета куки, похоже. Без исключений работает.
 @@||auto.mail.ru^$generichide,badfilter
