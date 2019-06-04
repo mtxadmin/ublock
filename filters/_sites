@@ -32,7 +32,7 @@
 ##[id*="adriver"]:not(html):not(body):not(article)
 ##[class^="ads"]:not(html):not(body):not(article)
 ##[id^="ads"]:not(html):not(body):not(article)
-##[class$="-ads"]:not(html):not(body):not(article)
+~blogspot.com##[class$="-ads"]:not(html):not(body):not(article)
 ##[id$="-ads"]:not(html):not(body):not(article)
 ##[class*="-ads-"]:not(html):not(body):not(article)
 ##[id*="-ads-"]:not(html):not(body):not(article)
@@ -42,6 +42,8 @@
 ~adblockplus.org##[id$="_ads"]:not(html):not(body):not(article)
 ##[class*="adsense"]:not(html):not(body):not(article)
 ##[id*="adsense"]:not(html):not(body):not(article)
+##[class*="AdSense"]:not(html):not(body):not(article)
+##[id*="AdSense"]:not(html):not(body):not(article)
 adsence.co.kr
 log.adsence.co.kr
 ! general host rule from EasyList
@@ -545,6 +547,8 @@ _loghuman=
 /images/twitter
 /linkdin.svg
 /mashsharer/*
+! from Fanboy's
+/tweet_button.
 /twitter.svg
 /usocial/*
 ! from Fanboy's lists
@@ -850,6 +854,7 @@ irecommend.ru#@#.rate
 ###b2
 ###b2t
 ###back2top
+##.back_top
 ###backtop
 ###BackTop
 ###back-top
@@ -1283,6 +1288,7 @@ turboimagehost.com##body:style(overflow:auto !important)
 /wp-emoji-release.min.js
 /emoji/$image
 /emoticons/*.gif
+/images/laugh.gif
 /smile/*.gif
 /smiles/*.gif
 /smiles2/*.gif
@@ -2013,6 +2019,16 @@ bleepingcomputer.com###branding
 blogspot.com##.comment-form
 blogspot.com##[href^="http://ucoz.net"]
 
+clintboessen.blogspot.com##.Image.widget
+
+juventusitprofessional.blogspot.com##.viewitem-header
+juventusitprofessional.blogspot.com###header-container
+juventusitprofessional.blogspot.com##.viewitem-panel:style(position:static !important)
+juventusitprofessional.blogspot.com##.viewitem-wrap:style(position:static !important)
+juventusitprofessional.blogspot.com###sidebar
+
+! blogspot end
+
 blogss.ru###header
 blogss.ru###footer
 blogss.ru###respond
@@ -2247,6 +2263,8 @@ crunchbase.com##.can-be-sticky.show-gt-sm.hide.cb-margin-xlarge-left.cb-display-
 custhelp.com##.MessageContainerFailure.MessageContainer
 
 cyberforum.ru##.thumbs-post-rate
+
+cyberpointllc.com##.navbar-fixed-top:style(position:static !important)
 
 cyberyozh.com##.tools_item_btn
 cyberyozh.com##.footer_blocks
@@ -2940,6 +2958,8 @@ huawei-helpers.ru###masthead
 hunting.ru##.konkurs-anons
 hunting.ru##.ctxt
 
+hutpu4.net###infinite-footer
+
 hwp.ru##.jsPanel
 
 ||ibathroom.ru/wp-content/uploads/2016/12/HelpProject2.jpg$image
@@ -3102,6 +3122,12 @@ itconsumer.ru###site-navigation
 itech56.ru##.acfHeadBlock
 itech56.ru##.alert-warning.alert
 
+itingredients.com##.tve-leads-conversion-object
+itingredients.com##.news-bar
+itingredients.com###site-navigation:style(position:static !important)
+itingredients.com##.wp-embedded-content
+itingredients.com###secondary
+
 blog.it-kb.ru###sidebar-secondary
 
 it-lite.ru##.tabs-block
@@ -3149,6 +3175,8 @@ iz.ru##.live-news
 iz.ru##.top-panel:style(position:static !important)
 
 izkirpicha.com##.logo
+
+izvolokna.com##blockquote
 
 jocha.se###main-header
 
@@ -4129,6 +4157,9 @@ petri.com###respond
 petrovich.ru##video
 petrovich.ru##.side_button
 petrovich.ru##.error__item
+petrovich.ru##.scroll__fixed:style(position:static !important)
+petrovich.ru##.head_wrapper:style(position:static !important)
+petrovich.ru##.bottom-catalog-info__for-buyer
 
 phpbb.com##.avatar
 
@@ -4258,6 +4289,11 @@ poparimsya.online###header
 
 popmech.ru##header.header:style(position:static !important)
 popmech.ru##.top_menu.fixed:style(position:static !important)
+
+poroloner.com##.foot_panel_all:style(position:static !important)
+poroloner.com##.discount_left
+poroloner.com##.boc_anch.btn_buy
+poroloner.com##.already_seen
 
 port-u.ru###s5_logo_wrap
 
@@ -5059,6 +5095,9 @@ techtarget.com###page-header
 cdn.ttgtmedia.com$script
 searchenterprisedesktop.techtarget.com##.sign-up-wrapper
 
+techunboxed.com###header-inner
+techunboxed.com##footer
+
 techveze.com##.sidebar-to-right
 techveze.com##.nav-wrapper
 techveze.com##.shortcode_widget
@@ -5297,6 +5336,8 @@ vc.ru##.main_menu__container
 
 vetriks.ru###p-logo
 
+vinylko.ru##.b-product-groups-gallery__counter-wrap
+
 vkernel.ro###header
 
 blog.vladios13.com##.ess-button--email
@@ -5379,6 +5420,9 @@ vmtv.ru##.navbar-fixed-top:style(position:absolute !important)
 
 ||vmware.com/s/sfsites/aura*beacon*$xmlhttprequest
 ||vmware.com/s/sfsites/aura*tracking*$xmlhttprequest
+kb.vmware.com##.slds-modal__container
+kb.vmware.com##.slds-fade-in-open.slds-modal
+kb.vmware.com##.slds-backdrop--open.slds-backdrop
 
 volveter.ru##.basket_bottom_block:style(position:static !important)
 volveter.ru##.fast_view_block
@@ -5440,6 +5484,7 @@ warhead.su##.subscription
 warhead.su##.notice--wide.notice
 warhead.su##.header--overlay.header--article.header
 warhead.su###button-random-article
+warhead.su###aside-widgets
 
 weapon-shop.ru###cart-section:style(position:static !important)
 
