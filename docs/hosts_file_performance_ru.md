@@ -1,4 +1,4 @@
-
+[Click here for English version](hosts_file_performance_en.md)
 
 По поводу влияния на производительность системы большого файла hosts.
 
