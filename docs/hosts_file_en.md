@@ -17,7 +17,7 @@ Applying of the hosts file can be useful for general ad blocking in the system, 
 
 However, there are **advantages:**
 - Blocking with the use of hosts applies to the entire system. Banners and commercials in applications, various telemetry and other
-- Blocking works continuously and does not require resources
+- Blocking works continuously and [does not require resources](hosts_file_performance_en.md)
 
 Thus, it is best to install **AND** an ad blocker in the browser, **AND** an application that updates the hosts.
 
