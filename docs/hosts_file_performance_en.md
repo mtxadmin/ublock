@@ -1,6 +1,6 @@
  [Нажмите сюда для русской версии](hosts_file_performance_ru.md)
 
-Regarding the impact on system performance of a large hosts file.
+Regarding the impact on system performance of a large [hosts file](hosts_file_en.md).
 
 On the Internet there are some opinions that with a large hosts file the system can slow down. I wanted to cite several links, but after several hours of googling I could not find a single quality source. But:
 
