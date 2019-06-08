@@ -111,6 +111,8 @@ _468x60.$important
 ! from EasyList
 /adrotate/*
 ! from EasyList
+?ads=$domain=~booking.loganair.co.uk
+! from EasyList
 -ads-manager/
 /ads.js$important
 /adsbygoogle.js$important
@@ -304,10 +306,8 @@ _468x60.$important
 ##.SimpleAd
 ##.videoAnnouncement
 ##.vkredit
-##.widgetCallMe
-##.ya-taxi-widget__content
-##.ya-taxi-widget__label
-##.ya-taxi-widget__link
+! from AdGuard
+/plugins/convertplug/*
 ! disable exclusions from Fanboy's list
 @@/wp-content/*/ads*.js$script,badfilter
 @@/js/ads.js$script,badfilter
@@ -365,6 +365,7 @@ _468x60.$important
 /1x1.trans.
 /cnt.js
 /count.js
+/counter.js
 ! from EasyPrivacy
 /event/track?
 ! from EasyPrivacy
@@ -396,6 +397,7 @@ _pagespeed_beacon?
 /piwikapi.js
 /piwikC_
 /piwikTracker.
+/plugins/google-analytics-for-wordpress/
 ! from Fanboy's
 /pum-site-scripts.
 ! from EasyPrivacy
@@ -559,6 +561,9 @@ _pagespeed_beacon?
 /images/twitter
 /linkdin.svg
 /mashsharer/*
+! from AdGuard, modified. Sharing plugin for WP
+/plugins/monarch/*$script
+/plugins/ultimate-contact-buttons/*
 ! from Fanboy's
 /social/google.
 ! from Fanboy's
@@ -578,8 +583,6 @@ _social_fb.
 /vk.jpg
 /vk.png
 /vk_easy.js
-! from AdGuard. Sharing plugin for WP
-/wp-content/plugins/monarch/*$script
 /youtube.svg
 -googleplus.
 -pinterest.
