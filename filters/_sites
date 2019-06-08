@@ -306,6 +306,8 @@ _468x60.$important
 ##.SimpleAd
 ##.videoAnnouncement
 ##.vkredit
+! from AdGuard
+/plugins/convertplug/*
 ! disable exclusions from Fanboy's list
 @@/wp-content/*/ads*.js$script,badfilter
 @@/js/ads.js$script,badfilter
@@ -363,6 +365,7 @@ _468x60.$important
 /1x1.trans.
 /cnt.js
 /count.js
+/counter.js
 ! from EasyPrivacy
 /event/track?
 ! from EasyPrivacy
@@ -394,6 +397,7 @@ _pagespeed_beacon?
 /piwikapi.js
 /piwikC_
 /piwikTracker.
+/plugins/google-analytics-for-wordpress/
 ! from Fanboy's
 /pum-site-scripts.
 ! from EasyPrivacy
@@ -557,9 +561,10 @@ _pagespeed_beacon?
 /images/twitter
 /linkdin.svg
 /mashsharer/*
-! from Fanboy's
 ! from AdGuard, modified. Sharing plugin for WP
 /plugins/monarch/*$script
+/plugins/ultimate-contact-buttons/*
+! from Fanboy's
 /social/google.
 ! from Fanboy's
 /tweet_button.
