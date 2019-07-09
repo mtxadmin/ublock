@@ -21,7 +21,7 @@ However, there are **advantages:**
 
 Thus, it is best to install **AND** an ad blocker in the browser, **AND** an application that updates the hosts.
 
-What application to install? Anyone that can download new versions of hosts from the Internet. Of course, it is much better if you can specify several sources at once to combine them. For Android, for example, you can look at [AdAway](https://github.com/AdAway/AdAway) - an open, free project. Or any other to your taste. Unlike the browser ad blocker, there are minimum requirements for such an application. For Windows you can use [HostsMan](http://www.abelhadigital.com/hostsman/) (with GUI) or [hostsmgr](https://github.com/henrypp/hostsmgr) (console) or some autoupdating Powershell scripts.
+What application to install? Anyone that can download new versions of hosts from the Internet. Of course, it is much better if you can specify several sources at once to combine them. For Android, for example, you can look at [AdAway](https://github.com/AdAway/AdAway) - an open, free project. Or any other to your taste. Unlike the browser ad blocker, there are minimum requirements for such an application. For Windows you can use [hostsmgr](https://github.com/henrypp/hostsmgr) (console) or some autoupdating Powershell scripts. (Also, there is [HostsMan](http://www.abelhadigital.com/hostsman/) with GUI, but it doesn't work with Github files [[1]](https://github.com/crazy-max/WindowsSpyBlocker/issues/103))
 
 The address of the hosts file of this project:
 > ```
