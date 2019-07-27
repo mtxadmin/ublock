@@ -158,6 +158,7 @@ _468x60.$important
 /pagead/*
 /pagead2/*
 /pcs/click^
+/plugins/ad-invalid-click-protector/*
 ! from EasyList
 /prebid/*
 ! from EasyList
@@ -174,6 +175,7 @@ _468x60.$important
 /sam-pro-free/*
 ! from EasyList
 /sam-pro-images/*
+/scrollspy.js
 /show_ads.js
 ! disable exclusion from Fanboy’s Enhanced Tracking List 
 /showads.$important
@@ -319,6 +321,8 @@ _468x60.$important
 ! from AdGuard
 /plugins/convertplug/*
 /plugins/cta/*
+! disable exclusion from Fanboy’s Enhanced Tracking List
+@@/wp-content/*/ad-$script,badfilter
 ! disable exclusions from Fanboy's list
 @@/wp-content/*/ads*.js$script,badfilter
 @@/js/ads.js$script,badfilter
@@ -380,6 +384,8 @@ _analytics.js?
 /count.js
 /counter.aspx
 /counter.js
+! https://wordpress.org/support/topic/remove-render-blocking-javascript-devicepx-jetpack-js/
+/devicepx-jetpack.js
 ! from EasyPrivacy
 /event/track?
 ! from EasyPrivacy
@@ -391,6 +397,8 @@ _analytics.js?
 /ga/analytics.js
 /google-analytics-premium/*$important
 /gtagservices/*
+! from EasyPrivacy
+.iframetracker/
 ! from EasyPrivacy
 /js/analytics.
 ! from EasyPrivacy
@@ -826,7 +834,7 @@ _social_fb.
 ~aliexpress.com,~trimble.com,~zen.yandex.ru##[id*="feedback"]:not(html):not(body)
 ##[class*="Survey"]:not(html):not(body)
 ##[id*="Survey"]:not(html):not(body)
-~pikabu.ru##[class*="survey"]:not(html):not(body)
+~pikabu.ru,~support.google.com##[class*="survey"]:not(html):not(body)
 ##[id*="survey"]:not(html):not(body)
 ! other
 ##.ask
@@ -1085,6 +1093,7 @@ irecommend.ru#@#.rate
 ##.coockie-notification-block
 ##.footer_bottom_politics
 ##.gdrp-popup-content
+##.ibx-coockie-agree
 ##.law__footer
 ###legalbar
 ###legal-notice
@@ -1406,6 +1415,7 @@ smiles2k.net$third-party
 !! tickers and marquees
 ##marquee
 ##.marquee
+###showticker
 ##.the_ticker
 ##.ticker
 3dnews.ru###toggle_currencyTicker
@@ -1606,6 +1616,7 @@ tarif-24.ru##.mh-ticker-bottom
 ||s.4pda.to/r6Z4i4k7vHpXWjoK2jgz2kz0gmRp9.jpg
 ||s.4pda.to/r6Z4jBbUJhKIWEKfPvTykZcz2B3FJn57GLJni8ohqEbLDEz1KZryHgXl7i.gif
 ||s.4pda.to/pyjXz0xSGGUX5u65/
+||s.4pda.to/ByGp1BG1d4GPOPQH6IWbfj9ldrJ4UpitVFA1Epz2F06TBtLdz1.png
 ! smiles
 ||s.4pda.to/*/blink.gif
 ||s.4pda.to/*/clapping.gif
@@ -1926,6 +1937,8 @@ androidauthority.com##.widgets-wrapper
 androidcentral.com##.region-site-header
 
 androidforums.com##.noticeContent
+androidforums.com##.sticky_wrapper:style(position:static !important)
+androidforums.com###navigation:style(position:static !important)
 
 androidlime.ru###origamiez-header-top
 
@@ -2149,6 +2162,8 @@ index-api.bitcoin.com$third-party
 
 blog.bissquit.com##.header-image
 
+biz.nf##.flyBox3
+
 blackview.hk##.header:style(position:static !important)
 blackview.hk##.m-video
 bbs.blackview.hk##.forum-permissions
@@ -2345,6 +2360,8 @@ certlibrary.com##.buy-exam-button
 
 chatrating.ru##.active.scroller
 
+chicagovps.net##.fixed.sticky:style(position:static !important)
+
 chipdip.ru##.top-box-fixed:style(position:static !important)
 
 chudochashca.ru##.navbar-default.navbar
@@ -2417,6 +2434,9 @@ consultant.ru/law/ref/calendar$inline-script
 ||consultant.ru/js/cons.min.js
 
 cosonok.com##header
+
+couchpota.to##header:style(position:static !important)
+couchpota.to##.intro
 
 countryscanner.ru##.bt-sub-navigation
 
@@ -2940,6 +2960,8 @@ freehtmlthemes.ru##.header-top
 freehtmlthemes.ru##.header-container
 ||timeweb.ru/images/posters/$image
 
+||freenom.com/images.v2/bg_image_2.jpg
+
 trk.freepik.com
 
 freeproxy.ru##[src="/images/vpn/hmn_ru.png"]
@@ -2962,6 +2984,10 @@ forum.garminych.ru##.gensmall:has-text(редактировать свои со�
 ||forum.garminych.ru/templates/subSilver/images/logo_phpBB.gif$image
 
 gazeta.ru##.b-navbar-videobtn
+gazeta.ru##.fixed:style(position:static !important)
+gazeta.ru##.header_v2_common
+gazeta.ru##.header_v2_top
+gazeta.ru##.b-navbar-secondary
 
 gbhackers.com##.size-full.attachment-full
 
@@ -3173,6 +3199,8 @@ home-santehnika.ru##.fa-cc-mastercard.fa
 homtom.cc###layui-layer1
 homtom.cc###layui-layer-shade1
 
+hostbrz.com##.affix:style(position:static !important)
+
 hostenko.com##.sidethemes
 hostenko.com###mc_embed_signup
 hostenko.com##.Green-button
@@ -3180,6 +3208,8 @@ hostenko.com##.wpcomm
 hostenko.com##.custom-html-widget.textwidget
 hostenko.com##.wpcafe-logo
 hostenko.com##.logo
+
+hostinger.com##.colored:style(position:static !important)
 
 houzz.ru##.comment-list__item-action--like
 houzz.ru##.comment-list__item-action--save
@@ -3198,6 +3228,10 @@ hp.com##.footer_lang_section
 hp.com##.open.hide.notifications-bg
 hp.com###psf
 
+httpmaster.ru###header:style(position:static !important)
+||httpmaster.ru/images/admn.gif
+httpmaster.ru##.googlia.moduletable
+
 support.huawei.com##.btnsContainer.slice-item
 support.huawei.com##.zl-pc-header:style(position:static !important)
 support.huawei.com##.dirScroll.newDocRelatedInfo:style(position:static !important)
@@ -3211,6 +3245,8 @@ hunting.ru##.ctxt
 hutpu4.net###infinite-footer
 
 hwp.ru##.jsPanel
+
+hyperhost.ua##.poll-go
 
 ||ibathroom.ru/wp-content/uploads/2016/12/HelpProject2.jpg$image
 
@@ -3277,6 +3313,8 @@ indiedev.name###nav-topbar.nav-container:style(position:static !important)
 indiedev.name###header:style(padding-top:0px !important)
 
 indrikgrad.ru##.headblok
+
+inetru.net##.header
 
 infodroid.ru###mt-menu-wrap:style(position:static !important)
 infodroid.ru###respond
@@ -3496,6 +3534,9 @@ kdservis.ru##.wrap_stock
 kdservis.ru##.dream
 kdservis.ru##.pagination
 
+help.keenetic.com##header:style(position:static !important)
+help.keenetic.com##.layout:style(padding-top:0px !important)
+
 keramag-online.ru##.logo
 
 ! empty part of footer
@@ -3602,6 +3643,10 @@ kupikupon.ru###kupikupon-push
 kuponika.ru##.in.fade.modal-backdrop
 kuponika.ru###modal-html
 kuponika.ru###myModal
+
+kurazhov.ru##.header-image
+kurazhov.ru##.top-bar
+kurazhov.ru##.ir-arriba
 
 blog.kvv213.com/wp-content/uploads/2015/06/20140906_080522.jpg
 blog.kvv213.com##hgroup
@@ -3984,6 +4029,9 @@ masterim.guru##.entry-tags
 
 masyan.ru##.td-front-end-display-block.td-more-articles-box
 
+matovsky.com##.navbar
+matovsky.com##.container:style(padding-top:0px !important; padding-bottom:0px !important)
+
 ||mbell.info/forum/download/file.php?avatar=*.gif$image
 
 ||mdex-nn.ru/application/maxsite/templates/easy/img/favicon.gif
@@ -4057,6 +4105,8 @@ megasantexnika.ru###tags_box
 
 ||mega-stars.ru/bloodyhill.php
 mega-stars.ru###bloodyhill
+
+megazonehosting.com###desktop_header:style(position:static !important)
 
 ! Embedding blocks
 embed.megogo.net
@@ -4149,6 +4199,9 @@ monitis.com##[href^="https://info.monitis.com/"]
 ||support.moonpoint.com/images/mplogo-white.jpg$image
 
 mooir.ru##.ipsBadge_negative
+
+moonback.ru##.fix-top
+moonback.ru##.header-logo
 
 morgansimonsen.com###site-header
 morgansimonsen.com##.header-main:style(position:static !important)
@@ -4502,6 +4555,8 @@ overclockers.ru##div.right-blog-wrap.container-block.aligned.center.column.wide.
 overclockers.ru##.message.warning
 overclockers.ru##.donate-author-link
 @@||overclockers.ru^$generichide,badfilter
+
+overplay.net$third-party
 
 owncloud.org##.easeintop.award
 owncloud.org##header.main:style(position:static !important; height:auto !important)
@@ -5783,12 +5838,16 @@ tybet.ru##.rd-navbar:style(position:static !important)
 ! embedded https://use.typekit.net/kdm2zue.js - it is not a font
 typekit.net$third-party,script
 
+typo3worx.eu###main-header
+typo3worx.eu##.header
+
 uborka.co##.top-header
 uborka.co###respond
 
 ||uceleu.ru/templates/skin/webdo/images/bg/woodland.png$image
 
 ! ucos.ru -> narod.ru
+ucoz.ru##[href="https://divly.ru/help"]
 
 ulmart.ru###cartPanel:style(position:static !important)
 
@@ -5796,12 +5855,29 @@ ultimatewindowssecurity.com###subheader1
 ||ultimatewindowssecurity.com/css/secfade.png
 ||ultimatewindowssecurity.com/securitylog/encyclopedia/askAQuestionAboutThisEvent3.gif
 
+umelmag.ru##p.footer-note.hint
+
 undocumented-features.com##.site-branding
 undocumented-features.com##.site-navigation-fixed:style(position:static !important)
 undocumented-features.com##.custom-header:style(margin-bottom:0px !important)
 
+unlimtariffs.ru##.gift.block
+unlimtariffs.ru##.cool.content.block
+||unlimtariffs.ru/img/cards-footer.png$image
+unlimtariffs.ru###navi
+
+upgrade-android.ru###headerbar
+upgrade-android.ru###top-a
+
+||uplab.ru/upload/crm/site_button/
+uplab.ru###Layer_1
+! todo: remove annoying animation
+!||tildacdn.com/js/tilda-animation
+
 upweek.ru##.leading-img:style(display:block !important; position:static !important)
 ||upweek.ru/wp-content/themes/batollo/default-image.jpg$image
+
+usbtor.ru###logo
 
 userbenchmark.com##.stickyTarget
 
@@ -5820,7 +5896,17 @@ vannamoskva.ru##.logo
 vannamoskva.ru##.purchase-info
 vannamoskva.ru##.new-postup
 
+vannapedia.ru##.header__logo
+vannapedia.ru##.fav
+vannapedia.ru##.header > .button-video
+vannapedia.ru##.header > .button-photo
+vannapedia.ru##.header > .button-ask
+vannapedia.ru##.header
+
 vannapravda.ru###sn_block
+
+vannarakovina.ru##.logotype-block
+vannarakovina.ru##.col-sm-9 > p
 
 vanna-rum.ru##.h_logo
 vanna-rum.ru###f_up
@@ -5833,6 +5919,9 @@ vanna-rum.ru##.badge-wrapper > .low-price.badge
 vannayasovety.ru##.article-nav__link
 vannayasovety.ru##.fixed.header:style(position:static !important)
 vannayasovety.ru##.logo
+vannayasovety.ru##.facts-box
+vannayasovety.ru##.section-test-box
+vannayasovety.ru##.section-question-box
 
 varlamov.ru##.s-header-extra
 varlamov.ru##.j-e-afternews
@@ -5840,74 +5929,11 @@ varlamov.ru##.j-prevnext-item
 varlamov.ru##.j-w-about-title
 varlamov.ru##.j-w-about-design
 
-vc.ru##.main_menu__container
-
-vetriks.ru###p-logo
-
-vinylko.ru##.b-product-groups-gallery__counter-wrap
-
-vkernel.ro###header
-
-blog.vladios13.com##.ess-button--email
-blog.vladios13.com###respond
-
-vodien.com###masthead:style(position:static !important)
-vodien.com##body:style(padding-top:0px !important)
-
-shop.vostok.ru##.catalog-menu-regulations
-shop.vostok.ru##.show.popup-form.subscribe-container
-!shop.vostok.ru##.opened.freez.submenu
-shop.vostok.ru###logo:style(height: 20px !important)
-||vostok.ru/images/layout/logo.png$image
-shop.vostok.ru##.product-pager
-shop.vostok.ru##.footer-form.subscribe-container
-!shop.vostok.ru##.opened.submenu
-shop.vostok.ru##.catalog-menu-regulations
-shop.vostok.ru###comments:has-text(Отзывов пока нет, вы можете сделать это первым)
-shop.vostok.ru##.price-notice
-shop.vostok.ru###header:style(position: absolute !important;)
-shop.vostok.ru##.sticky:style(position: absolute !important;)
-shop.vostok.ru##.email_catalog_s
-||vostok.ru/images/layout/social/$image
-||cdn.vostok.ru/uploads/global/images/catalogcategory/original/9b6425f3e1dba34a1476344e88cc67e88b23972e.jpg$image
-
-ucoz.ru##[href="https://divly.ru/help"]
-
-umelmag.ru##p.footer-note.hint
-
-unlimtariffs.ru##.gift.block
-unlimtariffs.ru##.cool.content.block
-||unlimtariffs.ru/img/cards-footer.png$image
-unlimtariffs.ru###navi
-
-upgrade-android.ru###headerbar
-upgrade-android.ru###top-a
-
-||uplab.ru/upload/crm/site_button/
-uplab.ru###Layer_1
-! todo: remove annoying animation
-!||tildacdn.com/js/tilda-animation
-
-usbtor.ru###logo
-
-vannapedia.ru##.header__logo
-vannapedia.ru##.fav
-vannapedia.ru##.header > .button-video
-vannapedia.ru##.header > .button-photo
-vannapedia.ru##.header > .button-ask
-vannapedia.ru##.header
-
-vannarakovina.ru##.logotype-block
-vannarakovina.ru##.col-sm-9 > p
-
-vannayasovety.ru##.facts-box
-vannayasovety.ru##.section-test-box
-vannayasovety.ru##.section-question-box
-
 ! disable annoying animation
 ||v-banyu.ru/wp-content/themes/Newspaper/js/tagdiv_theme.js
 v-banyu.ru##img:style(opacity:1 !important)
 
+vc.ru##.main_menu__container
 vc.ru##.sticky.comments__navigation:style(position:static !important)
 
 vceguide.com##[src="https://vceguide.com/wp-content/uploads/2019/02/VCEplus-refund-money.gif"]
@@ -5930,8 +5956,12 @@ veslo.ru##body > table:has-text(визу)
 
 veterinarka.ru###header
 
+vetriks.ru###p-logo
+
 videocardbenchmark.net###sidebar
 videocardbenchmark.net###blocker
+
+vinylko.ru##.b-product-groups-gallery__counter-wrap
 
 viptolstobokov.ru##.pic
 viptolstobokov.ru##.contacts_in
@@ -5941,6 +5971,11 @@ viptolstobokov.ru##.jblock_wrapper2
 
 vizhivai.com###showcase-height
 vizhivai.com##.link-email
+
+vkernel.ro###header
+
+blog.vladios13.com##.ess-button--email
+blog.vladios13.com###respond
 
 vmblog.ru###navigation:style(position:static !important)
 
@@ -5953,6 +5988,9 @@ vmtv.ru##.navbar-fixed-top:style(position:absolute !important)
 kb.vmware.com##.slds-modal__container
 kb.vmware.com##.slds-fade-in-open.slds-modal
 kb.vmware.com##.slds-backdrop--open.slds-backdrop
+
+vodien.com###masthead:style(position:static !important)
+vodien.com##body:style(padding-top:0px !important)
 
 volveter.ru##.basket_bottom_block:style(position:static !important)
 volveter.ru##.fast_view_block
@@ -5968,6 +6006,27 @@ volveter.ru##.color_link.icons_fa.more_block
 volveter.ru##.dotdot.preview_text
 volveter.ru##.element_bonus
 volveter.ru##.recommend
+
+shop.vostok.ru##.catalog-menu-regulations
+shop.vostok.ru##.show.popup-form.subscribe-container
+!shop.vostok.ru##.opened.freez.submenu
+shop.vostok.ru###logo:style(height: 20px !important)
+||vostok.ru/images/layout/logo.png$image
+shop.vostok.ru##.product-pager
+shop.vostok.ru##.footer-form.subscribe-container
+!shop.vostok.ru##.opened.submenu
+shop.vostok.ru##.catalog-menu-regulations
+shop.vostok.ru###comments:has-text(Отзывов пока нет, вы можете сделать это первым)
+shop.vostok.ru##.price-notice
+shop.vostok.ru###header:style(position: absolute !important;)
+shop.vostok.ru##.sticky:style(position: absolute !important;)
+shop.vostok.ru##.email_catalog_s
+||vostok.ru/images/layout/social/$image
+||cdn.vostok.ru/uploads/global/images/catalogcategory/original/9b6425f3e1dba34a1476344e88cc67e88b23972e.jpg$image
+
+vpnhook.com###header
+
+vps2.me##.bottom-arrow-wrap
 
 gorreklama.vrn.ru
 
@@ -6136,6 +6195,11 @@ woodtools.ru##.reportlinks
 woodtools.ru###google_translate_element
 translate.google.com$domain=woodtools.ru
 s3.amazonaws.com$domain=woodtools.ru
+
+woomhost.com##.top-header-fixed:style(position:static !important)
+woomhost.com##.blok-on-phon
+woomhost.com###typed
+woomhost.com##.outliner-middl-ha > h5
 
 wordpress.com###jp-post-flair
 wordpress.com###actionbar
