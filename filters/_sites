@@ -322,7 +322,6 @@ _468x60.$important
 ##.vkredit
 ! from AdGuard
 /plugins/convertplug/*
-/plugins/cta/*
 ! disable exclusion from Fanboy’s Enhanced Tracking List
 @@/wp-content/*/ad-$script,badfilter
 ! disable exclusions from Fanboy's list
@@ -363,12 +362,14 @@ _468x60.$important
 ##[id*="-cta-"]:not(html):not(body):not(article)
 ##.learn-more-cta
 ##.cta
+##.ctaButton
 ###cta-container
 ##.ctaSolutionSticky
 ##.ctaSolutionStickyWrapper
 ##.guide-cta
 ##.headerCta-Lo
 ##.c2018Q1CtaSolution
+/plugins/cta/*
 
 
 !! counters
