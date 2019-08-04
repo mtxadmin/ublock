@@ -183,8 +183,8 @@ _468x60.$important
 /showads.$important
 /smartBanner/*
 /test-widget/*
-! from AdGuard Tracking Protection and EasyPrivacy 
-/uedata?
+! from AdGuard Tracking Protection and EasyPrivacy, modified
+/uedata?$important
 /webbanners/*
 /widget/*$domain=~hypercomments.com|~hse.ru
 ! from EasyList
@@ -1927,6 +1927,11 @@ amazon.com##.rhf-border
 ||amazon.*/ajax/counter?
 ! from AdGuard Tracking Protection 
 ||unagi-*.amazon.com/1/events^
+! No exclusion for amazon. Also added $important up in general rules
+@@||amazon.*/*uedata$first-party,image,badfilter
+! see in _marketing: fls-na.amazon.com$important
+! see in _marketing: cloudfront-labs.amazonaws.com$important
+amazon.com##.nav-flyout.nav-coreFlyout.glow-toaster-slot-default.glow-toaster-theme-default.glow-toaster.a-section
 
 american-boffin.com##.site-credits
 
