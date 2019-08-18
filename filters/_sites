@@ -1,4 +1,4 @@
-﻿! Sort by a-z only, without _ and - (just for human convenience)
+! Sort by a-z only, without _ and - (just for human convenience)
 
 !! banners
 ! generalized
@@ -53,7 +53,7 @@ log.adsence.co.kr
 ##[class*="Banner"]:not(html):not(body):not(article)
 ##[id*="Banner"]:not(html):not(body):not(article)
 ! todo: too many exclusions. It seems, the rule needs correcting
-~volveter.ru,~klimatabogi.ru,~proftools.ru,~baidu.com,~multcloud.com,~techcommunity.microsoft.com,~unite4buy.ru,~memepedia.ru,~kinopoisk.ru##[class*="banner"]:not(html):not(body):not(article)
+~volveter.ru,~klimatabogi.ru,~proftools.ru,~baidu.com,~multcloud.com,~techcommunity.microsoft.com,~unite4buy.ru,~memepedia.ru,~kinopoisk.ru,~riogun.ru##[class*="banner"]:not(html):not(body):not(article)
 ##[id*="banner"]:not(html):not(body):not(article)
 ##[class^="bn_"]:not(html):not(body):not(article)
 ##[id^="bn_"]:not(html):not(body):not(article)
@@ -2317,6 +2317,8 @@ borncity.com##.pea_cook_bottomright.pea_cook_wrapper
 bor-stroy.com###carousel-example-generic
 bor-stroy.com##.home
 
+bountysource.com##.body-scrolled.navbar-bountysource:style(position:static !important)
+
 box.com##.or-container
 box.com##.sign-in-with-google-button
 
@@ -2722,6 +2724,10 @@ dobrodel.ru,dobrodel.mosreg.ru##.section-title_login.section-title_white.section
 
 dobrovdome.ru##.footer-mooza
 
+docker.com##.d-header:style(position:static !important)
+docker.com###main-outlet:style(padding-top:0px !important)
+forums.docker.com##.timeline-container
+
 doctor-gadgets.ru##.gcw_status_modal
 doctor-gadgets.ru###akcii
 doctor-gadgets.ru##.sidebar-form
@@ -2850,6 +2856,10 @@ forum.dwg.ru###tortle_float
 forum.dwg.ru###\32 top
 
 dynadot.com##.page-content-section-container:nth-of-type(1)
+
+dyplet.com##.logo
+dyplet.com##.ad728-top
+dyplet.com##.theiaStickySidebar:style(position:static !important)
 
 e1.ru##.e1-footer2__icons
 e1.ru##.e1-banner-right-fixed
@@ -3422,6 +3432,12 @@ support.huawei.com##.dirScroll.newDocRelatedInfo:style(position:static !importan
 huawei-helpers.ru##.site-logo
 huawei-helpers.ru###masthead
 
+! top logo
+hunter.ru##.top
+! right column
+hunter.ru##table:nth-of-type(2) > tbody > tr > td:nth-of-type(2)
+! other
+
 hunting.ru##.konkurs-anons
 hunting.ru##.ctxt
 
@@ -3883,6 +3899,10 @@ forums.lenovo.com##.guidelines
 forums.lenovo.com##.lia-quilt-column-alley-inner
 forums.lenovo.com###ratingenumerationdisplay
 
+leopard-fil.ru##.site-branding
+leopard-fil.ru##.header-main
+leopard-fil.ru##.header-image
+
 ! location popup
 leroymerlin.ru##.header-location-hint
 leroymerlin.ru##.popover-location
@@ -3972,6 +3992,8 @@ lingust.ru##noindex
 lingust.ru###header-graphic
 
 linux.org.ru##.userpic
+
+litnet.com##.topbar:style(position:static !important)
 
 liveexpert.ru##.applications-section
 liveexpert.ru##.online-wrapper
@@ -4615,6 +4637,14 @@ newsignature.com##.pre-header
 newsignature.com##.navbar:style(position:static !important)
 newsignature.com##.site-footer-info
 
+! fixed menu
+newtimes.ru##.navbar-fixed-top:style(position:static !important)
+newtimes.ru##body:style(padding-top:0px !important)
+! big logo at top
+newtimes.ru##.navbar:style(height:auto !important)
+newtimes.ru##.container > .logo
+! other
+
 nextofwindows.com###random-image-3
 
 ! neuron.digital subdomains
@@ -4696,6 +4726,14 @@ ofsant.ru##.btn-silver.next.thumb-control
 
 ohamam.ru##.opener
 ohamam.ru##.b_fly
+
+ohrana.ru##.logo
+||ohrana.ru/images/banner_automation.jpg$image
+ohrana.ru##.page > [href^="/rdr.php"]
+||ohrana.ru/images/bg_header.png$image
+
+ohotniki.ru##.header__logo
+ohotniki.ru###ring
 
 okanalizacii.ru##.widget_recent_comments
 okanalizacii.ru##.td-ss-main-sidebar:style(position:static !important)
@@ -4955,9 +4993,14 @@ pobetony.expert##.widget_search
 
 pochtabank.ru##div.geo-tile-cell
 
+podpricelom.com###toc_container
+
 ponymashka.ru##.slider
 
 poparimsya.online###header
+
+popgun.ru##.headerbar
+||popgun.ru/images/ranks/*$image
 
 popmech.ru##header.header:style(position:static !important)
 popmech.ru##.top_menu.fixed:style(position:static !important)
@@ -6057,6 +6100,8 @@ topshouse.ru##.index-new
 topshouse.ru###footer
 
 topwar.ru##.pos_sticky:style(position:static !important)
+topwar.ru##.ctrl_enter
+topwar.ru##.alert
 
 tpko.ru###wpadminbar:style(position:static !important)
 
