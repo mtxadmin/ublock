@@ -52,8 +52,10 @@ log.adsence.co.kr
 ##[id*="advert"]:not(html):not(body):not(article)
 ##[class*="Banner"]:not(html):not(body):not(article)
 ##[id*="Banner"]:not(html):not(body):not(article)
-! todo: too many exclusions. It seems, the rule needs correcting
-~volveter.ru,~klimatabogi.ru,~proftools.ru,~baidu.com,~multcloud.com,~techcommunity.microsoft.com,~unite4buy.ru,~memepedia.ru,~kinopoisk.ru,~riogun.ru##[class*="banner"]:not(html):not(body):not(article)
+    ! todo: too many exclusions. It seems, the rule needs correcting. Disabled.
+    !~volveter.ru,~klimatabogi.ru,~proftools.ru,~baidu.com,~multcloud.com,
+    !~techcommunity.microsoft.com,~unite4buy.ru,~memepedia.ru,~kinopoisk.ru,~riogun.ru
+    !##[class*="banner"]:not(html):not(body):not(article)
 ##[id*="banner"]:not(html):not(body):not(article)
 ##[class^="bn_"]:not(html):not(body):not(article)
 ##[id^="bn_"]:not(html):not(body):not(article)
@@ -131,6 +133,7 @@ _468x60.$important
 /async-ads.js$important
 /bannerBackgroundImage
 /_banner_common.php
+/_banners/*
 /banners/*
 ! from AdGuard
 /bens/vinos.js?$important
@@ -166,6 +169,8 @@ _468x60.$important
 /metrika/*
 /metrika.js
 /newrelic-browser.js
+/openx/*
+/openxtag.js$important
 /pagead/*
 /pagead2/*
 /pcs/click^
@@ -182,6 +187,7 @@ _468x60.$important
 /pubads/*$important
 ! from EasyList
 /reklam/*$domain=~reklam.com.tr
+/retargeting/*
 /rotator.min.js$important
 ! from EasyList
 /sam-pro-free/*
@@ -242,6 +248,7 @@ _468x60.$important
 ###adlogo
 ###admania_top
 ###Ads
+##.adsbygoogle
 ##.adtable
 ##.adText
 ##.adtext
@@ -277,7 +284,6 @@ _468x60.$important
 ##.buy_1c
 ###category_shoutbox
 ###check-also-box
-##.contacts-age
 ##.contact-sales
 ###container_mediaget
 ##.cross-sell-list-section
@@ -383,6 +389,7 @@ _468x60.$important
 
 
 !! counters
+##.counter
 ##.counters
 ##.count-visitor
 ! from AdGuard Tracking Protection
@@ -521,7 +528,7 @@ _pagespeed_beacon?
 ##[id*="plusone"]:not(html):not(body):not(article)
 ~officeapps.live.com##[class*="Share"]:not(html):not(body):not(article)
 ##[id*="Share"]:not(html):not(body):not(article)
-~microsoft.com,~sketchup.com##[class*="share"]:not(html):not(body):not(article)
+~microsoft.com,~sketchup.com,~topsharepoint.com##[class*="share"]:not(html):not(body):not(article)
 ##[id*="share"]:not(html):not(body):not(article)
 ##[class*="Sharing"]:not(html):not(body):not(article)
 ##[id*="Sharing"]:not(html):not(body):not(article)
@@ -682,6 +689,7 @@ _social_fb.
 ##.fodicon-tumblr
 ##.footersoc
 ##.footer-social
+##.footer-social-wrap
 ##.footer_socs
 ##.google-icon
 ##.hp_sociaisIcons
@@ -967,6 +975,7 @@ irecommend.ru#@#.rate
 ###b2
 ###b2t
 ###back2top
+##.back-home
 ##.back_top
 ###backtop
 ###BackTop
@@ -994,6 +1003,7 @@ irecommend.ru#@#.rate
 ###button-go-up
 ##.button_to_down
 ##.button_up
+##.button__up
 ##.common-desktop-back-button
 ##.docBackTop
 ##.fa-arrow-up
@@ -1144,7 +1154,9 @@ _cookie_policy_
 
 
 !! age notices
+##.contacts-age
 ##.field-name-field-age-rating
+##.footer__age-limit
 ##.nui-pg18
 ##.ww-18-plus
 
@@ -1188,6 +1200,7 @@ _cookie_policy_
 ##.footer-apps
 ##.footer-app-store
 ##.itunes
+##.login-footer__apps
 ##.main-page-app
 ##.mobapp-links-wrapper
 ##.mobile_app
@@ -1234,6 +1247,7 @@ _cookie_policy_
 ###sub-blog
 ###sub-recipe
 ###sub-review
+##.telegram_sub
 ! from Fanboy's
 /plugins/nks-subscription/*
 
@@ -1295,7 +1309,9 @@ _cookie_policy_
 ! https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
 ! Important: If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO
 ##.bottom-bar
+###fixbar
 ##.fixed_footer
+##.fixed_panel
 ##.fixed-support-links
 ##.floating_badge
 ##.footer-line
@@ -1553,6 +1569,7 @@ tarif-24.ru##.mh-ticker-bottom
 /adwords/$important
 /adx/*
 /antibot.php
+/atrk.gif
 /awaps$important
 /Banner$important,domain=~doshirak.com
 /banner$important,domain=~doshirak.com
@@ -1780,10 +1797,15 @@ about-windows.ru###branding
 about-windows.ru###respond
 about-windows.ru##.demo
 
+academy.ru###widgetButton
+academy.ru##.widget_main
+
 academyit.ru##.fancybox-skin
 academyit.ru##.fancybox-overlay-fixed.fancybox-overlay
 academyit.ru##body:style(overflow:auto !important)
 academyit.ru##html:style(overflow:auto !important)
+academyit.ru##.top.panel:style(position:static !important)
+academyit.ru##.header:style(position:static !important)
 
 adamtheautomator.com##.Fdo5jG2P
 
@@ -1886,6 +1908,12 @@ aliexpress.com##.left-affix.next-affix:style(position:static !important)
 aliexpress.com##.detail-fixed-tab:style(position:static !important)
 aliexpress.com##.search-feedback-wrap
 aliexpress.com##.item-store-wrap > .store-name
+aliexpress.com##.channel-menu:style(position:static !important)
+aliexpress.com##.img-view-wrap > div:style(position:static !important; top:auto !important)
+! hover icons on photos
+aliexpress.com##.atwl-btn-wrap
+! footer with seo links
+aliexpress.com##.cross-link
 ! other
 aliexpress.com##.mobile-discount-trigger
 aliexpress.com##.ng-mobile
@@ -2023,6 +2051,7 @@ antibot.cloud
 anti-free.ru##body > div:nth-of-type(1) > .page > div
 
 anti-malware.ru##.view-header
+anti-malware.ru##.next-news
 
 aphorismos.ru/_informer/*
 
@@ -2270,12 +2299,18 @@ bleepingcomputer.com###branding
 blogspot.com##.comment-form
 blogspot.com##[href^="http://ucoz.net"]
 ||blogspot.com/*/undercons.gif
+blogspot.com##.Profile.widget
+
+agorbunov.blogspot.com##header
+agorbunov.blogspot.com###navbar
 
 clintboessen.blogspot.com##.Image.widget
 
 doprogerammer.blogspot.com##.centered-top-container
 
-itshi-tech.blogspot.com##.Profile.widget
+eazybi.blogspot.com##.tabs-outer
+eazybi.blogspot.com##header
+eazybi.blogspot.com###navbar
 
 juventusitprofessional.blogspot.com##.viewitem-header
 juventusitprofessional.blogspot.com###header-container
@@ -2450,6 +2485,9 @@ calculator-ipoteki.ru##.blue
 
 ads.callofdutyblackopsforum.net
 
+camerondwyer.com##.header
+camerondwyer.com##.custom-html-widget.textwidget
+
 capterra.com$third-party
 
 carguts.ru##noindex
@@ -2541,6 +2579,7 @@ computingforgeeks.com##.td-affix.td-header-menu-wrap:style(position:static !impo
 !computingforgeeks.com###td_social_sharing_article_top
 !computingforgeeks.com##.td-scroll-up  ! doesn't work with general -- it was an exception from AdGuard
 !computingforgeeks.com##.td-banner-wrap-full  ! doesn't work with general -- it was an exception from AdGuard
+computingforgeeks.com##.td-trending-now-wrapper
 
 docs.cntd.ru##.on:style(position:absolute !important)
 docs.cntd.ru##.payBlockAssistant
@@ -2933,6 +2972,8 @@ eskonr.com###secondary
 
 essential.com###footerNotice
 
+eureca.ru##.left_stick
+
 eventid.net##.equal-height-panels.row
 eventid.net##.span-1-of-3.col
 eventid.net##div.event-english-concept-search
@@ -2979,6 +3020,9 @@ facebook.com###pagelet_video_home_watch_list_rhc
 forum.fairphone.com##.extra-info-wrapper
 forum.fairphone.com##.d-header:style(position:static !important)
 forum.fairphone.com###main-outlet:style(padding-top:0px !important)
+
+falchionconsulting.com###masthead
+falchionconsulting.com##.header-image
 
 
 ! It seems, wikia.com renamed to fandom.com
@@ -3190,6 +3234,9 @@ gemotest.ru##video
 
 getdroidtips.com##.after-header-container
 getdroidtips.com##.site-header
+
+||getfreedumps.com/images/registernow.png
+getfreedumps.com##.sidebar1
 
 getstream.io##.str-topbar:style(position:static !important)
 
@@ -3420,6 +3467,7 @@ hp.com##.lia-quilt-column-icons.lia-quilt-column-single.lia-quilt-column-24.lia-
 hp.com##.footer_lang_section
 hp.com##.open.hide.notifications-bg
 hp.com###psf
+community.hpe.com##.anchored:style(position:static !important)
 
 httpmaster.ru###header:style(position:static !important)
 ||httpmaster.ru/images/admn.gif
@@ -3735,6 +3783,7 @@ forum.kaspersky.com##.ipsSpacer_top.cTopicPostArea_noSize.ipsPad.ipsAreaBackgrou
 forum.kaspersky.com##.ipsMessage_information.ipsMessage.ipsJS_hide.cAnnouncementPageTop
 forum.kaspersky.com##.ipsType_center.ipsMessage_information.ipsMessage.cAnnouncementContentTop
 forum.kaspersky.com###elLogo
+support.kaspersky.ru##.w_cont:has-text(Была ли информация полезна)
 
 kdelo.ru##.topLine
 
@@ -3992,6 +4041,7 @@ lingust.ru##noindex
 lingust.ru###header-graphic
 
 linux.org.ru##.userpic
+linux.org.ru##.fav-buttons
 
 litnet.com##.topbar:style(position:static !important)
 
@@ -4208,6 +4258,12 @@ imgsmail.ru/gstat?
 ! and many others (todo)
 
 
+majordomo.ru##.help
+majordomo.ru###logo
+majordomo.ru###cms-cta2
+majordomo.ru##.help-more
+majordomo.ru###help-like
+
 major-expert.ru###myCarousel
 major-expert.ru##.search_panel:style(position:static !important)
 major-expert.ru##.block_button.orange_stroke_btn.super_button
@@ -4372,6 +4428,8 @@ mi.com###wp:style(margin-top:0px !important)
 miltor.ru##.navbar-fixed-top:style(position:static !important)
 miltor.ru##.navbar-header
 
+mikecareyau.com###branding
+
 mikefrobbins.com##.widget_text:has-text(Disclaimer)
 
 mikrotik.com##.hsubmenu
@@ -4443,6 +4501,8 @@ moonback.ru##.header-logo
 
 morgansimonsen.com###site-header
 morgansimonsen.com##.header-main:style(position:static !important)
+
+morgantechspace.com###header
 
 gorod.mos.ru##.scene__logo
 gorod.mos.ru##.head__logo__text_small
@@ -4529,6 +4589,11 @@ blogs.msmvps.com##.site-branding
 mspoweruser.com##.navbar-fixed-top:style(position:static !important)
 mspoweruser.com##body:style(padding-top:0px !important)
 
+mssqltips.com###slideboxtop
+!mssqltips.com##.columns.hide-for-print
+mssqltips.com##.hide-for-print
+mssqltips.com##[href="/"]
+
 m-strana.ru##.slider.news
 m-strana.ru##.slider-section
 m-strana.ru##.sticky-menu
@@ -4541,6 +4606,8 @@ lk.mts.ru##.popup__questionnaire
 !lk.mts.ru##.popup__overlay
 mts.ru##.product-info__inner
 mts.ru##.popup--open:style(overflow:auto !important)
+mts.ru##.login-slider
+mts.ru##.page-login__header-slogan
 
 ! unstick header
 multcloud.com##.header:style(position:static !important)
@@ -4619,6 +4686,8 @@ veta.naver.com
 ! naver.net
 ! from EasyPrivacy
 ||naver.net/wcslog.js
+
+naydex.net$script
 
 nedimmehic.org##.sidebar
 nedimmehic.org##.header
@@ -4830,6 +4899,8 @@ owncloud.com##.uk-sticky-fixed:style(position:static !important)
 owncloud.com##.uk-sticky-placeholder
 
 palladium.ru##.city
+
+pandia.ru##body > center > div
 
 parazit-info.ru##noindex
 
@@ -5125,6 +5196,10 @@ qna.center##.maw100
 
 questarter.com##.navbar-fixed-top:style(position: absolute !important)
 
+sharepoint.rackspace.com##.heroBackground
+sharepoint.rackspace.com###topSection
+sharepoint.rackspace.com##.sidebar
+
 radikal.ru##.base-page_left-side
 radikal.ru##.pict-menu_glpp
 radikal.ru##.footer
@@ -5158,6 +5233,10 @@ news.rambler.ru##.menu--visible.menu--news.menu.j-menu:style(position:static !im
 reklama.rambler.ru
 ||ssp.rambler.ru/capirs_async.js$important
 
+
+rashodnika.ru###header.sticky-header:style(position:static !important)
+rashodnika.ru##.main-menu-wrap:style(position:static !important)
+rashodnika.ru###header:style(padding-bottom:0px !important)
 
 raspberrypi.tv##.appear-fixed-on-scroll
 raspberrypi.tv##.top-navbar
@@ -5279,6 +5358,8 @@ remotvet.ru##.logo_line
 remotvet.ru##.handle_hovers.buttons
 
 remstd.ru##.logo
+
+repost.uz##.new_menu--fixed:style(position:static !important)
 
 reviewpoint.ru###mt-menu-wrap:style(position:static !important)
 reviewpoint.ru##.top-header-section
@@ -5627,9 +5708,16 @@ servis-tent.ru###masthead
 
 setka.io$third-party
 
+sharepointdiary.com###header-blog
+
+sherweb.com##.sub-header
+
 shipilov.com##noindex
 
 shop4toys.ru##.fixed-panel
+
+! https://xakep.ru/2019/08/27/click-interception/
+shopify.com$third-party
 
 sid-500.com##.header-image
 sid-500.com##.footer-wrap
@@ -5659,6 +5747,9 @@ sitepoint.com##.NavBar_offsetSpacer
 
 siteuptime.com###np-menu-wrap:style(position:static !important)
 siteuptime.com##.np-logo-section-wrapper
+
+! https://xakep.ru/2019/08/27/click-interception/
+sixshop.co.kr$third-party
 
 skedraft.ru##.logo
 skedraft.ru##.header
@@ -5696,6 +5787,12 @@ snakeproject.ru###right
 
 softikbox.com##.header-menu:style(position:static !important)
 softikbox.com##.header > .wrapper
+
+softline.com##.sticky.is-stuck:style(position:static !important)
+softline.com##.aside-widget
+softline.com##section.about-course
+softline.com##.footer__desc
+softline.com###nav-top:style(top:auto !important)
 
 softmark.ru###header
 ||softmark.ru/upload/medialibrary/c63/allsoft_office_hb.png$image
@@ -5735,6 +5832,7 @@ spa-hammam.ru##.clone.site-header
 spets.ru##.btn-fixed
 
 specialist.ru##.useful_info
+specialist.ru##[href="/guarantee-quality"]
 
 specodegda.ru##.addtext
 specodegda.ru##.dop-info
@@ -5948,7 +6046,9 @@ techtarget.com###comments-1-miniRegv2-loginForm-1-buttonExpand
 ! todo: jumping header, sticky-kit
 techtarget.com###page-header
 cdn.ttgtmedia.com$script
-searchenterprisedesktop.techtarget.com##.sign-up-wrapper
+techtarget.com##.sign-up-wrapper
+techtarget.com##.extra-info
+techtarget.com##.dig-deeper
 
 techunboxed.com###header-inner
 techunboxed.com##footer
@@ -6063,6 +6163,10 @@ timeanddate.com##.header__inner:style(position:static !important)
 
 timepad.ru/api/track
 
+timeweb.com###main:style(margin-top:0px !important)
+timeweb.com###header
+timeweb.com##.ia-splitter:style(padding-top:0px !important)
+
 ||img-cdn.tinkoffjournal.ru/incoming_minicover*.gif
 
 tiu.ru##.x-overlay__dialog_type_padded.x-overlay__dialog
@@ -6090,6 +6194,10 @@ tokar.guru##.leftBlock-sticky
 
 top-hammam.ru###fancybox-wrap
 top-hammam.ru###fancybox-overlay
+
+topsharepoint.com###menu-top
+topsharepoint.com##.padTop.group
+topsharepoint.com##.sidebar
 
 topshouse.ru##.bxmaker__geoip__popup-content
 topshouse.ru##.bxmaker__geoip__popup-background
@@ -6352,6 +6460,7 @@ vmware.com##.header-group:style(position:static !important)
 vmware.com##body:style(padding-top:0px !important)
 vmware.com###container:style(padding-top:0px !important)
 vmware.com##.cKM_Feedback_update
+vmware.com##.jive-sidebar.j-box:has-text(Share This Page)
 
 vodien.com###masthead:style(position:static !important)
 vodien.com##body:style(padding-top:0px !important)
@@ -6612,6 +6721,8 @@ emeneye.wordpress.com##.widget_media_image
 
 fromreallife.wordpress.com##.single-featured-image-header
 fromreallife.wordpress.com###colophon
+
+itbeco.wordpress.com###slider-wrap
 
 itkaola.wordpress.com###masthead
 itkaola.wordpress.com##body:style(background:none !important)
