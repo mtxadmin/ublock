@@ -1,9 +1,13 @@
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 ! todo: but allow https://www.google.com/recaptcha/
 ! google.*##+js(remove-attr.js, onlick|onmousedown)$first-party
+
+! Recaptcha
 !@@google.*/recaptcha/*
 !@@/assets/js/advertisement.js$~third-party
 !@@google.*/recaptcha/*
+! Some Youtube scripts, all works without it. Later it turned out, that is Google recaptcha and it needs to be unblocked to post comments to some sites
+!google.com/js/bg/$script
 
 
 google.*###Rzn5id
@@ -30,9 +34,6 @@ pagead-googlehosted.l.google.com
 
 fcmatch.youtube.com
 youtube.com/pixel
-
-! Some Youtube scripts. All works without it
-google.com/js/bg/$script
 
 ! from Fanboy's
 ||contributor.google.com^*/loader.js$third-party
