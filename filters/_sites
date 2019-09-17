@@ -5187,7 +5187,8 @@ pikabu.ru##.user__nick_big
 ! popups - doesn't work properly
 !pikabu.ru##+js(remove-attr.js,mouseover,.comment__user)
 ! pictures in comments (todo: need to exclude gifs)
-pikabu.ru##.comment-image:style(height:100px)
+!pikabu.ru##.comment-image:style(height:100px)
+pikabu.ru##.comment-image:not(:has(.player)):style(height:100px)
 ! for todo: images (not gif) descriptor  ##.comment-image:has(>.comment-image__content)
 ! ad icons in right top menu
 pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeneyahe_i_d_4931277"]
