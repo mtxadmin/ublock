@@ -1,4 +1,4 @@
-﻿! Callback and chat services. Plus push notifications services.
+! Callback and chat services. Plus push notifications services.
 
 ! Don't know how to sync files from other repositories and change syntax to uBlock
 ! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
@@ -18,7 +18,14 @@
 ##[id*="Chat"]:not(html):not(body):not(article)
 ~aliexpress.com##[class*="chat"]:not(html):not(body):not(article)
 ##[id*="chat"]:not(html):not(body):not(article)
+###callbut-mini
+##.callbut-mini-phone
+##.consultation
+###fonPushProfit
+##.js-callme-modal-1
+##.mango-call-site__btn
 ###tcb-call
+###webcall-dialog-container
 ##.widgetCallMe
 /call_back/*
 /call-catcher
@@ -86,10 +93,6 @@
 /wp-content/plugins/wplivechat/
 /wp-content/plugins/wt-web-push-notifications/
 /wp-content/plugins/zmpush-web-push-notifications/
-##.consultation
-###fonPushProfit
-##.mango-call-site__btn
-###webcall-dialog-container
 
 
 !! domains
