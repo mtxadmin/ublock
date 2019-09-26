@@ -142,6 +142,8 @@ _468x60.$important
 /cast_sender.js
 ! from EasyList
 /click?pid=*&offer$popup,domain=~checkmoney.com.ua
+! from AdGuard
+.com/native.php?b=
 /context_ads/*
 /copyright.js
 /dcmads.js
@@ -168,6 +170,7 @@ _468x60.$important
 /mchat/*
 /metrika/*
 /metrika.js
+/mobile-banner/*
 /newrelic-browser.js
 /openx/*
 /openxtag.js$important
@@ -242,8 +245,11 @@ _468x60.$important
 ###ad728x90
 ##.adaptive-banner
 ##.adaptive-banner-community
+##.adb-def
 ###adBlockMessaging
 ###adbns
+###ad-desktop-bottom
+###ad-desktop-bottom2
 ###adf
 ###adf_notifiers_wrap
 ###__adIframe
@@ -277,6 +283,7 @@ _468x60.$important
 ###ban240x400
 ##.baner
 ##.baner_top
+###banner-container
 ##.banner-link
 ##.banner-main-container
 ##.b-content__section_teasers
@@ -315,10 +322,13 @@ _468x60.$important
 ##.header-donation
 ###hosted-by
 ##.hosted_by
+##.js-banner
 ###limited-offer-wrap
 ###locked-footer-ad-wrapper
 ##.m-ad
 ##.main-float-buttons
+##.mobile-banner
+##.mobile-banner-content
 ###nanoBaner
 ###nav-ad
 ###___ndtvpushdiv
@@ -870,6 +880,7 @@ _social_fb.
 ##.tips
 ###top-share
 ###uLogin
+##.ulogin_block
 ##.ulogin-buttons-container
 ##.vk
 ###vk_groups
@@ -1429,6 +1440,10 @@ _cookie_policy_
 ##.homepage-brands-of-week-wrapper
 ##.vendors
 ###vendors-slider
+
+
+!! toc lists
+/table-of-contents-plus/*
 
 
 !! modals - was experimental, disabled
@@ -2303,6 +2318,17 @@ ayzdorov.ru##.topbutton
 ayzdorov.ru##.head_sprite
 
 emptygif.babyblog.ru
+! polls
+babyblog.ru##.bb-interview
+babyblog.ru##.js-interview
+! header
+babyblog.ru##.bb-header-container:style(position:static !important)
+babyblog.ru##body:style(padding-top:0px !important)
+babyblog.ru##.svg-preloader
+! footer
+babyblog.ru##.footer-menu-special
+babyblog.ru##.footer-sl-age
+! other
 
 backblaze.com##.nav-primary
 backblaze.com##.stuck:style(position:static !important)
@@ -2334,6 +2360,8 @@ banyaspec.com##.photobg.logo-block
 
 ! some sort of provider?
 ||batraim.com/ads/
+
+baucenter.ru##.have-tooltip.send-message.custom-popup
 
 bauer-power.net###header-wrapper
 
@@ -2465,6 +2493,15 @@ blogss.ru###header
 blogss.ru###footer
 blogss.ru###respond
 blogss.ru##.pings
+
+boards.net##.bksmb
+
+boards.net###remove_ads_link
+boards.net###ad-desktop-top
+boards.net##.v4news.container
+boards.net##.avatar
+boards.net##.personal-text
+||storage.proboards.com/forum/images/icons/male.png$image
 
 boingboing.net##.widget_stackcommerce_widget
 
@@ -2797,6 +2834,8 @@ decathlon.ru##.payment
 decathlon.ru##.nav-container-floor-menu.sticky:style(position:static !important)
 decathlon.ru###carousel
 
+dekoriko.ru##nav.navigation:nth-of-type(1)
+
 dell.com###contactslidertitle
 dell.com###okbFeedback
 dell.com##.lia-button-image-kudos-not-kudoed
@@ -2860,8 +2899,19 @@ discord-pc.ru$third-party
 
 ditching.eu##.td-ss-main-sidebar:style(position:static !important)
 
-dmosk.ru##.nav-fixed-top:style(position:static !important; top:0px !important)
-dmosk.ru##nav:style(position:static !important; top:0px !important)
+! header
+!dmosk.ru##.nav-fixed-top:style(position:static !important; top:0px !important)
+!dmosk.ru##nav:style(position:static !important; top:0px !important)
+dmosk.ru##nav
+! other
+dmosk.ru##.menu-contact
+dmosk.ru##.article-post-inst
+dmosk.ru##.author-photo
+||dmosk.ru/img/public/author.jpg
+dmosk.ru##.polezno_mail
+dmosk.ru##.polezno
+dmosk.ru##.but_polezno
+dmosk.ru##form:has-text(для более быстрого ответа)
 
 ! dns-shop.ru,technopoint.ru
 dns-shop.ru,technopoint.ru###page-notification
@@ -2898,6 +2948,7 @@ dns-shop.ru,technopoint.ru##.main-footer__responsibility
 dobrodel.ru,dobrodel.mosreg.ru##.riamo-news
 dobrodel.ru,dobrodel.mosreg.ru##.footer-portals
 dobrodel.ru,dobrodel.mosreg.ru##.section-title_login.section-title_white.section-title
+dobrodel.ru,dobrodel.mosreg.ru##.header-logo
 ||dobrodel.mosreg.ru/static/img/general/dobroFace.png$image
 ||dobrodel.ru/static/img/general/dobroFace.png$image
 
@@ -3042,6 +3093,9 @@ dyplet.com##.theiaStickySidebar:style(position:static !important)
 
 e1.ru##.e1-footer2__icons
 e1.ru##.e1-banner-right-fixed
+||e1.ru/static/build/img/logo/*$image
+||e1.ru/images/picts/_pict_home.gif$image
+||e1.ru/images/titles/_home_old.gif$image
 
 eco-dush.ru##.fix-scroll
 
@@ -3129,6 +3183,8 @@ eviltracker.net
 
 examcollection.com###p_win1
 examcollection.com###p_fade
+
+exler.ru##.header-top
 
 ! todo: not very good
 expert.ru##.header:style(position:static !important)
@@ -3825,6 +3881,9 @@ isolux.ru##.navbar-main:style(position:static !important; box-shadow:none !impor
 isolux.ru##.navbar-main__item:style(padding-right:34px !important)
 isolux.ru##.navbar-controls:style(margin-bottom:0px !important)
 isolux.ru##.shadow-bottom:style(box-shadow:none !important)
+isolux.ru##.navbar-controls__item--logo
+isolux.ru##.page-footer__error-report
+isolux.ru##.page-footer__personal-agreement
 
 it-connection.ru##.cat-wid.cat-index:has-text(Акция)
 
@@ -3897,6 +3956,10 @@ itworkroom.com###site-generator
 itworkroom.com###commentform
 itworkroom.com###blog-title-wrap
 itworkroom.com##.searchform
+
+ivd.ru##.logo
+ivd.ru##.footer-announce
+ivd.ru##.footer-info
 
 ivedu.ru###politics
 
@@ -4112,6 +4175,12 @@ kurazhov.ru##.ir-arriba
 blog.kvv213.com/wp-content/uploads/2015/06/20140906_080522.jpg
 blog.kvv213.com##hgroup
 
+laminat-msc.ru##.opener
+laminat-msc.ru##.article-rate
+laminat-msc.ru##.rating
+laminat-msc.ru##.logo
+laminat-msc.ru##.fa-phone
+
 ||land-cruiser.ru/uploads/monthly_2018_07/logo.png$image
 land-cruiser.ru###ipsLayout_header:style(position:static !important)
 land-cruiser.ru##[href="#top"]
@@ -4186,6 +4255,7 @@ leroymerlin.ru##.on-image-button
 leroymerlin.ru##.btn-quick-view
 ! other
 leroymerlin.ru##.sp-review-recommended
+leroymerlin.ru##.sp-summary-block.sp-summary-recommended
 leroymerlin.ru##.services-carousel
 leroymerlin.ru##.m0.p0.section
 leroymerlin.ru##.marks
@@ -4226,6 +4296,9 @@ lifehacker.ru##.secondary-menu
 ! typos
 lifehacker.ru##.footer-right-typo-small
 lifehacker.ru##.footer-right-typo-big
+
+@@||lifenews.ru^$generichide,badfilter
+@@||lifenews78.ru^$generichide,badfilter
 
 lifeofageekadmin.com##.logo
 
@@ -4291,6 +4364,11 @@ losst.ru###catcher
 losst.ru##.widget:has-text(/Реклама|Мы вконтакте|Обнаружили опечатку?|Оставайтесь с нами|Мы в Twitter/)
 losst.ru##.image-logo
 losst.ru###respond
+
+lucheeotoplenie.ru##.header-logo
+lucheeotoplenie.ru##.sticky-sidebar-left
+lucheeotoplenie.ru###fixmenu:style(position:static !important)
+lucheeotoplenie.ru##.fx-toc
 
 lullabot.com##.site-header.is-fixed:style(position:static !important)
 lullabot.com##.site-header:style(margin-top:0px !important; position:static !important)
@@ -4409,8 +4487,6 @@ imgsmail.ru/gstat?
 @@||kote.ws^$generichide,badfilter
 @@||kttc.ru^$generichide,badfilter
 @@||kubik3.ru^$generichide,badfilter
-@@||lifenews.ru^$generichide,badfilter
-@@||lifenews78.ru^$generichide,badfilter
 @@||list-org.com^$generichide,badfilter
 @@||liveinternet.ru^$generichide,badfilter
 @@||lotzon.com^$generichide,badfilter
@@ -4454,7 +4530,6 @@ imgsmail.ru/gstat?
 @@||spec-komp.com^$generichide,badfilter
 @@||sports.ru^$generichide,badfilter
 @@||stalker-mods.clan.su^$generichide,badfilter
-@@||stroi-help.ru^$generichide,badfilter
 @@||svetmonet.ru^$generichide,badfilter
 @@||tmbw.ru^$generichide,badfilter
 @@||vacancies.club^$generichide,badfilter
@@ -4520,6 +4595,10 @@ masterim.guru###masthead
 masterim.guru##.site-footer
 masterim.guru##.rating-box
 masterim.guru##.entry-tags
+
+masterskayapola.ru###header
+masterskayapola.ru##blockquote:has-text(Если вам нужны мастера)
+masterskayapola.ru###commentsAdd
 
 masyan.ru##.td-front-end-display-block.td-more-articles-box
 
@@ -4675,6 +4754,8 @@ mircli.ru##.button-engineering-solutions
 
 ! site breaks copypaste
 mirpesen.com$inline-script
+
+miremonta.ru###masthead
 
 ! from Fanboy's
 ||mirtesen.ru^$third-party
@@ -5128,6 +5209,20 @@ ot.help###header-top
 
 otdelkadom-surgut.ru##.custom-logo
 
+otdelka-expert.ru##.subs-form
+otdelka-expert.ru##.header__fav
+otdelka-expert.ru##.wi-log
+otdelka-expert.ru###toc_container
+otdelka-expert.ru##.post-author__about
+
+otoplenie-gid.ru##.logo
+otoplenie-gid.ru##.bg-head
+
+o-trubah.ru##.homepage-link
+o-trubah.ru##.clearfix.info.box
+o-trubah.ru###comment_form
+o-trubah.ru##.add_company
+
 ||otzovik.com/static/img/footer/liru.gif$image
 
 otzyvy.pro##center
@@ -5330,6 +5425,20 @@ pochtabank.ru##div.geo-tile-cell
 
 podpricelom.com###toc_container
 
+polov.ru##.logo_link
+polov.ru##.skidki_link
+polov.ru##.compare_link
+polov.ru##.favorite_link
+polov.ru##div.item_categories_list
+polov.ru##.payment_bot
+polov.ru##.menu_top_wrap.is_stuck:style(position:static !important)
+polov.ru##.mobile_click_tel
+
+polsdelat.ru###masthead
+polsdelat.ru##.textwidget > form
+polsdelat.ru##.table-of-contents
+polsdelat.ru##.footer-text
+
 ponymashka.ru##.slider
 
 poparimsya.online###header
@@ -5348,6 +5457,9 @@ poroloner.com##.boc_anch.btn_buy
 poroloner.com##.already_seen
 
 port-u.ru###s5_logo_wrap
+
+potolok8.ru##.big-header
+potolok8.ru##.fx-toc
 
 powershellcenter.com/images/PowerShellBanner2.png
 
@@ -5421,9 +5533,22 @@ chat.c.prom.st
 prom.ua##div[class^=besida-bubbleButton]
 prom.ua##.x-footer-extra
 
+pronetblog.by###header
+pronetblog.by##.textwidget:has(#ginfo)
+
+pro-remontnik.com##.logo-section
+pro-remontnik.com##.footer-bottom
+pro-remontnik.com###toc_container
+
+! header
 prosmarttv.ru##.rd-header-warp
 prosmarttv.ru##.rd-sticky-enable:style(position:static !important)
 prosmarttv.ru##.rd-sidebar:style(position:static !important; top:auto !important)
+! slide carousel
+prosmarttv.ru##.lSSlideOuter
+! very big "add comment" block
+prosmarttv.ru###respond
+! other
 
 prosto-invest.ru##div[class^=fixedPanel]
 prosto-invest.ru##div[class^=iconScrollContainer]
@@ -5592,6 +5717,8 @@ remontka.pro##.rem-bottom
 remontka.pro##.uk-panel-box-primary
 remontka.pro##.rem-linkdiv
 
+remontnick.ru##.rk-all-articles
+
 remontnik.ru##.ng-scope.ng-animated.dialog
 remontnik.ru##script
 remontnik.ru$script
@@ -5631,6 +5758,14 @@ remotvet.ru##.logo_line
 remotvet.ru##.handle_hovers.buttons
 
 remstd.ru##.logo
+
+remstroiblog.ru###logo
+remstroiblog.ru###ez-toc-container
+remstroiblog.ru###respond
+
+remvizor.ru##.header__logo
+remvizor.ru##.header
+remvizor.ru##.footer
 
 repost.uz##.new_menu--fixed:style(position:static !important)
 
@@ -5927,9 +6062,12 @@ satra.ru##.fix.sticky-box
 !||stat.online.sberbank.ru/CSAFront-res/35.0/skins/sbrf/images/csa/loginPage/slide2.jpg
 !||stat.online.sberbank.ru/CSAFront-res/36.0/skins/sbrf/images/csa/loginPage/slide1.jpg
 ||stat.online.sberbank.ru/CSAFront-res/*/skins/sbrf/images/csa/loginPage/slide*.jpg$image
+! new design
+||stat.online.sberbank.ru/ESA/sbol/*/img/slide*.jpg$image
 !test
 @@||sberbank.ru$generichide
 sberbank.ru##div[id^=notification]:has(.bunnerLists)
+sberbank.ru###offerBlock
 bonus-spasibo.ru##.header-top:style(position:absolute !important)
 spasibosberbank.ru##.popup-custom__container
 spasibosberbank.ru##.popup-custom
@@ -6058,6 +6196,8 @@ slideserve.com##.navbar-fixed-top:style(position:static !important)
 smartcalc.ru##.navbar-fixed-top:style(position:static !important)
 ! It is not scroller button, it is calc button. Making exception from Fanboy’s Annoyance List general rule
 smartcalc.ru#@#.glyphicon-arrow-up
+
+smarttvnews.ru##.logo_section_wrap
 
 ||smartphone.ua/inc/images/all-bg.jpg
 
@@ -6189,7 +6329,22 @@ stm-electronics.ru##div.card-icons
 
 stopgame.ru##.inTop
 
+! disable exclusion
+@@||stroi-help.ru^$generichide,badfilter
+! ad js
+||stroi-help.ru/board/home.js
+stroi-help.ru##script:contains(AdBlock)
+! header
+||stroi-help.ru/images/bg_list.png$image
+stroi-help.ru##.header_blok
+stroi-help.ru##header:style(background:none !important; min-height:0px !important)
+stroi-help.ru##.navbar-fixed-top:style(position:static !important)
+stroi-help.ru##.navbar-fixed-bottom:style(position:static !important)
+! other
+
 stroim42.ru###respond
+
+stroychik.ru###header
 
 stroyday.ru##.lft_fixed
 
@@ -6209,6 +6364,7 @@ stroymaterialopt.ru##a.pcd.apuo.btn_buy:nth-of-type(2)
 stroymaterialopt.ru##div.catalog-detail-buttons:nth-of-type(6) > a.pcd.apuo.btn_buy:nth-of-type(1)
 
 stroy-podskazka.ru##div:has-text(Информация предоставлена в справочных целях)
+stroy-podskazka.ru##.logo
 
 stroyportal.ru##.logo
 
@@ -6560,6 +6716,8 @@ transip.be,transip.eu##body:style(overflow:auto !important)
 
 stats.travelask.ru
 
+trekker.net##.site-header
+
 trest.market##.logo
 
 triaservice.com.ua###header
@@ -6636,6 +6794,8 @@ ucoz.ru##[href="https://divly.ru/help"]
 
 udemy.com##div[class*="smart-bar"]
 udemy.com##.streamer--fixed
+
+ujut-v-dome.ru##aside
 
 ulefone.com##.fixed:style(position:static !important)
 
@@ -6898,6 +7058,14 @@ vseinstrumenti.ru##.ns.nameplates
 
 vseprogarazh.ru##.l-header
 
+vse-pro-laminat.ru##.theiaStickySidebar:style(position:static !important)
+vse-pro-laminat.ru##.header
+vse-pro-laminat.ru##div.side-blok:has-text(Об Авторе)
+vse-pro-laminat.ru##.banner--clone
+vse-pro-laminat.ru##.credits
+vse-pro-laminat.ru##.myreyting
+vse-pro-laminat.ru###respond
+
 vse-shutochki.ru##div > [href="/"]
 ! site breaks copypaste
 vse-shutochki.ru$script
@@ -7096,6 +7264,8 @@ wordpress.com###site-generator
 
 bezmaly.wordpress.com###header
 bezmaly.wordpress.com###infinite-footer
+
+chefkochblog.wordpress.com##.header
 
 chrisdill.wordpress.com##h1
 chrisdill.wordpress.com###creditsleft
