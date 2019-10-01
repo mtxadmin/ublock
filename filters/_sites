@@ -286,6 +286,7 @@ _468x60.$important
 ###banner-container
 ##.banner-link
 ##.banner-main-container
+##.banner-top-content
 ##.b-content__section_teasers
 ##.bets-online
 ##.b-direct
@@ -659,6 +660,7 @@ _pagespeed_beacon?
 /social.png
 ! from Fanboy's
 /social/google.
+/telegram.svg
 ! from Fanboy's
 /tweet_button.
 /twitter.svg
@@ -909,17 +911,22 @@ _social_fb.
 ##.article-votes
 ###button_mnenie
 ##.democracy
+##.er
 ##.error_report_block
+##.extravote
 ##.fa-spin
 ##.have-a-question
 ##.helpful-vote_wrapper
 ##.kb-rate-article
 ##.mistake
 ##.mnenie_button
+##.onerror
+###orphus
 ##.poll
 ##.poll_form
 ##.postvote_wrap
 ##.post-ratings
+###question_widget
 ##.rate
 irecommend.ru#@#.rate
 ##.rating-helpful
@@ -939,8 +946,12 @@ irecommend.ru#@#.rate
 /plugins/wp-postratings/*
 
 
-!! up button
+!! up button (and down too, sometimes)
 ! generanized
+##[class$="-arrow-up"]:not(html):not(body)
+##[id$="-arrow-up"]:not(html):not(body)
+    !##.fa-arrow-up
+    !##.fa-long-arrow-up
 ##[class$="button-up"]:not(html):not(body)
 ##[id$="button-up"]:not(html):not(body)
     !##.js-button-up
@@ -948,10 +959,14 @@ irecommend.ru#@#.rate
     !###button-up
     !##.bxr-button-up
     !##.js-button-up
+##[class$="chevron-down"]:not(html):not(body)
+##[id$="chevron-down"]:not(html):not(body)
 ##[class$="chevron-up"]:not(html):not(body)
 ##[id$="chevron-up"]:not(html):not(body)
 ##[class$="-icon-up"]:not(html):not(body)
 ##[id$="-icon-up"]:not(html):not(body)
+##[class*="scrolldown"]:not(html):not(body)
+##[id*="scrolldown"]:not(html):not(body)
 ##[class*="scroll-top"]:not(html):not(body)
 ##[id*="scroll-top"]:not(html):not(body)
 ##[class*="scroll-top"]:not(html):not(body)
@@ -1049,7 +1064,6 @@ irecommend.ru#@#.rate
 ##.common-desktop-back-button
 ##.docBackTop
 ##.fa-arrow-circle-up
-##.fa-arrow-up
 ##.fa-angle-up
 ###fast-back-top
 ###float_top
@@ -1082,7 +1096,6 @@ irecommend.ru#@#.rate
 ##.kleo-go-top
 ##.label_up_scroll
 ##.link_top
-##.fa-long-arrow-up
 ##.media-infinity-footer__up
 ##.media-infinity-footer__up-arrow
 ###move_up
@@ -1546,6 +1559,7 @@ tarif-24.ru##.mh-ticker-bottom
 ##[id*="Disclaimer"]:not(html):not(body):not(article)
 ##[class*="disclaimer"]:not(html):not(body):not(article)
 ##[id*="disclaimer"]:not(html):not(body):not(article)
+##.about_copy
 ###block-seonet-0--2
 ##.catalog__seo
 ##.copir
@@ -1576,6 +1590,7 @@ tarif-24.ru##.mh-ticker-bottom
 
 
 !! other
+###branding
 ##.flat_pm_outgoing
 ###__ic-notice
 ###__ic-notice-container
@@ -1588,7 +1603,7 @@ tarif-24.ru##.mh-ticker-bottom
 ###milotree_box
 ###milotree_box_wrap
 ###my_web_push_app_box_confirm
-###orphus
+##.Profile.widget
 ##.widget_google_translate_widget
 ! from Fanboy’s Annoyance List
 /particles.min.js
@@ -1671,6 +1686,11 @@ tarif-24.ru##.mh-ticker-bottom
 14bytes.ru##.site-branding
 14bytes.ru###toc_container
 
+1bluetooth.ru##.logo
+1bluetooth.ru##.main-menu
+1bluetooth.ru###toc_container
+1bluetooth.ru##.post-rating
+
 1cloud.ru##.main-header--sticky:style(position:static !important)
 1cloud.ru###maincontainer:style(padding-top:0px !important)
 1cloud.ru##.help__conversion
@@ -1711,6 +1731,12 @@ tarif-24.ru##.mh-ticker-bottom
 
 ||4cheat.ru/images/Infusion/header/logo-finalb.png$image
 4cheat.ru##.link-category
+
+4dk.ru###onCloseModal
+4dk.ru##.faderColor
+4dk.ru##.section-sub-nav
+4dk.ru##.head-nav
+4dk.ru##.subsBlock
 
 ||4heating.ru/img/ic4.png$image
 ||4heating.ru/img/ic5.png$image
@@ -1838,6 +1864,11 @@ tarif-24.ru##.mh-ticker-bottom
 9111.ru##.hdrDsktp_top
 9111.ru##.btn_red.btn
 9111.ru##.ask_form
+9111.ru##.hdrDsktp_wrap
+9111.ru##.tabs_wrap
+9111.ru##.noprint.clearFix
+9111.ru###main_div:style(padding-top:0px !important)
+||9111.ru/img/logo/logo_at.png
 
 9ban.ru##.bookmark
 9ban.ru##.log-in-register
@@ -2032,6 +2063,10 @@ cmap.alibaba.com
 
 
 
+aliexpress-obzor.ru##h2
+aliexpress-obzor.ru###sidebar
+aliexpress-obzor.ru###top-bar:style(position:static !important)
+
 aliexpressom.ru###respond
 aliexpressom.ru###toc_container
 aliexpressom.ru##.affix:style(position:static !important)
@@ -2159,6 +2194,9 @@ anekdotov.net##.toptbl
 
 anekdotovmir.ru###header-img
 
+angrycitizen.ru##.fixed-type.top-menu:style(position:static !important)
+angrycitizen.ru##body:style(padding-top:0px !important)
+
 annamama.ru##.x-navbar-fixed-top:style(position:static !important)
 annamama.ru##.bottom.x-colophon
 
@@ -2177,6 +2215,11 @@ aphorismos.ru/_informer/*
 apescout.com##.logo
 apescout.com###header:style(position:static !important)
 apescout.com##body:style(padding-top:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+
+apple-iphone.ru##.site-description
+apple-iphone.ru##.site-title
+apple-iphone.ru##b:has-text(Поставьте 5 звезд)
+apple-iphone.ru##.post-ratings-loading
 
 apmode.ru##.logo
 
@@ -2435,6 +2478,8 @@ blog.bissquit.com##.header-image
 
 biz.nf##.flyBox3
 
+||blackhillsinfosec.com/wp-content/uploads/*/start-here-widget*.png$image
+
 blackview.hk##.header:style(position:static !important)
 blackview.hk##.m-video
 bbs.blackview.hk##.forum-permissions
@@ -2450,7 +2495,6 @@ bleepingcomputer.com###branding
 blogspot.com##.comment-form
 blogspot.com##[href^="http://ucoz.net"]
 ||blogspot.com/*/undercons.gif
-blogspot.com##.Profile.widget
 
 adminthing.blogspot.com##header
 
@@ -2484,6 +2528,9 @@ nyukers.blogspot.com##.header
 nyukers.blogspot.com##body:style(background:none !important)
 nyukers.blogspot.com##[href="http://urk400.narod.ru/"]
 nyukers.blogspot.com###HTML9
+
+@@||spam-club.blogspot.com^$generichide,badfilter
+@@||spam-club.blogspot.ru^$generichide,badfilter
 
 survivalpandas.blogspot.com###header-inner
 survivalpandas.blogspot.com##.column-right-outer
@@ -2637,6 +2684,10 @@ buldakov.ru###headSpace
 ! disable buggy filter
 bulgakovdom.ru##.building-filter
 bulgakovdom.ru##.show-filter
+
+burmistr.ru##.header-logo
+burmistr.ru##.banner
+burmistr.ru##h2:has-text(задать вопросы можно)
 
 ! from AdGuard
 ||business-key.com/top/$third-party
@@ -3449,6 +3500,9 @@ geekon.media##.td-header-top-menu
 geekon.media##footer > div:nth-of-type(1)
 geekon.media##.td-affix:style(position:static !important)
 
+geekville.ru##.td-header-sp-logo
+geekville.ru##.td-ss-main-sidebar:style(position:static !important)
+
 gekks.ru##.fadeIn.ap-overlay
 gekks.ru##.fadeIn
 gekks.ru##.nav-toggle
@@ -3729,6 +3783,8 @@ hutpu4.net###infinite-footer
 
 hwp.ru##.jsPanel
 
+hype.ru##.metabar--fixed:style(position:static !important)
+
 hyperhost.ua##.poll-go
 
 ||ibathroom.ru/wp-content/uploads/2016/12/HelpProject2.jpg$image
@@ -3868,6 +3924,8 @@ iphones.ru##.comments__ortho
 
 ipinfo.io$third-party
 
+ipoteka-expert.com##.dmbs-header.row
+
 ipv4info.com###sup1
 
 irecommend.ru##.textButtonsBar.reviewFooter
@@ -3892,15 +3950,20 @@ isolux.ru##.navbar-controls__item--logo
 isolux.ru##.page-footer__error-report
 isolux.ru##.page-footer__personal-agreement
 
-it-connection.ru##.cat-wid.cat-index:has-text(Акция)
-
-it-fm.ru##header
+it.ie##.fusion-is-sticky:style(position:static !important)
+it.ie##.fusion-header:style(position:static !important)
+it.ie##.fusion-header-v6:style(position:static !important)
+it.ie##.fusion-header-v7:style(position:static !important)
+it.ie##.fusion-secondary-header
+it.ie##.fusion-footer
 
 itc.ua##.sn
 itc.ua##.hotline-linker
 itc.ua##.hotlinetable-lefttop
 itc.ua##.hotlinetable-righttop
 itc.ua##.b-top-but
+
+it-connection.ru##.cat-wid.cat-index:has-text(Акция)
 
 itband.ru##.a-3.g-single
 
@@ -3915,6 +3978,8 @@ itconsumer.ru###site-navigation
 
 itech56.ru##.acfHeadBlock
 itech56.ru##.alert-warning.alert
+
+it-fm.ru##header
 
 ||it-increment.ru/wp-content/uploads/beget/$image
 it-increment.ru##.header
@@ -3948,6 +4013,9 @@ itprotoday.com##main:style(padding-top:0px !important)
 itprotoday.com##.sidebar-scrollable:style(position:static !important)
 
 it-rem.ru###astbiz-user-last-login_widget-2
+
+itremont.info###ramka
+itremont.info##.dd-header
 
 itsec.ru##.page-title-wrapper
 itsec.ru##.sticky-header:style(position:static !important)
@@ -3992,6 +4060,8 @@ ja-zdorov.ru##.logo-wrap
 ja-zdorov.ru###sidebar
 
 jetbrains.com##.acceptance-popup
+
+joaoapps.com##.czr-btta.czr-btt.btn
 
 jocha.se###main-header
 
@@ -4412,6 +4482,13 @@ ad.mail.ru
 banners.mail.ru
 bar.love.mail.ru
 likemore-fe.go.mail.ru
+hi-tech.mail.ru##.js-module.bar
+hi-tech.mail.ru##.sticky__inner_bottom
+hi-tech.mail.ru##.link-holder
+hi-tech.mail.ru##.p-article-conversionlink
+hi-tech.mail.ru##.link-hdr
+hi-tech.mail.ru##.note
+hi-tech.mail.ru##.js-module.block_collapse_hor
 otvet.mail.ru###portal-menu__toolbar
 otvet.mail.ru##.column_right
 otvet.mail.ru##.slide-start
@@ -4474,7 +4551,6 @@ imgsmail.ru/gstat?
 @@||file-upload.cc^$generichide,badfilter
 @@||football.kulichki.net^$generichide,badfilter
 @@||forum.vorota.de^$generichide,badfilter
-@@||forums.overclockers.ru^$generichide,badfilter
 @@||freeopenvpn.org^$generichide,badfilter
 @@||ghame.ru^$generichide,badfilter
 @@||giantessa.ru^$generichide,badfilter
@@ -4531,9 +4607,8 @@ imgsmail.ru/gstat?
 @@||rustreams.ru^$generichide,badfilter
 @@||sitecoder.blogspot.ru^$generichide,badfilter
 @@||sochi.camera^$generichide,badfilter
-@@||sovcombank.ru^$generichide,badfilter
-@@||spam-club.blogspot.com^$generichide,badfilter
-@@||spam-club.blogspot.ru^$generichide,badfilter
+! ok, exception for a bank
+@@||sovcombank.ru^$generichide
 @@||spec-komp.com^$generichide,badfilter
 @@||sports.ru^$generichide,badfilter
 @@||stalker-mods.clan.su^$generichide,badfilter
@@ -4799,6 +4874,8 @@ mmgp.com###fotwdgt
 ||mmgp.com/images/shapka/$image
 ||mmgp.com/*/header/$image
 
+mobile-review.com##.logo
+
 moiobzor.su##.logo
 
 monitis.com###masthead
@@ -4901,6 +4978,9 @@ blogs.msmvps.com##.site-branding
 mspoweruser.com##.navbar-fixed-top:style(position:static !important)
 mspoweruser.com##body:style(padding-top:0px !important)
 
+msserverpro.com###logo
+msserverpro.com###wpautbox_about
+
 mssqltips.com###slideboxtop
 !mssqltips.com##.columns.hide-for-print
 mssqltips.com##.hide-for-print
@@ -4956,6 +5036,8 @@ my-shop.ru##.footer_icon
 
 mysku.ru##.lite-center.login_in_comments
 ||mysku.ru/heartbeat.gif
+mysku.ru##.h_main > .title
+mysku.ru##.block-site-about
 
 !annoying gif favicon
 ||mysku.me/favicon.ico
@@ -5025,6 +5107,11 @@ ne-kurim.ru###simplemodal-overlay
 nemcd.com###headerright
 nemcd.com###logo
 nemcd.com###header
+
+neosmart.net###site-header
+
+ners.ru###ners-headerbar-wrap
+ners.ru###ners_news_telegram
 
 helpcenter.netwrix.com##.MCPopupFullImage
 helpcenter.netwrix.com##.MCPopupContainer
@@ -5246,6 +5333,7 @@ overclockers.ru##div.right-blog-wrap.container-block.aligned.center.column.wide.
 overclockers.ru##.message.warning
 overclockers.ru##.donate-author-link
 @@||overclockers.ru^$generichide,badfilter
+@@||forums.overclockers.ru^$generichide,badfilter
 
 overplay.net$third-party
 
@@ -5489,6 +5577,15 @@ powervideo.ru##.navbar:style(position:static !important)
 prajwaldesai.com##.bs-pinning-block:style(position:static !important)
 prajwaldesai.com##.header-inner
 
+pravbaza.ru##.logo
+pravbaza.ru##.sticky_menu
+pravbaza.ru###toc_container
+pravbaza.ru##.myCheked
+pravbaza.ru##.post-rating
+
+pravo.ru##.sticky.is-stuck:style(position:static !important)
+pravo.ru##.rating_popup_trigger
+
 pravonasilu.ru###masthead
 pravonasilu.ru##.footer-text
 pravonasilu.ru###respond
@@ -5496,6 +5593,16 @@ pravonasilu.ru##.site-footer
 
 pravoved.ru$third-party
 api-pravoved.s3.amazonaws.com$domain=~pravoved.ru
+pravoved.ru##.leadAside
+pravoved.ru##.header-bottom--fixed
+pravoved.ru##.comment__bottom-right-item
+pravoved.ru##.gotFee
+pravoved.ru##.comment__bottom-link--green
+pravoved.ru##.ask-question-block
+pravoved.ru##.answer-lawyer__estimate
+pravoved.ru##.prvd-lawyer-service
+pravoved.ru##.af-mid.af-content.prvd-af-primary-rnnb
+pravoved.ru##.questionPrice
 
 pr-cy.ru##.ipsUserPhoto
 
@@ -5823,6 +5930,10 @@ rootmyandroid.org##.ulp-window
 rootmyandroid.org##.ulp-overlay
 
 rootmygalaxy.net##.mtsnb-fixed.mtsnb-top
+
+||root-nation.com/wp-content/uploads/2019/06/rootcast-gif-home-2.gif
+root-nation.com##.td-main-sidebar
+root-nation.com##.td-header-menu-wrap.td-affix:style(position:static !important)
 
 ||rootusers.com/wp-content/uploads/2017/02/red-hat-certified-engineer-rhce-video-course-box.jpg
 
@@ -6201,7 +6312,7 @@ slideserve.com###suggestion
 slideserve.com##.navbar-fixed-top:style(position:static !important)
 
 smartcalc.ru##.navbar-fixed-top:style(position:static !important)
-! It is not scroller button, it is calc button. Making exception from Fanboy’s Annoyance List general rule
+! It is not scroller button, it is calc button. Making exception from Fanboy’s Annoyance List general rule (and this list too)
 smartcalc.ru#@#.glyphicon-arrow-up
 
 smarttvnews.ru##.logo_section_wrap
@@ -6312,6 +6423,10 @@ srv-spb.ru##.IRPP_button
 srv-spb.ru##tr:has-text(/опрос|вступите/)
 
 ss64.com###tnav
+
+ssskkk.ru###logo
+ssskkk.ru##.hint:has-text(promo)
+ssskkk.ru###hoax-sidebar-tags
 
 st.com##.st-support
 
@@ -6523,6 +6638,10 @@ techspot.com##.Notice
 
 ||techsupportforum.com/forums/asap/$image
 
+techtalkz.com##.is-sticky:style(position:static !important)
+techtalkz.com##.p-navSticky:style(position:static !important)
+techtalkz.com##.p-navSticky--primary:style(position:static !important)
+
 techtarget.com###comments-1-miniRegv2-loginForm-1-buttonExpand      
 ! todo: jumping header, sticky-kit
 techtarget.com###page-header
@@ -6530,6 +6649,11 @@ cdn.ttgtmedia.com$script
 techtarget.com##.sign-up-wrapper
 techtarget.com##.extra-info
 techtarget.com##.dig-deeper
+
+tech-touch.ru##.logo-outer-wrapper
+tech-touch.ru##.sidebar.right-sidebar
+tech-touch.ru##.kc__wrap
+tech-touch.ru##.read_more
 
 techunboxed.com###header-inner
 techunboxed.com##footer
@@ -6591,8 +6715,17 @@ teplospec.com##.footer-wrapper
 
 teplowood.ru###header
 
+teron.online##.panel_152_wp
+||teron.online/public/style_images/master/18-b.gif
+teron.online##.post_controls
+teron.online##.rep_bar
+teron.online###board_footer
+teron.online###topic_stats
+
 teslarati.com##.fixed:style(position:static !important)
 teslarati.com##.body-top-pad:style(padding-top:15px !important)
+
+teusink.net###header-wrapper
 
 texterra.ru###scroller
 texterra.ru##.guideankor
@@ -6627,11 +6760,6 @@ thg.ru##[href^="https://vk.cc/"]
 thg.ru##[href="/"]
 ||thg.ru/images/article_arrow_right_next.png$image
 ||thg.ru/images/article_arrow_left_back.png$image
-forums.tomshardware.com##.fa-arrow-up
-!forums.tomshardware.com##.button--scroll
-forums.tomshardware.com##.fa-twitter
-forums.tomshardware.com##.fa-instagram
-forums.tomshardware.com##.fa-facebook
 forums.tomshardware.com##.notice
 
 thinkpowershell.com##.sidebar
@@ -7101,6 +7229,7 @@ warhead.su##.site-wide-banner
 warhead.su##.article__stats
 warhead.su##.article__footer
 warhead.su##.article__top
+warhead.su##.branding_wrapper
 
 weapon-shop.ru###cart-section:style(position:static !important)
 
@@ -7162,6 +7291,8 @@ wiley.com###selectCountryModalWnd
 wiley.com##.in.fade.modal-backdrop
 wiley.com##body:style(overflow:auto !important)
 wiley.com##.affix.main-sticky-header:style(position:static !important)
+
+wylsa.com##.logo
 
 ! from EasyList. Wikipedia is great project. 
 @@||wikipedia.org^$generichide
@@ -7229,6 +7360,9 @@ winitpro.ru##.sidebar-item:style(position:static !important)
 winlined.ru##.feedburner
 
 win-server.ru###footer-bottom-wrap
+
+wisesoft.co.uk###header
+wisesoft.co.uk###mainnav
 
 wodolei.ru##.logo
 wodolei.ru###scrollt
