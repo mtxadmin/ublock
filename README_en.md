@@ -22,7 +22,7 @@ Despite you checked all filters in uBlock Origin (i.e. set default lists), you s
 
 ## How to setup this filter list?
 
-First, if you didn't setup [uBlock Origin](https://github.com/gorhill/uBlock) yet (variant: [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore)), do it right now. For the time, it is the best banner blocker solution. Think it so: tens people all around the world will try to make you see *less* ads. :-)
+First, if you didn't setup [uBlock Origin](https://github.com/gorhill/uBlock) yet (variant: [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore)), do it right now. For the time, it is the best banner blocker solution. Think it so: tens of cool and skilled people all around the world will try to make you see *less* ads. :-)
 
 #### On a PC
 
