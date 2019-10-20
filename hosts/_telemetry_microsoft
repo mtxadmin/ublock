@@ -4,11 +4,19 @@
 !! domains
 
 sqm.microsoft.com
+sqmfe.glbdns2.microsoft.com
 
 telemetry.microsoft.com
 !+  alpha.telemetry.microsoft.com
 !+  df.telemetry.microsoft.com
+!+      wes.df.telemetry.microsoft.com
 !+  ppe.telemetry.microsoft.com
+!+  sentinel.telemetry.microsoft.com
+!+  syslog.telemetry.microsoft.com
+!+  syslogagent.telemetry.microsoft.com
+!+  syslogclient.telemetry.microsoft.com
+!+  telecommand.telemetry.microsoft.com
+! end of telemetry.microsoft.com
 !telecommand.telemetry.microsoft.com
 !watson.telemetry.microsoft.com
 !sqm.df.telemetry.microsoft.com
@@ -29,14 +37,21 @@ telemetry.appex.search.prod.ms.akadns.net
 
 vortex-sandbox.data.microsoft.com
 vortex-win.data.microsoft.com
-v10.vortex-win.data.microsoft.com
 vortex.data.microsoft.com
 vortex.data.glbdns2.microsoft.com
+vortex.data.microsoft.com.akadns.net
+
 watson.live.com
 watson.microsoft.com
+!+  appcenter.watson.microsoft.com
+!+  devcenter.watson.microsoft.com
 watson.data.microsoft.com.akadns.net
+!+  legacy.watson.data.microsoft.com.akadns.net
+! end of watson
+
 reporting.family.microsoft.com.akadns.net
 reporting.familysafety.microsoft.com.akadns.net
+
 spynetall.microsoft.com
 spynetall.microsoft.akadns.net
 spynetalt.microsoft.com
@@ -45,36 +60,93 @@ spyneteurope.microsoft.com
 spyneteurope.microsoft.akadns.net
 spynet2.microsoft.com
 spynet2.microsoft.akadns.net
+
 statsfe1.ws.microsoft.com
 statsfe2.update.microsoft.com.akadns.net
 statsfe2.ws.microsoft.com
 
 ! edge domains
 a-msedge.net
+!+  a-0001.a-msedge.net
+!+      cn.a-0001.a-msedge.net
+!+  a-0003.a-msedge.net
+!+  a-0005.a-msedge.net
+!+  a-0010.a-msedge.net
+!+  a-0011.a-msedge.net
+!+      net.a-0011.a-msedge.net
+!+          dc-msedge.net.a-0011.a-msedge.net
+!+              a-0011.dc-msedge.net.a-0011.a-msedge.net
+!+                  net.a-0011.dc-msedge.net.a-0011.a-msedge.net
+!+  a-0014.a-msedge.net
+!+      net.a-0014.a-msedge.net
+!+          dc-msedge.net.a-0014.a-msedge.net
+!+              a-0014.dc-msedge.net.a-0014.a-msedge.net
+!+  a-0016.a-msedge.net
+!+  a-0020.a-msedge.net
+!+  a-0026.a-msedge.net
+!+  a-0031.a-msedge.net
+!+  a-9998.a-msedge.net
+!+  a-9999.a-msedge.net
 c-msedge.net
+!+  c-0001.c-msedge.net
+!+  c-0003.c-msedge.net
+!+  c-0005.c-msedge.net
+!+  c-0006.c-msedge.net
+!+  c-0007.c-msedge.net
+!+  c-9999.c-msedge.net
+!+      msv-xboxlive-com.c-0007.c-msedge.net
+!+          com.msv-xboxlive-com.c-0007.c-msedge.net
+!+              microsoft.com.msv-xboxlive-com.c-0007.c-msedge.net
+!+                  video.microsoft.com.msv-xboxlive-com.c-0007.c-msedge.net
 dc-msedge.net
-msedge.net
+!+  msedge.net
+!+  am1.msedge.net
+!+  ams04.msedge.net
+!+  ata.msedge.net
+!+  ber30.msedge.net
+!+  db4.msedge.net
+!+  lts.msedge.net
+!+  pra.msedge.net
+!+  sto.msedge.net
+!+  zrh.msedge.net
+! end of edge
 
 ! and adding from https://superuser.com/questions/972501/how-to-stop-microsoft-from-gathering-telemetry-data-from-windows-7-8-and-8-1
+
 choice.microsoft.com
+!+  api.choice.microsoft.com
 choice.microsoft.com.nsatc.net
+
 compatexchange.cloudapp.net
+
 corp.sts.microsoft.com
+
 diagnostics.support.microsoft.com
+
 fe2.update.microsoft.com.akadns.net
+sls.update.microsoft.com.akadns.net
+
 feedback.microsoft-hohm.com
 feedback.search.microsoft.com
+
 metaservices.microsoft.com
-redir.metaservices.microsoft.com
-games.metaservices.microsoft.com
-settings-sandbox.data.microsoft.com
-sls.update.microsoft.com.akadns.net
+!+  dmd.metaservices.microsoft.com
+!+  games.metaservices.microsoft.com
+!+  music.metaservices.microsoft.com
+!+  submissions.metaservices.microsoft.com
+!+  wmc.metaservices.microsoft.com
+! end of metaservices.microsoft.com
+!redir.metaservices.microsoft.com
+
 telemetry.appex.bing.net
-sqmfe.glbdns2.microsoft.com
-watson.live.com
+
 feedback.search.microsoft.com
 feedback.windows.com
+
 footprintpredict.com
+!+  pre.footprintpredict.com
+! end of footprintpredict.com
+
 cs1.wpc.v0cdn.net
 
 ! push notifications for Windows. See https://docs.microsoft.com/ru-ru/windows/privacy/manage-windows-1809-endpoints
@@ -82,20 +154,21 @@ wns.windows.com
 
 ! Windows telemetry also. See https://habr.com/en/post/265283/
 settings-win.data.microsoft.com
+settings-sandbox.data.microsoft.com
+settings.data.glbdns2.microsoft.com
 
-! and
 metron.live.com
 metron.live.com.nsatc.net
-vortex.data.glbdns2.microsoft.com
-onesettings-db5.metron.live.com.nsatc.net
-settings.data.glbdns2.microsoft.com
+!+  data.metron.live.com.nsatc.net
+!+      vortex-win.data.metron.live.com.nsatc.net
+
 rad.live.com
+rad.msn.com
 
 ads.msn.com
 ads1.msn.com
 ads2.msn.com
 c.msn.com
-rad.msn.com
 tk2.plt.msn.com
 ! and these subdomains often cited in forum topics about blocking skype ads
 ac3.msn.com
@@ -135,74 +208,8 @@ static.skypeassets.com
 
 ! and some Microsoft (or Inmobi) ads AS8075
 gowadogo.com
-
-! and some Microsoft ads AS8075
-cas.ms
-!+  admin-eu.cas.ms
-!+      blog.admin-eu.cas.ms
-!+      com.admin-eu.cas.ms
-!+      my.admin-eu.cas.ms
-!+          com.my.admin-eu.cas.ms
-!+      ru.admin-eu.cas.ms
-!+  admin-us.cas.ms
-!+      com.admin-us.cas.ms
-!+      fr.admin-us.cas.ms
-!+      link.admin-us.cas.ms
-!+      nz.admin-us.cas.ms
-!+      sg.admin-us.cas.ms
-!+          gov.sg.admin-us.cas.ms
-!+  admin-us2.cas.ms
-!+      com.admin-us2.cas.ms
-!+  eu.cas.ms
-!+      ca.eu.cas.ms
-!+      com.eu.cas.ms
-!+          amazonaws.com.eu.cas.ms
-!+              compute.amazonaws.com.eu.cas.ms
-!+                  us-east-2.compute.amazonaws.com.eu.cas.ms
-!+              s3-eu-west-1.amazonaws.com.eu.cas.ms
-!+      fr.eu.cas.ms
-!+          blogspot.fr.eu.cas.ms
-!+      net.eu.cas.ms
-!+      org.eu.cas.ms
-!+      sg.eu.cas.ms
-!+          gov.sg.eu.cas.ms
-!+      uk.eu.cas.ms
-!+  eu2.cas.ms
-!+      co.eu2.cas.ms
-!+      com.eu2.cas.ms
-!+      de.eu2.cas.ms
-!+      eu.eu2.cas.ms
-!+      uk.eu2.cas.ms
-!+  us.cas.ms
-!+      ad.us.cas.ms
-!+      com.us.cas.ms
-!+      de.us.cas.ms
-!+      net.us.cas.ms
-!+      org.us.cas.ms
-!+      uk.us.cas.ms
-!+          gov.uk.us.cas.ms
-!+  us2.cas.ms
-!+      at.us2.cas.ms
-!+      ca.us2.cas.ms
-!+      com.us2.cas.ms
-!+      eu.us2.cas.ms
-!+      net.us2.cas.ms
-!+          azurewebsites.net.us2.cas.ms
-!+      org.us2.cas.ms
-!+      sg.us2.cas.ms
-!+          gov.sg.us2.cas.ms
-!+      uk.us2.cas.ms
-!+          co.uk.us2.cas.ms
-!+          gov.uk.us2.cas.ms
-!+      us.us2.cas.ms
-!+  us3.cas.ms
-!+      com.us3.cas.ms
-!+      net.us3.cas.ms
-!+      se.us3.cas.ms
-!+      sg.us3.cas.ms
-!+          gov.sg.us3.cas.ms
-!+      uk.us3.cas.ms
-!+          gov.uk.us3.cas.ms
-! end of cas.ms
+!+  dfw1.gowadogo.com
+!+      vip.dfw1.gowadogo.com
+! end of gowadogo.com
 
 !! todo
