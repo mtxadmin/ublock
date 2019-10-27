@@ -179,6 +179,7 @@ _468x60.$important
 /pagead/*
 /pagead2/*
 /pcs/click^
+/ping/*$xmlhttprequest
 /plugins/ad-invalid-click-protector/*
 /popunder.js$important
 ! from EasyList, modified
@@ -732,6 +733,15 @@ _social_fb.
 ##a[title^="Share on Pinterest"]
 ! from Fanboy's
 ##a[title="Share on Twitter"]
+! from AdGuard
+##a[href^="https://connect.ok.ru/offer?url="]
+! from AdGuard and Fanboy's
+##a[href^="https://www.facebook.com/sharer/sharer.php"]
+! from Fanboy's
+##a[href^="https://vk.com/share.php?"]
+! from Fanboy's
+##a[href*="facebook.com/sharer/sharer.php?"]
+##a[href^="https://teleg.run/joinchat/"]
 ##.b-soc_icons
 ##.button-like
 ##.c-button--vk
