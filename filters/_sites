@@ -521,6 +521,12 @@ _pagespeed_beacon?
 ~facebook.com,~fb.com##[class$="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id$="FB"]:not(html):not(body):not(article)
 ~aliexpress.com,~alfamiles.com,~doma-karkas.ru##[class^="fb"]:not(html):not(body):not(article)
+    ! from Fanboy's
+    ##.fb-xfbml-parse-ignore
+    ! from AdGuard and Fanboy's
+    ##.fb-page
+    ! from AdGuard
+    ###fb-root:not(body):not(html)
 ~aliexpress.com,~alfamiles.com##[id^="fb"]:not(html):not(body):not(article)
 ~alfamiles.com##[class*="-fb"]:not(html):not(body):not(article)
 ~alfamiles.com##[id*="-fb"]:not(html):not(body):not(article)
@@ -534,8 +540,6 @@ _pagespeed_beacon?
 ~facebook.com,~fb.com##[id*="FbLike"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[class*="fblike"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id*="fblike"]:not(html):not(body):not(article)
-! from AdGuard
-###fb-root:not(body):not(html)
 ##[class*="Follow"]:not(html):not(body):not(article)
 ##[id*="Follow"]:not(html):not(body):not(article)
 ##[class*="follow"]:not(html):not(body):not(article)
@@ -608,6 +612,12 @@ _pagespeed_beacon?
 ##[class*="Social"]:not(html):not(body):not(article)
 ##[id*="Social"]:not(html):not(body):not(article)
 ~github.com,~koofr.eu##[class*="social"]:not(html):not(body):not(article)
+    ##.footer-social
+    ##.footer-social-wrap
+    ! from Fanboy's
+    ##.social-tooltip
+    ! from Fanboy's
+    ##.social-links
 ##[id*="social"]:not(html):not(body):not(article)
 ##[class*="Sociaux"]:not(html):not(body):not(article)
 ##[id*="Sociaux"]:not(html):not(body):not(article)
@@ -767,8 +777,6 @@ _social_fb.
 ##.fa-vk
 ##.fodicon-tumblr
 ##.footersoc
-##.footer-social
-##.footer-social-wrap
 ##.footer_socs
 ##.google-icon
 ##.hp_sociaisIcons
