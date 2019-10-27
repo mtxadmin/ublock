@@ -521,6 +521,12 @@ _pagespeed_beacon?
 ~facebook.com,~fb.com##[class$="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id$="FB"]:not(html):not(body):not(article)
 ~aliexpress.com,~alfamiles.com,~doma-karkas.ru##[class^="fb"]:not(html):not(body):not(article)
+    ! from Fanboy's
+    ##.fb-xfbml-parse-ignore
+    ! from AdGuard and Fanboy's
+    ##.fb-page
+    ! from AdGuard
+    ###fb-root:not(body):not(html)
 ~aliexpress.com,~alfamiles.com##[id^="fb"]:not(html):not(body):not(article)
 ~alfamiles.com##[class*="-fb"]:not(html):not(body):not(article)
 ~alfamiles.com##[id*="-fb"]:not(html):not(body):not(article)
@@ -534,8 +540,6 @@ _pagespeed_beacon?
 ~facebook.com,~fb.com##[id*="FbLike"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[class*="fblike"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id*="fblike"]:not(html):not(body):not(article)
-! from AdGuard
-###fb-root:not(body):not(html)
 ##[class*="Follow"]:not(html):not(body):not(article)
 ##[id*="Follow"]:not(html):not(body):not(article)
 ##[class*="follow"]:not(html):not(body):not(article)
@@ -608,6 +612,12 @@ _pagespeed_beacon?
 ##[class*="Social"]:not(html):not(body):not(article)
 ##[id*="Social"]:not(html):not(body):not(article)
 ~github.com,~koofr.eu##[class*="social"]:not(html):not(body):not(article)
+    ##.footer-social
+    ##.footer-social-wrap
+    ! from Fanboy's
+    ##.social-tooltip
+    ! from Fanboy's
+    ##.social-links
 ##[id*="social"]:not(html):not(body):not(article)
 ##[class*="Sociaux"]:not(html):not(body):not(article)
 ##[id*="Sociaux"]:not(html):not(body):not(article)
@@ -662,6 +672,8 @@ _pagespeed_beacon?
 /instagram.svg
 /linkdin.svg
 /mashsharer/*
+    ! from AdGuard
+    !/plugins/mashsharer/*
 /ok.svg
 /odnoklassniki.png
 /plugins/easy-vkontakte-connect/*
@@ -718,6 +730,8 @@ _social_fb.
 ! from AdGuard
 ##a[href^="//vk.com/share.php"]
 ! from Fanboy's
+##a[href^="https://vk.com/share.php?"]
+! from Fanboy's
 ##[href^="//twitter.com/share"]
 ! from Fanboy's
 ##[title^="Share on Google+"]
@@ -738,9 +752,21 @@ _social_fb.
 ! from AdGuard and Fanboy's
 ##a[href^="https://www.facebook.com/sharer/sharer.php"]
 ! from Fanboy's
-##a[href^="https://vk.com/share.php?"]
+##a[href^="https://www.facebook.com/sharer.php?"]
+! from AdGuard
+##a[href^="https://www.facebook.com/sharer.php"]
 ! from Fanboy's
 ##a[href*="facebook.com/sharer/sharer.php?"]
+! from Fanboy's
+##a[title="Youtube"]
+! from Fanboy's
+##a[title="Twitter"]
+! from Fanboy's
+##a[title="Instagram"]
+! from Fanboy's
+##a[title="Google +"]
+! from AdGuard and Fanboy's
+##a[href^="https://twitter.com/intent/tweet?"]
 ##a[href^="https://teleg.run/joinchat/"]
 ##.b-soc_icons
 ##.button-like
@@ -751,8 +777,6 @@ _social_fb.
 ##.fa-vk
 ##.fodicon-tumblr
 ##.footersoc
-##.footer-social
-##.footer-social-wrap
 ##.footer_socs
 ##.google-icon
 ##.hp_sociaisIcons
@@ -892,6 +916,21 @@ _social_fb.
 ##.likeUsLayer
 ##.likes-widget-placeholder
 ##.lj-like
+
+!! also see masharer plugin
+! from AdGuard
+##.mashsb-main
+! from AdGuard and Fanboy's
+##.mashsb-container
+! from Fanboy's
+##.mashsb-box
+! from Fanboy's
+##.mashicon-twitter
+! from Fanboy's
+##.mashicon-subscribe
+! from Fanboy's
+##.mashicon-facebook
+
 ##.menu-icon-tw
 ##.menu-icon-go
 ##.menu-icon-vk
@@ -1073,6 +1112,8 @@ irecommend.ru#@#.rate
 ###backgroundPopup2
 ###back-top-x
 ###back-to-the-top
+! from Fanboy's
+###back-to-top
 ###backtoTop
 ###backtotopbutton
 ###backtotoplink
