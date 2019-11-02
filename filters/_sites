@@ -15,6 +15,8 @@
 ~cnn.com,~ferra.ru##[class^="ad-"]:not(html):not(body):not(article)
 ##[id^="ad-"]:not(html):not(body):not(article)
 ~cnn.com##[class*="-ad-"]:not(html):not(body):not(article)
+    ! from EasyList
+    !##.ytp-ad-progress-list
 ~afisha.ru,~cnn.com##[id*="-ad-"]:not(html):not(body):not(article)
 ##[class*="_ad_"]:not(html):not(body):not(article)
 ##[id*="_ad_"]:not(html):not(body):not(article)
@@ -584,6 +586,8 @@ _pagespeed_beacon?
 ~officeapps.live.com##[class*="Share"]:not(html):not(body):not(article)
 ##[id*="Share"]:not(html):not(body):not(article)
 ~microsoft.com,~sketchup.com,~topsharepoint.com##[class*="share"]:not(html):not(body):not(article)
+    ! from AdGuard & Fanboy's
+    !##.ytp-share-button
 ##[id*="share"]:not(html):not(body):not(article)
 ##[class*="Sharing"]:not(html):not(body):not(article)
 ##[id*="Sharing"]:not(html):not(body):not(article)
@@ -7958,14 +7962,22 @@ yourselfbranding.com##.popup-client
 ||youtube.com/api/stats/$important
 ! https://pikabu.ru/story/vsplyivayushchie_bloki_na_youtube__otklyuchaem_6660774
 youtube.com##.ytp-pause-overlay.ytp-scroll-min
+! from AdGuard & Fanboy's
+youtube.com##.ytp-pause-overlay
+! from AdGuard
+youtube.com##.ytp-cards-teaser
 youtube.com##.ytp-ce-covering-overlay
 youtube.com##.ytp-ce-element-shadow
 youtube.com##.ytp-ce-covering-image
 youtube.com##.ytp-ce-expanding-image
 youtube.com##.ytp-ce-element.ytp-ce-channel.ytp-ce-channel-this.ytp-ce-element-show.ytp-ce-bottom-right-quad.ytp-ce-size-640
 youtube.com##.ytp-ce-element.ytp-ce-video.ytp-ce-element-show
+! from AdGuard
+youtube.com##.ytp-paid-content-overlay
 youtube.com##.ytd-popup-container.style-scope.dropdown-content
 youtube.com##.ytd-popup-container
+! from Fanboy's
+youtube.com##.ytp-title-channel
 ! ||youtube.com/yts/cssbin/ - it is css, don't block!
 ! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
 /youtubei/v1/log_event
