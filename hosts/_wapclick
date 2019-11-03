@@ -1,6 +1,10 @@
 ! WAP, WAP-click and mobile ads. Some of them.
 ! Most marketing domains is still in _marketing
 
+! for disabling "Sim menu" (from https://pikabu.ru/story/kak_izbavitsya_ot_nadoedlivyikh_vsplyivayushchikh_uvedomleniy_6894914):
+! adb shell pm disable-user com.android.stk
+! adb shell am force-stop com.android.stk
+! (it will not prevent WAP-click, but it will prevent WAP push spam)
 
 !! domains
 
@@ -93,18 +97,9 @@ ringtoneswap.com
 
 tapclick.biz$important
 
-! wap-click. Belongs to Megafon
-! https://habr.com/ru/post/448530/
-! https://pikabu.ru/story/google_chrome_na_strazhe_vashikh_deneg_6647240
-truvpro.ru$important
-
 uconverts.com$important
 
 vipwaps.com$important
-
-! wap-click
-! https://habr.com/ru/post/448530/
-vsewap.ru
 
 wap.click$important
 !+  gopusher.wap.click
@@ -159,36 +154,50 @@ wildo.click$important
 !+          vps.mcdir.rumail.wildo.click
 ! end of wildo.click
 
-! wap-click
-! https://habr.com/ru/post/448530/
-zvoook.com
+
 
 !! todo
 
-! wap-click
+
+! Введя свой номер телефона и подтвердив подписку, пользователь соглашается на списания в размере стоимости доступа за пользование сервисом
+spishi.vip$important
+
+! https://pikabu.ru/story/kak_megafon_podpisyivaet_na_platnyiy_kontent_6644978?cid=138766947
+! https://pikabu.ru/story/kak_megafon_podpisyivaet_na_platnyiy_kontent_6644978?cid=138766793
+clouty.ru$important
+
 ! https://habr.com/ru/post/448530/
-arusav.ru
-dmvasor.ru
-mfprovas.ru
-moy-m-portal.ru
-mvpvas.ru
-podpiskimf.ru
-ppmprop.ru
-pravvopros.ru
-promfvas.ru
-propodpiski.ru
-propodpiskimf.ru
-proprovas.ru
-ropovasru.ru
-savorpm.ru
-vasmfpro.ru
-vasmpro.ru
-vaspromf.ru
-vasprovp.ru
+! related to informpartner.com?
+vk-vid.com$important
 
-! Megafon AS25159 - SONICDUO-AS, RU (not all, but many dangerous wap-click sites)
-vasmpro.ru  ! ad redirects
-misp.ru
+! https://habr.com/ru/post/448530/
+! wapclick operator
+informpartner.com$important
 
+! https://habr.com/ru/post/448530/
+! wapclick network
+webwap.org$important
 
+exchangeconvert.ru$important
+
+! exchangeconvert
+jinconvert.ru$important
+! exchangeconvert
+centercash.ru$important
+! exchangeconvert
+entercash.ru$important
+! exchangeconvert
+phoneconvert.ru$important
+
+! related to informpartner.com
+music-charts.ru
+
+! related to informpartner.com
+enter-mobile.pw 
+
+! related to informpartner.com
+rutubes.ru
+
+! related to informpartner.com?
+redirectto.ru
 
