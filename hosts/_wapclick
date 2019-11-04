@@ -6,6 +6,13 @@
 ! adb shell am force-stop com.android.stk
 ! (it will not prevent WAP-click, but it will prevent WAP push spam)
 
+! Из описания на одном из сайтов:
+! "Абонент решил посетить сайт по кинофильмам.
+! При заходе на сайт специальным скриптом он перенаправляется на лендинг, на котором будет кнопка «Play» или «Смотреть».
+! Нажимая на кнопку, абонент соглашается с условиями и подписывается на услугу.
+! Он получает контент, а с его счета ежедневно будет списываться определенная сумма.
+! Все совершенно легально и согласовано с операторами связи."
+
 !! domains
 
 adtwirl.com$important
@@ -42,18 +49,18 @@ apniwap.com
 auto-accounting.org$important
 
 ! Beatguide (Berlin) - операторы нескольких русскоязычных wapclick сайтов
-beatguide.de
+beatguide.de$important
 
 ! informpartner
 ! wap-click
-2infp.beeonline.ru
-3infp.beeonline.ru
+2infp.beeonline.ru$important
+3infp.beeonline.ru$important
 
 ! LaifKom Ltd (LifeCom Ltd)
 ! wapclick Beeline-only
 ! "Стоимость доступа составляет 9.99 рублей с НДС за день для абонентов "Билайн"; Продление доступа происходит автоматически, посредством .."
 ! 92.242.44.230
-beequiz.ru
+beequiz.ru$important
 
 ! 92.242.44.230
 ! closed?
@@ -145,7 +152,8 @@ erox.pw$important
 ! wapclick network
 exchangeconvert.ru$important
 
-fancywap.com
+! closed?
+fancywap.com$important
 !+  click.fancywap.com
 !+  go.fancywap.com
 ! end of fancywap.com
@@ -210,7 +218,10 @@ intellitest.me$important
 ! exchangeconvert
 jinconvert.ru$important
 
+! wapclick network
 juddy.biz$important
+
+juddy69.info
 
 ! https://medium.com/@Okorunet/о-международном-гибридном-кибер-терроризме-при-участии-сотовых-операторов-россии-f98237a9207c
 ! informpartner
