@@ -54,12 +54,7 @@ log.adsence.co.kr
 ##[id*="advert"]:not(html):not(body):not(article)
 ##[class*="Banner"]:not(html):not(body):not(article)
 ##[id*="Banner"]:not(html):not(body):not(article)
-    ! todo: too many exclusions. It seems, the rule needs correcting. Disabled.
-    !~volveter.ru,~klimatabogi.ru,~proftools.ru,~baidu.com,~multcloud.com,
-    !~techcommunity.microsoft.com,~unite4buy.ru,~memepedia.ru,~kinopoisk.ru,~riogun.ru
-    !##[class*="banner"]:not(html):not(body):not(article)
-##[id*="banner"]:not(html):not(body):not(article)
-    !###banner-advert-container
+! don't block *banner* by id or class
 ##[class^="bn_"]:not(html):not(body):not(article)
 ##[id^="bn_"]:not(html):not(body):not(article)
 ##[class*="_bn_"]:not(html):not(body):not(article)
@@ -320,6 +315,7 @@ _468x60.$important
 ###ban240x400
 ##.baner
 ##.baner_top
+###banner-advert-container
 ###banner-container
 ##.banner-link
 ##.banner-main-container
