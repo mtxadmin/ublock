@@ -7,7 +7,7 @@
 ! https://github.com/pafnuty/onlineConsultantBlocker/blob/master/online-consultant.txt
 ! https://github.com/AdguardTeam/AdguardFilters/blob/master/AnnoyancesFilter/sections/widgets.txt
 
-! And added many new noisy services. 
+! And added many new noisy services.
 ! Maybe it is not the best syntax, I don't know yet. I just want to get rid of those ads!
 
 ! Sorted by a-z of main (first) domain name
@@ -46,7 +46,7 @@
 /webchat/
 
 ! wordpress chats & push
-! todo: automate. 
+! todo: automate.
 ! https://ru.wordpress.org/plugins/search/push+notifications/
 ! https://ru.wordpress.org/plugins/search/call/
 ! https://ru.wordpress.org/plugins/tags/callback/
@@ -117,6 +117,9 @@
 
 2calls.ru
 
+! push ads network
+3xpush.com$important
+
 ! chatbot
 ada.support
 !+  att.ada.support
@@ -137,6 +140,9 @@ adcalls.com
 adcalls.nl
 !+  da.adcalls.nl
 ! end of adcalls
+
+! push ads network
+adoperator.com$important
 
 adpushup.com
 !+  apdc1.adpushup.com
@@ -170,6 +176,10 @@ akiwastat.ru
 
 alcmeon.com
 alc.cx
+
+! AS11377 Sendgrid
+alert-software.co
+alert-software.com
 
 !pushprofit.ru
 allstat-pp.ru
@@ -427,6 +437,9 @@ clicklive.ru
 
 ! push ad network
 clickstar.me$important
+
+! push ads network
+clicktimes.me$important
 
 clientcaller.ru
 clientcaller.com
@@ -724,7 +737,7 @@ hubspot.com
 !+  web3.hubspot.com
 !+  web4.hubspot.com
 !+  web5.hubspot.com
-!+  web6.hubspot.com	
+!+  web6.hubspot.com
 !+  web7.hubspot.com
 !+  web9.hubspot.com
 !+  web10.hubspot.com
@@ -781,6 +794,7 @@ jivochat.ru$important
 ##.jivo-btn-light
 ##.jivo-online-btn
 
+! "widgets"
 jumpoutpopup.ru
 !files.jumpoutpopup.ru
 
@@ -958,6 +972,12 @@ news-code.com
 
 new-tel.net
 
+! AS11377 Sendgrid
+nexgate.com
+!+  us.nexgate.com
+!+  us2.nexgate.com
+! end of nexgate.com
+
 ! pushwoosh
 nice-games.net
 
@@ -1036,6 +1056,9 @@ prootdelka-remont.ru
 
 propu.sh$important
 
+! push ads network
+propush.me$important
+
 ! marketing and push ad scripts
 pro-taxi.org
 
@@ -1060,6 +1083,9 @@ push.guru$important
 
 ! push ads network
 push.house$important
+
+! push ads network
+push.trade$important
 
 push.world
 
@@ -1125,6 +1151,9 @@ pushnews.eu
 
 pushofferpro.com
 
+
+pushokey.com
+
 pushosubk.com
 
 pushout.ru
@@ -1136,6 +1165,9 @@ pushpad.xyz
 
 pushprofit.ru
 pushprofit.net
+
+! push ads network
+pushpush.io$important
 
 pushpushgo.com
 
@@ -1183,6 +1215,9 @@ redconnect.ru
 redhelper.ru
 redhelper.com
 rhlp.net
+
+! push ads
+refractionius.com
 
 replain.cc
 
@@ -1418,6 +1453,10 @@ tidioautomation.com
 tinypass.com
 !api.tinypass.com
 
+! AS11377 Sendgrid
+! ad redirects
+tmaworld.com
+
 ! push ads
 torsonercil.pro
 
@@ -1549,6 +1588,9 @@ whatshelp.io
 !+  mail.whatshelp.io
 ! end of whatshelp.io
 
+! push ads
+wherently.com
+
 ! callbackkiller
 whitesaas.com
 
@@ -1627,6 +1669,10 @@ zopim.com$important
 !+  talk.zopim.com
 !v2.zopim.com
 
+! ad agency & operator
+! adjust partner
+zorka.mobi$important
+
 zotabox.com$important
 
 ! push ads network
@@ -1647,44 +1693,6 @@ zvonzvon.ru
 xn--b1afaigyfhel.xn--p1ai
 
 !! todo
-
-pushokey.com
-
-! AS11377 Sendgrid
-! ad redirects
-tmaworld.com
-
-! AS11377 Sendgrid
-nexgate.com
-!+  us.nexgate.com
-!+  us2.nexgate.com
-! end of nexgate.com
-
-! AS11377 Sendgrid
-alert-software.co
-alert-software.com
-
-! "widgets"
-jumpoutpopup.ru
-
-! push ads network
-clicktimes.me$important
-
-! push ads network
-pushpush.io$important
-
-! push ads network
-push.trade$important
-
-! push ads network
-3xpush.com$important
-
-! push ads network
-propush.me$important
-
-! push ads network
-adoperator.com$important
-
 ! push ads network
 pushex.net$important
 
@@ -1697,16 +1705,6 @@ cerber.top$important
 ! ad agency & operator
 toptraffic.ru$important
 
-! ad agency & operator
-! adjust partner
-zorka.mobi$important
-
 ! push ads
 megas22.ru
-
-! push ads
-refractionius.com
-
-! push ads
-wherently.com
 
