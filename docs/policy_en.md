@@ -28,10 +28,10 @@ https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-
 
 <details>
     <summary>
-        *By the way, regarding logos and animations: the opinion of dimisa, one of the authors of Ru Adlist:
+        *By the way, regarding logos and animations: the opinion of dimisa, one of the authors of Ru Adlist:
     </summary>
 The main "indications" for hiding the logos and headers are usually the following: used animation, which spins coolers and the banal saving of screen space. These headers have no functionality other than duplicating the "home" button, but they steal from 100 to 300 pixels of screen space. And while in desktop resolution 1920x1080 this is not critical, in laptop resolution, such as 1366x768, the actual height of the browser window may remain just slightly more than 50% <br>
-    https://forums.lanik.us/viewtopic.php?p=144449#p144449
+    https://forums.lanik.us/viewtopic.php?p=144449#p144449
 </details>
 
 <details>
