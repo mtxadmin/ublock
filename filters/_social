@@ -1,10 +1,10 @@
 facebook.com##._3ob9
-graph.facebook.com
+graph.facebook.com$domain=~facebook.com|~fb.com,important
 facebook.com/tr?$important
 ! from Anti-Facebook list. And see Facebook Pixel: https://www.facebook.com/business/help/952192354843755
-||connect.facebook.net^$third-party,domain=~facebook.com|~fb.com
+||connect.facebook.net^$important,domain=~facebook.com|~fb.com
 ! from AdGuard Social Media
-||facebook.com/plugins/$domain=~facebook.com|~freepresets.com
+||facebook.com/plugins/$important,domain=~facebook.com|~fb.com|~freepresets.com
 
 
 ||vk.com/js^$third-party,important
@@ -18,8 +18,8 @@ facebook.com/tr?$important
 api.vk.com$domain=~vk.com,important
 
 
-instagram.com/embed.js$third-party
-platform.instagram.com/*/embeds.js$third-party
+instagram.com/embed.js$third-party,important
+platform.instagram.com/*/embeds.js$third-party,important
 
 
 !todo: blocking window
@@ -31,9 +31,9 @@ ok.ru/dk?cmd=videoStatNew
 ! from hpHosts’ Ad and tracking servers 
 ||connect.ok.ru^
 
-platform.twitter.com/widgets.js
+platform.twitter.com/widgets.js$important
 ! even that way: https://cdn.api.twitter.com/1/urls/count.json?url=
-api.twitter.com$third-party
+api.twitter.com$third-party,important
 ! from EasyPrivacy
-||twitter.com/oct.js
+||twitter.com/oct.js$important
 
