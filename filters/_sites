@@ -14,7 +14,7 @@
 ~cnn.com##[id^="ad_"]:not(html):not(body):not(article)
 ~cnn.com,~ferra.ru##[class^="ad-"]:not(html):not(body):not(article)
 ##[id^="ad-"]:not(html):not(body):not(article)
-~cnn.com##[class*="-ad-"]:not(html):not(body):not(article)
+~cnn.com,~dirteam.com##[class*="-ad-"]:not(html):not(body):not(article)
     ! from EasyList
     !##.ytp-ad-progress-list
 ~afisha.ru,~cnn.com##[id*="-ad-"]:not(html):not(body):not(article)
@@ -186,8 +186,8 @@ _468x60.$important
 ! from EasyPrivacy
 /matomo.js
 /mchat/*
-/metrika/*
-/metrika.js
+/metrika/*$important
+/metrika.js$important
 /mobile-banner/*
 /newrelic-browser.js
 /openx/*
@@ -199,7 +199,10 @@ _468x60.$important
 ! in EasyPrivacy and AdGuard
 /pixel.php?
 /plugins/ad-invalid-click-protector/*
+/plugins/append-link-on-copy/*
+/plugins/fancier-author-box/*
 /plugins/experts-by-webnavoz/*
+/plugins/likebtn-like-button/*
 /popunder.js$important
 ! from EasyList, modified
 /prebid/*$important
@@ -229,6 +232,7 @@ _468x60.$important
 /smartBanner/*
 /smartbanner.js
 /smartbanner.min.js
+/theia-sticky-sidebar/*
 /test-widget/*
 ! from AdGuard Tracking Protection and EasyPrivacy, modified
 /uedata?$important
@@ -333,6 +337,7 @@ _468x60.$important
 ##.banners-zones-container
 ##.banner-text
 ##.banner-top-content
+##.banner-top-wrapper
 ##.b-content__section_teasers
 ##.bets-online
 ##.b-direct
@@ -349,6 +354,8 @@ _468x60.$important
 ###check-also-box
 ##.contact-sales
 ###container_mediaget
+! part of /wp-content/plugins/crayon-syntax-highlighter/ - breaks copypaste
+##.crayon-plain
 ##.cross-sell-list-section
 ###ctl00_abot_bb
 ###ctl00_atop_bt
@@ -785,7 +792,7 @@ _social_fb.
 /vk_easy.js
 /vkontakte.gif
 /watch.js$domain=~rosreestr.ru
-/watch_ua.js
+/watch_ua.js$important
 /wordpress-social-login/*$important
 /youtube.svg
 -googleplus.
@@ -2272,6 +2279,8 @@ aliexpress.com##.product-fix-sns
 aliexpress.com##.hot-products
 ! ali url shorter which often used to steal cashback
 ali.pub
+! ali indirect cashback-stealing links
+##[href^="http://s.click.aliexpress.com/"]
 
 cmap.alibaba.com
 ! from EasyPrivacy
@@ -2382,6 +2391,8 @@ andevice.ru##.wrap > header
 
 andreyex.ru##.listing-item
 andreyex.ru##.ulogin_block
+andreyex.ru###header
+andreyex.ru##.ads.container
 
 androeed.ru##.top_bar:style(position:static !important)
 androeed.ru##body:style(margin-top:0px !important)
@@ -2616,6 +2627,8 @@ ax.digital###eli
 axion-tnp.ru##.anchor-up
 axion-tnp.ru##.popup-city
 
+ayende.com##.leftSide
+
 ayzdorov.ru##.topbutton
 ayzdorov.ru##.head_sprite
 
@@ -2712,7 +2725,7 @@ bestaliproducts.com###navigation-sticky-wrapper
 bestaliproducts.com##.penci_about_widget.widget
 bestaliproducts.com##.country-selector
 
-bestplaces.net$3p
+bestplaces.net$3p,important
 
 bestwebber.ru##.td-header-sp-logo
 bestwebber.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
@@ -2885,6 +2898,7 @@ briefmenow.org###main > #primary:style(width:100% !important)
 briefmenow.org##.nav-links
 briefmenow.org###primary:style(width:80% !important)
 ||briefmenow.org/microsoft/wp-content/themes/xclusive/_css/popup_get-discount.css
+||briefmenow.org/microsoft/wp-content/themes/xclusive/_img/content/bundle.png
 ||briefmenow.org/img/pa1.jpg$image
 ||briefmenow.org/img/pa2.jpg$image
 ||briefmenow.org/img/pa3.jpg$image
@@ -3486,6 +3500,14 @@ drivetribe.com##.hyBTKR.sc-DNdyV
 drivetribe.com##.fnrkLU.sc-ipZHIp
 drivetribe.com##.kxTRAT.sc-cqPOvA
 
+drongeek.ru##.site-branding
+
+dronnews.ru###logo
+dronnews.ru##.aliad-block
+
+dronomania.ru##.logo
+dronomania.ru##.header__text
+
 dtf.ru/hit/
 dtf.ru/booster/
 dtf.ru/chan/
@@ -3499,6 +3521,8 @@ dtf.ru##.live
 dtf.ru##.subsite_card_short_with_content
 
 dtonias.com###respond
+
+dtulyakov.ru###banner
 
 ! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
 duckduckgo.com##.js-badge-link.ddg-extension-hide.badge-link--fadein.badge-link--top.badge-link
@@ -3962,6 +3986,11 @@ gecid.com##.logo
 geekk.ru###header
 geekk.ru##.yasr-visitor-votes
 
+geeklib.ru##div:has-text(AdBlocker)
+geeklib.ru##[class$=-bg]
+geeklib.ru##.header-container
+geeklib.ru##.mistape_caption
+
 geek-nose.com##.header_wrap
 geek-nose.com##aside.sidebar
 
@@ -4031,6 +4060,8 @@ gismeteo.*##.media_frame
 ! 2019-08 Github started show intro notices. Disabled.
 github.com##.js-notice.intro-shelf
 
+gitlab.com##.sticky:style(position:static !important)
+
 ! is in Ru AdList
 partnercoll.github.io$important,third-party
 weblion777.github.io$third-party
@@ -4054,6 +4085,8 @@ glazdik.ru##.navbar-brand
 glazdik.ru##.pre_post_info
 
 ||globalsign.com$third-party
+
+gocd.org##.top:style(position:static !important)
 
 ! from Fanboy's
 ||seal.godaddy.com^$third-party
@@ -4223,6 +4256,7 @@ hobbystart.ru###move_up
 
 hodgkins.io##.panel-cover
 hodgkins.io##.content-wrapper:style(width:auto !important; margin-left:auto !important; max-width:2400px !important)
+hodgkins.io##blockquote:has-text(Follow me)
 
 holodilnik.ru##.swiper-services.swiper-initialized
 ||holodilnik.ru/img/mob/messengers/icon_Skype.png$image
@@ -4836,6 +4870,8 @@ kom-dir.ru###sidebar_mailing
 kom-dir.ru##.id2-polezno
 ||kom-dir.ru/images/available_on_the_app_store_russia.png$image
 
+kommersant.ru##.sticked_top:style(position:static !important)
+
 koofr.eu##.site-header:style(position:static !important)
 koofr.eu##.header:style(position:static !important)
 
@@ -4864,6 +4900,10 @@ kp.ru##.header:style(position:static !important)
 !kp.ru##.main:style(top:0px !important)
 !kp.ru##.Page:style(margin-top:0px !important)
 !kp.ru##.flex-container:style(display:block !important)
+! fixed header
+kp.ru##[class*=_imglogo]
+kp.ru##[class*=_positionfixed]:style(position:static !important)
+kp.ru##[class*=_burger_container]
 
 kramola.info###navbar
 kramola.info##.block:has-text(telegram-канал, чтобы не пропустить эксклюзив)
@@ -5577,6 +5617,11 @@ miremonta.ru###masthead
 
 mirf.ru##.mirfban
 
+mirquadrocopterov.ru##.logo
+mirquadrocopterov.ru##blockquote:has-text(/(Вам будут интересны|Вам будет интересно)/)
+mirquadrocopterov.ru##p:has-text(с хорошими отзывами на Яндекс.Маркете)
+mirquadrocopterov.ru##blockquote:has-text(Нажмите на ссылку)
+
 ! from Fanboy's
 ||mirtesen.ru^$third-party
 mirtesen.ru##.header:style(position:static !important)
@@ -5763,6 +5808,11 @@ multcloud.com###present
 
 multimaps.ru##.select.info-box
 
+mustbegeek.com###header
+mustbegeek.com##.sticky-nav:style(position:static !important)
+mustbegeek.com###ts-fab-bio-below
+mustbegeek.com###main:style(margin-top:0px !important)
+
 mvideo.ru##.sticky-header:style(position:static !important)
 mvideo.ru##.header-logo
 mvideo.ru##.highlighted-text-message
@@ -5939,6 +5989,8 @@ novayagazeta.ru##div:matches-css(width:60px)
 !jumping header and background
 novayagazeta.ru###headerForAdditionalAds:style(position:absolute !important; transform:none !important)
 novayagazeta.ru##div:style(background-position:center 0px !important)
+!push ads scripts
+novayagazeta.ru$inline-script
 
 nsaneforums.com##.cAnnouncementsFloat.cAnnouncements
 ||nsaneforums.com/uploads/*.gif$image
@@ -6419,6 +6471,8 @@ powershellmagazine.com##.robots-nocontent
 !powershellmagazine.com###+js(addEventListener-defuser.js, scroll)
 ! disable scripts completely
 powershellmagazine.com$script
+! other
+powershellmagazine.com##.author-desc
 
 powervideo.ru##.navbar:style(position:static !important)
 
@@ -7068,6 +7122,8 @@ saotn.org##.dpsp-has-button-icon-animation
 saotn.org##.dpsp-networks-btns-sidebar
 saotn.org##.dpsp-networks-btns-wrapper
 saotn.org###dpsp-content-bottom
+
+sapien.com##.logo
 
 saradmin.ru###header
 saradmin.ru###respond
@@ -7857,6 +7913,9 @@ top-hammam.ru###fancybox-overlay
 topobzor.com##.td-header-menu-wrap.td-affix:style(position:static !important)
 topobzor.com##.td-module-meta-info
 
+topogolic.ru##.top-header
+topogolic.ru##.nav-toogle
+
 topsharepoint.com###menu-top
 topsharepoint.com##.padTop.group
 topsharepoint.com##.sidebar
@@ -7884,6 +7943,7 @@ tpko.ru###wpadminbar:style(position:static !important)
 tproger.ru##.citation
 tproger.ru###above-content-container
 tproger.ru##.hint
+tproger.ru##.elevator-arrow
 
 ! [EFF Tracker Detection] - from https://adaway.org/hosts.txt
 trackersimulator.org
@@ -8746,6 +8806,8 @@ yaplakal.com,yap.ru##.logo__img
 ||yaplakal.com/html/static/noavatar.gif$image
 ||yap.ru/html/static/noavatar.gif$image
 ||yapfiles.ru/action/track/
+||yapfiles.ru/uploads/branddata/$important
+||yapfiles.ru/ypxl/
 
 ! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
 yelp.com##li.border-color--default__373c0__2oFDT.lemon--li__373c0__1r9wz:nth-of-type(2) > .border-color--default__373c0__2oFDT.u-padding-b3.u-padding-t3.lemon--div__373c0__1mboc
