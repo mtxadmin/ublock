@@ -77,7 +77,7 @@
 
 После успешной установки вы увидите надпись "Yet another small uBlock filter list". Значит, у вас получилось.
 
-Автор [дружественного проекта](https://github.com/yourduskquibbles/webannoyances/) сделал небольшую демонстрацию добавления списка. Примерно вот так выглядит процесс:
+Автор [дружественного проекта](https://github.com/yourduskquibbles/webannoyances/) сделал небольшую демонстрацию добавления списка. Примерно вот так выглядит процесс (c поправкой на адрес списка, конечно):
 
 ![](https://user-images.githubusercontent.com/22258847/39935902-25add6be-553a-11e8-82b0-badc73f44ed3.gif)
 

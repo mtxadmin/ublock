@@ -75,7 +75,7 @@ I noticed the list sometimes cannot be added from the first try. Yes, it's happe
 
 After successful installing you will see "Yet another small uBlock filter list" label. It means you did it.
 
-The author of [the friendly project](https://github.com/yourduskquibbles/webannoyances/) made a small demonstration of adding list. The process looks like that:
+The author of [the friendly project](https://github.com/yourduskquibbles/webannoyances/) made a small demonstration of adding list. The process looks like that (with different address, of course):
 
 ![](https://user-images.githubusercontent.com/22258847/39935902-25add6be-553a-11e8-82b0-badc73f44ed3.gif)
 
