@@ -1590,6 +1590,7 @@ _cookie_policy_
 /plugins/easy-table-of-contents/*
 /plugins/post-views-counter/*
 
+
 !! quickorder buttons
 ! generalized
 ##[class*="buy1click"]:not(html):not(body):not(article)
@@ -2020,16 +2021,30 @@ tarif-24.ru##.mh-ticker-bottom
 /site_logo.png
 
 
-!! other
-###branding
-##.flat_pm_outgoing
-###__ic-notice
-###__ic-notice-container
+!! forum engines elements
 ! forum ranks images
 /images/ranks/*$image
 ! PhpBB gifs
 /topic_read.gif
 /topic_read_hot.gif
+! vbulletin forum "you can't do" block (one of)
+##.bbcodeblock
+##.youcandoblock
+###forumrules
+###posting_rules
+! shortlink button on qsdb.ru engine forums
+###qpsContainer
+##.qpsButton
+! blogspot widget "about author"
+##.Profile.widget
+
+
+
+!! other
+###branding
+##.flat_pm_outgoing
+###__ic-notice
+###__ic-notice-container
 ! mfp is not only ads, but mostly it is picture popups. Disabled in general
 !~dobrodel.ru,~dobrodel.mosreg.ru,~nalog.ru,~xda-developers.com##.mfp-bg
 !~dobrodel.ru,~dobrodel.mosreg.ru,~nalog.ru,~xda-developers.com##.mfp-content
@@ -2039,11 +2054,6 @@ tarif-24.ru##.mh-ticker-bottom
 ###milotree_box
 ###milotree_box_wrap
 ###my_web_push_app_box_confirm
-##.Profile.widget
-! shortlink button on qsdb.ru engine forums
-###qpsContainer
-! shortlink button on qsdb.ru engine forums
-##.qpsButton
 ##.widget_google_translate_widget
 ##.widget_gravatar
 ! from Fanboy’s Annoyance List
