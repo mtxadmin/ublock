@@ -40,6 +40,24 @@ First, if you didn't setup [uBlock Origin](https://github.com/gorhill/uBlock) ye
 
 - [uBlock Origin для Mozilla FireFox на Android](https://addons.mozilla.org/EN-US/android/addon/ublock-origin/) 
 
+
+## Additional settings
+
+After installing uBlock Origin check its settings:
+
+1. Open uBlock Origin window, pressing the key ![](https://user-images.githubusercontent.com/22258847/39936895-7ca7a8fc-553d-11e8-9496-45a96b623614.png).
+2. Go to Settings ![](https://user-images.githubusercontent.com/22258847/39938114-5dc5cf00-5541-11e8-996d-5d583611f76f.png)
+3. Select Filter lists tab
+4. Check, that on the Filter lists tab two upper checkboxes are enabled and the third checkbox is disabled:
+- Auto-update filter lists 
+- Parse and enforce cosmetic filters
+- Ignore generic cosmetic filters
+
+The third checkbox sometimes is enabled after installing. Disable it, or else many blocking rules will not work. Right view of these settings:
+
+![](https://raw.githubusercontent.com/mtxadmin/ublock/master/docs/images/ublock_settings_general_en.png)
+
+
 ## Adding the list
 
 After setup, press [this link](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). In popup window press Ok and that's all.
