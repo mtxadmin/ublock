@@ -118,7 +118,7 @@ https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.tx
 
 <details>
     <summary>
-        Is there more lists?
+        What about of more lists?
     </summary>
     See additional lists on https://filterlists.com . But many of them, unfortunately, were abandoned long time ago - see the last change dates.
 </details>
