@@ -231,5 +231,5 @@ The main "indications" for hiding the logos and headers are usually the followin
     <summary>
         WAP-Click sites
     </summary>
-    Sites that steal money from your cellphone balance. Yes, it sounds like a magic, but just google "WAP-Click"
+    Sites that steal money from your cellphone balance. Yes, it sounds like a magic, but just google "WAP-Click". In a nutshell, they are cheaters-in-law. You visit a site from a smartphone, tadam!, and now your mobile number (you even didn't enter it! - they know it automatically) has a paid mobile subscription.
 </details>
