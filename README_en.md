@@ -114,7 +114,9 @@ Also, you can add some other filter lists:
 A good list to block mining scripts. Many servers from it added in different lists too, but the author constantly finds something new. For adding, click [this link](https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt). If not added, see above how to add the list manually. The list address:
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 
-- 
+- Web Annoyances Ultralist<br>
+A list designed to block annoying and generally distracting elements. For adding, click [this link](https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt). The list address:
+https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
 
 <details>
     <summary>
@@ -126,7 +128,7 @@ https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.tx
 
 ## Feedback
 
-Is something not working? Something is missing? Please, feel free to write about it here:
+Maybe something doesn't work? Something is missing? Please, feel free to write about it here:
 
 https://github.com/mtxadmin/ublock/issues/new
 
