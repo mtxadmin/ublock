@@ -131,7 +131,7 @@ https://easylist-downloads.adblockplus.org/bitblock.txt
 
 <details>
     <summary>
-        Хочу больше списков!
+        А есть еще?
     </summary>
     Еще пару сотен подписок можно найти на сайте https://filterlists.com . Но многие из них, к сожалению, давно заброшены - смотрите даты последнего изменения.
 </details>
