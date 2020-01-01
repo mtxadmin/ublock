@@ -129,6 +129,13 @@ https://easylist-downloads.adblockplus.org/cntblock.txt
 Тоже вспомогательный список RU AdList - убирает линеечки, мерцающие картиночки, кнопочки и прочий мусор. Для установки, нажмите на [эту ссылку](https://easylist-downloads.adblockplus.org/bitblock.txt). Адрес списка:
 https://easylist-downloads.adblockplus.org/bitblock.txt
 
+<details>
+    <summary>
+        Хочу больше списков!
+    </summary>
+    Еще пару сотен подписок можно найти на сайте https://filterlists.com . Но многие из них, к сожалению, давно заброшены - смотрите даты последнего изменения.
+</details>
+
 
 ## Улучшения и исправления
 
