@@ -227,3 +227,9 @@ The main "indications" for hiding the logos and headers are usually the followin
     "You won a car! Just pay us 5 dollars to cover postage."
 </details>
 
+<details>
+    <summary>
+        WAP-Click sites
+    </summary>
+    Sites that steal money from your cellphone balance. Yes, it sounds like a magic, but just google "WAP-Click"
+</details>
