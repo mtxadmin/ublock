@@ -50,10 +50,13 @@
 
 ## Установка списка
 
-После установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). В предложении установки списка нажимаете Ok и всё, готово.
+Далее, добавляем список. Для этого, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). В предложении установки списка нажимаете Ok и всё, готово.
 
-Иногда этот метод может не работать. Пойдём длинным путём.
-
+<details>
+    <summary>
+        Иногда этот метод может не работать. Пойдём длинным путём. (Нажмите на эту строку, чтобы развернуть описание)
+    </summary>
+    
 1. Откройте окно uBlock Origin, нажав на кнопку ![](https://user-images.githubusercontent.com/22258847/39936895-7ca7a8fc-553d-11e8-9496-45a96b623614.png).
 2. Перейдите в раздел настройки ![](https://user-images.githubusercontent.com/22258847/39938114-5dc5cf00-5541-11e8-996d-5d583611f76f.png)
 3. Выберите вкладку Списки 
@@ -80,6 +83,7 @@
 Автор [дружественного проекта](https://github.com/yourduskquibbles/webannoyances/) сделал небольшую демонстрацию добавления списка. Примерно вот так выглядит процесс (c поправкой на адрес списка, конечно):
 
 ![](https://user-images.githubusercontent.com/22258847/39935902-25add6be-553a-11e8-82b0-badc73f44ed3.gif)
+</details>
 
 Что-то не работает? Чего-то не хватает? Напишите об этом здесь:
 https://github.com/mtxadmin/ublock/issues/new
