@@ -62,8 +62,11 @@ The third checkbox sometimes is enabled after installing. Disable it, or else ma
 
 After setup, press [this link](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). In popup window press Ok and that's all.
 
-Sometimes this method maybe doesn't work. Let's do it long way.
-
+<details>
+    <summary>
+    Sometimes this method maybe doesn't work. Let's do it long way.
+    </summary>
+  
 1. Open uBlock Origin's window, pressing its button ![](https://user-images.githubusercontent.com/22258847/39936895-7ca7a8fc-553d-11e8-9496-45a96b623614.png).
 
 2. Go to settings ![](https://user-images.githubusercontent.com/22258847/39938114-5dc5cf00-5541-11e8-996d-5d583611f76f.png)
@@ -96,6 +99,7 @@ After successful installing you will see "Yet another small uBlock filter list" 
 The author of [the friendly project](https://github.com/yourduskquibbles/webannoyances/) made a small demonstration of adding list. The process looks like that (with different address, of course):
 
 ![](https://user-images.githubusercontent.com/22258847/39935902-25add6be-553a-11e8-82b0-badc73f44ed3.gif)
+</details>
 
 
 Is something not working? Something is missing? Write about it here:
