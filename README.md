@@ -48,6 +48,24 @@
 #### На телефоне
 - [uBlock Origin для Mozilla FireFox на Android](https://addons.mozilla.org/EN-US/android/addon/ublock-origin/) 
 
+
+## Дополнительные настройки
+
+После установки uBlock Origin проверьте настройки:
+
+1. Откройте окно uBlock Origin, нажав на кнопку ![](https://user-images.githubusercontent.com/22258847/39936895-7ca7a8fc-553d-11e8-9496-45a96b623614.png).
+2. Перейдите в раздел настройки ![](https://user-images.githubusercontent.com/22258847/39938114-5dc5cf00-5541-11e8-996d-5d583611f76f.png)
+3. Выберите вкладку Списки 
+4. Убедитесь, что на вкладке Списки включены две верхних галки и НЕ включена третья:
+- Автообновление списков фильтров
+- Парсить и применять косметические фильтры
+- Игнорировать общие косметические фильтры
+
+Третья галка иногда сама ставится при установке на телефоне. Нужно её отжать, иначе значительная часть правил просто не будет работать. Вот так выглядит правильный вид этих настроек:
+
+![](https://raw.githubusercontent.com/mtxadmin/ublock/master/docs/images/ublock_settings_general_ru.png)
+
+
 ## Установка списка
 
 Далее, добавляем список. Для этого, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). В предложении установки списка нажимаете Ok и всё, готово.
@@ -84,6 +102,33 @@
 
 ![](https://user-images.githubusercontent.com/22258847/39935902-25add6be-553a-11e8-82b0-badc73f44ed3.gif)
 </details>
+
+### Установка других списков
+
+Как вы могли заметить в предыдущем пункте, на вкладке Списки есть много всяких списков. Это те списки, что идут к блокировщику "из коробки" - наиболее старые и известные.
+
+Я при настройке обычно прохожусь по всем разделам и включаю максимум из них. Ну, разве что, из региональных пропускаю все, кроме RUS и CHN. Второе - это китайские списки, могут быть полезны из-за Алиэкспресса и всего такого.
+
+Также, можно добавить следующие списки:
+
+- AdGuard Russian filter<br>
+Один из двух ведущих русскоязычных списков. До 2019 года входил в стандартную поставку uBlock Origin.
+Для его установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://filters.adtidy.org/extension/ublock/filters/1.txt).
+Если не добавляется, смотрите выше, как добавить вручную. Адрес списка:
+https://filters.adtidy.org/extension/ublock/filters/1.txt
+
+- NoCoin Filter List<br>
+Хороший список блокировки майнинговых скриптов. Многие перечисленные в нём сервера добавлены и в другие списки, но автор постоянно находит что-то новое. Для установки, нажмите на [эту ссылку](https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt). Адрес списка:
+https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
+
+- RU AdList: Counters<br>
+Небольшой вспомогательный список в дополнение к основному русскоязычному RU AdList - авторы решили выделить счетчики и прочее отдельно. Для установки, нажмите на [эту ссылку](https://easylist-downloads.adblockplus.org/cntblock.txt). Адрес списка:
+https://easylist-downloads.adblockplus.org/cntblock.txt
+
+- RU AdList: BitBlock<br>
+Тоже вспомогательный список RU AdList - убирает линеечки, мерцающие картиночки, кнопочки и прочий мусор. Для установки, нажмите на [эту ссылку](https://easylist-downloads.adblockplus.org/bitblock.txt). Адрес списка:
+https://easylist-downloads.adblockplus.org/bitblock.txt
+
 
 ## Улучшения и исправления
 
