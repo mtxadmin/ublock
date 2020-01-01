@@ -60,7 +60,7 @@ The third checkbox sometimes is enabled after installing. Disable it, or else ma
 
 ## Adding the list
 
-After setup, press [this link](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). In popup window press Ok and that's all.
+After setup, click [this link](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). In popup window press Ok and that's all.
 
 <details>
     <summary>
@@ -102,5 +102,32 @@ The author of [the friendly project](https://github.com/yourduskquibbles/webanno
 </details>
 
 
-Is something not working? Something is missing? Write about it here:
+## Adding more lists
+
+As you may have noticed in the previous paragraph, there are a lot of lists on the Filter lists tab. These are the lists installed "out of the box" with adblocker - the oldest and well known.
+
+When setting up, I usually enable maximum number of them. Maybe, except regional lists.
+
+Also, you can add some other filter lists:
+
+- NoCoin Filter List<br>
+A good list to block mining scripts. Many servers from it added in different lists too, but the author constantly finds something new. For adding, click [this link](https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt). If not added, see above how to add the list manually. The list address:
+https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
+
+- 
+
+<details>
+    <summary>
+        Is there more lists?
+    </summary>
+    See additional lists on https://filterlists.com . But many of them, unfortunately, were abandoned long time ago - see the last change dates.
+</details>
+
+
+## Feedback
+
+Is something not working? Something is missing? Please, feel free to write about it here:
+
 https://github.com/mtxadmin/ublock/issues/new
+
+(it will need a GitHub account. If you don't have one yet, create it - that is easy and useful)
