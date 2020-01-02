@@ -2,7 +2,7 @@
 
 #### Yet another small uBlock filter list
 
-Constantly updated filter list for uBlock Origin. Removes banners and spying modules. And also removes different [annoyances](docs/policy_en.md) from internet pages. Let's make sites cleaner and reading more comfortable!
+Constantly updated filter list for uBlock Origin. Removes banners and spying modules, blocks fraudulent sites. And also removes different annoyances from internet pages. [See the full list here.](docs/policy_en.md) Let's make sites cleaner and reading more comfortable and secure!
 
 Also, there is a child project - [Yet another small hosts file](docs/hosts_file_en.md) 
 
@@ -114,11 +114,13 @@ Also, you can add some other filter lists:
 A good list to block mining scripts. Many servers from it added in different lists too, but the author constantly finds something new. For adding, click [this link](https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt). If not added, see above how to add the list manually. The list address:
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 
-- 
+- Web Annoyances Ultralist<br>
+A list designed to block annoying and generally distracting elements. For adding, click [this link](https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt). The list address:
+https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
 
 <details>
     <summary>
-        Is there more lists?
+        What about of more lists?
     </summary>
     See additional lists on https://filterlists.com . But many of them, unfortunately, were abandoned long time ago - see the last change dates.
 </details>
@@ -126,7 +128,7 @@ https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.tx
 
 ## Feedback
 
-Is something not working? Something is missing? Please, feel free to write about it here:
+Maybe something doesn't work? Something is missing? Please, feel free to write about it here:
 
 https://github.com/mtxadmin/ublock/issues/new
 
