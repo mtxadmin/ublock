@@ -643,8 +643,12 @@ _pagespeed_beacon?
 ~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article)
 ##[id*="Share"]:not(html):not(body):not(article)
 ~microsoft.com,~sketchup.com,~topsharepoint.com,~joom.com##[class*="share"]:not(html):not(body):not(article)
+    ! is in AdGuard, RU AdList, Fanboy's
+    ##.share-button
+    ! is in AdGuard, RU AdList, Fanboy's
+    ##.sidebar-share
     ! from AdGuard & Fanboy's
-    !##.ytp-share-button
+    ##.ytp-share-button
 ~host.io##[id*="share"]:not(html):not(body):not(article)
 ##[class*="Sharing"]:not(html):not(body):not(article)
 ##[id*="Sharing"]:not(html):not(body):not(article)
@@ -686,6 +690,7 @@ _pagespeed_beacon?
 ~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru##[class*="social"]:not(html):not(body):not(article)
     ##.footer-social
     ##.footer-social-wrap
+    ! is in AdGuard, RU AdList, Fanboy's
     ##.social-likes
     ##.social-likes__icon
     ##.social-likes__button
@@ -1038,7 +1043,11 @@ _social_fb.
 ##.ulogin_block
 ##.ulogin-buttons-container
 ##.vk
+! is in AdGuard
+###vk_group
 ###vk_groups
+! is in RU Adlist
+##.vkontakte
 ##.w2bslikebox
 ##.zen-invite-block
 ##.zen-ui-popup
@@ -6533,6 +6542,10 @@ osp.ru##.article-full > p:has-text(Поделитесь материалом с)
 osradar.com##.td-affix:style(position:static !important)
 osradar.com##.td-header-menu-wrap:style(position:static !important)
 
+ostmusic.org###comments
+! push :-(
+!ostmusic.org/plugins/muscolplayers/jwplayer/jwplayer/jwplayer_functions.js
+
 ostraining.com###top-box
 ostraining.com##.header
 ostraining.com##.slider
@@ -9394,6 +9407,20 @@ adv.zarabotki.ru
 tizer.adv.zarabotki.ru
 
 zavelos.ru###google_right
+
+zaycev.net##.noscript-message
+zaycev.net##.footer__apps
+zaycev.net/*/browsers.png
+! there is an exclusion in RU Adlist: @@||zaycev.net/static/images/$image,domain=zaycev.net
+! but their logo is still very bad
+zaycev.net/*/logo
+zaycev.net##.footer-abuse
+zaycev.net##.footer-left > div > div.footer__row:has-text(По вопросам)
+zaycev.net##.audiotrack__note:has-text(бесплатно скачать)
+! is in AdGuard
+||rttr2.zaycev.net
+! is in RU Adlist
+zaycev.net##.body-branding:style(background: none !important; padding-top: 0 !important)
 
 ||zbord.ru/images/zbord_ru_logo/
 zbord.ru##.maintitle
