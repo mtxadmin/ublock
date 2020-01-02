@@ -2,7 +2,7 @@
 
 #### Yet another small uBlock filter list
 
-Constantly updated filter list for uBlock Origin. Removes banners and spying modules. And also removes different [annoyances](docs/policy_en.md) from internet pages. Let's make sites cleaner and reading more comfortable!
+Constantly updated filter list for uBlock Origin. Removes banners and spying modules, blocks fraudulent sites. And also removes different annoyances from internet pages. [See the full list here.](docs/policy_en.md) Let's make sites cleaner and reading more comfortable and secure!
 
 Also, there is a child project - [Yet another small hosts file](docs/hosts_file_en.md) 
 
