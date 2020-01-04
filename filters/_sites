@@ -1698,20 +1698,21 @@ turboimagehost.com##.modal-footer
 turboimagehost.com##body:style(overflow:auto !important)
 
 
-! gif smiles
+! noisy gifs and smiles
+! (some sites use not only *.gif there)
 ##.bbc_emoticon
 /wp-emoji-release.min.js
-/emoji/$image
-/emoticons/*.gif
+/emoji/*$image
+/emoticons/*$image
 /images/laugh.gif
-/images/smilies/*
-/smile/*.gif
-/smiles/*.gif
-/smiles2/*.gif
-/smiles_s/*.gif
-/smileys/*.gif
-/smilies/*.gif
-/style_emoticons/*.gif
+/images/smilies/*$image
+/smile/*$image
+/smiles/*$image
+/smiles2/*$image
+/smiles_s/*$image
+/smileys/*$image
+/smilies/*$image
+/style_emoticons/*$image
 ||fastpic.ru/big/*.gif
 ||i.imgur.com/*.gif
 ||media.giphy.com/media/*.gif
@@ -7385,7 +7386,7 @@ realnye-otzyvy.com##.company-hidden-info:style(position:static !important)
 rebeladmin.com###commentform
 
 reboot.pro###footer_utilities
-||reboot.pro/public/style_emoticons/*.gif$image
+!||reboot.pro/public/style_emoticons/*.gif
 ||reboot.pro/flags/*.gif$image
 reboot.pro##.avatar
 
@@ -9536,8 +9537,8 @@ yaplakal.com,yap.ru##noindex
 yaplakal.com,yap.ru###adult-info
 yaplakal.com,yap.ru##.pformleft
 yaplakal.com,yap.ru##.logo__img
-||yaplakal.com/html/emoticons/*.gif$image
-||yap.ru/html/emoticons/*.gif$image
+!||yaplakal.com/html/emoticons/*.gif$image
+!||yap.ru/html/emoticons/*.gif$image
 ||yaplakal.com/html/premia*$image
 ||yap.ru/html/premia*$image
 ||yaplakal.com/pics/userpic/*.gif$image
@@ -9819,3 +9820,7 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 /fon.jpg
 
+||litmir.me/img/logo_litmir.png
+
+
+drivemusic.fm,ru-drivemusic.net##.music-like
