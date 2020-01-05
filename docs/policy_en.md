@@ -23,7 +23,9 @@ https://stackoverflow.com/questions/32814161/how-to-make-spoiler-text-in-github-
     <summary>
         Large logos, large heads with pictures, fancy logos
     </summary>
-    Can we start reading and not scrolling through the half-screen head? And yet, tell someone to the designers and their customers that the overwhelming number of all these fancy logos and slogans are no good at all. Sorry.
+    Can we start reading and not scrolling through the half-screen head? And yet, tell someone to the designers and their customers that the overwhelming number of all these fancy logos and slogans are no good at all. Sorry.<br>
+<br>
+Update: After many hundreds of viewed creations of designers, logos in the header are now removed by default, with a very rare exception.
 </details>
 
 <details>
