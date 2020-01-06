@@ -199,9 +199,10 @@ _468x60.$important
 /pixel.php?
 /plugins/ad-invalid-click-protector/*
 /plugins/append-link-on-copy/*
-/plugins/fancier-author-box/*
 /plugins/experts-by-webnavoz/*
+/plugins/fancier-author-box/*
 /plugins/likebtn-like-button/*
+/plugins/rnbt-sticky-banner/*
 /popunder.js$important
 ! from EasyList, modified
 /prebid/*$important
@@ -440,6 +441,11 @@ _468x60.$important
 ##.vkredit
 ! from AdGuard
 /plugins/convertplug/*
+/plugins/duracelltomi-google-tag-manager/*
+! is in EasyList
+/prebid.$domain=~prebid.org
+! is in EasyPrivacy
+-google-tag-manager/$script
 ! disable exclusion from Fanboy’s Enhanced Tracking List
 @@/wp-content/*/ad-$script,badfilter
 ! disable exclusions from Fanboy's list
@@ -542,6 +548,8 @@ _loghuman=
 /packaged-js/trackers.
 ! from AdGuard
 _pagespeed_beacon?
+! is in EasyPrivacy
+/pageviews/*$domain=~stats.wikimedia.org|~tools.wmflabs.org
 /parking-crew.js
 /piwik-$domain=~github.com|~matomo.org|~piwik.org
 /piwik.$image,script,domain=~matomo.org|~piwik.org
@@ -1589,6 +1597,7 @@ _cookie_policy_
 ##[id*="countdown"]:not(html):not(body):not(article)
 ##[class^="timer"]:not(html):not(body):not(article)
 ##[id^="timer"]:not(html):not(body):not(article)
+/jquery.countdown.min.js
 
 
 !! bottom bars and other sticky elements
@@ -1617,8 +1626,10 @@ _cookie_policy_
 ##.sticky-tagline
 ##.toolbar-bottom
 /jquery.sticky-sidebar
+/jquery.sticky-kit.js
 /plugins/q2w3-fixed-widget/*
 ##.q2w3-fixed-widget-container
+
 
 ! from Fanboy’s
 /plugins/social-$script
@@ -1806,6 +1817,7 @@ tarif-24.ru##.mh-ticker-bottom
 ##.seo-item__text
 ##.seo_text
 ##.seotop
+/plugins/seo-automated-link-building/*
 /seohide/*
 /seoHiddenLink/*
 /nocopy.js
@@ -5712,6 +5724,7 @@ litres.ru##.last_viewed_arts
 ||litres.ru/static/litres/modules/viewed-books-widget/
 ||litres.ru/static/litres/modules/spam-tickets/js/spam-tickets.js
 ||litres.ru/static/litres/js/sociallogin.js
+||litres.ru/*/widgets/$3p
 
 liveexpert.ru##.applications-section
 liveexpert.ru##.online-wrapper
