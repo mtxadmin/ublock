@@ -588,6 +588,7 @@ _pagespeed_beacon?
 ! from EasyPrivacy
 /track_click?
 /tracker.js$important
+/tracking.min.js
 /utm-tracking.js$important
 /wle_tracker.js
 /?wordfence
@@ -3534,6 +3535,8 @@ castorama.ru###pdp-text-img
 castorama.ru##.add-to-cart-buttons
 castorama.ru##.no-rating
 ||castorama.ru/sensitive/
+castorama.ru##[href="https://visit.castorama.ru/"]
+castorama.ru##.b-shopOrder
 
 catalog-plans.ru##.hidelink
 catalog-plans.ru##.cp-header-logo
@@ -3852,6 +3855,15 @@ discord-pc.ru$third-party
 ditching.eu##.td-ss-main-sidebar:style(position:static !important)
 
 divan.tv##.privacy-policy-message__wrapper
+
+||diynews.ru/pictures/diynews.gif
+||diynews.ru/pictures/_map_mini.gif
+||diynews.ru/pictures/__fb.gif
+||diynews.ru/pictures/__vk.gif
+! paywall message
+!diynews.ru###lblMessagesPages > div
+diynews.ru##a[href^="about.aspx"] > h2
+!other
 
 ! header
 !dmosk.ru##.nav-fixed-top:style(position:static !important; top:0px !important)
@@ -4520,6 +4532,12 @@ g2crowd.com$domain=~g2.com
 
 gamedeus.ru##.please
 
+gamenewsblog.ru##.fa-stack
+gamenewsblog.ru###reply-title
+gamenewsblog.ru##.header-logo-full
+gamenewsblog.ru##h5:has-text(Подписывайтесь на на)
+gamenewsblog.ru##.author-box-desc
+
 ||gamer.ru/alarmalarm/widgets/
 
 ! allow copypaste
@@ -4545,6 +4563,9 @@ gazeta.ru##.header_v2_common
 gazeta.ru##.header_v2_top
 gazeta.ru##.b-navbar-secondary
 gazeta.ru##.header_stub:style(height:36px !important)
+
+gazetabiznes.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
+gazetabiznes.ru##.td-post-views
 
 gbhackers.com##.size-full.attachment-full
 
@@ -4596,6 +4617,8 @@ getfreedumps.com##.sidebar1
 getstream.io##.str-topbar:style(position:static !important)
 
 gfaq.ru##td:nth-of-type(2) > table:nth-of-type(1) > tbody > tr:nth-of-type(1) > td
+
+gfycat.com##.pro-cta
 
 ghacks.net###ghacks_share_widget-5
 ghacks.net##div.mt--40.pt--40.border--top--gray
@@ -5474,6 +5497,8 @@ kom-dir.ru##.id2-polezno
 
 kommersant.ru##.sticked_top:style(position:static !important)
 kommersant.ru##.fixed_bottom
+kommersant.ru##.slider-announce
+kommersant.ru##.sticky_box::after:style(content:normal !important)
 
 koofr.eu##.site-header:style(position:static !important)
 koofr.eu##.header:style(position:static !important)
@@ -6747,6 +6772,11 @@ obzorpokupok.ru###header
 ocomp.info##.usk_w
 ocomp.info###toc_container
 
+odintsovo.info##.news-yzen
+odintsovo.info##.news-ynews
+odintsovo.info##.news-telegram
+odintsovo.info##.sendmistake
+
 odveryah.ru##.site-branding
 
 ofsant.ru###modal_city-select-panel
@@ -7402,6 +7432,18 @@ sharepoint.rackspace.com##.sidebar
 ! Canadian provider. But it spams.
 radiant.net$third-party
 
+||radidomapro.ru/images/logo-radidoma*.png
+radidomapro.ru###liste_produit_col_droite
+radidomapro.ru##.region-sidebar-secbot
+||radidomapro.ru/cap_centredoc/images/partenaire/
+||radidomapro.ru/cap_centredoc/images/partlogo130/
+radidomapro.ru###catfishbannerbox
+radidomapro.ru###bloc_produit_article
+radidomapro.ru###titre_liste_produit_violet
+radidomapro.ru###bloc_redtram_edito
+radidomapro.ru##div.separ_img_partenaire
+radidomapro.ru##div.titre_img_partenaire
+
 radikal.ru##.base-page_left-side
 radikal.ru##.pict-menu_glpp
 radikal.ru##.footer
@@ -7437,6 +7479,8 @@ reklama.rambler.ru
 um.rambler.ru
 rcmjs.um.rambler.ru
 c.rambler.ru
+
+rambler.ru##.menu--visible.menu.j-menu
 
 rashodnika.ru###header.sticky-header:style(position:static !important)
 rashodnika.ru##.main-menu-wrap:style(position:static !important)
@@ -7483,6 +7527,8 @@ rbc.ru##.live-tv
 /rbcmetrika-
 ||rbk.ru/*/rbcbanners
 ||rbk.ru/*/rbcmetrika
+rbc.ru##.news-feed:style(position:static !important)
+rbc.ru##.topline__item__image-block
 
 ||rcdesign.ru/*/hk_top/
 forum.rcdesign.ru##body > table
@@ -7538,6 +7584,8 @@ reddit.com##header:style(position:absolute !important)
 redmondmag.com##.header
 redmondmag.com##.footer
 redmondmag.com##.REDMOND-FLASH
+
+redrumers.com##.header
 
 reg.ru##.b-help-button
 
@@ -9944,53 +9992,3 @@ xn--80ado1abokv5d.xn--80asehdb##.fixedpanel
 xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 !! todo
-
-/tracking.min.js
-
-||diynews.ru/pictures/diynews.gif
-||diynews.ru/pictures/_map_mini.gif
-||diynews.ru/pictures/__fb.gif
-||diynews.ru/pictures/__vk.gif
-! paywall message
-!diynews.ru###lblMessagesPages > div
-diynews.ru##a[href^="about.aspx"] > h2
-!other
-
-rambler.ru##.menu--visible.menu.j-menu
-
-odintsovo.info##.news-yzen
-odintsovo.info##.news-ynews
-odintsovo.info##.news-telegram
-odintsovo.info##.sendmistake
-
-||radidomapro.ru/images/logo-radidoma*.png
-radidomapro.ru###liste_produit_col_droite
-radidomapro.ru##.region-sidebar-secbot
-||radidomapro.ru/cap_centredoc/images/partenaire/
-||radidomapro.ru/cap_centredoc/images/partlogo130/
-radidomapro.ru###catfishbannerbox
-radidomapro.ru###bloc_produit_article
-radidomapro.ru###titre_liste_produit_violet
-radidomapro.ru###bloc_redtram_edito
-radidomapro.ru##div.separ_img_partenaire
-radidomapro.ru##div.titre_img_partenaire
-
-gazetabiznes.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
-gazetabiznes.ru##.td-post-views
-
-rbc.ru##.news-feed:style(position:static !important)
-rbc.ru##.topline__item__image-block
-
-kommersant.ru##.slider-announce
-kommersant.ru##.sticky_box::after:style(content:normal !important)
-
-castorama.ru##[href="https://visit.castorama.ru/"]
-castorama.ru##.b-shopOrder
-
-gamenewsblog.ru##.fa-stack
-gamenewsblog.ru###reply-title
-gamenewsblog.ru##.header-logo-full
-gamenewsblog.ru##h5:has-text(Подписывайтесь на на)
-gamenewsblog.ru##.author-box-desc
-
-redrumers.com##.header
