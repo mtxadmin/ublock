@@ -5897,6 +5897,21 @@ livejournal.com##.top-boxes
 ||livejournal.com/ljcounter/
 ! annoying userpics
 ||l-userpic.livejournal.com/128154240/9744366
+! there are some tracking pixels there
+||livejournal.com$image
+! exlusions: icons
+@@||www.livejournal.com/img/$image
+! exlusions: userpics
+@@||l-userpic.livejournal.com/$image
+! from RU AdBlock
+||livejournal.com^*&callback=*=$script,domain=livejournal.com
+! don't block! comments are not loaded...
+!||naydex.net$script
+! beacon? comments are ok
+||livejournal.com$script
+! beacon? comments are ok
+||livejournal.com$xhr
+
 
 web-push.test.loccitane.com
 loccitane.com##.o-header--overlay:style(position:static !important)
@@ -6685,8 +6700,6 @@ veta.naver.com
 ! naver.net
 ! from EasyPrivacy
 ||naver.net/wcslog.js
-
-naydex.net$script
 
 nedimmehic.org##.sidebar
 nedimmehic.org##.header
