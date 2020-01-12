@@ -7,7 +7,10 @@ facebook.com/tr?$important
 ||connect.facebook.net^$important,domain=~facebook.com|~fb.com
 ! from AdGuard Social Media
 ||facebook.com/plugins/$important,domain=~facebook.com|~fb.com|~freepresets.com
-
+! is in RU AdList
+##a[onclick*="facebook.com/sharer.php?"]
+! is in AdGuard
+##a[onclick^="window.open('https://www.facebook.com/sharer.php"]
 
 
 !! VK
@@ -24,6 +27,8 @@ facebook.com/tr?$important
 api.vk.com$domain=~vk.com|~foto-map.ru,important
 vk.com###bottom_nav
 vk.com###index_footer_wrap
+! is in AdGuard. Old domain but suprisingly still actual and working in 2020
+##a[href^="https://vkontakte.ru/share.php"]
 
 
 
@@ -53,5 +58,24 @@ platform.twitter.com/widgets.js$important
 api.twitter.com$third-party,important
 ! from EasyPrivacy
 ||twitter.com/oct.js$important
+! is in AdGuard
+##a[href^="https://twitter.com/share"]
+! is in Fanboy's, RU AdList - Adguard's is about the same
+!##a[href^="https://twitter.com/share?"]
+! is in AdGuard
+##a[onclick^="window.open('https://twitter.com/share"]
 
 
+
+!! Mail.ru (yes, it is a some sort of social network too :-) )
+! is in AdGuard
+##a[href^="https://connect.mail.ru/share"]
+! is in RU AdList
+##a[href*="//top.mail.ru/jump?"]
+
+
+!! Rambler (no comments also :-) )
+! is in RU AdList
+##[alt="Rambler's Top100"]
+! is in RU AdList
+##a[href*="top100.rambler.ru/"]
