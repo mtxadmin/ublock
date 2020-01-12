@@ -448,13 +448,17 @@ _468x60.$important
 ##.ui-banner-slider-container
 ##.videoAnnouncement
 ##.vkredit
+! is in RU AdList, EasyPrivacy, AdGuard
+/bitrix/spread.php?$important
+! is in EasyPrivacy
+-google-tag-manager/$script
 ! from AdGuard
 /plugins/convertplug/*
 /plugins/duracelltomi-google-tag-manager/*
 ! is in EasyList
 /prebid.$domain=~prebid.org
-! is in EasyPrivacy
--google-tag-manager/$script
+! from RU AdList
+/siropu/am/display.$script
 ! disable exclusion from Fanboy’s Enhanced Tracking List
 @@/wp-content/*/ad-$script,badfilter
 ! disable exclusions from Fanboy's list
@@ -3719,6 +3723,10 @@ click-or-die.ru##.palach-border
 
 cloudenius.com##.site-branding
 cloudenius.com###masthead
+
+! from uBlock
+||cdnjs.cloudflare.com/ajax/libs/snowstorm/$script,important
+/snowstorm-min.js
 
 cloudzone.ru##.navbar-fixed-top:style(position:static !important)
 
@@ -10300,13 +10308,3 @@ xn--80ado1abokv5d.xn--80asehdb##.fixedpanel
 xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 !! todo
-
-! is in RU AdList, EasyPrivacy, AdGuard
-/bitrix/spread.php?
-
-! from uBlock
-||cdnjs.cloudflare.com/ajax/libs/snowstorm/$script,important
-/snowstorm-min.js
-
-! from RU AdList
-/siropu/am/display.$script
