@@ -59,6 +59,8 @@ log.adsence.co.kr
 ##[id^="bn_"]:not(html):not(body):not(article)
 ##[class*="_bn_"]:not(html):not(body):not(article)
 ##[id*="_bn_"]:not(html):not(body):not(article)
+! from EasyList
+##div[id^="crt-"][style]
 ##[class^="dfp"]:not(html):not(body):not(article)
 ##[id^="dfp"]:not(html):not(body):not(article)
 ##[class$="dfp"]:not(html):not(body):not(article)
@@ -4031,6 +4033,8 @@ cloudenius.com###masthead
 ! from uBlock
 ||cdnjs.cloudflare.com/ajax/libs/snowstorm/$script,important
 /snowstorm-min.js
+! not from there, but similar annoyance
+/snowflakes.min.js
 
 cloudzone.ru##.navbar-fixed-top:style(position:static !important)
 
@@ -10966,7 +10970,4 @@ xn--80ado1abokv5d.xn--80asehdb##.fixedpanel
 xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 !! todo
-! from EasyList
-##div[id^="crt-"][style]
 
-/snowflakes.min.js
