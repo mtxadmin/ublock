@@ -2,6 +2,7 @@
 !! Facebook
 facebook.com##._3ob9
 graph.facebook.com$domain=~facebook.com|~fb.com,important
+connect.facebook.net$domain=~facebook.com|~fb.com,important
 facebook.com/tr?$important
 ! from Anti-Facebook list. And see Facebook Pixel: https://www.facebook.com/business/help/952192354843755
 ||connect.facebook.net^$important,domain=~facebook.com|~fb.com
@@ -11,6 +12,13 @@ facebook.com/tr?$important
 ##a[onclick*="facebook.com/sharer.php?"]
 ! is in AdGuard
 ##a[onclick^="window.open('https://www.facebook.com/sharer.php"]
+! from EasyList
+||facebook.com/audiencenetwork/$third-party
+! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
+facebook.com##div[id^="hyperfeed_story_id_"]:not(div:contains(/^[class="timestampContent"])):not(span:contains(/^m$/)):not(span:contains(/^M$/)):not(span:contains(/^h$/)):not(span:contains(/^:$/)):not(span:contains(/^J$/)):has(span:contains(/^S$/))
+facebook.com##:xpath(//div[starts-with(@id, 'pagelet') and (.//a[.='Sponsored'])]  )
+facebook.com###pagelet_ego_pane
+facebook.com###pagelet_video_home_watch_list_rhc
 
 
 !! VK
