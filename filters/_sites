@@ -2106,6 +2106,7 @@ tarif-24.ru##.mh-ticker-bottom
 ##.seo-item
 ##.seo-item__text
 ##.seo_text
+##.seo-text
 ##.seotop
 /plugins/seo-automated-link-building/*
 /seohide/*
@@ -2419,8 +2420,10 @@ tarif-24.ru##.mh-ticker-bottom
 ##.site-logotype
     ! ilike.guru##.site-logotype
     ! vodatyt.ru##.site-logotype
+##.site-text-logo
 ##.td-header-logo
     ! voin.guru##.td-header-logo
+##.td-header-sp-logo
 ##.td-main-menu-logo
     ! trubanet.ru##.td-main-menu-logo
 ##.td-main-logo
@@ -3709,6 +3712,13 @@ boingboing.net##.widget_stackcommerce_widget
 
 bolshoyvopros.ru##.footer_buttons
 
+! disable exclusion in Fanboy's
+@@*$generichide,domain=boredpanda.com,badfilter
+||boredpanda.com/*/header-panda-new.svg
+boredpanda.com##.cover
+boredpanda.com##.get-app
+boredpanda.com##.author-info-description
+
 borncity.com###header
 borncity.com##.code-block-1.code-block
 borncity.com##.code-block-2.code-block
@@ -4032,6 +4042,9 @@ citik.ru/api/saveMetrics
 frontend-monitoring.services.citik.ru
 
 support.citrix.com##.sticky:style(position:static !important)
+
+||city-denta.ru/*/logo-wide2.png
+city-denta.ru##.rev_slider_wrapper
 
 ||citymaker.ru/tpldata/images/logo*.png
 
@@ -4526,6 +4539,10 @@ dronnews.ru##.aliad-block
 
 dronomania.ru##.header__text
 
+! DriverPack
+! is in Ru AdList. Ok, I don't like it too.
+drp.su
+
 dtf.ru/hit/
 dtf.ru/booster/
 dtf.ru/chan/
@@ -4593,6 +4610,7 @@ e1.ru##.e1-banner-right-fixed
 ||e1.ru/images/titles/
 ||e1.ru/images/picts/_pict_fun.gif
 e1.ru##.js-main-left-side-wrap > p
+e1.ru###prinzip-adv
 
 eco-dush.ru##.fix-scroll
 
@@ -4839,6 +4857,7 @@ fastpic.ru###footer
 fastpic.ru###picContainer > div:nth-of-type(1)
 fastpic.ru##.top
 ||fastpic.ru/n/b.php$image
+||fastpic.ru/*/b.php
 
 fb.ru##.c-creator__subscrubers
 fb.ru###comments-creator
@@ -5223,6 +5242,10 @@ globus.ru##.d-footer::before:style(border-top-right-radius:0px !important)
 globus.ru##.header__middle
 !globus.ru##.share__icon
 globus.ru##.share__icon_i_share
+! ugly pictures in warranty block on root
+globus.ru###warranty > .carousel-adaptive-wrapper > .bx-wrapper > .bx-viewport > .js-carousel-adaptive > div.block > .image
+
+globusgurme.ru##.main-slider
 
 gocd.org##.top:style(position:static !important)
 
@@ -6862,6 +6885,8 @@ metro-cc.ru##.b-header-fixed_logo
 ! fixed sidebar
 metro-cc.ru##.is_stuck:style(position:static !important)
 ! other
+! compacting product list
+metro-cc.ru##.middle-line > .me-box-details
 
 mexonline.com$third-party
 
@@ -9936,6 +9961,14 @@ ustanovkaos.ru##.single.post > .title
 ustanovkaos.ru##.header
 
 utkonos.ru##.module_floating_header-cart.module_floating_header-tooltip
+utkonos.ru##.page_login_banner_route
+utkonos.ru##.module_login_special
+utkonos.ru##.page_widget_leaders-bestsellers.page_widget_leaders
+utkonos.ru##.page_widget_reviews
+utkonos.ru##.module_login_recipe
+utkonos.ru##.module_login_brands
+utkonos.ru##.module_login_subscription
+utkonos.ru##.page_login_subscription
 
 ! from RU Adlist
 ||uznatpochemu.ru^$third-party
@@ -10106,6 +10139,23 @@ vk-book.ru##.site-branding
 
 vkernel.ro###header
 vkernel.ro##.clasadiv
+
+! popups
+vkusvill.ru##.modal-layout
+vkusvill.ru##.modal
+vkusvill.ru##.modal-backdrop
+vkusvill.ru##.DeliveryAddressWhatsNew
+vkusvill.ru##.GeoSelectDropdown
+! banners
+vkusvill.ru##.MainSliderContainer
+vkusvill.ru##.Footer__teasers
+vkusvill.ru##.VVNewsMainBlock
+vkusvill.ru##.Header__subnavLinkDoverium
+! fixed top
+vkusvill.ru##body:style(overflow:auto !important)
+vkusvill.ru##.Header--sticky.fixed-top.Header:style(position:static !important)
+! other
+vkusvill.ru##.ProductCard__cartButton
 
 blog.vladios13.com##.ess-button--email
 blog.vladios13.com###respond
@@ -11027,30 +11077,4 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 ! is in EasyList and Fanboy's
 ##.addthis_inline_share_toolbox
-
-||fastpic.ru/*/b.php
-
-||city-denta.ru/*/logo-wide2.png
-city-denta.ru##.rev_slider_wrapper
-
-! DriverPack
-! is in Ru AdList. Ok, I don't like it too.
-drp.su
-
-! compacting product list
-metro-cc.ru##.middle-line > .me-box-details
-
-e1.ru###prinzip-adv
-
-! ugly pictures in warranty block on root
-globus.ru###warranty > .carousel-adaptive-wrapper > .bx-wrapper > .bx-viewport > .js-carousel-adaptive > div.block > .image
-
-utkonos.ru##.page_login_banner_route
-utkonos.ru##.module_login_special
-utkonos.ru##.page_widget_leaders-bestsellers.page_widget_leaders
-utkonos.ru##.page_widget_reviews
-utkonos.ru##.module_login_recipe
-utkonos.ru##.module_login_brands
-utkonos.ru##.module_login_subscription
-utkonos.ru##.page_login_subscription
 
