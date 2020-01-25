@@ -850,6 +850,9 @@ _pagespeed_beacon?
 ##[id*="Share"]:not(html):not(body):not(article)
 ! Too many exclusions. Disabled. 
 !~microsoft.com,~sketchup.com,~topsharepoint.com,~joom.com,~gfycat.com##[class*="share"]:not(html):not(body):not(article)
+    ##.icon-link-share
+    ##.icon-pinterest-share
+    ##.pinterest-share
     ! is in AdGuard, RU AdList, Fanboy's
     ##.share-button
     ##.share__icon
@@ -900,6 +903,7 @@ _pagespeed_beacon?
 ~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru##[class*="social"]:not(html):not(body):not(article)
     ##.footer-social
     ##.footer-social-wrap
+    ##.social-button
     ! is in AdGuard, RU AdList, Fanboy's
     ##.social-likes
     ##.social-likes__icon
