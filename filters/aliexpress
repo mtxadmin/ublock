@@ -1,0 +1,71 @@
+! Aliexpress related hosts and filters
+
+
+! aliexpress
+! history
+aliexpress.com##.buyer-activity-bit
+aliexpress.com###historyOuterBox
+aliexpress.com##.show-history
+aliexpress.com##.shopping-history
+! promotions
+promotion.aliexpress.com
+aliexpress.com##.festival-header
+aliexpress.com##.banner-big-sale
+aliexpress.com##.banner-big-sale-wrap
+! banner in empty shopping cart
+shoppingcart.aliexpress.com##.big-sale.empty-default
+! carousel sliders (only active)
+aliexpress.com##.prime-slideshow
+! cookies notice
+! is in AdGuard, Fanboy's, EasyList
+aliexpress.com##.aliexpress-notice
+aliexpress.com###j-aliexpress-notice
+! social login
+aliexpress.com##.flyout-signIn-type
+! fixed elements
+aliexpress.com##.float-image
+aliexpress.com##.fixed-header:style(position:static !important)
+aliexpress.com##.left-affix.next-affix:style(position:static !important)
+aliexpress.com##.detail-fixed-tab:style(position:static !important)
+aliexpress.com##.search-feedback-wrap
+aliexpress.com##.item-store-wrap > .store-name
+aliexpress.com##.channel-menu:style(position:static !important)
+aliexpress.com##.img-view-wrap > div:style(position:static !important; top:auto !important)
+aliexpress.com##.alime-avatar
+aliexpress.com###J_xiaomi_dialog:has-text(Need help?)
+aliexpress.com###J_xiaomi_dialog:has-text(Eva):has-text(Reason for order close)
+! hover icons on photos
+aliexpress.com##.atwl-btn-wrap
+! footer with seo links
+aliexpress.com##.cross-link
+! other
+! from uBlock filters
+aliexpress.com##body:style(overflow: auto !important; padding: 0 !important;)
+aliexpress.com##.mobile-discount-trigger
+aliexpress.com##.ng-mobile
+aliexpress.com##.site-footer
+aliexpress.com##.robot-wrapper
+aliexpress.com##.hm-left
+||i.alicdn.com/ae-header/*/buyer/front/rumall/src/img/tmall-slogan.gif$image
+||i.alicdn.com/ae-header/*/buyer/front/rumall/src/img/mall-slogan-2x.gif$image
+aliexpress.com###bigsale-notice
+aliexpress.com###j-multi-sidebar-outer
+aliexpress.com###j-price-extra-wrap
+shoppingcart.aliexpress.com###header-categories
+aliexpress.com##.p-payment-type
+aliexpress.com##.ui-balloon-lb.im-contact-tips.ui-balloon
+aliexpress.com##.category-menu:style(position:static !important)
+shoppingcart.aliexpress.com##.payment-cabinet
+aliexpress.com##.store-header-bg
+! from Ru AdList forum
+aliexpress.com##[data-role="enter-promotion"]
+aliexpress.com##.product-fix-sns
+aliexpress.com##.hot-products
+! ali url shorter which often used to steal cashback
+ali.pub
+! ali indirect cashback-stealing links
+##[href^="http://s.click.aliexpress.com/"]
+
+cmap.alibaba.com
+! from EasyPrivacy
+||alibaba.com/ts?
