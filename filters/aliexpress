@@ -76,7 +76,102 @@ cmap.alibaba.com
 ! from EasyPrivacy
 ||alibaba.com/ts?
 
-! sites stealing cashback
+
+!! unneeded hosts, tested for months
+
+local.alipcsec.com
+
+! don't block, it needed for sale.aliexpress.com and flashdeals
+! time-ae.akamaized.net/gettime
+
+! don't block: json return from ali paying
+!us.ynuf.alipay.com/service/um.json
+
+!/alilog/*
+!assets.alicdn.com/g/alilog/
+||alicdn.com/alilog/
+||alicdn.com/*/alilog/
+
+! /one-click-ticket/*
+||alicdn.com/one-click-ticket/*
+||alicdn.com/*/one-click-ticket/*
+||alicdn.com/one-click-coupon/*
+||alicdn.com/*/one-click-coupon/*
+
+!/retcode/*
+||alicdn.com/retcode/
+||alicdn.com/*/retcode/
+
+!/secdev/*
+!assets.alicdn.com/g/secdev/
+||alicdn.com/secdev/
+||alicdn.com/*/secdev/
+
+! don't block: "slide to login"
+!||alicdn.com/AWSC/*
+!||alicdn.com/*/AWSC/*
+!||alicdn.com/WebUMID/*
+!||alicdn.com/*/WebUMID/*
+!||alicdn.com/uab/
+!||alicdn.com/*/uab/
+
+! lighthouse.aliexpress.com/shopcart/buyer_pay_low_notice_ajax.htm
+lighthouse.aliexpress.com/buyer/user_prevention_loss_ajax.htm
+
+us.ynuf.alipay.com
+!gpsfront.aliexpress.com - it's related products, don't block!
+
+! sometimes needed
+!aliexpress.com##.in-store-more
+!aliexpress.com##.other-store-more
+
+aliexpress.com##.quick-access-title
+
+||aliexpress.com/statistics/
+||aliexpress.com/*/statistics/
+||aliyun.com/scratchCardSlide/
+||aliyun.com/*/scratchCardSlide/
+
+!gpsfront.aliexpress.com/getRecommendingResults.do
+||alicdn.com/wimg/monitor/*
+
+cloud.video.taobao.com
+ ! card
+is.alicdn.com
+ ! card
+cdp.aliexpress.com
+! DRM
+aeu.alicdn.com
+!aeu.alicdn.com/ctl/ctl.js
+||alicdn.com/*/ctl/ctl.js
+
+
+connectkeyword.aliexpress.com
+!/sufei/*
+||alicdn.com/sufei/
+||alicdn.com/*/sufei/
+/sufei-seed.js
+
+!cfus.aliyun.com
+
+!/pointman/*
+||alicdn.com/pointman/
+||alicdn.com/*/pointman/
+
+moduleanalysis.aliexpress.com
+us.cobra.aliexpress.com
+
+
+! Aliexpress banner
+yupoo.com$3p
+! Aliexpress cookie
+aliexpress.ru$3p
+tmall.ru$3p
+taobao.com$3p
+
+
+
+! Ali related sites stealing cashback
 ! from Peter Lowe’s Ad and tracking server list
 alipromo.com
 ! and their "ABP exclusion list" https://alipromo.com/cdn/abp/adblock.txt
