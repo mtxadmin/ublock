@@ -1,8 +1,6 @@
  [Нажмите сюда для русской версии](hosts_file_performance_ru.md)
 
-Regarding the impact on system performance of a large [hosts file](hosts_file_en.md).
-
-On the Internet there are some opinions that with a large hosts file the system can slow down. Is it true?
+On the Internet there are some opinions that with a large [hosts file](hosts_file_en.md) the system can slow down. Is it true?
 
 ### Android:
 I’ve been using huge hosts files since 2012, and I’m not aware of any performance issues on any available device — and they were then small and weak. Theoretically, some effect may be present, but practically the acceleration from blocking advertising and other parasitic requests far outweighs this effect, even if it exists.
