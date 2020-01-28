@@ -6,7 +6,7 @@
 
 - Android: Я использую огромные файлы hosts с 2012 года, и ни на одном доступном устройстве - а они тогда были маленькие и слабые - не замечал проблем с производительностью. Теоретически, некоторый эффект может наличествовать, но практически ускорение от блокировки рекламных и прочих паразитных запросов намного перекрывает этот эффект, даже если он есть.
 
-Автор hosts-файла MoaAB [подтверждает это](https://forum.xda-developers.com/showthread.php?t=1916098), хотя [замечает](https://forum.xda-developers.com/showpost.php?p=62564889&postcount=3313), что использование большого (7-8 МБ) hosts-файла вызывает потребление 30-50 МБ оперативной памяти:
+Автор hosts-файла MoaAB [подтверждает это](https://forum.xda-developers.com/showthread.php?t=1916098), хотя [замечает](https://forum.xda-developers.com/showpost.php?p=62564889&postcount=3313), что использование большого (7-8 МБ) hosts-файла вызывает потребление 30-50 МБ оперативной памяти, что является очень небольшой частью нагрузки системы:
 
 > ``>>>`` Performance Issue? Will my device run SLOW?<br>
 > I am using this 'hosts' file from my chilhood days and never had any performance issue to date, Although you might have a little delay in startup for few seconds (but you will not even notice) and then everything will be cool in standby and active mode. I say "Little delay is better than ADs, Malwares and Spywares..."
