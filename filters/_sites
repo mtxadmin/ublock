@@ -2985,6 +2985,7 @@ activedirectorypro.com##.awac
 
 adamtheautomator.com##.Fdo5jG2P
 adamtheautomator.com##.floating-active.floating-header
+adamtheautomator.com##blockquote:has-text(Check out my)
 
 forum.adguard.com###floatingNavigation
 forum.adguard.com###navigation:style(position:static !important)
@@ -3944,6 +3945,15 @@ bulgakovdom.ru##.show-filter
 burmistr.ru##.banner
 burmistr.ru##h2:has-text(задать вопросы можно)
 
+! top
+business2community.com##.message
+business2community.com###b2c-ribbon-logo
+business2community.com###logo-b2c
+business2community.com##.navbar-fixed-top:style(position:static !important)
+! site breaks copypaste
+business2community.com$inline-script
+business2community.com$script
+
 ! from AdGuard
 ||business-key.com/top/$third-party
 
@@ -4279,6 +4289,11 @@ cyberpost.co##.news-bar
 cyberyozh.com##.tools_item_btn
 cyberyozh.com##.footer_blocks
 cyberyozh.com##.canal-preview
+
+!dadata.ru
+||suggestions.dadata.ru/*/detectAddressByIp
+! bad: https://suggestions.dadata.ru/suggestions/api/4_1/rs/detectAddressByIp
+! good: https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address
 
 dakineshop.ru##.upper_head:style(position:static !important)
 dakineshop.ru###header-right
@@ -4748,6 +4763,10 @@ edugeek.net###notices
 
 edx.org##.stuck:style(position:static !important)
 edx.org###enroll-type-section
+
+! sticky panel
+eff.org##.faq-toc
+! other
 
 egrpzhkh.ru##.PhonePanelSticked
 
@@ -5756,6 +5775,12 @@ imagevenue.com##center:has-text(Next)
 
 ||imho.ws/images/custom/$image
 
+! top
+inc.com##.nav-logo
+inc.com##.header:style(position:static !important)
+! it blocking content when cookies disabled
+inc.com$script
+
 indiedev.name###nav-topbar.nav-container:style(position:static !important)
 indiedev.name###header:style(padding-top:0px !important)
 
@@ -6258,6 +6283,8 @@ koshcheev.ru###header-top
 kosmetika-proff.ru##.content_reviews
 kosmetika-proff.ru##.black-footer-paysystems
 kosmetika-proff.ru##.phone
+
+kostikov.co##.fixed-top:style(position:static !important)
 
 kotelock.ru##.main-block-parent:style(background-image:none !important)
 
@@ -7561,6 +7588,8 @@ nndv.ru###votesPanel
 
 noa-lit.ru##.logo_s
 noa-lit.ru##.navbar-fixed-top.navbar:style(position:static !important)
+
+sergey-s-betke.blogs.csm.nov.ru###cih
 
 novayagazeta.ru##div:matches-css(position:fixed)
 !social icons column
@@ -11369,37 +11398,14 @@ aquaphor.ru##+js(cookie-remover.js, sbjs)
 ! disabled because of straightforwardness of such countermeasure.
 ! it needs something different and general, for all sites
 
-!dadata.ru
-||suggestions.dadata.ru/*/detectAddressByIp
-! bad: https://suggestions.dadata.ru/suggestions/api/4_1/rs/detectAddressByIp
-! good: https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address
-
 ! from EasyList
 /jellyfish.webp$script
 
 ! from EasyPrivacy
 /imp.gif?
 
-! sticky panel
-eff.org##.faq-toc
-! other
-
 github.io###banner
-
-sergey-s-betke.blogs.csm.nov.ru###cih
-
-adamtheautomator.com##blockquote:has-text(Check out my)
 
 ! from EasyPrivacy
 /rendertimingpixel.
 
-kostikov.co##.fixed-top:style(position:static !important)
-
-! top
-business2community.com##.message
-business2community.com###b2c-ribbon-logo
-business2community.com###logo-b2c
-business2community.com##.navbar-fixed-top:style(position:static !important)
-! site breaks copypaste
-business2community.com$inline-script
-business2community.com$script
