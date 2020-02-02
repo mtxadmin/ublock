@@ -1,3 +1,8 @@
+! Yandex ad filters
+! 
+! (domains see in _marketing_yandex)
+
+
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 ! doesn't work
 !yandex.*,yastatic.net##+js(remove-attr.js, onclick|onmousedown )
@@ -33,6 +38,13 @@
 
 ! disable AdGuard exception
 @@/\/www.yandex.*\/search/$generichide,badfilter
+
+! from AdGuard and EasyList
+###yandex_ad
+! from Ru Adlist
+##div[id^="yandex_rtb"]
+! from EasyList
+##div[id^="yandex_ad"]
 
 ! chat
 ##.ya-chat-button
@@ -169,11 +181,6 @@ yastatic.net/s3/distribution/promo/
 ! answers
 yandex.*##.answer-form
 
-advertising.yandex.ru$important
-
-awaps.yandex.$important
-||yastatic.net/awaps-ad-sdk-js/
-
 market.yandex.ru##.n-carousel
 market.yandex.ru##.n-entrypoint-carousel__inner
 market.yandex.ru##.lg-cc_visible
@@ -198,6 +205,7 @@ market.yandex.ru##.main > noindex
 market.yandex.ru##.n-region-notification
 market.yandex.ru##.header2__logo
 market.yandex.ru##.n-w-tab__discount_icon
+market.yandex.ru##.widget-loader__paranja
 
 ! $third-party will not work, it loads in frame
 ||money.yandex.ru/quickpay/
@@ -217,15 +225,15 @@ zen.yandex.ru##.article-right-block__stick-wrapper:has-text(Понравилос
 ||zen.yandex.ru/api/v4/stats/
 ||zen.yandex.ru/widget-loader$important
 
-!||static-mon.yandex.net
+! from RU AdList, modified
 ||static-mon.yandex.net/static/main.js$important
+! and don't block it whole
+!||static-mon.yandex.net
 
 ||dialogs.s3.yandex.net/badges/$image
 
 ! disable any whitelists
 ||yandex.*/metrika/$third-party,important
-||metrika.yandex.ru$third-party,important
-||web-metrica.yandex.ru$third-party,important
 ||yandex.st/share/share.js$important
 ||yandex.st/swf/ad-sdk-module/$important
 ||yastatic.net/share/$important
@@ -253,14 +261,6 @@ yandex.ru##+js(set-constant.js, Math.random, trueFunc)
 ##.ya-taxi-widget__label
 ##.ya-taxi-widget__link
 ||yastatic.net/taxi-widget/
-
-http-check-headers.yandex.ru
-uptime-info.yandex.ru
-
-! from AdGuard
-banners.mobile.yandex.net
-! from AdGuard
-banners-slb.mobile.yandex.net
 
 ||yastatic.net/pcode/adfox/
 ||yastatic.net/pcode-native/loaders/
