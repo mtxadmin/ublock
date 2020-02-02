@@ -993,6 +993,8 @@ _pagespeed_beacon?
 ! from Fanboy's
 /instagram.svg
 /linkdin.svg
+! from RU AdList
+/livejournal.png$domain=~livejournal.com
 /logo-youtube.svg
 /mashsharer/*
     ! from AdGuard
@@ -1103,6 +1105,10 @@ _social_fb.
 ##a[href^="https://www.facebook.com/sharer.php"]
 ! from Fanboy's
 ##a[href*="facebook.com/sharer/sharer.php?"]
+! from RU AdList
+~livejournal.com##a[href^="http://www.livejournal.com/update.bml?subject="]
+! from RU AdList
+livejournal.com##[lj-widget-fb-page]
 ! from Fanboy's
 ##a[title="Youtube"]
 ! from Fanboy's
@@ -6600,43 +6606,183 @@ litres.ru##.last_viewed_arts
 liveexpert.ru##.applications-section
 liveexpert.ru##.online-wrapper
 
-livejournal.com##.b-singlepost-reactions
+!! livejournal.com: remake at 2020-02
+!
+!! discoverytimes promos below the post
 livejournal.com##.b-discoverytimes
 livejournal.com##.b-discoverytimes-state-random
 livejournal.com##.b-discoverytimes-state-branding
+! is in EasyList and AdGuard
+livejournal.com##.b-discoverytimes-wrapper
 livejournal.com##.discoverytimes-noiframe
-!livejournal.com##form
-livejournal.com##.js--controlstrip.s-header-extra
-!livejournal.com##.s-header-in
-livejournal.com##.j-adv-inner
-livejournal.com##.j-adv
-livejournal.com##.l-flatslide-scrolltop
-livejournal.com##.asset-name-hover
-livejournal.com##.powered-widget
-livejournal.com##.b-linkbar
-livejournal.com##.sidebar-friendstimes
-livejournal.com##.ContextualPopup
-livejournal.com##[href="http://www.calend.ru/"]
-livejournal.com##[href^="http://www.gismeteo.ru/"]
-livejournal.com##.top-boxes
+!
+!! promos
+livejournal.com##.telegram-userpromo
+! from RU AdList
+livejournal.com##.brand
+! from RU AdList, modified
+livejournal.com##.customtext-widget
+! from RU AdList, modified
+livejournal.com##.edwrap
+! from RU AdList, modified
+livejournal.com,varlamov.ru##.j-w-customtext
+! from RU AdList
+livejournal.com###ljlive
+! from RU AdList
+livejournal.com##div[lj-widget-promo]
+! from RU AdList
+livejournal.com##.s-ljvideo
+! from RU AdList
+livejournal.com##.stories__promo
+!
+!! banners
+! from AdGuard
+livejournal.com##.allbanners
+! from AdGuard
+livejournal.com##.allbanners-link
+! from EasyList
+livejournal.com##.b-adv
+! from RU AdList
+livejournal.com##.banner
+! from RU AdList
+livejournal.com##.banner_container
+! from AdGuard
+livejournal.com##.b-mainpage-banner
+! from AdGuard
+livejournal.com##.b-singlepost-afterpostbanner
+! from RU AdList
+livejournal.com##.cat-widget__adv-container
+! from RU AdList
+livejournal.com##.cat-widget__card-wrap--adv
+! from AdGuard
+livejournal.com##.cat-widget__card-wrap--promo
+! from RU AdList
+livejournal.com##.cat-widget__card-wrap--selfpromo
+! from RU AdList
+livejournal.com#?#div[class^="cat-widget"] > div[class*="cat-widget__card-wrap--"]:-abp-has([id*="native"])
+! from AdGuard
+livejournal.com##.common-banner
+! from AdGuard
+livejournal.com##.footer-banner-wrapper
+! from AdGuard
+livejournal.com##.lj-card--banner-context-first
+! from AdGuard
+livejournal.com##.lj-card--banner-context-second
+! from RU AdList
+livejournal.com##.post-card--selfpromo
+! from RU AdList, modified
+livejournal.com##a[class^="banne"]
+    !ibigdan.livejournal.com##a[class^="banne"]
+    !zloy-odessit.livejournal.com##a[class^="banne"][href][target="_blank"]
+! from RU AdList, modified
+livejournal.com##a[href*="epilas.ru"]
+! from RU AdList, modified
+livejournal.com##[class*="kupibilet"]
+! from RU AdList, modified
+livejournal.com##a[href*="offer"][target="_blank"]
+! from RU AdList
+livejournal.com##a[href^="http://gpsavto.com.ua/"][target="_self"]
+! from RU AdList
+livejournal.com##a[href^="http://kiwieducation.ru/"]
+! from RU AdList (and AdGuard slighly modified)
+||livejournal.com/img/reskining/
+! from RU AdList
+||livejournal.com/services/scrollbanner.bml?
+! from RU AdList
+||livejournal.ru/i/reskining/
+! from AdGuard
+||cssproxy.livejournal.com/?u=https%3A%2F%2Fwww.svyaznoy.travel
+!
+!! from specific users
+! from RU AdList
+||img-fotki.yandex.ru/get/*_orig|$image,domain=masterok.livejournal.com
+! from RU AdList
+||trello-attachments.s3.amazonaws.com$image,domain=puerrtto.livejournal.com
+! from AdGuard
+yurasumy.livejournal.com#?#.js-sidebar div:has(> div > a[target="_blank"] > img)
+! from AdGuard
+||ic.pics.livejournal.com/yanson/1803207/73881/73881_900.gif
+! from AdGuard
+zloy-odessit.livejournal.com##.typelist-widget
+! from AdGuard
+zloy-odessit.livejournal.com##.customtext-widget
+! from AdGuard
+sergeydolya.livejournal.com##.bf
+! from AdGuard
+aquatek-filips.livejournal.com,drugoi.livejournal.com##.block__sv
+! from AdGuard
+! cosso.ru is expired
+! miss-tramell.livejournal.com##a[href="http://cosso.ru/"]
+! from AdGuard
+odin-moy-den.livejournal.com##a[href="http://www.facebook.com/hochudomvispanii"]
+! from AdGuard
+prostitutka-ket.livejournal.com,sergeydolya.livejournal.com##dl[class="sidebar-block sidebar-custom"]
+! from RU AdList
+rarog.livejournal.com###lenta-top > .entryunit--feedpromo
+!
+!! backgrounds
+! from RU AdList
+livejournal.com##body:not(#id):style(background-image: none !important)
+! from RU AdList
+livejournal.com##html:not(#id):style(background-image: none !important)
+!
+!! other
+! is in EasyList and Fanboy's
+livejournal.com##.b-fader
+! from RU AdList
+livejournal.com##.popup-suggestion
+! from RU AdList
+livejournal.com##+js(set-constant, Object.prototype.Autocontext, undefined)
+! gif smilies
+||livejournal.com/img/mood/$image,important
 ! from EasyPrivacy
 ||livejournal.com/ljcounter/
-! annoying userpics
-||l-userpic.livejournal.com/128154240/9744366
-! there are some tracking pixels there. But after blocking there are (artifical?) problems with photos
-!||livejournal.com$image
-! exlusions: icons
-@@||www.livejournal.com/img/$image
-! exlusions: userpics
-@@||l-userpic.livejournal.com/$image
-! from RU AdBlock
-||livejournal.com^*&callback=*=$script,domain=livejournal.com
-! don't block! comments are not loaded...
-!||naydex.net$script
-! beacon? comments are ok
-||livejournal.com$script
-! don't block! comments are ok, but they don't expand
-!||livejournal.com$xhr
+! from RU AdList
+||livejournal.com^*/pagestats/
+! from RU AdList
+liveinternet.ru,livejournal.com##[id*="_R-A-"]
+!
+!! some old filters, they don't break anything, but need to be rechecked
+!livejournal.com##.j-adv-inner
+!livejournal.com##.j-adv
+!livejournal.com##.l-flatslide-scrolltop
+!livejournal.com##.asset-name-hover
+!livejournal.com##.powered-widget
+!livejournal.com##.b-singlepost-reactions
+!livejournal.com##.js--controlstrip.s-header-extra
+!livejournal.com##.sidebar-friendstimes
+!livejournal.com##.ContextualPopup
+!livejournal.com##[href="http://www.calend.ru/"]
+!livejournal.com##[href^="http://www.gismeteo.ru/"]
+!livejournal.com##.top-boxes
+    ! images:
+    ! there are some tracking pixels there. But after blocking there are (artifical?) problems with photos
+    !||livejournal.com$image
+    ! exlusions: icons
+    !@@||www.livejournal.com/img/$image
+    ! exlusions: userpics
+    !@@||l-userpic.livejournal.com/$image
+    !
+    ! scripts:
+    ! from EasyList and RU AdList
+    ||livejournal.com^*&callback=*=$script,domain=livejournal.com
+    ! from RU AdList
+    ||livejournal.com^*&callback=*saveFeed$script,domain=livejournal.com
+    ! beacon? comments are ok
+    !||livejournal.com$script - don't block it that way, upper variant is better
+    ! don't block! comments are not loaded...
+    !||naydex.net$script
+    !
+    ! other:
+    ! don't block! comments are ok, but they don't expand
+    !||livejournal.com$xhr
+    ! don't block! styles are broken
+    ! naydex.net$css
+    !livejournal.com##.b-linkbar - don't block, control icons may be useful
+    !livejournal.com##.s-header-in - don't block, header may be useful
+    ! no useful effect
+    !||l-stat.livejournal.net$frame
+! end of livejournal.com
 
 web-push.test.loccitane.com
 loccitane.com##.o-header--overlay:style(position:static !important)
@@ -10279,6 +10425,10 @@ varlamov.ru##.j-e-afternews
 varlamov.ru##.j-prevnext-item
 varlamov.ru##.j-w-about-title
 varlamov.ru##.j-w-about-design
+! from RU AdList, modified (a copy, see livejournal.com)
+!livejournal.com,varlamov.ru##.j-w-customtext
+! from AdGuard
+varlamov.ru##iframe[src^="http://varlamovpodarki.livejournal.com/"]
 
 ||vbalashihe.ru/images/znachok18.png
 vbalashihe.ru##.Prokrutra
