@@ -3,6 +3,8 @@
 !! banners
 ! generalized
 ~cnn.com##[class$="-ad"]:not(html):not(body):not(article)
+    ! from EasyList
+    !##.text-ad
 ##[id$="-ad"]:not(html):not(body):not(article)
 ~opensubtitles.org,~dkc7dev.com##[class$="_ad"]:not(html):not(body):not(article)
 ##[id$="_ad"]:not(html):not(body):not(article)
@@ -13,7 +15,7 @@
 ~360cities.net##[class^="ad_"]:not(html):not(body):not(article)
 ~cnn.com##[id^="ad_"]:not(html):not(body):not(article)
     ! from EasyList
-    ##div[id^="ad_rect_"]
+    !##div[id^="ad_rect_"]
 ~cnn.com,~ferra.ru##[class^="ad-"]:not(html):not(body):not(article)
 ##[id^="ad-"]:not(html):not(body):not(article)
 ~cnn.com,~dirteam.com##[class*="-ad-"]:not(html):not(body):not(article)
@@ -83,13 +85,18 @@ log.adsence.co.kr
 ##[id*="paywall"]:not(html):not(body):not(article)
 ##[class*="Promo"]:not(html):not(body):not(article)
 ##[id*="Promo"]:not(html):not(body):not(article)
-~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru##[class*="promo"]:not(html):not(body):not(article)
+! too many exclusions
+!~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru##[class*="promo"]:not(html):not(body):not(article)
 ##[id*="promo"]:not(html):not(body):not(article)
 ##[class*="reklam"]:not(html):not(body):not(article)
 ##[id*="reklam"]:not(html):not(body):not(article)
+    ! from EasyList
+    !##.reklama
 ##[class*="Sponsor"]:not(html):not(body):not(article)
 ##[id*="Sponsor"]:not(html):not(body):not(article)
 ##[class*="sponsor"]:not(html):not(body):not(article)
+    ! from EasyList
+    !##.sponsoredlinks
 ##[id*="sponsor"]:not(html):not(body):not(article)
 ##[class^="WNAd"]:not(html):not(body):not(article)
 ##[id^="WNAd"]:not(html):not(body):not(article)
@@ -423,6 +430,8 @@ _468x60.$important
 ###ad728x90
 ##.adaptive-banner
 ##.adaptive-banner-community
+! from EasyList
+##.adbanner
 ##.adb-def
 ###adBlockMessaging
 ###adbns
@@ -450,6 +459,8 @@ _468x60.$important
 ###Ad_Top
 ###adultCoverWarning
 ##.adv
+! from Ru Adlist
+##.advblock
 ##.adv-box-right
 ##.advBrand
 ##.adv-contacts
@@ -466,11 +477,15 @@ _468x60.$important
 ###alert
 ##.alert-announcement
 ##.announcement
+! from EasyList
+##.b-adv
 ###ban240x400
 ##.baner
 ##.baner_top
 ##.banner
 ##.banner305x245
+! from EasyList
+##.bannerad
 ###banner-advert-container
 ###banner-container
 ##.banner-link
@@ -485,6 +500,8 @@ _468x60.$important
 ##.banner-text
 ##.banner-top-content
 ##.banner-top-wrapper
+! from AdGuard and Ru Adlist
+##.b-banner
 ##.b-content__section_teasers
 ##.bets-online
 ##.b-direct
@@ -562,6 +579,8 @@ _468x60.$important
 ###offer
 ###offerBlock
 ##.online-consultant-info-bar
+! from EasyList
+##.pagead
 ###paypal_donations
 ###paypal_donations-2
 ###paypal_donations-3
@@ -572,6 +591,10 @@ _468x60.$important
 ##.photo__action
 ! from EasyList
 ##.plainAd
+! from EasyList
+##.pub_300x250m
+! from EasyList
+##.pub_728x90
 ##.recov-adlabel
 ###register-banner
 ###rotator
@@ -579,6 +602,8 @@ _468x60.$important
 ##.sb-banner
 ##.SC_TBlock
 ##.SearchSegments__directSnippet
+! from EasyList
+##.sideads
 ##.side-banner
 ##.sidebar__banner
 ##.sidebar-banner
@@ -928,6 +953,10 @@ _pagespeed_beacon?
     ##.social-links
     ! from Fanboy's
     ##.social-tooltip
+    ! from EasyList and Fandoy's
+    ##.s-social
+    ! from EasyList and Fandoy's
+    ##.s-social-item
 ##[id*="social"]:not(html):not(body):not(article)
 ##[class*="Sociaux"]:not(html):not(body):not(article)
 ##[id*="Sociaux"]:not(html):not(body):not(article)
@@ -945,6 +974,8 @@ _pagespeed_beacon?
 ~vk.com##[id$="-vk"]:not(html):not(body):not(article)
 ##[class*="zocial"]:not(html):not(body):not(article)
 ##[id*="zocial"]:not(html):not(body):not(article)
+! from EasyList and Fandoy's
+##[title^="Follow us on "]
 ! other
 ##.td-post-sharing
 ##.td-post-sharing-bottom
@@ -2555,6 +2586,7 @@ tarif-24.ru##.mh-ticker-bottom
     ! ||teplokrepost.ru/wp-content/themes/templateadapt/img/logotitle.png
 /logotipe.png    
 /logotype.svg
+/logo_white.png
 /logo-white.svg
 /site_logo.gif
     ! PhpBB: /forum/styles/subsilver2/imageset/site_logo.gif
@@ -11540,8 +11572,6 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ! from EasyList and Fanboy's
 /no-right-click.$script
 
-market.yandex.ru##.widget-loader__paranja
-
 ! from EasyPrivacy
 /autotrack.carbon.js
 
@@ -11574,6 +11604,3 @@ github.io###banner
 ! ad scripts of ostrovok.ru
 worldota.net$script
 ! cnt.worldota.net/ads.js
-
-/logo_white.png
-
