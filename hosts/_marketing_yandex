@@ -23,13 +23,22 @@ adfox.yandex.ru
 ! from RU AdList, modified
 ##a[href*="//ads.adfox.ru/"]
 
+advertising.yandex.ru$important
+
 an.yandex.ru$important
 
 analytics.mobile.yandex.net$important
+analytics1.yandex-webmaster.com$important
 analytics2.yandex-webmaster.com$important
+
+! from AdGuard
+banners.mobile.yandex.net
+! from AdGuard
+banners-slb.mobile.yandex.net
 
 !! metrics
 
+appmetrica.yandex.$important
 appmetrica.yandex.net$important
 appmetrica.yandex.com$important
 !+  api.appmetrica.yandex.com
@@ -37,15 +46,25 @@ appmetrica.yandex.com$important
 appmetrica.yandex.ru$important
 !+  api.appmetrica.yandex.ru
 !+  redirect.appmetrica.yandex.ru
-appmetrika.yandex.net
-appmetrika.yandex.com
-appmetrika.yandex.ru
+appmetrika.yandex.$important
+appmetrika.yandex.net$important
+appmetrika.yandex.com$important
+appmetrika.yandex.ru$important
 ! end of appmetrica.yandex
 
 api-metrica.yandex.ru
 web-metrica.yandex.ru
 
-awaps.yandex.ru$important
+awaps.yandex.$important
+    ||awaps.yandex.by$important
+    ||awaps.yandex.com$important
+    ||awaps.yandex.com.tr$important
+    ||awaps.yandex.com.ua$important
+    ||awaps.yandex.kz$important
+    ||awaps.yandex.net$important
+    ||awaps.yandex.ru$important
+    ||awaps.yandex.ua$important
+||yastatic.net/awaps-ad-sdk-js/
 
 bs.yandex.ru$important
 
@@ -77,21 +96,35 @@ clck.yandex.ua
 
 informer.yandex.ru$important,third-party
 
-! metrika yandex hosts from https://hosts-file.net/ad_servers.txt
-metrica.yandex.by
-metrica.yandex.com
-metrica.yandex.com.tr
-metrica.yandex.com.ua
-metrica.yandex.kz
-metrica.yandex.ru
-metrica.yandex.ua
-metrika.yandex.by
-metrika.yandex.com
-metrika.yandex.com.tr
-metrika.yandex.com.ua
-metrika.yandex.kz
-metrika.yandex.ru
-metrika.yandex.ua
+! metrika yandex hosts mostly from https://hosts-file.net/ad_servers.txt
+! disable any whitelists
+||metrica.yandex.*$third-party,important
+    ||metrica.yandex.by$third-party,important
+    ||metrica.yandex.com$third-party,important
+    ||metrica.yandex.com.tr$third-party,important
+    ||metrica.yandex.com.ua$third-party,important
+    ||metrica.yandex.kz$third-party,important
+    ||metrica.yandex.net$third-party,important
+    ||metrica.yandex.ru$third-party,important
+    ||metrica.yandex.ua$third-party,important
+||metrika.yandex.$third-party,important    
+    ||metrika.yandex.by$third-party,important
+    ||metrika.yandex.com$third-party,important
+    ||metrika.yandex.com.tr$third-party,important
+    ||metrika.yandex.com.ua$third-party,important
+    ||metrika.yandex.kz$third-party,important
+    ||metrika.yandex.net$third-party,important
+    ||metrika.yandex.ru$third-party,important
+    ||metrika.yandex.ua$third-party,important
+||web-metrica.yandex.*$third-party,important
+    ||web-metrica.yandex.by$third-party,important
+    ||web-metrica.yandex.com$third-party,important
+    ||web-metrica.yandex.com.tr$third-party,important
+    ||web-metrica.yandex.com.ua$third-party,important
+    ||web-metrica.yandex.kz$third-party,important
+    ||web-metrica.yandex.net$third-party,important
+    ||web-metrica.yandex.ru$third-party,important
+    ||web-metrica.yandex.ua$third-party,important
 
 ! mobile telemetry
 api.browser.yandex.ru
@@ -110,21 +143,21 @@ jstracer.yandex.ru$important
 !strm.yandex.ru$important --video, don't block
 
 ! "updater"
-browser-updater.yandex.net
-yastatic.net/browser-updater/
+browser-updater.yandex.net$third-party,important
+||yastatic.net/browser-updater/$third-party,important
 
 ! other
 kiks.yandex.ru
 z5h64q92x9.net
 !+  pssp.z5h64q92x9.net
 !+      mobile.pssp.z5h64q92x9.net
+! end of z5h64q92x9.net
 ad-constructor.yandex.ru
 adsdk.yandex.ru
+http-check-headers.yandex.ru
+uptime-info.yandex.ru
 
 
 !! todo
 
-analytics1.yandex-webmaster.com
 
-! from RU AdList
-||static-mon.yandex.net/static/main.js
