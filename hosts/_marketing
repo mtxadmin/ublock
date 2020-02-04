@@ -1,7 +1,13 @@
-﻿! _marketing     : Only compacted list of root domains, for uBlock origin etc
-! _marketing_all : Full list of subdomains, for autogenerating host files etc
-! (Process is not completed yet, still in progress)
-! todo: find and remove duplicates
+﻿! List of marketing-related domains. All of them, which were not transferred to more specified sublists
+
+
+! _marketing : 
+!     Only compacted list of root domains, for uBlock Origin or Nano Adblocker
+! subdomains/_marketing_all : 
+!     List of subdomains for technical needs only
+
+! subdomains/*_all are not included in rules, they are needed for autogenerating hostfile.
+
 
 
 !! counter subdomains
