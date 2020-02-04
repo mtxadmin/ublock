@@ -8211,7 +8211,30 @@ picclock.ru###footer
 
 pic-money.ru###left
 
+! pikabu.ru
+! К сожалению, Пикабу перегрузили финтифлюшками и скриптами, и оно подтормаживает на обработке общих косметических правил. 
+! Сделаем исключение и повторим применимые общие правила конкретно на сайт
+@@||pikabu.ru^$generichide
+! from AdGuard
+pikabu.ru##div[id^="adfox_"]
+pikabu.ru##div[id^=crt-]
+! sidebar is full of fintiflushek
+pikabu.ru##.social-icon
 pikabu.ru##.sidebar-block__content_links
+pikabu.ru##.sidebar-block-links
+pikabu.ru##.sidebar-block-links__apps
+pikabu.ru##.vk_groups
+pikabu.ru##.sidebar__inner_fixed:style(position:static !important)
+! from RU AdList
+pikabu.ru##.footer__inner:style(background-color: var(--color--app__bg) !important; color: var(--color--app__text) !important)
+! from RU AdList
+pikabu.ru##.app > .app__inner[style*="padding-top"]:style(padding-top: 64px !important)
+! from RU AdList
+pikabu.ru##.footer:style(height: auto !important)
+! from RU AdList and AdGuard
+pikabu.ru##.sidebar-block_placeholder
+! from RU AdList
+pikabu.ru##.stories-feed__message:has(:scope > .widget-container)
 ! bottom sticky icon
 pikabu.ru##.theme-picker
 ! header changed, now it is not sticky
@@ -8221,9 +8244,11 @@ pikabu.ru##.page-story > section
 ! unstick mobile sticky header
 pikabu.ru###right_container:style(position:absolute !important)
 ! cookie pictures
+pikabu.ru##.logo
 pikabu.ru###brov
 pikabu.ru###myflash
-! picures below the menu
+pikabu.ru##.footer__cookie
+! pictures below the menu
 pikabu.ru##:root::after:style(background-image:none !important)
 pikabu.ru##.header__main::after:style(background-image:none !important)
 ! other
@@ -8258,6 +8283,7 @@ pikabu.ru##.stories-feed__container > section:has-text(Создать свою �
 ! ad articles
 pikabu.ru##.section-group:has(p > a[href^="https://pikabu.ru/page/interview/"])
 ! other
+||pikabu.ru/ajax/stories_actions.php
 
 piluli.ru##.fixed-header:style(position:static !important)
 piluli.ru##.icon
