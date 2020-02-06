@@ -3696,6 +3696,8 @@ boingboing.net##.widget_stackcommerce_widget
 
 bolshoyvopros.ru##.footer_buttons
 
+booking.com##.header-signin-prompt
+
 ! disable exclusion in Fanboy's
 @@*$generichide,domain=boredpanda.com,badfilter
 ||boredpanda.com/*/header-panda-new.svg
@@ -4186,6 +4188,8 @@ coursehero.com##.bdp_studentTestimonial_content
 coursehero.com##.bdp_section_container
 coursehero.com##.ch-trust-seals_wrapper
 coursehero.com##.bdp_viewDoc_action
+! is in EasyPrivacy
+||coursehero.com/v1/data-tracking
 
 crozdesk.com$third-party
 
@@ -4549,6 +4553,8 @@ dostupnaya-strana.ru##[src*="userfiles/баннеры/"]
 
 ! money for nothing
 market.dota2.net$3p
+
+dou.ua###max-header-adv-id
 
 downloadly.win##.herald-responsive-header:style(position:static !important)
 
@@ -5099,6 +5105,8 @@ freeproxy.ru##[src="/images/vpn/hmn_ru.png"]
 
 ||fresher.ru/widget/
 
+frickelsoft.net##body:style(background-color:white !important)
+
 blog.f-secure.com##.b-page-content--offset:style(padding-top:0px !important)
 
 ! g2.com
@@ -5240,6 +5248,7 @@ github.com##.js-notice.intro-shelf
 
 github.io##.article-author-side
 github.io##article.post:style(margin-left:40px !important)
+github.io###banner
 
 gitlab.com##.sticky:style(position:static !important)
 
@@ -5347,6 +5356,8 @@ gosuslugi.ru###arrow
 
 gpo-planet.com###respond
 gpo-planet.com###headimg
+
+gpsavto.com.ua###banner
 
 gps-forum.ru##.headerbar
 
@@ -5904,6 +5915,8 @@ it-lite.ru##.rental-benefit-bottom-block
 it-lite.ru##.landing-button
 
 ||itnan.ru/madrobots.png$image
+
+itnotes.org.ua##.custom-header
 
 itproguru.com##.site-description
 ||itproguru.com/team/danstolts/livetiles-v-danstolts.htm$subdocument
@@ -6507,6 +6520,8 @@ lingust.ru###header-graphic
 linux.org.ru##.userpic
 linux.org.ru##.fav-buttons
 
+||linuxquestions.org/questions/images/LinuxQuestions.png
+
 ||litmir.me/img/logo_litmir.png
 litmir.me###scrollingDiv
 
@@ -7091,6 +7106,7 @@ medtehno.ru##.bonus_text
 medtehno.ru###composite_header_contacts.header_contacts
 
 meduza.io##.MaterialPanel-sticked.MaterialPanel-root
+meduza.io##.Header-logo
 
 meduzza.ru###topMiniBasket
 meduzza.ru##.js__city-check.city-check
@@ -8554,6 +8570,13 @@ qna.center##.navbar-fixed-top:style(position:static !important)
 qna.center##.maw100
 
 questarter.com##.navbar-fixed-top:style(position: absolute !important)
+
+quizlet.com##div.SetPageTerms-embeddedDesktopAdWrapper
+quizlet.com##.AdHeading
+quizlet.com##.SiteAd
+quizlet.com##.StickyAdz
+quizlet.com##.SetPage-inferiorAdz.SetPage-adz
+quizlet.com##.SetPage-adzWrapper
 
 rabota.ru##.location-tooltip
 
@@ -10457,6 +10480,9 @@ vgtimes.ru##.handle
 videocardbenchmark.net###sidebar
 videocardbenchmark.net###blocker
 
+vikent.ru##.vikent-panel
+||vikent.ru/images/background-v3.jpg
+
 vinylko.ru##.b-product-groups-gallery__counter-wrap
 
 viptolstobokov.ru##.pic
@@ -10502,6 +10528,9 @@ vitra-online.ru##.b-drop-phones__toggle-holder
 viva.ua##.header-breaking
 viva.ua##.header-bottom
 viva.ua##.header-top
+
+||vivaldi.net/*/chevron-left.svg
+||vivaldi.net/*/chevron-right.svg
 
 vizhivai.com###showcase-height
 vizhivai.com##.link-email
@@ -11499,9 +11528,6 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ! is in EasyList and Fanboy's
 ##.footer-social-link
 
-||vivaldi.net/*/chevron-left.svg
-||vivaldi.net/*/chevron-right.svg
-
 ! from EasyList: blocking detection of standard AdBlock subscriptions (very impressive! although it needs cookies)
 !||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
 ! disabled because of straightforwardness of such countermeasure.
@@ -11513,23 +11539,12 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ! from EasyPrivacy
 /imp.gif?
 
-github.io###banner
-
 ! from EasyPrivacy
 /rendertimingpixel.
 
 ! ad scripts of ostrovok.ru
 worldota.net$script
 ! cnt.worldota.net/ads.js
-
-||leroymerlin.ru/api/tracker
-
-vikent.ru##.vikent-panel
-||vikent.ru/images/background-v3.jpg
-
-booking.com##.header-signin-prompt
-
-gpsavto.com.ua###banner
 
 ! from Fanboy's
 /cdn-cgi/apps/head/*$1p,script
@@ -11549,25 +11564,9 @@ groenlandselskab.dk$script,3p
 ! from Fanboy's
 ||printfriendly.com^$script,3p
 
-frickelsoft.net##body:style(background-color:white !important)
-
-itnotes.org.ua##.custom-header
-
-dou.ua###max-header-adv-id
-
-meduza.io##.Header-logo
-
-||linuxquestions.org/questions/images/LinuxQuestions.png
-
-! is in EasyPrivacy
-||coursehero.com/v1/data-tracking
-
 ! from EasyPrivacy
 /event_logger
 
-quizlet.com##div.SetPageTerms-embeddedDesktopAdWrapper
-quizlet.com##.AdHeading
-quizlet.com##.SiteAd
-quizlet.com##.StickyAdz
-quizlet.com##.SetPage-inferiorAdz.SetPage-adz
-quizlet.com##.SetPage-adzWrapper
+! from RU AdList
+||avito.ru^*/dfp/px.js
+
