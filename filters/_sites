@@ -740,14 +740,30 @@ _pagespeed_beacon?
     ##.pswp__button--share
     ! is in AdGuard, RU AdList, Fanboy's
     ##.share-button
+    ! from Fanboy's
+    ##.share-email
+    ! is in 3 lists
+    ##.share-facebook
     ##.share__icon
-    ! is in Fanboy's, RU AdList
-    ###sharelist
+    ! from AdGuard and Fanboy's
+    ##.share-icon
+    ! is in 3 lists
+    ##.share-linkedin
+    ! is in 3 lists
+    ##.share-pinterest
+    ! is in 3 lists
+    ##.share-reddit
+    ! from Fanboy's
+    ##.share-service-visible
+    ! from Fanboy's
+    ##.share-tumblr
     ! is in AdGuard, RU AdList, Fanboy's
     ##.sidebar-share
     ! from AdGuard & Fanboy's
     ##.ytp-share-button
 ~host.io,~vesti.ru##[id*="share"]:not(html):not(body):not(article)
+    ! is in Fanboy's, RU AdList
+    !###sharelist
 ##[class*="Sharing"]:not(html):not(body):not(article)
 ##[id*="Sharing"]:not(html):not(body):not(article)
 ##[class*="sharing"]:not(html):not(body):not(article)
