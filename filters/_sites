@@ -7816,6 +7816,10 @@ orto-s.ru##.tel
 os-helper.ru##.group.sidebar-top
 
 osp.ru##noindex:has-text(Поделитесь материалом с коллегами)
+osp.ru##.article-full > p:has-text(Поделитесь материалом с)
+! from AdGuard
+!osp.ru##.article-full > p:has-text(Поделитесь)
+!
 osp.ru##.pdf-link
 ! unfix header
 osp.ru##.fixed-wrapper:style(position:absolute !important)
@@ -7823,12 +7827,17 @@ osp.ru##body:style(padding-top:60px !important)
 ||email.osp.ru/site2/news_daily$subdocument
 ! right banblock
 osp.ru##.panel-body
-||osp.ru//sites/osp/images/img/GP01.png$image
-||osp.ru/sites/osp/images/img/AS01.png$image
+||osp.ru//sites/osp/images/img/GP01.png
+||osp.ru/sites/osp/images/img/AS01.png
 osp.ru##.sb-links-list1
-osp.ru##.article-full > p:has-text(Поделитесь материалом с)
 ! is in AdGuard
 ||email.osp.ru/view_webform_*.js
+! from AdGuard
+osp.ru##.likes-block
+! from AdGuard
+osp.ru##.marketing-vertical
+! from AdGuard
+osp.ru##.right-column > div.panel:has(:scope > div.panel-body > script[src^="https://email.osp.ru/"])
 
 osradar.com##.td-affix:style(position:static !important)
 osradar.com##.td-header-menu-wrap:style(position:static !important)
