@@ -738,6 +738,8 @@ _pagespeed_beacon?
     ##.pinterest-share
     ! from Fanboy's
     ##.pswp__button--share
+    ! in 3 lists
+    ##.share-block
     ! is in AdGuard, RU AdList, Fanboy's
     ##.share-button
     ! from Fanboy's
@@ -753,6 +755,8 @@ _pagespeed_beacon?
     ##.share-linkedin
     ! from Fanboy's
     ##.share-menu
+    ! from AdGuard
+    ##:not(.sharingOptionsGroup) > .share-menu
     ! is in 3 lists
     ##.share-pinterest
     ! is in 3 lists
@@ -766,6 +770,8 @@ _pagespeed_beacon?
     ! from AdGuard & Fanboy's
     ##.ytp-share-button
 ~host.io,~vesti.ru##[id*="share"]:not(html):not(body):not(article)
+    ! is in AdGuard and Fanboy's
+    ###share-block
     ! is in Fanboy's, RU AdList
     !###sharelist
 ##[class*="Sharing"]:not(html):not(body):not(article)
