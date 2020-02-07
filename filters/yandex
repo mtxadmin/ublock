@@ -241,8 +241,10 @@ zen.yandex.ru##.article-right-block__stick-wrapper:has-text(Понравилос
 ! disable exception from RUS: AdGuard Russian filter 
 @@/\/yandex.*\/search/$generichide,badfilter
 
-! from Ru Adlist
-yandex.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^discussion$/)
+! from RU AdList
+yandex.ru##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
+! from RU AdList, earlier
+!yandex.ru##+js(cookie-remover, /^blcrm|^bltsr|^discussion$/)
 ! from Ru Adlist
 yandex.ru##+js(set-constant.js, Math.random, trueFunc)
 
