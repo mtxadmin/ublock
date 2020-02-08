@@ -3004,6 +3004,8 @@ aksessuary-vanna.ru##.nav-fixed
 
 akvis.ru##.fixed-panel
 
+alexa.com$third-party
+
 alexandreviot.net###masthead-wrap
 
 alexell.ru###header
@@ -6587,6 +6589,12 @@ lingust.ru###commun
 lingust.ru##noindex
 lingust.ru###header-graphic
 
+linkedin.com##.show.sign-in-card
+! linkedin scripts on third sites
+licdn.com$domain=~linkedin.com
+! from hpHosts’ Ad and tracking servers
+platform.linkedin.com
+
 linux.org.ru##.userpic
 linux.org.ru##.fav-buttons
 
@@ -9430,7 +9438,7 @@ schneier.com###header
 shop4toys.ru##.fixed-panel
 
 ! https://xakep.ru/2019/08/27/click-interception/
-shopify.com$third-party,domain=~gear.duolingo.com|~thepihut.com
+shopify.com$third-party,script,important,domain=~gear.duolingo.com|~thepihut.com
 
 shopolog.ru##.b-header__fixed:style(position:static !important)
 shopolog.ru##.b-catalog:has-text(Подписаться)
@@ -11823,4 +11831,3 @@ groenlandselskab.dk$script,3p
 
 /_Incapsula_Resource
 
-alexa.com$third-party
