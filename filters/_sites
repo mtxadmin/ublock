@@ -9441,9 +9441,33 @@ schneier.com###header
 shop4toys.ru##.fixed-panel
 
 ! https://xakep.ru/2019/08/27/click-interception/
-shopify.com$third-party,script,important,domain=~gear.duolingo.com|~thepihut.com
+! this rule is way too hard. It breaks many shopify-fueled shops :-(
+!shopify.com$third-party,script,important,domain=~gear.duolingo.com|~thepihut.com
+!
+! from EasyPrivacy
+||shopify.com/*/page?*&eventType=
+! from EasyPrivacy
+||shopify.com/s/javascripts/tricorder/$script
+||shopify.com/*/tricorder/$important
+! from EasyPrivacy
+||shopify.com/track.js
+||shopify.com/*/shop_events_listener
+!
+! from EnergizedProtection
+analytics.shopify.com
+! from MVPS HOSTS file
+s.shopify.com$important
+    ! from AdGuard
+    !||s.shopify.com/visit/record.gif?
+! is in AdGuard and EasyPricacy
+stats.shopify.com$important
 ! is in AdGuard and EasyPricacy
 v.shopify.com$important
+!
+! from EasyPrivacy
+/shopify-boomerang-$important
+! is in AdGuard and EasyPricacy
+/shopify_stats.js$important
 
 shopolog.ru##.b-header__fixed:style(position:static !important)
 shopolog.ru##.b-catalog:has-text(Подписаться)
