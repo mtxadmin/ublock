@@ -12207,3 +12207,9 @@ techstronghold.com##.widget-Author
 
 ! google captcha logos
 ||gstatic.com/recaptcha/api2/logo$image
+
+! coursehero.com blocks viewing for not logged in users. Let's block that site too.
+coursehero.com
+    !coursehero.com##.out-of-views-cta
+    !coursehero.com##.blocker-wrapper
+    !||coursehero.com/doc-asset/blur/*$image
