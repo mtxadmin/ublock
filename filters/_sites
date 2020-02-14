@@ -4170,6 +4170,9 @@ cnn.com###breaking-news
 ! from EasyPrivacy
 ||cnn.com/analytics/
 
+||comnews.ru/img/1/loader.gif
+comnews.ru###last-comments
+
 computerinfo.ru###one
 computerinfo.ru###masthead
 
@@ -4268,6 +4271,13 @@ coursehero.com##.ch-trust-seals_wrapper
 coursehero.com##.bdp_viewDoc_action
 ! is in EasyPrivacy
 ||coursehero.com/v1/data-tracking
+! coursehero.com blocks viewing for not logged in users. Let's block that site too.
+coursehero.com
+    !coursehero.com##.out-of-views-cta
+    !coursehero.com##.blocker-wrapper
+    !||coursehero.com/doc-asset/blur/*$image
+
+crb-otradnoe.ru##.footer-logo
 
 crozdesk.com$third-party
 
@@ -5762,6 +5772,14 @@ hyperhost.ua##.poll-go
 ibm.com##.cm-pill
 ibm.com###cm-proactive-popup
 ibm.com##[id^=upsell-]
+! from Web Annoyances Ultralist
+ibm.com###ibm-masthead, .ibm-sitenav-menu-container:style(position: relative !important; top: 0 !important; transform: translate3d(0,0,0) !important;)
+! from Web Annoyances Ultralist
+ibm.com##.ibm-masthead-sticky.ibm-masthead-sticky-showing.ibm-sitenav-menu, .ibm-sitenav-menu-sticky, .ibm-sitenav-menu-container:style(margin-top: 0 !important;)
+! from Web Annoyances Ultralist
+ibm.com##.ibm-chevron-up-link.ibm-nospacing
+! from Web Annoyances Ultralist
+ibm.com##.ibm-mhplaceholder
 
 iceberg-shop.ru##.basket_right
 iceberg-shop.ru##.bk_buy_button
@@ -5921,6 +5939,8 @@ interface31.ru##.navbar:style(position:static !important)
 interface31.ru##body:style(padding-top:0px !important)
 interface31.ru###jumbotron
 interface31.ru##div.widget:has-text(Реклама)
+||interface31.ru/mt-static/images/icons8_Twitter$image
+||interface31.ru/mt-static/images/icons8_YouTube$image
 
 interfacett.com##.mtsnb-top
 interfacett.com###header
@@ -7374,6 +7394,19 @@ militaryarms.ru##blockquote:style(background:none !important)
 minoa.biz##.sidebar-toggle:style(position:static !important)
 ||minoa.biz/wp-content/uploads/%D0%9C%D0%98%D0%9D%D0%9E%D0%90-MINOA-Golubitskiy7-1.jpg
 
+! avatars
+||miped.ru/f/data/avatars/$image
+||miped.ru/f/styles/uix/xenforo/avatars/$image
+miped.ru##.sp-avatar
+! fixed top
+miped.ru###navigation:style(position:static !important)
+miped.ru##.activeSticky:style(position:static !important)
+miped.ru##.navTabs:style(position:static !important)
+miped.ru##.uix_navigationWrapper:style(position:static !important)
+miped.ru##.sticky_wrapper:style(position:static !important)
+! other
+||miped.ru/f/styles/default/xenforo/logo.og.png
+
 mircli.ru##.fixed-nav
 mircli.ru##.button-engineering-solutions
 
@@ -7706,6 +7739,24 @@ nag.ru##.develop
 
 nakhabino.com###board_statistics
 nakhabino.com###board_stats
+
+! top
+nakivo.com###main:style(margin-top:0px !important)
+nakivo.com###header:style(position:static !important)
+nakivo.com##.nk3-nad-top-menu
+nakivo.com##.nk3-logo
+! banners
+nakivo.com###sticky_banner
+nakivo.com##.nk3-blog-banner
+nakivo.com###modal-button
+nakivo.com##.nk3-btn-dnld
+nakivo.com##p > i:has-text(/Free Trial|Free Edition/)
+! footer
+nakivo.com##.nk3-footer-dnld-btn
+nakivo.com##.nk3-lists-info
+nakivo.com##.nk3-awards
+! other
+nakivo.com##.kk-star-ratings
 
 ! popup
 napolke.ru##[class^=App__AgePopupContent]
@@ -8081,6 +8132,7 @@ osp.ru##.likes-block
 osp.ru##.marketing-vertical
 ! from AdGuard
 osp.ru##.right-column > div.panel:has(:scope > div.panel-body > script[src^="https://email.osp.ru/"])
+osp.ru##.lan-siblings-links
 
 osradar.com##.td-affix:style(position:static !important)
 osradar.com##.td-header-menu-wrap:style(position:static !important)
@@ -8097,16 +8149,6 @@ ostraining.com##.slider
 ostraining.com##.alert-info.alert.uk-alert
 ostraining.com##.ost-box-image
 
-! from Ru AdList
-otzovik.com##+js(abort-on-property-read, Ya)
-
-ozon.ru##.bWarnPoup
-ozon.ru##.b4u0
-||ozone.ru/s3/cms/$image
-ozon.ru##.skeleton-banner
-! footer icons
-ozon.ru##svg:matches-css(width:24px):matches-css(height:24px)
-
 oszone.net###professor
 ||oszone.net/figs/bg-footer-right.gif
 oszone.net##.p_fav
@@ -8115,6 +8157,10 @@ oszone.net##div:has-text(Комментарии отключены. С вопр�
 forum.oszone.net##p.smltxt:has-text(-------)
 forum.oszone.net##div[id*=post_thanks_box]
 ||oszone.net/figs/icons/favs/
+||oszone.net/file/translate_small.gif
+||oszone.net/js/promolinks.js
+||oszone.net/scripts/promolinks.php
+||oszone.net/js/watermark.js
 
 ot.help###header-top
 
@@ -8139,7 +8185,9 @@ o-trubah.ru##.clearfix.info.box
 o-trubah.ru###comment_form
 o-trubah.ru##.add_company
 
-||otzovik.com/static/img/footer/liru.gif$image
+||otzovik.com/static/img/footer/liru.gif
+! from Ru AdList
+otzovik.com##+js(abort-on-property-read, Ya)
 
 otzyvy.pro##center
 otzyvy.pro##.scroll-to-fixed-fixed:style(position:static !important)
@@ -8179,6 +8227,12 @@ ownedcore.com##.postuseravatar
 ownedcore.com##.postcontrols
 ownedcore.com##.postfoot
 
+ozon.ru##.bWarnPoup
+ozon.ru##.b4u0
+||ozone.ru/s3/cms/$image
+ozon.ru##.skeleton-banner
+! footer icons
+ozon.ru##svg:matches-css(width:24px):matches-css(height:24px)
 ||ozone.ru/_nuxt/cms-all-banner*
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
 ||ozone.ru/_nuxt/pdp-all-sharing-button*
@@ -12132,43 +12186,8 @@ spod.com$3p
 ! from EasyList
 /generate_204
 
-||oszone.net/file/translate_small.gif
-||oszone.net/js/promolinks.js
-||oszone.net/scripts/promolinks.php
-||oszone.net/js/watermark.js
-
-osp.ru##.lan-siblings-links
-
-! avatars
-||miped.ru/f/data/avatars/$image
-||miped.ru/f/styles/uix/xenforo/avatars/$image
-miped.ru##.sp-avatar
-! fixed top
-miped.ru###navigation:style(position:static !important)
-miped.ru##.activeSticky:style(position:static !important)
-miped.ru##.navTabs:style(position:static !important)
-miped.ru##.uix_navigationWrapper:style(position:static !important)
-miped.ru##.sticky_wrapper:style(position:static !important)
-! other
-||miped.ru/f/styles/default/xenforo/logo.og.png
-
-||comnews.ru/img/1/loader.gif
-comnews.ru###last-comments
-
-! from Web Annoyances Ultralist
-ibm.com###ibm-masthead, .ibm-sitenav-menu-container:style(position: relative !important; top: 0 !important; transform: translate3d(0,0,0) !important;)
-! from Web Annoyances Ultralist
-ibm.com##.ibm-masthead-sticky.ibm-masthead-sticky-showing.ibm-sitenav-menu, .ibm-sitenav-menu-sticky, .ibm-sitenav-menu-container:style(margin-top: 0 !important;)
-! from Web Annoyances Ultralist
-ibm.com##.ibm-chevron-up-link.ibm-nospacing
-! from Web Annoyances Ultralist
-ibm.com##.ibm-mhplaceholder
-
 ! from EasyPrivacy
 /stats/ida_
-
-||interface31.ru/mt-static/images/icons8_Twitter$image
-||interface31.ru/mt-static/images/icons8_YouTube$image
 
 danycom.ru##.main-slider
 danycom.ru##.tariffs-item__image
@@ -12181,35 +12200,9 @@ decathlon.ru##.header-commercial
 
 bytesizedalex.com###masthead
 
-! top
-nakivo.com###main:style(margin-top:0px !important)
-nakivo.com###header:style(position:static !important)
-nakivo.com##.nk3-nad-top-menu
-nakivo.com##.nk3-logo
-! banners
-nakivo.com###sticky_banner
-nakivo.com##.nk3-blog-banner
-nakivo.com###modal-button
-nakivo.com##.nk3-btn-dnld
-nakivo.com##p > i:has-text(/Free Trial|Free Edition/)
-! footer
-nakivo.com##.nk3-footer-dnld-btn
-nakivo.com##.nk3-lists-info
-nakivo.com##.nk3-awards
-! other
-nakivo.com##.kk-star-ratings
-
 ! from Fanboy's
 .php?referer=
 
-crb-otradnoe.ru##.footer-logo
-
 ! google captcha logos
 ||gstatic.com/recaptcha/api2/logo$image
-
-! coursehero.com blocks viewing for not logged in users. Let's block that site too.
-coursehero.com
-    !coursehero.com##.out-of-views-cta
-    !coursehero.com##.blocker-wrapper
-    !||coursehero.com/doc-asset/blur/*$image
 
