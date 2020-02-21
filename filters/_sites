@@ -2181,6 +2181,8 @@ tarif-24.ru##.mh-ticker-bottom
     ! webnavoz.ru##.header__logo
 ##.header__logo-image
     ! probirka.org##.header__logo-image
+##.header__logotype
+    ! splav.ru##.header__logotype
 ##.header-main__logo
     ! leroymerlin.ru##.header-main__logo
 ##.header__main-logo
@@ -3368,6 +3370,11 @@ asienda.ru###flyingLeft
 askbot.org##.notification
 askbot.org##.notify
 
+askme4tech.com##.sticky-header:style(position:static !important)
+askme4tech.com##.is_stuck.stick-in-parent:style(position:static !important)
+! a banner before comments
+askme4tech.com##.comments-wrapper
+
 askubuntu.com##._fixed:style(position:static !important)
 askubuntu.com##.js-sticky-leftnav:style(position:static !important)
 ||cdn.sstatic.net/Sites/askubuntu/img/site-background-image.png$image
@@ -4323,6 +4330,11 @@ coursehero.com
     !||coursehero.com/doc-asset/blur/*$image
 
 crb-otradnoe.ru##.footer-logo
+
+credera.com##.sticky:style(position:static !important)
+credera.com##p:has-text(/Transform your business|Explore Our Microsoft Consulting/)
+! it is hr in fact
+credera.com##div.aligncenter
 
 crozdesk.com$third-party
 
@@ -7616,6 +7628,15 @@ mnogodivanov.ru###on_top_page
 
 mobcompany.info###masthead > [href="/"]
 
+mobiclon.ru##.badge-wrapper
+mobiclon.ru##.compare-at-price
+mobiclon.ru##.flexdiscount-product-form.addtocart.purchase > div > .btn_add2cart_wrap > .btn_add2cart.btn-primary.btn
+mobiclon.ru###f_up
+mobiclon.ru###fixed_toolbar
+mobiclon.ru##div.features
+mobiclon.ru##div.products_slider.content_slider:has-text(Вы недавно смотрели)
+mobiclon.ru###our_plus
+
 ||mobiset.ru/images/mainbg.gif
 ||mobiset.ru/images/bgdot.gif
 
@@ -8705,6 +8726,9 @@ pochtabank.ru##div.geo-tile-cell
 podari-zhizn.ru$3p
 ###widget-grantlife
 
+! podcasts, scripts and maybe ads. Let's block granularly
+||podlove.org/subscribe-button/
+
 podolsk.ru##.avatar
 podolsk.ru##.no-avatar
 podolsk.ru##.zonetop
@@ -8906,6 +8930,13 @@ proofpoint.com$3p
 ! former urldefense.proofpoint.com
 proofpoint.us$3p
 urldefense.com$3p
+
+||prophotos.ru/assets/logo_prophotos_big$image
+prophotos.ru##.sidebar__fix:style(position:static !important)
+prophotos.ru##.navbar--hide.navbar:style(position:static !important)
+prophotos.ru##.navbar__header__subscribe
+||prophotos.ru/assets/icons/navbar_socials$image
+prophotos.ru##.navbar:style(position:static !important)
 
 pro-remontnik.com##.logo-section
 pro-remontnik.com##.footer-bottom
@@ -10055,6 +10086,9 @@ gala.spiceworks.com/gala.js
 splav.ru##.main-slider
 splav.ru##.social
 splav.ru##.content__catalog-info
+splav.ru##.header__contacts
+splav.ru##.header__login-cart__bonus
+splav.ru###headerCartLink > em
 
 spletnik.ru##.rating-top
 
@@ -12411,9 +12445,6 @@ myfactore.com
 ! yes, with dot
 .libking.ru^$script
 
-! podcasts, scripts and maybe ads. Let's block granularly
-||podlove.org/subscribe-button/
-
 ||cse.google.com/cse.js?cx=partner-pub$important
 
 ! from EasyPrivacy
@@ -12466,37 +12497,6 @@ m24.ru##.ya-share2-static__button
 ! calameo is a publishing platform, ok. But:
 ! from EasyPrivacy
 /calameo-beacon.
-
-askme4tech.com##.sticky-header:style(position:static !important)
-askme4tech.com##.is_stuck.stick-in-parent:style(position:static !important)
-! a banner before comments
-askme4tech.com##.comments-wrapper
-
-credera.com##.sticky:style(position:static !important)
-credera.com##p:has-text(/Transform your business|Explore Our Microsoft Consulting/)
-! it is hr in fact
-credera.com##div.aligncenter
-
-mobiclon.ru##.badge-wrapper
-mobiclon.ru##.compare-at-price
-mobiclon.ru##.flexdiscount-product-form.addtocart.purchase > div > .btn_add2cart_wrap > .btn_add2cart.btn-primary.btn
-mobiclon.ru###f_up
-mobiclon.ru###fixed_toolbar
-mobiclon.ru##div.features
-mobiclon.ru##div.products_slider.content_slider:has-text(Вы недавно смотрели)
-mobiclon.ru###our_plus
-
-splav.ru##.header__logotype
-splav.ru##.header__contacts
-splav.ru##.header__login-cart__bonus
-splav.ru###headerCartLink > em
-
-||prophotos.ru/assets/logo_prophotos_big$image
-prophotos.ru##.sidebar__fix:style(position:static !important)
-prophotos.ru##.navbar--hide.navbar:style(position:static !important)
-prophotos.ru##.navbar__header__subscribe
-||prophotos.ru/assets/icons/navbar_socials$image
-prophotos.ru##.navbar:style(position:static !important)
 
 sotosstore.ru##.fixed-link
 sotosstore.ru##.sidebar-contacts
@@ -12565,3 +12565,4 @@ travel.ru##.b-icon-appstore.b-footer-mobile-app-promo-icon
 acomics.ru##header.common:style(position:static !important)
 acomics.ru##.scroll-to-fixed-fixed:style(position:static !important)
 acomics.ru##header.serial
+
