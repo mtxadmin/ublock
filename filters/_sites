@@ -4829,6 +4829,9 @@ forum.dwg.ru##.parad1
 forum.dwg.ru###tortle_float
 forum.dwg.ru###\32 top
 
+dxomark.com##.stuck.header-wrapper:style(position:static !important)
+dxomark.com##div.is-xsmall:has-text(Reading Time:)
+
 dynadot.com##.page-content-section-container:nth-of-type(1)
 
 dyplet.com##.ad728-top
@@ -5780,6 +5783,7 @@ helpadmins.ru##b:has-text(/(Поделись|Присоединяйтесь)/)
 helpix.ru##.p-content__devPrize
 helpix.ru##.b-gridRowHeader
 helpix.ru###mainpage-forreader-n-news
+helpix.ru###grid-all-page:style(padding-top:0px !important)
 
 ! somehow it was added to Malvertising filter list by Disconnect
 ||here.com^$badfilter
@@ -6318,6 +6322,8 @@ ixbt.com##div.panel-default.panel:has-text(Об авторе)
 ||forum.ixbt.com/insane.gif
 ||forum.ixbt.com/weep.gif
 ||forum.ixbt.com/confused.gif
+! hover dots on photos
+ixbt.com##._gallery::after:style(background:none !important)
 
 ixsystems.com##.is-sticky.p-navSticky--primary.p-navSticky:style(position:static !important)
 ixsystems.com###header
@@ -7486,6 +7492,9 @@ meduzza.ru##.card-info-btn__link_credit
 ||megaobzor.com/images/mologo.jpg$image
 megaobzor.com###menu
 megaobzor.com###mobzor:style(margin-top:0px !important)
+megaobzor.com##.icon-2vkontakte
+megaobzor.com##.icon-2youtube
+||megaobzor.com/images/121.png
 
 megasantexnika.ru##.btn-primary
 megasantexnika.ru###brends
@@ -7667,6 +7676,13 @@ mobiclon.ru###fixed_toolbar
 mobiclon.ru##div.features
 mobiclon.ru##div.products_slider.content_slider:has-text(Вы недавно смотрели)
 mobiclon.ru###our_plus
+
+||mobile-review.com/_design/mmenu_empty.gif
+||mobile-review.com/_design/menu_all.gif
+||mobile-review.com/_design/art_top.gif
+||mobile-review.com/_design/img/hmenu_right.png
+||mobile-review.com/_design/menu_crn.gif
+||mobile-review.com/_design/counters_.gif
 
 ||mobiset.ru/images/mainbg.gif
 ||mobiset.ru/images/bgdot.gif
@@ -10472,6 +10488,14 @@ techstronghold.com##.navbar-fixed-top.navbar:style(position:static !important)
 techstronghold.com##body.fixed-nav:style(padding-top:0px !important)
 techstronghold.com##.widget-Author
 ||techstronghold.com/media/shared/social
+
+tehnobzor.ru##.entry-time
+tehnobzor.ru##.btn:has-text(AliExpress)
+tehnobzor.ru##.footer-info > noindex
+! site breaks copypaste
+tehnobzor.ru##^script:has-text(oncopy)
+! other
+tehnobzor.ru##.mistape_caption
 
 texnoblogger.com##.header-wrap
 texnoblogger.com##.execphpwidget
