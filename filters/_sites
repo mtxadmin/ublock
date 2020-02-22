@@ -8122,8 +8122,24 @@ nndv.ru###votesPanel
 noa-lit.ru##.logo_s
 noa-lit.ru##.navbar-fixed-top.navbar:style(position:static !important)
 
-notebookcheck-ru.com###nbc_contentcontainer > div:has-text(switch off ad blockers)
-notebookcheck-ru.com###rectmain
+! is in EasyList: @@||notebookcheck.$image,1p
+||notebookcheck.net/*/header_bg.svg$important
+||notebookcheck.com/*/header_bg.svg$important
+||notebookcheck.org/*/header_bg.svg$important
+||notebookcheck.biz/*/header_bg.svg$important
+||notebookcheck.it/*/header_bg.svg$important
+||notebookcheck.nl/*/header_bg.svg$important
+||notebookcheck.pl/*/header_bg.svg$important
+||notebookcheck.info/*/header_bg.svg$important
+||notebookcheck-ru.com/*/header_bg.svg$important
+||notebookcheck-tr.com/*/header_bg.svg$important
+||notebookcheck.se/*/header_bg.svg$important
+! adblock
+notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.pl,notebookcheck.info,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.se###nbc_contentcontainer > div:has-text(switch off ad blockers)
+notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.pl,notebookcheck.info,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.se###rectmain
+! sticky toc
+notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.pl,notebookcheck.info,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.se###toc
+! other
 
 sergey-s-betke.blogs.csm.nov.ru###cih
 
@@ -12590,4 +12606,22 @@ m24.ru##.ya-share2-static__button
 
 ! from uBlock filters
 /apu.php?zoneid=$important
+
+! from EasyPrivacy
+||ultimedia.com^*/visibilitystat.js
+! from Fanboy's
+||ultimedia.com/js/common/notification.js
+
+! is in 3 lists
+/cmp_shim.js$important
+
+||ndtv.com/*/ndtvgadgetlogo.png
+ndtv.com##.stickylogo
+ndtv.com##.sticky_navbar
+!is in AdGuard: @@||gadgets360.com/*ad$script
+||gadgets360.com/*ad$important
+! promoted widget with ad redirects to pricee.com/api/redirect/t.php
+hotdeals360.com$3p
+||pricee.com/api/
+pricee.com##.topbar
 
