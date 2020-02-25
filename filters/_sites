@@ -226,10 +226,6 @@ _728x90.$important
 ! in EasyPrivacy and AdGuard
 /pixel.php?
 /popunder.js$important
-! from EasyList, modified
-/prebid/*$important
-! from EasyList, modified
-/prebid1.$important
 /profitwell.js$important
 ! mts.ru loads not-ad /Promo/ links in lk
 /promo/*$domain=~livejournal.com|~mts.ru
@@ -507,8 +503,6 @@ _728x90.$important
 /bitrix/spread.php?$important
 ! is in EasyPrivacy
 -google-tag-manager/$script
-! is in EasyList
-/prebid.$domain=~prebid.org
 ! from RU AdList
 /siropu/am/display.$script
 ! disable exclusion from Fanboy’s Enhanced Tracking List
@@ -3935,7 +3929,8 @@ briefmenow.org##.comment-body:has-text(some sites that we assume you will apprec
 briefmenow.org##.comment-body:has-text(obtain the link to some websites)
 briefmenow.org##.comment-body:has-text(we think it is best to visit)
 ! spam regexp
-briefmenow.org##.comment-body:has-text(/(sites|web pages|websites|sites) (that |)we (advise|advocate|believe|consider|follow|suggest|backlink|think)( for our visitors|)/)
+briefmenow.org##.comment-body:has-text(please (check out|visit) the (websites|web-sites) we (adhere to|comply with), like this (a single|one particular), because it represents our picks through the web)
+briefmenow.org##.comment-body:has-text(/(sites|web pages|web-sites|websites|sites) (that |)we (advise|advocate|believe|consider|follow|suggest|backlink|think|comply with)( for our visitors|)/)
 briefmenow.org##.comment-body:has-text(/we came across a cool .* (that|which) you/)
 briefmenow.org##.comment-body:has-text(/we(’ve| have) linked to (below|beneath) the/)
 briefmenow.org##.comment-body:has-text(/Sites of interest we(’ve| have) a link to/)
@@ -3980,7 +3975,6 @@ briefmenow.org##.comment-body:has-text(May be that’s you! Looking forward to p
 briefmenow.org##.comment-body:has-text(You definitely put a brand new spin on a topic that’s been written about for a long time. Great stuff, just wonderful!)
 briefmenow.org##.comment-body:has-text(check below, are some entirely unrelated websites to ours, on the other hand, they’re most trustworthy sources that we use)
 briefmenow.org##.comment-body:has-text(Every after inside a although we pick out blogs that we study. Listed below are the newest sites that we pick out)
-briefmenow.org##.comment-body:has-text(please check out the websites we adhere to, like this a single, because it represents our picks through the web)
 !briefmenow.org##.comment-body:has-text()
 !briefmenow.org##.comment-body:has-text()
 ! combined
@@ -12882,3 +12876,5 @@ revistalider.com##^script:has-text(adblock)
 
 ! is in Adblock Warning Removal and uBlock filters
 /blockadblock.$script,important
+
+/search-tracking.
