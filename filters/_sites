@@ -579,7 +579,7 @@ _728x90.$important
 /1x1.trans.
 ! from EasyPrivacy
 _analytics.js?
-/analytics/$important,domain=~sberbank.ru
+/analytics/$important,domain=~dropboxstatic.com|~sberbank.ru
     !||sberbank.ru/*analytics$script,redirect=noopjs
 /cnt.js
 /count.js
@@ -13486,4 +13486,10 @@ reuters.com###hp-newsletters
 marketing.dropbox.com
 ! is in EasyPrivacy
 ||dropbox.com/log_
+||dropbox.com/alternate_wtl
+    !||dropbox.com/alternate_wtl_browser_performance_info
+||dropboxstatic.com/*/ux_analytics
+||dropbox.com/2/client_metrics/record
+!||dropboxstatic.com/*/pkg-core-analytics$empty - don't block this one! And exception on geteral analytics has set
+||dropbox.com/csp_log
 
