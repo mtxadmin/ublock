@@ -172,7 +172,7 @@ _728x90.$important
 /_banner_common.php
 /_banners/*
 /banners/*
-! from AdGuard
+! is in AdGuard
 /bens/vinos.js?$important
 /bold-upsell-custom.js
 /brand.js
@@ -480,6 +480,8 @@ _728x90.$important
 ##.pub_300x250m
 ! from EasyList
 ##.pub_728x90
+! is in AdGuard
+##.rekl
 ##.recov-adlabel
 ###register-banner
 ###rotator
@@ -2557,6 +2559,7 @@ tarif-24.ru##.mh-ticker-bottom
 /logobg.png
     ! ||alisupport.ru/templates/web/images/logobg.png
 /logodesktop.png
+/logohead.gif
 /logosite.png
 /logotitle.png
     ! ||teplokrepost.ru/wp-content/themes/templateadapt/img/logotitle.png
@@ -3976,6 +3979,12 @@ bogachev.ru##.textwidget
 boingboing.net##.widget_stackcommerce_widget
 
 bolshoyvopros.ru##.footer_buttons
+
+! Исключение на разрешение <div id="up"...
+boobliks.pro#@##up
+! Ладно, но хоть шапку почистим тогда
+boobliks.pro##.logotip_ebanem
+boobliks.pro##body:style(background:none !important)
 
 booking.com##.header-signin-prompt
 
@@ -6590,7 +6599,8 @@ itsecforu.ru###site-navigation:style(position:static !important)
 ||itshop.ru/img/epays/*$image
 
 it-tehnik.ru##.posts-view-carousel
-! it-tehnik.ru$script:contains(requestNotificationPermission) - doesn't (and shouldn't) work. Todo.
+! it-tehnik.ru$script:contains(requestNotificationPermission) - doesn't (and shouldn't) work.
+it-tehnik.ru##^script:has-text(requestNotificationPermission)
 ! For now, block all scripts
 it-tehnik.ru$script
 ! and remove useless header
@@ -12408,6 +12418,9 @@ xroom.su##.sf-like-box
 
 x-tk.ru$3p
 
+! from Ru AdList
+/^https?://x-video\.top\/(?!engine\/|templates\/)/$script,domain=x-video.top
+
 streamads.yahoo.com
 syndication.streamads.yahoo.com
 ||streamads.yahoo.com$important
@@ -13801,3 +13814,4 @@ hm.baidu.com$important
 
 /nakladka.js$important
 
+/fuckad.js$important
