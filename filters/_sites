@@ -1857,9 +1857,10 @@ _cookie_policy_
 ##[id*="countdown"]:not(html):not(body):not(article)
 ##[class^="timer"]:not(html):not(body):not(article)
 ~tomato-timer.com##[id^="timer"]:not(html):not(body):not(article)
-/jquery.countdown.min.js$important
-
-
+/jquery.countdown$important
+    ! /jquery.countdown.min.js$important
+    ! /jquery.countdown-en.js
+    ! /jquery.countdown-ru2.js
 !! bottom bars and other sticky elements
 ! https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
 ! Important: If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO
@@ -7050,6 +7051,10 @@ koofr.eu##.header:style(position:static !important)
 ||koolinar.ru/media/svg/new-logo-header.svg
 koolinar.ru##.u-header:style(position:static !important)
 koolinar.ru##.list-inline
+
+koronapay.com##.menu__logo
+||koronapay.com/*/zk-logotype-clr.svg
+koronapay.com##.mobile-apps
 
 ! todo: not completed
 korshop.ru##.sovservice
