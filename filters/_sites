@@ -5607,6 +5607,9 @@ fileddl.info###masthead
 fileddl.info##.number-telefons
 fileddl.info##p:has-text(/Копирование материалов|Ссылка должна быть/)
 
+!platformalp.ru
+filesonload.ru$domain=~platformalp.ru|~tender.plus
+
 film.ru##.is_stuck:style(position:static !important)
 film.ru##.hochuvkino
 film.ru##.wink
@@ -5623,6 +5626,15 @@ findmevk.com##.resultContainer:has-text(Регистрация ИП)
 
 findmysoft.com###header_case
 findmysoft.com###download_btn
+
+findtenders.ru##.alert.message-header
+findtenders.ru##.reviews-slider
+findtenders.ru##.top-part:style(position:static !important)
+findtenders.ru##.header:style(padding-top:0px !important)
+findtenders.ru##.main-slider
+findtenders.ru##.control-panel:style(position:static !important)
+findtenders.ru##.our-clients
+||findtenders.ru/templates/findtenders/images/clients.png
 
 ! Firebase: app platform. Good, but it has push messaging, ads, ab tests, reflinks
 firebaseio.com$third-party
@@ -6508,6 +6520,9 @@ imagebam.com###mrporngeek
 imagetwist.com###header
 
 imagevenue.com##center:has-text(Next)
+
+! работает в Firefox, в Opera не работает, так же, как и contains
+imgpay.ru##^script:has-text(Adblock)
 
 ! is in hpHosts’ Ad and tracking servers
 ||p.imgur.com
@@ -7427,6 +7442,13 @@ liberatum.ru$inline-script
 ||libking.ru/templates/king/images/nocover.png
 ||libking.ru/templates/king/images/crab1.png
 libking.ru##.full-title > .orig-name
+
+libreelec.tv##.navbar-fixed-top.navbar:style(position:static !important)
+libreelec.tv##.pageHeaderPanel:style(position:static !important)
+libreelec.tv##body:style(padding-top:0px !important)
+libreelec.tv###dw__toc.affix
+libreelec.tv###dw__pagetools
+libreelec.tv##.messageSignature
 
 ! bottom panel
 lifehacker.com##div:matches-css(position:fixed)
@@ -9189,6 +9211,8 @@ pb.wtf###main_content > .w100:has-text(Вы не можете начинать �
 pb.wtf##.dropdown-toggle.btn-primary.btn-sm.btn:has-text(/Подкинь нам|рубасиков/)
 
 pc-helpp.com###body_left
+
+pcloud.com##.notify_bar_wrap
 
 @@||pcmobitech.com^$generichide
 pcmobitech.com##.custom-logo
@@ -11358,6 +11382,9 @@ tek-tips.com###postform
 ! is in AdGuard
 ||telegram.im/widget-button/
 
+tender.plus##.widget-form
+tender.plus##.widget-button
+
 texnoblogger.com##.header-wrap
 texnoblogger.com##.execphpwidget
 texnoblogger.com##body:style(background:none !important)
@@ -11546,6 +11573,10 @@ thomasmaurer.ch###sticky-header:style(position:static !important)
 threatcrowd.org##div:nth-of-type(1):style(position:static !important; width:auto !important)
 
 threatpost.ru##[href^="https://go.kaspersky.com/"]
+
+||ticketland.ru/img2/header/page-1.svg
+||ticketland.ru/img2/content/giftcards__banner
+ticketland.ru##.seo_click_delegator_container.search_item > .buy_t.red_buy_button
 
 ticksy.com###header:style(position:static !important)
 
@@ -14028,42 +14059,12 @@ stackpathcdn.com$script,subdocument
 /jquery.sticky/*
 /jquery.sticky.min.js
 
-||ticketland.ru/img2/header/page-1.svg
-||ticketland.ru/img2/content/giftcards__banner
-ticketland.ru##.seo_click_delegator_container.search_item > .buy_t.red_buy_button
-
-findtenders.ru##.alert.message-header
-findtenders.ru##.reviews-slider
-findtenders.ru##.top-part:style(position:static !important)
-findtenders.ru##.header:style(padding-top:0px !important)
-findtenders.ru##.main-slider
-findtenders.ru##.control-panel:style(position:static !important)
-findtenders.ru##.our-clients
-||findtenders.ru/templates/findtenders/images/clients.png
-
-tender.plus##.widget-form
-tender.plus##.widget-button
-
-!platformalp.ru
-filesonload.ru$domain=~platformalp.ru|~tender.plus
-
 /gccounter.js
-
-pcloud.com##.notify_bar_wrap
 
 ! is in EasyList, Fanboy's, AdGuard
 /cookies-enabler.
 ! /wp-content/plugins/ginger/front/js/cookies-enabler.min.js
 ! also see /plugins/ginger/*
 
-! работает в Firefox, в Opera не работает, так же, как и contains
-imgpay.ru##^script:has-text(Adblock)
-
 /metric.js
 
-libreelec.tv##.navbar-fixed-top.navbar:style(position:static !important)
-libreelec.tv##.pageHeaderPanel:style(position:static !important)
-libreelec.tv##body:style(padding-top:0px !important)
-libreelec.tv###dw__toc.affix
-libreelec.tv###dw__pagetools
-libreelec.tv##.messageSignature
