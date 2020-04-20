@@ -1702,8 +1702,10 @@ _cookie_policy_
 ##.sig-content
 ##.sig-fonts
 ##.signature
-! workaround to disable whitelisted exceptions
-##[class=signature]
+    ! @@||gamespot.com^$generichide in uBlock filters
+    gamespot.com##.signature
+    ! workaround to disable whitelisted exceptions
+    ##[class=signature]
 ##.signatureView
 ##.user_signature
 ##.UserSignature
