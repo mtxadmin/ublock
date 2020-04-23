@@ -1893,10 +1893,11 @@ _cookie_policy_
 ##.float-mail
 ##.float-phone
 ##.floating-ai
-##.js-stickyFooter
-##.js-sticky-footer
+!##.js-stickyFooter
+!##.js-sticky-footer
 ##.sticky-code-block
-~newstracker.ru,~techstronghold.com##.sticky-footer
+! it seems, sticky-footer is not very good idea
+!~nalog.ru,~newstracker.ru,~techstronghold.com##.sticky-footer
 ##.sticky-queue
 ##.sticky-tagline
 ##.toolbar-bottom
@@ -5838,6 +5839,9 @@ gamesisart.ru##+js(remove-attr.js, oncopy)
 gamespot.com###contrib_rec
 gamespot.com###faq_header_wrap
 gamespot.com##.fixed.top_link
+! is in AdGuard
+gamespot.com##.message_mpu
+! also see ##.signature
 
 gamesqa.ru##.dont-add-our-site-pls
 
@@ -10099,6 +10103,10 @@ redmondmag.com##.REDMOND-FLASH
 
 redrumers.com##.header
 
+redtube.com##.premium_feature
+redtube.com##.premium_logos_section
+redtube.com###premium_video
+
 reg.ru##.b-help-button
 
 regard.ru###loginbar
@@ -11624,6 +11632,8 @@ thebell.io##.header--fixed:style(position:static !important)
 online.theinpaint.com##.modal-backdrop
 online.theinpaint.com##body:style(overflow:auto !important)
 
+theinsider.ua##.carousel
+
 thelastgame.ru##.group.container > .container-inner > .pad.group
 
 themoneyconverter.com$third-party
@@ -11652,6 +11662,8 @@ thewindowsplus.org##.site-header
 thewindowsplus.org##.sidebar
 
 ||thg.ru/images/thg_logo150x110.gif
+
+thingiverse.com##div[class^=ScrollUpButton]
 
 ! from EasyPrivacy. Does it have some useful and non-marketing value?
 ||threadloom.com/ga/$third-party,script
@@ -12041,6 +12053,10 @@ upgrade-android.ru###top-a
 uplab.ru###Layer_1
 ! todo: remove annoying animation
 !||tildacdn.com/js/tilda-animation
+
+! ad scripts
+! is in EasyPrivacy
+||uptime.com/static/rum/$3p
 
 uptodown.com###header:style(position:static !important)
 
@@ -14188,20 +14204,4 @@ _twitter_icon.
 _facebook_icon.
 
 _pinterest_icon.png
-
-! ad scripts
-! is in EasyPrivacy
-||uptime.com/static/rum/$3p
-
-! is in AdGuard
-gamespot.com##.message_mpu
-! also see ##.signature
-
-redtube.com##.premium_feature
-redtube.com##.premium_logos_section
-redtube.com###premium_video
-
-thingiverse.com##div[class^=ScrollUpButton]
-
-theinsider.ua##.carousel
 
