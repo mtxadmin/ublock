@@ -2171,15 +2171,15 @@ tarif-24.ru##.mh-ticker-bottom
     ! raidrive.com##.fusion-logo
     ! troypoint.com##.fusion-logo
     !raidrive.com##.fusion-logo:style(margin-top:14px !important; margin-bottom:14px !important)
-~microdev.it,~thinkpowershell.com##.header-image
-    ! blog.bissquit.com##.header-image
-    ! falchionconsulting.com##.header-image
-    ! faqforge.com##.header-image
-    ! kagarlickij.com##.header-image
-    ! kurazhov.ru##.header-image
-    ! leopard-fil.ru##.header-image
-    ! sid-500.com##.header-image
-    ! exclusion: thinkpowershell.com (class is in the body)
+! some sites mark body with class .header-image . So don't generalize it
+!~microdev.it,~thinkpowershell.com,~update.ph##.header-image
+    blog.bissquit.com##.header-image
+    falchionconsulting.com##.header-image
+    faqforge.com##.header-image
+    kagarlickij.com##.header-image
+    kurazhov.ru##.header-image
+    leopard-fil.ru##.header-image
+    sid-500.com##.header-image
 ##.headerlogo
 ###HeaderLogo
 ##.header__logo
