@@ -780,6 +780,9 @@ _pagespeed_beacon?
     ###share-block
     ! is in Fanboy's, RU AdList
     !###sharelist
+    ##.ya-share
+    ! is in Ru AdList and Fanboy's, generalized
+    ##.ya-share2
 ##[class*="Sharing"]:not(html):not(body):not(article)
 ##[id*="Sharing"]:not(html):not(body):not(article)
 ~drive.google.com##[class*="sharing"]:not(html):not(body):not(article)
@@ -821,6 +824,8 @@ _pagespeed_beacon?
 !~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru,~business2community.com##[class*="social"]:not(html):not(body):not(article)
     ! from Fanboy's
     ##.abh_social
+    ! is in AdGuard
+    ##.block_social
     ! is in Ru AdList and Fanboy's
     ###block_social_open
     ##.footer-social
@@ -863,6 +868,8 @@ _pagespeed_beacon?
     ##.socials
     ! is in Fanboy's and Ru AdList
     ##.social-section
+    ! is in Ru AdList and AdGuard, generalized
+    ##.social-teasers
     ! from Fanboy's
     ##.social-tooltip
     ! from EasyList and Fanboy's
@@ -7152,6 +7159,32 @@ kinopoisk.ru###kinopoisk-header-sticky-container:style(position:static !importan
 kinopoisk.ru###partial_component__watch-online-button
 kinopoisk.ru##.subscribe
 kinopoisk.ru##.kinopoisk-header-logo__img
+! is in Fanboy's
+kinopoisk.ru###GOWrapper
+! is in Ru AdList
+kinopoisk.ru##html:not(#id):style(background-color: #e6e6e6 !important)
+! is in AdGuard
+kinopoisk.ru##div[id*="direct_R-A-"]
+! is in Ru AdList
+kinopoisk.ru##div[id*="_superbanner_"]
+! from Ru AdList and Fanboy's
+kinopoisk.ru##div[data-type="teaserspec"]
+! from Ru AdList and Fanboy's
+kinopoisk.ru##div[class^="promo"][style^="bottom:"]
+! is in AdGuard
+kinopoisk.ru##.underheader-superbanner-wrapper
+! also from Ru AdList
+kinopoisk.ru##.underheader-superbanner-wrapper:style(min-height: 0 !important)
+! from Ru AdList
+kinopoisk.ru##.shadow.shadow-restyle:style(box-shadow: 0 -8px 15px #333333 !important)
+! is in AdGuard
+kinopoisk.ru##.rightTeaser
+! from Ru AdList
+kinopoisk.ru##.page-content > #header-info-bg + div[id]:not([class]):style(margin-bottom: 40px !important)
+! from Ru AdList
+kinopoisk.ru###header-info-bg:style(background-color: transparent !important; background-image: none !important)
+! from Ru AdList
+kinopoisk.ru##+js(abort-on-property-read, Object.prototype.AdfoxEvents)
 
 kino-teatr.ru###special_block_img
 kino-teatr.ru###logo_block
