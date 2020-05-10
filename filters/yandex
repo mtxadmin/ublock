@@ -295,3 +295,12 @@ yandex.ru##.BlogPost
 yandex.ru##.b-page_scroll-disabled_yes:style(overflow-y:auto !important)
 
 local.yandex.ru##.header__container:style(position:static !important)
+
+! all this block from Ru AdList
+! for example, it works on kinopoisk.ru
+yandex.*##+js(set-constant, __AAB__, false)
+yandex.*##+js(set-constant, Object.prototype.AdvertPartner, falseFunc)
+yandex.*##+js(abort-on-property-read, yaads.adRenderedCount)
+yandex.*##+js(abort-on-property-read, Ya.loaderVer)
+yandex.*##+js(abort-on-property-read, Object.prototype.loaderVer)
+passport.yandex.ru#@#+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
