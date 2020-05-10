@@ -1493,6 +1493,7 @@ livejournal.com##[lj-widget-fb-page]
 ###goTop
 ##.gotop
 ###Go_Top
+##.go_top
 ###goTopBtn
 ##.go_top_button
 ###goup
@@ -2070,13 +2071,14 @@ turboimagehost.com##body:style(overflow:auto !important)
 ~miped.ru##.emoji
 ##.emoji-item
 /wp-emoji-release.min.js$important
+/biggrin.gif
 /emoji/*$image
 /emoticons/*$image
 /favicon.gif
     ! ||garant.ru/images/favicon.gif
     ! ||mdex-nn.ru/application/maxsite/templates/easy/img/favicon.gif
-/images/laugh.gif
-/images/smilies/*$image
+/laugh.gif
+/smile.gif
 /smile/*$image
 /smiles/*$image
 /smiles2/*$image
@@ -6515,6 +6517,13 @@ hunter.ru##table:nth-of-type(2) > tbody > tr > td:nth-of-type(2)
 hunting.ru##.konkurs-anons
 hunting.ru##.ctxt
 hunting.ru##.likesSummary
+! is in Ru AdList
+hunting.ru##div[class*="banner"]
+! from Ru AdList
+hunting.ru##a[href*=".fhserv.ru"]:not([href^="https://image.fhserv.ru"])
+! from Ru AdList
+/^https?:\/\/(?!image\.)([^.]+\.)+?fhserv\.ru/$domain=fishingsib.ru|hunting.ru
+! https://djfz2p.fhserv.ru/files/9a04ce820d08bd1416c923387b7bbf6d.gif
 ||hunting.ru/*/smilies.hunting/$image
 
 huntworld.ru##.gray-block > .shell
@@ -12854,7 +12863,6 @@ webtalk.ru###title-logo-table
 webtalk.ru###pun-about
 
 webtoons.com##.login_set
-webtoons.com##.go_top
 
 webvisions.com##.container-fluid
 
