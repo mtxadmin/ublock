@@ -10296,6 +10296,20 @@ reddit.com##header:style(position:absolute !important)
 @@*$generichide,domain=reddit.com,badfilter
 ! logo
 reddit.com##a[href="/"]:has(svg>g)
+! from EasyList
+reddit.com##div[id^="overlay-sidebar-atf-"]
+! from EasyList
+reddit.com##div[id^="overlay-sidebar-btf-"]
+! from uBlock filters
+reddit.com##div[class][data-before-content="advertisement"]:not([id])
+! is in EasyList
+reddit.com##.promotedlink
+! from AdGuard
+reddit.com##div[style*="fakelightbox-overlay-"] ~ div[tabindex] > div > div > div > div[data-redditstyle="false"]:has(:scope > div > div > div[data-before-content="advertisement"])
+! from uBlock filters
+reddit.com##div[id*="sidebar"][data-before-content="advertisement"]:upward(4)
+! from Fanboy's
+reddit.com##._3RPJ8hHnfFohktLZca18J6
 
 redmondmag.com##.header
 redmondmag.com##.footer
