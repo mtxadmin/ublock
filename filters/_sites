@@ -711,6 +711,8 @@ _pagespeed_beacon?
 ~facebook.com,~fb.com##[id*="FbLike"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[class*="fblike"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id*="fblike"]:not(html):not(body):not(article)
+! is in 3 lists
+##.fb-like
 ##[class*="Follow"]:not(html):not(body):not(article)
 ##[id*="Follow"]:not(html):not(body):not(article)
 ~medtehno.ru##[class*="follow"]:not(html):not(body):not(article)
@@ -938,6 +940,8 @@ _pagespeed_beacon?
     ##.widget_twitter_timeline
 ~vk.com##[class$="-vk"]:not(html):not(body):not(article)
 ~vk.com##[id$="-vk"]:not(html):not(body):not(article)
+! from AdGuard
+##div[id^="vk_like"]
 ##[class*="zocial"]:not(html):not(body):not(article)
 ##[id*="zocial"]:not(html):not(body):not(article)
 ! from Ru AdList and Fanboy's
@@ -14603,11 +14607,6 @@ groenlandselskab.dk$script,3p
 
 ! from Web Annoyances Ultralist
 ##[href*="twitter.com/share"]
-
-! is in 3 lists
-##.fb-like
-! from AdGuard
-##div[id^="vk_like"]
 
 ! is in Fanboy's and Web Annoyances Ultralist
 ##.twitter-share-button
