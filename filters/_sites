@@ -747,6 +747,8 @@ _pagespeed_beacon?
 ##[id*="plusone"]:not(html):not(body):not(article)
 ~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article)
 ##[id*="Share"]:not(html):not(body):not(article)
+! From Fanboy's: Google share icon
+##KNO-SHARE-BUTTON
 ! Too many exclusions. Disabled. 
 !~microsoft.com,~sketchup.com,~topsharepoint.com,~joom.com,~gfycat.com##[class*="share"]:not(html):not(body):not(article)
     ! from Fanboy's
@@ -844,6 +846,8 @@ _pagespeed_beacon?
 
 ! on nalog.ru it is not social buttons, it is a tax name
 ~nalog.ru##[class*="Social"]:not(html):not(body):not(article)
+    !from Fanboy's: Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
+    !##div[class^="SocialIcons_"]
 ~nalog.ru##[id*="Social"]:not(html):not(body):not(article)
 ! too many exclusions
 !~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru,~business2community.com##[class*="social"]:not(html):not(body):not(article)
@@ -912,6 +916,8 @@ _pagespeed_beacon?
     ##.s-social
     ! from EasyList and Fanboy's
     ##.s-social-item
+    ! from Fanboy's
+    ##div[class^="style__social"]
 ! on nalog.ru it is not social buttons, it is a tax name
 ~nalog.ru##[id*="social"]:not(html):not(body):not(article)
     ! from Fanboy's
