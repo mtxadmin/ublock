@@ -923,6 +923,14 @@ _pagespeed_beacon?
 ~twitter.com##[id*="twitter"]:not(html):not(body):not(article)
     !##.icon-twitter-circle
     !##.td-icon-twitter
+    ! is in Ru AdList and Fanboy's
+    ##.twitter
+    ! is in Fanboy's
+    ##.twitter-timeline
+    ! is in Fanboy's
+    ###twitter_timeline-2
+    ! is in Fanboy's
+    ##.widget_twitter_timeline
 ~vk.com##[class$="-vk"]:not(html):not(body):not(article)
 ~vk.com##[id$="-vk"]:not(html):not(body):not(article)
 ##[class*="zocial"]:not(html):not(body):not(article)
@@ -1334,7 +1342,7 @@ livejournal.com##[lj-widget-fb-page]
 ! is in AdGuard
 ###vk_group
 ###vk_groups
-! is in RU Adlist
+! is in Ru AdList and Fanboy's
 ##.vkontakte
 ##.w2bslikebox
 ##.zen
@@ -14094,7 +14102,9 @@ yoursmileys.ru$image
 youtube.com##.ytp-pause-overlay.ytp-scroll-min
 ! from AdGuard & Fanboy's
 youtube.com##.ytp-pause-overlay
-! from AdGuard
+! is in Ru AdList and Fanboy's
+youtube.com###player .ytp-pause-overlay
+! is in AdGuard
 youtube.com##.ytp-cards-teaser
 youtube.com##.ytp-ce-covering-overlay
 youtube.com##.ytp-ce-element-shadow
@@ -14102,12 +14112,14 @@ youtube.com##.ytp-ce-covering-image
 youtube.com##.ytp-ce-expanding-image
 youtube.com##.ytp-ce-element.ytp-ce-channel.ytp-ce-channel-this.ytp-ce-element-show.ytp-ce-bottom-right-quad.ytp-ce-size-640
 youtube.com##.ytp-ce-element.ytp-ce-video.ytp-ce-element-show
-! from AdGuard
+! is in AdGuard
 youtube.com##.ytp-paid-content-overlay
 youtube.com##.ytd-popup-container.style-scope.dropdown-content
 youtube.com##.ytd-popup-container
-! from Fanboy's
+! is in Fanboy's
 youtube.com##.ytp-title-channel
+! from uBlock filters
+youtube.com##+js(json-prune, adPlacements)
 ! ||youtube.com/yts/cssbin/ - it is css, don't block!
 ! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
 /youtubei/v1/log_event
@@ -14117,7 +14129,10 @@ youtube.com##.ytp-title-channel
 ||youtube.com/get_midroll_
 ! and my too
 ||youtube.com/error_
-
+! is in Ru AdList, AdGuard and Fanboy's
+##.ytp-share-button
+! is in EasyList
+##.ytp-ad-progress-list
 
 ypapa.ru##.fake
 ypapa.ru##.yp-consult
@@ -14716,15 +14731,6 @@ _ga-events_
 ! is in 3 lists
 ###eu-cookie-law
 
-! is in Fanboy's
-##.widget_twitter_timeline
-
-! is in Fanboy's
-##.twitter-timeline
-
-! is in Fanboy's
-###twitter_timeline-2
-
 ! from Fanboy's
 ###scrollup:not(body)
 
@@ -15259,3 +15265,10 @@ _pinterest_icon.png
 ! is in EasyList and Fanboy's
 ###consent_blackbar
 
+! is in Ru AdList and Fanboy's
+##button[title="Share"]
+
+! is in AdGuard
+coub.com##.viewer__das
+! is in Ru AdList
+coub.com##div[class^="viewer"][class*="banner"]
