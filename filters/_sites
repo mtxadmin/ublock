@@ -2046,9 +2046,84 @@ _cookie_policy_
 
 
 
+! unblock page scrolling when modal popup is opened (even if the popup was removed by uBlock)
+! in the comments see some of the catched sites. But keep in mind that there are many more.
+com##body:style(overflow:auto !important)
+eu##body:style(overflow:auto !important)
+net##body:style(overflow:auto !important)
+post##body:style(overflow:auto !important)
+ru##body:style(overflow:auto !important)
+xn--p1ai##body:style(overflow:auto !important)
+	!academyit.ru##body:style(overflow:auto !important)
+    !au.ru##body:style(overflow:auto !important)
+    !careerist.ru##body:style(overflow:auto !important)
+    !davitamebel.ru##body:style(overflow:auto !important)
+    !devteam.space##body:style(overflow:auto !important)
+    !eko-village.com##body:style(overflow:auto !important)
+    !ems.post##body:style(overflow:auto !important)
+    !etm.ru##body:style(overflow:auto !important)
+    !exam-labs.com##body:style(overflow:auto !important)
+    !freedownloadmanager.org##body:style(overflow:auto !important)
+    !hipdir.com##body:style(overflow:auto !important)
+    !kp.ru##body:style(overflow:auto !important)
+    !law-world.ru##body:style(overflow:auto !important)
+    !napolke.ru##body:style(overflow:auto !important)
+    !ofsant.ru##body:style(overflow:auto !important)
+    !philips.ru##body:style(overflow:auto !important)
+    !samag.ru##body:style(overflow:auto !important)
+    !spasibosberbank.ru##body:style(overflow:auto !important)
+    !techopedia.com##body:style(overflow:auto !important)
+    !theinpaint.com##body:style(overflow:auto !important)
+    !tiu.ru##body:style(overflow:auto !important)
+    !transip.be,transip.eu##body:style(overflow:auto !important)
+	!turboimagehost.com##body:style(overflow:auto !important)
+    !vdyoutube.com##body:style(overflow:auto !important)
+    !vkusvill.ru##body:style(overflow:auto !important)
+    !vodoparad.ru##body:style(overflow:auto !important)
+    !wiley.com##body:style(overflow:auto !important)
+    !xn----7sbeemsdjlc1kud.xn--p1ai##body:style(overflow:auto !important)
+com##html:style(overflow:auto !important)
+eu##html:style(overflow:auto !important)
+net##html:style(overflow:auto !important)
+post##html:style(overflow:auto !important)
+ru##html:style(overflow:auto !important)
+xn--p1ai##html:style(overflow:auto !important)
+	!academyit.ru##html:style(overflow:auto !important)
+	!admobispy.com##html:style(overflow:auto !important)
+    !silagrupp.ru##html:style(overflow:auto !important)
+com##.fancybox-enabled:style(overflow:auto !important)
+eu##.fancybox-enabled:style(overflow:auto !important)
+net##.fancybox-enabled:style(overflow:auto !important)
+post##.fancybox-enabled:style(overflow:auto !important)
+ru##.fancybox-enabled:style(overflow:auto !important)
+xn--p1ai##.fancybox-enabled:style(overflow:auto !important)
+	!xn----7sbeemsdjlc1kud.xn--p1ai##.fancybox-enabled:style(overflow:auto !important)
+com##.fancybox-lock:style(overflow:auto !important)
+eu##.fancybox-lock:style(overflow:auto !important)
+net##.fancybox-lock:style(overflow:auto !important)
+post##.fancybox-lock:style(overflow:auto !important)
+ru##.fancybox-lock:style(overflow:auto !important)
+xn--p1ai##.fancybox-lock:style(overflow:auto !important)
+	!vodoparad.ru##.fancybox-lock:style(overflow:auto !important)
+
+
+
+!! unstick header
+! Many sites are using anoying sticky elements. Which also hide useful screenspace.
+! in the comments see some of the catched sites. But keep in mind that there are many more.
+com##.sticky-navigation:style(position:static !important)
+eu##.sticky-navigation:style(position:static !important)
+net##.sticky-navigation:style(position:static !important)
+post##.sticky-navigation:style(position:static !important)
+ru##.sticky-navigation:style(position:static !important)
+xn--p1ai##.sticky-navigation:style(position:static !important)
+	!admobispy.com##.sticky-navigation:style(position:static !important)
+	!losst.ru##.sticky-navigation:style(position:static !important)
+
+
+
+
 !! bottom bars and other sticky elements
-! https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
-! Important: If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO
 ##.bottom-bar
 ###fixbar
 ##.fixed_footer
@@ -2188,7 +2263,6 @@ turboimagehost.com##.fade
 turboimagehost.com##.modal
 turboimagehost.com##.modal-backdrop
 turboimagehost.com##.modal-footer
-turboimagehost.com##body:style(overflow:auto !important)
 
 
 
@@ -3324,8 +3398,6 @@ academy.ru##.widget_main
 
 academyit.ru##.fancybox-skin
 academyit.ru##.fancybox-overlay-fixed.fancybox-overlay
-academyit.ru##body:style(overflow:auto !important)
-academyit.ru##html:style(overflow:auto !important)
 academyit.ru##.top.panel:style(position:static !important)
 academyit.ru##.header:style(position:static !important)
 
@@ -3390,8 +3462,6 @@ adminland.ru###branding
 admobispy.com##.mfp-wrap
 admobispy.com##.mfp-bg
 admobispy.com##.site:style(overflow:auto !important)
-admobispy.com##html:style(overflow:auto !important)
-admobispy.com##.sticky-navigation:style(position:static !important)
 admobispy.com###page:style(padding-top:0px !important)
 
 ad-norma.ru##.header-full-title
@@ -3848,7 +3918,6 @@ au.ru##.au-footer-copyblock
 ! modal
 au.ru##.au-modal
 au.ru##.au-adult-modal-background
-au.ru##body:style(overflow:auto !important)
 ! other
 
 ! banners
@@ -4586,7 +4655,6 @@ capterra.com$third-party
 
 careerist.ru##.modal
 careerist.ru##.in.modal-backdrop
-careerist.ru##body:style(overflow:auto !important)
 careerist.ru##.list-archive
 careerist.ru###vacdelivery-vacancy-bottom
 
@@ -5030,7 +5098,6 @@ davitamebel.ru##.popup
 davitamebel.ru##.fancybox-close
 davitamebel.ru##.fancybox-overlay
 davitamebel.ru##.fixed-dashboard
-davitamebel.ru##body:style(overflow:auto !important)
 davitamebel.ru##.credits
 
 db-ip.com##.fixed-top:style(position:static !important)
@@ -5086,7 +5153,6 @@ deutek.ru##.gold_btn
 
 devteam.space###service-modal-trusted.service-modal-trusted.services-modal.modal
 devteam.space##.modal-backdrop
-devteam.space##body:style(overflow:auto !important)
 devteam.space##.widget_dts-video-slider-widget
 devteam.space##.btn-primary.btn
 devteam.space##.site-header.app-header
@@ -5695,7 +5761,6 @@ emkolbaski.ru###statusHook
 ! popup
 ems.post##.reveal.popup
 ems.post##div.reveal-overlay
-ems.post##body:style(overflow:auto !important)
 ! other
 
 encyclopedia-stranstviy.com##header
@@ -5765,7 +5830,6 @@ etlib.ru###widget_add_ask
 etlib.ru##.top-rating-block > .summary
 
 etm.ru##.city-modal
-etm.ru##body:style(overflow:auto !important)
 etm.ru##.order_status
 etm.ru##.act_blocks
 
@@ -5823,7 +5887,6 @@ examcollection.com###p_fade
 ! popup
 exam-labs.com##.quick-registration-promo
 exam-labs.com##.limited-offer
-exam-labs.com##body:style(overflow:auto !important)
 ! banners
 exam-labs.com##.header__adv
 exam-labs.com##.action--exam
@@ -6199,7 +6262,6 @@ freebsdnews.com###sidebar
 freecram.com###light2
 freecram.com###fade
 
-freedownloadmanager.org##body:style(overflow:auto !important)
 freedownloadmanager.org###inf_bnr_0
 freedownloadmanager.org##.header
 ||freedownloadmanager.org/web/bannerinf
@@ -6782,7 +6844,6 @@ hikvision.org.ua###on-top-btn
 ! popups
 hipdir.com##.modal-dialog
 hipdir.com##.modal-backdrop
-hipdir.com##body:style(overflow:auto !important)
 ! request banners (forms)
 hipdir.com###request-form-modal
 hipdir.com##.request-button-container
@@ -7817,7 +7878,6 @@ kotofoto.ru##.ketkoin-prod
 
 kp.ru##.shadow-close
 kp.ru##.popup
-kp.ru##body:style(overflow:auto !important)
 kp.ru##.header:style(position:static !important)
 ! говно, разъезжается. todo.
 !kp.ru##.menuHead:style(position:static !important)
@@ -7988,7 +8048,6 @@ larsenal.ru###popupBar
 
 law-world.ru##.arcticmodal-container
 law-world.ru##.arcticmodal-overlay
-law-world.ru##body:style(overflow:auto !important)
 law-world.ru###mysticky-wrap
 law-world.ru##.body-header-wrap
 law-world.ru##.b-scroll-link
@@ -8405,7 +8464,6 @@ loleknbolek.com##.siteHeader--fixed:style(position:static !important)
 loleknbolek.com##.siteHeader-content
 loleknbolek.com##.theiaStickySidebar:style(position:static !important)
 
-losst.ru##.sticky-navigation:style(position:static !important)
 losst.ru###catcher
 losst.ru##.widget:has-text(/Реклама|Мы вконтакте|Обнаружили опечатку?|Оставайтесь с нами|Мы в Twitter/)
 losst.ru##.image-logo
@@ -9367,7 +9425,6 @@ nakivo.com##.kk-star-ratings
 ! popup
 napolke.ru##[class^=App__AgePopupContent]
 napolke.ru##.mui-fixed
-napolke.ru##body:style(overflow:auto !important)
 ! header logo
 napolke.ru##[class^=Header__StyledMainLogo]
 ! footer logos
@@ -9697,7 +9754,6 @@ odveryah.ru##.site-branding
 ofsant.ru###modal_city-select-panel
 ofsant.ru##.fv-modal-stack.in.fade.modal-backdrop
 ofsant.ru###bxdinamic_bitronic2_auth_not_authorized.with-icon.account-not-authorized.top-line-item
-ofsant.ru##body:style(overflow:auto !important)
 ofsant.ru##.top-line
 ofsant.ru##.brand
 ofsant.ru##.clone.click-stay.yourcity-popup.notification-popup
@@ -10101,7 +10157,6 @@ petrovich.ru##.bottom-catalog-info__for-buyer
 philips.ru##.mfp-content
 philips.ru##.mfp-ready.mfp-wrap2
 philips.ru##.mfp-ready.mfp-bg2
-philips.ru##body:style(overflow:auto !important)
 ! other
 philips.ru##.p-toggler
 philips.ru##.p-open.p-panel
@@ -11422,7 +11477,6 @@ samag.ru##div.popmechanic-wrapper
 samag.ru###popmechanic-paranja
 samag.ru##.popmechanic-close
 samag.ru###popmechanic-snippet
-samag.ru##body:style(overflow:auto !important)
 
 samforum.org##.navbar_notice
 samforum.org##.header_bg
@@ -11592,7 +11646,6 @@ sberbank.ru##.chat-retail-block
 bonus-spasibo.ru##.header-top:style(position:absolute !important)
 spasibosberbank.ru##.popup-custom__container
 spasibosberbank.ru##.popup-custom
-spasibosberbank.ru##body:style(overflow:auto !important)
 spasibosberbank.ru##.popup_app_container
 
 scfh.ru##.menu:style(position:static !important)
@@ -11761,7 +11814,7 @@ shopsirop.ru##noindex
 
 sid-500.com##.footer-wrap
 
-||signal-sos.ru/image/wall4.jpg$image
+||signal-sos.ru/image/wall4.jpg
 signal-sos.ru##.soci
 ||signal-sos.ru/catalog/view/theme/default/image/payments.png$image
 
@@ -11770,7 +11823,6 @@ silagrupp.ru##.b1
 silagrupp.ru##.modal-dialog
 silagrupp.ru##.modal
 silagrupp.ru##.modal-backdrop
-silagrupp.ru##html:style(overflow:auto !important)
 
 silastroy.com##.kc__wrap
 
@@ -12487,7 +12539,6 @@ texnoblogger.com##.author-box
 texnoblogger.com###respond
 texnoblogger.com##.pinglist
 
-techopedia.com##body:style(overflow:auto !important)
 techopedia.com##.topSiteLink
 techopedia.com##.navbar:style(position:static !important)
 techopedia.com##body:style(padding-top:0px !important)
@@ -12613,8 +12664,7 @@ theatlantic.com##.c-nudge__container
 thebell.io##.mb-hide.tb-hide.ball
 thebell.io##.header--fixed:style(position:static !important)
 
-online.theinpaint.com##.modal-backdrop
-online.theinpaint.com##body:style(overflow:auto !important)
+theinpaint.com##.modal-backdrop
 
 theinsider.ua##.carousel
 
@@ -12717,7 +12767,6 @@ timeweb.com##.ia-splitter:style(padding-top:0px !important)
 
 tiu.ru##.x-overlay__dialog_type_padded.x-overlay__dialog
 tiu.ru##.x-overlay
-tiu.ru##body:style(overflow:auto !important)
 tiu.ru###besida
 chat.my.tiu.ru
 ||tiu.ru/renders/certification_widget/$3p
@@ -12830,7 +12879,6 @@ tproger.ru##.elevator-arrow
 trackersimulator.org
 
 transip.be,transip.eu##.one-modal
-transip.be,transip.eu##body:style(overflow:auto !important)
 
 travel.ru###headerlogo
 travel.ru##.b-viewer-indicator
@@ -13286,7 +13334,6 @@ v-detalyah.ru##.footer-info
 
 vdyoutube.com##.modal
 vdyoutube.com##.in.fade.modal-backdrop
-vdyoutube.com##body:style(overflow:auto !important)
 
 vedomosti.ru##.hide-offer__news
 vedomosti.ru##.hide-offer__container
@@ -13423,7 +13470,6 @@ vkusvill.ru##.Footer__teasers
 vkusvill.ru##.VVNewsMainBlock
 vkusvill.ru##.Header__subnavLinkDoverium
 ! fixed top
-vkusvill.ru##body:style(overflow:auto !important)
 vkusvill.ru##.Header--sticky.fixed-top.Header:style(position:static !important)
 ! other
 vkusvill.ru##.ProductCard__cartButton
@@ -13475,8 +13521,6 @@ vodkomotornik.ru###pmreginfo
 vodkomotornik.ru###OnBottom
 
 vodoparad.ru##.fancybox-overlay-fixed.fancybox-overlay
-vodoparad.ru##body:style(overflow:auto !important)
-vodoparad.ru##.fancybox-lock:style(overflow:auto !important)
 vodoparad.ru##.header-phone-n
 vodoparad.ru##.count
 
@@ -13780,7 +13824,6 @@ webpushapi.wildberries.ru
 
 wiley.com###selectCountryModalWnd
 wiley.com##.in.fade.modal-backdrop
-wiley.com##body:style(overflow:auto !important)
 wiley.com##.affix.main-sticky-header:style(position:static !important)
 
 ! from EasyList. Wikipedia is great project.
@@ -14451,8 +14494,6 @@ xn----7sbenacbbl2bhik1tlb.xn--p1ai##.snowfall-flakes
 !xn----7sbeemsdjlc1kud.xn--p1ai##.fancybox-slide--complete
 !xn----7sbeemsdjlc1kud.xn--p1ai##.fancybox-slider-wrap
 !xn----7sbeemsdjlc1kud.xn--p1ai##.fancybox-bg
-xn----7sbeemsdjlc1kud.xn--p1ai##body:style(overflow:auto !important)
-xn----7sbeemsdjlc1kud.xn--p1ai##.fancybox-enabled:style(overflow:auto !important)
 xn----7sbeemsdjlc1kud.xn--p1ai##.fancybox-is-modal
 xn----7sbeemsdjlc1kud.xn--p1ai###top-bar:style(position:static !important)
 
