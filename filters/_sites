@@ -2046,16 +2046,144 @@ _cookie_policy_
 
 
 
+! Rules below look very bulky. This is because uBlock Origin does not allow general rules for it.
+! See https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters :
+! "Important: If a procedural cosmetic filter is generic, i.e. meant to apply everywhere, it will be discarded by uBO"
+! Maybe sometimes it will be changed but right now it is a fact. So here is some workaround.
+
 !! unblock page scrolling
 ! unblock page scrolling when modal popup is opened (even if the popup was removed by uBlock)
-! in the comments see some of the catched sites. But keep in mind that there are many more.
+! in the comments below you can see some of the catched sites. But keep in mind that there are many, many more.
+!
+! ##body:style(overflow:auto !important)
+! see explanation above and examples below
+biz##body:style(overflow:auto !important)
+by##body:style(overflow:auto !important)
+cc##body:style(overflow:auto !important)
+club##body:style(overflow:auto !important)
+co##body:style(overflow:auto !important)
 com##body:style(overflow:auto !important)
 eu##body:style(overflow:auto !important)
+guru##body:style(overflow:auto !important)
+hk##body:style(overflow:auto !important)
+info##body:style(overflow:auto !important)
+io##body:style(overflow:auto !important)
+kz##body:style(overflow:auto !important)
+lv##body:style(overflow:auto !important)
+me##body:style(overflow:auto !important)
+name##body:style(overflow:auto !important)
 net##body:style(overflow:auto !important)
+org##body:style(overflow:auto !important)
 post##body:style(overflow:auto !important)
 ru##body:style(overflow:auto !important)
+su##body:style(overflow:auto !important)
+to##body:style(overflow:auto !important)
+today##body:style(overflow:auto !important)
+top##body:style(overflow:auto !important)
+tv##body:style(overflow:auto !important)
 xn--p1ai##body:style(overflow:auto !important)
+ua##body:style(overflow:auto !important)
+uk##body:style(overflow:auto !important)
+ws##body:style(overflow:auto !important)
+!
+! ##html:style(overflow:auto !important)
+! see explanation above and examples below
+biz##html:style(overflow:auto !important)
+by##html:style(overflow:auto !important)
+cc##html:style(overflow:auto !important)
+club##html:style(overflow:auto !important)
+co##html:style(overflow:auto !important)
+com##html:style(overflow:auto !important)
+eu##html:style(overflow:auto !important)
+guru##html:style(overflow:auto !important)
+hk##html:style(overflow:auto !important)
+info##html:style(overflow:auto !important)
+io##html:style(overflow:auto !important)
+kz##html:style(overflow:auto !important)
+lv##html:style(overflow:auto !important)
+me##html:style(overflow:auto !important)
+name##html:style(overflow:auto !important)
+net##html:style(overflow:auto !important)
+org##html:style(overflow:auto !important)
+post##html:style(overflow:auto !important)
+ru##html:style(overflow:auto !important)
+su##html:style(overflow:auto !important)
+to##html:style(overflow:auto !important)
+today##html:style(overflow:auto !important)
+top##html:style(overflow:auto !important)
+tv##html:style(overflow:auto !important)
+xn--p1ai##html:style(overflow:auto !important)
+ua##html:style(overflow:auto !important)
+uk##html:style(overflow:auto !important)
+ws##html:style(overflow:auto !important)
+!
+! ##.fancybox-enabled:style(overflow:auto !important)
+! see explanation above and examples below
+biz##.fancybox-enabled:style(overflow:auto !important)
+by##.fancybox-enabled:style(overflow:auto !important)
+cc##.fancybox-enabled:style(overflow:auto !important)
+club##.fancybox-enabled:style(overflow:auto !important)
+co##.fancybox-enabled:style(overflow:auto !important)
+com##.fancybox-enabled:style(overflow:auto !important)
+eu##.fancybox-enabled:style(overflow:auto !important)
+guru##.fancybox-enabled:style(overflow:auto !important)
+hk##.fancybox-enabled:style(overflow:auto !important)
+info##.fancybox-enabled:style(overflow:auto !important)
+io##.fancybox-enabled:style(overflow:auto !important)
+kz##.fancybox-enabled:style(overflow:auto !important)
+lv##.fancybox-enabled:style(overflow:auto !important)
+me##.fancybox-enabled:style(overflow:auto !important)
+name##.fancybox-enabled:style(overflow:auto !important)
+net##.fancybox-enabled:style(overflow:auto !important)
+org##.fancybox-enabled:style(overflow:auto !important)
+post##.fancybox-enabled:style(overflow:auto !important)
+ru##.fancybox-enabled:style(overflow:auto !important)
+su##.fancybox-enabled:style(overflow:auto !important)
+to##.fancybox-enabled:style(overflow:auto !important)
+today##.fancybox-enabled:style(overflow:auto !important)
+top##.fancybox-enabled:style(overflow:auto !important)
+tv##.fancybox-enabled:style(overflow:auto !important)
+xn--p1ai##.fancybox-enabled:style(overflow:auto !important)
+ua##.fancybox-enabled:style(overflow:auto !important)
+uk##.fancybox-enabled:style(overflow:auto !important)
+ws##.fancybox-enabled:style(overflow:auto !important)
+!
+! ##.fancybox-lock:style(overflow:auto !important)
+! see explanation above and examples below
+biz##.fancybox-lock:style(overflow:auto !important)
+by##.fancybox-lock:style(overflow:auto !important)
+cc##.fancybox-lock:style(overflow:auto !important)
+club##.fancybox-lock:style(overflow:auto !important)
+co##.fancybox-lock:style(overflow:auto !important)
+com##.fancybox-lock:style(overflow:auto !important)
+eu##.fancybox-lock:style(overflow:auto !important)
+guru##.fancybox-lock:style(overflow:auto !important)
+hk##.fancybox-lock:style(overflow:auto !important)
+info##.fancybox-lock:style(overflow:auto !important)
+io##.fancybox-lock:style(overflow:auto !important)
+kz##.fancybox-lock:style(overflow:auto !important)
+lv##.fancybox-lock:style(overflow:auto !important)
+me##.fancybox-lock:style(overflow:auto !important)
+name##.fancybox-lock:style(overflow:auto !important)
+net##.fancybox-lock:style(overflow:auto !important)
+org##.fancybox-lock:style(overflow:auto !important)
+post##.fancybox-lock:style(overflow:auto !important)
+ru##.fancybox-lock:style(overflow:auto !important)
+su##.fancybox-lock:style(overflow:auto !important)
+to##.fancybox-lock:style(overflow:auto !important)
+today##.fancybox-lock:style(overflow:auto !important)
+top##.fancybox-lock:style(overflow:auto !important)
+tv##.fancybox-lock:style(overflow:auto !important)
+xn--p1ai##.fancybox-lock:style(overflow:auto !important)
+ua##.fancybox-lock:style(overflow:auto !important)
+uk##.fancybox-lock:style(overflow:auto !important)
+ws##.fancybox-lock:style(overflow:auto !important)
 	!academyit.ru##body:style(overflow:auto !important)
+	!academyit.ru##html:style(overflow:auto !important)
+	!admobispy.com##html:style(overflow:auto !important)
+	!turboimagehost.com##body:style(overflow:auto !important)
+	!vodoparad.ru##.fancybox-lock:style(overflow:auto !important)
+	!xn----7sbeemsdjlc1kud.xn--p1ai##.fancybox-enabled:style(overflow:auto !important)
     !au.ru##body:style(overflow:auto !important)
     !careerist.ru##body:style(overflow:auto !important)
     !davitamebel.ru##body:style(overflow:auto !important)
@@ -2072,54 +2200,1734 @@ xn--p1ai##body:style(overflow:auto !important)
     !ofsant.ru##body:style(overflow:auto !important)
     !philips.ru##body:style(overflow:auto !important)
     !samag.ru##body:style(overflow:auto !important)
+    !silagrupp.ru##html:style(overflow:auto !important)
     !spasibosberbank.ru##body:style(overflow:auto !important)
     !techopedia.com##body:style(overflow:auto !important)
     !theinpaint.com##body:style(overflow:auto !important)
     !tiu.ru##body:style(overflow:auto !important)
     !transip.be,transip.eu##body:style(overflow:auto !important)
-	!turboimagehost.com##body:style(overflow:auto !important)
     !vdyoutube.com##body:style(overflow:auto !important)
     !vkusvill.ru##body:style(overflow:auto !important)
     !vodoparad.ru##body:style(overflow:auto !important)
     !wiley.com##body:style(overflow:auto !important)
     !xn----7sbeemsdjlc1kud.xn--p1ai##body:style(overflow:auto !important)
-com##html:style(overflow:auto !important)
-eu##html:style(overflow:auto !important)
-net##html:style(overflow:auto !important)
-post##html:style(overflow:auto !important)
-ru##html:style(overflow:auto !important)
-xn--p1ai##html:style(overflow:auto !important)
-	!academyit.ru##html:style(overflow:auto !important)
-	!admobispy.com##html:style(overflow:auto !important)
-    !silagrupp.ru##html:style(overflow:auto !important)
-com##.fancybox-enabled:style(overflow:auto !important)
-eu##.fancybox-enabled:style(overflow:auto !important)
-net##.fancybox-enabled:style(overflow:auto !important)
-post##.fancybox-enabled:style(overflow:auto !important)
-ru##.fancybox-enabled:style(overflow:auto !important)
-xn--p1ai##.fancybox-enabled:style(overflow:auto !important)
-	!xn----7sbeemsdjlc1kud.xn--p1ai##.fancybox-enabled:style(overflow:auto !important)
-com##.fancybox-lock:style(overflow:auto !important)
-eu##.fancybox-lock:style(overflow:auto !important)
-net##.fancybox-lock:style(overflow:auto !important)
-post##.fancybox-lock:style(overflow:auto !important)
-ru##.fancybox-lock:style(overflow:auto !important)
-xn--p1ai##.fancybox-lock:style(overflow:auto !important)
-	!vodoparad.ru##.fancybox-lock:style(overflow:auto !important)
-
 
 
 !! unstick header
-! Many sites are using anoying sticky elements. Which also hide useful screenspace.
-! in the comments see some of the catched sites. But keep in mind that there are many more.
+! Many sites are using annoying sticky elements. Which also hide useful screenspace.
+! in the comments below you can see some of the catched sites. But keep in mind that there are many, many more.
+!
+! unstick header, top menu etc
+!
+! ##.fixed-top:style(position:static !important)
+! see explanation above and examples below
+biz##.fixed-top:style(position:static !important)
+by##.fixed-top:style(position:static !important)
+cc##.fixed-top:style(position:static !important)
+club##.fixed-top:style(position:static !important)
+co##.fixed-top:style(position:static !important)
+com##.fixed-top:style(position:static !important)
+eu##.fixed-top:style(position:static !important)
+guru##.fixed-top:style(position:static !important)
+hk##.fixed-top:style(position:static !important)
+info##.fixed-top:style(position:static !important)
+io##.fixed-top:style(position:static !important)
+kz##.fixed-top:style(position:static !important)
+lv##.fixed-top:style(position:static !important)
+me##.fixed-top:style(position:static !important)
+name##.fixed-top:style(position:static !important)
+net##.fixed-top:style(position:static !important)
+org##.fixed-top:style(position:static !important)
+post##.fixed-top:style(position:static !important)
+ru##.fixed-top:style(position:static !important)
+su##.fixed-top:style(position:static !important)
+to##.fixed-top:style(position:static !important)
+today##.fixed-top:style(position:static !important)
+top##.fixed-top:style(position:static !important)
+tv##.fixed-top:style(position:static !important)
+xn--p1ai##.fixed-top:style(position:static !important)
+ua##.fixed-top:style(position:static !important)
+uk##.fixed-top:style(position:static !important)
+ws##.fixed-top:style(position:static !important)
+!
+! ##header:style(position:static !important)
+! see explanation above and examples below
+biz##header:style(position:static !important)
+by##header:style(position:static !important)
+cc##header:style(position:static !important)
+club##header:style(position:static !important)
+co##header:style(position:static !important)
+com##header:style(position:static !important)
+eu##header:style(position:static !important)
+guru##header:style(position:static !important)
+hk##header:style(position:static !important)
+info##header:style(position:static !important)
+io##header:style(position:static !important)
+kz##header:style(position:static !important)
+lv##header:style(position:static !important)
+me##header:style(position:static !important)
+name##header:style(position:static !important)
+net##header:style(position:static !important)
+org##header:style(position:static !important)
+post##header:style(position:static !important)
+ru##header:style(position:static !important)
+su##header:style(position:static !important)
+to##header:style(position:static !important)
+today##header:style(position:static !important)
+top##header:style(position:static !important)
+tv##header:style(position:static !important)
+xn--p1ai##header:style(position:static !important)
+ua##header:style(position:static !important)
+uk##header:style(position:static !important)
+ws##header:style(position:static !important)
+!
+! ##.header:style(position:static !important)
+biz##.header:style(position:static !important)
+by##.header:style(position:static !important)
+cc##.header:style(position:static !important)
+club##.header:style(position:static !important)
+co##.header:style(position:static !important)
+com##.header:style(position:static !important)
+eu##.header:style(position:static !important)
+guru##.header:style(position:static !important)
+hk##.header:style(position:static !important)
+info##.header:style(position:static !important)
+io##.header:style(position:static !important)
+kz##.header:style(position:static !important)
+lv##.header:style(position:static !important)
+me##.header:style(position:static !important)
+name##.header:style(position:static !important)
+net##.header:style(position:static !important)
+org##.header:style(position:static !important)
+post##.header:style(position:static !important)
+ru##.header:style(position:static !important)
+su##.header:style(position:static !important)
+to##.header:style(position:static !important)
+today##.header:style(position:static !important)
+top##.header:style(position:static !important)
+tv##.header:style(position:static !important)
+xn--p1ai##.header:style(position:static !important)
+ua##.header:style(position:static !important)
+uk##.header:style(position:static !important)
+ws##.header:style(position:static !important)
+!
+! ###header:style(position:static !important)
+! see explanation above and examples below
+biz###header:style(position:static !important)
+cc###header:style(position:static !important)
+club###header:style(position:static !important)
+co###header:style(position:static !important)
+com###header:style(position:static !important)
+eu###header:style(position:static !important)
+guru###header:style(position:static !important)
+hk###header:style(position:static !important)
+info###header:style(position:static !important)
+io###header:style(position:static !important)
+kz###header:style(position:static !important)
+lv###header:style(position:static !important)
+me###header:style(position:static !important)
+name###header:style(position:static !important)
+net###header:style(position:static !important)
+org###header:style(position:static !important)
+post###header:style(position:static !important)
+ru###header:style(position:static !important)
+su###header:style(position:static !important)
+to###header:style(position:static !important)
+today###header:style(position:static !important)
+top###header:style(position:static !important)
+tv###header:style(position:static !important)
+xn--p1ai###header:style(position:static !important)
+ua###header:style(position:static !important)
+uk###header:style(position:static !important)
+ws###header:style(position:static !important)
+!
+! ##.header_fixed:style(position:static !important)
+! see explanation above and examples below
+biz##.header_fixed:style(position:static !important)
+by##.header_fixed:style(position:static !important)
+cc##.header_fixed:style(position:static !important)
+club##.header_fixed:style(position:static !important)
+co##.header_fixed:style(position:static !important)
+com##.header_fixed:style(position:static !important)
+eu##.header_fixed:style(position:static !important)
+guru##.header_fixed:style(position:static !important)
+hk##.header_fixed:style(position:static !important)
+info##.header_fixed:style(position:static !important)
+io##.header_fixed:style(position:static !important)
+kz##.header_fixed:style(position:static !important)
+lv##.header_fixed:style(position:static !important)
+me##.header_fixed:style(position:static !important)
+name##.header_fixed:style(position:static !important)
+net##.header_fixed:style(position:static !important)
+org##.header_fixed:style(position:static !important)
+post##.header_fixed:style(position:static !important)
+ru##.header_fixed:style(position:static !important)
+su##.header_fixed:style(position:static !important)
+to##.header_fixed:style(position:static !important)
+today##.header_fixed:style(position:static !important)
+top##.header_fixed:style(position:static !important)
+tv##.header_fixed:style(position:static !important)
+xn--p1ai##.header_fixed:style(position:static !important)
+ua##.header_fixed:style(position:static !important)
+uk##.header_fixed:style(position:static !important)
+ws##.header_fixed:style(position:static !important)
+!
+! ##.main_menu:style(position:static !important)
+! see explanation above and examples below
+biz##.main_menu:style(position:static !important)
+by##.main_menu:style(position:static !important)
+cc##.main_menu:style(position:static !important)
+club##.main_menu:style(position:static !important)
+co##.main_menu:style(position:static !important)
+com##.main_menu:style(position:static !important)
+eu##.main_menu:style(position:static !important)
+guru##.main_menu:style(position:static !important)
+hk##.main_menu:style(position:static !important)
+info##.main_menu:style(position:static !important)
+io##.main_menu:style(position:static !important)
+kz##.main_menu:style(position:static !important)
+lv##.main_menu:style(position:static !important)
+me##.main_menu:style(position:static !important)
+name##.main_menu:style(position:static !important)
+net##.main_menu:style(position:static !important)
+org##.main_menu:style(position:static !important)
+post##.main_menu:style(position:static !important)
+ru##.main_menu:style(position:static !important)
+su##.main_menu:style(position:static !important)
+to##.main_menu:style(position:static !important)
+today##.main_menu:style(position:static !important)
+top##.main_menu:style(position:static !important)
+tv##.main_menu:style(position:static !important)
+xn--p1ai##.main_menu:style(position:static !important)
+ua##.main_menu:style(position:static !important)
+uk##.main_menu:style(position:static !important)
+ws##.main_menu:style(position:static !important)
+!
+! ##.main_nav:style(position:static !important)
+! see explanation above and examples below
+biz##.main_nav:style(position:static !important)
+by##.main_nav:style(position:static !important)
+cc##.main_nav:style(position:static !important)
+club##.main_nav:style(position:static !important)
+co##.main_nav:style(position:static !important)
+com##.main_nav:style(position:static !important)
+eu##.main_nav:style(position:static !important)
+guru##.main_nav:style(position:static !important)
+hk##.main_nav:style(position:static !important)
+info##.main_nav:style(position:static !important)
+io##.main_nav:style(position:static !important)
+kz##.main_nav:style(position:static !important)
+lv##.main_nav:style(position:static !important)
+me##.main_nav:style(position:static !important)
+name##.main_nav:style(position:static !important)
+net##.main_nav:style(position:static !important)
+org##.main_nav:style(position:static !important)
+post##.main_nav:style(position:static !important)
+ru##.main_nav:style(position:static !important)
+su##.main_nav:style(position:static !important)
+to##.main_nav:style(position:static !important)
+today##.main_nav:style(position:static !important)
+top##.main_nav:style(position:static !important)
+tv##.main_nav:style(position:static !important)
+xn--p1ai##.main_nav:style(position:static !important)
+ua##.main_nav:style(position:static !important)
+uk##.main_nav:style(position:static !important)
+ws##.main_nav:style(position:static !important)
+!
+! ##.navbar:style(position:static !important)
+! see explanation above and examples below
+biz##.navbar:style(position:static !important)
+by##.navbar:style(position:static !important)
+cc##.navbar:style(position:static !important)
+club##.navbar:style(position:static !important)
+co##.navbar:style(position:static !important)
+com##.navbar:style(position:static !important)
+eu##.navbar:style(position:static !important)
+guru##.navbar:style(position:static !important)
+hk##.navbar:style(position:static !important)
+info##.navbar:style(position:static !important)
+io##.navbar:style(position:static !important)
+kz##.navbar:style(position:static !important)
+lv##.navbar:style(position:static !important)
+me##.navbar:style(position:static !important)
+name##.navbar:style(position:static !important)
+net##.navbar:style(position:static !important)
+org##.navbar:style(position:static !important)
+post##.navbar:style(position:static !important)
+ru##.navbar:style(position:static !important)
+su##.navbar:style(position:static !important)
+to##.navbar:style(position:static !important)
+today##.navbar:style(position:static !important)
+top##.navbar:style(position:static !important)
+tv##.navbar:style(position:static !important)
+xn--p1ai##.navbar:style(position:static !important)
+ua##.navbar:style(position:static !important)
+uk##.navbar:style(position:static !important)
+ws##.navbar:style(position:static !important)
+!
+! ##.navbar-fixed:style(position:static !important)
+! see explanation above and examples below
+biz##.navbar-fixed:style(position:static !important)
+by##.navbar-fixed:style(position:static !important)
+cc##.navbar-fixed:style(position:static !important)
+club##.navbar-fixed:style(position:static !important)
+co##.navbar-fixed:style(position:static !important)
+com##.navbar-fixed:style(position:static !important)
+eu##.navbar-fixed:style(position:static !important)
+guru##.navbar-fixed:style(position:static !important)
+hk##.navbar-fixed:style(position:static !important)
+info##.navbar-fixed:style(position:static !important)
+io##.navbar-fixed:style(position:static !important)
+kz##.navbar-fixed:style(position:static !important)
+lv##.navbar-fixed:style(position:static !important)
+me##.navbar-fixed:style(position:static !important)
+name##.navbar-fixed:style(position:static !important)
+net##.navbar-fixed:style(position:static !important)
+org##.navbar-fixed:style(position:static !important)
+post##.navbar-fixed:style(position:static !important)
+ru##.navbar-fixed:style(position:static !important)
+su##.navbar-fixed:style(position:static !important)
+to##.navbar-fixed:style(position:static !important)
+today##.navbar-fixed:style(position:static !important)
+top##.navbar-fixed:style(position:static !important)
+tv##.navbar-fixed:style(position:static !important)
+xn--p1ai##.navbar-fixed:style(position:static !important)
+ua##.navbar-fixed:style(position:static !important)
+uk##.navbar-fixed:style(position:static !important)
+ws##.navbar-fixed:style(position:static !important)
+!
+! ##.navbar-fixed-bottom:style(position:static !important)
+! see explanation above and examples below
+biz##.navbar-fixed-bottom:style(position:static !important)
+cc##.navbar-fixed-bottom:style(position:static !important)
+club##.navbar-fixed-bottom:style(position:static !important)
+co##.navbar-fixed-bottom:style(position:static !important)
+com##.navbar-fixed-bottom:style(position:static !important)
+eu##.navbar-fixed-bottom:style(position:static !important)
+guru##.navbar-fixed-bottom:style(position:static !important)
+hk##.navbar-fixed-bottom:style(position:static !important)
+info##.navbar-fixed-bottom:style(position:static !important)
+io##.navbar-fixed-bottom:style(position:static !important)
+kz##.navbar-fixed-bottom:style(position:static !important)
+lv##.navbar-fixed-bottom:style(position:static !important)
+me##.navbar-fixed-bottom:style(position:static !important)
+name##.navbar-fixed-bottom:style(position:static !important)
+net##.navbar-fixed-bottom:style(position:static !important)
+org##.navbar-fixed-bottom:style(position:static !important)
+post##.navbar-fixed-bottom:style(position:static !important)
+ru##.navbar-fixed-bottom:style(position:static !important)
+su##.navbar-fixed-bottom:style(position:static !important)
+to##.navbar-fixed-bottom:style(position:static !important)
+today##.navbar-fixed-bottom:style(position:static !important)
+top##.navbar-fixed-bottom:style(position:static !important)
+tv##.navbar-fixed-bottom:style(position:static !important)
+xn--p1ai##.navbar-fixed-bottom:style(position:static !important)
+ua##.navbar-fixed-bottom:style(position:static !important)
+uk##.navbar-fixed-bottom:style(position:static !important)
+ws##.navbar-fixed-bottom:style(position:static !important)
+!
+! ##.navbar-fixed-top:style(position:static !important)
+! see explanation above and examples below
+biz##.navbar-fixed-top:style(position:static !important)
+by##.navbar-fixed-top:style(position:static !important)
+cc##.navbar-fixed-top:style(position:static !important)
+club##.navbar-fixed-top:style(position:static !important)
+co##.navbar-fixed-top:style(position:static !important)
+com##.navbar-fixed-top:style(position:static !important)
+eu##.navbar-fixed-top:style(position:static !important)
+guru##.navbar-fixed-top:style(position:static !important)
+hk##.navbar-fixed-top:style(position:static !important)
+info##.navbar-fixed-top:style(position:static !important)
+io##.navbar-fixed-top:style(position:static !important)
+kz##.navbar-fixed-top:style(position:static !important)
+lv##.navbar-fixed-top:style(position:static !important)
+me##.navbar-fixed-top:style(position:static !important)
+name##.navbar-fixed-top:style(position:static !important)
+net##.navbar-fixed-top:style(position:static !important)
+org##.navbar-fixed-top:style(position:static !important)
+post##.navbar-fixed-top:style(position:static !important)
+ru##.navbar-fixed-top:style(position:static !important)
+su##.navbar-fixed-top:style(position:static !important)
+to##.navbar-fixed-top:style(position:static !important)
+today##.navbar-fixed-top:style(position:static !important)
+top##.navbar-fixed-top:style(position:static !important)
+tv##.navbar-fixed-top:style(position:static !important)
+xn--p1ai##.navbar-fixed-top:style(position:static !important)
+ua##.navbar-fixed-top:style(position:static !important)
+uk##.navbar-fixed-top:style(position:static !important)
+ws##.navbar-fixed-top:style(position:static !important)
+!
+! ###navigation:style(position:static !important)
+! see explanation above and examples below
+biz###navigation:style(position:static !important)
+by###navigation:style(position:static !important)
+cc###navigation:style(position:static !important)
+club###navigation:style(position:static !important)
+co###navigation:style(position:static !important)
+com###navigation:style(position:static !important)
+eu###navigation:style(position:static !important)
+guru###navigation:style(position:static !important)
+hk###navigation:style(position:static !important)
+info###navigation:style(position:static !important)
+io###navigation:style(position:static !important)
+kz###navigation:style(position:static !important)
+lv###navigation:style(position:static !important)
+me###navigation:style(position:static !important)
+name###navigation:style(position:static !important)
+net###navigation:style(position:static !important)
+org###navigation:style(position:static !important)
+post###navigation:style(position:static !important)
+ru###navigation:style(position:static !important)
+su###navigation:style(position:static !important)
+to###navigation:style(position:static !important)
+today###navigation:style(position:static !important)
+top###navigation:style(position:static !important)
+tv###navigation:style(position:static !important)
+xn--p1ai###navigation:style(position:static !important)
+ua###navigation:style(position:static !important)
+uk###navigation:style(position:static !important)
+ws###navigation:style(position:static !important)
+!
+! ##.p-navSticky:style(position:static !important)
+! see explanation above and examples below
+biz##.p-navSticky:style(position:static !important)
+by##.p-navSticky:style(position:static !important)
+cc##.p-navSticky:style(position:static !important)
+club##.p-navSticky:style(position:static !important)
+co##.p-navSticky:style(position:static !important)
+com##.p-navSticky:style(position:static !important)
+eu##.p-navSticky:style(position:static !important)
+guru##.p-navSticky:style(position:static !important)
+hk##.p-navSticky:style(position:static !important)
+info##.p-navSticky:style(position:static !important)
+io##.p-navSticky:style(position:static !important)
+kz##.p-navSticky:style(position:static !important)
+lv##.p-navSticky:style(position:static !important)
+me##.p-navSticky:style(position:static !important)
+name##.p-navSticky:style(position:static !important)
+net##.p-navSticky:style(position:static !important)
+org##.p-navSticky:style(position:static !important)
+post##.p-navSticky:style(position:static !important)
+ru##.p-navSticky:style(position:static !important)
+su##.p-navSticky:style(position:static !important)
+to##.p-navSticky:style(position:static !important)
+today##.p-navSticky:style(position:static !important)
+top##.p-navSticky:style(position:static !important)
+tv##.p-navSticky:style(position:static !important)
+xn--p1ai##.p-navSticky:style(position:static !important)
+ua##.p-navSticky:style(position:static !important)
+uk##.p-navSticky:style(position:static !important)
+ws##.p-navSticky:style(position:static !important)
+!
+! ##.p-navSticky--all:style(position:static !important)
+! see explanation above and examples below
+biz##.p-navSticky--all:style(position:static !important)
+by##.p-navSticky--all:style(position:static !important)
+cc##.p-navSticky--all:style(position:static !important)
+club##.p-navSticky--all:style(position:static !important)
+co##.p-navSticky--all:style(position:static !important)
+com##.p-navSticky--all:style(position:static !important)
+eu##.p-navSticky--all:style(position:static !important)
+guru##.p-navSticky--all:style(position:static !important)
+hk##.p-navSticky--all:style(position:static !important)
+info##.p-navSticky--all:style(position:static !important)
+io##.p-navSticky--all:style(position:static !important)
+kz##.p-navSticky--all:style(position:static !important)
+lv##.p-navSticky--all:style(position:static !important)
+me##.p-navSticky--all:style(position:static !important)
+name##.p-navSticky--all:style(position:static !important)
+net##.p-navSticky--all:style(position:static !important)
+org##.p-navSticky--all:style(position:static !important)
+post##.p-navSticky--all:style(position:static !important)
+ru##.p-navSticky--all:style(position:static !important)
+su##.p-navSticky--all:style(position:static !important)
+to##.p-navSticky--all:style(position:static !important)
+today##.p-navSticky--all:style(position:static !important)
+top##.p-navSticky--all:style(position:static !important)
+tv##.p-navSticky--all:style(position:static !important)
+xn--p1ai##.p-navSticky--all:style(position:static !important)
+ua##.p-navSticky--all:style(position:static !important)
+uk##.p-navSticky--all:style(position:static !important)
+ws##.p-navSticky--all:style(position:static !important)
+!
+! ##.p-navSticky--primary:style(position:static !important)
+! see explanation above and examples below
+biz##.p-navSticky--primary:style(position:static !important)
+by##.p-navSticky--primary:style(position:static !important)
+cc##.p-navSticky--primary:style(position:static !important)
+club##.p-navSticky--primary:style(position:static !important)
+co##.p-navSticky--primary:style(position:static !important)
+com##.p-navSticky--primary:style(position:static !important)
+eu##.p-navSticky--primary:style(position:static !important)
+guru##.p-navSticky--primary:style(position:static !important)
+hk##.p-navSticky--primary:style(position:static !important)
+info##.p-navSticky--primary:style(position:static !important)
+io##.p-navSticky--primary:style(position:static !important)
+kz##.p-navSticky--primary:style(position:static !important)
+lv##.p-navSticky--primary:style(position:static !important)
+me##.p-navSticky--primary:style(position:static !important)
+name##.p-navSticky--primary:style(position:static !important)
+net##.p-navSticky--primary:style(position:static !important)
+org##.p-navSticky--primary:style(position:static !important)
+post##.p-navSticky--primary:style(position:static !important)
+ru##.p-navSticky--primary:style(position:static !important)
+su##.p-navSticky--primary:style(position:static !important)
+to##.p-navSticky--primary:style(position:static !important)
+today##.p-navSticky--primary:style(position:static !important)
+top##.p-navSticky--primary:style(position:static !important)
+tv##.p-navSticky--primary:style(position:static !important)
+xn--p1ai##.p-navSticky--primary:style(position:static !important)
+ua##.p-navSticky--primary:style(position:static !important)
+uk##.p-navSticky--primary:style(position:static !important)
+ws##.p-navSticky--primary:style(position:static !important)
+!
+! ##.site-header:style(position:static !important)
+! see explanation above and examples below
+biz##.site-header:style(position:static !important)
+by##.site-header:style(position:static !important)
+cc##.site-header:style(position:static !important)
+club##.site-header:style(position:static !important)
+co##.site-header:style(position:static !important)
+com##.site-header:style(position:static !important)
+eu##.site-header:style(position:static !important)
+guru##.site-header:style(position:static !important)
+hk##.site-header:style(position:static !important)
+info##.site-header:style(position:static !important)
+io##.site-header:style(position:static !important)
+kz##.site-header:style(position:static !important)
+lv##.site-header:style(position:static !important)
+me##.site-header:style(position:static !important)
+name##.site-header:style(position:static !important)
+net##.site-header:style(position:static !important)
+org##.site-header:style(position:static !important)
+post##.site-header:style(position:static !important)
+ru##.site-header:style(position:static !important)
+su##.site-header:style(position:static !important)
+to##.site-header:style(position:static !important)
+today##.site-header:style(position:static !important)
+top##.site-header:style(position:static !important)
+tv##.site-header:style(position:static !important)
+xn--p1ai##.site-header:style(position:static !important)
+ua##.site-header:style(position:static !important)
+uk##.site-header:style(position:static !important)
+ws##.site-header:style(position:static !important)
+!
+! ##.site-navigation-fixed:style(position:static !important)
+! see explanation above and examples below
+biz##.site-navigation-fixed:style(position:static !important)
+by##.site-navigation-fixed:style(position:static !important)
+cc##.site-navigation-fixed:style(position:static !important)
+club##.site-navigation-fixed:style(position:static !important)
+co##.site-navigation-fixed:style(position:static !important)
+com##.site-navigation-fixed:style(position:static !important)
+eu##.site-navigation-fixed:style(position:static !important)
+guru##.site-navigation-fixed:style(position:static !important)
+hk##.site-navigation-fixed:style(position:static !important)
+info##.site-navigation-fixed:style(position:static !important)
+io##.site-navigation-fixed:style(position:static !important)
+kz##.site-navigation-fixed:style(position:static !important)
+lv##.site-navigation-fixed:style(position:static !important)
+me##.site-navigation-fixed:style(position:static !important)
+name##.site-navigation-fixed:style(position:static !important)
+net##.site-navigation-fixed:style(position:static !important)
+org##.site-navigation-fixed:style(position:static !important)
+post##.site-navigation-fixed:style(position:static !important)
+ru##.site-navigation-fixed:style(position:static !important)
+su##.site-navigation-fixed:style(position:static !important)
+to##.site-navigation-fixed:style(position:static !important)
+today##.site-navigation-fixed:style(position:static !important)
+top##.site-navigation-fixed:style(position:static !important)
+tv##.site-navigation-fixed:style(position:static !important)
+xn--p1ai##.site-navigation-fixed:style(position:static !important)
+ua##.site-navigation-fixed:style(position:static !important)
+uk##.site-navigation-fixed:style(position:static !important)
+ws##.site-navigation-fixed:style(position:static !important)
+!
+! ##.sticky-navigation:style(position:static !important)
+! see explanation above and examples below
+biz##.sticky-navigation:style(position:static !important)
+by##.sticky-navigation:style(position:static !important)
+cc##.sticky-navigation:style(position:static !important)
+club##.sticky-navigation:style(position:static !important)
+co##.sticky-navigation:style(position:static !important)
 com##.sticky-navigation:style(position:static !important)
 eu##.sticky-navigation:style(position:static !important)
+guru##.sticky-navigation:style(position:static !important)
+hk##.sticky-navigation:style(position:static !important)
+info##.sticky-navigation:style(position:static !important)
+io##.sticky-navigation:style(position:static !important)
+kz##.sticky-navigation:style(position:static !important)
+lv##.sticky-navigation:style(position:static !important)
+me##.sticky-navigation:style(position:static !important)
+name##.sticky-navigation:style(position:static !important)
 net##.sticky-navigation:style(position:static !important)
+org##.sticky-navigation:style(position:static !important)
 post##.sticky-navigation:style(position:static !important)
 ru##.sticky-navigation:style(position:static !important)
+su##.sticky-navigation:style(position:static !important)
+to##.sticky-navigation:style(position:static !important)
+today##.sticky-navigation:style(position:static !important)
+top##.sticky-navigation:style(position:static !important)
+tv##.sticky-navigation:style(position:static !important)
 xn--p1ai##.sticky-navigation:style(position:static !important)
+ua##.sticky-navigation:style(position:static !important)
+uk##.sticky-navigation:style(position:static !important)
+ws##.sticky-navigation:style(position:static !important)
+!
+! ##.td-header-menu-wrap:style(position:static !important)
+! see explanation above and examples below
+biz##.td-header-menu-wrap:style(position:static !important)
+by##.td-header-menu-wrap:style(position:static !important)
+cc##.td-header-menu-wrap:style(position:static !important)
+club##.td-header-menu-wrap:style(position:static !important)
+co##.td-header-menu-wrap:style(position:static !important)
+com##.td-header-menu-wrap:style(position:static !important)
+eu##.td-header-menu-wrap:style(position:static !important)
+guru##.td-header-menu-wrap:style(position:static !important)
+hk##.td-header-menu-wrap:style(position:static !important)
+info##.td-header-menu-wrap:style(position:static !important)
+io##.td-header-menu-wrap:style(position:static !important)
+kz##.td-header-menu-wrap:style(position:static !important)
+lv##.td-header-menu-wrap:style(position:static !important)
+me##.td-header-menu-wrap:style(position:static !important)
+name##.td-header-menu-wrap:style(position:static !important)
+net##.td-header-menu-wrap:style(position:static !important)
+org##.td-header-menu-wrap:style(position:static !important)
+post##.td-header-menu-wrap:style(position:static !important)
+ru##.td-header-menu-wrap:style(position:static !important)
+su##.td-header-menu-wrap:style(position:static !important)
+to##.td-header-menu-wrap:style(position:static !important)
+today##.td-header-menu-wrap:style(position:static !important)
+top##.td-header-menu-wrap:style(position:static !important)
+tv##.td-header-menu-wrap:style(position:static !important)
+xn--p1ai##.td-header-menu-wrap:style(position:static !important)
+ua##.td-header-menu-wrap:style(position:static !important)
+uk##.td-header-menu-wrap:style(position:static !important)
+ws##.td-header-menu-wrap:style(position:static !important)
+!
+! ##.td-ss-main-sidebar:style(position:static !important)
+! see explanation above and examples below
+biz##.td-ss-main-sidebar:style(position:static !important)
+by##.td-ss-main-sidebar:style(position:static !important)
+cc##.td-ss-main-sidebar:style(position:static !important)
+club##.td-ss-main-sidebar:style(position:static !important)
+co##.td-ss-main-sidebar:style(position:static !important)
+com##.td-ss-main-sidebar:style(position:static !important)
+eu##.td-ss-main-sidebar:style(position:static !important)
+guru##.td-ss-main-sidebar:style(position:static !important)
+hk##.td-ss-main-sidebar:style(position:static !important)
+info##.td-ss-main-sidebar:style(position:static !important)
+io##.td-ss-main-sidebar:style(position:static !important)
+kz##.td-ss-main-sidebar:style(position:static !important)
+lv##.td-ss-main-sidebar:style(position:static !important)
+me##.td-ss-main-sidebar:style(position:static !important)
+name##.td-ss-main-sidebar:style(position:static !important)
+net##.td-ss-main-sidebar:style(position:static !important)
+org##.td-ss-main-sidebar:style(position:static !important)
+post##.td-ss-main-sidebar:style(position:static !important)
+ru##.td-ss-main-sidebar:style(position:static !important)
+su##.td-ss-main-sidebar:style(position:static !important)
+to##.td-ss-main-sidebar:style(position:static !important)
+today##.td-ss-main-sidebar:style(position:static !important)
+top##.td-ss-main-sidebar:style(position:static !important)
+tv##.td-ss-main-sidebar:style(position:static !important)
+xn--p1ai##.td-ss-main-sidebar:style(position:static !important)
+ua##.td-ss-main-sidebar:style(position:static !important)
+uk##.td-ss-main-sidebar:style(position:static !important)
+ws##.td-ss-main-sidebar:style(position:static !important)
+!
+! ##.uix_stickyBar:style(position:static !important)
+! see explanation above and examples below
+biz##.uix_stickyBar:style(position:static !important)
+by##.uix_stickyBar:style(position:static !important)
+cc##.uix_stickyBar:style(position:static !important)
+club##.uix_stickyBar:style(position:static !important)
+co##.uix_stickyBar:style(position:static !important)
+com##.uix_stickyBar:style(position:static !important)
+eu##.uix_stickyBar:style(position:static !important)
+guru##.uix_stickyBar:style(position:static !important)
+hk##.uix_stickyBar:style(position:static !important)
+info##.uix_stickyBar:style(position:static !important)
+io##.uix_stickyBar:style(position:static !important)
+kz##.uix_stickyBar:style(position:static !important)
+lv##.uix_stickyBar:style(position:static !important)
+me##.uix_stickyBar:style(position:static !important)
+name##.uix_stickyBar:style(position:static !important)
+net##.uix_stickyBar:style(position:static !important)
+org##.uix_stickyBar:style(position:static !important)
+post##.uix_stickyBar:style(position:static !important)
+ru##.uix_stickyBar:style(position:static !important)
+su##.uix_stickyBar:style(position:static !important)
+to##.uix_stickyBar:style(position:static !important)
+today##.uix_stickyBar:style(position:static !important)
+top##.uix_stickyBar:style(position:static !important)
+tv##.uix_stickyBar:style(position:static !important)
+xn--p1ai##.uix_stickyBar:style(position:static !important)
+ua##.uix_stickyBar:style(position:static !important)
+uk##.uix_stickyBar:style(position:static !important)
+ws##.uix_stickyBar:style(position:static !important)
+!
+! ##.x-navbar-fixed-top:style(position:static !important)
+! see explanation above and examples below
+biz##.x-navbar-fixed-top:style(position:static !important)
+by##.x-navbar-fixed-top:style(position:static !important)
+cc##.x-navbar-fixed-top:style(position:static !important)
+club##.x-navbar-fixed-top:style(position:static !important)
+co##.x-navbar-fixed-top:style(position:static !important)
+com##.x-navbar-fixed-top:style(position:static !important)
+eu##.x-navbar-fixed-top:style(position:static !important)
+guru##.x-navbar-fixed-top:style(position:static !important)
+hk##.x-navbar-fixed-top:style(position:static !important)
+info##.x-navbar-fixed-top:style(position:static !important)
+io##.x-navbar-fixed-top:style(position:static !important)
+kz##.x-navbar-fixed-top:style(position:static !important)
+lv##.x-navbar-fixed-top:style(position:static !important)
+me##.x-navbar-fixed-top:style(position:static !important)
+name##.x-navbar-fixed-top:style(position:static !important)
+net##.x-navbar-fixed-top:style(position:static !important)
+org##.x-navbar-fixed-top:style(position:static !important)
+post##.x-navbar-fixed-top:style(position:static !important)
+ru##.x-navbar-fixed-top:style(position:static !important)
+su##.x-navbar-fixed-top:style(position:static !important)
+to##.x-navbar-fixed-top:style(position:static !important)
+today##.x-navbar-fixed-top:style(position:static !important)
+top##.x-navbar-fixed-top:style(position:static !important)
+tv##.x-navbar-fixed-top:style(position:static !important)
+xn--p1ai##.x-navbar-fixed-top:style(position:static !important)
+ua##.x-navbar-fixed-top:style(position:static !important)
+uk##.x-navbar-fixed-top:style(position:static !important)
+ws##.x-navbar-fixed-top:style(position:static !important)
+!
+! ##.x-navbar-fixed-top:style(position:static !important)
+! see explanation above and examples below
+biz##.x-navbar-fixed-top:style(position:static !important)
+by##.x-navbar-fixed-top:style(position:static !important)
+cc##.x-navbar-fixed-top:style(position:static !important)
+club##.x-navbar-fixed-top:style(position:static !important)
+co##.x-navbar-fixed-top:style(position:static !important)
+com##.x-navbar-fixed-top:style(position:static !important)
+eu##.x-navbar-fixed-top:style(position:static !important)
+guru##.x-navbar-fixed-top:style(position:static !important)
+hk##.x-navbar-fixed-top:style(position:static !important)
+info##.x-navbar-fixed-top:style(position:static !important)
+io##.x-navbar-fixed-top:style(position:static !important)
+kz##.x-navbar-fixed-top:style(position:static !important)
+lv##.x-navbar-fixed-top:style(position:static !important)
+me##.x-navbar-fixed-top:style(position:static !important)
+name##.x-navbar-fixed-top:style(position:static !important)
+net##.x-navbar-fixed-top:style(position:static !important)
+org##.x-navbar-fixed-top:style(position:static !important)
+post##.x-navbar-fixed-top:style(position:static !important)
+ru##.x-navbar-fixed-top:style(position:static !important)
+su##.x-navbar-fixed-top:style(position:static !important)
+to##.x-navbar-fixed-top:style(position:static !important)
+today##.x-navbar-fixed-top:style(position:static !important)
+top##.x-navbar-fixed-top:style(position:static !important)
+tv##.x-navbar-fixed-top:style(position:static !important)
+xn--p1ai##.x-navbar-fixed-top:style(position:static !important)
+ua##.x-navbar-fixed-top:style(position:static !important)
+uk##.x-navbar-fixed-top:style(position:static !important)
+ws##.x-navbar-fixed-top:style(position:static !important)
+!
+! ##.sticky-navigation:style(position:static !important)
+! see explanation above and examples below
+biz##.sticky-navigation:style(position:static !important)
+by##.sticky-navigation:style(position:static !important)
+cc##.sticky-navigation:style(position:static !important)
+club##.sticky-navigation:style(position:static !important)
+co##.sticky-navigation:style(position:static !important)
+com##.sticky-navigation:style(position:static !important)
+eu##.sticky-navigation:style(position:static !important)
+guru##.sticky-navigation:style(position:static !important)
+hk##.sticky-navigation:style(position:static !important)
+info##.sticky-navigation:style(position:static !important)
+io##.sticky-navigation:style(position:static !important)
+kz##.sticky-navigation:style(position:static !important)
+lv##.sticky-navigation:style(position:static !important)
+me##.sticky-navigation:style(position:static !important)
+name##.sticky-navigation:style(position:static !important)
+net##.sticky-navigation:style(position:static !important)
+org##.sticky-navigation:style(position:static !important)
+post##.sticky-navigation:style(position:static !important)
+ru##.sticky-navigation:style(position:static !important)
+su##.sticky-navigation:style(position:static !important)
+to##.sticky-navigation:style(position:static !important)
+today##.sticky-navigation:style(position:static !important)
+top##.sticky-navigation:style(position:static !important)
+tv##.sticky-navigation:style(position:static !important)
+xn--p1ai##.sticky-navigation:style(position:static !important)
+ua##.sticky-navigation:style(position:static !important)
+uk##.sticky-navigation:style(position:static !important)
+ws##.sticky-navigation:style(position:static !important)
+    ! maybe ##.td-header-menu-wrap.td-affix:style(position:static !important) - usually they tend to be used together
 	!admobispy.com##.sticky-navigation:style(position:static !important)
+	!apescout.com###header:style(position:static !important)
+	!atvclub.ru##.uix_stickyBar.p-navSticky--all.p-navSticky:style(position:static !important)
+	!automania.ru##.is-sticky.uix_stickyBar.p-navSticky--all.p-navSticky:style(position:static !important)
+	!bgpview.io##.navbar-fixed-top:style(position:static !important)
+	!business2community.com##.navbar-fixed-top:style(position:static !important)
+	!codeby.net##.p-navSticky:style(position:static !important)
+	!computerperformance.co.uk###header:style(position:static !important)
+	!computerra.ru##.header:style(position:static !important)
+	!econet.ru###header:style(height:auto !important)
+	!forbes.ru##.header:style(position:static !important)
+	!fortgun.ru##.header:style(position:static !important)
+	!k31.ru##header:style(position:static !important)
+	!kachestvolife.club##.navbar-fixed-top:style(position:static !important)
+	!kdservis.ru##.sticky.header:style(position:static !important)
 	!losst.ru##.sticky-navigation:style(position:static !important)
+	!root-nation.com##.td-header-menu-wrap.td-affix:style(position:static !important)
+	!sanotes.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
+	!topobzor.com##.td-header-menu-wrap.td-affix:style(position:static !important)
+    !academyit.ru##.header:style(position:static !important)
+    !androidforums.com###navigation:style(position:static !important)
+    !androidguys.com##.td-header-menu-wrap:style(position:static !important)
+    !androidp1.ru##.td-ss-main-sidebar:style(position:static !important)
+    !androidtop.org##.header:style(position:static !important)
+    !annamama.ru##.x-navbar-fixed-top:style(position:static !important)
+    !author.today##.navbar-fixed-top:style(position:static !important)
+    !avanpost.ru##.fixed-top:style(position:static !important)
+    !baniclub.ru###navigation:style(position:static !important)
+    !baxov.net##.navbar-fixed-top:style(position:static !important)
+    !benpan.ru##.main_nav:style(position:static !important)
+    !bestwebber.ru##.td-header-menu-wrap:style(position:static !important)
+    !bestwebber.ru##.td-ss-main-sidebar:style(position:static !important)
+    !bigdatacloud.com##header.header:style(position:static !important)
+    !blackview.hk##.header:style(position:static !important)
+    !blog.malwarebytes.com##.navbar-fixed-top:style(position:static !important)
+    !cinemapress.org##.navbar-fixed:style(position:static !important)
+    !cloudzone.ru##.navbar-fixed-top:style(position:static !important)
+    !cnews.ru##.header:style(position:static !important)
+    !cnews.ru##.header_fixed:style(position:static !important)
+    !composs.ru##.site-header:style(position:static !important)
+    !computingforgeeks.com##.td-header-menu-wrap:style(position:static !important)
+    !couchpota.to##header:style(position:static !important)
+    !ctc.ru###header:style(position:static !important)
+    !cyberpointllc.com##.navbar-fixed-top:style(position:static !important)
+    !db-ip.com##.fixed-top:style(position:static !important)
+    !ditching.eu##.td-ss-main-sidebar:style(position:static !important)
+    !dtf.ru##.main_menu:style(position:static !important)
+    !eightforums.com##.p-navSticky:style(position:static !important)
+    !electricpulp.com##.navbar:style(position:static !important)
+    !eva.ru##.fixed-top:style(position:static !important)
+    !eventtracker.com##.navbar-fixed-top.navbar:style(position:static !important)
+    !expert.ru##.header:style(position:static !important)
+    !fazasporta.com##.header:style(position:static !important)
+    !fixya.com###header.header:style(position:static !important)
+    !gazetabiznes.ru##.td-header-menu-wrap:style(position:static !important)
+    !geekville.ru##.td-ss-main-sidebar:style(position:static !important)
+    !gizmochina.com##.td-ss-main-sidebar:style(position:static !important)
+    !grosh-blog.ru###site-navigation:style(position:static !important)
+    !hackernoon.com###header:style(position:static !important)
+    !help.keenetic.com##header:style(position:static !important)
+    !hi-tech-obzor.ru###navigation:style(position:static !important)
+    !home-gid.com##.td-header-menu-wrap:style(position:static !important)
+    !httpmaster.ru###header:style(position:static !important)
+    !ichip.ru##.td-ss-main-sidebar:style(position:static !important)
+    !inc.com##.header:style(position:static !important)
+    !interface31.ru##.navbar:style(position:static !important)
+    !kemprogress.ru##.td-header-menu-wrap:style(position:static !important)
+    !kemprogress.ru##.td-ss-main-sidebar:style(position:static !important)
+    !kodi.tv##.navbar-fixed-top:style(position:static !important)
+    !koofr.eu##.header:style(position:static !important)
+    !koofr.eu##.site-header:style(position:static !important)
+    !korshop.ru##.header:style(position:static !important)
+    !kostikov.co##.fixed-top:style(position:static !important)
+    !kp.ru##.header:style(position:static !important)
+    !libreelec.tv##.navbar-fixed-top.navbar:style(position:static !important)
+    !lifewire.com##.header:style(position:static !important)
+    !mashtips.com##.td-header-menu-wrap:style(position:static !important)
+    !masterts.ru##.header_fixed:style(position:static !important)
+    !mediapure.ru##.td-ss-main-sidebar:style(position:static !important)
+    !miltor.ru##.navbar-fixed-top:style(position:static !important)
+    !mirtesen.ru##.header:style(position:static !important)
+    !mosk-setki.ru##.navbar-fixed-top:style(position:static !important)
+    !msk-ix.ru##.header_fixed:style(position:static !important)
+    !mspoweruser.com##.navbar-fixed-top:style(position:static !important)
+    !multcloud.com##.header:style(position:static !important)
+    !mybellaria.ru##.navbar-fixed-top.navbar:style(position:static !important)
+    !nemaloknig.com##.navbar-fixed-top:style(position:static !important)
+    !newsignature.com##.navbar:style(position:static !important)
+    !newtimes.ru##.navbar-fixed-top:style(position:static !important)
+    !noa-lit.ru##.navbar-fixed-top.navbar:style(position:static !important)
+    !obozrevatel.com##.header:style(position:static !important)
+    !ohotaktiv.ru##.header:style(position:static !important)
+    !ohotarius.ru##.navbar-fixed-top:style(position:static !important)
+    !okanalizacii.ru##.td-ss-main-sidebar:style(position:static !important)
+    !osradar.com##.td-header-menu-wrap:style(position:static !important)
+    !pai-bx.com##.navbar-fixed-top:style(position:static !important)
+    !pix-feed.com###header:style(position:static !important)
+    !plainnews.ru##.navbar:style(position:static !important)
+    !planetpowershell.com##.navbar-fixed-top:style(position:static !important)
+    !popmech.ru##header.header:style(position:static !important)
+    !powershellexplained.com##.navbar-fixed-top:style(position:static !important)
+    !powervideo.ru##.navbar:style(position:static !important)
+    !proivf.ru##header:style(position:static !important)
+    !prophotos.ru##.navbar:style(position:static !important)
+    !psychologos.ru##.header:style(position:static !important)
+    !rackspace.com##.navbar-fixed-top:style(position:static !important)
+    !rclone.org##.navbar-fixed-top:style(position:static !important)
+    !root-nation.com##.td-header-menu-wrap.td-affix:style(position:static !important)
+    !rootmyandroid.org##.navbar-fixed-top:style(position:static !important)
+    !rutoken.ru##.fixed-top:style(position:static !important)
+    !safezone.cc##.p-navSticky:style(position:static !important)
+    !sanotes.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
+    !shop.vostok.ru###header:style(position: absolute !important;)
+    !slideserve.com##.navbar-fixed-top:style(position:static !important)
+    !smartcalc.ru##.navbar-fixed-top:style(position:static !important)
+    !splunk.com##.navbar-fixed-top:style(position:static !important)
+    !stigviewer.com##.header:style(position:static !important)
+    !stroi-help.ru##.navbar-fixed-bottom:style(position:static !important)
+    !stroi-help.ru##.navbar-fixed-top:style(position:static !important)
+    !stroybat.ru##.navbar-fixed-top:style(position:static !important)
+    !sumki.ru##.header:style(position:static !important)
+    !syl.ru##.header:style(position:absolute !important)
+    !sysadmins.lv##.navbar-fixed-top:style(position:static !important)
+    !tarifgid.info##.site-navigation-fixed:style(position:static !important)
+    !tass.ru###header:style(position:static !important)
+    !techlist.top##.td-ss-main-sidebar:style(position:static !important)
+    !techopedia.com##.navbar:style(position:static !important)
+    !techstronghold.com##.navbar-fixed-top.navbar:style(position:static !important)
+    !techtalkz.com##.p-navSticky--primary:style(position:static !important)
+    !techtalkz.com##.p-navSticky:style(position:static !important)
+    !themechanic.ru##.td-ss-main-sidebar:style(position:static !important)
+    !thequestion.ru##.header:style(position:static !important)
+    !thinkpowershell.com##.site-header:style(position:static !important)
+    !tjournal.ru##.main_menu:style(position:static !important)
+    !tomsguide.com##.p-navSticky:style(position:static !important)
+    !topobzor.com##.td-header-menu-wrap.td-affix:style(position:static !important)
+    !trello.com##.fixed-top:style(position:static !important)
+    !twitrss.me##.navbar:style(position:static !important)
+    !uanic.name##.navbar:style(position:static !important)
+    !universal-guns.ru##.navbar-fixed-top:style(position:static !important)
+    !vannayasovety.ru##.fixed.header:style(position:static !important)
+    !veritas.com##.fixed-top:style(position:static !important)
+    !vgtimes.ru##header:style(position:static !important)
+    !vmblog.ru###navigation:style(position:static !important)
+    !vmtv.ru##.navbar-fixed-top:style(position:absolute !important)
+    !voin.guru##.td-ss-main-sidebar:style(position:static !important)
+    !winitpro.ru##.navbar-default.navbar:style(position:static !important)
+    !worldofplayers.ru##.is-sticky.p-navSticky--primary.p-navSticky:style(position:static !important)
+    !xn----7sbecl2dbcfoo.xn--p1ai##.header:style(position:static !important)
+!
+!
+! unstick some elements
+! ##.uix_stickyBodyElement:style(position:static !important)
+! see explanation above and examples below
+biz##.uix_stickyBodyElement:style(position:static !important)
+by##.uix_stickyBodyElement:style(position:static !important)
+cc##.uix_stickyBodyElement:style(position:static !important)
+club##.uix_stickyBodyElement:style(position:static !important)
+co##.uix_stickyBodyElement:style(position:static !important)
+com##.uix_stickyBodyElement:style(position:static !important)
+eu##.uix_stickyBodyElement:style(position:static !important)
+guru##.uix_stickyBodyElement:style(position:static !important)
+hk##.uix_stickyBodyElement:style(position:static !important)
+info##.uix_stickyBodyElement:style(position:static !important)
+io##.uix_stickyBodyElement:style(position:static !important)
+kz##.uix_stickyBodyElement:style(position:static !important)
+lv##.uix_stickyBodyElement:style(position:static !important)
+me##.uix_stickyBodyElement:style(position:static !important)
+name##.uix_stickyBodyElement:style(position:static !important)
+net##.uix_stickyBodyElement:style(position:static !important)
+org##.uix_stickyBodyElement:style(position:static !important)
+post##.uix_stickyBodyElement:style(position:static !important)
+ru##.uix_stickyBodyElement:style(position:static !important)
+su##.uix_stickyBodyElement:style(position:static !important)
+to##.uix_stickyBodyElement:style(position:static !important)
+today##.uix_stickyBodyElement:style(position:static !important)
+top##.uix_stickyBodyElement:style(position:static !important)
+tv##.uix_stickyBodyElement:style(position:static !important)
+xn--p1ai##.uix_stickyBodyElement:style(position:static !important)
+ua##.uix_stickyBodyElement:style(position:static !important)
+uk##.uix_stickyBodyElement:style(position:static !important)
+ws##.uix_stickyBodyElement:style(position:static !important)
+!
+! ###sticky-wrapper:style(position:static !important)
+! see explanation above and examples below
+biz###sticky-wrapper:style(position:static !important)
+by###sticky-wrapper:style(position:static !important)
+cc###sticky-wrapper:style(position:static !important)
+club###sticky-wrapper:style(position:static !important)
+co###sticky-wrapper:style(position:static !important)
+com###sticky-wrapper:style(position:static !important)
+eu###sticky-wrapper:style(position:static !important)
+guru###sticky-wrapper:style(position:static !important)
+hk###sticky-wrapper:style(position:static !important)
+info###sticky-wrapper:style(position:static !important)
+io###sticky-wrapper:style(position:static !important)
+kz###sticky-wrapper:style(position:static !important)
+lv###sticky-wrapper:style(position:static !important)
+me###sticky-wrapper:style(position:static !important)
+name###sticky-wrapper:style(position:static !important)
+net###sticky-wrapper:style(position:static !important)
+org###sticky-wrapper:style(position:static !important)
+post###sticky-wrapper:style(position:static !important)
+ru###sticky-wrapper:style(position:static !important)
+su###sticky-wrapper:style(position:static !important)
+to###sticky-wrapper:style(position:static !important)
+today###sticky-wrapper:style(position:static !important)
+top###sticky-wrapper:style(position:static !important)
+tv###sticky-wrapper:style(position:static !important)
+xn--p1ai###sticky-wrapper:style(position:static !important)
+ua###sticky-wrapper:style(position:static !important)
+uk###sticky-wrapper:style(position:static !important)
+ws###sticky-wrapper:style(position:static !important)
+!
+! ##.sticky-wrapper:style(position:static !important)
+! see explanation above and examples below
+biz##.sticky-wrapper:style(position:static !important)
+by##.sticky-wrapper:style(position:static !important)
+cc##.sticky-wrapper:style(position:static !important)
+club##.sticky-wrapper:style(position:static !important)
+co##.sticky-wrapper:style(position:static !important)
+com##.sticky-wrapper:style(position:static !important)
+eu##.sticky-wrapper:style(position:static !important)
+guru##.sticky-wrapper:style(position:static !important)
+hk##.sticky-wrapper:style(position:static !important)
+info##.sticky-wrapper:style(position:static !important)
+io##.sticky-wrapper:style(position:static !important)
+kz##.sticky-wrapper:style(position:static !important)
+lv##.sticky-wrapper:style(position:static !important)
+me##.sticky-wrapper:style(position:static !important)
+name##.sticky-wrapper:style(position:static !important)
+net##.sticky-wrapper:style(position:static !important)
+org##.sticky-wrapper:style(position:static !important)
+post##.sticky-wrapper:style(position:static !important)
+ru##.sticky-wrapper:style(position:static !important)
+su##.sticky-wrapper:style(position:static !important)
+to##.sticky-wrapper:style(position:static !important)
+today##.sticky-wrapper:style(position:static !important)
+top##.sticky-wrapper:style(position:static !important)
+tv##.sticky-wrapper:style(position:static !important)
+xn--p1ai##.sticky-wrapper:style(position:static !important)
+ua##.sticky-wrapper:style(position:static !important)
+uk##.sticky-wrapper:style(position:static !important)
+ws##.sticky-wrapper:style(position:static !important)
+!
+! ##.sticky_wrapper:style(position:static !important)
+! see explanation above and examples below
+biz##.sticky_wrapper:style(position:static !important)
+by##.sticky_wrapper:style(position:static !important)
+cc##.sticky_wrapper:style(position:static !important)
+club##.sticky_wrapper:style(position:static !important)
+co##.sticky_wrapper:style(position:static !important)
+com##.sticky_wrapper:style(position:static !important)
+eu##.sticky_wrapper:style(position:static !important)
+guru##.sticky_wrapper:style(position:static !important)
+hk##.sticky_wrapper:style(position:static !important)
+info##.sticky_wrapper:style(position:static !important)
+io##.sticky_wrapper:style(position:static !important)
+kz##.sticky_wrapper:style(position:static !important)
+lv##.sticky_wrapper:style(position:static !important)
+me##.sticky_wrapper:style(position:static !important)
+name##.sticky_wrapper:style(position:static !important)
+net##.sticky_wrapper:style(position:static !important)
+org##.sticky_wrapper:style(position:static !important)
+post##.sticky_wrapper:style(position:static !important)
+ru##.sticky_wrapper:style(position:static !important)
+su##.sticky_wrapper:style(position:static !important)
+to##.sticky_wrapper:style(position:static !important)
+today##.sticky_wrapper:style(position:static !important)
+top##.sticky_wrapper:style(position:static !important)
+tv##.sticky_wrapper:style(position:static !important)
+xn--p1ai##.sticky_wrapper:style(position:static !important)
+ua##.sticky_wrapper:style(position:static !important)
+uk##.sticky_wrapper:style(position:static !important)
+ws##.sticky_wrapper:style(position:static !important)
+!
+! ##.theiaStickySidebar:style(position:static !important)
+! see explanation above and examples below
+biz##.theiaStickySidebar:style(position:static !important)
+by##.theiaStickySidebar:style(position:static !important)
+cc##.theiaStickySidebar:style(position:static !important)
+club##.theiaStickySidebar:style(position:static !important)
+co##.theiaStickySidebar:style(position:static !important)
+com##.theiaStickySidebar:style(position:static !important)
+eu##.theiaStickySidebar:style(position:static !important)
+guru##.theiaStickySidebar:style(position:static !important)
+hk##.theiaStickySidebar:style(position:static !important)
+info##.theiaStickySidebar:style(position:static !important)
+io##.theiaStickySidebar:style(position:static !important)
+kz##.theiaStickySidebar:style(position:static !important)
+lv##.theiaStickySidebar:style(position:static !important)
+me##.theiaStickySidebar:style(position:static !important)
+name##.theiaStickySidebar:style(position:static !important)
+net##.theiaStickySidebar:style(position:static !important)
+org##.theiaStickySidebar:style(position:static !important)
+post##.theiaStickySidebar:style(position:static !important)
+ru##.theiaStickySidebar:style(position:static !important)
+su##.theiaStickySidebar:style(position:static !important)
+to##.theiaStickySidebar:style(position:static !important)
+today##.theiaStickySidebar:style(position:static !important)
+top##.theiaStickySidebar:style(position:static !important)
+tv##.theiaStickySidebar:style(position:static !important)
+xn--p1ai##.theiaStickySidebar:style(position:static !important)
+ua##.theiaStickySidebar:style(position:static !important)
+uk##.theiaStickySidebar:style(position:static !important)
+ws##.theiaStickySidebar:style(position:static !important)
+    !androidforums.com##.sticky_wrapper:style(position:static !important)
+    !antichat.ru##.sticky_wrapper:style(position:static !important)
+    !atvclub.ru##.uix_stickyBodyElement:style(position:static !important)
+    !benzopila.ru###sticky-wrapper.is-sticky.sticky-wrapper:style(position:static !important)
+    !droidforums.net##.sticky_wrapper:style(position:static !important)
+    !dyplet.com##.theiaStickySidebar:style(position:static !important)
+    !fatcatslim.ru##.theiaStickySidebar:style(position:static !important)
+    !loleknbolek.com##.theiaStickySidebar:style(position:static !important)
+    !pix-feed.com##.theiaStickySidebar:style(position:static !important)
+    !technibble.com##.sticky_wrapper:style(position:static !important)
+    !vmblog.ru##.theiaStickySidebar:style(position:static !important; top:auto !important)
+    !vse-pro-laminat.ru##.theiaStickySidebar:style(position:static !important)
+!
+! unstick header, menu and possibly some buttons
+!
+! ##.affix:style(position:static !important)
+! see explanation above and examples below
+biz##.affix:style(position:static !important)
+by##.affix:style(position:static !important)
+cc##.affix:style(position:static !important)
+club##.affix:style(position:static !important)
+co##.affix:style(position:static !important)
+com##.affix:style(position:static !important)
+eu##.affix:style(position:static !important)
+guru##.affix:style(position:static !important)
+hk##.affix:style(position:static !important)
+info##.affix:style(position:static !important)
+io##.affix:style(position:static !important)
+kz##.affix:style(position:static !important)
+lv##.affix:style(position:static !important)
+me##.affix:style(position:static !important)
+name##.affix:style(position:static !important)
+net##.affix:style(position:static !important)
+org##.affix:style(position:static !important)
+post##.affix:style(position:static !important)
+ru##.affix:style(position:static !important)
+su##.affix:style(position:static !important)
+to##.affix:style(position:static !important)
+today##.affix:style(position:static !important)
+top##.affix:style(position:static !important)
+tv##.affix:style(position:static !important)
+xn--p1ai##.affix:style(position:static !important)
+ua##.affix:style(position:static !important)
+uk##.affix:style(position:static !important)
+ws##.affix:style(position:static !important)
+!
+! ##.fix:style(position:static !important)
+! see explanation above and examples below
+biz##.fix:style(position:static !important)
+by##.fix:style(position:static !important)
+cc##.fix:style(position:static !important)
+club##.fix:style(position:static !important)
+co##.fix:style(position:static !important)
+com##.fix:style(position:static !important)
+eu##.fix:style(position:static !important)
+guru##.fix:style(position:static !important)
+hk##.fix:style(position:static !important)
+info##.fix:style(position:static !important)
+io##.fix:style(position:static !important)
+kz##.fix:style(position:static !important)
+lv##.fix:style(position:static !important)
+me##.fix:style(position:static !important)
+name##.fix:style(position:static !important)
+net##.fix:style(position:static !important)
+org##.fix:style(position:static !important)
+post##.fix:style(position:static !important)
+ru##.fix:style(position:static !important)
+su##.fix:style(position:static !important)
+to##.fix:style(position:static !important)
+today##.fix:style(position:static !important)
+top##.fix:style(position:static !important)
+tv##.fix:style(position:static !important)
+xn--p1ai##.fix:style(position:static !important)
+ua##.fix:style(position:static !important)
+uk##.fix:style(position:static !important)
+ws##.fix:style(position:static !important)
+!
+! ##._fixed:style(position:static !important)
+! see explanation above and examples below
+biz##._fixed:style(position:static !important)
+by##._fixed:style(position:static !important)
+cc##._fixed:style(position:static !important)
+club##._fixed:style(position:static !important)
+co##._fixed:style(position:static !important)
+com##._fixed:style(position:static !important)
+eu##._fixed:style(position:static !important)
+guru##._fixed:style(position:static !important)
+hk##._fixed:style(position:static !important)
+info##._fixed:style(position:static !important)
+io##._fixed:style(position:static !important)
+kz##._fixed:style(position:static !important)
+lv##._fixed:style(position:static !important)
+me##._fixed:style(position:static !important)
+name##._fixed:style(position:static !important)
+net##._fixed:style(position:static !important)
+org##._fixed:style(position:static !important)
+post##._fixed:style(position:static !important)
+ru##._fixed:style(position:static !important)
+su##._fixed:style(position:static !important)
+to##._fixed:style(position:static !important)
+today##._fixed:style(position:static !important)
+top##._fixed:style(position:static !important)
+tv##._fixed:style(position:static !important)
+xn--p1ai##._fixed:style(position:static !important)
+ua##._fixed:style(position:static !important)
+uk##._fixed:style(position:static !important)
+ws##._fixed:style(position:static !important)
+!
+! ##.fixed:style(position:static !important)
+! see explanation above and examples below
+biz##.fixed:style(position:static !important)
+by##.fixed:style(position:static !important)
+cc##.fixed:style(position:static !important)
+club##.fixed:style(position:static !important)
+co##.fixed:style(position:static !important)
+com##.fixed:style(position:static !important)
+eu##.fixed:style(position:static !important)
+guru##.fixed:style(position:static !important)
+hk##.fixed:style(position:static !important)
+info##.fixed:style(position:static !important)
+io##.fixed:style(position:static !important)
+kz##.fixed:style(position:static !important)
+lv##.fixed:style(position:static !important)
+me##.fixed:style(position:static !important)
+name##.fixed:style(position:static !important)
+net##.fixed:style(position:static !important)
+org##.fixed:style(position:static !important)
+post##.fixed:style(position:static !important)
+ru##.fixed:style(position:static !important)
+su##.fixed:style(position:static !important)
+to##.fixed:style(position:static !important)
+today##.fixed:style(position:static !important)
+top##.fixed:style(position:static !important)
+tv##.fixed:style(position:static !important)
+xn--p1ai##.fixed:style(position:static !important)
+ua##.fixed:style(position:static !important)
+uk##.fixed:style(position:static !important)
+ws##.fixed:style(position:static !important)
+!
+! ##.is-sticky:style(position:static !important)
+! see explanation above and examples below
+biz##.is-sticky:style(position:static !important)
+by##.is-sticky:style(position:static !important)
+cc##.is-sticky:style(position:static !important)
+club##.is-sticky:style(position:static !important)
+co##.is-sticky:style(position:static !important)
+com##.is-sticky:style(position:static !important)
+eu##.is-sticky:style(position:static !important)
+guru##.is-sticky:style(position:static !important)
+hk##.is-sticky:style(position:static !important)
+info##.is-sticky:style(position:static !important)
+io##.is-sticky:style(position:static !important)
+kz##.is-sticky:style(position:static !important)
+lv##.is-sticky:style(position:static !important)
+me##.is-sticky:style(position:static !important)
+name##.is-sticky:style(position:static !important)
+net##.is-sticky:style(position:static !important)
+org##.is-sticky:style(position:static !important)
+post##.is-sticky:style(position:static !important)
+ru##.is-sticky:style(position:static !important)
+su##.is-sticky:style(position:static !important)
+to##.is-sticky:style(position:static !important)
+today##.is-sticky:style(position:static !important)
+top##.is-sticky:style(position:static !important)
+tv##.is-sticky:style(position:static !important)
+xn--p1ai##.is-sticky:style(position:static !important)
+ua##.is-sticky:style(position:static !important)
+uk##.is-sticky:style(position:static !important)
+ws##.is-sticky:style(position:static !important)
+!
+! ##.pinned:style(position:static !important)
+! see explanation above and examples below
+biz##.pinned:style(position:static !important)
+by##.pinned:style(position:static !important)
+cc##.pinned:style(position:static !important)
+club##.pinned:style(position:static !important)
+co##.pinned:style(position:static !important)
+com##.pinned:style(position:static !important)
+eu##.pinned:style(position:static !important)
+guru##.pinned:style(position:static !important)
+hk##.pinned:style(position:static !important)
+info##.pinned:style(position:static !important)
+io##.pinned:style(position:static !important)
+kz##.pinned:style(position:static !important)
+lv##.pinned:style(position:static !important)
+me##.pinned:style(position:static !important)
+name##.pinned:style(position:static !important)
+net##.pinned:style(position:static !important)
+org##.pinned:style(position:static !important)
+post##.pinned:style(position:static !important)
+ru##.pinned:style(position:static !important)
+su##.pinned:style(position:static !important)
+to##.pinned:style(position:static !important)
+today##.pinned:style(position:static !important)
+top##.pinned:style(position:static !important)
+tv##.pinned:style(position:static !important)
+xn--p1ai##.pinned:style(position:static !important)
+ua##.pinned:style(position:static !important)
+uk##.pinned:style(position:static !important)
+ws##.pinned:style(position:static !important)
+!
+! ##.stick:style(position:static !important)
+! see explanation above and examples below
+biz##.stick:style(position:static !important)
+by##.stick:style(position:static !important)
+cc##.stick:style(position:static !important)
+club##.stick:style(position:static !important)
+co##.stick:style(position:static !important)
+com##.stick:style(position:static !important)
+eu##.stick:style(position:static !important)
+guru##.stick:style(position:static !important)
+hk##.stick:style(position:static !important)
+info##.stick:style(position:static !important)
+io##.stick:style(position:static !important)
+kz##.stick:style(position:static !important)
+lv##.stick:style(position:static !important)
+me##.stick:style(position:static !important)
+name##.stick:style(position:static !important)
+net##.stick:style(position:static !important)
+org##.stick:style(position:static !important)
+post##.stick:style(position:static !important)
+ru##.stick:style(position:static !important)
+su##.stick:style(position:static !important)
+to##.stick:style(position:static !important)
+today##.stick:style(position:static !important)
+top##.stick:style(position:static !important)
+tv##.stick:style(position:static !important)
+xn--p1ai##.stick:style(position:static !important)
+ua##.stick:style(position:static !important)
+uk##.stick:style(position:static !important)
+ws##.stick:style(position:static !important)
+!
+! ##.sticking:style(position:static !important)
+! see explanation above and examples below
+biz##.sticking:style(position:static !important)
+by##.sticking:style(position:static !important)
+cc##.sticking:style(position:static !important)
+club##.sticking:style(position:static !important)
+co##.sticking:style(position:static !important)
+com##.sticking:style(position:static !important)
+eu##.sticking:style(position:static !important)
+guru##.sticking:style(position:static !important)
+hk##.sticking:style(position:static !important)
+info##.sticking:style(position:static !important)
+io##.sticking:style(position:static !important)
+kz##.sticking:style(position:static !important)
+lv##.sticking:style(position:static !important)
+me##.sticking:style(position:static !important)
+name##.sticking:style(position:static !important)
+net##.sticking:style(position:static !important)
+org##.sticking:style(position:static !important)
+post##.sticking:style(position:static !important)
+ru##.sticking:style(position:static !important)
+su##.sticking:style(position:static !important)
+to##.sticking:style(position:static !important)
+today##.sticking:style(position:static !important)
+top##.sticking:style(position:static !important)
+tv##.sticking:style(position:static !important)
+xn--p1ai##.sticking:style(position:static !important)
+ua##.sticking:style(position:static !important)
+uk##.sticking:style(position:static !important)
+ws##.sticking:style(position:static !important)
+!
+! ###sticky:style(position:static !important)
+! see explanation above and examples below
+biz###sticky:style(position:static !important)
+by###sticky:style(position:static !important)
+cc###sticky:style(position:static !important)
+club###sticky:style(position:static !important)
+co###sticky:style(position:static !important)
+com###sticky:style(position:static !important)
+eu###sticky:style(position:static !important)
+guru###sticky:style(position:static !important)
+hk###sticky:style(position:static !important)
+info###sticky:style(position:static !important)
+io###sticky:style(position:static !important)
+kz###sticky:style(position:static !important)
+lv###sticky:style(position:static !important)
+me###sticky:style(position:static !important)
+name###sticky:style(position:static !important)
+net###sticky:style(position:static !important)
+org###sticky:style(position:static !important)
+post###sticky:style(position:static !important)
+ru###sticky:style(position:static !important)
+su###sticky:style(position:static !important)
+to###sticky:style(position:static !important)
+today###sticky:style(position:static !important)
+top###sticky:style(position:static !important)
+tv###sticky:style(position:static !important)
+xn--p1ai###sticky:style(position:static !important)
+ua###sticky:style(position:static !important)
+uk###sticky:style(position:static !important)
+ws###sticky:style(position:static !important)
+!
+! ##.sticky:style(position:static !important)
+! see explanation above and examples below
+biz##.sticky:style(position:static !important)
+by##.sticky:style(position:static !important)
+cc##.sticky:style(position:static !important)
+club##.sticky:style(position:static !important)
+co##.sticky:style(position:static !important)
+com##.sticky:style(position:static !important)
+eu##.sticky:style(position:static !important)
+guru##.sticky:style(position:static !important)
+hk##.sticky:style(position:static !important)
+info##.sticky:style(position:static !important)
+io##.sticky:style(position:static !important)
+kz##.sticky:style(position:static !important)
+lv##.sticky:style(position:static !important)
+me##.sticky:style(position:static !important)
+name##.sticky:style(position:static !important)
+net##.sticky:style(position:static !important)
+org##.sticky:style(position:static !important)
+post##.sticky:style(position:static !important)
+ru##.sticky:style(position:static !important)
+su##.sticky:style(position:static !important)
+to##.sticky:style(position:static !important)
+today##.sticky:style(position:static !important)
+top##.sticky:style(position:static !important)
+tv##.sticky:style(position:static !important)
+xn--p1ai##.sticky:style(position:static !important)
+ua##.sticky:style(position:static !important)
+uk##.sticky:style(position:static !important)
+ws##.sticky:style(position:static !important)
+!
+! ##.sticky-mobile:style(position:static !important)
+! see explanation above and examples below
+biz##.sticky-mobile:style(position:static !important)
+by##.sticky-mobile:style(position:static !important)
+cc##.sticky-mobile:style(position:static !important)
+club##.sticky-mobile:style(position:static !important)
+co##.sticky-mobile:style(position:static !important)
+com##.sticky-mobile:style(position:static !important)
+eu##.sticky-mobile:style(position:static !important)
+guru##.sticky-mobile:style(position:static !important)
+hk##.sticky-mobile:style(position:static !important)
+info##.sticky-mobile:style(position:static !important)
+io##.sticky-mobile:style(position:static !important)
+kz##.sticky-mobile:style(position:static !important)
+lv##.sticky-mobile:style(position:static !important)
+me##.sticky-mobile:style(position:static !important)
+name##.sticky-mobile:style(position:static !important)
+net##.sticky-mobile:style(position:static !important)
+org##.sticky-mobile:style(position:static !important)
+post##.sticky-mobile:style(position:static !important)
+ru##.sticky-mobile:style(position:static !important)
+su##.sticky-mobile:style(position:static !important)
+to##.sticky-mobile:style(position:static !important)
+today##.sticky-mobile:style(position:static !important)
+top##.sticky-mobile:style(position:static !important)
+tv##.sticky-mobile:style(position:static !important)
+xn--p1ai##.sticky-mobile:style(position:static !important)
+ua##.sticky-mobile:style(position:static !important)
+uk##.sticky-mobile:style(position:static !important)
+ws##.sticky-mobile:style(position:static !important)
+!
+! ##.stuck:style(position:static !important)
+! see explanation above and examples below
+biz##.stuck:style(position:static !important)
+by##.stuck:style(position:static !important)
+cc##.stuck:style(position:static !important)
+club##.stuck:style(position:static !important)
+co##.stuck:style(position:static !important)
+com##.stuck:style(position:static !important)
+eu##.stuck:style(position:static !important)
+guru##.stuck:style(position:static !important)
+hk##.stuck:style(position:static !important)
+info##.stuck:style(position:static !important)
+io##.stuck:style(position:static !important)
+kz##.stuck:style(position:static !important)
+lv##.stuck:style(position:static !important)
+me##.stuck:style(position:static !important)
+name##.stuck:style(position:static !important)
+net##.stuck:style(position:static !important)
+org##.stuck:style(position:static !important)
+post##.stuck:style(position:static !important)
+ru##.stuck:style(position:static !important)
+su##.stuck:style(position:static !important)
+to##.stuck:style(position:static !important)
+today##.stuck:style(position:static !important)
+top##.stuck:style(position:static !important)
+tv##.stuck:style(position:static !important)
+xn--p1ai##.stuck:style(position:static !important)
+ua##.stuck:style(position:static !important)
+uk##.stuck:style(position:static !important)
+ws##.stuck:style(position:static !important)
+!
+! ##.td-affix:style(position:static !important)
+! see explanation above and examples below
+biz##.td-affix:style(position:static !important)
+by##.td-affix:style(position:static !important)
+cc##.td-affix:style(position:static !important)
+club##.td-affix:style(position:static !important)
+co##.td-affix:style(position:static !important)
+com##.td-affix:style(position:static !important)
+eu##.td-affix:style(position:static !important)
+guru##.td-affix:style(position:static !important)
+hk##.td-affix:style(position:static !important)
+info##.td-affix:style(position:static !important)
+io##.td-affix:style(position:static !important)
+kz##.td-affix:style(position:static !important)
+lv##.td-affix:style(position:static !important)
+me##.td-affix:style(position:static !important)
+name##.td-affix:style(position:static !important)
+net##.td-affix:style(position:static !important)
+org##.td-affix:style(position:static !important)
+post##.td-affix:style(position:static !important)
+ru##.td-affix:style(position:static !important)
+su##.td-affix:style(position:static !important)
+to##.td-affix:style(position:static !important)
+today##.td-affix:style(position:static !important)
+top##.td-affix:style(position:static !important)
+tv##.td-affix:style(position:static !important)
+xn--p1ai##.td-affix:style(position:static !important)
+ua##.td-affix:style(position:static !important)
+uk##.td-affix:style(position:static !important)
+ws##.td-affix:style(position:static !important)
+    !androidauthority.com##.fixed:style(position:static !important)
+    !androidauthority.com##.sticky-mobile:style(position:static !important)
+    !androidguys.com##.td-affix:style(position:static !important)
+    !androidheadlines.com###sticky.stick
+    !anoopcnair.com##.td-affix:style(position:static !important)
+    !askubuntu.com##._fixed:style(position:static !important)
+    !au.ru##.affix:style(position:static !important)
+    !autonews.ru##.topline.fixed:style(position:static !important)
+    !backblaze.com##.stuck:style(position:static !important)
+    !beauty.ua##.fixed:style(position:static !important)
+    !cheap-safe.ru###top3.affix:style(position;static !important)
+    !cheap-safe.ru##.affix:style(position;static !important)
+    !chicagovps.net##.fixed.sticky:style(position:static !important)
+    !computingforgeeks.com##.td-affix:style(position:static !important)
+    !credera.com##.sticky:style(position:static !important)
+    !dogsecrets.ru##.td-affix:style(position:static !important)
+    !dom4m.ru###topline.fixed:style(position:static !important)
+    !dtf.ru##.sticky:style(position:static !important)
+    !econet.ru##.affix:style(position:static !important)
+    !ectocervical.ru##.fixed:style(position:static !important)
+    !educba.com##.fixed:style(position:static !important)
+    !edx.org##.stuck:style(position:static !important)
+    !esg-moscow.ru##.fixed:style(position:static !important)
+    !esquire.ru##.fixed:style(position:static !important)
+    !fandom.com,wikia.com##is-sticky:style(position:static !important)
+    !fatcatslim.ru##.show.is-fixed:style(position:static !important)
+    !fortgun.ru##.fixed:style(position:static !important)
+    !foursquare.com##.pinned:style(position:static !important)
+    !gazetabiznes.ru##.td-affix:style(position:static !important)
+    !globus.ru##.sticking:style(position:static !important)
+    !hft.ru##.fixed:style(position:static !important)
+    !home-gid.com##.td-affix:style(position:static !important)
+    !hostbrz.com##.affix:style(position:static !important)
+    !idd35.ru##.affix:style(position:static !important)
+    !kemprogress.ru##.td-affix:style(position:static !important)
+    !korshop.ru##.fixed:style(position:static !important)
+    !leroymerlin.kz,leroymerlin.ru##.is-sticky:style(position:static !important)
+    !mashtips.com##.td-affix.:style(position:static !important)
+    !osradar.com##.td-affix:style(position:static !important)
+    !parents.ru##.fixed:style(position:static !important)
+    !popadiv10.ru##.fixed:style(position:static !important)
+    !pravo.ru##.sticky.is-stuck:style(position:static !important)
+    !priorclinic.ru##.affix:style(position:static !important)
+    !proekty.ru##.fixed:style(position:static !important)
+    !protarif.info##.fixed:style(position:static !important)
+    !serpuhovich.ru##.fix:style(position:static !important)
+    !shop.vostok.ru##.sticky:style(position: absolute !important;)
+    !splunk.com##.fixed:style(position:static !important)
+    !support.citrix.com##.sticky:style(position:static !important)
+    !taker.im##.sticky:style(position:static !important)
+    !techtalkz.com##.is-sticky:style(position:static !important)
+    !themechanic.ru##.td-affix:style(position:static !important)
+    !tomsguide.com##.is-sticky:style(position:static !important)
+    !viacode.com##.is-fixed:style(position:static !important)
+    !vvd.su##.fixed:style(position:static !important)
+    !washingtonpost.com##.fixed:style(position:static !important)
+    !wikihow.com##.sticking:style(position:static !important)
+
+
+! remove empty space from top
+! ##body:style(margin-top:0px !important; padding-top:0px !important)
+! see explanation above and examples below
+biz##body:style(margin-top:0px !important; padding-top:0px !important)
+by##body:style(margin-top:0px !important; padding-top:0px !important)
+cc##body:style(margin-top:0px !important; padding-top:0px !important)
+club##body:style(margin-top:0px !important; padding-top:0px !important)
+co##body:style(margin-top:0px !important; padding-top:0px !important)
+com##body:style(margin-top:0px !important; padding-top:0px !important)
+eu##body:style(margin-top:0px !important; padding-top:0px !important)
+guru##body:style(margin-top:0px !important; padding-top:0px !important)
+hk##body:style(margin-top:0px !important; padding-top:0px !important)
+info##body:style(margin-top:0px !important; padding-top:0px !important)
+io##body:style(margin-top:0px !important; padding-top:0px !important)
+kz##body:style(margin-top:0px !important; padding-top:0px !important)
+lv##body:style(margin-top:0px !important; padding-top:0px !important)
+me##body:style(margin-top:0px !important; padding-top:0px !important)
+name##body:style(margin-top:0px !important; padding-top:0px !important)
+net##body:style(margin-top:0px !important; padding-top:0px !important)
+org##body:style(margin-top:0px !important; padding-top:0px !important)
+post##body:style(margin-top:0px !important; padding-top:0px !important)
+ru##body:style(margin-top:0px !important; padding-top:0px !important)
+su##body:style(margin-top:0px !important; padding-top:0px !important)
+to##body:style(margin-top:0px !important; padding-top:0px !important)
+today##body:style(margin-top:0px !important; padding-top:0px !important)
+top##body:style(margin-top:0px !important; padding-top:0px !important)
+tv##body:style(margin-top:0px !important; padding-top:0px !important)
+xn--p1ai##body:style(margin-top:0px !important; padding-top:0px !important)
+ua##body:style(margin-top:0px !important; padding-top:0px !important)
+uk##body:style(margin-top:0px !important; padding-top:0px !important)
+ws##body:style(margin-top:0px !important; padding-top:0px !important)
+    !adblockplus.org##body:style(padding-top:0px !important)
+    !angrycitizen.ru##body:style(padding-top:0px !important)
+    !askubuntu.com##body:style(padding-top:0px !important)
+    !au.ru##body:style(padding-top:0px !important)
+    !autohotkey.com##body:style(padding-top:0px !important)
+    !babyblog.ru##body:style(padding-top:0px !important)
+    !baxov.net##body:style(margin-top:0px !important)
+    !blog.malwarebytes.com##body:style(padding-top:0px !important)
+    !bydom.ru##body:style(padding-top:0px !important)
+    !computerra.ru##.content:style(margin-top:0px !important)
+    !cont.ws##body:style(padding-top:0px !important)
+    !dgl.ru##body:style(padding-top:0px !important)
+    !edimdoma.ru##body:style(padding-top:0px !important)
+    !expertreviews.co.uk##body:style(padding-top:0px !important)
+    !fixya.com##body:style(margin-top:0px !important)
+    !freelancermap.com##body:style(padding-top:0px !important)
+    !host.io##body:style(padding-top:0px !important)
+    !interface31.ru##body:style(padding-top:0px !important)
+    !libreelec.tv##body:style(padding-top:0px !important)
+    !mspoweruser.com##body:style(padding-top:0px !important)
+    !nemaloknig.com##body:style(padding-top:0px !important)
+    !newstracker.ru##body:style(padding-top:0px !important)
+    !newtimes.ru##body:style(padding-top:0px !important)
+    !owncloud.org##body:style(padding-top:0px !important)
+    !plainnews.ru##body:style(padding-top:0px !important)
+    !popadiv10.ru##body:style(padding-top:0px !important)
+    !rclone.org##body:style(margin-top:0px !important)
+    !serpuhovich.ru##body:style(padding-top:0px !important)
+    !shopsirop.ru##body:style(padding-top:0px !important)
+    !sobaka.ru##body:style(padding-top:0px !important)
+    !sobyanin.ru##body:style(padding-top:0px !important)
+    !splunk.com##body:style(padding-top:0px !important)
+    !stroybat.ru##body:style(padding-top:0px !important)
+    !sumki.ru##body:style(margin-top:0px !important)
+    !techopedia.com##body:style(padding-top:0px !important)
+    !travel.ru##body:style(padding-top:0px !important)
+    !universal-guns.ru##body:style(padding-top:0px !important)
+    !vestifinance.ru##body:style(margin-top:0px !important)
+    !xda-developers.com##body:style(padding-top:0px !important)
+    !yamart.ru##body:style(padding-top:0px !important)
+!
+! ##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+! see explanation above and examples below
+biz##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+by##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+cc##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+club##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+co##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+com##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+eu##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+guru##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+hk##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+info##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+io##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+kz##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+lv##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+me##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+name##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+net##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+org##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+post##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+ru##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+su##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+to##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+today##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+top##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+tv##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+xn--p1ai##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+ua##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+uk##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+ws##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+!
+! ###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+! see explanation above and examples below
+biz###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+by###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+cc###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+club###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+co###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+com###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+eu###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+guru###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+hk###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+info###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+io###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+kz###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+lv###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+me###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+name###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+net###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+org###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+post###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+ru###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+su###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+to###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+today###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+top###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+tv###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+xn--p1ai###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+ua###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+uk###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+ws###header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+!
+! ##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+! see explanation above and examples below
+biz##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+by##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+cc##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+club##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+co##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+com##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+eu##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+guru##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+hk##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+info##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+io##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+kz##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+lv##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+me##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+name##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+net##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+org##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+post##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+ru##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+su##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+to##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+today##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+top##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+tv##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+xn--p1ai##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+ua##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+uk##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+ws##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+    !probirka.org###header:style(padding-top:0px !important)
+    !rashodnika.ru###header:style(padding-bottom:0px !important)
+    !iguides.ru##header:style(padding-top:0px !important)
+    !indiedev.name###header:style(padding-top:0px !important)
+    !findtenders.ru##.header:style(padding-top:0px !important)
+    !rootmyandroid.org##.header:style(margin-bottom:0px !important)
+    !budetinteresno.info###header:style(padding-top:0px !important)
+
+! possible todo
+! ##main:style(padding-top:0px !important; margin-top:0px !important)
+! ##.main:style(padding-top:0px !important; margin-top:0px !important)
+! ###main:style(padding-top:0px !important; margin-top:0px !important)
+adview.ru###main:style(padding-top:0px !important)
+lifewire.com##.main:style(margin-top:0px !important)
+softpedia.com##.main:style(padding-top:0px !important)
+itprotoday.com##main:style(padding-top:0px !important)
+stroy-okey.ru##main:style(padding-top:0px !important)
+! ##.content:style(margin-top:0 !important)
+winitpro.ru##.content:style(margin-top:0 !important)
+budetinteresno.info##.wrapper:style(padding-top:0px !important)
+stigviewer.com##.wrapper:style(padding-top:0px !important)
+
 
 
 
@@ -3400,8 +5208,6 @@ academy.ru##.widget_main
 academyit.ru##.fancybox-skin
 academyit.ru##.fancybox-overlay-fixed.fancybox-overlay
 academyit.ru##.top.panel:style(position:static !important)
-academyit.ru##.header:style(position:static !important)
-
 
 ! acestream, torrentstream
 ||acestream.net/*/aaa.gif
@@ -3448,7 +5254,6 @@ adaway.org##.current-section
 adblockplus.org##.cookieprompt
 ! static and not so red navbar
 adblockplus.org###navbar:style(position:static !important; background-color: #78081b !important)
-adblockplus.org##body:style(padding-top:0px !important)
 
 adella.ru###header-text-nav-wrap
 adella.ru###toc_container
@@ -3479,7 +5284,6 @@ adultium.com##.count
 
 adview.ru###header:style(position:static !important)
 ||adview.ru/*/bg.jpg$important
-adview.ru###main:style(padding-top:0px !important)
 adview.ru##.image-overlay-inside
 adview.ru##.image-overlay
 
@@ -3685,8 +5489,6 @@ androidauthority.com##.aa-logo-container
 ||androidauthority.net/*/aa-green-logo.svg
 androidauthority.com##.aa-bottom-header-section
 androidauthority.com##.headroom--pinned:style(position:static !important)
-androidauthority.com##.sticky-mobile:style(position:static !important)
-androidauthority.com##.fixed:style(position:static !important)
 androidauthority.com##.aa-sticky-has-deal:style(position:static !important)
 androidauthority.com##.aa-new-sticky-header:style(position:static !important)
 
@@ -3697,12 +5499,7 @@ androidfeel.ru##.all-wrap:style(background:none !important; background-color:whi
 androidfeel.ru##.rel-wrap
 
 androidforums.com##.noticeContent
-androidforums.com##.sticky_wrapper:style(position:static !important)
-androidforums.com###navigation:style(position:static !important)
 
-androidguys.com##.td-affix.td-header-menu-wrap:style(position:static !important)
-
-androidheadlines.com###sticky.stick
 androidheadlines.com##.widget-ahsocial
 androidheadlines.com##.widget-ahcount
 
@@ -3713,14 +5510,10 @@ androidinsider.ru##.abouts
 
 androidlime.ru###origamiez-header-top
 
-androidp1.ru##.td-ss-main-sidebar:style(position:static !important)
-
 androidpit.com###jwplayer-sidebar
 androidpit.com##.adm-with-statement.adm-with-question.root.agree-disagree
 
 androidpolice.com##.header
-
-androidtop.org##.header:style(position:static !important)
 
 anekdot.eu##.txt11
 
@@ -3736,15 +5529,12 @@ anekdotov.net##.toptbl
 anekdotovmir.ru###header-img
 
 angrycitizen.ru##.fixed-type.top-menu:style(position:static !important)
-angrycitizen.ru##body:style(padding-top:0px !important)
 
 animalreader.ru##.td-header-top-menu
 
-annamama.ru##.x-navbar-fixed-top:style(position:static !important)
 annamama.ru##.bottom.x-colophon
 
 anoopcnair.com##aside.widget_text.widget
-anoopcnair.com##.td-affix:style(position:static !important)
 
 ! it seems, the service is un-needed, all works already
 antibot.cloud
@@ -3754,7 +5544,6 @@ antichat.ru##.sam3Bannner2Uni
 antichat.ru##.activeSticky:style(position:static !important)
 antichat.ru##.lastSticky:style(position:static !important)
 antichat.ru##.stickyTop:style(position:static !important)
-antichat.ru##.sticky_wrapper:style(position:static !important)
 ! site breaks scroll
 antichat.ru##.off-canvas-wrapper:style(overflow-y:hidden !important)
 ! other
@@ -3771,7 +5560,6 @@ antiobman.com##.check
 aphorismos.ru/_informer/*
 
 !todo
-apescout.com###header:style(position:static !important)
 apescout.com##body:style(padding-top:0px !important; margin-top:0px !important; margin-bottom:0px !important)
 
 apomusic.ru##.site-desc
@@ -3886,10 +5674,8 @@ askme4tech.com##.is_stuck.stick-in-parent:style(position:static !important)
 ! a banner before comments
 askme4tech.com##.comments-wrapper
 
-askubuntu.com##._fixed:style(position:static !important)
 askubuntu.com##.js-sticky-leftnav:style(position:static !important)
 ||cdn.sstatic.net/Sites/askubuntu/img/site-background-image.png$image
-askubuntu.com##body:style(padding-top:0px !important)
 askubuntu.com##.site-header
 
 astgift.ru##.site-branding
@@ -3902,15 +5688,11 @@ community.atlassian.com##.atl-comment-likes
 
 atraining.ru##div.atthumb > .caption
 
-atvclub.ru##.uix_stickyBar.p-navSticky--all.p-navSticky:style(position:static !important)
-atvclub.ru##.uix_stickyBodyElement:style(position:static !important)
 atvclub.ru##.uix_headerContainer > div:nth-of-type(3)
 atvclub.ru##.notice
 
 ! header
 au.ru##.au-site-header-cnt:style(position:static !important)
-au.ru##body:style(padding-top:0px !important)
-au.ru##.affix:style(position:static !important)
 au.ru###header-teaser
 ||au.ru/*/teaser-mobile.png
 ! footer
@@ -3934,7 +5716,6 @@ auchan.ru##.homepage-block__content > p
 ! other
 auchan.ru##.products__item-badges
 
-author.today##.navbar-fixed-top:style(position:static !important)
 author.today##.layout-fixed:style(margin-top:0px !important)
 author.today##section.content:style(margin-top:0px !important)
 author.today##.reader-header:style(position:static !important; border-bottom:none !important; border-left:none !important)
@@ -3942,11 +5723,8 @@ author.today##.reader-header:style(position:static !important; border-bottom:non
 auto-bk.ru##.fa-bullhorn
 auto-bk.ru##.cAnnouncementIcon
 
-autohotkey.com##body:style(padding-top:0px !important)
-
 automania.ru##.rippleButton.button--primary.button
 automania.ru##.uix_sidebar--scroller
-automania.ru##.is-sticky.uix_stickyBar.p-navSticky--all.p-navSticky:style(position:static !important)
 automania.ru##.uix_headerContainer > div:nth-of-type(3)
 automania.ru##.uix_noticeInner
 automania.ru##.notice
@@ -3958,7 +5736,6 @@ autonews.ru##.topline__disable-adv
 autonews.ru##.item-car-service_borders
 ! fixed top
 autonews.ru##.topline__wrapper:style(position:static !important)
-autonews.ru##.topline.fixed:style(position:static !important)
 ! social
 autonews.ru##.footer__social-buttons
 ! scroll
@@ -4005,8 +5782,6 @@ avangard-sp.ru#$#.hover-element:hover {box-shadow:none !important;}
 ! prices: size exchange
 avangard-sp.ru##.price:style(font-size: 36px !important;)
 avangard-sp.ru##.price-whol:style(font-size: 16px !important;)
-
-avanpost.ru##.fixed-top:style(position:static !important)
 
 ! avast
 ||forum.avast.com/avt/avatar*.gif$image
@@ -4069,7 +5844,6 @@ babyblog.ru##.js-interview
 ! header
 babyblog.ru##.bb-header-container:style(position:static !important)
 babyblog.ru##.nav:style(position:static !important)
-babyblog.ru##body:style(padding-top:0px !important)
 babyblog.ru##.svg-preloader
 ! footer
 babyblog.ru##.footer-menu-special
@@ -4081,7 +5855,6 @@ babyblog.ru##.footer-sl-age
 ad.babyblog.ru
 
 backblaze.com##.nav-primary
-backblaze.com##.stuck:style(position:static !important)
 
 bagway.ru###tab-viewed-articules
 bagway.ru###bottomMenu.bottom-menu
@@ -4113,7 +5886,6 @@ banggood.com##.aside-bar
 
 baniclub.ru##.descr_soc
 baniclub.ru###headerProxy
-baniclub.ru###navigation:style(position:static !important)
 
 banisauni.ru###header
 
@@ -4150,8 +5922,6 @@ baxov.net###block-baxovnet-sledizanami
 baxov.net###block-baxovnet-podpiskablok
 ||baxov.net/*/baxov-banner*$image
 baxov.net##.field--type-voting-api-field.field--name-field-warning-raiting.field
-baxov.net##.navbar-fixed-top:style(position:static !important)
-baxov.net##body:style(margin-top:0px !important)
 baxov.net##.subsbg
 baxov.net###block-baxovnet-addtoanybuttons
 
@@ -4161,8 +5931,6 @@ baxov.net###block-baxovnet-addtoanybuttons
 bbc.com###brand
 
 bce-tyt.ru$3p
-
-beauty.ua##.fixed:style(position:static !important)
 
 becomethesolution.com##div > [href="https://becomethesolution.com/"]
 becomethesolution.com##form:has-text(E-Mail Updates)
@@ -4174,9 +5942,6 @@ begeton.com##.footer_app_icons
 
 bemeta.cz##.bx-wrapper
 
-benpan.ru##.main_nav:style(position:static !important)
-
-benzopila.ru###sticky-wrapper.is-sticky.sticky-wrapper:style(position:static !important)
 benzopila.ru##.header-menu:style(position:static !important)
 
 beridver.ru##.head_center
@@ -4217,9 +5982,7 @@ bestsafe.ru##.catalog-price-discount
 bestsafe.ru##.item_icons
 
 bestwebber.ru##.td-header-sp-logo
-bestwebber.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
 bestwebber.ru##.td-container-wrap.td-header-top-menu-full
-bestwebber.ru##.td-ss-main-sidebar:style(position:static !important)
 
 beveli.ru###tcb-call
 beveli.ru##div.bestseller
@@ -4228,20 +5991,17 @@ beveli.ru##.feature-box
 ! 3p images
 beyondsecurity.com$3p
 
-bfm.ru##.sm-gallery
 bfm.ru###nav-attached:style(position:static !important)
+bfm.ru##.sm-gallery
 bfm.ru##.birthday
 bfm.ru##.birthdays
-
-bgpview.io##.navbar-fixed-top:style(position:static !important)
 
 bibiguru.ru##noindex
 bibiguru.ru###header
 
-bigdatacloud.com##.active-sticky:style(position:static !important)
-bigdatacloud.com##header.header:style(position:static !important)
-bigdatacloud.com##.header-scrolled-contents:style(position:static !important)
 bigdatacloud.com##.header-offset
+bigdatacloud.com##.active-sticky:style(position:static !important)
+bigdatacloud.com##.header-scrolled-contents:style(position:static !important)
 
 big-forum.ru###ipsLayout_header:style(background:none !important)
 
@@ -4292,7 +6052,6 @@ b-kontur.ru##.aside
 
 ||blackhillsinfosec.com/wp-content/uploads/*/start-here-widget*.png$image
 
-blackview.hk##.header:style(position:static !important)
 blackview.hk##.m-video
 bbs.blackview.hk##.forum-permissions
 blackview.hk##.breadcrumbs-box:style(position:static !important)
@@ -4586,8 +6345,6 @@ budetinteresno.info##h2:has-text(Комментариев нет)
 budetinteresno.info##article > div
 budetinteresno.info###logoi
 budetinteresno.info###header > h1
-budetinteresno.info###header:style(padding-top:0px !important)
-budetinteresno.info##.wrapper:style(padding-top:0px !important)
 
 buh.ru###side_navigation
 buh.ru##.logo-block
@@ -4608,7 +6365,6 @@ burmistr.ru##h2:has-text(задать вопросы можно)
 business2community.com##.message
 business2community.com###b2c-ribbon-logo
 business2community.com###logo-b2c
-business2community.com##.navbar-fixed-top:style(position:static !important)
 ! site breaks copypaste
 business2community.com$inline-script
 business2community.com$script
@@ -4634,7 +6390,6 @@ sp.bvf.ru##.fly_menu
 sp.bvf.ru##.show_fly
 
 bydom.ru###decorative2
-bydom.ru##body:style(padding-top:0px !important)
 
 bytesizedalex.com###masthead
 
@@ -4711,8 +6466,6 @@ cheap-safe.ru##.header_conts
 cheap-safe.ru##.stiker
 cheap-safe.ru##.roistat-tel-c_s
 !cheap-safe.ru##.affix-top:style(position:static !important)
-!cheap-safe.ru##.affix:style(position;static !important)
-!cheap-safe.ru###top3.affix:style(position;static !important)
 cheap-safe.ru###top3
 cheap-safe.ru##h2:has-text(С нами работают)
 cheap-safe.ru##div.rev_slider:has-text(Вы смотрели)
@@ -4726,8 +6479,6 @@ cheap-safe.ru##.pokupka.form-group > .preimushestva
 cheholgun.ru##.fly-panel
 
 ||chicagotech.net/images/image-s.gif
-
-chicagovps.net##.fixed.sticky:style(position:static !important)
 
 chilibros.co###footerLine
 chilibros.co##.getFastView
@@ -4781,7 +6532,6 @@ cifrus.ru###menu.navbar:style(position:static !important)
 cifrus.ru##.product_3goda
 cifrus.ru##.view-buy-bat
 
-cinemapress.org##.navbar-fixed:style(position:static !important)
 ||cinemapress.org/images/enota.png
 
 cio.ru##.bar-wrapper
@@ -4826,8 +6576,6 @@ frontend-monitoring.services.citik.ru
 ||citilink.ru/*/saveMetrics
 !citilink.ru/frontend-monitoring.service/api/saveMetrics
 
-support.citrix.com##.sticky:style(position:static !important)
-
 city-denta.ru##.rev_slider_wrapper
 
 ||citymaker.ru/tpldata/images/logo*.png
@@ -4855,8 +6603,6 @@ cloudenius.com###masthead
 ! for example, see this tracker on medium.com
 d1z2jf7jlzjs58.cloudfront.net$important
 
-cloudzone.ru##.navbar-fixed-top:style(position:static !important)
-
 ! site blocks copypaste
 ||clubhunters.ru/wp-content/themes/copy/js/common.min.js
 
@@ -4869,8 +6615,6 @@ cnet.com##.social-link
 
 cnews.ru##.tizer_stick:style(position:static !important)
 cnews.ru##.header-inner
-cnews.ru##.header_fixed:style(position:static !important)
-cnews.ru##.header:style(position:static !important)
 events.cnews.ru##.right-block
 
 cnn.com###breaking-news
@@ -4887,7 +6631,6 @@ comnews.ru###last-comments
 computerinfo.ru###one
 computerinfo.ru###masthead
 
-computerperformance.co.uk###header:style(position:static !important)
 computerperformance.co.uk###catcher
 computerperformance.co.uk##.sidebar
 ||computerperformance.co.uk/images/solarwinds/real_time_clarifybf.jpg$image
@@ -4897,8 +6640,6 @@ computerperformance.co.uk##p:has-text(/Network Performance Monitor|NPM|Response 
 computerperformance.co.uk##div.google
 
 computerra.ru##.header-top__signs
-computerra.ru##.header:style(position:static !important)
-computerra.ru##.content:style(margin-top:0px !important)
 computerra.ru##.container:style(margin-top:0px !important)
 computerra.ru##.header-top__container:style(padding-top:0px !important; padding-bottom:0px !important)
 
@@ -4910,7 +6651,6 @@ computerworld.ru##.adstring
 computerworld.ru###side-menu-toggler
 
 @@||computingforgeeks.com^$generichide,badfilter
-computingforgeeks.com##.td-affix.td-header-menu-wrap:style(position:static !important)
 !computingforgeeks.com##.td-scroll-up  ! doesn't work with general -- it was an exception from AdGuard
 !computingforgeeks.com##.td-banner-wrap-full  ! doesn't work with general -- it was an exception from AdGuard
 computingforgeeks.com##.td-trending-now-wrapper
@@ -4919,14 +6659,12 @@ docs.cntd.ru##.on:style(position:absolute !important)
 docs.cntd.ru##.payBlockAssistant
 cntd.ru##.reviewStars-case
 
-codeby.net##.p-navSticky:style(position:static !important)
 codeby.net##.uix_headerContainer > div:nth-of-type(4)
 
 codeproject.com###ctl00_Logo
 
 secure.comodo.com/trustlogo/
 
-composs.ru##.site-header:style(position:static !important)
 composs.ru###respond
 
 ! banners on gq.ru and others. static.media.condenast.ru is ok
@@ -4945,7 +6683,6 @@ consultant.ru##.internet
 
 cont.ws##.post_toolbar__meta.post_toolbar:style(position:static !important)
 cont.ws###headline:style(position:static !important)
-cont.ws##body:style(padding-top:0px !important)
 cont.ws##.post_meta
 cont.ws##.channels-panel
 
@@ -4983,7 +6720,6 @@ coub.com##.viewer__das
 ! from Ru AdList
 coub.com##div[class^="viewer"][class*="banner"]
 
-couchpota.to##header:style(position:static !important)
 couchpota.to##.intro
 
 countryscanner.ru##.bt-sub-navigation
@@ -5007,7 +6743,6 @@ coursehero.com
 
 crb-otradnoe.ru##.footer-logo
 
-credera.com##.sticky:style(position:static !important)
 credera.com##p:has-text(/Transform your business|Explore Our Microsoft Consulting/)
 ! it is hr in fact
 credera.com##div.aligncenter
@@ -5033,7 +6768,6 @@ cssk.ru##.fusion-sticky-shadow:style(position:static !important)
 cssk.ru##.ls-slide-backgrounds
 
 ctc.ru##[class^=banner-wrapper]
-ctc.ru###header:style(position:static !important)
 
 ctpost.com##header
 
@@ -5046,8 +6780,6 @@ customdonations.com$3p
 cyberforum.ru##.thumbs-post-rate
 
 cyberleninka.ru##.info
-
-cyberpointllc.com##.navbar-fixed-top:style(position:static !important)
 
 cyberpost.co###ppUp
 cyberpost.co##.news-bar
@@ -5101,7 +6833,6 @@ davitamebel.ru##.fancybox-overlay
 davitamebel.ru##.fixed-dashboard
 davitamebel.ru##.credits
 
-db-ip.com##.fixed-top:style(position:static !important)
 db-ip.com##body:style(padding-top:0px !important; margin-bottom:auto !important)
 
 decathlon.ru###nl-badge
@@ -5165,7 +6896,6 @@ dezbox.ru##.header__fav
 dezbox.ru##.footer-ask
 
 dgl.ru##.fixed-wrapper
-dgl.ru##body:style(padding-top:0px !important)
 ||dgl.ru/js/dgl/yamarket.js
 
 dhgate.com##.j-multi-jump
@@ -5242,8 +6972,6 @@ discord.com.ru$third-party
 discord.org.ru$third-party
 discord-pc.ru$third-party
 ||discordemoji.com^
-
-ditching.eu##.td-ss-main-sidebar:style(position:static !important)
 
 divan.tv##.privacy-policy-message__wrapper
 
@@ -5384,13 +7112,10 @@ doginhouse.ru##.sfsi_Sicons
 doginhouse.ru###respond
 doginhouse.ru###ez-toc-container
 
-dogsecrets.ru##.td-affix:style(position:static !important)
-
 dolina-sad.ru##.session-notification
 
 @@||dom2.ru^$generichide,badfilter
 
-dom4m.ru###topline.fixed:style(position:static !important)
 dom4m.ru##.hided:style(visibility:visible !important; display:block !important)
 dom4m.ru###menuover:style(display:block !important)
 dom4m.ru###enterblock
@@ -5470,8 +7195,6 @@ drivemusic.fm,ru-drivemusic.net##.music-like
 droider.ru##.specproject-widget
 droider.ru##.footer__rusonyx
 
-droidforums.net##.sticky_wrapper:style(position:static !important)
-
 drive.ru##.feedsub
 
 drive2.com,drive2.ru##.c-logo
@@ -5517,9 +7240,7 @@ dtf.ru/booster/
 dtf.ru/chan/
 !dtf.ru/initialData
 dtf.ru##.l-fixed:style(position:static !important)
-dtf.ru##.sticky:style(position:static !important)
 dtf.ru##.sticky_sidebar:style(position:static !important)
-dtf.ru##.main_menu:style(position:static !important)
 dtf.ru##.layout__column--sticky:style(position:static !important)
 dtf.ru##.live
 dtf.ru##.subsite_card_short_with_content
@@ -5578,7 +7299,6 @@ dxomark.com##div.is-xsmall:has-text(Reading Time:)
 dynadot.com##.page-content-section-container:nth-of-type(1)
 
 dyplet.com##.ad728-top
-dyplet.com##.theiaStickySidebar:style(position:static !important)
 
 e1.ru##.e1-footer2__icons
 e1.ru##.e1-banner-right-fixed
@@ -5616,21 +7336,16 @@ echo.msk.ru##.mmage
 
 eco-dush.ru##.fix-scroll
 
-econet.ru###header:style(height:auto !important)
-econet.ru##.affix:style(position:static !important)
-
-ectocervical.ru##.fixed:style(position:static !important)
-
 eda.ru##.sticky-wrapper
 eda.ru##.user-bar__svg-bookmark
 eda.ru##.projects-menu
 eda.ru###billboard
 
-||eddiejackson.net/web_images/web_pic.png$image
-||eddiejackson.net/web_images/topbar.jpg$image
+||eddiejackson.net/web_images/web_pic.png
+||eddiejackson.net/web_images/topbar.jpg
+||eddiejackson.net/web_images/email.png
 eddiejackson.net##.paypal-donations
 eddiejackson.net###colophon
-||eddiejackson.net/web_images/email.PNG$image
 eddiejackson.net##body:style(animation-name:none !important)
 
 edimdoma.ru##.top__nav
@@ -5638,7 +7353,6 @@ edimdoma.ru##.button_coins
 edimdoma.ru##.main-page-slider-container
 edimdoma.ru##.incard-banner
 edimdoma.ru##.project-info
-edimdoma.ru##body:style(padding-top:0px !important)
 
 edinstvennaya.ua##.header-special
 edinstvennaya.ua##.nav-fixed:style(position:static !important)
@@ -5656,13 +7370,11 @@ e-du.ru##.titlewrapper
 e-du.ru##i > span:has-text(поставьте лайк)
 
 educba.com###topdiv
-educba.com##.fixed:style(position:static !important)
 
 edugeek.net##.options_block
 edugeek.net###notices
 !edugeek.net###newsTicker4
 
-edx.org##.stuck:style(position:static !important)
 edx.org###enroll-type-section
 
 ! sticky panel
@@ -5675,7 +7387,6 @@ egrpzhkh.ru##.PhonePanelSticked
 
 eightforums.com###header
 eightforums.com##.notice-content
-eightforums.com##.p-navSticky:style(position:static !important)
 eightforums.com##.fc_section_header.block-formSectionHeader
 
 ||ekabu.ru/static/images/bender-negodue.png
@@ -5718,8 +7429,6 @@ eldorado.ru##.q-slider-brands
 eldorado.ru##.product-box-price__old
 eldorado.ru##.q-slider-last-viewed
 eldorado.ru##.product-box-price > .product-box-price__text
-
-electricpulp.com##.navbar:style(position:static !important)
 
 elbor.ru###bottom-panel
 elbor.ru###close-popup-modal
@@ -5808,16 +7517,15 @@ esg-moscow.ru##.box-bottom-contact-info
 esg-moscow.ru###phone-right-box
 esg-moscow.ru###calculator
 esg-moscow.ru##.button-termin
-esg-moscow.ru##.fixed:style(position:static !important)
+
 esg-moscow.ru###logo-container
-||esg-moscow.ru/images/kl.jpg$image
+||esg-moscow.ru/images/kl.jpg
 esg-moscow.ru###home-search-container:style(height:auto !important)
 esg-moscow.ru##.more
 
 eskonr.com###secondary
 
 esquire.ru##.subscribe-link
-esquire.ru##.fixed:style(position:static !important)
 
 essential.com###footerNotice
 
@@ -5846,7 +7554,6 @@ euro-diski.ru###name_site
 eva.ru##.recomedations
 eva.ru##.btn-ok
 eva.ru##a.btn-primary.btn
-eva.ru##.fixed-top:style(position:static !important)
 eva.ru##.eva:style(padding-top:0px !important)
 
 evastroy.ru###pop-up-fortuneteller-answer.fortuneteller-answer.pop-up
@@ -5857,7 +7564,6 @@ eventid.net##.span-1-of-3.col
 eventid.net##div.event-english-concept-search
 eventid.net##[href="/"]
 
-kb.eventtracker.com##.navbar-fixed-top.navbar:style(position:static !important)
 kb.eventtracker.com##.orange
 kb.eventtracker.com##.btn-banner
 
@@ -5914,14 +7620,10 @@ exler.ru##.custom-section-border.custom-section
 ! from RU AdList
 ||exler.ru^*/banner$script
 
-! todo: not very good
-expert.ru##.header:style(position:static !important)
-
 expertbani.ru##.author_rank
 
 ! top
 expertreviews.co.uk###header-group:style(position:static !important)
-expertreviews.co.uk##body:style(padding-top:0px !important)
 ||expertreviews.co.uk/*/expert-reviews-logo.svg
 ! inline ads
 expertreviews.co.uk##[href^="/vouchercodes/"]
@@ -5990,7 +7692,6 @@ fandom.com,wikia.com###WikiaTopAds
 fandom.com,wikia.com##.rail-sticky-module:style(position:static !important)
 fandom.com,wikia.com##.quick-links:style(position:static !important)
 fandom.com,wikia.com##in-area-right:style(position:static !important)
-fandom.com,wikia.com##is-sticky:style(position:static !important)
 ! global navigation bar is useless
 fandom.com,wikia.com###WikiaBar
 fandom.com,wikia.com###globalNavigation
@@ -6027,16 +7728,12 @@ fastpic.ru###footer
 ||fastpic.ru/n/b.php$image
 ||fastpic.ru/*/b.php
 
-fatcatslim.ru##.show.is-fixed:style(position:static !important)
-fatcatslim.ru##.theiaStickySidebar:style(position:static !important)
-
 fazasporta.com##.marquiz__container
 fazasporta.com##.block-s-geolocation
 ||fazasporta.com/*/payments.jpg
 fazasporta.com##.s-fast-buy-button
 fazasporta.com##.s-credit-button
 fazasporta.com##.block-webform
-fazasporta.com##.header:style(position:static !important)
 
 fb.ru##.c-creator__subscrubers
 fb.ru###comments-creator
@@ -6130,7 +7827,6 @@ findmysoft.com###download_btn
 findtenders.ru##.alert.message-header
 findtenders.ru##.reviews-slider
 findtenders.ru##.top-part:style(position:static !important)
-findtenders.ru##.header:style(padding-top:0px !important)
 findtenders.ru##.main-slider
 findtenders.ru##.control-panel:style(position:static !important)
 findtenders.ru##.our-clients
@@ -6171,8 +7867,6 @@ fixim.ru##.add_do
 fixim.ru##.sc_block
 fixim.ru##.gold_block.mid_block
 
-fixya.com###header.header:style(position:static !important)
-fixya.com##body:style(margin-top:0px !important)
 fixya.com##.agree
 fixya.com##[href^="https://www.6ya.com/"]
 fixya.com##.reports-module
@@ -6220,7 +7914,6 @@ fontanka.ru##.footer__white-wrapper
 forbes.ru##.header-menu-wrap:style(position:static !important)
 forbes.ru##.block-bnr-in-text
 forbes.ru##.main-menu:style(padding-top:0px !important)
-forbes.ru##.header:style(position:static !important)
 forbes.ru##.header-bottom:style(margin-top:0px !important)
 
 forma-odezhda.ru##.horizontal.container-megamenu:style(position:static !important)
@@ -6230,9 +7923,6 @@ fornote.net##.today_date
 fornote.net##.topbar
 fornote.net##.breaking-news
 fornote.net##.ns_wrap
-
-fortgun.ru##.fixed:style(position:static !important)
-fortgun.ru##.header:style(position:static !important)
 
 ||forum-auto.ru/i/main_banner.svg
 ||forum-auto.ru/i/topbgline.jpg
@@ -6342,8 +8032,6 @@ gazeta.ru##.header_v2_top
 gazeta.ru##.b-navbar-secondary
 gazeta.ru##.header_stub:style(height:36px !important)
 
-gazetabiznes.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
-
 gbhackers.com##.size-full.attachment-full
 
 gdeikakzarabotat.ru###header
@@ -6387,7 +8075,6 @@ geekon.media##footer > div:nth-of-type(1)
 geekon.media##.td-affix:style(position:static !important)
 
 geekville.ru##.td-header-sp-logo
-geekville.ru##.td-ss-main-sidebar:style(position:static !important)
 
 g-ek.com##.h-c-header__bar:style(position:static !important)
 
@@ -6479,7 +8166,6 @@ github.io###banner
 gitlab.com##.sticky:style(position:static !important)
 
 gizmochina.com##.td-affix.td-header-menu-no-search:style(position:static !important)
-gizmochina.com##.td-ss-main-sidebar:style(position:static !important)
 
 gktehprom.ru###dontTouchMe
 
@@ -6521,7 +8207,6 @@ globus.ru##.carousel_banner
 globus.ru##.banner-top
 globus.ru##.js-banner-top
 ! fixed top
-globus.ru##.sticking:style(position:static !important)
 globus.ru##.stick-me:style(position:static !important)
 globus.ru##.header__sticky-menu:style(position:static !important)
 globus.ru##.js-sticky-menu:style(position:static !important)
@@ -6633,7 +8318,6 @@ greywizard.net$3p
 ! pings from shopify apps
 ||grizzlyapps.com$xhr
 
-grosh-blog.ru###site-navigation:style(position:static !important)
 grosh-blog.ru###slide-in-box
 grosh-blog.ru##.spu-bg
 grosh-blog.ru##.sticky-sb:style(position:static !important)
@@ -6758,7 +8442,6 @@ habr.com##.tm-social-icons__icon
 hackernoon.com##.u-tintBgColor:style(background-color:white !important)
 hackernoon.com##.u-fixed:style(position:static !important)
 hackernoon.com###top:style(position:static !important)
-hackernoon.com###header:style(position:static !important)
 
 handsetdetection.com$3p
 
@@ -6805,8 +8488,6 @@ helpix.ru##div.b-menu__item_redLite
 ||here.com^$badfilter
 
 hetmanrecovery.com###nav-single
-
-hft.ru##.fixed:style(position:static !important)
 
 hh.ru,career.ru##.HH-RelatedVacanciesPreview-StickyContainer
 hh.ru,career.ru##.navi__menu:style(position:static !important)
@@ -6855,7 +8536,6 @@ hipdir.com##.help-request
 
 hi-tech-obzor.ru##.penci-header-second.inner-header
 hi-tech-obzor.ru###menu-hi-tech-obzor-1
-hi-tech-obzor.ru###navigation:style(position:static !important)
 hi-tech-obzor.ru##.owl-dots
 hi-tech-obzor.ru##.has-pale-cyan-blue-background-color.has-small-font-size.has-background
 
@@ -6890,9 +8570,6 @@ homecredit.ru##[class*="topline__red"]
 
 home-engineer.ru##.art-Header
 
-home-gid.com##.td-header-menu-wrap:style(position:static !important)
-home-gid.com##.td-affix:style(position:static !important)
-
 homeli.ru##.logo-link
 homeli.ru###footer-block
 homeli.ru##.box-option
@@ -6904,8 +8581,6 @@ home-santehnika.ru###sidebar-banners
 
 homtom.cc###layui-layer1
 homtom.cc###layui-layer-shade1
-
-hostbrz.com##.affix:style(position:static !important)
 
 hostenko.com##.sidethemes
 hostenko.com###mc_embed_signup
@@ -6941,7 +8616,6 @@ community.hpe.com##.anchored:style(position:static !important)
 
 hs-store.ru###bxr-top-fixed-panel
 
-httpmaster.ru###header:style(position:static !important)
 ||httpmaster.ru/images/admn.gif
 httpmaster.ru##.googlia.moduletable
 
@@ -7037,7 +8711,6 @@ iceberg-shop.ru##.bk_buy_button
 
 ichip.ru##.td-affix
 ichip.ru##.td-footer-bottom-full
-ichip.ru##.td-ss-main-sidebar:style(position:static !important)
 ichip.ru##.sidebar-panel.subscriber
 ichip.ru##.contacts-links
 ichip.ru##.js-header-scroll:style(position:static !important)
@@ -7046,8 +8719,6 @@ ichip.ru/img/chip_logo.svg
 
 ichudoru.com###masthead
 ichudoru.com###toc_container
-
-idd35.ru##.affix:style(position:static !important)
 
 idea4web.biz##.head1
 idea4web.biz##.head2
@@ -7070,7 +8741,6 @@ igromania.ru##.headerline_outer:style(position:static !important)
 igromania.ru##.hmenu_before
 
 iguides.ru###topLine:style(position:static !important)
-iguides.ru##header:style(padding-top:0px !important)
 iguides.ru##.logo_store
 iguides.ru###topLineLogo
 iguides.ru##.post_foot
@@ -7151,7 +8821,6 @@ imgpay.ru##^script:has-text(Adblock)
 
 ! top
 inc.com##.nav-logo
-inc.com##.header:style(position:static !important)
 ! it blocking content when cookies disabled
 inc.com$script
 
@@ -7167,7 +8836,6 @@ indeed.com##.footerCta
 ||indeed.com/m/rpc/frontendlogging
 
 indiedev.name###nav-topbar.nav-container:style(position:static !important)
-indiedev.name###header:style(padding-top:0px !important)
 
 indrikgrad.ru##.headblok
 
@@ -7233,8 +8901,6 @@ intelligentsystemsmonitoring.com##.enhanced-text-widget
 interesimir.ru##.art-Logo
 interesimir.ru##.art-Header:style(height:auto !important)
 
-interface31.ru##.navbar:style(position:static !important)
-interface31.ru##body:style(padding-top:0px !important)
 interface31.ru###jumbotron
 interface31.ru##div.widget:has-text(Реклама)
 ||interface31.ru/mt-static/images/icons8_Twitter$image
@@ -7289,7 +8955,6 @@ ipinfo.io,host.io##.is-fixed:style(position:static !important)
 ipinfo.io,host.io##.header-inner:style(position:static !important)
 ipinfo.io,host.io##.bd-sidebar:style(position:static !important)
 host.io##.hostio-header:style(position:static !important)
-host.io##body:style(padding-top:0px !important)
 
 ipify.org$important,third-party
 
@@ -7416,7 +9081,6 @@ itproguru.com##.advads-track
 itprotoday.com###newsletter-signup-load
 !todo: header jumping. For now, just removed
 itprotoday.com##.header
-itprotoday.com##main:style(padding-top:0px !important)
 itprotoday.com##.sidebar-scrollable:style(position:static !important)
 
 it-rem.ru###astbiz-user-last-login_widget-2
@@ -7574,14 +9238,12 @@ justclick.ru$3p
 ||p.jwpcdn.com/player/plugins/vast/
 ||jwpsrv.com/watermarks/
 
-k31.ru##header:style(position:static !important)
 k31.ru##.modern-appo-btn.button
 
 kabina-online.ru##.open_quick_view
 kabina-online.ru###top:style(position:absolute !important)
 
 kachestvolife.club##.navbar-header
-kachestvolife.club##.navbar-fixed-top:style(position:static !important)
 
 kachevo.org##.br-widget
 
@@ -7654,18 +9316,13 @@ kdelo.ru##.topLine
 kdservis.ru##.wrap_video
 kdservis.ru###full_calc_button
 kdservis.ru##.wrap_consultation
-kdservis.ru##.sticky.header:style(position:static !important)
 kdservis.ru##.wpcf7-form
 kdservis.ru##.conversion-v2
 kdservis.ru##.wrap_stock
 kdservis.ru##.dream
 kdservis.ru##.pagination
 
-help.keenetic.com##header:style(position:static !important)
 help.keenetic.com##.layout:style(padding-top:0px !important)
-
-kemprogress.ru##.td-ss-main-sidebar:style(position:static !important)
-kemprogress.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
 
 kg-portal.ru##.menu_wrap:style(position:static !important)
 kg-portal.ru##.b_donate_author
@@ -7797,7 +9454,6 @@ knigogid.ru##.reader-settings_lgscreen:style(position:static !important)
 knigogid.ru##.reader-funcs:style(position:static !important)
 
 kodi.tv##.navbar-fixed-bottom:style(position:static !important)
-kodi.tv##.navbar-fixed-top:style(position:static !important)
 kodi.tv##.breadcrumb-navi:style(position:static !important)
 
 koditips.com##.mtsnb
@@ -7829,8 +9485,6 @@ komus.ru##.achtung
 komus.ru##.online_call
 komus.ru##.b-sticker__wrapper
 
-koofr.eu##.site-header:style(position:static !important)
-koofr.eu##.header:style(position:static !important)
 
 ||koolinar.ru/media/svg/new-logo-header.svg
 koolinar.ru##.u-header:style(position:static !important)
@@ -7843,8 +9497,6 @@ koronapay.com##.mobile-apps
 ! todo: not completed
 korshop.ru##.sovservice
 korshop.ru##.payment-method
-korshop.ru##.fixed:style(position:static !important)
-korshop.ru##.header:style(position:static !important)
 korshop.ru##body:style(background:none !important)
 korshop.ru##.work-time
 korshop.ru##.basket-line
@@ -7859,8 +9511,6 @@ koshcheev.ru###header-top
 kosmetika-proff.ru##.content_reviews
 kosmetika-proff.ru##.black-footer-paysystems
 kosmetika-proff.ru##.phone
-
-kostikov.co##.fixed-top:style(position:static !important)
 
 kotelock.ru##.main-block-parent:style(background-image:none !important)
 
@@ -7879,7 +9529,6 @@ kotofoto.ru##.ketkoin-prod
 
 kp.ru##.shadow-close
 kp.ru##.popup
-kp.ru##.header:style(position:static !important)
 ! говно, разъезжается. todo.
 !kp.ru##.menuHead:style(position:static !important)
 !kp.ru##.topInfo.flex-container:style(position:static !important)
@@ -8105,7 +9754,6 @@ leroymerlin.kz,leroymerlin.ru##.js-sticky-header-main:style(position:static !imp
 leroymerlin.kz,leroymerlin.ru##.header-main-sticky
 leroymerlin.kz,leroymerlin.ru##.header-block:style(position:static !important)
 leroymerlin.kz,leroymerlin.ru##.header-inner:style(position:static !important)
-leroymerlin.kz,leroymerlin.ru##.is-sticky:style(position:static !important)
 ! red basket buttons. Arguable, but irritating for me. So turn buttons to green.
 leroymerlin.kz,leroymerlin.ru##.btn_red:style(background-color: rgb(75, 168, 66) !important; border-color: rgb(75, 168, 66) !important;)
 leroymerlin.kz,leroymerlin.ru##.red-btn:style(background-color: rgb(75, 168, 66) !important; border-color: rgb(75, 168, 66) !important;)
@@ -8180,9 +9828,7 @@ liberatum.ru$inline-script
 ||libking.ru/templates/king/images/crab1.png
 libking.ru##.full-title > .orig-name
 
-libreelec.tv##.navbar-fixed-top.navbar:style(position:static !important)
 libreelec.tv##.pageHeaderPanel:style(position:static !important)
-libreelec.tv##body:style(padding-top:0px !important)
 libreelec.tv###dw__toc.affix
 libreelec.tv###dw__pagetools
 libreelec.tv##.messageSignature
@@ -8205,9 +9851,6 @@ lifehacki.ru##.site-branding
 
 @@||lifenews.ru^$generichide,badfilter
 @@||lifenews78.ru^$generichide,badfilter
-
-lifewire.com##.header:style(position:static !important)
-lifewire.com##.main:style(margin-top:0px !important)
 
 likes.ru$3p
 !likes.ru/js/widget/build/widget.js
@@ -8463,7 +10106,6 @@ loginza.ru$third-party
 loleknbolek.com##blockquote
 loleknbolek.com##.siteHeader--fixed:style(position:static !important)
 loleknbolek.com##.siteHeader-content
-loleknbolek.com##.theiaStickySidebar:style(position:static !important)
 
 losst.ru###catcher
 losst.ru##.widget:has-text(/Реклама|Мы вконтакте|Обнаружили опечатку?|Оставайтесь с нами|Мы в Twitter/)
@@ -8692,8 +10334,6 @@ maketecheasier.com###masthead:style(position:absolute !important)
 ||mal-kuz.ru/images/vk1.png
 ||mal-kuz.ru/images/in.png
 
-blog.malwarebytes.com##.navbar-fixed-top:style(position:static !important)
-blog.malwarebytes.com##body:style(padding-top:0px !important)
 blog.malwarebytes.com##body > .hidden-xs
 
 mamalife24.ru###masthead
@@ -8721,7 +10361,6 @@ marieclaire.ru##.nav:style(position:static !important)
 markakachestva.ru##div.aliexpress-block
 markakachestva.ru##.addcomment-post
 
-mashtips.com##.td-affix.td-header-menu-wrap:style(position:static !important)
 mashtips.com##.td-ss-main-sidebar
 
 mastergrad.com##.msw-navbar
@@ -8752,7 +10391,6 @@ master-tisch.ru###blogmagazine-scrollup
 master-tisch.ru##.product > .add_to_cart_button
 master-tisch.ru##.yith-wcqv-button
 
-masterts.ru##.header_fixed:style(position:static !important)
 masterts.ru##.buttons-fixed
 
 masyan.ru##.td-front-end-display-block.td-more-articles-box
@@ -8849,7 +10487,6 @@ medialeaks.ru##.more_block.seealso
 mediapure.ru##.td-header-header.td-header-row
 mediapure.ru##.td-top-menu-full
 mediapure.ru##.td-affix.td-header-main-menu:style(position:static !important)
-mediapure.ru##.td-ss-main-sidebar:style(position:static !important)
 mediapure.ru##body:style(background-image:none !important)
 
 mediaterra.ru##.clame
@@ -8965,7 +10602,6 @@ militaryarms.ru##blockquote::before:style(background:none !important)
 militaryarms.ru##.header:style(height:45px !important)
 militaryarms.ru##blockquote::after
 
-miltor.ru##.navbar-fixed-top:style(position:static !important)
 miltor.ru##.navbar-header
 
 mikecareyau.com###branding
@@ -9029,7 +10665,6 @@ mir-sumok.ru##.applist
 
 ! from Fanboy's
 ||mirtesen.ru^$third-party
-mirtesen.ru##.header:style(position:static !important)
 mirtesen.ru##body:style(margin-top:0px !important; padding-top:0px !important)
 mirtesen.ru###content:style(margin-top:0px !important)
 mirtesen.ru###local:style(margin-top:0px !important)
@@ -9152,8 +10787,6 @@ mosigra.ru##.site-statistic
 mosigra.ru##.site-info
 mosigra.ru##.add-comment
 
-mosk-setki.ru##.navbar-fixed-top:style(position:static !important)
-
 mosstroi.market##div.box:nth-of-type(4)
 
 motherless.com###header
@@ -9235,15 +10868,10 @@ msk-alternativa.ru##.leftside
 ||msk-alternativa.ru/images/main-pat.png
 ||msk-alternativa.ru/images/msk-market.png
 
-msk-ix.ru##.header_fixed:style(position:static !important)
-
 msksantech-nika.ru##.b-header__container-row
 
 blogs.msmvps.com##.site-branding
 blogs.msmvps.com###splash
-
-mspoweruser.com##.navbar-fixed-top:style(position:static !important)
-mspoweruser.com##body:style(padding-top:0px !important)
 
 msserverpro.com###wpautbox_about
 
@@ -9282,7 +10910,6 @@ mts.ru##.mts16-footer__age
 ||mukownino.ru/assets/images/strela.png
 
 ! unstick header
-multcloud.com##.header:style(position:static !important)
 multcloud.com##.afterHeader
 ! hide promotion popup
 multcloud.com###jwWicket:has-text(Special Offer)
@@ -9321,7 +10948,6 @@ myaso-portal.ru##.dev
 
 mybellaria.ru##.subscribe
 mybellaria.ru##.home
-mybellaria.ru##.navbar-fixed-top.navbar:style(position:static !important)
 ||mybellaria.ru/img/header/$image
 
 mycharm.ru###header
@@ -9509,9 +11135,6 @@ neek.su##.inner_blockscreen
 
 ne-kurim.ru###simplemodal-overlay
 
-nemaloknig.com##.navbar-fixed-top:style(position:static !important)
-nemaloknig.com##body:style(padding-top:0px !important)
-
 nemcd.com###headerright
 nemcd.com###header
 
@@ -9573,7 +11196,6 @@ news2.ru##.m18
 
 newsignature.com##.ns-contact-widget
 newsignature.com##.pre-header
-newsignature.com##.navbar:style(position:static !important)
 newsignature.com##.site-footer-info
 
 newsland.com##.top-panel
@@ -9587,12 +11209,8 @@ newsru.com##.footer-right-text
 
 newstracker.ru##.zen-popup-component
 newstracker.ru##.topline:style(position:static !important)
-newstracker.ru##body:style(padding-top:0px !important)
 newstracker.ru##div.plashka
 
-! fixed menu
-newtimes.ru##.navbar-fixed-top:style(position:static !important)
-newtimes.ru##body:style(padding-top:0px !important)
 ! big logo at top
 newtimes.ru##.navbar:style(height:auto !important)
 ! other
@@ -9620,7 +11238,6 @@ nndv.ru###logobar
 nndv.ru###votesPanel
 
 noa-lit.ru##.logo_s
-noa-lit.ru##.navbar-fixed-top.navbar:style(position:static !important)
 
 ! is in EasyList: @@||notebookcheck.$image,1p
 ||notebookcheck.net/*/header_bg.svg$important
@@ -9723,7 +11340,6 @@ obi.ru##section.auto-init:has-text(/Рекомендуем|Популярные 
 obozrevatel.com##.page-switch
 obozrevatel.com##.fixed.header-top:style(position:static !important)
 obozrevatel.com##.header-bottom:style(position:static !important)
-obozrevatel.com##.header:style(position:static !important)
 
 obustroen.ru##.sidebar-right
 
@@ -9787,15 +11403,12 @@ ohotaktiv.ru##.ctrl-enter
 ohotaktiv.ru##.f-socials
 ohotaktiv.ru##.oferta
 ohotaktiv.ru##.labels
-ohotaktiv.ru##.header:style(position:static !important)
 ohotaktiv.ru##.filter-display--is-fixed:style(position:static !important)
 ohotaktiv.ru##.attention
 ohotaktiv.ru###start:style(margin-top:0px !important)
 ohotaktiv.ru##.banner-help
 ohotaktiv.ru##.subs
 ohotaktiv.ru##.product-intro__btn-add--click
-
-ohotarius.ru##.navbar-fixed-top:style(position:static !important)
 
 ohotnik.com##.topBut
 
@@ -9811,8 +11424,6 @@ ohrana.ru##.page > [href^="/rdr.php"]
 
 
 ohotniki.ru###ring
-
-okanalizacii.ru##.td-ss-main-sidebar:style(position:static !important)
 
 oknanagoda.com##.link-yellow
 oknanagoda.com##.wpcf7-form
@@ -9912,9 +11523,6 @@ osp.ru##.marketing-vertical
 osp.ru##.right-column > div.panel:has(:scope > div.panel-body > script[src^="https://email.osp.ru/"])
 osp.ru##.lan-siblings-links
 
-osradar.com##.td-affix:style(position:static !important)
-osradar.com##.td-header-menu-wrap:style(position:static !important)
-
 ostmusic.org###comments
 ! push :-(
 !ostmusic.org/plugins/muscolplayers/jwplayer/jwplayer/jwplayer_functions.js
@@ -9999,7 +11607,6 @@ overplay.net$third-party
 
 owncloud.org##.easeintop.award
 owncloud.org##header.main:style(position:static !important; height:auto !important)
-owncloud.org##body:style(padding-top:0px !important)
 owncloud.com##.easeintop.award
 owncloud.com###site-navigation:style(position:static !important)
 owncloud.com##.uk-sticky-fixed:style(position:static !important)
@@ -10025,7 +11632,6 @@ ozon.ru##svg:matches-css(width:24px):matches-css(height:24px)
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
 ||ozone.ru/_nuxt/pdp-all-sharing-button*
 
-pai-bx.com##.navbar-fixed-top:style(position:static !important)
 pai-bx.com##.text-info
 
 ||painstudy.ru/*/whitegrid.gif
@@ -10036,8 +11642,6 @@ palladium.ru##.city
 pandia.ru##body > center > div
 
 parazit-info.ru##noindex
-
-parents.ru##.fixed:style(position:static !important)
 
 parthenon-house.ru##body > .container > div.row:nth-of-type(1)
 parthenon-house.ru###noshow1
@@ -10300,16 +11904,12 @@ pix-feed.com$inline-script
 ! unstick header
 pix-feed.com##.html_header_top:style(position:static !important)
 pix-feed.com##.html_header_sticky:style(position:static !important)
-pix-feed.com###header:style(position:static !important)
-pix-feed.com##.theiaStickySidebar:style(position:static !important)
 
 pk-help.com##.header
 pk-help.com##.itemRatingBlock
 pk-help.com##.custom
 
 plainnews.ru###homepageTabs
-plainnews.ru##.navbar:style(position:static !important)
-plainnews.ru##body:style(padding-top:0px !important)
 plainnews.ru###fl-top
 
 planengo.ru##.fof.footer__elem
@@ -10319,8 +11919,6 @@ planeta-sirius.ru##.fast_preview
 planeta-sirius.ru##.add_to_cart_button.primary-bg.btn
 
 planetgeek.ch##.typology-header:style(position:absolute !important)
-
-planetpowershell.com##.navbar-fixed-top:style(position:static !important)
 
 ||planirovkainfo.ru/wp-content/themes/hotel-melbourne/js/flexslider/
 ! remove annoying scrolling
@@ -10455,17 +12053,14 @@ ponymashka.ru##.slider
 popadiv10.ru##.b1c
 popadiv10.ru##.fast-view
 popadiv10.ru##.callme
-popadiv10.ru##.fixed:style(position:static !important)
 popadiv10.ru##.header-top:style(display:block !important)
 popadiv10.ru##.fixed:style(display:block !important)
-popadiv10.ru##body:style(padding-top:0px !important)
 popadiv10.ru##.subscribe.module
 
 poparimsya.online###header
 
 popgun.ru##.headerbar
 
-popmech.ru##header.header:style(position:static !important)
 popmech.ru##.top_menu.fixed:style(position:static !important)
 popmech.ru##.block_logo
 popmech.ru##.icon-ins
@@ -10491,7 +12086,6 @@ povarenok.ru###opros_div_id
 
 powershellcenter.com/images/PowerShellBanner2.png
 
-powershellexplained.com##.navbar-fixed-top:style(position:static !important)
 powershellexplained.com##.avatar-img
 powershellexplained.com###markdown-toc
 powershellexplained.com###index
@@ -10507,8 +12101,6 @@ powershellmagazine.com$script
 ! other
 powershellmagazine.com##.author-desc
 
-powervideo.ru##.navbar:style(position:static !important)
-
 prajwaldesai.com##.bs-pinning-block:style(position:static !important)
 prajwaldesai.com##.header-inner
 
@@ -10523,7 +12115,6 @@ pravmir.ru##.js-sticky-sidebar__inner:style(position:static !important)
 pravmir.ru##.hh-banner-blue-11
 pravmir.ru##.hh-footer__social-networks
 
-pravo.ru##.sticky.is-stuck:style(position:static !important)
 pravo.ru##.rating_popup_trigger
 
 pravonasilu.ru###masthead
@@ -10579,14 +12170,12 @@ printerlogic.com##a#inline.start.button
 printful.com$3p
 
 priorclinic.ru##.call-order-waves
-priorclinic.ru##.affix:style(position:static !important)
 
 prismic.io$3p,script
 
 prnt.sc##.header
 
 probirka.org##.main-nav:style(position:static !important)
-probirka.org###header:style(padding-top:0px !important)
 probirka.org##.slick-track
 probirka.org##.store-links
 probirka.org##p:has-text(Telegram-канале)
@@ -10600,7 +12189,6 @@ proekt-sam.ru##.strtoleft
 proekt-sam.ru###vk_groups
 
 proekty.ru##header
-proekty.ru##.fixed:style(position:static !important)
 
 profi.ru##.wizard-landing-conversion_fixed:style(position:fixed !important)
 
@@ -10625,7 +12213,6 @@ proglib.io##.bug-label
 ||programming4.us/images/bo-left-mnu.png
 
 proivf.ru##.sticky-header:style(position:static !important)
-proivf.ru##header:style(position:static !important)
 
 project-home.ru##.h.go_top
 
@@ -10648,7 +12235,6 @@ prophotos.ru##.sidebar__fix:style(position:static !important)
 prophotos.ru##.navbar--hide.navbar:style(position:static !important)
 prophotos.ru##.navbar__header__subscribe
 ||prophotos.ru/assets/icons/navbar_socials$image
-prophotos.ru##.navbar:style(position:static !important)
 
 pro-remontnik.com##.logo-section
 pro-remontnik.com##.footer-bottom
@@ -10681,7 +12267,6 @@ prostor2000.ru##.moduletable_warning-mess
 
 prosud24.ru##.number-telefons
 
-protarif.info##.fixed:style(position:static !important)
 protarif.info##.head
 protarif.info###conteiner_menu:style(margin-top:0px !important; box-shadow:none !important)
 protarif.info##.block_txt_Graf
@@ -10696,7 +12281,6 @@ psychologies.ru##.header__wrapper:style(position:static !important)
 psychologies.ru##.offers-list
 
 ! header
-psychologos.ru##.header:style(position:static !important)
 psychologos.ru##.header:style(height:auto !important)
 psychologos.ru##.header__inner:style(height:auto !important)
 psychologos.ru##.header__leftside:style(height:auto !important)
@@ -10790,16 +12374,14 @@ rabota.ru##.location-tooltip
 ||rabota.ru/*/promoted.json
 
 ! main domain: rackspace.com
-rackspace.com##.navbar-fixed-top:style(position:static !important)
+sharepoint.rackspace.com##.heroBackground
+sharepoint.rackspace.com###topSection
+sharepoint.rackspace.com##.sidebar
 ! https://atlas.eff.org//domains/raxcdn.com.html
 bvadtgs.scdn1.secure.raxcdn.com
 !bvadtgs.scdn1.secure.raxcdn.com/bidvertiser/
 ! from EasyList
 /bvadtgs.
-
-sharepoint.rackspace.com##.heroBackground
-sharepoint.rackspace.com###topSection
-sharepoint.rackspace.com##.sidebar
 
 ! mx2.radiant.net/Redirect/...
 ! Canadian provider. But it spams.
@@ -10855,7 +12437,6 @@ rambler.ru##.menu--visible.menu.j-menu
 
 rashodnika.ru###header.sticky-header:style(position:static !important)
 rashodnika.ru##.main-menu-wrap:style(position:static !important)
-rashodnika.ru###header:style(padding-bottom:0px !important)
 
 raspberry3.ru##.io-title-description
 
@@ -10922,8 +12503,6 @@ rc-go.ru##.nav-ontop:style(position:static !important)
 rc-go.ru##.take_today
 rc-go.ru###trademark-list
 
-rclone.org##.navbar-fixed-top:style(position:static !important)
-rclone.org##body:style(margin-top:0px !important)
 rclone.org##div.panel-default:has-text(Share and Enjoy)
 ||rclone.org/img/rclone-120x120.png$image
 
@@ -11183,8 +12762,6 @@ roofs.club###search-1
 roomplan.ru##.main-menu
 roomplan.ru##.nav_links
 
-rootmyandroid.org##.navbar-fixed-top:style(position:static !important)
-rootmyandroid.org##.header:style(margin-bottom:0px !important)
 rootmyandroid.org##.ulp-window
 rootmyandroid.org##.ulp-overlay
 
@@ -11194,7 +12771,6 @@ rootmygalaxy.net##.mtsnb-fixed.mtsnb-top
 root-nation.com##.size-full.aligncenter
 ! top
 root-nation.com##.td-main-sidebar
-root-nation.com##.td-header-menu-wrap.td-affix:style(position:static !important)
 ||root-nation.com/wp-content/uploads/2019/06/rootcast-gif-home-2.gif
 
 ||rootusers.com/wp-content/uploads/2017/02/red-hat-certified-engineer-rhce-video-course-box.jpg
@@ -11323,7 +12899,6 @@ russian-miracles.ru##.site-navigation-fixed:style(position:static !important)
 rustelegraph.ru##.float_subscribe_block
 
 rutoken.ru##.scroll
-rutoken.ru##.fixed-top:style(position:static !important)
 
 rutracker.org,pornolab.net##.top-alert
 rutracker.org,pornolab.net##.avatar
@@ -11452,7 +13027,6 @@ safes-mag.ru##.block-block.block > p:has-text(проконсультируйте
 ||safes-mag.ru/*/other-block.png$image
 safes-mag.ru##.block_links
 
-safezone.cc##.p-navSticky:style(position:static !important)
 safezone.cc##.is-selected.p-navEl:style(border-top-left-radius:2px !important; border-top-right-radius:2px !important)
 safezone.cc##.p-navEl-splitTrigger
 safezone.cc##.p-navEl-link:style(padding-right:15px !important)
@@ -11496,7 +13070,6 @@ san-house.ru##.basket_bottom_block
 sanotes.ru##.td-header-header.td-header-row
 sanotes.ru##.footer-logo-wrap
 sanotes.ru##.td-footer-template-4
-sanotes.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
 
 click.email.sans.org
 
@@ -11721,9 +13294,6 @@ seopirat.club##.reputation-ranks
 
 septik.guru##.logoarea
 
-serpuhovich.ru##.fix:style(position:static !important)
-serpuhovich.ru##body:style(padding-top:0px !important)
-
 ||serpcity.ru/uploads/bush.jpg
 
 serverbrain.org##.thumbsup
@@ -11809,7 +13379,6 @@ shopsirop.ru##.leftBar
 ||shopsirop.ru/images/pro.png
 ||shopsirop.ru/images/hotzak.png
 shopsirop.ru##.obolochksHead
-shopsirop.ru##body:style(padding-top:0px !important)
 shopsirop.ru##.content-indent > p
 shopsirop.ru##noindex
 
@@ -11880,14 +13449,12 @@ slashdot.org###poll-title
 slashdot.org###poll-content
 
 slideserve.com###suggestion
-slideserve.com##.navbar-fixed-top:style(position:static !important)
 
 slivap.ru##.Notice
 slivap.ru##.Notices
 slivap.ru##.belowTopBreadcrumb
 slivap.ru##.threadViewBelowMessages
 
-smartcalc.ru##.navbar-fixed-top:style(position:static !important)
 ! It is not scroller button, it is calc button. Making exception from Fanboy’s Annoyance List general rule (and this list too)
 smartcalc.ru#@#.glyphicon-arrow-up
 
@@ -11922,12 +13489,10 @@ snakeproject.ru###right
 ||sobaka.ru/*/countersApi.js
 ||sobaka.ru/*/bannersApi.js
 ||sobaka.ru/*/header_logos/
-sobaka.ru##body:style(padding-top:0px !important)
 
 ! header
 sobyanin.ru##.notification-panel:style(position:static !important)
 sobyanin.ru##.top-header:style(position:static !important)
-sobyanin.ru##body:style(padding-top:0px !important)
 ! avatar
 ||sobyanin.ru/static/blog/img/avatar$image
 sobyanin.ru##.posts-list__author-img
@@ -11955,7 +13520,6 @@ softoware.org##.footer-brand
 
 softpedia.com##.flashsale
 softpedia.com##.statusbar:style(position:static !important)
-softpedia.com##.main:style(padding-top:0px !important)
 softpedia.com##.menubar:style(position:static !important)
 
 community.softwaregrp.com###community-header:style(position:static !important)
@@ -12068,10 +13632,7 @@ spletnik.ru##.rating-top
 
 splunk.com##.talk-sales
 splunk.com##.splunk_products
-splunk.com##.navbar-fixed-top:style(position:static !important)
-splunk.com##.fixed:style(position:static !important)
 splunk.com##.subnav-fixed:style(position:static !important)
-splunk.com##body:style(padding-top:0px !important)
 
 spod.com$3p
 
@@ -12150,9 +13711,7 @@ steelsafeshop.ru##.phone
 sterlingit.com.au###masthead > .site-container
 sterlingit.com.au##.widget_text.widget
 
-stigviewer.com##.header:style(position:static !important)
 stigviewer.com##.learnMore
-stigviewer.com##.wrapper:style(padding-top:0px !important)
 stigviewer.com##.bottomSection:style(padding-bottom:0px !important)
 
 stm-electronics.ru##div.card-icons
@@ -12192,14 +13751,10 @@ stroi-help.ru##script:contains(AdBlock)
 ! header
 stroi-help.ru##.header_blok
 stroi-help.ru##header:style(background:none !important; min-height:0px !important)
-stroi-help.ru##.navbar-fixed-top:style(position:static !important)
-stroi-help.ru##.navbar-fixed-bottom:style(position:static !important)
 ! other
 
 stroim42.ru###respond
 
-stroybat.ru##.navbar-fixed-top:style(position:static !important)
-stroybat.ru##body:style(padding-top:0px !important)
 ||stroybat.ru/*/footer_list_payment.png
 ||stroybat.ru/*/nagr.png
 
@@ -12235,7 +13790,6 @@ stroymaterialopt.ru##div.catalog-detail-buttons:nth-of-type(6) > a.pcd.apuo.btn_
 
 !stroy-okey.ru###header:style(position:static !important; height:auto !important)
 stroy-okey.ru###header
-stroy-okey.ru##main:style(padding-top:0px !important)
 stroy-okey.ru##.sb-rk-bn-item
 
 stroy-podskazka.ru##div:has-text(Информация предоставлена в справочных целях)
@@ -12255,9 +13809,7 @@ counter.sudrf.ru
 sumki.ru##.footer-top
 sumki.ru##.header-bottom-right
 sumki.ru##.site_title
-sumki.ru##.header:style(position:static !important)
 sumki.ru##.main-content:style(margin-top:0px !important)
-sumki.ru##body:style(margin-top:0px !important)
 sumki.ru##.header-bottom:style(height:auto !important)
 sumki.ru##.header:style(height:auto !important)
 sumki.ru##.ya-market
@@ -12293,7 +13845,6 @@ svyaznoy.ru##.b-header__fixed-margin
 swyper.ru##.basic-question-text-vertical.basic-question.basic-element
 swyper.ru##.basic-form
 
-syl.ru##.header:style(position:absolute !important)
 syl.ru##.fixedblock:style(position:static !important)
 syl.ru##.topnews__title
 syl.ru##.topmenu
@@ -12323,8 +13874,6 @@ synacor.com$3p,script
 !static.emerald.synacor.com/assets/res.php?j;suddenlink/suddenlink-gen4;en_US;afe09912;javascripts!components~targetingmodule*stack-commerce@scripts=dataextractor+vammetadata$component,modal^advelvet/service?gen4{bluekai}globals|synaff\region[page]en_US({(~(ad(,({(gpt(*($(!($)))))))))~(ad(,(gpt(*(/(!(/))))targeting(}(!(}))))+(+;](])[([)))tracking(pageload(!(Syn.Tracking.PageLoad.NoFW))))|(!(framework(gen4compatibility)))~(\(!(\))){(~(?(=(?))@(=(@)))|(vendor(bootstrap(js(^))))~(^(=(^
 
 sys-adm.in###gtb_pos
-
-sysadmins.lv##.navbar-fixed-top:style(position:static !important)
 
 sysadmins.ru##table:nth-of-type(1) > tbody > tr > td > table:nth-of-type(2)
 sysadmins.ru##td:nth-of-type(3) > .forumline
@@ -12367,7 +13916,6 @@ systemcentercentral.com###site-navigation
 systemzone.ru##.heder
 
 taker.im###live_posts_block
-taker.im##.sticky:style(position:static !important)
 taker.im##.header__rightblock
 
 takioki.life,takioki.ru##header
@@ -12379,14 +13927,12 @@ tangarus.ru###header
 tariffexpert.ru##.cd-top
 
 tarifgid.info##.site-branding
-tarifgid.info##.site-navigation-fixed:style(position:static !important)
 tarifgid.info##.cs-expertPlagin-tpl
 
 tarifkin.ru##.active.button-test:style(position:static !important)
 tarifkin.ru###tarif-slogan
 ||tarifkin.ru/*/bg-head.jpg
 
-tass.ru###header:style(position:static !important)
 tass.ru##.footer-action-buttons
 
 tbmmarket.ru##.header-location__widget-question
@@ -12440,13 +13986,10 @@ techjourney.net##.fusion-secondary-header
 
 techjunkie.com##.get-expressvpn
 
-techlist.top##.td-ss-main-sidebar:style(position:static !important)
 techlist.top##.td-header-wrap
 techlist.top##.widget_custom_html.widget > .td-block-title:has-text(хостинг)
 techlist.top##[href^="https://zomro.com/"]
 techlist.top##.footer-logo-wrap
-
-technibble.com##.sticky_wrapper:style(position:static !important)
 
 technoavia.ru##.model_dop_uslugi
 technoavia.ru##.model_page_footer
@@ -12483,7 +14026,6 @@ techrepublic.com##.in-reply-to
 techspot.com##.intro
 techspot.com##.notice
 
-techstronghold.com##.navbar-fixed-top.navbar:style(position:static !important)
 techstronghold.com##body.fixed-nav:style(padding-top:0px !important)
 techstronghold.com##.widget-Author
 ||techstronghold.com/media/shared/social
@@ -12541,8 +14083,6 @@ texnoblogger.com###respond
 texnoblogger.com##.pinglist
 
 techopedia.com##.topSiteLink
-techopedia.com##.navbar:style(position:static !important)
-techopedia.com##body:style(padding-top:0px !important)
 techopedia.com##.featured-form
 techopedia.com##.dictionaryAd
 
@@ -12565,10 +14105,6 @@ techrepublic.com##p:has-text(Download this article as a PDF (free registration r
 techspot.com##.Notice
 
 ||techsupportforum.com/forums/asap/$image
-
-techtalkz.com##.is-sticky:style(position:static !important)
-techtalkz.com##.p-navSticky:style(position:static !important)
-techtalkz.com##.p-navSticky--primary:style(position:static !important)
 
 techtarget.com###comments-1-miniRegv2-loginForm-1-buttonExpand
 ! todo: jumping header, sticky-kit
@@ -12672,17 +14208,13 @@ theinsider.ua##.carousel
 thelastgame.ru##.group.container > .container-inner > .pad.group
 
 ||themechanic.ru/*/yazen.png
-themechanic.ru##.td-affix:style(position:static !important)
 ||themechanic.ru/wp-content/uploads/units/lng_vert.png
-themechanic.ru##.td-ss-main-sidebar:style(position:static !important)
 themechanic.ru##.footer-text-wrap
 themechanic.ru##.td-footer-bottom-full
 
 themoneyconverter.com$third-party
 
 theoldreader.com##.connect.row
-
-thequestion.ru##.header:style(position:static !important)
 
 theregister.co.uk###masthead
 theregister.co.uk###story_rhs_ml_signup
@@ -12736,8 +14268,6 @@ tomshardware.com##.is-sticky.uix_stickyBar.p-navSticky--all.p-navSticky:style(po
 tomshardware.com##.trophyShowcase
 
 thinkpowershell.com##.sidebar
-thinkpowershell.com##.site-header:style(position:static !important)
-thinkpowershell.com###respond
 
 thomasmaurer.ch###sticky-header:style(position:static !important)
 
@@ -12772,7 +14302,6 @@ tiu.ru###besida
 chat.my.tiu.ru
 ||tiu.ru/renders/certification_widget/$3p
 
-tjournal.ru##.main_menu:style(position:static !important)
 tjournal.ru##.layout__column--sticky:style(position:static !important)
 tjournal.ru##.live
 tjournal.ru##.content__write-suggestion
@@ -12815,8 +14344,6 @@ tokarchuk.ru###header
 tokarchuk.ru###respond
 
 tomsguide.com##.uix_headerContainer:style(position:static !important)
-tomsguide.com##.p-navSticky:style(position:static !important)
-tomsguide.com##.is-sticky:style(position:static !important)
 tomsguide.com##.uix_headerContainer > div:nth-of-type(3)
 forums.tomsguide.com##.avatar
 
@@ -12829,7 +14356,6 @@ top-hammam.ru###fancybox-overlay
 
 topmobiletech.com##.fixed.sticky-header:style(position:static !important)
 
-topobzor.com##.td-header-menu-wrap.td-affix:style(position:static !important)
 topobzor.com##.td-module-meta-info
 
 topogolic.ru##.top-header
@@ -12887,7 +14413,6 @@ travel.ru##.jsFixedSidebarManager:style(position:static !important; margin-top:0
 travel.ru##.b-header-fixed:style(position:static !important)
 travel.ru##.b-header-fixed-border:style(position:static !important)
 travel.ru##.body-offset:style(padding-top:0px !important)
-travel.ru##body:style(padding-top:0px !important)
 travel.ru##.b-section-hotels-list
 travel.ru##.b-icon-appstore.b-footer-mobile-app-promo-icon
 
@@ -12897,8 +14422,6 @@ travelask.ru##.report-bug
 travelask.ru##.footer__bottom-age
 
 trekker.net##.site-header
-
-trello.com##.fixed-top:style(position:static !important)
 
 triaservice.com.ua###header
 triaservice.com.ua##.sidebar
@@ -13067,7 +14590,6 @@ tweakhound.com##.site-title
 player.twitch.tv##.player-overlay
 
 twitrss.me##footer:style(position:static !important)
-twitrss.me##.navbar:style(position:static !important)
 
 syndication.twitter.com$third-party
 
@@ -13083,7 +14605,6 @@ typo3worx.eu##.header
 
 uanic.name##.sbbutnav
 uanic.name##.transl_mess
-uanic.name##.navbar:style(position:static !important)
 uanic.name##.top-line
 uanic.name##.topform
 
@@ -13161,8 +14682,6 @@ help.univention.com##.d-header:style(position:static !important)
 help.univention.com###topic-progress-wrapper:style(position:static !important)
 
 universal-guns.ru##.flexBoxContacts
-universal-guns.ru##.navbar-fixed-top:style(position:static !important)
-universal-guns.ru##body:style(padding-top:0px !important)
 
 unlimtariffs.ru##.gift.block
 unlimtariffs.ru##.cool.content.block
@@ -13277,7 +14796,6 @@ vanna-rum.ru##.brands-plugin-wrap
 vanna-rum.ru##.side_tags_wrap
 
 vannayasovety.ru##.article-nav__link
-vannayasovety.ru##.fixed.header:style(position:static !important)
 vannayasovety.ru##.facts-box
 vannayasovety.ru##.section-test-box
 vannayasovety.ru##.section-question-box
@@ -13350,7 +14868,6 @@ vento.ru##.hdr:style(position:static !important)
 vento.ru##.front__vento
 vento.ru###page:style(padding-top:0px !important)
 
-veritas.com##.fixed-top:style(position:static !important)
 veritas.com##.navbar-vtas-shadow
 veritas.com##main:style(top:0px !important)
 veritas.com###section_Feedback
@@ -13375,17 +14892,13 @@ vesti.ru##.odnoklassniki
 vesti.ru##.soc-col
 
 vestifinance.ru##.header_filter:style(position:static !important)
-vestifinance.ru##body:style(margin-top:0px !important)
 vestifinance.ru##.b-header
 vestifinance.ru##.g-columns2-left_sticky:style(position:static !important; top:0px !important)
 
 veterinarka.ru###header
 
 vgtimes.ru##.vgt_logo4
-vgtimes.ru##header:style(position:static !important)
 vgtimes.ru##.handle
-
-viacode.com##.is-fixed:style(position:static !important)
 
 videocardbenchmark.net###sidebar
 videocardbenchmark.net###blocker
@@ -13484,13 +14997,9 @@ vkusvill.ru##.ProductCard__notice
 blog.vladios13.com##.ess-button--email
 blog.vladios13.com###respond
 
-vmblog.ru###navigation:style(position:static !important)
 vmblog.ru##.has-banner.align-left-logo.container
-vmblog.ru##.theiaStickySidebar:style(position:static !important; top:auto !important)
 
 vmgu.ru##span.articles_info > b:has-text(Реклама:)
-
-vmtv.ru##.navbar-fixed-top:style(position:absolute !important)
 
 ||vmware.com/s/sfsites/aura*beacon*$xmlhttprequest
 ||vmware.com/s/sfsites/aura*tracking*$xmlhttprequest
@@ -13530,7 +15039,6 @@ voensud.ru###adunits-footer
 vogue.ru##div[class^=LogoWrapper]
 ||vogue.ru/js/NewsletterWithMutation
 
-voin.guru##.td-ss-main-sidebar:style(position:static !important)
 ! site breaks copypaste. But some scripts are needed for loading images
 voin.guru##^script:has-text(oncopy)
 
@@ -13571,8 +15079,6 @@ shop.vostok.ru##.footer-form.subscribe-container
 shop.vostok.ru##.catalog-menu-regulations
 shop.vostok.ru###comments:has-text(Отзывов пока нет, вы можете сделать это первым)
 shop.vostok.ru##.price-notice
-shop.vostok.ru###header:style(position: absolute !important;)
-shop.vostok.ru##.sticky:style(position: absolute !important;)
 shop.vostok.ru##.email_catalog_s
 ||cdn.vostok.ru/uploads/global/images/catalogcategory/original/9b6425f3e1dba34a1476344e88cc67e88b23972e.jpg$image
 
@@ -13623,7 +15129,6 @@ vseovannoi.ru##.sidebar
 
 vseprogarazh.ru##.l-header
 
-vse-pro-laminat.ru##.theiaStickySidebar:style(position:static !important)
 vse-pro-laminat.ru##.header
 vse-pro-laminat.ru##div.side-blok:has-text(Об Авторе)
 vse-pro-laminat.ru##.banner--clone
@@ -13656,8 +15161,6 @@ vsesorta.ru##.sidebar__users
 v-vanna.ru##.pf-mastercard.pf
 v-vanna.ru##.f-pay
 v-vanna.ru##.online-now
-
-vvd.su##.fixed:style(position:static !important)
 
 ||vw-golfclub.ru/forum/images/misc/spring.jpg
 vw-golfclub.ru##[href="/forum/index.php"]
@@ -13695,7 +15198,6 @@ warways.ru##.h_logo
 
 washingtonpost.com$script
 washingtonpost.com##.utility-bar
-washingtonpost.com##.fixed:style(position:static !important)
 washingtonpost.com###fusion-app > div.w-100
 
 water-service.com.ua##.art-header
@@ -13779,7 +15281,6 @@ wifigid.ru##blockquote.warning
 wikihow.com###ratearticle_sidebar
 wikihow.com###rating_container
 wikihow.com###header_outer:style(position:static !important)
-wikihow.com##.sticking:style(position:static !important)
 ! ?
 !wikihow.com###header:style(height:72px !important; padding-top: 15px !important; padding-bottom: 15px !important)
 !wikihow.com###header.shrunk:style(height:72px !important; padding-top: 15px !important; padding-bottom: 15px !important)
@@ -13883,10 +15384,8 @@ windowstune.ru##.theme-switch-btn
 windwix.ru##.profile_box
 
 !non-sticky header without animations
-winitpro.ru##.navbar-default.navbar:style(position:static !important)
 winitpro.ru##img:style(transition:none !important)
 winitpro.ru/$script
-winitpro.ru##.content:style(margin-top:0 !important)
 winitpro.ru##.content:style(margin-bottom:0 !important)
 !default avatar
 ||winitpro.ru/wp-content/uploads/fv-gravatar-cache/4357301c49f17336b71d53d0b9069918x56.png$image
@@ -14072,7 +15571,6 @@ worki.ru##div[class^=emptyCompanyJobs]
 workinghardinit.work##.widget_sp_image-image-link
 
 worldofplayers.ru##.notice
-worldofplayers.ru##.is-sticky.p-navSticky--primary.p-navSticky:style(position:static !important)
 
 ! weather informers
 world-weather.ru$3p
@@ -14117,7 +15615,6 @@ xda-developers.com##.topbar:style(position:static !important)
 xda-developers.com###navbar_container:style(position:static !important)
 xda-developers.com###stickyNav:style(position:static !important)
 xda-developers.com##.sticky-scroll:style(position:static !important)
-xda-developers.com##body:style(padding-top:0px !important)
 xda-developers.com###stylechooser
 ! from uBlock filters
 xda-developers.com##+js(nowebrtc.js)
@@ -14174,7 +15671,6 @@ yakadr.ru##body.top-bar-visible:style(padding-top:0px !important)
 yamart.ru##.fancybox-overlay-fixed.fancybox-overlay
 ! static header (not complete, todo)
 yamart.ru##.mainHeader:style(position:static !important; margin-top:0px !important)
-yamart.ru##body:style(padding-top:0px !important)
 yamart.ru##.mainHeaderTop:style(display:block !important)
 yamart.ru##.mainHeaderBottom:style(display:block !important)
 yamart.ru##body.mainHeaderSmall:style(display:block !important)
@@ -14461,7 +15957,6 @@ kb.zyxel.ru###launcher
 xn----7sbecl2dbcfoo.xn--p1ai##.main_form
 xn----7sbecl2dbcfoo.xn--p1ai###reviews.reviews
 xn----7sbecl2dbcfoo.xn--p1ai##.region_nav:style(position:static !important)
-xn----7sbecl2dbcfoo.xn--p1ai##.header:style(position:static !important)
 xn----7sbecl2dbcfoo.xn--p1ai##.aplication
 xn----7sbecl2dbcfoo.xn--p1ai##.info_form_wrap
 xn----7sbecl2dbcfoo.xn--p1ai##.tasks
@@ -15384,7 +16879,6 @@ _pinterest_icon.png
 
 freelancermap.com##.stickynav:style(position:static !important)
 freelancermap.com##.nav-wrapper:style(position:static !important)
-freelancermap.com##body:style(padding-top:0px !important)
 
 freebsdnews.com###main-header:style(position:static !important)
 
