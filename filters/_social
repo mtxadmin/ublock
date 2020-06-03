@@ -53,10 +53,15 @@ facebook.com###pagelet_video_home_watch_list_rhc
 ~facebook.com,~fb.com##[id*="fblike"]:not(html):not(body):not(article)
 ! is in 3 lists
 ##.fb-like
+! from Fanboy's
+##img[alt="Facebook"]
 ! from Fanboy's and Ru AdList
 _facebook_icon.
 /facebook.svg
 /facebook_pixel.js
+! ad scripts
+! is in EasyPrivacy
+/facebook-tracking/*
 /fb.jpg
 /fb.png
 /fb.svg
@@ -64,7 +69,8 @@ _facebook_icon.
 /fb-logo.
 /icon-facebook.
 /icon_fb.
-
+! from Fanboy's
+/img/facebook-
 
 
 !! VK
@@ -136,7 +142,7 @@ platform.instagram.com/*/embeds.js$third-party,important
 !||instagram.com/graphql/ - don't
 ! from Fanboy’s and RU AdList
 ||instagram.com^*/users/$3p,important
-
+/instafeed.min.js$important
 
 
 !! Odnoklassniki
@@ -167,13 +173,18 @@ api.twitter.com$third-party,important
 ! from EasyPrivacy
 ||twitter.com/oct.js$important
 syndication.twitter.com$3p
+! from Web Annoyances Ultralist
+##[href*="twitter.com/share"]
 ! is in AdGuard
 ##a[href^="https://twitter.com/share"]
 ! is in Fanboy's, RU AdList - Adguard's is about the same
 !##a[href^="https://twitter.com/share?"]
 ! is in AdGuard
 ##a[onclick^="window.open('https://twitter.com/share"]
+! from Fanboy's
+##img[alt="Twitter"]
 analytics.twitter.com
+syndication.twitter.com$third-party,important
 ~twitter.com##[class*="Tweet"]:not(html):not(body):not(article)
 ~twitter.com##[id*="Tweet"]:not(html):not(body):not(article)
 ~twitter.com,~livejournal.com##[class*="tweet"]:not(html):not(body):not(article)
@@ -183,15 +194,25 @@ analytics.twitter.com
 ~twitter.com,~livejournal.com##[class*="twitter"]:not(html):not(body):not(article)
 ~twitter.com##[id*="twitter"]:not(html):not(body):not(article)
     !##.icon-twitter-circle
+    ! is in 3 lists
+    ##.share-twitter
     !##.td-icon-twitter
     ! is in Ru AdList and Fanboy's
     ##.twitter
+    ! is in Fanboy's and Web Annoyances Ultralist
+    ##.twitter-share-button
+    ! is in AdGuard
+    ##body .twitter-share-button
     ! is in Fanboy's
     ##.twitter-timeline
     ! is in Fanboy's
     ###twitter_timeline-2
     ! is in Fanboy's
     ##.widget_twitter_timeline
+! from Fanboy's and Ru AdList
+_twitter_icon.
+! from Fanboy's
+/img/twitter-
 
 
 
@@ -200,6 +221,9 @@ analytics.twitter.com
 ||assets.pinterest.com/js/pinit.js^$3p
 ! is in 3 lists
 log.pinterest.com
+_pinterest_icon.png
+! from Web Annoyances Ultralist
+||pinterest.com^$script
 
 
 
@@ -225,8 +249,10 @@ ads.linkedin.com
 ! end of ads.linkedin.com
 ~linkedin.com##[class*="linkedin"]:not(html):not(body):not(article)
 ~linkedin.com##[id*="linkedin"]:not(html):not(body):not(article)
-! is in Web Annoyances Ultralist
-##.linkedin
+! from Fanboy's
+##img[alt="Linkedin"]
+! from Fanboy's
+/img/*linkedin.png$domain=~github.io
 
 
 
@@ -878,3 +904,68 @@ livejournal.com##[lj-widget-fb-page]
 ##.zenlink
 !dgl.ru##.zen-invite-block
 !pohod-lifehack.ru##.zenlink
+
+! from Fanboy's
+/socials.png
+
+! is in Fanboy's and RU AdList
+##button[title="Share"]
+
+! is in Fanboy's
+||news.google.com/swg/js/v1/swg.js$script
+
+! is in Ru AdList, AdGuard, Fanboy's
+##a[href^="http://twitter.com/home?"]
+
+! is in AdGuard
+##a[href^="http://vkontakte.ru/share.php"]
+
+! is in Ru AdList and Fanboy's
+##a[href^="http://vkontakte.ru/share.php?"]
+
+! is in Ru AdList and Fanboy's
+##a[href^="http://www.facebook.com/sharer.php"]
+
+! is in AdGuard
+##a[href^="http://www.facebook.com/sharer.php?"]
+
+! is in Ru AdList and Fanboy's
+##a[href^="http://www.google.com/bookmarks"]
+
+! is in AdGuard
+##a[href^="http://www.google.com/bookmarks/mark?"]
+
+! is in AdGuard
+##a[href^="http://www.linkedin.com/shareArticle"]
+
+! is in Ru AdList and Fanboy's
+##a[href^="http://www.linkedin.com/shareArticle?"]
+
+! from AdGuard
+##a[href^="https://www.linkedin.com/cws/share?url="]
+
+! from Fanboy's
+##a[href^="https://www.linkedin.com/cws/share?"]
+
+! from Fanboy's
+##a[href^="https://twitter.com/share?"]
+
+/tweetfeed.min.js$important
+
+! from AdGuard and Fanboy's
+##a[href^="https://plus.google.com/share"]
+
+! is in Ru AdList and Fanboy's
+##a[href^="http://www.livejournal.com/update.bml?"]
+
+! is in Ru AdList
+##div[id^="vk_comments"]
+
+! is in Ru AdList
+##div[id^="vk_group"]
+
+##[title^="Follow me on "]
+
+! from Fanboy's
+##a[href^="https://api.whatsapp.com/send?"]
+
