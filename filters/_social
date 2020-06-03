@@ -70,6 +70,7 @@ facebook.com###pagelet_video_home_watch_list_rhc
 ~vk.com##[id$="-vk"]:not(html):not(body):not(article)
 ! from AdGuard
 ##div[id^="vk_like"]
+~vk.com##.vk
 ||vk.com/js^$third-party,important,domain=~senler.ru
 ||userapi.com/js/api/$domain=~vk.com,important
 ! from EasyPrivacy
@@ -866,7 +867,6 @@ livejournal.com##[lj-widget-fb-page]
 ###uLogin
 ##.ulogin_block
 ##.ulogin-buttons-container
-~vk.com##.vk
 ! is in AdGuard
 ###vk_group
 ###vk_groups
