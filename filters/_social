@@ -222,14 +222,16 @@ _twitter_icon.
 ! is in 3 lists
 log.pinterest.com
 _pinterest_icon.png
-! from Web Annoyances Ultralist
-||pinterest.com^$script
+! from Web Annoyances Ultralist, modified
+||pinterest.com^$script,3p
 ! from Ru AdList
 ||pinterest.com/images/$third-party
 ! from Ru AdList
 ||pinterest.com/js/pinit_main.js$third-party
 ! from Ru AdList
 ||pinterest.com/v1/urls/count.json$third-party
+pinterest.com##div[data-test-id="fullPageSignupModal"]
+pinterest.com##.active.noButtonStyles > div
 
 
 
@@ -250,6 +252,12 @@ _pinterest_icon.png
 !! Linkedin
 ! from hpHosts’ Ad and tracking servers, modified
 ||platform.linkedin.com^$3p
+! from Ru AdList
+||linkedin.com/countserv/$third-party
+! from Ru AdList
+||linkedin.com/img/$third-party
+! from Ru AdList
+||linkedin.com/uas/js/userspace?$third-party
 ads.linkedin.com
 !+  dc.ads.linkedin.com
 ! end of ads.linkedin.com
