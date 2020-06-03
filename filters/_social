@@ -68,9 +68,24 @@ facebook.com###pagelet_video_home_watch_list_rhc
 !! VK
 ~vk.com##[class$="-vk"]:not(html):not(body):not(article)
 ~vk.com##[id$="-vk"]:not(html):not(body):not(article)
+! from Fanboy's
+##a[href^="//vk.com/share.php?"]
+! from AdGuard
+##a[href^="//vk.com/share.php"]
+! from Fanboy's
+##a[href^="https://vk.com/share.php?"]
 ! from AdGuard
 ##div[id^="vk_like"]
+##.icon-VK
+##.icon-vk-24
+##.ico-vkontakte
+##.icon-vkontakte
 ~vk.com##.vk
+! is in AdGuard
+###vk_group
+###vk_groups
+! is in Ru AdList and Fanboy's
+##.vkontakte
 ||vk.com/js^$third-party,important,domain=~senler.ru
 ||userapi.com/js/api/$domain=~vk.com,important
 ! from EasyPrivacy
@@ -90,6 +105,13 @@ vk.com###index_footer_wrap
 /ico-vk.
 /ico_vkontakte.gif
 /icon_vk.
+/vk.jpg
+/vk.png
+/vk.svg
+/vk_easy.js
+/vk_icon.png
+/vkontakte.gif
+/img/vkontakte
 
 ! from RU AdList, modified
 ! Паразиты (встраивают свою рекламу во вконтакт)
@@ -597,13 +619,6 @@ _social_fb.
 /usocial/*
 /viber.png
 /viber.svg
-/vk.jpg
-/vk.png
-/vk.svg
-/vk_easy.js
-/vk_icon.png
-/vkontakte.gif
-/img/vkontakte
 /watch.js$domain=~rosreestr.ru|~youtube.com
 /watch_ua.js$important
 /whatsapp.svg
@@ -629,12 +644,6 @@ _social_fb.
 ##a[title="LinkedIn"]
 ! from Fanboy's
 ##a[title="Facebook"]
-! from Fanboy's
-##a[href^="//vk.com/share.php?"]
-! from AdGuard
-##a[href^="//vk.com/share.php"]
-! from Fanboy's
-##a[href^="https://vk.com/share.php?"]
 ! from Fanboy's
 ##[href^="//twitter.com/share"]
 ! from Fanboy's
@@ -678,7 +687,6 @@ livejournal.com##[lj-widget-fb-page]
 ##a[href^="https://teleg.run/joinchat/"]
 ##.b-soc_icons
 ##.button-like
-##.c-button--vk
 !##.fa
 ! from Web Annoyances Ultralist
 ##.fa-facebook
@@ -691,7 +699,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.fa-telegram
 ##.fa-twitter
 ##.fa-twitter-square
-##.fa-vk
 ##.fa-youtube
 ##.fodicon-tumblr
 ##.footersoc
@@ -726,7 +733,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.icon_delicious
 ##.icon_digg
 ##.icon_linkedIn
-##.icon_vkontakte
 ##.icon_youTube
 ##.icon_youtube
 ##.icon2-vimeo
@@ -788,10 +794,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.icon-tw-white
 ##.icon-vimeo
 ##.icon--vine
-##.icon-vk
-##.icon-VK
-##.icon-vk-24
-##.icon-vkontakte
 ##.icon-wechat
 ##.icon-whatsapp
 ##.icon-witter
@@ -812,7 +814,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.ico-spotify
 ##.ico-tw
 ##.ico-twttr
-##.ico-vkontakte
 ##.ico-youtube
 ##.ico--youtube
 ##.icon-ok
@@ -821,7 +822,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.like
 ##.like-tw
 ##.like-od
-##.like-vk
 ##.like-view
 ##.like-com
 ##.like-fav
@@ -852,7 +852,6 @@ livejournal.com##[lj-widget-fb-page]
 
 ##.menu-icon-tw
 ##.menu-icon-go
-##.menu-icon-vk
 ##.repost-button
 ##.sidebarSoc
 ##.soc
@@ -867,11 +866,6 @@ livejournal.com##[lj-widget-fb-page]
 ###uLogin
 ##.ulogin_block
 ##.ulogin-buttons-container
-! is in AdGuard
-###vk_group
-###vk_groups
-! is in Ru AdList and Fanboy's
-##.vkontakte
 ##.w2bslikebox
 ##.zen
 ##.zen-invite-block
