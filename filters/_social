@@ -19,11 +19,57 @@ facebook.com##div[id^="hyperfeed_story_id_"]:not(div:contains(/^[class="timestam
 facebook.com##:xpath(//div[starts-with(@id, 'pagelet') and (.//a[.='Sponsored'])]  )
 facebook.com###pagelet_ego_pane
 facebook.com###pagelet_video_home_watch_list_rhc
+! is in Ru AdList and Fanboy's
+##iframe[src*="//www.facebook.com/plugins/like.php?"]
 ! from AdGuard, modified
 ||facebook.com/*/plugins/$domain=~facebook.com|~fb.com,important
+~facebook.com,~fb.com##[class*="Facebook"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[id*="Facebook"]:not(html):not(body):not(article)
+~facebook.com,~fb.com,~techgenix.com##[class*="facebook"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[id*="facebook"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[class^="FB"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[id^="FB"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[class$="FB"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[id$="FB"]:not(html):not(body):not(article)
+~facebook.com,~fb.com,~aliexpress.com,~aliexpress.ru,~alfamiles.com,~doma-karkas.ru##[class^="fb"]:not(html):not(body):not(article)
+    ! from Fanboy's
+    ##.fb-xfbml-parse-ignore
+    ! from AdGuard and Fanboy's
+    ##.fb-page
+    ! from AdGuard
+    ###fb-root:not(body):not(html)
+~facebook.com,~fb.com,~aliexpress.com,~alfamiles.com##[id^="fb"]:not(html):not(body):not(article)
+~facebook.com,~fb.com,~alfamiles.com##[class*="-fb"]:not(html):not(body):not(article)
+~facebook.com,~fb.com,~alfamiles.com##[id*="-fb"]:not(html):not(body):not(article)
+~facebook.com,~fb.com,~alfamiles.com##[class*="_fb"]:not(html):not(body):not(article)
+~facebook.com,~fb.com,~alfamiles.com##[id*="_fb"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[class*="FBLIKE"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[id*="FBLIKE"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[class*="FBLike"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[id*="FBLike"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[class*="FbLike"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[id*="FbLike"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[class*="fblike"]:not(html):not(body):not(article)
+~facebook.com,~fb.com##[id*="fblike"]:not(html):not(body):not(article)
+! is in 3 lists
+##.fb-like
+/facebook.svg
+/facebook_pixel.js
+/fb.jpg
+/fb.png
+/fb.svg
+! from Fanboy's
+/fb-logo.
+/icon-facebook.
+/icon_fb.
+
 
 
 !! VK
+~vk.com##[class$="-vk"]:not(html):not(body):not(article)
+~vk.com##[id$="-vk"]:not(html):not(body):not(article)
+! from AdGuard
+##div[id^="vk_like"]
 ||vk.com/js^$third-party,important,domain=~senler.ru
 ||userapi.com/js/api/$domain=~vk.com,important
 ! from EasyPrivacy
@@ -39,6 +85,10 @@ vk.com###bottom_nav
 vk.com###index_footer_wrap
 ! is in AdGuard. Old domain but suprisingly still actual and working in 2020
 ##a[href^="https://vkontakte.ru/share.php"]
+/ico_vk.
+/ico-vk.
+/ico_vkontakte.gif
+/icon_vk.
 
 ! from RU AdList, modified
 ! Паразиты (встраивают свою рекламу во вконтакт)
@@ -77,6 +127,11 @@ ok.ru/dk?cmd=videoStatNew
 ||ok.ru/gwtlog
 ||ok.ru/dk/?st.cmd=extLike$3p
 ||ok.ru/mapi?$domain=~ok.ru|~odnoklassniki.ru
+/odnoklassniki.png
+/ok.png
+/ok.svg
+/ok_icon.png
+/ok-icon.png
 
 
 
@@ -94,6 +149,24 @@ syndication.twitter.com$3p
 ! is in AdGuard
 ##a[onclick^="window.open('https://twitter.com/share"]
 analytics.twitter.com
+~twitter.com##[class*="Tweet"]:not(html):not(body):not(article)
+~twitter.com##[id*="Tweet"]:not(html):not(body):not(article)
+~twitter.com,~livejournal.com##[class*="tweet"]:not(html):not(body):not(article)
+~twitter.com##[id*="tweet"]:not(html):not(body):not(article)
+~twitter.com##[class*="Twitter"]:not(html):not(body):not(article)
+~twitter.com##[id*="Twitter"]:not(html):not(body):not(article)
+~twitter.com,~livejournal.com##[class*="twitter"]:not(html):not(body):not(article)
+~twitter.com##[id*="twitter"]:not(html):not(body):not(article)
+    !##.icon-twitter-circle
+    !##.td-icon-twitter
+    ! is in Ru AdList and Fanboy's
+    ##.twitter
+    ! is in Fanboy's
+    ##.twitter-timeline
+    ! is in Fanboy's
+    ###twitter_timeline-2
+    ! is in Fanboy's
+    ##.widget_twitter_timeline
 
 
 
@@ -102,6 +175,7 @@ analytics.twitter.com
 ||assets.pinterest.com/js/pinit.js^$3p
 ! is in 3 lists
 log.pinterest.com
+
 
 
 !! Mail.ru (yes, it is a some sort of social network too :-) )
@@ -124,9 +198,42 @@ log.pinterest.com
 ads.linkedin.com
 !+  dc.ads.linkedin.com
 ! end of ads.linkedin.com
+~linkedin.com##[class*="linkedin"]:not(html):not(body):not(article)
+~linkedin.com##[id*="linkedin"]:not(html):not(body):not(article)
+! is in Web Annoyances Ultralist
+##.linkedin
+
+
 
 !! Google
 smartlock.google.com$3p
+##[class*="GooglePlus"]:not(html):not(body):not(article)
+##[id*="GooglePlus"]:not(html):not(body):not(article)
+##[class*="Googleplus"]:not(html):not(body):not(article)
+##[id*="Googleplus"]:not(html):not(body):not(article)
+##[class*="googlePlus"]:not(html):not(body):not(article)
+##[id*="googlePlus"]:not(html):not(body):not(article)
+##[class*="googleplus"]:not(html):not(body):not(article)
+    ! is in Fanboy's and Web Annoyances Ultralist
+    !##.googleplus
+##[id*="googleplus"]:not(html):not(body):not(article)
+##[class*="google_plus"]:not(html):not(body):not(article)
+##[id*="google_plus"]:not(html):not(body):not(article)
+##[class*="google-plus"]:not(html):not(body):not(article)
+##[id*="google-plus"]:not(html):not(body):not(article)
+##[class*="GPlus"]:not(html):not(body):not(article)
+##[id*="GPlus"]:not(html):not(body):not(article)
+##[class*="gplus"]:not(html):not(body):not(article)
+##[id*="gplus"]:not(html):not(body):not(article)
+##[class*="plusone"]:not(html):not(body):not(article)
+##[id*="plusone"]:not(html):not(body):not(article)
+! from Ru AdList
+||apis.google.com/_/apps-static/_/js/gapi/*plusone/$third-party
+! from Ru AdList
+||apis.google.com/_/scs/apps-static/*=page,plusone/$third-party
+! from Ru AdList
+||plusone.google.com^$third-party,important
+/plusone.js$important
 
 
 
@@ -153,3 +260,625 @@ smartlock.google.com$3p
 ||plus.google.com/up/?$image
 ||plus.google.com/up/accounts/upgrade/?$image
 ||spotify.com/*/login/?$image
+
+
+!! todo
+
+!! social buttons
+! generalized
+##[class*="Follow"]:not(html):not(body):not(article)
+##[id*="Follow"]:not(html):not(body):not(article)
+~medtehno.ru##[class*="follow"]:not(html):not(body):not(article)
+##[id*="follow"]:not(html):not(body):not(article)
+~instagram.com##[class*="Instagram"]:not(html):not(body):not(article)
+~instagram.com##[id*="Instagram"]:not(html):not(body):not(article)
+~instagram.com,~livejournal.com##[class*="instagram"]:not(html):not(body):not(article)
+~instagram.com##[id*="instagram"]:not(html):not(body):not(article)
+~pinterest.com,~livejournal.com##[class*="pinterest"]:not(html):not(body):not(article)
+~pinterest.com##[id*="pinterest"]:not(html):not(body):not(article)
+~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article)
+##[id*="Share"]:not(html):not(body):not(article)
+! From Fanboy's: Google share icon
+##KNO-SHARE-BUTTON
+! Too many exclusions. Disabled. 
+!~microsoft.com,~sketchup.com,~topsharepoint.com,~joom.com,~gfycat.com##[class*="share"]:not(html):not(body):not(article)
+    ! from Fanboy's
+    ##.bp-share-btn
+    ! from Fanboy's
+    ##.bp-share-button
+    ##.b-share
+    ! is in Fanboy’s and Ru AdList
+    ##.header-share
+    ##.icon-link-share
+    ##.icon-pinterest-share
+    ! is in Fanboy’s and Ru AdList
+    ##.icon-share
+    ##.login_with_social
+    ##.pinterest-share
+    ! from Fanboy's
+    ##.pswp__button--share
+    ! is in Ru AdList and Fanboy's
+    ##.share-bar
+    ! in 3 lists
+    ##.share-block
+    ! is in AdGuard, RU AdList, Fanboy's
+    ##.share-button
+    ! from Fanboy's
+    ##.share-email
+    ! is in 3 lists
+    ##.share-facebook
+    ##.share__icon
+    ! from AdGuard and Fanboy's
+    ##.share-icon
+    ! from Fanboy's
+    ##.share-label
+    ! is in 3 lists
+    ##.share-linkedin
+    ! from Fanboy's
+    ##.share-menu
+    ! from AdGuard
+    ##:not(.sharingOptionsGroup) > .share-menu
+    ! is in 3 lists
+    ##.share-pinterest
+    ! is in Fanboy's and Ru AdList
+    ##.share-popups-component
+    ! is in 3 lists
+    ##.share-reddit
+    ! from Fanboy's
+    ##.share-service-visible
+    ! from Fanboy's
+    ##.share-tumblr
+    ! is in AdGuard, RU AdList, Fanboy's
+    ##.sidebar-share
+    ! from AdGuard & Fanboy's
+    ##.ytp-share-button
+~host.io,~steamcommunity.com,~vesti.ru##[id*="share"]:not(html):not(body):not(article)
+    ! is in AdGuard and Fanboy's
+    ###share-block
+    ! is in Fanboy's, RU AdList
+    !###sharelist
+    ##.ya-share
+    ! is in Ru AdList and Fanboy's, generalized
+    ##.ya-share2
+##[class*="Sharing"]:not(html):not(body):not(article)
+##[id*="Sharing"]:not(html):not(body):not(article)
+~drive.google.com##[class*="sharing"]:not(html):not(body):not(article)
+##[id*="sharing"]:not(html):not(body):not(article)
+
+! ends with -soc
+##[class$="-soc"]:not(html):not(body):not(article)
+##[id$="-soc"]:not(html):not(body):not(article)
+!##[class*="-soc "]:not(html):not(body):not(article)
+!##[id*="-soc "]:not(html):not(body):not(article)
+
+! ends with _soc
+##[class$="_soc"]:not(html):not(body):not(article)
+##[id$="_soc"]:not(html):not(body):not(article)
+!##[class*="_soc "]:not(html):not(body):not(article)
+!##[id*="_soc "]:not(html):not(body):not(article)
+
+! begins with soc_
+##[class^="soc_"]:not(html):not(body):not(article)
+##[id^="soc_"]:not(html):not(body):not(article)
+!##[class*=" soc_"]:not(html):not(body):not(article)
+!##[id*=" soc_"]:not(html):not(body):not(article)
+
+! begins with soc-
+##[class^="soc-"]:not(html):not(body):not(article)
+##[id^="soc-"]:not(html):not(body):not(article)
+!##[class*=" soc-"]:not(html):not(body):not(article)
+!##[id*=" soc-"]:not(html):not(body):not(article)
+
+! contains soc
+##[class*="-soc-"]:not(html):not(body):not(article)
+##[id*="-soc-"]:not(html):not(body):not(article)
+##[class*="_soc_"]:not(html):not(body):not(article)
+##[id*="_soc_"]:not(html):not(body):not(article)
+
+! on nalog.ru it is not social buttons, it is a tax name
+~nalog.ru##[class*="Social"]:not(html):not(body):not(article)
+    !from Fanboy's: Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
+    !##div[class^="SocialIcons_"]
+~nalog.ru##[id*="Social"]:not(html):not(body):not(article)
+! too many exclusions
+!~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru,~business2community.com##[class*="social"]:not(html):not(body):not(article)
+    ! from Fanboy's
+    ##.abh_social
+    ! is in AdGuard
+    ##.block_social
+    ! is in Ru AdList and Fanboy's
+    ###block_social_open
+    ##.footer-social
+    ! is in Ru AdList and Fanboy's
+    ##.footer__social
+    ##.footer__social-group
+    ##.footer-social-wrap
+    ! is in Fanboy's and Ru AdList
+    ##.fusion-social-network-icon
+    ! is in Ru AdList and Fanboy's
+    ##.header_social
+    ! from Fanboy's
+    ##.sd-social
+    ! from Web Annoyances Ultralist
+    ##.sd-social-icon
+    ##.sidebar-block-links__social
+    ! from Fanboy's: intel.com (and regional sites)
+    ##.social.footer-links
+    ##.social-button
+    ##.social-groups
+    ! from Fanboy's
+    ##.social-header
+    ! is in Fanboy's and Web Annoyances Ultralist
+    ##.social_icons
+    ! is in Ru AdList and Fanboy's
+    ##.social__item
+    ! from Fanboy's
+    ##.social-item
+    ! is in AdGuard, RU AdList, Fanboy's
+    ##.social-likes
+    ##.social-likes__icon
+    ##.social-likes__button
+    ##.social-likes__widget
+    ! is in Fanboy's and Web Annoyances Ultralist
+    ##.social-link
+    ! from Fanboy's
+    ##.social-link-email
+    ! is in Fanboy's 
+    ##.social-link-fb
+    ! from Fanboy's
+    ##.social-links
+    ! is in Fanboy's 
+    ##.social-link-tw
+    ! is in Fanboy's
+    ##.social-link-twitter
+    ! is in AdGuard and Web Annoyances Ultralist
+    ##.socialite
+    ! is in AdGuard, Fanboy's, Web Annoyances Ultralist
+    ##.social-menu
+    ! is in AdGuard, Fanboy’s and Ru AdList
+    ##.socials
+    ! is in Fanboy's and Ru AdList
+    ##.social-section
+    ! is in Ru AdList and AdGuard, generalized
+    ##.social-teasers
+    ! from Fanboy's
+    ##.social-tooltip
+    ! from EasyList and Fanboy's
+    ##.s-social
+    ! from EasyList and Fanboy's
+    ##.s-social-item
+    ! from Fanboy's
+    ##div[class^="style__social"]
+! on nalog.ru it is not social buttons, it is a tax name
+~nalog.ru##[id*="social"]:not(html):not(body):not(article)
+    ! from Fanboy's
+    !###top-social
+##[class*="Sociaux"]:not(html):not(body):not(article)
+##[id*="Sociaux"]:not(html):not(body):not(article)
+##[class*="sociaux"]:not(html):not(body):not(article)
+##[id*="sociaux"]:not(html):not(body):not(article)
+##[class*="zocial"]:not(html):not(body):not(article)
+##[id*="zocial"]:not(html):not(body):not(article)
+! from Ru AdList and Fanboy's
+##button[title="Share"]
+! from Fanboy's
+##[title^="Follow me on "]
+! from Fanboy's
+##[title^="Follow us at "]
+! from EasyList and Fanboy's
+##[title^="Follow us on "]
+! from Fanboy's
+##[title^="Follow Us on "]
+! from Fanboy's
+##[title^="Follow Us to "]
+! from Fanboy's
+##img[alt^="Share this"]
+! from Fanboy's
+##img[alt^="Share This"]
+! from Fanboy's
+##img[alt^="Share on "]
+! from Fanboy's
+##img[alt^="Share this"]
+! from Fanboy's
+##img[alt^="Share with"]
+! other
+! is in Ru AdList and Fanboy's
+##.et_pb_social_media_follow
+! is in Ru AdList and Fanboy's
+##.facebook
+##.fb
+    !torex.ru##.fb
+##.ok
+    !argumenti.ru##.ok
+    !splav.ru##.ok
+    !torex.ru##.ok
+##.td-post-sharing
+##.td-post-sharing-bottom
+##.td-post-sharing-visible
+##.td-icon-facebook
+##.td-icon-instagram
+##.td-icon-youtube
+##.td-social-icon-wrap
+###td_social_sharing_article_top
+##.tw
+    !argumenti.ru##.tw
+    !torex.ru##.tw
+    !vesti.ru##.tw
+! to social_auth
+! from AdGuard
+||apis.google.com/js/plusone.js$domain=~blogger.com|~blogspot.com|~blogspot.ru|~pikucha.ru|~googleblog.com|~abcnews.go.com
+! is in Fanboy's and Ru AdList
+/assets/facebook-$image
+/assets/google-button-$image
+/assets/linkedin-$image
+/assets/linked-in-$image
+! is in Fanboy's and Ru AdList
+/assets/twitter-$image
+! from Fanboy's
+/digg.png
+! from Fanboy's
+/follow-us-on-
+! from Fanboy's
+/google-plus.png
+/ig.svg
+/ico_odnok.gif
+/ico_tg.
+/icon-ig.png
+/icon-linkedin
+/icon_mr.
+/icon-stumbleupon.
+/icon-telegram.
+/icon-twitter.
+/icon_viber.
+/icon_ya.
+/img/soc/*
+! from Fanboy's
+/images/facebook
+! from Fanboy's
+/images/instagram_
+/img/instagram
+! from Fanboy's
+/images/twitter
+! from Fanboy's
+/images/*twitter.png
+/inst.jpg
+/insta.jpg
+/insta.png
+/instagram.png
+! from Fanboy's
+/instagram.svg
+/linkdin.svg
+! from RU AdList
+/livejournal.png$domain=~livejournal.com
+! from Fanboy's
+/reddit.png
+! is in Ru AdList and Fanboy's
+/share42/*
+/share42.js
+/soc/*$image
+/social/*$image
+! from Fanboy's
+/social.png
+! from Fanboy's
+/social/google.
+! is in Fanboy’s, RU AdList
+/social1.
+! from EasyList, modified
+/social-likes.
+/social_plugins/*
+/social_shares-min.js
+! from Fanboy's lists
+/sendtofriend.
+/share.js
+! from Fanboy's
+/share.png
+! from Fanboy's
+/sharedaddy/*$image
+/sharedaddy/*$script,important
+/skype.svg
+! from Fanboy’s
+_social_fb.
+/social-likes.min.js$important
+/social-proof/*
+/social-proof-
+/telegram.jpg
+/telegram.svg
+/telegram2.png
+/tg.png
+/tl.jpg
+/tw.jpg
+/tw.png
+/tw.svg
+! from Fanboy's
+/tweet_button.
+/twitter.png
+/twitter.svg
+/usocial/*
+/viber.png
+/viber.svg
+/vk.jpg
+/vk.png
+/vk.svg
+/vk_easy.js
+/vk_icon.png
+/vkontakte.gif
+/img/vkontakte
+/watch.js$domain=~rosreestr.ru|~youtube.com
+/watch_ua.js$important
+/whatsapp.svg
+/wordpress-social-login/*$important
+/yandex-zen.svg
+/youtube.jpg
+/youtube.png
+/youtube-gray.png
+/youtube.svg
+/yt.svg
+/zen.png
+-googleplus.
+-pinterest.
+! from Fanboy's
+-sharebar.
+!from AdGuard
+##a[href^="whatsapp://send"]
+!from Fanboy's - narrower, disabled
+!##a[href^="whatsapp://send?text="]
+! from Fanboy's
+##a[title="ВКонтакте"]
+! from Fanboy's
+##a[title="LinkedIn"]
+! from Fanboy's
+##a[title="Facebook"]
+! from Fanboy's
+##a[href^="//vk.com/share.php?"]
+! from AdGuard
+##a[href^="//vk.com/share.php"]
+! from Fanboy's
+##a[href^="https://vk.com/share.php?"]
+! from Fanboy's
+##[href^="//twitter.com/share"]
+! from Fanboy's
+##[title^="Share on Google+"]
+! from Fanboy's
+##a[title^="Share on Google"]
+! from AdGuard
+##a[title="Share on Facebook"]
+! from Fanboy's
+##[title^="Share on Facebook"]
+! from AdGuard
+##a[title="Share on Pinterest"]
+! from Fanboy's
+##a[title^="Share on Pinterest"]
+! from Fanboy's
+##a[title="Share on Twitter"]
+! from AdGuard
+##a[href^="https://connect.ok.ru/offer?url="]
+! from AdGuard and Fanboy's
+##a[href^="https://www.facebook.com/sharer/sharer.php"]
+! from Fanboy's
+##a[href^="https://www.facebook.com/sharer.php?"]
+! from AdGuard
+##a[href^="https://www.facebook.com/sharer.php"]
+! from Fanboy's
+##a[href*="facebook.com/sharer/sharer.php?"]
+! from RU AdList
+~livejournal.com##a[href^="http://www.livejournal.com/update.bml?subject="]
+! from RU AdList
+livejournal.com##[lj-widget-fb-page]
+! from Fanboy's
+##a[title="Youtube"]
+! from Fanboy's
+##a[title="Twitter"]
+! from Fanboy's
+##a[title="Instagram"]
+! from Fanboy's
+##a[title="Google +"]
+! from AdGuard and Fanboy's
+##a[href^="https://twitter.com/intent/tweet?"]
+##a[href^="https://teleg.run/joinchat/"]
+##.b-soc_icons
+##.button-like
+##.c-button--vk
+!##.fa
+! from Web Annoyances Ultralist
+##.fa-facebook
+! from Web Annoyances Ultralist
+##.fa-facebook-f
+##.fa-google-plus
+! from Web Annoyances Ultralist
+##.fa-linkedin
+##.fa-odnoklassniki
+##.fa-telegram
+##.fa-twitter
+##.fa-twitter-square
+##.fa-vk
+##.fa-youtube
+##.fodicon-tumblr
+##.footersoc
+##.footer_socs
+##.google-icon
+##.hp_sociaisIcons
+##.ic_shr
+##.ic_tw
+##.icn_fcbk
+##.icn_twtr
+##.icn_youtube
+##.icn-footer-youtube
+##.icn-ggl
+##.icn-google
+##.icn-stumbleupon
+##.icn-tumblr
+##.icn-twit
+##.icn-youtube
+##.ico__beatport
+##.ico__soundcloud
+##.ico__youtube
+##.ico_google
+##.ico_pinit
+##.ico_shr
+##.ico_tumblr
+##.ico-livejournal
+##.icomoon-mail
+##.icomoon-tumblr
+##.icomoon-youtube
+##.icon__square--google
+##.icon_circle_youtube
+##.icon_delicious
+##.icon_digg
+##.icon_linkedIn
+##.icon_vkontakte
+##.icon_youTube
+##.icon_youtube
+##.icon2-vimeo
+##.icon--app-store
+##.icon-circle-google
+##.icon-circle-tumblr
+##.icon-circle-youtube
+##.icon-delicious
+##.icon-digg
+##.icon-fackbook
+##.icon-fark
+##.iconFb
+##.iconFB
+##.icon-flickr
+##.icon--flickr
+##.icon-flipboard
+##.icon-footer-youtube
+##.icon-github
+##.iconGoogle
+##.icon-google
+##.icon-google-32
+##.icon-gp
+##.iconGPlus
+##.icon-g-plus
+##.icon-hacker-news
+##.icon-insta
+##.iconli
+##.icon-ln
+##.icon-logo-youtube
+##.icon-mixcloud
+##.icon-odnoklassniki
+##.iconPinterest
+##.icon-pintrest
+##.icon-pocket
+##.icon-polyvore
+##.icon-reddit
+##.icon-reddit2
+##.icons-dribbble
+##.icons-flickr
+##.icon-sina-weibo
+##.icon-soundcloud
+##.icons-stumbleupon
+##.icon-stumbleupon
+##.icons-vimeo
+##.icons-youtube
+##.icon-telegram
+##.iconTumblr
+##.icon-tumblr
+##.icon-tumblr-01
+##.icon-tumblr-box
+##.icon-tumblr-circle
+##.icon-tumblr-square
+##.icon-tumblr-white
+##.iconTw
+##.icon-tw
+##.icon-tw-footer
+##.icon-twitch
+##.icon-TWITTER
+##.icon-tw-white
+##.icon-vimeo
+##.icon--vine
+##.icon-vk
+##.icon-VK
+##.icon-vk-24
+##.icon-vkontakte
+##.icon-wechat
+##.icon-whatsapp
+##.icon-witter
+##.icon-ya
+##.iconyoutube
+##.icon-youtube
+##.icon-YOUTUBE
+##.icon--youtube
+##.icon-youtube_master
+##.icon-youtube-24
+##.icon-youtube-alt
+##.icon-youtube-play-2
+##.icon-youtube-sign
+##.icon-youtube-white
+##.iconYT
+##.iconYt
+##.icon-yt
+##.ico-spotify
+##.ico-tw
+##.ico-twttr
+##.ico-vkontakte
+##.ico-youtube
+##.ico--youtube
+##.icon-ok
+##.icon-tamtam
+##.icon-yandex
+##.like
+##.like-tw
+##.like-od
+##.like-vk
+##.like-view
+##.like-com
+##.like-fav
+~kudago.com##.likes
+##.likes-block
+##.likes-block_left
+##.likes-box
+##.like-slider
+##.like-us
+##.likeUsLayer
+##.likes-widget-placeholder
+##.lj
+##.lj-like
+
+!! also see masharer plugin
+! from AdGuard
+##.mashsb-main
+! from AdGuard and Fanboy's
+##.mashsb-container
+! from Fanboy's
+##.mashsb-box
+! from Fanboy's
+##.mashicon-twitter
+! from Fanboy's
+##.mashicon-subscribe
+! from Fanboy's
+##.mashicon-facebook
+
+##.menu-icon-tw
+##.menu-icon-go
+##.menu-icon-vk
+##.repost-button
+##.sidebarSoc
+##.soc
+##.socialLinks
+! from Fanboy's
+##.social-icon-wrap
+! from Fanboy's
+##.social-icons-wrapper
+##.tg
+##.tips
+###top-share
+###uLogin
+##.ulogin_block
+##.ulogin-buttons-container
+~vk.com##.vk
+! is in AdGuard
+###vk_group
+###vk_groups
+! is in Ru AdList and Fanboy's
+##.vkontakte
+##.w2bslikebox
+##.zen
+##.zen-invite-block
+##.zen-ui-popup
+##.zen-ui-popup__main
+##.zen-ui-popup__content
+##.zen-ui-popup__wrapper
+##.zenlink
+!dgl.ru##.zen-invite-block
+!pohod-lifehack.ru##.zenlink
