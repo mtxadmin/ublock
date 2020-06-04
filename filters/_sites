@@ -3293,6 +3293,7 @@ ws##body:style(margin-top:0px !important; padding-top:0px !important)
     !adblockplus.org##body:style(padding-top:0px !important)
     !androeed.ru##body:style(margin-top:0px !important)
     !angrycitizen.ru##body:style(padding-top:0px !important)
+    !apescout.com##body:style(padding-top:0px !important; margin-top:0px !important)
     !askubuntu.com##body:style(padding-top:0px !important)
     !au.ru##body:style(padding-top:0px !important)
     !autohotkey.com##body:style(padding-top:0px !important)
@@ -5232,8 +5233,8 @@ antiobman.com##.check
 
 aphorismos.ru/_informer/*
 
-!todo
-apescout.com##body:style(padding-top:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+!todo?
+apescout.com##body:style(margin-bottom:0px !important)
 
 apomusic.ru##.site-desc
 apomusic.ru##.site-desc-wr
@@ -9801,55 +9802,9 @@ magazin-vann.ru##div.novelty_s
 magizoo.ru##.mainpage__main_slider
 magizoo.ru##.product_item__label
 
-! mail.ru
-ad.mail.ru
-||ad.mail.ru$important
-banners.mail.ru
-bar.love.mail.ru
-likemore-fe.go.mail.ru
-games.mail.ru##.strim
-games.mail.ru###pm-gc-btn
-games.mail.ru##.pm-logo
-games.mail.ru##.b-pc__right-action
-games.mail.ru##.b-footer__list__button_download
-hi-tech.mail.ru##.js-module.bar
-hi-tech.mail.ru##.sticky__inner_bottom
-hi-tech.mail.ru##.link-holder
-hi-tech.mail.ru##.p-article-conversionlink
-hi-tech.mail.ru##.link-hdr
-hi-tech.mail.ru##.note
-hi-tech.mail.ru##.js-module.block_collapse_hor
-otvet.mail.ru###portal-menu__toolbar
-otvet.mail.ru##.column_right
-otvet.mail.ru##.slide-start
-otvet.mail.ru###portal-menu
-otvet.mail.ru##.fixedsticky
-||connect.mail.ru$third-party,important
-wf.mail.ru###header
-xray.mail.ru
-! from AdGuard Tracking Protection
-mediator.imgsmail.ru
-! from EasyPrivacy
-||mail.ru/k?
-! from EasyPrivacy
-imgsmail.ru/gstat?
-! disable strange exceptions from Ru AdList
-! В одном из тестовых браузеров поехала верстка после удаления, но по выяснению, это не из-за отсутствия исключений, а из-за запрета куки, похоже. Без исключений работает.
-@@||auto.mail.ru^$generichide,badfilter
-@@||deti.mail.ru^$generichide,badfilter
-@@||health.mail.ru^$generichide,badfilter
-@@||kino.mail.ru^$generichide,badfilter
-@@||lady.mail.ru^$generichide,badfilter
-@@||realty.mail.ru^$generichide,badfilter
-@@||news.mail.ru^$generichide,badfilter
-@@||otvet.mail.ru^$generichide,badfilter
-@@||e.mail.ru^$generichide,badfilter
-@@||octavius.mail.ru^$generichide,badfilter
-@@||sportmail.ru^$generichide,badfilter
-@@||sport.mail.ru^$generichide,badfilter
+
 
 ! and disable other exceptions (todo!)
-@@||2gis.ru^$generichide,badfilter
 @@||akmaya.net^$generichide,badfilter
 @@||alexstuff.ru^$generichide,badfilter
 @@||alhimika.net^$generichide,badfilter
@@ -15605,6 +15560,7 @@ xn--80ado1abokv5d.xn--80asehdb##.fixedpanel
 xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 !! todo
+
 /jquery.sticky.js$important
 
 ! don't block - it may be used in non-ad video for previews
@@ -16302,9 +16258,6 @@ stackpathcdn.com$script,subdocument
 ! from EasyList
 -contrib-ads/
 
-! from Ru AdList
-||pulse.mail.ru/pulse-widget.js$domain=~mail.ru
-
 ! from EasyPrivacy
 /snowplow/*$script
 !https://a.trellocdn.com/lib/snowplow/2.9.0.js
@@ -16366,9 +16319,6 @@ kevinholman.com##.site-img-logo
 
 /mobile_menu.js
 
-! is in AdGuard
-##a[href^="https://top.mail.ru/jump"]
-
 ! header
 artlebedev.ru##.als-header-wrap:style(position:static !important)
 artlebedev.ru##.als-header-2019-padding
@@ -16380,3 +16330,6 @@ nsovetnik.ru##.banner_kp-bottom
 
 ! is in EasyList and Fanboy's
 cmp.network-n.com
+
+! is in Ru AdList
+2gis.ru##a[href*="://redirect.2gis.com/adv/"]
