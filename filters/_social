@@ -240,6 +240,57 @@ pinterest.com##.active.noButtonStyles > div
 ##a[href^="https://connect.mail.ru/share"]
 ! is in RU AdList
 ##a[href*="//top.mail.ru/jump?"]
+! is in AdGuard
+##a[href^="https://top.mail.ru/jump"]
+! from Ru AdList
+||pulse.mail.ru/pulse-widget.js$domain=~mail.ru
+! mail.ru
+ad.mail.ru
+||ad.mail.ru$important
+banners.mail.ru
+bar.love.mail.ru
+likemore-fe.go.mail.ru
+games.mail.ru##.strim
+games.mail.ru###pm-gc-btn
+games.mail.ru##.pm-logo
+games.mail.ru##.b-pc__right-action
+games.mail.ru##.b-footer__list__button_download
+hi-tech.mail.ru##.js-module.bar
+hi-tech.mail.ru##.sticky__inner_bottom
+hi-tech.mail.ru##.link-holder
+hi-tech.mail.ru##.p-article-conversionlink
+hi-tech.mail.ru##.link-hdr
+hi-tech.mail.ru##.note
+hi-tech.mail.ru##.js-module.block_collapse_hor
+otvet.mail.ru###portal-menu__toolbar
+otvet.mail.ru##.column_right
+otvet.mail.ru##.slide-start
+otvet.mail.ru###portal-menu
+otvet.mail.ru##.fixedsticky
+||connect.mail.ru$third-party,important
+wf.mail.ru###header
+xray.mail.ru
+! from AdGuard Tracking Protection
+mediator.imgsmail.ru
+! from EasyPrivacy
+||mail.ru/k?
+! from EasyPrivacy
+imgsmail.ru/gstat?
+! disable strange exceptions from Ru AdList
+! В одном из тестовых браузеров поехала верстка после удаления, но по выяснению, это не из-за отсутствия исключений, а из-за запрета куки, похоже. Без исключений работает.
+@@||auto.mail.ru^$generichide,badfilter
+@@||deti.mail.ru^$generichide,badfilter
+@@||health.mail.ru^$generichide,badfilter
+@@||kino.mail.ru^$generichide,badfilter
+@@||lady.mail.ru^$generichide,badfilter
+@@||realty.mail.ru^$generichide,badfilter
+@@||news.mail.ru^$generichide,badfilter
+@@||otvet.mail.ru^$generichide,badfilter
+@@||e.mail.ru^$generichide,badfilter
+@@||octavius.mail.ru^$generichide,badfilter
+@@||sportmail.ru^$generichide,badfilter
+@@||sport.mail.ru^$generichide,badfilter
+
 
 
 !! Rambler (no comments also :-) )
