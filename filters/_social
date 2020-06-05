@@ -160,6 +160,8 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 ~instagram.com##[id*="Instagram"]:not(html):not(body):not(article)
 ~instagram.com,~livejournal.com##[class*="instagram"]:not(html):not(body):not(article)
 ~instagram.com##[id*="instagram"]:not(html):not(body):not(article)
+! is in Fanboy's and Ru AdList
+##img[alt="Instagram"]
 instagram.com/embed.js$third-party,important
 platform.instagram.com/*/embeds.js$third-party,important
 ||instagram.com/ajax/bz
@@ -168,6 +170,7 @@ platform.instagram.com/*/embeds.js$third-party,important
 ! from Fanboy’s and RU AdList
 ||instagram.com^*/users/$3p,important
 /instafeed.min.js$important
+
 
 
 !! Odnoklassniki
@@ -365,8 +368,8 @@ ads.linkedin.com
 ##a[href^="https://www.linkedin.com/cws/share?"]
 ! from AdGuard
 ##a[href^="https://www.linkedin.com/cws/share?url="]
-! from Fanboy's
-##img[alt="Linkedin"]
+! is in Fanboy's and Ru AdList
+##img[alt="LinkedIn"]
 ! from Fanboy's
 /img/*linkedin.png$domain=~github.io
 
@@ -1027,3 +1030,11 @@ livejournal.com##[lj-widget-fb-page]
 ! from Fanboy's
 ##a[href^="https://api.whatsapp.com/send?"]
 
+! is in Fanboy's and Ru AdList
+-social-icon-
+
+! is in Fanboy's, AdGuard, Ru AdList
+##.social-icons
+
+! is in Fanboy's and Ru AdList
+##.social
