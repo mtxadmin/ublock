@@ -11770,6 +11770,21 @@ powershellmagazine.com$script
 ! other
 powershellmagazine.com##.author-desc
 
+! popups
+pppkazan.com##.modal-dialog
+pppkazan.com###uni-notification
+pppkazan.com##.in.modal-backdrop
+pppkazan.com##.modal
+! faded background
+pppkazan.com##body:style(filter:none !important)
+pppkazan.com##header:style(filter:none !important)
+pppkazan.com##main:style(filter:none !important)
+pppkazan.com##body.modal-open:style(filter:none !important)
+! apps
+||pppkazan.com/*/ru-badge-ios.png
+||pppkazan.com/*/ru_badge_web_generic.png
+! other
+
 prajwaldesai.com##.bs-pinning-block:style(position:static !important)
 prajwaldesai.com##.header-inner
 
@@ -13198,6 +13213,14 @@ sotosstore.ru##.sidebar-contacts
 sotosstore.ru##.sidebar-edges
 
 soundcloud.com$xhr
+
+! ok, exception for a bank (from Ru AdList).
+@@||sovcombank.ru^$generichide
+sovcombank.ru##.AnswersSection__container
+sovcombank.ru##.CookieOffer__section
+sovcombank.ru##.Header__logoImage
+sovcombank.ru##.PageSlider
+sovcombank.ru##.swiper-container-horizontal
 
 sovet.help###header
 
@@ -14948,6 +14971,14 @@ whois.com##.whois_rhs_column
 
 ! wikia.com is renamed? see fandom.com
 
+!@@||auth.wi-fi.ru^$generichide,badfilter
+! ad scripts
+wi-fi.ru$3p
+!https://static.wi-fi.ru/mtt/banners/libs/1.5.3/all.js
+! something strange
+||wi-fi.ru/p/v1/sync
+||dmp.wi-fi.ru
+
 wifigid.ru##blockquote.warning
 
 wikihow.com###ratearticle_sidebar
@@ -16395,29 +16426,6 @@ stackpathcdn.com$script,subdocument
 ! is in EasyList and Fanboy's
 ###consent_blackbar
 
-!@@||auth.wi-fi.ru^$generichide,badfilter
-! ad scripts
-wi-fi.ru$3p
-!https://static.wi-fi.ru/mtt/banners/libs/1.5.3/all.js
-! something strange
-||wi-fi.ru/p/v1/sync
-||dmp.wi-fi.ru
-
-! popups
-pppkazan.com##.modal-dialog
-pppkazan.com###uni-notification
-pppkazan.com##.in.modal-backdrop
-pppkazan.com##.modal
-! faded background
-pppkazan.com##body:style(filter:none !important)
-pppkazan.com##header:style(filter:none !important)
-pppkazan.com##main:style(filter:none !important)
-pppkazan.com##body.modal-open:style(filter:none !important)
-! apps
-||pppkazan.com/*/ru-badge-ios.png
-||pppkazan.com/*/ru_badge_web_generic.png
-! other
-
 ! from Ru AdList
 /gateway/aHR0c$popup
 
@@ -16431,14 +16439,6 @@ kevinholman.com##.site-img-logo
 /mobile_menu.js
 
 @@||vacancies.club^$generichide,badfilter
-
-! ok, exception for a bank (from Ru AdList).
-@@||sovcombank.ru^$generichide
-sovcombank.ru##.AnswersSection__container
-sovcombank.ru##.CookieOffer__section
-sovcombank.ru##.Header__logoImage
-sovcombank.ru##.PageSlider
-sovcombank.ru##.swiper-container-horizontal
 
 ###welcome_widget
 
