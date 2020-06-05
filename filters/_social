@@ -57,6 +57,7 @@ facebook.com###pagelet_video_home_watch_list_rhc
 ##img[alt="Facebook"]
 ! from Fanboy's and Ru AdList
 _facebook_icon.
+/facebook.png
 /facebook.svg
 /facebook_pixel.js
 ! ad scripts
@@ -82,6 +83,10 @@ _facebook_icon.
 ##a[href^="//vk.com/share.php"]
 ! from Fanboy's
 ##a[href^="https://vk.com/share.php?"]
+! is in Ru AdList
+##div[id^="vk_comments"]
+! is in Ru AdList
+##div[id^="vk_group"]
 ! from AdGuard
 ##div[id^="vk_like"]
 ##.icon-VK
@@ -135,6 +140,10 @@ vk.com###index_footer_wrap
 
 
 !! Instagram
+~instagram.com##[class*="Instagram"]:not(html):not(body):not(article)
+~instagram.com##[id*="Instagram"]:not(html):not(body):not(article)
+~instagram.com,~livejournal.com##[class*="instagram"]:not(html):not(body):not(article)
+~instagram.com##[id*="instagram"]:not(html):not(body):not(article)
 instagram.com/embed.js$third-party,important
 platform.instagram.com/*/embeds.js$third-party,important
 ||instagram.com/ajax/bz
@@ -175,10 +184,12 @@ api.twitter.com$third-party,important
 syndication.twitter.com$3p
 ! from Web Annoyances Ultralist
 ##[href*="twitter.com/share"]
+! is in Ru AdList, AdGuard, Fanboy's
+##a[href^="http://twitter.com/home?"]
 ! is in AdGuard
 ##a[href^="https://twitter.com/share"]
 ! is in Fanboy's, RU AdList - Adguard's is about the same
-!##a[href^="https://twitter.com/share?"]
+##a[href^="https://twitter.com/share?"]
 ! is in AdGuard
 ##a[onclick^="window.open('https://twitter.com/share"]
 ! from Fanboy's
@@ -213,6 +224,14 @@ syndication.twitter.com$third-party,important
 _twitter_icon.
 ! from Fanboy's
 /img/twitter-
+/tw.jpg
+/tw.png
+/tw.svg
+! from Fanboy's
+/tweet_button.
+/tweetfeed.min.js$important
+/twitter.png
+/twitter.svg
 
 
 
@@ -298,6 +317,7 @@ imgsmail.ru/gstat?
 ##[alt="Rambler's Top100"]
 ! is in RU AdList
 ##a[href*="top100.rambler.ru/"]
+
 
 
 !! Linkedin
@@ -386,10 +406,6 @@ smartlock.google.com$3p
 ##[id*="Follow"]:not(html):not(body):not(article)
 ~medtehno.ru##[class*="follow"]:not(html):not(body):not(article)
 ##[id*="follow"]:not(html):not(body):not(article)
-~instagram.com##[class*="Instagram"]:not(html):not(body):not(article)
-~instagram.com##[id*="Instagram"]:not(html):not(body):not(article)
-~instagram.com,~livejournal.com##[class*="instagram"]:not(html):not(body):not(article)
-~instagram.com##[id*="instagram"]:not(html):not(body):not(article)
 ~pinterest.com,~livejournal.com##[class*="pinterest"]:not(html):not(body):not(article)
 ~pinterest.com##[id*="pinterest"]:not(html):not(body):not(article)
 ~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article)
@@ -698,17 +714,11 @@ _social_fb.
 /social-proof/*
 /social-proof-
 /telegram.jpg
+/telegram.png
 /telegram.svg
 /telegram2.png
 /tg.png
 /tl.jpg
-/tw.jpg
-/tw.png
-/tw.svg
-! from Fanboy's
-/tweet_button.
-/twitter.png
-/twitter.svg
 /usocial/*
 /viber.png
 /viber.svg
@@ -979,9 +989,6 @@ livejournal.com##[lj-widget-fb-page]
 ! is in Fanboy's
 ||news.google.com/swg/js/v1/swg.js$script
 
-! is in Ru AdList, AdGuard, Fanboy's
-##a[href^="http://twitter.com/home?"]
-
 ! is in AdGuard
 ##a[href^="http://vkontakte.ru/share.php"]
 
@@ -1012,22 +1019,11 @@ livejournal.com##[lj-widget-fb-page]
 ! from Fanboy's
 ##a[href^="https://www.linkedin.com/cws/share?"]
 
-! from Fanboy's
-##a[href^="https://twitter.com/share?"]
-
-/tweetfeed.min.js$important
-
 ! from AdGuard and Fanboy's
 ##a[href^="https://plus.google.com/share"]
 
 ! is in Ru AdList and Fanboy's
 ##a[href^="http://www.livejournal.com/update.bml?"]
-
-! is in Ru AdList
-##div[id^="vk_comments"]
-
-! is in Ru AdList
-##div[id^="vk_group"]
 
 ##[title^="Follow me on "]
 
