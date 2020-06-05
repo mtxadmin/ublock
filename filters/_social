@@ -348,6 +348,14 @@ ads.linkedin.com
 ! end of ads.linkedin.com
 ~linkedin.com##[class*="linkedin"]:not(html):not(body):not(article)
 ~linkedin.com##[id*="linkedin"]:not(html):not(body):not(article)
+! is in AdGuard
+##a[href^="http://www.linkedin.com/shareArticle"]
+! is in Ru AdList and Fanboy's
+##a[href^="http://www.linkedin.com/shareArticle?"]
+! from Fanboy's
+##a[href^="https://www.linkedin.com/cws/share?"]
+! from AdGuard
+##a[href^="https://www.linkedin.com/cws/share?url="]
 ! from Fanboy's
 ##img[alt="Linkedin"]
 ! from Fanboy's
@@ -1003,18 +1011,6 @@ livejournal.com##[lj-widget-fb-page]
 
 ! is in AdGuard
 ##a[href^="http://www.google.com/bookmarks/mark?"]
-
-! is in AdGuard
-##a[href^="http://www.linkedin.com/shareArticle"]
-
-! is in Ru AdList and Fanboy's
-##a[href^="http://www.linkedin.com/shareArticle?"]
-
-! from AdGuard
-##a[href^="https://www.linkedin.com/cws/share?url="]
-
-! from Fanboy's
-##a[href^="https://www.linkedin.com/cws/share?"]
 
 ! from AdGuard and Fanboy's
 ##a[href^="https://plus.google.com/share"]
