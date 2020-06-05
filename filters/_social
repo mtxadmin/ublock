@@ -115,8 +115,15 @@ _facebook_icon.
 ||vk.com/widget_comments.php$domain=~vk.com,important
 ||vk.com/widget_community.php$domain=~vk.com,important
 api.vk.com$domain=~vk.com|~foto-map.ru,important
+! from AdGuard
+vk.com##+js(set-constant, noAdsAtAll, true)
+! is in AdGuard
+vk.com###ads_left
 vk.com###bottom_nav
 vk.com###index_footer_wrap
+! is in AdGuard and EasyList
+vk.com###system_msg
+vk.com##.PushNotifierPopup__popup-box_type--suggest
 ! is in AdGuard
 ##a[href^="http://vkontakte.ru/share.php"]
 ! is in Ru AdList and Fanboy's
