@@ -23,6 +23,10 @@ facebook.com##div[id^="hyperfeed_story_id_"]:not(div:contains(/^[class="timestam
 facebook.com##:xpath(//div[starts-with(@id, 'pagelet') and (.//a[.='Sponsored'])]  )
 facebook.com###pagelet_ego_pane
 facebook.com###pagelet_video_home_watch_list_rhc
+! from Web Annoyances Ultralist
+##.fa-facebook
+! from Web Annoyances Ultralist
+##.fa-facebook-f
 ! is in Ru AdList and Fanboy's
 ##iframe[src*="//www.facebook.com/plugins/like.php?"]
 ! from AdGuard, modified
@@ -190,6 +194,8 @@ platform.instagram.com/*/embeds.js$third-party,important
 !todo: blocking window
 !ok.ru##.media-layer_close_ovr
 !ok.ru###mtLayer
+##.fa-odnoklassniki
+##.like-od
 ! don't block, it needed by embedded video player
 !ok.ru/res/js/
 ok.ru/dk?cmd=videoStatNew
@@ -199,6 +205,7 @@ ok.ru/dk?cmd=videoStatNew
 ||ok.ru/gwtlog
 ||ok.ru/dk/?st.cmd=extLike$3p
 ||ok.ru/mapi?$domain=~ok.ru|~odnoklassniki.ru
+/ico_odnok.gif
 /odnoklassniki.png
 /ok.png
 /ok.svg
@@ -224,6 +231,8 @@ syndication.twitter.com$3p
 ##a[href^="https://twitter.com/share?"]
 ! is in AdGuard
 ##a[onclick^="window.open('https://twitter.com/share"]
+##.fa-twitter
+##.fa-twitter-square
 ! from Fanboy's
 ##img[alt="Twitter"]
 analytics.twitter.com
@@ -257,7 +266,9 @@ syndication.twitter.com$third-party,important
 ##.icon-tw-footer
 ##.icon-TWITTER
 ##.icon-tw-white
+##.ico-tw
 ##.ico-twttr
+##.like-tw
 ! from Fanboy's and Ru AdList
 _twitter_icon.
 /icon-twitter.
@@ -722,7 +733,6 @@ smartlock.google.com$3p
 ! from Fanboy's
 /google-plus.png
 /ig.svg
-/ico_odnok.gif
 /ico_tg.
 /icon-ig.png
 /icon_mr.
@@ -839,15 +849,8 @@ livejournal.com##[lj-widget-fb-page]
 ##.b-soc_icons
 ##.button-like
 !##.fa
-! from Web Annoyances Ultralist
-##.fa-facebook
-! from Web Annoyances Ultralist
-##.fa-facebook-f
 ##.fa-google-plus
-##.fa-odnoklassniki
 ##.fa-telegram
-##.fa-twitter
-##.fa-twitter-square
 ##.fa-youtube
 ##.fodicon-tumblr
 ##.footersoc
@@ -955,15 +958,12 @@ livejournal.com##[lj-widget-fb-page]
 ##.iconYt
 ##.icon-yt
 ##.ico-spotify
-##.ico-tw
 ##.ico-youtube
 ##.ico--youtube
 ##.icon-ok
 ##.icon-tamtam
 ##.icon-yandex
 ##.like
-##.like-tw
-##.like-od
 ##.like-view
 ##.like-com
 ##.like-fav
