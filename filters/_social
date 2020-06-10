@@ -195,6 +195,7 @@ platform.instagram.com/*/embeds.js$third-party,important
 !ok.ru##.media-layer_close_ovr
 !ok.ru###mtLayer
 ##.fa-odnoklassniki
+##.icon-odnoklassniki
 ##.like-od
 ! don't block, it needed by embedded video player
 !ok.ru/res/js/
@@ -445,6 +446,23 @@ smartlock.google.com$3p
 ##a[href^="http://www.google.com/bookmarks/mark?"]
 ! from AdGuard and Fanboy's
 ##a[href^="https://plus.google.com/share"]
+! from Fanboy's
+##[title^="Share on Google+"]
+! from Fanboy's
+##a[title^="Share on Google"]
+! from Fanboy's
+##a[title="Google +"]
+##.fa-google-plus
+##.google-icon
+##.icn-ggl
+##.icn-google
+##.icon__square--google
+##.icon-circle-google
+##.iconGoogle
+##.icon-google
+##.icon-google-32
+##.icon-gp
+##.icon-g-plus
 ! from Ru AdList
 ||apis.google.com/_/apps-static/_/js/gapi/*plusone/$third-party
 ! from Ru AdList
@@ -453,7 +471,10 @@ smartlock.google.com$3p
 ||news.google.com/swg/js/v1/swg.js$script
 ! from Ru AdList
 ||plusone.google.com^$third-party,important
+-googleplus.
 /google2.png
+! from Fanboy's
+/google-plus.png
 /plusone.js$important
 ! from Fanboy's
 /social/google.
@@ -730,8 +751,6 @@ smartlock.google.com$3p
 /digg.png
 ! from Fanboy's
 /follow-us-on-
-! from Fanboy's
-/google-plus.png
 /ig.svg
 /ico_tg.
 /icon-ig.png
@@ -794,7 +813,6 @@ _social_fb.
 /youtube.svg
 /yt.svg
 /zen.png
--googleplus.
 ! from Fanboy's
 -sharebar.
 !from AdGuard
@@ -807,10 +825,6 @@ _social_fb.
 ##a[title="Facebook"]
 ! from Fanboy's
 ##[href^="//twitter.com/share"]
-! from Fanboy's
-##[title^="Share on Google+"]
-! from Fanboy's
-##a[title^="Share on Google"]
 ! from AdGuard
 ##a[title="Share on Facebook"]
 ! from Fanboy's
@@ -841,21 +855,16 @@ livejournal.com##[lj-widget-fb-page]
 ##a[title="Twitter"]
 ! from Fanboy's
 ##a[title="Instagram"]
-! from Fanboy's
-##a[title="Google +"]
 ! from AdGuard and Fanboy's
 ##a[href^="https://twitter.com/intent/tweet?"]
 ##a[href^="https://teleg.run/joinchat/"]
 ##.b-soc_icons
 ##.button-like
-!##.fa
-##.fa-google-plus
 ##.fa-telegram
 ##.fa-youtube
 ##.fodicon-tumblr
 ##.footersoc
 ##.footer_socs
-##.google-icon
 ##.hp_sociaisIcons
 ##.ic_shr
 ##.ic_tw
@@ -863,8 +872,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.icn_twtr
 ##.icn_youtube
 ##.icn-footer-youtube
-##.icn-ggl
-##.icn-google
 ##.icn-stumbleupon
 ##.icn-tumblr
 ##.icn-twit
@@ -880,7 +887,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.icomoon-mail
 ##.icomoon-tumblr
 ##.icomoon-youtube
-##.icon__square--google
 ##.icon_circle_youtube
 ##.icon_delicious
 ##.icon_digg
@@ -888,7 +894,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.icon_youtube
 ##.icon2-vimeo
 ##.icon--app-store
-##.icon-circle-google
 ##.icon-circle-tumblr
 ##.icon-circle-youtube
 ##.icon-delicious
@@ -902,19 +907,12 @@ livejournal.com##[lj-widget-fb-page]
 ##.icon-flipboard
 ##.icon-footer-youtube
 ##.icon-github
-##.iconGoogle
-##.icon-google
-##.icon-google-32
-##.icon-gp
-##.iconGPlus
-##.icon-g-plus
 ##.icon-hacker-news
 ##.icon-insta
 ##.iconli
 ##.icon-ln
 ##.icon-logo-youtube
 ##.icon-mixcloud
-##.icon-odnoklassniki
 ##.iconPinterest
 ##.icon-pintrest
 ##.icon-pocket
