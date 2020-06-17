@@ -13707,3 +13707,10 @@ pingvinoff.net###header
 
 ! is in EasyPrivacy and Fanboy's
 ||websecurity.norton.com^$3p
+
+! https://yandex.ru/search/?text=rackcdn.com
+! and many ad scripts (maybe not only)
+! but sometimes css from there are necessary. Hmm... Let's make an exclusion
+@@||rackcdn.com$css
+! so do not block it by hosts
+rackcdn.com
