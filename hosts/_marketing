@@ -14113,6 +14113,7 @@ tabici.com
 
 ! exclusion: Downloads from Sourceforge don't work.
 ! upd: false alarm, direct link is working (and with all trc exclusions downloads still don't start)
+! is in uBlock filters
 taboola.com$important
 taboola.com.cn$important
 taboolasyndication.com$important
@@ -19814,3 +19815,29 @@ devcloudsoftware.com
 helloextend.com
 
 ||shopify.com/*/modal.js$important
+
+! from uBlock filters
+! Spotted on <https://venturebeat.com/>: no www site, and no resource returned.
+! Belong to Amazon.com. The GET request is full of tracker-looking data.
+silkenthreadiness.info$important
+
+! from uBlock filters
+! https://github.com/gorhill/uBlock/issues/1411
+! https://www.reddit.com/r/firefox/comments/3pwcey/firefox_extension_download_manager_s3_asks_for/
+! https://www.reddit.com/r/chrome/comments/473ves/help_how_to_remove_qipru_redirect_when_searching/
+||lnkr.us^$document
+||metrext.com^$document
+||icontent.us^$document
+||qip.ng^$document
+||qip.ru^$document
+! https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+||ratexchange.net^
+||trendtext.eu^
+||adnotbad.com^
+||adserv.info^
+||serverads.net^
+||jsfuel.com^
+||spaceshipad.com^
+||takethatad.com^
+||tradeadsexchange.com^
+
