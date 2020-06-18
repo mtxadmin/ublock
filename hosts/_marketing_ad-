@@ -310,6 +310,10 @@ addthiscdn.com
 addthisedge.com
 ##[class*="addthis"]:not(html):not(body):not(article)
 ##[id*="addthis"]:not(html):not(body):not(article)
+    ! exclusions from uBlock filters
+    ! https://github.com/uBlockOrigin/uAssets/issues/49
+    ! https://github.com/uBlockOrigin/uAssets/issues/6608
+    free18.net,gadgetlove.com,nrc.gov,onbeing.org,rapgenius.com,schonmagazine.com,tech.co,tmz.com#@#.addthis_toolbox
 ! from Ru AdList
 ###addThis
 ! from Ru AdList
@@ -2102,4 +2106,14 @@ adshell.net
 adsmedia-provider.com
 
 adspynet.com
+
+! from uBlock filters
+! https://news.ycombinator.com/item?id=10662793
+! Each client site has a specific id: this means the following information
+! becomes available to adblockanalytics.com:
+! - IP address (user)
+! - web site ID (allows to uniquely identify a web site)
+! - Whether a blocker is used
+! - Screen size/browser viewport size
+||adblockanalytics.com$important
 
