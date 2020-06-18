@@ -19841,3 +19841,64 @@ silkenthreadiness.info$important
 ||takethatad.com^
 ||tradeadsexchange.com^
 
+! from uBlock filters
+! Fingerprinting script: http://www.thisisacoolthing.com/fp.js
+||thisisacoolthing.com^
+! https://forums.lanik.us/viewtopic.php?p=110198
+||thisisanothercoolthing.com^
+
+! from uBlock filters (generalized). But the domain and listed subdomains seems closed.
+gravity.com
+
+! from uBlock filters
+! "The traffic exchange network"
+pubexchange.com$important
+
+! from uBlock filters
+scappoosebirds.com
+
+! from uBlock filters
+! https://github.com/uBlockOrigin/uAssets/pull/5578
+||colpirio.com^$3p
+
+! from uBlock filters
+usefathom.com
+usesfathom.com
+
+! from uBlock filters (as is)
+! https://github.com/uBlockOrigin/uAssets/issues/7118
+||vidtech.cbsinteractive.com^*/tracking/$script,redirect=noop.js,important
+
+! from uBlock filters
+! https://www.reddit.com/r/uBlockOrigin/comments/fqjltj/podcast_advert/
+||telemetry.art19.com^
+
+! from uBlock filters
+! https://github.com/uBlockOrigin/uAssets/issues/7178
+!#if env_chromium
+||carsensor.net/usedcar/modules/clicklog_$xhr,1p,important,redirect=noop.txt
+!#endif
+
+! from uBlock filters
+520call.me
+!tracker.520call.me
+
+! from uBlock filters
+! https://github.com/uBlockOrigin/uAssets/issues/478#issuecomment-612229916
+/analytics/analytics.$~xmlhttprequest,3p
+/ga_setup.js$3p
+/google-analytics.$3p
+/googleanalytics.js$3p
+-google-analytics.$3p
+-google-analytics/$3p
+/google-analytics.$script,3p
+/google-analytics-$~image,~other
+
+! from uBlock filters
+! https://www.reddit.com/r/uBlockOrigin/comments/gc42jw/wstreamvideo_asking_me_to_disable_ubo/
+||tracker.cdnbye.com^
+
+! from uBlock filters
+! https://github.com/AdguardTeam/AdguardFilters/issues/57325
+||api.tumblr.com/*/share/stats$script,3p
+
