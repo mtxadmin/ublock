@@ -2994,6 +2994,12 @@ carecart.io$important
 ! ad redirects
 iralerts.careerbliss.com
 
+! from uBlock filters
+! https://github.com/uBlockOrigin/uAssets/issues/7178
+!#if env_chromium
+||carsensor.net/usedcar/modules/clicklog_$xhr,1p,important,redirect=noop.txt
+!#endif
+
 ! shopify ad scripts
 ! "Post-Purchase Upsells"
 carthook.com$important
@@ -6620,6 +6626,10 @@ hallodaarwelkom.eu
 
 halloinformatie.be
 
+! "Detect tablet, phone, computer, ... in one library."
+! "In AdTech / Analytics"
+handsetdetection.com$important
+
 !adaranth.com
 ! "click allow to confirmation"
 havenotifyfriends.info
@@ -10158,6 +10168,10 @@ moxielinks.com
 mp3armory.com
 
 ! ad scripts
+! is in Ru AdList
+mp3bars.com$important
+
+! ad scripts
 ! is in AdGuard, RU AdList 
 mp-a.info$important
 
@@ -13658,6 +13672,7 @@ shopiapps.in
 
 ||shopify.com/*/ndnapps-sociallogin
 ||shopify.com/*/restocked_alerts
+||shopify.com/*/modal.js$important
 
 ||shopifycloud.com/apple_business_chat_commerce/
 ||shopifycloud.com/messenger_commerce/
@@ -19784,10 +19799,6 @@ bmshop.net
 bmshop.ru
 https://cdn.bmshop.net/shops/top.js (scrollup button)
 
-! "Detect tablet, phone, computer, ... in one library."
-! "In AdTech / Analytics"
-handsetdetection.com$important
-
 ! ad scripts
 ! is in AdGuard
 d1gwclp1pmzk26.cloudfront.net$important
@@ -19931,10 +19942,6 @@ clickpzk.com
 ##[href*="driftawayforfun.com"]
 
 ! ad scripts
-! is in Ru AdList
-mp3bars.com$important
-
-! ad scripts
 ! is in Ru AdList (general rule)
 mp3vizor.com
 
@@ -20002,8 +20009,6 @@ devcloudsoftware.com
 ! service sell some "protection plans / extended warranties". Looks as bullshit.
 helloextend.com
 
-||shopify.com/*/modal.js$important
-
 ! from uBlock filters
 ! https://github.com/gorhill/uBlock/issues/1411
 ! https://www.reddit.com/r/firefox/comments/3pwcey/firefox_extension_download_manager_s3_asks_for/
@@ -20051,12 +20056,6 @@ usesfathom.com
 ! from uBlock filters
 ! https://www.reddit.com/r/uBlockOrigin/comments/fqjltj/podcast_advert/
 ||telemetry.art19.com^
-
-! from uBlock filters
-! https://github.com/uBlockOrigin/uAssets/issues/7178
-!#if env_chromium
-||carsensor.net/usedcar/modules/clicklog_$xhr,1p,important,redirect=noop.txt
-!#endif
 
 ! from uBlock filters
 520call.me
