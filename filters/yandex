@@ -57,6 +57,8 @@
 
 yandex.*##.distr-popup__content
 yandex.*##.distr-popup_js_inited
+! is in AdGuard
+yandex.ru##.distr-popup_js_inited
 yandex.*##.distr-popup_animation_fall-show
 yandex.*##.distr-popup_shadow_yes
 yandex.*##.distr-popup_theme_black
@@ -78,6 +80,10 @@ yandex.*##.serp-adv__displayed
 yandex.*##.serp-adv__all
 yandex.*##.serp-footer__main
 yandex.*##.serp-footer__search-settings
+! is in AdGuard
+yandex.ru##.serp-footer__promo
+! is in AdGuard
+yandex.ru##.serp-footer__mob-app
 yandex.*##.serp-item-actions
 yandex.*##li:has-text(Яндекс.Директ)
 yandex.*##li.serp-item:has(.label_theme_direct.label)
@@ -164,6 +170,8 @@ yandex.*##.label_font_own.label_color_white.label:has-text(/^[0-9]+\+$/)
 yandex.*##.ygogn5__content
 yandex.*##video
 ||yandex.*/clck/counter
+! beacons and images
+||yandex.*/clck/
 yandex.ru/data/mail.js
 yandex.*##.misspell
 
@@ -351,3 +359,46 @@ yandex.*##+js(abort-on-property-read, yaads.renderWidget)
 yandex.*##+js(abort-on-property-read, Ya.loaderVer)
 yandex.*##+js(abort-on-property-read, ya.mediaAd)
 
+! no-csp-reports: * true
+csp.yandex.net
+
+! is in AdGuard and Ru AdList
+yandex.ru###yabro-strip-element
+
+! is in Ru AdList
+zen.yandex.ru##.feed__row > .feed__item-wrap div:after:style(background: transparent !important)
+
+! is in Ru AdList
+yandex.ru##.floating-links
+
+! попытка решить "в лоб" яндекс.директ. Пусть будет, для истории. Правильный метод у коллег из Ru AdList
+yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-2kyfm7669.png/orig")))
+yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-gp41w8605.png/orig")))
+yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-fj9532421.png/orig")))
+yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-yzyo31629.png/orig")))
+yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-qg40o8010.png/orig")))
+yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15285/serpt-17g445151.png/orig")))
+yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39011/serpt-ovxz39526.png/orig")))
+yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39681/serpt-04dny3208.png/orig")))
+yandex.ru##li.serp-item:has([class*=label_type_eksrj])
+yandex.ru##li.serp-item:has([class*=label_type_ltryi])
+yandex.ru##li.serp-item:has([class*=label_type_aqftb])
+yandex.ru##li.serp-item:has([class*=label_type_sjker])
+yandex.ru##li.serp-item:has([class*=label_type_qwwsk])
+yandex.ru##li.serp-item:has([class*=label_type_ktpeo])
+yandex.ru##li.serp-item:has([class*=label_type_fxwkv])
+yandex.ru##li.serp-item:has([class*=label_type_vhfet])
+yandex.ru##li.serp-item:has([class*=label_type_qeetm])
+yandex.ru##li.serp-item:has([class*=label_type_whmqp])
+yandex.ru##li.serp-item:has([class*=label_type_nvwao])
+yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
+yandex.ru##li.serp-item:has([class*=label_type_atipl])
+yandex.ru##li.serp-item:has([class*=label_type_imuti])
+yandex.ru##li.serp-item:has([class*=label_type_eliyn])
+yandex.ru##li.serp-item:has([class*=label_type_vnvog])
+yandex.ru##li.serp-item:has([class*=label_type_wuss])
+yandex.ru##li.serp-item:has([class*=label_type_jtocp])
+yandex.ru##li.serp-item:has([class*=label_type_nyhzo])
+yandex.ru##li.serp-item:has([class*=label_type_aroxf])
+yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
+yandex.ru##li.serp-item:has([class*=label_type_hyaxq])

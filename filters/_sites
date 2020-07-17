@@ -609,6 +609,8 @@ _728x90.$important
 /1x1.png$important
 ! from Fanboy's
 /1x1.trans.
+! is in Fanboy's
+/1x1transparent.
 /ajax_counter.php
 ! from EasyPrivacy
 _analytics.js?
@@ -689,7 +691,7 @@ _pagespeed_beacon?
 
 !! ratings and surveys
 ! generalized
-~aliexpress.com,~aliexpress.ru,~trimble.com,~dobrodel.ru,~mosreg.ru,~mos.ru,~news2.ru##[class*="feedback"]:not(html):not(body)
+~aliexpress.com,~aliexpress.ru,~support.google.com,~trimble.com,~dobrodel.ru,~mosreg.ru,~mos.ru,~news2.ru,~yandex.ru##[class*="feedback"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru,~trimble.com,~zen.yandex.ru##[id*="feedback"]:not(html):not(body)
 ##[class*="Survey"]:not(html):not(body)
 ##[id*="Survey"]:not(html):not(body)
@@ -764,6 +766,8 @@ _pagespeed_beacon?
 ##[id*="scroll_top"]:not(html):not(body)
 ##[class*="scrolltop"]:not(html):not(body)
 ##[id*="scrolltop"]:not(html):not(body)
+    ! is in Fanboy's
+    !##.scrolltop:not(body):not(html)
 ##[class*="ScrollTop"]:not(html):not(body)
 ##[id*="ScrollTop"]:not(html):not(body)
 ##[class*="scrollTop"]:not(html):not(body)
@@ -778,6 +782,7 @@ _pagespeed_beacon?
     !##.scroll-up
     !##.scroll-up-button
     !##.scroll-up-button-wrapper
+    ! is in Fanboy's
     !##.td-scroll-up
 ##[id*="scrollTop"]:not(html):not(body)
 ~dobrodel.ru,~dobrodel.mosreg.ru,~wildberries.ru##[class*="_to_top"]:not(html):not(body)
@@ -1293,6 +1298,7 @@ _cookie_policy_
 /halva.gif
 /halva.svg
 /home_credit.svg
+/icon_paysystems.png
 /m-logo.png
 /maestro.png
 /mast2.png
@@ -1466,7 +1472,7 @@ turboimagehost.com##.modal-footer
 ##.emoji-item
 /wp-emoji-release.min.js$important
 /biggrin.gif
-/emoji/*$image
+/emoji/*$image,important
 /emoticons/*$image
 /favicon.gif
     ! ||garant.ru/images/favicon.gif
@@ -1603,13 +1609,14 @@ tarif-24.ru##.mh-ticker-bottom
 ##.Image.widget
     !clintboessen.blogspot.com##.Image.widget
     !pecintamistis.site##.Image.widget
+##.mks_author_widget
 ###posting_rules
 ! shortlink button on qsdb.ru engine forums
 ###qpsContainer
 ##.qpsButton
 ! blogspot widget "about author"
 ##.Profile.widget
-##.mks_author_widget
+##.Stats.widget
 ##.youcandoblock
 
 
@@ -1968,6 +1975,11 @@ tarif-24.ru##.mh-ticker-bottom
 4sysops.com##.abh_description.note.description
 4sysops.com##b > [href^="https://4sysops.com/join/"]
 4sysops.com##b > [href^="https://4sysops.com/forums/"]
+4sysops.com##[href^="https://4sysops.com/write-for-4sysops//"]
+4sysops.com##p:has-text(If you have questions, please post a comment below.)
+4sysops.com##.wpulike
+! remove empty footer
+4sysops.com###footer
 
 4tests.com###qseDiv
 4tests.com##.nogoogbotlink
@@ -2955,6 +2967,7 @@ bleepingcomputer.com##.post_block:has-text(BC AdBot)
 bleepingcomputer.com###branding
 
 ||blogger.com/*/widgets/*
+@@||blogger.com/*/widgets/$css
 
 blogspot.com##[href^="http://ucoz.net"]
 ||blogspot.com/*/undercons.gif
@@ -5181,6 +5194,8 @@ weblion777.github.io$important
 ! ad scripts
 ! is in AdGuard
 wp-r.github.io$important
+! is in MVPS HOSTS, AdGuard, EasyPrivacy 
+collector.githubapp.com
 
 gizmochina.com##.td-affix.td-header-menu-no-search:style(position:static !important)
 
@@ -5240,7 +5255,7 @@ globus.ru##.footer__background:style(border-top-right-radius:0px !important)
 globus.ru##.d-footer::before:style(border-top-left-radius:0px !important)
 globus.ru##.d-footer::before:style(border-top-right-radius:0px !important)
 ! other
-globus.ru##.header__middle
+!globus.ru##.header__middle - don't, contains search
 !globus.ru##.share__icon
 globus.ru##.share__icon_i_share
 ! ugly pictures in warranty block on root
@@ -6819,6 +6834,7 @@ leroymerlin.kz,leroymerlin.ru##.uc-button-add-to-cart
 leroymerlin.kz,leroymerlin.ru##uc-cookie-notification
 ! other
 leroymerlin.kz,leroymerlin.ru##.facet-element > .hidden-sm.hidden-xs
+!aplaut.io - don't. Оценки на leroymerlin.ru
 
 ! breaks copypaste
 liberatum.ru$script
@@ -13940,3 +13956,457 @@ starmommy.com##.sticky-header:style(position:static !important)
 /jquery.adblock-detector.js
 
 lightyeardocs.com.au$3p
+
+garethjones294.com###header
+
+techport.ru##.techbonuses-promo-block-wrapper
+techport.ru##.tcp-logo
+||techport-st.cdn.ngenix.net/aero/images/general/section.png
+techport.ru##.tcp-subscribe
+techport.ru##.techbonuses-promo-block-wrapper-parent
+techport.ru##.tcp-social-line
+techport.ru##.you-just-watched
+
+technopark.ru##.mail-collect-popup
+technopark.ru##.js-city-picker-popup.city-picker
+technopark.ru##.js-gtm-promo
+technopark.ru##.index__section-shader
+technopark.ru##.personal-service-widget
+technopark.ru##.labels
+technopark.ru##.button--has-loader.button--subcontent.button--blue
+technopark.ru##.header__main--fixed:style(position:static !important)
+!technopark.ru##.js-analytics-list - don't
+technopark.ru##.recommendations-box
+
+! is in AdGuard
+newsru.com##img[onclick="shareinverter()"]
+
+rbc.ru##.l-sticky:style(position:static !important)
+rbc.ru##.forecast
+
+! is in EasyList and Fanboy's
+##.grecaptcha-badge
+
+! is in Fanboy's
+##.footer-socials
+
+! is in Fanboy's
+##.footer-subscribe
+
+! is in Fanboy's
+##.footer__subscribe
+
+! is in Ru AdList and AdGuard
+##.td-a-rec
+! is in Ru AdList
+##div[class*="td-a-rec-id-"]
+
+mr-build.ru##.linked_box
+mr-build.ru##.widget_text
+mr-build.ru##.cs-expertPlagin-tpl
+mr-build.ru##[href*="tinkoff.ru"]
+
+tdsayany.ru##[href="/"]
+tdsayany.ru##.window_wrapper
+||tdsayany.ru/www/images/master-card_prev.png
+||tdsayany.ru/www/images/visa_prev.png
+
+habr.com##div.default-block_sidebar.default-block:has-text(become a sponsor)
+
+udemy.com##[class*=social-share-button]
+! is in AdGuard
+udemy.com##.ud-component--footer--eu-cookie-message
+
+m-strana.ru###branding-new
+
+gidrukodeliya.ru##.fix_post
+
+drive2.ru##.c-user-card__cars
+drive2.ru##.l-nav:style(position:static !important)
+
+technopark.ru##.footer-text__text
+
+vseinstrumenti.ru#@##catalogSearchBox
+
+! is in EasyList
+/advanced-ads-$domain=~wordpress.org
+
+pravda.ru##.link.top
+||pravda.ru/pix/textmistake.png
+
+! is in EasyList and Fanboy's
+##.disclame_block
+
+! invert colors to normal
+kevingreeneitblog.blogspot.com,scom-2012.blogspot.com##body, .date-outer, .post-outer:style(background-color:#fff !important; color:#000 !important)
+!scom-2012.blogspot.com##.date-outer:style(background-color:#fff !important; color:#000 !important)
+kevingreeneitblog.blogspot.com,scom-2012.blogspot.com##.Header h1 a, .Header .description, h2, h3.post-title, h4,#blog-pager, .footer-fauxborder-left, .tabs-inner .widget li a, .tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover, .post-body img, .sidebar .widget, .main-inner .widget .post-body ul li, a:hover:style(background-color:#fff !important; color:#000 !important)
+kevingreeneitblog.blogspot.com,scom-2012.blogspot.com##em > span:style(color:#000 !important)
+! other
+kevingreeneitblog.blogspot.com##[href^="https://hubs.ly/"]
+kevingreeneitblog.blogspot.com##[href="https://www.nice.de/request/"]
+kevingreeneitblog.blogspot.com##.HTML.widget
+kevingreeneitblog.blogspot.com##.widget-content > span
+kevingreeneitblog.blogspot.com##.body-fauxcolumns
+
+leroymerlin.ru##.facet-element > .hidden-sm.hidden-xs
+
+lifehacker.ru###desktop-fixed-bar
+lifehacker.ru###show-search-form
+lifehacker.ru##div.white-box
+lifehacker.ru##.footer__warning
+lifehacker.ru##.footer-right-16-years
+lifehacker.ru##[href^="https://clck.ru/"]
+
+w3schools.com##.top.w3-container
+w3schools.com###topnav.topnav:style(position:static !important)
+
+! top
+blackops.ca##.site-navigation-fixed:style(position:static !important)
+blackops.ca##.custom-header:style(margin-bottom:0px !important)
+blackops.ca##.custom-header
+! invert colors to normal
+blackops.ca##body:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark a:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##body.colors-dark:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.site-content-contain:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.navigation-top:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.navigation-top a:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.main-navigation ul:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.comment-body:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.entry-meta:style(background-color:#fff !important; color:#000 !important)
+! and
+blackops.ca##.colors-dark button:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark input:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark select:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark textarea:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark h3:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark h4:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark h6:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark label:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark .entry-title a:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark.twentyseventeen-front-page .panel-content .recent-posts article:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark .entry-footer .cat-links a:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark .entry-footer .tags-links a:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark .format-quote blockquote:style(background-color:#fff !important; color:#000 !important)
+blackops.ca##.colors-dark .nav-title:style(background-color:#fff !important; color:#000 !important)
+! menu lines
+blackops.ca##.colors-dark:style(border-top-color:#fff !important; border-bottom-color:#fff !important)
+blackops.ca##.navigation-top:style(border-top-color:#fff !important; border-bottom-color:#fff !important)
+blackops.ca##.main-navigation > div > ul:style(border-top-color:#fff !important)
+blackops.ca##.main-navigation div ul:style(border-top-color:#fff !important)
+! other
+
+squaredup.com##[href="/"]
+squaredup.com##.js-fixed-contact
+squaredup.com##.ga-main-nav.js-navbar:style(position:static !important)
+squaredup.com##.hdr__logo
+squaredup.com##.sect-bg
+squaredup.com##.js-fixed-contact-form
+! restore colors to normal
+squaredup.com##.hdr__overlay
+squaredup.com##.hdr__clip
+squaredup.com##.hdr__shadow
+squaredup.com##.hdr__content:style(color:#000 !important)
+squaredup.com##.hdr__title, .hdr__title p:style(color:#000 !important)
+squaredup.com##.subtitle.white h2:style(color:#000 !important)
+
+! is in Fanboy's
+||reddit.com/static/$3p
+
+rcpmag.com##.RCPMAG
+
+! is in EasyList, AdGuard and Fanboy's
+##.cc-banner
+
+! is in EasyList and Fanboy's
+##.cc-container
+
+anaops.com###footer
+anaops.com##.likes-text
+
+systemcenter.ninja##.HTML.widget
+systemcenter.ninja##.Label.widget
+systemcenter.ninja###navbar
+
+||buchatech.com/wp-content/uploads/2017/12/avanade-logo$image
+buchatech.com##.widget_text:has(.caption:has-text(Sponsors))
+buchatech.com##.floating.sidebar:style(top:0px !important)
+
+##.likely__icon
+! is in Fanboy's
+##.likely__widget
+
+remont-book.com##.post__read-time
+remont-book.com##.fixed-panel
+remont-book.com##.header::before:style(background:none !important)
+
+sovet-ingenera.com##.header::before:style(background:none !important)
+sovet-ingenera.com##.code-block
+sovet-ingenera.com##.header__calc
+sovet-ingenera.com##.header__forum
+sovet-ingenera.com##.header:style(height:auto !important)
+sovet-ingenera.com##.arrow
+sovet-ingenera.com##.bottom_post_socials
+
+htmlbook.ru##aside > .block:has-text(бесплатно)
+htmlbook.ru##aside > .block:has(a[href^="https://"])
+
+! is in AdGuard and EasyPrivacy
+||duckduckgo.com/t/
+improving.duckduckgo.com
+duckduckgo.com##.footer_cards
+
+sdelai-lestnicu.ru##.entry-meta__views
+sdelai-lestnicu.ru##.footer-text
+
+||citilink.ru/geo/
+banners.s1.citilink.ru$important
+brands-logo.s1.citilink.ru
+citilink.ru##.subcategory-product-item__price_old
+citilink.ru##.old_price
+citilink.ru##.footer__social-group-ico
+
+bigam.ru###popup-city
+bigam.ru##.page-wrapper-fixed:style(padding-top:30px !important)
+
+leroymerlin.ru##.howto-subscribe
+! is in AdGuard
+leroymerlin.ru##uc-cbf-facing-buttons-menu
+
+||spiceworksstatic.com/assets/tracker
+||spiceworksstatic.com/assets/consent_banner
+||spiceworksstatic.com/assets/marketo
+
+! is in AdGuard: /wp-content/cache/busting/google-tracking/*
+/google-tracking/*
+
+||kommersant.ru/poll/
+! is in AdGuard
+kommersant.ru##.new-subscription-popup
+! is in Fanboy's
+kommersant.ru##.network
+
+geeksforgeeks.org##.login-modal-div
+geeksforgeeks.org##.leftSideBarParent:style(position:static !important)
+geeksforgeeks.org##.header--sidebar_logo
+geeksforgeeks.org##.header--navbar:style(position:static !important)
+geeksforgeeks.org##div:nth-of-type(4) > p:has-text(/GeeksforGeeks|Please Improve/)
+
+howtogeek.com##.message
+howtogeek.com##.affiliate-disclosure
+
+file.wiki##.floating
+file.wiki##.postNavigation
+file.wiki##.rehub_chimp
+
+androproblem.ru##.site-branding
+
+! is in AdGuard
+disqus.com###thread-share-bar
+! is in AdGuard
+disqus.com##.comment__share
+||disqusservice.com/iframe/fallback/$subdocument
+
+||ingmarverheij.com/*/page_body_img.jpg
+ingmarverheij.com###headerbar
+
+adobe.com##.locale-modal
+adobe.com##locale-modal
+
+cloudflare.com###top-navbar:style(position:static !important)
+
+castorama.ru###shopSwitcherModal
+castorama.ru##.md-body:style(overflow:auto !important)
+
+itproguru.com###tc-footer-btt-wrapper
+
+kb.paessler.com###header
+kb.paessler.com###teaser
+
+blogspot.com###clustrMapsImg
+
+acm.org##.secondary-bar--sticky.fixed-element:style(position:static !important)
+acm.org##.recommendations
+
+||udemy.com/api-2.0/visits/
+||udemy.com/api-2.0/ecl
+
+! is in EasyList and Fanboy's
+##.akismet_comment_form_privacy_notice
+
+! is in EasyList
+##.td-adspot-title
+
+! is in EasyList, AdGuard and Fanboys
+##.cookie-notice-container
+
+! is in EasyPrivacy
+-track-inview.
+
+cookdown.com###jsd-widget
+
+topqore.com##.widget_text
+topqore.com###masthead
+topqore.com##.site-footer
+
+||ej2020.ru/help/pomogi3.jpg
+
+techgenix.com##.single .post_header:style(display:inherit !important)
+
+uaz.ru##.header_sticky:style(position:static !important)
+
+/browser-update.min.js
+
+/cookie_notification.js
+
+! is in Fanboy's
+/backtotop.
+
+! is in Fanboy's
+###totop-scroller
+
+! is in Fanboy's
+##.up_button
+
+production-cmp.isgprivacy.cbsi.com
+!https://production-cmp.isgprivacy.cbsi.com/dist/optanon.js
+
+analytics.dns-shop.ru
+
+!##[class*="cookie"]:not(html):not(body):not(article)
+! is in EasyList, AdGuard and Fanboy's
+##.acceptcookies
+
+! is in EasyList
+/stickyads.
+
+specodegda.ru##.association_siz
+specodegda.ru##.alert-warning.alert
+
+maxmaster.ru##.fixed-header,.top-menu-grid:style(position:static !important)
+maxmaster.ru##.advanced-header:style(padding-top:0px !important)
+
+! favicon?
+||kevinholman.com/wp-content/uploads/2019/01/cropped-KevinHolmanBIOPicNew.jpg
+||kevinholman.com/wp-content/uploads/2019/01/cropped-KevinHolmanBIOPicNew-1-192x192.jpg
+||kevinholman.com/wp-content/uploads/2019/01/cropped-KevinHolmanBIOPicNew-1-32x32.jpg
+
+thesslstore.com##.author-info.author-area
+thesslstore.com##.slide-out-div
+thesslstore.com##.footerpayment
+||thesslstore.com/*/footer-payment.svg
+
+! URL Short
+ref.nix.ru
+! top
+nix.ru###toolbar-fixed:style(position:static !important)
+nix.ru###spacer_page_header
+! other
+nix.ru##.h4p.h4m.h4s
+nix.ru##.see_also
+
+neboleem.net##.knopki
+neboleem.net##.contentvstavka
+neboleem.net###random
+
+kotel.guru###fancybox-loading
+
+filtrvody.com##.pos-fix:style(position:static !important)
+||filtrvody.com/sites/default/files/bnr/banner2.jpg
+
+blog.thesysadmins.co.uk##.section.header
+
+foxremont.com##.stickytop:style(position:static !important)
+
+||otdelka-expert.ru/*/imgpsh_fullsize_anim.gif
+
+! неясное - какие-то сокеты. Upd: не, там через это аяксом грузятся списки, довольно полезные
+!||vedomosti.ru/socket.io/
+!waterfall.vedomosti.ru
+!woodpecker.vedomosti.ru
+! какие-то параметры.
+rigel.vedomosti.ru
+! какое-то api. Связано с rigel и как минимум, через это грузятся суперджобовские блоки
+ostrich.vedomosti.ru
+vedomosti.ru##.subscription-placeholders
+vedomosti.ru##.teaser
+! is in Ru AdList
+vedomosti.ru##.article__metrics
+! is in AdGuard
+vedomosti.ru##.subscription-email
+! is in Ru AdList
+vedomosti.ru##.the-loader
+vedomosti.ru##.lock
+! is in Ru AdList
+vedomosti.ru##[id^="unit_"]
+
+! is in Ru AdList (yes, almost parallel - see vedomosti.ru)
+##[id^="unit_"] > a[href*="://smi2.ru"]
+
+ikea.com##.more-stiky_active.more-stiky
+ikea.com##.hnf-sidebar-actions
+ikea.com##.range-revamp-product__buy-module-container:style(position:static !important)
+ikea.com##.hnf-header-filler
+
+all-shoes.ru##.logo_block
+
+! попапы и опросы
+hr.castorama.ru
+
+! is in AdGuard and EasyPrivacy
+/xtcore.js
+
+disqus.com##.recommend-post-title
+! ad scripts
+! is in MVPS HOSTS
+glitter.services.disqus.com
+
+||community.squaredup.com/*/Community_Answers_Banner$image
+
+udemy.com##.original-price-container
+udemy.com##nav
+! is in EasyPrivacy
+page-events-ustats.udemy.com
+||udemy.com/api-2.0/visits/me/funnel-logs/
+
+notepad-plus-plus.org##.intro-and-nav:style(height:auto !important)
+! todo: на https://notepad-plus-plus.org/downloads/ съехала верстка
+
+! is in EasyList, AdGuard and Fanboy's
+/cookienotice.
+
+! is in EasyList
+##.dcmads
+
+consent.truste.com/notice$important
+
+! is in AdGuard and Fanboy's
+||platform.stumbleupon.com/*/widgets.js$3p
+
+/eu-cookie-law/*$important
+
+vmblog.ru###sidebar-nav
+
+! is in EasyList
+://promo.$3p
+
+! blogspot
+||blogblog.com/img/widgets/subscribe$image
+||blogblog.com/1kt/awesomeinc/body_gradient_dark.png
+
+! is in Fanboy's
+||feedburner.com^$image,3p
+
+! магазин продается, заказы не принимаются
+vezuvdom.ru
+
+! smile
+||msdnshared.blob.core.windows.net/media/2017/11/wlEmoticon-smile.png
+
+! is in EasyPrivacy
+||codecguide.com/stats.js
+
+woutervisser.net##.header-top
+woutervisser.net###masthead
