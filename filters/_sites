@@ -1047,6 +1047,10 @@ _pagespeed_beacon?
 ##[id*="Cookie"]:not(html):not(body):not(article)
 ! exception is from AdGuard Annoyances filter
 ~1plus1.ua##[class*="cookie"]:not(html):not(body):not(article)
+    ! is in EasyList, AdGuard and Fanboy's
+    !##.acceptcookies
+    ! is in EasyList, AdGuard and Fanboys
+    !##.cookie-notice-container
 ##[id*="cookie"]:not(html):not(body):not(article)
 ##[class*="GDPR"]:not(html):not(body):not(article)
 ##[id*="GDPR"]:not(html):not(body):not(article)
@@ -1083,10 +1087,12 @@ _pagespeed_beacon?
 /cookieinfo.
 ! from AdGuard and Fanboy's
 /cookie-notice/*$script,important
+/cookie_notification.js
 ! from Fanboy's and AdGuard
 _cookie_policy_
 ! from AdGuard
 /eu-cookie-
+/eu-cookie-law/*$important
 ! from Fanboy's
 /gdpr.js
 ! from EasyPrivacy
@@ -14380,15 +14386,10 @@ nifigas.ru$3p
 ! is in EasyList
 ##.td-adspot-title
 
-! is in EasyList, AdGuard and Fanboys
-##.cookie-notice-container
-
 ! is in EasyPrivacy
 -track-inview.
 
 /browser-update.min.js
-
-/cookie_notification.js
 
 ! is in Fanboy's
 /backtotop.
@@ -14401,10 +14402,6 @@ nifigas.ru$3p
 
 production-cmp.isgprivacy.cbsi.com
 !https://production-cmp.isgprivacy.cbsi.com/dist/optanon.js
-
-!##[class*="cookie"]:not(html):not(body):not(article)
-! is in EasyList, AdGuard and Fanboy's
-##.acceptcookies
 
 ! is in EasyList
 /stickyads.
@@ -14423,8 +14420,6 @@ production-cmp.isgprivacy.cbsi.com
 
 ! is in AdGuard and Fanboy's
 ||platform.stumbleupon.com/*/widgets.js$3p
-
-/eu-cookie-law/*$important
 
 ! is in EasyList
 ://promo.$3p
