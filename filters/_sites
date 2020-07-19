@@ -2142,6 +2142,8 @@ adminxp.ru##.art-Header
 admtroitsk.ru##.foot-copy
 
 adobe.com###helpful-pod
+adobe.com##.locale-modal
+adobe.com##locale-modal
 
 ! remove static header
 adaway.org##.current-section
@@ -2417,6 +2419,8 @@ androidpit.com###jwplayer-sidebar
 androidpit.com##.adm-with-statement.adm-with-question.root.agree-disagree
 
 androidpolice.com##.header
+
+androproblem.ru##.site-branding
 
 anekdot.eu##.txt11
 
@@ -3647,6 +3651,7 @@ cloudenius.com###masthead
 /snowflakes.min.js
 ! from EasyList
 ||cloudflare.com/ajax/libs/cookieconsent2/
+cloudflare.com###top-navbar:style(position:static !important)
 
 ! from EasyList
 ||cloudfront.net/script.js$script,3p
@@ -4452,8 +4457,20 @@ footboom.com##.b-head-logo__link
 
 foxremont.com##.stickytop:style(position:static !important)
 
+garethjones294.com###header
+
+geeksforgeeks.org##.login-modal-div
+geeksforgeeks.org##.leftSideBarParent:style(position:static !important)
+geeksforgeeks.org##.header--sidebar_logo
+geeksforgeeks.org##.header--navbar:style(position:static !important)
+geeksforgeeks.org##div:nth-of-type(4) > p:has-text(/GeeksforGeeks|Please Improve/)
+
+gidrukodeliya.ru##.fix_post
+
 ! ads
 grouple.co$3p
+
+habr.com##div.default-block_sidebar.default-block:has-text(become a sponsor)
 
 hackware.ru##.site-title
 hackware.ru##.versep
@@ -4497,6 +4514,11 @@ kommersant.ru##.network
 
 kotel.guru###fancybox-loading
 
+kotofoto.ru##.footergsboks
+
+! is in AdGuard
+||kurs.com.ru/informer/$3p
+
 laroche-posay.ru##.top-header__logo
 laroche-posay.ru##.home-banner-wr
 laroche-posay.ru##.home-top-banners
@@ -4529,6 +4551,11 @@ maxmaster.ru##.advanced-header:style(padding-top:0px !important)
 
 momoporn.com##.investigation
 momoporn.com##.technological
+
+mr-build.ru##.linked_box
+mr-build.ru##.widget_text
+mr-build.ru##.cs-expertPlagin-tpl
+mr-build.ru##[href*="tinkoff.ru"]
 
 @@||echo.msk.ru^$generichide,badfilter
 echo.msk.ru##.mmage
@@ -7940,6 +7967,7 @@ m-strana.ru##.slider-section
 m-strana.ru##.sticky-menu
 m-strana.ru###sticky-nav:style(position:static !important)
 m-strana.ru##.container.main
+m-strana.ru###branding-new
 
 ! mirtesen.ru
 mtml.ru$script,domain=~mirtesen.ru
@@ -9655,6 +9683,8 @@ reddit.com##header:style(position:absolute !important)
 ! https://www.reddit.com/r/uBlockOrigin/comments/b9qsix/new_reddit_tracks_a_ton_more_data_someone_said/
 ||reddit.com/api/jail/$first-party,xmlhttprequest
 ||reddit.com/errors
+! is in Fanboy's
+||reddit.com/static/$3p
 
 ! from EasyPrivacy
 ||reddit.com/timings/
@@ -10831,6 +10861,7 @@ squaredup.com##.hdr__shadow
 squaredup.com##.hdr__content:style(color:#000 !important)
 squaredup.com##.hdr__title, .hdr__title p:style(color:#000 !important)
 squaredup.com##.subtitle.white h2:style(color:#000 !important)
+||community.squaredup.com/*/Community_Answers_Banner$image
 
 squarespace.com$3p,script
 
@@ -11129,6 +11160,11 @@ tbmmarket.ru###telefon
 tdpresto.ru##.phone
 tdpresto.ru##.phone2
 
+tdsayany.ru##[href="/"]
+tdsayany.ru##.window_wrapper
+||tdsayany.ru/www/images/master-card_prev.png
+||tdsayany.ru/www/images/visa_prev.png
+
 techair.ru###slider1_container
 ||techair.ru/images/goods/IT_27171_b.jpg
 
@@ -11193,6 +11229,24 @@ technoavia.ru##.link_to_ga
 technoavia.ru##.comment_body > p:has-text(Пока не было комментариев. Станьте первым)
 
 technopark.ru##.footer-text__text
+technopark.ru##.mail-collect-popup
+technopark.ru##.js-city-picker-popup.city-picker
+technopark.ru##.js-gtm-promo
+technopark.ru##.index__section-shader
+technopark.ru##.personal-service-widget
+technopark.ru##.labels
+technopark.ru##.button--has-loader.button--subcontent.button--blue
+technopark.ru##.header__main--fixed:style(position:static !important)
+!technopark.ru##.js-analytics-list - don't
+technopark.ru##.recommendations-box
+
+techport.ru##.techbonuses-promo-block-wrapper
+techport.ru##.tcp-logo
+||techport-st.cdn.ngenix.net/aero/images/general/section.png
+techport.ru##.tcp-subscribe
+techport.ru##.techbonuses-promo-block-wrapper-parent
+techport.ru##.tcp-social-line
+techport.ru##.you-just-watched
 
 ! @@||techradar.com^$generichide in Fanboy's. Hmm... Ok.
 techradar.com##.site-logo
@@ -11846,6 +11900,9 @@ page-events-ustats.udemy.com
 ||udemy.com/api-2.0/visits/me/funnel-logs/
 ||udemy.com/api-2.0/visits/
 ||udemy.com/api-2.0/ecl
+udemy.com##[class*=social-share-button]
+! is in AdGuard
+udemy.com##.ud-component--footer--eu-cookie-message
 
 uft.me###clickbg
 uft.me###page:style(margin-top:0px !important)
@@ -14266,39 +14323,13 @@ nifigas.ru$3p
 ! is in AdGuard
 ##.gsInformer
 
-! is in AdGuard
-||kurs.com.ru/informer/$3p
-
 /ban/*
-
-kotofoto.ru##.footergsboks
 
 starmommy.com##.sticky-header:style(position:static !important)
 
 /jquery.adblock-detector.js
 
 lightyeardocs.com.au$3p
-
-garethjones294.com###header
-
-techport.ru##.techbonuses-promo-block-wrapper
-techport.ru##.tcp-logo
-||techport-st.cdn.ngenix.net/aero/images/general/section.png
-techport.ru##.tcp-subscribe
-techport.ru##.techbonuses-promo-block-wrapper-parent
-techport.ru##.tcp-social-line
-techport.ru##.you-just-watched
-
-technopark.ru##.mail-collect-popup
-technopark.ru##.js-city-picker-popup.city-picker
-technopark.ru##.js-gtm-promo
-technopark.ru##.index__section-shader
-technopark.ru##.personal-service-widget
-technopark.ru##.labels
-technopark.ru##.button--has-loader.button--subcontent.button--blue
-technopark.ru##.header__main--fixed:style(position:static !important)
-!technopark.ru##.js-analytics-list - don't
-technopark.ru##.recommendations-box
 
 ! is in AdGuard
 newsru.com##img[onclick="shareinverter()"]
@@ -14323,34 +14354,11 @@ rbc.ru##.forecast
 ! is in Ru AdList
 ##div[class*="td-a-rec-id-"]
 
-mr-build.ru##.linked_box
-mr-build.ru##.widget_text
-mr-build.ru##.cs-expertPlagin-tpl
-mr-build.ru##[href*="tinkoff.ru"]
-
-tdsayany.ru##[href="/"]
-tdsayany.ru##.window_wrapper
-||tdsayany.ru/www/images/master-card_prev.png
-||tdsayany.ru/www/images/visa_prev.png
-
-habr.com##div.default-block_sidebar.default-block:has-text(become a sponsor)
-
-udemy.com##[class*=social-share-button]
-! is in AdGuard
-udemy.com##.ud-component--footer--eu-cookie-message
-
-m-strana.ru###branding-new
-
-gidrukodeliya.ru##.fix_post
-
 ! is in EasyList
 /advanced-ads-$domain=~wordpress.org
 
 ! is in EasyList and Fanboy's
 ##.disclame_block
-
-! is in Fanboy's
-||reddit.com/static/$3p
 
 rcpmag.com##.RCPMAG
 
@@ -14366,19 +14374,6 @@ rcpmag.com##.RCPMAG
 
 ! is in AdGuard: /wp-content/cache/busting/google-tracking/*
 /google-tracking/*
-
-geeksforgeeks.org##.login-modal-div
-geeksforgeeks.org##.leftSideBarParent:style(position:static !important)
-geeksforgeeks.org##.header--sidebar_logo
-geeksforgeeks.org##.header--navbar:style(position:static !important)
-geeksforgeeks.org##div:nth-of-type(4) > p:has-text(/GeeksforGeeks|Please Improve/)
-
-androproblem.ru##.site-branding
-
-adobe.com##.locale-modal
-adobe.com##locale-modal
-
-cloudflare.com###top-navbar:style(position:static !important)
 
 acm.org##.secondary-bar--sticky.fixed-element:style(position:static !important)
 acm.org##.recommendations
@@ -14423,8 +14418,6 @@ production-cmp.isgprivacy.cbsi.com
 
 ! is in AdGuard and EasyPrivacy
 /xtcore.js
-
-||community.squaredup.com/*/Community_Answers_Banner$image
 
 ! is in EasyList, AdGuard and Fanboy's
 /cookienotice.
