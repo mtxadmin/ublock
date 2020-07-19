@@ -2255,6 +2255,9 @@ alexgyver.ru##.alert-danger.error.alert.fusion-alert
 alexzsoft.ru##.blog-header
 ||alexzsoft.ru/wp-content/themes/alexsoft/img/fon/triangles.jpg
 
+alfabank.ru##[class^=header-warning__root]:has-text(блокировщик контента)
+||alfabank.ru/67d4f9e82794b440330d4551fc3b855f.jpg
+
 alfaplan.ru###scroller
 alfaplan.ru###hh
 alfaplan.ru##p.pr-ph-num
@@ -4454,6 +4457,11 @@ evike.com###covidpop
 ||evike.com/images3/icon-paypal.png
 ||evike.com/images3/icon-paypalcredit.png
 
+expert-kachestva.ru##.site-branding
+||expert-kachestva.ru/wp-content/themes/expert/images/star.png
+||expert-kachestva.ru/wp-content/themes/expert/images/li.png
+||expert-kachestva.ru/wp-content/themes/expert/images/hstar.png
+
 ! is in Fanboy's
 ||feedburner.com^$image,3p
 
@@ -4467,8 +4475,19 @@ filtrvody.com##.pos-fix:style(position:static !important)
 ! "Мы заметили что вы используете блокировщик рекламы. Очень просим отключить его"
 footboom.com###blocker-popup.blocker-modal
 footboom.com##.b-head-logo__link
+! from Ru AdList all (see https://forums.lanik.us/viewtopic.php?f=102&t=39359)
+footboom.com##a[href*="abp:subscribe?"]
+footboom.com##.scripts_code
+footboom.com###js-popup
+footboom.com##.b-relative-bg
+footboom.com##div[class^="b-betting"]
+||footboom.net/img/br/
 
 foxremont.com##.stickytop:style(position:static !important)
+
+gamemag.ru###logo-wrap.logo-wrap
+gamemag.ru##.logo-wrap__text-rating
+gamemag.ru##.seo-text-list
 
 garethjones294.com###header
 
@@ -4494,6 +4513,8 @@ hi-tech.news##.post_details
 
 howtogeek.com##.message
 howtogeek.com##.affiliate-disclosure
+
+hozzi.ru##.c_related-cont
 
 htmlbook.ru##aside > .block:has-text(бесплатно)
 htmlbook.ru##aside > .block:has(a[href^="https://"])
@@ -4522,6 +4543,12 @@ kevinholman.com##.site-img-logo
 ||kevinholman.com/wp-content/uploads/2019/01/cropped-KevinHolmanBIOPicNew.jpg
 ||kevinholman.com/wp-content/uploads/2019/01/cropped-KevinHolmanBIOPicNew-1-192x192.jpg
 ||kevinholman.com/wp-content/uploads/2019/01/cropped-KevinHolmanBIOPicNew-1-32x32.jpg
+
+knipex.ru##.header__logos-section
+knipex.ru##.page__body:style(padding-top:0px !important)
+knipex.ru##.header__main-section-inner:style(padding-top:0px !important)
+knipex.ru##.header__main-section-inner:style(padding-bottom:0px !important)
+knipex.ru##.header__main-section-inner:style(min-height:0px !important)
 
 ||kommersant.ru/poll/
 ! is in AdGuard
@@ -9849,6 +9876,8 @@ respublica.ru##.rd-float-links_top
 respublica.ru##.rd-page-main__subscribe
 respublica.ru##.rd-footer-mailing
 
+re-st.ru###pact-widget.pact-widget
+
 restate.ru##.cow
 restate.ru##.publish_t2017_foradaptiv
 
@@ -10541,6 +10570,8 @@ shooter.org.ua###OnBottom.nav-down
 shop.pe$3p
 
 shop4toys.ru##.fixed-panel
+
+shopcarry.ru##.tmenu:style(position:static !important)
 
 ! https://xakep.ru/2019/08/27/click-interception/
 ! this rule is way too hard. It breaks many shopify-fueled shops :-(
@@ -11772,6 +11803,13 @@ trubamaster.ru##.widget-title:has-text(Реклама)
 
 trubanet.ru##.td-ss-main-sidebar
 
+!annoying gif favicon
+||trubarik.ru/favicon.ico
+! site blocks copypaste
+trubarik.ru$inline-script
+! other
+||trubarik.ru/*/scripts.js
+
 ! header
 trud.com##.fix-h:style(position:static !important)
 ! popups
@@ -11952,6 +11990,8 @@ uft.me###page:style(margin-top:0px !important)
 uguide.ru$3p
 
 ujut-v-dome.ru##aside
+
+||uk.ru/img/enline.gif
 
 ulefone.com##.fixed:style(position:static !important)
 
@@ -12243,6 +12283,9 @@ vestifinance.ru##.b-header
 vestifinance.ru##.g-columns2-left_sticky:style(position:static !important; top:0px !important)
 
 veterinarka.ru###header
+
+! магазин продается, заказы не принимаются
+vezuvdom.ru
 
 vgtimes.ru##.vgt_logo4
 vgtimes.ru##.handle
@@ -13176,6 +13219,10 @@ youtube.com##+js(json-prune, adPlacements)
 ##.ytp-ad-progress-list
 ! is in AdGuard
 youtube.com##.video-annotations
+! is in Ru AdList, Fanboy's, AdGuard
+youtube.com##.annotation.iv-branding
+! from uBlock filters
+youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 
 ypapa.ru##.fake
 ypapa.ru##.yp-consult
@@ -14223,12 +14270,6 @@ stackpathcdn.com$script,subdocument
 /twitterfeed/*
 /jquery.tweetscroll.js
 
-! is in Ru AdList, Fanboy's, AdGuard
-youtube.com##.annotation.iv-branding
-
-! from uBlock filters
-youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-
 /convertfox.min.js
 
 ||selteq.com/wimage/h1.jpg
@@ -14237,32 +14278,16 @@ youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAd
 ||comcast.com/*/adrum/
 ! AppDynamics Adrum scripts: https://cdn.comcast.com/-/media/Common/adrum/adrumext7a88a5f34b3368a060fd963640d8c56b.js
 
-shopcarry.ru##.tmenu:style(position:static !important)
-
 ! ad scripts
 miniclip.com$3p
 
 ! ad scripts
 d2xkqxdy6ewr93.cloudfront.net
 
-hozzi.ru##.c_related-cont
-
-! from Ru AdList all (see https://forums.lanik.us/viewtopic.php?f=102&t=39359)
-footboom.com##a[href*="abp:subscribe?"]
-footboom.com##.scripts_code
-footboom.com###js-popup
-footboom.com##.b-relative-bg
-footboom.com##div[class^="b-betting"]
-||footboom.net/img/br/
-
 ! from Ru AdList
 ##a[href*="://analyticsq.com"]
 
 /branding/*
-
-gamemag.ru###logo-wrap.logo-wrap
-gamemag.ru##.logo-wrap__text-rating
-gamemag.ru##.seo-text-list
 
 ! from Ru AdList
 ##DIV[id^="DIV_NNN_"]
@@ -14276,8 +14301,6 @@ gamemag.ru##.seo-text-list
 ! from Ru AdList
 ##[data-link*="://ubar-pro"]
 
-||uk.ru/img/enline.gif
-
 /toastr.min.js
 
 ! https://yandex.ru/search/?text=rackcdn.com
@@ -14290,32 +14313,9 @@ rackcdn.com
 /sticky-header/*
 /advanced-hooks-sticky-header
 
-alfabank.ru##[class^=header-warning__root]:has-text(блокировщик контента)
-||alfabank.ru/67d4f9e82794b440330d4551fc3b855f.jpg
-
 /promo.php
 
 /events-metrica-scripts.js
-
-!annoying gif favicon
-||trubarik.ru/favicon.ico
-! site blocks copypaste
-trubarik.ru$inline-script
-! other
-||trubarik.ru/*/scripts.js
-
-expert-kachestva.ru##.site-branding
-||expert-kachestva.ru/wp-content/themes/expert/images/star.png
-||expert-kachestva.ru/wp-content/themes/expert/images/li.png
-||expert-kachestva.ru/wp-content/themes/expert/images/hstar.png
-
-re-st.ru###pact-widget.pact-widget
-
-knipex.ru##.header__logos-section
-knipex.ru##.page__body:style(padding-top:0px !important)
-knipex.ru##.header__main-section-inner:style(padding-top:0px !important)
-knipex.ru##.header__main-section-inner:style(padding-bottom:0px !important)
-knipex.ru##.header__main-section-inner:style(min-height:0px !important)
 
 /top.bg.center.png
 /top.bg.left.png
@@ -14428,9 +14428,6 @@ production-cmp.isgprivacy.cbsi.com
 
 ! is in EasyList
 ://promo.$3p
-
-! магазин продается, заказы не принимаются
-vezuvdom.ru
 
 ! smile
 ||msdnshared.blob.core.windows.net/media/2017/11/wlEmoticon-smile.png
