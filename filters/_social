@@ -457,6 +457,8 @@ smartlock.google.com$3p
 ! from AdGuard and Fanboy's
 ##a[href^="https://plus.google.com/share"]
 ! from Fanboy's
+##a[title="Google+"]
+! from Fanboy's
 ##[title^="Share on Google+"]
 ! from Fanboy's
 ##a[title^="Share on Google"]
@@ -490,6 +492,7 @@ smartlock.google.com$3p
 /social/google.
 
 
+
 !! Telegram
 ##a[href^="https://teleg.run/joinchat/"]
 ##.fa-telegram
@@ -505,6 +508,21 @@ smartlock.google.com$3p
 /telegram2.png
 /tg.png
 /tl.jpg
+
+
+
+!! Whatsapp
+!from AdGuard
+##a[href^="whatsapp://send"]
+!from Fanboy's - narrower, disabled
+!##a[href^="whatsapp://send?text="]
+##.icon-whatsapp
+! from Fanboy's
+##a[href^="https://api.whatsapp.com/send?"]
+/whatsapp.svg
+! ad scripts
+! is in Fanboy’s and RU AdList
+/whatsapp-button.
 
 
 
@@ -825,7 +843,6 @@ _social_fb.
 /viber.svg
 /watch.js$domain=~rosreestr.ru|~youtube.com
 /watch_ua.js$important
-/whatsapp.svg
 /wordpress-social-login/*$important
 /yandex-zen.svg
 /youtube.jpg
@@ -836,10 +853,6 @@ _social_fb.
 /zen.png
 ! from Fanboy's
 -sharebar.
-!from AdGuard
-##a[href^="whatsapp://send"]
-!from Fanboy's - narrower, disabled
-!##a[href^="whatsapp://send?text="]
 ! from Fanboy's
 ##a[title="ВКонтакте"]
 ! from Fanboy's
@@ -957,7 +970,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.icon-vimeo
 ##.icon--vine
 ##.icon-wechat
-##.icon-whatsapp
 ##.icon-witter
 ##.icon-ya
 ##.iconyoutube
@@ -1045,9 +1057,6 @@ livejournal.com##[lj-widget-fb-page]
 ##a[href^="http://www.livejournal.com/update.bml?"]
 
 ##[title^="Follow me on "]
-
-! from Fanboy's
-##a[href^="https://api.whatsapp.com/send?"]
 
 ! is in Fanboy's and Ru AdList
 -social-icon-
@@ -1192,3 +1201,36 @@ livejournal.com##[lj-widget-fb-page]
 
 ! is in Fanboy's
 ##.footer-socials
+
+/social-buttons.js$important
+
+! is in Fanboy’s and RU AdList
+/socialshare.
+
+##.social-icons__link
+
+! in 3 lists
+##.sd-sharing
+! from Web Annoyances Ultralist
+##.sd-sharing-enabled
+
+! is in 3 lists
+##.sharedaddy
+
+! from Fanboy's and Web Annoyances Ultralist
+##.share-widget
+
+! is in AdGuard and Fanboy's
+##.goodshare
+
+! is in EasyList and Fanboy's
+##.footer-social-link
+
+! from Fanboy's
+##.swf-social-site
+
+! is in Ru AdList
+###social
+
+! is in Fanboy's and RU AdList
+/ya-share.$important
