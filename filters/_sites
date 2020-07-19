@@ -98,6 +98,10 @@ log.adsence.co.kr
 ##[id*="Promo"]:not(html):not(body):not(article)
 ! too many exclusions
 !~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru##[class*="promo"]:not(html):not(body):not(article)
+    ##.promo
+    ##.promo__banner
+    ##.promo-bar
+    ##.promo-button
 ##[id*="promo"]:not(html):not(body):not(article)
 ##[class*="reklam"]:not(html):not(body):not(article)
 ##[id*="reklam"]:not(html):not(body):not(article)
@@ -653,8 +657,6 @@ _analytics.js?
 /devicepx-jetpack.js$important
 ! from EasyPrivacy
 /event/track?
-! from EasyPrivacy
-/evercookie.
 ! is in EasyPrivacy and AdGuard
 /fingerprint2.min.js$important
 ||jsdelivr.net/fingerprintjs2/
@@ -809,6 +811,14 @@ _pagespeed_beacon?
     !##.td-scroll-up
 ##[id*="scrollTop"]:not(html):not(body)
 ~dobrodel.ru,~dobrodel.mosreg.ru,~wildberries.ru##[class*="_to_top"]:not(html):not(body)
+##[id*="scrollup"]:not(html):not(body)
+    ! from Fanboy's
+    ###scrollup:not(body)
+##[class*="scrollup"]:not(html):not(body)
+    ##.hc_scrollup
+    ###mt-scrollup
+    ##.scrollup
+    ##.scrollup-btn
 ##[id*="_to_top"]:not(html):not(body)
 ##[class*="-to-top"]:not(html):not(body)
 ##[id*="-to-top"]:not(html):not(body)
@@ -836,6 +846,8 @@ _pagespeed_beacon?
     !##.tg-btnbacktotop
     !###totop
 !other
+! from Fanboy's
+##a[title="Back to top"]
 ~obi.ru##.arrow-down
 ##.arrowTop
 ###arrow-top
@@ -916,7 +928,6 @@ _pagespeed_beacon?
 ###GoUpClickZone
 ###GoUpWrapper
 ###GOWrapper
-##.hc_scrollup
 ##.icon-angle-up
 ##.icon-arrow-up
 ##.icon-back-to-top
@@ -940,7 +951,6 @@ _pagespeed_beacon?
 ##.media-infinity-footer__up-arrow
 ###move_up
 ##.move_up
-###mt-scrollup
 ##.nav-icon-home
 ##.nav-icon-top
 ###nav_up
@@ -970,10 +980,8 @@ _pagespeed_beacon?
 ##.scrolltotopbutton
 ###scrollup
 ###scrollUp
-##.scrollup
 ##.scroll_up
 ##.scrollUp
-##.scrollup-btn
 ##.ScrollUpButton__Container
 ##.scrollUp-child
 ##.scroolTop
@@ -1039,6 +1047,7 @@ _pagespeed_beacon?
 /scroll-top.
 ! from Fanboy’s Annoyance List
 /scrolltoplugin.
+/scrolltoplugin.min.js$important
 /scrollup.svg
 /totop.svg
 ! from Fanboy's
@@ -1053,11 +1062,25 @@ _pagespeed_beacon?
 ##[id*="Cookie"]:not(html):not(body):not(article)
 ! exception is from AdGuard Annoyances filter
 ~1plus1.ua##[class*="cookie"]:not(html):not(body):not(article)
+    ! the list is not full, just _some_ rules
     ! is in EasyList, AdGuard and Fanboy's
-    !##.acceptcookies
+    ##.acceptcookies
     ! is in EasyList, AdGuard and Fanboys
-    !##.cookie-notice-container
+    ##.cookie-notice-container
+    ! is in EasyList and Fanboy’s
+    ##.widget_eu_cookie_law_widget
 ##[id*="cookie"]:not(html):not(body):not(article)
+    ! the list is not full, just _some_ rules
+    ! in 3 lists
+    ##.alert-cookie
+    ! in 3 lists
+    ###cookieBar
+    ! in 3 lists
+    ###cookies-msg
+    ! is in 3 lists
+    ###eu-cookie-law
+    ! is in EasyList and Fanboy's
+    ###w-cookies-notice
 ##[class*="GDPR"]:not(html):not(body):not(article)
 ##[id*="GDPR"]:not(html):not(body):not(article)
 ##[class*="Gdpr"]:not(html):not(body):not(article)
@@ -1083,12 +1106,17 @@ _pagespeed_beacon?
 ##.message-cockies
 ##.personal-data-warning
 ! from AdGuard
+/cookiebar.
+! from AdGuard
 /cookieconsent.$important
 /cookieconsent2/*$important
 ! from Fanboy's, modified
 /cookieconsentpub/*$important
 ! from Fanboy's
 -cookie-consent/$stylesheet
+! from AdGuard
+.cookiesdirective.
+    !/jquery.cookiesdirective.js
 ! is in EasyList, AdGuard and Fanboy's
 /cookieinfo.
 ! from AdGuard and Fanboy's
@@ -1096,15 +1124,24 @@ _pagespeed_beacon?
 /cookie_notification.js
 ! from Fanboy's and AdGuard
 _cookie_policy_
+! is in 2 lists
+/eucookie/*
 ! from AdGuard
 /eu-cookie-
 /eu-cookie-law/*$important
+! from EasyPrivacy
+/evercookie.
 ! from Fanboy's
 /gdpr.js
+/referrer-cookie.js
 ! from EasyPrivacy
 /setcookie?
+/track-cookies.js$important
+! from EasyPrivacy
+/trackingcookiecheck?
 ! is in Fanboy's and EasyList
 /um-gdpr.$important
+
 
 
 !! age notices
@@ -1184,6 +1221,7 @@ _cookie_policy_
 ##.t-appdownload
 /app-store.svg
 /appstore.png
+/appstore.svg
 /appstore-footer.png
 /googleplay.png
 /googleplay-footer.png
@@ -1395,11 +1433,15 @@ _cookie_policy_
 /county.js
 !
 /countdown.js
+/countdown.min.js
+/hurrify/
+/hurrify.js
 /jquery.countdown$important,domain=~advance24.ru
     ! /jquery.countdown.min.js$important
     ! /jquery.countdown-en.js
     ! /jquery.countdown-ru2.js
 /jquery-countdown/*
+/sales-countdown-timer/*
 
 
 
@@ -7146,6 +7188,8 @@ liberatum.ru$inline-script
 ||libking.ru/templates/king/images/nocover.png
 ||libking.ru/templates/king/images/crab1.png
 libking.ru##.full-title > .orig-name
+! from RU AdList. Yes, with dot
+.libking.ru^$script
 
 libreelec.tv##.pageHeaderPanel:style(position:static !important)
 libreelec.tv###dw__toc.affix
@@ -13510,13 +13554,13 @@ xn--80ado1abokv5d.xn--80asehdb##.fixedpanel
 xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 !! todo
+
 /jquery.sticky.js$important
 
 ! don't block - it may be used in non-ad video for previews
 !/rotator.js
 
 /track.js$important
-/track-cookies.js$important
 
 /reklama.js$important
 
@@ -13544,9 +13588,6 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 /smartTagging.js
 
-! is in EasyList and Fanboy's
-##.footer-social-link
-
 ! from EasyList: blocking detection of standard AdBlock subscriptions (very impressive! although it needs cookies)
 !||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
 ! disabled because of straightforwardness of such countermeasure.
@@ -13570,23 +13611,11 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ! from RU AdList
 ||avito.ru^*/dfp/px.js
 
-! is in AdGuard and Fanboy's
-##.goodshare
-
 ! from Fanboy's
 /goodshare.
 !||jsdelivr.net/npm/goodshare.js
 
-! from Fanboy's
-##.swf-social-site
-
 ##.module_banner_top
-
-! in 3 lists
-###cookies-msg
-
-! from Fanboy's and Web Annoyances Ultralist
-##.share-widget
 
 ! from EasyList and Fanboy's
 ###gh-gb
@@ -13608,38 +13637,19 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ###newsletters-1-form
 ! from Fanboy's
 ###newsletters-1-form-wrapper
-
-! in 3 lists
-##.sd-sharing
-! from Web Annoyances Ultralist
-##.sd-sharing-enabled
+! from Fanboy's
+###subscribe-email
 
 ! from Fanboy's and Web Annoyances Ultralist
 ##.jetpack_subscription_widget
 ! from Fanboy's
 ##.widget_blog_subscription
 
-! is in 3 lists
-##.sharedaddy
-
-! from Fanboy's
-###subscribe-email
-
-! from Fanboy's
-##a[title="Back to top"]
-! from Fanboy's
-##a[title="Google+"]
-
 ! from EasyList
 ##div[id^="div-gpt-ad"]
 
 ! is in RuAdList and AdGuard
 ##img[width="728"][height="90"]
-
-! in 3 lists
-##.alert-cookie
-! in 3 lists
-###cookieBar
 
 ! is in EasyPrivacy
 /publishertag.js
@@ -13667,17 +13677,7 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 /sticky-cart/*
 
-/hurrify/
-/hurrify.js
-
 /trackify.js$important
-
-##.promo
-##.promo__banner
-##.promo-bar
-##.promo-button
-
-/sales-countdown-timer/*
 
 /snoweffect.js
 
@@ -13706,17 +13706,8 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ! from Ru AdList, modified
 /jquery.smartbanner.js$important
 
-! from EasyPrivacy
-/trackingcookiecheck?
-
-/appstore.svg
-
 ! is in EasyList
 /edmonton.webp$script,important
-
-/scrolltoplugin.min.js$important
-
-/fuckadblock$script,important
 
 ! from EasyPrivacy
 /logimpressions?
@@ -13733,10 +13724,6 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ! from EasyList
 -ads.js?
 
-! from RU AdList
-! yes, with dot
-.libking.ru^$script
-
 ||cse.google.com/cse.js?cx=partner-pub$important
 
 ! from EasyPrivacy
@@ -13744,15 +13731,6 @@ _ga-events_
 
 ! is in Fanboy’s and Web Annoyances Ultralist 
 ##.actnbr-has-follow
-
-! is in EasyList and Fanboy’s
-##.widget_eu_cookie_law_widget
-
-! is in 3 lists
-###eu-cookie-law
-
-! from Fanboy's
-###scrollup:not(body)
 
 ! is in AdGuard and EasyPrivacy
 /autotrack.js
@@ -13790,17 +13768,10 @@ targetemsecure.blob.core.windows.net
 /ga-lite.
 ||jsdelivr.net/npm/ga-lite
 
-! is in Fanboy's and RU AdList
-/ya-share.$important
-
 /cta/*
 
-! from AdGuard
-.cookiesdirective.
-!/jquery.cookiesdirective.js
-
 .campaign-tracking.
-!/hr.campaign-tracking.js
+    !/hr.campaign-tracking.js
 
 ! is in RU AdList and Fanboy's
 /scrolltopcontrol.
@@ -13811,16 +13782,10 @@ targetemsecure.blob.core.windows.net
 ! is in EasyPrivacy
 /zaius-min.js
 
-! is in EasyList and Fanboy's
-###w-cookies-notice
-
 ! from EasyPrivacy
 /detm-container-$important
 
 /banner.js$important
-
-! is in Adblock Warning Removal and uBlock filters
-/blockadblock.$script,important
 
 /search-tracking.
 
@@ -13834,11 +13799,6 @@ targetemsecure.blob.core.windows.net
 
 ! is in EasyList
 /ezcl.webp?
-
-/countdown.min.js
-
-! is in Ru AdList
-###social
 
 ! Dynamic IPs
 .noip.com
@@ -13856,15 +13816,8 @@ redirectme.net
 ! from EasyPrivacy
 /resxclsa.
 
-! is in Fanboy’s and RU AdList
-/socialshare.
-
-##.social-icons__link
-
 ! from EasyList
 ://affiliate.$3p
-
-/referrer-cookie.js
 
 ! ad scripts
 ! is in EasyPrivacy
@@ -13875,9 +13828,6 @@ redirectme.net
 ! from EasyList
 /adx.$domain=~adx.cx|~adx.ru|~adx.tribefire.com|~adx.uk.com|~adx.world|~adx.wowfi.com
 ! https://adx.4strokemedia.com
-
-! from AdGuard
-/cookiebar.
 
 ! from RU AdList, modified
 /news.js|$3p
@@ -13903,10 +13853,6 @@ _advert/
 
 ! from AdGuard
 .pro/*/a/pop/js/
-
-! ad scripts
-! is in Fanboy’s and RU AdList
-/whatsapp-button.
 
 /track.min.js
 
@@ -13966,14 +13912,9 @@ _advert/
 
 /baner_$important
 
-/social-buttons.js$important
-
 /api/tracker/*
 
 /firebase_subscribe.js
-
-! is in 2 lists
-/eucookie/*
 
 ! from Fanboy's
 /mbox-*.js$script
