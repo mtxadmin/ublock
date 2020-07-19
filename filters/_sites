@@ -186,8 +186,6 @@ _728x90.$important
 /bold-upsell-custom.js
 /brand.js
 /bugsnag.min.js
-! video ad counter
-/cast_sender.js$important
 /clipboard.min.js$important
 ! from AdGuard
 .com/native.php?b=
@@ -267,7 +265,6 @@ _728x90.$important
 ! from EasyPrivacy
 /uutils.fcg?
 /video_banner.js
-/video.counters.js$important
 /webbanners/*
 /widget/*$domain=~hypercomments.com|~hse.ru|~alicdn.com|~domclick.ru
 ! from EasyList
@@ -432,8 +429,6 @@ _728x90.$important
 ###docAd
 ##.float_banner
 ##floating-help-button
-##.footer-counters
-##.footer__logo
 ###footer-spelling
 ##.forum-banner
 ###foxclocks-statusbar-spacer
@@ -620,6 +615,7 @@ volveter.ru##.has_offer_prop
 ~yandex.*##.counter
 ##.counters
 ##.count-visitor
+##.footer-counters
 ! from AdGuard Tracking Protection
 ##img[width="88"][height="31"]
 ! from AdGuard Tracking Protection
@@ -630,6 +626,8 @@ volveter.ru##.has_offer_prop
 ://top.$script,3p
 ! from EasyPrivacy
 .com/track?$image
+! from Ru AdList
+^counter.$image,3p
 ! from RU AdList, modified
 /1x1.gif$important
 ! from RU AdList, modified
@@ -645,11 +643,14 @@ _analytics.js?
     ! увы, но иначе в Сбербанк и Домклик не входит
     !||sberbank.ru/*analytics$script,redirect=noopjs
     @@||sberbank.ru/*analytics$script
+! video ad counter
+/cast_sender.js$important
 /cnt.js
 /count.js
 ! from RU AdList,modified
 /counter^$important
 /counter.aspx
+.counter.js
 /counter.js$important
 /counter.min.js$important
 /crossdevice.min.js$important
@@ -701,6 +702,7 @@ _pagespeed_beacon?
 /tracker.js$important
 /tracking.min.js
 /utm-tracking.js$important
+/video.counters.js$important
 /wle_tracker.js
 /?wordfence
 ! is in EasyPrivacy
@@ -790,6 +792,7 @@ _pagespeed_beacon?
 ~vsemtoy.ru##[class*="scroll_top"]:not(html):not(body)
 ##[id*="scroll_top"]:not(html):not(body)
 ##[class*="scrolltop"]:not(html):not(body)
+    ##.icons-scrolltop-black
 ##[id*="scrolltop"]:not(html):not(body)
     ! is in Fanboy's
     !##.scrolltop:not(body):not(html)
@@ -932,7 +935,6 @@ _pagespeed_beacon?
 ##.icon-arrow-up
 ##.icon-back-to-top
 ##.icon_moveup
-##.icons-scrolltop-black
 ##.icon-up
 ##.icon-up-small
 ##.in_top
@@ -1045,6 +1047,9 @@ _pagespeed_beacon?
 /scrollTo/*
 ! from Fanboy's
 /scroll-top.
+! is in RU AdList and Fanboy's
+/scrolltopcontrol.
+    !/js/scrolltopcontrol.js
 ! from Fanboy’s Annoyance List
 /scrolltoplugin.
 /scrolltoplugin.min.js$important
@@ -1054,6 +1059,7 @@ _pagespeed_beacon?
 .ui.totop.
 /up.png
 /uparrow.png
+
 
 
 !! cookies
@@ -1105,8 +1111,13 @@ _pagespeed_beacon?
 ###legal-notice
 ##.message-cockies
 ##.personal-data-warning
+!
+/booster_eu_cookie$important
+! is in EasyList and Fanboy’s
+/cookie-banner
 ! from AdGuard
 /cookiebar.
+/cookie_consent.js$important
 ! from AdGuard
 /cookieconsent.$important
 /cookieconsent2/*$important
@@ -1141,6 +1152,8 @@ _cookie_policy_
 /trackingcookiecheck?
 ! is in Fanboy's and EasyList
 /um-gdpr.$important
+! is in EasyList and Fanboy’s
+/zdconsent.
 
 
 
@@ -1694,6 +1707,7 @@ tarif-24.ru##.mh-ticker-bottom
     !clintboessen.blogspot.com##.Image.widget
     !pecintamistis.site##.Image.widget
 ##.mks_author_widget
+###phpbb_alert
 ###posting_rules
 ! shortlink button on qsdb.ru engine forums
 ###qpsContainer
@@ -13773,10 +13787,6 @@ targetemsecure.blob.core.windows.net
 .campaign-tracking.
     !/hr.campaign-tracking.js
 
-! is in RU AdList and Fanboy's
-/scrolltopcontrol.
-!/js/scrolltopcontrol.js
-
 /banner-support.js
 
 ! is in EasyPrivacy
@@ -13794,8 +13804,6 @@ targetemsecure.blob.core.windows.net
 
 ! is in 3 lists
 /wp-slimstat/*
-
-.counter.js
 
 ! is in EasyList
 /ezcl.webp?
@@ -13929,23 +13937,11 @@ _advert/
 ! ad scripts
 ||googleapis.com/pixelperfect/
 
-/booster_eu_cookie$important
-
-/cookie_consent.js$important
-
 /disable_click.min.js$important
 
 /trafficguard.js$important
 
-###phpbb_alert
-
 /promobanner
-
-! is in EasyList and Fanboy’s
-/zdconsent.
-
-! is in EasyList and Fanboy’s
-/cookie-banner
 
 /alert-popup/*
 /sms-alert-popup/*
@@ -13955,8 +13951,6 @@ _advert/
 /user-geo-info
 /platform-detect
 
-##.nav-logo
-
 ! from Fanboy’s
 /sitecatalyst/*
 
@@ -13965,9 +13959,6 @@ _advert/
 /affiliate/*
 
 /footer.png
-
-! from Ru AdList
-^counter.$image,3p
 
 ! is in EasyPrivacy
 /ard.png?
