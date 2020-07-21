@@ -2676,6 +2676,8 @@ askme4tech.com##.sticky-header:style(position:static !important)
 askme4tech.com##stick-in-parent:style(position:static !important)
 ! a banner before comments
 askme4tech.com##.comments-wrapper
+||askme4tech.com/image/gif;base64$image
+askme4tech.com##[href^="//go.altaro.com/vm-backup/"]
 
 askubuntu.com##.js-sticky-leftnav:style(position:static !important)
 ||cdn.sstatic.net/Sites/askubuntu/img/site-background-image.png
@@ -2764,6 +2766,13 @@ autonews.ru##.footer__social-buttons
 autonews.ru##.catalog__scroll-block:style(overflow:visible !important)
 autonews.ru##.catalog__scroll-block:style(margin-top:0px !important; padding-top:0px !important)
 autonews.ru##.catalog__title
+autonews.ru##noindex
+autonews.ru##.header__wrap:style(position:static !important)
+autonews.ru##.l-base__sticky:style(position:static !important)
+||autonews.ru/dfp_page
+
+autoreview.ru##.comment-content:has-text(промокод)
+autoreview.ru##.article-hidding-overlay:style(background-image:none !important)
 
 autotonkosti.ru##.region-header.region
 autotonkosti.ru##.sub-title
@@ -2812,6 +2821,8 @@ avangard-sp.ru##.price-whol:style(font-size: 16px !important;)
 ||forum.avast.com/avt/avatar*.gif$image
 
 avatap.ru$third-party
+
+avepizza.ru###footer-pane:style(position:static !important)
 
 averin.pro$3p
 
@@ -3243,6 +3254,23 @@ location.bloomberg.com
 bloomberg.com##.bb-that
 bbthat.com$important
 gotraffic.net$important
+bloomberg.com##.sticky-container:style(position:static !important)
+! from uBlock filters
+bloomberg.com##+js(raf-if, !paywall-inline-tout)
+! from AdGuard
+bloomberg.com##+js(nofab)
+bloomberg.com##.postr-recirc__index-title
+bloomberg.com##.terminal-tout-v2
+bloomberg.com##.bb-global-footer__ad-choices
+! is in AdGuard
+||bloomberg.com/*/init.js
+! is in Fanboy's
+||bwbx.io^*/mini_player/
+! is in EasyPrivacy
+||bwbx.io^*/javelin/js/abba/abba-$script,domain=bloomberg.com
+||bwbx.io/*/transporter/
+||bwbx.io/*/unsupportedBrowserMessage/
+||bwbx.io/*/push-notification
 
 ! "E-Commerce intelligence for global brands"
 blueboard.io$3p
@@ -3518,6 +3546,26 @@ carguts.ru###colophon
 
 carhack.ru##.g1-logo
 
+carsharik.ru##.p1
+carsharik.ru##.l-sidebar
+carsharik.ru##.header__line
+carsharik.ru##.widget_text:has-text(ВКонтакте)
+
+carsharing.wiki##.header__popular
+carsharing.wiki##.header__nav-1
+carsharing.wiki##.post-rating
+carsharing.wiki##.form-openexpert_plag
+carsharing.wiki##.wrapbody-popup-expert_plag
+carsharing.wiki##.footer
+
+carsharingblog.ru##.code-block:has-text(/бонус|промокод/)
+carsharingblog.ru##.advices
+carsharingblog.ru##.footer-ask
+
+carsharingi.ru###cake-alert
+
+carsharovod.ru##.site-branding
+
 casemir.ru##.StickyHeader__Box:style(position:static !important)
 casemir.ru##.-Sticky.StickyHeader:style(position:static !important)
 
@@ -3653,6 +3701,9 @@ cian.ru##[class^=post-card-info__views]
 cian.ru##[class^=discussed_]
 cian.ru##[class^=redaction_]
 ||cian.ru/newbec/
+cian.ru##.smart_old_style_container
+cian.ru##[class*=--form-container--]
+cian.ru##[class*=--banner--]
 
 ||cifrus.ru/img/mini.png
 cifrus.ru##.img-circle
@@ -4320,6 +4371,12 @@ domamo.ru##.developed
 
 domenolog.ru###f-bottom
 
+dominospizza.ru##.dpe-modal-overlay
+dominospizza.ru##.react-swipeable-view-container
+
+dominospizza.ru##path
+||dominospizza.ru/images/home-sprites$image
+
 dom-knig.com##.sticky-block:style(position:static !important)
 
 dommdom.ru##.head_top
@@ -4559,6 +4616,10 @@ footboom.com##.b-relative-bg
 footboom.com##div[class^="b-betting"]
 ||footboom.net/img/br/
 
+forum-msk.info##.messageText > span
+forum-msk.info###headerProxy
+forum-msk.info##.Tooltip
+
 foxremont.com##.stickytop:style(position:static !important)
 
 gamemag.ru###logo-wrap.logo-wrap
@@ -4609,6 +4670,8 @@ stats.infox.sg
 ||ingmarverheij.com/*/page_body_img.jpg
 ingmarverheij.com###headerbar
 
+inopressa.ru##.alignleft > div:has-text(adfox)
+
 ! is in AdGuard
 ||intimshop.ru^$script,3p
 
@@ -4635,6 +4698,9 @@ kommersant.ru##.network
 kotel.guru###fancybox-loading
 
 kotofoto.ru##.footergsboks
+
+krutimotor.ru##.form-openexpert_plag
+krutimotor.ru##.form-resultexpert_plag
 
 ! is in AdGuard
 ||kurs.com.ru/informer/$3p
@@ -4671,6 +4737,9 @@ martinzwerts.com###l
 maxmaster.ru##.fixed-header,.top-menu-grid:style(position:static !important)
 maxmaster.ru##.advanced-header:style(padding-top:0px !important)
 
+||milanpizza.ru/images/bottom_fill.gif
+||milanpizza.ru/images/bottom_right.gif
+
 moepravoo.ru##.phone-widget
 moepravoo.ru###show_other.show_other
 
@@ -4681,6 +4750,9 @@ mr-build.ru##.linked_box
 mr-build.ru##.widget_text
 mr-build.ru##.cs-expertPlagin-tpl
 mr-build.ru##[href*="tinkoff.ru"]
+
+msendpointmgr.com##.gridlove-logo
+msendpointmgr.com###gridlove-header-sticky.gridlove-header-sticky:style(position:static !important)
 
 @@||echo.msk.ru^$generichide,badfilter
 echo.msk.ru##.mmage
@@ -9153,6 +9225,11 @@ pix-feed.com$inline-script
 pix-feed.com##.html_header_top:style(position:static !important)
 pix-feed.com##.html_header_sticky:style(position:static !important)
 
+pizzapirat.ru##.small-cart:style(position:static !important)
+
+pizzasushiwok.ru##.vert
+pizzasushiwok.ru##.apps
+
 pk-help.com##.header
 pk-help.com##.itemRatingBlock
 pk-help.com##.custom
@@ -12323,6 +12400,10 @@ vedomosti.ru##.the-loader
 vedomosti.ru##.lock
 ! is in Ru AdList
 vedomosti.ru##[id^="unit_"]
+vedomosti.ru##.the-footer__apps
+vedomosti.ru##.article__sticky
+vedomosti.ru##.article-share__icon
+vedomosti.ru##.article-share__btn
 
 vegalab.ru###notices
 vegalab.ru###navbar:style(position:static !important)
@@ -13572,7 +13653,6 @@ xn--80ado1abokv5d.xn--80asehdb##.fixedpanel
 xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 !! todo
-
 /jquery.sticky.js$important
 
 ! don't block - it may be used in non-ad video for previews
@@ -14336,61 +14416,9 @@ production-cmp.isgprivacy.cbsi.com
 ! smile
 ||msdnshared.blob.core.windows.net/media/2017/11/wlEmoticon-smile.png
 
-krutimotor.ru##.form-openexpert_plag
-krutimotor.ru##.form-resultexpert_plag
-
-carsharik.ru##.p1
-carsharik.ru##.l-sidebar
-carsharik.ru##.header__line
-carsharik.ru##.widget_text:has-text(ВКонтакте)
-
-carsharing.wiki##.header__popular
-carsharing.wiki##.header__nav-1
-carsharing.wiki##.post-rating
-carsharing.wiki##.form-openexpert_plag
-carsharing.wiki##.wrapbody-popup-expert_plag
-carsharing.wiki##.footer
-
-carsharingblog.ru##.code-block:has-text(/бонус|промокод/)
-carsharingblog.ru##.advices
-carsharingblog.ru##.footer-ask
-
-carsharovod.ru##.site-branding
-
-carsharingi.ru###cake-alert
-
 !||delimobil.ru/img/video-background.jpg - don't
 delimobil.ru##.page
 delimobil.ru##.triangle
-
-bloomberg.com##.sticky-container:style(position:static !important)
-! from uBlock filters
-bloomberg.com##+js(raf-if, !paywall-inline-tout)
-! from AdGuard
-bloomberg.com##+js(nofab)
-bloomberg.com##.postr-recirc__index-title
-bloomberg.com##.terminal-tout-v2
-bloomberg.com##.bb-global-footer__ad-choices
-! is in AdGuard
-||bloomberg.com/*/init.js
-! is in Fanboy's
-||bwbx.io^*/mini_player/
-! is in EasyPrivacy
-||bwbx.io^*/javelin/js/abba/abba-$script,domain=bloomberg.com
-||bwbx.io/*/transporter/
-||bwbx.io/*/unsupportedBrowserMessage/
-||bwbx.io/*/push-notification
-
-autoreview.ru##.comment-content:has-text(промокод)
-autoreview.ru##.article-hidding-overlay:style(background-image:none !important)
-
-autonews.ru##noindex
-autonews.ru##.header__wrap:style(position:static !important)
-autonews.ru##.l-base__sticky:style(position:static !important)
-||autonews.ru/dfp_page
-
-msendpointmgr.com##.gridlove-logo
-msendpointmgr.com###gridlove-header-sticky.gridlove-header-sticky:style(position:static !important)
 
 sconstantinou.com##.title-area
 sconstantinou.com##.site-inner:style(margin-top:0px !important; padding-top:0px !important)
@@ -14403,16 +14431,6 @@ nice.de##.wrap-right
 nice.de##.slogan
 nice.de###masthead:style(position:static !important)
 
-vedomosti.ru##.the-footer__apps
-vedomosti.ru##.article__sticky
-vedomosti.ru##.article-share__icon
-vedomosti.ru##.article-share__btn
-
-||askme4tech.com/image/gif;base64$image
-askme4tech.com##[href^="//go.altaro.com/vm-backup/"]
-
-inopressa.ru##.alignleft > div:has-text(adfox)
-
 ! "ГАУ МО "АИС "Подмосковье""
 banner.aismo.ru
 !static.banner.aismo.ru
@@ -14420,6 +14438,3 @@ banner.aismo.ru
 ! is in AdGuard
 ##.wpcnt > .wpa
 
-cian.ru##.smart_old_style_container
-cian.ru##[class*=--form-container--]
-cian.ru##[class*=--banner--]
