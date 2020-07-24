@@ -27,6 +27,10 @@
     ! from EasyList
     !##div[id^="ad_rect_"]
 ~cnn.com,~ferra.ru,~indicator.ru##[class^="ad-"]:not(html):not(body):not(article)
+    ! is in EasyList
+    ##.ad-wide
+    ! is in EasyList
+    ##.ad-unit
 ##[id^="ad-"]:not(html):not(body):not(article)
 ~cnn.com,~dirteam.com##[class*="-ad-"]:not(html):not(body):not(article)
     ! from EasyList
@@ -36,7 +40,7 @@
 ~kodi.wiki##[id*="_ad_"]:not(html):not(body):not(article)
 ##[class*="Adblock"]:not(html):not(body):not(article)
 ##[id*="Adblock"]:not(html):not(body):not(article)
-##[class*="adblock"]:not(html):not(body):not(article)
+~microsoft.com##[class*="adblock"]:not(html):not(body):not(article)
 ~fastpic.ru##[id*="adblock"]:not(html):not(body):not(article)
 ##[class^="adMedia"]:not(html):not(body):not(article)
 ##[id^="adMedia"]:not(html):not(body):not(article)
@@ -173,6 +177,8 @@ _728x90.$important
 ! from EasyList
 -auto-ads-
 /avada-scrollspy.js
+/banery/*
+/%21banery/*
 /banner$image
 /banner/*
 /banner.php
@@ -1306,6 +1312,8 @@ _cookie_policy_
 ##.subscribe-button
 ! is in Fanboy's
 ##.subscribe-form
+! is in Fanboy's
+##.subscribe__title
 ##.subscription
     !cosmopolitantv.es##.subscription
     !dixy.ru##.subscription
@@ -1569,7 +1577,7 @@ turboimagehost.com##.modal-footer
 ! noisy gifs and smiles
 ! (some sites use not only *.gif there)
 ##.bbc_emoticon
-~miped.ru##.emoji
+~appadmintools.com,~miped.ru##.emoji
 ##.emoji-item
 /wp-emoji-release.min.js$important
 /biggrin.gif
@@ -7758,6 +7766,11 @@ meddaily.ru##body > table > tbody > tr > td > table > tbody > tr > td > div:nth-
 meddaily.ru##.about > p:nth-of-type(1)
 meddaily.ru##.structure-left > table
 meddaily.ru##[href="javascript://"]
+||meddaily.ru/img/cross.gif
+||meddaily.ru/img/cross_big.gif
+||meddaily.ru/img/cross_green.gif
+||meddaily.ru/img/cross_spiegel.gif
+||meddaily.ru/img/cross_small.gif
 
 media73.ru###main_weather
 media73.ru##.header-fix:style(position:absolute !important)
@@ -13138,6 +13151,8 @@ newhelptech.wordpress.com##.site-branding
 
 okrylov.wordpress.com##.site-branding
 
+paweljarosz.wordpress.com##.header-image
+
 randomtechminutia.wordpress.com##.header-image
 
 ripusudan.files.wordpress.com/2013/09/untitled.png
@@ -13368,8 +13383,9 @@ youtube.com##.ytp-ce-element.ytp-ce-channel.ytp-ce-channel-this.ytp-ce-element-s
 youtube.com##.ytp-ce-element.ytp-ce-video.ytp-ce-element-show
 ! is in AdGuard
 youtube.com##.ytp-paid-content-overlay
-youtube.com##.ytd-popup-container.style-scope.dropdown-content
-youtube.com##.ytd-popup-container
+! don't disable .ytd-popup-container - that is used not only for popups, but for interface buttons too.
+!youtube.com##.ytd-popup-container.style-scope.dropdown-content
+!youtube.com##.ytd-popup-container
 ! is in Fanboy's
 youtube.com##.ytp-title-channel
 ! from uBlock filters
@@ -13387,12 +13403,16 @@ youtube.com##+js(json-prune, adPlacements)
 ##.ytp-share-button
 ! is in EasyList
 ##.ytp-ad-progress-list
+youtube.com###merch-shelf
+! is in Ru AdList and AdGuard
+youtube.com###offer-module
 ! is in AdGuard
 youtube.com##.video-annotations
 ! is in Ru AdList, Fanboy's, AdGuard
 youtube.com##.annotation.iv-branding
 ! from uBlock filters
 youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+! is in EasyList
 
 ypapa.ru##.fake
 ypapa.ru##.yp-consult
@@ -14496,3 +14516,52 @@ ebay.com##div[title="ADVERTISEMENT"]
 ###gf-mrecs-ads
 ! is in FanBoy's
 ###gh-bt
+
+eginnovations.com##.box_header_style
+eginnovations.com##.right-panel-cta
+eginnovations.com##.live-demo-cta
+
+! is in EasyPrivacy
+/optimizelyjs/*
+
+trustradius.com##.vendor-shout
+trustradius.com##.login-modal
+||trustradius.com/*/reg_wall.js
+
+stroy-podskazka.ru##.gallery-image::before
+stroy-podskazka.ru##.gallery-grid__image::before
+
+kreslovdom.com##.fullscreen-bg__video
+||kreslovdom.com/*.mp4
+kreslovdom.com###header
+
+thesystemcenterblog.com##.pvc_stats
+
+systemcenterautomation.com##.textwidget
+systemcenterautomation.com###generate-slideout-menu
+
+||viacode.com/images/mp_diagram/mrbeanwithtext.png
+
+magnet.kiev.ua$3p
+! is in Ru AdList: ||magnet.kiev.ua^$domain=~magnet.kiev.ua
+
+! is in EasyList
+/openx_
+
+/ajax-banner.js
+
+/dfp_mobile.js
+
+ebay.com###gf-norton
+
+netbeez.net##.responsive-banner
+
+garvis.ca##.header
+
+! is in EasyList
+al.com##.revenue-display
+
+||dachnyrai.ru/*/ckro$image
+
+! is in EasyList
+-images/ad-

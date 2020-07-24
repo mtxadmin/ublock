@@ -53,6 +53,7 @@ aliexpress.com##.atwl-btn-wrap
 
 ! footer with seo links
 aliexpress.com##.cross-link
+aliexpress.ru##.cross-link
 
 ! other
 ! from uBlock filters
@@ -110,8 +111,8 @@ local.alipcsec.com
 
 !/alilog/*
 !assets.alicdn.com/g/alilog/
-||alicdn.com/alilog/
-||alicdn.com/*/alilog/
+||alicdn.com/alilog/$important
+||alicdn.com/*/alilog/$important
 
 ! /one-click-ticket/*
 ||alicdn.com/one-click-ticket/*
@@ -120,13 +121,16 @@ local.alipcsec.com
 ||alicdn.com/*/one-click-coupon/*
 
 !/retcode/*
-||alicdn.com/retcode/
-||alicdn.com/*/retcode/
+||alicdn.com/retcode/$important
+||alicdn.com/*/retcode/$important
+    !||alicdn.com/retcode/log/log.js
 
 !/secdev/*
 !assets.alicdn.com/g/secdev/
 ||alicdn.com/secdev/
 ||alicdn.com/*/secdev/
+
+||alicdn.com/*/seo/
 
 ! don't block: "slide to login"
 !||alicdn.com/AWSC/*
@@ -166,6 +170,8 @@ aeu.alicdn.com
 !aeu.alicdn.com/ctl/ctl.js
 ||alicdn.com/*/ctl/ctl.js
 
+! from AdGuard
+aliexpress.ru###newuser-activity-config:remove()
 
 connectkeyword.aliexpress.com
 !/sufei/*
