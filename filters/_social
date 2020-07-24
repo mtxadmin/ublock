@@ -405,6 +405,8 @@ ads.linkedin.com
 ! end of ads.linkedin.com
 ~linkedin.com##[class*="linkedin"]:not(html):not(body):not(article)
 ~linkedin.com##[id*="linkedin"]:not(html):not(body):not(article)
+! is in Fanboy's
+##[title^="Share on LinkedIn"]
 ! is in AdGuard
 ##a[href^="http://www.linkedin.com/shareArticle"]
 ! is in Ru AdList and Fanboy's
@@ -429,6 +431,8 @@ ads.linkedin.com
 ! from Fanboy's
 /img/*linkedin.png$domain=~github.io
 /linkdin.svg
+! is in Fanboy's
+/linkedin-$domain=~linkedin.com
 /linkedin2.png
 
 
@@ -1288,9 +1292,6 @@ livejournal.com##[lj-widget-fb-page]
 
 ! is in Fanboy's
 ##[title^="Share on Twitter"]
-
-! is in Fanboy's
-##[title^="Share on LinkedIn"]
 
 ! is in AdGuard
 ##[title="Share on Reddit"]
