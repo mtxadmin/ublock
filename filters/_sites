@@ -98,15 +98,6 @@ log.adsence.co.kr
     ! id="adpartner_branding"
 ##[class*="paywall"]:not(html):not(body):not(article)
 ##[id*="paywall"]:not(html):not(body):not(article)
-##[class*="Promo"]:not(html):not(body):not(article)
-##[id*="Promo"]:not(html):not(body):not(article)
-! too many exclusions
-!~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru##[class*="promo"]:not(html):not(body):not(article)
-    ##.promo
-    ##.promo__banner
-    ##.promo-bar
-    ##.promo-button
-##[id*="promo"]:not(html):not(body):not(article)
 ##[class*="reklam"]:not(html):not(body):not(article)
 ##[id*="reklam"]:not(html):not(body):not(article)
     ! from EasyList
@@ -173,7 +164,6 @@ _728x90.$important
 ! from EasyList China
 /advpic/*
 /affinity.js
-/app.promo$script
 /async-ads.js$important
 ! from EasyList
 -auto-ads-
@@ -238,11 +228,6 @@ _728x90.$important
 /pixel.php?
 /popunder.js$important
 /profitwell.js$important
-! mts.ru loads not-ad /Promo/ links in lk
-/promo/*$domain=~livejournal.com|~mts.ru
-/promo.js$important
-/promo-banner.js$important
-/promos/*
 /pubads/*$important
 ! from EasyList
 /reklam/*$domain=~reklam.com.tr
@@ -544,6 +529,25 @@ _728x90.$important
 ! disable exclusions from Fanboy's list
 @@/wp-content/*/ads*.js$script,badfilter
 @@/js/ads.js$script,badfilter
+
+
+
+!! promos
+##[class*="Promo"]:not(html):not(body):not(article)
+##[id*="Promo"]:not(html):not(body):not(article)
+! too many exclusions
+!~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru##[class*="promo"]:not(html):not(body):not(article)
+    ##.promo
+    ##.promo__banner
+    ##.promo-bar
+    ##.promo-button
+##[id*="promo"]:not(html):not(body):not(article)
+/app.promo$script
+! mts.ru loads non-ad /Promo/ links in lk
+/promo/*$domain=~livejournal.com|~mts.ru
+/promo.js$important
+/promo-banner.js$important
+/promos/*
 
 
 
