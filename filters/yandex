@@ -268,6 +268,8 @@ zen.yandex.ru##.article-right-suggested-publications-wrapper:style(padding-top:0
 ||yastatic.net/share/$important
 ||yastatic.net/share2/$important
 ||jsdelivr.net/npm/yandex-metrica-watch/$important
+! is in AdGuard
+##a[href^="http://metrika.yandex.ru/stat/"]
 ! disable exception from RUS: AdGuard Russian filter 
 @@/\/yandex.*\/search/$generichide,badfilter
 ##.yashare-auto-init
@@ -403,3 +405,6 @@ yandex.ru##li.serp-item:has([class*=label_type_nyhzo])
 yandex.ru##li.serp-item:has([class*=label_type_aroxf])
 yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
 yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
+
+
+||yandex.ru/bell/api/v1/get-ticker
