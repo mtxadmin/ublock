@@ -545,10 +545,14 @@ _728x90.$important
     ##.promo-button
 ##[id*="promo"]:not(html):not(body):not(article)
 /app.promo$script
+! from Ru AdList
+/load-promo/*
+/promo.
 ! mts.ru loads non-ad /Promo/ links in lk
 /promo/*$domain=~livejournal.com|~mts.ru
 /promo.js$important
 /promo-banner.js$important
+! is in Ru AdList
 /promos/*
 
 
@@ -1122,6 +1126,8 @@ _pagespeed_beacon?
 ~trakt.tv##[id*="privacy"]:not(html):not(body):not(article)
 ! other
 ###__agreementBar
+! is in EasyList and Fanboy's
+##.cm-notification-container
 ##.coockie_down
 ##.coockie-notification-block
 ###easy-cookies-policy-main-wrapper
@@ -6311,6 +6317,9 @@ imdb.com##div.mini-article > .ab_widget
 imfdb.org##.jw-floating-dismissible
 jwplayer.com$domain=imfdb.org
 imfdb.org##div[style*="width:480px;height:480px"]
+! other
+! is in AdGuard
+imfdb.org##div[id$="INSERT_SLOT_ID_HERE"]
 
 ! работает в Firefox, в Opera не работает, так же, как и contains
 imgpay.ru##^script:has-text(Adblock)
@@ -9906,6 +9915,7 @@ rclone.org##div.panel-default:has-text(Share and Enjoy)
 ||rclone.org/img/rclone-120x120.png
 
 rcpmag.com##.RCPMAG
+rcpmag.com##.module:has-text(SPONSORS)
 
 readcomiconline.to##div.rightBox:has-text(Adblock)
 
@@ -11391,6 +11401,9 @@ systavi.com##noindex
 system-administrators.info###mini-nav
 system-administrators.info###access
 system-administrators.info##noindex
+
+system-center.me##.widget_text
+system-center.me##.site-header-cover-image
 
 systemcenter.ninja##.HTML.widget
 systemcenter.ninja##.Label.widget
@@ -13117,6 +13130,7 @@ wordpress.com###site-generator
 wordpress.com##body:style(padding-top: 0 !important;)
 ! from EasyPrivacy
 ||wordpress.com/geo/
+||wordpress.org/plugins/wp-json/plugins/v1/locale-banner
 ||wp.com/wp-content/themes/pub/motion/images/bodybg.jpg$important
 ||wp.com/wp-content/themes/pub/motion/images/blacktrans.png$important
 ||wp.com/wp-content/js/googleplus-sign-in.js$important
@@ -14648,3 +14662,24 @@ oreilly.com##svg
 ohotniki.ru##noindex
 ohotniki.ru##.editions-link
 
+! partner links
+militaryarms.ru##.popular_posts
+militaryarms.ru##[href="http://mirtesen.ru/"]
+! other
+militaryarms.ru##.b-yandex-zen
+militaryarms.ru##.footer-logo__text
+militaryarms.ru##.post-author__content
+
+speedshooter.ru##.ty-scroller-discussion-list
+speedshooter.ru##.ypi-socials
+
+fettershop.ru##.box-subscribe.box
+||fettershop.ru/image/18.png
+||fettershop.ru/image/data/img/fetter2.png
+
+logi.cc##.site-branding
+
+! "Adblocker detected"
+freeccnaworkbook.com$inline-script
+
+mixed.news##.feed_adv
