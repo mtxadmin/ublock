@@ -116,6 +116,16 @@ adblender.ru
 rea-prod.ru
 reactive-agency.ru
 
+! from uBlock filters
+! https://news.ycombinator.com/item?id=10662793
+! Each client site has a specific id: this means the following information
+! becomes available to adblockanalytics.com:
+! - IP address (user)
+! - web site ID (allows to uniquely identify a web site)
+! - Whether a blocker is used
+! - Screen size/browser viewport size
+||adblockanalytics.com$important
+
 adblockdetecter.ru$important
 
 ! is in Ru AdList
@@ -1059,6 +1069,7 @@ adrek.ru$important
 ! from RU AdList
 ||adrek*.ru^$3p
 
+! and ad redirects
 adrelayer.com$important
 /adrelayer$important
 
@@ -1138,6 +1149,8 @@ cybugim4bdzqhwl.ru$important
 
 ads2i.com
 ads4c.com
+
+ads2rtb.com
 
 ads4dough.com
 
@@ -1241,6 +1254,8 @@ adsgarden.com$important
 
 adshadow.net
 
+adshell.net
+
 adshop.ru
 
 ! https://xakep.ru/2019/08/27/click-interception/
@@ -1282,6 +1297,8 @@ adsmarket.com
 
 adsmart.com
 adsmart.net
+
+adsmedia-provider.com
 
 adsmmgp.com$important
 
@@ -1362,6 +1379,8 @@ ikikik.xyz$important
 o333o.com$important
 0i0i0i0.com$important
 vkcdnservice.com$important
+
+adspynet.com
 
 adsremnant.com
 
@@ -2100,28 +2119,6 @@ adzrk.net
 adztracking.com
 
 !! todo
-
-! ad redirects
-adrelayer.com
-
-ads2rtb.com
-
-adshell.net
-
-adsmedia-provider.com
-
-adspynet.com
-
-! from uBlock filters
-! https://news.ycombinator.com/item?id=10662793
-! Each client site has a specific id: this means the following information
-! becomes available to adblockanalytics.com:
-! - IP address (user)
-! - web site ID (allows to uniquely identify a web site)
-! - Whether a blocker is used
-! - Screen size/browser viewport size
-||adblockanalytics.com$important
-
 ! ad scripts
 advear.ru
 
