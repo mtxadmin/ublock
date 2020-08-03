@@ -1141,7 +1141,7 @@ _pagespeed_beacon?
 ##[class*="Cookie"]:not(html):not(body):not(article)
 ##[id*="Cookie"]:not(html):not(body):not(article)
 ! exception is from AdGuard Annoyances filter
-~1plus1.ua##[class*="cookie"]:not(html):not(body):not(article)
+~1plus1.ua,~metro-cc.ru##[class*="cookie"]:not(html):not(body):not(article)
     ! the list is not full, just _some_ rules
     ! is in EasyList, AdGuard and Fanboy's
     ##.acceptcookies
@@ -1149,6 +1149,8 @@ _pagespeed_beacon?
     ##.clearfy-cookie
     ! is in EasyList, AdGuard and Fanboys
     ##.cookie-notice-container
+    ! is in EasyList and Fanboy's
+    ##.header__cookie
     ! is in EasyList and Fanboy’s
     ##.widget_eu_cookie_law_widget
 ##[id*="cookie"]:not(html):not(body):not(article)
