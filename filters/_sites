@@ -885,7 +885,8 @@ _pagespeed_beacon?
     ! is in Fanboy's
     !##.td-scroll-up
 ##[id*="scrollTop"]:not(html):not(body)
-~dobrodel.ru,~dobrodel.mosreg.ru,~wildberries.ru##[class*="_to_top"]:not(html):not(body)
+! Оказывается, глюки с картами связаны именно с этим правилом - на встраиваемых яндекс-картах попапы подпадают под раздачу. Пробуем аккуратно отключить через ymaps (возможно, сработает не везде).
+~dobrodel.ru,~dobrodel.mosreg.ru,~wildberries.ru##[class*="_to_top"]:not(html):not(body):not(ymaps)
 ##[id*="scrollup"]:not(html):not(body)
     ! from Fanboy's
     ###scrollup:not(body)
