@@ -126,6 +126,7 @@ _728x90.$important
 /achecker.js
 /ad.js$important
 /ad1.js$important
+/ad-banners
 ! from Adblock Warning Removal
 /adblock-detect/*
 /adblock.js$important
@@ -148,14 +149,20 @@ _728x90.$important
 ?ads=$domain=~booking.loganair.co.uk
 /adsbygoogle.js$important
 ! from EasyList
+-adserver.
+! from EasyList
 -ads-manager/
 /ads-iframe/*
 /AdsMarketing/*
+! from EasyList
+/adsmin/*
 /adsnative/*
 /adsplacer.
 /adv.js$important
 ! from EasyList
 =advanced-ads-
+! from EasyList
+_advert/
 /advert.js$important
 /advertise.js$important
 /advertise.
@@ -169,6 +176,7 @@ _728x90.$important
 ! from EasyList
 -auto-ads-
 /avada-scrollspy.js
+/baner_$important
 /banery/*
 /%21banery/*
 /banner$image
@@ -178,16 +186,21 @@ _728x90.$important
 /_banner_common.php
 /_banners/*
 /banners/*
+/banner-support.js
 ! is in AdGuard
 /bens/vinos.js?$important
 /bnrs/*
 /bold-upsell-custom.js
 /brand.js
 /bugsnag.min.js
+! from EasyList
+.com/ads-
 /clipboard.min.js$important
 ! from AdGuard
 .com/native.php?b=
 /context_ads/*
+! from EasyList
+-contrib-ads/
 /copyright.js
 /dcmads.js
 /easy-social-share-buttons.min.js
@@ -207,6 +220,8 @@ _728x90.$important
 /HarbergerTaxBanner
 ! is in EasyList
 -images/ad-
+! is in AdGuard and RU AdList
+/images/ad_
 /informer/*$third-party
 /jllikepro/js/buttons.
 /jquery.adsplace
@@ -248,7 +263,8 @@ _728x90.$important
 /sam-pro-images/*
 /scrollspy.js
 /segment.js$important
-/show_ads.js
+/show_ads.js$important
+/show-ads.js$important
 ! disable exclusion from Fanboy’s Enhanced Tracking List
 /showads.$important
 /smart-app-banner/
@@ -265,6 +281,8 @@ _728x90.$important
 /uedata?$important
 ! from EasyPrivacy
 /uutils.fcg?
+! from EasyList
+/vast/ads-
 /video_banner.js
 /webbanners/*
 /widget/*$domain=~hypercomments.com|~hse.ru|~alicdn.com|~domclick.ru
@@ -334,6 +352,8 @@ _728x90.$important
 ! from RU AdList
 ###ad_ph_4
 ###Ads
+! from EasyList
+##.adsBanner
 ##.adsbygoogle
 ##.ad-stickyhero
 ##.adtable
@@ -14136,8 +14156,6 @@ targetemsecure.blob.core.windows.net
 .campaign-tracking.
     !/hr.campaign-tracking.js
 
-/banner-support.js
-
 ! is in EasyPrivacy
 /zaius-min.js
 
@@ -14167,9 +14185,6 @@ redirectme.net
 ! from EasyPrivacy
 /xgemius.
 
-! from EasyList
--adserver.
-
 ! from EasyPrivacy
 /resxclsa.
 
@@ -14197,9 +14212,6 @@ redirectme.net
     !||cdn-library.su/plusonet/lib/$domain=~pluso.net
     !reconomica.ru/plusonet-sl-universal-5.js
 
-! from EasyList
-_advert/
-
 /jquery.adsplacer
 /jquery.iframetracker
 
@@ -14226,11 +14238,6 @@ _advert/
 ! from AdGuard
 /xvideo.js|
 
-! from EasyList
-/vast/ads-
-! from EasyList
-.com/ads-
-
 /jquery-eu-cookie-law-popup.js$important
 
 ! from RU AdList and Fanboy's
@@ -14248,9 +14255,6 @@ _advert/
 
 /stickyfill.min.js
 
-! in in AdGuard and RU AdList
-/images/ad_
-
 /upsell.js
 /upselltracker.js
 
@@ -14261,8 +14265,6 @@ _advert/
 .ru/rtr/6
 .ru/rtr/7
 .ru/rtr/8
-
-/baner_$important
 
 /api/tracker/*
 
@@ -14323,15 +14325,10 @@ _advert/
 
 /easylocation/*
 
-/show-ads.js$important
-
 /doubly.js$important
 
 ! from EasyPrivacy
 /idg_clarity.
-
-! from EasyList
-/adsmin/*
 
 ! from EasyList
 /packages/dfp/*
@@ -14348,9 +14345,6 @@ _advert/
 
 ! from EasyPrivacy
 .js?referer=$important
-
-! from EasyList
-##.adsBanner
 
 ! is in RU AdList and Fanboy’s
 /onlineopinionv5/*$important
@@ -14418,9 +14412,6 @@ _advert/
 
 ! from AdGuard
 .com/1clkn/
-
-! from EasyList
--contrib-ads/
 
 ! from EasyPrivacy
 /snowplow/*$script
@@ -14652,8 +14643,6 @@ rackcdn.com
 
 ! is in AdGuard
 ##.wpcnt > .wpa
-
-/ad-banners
 
 /bg1.svg
 
