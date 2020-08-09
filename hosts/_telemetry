@@ -8,11 +8,23 @@
 ! AS15169 - GOOGLE, US
 app-measurement.com$important
 
+cloudrail.com
+! "From Sensor to Any Cloud". But it was seen in two apps. It seems, developers used this service as telemetry
+!stat-si.cloudrail.com
+
 ! mobile telemetry and ads ("crashlytics.advertising.id")
 crashlytics.com$important
 !+  firebase.crashlytics.com
 !+  outbound.crashlytics.com
 betas.to
+
+! it seems that GO Keyboard and/or GO Launcher are sending user information to dev server
+gomo.com
+goforandroid.com
+
+ivymobile.com
+! blocked by some list in Blokada. Seems, it is telemetry from the Ivymobile bookreader app.
+!api.ivymobile.com
 
 ! Potplayer tracking
 ! https://potplayer.club/net-blocking.html
@@ -47,10 +59,3 @@ samsungacr.com
 
 
 !! todo
-
-! "From Sensor to Any Cloud". But it was seen in two apps. It seems, developers used this service as telemetry
-stat-si.cloudrail.com
-
-! blocked by some list in Blokada. Seems, it is telemetry from the Ivymobile bookreader app.
-api.ivymobile.com
-
