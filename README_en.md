@@ -111,11 +111,11 @@ When setting up, I usually enable maximum number of them. Maybe, except regional
 Also, you can add some other filter lists:
 
 - NoCoin Filter List<br>
-A good list to block mining scripts. Many servers from it added in different lists too, but the author constantly finds something new. For adding, click [this link](abp:subscribe?location=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt). If not added, see above how to add the list manually. The list address:
+A good list to block mining scripts. Many servers from it added in different lists too, but the author constantly finds something new. The list address:
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 
 - Web Annoyances Ultralist<br>
-A list designed to block annoying and generally distracting elements. For adding, click [this link](abp:subscribe?location=https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt). The list address:
+A list designed to block annoying and generally distracting elements. The list address:
 https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
 
 <details>
