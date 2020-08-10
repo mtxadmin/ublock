@@ -68,7 +68,7 @@
 
 ## Установка списка
 
-Далее, добавляем список. Для этого, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). В предложении установки списка нажимаете Ok и всё, готово.
+Далее, добавляем список. Для этого, нажмите на [эту ссылку](abp:subscribe?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). В предложении установки списка нажимаете Ok и всё, готово.
 
 <details>
     <summary>
@@ -113,20 +113,20 @@
 
 - AdGuard Russian filter<br>
 Один из двух ведущих русскоязычных списков. До 2019 года входил в стандартную поставку uBlock Origin.
-Для его установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://filters.adtidy.org/extension/ublock/filters/1.txt).
+Для его установки, нажмите на [эту ссылку](abp:subscribe?location=https://filters.adtidy.org/extension/ublock/filters/1.txt).
 Если не добавляется, смотрите выше, как добавить вручную. Адрес списка:
 https://filters.adtidy.org/extension/ublock/filters/1.txt
 
 - NoCoin Filter List<br>
-Хороший список блокировки майнинговых скриптов. Многие перечисленные в нём сервера добавлены и в другие списки, но автор постоянно находит что-то новое. Для установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt). Адрес списка:
+Хороший список блокировки майнинговых скриптов. Многие перечисленные в нём сервера добавлены и в другие списки, но автор постоянно находит что-то новое. Для установки, нажмите на [эту ссылку](abp:subscribe?location=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt). Адрес списка:
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 
 - RU AdList: Counters<br>
-Небольшой вспомогательный список в дополнение к основному русскоязычному RU AdList - авторы решили выделить счетчики и прочее отдельно. Для установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://easylist-downloads.adblockplus.org/cntblock.txt). Адрес списка:
+Небольшой вспомогательный список в дополнение к основному русскоязычному RU AdList - авторы решили выделить счетчики и прочее отдельно. Для установки, нажмите на [эту ссылку](abp:subscribe?location=https://easylist-downloads.adblockplus.org/cntblock.txt). Адрес списка:
 https://easylist-downloads.adblockplus.org/cntblock.txt
 
 - RU AdList: BitBlock<br>
-Тоже вспомогательный список RU AdList - убирает линеечки, мерцающие картиночки, кнопочки и прочий мусор. Для установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://easylist-downloads.adblockplus.org/bitblock.txt). Адрес списка:
+Тоже вспомогательный список RU AdList - убирает линеечки, мерцающие картиночки, кнопочки и прочий мусор. Для установки, нажмите на [эту ссылку](abp:subscribe?location=https://easylist-downloads.adblockplus.org/bitblock.txt). Адрес списка:
 https://easylist-downloads.adblockplus.org/bitblock.txt
 
 <details>
