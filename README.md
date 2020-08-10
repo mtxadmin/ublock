@@ -118,15 +118,15 @@
 https://filters.adtidy.org/extension/ublock/filters/1.txt
 
 - NoCoin Filter List<br>
-Хороший список блокировки майнинговых скриптов. Многие перечисленные в нём сервера добавлены и в другие списки, но автор постоянно находит что-то новое. Для установки, нажмите на [эту ссылку](https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt). Адрес списка:
+Хороший список блокировки майнинговых скриптов. Многие перечисленные в нём сервера добавлены и в другие списки, но автор постоянно находит что-то новое. Для установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt). Адрес списка:
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 
 - RU AdList: Counters<br>
-Небольшой вспомогательный список в дополнение к основному русскоязычному RU AdList - авторы решили выделить счетчики и прочее отдельно. Для установки, нажмите на [эту ссылку](https://easylist-downloads.adblockplus.org/cntblock.txt). Адрес списка:
+Небольшой вспомогательный список в дополнение к основному русскоязычному RU AdList - авторы решили выделить счетчики и прочее отдельно. Для установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://easylist-downloads.adblockplus.org/cntblock.txt). Адрес списка:
 https://easylist-downloads.adblockplus.org/cntblock.txt
 
 - RU AdList: BitBlock<br>
-Тоже вспомогательный список RU AdList - убирает линеечки, мерцающие картиночки, кнопочки и прочий мусор. Для установки, нажмите на [эту ссылку](https://easylist-downloads.adblockplus.org/bitblock.txt). Адрес списка:
+Тоже вспомогательный список RU AdList - убирает линеечки, мерцающие картиночки, кнопочки и прочий мусор. Для установки, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https://easylist-downloads.adblockplus.org/bitblock.txt). Адрес списка:
 https://easylist-downloads.adblockplus.org/bitblock.txt
 
 <details>
