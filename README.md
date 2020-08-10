@@ -6,6 +6,7 @@
 
 <!-- [Добавить подписку](ubo://subscribe?location=https%3A//raw.githubusercontent.com/mtxadmin/ublock/master/it) -->
 
+<!-- This is by design :-( -->
 <!-- https://github.com/github/markup/issues/933 -->
 
 #### Yet another small uBlock filter list
