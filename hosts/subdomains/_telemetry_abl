@@ -3,6 +3,82 @@
 
 !! domains
 
+! seems to be Google Android telemetry
+! is in Dan Pollock’s hosts file
+! AS15169 - GOOGLE, US
+app-measurement.com
+*.app-measurement.com
+
+cloudrail.com
+*.cloudrail.com
+! "From Sensor to Any Cloud". But it was seen in two apps. It seems, developers used this service as telemetry
+!stat-si.cloudrail.com
+
+! mobile telemetry and ads ("crashlytics.advertising.id")
+crashlytics.com
+*.crashlytics.com
+firebase.crashlytics.com
+*.firebase.crashlytics.com
+outbound.crashlytics.com
+*.outbound.crashlytics.com
+betas.to
+*.betas.to
+
+! it seems that GO Keyboard and/or GO Launcher are sending user information to dev server
+gomo.com
+*.gomo.com
+goforandroid.com
+*.goforandroid.com
+
+ivymobile.com
+*.ivymobile.com
+! blocked by some list in Blokada. Seems, it is telemetry from the Ivymobile bookreader app.
+!api.ivymobile.com
+
+! Potplayer tracking
+! https://potplayer.club/net-blocking.html
+play.kakao.com
+*.play.kakao.com
+get.daum.net
+*.get.daum.net
+track.tiara.daum.net
+*.track.tiara.daum.net
+
+! Ads from Opera mini browser. Which have some default adblock (so!). Blocked by some adlist in Blokada
+operamini-sub.osp.opera.software
+*.operamini-sub.osp.opera.software
+api-a.op-mobile.opera.com
+*.api-a.op-mobile.opera.com
+
+! Blocked by some adlist in Blokada
+! quicinc.com redirects to qualcomm.com
+telemetry.swe.quicinc.com
+*.telemetry.swe.quicinc.com
+
+! https://ammo1.livejournal.com/1102393.html
+! https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/
+! https://platform.samba.tv/products/amplify/sync-retarget/
+! https://habr.com/ru/post/479022/
+samba.tv
+*.samba.tv
+cid.samba.tv
+*.cid.samba.tv
+metrics.samba.tv
+*.metrics.samba.tv
+mtrcs.samba.tv
+*.mtrcs.samba.tv
+recommendations.samba.tv
+*.recommendations.samba.tv
+api.recommendations.samba.tv
+*.api.recommendations.samba.tv
+! end of samba.tv
+
+! https://ammo1.livejournal.com/1102393.html
+! https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/
+! https://habr.com/ru/post/479022/
+samsungacr.com
+*.samsungacr.com
+
 
 
 !! todo
