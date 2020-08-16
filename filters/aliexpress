@@ -80,10 +80,15 @@ aliexpress.com##.hot-products
 aliexpress.com###fd-channel-title
 
 cmap.alibaba.com
-! from EasyPrivacy
+! is in EasyPrivacy
 ||alibaba.com/ts?
+    !||fourier.taobao.com/ts
 ! is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
 offer.alibaba.com
+||tdum.alibaba.com/dss.js
+
+||aliexpress.com/h5/mtop.aliexpress.usertouch
+||aliexpress.com/h5/mtop.global.ug.webpush
 
 
 aliexpress.ru##.product-fix-wrap
@@ -99,6 +104,11 @@ aliexpress.ru##.ui-fixed-panel
 aliexpress.ru###brands-wall-box
 aliexpress.ru##.multi-sidebar-tab
 aliexpress.ru##.rus-mall-img
+
+aliexpress.com##.store-header-bg
+aliexpress.com##.ng-mobile
+aliexpress.com##.logo-base
+aliexpress.com##.hm-left-store
 
 !! unneeded hosts, tested for months
 
@@ -157,6 +167,7 @@ aliexpress.com##.quick-access-title
 ||aliexpress.com/*/statistics/
 ||aliyun.com/scratchCardSlide/
 ||aliyun.com/*/scratchCardSlide/
+||aliyun.com/error
 
 !gpsfront.aliexpress.com/getRecommendingResults.do
 ||alicdn.com/wimg/monitor/*
@@ -199,9 +210,8 @@ us.cobra.aliexpress.com
 yupoo.com$3p
 ! Aliexpress cookie
 aliexpress.ru$3p
-tmall.ru$domain=~aliexpress.ru
+tmall.ru$domain=~aliexpress.ru,important
 taobao.com$3p
-
 
 
 ! Ali related sites stealing cashback
@@ -216,6 +226,7 @@ s.click.aliexpress.com
 
 epn.bz
 ! epn.bz related sites stealing cashback
+epn.bz##.main__warning
 ! is in Peter Lowe’s Ad and tracking server list
 alipromo.com
 ! and their "ABP exclusion list" https://alipromo.com/cdn/abp/adblock.txt
