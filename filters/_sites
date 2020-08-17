@@ -14927,3 +14927,28 @@ supler.ru##.logo_bank
 juniper.net###mcxInvitationModal
 
 ||stat.megapesni.com
+
+howtogeek.com###colophon
+howtogeek.com##.share-heading
+! There is an exclusion in Fanboy's
+!howtogeek.com#@#.share-heading
+! So, workaround..
+howtogeek.com##.social-share > .share-heading
+! is in AdGuard
+howtogeek.com##div[id^="purch_"]
+! is in EasyList
+howtogeek.com##div[id^="purch"]
+! is in Fanboy's
+howtogeek.com##.overlay-wrapper
+! is in EasyPrivacy
+/px/*/blank.gif?
+! is in AdGuard and Fanboy's
+howtogeek.com##.email-overlay
+! is in AdGuard
+howtogeek.com##.email-overlay + .overlay-wrapper
+! is in AdGuard
+howtogeek.com##.social-media-buttons > div.social-wrapper
+! There is an exclusion in Fanboy's
+!howtogeek.com#@#.social-media-buttons
+! is in Fanboy's
+howtogeek.com##.social
