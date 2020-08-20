@@ -15,24 +15,28 @@
 ~cnn.com##[class$="-ad"]:not(html):not(body):not(article)
     ! is in EasyList
     ##.inline-ad
-    ! from EasyList
+    ! is in EasyList
     ##.text-ad
 ##[id$="-ad"]:not(html):not(body):not(article)
 ~opensubtitles.org,~dkc7dev.com##[class$="_ad"]:not(html):not(body):not(article)
 ##[id$="_ad"]:not(html):not(body):not(article)
+    ! is in EasyList
+    ##.text_ad
 ##[class^="AD_"]:not(html):not(body):not(article)
 ##[id^="AD_"]:not(html):not(body):not(article)
 ##[class^="Ad_"]:not(html):not(body):not(article)
 ##[id^="Ad_"]:not(html):not(body):not(article)
 ~360cities.net##[class^="ad_"]:not(html):not(body):not(article)
 ~cnn.com##[id^="ad_"]:not(html):not(body):not(article)
+    ! is in EasyList
+    ##.ad_unit
     ! from EasyList
     !##div[id^="ad_rect_"]
 ~cnn.com,~ferra.ru,~indicator.ru##[class^="ad-"]:not(html):not(body):not(article)
     ! is in EasyList
-    ##.ad-wide
-    ! is in EasyList
     ##.ad-unit
+    ! is in EasyList
+    ##.ad-wide
 ##[id^="ad-"]:not(html):not(body):not(article)
 ~blockada.org,~cnn.com,~dirteam.com##[class*="-ad-"]:not(html):not(body):not(article)
     ! from EasyList
@@ -65,6 +69,8 @@
 ##[class*="Advert"]:not(html):not(body):not(article)
 ##[id*="Advert"]:not(html):not(body):not(article)
 ~radikal.ru##[class*="advert"]:not(html):not(body):not(article)
+    ! is in EasyList
+    ##.advert-block
     ! is in EasyList
     ##.advertisement_above_footer
     ! is in EasyList
@@ -15044,3 +15050,7 @@ auto-gps.ru##.blk_manufactur1
 youla.ru##body:style(padding-bottom:0px !important)
 
 meleon.ru##.r-header-logo__img
+
+! is in EasyList
+##.pub_300x250
+
