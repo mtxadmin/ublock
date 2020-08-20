@@ -13907,6 +13907,9 @@ youtube.com##.annotation.iv-branding
 ! is in EasyList
 ! is in EasyList
 youtube.com##.ytp-ad-progress-list
+! 2020-08: videos sometimes were black. I didn't find the cause, so here is workaround
+youtube.com##.html5-video-player:style(position:static !important; overflow:hidden !important)
+youtube.com##.ytp-iv-video-content:style(position:static !important; overflow:hidden !important)
 
 ypapa.ru##.fake
 ypapa.ru##.yp-consult
