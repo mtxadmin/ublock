@@ -27,20 +27,20 @@ facebook.com###pagelet_video_home_watch_list_rhc
 ! from Web Annoyances Ultralist
 ##.fa-facebook
 ! from Web Annoyances Ultralist
-##.fa-facebook-f
+~belarus2020.org##.fa-facebook-f
 ! is in Ru AdList and Fanboy's
 ##iframe[src*="//www.facebook.com/plugins/like.php?"]
 ! from AdGuard, modified
 ||facebook.com/*/plugins/$domain=~facebook.com|~fb.com,important
 ~facebook.com,~fb.com##[class*="Facebook"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id*="Facebook"]:not(html):not(body):not(article)
-~facebook.com,~fb.com,~techgenix.com##[class*="facebook"]:not(html):not(body):not(article)
+~facebook.com,~fb.com,~belarus2020.org,~techgenix.com##[class*="facebook"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id*="facebook"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[class^="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id^="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[class$="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id$="FB"]:not(html):not(body):not(article)
-~facebook.com,~fb.com,~aliexpress.com,~aliexpress.ru,~alfamiles.com,~doma-karkas.ru##[class^="fb"]:not(html):not(body):not(article)
+~facebook.com,~fb.com,~aliexpress.com,~aliexpress.ru,~alfamiles.com,~belarus2020.org,~doma-karkas.ru##[class^="fb"]:not(html):not(body):not(article)
     ! from Fanboy's
     ##.fb-xfbml-parse-ignore
     ! from AdGuard and Fanboy's
@@ -62,6 +62,9 @@ facebook.com###pagelet_video_home_watch_list_rhc
 ~facebook.com,~fb.com##[id*="FbLike"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[class*="fblike"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id*="fblike"]:not(html):not(body):not(article)
+##.facebook
+~belarus2020.org##.fb
+    !torex.ru##.fb
 ! is in 3 lists
 ##.fb-like
 ! is in AdGuard and Fanboy's
@@ -98,7 +101,7 @@ _facebook_icon.
 
 
 !! VK
-~vk.com##[class$="-vk"]:not(html):not(body):not(article)
+~vk.com,~belarus2020.org##[class$="-vk"]:not(html):not(body):not(article)
 ~vk.com##[id$="-vk"]:not(html):not(body):not(article)
 ! from Fanboy's
 ##a[href^="//vk.com/share.php?"]
@@ -116,7 +119,7 @@ _facebook_icon.
 ##.icon-vk-24
 ##.ico-vkontakte
 ##.icon-vkontakte
-~vk.com##.vk
+~belarus2020.org,~vk.com##.vk
 ! is in AdGuard
 ###vk_group
 ###vk_groups
@@ -182,7 +185,7 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 !! Instagram
 ~instagram.com##[class*="Instagram"]:not(html):not(body):not(article)
 ~instagram.com##[id*="Instagram"]:not(html):not(body):not(article)
-~instagram.com,~livejournal.com##[class*="instagram"]:not(html):not(body):not(article)
+~instagram.com,~belarus2020.org,~livejournal.com##[class*="instagram"]:not(html):not(body):not(article)
 ~instagram.com##[id*="instagram"]:not(html):not(body):not(article)
 ! is in Fanboy's and Ru AdList
 ##img[alt="Instagram"]
@@ -212,9 +215,13 @@ platform.instagram.com/*/embeds.js$third-party,important
 !todo: blocking window
 !ok.ru##.media-layer_close_ovr
 !ok.ru###mtLayer
-##.fa-odnoklassniki
+~belarus2020.org##.fa-odnoklassniki
 ##.icon-odnoklassniki
 ##.like-od
+~belarus2020.org##.ok
+    !argumenti.ru##.ok
+    !splav.ru##.ok
+    !torex.ru##.ok
 ! don't block, it needed by embedded video player
 !ok.ru/res/js/
 ok.ru/dk?cmd=videoStatNew
@@ -255,7 +262,7 @@ syndication.twitter.com$3p
 ##a[href^="https://twitter.com/share?"]
 ! is in AdGuard
 ##a[onclick^="window.open('https://twitter.com/share"]
-##.fa-twitter
+~belarus2020.org##.fa-twitter
 ##.fa-twitter-square
 ! from Fanboy's
 ##img[alt="Twitter"]
@@ -267,7 +274,7 @@ syndication.twitter.com$third-party,important
 ~twitter.com##[id*="tweet"]:not(html):not(body):not(article)
 ~twitter.com##[class*="Twitter"]:not(html):not(body):not(article)
 ~twitter.com##[id*="Twitter"]:not(html):not(body):not(article)
-~twitter.com,~livejournal.com##[class*="twitter"]:not(html):not(body):not(article)
+~twitter.com,~belarus2020.org,~livejournal.com##[class*="twitter"]:not(html):not(body):not(article)
 ~twitter.com##[id*="twitter"]:not(html):not(body):not(article)
     !##.icon-twitter-circle
     ! is in 3 lists
@@ -797,13 +804,6 @@ smartlock.google.com$3p
 ! is in Ru AdList and Fanboy's
 ##.et_pb_social_media_follow
 ! is in Ru AdList and Fanboy's
-##.facebook
-##.fb
-    !torex.ru##.fb
-##.ok
-    !argumenti.ru##.ok
-    !splav.ru##.ok
-    !torex.ru##.ok
 ##.td-post-sharing
 ##.td-post-sharing-bottom
 ##.td-post-sharing-visible
@@ -812,7 +812,7 @@ smartlock.google.com$3p
 ##.td-icon-youtube
 ##.td-social-icon-wrap
 ###td_social_sharing_article_top
-##.tw
+~belarus2020.org##.tw
     !argumenti.ru##.tw
     !torex.ru##.tw
     !vesti.ru##.tw
@@ -1058,7 +1058,7 @@ livejournal.com##[lj-widget-fb-page]
 ##.social-icon-wrap
 ! from Fanboy's
 ##.social-icons-wrapper
-##.tg
+~belarus2020.org##.tg
 ##.tips
 ###top-share
 ###uLogin
