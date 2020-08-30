@@ -96,33 +96,34 @@ informer.yandex.ru$important,third-party
 
 ! metrika yandex hosts mostly from https://hosts-file.net/ad_servers.txt
 ! disable any whitelists
-||metrica.yandex.*$third-party,important
-    ||metrica.yandex.by$third-party,important
-    ||metrica.yandex.com$third-party,important
-    ||metrica.yandex.com.tr$third-party,important
-    ||metrica.yandex.com.ua$third-party,important
-    ||metrica.yandex.kz$third-party,important
-    ||metrica.yandex.net$third-party,important
-    ||metrica.yandex.ru$third-party,important
-    ||metrica.yandex.ua$third-party,important
-||metrika.yandex.$third-party,important    
-    ||metrika.yandex.by$third-party,important
-    ||metrika.yandex.com$third-party,important
-    ||metrika.yandex.com.tr$third-party,important
-    ||metrika.yandex.com.ua$third-party,important
-    ||metrika.yandex.kz$third-party,important
-    ||metrika.yandex.net$third-party,important
-    ||metrika.yandex.ru$third-party,important
-    ||metrika.yandex.ua$third-party,important
-||web-metrica.yandex.*$third-party,important
-    ||web-metrica.yandex.by$third-party,important
-    ||web-metrica.yandex.com$third-party,important
-    ||web-metrica.yandex.com.tr$third-party,important
-    ||web-metrica.yandex.com.ua$third-party,important
-    ||web-metrica.yandex.kz$third-party,important
-    ||web-metrica.yandex.net$third-party,important
-    ||web-metrica.yandex.ru$third-party,important
-    ||web-metrica.yandex.ua$third-party,important
+! Don't know, make these hosts $third-party or not. 
+||metrica.yandex.*$important
+    ||metrica.yandex.by$important
+    ||metrica.yandex.com$important
+    ||metrica.yandex.com.tr$important
+    ||metrica.yandex.com.ua$important
+    ||metrica.yandex.kz$important
+    ||metrica.yandex.net$important
+    ||metrica.yandex.ru$important
+    ||metrica.yandex.ua$important
+||metrika.yandex.$important    
+    ||metrika.yandex.by$important
+    ||metrika.yandex.com$important
+    ||metrika.yandex.com.tr$important
+    ||metrika.yandex.com.ua$important
+    ||metrika.yandex.kz$important
+    ||metrika.yandex.net$important
+    ||metrika.yandex.ru$important
+    ||metrika.yandex.ua$important
+||web-metrica.yandex.*$important
+    ||web-metrica.yandex.by$important
+    ||web-metrica.yandex.com$important
+    ||web-metrica.yandex.com.tr$important
+    ||web-metrica.yandex.com.ua$important
+    ||web-metrica.yandex.kz$important
+    ||web-metrica.yandex.net$important
+    ||web-metrica.yandex.ru$important
+    ||web-metrica.yandex.ua$important
 ! is in AdGuard
 ##a[href^="https://metrika.yandex.ru/stat/"]
 
@@ -148,8 +149,8 @@ jstracer.yandex.ru$important
 !strm.yandex.ru$important --video, don't block
 
 ! "updater"
-browser-updater.yandex.net$third-party,important
-||yastatic.net/browser-updater/$third-party,important
+browser-updater.yandex.net$important
+||yastatic.net/browser-updater/$important
 
 ! other
 kiks.yandex.ru
