@@ -1,5 +1,17 @@
 ﻿! Salesforce domains AS14340
 
+
+! 3p: https://github.com/mtxadmin/ublock/issues/8
+surveymonkey.com$3p
+surveymonkey.co.uk$3p
+surveymonkey.de$3p
+surveymonkey.ru$3p
+research.net$3p
+smassets.net$domain=~surveymonkey.com|~surveymonkey.co.uk|~surveymonkey.de|~surveymonkey.ru|~research.net
+! is in EasyPrivacy
+||smassets.net/assets/anonweb/anonweb-click-$script
+
+
 !! domains
 
 2dehands.be
@@ -745,6 +757,11 @@ granicus.com
 !+  www2.granicus.com
 ! end of granicus.com
 
+! ad redirects
+! salesforce
+! "Sales Engagement Platform for Revenue Teams"
+groove.co
+
 hitachivantara.com
 !+  benefits.hitachivantara.com
 !+  chatbot.hitachivantara.com
@@ -807,6 +824,9 @@ medallia.com
 !+          us.cdn.survey.medallia.com
 !+  zendesk.medallia.com
 ! end of medallia.com
+
+! "Salesforce-native customer engagement toolset"
+revenuegrid.com
 
 salesforce.com$third-party,important
 !+  apex.salesforce.com
@@ -929,31 +949,13 @@ siteforce.com
 !+      cdn.t.siteforce.com
 ! end of siteforce.com
 
-links.ssa.gov/track
+smartcloudconnect.io
 
-! 3p: https://github.com/mtxadmin/ublock/issues/8
-surveymonkey.com$3p
-surveymonkey.co.uk$3p
-surveymonkey.de$3p
-surveymonkey.ru$3p
-research.net$3p
-smassets.net$domain=~surveymonkey.com|~surveymonkey.co.uk|~surveymonkey.de|~surveymonkey.ru|~research.net
-! is in EasyPrivacy
-||smassets.net/assets/anonweb/anonweb-click-$script
+links.ssa.gov/track
 
 ! formassembly salesforce
 tfaforms.net
 
-!! todo
-
-smartcloudconnect.io
 
 veloxy.io
-
-! ad redirects
-! salesforce
-! "Sales Engagement Platform for Revenue Teams"
-groove.co
-
-! "Salesforce-native customer engagement toolset"
-revenuegrid.com
+!! todo
