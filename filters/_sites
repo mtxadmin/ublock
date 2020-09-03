@@ -54,6 +54,12 @@
 ##[id*="-admedia"]:not(html):not(body):not(article)
 ##[class*="adriver"]:not(html):not(body):not(article)
 ##[id*="adriver"]:not(html):not(body):not(article)
+##[class^="adrotate"]:not(html):not(body):not(article)
+##[id^="adrotate"]:not(html):not(body):not(article)
+    ! is in EasyList
+    ##div[id^="adrotate_widgets-"]
+    ! is in EasyList
+    ##.adrotate_widgets
 ~obi.ru##[class^="ads"]:not(html):not(body):not(article)
 ~e-du.ru##[id^="ads"]:not(html):not(body):not(article)
     ! is in EasyList
@@ -119,195 +125,6 @@
 ##[class^="WNAd"]:not(html):not(body):not(article)
 ##[id^="WNAd"]:not(html):not(body):not(article)
 ! other
-! from Fanboy's. Matches http://www.zlfgedpuxrbpgm.com/xtzj.js and http://www.zckphynp.com/d.js
-/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script
-/-160x600-$important
-/_160x600.$important
-! from EasyList, modified
-_468x60.$important
-/.468x60_$important
-/.468x80.$important
-/.468x80-$important
-/_728x90-$important
-/728x90.$important
-_728x90.$important
-/achecker.js
-/ad.js$important
-/ad1.js$important
-/ad-banners
-! from Adblock Warning Removal
-/adblock-detect/*
-/adblock.js$important
-! from EasyList China
-/adblockTester.js
-! from EasyList China
-/adflash/*
-/adframe.js$important
-/adframes/*$important
-/adframetop$important
-! from EasyList
-/adloaderplus?
-! from Ru AdList
-/adlogger_tracker.js?
-! from EasyList China
-/adpuba/*
-/ads.gif$important
-/ads.js$important
-! from EasyList
-?ads=$domain=~booking.loganair.co.uk
-/adsbygoogle.js$important
-! from EasyList
--adserver.
-! from EasyList
--ads-manager/
-/ads-iframe/*
-/AdsMarketing/*
-! from EasyList
-/adsmin/*
-/adsnative/*
-/adsplacer.
-/adunit.js$important
-/adv.js$important
-! from EasyList
-=advanced-ads-
-! is in EasyList
-/advanced-ads-$domain=~wordpress.org
-! from EasyList
-_advert/
-/advert.js$important
-/advertise.js$important
-/advertise.
-/advertisement.js$xmlhttprequest,important
-/advertisement.js$important
-! from EasyList China
-/advpic/*
-/affinity.js
-/ajax-banner.js
-/async-ads.js$important
-! from EasyList
--auto-ads-
-/avada-scrollspy.js
-/ban/*
-/baner_$important
-/banery/*
-/%21banery/*
-/banner$image
-/banner/*
-/banner.php
-/bannerBackgroundImage
-/_banner_common.php
-/_banners/*
-/banners/*
-/banner-support.js
-! is in AdGuard
-/bens/vinos.js?$important
-/bnrs/*
-/bold-upsell-custom.js
-/brand.js
-/bugsnag.min.js
-! from EasyList
-.com/ads-
-/clipboard.min.js$important
-! from AdGuard
-.com/native.php?b=
-/context_ads/*
-! from EasyList
--contrib-ads/
-/copyright.js
-/dcmads.js
-/easy-social-share-buttons.min.js
-/fixads.js
-/fuckadblock/*$important
-/fuckadblock.js$important
-/ga.js
-/gampad/*
-!/gampad/ad
-!/gampad/ads
-!/gampad/adx
-!/gampad/google_ads.js
-! from EasyList
-##.googads
-/googlead.js$important
-/gpt/pubads_impl_$script
-/HarbergerTaxBanner
-! is in EasyList
--images/ad-
-! is in AdGuard and RU AdList
-/images/ad_
-/informer/*$third-party
-/jllikepro/js/buttons.
-/jquery.adsplace
-/jquery.iframetracker
-/landing/*$domain=~gosuslugi.ru|~etutorium.com|~univerpp.ru|~univer-pp.ru|~walletone.com
-/mads/gma
-/main-banner/*
-! from EasyPrivacy
-/matomo.js
-/mchat/*
-/metrika/*$important
-/metrika.js$important
-/mobile-banner/*
-/newrelic-browser.js
-/openx/*
-/openxtag.js$important
-/pagead/*
-/pagead2/*
-! is in EasyPrivacy
-/pageview.js
-/pcs/click^
-/ping/*$xmlhttprequest
-! in EasyPrivacy and AdGuard
-/pixel.php?
-/popunder.js$important
-/profitwell.js$important
-/pubads/*$important
-! from EasyList
-/reklam/*$domain=~reklam.com.tr
-! is in EasyList
-/renderbanner.do?
-/retargeting/*
-/rotator.min.js$important
-! from AdGuard
-/ru-n4p/*.js$important
-! from EasyList
-/sam-pro-free/*
-! from EasyList
-/sam-pro-images/*
-/scrollspy.js
-/segment.js$important
-/show_ads.js$important
-/show-ads.js$important
-! disable exclusion from Fanboy’s Enhanced Tracking List
-/showads.$important
-/smart-app-banner/
-/smart-app-banner.js
-/smartBanner/*
-/smartbanner.js
-/smartbanner.min.js$important
-! is in EasyList
-/stickyads.
-/theia-sticky-sidebar/*
-/theia-sticky-sidebar.js
-/test-widget/*
-! from AdGuard Tracking Protection and EasyPrivacy, modified
-/uedata?$important
-/upsell.js
-/upsell_hero$important
-/upselltracker.js
-! from EasyPrivacy
-/uutils.fcg?
-! from EasyList
-/vast/ads-
-/video_banner.js
-/webbanners/*
-/widget/*$domain=~hypercomments.com|~hse.ru|~alicdn.com|~domclick.ru
-! from EasyList
-/www/delivery/*
-/xavi4.php
-! from EasyList China, modified
-/youxia.js
-! from EasyList China, modified
-/zuoxia.js
 ##[href="javascript:bookmark()"]
 ##[href^="javascript:AddComplaint"]
 ###abAlert
@@ -485,6 +302,8 @@ _advert/
 ##.full-width-narrow-banner
 ###goodbye-box
 ###goodbye-form
+! from EasyList
+##.googads
 ###headerad
 ##.header_banner
 ##.header-banner
@@ -572,6 +391,195 @@ _advert/
 ##.wrap-banner
 ! is in Ru AdList
 ##.ya-direct
+!
+! from Fanboy's. Matches http://www.zlfgedpuxrbpgm.com/xtzj.js and http://www.zckphynp.com/d.js
+/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script
+/-160x600-$important
+/_160x600.$important
+! from EasyList, modified
+_468x60.$important
+/.468x60_$important
+/.468x80.$important
+/.468x80-$important
+/_728x90-$important
+/728x90.$important
+_728x90.$important
+/achecker.js
+/ad.js$important
+/ad1.js$important
+/ad-banners
+! from Adblock Warning Removal
+/adblock-detect/*
+/adblock.js$important
+! from EasyList China
+/adblockTester.js
+! from EasyList China
+/adflash/*
+/adframe.js$important
+/adframes/*$important
+/adframetop$important
+! from EasyList
+/adloaderplus?
+! from Ru AdList
+/adlogger_tracker.js?
+! from EasyList China
+/adpuba/*
+/ads.gif$important
+/ads.js$important
+! from EasyList
+?ads=$domain=~booking.loganair.co.uk
+/adsbygoogle.js$important
+! from EasyList
+-adserver.
+! from EasyList
+-ads-manager/
+/ads-iframe/*
+/AdsMarketing/*
+! from EasyList
+/adsmin/*
+/adsnative/*
+/adsplacer.
+/adunit.js$important
+/adv.js$important
+! from EasyList
+=advanced-ads-
+! is in EasyList
+/advanced-ads-$domain=~wordpress.org
+! from EasyList
+_advert/
+/advert.js$important
+/advertise.js$important
+/advertise.
+/advertisement.js$xmlhttprequest,important
+/advertisement.js$important
+! from EasyList China
+/advpic/*
+/affinity.js
+/ajax-banner.js
+/async-ads.js$important
+! from EasyList
+-auto-ads-
+/avada-scrollspy.js
+/ban/*
+/baner_$important
+/banery/*
+/%21banery/*
+/banner$image
+/banner/*
+/banner.php
+/bannerBackgroundImage
+/_banner_common.php
+/_banners/*
+/banners/*
+/banner-support.js
+! is in AdGuard
+/bens/vinos.js?$important
+/bnrs/*
+/bold-upsell-custom.js
+/brand.js
+/bugsnag.min.js
+! from EasyList
+.com/ads-
+/clipboard.min.js$important
+! from AdGuard
+.com/native.php?b=
+/context_ads/*
+! from EasyList
+-contrib-ads/
+/copyright.js
+/dcmads.js
+/easy-social-share-buttons.min.js
+/fixads.js
+/fuckadblock/*$important
+/fuckadblock.js$important
+/ga.js
+/gampad/*
+!/gampad/ad
+!/gampad/ads
+!/gampad/adx
+!/gampad/google_ads.js
+/googlead.js$important
+/gpt/pubads_impl_$script
+/HarbergerTaxBanner
+! is in EasyList
+-images/ad-
+! is in AdGuard and RU AdList
+/images/ad_
+/informer/*$third-party
+/jllikepro/js/buttons.
+/jquery.adsplace
+/jquery.iframetracker
+/landing/*$domain=~gosuslugi.ru|~etutorium.com|~univerpp.ru|~univer-pp.ru|~walletone.com
+/mads/gma
+/main-banner/*
+! from EasyPrivacy
+/matomo.js
+/mchat/*
+/metrika/*$important
+/metrika.js$important
+/mobile-banner/*
+/newrelic-browser.js
+/openx/*
+/openxtag.js$important
+/pagead/*
+/pagead2/*
+! is in EasyPrivacy
+/pageview.js
+/pcs/click^
+/ping/*$xmlhttprequest
+! in EasyPrivacy and AdGuard
+/pixel.php?
+/popunder.js$important
+/profitwell.js$important
+/pubads/*$important
+! from EasyList
+/reklam/*$domain=~reklam.com.tr
+! is in EasyList
+/renderbanner.do?
+/retargeting/*
+/rotator.min.js$important
+! from AdGuard
+/ru-n4p/*.js$important
+! from EasyList
+/sam-pro-free/*
+! from EasyList
+/sam-pro-images/*
+/scrollspy.js
+/segment.js$important
+/show_ads.js$important
+/show-ads.js$important
+! disable exclusion from Fanboy’s Enhanced Tracking List
+/showads.$important
+/smart-app-banner/
+/smart-app-banner.js
+/smartBanner/*
+/smartbanner.js
+/smartbanner.min.js$important
+! is in EasyList
+/stickyads.
+/theia-sticky-sidebar/*
+/theia-sticky-sidebar.js
+/test-widget/*
+! from AdGuard Tracking Protection and EasyPrivacy, modified
+/uedata?$important
+/upsell.js
+/upsell_hero$important
+/upselltracker.js
+! from EasyPrivacy
+/uutils.fcg?
+! from EasyList
+/vast/ads-
+/video_banner.js
+/webbanners/*
+/widget/*$domain=~hypercomments.com|~hse.ru|~alicdn.com|~domclick.ru
+! from EasyList
+/www/delivery/*
+/xavi4.php
+! from EasyList China, modified
+/youxia.js
+! from EasyList China, modified
+/zuoxia.js
+
 ! is in RU AdList, EasyPrivacy, AdGuard
 /bitrix/spread.php?$important
 ! is in EasyPrivacy
@@ -15196,11 +15204,6 @@ rackcdn.com
 
 ! is in EasyPrivacy
 /stats.php?*http
-
-! is in EasyList
-##.adrotate_widgets
-! is in EasyList
-##div[id^="adrotate_widgets-"]
 
 ! is in EasyList
 ##.pub_300x250
