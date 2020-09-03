@@ -109,6 +109,8 @@ _facebook_icon.
 /img/facebook-
 ! is in Fanboy's
 /img/fb.
+! from Fanboy’s
+_social_fb.
 ! is in Anti-Facebook
 ||static.ak.fbcdn.net^$3p,domain=~facebook.com
 ! is in Fanboy's
@@ -341,6 +343,10 @@ syndication.twitter.com$third-party,important
 ##.ico-tw
 ##.ico-twttr
 ##.like-tw
+~belarus2020.org##.tw
+    !argumenti.ru##.tw
+    !torex.ru##.tw
+    !vesti.ru##.tw
 ! is in Fanboy's and Ru AdList
 /assets/twitter-$image
 ! from Fanboy's and Ru AdList
@@ -500,6 +506,19 @@ ads.linkedin.com
 ! is in Fanboy's
 /linkedin-$domain=~linkedin.com
 /linkedin2.png
+
+
+
+!! Livejournal
+! also see many cosmetic rules for lj in _sites
+! from RU AdList
+livejournal.com##[lj-widget-fb-page]
+! from RU AdList
+/livejournal.png$domain=~livejournal.com
+! from RU AdList
+~livejournal.com##a[href^="http://www.livejournal.com/update.bml?subject="]
+! from RU AdList, modified
+livejournal.com##a[href*="offer"][target="_blank"]
 
 
 
@@ -784,10 +803,16 @@ smartlock.google.com$3p
 ##.swf-social-site
 ! is in Fanboy's and AdGuard
 ##.td_block_social_counter
+! is in Ru AdList and Fanboy's
+##.td-post-sharing
+##.td-post-sharing-bottom
 ! is in Fanboy's
 ##.td-post-sharing-top
+##.td-post-sharing-visible
+##.td-social-icon-wrap
 ! is in Fanboy's
 ##.td-social-list
+###td_social_sharing_article_top
 ! is in Fanboy's
 ##.td_social_type
 ###top-share
@@ -796,9 +821,30 @@ smartlock.google.com$3p
 /icon-share.
 ! is in Fanboy's and Ru AdList
 /img/*/social.
+! from Fanboy's
+/share.png
+/share.js
+! is in Ru AdList and Fanboy's
+/share42/*
+/share42.js
+! from Fanboy's
+/sendtofriend.
+/soc/*$image
+/social/*$image
+! from Fanboy's
+/social.png
 ! is in Fanboy's
 /socialbutton.
+! from EasyList, modified
+/social-likes.
+/social-likes.min.js$important,domain=~sk-desantnik.ru
+! is in Fanboy’s, RU AdList
+/social1.
 /social-logos/*$important
+/social_plugins/*
+/social-proof/*
+/social-proof-
+/social_shares-min.js
 ! is in Fanboy's and RU AdList
 /ya-share.$important
 
@@ -1017,17 +1063,6 @@ smartlock.google.com$3p
 ! other
 ! is in Ru AdList and Fanboy's
 ##.et_pb_social_media_follow
-! is in Ru AdList and Fanboy's
-##.td-post-sharing
-##.td-post-sharing-bottom
-##.td-post-sharing-visible
-##.td-social-icon-wrap
-###td_social_sharing_article_top
-~belarus2020.org##.tw
-    !argumenti.ru##.tw
-    !torex.ru##.tw
-    !vesti.ru##.tw
-! to social_auth
 ! from Fanboy's
 /follow-us-on-
 /ig.svg
@@ -1039,37 +1074,12 @@ smartlock.google.com$3p
 /img/vib.jpg
 /icon_ya.
 /img/soc/*
-! from RU AdList
-/livejournal.png$domain=~livejournal.com
 ! from Fanboy's
 /reddit.png
-! is in Ru AdList and Fanboy's
-/share42/*
-/share42.js
-/soc/*$image
-/social/*$image
-! from Fanboy's
-/social.png
-! is in Fanboy’s, RU AdList
-/social1.
-! from EasyList, modified
-/social-likes.
-/social-likes.min.js$important,domain=~sk-desantnik.ru
-/social_plugins/*
-/social_shares-min.js
-! from Fanboy's lists
-/sendtofriend.
-/share.js
-! from Fanboy's
-/share.png
 ! from Fanboy's
 /sharedaddy/*$image
 /sharedaddy/*$script,important
 /skype.svg
-! from Fanboy’s
-_social_fb.
-/social-proof/*
-/social-proof-
 /usocial/*
 /viber.png
 /viber.svg
@@ -1095,10 +1105,7 @@ _social_fb.
 ##a[title^="Share on Pinterest"]
 ! from Fanboy's
 ##a[title="Share on Twitter"]
-! from RU AdList
-~livejournal.com##a[href^="http://www.livejournal.com/update.bml?subject="]
-! from RU AdList
-livejournal.com##[lj-widget-fb-page]
+
 ##.b-soc_icons
 ##.button-like
 ##.fodicon-tumblr
