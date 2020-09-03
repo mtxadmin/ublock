@@ -300,6 +300,10 @@
 ###foxclocks-statusbar-spacer
 ##.free-consult
 ##.full-width-narrow-banner
+! is in EasyList
+###gf-mrecs-ads
+! is in FanBoy's
+###gh-bt
 ###goodbye-box
 ###goodbye-form
 ! from EasyList
@@ -354,6 +358,8 @@
 ##.photo__action
 ! from EasyList
 ##.plainAd
+! is in EasyList
+##.pub_300x250
 ! from EasyList
 ##.pub_300x250m
 ! from EasyList
@@ -388,12 +394,20 @@
 ##.ui-banner-slider-container
 ##.videoAnnouncement
 ##.vkredit
+! is in AdGuard
+##.wpcnt > .wpa
 ##.wrap-banner
 ! is in Ru AdList
 ##.ya-direct
 !
 ! from Fanboy's. Matches http://www.zlfgedpuxrbpgm.com/xtzj.js and http://www.zckphynp.com/d.js
 /:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script
+! ad scripts
+! from AdGuard
+.ru/proxy_*.php?init_form=$script
+! ad scripts
+! is in EasyPrivacy
+/?dm=*&blogid=$script,domain=~wordpress.org
 /-160x600-$important
 /_160x600.$important
 ! from EasyList, modified
@@ -460,6 +474,9 @@ _advert/
 ! from EasyList
 -auto-ads-
 /avada-scrollspy.js
+! is in AdGuard and EasyPrivacy
+/b/ss/*/js-
+	! dell.com/b/ss/dellglobalonline/1/JS-
 /ban/*
 /baner_$important
 /banery/*
@@ -488,6 +505,7 @@ _advert/
 -contrib-ads/
 /copyright.js
 /dcmads.js
+/dfp_mobile.js
 /easy-social-share-buttons.min.js
 /fixads.js
 /fuckadblock/*$important
@@ -575,6 +593,8 @@ _advert/
 ! from EasyList
 /www/delivery/*
 /xavi4.php
+! is in AdGuard and EasyPrivacy
+/xtcore.js
 ! from EasyList China, modified
 /youxia.js
 ! from EasyList China, modified
@@ -15161,50 +15181,13 @@ rackcdn.com
 ! is in EasyPrivacy
 -track-inview.
 
-! is in Ru AdList (yes, almost parallel - see vedomosti.ru)
-##[id^="unit_"] > a[href*="://smi2.ru"]
-
-! is in AdGuard and EasyPrivacy
-/xtcore.js
-
 ! is in EasyList
 ://promo.$3p
 
 ! smile
 ||msdnshared.blob.core.windows.net/media/2017/11/wlEmoticon-smile.png
 
-! is in AdGuard
-##.wpcnt > .wpa
-
 /bg1.svg
-
-! is in EasyList
-###gf-mrecs-ads
-! is in FanBoy's
-###gh-bt
-
-/dfp_mobile.js
-
-! ad scripts
-! from AdGuard
-.ru/proxy_*.php?init_form=$script
-
-/adblockdetector.js$important
-
-! is in AdGuard and EasyPrivacy
-/b/ss/*/js-
-	! dell.com/b/ss/dellglobalonline/1/JS-
-
-! ad scripts
-! is in EasyPrivacy
-/?dm=*&blogid=$script,domain=~wordpress.org
-
-! is in 3 lists
-###cliSettingsPopup
 
 ! is in EasyPrivacy
 /stats.php?*http
-
-! is in EasyList
-##.pub_300x250
-
