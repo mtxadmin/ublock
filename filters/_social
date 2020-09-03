@@ -13,6 +13,14 @@ facebook.com###mobile_login_bar
 ##a[href^="http://www.facebook.com/sharer.php"]
 ! is in AdGuard
 ##a[href^="http://www.facebook.com/sharer.php?"]
+! from AdGuard and Fanboy's
+##a[href^="https://www.facebook.com/sharer/sharer.php"]
+! from AdGuard
+##a[href^="https://www.facebook.com/sharer.php"]
+! from Fanboy's
+##a[href^="https://www.facebook.com/sharer.php?"]
+! from Fanboy's
+##a[href*="facebook.com/sharer/sharer.php?"]
 ! is in RU AdList
 ##a[onclick*="facebook.com/sharer.php?"]
 ! is in AdGuard
@@ -71,6 +79,9 @@ facebook.com###pagelet_video_home_watch_list_rhc
 ##.fb-like-box
 ! from Fanboy's
 ##img[alt="Facebook"]
+##.td-icon-facebook
+! is in Fanboy's and Ru AdList
+/assets/facebook-$image
 ! from Fanboy's and Ru AdList
 _facebook_icon.
 /facebook.gif
@@ -85,10 +96,14 @@ _facebook_icon.
 /fb.svg
 ! from Fanboy's
 /fb-logo.
+! is in Fanboy's
+/footer/facebook.
 /icon-facebook.
 /icon_fb.
 ! from Fanboy's
 /images/facebook
+! is in Fanboy's
+/images/fb-
 ! from Fanboy's
 /img/facebook-
 ! is in Fanboy's
@@ -115,14 +130,18 @@ _facebook_icon.
 ##div[id^="vk_group"]
 ! from AdGuard
 ##div[id^="vk_like"]
+! is in Fanboy's
+##.icon-vk
 ##.icon-VK
 ##.icon-vk-24
 ##.ico-vkontakte
 ##.icon-vkontakte
 ~belarus2020.org,~vk.com##.vk
+!##[class$="-vk"]
 ! is in AdGuard
 ###vk_group
 ###vk_groups
+##.vk-white-icon
 ! is in Ru AdList and Fanboy's
 ##.vkontakte
 ###vkontakte
@@ -191,8 +210,13 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 ~instagram.com##[id*="Instagram"]:not(html):not(body):not(article)
 ~instagram.com,~belarus2020.org,~livejournal.com##[class*="instagram"]:not(html):not(body):not(article)
 ~instagram.com##[id*="instagram"]:not(html):not(body):not(article)
+! from Fanboy's
+##a[title="Instagram"]
+! is in Fanboy's
+##.icon-instagram
 ! is in Fanboy's and Ru AdList
 ##img[alt="Instagram"]
+##.td-icon-instagram
 instagram.com/embed.js$third-party,important
 platform.instagram.com/*/embeds.js$third-party,important
 ||instagram.com/ajax/bz
@@ -200,6 +224,8 @@ platform.instagram.com/*/embeds.js$third-party,important
 !||instagram.com/graphql/ - don't
 ! from Fanboy’s and RU AdList
 ||instagram.com^*/users/$3p,important
+! is in Fanboy's
+/footer/instagram.
 ! from Fanboy's
 /images/instagram_
 /img/instagram
@@ -216,6 +242,8 @@ platform.instagram.com/*/embeds.js$third-party,important
 
 
 !! Odnoklassniki
+! from AdGuard
+##a[href^="https://connect.ok.ru/offer?url="]
 !todo: blocking window
 !ok.ru##.media-layer_close_ovr
 !ok.ru###mtLayer
@@ -252,10 +280,14 @@ api.twitter.com$third-party,important
 ! from EasyPrivacy
 ||twitter.com/oct.js$important
 syndication.twitter.com$3p
+! from Fanboy's
+##[href^="//twitter.com/share"]
 ! from Web Annoyances Ultralist
 ##[href*="twitter.com/share"]
 ! is in Ru AdList, AdGuard, Fanboy's
 ##a[href^="http://twitter.com/home?"]
+! from AdGuard and Fanboy's
+##a[href^="https://twitter.com/intent/tweet?"]
 ! is in Fanboy's
 ##a[href^="http://twitter.com/share"]
 ! is in Fanboy's and AdGuard
@@ -266,6 +298,8 @@ syndication.twitter.com$3p
 ##a[href^="https://twitter.com/share?"]
 ! is in AdGuard
 ##a[onclick^="window.open('https://twitter.com/share"]
+! from Fanboy's
+##a[title="Twitter"]
 ~belarus2020.org##.fa-twitter
 ##.fa-twitter-square
 ! from Fanboy's
@@ -306,9 +340,14 @@ syndication.twitter.com$third-party,important
 ##.ico-tw
 ##.ico-twttr
 ##.like-tw
+! is in Fanboy's and Ru AdList
+/assets/twitter-$image
 ! from Fanboy's and Ru AdList
-_twitter_icon.
+! is in Fanboy's
+/footer/twitter.
 /icon-twitter.
+! from Fanboy's
+/images/*twitter.png
 ! from Fanboy's
 /images/twitter
 ! from Fanboy's
@@ -320,6 +359,7 @@ _twitter_icon.
 ! from Fanboy's
 /tweet_button.
 /tweetfeed.min.js$important
+_twitter_icon.
 /twitter.png
 /twitter.svg
 /twitterfeed/*
@@ -521,6 +561,8 @@ smartlock.google.com$3p
 ##.icon-g-plus
 ! from Ru AdList
 ||apis.google.com/_/apps-static/_/js/gapi/*plusone/$third-party
+! from AdGuard
+||apis.google.com/js/plusone.js$domain=~blogger.com|~blogspot.com|~blogspot.ru|~pikucha.ru|~googleblog.com|~abcnews.go.com
 ! from Ru AdList
 ||apis.google.com/_/scs/apps-static/*=page,plusone/$third-party
 ! is in Fanboy's
@@ -528,6 +570,7 @@ smartlock.google.com$3p
 ! from Ru AdList
 ||plusone.google.com^$third-party,important
 -googleplus.
+/assets/google-button-$image
 /google2.png
 ! from Fanboy's
 /google-plus.png
@@ -545,6 +588,7 @@ smartlock.google.com$3p
 /img/tg.jpg
 ##.telegram
 ##.telegram_sub
+##.telegram-white-icon
 ##.telegram-widget
 /icon-telegram.
 /telegram.jpg
@@ -568,6 +612,50 @@ smartlock.google.com$3p
 ! ad scripts
 ! is in Fanboy’s and RU AdList
 /whatsapp-button.
+
+
+
+!! Youtube
+! from Fanboy's
+##a[title="Youtube"]
+! is in Fanboy's
+##a[title="YouTube"]
+##.fa-youtube
+##.icn-footer-youtube
+##.icn-youtube
+##.icn_youtube
+##.ico--youtube
+##.ico-youtube
+##.ico__youtube
+##.icomoon-youtube
+##.icon--youtube
+##.icon-YOUTUBE
+##.icon-circle-youtube
+##.icon-footer-youtube
+##.icon-logo-youtube
+##.icon-youtube
+##.icon-youtube-24
+##.icon-youtube-alt
+##.icon-youtube-play-2
+##.icon-youtube-sign
+##.icon-youtube-white
+##.icon-youtube_master
+##.icon-yt
+##.iconYT
+##.iconYt
+##.icon_circle_youtube
+##.icon_youTube
+##.icon_youtube
+##.icons-youtube
+##.iconyoutube
+##.td-icon-youtube
+##.youtube-white-icon
+/footer/youtube.
+/youtube.jpg
+/youtube.png
+/youtube.svg
+/youtube2.png
+/youtube-gray.png
 
 
 
@@ -813,9 +901,6 @@ smartlock.google.com$3p
 ##.td-post-sharing
 ##.td-post-sharing-bottom
 ##.td-post-sharing-visible
-##.td-icon-facebook
-##.td-icon-instagram
-##.td-icon-youtube
 ##.td-social-icon-wrap
 ###td_social_sharing_article_top
 ~belarus2020.org##.tw
@@ -823,13 +908,6 @@ smartlock.google.com$3p
     !torex.ru##.tw
     !vesti.ru##.tw
 ! to social_auth
-! from AdGuard
-||apis.google.com/js/plusone.js$domain=~blogger.com|~blogspot.com|~blogspot.ru|~pikucha.ru|~googleblog.com|~abcnews.go.com
-! is in Fanboy's and Ru AdList
-/assets/facebook-$image
-/assets/google-button-$image
-! is in Fanboy's and Ru AdList
-/assets/twitter-$image
 ! from Fanboy's
 /follow-us-on-
 /ig.svg
@@ -841,8 +919,6 @@ smartlock.google.com$3p
 /img/vib.jpg
 /icon_ya.
 /img/soc/*
-! from Fanboy's
-/images/*twitter.png
 ! from RU AdList
 /livejournal.png$domain=~livejournal.com
 ! from Fanboy's
@@ -881,10 +957,6 @@ _social_fb.
 /watch_ua.js$important
 /wordpress-social-login/*$important
 /yandex-zen.svg
-/youtube.jpg
-/youtube.png
-/youtube-gray.png
-/youtube.svg
 /yt.svg
 /zen.png
 ! from Fanboy's
@@ -893,8 +965,6 @@ _social_fb.
 ##a[title="ВКонтакте"]
 ! from Fanboy's
 ##a[title="Facebook"]
-! from Fanboy's
-##[href^="//twitter.com/share"]
 ! from AdGuard
 ##a[title="Share on Facebook"]
 ! from Fanboy's
@@ -905,31 +975,12 @@ _social_fb.
 ##a[title^="Share on Pinterest"]
 ! from Fanboy's
 ##a[title="Share on Twitter"]
-! from AdGuard
-##a[href^="https://connect.ok.ru/offer?url="]
-! from AdGuard and Fanboy's
-##a[href^="https://www.facebook.com/sharer/sharer.php"]
-! from Fanboy's
-##a[href^="https://www.facebook.com/sharer.php?"]
-! from AdGuard
-##a[href^="https://www.facebook.com/sharer.php"]
-! from Fanboy's
-##a[href*="facebook.com/sharer/sharer.php?"]
 ! from RU AdList
 ~livejournal.com##a[href^="http://www.livejournal.com/update.bml?subject="]
 ! from RU AdList
 livejournal.com##[lj-widget-fb-page]
-! from Fanboy's
-##a[title="Youtube"]
-! from Fanboy's
-##a[title="Twitter"]
-! from Fanboy's
-##a[title="Instagram"]
-! from AdGuard and Fanboy's
-##a[href^="https://twitter.com/intent/tweet?"]
 ##.b-soc_icons
 ##.button-like
-##.fa-youtube
 ##.fodicon-tumblr
 ##.footersoc
 ##.footer_socs
@@ -938,15 +989,11 @@ livejournal.com##[lj-widget-fb-page]
 ##.ic_tw
 ##.icn_fcbk
 ##.icn_twtr
-##.icn_youtube
-##.icn-footer-youtube
 ##.icn-stumbleupon
 ##.icn-tumblr
 ##.icn-twit
-##.icn-youtube
 ##.ico__beatport
 ##.ico__soundcloud
-##.ico__youtube
 ##.ico_google
 ##.ico_pinit
 ##.ico_shr
@@ -954,15 +1001,10 @@ livejournal.com##[lj-widget-fb-page]
 ##.ico-livejournal
 ##.icomoon-mail
 ##.icomoon-tumblr
-##.icomoon-youtube
-##.icon_circle_youtube
 ##.icon_delicious
-##.icon_youTube
-##.icon_youtube
 ##.icon2-vimeo
 ##.icon--app-store
 ##.icon-circle-tumblr
-##.icon-circle-youtube
 ##.icon-delicious
 ##.icon-fackbook
 ##.icon-fark
@@ -971,13 +1013,11 @@ livejournal.com##[lj-widget-fb-page]
 ##.icon-flickr
 ##.icon--flickr
 ##.icon-flipboard
-##.icon-footer-youtube
 ##.icon-github
 ##.icon-hacker-news
 ##.icon-insta
 ##.iconli
 ##.icon-ln
-##.icon-logo-youtube
 ##.icon-mixcloud
 ##.iconPinterest
 ##.icon-pintrest
@@ -992,7 +1032,6 @@ livejournal.com##[lj-widget-fb-page]
 ##.icons-stumbleupon
 ##.icon-stumbleupon
 ##.icons-vimeo
-##.icons-youtube
 ##.iconTumblr
 ##.icon-tumblr
 ##.icon-tumblr-01
@@ -1006,22 +1045,7 @@ livejournal.com##[lj-widget-fb-page]
 ##.icon-wechat
 ##.icon-witter
 ##.icon-ya
-##.iconyoutube
-##.icon-youtube
-##.icon-YOUTUBE
-##.icon--youtube
-##.icon-youtube_master
-##.icon-youtube-24
-##.icon-youtube-alt
-##.icon-youtube-play-2
-##.icon-youtube-sign
-##.icon-youtube-white
-##.iconYT
-##.iconYt
-##.icon-yt
 ##.ico-spotify
-##.ico-youtube
-##.ico--youtube
 ##.icon-ok
 ##.icon-tamtam
 ##.icon-yandex
@@ -1105,8 +1129,6 @@ livejournal.com##[lj-widget-fb-page]
 /share-link/*
 /share-link.min.js
 
-/youtube2.png
-
 ! is in Ru AdList and Fanboy's
 /images/social.
 
@@ -1143,22 +1165,7 @@ livejournal.com##[lj-widget-fb-page]
 ##.sd-social-icon-text
 
 ! is in Fanboy's
-/footer/instagram.
-
-! is in Fanboy's
-/footer/youtube.
-
-! is in Fanboy's
-/footer/twitter.
-
-! is in Fanboy's
-/footer/facebook.
-
-! is in Fanboy's
 /socialbutton.
-
-! is in Fanboy's
-/images/fb-
 
 ! is in AdGuard and Fanboy's
 ##.share-list
@@ -1168,16 +1175,6 @@ livejournal.com##[lj-widget-fb-page]
 
 ! is in AdGuard and Fanboy's
 ##.social-icon
-
-!##[class$="-vk"]
-! is in Fanboy's
-##.icon-vk
-
-! is in Fanboy's
-##.icon-instagram
-
-! is in Fanboy's
-##a[title="YouTube"]
 
 ! is in AdGuard and Fanboy's
 ##a[href^="https://pinterest.com/pin/create/"]
