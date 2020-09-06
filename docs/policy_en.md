@@ -231,6 +231,18 @@ The main "indications" for hiding the logos and headers are usually the followin
 
 <details>
     <summary>
+        Fakenews and propaganda sites
+    </summary>
+    Sites that promote exclusively one-sided and odious propaganda articles. A significant proportion of such sites are blocked on Wikipedia, for example, and are also the subject of independent investigative journalism. Many of these propaganda sites are state-sponsored by Russian government.
+
+<br>Examples:<br>
+https://en.wikipedia.org/wiki/Internet_Research_Agency<br>
+https://en.wikipedia.org/wiki/RIA_FAN<br>
+https://en.wikipedia.org/wiki/Russian_web_brigades<br>
+</details>
+
+<details>
+    <summary>
         WAP-Click sites
     </summary>
     Sites that steal money from your cellphone balance. Yes, it sounds like a magic, but just google "WAP-Click". In a nutshell, they are cheaters-in-law. You visit a site from a smartphone, tadam!, and now your mobile number (you even didn't enter it! - they got it automatically) has a paid mobile subscription.
