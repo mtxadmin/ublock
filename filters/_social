@@ -12,13 +12,13 @@ facebook.com###mobile_login_bar
 ! is in Ru AdList and Fanboy's
 ##a[href^="http://www.facebook.com/sharer.php"]
 ! is in AdGuard
-##a[href^="http://www.facebook.com/sharer.php?"]
+~votesmart.appspot.com##a[href^="http://www.facebook.com/sharer.php?"]
 ! from AdGuard and Fanboy's
 ##a[href^="https://www.facebook.com/sharer/sharer.php"]
 ! from AdGuard
-##a[href^="https://www.facebook.com/sharer.php"]
+~votesmart.appspot.com##a[href^="https://www.facebook.com/sharer.php"]
 ! from Fanboy's
-##a[href^="https://www.facebook.com/sharer.php?"]
+~votesmart.appspot.com##a[href^="https://www.facebook.com/sharer.php?"]
 ! from Fanboy's
 ##a[href*="facebook.com/sharer/sharer.php?"]
 ! is in RU AdList
@@ -87,7 +87,7 @@ facebook.com###pagelet_video_home_watch_list_rhc
 _facebook_icon.
 /facebook.gif
 /facebook.png
-/facebook.svg
+/facebook.svg$domain=~votesmart.appspot.com
 /facebook_pixel.js
 ! ad scripts
 ! is in EasyPrivacy
@@ -126,7 +126,7 @@ _social_fb.
 ! from AdGuard
 ##a[href^="//vk.com/share.php"]
 ! from Fanboy's
-##a[href^="https://vk.com/share.php?"]
+~votesmart.appspot.com##a[href^="https://vk.com/share.php?"]
 ! is in Ru AdList
 ##div[id^="vk_comments"]
 ! is in Ru AdList
@@ -187,7 +187,7 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 /vk.gif
 /vk.jpg
 /vk.png
-/vk.svg
+/vk.svg$domain=~votesmart.appspot.com
 /vk2.png
 /vk_easy.js
 /vk_icon.png
@@ -245,8 +245,8 @@ platform.instagram.com/*/embeds.js$third-party,important
 
 
 !! Odnoklassniki
-! from AdGuard
-##a[href^="https://connect.ok.ru/offer?url="]
+! is in AdGuard
+~votesmart.appspot.com##a[href^="https://connect.ok.ru/offer?url="]
 !todo: blocking window
 !ok.ru##.media-layer_close_ovr
 !ok.ru###mtLayer
@@ -270,7 +270,7 @@ ok.ru/dk?cmd=videoStatNew
 /ico_odnok.gif
 /odnoklassniki.png
 /ok.png
-/ok.svg
+/ok.svg$domain=~votesmart.appspot.com
 /ok_icon.png
 /ok-icon.png
 
@@ -290,7 +290,7 @@ syndication.twitter.com$3p
 ! is in Ru AdList, AdGuard, Fanboy's
 ##a[href^="http://twitter.com/home?"]
 ! from AdGuard and Fanboy's
-##a[href^="https://twitter.com/intent/tweet?"]
+~votesmart.appspot.com##a[href^="https://twitter.com/intent/tweet?"]
 ! is in Fanboy's
 ##a[href^="http://twitter.com/share"]
 ! is in Fanboy's and AdGuard
@@ -368,7 +368,7 @@ syndication.twitter.com$third-party,important
 /tweetfeed.min.js$important
 _twitter_icon.
 /twitter.png
-/twitter.svg
+/twitter.svg$domain=~votesmart.appspot.com
 /twitterfeed/*
 /twitter-timeline.min.js
 
@@ -623,12 +623,12 @@ smartlock.google.com$3p
 
 !! Whatsapp
 !from AdGuard
-##a[href^="whatsapp://send"]
-!from Fanboy's - narrower, disabled
-!##a[href^="whatsapp://send?text="]
+~votesmart.appspot.com##a[href^="whatsapp://send"]
+from Fanboy's - narrower
+~votesmart.appspot.com##a[href^="whatsapp://send?text="]
 ##.icon-whatsapp
 ! from Fanboy's
-##a[href^="https://api.whatsapp.com/send?"]
+~votesmart.appspot.com##a[href^="https://api.whatsapp.com/send?"]
 /whatsapp.svg
 ! ad scripts
 ! is in Fanboy’s and RU AdList
@@ -1255,9 +1255,6 @@ smartlock.google.com$3p
 ##a[href^="https://pinterest.com/pin/create/"]
 
 ! is in Fanboy's
-##a[href^="whatsapp://send?text="]
-
-! is in Fanboy's
 ##.lsi-social-icons
 
 ##.icons-tw
@@ -1371,3 +1368,6 @@ smartlock.google.com$3p
 
 ! is in Ru AdList, AdGuard and Fanboy's
 ##.rambler-share
+
+! is in Fanboy's
+/icons/share-
