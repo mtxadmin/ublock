@@ -14,7 +14,7 @@ facebook.com###mobile_login_bar
 ! is in AdGuard
 ~votesmart.appspot.com##a[href^="http://www.facebook.com/sharer.php?"]
 ! from AdGuard and Fanboy's
-##a[href^="https://www.facebook.com/sharer/sharer.php"]
+~votesmart.appspot.com##a[href^="https://www.facebook.com/sharer/sharer.php"]
 ! from AdGuard
 ~votesmart.appspot.com##a[href^="https://www.facebook.com/sharer.php"]
 ! from Fanboy's
@@ -291,6 +291,10 @@ syndication.twitter.com$3p
 ##a[href^="http://twitter.com/home?"]
 ! from AdGuard and Fanboy's
 ~votesmart.appspot.com##a[href^="https://twitter.com/intent/tweet?"]
+! is in Fanboy's
+~votesmart.appspot.com##a[href^="https://twitter.com/intent/tweet/"]
+! is in AdGuard
+~votesmart.appspot.com##a[href^="https://twitter.com/intent/tweet/?"]
 ! is in Fanboy's
 ##a[href^="http://twitter.com/share"]
 ! is in Fanboy's and AdGuard
@@ -603,6 +607,8 @@ smartlock.google.com$3p
 
 !! Telegram
 ##a[href^="https://teleg.run/joinchat/"]
+! is in AdGuard and Fanboy's
+~votesmart.appspot.com##a[href^="https://t.me/share/url?"]
 ##.fa-telegram
 ##.icon-telegram
 /telegram-icon-32.png
@@ -1241,9 +1247,6 @@ from Fanboy's - narrower
 ##.ico-ytube
 ##.viber
 ##.whatsapp
-
-! is in AdGuard and Fanboy's
-##a[href^="https://t.me/share/url?"]
 
 ! is in AdGuard and Fanboy's
 ##a[href^="https://wa.me/?text="]
