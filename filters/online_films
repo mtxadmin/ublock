@@ -274,6 +274,9 @@ bazr.ru##.more_btn
 bazr.ru##.ratingblock
 bazr.ru##.unit-rating
 
+! только трейлеры, без фильмов
+best-trailer.ru
+
 ! joyshow.info now is bigcinema.tv
 bigcinema.tv##.guest
 bigcinema.tv##.voting
@@ -441,6 +444,9 @@ english-films.com##.yellowBtn.btn
 english-films.com##.news-watch
 english-films.com##.tabs__caption > li:has-text(/English-Films плеер|Трейлер/)
 
+english-films.online##.head-sticky:style(position:static !important)
+english-films.online##.wrap:style(padding-top:0px !important)
+
 ! yes, h. todo: looks strange, review
 !h$domain=enota.club,image
 enota.club##.message-avatar
@@ -475,6 +481,9 @@ fantasticfilm.ru##.btfrm
 ||fantasticfilm.ru/others_images/fantastica_onlajn-min.jpg$image
 
 fast-torrent.ru##.ic-sport_tv
+fast-torrent.ru##.favorite_controll
+fast-torrent.ru###collection_wrap
+fast-torrent.ru##.widget-header:has-text(в коллекциях)
 
 ! fhd.watch is offline
 !fhd.watch##.favorites
@@ -520,9 +529,15 @@ filmi-torrents.com##.sectseo
 
 filmive-hd.net##.link_btn
 
+filmix.cc###top
+filmix.cc##.for-4k
+filmix.cc##.icon-play.watch
+
 filmonlayn.com##.foot
 filmonlayn.com##.mb-online
 filmonlayn.com##.comm-two
+
+filmshd.top##.smart-text
 
 filmshd1080.net##div.need-reg
 
@@ -556,6 +571,8 @@ films-smotret.online##.btn-fav
 !kotofilm.net##.foot-play
 !kotofilm.net###dle-comments-form
 films-smotret.online##.overhang
+
+filmstorrent.ru##.lcomm
 
 filmy-onlain.net##.user_block
 filmy-onlain.net##div.trailers2
@@ -662,6 +679,15 @@ hdpopcorns.online
 ! now offline
 !hdrezka.download##.tlg-link
 !hdrezka.download##.tlg-msg
+
+hdreactor.club###footer-vesna2
+||hdreactor.club/templates/hdkino.gif
+||hdreactor.club/templates/tv7.png
+||hdreactor.club/templates/uhd.png
+hdreactor.net###footer-vesna2
+||hdreactor.net/templates/hdkino.gif
+||hdreactor.net/templates/tv7.png
+||hdreactor.net/templates/uhd.png
 
 ! hdrezka.ag now is rezka.ag
 ! hdrezka.me is offline
@@ -818,6 +844,8 @@ kinobum.tv##p
 kinobum.tv##.description
 kinobum.tv##.seo-box
 
+kino-dom.org###about_category
+
 !kinofann.ru##footer
 kinofann.ru###ratingBar
 kinofann.ru##.player_h2
@@ -851,6 +879,10 @@ kino-for.me###les
 !kino-hit-online.com##.hdlike_2
 !kino-hit-online.com##.hdlike_1
 !kino-hit-online.com##.wrapper:style(padding-top:100px !important)
+
+! kinosklad.net is now kinogora.net
+kinogora.net##.message-block-red.message-block-player
+kinogora.net##li.alarm_film
 
 ||kino-horror.net/images/registracija.jpg
 ||kino-horror.net/images/fon-site.jpg
@@ -1088,6 +1120,9 @@ kinosub-online.ru##.slider_box
 kinotochka.club,kinotochka.me###reviews-block
 kinotochka.club,kinotochka.me##.btn_reg
 
+||kinotochka.co/templates/tochka/images/host.png
+kinotochka.co##.bottomus-box-foot
+
 ! fake, ads
 kinotut.tv
 
@@ -1137,6 +1172,8 @@ kino-v-online.net##.wcom
 
 ! this site behaves very strange. There are many others, without such errors.
 kinowinx.ru
+
+||kinox.to/cs/themes/default/Header/Default.png
 
 ! kinoxa.biz now is kinoxa.ws
 kinoxa.ws##.viewed-box
@@ -1249,6 +1286,16 @@ mirkino.club##.header > .container:style(height:auto !important)
 mirkino.club##.main:style(margin-bottom:0px !important)
 mirkino.club##.all:style(padding-bottom:0px !important)
 mirkino.club##.poster_on
+
+! moviexk.co is redirected to moviexk.biz
+moviexk.biz###moviexk-emailbox
+moviexk.biz##.note
+moviexk.biz###refresh
+moviexk.biz##.blocktitle:has-text(/comment|Subscribe|Tags|Popular Movies/)
+moviexk.biz##p:has-text(to watch movies online)
+moviexk.biz##.tagcloud
+moviexk.biz##div.block > div:has-text(/^$/)
+moviexk.biz###chart
 
 muvix.org##.bg-height
 muvix.org##.column-box
@@ -1435,6 +1482,10 @@ onlinevideohd.ru##.groupAdmin
 onlinevideohd.ru###navBar
 !/.s/*$domain=onlinevideohd.ru,image
 
+onlol.top##.sub-text
+! site breaks copypaste
+onlol.top##^script:has-text(oncopy)
+
 pickfilm.ru##.top-info
 pickfilm.ru##.inline-rating
 pickfilm.ru###rating_votes
@@ -1498,6 +1549,8 @@ russkie-filmy.online##.din3
 
 ! russkieserialy.net is offline
 !russkieserialy.net##.definition000
+
+seasonvar.ru##.doptxt
 
 ! serialbox.org is now serialbox.info
 serialbox.info##.sbtn
@@ -1637,6 +1690,10 @@ the-cinema.best##.leftside.lcolomn
 !topasnew24.com###myTab
 !topasnew24.com###home
 
+||the-cinema.online/*/the-cinema.png
+the-cinema.online##[href="#top"]
+the-cinema.online##.dcont
+
 ! hotser.top is now topcinema.tv
 topcinema.tv##.auth
 topcinema.tv##.topic-info-vote
@@ -1764,11 +1821,23 @@ more.tv$important
 
 ||video-pleer.online/9999999-kredit.png
 
+||videoplenka.info/ya.htm
+||videoplenka.info/pic/help.png
+videoplenka.info##center > div > font
+
 videoruclip.com##.user-info
 
 vidlox.me##.make_money
 
 v-kino.biz##.to-reg
+
+!vse-chasti-kino.ru##.site-desc
+!vse-chasti-kino.ru##.footer
+vse-chasti-kino.ru##.popular
+vse-chasti-kino.ru##.text-tv
+vse-chasti-kino.ru##.fdevices
+vse-chasti-kino.ru##.fleft-sect-title
+vse-chasti-kino.ru##.tabs-sel
 
 vtorrente.info##.help_top
 !vtorrente.info##.back_top
@@ -1815,6 +1884,8 @@ worldserials.org##.module-content > noindex
 !zagzag.tv##.mov-comp2
 !zagzag.tv##.full_mob
 !zagzag.tv##.caroubottom.rels
+
+x-film.top##.site-desc
 
 ||zevka.com/images/kinologo.jpg
 ||zevka.com/images/shapka_zevka.png
@@ -1924,75 +1995,3 @@ xn----etbhjjtcfb7b.net##.pleer-text
 xn----etbhjjtcfb7b.net##td > div:has-text(Подписалось)
 
 !! todo
-
-! moviexk.co is redirected to moviexk.biz
-moviexk.biz###moviexk-emailbox
-moviexk.biz##.note
-moviexk.biz###refresh
-moviexk.biz##.blocktitle:has-text(/comment|Subscribe|Tags|Popular Movies/)
-moviexk.biz##p:has-text(to watch movies online)
-moviexk.biz##.tagcloud
-moviexk.biz##div.block > div:has-text(/^$/)
-moviexk.biz###chart
-
-fast-torrent.ru##.favorite_controll
-fast-torrent.ru###collection_wrap
-fast-torrent.ru##.widget-header:has-text(в коллекциях)
-
-! kinosklad.net is now kinogora.net
-kinogora.net##.message-block-red.message-block-player
-kinogora.net##li.alarm_film
-
-! только трейлеры, без фильмов
-best-trailer.ru
-
-||videoplenka.info/ya.htm
-||videoplenka.info/pic/help.png
-videoplenka.info##center > div > font
-
-x-film.top##.site-desc
-
-onlol.top##.sub-text
-! site breaks copypaste
-onlol.top##^script:has-text(oncopy)
-
-filmshd.top##.smart-text
-
-!vse-chasti-kino.ru##.site-desc
-!vse-chasti-kino.ru##.footer
-vse-chasti-kino.ru##.popular
-vse-chasti-kino.ru##.text-tv
-vse-chasti-kino.ru##.fdevices
-vse-chasti-kino.ru##.fleft-sect-title
-vse-chasti-kino.ru##.tabs-sel
-
-english-films.online##.head-sticky:style(position:static !important)
-english-films.online##.wrap:style(padding-top:0px !important)
-
-filmix.cc###top
-filmix.cc##.for-4k
-filmix.cc##.icon-play.watch
-
-hdreactor.club###footer-vesna2
-||hdreactor.club/templates/hdkino.gif
-||hdreactor.club/templates/tv7.png
-||hdreactor.club/templates/uhd.png
-hdreactor.net###footer-vesna2
-||hdreactor.net/templates/hdkino.gif
-||hdreactor.net/templates/tv7.png
-||hdreactor.net/templates/uhd.png
-
-kino-dom.org###about_category
-
-||kinotochka.co/templates/tochka/images/host.png
-kinotochka.co##.bottomus-box-foot
-
-||the-cinema.online/*/the-cinema.png
-the-cinema.online##[href="#top"]
-the-cinema.online##.dcont
-
-seasonvar.ru##.doptxt
-
-filmstorrent.ru##.lcomm
-
-||kinox.to/cs/themes/default/Header/Default.png
