@@ -169,6 +169,8 @@
 ###ad-desktop-bottom2
 ###adf
 ###adf_notifiers_wrap
+! is in EasyList
+##.ad_float
 ###adfooter
 ###__adIframe
 ###adinserttop
@@ -235,6 +237,7 @@
 ##.banner-container
 ##.banner-link
 ##.banner-main-container
+##.banner-slider
 ##.banners
 ##.banners-bottom
 ##.banners-item
@@ -299,6 +302,7 @@
 ##.forum-banner
 ###foxclocks-statusbar-spacer
 ##.free-consult
+##.fullwidthbanner-container
 ##.full-width-narrow-banner
 ! is in EasyList
 ###gf-mrecs-ads
@@ -333,9 +337,11 @@
 ##.m-ad
 ##.main-banner
 ##.main-float-buttons
+##.maxwidth-banner
 ##.menu-banner
 ##.mobile-banner
 ##.mobile-banner-content
+##.module_banner_top
 ###nanoBaner
 ###nav-ad
 ###newsAdp
@@ -440,6 +446,9 @@ _728x90.$important
 /adpuba/*
 /ads.gif$important
 /ads.js$important
+/ads-
+    ! from EasyList
+    !.com/ads-
 ! from EasyList
 ?ads=$domain=~booking.loganair.co.uk
 /adsbygoogle.js$important
@@ -474,6 +483,8 @@ _advert/
 ! from EasyList
 -auto-ads-
 /avada-scrollspy.js
+! from EasyPrivacy
+/autotrack.carbon.js
 ! is in AdGuard and EasyPrivacy
 /b/ss/*/js-
 	! dell.com/b/ss/dellglobalonline/1/JS-
@@ -483,6 +494,7 @@ _advert/
 /%21banery/*
 /banner$image
 /banner/*
+/banner.js$important
 /banner.php
 /bannerBackgroundImage
 /_banner_common.php
@@ -491,15 +503,14 @@ _advert/
 /banner-support.js
 ! is in AdGuard
 /bens/vinos.js?$important
+! from EasyPrivacy
+/bn/tracker/*
 /bnrs/*
 /bold-upsell-custom.js
 /brand.js
 /bugsnag.min.js
-! from EasyList
-.com/ads-
 /clipboard.min.js$important
-! from AdGuard
-.com/native.php?b=
+/carbon_sticky_ads.js
 /context_ads/*
 ! from EasyList
 -contrib-ads/
@@ -509,6 +520,8 @@ _advert/
 /dfp_mobile.js
 /easy-social-share-buttons.min.js
 /fixads.js
+! is in EasyList
+/footer_ads.
 /fuckadblock/*$important
 /fuckadblock.js$important
 /ga.js
@@ -528,6 +541,8 @@ _advert/
 /jllikepro/js/buttons.
 /jquery.adsplace
 /jquery.iframetracker
+/jquery.sticky.js$important
+/jquery.stickyPanel.min.js
 /landing/*$domain=~gosuslugi.ru|~etutorium.com|~univerpp.ru|~univer-pp.ru|~walletone.com
 /mads/gma
 /main-banner/*
@@ -536,6 +551,9 @@ _advert/
 /metrika/*$important
 /metrika.js$important
 /mobile-banner/*
+/native.php
+    ! from AdGuard
+    !.com/native.php?b=
 /newrelic-browser.js
 /openx/*
 /openxtag.js$important
@@ -549,12 +567,16 @@ _advert/
 /pixel.php?
 /popunder.js$important
 /profitwell.js$important
+/promobanner
 /pubads/*$important
 ! from EasyList
 /reklam/*$domain=~reklam.com.tr
+/reklama.js$important
 ! is in EasyList
 /renderbanner.do?
 /retargeting/*
+! don't block - it may be used in non-ad video for previews
+!/rotator.js
 /rotator.min.js$important
 ! from AdGuard
 /ru-n4p/*.js$important
@@ -562,12 +584,15 @@ _advert/
 /sam-pro-free/*
 ! from EasyList
 /sam-pro-images/*
+/scripttag_loader.min.js
 /scrollspy.js
 /segment.js$important
 /show_ads.js$important
 /show-ads.js$important
 ! disable exclusion from Fanboy’s Enhanced Tracking List
 /showads.$important
+! from Fanboy’s
+/sitecatalyst/*
 /smart-app-banner/
 /smart-app-banner.js
 /smartBanner/*
@@ -578,6 +603,7 @@ _advert/
 /theia-sticky-sidebar/*
 /theia-sticky-sidebar.js
 /test-widget/*
+/trafficguard.js$important
 ! from AdGuard Tracking Protection and EasyPrivacy, modified
 /uedata?$important
 /upsell.js
@@ -634,6 +660,7 @@ _advert/
 ! mts.ru loads non-ad /Promo/ links in lk
 /promo/*$domain=~livejournal.com|~mts.ru
 /promo.js$important
+/promo.php
 /promo-banner.js$important
 ! is in Ru AdList
 /promos/*
@@ -678,9 +705,13 @@ _advert/
 ###hellobar
 ##.learn-more-cta
 ##.top-cta
+/alert-popup/*
 /cta/*
 /intervolga.conversionpro/*
 /skyweb24.popuppro/*
+/sms-alert-popup/*
+/sms-thankyou-popup/*
+/sms-wait-popup/*
 
 
 
@@ -746,6 +777,7 @@ _analytics.js?
     ! увы, но иначе в Сбербанк и Домклик не входит
     !||sberbank.ru/*analytics$script,redirect=noopjs
     @@||sberbank.ru/*analytics$script
+/api/tracker/*
 ! video ad counter
 /cast_sender.js$important
 /cnt.js
@@ -763,6 +795,7 @@ _analytics.js?
 /engine/ping?
 ! from EasyPrivacy
 /event/track?
+/events-metrica-scripts.js
 ! is in EasyPrivacy and AdGuard
 /fingerprint2.min.js$important
 ||jsdelivr.net/fingerprintjs2/
@@ -779,6 +812,7 @@ _analytics.js?
 /js/analytics.
 ! from EasyPrivacy
 _loghuman=
+/metric.js
 ! from Fanboy's
 /mod_pagespeed_beacon?
 ! from uBlock
@@ -790,6 +824,7 @@ _pagespeed_beacon?
 ! is in EasyPrivacy
 /pageviews/*$domain=~stats.wikimedia.org|~tools.wmflabs.org
 /parking-crew.js
+/platform-detect
 ! from Fanboy's
 /pum-site-scripts.
 ! from EasyPrivacy
@@ -803,11 +838,19 @@ _pagespeed_beacon?
 /send_watching/*
 ! from EasyPrivacy
 /setbucket?signature=
+! is in EasyPrivacy
+/stat/count
 /stat.php$domain=~sci-article.ru
+! is in EasyPrivacy
+/stats.php?*http
+/track.js$important
+/track.min.js
 ! from EasyPrivacy
 /track_click?
 /tracker.js$important
 /tracking.min.js
+! is in EasyPrivacy
+-track-inview.
 /utm-tracking.js$important
 /video.counters.js$important
 /wle_tracker.js
@@ -815,6 +858,8 @@ _pagespeed_beacon?
 ! is in EasyPrivacy
 /wt?p=
 /umami.js$important
+/user-geo-info
+/vantage$script
 /yametrika/*
 
 
@@ -1342,6 +1387,7 @@ _cookie_policy_
 ##.signup-prompt
 ##.signup-prompt-bg
 ~sud.ua,~trakt.tv##.welcome
+###welcome_widget
 
 
 
@@ -1434,7 +1480,13 @@ _cookie_policy_
 ! is in Fanboy's
 ##.footer-subscribe
 ##.frm_subs_fllscrn
+! from Fanboy's and Web Annoyances Ultralist
+##.jetpack_subscription_widget
 ##.maillist-form-view
+! from Fanboy's
+###newsletters-1-form
+! from Fanboy's
+###newsletters-1-form-wrapper
 ###podpiska
 ##.right_mail
 ###sub-blog
@@ -1443,6 +1495,8 @@ _cookie_policy_
 ~belarus2020.org##.subscribe
 ! is in Fanboy's
 ##.subscribe-button
+! from Fanboy's
+###subscribe-email
 ! is in Fanboy's
 ##.subscribe-form
 ! is in Fanboy's
@@ -1454,6 +1508,10 @@ _cookie_policy_
     !m-strana.ru##.subscription
     !warhead.su##.subscription
 ##.subscription-widget
+! from Fanboy's
+##.widget_blog_subscription
+! from Fanboy's
+##.widget_newsletters
 /ico_subscribe.png
 
 
@@ -1660,6 +1718,7 @@ _cookie_policy_
 ##.b-brands
 ##.brand
 ##.brand_picture
+##.brand-slider
 ##.brands
 ##.brands_section
 ##.brands-slider
@@ -1757,7 +1816,6 @@ smiles.dolf.ru$third-party
 ! emoji remove block from https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/emoji-filter.txt
 ||twemoji.maxcdn.com^
 ||emoji.redditmedia.com^
-/wp-emoji$script,stylesheet
 /emoji.$script,stylesheet,image
 /emojiarea.$script
 /emojify.$script
@@ -1765,6 +1823,9 @@ smiles.dolf.ru$third-party
 /emojiFace.$script
 /lsxemojipicker.$script
 /images/*emoji/*
+/twemoji.js
+/wp-emoji$script,stylesheet
+/wp-emoji.js
 
 
 
@@ -14673,36 +14734,15 @@ xn--d1ameqo2a7c.xn--p1ai##.left_banner
 xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 !! todo
-/jquery.sticky.js$important
-
-! don't block - it may be used in non-ad video for previews
-!/rotator.js
-
-/track.js$important
-
-/reklama.js$important
 
 ! is in EasyList and Fanboy’s
 /rodo.js$important
-
-! is in EasyList
-##.ad_float
-
-##.banner-slider
-
-##.brand-slider
-
-##.fullwidthbanner-container
-##.maxwidth-banner
 
 ! from AdGuard
 /crm/site_button/loader_*.js
 
 ! from EasyList and Fanboy's
 /no-right-click.$script
-
-! from EasyPrivacy
-/autotrack.carbon.js
 
 /smartTagging.js
 
@@ -14733,13 +14773,9 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 /goodshare.
 !||jsdelivr.net/npm/goodshare.js
 
-##.module_banner_top
-
 ! from EasyList and Fanboy's
 ###gh-gb
 
-! from Fanboy's
-##.widget_newsletters
 ! from Fanboy's
 ##.addtoany_list
 
@@ -14751,17 +14787,6 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ##.a2a_floating_style
 ! is in Ru AdList and Fanboy's
 ##.a2a_vertical_style
-! from Fanboy's
-###newsletters-1-form
-! from Fanboy's
-###newsletters-1-form-wrapper
-! from Fanboy's
-###subscribe-email
-
-! from Fanboy's and Web Annoyances Ultralist
-##.jetpack_subscription_widget
-! from Fanboy's
-##.widget_blog_subscription
 
 ! from EasyList
 ##div[id^="div-gpt-ad"]
@@ -14896,8 +14921,6 @@ targetemsecure.blob.core.windows.net
 ! from EasyPrivacy
 /detm-container-$important
 
-/banner.js$important
-
 /search-tracking.
 
 ! from AdGuard
@@ -14913,8 +14936,6 @@ targetemsecure.blob.core.windows.net
 .noip.com
 redirectme.net
 .myvnc.com
-
-/track.min.js
 
 ! from EasyPrivacy
 /xgemius.
@@ -14952,8 +14973,6 @@ redirectme.net
 ! from AdGuard
 .pro/*/a/pop/js/
 
-/track.min.js
-
 /advsearch/*
 /advsearchform.min.js
 
@@ -14973,9 +14992,6 @@ redirectme.net
 ! from RU AdList and Fanboy's
 /tippola-loader_$important
 
-! from EasyPrivacy
-/bn/tracker/*
-
 /easylockdown/*
 /easylockdown$script
 
@@ -14990,10 +15006,6 @@ redirectme.net
 .ru/rtr/6
 .ru/rtr/7
 .ru/rtr/8
-
-/api/tracker/*
-
-/firebase_subscribe.js
 
 ! from Fanboy's
 /mbox-*.js$script
@@ -15010,20 +15022,6 @@ redirectme.net
 
 /disable_click.min.js$important
 
-/trafficguard.js$important
-
-/promobanner
-
-/alert-popup/*
-/sms-alert-popup/*
-/sms-thankyou-popup/*
-/sms-wait-popup/*
-
-/user-geo-info
-/platform-detect
-
-! from Fanboy’s
-/sitecatalyst/*
 
 /searchpromote/*
 
@@ -15116,8 +15114,6 @@ securitylab.ru##.call-to-action
 garant.ru##popup-social
 garant.ru##.popup-social
 
-/metric.js
-
 ! fixed footer for infinite scrolling design
 ###infinite-footer
 	! privacyonline.home.blog###infinite-footer
@@ -15162,8 +15158,6 @@ garant.ru##.popup-social
 /mobile_menu.js
 
 @@||vacancies.club^$generichide,badfilter
-
-###welcome_widget
 
 @@||alexstuff.ru^$generichide,badfilter
 
@@ -15261,12 +15255,6 @@ garant.ru##.popup-social
 
 @@||vsthouse.ru^$generichide,badfilter
 
-! is in EasyPrivacy
-/stat/count
-
-/scripttag_loader.min.js
-
-/vantage$script
 
 /convertfox.min.js
 
@@ -15297,10 +15285,6 @@ rackcdn.com
 /sticky-header/*
 /advanced-hooks-sticky-header
 
-/promo.php
-
-/events-metrica-scripts.js
-
 /top.bg.center.png
 /top.bg.left.png
 /top.logo.special.home.png
@@ -15320,30 +15304,13 @@ rackcdn.com
 ! is in EasyList and Fanboy's
 ##.akismet_comment_form_privacy_notice
 
-! is in EasyPrivacy
--track-inview.
-
 ! smile
 ||msdnshared.blob.core.windows.net/media/2017/11/wlEmoticon-smile.png
-
-! is in EasyPrivacy
-/stats.php?*http
 
 ! is in Ru AdList
 ##div[id^="sblock_inform_"]
 
-! is in EasyList
-/footer_ads.
-
-/carbon_sticky_ads.js
-
-/jquery.stickyPanel.min.js
-
 ||jsdelivr.net/npm/clappr-ga-events-plugin
-
-/twemoji.js
-
-/wp-emoji.js
 
 mononline.ru##.widget_execphp
 
@@ -15472,3 +15439,26 @@ chuchalka.ru##.s_name
 ||peppercrew.nl/*/loadgen-ad.png
 
 jackofalladmins.com##.author__avatar
+
+tele2.ru##.download-app__buttons
+tele2.ru##.banner-lenta
+
+openedu.ru##.cource-detail:style(position:static !important)
+openedu.ru##.course-descr-data:style(padding-top:0px !important)
+
+urantia-s.com##video
+||urantia-s.com/assets/img/2.jpg
+
+ign.com##div[class^=jsx]:style(position:static !important)
+ign.com##.hexagon-wrapper
+
+cookmaster.online##.fixed-header-w:style(position:static !important)
+
+korshop.ru##.news-lbl
+
+organicfact.ru##.site-heading
+
+osouce.ru##.site-branding
+osouce.ru###masthead
+
+foodandhealth.ru###ag_warning_header
