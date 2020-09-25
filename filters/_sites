@@ -541,6 +541,7 @@ _advert/
 /jquery.adsplace
 /jquery.iframetracker
 /jquery.sticky.js$important
+/jquery.stickyPanel.min.js
 /landing/*$domain=~gosuslugi.ru|~etutorium.com|~univerpp.ru|~univer-pp.ru|~walletone.com
 /mads/gma
 /main-banner/*
@@ -601,7 +602,6 @@ _advert/
 /theia-sticky-sidebar/*
 /theia-sticky-sidebar.js
 /test-widget/*
-/track.js$important
 /trafficguard.js$important
 ! from AdGuard Tracking Protection and EasyPrivacy, modified
 /uedata?$important
@@ -839,6 +839,9 @@ _pagespeed_beacon?
 ! is in EasyPrivacy
 /stat/count
 /stat.php$domain=~sci-article.ru
+! is in EasyPrivacy
+/stats.php?*http
+/track.js$important
 /track.min.js
 ! from EasyPrivacy
 /track_click?
@@ -1379,6 +1382,7 @@ _cookie_policy_
 ##.signup-prompt
 ##.signup-prompt-bg
 ~sud.ua,~trakt.tv##.welcome
+###welcome_widget
 
 
 
@@ -15156,8 +15160,6 @@ garant.ru##.popup-social
 
 @@||vacancies.club^$generichide,badfilter
 
-###welcome_widget
-
 @@||alexstuff.ru^$generichide,badfilter
 
 @@||alhimika.net^$generichide,badfilter
@@ -15313,13 +15315,8 @@ rackcdn.com
 ! smile
 ||msdnshared.blob.core.windows.net/media/2017/11/wlEmoticon-smile.png
 
-! is in EasyPrivacy
-/stats.php?*http
-
 ! is in Ru AdList
 ##div[id^="sblock_inform_"]
-
-/jquery.stickyPanel.min.js
 
 ||jsdelivr.net/npm/clappr-ga-events-plugin
 
