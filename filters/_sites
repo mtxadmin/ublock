@@ -502,6 +502,8 @@ _advert/
 /banner-support.js
 ! is in AdGuard
 /bens/vinos.js?$important
+! from EasyPrivacy
+/bn/tracker/*
 /bnrs/*
 /bold-upsell-custom.js
 /brand.js
@@ -563,6 +565,7 @@ _advert/
 /pixel.php?
 /popunder.js$important
 /profitwell.js$important
+/promobanner
 /pubads/*$important
 ! from EasyList
 /reklam/*$domain=~reklam.com.tr
@@ -586,6 +589,8 @@ _advert/
 /show-ads.js$important
 ! disable exclusion from Fanboy’s Enhanced Tracking List
 /showads.$important
+! from Fanboy’s
+/sitecatalyst/*
 /smart-app-banner/
 /smart-app-banner.js
 /smartBanner/*
@@ -597,6 +602,7 @@ _advert/
 /theia-sticky-sidebar.js
 /test-widget/*
 /track.js$important
+/trafficguard.js$important
 ! from AdGuard Tracking Protection and EasyPrivacy, modified
 /uedata?$important
 /upsell.js
@@ -698,9 +704,13 @@ _advert/
 ###hellobar
 ##.learn-more-cta
 ##.top-cta
+/alert-popup/*
 /cta/*
 /intervolga.conversionpro/*
 /skyweb24.popuppro/*
+/sms-alert-popup/*
+/sms-thankyou-popup/*
+/sms-wait-popup/*
 
 
 
@@ -766,6 +776,7 @@ _analytics.js?
     ! увы, но иначе в Сбербанк и Домклик не входит
     !||sberbank.ru/*analytics$script,redirect=noopjs
     @@||sberbank.ru/*analytics$script
+/api/tracker/*
 ! video ad counter
 /cast_sender.js$important
 /cnt.js
@@ -811,6 +822,7 @@ _pagespeed_beacon?
 ! is in EasyPrivacy
 /pageviews/*$domain=~stats.wikimedia.org|~tools.wmflabs.org
 /parking-crew.js
+/platform-detect
 ! from Fanboy's
 /pum-site-scripts.
 ! from EasyPrivacy
@@ -827,6 +839,7 @@ _pagespeed_beacon?
 ! is in EasyPrivacy
 /stat/count
 /stat.php$domain=~sci-article.ru
+/track.min.js
 ! from EasyPrivacy
 /track_click?
 /tracker.js$important
@@ -838,6 +851,7 @@ _pagespeed_beacon?
 ! is in EasyPrivacy
 /wt?p=
 /umami.js$important
+/user-geo-info
 /yametrika/*
 
 
@@ -14920,8 +14934,6 @@ targetemsecure.blob.core.windows.net
 redirectme.net
 .myvnc.com
 
-/track.min.js
-
 ! from EasyPrivacy
 /xgemius.
 
@@ -14958,8 +14970,6 @@ redirectme.net
 ! from AdGuard
 .pro/*/a/pop/js/
 
-/track.min.js
-
 /advsearch/*
 /advsearchform.min.js
 
@@ -14979,9 +14989,6 @@ redirectme.net
 ! from RU AdList and Fanboy's
 /tippola-loader_$important
 
-! from EasyPrivacy
-/bn/tracker/*
-
 /easylockdown/*
 /easylockdown$script
 
@@ -14996,10 +15003,6 @@ redirectme.net
 .ru/rtr/6
 .ru/rtr/7
 .ru/rtr/8
-
-/api/tracker/*
-
-/firebase_subscribe.js
 
 ! from Fanboy's
 /mbox-*.js$script
@@ -15016,20 +15019,6 @@ redirectme.net
 
 /disable_click.min.js$important
 
-/trafficguard.js$important
-
-/promobanner
-
-/alert-popup/*
-/sms-alert-popup/*
-/sms-thankyou-popup/*
-/sms-wait-popup/*
-
-/user-geo-info
-/platform-detect
-
-! from Fanboy’s
-/sitecatalyst/*
 
 /searchpromote/*
 
