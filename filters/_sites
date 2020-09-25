@@ -445,6 +445,9 @@ _728x90.$important
 /adpuba/*
 /ads.gif$important
 /ads.js$important
+/ads-
+    ! from EasyList
+    !.com/ads-
 ! from EasyList
 ?ads=$domain=~booking.loganair.co.uk
 /adsbygoogle.js$important
@@ -503,11 +506,8 @@ _advert/
 /bold-upsell-custom.js
 /brand.js
 /bugsnag.min.js
-! from EasyList
-.com/ads-
 /clipboard.min.js$important
-! from AdGuard
-.com/native.php?b=
+/carbon_sticky_ads.js
 /context_ads/*
 ! from EasyList
 -contrib-ads/
@@ -517,6 +517,8 @@ _advert/
 /dfp_mobile.js
 /easy-social-share-buttons.min.js
 /fixads.js
+! is in EasyList
+/footer_ads.
 /fuckadblock/*$important
 /fuckadblock.js$important
 /ga.js
@@ -545,6 +547,9 @@ _advert/
 /metrika/*$important
 /metrika.js$important
 /mobile-banner/*
+/native.php
+    ! from AdGuard
+    !.com/native.php?b=
 /newrelic-browser.js
 /openx/*
 /openxtag.js$important
@@ -574,6 +579,7 @@ _advert/
 /sam-pro-free/*
 ! from EasyList
 /sam-pro-images/*
+/scripttag_loader.min.js
 /scrollspy.js
 /segment.js$important
 /show_ads.js$important
@@ -647,6 +653,7 @@ _advert/
 ! mts.ru loads non-ad /Promo/ links in lk
 /promo/*$domain=~livejournal.com|~mts.ru
 /promo.js$important
+/promo.php
 /promo-banner.js$important
 ! is in Ru AdList
 /promos/*
@@ -792,6 +799,7 @@ _analytics.js?
 /js/analytics.
 ! from EasyPrivacy
 _loghuman=
+/metric.js
 ! from Fanboy's
 /mod_pagespeed_beacon?
 ! from uBlock
@@ -816,6 +824,8 @@ _pagespeed_beacon?
 /send_watching/*
 ! from EasyPrivacy
 /setbucket?signature=
+! is in EasyPrivacy
+/stat/count
 /stat.php$domain=~sci-article.ru
 ! from EasyPrivacy
 /track_click?
@@ -15112,8 +15122,6 @@ securitylab.ru##.call-to-action
 garant.ru##popup-social
 garant.ru##.popup-social
 
-/metric.js
-
 ! fixed footer for infinite scrolling design
 ###infinite-footer
 	! privacyonline.home.blog###infinite-footer
@@ -15257,10 +15265,6 @@ garant.ru##.popup-social
 
 @@||vsthouse.ru^$generichide,badfilter
 
-! is in EasyPrivacy
-/stat/count
-
-/scripttag_loader.min.js
 
 /vantage$script
 
@@ -15292,8 +15296,6 @@ rackcdn.com
 
 /sticky-header/*
 /advanced-hooks-sticky-header
-
-/promo.php
 
 /events-metrica-scripts.js
 
@@ -15327,11 +15329,6 @@ rackcdn.com
 
 ! is in Ru AdList
 ##div[id^="sblock_inform_"]
-
-! is in EasyList
-/footer_ads.
-
-/carbon_sticky_ads.js
 
 /jquery.stickyPanel.min.js
 
