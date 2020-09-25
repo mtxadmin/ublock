@@ -169,6 +169,8 @@
 ###ad-desktop-bottom2
 ###adf
 ###adf_notifiers_wrap
+! is in EasyList
+##.ad_float
 ###adfooter
 ###__adIframe
 ###adinserttop
@@ -235,6 +237,7 @@
 ##.banner-container
 ##.banner-link
 ##.banner-main-container
+##.banner-slider
 ##.banners
 ##.banners-bottom
 ##.banners-item
@@ -299,6 +302,7 @@
 ##.forum-banner
 ###foxclocks-statusbar-spacer
 ##.free-consult
+##.fullwidthbanner-container
 ##.full-width-narrow-banner
 ! is in EasyList
 ###gf-mrecs-ads
@@ -333,6 +337,7 @@
 ##.m-ad
 ##.main-banner
 ##.main-float-buttons
+##.maxwidth-banner
 ##.menu-banner
 ##.mobile-banner
 ##.mobile-banner-content
@@ -474,6 +479,8 @@ _advert/
 ! from EasyList
 -auto-ads-
 /avada-scrollspy.js
+! from EasyPrivacy
+/autotrack.carbon.js
 ! is in AdGuard and EasyPrivacy
 /b/ss/*/js-
 	! dell.com/b/ss/dellglobalonline/1/JS-
@@ -529,6 +536,7 @@ _advert/
 /jllikepro/js/buttons.
 /jquery.adsplace
 /jquery.iframetracker
+/jquery.sticky.js$important
 /landing/*$domain=~gosuslugi.ru|~etutorium.com|~univerpp.ru|~univer-pp.ru|~walletone.com
 /mads/gma
 /main-banner/*
@@ -553,9 +561,12 @@ _advert/
 /pubads/*$important
 ! from EasyList
 /reklam/*$domain=~reklam.com.tr
+/reklama.js$important
 ! is in EasyList
 /renderbanner.do?
 /retargeting/*
+! don't block - it may be used in non-ad video for previews
+!/rotator.js
 /rotator.min.js$important
 ! from AdGuard
 /ru-n4p/*.js$important
@@ -579,6 +590,7 @@ _advert/
 /theia-sticky-sidebar/*
 /theia-sticky-sidebar.js
 /test-widget/*
+/track.js$important
 ! from AdGuard Tracking Protection and EasyPrivacy, modified
 /uedata?$important
 /upsell.js
@@ -1673,6 +1685,7 @@ _cookie_policy_
 ##.b-brands
 ##.brand
 ##.brand_picture
+##.brand-slider
 ##.brands
 ##.brands_section
 ##.brands-slider
@@ -14690,36 +14703,15 @@ xn--d1ameqo2a7c.xn--p1ai##.left_banner
 xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 !! todo
-/jquery.sticky.js$important
-
-! don't block - it may be used in non-ad video for previews
-!/rotator.js
-
-/track.js$important
-
-/reklama.js$important
 
 ! is in EasyList and Fanboy’s
 /rodo.js$important
-
-! is in EasyList
-##.ad_float
-
-##.banner-slider
-
-##.brand-slider
-
-##.fullwidthbanner-container
-##.maxwidth-banner
 
 ! from AdGuard
 /crm/site_button/loader_*.js
 
 ! from EasyList and Fanboy's
 /no-right-click.$script
-
-! from EasyPrivacy
-/autotrack.carbon.js
 
 /smartTagging.js
 
