@@ -5286,6 +5286,16 @@ jackofalladmins.com##.author__avatar
 
 joom.com##[class^=logo]
 
+! there is an @@||joyreactor.cc^$generichide exclusion in some filters.
+! is in Ru AdList and Fanboy's
+joyreactor.cc##.uhead_share
+! is in AdGuard
+joyreactor.cc###container > span > a[rel="nofollow"]
+! from Ru AdList
+joyreactor.cc##+js(abort-on-property-read, Joyreactor.show_ads)
+||joyreactor.cc/pics/avatar/user/$image
+||joyreactor.cc/images/default_avatar.jpeg
+
 juniper.net###mcxInvitationModal
 
 just.ru##footer
@@ -5293,6 +5303,15 @@ just.ru##footer
 justanswer.com##.th-gqa-question-box
 justanswer.com##.th-media-footer
 justanswer.com##.tiles-wrapper
+
+! "Сервис для продажи курсов онлайн"
+justclick.ru$3p
+justclick.ru#@#.subscribe-form
+@@||justclick.ru/subscribe/process
+
+! from EasyList
+||jwpcdn.com/player/plugins/vast/
+||jwpsrv.com/watermarks/
 
 kevinholman.com##.site-img-logo
 ! favicon?
@@ -7544,24 +7563,6 @@ joom.com/*/getGoogleAnalyticsClientID
 jorgebernhardt.com##.has-fixed-header.mb-brand
 jorgebernhardt.com##.mb-header-holder
 
-! there is an @@||joyreactor.cc^$generichide exclusion in some filters.
-! is in Ru AdList and Fanboy's
-joyreactor.cc##.uhead_share
-! is in AdGuard
-joyreactor.cc###container > span > a[rel="nofollow"]
-! from Ru AdList
-joyreactor.cc##+js(abort-on-property-read, Joyreactor.show_ads)
-||joyreactor.cc/pics/avatar/user/$image
-||joyreactor.cc/images/default_avatar.jpeg
-
-! "Сервис для продажи курсов онлайн"
-justclick.ru$3p
-justclick.ru#@#.subscribe-form
-@@||justclick.ru/subscribe/process
-
-! from EasyList
-||p.jwpcdn.com/player/plugins/vast/
-||jwpsrv.com/watermarks/
 
 k31.ru##.modern-appo-btn.button
 
