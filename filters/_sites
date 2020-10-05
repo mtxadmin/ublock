@@ -11,7 +11,193 @@
 
 
 !! banners
-! generalized
+!
+! urls
+! comments is preferably inline with  # 
+! general first, specific last
+!
+/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script  # from Fanboy's. Matches http://www.zlfgedpuxrbpgm.com/xtzj.js and http://www.zckphynp.com/d.js
+.ru/proxy_*.php?init_form=$script  # ad scripts  # from AdGuard
+/?dm=*&blogid=$script,domain=~wordpress.org  # ad scripts  # is in EasyPrivacy 
+/-160x600-$important
+/_160x600.$important
+! from EasyList, modified
+_468x60.$important
+/.468x60_$important
+/.468x80.$important
+/.468x80-$important
+/_728x90-$important
+/728x90.$important
+_728x90.$important
+/achecker.js
+/ad.js$important
+/ad1.js$important
+/ad-banners
+/adblock-detect/*  # from Adblock Warning Removal
+/adblock.js$important
+/adblockTester.js  # from EasyList China
+/adflash/*  # from EasyList China
+/adframe.js$important
+/adframes/*$important
+/adframetop$important
+/adloaderplus?  # from EasyList
+/adlogger_tracker.js?  # from Ru AdList
+/adpuba/*  # from EasyList China
+/ads.gif$important
+/ads.js$important
+/ads-  # from EasyList: .com/ads-
+?ads=$domain=~booking.loganair.co.uk  # from EasyList
+/adsbygoogle.js$important
+-adserver.  # from EasyList
+-ads-manager/  # from EasyList
+/ads-iframe/*
+/AdsMarketing/*
+/adsmin/*  # from EasyList
+/adsnative/*
+/adsplacer.
+/adunit.js$important
+/adv.js$important
+=advanced-ads-  # from EasyList
+/advanced-ads-$domain=~wordpress.org  # is in EasyList
+_advert/  # from EasyList
+/advert.js$important
+/advertise.
+/advertise.js$important
+/advertisement.js$xmlhttprequest,important
+/advertisement.js$important
+/advpic/*  # from EasyList China
+/affinity.js
+/ajax-banner.js
+/async-ads.js$important
+-auto-ads-  # from EasyList
+/avada-scrollspy.js
+/autotrack.carbon.js  # from EasyPrivacy
+/b/ss/*/js-  # is in AdGuard and EasyPrivacy
+	! dell.com/b/ss/dellglobalonline/1/JS-
+/ban/*
+/baner_$important
+/banery/*
+/%21banery/*
+/banner$image
+/banner/*
+/banner.js$important
+/banner.php
+/bannerBackgroundImage
+/_banner_common.php
+/_banners/*
+/banners/*
+/banner-support.js
+/bens/vinos.js?$important  # is in AdGuard
+/bitrix/spread.php?$important  # is in RU AdList, EasyPrivacy, AdGuard
+/bn/tracker/*  # from EasyPrivacy
+/bnrs/*
+/bold-upsell-custom.js
+/brand.js
+/bugsnag.min.js
+/clipboard.min.js$important
+/carbon_sticky_ads.js
+/context_ads/*
+-contrib-ads/  # from EasyList
+/copyright.js
+/copyright.min.js
+/dcmads.js
+/dfp_mobile.js
+/easy-social-share-buttons.min.js
+/fixads.js
+! is in EasyList
+/footer_ads.
+/fuckadblock/*$important
+/fuckadblock.js$important
+/ga.js
+/gampad/*
+	!/gampad/ad
+	!/gampad/ads
+	!/gampad/adx
+	!/gampad/google_ads.js
+/googlead.js$important
+-google-tag-manager/$script  # is in EasyPrivacy
+/gpt/pubads_impl_$script
+/HarbergerTaxBanner
+-images/ad-  # is in EasyList
+/images/ad_  # is in AdGuard and RU AdList
+/informer/*$third-party
+/jllikepro/js/buttons.
+/jquery.adsplace
+/jquery.bootstrap.scrollspy.js
+/jquery.iframetracker
+/jquery.sticky.js$important
+/jquery.stickyPanel.min.js
+/landing/*$domain=~gosuslugi.ru|~etutorium.com|~univerpp.ru|~univer-pp.ru|~walletone.com
+/mads/gma
+/main-banner/*
+/matomo.js  # from EasyPrivacy
+/metrika/*$important
+/metrika.js$important
+/mobile-banner/*
+/native.php
+    ! from AdGuard
+    !.com/native.php?b=
+/newrelic-browser.js
+/openx/*
+/openxtag.js$important
+/pagead/*
+/pagead2/*
+/pageview.js  # is in EasyPrivacy
+/pcs/click^
+/ping/*$xmlhttprequest
+/pixel.php?  # in EasyPrivacy and AdGuard
+/popunder.js$important
+/profitwell.js$important
+/promobanner
+/pubads/*$important
+/reklam/*$domain=~reklam.com.tr  # from EasyList
+/reklama.js$important
+/renderbanner.do?  # is in EasyList
+/retargeting/*
+!/rotator.js  # don't block - it may be used in non-ad video for previews
+/rotator.min.js$important
+/ru-n4p/*.js$important  # from AdGuard
+/sam-pro-free/*  # from EasyList
+/sam-pro-images/*  # from EasyList
+/scripttag_loader.min.js
+/scrollspy.js
+/segment.js$important
+/show_ads.js$important
+/show-ads.js$important
+/showads.$important  # disable exclusion from Fanboy’s Enhanced Tracking List
+/siropu/am/display.$script  # from RU AdList
+/sitecatalyst/*  # from Fanboy’s
+/smart-app-banner/
+/smart-app-banner.js
+/smartBanner/*
+/smartbanner.js
+/smartbanner.min.js$important
+/stickyads.  # is in EasyList
+/theia-sticky-sidebar/*
+/theia-sticky-sidebar.js
+/test-widget/*
+/trafficguard.js$important
+/uedata?$important  # from AdGuard Tracking Protection and EasyPrivacy, modified
+/upsell.js
+/upsell_hero$important
+/upselltracker.js
+/uutils.fcg?  # from EasyPrivacy
+/vast/ads-  # from EasyList
+/video_banner.js
+/webbanners/*
+/widget/*$domain=~hypercomments.com|~hse.ru|~alicdn.com|~domclick.ru
+||/wp-content/*/ad-$script,important  # disable exclusion from Fanboy’s Enhanced Tracking List
+||/wp-content/*/ads*.js$script,important  # disable exclusions from Fanboy's list
+/www/delivery/*  # from EasyList
+/xavi4.php
+/xtcore.js  # is in AdGuard and EasyPrivacy
+/youxia.js  # from EasyList China, modified
+/zuoxia.js  # from EasyList China, modified
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
 ~cnn.com##[class$="-ad"]:not(html):not(body):not(article)
     ! is in EasyList
     ##.inline-ad
@@ -31,7 +217,7 @@
     ! is in EasyList
     ##.ad_unit
     ! from EasyList
-    !##div[id^="ad_rect_"]
+    ##div[id^="ad_rect_"]
 ~cnn.com,~ferra.ru,~indicator.ru##[class^="ad-"]:not(html):not(body):not(article)
     ! is in EasyList
     ##.ad-unit
@@ -405,239 +591,6 @@
 ##.wrap-banner
 ! is in Ru AdList
 ##.ya-direct
-!
-! from Fanboy's. Matches http://www.zlfgedpuxrbpgm.com/xtzj.js and http://www.zckphynp.com/d.js
-/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script
-! ad scripts
-! from AdGuard
-.ru/proxy_*.php?init_form=$script
-! ad scripts
-! is in EasyPrivacy
-/?dm=*&blogid=$script,domain=~wordpress.org
-/-160x600-$important
-/_160x600.$important
-! from EasyList, modified
-_468x60.$important
-/.468x60_$important
-/.468x80.$important
-/.468x80-$important
-/_728x90-$important
-/728x90.$important
-_728x90.$important
-/achecker.js
-/ad.js$important
-/ad1.js$important
-/ad-banners
-! from Adblock Warning Removal
-/adblock-detect/*
-/adblock.js$important
-! from EasyList China
-/adblockTester.js
-! from EasyList China
-/adflash/*
-/adframe.js$important
-/adframes/*$important
-/adframetop$important
-! from EasyList
-/adloaderplus?
-! from Ru AdList
-/adlogger_tracker.js?
-! from EasyList China
-/adpuba/*
-/ads.gif$important
-/ads.js$important
-/ads-
-    ! from EasyList
-    !.com/ads-
-! from EasyList
-?ads=$domain=~booking.loganair.co.uk
-/adsbygoogle.js$important
-! from EasyList
--adserver.
-! from EasyList
--ads-manager/
-/ads-iframe/*
-/AdsMarketing/*
-! from EasyList
-/adsmin/*
-/adsnative/*
-/adsplacer.
-/adunit.js$important
-/adv.js$important
-! from EasyList
-=advanced-ads-
-! is in EasyList
-/advanced-ads-$domain=~wordpress.org
-! from EasyList
-_advert/
-/advert.js$important
-/advertise.js$important
-/advertise.
-/advertisement.js$xmlhttprequest,important
-/advertisement.js$important
-! from EasyList China
-/advpic/*
-/affinity.js
-/ajax-banner.js
-/async-ads.js$important
-! from EasyList
--auto-ads-
-/avada-scrollspy.js
-! from EasyPrivacy
-/autotrack.carbon.js
-! is in AdGuard and EasyPrivacy
-/b/ss/*/js-
-	! dell.com/b/ss/dellglobalonline/1/JS-
-/ban/*
-/baner_$important
-/banery/*
-/%21banery/*
-/banner$image
-/banner/*
-/banner.js$important
-/banner.php
-/bannerBackgroundImage
-/_banner_common.php
-/_banners/*
-/banners/*
-/banner-support.js
-! is in AdGuard
-/bens/vinos.js?$important
-! from EasyPrivacy
-/bn/tracker/*
-/bnrs/*
-/bold-upsell-custom.js
-/brand.js
-/bugsnag.min.js
-/clipboard.min.js$important
-/carbon_sticky_ads.js
-/context_ads/*
-! from EasyList
--contrib-ads/
-/copyright.js
-/copyright.min.js
-/dcmads.js
-/dfp_mobile.js
-/easy-social-share-buttons.min.js
-/fixads.js
-! is in EasyList
-/footer_ads.
-/fuckadblock/*$important
-/fuckadblock.js$important
-/ga.js
-/gampad/*
-!/gampad/ad
-!/gampad/ads
-!/gampad/adx
-!/gampad/google_ads.js
-/googlead.js$important
-/gpt/pubads_impl_$script
-/HarbergerTaxBanner
-! is in EasyList
--images/ad-
-! is in AdGuard and RU AdList
-/images/ad_
-/informer/*$third-party
-/jllikepro/js/buttons.
-/jquery.adsplace
-/jquery.bootstrap.scrollspy.js
-/jquery.iframetracker
-/jquery.sticky.js$important
-/jquery.stickyPanel.min.js
-/landing/*$domain=~gosuslugi.ru|~etutorium.com|~univerpp.ru|~univer-pp.ru|~walletone.com
-/mads/gma
-/main-banner/*
-! from EasyPrivacy
-/matomo.js
-/metrika/*$important
-/metrika.js$important
-/mobile-banner/*
-/native.php
-    ! from AdGuard
-    !.com/native.php?b=
-/newrelic-browser.js
-/openx/*
-/openxtag.js$important
-/pagead/*
-/pagead2/*
-! is in EasyPrivacy
-/pageview.js
-/pcs/click^
-/ping/*$xmlhttprequest
-! in EasyPrivacy and AdGuard
-/pixel.php?
-/popunder.js$important
-/profitwell.js$important
-/promobanner
-/pubads/*$important
-! from EasyList
-/reklam/*$domain=~reklam.com.tr
-/reklama.js$important
-! is in EasyList
-/renderbanner.do?
-/retargeting/*
-! don't block - it may be used in non-ad video for previews
-!/rotator.js
-/rotator.min.js$important
-! from AdGuard
-/ru-n4p/*.js$important
-! from EasyList
-/sam-pro-free/*
-! from EasyList
-/sam-pro-images/*
-/scripttag_loader.min.js
-/scrollspy.js
-/segment.js$important
-/show_ads.js$important
-/show-ads.js$important
-! disable exclusion from Fanboy’s Enhanced Tracking List
-/showads.$important
-! from Fanboy’s
-/sitecatalyst/*
-/smart-app-banner/
-/smart-app-banner.js
-/smartBanner/*
-/smartbanner.js
-/smartbanner.min.js$important
-! is in EasyList
-/stickyads.
-/theia-sticky-sidebar/*
-/theia-sticky-sidebar.js
-/test-widget/*
-/trafficguard.js$important
-! from AdGuard Tracking Protection and EasyPrivacy, modified
-/uedata?$important
-/upsell.js
-/upsell_hero$important
-/upselltracker.js
-! from EasyPrivacy
-/uutils.fcg?
-! from EasyList
-/vast/ads-
-/video_banner.js
-/webbanners/*
-/widget/*$domain=~hypercomments.com|~hse.ru|~alicdn.com|~domclick.ru
-! from EasyList
-/www/delivery/*
-/xavi4.php
-! is in AdGuard and EasyPrivacy
-/xtcore.js
-! from EasyList China, modified
-/youxia.js
-! from EasyList China, modified
-/zuoxia.js
-
-! is in RU AdList, EasyPrivacy, AdGuard
-/bitrix/spread.php?$important
-! is in EasyPrivacy
--google-tag-manager/$script
-! from RU AdList
-/siropu/am/display.$script
-! disable exclusion from Fanboy’s Enhanced Tracking List
-@@/wp-content/*/ad-$script,badfilter
-! disable exclusions from Fanboy's list
-@@/wp-content/*/ads*.js$script,badfilter
-@@/js/ads.js$script,badfilter
 
 
 
@@ -669,6 +622,13 @@ _advert/
 
 
 !! callouts and calls to action
+/alert-popup/*
+/cta/*
+/intervolga.conversionpro/*
+/skyweb24.popuppro/*
+/sms-alert-popup/*
+/sms-thankyou-popup/*
+/sms-wait-popup/*
 ##[class*="-callout"]:not(html):not(body):not(article)
 ##[id*="-callout"]:not(html):not(body):not(article)
 ##[class*="_callout"]:not(html):not(body):not(article)
@@ -706,13 +666,6 @@ _advert/
 ###hellobar
 ##.learn-more-cta
 ##.top-cta
-/alert-popup/*
-/cta/*
-/intervolga.conversionpro/*
-/skyweb24.popuppro/*
-/sms-alert-popup/*
-/sms-thankyou-popup/*
-/sms-wait-popup/*
 
 
 
@@ -747,118 +700,99 @@ volveter.ru##.has_offer_prop
 
 
 !! counters and trackers
-~yandex.*##.counter
-##.counters
-##.count-visitor
-##.footer-counters
+!
+! hosts
+! comments is preferably inline with  #
+!
+://top.$script,3p  # from Ru AdList: counter scripts from top.* subdomains
+!
+! urls
+! comments is preferably inline with  # 
+! general first, specific last
+!
+/1x1.gif$important  # from RU AdList, modified
+/1x1.png$important  # from RU AdList, modified
+/1x1.trans.  # from Fanboy's
+/1x1transparent.  # is in Fanboy's
+
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
 ! from AdGuard Tracking Protection
 ##img[width="88"][height="31"]
 ! from AdGuard Tracking Protection
 ##img[src*="counter.yadro.ru"]
+~yandex.*##.counter
+##.counters
+##.count-visitor
+##.footer-counters
 ##.post-views
 ##.td-post-views
-! from Ru AdList: counter scripts from top.* subdomains
-://top.$script,3p
-! from EasyPrivacy
-.com/track?$image
-! from Ru AdList
-^counter.$image,3p
-! from RU AdList, modified
-/1x1.gif$important
-! from RU AdList, modified
-/1x1.png$important
-! from Fanboy's
-/1x1.trans.
-! is in Fanboy's
-/1x1transparent.
+
+/track?$image  # from EasyPrivacy: .com/track?$image
 /ajax_counter.php
-! from EasyPrivacy
-_analytics.js?
+_analytics.js?  # from EasyPrivacy
 /analytics/$important,domain=~dropbox.com|~globalvoices.org|~sberbank.ru
     ! увы, но иначе в Сбербанк и Домклик не входит
     !||sberbank.ru/*analytics$script,redirect=noopjs
     @@||sberbank.ru/*analytics$script
 /api/tracker/*
-! video ad counter
-/cast_sender.js$important
+/cast_sender.js$important  # video ad counter
 /cnt.js
 /count.js
-! from RU AdList,modified
-/counter^$important
+^counter.$image,3p  # from Ru AdList
+/counter^$important  # from RU AdList,modified
 /counter.aspx
 .counter.js
 /counter.js$important
 /counter.min.js$important
 /crossdevice.min.js$important
-! https://wordpress.org/support/topic/remove-render-blocking-javascript-devicepx-jetpack-js/
-/devicepx-jetpack.js$important
-! is in EasyPrivacy
-/engine/ping?
-! from EasyPrivacy
-/event/track?
+/devicepx-jetpack.js$important  # https://wordpress.org/support/topic/remove-render-blocking-javascript-devicepx-jetpack-js/
+/engine/ping?  # is in EasyPrivacy
+/event/track?  # from EasyPrivacy
 /events-metrica-scripts.js
-! is in EasyPrivacy and AdGuard
-/fingerprint2.min.js$important
-||jsdelivr.net/fingerprintjs2/
-! from AdGuard
-?frm=script&se_referrer=
+/fingerprint2.min.js$important  # is in EasyPrivacy and AdGuard
+	||jsdelivr.net/fingerprintjs2/  # Also
+?frm=script&se_referrer=  # from AdGuard
 /ga/analytics.js
 /google-analytics-premium/*$important
-! is in AdGuard: /wp-content/cache/busting/google-tracking/*
-/google-tracking/*
+/google-tracking/*  # is in AdGuard: /wp-content/cache/busting/google-tracking/*
 /gtagservices/*
-! from EasyPrivacy
-.iframetracker/
-! from EasyPrivacy
-/js/analytics.
-! from EasyPrivacy
-_loghuman=
+.iframetracker/  # from EasyPrivacy
+/js/analytics.  # from EasyPrivacy
+_loghuman=  # from EasyPrivacy
 /metric.js
-! from Fanboy's
-/mod_pagespeed_beacon?
-! from uBlock
-/ntfc.php?$script
-! from EasyPrivacy
-/packaged-js/trackers.
-! from AdGuard
-_pagespeed_beacon?
-! is in EasyPrivacy
-/pageviews/*$domain=~stats.wikimedia.org|~tools.wmflabs.org
+/mod_pagespeed_beacon?  # from Fanboy's
+/ntfc.php?$script  # from uBlock
+/packaged-js/trackers.  # from EasyPrivacy
+_pagespeed_beacon?  # from AdGuard
+/pageviews/*$domain=~stats.wikimedia.org|~tools.wmflabs.org  # is in EasyPrivacy
 /parking-crew.js
 /platform-detect
-! from Fanboy's
-/pum-site-scripts.
-! from EasyPrivacy
-/px.gif?
-! from EasyPrivacy
-/px.js?ch=$script
-! from EasyPrivacy
-.ru/0.gif?
-! from EasyPrivacy
-/ruxitagentjs_
+/pum-site-scripts.  # from Fanboy's
+/px.gif?  # from EasyPrivacy
+/px.js?ch=$script  # from EasyPrivacy
+/0.gif?  # from EasyPrivacy: .ru/0.gif?
+/ruxitagentjs_  # from EasyPrivacy
 /send_watching/*
-! from EasyPrivacy
-/setbucket?signature=
-! is in EasyPrivacy
-/stat/count
+/setbucket?signature=  # from EasyPrivacy
+/stat/count  # is in EasyPrivacy
 /stat.php$domain=~sci-article.ru
-! is in EasyPrivacy
-/stats.php?*http
+/stats.php?*http  # is in EasyPrivacy
 /tag-manager-client/*
 /track.js$important
 /track.min.js
-! from EasyPrivacy
-/track_click?
+/track_click?  # from EasyPrivacy
 /tracker.js$important
 /tracking.min.js
-! is in EasyPrivacy
--track-inview.
+-track-inview.  # is in EasyPrivacy
 /utm-tracking.js$important
 /video.counters.js$important
 /wle_tracker.js
 /?wordfence
-! is in EasyPrivacy
-/wt?p=
+/wt?p=  # is in EasyPrivacy
 /umami.js$important
 /user-geo-info
 /vantage$script
