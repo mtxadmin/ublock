@@ -30,62 +30,81 @@ _468x60.$important
 /728x90.$important
 _728x90.$important
 /achecker.js
+/ad/*$important,domain=~condenast-media.gcdn.co|~etutorium.com|~imfdb.org  # condenast-media.gcdn.co (admagazine.ru) is not ads, it is Arch Design
 /ad.js$important
 /ad1.js$important
+/adbanner$important
 /ad-banners
 /adblock-detect/*  # from Adblock Warning Removal
 /adblock.js$important
 /adblockTester.js  # from EasyList China
+/adclick$important
 /adflash/*  # from EasyList China
 /adframe.js$important
 /adframes/*$important
 /adframetop$important
+/ad-inserter/*  # from EasyList
 /adloaderplus?  # from EasyList
 /adlogger_tracker.js?  # from Ru AdList
 /adpuba/*  # from EasyList China
+/ads/*$important,domain=~cnn.com  # exclusion - cnn loads page through json: https://cdn.cnn.com/ads/cnni/cnni_homepage.json
+/ads_$important,domain=~vk.com
+/ads-  # from EasyList: .com/ads-
+/ads.$important
+/ads?
 /ads.gif$important
 /ads.js$important
-/ads-  # from EasyList: .com/ads-
+/adsjs/*
 ?ads=$domain=~booking.loganair.co.uk  # from EasyList
 /adsbygoogle.js$important
 -adserver.  # from EasyList
+/AdsShow.
 -ads-manager/  # from EasyList
 /ads-iframe/*
 /AdsMarketing/*
 /adsmin/*  # from EasyList
 /adsnative/*
 /adsplacer.
+/ad_status.js$important
+/adunion/*
 /adunit.js$important
+/adv/*
+/adv?
 /adv.js$important
 =advanced-ads-  # from EasyList
 /advanced-ads-$domain=~wordpress.org  # is in EasyList
 _advert/  # from EasyList
 /advert.js$important
+/advert3.js$important
 /advertise.
 /advertise.js$important
 /advertisement.js$xmlhttprequest,important
 /advertisement.js$important
+/advertising/$important
 /advpic/*  # from EasyList China
+/adwords/$important
+/adx/*
 /affinity.js
 /ajax-banner.js
+/amp-ad-  # is in EasyList
 /async-ads.js$important
 -auto-ads-  # from EasyList
 /avada-scrollspy.js
-/autotrack.carbon.js  # from EasyPrivacy
+/awaps$important
 /b/ss/*/js-  # is in AdGuard and EasyPrivacy
 	! dell.com/b/ss/dellglobalonline/1/JS-
 /ban/*
 /baner_$important
 /banery/*
 /%21banery/*
-/banner$image
+/banner$important,domain=~doshirak.com|~sberbank.ru
 /banner/*
 /banner.js$important
 /banner.php
 /bannerBackgroundImage
 /_banner_common.php
 /_banners/*
-/banners/*
+/banners/*$important
 /banner-support.js
 /bens/vinos.js?$important  # is in AdGuard
 /bitrix/spread.php?$important  # is in RU AdList, EasyPrivacy, AdGuard
@@ -131,12 +150,13 @@ _advert/  # from EasyList
 /mads/gma
 /main-banner/*
 /matomo.js  # from EasyPrivacy
-/metrika/*$important
-/metrika.js$important
+/media/adv/*$important
+/media/upload_adv/*$image
 /mobile-banner/*
 /native.php
     ! from AdGuard
     !.com/native.php?b=
+/newAd/*
 /newrelic-browser.js
 /openx/*
 /openxtag.js$important
@@ -151,9 +171,10 @@ _advert/  # from EasyList
 /promobanner
 /pubads/*$important
 /reklam/*$domain=~reklam.com.tr  # from EasyList
-/reklama.js$important
+/reklama$important
 /renderbanner.do?  # is in EasyList
 /retargeting/*
+/rotator/*
 !/rotator.js  # don't block - it may be used in non-ad video for previews
 /rotator.min.js$important
 /ru-n4p/*.js$important  # from AdGuard
@@ -310,6 +331,7 @@ _advert/  # from EasyList
 ##[id*="sponsor"]:not(html):not(body):not(article)
 ##[class^="WNAd"]:not(html):not(body):not(article)
 ##[id^="WNAd"]:not(html):not(body):not(article)
+##[src^="/images/banner"]
 ! other
 ##[href="javascript:bookmark()"]
 ##[href^="javascript:AddComplaint"]
@@ -720,7 +742,11 @@ _analytics.js?  # from EasyPrivacy
     ! увы, но иначе в Сбербанк и Домклик не входит
     !||sberbank.ru/*analytics$script,redirect=noopjs
     @@||sberbank.ru/*analytics$script
+/antibot.php
 /api/tracker/*
+/atrk.gif
+/autotrack.carbon.js  # from EasyPrivacy
+/beacon$important
 /cast_sender.js$important  # video ad counter
 /cnt.js
 /count.js
@@ -732,6 +758,8 @@ _analytics.js?  # from EasyPrivacy
 /counter.min.js$important
 /crossdevice.min.js$important
 /devicepx-jetpack.js$important  # https://wordpress.org/support/topic/remove-render-blocking-javascript-devicepx-jetpack-js/
+/dspixel.js$important
+/empty.gif
 /engine/ping?  # is in EasyPrivacy
 /event/track?  # from EasyPrivacy
 /events-metrica-scripts.js
@@ -746,6 +774,10 @@ _analytics.js?  # from EasyPrivacy
 /js/analytics.  # from EasyPrivacy
 _loghuman=  # from EasyPrivacy
 /metric.js
+/metrica.js$important
+/metrics.js$important
+/metrika/*$important
+/metrika.js$important
 /mod_pagespeed_beacon?  # from Fanboy's
 /ntfc.php?$script  # from uBlock
 /packaged-js/trackers.  # from EasyPrivacy
@@ -763,6 +795,7 @@ _pagespeed_beacon?  # from AdGuard
 /stat/count  # is in EasyPrivacy
 /stat.php$domain=~sci-article.ru
 /stats.php?*http  # is in EasyPrivacy
+/superstat/collect
 /tag-manager-client/*
 /track?$image  # from EasyPrivacy: .com/track?$image
 /track.js$important
@@ -780,6 +813,7 @@ _pagespeed_beacon?  # from AdGuard
 /vantage$script
 /video.counters.js$important
 /yametrika/*
+/yandex-metrica-watch/*
 !
 ! cosmetic filters
 ! general first, specific last
@@ -1846,6 +1880,13 @@ tarif-24.ru##.mh-ticker-bottom
 
 
 !! forum engines elements
+/avatar/*.gif  # many noisy forum gifs
+/noavatar.png  # ugly default avatar
+/icon_user_offline.gif
+/images/ranks/*$image  # forum ranks images
+/topic_read.gif  # PhpBB gifs
+/topic_read_hot.gif  # PhpBB gifs
+/user_offline.gif
 ! vbulletin forum "you can't do" block (one of)
 ##.bbcodeblock
 ###collapseobj_forumrules
@@ -1866,13 +1907,6 @@ tarif-24.ru##.mh-ticker-bottom
 ###qpsContainer
 ##.qpsButton
 ##.youcandoblock
-/icon_user_offline.gif
-! forum ranks images
-/images/ranks/*$image
-/statusicon/user_offline.gif
-! PhpBB gifs
-/topic_read.gif
-/topic_read_hot.gif
 
 
 
@@ -1904,6 +1938,9 @@ tarif-24.ru##.mh-ticker-bottom
 
 
 !! other
+! from Fanboy’s Annoyance List
+/particles.min.js
+/post-attention.png
 ~clickmeeting.com###branding
 ! is in EasyList
 ###branding_click
@@ -1930,11 +1967,6 @@ tarif-24.ru##.mh-ticker-bottom
     !fromreallife.wordpress.com##.widget_media_image
     !techbro.ru##.widget_media_image
 ##.widget_recent_comments
-/avatar/*.gif
-/noavatar.png
-! from Fanboy’s Annoyance List
-/particles.min.js
-/post-attention.png
 
 
 ! from Fanboy’s Enhanced Tracking List
@@ -1946,67 +1978,22 @@ tarif-24.ru##.mh-ticker-bottom
 ##[href="http://www.e-host.org.ua"]
 ##[href="http://lottery-champion.com.ua/"]
 ##[href^="https://www.paypal.me/"]
-##[src^="/images/banner"]
 
-*/forum/styles/subsilver2/imageset/ru/icon_user_offline.gif
-*/superstat/collect
-! condenast-media.gcdn.co (admagazine.ru) is not ads, it is Arch Design
-/ad/*$important,domain=~condenast-media.gcdn.co|~etutorium.com|~imfdb.org
-/adbanner$important
-/adclick$important
-! from EasyList
-/ad-inserter/*
-! exclusion - cnn loads page through json: https://cdn.cnn.com/ads/cnni/cnni_homepage.json
-*/ads/*$important,domain=~cnn.com
-/ads_$important,domain=~vk.com
-/ads.$important
-/ads?
-/AdsShow.
-/ad_status.js$important
-/adsjs/*
-/adunion/*
-/adv/*
-/adv?
-/advert3.js$important
-/advertising/$important
-/advertise.js$important
-/adwords/$important
-/adx/*
-! is in EasyList
-/amp-ad-
-/antibot.php
-/atrk.gif
-/awaps$important
-/banner$important,domain=~doshirak.com,~sberbank.ru
-/banners/*$important
-/beacon$important
 /branding
-/empty.gif
-/dspixel.js$important
-! from CJX's EasyList Lite, modified
-/js.ng/*
-/media/upload_adv/*$image
-/media/adv/*$important
-/metrica.js$important
-/metrics.js$important
-/newAd/*
+/js.ng/*  # from CJX's EasyList Lite, modified
 /paystats-public.js
-! from CJX's EasyList Lite
-.php?zoneid=
+.php?zoneid=  # from CJX's EasyList Lite
 /recordrtc.min.js
-/reklama$important
-/rotator/*
 /swf/*$important
 /swfbin/*$important
 /swfs/*$important
-! from CJX's EasyList Lite
-.swf?clicktag=
+.swf?clicktag=  # from CJX's EasyList Lite
 /swfobject/*
 /swfobject.js$important,domain=~roscosmos.ru
 /swfobject.min.js
 /transparent-pixel.
 /upload/*.swf
-/yandex-metrica-watch/*
+
 
 
 
