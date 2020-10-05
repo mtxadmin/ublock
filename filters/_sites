@@ -714,24 +714,6 @@ volveter.ru##.has_offer_prop
 /1x1.png$important  # from RU AdList, modified
 /1x1.trans.  # from Fanboy's
 /1x1transparent.  # is in Fanboy's
-
-!
-! cosmetic filters
-! general first, specific last
-! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
-!
-! from AdGuard Tracking Protection
-##img[width="88"][height="31"]
-! from AdGuard Tracking Protection
-##img[src*="counter.yadro.ru"]
-~yandex.*##.counter
-##.counters
-##.count-visitor
-##.footer-counters
-##.post-views
-##.td-post-views
-
-/track?$image  # from EasyPrivacy: .com/track?$image
 /ajax_counter.php
 _analytics.js?  # from EasyPrivacy
 /analytics/$important,domain=~dropbox.com|~globalvoices.org|~sberbank.ru
@@ -782,21 +764,38 @@ _pagespeed_beacon?  # from AdGuard
 /stat.php$domain=~sci-article.ru
 /stats.php?*http  # is in EasyPrivacy
 /tag-manager-client/*
+/track?$image  # from EasyPrivacy: .com/track?$image
 /track.js$important
 /track.min.js
 /track_click?  # from EasyPrivacy
 /tracker.js$important
 /tracking.min.js
 -track-inview.  # is in EasyPrivacy
-/utm-tracking.js$important
-/video.counters.js$important
 /wle_tracker.js
 /?wordfence
 /wt?p=  # is in EasyPrivacy
 /umami.js$important
 /user-geo-info
+/utm-tracking.js$important
 /vantage$script
+/video.counters.js$important
 /yametrika/*
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
+! from AdGuard Tracking Protection
+##img[width="88"][height="31"]
+! from AdGuard Tracking Protection
+##img[src*="counter.yadro.ru"]
+~yandex.*##.counter
+##.counters
+##.count-visitor
+##.footer-counters
+##.post-views
+##.td-post-views
+
 
 
 !! Base64 reflinks
