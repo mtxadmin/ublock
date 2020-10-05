@@ -2,6 +2,7 @@
 !! Facebook
 !
 ! hosts
+! comments is preferably inline with  #
 !
 # About Facebook Pixel: https://www.facebook.com/business/help/952192354843755
 b-graph.facebook.com$domain=~facebook.com|~fb.com,important  # from 1Hosts
@@ -15,6 +16,8 @@ z-p3-sonar.fdar1-1.fna.fbcdn.net$domain=~facebook.com|~fb.com,important  # from 
 ||static.ak.fbcdn.net$domain=~facebook.com|~fb.com  # is in Anti-Facebook
 !
 ! urls
+! comments is preferably inline with  # 
+! general first, specific last
 !
 /assets/facebook-$image  # is in Fanboy's and Ru AdList
 _facebook_icon.  # from Fanboy's and Ru AdList
@@ -36,12 +39,13 @@ _facebook_icon.  # from Fanboy's and Ru AdList
 /img/fb.  # is in Fanboy's
 _social_fb.  # from Fanboy’s
 /resources/facebook.  # is in Fanboy's
-!
 ||facebook.com/audiencenetwork/$third-party  # from EasyList
 ||facebook.com/plugins/$important,domain=~facebook.com|~fb.com|~freepresets.com  # from AdGuard Social Media
 ||facebook.com/tr?$important
 !
-! cosmetic
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
 ! is in Ru AdList and Fanboy's
 ##a[href^="http://www.facebook.com/sharer.php"]
@@ -117,6 +121,45 @@ facebook.com###pagelet_video_home_watch_list_rhc
 
 
 !! VK
+!
+! hosts
+! comments is preferably inline with  #
+!
+api.vk.com$domain=~vk.com|~foto-map.ru,important
+||stats.vk-portal.net  # is in EasyPrivacy
+!
+! urls
+! comments is preferably inline with  # 
+! general first, specific last
+!
+/ico_vk.
+/ico-vk.
+/ico_vkontakte.gif
+/icon_vk.
+/vc.jpg
+/vk.gif
+/vk.jpg
+/vk.png
+/vk.svg$domain=~votesmart.appspot.com
+/vk2.png
+/vk_easy.js
+/vk_icon.png
+/vkontakte.gif
+/vkontakte.png
+/img/vkontakte
+||userapi.com/js/api/$domain=~vk.com,important
+||vk.com/js^$third-party,important,domain=~senler.ru|~vse.fm
+||vk.com/js/api/openapi.js$third-party,important,domain=~senler.ru|~vse.fm  # disabled rule from AdList RU
+||vk.com/rtrg?  # from EasyPrivacy
+||vk.com/share.php$third-party  # from AdGuard
+||vk.com/widget_$domain=~vk.com,important  # modified filter from AdGuard
+||vk.com/widget_comments.php$domain=~vk.com,important
+||vk.com/widget_community.php$domain=~vk.com,important
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
 ~vk.com,~belarus2020.org##[class$="-vk"]:not(html):not(body):not(article)
 ~vk.com##[id$="-vk"]:not(html):not(body):not(article)
 ! from Fanboy's
@@ -148,19 +191,6 @@ facebook.com###pagelet_video_home_watch_list_rhc
 ! is in Ru AdList and Fanboy's
 ##.vkontakte
 ###vkontakte
-||vk.com/js^$third-party,important,domain=~senler.ru|~vse.fm
-! disabled rule from AdList RU
-||vk.com/js/api/openapi.js$third-party,important,domain=~senler.ru|~vse.fm
-||userapi.com/js/api/$domain=~vk.com,important
-! from EasyPrivacy
-||vk.com/rtrg?
-! modified filter from AdGuard
-||vk.com/widget_$domain=~vk.com,important
-! from AdGuard
-||vk.com/share.php$third-party
-||vk.com/widget_comments.php$domain=~vk.com,important
-||vk.com/widget_community.php$domain=~vk.com,important
-api.vk.com$domain=~vk.com|~foto-map.ru,important
 ! from AdGuard
 vk.com##+js(set-constant, noAdsAtAll, true)
 ! is in AdGuard
@@ -177,23 +207,6 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 ##a[href^="http://vkontakte.ru/share.php?"]
 ! is in AdGuard. Old domain but suprisingly still actual and working in 2020
 ##a[href^="https://vkontakte.ru/share.php"]
-! is in EasyPrivacy
-||stats.vk-portal.net
-/ico_vk.
-/ico-vk.
-/ico_vkontakte.gif
-/icon_vk.
-/vc.jpg
-/vk.gif
-/vk.jpg
-/vk.png
-/vk.svg$domain=~votesmart.appspot.com
-/vk2.png
-/vk_easy.js
-/vk_icon.png
-/vkontakte.gif
-/vkontakte.png
-/img/vkontakte
 !
 ! All from RU AdList, modified
 ! Паразиты (встраивают свою рекламу во вконтакт)
@@ -209,6 +222,38 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 
 
 !! Instagram
+!
+! hosts
+! comments is preferably inline with  #
+!
+
+!
+! urls
+! comments is preferably inline with  # 
+! general first, specific last
+!
+/footer/instagram.  # is in Fanboy's
+/images/instagram_  # from Fanboy's
+/img/instagram
+/inst.jpg
+/insta.jpg
+/insta.png
+/instafeed.min.js$important
+/instag.png
+/instagram.png
+/instagram2.png
+/instagram.svg  # from Fanboy's
+||instagram.com/embed.js$third-party,important
+||instagram.com/*/embeds.js$third-party,important
+||instagram.com/ajax/bz
+||instagram.com/client_error/
+!||instagram.com/graphql/ - don't
+||instagram.com^*/users/$3p,important  # from Fanboy’s and RU AdList
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
 ~instagram.com##[class*="Instagram"]:not(html):not(body):not(article)
 ~instagram.com##[id*="Instagram"]:not(html):not(body):not(article)
 ~instagram.com,~belarus2020.org,~livejournal.com##[class*="instagram"]:not(html):not(body):not(article)
@@ -220,37 +265,19 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 ! is in Fanboy's and Ru AdList
 ##img[alt="Instagram"]
 ##.td-icon-instagram
-instagram.com/embed.js$third-party,important
-platform.instagram.com/*/embeds.js$third-party,important
-||instagram.com/ajax/bz
-||instagram.com/client_error/
-!||instagram.com/graphql/ - don't
-! from Fanboy’s and RU AdList
-||instagram.com^*/users/$3p,important
-! is in Fanboy's
-/footer/instagram.
-! from Fanboy's
-/images/instagram_
-/img/instagram
-/inst.jpg
-/insta.jpg
-/insta.png
-/instafeed.min.js$important
-/instag.png
-/instagram.png
-/instagram2.png
-! from Fanboy's
-/instagram.svg
 
 
 
 !! Odnoklassniki
 !
 ! hosts
+! comments is preferably inline with  #
 !
 ||connect.ok.ru$important  # from hpHosts’ Ad and tracking servers 
 !
 ! urls
+! comments is preferably inline with  # 
+! general first, specific last
 !
 /by-insta.jpg
 /ico_odnok.gif
@@ -267,7 +294,9 @@ platform.instagram.com/*/embeds.js$third-party,important
 !ok.ru/res/js/
 ||ok.ru/web-api/pixel
 !
-! cosmetic
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
 ! is in AdGuard
 ~votesmart.appspot.com##a[href^="https://connect.ok.ru/offer?url="]
