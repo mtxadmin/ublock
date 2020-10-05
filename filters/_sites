@@ -21,8 +21,7 @@
 /?dm=*&blogid=$script,domain=~wordpress.org  # ad scripts  # is in EasyPrivacy 
 /-160x600-$important
 /_160x600.$important
-! from EasyList, modified
-_468x60.$important
+_468x60.$important  # from EasyList, modified
 /.468x60_$important
 /.468x80.$important
 /.468x80-$important
@@ -153,9 +152,7 @@ _advert/  # from EasyList
 /media/adv/*$important
 /media/upload_adv/*$image
 /mobile-banner/*
-/native.php
-    ! from AdGuard
-    !.com/native.php?b=
+/native.php  # from AdGuard: .com/native.php?b=
 /newAd/*
 /newrelic-browser.js
 /openx/*
@@ -630,16 +627,13 @@ _advert/  # from EasyList
     ##.promo-button
 ##[id*="promo"]:not(html):not(body):not(article)
 /app.promo$script
-! from Ru AdList
-/load-promo/*
+/load-promo/*  # from Ru AdList
 /promo.
-! mts.ru loads non-ad /Promo/ links in lk
-/promo/*$domain=~livejournal.com|~mts.ru
+/promo/*$domain=~livejournal.com|~mts.ru  # mts.ru loads non-ad /Promo/ links in lk
 /promo.js$important
 /promo.php
 /promo-banner.js$important
-! is in Ru AdList
-/promos/*
+/promos/*  # is in Ru AdList
 
 
 
@@ -716,8 +710,7 @@ vedomosti.ru##.hide-offer__container
 vedomosti.ru##.hide-offer__link
 volveter.ru##.has_offer_prop
 
-! from EasyList
-/click?pid=*&offer$popup,domain=~checkmoney.com.ua
+/click?pid=*&offer$popup,domain=~checkmoney.com.ua  # from EasyList
 
 
 
@@ -1169,8 +1162,7 @@ _pagespeed_beacon?  # from AdGuard
 /arrow-up.png
 ! in RU AdList and Fanboy's
 /avada-to-top.$important
-! from Fanboy's
-/back-to-top.
+/back-to-top.  # from Fanboy's
 ! is in Fanboy's and Ru AdList
 /back_to_top_
 /back-top-top-arrow.png
@@ -1182,18 +1174,15 @@ _pagespeed_beacon?  # from AdGuard
 /jquery.toTop.js
 /ontop.png
 /scrollTo/*
-! from Fanboy's
-/scroll-top.
+/scroll-top.  # from Fanboy's
 ! is in RU AdList and Fanboy's
 /scrolltopcontrol.
     !/js/scrolltopcontrol.js
-! from Fanboy’s Annoyance List
-/scrolltoplugin.
+/scrolltoplugin.  # from Fanboy’s Annoyance List
 /scrolltoplugin.min.js$important
 /scrollup.svg
 /totop.svg
-! from Fanboy's
-.ui.totop.
+.ui.totop.  # from Fanboy's
 /up.png
 /uparrow.png
 
@@ -1263,55 +1252,41 @@ _pagespeed_beacon?  # from AdGuard
 /booster_eu_cookie$important
 ! is in EasyList and Fanboy’s
 /cookie-banner
-! from AdGuard
-/cookiebar.
+/cookiebar.  # from AdGuard
 /cookie_consent.js$important
-! from AdGuard
-/cookieconsent.$important
+/cookieconsent.$important  # from AdGuard
 /cookieconsent2/*$important
-! from Fanboy's, modified
-/cookieconsentpub/*$important
-! from Fanboy's
--cookie-consent/$stylesheet
-! from AdGuard
-.cookiesdirective.
+/cookieconsentpub/*$important  # from Fanboy's, modified
+-cookie-consent/$stylesheet  # from Fanboy's
+.cookiesdirective.  # from AdGuard
     !/jquery.cookiesdirective.js
-! is in EasyList, AdGuard and Fanboy's
-/cookieinfo.
-! from AdGuard and Fanboy's
-/cookie-notice/*$script,important
-! is in EasyList, AdGuard and Fanboy's
-/cookienotice.
+/cookieinfo.  # is in EasyList, AdGuard and Fanboy's
+/cookie-notice/*$script,important  # from AdGuard and Fanboy's
+/cookienotice.  # is in EasyList, AdGuard and Fanboy's
 /cookie_notification.js
-! from Fanboy's and AdGuard
-_cookie_policy_
-! is in EasyList, Fanboy's, AdGuard
-/cookies-enabler.
+_cookie_policy_  # from Fanboy's and AdGuard
+/cookies-enabler.  # is in EasyList, Fanboy's, AdGuard
     ! /wp-content/plugins/ginger/front/js/cookies-enabler.min.js
     ! also see /plugins/ginger/*
-! is in 2 lists
-/eucookie/*
-! from AdGuard
-/eu-cookie-
+/eucookie/*  # is in 2 lists
+/eu-cookie-  # from AdGuard
 /eu-cookie-law/*$important
-! from EasyPrivacy
-/evercookie.
-! from Fanboy's
-/gdpr.js
+/evercookie.  # from EasyPrivacy
+/gdpr.js  # from Fanboy's
 /referrer-cookie.js
-! from EasyPrivacy
-/setcookie?
+/setcookie?  # from EasyPrivacy
 /track-cookies.js$important
-! from EasyPrivacy
-/trackingcookiecheck?
-! is in Fanboy's and EasyList
-/um-gdpr.$important
-! is in EasyList and Fanboy’s
-/zdconsent.
+/trackingcookiecheck?  # from EasyPrivacy
+/um-gdpr.$important  # is in Fanboy's and EasyList
+/zdconsent.  # is in EasyList and Fanboy's
 
 
 
 !! age notices
+/18.png
+/18.svg
+/18plus.png
+/plus-18.png
 ##.agelimit
 ##.age-limit
 ##.age-limitation
@@ -1326,10 +1301,6 @@ _cookie_policy_
 ##.nui-pg18
 ##.plus18
 ##.ww-18-plus
-/18.png
-/18.svg
-/18plus.png
-/plus-18.png
 
 
 
@@ -1362,6 +1333,15 @@ _cookie_policy_
 
 
 !! apps
+/app-store.svg
+/appstore.png
+/appstore.svg
+/appstore-footer.png
+/googleplay.png
+/googleplay-footer.png
+/img/appstore
+/img/google-play
+||play.google.com/intl/en_us/badges/$3p
 ###apple-icon
 ##.applic
 ##.application-btn
@@ -1388,19 +1368,11 @@ _cookie_policy_
 ##.sidebar-block-links__apps
 ##.site-footer_menu--mobile-app-links
 ##.t-appdownload
-/app-store.svg
-/appstore.png
-/appstore.svg
-/appstore-footer.png
-/googleplay.png
-/googleplay-footer.png
-/img/appstore
-/img/google-play
-||play.google.com/intl/en_us/badges/$3p
 
 
 
 !! signatures on forums
+||steamsignature.com^$third-party  # from RU Adlist
 ##.comment-signiture
 ##.forum-user-signature
 ###gpt-1stPostSig
@@ -1421,12 +1393,11 @@ _cookie_policy_
 ##.signatureView
 ##.user_signature
 ##.UserSignature
-! from RU Adlist
-||steamsignature.com^$third-party
 
 
 
 !! subscribe forms
+/ico_subscribe.png
 ! generalized
 ~eff.org,~mail.ru,~sberbank.ru,~mail.yandex.ru##[class*="Letter"]:not(html):not(body):not(article)
 ~eff.org,~mail.ru,~sberbank.ru,~mail.yandex.ru##[id*="Letter"]:not(html):not(body):not(article)
@@ -1482,7 +1453,6 @@ _cookie_policy_
 ##.widget_blog_subscription
 ! from Fanboy's
 ##.widget_newsletters
-/ico_subscribe.png
 
 
 
@@ -1494,6 +1464,7 @@ _cookie_policy_
 
 
 !! viewed products
+/recently-viewed/*
 ###count-viewed
 ###js-recommend-viewed
 ###j-youViewed
@@ -1511,57 +1482,10 @@ _cookie_policy_
 ##.viewed-products-widget-wrapper
 ##.i-visited-goods
 ###visitedGoodsContanier
-/recently-viewed/*
 
 
 
 !! payment methods
-! generalized
-##[class*="footer__payment"]:not(html):not(body):not(article)
-##[id*="footer__payment"]:not(html):not(body):not(article)
-##[class*="footer_payment"]:not(html):not(body):not(article)
-##[id*="footer_payment"]:not(html):not(body):not(article)
-##[class*="footer-payment"]:not(html):not(body):not(article)
-##[id*="footer-payment"]:not(html):not(body):not(article)
-! other
-##.card-payment-options
-##.fa-cc-mastercard
-##.fa-cc-visa
-##.f-buy-methods
-##.footer-bottom__icons
-##.footer__cards
-##.footer_cards
-###footer-info-paysystems
-##.g-icon-credit-card
-##.main_products_list_items_info_pay_types
-##.master-card
-##.pay-cards
-##.pay-footer
-###pay_icons
-!##.payment
-~strelkapay.ru##.payment-footer
-##.payment_icons
-##.payment-icons
-##.payment-links
-##.payment-list-images
-##.payment-logo
-##.payment-logos
-##.payment_methods
-##.pay_system_icons
-~justclick.ru##.payments
-##.payments-block
-##.payments-img
-##.payment-systems
-###payment-variants
-##.pl-sys-footer
-##.product-payment-cards
-##.product-payment__item
-##.spasibo-sberbank__logo
-##.spasibo-sberbank__text
-##.tcp-payment-info
-##.thawte
-##.v-footer__pays
-##.visa
 /halva.gif
 /halva.svg
 /home_credit.svg
@@ -1608,6 +1532,52 @@ _cookie_policy_
 /webmoney.png
 /webmoney.webp
 /yandexmoney.png
+! generalized
+##[class*="footer__payment"]:not(html):not(body):not(article)
+##[id*="footer__payment"]:not(html):not(body):not(article)
+##[class*="footer_payment"]:not(html):not(body):not(article)
+##[id*="footer_payment"]:not(html):not(body):not(article)
+##[class*="footer-payment"]:not(html):not(body):not(article)
+##[id*="footer-payment"]:not(html):not(body):not(article)
+! other
+##.card-payment-options
+##.fa-cc-mastercard
+##.fa-cc-visa
+##.f-buy-methods
+##.footer-bottom__icons
+##.footer__cards
+##.footer_cards
+###footer-info-paysystems
+##.g-icon-credit-card
+##.main_products_list_items_info_pay_types
+##.master-card
+##.pay-cards
+##.pay-footer
+###pay_icons
+!##.payment
+~strelkapay.ru##.payment-footer
+##.payment_icons
+##.payment-icons
+##.payment-links
+##.payment-list-images
+##.payment-logo
+##.payment-logos
+##.payment_methods
+##.pay_system_icons
+~justclick.ru##.payments
+##.payments-block
+##.payments-img
+##.payment-systems
+###payment-variants
+##.pl-sys-footer
+##.product-payment-cards
+##.product-payment__item
+##.spasibo-sberbank__logo
+##.spasibo-sberbank__text
+##.tcp-payment-info
+##.thawte
+##.v-footer__pays
+##.visa
 
 
 
@@ -1621,7 +1591,6 @@ _cookie_policy_
 ! ad countdowns
 ###county
 /county.js
-!
 /countdown.js
 /countdown.min.js
 /hurrify/
@@ -1637,6 +1606,7 @@ _cookie_policy_
 
 
 !! quickorder buttons
+/buyoneclick.js
 ! generalized
 ##[class*="buy1click"]:not(html):not(body):not(article)
 ##[id*="buy1click"]:not(html):not(body):not(article)
@@ -1674,7 +1644,6 @@ _cookie_policy_
 ##.product__fast-order-btn
 ##.quick_order
 ##.wrapp_one_click
-/buyoneclick.js
 
 
 !! quickviews
@@ -1743,9 +1712,6 @@ turboimagehost.com##.modal-footer
 
 ! noisy gifs and smiles
 ! (some sites use not only *.gif there)
-##.bbc_emoticon
-~appadmintools.com,~bibrary.com,~freebook.co,~miped.ru##.emoji
-##.emoji-item
 /wp-emoji-release.min.js$important
 /biggrin.gif
 /emoji/*$image,important
@@ -1781,6 +1747,9 @@ smiles.dolf.ru$third-party
 ||ic.pics.livejournal.com/*.gif
 /new.gif
 /wink.gif
+##.bbc_emoticon
+~appadmintools.com,~bibrary.com,~freebook.co,~miped.ru##.emoji
+##.emoji-item
 
 
 ! emoji remove block from https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/emoji-filter.txt
@@ -4670,6 +4639,26 @@ dni.ru##.head:style(position:static !important)
 dni.ru###for_fix:style(position:static !important)
 
 ! dns-shop.ru,technopoint.ru
+analytics.dns-shop.ru
+analytics.technopoint.ru
+! location script
+||dns-shop.ru/pwa-sw-main.js
+||technopoint.ru/pwa-sw-main.js
+! backgrounds
+||dns-shop.ru/*/alien2.png
+||dns-shop.ru/*/assembly.jpg
+||dns-shop.ru/*/assembly-hover.gif
+||dns-shop.ru/*/header*.png
+||dns-shop.ru/*/footer-background*.jpg
+! banners
+dns-shop.ru,technopoint.ru##.homepage-exchange-bonus-banner
+dns-shop.ru,technopoint.ru##.items-group__banner
+dns-shop.ru,technopoint.ru##.single-banner-container
+! stickers
+dns-shop.ru,technopoint.ru##.additional-vobler
+dns-shop.ru,technopoint.ru##.product-info__voblers
+dns-shop.ru,technopoint.ru##.w-product-voblers
+! other
 dns-shop.ru,technopoint.ru###page-notification
 dns-shop.ru,technopoint.ru##.helpers
 dns-shop.ru,technopoint.ru##.product-buttons
@@ -4701,30 +4690,11 @@ dns-shop.ru,technopoint.ru##.homepage-top-grid__banners
 dns-shop.ru,technopoint.ru##.homepage-post-stat
 dns-shop.ru,technopoint.ru##.on-air
 dns-shop.ru,technopoint.ru##.info-widget_warning.info-widget
-! banners
-dns-shop.ru,technopoint.ru##.homepage-exchange-bonus-banner
-dns-shop.ru,technopoint.ru##.items-group__banner
-dns-shop.ru,technopoint.ru##.single-banner-container
-! stickers
-dns-shop.ru,technopoint.ru##.product-info__voblers
-dns-shop.ru,technopoint.ru##.w-product-voblers
-dns-shop.ru,technopoint.ru##.additional-vobler
-! location script
-||dns-shop.ru/pwa-sw-main.js
-||technopoint.ru/pwa-sw-main.js
-! backgrounds
-||dns-shop.ru/*/alien2.png
-||dns-shop.ru/*/assembly.jpg
-||dns-shop.ru/*/assembly-hover.gif
-||dns-shop.ru/*/header*.png
-||dns-shop.ru/*/footer-background*.jpg
-! other
 dns-shop.ru,technopoint.ru##.survey-button-widget
 dns-shop.ru,technopoint.ru##.main-footer__social-link
 dns-shop.ru,technopoint.ru##.main-footer__install-app-block
 dns-shop.ru,technopoint.ru##.product-card-tabs__product
 dns-shop.ru,technopoint.ru##.header-mobile__wrap_fixed:style(position:static !important)
-analytics.dns-shop.ru
 
 dobrodel.ru,dobrodel.mosreg.ru##.riamo-news
 dobrodel.ru,dobrodel.mosreg.ru##.footer-portals
@@ -4736,17 +4706,17 @@ dobrodel.ru,dobrodel.mosreg.ru##body:style(padding-bottom:0px !important)
 ||dobrodel.mosreg.ru/static/img/general/dobroFace.png
 ||dobrodel.ru/static/img/general/dobroFace.png
 
+||dobrota.ru/*/buner/$image
 ||dobrota.ru/images/news/img1.png
+||dobrota.ru/placeholder.jpg
 dobrota.ru##.confidential
 dobrota.ru##.scroll.header:style(position:static !important)
 dobrota.ru##.header__logo-scroll
 dobrota.ru##.header__info-phone
 dobrota.ru##.header__info-time
-||dobrota.ru/placeholder.jpg
 dobrota.ru##.footer__subscription
 dobrota.ru##.bitch
 dobrota.ru##.footer__row_info
-||dobrota.ru/*/buner/$image
 dobrota.ru##.banner-category
 dobrota.ru##.specification__credit
 
@@ -4834,8 +4804,7 @@ domstroymontage.ru##.fixed.canfixed
 
 parkingsrv0.dondominio.com
 
-! [EFF Tracker Detection] - from https://adaway.org/hosts.txt
-do-not-tracker.org
+do-not-tracker.org  # [EFF Tracker Detection] - from https://adaway.org/hosts.txt
 
 donsimon.net##.__b-popup1__.b-modal
 donsimon.net##.pps
@@ -4853,8 +4822,7 @@ market.dota2.net$3p
 
 dou.ua###max-header-adv-id
 
-! from Peter Lowe's hosts file
-bwp.download.com
+bwp.download.com  # from Peter Lowe's hosts file
 
 downloadly.win##.herald-responsive-header:style(position:static !important)
 
@@ -5332,6 +5300,8 @@ joom.com/*/getGoogleAnalyticsClientID
 jorgebernhardt.com##.has-fixed-header.mb-brand
 jorgebernhardt.com##.mb-header-holder
 
+||joyreactor.cc/pics/avatar/user/$image
+||joyreactor.cc/images/default_avatar.jpeg
 ! there is an @@||joyreactor.cc^$generichide exclusion in some filters.
 ! is in Ru AdList and Fanboy's
 joyreactor.cc##.uhead_share
@@ -5339,8 +5309,6 @@ joyreactor.cc##.uhead_share
 joyreactor.cc###container > span > a[rel="nofollow"]
 ! from Ru AdList
 joyreactor.cc##+js(abort-on-property-read, Joyreactor.show_ads)
-||joyreactor.cc/pics/avatar/user/$image
-||joyreactor.cc/images/default_avatar.jpeg
 
 ||jsdelivr.net/npm/clappr-ga-events-plugin
 
@@ -5419,8 +5387,8 @@ karkas-na-veka.ru##.pseudoStickyBlock
 kartasporta.ru###head:style(position:static !important)
 kartasporta.ru##.page-footer-desk__last-line
 
-karusel.ru##.m-header__logo
 ||karusel.ru/api/v1/cities/geo_locate/
+karusel.ru##.m-header__logo
 karusel.ru##.g-header__fixed:style(position:static !important)
 
 forum.kaspersky.com##.ipsSpacer_top.cTopicPostArea_noSize.ipsPad.ipsAreaBackground.cTopicPostArea
@@ -5464,19 +5432,17 @@ kg-portal.ru##.b_donate_author
 khl.ru##.e-header_social
 @@||video.khl.ru^$generichide,badfilter
 
-magnet.kiev.ua$3p
-! is in Ru AdList: ||magnet.kiev.ua^$domain=~magnet.kiev.ua
-! is in Ru AdList
-||meganews.kiev.ua^$domain=~meganews.kiev.ua
+magnet.kiev.ua$3p  # is in Ru AdList: ||magnet.kiev.ua^$domain=~magnet.kiev.ua
+||meganews.kiev.ua^$domain=~meganews.kiev.ua  # is in Ru AdList
 
 ! empty part of footer
 kingston.com###footer
 
 ||kinoafisha.ua/widget/$third-party
 
+||kinonews.ru/images2/fonesite.jpg
 kinonews.ru###rocket
 kinonews.ru##.text-footer
-||kinonews.ru/images2/fonesite.jpg
 
 !kinopoisk.ru##.adblock-detector-partial-component_visible_show
 !kinopoisk.ru##.adblock-detector-partial-component
@@ -5625,6 +5591,7 @@ kolchuga.ru###toTops
 
 kolesa.ru###postPopup.post-popup
 
+||kom-dir.ru/images/available_on_the_app_store_russia.png
 kom-dir.ru##.closed.stimulPrint
 kom-dir.ru###assistant-btn.btn-assistant
 kom-dir.ru##.footer
@@ -5635,13 +5602,12 @@ kom-dir.ru##.StatBlockWidget > noindex
 kom-dir.ru##.triColumn__wrapper
 kom-dir.ru###sidebar_mailing
 kom-dir.ru##.id2-polezno
-||kom-dir.ru/images/available_on_the_app_store_russia.png
 
+||kommersant.ru/poll/
 kommersant.ru##.sticked_top:style(position:static !important)
 kommersant.ru##.fixed_bottom
 kommersant.ru##.slider-announce
 kommersant.ru##.sticky_box::after:style(content:normal !important)
-||kommersant.ru/poll/
 ! is in AdGuard
 kommersant.ru##.new-subscription-popup
 ! is in Fanboy's
@@ -5658,17 +5624,17 @@ metrika.kontur.ru
 koolinar.ru##.u-header:style(position:static !important)
 koolinar.ru##.list-inline
 
-koronapay.com##.menu__logo
 ||koronapay.com/*/zk-logotype-clr.svg
+koronapay.com##.menu__logo
 koronapay.com##.mobile-apps
 
+||korshop.ru/*/MergedLayers.png
 ! todo: not completed
 korshop.ru##.sovservice
 korshop.ru##.payment-method
 korshop.ru##body:style(background:none !important)
 korshop.ru##.work-time
 korshop.ru##.basket-line
-||korshop.ru/*/MergedLayers.png
 korshop.ru##.slide-banner
 korshop.ru##.slide-banner-goods
 korshop.ru##.news-lbl
@@ -5691,13 +5657,13 @@ kotofoto.ru##.centalslider
 kotofoto.ru##.ban1slider
 kotofoto.ru##.bannerbl
 kotofoto.ru##.tovsl.blochvov
-||selcdn.net/img/foter/$image
 kotofoto.ru##.stickyfid.stickylid:style(position:static !important)
 kotofoto.ru##.slprisecarta
 kotofoto.ru##div.catdescription
 kotofoto.ru##.sale-violet-row
 kotofoto.ru##.ketkoin-prod
 kotofoto.ru##.footergsboks
+||selcdn.net/img/foter/$image
 
 ! popups
 kp.ru##.shadow-close
@@ -5728,8 +5694,8 @@ kramola.info###navbar
 kramola.info##.block:has-text(telegram-канал, чтобы не пропустить эксклюзив)
 kramola.info##.statistics_counter
 
+||kranik.ru/*/sci_logo.jpg
 kranik.ru###container_top > .cpt_custom_html
-||kranik.ru/published/publicdata/KRANIKSHOP/attachments/SC/images/sci_logo.jpg
 
 kreslovdom.com##.fullscreen-bg__video
 ||kreslovdom.com/*.mp4
@@ -6402,7 +6368,7 @@ top100.mafia.ru
 magazilla.ru##.tdtopline
 
 ! animations
-||magazinbytovok.ru/images/*.gif$image
+||magazinbytovok.ru/images/*.gif
 
 ||magazin-santechniki.ru/*/images/head_bg_840.png
 ||magazin-santechniki.ru/*/images/cart.png
@@ -6410,9 +6376,9 @@ magazin-santechniki.ru##.phone_1p
 magazin-santechniki.ru##.mainhead
 magazin-santechniki.ru##header:style(height:170px !important; min-height:170px !important)
 
-magazin-vann.ru##div.novelty_s
 ||magazin-vann.ru/img/head*.jpg
 ||magazin-vann.ru/img/door.jpg
+magazin-vann.ru##div.novelty_s
 
 ||magizoo.ru/images/header_lion.png
 magizoo.ru##.mainpage__main_slider
@@ -6481,6 +6447,10 @@ maskiest.ru###Layer_1
 maskiest.ru##.t-store__card__price_old
 maskiest.ru##.t-store__card__mark
 
+||mastergrad.com$script
+||mastergrad.com##script
+widgets.mastergrad.com
+s3.amazonaws.com$domain=mastergrad.com
 mastergrad.com##.msw-navbar
 mastergrad.com##.msw-header
 mastergrad.com##.section-header
@@ -6488,10 +6458,6 @@ mastergrad.com##.mrg-tag
 mastergrad.com##.msw-footer-wrap
 mastergrad.com##.post-unlogin-wrap
 mastergrad.com##.post-editor-ground
-||mastergrad.com$script
-||mastergrad.com##script
-widgets.mastergrad.com
-s3.amazonaws.com$domain=mastergrad.com
 
 masterim.guru##.site-header:style(margin-top:0px !important)
 masterim.guru##.main-navigation:style(margin-top:0px !important)
@@ -6516,11 +6482,11 @@ matovsky.com##.navbar
 matovsky.com##.container:style(padding-top:0px !important; padding-bottom:0px !important)
 
 ||maxidom.ru/*/header_01.png
+||maxidom.ru/*/master-ico-s.png
+||maxidom.ru/*/mir-ico-s.png
+||maxidom.ru/*/visa-ico-s.png
 maxidom.ru##.btn_click_subscription
 maxidom.ru##.toolbar
-||www.maxidom.ru/*/master-ico-s.png
-||www.maxidom.ru/*/mir-ico-s.png
-||www.maxidom.ru/*/visa-ico-s.png
 
 maximonline.ru##.app-header__wrapper:style(position:static !important)
 
@@ -6538,8 +6504,8 @@ maximus-fitness.com##.product-compare-price
 maxmaster.ru##.fixed-header,.top-menu-grid:style(position:static !important)
 maxmaster.ru##.advanced-header:style(padding-top:0px !important)
 
-maxpark.com##.GPSliderTop
 ||maxpark.com/static/img/red18.png
+maxpark.com##.GPSliderTop
 
 ||mbell.info/forum/download/file.php?avatar=*.gif$image
 
@@ -6549,23 +6515,23 @@ mcgrp.ru##.list-group-item > [href^="https://play.google.com/store/apps/details"
 
 mcpmag.com##.sitelogo
 
+||mdl.ru/*/FooterAndSidebar.js
+||mdl.ru/MdlLogo.gif
+||mdl.ru/Solutions/
 !mdl.ru###marquee
 mdl.ru##[src^="http://www.mdl.ru/Solutions/"]
-||mdl.ru/Solutions/
 mdl.ru##.legal
 mdl.ru##.logabug
-||mdl.ru/MdlLogo.gif
 mdl.ru###toolbar:style(position:static !important)
 mdl.ru###navheader:style(position:static !important)
 mdl.ru###header > h1:style(position:static !important)
 mdl.ru###content:style(margin-left:0px !important;)
-||mdl.ru/*/FooterAndSidebar.js
 
+meatinfo.ru##[href="/reklama"]
 meatinfo.ru##.rotator-wrap
 meatinfo.ru##.hotListButton
 meatinfo.ru##.b-adv-widget
 meatinfo.ru###premium-adv.b-premium-adv
-meatinfo.ru##[href="/reklama"]
 
 meatreview.com##.fixed-header-w
 meatreview.com##.page-content-field-w
@@ -6583,23 +6549,23 @@ mebelsuite.ru###site-header
 ! site breaks copypaste
 medbe.ru$inline-script
 
-meddaily.ru##div:has-text(ad or script blocking software is interfering with this page)
-meddaily.ru##body > table > tbody > tr > td > table > tbody > tr > td > div:nth-of-type(1)
-meddaily.ru##.about > p:nth-of-type(1)
-meddaily.ru##.structure-left > table
-meddaily.ru##[href="javascript://"]
 ||meddaily.ru/img/cross.gif
 ||meddaily.ru/img/cross_big.gif
 ||meddaily.ru/img/cross_green.gif
 ||meddaily.ru/img/cross_spiegel.gif
 ||meddaily.ru/img/cross_small.gif
+meddaily.ru##div:has-text(ad or script blocking software is interfering with this page)
+meddaily.ru##body > table > tbody > tr > td > table > tbody > tr > td > div:nth-of-type(1)
+meddaily.ru##.about > p:nth-of-type(1)
+meddaily.ru##.structure-left > table
+meddaily.ru##[href="javascript://"]
 
 media73.ru###main_weather
 media73.ru##.header-fix:style(position:absolute !important)
 
+||mediafire.com/images/backgrounds/myfiles/promo/
 mediafire.com##.upgrade_discount
 mediafire.com##.upGrade.avatarMenu-upgrade
-||mediafire.com/images/backgrounds/myfiles/promo/
 mediafire.com##.appPromo
 mediafire.com##.smUpgradeSpace
 mediafire.com##.appUgradeBadge
@@ -6636,13 +6602,13 @@ medside.ru##.main_slogan
 medstal.ru##.cb-icon
 medstal.ru##.noprice
 
+||medtehno.ru/*/gift.png
 medtehno.ru##.help-menu-button
 medtehno.ru##.help-menu
 medtehno.ru##.opl_list
 medtehno.ru##div.pay_block:has-text(Способы оплаты)
 medtehno.ru##.bonus_text
 medtehno.ru###composite_header_contacts.header_contacts
-||medtehno.ru/*/gift.png
 
 meduza.io##.MaterialPanel-sticked.MaterialPanel-root
 meduza.io##.Header-logo
@@ -6656,13 +6622,13 @@ megafon.ru##.ng_personal_popup_start
 megafon.ru##.ng_personal_popup
 megafon.ru##.lk_smart_banner
 
+||megaobzor.com/images/121.png
 ||megaobzor.com/images/brand/*$image
 ||megaobzor.com/images/mologo.jpg
 megaobzor.com###menu
 megaobzor.com###mobzor:style(margin-top:0px !important)
 megaobzor.com##.icon-2vkontakte
 megaobzor.com##.icon-2youtube
-||megaobzor.com/images/121.png
 
 ||stat.megapesni.com
 
@@ -6685,6 +6651,9 @@ meless.ru##header
 
 meltcomics.com###sticky-navigation:style(position:static !important)
 
+||menunedeli.ru/wp-content/themes/freshfruits11/img/extra-header.png
+||menunedeli.ru/*/frm_banner
+||menunedeli.ru/*/icon_cook$image
 ! big arrow down
 ||menunedeli.ru/wp-content/uploads/2014/11/37/10.png
 ! instagram sub
@@ -6694,9 +6663,6 @@ meltcomics.com###sticky-navigation:style(position:static !important)
 !
 menunedeli.ru##header:style(height:80px !important)
 menunedeli.ru##.hidden-email-blk
-||menunedeli.ru/wp-content/themes/freshfruits11/img/extra-header.png
-||menunedeli.ru/*/frm_banner
-||menunedeli.ru/*/icon_cook$image
 menunedeli.ru##.extra-box
 
 meridianoutpost.com###header
@@ -6744,6 +6710,7 @@ mikrotik.ru###floating:style(position:static !important)
 ||milanpizza.ru/images/bottom_fill.gif
 ||milanpizza.ru/images/bottom_right.gif
 
+||militaryarms.ru/wp-content/themes/MilitaryArms/images/bl-bg.png
 ! partner links
 militaryarms.ru##.popular_posts
 militaryarms.ru##[href="http://mirtesen.ru/"]
@@ -6757,7 +6724,6 @@ militaryarms.ru##.header:style(height:45px !important)
 militaryarms.ru##blockquote::after
 militaryarms.ru##.post_bottom
 militaryarms.ru##.single.post > noindex
-||militaryarms.ru/wp-content/themes/MilitaryArms/images/bl-bg.png
 militaryarms.ru##blockquote:style(background:none !important)
 
 miltor.ru##.navbar-header
@@ -8239,18 +8205,18 @@ helpix.ru##div.b-menu__item_redLite
 
 hetmanrecovery.com###nav-single
 
+||hh.ru/analytics^  # from AdGuard
+||career.ru/analytics^
+||hh.ru/performance_stat
+||career.ru/performance_stat
+||hh.ru/stat?url=  # from AdGuard
+||career.ru/stat?url=
+||hh.ru/*/vk__min_.svg
+||hh.ru/*/ok__min_.svg
 hh.ru,career.ru##.HH-RelatedVacanciesPreview-StickyContainer
 hh.ru,career.ru##.navi__menu:style(position:static !important)
 hh.ru,career.ru##div.vacancy-serp-item:has-text(/Компьютерный мастер|Мастер по ремонту компьютеров|Выездной системный администратор|выезды к клиентам/)
 hh.ru##.banner-substrate
-! from AdGuard
-||hh.ru/stat?url=
-||career.ru/stat?url=
-||hh.ru/performance_stat
-||career.ru/performance_stat
-! from AdGuard
-||hh.ru/analytics^
-||career.ru/analytics^
 ! from RuAdlist
 hh.ru##.banner-place
 hh.ru##div.serp-special
@@ -8267,8 +8233,6 @@ hh.ru##.bloko-social-icon_dnr
 hh.ru##.bloko-gap_top:has-text(Вход через соцсети)
 hh.ru##.bloko-form-item:has-text(через соцсеть)
 hh.ru##.tmpl_hh_social
-||hh.ru/*/vk__min_.svg
-||hh.ru/*/ok__min_.svg
 hh.ru##.supernova-footer-nav-mobile
 hh.ru##.related-vacancies-preview_sticky
 
@@ -8308,7 +8272,7 @@ hodgkins.io##blockquote:has-text(Follow me)
 holodilnik.ru##.swiper-services.swiper-initialized
 ||holodilnik.ru/img/mob/messengers/icon_Skype.png
 ||holodilnik.ru/img/mob/messengers/icon_chat.png
-m.holodilnik.ru##.actions
+holodilnik.ru##.actions
 holodilnik.ru##div.columns-actions
 
 homecredit.ru##.dZVKKu.s1pdcrs-0-Block-bMyPgy
@@ -8609,10 +8573,10 @@ website.informer.com###wi-plugin-corner
 
 ||inmyroom.ru/*/banner_places/
 ||inmyroom.ru/*/new_relic/
-inmyroom.ru##.c-subscribe-popup
+||inmyroom.ru/assets/footer/payment_provider/$image
 inmyroom.ru##.b-ActionPanel
 inmyroom.ru##.c-subscribe-form
-||inmyroom.ru/assets/footer/payment_provider/$image
+inmyroom.ru##.c-subscribe-popup
 
 inoreader.com###consent_bbb
 inoreader.com###sb_rp_upgrade
@@ -8904,6 +8868,7 @@ m-strana.ru###branding-new
 ! mirtesen.ru
 mtml.ru$script,domain=~mirtesen.ru
 
+rtb.mts.ru^$3p  # ad scripts  # is in Ru AdList
 ! popups there are not just with ads - changing options breaks too
 !lk.mts.ru##.popup__questionnaire
 !lk.mts.ru##.popup-modal
@@ -8922,9 +8887,6 @@ mts.ru##greeting-step
 mts.ru##.bx-slider.parental-statistics-cover__slider-wrap
 mts.ru##.mts16-footer__social
 mts.ru##.mts16-footer__age
-! ad scripts
-! is in Ru AdList
-rtb.mts.ru^$3p
 
 ||mukownino.ru/assets/images/strela.png
 
@@ -8948,12 +8910,12 @@ mustbegeek.com###header
 mustbegeek.com##.sticky-nav:style(position:static !important)
 mustbegeek.com###ts-fab-bio-below
 
+||mvideo.ru/media/Promotions/*$image
 mvideo.ru##.sticky-header:style(position:static !important)
 mvideo.ru##.highlighted-text-message
 mvideo.ru##.footer-akit-ico
 mvideo.ru##.authorize.review-ext-create-row
 mvideo.ru##.tooltipster-sidetip-geolocation
-||mvideo.ru/media/Promotions/*$image
 mvideo.ru##.c-pdp-price__old
 mvideo.ru##.c-pdp-price__economy
 mvideo.ru##.e-ul
@@ -8964,9 +8926,9 @@ mxtoolbox.com##footer:style(position:static !important)
 myaso-portal.ru##div > [href^="/bitrix/rk.php"]
 myaso-portal.ru##.dev
 
+||mybellaria.ru/img/header/$image
 mybellaria.ru##.subscribe
 mybellaria.ru##.home
-||mybellaria.ru/img/header/$image
 
 mycharm.ru###header
 mycharm.ru###popup_message
@@ -8978,9 +8940,9 @@ mycharm.ru###flyingLeft
 mydigitallife.net##.sticky_wrapper:style(position:static !important)
 mydigitallife.net##.uix_message:has-text(You need to login to view)
 
+||mydoppler.ru/ba/*$image
 mydoppler.ru##a.ab-sidebar__link
 mydoppler.ru##.top__phone
-||mydoppler.ru/ba/*$image
 mydoppler.ru##.slides
 mydoppler.ru##.butt-cat
 
@@ -9120,13 +9082,10 @@ natropinkah.ru##.shop_torg_sml_div
 natropinkah.ru##.recommend_text-big
 
 ! naver.com
-! from EasyPrivacy
-pb.m.naver.com
-! from EasyPrivacy
-veta.naver.com
+pb.m.naver.com  # from EasyPrivacy
+veta.naver.com  # from EasyPrivacy
 ! naver.net
-! from EasyPrivacy
-||naver.net/wcslog.js
+||naver.net/wcslog.js  # from EasyPrivacy
 
 ! see naydex.net at livejournal.com
 
@@ -10720,17 +10679,14 @@ rbc.ru##.bottom-menu__wrap
 rbc.ru##.footer__link_disable-adv
 rbc.ru##.footer__list-item_disable-adv
 rbc.ru##.live-tv
+/rbcmetrika-  # is in EasyPrivacy
 ||rbk.ru/*/gt-targeting.js
 ||rbk.ru/*/_paywall.js
-! is in AdGuard, modified
-||rbk.ru/*/browser-updater/main.js
+||rbk.ru/*/browser-updater/main.js  # is in AdGuard, modified
 ||rbk.ru/*/rbcbanners*.js
 ||rbk.ru/*/rbcbanners$script
-! site breaks copypaste
-||rbk.ru/*/_core.js
+||rbk.ru/*/_core.js  # site breaks copypaste
 ||rbk.ru/*/18.svg
-! is in EasyPrivacy
-/rbcmetrika-
 ||rbk.ru/*/rbcmetrika
 rbc.ru##.news-feed:style(position:static !important)
 rbc.ru##.topline__item__image-block
@@ -10745,17 +10701,17 @@ forum.rcdesign.ru###yaplace3
 
 ||rcdrive.ru/i/revo.jpg
 ||rcdrive.ru/i/RCDrive.jpg
-rcdrive.ru##.logo_left
 ||rcdrive.ru/i/down_bg.jpg
 ||rcdrive.ru/i/down.jpg
 ||rcdrive.ru/i/rc_up.jpg
+rcdrive.ru##.logo_left
 
 rc-go.ru##.nav-ontop:style(position:static !important)
 rc-go.ru##.take_today
 rc-go.ru###trademark-list
 
-rclone.org##div.panel-default:has-text(Share and Enjoy)
 ||rclone.org/img/rclone-120x120.png
+rclone.org##div.panel-default:has-text(Share and Enjoy)
 
 rcpmag.com##.RCPMAG
 rcpmag.com##.module:has-text(SPONSORS)
@@ -10854,9 +10810,8 @@ regard.ru##.minitextblock
 regard.ru###q-order
 regard.ru###rsidebar
 
+regmarkets.ru$3p  # ad scripts
 regmarkets.ru##.catalogItemPreviewLink
-! ad scripts
-regmarkets.ru$3p
 
 ||relook.ru/i/a/signup.gif
 ||relook.ru/i/logo2.png
@@ -10873,12 +10828,12 @@ remont-book.com##.header::before:style(background:none !important)
 remontcompa.ru###header
 ||remontcompa.ru/uploads/toptop.png
 
+||remontka.pro/images/remontka-pro-logo.png
 remontka.pro##.rem-navbar:style(position:absolute !important)
 remontka.pro##.rem-leftbar:style(position:absolute !important)
 remontka.pro##.rem-bottom
 remontka.pro##.uk-panel-box-primary
 remontka.pro##.rem-linkdiv
-||remontka.pro/images/remontka-pro-logo.png
 
 remontnick.ru##.rk-all-articles
 remontnick.ru###carousel-action
@@ -10894,11 +10849,11 @@ remontonly.ru##[href*="https://click.luckyshop.ru/"]
 
 ||remont-price.ru/img/rem/tigr_*.png$image
 
+||remont-vann.ru/img/b-header_*.png$image
+||remont-vann.ru/img/snow*.png
 remont-vann.ru##.b-header__top-line:style(position:static !important)
 remont-vann.ru##.b-header__bottom-line
 remont-vann.ru##.b-header:style(padding-top:0px !important; height:auto !important)
-||remont-vann.ru/img/b-header_*.png$image
-||remont-vann.ru/img/snow*.png
 remont-vann.ru###newsList
 remont-vann.ru###pageHit_1
 remont-vann.ru###pageHit_2
@@ -10929,8 +10884,8 @@ remvizor.ru##.footer
 
 repost.uz##.new_menu--fixed:style(position:static !important)
 
-resistance.today###up
 ||resistance.today/templates/resistancetoday/images/object559494904.png
+resistance.today###up
 
 respublica.ru##.rd-header__logo
 respublica.ru##.rd-float-links_top
@@ -10951,8 +10906,8 @@ reviewpoint.ru###mt-menu-wrap:style(position:static !important)
 reviewpoint.ru##.top-header-section
 reviewpoint.ru##figure#attachment_840
 
-revistalider.com##^script:has-text(adblock)
 ||revistalider.com/banner_fixer.php
+revistalider.com##^script:has-text(adblock)
 
 rg.ru###rgb_header_article
 rg.ru##.stickedBlock__spacer
@@ -10969,12 +10924,11 @@ rgblog.ru##.addzakl
 affiliate.ria.com
 ! also see ://affiliate.$3p from EasyList
 
+a.ria.ru$important  # from AdGuard
 @@||ria.ru^$generichide,badfilter
 !todo
 ria.ru##.header__position:style(position:static !important)
 ria.ru##.widgets__b-slide
-! from AdGuard
-a.ria.ru$important
 
 riamo.ru##.main-menu--logo
 riamo.ru##.informer--sn
@@ -11010,10 +10964,10 @@ rlsnet.ru##.side-bar-block
 rlsnet.ru###QRCode
 rlsnet.ru##.footer__s-text
 
+||rmj.ru/*/img_reg_auth_popup.png
 rmj.ru##.main_banner
 rmj.ru##.reg_auth_popup.js_reg_auth_popup
 rmj.ru##.reg_auth_popup_new.js_reg_auth_popup > .block_left
-||rmj.ru/*/img_reg_auth_popup.png
 rmj.ru##.header_midle
 rmj.ru##.h2:has-text(партнеры)
 
@@ -11360,15 +11314,14 @@ samforum.org##.navbar_notice
 samforum.org##.header_bg
 samforum.org###collapseobj_forumrules
 
-! from Peter Lowe's hosts file
-bpu.samsungelectronics.com
-cpu.samsungelectronics.com
-dpu.samsungelectronics.com
-kpu.samsungelectronics.com
-upu.samsungelectronics.com
-xpu.samsungelectronics.com
-ypu.samsungelectronics.com
-zpu.samsungelectronics.com
+bpu.samsungelectronics.com  # from Peter Lowe's hosts file
+cpu.samsungelectronics.com  # from Peter Lowe's hosts file
+dpu.samsungelectronics.com  # from Peter Lowe's hosts file
+kpu.samsungelectronics.com  # from Peter Lowe's hosts file
+upu.samsungelectronics.com  # from Peter Lowe's hosts file
+xpu.samsungelectronics.com  # from Peter Lowe's hosts file
+ypu.samsungelectronics.com  # from Peter Lowe's hosts file
+zpu.samsungelectronics.com  # from Peter Lowe's hosts file
 
 sana-med.com.ua##.butt-call-fix
 sana-med.com.ua##.modal-backdrop
@@ -15472,67 +15425,46 @@ rackcdn.com
 
 ru##.ErrorBox:has-text(AdBlock)
 
-! is in AdGuard
-/code/native.js?h=
+/code/native.js?h=  # is in AdGuard
 
 ! is in EasyList
 ##.adv300x250
 
-! from MVPS
-ads2.opensubtitles.org
+ads2.opensubtitles.org  # from MVPS
 
-! from MVPS
-br.realitykings.com
-! from MVPS
-cache.realitykings.com
-! from MVPS
-track.realitykings.com
+br.realitykings.com  # from MVPS
+cache.realitykings.com  # from MVPS
+track.realitykings.com  # from MVPS
 
-! from MVPS
-br.rk.com
+br.rk.com  # from MVPS
 
-! from MVPS
-scripts.mofos.com
+scripts.mofos.com  # from MVPS
 
-! from MVPS
-botd.wordpress.com #[WebBug]
-botd2.wordpress.com #[WebBug]
+botd.wordpress.com #[WebBug]  # from MVPS
+botd2.wordpress.com #[WebBug]  # from MVPS
 
-! from MVPS
-cache.daredorm.com
+cache.daredorm.com  # from MVPS
 
-! from MVPS
-img100-321.xvideos.com
+img100-321.xvideos.com  # from MVPS
 
-! from MVPS
-tools.naughtyamerica.com
+tools.naughtyamerica.com  # from MVPS
 
-! from MVPS
-raskrutka.ucoz.com
+raskrutka.ucoz.com  # from MVPS
 
-! from MVPS
-analytics.slashdotmedia.com #[Piwik.Analytics]
+analytics.slashdotmedia.com #[Piwik.Analytics]  # from MVPS
 
-! from MVPS
-images-aud.sourceforge.net
+images-aud.sourceforge.net  # from MVPS
 
-! from MVPS
-marketwatch.com$3p
-s.marketwatch.com$domain=~marketwatch.com
+marketwatch.com$3p  # from MVPS
+s.marketwatch.com$domain=~marketwatch.com  # from MVPS
 
-! from MVPS
-adv.aport.ru
-stat.aport.ru
+adv.aport.ru  # from MVPS
+stat.aport.ru  # from MVPS
 
-! from MVPS
-stat.stars.ru #[WebBug]
+stat.stars.ru #[WebBug]  # from MVPS
 
-! from MVPS
-banners.dogfart.com
+banners.dogfart.com  # from MVPS
 
-! from MVPS
-ads.brazzers.com
-! from MVPS
-ads2.brazzers.com
-! from MVPS
-tour.brazzers.com
+ads.brazzers.com  # from MVPS
+ads2.brazzers.com  # from MVPS
+tour.brazzers.com  # from MVPS
