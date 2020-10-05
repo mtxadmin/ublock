@@ -314,12 +314,68 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 
 
 !! Twitter
+!
+! hosts
+! comments is preferably inline with  #
+!
+analytics.twitter.com
+syndication.twitter.com$third-party,important
+api.twitter.com$third-party,important  # even that way: https://cdn.api.twitter.com/1/urls/count.json?url=
+!
+! urls
+! comments is preferably inline with  # 
+! general first, specific last
+!
+/assets/twitter-$image  # is in Fanboy's and Ru AdList
+/footer/twitter.  # is in Fanboy's
+/icon-twitter.
+/images/*twitter.png  # from Fanboy's
+/images/twitter  # from Fanboy's
+/img/twitter-  # from Fanboy's
+/jquery.tweetscroll.js
+/tw.jpg
+/tw.png
+/tw.svg
+/tweet_button.  # from Fanboy's
+/tweetfeed.min.js$important
+_twitter_icon.
+/twitter.png
+/twitter.svg$domain=~votesmart.appspot.com
+/twitterfeed/*
+/twitter-timeline.min.js
 platform.twitter.com/widgets.js$important
-! even that way: https://cdn.api.twitter.com/1/urls/count.json?url=
-api.twitter.com$third-party,important
-! from EasyPrivacy
-||twitter.com/oct.js$important
-syndication.twitter.com$3p
+||twitter.com/oct.js$important  # from EasyPrivacy
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
+~twitter.com##[class*="Tweet"]:not(html):not(body):not(article)
+~twitter.com##[id*="Tweet"]:not(html):not(body):not(article)
+~twitter.com,~livejournal.com##[class*="tweet"]:not(html):not(body):not(article)
+~twitter.com##[id*="tweet"]:not(html):not(body):not(article)
+~twitter.com##[class*="Twitter"]:not(html):not(body):not(article)
+~twitter.com##[id*="Twitter"]:not(html):not(body):not(article)
+~twitter.com,~belarus2020.org,~livejournal.com##[class*="twitter"]:not(html):not(body):not(article)
+~twitter.com##[id*="twitter"]:not(html):not(body):not(article)
+    !##.icon-twitter-circle
+    ! is in 3 lists
+    ##.share-twitter
+    !##.td-icon-twitter
+    ! is in Ru AdList and Fanboy's
+    ##.twitter
+    ! is in Fanboy's and Web Annoyances Ultralist
+    ! is in Fanboy's
+    ##.twitter-follow-button
+    ##.twitter-share-button
+    ! is in AdGuard
+    ##body .twitter-share-button
+    ! is in Fanboy's
+    ##.twitter-timeline
+    ! is in Fanboy's
+    ###twitter_timeline-2
+    ! is in Fanboy's
+    ##.widget_twitter_timeline
 ! from Fanboy's
 ##[href^="//twitter.com/share"]
 ! from Web Annoyances Ultralist
@@ -348,34 +404,6 @@ syndication.twitter.com$3p
 ##.fa-twitter-square
 ! from Fanboy's
 ##img[alt="Twitter"]
-analytics.twitter.com
-syndication.twitter.com$third-party,important
-~twitter.com##[class*="Tweet"]:not(html):not(body):not(article)
-~twitter.com##[id*="Tweet"]:not(html):not(body):not(article)
-~twitter.com,~livejournal.com##[class*="tweet"]:not(html):not(body):not(article)
-~twitter.com##[id*="tweet"]:not(html):not(body):not(article)
-~twitter.com##[class*="Twitter"]:not(html):not(body):not(article)
-~twitter.com##[id*="Twitter"]:not(html):not(body):not(article)
-~twitter.com,~belarus2020.org,~livejournal.com##[class*="twitter"]:not(html):not(body):not(article)
-~twitter.com##[id*="twitter"]:not(html):not(body):not(article)
-    !##.icon-twitter-circle
-    ! is in 3 lists
-    ##.share-twitter
-    !##.td-icon-twitter
-    ! is in Ru AdList and Fanboy's
-    ##.twitter
-    ! is in Fanboy's and Web Annoyances Ultralist
-    ! is in Fanboy's
-    ##.twitter-follow-button
-    ##.twitter-share-button
-    ! is in AdGuard
-    ##body .twitter-share-button
-    ! is in Fanboy's
-    ##.twitter-timeline
-    ! is in Fanboy's
-    ###twitter_timeline-2
-    ! is in Fanboy's
-    ##.widget_twitter_timeline
 ##.iconTw
 ##.icon-tw
 ##.icon-tw-footer
@@ -388,59 +416,46 @@ syndication.twitter.com$third-party,important
     !argumenti.ru##.tw
     !torex.ru##.tw
     !vesti.ru##.tw
-! is in Fanboy's and Ru AdList
-/assets/twitter-$image
-! from Fanboy's and Ru AdList
-! is in Fanboy's
-/footer/twitter.
-/icon-twitter.
-! from Fanboy's
-/images/*twitter.png
-! from Fanboy's
-/images/twitter
-! from Fanboy's
-/img/twitter-
-/jquery.tweetscroll.js
-/tw.jpg
-/tw.png
-/tw.svg
-! from Fanboy's
-/tweet_button.
-/tweetfeed.min.js$important
-_twitter_icon.
-/twitter.png
-/twitter.svg$domain=~votesmart.appspot.com
-/twitterfeed/*
-/twitter-timeline.min.js
+
 
 
 !! Pinterest
-! from AdGuard
-||assets.pinterest.com/js/pinit.js^$3p
-! is in 3 lists
-log.pinterest.com
-! from Web Annoyances Ultralist, modified
-||pinterest.com^$script,3p
-! from Ru AdList
-||pinterest.com/images/$third-party
-! from Ru AdList
-||pinterest.com/js/pinit_main.js$third-party
-! from Ru AdList
-||pinterest.com/v1/urls/count.json$third-party
-! Pinterest domain
-pinimg.com$domain=~pinterest.com
-! is in AdGuard
-||s.pinimg.com/ct/core.js
+!
+! hosts
+! comments is preferably inline with  #
+!
+log.pinterest.com$important  # is in 3 lists
+pinimg.com$domain=~pinterest.com  # Pinterest domain
+!
+! urls
+! comments is preferably inline with  # 
+! general first, specific last
+!
+_pinterest_icon.png
+-pinterest.
+||pinterest.com^$script,3p  # from Web Annoyances Ultralist, modified
+||pinterest.com/images/$third-party  # from Ru AdList
+||pinterest.com/js/pinit.js^$3p  # from AdGuard, modified
+||pinterest.com/js/pinit_main.js$third-party  # from Ru AdList
+||pinterest.com/v1/urls/count.json$third-party  # from Ru AdList
+||s.pinimg.com/ct/core.js  # is in AdGuard
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
 ~pinterest.com,~livejournal.com##[class*="pinterest"]:not(html):not(body):not(article)
 ~pinterest.com##[id*="pinterest"]:not(html):not(body):not(article)
 pinterest.com##div[data-test-id="fullPageSignupModal"]
 pinterest.com##.active.noButtonStyles > div
-_pinterest_icon.png
--pinterest.
 
 
 
 !! Mail.ru (yes, it is a some sort of social network too :-) )
+!
+! hosts
+! comments is preferably inline with  #
+!
 ||ad.mail.ru$important
 banners.mail.ru
 bar.love.mail.ru
@@ -449,6 +464,18 @@ likemore-fe.go.mail.ru
 mediator.imgsmail.ru  # from AdGuard Tracking Protection
 ||pulse.mail.ru/pulse-widget.js$domain=~mail.ru  # from Ru AdList
 xray.mail.ru
+!
+! urls
+! comments is preferably inline with  # 
+! general first, specific last
+!
+||appsmail.ru/share/
+||mail.ru/k?  # from EasyPrivacy
+imgsmail.ru/gstat?  # from EasyPrivacy
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
 ! is in AdGuard
 ##a[href^="https://connect.mail.ru/share"]
@@ -474,11 +501,7 @@ otvet.mail.ru##.slide-start
 otvet.mail.ru###portal-menu
 otvet.mail.ru##.fixedsticky
 wf.mail.ru###header
-||appsmail.ru/share/
-! from EasyPrivacy
-||mail.ru/k?
-! from EasyPrivacy
-imgsmail.ru/gstat?
+!
 ! disable strange exceptions from Ru AdList
 ! В одном из тестовых браузеров поехала верстка после удаления, но по выяснению, это не из-за отсутствия исключений, а из-за запрета куки, похоже. Без исключений работает.
 @@||auto.mail.ru^$generichide,badfilter
@@ -507,28 +530,32 @@ imgsmail.ru/gstat?
 !! Linkedin
 !
 ! hosts
+! comments is preferably inline with  #
+!
 ads.linkedin.com
 !+  dc.ads.linkedin.com
 ! end of ads.linkedin.com
 ||platform.linkedin.com^$3p  # from hpHosts’ Ad and tracking servers, modified
 !
 ! urls
+! comments is preferably inline with  # 
+! general first, specific last
 !
-||linkedin.com/countserv/$third-party  # from Ru AdList
-||linkedin.com/img/$third-party  # from Ru AdList
-||linkedin.com/uas/js/userspace?$third-party # from Ru AdList
 /assets/linkedin-$image
 /assets/linked-in-$image
 /footer/linkedin.
 /icon-linkedin
-! from Fanboy's
-/img/*linkedin.png$domain=~github.io
+/img/*linkedin.png$domain=~github.io  # from Fanboy's
 /linkdin.svg
-! is in Fanboy's
-/linkedin-$domain=~linkedin.com
+/linkedin-$domain=~linkedin.com  # is in Fanboy's
 /linkedin2.png
+||linkedin.com/countserv/$third-party  # from Ru AdList
+||linkedin.com/img/$third-party  # from Ru AdList
+||linkedin.com/uas/js/userspace?$third-party # from Ru AdList
 !
-! cosmetic
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
 ~linkedin.com##[class*="linkedin"]:not(html):not(body):not(article)
 ~linkedin.com##[id*="linkedin"]:not(html):not(body):not(article)
@@ -571,6 +598,8 @@ livejournal.com##a[href*="offer"][target="_blank"]
 !! Digg
 ! is in Fanboy's
 ##img[title="Share on Digg"]
+! is in AdGuard and Fanboy's
+##a[href^="http://digg.com/submit?"]
 ##.icon_digg
 ##.icon-digg
 ! from Fanboy's
@@ -579,7 +608,34 @@ livejournal.com##a[href*="offer"][target="_blank"]
 
 
 !! Google
+!
+! hosts
+! comments is preferably inline with  #
+!
 smartlock.google.com$3p
+! Also see many hosts in _marketing_doobleclick&integralads
+!
+! urls
+! comments is preferably inline with  # 
+! general first, specific last
+!
+/assets/google-button-$image
+/google2.png
+/google-color.svg
+-googleplus.
+/google-plus.png  # from Fanboy's
+/plusone.js$important
+/social/google.  # from Fanboy's
+||apis.google.com/_/apps-static/_/js/gapi/*plusone/$third-party  # from Ru AdList
+||apis.google.com/js/plusone.js$domain=~blogger.com|~blogspot.com|~blogspot.ru|~pikucha.ru|~googleblog.com|~abcnews.go.com  # from AdGuard
+||apis.google.com/_/scs/apps-static/*=page,plusone/$third-party  # from Ru AdList
+||news.google.com/swg/js/v1/swg.js$script  # is in Fanboy's
+||plusone.google.com^$third-party,important  # from Ru AdList
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
 ##[class*="GooglePlus"]:not(html):not(body):not(article)
 ##[id*="GooglePlus"]:not(html):not(body):not(article)
 ##[class*="Googleplus"]:not(html):not(body):not(article)
@@ -625,25 +681,6 @@ smartlock.google.com$3p
 ##.icon-google-32
 ##.icon-gp
 ##.icon-g-plus
-! from Ru AdList
-||apis.google.com/_/apps-static/_/js/gapi/*plusone/$third-party
-! from AdGuard
-||apis.google.com/js/plusone.js$domain=~blogger.com|~blogspot.com|~blogspot.ru|~pikucha.ru|~googleblog.com|~abcnews.go.com
-! from Ru AdList
-||apis.google.com/_/scs/apps-static/*=page,plusone/$third-party
-! is in Fanboy's
-||news.google.com/swg/js/v1/swg.js$script
-! from Ru AdList
-||plusone.google.com^$third-party,important
--googleplus.
-/assets/google-button-$image
-/google2.png
-/google-color.svg
-! from Fanboy's
-/google-plus.png
-/plusone.js$important
-! from Fanboy's
-/social/google.
 
 
 
@@ -765,7 +802,6 @@ smartlock.google.com$3p
     ##a[title^="Share on Reddit"]
     ! is in Fanboy's
     ##[title^="Share on Twitter"]
-
 ! is in AdGuard and Fanboy's
 ##.article-share
 ! is in Fanboy's
@@ -1354,9 +1390,6 @@ smartlock.google.com$3p
 
 ! is in Fanboy's
 ##a[href^="http://technorati.com/faves/?add="]
-
-! is in AdGuard and Fanboy's
-##a[href^="http://digg.com/submit?"]
 
 ! is in AdGuard and Fanboy's
 ##a[href^="http://del.icio.us/post?url="]
