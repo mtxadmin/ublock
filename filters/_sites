@@ -7847,16 +7847,20 @@ gismeteo.*##.media_frame
 
 ! from EasyPrivacy
 ||github.com/_private/browser/stats
+||github.io/aplacer$third-party  # from RU AdList
 ! github pages of big projects open very slowly. So, let's make an exclusion (yes..). There will be no banners here, I hope.
 @@||github.com^$generichide
 ! 2019-08 Github started show intro notices. Disabled.
 github.com##.js-notice.intro-shelf
+! unfix header
 github.com##.gh-header:style(position:static !important)
+! remove [duplicated] mobile sticky header. This does not affect to regular header, which is intact
+github.com##.gh-header-sticky
+github.com##.gh-header-shadow
+! other
 github.io##.article-author-side
 github.io##article.post:style(margin-left:40px !important)
 github.io###banner
-! from RU AdList
-||github.io/aplacer$third-party
 ! from NoCoin Filter List  ! https://forums.lanik.us/viewtopic.php?f=91&t=42871
 ||github.io^$third-party,xmlhttprequest,websocket,domain=~docuss.org|~facebook.com|~gametactic.org|~github.com|~github.io|~tumblr.com|~wottactic.com
 !
