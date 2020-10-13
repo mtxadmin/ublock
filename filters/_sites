@@ -627,6 +627,7 @@ _advert/  # from EasyList
     ##.promo-block-letter
     ##.promo-button
 ##[id*="promo"]:not(html):not(body):not(article)
+##.promo-block
 /app.promo$script
 /load-promo/*  # from Ru AdList
 /promo.
@@ -3526,6 +3527,9 @@ kreelbits.blogspot.com##header
 
 lebedevum.blogspot.com##.titlewrapper > .title
 
+lik-o-dil-es.blogspot.com##.HTML.widget
+lik-o-dil-es.blogspot.com###header-inner
+
 lxguides.blogspot.com##.header
 
 microsoftplatform.blogspot.com##.HTML.widget
@@ -5135,8 +5139,6 @@ gowdhaman.com###header-top
 
 ! ads
 grouple.co$3p
-
-habr.com##div.default-block_sidebar.default-block:has-text(become a sponsor)
 
 hackware.ru##.site-title
 hackware.ru##.versep
@@ -6970,8 +6972,6 @@ mp3party.net##.rbt-list
 mp3party.net##.t-dsc
 ||mp3party.net/static/head-background
 ||mp3party.net/static/bottom-girls
-! ad push domain
-mp3zvyk.com
 
 mr-7.ru##.myblockbottom
 
@@ -8133,6 +8133,7 @@ habr.com##.sidebar_right_sticky:style(position:static !important)
 habr.com##.default-block:has-text(Хабр рекомендует)
 habr.com##.post_preview:has-text(Блог компании ТechMedia)
 habr.com##.footer-menu__item:has-text(ППА)
+habr.com##div.default-block_sidebar.default-block:has-text(become a sponsor)
 ! ad links in posts
 habr.com##[href^="https://www.pochtoy.com/"]
 habr.com##[href^="https://pochtoy.com/"]
@@ -11954,6 +11955,7 @@ specodegda.ru##.here
 ||specodegda.ru/img/up-2.png
 specodegda.ru##.association_siz
 specodegda.ru##.alert-warning.alert
+specodegda.ru##.catalogue__banner
 
 ||specodegdaopt.ru/*/specodegdalogo.gif
 ||specodegdaopt.ru/*/jumbotron.jpg
@@ -12483,6 +12485,9 @@ technoavia.ru##div.red_line
 technoavia.ru##.filter_arrow
 technoavia.ru##.link_to_ga
 technoavia.ru##.comment_body > p:has-text(Пока не было комментариев. Станьте первым)
+technoavia.ru##.warning_content
+technoavia.ru##.watched
+technoavia.ru##.Block-Uslugi-White
 
 technopark.ru##.footer-text__text
 technopark.ru##.mail-collect-popup
@@ -14870,14 +14875,12 @@ xn--d1ameqo2a7c.xn--p1ai##.left_banner
 xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 !! todo
-! is in EasyList and Fanboy’s
-/rodo.js$important
 
-! from AdGuard
-/crm/site_button/loader_*.js
+/rodo.js$important  # is in EasyList and Fanboy’s
 
-! from EasyList and Fanboy's
-/no-right-click.$script
+/crm/site_button/loader_*.js  # from AdGuard
+
+/no-right-click.$script  # from EasyList and Fanboy's
 
 /smartTagging.js
 
@@ -14886,26 +14889,19 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ! disabled because of straightforwardness of such countermeasure.
 ! it needs something different and general, for all sites
 
-! from EasyList
-/jellyfish.webp$script
+/jellyfish.webp$script  # from EasyList
 
-! from EasyPrivacy
-/imp.gif?
+/imp.gif?  # from EasyPrivacy
 
-! from EasyPrivacy
-/rendertimingpixel.
+/rendertimingpixel.  # from EasyPrivacy
 
-! from Fanboy's
-/cdn-cgi/apps/head/*$1p,script
+/cdn-cgi/apps/head/*$1p,script  # from Fanboy's
 
-! from EasyPrivacy
-/event_logger
+/event_logger  # from EasyPrivacy
 
-! from RU AdList
-||avito.ru^*/dfp/px.js
+||avito.ru^*/dfp/px.js  # from RU AdList
 
-! from Fanboy's
-/goodshare.
+/goodshare.  # from Fanboy's
 !||jsdelivr.net/npm/goodshare.js
 
 ! from EasyList and Fanboy's
@@ -14929,8 +14925,7 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 ! is in RuAdList and AdGuard
 ##img[width="728"][height="90"]
 
-! is in EasyPrivacy
-/publishertag.js
+/publishertag.js  # is in EasyPrivacy
 
 /ga_urchin_forms$important
 
@@ -14938,14 +14933,11 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 /_Incapsula_Resource
 
-! from EasyPrivacy
-/akam/11/*
+/akam/11/*  # from EasyPrivacy
 
-! from EasyPrivacy
-/jscript/dwac-
+/jscript/dwac-  # from EasyPrivacy
 
-! from EasyPrivacy
-/ga-track-
+/ga-track-  # from EasyPrivacy
 
 /_Incapsula_Resource?
 
@@ -14959,22 +14951,19 @@ xn--d1abondfncj8h.xn--p1ai##.expo-help-info
 
 /snoweffect.js
 
-! from EasyPrivacy
-/optimization-perf.js
-! from EasyPrivacy
-/tealeaf.min.js
+/optimization-perf.js  # from EasyPrivacy
+
+/tealeaf.min.js  # from EasyPrivacy
 
 /beacon.js$important
 
-! from RU AdList
-/counters^
+/counters^  # from RU AdList
 
 !/owl.carousel.min.js - don't
 /camera.min.js
 
 /amp-analytics
-! from EasyPrivacy
-/amp-geo-
+/amp-geo-  # from EasyPrivacy
 
 ! from uBlock filters
 ###bio_ep
