@@ -16,6 +16,85 @@
 chat.sarbacane.com
 chat.slb.com
 
+!
+! urls
+! comments is preferably inline with  # 
+! general first, specific last
+!
+/?pu=  # some temporary push ads domains
+/adblock-checker
+/adblockdetector.js$important
+/antisovetnik/*
+/blockadblock.$script,important  # is in Adblock Warning Removal and uBlock filters
+/block_script_clck.php
+/browser-update.min.js
+/call_back/*
+/callback.js
+/call-catcher
+/callme/*
+/callme.js
+/callme.min.js
+/callmenow/js/*
+/call.tracker.js
+/chat/*$domain=~sberbank.ru
+/chatbot.js
+/chatcheckstatus/*
+/chat-widget/*
+/chrome-popdown.js
+/click2call/*
+/consistent_cart_addon.min.js$important
+/conversation_widget.js
+/creative.sovetnik/*
+/firebase-messaging.js
+/firebase-messaging-sw.js
+/firebase_subscribe.js
+/fuckadblock$script,important
+/hint.js
+/images/popup/*
+/jquery.adblock-detector.js
+/jquery.simplemodal.$script
+/kick_sovetnik$important
+/kicksovetnik.js$important
+/livechat
+/live-chat/
+/mchat/*
+/mobile-detect.min.js
+!/modal.js - disabled. Some sites make forms with it
+/mypushdc.$important  # from RU AdList and Fanboy's
+/phone-by-geo.js
+/popper.js$important
+/popper.min.js$important
+/popup.js
+/push/*$important
+/push.js$important
+/push_count$script
+/pushjs/*$important
+/push_loader.js
+/push_main.js
+/push_notification.js
+/PushNotifications
+-push-notifications/$important  # from RU AdList and Fanboy's
+/pushnotifications.js  # from Fanboy’s Annoyance List
+/pushtoast-  # from RU AdList and Fanboy's 
+    pushtoast-a.akamaihd.net
+/push-wrap.js
+/pushy.js
+/robot_chat/*
+/shopify_chat/*$important
+/stopsovetnik/*
+/sweetalert/*  #unpkg.com/sweetalert/dist/sweetalert.min.js
+/sweetalert2/*  #unpkg.com/sweetalert/dist/sweetalert.min.js
+/sweetalert.min.js  #unpkg.com/sweetalert/dist/sweetalert.min.js
+/toastr.min.js
+/trackpush.min.js$important  # is in EasyPrivacy
+/trackpush/$important
+/webchat/*$domain=~gosuslugi.ru
+/wutime_adblocktracker/*$important
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
 ##[class*="callback"]:not(html):not(body):not(article)
 ##[id*="callback"]:not(html):not(body):not(article)
 ! good rules in general, but messengers and webinar services must be excluded
@@ -56,83 +135,6 @@ chat.slb.com
 ##.text-call
 ###webcall-dialog-container
 ##.widgetCallMe
-! some temporary push ads domains
-/?pu=
-/adblock-checker
-/adblockdetector.js$important
-/antisovetnik/*
-! is in Adblock Warning Removal and uBlock filters
-/blockadblock.$script,important
-/block_script_clck.php
-/browser-update.min.js
-/call_back/*
-/callback.js
-/call-catcher
-/callme/*
-/callme.js
-/callme.min.js
-/callmenow/js/*
-/call.tracker.js
-/chat/*$domain=~sberbank.ru
-/chatbot.js
-/chatcheckstatus/*
-/chat-widget/*
-/chrome-popdown.js
-/click2call/*
-/consistent_cart_addon.min.js$important
-/conversation_widget.js
-/creative.sovetnik/*
-/firebase-messaging.js
-/firebase-messaging-sw.js
-/firebase_subscribe.js
-/fuckadblock$script,important
-/hint.js
-/images/popup/*
-/jquery.adblock-detector.js
-/jquery.simplemodal.$script
-/kick_sovetnik$important
-/kicksovetnik.js$important
-/livechat
-/live-chat/
-/mchat/*
-/mobile-detect.min.js
-!/modal.js - disabled. Some sites make forms with it
-! from RU AdList and Fanboy's
-/mypushdc.$important
-/phone-by-geo.js
-/popper.js$important
-/popper.min.js$important
-/popup.js
-/push/*$important
-/push.js$important
-/push_count$script
-/pushjs/*$important
-/push_loader.js
-/push_main.js
-/push_notification.js
-/PushNotifications
-! from RU AdList and Fanboy's
--push-notifications/$important
-! from Fanboy’s Annoyance List
-/pushnotifications.js
-! from RU AdList and Fanboy's
-/pushtoast-
-    pushtoast-a.akamaihd.net
-/push-wrap.js
-/pushy.js
-/robot_chat/*
-/shopify_chat/*$important
-/stopsovetnik/*
-!unpkg.com/sweetalert/dist/sweetalert.min.js
-/sweetalert/*
-/sweetalert2/*
-/sweetalert.min.js
-/toastr.min.js
-! is in EasyPrivacy
-/trackpush.min.js$important
-/trackpush/$important
-/webchat/*$domain=~gosuslugi.ru
-/wutime_adblocktracker/*$important
 
 ! wordpress chats & push
 ! todo: automate.
