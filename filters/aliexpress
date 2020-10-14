@@ -91,12 +91,11 @@ aliexpress.com###fd-channel-title
 aliexpress.com,aliexpress.ru##.fm-sns
 
 cmap.alibaba.com
-! is in EasyPrivacy
-||alibaba.com/ts?
-    !||fourier.taobao.com/ts
-! is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
-offer.alibaba.com
+||alibaba.com/ts?  # is in EasyPrivacy #||fourier.taobao.com/ts
+offer.alibaba.com  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
 ||tdum.alibaba.com/dss.js
+
+||aliexpress.com/sw.js  # new 2020
 
 ||aliexpress.com/h5/mtop.aliexpress.usertouch
 ||aliexpress.com/h5/mtop.global.ug.webpush
@@ -162,13 +161,12 @@ local.alipcsec.com
 !||alicdn.com/*/WebUMID/*
 !||alicdn.com/uab/
 !||alicdn.com/*/uab/
+aliexpress.com#@#.nc_wrapper
 
 ! lighthouse.aliexpress.com/shopcart/buyer_pay_low_notice_ajax.htm
 lighthouse.aliexpress.com/buyer/user_prevention_loss_ajax.htm
 
-! also is in Opera adblocker
-us.ynuf.alipay.com
-!gpsfront.aliexpress.com - it's related products, don't block!
+us.ynuf.alipay.com  # also is in Opera adblocker
 
 ! sometimes needed
 !aliexpress.com##.in-store-more
@@ -182,17 +180,15 @@ aliexpress.com##.quick-access-title
 ||aliyun.com/*/scratchCardSlide/
 ||aliyun.com/error
 
+!gpsfront.aliexpress.com - it's related products, don't block!
 !gpsfront.aliexpress.com/getRecommendingResults.do
+
 ||alicdn.com/wimg/monitor/*
 
 cloud.video.taobao.com
- ! card
-is.alicdn.com
- ! card
-cdp.aliexpress.com
-! DRM
-aeu.alicdn.com
-!aeu.alicdn.com/ctl/ctl.js
+is.alicdn.com  # card
+cdp.aliexpress.com  # card
+aeu.alicdn.com  # DRM  #aeu.alicdn.com/ctl/ctl.js
 ||alicdn.com/*/ctl/ctl.js
 
 ! from AdGuard
@@ -216,8 +212,7 @@ connectkeyword.aliexpress.com
 moduleanalysis.aliexpress.com
 us.cobra.aliexpress.com
 
-! gtrus.aliexpress.com/check.gif?
-||aliexpress.com/check.gif?
+||aliexpress.com/check.gif?  # gtrus.aliexpress.com/check.gif?
 
 ! Aliexpress banner
 yupoo.com$3p
@@ -227,23 +222,18 @@ tmall.ru$domain=~aliexpress.ru,important
 taobao.com$3p
 
 
-! Ali related sites stealing cashback
-! ali url shorter which often used to steal cashback
-ali.onl
-! ali url shorter which often used to steal cashback
-ali.pub
+!! Ali related sites stealing cashback
+
+ali.onl  # ali url shorter which often used to steal cashback
+ali.pub  # ali url shorter which often used to steal cashback
 s.click.aliexpress.com
 ! ali indirect cashback-stealing links
 ##[href^="http://s.click.aliexpress.com/"]
 
 
-epn.bz
-! if you want: @@||epn.bz$first-party
-! epn.bz related sites stealing cashback
+epn.bz  # if you want to allow: @@||epn.bz$first-party  # epn.bz related sites stealing cashback
 epn.bz##.main__warning
-! is in Peter Lowe’s Ad and tracking server list
-alipromo.com
-! and their "ABP exclusion list" https://alipromo.com/cdn/abp/adblock.txt
+alipromo.com  # is in Peter Lowe’s Ad and tracking server list  # and their "ABP exclusion list" https://alipromo.com/cdn/abp/adblock.txt
 epn.bz
 backit.me
 epnclick.ru
@@ -259,9 +249,7 @@ mysaleday.com
 aliexhelp.ru###header-text-nav-container > .inner-wrap
 aliexhelp.ru##noindex
 
-! ad scripts and 403 root
-! is in AdGuard and RU AdList
-aliexpress-internet.ru$important
+aliexpress-internet.ru$important  # ad scripts and 403 root  # is in AdGuard and RU AdList
 
 aliexpress-obzor.ru##h2
 aliexpress-obzor.ru###sidebar
@@ -273,9 +261,7 @@ aliexpressom.ru##.affix:style(position:static !important)
 
 aliextop.ru###mouselayer
 
-! root redirects to https://s.click.aliexpress.com/...
-! is in RU AdList
-alifenix.ru$important
+alifenix.ru$important  # root redirects to https://s.click.aliexpress.com/...  # is in RU AdList
 
 alisovet.ru##.button_ali
 alisovet.site##.button_ali
@@ -285,12 +271,9 @@ alisupport.ru##.topul
 
 alitarget.ru
 
-! root redirects to https://s.click.aliexpress.com/...
-! steals cashback
-alitems.com
+alitems.com  # steals cashback  # root redirects to https://s.click.aliexpress.com/...
 
-! steals cashback
-alitools.io
+alitools.io  # steals cashback
 !+  api.alitools.io
 !aliexpress.api.alitools.io
 !api.alitools.io
@@ -303,7 +286,6 @@ expertali.ru###head
 
 kupimdeshevo.ru
 
-! not Aliexpress (yet?), but has redirects to some Russian stores
-nadavi.ru
+nadavi.ru  # not Aliexpress (yet?), but has redirects to some Russian stores
 
 vkoff.ru
