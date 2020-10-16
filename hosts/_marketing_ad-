@@ -425,9 +425,9 @@ addthiscdn.com
 addthisedge.com
 ##[class*="addthis"]:not(html):not(body):not(article)
 ##[id*="addthis"]:not(html):not(body):not(article)
-    # exclusions from uBlock filters
-    # https://github.com/uBlockOrigin/uAssets/issues/49
-    # https://github.com/uBlockOrigin/uAssets/issues/6608
+    !# exclusions from uBlock filters
+    !# https://github.com/uBlockOrigin/uAssets/issues/49
+    !# https://github.com/uBlockOrigin/uAssets/issues/6608
     free18.net,gadgetlove.com,nrc.gov,onbeing.org,rapgenius.com,schonmagazine.com,tech.co,tmz.com#@#.addthis_toolbox
 ! from Ru AdList
 ###addThis
@@ -684,8 +684,7 @@ adhese.com
 !+  thinkmedia.adhese.com
 !+  trf.adhese.com
 !+  vrt.adhese.com
-adhese.net
-!host3.adhese.be #[ad.be.doubleclick.net]
+adhese.net  #host3.adhese.be #[ad.be.doubleclick.net]
 
 adhexa.com  # from MVPS
 
@@ -737,8 +736,7 @@ adimps-perf.com
 
 adinall.com  # from YHosts
 
-adincube.com  # ads in apps
-!sdk.adincube.com
+adincube.com  # ads in apps  #sdk.adincube.com
 
 ad-indicator.com
 
@@ -953,8 +951,7 @@ admarketplace.net$important
 !+  pca.admarketplace.net
 !+  sf.admarketplace.net
 !+  sfo1.admarketplace.net
-admarketplace.net.akadns.net$important
-!adtag.admarketplace.net.akadns.net  #pca.admarketplace.net.akadns.net
+admarketplace.net.akadns.net$important  #adtag.admarketplace.net.akadns.net  #pca.admarketplace.net.akadns.net
 
 admarketplace.net
 
@@ -1223,8 +1220,7 @@ adnetworkperformance.com  # from CJX's EasyList Lite
 
 !adnexus  # see adnexus.net in _marketing_appnexus
 
-adngage.com
-!ads.adngage.com
+adngage.com  #ads.adngage.com
 
 adngin.com  # from MVPS
 
@@ -1386,8 +1382,7 @@ adpgtrack.com
 
 adpia.vn$important  # from Peter Lowe's hosts file and MobileAdTrackers
 
-adpixo.com
-!dlvr.adpixo.com
+adpixo.com  #dlvr.adpixo.com
 
 adplan-ds.com  # from MVPS
 
@@ -1856,8 +1851,7 @@ adspeed.org$important
 adspeed.us$important
 
 adspert.net
-adspert-cdn.net
-!ads-a.adspert-cdn.net
+adspert-cdn.net  #ads-a.adspert-cdn.net
 
 adspilot.com
 
@@ -2214,8 +2208,7 @@ adthis.com  # from Peter Lowe's hosts file
 
 adthor.com  # from MobileAdTrackers
 
-adthrive.com$important
-!ads.adthrive.com
+adthrive.com$important  #ads.adthrive.com
 
 adtiger.de$important  # from Peter Lowe's hosts file and MobileAdTrackers
 
@@ -2299,47 +2292,37 @@ adultcommercial.net  # from MVPS
 
 adultium.com  # ad scripts and redirects and empty root  # (it supposed to be a pornosite, but non-working)
 
-! from MVPS
-adultmoneymakers.com
+adultmoneymakers.com  # from MVPS
 
-! from MVPS
-adultsense.com
-! linked
-adultsense.info
+adultsense.com  # from MVPS
+adultsense.info  # linked
 
 adunity.com
 
 adunleash.com$important
 
-! from Peter Lowe's hosts file
-ad-up.com
+ad-up.com  # from Peter Lowe's hosts file
 
 adups.cn
 
-! from MobileAdTrackers
-adups.com
+adups.com  # from MobileAdTrackers
 
-! from MobileAdTrackers
-adup-tech.com
+adup-tech.com  # from MobileAdTrackers
 !+  d.adup-tech.com
 ! end of adup-tech.com
 
 adurr.com
 easy-downloader.com  # adurr.com
 
-! from MVPS
-aduserver.com
+aduserver.com  # from MVPS
 
-! from MobileAdTrackers
-aduwant.com
+aduwant.com  # from MobileAdTrackers
 
-! from RUS: AdGuard Russian
-adv.com
+adv.com  # from RUS: AdGuard Russian
 
 adv.rs
 
-! from RUS: AdGuard Russian
-adv.ru
+adv.ru  # from RUS: AdGuard Russian
 !+  a.adv.ru
 !+  d.adv.ru
 !+  ext.adv.ru
@@ -2352,14 +2335,11 @@ adv.ru
 !+  tmg.adv.ru
 ! end of adv.ru
 
-!adswrapme.click
-advadnetwork.me
+advadnetwork.me  #adswrapme.click
 
-! from Peter Lowe's hosts file
-adv-adserver.com
+adv-adserver.com  # from Peter Lowe's hosts file
 
-! from hpHosts’ Ad and tracking servers
-advancets.org$important
+advancets.org$important  # from hpHosts’ Ad and tracking servers
 advancets.ru$important
 
 advandate.com$important
