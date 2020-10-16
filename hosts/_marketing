@@ -8333,8 +8333,6 @@ litmus.com$important
 !+  scope.litmus.com
 ! end of litmus.com
 
-
-
 liveadvert.com  # many subdomains from https://hosts-file.net/ad_servers.txt
 !+  01.liveadvert.com
 !+  02.liveadvert.com
@@ -8632,84 +8630,64 @@ liverail.com$important
 ! end of liverail.com
 
 liveramp.com  # "Log in to"
-pippio.com
-  # ad scripts  # is in EasyPrivacy
-faktor.io
+pippio.com  # liveramp.com
+faktor.io  # ad scripts  # is in EasyPrivacy  # liveramp.com
 !+  choice.faktor.io
 ! end of faktor.io
-! "RampUp from Liveramp"
-rampedup.us
+rampedup.us  # "RampUp from Liveramp"  # liveramp.com
 
-! adsterra.com
-livereports.tv
+livereports.tv  # adsterra.com
 
-! liveadvert
-
-  # from MVPS
-livestat.com
+livestat.com  # from MVPS
 
 livestatscounter.com
 
-! "Facebook Targeting Elements"
-livestuff.com
-livestat.com
-!https://qa.livestuff.com/LiveStuff/FacebookTargetingElements
+livestuff.com  # "Facebook Targeting Elements"
+livestat.com  #https://qa.livestuff.com/LiveStuff/FacebookTargetingElements
 
-  # ad scripts
-! is in Ru AdList
-ljteas.com$important
+ljteas.com$important  # ad scripts  # is in Ru AdList
 
 lkqd.net$important
 
 
 lnk.direct
 
-lnkr.us
+lnkr.us  # from uBlock filters  # https://github.com/gorhill/uBlock/issues/1411  # https://www.reddit.com/r/firefox/comments/3pwcey/firefox_extension_download_manager_s3_asks_for/  # https://www.reddit.com/r/chrome/comments/473ves/help_how_to_remove_qipru_redirect_when_searching/
+metrext.com  # from uBlock filters  # https://github.com/gorhill/uBlock/issues/1411  # https://www.reddit.com/r/firefox/comments/3pwcey/firefox_extension_download_manager_s3_asks_for/  # https://www.reddit.com/r/chrome/comments/473ves/help_how_to_remove_qipru_redirect_when_searching/
+icontent.us  # from uBlock filters  # https://github.com/gorhill/uBlock/issues/1411  # https://www.reddit.com/r/firefox/comments/3pwcey/firefox_extension_download_manager_s3_asks_for/  # https://www.reddit.com/r/chrome/comments/473ves/help_how_to_remove_qipru_redirect_when_searching/
+||qip.ng^$document  # from uBlock filters  # https://github.com/gorhill/uBlock/issues/1411  # https://www.reddit.com/r/firefox/comments/3pwcey/firefox_extension_download_manager_s3_asks_for/  # https://www.reddit.com/r/chrome/comments/473ves/help_how_to_remove_qipru_redirect_when_searching/
+||qip.ru^$document  # from uBlock filters  # https://github.com/gorhill/uBlock/issues/1411  # https://www.reddit.com/r/firefox/comments/3pwcey/firefox_extension_download_manager_s3_asks_for/  # https://www.reddit.com/r/chrome/comments/473ves/help_how_to_remove_qipru_redirect_when_searching/
+adnotbad.com  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+adserv.info  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+icontent.us  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+jsfuel.com  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+ratexchange.net  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+serverads.net  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+spaceshipad.com  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+takethatad.com  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+tradeadsexchange.com  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
+trendtext.eu  # https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
 
-! from uBlock filters
-! https://github.com/gorhill/uBlock/issues/1411
-! https://www.reddit.com/r/firefox/comments/3pwcey/firefox_extension_download_manager_s3_asks_for/
-! https://www.reddit.com/r/chrome/comments/473ves/help_how_to_remove_qipru_redirect_when_searching/
-||lnkr.us^$document
-||metrext.com^$document
-||icontent.us^$document
-||qip.ng^$document
-||qip.ru^$document
-! https://github.com/gorhill/uBlock/issues/1411#issuecomment-201031771
-||ratexchange.net^
-||adnotbad.com^
-||serverads.net^
-||jsfuel.com^
-||takethatad.com^
-||tradeadsexchange.com^
-
-! adsupply.com
-lnkrdr.com
+lnkrdr.com  # adsupply.com
 !+  engine.lnkrdr.com
 ! end of lnkrdr.com
 
-  # ad redirects and empty root page
-lnks.gd
+lnks.gd  # ad redirects and empty root page
 
-! "share all your links"
-lnky.in
-dq837kmwx0qw7.cloudfront.net
+lnky.in  # "share all your links"
+dq837kmwx0qw7.cloudfront.net  # lnky.in
 
-!afiliacion.net
-lnntrkg.com
+lnntrkg.com  #afiliacion.net
 
 loadbrowser.ru
 ! from Ru AdList
 ##[href*="//loadbrowser.ru/"]
 
-! This is not CDN, banner scripts
-loadercdn.com$important
+loadercdn.com$important  # This is not CDN, banner scripts
 
-  # ad scripts
-loadloccat.win
+loadloccat.win  # ad scripts
 
-! cpa ad network
-loangate.com.ua$important
+loangate.com.ua$important  # cpa ad network
 
 loansiaca.com
 
@@ -8727,43 +8705,28 @@ localytics.com$important
 !+      wazuh.sandbox53.localytics.com
 ! end of localytics.com
 
-  # ad scripts
-locked3.com
+locked3.com  # ad scripts
 
-  # ad scripts
-! is in Peter Lowe’s Ad and tracking server list and Dan Pollock’s hosts file
-lockerdome.com$important
+lockerdome.com$important  # ad scripts  # is in Peter Lowe’s Ad and tracking server list and Dan Pollock’s hosts file
 
 
-  # ad scripts (pu=) and empty root
-lodder7.biz$important
+lodder7.biz$important  # ad scripts (pu=) and empty root
 
-! https://xakep.ru/2018/07/02/android-231/
-! https://clinetworking.com/2018/06/03/1984-called/
-! and from hpHosts’ Ad and tracking servers
-logentries.com$important
+logentries.com$important  # https://xakep.ru/2018/07/02/android-231/  # https://clinetworking.com/2018/06/03/1984-called/  # and from hpHosts’ Ad and tracking servers
 
-! in 3 lists
-logger.pw$important
+logger.pw$important  # in 3 lists
 
-  # from MVPS
-loggerx.com
+loggerx.com  # from MVPS
 
-  # ad redirects
-logictree.co
+logictree.co  # ad redirects
 
-  # ad scripts and empty root
-logistate.ru
+logistate.ru  # ad scripts and empty root
 
-  # ad scripts
-! is in EasyPrivacy
-logrocket.io
+logrocket.io  # ad scripts  # is in EasyPrivacy
 
-! ads
-lohatron.ru
+lohatron.ru  # ads
 
-! ads
-longlives.ru
+longlives.ru  # ads
 
 lookback.io
 !+  dormammu.lookback.io
@@ -8774,10 +8737,7 @@ lookback.io
 
 lookbookhq.com$important
 
-! "Business intelligence, big data analytics, or a 360° view of your customers"
-! also see https://forums.lanik.us/viewtopic.php?f=64&t=44282 (EasyList)
-!liveramp.com
-looker.com
+looker.com  # "Business intelligence, big data analytics, or a 360° view of your customers"  # also see https://forums.lanik.us/viewtopic.php?f=64&t=44282 (EasyList)  #liveramp.com
 !+  api.looker.com
 !+  de.looker.com
 !+  discover.looker.com
@@ -8792,35 +8752,27 @@ looksmart.net$important
 
 loomly.com$important
 
-! "Trending, Bestsellers, Similar, Bought Together, Related, Recently Viewed & Upsell"
-loopclub.io$important
+loopclub.io$important  # "Trending, Bestsellers, Similar, Bought Together, Related, Recently Viewed & Upsell"
 
 loopme.biz$important
 loopmemedia.com
 
-  # ad redirects and empty root
-! is in AdGuard and hpHosts’ Ad and tracking servers
-loopme.me$important
+loopme.me$important  # ad redirects and empty root  # is in AdGuard and hpHosts’ Ad and tracking servers
 
-! "strengthen your brand and boost sales"
-! "social proof"
-loox.app$important
+loox.app$important  # "strengthen your brand and boost sales"  # "social proof"
 loox.io$important
 
-! ad network
-lospollos.com$important
+lospollos.com$important  # ad network
 
 lostplanetads.com
 
 louwho.com
 
-  # ad scripts
-loveczakazov.ru
+loveczakazov.ru  # ad scripts
 
 instantbrandpage.lowfruitsolutions.com
 
-  # ad scripts and popups
-loyalsys.io
+loyalsys.io  # ad scripts and popups
 
 loyaltylion.net
 
@@ -8831,42 +8783,33 @@ lp4lp.ru
 
 lpcopier.ru
 
-  # ad scripts
-lpirha.com
-!https://lpirha.com/v1/confirm?block_show_uuid
+lpirha.com  # ad scripts  #https://lpirha.com/v1/confirm?block_show_uuid
 
 lpnjump.com
 
 lrmailr.pl
 !+  m.lrmailr.pl
-!ms0481.m.lrmailr.pl
-!ms1623.m.lrmailr.pl
+!ms0481.m.lrmailr.pl  #ms1623.m.lrmailr.pl
 
-! AS14061 Digital Ocean
-! email ads mpzmail
-ltdclif.co.uk$important
+ltdclif.co.uk$important  # AS14061 Digital Ocean  # email ads mpzmail
 
 ltecode.com
 
-  # ad scripts
-! "Монетизируйте трафик на 100%"
-ltg-cpa.com$important
+ltg-cpa.com$important  # ad scripts  # "Монетизируйте трафик на 100%"
 
 lucidmedia.com
 !+  east.lucidmedia.com
 ! end of lucidmedia.com
 
-! cpa ad network
-lucky.online$important
-! teaser ads network
-luckyads.pro$important
-luckyads.tech$important
-##a[href="//luckyads.pro"]
-fiyifo.com
+lucky.online$important  # cpa ad network  # luckyads
+luckyads.pro$important  # teaser ads network  # luckyads
+luckyads.tech$important  # luckyads
+cpalife.su  # luckyads
+fiyifo.com  # luckyads
+cpa.life  # luckyads
+lucky-center.com  # luckyads
 ##a[href^="https://fiyifo.com/"]
-cpalife.su
-cpa.life
-lucky-center.com
+##a[href="//luckyads.pro"]
 
 luckyducknet.com
 
