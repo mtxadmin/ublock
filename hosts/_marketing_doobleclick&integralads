@@ -762,17 +762,13 @@ adservice.google.ru$important
 adservice.google.xn--mxtq1m
 adwords.google.nl
 analytics.google.com
-! from github.com/Cybo1927/Google-Ad-Analytic-Blocker/ and hpHosts’ Ad and tracking servers
-gg.google.com
+gg.google.com  # from github.com/Cybo1927/Google-Ad-Analytic-Blocker/ and hpHosts’ Ad and tracking servers
 googleadapis.l.google.com
 gstaticadssl.l.google.com
 
-! ad scripts
-! is in uBlock filters
-fundingchoicesmessages.google.com$important
+fundingchoicesmessages.google.com$important  # ad scripts  # is in uBlock filters
 
-! disable RU ADList exceptions
-googleadservices.com$important
+googleadservices.com$important  # disable RU ADList exceptions
 !+  afs.googleadservices.com
 ! end of googleadservices.com
 ! is in EasyList
@@ -783,7 +779,7 @@ google-analytics.l.google.com
 www-google-analytics.l.google.com
 ssl-google-analytics.l.google.com
 
-! google id. See https://www.freefixer.com/b/id-google-com-whats-the-purpose-of-this-connection/ for example
+!# google id. See https://www.freefixer.com/b/id-google-com-whats-the-purpose-of-this-connection/ for example
 id.google.ac
 id.google.ad
 id.google.ae
@@ -986,15 +982,14 @@ id.google.vu
 id.google.ws
 id.l.google.com
 
-! telemetry?
-!play.googleapis.com
-!youtubei.googleapis.com
-!mtalk.google.com
-!geller-pa.googleapis.com
-!people-pa.googleapis.com
+#! telemetry?
+#!play.googleapis.com
+#!youtubei.googleapis.com
+#!mtalk.google.com
+#!geller-pa.googleapis.com
+#!people-pa.googleapis.com
 
-! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
-anglo-chinese.google-feed.net
+anglo-chinese.google-feed.net  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
 ads-icl.googleusercontent.com
 affiliate.googleusercontent.com
 ampcid.google.com
@@ -1035,34 +1030,33 @@ ads.youtube.com
 click.google-analytics.com
 badad.googleplex.com
 
-! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
-! todo: need to recheck
-!blaaaa12.googlecode.com
-!blogergadgets.googlecode.com
-!bot.googlecustomservice.com
-!contributor.google.com
-!cr-tools.clients.google.com
-!cdn2.googlestatisticalserver.com
-!fundingchoices.google.com
-!fcmatch.google.com
-!fonts.googleapis.com
-!googlecommerence.com
+#! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
+#! todo: need to recheck
+#!blaaaa12.googlecode.com
+#!blogergadgets.googlecode.com
+#!bot.googlecustomservice.com
+#!contributor.google.com
+#!cr-tools.clients.google.com
+#!cdn2.googlestatisticalserver.com
+#!fundingchoices.google.com
+#!fcmatch.google.com
+#!fonts.googleapis.com
+#!googlecommerence.com
 
 clients2.google.com
 
-! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
-! todo: need to recheck
-!alt1-mtalk.google.com
-!alt2-mtalk.google.com
-!alt3-mtalk.google.com
-!alt4-mtalk.google.com
-!alt5-mtalk.google.com
-!alt6-mtalk.google.com
-!alt7-mtalk.google.com
-!alt8-mtalk.google.com
+#! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
+#! todo: need to recheck
+#!alt1-mtalk.google.com
+#!alt2-mtalk.google.com
+#!alt3-mtalk.google.com
+#!alt4-mtalk.google.com
+#!alt5-mtalk.google.com
+#!alt6-mtalk.google.com
+#!alt7-mtalk.google.com
+#!alt8-mtalk.google.com
 
-! see https://better.fyi/trackers/imasdk.googleapis.com/ for example: "Display ads in your application's video, audio, and game content."
-imasdk.googleapis.com$important
+imasdk.googleapis.com$important  # see https://better.fyi/trackers/imasdk.googleapis.com/ for example: "Display ads in your application's video, audio, and game content."
 
 !1e100.net
 
@@ -1079,15 +1073,15 @@ googletagservices.com$important
 
 csi.gstatic.com$important  # from many lists
 
-! Update: it is not very good solution to disable youtube ads from hosts.
-!r3---sn-n8v7knee.googlevideo.com
-!r3---sn-385ou-8v1s.googlevideo.com
-!r1---sn-385ou-8v1z.googlevideo.com
-!r5---sn-385ou-8v1s.googlevideo.com
-!r6---sn-385ou-8v1s.googlevideo.com
-!r4---sn-385ou-8v1s.googlevideo.com
-!r5---sn-385ou-8v1z.googlevideo.com
-!r6---sn-385ou-8v1z.googlevideo.com
+#! Update: it is not very good solution to disable youtube ads from hosts.
+#!r3---sn-n8v7knee.googlevideo.com
+#!r3---sn-385ou-8v1s.googlevideo.com
+#!r1---sn-385ou-8v1z.googlevideo.com
+#!r5---sn-385ou-8v1s.googlevideo.com
+#!r6---sn-385ou-8v1s.googlevideo.com
+#!r4---sn-385ou-8v1s.googlevideo.com
+#!r5---sn-385ou-8v1z.googlevideo.com
+#!r6---sn-385ou-8v1z.googlevideo.com
 
 influ2.com$important  # ad scripts  # "Account-based marketing"
 ||googleapis.com/influ2-static/
@@ -1138,10 +1132,8 @@ asp-cc.com  # [Google / DoubleClick][AS15169]  # from MVPS
 
 grtyb.com  # [Google / DoubleClick][AS15169]  # from MVPS
 
-! "automated yield optimization engine, which ensures you get the highest eCPM"
-streamrail.com  # [Google / DoubleClick][AS15169]  # from MVPS
+streamrail.com  # [Google / DoubleClick][AS15169]  # "automated yield optimization engine, which ensures you get the highest eCPM"  # from MVPS
 
 departapp.com  # browser tracker  # [Google / DoubleClick][AS15169]  # from MVPS
 
-! "personalization software helps ecommerce teams match trading demands with customer affinities to turn a visit into a sale"
-qubit.com  # [Google / DoubleClick][AS15169]  # from MVPS
+qubit.com  # [Google / DoubleClick][AS15169]  # from MVPS  # "personalization software helps ecommerce teams match trading demands with customer affinities to turn a visit into a sale"
