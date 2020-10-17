@@ -194,11 +194,10 @@
 
 adsence.co.kr
 log.adsence.co.kr
-! general host rule from EasyList
-/adsence.
+/adsence.  # general host rule from EasyList
 
 
-! just for convenience: from EasyList
+#! just for convenience: from EasyList
 /cdn-cgi/pe/bag2?r*googleadservices.com
 /goodtagmanagerapi.
 /googad300by600.
@@ -580,13 +579,13 @@ adsense.su$important  # adsense
 /adsid/*  # adsense
 
 ! Google DoubleClick domains
-# [Google / DoubleClick][AS15169][66.249.64.0 - 66.249.95.255]
-# [Google / DoubleClick][AS15169][72.14.192.0 - 72.14.255.255]
-# [Google / DoubleClick][AS15169][74.125.0.0 - 74.125.255.255]
-# [Google / DoubleClick][AS6432][216.73.80.0 - 216.73.95.255]
-# [Google / DoubleClick][AS15169][64.233.160.0 - 64.233.191.255]
-# [Google / DoubleClick][AS15169][173.194.0.0 - 173.194.255.255]
-# [Google / DoubleClick][AS15169][209.85.128.0 - 209.85.255.255]
+!# [Google / DoubleClick][AS15169][66.249.64.0 - 66.249.95.255]
+!# [Google / DoubleClick][AS15169][72.14.192.0 - 72.14.255.255]
+!# [Google / DoubleClick][AS15169][74.125.0.0 - 74.125.255.255]
+!# [Google / DoubleClick][AS6432][216.73.80.0 - 216.73.95.255]
+!# [Google / DoubleClick][AS15169][64.233.160.0 - 64.233.191.255]
+!# [Google / DoubleClick][AS15169][173.194.0.0 - 173.194.255.255]
+!# [Google / DoubleClick][AS15169][209.85.128.0 - 209.85.255.255]
 doubleclick.net$important
 !+  3au.doubleclick.net
 !+  3ad.doubleclick.net
@@ -665,9 +664,9 @@ doubleclick.com$important
 !+  g.doubleclick.com
 ! end of doubleclick.com
 doubleclick.de$important
-!||static.doubleclick.net$important
-!||g.doubleclick.net$important
-!||pubads.g.doubleclick.net$important
+#!||static.doubleclick.net$important
+#!||g.doubleclick.net$important
+#!||pubads.g.doubleclick.net$important
 
 doubleclick.ne.jp$important  # there are some exceptions in standard lists, let's disable completely
 
