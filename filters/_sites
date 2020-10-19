@@ -8684,6 +8684,7 @@ pic-money.ru###left
 ||pikabu.ru/stat/
 ||pikabu.ru/sw.js
 ||pikabu.ru/*/telegram_widget/
+!
 ! from AdGuard
 pikabu.ru##div[id^="adfox_"]
 pikabu.ru##div[id^=crt-]
@@ -8691,15 +8692,13 @@ pikabu.ru##div[id^=crt-]
 pikabu.ru##[data-placeholder-handled]
 ! from Ru AdList
 pikabu.ru##header > .header__main:style(background-color: var(--color--header__bg) !important)
+!
 ! sidebar is full of fintiflyushek
 pikabu.ru##.sidebar-block__content_links
 pikabu.ru##.sidebar-block-links
 pikabu.ru##.sidebar-block-links__apps
 pikabu.ru##.sidebar-social
 pikabu.ru##.social-icon
-pikabu.ru##.story:has(.story__sponsor)
-pikabu.ru##.story:has(.story__pin)
-pikabu.ru##.story__share
 pikabu.ru##.telegram-widget
 pikabu.ru##.vk_groups
 pikabu.ru##.sidebar__inner_fixed:style(position:static !important)
@@ -8707,7 +8706,7 @@ pikabu.ru##.sidebar__inner_fixed:style(position:static !important)
 pikabu.ru##.footer__inner:style(background-color: var(--color--app__bg) !important; color: var(--color--app__text) !important)
 pikabu.ru##.footer__main:style(position:static !important)
 ! from RU AdList
-!pikabu.ru##.app > .app__inner[style*="padding-top"]:style(padding-top: 64px !important)
+!pikabu.ru##.app > .app__inner[style*="padding-top"]:style(padding-top: 64px !important
 ! from RU AdList
 pikabu.ru##.footer:style(height: auto !important)
 ! from RU AdList and AdGuard
@@ -8723,24 +8722,31 @@ pikabu.ru##.header__mobile:style(position:static !important)
 pikabu.ru##.app__content:style(padding-top:0px !important)
 pikabu.ru##.sidebar__right:style(position:static !important)
 pikabu.ru##.page-story > section
+!
 ! unstick mobile sticky header
 pikabu.ru###right_container:style(position:absolute !important)
+!
 ! cookie pictures
 pikabu.ru##.logo
 pikabu.ru###brov
 pikabu.ru###myflash
 pikabu.ru##.footer__cookie
 pikabu.ru##.footer__image
+!
 ! ads in menu ("special projects")
 pikabu.ru##a.sidebar-menu__item_main.sidebar-menu__item:has(img)
+!
 ! pictures below the menu
 pikabu.ru##:root::after:style(background-image:none !important)
 pikabu.ru##.header__main::after:style(background-image:none !important)
+!
 ! apps
 pikabu.ru##.footer__buttons
 pikabu.ru##.footer__title
+!
 ! small icons about app-posted messages
 pikabu.ru##.comment__platform
+!
 ! other
 pikabu.ru##div.sidebar-block_border.sidebar-block:has(.sidebar-block__header:has-text(Вакансии))
 pikabu.ru##div.footer__section:has-text(Партнёры)
@@ -8774,15 +8780,26 @@ pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeney
 pikabu.ru##div.menu_vertical.menu.sidebar-block__content_hr.sidebar-block__content:has-text(Ламповый конструктор)
 pikabu.ru##.lightbulbs__welcome
 pikabu.ru##.stories-feed__container > section:has-text(Создать свою доску)
-! ad articles
+!
+! ads: promos and ad posts
 pikabu.ru##.section-group:has(p > a[href^="https://pikabu.ru/page/interview/"])
+pikabu.ru##.story:has(.story__sponsor)
+pikabu.ru##.story:has(.story__pin)
+! is in Ru AdList
+pikabu.ru##.story:has(* > [id] + script)
+pikabu.ru##.story__share
+!
 ! email subscription forms
 pikabu.ru##.email-block
 pikabu.ru##.email-form_block
+!
 ! some user-generated pictures
 ||pikabu.ru/post_img/2020/04/16/10/1587058488132653149.png
 !||cs10.pikabu.ru/post_img/2020/04/16/10/1587058488132653149.png
+!
 pikabu.ru##.pik-virus
+! is in Ru AdList
+pikabu.ru###branding_ad_comment
 
 piluli.ru##.fixed-header:style(position:static !important)
 piluli.ru##.icon
