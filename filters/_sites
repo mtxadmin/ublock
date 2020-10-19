@@ -1247,8 +1247,7 @@ _pagespeed_beacon?  # from AdGuard
 ##.personal-data-warning
 !
 /booster_eu_cookie$important
-! is in EasyList and Fanboy’s
-/cookie-banner
+/cookie-banner  # is in EasyList and Fanboy’s
 /cookiebar.  # from AdGuard
 /cookie_consent.js$important
 /cookieconsent.$important  # from AdGuard
@@ -1743,8 +1742,7 @@ gfycat.com$third-party
 gifer.com$third-party
 smiles2k.net$third-party
 smiles.dolf.ru$third-party
-! it seems, there are no useful (=interface) gifs there.
-||ic.pics.livejournal.com/*.gif
+||ic.pics.livejournal.com/*.gif  # it seems, there are no useful (=interface) gifs there.
 /new.gif
 /wink.gif
 ##.bbc_emoticon
@@ -1769,6 +1767,10 @@ smiles.dolf.ru$third-party
 
 
 !! tickers and marquees
+/news-ticker/*
+/jquery.marquee
+/jquery.newsticker.min.js
+/ticker.min.js
 ##marquee
 ###marquee
 ##.marquee
@@ -1785,14 +1787,13 @@ smiles.dolf.ru$third-party
 moiobzor.su###webticker
 prosud24.ru###showticker
 tarif-24.ru##.mh-ticker-bottom
-/news-ticker/*
-/jquery.marquee
-/jquery.newsticker.min.js
-/ticker.min.js
 
 
 
 !! seo and copyrights
+/nocopy.js
+/seohide/*
+/seoHiddenLink/*
 ##[class*="copyright"]:not(html):not(body):not(article)
 ##[id*="copyright"]:not(html):not(body):not(article)
 ##[class*="Disclaimer"]:not(html):not(body):not(article)
@@ -1826,10 +1827,6 @@ tarif-24.ru##.mh-ticker-bottom
 ##.seo_text
 ##.seo-text
 ##.seotop
-/seohide/*
-/seoHiddenLink/*
-/nocopy.js
-
 
 
 !! add to favorites
@@ -1902,7 +1899,7 @@ tarif-24.ru##.mh-ticker-bottom
 ! is in Ru AdList
 !@@||fonts.gstatic.com^
 ! exclusions from Fanboy's Anti-thirdparty Fonts
-! seems it is not a good idea... Disabled
+! It seems it is not a good idea... Disabled
 !fonts.gstatic.com^$important,domain=floatplane.com|google.com|youtube.com|bloble.io|regexpal.com
 
 
@@ -2046,11 +2043,9 @@ st-1.1fichier.com #[Piwik.Analytics]
 
 24gadget.ru##.news-slidecontent
 
-! cross-site ad scripts
-24molnia.com$3p,script
+24molnia.com$3p,script  # cross-site ad scripts
 
-! time informer. 3p scripts
-24timezones.com$3p
+24timezones.com$3p  # time informer. 3p scripts
 
 24tv.ua##.inner-wrap:style(padding-top:0px !important)
 24tv.ua##section:style(margin-top:0px !important)
@@ -2073,8 +2068,7 @@ st-1.1fichier.com #[Piwik.Analytics]
 33b.ru##body > table:nth-of-type(1)
 33b.ru##td:nth-of-type(2) > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)
 
-! chats and calls (but also legal PBX)
-3cx.com$third-party,important
+3cx.com$third-party,important  # chats and calls (but also legal PBX)
 
 ||3dn.ru/notest/
 
@@ -2090,8 +2084,7 @@ st-1.1fichier.com #[Piwik.Analytics]
 
 ||3nx.ru/images/3nx_ru_logo/
 
-! "обнаружен блокировщик рекламы"
-433175.ru$inline-script
+433175.ru$inline-script  # "обнаружен блокировщик рекламы"
 
 4cheat.ru##.link-category
 
@@ -2295,15 +2288,13 @@ st-1.1fichier.com #[Piwik.Analytics]
 ||9ban.ru/wp-content/themes/1brus/img/bloquote.png
 9ban.ru##.add_company
 
-! from MVPS
-web-t.9gag.com #[Piwik.Analytics]
+web-t.9gag.com  #[Piwik.Analytics]  # from MVPS
 
 9mm.ru##.opener:style(position:static !important)
 9mm.ru##.confirm_region
 9mm.ru###headerfixed
 
-! push ads
-a2zapk.com/js/notification.js
+a2zapk.com/js/notification.js  # push ads
 ! fixed header
 a2zapk.com##.Buner:style(position:static !important)
 a2zapk.com##body:style(margin-top:0px !important)
@@ -2478,8 +2469,7 @@ akado.ru##.banner
 ||akamaihd.net/javascripts/browserfp.
 
 ||akamaized.net/oil/
-! is in EasyList and Fanboy's
-/oil/*-release.chunk.js
+/oil/*-release.chunk.js  # is in EasyList and Fanboy's
 
 akket.com###header
 akket.com###footer
