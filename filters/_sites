@@ -90,8 +90,7 @@ _advert/  # from EasyList
 -auto-ads-  # from EasyList
 /avada-scrollspy.js
 /awaps$important
-/b/ss/*/js-  # is in AdGuard and EasyPrivacy
-	! dell.com/b/ss/dellglobalonline/1/JS-
+/b/ss/*/js-  # is in AdGuard and EasyPrivacy  # dell.com/b/ss/dellglobalonline/1/JS-
 /ban/*
 /baner_$important
 /banery/*
@@ -122,16 +121,11 @@ _advert/  # from EasyList
 /dfp_mobile.js
 /easy-social-share-buttons.min.js
 /fixads.js
-! is in EasyList
-/footer_ads.
+/footer_ads.  # is in EasyList
 /fuckadblock/*$important
 /fuckadblock.js$important
 /ga.js
-/gampad/*
-	!/gampad/ad
-	!/gampad/ads
-	!/gampad/adx
-	!/gampad/google_ads.js
+/gampad/*  #/gampad/ad  #/gampad/ads  #/gampad/adx  #/gampad/google_ads.js
 /googlead.js$important
 -google-tag-manager/$script  # is in EasyPrivacy
 /gpt/pubads_impl_$script
@@ -780,6 +774,7 @@ _loghuman=  # from EasyPrivacy
 _pagespeed_beacon?  # from AdGuard
 /pageviews/*$domain=~stats.wikimedia.org|~tools.wmflabs.org  # is in EasyPrivacy
 /parking-crew.js
+/piwik.js$important
 /platform-detect
 /pum-site-scripts.  # from Fanboy's
 /px.gif?  # from EasyPrivacy
@@ -1253,8 +1248,7 @@ _pagespeed_beacon?  # from AdGuard
 ##.personal-data-warning
 !
 /booster_eu_cookie$important
-! is in EasyList and Fanboy’s
-/cookie-banner
+/cookie-banner  # is in EasyList and Fanboy’s
 /cookiebar.  # from AdGuard
 /cookie_consent.js$important
 /cookieconsent.$important  # from AdGuard
@@ -1749,8 +1743,7 @@ gfycat.com$third-party
 gifer.com$third-party
 smiles2k.net$third-party
 smiles.dolf.ru$third-party
-! it seems, there are no useful (=interface) gifs there.
-||ic.pics.livejournal.com/*.gif
+||ic.pics.livejournal.com/*.gif  # it seems, there are no useful (=interface) gifs there.
 /new.gif
 /wink.gif
 ##.bbc_emoticon
@@ -1775,6 +1768,10 @@ smiles.dolf.ru$third-party
 
 
 !! tickers and marquees
+/news-ticker/*
+/jquery.marquee
+/jquery.newsticker.min.js
+/ticker.min.js
 ##marquee
 ###marquee
 ##.marquee
@@ -1791,14 +1788,13 @@ smiles.dolf.ru$third-party
 moiobzor.su###webticker
 prosud24.ru###showticker
 tarif-24.ru##.mh-ticker-bottom
-/news-ticker/*
-/jquery.marquee
-/jquery.newsticker.min.js
-/ticker.min.js
 
 
 
 !! seo and copyrights
+/nocopy.js
+/seohide/*
+/seoHiddenLink/*
 ##[class*="copyright"]:not(html):not(body):not(article)
 ##[id*="copyright"]:not(html):not(body):not(article)
 ##[class*="Disclaimer"]:not(html):not(body):not(article)
@@ -1832,10 +1828,6 @@ tarif-24.ru##.mh-ticker-bottom
 ##.seo_text
 ##.seo-text
 ##.seotop
-/seohide/*
-/seoHiddenLink/*
-/nocopy.js
-
 
 
 !! add to favorites
@@ -1908,7 +1900,7 @@ tarif-24.ru##.mh-ticker-bottom
 ! is in Ru AdList
 !@@||fonts.gstatic.com^
 ! exclusions from Fanboy's Anti-thirdparty Fonts
-! seems it is not a good idea... Disabled
+! It seems it is not a good idea... Disabled
 !fonts.gstatic.com^$important,domain=floatplane.com|google.com|youtube.com|bloble.io|regexpal.com
 
 
@@ -2052,11 +2044,9 @@ st-1.1fichier.com #[Piwik.Analytics]
 
 24gadget.ru##.news-slidecontent
 
-! cross-site ad scripts
-24molnia.com$3p,script
+24molnia.com$3p,script  # cross-site ad scripts
 
-! time informer. 3p scripts
-24timezones.com$3p
+24timezones.com$3p  # time informer. 3p scripts
 
 24tv.ua##.inner-wrap:style(padding-top:0px !important)
 24tv.ua##section:style(margin-top:0px !important)
@@ -2079,8 +2069,7 @@ st-1.1fichier.com #[Piwik.Analytics]
 33b.ru##body > table:nth-of-type(1)
 33b.ru##td:nth-of-type(2) > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)
 
-! chats and calls (but also legal PBX)
-3cx.com$third-party,important
+3cx.com$third-party,important  # chats and calls (but also legal PBX)
 
 ||3dn.ru/notest/
 
@@ -2096,8 +2085,7 @@ st-1.1fichier.com #[Piwik.Analytics]
 
 ||3nx.ru/images/3nx_ru_logo/
 
-! "обнаружен блокировщик рекламы"
-433175.ru$inline-script
+433175.ru$inline-script  # "обнаружен блокировщик рекламы"
 
 4cheat.ru##.link-category
 
@@ -2301,15 +2289,13 @@ st-1.1fichier.com #[Piwik.Analytics]
 ||9ban.ru/wp-content/themes/1brus/img/bloquote.png
 9ban.ru##.add_company
 
-! from MVPS
-web-t.9gag.com #[Piwik.Analytics]
+web-t.9gag.com  #[Piwik.Analytics]  # from MVPS
 
 9mm.ru##.opener:style(position:static !important)
 9mm.ru##.confirm_region
 9mm.ru###headerfixed
 
-! push ads
-a2zapk.com/js/notification.js
+a2zapk.com/js/notification.js  # push ads
 ! fixed header
 a2zapk.com##.Buner:style(position:static !important)
 a2zapk.com##body:style(margin-top:0px !important)
@@ -2484,8 +2470,7 @@ akado.ru##.banner
 ||akamaihd.net/javascripts/browserfp.
 
 ||akamaized.net/oil/
-! is in EasyList and Fanboy's
-/oil/*-release.chunk.js
+/oil/*-release.chunk.js  # is in EasyList and Fanboy's
 
 akket.com###header
 akket.com###footer
@@ -8700,6 +8685,7 @@ pic-money.ru###left
 ||pikabu.ru/stat/
 ||pikabu.ru/sw.js
 ||pikabu.ru/*/telegram_widget/
+!
 ! from AdGuard
 pikabu.ru##div[id^="adfox_"]
 pikabu.ru##div[id^=crt-]
@@ -8707,15 +8693,30 @@ pikabu.ru##div[id^=crt-]
 pikabu.ru##[data-placeholder-handled]
 ! from Ru AdList
 pikabu.ru##header > .header__main:style(background-color: var(--color--header__bg) !important)
+! is in Ru AdList
+pikabu.ru##.header-right-menu > a[href][target="_blank"]
+! is in Ru AdList
+pikabu.ru##[onclick*="branding_click"]
+!
+! ads: promos and ad posts
+pikabu.ru##.section-group:has(p > a[href^="https://pikabu.ru/page/interview/"])
+pikabu.ru##.story:has(.story__sponsor)
+pikabu.ru##.story:has(.story__pin)
+! is in Ru AdList
+pikabu.ru##.story:has(* > [id] + script)
+pikabu.ru##.story__share
+!
+! email subscription forms
+pikabu.ru##.email-block
+pikabu.ru##.email-form_block
+
+!
 ! sidebar is full of fintiflyushek
 pikabu.ru##.sidebar-block__content_links
 pikabu.ru##.sidebar-block-links
 pikabu.ru##.sidebar-block-links__apps
 pikabu.ru##.sidebar-social
 pikabu.ru##.social-icon
-pikabu.ru##.story:has(.story__sponsor)
-pikabu.ru##.story:has(.story__pin)
-pikabu.ru##.story__share
 pikabu.ru##.telegram-widget
 pikabu.ru##.vk_groups
 pikabu.ru##.sidebar__inner_fixed:style(position:static !important)
@@ -8723,7 +8724,7 @@ pikabu.ru##.sidebar__inner_fixed:style(position:static !important)
 pikabu.ru##.footer__inner:style(background-color: var(--color--app__bg) !important; color: var(--color--app__text) !important)
 pikabu.ru##.footer__main:style(position:static !important)
 ! from RU AdList
-!pikabu.ru##.app > .app__inner[style*="padding-top"]:style(padding-top: 64px !important)
+!pikabu.ru##.app > .app__inner[style*="padding-top"]:style(padding-top: 64px !important
 ! from RU AdList
 pikabu.ru##.footer:style(height: auto !important)
 ! from RU AdList and AdGuard
@@ -8739,24 +8740,31 @@ pikabu.ru##.header__mobile:style(position:static !important)
 pikabu.ru##.app__content:style(padding-top:0px !important)
 pikabu.ru##.sidebar__right:style(position:static !important)
 pikabu.ru##.page-story > section
+!
 ! unstick mobile sticky header
 pikabu.ru###right_container:style(position:absolute !important)
+!
 ! cookie pictures
 pikabu.ru##.logo
 pikabu.ru###brov
 pikabu.ru###myflash
 pikabu.ru##.footer__cookie
 pikabu.ru##.footer__image
+!
 ! ads in menu ("special projects")
 pikabu.ru##a.sidebar-menu__item_main.sidebar-menu__item:has(img)
+!
 ! pictures below the menu
 pikabu.ru##:root::after:style(background-image:none !important)
 pikabu.ru##.header__main::after:style(background-image:none !important)
+!
 ! apps
 pikabu.ru##.footer__buttons
 pikabu.ru##.footer__title
+!
 ! small icons about app-posted messages
 pikabu.ru##.comment__platform
+!
 ! other
 pikabu.ru##div.sidebar-block_border.sidebar-block:has(.sidebar-block__header:has-text(Вакансии))
 pikabu.ru##div.footer__section:has-text(Партнёры)
@@ -8790,15 +8798,14 @@ pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeney
 pikabu.ru##div.menu_vertical.menu.sidebar-block__content_hr.sidebar-block__content:has-text(Ламповый конструктор)
 pikabu.ru##.lightbulbs__welcome
 pikabu.ru##.stories-feed__container > section:has-text(Создать свою доску)
-! ad articles
-pikabu.ru##.section-group:has(p > a[href^="https://pikabu.ru/page/interview/"])
-! email subscription forms
-pikabu.ru##.email-block
-pikabu.ru##.email-form_block
+!
 ! some user-generated pictures
 ||pikabu.ru/post_img/2020/04/16/10/1587058488132653149.png
 !||cs10.pikabu.ru/post_img/2020/04/16/10/1587058488132653149.png
+!
 pikabu.ru##.pik-virus
+! is in Ru AdList
+pikabu.ru###branding_ad_comment
 
 piluli.ru##.fixed-header:style(position:static !important)
 piluli.ru##.icon
@@ -14012,20 +14019,15 @@ redirectme.net
 ! from EasyPrivacy
 .js?referer=$important
 
-! is in RU AdList and Fanboy’s
-/onlineopinionv5/*$important
+/onlineopinionv5/*$important  # is in RU AdList and Fanboy’s
 
-! is in EasyPrivacy
-/dynimpression?rkey=
+/dynimpression?rkey=  # is in EasyPrivacy
 
 /videotracking.min.js$important
 
-! ad scripts
-! is in EasyList
-/gujad.$important
+/gujad.$important  # ad scripts  # is in EasyList
 
-! from AdGuard
-/dear_code/*/goclick?t=*&ref=
+/dear_code/*/goclick?t=*&ref=  # from AdGuard
 
 /nakladka.js$important
 
@@ -14041,11 +14043,9 @@ redirectme.net
 
 /booster.js$important
 
-! is in Ru AdList
-/rbs_scripts/rbs_banner_
+/rbs_scripts/rbs_banner_  # is in Ru AdList
 
-! from Ru AdList
-.pp.ua^$script,3p
+.pp.ua^$script,3p  # from Ru AdList
 
 /sticky-kit/*
 /jquery.sticky-kit.min.js
@@ -14065,11 +14065,9 @@ garant.ru##.popup-social
 ###infinite-footer
 	! privacyonline.home.blog###infinite-footer
 
-! is in EasyList
-/detroitchicago/rochester.js
+/detroitchicago/rochester.js  # is in EasyList
 
-! is in EasyList
-/banger.js
+/banger.js  # is in EasyList
 
 ! from AdGuard
 /^https?:\/\/([a-z0-9]{8,10}\.)?[a-z0-9]{5,14}\.(com|bid|online|top|club)\/([a-z0-9]{2}\/){3}[a-f0-9]{32}\.js$/$script,3p
@@ -14201,8 +14199,7 @@ garant.ru##.popup-social
 
 /convertfox.min.js
 
-||comcast.com/*/adrum/
-! AppDynamics Adrum scripts: https://cdn.comcast.com/-/media/Common/adrum/adrumext7a88a5f34b3368a060fd963640d8c56b.js
+||comcast.com/*/adrum/  # AppDynamics Adrum scripts: https://cdn.comcast.com/-/media/Common/adrum/adrumext7a88a5f34b3368a060fd963640d8c56b.js
 
 /branding/*
 
@@ -14256,8 +14253,7 @@ rackcdn.com
 ! is in EasyPrivacy
 /cdn-cgi/bm/cv/*
 
-! is in Ru AdList
-/output/index/*$script,3p
+/output/index/*$script,3p  # is in Ru AdList
 
 ru##.ErrorBox:has-text(AdBlock)
 
@@ -14276,8 +14272,8 @@ br.rk.com  # from MVPS
 
 scripts.mofos.com  # from MVPS
 
-botd.wordpress.com #[WebBug]  # from MVPS
-botd2.wordpress.com #[WebBug]  # from MVPS
+botd.wordpress.com  #[WebBug]  # from MVPS
+botd2.wordpress.com  #[WebBug]  # from MVPS
 
 cache.daredorm.com  # from MVPS
 
@@ -14297,7 +14293,7 @@ s.marketwatch.com$domain=~marketwatch.com  # from MVPS
 adv.aport.ru  # from MVPS
 stat.aport.ru  # from MVPS
 
-stat.stars.ru #[WebBug]  # from MVPS
+stat.stars.ru  #[WebBug]  # from MVPS
 
 banners.dogfart.com  # from MVPS
 
@@ -15488,8 +15484,7 @@ goodstone.realty##.b-slid_text
 ||goodstone.realty/images/slid/*$image
 ||goodstone.realty/images/ytong.jpg
 
-! this use of url shortener service looks strange
-goo.gl$third-party
+goo.gl$third-party  # this use of url shortener service looks strange. Also, later this shortener was blocked entirely (with all other shorteners)
 
 ||gorodarus.ru/templates/apicloud/images/slide2.jpg
 gorodarus.ru###slide
@@ -15530,8 +15525,7 @@ greendail.ru###footer
 greywizard.com$3p
 greywizard.net$3p
 
-! pings from shopify apps
-||grizzlyapps.com$xhr
+||grizzlyapps.com$xhr  # pings from shopify apps
 
 groenlandselskab.dk$script,3p
 
@@ -15735,8 +15729,6 @@ spiegel.de##.rounded.border-negative.border
 
 newsru.com##.right-feed-item:has(.prm-mark-small)
 
-||avatars.mds.yandex.net/get-zen_doc/$image
-
 medikforum.ru##.rd-navbar-panel
 
 xn--e1aaci2aeibeuf.xn--p1ai###region1wrap
@@ -15745,3 +15737,24 @@ xn--e1aaci2aeibeuf.xn--p1ai###region2wrap > .xtc-wrapperpad
 russianguns.ru###header
 
 sredaobitaniyatv.ru##.site_title
+
+||art4x4.ru/*/header_mybg.jpg
+art4x4.ru###headerbar
+
+sportmaster.ru##sm-subscribe-new-ui
+
+slideshare.net##.banner-content
+! is in EasyList and Fanboy's
+slideshare.net##.j-tos-update-banner
+! Там контент забанен Роскомнадзором, если что. Адблок не виноват.
+
+! is in EasyList and Fanboy's
+##.lms-notice-wrapper
+
+kurer-sreda.ru##.tax-top
+kurer-sreda.ru##.footer-more__18
+
+kubernetes.io###announcement
+kubernetes.io###fp-announcement
+kubernetes.io##header
+kubernetes.io###kubeweekly

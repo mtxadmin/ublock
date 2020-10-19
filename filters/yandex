@@ -51,9 +51,7 @@
 ##.ya-chat-button__container
 ##.ya-chat-widget
 ||yastatic.net/s3/chat/
-! is in RuAdList and Fanboy's
-||yastatic.net^*/widget_ya.js
-!https://yastatic.net/s3/chat/1.25.0/widget_ya.js
+||yastatic.net^*/widget_ya.js  # is in RuAdList and Fanboy's  #https://yastatic.net/s3/chat/1.25.0/widget_ya.js
 
 yandex.*##.distr-popup__content
 yandex.*##.distr-popup_js_inited
@@ -170,9 +168,6 @@ yandex.*##.label_font_own.label_color_white.label:has-text(/^[0-9]+\+$/)
 
 yandex.*##.ygogn5__content
 yandex.*##video
-||yandex.*/clck/counter
-! beacons and images
-||yandex.*/clck/
 yandex.ru/data/mail.js
 yandex.*##.misspell
 ! ads in images' search
@@ -258,10 +253,8 @@ zen.yandex.ru##.article-right-suggested-publications-wrapper:style(padding-top:0
 ||zen.yandex.ru/api/v4/stats/
 ||zen.yandex.ru/widget-loader$important
 
-! from RU AdList, modified
-||static-mon.yandex.net/static/main.js$important
-! and don't block it whole
-!||static-mon.yandex.net
+||static-mon.yandex.net/static/main.js$important  # from RU AdList, modified
+!||static-mon.yandex.net  # and don't block it whole
 
 ||dialogs.s3.yandex.net/badges/$image
 
@@ -303,17 +296,13 @@ yandex.ru##.serp-item div.direct-snippet
 ! from AdGuard and Ru AdList
 yandex.ru##div[id^="BlogPost"][data-state*="/promo/popup/"]
 
-! from EasyPrivacy
-||yandex.*/clck/$script
-! from EasyPrivacy
-||yandex.*/clck/$xmlhttprequest
-! from EasyPrivacy
-||yandex.*/clck/$image
-! from Ru AdList
-||yandex.*/clck/
+||yandex.*/clck/  # beacons and images  #previous: ||yandex.*/clck/counter
+#! in EasyPrivacy: ||yandex.*/clck/$script
+#! in EasyPrivacy: ||yandex.*/clck/$xmlhttprequest
+#! in EasyPrivacy: ||yandex.*/clck/$image
+#! in Ru AdList:   ||yandex.*/clck/
 
-! from EasyPricacy
-||yandex.ru/cycounter?
+||yandex.ru/cycounter?  # from EasyPricacy
 
 ##.ya-taxi-widget
 ##.ya-taxi-widget__content
@@ -417,4 +406,8 @@ yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
 
 
 ||yandex.ru/bell/api/v1/get-ticker
+
+!||avatars.mds.yandex.net/get-zen_doc/$image - don't. It is not only avatars, it is main pictures as well
+
+yandex.ru##.card-banner-view
 
