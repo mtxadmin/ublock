@@ -13996,20 +13996,15 @@ redirectme.net
 ! from EasyPrivacy
 .js?referer=$important
 
-! is in RU AdList and Fanboy’s
-/onlineopinionv5/*$important
+/onlineopinionv5/*$important  # is in RU AdList and Fanboy’s
 
-! is in EasyPrivacy
-/dynimpression?rkey=
+/dynimpression?rkey=  # is in EasyPrivacy
 
 /videotracking.min.js$important
 
-! ad scripts
-! is in EasyList
-/gujad.$important
+/gujad.$important  # ad scripts  # is in EasyList
 
-! from AdGuard
-/dear_code/*/goclick?t=*&ref=
+/dear_code/*/goclick?t=*&ref=  # from AdGuard
 
 /nakladka.js$important
 
@@ -14025,11 +14020,9 @@ redirectme.net
 
 /booster.js$important
 
-! is in Ru AdList
-/rbs_scripts/rbs_banner_
+/rbs_scripts/rbs_banner_  # is in Ru AdList
 
-! from Ru AdList
-.pp.ua^$script,3p
+.pp.ua^$script,3p  # from Ru AdList
 
 /sticky-kit/*
 /jquery.sticky-kit.min.js
@@ -14049,11 +14042,9 @@ garant.ru##.popup-social
 ###infinite-footer
 	! privacyonline.home.blog###infinite-footer
 
-! is in EasyList
-/detroitchicago/rochester.js
+/detroitchicago/rochester.js  # is in EasyList
 
-! is in EasyList
-/banger.js
+/banger.js  # is in EasyList
 
 ! from AdGuard
 /^https?:\/\/([a-z0-9]{8,10}\.)?[a-z0-9]{5,14}\.(com|bid|online|top|club)\/([a-z0-9]{2}\/){3}[a-f0-9]{32}\.js$/$script,3p
@@ -14185,8 +14176,7 @@ garant.ru##.popup-social
 
 /convertfox.min.js
 
-||comcast.com/*/adrum/
-! AppDynamics Adrum scripts: https://cdn.comcast.com/-/media/Common/adrum/adrumext7a88a5f34b3368a060fd963640d8c56b.js
+||comcast.com/*/adrum/  # AppDynamics Adrum scripts: https://cdn.comcast.com/-/media/Common/adrum/adrumext7a88a5f34b3368a060fd963640d8c56b.js
 
 /branding/*
 
@@ -14240,8 +14230,7 @@ rackcdn.com
 ! is in EasyPrivacy
 /cdn-cgi/bm/cv/*
 
-! is in Ru AdList
-/output/index/*$script,3p
+/output/index/*$script,3p  # is in Ru AdList
 
 ru##.ErrorBox:has-text(AdBlock)
 
@@ -14260,8 +14249,8 @@ br.rk.com  # from MVPS
 
 scripts.mofos.com  # from MVPS
 
-botd.wordpress.com #[WebBug]  # from MVPS
-botd2.wordpress.com #[WebBug]  # from MVPS
+botd.wordpress.com  #[WebBug]  # from MVPS
+botd2.wordpress.com  #[WebBug]  # from MVPS
 
 cache.daredorm.com  # from MVPS
 
@@ -14281,7 +14270,7 @@ s.marketwatch.com$domain=~marketwatch.com  # from MVPS
 adv.aport.ru  # from MVPS
 stat.aport.ru  # from MVPS
 
-stat.stars.ru #[WebBug]  # from MVPS
+stat.stars.ru  #[WebBug]  # from MVPS
 
 banners.dogfart.com  # from MVPS
 
@@ -15472,8 +15461,7 @@ goodstone.realty##.b-slid_text
 ||goodstone.realty/images/slid/*$image
 ||goodstone.realty/images/ytong.jpg
 
-! this use of url shortener service looks strange
-goo.gl$third-party
+goo.gl$third-party  # this use of url shortener service looks strange. Also, later this shortener was blocked entirely (with all other shorteners)
 
 ||gorodarus.ru/templates/apicloud/images/slide2.jpg
 gorodarus.ru###slide
@@ -15514,8 +15502,7 @@ greendail.ru###footer
 greywizard.com$3p
 greywizard.net$3p
 
-! pings from shopify apps
-||grizzlyapps.com$xhr
+||grizzlyapps.com$xhr  # pings from shopify apps
 
 groenlandselskab.dk$script,3p
 
