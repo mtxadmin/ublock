@@ -6,7 +6,7 @@
 sqm.microsoft.com
 sqmfe.glbdns2.microsoft.com
 
-telemetry.microsoft.com
+telemetry.microsoft.com$important  # is in many lists
 !+  alpha.telemetry.microsoft.com
 !+  df.telemetry.microsoft.com
 !+      wes.df.telemetry.microsoft.com
@@ -69,7 +69,7 @@ spynet2.microsoft.akadns.net
 
 statsfe1.ws.microsoft.com
 statsfe2.update.microsoft.com.akadns.net
-statsfe2.ws.microsoft.com
+statsfe2.ws.microsoft.com  # is in Dan Pollock's hosts file
 
 ! and adding from https://superuser.com/questions/972501/how-to-stop-microsoft-from-gathering-telemetry-data-from-windows-7-8-and-8-1
 
@@ -118,14 +118,13 @@ metron.live.com.nsatc.net
 
 rad.live.com
 rad.msn.com
-rads.msn.com
-live.rads.msn.com  # from Dan Pollock's hosts file
+rads.msn.com$important  # is in Dan Pollock's hosts file
+
+ac3.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads
 
 ads.msn.com
-ads1.msn.com
-b.ads1.msn.com  # from Dan Pollock's hosts file
+ads1.msn.com  #b.ads1.msn.com  # from Dan Pollock's hosts file
 ads2.msn.com
-b.ads2.msads.net  # from Dan Pollock's hosts file
 ads.eu.msn.com  # from Dan Pollock's hosts file, Peter Lowe's hosts file, MVPS
 
 adsyndication.msn.com  # from Dan Pollock's hosts file
@@ -174,22 +173,21 @@ c.tw.msn.com  # from Dan Pollock's hosts file
 c.uk.msn.com  # from Dan Pollock's hosts file
 c.za.msn.com  # from Dan Pollock's hosts file
 
-g.msn.com  # from Dan Pollock's hosts file
+flex.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads  # is in Dan Pollock's hosts file and MVPS
+
+g.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads  # is in Dan Pollock's hosts file
+
+h1.msn.com  # from Dan Pollock's hosts file
 
 tk2.plt.msn.com
-! and these subdomains often cited in forum topics about blocking skype ads
-ac3.msn.com
-g.msn.com
-flex.msn.com
 
-msads.net$important
+msads.net$important  # is in many lists
 !+  ads1.msads.net
 !+  ads2.msads.net
 !+  global.msads.net
 ! end of msads.net
 
-r.msn.com  # from Peter Lowe's hosts file
-0.r.msn.com  # from MVPS
+r.msn.com  # from Peter Lowe's hosts file, is in MVPS
 
 rmads.msn.com  # from Peter Lowe's hosts file and MVPS
 rmads.eu.msn.com  # from MVPS
@@ -198,7 +196,9 @@ bat.bing.com$important  # from many lists
 !+  r.bat.bing.com
 ! end of bat.bing.com
 
-telemetry.appex.bing.net
+c.bing.com  # from MVPS
+
+telemetry.appex.bing.net  # is in Dan Pollock's hosts file
 
 ! https://xakep.ru/2018/07/02/android-231/
 ! https://clinetworking.com/2018/06/03/1984-called/
@@ -226,7 +226,6 @@ gowadogo.com
 
 !! todo
 
-a.ads2.msads.net  # from Dan Pollock's hosts file
 aidps.atdmt.com  # from Dan Pollock's hosts file
 az361816.vo.msecnd.net  # from Dan Pollock's hosts file
 az512334.vo.msecnd.net  # from Dan Pollock's hosts file
@@ -235,26 +234,19 @@ cds26.ams9.msecn.net  # from Dan Pollock's hosts file
 db3aqu.atdmt.com  # from Dan Pollock's hosts file
 ec.atdmt.com  # from Dan Pollock's hosts file
 feedback.microsoft-hohm.com  # from Dan Pollock's hosts file
-flex.msn.com  # from Dan Pollock's hosts file
-h1.msn.com  # from Dan Pollock's hosts file
 lb1.www.ms.akadns.net  # from Dan Pollock's hosts file
 m.adnxs.com  # from Dan Pollock's hosts file
 msnbot-65-55-108-23.search.msn.com  # from Dan Pollock's hosts file
 msntest.serving-sys.com  # from Dan Pollock's hosts file
 preview.msn.com  # from Dan Pollock's hosts file
-reports.wes.df.telemetry.microsoft.com  # from Dan Pollock's hosts file
 schemas.microsoft.akadns.net  # from Dan Pollock's hosts file
 secure.flashtalking.com  # from Dan Pollock's hosts file
-statsfe2.ws.microsoft.com  # from Dan Pollock's hosts file
-telemetry.appex.bing.net  # from Dan Pollock's hosts file
-wes.df.telemetry.microsoft.com  # from Dan Pollock's hosts file
 
 popup.msn.com  # from Peter Lowe's hosts file
 arc1.msn.com  # from Peter Lowe's hosts file
 
 measure.office.com  # from Peter Lowe's hosts file
 
-flex.msn.com  # from MVPS
 otf.msn.com  # from MVPS
 mobileads.msn.com  # from MVPS
 popup.msn.com  # from MVPS
@@ -264,9 +256,6 @@ apac.rel.msn.com  # from Dan Pollock's hosts file
 emea.rel.msn.com  # from Dan Pollock's hosts file
 tracking.msadcenter.msn.com  # from Dan Pollock's hosts file
 udc.msn.com  # from Dan Pollock's hosts file
-
-bat.bing.com  # from MVPS
-c.bing.com  # from MVPS
 
 research-int.se  # from MVPS
 
