@@ -420,7 +420,7 @@ _advert/  # from EasyList
 ##.afs_ads
 ###alert
 ##.alert-announcement
-##.announcement
+~datadoghq.com##.announcement
 ! from EasyList
 ##.b-adv
 ###ban240x400
@@ -975,6 +975,7 @@ _pagespeed_beacon?  # from AdGuard
 ##[class*="up-arrow"]:not(html):not(body)
     ##.b-up-arrow_pos_left
     ##.b-up-arrow
+    ##.media-infinity-footer__up
     ##.media-infinity-footer__up-arrow
     ##.x-page-up-arrow
 !other
@@ -1247,6 +1248,8 @@ _pagespeed_beacon?  # from AdGuard
 ###legal-notice
 ##.message-cockies
 ##.personal-data-warning
+! is in EasyList and Fanboy's
+##.tracking-consent
 !
 /booster_eu_cookie$important
 /cookie-banner  # is in EasyList and Fanboy’s
@@ -1422,6 +1425,8 @@ _cookie_policy_  # from Fanboy's and AdGuard
 ##.cw-subscribe-window
 ###email-signup
 ! is in Fanboy's
+##.emailSubscribe
+! is in Fanboy's
 ##.footer__subscribe
 ! is in Fanboy's
 ##.footer-subscribe
@@ -1429,10 +1434,14 @@ _cookie_policy_  # from Fanboy's and AdGuard
 ! from Fanboy's and Web Annoyances Ultralist
 ##.jetpack_subscription_widget
 ##.maillist-form-view
+! is in Fanboy's
+##.newsletter-popup
 ! from Fanboy's
 ###newsletters-1-form
 ! from Fanboy's
 ###newsletters-1-form-wrapper
+! is in Fanboy's
+##.newsletter-signup
 ###podpiska
 ##.right_mail
 ###sub-blog
@@ -15919,3 +15928,8 @@ analxxx.me##.full
 
 ||redcocktube.com/images/h1.jpg
 redcocktube.com##.s_desc
+
+/_hcms/perf  # is in EasyPrivacy
+
+! is in Fanboy's
+##.wds-is-follow-us
