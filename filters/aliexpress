@@ -10,7 +10,7 @@ aliexpress.com##.show-history
 aliexpress.com##.shopping-history
 
 ! promotions
-!promotion.aliexpress.com - don't, coupons uses it
+!promotion.aliexpress.com - don't, coupons use it
 aliexpress.com,aliexpress.ru##.festival-header
 aliexpress.com,aliexpress.ru##.festival-sub-venue
 aliexpress.com##.banner-big-sale
@@ -36,8 +36,7 @@ aliexpress.com##.login-sns-wrap
 ! register banners
 aliexpress.com###user-benefits
 
-! ad popups
-campaign.aliexpress.com
+campaign.aliexpress.com  # ad popups
 
 ! fixed elements
 aliexpress.com,aliexpress.ru##.float-image
@@ -221,6 +220,14 @@ aliexpress.ru$3p  # Aliexpress cookie
 tmall.ru$important,domain=~aliexpress.ru|~tmall.ru
 tmall.ru##.logo-gif
 taobao.com$3p
+
+! from EasyList China
+||alibaba.com/async/b2bad.
+||alicdn.com/app/wxbpromotion/
+||alicdn.com/g/mm/afp-cdn/JS/
+||alicdn.com/openad/
+~alicdn.com##a > img[width="960"][src*=".alicdn.com/"]
+||alicdn.com/ad-product/
 
 ! in-app Aliexpress marketing from Energized Blu
 aecpm.alicdn.com
