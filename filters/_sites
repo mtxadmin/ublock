@@ -5211,11 +5211,53 @@ garlicfarm.ru##.tags
 
 garvis.ca##.header
 
+gdeikakzarabotat.ru###header
+gdeikakzarabotat.ru###custom_html-2
+gdeikakzarabotat.ru###footer
+
+! is in uBlock filters
+||gearbest.com/sw.js$important
+! footer
+gearbest.com##.footerApprecom
+gearbest.com##.icon-msg
+gearbest.com##.footerQuality
+||gbtcdn.com/GB/images/promotion/$image
+||gbtcdn.com/imagecache/gbw/img/site/error_img@.png$image
+! fixed
+gearbest.com##.siteAside
+gearbest.com##.goodsNav-fixed.goodsNav:style(position:static !important)
+! other
+gearbest.com##.goodsHotkey
+gearbest.com##.goodsViewed
+gearbest.com##.goodsIntro_authLogos
+
+||gecid.com/data/medals/tested_250x250_en.gif
+
+geekjob.ru##.btn-floating
+
+geekk.ru###header
+geekk.ru##.yasr-visitor-votes
+
+geeklib.ru##div:has-text(AdBlocker)
+geeklib.ru##[class$=-bg]
+geeklib.ru##.header-container
+geeklib.ru##.mistape_caption
+
+geek-nose.com##.header_wrap
+geek-nose.com##aside.sidebar
+
+geekon.media##.td-header-top-menu
+geekon.media##footer > div:nth-of-type(1)
+
 geeksforgeeks.org##.login-modal-div
 geeksforgeeks.org##.leftSideBarParent:style(position:static !important)
 geeksforgeeks.org##.header--sidebar_logo
 geeksforgeeks.org##.header--navbar:style(position:static !important)
 geeksforgeeks.org##div:nth-of-type(4) > p:has-text(/GeeksforGeeks|Please Improve/)
+
+geekville.ru##.td-header-sp-logo
+
+g-ek.com##.h-c-header__bar:style(position:static !important)
 
 gekks.ru##.fadeIn.ap-overlay
 gekks.ru##.fadeIn
@@ -5297,10 +5339,52 @@ gigamaster.ru##.sidebar
 ginekologdo.ru###head_top_block.head_top
 ginekologdo.ru##.show_other_show
 
+gismeteo.*###footer
+gismeteo.*##.navteaser__info
+gismeteo.*##.js_sticky.subnav:style(position:static !important)
+gismeteo.*##.media_frame
+
+! from EasyPrivacy
+||github.com/_private/browser/stats
+||github.io/aplacer$third-party  # from RU AdList
+! github pages of big projects open very slowly. So, let's make an exclusion (yes..). There will be no banners here, I hope.
+@@||github.com^$generichide
+! 2019-08 Github started show intro notices. Disabled.
+github.com##.js-notice.intro-shelf
+! unfix header
+github.com##.gh-header:style(position:static !important)
+! remove [duplicated] mobile sticky header. This does not affect to regular header, which is intact
+github.com##.gh-header-sticky
+github.com##.gh-header-shadow
+! other
+github.io##.article-author-side
+github.io##article.post:style(margin-left:40px !important)
+github.io###banner
+! from NoCoin Filter List  ! https://forums.lanik.us/viewtopic.php?f=91&t=42871
+||github.io^$third-party,xmlhttprequest,websocket,domain=~docuss.org|~facebook.com|~gametactic.org|~github.com|~github.io|~tumblr.com|~wottactic.com
+!
+! different marketing projects on Github
+! ad scripts
+! falls to general Ru AdList filter. Seen on a videos site, videos are working
+actlz.github.io  #https://actlz.github.io/actualize.js
+partnercoll.github.io$important  # ad scripts  # is in Ru AdList and uBlock filters
+weblion777.github.io$important  # ad scripts  # is in Ru AdList and uBlock filters
+wp-r.github.io$important  # ad scripts  # is in AdGuard
+collector.githubapp.com  # is in MVPS HOSTS, AdGuard, EasyPrivacy
+
 ! is in Fanboy's
 ||buttons.github.io/buttons.js$3p
 
+gizmochina.com##.td-affix.td-header-menu-no-search:style(position:static !important)
+
+gktehprom.ru###dontTouchMe
+
 glam.com##.m-header--logo
+
+glamour.ru##.top-panel__logo
+glamour.ru##.modal--sidebar__logo
+
+glashkoff.com##div.alert-info.alert.undefined.wp-block-vk-blocks-alert:has-text(реферал)
 
 glassdoor.com##.mfp-bg
 glassdoor.com##.mfp-wrap
@@ -15745,90 +15829,6 @@ gazeta.ru##.b-navbar-secondary
 gazeta.ru##.header_stub:style(height:36px !important)
 
 gbhackers.com##.size-full.attachment-full
-
-gdeikakzarabotat.ru###header
-gdeikakzarabotat.ru###custom_html-2
-gdeikakzarabotat.ru###footer
-
-! is in uBlock filters
-||gearbest.com/sw.js$important
-! footer
-gearbest.com##.footerApprecom
-gearbest.com##.icon-msg
-gearbest.com##.footerQuality
-||gbtcdn.com/GB/images/promotion/$image
-||gbtcdn.com/imagecache/gbw/img/site/error_img@.png$image
-! fixed
-gearbest.com##.siteAside
-gearbest.com##.goodsNav-fixed.goodsNav:style(position:static !important)
-! other
-gearbest.com##.goodsHotkey
-gearbest.com##.goodsViewed
-gearbest.com##.goodsIntro_authLogos
-
-||gecid.com/data/medals/tested_250x250_en.gif
-
-geekjob.ru##.btn-floating
-
-geekk.ru###header
-geekk.ru##.yasr-visitor-votes
-
-geeklib.ru##div:has-text(AdBlocker)
-geeklib.ru##[class$=-bg]
-geeklib.ru##.header-container
-geeklib.ru##.mistape_caption
-
-geek-nose.com##.header_wrap
-geek-nose.com##aside.sidebar
-
-geekon.media##.td-header-top-menu
-geekon.media##footer > div:nth-of-type(1)
-
-geekville.ru##.td-header-sp-logo
-
-g-ek.com##.h-c-header__bar:style(position:static !important)
-
-gismeteo.*###footer
-gismeteo.*##.navteaser__info
-gismeteo.*##.js_sticky.subnav:style(position:static !important)
-gismeteo.*##.media_frame
-
-! from EasyPrivacy
-||github.com/_private/browser/stats
-||github.io/aplacer$third-party  # from RU AdList
-! github pages of big projects open very slowly. So, let's make an exclusion (yes..). There will be no banners here, I hope.
-@@||github.com^$generichide
-! 2019-08 Github started show intro notices. Disabled.
-github.com##.js-notice.intro-shelf
-! unfix header
-github.com##.gh-header:style(position:static !important)
-! remove [duplicated] mobile sticky header. This does not affect to regular header, which is intact
-github.com##.gh-header-sticky
-github.com##.gh-header-shadow
-! other
-github.io##.article-author-side
-github.io##article.post:style(margin-left:40px !important)
-github.io###banner
-! from NoCoin Filter List  ! https://forums.lanik.us/viewtopic.php?f=91&t=42871
-||github.io^$third-party,xmlhttprequest,websocket,domain=~docuss.org|~facebook.com|~gametactic.org|~github.com|~github.io|~tumblr.com|~wottactic.com
-!
-! different marketing projects on Github
-! ad scripts
-! falls to general Ru AdList filter. Seen on a videos site, videos are working
-actlz.github.io  #https://actlz.github.io/actualize.js
-partnercoll.github.io$important  # ad scripts  # is in Ru AdList and uBlock filters
-weblion777.github.io$important  # ad scripts  # is in Ru AdList and uBlock filters
-wp-r.github.io$important  # ad scripts  # is in AdGuard
-collector.githubapp.com  # is in MVPS HOSTS, AdGuard, EasyPrivacy
-
-gizmochina.com##.td-affix.td-header-menu-no-search:style(position:static !important)
-
-gktehprom.ru###dontTouchMe
-
-glamour.ru##.top-panel__logo
-glamour.ru##.modal--sidebar__logo
-
-glashkoff.com##div.alert-info.alert.undefined.wp-block-vk-blocks-alert:has-text(реферал)
 
 /px/*/blank.gif?  # is in EasyPrivacy
 
