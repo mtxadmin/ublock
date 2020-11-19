@@ -2939,6 +2939,9 @@ arsenal-plys.ru##.blur-g
 arstechnica.com###header-logo
 arstechnica.com##.scrolled-up:style(position:static !important)
 
+||art4x4.ru/*/header_mybg.jpg
+art4x4.ru###headerbar
+
 artezio.ru###widgetButton
 artezio.ru##.widget_activity_list
 
@@ -5231,6 +5234,25 @@ gowdhaman.com###header-top
 ! ads
 grouple.co$3p
 
+! recheck
+!forum.guns.ru##.altcolor1 > tbody > tr
+forum.guns.ru##.hidehban
+! signatures
+forum.guns.ru##.wbr > p:has-text(----------)
+forum.guns.ru##.hidevban
+forum.guns.ru##p:has-text(------------------)
+! other
+forum.guns.ru##[href="http://forum.guns.ru/forumguns/adv.html"]
+||forum.guns.ru/forums/frown.gif
+||forum.guns.ru/forums/hotclosed.gif
+||forum.guns.ru/forums/icons/icon*.gif
+||forum.guns.ru/forum_counter
+||forum.guns.ru/forums/bbtitle_200607.gif
+forum.guns.ru##body > div:matches-css(height:200px)
+forum.guns.ru##td > .hide800
+||guns.ru/redline.gif
+||guns.ru/images/button3.gif
+
 gunsbroker.ru##.main__aside--vip
 gunsbroker.ru##.p-3
 gunsbroker.ru##.premium
@@ -5240,6 +5262,8 @@ gunsbroker.ru##.notification
 gunsbroker.ru##[href^="/sprkl/"]
 
 gunshub.ru##.modal-backdrop
+
+gunsparts.ru##.button-fixed
 
 ||guns-tuning.ru/*/da.png
 ||guns-tuning.ru/*/qb.png
@@ -5252,8 +5276,75 @@ gunza.ru##.head2:style(height:70px !important)
 gurmanfresh.ru###header_fixed:style(position:static !important)
 gurmanfresh.ru###qwick_order
 
+lib.guru.ua##center
+news.guru.ua##body > center:nth-of-type(1)
+news.guru.ua###right > div:nth-of-type(1)
+news.guru.ua##.t
+news.guru.ua##a.s
+||guru.ua/vk_banner.php$subdocument
+
+guruadmin.ru###header2
+guruadmin.ru##.addzakl
+
+! new favicon is ugly
+||habr.com/*/apple-touch-icon.png
+||habr.com/*/favicon-32x32.png
+||habr.com/*/favicon-16x16.png
+! unstick
+habr.com##.layout__row_navbar:style(position:static !important)
+habr.com##.sidebar_right_sticky:style(position:static !important)
+! banners and sponsor posts
+habr.com##.default-block:has-text(Хабр рекомендует)
+habr.com##.post_preview:has-text(Блог компании ТechMedia)
+habr.com##.footer-menu__item:has-text(ППА)
+habr.com##div.default-block_sidebar.default-block:has-text(become a sponsor)
+! ad links in posts
+habr.com##[href^="https://www.pochtoy.com/"]
+habr.com##[href^="https://pochtoy.com/"]
+habr.com##[href^="http://www.pochtoy.com/"]
+habr.com##[href="http://bit.ly/PochtoyHABR"]
+habr.com##[href^="http://madrobots.ru"]
+habr.com##[href^="https://t.me/iaasblog/"]
+habr.com##[href^="https://www.englishdom.com/"]
+habr.com##[href^="https://clck.ru/"]
+! socials
+habr.com##div.default-block_sidebar:has-text(Twitter)
+habr.com##div.default-block_sidebar:has-text(ВКонтакте)
+! trash
+habr.com##.tm-notice:has-text(Только полноправные пользователи могут оставлять комментарии)
+habr.com##.post__text > blockquote:has-text(Минутка заботы от НЛО)
+u.tmtm.ru  # habr reflinks
+! other
+habr.com##.for_users_only_msg
+habr.com##.inline-list.user-info__contacts
+habr.com##.footer-block__content_apps
+habr.com###TMpanel
+habr.com##.tm-footer__apps
+habr.com##.tm-footer-apps
+habr.com##.tm-footer__title
+habr.com##.tm-jobs-list
+habr.com##.footer-misprints
+habr.com,toster.ru##.empty-block
+habr.com,toster.ru##.question__invate-expert
+||habrastorage.org/getpro/tmtm/pictures/*.gif$image
+special.habrahabr.ru##.on-top
+habr.com##.tm-page-article__counters-panel_sticky:style(position:static !important)
+habr.com##.tm-social-icons__icon
+habr.com,~qna.habr.com##.layout__navbar:style(position:static !important)
+
+hackernoon.com##.u-tintBgColor:style(background-color:white !important)
+hackernoon.com##.u-fixed:style(position:static !important)
+hackernoon.com###top:style(position:static !important)
+
 hackware.ru##.site-title
 hackware.ru##.versep
+
+handsetdetection.com$3p
+
+happymodern.ru##.fixed_link--telegram-group
+happymodern.ru###sticky
+happymodern.ru##.subscirbe
+happymodern.ru##.postNavigation
 
 ! not static here
 haproxy.com###navigation:style(position:absolute !important)
@@ -5271,6 +5362,9 @@ hausberg.ru##.infoline
 hausberg.ru###sbscr-bar
 hausberg.ru##.back-link
 
+! from RU AdList
+||h-cdn.com/loader.js?customer=
+
 heaclub.ru##[href="/goroskop"]
 heaclub.ru##[href="https://heaclub.ru/goroskop"]
 heaclub.ru##.top-info
@@ -5284,6 +5378,9 @@ helpix.ru###mainpage-forreader-n-news
 helpix.ru###grid-all-page:style(padding-top:0px !important)
 helpix.ru##.b-menu__link_redBold
 helpix.ru##div.b-menu__item_redLite
+
+! somehow it was added to Malvertising filter list by Disconnect
+||here.com^$badfilter
 
 heroix.com##.widget-type-rich_text
 heroix.com###hs_cos_wrapper_post_body > div:has-text(Live Online Demo)
@@ -5325,9 +5422,38 @@ hh.ru##.tmpl_hh_social
 hh.ru##.supernova-footer-nav-mobile
 hh.ru##.related-vacancies-preview_sticky
 
+hikvision.org.ua###on-top-btn
+
+! popups
+hipdir.com##.modal-dialog
+hipdir.com##.modal-backdrop
+! request banners (forms)
+hipdir.com###request-form-modal
+hipdir.com##.request-button-container
+hipdir.com###request-form-inline
+hipdir.com##.request-form
+hipdir.com##.help-request
+! other
+
 hi-tech.news##.ntp-latest-posts.widget
 hi-tech.news##.socp
 hi-tech.news##.post_details
+
+hi-tech-obzor.ru##.penci-header-second.inner-header
+hi-tech-obzor.ru###menu-hi-tech-obzor-1
+hi-tech-obzor.ru##.owl-dots
+hi-tech-obzor.ru##.has-pale-cyan-blue-background-color.has-small-font-size.has-background
+
+hobbyits.com##.vw-site-logo-wrapper
+hobbyits.com##.vw-widget-feedburner-container
+
+hobbyportal.ru###popup_message
+hobbyportal.ru##.v2-main-menu-fixed.v2-main-menu-wrapper-fixed:style(position:static !important)
+hobbyportal.ru##.v2-info-block-open-shop
+hobbyportal.ru##.v2-btn-green-grad-m
+||hobbyportal.ru/i/delaempokupki.gif
+
+hobbystart.ru###move_up
 
 hodgkins.io##.panel-cover
 hodgkins.io##.content-wrapper:style(width:auto !important; margin-left:auto !important; max-width:2400px !important)
@@ -5348,6 +5474,8 @@ homecredit.ru##[class^="mobile-app"]
 homecredit.ru##.popup_overlay
 ||homecredit.ru/*/marketplace/$image
 homecredit.ru##[class*="topline__red"]
+
+home-engineer.ru##.art-Header
 
 homeli.ru##.logo-link
 homeli.ru###footer-block
@@ -7361,6 +7489,8 @@ medickon.com##.headup
 medickon.com##a[href*="myfreetopcu1.online/click/"]
 medickon.com##.openform_expertPlagin-item
 
+medikforum.ru##.rd-navbar-panel
+
 ! ad redirects. And fake news, it seems
 medinfo.ua$3p
 
@@ -8190,6 +8320,7 @@ newsru.com##.footer-right-text
 ! is in AdGuard
 newsru.com##img[onclick="shareinverter()"]
 newsru.com##div:has-text(ad or script blocking software is interfering with this page)
+newsru.com##.right-feed-item:has(.prm-mark-small)
 
 newstracker.ru##.zen-popup-component
 newstracker.ru##.topline:style(position:static !important)
@@ -10167,6 +10298,7 @@ russianfood.com##.annonce_purple.annonce
 russianguns.ru##.blurb
 ||russianguns.ru/*/star.gif
 russianguns.ru##noindex
+russianguns.ru###header
 
 russian-mifs.ru##.nivoo-slice
 russian-mifs.ru##.nivoo-slider
@@ -11116,6 +11248,8 @@ sravnikupi.ru$3p
 sravni.ru##div[class^=Logo-]
 
 srbu.ru##.logosrbu
+
+sredaobitaniyatv.ru##.site_title
 
 srv-spb.ru##aside
 srv-spb.ru##.IRPP_button
@@ -15696,132 +15830,6 @@ gunnalag.com##.float-header
 gunnalag.com##.site-title
 gunnalag.com##.site-description
 
-! recheck
-!forum.guns.ru##.altcolor1 > tbody > tr
-forum.guns.ru##.hidehban
-! signatures
-forum.guns.ru##.wbr > p:has-text(----------)
-forum.guns.ru##.hidevban
-forum.guns.ru##p:has-text(------------------)
-! other
-forum.guns.ru##[href="http://forum.guns.ru/forumguns/adv.html"]
-||forum.guns.ru/forums/frown.gif
-||forum.guns.ru/forums/hotclosed.gif
-||forum.guns.ru/forums/icons/icon*.gif
-||forum.guns.ru/forum_counter
-||forum.guns.ru/forums/bbtitle_200607.gif
-forum.guns.ru##body > div:matches-css(height:200px)
-forum.guns.ru##td > .hide800
-||guns.ru/redline.gif
-||guns.ru/images/button3.gif
-
-gunsparts.ru##.button-fixed
-
-lib.guru.ua##center
-news.guru.ua##body > center:nth-of-type(1)
-news.guru.ua###right > div:nth-of-type(1)
-news.guru.ua##.t
-news.guru.ua##a.s
-||guru.ua/vk_banner.php$subdocument
-
-guruadmin.ru###header2
-guruadmin.ru##.addzakl
-
-! new favicon is ugly
-||habr.com/*/apple-touch-icon.png
-||habr.com/*/favicon-32x32.png
-||habr.com/*/favicon-16x16.png
-! unstick
-habr.com##.layout__row_navbar:style(position:static !important)
-habr.com##.sidebar_right_sticky:style(position:static !important)
-! banners and sponsor posts
-habr.com##.default-block:has-text(Хабр рекомендует)
-habr.com##.post_preview:has-text(Блог компании ТechMedia)
-habr.com##.footer-menu__item:has-text(ППА)
-habr.com##div.default-block_sidebar.default-block:has-text(become a sponsor)
-! ad links in posts
-habr.com##[href^="https://www.pochtoy.com/"]
-habr.com##[href^="https://pochtoy.com/"]
-habr.com##[href^="http://www.pochtoy.com/"]
-habr.com##[href="http://bit.ly/PochtoyHABR"]
-habr.com##[href^="http://madrobots.ru"]
-habr.com##[href^="https://t.me/iaasblog/"]
-habr.com##[href^="https://www.englishdom.com/"]
-habr.com##[href^="https://clck.ru/"]
-! socials
-habr.com##div.default-block_sidebar:has-text(Twitter)
-habr.com##div.default-block_sidebar:has-text(ВКонтакте)
-! trash
-habr.com##.tm-notice:has-text(Только полноправные пользователи могут оставлять комментарии)
-habr.com##.post__text > blockquote:has-text(Минутка заботы от НЛО)
-u.tmtm.ru  # habr reflinks
-! other
-habr.com##.for_users_only_msg
-habr.com##.inline-list.user-info__contacts
-habr.com##.footer-block__content_apps
-habr.com###TMpanel
-habr.com##.tm-footer__apps
-habr.com##.tm-footer-apps
-habr.com##.tm-footer__title
-habr.com##.tm-jobs-list
-habr.com##.footer-misprints
-habr.com,toster.ru##.empty-block
-habr.com,toster.ru##.question__invate-expert
-||habrastorage.org/getpro/tmtm/pictures/*.gif$image
-special.habrahabr.ru##.on-top
-
-habr.com##.tm-page-article__counters-panel_sticky:style(position:static !important)
-habr.com##.tm-social-icons__icon
-habr.com,~qna.habr.com##.layout__navbar:style(position:static !important)
-
-hackernoon.com##.u-tintBgColor:style(background-color:white !important)
-hackernoon.com##.u-fixed:style(position:static !important)
-hackernoon.com###top:style(position:static !important)
-
-handsetdetection.com$3p
-
-happymodern.ru##.fixed_link--telegram-group
-happymodern.ru###sticky
-happymodern.ru##.subscirbe
-happymodern.ru##.postNavigation
-
-! from RU AdList
-||h-cdn.com/loader.js?customer=
-
-! somehow it was added to Malvertising filter list by Disconnect
-||here.com^$badfilter
-
-hikvision.org.ua###on-top-btn
-
-! popups
-hipdir.com##.modal-dialog
-hipdir.com##.modal-backdrop
-! request banners (forms)
-hipdir.com###request-form-modal
-hipdir.com##.request-button-container
-hipdir.com###request-form-inline
-hipdir.com##.request-form
-hipdir.com##.help-request
-! other
-
-hi-tech-obzor.ru##.penci-header-second.inner-header
-hi-tech-obzor.ru###menu-hi-tech-obzor-1
-hi-tech-obzor.ru##.owl-dots
-hi-tech-obzor.ru##.has-pale-cyan-blue-background-color.has-small-font-size.has-background
-
-hobbyits.com##.vw-site-logo-wrapper
-hobbyits.com##.vw-widget-feedburner-container
-
-hobbyportal.ru###popup_message
-hobbyportal.ru##.v2-main-menu-fixed.v2-main-menu-wrapper-fixed:style(position:static !important)
-hobbyportal.ru##.v2-info-block-open-shop
-hobbyportal.ru##.v2-btn-green-grad-m
-||hobbyportal.ru/i/delaempokupki.gif
-
-hobbystart.ru###move_up
-
-home-engineer.ru##.art-Header
-
 /px/*/blank.gif?  # is in EasyPrivacy
 
 ||jsdelivr.net/npm/clappr-ga-events-plugin
@@ -15829,17 +15837,6 @@ home-engineer.ru##.art-Header
 /ads-top$important  # ads-top.ru (now closed)
 
 /adstyle$important  # adstyle.com.ua (now closed)
-
-newsru.com##.right-feed-item:has(.prm-mark-small)
-
-medikforum.ru##.rd-navbar-panel
-
-russianguns.ru###header
-
-sredaobitaniyatv.ru##.site_title
-
-||art4x4.ru/*/header_mybg.jpg
-art4x4.ru###headerbar
 
 ! is in EasyList and Fanboy's
 ##.lms-notice-wrapper
