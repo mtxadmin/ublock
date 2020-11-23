@@ -234,8 +234,11 @@ _advert/  # from EasyList
 ##[id^="AD_"]:not(html):not(body):not(article)
 ##[class^="Ad_"]:not(html):not(body):not(article)
 ##[id^="Ad_"]:not(html):not(body):not(article)
+    ###Ad_Top
 ~360cities.net##[class^="ad_"]:not(html):not(body):not(article)
 ~cnn.com##[id^="ad_"]:not(html):not(body):not(article)
+    ! is in EasyList
+    ##.ad_float
     ! from EasyList
     ###ad_ph_1
     ! from RU AdList
@@ -249,11 +252,13 @@ _advert/  # from EasyList
     ! from EasyList
     ##div[id^="ad_rect_"]
 ~cnn.com,~ferra.ru,~indicator.ru##[class^="ad-"]:not(html):not(body):not(article)
+##[id^="ad-"]:not(html):not(body):not(article)
+    ###ad-desktop-bottom
+    ###ad-desktop-bottom2
     ! is in EasyList
     ##.ad-unit
     ! is in EasyList
     ##.ad-wide
-##[id^="ad-"]:not(html):not(body):not(article)
 ~blokada.org,~cnn.com,~dirteam.com##[class*="-ad-"]:not(html):not(body):not(article)
     ! from EasyList
     !##.ytp-ad-progress-list
@@ -382,12 +387,8 @@ _advert/  # from EasyList
 ##.adb-def
 ###adBlockMessaging
 ###adbns
-###ad-desktop-bottom
-###ad-desktop-bottom2
 ###adf
 ###adf_notifiers_wrap
-! is in EasyList
-##.ad_float
 ###adfooter
 ###__adIframe
 ###adinserttop
@@ -409,7 +410,6 @@ _advert/  # from EasyList
 ##.adTitle
 ##.AdTitle
 ###adTop
-###Ad_Top
 ###adultCoverWarning
 ##.adv
 ! from Ru Adlist
