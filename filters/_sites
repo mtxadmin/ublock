@@ -262,8 +262,11 @@ _advert/  # from EasyList
     ! from EasyList
     !##.ytp-ad-progress-list
 ~afisha.ru,~cnn.com##[id*="-ad-"]:not(html):not(body):not(article)
-! ._ad_U,._ad_V,._ad_Y - MS OWA general exclusions
-##[class*="_ad_"]:not(html):not(body):not(article):not(._ad_U):not(._ad_V):not(._ad_Y)
+! ._ad_U,._ad_V,._ad_Y,... there are in MS OWA. Don't know how to make precise exclusion of such. :not(._ad_U):not(._ad_V):not(._ad_Y) don't not work - there are too many of them.
+! As a workaround, one can add exclusion for corporate mail server:
+! @@||<server_host>^$generichide
+! for example, @@mail.example.com^$generichide
+##[class*="_ad_"]:not(html):not(body):not(article)
 ~kodi.wiki##[id*="_ad_"]:not(html):not(body):not(article)
 ##[class*="Adblock"]:not(html):not(body):not(article)
 ##[id*="Adblock"]:not(html):not(body):not(article)
@@ -6571,6 +6574,7 @@ habr.com##.default-block:has-text(Хабр рекомендует)
 habr.com##.post_preview:has-text(Блог компании ТechMedia)
 habr.com##.footer-menu__item:has-text(ППА)
 habr.com##div.default-block_sidebar.default-block:has-text(become a sponsor)
+habr.com##.content-list__item:has(a[href^="https://u.tmtm.ru/"])
 ! ad links in posts
 habr.com##[href^="https://www.pochtoy.com/"]
 habr.com##[href^="https://pochtoy.com/"]
