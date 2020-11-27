@@ -266,6 +266,8 @@ _advert/  # from EasyList
 ! As a workaround, one can add exclusion for corporate mail server:
 ! @@||<server_host>^$generichide
 ! for example, @@mail.example.com^$generichide
+! Update: NO! There is a better and working way:
+@@||*/owa/^$generichide
 ##[class*="_ad_"]:not(html):not(body):not(article)
 ~kodi.wiki##[id*="_ad_"]:not(html):not(body):not(article)
 ##[class*="Adblock"]:not(html):not(body):not(article)
