@@ -262,8 +262,8 @@ _advert/  # from EasyList
     ! from EasyList
     !##.ytp-ad-progress-list
 ~afisha.ru,~cnn.com##[id*="-ad-"]:not(html):not(body):not(article)
-! ._ad_U - MS OWA general exclusion
-##[class*="_ad_"]:not(html):not(body):not(article):not(._ad_U)
+! ._ad_U,._ad_V,._ad_Y - MS OWA general exclusions
+##[class*="_ad_"]:not(html):not(body):not(article):not(._ad_U):not(._ad_V):not(._ad_Y)
 ~kodi.wiki##[id*="_ad_"]:not(html):not(body):not(article)
 ##[class*="Adblock"]:not(html):not(body):not(article)
 ##[id*="Adblock"]:not(html):not(body):not(article)
