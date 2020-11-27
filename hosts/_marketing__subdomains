@@ -336,14 +336,41 @@ news.1ru.tv  # from Adguard
 
 download.350.com  # from Adguard
 
+!! some subdomains of Akamai
+adgrx.com.tech.akadns.net  # adgrx
+!+  rtb.adgrx.com.tech.akadns.net
+!+      rtbx.adgrx.com.tech.akadns.net
+comscore.akadns.net  # comscore
+!+  oss-ad.comscore.akadns.net
+eyeblaster.akadns.net  # eyeblaster
+webtrends.akadns.net  # webtrends
+!+  ots.webtrends.akadns.net
+!! other
+beacon.walmart.com.akadns.net
+beacon-all.walmart.com.akadns.net
+beacon-cdn.walmart.com.akadns.net
+adfarm-global.mplx.akadns.net
+ads.supplyframe.akadns.net
+ads.ticketmaster1st.akadns.net
+adxpose.tmrg.akadns.net
+adxpose-secure.tmrg.akadns.net
+banners-wxu.weather-perf.akadns.net
+d.runadtag.com.tech.akadns.net
+track.cj.akadns.net
+! end of akadns.net
+
 smart.allocine.fr  # from Adguard
 smart2.allocine.fr  # from Adguard
 
 dc.altmob.com  # from Adguard
 
+twitter-badges.s3.amazonaws.com  # from Ru AdList
+
 partner.archive-it.org  # from MVPS
 
 tds.astdn.ru  # from Adguard
+
+ws.audioeye.com  # is in EasyPrivacy  # "Make your website accessible"
 
 partner.badoo.ru  # from Adguard
 
@@ -365,6 +392,12 @@ c.bigmir.net$important  # it is at least in 6 lists
 i.bigmir.net  # from Energized Blu  # is in MVPS
 !stat.bigmir.net  # from Energized Blu  # need to recheck
 !vi.bigmir.net  # from Energized Blu
+
+zoomumba.bigpoint.com  # from Adguard
+
+landers.bookbub.com
+messages.bookbub.com
+outbound.bookbub.com  #messages.bookbub.com/ls/click?
 
 # cachefly.net is CDN, do not block it entirely. See https://en.wikipedia.org/wiki/CacheFly
 #||sedo.cachefly.net$domain=~sedoparking.com
@@ -780,11 +813,23 @@ parkcloud.dynadot.com  # parkingcrew.net
 
 ay.eastmoney.com  # from MVPS
 
+analytics.edgekey.net$important # +
+analytics.edgesuite.net$important # +
+analytics.grupogodo.com-v1.edgekey.net
+digitalmarketing.citibankonline.com-v2.edgekey.net
+mobileads.indiatimes.com-v1.edgesuite.net
+
 leroj.elitegol.tv  # from Adguard
+
+abs.firstvds.ru  # from Adguard
 
 start.fotostrana.ru  # from Adguard
 
+smetrics.foxbusiness.com$important
+
 sg.freeimg.ru  # from Adguard
+
+bannet.fryazino.net  # from Adguard
 
 #! goguardian.com: "digital learning"
 beacon-fullpage-predictor.goguardian.com  # from Adguard
@@ -821,6 +866,10 @@ a.jurnalu.ru  # from Adguard
 rating.km.ua  # from Adguard
 
 a.letsjerk.to  # from Adguard
+
+stats.mos.ru  # from EasyPrivacy
+
+snippets.mozilla.com  # from Ru AdList
 
 pop.mrstiff.com  # from Adguard
 
@@ -915,6 +964,8 @@ parking.reg.ru
 
 news.rk345dno.ru  # from Adguard
 
+a.sakh.com  # from Peter Lowe's hosts file
+
 tr.samoresim.ru  # from Adguard
 
 anon.q7rt.speedera.net  # some unrecognized subdomains of Speedera CDN  # q7rt offline.pt
@@ -940,7 +991,12 @@ truebaren.speedera.net
 
 rb.sport-express.ru  # from Adguard
 
+nsg.symantec.com  # from Fanboy's
+clicktime.symantec.com
+
 p.tanx.com  # from Adguard
+
+ad.tomshardware.com  #+  # from Dan Pollock's hosts file
 
 s4.ucoz.net$important
 s9.ucoz.net$important
@@ -972,8 +1028,26 @@ b.vimeocdn.com$important
 
 cbanners.virtuagirlhd.com$important  # in 5 lists
 
+468.vologdainfo.ru  # from Ru AdList
+
+cpm.wargaming.net  # from Adguard
+rdr.wargaming.net  # from Adguard
+cpm.worldoftanks.com
+
 illicium.web.money  # ad scripts  # is in AdGuard
 illicium.wmtransfer.com
+
+!# xfinity - comcast paid tv
+beacon.xfinity.com
+businesschat.xfinity.com
+businesschatadmin.xfinity.com
+chat.g.xfinity.com
+chat.xfinity.com
+chat2.xfinity.com
+refer.xfinity.com
+referafriend.xfinity.com
+training-chat2.xfinity.com
+xchat.xfinity.com
 
 sub.xxx-porn-tube.com  # from Adguard
 
@@ -1003,8 +1077,6 @@ monitor-uu.play.aiseet.atianqi.com
 otheve.play.aiseet.atianqi.com
 othstr.play.aiseet.atianqi.com
 rlog-video.conn.aiseet.atianqi.com
-
-ws.audioeye.com  # is in EasyPrivacy  # "Make your website accessible"
 
 marketing.blueliv.com
 
@@ -1073,29 +1145,6 @@ disqusads.com$important
 
 graph.accountkit.com  # https://xakep.ru/2018/07/02/android-231/  # https://clinetworking.com/2018/06/03/1984-called/
 
-!! some subdomains of Akamai
-adgrx.com.tech.akadns.net  # adgrx
-!+  rtb.adgrx.com.tech.akadns.net
-!+      rtbx.adgrx.com.tech.akadns.net
-comscore.akadns.net  # comscore
-!+  oss-ad.comscore.akadns.net
-eyeblaster.akadns.net  # eyeblaster
-webtrends.akadns.net  # webtrends
-!+  ots.webtrends.akadns.net
-!! other
-beacon.walmart.com.akadns.net
-beacon-all.walmart.com.akadns.net
-beacon-cdn.walmart.com.akadns.net
-adfarm-global.mplx.akadns.net
-ads.supplyframe.akadns.net
-ads.ticketmaster1st.akadns.net
-adxpose.tmrg.akadns.net
-adxpose-secure.tmrg.akadns.net
-banners-wxu.weather-perf.akadns.net
-d.runadtag.com.tech.akadns.net
-track.cj.akadns.net
-! end of akadns.net
-
 geowidget.easypack24.net
 
 graph.facebook.com$third-party  # many mobile apps are trying to read facebook graph. Blocked, even it might broke some facebook functionality  #! facebook
@@ -1126,9 +1175,6 @@ info.sosintl.com  # ad redirects
 
 bonfire.spklw.com  # Strossle  # from AdGuard
 
-nsg.symantec.com  # from Fanboy's
-clicktime.symantec.com
-
 email.thgsportsmail.com
 
 track.triviageniusmail.com
@@ -1143,18 +1189,6 @@ email.wefunder.com  # email.wefunder.com/c/eJxNUMuKw..
 
 alitui.weibo.com  # from MobileAdTrackers
 game.weibo.com  # from MobileAdTrackers
-
-!# xfinity - comcast paid tv
-beacon.xfinity.com
-businesschat.xfinity.com
-businesschatadmin.xfinity.com
-chat.g.xfinity.com
-chat.xfinity.com
-chat2.xfinity.com
-refer.xfinity.com
-referafriend.xfinity.com
-training-chat2.xfinity.com
-xchat.xfinity.com
 
 ads.ztod.com  # from MVPS
 banners.ztod.com  # from MVPS
@@ -1181,10 +1215,6 @@ burnside.dtcn.com  # is in EasyList
 met.vgwort.de  # is in EasyPrivacy
 
 secure.gaug.es  # ad scripts  # is in MVPS HOSTS and hpHosts’ Ad and tracking servers
-
-landers.bookbub.com
-messages.bookbub.com
-outbound.bookbub.com  #messages.bookbub.com/ls/click?
 
 info.skipta.com  # ad redirects
 
@@ -1256,15 +1286,9 @@ p.nag.ru  # from Ru AdList
 
 promotion.vesti.lv  # from Ru AdList
 
-snippets.mozilla.com  # from Ru AdList
-
-twitter-badges.s3.amazonaws.com  # from Ru AdList
-
 webagent.mail.ru  # from Ru AdList
 
 countdown.1dea.co  # shopify
-
-ad.tomshardware.com  #+  # from Dan Pollock's hosts file
 
 analytics-ingress-global.bitmovin.com  # root seems legit  # from Dan Pollock's hosts file
 licensing.bitmovin.com
@@ -1352,10 +1376,6 @@ an.mlb.com  # from Dan Pollock's hosts file
 analytics.global.sky.com  # from Dan Pollock's hosts file
 
 te.signonsandiego.com  # from Dan Pollock's hosts file
-
-a.sakh.com  # from Peter Lowe's hosts file
-
-468.vologdainfo.ru  # from Ru AdList
 
 bs.mybb.ru  # from Ru AdList
 tc.mybb.ru  # from Ru AdList
@@ -1597,8 +1617,6 @@ rotabanner.kulichki.com  # from Ru AdList
 
 partners.mobiguru.ru  # from Ru AdList
 
-stats.mos.ru  # from EasyPrivacy
-
 ads.linkedin.com  # px.ads.linkedin.com
 
 instantbrandpage.lowfruitsolutions.com
@@ -1647,22 +1665,4 @@ centent.streamp1ay.cc  # from Adguard
 s.remonti.org  # from Adguard
 
 adilk.ilikecomix.com  # from Adguard
-
-smetrics.foxbusiness.com$important
-
-analytics.edgekey.net$important # +
-analytics.edgesuite.net$important # +
-analytics.grupogodo.com-v1.edgekey.net
-digitalmarketing.citibankonline.com-v2.edgekey.net
-mobileads.indiatimes.com-v1.edgesuite.net
-
-cpm.wargaming.net  # from Adguard
-rdr.wargaming.net  # from Adguard
-cpm.worldoftanks.com
-
-abs.firstvds.ru  # from Adguard
-
-bannet.fryazino.net  # from Adguard
-
-zoomumba.bigpoint.com  # from Adguard
 
