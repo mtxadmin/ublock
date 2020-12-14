@@ -219,6 +219,8 @@ _advert/  # from EasyList
 !
 ~cnn.com##[class$="-ad"]:not(html):not(body):not(article)
     ! is in EasyList
+    ##.gpt-ad
+    ! is in EasyList
     ##.inline-ad
     ###nav-ad    
     ! is in EasyList
@@ -754,7 +756,7 @@ volveter.ru##.has_offer_prop
 /amp-geo-  # from EasyPrivacy
 _analytics.js?  # from EasyPrivacy
 /analytics.min.js$important
-/analytics/$important,domain=~dropbox.com|~globalvoices.org|~sberbank.ru
+/analytics/$important,domain=~dropbox.com|~fandom.com|~globalvoices.org|~sberbank.ru
     ! увы, но иначе в Сбербанк и Домклик не входит
     !||sberbank.ru/*analytics$script,redirect=noopjs
     @@||sberbank.ru/*analytics$script
