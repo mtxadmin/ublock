@@ -61,6 +61,8 @@ _social_fb.  # from Fanboy’s
 ~facebook.com,~votesmart.appspot.com##a[href^="https://www.facebook.com/sharer.php?"]
 ! from Fanboy's
 ~facebook.com,~votesmart.appspot.com##a[href*="facebook.com/sharer/sharer.php?"]
+! from Adguard
+##a[onclick^="window.open('//www.facebook.com/sharer.php"]
 ! is in RU AdList
 ~facebook.com##a[onclick*="facebook.com/sharer.php?"]
 ! is in AdGuard
@@ -875,8 +877,8 @@ smartlock.google.com$3p
 !+##[id*="social"]
 ! is in Ru AdList
 ###social
-! is in Fanboy's and Ru AdList
-##.social
+! is in Fanboy's and Ru AdList. Also is in Adguard.
+##.social:not(body)
 ! is in Fanboy's
 ###social-bar
 ! is in AdGuard and Fanboy's
