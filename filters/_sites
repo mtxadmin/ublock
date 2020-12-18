@@ -2509,6 +2509,9 @@ st-1.1fichier.com #[Piwik.Analytics]
 5play.ru##.friends.tell
 5play.ru##.recommended
 
+o.60sk.ru  # from Adguard
+60sk.ru##.breaking-news
+
 ||66.ru/show/$third-party  # from Adguard
 
 7-62.ru###fixed_toolbar
@@ -4851,6 +4854,8 @@ deutek.ru##.gold_btn
 dev.to##.crayons-article-sticky:style(position:static !important)
 dev.to##.crayons-article-actions:style(position:static !important)
 
+deviantart.com##[href="https://www.deviantart.com"]
+
 devteam.space###service-modal-trusted.service-modal-trusted.services-modal.modal
 devteam.space##.modal-backdrop
 devteam.space##.widget_dts-video-slider-widget
@@ -5728,6 +5733,8 @@ exchangefaq.ru###connect
 ! Aliexpress image banners
 exdiy.ru$3p
 
+||exkinoray.tv/pic/reliz/*.gif
+
 exler.ru##.header-top
 exler.ru##.custom-section-border.custom-section
 ! from RU AdList
@@ -6039,7 +6046,12 @@ flammlin.com##.next-post
 ! stick moving sidebar
 flemmingriis.com##.no-mar:style(margin-top:0px !important)
 
+share.flipboard.com  # is in Fanboy's
 ||flipboard.com/web/buttons/$third-party
+! is in Adguard
+##a[href^="https://share.flipboard.com/bookmarklet/"]
+! is in Fanboy's
+##a[href^="https://share.flipboard.com/bookmarklet/popout?"]
 
 flipup.ru###footerLine:style(position:static !important)
 flipup.ru##.fixContainer:style(position:static !important)
@@ -6054,6 +6066,8 @@ floy.com.ua###head:style(position:static !important)
 
 ! FluidSurveys - closed (joined Surveymonkey.com)
 fluidsurveys.com$3p
+
+||flysat.com/resim  # from Adguard
 
 f-np.ru##.headerbar
 f-np.ru##.avatar
@@ -6179,6 +6193,11 @@ frickelsoft.net##body:style(background-color:white !important)
 blog.f-secure.com##.b-page-content--offset:style(padding-top:0px !important)
 
 furnituremalldirect.com$script,3p  # ad scripts (furniture)
+
+push-minor-api.fxstreet.com
+fxstreet.com###tracking-gtm-global-alert
+fxstreet.com##.fxs_alert_featured
+fxstreet.com##.fxs_positionFixed:style(position:static !important)
 
 ! g2.com
 g2crowd.com$domain=~g2.com|~g2crowd.com
@@ -7244,6 +7263,8 @@ indrikgrad.ru##.headblok
 
 inetru.net##.header
 
+infiplay.ru$3p  # from Adguard
+
 infobit.su##.welcomeNotice-link
 
 info-comp.ru###masthead
@@ -7750,8 +7771,8 @@ karusel.ru##.g-header__fixed:style(position:static !important)
 forum.kaspersky.com##.ipsSpacer_top.cTopicPostArea_noSize.ipsPad.ipsAreaBackground.cTopicPostArea
 forum.kaspersky.com##.ipsMessage_information.ipsMessage.ipsJS_hide.cAnnouncementPageTop
 forum.kaspersky.com##.ipsType_center.ipsMessage_information.ipsMessage.cAnnouncementContentTop
+kaspersky.ru##.kl_sm_sidebar_banner
 support.kaspersky.ru##.w_cont:has-text(Была ли информация полезна)
-
 ||kaspersky-labs.com$3p
 !https://ru.fp.kaspersky-labs.com/cld_track?cid=
 !https://ru.fp.kaspersky-labs.com/oxwdsq?cid=
@@ -9376,6 +9397,9 @@ mona.ru###callReq
 monitis.com###masthead
 monitis.com##[href^="https://info.monitis.com/"]
 
+monitorus.ru$3p
+uptime.monitorus.ru  # from Adguard
+
 mononline.ru##.widget_execphp
 
 mooir.ru##.ipsBadge_negative
@@ -10268,6 +10292,10 @@ orto-s.ru##.tel
 
 os-helper.ru##.group.sidebar-top
 
+ws-front.osnova.io  # ad websocket?
+!leonardo.osnova.io  # ad images? # don't
+! https://github.com/Noviel/osnova-module-socket.io
+
 osouce.ru###masthead
 
 osp.ru##noindex:has-text(Поделитесь материалом с коллегами)
@@ -10475,6 +10503,8 @@ pcloud.com##.notify_bar_wrap
 
 ||pcmag.com/pcmag.js?url=
 ||pcmag.com/user/eu-check
+! is in Adguard
+pcmag.com##aside[class^="zmgad-"]
 pcmag.com##.leading-none
 pcmag.com##.container.text-white
 
@@ -12776,6 +12806,9 @@ specodegda.ru##.catalogue__banner
 ||specodegdaopt.ru/*/specodegdalogo.gif
 ||specodegdaopt.ru/*/jumbotron.jpg
 
+speechki.org$3p  # audio widgets
+widget.speechki.org
+
 speedshooter.ru##.ty-scroller-discussion-list
 speedshooter.ru##.ypi-socials
 speedshooter.ru##.tygh-top-panel:style(position:static !important)
@@ -14266,6 +14299,11 @@ utro.ru##.news__social
 ! from RU Adlist
 ||uznatpochemu.ru^$third-party
 
+cfs1.uzone.id  # from Adguard
+uzone.id##.top-nav-container:style(position:static !important)
+uzone.id##.banner-youtube-mid-parent
+uzone.id##.box-content-trending
+
 blog.vadmin.ru###header-inner
 
 vannaiya.ru##.topsButtonsvl
@@ -15222,6 +15260,10 @@ sysjam.wordpress.com##.site-header
 windowsbag.wordpress.com###masthead
 
 winplatform.wordpress.com###masthead
+
+inf.wqa.ru  # from Adguard
+pp.wqa.ru
+||wqa.ru/img/wqa_bn.jpg
 
 wragg.io##.bg-image
 
@@ -16306,60 +16348,14 @@ adman.in.gr  # from Dan Pollock's hosts file
 
 /siropu/am/core.min.js  # is in uBlock filters
 
-monitorus.ru$3p
-uptime.monitorus.ru  # from Adguard
-
 /_stat/log_  # is in EasyPrivacy
-
-deviantart.com##[href="https://www.deviantart.com"]
-
-kaspersky.ru##.kl_sm_sidebar_banner
-
-! is in Adguard
-pcmag.com##aside[class^="zmgad-"]
-
-share.flipboard.com  # is in Fanboy's
-! is in Adguard
-##a[href^="https://share.flipboard.com/bookmarklet/"]
-! is in Fanboy's
-##a[href^="https://share.flipboard.com/bookmarklet/popout?"]
-
-push-minor-api.fxstreet.com
-fxstreet.com###tracking-gtm-global-alert
-fxstreet.com##.fxs_alert_featured
-fxstreet.com##.fxs_positionFixed:style(position:static !important)
 
 ||amazonaws.com/videodownloaderpro/debug.json
 
 ! override Fanboy's exception - instead of !makeuseof.com##.header-logo and other
 @@*$generichide,domain=makeuseof.com,badfilter
 
-ws-front.osnova.io  # ad websocket?
-!leonardo.osnova.io  # ad images? # don't
-! https://github.com/Noviel/osnova-module-socket.io
-
-speechki.org$3p  # audio widgets
-widget.speechki.org
-
 maketecheasier.com##.author-bio
-
-||exkinoray.tv/pic/reliz/*.gif
-
-cfs1.uzone.id  # from Adguard
-uzone.id##.top-nav-container:style(position:static !important)
-uzone.id##.banner-youtube-mid-parent
-uzone.id##.box-content-trending
-
-o.60sk.ru  # from Adguard
-60sk.ru##.breaking-news
-
-||flysat.com/resim  # from Adguard
-
-inf.wqa.ru  # from Adguard
-pp.wqa.ru
-||wqa.ru/img/wqa_bn.jpg
-
-infiplay.ru$3p  # from Adguard
 
 /nettyzer/*
 
