@@ -847,6 +847,7 @@ _pagespeed_beacon?  # from AdGuard
 /shopify-tracker/*
 /smartTagging.js
 /stat/count  # is in EasyPrivacy
+/_stat/log_  # is in EasyPrivacy
 /stat.php$domain=~sci-article.ru
 /stats.php  # is in EasyPrivacy: /stats.php?*http
 /superstat/collect
@@ -862,6 +863,7 @@ _pagespeed_beacon?  # from AdGuard
 /tracking.min.js
 -track-inview.  # is in EasyPrivacy
 /transparent-pixel.
+/trigger-visit-event  # from EasyPrivacy
 /VisitorAPI.js$important
 /wle_tracker.js
 /?wordfence
@@ -16438,8 +16440,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 
 /siropu/am/core.min.js  # is in uBlock filters
 
-/_stat/log_  # is in EasyPrivacy
-
 ||amazonaws.com/videodownloaderpro/debug.json
 
 ! override Fanboy's exception - instead of !makeuseof.com##.header-logo and other
@@ -16454,8 +16454,6 @@ maketecheasier.com##.author-bio
 /ban.min.js
 
 /_/batch|$xmlhttprequest,1p  # is in Fanboy's
-
-/trigger-visit-event  # from EasyPrivacy
 
 /widget.min.js
 
