@@ -1013,13 +1013,17 @@ _pagespeed_beacon?  # from AdGuard
 ! Оказывается, глюки с картами связаны именно с этим правилом - на встраиваемых яндекс-картах попапы подпадают под раздачу. Пробуем аккуратно отключить через ymaps (возможно, сработает не везде).
 ~dobrodel.ru,~dobrodel.mosreg.ru,~wildberries.ru##[class*="_to_top"]:not(html):not(body):not(ymaps)
 ##[id*="scrollup"]:not(html):not(body)
-    ! from Fanboy's
-    ###scrollup:not(body)
 ##[class*="scrollup"]:not(html):not(body)
     ##.hc_scrollup
     ###mt-scrollup
+    ! from Fanboy's
+    ###scrollup:not(body)
     ##.scrollup
     ##.scrollup-btn
+##[id*="scroll_up"]:not(html):not(body)
+##[class*="scroll_up"]:not(html):not(body)
+    ##.js_desktop_button_scroll_up
+    ##.scroll_up
 ##[id*="_to_top"]:not(html):not(body)
 ##[class*="-to-top"]:not([class*="sticked-to-top"]):not(html):not(body)
 ##[id*="-to-top"]:not(html):not(body)
@@ -1187,7 +1191,6 @@ _pagespeed_beacon?  # from AdGuard
 ##.scrolltotopbutton
 ###scrollup
 ###scrollUp
-##.scroll_up
 ##.scrollUp
 ##.ScrollUpButton__Container
 ##.scrollUp-child
