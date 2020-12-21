@@ -81,6 +81,8 @@ _social_fb.  # from Fanboy’s
 ~facebook.com,~fb.com##[id*="Facebook"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com,~belarus2020.org,~techgenix.com##[class*="facebook"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id*="facebook"]:not(html):not(body):not(article)
+    ! from Fanboy's
+    ###iframe-facebook
 ~facebook.com,~fb.com##[class^="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id^="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[class$="FB"]:not(html):not(body):not(article)
@@ -375,26 +377,28 @@ platform.twitter.com/widgets.js$important
 ~twitter.com##[id*="Twitter"]:not(html):not(body):not(article)
 ~twitter.com,~belarus2020.org,~livejournal.com##[class*="twitter"]:not(html):not(body):not(article)
 ~twitter.com##[id*="twitter"]:not(html):not(body):not(article)
+    ! from Fanboy's
+    !###advanced-twitter-widget
     ! is in Fanboy's and Web Annoyances Ultralist
-    ##.icon-twitter
-    ##.icon-twitter-circle
+    !##.icon-twitter
+    !##.icon-twitter-circle
     ! is in 3 lists
-    ##.share-twitter
+    !##.share-twitter
     !##.td-icon-twitter
     ! is in Ru AdList and Fanboy's
-    ##.twitter
+    !##.twitter
     ! is in Fanboy's and Web Annoyances Ultralist
     ! is in Fanboy's
     ##.twitter-follow-button
     ##.twitter-share-button
     ! is in AdGuard
-    ##body .twitter-share-button
+    !##body .twitter-share-button
     ! is in Fanboy's
-    ##.twitter-timeline
+    !##.twitter-timeline
     ! is in Fanboy's
-    ###twitter_timeline-2
+    !###twitter_timeline-2
     ! is in Fanboy's
-    ##.widget_twitter_timeline
+    !##.widget_twitter_timeline
 ! from Fanboy's
 ##[href^="//twitter.com/share"]
 ! from Web Annoyances Ultralist
@@ -1553,3 +1557,6 @@ garant.ru##.popup-social
 
 ! is in Adguard
 ##.icon-google-plus
+
+! from Fanboy's
+###donate-social
