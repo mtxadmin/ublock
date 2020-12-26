@@ -82,9 +82,8 @@
 
 /plugins/call-to-action-bar/*
 
-/plugins/cardoza-facebook-like-box/*
-    ! from Fanboy's
-    -facebook-like-box/
+/plugins/cardoza-facebook-like-box/*$important
+    -facebook-like-box/  # from Fanboy's
 
 /plugins/christmasify/*
 
@@ -97,8 +96,7 @@
 /plugins/convertplug/*
 
 /plugins/cookie-
-    ! from Fanboy's
-    !/plugins/cookie-$stylesheet
+    !/plugins/cookie-$stylesheet  # from Fanboy's
 
 /plugins/cookieinfo/*
 
@@ -239,7 +237,7 @@
 
 /plugins/mailchimp*
     ! also see mailchimp hosts in _marketing
-/plugins/mc4wp-premium/
+/plugins/mc4wp-premium/*
     ! also see mc4wp.com
     
 /plugins/mashshare
@@ -283,12 +281,12 @@
 
 /plugins/newsletter
 
-/plugins/nextend-facebook-connect/
+/plugins/nextend-facebook-connect/*
 
 ! from Fanboy's
 /plugins/nks-subscription/*
 
-/plugins/notification-bar-notibar/    
+/plugins/notification-bar-notibar/*$important    
     notibar.com
 
 /plugins/nrelate-related-content/*
@@ -387,7 +385,7 @@
     ! is in Fanboy’s
     ! /plugins/social-$script
 
-/plugins/soslider-social-slider/
+/plugins/soslider-social-slider/*
 
 /plugins/sp-ads/*
 
@@ -398,7 +396,7 @@
 
 /plugins/stickysocialbar/*
 
-/plugins/st-user-messaging/
+/plugins/st-user-messaging/*
 
 /plugins/subscribe-connect-follow-widget/*
 
@@ -709,7 +707,7 @@
 
 /plugins/email-before-download/*
 
-/plugins/wp-social-sharing/
+/plugins/wp-social-sharing/*
     /socialshare.js
 
 /plugins/go-ads/*
@@ -817,9 +815,8 @@
 
 /plugins/seofilter/*
 
-/plugins/dfp-ads/
-    ! is in EasyList
-    /dfp-ads/*
+/plugins/dfp-ads/*$important
+    /dfp-ads/*  # is in EasyList
 
 /plugins/cordova-plugin-statusbar/*
 /plugins/cordova-plugin-facebook4/*
@@ -1176,14 +1173,11 @@ envato.market
 ! Weather plugin
 /plugins/astero/*
 
-! popup ads. Also see carrotquest.io
-/plugins/carrot-quest/
+/plugins/carrot-quest/*$important  # popup ads. Also see carrotquest.io
 
-! scroll-up button
-/plugins/smooth-scroll-up/
+/plugins/smooth-scroll-up/*  # scroll-up button  
 
-! scroll-up button
-/plugins/system/smoothtop/*
+/plugins/system/smoothtop/*  # scroll-up button
 
 /plugins/chat/*
 
@@ -1194,7 +1188,7 @@ envato.market
 /plugins/ditty-news-ticker/*
 
 /modules/addthis/*
-/addthis.js
+    /addthis.js
 
 ! Drupal module
 /modules/addtoany/*
