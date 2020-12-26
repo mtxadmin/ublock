@@ -17,9 +17,11 @@
 
 /plugins/8-degree-notification-bar/*
 
-/plugins/ad-blocking-detector/*
+/plugins/ad-blocking-detector/*$important
 
 /plugins/add-cookie-notice/*
+
+/plugins/add-link-to-copied-text/*$important
 
 /plugins/add-to-any$important
 
@@ -28,16 +30,19 @@
 /plugins/adhelper/*
 
 /plugins/ad-inserter-pro/*$important
-    ! from EasyList, modified
-    /ad-inserter$important
+    /ad-inserter$important  # from EasyList, modified
 
 /plugins/ad-invalid-click-protector/*
 
 /plugins/adsplacer_pro/*$important  # is in Ru AdList
 
+/plugins/advanced-ads-responsive/*
+
 /plugins/advanced-browser-check/*
 
 /plugins/advanced-facebook-content-locker/*
+
+/plugins/advert_tcc$important
 
 /plugins/adv-popup-plugin/*
 
@@ -49,9 +54,13 @@
 
 /plugins/aftparser/*
 
+/plugins/agreeable-button/*$important  # is in uBlock filters
+
 /plugins/anmiated-twitter-bird/*
 
 /plugins/announcer/*
+
+/plugins/anti_copypaste/*$important
 
 /plugins/apex-notification-bar*
 
@@ -63,8 +72,13 @@
 
 /plugins/attention-grabber-hello-bar-alternative/*
 
-/plugins/aweber-wp/*$important
-    ! also see aweber.com
+/plugins/autors-by-webnavoz/*
+
+/plugins/auto-terms-of-service-and-privacy-policy/*
+
+/plugins/aweber-wp/*$important  # also see aweber.com
+
+/modules/baner/*
 
 /plugins/banneroid/*
 
@@ -80,10 +94,18 @@
 
 /plugins/boom-social/*
 
+/plugins/buyerstat/*
+
+/plugins/callb/*
+
+/plugins/callback/*
+
 /plugins/call-to-action-bar/*
 
 /plugins/cardoza-facebook-like-box/*$important
     -facebook-like-box/  # from Fanboy's
+
+/plugins/cc-cookie-consent/*
 
 /plugins/christmasify/*
 
@@ -97,10 +119,15 @@
 
 /plugins/cookie-
     !/plugins/cookie-$stylesheet  # from Fanboy's
+    /plugins/cookie-notice/*
 
 /plugins/cookieinfo/*
 
 /plugins/cookiemedia/*
+
+/plugins/copyright/*
+
+/plugins/countdown-wpdevart-extended/*
 
 /plugins/cta/*
 
@@ -115,6 +142,8 @@
 /plugins/digg-digg/*
 
 /plugins/diggclick/*
+
+/plugins/df-shortcodes/*
 
 /plugins/dh-anti-adblocker/*
 /plugins/dh-notification-bar/*
@@ -179,9 +208,16 @@
 
 /plugins/fluid-notification-bar/*
 
+!/plugins/fotorama/fotorama-wp.js - don't
+!/plugins/fotorama/fotorama.js - don't
+/plugins/fotoramaDefaults.js
+
 /plugins/free-shipping-notification-woocommerce/*
 
+/plugins/fseo-plugins/*
 /plugins/f-seo-ads/*
+/plugins/f-seo-comments/*
+/plugins/f-seo-questions/*
 
 /plugins/fv-sharing/*
 
@@ -193,14 +229,12 @@
 
 /plugins/gdpr-magic/*
 
-/plugins/getresponse/*$important
-    ! also see getresponse.com
+/plugins/getresponse/*$important  # also see getresponse.com
 
 /plugins/getsocial/*
 
-! disable exclusion from EasyPrivacy
-/plugins/google-analytics-dashboard-for-wp/*$important
-/plugins/google-analytics-for-wordpress/*$important
+/plugins/google-analytics-dashboard-for-wp/*$important  # disable exclusion from EasyPrivacy
+/plugins/google-analytics-for-wordpress/*$important  # disable exclusion from EasyPrivacy
 
 /plugins/hashbar-wp-notification-bar/*
 
@@ -220,8 +254,10 @@
 
 /plugins/knxdt-bookmarks-wordpress-plugin/*
 
-/plugins/leadsquared-website-topbar/*
-    ! also see leadsquared in _marketing
+/plugins/leadsquared-website-topbar/*  # also see leadsquared in _marketing
+
+/plugins/leaky-paywall/*
+    /leaky-paywall/*  # is in Fanboy's
 
 /plugins/lh-push/*
 /plugins/lh-talker/*
@@ -229,16 +265,16 @@
 
 /plugins/light-social/*
 
+/plugins/lightweight-social-icons/*
+
 /plugins/like-box-pro/*
 
 /plugins/likebtn-like-button/*
 
 /plugins/like-fb/*
 
-/plugins/mailchimp*
-    ! also see mailchimp hosts in _marketing
-/plugins/mc4wp-premium/*
-    ! also see mc4wp.com
+/plugins/mailchimp*  # also see mailchimp hosts in _marketing
+/plugins/mc4wp-premium/*  # also see mc4wp.com
     
 /plugins/mashshare
     /mashsharer/*
@@ -272,19 +308,31 @@
 /plugins/mm-social-share/*
 
 /plugins/modesco-adv-popup-wp/*
+/plugins/modesco-author-box/*
+/plugins/modesco-table-of-contents-plus/*
 
-! from AdGuard, modified. Sharing plugin for WP
-/plugins/monarch/*$script
+/plugins/monarch/*$script  # from AdGuard, modified. Sharing plugin for WP
 
 /plugins/m-wp-popup$important
     ! /plugins/m-wp-popup-gv/*
+
+! "Loyalty Plugin .. Affiliate Area .. Build brand loyalty by rewarding your customers through store reward"
+/plugins/mycred/*
+/plugins/mycred-birthdays/*
+/plugins/mycred-blocks/*
+/plugins/mycred-bp-group-leaderboards/*
+/plugins/mycred-h5p/*
+/plugins/mycred-learndash/*
+/plugins/mycred-lifterlms-integration/*
+/plugins/gamipress-mycred-importer/*
+/plugins/mediapress-mycred-addon/*
+    mycred.me
 
 /plugins/newsletter
 
 /plugins/nextend-facebook-connect/*
 
-! from Fanboy's
-/plugins/nks-subscription/*
+/plugins/nks-subscription/*$important  # from Fanboy's
 
 /plugins/notification-bar-notibar/*$important    
     notibar.com
@@ -299,6 +347,8 @@
 /plugins/optin-monster/*
 
 /plugins/osd-social-media-sharing/*
+
+/plugins/perelink/*
 
 /plugins/pg-advanced-ads/*
 
@@ -349,6 +399,10 @@
 
 /plugins/sam-pro-free/*
 
+/plugins/scroll-back-to-top/*
+
+/plugins/scroll-top/*
+
 /plugins/scroll-to-top-button/*$important
 
 /plugins/scroll-triggered-boxes/*
@@ -357,11 +411,15 @@
 
 /plugins/sexybookmarks/*
 
-/plugins/share
+/plugins/share  # all of social sharing plugins
 
 /plugins/share-this-image/$important
 
 /plugins/simple-adblock-notice/*
+
+/plugins/simple-author-box/*
+
+/plugins/simple-banner/*
 
 /plugins/simple-flash-banner/*
 
@@ -382,8 +440,7 @@
 
 ! all many social* plugins here
 /plugins/social
-    ! is in Fanboy’s
-    ! /plugins/social-$script
+    ! /plugins/social-$script  # is in Fanboy’s
 
 /plugins/soslider-social-slider/*
 
@@ -408,8 +465,7 @@
 
 /plugins/tab-slide/*
 
-/plugins/thirstyaffiliates/*
-    ! also see thirstyaffiliates in _marketing
+/plugins/thirstyaffiliates/*  # also see thirstyaffiliates in _marketing
 
 ! "The Ultimate Scarcity Marketing Tool"
 !/plugins/thrive-  don't, /plugins/thrive-visual-editor/ seems ok
@@ -437,11 +493,15 @@
 
 /plugins/viperbar/*
 
+/plugins/vote2x/*
+
 /plugins/vto_plus/*
 
 /plugins/wbounce/*
 
 /plugins/weblizar-pinterest-feeds/*
+
+/plugins/webnavoz-notification-box
 
 /plugins/welcomebar-wp-notification-bar/*
 
@@ -483,15 +543,25 @@
 
 /plugins/wp-social-toolbar-pro/*
 
+/plugins/wp-sponsors/*
+
 /plugins/wp-subscribe
 
 /plugins/wp-to-twitter/*
+
+/plugins/wp-trending-post-slider-and-widget/*
 
 /plugins/wp-tweet-button/*
 
 /plugins/wpt-tea-coffee-dance/*
 
 /plugins/wp-ulike/*
+
+/plugins/ws-referral/*
+
+/plugins/ws-testimonials/*
+
+/plugins/yikes-inc-easy-mailchimp-extender/*
 
 /plugins/zigcookie/*
 
@@ -1217,25 +1287,9 @@ envato.market
 
 /plugins/wp-floating-menu/*
 
-! "Loyalty Plugin .. Affiliate Area .. Build brand loyalty by rewarding your customers through store reward"
-/plugins/mycred/*
-/plugins/mycred-birthdays/*
-/plugins/mycred-blocks/*
-/plugins/mycred-bp-group-leaderboards/*
-/plugins/mycred-h5p/*
-/plugins/mycred-learndash/*
-/plugins/mycred-lifterlms-integration/*
-/plugins/gamipress-mycred-importer/*
-/plugins/mediapress-mycred-addon/*
-    mycred.me
-
 /plugins/woocommerce-lottery-wordpress-prizes-and-lotteries/*
 
-! is in uBlock filters
-/plugins/agreeable-button/*$important
-
-! from Ru AdList
-/modules/google_analytics/*
+/modules/google_analytics/*$important  # from Ru AdList
 
 /plugins/popup-builder/*
 
@@ -1250,8 +1304,6 @@ envato.market
     !/plugins/rb-1055-repos/asyncBlockInserting.js
     !/plugins/rb-1055-repos/readyAdGather.js
 
-/plugins/add-link-to-copied-text/*
-
 /apps/hurrify/plugin/js/hurrify.js
 
 /plugins/mywidget-recommendations/*
@@ -1259,8 +1311,6 @@ envato.market
 /plugins/whatsapp-for-wordpress/*
 
 /plugins/yith-woocommerce-membership-premium/*
-
-/plugins/advert_tcc
 
 /plugins/site-money/*
 
@@ -1272,21 +1322,11 @@ envato.market
 
 /plugins/page-views-count/*
 
-/plugins/fseo-plugins/*
-/plugins/f-seo-questions/*
-/plugins/f-seo-comments/*
-
-/plugins/df-shortcodes/*
-
 /plugins/wp-ooma-reviews-plugin/*
 
 /modules/livechatpro/*
 
 /plugins/gdpr-cookie-compliance/*
-
-/plugins/ws-referral/*
-
-/plugins/ws-testimonials/*
 
 /plugins/jquery-smooth-scroll/*
 
@@ -1295,10 +1335,6 @@ envato.market
 /plugins/ws-newsletter/*
 
 /wp-content/special/*
-
-/plugins/auto-terms-of-service-and-privacy-policy/*
-
-/plugins/cookie-notice/*
 
 /plugins/anything-popup/*
 
@@ -1322,57 +1358,17 @@ envato.market
 
 /plugins/insta-gallery/*
 
-/plugins/autors-by-webnavoz/*
-
 /plugins/expert-review/*
-
-/plugins/advanced-ads-responsive/*
-
-/plugins/leaky-paywall/*
-! is in Fanboy's
-/leaky-paywall/*
 
 /plugins/duracelltomi-google-tag-manager/*
 
 /plugins/magee-shortcodes/*
 
-/plugins/simple-author-box/*
-
-!/plugins/fotorama/fotorama-wp.js - don't
-!/plugins/fotorama/fotorama.js - don't
-/plugins/fotoramaDefaults.js
-
-/plugins/lightweight-social-icons/*
-
-/plugins/yikes-inc-easy-mailchimp-extender/*
-
-/plugins/modesco-table-of-contents-plus/*
-
-/plugins/modesco-author-box/*
-
-/plugins/perelink/*
-
-/plugins/cc-cookie-consent/*
-
-/plugins/simple-banner/*
-
-/plugins/countdown-wpdevart-extended/*
-
 /plugins/buddypress-sitewide-activity-widget/*
-
-/plugins/advert_tcc$important
-
-/plugins/wp-trending-post-slider-and-widget/*
-
-/plugins/wp-sponsors/*
 
 /plugins/extensive-recent-posts-widget-pro/*
 
 /plugins/widget-yelp-reviews/*
-
-/plugins/anti_copypaste/*$important
-
-/plugins/vote2x/*
 
 /jquery/moneymaker2/*
 
@@ -1384,12 +1380,9 @@ envato.market
 
 /seo-gallery-goods/*
 
-/plugins/webnavoz-notification-box
-
 /plugins/provide-support-live-chat/*
 
-! is in Fanboy's
-/mu-plugins/post-flair/*
+/mu-plugins/post-flair/*$important  # is in Fanboy's
 
 /plugins/optin-cat-wp/*
 
@@ -1400,10 +1393,6 @@ envato.market
 /plugins/quickorder/*
 
 /plugins/rcallback/*
-
-/plugins/callback/*
-
-/plugins/copyright/*
 
 /plugins/belllight/*$script
 
@@ -1437,35 +1426,25 @@ envato.market
 
 /plugins/suddendiscount/*
 
-/plugins/buyerstat/*
-
-/plugins/callb/*
-
 /plugins/arrived/*
 
 /plugins/bestprice/*
 
 /plugins/qdiscount/*
 
-/plugin/drk_ledadv/*  # from Adguard Chinese Filter
+/plugin/drk_ledadv/*$important  # from Adguard Chinese Filter
 
-/plugin/gaofen_ad/*  # from EasyList China
+/plugin/gaofen_ad/*$important  # from EasyList China
 
-/plugins/kill-adblock/*  # from EasyList China
-
-/modules/baner/*
+/plugins/kill-adblock/*$important  # from EasyList China
 
 /plugins/supertoc/*
-
-/plugins/scroll-top/*
 
 /plugins/post-pusater/*
 
 /plugins/spider-faq/*
 
 /plugins/forminator/*
-
-/plugins/scroll-back-to-top/*
 
 /plugins/thumbs-rating/*
 
