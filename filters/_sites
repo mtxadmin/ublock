@@ -151,6 +151,7 @@ _advert/  # from EasyList
 /media/upload_adv/*$image
 /mobile-banner/*
 /native.php  # from AdGuard: .com/native.php?b=
+/nativeads.  # is in Easylist
 /newAd/*
 /newrelic-browser.js
 /openx/*
@@ -422,6 +423,8 @@ _advert/  # from EasyList
 ##.adsBanner
 ##.adsbygoogle
 ! is in EasyList
+##.adspot
+! is in EasyList
 ##.AdSticky
 ##.ad-stickyhero
 ##.adtable
@@ -435,6 +438,8 @@ _advert/  # from EasyList
 ###adultCoverWarning
 ! is in Ru AdList: ~mail.ru,ru,~sportmail.ru,ua##.adv
 ##.adv
+! is in EasyList
+##.adv300x250
 ! from Ru Adlist
 ##.advblock
 ##.adv-box-right
@@ -500,6 +505,8 @@ _advert/  # from EasyList
 ! is in EasyList
 ##.bottom-adv
 ##.bottom-banner-wrapper
+! is in EasyList
+###btmad
 ##.b-r
 ##.bunnerLists
 ##.buy_1c
@@ -938,6 +945,7 @@ _pagespeed_beacon?  # from AdGuard
 
 
 !! ratings and surveys
+/rate.widget.js
 ! generalized
 ~aliexpress.com,~aliexpress.ru,~backit.me,~epn.bz,~support.google.com,~trimble.com,~dobrodel.ru,~mosreg.ru,~mos.ru,~neorabote.net,~news2.ru,~yandex.ru##[class*="feedback"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru,~disconnect.me,~trimble.com,~zen.yandex.ru##[id*="feedback"]:not(html):not(body)
@@ -945,7 +953,6 @@ _pagespeed_beacon?  # from AdGuard
 ~aliexpress.com,~aliexpress.ru##[id*="Survey"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru,~dbi-services.com,~pikabu.ru,~support.google.com##[class*="survey"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru##[id*="survey"]:not(html):not(body)
-    
 ! other
 ##.ask
 ##.ask_expert
@@ -1363,6 +1370,8 @@ _pagespeed_beacon?  # from AdGuard
 ! other
 ###__agreementBar
 ! is in EasyList and Fanboy's
+##.akismet_comment_form_privacy_notice
+! is in EasyList and Fanboy's
 ##.cm-notification-container
 ! is in EasyList and Fanboy's
 ###consent_blackbar
@@ -1567,6 +1576,8 @@ _cookie_policy_  # from Fanboy's and AdGuard
 ###dgit-daily-form
 ###cooking-email-signup
 ##.cw-subscribe-window
+! is in Fanboy's
+###email-popup
 ###email-signup
 ! is in Fanboy's
 ##.emailSubscribe
@@ -16626,9 +16637,6 @@ rackcdn.com
 ! is in Ru AdList
 ##div[class*="td-a-rec-id-"]
 
-! is in EasyList and Fanboy's
-##.akismet_comment_form_privacy_notice
-
 ! smile
 ||msdnshared.blob.core.windows.net/media/2017/11/wlEmoticon-smile.png
 
@@ -16644,9 +16652,6 @@ ru##.ErrorBox:has-text(AdBlock)
 
 /code/native.js?h=  # is in AdGuard
 
-! is in EasyList
-##.adv300x250
-
 adman.in.gr  # from Dan Pollock's hosts file
 
 !platformalp.ru
@@ -16657,11 +16662,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 ! is in EasyList and Fanboy's
 ##.lms-notice-wrapper
 
-/rate.widget.js
-
-! is in Fanboy's
-###email-popup
-
 /_hcms/perf  # is in EasyPrivacy
 
 ! is in Fanboy's
@@ -16669,9 +16669,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 
 ! is in Ru AdList, Fanboy's, EasyList
 ###sliding-popup.sliding-popup-bottom
-
-! is in EasyList
-##.adspot
 
 /flo.js  # is in Adguard
 
@@ -16688,8 +16685,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 
 /nettyzer/*
 
-/nativeads.  # is in Easylist
-
 /ban.min.js
 
 /_/batch|$xmlhttprequest,1p  # is in Fanboy's
@@ -16697,9 +16692,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 /widget.min.js
 
 ||cloudflare.com/ajax/libs/mobile-detect/
-
-! is in EasyList
-###btmad
 
 &idsite=*&send_image=$image  # is in EasyPrivacy
 
