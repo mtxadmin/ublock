@@ -965,6 +965,8 @@ smartlock.google.com$3p
 ~nalog.ru##[id*="Social"]:not(html):not(body):not(article)
 ! too many exclusions (not all here). Disabled.
 !~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru,~business2community.com##[class*="social"]:not(html):not(body):not(article)
+! on nalog.ru it is not social buttons, it is a tax name
+~nalog.ru##[id*="social"]:not(html):not(body):not(article)
 !
 ! from Fanboy's
 ##.abh_social
@@ -1063,7 +1065,6 @@ smartlock.google.com$3p
 ! is in Ru AdList and Fanboy's
 ##.sns-btns
 ##.soc
-!+##[id*="social"]
 ! is in Ru AdList
 ###social
 ! is in Fanboy's and Ru AdList. Also is in Adguard.
@@ -1268,8 +1269,6 @@ smartlock.google.com$3p
     ##.s-social-item
     ! from Fanboy's
     ##div[class^="style__social"]
-! on nalog.ru it is not social buttons, it is a tax name
-~nalog.ru##[id*="social"]:not(html):not(body):not(article)
     ! from Fanboy's
     !###top-social
 ##[class*="Sociaux"]:not(html):not(body):not(article)
