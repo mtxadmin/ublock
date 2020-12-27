@@ -145,6 +145,7 @@ _advert/  # from EasyList
 /jquery.bootstrap.scrollspy.js
 /jquery.iframetracker
 /landing/*$domain=~gosuslugi.ru|~etutorium.com|~univerpp.ru|~univer-pp.ru|~walletone.com
+/lazy-loader-banner/*
 /mads/gma
 /main-banner/*
 /matomo.js  # from EasyPrivacy
@@ -231,7 +232,9 @@ _advert/  # from EasyList
 ~opensubtitles.org,~dkc7dev.com##[class$="_ad"]:not(html):not(body):not(article)
 ##[id$="_ad"]:not(html):not(body):not(article)
     ! is in EasyList
-    ##.text_ad
+    ! ##.sidebar__ad
+    ! is in EasyList
+    ! ##.text_ad
 ##[class^="AD_"]:not(html):not(body):not(article)
 ##[id^="AD_"]:not(html):not(body):not(article)
 ##[class^="Ad_"]:not(html):not(body):not(article)
@@ -421,6 +424,8 @@ _advert/  # from EasyList
 ##.adlink_block
 ###adlogo
 ###admania_top
+! is in EasyList
+##.adright
 ###Ads
 ! from EasyList
 ##.adsBanner
