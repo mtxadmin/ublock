@@ -856,15 +856,20 @@ smartlock.google.com$3p
 
 
 !! general: like, share, social, etc
+/follow-us-on-  # from Fanboy's
 /icon-share.  # is in Fanboy's
 /icons/share-  # is in Fanboy's
 /icons/social/*  # is in Fanboy's
 /images/social.  # is in Ru AdList and Fanboy's
 /img/*/social.  # is in Fanboy's and Ru AdList
+/img/soc/*
 /share.png  # from Fanboy's
 /share.js
 /share42/*  # is in Ru AdList and Fanboy's
 /share42.js
+-sharebar.  # from Fanboy's
+/sharedaddy/*$image  # from Fanboy's
+/sharedaddy/*$script,important
 /share-link/*  # is in Ru AdList and Fanboy's
 /share-link.min.js
 /sendtofriend.  # from Fanboy's
@@ -887,26 +892,49 @@ smartlock.google.com$3p
 /social_shares-min.js
 /ya-share.$important  # is in Fanboy's and Ru AdList
 !
+##[class*="Follow"]:not(html):not(body):not(article)
+##[id*="Follow"]:not(html):not(body):not(article)
+~medtehno.ru##[class*="follow"]:not(html):not(body):not(article)
+~facebook.com,~vk.com##[id*="follow"]:not(html):not(body):not(article)
+~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article)
 ##[title^="Follow me on "]
+##[id*="Share"]:not(html):not(body):not(article)
+! Too many exclusions. Disabled. 
+!~microsoft.com,~sketchup.com,~topsharepoint.com,~joom.com,~gfycat.com##[class*="share"]:not(html):not(body):not(article)
+~etutorium.com,~facebook.com,~host.io,~steamcommunity.com,~vesti.ru,~vk.com##[id*="share"]:not(html):not(body):not(article)
 ##[title^="Share on "]
     ! from AdGuard
-    ##a[title="Share on Facebook"]
+    !##a[title="Share on Facebook"]
     ! from Fanboy's
-    ##[title^="Share on Facebook"]
+    !##[title^="Share on Facebook"]
     ! is in AdGuard
-    ##a[title="Share on LinkedIn"]
+    !##a[title="Share on LinkedIn"]
     ! from AdGuard
-    ##a[title="Share on Pinterest"]
+    !##a[title="Share on Pinterest"]
     ! from Fanboy's
-    ##a[title^="Share on Pinterest"]    
+    !##a[title^="Share on Pinterest"]    
     ! is in AdGuard
-    ##[title="Share on Reddit"]
+    !##[title="Share on Reddit"]
     ! is in Fanboy's
-    ##a[title^="Share on Reddit"]
+    !##a[title^="Share on Reddit"]
     ! is in Fanboy's
-    ##[title^="Share on Twitter"]
+    !##[title^="Share on Twitter"]
     ! from Fanboy's
-    ##a[title="Share on Twitter"]
+    !##a[title="Share on Twitter"]
+~clickmeeting.com,~votesmart.appspot.com##[class*="Sharing"]:not(html):not(body):not(article)
+~clickmeeting.com,~votesmart.appspot.com##[id*="Sharing"]:not(html):not(body):not(article)
+~clickmeeting.com,~votesmart.appspot.com,~drive.google.com##[class*="sharing"]:not(html):not(body):not(article)
+~clickmeeting.com,~votesmart.appspot.com##[id*="sharing"]:not(html):not(body):not(article)
+! on nalog.ru it is not social buttons, it is a tax name
+~nalog.ru##[class*="Social"]:not(html):not(body):not(article)
+    !from Fanboy's: Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
+    !##div[class^="SocialIcons_"]
+~nalog.ru##[id*="Social"]:not(html):not(body):not(article)
+! too many exclusions (not all here). Disabled.
+!~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru,~business2community.com##[class*="social"]:not(html):not(body):not(article)
+!
+! from Fanboy's
+##.abh_social
 ! is in AdGuard and Fanboy's
 ##.article-share
 ! is in Fanboy's
@@ -918,6 +946,10 @@ smartlock.google.com$3p
 ! is in AdGuard and Fanboy's
 ##.b-article__social
 ##.bio-social
+! is in AdGuard
+##.block_social
+! is in Ru AdList and Fanboy's
+###block_social_open
 ##.b-social-list
 ##.b-soc_icons
 ! is in 3 lists
@@ -939,12 +971,17 @@ smartlock.google.com$3p
 ##.footersoc
 ! is in Fanboy's
 ##.footerSocial
+##.footer-social
+! is in Ru AdList and Fanboy's
+##.footer__social
+##.footer__social-group
 ! is in EasyList and Fanboy's
 ##.footer-social-link
 ! is in Fanboy's
 ##.footer__socials
 ! is in Fanboy's
 ##.footer-socials
+##.footer-social-wrap
 ! is in AdGuard and Fanboy's
 ##.goodshare
 ! is in AdGuard
@@ -1079,18 +1116,8 @@ smartlock.google.com$3p
 
 !! todo
 
-!! social buttons
-! generalized
-##[class*="Follow"]:not(html):not(body):not(article)
-##[id*="Follow"]:not(html):not(body):not(article)
-~medtehno.ru##[class*="follow"]:not(html):not(body):not(article)
-~facebook.com,~vk.com##[id*="follow"]:not(html):not(body):not(article)
-~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article)
-##[id*="Share"]:not(html):not(body):not(article)
 ! From Fanboy's: Google share icon
 ##KNO-SHARE-BUTTON
-! Too many exclusions. Disabled. 
-!~microsoft.com,~sketchup.com,~topsharepoint.com,~joom.com,~gfycat.com##[class*="share"]:not(html):not(body):not(article)
     ! from Fanboy's
     ##.bp-share-btn
     ! from Fanboy's
@@ -1138,7 +1165,6 @@ smartlock.google.com$3p
     ##.sidebar-share
     ! from AdGuard & Fanboy's
     ##.ytp-share-button
-~etutorium.com,~facebook.com,~host.io,~steamcommunity.com,~vesti.ru,~vk.com##[id*="share"]:not(html):not(body):not(article)
     ! is in AdGuard and Fanboy's
     ###share-block
     ! is in Fanboy's, RU AdList
@@ -1152,59 +1178,39 @@ smartlock.google.com$3p
     ##.ya-share2__list
     ! from Adguard
     ##.ya-share2__link
-~clickmeeting.com,~votesmart.appspot.com##[class*="Sharing"]:not(html):not(body):not(article)
-~clickmeeting.com,~votesmart.appspot.com##[id*="Sharing"]:not(html):not(body):not(article)
-~clickmeeting.com,~votesmart.appspot.com,~drive.google.com##[class*="sharing"]:not(html):not(body):not(article)
-~clickmeeting.com,~votesmart.appspot.com##[id*="sharing"]:not(html):not(body):not(article)
 
+! some of this (disabled) rules are too resourse-consuming
+!
 ! ends with -soc
 ##[class$="-soc"]:not(html):not(body):not(article)
 ##[id$="-soc"]:not(html):not(body):not(article)
 !##[class*="-soc "]:not(html):not(body):not(article)
 !##[id*="-soc "]:not(html):not(body):not(article)
-
+!
 ! ends with _soc
 ##[class$="_soc"]:not(html):not(body):not(article)
 ##[id$="_soc"]:not(html):not(body):not(article)
 !##[class*="_soc "]:not(html):not(body):not(article)
 !##[id*="_soc "]:not(html):not(body):not(article)
-
+!
 ! begins with soc_
 ##[class^="soc_"]:not(html):not(body):not(article)
 ##[id^="soc_"]:not(html):not(body):not(article)
 !##[class*=" soc_"]:not(html):not(body):not(article)
 !##[id*=" soc_"]:not(html):not(body):not(article)
-
+!
 ! begins with soc-
 ##[class^="soc-"]:not(html):not(body):not(article)
 ##[id^="soc-"]:not(html):not(body):not(article)
 !##[class*=" soc-"]:not(html):not(body):not(article)
 !##[id*=" soc-"]:not(html):not(body):not(article)
-
+!
 ! contains soc
 ##[class*="-soc-"]:not(html):not(body):not(article)
 ##[id*="-soc-"]:not(html):not(body):not(article)
 ##[class*="_soc_"]:not(html):not(body):not(article)
 ##[id*="_soc_"]:not(html):not(body):not(article)
 
-! on nalog.ru it is not social buttons, it is a tax name
-~nalog.ru##[class*="Social"]:not(html):not(body):not(article)
-    !from Fanboy's: Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
-    !##div[class^="SocialIcons_"]
-~nalog.ru##[id*="Social"]:not(html):not(body):not(article)
-! too many exclusions
-!~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru,~business2community.com##[class*="social"]:not(html):not(body):not(article)
-    ! from Fanboy's
-    ##.abh_social
-    ! is in AdGuard
-    ##.block_social
-    ! is in Ru AdList and Fanboy's
-    ###block_social_open
-    ##.footer-social
-    ! is in Ru AdList and Fanboy's
-    ##.footer__social
-    ##.footer__social-group
-    ##.footer-social-wrap
     ! is in Fanboy's and Ru AdList
     ##.fusion-social-network-icon
     ! is in Ru AdList and Fanboy's
@@ -1296,8 +1302,6 @@ smartlock.google.com$3p
 ! other
 ! is in Ru AdList and Fanboy's
 ##.et_pb_social_media_follow
-! from Fanboy's
-/follow-us-on-
 /ig.svg
 /ico_tg.
 /icon-ig.png
@@ -1306,12 +1310,8 @@ smartlock.google.com$3p
 /icon_viber.
 /img/vib.jpg
 /icon_ya.
-/img/soc/*
 ! from Fanboy's
 /reddit.png
-! from Fanboy's
-/sharedaddy/*$image
-/sharedaddy/*$script,important
 /skype.png
 /skype.svg
 /usocial/*
@@ -1323,8 +1323,6 @@ smartlock.google.com$3p
 /yandex-zen.svg
 /yt.svg
 /zen.png
-! from Fanboy's
--sharebar.
 ! from Fanboy's
 ##a[title="ВКонтакте"]
 ! from Fanboy's
