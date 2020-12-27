@@ -1785,14 +1785,10 @@ admixer.atlassian.net
 sales.nkah.net
 admixercreatives.blob.core.windows.net  # is in Ru AdList
 player.best
-! from Ru AdList
-/admixer.js
-! from Ru AdList
-/admixer/*
-! from Ru AdList
-/admixercloudcreatives.
-! from Ru AdList
-/admixermonitorstorage.
+/admixer.js  # from Ru AdList
+/admixer/*  # from Ru AdList
+/admixercloudcreatives.  # from Ru AdList
+/admixermonitorstorage.  # from Ru AdList
 ! from AdGuard and Ru AdList
 ##div[id^="admixer_"]
 ! from AdGuard
@@ -2436,9 +2432,11 @@ ads01.com  # from Dan Pollock's hosts file
 
 ads180.com  # from MVPS
 
-ads1-adnow.com  # from MVPS  # [Advancedhosters-net][AS39572]
-ads2-adnow.com
-ads3-adnow.com
+ads1-adnow.com$important  # from MVPS  # [Advancedhosters-net][AS39572]
+ads2-adnow.com$important
+ads3-adnow.com$important
+! from Ru AdList
+##a[href*="ads2-adnow.com"]
 
 ads1-adselo.com  # from Adguard
 
