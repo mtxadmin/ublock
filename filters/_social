@@ -925,6 +925,39 @@ smartlock.google.com$3p
 ~clickmeeting.com,~votesmart.appspot.com##[id*="Sharing"]:not(html):not(body):not(article)
 ~clickmeeting.com,~votesmart.appspot.com,~drive.google.com##[class*="sharing"]:not(html):not(body):not(article)
 ~clickmeeting.com,~votesmart.appspot.com##[id*="sharing"]:not(html):not(body):not(article)
+!
+! some of this (disabled) rules are too resource-consuming
+!
+! ends with -soc
+##[class$="-soc"]:not(html):not(body):not(article)
+##[id$="-soc"]:not(html):not(body):not(article)
+!##[class*="-soc "]:not(html):not(body):not(article)
+!##[id*="-soc "]:not(html):not(body):not(article)
+!
+! ends with _soc
+##[class$="_soc"]:not(html):not(body):not(article)
+##[id$="_soc"]:not(html):not(body):not(article)
+!##[class*="_soc "]:not(html):not(body):not(article)
+!##[id*="_soc "]:not(html):not(body):not(article)
+!
+! begins with soc_
+##[class^="soc_"]:not(html):not(body):not(article)
+##[id^="soc_"]:not(html):not(body):not(article)
+!##[class*=" soc_"]:not(html):not(body):not(article)
+!##[id*=" soc_"]:not(html):not(body):not(article)
+!
+! begins with soc-
+##[class^="soc-"]:not(html):not(body):not(article)
+##[id^="soc-"]:not(html):not(body):not(article)
+!##[class*=" soc-"]:not(html):not(body):not(article)
+!##[id*=" soc-"]:not(html):not(body):not(article)
+!
+! contains soc
+##[class*="-soc-"]:not(html):not(body):not(article)
+##[id*="-soc-"]:not(html):not(body):not(article)
+##[class*="_soc_"]:not(html):not(body):not(article)
+##[id*="_soc_"]:not(html):not(body):not(article)
+!
 ! on nalog.ru it is not social buttons, it is a tax name
 ~nalog.ru##[class*="Social"]:not(html):not(body):not(article)
     !from Fanboy's: Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
@@ -1178,38 +1211,6 @@ smartlock.google.com$3p
     ##.ya-share2__list
     ! from Adguard
     ##.ya-share2__link
-
-! some of this (disabled) rules are too resourse-consuming
-!
-! ends with -soc
-##[class$="-soc"]:not(html):not(body):not(article)
-##[id$="-soc"]:not(html):not(body):not(article)
-!##[class*="-soc "]:not(html):not(body):not(article)
-!##[id*="-soc "]:not(html):not(body):not(article)
-!
-! ends with _soc
-##[class$="_soc"]:not(html):not(body):not(article)
-##[id$="_soc"]:not(html):not(body):not(article)
-!##[class*="_soc "]:not(html):not(body):not(article)
-!##[id*="_soc "]:not(html):not(body):not(article)
-!
-! begins with soc_
-##[class^="soc_"]:not(html):not(body):not(article)
-##[id^="soc_"]:not(html):not(body):not(article)
-!##[class*=" soc_"]:not(html):not(body):not(article)
-!##[id*=" soc_"]:not(html):not(body):not(article)
-!
-! begins with soc-
-##[class^="soc-"]:not(html):not(body):not(article)
-##[id^="soc-"]:not(html):not(body):not(article)
-!##[class*=" soc-"]:not(html):not(body):not(article)
-!##[id*=" soc-"]:not(html):not(body):not(article)
-!
-! contains soc
-##[class*="-soc-"]:not(html):not(body):not(article)
-##[id*="-soc-"]:not(html):not(body):not(article)
-##[class*="_soc_"]:not(html):not(body):not(article)
-##[id*="_soc_"]:not(html):not(body):not(article)
 
     ! is in Fanboy's and Ru AdList
     ##.fusion-social-network-icon
