@@ -678,18 +678,6 @@ _advert/  # from EasyList
 !! promos
 ! is in EasyList
 ://promo.$3p
-##[class*="Promo"]:not(html):not(body):not(article)
-##[id*="Promo"]:not(html):not(body):not(article)
-! too many exclusions
-!~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru##[class*="promo"]:not(html):not(body):not(article)
-    ##.promo
-    ##.promo__banner
-    ##.promo-bar
-    ##.promo-block-letter
-    ##.promo-button
-    ##.promotion-box
-##[id*="promo"]:not(html):not(body):not(article)
-##.promo-block
 /app.promo$script
 /load-promo/*  # from Ru AdList
 /promo.
@@ -697,7 +685,47 @@ _advert/  # from EasyList
 /promo.js$important
 /promo.php
 /promo-banner.js$important
+/promolinks.
 /promos/*  # is in Ru AdList
+/promotion/*
+/promotions/*
+    ! ||gbtcdn.com/GB/images/promotion/$image
+    ! ||mvideo.ru/media/promotions/*$image
+    ! ||wbstatic.net/promotions/
+/searchpromote/*
+##[id*="Promo"]:not(html):not(body):not(article)
+##[class*="Promo"]:not(html):not(body):not(article)
+##[id*="promo"]:not(html):not(body):not(article)
+! too many exclusions
+!~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru##[class*="promo"]:not(html):not(body):not(article)
+    ##.open_promo
+    ##.promo
+    ##.promo__banner
+    ##.promo-bar
+    ##.promo_block
+    ##.promo-block
+    ##.promo-block-letter
+    ##.promo-button
+    ##.promo_widget
+##[id*="-promo"]:not(html):not(body):not(article)
+##[class*="-promo"]:not(html):not(body):not(article)
+    ! delikateska.ru##.header-promo-container
+    ! popup
+    ! exam-labs.com##.quick-registration-promo
+    ! federalnewsnetwork.com##.widget-promo-link
+    ! kupibonus.ru##.kb-promo
+    ! ponominalu.ru##.pn-ss-promo-block
+    ! techport.ru##.techbonuses-promo-block-wrapper
+    ! techport.ru##.techbonuses-promo-block-wrapper-parent
+    ! travel.ru##.b-footer-mobile-app-promo-icon
+    ! wildberries.ru##.j-promo-carousel-wrapper
+##[id*="promotion"]:not(html):not(body):not(article)
+##[class*="promotion"]:not(html):not(body):not(article)
+    ! ##.close-promotion
+    ! ##.promotion-box
+    ! ##.promotion-flex
+    ! booking.com##.promotion-postcard__large
+    ! booking.com##.promotion-postcard__small
 
 
 
@@ -3297,8 +3325,6 @@ askubuntu.com##.js-sticky-leftnav:style(position:static !important)
 ||cdn.sstatic.net/Sites/askubuntu/img/site-background-image.png
 askubuntu.com##.site-header
 
-assistentus.ru##.open_promo.promo_widget
-
 ! atlassian.com
 community.atlassian.com##.atl-register-login-hero
 community.atlassian.com##.atl-qanda-register-login-card
@@ -4033,8 +4059,6 @@ boobliks.pro##.logotip_ebanem
 boobliks.pro##body:style(background:none !important)
 
 booking.com##.header-signin-prompt
-booking.com##.promotion-postcard__large
-booking.com##.promotion-postcard__small
 booking.com##.promote_article__overlay
 booking.com##.promote_article
 ||bstatic.com/static/js/error_catcher_bec_cloudfront_sd/
@@ -4514,7 +4538,6 @@ citilink.ru##.between-card-banner_pageevents-js
 citilink.ru##.link-between-card-banners_gtm-js
 citilink.ru##.link-between-card-banners_pageevents-js
 citilink.ru##.toggling_banners
-citilink.ru##.promo_block
 banners.s1.citilink.ru$important
 ! striked prices
 citilink.ru##.old_price
@@ -4911,7 +4934,6 @@ dekoriko.ru##nav.navigation:nth-of-type(1)
 ||delikateska.ru/*/delay$image
 ||delikateska.ru/*/icons/delivery/
 delikateska.ru##.question
-delikateska.ru##.header-promo-container
 delikateska.ru##.main-nav > .phone_number
 delikateska.ru##.benefits
 delikateska.ru##.sidebar > .review
@@ -5829,8 +5851,6 @@ examcollection.com###p_fade
 @@||examenpdd.com^$generichide,badfilter
 examenpdd.com##.share
 
-! popup
-exam-labs.com##.quick-registration-promo
 ! banners
 exam-labs.com##.header__adv
 exam-labs.com##.action--exam
@@ -6040,8 +6060,6 @@ fcase.io$3p
 fcenter.ru##.bottom-panel
 
 ||f-droid.org/assets/fdroid-logo-text.svg
-
-federalnewsnetwork.com##.widget-promo-link
 
 ! is in Fanboy's
 ||feedburner.com^$image,3p
@@ -6413,7 +6431,6 @@ gdeikakzarabotat.ru###footer
 gearbest.com##.footerApprecom
 gearbest.com##.icon-msg
 gearbest.com##.footerQuality
-||gbtcdn.com/GB/images/promotion/$image
 ||gbtcdn.com/imagecache/gbw/img/site/error_img@.png$image
 ! fixed
 gearbest.com##.siteAside
@@ -8322,7 +8339,6 @@ kupibonus.ru##.kb-timer
 kupibonus.ru##.kb-abs:style(position:static !important)
 kupibonus.ru##.kb-ar-up
 kupibonus.ru##.up
-kupibonus.ru##.kb-promo
 kupibonus.ru###trustedservice
 kupibonus.ru##.s18plus
 kupibonus.ru##.info
@@ -9814,7 +9830,6 @@ mustbegeek.com###header
 mustbegeek.com##.sticky-nav:style(position:static !important)
 mustbegeek.com###ts-fab-bio-below
 
-||mvideo.ru/media/Promotions/*$image
 ||mvideo.ru/media/AppDynJsv2/  # adrum
 ! header
 mvideo.ru##.sticky-header:style(position:static !important)
@@ -10578,8 +10593,6 @@ forum.oszone.net##p.smltxt:has-text(-------)
 forum.oszone.net##div[id*=post_thanks_box]
 ||oszone.net/figs/icons/favs/
 ||oszone.net/file/translate_small.gif
-||oszone.net/js/promolinks.js
-||oszone.net/scripts/promolinks.php
 ||oszone.net/js/watermark.js
 
 ||otb.by/images/00_exot/$image
@@ -11204,7 +11217,6 @@ polsdelat.ru##.table-of-contents
 polymax10.ru##.container > .d-flex
 ||polymax10.ru/img/desktopNavbarClose.svg
 
-ponominalu.ru##.pn-ss-promo-block
 ponominalu.ru##.splash
 ponominalu.ru##.pn-nav-bar__logo
 ponominalu.ru##.certificate-color
@@ -13725,11 +13737,9 @@ technopark.ru##.header__main--fixed:style(position:static !important)
 !technopark.ru##.js-analytics-list - don't
 technopark.ru##.recommendations-box
 
-techport.ru##.techbonuses-promo-block-wrapper
 techport.ru##.tcp-logo
 ||techport-st.cdn.ngenix.net/aero/images/general/section.png
 techport.ru##.tcp-subscribe
-techport.ru##.techbonuses-promo-block-wrapper-parent
 techport.ru##.tcp-social-line
 techport.ru##.you-just-watched
 
@@ -14200,7 +14210,7 @@ travel.ru##.b-header-fixed:style(position:static !important)
 travel.ru##.b-header-fixed-border:style(position:static !important)
 travel.ru##.body-offset:style(padding-top:0px !important)
 travel.ru##.b-section-hotels-list
-travel.ru##.b-icon-appstore.b-footer-mobile-app-promo-icon
+travel.ru##.b-icon-appstore
 
 stats.travelask.ru
 travelask.ru##.alt-header__logo-img
@@ -15315,7 +15325,6 @@ wikiwand.com###article_content_wrapper:style(margin-top:40px !important)
 ||wildberries.ru/visitedgoods
 ||wb.ru/sdk/sdk.js
 ||wbstatic.net/j/externalStat.min.js
-||wbstatic.net/promotions/
 ! top
 wildberries.ru##.header-bg:style(top:0px !important)
 ! quick view
@@ -15329,7 +15338,6 @@ wildberries.ru##.j-vip-status-popup
 wildberries.ru##.tooltipster-content:has-text(Используйте разные размеры карточек)
 ! promos
 wildberries.ru##.i-spec-action
-wildberries.ru##.j-promo-carousel-wrapper
 ! old (striked out) prices
 wildberries.ru##.old-price
 wildberries.ru##.price-last
@@ -16408,8 +16416,6 @@ kb.zyxel.ru###launcher
 ||googleapis.com/pixelperfect/
 
 /disable_click.min.js$important
-
-/searchpromote/*
 
 /affiliate/*
 
