@@ -18,7 +18,10 @@ Despite you checked all filters in uBlock Origin (i.e. set default lists), you s
 
 ![afterinstall](https://user-images.githubusercontent.com/22258847/51348138-e8be7a00-1a6f-11e9-9b0c-5fac61a83f8f.png)
 
-(The example is from a friendly project, inspired to develop the idea.)
+(The example is from a friendly project, inspired to develop the idea. The idea has developed very much further, but the example gives a good idea)
+
+Of course, the matter is not limited to visual removal of unnecessary things - as mentioned above, [ads, tracking scripts, etc., etc. ...](docs/policy_en.md) are deeply blocked. Many of the rules in this list are based on colleagues' findings (see references `from` in the sources), but many were found independently and were absent in the available sources at the time of adding.
+
 
 ## How to setup this filter list?
 
