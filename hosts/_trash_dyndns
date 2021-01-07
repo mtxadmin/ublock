@@ -405,6 +405,7 @@ teasers.ucoz.ru  # from Adguard
 a.ucoz.net  # from MVPS and Peter Lowe's hosts file
 s212.ucoz.net  # from MVPS
 ucounter.ucoz.net  # from MVPS
+kosibablo.ucoz.ua  # from Adguard
 
 06web.web.app  # from Energized Blu
 btcomlandlinemanagechange.web.app  # from Energized Blu
@@ -468,3 +469,36 @@ mesotherapy.jino-net.ru  # from Dan Pollock's hosts file
 !weebly.com  # many spam subdomains and empty root  # from Energized Blu
 
 d2odv8q3xfctb4.cloudfront.net  # ad scripts
+
+! from Ru AdList
+! Бесплатные DNS-сервисы и не бесплатные домены первого уровня,
+! крайне часто использующихся для мошеннических схем,
+! распространения навязчивой рекламы и вирусов.
+!
+||changeip.name^$third-party,script,subdocument
+||chickenkiller.com^$third-party,script,subdocument
+||dyndns-$third-party,script,subdocument
+||dyndns.$third-party,script,subdocument
+||itsaol.com^$third-party,script,subdocument
+||quelliclub.ru^$third-party,script,subdocument
+||servebbs.net^$third-party,script,subdocument
+||zavetiss.ru^$third-party
+!
+||asia^$third-party,script,subdocument,xmlhttprequest,domain=~gallerix.org
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~forum.worldofwarships.ru|~hdvbplayer.tk|~live-gol.net|~philips.ru|~softpir.com|~sportings.pw|~sportsvideoline3.pw|~tefal.ru|~videosofsport1.pw|~xn--drakulastrem-b7e.com
+||xyz^$third-party,script,xmlhttprequest,domain=~anidub.com|~animedia.pro|~animeheaven.ru|~app.element.io|~assistir-filme.biz|~avtomaty-i-bonusy.com|~chelentano.top|~coomeet.com|~crackstreams.com|~crackstreams.ga|~csgoreports.com|~cvid.kiev.ua|~estream.to|~europixhd.io|~films.hds-stream.com|~funtik.tv|~getvi.tv|~hanime.tv|~hentaiz.org|~herokuapp.com|~infoua.biz|~jokehd.com|~jokerswidget.com|~kinobig.me|~kinoguru.be|~kinoguru.me|~kristinita.ru|~live-golf.stream|~lookbase.xyz|~magicfilm.net|~mail.google.com|~map-a-date.cc|~matchat.online|~mikeamigorein.xyz|~miranimbus.ru|~my.mail.ru|~nccg.ru|~newdeaf.club|~newdmn.icu|~onmovies.se|~playjoke.xyz|~roadhub.ru|~roblox.com|~sextop.net|~soccer365.ru|~soonwalk.net|~sportsbay.org|~streetbee.io|~streetbee.ru|~telerium.live|~uacycling.info|~uploadedpremiumlink.net|~vk.com|~vmeste.tv|~web.app
+!
+! Исключения
+@@||12go.asia/dist/prod/build.*.js|$third-party,script
+@@||12go.asia/tools/form/$third-party,script
+@@||als-test.xyz/finserv/zgv/votezgv|$third-party,xmlhttprequest
+@@||als-test.xyz/finserv/zgv/zgvresults|$third-party,xmlhttprequest
+@@||azvideo.asia^$domain=miwed.ru
+@@||callback.pw^$third-party,script,xmlhttprequest
+@@||gallerix.asia^$domain=gallerix.ru
+@@||getplr.xyz/embed$third-party,script,subdocument,xmlhttprequest
+@@||multilanguage.xyz^$third-party,script,xmlhttprequest
+@@||myvi.xyz/embed/$third-party,subdocument
+@@||nyan.pw^$third-party,script,xmlhttprequest
+@@||recheck.12go.asia/*/recheck|$third-party,xmlhttprequest
+
