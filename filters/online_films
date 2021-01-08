@@ -11,6 +11,7 @@ c1.hdgo.cc$important
 vio.to/stat_date/$important
 streamguard.cc/stats/$important
 alforenao.com/stats/
+hbplatform.com  # is in Ru AdList and Adguard
 ! from EasyPricacy
 ||streamango.com/log
 !||streamango.com/googlead.js$important
@@ -215,6 +216,117 @@ gstatic.com/recaptcha/$important,domain=123serial.com|1lostfilm1080.online|1seri
 
 
 
+!! paid sites
+
+!||afisha.tut.by/online-cinema/  # ссылка на tvigle.tv
+
+!allocine.fr  # paid non-working French site  # from Adguard: smart.allocine.fr
+
+!best-trailer.ru  # только трейлеры, без фильмов
+
+!ctc.ru  # "Оформить подписку", ага. До свидания.
+
+!culture.ru  # по подписке
+
+!domashniy.ru  # нет просмотра
+
+!film.ru  # paid movies site
+
+!filmhd.to  # не работает
+
+!ivi.ru  # paid movies site
+!ivi.tv
+! with || for subdomains
+||ivi.ru/logger/
+||ivi.ru/mobileapi/video/watchtime/
+!||ivi.ru/mobileapi/billing/
+||ivi.ru/mobileapi/billing/v1/purchase/
+||ivi.ru/ajax/frontlog/
+||ivi.ru/pausebanner_mts.jpg
+||tivision.ru/images/informer/$image
+ivi.ru##.service-notification
+
+!kino.1tv.ru  # "по подписке"
+
+!kinoafisha.info  # ссылка на okko.tv
+
+!kinohod.ru  # платно
+
+!kino.mail.ru  # "выбор тарифного плана", ага
+
+!kinopoisk.ru  # хорошие там были рецензии, но эффективные менеджеры прикрутили монетизацию
+
+!kino-teatr.ru  # ссылка на okko.tv
+
+!kino-teatr.ua  # плеер от заблокированной hbplatform.com
+
+!kinotut.tv  # fake, ads
+
+!kinowinx.ru  # this site behaves very strange. There are many others, without such errors.
+
+!megafon.tv  # paid
+
+!megogo.ru  # paid movies site
+
+! videomore.ru now is more.tv
+! site with DRM video. Block completely this site and embedded player ftom it
+!more.tv$important
+!videomore.ru$important
+! before that
+!videomore.ru##.channels-line
+!videomore.ru##.video-help-link
+!videomore.ru##.widget_branding-.channels
+!videomore.ru##.age-label
+
+!my-hit.org  # не работает. Даже с разблокированными скриптами. Да и ладно.
+
+!okko.tv  # paid movies site
+
+! fake movies site, and fake comments there
+!popcorntime.co
+
+! it wants to install some extention to browser
+!popcorntime-online.ch
+
+! фильмы? серьезно? там чтобы ролики-то посмотреть, опросы по рекламе замучаешься заполнять
+!rutube.ru
+
+! start.ru now is not free.
+!start.ru
+
+!sweet.tv  # платно
+
+! просмотр стал платным. Block it.
+!tvigle.ru
+!!tvigle.ru###body:style(background-image:none !important)
+!tvigle.ru##.main-description.block-description
+!!tvigle.ru##.header:style(position:static !important)
+!tvigle.ru##.layout-wrapper:style(margin-top:0px !important)
+!tvigle.ru##.poster-hover
+!tvigle.ru##.gallery-fullwidth
+!tvigle.ru##.subscribe-payment
+!tvigle.ru##h2:has-text(рекомендует)
+!tvigle.ru##.video-rating
+!tvigle.ru##.paid-content__price
+!tvigle.ru##.popup__subscribe
+!tvigle.ru##.popup-layout
+
+! tvzavr.ru - просмотр стал платным. Block it.
+!tvzavr.ru
+!!tvzavr.ru##body:style(background-image:none !important)
+!!tvzavr.ru##.footer__adult
+!!tvzavr.ru##.header:style(position:static !important)
+!!tvzavr.ru##.seo-info
+!!tvzavr.ru##.catalog__seo
+!tvzavr.ru##.filter__poster
+!mtc.tvzavr.ru
+
+! https://forums.lanik.us/viewtopic.php?f=102&t=43963
+!utorrentfilmi.ru
+
+!wink.rt.ru  # paid movies site
+
+!yandex.ru/efir?
 
 
 
@@ -268,16 +380,11 @@ gstatic.com/recaptcha/$important,domain=123serial.com|1lostfilm1080.online|1seri
 agenti-shit.com##.navcontrols
 agenti-shit.com##.b-post-favorite
 
-allocine.fr  # paid non-working French site  # from Adguard: smart.allocine.fr
-
 ||animedia.online/animedia3.gif
 
 bazr.ru##.more_btn
 bazr.ru##.ratingblock
 bazr.ru##.unit-rating
-
-! только трейлеры, без фильмов
-best-trailer.ru
 
 ! joyshow.info now is bigcinema.tv
 bigcinema.tv##.guest
@@ -736,16 +843,6 @@ hdsunduk.net##.related.section
 
 ! injook.com is paid now, tovarro.com
 
-! with || for subdomains
-||ivi.ru/logger/
-||ivi.ru/mobileapi/video/watchtime/
-!||ivi.ru/mobileapi/billing/
-||ivi.ru/mobileapi/billing/v1/purchase/
-||ivi.ru/ajax/frontlog/
-||ivi.ru/pausebanner_mts.jpg
-||tivision.ru/images/informer/$image
-ivi.ru##.service-notification
-
 ! kakafilms.ru is now kakafilm.ru
 kakafilm.ru##.frate
 
@@ -779,7 +876,7 @@ kino2018.club##.main-title
 kino2018.club$inline-script
 
 ! kino2019.club is now kino2019.co
-kino2019.co
+! now changed again
 
 kino-720.org##.sota
 
@@ -1125,9 +1222,6 @@ kinotochka.club,kinotochka.me##.btn_reg
 ||kinotochka.co/templates/tochka/images/host.png
 kinotochka.co##.bottomus-box-foot
 
-! fake, ads
-kinotut.tv
-
 ! kinotvonline.ru is offline
 !kinotvonline.ru##.header
 !kinotvonline.ru##font
@@ -1171,9 +1265,6 @@ kinovam.com###dle-content > table
 !kino-v-online.net##footer
 kino-v-online.net##.log
 kino-v-online.net##.wcom
-
-! this site behaves very strange. There are many others, without such errors.
-kinowinx.ru
 
 ||kinox.to/cs/themes/default/Header/Default.png
 
@@ -1503,12 +1594,6 @@ popcornhd.ru##.watching-now
 popcornhd.ru##.navbar-second
 !||popcornhd.ru/images/complaint.png
 
-! fake movies site, and fake comments there
-popcorntime.co
-
-! it wants to install some extention to browser
-popcorntime-online.ch
-
 posmotri-online.com##.online_link
 posmotri-online.com##.home
 
@@ -1640,9 +1725,6 @@ sserialu-net.ru##.h-menu1 > button
 ! site breaks copypaste
 sserialu-net.ru$inline-script
 
-! start.ru now is not free. Block it.
-start.ru
-
 studiohd.org##.like-more
 
 ! svoekino.biz is offline
@@ -1754,21 +1836,6 @@ turboserial.net##.my
 ||tureckiy-serial.ru/vk31.php
 tureckiy-serial.ru##.vote_line
 
-! просмотр стал платным. Block it.
-tvigle.ru
-!!tvigle.ru###body:style(background-image:none !important)
-!tvigle.ru##.main-description.block-description
-!!tvigle.ru##.header:style(position:static !important)
-!tvigle.ru##.layout-wrapper:style(margin-top:0px !important)
-!tvigle.ru##.poster-hover
-!tvigle.ru##.gallery-fullwidth
-!tvigle.ru##.subscribe-payment
-!tvigle.ru##h2:has-text(рекомендует)
-!tvigle.ru##.video-rating
-!tvigle.ru##.paid-content__price
-!tvigle.ru##.popup__subscribe
-!tvigle.ru##.popup-layout
-
 tvs.wtf##.attbox-menu
 tvs.wtf##.rate3-short
 !tvs.wtf##.frate
@@ -1779,16 +1846,6 @@ tvs.wtf##.count
 
 ||tvsok.ru/media/images/bg-tvcok.png
 !rumer.club - don't block, it's for a player
-
-! tvzavr.ru - просмотр стал платным. Block it.
-tvzavr.ru
-!!tvzavr.ru##body:style(background-image:none !important)
-!!tvzavr.ru##.footer__adult
-!!tvzavr.ru##.header:style(position:static !important)
-!!tvzavr.ru##.seo-info
-!!tvzavr.ru##.catalog__seo
-!tvzavr.ru##.filter__poster
-!mtc.tvzavr.ru
 
 intermovis.ucoz.net##.wrapper > section
 intermovis.ucoz.net##.eBlock > tbody > tr > td > .eDetails
@@ -1802,24 +1859,11 @@ kinokrad.unblockit.xyz###wrapper.bgmain:style(margin-top:0px !important)
 ! site breaks copypaste
 kinokrad.unblockit.xyz$inline-script
 
-! https://forums.lanik.us/viewtopic.php?f=102&t=43963
-utorrentfilmi.ru
-
 ! vastkino.ru is now vastkino.co
 vastkino.co##.sticky-background
 vastkino.co##.header
 
 videobalancer.net/ping
-
-! videomore.ru now is more.tv
-! site with DRM video. Block completely this site and embedded player ftom it
-videomore.ru$important
-more.tv$important
-! before that
-!videomore.ru##.channels-line
-!videomore.ru##.video-help-link
-!videomore.ru##.widget_branding-.channels
-!videomore.ru##.age-label
 
 ||video-pleer.online/9999999-kredit.png
 
