@@ -260,28 +260,30 @@ _advert/  # from EasyList
     ! from EasyList
     ##div[id^="ad_rect_"]
 ~cnn.com,~ferra.ru,~indicator.ru##[class^="ad-"]:not(html):not(body):not(article)
+    ! is in EasyList
+    !##.ad-popup-content
 ##[id^="ad-"]:not(html):not(body):not(article)
-    ###ad-101
-    ###ad-desktop-bottom
-    ###ad-desktop-bottom2
+    !###ad-101
+    !###ad-desktop-bottom
+    !###ad-desktop-bottom2
     ! is in EasyList
-    ##.ad-leaderboard
+    !##.ad-leaderboard
     ! is in EasyList
-    ##.ad-leader-plus-top
+    !##.ad-leader-plus-top
     ! is in EasyList
-    ##.ad-mpu-bottom
+    !##.ad-mpu-bottom
     ! is in EasyList
-    ##.ad-mpu-middle
+    !##.ad-mpu-middle
     ! is in EasyList
-    ##.ad-mpu-plus-top
+    !##.ad-mpu-plus-top
     ! is in EasyList
-    ##.ad-nav-ad
+    !##.ad-nav-ad
     ! is in EasyList
-    ##.ad-slot
+    !##.ad-slot
     ! is in EasyList
-    ##.ad-unit
+    !##.ad-unit
     ! is in EasyList
-    ##.ad-wide
+    !##.ad-wide
 ~blokada.org,~cnn.com,~dirteam.com##[class*="-ad-"]:not(html):not(body):not(article)
     ! from EasyList
     !##.ytp-ad-progress-list
@@ -673,6 +675,9 @@ _advert/  # from EasyList
 ! from FanBoy's
 ###uglipop_content_fixed
 ##.ui-banner-slider-container
+##.upsell
+    ! packtpub.com##.upsell
+    ! magpul.com##.upsell
 ##.vertical-banner
 ##.videoAnnouncement
 ##.vkredit
@@ -6986,6 +6991,7 @@ habr.com##.tm-notice:has-text(Только полноправные пользо
 habr.com##.post__text > blockquote:has-text(Минутка заботы от НЛО)
 habr.com###effect-sidebar
 u.tmtm.ru  # habr reflinks
+habr.com##.content-list__item:has(a[href^="https://u.habr.com/"])
 ! apps
 habr.com##.footer-block__content_apps
 habr.com##.tm-footer__apps
@@ -9134,7 +9140,6 @@ magizoo.ru##.product_item__label
 
 magpul.com###productStickyHeader
 magpul.com##.related.block
-magpul.com##.upsell
 
 ! https://pikabu.ru/story/mailru__adblock_plus_kak_skryit_reklamu_7650259
 mail.ru##.layout__column_right
