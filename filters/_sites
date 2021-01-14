@@ -1475,6 +1475,16 @@ _cookie_policy_  # from Fanboy's and AdGuard
 
 
 
+!! snowflakes
+/snow.js
+/snowflakes.min.js  # not from cdnjs.cloudflare.com/ajax/libs/snowstorm/, but similar annoyance
+/snowstorm-min.js  # cdnjs.cloudflare.com/ajax/libs/snowstorm/
+/snoweffect.js
+/snowplow/*$script  # from EasyPrivacy  # https://a.trellocdn.com/lib/snowplow/2.9.0.js
+||cdnjs.cloudflare.com/ajax/libs/snowstorm/$script,important  # from uBlock
+
+
+
 !! age notices
 /18.png
 /18.svg
@@ -4670,13 +4680,7 @@ cloudcheckr.com##.news-bar
 
 cloudenius.com###masthead
 
-! from uBlock
-||cdnjs.cloudflare.com/ajax/libs/snowstorm/$script,important
-/snowstorm-min.js
-! not from there, but similar annoyance
-/snowflakes.min.js
-! from EasyList
-||cloudflare.com/ajax/libs/cookieconsent2/
+||cloudflare.com/ajax/libs/cookieconsent2/  # from EasyList
 cloudflare.com###top-navbar:style(position:static !important)
 
 ||cloudfront.net/script.js$script,3p  # from EasyList
@@ -16431,8 +16435,6 @@ kb.zyxel.ru###launcher
 
 /_Incapsula_Resource?
 
-/snoweffect.js
-
 /optimization-perf.js  # from EasyPrivacy
 
 /tealeaf.min.js  # from EasyPrivacy
@@ -16629,10 +16631,6 @@ kb.zyxel.ru###launcher
 
 ! from AdGuard
 .com/1clkn/
-
-! from EasyPrivacy
-/snowplow/*$script
-!https://a.trellocdn.com/lib/snowplow/2.9.0.js
 
 ! from EasyPrivacy
 /pv?token=
