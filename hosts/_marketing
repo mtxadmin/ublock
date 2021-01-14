@@ -2222,8 +2222,11 @@ auto-ping.com  # from Adguard
 
 autoreg.ru  # nginx default root  # from Adguard
 
+autoteaser.net$important
 autoteaser.ru$important
 /autoteaser.
+! from Ru AdList
+~autoteaser.net##a[href*="autoteaser.net"]
 
 autotrader.com  # 404 root  # from MVPS
 
@@ -3481,9 +3484,11 @@ brandomatic.ru  # from Adguard
 
 branovate.com
 
-braun634.com$important  # adbetnet
+braun634.com$important  # adbetnet  # is in Ru AdList
 !+  cdn.braun634.com
 ! end of braun634.com
+! from Ru AdList
+##a[href*=".braun634.com/"]
 
 bravenetmedia.com
 
@@ -38767,4 +38772,7 @@ projop.dnsalias.com  # from Adguard
 seostrider.com  # ad scripts and xhrs
 
 cmyc.online  # ad xhrs
+
+autorekrb.bid  # ad scripts
+rbautorek.bid  # ad scripts
 
