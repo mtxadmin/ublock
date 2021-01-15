@@ -670,6 +670,8 @@ _advert/  # from EasyList
 ! is in AdGuard
 ##.top-banners
 ##.top-banner-container
+###top_page_banner
+##.top_page_banner
 ! from FanBoy's
 ###uglipop_overlay
 ! from FanBoy's
@@ -1010,7 +1012,7 @@ _pagespeed_beacon?  # from AdGuard
 ##.article-votes
 ###button_mnenie
 ##.democracy
-##.er
+~medium.com##.er
 ##.error_report_block
 ##.extravote
 ##.fa-spin
@@ -1312,7 +1314,7 @@ _pagespeed_beacon?  # from AdGuard
 ##.to-up
 ###toup
 ##.toup
-~obi.ru##.up
+~medium.com,~obi.ru##.up
 ###up
 ##.up_arr
 ##.uparrow
@@ -5997,6 +5999,10 @@ experts-exchange.com##.content.nolinks
 experts-exchange.com###issuesMatter
 experts-exchange.com###valueProp
 
+||expomap.ru/static/client/img/expo_default.png
+expomap.ru##.top_page_banner
+expomap.ru##.h-booking
+expomap.ru##p.text-indent-1-5em:has-text(Booking.com)
 expomap.ru##.fa-lightbulb-o
 
 extremetube.com##.text-link
@@ -6052,6 +6058,7 @@ fandom.com##.WikiaPage:style(padding-top:0px !important)
 fandom.com##.WikiaSiteWrapper:style(padding-top:0px !important)
 fandom.com##.WikiaSiteWrapper:style(margin-top:0px !important)
 fandom.com##body:style(padding-bottom:0px !important)
+fandom.com##.wds-community-header__wordmark
 fandom.com,wikia.com###mixed-content-footer
 fandom.com,wikia.com##.WikiaMainContent:style(width:auto !important)
 ! disable exception from EasyList
@@ -6064,13 +6071,10 @@ fandom.com,wikia.com##body:style(background:none !important)
 fandom.com,wikia.com###Scroller
 fandom.com,wikia.com###ScrollerText
 fandom.com,wikia.com###Contenter
-! from Peter Lowe's hosts file
-athena-ads.wikia.com
-! from Peter Lowe's hosts file
-wikia-ads.wikia.com
 ! other
-beacon.wikia-services.com
-!https://beacon.wikia-services.com/__track/
+athena-ads.wikia.com  # from Peter Lowe's hosts file
+beacon.wikia-services.com  #https://beacon.wikia-services.com/__track/
+wikia-ads.wikia.com  # from Peter Lowe's hosts file
 
 fanfics.me##.topbar3:style(position:static !important)
 fanfics.me###banner_read_top_728x90
@@ -6836,6 +6840,8 @@ gq.ru##div[class^=LogoWrapper]
 ! other
 
 grafana.com##.d-header:style(position:static !important)
+grafana.com##.page-submenu:style(position:static !important)
+grafana.com##.mega-menu__logo
 
 grand-oxota.ru###ja-topsl
 ||grand-oxota.ru/images/*.gif$image
@@ -9392,6 +9398,7 @@ medinfo.ua$3p
 ||medium.com^*/performance/  # is in EasyPrivacy
 ||lightstep.medium.systems^*/reports  # is in EasyPrivacy
 medium.com##.js-stickyFooter
+medium.com###lo-highlight-meter-1-highlight-box
 
 medlib.net##.interesno
 medlib.net##.copy2
@@ -10807,6 +10814,8 @@ parilka.by##a[href="#wrapheader"]
 
 partitionwizard.com##.article-fixed-nav
 partitionwizard.com##.article-buy-btn
+partitionwizard.com##.article-summary
+partitionwizard.com##.article-author-infos
 
 partnerkin.com##.sdv_item
 partnerkin.com##.logo-block
@@ -16938,4 +16947,11 @@ bite-byte.ru###custom-header
 bite-byte.ru###wpd-post-rating
 
 vertabelo.com##.site-footer_signet
+
+tinkoff.ru$3p  # ad scripts (maybe credits)
+
+||cartridgecollectors.org/images/house/join.png
+cartridgecollectors.org##.house-topic-above-post-stream
+
+helpdeskgeek.com##.scroll-nav:style(position:static !important)
 
