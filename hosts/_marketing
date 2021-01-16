@@ -116,6 +116,43 @@
 
 1sexxx.com  # from Adguard
 
+/?pu=$3p,script,important  # from Adguard, modified. Original rule as I can remember: .biz/?pu=$script,3p
+! block of rules in Ru AdList:
+||biz/?pu=$third-party,script
+||com/?pu=$third-party,script
+||date/?pu=$third-party,script
+||info/?pu=$third-party,script
+||name/?pu=$third-party,script
+||site/?pu=$third-party,script
+||vip/?pu=$third-party,script
+||work/?pu=$third-party,script
+! some of spotted domains (just for example. There are many of them)
+1shownews.com  # ad scripts (/?pu=)
+basemedia.me  # ad scripts (?pu=)
+code-zp1.com$important  # ad scripts (/?pu=) and empty root  # is in Ru AdList
+easybusy.biz  # ad scripts (/?pu=)  # is in Adguard: .biz/?pu=$script,3p
+easyfeeed.com$important  # ad scripts (/?pu=) and no root  # is in 3 lists
+fastklick.biz  # ad scripts (/?pu=)
+goodcode.me$important  # ad scripts (pu=) and empty root
+llllll.site  # ad scripts (/?pu=)
+lodder7.biz$important  # ad scripts (pu=) and empty root
+mediapoint.biz$important  # ad scripts (see /?pu=)  # is in Ru AdList
+n1gopush.com  # ad scripts (/pu=)
+n1pusher.com  # ad scripts (/pu=)
+n1serch.biz$important  # ad scripts (pu=)?  # empty root
+n1topserch.com  # ad scripts (/?pu=)
+newmedia.live$important  # ad scripts (pu=)  # is in Adguard and Ru AdList
+newporta.pro  # ad scripts (/?pu=)
+newsgrabber.me$important  # ad scripts (/pu=)  # is in Adguard
+read2day.me  # ad scripts (?pu=)
+rootspace.biz  # ad scripts (/?pu=)
+terrout9.biz  # ad scripts (/?pu=)
+timesporn.shop  # ad scripts (pu=)
+vauu.net  # ad scripts (pu=)
+watchnews7.com  # ad scripts (/?pu=) and empty root
+zpcode1.com$important  # ad scripts (pu=)  # is in Ru AdList
+zpcode2.com  # ad scripts (/?pu=)
+
 1stbest.info  # from Energized Blu
 
 1studio.net  # from Energized Blu
@@ -2607,8 +2644,6 @@ basebanner.com
 !+      saymedia.comexchange.basebanner.com
 ! end of basebanner
 
-basemedia.me  # ad scripts (?pu=)
-
 basicattentiontoken.org  # "Blockchain-based digital advertising"
 
 basis.net  # "Capture all campaign notes and optimizations across your entire advertising suite"
@@ -4449,8 +4484,6 @@ codefund.io  # from Adguard
 
 coderturk.com  # from Adguard
 
-code-zp1.com$important  # ad scripts (/?pu=) and empty root  # is in Ru AdList
-
 cofounder.de  # aichat
 
 cognism.com  # "Lead Generation"
@@ -6179,8 +6212,6 @@ easycouponsaccess.com  # ad redirects
 easy-dating.org  # from MVPS
 
 easydownload4you.com  # sedo AS47846
-
-easyfeeed.com$important  # ad scripts (/?pu=) and no root  # is in 3 lists
 
 easyflirt-partners.biz  # from Adguard
 
@@ -8266,8 +8297,6 @@ goo4anywhere.com  # from Adguard
 goodads.de  # from Adguard
 
 goodadvert.ru  # from Adguard
-
-goodcode.me$important  # ad scripts (pu=) and empty root
 
 goodoo.ru  # from Ru AdList
 
@@ -12115,8 +12144,6 @@ lockview.cn  # from Adguard
 
 locotrack.net  # from Adguard
 
-lodder7.biz$important  # ad scripts (pu=) and empty root
-
 logaholic.com  # from Adguard
 
 logbor.com  # from Adguard
@@ -13045,8 +13072,6 @@ mediapeartree.com  # from Adguard
 mediaplan.ru  # from Adguard
 
 ! see mediaplex.com in _marketing_valueclick
-
-mediapoint.biz$important  # ad scripts (see /?pu=)  # is in RU AdList
 
 mediaportal.ru  # from Adguard
 
@@ -14177,8 +14202,6 @@ vast.videocdn.tv  # from Ru AdList
 
 n1internet.com  # from Dan Pollock's hosts file
 
-n1serch.biz$important  # ad scripts (pu=)?  # empty root
-
 naayna.com  # from Adguard
 
 nabaza.com  # from Adguard
@@ -14495,8 +14518,6 @@ newmayads.com  # from Adguard
 
 newmed24.ru  # from Ru AdList
 
-newmedia.live$important  # ad scripts (pu=)  # is in AdGuard and Ru AdList
-
 newmonads.com  # from Adguard
 
 newnovads.com  # from Adguard
@@ -14550,8 +14571,6 @@ news-finances.com  # from Dan Pollock's hosts file
 newsforall.biz
 
 newsfresh.pro
-
-newsgrabber.me$important  # ad scripts (/pu=)  # is in AdGuard
 
 news-host.pw  #payclick-com.news-host.pw
 !+  adv.news-host.pw
@@ -17863,8 +17882,6 @@ reactads.com  # from MVPS
 reacten.com  # from Ru AdList
 
 reactful.com  # from Adguard
-
-read2day.me  # ad scripts (?pu=)
 
 readertracking.com  # from Adguard
 
@@ -28071,8 +28088,6 @@ zozolilla.com  # from Adguard
 
 zozoter.ru  # from Adguard
 
-zpcode1.com$important  # ad scripts (pu=)  # is in RU AdList
-
 zpppstop.ru  # from Ru AdList
 
 zprk.io  # from Adguard
@@ -28140,13 +28155,6 @@ xn----dtbfdqj0afdmri.xn--p1ai
 xn--v5b8a3c.com  # (some hieroglyphs here)  # redirect to tkbo.com
 
 !! todo
-! from AdGuard,modified
-/?pu=$3p
-n1gopush.com  # ad scripts (/pu=)
-n1pusher.com  # ad scripts (/pu=)
-terrout9.biz  # ad scripts (/?pu=)
-watchnews7.com  # ad scripts (/?pu=) and empty root
-
 swymprem.azureedge.net
 /swym-shopify.js  #swymprem.azureedge.net/code/swym-shopify.js
 
@@ -28178,10 +28186,6 @@ nehbcn.blogspot.com
 
 livetracker.rfe.pangea-cms.com  # ad scripts
 
-timesporn.shop  # ad scripts (pu=)
-
-vauu.net  # ad scripts (pu=)
-
 s2w3.space  # https://hls-c1.s2w3.space/ping
 
 xn--xhq9mt12cf5v.ren  # ad scripts (Chinese)
@@ -28190,14 +28194,7 @@ xn--xhq9mt12cf5v.ren  # ad scripts (Chinese)
 
 /feracommerce/*
 
-# ad scripts  # is in EasyPrivacy
-||svc.dynamics.com/t/w$3p
-
-n1topserch.com  # ad scripts (/?pu=)
-
-newporta.pro  # ad scripts (/?pu=)
-
-easybusy.biz  # ad scripts (/?pu=)  # is in AdGuard: .biz/?pu=$script,3p
+||svc.dynamics.com/t/w$3p  # ad scripts  # is in EasyPrivacy
 
 ! from Ru AdList
 ##[href*="driftawayforfun.com"]
@@ -28222,17 +28219,9 @@ easybusy.biz  # ad scripts (/?pu=)  # is in AdGuard: .biz/?pu=$script,3p
 /^https?:\/\/[a-z0-9]{5,14}\.(com|bid|online|top|club)\/[0-9a-f]{32}\/invoke.js$/$script,3p  # from AdGuard
 jelqr4dqeep7.com  # ad scripts  # AdGuard rule [a-z0-9]{5,14}\.(com|bid|online|top|club)\/[0-9a-f]{32}\/invoke.js
 
-llllll.site  # ad scripts (/?pu=)
-
 ds-aksb-a.akamaihd.net  # ad scripts  # is in MVPS HOSTS, AdGuard and EasyPrivacy
 
 rainmaker-digitalbrandsinc.netdna-ssl.com    # ad scripts  #https://rainmaker-digitalbrandsinc.netdna-ssl.com/javascripts/rainmaker/rm.js
-
-fastklick.biz  # ad scripts (/?pu=)
-
-zpcode2.com  # ad scripts (/?pu=)
-
-rootspace.biz  # ad scripts (/?pu=)
 
 iadvize.com  # from MobileAdTrackers
 igetget.com  # from MobileAdTrackers
@@ -30388,8 +30377,6 @@ genesis-offers.com  # favorit-network.com
 1rx.io
 
 1seo.com
-
-1shownews.com  # ad scripts (/?pu=)
 
 1stat.ru$third-party
 
