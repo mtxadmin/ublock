@@ -1764,6 +1764,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /mir.webp
 /mir2.png
 /pay_icons/*
+/pay_icons.png
 /payment.png
 /payment_icons/*
 /payment_icons.png
@@ -17030,4 +17031,49 @@ adman.in.gr  # from Dan Pollock's hosts file
 
 /browser-update-toolbar/*
 /browser-update-toolbar.js
+/outdatedbrowser/*
+/outdatedbrowser.min.js
 
+gunsandammo.com##.popout
+
+||tempgun.ru/upload/CNext/e88/e8823066d4a44af44082b07060462467.svg  # logo
+tempgun.ru##.brand
+tempgun.ru##.subscribe_wrap
+tempgun.ru##.banner
+! stickers
+tempgun.ru##.like_icons
+tempgun.ru##.stickers
+! list compactization:
+||tempgun.ru/*/no_photo_medium.png
+tempgun.ru##.image_wrapper_block > a:has(img[src*="/no_photo"])
+tempgun.ru##.image_wrapper_block:style(margin-top:0px !important; margin-bottom:0px !important)
+tempgun.ru##.image_wrapper_block:style(height:auto !important)
+tempgun.ru##.item.catalog_item_wrapp:style(height:auto !important)
+tempgun.ru##.catalog_item:style(padding-top:0px !important; padding-bottom:0px !important)
+! removing left menu items which are duplicated in the catalog
+tempgun.ru##.catalog_block.menu_top_block
+! removing buttons in the list
+!tempgun.ru##.catalog_item main_item_wrapper > div > .footer_button
+! removing duplicate-by-default labels
+tempgun.ru##.sa_block:has(.item-stock:has-text(Есть в наличии))
+! other
+
+||ohotnik-kolomna.ru/img/grass.png
+||ohotnik-kolomna.ru/img/hunter.png
+||ohotnik-kolomna.ru/img/krol.png
+ohotnik-kolomna.ru##.header
+
+huntworld.ru##.preview-product-href.rating
+huntworld.ru##.item-card > .inner-wrap > .controls
+huntworld.ru##.last-block > .commands
+huntworld.ru##.available-block:style(display:block !important)
+huntworld.ru##.last-block > .available-block
+huntworld.ru##.card-container:style(padding-top:0px !important; padding-bottom:0px !important)
+huntworld.ru##.item-card::before:style(box-shadow:none !important)
+huntworld.ru##.item-card:style(padding-top:0px !important; padding-bottom:0px !important; height:auto !important)
+huntworld.ru##.pic:style(padding-top:0px !important; padding-bottom:0px !important; height:auto !important)
+huntworld.ru##.card-container:style(height:auto !important)
+huntworld.ru##.text-error
+huntworld.ru##.cart-picto
+
+gosmonitor.ru$important  # ad scripts  # "Рейтинг государственных сайтов"
