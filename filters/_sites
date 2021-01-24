@@ -17297,3 +17297,10 @@ imgdrive.net###menu
 tizer.io##.t-popup
 tizer.io##.t228__positionfixed
 tizer.io##.t-sticky_going.tn-atom__sticky-wrapper:style(position:static !important)
+
+! is in uBlock filters
+picturelol.com##+js(abort-on-property-read, ExoLoader)
+/^https?:\/\/picturelol\.com\/[a-z\d]+\.(js)$/$domain=picturelol.com  # is in Adguard
+! is in uBlock filters
+picturelol.com##+js(window.open-defuser)
+imagetwist.com$script
