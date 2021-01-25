@@ -177,7 +177,6 @@ _advert/  # from EasyList
 /lazy-loader-banner/*
 /mads/gma
 /main-banner/*
-/matomo.js  # from EasyPrivacy
 /media/adv/*$important
 /media/upload_adv/*$image
 /mobile-banner/*
@@ -477,6 +476,8 @@ _advert/  # from EasyList
 ##.adTitle
 ##.AdTitle
 ###adTop
+! is in EasyList
+##.ad-top
 ###adultCoverWarning
 ! is in Ru AdList: ~mail.ru,ru,~sportmail.ru,ua##.adv
 ##.adv
@@ -808,17 +809,32 @@ _advert/  # from EasyList
     securitylab.ru##.call-to-action
 ~google.com##[class*="-cta-"]:not(html):not(body):not(article)
 ##[id*="-cta-"]:not(html):not(body):not(article)
+##[class^="cta-"]:not(html):not(body):not(article)
+##[id^="-cta-"]:not(html):not(body):not(article)
+    ! ###cta-container
+    ! mindmajix.com##.cta-block
+    ! steelsafeshop.ru##.cta-phone
+    ! syloe.com##.cta-img
+    ! varonis.com##.cta-block
+##[class$="-cta"]:not(html):not(body):not(article)
+##[id$="-cta"]:not(html):not(body):not(article)
+    ! ##.guide-cta
+    ! ##.join-cta
+    ! ##.learn-more-cta
+    ! ##.top-cta
+    ! autotonkosti.ru###form-cta
+    ! coursehero.com##.out-of-views-cta
+    ! eginnovations.com##.right-panel-cta
+    ! eginnovations.com##.live-demo-cta
+    ! gfycat.com##.pro-cta
+    ! linkedin.com##.sub-nav-cta
 ##.c2018Q1CtaSolution
 ##.cta
 ##.ctaButton
-###cta-container
 ##.ctaSolutionSticky
 ##.ctaSolutionStickyWrapper
-##.guide-cta
 ##.headerCta-Lo
 ###hellobar
-##.learn-more-cta
-##.top-cta
 
 
 
@@ -951,7 +967,6 @@ _loghuman=  # from EasyPrivacy
 _pagespeed_beacon?  # from AdGuard
 /pageviews/*$domain=~stats.wikimedia.org|~tools.wmflabs.org  # is in EasyPrivacy
 /parking-crew.js
-/piwik.js$important
 /ping/*$xmlhttprequest
 /pixel/*
 /pixel.gif
@@ -1560,7 +1575,6 @@ _cookie_policy_  # from Fanboy's and AdGuard
 ###hello-pop-up
 ##.hello-pop-up
 ##.hello-pop-up--not-top
-##.join-cta
 ##.join-footer
 ###join-login_alt-modal
 ##.join-now-block
@@ -2666,6 +2680,7 @@ st-1.1fichier.com #[Piwik.Analytics]
 4range.ru##.ty-cr-phone-number-link
 4range.ru##.cm-dialog-opener
 
+||4sysops.com/wp-admin/admin-ajax.php?action=stopbadbots_grava_fingerprint
 4sysops.com##.pagination-sticky
 4sysops.com##.kleo-quick-contact-wrapper
 4sysops.com##b > [href^="https://4sysops.com/archives/4sysops-member-points-and-competition"]
@@ -2681,7 +2696,6 @@ st-1.1fichier.com #[Piwik.Analytics]
 4sysops.com###newer-nav
 4sysops.com###older-nav
 4sysops.com##.sticky-wrapper
-4sysops.com##.wpulike:has-text(/^0$/)
 4sysops.com##.abh_description.note.description
 4sysops.com##b > [href^="https://4sysops.com/join/"]
 4sysops.com##b > [href^="https://4sysops.com/forums/"]
@@ -2689,6 +2703,7 @@ st-1.1fichier.com #[Piwik.Analytics]
 4sysops.com##[href^="https://4sysops.com/write-for-4sysops//"]
 4sysops.com##p:has-text(If you have questions, please post a comment below.)
 4sysops.com##.wpulike
+!4sysops.com##.wpulike:has-text(/^0$/)
 4sysops.com##.fitvidsignore
 ! remove empty footer
 4sysops.com###footer
@@ -2843,6 +2858,8 @@ adamtheautomator.com##.floating-active.floating-header
 adamtheautomator.com##blockquote:has-text(Check out my)
 adamtheautomator.com##.offline-indicator
 adamtheautomator.com##body:style(padding-bottom:0px !important)
+adamtheautomator.com##.post-header__image
+||cloudinary.com/*/mvp.png
 
 addictivetips.com##.oui-modal
 addictivetips.com###at_popup_modal
@@ -3583,7 +3600,6 @@ autotonkosti.ru##.sub-title
 autotonkosti.ru##.butts
 autotonkosti.ru##.submitted-user
 autotonkosti.ru##.progress-amt
-autotonkosti.ru###form-cta
 
 ! from Fanboy's
 ||verify.authorize.net^$third-party
@@ -4921,7 +4937,6 @@ coursehero.com##.bdp_viewDoc_action
 ||coursehero.com/v1/data-tracking
 ! coursehero.com blocks viewing for not logged in users. Let's block that site too.
 coursehero.com
-    !coursehero.com##.out-of-views-cta
     !coursehero.com##.blocker-wrapper
     !||coursehero.com/doc-asset/blur/*$image
 
@@ -5764,6 +5779,9 @@ edugeek.net###notices
 !edugeek.net###newsTicker4
 
 edx.org###enroll-type-section
+edx.org##.sitewide-banner
+edx.org###off-canvas-menu
+edx.org##.donors-post-grid
 
 ! sticky panel
 eff.org##.faq-toc
@@ -5772,8 +5790,6 @@ eff.org##.faq-toc
 efsol.ru##.b-logo__image
 
 eginnovations.com##.box_header_style
-eginnovations.com##.right-panel-cta
-eginnovations.com##.live-demo-cta
 
 egrpzhkh.ru##.PhonePanelSticked
 
@@ -6689,8 +6705,6 @@ gethuman.com##.bar-share
 getstream.io##.str-topbar:style(position:static !important)
 
 gfaq.ru##td:nth-of-type(2) > table:nth-of-type(1) > tbody > tr:nth-of-type(1) > td
-
-gfycat.com##.pro-cta
 
 ! money for nothing
 ggsel.com$3p
@@ -8955,7 +8969,6 @@ lingust.ru###header-graphic
 link2sd.co###regular-header
 
 linkedin.com##.sign-in-card
-linkedin.com##.sub-nav-cta
 ||linkedin.com/li/track
 ! linkedin scripts on third sites
 licdn.com$domain=~linkedin.com
@@ -11515,8 +11528,7 @@ polar-bags.ru##.header-wrap:style(position:static !important)
 polashop.ru##.assess_site
 polashop.ru##.js-ga-assess_site
 
-! from MVPS
-statistik.polizei-beratung.de #[Piwik.Analytics]
+statistik.polizei-beratung.de  #[Piwik.Analytics]  # from MVPS
 
 polov.ru##.skidki_link
 polov.ru##.compare_link
@@ -13696,7 +13708,6 @@ steelsafeshop.ru##.switch_open
 steelsafeshop.ru##.scrollSidebar
 steelsafeshop.ru##.helper-pickup-wrapper
 steelsafeshop.ru##.orange_submit
-steelsafeshop.ru##.cta-phone
 steelsafeshop.ru##.phone
 
 ||stepbystep.spb.ru/reting_stat.php?  # from Adguard
@@ -13922,7 +13933,6 @@ syloe.com##.mf-modal-iframe
 syloe.com##.mf-modal-overlay
 syloe.com##.site-header
 syloe.com###masthead
-syloe.com##.cta-img
 syloe.com##.wp-caption-text
 ||syloe.com/*/Zabbix-logo-monitoring-*.png
 
@@ -16517,6 +16527,7 @@ zabbix.com##.main-title:style(margin-bottom:0px !important)
 zabbix.com##.module-title:style(margin-bottom:0px !important)
 zabbix.com##.canvas-widget:style(margin-bottom:0px !important)
 zabbix.com##h1:style(margin-bottom:0px !important)
+zabbix.com##.scrolltofixed-filler
 ! TOCs are not good when displaying wide tables
 zabbix.com##.toc
 zabbix.com##.dw__toc
@@ -17268,7 +17279,6 @@ dtln.ru##.article-subscribe
 ||mindmajix.com/*/jquery.exit-modal.js
 mindmajix.com###exitpop
 mindmajix.com##.modal-backdrop
-mindmajix.com##.cta-block
 mindmajix.com##.footer-sticky
 
 rexegg.com##.rightcolumn
@@ -17308,3 +17318,37 @@ picturelol.com##+js(window.open-defuser)
 imagetwist.com$script
 
 /affiliates/*
+
+||examgood.com/macfee.aspx$image
+||examgood.com/*/kcompay.gif
+||examgood.com/*/pay_western.gif
+examgood.com##[href="/promotion.asp"]
+
+passquestion.com###lz_overlay_preview
+
+trinket.io###interest-email-form
+
+databasejournal.com##.sprite-logo-left
+
+programiz.com##.toc-trigger:style(position:static !important)
+programiz.com##.notice-bar-top
+
+kdelo.ru##noindex
+kdelo.ru##.defaultBlock > blockquote
+
+varonis.com##.anchor-up
+
+/tbw/pixels/*  # is in EasyPrivacy
+
+clancy.spiceworks.com  # is in EasyPrivacy
+
+itechguides.com##.mediad
+
+sqlshack.com##.social-icons-search
+sqlshack.com##.abh_box
+
+/busting/*/gtm-  # /wp-content/cache/busting/1/gtm-ad...  # is in EasyPrivacy
+
+/geo.php?  # is in EasyPrivacy
+
+bestmonitoringtools.com##.ast-custom-html
