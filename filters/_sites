@@ -809,17 +809,32 @@ _advert/  # from EasyList
     securitylab.ru##.call-to-action
 ~google.com##[class*="-cta-"]:not(html):not(body):not(article)
 ##[id*="-cta-"]:not(html):not(body):not(article)
+##[class^="cta-"]:not(html):not(body):not(article)
+##[id^="-cta-"]:not(html):not(body):not(article)
+    ! ###cta-container
+    ! mindmajix.com##.cta-block
+    ! steelsafeshop.ru##.cta-phone
+    ! syloe.com##.cta-img
+    ! varonis.com##.cta-block
+##[class$="-cta"]:not(html):not(body):not(article)
+##[id$="-cta"]:not(html):not(body):not(article)
+    ! ##.guide-cta
+    ! ##.join-cta
+    ! ##.learn-more-cta
+    ! ##.top-cta
+    ! autotonkosti.ru###form-cta
+    ! coursehero.com##.out-of-views-cta
+    ! eginnovations.com##.right-panel-cta
+    ! eginnovations.com##.live-demo-cta
+    ! gfycat.com##.pro-cta
+    ! linkedin.com##.sub-nav-cta
 ##.c2018Q1CtaSolution
 ##.cta
 ##.ctaButton
-###cta-container
 ##.ctaSolutionSticky
 ##.ctaSolutionStickyWrapper
-##.guide-cta
 ##.headerCta-Lo
 ###hellobar
-##.learn-more-cta
-##.top-cta
 
 
 
@@ -1560,7 +1575,6 @@ _cookie_policy_  # from Fanboy's and AdGuard
 ###hello-pop-up
 ##.hello-pop-up
 ##.hello-pop-up--not-top
-##.join-cta
 ##.join-footer
 ###join-login_alt-modal
 ##.join-now-block
@@ -3586,7 +3600,6 @@ autotonkosti.ru##.sub-title
 autotonkosti.ru##.butts
 autotonkosti.ru##.submitted-user
 autotonkosti.ru##.progress-amt
-autotonkosti.ru###form-cta
 
 ! from Fanboy's
 ||verify.authorize.net^$third-party
@@ -4924,7 +4937,6 @@ coursehero.com##.bdp_viewDoc_action
 ||coursehero.com/v1/data-tracking
 ! coursehero.com blocks viewing for not logged in users. Let's block that site too.
 coursehero.com
-    !coursehero.com##.out-of-views-cta
     !coursehero.com##.blocker-wrapper
     !||coursehero.com/doc-asset/blur/*$image
 
@@ -5778,8 +5790,6 @@ eff.org##.faq-toc
 efsol.ru##.b-logo__image
 
 eginnovations.com##.box_header_style
-eginnovations.com##.right-panel-cta
-eginnovations.com##.live-demo-cta
 
 egrpzhkh.ru##.PhonePanelSticked
 
@@ -6695,8 +6705,6 @@ gethuman.com##.bar-share
 getstream.io##.str-topbar:style(position:static !important)
 
 gfaq.ru##td:nth-of-type(2) > table:nth-of-type(1) > tbody > tr:nth-of-type(1) > td
-
-gfycat.com##.pro-cta
 
 ! money for nothing
 ggsel.com$3p
@@ -8961,7 +8969,6 @@ lingust.ru###header-graphic
 link2sd.co###regular-header
 
 linkedin.com##.sign-in-card
-linkedin.com##.sub-nav-cta
 ||linkedin.com/li/track
 ! linkedin scripts on third sites
 licdn.com$domain=~linkedin.com
@@ -13701,7 +13708,6 @@ steelsafeshop.ru##.switch_open
 steelsafeshop.ru##.scrollSidebar
 steelsafeshop.ru##.helper-pickup-wrapper
 steelsafeshop.ru##.orange_submit
-steelsafeshop.ru##.cta-phone
 steelsafeshop.ru##.phone
 
 ||stepbystep.spb.ru/reting_stat.php?  # from Adguard
@@ -13927,7 +13933,6 @@ syloe.com##.mf-modal-iframe
 syloe.com##.mf-modal-overlay
 syloe.com##.site-header
 syloe.com###masthead
-syloe.com##.cta-img
 syloe.com##.wp-caption-text
 ||syloe.com/*/Zabbix-logo-monitoring-*.png
 
@@ -17273,7 +17278,6 @@ dtln.ru##.article-subscribe
 ||mindmajix.com/*/jquery.exit-modal.js
 mindmajix.com###exitpop
 mindmajix.com##.modal-backdrop
-mindmajix.com##.cta-block
 mindmajix.com##.footer-sticky
 
 rexegg.com##.rightcolumn
