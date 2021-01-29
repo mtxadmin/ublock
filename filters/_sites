@@ -5280,6 +5280,7 @@ disqus.com###thread-share-bar
 disqus.com##.comment__share
 ||disqusservice.com/iframe/fallback/$subdocument
 /disqus-count$script
+||disqus.com/count-data.js
 
 distrowatch.com##a[href="./"]
 
@@ -6756,8 +6757,7 @@ gismeteo.*##.navteaser__info
 gismeteo.*##.js_sticky.subnav:style(position:static !important)
 gismeteo.*##.media_frame
 
-! from EasyPrivacy
-||github.com/_private/browser/stats
+||github.com/_private/browser/stats$important  # from EasyPrivacy  # is in Adguard
 ||github.io/aplacer$third-party  # from RU AdList
 ! github pages of big projects open very slowly. So, let's make an exclusion (yes..). There will be no banners here, I hope.
 @@||github.com^$generichide
@@ -6783,9 +6783,9 @@ partnercoll.github.io$important  # ad scripts  # is in Ru AdList and uBlock filt
 weblion777.github.io$important  # ad scripts  # is in Ru AdList and uBlock filters
 wp-r.github.io$important  # ad scripts  # is in AdGuard
 collector.githubapp.com  # is in MVPS HOSTS, AdGuard, EasyPrivacy
+||buttons.github.io/buttons.js$3p  # is in Fanboy's
 
-! is in Fanboy's
-||buttons.github.io/buttons.js$3p
+github.community##.d-header-wrap:style(position:static !important)
 
 ||giveawayoftheday.com/ticker/  # from Adguard
 giveawayoftheday.com##.lengthy_giveaway
@@ -7148,6 +7148,8 @@ habr.com##.post__text > blockquote:has-text(Минутка заботы от Н�
 habr.com###effect-sidebar
 u.tmtm.ru  # habr reflinks
 habr.com##.content-list__item:has(a[href^="https://u.habr.com/"])
+habr.com###widget
+habr.com###companies_rating
 ! apps
 habr.com##.footer-block__content_apps
 habr.com##.tm-footer__apps
@@ -7165,6 +7167,8 @@ habr.com,toster.ru##.question__invate-expert
 special.habrahabr.ru##.on-top
 habr.com##.tm-page-article__counters-panel_sticky:style(position:static !important)
 habr.com,~qna.habr.com##.layout__navbar:style(position:static !important)
+||hsto.org/getpro/neuro-habr/
+||hsto.org/*/neuro-habr.js
 
 hackernoon.com##.u-tintBgColor:style(background-color:white !important)
 hackernoon.com##.u-fixed:style(position:static !important)
@@ -7453,6 +7457,7 @@ hunting.ru##a[href*=".fhserv.ru"]:not([href^="https://image.fhserv.ru"])
 /^https?:\/\/(?!image\.)([^.]+\.)+?fhserv\.ru/$domain=fishingsib.ru|hunting.ru
 ! https://djfz2p.fhserv.ru/files/9a04ce820d08bd1416c923387b7bbf6d.gif
 ||hunting.ru/*/smilies.hunting/$image
+hunting.ru##.left-panel
 
 huntportal.ru##.logo-new
 huntportal.ru##.scrolled:style(position:static !important)
@@ -11350,6 +11355,8 @@ pikabu.ru##.stories-feed__container > section:has-text(Создать свою �
 !
 ! naggy avatars
 ||pikabu.ru/avatars/1330/l1330554-269315424.png
+||pikabu.ru/avatars/1559/m1559641-41185554.png
+||pikabu.ru/avatars/1559/x1559641-41185554.png
 ||pikabu.ru/avatars/2351/l2351922-85726685.png
 ||pikabu.ru/avatars/2376/l2376127-454198417.png
 ||pikabu.ru/avatars/2468/l2468862-2050693708.png
@@ -11368,6 +11375,8 @@ pikabu.ru##.stories-feed__container > section:has-text(Создать свою �
 pikabu.ru##.pik-virus
 ! is in Ru AdList
 pikabu.ru###branding_ad_comment
+! ads in posts - Telegram channels
+##p:has(a[href*="https://t.me"])
 
 piluli.ru##.icon
 piluli.ru###b_footer_mobile_app.download-app
@@ -16552,6 +16561,7 @@ zabbix.com##.module-title:style(margin-bottom:0px !important)
 zabbix.com##.canvas-widget:style(margin-bottom:0px !important)
 zabbix.com##h1:style(margin-bottom:0px !important)
 zabbix.com##.scrolltofixed-filler
+zabbix.com##.sidebar:style(position:static !important)
 ! TOCs are not good when displaying wide tables
 zabbix.com##.toc
 zabbix.com##.dw__toc
@@ -16570,6 +16580,7 @@ zabbix.com##.b-post__footer
 zabbix.com##.b-post:style(margin-top:8px !important)
 zabbix.com###breadcrumbs:style(padding-top:4px !important; padding-bottom:0px !important;)
 zabbix.com##.h-margin-top-xl:style(margin-top:8px !important)
+zabbix.com##.select_container
 
 zabbixzone.com###about
 
@@ -17425,3 +17436,38 @@ xn--80avc2av3a.xn--p1ai##.header
 pine64.org##.author_avatar
 pine64.org##.postbit_website
 pine64.org##.onoffnew
+
+||stich.su/basic_blocker.js
+stich.su##.left_last_look
+stich.su##.pay-icons
+stich.su##.bottom_quality
+||stich.su/*/ural_quality.png
+stich.su##.top_gift_card_link
+stich.su##.top_phone_list
+stich.su##.top_bonus_link
+
+investprofit.info##.widget_mailpoet_form
+investprofit.info##.button-jetPack
+investprofit.info##.subhide
+investprofit.info##.recommended-article
+
+anekdot.ru##.nav-line:style(position:static !important)
+
+zx-adnet.com  # ad scripts  # ad network
+
+rezbaderevo.ru###site-header
+||rezbaderevo.ru/*/header-back.png
+||rezbaderevo.ru/*/place.png
+rezbaderevo.ru##.inline.links
+rezbaderevo.ru##.forum-jump-links
+rezbaderevo.ru##.thanks
+rezbaderevo.ru###footer-wrapper
+
+workinjapan.today##.job-badge
+workinjapan.today##.header-nav__list
+workinjapan.today##.categories-nav__list:style(position:static !important)
+
+bobcares.com##.banner-section
+bobcares.com##.et-l--header
+bobcares.com##.tnp
+bobcares.com##.custom-h2-p1-blocks
