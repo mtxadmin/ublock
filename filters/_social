@@ -610,8 +610,6 @@ ads.linkedin.com
 !
 ~linkedin.com##[class*="linkedin"]:not(html):not(body):not(article)
 ~linkedin.com##[id*="linkedin"]:not(html):not(body):not(article)
-! is in Fanboy's
-##[title^="Share on LinkedIn"]
 ! is in AdGuard
 ##a[href^="http://www.linkedin.com/shareArticle"]
 ! is in AdGuard
@@ -727,10 +725,6 @@ smartlock.google.com$3p
 ##a[href^="https://plus.google.com/share"]
 ! from Fanboy's
 ##a[title="Google+"]
-! from Fanboy's
-##[title^="Share on Google+"]
-! from Fanboy's
-##a[title^="Share on Google"]
 ! from Fanboy's
 ##a[title="Google +"]
 ##.fa-google-plus
@@ -916,6 +910,14 @@ smartlock.google.com$3p
     !##a[title="Share on Facebook"]
     ! from Fanboy's
     !##[title^="Share on Facebook"]
+    ! is in Adguard
+    !##a[title="Share on Facebook"]
+    ! is in Fanboy's
+    !##[title^="Share on LinkedIn"]
+    ! from Fanboy's
+    !##[title^="Share on Google+"]
+    ! from Fanboy's
+    !##a[title^="Share on Google"]
     ! is in AdGuard
     !##a[title="Share on LinkedIn"]
     ! from AdGuard
