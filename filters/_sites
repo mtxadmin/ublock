@@ -331,7 +331,7 @@ _advert/  # from EasyList
 ##[class*="_ad_"]:not(html):not(body):not(article)
 ~kodi.wiki##[id*="_ad_"]:not(html):not(body):not(article)
     ! is in EasyList
-    ###sticky_ad_bar
+    !###sticky_ad_bar
 ##[class*="Adblock"]:not(html):not(body):not(article)
 ##[id*="Adblock"]:not(html):not(body):not(article)
 ~microsoft.com##[class*="adblock"]:not(html):not(body):not(article)
@@ -355,7 +355,9 @@ _advert/  # from EasyList
 ~blogspot.com##[class$="-ads"]:not(html):not(body):not(article)
 ##[id$="-ads"]:not(html):not(body):not(article)
     ! is in EasyList
-    ##.sidebar-ads
+    !###player-ads
+    ! is in EasyList
+    !##.sidebar-ads
 ~libreelec.tv,~obi.ru##[class*="-ads-"]:not(html):not(body):not(article)
 ##[id*="-ads-"]:not(html):not(body):not(article)
 ##[class*="_ads_"]:not(html):not(body):not(article)
@@ -643,6 +645,8 @@ _advert/  # from EasyList
 ##.main-float-buttons
 ##.maxwidth-banner
 ##.menu-banner
+! is in EasyList
+##.mntl-gpt-adunit
 ##.mobile-banner
 ##.mobile-banner-content
 ##.modal_banner
@@ -758,6 +762,7 @@ _advert/  # from EasyList
     ##.promo-block
     ##.promo-block-letter
     ##.promo-button
+    ##.promo-carousel
     ##.promo_line
     ##.promo_widget
 ##[id*="-promo"]:not(html):not(body):not(article)
@@ -1684,8 +1689,10 @@ _cookie_policy_  # from Fanboy's and AdGuard
 ~eff.org,~mail.ru,~sberbank.ru,~mail.yandex.ru##[id*="Letter"]:not(html):not(body):not(article)
 ~eff.org,~mail.ru,~sardu.pro,~sberbank.ru,~mail.yandex.ru##[class*="letter"]:not(html):not(body):not(article)
 ~eff.org,~mail.ru,~sardu.pro,~sberbank.ru,~mail.yandex.ru##[id*="letter"]:not(html):not(body):not(article)
-	! is in Fanboy's
-	##.newsletter.box
+    ! is in Fanboy's
+    ##div[class*="newsletter-signup_"]
+    ! is in Fanboy's
+    ##.newsletter.box
     ! is in Fanboy's
     ##.newsletter-popup
     ! from Fanboy's
@@ -1958,6 +1965,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 ##.brand_picture
 ##.brand-slider
 ##.brands
+##.brands-carousel
 ##.brands_section
 ##.brands-slider
 ##.clients-slider-box
@@ -2141,6 +2149,7 @@ tarif-24.ru##.mh-ticker-bottom
 ##.seo-item__text
 ##.seo_text
 ##.seo-text
+##.seoText
 ##.seotop
 
 
@@ -3130,12 +3139,10 @@ alternativeto.net###bottomNotifier
 altfishing-club.ru###branding
 
 amazon.com##.rhf-border
-! from EasyPricacy
-||amazon.*/ajax/counter?
-! from AdGuard Tracking Protection
-||unagi-*.amazon.com/1/events^
-! No exclusion for amazon. Also added $important up in general rules
-@@||amazon.*/*uedata$first-party,image,badfilter
+||amazon.*/ajax/counter?  # from EasyPricacy
+||amazon.com/gp/cerberus  # trackers?
+||unagi-*.amazon.com/1/events^  # from AdGuard Tracking Protection
+@@||amazon.*/*uedata$first-party,image,badfilter  # No exclusion for amazon. Also added $important up in general rules
 ! see in _marketing: fls-na.amazon.com$important
 ! see in _marketing: cloudfront-labs.amazonaws.com$important
 amazon.com##.nav-flyout.nav-coreFlyout.glow-toaster-slot-default.glow-toaster-theme-default.glow-toaster.a-section
@@ -3144,8 +3151,7 @@ amazon.com##.unified_widget
 amazon.com###cerberusVotingContainer
 amazon.com###detail-ilm_div
 amazon.com###woodstock-detail
-! trackers?
-||amazon.com/gp/cerberus
+amazon.com##.nav-logo-link
 
 american-boffin.com##.site-credits
 
@@ -3533,6 +3539,7 @@ auchan.ru##.homepage-block__content > p
 ! other
 auchan.ru##.products__item-badges
 auchan.ru##.news-subscribe
+auchan.ru##.popup
 
 audiobooks.pw##noindex
 
@@ -11247,6 +11254,8 @@ pikabu.ru##.story__share-new
 ! email subscription forms
 pikabu.ru##.email-block
 pikabu.ru##.email-form_block
+! ads in posts
+pikabu.ru##p:has(a[href*="https://t.me"])
 !
 ! sidebar is full of fintiflyushek
 pikabu.ru##.sidebar-block__content_links
@@ -11368,7 +11377,13 @@ pikabu.ru##.stories-feed__container > section:has-text(Создать свою �
 ||pikabu.ru/avatars/3099/l3099516-453458943.png
 ||pikabu.ru/avatars/310/l310086-2004267976.png
 ||pikabu.ru/avatars/336/l336448-1223915473.png
+||pikabu.ru/avatars/370/l370452-675075823.png
+||pikabu.ru/avatars/370/x370452-675075823.png
+||pikabu.ru/avatars/490/l490359-70279312.png
+||pikabu.ru/avatars/490/x490359-70279312.png
 ||pikabu.ru/avatars/680/s680656-1196678769.png
+||pikabu.ru/avatars/822/l822250-813704048.png
+||pikabu.ru/avatars/822/x822250-813704048.png
 ||pikabu.ru/avatars/914/s914779-1569405615.png
 ||pikabu.ru/avatars/914/x914779-1569405615.png
 !
@@ -16467,6 +16482,12 @@ yourselfbranding.com##.popup-client
 
 ||youtube.com/api/stats/$important  # disable exceptions
 ||youtube.com/youtubei/v1/notification/get_unseen_count
+! ||youtube.com/yts/cssbin/ - it is css, don't block!
+/csi_204*  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
+/generate_204  # from EasyList
+/youtubei/v1/log_event  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
+||youtube.com/get_midroll_  # from EasyList
+||youtube.com/error_  # and my too
 ! https://pikabu.ru/story/vsplyivayushchie_bloki_na_youtube__otklyuchaem_6660774
 !youtube.com##.ytp-pause-overlay.ytp-scroll-min
 ! from AdGuard & Fanboy's
@@ -16496,15 +16517,6 @@ youtube.com##.ytp-paid-content-overlay
 youtube.com##.ytp-title-channel
 ! from uBlock filters
 !youtube.com##+js(json-prune, adPlacements)
-! ||youtube.com/yts/cssbin/ - it is css, don't block!
-! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
-/youtubei/v1/log_event
-! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
-/csi_204*
-! from EasyList
-||youtube.com/get_midroll_
-! and my too
-||youtube.com/error_
 ! is in Ru AdList, AdGuard and Fanboy's
 ##.ytp-share-button
 ! is in EasyList
@@ -16518,7 +16530,6 @@ youtube.com##.video-annotations
 youtube.com##.annotation.iv-branding
 ! from uBlock filters
 !youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-! is in EasyList
 ! is in EasyList
 youtube.com##.ytp-ad-progress-list
 ! 2020-08: videos sometimes were black. I didn't find the cause, so here is workaround
@@ -16828,8 +16839,6 @@ kb.zyxel.ru###launcher
 
 /jscript/dwac-  # from EasyPrivacy
 
-/_Incapsula_Resource?
-
 /optimization-perf.js  # from EasyPrivacy
 
 /tealeaf.min.js  # from EasyPrivacy
@@ -16851,9 +16860,6 @@ kb.zyxel.ru###launcher
 ! is in EasyPrivacy and uBlock filter
 /logimpressions?$important
     ! ||docs.google.com/*/logimpressions
-
-! from EasyList
-/generate_204
 
 ! from EasyPrivacy
 /stats/ida_
@@ -17471,3 +17477,52 @@ bobcares.com##.banner-section
 bobcares.com##.et-l--header
 bobcares.com##.tnp
 bobcares.com##.custom-h2-p1-blocks
+
+! is in Web Annoyances Ultralist
+thoughtco.com###header_1-0, .header-condensed.header.comp:style(position: relative !important; top: 0 !important;)
+
+d2wy8f7a9ursnm.cloudfront.net  # ad scripts  # is in EasyPrivacy
+
+kampyle.com  # ad scripts
+
+notsy.io$important  # ad scripts  # "технология управления рекламой"
+
+eventbrite.com##.listing-hero-image__blurry-background
+eventbrite.com##.event-listing__header
+eventbrite.com##.secondary-footer__logo
+eventbrite.com##.eb-logo
+eventbrite.com##.consumer-header__logo-link
+eventbrite.com##.collections-bucket__featured-circle-container
+
+! site shows "Adblock" message
+taste-of-it.de$inline-script
+!taste-of-it.de##.quads-modal
+! other
+taste-of-it.de###masthead.site-header
+
+course4it.com###SITE_HEADER:style(position:static !important)
+course4it.com##[id*=pinned-layer]:style(position:static !important)
+course4it.com##[id*=bgLayers_comp]
+course4it.com##[id*=img_comp]
+
+||ecom.wix.com/storefront/cartwidgetPopup
+
+meetup.com##.stickyHeader:style(position:static !important)
+meetup.com##.sticky--top:style(position:static !important)
+meetup.com##.sticky--bottom:style(position:static !important)
+
+! is in Fanboy's
+###icon-flipboard
+
+||zaycev.net/*/vkwidget.js
+
+contentful.com$3p  # ad xhrs
+
+events.launchdarkly.com  # is in Adguard and EasyPrivacy
+
+demandbase.com$important  # "Account-Based Marketing"
+engagio.com$important  # ad scripts  # root redirects to demandbase.com
+
+/adblocker-check.  # is in EasyPrivacy
+
+
