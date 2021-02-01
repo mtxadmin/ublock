@@ -16483,8 +16483,9 @@ yourselfbranding.com##.popup-client
 ||youtube.com/api/stats/$important  # disable exceptions
 ||youtube.com/youtubei/v1/notification/get_unseen_count
 ! ||youtube.com/yts/cssbin/ - it is css, don't block!
-/youtubei/v1/log_event  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
 /csi_204*  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
+/generate_204  # from EasyList
+/youtubei/v1/log_event  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
 ||youtube.com/get_midroll_  # from EasyList
 ||youtube.com/error_  # and my too
 ! https://pikabu.ru/story/vsplyivayushchie_bloki_na_youtube__otklyuchaem_6660774
@@ -16859,9 +16860,6 @@ kb.zyxel.ru###launcher
 ! is in EasyPrivacy and uBlock filter
 /logimpressions?$important
     ! ||docs.google.com/*/logimpressions
-
-! from EasyList
-/generate_204
 
 ! from EasyPrivacy
 /stats/ida_
