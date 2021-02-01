@@ -3133,12 +3133,10 @@ alternativeto.net###bottomNotifier
 altfishing-club.ru###branding
 
 amazon.com##.rhf-border
-! from EasyPricacy
-||amazon.*/ajax/counter?
-! from AdGuard Tracking Protection
-||unagi-*.amazon.com/1/events^
-! No exclusion for amazon. Also added $important up in general rules
-@@||amazon.*/*uedata$first-party,image,badfilter
+||amazon.*/ajax/counter?  # from EasyPricacy
+||amazon.com/gp/cerberus  # trackers?
+||unagi-*.amazon.com/1/events^  # from AdGuard Tracking Protection
+@@||amazon.*/*uedata$first-party,image,badfilter  # No exclusion for amazon. Also added $important up in general rules
 ! see in _marketing: fls-na.amazon.com$important
 ! see in _marketing: cloudfront-labs.amazonaws.com$important
 amazon.com##.nav-flyout.nav-coreFlyout.glow-toaster-slot-default.glow-toaster-theme-default.glow-toaster.a-section
@@ -3147,8 +3145,7 @@ amazon.com##.unified_widget
 amazon.com###cerberusVotingContainer
 amazon.com###detail-ilm_div
 amazon.com###woodstock-detail
-! trackers?
-||amazon.com/gp/cerberus
+amazon.com##.nav-logo-link
 
 american-boffin.com##.site-credits
 
