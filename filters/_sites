@@ -16482,6 +16482,11 @@ yourselfbranding.com##.popup-client
 
 ||youtube.com/api/stats/$important  # disable exceptions
 ||youtube.com/youtubei/v1/notification/get_unseen_count
+! ||youtube.com/yts/cssbin/ - it is css, don't block!
+/youtubei/v1/log_event  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
+/csi_204*  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
+||youtube.com/get_midroll_  # from EasyList
+||youtube.com/error_  # and my too
 ! https://pikabu.ru/story/vsplyivayushchie_bloki_na_youtube__otklyuchaem_6660774
 !youtube.com##.ytp-pause-overlay.ytp-scroll-min
 ! from AdGuard & Fanboy's
@@ -16511,15 +16516,6 @@ youtube.com##.ytp-paid-content-overlay
 youtube.com##.ytp-title-channel
 ! from uBlock filters
 !youtube.com##+js(json-prune, adPlacements)
-! ||youtube.com/yts/cssbin/ - it is css, don't block!
-! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
-/youtubei/v1/log_event
-! from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
-/csi_204*
-! from EasyList
-||youtube.com/get_midroll_
-! and my too
-||youtube.com/error_
 ! is in Ru AdList, AdGuard and Fanboy's
 ##.ytp-share-button
 ! is in EasyList
@@ -16533,7 +16529,6 @@ youtube.com##.video-annotations
 youtube.com##.annotation.iv-branding
 ! from uBlock filters
 !youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-! is in EasyList
 ! is in EasyList
 youtube.com##.ytp-ad-progress-list
 ! 2020-08: videos sometimes were black. I didn't find the cause, so here is workaround
