@@ -7692,10 +7692,14 @@ imfdb.org##div[id$="INSERT_SLOT_ID_HERE"]
 ! работает в Firefox, в Opera не работает, так же, как и contains
 imgpay.ru##^script:has-text(Adblock)
 
-! is in hpHosts’ Ad and tracking servers
-||p.imgur.com
-! is in Fanboy's
-||imgur.com/min/px.js
+||p.imgur.com  # is in hpHosts’ Ad and tracking servers
+||imgur.com/min/px.js  # is in Fanboy's
+imgur.com##.isFixed:style(position:static !important)
+imgur.com##.Gallery-EngagementBar
+imgur.com##.Gallery-Sidebar
+imgur.com##.NewCover
+imgur.com##.Gallery-Header
+imgur.com##.Footer-wrapper:style(position:static !important)
 
 ||imho.ws/images/custom/$image
 
@@ -17644,3 +17648,6 @@ salsus.ru##.flex__header__callme
 salsus.ru##.payment__method
 
 scovill.ru##.shine::before
+
+huntmania.ru##.custom_header_right
+huntmania.ru##.brendy
