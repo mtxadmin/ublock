@@ -36,6 +36,7 @@ _728x90.$important
 /ad-banners
 /adblock-detect/*  # from Adblock Warning Removal
 /adblock.js$important
+/adblocker-check.  # is in EasyPrivacy
 /adblockTester.js  # from EasyList China
 /adclick$important
 /adflash/*  # from EasyList China
@@ -653,6 +654,8 @@ _advert/  # from EasyList
 ##.maxwidth-banner
 ##.menu-banner
 ! is in EasyList
+##.mks_ads_widget
+! is in EasyList
 ##.mntl-gpt-adunit
 ##.mobile-banner
 ##.mobile-banner-content
@@ -965,6 +968,7 @@ _ga-events_  # from EasyPrivacy
 /ga-track-  # from EasyPrivacy
 /ga_urchin_forms$important
 /gccounter.js
+/geo.php?  # is in EasyPrivacy
 /google-analytics.$3p
 /googleanalytics.js$important
 -google-analytics.$3p
@@ -1017,6 +1021,7 @@ _pagespeed_beacon?  # from AdGuard
 /stats.php  # is in EasyPrivacy: /stats.php?*http
 /superstat/collect
 /tag-manager-client/*
+/tbw/pixels/*  # is in EasyPrivacy
 /track?$image  # from EasyPrivacy: .com/track?$image
 /track.js$important
 /track.min.js
@@ -12445,6 +12450,13 @@ rabota.ru##.vacancy-card__fixed-footer-wrapper:style(position:static !important)
 ! other
 rabota.ru##.location-tooltip
 
+! see https://yandex.ru/search/?text=rackcdn.com
+! and many ad scripts (maybe not only)
+! but sometimes css from there are necessary. Hmm... Let's make an exclusion
+@@||rackcdn.com$css
+! so do not block it by hosts
+rackcdn.com
+
 ! main domain: rackspace.com
 sharepoint.rackspace.com##.heroBackground
 sharepoint.rackspace.com###topSection
@@ -17723,13 +17735,6 @@ kb.zyxel.ru###launcher
 ! from Ru AdList
 ##[data-link*="://ubar-pro"]
 
-! https://yandex.ru/search/?text=rackcdn.com
-! and many ad scripts (maybe not only)
-! but sometimes css from there are necessary. Hmm... Let's make an exclusion
-@@||rackcdn.com$css
-! so do not block it by hosts
-rackcdn.com
-
 /top.bg.center.png
 /top.bg.left.png
 /top.logo.special.home.png
@@ -17848,13 +17853,9 @@ imagetwist.com$script
 
 varonis.com##.anchor-up
 
-/tbw/pixels/*  # is in EasyPrivacy
-
 clancy.spiceworks.com  # is in EasyPrivacy
 
 /busting/*/gtm-  # /wp-content/cache/busting/1/gtm-ad...  # is in EasyPrivacy
-
-/geo.php?  # is in EasyPrivacy
 
 zx-adnet.com  # ad scripts  # ad network
 
@@ -17863,14 +17864,9 @@ zx-adnet.com  # ad scripts  # ad network
 
 events.launchdarkly.com  # is in Adguard and EasyPrivacy
 
-/adblocker-check.  # is in EasyPrivacy
-
 /optimizely-  # is in EasyPrivacy
 
 metrika-informer.com$important
-
-! is in EasyList
-##.mks_ads_widget
 
 hrijqd.com  # ad scripts  # is in Ru AdList
 
