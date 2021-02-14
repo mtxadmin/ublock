@@ -318,6 +318,10 @@ aeu.alicdn.com  # DRM  #aeu.alicdn.com/ctl/ctl.js
 ! from AdGuard
 aliexpress.com,aliexpress.ru###newuser-activity-config:remove()
 
+! deblur!
+aliexpress.com##+js(remove-attr, class, .blur, stay)
+! for history: aliexpress.com##body:style(-webkit-filter:blur(0); filter:blur(0); -webkit-filter: none; filter:none)
+
 connectkeyword.aliexpress.com
 !/sufei/*
 ||alicdn.com/sufei/
