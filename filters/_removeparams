@@ -6,6 +6,11 @@
 
 ||1plus1.video/*/embed/*autoplay=1$subdocument,queryprune=|  # from Ru AdList
 
+utm_$doc,xhr,queryprune=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+referer=$xhr,queryprune=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+location=$xhr,queryprune=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+?dl=$xhr,queryprune=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+
 ||reddit.com^*utm_$queryprune=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 
 ||youtube.com^*fbclid*$queryprune=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
