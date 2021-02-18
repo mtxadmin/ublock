@@ -35,7 +35,6 @@ location=$xhr,queryprune=|location=,domain=kp.ru  # kp.ru by gorhill. See https:
 
 ! from https://github.com/Smile4ever/Neat-URL
 ! { "name": "Action Map", "params": ["action_object_map", "action_type_map", "action_ref_map"]},
-! { "name": "AliExpress.com", "params": ["spm@*.aliexpress.com", "scm@*.aliexpress.com", "aff_platform", "aff_trace_key"]},
 !        { "name": "Amazon", "params": ["pd_rd_*@amazon.*", "_encoding@amazon.*", "psc@amazon.*", "tag@amazon.*", "ref_@amazon.*", "pf_rd_*@amazon.*"]},
 !        { "name": "Bilibili.com", "params": ["callback@bilibili.com"]},
 !        { "name": "Bing", "params": ["cvid@bing.com", "form@bing.com", "sk@bing.com", "sp@bing.com", "sc@bing.com", "qs@bing.com", "pq@bing.com"]},
@@ -58,6 +57,10 @@ location=$xhr,queryprune=|location=,domain=kp.ru  # kp.ru by gorhill. See https:
 !        { "name": "SourceForge.net", "params": ["source@sourceforge.net", "position@sourceforge.net"]},
 !        { "name": "YouTube", "params": ["feature@youtube.com", "gclid@youtube.com", "kw@youtube.com"]},
 !        { "name": "Zeit.de", "params": ["wt_zmc"]}
+
+
+! Found independently
+!gclid@youtube.com, $/ref@amazon.*
 
 
 ! from https://github.com/Smile4ever/Neat-URL
