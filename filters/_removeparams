@@ -4,4 +4,103 @@
 
 !! domains
 
+||1plus1.video/*/embed/*autoplay=1$subdocument,queryprune=|  # from Ru AdList
+
+utm_$doc,xhr,queryprune=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+referer=$xhr,queryprune=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+location=$xhr,queryprune=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+?dl=$xhr,queryprune=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+
+||reddit.com^*utm_$queryprune=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
+
+||youtube.com^*fbclid*$queryprune=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
+||youtube.com^*gclid*$queryprune=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 ||youtube.com/embed/*?autoplay=1$subdocument,queryprune=|  # from Ru AdList
+
+!! todo
+
+
+! test
+!com$queryprune=|utm_source|utm_medium|utm_campaign
+
+
+! from Adguard. Todo: recheck.
+!@@||auto-swiat.pl/*&srcc=ucs$removeparam
+!@@||komputerswiat.pl/*&srcc=ucs$removeparam
+!@@||noizz.pl/*&srcc=ucs$removeparam
+!@@||plejada.pl/*&srcc=ucs$removeparam
+!@@||medonet.pl/*&srcc=ucs$removeparam
+!@@||businessinsider.com.pl/*&srcc=ucs$removeparam
+
+
+! from https://github.com/Smile4ever/Neat-URL
+! { "name": "Action Map", "params": ["action_object_map", "action_type_map", "action_ref_map"]},
+! { "name": "AliExpress.com", "params": ["spm@*.aliexpress.com", "scm@*.aliexpress.com", "aff_platform", "aff_trace_key"]},
+!        { "name": "Amazon", "params": ["pd_rd_*@amazon.*", "_encoding@amazon.*", "psc@amazon.*", "tag@amazon.*", "ref_@amazon.*", "pf_rd_*@amazon.*"]},
+!        { "name": "Bilibili.com", "params": ["callback@bilibili.com"]},
+!        { "name": "Bing", "params": ["cvid@bing.com", "form@bing.com", "sk@bing.com", "sp@bing.com", "sc@bing.com", "qs@bing.com", "pq@bing.com"]},
+!        { "name": "Campaign tracking (Adobe Analytics)", "params": ["sc_cid"]},
+!        { "name": "Campaign tracking (Adobe Marketo)", "params": ["mkt_tok"]},
+!        { "name": "Campaign tracking (Amazon Kendra)", "params": ["trk", "trkCampaign"]},
+!        { "name": "Campaign tracking (ga, Google Analytics)", "params": ["ga_*"]},
+!        { "name": "Campaign tracking (Humble Bundle)", "params": ["hmb_campaign", "hmb_medium", "hmb_source"]},
+!        { "name": "Campaign tracking (itm)", "params": ["itm_*"], "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"},
+!        { "name": "Campaign tracking (pk)", "params": ["pk_*"]},
+!        { "name": "Campaign tracking (sc)", "params": ["sc_campaign", "sc_channel", "sc_content", "sc_medium", "sc_outcome", "sc_geo", "sc_country"]},
+!        { "name": "Campaign tracking (utm)", "params": ["utm_*"]},
+!        { "name": "Campaign tracking (Yandex)", "params": ["yclid", "_openstat"], "docs": "https://yandex.com/support/direct/statistics/url-tags.html"},
+!        { "name": "Campaign tracking (others)", "params": ["mbid", "cmpid", "cid", "c_id", "campaign_id", "Campaign"], "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"},
+!        { "name": "Facebook", "params": ["fb_action_ids", "fb_action_types", "fb_ref", "fb_source", "fbclid"]},
+!        { "name": "Google", "params": ["gs_l", "ved@google.*", "ei@google.*", "sei@google.*", "gws_rd@google.*"]},
+!        { "name": "Hubspot", "params": ["_hsenc", "_hsmi", "__hssc", "__hstc", "hsCtaTracking"]},
+!        { "name": "IBM Acoustic Campaign", "params": ["spReportId", "spJobID", "spUserID", "spMailingID"]},
+!        { "name": "Oracle Eloqua", "params": ["elqTrackId", "elqTrack", "assetType", "assetId", "recipientId", "campaignId", "siteId"]},
+!        { "name": "SourceForge.net", "params": ["source@sourceforge.net", "position@sourceforge.net"]},
+!        { "name": "YouTube", "params": ["feature@youtube.com", "gclid@youtube.com", "kw@youtube.com"]},
+!        { "name": "Zeit.de", "params": ["wt_zmc"]}
+
+
+! from https://github.com/Smile4ever/Neat-URL
+! For Tweakers.net: nb@tweakers.net, u@tweakers.net
+!
+!For Vivaldi.com: #?pk_campaign@vivaldi.com, #?pk_kwd@vivaldi.com
+!
+!Google Analytics - tracking https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
+!
+!tid, aip, ds, qt, cid, uid, uip, ua, geoid, dr, cn, cs, cm, ck, cc, ci, gclid, dclid, linkid
+!
+!Google (possibly tracking)
+!
+!    aqs (https://superuser.com/questions/653295/what-is-the-aqs-parameter-in-google-search-query)
+!    psi (possibly Page Speed Insights - possibly tracking)
+!
+!Google (tracking status unknown)
+!
+!    bav, bih, biw, ech (https://www.google.be/webhp?bav=on.2,or.r_qf.&biw=1920&bih=957&dpr=1&ech=1&psi=sXm9VNzfM8LYaqTigegJ.1421703563661.3&ei=sXm9VNzfM8LYaqTigegJ&emsg=NCSR&noj=1)
+!    bvm, csi, cp, dpr, dq, forward, iact, ndsp, pbx, pq, sa, scroll, sclient, stick, vet, yv (https://greasyfork.org/en/scripts/31223-remove-google-tracking-uwaa/code)
+!    tbnid
+!
+!Google (non tracking)
+!
+!    oq (original query)
+!    prmd (type of search - https://revadigital.com/2012/06/the-complicated-nature-of-google-urls/)
+!    npa, sc, z (Disabling Advertising Personalization - https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters)
+!
+!Tracking
+!
+!    icid (http://www.kshb.com/livevideo?ICID=ref_fark)
+!    sr_share (SimpleReach - http://web.archive.org/web/20190817204709/http://docs.simplereach.com/how-tos-1/setting-up-tracking-parameters-for-social-distribution)
+!
+!For addons.mozilla.org: src@addons.mozilla.org, source@addons.mozilla.org, surveyversion@addons.mozilla.org, updateChannel@addons.mozilla.org, fxVersion@addons.mozilla.org, isDefaultBrowser@addons.mozilla.org, searchEngine@addons.mozilla.org, syncSetup@addons.mozilla.org, type@addons.mozilla.org, flowId@addons.mozilla.org
+!
+!(only works when extensions.webextensions.restrictedDomains is edited in about:config) (test URL https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct)
+!
+!Other parameters you can consider (website unknown)
+!
+!    iid
+!    ijn
+!    ncid
+!    nid
+!    ref_
+
+
