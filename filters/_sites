@@ -2269,9 +2269,21 @@ tarif-24.ru##.mh-ticker-bottom
     !znaesh-kak.com##.widget_text.widget    
 
 ! and annoying self-promotions, mostly on blogs
+##[class^="author-box"]:not(html):not(body):not(article)
+    ! ##.author-box
+    ! ##.author-box-desc
+    ! ##.author-box__description
+    ! ##.author-box__rating
+##.author-avatar
+##.author_avatar
+##.author__avatar
+##.author-avatar-show
 ##.authorbox
-##.author-box
 ##.author-bio
+##.author-desc
+##.author-description
+##.author_detail_box
+##.author-info-description
 ##.bio-description
 ##.bio-gravatar
 ##.mks_author_widget
@@ -3506,7 +3518,6 @@ arsenal-plys.ru##.blur-g
 arstechnica.com###header-logo
 arstechnica.com##.scrolled-up:style(position:static !important)
 arstechnica.com##.header-highlight-link
-arstechnica.com##.author-bio
 arstechnica.com##.article-author
 arstechnica.com###social-left
 
@@ -4350,7 +4361,6 @@ boosty.to$3p
 ||boredpanda.com/*/header-panda-new.svg
 boredpanda.com##.cover
 boredpanda.com##.get-app
-boredpanda.com##.author-info-description
 
 borncity.com###header
 borncity.com##.code-block-1.code-block
@@ -4909,7 +4919,6 @@ click-or-die.ru##.palach-border
 clicksondelivery.com$3p  # ad scripts. Also redirects but they (maybe) ok
 
 cloudadministrator.net###hero-header
-cloudadministrator.net##.author-avatar
 
 cloudcheckr.com##.jumbotron
 cloudcheckr.com##.headerNav
@@ -5171,8 +5180,6 @@ dachniy-ugolok.ru##.shipping_and_payment
 
 dadget.ru##.bxmaker__geoip__city__line-question
 dadget.ru##.current-city-notice
-
-dailyesports.gg##.author-bio
 
 ! from EasyPrivacy
 ||speedtest.dailymotion.com/latencies.js
@@ -6774,7 +6781,6 @@ gamemag.ru##.seo-text-list
 gamenewsblog.ru###reply-title
 gamenewsblog.ru##.header-logo-full
 gamenewsblog.ru##h5:has-text(Подписывайтесь на на)
-gamenewsblog.ru##.author-box-desc
 
 ||gamer.ru/alarmalarm/widgets/
 gamer.ru###age_warning
@@ -7869,7 +7875,6 @@ ikea.com###hnf-header-filler
 ikea.com##.hnf-header__logo
 
 ilike.guru##.site-navigation-fixed.fixed:style(position:static !important)
-ilike.guru##.author-box__rating
 ! site blocks copypaste
 ilike.guru$inline-script
 ! other
@@ -8122,7 +8127,6 @@ isanteh.ru##.navbar__logo-block:style(width:auto !important)
 isanteh.ru##.sst-button--primary.sst-button
 
 iseptick.ru###masthead
-iseptick.ru##.author-box__description
 
 isolux.ru##.navbar-main:style(position:static !important; box-shadow:none !important)
 isolux.ru##.navbar-main__item:style(padding-right:34px !important)
@@ -8333,8 +8337,6 @@ izhohota.ru##.header-info > .contacts
 izvolokna.com##blockquote
 
 j4web.ru##.header-content
-
-jackofalladmins.com##.author__avatar
 
 jakondo.ru##.donate_breadcrumb
 
@@ -9576,7 +9578,6 @@ losst.ru##.widget:has-text(/Реклама|Мы вконтакте|Обнару�
 losst.ru##.image-logo
 losst.ru##.avatar
 losst.ru##.postrating
-losst.ru##.author-box-content > p
 
 lovely-dog.ru###masthead
 
@@ -10704,7 +10705,6 @@ neboleem.net###random
 
 nedimmehic.org##.sidebar
 nedimmehic.org##.header
-nedimmehic.org##.author-avatar-show
 nedimmehic.org##.avatar
 nedimmehic.org##.comment-like-link
 
@@ -11827,7 +11827,6 @@ piluli.ru##.sec-articles__item-tools
 piluli.ru##.action-list > li:has-text(Поделиться)
 piluli.ru##.notiny-container
 
-pine64.org##.author_avatar
 pine64.org##.postbit_website
 pine64.org##.onoffnew
 
@@ -12135,7 +12134,6 @@ powershellmagazine.com##.robots-nocontent
 ! disable scripts completely
 powershellmagazine.com$script
 ! other
-powershellmagazine.com##.author-desc
 
 poznayka.org##noindex
 
@@ -16098,14 +16096,12 @@ vmware.com###container:style(padding-top:0px !important)
 vmware.com##.cKM_Feedback_update
 vmware.com##.jive-sidebar.j-box:has-text(Share This Page)
 ||vmware.com/*/body_bg.png
-vmware.com##.author-description > p
 ! part of /wp-content/plugins/crayon-syntax-highlighter/ - annoying flickering horizotal scroll on hover. Setting it always on.
 vmware.com##.crayon-main:style(overflow:visible !important)
 vmware.com##.j-header-logo
 ||vmware.com/themes/global/images/vmware_icn_logo.png
 
 vodatyt.ru##.code-block
-vodatyt.ru##.author-box__rating
 ! site breaks copypaste. But some inline scripts are needed
 vodatyt.ru##^script:has-text(/(oncontextmenu|oncopy)/)
 vodatyt.ru##.entry-time
@@ -17946,7 +17942,6 @@ doctorhead.ru##.button:has-text(в 1 клик)
 doctorhead.ru##.quick-view-bonuses
 
 headphonesbest.ru##.stickyscroll_widget:style(position:static !important)
-headphonesbest.ru##.author_detail_box
 headphonesbest.ru##.anycomment-comments-widget
 
 stackshare.io##[src^="https://img.stackshare.io/s_assets/"]
