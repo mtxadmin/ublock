@@ -69,10 +69,6 @@
     kurazhov.ru##.header-image
     leopard-fil.ru##.header-image
     sid-500.com##.header-image
-##.header_contacts
-    ! bready.ru##.header_contacts
-    ! medtehno.ru##.header_contacts
-    ! steelsafeshop.ru##.header_contacts
 ##.headerlogo
 ###HeaderLogo
 ##.header__logo
@@ -550,6 +546,33 @@
 /logotipe.png    
 /logotype.svg
 /sitelogo.png
+
+
+
+!! remove contacts in the head.
+! They should be in the footer only or in the contacts menu. Do not print them in the beginning of every page.
+##[class^="header_contact"]:not(html):not(body):not(article)
+##[class^="header-contact"]:not(html):not(body):not(article)
+##[class^="header-phone"]:not(html):not(body):not(article)
+##.b-company-header-phone
+##.phone-top
+##.top_phone_list
+##.header__phone-icon
+    ! 1fin-market.com##.header-contacts-site-name
+    ! 1fin-market.com##.phone-top
+    ! baza-v.com##.header-phones
+    ! bready.ru##.header_contacts
+    ! doctorhead.ru##.header-contacts
+    ! integrus.ru##.header-contacts
+    ! medtehno.ru##.header_contacts
+    ! safegun.ru##.header-contacts
+    ! steelsafeshop.ru##.header_contacts
+    ! stich.su##.top_phone_list
+    ! tehnometal.ru##.b-company-header-phone
+    ! torex.ru##.header__phone-icon
+    ! vodoparad.ru##.header-phone-n
+    ! vseinstrumenti.ru##.header-phone
+    ! vseinstrumenti.ru##.header-phone-notice
 
 
 
