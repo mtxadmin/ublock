@@ -1,27 +1,32 @@
 ! List of URL parameters for removing
 ! See https://github.com/uBlockOrigin/uBlock-issues/issues/760
+! and https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#removeparam
 
 
 !! domains
 
-||1plus1.video/*/embed/*autoplay=1$subdocument,queryprune=|  # from Ru AdList
+||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
-utm_$doc,xhr,queryprune=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
-referer=$xhr,queryprune=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
-location=$xhr,queryprune=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
-?dl=$xhr,queryprune=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+utm_$doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+?dl=$xhr,removeparam=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 
-||reddit.com^*utm_$queryprune=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
+! from NeatURL
+! only works when extensions.webextensions.restrictedDomains is edited in about:config) (test URL https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct
+addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|isDefaultBrowser|searchEngine|syncSetup|type|flowId
 
-||youtube.com^*fbclid*$queryprune=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
-||youtube.com^*gclid*$queryprune=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
-||youtube.com/embed/*?autoplay=1$subdocument,queryprune=|  # from Ru AdList
+||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
+
+||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
+||youtube.com^*gclid*$removeparam=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
+||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
 !! todo
 
 
 ! test
-!com$queryprune=|utm_source|utm_medium|utm_campaign
+!com$removeparam=|utm_source|utm_medium|utm_campaign
 
 
 ! from Adguard. Todo: recheck.
@@ -94,9 +99,6 @@ location=$xhr,queryprune=|location=,domain=kp.ru  # kp.ru by gorhill. See https:
 !    icid (http://www.kshb.com/livevideo?ICID=ref_fark)
 !    sr_share (SimpleReach - http://web.archive.org/web/20190817204709/http://docs.simplereach.com/how-tos-1/setting-up-tracking-parameters-for-social-distribution)
 !
-!For addons.mozilla.org: src@addons.mozilla.org, source@addons.mozilla.org, surveyversion@addons.mozilla.org, updateChannel@addons.mozilla.org, fxVersion@addons.mozilla.org, isDefaultBrowser@addons.mozilla.org, searchEngine@addons.mozilla.org, syncSetup@addons.mozilla.org, type@addons.mozilla.org, flowId@addons.mozilla.org
-!
-!(only works when extensions.webextensions.restrictedDomains is edited in about:config) (test URL https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct)
 !
 !Other parameters you can consider (website unknown)
 !
