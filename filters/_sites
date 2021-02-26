@@ -2958,6 +2958,9 @@ admtroitsk.ru##.foot-copy
 adobe.com###helpful-pod
 adobe.com##.locale-modal
 adobe.com##locale-modal
+adobe.com###title-bar:style(position:static !important)
+adobe.com##.Subnav-wrapper
+adobe.com###sidebar:style(position:static !important)
 
 ! remove static header
 adaway.org##.current-section
@@ -5136,8 +5139,6 @@ cry.ru##noindex
 
 cryptopro.ru##.postContainer:has(.ui-widget)
 
-cryptoworld.su##.sticky_header:style(position:static !important)
-
 ! money for nothing
 csgo.tm$3p
 
@@ -6743,6 +6744,9 @@ forum-msk.info##.messageText > span
 forum-msk.info###headerProxy
 forum-msk.info##.Tooltip
 
+forward.bike##.pay-wrap
+forward.bike###headerfixed:style(position:static !important)
+
 ! is in EasyPrivacy
 ||foursquare.com/0uqk4c76/
 
@@ -6837,6 +6841,10 @@ gamespot.com##.message_mpu
 gamesqa.ru##.dont-add-our-site-pls
 
 gamexp.ru$3p  # ads
+
+garant.ru##.wf2-popover
+garant.ru##.grwf2_backdrop
+garant.ru##.info-important
 
 garethjones294.com###header
 
@@ -7642,6 +7650,10 @@ hotmadness.ru##.btn-modal
 hotnuts.ru##.sticky-add-to-cart:style(position:static !important)
 
 hottubeclips.com##.Att
+
+houseofbrick.com###top-header
+houseofbrick.com###page-container:style(padding-top:0px !important)
+houseofbrick.com###main-header
 
 houzz.ru##.comment-list__item-action--like
 houzz.ru##.comment-list__item-action--save
@@ -9329,9 +9341,8 @@ lightyeardocs.com.au$3p
 likes.ru$3p
 !likes.ru/js/widget/build/widget.js
 
-limeproxies.com##.sticky_header:style(position:static !important)
-
 line-f.ru##.header__phone
+line-f.ru##.footer__ipsc
 
 lingust.ru###commun
 lingust.ru##noindex
@@ -10080,6 +10091,8 @@ mi.com##.xm-fixed-box
 mi.com###wp:style(margin-top:0px !important)
 
 ||mibdepot.com/ximages/mibDepotLogo.jpg
+
+microdev.it###site-header
 
 microfocus.com###logo_container
 microfocus.com##.navbar-brand-link
@@ -10863,6 +10876,13 @@ new-rutor.org,rutor.info,xrutor.org##.c_t:has-text(Для Вас моя Джиг
 new-rutor.org,rutor.info,xrutor.org##tr.c_h:has-text(MOCKBAsity)
 
 news2.ru##.m18
+
+||newsfrol.ru/*/yandexwizet-telega.jpg
+||newsfrol.ru/*/youtube-banner.jpg
+||newsfrol.ru/*/vidyandex.png
+||newsfrol.ru/*/instagrampod.png
+newsfrol.ru##.fa-telegram-plane
+newsfrol.ru##.logo-tel
 
 newsignature.com##.ns-contact-widget
 newsignature.com##.pre-header
@@ -11695,6 +11715,13 @@ pic-mir.ru###header
 
 pic-money.ru###left
 
+! is in uBlock filters
+picturelol.com##+js(abort-on-property-read, ExoLoader)
+/^https?:\/\/picturelol\.com\/[a-z\d]+\.(js)$/$domain=picturelol.com  # is in Adguard
+! is in uBlock filters
+picturelol.com##+js(window.open-defuser)
+imagetwist.com$script
+
 ! pikabu.ru
 ! К сожалению, Пикабу перегрузили финтифлюшками и скриптами, и оно подтормаживает на обработке общих косметических правил. 
 ! Сделаем исключение и повторим применимые общие правила конкретно на сайт
@@ -12514,6 +12541,8 @@ ptichka.ru###popup_message
 ptichka.ru###subcribe-email-form
 ptichka.ru##.footer-subscribed-form
 ptichka.ru##.footer-subscribed
+
+pult.ru##.js-link-up-page.b-link-up-page
 
 ||push.eu/images/default-source/headers/$image
 
@@ -14290,6 +14319,8 @@ sportwiki.to###sportswiki-idea
 ! other
 
 spr.ru##.moduleToolBars
+
+sqlauthority.com##.at_top
 
 sqldbawithabeard.com##hgroup
 
@@ -16372,6 +16403,9 @@ vseinstrumenti.ru##.footer-subscribe-form-email
 vseinstrumenti.ru###page-locate-up.btn-up.btn-page-locate
 vseinstrumenti.ru##.card-report-an-improve-button
 vseinstrumenti.ru###page-locate-down.btn-down.btn-page-locate
+vseinstrumenti.ru###region_modal
+vseinstrumenti.ru###region_shadow
+vseinstrumenti.ru###stickyBuy.sticky-buy-stick:style(position:static !important)
 
 ||vsekroham.ru/local/templates/main_new/js/chunks/danner-buy-profitable$script
 vsekroham.ru##.danner-buy-profitable__fixed
@@ -18042,15 +18076,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 
 /retail_rocket/*
 
-! is in uBlock filters
-picturelol.com##+js(abort-on-property-read, ExoLoader)
-/^https?:\/\/picturelol\.com\/[a-z\d]+\.(js)$/$domain=picturelol.com  # is in Adguard
-! is in uBlock filters
-picturelol.com##+js(window.open-defuser)
-imagetwist.com$script
-
-/affiliates/*
-
 clancy.spiceworks.com  # is in EasyPrivacy
 
 /busting/*/gtm-  # /wp-content/cache/busting/1/gtm-ad...  # is in EasyPrivacy
@@ -18060,43 +18085,9 @@ clancy.spiceworks.com  # is in EasyPrivacy
 
 /optimizely-  # is in EasyPrivacy
 
-metrika-informer.com$important
-
 ! is in Fanboy's
 ###topcontrol
 
-forward.bike##.pay-wrap
-forward.bike###headerfixed:style(position:static !important)
+trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.trafficmanager.net 
+# not all subdomains - see issue about vscode
 
-line-f.ru##.footer__ipsc
-
-adobe.com###title-bar:style(position:static !important)
-adobe.com##.Subnav-wrapper
-adobe.com###sidebar:style(position:static !important)
-
-pult.ru##.js-link-up-page.b-link-up-page
-
-vseinstrumenti.ru###region_modal
-vseinstrumenti.ru###region_shadow
-vseinstrumenti.ru###stickyBuy.sticky-buy-stick:style(position:static !important)
-
-||newsfrol.ru/*/yandexwizet-telega.jpg
-||newsfrol.ru/*/youtube-banner.jpg
-||newsfrol.ru/*/vidyandex.png
-||newsfrol.ru/*/instagrampod.png
-newsfrol.ru##.fa-telegram-plane
-newsfrol.ru##.logo-tel
-
-trafficmanager.net  # ad scripts  # not all subdomains - see issue about vscode
-
-garant.ru##.wf2-popover
-garant.ru##.grwf2_backdrop
-garant.ru##.info-important
-
-sqlauthority.com##.at_top
-
-houseofbrick.com###top-header
-houseofbrick.com###page-container:style(padding-top:0px !important)
-houseofbrick.com###main-header
-
-microdev.it###site-header
