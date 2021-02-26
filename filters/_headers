@@ -60,15 +60,18 @@
     ! raidrive.com##.fusion-logo
     ! troypoint.com##.fusion-logo
     !raidrive.com##.fusion-logo:style(margin-top:14px !important; margin-bottom:14px !important)
-! some sites mark body with class .header-image . So don't generalize it
-!~microdev.it,~thinkpowershell.com,~update.ph##.header-image
-    blog.bissquit.com##.header-image
-    falchionconsulting.com##.header-image
-    faqforge.com##.header-image
-    kagarlickij.com##.header-image
-    kurazhov.ru##.header-image
-    leopard-fil.ru##.header-image
-    sid-500.com##.header-image
+! some sites mark body with class .header-image . So here are exclusions
+##.header-image:not(html):not(body):not(article)
+    ! blog.bissquit.com##.header-image
+    ! falchionconsulting.com##.header-image
+    ! faqforge.com##.header-image
+    ! kagarlickij.com##.header-image
+    ! kurazhov.ru##.header-image
+    ! leopard-fil.ru##.header-image
+    ! opsman.co.za##.header-image
+    ! paweljarosz.wordpress.com##.header-image
+    ! randomtechminutia.wordpress.com##.header-image
+    ! sid-500.com##.header-image
 ##.headerlogo
 ###HeaderLogo
 ##.header__logo
