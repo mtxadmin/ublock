@@ -10526,6 +10526,7 @@ mtforce.ru##.index_subsc
 mtml.ru$script,domain=~mirtesen.ru
 
 rtb.mts.ru^$3p  # ad scripts  # is in Ru AdList
+mtsopros.mts.ru  # ad xhrs
 ! popups there are not just with ads - changing options breaks too
 !lk.mts.ru##.popup__questionnaire
 !lk.mts.ru##.popup-modal
@@ -10536,7 +10537,9 @@ lk.mts.ru##.popup__overlay
 !
 mts.ru##.product-info__inner
 mts.ru##.popup--open:style(overflow:visible !important)
-mts.ru##body:style(position:static !important)
+!mts.ru##body:style(position:static !important) - generalized
+mts.ru##.header__body:style(position:static !important)
+mts.ru##.is-sticked:style(position:static !important)
 mts.ru##.login-slider
 mts.ru##.page-login__header-slogan
 mts.ru###ask-current-city
@@ -10546,8 +10549,8 @@ mts.ru##.mts16-footer__social
 mts.ru##.mts16-footer__age
 mts-gpon.ru##.mx-trf-form
 !||mts.ru/api/banners - don't?
-!||mts.ru/api/sharing/counters$important - needs recheck
-!||mts.ru/teaser - needs recheck
+!||mts.ru/api/sharing/counters - don't
+||mts.ru/teaser
 lk.mts.ru##.banner_htop.banner
 lk.mts.ru###banner_po_umolchaniyu_dlya_ssp_vside
 lk.mts.ru##.b-hint__drop
