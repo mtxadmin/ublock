@@ -71,7 +71,7 @@ chat.slb.com
 /notify.js
 /phone-by-geo.js
 /popper.js$important
-/popper.min.js$important
+/popper.min.js$important,domain=~eapteka.ru
 /popup.js
 /popups.js$important
 /push/*$important
@@ -113,7 +113,7 @@ chat.slb.com
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-##[class*="callback"]:not(html):not(body):not(article)
+~eapteka.ru##[class*="callback"]:not(html):not(body):not(article)
 ##[id*="callback"]:not(html):not(body):not(article)
 ! good rules in general, but messengers and webinar services must be excluded
 ~aliexpress.com,~bizon365.ru,~dhgate.com,~worknf.ru##[class*="Chat"]:not(html):not(body):not(article):not(section)
