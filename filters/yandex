@@ -507,6 +507,16 @@ zen.yandex.ru##.article-render__block_embed
 cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js  # from AdGuard Spyware filter
 ||jsdelivr.net/*/watch.js  # slightly more generic
 
+! is in Adguard
+yandex.ru##.neo-advert
+! is in Adguard
+yandex.*##.news-story__share
+! Adguard rule. Works on 2021-03
+yandex.*##.news-app > div.news-navigation-menu__wrapper ~ div[class][data-log-id]
+! Ru AdList rule. Works on 2021-03
+yandex.ru##div[class*=" news-"][class$="_mode_daas"]
+||yandex.net/get-ynews-logo/
+
 yandex.ru##.media-infinity-footer__up
 
 yandex.ru##.afisha-inserts__content
