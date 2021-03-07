@@ -1222,9 +1222,13 @@ _pagespeed_beacon?  # from AdGuard
 ! Оказывается, глюки с картами были связаны именно с этим правилом - на встраиваемых яндекс-картах попапы подпадают под раздачу. Пробуем аккуратно отключить через ymaps (возможно, сработает не везде). Update: да, отлично работает
 ~dobrodel.ru,~dobrodel.mosreg.ru,~wildberries.ru##[class*="_to_top"]:not(html):not(body):not(ymaps)
 ##[class*="-to-top"]:not([class*="sticked-to-top"]):not(html):not(body)
+##[id*="-to-top"]:not(html):not(body)
+    ! is in Fanboy's
+    !###go-to-top
+    ! is in Fanboy's
+    !##.go-to-top-button
     ! is in Fanboy's
     !###scroll-to-top
-##[id*="-to-top"]:not(html):not(body)
 ##[class*="ToTop"]:not(html):not(body)
 ##[id*="ToTop"]:not(html):not(body)
     !is in Fanboy's
