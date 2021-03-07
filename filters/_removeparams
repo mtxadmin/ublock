@@ -17,22 +17,26 @@ referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https:/
 location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 ?dl=$xhr,removeparam=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 
+3dnews.ru$removeparam=from
+
 ! from NeatURL
 ! only works when extensions.webextensions.restrictedDomains is edited in about:config) (test URL https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct
 addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|isDefaultBrowser|searchEngine|syncSetup|type|flowId
 
 ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 
+||nationalinterest.org$removeparam=itok|timestamp
+
 ||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 ||youtube.com^*gclid*$removeparam=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 ||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|  # from Ru AdList
+! Found independently, is in gorhill's
+!gclid@youtube.com
 
 !! todo
 
-
 ! test
 !com$removeparam=|utm_source|utm_medium|utm_campaign
-
 
 ! from Adguard. Todo: recheck.
 !@@||auto-swiat.pl/*&srcc=ucs$removeparam
@@ -41,10 +45,6 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 !@@||plejada.pl/*&srcc=ucs$removeparam
 !@@||medonet.pl/*&srcc=ucs$removeparam
 !@@||businessinsider.com.pl/*&srcc=ucs$removeparam
-
-
-
-
 
 ! from https://github.com/Smile4ever/Neat-URL
 ! { "name": "Action Map", "params": ["action_object_map", "action_type_map", "action_ref_map"]},
@@ -71,13 +71,6 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 !        { "name": "Zeit.de", "params": ["wt_zmc"]}
 
 
-! Found independently
-!gclid@youtube.com
-
-
-3dnews.ru$removeparam=from
-
-
 ! Found independently, but cannot be applied in uBlock Origin as in NeatURL
 #  $/ref@amazon.*
 ! from NeatURL. Todo: make and text regexp here
@@ -86,7 +79,6 @@ amazon.com$removeparam=|_encoding|psc|tag
 amazon.com$removeparam=ref_  # is in NeatURL
 ! Found independently. Todo: make regexp
 amazon.com$removeparam=|dchild|keywords|qid|sr|th|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_
-
 
 ! from https://github.com/Smile4ever/Neat-URL
 ! For Tweakers.net: nb@tweakers.net, u@tweakers.net
@@ -127,5 +119,4 @@ amazon.com$removeparam=|dchild|keywords|qid|sr|th|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_
 !    ncid
 !    nid
 !    ref_
-
 
