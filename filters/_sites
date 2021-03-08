@@ -14976,9 +14976,6 @@ techgenix.com###wrapper:style(padding-top:0px !important)
 techgenix.com##.widget_soundcloud_is_gold_widget.widget
 widget.sndcdn.com$domain=techgenix.com
 w.soundcloud.com$domain=techgenix.com
-! cookies scripts
-||techgenix.com/detroitchicago/anaheim.js
-||techgenix.com/detroitchicago/boise.js
 ! Flash
 ||techgenix.com/*/custom_plugins.js
 ! other
@@ -15377,9 +15374,6 @@ thesystemcenterblog.com##.pvc_stats
 theverge.com##.c-tab-bar__logo
 theverge.com##.tab-bar-fixed
 
-! is in EasyList
-||thewindowsclub.com/detroitchicago/
-!https://www.thewindowsclub.com/detroitchicago/rochester.js
 thewindowsclub.com##.entry-author-box
 thewindowsclub.com###author-info
 
@@ -18026,7 +18020,14 @@ kb.zyxel.ru###launcher
 ###infinite-footer
 	! privacyonline.home.blog###infinite-footer
 
-/detroitchicago/rochester.js  # is in EasyList
+/detroitchicago/$script
+    ! /detroitchicago/rochester.js  # is in EasyList
+    ! cookies scripts
+    !||techgenix.com/detroitchicago/anaheim.js
+    !||techgenix.com/detroitchicago/boise.js
+    ! is in EasyList
+    !||thewindowsclub.com/detroitchicago/
+    !https://www.thewindowsclub.com/detroitchicago/rochester.js
 
 /banger.js  # is in EasyList
 
@@ -18297,3 +18298,8 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 ##.in-content-ad
 
 /eprivacy.  # is in Fanboy's
+
+||howtoforge.com/images/socialmedia/
+
+! is in EasyList
+##.adtester-container
