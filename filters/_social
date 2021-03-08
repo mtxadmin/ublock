@@ -913,7 +913,8 @@ smartlock.google.com$3p
 ##[id*="Follow"]:not(html):not(body):not(article)
 ~medtehno.ru##[class*="follow"]:not(html):not(body):not(article)
 ~facebook.com,~vk.com##[id*="follow"]:not(html):not(body):not(article)
-~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article)
+! Exclusions: on oracle.com there are many elements with class="selectionShareable"
+~officeapps.live.com,~joom.com,~oracle.com##[class*="Share"]:not(html):not(body):not(article)
 ##[title^="Follow me on "]
 ##[id*="Share"]:not(html):not(body):not(article)
 ! Too many exclusions. Disabled. 
