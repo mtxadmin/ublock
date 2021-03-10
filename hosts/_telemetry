@@ -12,6 +12,18 @@
 ! AS15169 - GOOGLE, US
 app-measurement.com$important
 
+analytics.ff.avast.com  # from MobileAdTrackers
+analytics.ns1.ff.avast.com  # from MobileAdTrackers
+mobile-campaigns.avast.com  # from MobileAdTrackers
+stats.avast.com  # from MobileAdTrackers
+
+! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
+byteoversea.com  # 504 root
+!i.byteoversea.com
+!log.byteoversea.com
+!log15.byteoversea.com
+!rtlog.byteoversea.com
+
 cloudrail.com
 ! "From Sensor to Any Cloud". But it was seen in two apps. It seems, developers used this service as telemetry
 !stat-si.cloudrail.com
@@ -36,6 +48,16 @@ play.kakao.com
 videostats.kakao.com  # from Peter Lowe's hosts file
 get.daum.net
 track.tiara.daum.net
+
+kingsoft-office-service.com  # abroad-ad.kingsoft-office-service.com  # from Adguard
+
+telemetry.mozilla.org  # from Peter Lowe's hosts file
+
+! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
+rtlog.musical.ly
+applog.musical.ly
+ichannel.musical.ly
+log16-normal-c-useast1a.tiktokv.com
 
 ! Ads from Opera mini browser. Which have some default adblock (so!). Blocked by some adlist in Blokada
 operamini-sub.osp.opera.software
@@ -70,37 +92,30 @@ sentry.io  # feedback and application monitoring service, commercial. I doubt it
 !+  services.sentry.io
 sentry-cdn.com  #browser.sentry-cdn.com
 
-!! todo
 
-! Tik-Tok logs
-! https://www.securitylab.ru/analytics/510846.php
-rtlog.musical.ly
-applog.musical.ly
-ichannel.musical.ly
-log16-normal-c-useast1a.tiktokv.com
+adserving-dmoo.enterprise.slack.com
 
-! Tik-Tok logs
-! https://www.securitylab.ru/analytics/510846.php
-! 504 root
-byteoversea.com
-!i.byteoversea.com
-!log.byteoversea.com
-!log15.byteoversea.com
-!rtlog.byteoversea.com
+app-analytics.snapchat.com  # from Dan Pollock's hosts file  # is in Adguard
+tr.snapchat.com  # from Adguard
 
-! Tik-Tok logs
-! https://www.securitylab.ru/analytics/510846.php
-! China root
-snssdk.com  # root redirects to toutiao.com
+! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
+snssdk.com  # China root  # root redirects to toutiao.com
 !rtlog.snssdk.com
 !log.snssdk.com
 !ichannel.snssdk.com
 toutiao.com  # is in Adguard
 ! also pstatp.com, see here below too
 
-telemetry.mozilla.org  # from Peter Lowe's hosts file
+log.tapatalk.com  # from MobileAdTrackers
+track.tapatalk.com  # from MobileAdTrackers
+
+pushid-noneu.truecaller.com  # from MobileAdTrackers
 
 ping.ublock.org  # from Peter Lowe's hosts file
+
+ads.viber.com  # from MobileAdTrackers
+ads-d.viber.com  # from MobileAdTrackers
+ads.aws.viber.com  # from MobileAdTrackers
 
 admob.xiaomi.com  # from MobileAdTrackers
 abtest.mistat.xiaomi.com  # from AdGuard
@@ -113,16 +128,7 @@ activity.browser.intl.miui.com  # from AdGuard
 huangye.miui.com  # from AdGuard
 adv.sec.intl.miui.com  # from AdGuard
 device.xiaomi.net  # from MobileAdTrackers
-
-analytics.ff.avast.com  # from MobileAdTrackers
-analytics.ns1.ff.avast.com  # from MobileAdTrackers
-mobile-campaigns.avast.com  # from MobileAdTrackers
-stats.avast.com  # from MobileAdTrackers
-
-ads.viber.com  # from MobileAdTrackers
-ads-d.viber.com  # from MobileAdTrackers
-ads.aws.viber.com  # from MobileAdTrackers
-
+!! todo
 analytics.cloud.unity3d.com  # from Energized Blu and Adguard
 cdp.cloud.unity3d.com  # from Energized Blu, MobileAdTrackers, Adguard
 config.uca.cloud.unity3d.com
@@ -171,16 +177,6 @@ publisher-event.ads.prd.ie.internal.unity3d.com  # from Energized Blu
 ads-game-configuration-master.ads.prd.ie.internal.unity3d.com  # from Energized Blu
 config.unityads.unitychina.cn
 ecommerce.iap.unity3d.com  # ad requests
-
-pushid-noneu.truecaller.com  # from MobileAdTrackers
-
-log.tapatalk.com  # from MobileAdTrackers
-track.tapatalk.com  # from MobileAdTrackers
-
-app-analytics.snapchat.com  # from Dan Pollock's hosts file  # is in Adguard
-tr.snapchat.com  # from Adguard
-
-adserving-dmoo.enterprise.slack.com
 
 data.mistat.xiaomi.com  # xiaomi spying  # https://forum.adguard.com/index.php?threads/Решено-Шпионские-домены-miui.13437/
 adv.sec.miui.com
@@ -235,8 +231,6 @@ euadsapi.manhuaren.com  # from Adguard
 
 mxplayer.j2inter.com
 i.mxplayer.j2inter.com  # from Adguard
-
-kingsoft-office-service.com  # abroad-ad.kingsoft-office-service.com  # from Adguard 
 
 appgift.sinaapp.com  # from Adguard
 
