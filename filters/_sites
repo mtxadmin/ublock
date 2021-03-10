@@ -1535,8 +1535,10 @@ _pagespeed_beacon?  # from AdGuard
 ##[id*="GDPR"]:not(html):not(body):not(article)
 ##[class*="Gdpr"]:not(html):not(body):not(article)
 ##[id*="Gdpr"]:not(html):not(body):not(article)
-##[class*="gdpr"]:not(html):not(body):not(article)
-##[id*="gdpr"]:not(html):not(body):not(article)
+##[class*="gdpr"]:not(html):not(body):not(article):not(input)
+##[id*="gdpr"]:not(html):not(body):not(article):not(input)
+    ! is in EasyList and Fanboy's
+    !###gdpr:not(body):not(html):not(input)
 ##[class*="Privacy"]:not(html):not(body):not(article)
 ##[id*="Privacy"]:not(html):not(body):not(article)
 ~reddit.com,sardu.pro##[class*="privacy"]:not(html):not(body):not(article)
@@ -18250,9 +18252,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 
 ! is in EasyList
 ##.zad.billboard
-
-! is in EasyList and Fanboy's
-###gdpr:not(body):not(html):not(input)
 
 ###alertbar
 
