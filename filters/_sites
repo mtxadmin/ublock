@@ -330,9 +330,9 @@ _advert/  # from EasyList
     !##.ad-unit
     ! is in EasyList
     !##.ad-wide
-~blokada.org,~cnn.com,~dirteam.com##[class*="-ad-"]:not(html):not(body):not(article)
+~blokada.org,~cnn.com,~dirteam.com,~youtube.com##[class*="-ad-"]:not(html):not(body):not(article)
     ! from EasyList
-    !##.ytp-ad-progress-list
+    ##.ytp-ad-progress-list
 ~afisha.ru,~cnn.com##[id*="-ad-"]:not(html):not(body):not(article)
 ! ._ad_U,._ad_V,._ad_Y,... there are in MS OWA. Don't know how to make precise exclusion of such. :not(._ad_U):not(._ad_V):not(._ad_Y) don't not work - there are too many of them.
 ! As a workaround, one can add exclusion for corporate mail server:
