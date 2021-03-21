@@ -415,6 +415,7 @@ _advert/  # from EasyList
 ~bonus-spasibo.ru,~sparta-guns.ru##[class*="partner"]:not(html):not(body):not(article):not(.js-rtb-partner)
 ~clutch.ua,~depo.ua,~kodi.wiki,~politeka.net,~strana.ua,~znaj.ua##[id*="partner"]:not(html):not(body):not(article)
     ! id="adpartner_branding"
+    ! ##.partner_links
 ##[class*="paywall"]:not(html):not(body):not(article)
 ##[id*="paywall"]:not(html):not(body):not(article)
 ##[class*="reklam"]:not(html):not(body):not(article)
@@ -18477,3 +18478,28 @@ golinuxcloud.com##.inside-left-sidebar:style(position:static !important)
 
 appcenter.ms##.nav-brand
 appcenter.ms###sticky-nav-container.stuck .sticky-nav-complete:style(position:static !important)
+
+||i.ua/v2/homepage/partners/
+||i.ua/rating/
+||i.ua/v2/bg/
+! is in Adguard and Ru AdList
+i.ua##.news_premium_item
+! Adguard rule
+i.ua##body iframe[name]:not([class]):not([id]):not([src]):remove()
+! Adguard rule
+i.ua##.list_simple.list_time:not(#news_cont)
+! is in Adguard
+i.ua##.content-korr
+! is in Adguard and Ru AdList
+i.ua###Premium
+! Adguard rule
+i.ua##.block_gamma_gradient:has(:scope > div.content-korr)
+! Ru AdList rule
+i.ua##+js(set-constant, String.prototype.charCodeAt, trueFunc)
+! Ru AdList rule
+i.ua##+js(abort-current-inline-script, document.querySelector, /banner/)
+! Ru AdList rule
+i.ua##+js(abort-current-inline-script, decodeURIComponent, getAdBlockStatus)
+! Ru AdList rule
+i.ua##+js(abort-current-inline-script, String.fromCharCode, /Function\('return/)
+
