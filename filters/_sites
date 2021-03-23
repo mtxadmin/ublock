@@ -3104,11 +3104,13 @@ alexzsoft.ru##.blog-header
 alfabank.ru##[class^=header-warning__root]:has-text(блокировщик контента)
 ||alfabank.ru/67d4f9e82794b440330d4551fc3b855f.jpg
 alfabank.ru##svg
+alfabank.ru##.page__header:style(position:static !important)
 ||gcdn.co/*/benefit-banner.png
 ||alfabank.gcdn.co/media/get-money/credit/snizhenie-platezha/$image
 ||alfabank.gcdn.co/media/get-money/credit/refinancing/refinancing_what-is-refinancing$image
 ||alfabank.gcdn.co/media/pil_refin/pil-refin$image
 ||alfabank.gcdn.co/media/get-money/credit/credit-cash/loan-repayment$image
+||alfabank.gcdn.co/media/main-page-assets/$image
 alfastrah.ru##.slider-banners
 alfastrah.ru##.toolbar:style(position:static !important)
 alfastrah.ru##.fixed-footer:style(position:static !important)
@@ -3431,6 +3433,9 @@ apomusic.ru##.site-desc
 apomusic.ru##.site-desc-wr
 
 @@||www.aport.ru^$generichide,badfilter
+
+appcenter.ms##.nav-brand
+appcenter.ms###sticky-nav-container.stuck .sticky-nav-complete:style(position:static !important)
 
 apple-iphone.ru##.site-description
 apple-iphone.ru##b:has-text(Поставьте 5 звезд)
@@ -4791,6 +4796,10 @@ cheap-safe.ru##.pokupka.form-group > .preimushestva
 cheatography.com##.footer_popup
 cheatography.com##.triptych3
 
+! this is just testing service. No need block them specially
+checkadblock.ru#@#object,embed
+||checkadblock.ru^$document,csp=script-src 'self',badfilter
+
 cheholgun.ru##.fly-panel
 
 chernika-optika.ru##.footer-pay-links
@@ -5037,6 +5046,10 @@ cnn.com###breaking-news
 codetwo.com##.menu-navbar-header
 codetwo.com##.codetwo-sliding
 ||codetwo.com/*/post-bottom.png
+
+coins.su##.custom-bn-block-top.custom-bn-block
+coins.su##.jq-top
+coins.su##.jq-bottom
 
 ||comnews.ru/img/1/loader.gif
 comnews.ru###last-comments
@@ -5855,6 +5868,10 @@ downloadly.win##.herald-responsive-header:style(position:static !important)
 
 ||dp.ua/*/top_flash_right.gif
 ||dp.ua/*/top_flash_left.png
+safari.dp.ua###modalLanguage.modal-language
+safari.dp.ua##.promo-wrapper
+safari.dp.ua##.tell-block
+safari.dp.ua##.search-block > .label
 
 dpd.ru##.claim
 
@@ -5954,6 +5971,7 @@ duckduckgo.com##.js-badge-link.ddg-extension-hide.badge-link--fadein.badge-link-
 duckduckgo.com##.footer_cards
 ! is in AdGuard
 duckduckgo.com###powered_by.results--powered
+duckduckgo.com##.badge-link
 
 dumpsbase.com###sidebar-pdf
 
@@ -7276,6 +7294,8 @@ godaddy.com##.topnav-logo-wrap
 
 gog.com##.footer-spacer
 
+golinuxcloud.com##.inside-left-sidebar:style(position:static !important)
+
 ||golosobraz.ru/*/lp_top_back.jpg
 golosobraz.ru###note_18plus
 golosobraz.ru###testimonials
@@ -7437,6 +7457,13 @@ guidesgame.ru###branding_link
 
 gumroad.com$3p
 
+||gunforum.com.ua/awards/*.gif
+||gunforum.com.ua/*/award.gif
+gunforum.com.ua##.reportlinks
+gunforum.com.ua##.icon-memori
+gunforum.com.ua##.icon-bobrdobr
+gunforum.com.ua##.icon-mister-wong
+
 gunnalag.com##.textwidget
 gunnalag.com##.float-header
 gunnalag.com##.site-description
@@ -7489,6 +7516,7 @@ gunsfriend.ru##.johannes-goto-top
 gunshouse.ru##.top
 
 gunshub.ru##.modal-backdrop
+||gunshub.ru/assets/paper*.png
 
 gunslaw.ru##header
 
@@ -7970,6 +7998,30 @@ hype.tech##.time-to-read
 hype.tech##.clap-info
 
 hyperhost.ua##.poll-go
+
+||i.ua/v2/homepage/partners/
+||i.ua/rating/
+||i.ua/v2/bg/
+! is in Adguard and Ru AdList
+i.ua##.news_premium_item
+! Adguard rule
+i.ua##body iframe[name]:not([class]):not([id]):not([src]):remove()
+! Adguard rule
+i.ua##.list_simple.list_time:not(#news_cont)
+! is in Adguard
+i.ua##.content-korr
+! is in Adguard and Ru AdList
+i.ua###Premium
+! Adguard rule
+i.ua##.block_gamma_gradient:has(:scope > div.content-korr)
+! Ru AdList rule
+i.ua##+js(set-constant, String.prototype.charCodeAt, trueFunc)
+! Ru AdList rule
+i.ua##+js(abort-current-inline-script, document.querySelector, /banner/)
+! Ru AdList rule
+i.ua##+js(abort-current-inline-script, decodeURIComponent, getAdBlockStatus)
+! Ru AdList rule
+i.ua##+js(abort-current-inline-script, String.fromCharCode, /Function\('return/)
 
 ||ibathroom.ru/wp-content/uploads/2016/12/HelpProject2.jpg
 
@@ -10242,6 +10294,8 @@ meshok.net##.bar:style(position:static !important)
 ||meshok.net/googleMeshok.png
 ||meshok.net/apple1.png
 meshok.net###footer > div
+||meshok.net/i/ui.totop.png
+meshok.net##td > .a3.doted:has-text(является благотворительным)
 
 met-all.org##.footer
 
@@ -10329,6 +10383,8 @@ minimaks.ru##.right-menu
 minimaks.ru##.header-swim:style(position:static !important)
 
 ||minipc.ru/images/logotxt.png
+
+miniso.com##.topwrap
 
 minitool.com##.fixed-nav-btn
 minitool.com##.article-nav-list-box:style(position:static !important)
@@ -12285,6 +12341,9 @@ plitkanadom.ru##.bx_catalog_item:style(min-height:235px !important)
 plitkanadom.ru##.bx_catalog_item_controls
 plitkanadom.ru##.zoom-images
 
+plusworld.ru##.banner-button
+plusworld.ru###after_article
+
 pnevmat24.ru###col_viewed
 ! oneclick
 pnevmat24.ru##.block-b1c
@@ -12369,6 +12428,7 @@ polsdelat.ru###masthead
 polsdelat.ru##.table-of-contents
 
 polycom.com##.home-page-logo
+polycom.com##.lia-quilt-column-announcement-banner-content
 
 polymax10.ru##.container > .d-flex
 ||polymax10.ru/img/desktopNavbarClose.svg
@@ -12918,6 +12978,8 @@ raidrive.com##.fusion-animated:style(visibility:visible !important)
 
 ||ssp.rambler.ru/capirs_async.js$important
 ||ramblernews.media.eagleplatform.com$subdocument  # rambler
+! embedded videos. На motor.ru этим злоупотребляют, в середину статей пихают какие-то видео "Новости недели"
+||vp.rambler.ru$domain=motor.ru
 developers.rambler.ru/likes/
 news.rambler.ru##.menu--visible.menu--news.menu.j-menu:style(position:static !important)
 rambler.ru##.menu--visible.menu.j-menu
@@ -13635,6 +13697,9 @@ s0ft4pc.com##.widget_cb_email_subscribes
 sa1nikov.ru##div > [href^="https://sa1nikov.ru/book/"]
 sa1nikov.ru##.centered-text-area
 
+||safari.bg/*/headerBgnd.jpg
+safari.bg##.categoryInfo
+
 safe77.ru##.header-contact
 
 safe-buy.ru##.part
@@ -13877,6 +13942,8 @@ saveimg.ru###header
 savethevideo.com##.notification
 
 ||saveyou.ru/forum/gfx_serenity/misc/*$image
+
+sbcode.net##.md-sidebar:style(position:static !important)
 
 ! sbrf
 pfm-stat.online.sberbank.ru
@@ -14155,6 +14222,9 @@ shopsirop.ru##.obolochksHead
 shopsirop.ru##.content-indent > p
 shopsirop.ru##noindex
 
+||shotgun.com.ua/hat-2.png
+shotgun.com.ua##.header_mini
+
 ad1.sibnet.ru  # from Ru AdList
 sibnet.ru##[class*="head_v3__logo"]
 sibnet.ru##.bu
@@ -14426,6 +14496,7 @@ mtp.spaces.im  # ad scripts  # is in AdGuard
 spaces.im###header_path
 spaces.im##.unauth_header
 spaces.im###apps_widget
+||spaces.im/api/*/view/
 
 spa-hammam.ru##.clone.site-header
 
@@ -16153,6 +16224,9 @@ upweek.ru##.leading-img:style(display:block !important; position:static !importa
 ||uralsib.ru/include/counters/
 ||uralsib.ru/bitrix/tools/conversion/
 ||uralsib.ru/TealeafTarget.php
+uralsib.ru##.slide-banner
+uralsib.ru##.carousel-wrap
+uralsib.ru##.banner-page
 
 urantia-s.com##video
 ||urantia-s.com/assets/img/2.jpg
@@ -17448,6 +17522,9 @@ xn----7sbfmr1adiv9a.xn--p1ai##.custom-header.header-middle
 ! мастер-стол.рф
 xn----7sbpzbpmgdge.xn--p1ai##.g_button
 
+xn--80adjkcael4abtflqeskx.xn--p1ai##.t228__positionfixed:style(position:static !important)
+xn--80adjkcael4abtflqeskx.xn--p1ai##.t602__indicator
+
 ! хозтовары.онлайн
 xn--80ado1abokv5d.xn--80asehdb##.fixedpanel
 xn--80ado1abokv5d.xn--80asehdb##.fprview-more-info
@@ -18444,91 +18521,6 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 ! is in EasyList
 ##.adtester-container
 
-sbcode.net##.md-sidebar:style(position:static !important)
-
-duckduckgo.com##.badge-link
-
-||spaces.im/api/*/view/
-
-! this is just testing service. No need block them specially
-checkadblock.ru#@#object,embed
-||checkadblock.ru^$document,csp=script-src 'self',badfilter
-
 ! is in uBlock filters
 ##.amp-unresolved
 
-! embedded videos. На motor.ru этим злоупотребляют, в середину статей пихают какие-то видео "Новости недели"
-||vp.rambler.ru$domain=motor.ru
-
-polycom.com##.lia-quilt-column-announcement-banner-content
-
-coins.su##.custom-bn-block-top.custom-bn-block
-coins.su##.jq-top
-coins.su##.jq-bottom
-
-||meshok.net/i/ui.totop.png
-meshok.net##td > .a3.doted:has-text(является благотворительным)
-
-miniso.com##.topwrap
-
-plusworld.ru##.banner-button
-plusworld.ru###after_article
-
-uralsib.ru##.slide-banner
-uralsib.ru##.carousel-wrap
-uralsib.ru##.banner-page
-
-alfabank.ru##.page__header:style(position:static !important)
-||alfabank.gcdn.co/media/main-page-assets/$image
-
-golinuxcloud.com##.inside-left-sidebar:style(position:static !important)
-
-appcenter.ms##.nav-brand
-appcenter.ms###sticky-nav-container.stuck .sticky-nav-complete:style(position:static !important)
-
-||i.ua/v2/homepage/partners/
-||i.ua/rating/
-||i.ua/v2/bg/
-! is in Adguard and Ru AdList
-i.ua##.news_premium_item
-! Adguard rule
-i.ua##body iframe[name]:not([class]):not([id]):not([src]):remove()
-! Adguard rule
-i.ua##.list_simple.list_time:not(#news_cont)
-! is in Adguard
-i.ua##.content-korr
-! is in Adguard and Ru AdList
-i.ua###Premium
-! Adguard rule
-i.ua##.block_gamma_gradient:has(:scope > div.content-korr)
-! Ru AdList rule
-i.ua##+js(set-constant, String.prototype.charCodeAt, trueFunc)
-! Ru AdList rule
-i.ua##+js(abort-current-inline-script, document.querySelector, /banner/)
-! Ru AdList rule
-i.ua##+js(abort-current-inline-script, decodeURIComponent, getAdBlockStatus)
-! Ru AdList rule
-i.ua##+js(abort-current-inline-script, String.fromCharCode, /Function\('return/)
-
-||gunforum.com.ua/awards/*.gif
-||gunforum.com.ua/*/award.gif
-gunforum.com.ua##.reportlinks
-gunforum.com.ua##.icon-memori
-gunforum.com.ua##.icon-bobrdobr
-gunforum.com.ua##.icon-mister-wong
-
-safari.dp.ua###modalLanguage.modal-language
-safari.dp.ua##.promo-wrapper
-safari.dp.ua##.tell-block
-safari.dp.ua##.search-block > .label
-
-||shotgun.com.ua/hat-2.png
-shotgun.com.ua##.header_mini
-
-||safari.bg/*/headerBgnd.jpg
-safari.bg##.categoryInfo
-
-||gunshub.ru/assets/paper*.png
-
-xn--80adjkcael4abtflqeskx.xn--p1ai##.t228__positionfixed:style(position:static !important)
-xn--80adjkcael4abtflqeskx.xn--p1ai##.t602__indicator
