@@ -3943,6 +3943,11 @@ bars-guns.ru##.phone
 
 bash.im##.header__title_name
 
+bashmak.md##.socnet-wrap
+bashmak.md###slider-main.main-slider
+bashmak.md##.top-phone
+bashmak.md##.subbody:style(background-image:none !important)
+
 ! some sort of provider?
 ||batraim.com/ads/
 
@@ -5224,6 +5229,10 @@ c-sharpcorner.com###ctl00_HeaderHomeNewDesign_Menu_HeaderMenu:style(position:sta
 cssk.ru##.overlay-verify
 cssk.ru##.fusion-sticky-shadow:style(position:static !important)
 cssk.ru##.ls-slide-backgrounds
+
+css-tricks.com##.top-of-site-link
+css-tricks.com##.search-and-account:style(position:static !important)
+css-tricks.com##.footer-message-and-form
 
 ctc.ru##[class^=banner-wrapper]
 
@@ -8198,6 +8207,10 @@ inbox.lv##.branding
 inc.com##.nav-logo
 ! it blocking content when cookies disabled
 inc.com$script
+
+incapdns.net$3p,script,image  # strange scripts and tracking imgs  # no root  # seems to be Incapsula site (see /_Incapsula_Resource rule, for instance)  # but don't block it entirely, at least, css is needed
+!+  ip.incapdns.net
+! end of incapdns.net
 
 indeed.com##.gnav-Logo
 indeed.com##.popover
@@ -12165,6 +12178,7 @@ pikabu.ru##.stories-feed__container > section:has-text(Создать свою �
 ||pikabu.ru/avatars/1559/m1559641-41185554.png
 ||pikabu.ru/avatars/1559/x1559641-41185554.png
 ||pikabu.ru/avatars/1619/l1619396-1519301041.png
+||pikabu.ru/avatars/1619/l1619396-1877003303.png
 ||pikabu.ru/avatars/1619/x1619396-1519301041.png
 ||pikabu.ru/avatars/1728/s1728022-1396337591.png
 ||pikabu.ru/avatars/1822/l1822732-1540532175.png
@@ -12180,6 +12194,7 @@ pikabu.ru##.stories-feed__container > section:has-text(Создать свою �
 ||pikabu.ru/avatars/2531/x2531595-1490186805.png
 ||pikabu.ru/avatars/2544/l2544877-1863435265.png
 ||pikabu.ru/avatars/2613/l2613714-397781318.png
+||pikabu.ru/avatars/2656/l2656224-615281879.png
 ||pikabu.ru/avatars/2838/l2838243-478810401.png
 ||pikabu.ru/avatars/2838/m2838243-478810401.png
 ||pikabu.ru/avatars/2856/l2856444-356776053.png
@@ -16248,6 +16263,18 @@ ursus.ru##.product-views
 ursus.ru##.top-footer-block
 ursus.ru##.btn-director-popup
 ||ursus.ru/*/geolocation.js
+ursus.ru##.top-banner-block
+ursus.ru##.bottom-banner-block
+ursus.ru##.contacts-header-wr
+!ursus.ru##.site-menu:style(position:static !important)
+!ursus.ru##.container:style(position:static !important)
+ursus.ru##body:style(padding-left:0px !important)
+ursus.ru##[src^="/src/img/images/ursus_banner"]
+ursus.ru##.badgesSec
+ursus.ru##.overflow-body
+ursus.ru##.fixed-header-block:style(position:static !important)
+ursus.ru##.mailing-popup
+ursus.ru##.site-menu
 
 ||usamodelkina.ru/uploads/fotos/foto_1.jpg
 ||usamodelkina.ru/*/shtampnm.png
@@ -18526,6 +18553,3 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 ! is in uBlock filters
 ##.amp-unresolved
 
-incapdns.net$3p,script,image  # strange scripts and tracking imgs  # no root  # seems to be Incapsula site (see /_Incapsula_Resource rule, for instance)  # but don't block it entirely, at least, css is needed
-!+  ip.incapdns.net
-! end of incapdns.net
