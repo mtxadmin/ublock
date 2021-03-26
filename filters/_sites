@@ -18575,3 +18575,5 @@ netlify.com$3p,important,script,image  # ad scripts. Shopify but not only.  # "I
 ! rule from uBlock-AK-filter-rules
 drive2.ru##iframe:xpath((//ancestor::*[@id])[last() - 1])
 
+! mapping resource, heavy and no ads, so we don't need to process general rules
+@@||arcgis.com^$generichide
