@@ -18541,8 +18541,25 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 ! is in uBlock filters
 ##.amp-unresolved
 
+oracle.com##.u24
+oracle.com##.u28contact
+
+||dba-oracle.com/images/cruise_oracle_ad.jpg
+||dba-oracle.com/images/wise-ad.gif
+dba-oracle.com##.style7
+dba-oracle.com##.auto-style3
+
+||databasejournal.com/*/dbjlogo.gif
+
+orahow.com##.site-title-wrapper
+orahow.com##.page-title-container
+orahow.com##.site-footer
+
+||oracleimg.com/us/assets/metrics/  # tracking scripts
+
 # do not block entirely. At least, not css. 
 netlify.com$3p,important,script,image  # ad scripts. Shopify but not only.  # "Increase your conversion rates, customize your user experience and experiment with pricing, layouts and promotions"  #disco-flipclock.netlify.com/main.js  #shopify-backorder-3c367a.netlify.com  #https://identity.netlify.com/v1/netlify-identity-widget.js
 
 ! rule from uBlock-AK-filter-rules
 drive2.ru##iframe:xpath((//ancestor::*[@id])[last() - 1])
+
