@@ -3517,6 +3517,9 @@ arcenal-m.ru##.product-zoom
 ||arcenal-m.ru/*/footer-image-black2.png
 arcenal-m.ru##.box.relative
 
+! mapping resource, heavy and no ads, so we don't need to process general rules
+@@||arcgis.com^$generichide
+
 ! static header
 web.archive.org###wm-ipp:style(position:static !important)
 
@@ -4992,6 +4995,8 @@ click-or-die.ru##.palach-border
 
 clicksondelivery.com$3p  # ad scripts. Also redirects but they (maybe) ok
 
+||clients-cdnnow.ru/*logo*.png
+
 cloudadministrator.net###hero-header
 
 cloudcheckr.com##.jumbotron
@@ -5295,6 +5300,7 @@ darkweb.su##.p-body-sidebar
 darkweb.su##.p-navEl
 
 databasejournal.com##.sprite-logo-left
+||databasejournal.com/*/dbjlogo.gif
 
 datadoghq.com$3p  # ad xhrs
 logs.datadoghq.com  # is in Peter Lowe’s Ad and tracking server list
@@ -5331,6 +5337,10 @@ dba-oracle.com##.style6f66
 dba-oracle.com##.style-include-tuning-4000
 ||dba-oracle.com/images/include_current.jpg
 ||dba-oracle.com/images/auth_pic_don_burleson_120_140.jpg
+||dba-oracle.com/images/cruise_oracle_ad.jpg
+||dba-oracle.com/images/wise-ad.gif
+dba-oracle.com##.style7
+dba-oracle.com##.auto-style3
 
 db-ip.com##body:style(padding-top:0px !important; margin-bottom:auto !important)
 
@@ -5894,6 +5904,8 @@ dragongo.ru##.btn-extra
 drive2.ru##.c-user-card__cars
 drive2.ru##.l-nav:style(position:static !important)
 drive2.ru##.c-block--mh
+! rule from uBlock-AK-filter-rules
+drive2.ru##iframe:xpath((//ancestor::*[@id])[last() - 1])
 
 drivemusic.fm,ru-drivemusic.net##.music-like
 
@@ -10374,6 +10386,10 @@ minimaks.ru##.header-swim:style(position:static !important)
 ||minipc.ru/images/logotxt.png
 
 miniso.com##.topwrap
+||miniso.com/*/brandconcept.jpg
+miniso.com##.modulecon
+miniso.com##.modulecons
+miniso.com##.module
 
 minitool.com##.fixed-nav-btn
 minitool.com##.article-nav-list-box:style(position:static !important)
@@ -11066,6 +11082,9 @@ netcraft.com##.scroll-beyond-header:style(margin-bottom:0px !important)
 netcraft.com##.top-layout:style(margin-bottom:0px !important)
 ! other
 
+# do not block entirely. At least, not css. 
+netlify.com$3p,important,script,image  # ad scripts. Shopify but not only.  # "Increase your conversion rates, customize your user experience and experiment with pricing, layouts and promotions"  #disco-flipclock.netlify.com/main.js  #shopify-backorder-3c367a.netlify.com  #https://identity.netlify.com/v1/netlify-identity-widget.js
+
 netology.ru$3p  # ads
 
 netop.com##.blog-subscribe-box
@@ -11548,6 +11567,14 @@ optimakomp.ru###header
 ||optimakomp.ru/rss2email2.gif
 
 ||oracle.com/js/stats.js  # is in EasyPrivacy
+oracle.com##.u24
+oracle.com##.u28contact
+
+||oracleimg.com/us/assets/metrics/  # tracking scripts
+
+orahow.com##.site-title-wrapper
+orahow.com##.page-title-container
+orahow.com##.site-footer
 
 orb2000.ru##.attention-modal
 orb2000.ru##.overlay
@@ -15316,6 +15343,9 @@ tehnometal.ru##.b-head-control-panel__opinions-bar.b-review-info
 ||tehnot.com/*/tehnot-logo.png
 tehnot.com##.jeg_breakingnews_title
 
+tekstream.com##[href="https://www.tekstream.com"]
+tekstream.com##[href^="https://www.tekstream.com/resource/on-demand-webinars/"]
+
 ||tek-tips.com/images/header-logo.png
 tek-tips.com###masthead
 tek-tips.com##.gaAdTmp
@@ -15328,6 +15358,10 @@ telegraf.com.ua$3p  # cross-site ads
 
 ! is in AdGuard
 ||telegram.im/widget-button/
+
+telegramadviser.com##.post-author
+
+telegramgeeks.com##.sidebar
 
 telekom.com##.claim
 telekom.com##com-brandbar
@@ -15947,6 +15981,10 @@ tuchkatv.org##.slides_container
 ||tuchkovo.com/templates/tuchkovo/img/x.gif
 
 tula-sf.ru##.header-image
+
+tulataman.ru##.head
+tulataman.ru##.company_name
+tulataman.ru##.tr_header
 
 ||tulatoz.ru/bitrix/js/exabit.scrollup/*
 tulatoz.ru##._fix:style(position:static !important)
@@ -18497,45 +18535,3 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 ! is in uBlock filters
 ##.amp-unresolved
 
-oracle.com##.u24
-oracle.com##.u28contact
-
-||dba-oracle.com/images/cruise_oracle_ad.jpg
-||dba-oracle.com/images/wise-ad.gif
-dba-oracle.com##.style7
-dba-oracle.com##.auto-style3
-
-||databasejournal.com/*/dbjlogo.gif
-
-orahow.com##.site-title-wrapper
-orahow.com##.page-title-container
-orahow.com##.site-footer
-
-||oracleimg.com/us/assets/metrics/  # tracking scripts
-
-telegramadviser.com##.post-author
-
-telegramgeeks.com##.sidebar
-
-tekstream.com##[href="https://www.tekstream.com"]
-tekstream.com##[href^="https://www.tekstream.com/resource/on-demand-webinars/"]
-
-# do not block entirely. At least, not css. 
-netlify.com$3p,important,script,image  # ad scripts. Shopify but not only.  # "Increase your conversion rates, customize your user experience and experiment with pricing, layouts and promotions"  #disco-flipclock.netlify.com/main.js  #shopify-backorder-3c367a.netlify.com  #https://identity.netlify.com/v1/netlify-identity-widget.js
-
-! rule from uBlock-AK-filter-rules
-drive2.ru##iframe:xpath((//ancestor::*[@id])[last() - 1])
-
-! mapping resource, heavy and no ads, so we don't need to process general rules
-@@||arcgis.com^$generichide
-
-tulataman.ru##.head
-tulataman.ru##.company_name
-tulataman.ru##.tr_header
-
-||clients-cdnnow.ru/*logo*.png
-
-||miniso.com/*/brandconcept.jpg
-miniso.com##.modulecon
-miniso.com##.modulecons
-miniso.com##.module
