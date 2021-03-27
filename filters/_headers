@@ -22,8 +22,12 @@
 !   do not general block ###header, ###masthead, ##.site-branding or similar - they often contain search and menus
 !   of course, there may be some exclusions here (but it is unlikely)
 !   below there are some of old logo rules, just for information
-##[class^=header__logo]
+##[class*=header__logo]
     ! Many examples removed. Old generalized rules:
+    ! ##.b-header__logo
+    ! ##.b-header__logotype
+    ! ##.big-header__logo
+    ! ##.fixed-header__logo
     ! ##.header__logo
     ! ##.header__logo-image
     ! ##.header__logo-scroll
@@ -32,10 +36,6 @@
     ! ##.header__logo-wrapper
     ! ##.header__logotype
 ##.adaptive-header_logo
-##.b-header__logo
-    ! av.ru##.b-header__logo
-##.b-header__logotype
-    ! nic.ru##.b-header__logotype
 ##.b-head-logo
     ! myjane.ru##.b-head-logo
 ##.b-header-logo
@@ -44,9 +44,6 @@
     ! agenti-shit.com##.b-logo
     ! mebel-v-vannu.ru##.b-logo
     ! remont-vann.ru##.b-logo
-##.big-header__logo
-    ! wday.ru##.big-header__logo
-    ! woman.ru##.big-header__logo
 ##.brand-logo
 ##.brandlogo
 ##.b-toplogo
@@ -65,8 +62,6 @@
     ! cheap-safe.ru##.fa-phone
     ! gurmanfresh.ru##.fa-phone
     ! laminat-msc.ru##.fa-phone 
-##.fixed-header__logo
-    ! piluli.ru##.fixed-header__logo
 ##.footer__logo
 ##.forum-logo
 ##.fusion-logo
@@ -136,7 +131,7 @@
     ! certlibrary.com##.logo
     ! citilink.ru##.logo
     ! click-or-die.ru##.logo
-    ! consultant.ru##.header__logo.logo_header.logo
+    ! consultant.ru##.logo_header.logo
     ! datis-arad.com##.logo
     ! davidwalsh.name##.logo
     ! derevianniesideniy.ru##.logo
