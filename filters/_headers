@@ -614,21 +614,26 @@
 ! They should be in the footer only or in the contacts menu. Do not print them in the beginning of every page.
 ##[class^="header_contact"]:not(html):not(body):not(article)
 ##[class^="header-contact"]:not(html):not(body):not(article)
-##[class^="header-phone"]:not(html):not(body):not(article)
+##[class*="header-phone"]:not(html):not(body):not(article)
 ##.b-company-header-phone
 ##.head-contact
 ##.hat-contacts
 ##.phone-top
 ##.sidebar-contacts
+##.top-phone
 ##.top_phone_list
+##.header__phone
 ##.header__phone-icon
     ! 1fin-market.com##.header-contacts-site-name
     ! 1fin-market.com##.phone-top
+    ! ardl.ru##.ardl-header-phone
     ! balama.ru##.head-contact
     ! baza-v.com##.header-phones
     ! bready.ru##.header_contacts
+    ! catalog-plans.ru##.cp-header-phone
     ! doctorhead.ru##.header-contacts
     ! integrus.ru##.header-contacts
+    ! line-f.ru##.header__phone
     ! medtehno.ru##.header_contacts
     ! safe77.ru##.header-contact
     ! safegun.ru##.header-contacts
@@ -636,6 +641,7 @@
     ! steelsafeshop.ru##.header_contacts
     ! stich.su##.top_phone_list
     ! tehnometal.ru##.b-company-header-phone
+    ! prfz.ru##.top-phone
     ! torex.ru##.header__phone-icon
     ! vip-trosti.ru##.hat-contacts
     ! vodoparad.ru##.header-phone-n
