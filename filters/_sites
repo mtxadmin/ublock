@@ -93,7 +93,6 @@ _advert/  # from EasyList
 /advertisement.js$important
 /advertising/$important,domain=~aliexpress.com|~aliexpress.ru
 /advpic/*  # from EasyList China
-/adv_teasers.  # is in EasyList
 /adwords/$important
 /adx/*
 /affinity.js
@@ -570,7 +569,6 @@ _advert/  # from EasyList
 ##.banner-wrapper
 ! from AdGuard and Ru Adlist
 ##.b-banner
-##.b-content__section_teasers
 ##.bets-online
 ##.b-direct
 ##.b-header-adv-stripe
@@ -774,6 +772,9 @@ _advert/  # from EasyList
 
 
 !! teasers
+/adv_teasers.  # is in EasyList
+/nettyzer/*
+/teaser
 /teaser.$~media,~object,domain=~amocrm.ru|~gosuslugi.ru|~insomnihack.ch|~pik-comfort.ru|~play.date  # from Ru AdList  # ok, exclusions from there
 /teaser2.  # from Ru AdList
 /teaser_klubnika/*  # from Ru AdList
@@ -802,6 +803,41 @@ _advert/  # from EasyList
 _tizer.  # from Ru AdList
 _tizer2.  # from Ru AdList
 _tizers.  # from Ru AdList
+##[class*=teaser]
+##[id*=teaser]
+    ! ##.b-content__section_teasers
+    ! au.ru###header-teaser
+    ! ||au.ru/*/teaser-mobile.png
+    ! doctorpiter.ru##.teaserblock
+    ! gismeteo.*##.navteaser__info
+    ! quick view
+    ! lamoda.ru##.main-teaser-know-more__item
+    ! lamoda.ru##.main-teaser-know-more-wrap
+    ! lamoda.ru##.teaser_interesting-square__inner
+    ! lamoda.ru##.teaser_interesting-square__link
+    ! lamoda.ru##.teaser_interesting-square__image
+    ! lamoda.ru##.teaser_interesting-square__button
+    ! lamoda.ru##.main-teaser-pop-brand__item
+    ! lamoda.ru##.teaser_popular-square__inner
+    ! lamoda.ru##.teaser_popular-square__link
+    ! lamoda.ru##.teaser_popular-square__image
+    ! lamoda.ru##.teaser_popular-square__button
+    ! other
+    ! lamoda.ru##.main-teaser-square__item--redesign
+    ! lamoda.ru##.main-teaser-long__item--redesign
+    ! lamoda.ru##.teaser-long__button
+    ! ||mts.ru/teaser
+    ! obi.ru##.cm-teaser-trsprt
+    ! paessler.com###teaser
+    ! relook.ru##[class^=teasers]
+    ! vedomosti.ru##.teaser
+    ! vkusvill.ru##.Footer__teasers
+    ! voenhronika.ru##.eBlockteaser
+    ! xdrv.ru##.teasers
+    ! xdrv.ru##.teaser_tbl
+    ! xn--59-mlcdk8aoy.xn--p1ai##.small-banner--teaser
+    ! is in Adguard
+    ! youtube.com##.ytp-cards-teaser
 
 
 
@@ -3704,8 +3740,6 @@ atvclub.ru##.notice
 
 ! header
 au.ru##.au-site-header-cnt:style(position:static !important)
-au.ru###header-teaser
-||au.ru/*/teaser-mobile.png
 ! footer
 au.ru##.au-footer__links-app
 au.ru##.au-footer-copyblock
@@ -5861,7 +5895,6 @@ doctorhead.ru##.quick-view-bonuses
 ||doctorlom.com/doctor_lom_znsm.png
 
 ||doctorpiter.ru/frontend/fontanka_ru_banner.svg
-doctorpiter.ru##.teaserblock
 doctorpiter.ru##.p18
 
 doginhouse.ru##.img-featured
@@ -7248,7 +7281,6 @@ ginekologdo.ru###head_top_block.head_top
 ginekologdo.ru##.show_other_show
 
 gismeteo.*###footer
-gismeteo.*##.navteaser__info
 gismeteo.*##.js_sticky.subnav:style(position:static !important)
 gismeteo.*##.media_frame
 
@@ -9364,8 +9396,6 @@ laminat-msc.ru##.rating
 
 ! После удаления баннеров главная страница необычно чиста :-) Но меню и поиск работают. Рекламное мельтешение не отвлекает от выбора.
 ! banners
-lamoda.ru##.main-teaser-long__item--redesign
-lamoda.ru##.teaser-long__button
 lamoda.ru##.width-wrapper-redesign.width-wrapper
 lamoda.ru##.width-wrapper.premium-redesign
 lamoda.ru##.main-banner__item
@@ -9396,25 +9426,12 @@ lamoda.ru##.outlet-icons-slider-wrap
 lamoda.ru##.unipop__item
 lamoda.ru##.unipop__item_subs
 lamoda.ru##.unipop__container
-! quick view
-lamoda.ru##.main-teaser-know-more__item
-lamoda.ru##.main-teaser-know-more-wrap
-lamoda.ru##.teaser_interesting-square__inner
-lamoda.ru##.teaser_interesting-square__link
-lamoda.ru##.teaser_interesting-square__image
-lamoda.ru##.teaser_interesting-square__button
-lamoda.ru##.main-teaser-pop-brand__item
-lamoda.ru##.teaser_popular-square__inner
-lamoda.ru##.teaser_popular-square__link
-lamoda.ru##.teaser_popular-square__image
-lamoda.ru##.teaser_popular-square__button
 ! seo trash texts
 lamoda.ru##.seo-menu__text-level
 ! socials
 lamoda.ru##.auth-social__list
 lamoda.ru##.auth-social__list-descr
 ! other
-lamoda.ru##.main-teaser-square__item--redesign
 lamoda.ru##.main-banner__redesign
 lamoda.ru##.unipop__container
 lamoda.ru##.js-lazy-recomendation.main-recommendation.width-wrapper
@@ -10862,7 +10879,6 @@ mts.ru##.mts16-footer__age
 mts-gpon.ru##.mx-trf-form
 !||mts.ru/api/banners - don't?
 !||mts.ru/api/sharing/counters - don't
-||mts.ru/teaser
 lk.mts.ru##.banner_htop.banner
 lk.mts.ru###banner_po_umolchaniyu_dlya_ssp_vside
 lk.mts.ru##.b-hint__drop
@@ -11424,7 +11440,6 @@ obi.ru##.deliveryinfo.del.in.collapse
 obi.ru##.row-fluid.js-add-to-cart.button-to-card
 obi.ru##.marg_t15.row-flud
 obi.ru##.nav-meta
-obi.ru##.cm-teaser-trsprt
 ||obi.ru/campaign/
 ||obi.ru/images/marketing/
 obi.ru##.communication-tile__item
@@ -11895,7 +11910,6 @@ padaread.com###nav_cont
 padabum.com##.logoim
 
 kb.paessler.com###header
-kb.paessler.com###teaser
 
 pai-bx.com##.text-info
 
@@ -13304,7 +13318,6 @@ reloading.su##.j-contacts
 ||relook.ru/i/a/signup.gif
 ||relook.ru/i/logo2.png
 relook.ru##.poll-block-wrap
-relook.ru##[class^=teasers]
 
 remington.com##.global-header:style(position:static !important)
 remington.com##.featured-carousel
@@ -16551,7 +16564,6 @@ vedomosti.ru##.layout__newspaper-info
 vedomosti.ru##.the-header--fixed:style(position:static !important)
 vedomosti.ru##.the-projects:style(position:static !important)
 vedomosti.ru##.subscription-placeholders
-vedomosti.ru##.teaser
 ! is in Ru AdList
 vedomosti.ru##.article__metrics
 ! is in AdGuard
@@ -16743,7 +16755,6 @@ vkusvill.ru##.DeliveryAddressWhatsNew
 vkusvill.ru##.GeoSelectDropdown
 ! banners
 vkusvill.ru##.MainSliderContainer
-vkusvill.ru##.Footer__teasers
 vkusvill.ru##.VVNewsMainBlock
 vkusvill.ru##.Header__subnavLinkDoverium
 ! fixed top
@@ -16806,7 +16817,6 @@ vodnik.ru##.s-no-result:style(height:auto !important)
 vodoparad.ru##.fancybox-overlay-fixed.fancybox-overlay
 vodoparad.ru##.count
 
-voenhronika.ru##.eBlockteaser
 ||voenhronika.ru/pic/chernyjkrasnyjzelenyj.jpg
 ||voenhronika.ru/pic/header-red.jpg
 ||voenhronika.ru/pic/knopkainst.png
@@ -17564,8 +17574,6 @@ xda-developers.com##+js(abort-on-property-write.js, adonisHash)
 ! disable exclusion from AdGuard Mobile Ads filter
 @@||xda-cdn.com^$badfilter
 
-xdrv.ru##.teasers
-xdrv.ru##.teaser_tbl
 xdrv.ru##.youtube
 xdrv.ru##.left_block
 
@@ -17595,7 +17603,6 @@ xn--1-9sbclvecee0aslnx0j.xn--p1ai##.t651__btn
 xn--59-mlcdk8aoy.xn--p1ai##.subscribe-wrapp
 xn--59-mlcdk8aoy.xn--p1ai##.group-one
 xn--59-mlcdk8aoy.xn--p1ai##.groug-agreement
-xn--59-mlcdk8aoy.xn--p1ai##.small-banner--teaser
 
 ! аудиосказки-онлайн.рф
 xn----7sbabrtfclecozdeg8b6a.xn--p1ai##.footer
@@ -17828,8 +17835,6 @@ youtube.com##.banner-visible-area
 !youtube.com##.ytp-cued-thumbnail-overlay
 ! paid films
 youtube.com##ytd-movie-renderer
-! is in AdGuard
-youtube.com##.ytp-cards-teaser
 youtube.com##.ytp-ce-covering-overlay
 youtube.com##.ytp-ce-element-shadow
 youtube.com##.ytp-ce-covering-image
@@ -18582,8 +18587,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 
 ! override Fanboy's exception - instead of !makeuseof.com##.header-logo and other
 @@*$generichide,domain=makeuseof.com,badfilter
-
-/nettyzer/*
 
 /_/batch|$xmlhttprequest,1p  # is in Fanboy's
 
