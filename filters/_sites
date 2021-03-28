@@ -129,6 +129,7 @@ _advert/  # from EasyList
 /bootstrap.scrollspy.js
 /brand.js
 /bugsnag.min.js
+/busting/*/gtm-  # /wp-content/cache/busting/1/gtm-ad...  # is in EasyPrivacy
 /clipboard.min.js$important
 /carbon_sticky_ads.js
 /cdn-cgi/pe/bag2?r$important  # generalized rule. Sources from Ru AdList (see all mentioned domains here too):
@@ -163,6 +164,8 @@ _advert/  # from EasyList
 -contrib-ads/  # from EasyList
 /dcmads.js
 /dfp_mobile.js
+/dragscroll/*
+/dragscroll.js
 /easy-social-share-buttons.min.js
 /fixads.js
 /footer_ads.  # is in EasyList
@@ -1015,6 +1018,7 @@ blank.gif
 /empty.gif
 /emptypixel.png
 /engine/ping?  # is in EasyPrivacy
+/eprivacy.  # is in Fanboy's
 /event_logger  # from EasyPrivacy
 /event/track?  # from EasyPrivacy
 /events-metrica-scripts.js
@@ -2225,6 +2229,16 @@ yoursmileys.ru$image,third-party
 moiobzor.su###webticker
 prosud24.ru###showticker
 tarif-24.ru##.mh-ticker-bottom
+
+
+
+!! popups about "wrong browser"
+/browser-updater/*  # is in Adguard, modified
+/browser-update-toolbar/*
+/browser-update-toolbar.js
+/outdated-browser
+/outdatedbrowser/*
+/outdatedbrowser.min.js
 
 
 
@@ -5715,7 +5729,6 @@ dni.ru###for_fix:style(position:static !important)
 !||dns-shop.ru/*/kbt-analitycs.js  # don't (brokes main page)
 !||dns-shop.ru/*/popover-block.js  # don't (brokes reviews)
 !||dns-shop.ru/*/wishful-product-modal.js # don't
-||dns-shop.ru/*/outdated-browsers-notification.js
 ||dns-shop.ru/*/retail-rocket.js
 ||dns-shop.ru/*/subscription.js
 ||dns-shop.ru/*/header-mobile.js
@@ -13144,7 +13157,6 @@ rbc.ru##.live-tv
 /rbcmetrika-  # is in EasyPrivacy
 ||rbk.ru/*/gt-targeting.js
 ||rbk.ru/*/_paywall.js
-||rbk.ru/*/browser-updater/main.js  # is in AdGuard, modified
 ||rbk.ru/*/rbcbanners*.js
 ||rbk.ru/*/rbcbanners$script
 ||rbk.ru/*/_core.js  # site breaks copypaste
@@ -18592,11 +18604,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 ! is in Fanboy's
 ###wpd-bubble-wrapper
 
-/browser-update-toolbar/*
-/browser-update-toolbar.js
-/outdatedbrowser/*
-/outdatedbrowser.min.js
-
 ! Some sites show autoplay videos based on AMP. Maybe it should be blocked.
 !amp.akamaized.net
 !/akamai/amp/*
@@ -18616,11 +18623,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 ! is in uBlock filters
 ##.amp-unresolved
 
-/dragscroll/*
-/dragscroll.js
-
-/busting/*/gtm-  # /wp-content/cache/busting/1/gtm-ad...  # is in EasyPrivacy
-
 ! is in Fanboy's
 ###icon-flipboard
 
@@ -18629,9 +18631,3 @@ adman.in.gr  # from Dan Pollock's hosts file
 
 trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.trafficmanager.net 
 # not all subdomains - see issue about vscode
-
-/eprivacy.  # is in Fanboy's
-
-! is in EasyList
-##.adtester-container
-
