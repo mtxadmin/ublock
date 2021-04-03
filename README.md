@@ -48,7 +48,6 @@
 #### На компьютере
 - [uBlock Origin для Google Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 - [uBlock Origin для Mozilla FireFox](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-- [Nano Adblocker для Microsoft Edge](https://www.microsoft.com/en-us/p/nano-adblocker/9nsxdx2tdb3v/)
 - [uBlock Origin для Apple Safari](https://github.com/el1t/uBlock-Safari#installation)
 - [uBlock Origin для Opera](https://addons.opera.com/extensions/details/ublock/)
 
