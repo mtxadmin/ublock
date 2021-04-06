@@ -19,6 +19,15 @@ location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https
 
 3dnews.ru$removeparam=from
 
+! Found independently, but cannot be applied in uBlock Origin as in NeatURL
+#  $/ref@amazon.*
+! from NeatURL. Todo: make and text regexp here
+!pd_rd_*@amazon.*", "psc@amazon.*", "tag@amazon.*", "pf_rd_*@amazon.*"]},
+amazon.com$removeparam=|_encoding|psc|tag
+amazon.com$removeparam=ref_  # is in NeatURL
+! Found independently. Todo: make regexp
+amazon.com$removeparam=|dchild|keywords|qid|sr|th|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_
+
 ! from NeatURL
 ! only works when extensions.webextensions.restrictedDomains is edited in about:config) (test URL https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct
 addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|isDefaultBrowser|searchEngine|syncSetup|type|flowId
@@ -26,6 +35,8 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 
 ||nationalinterest.org$removeparam=itok|timestamp
+
+unsplash.com$removeparam=|ixlib|ixid
 
 ||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 ||youtube.com^*gclid*$removeparam=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
@@ -70,16 +81,6 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 !        { "name": "YouTube", "params": ["feature@youtube.com", "gclid@youtube.com", "kw@youtube.com"]},
 !        { "name": "Zeit.de", "params": ["wt_zmc"]}
 
-
-! Found independently, but cannot be applied in uBlock Origin as in NeatURL
-#  $/ref@amazon.*
-! from NeatURL. Todo: make and text regexp here
-!pd_rd_*@amazon.*", "psc@amazon.*", "tag@amazon.*", "pf_rd_*@amazon.*"]},
-amazon.com$removeparam=|_encoding|psc|tag
-amazon.com$removeparam=ref_  # is in NeatURL
-! Found independently. Todo: make regexp
-amazon.com$removeparam=|dchild|keywords|qid|sr|th|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_
-
 ! from https://github.com/Smile4ever/Neat-URL
 ! For Tweakers.net: nb@tweakers.net, u@tweakers.net
 !
@@ -119,9 +120,6 @@ amazon.com$removeparam=|dchild|keywords|qid|sr|th|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_
 !    ncid
 !    nid
 !    ref_
-
-
-unsplash.com$removeparam=|ixlib|ixid
 
 #sevenforums.com$removeparam=__cf_chl_jschl_tk__  # don`t, it seems, it is "DDoS protection by Cloudflare" param
 
