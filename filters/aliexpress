@@ -645,6 +645,9 @@ aliexpress.com,aliexpress.ru###newuser-activity-config:remove()
 aliexpress.com##+js(remove-attr, class, .blur, stay)
 ! for history: aliexpress.com##body:style(-webkit-filter:blur(0); filter:blur(0); -webkit-filter: none; filter:none)
 
+! false-positive rule in EasyList and Fanboy's: aliexpress.ru##div[class^="styles_wrapper_"]
+aliexpress.ru#@#div[class^="styles_wrapper_"]
+
 connectkeyword.aliexpress.com
 !/sufei/*
 ||alicdn.com/sufei/
