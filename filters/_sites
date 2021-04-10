@@ -14912,8 +14912,6 @@ sovcombank.ru##.swiper-container-horizontal
 
 sovet.help###header
 
-sovetexpert.ru###topcontrol
-
 sovet-ingenera.com##.sidebar-ask
 sovet-ingenera.com##.section--companies
 sovet-ingenera.com##.forum-ask
@@ -19002,7 +19000,7 @@ adman.in.gr  # from Dan Pollock's hosts file
 ! is in Fanboy's
 ###icon-flipboard
 
-! is in Fanboy's
+! is in Ru AdList, Fanboy's
 ###topcontrol
 
 trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.trafficmanager.net 
@@ -19022,3 +19020,18 @@ improvescripting.com##.menu-primary-container
 fanatical.com$3p  # ad cookies
 
 /pwa/*
+
+! Ru AdList rule
+nnmclub.to##+js(abort-current-inline-script, Math.random)
+! Adguard rule
+nnmclub.to##+js(abort-current-inline-script, Function, getPreparedImageURL)
+! Ru AdList rule
+nnmclub.to##+js(abort-current-inline-script, Math.random)
+! Ru AdList rule
+nnmclub.to##.header .row2 tr:not(:last-child)
+||nnmclub.ch/*/logomusic.js
+! is in Adguard and Ru AdList
+nnmclub.to##iframe[src*="/forum/ads/"]
+
+! is in EasyList
+###adss
