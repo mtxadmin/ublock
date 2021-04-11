@@ -6,7 +6,8 @@
 ! General rules are here too for a while
 !
 ! Sites sorted by a-z only, without _ and - (just for human convenience).
-!
+! And please don't add subdomains here, add them to _marketing__subdomains file
+! 
 ! See cosmetic rules policy at https://github.com/mtxadmin/ublock/blob/master/docs/policy_en.md
 !
 ! Something doesn't work? Something is missing? Please, feel free to write about it here:
@@ -2410,17 +2411,22 @@ tarif-24.ru##.mh-ticker-bottom
     !adsecurity.org##.widget_text:has-text(Trimarc Active Directory Security Services)
     !anoopcnair.com##aside.widget_text.widget
     !avforums.ru##.widget_text
+    !nizaury.blogspot.com###HTML4.HTML.widget
     !buchatech.com##.widget_text:has(.caption:has-text(Sponsors))
     !carsharik.ru##.widget_text:has-text(ВКонтакте)
     !cookdok.space##.widget_text
     !detalsystem.online##.widget_text:has-text(Об авторе)
     !ghacks.net##.widget_text.widget:has-text(Newsletter Sign Up)
     !iseptick.ru##.textwidget > form
+    !kevingreeneitblog.blogspot.com##.HTML.widget
     !learn-powershell.net##.widget_text
+    !lik-o-dil-es.blogspot.com##.HTML.widget
     !lumpics.ru##.widget_text:has-text(Не забудь обновить браузер)
+    !microsoftplatform.blogspot.com##.HTML.widget
     !mikefrobbins.com##.widget_text:has-text(Disclaimer)
     !mr-build.ru##.widget_text
     !myfirstcomp.ru##div.widget_text.uk-panel-box.uk-panel
+    !nizaury.blogspot.com###Text1.Text.widget
     !pechenek.net##.widget_text
     !polsdelat.ru##.textwidget > form
     !pornoadvid.info##.textwidget
@@ -2439,6 +2445,7 @@ tarif-24.ru##.mh-ticker-bottom
     !techgenix.com##.textwidget:has-text(/Featured Product|Featured Freeware/)
     !techgenix.com##.widget_text:has-text(/Featured Freeware|Recommended/)
     !techgenix.com##.textwidget:has-text(TechGenix reaches millions of IT Professionals)
+    !thoughtsonopsmgr.blogspot.com##.HTML.widget:has-text(Why this blog)
     !topqore.com##.widget_text
     !webcusp.com##.widget_text
     !xakinfo.ru##.textwidget
@@ -2700,9 +2707,6 @@ tarif-24.ru##.mh-ticker-bottom
 1cloud.ru##.help__onecloudweb
 1cloud.ru##.rating__block
 1cloud.ru##.blog__meta-item--watched
-
-! from MVPS
-st-1.1fichier.com #[Piwik.Analytics]
 
 1fin-market.com###sliza-wgt-button
 1fin-market.com##.site-name
@@ -2989,7 +2993,6 @@ st-1.1fichier.com #[Piwik.Analytics]
 5play.ru##.friends.tell
 5play.ru##.recommended
 
-o.60sk.ru  # from Adguard
 60sk.ru##.breaking-news
 
 ||66.ru/show/$third-party  # from Adguard
@@ -3031,8 +3034,6 @@ o.60sk.ru  # from Adguard
 ||9ban.ru/wp-content/themes/1brus/img/bloquote.png
 9ban.ru##.add_company
 
-web-t.9gag.com  #[Piwik.Analytics]  # from MVPS
-
 9mm.ru##.confirm_region
 9mm.ru###headerfixed
 
@@ -3063,9 +3064,6 @@ abekker.ru###shop-info:style(padding-top:0px !important; padding-bottom:0px !imp
 ! top ads
 abekker.ru##.feature-inner
 abekker.ru##.row-elect-categories
-
-! ad redirects and 404 root
-aberdeen-europe.com
 
 abookfree.ru###rek_fixed
 
@@ -3198,9 +3196,6 @@ afrodita.guru##.ask-a-Question
 
 aftershock.news##.aft-header
 
-analytics.agoda.com
-bento.agoda.com   # is in EasyPrivacy
-partners.agoda.com  # from Adguard
 agoda.com##.Searchbox:style(position:static !important)
 
 ||agyoga.com/*/back-img.jpg
@@ -3378,7 +3373,6 @@ all-shoes.ru##.logo_block
 
 allshrift.ru##.home-bottom-wrap
 
-adr.alltorrents.net  # from Ru AdList
 ||alltorrents.net/images/*.gif
 alltorrents.net##.birthday
 
@@ -3526,9 +3520,6 @@ animalreader.ru##.td-header-top-menu
 annamama.ru##.bottom.x-colophon
 
 anten-shop.ru##.b-bannerleft
-
-! it seems, the service is un-needed, all works already
-antibot.cloud
 
 antichat.ru##.sam3Bannner2Uni
 ! top fix
@@ -3733,7 +3724,7 @@ arms-expo.ru##.l-banner
 arms-expo.ru##.fresh-news
 arms-expo.ru##.fresh-media-block
 arms-expo.ru##.top-news-block
-! footer is shown upside down. So clean it
+! footer is shown upside down. So let's clean it
 arms-expo.ru##.clear_footer
 arms-expo.ru##.l-footer-subscription
 arms-expo.ru##.l-footer-info
@@ -3931,8 +3922,7 @@ autotonkosti.ru##.butts
 autotonkosti.ru##.submitted-user
 autotonkosti.ru##.progress-amt
 
-! from Fanboy's
-||verify.authorize.net^$third-party
+||verify.authorize.net^$third-party  # from Fanboy's
 
 autoitscript.com##.ipsClearfix.ipsList_noSpacing.ipsList_inline
 autoitscript.com##.ipsSpacer_top.cTopicPostArea_noSize.ipsPad.ipsAreaBackground.cTopicPostArea
@@ -3979,10 +3969,6 @@ averin.pro$3p
 avia.ru$3p  # from Adguard
 
 aviales.ru##.topmenu:style(position:static !important)
-
-! aviasales.ru
-mobile-ads-content.aviasales.ru
-mobile-intelligence.aviasales.ru
 
 avidreaders.ru##.footer
 
@@ -4039,17 +4025,12 @@ ayzdorov.ru##.head_sprite
 
 ||azimut.su/azimut_graphics/ads$image
 
-! ads
-! is in AdGuard
-||top.azur.ru/?id=
-
 bablosoft.com###NotificationFM
 
 baby.ru##.footer__socials-links
 ||baby.ru/static/app/$image
 baby.ru##.l-footer__age
 
-emptygif.babyblog.ru
 ! polls
 babyblog.ru##.bb-interview
 babyblog.ru##.js-interview
@@ -4061,26 +4042,14 @@ babyblog.ru##.footer-menu-special
 babyblog.ru##.footer-sl-age
 ! other
 ||babyblog.ru/*/bb_texture_sm.png
-! json ad menu
-||babyblog.ru/admenu
-ad.babyblog.ru
+||babyblog.ru/admenu  # json ad menu
 
 backblaze.com##.nav-primary
 
-! ad scripts
-! is in Adguard
-bagirastyle.ru$3p
+bagirastyle.ru$3p  # ad scripts  # is in Adguard
 
 bagway.ru###tab-viewed-articules
 bagway.ru###bottomMenu.bottom-menu
-
-! is in EasyPrivacy
-||baidu.com/push.js
-push.zhanzhang.baidu.com
-! http://push.zhanzhang.baidu.com/push.js
-! ad scripts
-! is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
-hm.baidu.com$important
 
 baikalinc.ru##.sticked
 baikalinc.ru##.hero.first-screen
@@ -4089,8 +4058,6 @@ ballistica.su##.l_header:style(position:static !important)
 
 banana-pi.org##.fixed-action-btn
 
-dc.banggood.com$important  # from EasyPrivacy
-dccss.banggood.com$important  # from EasyPrivacy
 banggood.com##.coupon-newuser
 banggood.com##.aside-bar
 
@@ -4131,14 +4098,13 @@ bashmak.md###slider-main.main-slider
 bashmak.md##.top-phone
 bashmak.md##.subbody:style(background-image:none !important)
 
-! some sort of provider?
-||batraim.com/ads/
+||batraim.com/ads/  # some sort of provider?
 
 baucenter.ru##.have-tooltip.send-message.custom-popup
 
 bauer-power.net###header-wrapper
 
-||baumarkt.ru/published/publicdata/BAUMARKT/attachments/SC/themes/BAUMARKT/img/background_620.png
+||baumarkt.ru/*/background_620.png
 baumarkt.ru##.head_left_block
 baumarkt.ru##header
 baumarkt.ru##footer > p
@@ -4153,13 +4119,10 @@ baxov.net###block-baxovnet-addtoanybuttons
 baza-v.com##.b-sticky-panel__wrapper
 baza-v.com##.goog-te-banner-frame
 
-! from Fanboy's, modified
-||bbb.org$third-party
+||bbb.org$third-party  # from Fanboy's, modified
 
 ! BBC
 bbc.com###brand
-ssc.api.bbc.com  # is in EasyPrivacy
-mybbc-analytics.files.bbci.co.uk
 
 bce-tyt.ru$3p
 
@@ -4264,8 +4227,7 @@ beveli.ru###tcb-call
 beveli.ru##div.bestseller
 beveli.ru##.feature-box
 
-! 3p images
-beyondsecurity.com$3p
+beyondsecurity.com$3p  # 3p images
 
 bezboleznej.ru##.header_nav-links-logo
 bezboleznej.ru##.script-footer-container
@@ -4362,11 +4324,8 @@ index-api.bitcoin.com$third-party
 bite-byte.ru###custom-header
 bite-byte.ru###wpd-post-rating
 
-! from AdGuard Tracking Protection and EasyPrivacy
-||bitrix.info/ba.js
-! ad scripts from Bitrix
-! is in RU AdList and AdGuard
-||bitrix.info^$3p
+||bitrix.info/ba.js$important  # from AdGuard Tracking Protection and EasyPrivacy
+||bitrix.info^$3p  # ad scripts from Bitrix  # is in RU AdList and AdGuard
 
 bit-tech.net##.fa-chevron-left
 bit-tech.net##.settings-box-element
@@ -4463,8 +4422,6 @@ blogspot.com##[href^="http://ucoz.net"]
 blogspot.com###clustrMapsImg
 ||blogspot.com/*/undercons.gif
 
-1xbet-ru.blogspot.com
-
 adminthing.blogspot.com##header
 
 agorbunov.blogspot.com##header
@@ -4475,10 +4432,6 @@ clintboessen.blogspot.com###header
 dbasimple.blogspot.com##header
 
 doprogerammer.blogspot.com##.centered-top-container
-
-! spam
-earn-2btc-per-day.blogspot.kr
-make-1-btc-per-day.blogspot.no
 
 eazybi.blogspot.com##.tabs-outer
 eazybi.blogspot.com##header
@@ -4498,7 +4451,6 @@ kevingreeneitblog.blogspot.com,scom-2012.blogspot.com##span:style(color:#000 !im
 ! other
 kevingreeneitblog.blogspot.com##[href^="https://hubs.ly/"]
 kevingreeneitblog.blogspot.com##[href="https://www.nice.de/request/"]
-kevingreeneitblog.blogspot.com##.HTML.widget
 kevingreeneitblog.blogspot.com##.widget-content > span
 kevingreeneitblog.blogspot.com##.body-fauxcolumns
 
@@ -4507,19 +4459,14 @@ kreelbits.blogspot.com##header
 
 lebedevum.blogspot.com##.titlewrapper > .title
 
-lik-o-dil-es.blogspot.com##.HTML.widget
 lik-o-dil-es.blogspot.com###header-inner
 
 lxguides.blogspot.com##.header
-
-microsoftplatform.blogspot.com##.HTML.widget
 
 nizaury.blogspot.com##.header
 nizaury.blogspot.com###crosscol-wrapper
 nizaury.blogspot.com##.widget-content
 nizaury.blogspot.com###sidebar-wrapper
-nizaury.blogspot.com###HTML4.HTML.widget
-nizaury.blogspot.com###Text1.Text.widget
 
 nyukers.blogspot.com##.header
 nyukers.blogspot.com##body:style(background:none !important)
@@ -4537,8 +4484,6 @@ survivalpandas.blogspot.com##.column-right-outer
 survivalpandas.blogspot.com##header
 survivalpandas.blogspot.com##body:style(background:none !important)
 survivalpandas.blogspot.com##b:has-text(Поделиться:)
-
-thoughtsonopsmgr.blogspot.com##.HTML.widget:has-text(Why this blog)
 
 ! blogspot end
 
@@ -4574,11 +4519,7 @@ bloomberg.com##.bb-global-footer__ad-choices
 ||bwbx.io/*/unsupportedBrowserMessage/
 ||bwbx.io/*/push-notification
 
-! "E-Commerce intelligence for global brands"
-blueboard.io$3p
-
 boards.net##.bksmb
-
 boards.net###remove_ads_link
 boards.net###ad-desktop-top
 boards.net##.v4news.container
@@ -4629,9 +4570,6 @@ booksonline.com.ua##.footer_style.wrapper
 ||booksonline.com.ua/*/noneimage.jpg
 booksonline.com.ua###toPrev
 
-! монетизация VK от mail.ru
-boosty.to$3p
-
 ! disable exclusion in Fanboy's
 @@*$generichide,domain=boredpanda.com,badfilter
 ||boredpanda.com/*/header-panda-new.svg
@@ -4646,8 +4584,6 @@ borncity.com##.pea_cook_bottomright.pea_cook_wrapper
 
 bor-stroy.com###carousel-example-generic
 bor-stroy.com##.home
-
-boschservice-expert.ru$3p
 
 bountysource.com##.body-scrolled.navbar-bountysource:style(position:static !important)
 
@@ -4850,8 +4786,7 @@ business2community.com$script  # site breaks copypaste
 
 business-gazeta.ru##.reach-ban
 
-! from AdGuard
-||business-key.com/top/$third-party
+||business-key.com/top/$third-party  # from AdGuard
 
 business-top.info###lhc_status_container
 
@@ -4864,14 +4799,14 @@ buymeacoffee.com$3p  # ad popups  # domain should not be blocked, see #19
 buzzfeednews.com##.newsblock-header
 buzzfeednews.com##.sticky-header
 
+||bvf.ru/forum/customavatars/*.gif
+||bvf.ru/listen/
+||bvf.ru/upchk/  # from Adguard
 sp.bvf.ru##.send_quest
 sp.bvf.ru##.help
 sp.bvf.ru###calcBtn
 sp.bvf.ru##.fly_menu
 sp.bvf.ru##.show_fly
-||bvf.ru/forum/customavatars/*.gif
-||bvf.ru/listen/
-||bvf.ru/upchk/  # from Adguard
 
 bydom.ru###decorative2
 
@@ -4944,15 +4879,10 @@ castorama.ru##[href="https://visit.castorama.ru/"]
 castorama.ru##.b-shopOrder
 castorama.ru###shopSwitcherModal
 castorama.ru##.md-body:style(overflow:auto !important)
-! попапы и опросы
-hr.castorama.ru
 ! other
 
 catalog-plans.ru##.hidelink
 catalog-plans.ru##.Pform.search_form
-
-production-cmp.isgprivacy.cbsi.com
-!https://production-cmp.isgprivacy.cbsi.com/dist/optanon.js
 
 ccm.net##.ccm_logo_ccm
 ccm.net##.ccm_box_inscription
@@ -4978,9 +4908,6 @@ certlibrary.com##.open-captcha
 certlibrary.com##.buy-exam-button
 
 charlifox.ru###logo_desc_new
-
-! from Peter Lowe's hosts file
-www-banner.chat.ru
 
 chatrating.ru##.active.scroller
 
@@ -13416,7 +13343,6 @@ radidomapro.ru###bloc_redtram_edito
 radidomapro.ru##div.separ_img_partenaire
 radidomapro.ru##div.titre_img_partenaire
 
-dot-stat.radikal.ru$important
 ||radikal.ru/showgallery.js  # from AdGuard
 radikal.ru##.base-page_left-side
 radikal.ru##.pict-menu_glpp
@@ -13482,7 +13408,7 @@ raspberry3.ru##.io-title-description
 raspberrypi.tv##.appear-fixed-on-scroll
 raspberrypi.tv##.top-navbar
 
-! Closing. It was written that it would closed in 2019-10, but still active in 2020-01
+! Closing. It was written that it would closed in 2019-10, but still active in 2021-04
 !rawgit.com
 
 ratniksafe.ru##.in-scroll:style(position:static !important)
@@ -13500,7 +13426,6 @@ raymond.cc###aa_wpfs_wrap
 
 ||razreshenie-oryzhie.ru/weapon.png
 
-video.razvratu.net  # from Adguard
 ! is in Adguard
 razvratu.net##noindex
 razvratu.net##.head2-1
@@ -13602,7 +13527,6 @@ redarmyairsoft.ru###aside
 ||redcocktube.com/images/h1.jpg
 redcocktube.com##.s_desc
 
-oops.redditmedia.com$important  # is in EasyPrivacy
 !!redditstatic.com/desktop2x/img/banner/$important
 ||redditstatic.com/desktop2x/js/xads.js
 ||reddit.com/desktopapi/v1/sidebar_ad$important
@@ -13803,8 +13727,6 @@ rgblog.ru##.addzakl
 forum.rhbz.org##.delemiter
 forum.rhbz.org###logostrip
 
-||cobrand.ria.com  # from Adguard
-||riastatic.com/docs/dom/support/$image
 ria.com##.upstairs
 ria.com##.support-app-footer
 ria.com##.about-us
@@ -13815,6 +13737,7 @@ ria.com##.icon-phone-fix
 ria.com##.right-fixed
 ria.com##.mhide > .container
 ria.com##.smm
+||riastatic.com/docs/dom/support/$image
 
 @@||ria.ru^$generichide,badfilter
 !todo
@@ -14438,7 +14361,6 @@ savethevideo.com##.notification
 sbcode.net##.md-sidebar:style(position:static !important)
 
 ! sbrf
-pfm-stat.online.sberbank.ru
 ||sberbank.ru/*/logoheader.png
 ||sberbank.ru/api/fl/id2
 ||sberbank.ru/api/log/
@@ -14534,8 +14456,7 @@ script-coding.com###brd-head
 script-coding.com###welcome
 script-coding.com###brd-about
 
-! from EasyPrivacy
-||scroll.com^$third-party
+||scroll.com^$third-party  # from EasyPrivacy
 
 sdelajrukami.ru##.dgwt-jg-caption
 sdelajrukami.ru##div.JRPP_wrap
@@ -14578,9 +14499,6 @@ securitylab.ru$inline-script
 securitylab.ru###mc-container:has-text(Никто ещё не оставил комментариев, станьте первым.)
 securitylab.ru##.last-news-block
 securitylab.ru##.section-subscribe-social
-
-! is in Ru AdList
-cdn-admx.segodnya.ua
 
 sekret-mastera.ru###header
 
@@ -14653,12 +14571,11 @@ sharetotest.com##.salesbox
 sharetotest.com##.nav-menu
 sharetotest.com##.entry-content > p:has-text(/Recommend!|2passeasy/)
 
+||shazoo.ru/ping  # is in AdGuard
 shazoo.ru##.navLogo
 shazoo.ru##.mav-container
 shazoo.ru##.shazoo
 shazoo.ru##.headerContainer:style(position:static !important)
-! is in AdGuard
-||shazoo.ru/ping
 
 sherweb.com##.sub-header
 
@@ -14929,7 +14846,6 @@ sogo-shop.ru###hr-open
 
 solidfiles.com##.remove
 
-slava.soloway.su  # from Adguard
 solowayfamily.ru##.owl-carousel
 solowayfamily.ru##.company--logo
 
@@ -14954,7 +14870,7 @@ sorcerers.net##.back-to-earth
 sorcerers.net##.back-to-earth-block
 sorcerers.net##.zone
 
-! форма съехала и отожрала правую колонку
+! форма поиска съехала и отожрала правую колонку. Придется удалять.
 sotka.guru##.ya-site-form__search-input
 
 ||sotmarket.ru/partner$third-party  # from Adguard
@@ -14994,7 +14910,6 @@ sovety-vannoy.ru###toc_container
 
 sovtime.ru##.donate
 
-mtp.spaces.im  # ad scripts  # is in AdGuard
 spaces.im###header_path
 spaces.im##.unauth_header
 spaces.im###apps_widget
@@ -15077,7 +14992,6 @@ spiceworks.com##.global-nav
 spiceworks.com##.footer
 spiceworks.com##.post-controls
 spiceworks.com##.sui-alert
-gekko.spiceworks.com$important  # is in AdGuard And EasyPrivacy
 clancy.spiceworks.com/jackryan.js  # is in AdGuard
 gala.spiceworks.com/gala.js
 spiceworks.com##.no_login_message
@@ -15321,9 +15235,6 @@ stop-list.info$third-party
 
 ! don't block scripts from stormwall.pro$third-party , they are strangely needed. See zerocoolpro.biz for example
 
-! money for nothing
-store-steampowered.info
-
 strana-1.ru$3p
 ! strana-1 logo on many forums of its network
 ##.logo-triangle-footer
@@ -15415,7 +15326,6 @@ stroy-podskazka.ru##div:has-text(Информация предоставлена
 stroy-podskazka.ru##.gallery-image::before
 stroy-podskazka.ru##.gallery-grid__image::before
 
-studopedia.info##a[href="/"]
 ||studopedia.info/i/studopedia.jpg
 
 ! is in AdGuard and Fanboy's
@@ -16405,7 +16315,6 @@ troffi.ru##.pre-footer
 troffi.ru##.top-text
 troffi.ru##.free-block
 
-troitsk.org##a[href="/"]
 ||troitsk.org/photos/bns/
 ||troitsk.org/im01upx.gif
 
@@ -16724,7 +16633,7 @@ unite4buy.ru##.b-logobox--footer
 unite4buy.ru##.footer
 unite4buy.ru##.rating
 ||unite4buy.ru/static/img/xlabel-price$image
-unite4buy.ru##.banner-line > [href="/"]
+unite4buy.ru##.banner-line
 
 help.univention.com###banner
 help.univention.com##.d-header:style(position:static !important)
@@ -16849,8 +16758,7 @@ uvnc.com##td[style^="width: 300px; height: 250px;"]
 ! there is an exclusion for uvnc.com. Ok.
 uvnc.com##.sp-scroll-up
 
-! from RU Adlist
-||uznatpochemu.ru^$third-party
+||uznatpochemu.ru^$third-party  # from RU Adlist
 
 cfs1.uzone.id  # from Adguard
 uzone.id##.top-nav-container:style(position:static !important)
@@ -16987,13 +16895,7 @@ vedomosti.ru##.article-share__icon
 vedomosti.ru##.article-share__btn
 ! неясное - какие-то сокеты. Upd: не, там через это аяксом грузятся списки, довольно полезные
 !||vedomosti.ru/socket.io/
-!waterfall.vedomosti.ru
-!woodpecker.vedomosti.ru
-! какие-то параметры.
-jay.vedomosti.ru
-rigel.vedomosti.ru
-! какое-то api. Связано с rigel и как минимум, через это грузятся суперджобовские блоки
-ostrich.vedomosti.ru
+! also see vedomosti.ru in _marketing__subdomains
 
 vegalab.ru###notices
 vegalab.ru###navbar:style(position:static !important)
@@ -17079,7 +16981,7 @@ videoconverterfactory.com##.i-amphtml-element > div
 
 ||videodroid.org/v3/authenticate.php$subdocument
 
-! "video hosting  Share videos & get rewarded  Affiliate Manager  "
+! "video hosting  Share videos & get rewarded  Affiliate Manager"
 ! is in NoCoin Filter List
 vidoza.net$important,script
 vidoza.org$important,script
@@ -17251,7 +17153,7 @@ vogue.ru##div[class^=LogoWrapper]
 
 ! site breaks copypaste. But some scripts are needed for loading images
 voin.guru##^script:has-text(oncopy)
-! is in Ru AdList
+# is in Ru AdList
 *$script,3p,domain=voin.guru
 voin.guru##.footer-text-wrap
 voin.guru##.td-footer-wrapper
@@ -17328,8 +17230,6 @@ vrachmedik.ru##.help-search-doctor
 vrachmedik.ru##.our-offers
 
 ||vrazvedka.ru/*/header2_f.jpg
-
-gorreklama.vrn.ru
 
 vsanuzel.ru###link-top:style(position:static !important)
 vsanuzel.ru##.menu-thumb
@@ -17827,9 +17727,6 @@ wordpress.com##body:style(padding-top: 0 !important;)
 ||wp.com/wp-content/js/googleplus-sign-in.js$important
 ! disable rule from AdGuard : https://s1.wp.com/wp-content/themes/a8c/jetpackme-new/js/utm-tracking.js?m=
 @@||s1.wp.com^$badfilter
-! is in AdGuard
-||pixel.wp.pl^$important
-||stats.wp.com/$important
 ||widgets.wp.com/likes/$important
 ||msdirectaccess.files.wordpress.com/2016/07/rh2016_150x225.jpg
 ||msdirectaccess.files.wordpress.com/2017/12/you_tube.jpg
@@ -17941,8 +17838,6 @@ wpscan.com$3p
 
 ||wpwidget.ru/greetings
 
-inf.wqa.ru  # from Adguard
-pp.wqa.ru
 ||wqa.ru/img/wqa_bn.jpg
 
 wragg.io##.bg-image
@@ -18317,9 +18212,9 @@ ytongdom.ru###div_header_wrap:style(height:auto !important)
 yurportal.info,sudovnet.ru##.sticky
 yurportal.info,sudovnet.ru##.consult
 
-! from Fanboy's
-ywxi.net$third-party,domain=~mcafee.com|~mcafeesecure.com
+ywxi.net$third-party,domain=~mcafee.com|~mcafeesecure.com  # from Fanboy's
 
+||zabbix.com/dist/images/fd87efa6da9bed3fd8c9cfb442a3d537.svg  # logo
 ! unfix and compact
 zabbix.com###header:style(position:static !important; padding-top:0px !important)
 zabbix.com###header:style(height:auto !important)
@@ -18354,7 +18249,6 @@ zabbix.com##.b-post:style(margin-top:8px !important)
 zabbix.com###breadcrumbs:style(padding-top:4px !important; padding-bottom:0px !important;)
 zabbix.com##.h-margin-top-xl:style(margin-top:8px !important)
 zabbix.com##.select_container
-||zabbix.com/dist/images/fd87efa6da9bed3fd8c9cfb442a3d537.svg
 
 zabbixzone.com###about
 
@@ -18480,6 +18374,7 @@ int.zendesk.com
 /zendesk-embeddable.js$important
 ||zendesk.com/embeddable_framework/
 zencdn.net$third-party  # ad scripts
+||zdassets.com/answer_bot_embeddable/answerBot.js  # zdassets.com is closed?
 ! Adguard has exlusion @@||vjs.zencdn.net/*/video-js.css , but the page has no visible videos. Seems, it is unneeded.
 
 zenitco.ru##.top-slider
@@ -18511,8 +18406,6 @@ zik.ua##.stiky:style(position:static !important)
 
 ! disable RuAdlist exclusion
 @@||zismo.biz^$generichide,badfilter
-! from RuAdlist
-zismone.ru
 ||zismo.biz/uploads/nau/adimage
 ||zismo.biz/interface/imageproxy.php
 zismo.biz##[href^="https://zismo.biz/store/"]
@@ -19073,8 +18966,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.trafficmanager.net 
 # not all subdomains - see issue about vscode
 
-||zdassets.com/answer_bot_embeddable/answerBot.js
-
 ||jsdelivr.net/npm/yandex-share2/
 
 /disable-selection-  # is in Fanboy's
@@ -19084,3 +18975,11 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 ! is in EasyList
 ###adss
 
+! zismo.biz
+zismone.ru  # from Ru Adlist
+
+st-1.1fichier.com  #[Piwik.Analytics]  # from MVPS
+
+o.60sk.ru  # from Adguard
+
+web-t.9gag.com  #[Piwik.Analytics]  # from MVPS
