@@ -17402,7 +17402,7 @@ webcusp.com##.wpautbox-below
 
 webfaction.com##.notify
 
-webflow.com$3p
+webflow.com$3p,script  # don't block css
 d3e54v103j8qbb.cloudfront.net$domain=~webflow.com
 website-files.com$script,domain=~webflow.com
 
@@ -18978,3 +18978,53 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 ! is in EasyList
 ###adss
 
+||udemy.com/*/intercom-app
+#||udemy.com/staticx/udemy/js/webpack/vendor-mobx - don't
+#||udemy.com/staticx/udemy/js/webpack/vendor-videojs - don't
+#||udemy.com/staticx/udemy/js/webpack/vendor-velocity - don't
+#||udemy.com/staticx/udemy/js/webpack/entry-manifest - don't
+#||udemy.com/staticx/udemy/js/webpack/udlite-common-css - don't
+#||udemy.com/staticx/udemy/js/webpack/course-taking-app - don't
+#||udemy.com/staticx/udemy/js/webpack/entry-main-modern - don't
+#||udemy.com/staticx/udemy/js/webpack/entry-main-modern-vendor - don't
+#||udemy.com/staticx/udemy/js/webpack/entry-manifest - don't
+#||udemy.com/staticx/udemy/js/webpack/jsi18n - don't
+||ssl.gstatic.com/accounts/$domain=udemy.com
+||apis.google.com/_/scs/apps-static/$domain=udemy.com
+||apis.google.com/js/api.js$domain=udemy.com
+
+ndv.ru##.main-header__complex-mark
+
+/sentry.min.js
+
+skyscrapercity.com##.p-header-banner
+
+vesti.ru##.header__age-restriction
+vesti.ru##.footer__error-info
+||player.vgtrk.com/js/stat.js$important
+vesti.ru##.article_end
+
+provereno.media###wrapper:style(padding-top:0px !important)
+provereno.media###nav_wrapper:style(padding-top:0px !important;padding-bottom:0px !important)
+provereno.media###logo_right_button:style(padding-top:0px !important;padding-bottom:0px !important)
+
+question-defense.com##.branding
+question-defense.com##.masthead:not(.side-header):not(.mixed-header) .header-bar:style(min-height:0px !important)
+question-defense.com##.share-link-description
+question-defense.com##.entry-author.author-info
+
+lunavi.com##.global-nav-cta.quote-button
+lunavi.com##.footer-cta
+lunavi.com##.byline-tag
+
+||skillset.com/img/dashboard/icon_upgrade.png
+skillset.com##.navbar_lower:style(position:static !important)
+skillset.com##.ready-push
+skillset.com##.go-pro-benefits
+skillset.com##.question-hero
+
+kinopoisk.ru##[class^=styles_badgeWithBigTitle]
+kinopoisk.ru##[class^=styles_buttonsContainer]
+kinopoisk.ru##[class^=styles_restriction]
+kinopoisk.ru##[class^=styles_share]
+kinopoisk.ru##[class^=styles_nameplate]
