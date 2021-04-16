@@ -8,11 +8,15 @@
 ! and https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#removeparam
 
 
+$removeparam=|utm_source|utm_medium|utm_campaign,important
+
+
 !! domains
 
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
-utm_$doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+
+$doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 ?dl=$xhr,removeparam=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
@@ -45,9 +49,6 @@ unsplash.com$removeparam=|ixlib|ixid
 !gclid@youtube.com
 
 !! todo
-
-! test
-!com$removeparam=|utm_source|utm_medium|utm_campaign
 
 ! from Adguard. Todo: recheck.
 !@@||auto-swiat.pl/*&srcc=ucs$removeparam
