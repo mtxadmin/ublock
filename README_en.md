@@ -61,7 +61,7 @@ The third checkbox sometimes is enabled after installing. Disable it, or else ma
 
 ## Adding the list
 
-After setup, click [this link](abp:subscribe?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). In popup window press Ok and that's all.
+After setup, click [this link](https://subscribe.adblockplus.org/?location=https%3A//raw.githubusercontent.com/mtxadmin/ublock/master/it). In next window press Subscribe and that's all.
 
 <details>
     <summary>
