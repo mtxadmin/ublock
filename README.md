@@ -4,6 +4,8 @@
 
 <!-- Click the following: [Add Web Annoyances Ultralist to Custom uBlock Origin Filters](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt&title=Web%20Annoyances%20Ultralist).  -->
 
+<!-- [Добавить подписку](https://subscribe.adblockplus.org/?location=https%3A//raw.githubusercontent.com/mtxadmin/ublock/master/it) -->
+
 <!-- [Добавить подписку](ubo://subscribe?location=https%3A//raw.githubusercontent.com/mtxadmin/ublock/master/it) -->
 
 <!-- This is by design :-( -->
@@ -74,7 +76,7 @@
 
 ## Установка списка
 
-Далее, добавляем список. Для этого, нажмите на [эту ссылку](abp:subscribe?location=https://raw.githubusercontent.com/mtxadmin/ublock/master/it). В предложении установки списка нажимаете Ok и всё, готово.
+Далее, добавляем список. Для этого, нажмите на [эту ссылку](https://subscribe.adblockplus.org/?location=https%3A//raw.githubusercontent.com/mtxadmin/ublock/master/it). В предложении установки списка нажимаете Subscribe и всё, готово.
 
 <details>
     <summary>
