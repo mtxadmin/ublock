@@ -15508,7 +15508,8 @@ superdom.ua##.nav-top:style(position:static !important)
 
 ! header
 superjob.ru##div > div > div > div:has-text(Ваш браузер устарел)
-superjob.ru##div:matches-css(position:sticky)
+!superjob.ru##div:matches-css(position:sticky) - don't, the menu is useful
+!superjob.ru##div:watch-attr(div):matches-css(position: sticky):style(position:static !important) - don't, works too slowly
 ! socials
 superjob.ru##.f-test-social-link-ok
 superjob.ru##.f-test-social-link-vk
