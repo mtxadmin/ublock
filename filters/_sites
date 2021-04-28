@@ -22,6 +22,7 @@
 ! general first, specific last
 !
 /:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script  # from Fanboy's. Matches http://www.zlfgedpuxrbpgm.com/xtzj.js and http://www.zckphynp.com/d.js
+://*.*.com/xj/$script,important,redirect-rule=noop.txt  # Adguard rule
 .ru/proxy_*.php?init_form=$script  # ad scripts  # from AdGuard
 /?dm=*&blogid=$script,domain=~wordpress.org  # ad scripts  # is in EasyPrivacy
 -120x60.  # is in EasyList
@@ -19384,4 +19385,5 @@ chartio.com##.tutorial-toc__wrapper
 basitaalishan.com##.syndicate
 ||basitaalishan.files.wordpress.com/*/cropped-banner-img3.jpg
 
-://*.*.com/xj/$script,important,redirect-rule=noop.txt  # Adguard rule
+! duplicate header
+berliner-zeitung.de##.o-header-sm
