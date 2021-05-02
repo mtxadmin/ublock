@@ -8,18 +8,20 @@
 
 !! domains
 
-123ru.net  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-123ru.market  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-29ru.net  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-ru24.net  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-newslife.pro  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-newslife.org  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-news-life.pro  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-sportsweek.org  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-iceprice.info  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-russia24.pro  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-life24.pro  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
-russian.city  # news aggregator 123ru.net/29ru.net, several domains. No contacts, possible affiliated
+! news aggregator 123ru.net/29ru.net, network with several domains. 
+! no contacts, affiliated sources
+123ru.net
+123ru.market
+29ru.net
+ru24.net
+newslife.pro
+newslife.org
+news-life.pro
+sportsweek.org
+iceprice.info
+russia24.pro
+life24.pro
+russian.city
 
 7ooo.ru
 2re.site  # 7ooo.ru
@@ -371,6 +373,11 @@ pravda.ru##.link.top
 pravoslavye.info
 pravoslavye.com.ua
 
+! from uBlock-AK-filter-rules: "Propaganda's bulsh*t"
+||president.gov.by
+! from uBlock-AK-filter-rules: "Propaganda's bulsh*t", modified
+by##a[href*='president.gov.by']
+
 ! ad scripts
 ! mainews.ru, nation-news.ru, nevnov.ru, politros.com, rueconomics.ru (see _fakenews_povar)
 ! UA-98124248
@@ -402,6 +409,12 @@ made-inussr.livejournal.com
 ! pub-9474501110373925
 ! https://web.archive.org/web/20200402093655/https://spyonweb.com/rusnext.ru
 rusnext.ru
+
+! most of the site is fakenews political articles
+! earlier
+russian7.ru##.topSoc
+russian7.ru###topBar:style(position:static !important)
+||russian7.ru/*/ctrenter.png
 
 russianstoday.ru
 
@@ -505,14 +518,3 @@ xn--80ahcsdpjist.xn--80adxhks  # недопускай.москва  # slovodel.c
 xn--80aaf2btl8d.xn--p1ai  # трымава.рф
 
 !! todo
-! from uBlock-AK-filter-rules: "Propaganda's bulsh*t"
-||president.gov.by
-! from uBlock-AK-filter-rules: "Propaganda's bulsh*t", modified
-by##a[href*='president.gov.by']
-
-! most of the site is fakenews political articles
-! earlier
-russian7.ru##.topSoc
-russian7.ru###topBar:style(position:static !important)
-||russian7.ru/*/ctrenter.png
-
