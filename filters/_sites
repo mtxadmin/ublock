@@ -2705,6 +2705,8 @@ tarif-24.ru##.mh-ticker-bottom
 
 101hotels.ru##.ribbon-small
 
+11tactical.ru##.phone
+
 123moviesearch.com##[href^="https://chrome.google.com/"]
 ||123moviesearch.com/show-icon.png
 123moviesearch.com##div > center > span
@@ -3453,21 +3455,25 @@ alternativeto.net###bottomNotifier
 
 altfishing-club.ru###branding
 
-amazon.com##.rhf-border
+! banners
+amazon.com##.a-carousel
+! other
+||ssl-images-amazon.com/images/*/dasf-  # is in EasyList
 ||amazon.*/ajax/counter?  # from EasyPricacy
 ||amazon.com/gp/cerberus  # trackers?
 ||unagi-*.amazon.com/1/events^  # from AdGuard Tracking Protection
+||a2z.com/x.png  # tracking
 @@||amazon.*/*uedata$first-party,image,badfilter  # No exclusion for amazon. Also added $important up in general rules
 ! see in _marketing: fls-na.amazon.com$important
 ! see in _marketing: cloudfront-labs.amazonaws.com$important
 amazon.com##.nav-flyout.nav-coreFlyout.glow-toaster-slot-default.glow-toaster-theme-default.glow-toaster.a-section
 assoc-na.associates-amazon.com/abid/
+amazon.com##.rhf-border
 amazon.com##.unified_widget
 amazon.com###cerberusVotingContainer
 amazon.com###detail-ilm_div
 amazon.com###woodstock-detail
 amazon.com##.nav-logo-link
-||ssl-images-amazon.com/images/*/dasf-  # is in EasyList
 
 american-boffin.com##.site-credits
 
@@ -6029,6 +6035,7 @@ domamo.ru##.front_info
 domamo.ru##.developed
 
 domclick.ru##.dc-dialog__overlay-5-9-1
+domclick.ru##[class*="dialog__header--banner"]
 
 domenolog.ru###f-bottom
 
@@ -6217,6 +6224,7 @@ duolingo.com##button:has-text(2020 offer)
 ||cloudfront.net/images/duo-plus-shop.svg
   ||duolingo.com/images/duolingo-plus-logo-feather.svg
 ||cloudfront.net/images/duolingo-plus-logo-feather.svg
+||cloudfront.net/test.png  # tracking image. Seen on Amazon
 
 dushlux.ru##.ico_block
 
@@ -6848,6 +6856,7 @@ fastpic.ru##.bleft.p-1.rounded.bg-dark.col-auto
 fastpic.ru##.d-lg-block.d-none.p-1.rounded.bg-dark.col-auto
 ! other
 fastpic.ru##.col-auto > .justify-content-center
+fastpic.ru##.text-muted
 
 fazasporta.com##.marquiz__container
 fazasporta.com##.block-s-geolocation
@@ -8484,7 +8493,10 @@ imagetwist.com###header
 
 imagevenue.com##center:has-text(Next)
 ||imagevenue.com/*/logo_resized.jpg
+||imagevenue.com/js/site_ads.js
 
+imdb.com##.oscars-site-stripe
+imdb.com##.ipc-logo
 imdb.com##div.mini-article > .ab_widget
 
 ! videoads
@@ -8717,6 +8729,8 @@ iphones.ru##.avatar
 iphones.ru##.footer__line2
 iphones.ru##.post_author_desc
 iphones.ru##div.relatedlist__header
+iphones.ru##.post__left-dotted-block
+iphones.ru##.header__menu-write
 
 ipify.org$important,third-party
 
@@ -8893,6 +8907,8 @@ ivd.ru##.footer-announce
 ivd.ru##.footer-info
 
 ivedu.ru###politics
+
+||ivlim.ru/forpage/fox.gif
 
 ivspecodezda.ru##.mfp-wrap
 ivspecodezda.ru##.mfp-bg
@@ -9213,17 +9229,24 @@ kinoafisha.info$3p  # ad xhrs
 kinonews.ru###rocket
 kinonews.ru##.text-footer
 
-!kinopoisk.ru##.adblock-detector-partial-component_visible_show
-!kinopoisk.ru##.adblock-detector-partial-component
+kinopoisk.ru##[class^=styles_badgeWithBigTitle]
+kinopoisk.ru##[class^=styles_buttonsContainer]
+kinopoisk.ru##[class^=styles_restriction]
+kinopoisk.ru##[class^=styles_share]
+kinopoisk.ru##[class^=styles_nameplate]
 kinopoisk.ru##[class^=styles_plusDesktopBrandingButton]
 kinopoisk.ru##[class*=styles_header]:style(position:static !important)
+kinopoisk.ru##[class*=ticketsButton]
+kinopoisk.ru##.header-fresh-partial-component__body:style(position:static !important)
+kinopoisk.ru##.block_cashup
+!kinopoisk.ru##.adblock-detector-partial-component_visible_show
+!kinopoisk.ru##.adblock-detector-partial-component
 kinopoisk.ru##.js-ott-widget__button_orange.feature_online_button_film.movie-online-button.js-ott-widget__button
 kinopoisk.ru##.mod
 kinopoisk.ru###forma.disabled.response
 kinopoisk.ru##.footer-partial-component__content-apps
 kinopoisk.ru###last_film
 kinopoisk.ru##.footer-partial-component__bottom-info-age
-kinopoisk.ru##.header-fresh-partial-component__body:style(position:static !important)
 kinopoisk.ru###m05g:style(margin-bottom:0px !important)
 ! strange filters from RU Adblock. Disabled again
 @@||www.kinopoisk.ru^$generichide,badfilter
@@ -9279,6 +9302,7 @@ kinopoisk.ru##[id*="_third_banner"]
 !
 ||avatars.mds.yandex.net/get-ott/$image
 ||avatars.mds.yandex.net/get-bunker/$image
+||kinopoisk.ru/install?
 
 kino-teatr.ru###special_block_img
 kino-teatr.ru###logo_block
@@ -9390,6 +9414,7 @@ kolchuga.ru###toTops
 kolesa.ru###postPopup.post-popup
 kolesa.ru##.marked-post
 kolesa.ru##.widget-comments.widget
+kolesa.ru##.link-to-catalog
 
 kolundrov.ru##.whb-general-header-inner:style(height:auto !important)
 kolundrov.ru##.single-breadcrumbs-wrapper:style(margin-top:0px !important)
@@ -10071,6 +10096,7 @@ lena-miro.ru,livejournal.com,varlamov.ru##.j-w-customtext
 lena-miro.ru,livejournal.com,varlamov.ru##.j-w-subscribe
 !
 !! promos
+||livejournal.net/img/journalpromo/
 ! is in Ru AdList (general as is)
 ##.appwidget-journalpromo
 livejournal.com##.telegram-userpromo
@@ -11430,6 +11456,9 @@ guntravmat.narod.ru##.b-counter
 guntravmat.narod.ru##.s3:style(color:#000 !important)
 guntravmat.narod.ru##.b-body a:style(color:#000 !important)
 
+saiga-410.narod.ru##.MsoNormal > span:style(color:#000 !important)
+saiga-410.narod.ru##.MsoBodyText > span:style(color:#000 !important)
+
 
 !nashebutovo.com##.fixed.eltdf-fixed-wrapper:style(position:static !important)
 
@@ -12020,6 +12049,10 @@ oneplus.com##.card-deck-wrapper
 
 oneweb.pro##.show > [href^="/слайдер/"]
 oneweb.pro###slider
+
+onko.guru##.footer-logo
+onko.guru##.footer-bottom
+onko.guru##.info-text
 
 online-knigi.com##.glyphicon
 online-knigi.com##.fixed_desktop
@@ -12710,6 +12743,7 @@ pikabu.ru##.stories-feed__container > section:has-text(Создать свою �
 ||pikabu.ru/avatars/2544/*2544877-1863435265.png
 ||pikabu.ru/avatars/2613/*2613714-397781318.png
 ||pikabu.ru/avatars/2656/*2656224-615281879.png
+||pikabu.ru/avatars/2752/*2752673-15146129.png
 ||pikabu.ru/avatars/2765/*2765368-1988781534.png
 ||pikabu.ru/avatars/2838/*2838243-478810401.png
 ||pikabu.ru/avatars/2856/*2856444-356776053.png
@@ -13751,8 +13785,16 @@ regard.ru##.minitextblock
 regard.ru###q-order
 regard.ru###rsidebar
 
+regexbuddy.com##.buynow
+regexbuddy.com##.testimonial
+regexbuddy.com###label
+regexbuddy.com###icon
+
 regmarkets.ru$3p  # ad scripts
 regmarkets.ru##.catalogItemPreviewLink
+
+||regular-expressions.info/img/header100.png
+regular-expressions.info###top
 
 reloading.su##.j-category-discription
 reloading.su##.j-contacts
@@ -14020,6 +14062,8 @@ rosinvest.com##.myheard
 rosmediy.ru##.phone-block
 rosmediy.ru##.top-block
 
+rosoncoweb.ru###header:style(height:auto !important)
+
 rosreestr.ru##.miniwidget-wrapper
 
 rotor43.ru##.widget_metaslider_widget
@@ -14191,47 +14235,85 @@ pornolab.net##.inited.sp-body > .post-align:has-text(СПАСИБО)
 pornolab.net###page_footer > .bCenter
 pornolab.net##div.post-align:has-text(Релизера можно поддержать)
 ! some annoying pictures
+||exkinoray.org/pic/ExKinoRay.org.gif
+||exkinoray.tv/pic/ExKinoRay.org.gif
 ||fastpic.ru/big/2009/1023/67/335f721dba8c4afaba20160aec267e67.jpg
 ||fastpic.ru/big/2011/0916/dc/bfddc1cf22892bfdb7b64e16d28776dc.png
+||fastpic.ru/big/2012/0123/f6/334924975de2dcf16bd14fedc24bb8f6.png
+||fastpic.ru/big/2012/0415/6c/bbfbcc98dfacf307d54c0d197fe0786c.jpg
 ||fastpic.ru/big/2012/0416/30/b66a0e8f216818fae24948a4f0414330.jpg
 ||fastpic.ru/big/2012/0530/ea/1e68a049ab9877f5739784ae3105efea.png
+||fastpic.ru/big/2012/1104/c8/a140d69418856366557bdf716f15bbc8.png
+||fastpic.ru/big/2012/1116/0c/48ac0f30dc36c3dfcfb41e203f5d580c.jpg
+||fastpic.ru/big/2012/1230/50/015e251f1c7b354009da01b653f56250.png?r=1
+||fastpic.ru/big/2012/1230/61/8610151309cf0e0da86b44304a7ad361.png?r=1
 ||fastpic.ru/big/2013/0120/e8/4239e16f78f74fe4a3c9601d3f3731e8.jpg
 ||fastpic.ru/big/2013/0303/0d/2f7de59b24d222fd3f008acd9894a80d.png
 ||fastpic.ru/big/2013/0303/eb/c76ce5b82c98d9b8528b9e5447eba5eb.png
+||fastpic.ru/big/2013/0308/dc/bb5ce7c1d31e38d01bbd1f82f08c7cdc.png
+||fastpic.ru/big/2013/0308/e7/280326124fa9d0db7c234bd52134b2e7.png
 ||fastpic.ru/big/2013/0413/0f/2b985ebc4c99e9ad7b08712d6afc740f.png
 ||fastpic.ru/big/2013/0413/50/32e9276fa62ceada6d352833769a3350.png
 ||fastpic.ru/big/2013/0413/9a/f82a13683e4affcc2421908ce4fe729a.png
 ||fastpic.ru/big/2013/0413/c8/3be1e12d9887361a94026b8a650a54c8.png
 ||fastpic.ru/big/2013/0413/ff/13f3c9c65a8cd9b3dc2fa75df8b872ff.png
 ||fastpic.ru/big/2013/0609/c5/bc94e696210a277b1f44441da03714c5.png
+||fastpic.ru/big/2013/0614/3a/6f48ea025e1f8da512312ecaa008753a.png
+||fastpic.ru/big/2013/0627/a8/f6ac1b62ce6ba3116f9b8d430f6f9ca8.png
 ||fastpic.ru/big/2013/0712/e9/9e0d5ed96cf6e052836befbbcdd779e9.jpg
+||fastpic.ru/big/2013/0720/d9/fd2c43826509f2e6b6752621661aedd9.png
+||fastpic.ru/big/2013/0921/94/c6e574858db665a84e20ebae6fd5ba94.png
 ||fastpic.ru/big/2013/1111/14/599c7ad98a14dcc49451afa83f0c2014.png
 ||fastpic.ru/big/2013/1127/e6/032e797f313fb50aab37e83bbad677e6.png
 ||fastpic.ru/big/2013/1208/46/f298e501b9ae40ea91bc76d4c2daea46.jpg
 ||fastpic.ru/big/2014/0112/29/98a8f4d442c9972578188f43b2408129.jpg
+||fastpic.ru/big/2014/0131/11/e35623acfe53eae583f49958bff91211.png
+||fastpic.ru/big/2014/0202/85/4e530d5c568e92faa1f3c4db76ac6485.png
+||fastpic.ru/big/2014/0204/9c/d17a7c4124678d6e9397a9fc18881a9c.jpg
+||fastpic.ru/big/2014/0305/5e/0c8429a923bf289d0d4d92662d4a155e.png
 ||fastpic.ru/big/2014/0410/cf/0630c78e39b002076c49c5323efafecf.jpg
+||fastpic.ru/big/2014/0514/55/ad939b9693daf5ef1efef9ff82328555.png
 ||fastpic.ru/big/2014/0524/6d/16969c38dcbe1920b642e8eaa1daab6d.png
 ||fastpic.ru/big/2014/0822/21/cdc998ba27ea489dd8cbfa66c5cadb21.png
 ||fastpic.ru/big/2014/0828/53/7015072392eb0c9f37f64ccdfe83c953.jpg
 ||fastpic.ru/big/2014/0828/53/7015072392eb0c9f37f64ccdfe83c953.jpg
+||fastpic.ru/big/2014/1001/df/ede4515f2074b19e5982d873e7b22cdf.png
 ||fastpic.ru/big/2014/1005/f1/03a8459670c7b9a8fb6fabb3c79d52f1.jpg
 ||fastpic.ru/big/2014/1018/fb/c516be66ed934389f5334d684e123efb.jpg
+||fastpic.ru/big/2015/0118/6e/5ccea0e6c92e4eaa9c7022980c52ef6e.jpg
 ||fastpic.ru/big/2015/0202/62/487e5eab03de190fc9900540e7b40c62.jpg
 ||fastpic.ru/big/2015/0328/93/35de901eb61b639c7cc7bd03363fad93.png
+||fastpic.ru/big/2015/0426/c0/ea84007230dc8c14aaecdc0cfca6a4c0.jpg
+||fastpic.ru/big/2015/0430/f0/75686d12d61a3dbc1318e489fdb5d4f0.png
 ||fastpic.ru/big/2015/0509/57/96af084f59142ad5bcde7212b36eeb57.png
+||fastpic.ru/big/2015/0512/6e/334378ca4f3398433cf61661d19e786e.jpg
+||fastpic.ru/big/2015/0711/e6/d79bf79e7ea9842af041fdd6cf3a3ae6.jpg
+||fastpic.ru/big/2015/0712/0a/c00a4b9aac4a1715bec284da38a60a0a.jpg
+||fastpic.ru/big/2015/0712/0a/c00a4b9aac4a1715bec284da38a60a0a.jpg
+||fastpic.ru/big/2015/0712/72/a708e54c74eae562a71dab8620efa572.png
 ||fastpic.ru/big/2015/0723/86/241033047a75c73a140f10f81ea77b86.jpg
 ||fastpic.ru/big/2015/0812/17/9d20ae8ebb645d336336e27c48d31217.png
 ||fastpic.ru/big/2015/0919/4f/ad6d6554a3e158da0b2e7e69b2ce2c4f.jpg
+||fastpic.ru/big/2016/0105/c0/23c68510de50794f5869da42d55eb0c0.jpg
+||fastpic.ru/big/2016/0129/ab/f10d131be38acc4540283d182d569bab.png
 ||fastpic.ru/big/2016/0522/f9/5599dc60fba2975c821825196eb646f9.jpg
 ||fastpic.ru/big/2016/1114/6e/e548ce1a9c6d88372b208ed551f9736e.png
 ||fastpic.ru/big/2016/1124/39/67b9418fecbf6032afcd4808e3970739.png
 ||fastpic.ru/big/2016/1124/39/67b9418fecbf6032afcd4808e3970739.png
+||fastpic.ru/big/2017/0103/5f/7cdcdeb7056509693775e91daa25b95f.png
 ||fastpic.ru/big/2017/0211/e2/41c93cc9a2c33728a0ac52231f2ae1e2.jpg
+||fastpic.ru/big/2017/0713/30/3ac7c5f4326d037cafe5c36a058e4e30.png
+||fastpic.ru/big/2017/0828/ed/2aabb61b8b83d996c4481315017adeed.jpg
 ||fastpic.ru/big/2017/1128/4e/7fd9875e44e957e4af31fa5272f7ef4e.jpg
 ||fastpic.ru/big/2018/0412/21/dfca2ed928b0f7e7475acdea37cd4221.png
 ||fastpic.ru/big/2018/1004/39/3151a47bace666b0ad1ad14630e6a139.jpg
 ||fastpic.ru/big/2018/1118/a6/f2a7251e28fd28061ca1f5654b6659a6.png
+||fastpic.ru/big/2019/0526/36/b43b32bff73b0f8722336ce6d2290836.png
+||fastpic.ru/big/2019/0723/bc/3dc2d508849d5af614082aad952d83bc.jpg
+||fastpic.ru/big/2019/0812/20/fb4e472b7de9e1987931a95e6fcd6120.jpg
 ||fastpic.ru/big/2019/0815/5f/de81d81cab73550ece7790c520f9a95f.jpg
+||fastpic.ru/big/2019/0822/fc/07b294a8225c244cfae1dd2f9eb82bfc.jpg
+||fastpic.ru/big/2019/0902/01/735052f05c3723e730baa21acb88ab01.jpg
 ||fastpic.ru/big/2019/1021/56/826a1bf9699b6cd4d89d8e67333e7d56.png
 ||fastpic.ru/big/2019/1103/b0/e786b30551acb5d9e2802273ff1d84b0.png
 ||fastpic.ru/big/2019/1126/de/40d5a0c8d2771782e2b41d94c2f4bdde.png
@@ -14239,10 +14321,13 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.ru/big/2019/1218/1f/2973272492ebb7bbae2220e65ea37e1f.jpg
 ||fastpic.ru/big/2019/1221/3c/956ec873d6c1737cd1c287d40e77c53c.jpg
 ||fastpic.ru/big/2019/1227/d0/a15d6be669e3428e222a1224648fd2d0.jpg
+||fastpic.ru/big/2020/0209/9d/9c19135304b99cc85afddb656f924b9d.png
 ||fastpic.ru/big/2020/0418/c5/8b0305f4d15a2406b2540193db4588c5.jpg
+||fastpic.ru/big/2020/0622/bf/f896a934375aa65b5d6e58e4647309bf.jpg
 ||fastpic.ru/big/2020/0625/ae/14be4f3279a1e5c63d976e999274d7ae.jpg
 ||fastpic.ru/big/2020/0701/2f/d134cab3fbfb15ff68e3d47e5fd9682f.png
 ||fastpic.ru/big/2020/0915/16/7fb54380d2c1b276eeeb7a6e5108d016.jpg
+||fastpic.ru/big/2020/1120/9d/ee253a5c0277187f7eebd8de2e00ae9d.jpg
 ||fastpic.ru/big/2020/1120/d6/03e54e90b1e7c1ee2b73586597ffd8d6.png
 ||fastpic.ru/big/2020/1204/09/6657a46cfc421c01561ba5eb98456009.png
 ||fastpic.ru/big/2020/1223/3c/0e45b5cfce77fca434392b6c906c0d3c.png
@@ -14250,18 +14335,28 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.ru/big/2020/1229/2b/915a1ee39aa5dd8f908441c93871cb2b.jpg
 ||fastpic.ru/big/2020/1231/9b/5769ba760eb613bde24620f23a7e1c9b.png
 ||fastpic.ru/big/2021/0110/2c/ed5746f701e60381c5aba9f7e4afea2c.jpg
-||exkinoray.tv/pic/ExKinoRay.org.gif
+||fastpic.ru/big/2021/0114/6f/03fd61acf53b715c7a55ae2a0c88e26f.jpg
+||fastpic.ru/big/2021/0224/3a/abc493ee6fe87b30cab1b13d304d4f3a.png
+||fastpic.ru/big/2021/0226/97/1d663925cc45a78a2ae7adafa0423697.png
+||fastpic.ru/big/2021/0226/97/1d663925cc45a78a2ae7adafa0423697.png
+||fastpic.ru/big/2021/0226/97/1d663925cc45a78a2ae7adafa0423697.png
+||fastpic.ru/big/2021/0226/b8/476a405aee94c5d29976d02fd442efb8.jpg
+||fastpic.ru/big/2021/0407/98/fedcdf297597ff091cdaf30859f12a98.jpg
+||fastpic.ru/thumb/2014/0302/8d/d18f38591d152fca9da17ef139e15f8d.jpeg
 ||funkyimg.com/i/2YTU5.gif
 ||funkyimg.com/i/2YTU6.gif
+||imageban.ru/out/2018/12/06/028cbda372e272916502fa6d9a36818c.png
 ||imgur.com/lZPBJzD.png
 ||imgur.com/rHY2oMb.png
 ||imgur.com/ZjtZ8Oc.png
+||lostpic.net/2016/09/27/00c0babc22ac605bd1dab45c935734ca.png
 ||lostpic.net/2020/09/20/a8bb500965768b8e86f2a0784fa905ac.png
 ||lostpic.net/orig_images/2/9/f/29f121995948a119fa90deaf3577847a.png
 ||lostpic.net/orig_images/4/4/8/44898e3d5c443f108f267b2aba112d26.png
 ||lostpic.net/orig_images/9/3/e/93eceee739dbbacca1e7d54ca254f6d8.png
 ||lostpic.net/orig_images/e/d/5/ed522035ca585dd79780a8bf8e55045e.jpg
 ||megapeer.ru/pic/megapeer.gif
+||new-team.org/images/logo88x31.png
 ||new-team.org/images/rg_nto.gif
 ||nnmclub.ch/*/nnm.gif
 ||nnmclub.ch/*/platinum.gif
@@ -14270,9 +14365,14 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||pb.wtf/images/groups/60fps.gif
 ||pornolab.net/avatars/1/32/5524232.jpg
 ||pornolab.net/pic/screenshots.gif
+||pornolab.net/pic/screenshots2.gif
+||radikal.ru/a13/1801/c3/e7be9ef1da98.png
+||radikal.ru/a25/1808/89/98e67176e03c.png
+||radikal.ru/i324/1703/b4/45f85fb84eb0.png
 ||radikal.ru/i509/1307/07/e8cb4fa7c900.jpg
 ||radikal.ru/i634/1204/63/aa738d05b036.png
 ||radikal.ru/i705/1603/5d/c8154e8acfc3.png
+||rips.club/img/group_vk.png
 ||scarabey.org/images/hqclub.gif
 ||t-ru.org/pic/ivi.png
 
@@ -15641,6 +15741,9 @@ syl.ru##.topmenu
 
 superdom.ua##.nav-top:style(position:static !important)
 
+!||superjob.ru/fstc/*/AdfoxBanner - don't
+||superjob.ru/*/savePerformanceStat  # stats
+||superjob.ru/ws/  # www.superjob.ru/ws/trec/  # www.superjob.ru/ws/hit/  # is in EasyPrivacy
 ! header
 superjob.ru##div > div > div > div:has-text(Ваш браузер устарел)
 !superjob.ru##div:matches-css(position:sticky) - don't, the menu is useful
@@ -15654,9 +15757,9 @@ superjob.ru##.f-test-social-link-yandex
 superjob.ru##.f-test-social-link-hh
 superjob.ru##.f-test-vacancy-subscripion
 superjob.ru##.f-test-button-Podelitsya
-! stats
-superjob.ru/*/savePerformanceStat
 ! other
+! Adguarg rule
+superjob.ru##div[class*="f-test-vacancy-ad-context-"]
 
 syloe.com##.mf-modal-iframe
 syloe.com##.mf-modal-overlay
@@ -16166,6 +16269,10 @@ theatlantic.com##.c-nudge__container
 
 thebell.io##.mb-hide.tb-hide.ball
 thebell.io##.header--fixed:style(position:static !important)
+
+thefirearmblog.com###sidebar
+thefirearmblog.com###header
+thefirearmblog.com##.author_bio
 
 thegeekdiary.com##.site-header
 
@@ -19213,12 +19320,6 @@ skillset.com##.navbar_lower:style(position:static !important)
 skillset.com##.ready-push
 skillset.com##.go-pro-benefits
 skillset.com##.question-hero
-
-kinopoisk.ru##[class^=styles_badgeWithBigTitle]
-kinopoisk.ru##[class^=styles_buttonsContainer]
-kinopoisk.ru##[class^=styles_restriction]
-kinopoisk.ru##[class^=styles_share]
-kinopoisk.ru##[class^=styles_nameplate]
 
 ||mssqltips.com/images/mslogo$image
 
