@@ -251,7 +251,6 @@ _advert/  # from EasyList
 /sponsored-articles/*$xmlhttprequest  # is in EasyList
 /sys/js/$third-party  # from Adguard (many random domains)
 /test-widget/*
-/tracklog.  # is in EasyPrivacy
 /trafficguard.js$important
 /uedata?$important  # from AdGuard Tracking Protection and EasyPrivacy, modified
 /upsell.js
@@ -1043,6 +1042,10 @@ _analytics.js?  # from EasyPrivacy
 /angular-google-analytics$important
 /angularytics$important
 /antibot.php
+/api/log/*
+    ! ||paypal.com/xoplatform/logger/api/logger  # is in EasyPrivacy
+    ! ||sberbank.ru/api/log/
+    ! ||tele2.ee/api/log
 /api/tracker/*
 /appmeasurement.js$important
 /atrk.gif
@@ -1152,6 +1155,7 @@ _pagespeed_beacon?  # from AdGuard
 /tbw/pixels/*  # is in EasyPrivacy
 /track?$image  # from EasyPrivacy: .com/track?$image
 /track.js$important
+/tracklog.  # is in EasyPrivacy
 /track.min.js
 /track_click?  # from EasyPrivacy
 /tracker?*=  # from EasyPrivacy
@@ -14543,7 +14547,6 @@ sbcode.net##.md-sidebar:style(position:static !important)
 ! sbrf
 ||sberbank.ru/*/logoheader.png
 ||sberbank.ru/api/fl/id2
-||sberbank.ru/api/log/
 #||sberbank.ru/PL/lib.analytics/   # там только json грузится, его не надо
 ||sberbank.ru/api/fl?u
 ||sberbank.ru/CMS/CAMPAIGNS/$image
@@ -19233,8 +19236,6 @@ vedomosti.ru##.article__sidebar
 rbc.ru##.js-ga-counter.js-yandex-counter
 rbc.ru##.g-banner__news-footer
 rbc.ru##.article__text__pro::after
-
-||paypal.com/xoplatform/logger/api/logger  # is in EasyPrivacy
 
 yoursunny.com##.site-header-title
 yoursunny.com##.site-header-subtitle
