@@ -105,6 +105,8 @@ intergi.com$important  &nbsp;**# ad scripts**  &nbsp;# is in Malvertising filter
 Пометка "ad redirects" обозначает, что были замечены подозрительные редиректы с данного домена. Сам по себе признак не очень сильный, некая "косвенная улика"
 
 promostack.ru  **# ad redirects** and no root  # go.promostack.ru
+
+recode.pw  **# ad redirects** and cover root with fake blog from 2017
 <br><br>
 
 
