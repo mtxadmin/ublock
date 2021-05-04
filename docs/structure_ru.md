@@ -2,15 +2,15 @@
 
 Структура списка
 
-docs
-filters
-hosts
-  backups
-  subdomains 
-test
+docs<br>
+filters<br>
+hosts<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;backups<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;subdomains<br>
+test<br>
 
-hosts.txt
-hosts_blokada.txt
-it
-it0
+hosts.txt<br>
+hosts_blokada.txt<br>
+it<br>
+it0<br>
 
