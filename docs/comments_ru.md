@@ -183,6 +183,16 @@ retentioneering.com  # ad scripts  &nbsp;**# "why customers leave your product a
 <br><br>
 
 
+Пометки "! see domain in list" - просто необязательные комментарии, что домен domain был перенесен в другой файл-подсписок. Встречаются редко, ранняя попытка сократить количество повторений. Иногда всё ещё могут быть полезными.
+
+**! see** gorotza.biz **in** _marketing_ibmmarketingcloud
+
+**! see** jamba.* **in** _wap
+
+**! see** ladycenter.ru **in** _marketing_marketgid
+<br><br>
+
+
 Комментарии "!+ " и "! end of " являются вспомогательными техническими. Они не обрабатываются блокировщиком, и служат сугубо для упрощения развертывания поддоменов сайта.
 
 innity.net<br>
