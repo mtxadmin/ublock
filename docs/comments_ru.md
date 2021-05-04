@@ -149,6 +149,28 @@ aeifaeifhutuhuhuso.io    &nbsp;**# zombie**
 <br><br>
 
 
+Пометка "403 root" (или "root 403") означает, что при просмотре корня сайта он писал про отсутствие доступа. Очень похожа на неё и пометка "401 root". Как правило, это технические домены рекламных сетей, не предназначенные для просмотра, но зачастую содержащие скрипты и прочие элементы
+
+dombnrs.com$important  &nbsp;**#** ad scripts and **403 root**  # is in uBlock filters
+
+hotline.ua  &nbsp;**# 401 root** (captcha)  # from Ru AdList
+
+googleoptimize.com  &nbsp;**#** ad scripts and **403 root**
+
+dollartree.com  &nbsp;**# root 401**
+<br><br>
+
+
+Пометка "404 root" - да, наиболее известная "ошибка 404" (нет такого файла) при просмотре корня сайта. Аналогично, технический домен.
+
+durasser.com  &nbsp;**#** ad redirects and **404 root**
+
+errorpilot.com  &nbsp;**# 404** json
+
+g650trax.com  &nbsp;**# 404 root**
+<br><br>
+
+
 Пометки с текстом в кавычках указывают текст цитат с соответствующего сайта. Обычно они ярко показывают причину блокировки.
 
 1dmc.com$important  &nbsp;# tracking pixels  &nbsp;**# "Data Marketing Platform"**  &nbsp;# hermann.ai
