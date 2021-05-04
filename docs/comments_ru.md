@@ -41,7 +41,7 @@ cry.ru##noindex<br>
 
 И здесь, аналогично:
 
-boomerang.dell.com  # is in EasyPrivacy<br>
+boomerang.dell.com  &nbsp;**# is in EasyPrivacy**<br>
 dell.com###contactslidertitle<br>
 dell.com###okbFeedback<br>
 
@@ -139,7 +139,7 @@ retentioneering.com  # ad scripts  &nbsp;**# "why customers leave your product a
 <br><br>
 
 
-Комментарии "!+ " и "! end of " являются вспомогательными техническими. Они не обрабатываются блокировщиком, и служат для упрощения развертывания поддоменов сайта.
+Комментарии "!+ " и "! end of " являются вспомогательными техническими. Они не обрабатываются блокировщиком, и служат сугубо для упрощения развертывания поддоменов сайта.
 
 innity.net<br>
 **!+**  media.innity.net<br>
