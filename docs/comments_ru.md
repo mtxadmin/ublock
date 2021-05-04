@@ -34,16 +34,16 @@ lamoda.ru##.ii-subscription<br>
 
 Здесь комментарий относится только к этой же строке:
 
-||cry.ru/sexclub/  &nbsp;# from Adguard
-cry.ru###header-date
-cry.ru###header
-cry.ru##noindex
+||cry.ru/sexclub/  &nbsp;# from Adguard<br>
+cry.ru###header-date<br>
+cry.ru###header<br>
+cry.ru##noindex<br>
 
 И здесь, аналогично:
 
-boomerang.dell.com  # is in EasyPrivacy
-dell.com###contactslidertitle
-dell.com###okbFeedback
+boomerang.dell.com  # is in EasyPrivacy<br>
+dell.com###contactslidertitle<br>
+dell.com###okbFeedback<br>
 
 
 И здесь:
@@ -135,13 +135,13 @@ retentioneering.com  # ad scripts  &nbsp;**# "why customers leave your product a
 <br><br>
 
 
-Комментарии "!+ " и "! end of " являются вспомогательными техническими. Они не обрабатываются блокировщиком, и служат для упрощения развертывания поддоменов сайта.
+Комментарии "!+ " и "! end of " являются вспомогательными техническими. Они не входят в стандарт AdBlock и не обрабатываются блокировщиком, и служат для упрощения развертывания поддоменов сайта.
 
 innity.net<br>
-!+  media.innity.net<br>
-! end of innity<br>
+**!+**  media.innity.net<br>
+**! end of** innity<br>
 
 eacdn.com  # adsrv.eacdn.com from Malvertising filter list by Disconnect and Peter Lowe’s Ad and tracking server list<br>
-!+  adsrv.eacdn.com<br>
-! end of eacdn.com<br>
+**!+**  adsrv.eacdn.com<br>
+**! end of** eacdn.com<br>
 
