@@ -5616,8 +5616,6 @@ desantura.ru###flag:style(height:auto !important)
 ||1c-bitrix-cdn.ru/*/lenta.png
 ||1c-bitrix-cdn.ru/*/flag.jpg
 
-rb1.design.ru  # from Peter Lowe's hosts file
-
 ! agressive obfuscated adblock blocker script
 destinations.com.ua$inline-script
 
@@ -9755,8 +9753,7 @@ lamoda.ru##.unipop__container
 lamoda.ru##.js-lazy-recomendation.main-recommendation.width-wrapper
 ||lamoda.ru/sw.js
 ||lmcdn.ru/site/error/
-! is in EasyPrivacy
-||lmcdn.ru^*/statistics.js
+||lmcdn.ru^*/statistics.js  # is in EasyPrivacy
 ||lmcdn.ru/ru/$image
 ||lmcdn.ru/site/log/
 
@@ -14897,8 +14894,7 @@ shopcarry.ru##.tmenu:style(position:static !important)
 ! this rule is way too hard. It breaks many shopify-fueled shops :-(
 !shopify.com$third-party,script,important,domain=~gear.duolingo.com|~thepihut.com
 !
-! from EasyPrivacy
-||shopify.com/*/page?*&eventType=$important
+||shopify.com/*/page?*&eventType=$important  # from EasyPrivacy
 ||shopify.com/*/tricorder/$important  # from EasyPrivacy: ||shopify.com/s/javascripts/tricorder/$script
 ||shopify.com/track.js$important  # from EasyPrivacy
 ||shopify.com/*/shop_events_listener$important
@@ -16703,8 +16699,7 @@ trustradius.com##.login-modal
 ||trustradius.com/*/reg_wall.js
 
 trustwave.com$third-party
-! from Fanboy’s Enhanced Tracking List
-||sealserver.trustwave.com^$third-party
+||sealserver.trustwave.com^$third-party  # from Fanboy’s Enhanced Tracking List
 
 ! it seems, the domain from truvidplayer.com
 ! pixel.gif and empty root
