@@ -102,8 +102,12 @@ intergi.com$important  &nbsp;**# ad scripts**  &nbsp;# is in Malvertising filter
 
 Пометка "no root" обозначает, что при попытке зайти на соответствующий хост, не было вменяемого ответа. Обычно это указывает на принадлежность хоста к рекламной или следящей сети. Исключения есть, но они очень редки.
 
-actionbutton.co$important  &nbsp;# ad scripts and no root
+virton.net  &nbsp;# redtram.com  &nbsp;**# no root**
 
+actionbutton.co$important  &nbsp;**#** ad scripts and **no root**
+
+newsportal1.com  **#** ad scripts and **no root**  # tizerbox
+<br><br>
 
 
 Пометка "ad network" обозначает, что была встречена реклама соответствующей рекламной сети. Да, рекламщики активно рекламируют себя :-)
