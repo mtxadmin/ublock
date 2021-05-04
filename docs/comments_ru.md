@@ -99,7 +99,13 @@ avantisvideo.com$important  &nbsp;**# ad scripts**  &nbsp;# is in uBlock filters
 requestmetrics.com  &nbsp;**# ad scripts**  &nbsp;# is in EasyPrivacy
 
 intergi.com$important  &nbsp;**# ad scripts**  &nbsp;# is in Malvertising filter list by Disconnect and Peter Lowe’s Ad and tracking server list
+<br><br>
 
+
+Пометка "ad redirects" обозначает, что были замечены подозрительные редиректы с данного домена. Сам по себе признак не очень сильный, некая "косвенная улика"
+
+promostack.ru  **# ad redirects** and no root  # go.promostack.ru
+<br><br>
 
 
 Пометка "no root" обозначает, что при попытке зайти на соответствующий хост, не было вменяемого ответа. Обычно это указывает на принадлежность хоста к рекламной или следящей сети. Исключения есть, но они очень редки.
@@ -115,7 +121,11 @@ newsportal1.com  **#** ad scripts and **no root**  # tizerbox
 Пометка "ad network" обозначает, что была встречена реклама соответствующей рекламной сети. Да, рекламщики активно рекламируют себя :-)
 Это больше относится к мелким и средним сетям, крупные и так на виду.
 
-americanclassifiedservices.com  &nbsp;# ad network
+americanclassifiedservices.com  &nbsp;**# ad network**
+
+decktrade.com  &nbsp;**# ad network**
+
+theadstars.com$important  &nbsp;**# ad network**
 <br><br>
 
 
@@ -126,6 +136,16 @@ grclk030.com  &nbsp;**#printrk.com**
 gredinatib.biz  &nbsp;**#i-adv.biz**
 
 offer-notavailable.com  &nbsp;**# greatdexchange.com**
+<br><br>
+
+
+Забавная пометка "zombie" означает, что домен некоторое время полностью отсутствовал в DNS, а потом появился снова. Да, это может быть ошибка владельца/администратора, но также может свидетельствовать о перекупке домена спамерами или рекламщиками. Обычно, это дорога в один конец, с подобных некогда раскрученных доменов начинает валить спам и всякое прочее.
+
+royal.partners  &nbsp;# ad network  &nbsp;**# zombie**
+
+1cpa.ru    &nbsp;**# zombie**
+
+aeifaeifhutuhuhuso.io    &nbsp;**# zombie**
 <br><br>
 
 
