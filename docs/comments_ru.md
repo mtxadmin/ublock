@@ -3,32 +3,32 @@
 Комментарии помогают понять причины блокировки. Могут быть указаны причины блокировки, либо первоначальный источник правила или хоста.
 <br><br>
 
-Они, по стандарту AdBlock, могут начинаться либо с **#** , либо с **!** . Иногда это просто заметки, пояснения. Помимо этого, в данном списке есть несколько исторически сложившихся правил. Разумеется, это не догма, но просто подобная стандартизация облегчает правки.
+Они, по стандарту AdBlock, могут начинаться либо с **#** , либо с **!** . Иногда это просто заметки, пояснения. Помимо этого, в данном списке есть несколько исторически сложившихся правил. Разумеется, это не догма, но подобная стандартизация облегчает правки.
 
 В случае косметических правил, поскольку по стандарту, нельзя писать в них комментарии, то комментарий располагается над строкой. "Область действия": в случае "from" и "is in", это относится только к этой строке, если не указано иное. В других случаях, часто относится ко всему блоку. Звучит немного громоздко, поэтому проще разобрать на примерах.
 
 Здесь комментарии относятся к нижележащим строкам, каждый к своей:
 
-reddit.com##.commentsignupbar.infobar
-reddit.com##.listingsignupbar.infobar
-! from EasyList
-reddit.com##div[id^="overlay-sidebar-atf-"]
-! from EasyList
-reddit.com##div[id^="overlay-sidebar-btf-"]
+reddit.com##.commentsignupbar.infobar<br>
+reddit.com##.listingsignupbar.infobar<br>
+! from EasyList<br>
+reddit.com##div[id^="overlay-sidebar-atf-"]<br>
+! from EasyList<br>
+reddit.com##div[id^="overlay-sidebar-btf-"]<br>
 
 
 А здесь, комментарии относятся ко всем нижележащим правилам, и являются некими разделителями в блоке правил для сайта:
 
-! banners in header
-lamoda.ru##.header__top
-! wide banners and sliders
-lamoda.ru##.js-wide-slider
-lamoda.ru##.wide-slider
-lamoda.ru##.wide-slider-wrap
-lamoda.ru##.sport-slider-wrap
-! subs banner
-lamoda.ru##.subscription-footer_wrapper
-lamoda.ru##.ii-subscription
+! banners in header<br>
+lamoda.ru##.header__top<br>
+! wide banners and sliders<br>
+lamoda.ru##.js-wide-slider<br>
+lamoda.ru##.wide-slider<br>
+lamoda.ru##.wide-slider-wrap<br>
+lamoda.ru##.sport-slider-wrap<br>
+! subs banner<br>
+lamoda.ru##.subscription-footer_wrapper<br>
+lamoda.ru##.ii-subscription<br>
 
 
 С URL и хостовыми правилами проще - поскольку в них можно добавлять комментарии в ту же строку, то лучше так и сделать. 
@@ -49,11 +49,11 @@ dell.com###okbFeedback
 
 И здесь:
 
-||shopify.com/*/page?*&eventType=$important  &nbsp;# from EasyPrivacy
-||shopify.com/*/tricorder/$important  &nbsp;# from EasyPrivacy: ||shopify.com/s/javascripts/tricorder/$script
-||shopify.com/track.js$important  &nbsp;# from EasyPrivacy
-||shopify.com/*/shop_events_listener$important
-/shopify-boomerang-$important  &nbsp;# from EasyPrivacy
+||shopify.com/*/page?*&eventType=$important  &nbsp;# from EasyPrivacy<br>
+||shopify.com/*/tricorder/$important  &nbsp;# from EasyPrivacy: ||shopify.com/s/javascripts/tricorder/$script<br>
+||shopify.com/track.js$important  &nbsp;# from EasyPrivacy<br>
+||shopify.com/*/shop_events_listener$important<br>
+/shopify-boomerang-$important  &nbsp;# from EasyPrivacy<br>
 
 Если комментариев несколько, они разделяются двумя пробелами:
 
@@ -138,11 +138,11 @@ retentioneering.com  # ad scripts  &nbsp;**# "why customers leave your product a
 
 Комментарии "!+ " и "! end of " являются вспомогательными техническими. Они не обрабатываются блокировщиком, и служат для упрощения развертывания поддоменов сайта.
 
-innity.net
-!+  media.innity.net
-! end of innity
+innity.net<br>
+!+  media.innity.net<br>
+! end of innity<br>
 
-eacdn.com  # adsrv.eacdn.com from Malvertising filter list by Disconnect and Peter Lowe’s Ad and tracking server list
-!+  adsrv.eacdn.com
-! end of eacdn.com
+eacdn.com  # adsrv.eacdn.com from Malvertising filter list by Disconnect and Peter Lowe’s Ad and tracking server list<br>
+!+  adsrv.eacdn.com<br>
+! end of eacdn.com<br>
 
