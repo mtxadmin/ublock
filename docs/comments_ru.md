@@ -10,22 +10,22 @@
 
 reddit.com##.commentsignupbar.infobar<br>
 reddit.com##.listingsignupbar.infobar<br>
-! from EasyList<br>
+**! from EasyList**<br>
 reddit.com##div[id^="overlay-sidebar-atf-"]<br>
-! from EasyList<br>
+**! from EasyList**<br>
 reddit.com##div[id^="overlay-sidebar-btf-"]<br>
 
 
 А здесь, комментарии относятся ко всем нижележащим правилам, и являются некими разделителями в блоке правил для сайта:
 
-! banners in header<br>
+**! banners in header**<br>
 lamoda.ru##.header__top<br>
-! wide banners and sliders<br>
+**! wide banners and sliders**<br>
 lamoda.ru##.js-wide-slider<br>
 lamoda.ru##.wide-slider<br>
 lamoda.ru##.wide-slider-wrap<br>
 lamoda.ru##.sport-slider-wrap<br>
-! subs banner<br>
+**! subs banner**<br>
 lamoda.ru##.subscription-footer_wrapper<br>
 lamoda.ru##.ii-subscription<br>
 
@@ -34,7 +34,7 @@ lamoda.ru##.ii-subscription<br>
 
 Здесь комментарий относится только к этой же строке:
 
-||cry.ru/sexclub/  &nbsp;# from Adguard<br>
+||cry.ru/sexclub/  &nbsp;**# from Adguard**<br>
 cry.ru###header-date<br>
 cry.ru###header<br>
 cry.ru##noindex<br>
@@ -48,11 +48,11 @@ dell.com###okbFeedback<br>
 
 И здесь:
 
-||shopify.com/*/page?*&eventType=$important  &nbsp;# from EasyPrivacy<br>
-||shopify.com/*/tricorder/$important  &nbsp;# from EasyPrivacy: ||shopify.com/s/javascripts/tricorder/$script<br>
-||shopify.com/track.js$important  &nbsp;# from EasyPrivacy<br>
+||shopify.com/*/page?*&eventType=$important  &nbsp;**# from EasyPrivacy**<br>
+||shopify.com/*/tricorder/$important  &nbsp;**# from EasyPrivacy: ||shopify.com/s/javascripts/tricorder/$script**<br>
+||shopify.com/track.js$important  &nbsp;**# from EasyPrivacy**<br>
 ||shopify.com/*/shop_events_listener$important<br>
-/shopify-boomerang-$important  &nbsp;# from EasyPrivacy<br>
+/shopify-boomerang-$important  &nbsp;**# from EasyPrivacy**<br>
 
 Если комментариев несколько, они разделяются двумя пробелами:
 
