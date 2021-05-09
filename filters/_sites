@@ -3335,6 +3335,8 @@ alexgyver.ru##.fusion-sticky-header-wrapper:style(position:static !important)
 alexgyver.ru##.fusion-secondary-main-menu:style(position:static !important)
 alexgyver.ru##.alert-danger.error.alert.fusion-alert
 
+@@||alexstuff.ru^$generichide,badfilter
+
 alexzsoft.ru##.blog-header
 ||alexzsoft.ru/wp-content/themes/alexsoft/img/fon/triangles.jpg
 
@@ -3369,6 +3371,8 @@ alfaplan.ru###hh
 alfaplan.ru##p.pr-ph-num
 alfaplan.ru##.stamp
 
+@@||alhimika.net^$generichide,badfilter
+
 alienwarearena.com##.navbar-top:style(position:static !important)
 
 ! aliexpress.com - see in aliexpress
@@ -3397,6 +3401,9 @@ allali.ru##.btn-success.btn
 
 ||allbanks.kz/img/vverh.png
 allbanks.kz##.vverh
+
+! that's from Ru AdList (todo: is it really needed?)
+@@||all-episodes.tv^$generichide,badfilter
 
 ||all-forum.ru/images/all-forum.ru.png
 
@@ -3590,6 +3597,12 @@ angrycitizen.ru##.fixed-type:style(position:static !important)
 aniko-gas.ru###masthead
 
 animalreader.ru##.td-header-top-menu
+
+! that's from Ru AdList (todo: is it really needed?)
+@@||anistar.me^$generichide,badfilter
+
+! that's from Ru AdList (todo: is it really needed?)
+@@||anivisual.net^$generichide,badfilter
 
 annamama.ru##.bottom.x-colophon
 
@@ -4036,6 +4049,10 @@ avangard-sp.ru##.price-whol:style(font-size: 16px !important;)
 ||forum.avast.com/avt/avatar*.gif$image
 
 avatap.ru$third-party
+
+! They asked Ru AdList for an exclusion...
+@@||avcore.ru^$generichide,badfilter
+! and now they show error 1020.
 
 avepizza.ru###footer-pane:style(position:static !important)
 
@@ -10571,6 +10588,11 @@ maketecheasier.com##.toc
 maketecheasier.com##[id^="MTE_in_content_ad"]
 ! is in Adguard
 maketecheasier.com##.sidebar-subscribe-box
+
+! promoted posts
+makeuseof.com##.browse-clip:has(a[href="/category/sponsored/"])
+! override Fanboy's exception - instead of !makeuseof.com##.header-logo and other
+@@*$generichide,domain=makeuseof.com,badfilter
 
 ||mal-kuz.ru/images/vk1.png
 ||mal-kuz.ru/images/in.png
@@ -17311,6 +17333,8 @@ uzone.id##.top-nav-container:style(position:static !important)
 uzone.id##.banner-youtube-mid-parent
 uzone.id##.box-content-trending
 
+@@||vacancies.club^$generichide,badfilter
+
 blog.vadmin.ru###header-inner
 
 valynkin.ru###headerLeft
@@ -19306,23 +19330,6 @@ kb.zyxel.ru###launcher
 
 /mobile_menu.js
 
-@@||vacancies.club^$generichide,badfilter
-
-@@||alexstuff.ru^$generichide,badfilter
-
-@@||alhimika.net^$generichide,badfilter
-
-! that's from Ru AdList (todo: is it really needed?)
-@@||all-episodes.tv^$generichide,badfilter
-
-! that's from Ru AdList (todo: is it really needed?)
-@@||anistar.me^$generichide,badfilter
-
-! that's from Ru AdList (todo: is it really needed?)
-@@||anivisual.net^$generichide,badfilter
-
-@@||avcore.ru^$generichide,badfilter
-
 ! that's generichides from Ru AdList. Todo recheck all. Seems they are all ok.
 @@||audioportal.su^$generichide,badfilter
 @@||audioskazki.net^$generichide,badfilter
@@ -19462,9 +19469,6 @@ adman.in.gr  # from Dan Pollock's hosts file
 /siropu/am/core.min.js  # is in uBlock filters
 
 ||amazonaws.com/videodownloaderpro/debug.json
-
-! override Fanboy's exception - instead of !makeuseof.com##.header-logo and other
-@@*$generichide,domain=makeuseof.com,badfilter
 
 /_/batch|$xmlhttprequest,1p  # is in Fanboy's
 
