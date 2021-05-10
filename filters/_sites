@@ -96,6 +96,7 @@ _advert/  # from EasyList
 /advertisement.js$xmlhttprequest,important
 /advertisement.js$important
 /advertising/$important,domain=~aliexpress.com|~aliexpress.ru
+/advertising.banner/*$important
 /advpic/*  # from EasyList China
 /adwords/$important
 /adx/*
@@ -2521,6 +2522,7 @@ tarif-24.ru##.mh-ticker-bottom
     ! ##.author-box-desc
     ! ##.author-box__description
     ! ##.author-box__rating
+###about_the_author
 ##.author-avatar
 ##.author_avatar
 ##.author__avatar
@@ -3961,6 +3963,10 @@ author.today##section.content:style(margin-top:0px !important)
 author.today##.reader-header:style(position:static !important; border-bottom:none !important; border-left:none !important)
 
 ||auto.ru/-/ajax/desktop/events_log/
+auto.ru##.Header__logo
+auto.ru##.IndexMarks__super-marks
+auto.ru##.FooterLogo
+auto.ru##.Footer__seo-text
 
 ! banners. Also login form, but..
 auto.today##.navbar-header
@@ -8479,6 +8485,10 @@ hype.tech##.clap-info
 
 hyperhost.ua##.poll-go
 
+hyundaiusa.com##.zip-modal-box
+hyundaiusa.com##.zip-modal
+hyundaiusa.com##.backdrop
+
 ||i.ua/v2/homepage/partners/
 ||i.ua/rating/
 ||i.ua/v2/bg/
@@ -9506,6 +9516,8 @@ kinozal.tv##.cmet_ava
 ||kinozal.tv/pic/knz_love.gif
 ||kinozal.tv/pic/bgmn.gif
 
+kinstacdn.com$domain=~mexiconewsdaily.com  # banner cdn; unbounce. It is from kinsta.com, strange Wordpress hosting. I viewed only banners and tracking scripts from there  # upd: mexiconewsdaily.com uses kinstacdn.com for storing content. Ok.
+
 kipo.spb.ru##body > div:nth-of-type(1)
 kipo.spb.ru###hei > tbody > tr:nth-of-type(2)
 
@@ -10248,6 +10260,7 @@ linux.org.ru##.fav-buttons
 ||linuxbabe.com/wp-content/uploads/pum/pum-site-  # is in Adguard
 
 ||linuxquestions.org/questions/images/LinuxQuestions.png
+linuxquestions.org##.navbar_notice
 
 ||liquidweb.com/*/refer-a-friend$image
 ||liquidweb.com/*/vps-sidebar$image
@@ -14221,17 +14234,25 @@ ria.com##.smm
 ||riastatic.com/docs/dom/support/$image
 
 ||ria.ru/*/notifications.js
+||ria.ru/*/ria.chat
+||ria.ru/*/ria_chat
 !||ria.ru/services/dynamics/ - don't, disables related articles
 @@||ria.ru^$generichide,badfilter
 ! header
 ria.ru##.header__position:style(position:static !important)
 ria.ru##.header:style(height:auto !important)
 ria.ru##.header__brand-bg
+! page
+ria.ru##.page__width:style(width:auto !important; max-width:none !important)
 ! other
 ria.ru##.widgets__b-slide
 ria.ru##.layout-article__right-column
 ria.ru##.dot-loader
 ria.ru##.article__article
+ria.ru##.m-views
+ria.ru##.best-comments
+ria.ru##.article__best-comments
+ria.ru##.article__userbar
 
 riamo.ru##.main-menu--logo
 riamo.ru##.informer--sn
@@ -17263,6 +17284,7 @@ udemy.com##div[class*="smart-bar"]
 ! is in AdGuard
 udemy.com##.ud-component--footer--eu-cookie-message
 udemy.com##[class*=sidebar-container--fixed]
+udemy.com##[class^=marketplace-share-menu-item]
 udemy.com##[class*=social-share-button]
 udemy.com##[class^=billboard--content-box]
 udemy.com##[class^=invite-alert]
@@ -19747,32 +19769,8 @@ avito.ru##[class^=index-social-]
 labirint.ru##.write-comment__image
 labirint.ru##.write-comment__text
 
-ria.ru##.m-views
-ria.ru##.best-comments
-ria.ru##.article__best-comments
-ria.ru##.article__userbar
-ria.ru##.page__width:style(width:auto !important; max-width:none !important)
-
 ||cisco.com/v1/netid  # dsc.cisco.com/v1/netid?apikey=...
 cisco.com###fwt-logo
-
-||ria.ru/*/ria.chat
-||ria.ru/*/ria_chat
-
-techgenix.com###about_the_author
-
-udemy.com##[class^=marketplace-share-menu-item]
-
-linuxquestions.org##.navbar_notice
-
-auto.ru##.Header__logo
-auto.ru##.IndexMarks__super-marks
-auto.ru##.FooterLogo
-auto.ru##.Footer__seo-text
-
-hyundaiusa.com##.zip-modal-box
-hyundaiusa.com##.zip-modal
-hyundaiusa.com##.backdrop
 
 sergiotocalini.github.io##.post:style(margin-top:0px !important)
 sergiotocalini.github.io###btn-top
@@ -19792,6 +19790,3 @@ sergiotocalini.github.io###btn-top
 
 /\.com\/[0-9a-z]{2}\/[0-9a-z]{2}\/[0-9a-z]{2}\/[0-9a-z]{32}\.js/$script,3p  # Adguard rule
 
-/advertising.banner/*
-
-kinstacdn.com$important,domain=~mexiconewsdaily.com  # banner cdn; unbounce. It is from kinsta.com, strange Wordpress hosting. I viewed only banners and tracking scripts from there  # upd: mexiconewsdaily.com uses kinstacdn.com for storing content. Ok.
