@@ -9431,7 +9431,13 @@ kinoafisha.info$3p  # ad xhrs
 kinonews.ru###rocket
 kinonews.ru##.text-footer
 
-! banners
+||kinopoisk.ru/install?
+||avatars.mds.yandex.net/get-ott/$image
+||avatars.mds.yandex.net/get-bunker/$image
+! strange filters from RU Adblock. Disabled again
+@@||www.kinopoisk.ru^$generichide,badfilter
+@@||mc.yandex.ru^$script,domain=www.kinopoisk.ru,badfilter
+    ! banners
 kinopoisk.ru##[class^=styles_plusDesktopBrandingButton]
 kinopoisk.ru##[class*=ticketsButton]
 kinopoisk.ru##.nameplate__item_type_tickets
@@ -9442,22 +9448,44 @@ kinopoisk.ru##a.kinopoisk-header-featured-menu__item.kinopoisk-header-featured-m
 kinopoisk.ru##.kinopoisk-header-featured-menu
 kinopoisk.ru###partial_component__watch-online-button
 kinopoisk.ru##a[href*="//hd.kinopoisk.ru"]
-! header
+! is in Adguard
+kinopoisk.ru##.underheader-superbanner-wrapper
+! also from Ru AdList
+kinopoisk.ru##.underheader-superbanner-wrapper:style(min-height: 0 !important)
+! from Ru AdList
+kinopoisk.ru##+js(abort-on-property-read, Object.prototype.AdfoxEvents)
+! is in Ru AdList
+kinopoisk.ru##div[id*="_superbanner_"]
+! Еще какой-то анимированный баннер посередине
+kinopoisk.ru##[id*="_third_banner"]
+! from Ru AdList and Fanboy's
+kinopoisk.ru##div[class^="promo"][style^="bottom:"]
+kinopoisk.ru##.hd-nameplate
+! is in AdGuard
+kinopoisk.ru##div[id*="direct_R-A-"]
+    ! header
 kinopoisk.ru##div[class*="header"][class*="_body"]:style(position:static !important)
 kinopoisk.ru##[class*=styles_header]:style(position:static !important)
 kinopoisk.ru##.header-fresh-partial-component__body:style(position:static !important)
 kinopoisk.ru###kinopoisk-header-sticky-container:style(position:static !important)
-! footer
+! from Ru AdList
+kinopoisk.ru###header-info-bg:style(background-color: transparent !important; background-image: none !important)
+kinopoisk.ru##li.header-fresh-partial-component__navigation-item
+    ! footer
 kinopoisk.ru##.footer-partial-component__content-apps
 kinopoisk.ru##.footer-partial-component__bottom-info-age
-! sidebar
+    ! sidebar
 kinopoisk.ru##.media-news__sidebar-bottom
-! up button
+    ! up button
 kinopoisk.ru##.app__elevator
 kinopoisk.ru##.desktop-layout-with-sidebar__elevator
-! trailers
+    ! trailers and teasers
 kinopoisk.ru##.new-trailers
-! other
+! is in Adguard
+kinopoisk.ru##.rightTeaser
+! from Ru AdList and Fanboy's
+kinopoisk.ru##div[data-type="teaserspec"]
+    ! other
 kinopoisk.ru##[class^=styles_badgeWithBigTitle]
 kinopoisk.ru##[class^=styles_buttonsContainer]
 kinopoisk.ru##[class^=styles_restriction]
@@ -9470,48 +9498,19 @@ kinopoisk.ru##.mod
 kinopoisk.ru###forma.disabled.response
 kinopoisk.ru###last_film
 kinopoisk.ru###m05g:style(margin-bottom:0px !important)
-! strange filters from RU Adblock. Disabled again
-@@||www.kinopoisk.ru^$generichide,badfilter
-@@||mc.yandex.ru^$script,domain=www.kinopoisk.ru,badfilter
-kinopoisk.ru##li.header-fresh-partial-component__navigation-item
 kinopoisk.ru##.addTextTo
 kinopoisk.ru##.subscribe
 ! is in Fanboy's
 kinopoisk.ru###GOWrapper
 ! is in Ru AdList
 kinopoisk.ru##html:not(#id):style(background-color: #e6e6e6 !important)
-! is in AdGuard
-kinopoisk.ru##div[id*="direct_R-A-"]
-! is in Ru AdList
-kinopoisk.ru##div[id*="_superbanner_"]
-! from Ru AdList and Fanboy's
-kinopoisk.ru##div[data-type="teaserspec"]
-! from Ru AdList and Fanboy's
-kinopoisk.ru##div[class^="promo"][style^="bottom:"]
-! is in AdGuard
-kinopoisk.ru##.underheader-superbanner-wrapper
-! also from Ru AdList
-kinopoisk.ru##.underheader-superbanner-wrapper:style(min-height: 0 !important)
 ! from Ru AdList
 kinopoisk.ru##.shadow.shadow-restyle:style(box-shadow: 0 -8px 15px #333333 !important)
-! is in AdGuard
-kinopoisk.ru##.rightTeaser
 ! from Ru AdList
 kinopoisk.ru##.page-content > #header-info-bg + div[id]:not([class]):style(margin-bottom: 40px !important)
-! from Ru AdList
-kinopoisk.ru###header-info-bg:style(background-color: transparent !important; background-image: none !important)
-! from Ru AdList
-kinopoisk.ru##+js(abort-on-property-read, Object.prototype.AdfoxEvents)
 ! new design?
 kinopoisk.ru##[class^=styles_branding]
 kinopoisk.ru##[class*=styles_store]
-kinopoisk.ru##.hd-nameplate
-! Еще какой-то анимированный баннер посередине
-kinopoisk.ru##[id*="_third_banner"]
-!
-||avatars.mds.yandex.net/get-ott/$image
-||avatars.mds.yandex.net/get-bunker/$image
-||kinopoisk.ru/install?
 
 kino-teatr.ru###special_block_img
 kino-teatr.ru###logo_block
