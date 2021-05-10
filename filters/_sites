@@ -1743,6 +1743,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /track-cookies.js$important
 /trackingcookiecheck?  # from EasyPrivacy
 /um-gdpr.$important  # is in Fanboy's and EasyList
+/wrappermessagingwithoutdetection.js  # is in Fanboy's and EasyList
 /warncookies.  # is in EasyList, Adguard, Fanboy's
 
 
@@ -2531,6 +2532,7 @@ tarif-24.ru##.mh-ticker-bottom
 ##.author_box
 ###author-bio
 ##.author-bio
+##.author-bio-content
 ##.author_bio_section
 ##.author-desc
 ##.author-description
@@ -4674,6 +4676,9 @@ boobliks.pro#@##up
 boobliks.pro##.logotip_ebanem
 boobliks.pro##body:style(background:none !important)
 
+book-erix.info##.inner-header-banner
+book-erix.info##.main-header
+
 booking.com##.header-signin-prompt
 booking.com##.promote_article__overlay
 booking.com##.promote_article
@@ -5299,6 +5304,10 @@ cnn.com###breaking-news
 
 ||codecguide.com/stats.js  # is in EasyPrivacy
 
+codeproject.com##.sub-headerbar-divider
+codeproject.com##.author-wrapper
+codeproject.com###ctl00_AboutHeading
+
 codetwo.com##.menu-navbar-header
 codetwo.com##.codetwo-sliding
 ||codetwo.com/*/post-bottom.png
@@ -5485,6 +5494,7 @@ csgo.tm$3p
 ||c-sharpcorner.com/JavaScripts/NewScripts/NewPopupPlugin.js
 c-sharpcorner.com###topAnnouncement
 c-sharpcorner.com###ctl00_HeaderHomeNewDesign_Menu_HeaderMenu:style(position:static !important)
+c-sharpcorner.com###IconContainer
 
 ||csomsk.ru/notest/
 
@@ -6037,6 +6047,7 @@ dobrodel.ru,dobrodel.mosreg.ru##.riamo-news
 dobrodel.ru,dobrodel.mosreg.ru##.footer-portals
 dobrodel.ru,dobrodel.mosreg.ru##.section-title_login.section-title_white.section-title
 dobrodel.ru,dobrodel.mosreg.ru##.pointer
+mosreg.ru##.w_footer__restriction
 ! Exception from AdGuard
 @@||suggestions.dadata.ru/suggestions/api$domain=dobrodel.mosreg.ru|dobrodel.ru
 ||dobrodel.mosreg.ru/static/img/general/dobroFace.png
@@ -8034,6 +8045,9 @@ habr.com##.footer-block__content_apps
 habr.com##.tm-footer__apps
 habr.com##.tm-footer-apps
 habr.com##.company-app
+! counters
+||habr.com/*/viewcount/
+habr.com##.post-info__meta > span.post-info__meta-item
 ! other
 habr.com##.for_users_only_msg
 habr.com##.inline-list.user-info__contacts
@@ -8046,7 +8060,6 @@ habr.com,toster.ru##.question__invate-expert
 special.habrahabr.ru##.on-top
 habr.com##.tm-page-article__counters-panel_sticky:style(position:static !important)
 habr.com,~qna.habr.com##.layout__navbar:style(position:static !important)
-||habr.com/*/viewcount/
 ||hsto.org/getpro/neuro-habr/
 ||hsto.org/*/neuro-habr.js
 
@@ -10018,6 +10031,7 @@ most-dnepr.info##.read-social
 
 leanpub.com##.quick-buy-header
 
+learn-powershell.net###wrapper:style(margin-top:0px !important)
 learn-powershell.net##.widget_blog-stats
 
 leatherman.com##.modal-backdrop
@@ -11459,6 +11473,7 @@ msserverpro.com###wpautbox_about
 mssqltips.com###slideboxtop
 !mssqltips.com##.columns.hide-for-print
 mssqltips.com##.hide-for-print
+||mssqltips.com/images/mslogo$image
 
 m-strana.ru##.slider.news
 m-strana.ru##.slider-section
@@ -13931,30 +13946,37 @@ rb.ru##.article__search-error
 rb.ru##.appstore
 rb.ru##.footer-list--social
 
+/rbcmetrika-  # is in EasyPrivacy
+||rbc.ru/dfp_page  # ad scripts  # https://www.rbc.ru/dfp_page
+||rbk.ru/*/_core.js  # site breaks copypaste
+||rbk.ru/*/gt-targeting.js
+||rbk.ru/*/_paywall.js
+||rbk.ru/*/rbcbanners$script  # old: ||rbk.ru/*/rbcbanners*.js
+||rbk.ru/*/18.svg
+||rbk.ru/*/rbcmetrika
+! header
+rbc.ru##.topline:style(position:static !important)
+rbc.ru##.topline__wrapper:style(position:static !important)
 rbc.ru##.topline__video-block
 rbc.ru##.topline__forecast
 rbc.ru##.topline__indicators__move
 rbc.ru##.topline__disable-adv__button
-rbc.ru##.topline__wrapper:style(position:static !important)
-rbc.ru##.topline:style(position:static !important)
-rbc.ru##div.poll
-rbc.ru##.news-feed__fixed:style(position:absolute !important)
-rbc.ru##.bottom-menu__wrap
+rbc.ru##.topline__item__image-block
+! unfix page elements
+rbc.ru##.news-feed:style(position:static !important)
+rbc.ru##.news-feed__fixed:style(position:statis !important)
+rbc.ru##.l-sticky:style(position:static !important)
+! footer
 rbc.ru##.footer__link_disable-adv
 rbc.ru##.footer__list-item_disable-adv
+! other
+rbc.ru##div.poll
+rbc.ru##.bottom-menu__wrap
 rbc.ru##.live-tv
-/rbcmetrika-  # is in EasyPrivacy
-||rbk.ru/*/gt-targeting.js
-||rbk.ru/*/_paywall.js
-||rbk.ru/*/rbcbanners*.js
-||rbk.ru/*/rbcbanners$script
-||rbk.ru/*/_core.js  # site breaks copypaste
-||rbk.ru/*/18.svg
-||rbk.ru/*/rbcmetrika
-rbc.ru##.news-feed:style(position:static !important)
-rbc.ru##.topline__item__image-block
-rbc.ru##.l-sticky:style(position:static !important)
 rbc.ru##.forecast
+rbc.ru##.js-ga-counter.js-yandex-counter
+rbc.ru##.g-banner__news-footer
+rbc.ru##.article__text__pro::after
 
 ||rcdesign.ru/*/hk_top/
 forum.rcdesign.ru##body > table
@@ -15326,6 +15348,12 @@ sketchup.com##.docked:style(position:static !important)
 sketchup.com##.d-header:style(position:static !important; margin-top:0px !important)
 sketchup.com###main-outlet:style(padding-top:0px !important)
 sketchup.com###top-navbar
+
+||skillset.com/img/dashboard/icon_upgrade.png
+skillset.com##.navbar_lower:style(position:static !important)
+skillset.com##.ready-push
+skillset.com##.go-pro-benefits
+skillset.com##.question-hero
 
 skipedia.ru###header
 
@@ -17007,6 +17035,8 @@ travelask.ru##.footer__bottom-age
 travmatik.com##.mainheadertext
 travmatik.com##[src*="data:image/png;base64,"]
 
+treasury.gov###usa-header:style(position:static !important)
+
 trekker.net##.site-header
 
 triaservice.com.ua###header
@@ -17637,6 +17667,8 @@ vedomosti.ru##.article-share__btn
 ! неясное - какие-то сокеты. Upd: не, там через это аяксом грузятся списки, довольно полезные
 !||vedomosti.ru/socket.io/
 ! also see vedomosti.ru in _marketing__subdomains
+vedomosti.ru##.the-sidebar
+vedomosti.ru##.article__sidebar
 
 vegalab.ru###notices
 vegalab.ru###navbar:style(position:static !important)
@@ -18896,6 +18928,9 @@ yourselfbranding.com##.webinar-block
 yourselfbranding.com##.contact-item
 yourselfbranding.com##.popup-client
 
+yoursunny.com##.site-header-title
+yoursunny.com##.site-header-subtitle
+
 ||youtube.com/api/stats/$important  # disable exceptions
 ||youtube.com/youtubei/v1/notification/get_unseen_count
 ! ||youtube.com/yts/cssbin/ - it is css, don't block!
@@ -19116,6 +19151,17 @@ zdorovzhivi.ru##div.zenimage
 ||zdorovzhivi.ru/wp-content/uploads/2019/10/podelis-s-druzyami1.jpg
 zdorovzhivi.ru##.wpr_asker
 zdorovzhivi.ru##.widget_featured_slider
+
+||zeit.de/static/js/webtrekk/
+||zeit.de/cre-*/tracking^$important  # Adguard rule  # zeit.de/cre-1.0/tracking/tracking.js  # zeit.de/cre-1.0/tracking/call.js
+! logo
+zeit.de##.header__logo
+zeit.de##.headline__logo
+zeit.de##.svg-symbol
+! paywall
+||zeit.de/p/zeit.web/js/consent
+zeit.de##.consent
+! other
 
 ||zelen.ru/images/b/
 
@@ -19715,48 +19761,6 @@ question-defense.com##.entry-author.author-info
 lunavi.com##.global-nav-cta.quote-button
 lunavi.com##.footer-cta
 lunavi.com##.byline-tag
-
-||skillset.com/img/dashboard/icon_upgrade.png
-skillset.com##.navbar_lower:style(position:static !important)
-skillset.com##.ready-push
-skillset.com##.go-pro-benefits
-skillset.com##.question-hero
-
-||mssqltips.com/images/mslogo$image
-
-codeproject.com##.sub-headerbar-divider
-codeproject.com##.author-wrapper
-codeproject.com###ctl00_AboutHeading
-
-zeit.de##.consent
-zeit.de##.header__logo
-
-vedomosti.ru##.the-sidebar
-vedomosti.ru##.article__sidebar
-
-||rbc.ru/dfp_page  # ad scripts  # https://www.rbc.ru/dfp_page
-rbc.ru##.js-ga-counter.js-yandex-counter
-rbc.ru##.g-banner__news-footer
-rbc.ru##.article__text__pro::after
-
-yoursunny.com##.site-header-title
-yoursunny.com##.site-header-subtitle
-
-c-sharpcorner.com###IconContainer
-c-sharpcorner.com##.author-bio-content
-
-
-
-learn-powershell.net###wrapper:style(margin-top:0px !important)
-
-habr.com##.post-info__meta > span.post-info__meta-item
-
-mosreg.ru##.w_footer__restriction
-
-treasury.gov###usa-header:style(position:static !important)
-
-book-erix.info##.inner-header-banner
-book-erix.info##.main-header
 
 onliner.by##.project-navigation_fixed:style(position:static !important)
 onliner.by##.b-top-navigation-age
