@@ -12,15 +12,36 @@ dnscheck.adguard.com  # from Adguard (sic!)
 
 report-edge.agora.io
 
+stat.alibaba.com  # from Adguard
+
+dc.altamob.com  # from Adguard
+
+api.mediation.amberweather.com  # from Adguard
+aqi.wd.amberweather.com  # from Adguard
+
+adv.aport.ru  # from MVPS
+stat.aport.ru  # from MVPS
+
+iadsdk.apple.com  # from MobileAdTrackers
+banners.itunes.apple.com  # from MobileAdTrackers
+securemetrics.apple.com  # from Peter Lowe's hosts file
+
 ! seems to be Google Android telemetry
 ! is in Dan Pollock’s hosts file
 ! AS15169 - GOOGLE, US
 app-measurement.com$important
 
+ads.appsgeyser.com  # from Adguard
+ads-leaseweb.appsgeyser.com  # from Adguard
+splash.appsgeyser.com  # from Adguard
+
 analytics.ff.avast.com  # from MobileAdTrackers
 analytics.ns1.ff.avast.com  # from MobileAdTrackers
 mobile-campaigns.avast.com  # from MobileAdTrackers
 stats.avast.com  # from MobileAdTrackers
+uib.ff.avast.com  # from Peter Lowe's hosts file
+
+gdn.bigfishgames.com  # from Adguard
 
 bugherd.com$important
 
@@ -45,15 +66,40 @@ crashlytics.com$important  # is in Dan Pollock's hosts file
 !+  outbound.crashlytics.com
 betas.to
 
+ads.cricbuzz.com  # from Adguard
+adops.cricbuzz.com  # from Adguard
+
+marketing.dropbox.com  # is in EasyPrivacy
+
+improving.duckduckgo.com
+links.duckduckgo.com
+
+adv.ettoday.net  # from Adguard
+msg.ettoday.net  # from Adguard
+ad-ettoday.cdn.hinet.net  # from Adguard
+adv-ettoday.cdn.hinet.net  # from Adguard
+
+||facebook.com/csp/reporting/
+pixel.facebook.com  # from Adguard
+
+tm-banners.gamingadult.com  # from Adguard
+tm-offers.gamingadult.com  # from Adguard
+
 ! it seems that GO Keyboard and/or GO Launcher are sending user information to dev server
 gomo.com
 goforandroid.com
 
 isprog.com  # app ads  # no root
 
+logger.ivi.ru
+push.ivi.ru
+
 ivymobile.com
 ! blocked by some list in Blokada. Seems, it is telemetry from the Ivymobile bookreader app.
 !api.ivymobile.com
+
+mxplayer.j2inter.com
+i.mxplayer.j2inter.com  # from Adguard
 
 ! Potplayer tracking
 ! https://potplayer.club/net-blocking.html
@@ -62,13 +108,57 @@ videostats.kakao.com  # from Peter Lowe's hosts file
 get.daum.net
 track.tiara.daum.net
 
+adtrack.king.com  # from Adguard
+
 kingsoft-office-service.com  # abroad-ad.kingsoft-office-service.com  # from Adguard
+
+ad.lgappstv.com  # is in BlockListProject/SmartTV
+aic-ngfts.lge.com  # is in BlockListProject/SmartTV
+control-zoo-dtsstage.tvinteractive.tv  # is in BlockListProject/SmartTV
+eu-auth2.samsungosp.com  # is in BlockListProject/SmartTV
+game.internetat.tv  # is in BlockListProject/SmartTV
+gpm.samsungqbe.com  # is in BlockListProject/SmartTV
+img-resize-cdn-prod.samsungnyc.com  # is in BlockListProject/SmartTV
+infolink.pavv.co.kr  # is in BlockListProject/SmartTV
+lgad.cjpowercast.com  # is in BlockListProject/SmartTV
+ngfts.lge.com  # is in BlockListProject/SmartTV
+ocfconnect-shard-eu02-euwest1.samsungiotcloud.com  # is in BlockListProject/SmartTV
+osb-v2.samsungqbe.com  # is in BlockListProject/SmartTV
+premium-videos.telly.com  # is in BlockListProject/SmartTV
+scs.samsungqbe.com  # is in BlockListProject/SmartTV
+smartshare.lgtvsdp.com  # is in BlockListProject/SmartTV
+uimetadata.samsungiotcloud.com  # is in BlockListProject/SmartTV
+us.ibs.lgappstv.com  # is in BlockListProject/SmartTV
+us.lgtvsdp.com  # is in BlockListProject/SmartTV
+us.rdx2.lgtvsdp.com  # is in BlockListProject/SmartTV
+osb-apps-v2.samsungqbe.com  # is in BlockListProject/SmartTV
+osb.samsungqbe.com  # is in BlockListProject/SmartTV
+gld.push.samsungosp.com  # is in BlockListProject/SmartTV
+
+lgsmartad.com  # from BlockListProject/SmartTV
+
+platform.linkedin.com  # from hpHosts’ Ad and tracking servers
+
+adsapi.manhuaren.com  # from Adguard
+euadsapi.manhuaren.com  # from Adguard
+
+localads.maps.me  # Maps.me app: "Advertisement on maps"
+localbiz.maps.me
+
+stats-a.maxthon.com  # from Adguard
+
+directads.mcafee.com  # from Dan Pollock's hosts file
+
+ostats.mozilla.com  # from Dan Pollock's hosts file
+sostats.mozilla.com  # from Dan Pollock's hosts file
 
 ! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
 rtlog.musical.ly
 applog.musical.ly
 ichannel.musical.ly
 log16-normal-c-useast1a.tiktokv.com
+
+myinstashot.com  # "Hello" root  # from Adguard
 
 ! Ads from Opera mini browser. Which have some default adblock (so!). Blocked by some adlist in Blokada
 operamini-sub.osp.opera.software
@@ -80,7 +170,14 @@ adserver.pandora.com  # from Adguard
 stats.paypal.com  # from MobileAdTrackers and Adguard
 t.paypal.com  # from Adguard
 
+ads.pinger.com  # from Adguard
+cf-ads.pinger.com  # from Adguard
+
+sube.puwangkj.com  # from Adguard
+
 telemetry.swe.quicinc.com  # Blocked by some adlist in Blokada  # quicinc.com redirects to qualcomm.com
+
+roku.com  # is in BlockListProject/SmartTV
 
 ! https://ammo1.livejournal.com/1102393.html
 ! https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/
@@ -98,6 +195,12 @@ samba.tv
 ! https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/
 ! https://habr.com/ru/post/479022/
 samsungacr.com
+samsungacr.com  # from BlockListProject/SmartTV
+samsungads.com  # from BlockListProject/SmartTV
+samsungotn.net  # from BlockListProject/SmartTV
+samsungrm.net  # from BlockListProject/SmartTV
+samsungcloudsolution.com  # from BlockListProject/SmartTV
+samsungcloudsolution.net  # from BlockListProject/SmartTV
 
 sentry.io  # feedback and application monitoring service, commercial. I doubt it is a good idea to send errors somewhere.
 !+  a.sentry.io
@@ -106,12 +209,22 @@ sentry.io  # feedback and application monitoring service, commercial. I doubt it
 !+  services.sentry.io
 sentry-cdn.com  #browser.sentry-cdn.com
 
+appgift.sinaapp.com  # from Adguard
+
+mystatus.skype.com  # from Ru AdList
+
 adserving-dmoo.enterprise.slack.com
+
+smardroid.com  # empty root and ad subdomains  # from Adguard
+
+smartclip.com  # from BlockListProject/SmartTV
+smartclip.net  # from BlockListProject/SmartTV
 
 ads.snapchat.com
 app-analytics.snapchat.com  # from Dan Pollock's hosts file  # is in Adguard
 tr.snapchat.com  # from Adguard
 # ghs.googlehosted.com  # hmm...
+intg.snapchat.com  # from EasyPrivacy
 
 ! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
 snssdk.com  # China root  # root redirects to toutiao.com
@@ -123,39 +236,35 @@ toutiao.com  # is in Adguard
 
 adeventtracker.spotify.com  # from Adguard
 
+sgs.sputnik.ru
+stat.sputnik.ru
+
+networksdk.ssacdn.com  # from Adguard
+
 supersonic.com  # app ads
+
+adback.tango.me  # from Adguard
+adinfo.tango.me  # from Adguard
 
 log.tapatalk.com  # from MobileAdTrackers
 track.tapatalk.com  # from MobileAdTrackers
+
+banners.tapclap.com
 
 ads.tiktok.com
 ads.tiktok.com.edgekey.net
 
 pushid-noneu.truecaller.com  # from MobileAdTrackers
 
+tv2phone.cn  # empty root
+pstatp.com  # empty root
+
+tvinteractive.tv  # from BlockListProject/SmartTV
+
 ping.ublock.org  # from Peter Lowe's hosts file
 
-ads.viber.com  # from MobileAdTrackers
-ads-d.viber.com  # from MobileAdTrackers
-ads.aws.viber.com  # from MobileAdTrackers
+adn.insight.ucweb.com  # from AdGuard
 
-wedobest.com.cn  # app ads
-
-privatestats.whatsapp.net
-
-admob.xiaomi.com  # from MobileAdTrackers
-abtest.mistat.xiaomi.com  # from AdGuard
-abtest.mistat.intl.xiaomi.com  # from AdGuard
-api.miui.security.xiaomi.com  # from AdGuard
-video.intl.xiaomi.com  # from AdGuard
-api.newsfeed.intl.miui.com  # from AdGuard
-api.brs.intl.miui.com  # from AdGuard
-activity.browser.intl.miui.com  # from AdGuard
-huangye.miui.com  # from AdGuard
-adv.sec.intl.miui.com  # from AdGuard
-device.xiaomi.net  # from MobileAdTrackers
-
-!! todo
 analytics.cloud.unity3d.com  # from Energized Blu and Adguard
 cdp.cloud.unity3d.com  # from Energized Blu, MobileAdTrackers, Adguard
 config.uca.cloud.unity3d.com
@@ -205,189 +314,76 @@ ads-game-configuration-master.ads.prd.ie.internal.unity3d.com  # from Energized 
 config.unityads.unitychina.cn
 ecommerce.iap.unity3d.com  # ad requests
 
-data.mistat.xiaomi.com  # xiaomi spying  # https://forum.adguard.com/index.php?threads/Решено-Шпионские-домены-miui.13437/
-adv.sec.miui.com
-stat.duokanbox.com
-ms.cmcm.com
-etl.xlmc.sandai.net
-update.avlyun.sec.miui.com # (supposedly update checking)  # + todo  # + еще https://habr.com/en/post/320612/  # https://www.quora.com/Do-Xiaomi-phones-really-spy-on-our-data-question-details
-logupdate.avlyun.sec.miui.com # (looks like remote logging?)
-data.mistat.xiaomi.com
-tracking.miui.com
-data.mistat.intl.xiaomi.com  # моё
-internet.81a2d69a72.elb.xiaomi.com
-ad.intl.xiaomi.com
-cname.mistat.dev.mi.com
-adv.sec.miui.com  #miui
-r.browser.miui.com
-tracking.intl.miui.com
-xlmc.sec.miui.com
-!+  ra1.xlmc.sec.miui.com
-!+  ra2.xlmc.sec.miui.com
-metok.sys.miui.com
-mazu.sec.miui.com
-shenghuo.xiaomi.com
+ads.viber.com  # from MobileAdTrackers
+ads-d.viber.com  # from MobileAdTrackers
+ads.aws.viber.com  # from MobileAdTrackers
+
+t.vimeo.com  # from Adguard
+
+crosspromo.voodoo.io  # from Adguard
+
+h5.wannaplay.cn  # from Adguard
+
+t.wayfair.com  # from Adguard
+
+wedobest.com.cn  # app ads
+
+privatestats.whatsapp.net
+
+webpushapi.wildberries.ru
+
+! xiaomi spying domains: compilation of various domains from forums and other lists
+    ! xiaomi.com
 ad.xiaomi.com
 !+  api.ad.xiaomi.com
 !+  globalapi.ad.xiaomi.com
+ad.intl.xiaomi.com
+admob.xiaomi.com  # from MobileAdTrackers
+mistat.xiaomi.com  # from Adguard: abtest.mistat.intl.xiaomi.com abtest.mistat.xiaomi.com
+data.mistat.xiaomi.com  # xiaomi spying  # https://forum.adguard.com/index.php?threads/Решено-Шпионские-домены-miui.13437/
+security.xiaomi.com  # from Adguard: api.miui.security.xiaomi.com
+video.intl.xiaomi.com  # from AdGuard
+data.mistat.intl.xiaomi.com  # моё
+internet.81a2d69a72.elb.xiaomi.com
+shenghuo.xiaomi.com
 o2o.api.xiaomi.com
-auth.be.sec.miui.com
-xiaomiaoquan.com$third-party  # from EasyList China
-
-adn.insight.ucweb.com  # from AdGuard
-
-ads.appsgeyser.com  # from Adguard
-ads-leaseweb.appsgeyser.com  # from Adguard
-splash.appsgeyser.com  # from Adguard
+    ! xiaomi.net
+device.xiaomi.net  # from MobileAdTrackers
+    ! mi.com
+mistat.dev.mi.com  # cname.mistat.dev.mi.com
+    ! miui.com
+newsfeed.intl.miui.com    # from Adguard: api.newsfeed.intl.miui.com
+brs.intl.miui.com  # from Adguard: api.brs.intl.miui.com
+browser.miui.com  # r.browser.miui.com
+browser.intl.miui.com  # from Adguard: activity.browser.intl.miui.com
+huangye.miui.com  # from AdGuard
+sec.miui.com  # logupdate.avlyun.sec.miui.com  # (looks like remote logging?)  # miui: adv.sec.miui.com  # mazu.sec.miui.com
+sec.intl.miui.com  # from Adguard: adv.sec.intl.miui.com
+update.avlyun.sec.miui.com  # (supposedly update checking?)  # + todo  # + еще https://habr.com/en/post/320612/  # https://www.quora.com/Do-Xiaomi-phones-really-spy-on-our-data-question-details
+!+  avlyun.sec.miui.com
+tracking.miui.com
+tracking.intl.miui.com
+!+  adv.sec.miui.com
+!+  be.sec.miui.com  # auth.be.sec.miui.com
+!+  xlmc.sec.miui.com
+!+      ra1.xlmc.sec.miui.com
+!+      ra2.xlmc.sec.miui.com
+metok.sys.miui.com
+    ! other
+stat.duokanbox.com
+ms.cmcm.com
+xlmc.sandai.net  # etl.xlmc.sandai.net
+xiaomiaoquan.com  # from EasyList China
 
 bi.yeshen.com  # from Adguard
 launcher.us.yeshen.com  # from Adguard
 
-api.mediation.amberweather.com  # from Adguard
-aqi.wd.amberweather.com  # from Adguard
-
-gdn.bigfishgames.com  # from Adguard
-
-adback.tango.me  # from Adguard
-adinfo.tango.me  # from Adguard
-
-crosspromo.voodoo.io  # from Adguard
-
-adsapi.manhuaren.com  # from Adguard
-euadsapi.manhuaren.com  # from Adguard
-
-mxplayer.j2inter.com
-i.mxplayer.j2inter.com  # from Adguard
-
-appgift.sinaapp.com  # from Adguard
-
-networksdk.ssacdn.com  # from Adguard
-
-h5.wannaplay.cn  # from Adguard
-
-adv.ettoday.net  # from Adguard
-msg.ettoday.net  # from Adguard
-ad-ettoday.cdn.hinet.net  # from Adguard
-adv-ettoday.cdn.hinet.net  # from Adguard
-
-myinstashot.com  # "Hello" root  # from Adguard
-
-ads.cricbuzz.com  # from Adguard
-adops.cricbuzz.com  # from Adguard
-
-smardroid.com  # empty root and ad subdomains  # from Adguard
-
-dc.altamob.com  # from Adguard
-
-tv2phone.cn  # empty root
-pstatp.com  # empty root
-
-sube.puwangkj.com  # from Adguard
-
-ads.pinger.com  # from Adguard
-cf-ads.pinger.com  # from Adguard
-
-intg.snapchat.com  # from EasyPrivacy
-
-banners.tapclap.com
-
-log-collector.svctr.zynga.com  # from MobileAdTrackers
-
-uib.ff.avast.com  # from Peter Lowe's hosts file
-
-mystatus.skype.com  # from Ru AdList
-
-iadsdk.apple.com  # from MobileAdTrackers
-banners.itunes.apple.com  # from MobileAdTrackers
-securemetrics.apple.com  # from Peter Lowe's hosts file
-
-marketing.dropbox.com  # is in EasyPrivacy
-
-logger.ivi.ru
-push.ivi.ru
-
-platform.linkedin.com  # from hpHosts’ Ad and tracking servers
-
-adeventtracker.spotify.com
-
-sgs.sputnik.ru
-stat.sputnik.ru
-
-webpushapi.wildberries.ru
-
-bms.zeptolab.com  # from MobileAdTrackers
-
-adv.aport.ru  # from MVPS
-stat.aport.ru  # from MVPS
-
-directads.mcafee.com  # from Dan Pollock's hosts file
-
-ostats.mozilla.com  # from Dan Pollock's hosts file
-sostats.mozilla.com  # from Dan Pollock's hosts file
-
-localads.maps.me  # Maps.me app: "Advertisement on maps"
-localbiz.maps.me
-
-stats-a.maxthon.com  # from Adguard
-
-pixel.facebook.com  # from Adguard
-
 s2.youtube.com  # from Adguard
-
-t.vimeo.com  # from Adguard
-
-t.wayfair.com  # from Adguard
-
-tm-banners.gamingadult.com  # from Adguard
-tm-offers.gamingadult.com  # from Adguard
-
-adtrack.king.com  # from Adguard
-
-stat.alibaba.com  # from Adguard
-
-||facebook.com/csp/reporting/
-
-samsungacr.com  # from BlockListProject/SmartTV
-samsungads.com  # from BlockListProject/SmartTV
-samsungotn.net  # from BlockListProject/SmartTV
-samsungrm.net  # from BlockListProject/SmartTV
-samsungcloudsolution.com  # from BlockListProject/SmartTV
-samsungcloudsolution.net  # from BlockListProject/SmartTV
-
-smartclip.com  # from BlockListProject/SmartTV
-smartclip.net  # from BlockListProject/SmartTV
-
-lgsmartad.com  # from BlockListProject/SmartTV
 
 yumenetworks.com  # from BlockListProject/SmartTV
 
-tvinteractive.tv  # from BlockListProject/SmartTV
+bms.zeptolab.com  # from MobileAdTrackers
 
-roku.com  # is in BlockListProject/SmartTV
+log-collector.svctr.zynga.com  # from MobileAdTrackers
 
-ad.lgappstv.com  # is in BlockListProject/SmartTV
-aic-ngfts.lge.com  # is in BlockListProject/SmartTV
-control-zoo-dtsstage.tvinteractive.tv  # is in BlockListProject/SmartTV
-eu-auth2.samsungosp.com  # is in BlockListProject/SmartTV
-game.internetat.tv  # is in BlockListProject/SmartTV
-gpm.samsungqbe.com  # is in BlockListProject/SmartTV
-img-resize-cdn-prod.samsungnyc.com  # is in BlockListProject/SmartTV
-infolink.pavv.co.kr  # is in BlockListProject/SmartTV
-lgad.cjpowercast.com  # is in BlockListProject/SmartTV
-ngfts.lge.com  # is in BlockListProject/SmartTV
-ocfconnect-shard-eu02-euwest1.samsungiotcloud.com  # is in BlockListProject/SmartTV
-osb-v2.samsungqbe.com  # is in BlockListProject/SmartTV
-premium-videos.telly.com  # is in BlockListProject/SmartTV
-scs.samsungqbe.com  # is in BlockListProject/SmartTV
-smartshare.lgtvsdp.com  # is in BlockListProject/SmartTV
-uimetadata.samsungiotcloud.com  # is in BlockListProject/SmartTV
-us.ibs.lgappstv.com  # is in BlockListProject/SmartTV
-us.lgtvsdp.com  # is in BlockListProject/SmartTV
-us.rdx2.lgtvsdp.com  # is in BlockListProject/SmartTV
-osb-apps-v2.samsungqbe.com  # is in BlockListProject/SmartTV
-osb.samsungqbe.com  # is in BlockListProject/SmartTV
-gld.push.samsungosp.com  # is in BlockListProject/SmartTV
-
-improving.duckduckgo.com
-links.duckduckgo.com
-
+!! todo
