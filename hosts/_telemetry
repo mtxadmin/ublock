@@ -22,6 +22,12 @@ analytics.ns1.ff.avast.com  # from MobileAdTrackers
 mobile-campaigns.avast.com  # from MobileAdTrackers
 stats.avast.com  # from MobileAdTrackers
 
+bugherd.com$important
+
+bugsnag.com$important  # telemetry scripts  # "Error Monitoring and Reporting"  # is in AdGuard
+/bugsnag-3.min.js  # bugsnag  #https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js
+||cloudfront.net/bugsnag$domain=~docker.com
+
 ! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
 byteoversea.com  # 504 root
 !i.byteoversea.com
@@ -42,6 +48,8 @@ betas.to
 ! it seems that GO Keyboard and/or GO Launcher are sending user information to dev server
 gomo.com
 goforandroid.com
+
+isprog.com  # app ads  # no root
 
 ivymobile.com
 ! blocked by some list in Blokada. Seems, it is telemetry from the Ivymobile bookreader app.
@@ -115,6 +123,8 @@ toutiao.com  # is in Adguard
 
 adeventtracker.spotify.com  # from Adguard
 
+supersonic.com  # app ads
+
 log.tapatalk.com  # from MobileAdTrackers
 track.tapatalk.com  # from MobileAdTrackers
 
@@ -129,6 +139,8 @@ ads.viber.com  # from MobileAdTrackers
 ads-d.viber.com  # from MobileAdTrackers
 ads.aws.viber.com  # from MobileAdTrackers
 
+wedobest.com.cn  # app ads
+
 privatestats.whatsapp.net
 
 admob.xiaomi.com  # from MobileAdTrackers
@@ -142,6 +154,7 @@ activity.browser.intl.miui.com  # from AdGuard
 huangye.miui.com  # from AdGuard
 adv.sec.intl.miui.com  # from AdGuard
 device.xiaomi.net  # from MobileAdTrackers
+
 !! todo
 analytics.cloud.unity3d.com  # from Energized Blu and Adguard
 cdp.cloud.unity3d.com  # from Energized Blu, MobileAdTrackers, Adguard
@@ -378,14 +391,3 @@ gld.push.samsungosp.com  # is in BlockListProject/SmartTV
 improving.duckduckgo.com
 links.duckduckgo.com
 
-wedobest.com.cn  # app ads
-
-isprog.com  # app ads  # no root
-
-supersonic.com  # app ads
-
-bugherd.com$important
-
-bugsnag.com$important  # telemetry scripts  # "Error Monitoring and Reporting"  # is in AdGuard
-/bugsnag-3.min.js  # bugsnag  #https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js
-||cloudfront.net/bugsnag$domain=~docker.com
