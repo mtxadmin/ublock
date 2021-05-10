@@ -9385,39 +9385,46 @@ kinoafisha.info$3p  # ad xhrs
 kinonews.ru###rocket
 kinonews.ru##.text-footer
 
+! banners
+kinopoisk.ru##[class^=styles_plusDesktopBrandingButton]
+kinopoisk.ru##[class*=ticketsButton]
+kinopoisk.ru##[class*=watchOnlineButton]
+kinopoisk.ru##.js-ott-widget__button_orange.feature_online_button_film.movie-online-button.js-ott-widget__button
+kinopoisk.ru##.watch-online-button-description
+kinopoisk.ru##a.kinopoisk-header-featured-menu__item.kinopoisk-header-featured-menu-item
+kinopoisk.ru##.kinopoisk-header-featured-menu
+kinopoisk.ru###partial_component__watch-online-button
+kinopoisk.ru##a[href*="//hd.kinopoisk.ru"]
+! header
+kinopoisk.ru##div[class*="header"][class*="_body"]:style(position:static !important)
+kinopoisk.ru##[class*=styles_header]:style(position:static !important)
+kinopoisk.ru##.header-fresh-partial-component__body:style(position:static !important)
+kinopoisk.ru###kinopoisk-header-sticky-container:style(position:static !important)
+! footer
+kinopoisk.ru##.footer-partial-component__content-apps
+kinopoisk.ru##.footer-partial-component__bottom-info-age
+! sidebar
+kinopoisk.ru##.media-news__sidebar-bottom
+! up button
+kinopoisk.ru##.app__elevator
+! other
 kinopoisk.ru##[class^=styles_badgeWithBigTitle]
 kinopoisk.ru##[class^=styles_buttonsContainer]
 kinopoisk.ru##[class^=styles_restriction]
 kinopoisk.ru##[class^=styles_share]
 kinopoisk.ru##[class^=styles_nameplate]
-kinopoisk.ru##[class^=styles_plusDesktopBrandingButton]
-kinopoisk.ru##[class*=styles_header]:style(position:static !important)
-kinopoisk.ru##[class*=ticketsButton]
-kinopoisk.ru##.header-fresh-partial-component__body:style(position:static !important)
 kinopoisk.ru##.block_cashup
 !kinopoisk.ru##.adblock-detector-partial-component_visible_show
 !kinopoisk.ru##.adblock-detector-partial-component
-kinopoisk.ru##.js-ott-widget__button_orange.feature_online_button_film.movie-online-button.js-ott-widget__button
 kinopoisk.ru##.mod
 kinopoisk.ru###forma.disabled.response
-kinopoisk.ru##.footer-partial-component__content-apps
 kinopoisk.ru###last_film
-kinopoisk.ru##.footer-partial-component__bottom-info-age
 kinopoisk.ru###m05g:style(margin-bottom:0px !important)
 ! strange filters from RU Adblock. Disabled again
 @@||www.kinopoisk.ru^$generichide,badfilter
 @@||mc.yandex.ru^$script,domain=www.kinopoisk.ru,badfilter
-! unstick sticky header
-kinopoisk.ru##div[class*="header"][class*="_body"]:style(position:absolute !important)
-!widgets.kinopoisk.ru$third-party doesn't work for some sites. Iframe? Ok, let's block
-widgets.kinopoisk.ru
 kinopoisk.ru##li.header-fresh-partial-component__navigation-item
 kinopoisk.ru##.addTextTo
-kinopoisk.ru##a.kinopoisk-header-featured-menu__item.kinopoisk-header-featured-menu-item
-kinopoisk.ru##.kinopoisk-header-featured-menu
-kinopoisk.ru###kinopoisk-header-sticky-container:style(position:static !important)
-kinopoisk.ru###partial_component__watch-online-button
-kinopoisk.ru##.watch-online-button-description
 kinopoisk.ru##.subscribe
 ! is in Fanboy's
 kinopoisk.ru###GOWrapper
@@ -9447,12 +9454,8 @@ kinopoisk.ru###header-info-bg:style(background-color: transparent !important; ba
 kinopoisk.ru##+js(abort-on-property-read, Object.prototype.AdfoxEvents)
 ! new design?
 kinopoisk.ru##[class^=styles_branding]
-kinopoisk.ru##[class*=watchOnlineButton]
 kinopoisk.ru##[class*=styles_store]
 kinopoisk.ru##.hd-nameplate
-! "Попробовать Яндекс-Плюс" баннер
-kinopoisk.ru###kinopoisk-header-sticky-container:style(position:static !important)
-kinopoisk.ru##a[href*="//hd.kinopoisk.ru"]
 ! Еще какой-то анимированный баннер посередине
 kinopoisk.ru##[id*="_third_banner"]
 !
