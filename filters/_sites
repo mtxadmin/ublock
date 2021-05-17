@@ -2517,31 +2517,53 @@ tarif-24.ru##.mh-ticker-bottom
     ! vodatyt.ru##.entry-time
 
 ! and annoying self-promotions, mostly on blogs
-##[class^="author-box"]:not(html):not(body):not(article)
+##[class*="author-bio"]:not(html):not(body):not(article)
+##[id*="author-bio"]:not(html):not(body):not(article)
+    ! ###author-bio
+    ! ##.author-bio
+    ! ##.author-bio-content
+    ! ##.bp-author-bio
+    ! ###wifi-author-bio
+##[class*="author-box"]:not(html):not(body):not(article)
+    ! ##.article-author-box
+    ! ##.ast-single-author-box
     ! ##.author-box
     ! ##.author-box-desc
     ! ##.author-box__description
     ! ##.author-box__rating
+    ! ##.entry-author-box
+    ! ##.kathmag-pro-author-box
+    ! ##.ty-author-box
+##.about-author
+##.aboutAuthor
 ###about_the_author
+##.author-area
 ##.author-avatar
 ##.author_avatar
 ##.author__avatar
 ##.author-avatar-show
+##.author-block
 ##.authorbox
 ##.author_box
-###author-bio
-##.author-bio
-##.author-bio-content
+##.author_bio
 ##.author_bio_section
 ##.author-desc
 ##.author-description
 ##.author_detail_box
+##.author-info
+###author-info
 ##.author-info-description
+##.author-photo
 ##.bio-description
 ##.bio-gravatar
+##.box_author
 ##.mks_author_widget
+##.post-author
+##.postauthor
 ! blogspot widget "about author"
 ##.Profile.widget
+##.uwp_widget_author_box
+##.widget-Author
 
 
 
@@ -3707,7 +3729,6 @@ votesmart.appspot.com#@#a[href^="https://twitter.com/intent/tweet/"]
 ||apptractor.ru/*/local.png
 
 appuals.com###main-nav:style(position:static !important)
-appuals.com##.about-author
 
 !apt.ua###open-button:style(position:static !important)
 apt.ua###open-button
@@ -5505,7 +5526,6 @@ ctc.ru##[class^=banner-wrapper]
 ctege.info##.banner-r
 
 ctglobalservices.com##.fusion-header-wrapper
-ctglobalservices.com##.about-author
 ctglobalservices.com##.related-posts
 
 ctpost.com##header
@@ -5932,7 +5952,6 @@ dmosk.ru##nav
 ! other
 dmosk.ru##.menu-contact
 dmosk.ru##.article-post-inst
-dmosk.ru##.author-photo
 ||dmosk.ru/img/public/author.jpg
 dmosk.ru##.polezno_mail
 dmosk.ru##.polezno
@@ -6434,8 +6453,6 @@ echo.msk.ru##.mmage
 echo.msk.ru##.fixedpopul
 
 eco-dush.ru##.fix-scroll
-
-ecommercenext.org##.uwp_widget_author_box
 
 econet.ru###header:style(height:auto !important)
 
@@ -10071,8 +10088,6 @@ legko.com##.ld-header
 legko.com##.footer
 legko.com##.connect__grid
 
-legkovmeste.ru##.box_author
-
 forums.lenovo.com##.guidelines
 forums.lenovo.com##.lia-quilt-column-alley-inner
 forums.lenovo.com###ratingenumerationdisplay
@@ -10845,7 +10860,6 @@ mcgrp.ru##.navbar-header
 mcgrp.ru###left-panel
 mcgrp.ru##.list-group-item > [href^="https://play.google.com/store/apps/details"]
 
-mcpmag.com##.aboutAuthor
 mcpmag.com##.headline
 
 ||mdl.ru/*/FooterAndSidebar.js
@@ -12708,8 +12722,6 @@ pb.wtf##.dropdown-toggle.btn-primary.btn-sm.btn:has-text(/Подкинь нам|
 pcgamebenchmark.com###head:style(position:static !important)
 ||pcgamebenchmark.com/img/placement/$image
 
-pcgamer.com##.author-block
-
 pc-helpp.com###body_left
 
 pcloud.com##.notify_bar_wrap
@@ -13434,7 +13446,6 @@ postila.ru##.pictureButtons
 postila.ru###wlt-PictureLikesList
 postila.ru###wlt-PictureRepostsList
 
-postroika.biz##.box_author
 postroika.biz##.headbg
 postroika.biz###headbg
 postroika.biz###toc_container
@@ -14113,7 +14124,6 @@ redhat.com##.main-header:style(position:static !important)
 redmondmag.com##.header
 redmondmag.com##.footer
 redmondmag.com##.REDMOND-FLASH
-redmondmag.com##.aboutAuthor
 ! is in EasyList
 redmondmag.com##.ad
 
@@ -15440,7 +15450,6 @@ smartfonoff.mobi###header
 
 ||smarthomebeginner.com/*/editors-pick.png
 smarthomebeginner.com##.BestAzon_Amazon_Link
-smarthomebeginner.com##.post-author
 smarthomebeginner.com##.widget_ls_content_block
 
 smart-planets.ru###masthead
@@ -16257,8 +16266,6 @@ sysadminz.ru###upper_section
 ||sysnative.com/forums/data/avatars/$image
 sysnative.com##.message-avatar
 
-sysnettechsolutions.com##.postauthor
-
 sysrtfm.ru###un-button
 sysrtfm.ru###nav
 
@@ -16499,9 +16506,8 @@ techspot.com##.notice
 
 techspree.net###title-area
 
-techstronghold.com##body.fixed-nav:style(padding-top:0px !important)
-techstronghold.com##.widget-Author
 ||techstronghold.com/media/shared/social
+techstronghold.com##body.fixed-nav:style(padding-top:0px !important)
 
 techsupportforum.com###head_image
 ||techsupportforum.com/forums/images/sk/logonew.png
@@ -16554,8 +16560,6 @@ telegraf.com.ua$3p  # cross-site ads
 
 ! is in AdGuard
 ||telegram.im/widget-button/
-
-telegramadviser.com##.post-author
 
 telegramgeeks.com##.sidebar
 
@@ -16731,7 +16735,6 @@ thebell.io##.header--fixed:style(position:static !important)
 
 thefirearmblog.com###sidebar
 thefirearmblog.com###header
-thefirearmblog.com##.author_bio
 
 thegeekdiary.com##.site-header
 
@@ -16768,7 +16771,6 @@ thescarechamber.com##.header
 thesoul-publishing.com$third-party
 !webstats.thesoul-publishing.com$third-party
 
-thesslstore.com##.author-info.author-area
 thesslstore.com##.slide-out-div
 thesslstore.com##.footerpayment
 ||thesslstore.com/*/footer-payment.svg
@@ -16781,9 +16783,6 @@ thesystemcenterblog.com##.pvc_stats
 
 theverge.com##.c-tab-bar__logo
 theverge.com##.tab-bar-fixed
-
-thewindowsclub.com##.entry-author-box
-thewindowsclub.com###author-info
 
 thewindowsplus.org##.site-header
 thewindowsplus.org##.sidebar
@@ -17900,7 +17899,6 @@ vm.ru##.lyr:style(position:static !important)
 
 vmblog.ru##.has-banner.align-left-logo.container
 vmblog.ru###sidebar-nav
-vmblog.ru##.post-author
 vmblog.ru##.tags-share-box
 
 vmgu.ru##span.articles_info > b:has-text(Реклама:)
@@ -18299,7 +18297,6 @@ wi-fi.ru##.ya-site-form
 wi-fi.ru##.poppedUp:style(position:static !important)
 
 wifigid.ru##blockquote.warning
-wifigid.ru###wifi-author-bio
 wifigid.ru###wifi-author-other
 wifigid.ru##.expert-review
 wifigid.ru##.comment-avatar
@@ -18490,8 +18487,6 @@ wired.com##.site-footer__about-text
 
 wisesoft.co.uk###header
 wisesoft.co.uk###mainnav
-
-withintheflow.com##.bp-author-bio
 
 ||ecom.wix.com/storefront/cartwidgetPopup
 
@@ -19794,7 +19789,7 @@ provereno.media###logo_right_button:style(padding-top:0px !important;padding-bot
 question-defense.com##.branding
 question-defense.com##.masthead:not(.side-header):not(.mixed-header) .header-bar:style(min-height:0px !important)
 question-defense.com##.share-link-description
-question-defense.com##.entry-author.author-info
+question-defense.com##.entry-author
 
 lunavi.com##.global-nav-cta.quote-button
 lunavi.com##.footer-cta
@@ -19852,8 +19847,6 @@ al.com##.chain__left-column--inner:style(position:static !important)
 cyberdrain.com##.header-wrap:style(position:static !important)
 cyberdrain.com##body:style(height:auto !important)
 
-tutoexpress.com##.kathmag-pro-author-box
-
 wintips.org###header:style(height:auto !important)
 
 sonoff.tech##.et_pb_sticky_module:style(position:static !important)
@@ -19861,7 +19854,6 @@ sonoff.tech##.et_pb_sticky_placeholder
 sonoff.tech###main-header-wrapper:style(height:auto !important)
 
 securitynerd.com##[class^=astra-advanced-hook]
-securitynerd.com##.ast-single-author-box
 
 avast.com##.intro
 avast.com##.nav-inner:style(padding-top:0px !important; padding-bottom:0px !important)
@@ -19888,14 +19880,12 @@ wildberries.ru##.footer__pay-list
 
 smarthome.news##.author__holder
 
-gadgetvictims.com##.ty-author-box
 gadgetvictims.com###lower
 gadgetvictims.com###ty_footer
 gadgetvictims.com##.header-wrap
 gadgetvictims.com##.top-bar
 
 macworld.co.uk##.idgBrands
-macworld.co.uk##.article-author-box
 
 ||ipcisco.com/*/ipcisco-logo*.png
 ipcisco.com##.sticky-bar-bg:style(position:static !important)
@@ -19917,11 +19907,6 @@ yalantis.com##.article__bottom
 yalantis.com##progress
 
 technipages.com##.user-profile.widget
-
-/plugins/wp-dark-mode/*
-##.wp-dark-mode-switcher
-
-thesysadminchannel.com##.author-info
 
 izmerkon.ru##.header_phone
 izmerkon.ru##.header_send
