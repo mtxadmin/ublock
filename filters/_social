@@ -25,27 +25,32 @@ z-p3-sonar.fdar1-1.fna.fbcdn.net$domain=~facebook.com|~fb.com,important  # from 
 ! comments is preferably inline with  # 
 ! general first, specific last
 !
-/assets/facebook-$image  # is in Fanboy's and Ru AdList
+/facebook$image,domain=~facebook.com|~fb.com|~votesmart.appspot.com
+    /assets/facebook-$image  # is in Fanboy's and Ru AdList
+    /facebook-16.  # is in Fanboy's
+    /facebook.gif
+    /facebook.png
+    /facebook.svg$domain=~votesmart.appspot.com
+    /facebook-icon.png
+    /footer/facebook.  # is in Fanboy's
+    /images/facebook  # from Fanboy's
+    /img/facebook-  # from Fanboy's
+    /resources/facebook.  # is in Fanboy's
 _facebook_icon.  # from Fanboy's and Ru AdList
-/facebook.gif
 -facebook.js$domain=~king.com  # is in Fanboy's
-/facebook.png
-/facebook.svg$domain=~votesmart.appspot.com
 /facebook_pixel.js
 /facebook-tracking/*  # ad scripts  # is in EasyPrivacy
-/fb.jpg
-/fb.png
-/fb.svg
-/fb-logo.  # from Fanboy's
-/footer/facebook.  # is in Fanboy's
+/fb.$image
+    /fb.jpg
+    /fb.png
+    /fb.svg
+    /img/fb.  # is in Fanboy's
+/fb-$image
+    /fb-logo.  # from Fanboy's
+    /images/fb-  # is in Fanboy's
 /icon-facebook.
 /icon_fb.
-/images/facebook  # from Fanboy's
-/images/fb-  # is in Fanboy's
-/img/facebook-  # from Fanboy's
-/img/fb.  # is in Fanboy's
 _social_fb.  # from Fanboy’s
-/resources/facebook.  # is in Fanboy's
 ||facebook.com/audiencenetwork/$third-party  # from EasyList
 ||facebook.com/plugins/$important,domain=~facebook.com|~fb.com|~freepresets.com  # from AdGuard Social Media
 ||facebook.com/tr?$important
@@ -171,24 +176,31 @@ api.vk.com$domain=~vk.com|~foto-map.ru,important
 ! comments is preferably inline with  # 
 ! general first, specific last
 !
+/footer_vk.png
 /ico_vk.
 /ico-vk.
 /ico_vkontakte.gif
 /icon_vk.
 /vc.jpg
-/vk.gif
-/vk.jpg
-/vk.png
-/vk.svg$domain=~votesmart.appspot.com
+/vk.$image,domain=~vk.com|~votesmart.appspot.com
+    /vk.gif
+    /vk.jpg
+    /vk.png
+    /vk.svg$domain=~votesmart.appspot.com
+/vk_$image,domain=~vk.com|~votesmart.appspot.com
+    /vk_icon.png
+    /vk_logo.png
 /vk2.png
 /vk24.png
+/vk-desktop.png
 /vk_easy.js
-/vk_icon.png
-/vk_logo.png
-/vkontakte.gif
-/vkontakte.png
-/vkontakte.svg
-/img/vkontakte
+/vkontakt$image,domain=~vk.com|~votesmart.appspot.com
+    /vkontakte-16.
+    /vkontakt_30.jpg
+    /vkontakte.gif
+    /vkontakte.png
+    /vkontakte.svg
+    /img/vkontakte
 ||userapi.com/js/api/$domain=~vk.com,important
 ||vk.com/js^$third-party,important,domain=~senler.ru|~vse.fm
 ||vk.com/js/api/openapi.js$third-party,important,domain=~senler.ru|~vse.fm  # disabled rule from AdList RU
@@ -210,6 +222,8 @@ api.vk.com$domain=~vk.com|~foto-map.ru,important
 ##a[href^="//vk.com/share.php?"]
 ! from AdGuard
 ##a[href^="//vk.com/share.php"]
+! also, is in Fanboy's (maybe duplicate)
+##a[href^="http://vk.com/share.php?"]
 ! is in AdGuard
 ~votesmart.appspot.com##a[href^="https://vk.com/share.php"]
 ! from Fanboy's
@@ -279,6 +293,7 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 ! comments is preferably inline with  # 
 ! general first, specific last
 !
+/by-insta.jpg
 /footer/instagram.  # is in Fanboy's
 /images/instagram_  # from Fanboy's
 /img/instagram
@@ -328,12 +343,14 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 ! comments is preferably inline with  # 
 ! general first, specific last
 !
-/by-insta.jpg
+/footer_ok.png
 /ico_odnok.gif
-/odnoklassniki.png
-/odnoklassniki.svg
-/ok.png
-/ok.svg$domain=~votesmart.appspot.com
+/odnoklassniki$image,domain=~ok.ru|~odnoklassniki.ru|~votesmart.appspot.com
+    /odnoklassniki.png
+    /odnoklassniki.svg
+/ok.$image,domain=~ok.ru|~odnoklassniki.ru|~votesmart.appspot.com
+    /ok.png
+    /ok.svg$domain=~votesmart.appspot.com
 /ok_icon.png
 /ok-icon.png
 ||ok.ru/dk/?st.cmd=extLike$3p
@@ -355,6 +372,7 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 !ok.ru###mtLayer
 ~belarus2020.org##.fa-odnoklassniki
 ##.icon-odnoklassniki
+##.icons-ok
 ##.like-od
 ##.odnoklassniki
 ~belarus2020.org##.ok
@@ -1510,12 +1528,8 @@ smartlock.google.com$3p
 ##a[href^="https://pinterest.com/pin/create/"]
 
 ##.icons-tw
-##.icons-ok
 ##.icons-mail
 ##.foot_menu-social
-
-/footer_ok.png
-/footer_vk.png
 
 ! in 3 lists
 ##.sd-sharing
@@ -1658,14 +1672,7 @@ socauth.privatbank.ua
 ##a[href^="http://connect.ok.ru/offer?url="]
 
 ! is in Fanboy's
-##a[href^="http://vk.com/share.php?"]
-
-! is in Fanboy's
 ##.post_share
-
-/facebook-16.  # is in Fanboy's
-
-/vkontakte-16.
 
 /ndnapps-sociallogin-script.js$important
 
@@ -1752,7 +1759,3 @@ socauth.privatbank.ua
 /images/share_  # is in Adguard and Fanboy's
 
 ##.tamtam
-
-/facebook-icon.png
-
-/vk-desktop.png
