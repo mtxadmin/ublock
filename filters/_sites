@@ -17399,7 +17399,17 @@ ucunleashed.com###wrap:style(background-image:none !important)
 ||ssl.gstatic.com/accounts/$domain=udemy.com
 ||apis.google.com/_/scs/apps-static/$domain=udemy.com
 ||apis.google.com/js/api.js$domain=udemy.com
+    ! up banner
 udemy.com##div[class*="smart-bar"]
+    ! subscr banner
+! is in Adguard - doesn't work completely
+#udemy.com##div[class^="alert-banner--"]
+! working rule
+udemy.com##[class*="alert-banner"]
+||udemy.com/*/view-logs/
+    ! not a menu, tag cloud
+udemy.com##nav
+    ! other
 ! is in AdGuard
 udemy.com##.ud-component--footer--eu-cookie-message
 udemy.com##[class*=sidebar-container--fixed]
@@ -17409,8 +17419,6 @@ udemy.com##[class^=billboard--content-box]
 udemy.com##[class^=invite-alert]
 udemy.com##.streamer--fixed
 udemy.com##.original-price-container
-! not a menu, tag cloud
-udemy.com##nav
 udemy.com##.course-landing-page_sidebar-container
 udemy.com##.course-landing-page_slider-menu-container
 udemy.com##.ud-component--footer--ufb-notice
