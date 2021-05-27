@@ -124,13 +124,13 @@ aliexpress.ru$removeparam=|ws_ab_test
 
 !! aliexpress filters and subdomains
 
-! history
+    ! history
 aliexpress.com##.buyer-activity-bit
 aliexpress.com###historyOuterBox
 aliexpress.com##.show-history
 aliexpress.com##.shopping-history
 
-! promotions
+    ! promotions
 !promotion.aliexpress.com - don't, coupons use it
 ||alicdn.com/g/aemod/ae-pc-promoteSingleBanner/
 aliexpress.com,aliexpress.ru##.festival-header
@@ -143,24 +143,23 @@ aliexpress.com##.global-sale-module-title
 aliexpress.com,aliexpress.ru##[class*=bannerLink]
 aliexpress.com,aliexpress.ru##[class*=styles_carousel]
 
-
-! banner in empty shopping cart
+    ! banner in empty shopping cart
 shoppingcart.aliexpress.com##.big-sale.empty-default
 shoppingcart.aliexpress.com##.empty-default
 
-! carousel sliders (only active)
+    ! carousel sliders (only active)
 aliexpress.com##.prime-slideshow
 
-! cookies notice
+    ! cookies notice
 ! is in AdGuard, Fanboy's, EasyList
 aliexpress.com##.aliexpress-notice
 aliexpress.com###j-aliexpress-notice
 
-! social login
+    ! social login
 aliexpress.com##.flyout-signIn-type
 aliexpress.com##.login-sns-wrap
 
-! register banners
+    ! register banners
 aliexpress.com###user-benefits
 aliexpress.com,aliexpress.ru##li.member-entry-product-item
 
@@ -168,11 +167,11 @@ campaign.aliexpress.com  # ad popups
 aliexpress.com,aliexpress.ru##[href^="//campaign.aliexpress.com/"]
 aliexpress.com###J_xiaomi_dialog
 
-! store banners
+    ! store banners
 aliexpress.com,aliexpress.ru##.product-store-banner
 aliexpress.com,aliexpress.ru##.store-banner
 
-! fixed elements
+    ! fixed elements
 aliexpress.com,aliexpress.ru##.float-image
 aliexpress.com##.fixed-header:style(position:static !important)
 aliexpress.com##.left-affix.next-affix:style(position:static !important)
@@ -185,25 +184,25 @@ aliexpress.com##.alime-avatar
 aliexpress.com###J_xiaomi_dialog:has-text(Need help?)
 aliexpress.com###J_xiaomi_dialog:has-text(Eva):has-text(Reason for order close)
 aliexpress.com##.safe-info-hook
-! pseudo filler
+    ! pseudo filler
 aliexpress.com##.placeholder-div
 
-! hover icons on photos
+    ! hover icons on photos
 aliexpress.com##.atwl-btn-wrap
 
-! footer with seo links
+    ! footer with seo links
 aliexpress.com,aliexpress.ru##.cross-link
 aliexpress.com,aliexpress.ru##.seo-left
 aliexpress.com,aliexpress.ru##.seo-container
 aliexpress.com,aliexpress.ru##.seo-page-content
 aliexpress.com,aliexpress.ru##.footer-copywrite
 
-! idea is good but realization is bad
+    ! idea is good but realization is bad
 aliexpress.com,aliexpress.ru##.ask-buyers
 
-! gif animations
+    ! gif animations
 ||alicdn.com/kf/*.gif
-! some annoying general pics from sellers
+    ! some annoying general pics from sellers
 ||alibaba.com/kf-down/HTB12lINmvNNTKJjSspcq6z4KVXam.jpg
 ||alicdn.com/img/ibank/2017/407/627/4313726704_505402663.jpg
 ||alicdn.com/img/ibank/2017/822/587/4353785228_197593168.jpg
@@ -655,7 +654,7 @@ aliexpress.com,aliexpress.ru##.ask-buyers
 ||alicdn.com/tfs/TB1arM9tk9l0K4jSZFKXXXFjpXa-420-142.jpg
 ||alicdn.com/tfs/TB1iSq6bTM11u4jSZPxXXahcXXa-750-60.png
 
-! Эти задолбали появляться в поиске, причем по совершенно разным и не связанным позициям
+    ! Эти задолбали появляться в поиске, причем по совершенно разным и не связанным позициям
 ||alicdn.com/kf/H0d54b8072f804f74935abcdde6bd9ce1N.jpg_350x350xz.jpg
 ||alicdn.com/kf/H1309284341b24c8fb520e306cac97e45W.jpg_350x350xz.jpg
 ||alicdn.com/kf/H19d5afa1c5b24ffa9441bfa3e73fdf70i.jpg_350x350xz.jpg_.webp
@@ -687,15 +686,14 @@ aliexpress.com,aliexpress.ru##.ask-buyers
 ||alicdn.com/kf/Hd007996218ce4107993cd157ac8261b4f.jpg
 ||alicdn.com/kf/HTB1phgyDeuSBuNjSsplq6ze8pXaP.jpg
 ||alicdn.com/kf/HTB14YdikRjTBKNjSZFNq6ysFXXa9.jpg
-
-! А, так это была реклама (AD на фото)! Сжечь её!
+    ! А, так это была реклама (AD на фото)! Сжечь её!
 aliexpress.com##.other-store-more > div > div > div:has-text(/AD/)
 
 !aliexpress.com##.next-overlay-wrapper - don`t, not only ad popups
 
 aliexpress.com##.vehicles-container
 
-! sidebar
+    ! sidebar
 aliexpress.com,aliexpress.ru##.sidebar-newuser
 aliexpress.com,aliexpress.ru###j-multi-sidebar-outer
 aliexpress.com,aliexpress.ru##.promotion-sidebar-content
@@ -706,6 +704,7 @@ aliexpress.com,aliexpress.ru##[class^=styles_body]
 ! other
 ! from uBlock filters
 aliexpress.com##body:style(overflow: auto !important; padding: 0 !important;)
+aliexpress.com##.use-coupons-info-lang-limit:style(font-size:15px !important)
 aliexpress.com##.mobile-discount-trigger
 aliexpress.com,aliexpress.ru##.ng-mobile
 aliexpress.com,aliexpress.ru##.site-footer
