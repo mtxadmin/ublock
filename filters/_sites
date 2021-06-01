@@ -10132,7 +10132,23 @@ lenta.ru$inline-script  # site tries to load ad modules
 ||lenta.ru/assets/webpack/pwaBundle
 ||lenta.ru/assets/webpack/vendorsPwa
 lenta.ru##.layout__header:style(position:static !important)
-lenta.ru##.b-sidebar-menu_mini
+! Rabmler rnet ad network. Ru AdList rule
+lenta.ru##div[id^="rnet_"]
+! Ru AdList rule
+lenta.ru##.js-top-column:style(position: relative !important)
+! Ru AdList rule
+lenta.ru##+js(remove-attr, class, .js-video-box__container)
+! Adguard rule
+lenta.ru##+js(abort-on-property-write, Object.prototype.getPlaceSelectorByBannerId)
+! Adguard rule
+lenta.ru##.b-topic-sidebar div:has(:scope > div:has-text(Новости партнеров))
+! Ru AdList rule
+lenta.ru##.js-lower-column:style(position: relative !important)
+! is in Ru AdList
+lenta.ru##.b-video-box__close
+! is in Fanboy's
+lenta.ru###up
+enta.ru##.b-sidebar-menu_mini
 lenta.ru##.b-sidebar-menu
 lenta.ru###date-time
 lenta.ru##.b-header__date
