@@ -13974,14 +13974,36 @@ raichev.ru##.desktop-logo
 ||raidrive.com/file/fusion-scripts/
 raidrive.com##.fusion-animated:style(visibility:visible !important)
 
-||ssp.rambler.ru/capirs_async.js$important
-||ramblernews.media.eagleplatform.com$subdocument  # rambler
+    ! hosts
+peroxide.rambler.ru  # ad xhrs
 ! embedded videos. На motor.ru этим злоупотребляют, в середину статей пихают какие-то видео "Новости недели"
 ||vp.rambler.ru$domain=motor.ru
-developers.rambler.ru/likes/
+    ! urls
+||rambler.ru/api/v4/okko-metrics
+||rambler.ru/clicks/
+||rambler.ru/location/
+||ssp.rambler.ru/capirs_async.js$important
+||ramblernews.media.eagleplatform.com$subdocument  # rambler
+    ! rules
+! Rambler rnet ad network. Ru AdList rule. Also see similar in lenta.ru
+rambler.ru##div[data-rnet]
+evelopers.rambler.ru/likes/
 news.rambler.ru##.menu--visible.menu--news.menu.j-menu:style(position:static !important)
 rambler.ru##.menu--visible.menu.j-menu
+! Adguard rule
+rambler.ru##div[data-blocks^="cluster_"] div[class]:has(:scope > div[data-rambler-share])
+! Adguard rule
+rambler.ru##div[data-marker-observer]
+! Ru AdList rule
+rambler.ru##a[href*="okko.tv"]
+    ! Ru AdList rules. Do not generalize as rambler.ru##.commercial-branding
+rambler.ru##.commercial-branding div[class]:has(:scope > div[class] > div[id^="adfox-"]:only-child)
+rambler.ru##.commercial-branding > div[class][style^="order:"] div:style(min-height: 0 !important)
 rambler.ru###headline
+# totop
+rambler.ru##._3mubT
+! Adguard rule
+rambler.ru###root div[data-blocks] div:not([aria-label]):empty:style(min-height: 0 !important;)
 
 ||ramayoga.ru/images/160.gif
 ||ramayoga.ru/images/160bg.gif
