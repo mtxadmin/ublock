@@ -30,11 +30,13 @@ $removeparam=|elqTrackId|elqTrack|assetType|assetId|recipientId|campaignId|siteI
 $removeparam=|_hsenc|_hsmi|__hssc|__hstc|hsCtaTracking  # Hubspot
 $removeparam=|gs_l  # Google
 
+! Note: || is essential here. Because rule for amazon.com does not catch www.amazon.com
+
 !! domains
 
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
-3dnews.ru$removeparam=from
+||3dnews.ru$removeparam=from
 
 ! See aliexpress rules in aliexpress file
 
@@ -43,21 +45,21 @@ $removeparam=|gs_l  # Google
 #  $/ref@amazon.*
 ! from NeatURL. Todo: make and text regexp here
 !pd_rd_*@amazon.*", "psc@amazon.*", "tag@amazon.*", "pf_rd_*@amazon.*"]},
-amazon.com$removeparam=|_encoding|psc|tag
-amazon.com$removeparam=ref_  # is in NeatURL
+||amazon.com$removeparam=|_encoding|psc|tag
+||amazon.com$removeparam=ref_  # is in NeatURL
 ! Found independently. Todo: make regexp
 !amazon.com$removeparam=|dchild|keywords|qid|sr|th|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_
 ||amazon.com$removeparam=|dchild|qid|sr|th|pf_rd_m|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_|ref
 
-bilibili.com$removeparam=|callback  # from NeatURL
+||bilibili.com$removeparam=|callback  # from NeatURL
 
-bing.com$removeparam=|cvid|form|sk|sp|sc|qs|pq  # from NeatURL
+||bing.com$removeparam=|cvid|form|sk|sp|sc|qs|pq  # from NeatURL
 
 ! Adguard rules
 ||digikey.com^$removeparam=/^mkt_tok/
 ||digikey.com^$removeparam=/^utm_cid/
 
-discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
+||discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
 
 ! See google URL parameters in google file
 
@@ -74,33 +76,33 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
-ria.ru$removeparam=|rcmd_alg|rcmd_id
+||ria.ru$removeparam=|rcmd_alg|rcmd_id
 
 ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 
-sourceforge.net$removeparam=|source|position  # from NeatURL
+||sourceforge.net$removeparam=|source|position  # from NeatURL
 
-tweakers.net$removeparam=|nb|u  # from https://github.com/Smile4ever/Neat-URL
+||tweakers.net$removeparam=|nb|u  # from https://github.com/Smile4ever/Neat-URL
 
-unsplash.com$removeparam=|ixlib|ixid
+||unsplash.com$removeparam=|ixlib|ixid
 
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
 !originally commented rules from NeatURL: #?pk_campaign@vivaldi.com, #?pk_kwd@vivaldi.com
 
-wildberries.ru$removeparam=|targetUrl
+||wildberries.ru$removeparam=|targetUrl
 
 ||yandex.ru/player/*autoplay=$subdocument,removeparam=|  # from Ru AdList
 
 ||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
-youtube.com$removeparam=|feature  # from NeatURL
+||youtube.com$removeparam=|feature  # from NeatURL
 ||youtube.com^*gclid*$removeparam=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467  # also it is found indepedently and presents in NeatURL. Very popular parameter.
-youtube.com$removeparam=|kw  # from NeatURL
+||youtube.com$removeparam=|kw  # from NeatURL
 ||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
-zeit.de$removeparam=|wt_zmc  # from NeatURL, modified. Originally it was global rule
+||zeit.de$removeparam=|wt_zmc  # from NeatURL, modified. Originally it was global rule
 
-zr.ru$removeparam=|internal_visits  # found independently
+||zr.ru$removeparam=|internal_visits  # found independently
 
 !! todo
 
