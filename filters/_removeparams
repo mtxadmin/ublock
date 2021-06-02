@@ -31,6 +31,10 @@ bilibili.com$removeparam=|callback  # from NeatURL
 
 bing.com$removeparam=|cvid|form|sk|sp|sc|qs|pq  # from NeatURL
 
+! Adguard rules
+||digikey.com^$removeparam=/^mkt_tok/
+||digikey.com^$removeparam=/^utm_cid/
+
 $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
@@ -42,6 +46,8 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 
 ||nationalinterest.org$removeparam=itok|timestamp
 
+||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
+
 ria.ru$removeparam=|rcmd_alg|rcmd_id
 
 ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
@@ -52,9 +58,13 @@ tweakers.net$removeparam=|nb|u  # from https://github.com/Smile4ever/Neat-URL
 
 unsplash.com$removeparam=|ixlib|ixid
 
+||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|  # from Ru AdList
+
 !originally commented rules from NeatURL: #?pk_campaign@vivaldi.com, #?pk_kwd@vivaldi.com
 
 wildberries.ru$removeparam=|targetUrl
+
+||yandex.ru/player/*autoplay=$subdocument,removeparam=|  # from Ru AdList
 
 ||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 youtube.com$removeparam=|feature  # from NeatURL
