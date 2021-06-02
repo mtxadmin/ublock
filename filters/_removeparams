@@ -35,6 +35,8 @@ bing.com$removeparam=|cvid|form|sk|sp|sc|qs|pq  # from NeatURL
 ||digikey.com^$removeparam=/^mkt_tok/
 ||digikey.com^$removeparam=/^utm_cid/
 
+discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
+
 $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
@@ -81,10 +83,15 @@ zr.ru$removeparam=|internal_visits  # found independently
 ! from Adguard. Todo: recheck.
 !@@||auto-swiat.pl/*&srcc=ucs$removeparam
 !@@||komputerswiat.pl/*&srcc=ucs$removeparam
+!@@||lanacion.com.ar/*module$removeparam=utm_source
 !@@||noizz.pl/*&srcc=ucs$removeparam
 !@@||plejada.pl/*&srcc=ucs$removeparam
 !@@||medonet.pl/*&srcc=ucs$removeparam
 !@@||businessinsider.com.pl/*&srcc=ucs$removeparam
+!@@||t.send.vt.edu/r/?id=$removeparam=utm_source
+!@@||t.send.vt.edu/r/?id=$removeparam=utm_medium
+!@@||t.send.vt.edu/r/?id=$removeparam=utm_campaign
+!@@||onet.pl/?utm_source=$removeparam
 
 ! from https://github.com/Smile4ever/Neat-URL
 ! { "name": "Action Map", "params": ["action_object_map", "action_type_map", "action_ref_map"]},
