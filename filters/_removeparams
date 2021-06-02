@@ -11,6 +11,25 @@
 $removeparam=|utm_source|utm_medium|utm_campaign,important
 # Ru AdList rule: utm_campaign=$document,queryprune=|,domain=yandex.*|aliexpress.com|aliexpress.ru
 
+! general rules from NeatURL
+$removeparam=|action_object_map|action_type_map|action_ref_map  # Action Map
+$removeparam=|sc_cid  # Campaign tracking (Adobe Analytics)
+$removeparam=|mkt_tok  # Campaign tracking (Adobe Marketo)
+$removeparam=|trk|trkCampaign  # Campaign tracking (Amazon Kendra)
+$removeparam=/^ga_.*/  # Campaign tracking (ga, Google Analytics)
+$removeparam=|hmb_medium|hmb_source  # Campaign tracking (Humble Bundle)
+$removeparam=/^itm_.*/ # Campaign tracking (itm)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/
+$removeparam=/^pk_.*/  # Campaign tracking (pk)
+$removeparam=|sc_campaign|sc_channel|sc_content|sc_medium|sc_outcome|sc_geo|sc_country  # Campaign tracking (sc)
+$removeparam=/utm_.*/  # Campaign tracking (utm)
+$removeparam=|yclid|_openstat  # Campaign tracking (Yandex)  # https://yandex.com/support/direct/statistics/url-tags.html
+$removeparam=|mbid|cmpid|c_id|campaign_id|Campaign  # Campaign tracking (others) # cid is excluded - it is being used by some forum engines  # https://www.parse.ly/help/post/4843/campaign-data-tracking/
+$removeparam=|fb_action_ids|fb_action_types|fb_ref|fb_source|fbclid  # Facebook
+$removeparam=|spReportId|spJobID|spUserID|spMailingID  # "IBM Acoustic Campaign
+$removeparam=|elqTrackId|elqTrack|assetType|assetId|recipientId|campaignId|siteId  # Oracle Eloqua 
+$removeparam=|_hsenc|_hsmi|__hssc|__hstc|hsCtaTracking  # Hubspot
+$removeparam=|gs_l  # Google
+
 !! domains
 
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
@@ -38,6 +57,8 @@ bing.com$removeparam=|cvid|form|sk|sp|sc|qs|pq  # from NeatURL
 ||digikey.com^$removeparam=/^utm_cid/
 
 discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
+
+! See google URL parameters in google file
 
 $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
@@ -95,28 +116,8 @@ zr.ru$removeparam=|internal_visits  # found independently
 !@@||t.send.vt.edu/r/?id=$removeparam=utm_campaign
 !@@||onet.pl/?utm_source=$removeparam
 
-! from https://github.com/Smile4ever/Neat-URL
-! { "name": "Action Map", "params": ["action_object_map", "action_type_map", "action_ref_map"]},
-! { "name": "Campaign tracking (Adobe Analytics)", "params": ["sc_cid"]},
-! { "name": "Campaign tracking (Adobe Marketo)", "params": ["mkt_tok"]},
-! { "name": "Campaign tracking (Amazon Kendra)", "params": ["trk", "trkCampaign"]},
-! { "name": "Campaign tracking (ga, Google Analytics)", "params": ["ga_*"]},
-! { "name": "Campaign tracking (Humble Bundle)", "params": ["hmb_campaign", "hmb_medium", "hmb_source"]},
-! { "name": "Campaign tracking (itm)", "params": ["itm_*"], "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"},
-! { "name": "Campaign tracking (pk)", "params": ["pk_*"]},
-! { "name": "Campaign tracking (sc)", "params": ["sc_campaign", "sc_channel", "sc_content", "sc_medium", "sc_outcome", "sc_geo", "sc_country"]},
-! { "name": "Campaign tracking (utm)", "params": ["utm_*"]},
-! { "name": "Campaign tracking (Yandex)", "params": ["yclid", "_openstat"], "docs": "https://yandex.com/support/direct/statistics/url-tags.html"},
-! { "name": "Campaign tracking (others)", "params": ["mbid", "cmpid", "cid", "c_id", "campaign_id", "Campaign"], "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"},
-! { "name": "Facebook", "params": ["fb_action_ids", "fb_action_types", "fb_ref", "fb_source", "fbclid"]},
-! { "name": "Google", "params": ["gs_l", "ved@google.*", "ei@google.*", "sei@google.*", "gws_rd@google.*"]},
-! { "name": "Hubspot", "params": ["_hsenc", "_hsmi", "__hssc", "__hstc", "hsCtaTracking"]},
-! { "name": "IBM Acoustic Campaign", "params": ["spReportId", "spJobID", "spUserID", "spMailingID"]},
-! { "name": "Oracle Eloqua", "params": ["elqTrackId", "elqTrack", "assetType", "assetId", "recipientId", "campaignId", "siteId"]},
 
-
-! from https://github.com/Smile4ever/Neat-URL
-!
+! from NeatURL
 !Google Analytics - tracking https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
 !tid, aip, ds, qt, cid, uid, uip, ua, geoid, dr, cn, cs, cm, ck, cc, ci, gclid, dclid, linkid
 !
