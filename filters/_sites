@@ -17433,6 +17433,7 @@ ucunleashed.com###wrap:style(background-image:none !important)
 ||udemy.com/*/intercom-app
 ||udemy.com/api-2.0/visits/  #||udemy.com/api-2.0/visits/me/funnel-logs/
 ||udemy.com/api-2.0/ecl
+||udemy.com/*/view-logs/
 ||udemycdn.com/notices/featured_banner/
 ||udemycdn.com/notices/web_banner/
 #||udemy.com/staticx/udemy/js/webpack/vendor-mobx - don't
@@ -17455,8 +17456,7 @@ udemy.com##div[class*="smart-bar"]
 #udemy.com##div[class^="alert-banner--"]
 ! working rule
 # udemy.com##[class*="alert-banner"] # v2
-udemy.com##[class*="alert-banner"]:not([class*="alert-banner--alert-banner-success"])
-||udemy.com/*/view-logs/
+#udemy.com##[class*="alert-banner"]:not([class*="alert-banner--alert-banner-success"])
     ! not a menu, tag cloud
 udemy.com##nav:not(:has(button))
     ! other
