@@ -12947,6 +12947,7 @@ imagetwist.com$script
 ! Сделаем исключение и повторим применимые общие правила конкретно на сайт
 @@||pikabu.ru^$generichide
 ||pikabu.ru/files/techworks.swf
+||pikabu.ru/images/fun/scheadar.png
 ||pikabu.ru/images/jobseeker/
 ||pikabu.ru/images/pechenka*.png$image
 ||pikabu.ru/promo-test/
@@ -12981,7 +12982,9 @@ pikabu.ru##.story__share-new
 ! email subscription forms
 pikabu.ru##.email-block
 pikabu.ru##.email-form_block
-! ads in posts
+! ads in posts (by platform)
+pikabu.ru##.page-story__story:has(#adfox_context_story_1)
+! ads in posts (by users)
 pikabu.ru##p:has(a[href*="http://t.me"])
 pikabu.ru##p:has(a[href*="https://t.me"])
 pikabu.ru##p:has(a[href*="https://www.instagram.com/"])
