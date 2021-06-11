@@ -559,6 +559,7 @@ _advert/  # from EasyList
 ##.banner-header
 ##.banner_img
 ##.banner-left
+##.banner_left
 ##.banner-link
 ##.banner-main-container
 ##.banner-slider
@@ -2177,6 +2178,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 ###pay_oneclick
 ##.product__fast-order-btn
 ##.quick_order
+##.quick-order
 ##.wrapp_one_click
 
 
@@ -3347,6 +3349,25 @@ air-gun.ru##.foter_text
 ! Now it isn't but it's not ad: https://legalbetweb-a.akamaihd.net/assets/LB-TB-1/js/admin/jquery-file-upload/jquery.iframe-transport.js
 ||akamaihd.net^*/ad*.js$script,important
 
+||airsoft-rus.ru/images/mailToDirector.png
+! menu
+airsoft-rus.ru##.main-nav::before
+airsoft-rus.ru##.main-menu a:style(color:#000 !important)
+! recommended: autorotates
+airsoft-rus.ru##.detail-recomended-section
+airsoft-rus.ru##.autorotation-active
+! fixed buttons
+airsoft-rus.ru##.a-compare
+airsoft-rus.ru##.a-otzuv
+! credit
+airsoft-rus.ru##.two.add-bask-btn
+! other
+airsoft-rus.ru###sidebar [href^="https://market.yandex.ru/"]
+airsoft-rus.ru##.labels-wrapper
+airsoft-rus.ru##.contact-column
+airsoft-rus.ru##.footer-yandex_logo
+! other
+
 airsoftstore.ru##.linkfilters:style(position:static !important)
 
 akado.ru##.banner
@@ -3889,6 +3910,10 @@ arms-expo.ru##.news-full__footer
 ||armsline.ru/i/contacts/visamasterh70.jpg
 ||armsline.ru/img/page.jpg
 armsline.ru##.no-cart-add
+
+||arosa-market.ru/*/payment-system.svg
+arosa-market.ru##.footer-contact
+arosa-market.ru##.delivery-message
 
 arsenal.army##.telephone-block
 ||arsenal.army/*/lazy-loader.gif
@@ -5009,6 +5034,8 @@ carguts.ru###colophon
 
 carhack.ru##.g1-logo
 
+carsalesbase.com##.logo-main-wrap-center
+
 carsharik.ru##.p1
 carsharik.ru##.l-sidebar
 carsharik.ru##.header__line
@@ -5340,6 +5367,19 @@ cnet.com##.social-link
 cnet.com##.logo_image
 !||cbsistatic.com/*/logo_192.png
 
+    ! top
+cnev.ru##.tm-headerbar-top
+cnev.ru##.butphone
+cnev.ru##.uk-navbar:style(position:static !important)
+cnev.ru##.uk-navbar::before:style(position:static !important)
+cnev.ru##.uk-navbar::after:style(position:static !important)
+cnev.ru##.uk-navbar-sticky:style(position:static !important)
+cnev.ru##.uk-container:style(position:static !important)
+cnev.ru##.uk-sticky:style(position:static !important)
+cnev.ru##.uk-sticky-below:style(position:static !important)
+cnev.ru##.uk-sticky-fixed:style(position:static !important)
+    ! other
+
 ! that's from Ru AdList, disabled
 @@||cnews.ru^$generichide,badfilter
 cnews.ru##.tizer_stick:style(position:static !important)
@@ -5358,6 +5398,9 @@ codeproject.com###ctl00_AboutHeading
 codetwo.com##.menu-navbar-header
 codetwo.com##.codetwo-sliding
 ||codetwo.com/*/post-bottom.png
+
+coindesk.com##.pricing-wrapper-spacer
+coindesk.com##.site-nav:style(position:static !important)
 
 coinmarketcap.com##.icon-Chevron-up
 
@@ -6635,11 +6678,8 @@ ekipirovka.ru##footer
     ! other
 ekipirovka.ru##.fon
 ekipirovka.ru##.catalog-detail-buttons
-ekipirovka.ru##.banner_left
 ekipirovka.ru##.new_leader_disc
 ekipirovka.ru##.vk_groups_title
-
-ekipirovka4you.ru##.logo-holder
 
 eko-village.com###hidden-content
 eko-village.com##.fancybox-is-open
@@ -7672,6 +7712,9 @@ getfreedumps.com##.sidebar1
 gethuman.com###lay-fl-nav-top
 gethuman.com##.bar-share
 
+gethunt.ru##.appNotifications
+gethunt.ru##.margin-bottom-20
+
 getstream.io##.str-topbar:style(position:static !important)
 
 gfaq.ru##td:nth-of-type(2) > table:nth-of-type(1) > tbody > tr:nth-of-type(1) > td
@@ -8116,16 +8159,16 @@ news.guru.ua##a.s
 guruadmin.ru###header2
 guruadmin.ru##.addzakl
 
-! new favicon is ugly
+    ! new favicon is ugly
 ||habr.com/*/apple-touch-icon.png
 ||habr.com/*/favicon-32x32.png
 ||habr.com/*/favicon-16x16.png
 habr.com##.tm-footer__title
-! unstick
+    ! unstick
 habr.com##.layout__row_navbar:style(position:static !important)
 habr.com##.sidebar_right_sticky:style(position:static !important)
 habr.com##.sidebar_right_stick-top:style(position:static !important)
-! banners and sponsor posts
+    ! banners and sponsor posts
 habr.com##.default-block:has-text(Хабр рекомендует)
 habr.com##.post_preview:has-text(Блог компании ТechMedia)
 habr.com##.footer-menu__item:has-text(ППА)
@@ -8135,7 +8178,8 @@ habr.com##.tm-company-card__branding
 habr.com##.company-links
 habr.com##.tm-features
 habr.com###effect
-! ad links in posts
+habr.com##.promo-block
+    ! ad links in posts
 habr.com##a[href^="https://www.pochtoy.com/"]
 habr.com##a[href^="https://pochtoy.com/"]
 habr.com##a[href^="http://www.pochtoy.com/"]
@@ -8147,11 +8191,11 @@ habr.com##a[href^="https://clck.ru/"]
 habr.com##a[href^="https://slc.tl/"]
 habr.com##a[href^="http://ruvds.com/"]
 habr.com##a[href^="https://vdsina.ru/"]
-! socials
+    ! socials
 habr.com##div.default-block_sidebar:has-text(Twitter)
 habr.com##div.default-block_sidebar:has-text(ВКонтакте)
 habr.com##.tm-social-icons__icon
-! trash
+    ! trash
 habr.com##.tm-notice:has-text(Только полноправные пользователи могут оставлять комментарии)
 habr.com##.post__text > blockquote:has-text(Минутка заботы от НЛО)
 habr.com###effect-sidebar
@@ -8159,15 +8203,15 @@ u.tmtm.ru  # habr reflinks
 habr.com##.content-list__item:has(a[href^="https://u.habr.com/"])
 habr.com###widget
 habr.com###companies_rating
-! apps
+    ! apps
 habr.com##.footer-block__content_apps
 habr.com##.tm-footer__apps
 habr.com##.tm-footer-apps
 habr.com##.company-app
-! counters
+    ! counters
 ||habr.com/*/viewcount/
 habr.com##.post-info__meta > span.post-info__meta-item
-! other
+    ! other
 habr.com##.for_users_only_msg
 habr.com##.inline-list.user-info__contacts
 habr.com###TMpanel
@@ -8213,7 +8257,6 @@ hardsafe.ru##.telephone
 hardsafe.ru##.foot_panel
 hardsafe.ru##.rating
 hardsafe.ru##.foot_panel
-hardsafe.ru##.banner_left
 hardsafe.ru##.discount_left
 hardsafe.ru##.tns-outer
 hardsafe.ru##.o-w-click-button
@@ -8238,7 +8281,6 @@ headphonesbest.ru##.anycomment-comments-widget
 helgeklein.com##.post__meta--author
 helgeklein.com##.pni-navigation:style(position:static !important)
 
-helpadmins.ru##.blog-logo
 helpadmins.ru##b:has-text(/(Поделись|Присоединяйтесь)/)
 
 helpdeskgeek.com##.scroll-nav:style(position:static !important)
@@ -8534,6 +8576,8 @@ hunter.ru##.top
 ! right column
 hunter.ru##table:nth-of-type(2) > tbody > tr > td:nth-of-type(2)
 ! other
+
+hunterfencing.com.au/bcsia3/  # ad scam
 
 huntergo.ru##.RECOMENDATION_wrapp.tab
 huntergo.ru##.bottom_slider
@@ -9967,6 +10011,10 @@ krov-torg.ru###top-bar
 
 krsn-forum.ru###header > .container
 
+krugovik.ru##.site-slider
+krugovik.ru##.site-header-wrap:style(position:static !important)
+krugovik.ru##.site-slog
+
 krutimotor.ru##.form-openexpert_plag
 krutimotor.ru##.form-resultexpert_plag
 
@@ -10681,6 +10729,9 @@ livejournal.com##.is-link
     ! no useful effect
     !||l-stat.livejournal.net$frame
 ! end of livejournal.com
+livejournal.com##.sidebar-custom.sidebar-block
+livejournal.com###header-inner:style(height:auto !important)
+livejournal.com###header:style(height:auto !important)
 
 ||livelib.ru/img/headerunreg/*$image
 livelib.ru##.uh-loginform
@@ -10737,6 +10788,20 @@ losst.ru##.widget:has-text(/Реклама|Мы вконтакте|Обнару�
 losst.ru##.image-logo
 losst.ru##.avatar
 losst.ru##.postrating
+
+||lovchy.ru/i/footerBack.jpg
+||lovchy.ru/i/headerBack.jpg
+||lovchy.ru/i/logoFooter.png
+lovchy.ru###pageHTML:style(background-image:none)
+lovchy.ru###headerBack:style(background-image:none)
+lovchy.ru###footerBack:style(background-image:none)
+lovchy.ru##section:style(min-height:0 !important; padding-bottom:0px !important)
+lovchy.ru##.buy_kredit.kredit
+lovchy.ru##.fast
+lovchy.ru##.btnAkcii
+lovchy.ru##.banner_mercury
+lovchy.ru##.price-reduced
+lovchy.ru##noindex
 
 lovely-dog.ru###masthead
 
@@ -11210,6 +11275,9 @@ metro-cc.ru##.b-header-fixed_logo
 ! compacting product list
 metro-cc.ru##.middle-line > .me-box-details
 metro-cc.ru##.category_instamart
+metro-cc.ru##.preloader
+metro-cc.ru##.footer__app
+metro-cc.ru##.header__tradecenter_popup
 
 mexonline.com$third-party
 
@@ -15688,6 +15756,8 @@ smartfacts.ru##.footer-area
 
 smartfonoff.mobi###header
 
+smarthome.news##.author__holder
+
 ||smarthomebeginner.com/*/editors-pick.png
 smarthomebeginner.com##.BestAzon_Amazon_Link
 smarthomebeginner.com##.widget_ls_content_block
@@ -16120,6 +16190,8 @@ ssecond-life.ru###header-text-nav-wrap
 sso-mil.ru##.phone-area
 sso-mil.ru##.map-bay
 ||sso-mil.ru/*/ssw.png
+sso-mil.ru##.centerheader:style(height:auto !important)
+sso-mil.ru##.bx-composite-btn
 
 ssskkk.ru##.hint:has-text(promo)
 ssskkk.ru###hoax-sidebar-tags
@@ -16665,6 +16737,9 @@ techieshelp.com##.tm-navbar:style(position:static !important)
 
 techjourney.net##.fusion-header
 techjourney.net##.fusion-secondary-header
+
+techjuice.pk##.alertbar
+techjuice.pk##.d-flex
 
 techjunkie.com##.get-expressvpn
 
@@ -18511,6 +18586,7 @@ war-tech.ru##footer > .bottom
 
 wartechgear.com###header:style(min-height:auto !important)
 wartechgear.com##.caption:style(min-height:auto !important)
+||wartechgear.com/image/catalog/opt.jpg
 
 warways.ru##.h_logo
 
@@ -18821,6 +18897,11 @@ wired.com##.stacked-site-navigation:style(padding-top:0px !important)
 ! other
 wired.com##.contributor-bio__bio
 wired.com##.site-footer__about-text
+||wired.com/*/background$image
+wired.com##.journey-template--leaderboard
+wired.com##.cm-rail-container
+wired.com##.grid--item.contributors
+wired.com##.should-hold-space
 
 wisesoft.co.uk###header
 wisesoft.co.uk###mainnav
@@ -20195,97 +20276,6 @@ sonoff.tech###main-header-wrapper:style(height:auto !important)
 
 wildberries.ru##.recently-watched
 wildberries.ru##.footer__pay-list
-
-smarthome.news##.author__holder
-
-cnev.ru##.tm-headerbar-top
-cnev.ru##.butphone
-cnev.ru##.uk-navbar:style(position:static !important)
-cnev.ru##.uk-navbar::before:style(position:static !important)
-cnev.ru##.uk-navbar::after:style(position:static !important)
-cnev.ru##.uk-navbar-sticky:style(position:static !important)
-cnev.ru##.uk-container:style(position:static !important)
-cnev.ru##.uk-sticky:style(position:static !important)
-cnev.ru##.uk-sticky-below:style(position:static !important)
-cnev.ru##.uk-sticky-fixed:style(position:static !important)
-
-||airsoft-rus.ru/images/mailToDirector.png
-! menu
-airsoft-rus.ru##.main-nav::before
-airsoft-rus.ru##.main-menu a:style(color:#000 !important)
-! recommended: autorotates
-airsoft-rus.ru##.detail-recomended-section
-airsoft-rus.ru##.autorotation-active
-! fixed buttons
-airsoft-rus.ru##.a-compare
-airsoft-rus.ru##.a-otzuv
-! credit
-airsoft-rus.ru##.two.add-bask-btn
-! other
-airsoft-rus.ru###sidebar [href^="https://market.yandex.ru/"]
-airsoft-rus.ru##.labels-wrapper
-airsoft-rus.ru##.contact-column
-airsoft-rus.ru##.footer-yandex_logo
-! other
-
-sso-mil.ru##.centerheader:style(height:auto !important)
-sso-mil.ru##.bx-composite-btn
-
-||wired.com/*/background$image
-wired.com##.journey-template--leaderboard
-wired.com##.cm-rail-container
-wired.com##.grid--item.contributors
-wired.com##.should-hold-space
-
-habr.com##.promo-block
-
-||lovchy.ru/i/footerBack.jpg
-||lovchy.ru/i/headerBack.jpg
-||lovchy.ru/i/logoFooter.png
-lovchy.ru###pageHTML:style(background-image:none)
-lovchy.ru###headerBack:style(background-image:none)
-lovchy.ru###footerBack:style(background-image:none)
-lovchy.ru##section:style(min-height:0 !important; padding-bottom:0px !important)
-lovchy.ru##.buy_kredit.kredit
-lovchy.ru##.fast
-lovchy.ru##.btnAkcii
-lovchy.ru##.banner_mercury
-lovchy.ru##.price-reduced
-lovchy.ru##noindex
-
-livejournal.com##.sidebar-custom.sidebar-block
-livejournal.com###header-inner:style(height:auto !important)
-livejournal.com###header:style(height:auto !important)
-
-techjuice.pk##.blog-logo
-techjuice.pk##.alertbar
-techjuice.pk##.d-flex
-
-metro-cc.ru##.preloader
-metro-cc.ru##.footer__app
-metro-cc.ru##.header__tradecenter_popup
-
-thefreedictionary.com##.logo-holder
-
-||arosa-market.ru/*/payment-system.svg
-arosa-market.ru##.footer-contact
-arosa-market.ru##.delivery-message
-
-krugovik.ru##.site-slider
-krugovik.ru##.site-header-wrap:style(position:static !important)
-krugovik.ru##.site-slog
-
-hunterfencing.com.au/bcsia3/  # ad scam
-
-||wartechgear.com/image/catalog/opt.jpg
-
-carsalesbase.com##.logo-main-wrap-center
-
-coindesk.com##.pricing-wrapper-spacer
-coindesk.com##.site-nav:style(position:static !important)
-
-gethunt.ru##.appNotifications
-gethunt.ru##.margin-bottom-20
 
 ! is in EasyList
 ##.js-advert
