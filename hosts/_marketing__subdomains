@@ -129,6 +129,8 @@ metric.gstatic.com
 /metrics.
 metrics.articulate.com
 metrics.aviasales.ru  # from MVPS
+metrics.brightcove.com$important
+metrics.brightcove.net
 metrics.cnn.com  # is in 5 lists
 metrics.domclick.ru  # metrics.domclick.ru/research/api/metrics/v2/event
 metrics.foxnews.com
@@ -193,6 +195,10 @@ promo.sarbc.ru
 /webpush.
 push.daksham.in$important  # empty root  # in 2 lists
 push.zhanzhang.baidu.com  # http://push.zhanzhang.baidu.com/push.js
+
+/smetrics.
+smetrics.foxbusiness.com$important
+smetrics.ni.com  # is in Adguard and EasyPrivacy
 
 ! do not block all "stat." subdomains, there maybe statics
 stat.icestonesoft.com
@@ -615,9 +621,8 @@ ads.brazzers.com  # from MVPS
 ads2.brazzers.com  # from MVPS
 tour.brazzers.com  # from MVPS
 
-metrics.brightcove.com$important
-metrics.brightcove.net
-goku.brightcove.com  # from MVPS
+goku.brightcove.com  # goku.brightcove.com/1pix.gif  # is in MVPS
+sadmin.brightcove.com  # sadmin.brightcove.com/js/BrightcoveExperiences.js
 
 # cachefly.net is CDN, do not block it entirely. See https://en.wikipedia.org/wiki/CacheFly
 adproper.cachefly.net
@@ -656,6 +661,12 @@ widget-qa-2.cloudpayments.ru
 widget-qa-3.cloudpayments.ru
 widget-test.cloudpayments.ru
 
+! banners on gq.ru and others. static.media.condenast.ru is ok
+data.condenast.ru
+traffic.condenast.ru
+fc.rs.condenast.ru
+segmentator.condenast.ru$important
+
 cache.daredorm.com  # from MVPS
 
 rb1.design.ru  # from Peter Lowe's hosts file
@@ -665,6 +676,8 @@ banners.dogfart.com  # from MVPS
 a.doko.moe  # zombie
 
 rx9aef.driver-id.ru  # from Ru AdList
+
+c.dx.com  # https://c.dx.com/collection/banner/ - only banners here
 
 parkcloud.dynadot.com$important  # parkingcrew.net
 
@@ -698,8 +711,6 @@ abs.firstvds.ru  # from Adguard
 ads.fotoable.com  #+  # from Adguard
 
 start.fotostrana.ru  # from Adguard
-
-smetrics.foxbusiness.com$important
 
 sg.freeimg.ru  # from Adguard
 
@@ -778,6 +789,8 @@ stat.it168.com  # from MVPS
 
 a.jurnalu.ru  # from Adguard
 
+info.kinoclub77.ru  # ad scripts  # is in AdGuard
+
 technopolis.kirov.ru  # from Dan Pollock's hosts file
 
 rating.km.ua  # from Adguard
@@ -818,6 +831,10 @@ pop.mrstiff.com  # from Adguard
 
 a.multik-online.net  # from Ru AdList  # zombie
 
+1l-hit.my.com
+r.my.com  # is in 3 lists
+tracker-api.my.com
+
 p.nag.ru  # from Ru AdList
 
 tools.naughtyamerica.com  # from MVPS
@@ -825,8 +842,6 @@ tools.naughtyamerica.com  # from MVPS
 autoru.naydex.net  # auto.ru ad scripts
 
 bx.neolabs.kz  # from Adguard
-
-smetrics.ni.com  # is in Adguard and EasyPrivacy
 
 reklama.ntv.ru
 
@@ -857,6 +872,8 @@ jvs.price.ru  # from Adguard
 track.price.ru  # from Adguard
 
 news.pustgovorjat.ru  # from Adguard
+
+trace2.pv.com.cn  # ad scripts
 
 !# qq.com
 ad.qq.com  # from Dan Pollock's hosts file
@@ -1078,6 +1095,8 @@ ad3.udn.com  # from Adguard
 ad4.udn.com  # from Adguard
 ad5.udn.com  # from Adguard
 
+unityads.unity3d.com
+
 contest.vashdom.ru$third-party
 
 ! also see vedomosti.ru in _sites
@@ -1271,8 +1290,6 @@ p.typekit.net$important  # from hpHosts’ Ad and tracking servers. And it is in
 
 outs.unicom.co.uk  #outs.unicom.co.uk/link.php?
 
-unityads.unity3d.com
-
 email.wefunder.com  # email.wefunder.com/c/eJxNUMuKw..
 
 email.upiq.com  # ExactTarget AS22606
@@ -1325,8 +1342,6 @@ newads.rediff.com
 recoprofile.rediff.com
 track.rediff.com
 usmetric.rediff.com
-
-info.kinoclub77.ru  # ad scripts  # is in AdGuard
 
 tv.sohu.com  # ad scripts  # is in Dan Pollock’s hosts file
 p.aty.sohu.com  # ad scripts  # is in EasyPrivacy
@@ -1499,12 +1514,6 @@ tour.brazzers.com  # from Peter Lowe's hosts file
 
 ads.callofdutyblackopsforum.net
 
-! banners on gq.ru and others. static.media.condenast.ru is ok
-data.condenast.ru
-traffic.condenast.ru
-fc.rs.condenast.ru
-segmentator.condenast.ru$important
-
 parkingsrv0.dondominio.com
 
 bwp.download.com  # from Peter Lowe's hosts file
@@ -1570,10 +1579,6 @@ froling.bee.pl  # from Dan Pollock's hosts file
 
 instantbrandpage.lowfruitsolutions.com
 
-1l-hit.my.com
-r.my.com  # is in 3 lists
-tracker-api.my.com
-
 hello.myfonts.net  # tracker. From hpHosts’ Ad and tracking servers
 
 banstat.nadavi.net  # is in 2 lists
@@ -1588,8 +1593,6 @@ tracker.onelya.ru  #tracker.onelya.ru/push
 
 redirect.ovh.net
 
-trace2.pv.com.cn  # ad scripts
-
 tracking.mindfireinc.com
 
 ac.hubb.com  #ac.hubb.com/lt.php?s=
@@ -1600,13 +1603,8 @@ embed.tonews.org  # from Adguard
 
 ams1.next.a.prd.aadg.trafficmanager.net  # ad scripts
 
-sadmin.brightcove.com  # sadmin.brightcove.com/js/BrightcoveExperiences.js
-goku.brightcove.com  # goku.brightcove.com/1pix.gif
-
 coordinator-production-28516768.us-east-1.elb.amazonaws.com  # from BlockListProject/SmartTV
 syncplusconfig.s3.amazonaws.com  # from BlockListProject/SmartTV
-
-c.dx.com  # https://c.dx.com/collection/banner/ - only banners here
 
 stats.datawrapper.de  # tracking images  # is in Adguard  # do not block datawrapper.de entirely
 
