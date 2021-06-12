@@ -17,6 +17,7 @@
 
 ! from EasyList: ://affiliate.$3p
 /affiliate.
+affilate.hh.ru  # is in EasyPrivacy  # yes, typo
 affiliate.ria.com  # ad scripts
 affiliate.astraweb.com  # from Adguard
 
@@ -35,13 +36,18 @@ analytics.bitrix.info
 analytics.dns-shop.ru
 analytics.docdoc.ru
 analytics.dpd.com  # from Adguard
+analytics.edgekey.net$important # +
+analytics.edgesuite.net$important # +
+analytics.grupogodo.com-v1.edgekey.net
 analytics.faw-sky.com.akadns.net
 analytics.finam.ru
+analytics.global.sky.com  # from Dan Pollock's hosts file
 analytics.hrmos.co
 analytics.linuxbabe.com
 analytics.move.ru
 analytics.runsignup.com
 analytics.sarbc.ru
+analytics.shopify.com$important  # from EnergizedProtection
 analytics.similarweb.com
 analytics.slashdotmedia.com$important  #[Piwik.Analytics]  # is in MVPS
 analytics.technopoint.ru
@@ -65,18 +71,23 @@ banners.passion.com
 banners.tapclap.com
 banners.videosz.com
 banners.virtuagirlhd.com
+banners.ztod.com  # from MVPS
 
 /beacon.
 beacon.carfax.com
 beacon.gutefrage.net
 beacon.v.dropbox.com
+beacon.qq.com
 beacon.shazam.com
+beacon.xfinity.com
+beacon.walmart.com.akadns.net
 beacon.wikia-services.com
 
 /br.$domain=~chess.com
 
 /click.$domain=~alfabank.ru
 click.cloudcheckr.com
+click.email.vimeo.com  # ad redirects
 click.execrank.com
 click.greatlearning.in
 click.infoarmor.com
@@ -118,10 +129,19 @@ hawk.techradar.com
 hawk.tomsguide.com  # hawk.tomsguide.com/hl/hawklinks.js
 
 ! /email. ?
+email.bigcommerce.com
+email.sv.bigcommerce.com
 email.mxtoolbox.com
 email.wefunder.com
 
 /forex.
+
+/graphql  # exactly!
+/graphql.  # just for case
+graphql.imdb.com
+    ! api.graphql.imdb.com
+    ! ||joyreactor.cc/graphql
+    ! ||kinopoisk.ru/*/graphql
 
 /metric.
 metric.gstatic.com
@@ -161,6 +181,12 @@ piwik.wsws.org  #[Piwik.Analytics]
 /matomo.js$important  # from EasyPrivacy
 /piwik.js$important
 
+/newsletter.
+newsletter.bigcommerce.com
+!o1.newsletter.bigcommerce.com
+newsletter.cermati.com
+newsletter.damart.be
+
 /partner.
 partner.archive-it.org  # from MVPS
 partner.badoo.ru  # from Adguard
@@ -182,9 +208,10 @@ pixel.wp.com
 pixel.wp.pl$important  # is in Adguard
 
 /promo.
+promo.cermati.com
 promo.rzonline.ru  # from Adguard
-promo.sebnews.ru
 promo.sarbc.ru
+promo.sebnews.ru
 
 /promos.
 
@@ -231,6 +258,7 @@ top100-images.rambler.ru$important
 
 /track.$domain=~4px.com
 track.childrensalon.com  #[Piwik.Analytics]  # from MVPS
+track.cj.akadns.net
 track.fxstreet.com  # from Adguard
 track.radins.com
 track.reasonablespread.com
@@ -463,7 +491,6 @@ webtrends.akadns.net  # webtrends
 !! other
 dvgtm.akadns.net  # from Adguard
 nexage.akadns.net  # from Adguard
-beacon.walmart.com.akadns.net
 beacon-all.walmart.com.akadns.net
 beacon-cdn.walmart.com.akadns.net
 adfarm-global.mplx.akadns.net
@@ -473,7 +500,6 @@ adxpose.tmrg.akadns.net
 adxpose-secure.tmrg.akadns.net
 banners-wxu.weather-perf.akadns.net
 d.runadtag.com.tech.akadns.net
-track.cj.akadns.net
 ! end of akadns.net
 
 smart.allocine.fr  # from Adguard
@@ -518,8 +544,6 @@ mybbc-analytics.files.bbci.co.uk
 test.besstidniki.ru  # from Adguard
 
 #bigcommerce.com  # don't block all  # "Create differentiated commerce experiences"
-email.bigcommerce.com
-email.sv.bigcommerce.com
 mail.bigcommerce.com
 mail.forum.bigcommerce.com
 mail1.bigcommerce.com
@@ -533,14 +557,8 @@ mail6.bigcommerce.com
 mail7.bigcommerce.com
 mail8.bigcommerce.com
 mail9.bigcommerce.com
-newsletter.bigcommerce.com
-o1.newsletter.bigcommerce.com
 payments.bigcommerce.com
 sv.bigcommerce.com
-newsletter.bigcommerce.com
-o1.newsletter.bigcommerce.com
-sv.bigcommerce.com
-email.sv.bigcommerce.com
 
 ad0.bigmir.net
 ad1.bigmir.net
@@ -684,9 +702,6 @@ parkcloud.dynadot.com$important  # parkingcrew.net
 
 ay.eastmoney.com  # from MVPS
 
-analytics.edgekey.net$important # +
-analytics.edgesuite.net$important # +
-analytics.grupogodo.com-v1.edgekey.net
 digitalmarketing.citibankonline.com-v2.edgekey.net
 mobileads.indiatimes.com-v1.edgesuite.net
 
@@ -708,8 +723,6 @@ id.ferra.ru  # ad xhrs
 alireviews-cdn.fireapps.vn
 
 abs.firstvds.ru  # from Adguard
-
-ads.fotoable.com  #+  # from Adguard
 
 start.fotostrana.ru  # from Adguard
 
@@ -765,12 +778,6 @@ g.ign.com  # ad scripts  # is in EasyPrivacy
 adilk.ilikecomix.com  # from Adguard
 
 cams.imagetwist.com
-
-graphql.imdb.com
-/graphql
-    ! api.graphql.imdb.com
-    ! ||joyreactor.cc/graphql
-    ! ||kinopoisk.ru/*/graphql
 
 tothemoon.incest-porno.pro  # from Adguard
 sidebar.incest-porno.tv  # from Adguard
@@ -859,8 +866,6 @@ a5.overclockers.ua  # is in Peter Lowe’s Ad and tracking server list
 
 d.pikabu.ru  # d.pikabu.ru/stat/
 
-adv.pilseta24.lv  # from Adguard
-
 i.plug.it  # ad scripts  # is in hpHosts’ Ad and tracking servers
 
 nativ.podruzke.ru  # from Adguard
@@ -882,7 +887,6 @@ trace2.pv.com.cn  # ad scripts
 ad.qq.com  # from Dan Pollock's hosts file
 analy.qq.com  # telemetry
 appsupport.qq.com
-beacon.qq.com
 bugly.qq.com
 e.qq.com  # from Adguard
 monitor.uu.qq.com
@@ -1003,7 +1007,6 @@ cdn-admx.segodnya.ua  # is in Ru AdList
 
 crm.serverscheck.com
 
-analytics.shopify.com$important  # from EnergizedProtection
 s.shopify.com$important  # from MVPS HOSTS file  # in AdGuard: ||s.shopify.com/visit/record.gif?
 stats.shopify.com$important  # is in AdGuard and EasyPricacy
 v.shopify.com$important  # is in AdGuard and EasyPricacy  #v.shopify.com/internal_errors/track
@@ -1049,8 +1052,6 @@ nsg.symantec.com  # from Fanboy's
 p.tanx.com  # from Adguard
 
 sysstat.tildacdn.com  # sysstat.tildacdn.com/api/img/error/  # stat.tildacdn.com/event/
-
-ad.tomshardware.com  #+  # from Dan Pollock's hosts file
 
 c.trello.com  # c.trello.com/i?stm=...
 /i?stm=  # is in EasyPrivacy
@@ -1113,8 +1114,6 @@ ostrich.vedomosti.ru
 
 promotion.vesti.lv  # from Ru AdList
 
-click.email.vimeo.com  # ad redirects
-
 b.vimeocdn.com$important
 ! tracking of Vimeo
 ||vimeocdn.com/ga/$script
@@ -1144,7 +1143,6 @@ dmp.wi-fi.ru
 vod.wix.com  # ad xhrs
 frog.wix.com
 www.frog.wix.com
-adsense.codev.wixapps.net
 
 botd.wordpress.com  #[WebBug]  # from MVPS
 botd2.wordpress.com  #[WebBug]  # from MVPS
@@ -1156,7 +1154,6 @@ inf.wqa.ru  # from Adguard
 pp.wqa.ru
 
 !# xfinity - comcast paid tv
-beacon.xfinity.com
 businesschat.xfinity.com
 businesschatadmin.xfinity.com
 chat.g.xfinity.com
@@ -1167,7 +1164,6 @@ referafriend.xfinity.com
 training-chat2.xfinity.com
 xchat.xfinity.com
 
-ads.xhamster.com  # from MVPS
 m2.xhamster.com  # from MVPS
 
 img100-321.xvideos.com  # from MVPS
@@ -1183,8 +1179,6 @@ premium.zeit.de
 
 tsr.zlatoff.ru  # from Adguard
 
-ads.ztod.com  # from MVPS
-banners.ztod.com  # from MVPS
 tools.ztod.com  # from MVPS
 
 !! todo
@@ -1207,9 +1201,6 @@ monitor-uu.play.aiseet.atianqi.com
 otheve.play.aiseet.atianqi.com
 othstr.play.aiseet.atianqi.com
 rlog-video.conn.aiseet.atianqi.com
-
-newsletter.cermati.com
-promo.cermati.com
 
 ott.cibntv.net  # from Energized Blu
 !+  cp45.ott.cibntv.net
@@ -1335,8 +1326,6 @@ track.flexlinkspro.com  # is in  Peter Lowe’s Ad and tracking server list and 
 
 oneclicksociallogin.devcloudsoftware.com
 
-newsletter.damart.be
-
 trusted-web-seal.cybertrust.ne.jp
 
 ads.ibibo.com
@@ -1459,8 +1448,6 @@ profile.uproxx.com  # from Dan Pollock's hosts file
 xoomer.alice.it  # from Dan Pollock's hosts file
 
 an.mlb.com  # from Dan Pollock's hosts file
-
-analytics.global.sky.com  # from Dan Pollock's hosts file
 
 te.signonsandiego.com  # from Dan Pollock's hosts file
 
@@ -1610,8 +1597,6 @@ coordinator-production-28516768.us-east-1.elb.amazonaws.com  # from BlockListPro
 syncplusconfig.s3.amazonaws.com  # from BlockListProject/SmartTV
 
 stats.datawrapper.de  # tracking images  # is in Adguard  # do not block datawrapper.de entirely
-
-affilate.hh.ru  # is in EasyPrivacy
 
 track.convertkit-mail.com
 
