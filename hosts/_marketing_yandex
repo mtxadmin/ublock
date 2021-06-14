@@ -41,7 +41,8 @@ an.yandex.ru$important
 /cdn-cgi/pe/bag2?r[]=*an.yandex.ru  # from Ru AdList
 
 
-!! metrics
+    ! metrics and trackers
+
 appmetrica.yandex.net$important
 !+  api.appmetrica.yandex.net
 appmetrica.yandex.com$important
@@ -60,34 +61,13 @@ appmetrica.yandex.$important
 api-metrica.yandex.ru
 web-metrica.yandex.ru
 
-awaps.yandex.by$important
-awaps.yandex.com$important
-awaps.yandex.com.tr$important
-awaps.yandex.com.ua$important
-awaps.yandex.kz$important
-awaps.yandex.net$important
-awaps.yandex.ru$important
-awaps.yandex.ua$important
-||awaps.yandex.$important
-||yastatic.net/awaps-ad-sdk-js/
-
-bs.yandex.ru$important
-
-direct.yandex.ru$important
-!+  api.direct.yandex.ru
-! disable any whitelists. Third-party option doesn't work on search pages on yandex.ru, so block it completely
-! from Ru AdList
-##iframe[src*="directadvert"]
-
 mc.yandex.ru$important
 !+  mediascope.mc.yandex.ru
 ! end of mc.yandex.ru
 
-yabs.yandex.ru$important
-
-yandexadexchange.net$important
-!+  dsp.yandexadexchange.net
-! end of yandexadexchange.net
+! yandex.metrica? Finland, but Yandex DNS. Now closed? Let's block anyway.
+ymetrica.com
+ymetrica1.com
 
 ! video tracking?
 tracking.ott.yandex.net
@@ -99,8 +79,6 @@ clck.yandex.com.tr
 clck.yandex.kz
 clck.yandex.ru
 clck.yandex.ua
-
-informer.yandex.ru$important,third-party
 
 ! metrika yandex hosts mostly from https://hosts-file.net/ad_servers.txt
 ! disable any whitelists
@@ -137,23 +115,6 @@ web-metrica.yandex.ua$important
 
 metrika-informer.com$important
 
-! mobile telemetry
-api.browser.yandex.ru
-mobile.yandex.net
-!+  ios.mobile.yandex.net
-!+  tst.mobile.yandex.net
-!+  yastore.mobile.yandex.net
-!analytics.mobile.yandex.net$important
-!startup.mobile.yandex.net
-! from AdGuard
-!banners.mobile.yandex.net
-! from AdGuard
-!banners-slb.mobile.yandex.net
-
-! share buttons
-share.yandex.ru$important
-share.yandex.net$important
-
 ! some embed modules from 3rd sites
 jstracer.yandex.ru$important
 !strm.yandex.ru$important --video, don't block entirely
@@ -166,27 +127,78 @@ log.strm.yandex.ru
 ! is in Adguard
 ||strm.yandex.ru/log?
 
-! "updater"
-browser-updater.yandex.net$important
-||yastatic.net/browser-updater/$important
+    ! banners
 
-! other
-kiks.yandex.ru
-z5h64q92x9.net
-!+  pssp.z5h64q92x9.net
-!+      mobile.pssp.z5h64q92x9.net
-! end of z5h64q92x9.net
+awaps.yandex.by$important
+awaps.yandex.com$important
+awaps.yandex.com.tr$important
+awaps.yandex.com.ua$important
+awaps.yandex.kz$important
+awaps.yandex.net$important
+awaps.yandex.ru$important
+awaps.yandex.ua$important
+||awaps.yandex.$important
+||yastatic.net/awaps-ad-sdk-js/
+
+bs.yandex.ru$important
+
+direct.yandex.ru$important
+!+  api.direct.yandex.ru
+! disable any whitelists. Third-party option doesn't work on search pages on yandex.ru, so block it completely
+! from Ru AdList
+##iframe[src*="directadvert"]
+
+yabs.yandex.ru$important
+
+yandexadexchange.net$important
+!+  dsp.yandexadexchange.net
+! end of yandexadexchange.net
+
+informer.yandex.ru$important,third-party
+
+! from RU AdList, modified
+zenadservices.net$important
+
 ad-constructor.yandex.ru
 adsdk.yandex.ru
 http-check-headers.yandex.ru
 uptime-info.yandex.ru
 
-! yandex.metrica? Finland, but Yandex DNS. Now closed? Let's block anyway.
-ymetrica.com
-ymetrica1.com
+    ! yandex.browser hosts
+    
+getyabrowser.com
+getyabrowser.net
 
-! from RU AdList, modified
-zenadservices.net$important
+! "updater"
+browser-updater.yandex.net$important
+||yastatic.net/browser-updater/$important
+
+! mobile telemetry
+api.browser.yandex.ru
+mobile.yandex.net
+!+  ios.mobile.yandex.net
+!+  tst.mobile.yandex.net
+!+  yastore.mobile.yandex.net
+!analytics.mobile.yandex.net$important
+!startup.mobile.yandex.net
+! from AdGuard
+!banners.mobile.yandex.net
+! from AdGuard
+!banners-slb.mobile.yandex.net
+soft.export.yandex.ru  
+# soft.export.yandex.ru/status.xm  # soft.export.yandex.ru/status.xml?... - Yandex browser statistics
+
+    ! other
+
+! share buttons
+share.yandex.ru$important
+share.yandex.net$important
+
+kiks.yandex.ru
+z5h64q92x9.net
+!+  pssp.z5h64q92x9.net
+!+      mobile.pssp.z5h64q92x9.net
+! end of z5h64q92x9.net
 
 ! connections to this domain started after installing Yandex apps. And there is no Alice at all (Yandex voice assistant)
 uniproxy.alice.yandex.net
@@ -198,14 +210,8 @@ aab-pub.s3.yandex.net$important
 ||tools.messenger.yandex.net
 ||uniproxy.messenger.yandex.ru
 ||yastatic.net/s3/chat-static/
-
-!! todo
+chat.s3.yandex.net
 
 ttnet.yandex.com.tr  # from Dan Pollock's hosts file
 
-chat.s3.yandex.net
-
-soft.export.yandex.ru/status.xm  # soft.export.yandex.ru/status.xml?... - Yandex browser statistics
-
-getyabrowser.com
-getyabrowser.net
+!! todo
