@@ -168,25 +168,81 @@ uptime-info.yandex.ru
     
 getyabrowser.com
 getyabrowser.net
+browser.yandex.ru
+browser.mobile.yandex.net
+mobile-browser.mobile.yandex.net
+mobile-browser.tst.mobile.yandex.net
+
 
 ! "updater"
 browser-updater.yandex.net$important
+updater.mobile.yandex.net
+updater.tst.mobile.yandex.net
 ||yastatic.net/browser-updater/$important
 
 ! mobile telemetry
 api.browser.yandex.ru
-mobile.yandex.net
-!+  ios.mobile.yandex.net
-!+  tst.mobile.yandex.net
-!+  yastore.mobile.yandex.net
-!analytics.mobile.yandex.net$important
-!startup.mobile.yandex.net
-! from AdGuard
-!banners.mobile.yandex.net
-! from AdGuard
-!banners-slb.mobile.yandex.net
-soft.export.yandex.ru  
-# soft.export.yandex.ru/status.xm  # soft.export.yandex.ru/status.xml?... - Yandex browser statistics
+# don't block mobile.yandex.net entirely
+addappter.mobile.yandex.net
+addappter-api.mobile.yandex.net
+advisor-retail.mobile.yandex.net
+advisor-widget.mobile.yandex.net
+advisor-widget.tst.mobile.yandex.net
+analytics.mobile.yandex.net$important
+analytics-slb.mobile.yandex.net$important
+appmetrica.ios.mobile.yandex.net
+banners.mobile.yandex.net$important  # is in Adguard
+banners-slb.mobile.yandex.net  # is in Adguard
+banners.tst.mobile.yandex.net
+certificate.mobile.yandex.net
+certificate.tst.mobile.yandex.net
+certificate-partners.mobile.yandex.net
+demo.mobile.yandex.net
+demo.tst.mobile.yandex.net
+dialer.mobile.yandex.net
+dialer.tst.mobile.yandex.net
+front.mobile.yandex.net
+front.yastore.mobile.yandex.net
+ios.mobile.yandex.net
+iosproxy.mobile.yandex.net
+iosproxy-partners.mobile.yandex.net
+launcher.mobile.yandex.net
+launcher.tst.mobile.yandex.net
+launcher-cache.mobile.yandex.net
+lbs-slb.mobile.yandex.net
+lockscreen.mobile.yandex.net
+lockscreen.tst.mobile.yandex.net
+misc.mobile.yandex.net
+mobile-browser.mobile.yandex.net
+mobile-browser.tst.mobile.yandex.net
+news.mobile.yandex.net
+oauth.mobile.yandex.net
+oauth.tst.mobile.yandex.net
+promotions.mobile.yandex.net
+promotions.tst.mobile.yandex.net
+public.yastore-mds.mobile.yandex.net
+public-storage.yastore.mobile.yandex.net
+public-storage-resized.yastore.mobile.yandex.net
+public-storage-slb.yastore.mobile.yandex.net
+registrator.mobile.yandex.net
+registrator.tst.mobile.yandex.net
+retail.yastore.mobile.yandex.net
+search.mobile.yandex.net
+setup-wizard.mobile.yandex.net
+setup-wizard.tst.mobile.yandex.net
+shell-resizer.mobile.yandex.net
+soft.export.yandex.ru  # soft.export.yandex.ru/status.xm  # soft.export.yandex.ru/status.xml?... - Yandex browser statistics
+sovengard.mobile.yandex.net
+staging-startup.mobile.yandex.net
+startup.ios.mobile.yandex.net
+startup.mobile.yandex.net$important
+startup.tst.mobile.yandex.net
+startup-partners.ios.mobile.yandex.net
+startup-partners.mobile.yandex.net
+startup-slb.mobile.yandex.net
+tst.mobile.yandex.net
+voice.browser.mobile.yandex.net
+yastore.mobile.yandex.net
 
     ! other
 
@@ -211,6 +267,8 @@ tools.messenger.yandex.net
 uniproxy.messenger.yandex.ru
 ||yastatic.net/s3/chat-static/
 chat.s3.yandex.net
+
+ya.cc  # 404 root  # maybe yandex URL shortener
 
 ttnet.yandex.com.tr  # from Dan Pollock's hosts file
 
