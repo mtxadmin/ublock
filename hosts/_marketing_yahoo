@@ -4,6 +4,12 @@
 !
 ! Yahoo ad domains
 
+!! rules
+
+query.yahooapis.com/v1/public/yql
+answers.yahoo.com###ya-askbar-holder
+
+
 !! domains
 
 flurry.com$important  # mobile ads
@@ -15,6 +21,10 @@ flurry.com$important  # mobile ads
 !+  worker.flurry.com
 !+      connect.worker.flurry.com
 flurry.cachefly.net
+
+hostingprod.com  # from MVPS
+
+lexity.com  # from MVPS  # [Yahoo][AS26101]  # "all of your marketing needs"
 
 mydas.mobi$important
 !+  dt.mydas.mobi
@@ -30,17 +40,24 @@ mydas.mobi$important
 !+  rich.mydas.mobi
 ! end of mydas.mobi
 
+360.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+
+adjax.flickr.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+admarketing.yahoo.net  # from Adguard
 ads.yahoo.com$important
 !+  aps.ads.yahoo.com
 ! end of ads.yahoo.com
-
+ads.yap.yahoo.com  # from MobileAdTrackers
+ads.vip.gq1.yahoo.com
+ads.yimg.com  # from MVPS and Dan Pollock's hosts file
+ads.yimg.com.edgesuite.net  # from Dan Pollock's hosts file
 adserver.yahoo.com$important
-
+adspecs.yahoo.com  # from MobileAdTrackers
+adss.yahoo.com
 advertising.yahoo.com$important
 !+  tools.advertising.yahoo.com
 !+      client.tools.advertising.yahoo.com
 ! end of advertising.yahoo.com
-
 adx.yahoo.com
 !+  beap.adx.yahoo.com
 ! end of adx.yahoo.com
@@ -50,21 +67,24 @@ analytics.yahoo.com$important
 !+  ups.analytics.yahoo.com
 !+  web.analytics.yahoo.com
 ! end of analytics.yahoo.com
-
 analytics.query.yahoo.com$important
 
-! from YHosts
-beap-bc.yahoo.com
-beap.adss.yahoo.com
-beap.bc.yahoo.com
-!clicks.beap.bc.yahoo.com
-js-apac-ss.ysm.yahoo.com
-p3p.yahoo.com
-!partnerads.ysm.yahoo.com
-pr-bh.ybp.yahoo.com
-pr.ybp.yahoo.com
-yads.c.yimg.jp
-yads.yahoo.co.jp
+bats.video.yahoo.com  # from MobileAdTrackers
+
+beap.adss.yahoo.com  # from YHosts
+beap-bc.yahoo.com  # from YHosts
+beap.bc.yahoo.com  # from YHosts
+!clicks.beap.bc.yahoo.com  # from YHosts
+
+buzz.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+  
+comet.yahoo.com  # from MobileAdTrackers
+
+cookiex.ngd.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+
+fc.yahoo.com  # from MobileAdTrackers
+
+ganon.yahoo.com  # from MobileAdTrackers
 
 gemini.yahoo.com$important
 !+  api.gemini.yahoo.com
@@ -88,59 +108,62 @@ geo.yahoo.com
 !+  ord.geo.yahoo.com
 !+  rsel.geo.yahoo.com
 ! end of geo.yahoo.com
+geo.query.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo  # Also is in MVPS
 
-! from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
-marketingsolutions.yahoo.com
+js-apac-ss.ysm.yahoo.com  # from YHosts
+
+marketingsolutions.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
 !+  wa.marketingsolutions.yahoo.com
 ! end of marketingsolutions.yahoo.com
 
-! from https://clinetworking.com/2018/06/03/1984-called/
-uk-advertising.yahoo.com
+nol.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo  # Also is in MVPS
 
-! and from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
-av.beap.bc.yahoo.com
-fd-fp3.wg1.b.yahoo.com
-adjax.flickr.yahoo.com
-cookiex.ngd.yahoo.com
-advision.webevents.yahoo.com
-buzz.yahoo.com
-csc.beap.bc.yahoo.com
-e1.ycpi.vip.nya.yahoo.com
-e2.ycpi.vip.nya.yahoo.com
-m.yap.yahoo.com
-geo.query.yahoo.com  ! Also is in MVPS
-gd.ads.vip.gq1.yahoo.com
-im.ov.yahoo.co.jp
-nol.yahoo.com  ! Also is in MVPS
-onepush.query.yahoo.com
-ov.yahoo.co.jp
-pulse.yahoo.com
-pclick.yahoo.com
-pclick.internal.yahoo.com
-pclick.europe.yahoo.com
-pa.yahoo.com
-partnerads.ysm.yahoo.com
-syndication.streamads.yahoo.com
-visit.webhosting.yahoo.com
-360.yahoo.com
+onepush.query.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
 
-!! todo
+ov.yahoo.co.jp  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
 
-! Some yimg.com subdomains. 
-! from MVPS and Dan Pollock's hosts file
-ads.yimg.com
-!+  ec.yimg.com
-! from MVPS and Dan Pollock's hosts file
-richmedia.yimg.com
-! from Dan Pollock's hosts file
-ads.yimg.com.edgesuite.net
-! from Dan Pollock's hosts file
-edgecast-vod.yimg.com
+pa.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo  # Also is in MVPS
 
-in.yimg.com
-sg.yimg.com
+p3p.yahoo.com  # from YHosts
 
-! All from Dan Pollock's hosts file. Some of them exists in other lists.
+partnerads.ysm.yahoo.com  # from YHosts and from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+
+pr-bh.ybp.yahoo.com  # from YHosts
+pr.ybp.yahoo.com  # from YHosts
+
+promotions.yahoo.com  # from EasyList China
+
+pulse.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+
+pclick.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+pclick.internal.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+pclick.europe.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+    
+richmedia.yahoo.com  # from MVPS
+richmedia.yimg.com  # from MVPS and Dan Pollock's hosts file
+
+streamads.yahoo.com$important
+
+uk-advertising.yahoo.com  # from https://clinetworking.com/2018/06/03/1984-called/
+
+visit.webhosting.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+  
+webevents.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+
+yads.c.yimg.jp  # from YHosts
+yads.yahoo.co.jp  # from YHosts
+
+yap.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+
+ycpi.vip.nya.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+
+fd-fp3.wg1.b.yahoo.com  # from https://github.com/Cybo1927/Hosts.txt/blob/master/Anti%20Yahoo
+
+yui.yahooapis.com  # is in hpHosts
+
+ads.yahoosmallbusiness.com
+
+! All from Dan Pollock's hosts file. Some of them exist in other lists.
 a1.yimg.com
 b1.yimg.com
 c1.yimg.com
@@ -168,6 +191,10 @@ x1.yimg.com
 y1.yimg.com
 z1.yimg.com
 
+edgecast-vod.yimg.com  # from Dan Pollock's hosts file
+in.yimg.com
+sg.yimg.com
+
 ! All from MVPS (#[Bing.WebBug]  #[WebBug])
 ybinst0.ec.yimg.com
 ybinst1.ec.yimg.com
@@ -180,35 +207,4 @@ ybinst7.ec.yimg.com
 ybinst8.ec.yimg.com
 ybinst9.ec.yimg.com
 
-richmedia.yahoo.com  # from MVPS
-
-! from MVPS
-hostingprod.com
-
-! from MVPS
-# [Yahoo][AS26101]
-! "all of your marketing needs"
-lexity.com
-
-! from MobileAdTrackers
-adspecs.yahoo.com
-comet.yahoo.com
-fc.yahoo.com
-log.fc.yahoo.com
-ganon.yahoo.com
-bats.video.yahoo.com
-ads.yap.yahoo.com
-
-streamads.yahoo.com
-syndication.streamads.yahoo.com
-||streamads.yahoo.com$important
-query.yahooapis.com/v1/public/yql
-answers.yahoo.com###ya-askbar-holder
-
-admarketing.yahoo.net  # from AdGuard
-
-promotions.yahoo.com  # from EasyList China
-
-yui.yahooapis.com  # is in hpHosts
-
-ads.yahoosmallbusiness.com
+!! todo
