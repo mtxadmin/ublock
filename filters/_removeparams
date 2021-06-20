@@ -31,6 +31,8 @@ $removeparam=|_hsenc|_hsmi|__hssc|__hstc|hsCtaTracking  # Hubspot
 $removeparam=|gs_l  # Google
 
 ! Note: || is essential here. Because rule for amazon.com does not catch www.amazon.com
+! Maybe it is wrong? It seems, ref@amazon cannot be removed for some reason
+
 
 !! domains
 
@@ -49,7 +51,7 @@ $removeparam=|gs_l  # Google
 ||amazon.com$removeparam=ref_  # is in NeatURL
 ! Found independently. Todo: make regexp
 !amazon.com$removeparam=|dchild|keywords|qid|sr|th|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_
-||amazon.com$removeparam=|dchild|qid|sr|th|pf_rd_m|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_|ref
+||amazon.com$removeparam=|dchild|qid|sr|th|pf_rd_m|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_|ref|rid
 
 ||bilibili.com$removeparam=|callback  # from NeatURL
 
