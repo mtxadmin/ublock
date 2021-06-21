@@ -4,133 +4,24 @@
 !
 ! Microsoft telemetry and some ads
 ! (see full domain list in _telemetry_microsoft_all)
+!
+! This sublist is mostly compilation of subdomains mentioned in various forum discussions and lists
+! Also, if you directly set them to hosts file, it will not work. Microsoft sends their telemetry not using hosts.
 
-!! domains
 
-sqm.microsoft.com
-sqmfe.glbdns2.microsoft.com
+!! rules
 
-telemetry.microsoft.com$important  # is in many lists
-!+  alpha.telemetry.microsoft.com
-!+  df.telemetry.microsoft.com
-!+      wes.df.telemetry.microsoft.com
-!+  ppe.telemetry.microsoft.com
-!+  sentinel.telemetry.microsoft.com
-!+  syslog.telemetry.microsoft.com
-!+  syslogagent.telemetry.microsoft.com
-!+  syslogclient.telemetry.microsoft.com
-!+  telecommand.telemetry.microsoft.com
-! end of telemetry.microsoft.com
-!telecommand.telemetry.microsoft.com
-!watson.telemetry.microsoft.com
-!sqm.df.telemetry.microsoft.com
-!sqm.telemetry.microsoft.com
-!reports.wes.df.telemetry.microsoft.com
-!services.wes.df.telemetry.microsoft.com
-!wes.df.telemetry.microsoft.com
-!watson.ppe.telemetry.microsoft.com
+/aria-web-telemetry-  # msn.com/bingna/lib/aria-web-telemetry-... # is in EasyPrivacy
 
-telemetry.microsoft.com.nsatc.net
-!sqm.telemetry.microsoft.com.nsatc.net
-!telecommand.telemetry.microsoft.com.nsatc.net
-!watson.telemetry.microsoft.com.nsatc.net
+||bing.com/api/v1/mediation/clientauction  # ad xhrs
 
-telemetry.urs.microsoft.com
-
-telemetry.appex.search.prod.ms.akadns.net
-
-# these telemetry hosts have seen in web pages too
-vortex-sandbox.data.microsoft.com
-vortex-win.data.microsoft.com
-vortex.data.microsoft.com
-vortex.data.glbdns2.microsoft.com
-vortex.data.microsoft.com.akadns.net
-vortex.data.msn.com
-! end of vortex
 ||microsoft.com/collect/
 ||msn.com/collect/  # is in Adguard and EasyPrivacy
 
-mem.gfx.ms  # ad scripts and 404 root
+||msn.com/bingna/$script  # ad scripts  # https://h6.msn.com/bingna/ms-bingna-msn.min.js
 
-watson.live.com
-watson.microsoft.com
-!+  appcenter.watson.microsoft.com
-!+  devcenter.watson.microsoft.com
-watson.data.microsoft.com.akadns.net
-!+  legacy.watson.data.microsoft.com.akadns.net
-! end of watson
 
-in.appcenter.ms  # do not block appcenter.ms entirely
-! Blocked by some adlist in Blokada. Redirects to appcenter.ms (MS telemetry). The domain itself belongs to MS and has bad reputation.
-hockeyapp.net
-
-reporting.family.microsoft.com.akadns.net
-reporting.familysafety.microsoft.com.akadns.net
-
-spynetall.microsoft.com
-spynetall.microsoft.akadns.net
-spynetalt.microsoft.com
-spynetalt.microsoft.akadns.net
-spyneteurope.microsoft.com
-spyneteurope.microsoft.akadns.net
-spynet2.microsoft.com
-spynet2.microsoft.akadns.net
-
-statsfe1.ws.microsoft.com
-statsfe2.update.microsoft.com.akadns.net
-statsfe2.ws.microsoft.com  # is in Dan Pollock's hosts file
-
-! and adding from https://superuser.com/questions/972501/how-to-stop-microsoft-from-gathering-telemetry-data-from-windows-7-8-and-8-1
-
-choice.microsoft.com
-!+  api.choice.microsoft.com
-choice.microsoft.com.nsatc.net
-
-compatexchange.cloudapp.net
-
-corp.sts.microsoft.com
-
-diagnostics.support.microsoft.com
-
-fe2.update.microsoft.com.akadns.net
-sls.update.microsoft.com.akadns.net
-
-feedback.microsoft-hohm.com
-feedback.search.microsoft.com
-feedback.windows.com
-
-metaservices.microsoft.com
-!+  dmd.metaservices.microsoft.com
-!+  games.metaservices.microsoft.com
-!+  music.metaservices.microsoft.com
-!+  submissions.metaservices.microsoft.com
-!+  wmc.metaservices.microsoft.com
-! end of metaservices.microsoft.com
-!redir.metaservices.microsoft.com
-
-! don't block - it seems, this domain linked with Windows Update too
-!cs1.wpc.v0cdn.net
-
-measure.office.com  # from Peter Lowe's hosts file
-
-! push notifications for Windows. See https://docs.microsoft.com/ru-ru/windows/privacy/manage-windows-1809-endpoints
-wns.windows.com
-
-! Windows telemetry also. See https://habr.com/en/post/265283/
-settings-win.data.microsoft.com
-settings-sandbox.data.microsoft.com
-settings.data.glbdns2.microsoft.com
-
-metron.live.com
-metron.live.com.nsatc.net
-!+  data.metron.live.com.nsatc.net
-!+      vortex.data.metron.live.com.nsatc.net
-!+      vortex-win.data.metron.live.com.nsatc.net
-! end of metron
-
-rad.live.com  # is in Dan Pollock's hosts file
-rad.msn.com  # is in Dan Pollock's hosts file
-rads.msn.com$important  # is in Dan Pollock's hosts file
+!! domains
 
 ac3.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads
 
@@ -139,9 +30,7 @@ ads1.msn.com$important  #b.ads1.msn.com  # is in Dan Pollock's hosts file
 ads2.msn.com
 ads.eu.msn.com  # from Dan Pollock's hosts file, Peter Lowe's hosts file, MVPS
 
-adsyndication.msn.com  # from Dan Pollock's hosts file
-images.adsyndication.msn.com  # from MVPS
-adsyndication.msn.com  # from MVPS
+adsyndication.msn.com  # from Dan Pollock's hosts file and MVPS
 
 analytics.msn.com  # from MVPS
 analytics.msnbc.com
@@ -152,6 +41,16 @@ analytics.live.com  # from MVPS
 
 arc1.msn.com  # from Peter Lowe's hosts file
 
+az361816.vo.msecnd.net  # from Dan Pollock's hosts file
+az512334.vo.msecnd.net  # from Dan Pollock's hosts file
+
+bat.bing.com$important  # from many lists
+!+  r.bat.bing.com
+! end of bat.bing.com
+
+bingads.trafficmanager.net  # azure.bingads.trafficmanager.net
+
+c.bing.com  # from MVPS
 c.msn.com  # is in Dan Pollock's hosts file
 c.ar.msn.com  # from Dan Pollock's hosts file
 c.at.msn.com  # from Dan Pollock's hosts file
@@ -188,17 +87,69 @@ c.tw.msn.com  # from Dan Pollock's hosts file
 c.uk.msn.com  # from Dan Pollock's hosts file
 c.za.msn.com  # from Dan Pollock's hosts file
 
+cds26.ams9.msecn.net  # from Dan Pollock's hosts file
+
+choice.microsoft.com
+!+  api.choice.microsoft.com
+choice.microsoft.com.nsatc.net
+
+compatexchange.cloudapp.net
+
+corp.sts.microsoft.com
+
+! don't block - it seems, this domain linked with Windows Update too
+!cs1.wpc.v0cdn.net
+
+diagnostics.support.microsoft.com
+
+edge-bingads-westeurope.cloudapp.net
+
+fe2.update.microsoft.com.akadns.net
+
+feedback.microsoft-hohm.com  # from Dan Pollock's hosts file
+feedback.search.microsoft.com
+feedback.windows.com
+
 flex.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads  # is in Dan Pollock's hosts file and MVPS
 
 g.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads  # is in Dan Pollock's hosts file
 
 h1.msn.com  # from Dan Pollock's hosts file
 
+in.appcenter.ms  # do not block appcenter.ms entirely  # blocked by some adlist in Blokada. Redirects to appcenter.ms (MS telemetry). The domain itself belongs to MS and has bad reputation.
+
+lb1.www.ms.akadns.net  # from Dan Pollock's hosts file
+
+measure.office.com  # from Peter Lowe's hosts file
+
+mem.gfx.ms  # ad scripts and 404 root
+
+metaservices.microsoft.com
+!+  dmd.metaservices.microsoft.com
+!+  games.metaservices.microsoft.com
+!+  music.metaservices.microsoft.com
+!+  submissions.metaservices.microsoft.com
+!+  wmc.metaservices.microsoft.com
+! end of metaservices.microsoft.com
+!redir.metaservices.microsoft.com
+
+metrics.skype.akadns.net  # skype ads and telemetry
+
+metron.live.com
+metron.live.com.nsatc.net
+!+  data.metron.live.com.nsatc.net
+!+      vortex.data.metron.live.com.nsatc.net
+!+      vortex-win.data.metron.live.com.nsatc.net
+! end of metron
+
+! https://xakep.ru/2018/07/02/android-231/
+! https://clinetworking.com/2018/06/03/1984-called/
+mobile.pipe.aria.microsoft.com
+
 mobileads.msn.com  # from MVPS
+mobileleads.msn.com  # from Dan Pollock's hosts file
 
-tk2.plt.msn.com
-
-popup.msn.com  # from Peter Lowe's hosts file and MVPS
+msadcenter.msn.com # from Dan Pollock's hosts file: tracking.msadcenter.msn.com
 
 msads.net$important  # is in many lists
 !+  ads1.msads.net
@@ -206,24 +157,40 @@ msads.net$important  # is in many lists
 !+  global.msads.net
 ! end of msads.net
 
+msnbot-65-55-108-23.search.msn.com  # from Dan Pollock's hosts file
+
+otf.msn.com  # from MVPS
+
+popup.msn.com  # from Peter Lowe's hosts file and MVPS
+
+preview.msn.com  # from Dan Pollock's hosts file
+
+prodxnews1blob.blob.core.windows.net  # from Dan Pollock's hosts file
+
 r.msn.com  # from Peter Lowe's hosts file, is in MVPS
+
+rad.live.com  # is in Dan Pollock's hosts file
+rad.msn.com  # is in Dan Pollock's hosts file
+rads.msn.com$important  # is in Dan Pollock's hosts file
+
+rel.msn.com  # from Dan Pollock's hosts file: amer.rel.msn.com, apac.rel.msn.com, emea.rel.msn.com
+
+reporting.family.microsoft.com.akadns.net
+reporting.familysafety.microsoft.com.akadns.net
 
 rmads.msn.com  # from Peter Lowe's hosts file and MVPS
 rmads.eu.msn.com  # from MVPS
 
-bat.bing.com$important  # from many lists
-!+  r.bat.bing.com
-! end of bat.bing.com
+! Windows telemetry also. See https://habr.com/en/post/265283/
+settings-win.data.microsoft.com
+settings-sandbox.data.microsoft.com
+settings.data.glbdns2.microsoft.com
 
-c.bing.com  # from MVPS
+schemas.microsoft.akadns.net  # from Dan Pollock's hosts file
 
-telemetry.appex.bing.net  # is in Dan Pollock's hosts file
+sls.update.microsoft.com.akadns.net
 
-! https://xakep.ru/2018/07/02/android-231/
-! https://clinetworking.com/2018/06/03/1984-called/
-mobile.pipe.aria.microsoft.com
-
-metrics.skype.akadns.net  # skype ads and telemetry
+! Skype
 apps.skype.com  # from https://github.com/tarampampam/scripts/blob/master/win/Disable-Skype-ADBanners.cmd
 #!api.skype.com  # api skype.com? need to recheck it  # from https://github.com/tarampampam/scripts/blob/master/win/Disable-Skype-ADBanners.cmd
 devapps.skype.net  # from https://github.com/tarampampam/scripts/blob/master/win/Disable-Skype-ADBanners.cmd
@@ -234,78 +201,72 @@ qawww.skypeassets.net  # from https://github.com/tarampampam/scripts/blob/master
 preads.skypeassets.net  # from https://github.com/tarampampam/scripts/blob/master/win/Disable-Skype-ADBanners.cmd
 static.skypeassets.com  # from https://github.com/tarampampam/scripts/blob/master/win/Disable-Skype-ADBanners.cmd
 
-gowadogo.com  # and some Microsoft (or Inmobi) ads AS8075
-!+  dfw1.gowadogo.com
-!+      vip.dfw1.gowadogo.com
-! end of gowadogo.com
+spynetall.microsoft.com
+spynetall.microsoft.akadns.net
+spynetalt.microsoft.com
+spynetalt.microsoft.akadns.net
+spyneteurope.microsoft.com
+spyneteurope.microsoft.akadns.net
+spynet2.microsoft.com
+spynet2.microsoft.akadns.net
 
-!! todo
-aidps.atdmt.com  # from Dan Pollock's hosts file
-az361816.vo.msecnd.net  # from Dan Pollock's hosts file
-az512334.vo.msecnd.net  # from Dan Pollock's hosts file
-cdn.atdmt.com  # from Dan Pollock's hosts file
-cds26.ams9.msecn.net  # from Dan Pollock's hosts file
-db3aqu.atdmt.com  # from Dan Pollock's hosts file
-ec.atdmt.com  # from Dan Pollock's hosts file
-feedback.microsoft-hohm.com  # from Dan Pollock's hosts file
-lb1.www.ms.akadns.net  # from Dan Pollock's hosts file
-m.adnxs.com  # from Dan Pollock's hosts file
-msnbot-65-55-108-23.search.msn.com  # from Dan Pollock's hosts file
-msntest.serving-sys.com  # from Dan Pollock's hosts file
-preview.msn.com  # from Dan Pollock's hosts file
-schemas.microsoft.akadns.net  # from Dan Pollock's hosts file
-secure.flashtalking.com  # from Dan Pollock's hosts file
+sqm.microsoft.com
+sqmfe.glbdns2.microsoft.com
 
-otf.msn.com  # from MVPS
-
-amer.rel.msn.com  # from Dan Pollock's hosts file
-apac.rel.msn.com  # from Dan Pollock's hosts file
-emea.rel.msn.com  # from Dan Pollock's hosts file
-tracking.msadcenter.msn.com  # from Dan Pollock's hosts file
-udc.msn.com  # from Dan Pollock's hosts file
-
-research-int.se  # from MVPS
-
-analytics.breakingnews.com  # from MVPS
-madserver.net  # from MVPS
-click.atdmt.com #[Tracking.Cookie]  # from MVPS
-#  clk.atdmt.com #[affects MS downloads]  # from MVPS
-mt.adquality.ch  # from MVPS
-
-adserver.pressboard.ca  # from MVPS
-data.queryly.com  # from MVPS
-bidclix.net  # from MVPS
-
-deepmetrix.com  # empty root# from MVPS
-
-bannerflow.com  # ad network
-tracking.bannerflow.com  # from MVPS
-
-iperceptions.com  # "measure every touchpoint"
-api.iperceptions.com  # from MVPS
-universal.iperceptions.com  # from MVPS
-
-newsvine.com  # empty root
-log.newsvine.com  #[WebBug]  # from MVPS
-analytics.newsvine.com  # from MVPS
-
-mobileleads.msn.com  # from Dan Pollock's hosts file
-
-prodxnews1blob.blob.core.windows.net  # from Dan Pollock's hosts file
-
-ads.microsoft.com
-edge-bingads-westeurope.cloudapp.net
-azure.bingads.trafficmanager.net
+statsfe1.ws.microsoft.com
+statsfe2.update.microsoft.com.akadns.net
+statsfe2.ws.microsoft.com  # is in Dan Pollock's hosts file
 
 stb.msn.com  # from Adguard
-
-/aria-web-telemetry-  # msn.com/bingna/lib/aria-web-telemetry-... # is in EasyPrivacy
-
 srtb.msn.com$important  # is in Dan Pollock’s hosts file, EasyPrivacy, Adguard
 
-||aolcdn.com/ads/$script,important  # is in uBlock filters, modified
+telemetry.microsoft.com$important  # is in many lists
+!+  alpha.telemetry.microsoft.com
+!+  df.telemetry.microsoft.com
+!+      wes.df.telemetry.microsoft.com
+!+  ppe.telemetry.microsoft.com
+!+  sentinel.telemetry.microsoft.com
+!+  syslog.telemetry.microsoft.com
+!+  syslogagent.telemetry.microsoft.com
+!+  syslogclient.telemetry.microsoft.com
+!+  telecommand.telemetry.microsoft.com
+! end of telemetry.microsoft.com
+    !telecommand.telemetry.microsoft.com
+    !watson.telemetry.microsoft.com
+    !sqm.df.telemetry.microsoft.com
+    !sqm.telemetry.microsoft.com
+    !reports.wes.df.telemetry.microsoft.com
+    !services.wes.df.telemetry.microsoft.com
+    !wes.df.telemetry.microsoft.com
+    !watson.ppe.telemetry.microsoft.com
+telemetry.microsoft.com.nsatc.net
+    !sqm.telemetry.microsoft.com.nsatc.net
+    !telecommand.telemetry.microsoft.com.nsatc.net
+    !watson.telemetry.microsoft.com.nsatc.net
+telemetry.urs.microsoft.com
+telemetry.appex.bing.net  # is in Dan Pollock's hosts file
+telemetry.appex.search.prod.ms.akadns.net
 
-||bing.com/api/v1/mediation/clientauction  # ad xhrs
+tk2.plt.msn.com
 
-||msn.com/bingna/$script  # ad scripts  # https://h6.msn.com/bingna/ms-bingna-msn.min.js
+udc.msn.com  # from Dan Pollock's hosts file
 
+# these telemetry hosts have seen in web pages too
+vortex.data.microsoft.com
+vortex.data.glbdns2.microsoft.com
+vortex.data.microsoft.com.akadns.net
+vortex.data.msn.com
+vortex-sandbox.data.microsoft.com
+vortex-win.data.microsoft.com
+
+watson.live.com
+watson.microsoft.com
+!+  appcenter.watson.microsoft.com
+!+  devcenter.watson.microsoft.com
+watson.data.microsoft.com.akadns.net
+!+  legacy.watson.data.microsoft.com.akadns.net
+! end of watson
+
+wns.windows.com  # push notifications for Windows. See https://docs.microsoft.com/ru-ru/windows/privacy/manage-windows-1809-endpoints
+
+!! todo
