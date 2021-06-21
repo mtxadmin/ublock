@@ -87,6 +87,7 @@ beacon.wikia-services.com
 
 /click.$domain=~alfabank.ru
 click.cloudcheckr.com
+click.email.sans.org
 click.email.vimeo.com  # ad redirects
 click.execrank.com
 click.greatlearning.in
@@ -129,10 +130,16 @@ hawk.techradar.com
 hawk.tomsguide.com  # hawk.tomsguide.com/hl/hawklinks.js
 
 ! /email. ?
+email.2gis.ru  # ad redirects
 email.bigcommerce.com
-email.sv.bigcommerce.com
+email.bridgestonegolf.com  # ExactTarget AS22606
+email.email.pandadoc.com
+email.hackerearth.com  # ad redirects, Sendgrid
 email.mxtoolbox.com
-email.wefunder.com
+email.sv.bigcommerce.com
+email.upiq.com  # ExactTarget AS22606
+email.thgsportsmail.com
+email.wefunder.com  # email.wefunder.com/c/eJxNUMuKw..
 
 /forex.
 
@@ -177,7 +184,7 @@ piwik.openstreetmap.org
 piwik.pokerlistings.com
 piwik.syloe.com
 piwik.wildberries.ru
-piwik.wsws.org  #[Piwik.Analytics]
+piwik.wsws.org  #[Piwik.Analytics]  # from MVPS
 /matomo.js$important  # from EasyPrivacy
 /piwik.js$important
 
@@ -223,6 +230,11 @@ promo.sebnews.ru
 push.daksham.in$important  # empty root  # in 2 lists
 push.zhanzhang.baidu.com  # http://push.zhanzhang.baidu.com/push.js
 
+/reklama.
+reklama.ngs.ru
+reklama.ntv.ru
+reklama.rambler.ru
+
 /smetrics.
 smetrics.foxbusiness.com$important
 smetrics.ni.com  # is in Adguard and EasyPrivacy
@@ -230,6 +242,8 @@ smetrics.ni.com  # is in Adguard and EasyPrivacy
 ! do not block all "stat." subdomains, there maybe statics
 stat.icestonesoft.com
 stat.ntv.ru
+stat.stars.ru  #[WebBug]  # from MVPS
+stat.tvrain.ru
 
 ! do not block all "stats." subdomains, there maybe statics
 stats.consultnn.ru
@@ -250,10 +264,12 @@ telemetry.swe.quicinc.com  # Blocked by some adlist in Blokada  # quicinc.com re
 /tizer.
 tizer.passion.ru  # from Adguard
 tizer.ukraine-ru.net  # from Adguard
+tizer.adv.zarabotki.ru
 
 top.azur.ru  # ads(counters?)  # root is img  # is in AdGuard: ||top.azur.ru/?id=
 top.photopulse.ru
 top.hunter.com.ua  # tracking images
+top100.mafia.ru  # from Peter Lowe's hosts file
 top100.rambler.ru
 top100-images.rambler.ru$important
 
@@ -467,6 +483,8 @@ bang.360.cn  # from Energized Blu
 fx.sj.360.cn  # from Energized Blu
 stat.m.360.cn  # from Adguard
 
+js.users.51.la$important  # is in 3 lists
+
 o.60sk.ru  # from Adguard
 
 web-t.9gag.com  #[Piwik.Analytics]  # from MVPS
@@ -509,6 +527,8 @@ banners-wxu.weather-perf.akadns.net
 d.runadtag.com.tech.akadns.net
 ! end of akadns.net
 
+ds-aksb-a.akamaihd.net  # ad scripts  # is in MVPS HOSTS, AdGuard and EasyPrivacy
+
 smart.allocine.fr  # from Adguard
 smart2.allocine.fr  # from Adguard
 
@@ -520,6 +540,9 @@ dc.altmob.com  # from Adguard
 
 adtools2.amakings.com  # from MVPS
 
+coordinator-production-28516768.us-east-1.elb.amazonaws.com  # from BlockListProject/SmartTV
+mailmunch.s3.amazonaws.com  # from Ru AdList
+syncplusconfig.s3.amazonaws.com  # from BlockListProject/SmartTV
 twitter-badges.s3.amazonaws.com  # from Ru AdList
 
 goto.astdn.ru  # from Adguard
@@ -538,6 +561,12 @@ emptygif.babyblog.ru
 
 antivirus.baidu.com  # from https://github.com/kowith337/ThaiParanoidBlock/
 browser.baidu.com  # from https://github.com/kowith337/ThaiParanoidBlock/
+hm.baidu.com$important  # ad scripts  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
+
+adsgen.bangbros.com  # from MVPS
+adsrv.bangbros.com  # from MVPS
+newads.bangbros.com  # from Peter Lowe's hosts file and MVPS
+tck.bangbros.com  # from MVPS
 
 dc.banggood.com$important  # from EasyPrivacy
 dccss.banggood.com$important  # from EasyPrivacy
@@ -547,6 +576,8 @@ lol.bash.org.ru  # from Adguard
 ! BBC
 ssc.api.bbc.com  # is in EasyPrivacy
 mybbc-analytics.files.bbci.co.uk
+
+froling.bee.pl  # from Dan Pollock's hosts file
 
 test.besstidniki.ru  # from Adguard
 
@@ -645,7 +676,7 @@ bnidx.com  # ad scripts  # bravenet
 
 ads.brazzers.com  # from MVPS
 ads2.brazzers.com  # from MVPS
-tour.brazzers.com  # from MVPS
+tour.brazzers.com  # from MVPS and Peter Lowe's hosts file
 
 goku.brightcove.com  # goku.brightcove.com/1pix.gif  # is in MVPS
 sadmin.brightcove.com  # sadmin.brightcove.com/js/BrightcoveExperiences.js
@@ -695,11 +726,20 @@ segmentator.condenast.ru$important
 
 cache.daredorm.com  # from MVPS
 
+admp-tc.delfi.ee  # from Ru AdList
+ado.delfi.ee  # from Ru AdList
+
 rb1.design.ru  # from Peter Lowe's hosts file
+
+hulkapps-wishlist.nyc3.digitaloceanspaces.com
 
 banners.dogfart.com  # from MVPS
 
 a.doko.moe  # zombie
+
+parkingsrv0.dondominio.com
+
+bwp.download.com  # from Peter Lowe's hosts file
 
 rx9aef.driver-id.ru  # from Ru AdList
 
@@ -721,6 +761,8 @@ amway.enjoysurvey.com
 fomarketing.enjoysurvey.com
 lab-marketing.enjoysurvey.com
 
+sa.entireweb.com  # is in MVPS
+
 action.evrikak.ru  # from Adguard
 
 wolf.fan-guf.ru  # from Ru AdList  # zombie
@@ -734,6 +776,8 @@ abs.firstvds.ru  # from Adguard
 start.fotostrana.ru  # from Adguard
 
 sg.freeimg.ru  # from Adguard
+
+trk.freepik.com
 
 bannet.fryazino.net  # from Adguard
 
@@ -770,6 +814,8 @@ play.d.greece-search.com
 bigyapan.hamropatro.com  # from Adguard
 
 em.hartenergy.com
+
+js.hdzog.com$important  # is in EasyList
 
 p.hoff.ru  # many sub-subdomains - see marketing_all
 push.hoff.ru
@@ -839,6 +885,8 @@ star.manystars.ru  # from Adguard
 
 embed.megogo.net  # Embedding blocks
 
+mobotoolpush.moboapps.io  # from Adguard
+
 ads.mofos.com  #+  # from Dan Pollock's hosts file
 scripts.mofos.com  # from MVPS
 
@@ -854,6 +902,8 @@ a.multik-online.net  # from Ru AdList  # zombie
 r.my.com  # is in 3 lists
 tracker-api.my.com
 
+hello.myfonts.net  # tracker. From hpHosts’ Ad and tracking servers
+
 banstat.nadavi.net  # is in 2 lists
 
 p.nag.ru  # from Ru AdList
@@ -864,13 +914,25 @@ autoru.naydex.net  # auto.ru ad scripts
 
 bx.neolabs.kz  # from Adguard
 
-reklama.ntv.ru
+! neuron.digital subdomains
+traflow.neuron.digital
+traflow-api.neuron.digital
+traflow-openrtb-api.neuron.digital
+traflow-widget-api.neuron.digital
+
+go.newgensoft.com  # ad redirects
+landing.newgensoft.com
 
 meter-svc.nytimes.com$important  #https://a.nytimes.com/svc/nyt/data-layer?sourceApp=  # is in AdGuard, MVPS HOSTS, Dan Pollock’s hosts file
 
 capi.onelya.ru  # capi.onelya.ru/ads
 
+notifications.onliner.by
+
 ads2.opensubtitles.org  # from MVPS
+
+campaigns.opentext.com
+customerfeedback.opentext.com
 
 privacy.outdoorsg.com  # ad frames
 
@@ -878,6 +940,10 @@ rotor.overclockers.ru$important
 
 a4.overclockers.ua  # from Adguard  # zombie
 a5.overclockers.ua  # is in Peter Lowe’s Ad and tracking server list
+
+redirect.ovh.net
+
+livetracker.rfe.pangea-cms.com  # ad scripts
 
 d.pikabu.ru  # d.pikabu.ru/stat/
 
@@ -966,7 +1032,6 @@ dot-stat.radikal.ru$important
 
 c.rambler.ru
 rcmjs.um.rambler.ru
-reklama.rambler.ru
 ssp.rambler.ru$important  # from EasyPrivacy
 sync.rambler.ru$important  # from EasyPrivacy
 um.rambler.ru
@@ -1033,8 +1098,7 @@ s.shopify.com$important  # from MVPS HOSTS file  # in AdGuard: ||s.shopify.com/v
 stats.shopify.com$important  # is in AdGuard and EasyPricacy
 v.shopify.com$important  # is in AdGuard and EasyPricacy  #v.shopify.com/internal_errors/track
 
-! solowayfamily.ru
-slava.soloway.su  # from Adguard
+slava.soloway.su  # from Adguard  # solowayfamily.ru
 
 images-aud.sourceforge.net  # from MVPS
 
@@ -1079,7 +1143,19 @@ seal.thawte.com  # is in Fanboy's
 
 sysstat.tildacdn.com  # sysstat.tildacdn.com/api/img/error/  # stat.tildacdn.com/event/
 
+ad.tiscali.com  # from Dan Pollock's hosts file
+ads.tiscali.com  # from Dan Pollock's hosts file
+ad-uk.tiscali.com  # from Dan Pollock's hosts file
+ss.tiscali.com  # from Dan Pollock's hosts file
+sitestats.tiscali.co.uk  # from Dan Pollock's hosts file
+adsweb.tiscali.cz  # from Dan Pollock's hosts file
+ads.tiscali.fr  # from Dan Pollock's hosts file
+ads.tiscali.it  # from Dan Pollock's hosts file
+ss.tiscali.it  # from Dan Pollock's hosts file
+
 embed.tonews.org  # from Adguard
+
+ams1.next.a.prd.aadg.trafficmanager.net  # ad scripts
 
 c.trello.com  # c.trello.com/i?stm=...
 /i?stm=  # is in EasyPrivacy
@@ -1090,7 +1166,7 @@ c.trello.com  # c.trello.com/i?stm=...
 ecommplugins-trustboxsettings.trustpilot.com  # ad scripts
 invitejs.trustpilot.com  # from EasyPrivacy
 
-stat.tvrain.ru
+vs.tucows.com  # from Peter Lowe's hosts file
 
 s4.ucoz.net$important
 s9.ucoz.net$important
@@ -1150,6 +1226,8 @@ b.vimeocdn.com$important
 ! tracking of Vimeo
 ||vimeocdn.com/ga/$script
 
+adtracking.vinden.nl  # from Dan Pollock's hosts file
+
 cbanners.virtuagirlhd.com$important  # in 5 lists
 
 468.vologdainfo.ru  # from Ru AdList
@@ -1179,6 +1257,7 @@ www.frog.wix.com
 botd.wordpress.com  #[WebBug]  # from MVPS
 botd2.wordpress.com  #[WebBug]  # from MVPS
 !s0.wp.com - don't block
+adspotblog.wordpress.com
 
 stats.wp.com$important
 
@@ -1243,8 +1322,6 @@ c0.froala.com
 
 gjapplog.uc.cn  # https://xakep.ru/2018/07/02/android-231/  # https://clinetworking.com/2018/06/03/1984-called/
 
-email.hackerearth.com  # ad redirects, Sendgrid
-
 banneradmin.rai.it$important
 
 e.sapinsideronline.com  # ad redirects. Root redirects to sapinsider.wispubs.com - news about SAP
@@ -1257,17 +1334,9 @@ info.sosintl.com  # ad redirects
 
 bonfire.spklw.com  # Strossle  # from AdGuard
 
-email.thgsportsmail.com
-
 p.typekit.net$important  # from hpHosts’ Ad and tracking servers. And it is in AdGuard  # it is NOT css! in fact, it is a tracking instead, with many parameters
 
 outs.unicom.co.uk  #outs.unicom.co.uk/link.php?
-
-email.wefunder.com  # email.wefunder.com/c/eJxNUMuKw..
-
-email.upiq.com  # ExactTarget AS22606
-
-email.bridgestonegolf.com  # ExactTarget AS22606
 
 mail.financialengines.com  # ExactTarget AS22606
 
@@ -1276,8 +1345,6 @@ click.info.liquidlearning.com  # ExactTarget AS22606
 datadump.buildfire.com
 
 clickd.dnagenotek.com
-
-email.email.pandadoc.com
 
 emails.alignable.com
 
@@ -1343,8 +1410,6 @@ lines.superkot.com  # from Ru AdList
 
 love.romanticcollection.ru  # from Ru AdList
 
-mailmunch.s3.amazonaws.com  # from Ru AdList
-
 notification.tubecup.net  # from Ru AdList
 
 online.mirabilis.com  # from Ru AdList
@@ -1394,13 +1459,9 @@ web.hosting-test.net  # from Energized Blu
 
 research.de.com  # from MVPS
 
-piwik.wsws.org  #[Piwik.Analytics]  # from MVPS
-
 advertising.aol.com  # from 1024 Hosts  # +
 
-! from MVPS
-! +
-webstats.motigo.com
+webstats.motigo.com  # from MVPS  # +
 
 ! from Energized Blu
 familygiftlove.myshopify.com
@@ -1465,100 +1526,4 @@ adpriv.nikkei.com  # from Adguard
 nkis.nikkei.com  # from Adguard
 
 t7z.cupid.iqiyi.com  # from Adguard
-
-mobotoolpush.moboapps.io  # from Adguard
-
-email.2gis.ru  # ad redirects
-
-js.users.51.la$important  # is in 3 lists
-
-adsgen.bangbros.com  # from MVPS
-adsrv.bangbros.com  # from MVPS
-newads.bangbros.com  # from Peter Lowe's hosts file and MVPS
-tck.bangbros.com  # from MVPS
-
-tour.brazzers.com  # from Peter Lowe's hosts file
-
-ads.callofdutyblackopsforum.net
-
-parkingsrv0.dondominio.com
-
-bwp.download.com  # from Peter Lowe's hosts file
-
-top100.mafia.ru  # from Peter Lowe's hosts file
-
-! neuron.digital subdomains
-traflow.neuron.digital
-traflow-api.neuron.digital
-traflow-openrtb-api.neuron.digital
-traflow-widget-api.neuron.digital
-
-reklama.ngs.ru
-
-notifications.onliner.by
-
-campaigns.opentext.com
-customerfeedback.opentext.com
-
-click.email.sans.org
-
-vs.tucows.com  # from Peter Lowe's hosts file
-
-adv.zarabotki.ru
-tizer.adv.zarabotki.ru
-
-! is in EasyPrivacy
-/targetemsecure.
-targetemsecure.blob.core.windows.net
-
-stat.stars.ru  #[WebBug]  # from MVPS
-
-ad.tiscali.com  # from Dan Pollock's hosts file
-ads.tiscali.com  # from Dan Pollock's hosts file
-ad-uk.tiscali.com  # from Dan Pollock's hosts file
-ss.tiscali.com  # from Dan Pollock's hosts file
-sitestats.tiscali.co.uk  # from Dan Pollock's hosts file
-adsweb.tiscali.cz  # from Dan Pollock's hosts file
-ads.tiscali.fr  # from Dan Pollock's hosts file
-ads.tiscali.it  # from Dan Pollock's hosts file
-ss.tiscali.it  # from Dan Pollock's hosts file
-
-adtracking.vinden.nl  # from Dan Pollock's hosts file
-
-admp-tc.delfi.ee  # from Ru AdList
-ado.delfi.ee  # from Ru AdList
-
-sa.entireweb.com  # is in MVPS HOSTS
-
-trk.freepik.com
-
-js.hdzog.com$important  # is in EasyList
-
-froling.bee.pl  # from Dan Pollock's hosts file
-
-hello.myfonts.net  # tracker. From hpHosts’ Ad and tracking servers
-
-go.newgensoft.com  # ad redirects
-landing.newgensoft.com
-
-clk.oceanbys.com
-
-redirect.ovh.net
-
-ac.hubb.com  #ac.hubb.com/lt.php?s=
-
-ams1.next.a.prd.aadg.trafficmanager.net  # ad scripts
-
-coordinator-production-28516768.us-east-1.elb.amazonaws.com  # from BlockListProject/SmartTV
-syncplusconfig.s3.amazonaws.com  # from BlockListProject/SmartTV
-
-hm.baidu.com$important  # ad scripts  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
-
-hulkapps-wishlist.nyc3.digitaloceanspaces.com
-
-livetracker.rfe.pangea-cms.com  # ad scripts
-
-ds-aksb-a.akamaihd.net  # ad scripts  # is in MVPS HOSTS, AdGuard and EasyPrivacy
-
-adspotblog.wordpress.com
 
