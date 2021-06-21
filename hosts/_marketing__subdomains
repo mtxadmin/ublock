@@ -233,6 +233,7 @@ stat.ntv.ru
 
 ! do not block all "stats." subdomains, there maybe statics
 stats.consultnn.ru
+stats.datawrapper.de  # tracking images  # is in Adguard  # do not block datawrapper.de entirely
 stats.pandora.com
 stats.travelask.ru
 stats.virtuemart.net  #[Piwik.Analytics]  # from MVPS
@@ -317,6 +318,7 @@ tracker.mobile.biz.daum.net  # zombie
 tracker.msales.com
 tracker.netmechanic.com  # zombie
 tracker.nmp1.com
+tracker.onelya.ru  #tracker.onelya.ru/push
 tracker.pinnaclesports.com
 tracker.plan2.net
 tracker.realclearpolitics.com
@@ -416,6 +418,7 @@ tracking.softwareprojects.com
 tracking.sokrati.com
 tracking.sport1.de
 tracking.srv2.de
+tracking.storybite.io
 tracking.strongmail.west.mtvi.com
 tracking.syncedvision.com
 tracking.tchibo.de
@@ -865,6 +868,8 @@ reklama.ntv.ru
 
 meter-svc.nytimes.com$important  #https://a.nytimes.com/svc/nyt/data-layer?sourceApp=  # is in AdGuard, MVPS HOSTS, Dan Pollock’s hosts file
 
+capi.onelya.ru  # capi.onelya.ru/ads
+
 ads2.opensubtitles.org  # from MVPS
 
 privacy.outdoorsg.com  # ad frames
@@ -1212,58 +1217,6 @@ tsr.zlatoff.ru  # from Adguard
 tools.ztod.com  # from MVPS
 
 !! todo
-aiseet.atianqi.com  # from Energized Blu
-aiseet.aa.atianqi.com  # from Energized Blu
-#! subdomains from Energized Blu:
-t-l.play.aiseet.atianqi.com
-andrqd.play.aiseet.atianqi.com
-api.poll.aiseet.atianqi.com
-btrace.play.aiseet.atianqi.com
-dp3.play.aiseet.atianqi.com
-livep.l.aiseet.atianqi.com
-lives.l.aiseet.atianqi.com
-mtrace.play.aiseet.atianqi.com
-news-l.play.aiseet.atianqi.com
-omgmta.play.aiseet.atianqi.com
-p-l.play.aiseet.atianqi.com
-sdkconfig.play.aiseet.atianqi.com
-monitor-uu.play.aiseet.atianqi.com
-otheve.play.aiseet.atianqi.com
-othstr.play.aiseet.atianqi.com
-rlog-video.conn.aiseet.atianqi.com
-
-ott.cibntv.net  # from Energized Blu
-!+  cp45.ott.cibntv.net
-! end of ott.cibntv.net
-#! subdomains from Energized Blu:
-agn.aty.cp45.ott.cibntv.net
-api.adv.ott.cibntv.net
-ark.cp21.ott.cibntv.net
-bkmcgi.play.cp81.ott.cibntv.net
-bksdkconfig.play.cp81.ott.cibntv.net
-brance.play.cp81.ott.cibntv.net
-dc.cp21.ott.cibntv.net
-de.as.cp61.ott.cibntv.net
-ad.advst.cp33.ott.cibntv.net
-sltint.adv.ott.cibntv.net
-t-l.play.cp81.ott.cibntv.net
-topapi.cp12.ott.cibntv.net
-val.atm.cp31.ott.cibntv.net
-valf.atm.cp31.ott.cibntv.net
-valipl.cp31.ott.cibntv.net
-ykugc.cp31.ott.cibntv.net
-mcgi.play.cp81.ott.cibntv.net
-m.aty.cp45.ott.cibntv.net
-lives.l.cp81.ott.cibntv.net
-livep.l.cp81.ott.cibntv.net
-dp3.play.cp81.ott.cibntv.net
-mmg.aty.cp45.ott.cibntv.net
-mtrace.play.cp81.ott.cibntv.net
-news-l.play.cp81.ott.cibntv.net
-omgmta.play.cp81.ott.cibntv.net
-p-l.play.cp81.ott.cibntv.net
-sdkconfig.play.cp81.ott.cibntv.net
-
 xfinityconnect.email.comcast.net
 
 usageanalytics.coveo.com
@@ -1590,29 +1543,16 @@ landing.newgensoft.com
 
 clk.oceanbys.com
 
-capi.onelya.ru/ads
-tracker.onelya.ru  #tracker.onelya.ru/push
-
 redirect.ovh.net
 
-tracking.mindfireinc.com
-
 ac.hubb.com  #ac.hubb.com/lt.php?s=
-
-tracking.storybite.io
 
 ams1.next.a.prd.aadg.trafficmanager.net  # ad scripts
 
 coordinator-production-28516768.us-east-1.elb.amazonaws.com  # from BlockListProject/SmartTV
 syncplusconfig.s3.amazonaws.com  # from BlockListProject/SmartTV
 
-stats.datawrapper.de  # tracking images  # is in Adguard  # do not block datawrapper.de entirely
-
-track.convertkit-mail.com
-
 hm.baidu.com$important  # ad scripts  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
-
-links.uw-financieel-advies.be
 
 hulkapps-wishlist.nyc3.digitaloceanspaces.com
 
@@ -1621,6 +1561,4 @@ livetracker.rfe.pangea-cms.com  # ad scripts
 ds-aksb-a.akamaihd.net  # ad scripts  # is in MVPS HOSTS, AdGuard and EasyPrivacy
 
 adspotblog.wordpress.com
-
-d2z0bn1jv8xwtk.cloudfront.net  # ad scripts
 
