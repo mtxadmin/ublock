@@ -829,7 +829,7 @@ _tizers.  # from Ru AdList
 .trafficdok.com^  # from Ru AdList
 .trafficlide.com^  # from Ru AdList
 .viptizer.  # from Ru AdList
-##[class*=teaser]
+~youtube.com##[class*=teaser]
 ##[id*=teaser]
     ! ##.b-content__section_teasers
     ! au.ru###header-teaser
@@ -19705,9 +19705,14 @@ youtube.com##.ytp-ad-progress-list
 youtube.com##.html5-video-player:style(position:static !important; overflow:hidden !important)
 youtube.com##.html5-video-container:style(position:static !important; overflow:hidden !important)
 youtube.com##.ytp-iv-video-content:style(position:static !important; overflow:hidden !important)
-!test
+!
 youtube.com#@#.video-annotations
 youtube.com#@#[class*="-ad-"]
+! teaser mini-popups. Attention: do not generalize rules as [class*=teaser], added exclusion for youtube.com there
+youtube.com##.ytp-cards-teaser-box
+youtube.com##.ytp-cards-teaser-text
+! Icon "i" in top-right corner
+youtube.com##.ytp-cards-button-icon
 
 ypapa.ru##.fake
 ypapa.ru##.yp-consult
