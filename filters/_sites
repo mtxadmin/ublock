@@ -3381,6 +3381,9 @@ air-gun.ru##.slick-slide::before
 air-gun.ru##.resp-tab-content > div > p
 air-gun.ru##.foter_text
 air-gun.ru##.benefits
+    ! related items are not very related
+air-gun.ru###analogs
+air-gun.ru##.title-wrap:has-text(Похожие товары)
     ! other
 !air-gun.ru##.button_classic:style(position:static !important)
 air-gun.ru##.button_classic
@@ -15593,12 +15596,17 @@ sbcode.net##.md-sidebar:style(position:static !important)
 ||res.online.sberbank.ru/*/no-access-error*.png$image
 !test
 @@||sberbank.ru$generichide
+    ! cookies popups
+! old
+sberbank.ru##.cookie-warning
+sberbank.ru##.kitt-cookie-warning
+! new
+sberbank.ru##p:has(a[href^="https://www.sberbank.ru/ru/personal_policy"])
+    ! other
 sberbank.ru##div[id^=notification]:has(.bunnerLists)
 sberbank.ru###offerBlock
 sberbank.ru###design30Banner
-sberbank.ru##.cookie-warning
 sberbank.ru##.chat-retail-block
-sberbank.ru##.kitt-cookie-warning
 sberbank.ru##.tabs-container__header_sticky:style(position:static !important)
 sberbank.ru##.tabs-container__header:style(position:static !important)
 sberbank.ru##.scaffold__region-footer-socials
