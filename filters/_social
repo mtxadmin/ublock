@@ -206,6 +206,7 @@ api.vk.com$domain=~vk.com|~foto-map.ru,important
 ||vk.com/js^$third-party,important,domain=~senler.ru|~vse.fm
 ||vk.com/js/api/openapi.js$third-party,important,domain=~senler.ru|~vse.fm  # disabled rule from AdList RU
 ||vk.com/js/al/aes_light.js$third-party  # from Adguard
+||vk.com/js/al/mrtarg.js  # "banners to inspect"
 ||vk.com/js/cmodules/web/notifier$third-party
 ||vk.com/rtrg?  # from EasyPrivacy
 ||vk.com/share.php$third-party  # from AdGuard
@@ -217,6 +218,12 @@ api.vk.com$domain=~vk.com|~foto-map.ru,important
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
+    ! popups
+vk.com##.box_body:has(.vk_connect_policy_notice_box)
+vk.com###box_layer_wrap
+vk.com###box_layer_bg
+!vk.com##.scroll_fix_wrap - don't, that's not
+    ! other
 ~vk.com,~belarus2020.org##[class$="-vk"]:not(html):not(body):not(article)
 ~vk.com##[id$="-vk"]:not(html):not(body):not(article)
 ! from Fanboy's
@@ -272,6 +279,8 @@ vk.com##.PushNotifierPopup__popup-box_type--suggest
 vk.com##.article_layer__top_actions
 vk.com##.article_layer__up
 vk.com##.article_layer__simple_footer
+! logo
+vk.com##.TopHomeLink
 !
 ! All from RU AdList, modified
 ! Паразиты (встраивают свою рекламу во вконтакт)
