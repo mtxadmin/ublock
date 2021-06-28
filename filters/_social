@@ -1,6 +1,7 @@
 ﻿!! It is a sublist of Yet another small uBlock filter list
 ! See https://github.com/mtxadmin/ublock for details
 !
+! Absolute hosts see in _telemetry
 !
 
 !! Facebook
@@ -8,19 +9,6 @@
 ! hosts
 ! comments is preferably inline with  #
 !
-# About Facebook Pixel: https://www.facebook.com/business/help/952192354843755
-ak.facebook.com  # zombie  # creative.ak.facebook.com  # from Dan Pollock's hosts file  # zombie
-api.facebook.com$domain=~facebook.com|~fb.com,important  # https://clinetworking.com/2018/06/03/1984-called/
-b-graph.facebook.com$domain=~facebook.com|~fb.com,important  # from 1Hosts
-graph.facebook.com$domain=~facebook.com|~fb.com,important  # is in many lists  graph.facebook.com  # many mobile apps are trying to read facebook graph. Blocked, even it might broke some facebook functionality  #! facebook
-connect.facebook.net$domain=~facebook.com|~fb.com,important  # is in many lists
-mqtt-mini.facebook.com$domain=~facebook.com|~fb.com,important  # https://clinetworking.com/2018/06/03/1984-called/
-mqtt-p4.facebook.com$domain=~facebook.com|~fb.com,important  # from 1Hosts
-pixel.facebook.com$domain=~facebook.com|~fb.com,important  # is in many lists
-staticxx.facebook.com$domain=~facebook.com|~fb.com,important  # from 1Hosts
-z-p3-api.facebook.com$domain=~facebook.com|~fb.com,important  # from 1Hosts
-z-p3-sonar.fdar1-1.fna.fbcdn.net$domain=~facebook.com|~fb.com,important  # from 1Hosts
-||static.ak.fbcdn.net$domain=~facebook.com|~fb.com  # is in Anti-Facebook
 !
 ! urls
 ! comments is preferably inline with  # 
@@ -170,8 +158,6 @@ facebook.com###pagelet_video_home_watch_list_rhc
 ! hosts
 ! comments is preferably inline with  #
 !
-api.vk.com$domain=~vk.com|~foto-map.ru,important
-||stats.vk-portal.net  # is in EasyPrivacy
 !
 ! urls
 ! comments is preferably inline with  # 
@@ -288,17 +274,6 @@ vk.com##.article_layer__up
 vk.com##.article_layer__simple_footer
 ! logo
 vk.com##.TopHomeLink
-!
-! All from RU AdList, modified
-! Паразиты (встраивают свою рекламу во вконтакт)
-||vkbutton.com$important
-||vkmus.com$important
-||vladbazar.com$important
-! Реклама игр в играх
-||everall.ru$important
-! Прочее
-||vkbot.ru/trash/$important
-
 
 
 
@@ -307,7 +282,6 @@ vk.com##.TopHomeLink
 ! hosts
 ! comments is preferably inline with  #
 !
-graph.instagram.com  # https://xakep.ru/2018/07/02/android-231/  # https://clinetworking.com/2018/06/03/1984-called/
 !
 ! urls
 ! comments is preferably inline with  # 
@@ -357,8 +331,6 @@ graph.instagram.com  # https://xakep.ru/2018/07/02/android-231/  # https://cline
 ! hosts
 ! comments is preferably inline with  #
 !
-||connect.ok.ru$important  # from hpHosts’ Ad and tracking servers 
-api.ok.ru$domain=~ok.ru|~odnoklassniki.ru
 !
 ! urls
 ! comments is preferably inline with  # 
@@ -409,9 +381,6 @@ api.ok.ru$domain=~ok.ru|~odnoklassniki.ru
 ! hosts
 ! comments is preferably inline with  #
 !
-analytics.twitter.com
-syndication.twitter.com$third-party,important
-api.twitter.com$third-party,important  # even that way: https://cdn.api.twitter.com/1/urls/count.json?url=
 !
 ! urls
 ! comments is preferably inline with  # 
@@ -531,7 +500,6 @@ platform.twitter.com/widgets.js$important
 ! hosts
 ! comments is preferably inline with  #
 !
-log.pinterest.com$important  # is in 3 lists
 pinimg.com$domain=~pinterest.com|~pinterest.co.uk  # Pinterest domains
 !
 ! urls
@@ -580,20 +548,12 @@ pinterest.com##.active.noButtonStyles > div
 ! hosts
 ! comments is preferably inline with  #
 !
-||ad.mail.ru$important
-banners.mail.ru
-bar.love.mail.ru
-||connect.mail.ru$third-party,important
-likemore-fe.go.mail.ru
 mediator.imgsmail.ru  # from AdGuard Tracking Protection
-||pulse.mail.ru/pulse-widget.js$domain=~mail.ru  # from Ru AdList
-xray.mail.ru
 !
 ! urls
 ! comments is preferably inline with  # 
 ! general first, specific last
 !
-||appsmail.ru/share/
 ||mail.ru/k?  # from EasyPrivacy
 imgsmail.ru/gstat?  # from EasyPrivacy
 !
@@ -656,10 +616,6 @@ wf.mail.ru###header
 ! hosts
 ! comments is preferably inline with  #
 !
-ads.linkedin.com
-!+  dc.ads.linkedin.com
-! end of ads.linkedin.com
-||platform.linkedin.com^$3p  # from hpHosts’ Ad and tracking servers, modified
 !
 ! urls
 ! comments is preferably inline with  # 
@@ -740,7 +696,6 @@ livejournal.com##a[href*="offer"][target="_blank"]
 ! hosts
 ! comments is preferably inline with  #
 !
-smartlock.google.com$3p
 ! Also see many hosts in _marketing_doobleclick&integralads
 !
 ! urls
@@ -758,7 +713,6 @@ smartlock.google.com$3p
 ||apis.google.com/js/plusone.js$domain=~blogger.com|~blogspot.com|~blogspot.ru|~pikucha.ru|~googleblog.com|~abcnews.go.com  # from AdGuard
 ||apis.google.com/_/scs/apps-static/*=page,plusone/$third-party  # from Ru AdList
 ||news.google.com/swg/js/v1/swg.js$script  # is in Fanboy's
-||plusone.google.com^$third-party,important  # from Ru AdList
 !
 ! cosmetic filters
 ! general first, specific last
@@ -2015,5 +1969,3 @@ socauth.privatbank.ua
 /social-bookmarks/*  # is in Fanboy's
 
 /bitrix/js/socialservices/*
-
-||api.tumblr.com/*/share/stats$script,3p  # from uBlock filters  # https://github.com/AdguardTeam/AdguardFilters/issues/57325
