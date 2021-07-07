@@ -42,7 +42,7 @@ gstaticadssl.l.google.com
 pagead-googlehosted.l.google.com
 
 fcmatch.youtube.com
-youtube.com/pixel
+||youtube.com/pixel
 
 ! from Fanboy's
 ||contributor.google.com^*/loader.js$third-party
@@ -99,3 +99,6 @@ www.google.*##+js(remove-attr, onmousedown|ping, a[href][onmousedown]\, a[href][
 ! EasyPrivacy rule
 ||google.com^*/log?  # play.google.com/play/log?format=json&...
 ||play.google.com/_/PlayStoreUi/browserinfo?
+
+! cookies popup
+google.com##div:matches-css(position:fixed)
