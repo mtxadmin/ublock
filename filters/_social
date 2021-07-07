@@ -15,6 +15,13 @@
 ! general first, specific last
 !
 ||facebook.com/csp/reporting/
+!
+! facebook pixels
+/hsts-pixel.gif
+||facebook.com/security/
+||fbsbx.com/security/
+||fbcdn.net/security/
+!
 /facebook$image,domain=~facebook.com|~fb.com|~votesmart.appspot.com
     /assets/facebook-$image  # is in Fanboy's and Ru AdList
     /facebook-16.  # is in Fanboy's
@@ -151,6 +158,10 @@ facebook.com##div[id^="hyperfeed_story_id_"]:not(div:contains(/^[class="timestam
 facebook.com##:xpath(//div[starts-with(@id, 'pagelet') and (.//a[.='Sponsored'])]  )
 facebook.com###pagelet_ego_pane
 facebook.com###pagelet_video_home_watch_list_rhc
+! logo
+facebook.com##[href="https://www.facebook.com/"]
+! unfix
+facebook.com##div:matches-css(position:fixed):style(position:static !important)
 
 
 
