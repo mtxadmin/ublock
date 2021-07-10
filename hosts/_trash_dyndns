@@ -7,6 +7,13 @@
 
 !! domains
 
+! banner host ionos (wants cookies) AS8560
+1and1.com$3p
+1und1.de$3p
+app-de-1und1-login.herokuapp.com
+go-to-1und.herokuapp.com
+leredsite.herokuapp.com
+
 adipexp.3xforum.ro  # from Dan Pollock's hosts file  # zombie
 buylevitra.3xforum.ro  # from Dan Pollock's hosts file  # zombie
 meridiameridia.3xforum.ro  # from Dan Pollock's hosts file  # zombie
@@ -174,6 +181,14 @@ sc-analytics.appspot.com$important   # from Dan Pollock's hosts file and Peter L
 tap-nexus.appspot.com  # from Adguard
 vkontakte-community.appspot.com
 wixlabs-countdown.appspot.com  # countdown scripts
+
+! don't block b-cdn.net in general. Bunny.net: "Content delivery platform"
+! 
+easygdpr.b-cdn.net
+kilatechapps.b-cdn.net
+sp-wukong-tracker.b-cdn.net  # sp-wukong-tracker.b-cdn.net/tracker
+sp-micro-next.b-cdn.net
+sp-micro-proxy.b-cdn.net
 
 ! biz.ua domains (not all!)
 70voimk.biz.ua
@@ -931,12 +946,6 @@ btcomlandlinemanagechange.web.app  # from Energized Blu
 09122019service.yolasite.com  # from Energized Blu
 
 !! todo
-! banner host ionos (wants cookies) AS8560
-1and1.com
-1und1.de
-app-de-1und1-login.herokuapp.com
-go-to-1und.herokuapp.com
-leredsite.herokuapp.com
 
 !free.fr  # many spam subdomains  # from Energized Blu
 
@@ -1004,12 +1013,6 @@ d2odv8q3xfctb4.cloudfront.net  # ad scripts
 ! Исключения
 @@||12go.asia/dist/prod/build.*.js|$third-party,script
 @@||12go.asia/tools/form/$third-party,script
-@@||als-test.xyz/finserv/zgv/votezgv|$third-party,xmlhttprequest
-@@||als-test.xyz/finserv/zgv/zgvresults|$third-party,xmlhttprequest
-@@||azvideo.asia^$domain=miwed.ru
-@@||callback.pw^$third-party,script,xmlhttprequest
-@@||gallerix.asia^$domain=gallerix.ru
-@@||getplr.xyz/embed$third-party,script,subdocument,xmlhttprequest
 @@||multilanguage.xyz^$third-party,script,xmlhttprequest
 @@||myvi.xyz/embed/$third-party,subdocument
 @@||nyan.pw^$third-party,script,xmlhttprequest
@@ -1043,11 +1046,3 @@ rechargeassets-bootstrapheroes-rechargeapps.netdna-ssl.com
 bbsblog.ftp.sh  # zombie
 
 55.2myip.com  # zombie
-
-! don't block b-cdn.net in general. Bunny.net: "Content delivery platform"
-! 
-easygdpr.b-cdn.net
-kilatechapps.b-cdn.net
-sp-wukong-tracker.b-cdn.net  # sp-wukong-tracker.b-cdn.net/tracker
-sp-micro-next.b-cdn.net
-sp-micro-proxy.b-cdn.net
