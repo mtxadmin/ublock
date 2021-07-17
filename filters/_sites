@@ -3783,10 +3783,9 @@ anekdot.eu##.txt11
 ||anekdot.ru/i/bg/$image
 anekdot.ru##.nav-line:style(position:static !important)
 
+anekdotov.me$inline-script  # site breaks copypaste
 anekdotov.me##header
 anekdotov.me##div.acomplaint
-! site breaks copypaste
-anekdotov.me$inline-script
 
 anekdotov.net$inline-script  # site breaks copypaste
 anekdotov.net##.toptbl
@@ -3869,8 +3868,6 @@ open-sharing.com###top
 pixcloud.ru###wrapper > div > center
 pixcloud.ru##fieldset
 xpicture.ru##.other_text
-
-aoserver.ru$3p
 
 a-otvet.ru,i-otvet.ru,my-question.ru,otvet-master.ru##.qa-footer
 
@@ -5626,14 +5623,14 @@ codeproject.com###ctl00_Logo
 
 secure.comodo.com/trustlogo/
 
-! allow normal copy
+    ! allow normal copy
 consultant.ru/law/ref/calendar$inline-script
 ||consultant.ru/js/cons.min.js
-! head logos
+    ! head logos
 ||consultant.ru/static/client/dist/
-! header message
+    ! header message
 consultant.ru##.internet
-! other
+    ! other
 ||consultant.ru/*/easydocument.png
 
 cont.ws##.post_toolbar__meta.post_toolbar:style(position:static !important)
@@ -5652,8 +5649,7 @@ cookdown.com###jsd-widget
 
 cookmaster.online##.fixed-header-w:style(position:static !important)
 
-! ad popup
-coop-land.ru$script
+coop-land.ru$script  # ad popup
 
 cookdok.space##.logo_outer
 cookdok.space##footer
@@ -5983,8 +5979,7 @@ desantura.ru###flag:style(height:auto !important)
 ||1c-bitrix-cdn.ru/*/lenta.png
 ||1c-bitrix-cdn.ru/*/flag.jpg
 
-! agressive obfuscated adblock blocker script
-destinations.com.ua$inline-script
+destinations.com.ua$inline-script  # agressive obfuscated adblock blocker script
 
 ||detalsystem.online/wp-content/uploads/foto_thems/1.jpg
 
@@ -7026,8 +7021,7 @@ esquire.ru##.top_menu:style(height:auto !important)
 
 essential.com###footerNotice
 
-! "ADBLOCK DETECTED"
-e-techmaster.com$inline-script
+e-techmaster.com$inline-script  # "ADBLOCK DETECTED"
 
 ethplorer.io$3p  # "Ethereum Tokens Explorer"
 
@@ -7573,8 +7567,7 @@ flipup.ru###footerLine:style(position:static !important)
 flipup.ru##.fixContainer:style(position:static !important)
 flipup.ru##.brandImage
 
-! the site turns white until loading tracking scripts
-flirc.tv$inline-script
+flirc.tv$inline-script  # the site turns white until loading tracking scripts
 
 flot.com##.button-attach
 
@@ -7687,8 +7680,7 @@ fractal-design.com##.c-product-menu:style(position:static !important)
 
 freebsdnews.com###sidebar
 
-! "Adblocker detected"
-freeccnaworkbook.com$inline-script
+freeccnaworkbook.com$inline-script  # "Adblocker detected"
 
 ||freecram.com/imgs/adts.png
 ||freecram.com/imgs/downpdf.png
@@ -7897,8 +7889,7 @@ gemotest.ru##video
 
 seal.geotrust.com$3p
 
-! site breaks copypaste
-germania.one$inline-script
+germania.one$inline-script  # site breaks copypaste
 germania.one###header-right-sidebar
 ||clients-cdnnow.ru/*/logo-germania.jpg
 germania.one##.code-block
@@ -9055,9 +9046,9 @@ ikea.com##li.footer__horizontal-list-item--social
 ikea.com###hnf-header-filler
 ikea.com##.hnf-svg-icon--social
 
+ilike.guru$inline-script  # site blocks copypaste
+! top
 ilike.guru##.site-navigation-fixed.fixed:style(position:static !important)
-! site blocks copypaste
-ilike.guru$inline-script
 ! other
 ilike.guru##.entry-meta
 
@@ -9209,14 +9200,12 @@ inoreader.com##.inno_dialog_modal_overlay
 inoreader.com##.landing_input_social_login.landing_input_box > .landing_sign_social_buttons
 inoreader.com##.tree_announce
 
-! site breaks copypaste
-inpearls.ru$inline-script
+inpearls.ru$inline-script  # site breaks copypaste
 
 ! insales.ru
 ||insales.ru/assets/1/2419/1182067/1554062301/flowers.gif
 kladr.insales.ru/current_location.json
-! is in EasyPrivacy
-/insales_counter.
+/insales_counter.  # is in EasyPrivacy
 
 insantex.ru##.advantages-row.row
 
@@ -10678,9 +10667,8 @@ letovmeste.ru###a2g-header
 letovmeste.ru###jv-inset
 letovmeste.ru##.jv-spotlight
 
-! breaks copypaste
-liberatum.ru$script
-liberatum.ru$inline-script
+liberatum.ru$inline-script  # site breaks copypaste
+liberatum.ru$script  # site breaks copypaste
 
 ||libfox.ru/templates/libfox/images/gazon2.png
 ||libfox.ru/templates/libfox/images/no_cover-min.png
@@ -11249,9 +11237,8 @@ makeuseof.com##.browse-clip:has(a[href="/category/sponsored/"])
 blog.malwarebytes.com##body > .hidden-xs
 
 mamalife24.ru$inline-script  # site breaks copypaste
-! other
-mamalife24.ru###masthead
 ||mamalife24.ru/*/fon-kopippya.jpg
+mamalife24.ru###masthead
 
 mamotvet.ru###branding
 
@@ -11659,8 +11646,7 @@ microdev.it###site-header
 microfocus.com###logo_container
 microfocus.com##.navbar-brand-link
 
-! some script AdBlock blocker
-mignews.com.ua$inline-script
+mignews.com.ua$inline-script  # some script AdBlock blocker
 
 mikecareyau.com###branding
 
@@ -12673,6 +12659,8 @@ notepad-plus-plus.org##.intro-and-nav:style(height:auto !important)
 
 sergey-s-betke.blogs.csm.nov.ru###cih
 
+!push ads scripts
+!novayagazeta.ru$inline-script - don't block all inline scripts
 novayagazeta.ru##div:matches-css(position:fixed)
 !social icons column
 novayagazeta.ru##div:matches-css(width:60px)
@@ -12684,8 +12672,6 @@ novayagazeta.ru##[class^=Preloader]
 !jumping header and background
 novayagazeta.ru###headerForAdditionalAds:style(position:absolute !important; transform:none !important)
 novayagazeta.ru##div:style(background-position:center 0px !important)
-!push ads scripts
-!novayagazeta.ru$inline-script - don't block all inline scripts
 
 novoebutovo.com###logodesc
 
@@ -13854,8 +13840,7 @@ pixelplus.ru##.px-banners
 pixelplus.ru##.samostoyatelno_banner
     ! other
 
-! site changes copied text
-pix-feed.com$inline-script
+pix-feed.com$inline-script  # site changes copied text
 ! unstick header
 pix-feed.com##.html_header_top:style(position:static !important)
 pix-feed.com##.html_header_sticky:style(position:static !important)
@@ -14374,8 +14359,7 @@ chat.c.prom.st
 prom.ua##div[class^=besida-bubbleButton]
 prom.ua##.x-footer-extra
 
-! site blocks copypaste. 
-promislovik.info$inline-script
+promislovik.info$inline-script  # site blocks copypaste 
 ! header
 promislovik.info###masthead
 promislovik.info##.loader-bg
@@ -15673,8 +15657,7 @@ santech-nika.ru##.specials.box
 santech-nika.ru##.new-products.box
 santech-nika.ru##.bestsellers.box
 
-! "var newTxt = "<<<! Вам пришло 29 новых личных сообщений !>>>";"
-santechniki.com$inline-script
+santechniki.com$inline-script  # "var newTxt = "<<<! Вам пришло 29 новых личных сообщений !>>>";"
 santechniki.com##.luk
 santechniki.com###description2 > p
 santechniki.com##h1
@@ -15778,8 +15761,7 @@ saradmin.ru##center
 sarducd.it###testata:style(position:static !important)
 sardu.pro###testata:style(position:static !important)
 sardu.pro##.div_offerta_giallo
-! site breaks copypaste
-!sardu.pro$inline-script
+!sardu.pro$inline-script  # site breaks copypaste
 
 forum.sarhunter.ru##.notice
 
@@ -16345,8 +16327,7 @@ solidfiles.com##.remove
 solowayfamily.ru##.owl-carousel
 solowayfamily.ru##.company--logo
 
-! site is breaking copypaste
-solutionsuggest.com$inline-script
+solutionsuggest.com$inline-script  # site is breaking copypaste
 solutionsuggest.com##body:style(-moz-user-select:text !important; -webkit-user-select:text !important;)
 
 sonichits.com##body:style(display:block !important)
@@ -17019,8 +17000,7 @@ svoboda.org##.banner
 svoboda.org##.banner__a
     ! other
 
-!script there disables onselectstart. Bad practice, uncomfortable.
-||svoizabor.ru/$inline-script
+||svoizabor.ru/$inline-script  # script there disables onselectstart. Bad practice, uncomfortable.
 
 svyaznoy.ru##.s-button-top.b-button-top
 svyaznoy.ru##.s-header:style(position:static !important)
@@ -17159,8 +17139,7 @@ tarifkin.ru##.active.button-test:style(position:static !important)
 tass.ru##.news-feed-column:style(position:absolute !important)
 tass.ru##.footer-action-buttons
 
-! site shows "Adblock" message
-taste-of-it.de$inline-script
+taste-of-it.de$inline-script  # site shows "Adblock" message
 !taste-of-it.de##.quads-modal
 ! other
 taste-of-it.de###masthead.site-header
@@ -18010,10 +17989,8 @@ trubamaster.ru##.widget-title:has-text(Реклама)
 
 trubanet.ru##.td-ss-main-sidebar
 
-!annoying gif favicon
-||trubarik.ru/favicon.ico
-! site blocks copypaste
-trubarik.ru$inline-script
+||trubarik.ru/favicon.ico  # annoying gif favicon
+trubarik.ru$inline-script  # site blocks copypaste
 ! other
 ||trubarik.ru/*/scripts.js
 
@@ -19089,8 +19066,8 @@ vseprost.ru##.ez-toc-list
 
 vseprotruby.ru##.widget_featured_posts.widget_breaking_news_colormag.widget
 
-vse-shutochki.ru##div > [href="/"]
 vse-shutochki.ru$script  # site breaks copypaste
+vse-shutochki.ru##div > [href="/"]
 
 vsesorta.ru###homePageMainSlider
 vsesorta.ru##.sidebar__users
