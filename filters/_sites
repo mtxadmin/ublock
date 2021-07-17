@@ -2728,6 +2728,8 @@ tarif-24.ru##.mh-ticker-bottom
 /advanced-hooks-sticky-header
 /carbon_sticky.js
 /carbon_sticky_ads.js
+/hc-sticky/*
+/hc-sticky.min.js
 /jquery.sticky/*
 /jquery.sticky.js$important
 /jquery.sticky.min.js
@@ -3805,6 +3807,10 @@ anekdotov.net$inline-script  # site breaks copypaste
 anekdotov.net##.toptbl
 
 anekdotovmir.ru###header-img
+
+anews.com##.sticky-container__container:style(position:static !important)
+anews.com##div.sticky-container:style(position:static !important)
+anews.com##.btn-readmore
 
 angelov.su##.emotion_block
 angelov.su##.needLogin
@@ -6601,6 +6607,34 @@ dronomania.ru##.header__text
 ! DriverPack
 ! is in Ru AdList. Ok, I don't like it too.
 drp.su
+
+! is in EasyList
+drtuber.com##.title-sponsored
+! is in EasyList
+drtuber.com##.spots
+! is in uBlock filters
+drtuber.*##.item_spots
+! is in Adguard and EasyList
+drtuber.com##.drt-spot-box
+! is in uBlock filters
+drtuber.*##.fh.heading
+! is in Adguard
+drtuber.com##.aside_panel_video > .heading.fh
+! is in Adguard
+drtuber.com##.abtext
+! is in Adguard
+drtuber.com###abmessage
+! uBlock filters rule
+drtuber.*##+js(window.open-defuser)
+! Adguard rule
+drtuber.*##+js(abort-current-inline-script, TRAFF_TARGETS)
+! is in uBlock filters
+drtuber.*##.f_width.footer > .item_box
+! is in Adguard
+drtuber.com##.footer > .item_box > .container > .holder
+drtuber.com##.sorting_item_bar
+drtuber.com##.ID_live_cam_inner
+drtuber.com##.livebox_item
 
 ! from EasyPrivacy
 ||drupal.org/vnpbbfwe/
@@ -9772,6 +9806,7 @@ kamo-uniforma.ru##.up-button-block
 kamo-uniforma.ru##.bx_catalog_item_images:has(img[src*="/no_photo."])
 kamo-uniforma.ru##.bx_item_list_you_looked_horizontal
 kamo-uniforma.ru##.bx_catalog_item:style(height:auto !important)
+kamo-uniforma.ru##.bx_item_list_recommended
 
 kamuflage.ru##.actions
 kamuflage.ru##.ico-pays
@@ -10325,6 +10360,10 @@ krutimotor.ru##.form-resultexpert_plag
 
 ksamolet.ru$inline-script  # site blocks copypaste
 ksamolet.ru##.author
+
+||kuban.ru/img/*.gif
+||kuban.ru/img/topnews.png
+kuban.ru##.above_postlist
 
 kubernetes.io###announcement
 kubernetes.io###fp-announcement
@@ -12333,6 +12372,8 @@ nag.ru##.develop
 nakanune.ru##.adv-youdo
 nakanune.ru##._block-banner
 nakanune.ru##.p18
+nakanune.ru##.rightCol-header
+nakanune.ru##.logoBlock
 
 naked-science.ru##.notification-counter
 naked-science.ru##.select-current
@@ -12668,6 +12709,7 @@ nme.com##.td-scroll-up
 ||nme.com/*/logo-
 
 nn.ru##.topic-arrows__arrow
+nn.ru##.invitation
 
 nndv.ru###logobar
 nndv.ru###votesPanel
@@ -12764,6 +12806,8 @@ nozhikov.ru##.insta_widget
 nozhikov.ru##.footer_vk
 nozhikov.ru##.footer_insta
 nozhikov.ru##.subscribe-wrap
+nozhikov.ru##.ya_credit
+nozhikov.ru##.footer_fire_info
 
 nplus1.ru###latest:style(position:static !important)
 nplus1.ru##.article-footer
@@ -15855,6 +15899,9 @@ sardu.pro##.div_offerta_giallo
 
 forum.sarhunter.ru##.notice
 
+saro-knives.ru##.site-header-constraint
+saro-knives.ru##.top-contacts__forms
+
 sas4.ru##.menu-fixed:style(position:static !important)
 sas4.ru###sp-top-bar
 
@@ -16186,6 +16233,8 @@ shotgun.com.ua##.header_mini
 ad1.sibnet.ru  # from Ru AdList
 sibnet.ru##[class*="head_v3__logo"]
 sibnet.ru##.bu
+
+sibreal.org##.hdr-20__inner:style(position:static !important)
 
 sid-500.com##.footer-wrap
 
@@ -17255,6 +17304,10 @@ tdbaikal.ru##.sub_ico
 
 tdnu.ru##.sticky-content:style(position:static !important)
 tdnu.ru##.l-news-detail > .row
+tdnu.ru$script,3p  # Ru AdList rule: *$script,3p,domain=tdnu.ru
+||tdnu.ru/include/footer/logo1.png
+tdnu.ru##.b-footer-widget__socials
+tdnu.ru##.l-section__bottom
 
 tdpresto.ru##.phone2
 
@@ -21083,61 +21136,5 @@ womanhit.ru##.ring-rating
 womanhit.ru##.ring
 womanhit.ru##.info__counter
 
-||kuban.ru/img/*.gif
-||kuban.ru/img/topnews.png
-kuban.ru##.above_postlist
-
-anews.com##.sticky-container__container:style(position:static !important)
-anews.com##div.sticky-container:style(position:static !important)
-anews.com##.btn-readmore
-
-nakanune.ru##.rightCol-header
-nakanune.ru##.logoBlock
-
-nn.ru##.invitation
-
-kamo-uniforma.ru##.bx_item_list_recommended
-
-nozhikov.ru##.ya_credit
-nozhikov.ru##.footer_fire_info
-
-saro-knives.ru##.site-header-constraint
-saro-knives.ru##.top-contacts__forms
-
-*$script,3p,domain=tdnu.ru  # Ru AdList rule
-
-sibreal.org##.hdr-20__inner:style(position:static !important)
-
 ibrahimsolimanblog.wordpress.com##.home-link
-
-! is in EasyList
-drtuber.com##.title-sponsored
-! is in EasyList
-drtuber.com##.spots
-! is in uBlock filters
-drtuber.*##.item_spots
-! is in Adguard and EasyList
-drtuber.com##.drt-spot-box
-! is in uBlock filters
-drtuber.*##.fh.heading
-! is in Adguard
-drtuber.com##.aside_panel_video > .heading.fh
-! is in Adguard
-drtuber.com##.abtext
-! is in Adguard
-drtuber.com###abmessage
-! uBlock filters rule
-drtuber.*##+js(window.open-defuser)
-! Adguard rule
-drtuber.*##+js(abort-current-inline-script, TRAFF_TARGETS)
-! is in uBlock filters
-drtuber.*##.f_width.footer > .item_box
-! is in Adguard
-drtuber.com##.footer > .item_box > .container > .holder
-drtuber.com##.sorting_item_bar
-drtuber.com##.ID_live_cam_inner
-drtuber.com##.livebox_item
-
-/hc-sticky/*
-/hc-sticky.min.js
 
