@@ -4369,18 +4369,23 @@ baby.ru##.footer__socials-links
 ||baby.ru/static/app/$image
 baby.ru##.l-footer__age
 
-! polls
-babyblog.ru##.bb-interview
-babyblog.ru##.js-interview
-! header
-babyblog.ru##.bb-header-container:style(position:static !important)
-babyblog.ru##.svg-preloader
-! footer
-babyblog.ru##.footer-menu-special
-babyblog.ru##.footer-sl-age
-! other
 ||babyblog.ru/*/bb_texture_sm.png
 ||babyblog.ru/admenu  # json ad menu
+    ! polls
+babyblog.ru##.bb-interview
+babyblog.ru##.js-interview
+    ! header
+babyblog.ru##.bb-header-container:style(position:static !important)
+babyblog.ru##.svg-preloader
+    ! footer
+babyblog.ru##.bottom-sheet:style(position:static !important)
+babyblog.ru##.footer-menu-special
+babyblog.ru##.footer-sl-age
+    ! other
+babyblog.ru##.adults-only
+! override rules, don't work. Ok. Exclusions were made in general rule
+!babyblog.ru#@#.main-content-with-ad
+!babyblog.ru#@#.main-content-with-ad__main-content
 
 backblaze.com##.nav-primary
 
@@ -11944,8 +11949,10 @@ m-jedi.ru##h6
 m-jedi.ru##.recentcomments
 
 mk.ru##.header__fixed:style(position:static !important)
+mk.ru##.ring
 mk.ru##.ring__age-rating
 mk.ru##.footer__legal-information
+mk.ru##.additional
 
 mkr-rodniki.ru##body > table:nth-of-type(1)
 mkr-rodniki.ru##[href*="http://goo.gl/"]
@@ -13030,12 +13037,16 @@ ohotnik50.ru##.js-oco-inline
 ||ohotniki.ru/i/header_fon.jpg
 ||ohotniki.ru/i/menu_top_fon.gif
 ||ohotniki.ru/i/editions-banner.png
-ohotniki.ru##noindex
-ohotniki.ru##.editions-link
+    ! top
 ohotniki.ru###header
 ! Adguard rule
 ohotniki.ru##.rb_header:has(:scope > form[action^="https://subscribe.ru/"])
 ohotniki.ru###ring
+    ! "offline"
+ohotniki.ru##.author > span
+ohotniki.ru##noindex
+ohotniki.ru##.editions-link
+    ! other
 
 ||ohotnik-kolomna.ru/img/grass.png
 ||ohotnik-kolomna.ru/img/hunter.png
@@ -15160,6 +15171,8 @@ rg.ru##.b-ads
 rg.ru##.b-favourites-sources__list
 ! is in Adguard
 rg.ru##rg-share
+rg.ru##.b-vendors__wrap
+rg.ru##.b-vendors
 
 rgblog.ru##.header
 rgblog.ru##.mso-randomtext_widget
@@ -19694,6 +19707,12 @@ womanadvice.ru###credits
 womanadvice.ru##.logohref
 womanadvice.ru##.frontright
 
+womanhit.ru##.header-panel__rt
+womanhit.ru##.ya
+womanhit.ru##.ring-rating
+womanhit.ru##.ring
+womanhit.ru##.info__counter
+
 wondershare.com##.fix_side_togg
 
 ||woodh.ru/assets/templates/woodh/images/woodh-bg.jpg
@@ -20106,6 +20125,7 @@ yaplakal.com##tr.collapsebox > td.darkrow3
 yarea.ru##.bbc_link
 ||yarea.ru/images/18plus.gif
 
+||yavitrina.ru/context.js
 yavitrina.ru##.rating
 
 ! do not block yclients.com entirely. Only their widget, it looks like call consultants button
@@ -21124,26 +21144,3 @@ compumir.ru##.item_delivery
 compumir.ru##.tocard
 compumir.ru##.s-home-shop-btn
 
-||yavitrina.ru/context.js
-
-! "offline"
-ohotniki.ru##.author > span
-! other
-
-mk.ru##.ring
-mk.ru##.additional
-
-babyblog.ru##.bottom-sheet:style(position:static !important)
-babyblog.ru##.adults-only
-! override rules, don't work. Ok. Exclusions were made in general rule
-!babyblog.ru#@#.main-content-with-ad
-!babyblog.ru#@#.main-content-with-ad__main-content
-
-rg.ru##.b-vendors__wrap
-rg.ru##.b-vendors
-
-womanhit.ru##.header-panel__rt
-womanhit.ru##.ya
-womanhit.ru##.ring-rating
-womanhit.ru##.ring
-womanhit.ru##.info__counter
