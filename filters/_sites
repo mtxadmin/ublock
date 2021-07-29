@@ -5334,6 +5334,9 @@ championat.com##.footer-icons
 championat.com##a[href*="bet.championat.com"]
 championat.com##.header-bottom__item:has-text(ставкам)
 
+chargebackblog.ru$inline-script  # site breaks copypaste
+chargebackblog.ru##.form-wrapper
+
 charlifox.ru###logo_desc_new
 
 chartio.com##.tutorial-toc__wrapper
@@ -5367,6 +5370,8 @@ cheatography.com##.triptych3
 ! this is just testing service. No need to block them specially
 checkadblock.ru#@#object,embed
 ||checkadblock.ru^$document,csp=script-src 'self',badfilter
+
+checko.ru##.uk-sticky-fixed.uk-sticky:style(position:static !important)
 
 cheholgun.ru##.fly-panel
 
@@ -5413,6 +5418,12 @@ chipdip.ru##.top-box-fixed:style(position:static !important)
 chipmk.ru###header
 
 chitai-gorod.ru##.footer-section_subscribe
+
+||chubbydeveloper.com/*/chubby-developer-logo-w.png
+chubbydeveloper.com##.elementor-widget-html
+chubbydeveloper.com##.elementor-widget-wrap:has-text(/newsletter/i)
+chubbydeveloper.com##.elementor-button-content-wrapper
+chubbydeveloper.com##.elementor-button
 
 chuchalka.ru##.s_name
 ||chuchalka.ru/images/n.jpg
@@ -5663,6 +5674,13 @@ comparitech.com##b > i:has-text(legal)
 comparitech.com##.sticky_widget:style(position:static !important)
 
 ||compendium.com/*/database_blog_header.jpg
+
+||compumir.ru/*/icon-like.png
+! hover popups
+compumir.ru##.item_delivery
+! other
+compumir.ru##.tocard
+compumir.ru##.s-home-shop-btn
 
 computerinfo.ru###one
 computerinfo.ru###masthead
@@ -6438,6 +6456,8 @@ dobrovdome.ru##.footer-mooza
 docdoc.ru##.thirty-seconds-banner
 docdoc.ru##.adaptive-page__top-container:style(position:static !important)
 docdoc.ru##[class^=index__form]
+docdoc.ru$third-party  # docdoc
+sberhealth.ru$third-party  # docdoc
 
 dochkisinochki.ru##.top-panel-fix:style(position:static !important)
 dochkisinochki.ru##.popup_tip
@@ -6915,6 +6935,11 @@ edsro.center,advanced-trainings.ru##.owl-stage
 e-du.ru##.content-inner:style(background:none !important)
 e-du.ru##.titlewrapper
 e-du.ru##i > span:has-text(поставьте лайк)
+
+! top
+education-wiki.com###close-sidebar-nav
+education-wiki.com###sidebar-nav
+! other
 
 educba.com###topdiv
 educba.com###banner_1
@@ -21198,13 +21223,6 @@ kalmstrom.com##.header_img
 
 ||nakanune.ru/count/img.php
 
-||compumir.ru/*/icon-like.png
-! hover popups
-compumir.ru##.item_delivery
-! other
-compumir.ru##.tocard
-compumir.ru##.s-home-shop-btn
-
 /[0-9a-f]{32}\/invoke\.js$/$script,3p  # uBlock filters rule
 
 &action=js_stats&  # EasyPrivacy rule
@@ -21217,23 +21235,4 @@ metacritic.com###primary_nav_wrapper
 suse.com###global-notification
 suse.com##.header-end-line
 suse.com###sstories-plain
-
-docdoc.ru$third-party  # docdoc
-sberhealth.ru$third-party  # docdoc
-
-||chubbydeveloper.com/*/chubby-developer-logo-w.png
-chubbydeveloper.com##.elementor-widget-html
-chubbydeveloper.com##.elementor-widget-wrap:has-text(/newsletter/i)
-chubbydeveloper.com##.elementor-button-content-wrapper
-chubbydeveloper.com##.elementor-button
-
-! top
-education-wiki.com###close-sidebar-nav
-education-wiki.com###sidebar-nav
-! other
-
-chargebackblog.ru$inline-script  # site breaks copypaste
-chargebackblog.ru##.form-wrapper
-
-checko.ru##.uk-sticky-fixed.uk-sticky:style(position:static !important)
 
