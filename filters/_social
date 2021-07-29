@@ -221,9 +221,11 @@ facebook.com##div:matches-css(position:fixed):style(position:static !important)
 !
     ! popups
 vk.com##.box_body:has(.vk_connect_policy_notice_box)
-vk.com###box_layer_wrap
-vk.com###box_layer_bg
+! vk.com###box_layer_wrap  # test remove 2020-07
+!vk.com###box_layer_bg  # test remove 2020-07
 !vk.com##.scroll_fix_wrap - don't, that's not
+! is in Ru AdList and Adguard
+vk.com###cookies_policy_wrap
     ! share scripts and buttons
 ! here will be some exclusion sites, yes
 ! Ru Adlist and Fanboy's rule
@@ -279,8 +281,8 @@ vk.com##.OldBrowser
 vk.com##+js(set-constant, noAdsAtAll, true)
 ! is in AdGuard
 vk.com###ads_left
-vk.com###bottom_nav
-vk.com###index_footer_wrap
+! vk.com###bottom_nav  # test remove 2020-07
+! vk.com###index_footer_wrap  # test remove 2020-07
 vk.com###layer_bg
 ! is in AdGuard and EasyList
 vk.com###system_msg
