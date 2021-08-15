@@ -20455,14 +20455,18 @@ yourselfbranding.com##.popup-client
 yoursunny.com##.site-header-title
 yoursunny.com##.site-header-subtitle
 
+    ! telemetry
 ||youtube.com/api/stats/$important  # disable exceptions
+||youtube-nocookie.com/api/stats/$important  # is in EasyPrivacy
 ||youtube.com/youtubei/v1/notification/get_unseen_count
+||youtube-nocookie.com/ptracking$important  # is in EasyPrivacy
 ! ||youtube.com/yts/cssbin/ - it is css, don't block!
 /csi_204*  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
 /generate_204  # from EasyList
 /youtubei/v1/log_event  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
 ||youtube.com/get_midroll_  # from EasyList
 ||youtube.com/error_  # and my too
+    ! 
 ! https://pikabu.ru/story/vsplyivayushchie_bloki_na_youtube__otklyuchaem_6660774
 !youtube.com##.ytp-pause-overlay.ytp-scroll-min
 ! from AdGuard & Fanboy's
