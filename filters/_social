@@ -377,8 +377,10 @@ vk.com##.TopHomeLink
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-! is in AdGuard
+! is in Adguard
 ~votesmart.appspot.com##a[href^="https://connect.ok.ru/offer?url="]
+! is in Adguard
+##a[href^="http://connect.ok.ru/offer?url="]
 !todo: blocking window
 !ok.ru##.media-layer_close_ovr
 !ok.ru###mtLayer
@@ -392,6 +394,9 @@ vk.com##.TopHomeLink
     !splav.ru##.ok
     !torex.ru##.ok
 ##.ok_icon
+ok.ru##[class*=__second_line_for_social]
+ok.ru##[class*=__landing__]
+ok.ru##[class*=modal-layer__]
 
 
 
@@ -1898,9 +1903,6 @@ socauth.privatbank.ua
 ##.t-sociallinks__svg
 
 ##.flikes
-
-! is in Adguard
-##a[href^="http://connect.ok.ru/offer?url="]
 
 ! is in Fanboy's
 ##.post_share
