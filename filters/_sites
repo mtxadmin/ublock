@@ -20522,64 +20522,64 @@ yoursunny.com##.site-header-subtitle
 ||youtube.com/error_  # and my too
     ! 
 ! https://pikabu.ru/story/vsplyivayushchie_bloki_na_youtube__otklyuchaem_6660774
-!youtube.com##.ytp-pause-overlay.ytp-scroll-min
-! from AdGuard & Fanboy's
-youtube.com##.ytp-pause-overlay
+!youtube.com,youtube-nocookie.com##.ytp-pause-overlay.ytp-scroll-min
+! from Adguard & Fanboy's, modified
+youtube.com,youtube-nocookie.com##.ytp-pause-overlay
 ! is in Ru AdList and Fanboy's. Needs recheck.
-!youtube.com###player .ytp-pause-overlay
+!youtube.com,youtube-nocookie.com###player .ytp-pause-overlay
 ! top banners
-youtube.com##.banner-visible-area
+youtube.com,youtube-nocookie.com##.banner-visible-area
 ! banners. Update: don't block, it is overlay for videos too
-!youtube.com##.ytp-cued-thumbnail-overlay
+!youtube.com,youtube-nocookie.com##.ytp-cued-thumbnail-overlay
 ! paid films
-youtube.com##ytd-movie-renderer
-youtube.com##.ytp-ce-covering-overlay
-youtube.com##.ytp-ce-element-shadow
-youtube.com##.ytp-ce-covering-image
-youtube.com##.ytp-ce-expanding-image
-youtube.com##.ytp-ce-element.ytp-ce-channel.ytp-ce-channel-this.ytp-ce-element-show.ytp-ce-bottom-right-quad.ytp-ce-size-640
-youtube.com##.ytp-ce-element.ytp-ce-video.ytp-ce-element-show
-! is in AdGuard
-youtube.com##.ytp-paid-content-overlay
+youtube.com,youtube-nocookie.com##ytd-movie-renderer
+youtube.com,youtube-nocookie.com##.ytp-ce-covering-overlay
+youtube.com,youtube-nocookie.com##.ytp-ce-element-shadow
+youtube.com,youtube-nocookie.com##.ytp-ce-covering-image
+youtube.com,youtube-nocookie.com##.ytp-ce-expanding-image
+youtube.com,youtube-nocookie.com##.ytp-ce-element.ytp-ce-channel.ytp-ce-channel-this.ytp-ce-element-show.ytp-ce-bottom-right-quad.ytp-ce-size-640
+youtube.com,youtube-nocookie.com##.ytp-ce-element.ytp-ce-video.ytp-ce-element-show
+! is in Adguard
+youtube.com,youtube-nocookie.com##.ytp-paid-content-overlay
 ! don't disable .ytd-popup-container - that is used not only for popups, but for interface buttons too.
-!youtube.com##.ytd-popup-container.style-scope.dropdown-content
-!youtube.com##.ytd-popup-container
+!youtube.com,youtube-nocookie.com##.ytd-popup-container.style-scope.dropdown-content
+!youtube.com,youtube-nocookie.com##.ytd-popup-container
 ! is in Fanboy's
-youtube.com##.ytp-title-channel
+youtube.com,youtube-nocookie.com##.ytp-title-channel
 ! from uBlock filters
-!youtube.com##+js(json-prune, adPlacements)
+!youtube.com,youtube-nocookie.com##+js(json-prune, adPlacements)
 ! is in Ru AdList, AdGuard and Fanboy's
 ##.ytp-share-button
 ! is in EasyList
 ##.ytp-ad-progress-list
-youtube.com###merch-shelf
-! is in Ru AdList and AdGuard
-youtube.com###offer-module
-! is in AdGuard
-youtube.com##.video-annotations
+youtube.com,youtube-nocookie.com###merch-shelf
+! is in Ru AdList and Adguard
+youtube.com,youtube-nocookie.com###offer-module
+! is in Adguard
+youtube.com,youtube-nocookie.com##.video-annotations
 ! is in Ru AdList, Fanboy's, AdGuard
-youtube.com##.annotation.iv-branding
+youtube.com,youtube-nocookie.com##.annotation.iv-branding
 ! from uBlock filters
-!youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+!youtube.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 ! is in EasyList
-youtube.com##.ytp-ad-progress-list
+youtube.com,youtube-nocookie.com##.ytp-ad-progress-list
 ! 2020-08: videos sometimes were black. I didn't find the cause, so here is workaround
-youtube.com##.html5-video-player:style(position:static !important; overflow:hidden !important)
-youtube.com##.html5-video-container:style(position:static !important; overflow:hidden !important)
-youtube.com##.ytp-iv-video-content:style(position:static !important; overflow:hidden !important)
+youtube.com,youtube-nocookie.com##.html5-video-player:style(position:static !important; overflow:hidden !important)
+youtube.com,youtube-nocookie.com##.html5-video-container:style(position:static !important; overflow:hidden !important)
+youtube.com,youtube-nocookie.com##.ytp-iv-video-content:style(position:static !important; overflow:hidden !important)
 !
-youtube.com#@#.video-annotations
-youtube.com#@#[class*="-ad-"]
+youtube.com,youtube-nocookie.com#@#.video-annotations
+youtube.com,youtube-nocookie.com#@#[class*="-ad-"]
 ! teaser mini-popups. Attention: do not generalize rules as [class*=teaser], added exclusion for youtube.com there
-youtube.com##.ytp-cards-teaser-box
-youtube.com##.ytp-cards-teaser-text
+youtube.com,youtube-nocookie.com##.ytp-cards-teaser-box
+youtube.com,youtube-nocookie.com##.ytp-cards-teaser-text
 ! subs mini-popups.
-youtube.com##.ytp-ce-expanding-overlay
+youtube.com,youtube-nocookie.com##.ytp-ce-expanding-overlay
 ! Icon "i" in top-right corner
-youtube.com##.ytp-cards-button-icon
+youtube.com,youtube-nocookie.com##.ytp-cards-button-icon
 ! Cookies consent popup
-youtube.com##.ytd-consent-bump-v2-lightbox
-youtube.com##.opened
+youtube.com,youtube-nocookie.com##.ytd-consent-bump-v2-lightbox
+youtube.com,youtube-nocookie.com##.opened
 
 ypapa.ru##.fake
 ypapa.ru##.yp-consult
