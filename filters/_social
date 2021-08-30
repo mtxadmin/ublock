@@ -50,7 +50,7 @@ _facebook_icon.  # from Fanboy's and Ru AdList
 /soc_facebook.svg
 _social_fb.  # from Fanboy’s
 ||facebook.com/audiencenetwork/$third-party  # from EasyList
-||facebook.com/plugins/$important,domain=~facebook.com|~fb.com|~freepresets.com  # from AdGuard Social Media
+||facebook.com/plugins/$important,domain=~facebook.com|~fb.com|~freepresets.com  # from Adguard Social Media
 ||facebook.com/tr?$important
 !
 ! cosmetic filters
@@ -65,11 +65,11 @@ _social_fb.  # from Fanboy’s
 ~facebook.com##a[href^="https://www.facebook.com/share.php"]
 ! is in Ru AdList and Fanboy's
 ~facebook.com##a[href^="http://www.facebook.com/sharer.php"]
-! is in AdGuard
+! is in Adguard
 ~facebook.com,~votesmart.appspot.com##a[href^="http://www.facebook.com/sharer.php?"]
-! from AdGuard and Fanboy's
+! from Adguard and Fanboy's
 ~facebook.com,~votesmart.appspot.com##a[href^="https://www.facebook.com/sharer/sharer.php"]
-! from AdGuard
+! from Adguard
 ~facebook.com,~votesmart.appspot.com##a[href^="https://www.facebook.com/sharer.php"]
 ! from Fanboy's
 ~facebook.com,~votesmart.appspot.com##a[href^="https://www.facebook.com/sharer.php?"]
@@ -81,7 +81,7 @@ _social_fb.  # from Fanboy’s
 ##a[onclick^="window.open('//www.facebook.com/sharer.php"]
 ! is in RU AdList
 ~facebook.com##a[onclick*="facebook.com/sharer.php?"]
-! is in AdGuard
+! is in Adguard
 ~facebook.com##a[onclick^="window.open('https://www.facebook.com/sharer.php"]
 ! is in Fanboy's
 ##.facebook.icon
@@ -91,7 +91,7 @@ _social_fb.  # from Fanboy’s
 ~belarus2020.org##.fa-facebook-f
 ! is in Ru AdList and Fanboy's
 ##iframe[src*="//www.facebook.com/plugins/like.php?"]
-! from AdGuard, modified
+! from Adguard, modified
 ||facebook.com/*/plugins/$domain=~facebook.com|~fb.com,important
 ~facebook.com,~fb.com##[class*="Facebook"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id*="Facebook"]:not(html):not(body):not(article)
@@ -116,15 +116,17 @@ _social_fb.  # from Fanboy’s
     ~belarus2020.org##.fb
     ! is in 3 lists
     ##.fb-like
-    ! is in AdGuard and Fanboy's
+    ! is in Adguard and Fanboy's
     ##.fb-like-box
     ! from Fanboy's
     ##.fb-xfbml-parse-ignore
-    ! from AdGuard and Fanboy's
+    ! from Adguard and Fanboy's
     ##.fb-page
-    ! from AdGuard
-    ###fb-root:not(body):not(html)
 ~facebook.com,~fb.com,~aliexpress.com,~alfamiles.com,~microsoft.com##[id^="fb"]:not(html):not(body):not(article)
+    ! is in Ru AdList and Fanboy's
+    ###fb_icon
+    ! from Adguard
+    ###fb-root:not(body):not(html)
 ~facebook.com,~fb.com,~alfamiles.com##[class*="-fb"]:not(html):not(body):not(article):not([class^=css-fb])
 ~facebook.com,~fb.com,~alfamiles.com##[id*="-fb"]:not(html):not(body):not(article)
     ! is in Fanboy's
@@ -148,9 +150,13 @@ facebook.com,facebookcorewwwi.onion#$#body > .AdBox.Ad.advert { display:block!im
 ! exclusions end
 ##.facebook
 ! from Fanboy's
+##a[title="Facebook"]
+! from Fanboy's
 ##img[alt="Facebook"]
 ! is in Web Annoyances Ultralist
 ##.icon-facebook
+! is in 3 lists
+##.share-facebook
 ##.td-icon-facebook
 facebook.com##._3ob9
 facebook.com###mobile_login_bar
@@ -210,8 +216,8 @@ facebook.com##div:matches-css(position:fixed):style(position:static !important)
 ||vk.com/js/cmodules/web/notifier$third-party
 ||vk.com/dist/web/jobs_devtools_notification  # spam to console
 ||vk.com/rtrg?  # from EasyPrivacy
-||vk.com/share.php$third-party  # from AdGuard
-||vk.com/widget_$domain=~vk.com,important  # modified filter from AdGuard
+||vk.com/share.php$third-party  # from Adguard
+||vk.com/widget_$domain=~vk.com,important  # modified filter from Adguard
 ||vk.com/widget_comments.php$domain=~vk.com,important
 ||vk.com/widget_community.php$domain=~vk.com,important
 !
@@ -232,21 +238,23 @@ vk.com###cookies_policy_wrap
 ##a[onclick^="window.open('http"][onclick*="://vk.com/share.php?"]
 ! from Fanboy's
 ##a[href^="//vk.com/share.php?"]
-! from AdGuard
+! from Adguard
 ##a[href^="//vk.com/share.php"]
 ! also, is in Fanboy's (maybe duplicate)
 ##a[href^="http://vk.com/share.php?"]
-! is in AdGuard
+! is in Adguard
 ~votesmart.appspot.com##a[href^="https://vk.com/share.php"]
 ! from Fanboy's
 ~votesmart.appspot.com##a[href^="https://vk.com/share.php?"]
-! is in AdGuard
+! is in Adguard
 ##a[href^="http://vkontakte.ru/share.php"]
 ! is in Ru AdList and Fanboy's
 ##a[href^="http://vkontakte.ru/share.php?"]
-! is in AdGuard. Old domain but suprisingly still actual and working in 2020
+! is in Adguard. Old domain but suprisingly still actual and working in 2020
 ##a[href^="https://vkontakte.ru/share.php"]
     ! browser popups
+! from Fanboy's
+##a[title="ВКонтакте"]
 ! is in Adguard
 vk.com##.OldBrowser
 ||vk.com/badbrowser_stat
@@ -257,7 +265,7 @@ vk.com##.OldBrowser
 ##div[id^="vk_comments"]
 ! is in Ru AdList
 ##div[id^="vk_group"]
-! from AdGuard
+! from Adguard
 ##div[id^="vk_like"]
 ##.fa-vk
 ! is in Fanboy's
@@ -268,7 +276,7 @@ vk.com##.OldBrowser
 ##.icon-vkontakte
 ~belarus2020.org,~vk.com##.vk
 !##[class$="-vk"]
-! is in AdGuard
+! is in Adguard
 ###vk_group
 ##.vk-group-block
 ###vk_groups
@@ -277,14 +285,14 @@ vk.com##.OldBrowser
 ! is in Ru AdList and Fanboy's
 ##.vkontakte
 ###vkontakte
-! from AdGuard
+! from Adguard
 vk.com##+js(set-constant, noAdsAtAll, true)
-! is in AdGuard
+! is in Adguard
 vk.com###ads_left
 ! vk.com###bottom_nav  # test remove 2020-07
 ! vk.com###index_footer_wrap  # test remove 2020-07
 ! vk.com###layer_bg  # test remove 2020-07
-! is in AdGuard and EasyList
+! is in Adguard and EasyList
 vk.com###system_msg
 vk.com##.PushNotifierPopup__popup-box_type--suggest
 vk.com##.article_layer__top_actions
@@ -348,7 +356,9 @@ vk.com##.TopHomeLink
 !
 ! hosts
 ! comments are preferably inline with  #
-connect.ok.ru
+!
+#api.ok.ru  # api.ok.ru$domain=~ok.ru|~odnoklassniki.ru  # update: don't. It needed for OK app
+connect.ok.ru$important  # from hpHosts’ Ad and tracking servers 
 !
 !
 ! urls
@@ -472,7 +482,7 @@ platform.twitter.com/widgets.js$important
     ! is in Fanboy's
     ##.twitter-follow-button
     ##.twitter-share-button
-    ! is in AdGuard
+    ! is in Adguard
     !##body .twitter-share-button
     ! is in Fanboy's
     !##.twitter-timeline
@@ -484,23 +494,23 @@ platform.twitter.com/widgets.js$important
 ##[href^="//twitter.com/share"]
 ! from Web Annoyances Ultralist
 ##[href*="twitter.com/share"]
-! is in Ru AdList, AdGuard, Fanboy's
+! is in Ru AdList, Adguard, Fanboy's
 ##a[href^="http://twitter.com/home?"]
-! from AdGuard and Fanboy's
+! from Adguard and Fanboy's
 ~votesmart.appspot.com##a[href^="https://twitter.com/intent/tweet?"]
 ! is in Fanboy's
 ~votesmart.appspot.com##a[href^="https://twitter.com/intent/tweet/"]
-! is in AdGuard
+! is in Adguard
 ~votesmart.appspot.com##a[href^="https://twitter.com/intent/tweet/?"]
 ! is in Fanboy's
 ##a[href^="http://twitter.com/share"]
-! is in Fanboy's and AdGuard
+! is in Fanboy's and Adguard
 ##a[href^="http://twitter.com/share?"]
-! is in AdGuard
+! is in Adguard
 ##a[href^="https://twitter.com/share"]
 ! is in Fanboy's, RU AdList - Adguard's is about the same
 ##a[href^="https://twitter.com/share?"]
-! is in AdGuard
+! is in Adguard
 ##a[onclick^="window.open('https://twitter.com/share"]
 ! from Fanboy's
 ##a[title="Twitter"]
@@ -536,10 +546,10 @@ _pinterest_icon.png
 -pinterest.
 ||pinterest.com^$script,3p  # from Web Annoyances Ultralist, modified
 ||pinterest.com/images/$third-party  # from Ru AdList
-||pinterest.com/js/pinit.js^$3p  # from AdGuard, modified
+||pinterest.com/js/pinit.js^$3p  # from Adguard, modified
 ||pinterest.com/js/pinit_main.js$third-party  # from Ru AdList
 ||pinterest.com/v1/urls/count.json$third-party  # from Ru AdList
-||s.pinimg.com/ct/core.js  # is in AdGuard
+||s.pinimg.com/ct/core.js  # is in Adguard
 !
 ! cosmetic filters
 ! general first, specific last
@@ -547,10 +557,20 @@ _pinterest_icon.png
 !
 ~pinterest.com,~livejournal.com##[class*="pinterest"]:not(html):not(body):not(article)
 ~pinterest.com##[id*="pinterest"]:not(html):not(body):not(article)
-    ! is in Adguard and Fanboy's
-    ##a[href^="http://pinterest.com/pin/create/button/"]
-    ! is in AdGuard, Fanboy's and Web Annoyances Ultralist
+    ! is in Adguard, Fanboy's and Web Annoyances Ultralist
     ##.icon-pinterest
+    ##.icon-pinterest-share
+    ##.icon-pintrest
+    ##.pinterest-share
+    ! is in 3 lists
+    ##.share-pinterest
+! is in Adguard and Fanboy's
+##a[href^="http://pinterest.com/pin/create/button/"]
+! is in Adguard
+##a[href^="https://pinterest.com/pin/create/button/"]
+! is in Adguard and Fanboy's
+##a[href^="https://pinterest.com/pin/create/"]
+##.iconPinterest
 
 pinterest.com##div[data-test-id="fullPageSignupModal"]
 pinterest.com##.active.noButtonStyles > div
@@ -574,7 +594,7 @@ pinterest.com##.active.noButtonStyles > div
 ! hosts
 ! comments are preferably inline with  #
 !
-mediator.imgsmail.ru  # from AdGuard Tracking Protection
+mediator.imgsmail.ru  # from Adguard Tracking Protection
 !
 ! urls
 ! comments are preferably inline with  # 
@@ -587,11 +607,13 @@ imgsmail.ru/gstat?  # from EasyPrivacy
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-! is in AdGuard
+! is in Adguard
 ##a[href^="https://connect.mail.ru/share"]
 ! is in RU AdList
 ##a[href*="//top.mail.ru/jump?"]
-! is in AdGuard
+! is in Adguard
+##a[href^="http://top.mail.ru/jump"]
+! is in Adguard
 ##a[href^="https://top.mail.ru/jump"]
 games.mail.ru##.strim
 games.mail.ru###pm-gc-btn
@@ -637,6 +659,38 @@ wf.mail.ru###header
 
 
 
+!! Yandex Zen
+!
+! hosts
+! comments are preferably inline with  #
+!
+!
+! urls
+! comments are preferably inline with  # 
+! general first, specific last
+!
+/dzen.$image
+/yandex-zen.svg
+/zen.png
+/zen_18.png
+!
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
+! is in Ru AdList
+##[title="Яндекс Дзен"]
+##.zen
+##.zen-invite-block
+##.zenlink
+##.zen-ui-popup
+##.zen-ui-popup__main
+##.zen-ui-popup__content
+##.zen-ui-popup__wrapper
+
+
+
 !! Linkedin
 !
 ! hosts
@@ -655,6 +709,7 @@ wf.mail.ru###header
 /linkdin.svg
 /linkedin-$domain=~arkoselabs.com|~linkedin.com  # is in Fanboy's
 /linkedin.png
+/linkedin.svg
 /linkedin2.png
 /social-in.png
 ||linkedin.com/countserv/$third-party  # from Ru AdList
@@ -667,9 +722,9 @@ wf.mail.ru###header
 !
 ~linkedin.com##[class*="linkedin"]:not(html):not(body):not(article)
 ~linkedin.com##[id*="linkedin"]:not(html):not(body):not(article)
-! is in AdGuard
+! is in Adguard
 ##a[href^="http://www.linkedin.com/shareArticle"]
-! is in AdGuard
+! is in Adguard
 ##a[href^="https://www.linkedin.com/shareArticle"]
 ! is in Ru AdList and Fanboy's
 ##a[href^="http://www.linkedin.com/shareArticle?"]
@@ -677,7 +732,7 @@ wf.mail.ru###header
 ##a[href^="https://www.linkedin.com/shareArticle?"]
 ! from Fanboy's
 ##a[href^="https://www.linkedin.com/cws/share?"]
-! from AdGuard
+! from Adguard
 ##a[href^="https://www.linkedin.com/cws/share?url="]
 ! from Fanboy's
 ##a[title="LinkedIn"]
@@ -687,6 +742,8 @@ wf.mail.ru###header
 ##.icon-link-share
 ! is in Fanboy's and Ru AdList
 ##img[alt="LinkedIn"]
+! is in Ru AdList and Fanboy's
+###in_icon
 ! is in 3 lists
 ##.share-linkedin
 
@@ -708,7 +765,7 @@ livejournal.com##a[href*="offer"][target="_blank"]
 !! Digg
 ! is in Fanboy's
 ##img[title="Share on Digg"]
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##a[href^="http://digg.com/submit?"]
 ##.icon_digg
 ##.icon-digg
@@ -737,7 +794,7 @@ plus.google.com
 /plusone.js$important
 /social/google.  # from Fanboy's
 ||apis.google.com/_/apps-static/_/js/gapi/*plusone/$third-party  # from Ru AdList
-||apis.google.com/js/plusone.js$domain=~blogger.com|~blogspot.com|~blogspot.ru|~pikucha.ru|~googleblog.com|~abcnews.go.com  # from AdGuard
+||apis.google.com/js/plusone.js$domain=~blogger.com|~blogspot.com|~blogspot.ru|~pikucha.ru|~googleblog.com|~abcnews.go.com  # from Adguard
 ||apis.google.com/_/scs/apps-static/*=page,plusone/$third-party  # from Ru AdList
 ||news.google.com/swg/js/v1/swg.js$script  # is in Fanboy's
 !
@@ -775,9 +832,9 @@ plus.google.com
 ##[href^="//plus.google.com/share"]
 ! is in Ru AdList and Fanboy's
 ##a[href^="http://www.google.com/bookmarks"]
-! is in AdGuard
+! is in Adguard
 ##a[href^="http://www.google.com/bookmarks/mark?"]
-! from AdGuard and Fanboy's
+! from Adguard and Fanboy's
 ##a[href^="https://plus.google.com/share"]
 ! from Fanboy's
 ##a[title="Google+"]
@@ -812,7 +869,7 @@ plus.google.com
 /tg.png
 /tl.jpg
 ||telegram.org/js/widget-frame.js
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ~votesmart.appspot.com##a[href^="https://t.me/share/url?"]
 ! is in Fanboy's
 ##a[href^="tg://msg_url?url="]
@@ -836,7 +893,7 @@ plus.google.com
 /whatsapp-icon.png
 ! from Fanboy's
 ~votesmart.appspot.com##a[href^="https://api.whatsapp.com/send?"]
-! from AdGuard
+! from Adguard
 ~votesmart.appspot.com##a[href^="whatsapp://send"]
 ! from Fanboy's - narrower
 ~votesmart.appspot.com##a[href^="whatsapp://send?text="]
@@ -846,6 +903,7 @@ plus.google.com
 ##.fa-whatsapp
 ##.icon-whatsapp
 ##.whatsapp
+###whatsapp-button
 ! is in Fanboy's
 ##.whatsapp-share-btn
 
@@ -927,6 +985,7 @@ plus.google.com
 
 
 !! general: like, share, social, etc
+/bitrix/js/socialservices/*
 /follow-us-on-  # from Fanboy's
 -footer-social-  # from Fanboy's
 -footer-social.  # from Fanboy's
@@ -937,9 +996,25 @@ plus.google.com
 /icon-share.  # is in Fanboy's
 /icons/share-  # is in Fanboy's
 /icons/social/*  # is in Fanboy's
+/images/share_  # is in Adguard and Fanboy's
 /images/social.  # is in Ru AdList and Fanboy's
 /img/*/social.  # is in Fanboy's and Ru AdList
 /img/soc/*
+/img/social_  # is in Ru AdList and Fanboy's
+/jssocials.min.js
+    ! is in Fanboy's
+    ##.jssocials
+    ! is in Fanboy's
+    ##.jssocials-share-logo
+    ! is in Adguard and Fanboy's
+    ##.jssocials-shares
+    ! is in Fanboy's
+    ##.jssocials-share-facebook
+    ! is in Fanboy's
+    ##.jssocials-share-link
+-likebutton.js
+/nav-social-  # is in Fanboy's
+/ndnapps-sociallogin-script.js$important
 /share.png  # from Fanboy's
 /share.js$domain=~dns-shop.ru
 /share42/*  # is in Ru AdList and Fanboy's
@@ -947,12 +1022,17 @@ plus.google.com
 -sharebar.  # from Fanboy's
 /sharedaddy/*$image  # from Fanboy's
 /sharedaddy/*$script,important
+    ! is in 3 lists
+    ##.sharedaddy
+/share-icon$image
 /share-link/*  # is in Ru AdList and Fanboy's
 /share-link.min.js
 /sendtofriend.  # from Fanboy's
 /soc/*$image
 /social/*$image
+-social.js
 /social.png  # from Fanboy's
+/social-bookmarks/*  # is in Fanboy's
 /socialbutton.  # is in Fanboy's
 /social-buttons.js$important
 -social-icon-  # is in Fanboy's and Ru AdList
@@ -964,8 +1044,10 @@ plus.google.com
 /social-proof/*
 /social-proof-
 /socials.png  # from Fanboy's
-/socialshare.  # is in Fanboy’s and Ru AdList
-/socialshare/*  # is in Fanboy's
+/socialshare.$important  # is in Fanboy’s and Ru AdList
+/socialshare/*$important  # is in Fanboy's
+/social-share-$important  # is in Fanboy's
+-social-share/$important  # is in Fanboy's and Ru AdList
 /social_shares-min.js
 /ya-share.$important  # is in Fanboy's and Ru AdList
 !
@@ -981,7 +1063,7 @@ plus.google.com
 !~microsoft.com,~sketchup.com,~topsharepoint.com,~joom.com,~gfycat.com##[class*="share"]:not(html):not(body):not(article)
 ~etutorium.com,~facebook.com,~host.io,~steamcommunity.com,~vesti.ru,~vk.com,votesmart.navalny-team.org##[id*="share"]:not(html):not(body):not(article)
 ##[title^="Share on "]
-    ! from AdGuard
+    ! from Adguard
     !##a[title="Share on Facebook"]
     ! from Fanboy's
     !##[title^="Share on Facebook"]
@@ -993,13 +1075,13 @@ plus.google.com
     !##[title^="Share on Google+"]
     ! from Fanboy's
     !##a[title^="Share on Google"]
-    ! is in AdGuard
+    ! is in Adguard
     !##a[title="Share on LinkedIn"]
-    ! from AdGuard
+    ! from Adguard
     !##a[title="Share on Pinterest"]
     ! from Fanboy's
     !##a[title^="Share on Pinterest"]    
-    ! is in AdGuard
+    ! is in Adguard
     !##[title="Share on Reddit"]
     ! is in Fanboy's
     !##a[title^="Share on Reddit"]
@@ -1007,36 +1089,43 @@ plus.google.com
     !##[title^="Share on Twitter"]
     ! from Fanboy's
     !##a[title="Share on Twitter"]
+! is in Fanboy's
+##a[title^="Share this article"]
+! from Fanboy's
+##img[alt^="Share on "]
+! from Fanboy's
+##img[alt^="Share this"]
+! from Fanboy's
+##img[alt^="Share This"]
 ~clickmeeting.com,~votesmart.appspot.com##[class*="Sharing"]:not(html):not(body):not(article)
 ~clickmeeting.com,~votesmart.appspot.com##[id*="Sharing"]:not(html):not(body):not(article)
 ~clickmeeting.com,~votesmart.appspot.com,~drive.google.com##[class*="sharing"]:not(html):not(body):not(article):not(.sharing-enabled)
 ~clickmeeting.com,~votesmart.appspot.com##[id*="sharing"]:not(html):not(body):not(article)
 !
-! some of this (disabled) rules are too resource-consuming
 !
 ! ends with -soc
 ##[class$="-soc"]:not(html):not(body):not(article)
 ##[id$="-soc"]:not(html):not(body):not(article)
-!##[class*="-soc "]:not(html):not(body):not(article)
-!##[id*="-soc "]:not(html):not(body):not(article)
+! don't: very slow with spaces! ##[class*="-soc "]:not(html):not(body):not(article)
+! don't: very slow with spaces! ##[id*="-soc "]:not(html):not(body):not(article)
 !
 ! ends with _soc
 ##[class$="_soc"]:not(html):not(body):not(article)
 ##[id$="_soc"]:not(html):not(body):not(article)
-!##[class*="_soc "]:not(html):not(body):not(article)
-!##[id*="_soc "]:not(html):not(body):not(article)
+! don't: very slow with spaces! ##[class*="_soc "]:not(html):not(body):not(article)
+! don't: very slow with spaces! ##[id*="_soc "]:not(html):not(body):not(article)
 !
 ! begins with soc_
 ##[class^="soc_"]:not(html):not(body):not(article)
 ##[id^="soc_"]:not(html):not(body):not(article)
-!##[class*=" soc_"]:not(html):not(body):not(article)
-!##[id*=" soc_"]:not(html):not(body):not(article)
+! don't: very slow with spaces! ##[class*=" soc_"]:not(html):not(body):not(article)
+! don't: very slow with spaces! ##[id*=" soc_"]:not(html):not(body):not(article)
 !
 ! begins with soc-
 ##[class^="soc-"]:not(html):not(body):not(article)
 ##[id^="soc-"]:not(html):not(body):not(article)
-!##[class*=" soc-"]:not(html):not(body):not(article)
-!##[id*=" soc-"]:not(html):not(body):not(article)
+! don't: very slow with spaces! ##[class*=" soc-"]:not(html):not(body):not(article)
+! don't: very slow with spaces! ##[id*=" soc-"]:not(html):not(body):not(article)
 !
 ! contains soc
 ##[class*="-soc-"]:not(html):not(body):not(article)
@@ -1044,6 +1133,14 @@ plus.google.com
 ##[class*="_soc_"]:not(html):not(body):not(article)
 ##[id*="_soc_"]:not(html):not(body):not(article)
 !
+!
+##[class^=et_social]
+    ! is in Fanboy's
+    !##.et_social_mobile
+    ! is in Adguard and Fanboy's
+    !##.et_social_sidebar_networks
+    ! is in Fanboy's
+    !##.et_social_fadein
 ! on nalog.ru it is not social buttons, it is a tax name
 ~nalog.ru##[class*="Social"]:not(html):not(body):not(article)
     !from Fanboy's: Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
@@ -1062,7 +1159,11 @@ plus.google.com
 !
 ! from Fanboy's
 ##.abh_social
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
+##amp-social-share
+! is in Fanboy's
+##AMP-SOCIAL-SHARE
+! is in Adguard and Fanboy's
 ##.article-share
 ! is in Fanboy's
 ##.article-share__item
@@ -1070,10 +1171,10 @@ plus.google.com
 ##.article-social
 ! is in Fanboy's
 ##.article_sharing
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##.b-article__social
 ##.bio-social
-! is in AdGuard
+! is in Adguard
 ##.block_social
 ! is in Ru AdList and Fanboy's
 ###block_social_open
@@ -1252,8 +1353,15 @@ plus.google.com
     ! from Fanboy's
     ##.story-footer-social
     ##.footer-social-wrap
-! is in AdGuard and Fanboy's
-##.goodshare
+##[class*=header-share]
+    ! from Adguard
+    ! codewithhugo.com,laptrinhx.com##.floating-header-share
+    ! is in Fanboy’s and Ru AdList
+    ##.header-share
+    ! from Adguard
+    genius.com##.song_header-share_buttons
+    ! from Adguard
+    !rtvi.com##.c-new__header-share  
 ##[class*=header-social]
 ##[id*=header-social]
     !! Some examples
@@ -1321,9 +1429,37 @@ plus.google.com
     ###masthead-socialblock2
     ! from Fanboy's
     ##.site-head-social--small
+##[class^=social-likes]
+    ! is in Adguard, RU AdList, Fanboy's
+    ##.social-likes
+    ##.social-likes__icon
+    ##.social-likes__button
+    ##.social-likes__widget
+##[class^=social-links]
+    ##.social-links
+    ! is in Adguard and Fanboy's
+    ##.social-links-block
+    ! is in Adguard and Fanboy's
+    ##.social-links-wrapper
+
+! from Fanboy's
+##.bp-share-btn
+! from Fanboy's
+##.bp-share-button
+##.b-share
+! is in Fanboy's
+##.b-sidebar-menu__socials
+! is in Fanboy's
+##.b-socials-subscribe
+! is in Adguard
+##.b-socials__sharing
 ! from Fanboy's
 ##.footer_head_social
+! is in Adguard and Fanboy's
+##.goodshare
 ##.head_socials
+! From Fanboy's: Google share icon
+##KNO-SHARE-BUTTON
 ! is in Fanboy's and Web Annoyances Ultralist
 ##.icon-social
 ##.liker
@@ -1331,7 +1467,9 @@ plus.google.com
 ##.lsi-social-icons
 ! from Fanboy's
 ##.main-head__social-2
-! is in AdGuard and Fanboy's
+! is in Fanboy's
+##.post_share
+! is in Adguard and Fanboy's
 ##.post-share-buttons
 ! is in Fanboy's
 ##.react-share__ShareButton
@@ -1343,24 +1481,39 @@ plus.google.com
 ##.sc-button-share
 ! is in Fanboy's
 ##.sd-social-icon-text
-! is in AdGuard
+! is in Adguard
 ##.share-button
-! is in AdGuard and Fanboy's
-! is in Fanboy's
+! is in Ru AdList, Fanboy's
+##.share_button
+! is in Adguard and Fanboy's
+##.share-buttons
+! is in Adguard and Fanboy's
 ###ShareEntryPoint
 ! is in Fanboy's and Web Annoyances Ultralist
 ##.share-icons
+! is in Fanboy's and Web Annoyances Ultralist
+##.share-item
+! is in Fanboy's
+##.share-left
 ! is in Fanboy's, Adguard
 ##.share-link
 ! is in Fanboy's
 ##.share-link-facebook
 ##.share-links
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##.share-list
+! is in Ru AdList, Fanboy's
+##.share_list
 ! is in Fanboy's
 ##.share-more
 ! is in Adguard and Fanboy's
 ##.shareit
+! is in 3 lists
+##.sharePage
+! is in Fanboy's
+##.share-title
+! is in Ru AdList, Adguard, Fanboy's
+##.share_tools
 ! is in Fanboy's
 ###shareUrl
 ! is in Adguard and Fanboy's
@@ -1387,7 +1540,7 @@ plus.google.com
 ###social-bar
 ! is in Fanboy's, Adguard and Web Annoyances Ultralist
 ##.social-block
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##.social-buttons
 ! is in Adguard and Fanboy's
 ##.socialbuttons
@@ -1395,11 +1548,11 @@ plus.google.com
 ##.social-circle
 ! is in Ru AdList and Fanboy's
 ##.social-container
-! is in AdGuard, Ru AdList and Fanboy's
+! is in Adguard, Ru AdList and Fanboy's
 ##.social-count
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##.social-icon
-! is in Fanboy's, AdGuard, Ru AdList
+! is in Fanboy's, Adguard, Ru AdList
 ##.social-icons
 ##.social-icons__link
 ! from Fanboy's
@@ -1408,28 +1561,21 @@ plus.google.com
 ##.social-icons-wrapper
 ! is in Ru AdList and Fanboy's
 ##.social-large
-! is in AdGuard, RU AdList, Fanboy's
-##.social-likes
-##.social-likes__icon
-##.social-likes__button
-##.social-likes__widget
 ! is in Fanboy's
 ##.social__link
 ##.socialLinks
-! is in Adguard and Fanboy's
-##.social-links-wrapper
 ! is in Fanboy's
 ##.social-list:not(html):not(body)
 ##.social-list__link
-! is in AdGuard
+! is in Adguard
 ##.social-media
 ! is in Fanboy's
 ##.social-media:not(html):not(body)
 ! is in Fanboy's
 ##.social-media__link
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##.social-media-sharing
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##.social-networks
 ! is in Fanboy's
 ##.social-post
@@ -1448,15 +1594,18 @@ plus.google.com
 ##.social-sharing
 ! is in Ru AdList and Fanboy's
 ##.social-small
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##.social-tab
-! is in AdGuard and Fanboy's
+! is in Fanboy's
+##.social-top:not(html):not(body)
+! is in Adguard and Fanboy's
 ##.social-widget
-! is in AdGuard
+##.socials-after_post
+! is in Adguard
 ##.socials-link
 ! from Fanboy's
 ##.swf-social-site
-! is in Fanboy's and AdGuard
+! is in Fanboy's and Adguard
 ##.td_block_social_counter
 ! is in Ru AdList and Fanboy's
 ##.td-post-sharing
@@ -1471,12 +1620,6 @@ plus.google.com
 ! is in Fanboy's
 ##.td_social_type
 ###top-share
-! is in Fanboy's
-##.b-sidebar-menu__socials
-! is in Fanboy's
-##.b-socials-subscribe
-! is in Adguard
-##.b-socials__sharing
 ! is in Adguard
 ##.social-snippet
 
@@ -1484,44 +1627,29 @@ plus.google.com
 
 
 !! todo
-
-! From Fanboy's: Google share icon
-##KNO-SHARE-BUTTON
-    ! from Fanboy's
-    ##.bp-share-btn
-    ! from Fanboy's
-    ##.bp-share-button
-    ##.b-share
-    ! is in Fanboy’s and Ru AdList
-    ##.header-share
-    ##.icon-pinterest-share
+    
     ! is in Fanboy’s and Ru AdList
     ##.icon-share
     ##.login_with_social
-    ##.pinterest-share
     ! from Fanboy's
     ##.pswp__button--share
     ! is in Ru AdList and Fanboy's
     ##.share-bar
     ! in 3 lists
     ##.share-block
-    ! is in AdGuard, RU AdList, Fanboy's
+    ! is in Adguard, RU AdList, Fanboy's
     ##.share-button
     ! from Fanboy's
     ##.share-email
-    ! is in 3 lists
-    ##.share-facebook
     ##.share__icon
-    ! from AdGuard and Fanboy's
+    ! from Adguard and Fanboy's
     ##.share-icon
     ! from Fanboy's
     ##.share-label
     ! from Fanboy's
     ##.share-menu
-    ! from AdGuard
+    ! from Adguard
     ##:not(.sharingOptionsGroup) > .share-menu
-    ! is in 3 lists
-    ##.share-pinterest
     ! is in Fanboy's and Ru AdList
     ##.share-popups-component
     ! is in 3 lists
@@ -1530,11 +1658,11 @@ plus.google.com
     ##.share-service-visible
     ! from Fanboy's
     ##.share-tumblr
-    ! is in AdGuard, RU AdList, Fanboy's
+    ! is in Adguard, RU AdList, Fanboy's
     ##.sidebar-share
-    ! from AdGuard & Fanboy's
+    ! from Adguard & Fanboy's
     ##.ytp-share-button
-    ! is in AdGuard and Fanboy's
+    ! is in Adguard and Fanboy's
     ###share-block
     ! is in Fanboy's, RU AdList
     !###sharelist
@@ -1582,15 +1710,15 @@ plus.google.com
     ##.social-link-tw
     ! is in Fanboy's
     ##.social-link-twitter
-    ! is in AdGuard and Web Annoyances Ultralist
+    ! is in Adguard and Web Annoyances Ultralist
     ##.socialite
-    ! is in AdGuard, Fanboy's, Web Annoyances Ultralist
+    ! is in Adguard, Fanboy's, Web Annoyances Ultralist
     ##.social-menu
-    ! is in AdGuard, Fanboy’s and Ru AdList
+    ! is in Adguard, Fanboy’s and Ru AdList
     ##.socials
     ! is in Fanboy's and Ru AdList
     ##.social-section
-    ! is in Ru AdList and AdGuard, generalized
+    ! is in Ru AdList and Adguard, generalized
     ##.social-teasers
     ! from Fanboy's
     ##.social-tooltip
@@ -1617,17 +1745,10 @@ plus.google.com
 ! from Fanboy's
 ##img[alt^="Share this"]
 ! from Fanboy's
-##img[alt^="Share This"]
-! from Fanboy's
-##img[alt^="Share on "]
-! from Fanboy's
-##img[alt^="Share this"]
-! from Fanboy's
 ##img[alt^="Share with"]
 ! other
 ! is in Ru AdList and Fanboy's
 ##.et_pb_social_media_follow
-/dzen.$image
 /ig.svg
 /ico_tg.
 /icon-ig.png
@@ -1642,15 +1763,7 @@ plus.google.com
 /watch.js$domain=~rosreestr.ru|~youtube.com
 /watch_ua.js$important
 /wordpress-social-login/*$important
-/yandex-zen.svg
 /yt.svg
-/zen.png
-/zen_18.png
-! from Fanboy's
-##a[title="ВКонтакте"]
-! from Fanboy's
-##a[title="Facebook"]
-
 ##.fodicon-tumblr
 ##.footer_socs
 ##.hp_sociaisIcons
@@ -1688,8 +1801,6 @@ plus.google.com
 ##.iconli
 ##.icon-ln
 ##.icon-mixcloud
-##.iconPinterest
-##.icon-pintrest
 ##.icon-pocket
 ##.icon-polyvore
 ##.icon-reddit
@@ -1742,28 +1853,14 @@ plus.google.com
 ##.ulogin_block
 ##.ulogin-buttons-container
 ##.w2bslikebox
-##.zen
-##.zen-invite-block
-##.zenlink
-##.zen-ui-popup
-##.zen-ui-popup__main
-##.zen-ui-popup__content
-##.zen-ui-popup__wrapper
-
 
 ! is in Ru AdList and Fanboy's
 ##a[href^="http://www.livejournal.com/update.bml?"]
 
 ##.ico-ytube
 
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##a[href^="https://wa.me/?text="]
-
-! is in AdGuard
-##a[href^="http://top.mail.ru/jump"]
-
-! is in AdGuard and Fanboy's
-##a[href^="https://pinterest.com/pin/create/"]
 
 ##.icons-tw
 ##.icons-mail
@@ -1774,16 +1871,13 @@ plus.google.com
 ! from Web Annoyances Ultralist
 ##.sd-sharing-enabled
 
-! is in 3 lists
-##.sharedaddy
-
 ! from Fanboy's and Web Annoyances Ultralist
 ##.share-widget
 
 ! is in Fanboy's
 ##.ShareThisMainPanel
 
-! is in AdGuard
+! is in Adguard
 ##a[href^="http://www.stumbleupon.com/submit?url"]
 ! is in Fanboy's
 ##a[href^="http://www.stumbleupon.com/submit?"]
@@ -1791,43 +1885,43 @@ plus.google.com
 ! is in Adguard and Fanboy's
 ##a[href^="https://www.stumbleupon.com/submit?url="]
 
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##a[href^="http://www.reddit.com/submit"]
 
-! is in AdGuard
+! is in Adguard
 ##a[href^="http://www.myspace.com/Modules/PostTo/Pages/?u="]
 
 ! is in Fanboy's
 ##a[href^="http://technorati.com/faves/?add="]
 
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##a[href^="http://del.icio.us/post?url="]
 ! is in Fanboy's
 ##a[href^="http://del.icio.us/post"]
 
-! is in AdGuard and Fanboy's
+! is in Adguard and Fanboy's
 ##a[href^="https://reddit.com/submit?"]
 
 ! "Social sharing buttons"
 ! https://github.com/NikolayRys/Likely
-! is in AdGuard
+! is in Adguard
 ##.likely
 ##.likely__icon
 ! is in Fanboy's
 ##.likely__widget
-! is in AdGuard
+! is in Adguard
 /likely.css
 /likely.js
 /likely.min.js
 
-! is in Ru AdList, AdGuard and Fanboy's
+! is in Ru AdList, Adguard and Fanboy's
 ##.rambler-share
 
-! is in RuAdList, AdGuard, Fanboy's
+! is in RuAdList, Adguard, Fanboy's
 ##.essb_share
 ! is in RuAdList, Fanboy's
 ##.essb_links_list
-! is in RuAdList, AdGuard, Fanboy's
+! is in RuAdList, Adguard, Fanboy's
 ##.essb_links
 ! is in RuAdList, Fanboy's
 ##.essb_link_twitter
@@ -1842,6 +1936,9 @@ garant.ru##.popup-social
 
 ! is in Fanboy's
 ##.subscribe_link
+
+! is in Fanboy's
+##.in-article-subscribe
 
 ! is in Adguard and Fanboy's
 ##a[href^="https://getpocket.com/save?url="]
@@ -1860,16 +1957,6 @@ garant.ru##.popup-social
 ! is in Fanboy's
 ##.wc_social_plugin_wrapper
 
--social.js
-
--likebutton.js
-
-! is in Fanboy's
-##.in-article-subscribe
-
-! is in Adguard
-##a[href^="https://pinterest.com/pin/create/button/"]
-
 ! is in Adguard, Fanboy's, Web Annoyances Ultralist
 ##.the_champ_sharing_container
 ! is in Fanboy's
@@ -1877,13 +1964,8 @@ garant.ru##.popup-social
 
 ! is in Fanboy's
 ##.product-share
-! is in Fanboy's
-##.share-title
 ! is in Adguard and Fanboy's
 ##.social-share
-
-! is in Fanboy's and Web Annoyances Ultralist
-##.share-item
 
 ! is in Fanboy's
 ##.social-follow
@@ -1893,8 +1975,6 @@ garant.ru##.popup-social
 ##.anycomment-odnoklassniki
 ##.anycomment-vkontakte
 ##.anycomment-social
-
-/discord.svg
 
 appleid.cdn-apple.com  # appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js
 
@@ -1907,108 +1987,32 @@ socauth.privatbank.ua
 ##.flikes
 
 ! is in Fanboy's
-##.post_share
-
-/ndnapps-sociallogin-script.js$important
-
-/img/social_  # is in Ru AdList and Fanboy's
-
-! is in Fanboy's
 ##.zoom-social-icons-widget
-
--social-share/$important  # is in Fanboy's and Ru AdList
 
 ##.bx-socialsidebar
 
 ! is in Adguard and Fanboy's
 ##.swp_social_panel
 
-/jssocials.min.js
-! is in Fanboy's
-##.jssocials
-! is in Fanboy's
-##.jssocials-share-logo
-! is in Adguard and Fanboy's
-##.jssocials-shares
-! is in Fanboy's
-##.jssocials-share-facebook
-! is in Fanboy's
-##.jssocials-share-link
-
-! is in Fanboy's
-##.social-top:not(html):not(body)
-
-! is in Fanboy's
-##a[title^="Share this article"]
-
 ! is in Fanboy's
 ##.solid-social-icons
 
-! is in Fanboy's
-##.share-left
-
-! is in Adguard and Fanboy's
-##.share-buttons
-
-##.social-links
-! is in Adguard and Fanboy's
-##.social-links-block
-
-/share-icon$image
-
-##.socials-after_post
-
 ! is in 3 lists
 ##.socialMediaIcon
-
-! is in 3 lists
-##.sharePage
-
-! is in Adguard and Fanboy's
-##amp-social-share
-! is in Fanboy's
-##AMP-SOCIAL-SHARE
-
-##[class^=et_social]
-    ! is in Fanboy's
-    !##.et_social_mobile
-    ! is in Adguard and Fanboy's
-    !##.et_social_sidebar_networks
-    ! is in Fanboy's
-    !##.et_social_fadein
-
-! is in Ru AdList
-##[title="Яндекс Дзен"]
-
-###whatsapp-button
-
-/Linkedin.svg
-
-/nav-social-  # is in Fanboy's
-
-/social-share-  # is in Fanboy's
-
-/images/share_  # is in Adguard and Fanboy's
+! from Fanboy's
+##.socialMediaIconlg
+! from Fanboy's
+##.socialMediaIcons
+! from Fanboy's
+##.socialMediaIconsSection
 
 ##.tamtam
 
-/social-bookmarks/*  # is in Fanboy's
-
-/bitrix/js/socialservices/*
-
-! is in Ru AdList, Adguard, Fanboy's
-##.share_tools
-! is in Ru AdList, Fanboy's
-##.share_list
-! is in Ru AdList, Fanboy's
-##.share_button
-
-! is in Ru AdList and Fanboy's
-###in_icon
-
-! is in Ru AdList and Fanboy's
-###fb_icon
-
+/discord.svg
 ||discord.com/widget
+! from Fanboy's
+###DiscordButton
+! from Fanboy's
+discord.me##li.menu-link.d-xl-inline-block
 
 ##.apps__icon
