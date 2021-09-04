@@ -1141,6 +1141,7 @@ _loghuman=  # from EasyPrivacy
 /metrika.js$important
 /mod_pagespeed_beacon?  # from Fanboy's
 /ntfc.php?$script  # from uBlock
+/p.gif?  # tracking imgs  # is in EasyPrivacy
 /packaged-js/trackers.  # from EasyPrivacy
 _pagespeed_beacon?  # from AdGuard
 /pageviews/*$domain=~stats.wikimedia.org|~tools.wmflabs.org  # is in EasyPrivacy
@@ -1758,8 +1759,10 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /eu_cookie_$script,important  # is in 3 lists
 /eu-cookie-law/*$important
 /evercookie.  # from EasyPrivacy
+/evercookie_$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
 /gdpr.js  # from Fanboy's
 /jquery-eu-cookie-law-popup.js$important
+/privacy-consent/*
 /referrer-cookie.js
 /setcookie?  # from EasyPrivacy
 /track-cookies.js$important
@@ -21595,12 +21598,6 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 
 /altasib.warninglimit/warninglimit.js  # bitrix js
 
-/privacy-consent/*
-
 /[0-9a-f]{32}\/invoke\.js$/$script,3p  # uBlock filters rule
 
 &action=js_stats&  # EasyPrivacy rule
-
-/evercookie_$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
-
-/p.gif?  # tracking imgs  # is in EasyPrivacy
