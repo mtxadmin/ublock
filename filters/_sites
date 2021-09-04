@@ -8203,12 +8203,15 @@ gismeteo.*##.media_frame
 @@||github.com^$generichide
 ! 2019-08 Github started show intro notices. Disabled.
 github.com##.js-notice.intro-shelf
+    ! top
 ! unfix header
 github.com##.gh-header:style(position:static !important)
 ! remove [duplicated] mobile sticky header. This does not affect to regular header, which is intact
 github.com##.gh-header-sticky
 github.com##.gh-header-shadow
-! other
+! header is white - make its background black again
+github.com##.header-logged-out:style(background-color:black !important)
+    ! other
 github.io##.article-author-side
 github.io##article.post:style(margin-left:40px !important)
 github.io###banner
@@ -21539,3 +21542,15 @@ geojamal.com$inline-script  # BlockAdBlock
 /evercookie_$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
 
 /p.gif?  # tracking imgs  # is in EasyPrivacy
+
+ugoloknavanny.ru##.cit
+ugoloknavanny.ru##.top
+ugoloknavanny.ru##.centerblock1:style(margin-top:0px !important)
+||ugoloknavanny.ru/*/logofuter.jpg
+ugoloknavanny.ru##.futer_1
+ugoloknavanny.ru##.futer_2
+ugoloknavanny.ru##.futer_3
+
+masteravannoy.ru##blockquote:has-text(/Если вам нужны мастера|удобный сервис|зарегистрируйтесь/)
+
+||o-vannoy.ru/*/magnifying.svg
