@@ -286,12 +286,14 @@ _advert/  # from EasyList
     ##.gpt-ad
     ! is in EasyList
     ##.inline-ad
-    ###nav-ad    
+    ! is in EasyList
+    ##.nav-ad
     ! is in EasyList
     ##.text-ad
     ! is in EasyList
     ##.top-ad
 ##[id$="-ad"]:not(html):not(body):not(article)
+    ###nav-ad
 ~opensubtitles.org,~dkc7dev.com##[class$="_ad"]:not(html):not(body):not(article)
 ##[id$="_ad"]:not(html):not(body):not(article)
     ! is in EasyList
@@ -322,6 +324,8 @@ _advert/  # from EasyList
 ~cnn.com,~ferra.ru,~indicator.ru##[class^="ad-"]:not(html):not(body):not(article)
     ! is in EasyList
     !##.ad-popup-content
+    ! is in EasyList
+    !##.ad-banner
 ##[id^="ad-"]:not(html):not(body):not(article)
     !###ad-101
     !###ad-desktop-bottom
@@ -684,6 +688,8 @@ _advert/  # from EasyList
 ##.j-banner-click-stat
 ##.j-banner-shown-stat
 ##.j-banner-wrapper
+! is in EasyList
+##.js-advert
 ##.js-banner
 ##.js__banner_type
 ##.listing-banner
@@ -762,6 +768,8 @@ _advert/  # from EasyList
 ###sidebar-rotator-0
 ##.SimpleAd
 ##.slide-banner
+! is in Adguard and Ru AdList
+##.surbis_banner
 ##.td-banner-wrap-full
 ! from Web Annoyances Ultralist
 ##.td-header-sp-top-widget
@@ -775,6 +783,8 @@ _advert/  # from EasyList
 ##.top_page_banner
 ! is in Adguard
 ###total_banner
+! is in Ru AdList
+##.tv-grid__item-adv_wide_no
 ! from FanBoy's
 ###uglipop_overlay
 ! from FanBoy's
@@ -1733,6 +1743,7 @@ _pagespeed_beacon?  # from AdGuard
 ! is in EasyList and Fanboy's
 ##.tracking-consent
 !
+/ajax/dataconsentcookies  # ad tracking image  # is in EasyList and Fanboy's
 /booster_eu_cookie$important
 /cookie-banner  # is in EasyList and Fanboy’s
 /cookiebar.  # from AdGuard
@@ -2753,6 +2764,7 @@ tarif-24.ru##.mh-ticker-bottom
 /jquery.sticky-kit.min.js
 /jquery.stickyPanel.min.js
 /sticky/*
+/sticky.js
 /stickyads.  # is in EasyList
 /sticky-cart/*
 /stickyfill.min.js
@@ -21550,34 +21562,18 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 ! is in EasyList
 ##.gnt_x
 
-/ajax/dataconsentcookies  # ad tracking image  # is in EasyList and Fanboy's
-
 /media/index$domain=gdz-putina.fun|gdz.ninja|gdz.ru|gdzguru.com|gdzotputina.club|gdzputina.net|gdzputina.ru|megaresheba.com|megaresheba.ru|resheba.me|reshebnik.com|spishi.fun|stavcur.ru|zoobrilka.net  # Ru AdList rule
 
 /\.com\/[0-9a-z]{2}\/[0-9a-z]{2}\/[0-9a-z]{2}\/[0-9a-z]{32}\.js/$script,3p  # Adguard rule
 
-! is in EasyList
-##.js-advert
-
 ! is in Adguard and Ru AdList
 ##.module-one-search
-
-! is in EasyList
-##.ad-banner
-! is in EasyList
-##.nav-ad
 
 ! is in Ru AdList
 ##.gaminator
 
 ! is in Adguard and Ru AdList
 ##.mediaget
-
-! is in Adguard and Ru AdList
-##.surbis_banner
-
-! is in Ru AdList
-##.tv-grid__item-adv_wide_no
 
 ! is in Ru AdList
 ##.ncwAdCommon
@@ -21591,8 +21587,6 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 
 # from uBlock filters (as is)  # https://github.com/uBlockOrigin/uAssets/issues/7118
 ||vidtech.cbsinteractive.com^*/tracking/$script,redirect=noop.js,important
-
-/sticky.js
 
 /delement.floatblock/*  # bitrix js
 
