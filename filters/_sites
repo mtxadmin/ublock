@@ -11959,13 +11959,34 @@ meless.ru##header
 
 meltcomics.com###sticky-navigation:style(position:static !important)
 
+    ! site breaks copypaste
+menunedeli.ru##^script:has-text($(document).on('copy'))
+menunedeli.ru##^script:has-text("Автор запретил копирование")
+menunedeli.ru##^script:has-text(copy)
+menunedeli.ru##^script:has-text(oncontextmenu)
+#menunedeli.ru$inline-script
+menunedeli.ru##+js(abort-current-inline-script, /oncontextmenu/)
+menunedeli.ru##+js(abort-current-inline-script, copy)
+menunedeli.ru##+js(abort-current-inline-script)
+menunedeli.ru##+js(abort-current-inline-script.js)
+menunedeli.ru##script:contains(oncontextmenu)
+menunedeli.ru##+js(addEventListener-defuser, /oncontextmenu/)
+    ! костыли. Частично неактуальные.
+@@||menunedeli.ru/public/scripts/lib/perfect-scrollbar/perfect-scrollbar.jquery.min.js
+@@||menunedeli.ru/public/lib/jquery2/plugins/latest/scrollto/jquery.scrollTo.min.js
+@@||menunedeli.ru/*/jquery.sticky-kit.min.js
+@@||menunedeli.ru/*/ChatIndication/Indicator.js
+@@||menunedeli.ru/*/Widget/
+@@||menunedeli.ru/*/push.js
+    ! top
 ||menunedeli.ru/wp-content/themes/freshfruits11/img/extra-header.png
+menunedeli.ru##.head__logo
+    ! banners
 ||menunedeli.ru/*/frm_banner
 ||menunedeli.ru/*/icon_cook$image
-! big arrow down
-||menunedeli.ru/wp-content/uploads/2014/11/37/10.png
-! instagram sub
-||menunedeli.ru/wp-content/uploads/2018/06/01-2.png
+||menunedeli.ru/wp-content/uploads/2018/06/01-2.png  # instagram sub
+    ! other
+||menunedeli.ru/wp-content/uploads/2014/11/37/10.png  # big arrow down
 ! lenta menu
 ! position of header cannot be unfixed safely - in mobile mode design is ruining
 !
