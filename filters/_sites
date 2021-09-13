@@ -9471,8 +9471,8 @@ b.inbox.lv  # from Ru AdList
 inbox.lv##.branding
 
 ! top
-inc.com##.nav-logo
-! it blocking content when cookies disabled
+!inc.com##.nav-logo
+! it blocks content when cookies disabled
 inc.com$script
 
 incapdns.net$3p,script,image  # strange scripts and tracking imgs  # no root  # seems to be Incapsula site (see /_Incapsula_Resource rule, for instance)  # but don't block it entirely, at least, css is needed
@@ -21605,3 +21605,20 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 znak.com##.donate_text
 
 ||mail.ru/sw.js
+
+sweepatic.com##.site-nav-logo
+! empty nav
+sweepatic.com##.site-nav-main
+
+motorka.org##.userTitle
+
+! top (old forum, yes)
+forum.motolodka.ru##body > table > tbody > tr > td > table
+
+! logos
+vipkater.ru##.align-left-logo
+vipkater.ru###sidebar-nav-logo
+! top
+vipkater.ru###close-sidebar-nav
+vipkater.ru###sidebar-nav
+! other
