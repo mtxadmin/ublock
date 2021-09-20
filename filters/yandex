@@ -83,32 +83,7 @@ yandex.*##.distr-default-search_js_inited
 yandex.*##.distr-default-search__image
 yandex.*##.distr-default-search__content
 yandex.*##.distr-default-search
-
-yandex.*##.serp-header__nav
-yandex.*##.serp-footer__main
-yandex.*##.serp-user__login-link
-yandex.*##.serp-footer__search-settings
-yandex.*##.serp-adv__add
-yandex.*##.serp-adv__displayed
-yandex.*##.serp-adv__all
-yandex.*##.serp-footer__main
-yandex.*##.serp-footer__search-settings
-! is in AdGuard
-yandex.ru##.serp-footer__promo
-! is in AdGuard
-yandex.ru##.serp-footer__mob-app
-yandex.*##.serp-item-actions
-yandex.*##li:has-text(Яндекс.Директ)
-yandex.*##li.serp-item:has(.label_theme_direct.label)
-yandex.*##.MMDirectStripe
-
-! is in Ru AdList (as is. And this is not about yandex - seen on rambler)
-##.serp-block_type_market-offers
-
-    ! "Скачайте Яндекс-браузер. Ну скачайте! Ну очень надо."
-! is in Ru AdList and Fanboy's
-yandex.*##.footer_distro_yes
-yandex.*##.footer
+yandex.ru##.footer2__distr
 
     ! "Плюс"
 !yandex.*##.yaplus_js_inited
@@ -116,6 +91,40 @@ yandex.*##.footer
 ! is in Ru AdList and Fanboy's
 yandex.*##.yaplus
 yandex.ru##.Link_lego
+yandex.ru##.menu-plus-promo
+yandex.ru##.mheader3__plus
+
+    ! "Скачайте Яндекс-браузер. Ну скачайте! Ну очень надо."
+! is in Ru AdList and Fanboy's
+yandex.*##.footer_distro_yes
+yandex.*##.footer
+
+    ! other banners and promos (not all, there are too many of them)
+||yastatic.net/s3/home/promos/$image
+! is in Adguard
+yandex.ru##.serp-footer__promo
+yandex.ru##.menu-login-promo
+yandex.*##.serp-adv__add
+yandex.*##.serp-adv__displayed
+yandex.*##.serp-adv__all
+yandex.*##li:has-text(Яндекс.Директ)
+yandex.*##li.serp-item:has(.label_theme_direct.label)
+
+||yastatic.net/s3/frontend/granny/$image
+
+yandex.*##.serp-header__nav
+yandex.*##.serp-footer__main
+yandex.*##.serp-user__login-link
+yandex.*##.serp-footer__search-settings
+yandex.*##.serp-footer__main
+yandex.*##.serp-footer__search-settings
+! is in AdGuard
+yandex.ru##.serp-footer__mob-app
+yandex.*##.serp-item-actions
+yandex.*##.MMDirectStripe
+
+! is in Ru AdList (as is. And this is not about yandex - seen on rambler)
+##.serp-block_type_market-offers
 
 yandex.*##.i-dbn-cookie_js_inited
 yandex.*##.i-dbn-cookie
@@ -258,6 +267,7 @@ yandex.ru##.header2__logo
 yandex.ru##.home-logo__default
 yandex.ru##.yandex-header__logo
 yandex.ru##.serp-header__logo
+yandex.ru##.mlogo
 ||yastatic.net/s3/frontend/yandex-lego/serp-header/
 
 ! $third-party will not work, it loads in frame
