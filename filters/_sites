@@ -2530,6 +2530,10 @@ tarif-24.ru##.mh-ticker-bottom
 ##.textwidget
 ##.HTML.widget
 ##.custom-html-widget
+##.execphpwidget
+    alp.org.ua##.execphpwidget
+    texnoblogger.com##.execphpwidget
+    climateexchangeplc.com##.execphpwidget
 ##.widgettext
     !4sysops.com##.widget_text.widget:has-text(Follow 4sysops)
     !4sysops.com##.widget_text.widget:has-text(Subscribe to Newsletter)
@@ -3078,6 +3082,32 @@ tarif-24.ru##.mh-ticker-bottom
 4okna.info##div.linked_box
 
 ! 4pda.ru was blocked in Russia. Use 4pda.to domain
+    ! smiles
+||s.4pda.to/*/*.gif
+!||s.4pda.to/*/blink.gif
+!||s.4pda.to/*/blush.gif
+!||s.4pda.to/*/butcher.gif
+!||s.4pda.to/*/clapping.gif
+!||s.4pda.to/*/daisy.gif
+!||s.4pda.to/*/dancer.gif
+!||s.4pda.to/*/heart.gif
+!||s.4pda.to/*/help.gif
+!||s.4pda.to/*/love_4PDA.gif
+!||s.4pda.to/*/rofl.gif
+!||s.4pda.to/*/roll.gif
+!||s.4pda.to/*/rolleyes.gif
+!||s.4pda.to/*/scratch_one-s_head.gif
+!||s.4pda.to/*/search.gif
+!||s.4pda.to/*/smile_good.gif
+!||s.4pda.to/*/sveta.gif
+!||s.4pda.to/*/thank_you.gif
+!||s.4pda.to/*/wink.gif
+!||s.4pda.to/*/yes.gif
+! Ru AdList rule
+4pda.to##a[href*="utm_campai"]
+    ! banners and promos
+||ds-assets.cdn.devapps.ru/*.gif  # 4pda gif banners
+||devapps.ru/img/brand/$image  # 4pda banners
 ||4pda.to/BmZHgKP1PiJsAyY2lMDQMJLv8XeW862WiIMxXrYvsLqgyxcUwxcz19KMd.jpg
 ||4pda.to/BmZHgiyag3bcTxu62IKShYnYz1TSrIz1lfBz1GAvPoIOT1WW6ahXa.gif
 ||4pda.to/BmZHkuWAAUFpVEngKgXUEFNdtVak8UJCt2P23W6BX1AG8IO2CrZ.png
@@ -3106,69 +3136,45 @@ tarif-24.ru##.mh-ticker-bottom
 4pda.ru,4pda.to###logostrip
 4pda.ru,4pda.to##.signature
 4pda.ru,4pda.to###fo_-1
-! smiles
-||s.4pda.to/*/*.gif
-!||s.4pda.to/*/blink.gif
-!||s.4pda.to/*/blush.gif
-!||s.4pda.to/*/butcher.gif
-!||s.4pda.to/*/clapping.gif
-!||s.4pda.to/*/daisy.gif
-!||s.4pda.to/*/dancer.gif
-!||s.4pda.to/*/heart.gif
-!||s.4pda.to/*/help.gif
-!||s.4pda.to/*/love_4PDA.gif
-!||s.4pda.to/*/rofl.gif
-!||s.4pda.to/*/roll.gif
-!||s.4pda.to/*/rolleyes.gif
-!||s.4pda.to/*/scratch_one-s_head.gif
-!||s.4pda.to/*/search.gif
-!||s.4pda.to/*/smile_good.gif
-!||s.4pda.to/*/sveta.gif
-!||s.4pda.to/*/thank_you.gif
-!||s.4pda.to/*/wink.gif
-!||s.4pda.to/*/yes.gif
-! Ru Adlist / Fanboy's rule
-||s.4pda.to/*.js?_=0.9|$script
-! Ru AdList rule
-4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)
-! Ru AdList rule
-4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
-! Ru AdList rule
-4pda.to##a[href*="utm_campai"]
-! top banner
+    ! top banner
 4pda.ru,4pda.to##*:matches-css(height:/90.\d+/)
-! right square big banner (doesn't work properly)
+4pda.to##img:matches-css(height:90px)
+    ! right square big banner (doesn't work properly)
 4pda.ru,4pda.to##img[src^="https://s.4pda.to"]:matches-css(height:300px):matches-css(width:300px)
 4pda.ru,4pda.to##*:matches-css(width:300px)
 4pda.ru,4pda.to##img[src^="https://s.4pda.to"]:matches-css(height:240px):matches-css(width:240px)
 !4pda.ru,4pda.to##*:matches-css(width:240px)
-! promo (todo: collapse space)
+    ! promo (todo: collapse space)
 4pda.ru,4pda.to##div > h2:has-text(/(A|А)(p|р)(p|р)(P|Р)r(o|о)m(o|о)/)
 4pda.ru,4pda.to##div:matches-css(border-bottom-width:6px):matches-css(border-bottom-style:solid):matches-css(border-bottom-color: rgb(0, 114, 188))
-! ref links
+    ! ref links
 4pda.ru,4pda.to##.green.rounded.iblock.noborder.btn
 4pda.ru,4pda.to##.rounded.iblock.noborder.btn
-! polls
+    ! polls
 4pda.ru,4pda.to##div[id*="poll-ajax-frame"]
-! footer duplicate
+    ! footer duplicate
 4pda.ru,4pda.to##.footer-area
-! polls (upd:доработать - может зацепить кусок в поиске)
+    ! polls (upd:доработать - может зацепить кусок в поиске)
 !4pda.ru,4pda.to##tr > .row1
-! user: phone model
+    ! user: phone model
 4pda.ru,4pda.to##.postdetails > center > [href^="//4pda.ru/devdb/"]
-! footer
+    ! footer
 4pda.ru,4pda.to##.footer-panel
-! other
+    ! other
 ||4pda.ru/st/ztm
 ||4pda.to/st/ztm
 ||4pda.ru/st/heat_map
 ||4pda.to/st/heat_map
 ||4pda.ru/er/
 ||4pda.to/er/
-||ds-assets.cdn.devapps.ru/*.gif  # 4pda gif banners
 !4pda.ru,4pda.to##td.formbuttonrow - don't
 4pda.ru,4pda.to##tr[valign=top]
-||devapps.ru/img/brand/$image  # 4pda banners
+! Ru Adlist / Fanboy's rule
+||s.4pda.to/*.js?_=0.9|$script
+! Ru AdList rule
+4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)
+! Ru AdList rule
+4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
 
 
 ! This is NOT 4pda.ru.
@@ -18174,7 +18180,6 @@ teplo.guru###colorbox
 teplo.guru###cboxOverlay
 
 texnoblogger.com##.header-wrap
-texnoblogger.com##.execphpwidget
 texnoblogger.com##body:style(background:none !important)
 texnoblogger.com##.fa-thumbs-up
 texnoblogger.com##.rmp-main
@@ -21806,7 +21811,6 @@ vpnranks.com##.author-summary
 vpnmentor.com###scroll
 
 climateexchangeplc.com##.index-post-thumbnail
-climateexchangeplc.com##.execphpwidget
 climateexchangeplc.com###toc_container
 
 vasko.ru##.swal2-modal.swal2-popup
@@ -21849,3 +21853,36 @@ focus.ua##.c-footer__logo
 solarwinds.com##.article-right-banner
 
 domclick.ru##.ftr-styles-qr-wrapper--2-4-1
+
+||mountain.ru/img/home_img.jpg
+
+alp.org.ua###sape_links-2
+
+||paypal.com/xoplatform/logger/$important  # is in EasyPrivacy and Adguard
+||paypal.com/credit-presentment/log
+
+blackview-phone.com##.menu-label
+blackview-phone.com##.woodmart-sticky-btn
+
+kimovil.com##.k-shadow:style(position:static !important)
+kimovil.com###comparison-cart-chip
+kimovil.com###codeinjection-wrapper
+kimovil.com##.provider-logo
+kimovil.com##.price-section_new
+kimovil.com##.if-not-logged
+
+arenamobiles.com##.header__bottom
+
+gizchina.com##.td-visible-phone
+gizchina.com##[href="https://www.mobigaming.com/"]
+gizchina.com##.vw-content-sidebar
+gizchina.com##.vw-about-author
+
+testseek.com##.reveal-modal
+testseek.com##.reveal-modal-bg
+||testseek.com/templates/v2/images/owl_over$image
+
+worldstockmarket.net##.more-stories
+
+mobilewithprices.com##.top-bar:style(position:static !important)
+mobilewithprices.com##.coverc
