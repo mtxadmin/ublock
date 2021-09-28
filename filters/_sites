@@ -9662,6 +9662,14 @@ inoreader.com##.inno_dialog_modal_overlay
 ! social
 inoreader.com##.landing_input_social_login.landing_input_box > .landing_sign_social_buttons
 inoreader.com##.tree_announce
+! is in 3 lists
+inoreader.com##.landing_promo_banner_top
+! uBlock rule
+inoreader.com##+js(abort-on-property-read, max_raids)
+! Adguard rule
+inoreader.com##+js(set-constant, cr, 0)
+! Adguard rule
+inoreader.com##+js(set-constant, gn, true)
 
 inpearls.ru$inline-script  # site breaks copypaste
 
