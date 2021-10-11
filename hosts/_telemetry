@@ -11,10 +11,12 @@
 
 4sync.com  # some app wants to go there. Not official, of course - 4sync doesn't have any. Very suspicious. And 4sync (paid cloud service) doesn't have free plan.
 
+4yougames.site  # app requests
+
 s1.adguard.com  # from Adguard (sic!)
 dnscheck.adguard.com  # from Adguard (sic!)
 
-report-edge.agora.io
+report-edge.agora.io  # app request  # "Agora analytics"
 
 stat.alibaba.com  # from Adguard
 
@@ -44,6 +46,8 @@ analytics.ns1.ff.avast.com  # from MobileAdTrackers
 mobile-campaigns.avast.com  # from MobileAdTrackers
 stats.avast.com  # from MobileAdTrackers
 uib.ff.avast.com  # from Peter Lowe's hosts file
+
+rmb.ops.beeline.ru
 
 gdn.bigfishgames.com  # from Adguard
 
@@ -105,8 +109,7 @@ static.ak.fbcdn.net  # static.ak.fbcdn.net$domain=~facebook.com|~fb.com  # is in
 
 notifications.farpost.ru  # app telemetry
 
-tm-banners.gamingadult.com  # from Adguard
-tm-offers.gamingadult.com  # from Adguard
+firebaseio.com  # app requests and no root
 
 ! it seems that GO Keyboard and/or GO Launcher are sending user information to dev server
 gomo.com
@@ -207,8 +210,6 @@ operamini-sub.osp.opera.software
 api-a.op-mobile.opera.com
 pps-log.op-mobile.opera.com  # from Adguard
 
-opera-mini.net  # app requests
-
 adserver.pandora.com  # from Adguard
 
 stats.paypal.com  # from MobileAdTrackers and Adguard
@@ -223,7 +224,10 @@ pluginmanagerconfig1.info  # app telemetry and empty root
 
 sube.puwangkj.com  # from Adguard
 
-telemetry.swe.quicinc.com  # Blocked by some adlist in Blokada  # quicinc.com redirects to qualcomm.com
+quicinc.com  # app requests to telemetry.swe.quicinc.com, root redirects to qualcomm.com  # Blocked by some adlist in Blokada
+!+  swe.quicinc.com
+!+      telemetry.swe.quicinc.com
+! end of quicinc.com
 
 roku.com  # is in BlockListProject/SmartTV
 
@@ -383,6 +387,8 @@ publisher-event.ads.prd.ie.internal.unity3d.com  # from Energized Blu
 ads-game-configuration-master.ads.prd.ie.internal.unity3d.com  # from Energized Blu
 config.unityads.unitychina.cn
 ecommerce.iap.unity3d.com  # ad requests
+
+urbandroid.org  # app requests to sleep.urbandroid.org
 
 ads.viber.com  # from MobileAdTrackers
 ads-d.viber.com  # from MobileAdTrackers
