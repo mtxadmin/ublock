@@ -4,7 +4,8 @@
 
 Constantly updated filter list for uBlock Origin. Removes banners and spying modules, blocks fraudulent sites. And also removes different annoyances from internet pages. [See the full list here.](docs/policy_en.md) Let's make sites cleaner and reading more comfortable and secure!
 
-Also, there is a child project - [Yet another small hosts file](docs/hosts_file_en.md) 
+Also, there is a child project - [Yet another small hosts file](docs/hosts_file_en.md) (Not very actual, sorry) and [Yet another smart Blokada hosts file](docs/hosts_file_blokada_en.md)
+
 
 ## How it works?
 
