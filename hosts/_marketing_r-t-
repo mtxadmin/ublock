@@ -8509,7 +8509,14 @@ tynt.com$important  # "traffic and monetization platform"  # now 33across.com
 # don't block typeform.com - it is "form as a service". At least, scripts from embed.typeform.com seem normal. See #36
 # typeform.com
 
-# don't block typekit.net entirely. See _marketing__subdomains
+typekit.net$important  # ad scripts: p.typekit.net, use.typekit.net  # from hpHosts’ Ad and tracking servers. And it is in AdGuard  # it is NOT css! in fact, it is a tracking instead, with many parameters
+# Update: 
+#use.typekit.net$css is ok
+#ping.typekit.net is in lists
+#p.typekit.net
+#ping.typekit.net
+# Update2
+#p.typekit.net is NOT ok.
 
 typicalairplane.com  # from Adguard
 
