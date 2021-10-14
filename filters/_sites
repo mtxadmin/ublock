@@ -378,25 +378,25 @@ _advert/  # from EasyList
     ##div[id^="adrotate_widgets-"]
     ! is in EasyList
     ##.adrotate_widgets
-~obi.ru##[class^="ads"]:not(html):not(body):not(article)
-~e-du.ru##[id^="ads"]:not(html):not(body):not(article)
+~obi.ru,~yandex.*##[class^="ads"]:not(html):not(body):not(article)
+~e-du.ru,~yandex.*##[id^="ads"]:not(html):not(body):not(article)
     ! from Ru AdList: ##div[id^="ads_games_"]
     ! is in EasyList: ##.ads-fr
-~blogspot.com##[class$="-ads"]:not(html):not(body):not(article)
-##[id$="-ads"]:not(html):not(body):not(article)
+~blogspot.com,~yandex.*##[class$="-ads"]:not(html):not(body):not(article)
+~yandex.*##[id$="-ads"]:not(html):not(body):not(article)
     ! is in EasyList
     !###player-ads
     ! is in EasyList
     !##.sidebar-ads
-~libreelec.tv,~obi.ru##[class*="-ads-"]:not(html):not(body):not(article)
-##[id*="-ads-"]:not(html):not(body):not(article)
-##[class*="_ads_"]:not(html):not(body):not(article)
-##[id*="_ads_"]:not(html):not(body):not(article)
-##[class$="_ads"]:not(html):not(body):not(article)
-~adblockplus.org##[id$="_ads"]:not(html):not(body):not(article)
+~libreelec.tv,~obi.ru,~yandex.*##[class*="-ads-"]:not(html):not(body):not(article)
+~yandex.*##[id*="-ads-"]:not(html):not(body):not(article)
+~yandex.*##[class*="_ads_"]:not(html):not(body):not(article)
+~yandex.*##[id*="_ads_"]:not(html):not(body):not(article)
+~yandex.*##[class$="_ads"]:not(html):not(body):not(article)
+~adblockplus.org,~yandex.*##[id$="_ads"]:not(html):not(body):not(article)
 ##[class*="Advert"]:not(html):not(body):not(article)
 ##[id*="Advert"]:not(html):not(body):not(article)
-~e.mail.ru,~radikal.ru##[class*="advert"]:not(html):not(body):not(article)
+~e.mail.ru,~radikal.ru,~yandex.*##[class*="advert"]:not(html):not(body):not(article)
     ! is in EasyList
     ##.advert-block
     ! is in EasyList
