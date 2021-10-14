@@ -22370,3 +22370,24 @@ werdum-army.ru###top-bar-wrap
 
 rogatkashop.ru##.header-widget-phone
 rogatkashop.ru##.fly-panel:style(position:static !important)
+
+syhpay.ru##.navbar-nav:style(position:static !important)
+
+motor.ru##.zalipuha
+
+! Adguard rule
+motor.ru##div:not([class$="native-banner"]) > div[data-render-state] > div[id^="block-id-"][id$="-container"]
+! Ru AdList rule
+motor.ru##div[data-render-state] > div[style*="min-height:"]
+
+! logos
+motor.ru##div:matches-css(height:42px):has(a[href="/theme/acura"])
+
+! is in Adguard
+##.topbaner
+! is in Ru AdList
+##.tv-grid__item-adv-content
+! is in Adguard and Ru AdList
+##.serp-adv__banner
+
+e1.ru##*:matches-css(position:fixed)
