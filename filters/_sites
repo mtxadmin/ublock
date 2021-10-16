@@ -1122,6 +1122,7 @@ blank.gif
 ?frm=script&se_referrer=  # from AdGuard
 /gccounter.js
 /geo.php?  # is in EasyPrivacy
+/geocheck$important
 /geoip.city  # bitrix popups removed: ##.bxmaker__geoip__city__line-question and ##.current-city-notice
 /geotools/*  # ad xhrs
 .gif?event=  # is in EasyPrivacy
@@ -7199,9 +7200,7 @@ ebay.com##div[title="ADVERTISEMENT"]
 ebay.com##div[id^="rtm_html_"]
 ! from Web Annoyances Ultralist
 ebay.com###app-product-sticky-header
-! from EasyPrivacy
-||rover.ebay.$image
-||rover.ebay.com
+||rover.ebay.$image  # from EasyPrivacy
 ! is in EasyList
 ||ebay.com^*/scandalloader.js
 ! from EasyList
