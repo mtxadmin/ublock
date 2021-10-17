@@ -3269,6 +3269,8 @@ tarif-24.ru##.mh-ticker-bottom
 5play.ru##.friends.tell
 5play.ru##.recommended
 
+5sim.net##.blink-me.glyphicon-alert
+
 60sk.ru##.breaking-news
 
 ||66.ru/show/$third-party  # from Adguard
@@ -4182,6 +4184,9 @@ arms-expo.ru##.news-full__footer
 ||armsline.ru/img/page.jpg
 armsline.ru##.no-cart-add
 
+armytur.ru##.text-upper
+armytur.ru##footer > .container p
+
 ||arosa-market.ru/*/payment-system.svg
 arosa-market.ru##.footer-contact
 arosa-market.ru##.delivery-message
@@ -5025,6 +5030,8 @@ blackview-phone.com##.woodmart-sticky-btn
 ||blackview-shop.com/*/paymenticon.png
 blackview-shop.com##.woodmart-sticky-btn
 blackview-shop.com##.product-labels
+
+bladeforum.ru##.rules
 
 ||s.blamper.ru/js/app/widgets/common/FakeChat/
 
@@ -6217,6 +6224,8 @@ cyble.ai$3p  # captcha to enter
 
 cypressinfo.org$script,3p
 
+czub.cz##.o-job:style(position:static !important)
+
 d3.ru##.b-user_cover-photo
 
 dachniy-ugolok.ru##.message
@@ -6357,6 +6366,8 @@ decathlon.ru##.space-nps
 
 deccanchronicle.com###top-bar
 deccanchronicle.com##.horiAd
+
+decu.ru##.product_card-label
 
 dekoriko.ru##nav.navigation:nth-of-type(1)
 
@@ -9695,6 +9706,12 @@ ilive.com.ua##.message
 
 ilovefreesoftware.com##[href="https://inklik.com/"]
 
+ilyabirman.ru##.menu-spacer
+  ! views
+ilyabirman.ru##.e2-notes-gallery-item-meta > span:has(.e2-svgi)
+ilyabirman.ru##.e2-note-meta > span:has(.e2-svgi)
+  ! other
+
 imagebam.com##.navbar-imagebam
 ||imagebam.com/js/site_ads.js$important
 imagebam.com###mrporngeek
@@ -12319,7 +12336,11 @@ megaobzor.com###mobzor:style(margin-top:0px !important)
 megaobzor.com##.icon-2vkontakte
 megaobzor.com##.icon-2youtube
 
-||stat.megapesni.com
+megaplan.ru##.pages-inner:style(padding-top:0px !important)
+megaplan.ru##.pages-inner-info-views
+megaplan.ru##.green
+megaplan.ru##.share
+megaplan.ru##.h1:has-text(Блог)
 
 megasantexnika.ru##.btn-primary
 megasantexnika.ru###brends
@@ -12381,7 +12402,14 @@ meshok.net$3p  # ad cookies
 meshok.net##.bar:style(position:static !important)
 meshok.net##[class^=goTopButton]
 meshok.net##td > .a3.doted:has-text(является благотворительным)
+! top
+meshok.net##.backAvailable_pg-bI > div
+! footer
 meshok.net###footer > div
+||meshok.net/nuxt/app-apple-en.svg
+||meshok.net/nuxt/app-google-en.svg
+! other
+meshok.net##div.card_1A_5U:has-text(Recently viewed)
 
 messermeister.ru##.fixednav:style(position:static !important)
 messermeister.ru##.product-ribbon
@@ -12464,6 +12492,9 @@ mikrotik.ru###floating:style(position:static !important)
 ||militant.ru/images/new1.png
 militant.ru###communications
 militant.ru##.action_banner_s
+
+militarka.com###ajax-cart
+militarka.com##.deliveries
 
 ||militaryarms.ru/wp-content/themes/MilitaryArms/images/bl-bg.png
 ! partner links
@@ -13047,6 +13078,8 @@ myjane.ru###popup_message
 myjane.ru##.b-vacancy
 
 mykharkov.info##.footer
+
+myownship.ru##.soderzhanie
 
 myraspberry.ru##.stickyy
 myraspberry.ru##.article-bammer.newbammer
@@ -13818,6 +13851,29 @@ okna-servise.com##.wrap-man.wrap
 
 okrug.ru##.side_button:style(position:static !important)
 okrug.ru###back-top1
+! top
+||okrug.ru/*/catalog_button.png
+okrug.ru##.slideshow
+okrug.ru###sl_r
+okrug.ru###sl_l
+okrug.ru###top-block
+okrug.ru###menu-bg
+okrug.ru###header
+okrug.ru##.ui-widget.ui-tabs
+! main
+okrug.ru###content:style(min-height:0px !important)
+! seo texts
+okrug.ru###main-text
+! footer
+okrug.ru###bot-footer
+okrug.ru###right-panel:style(position:static !important)
+okrug.ru##.subcontent:style(min-height:0px !important)
+okrug.ru##.b-page_newyear
+okrug.ru###top-footer:style(height:auto !important)
+! other
+okrug.ru##.b1c
+okrug.ru###viewed-prod
+okrug.ru###related
 
 old-games.ru##.header
 
@@ -13886,6 +13942,8 @@ nliner.by##.news-popular__views
 ||onliner.by/user/avatar/  # noisy gifs in the comments
 onliner.by##.growl-error.growl
 onliner.by##p:has-text(блокировщик рекламы)
+
+onlinesim.ru###support
 
 ||onlinetrade.ru/*/ic__paysystems.png
 onlinetrade.ru##.siteAgeRate
@@ -15650,11 +15708,15 @@ peroxide.rambler.ru  # ad xhrs
 ||rambler.ru/api/v4/okko-metrics
 ||rambler.ru/clicks/
 ||rambler.ru/location/
+||rambler.ru/metrics/  # is in EastPrivacy
 ||ssp.rambler.ru/capirs_async.js$important
 ||ramblernews.media.eagleplatform.com$subdocument  # rambler
     ! rules
+rambler.ru$inline-script  # Рамблер ломает себе вёрстку при загрузке через пару секунд. А контент всё равно не отображает. Да и фиг с ним.
 ! rambler "recommendations" (ads)
 ##.rcm-widget
+! денег хотят
+rbc.ru##.pro-anons
 ! Rambler rnet ad network. Ru AdList rule. Also see similar in lenta.ru
 rambler.ru##div[data-rnet]
 evelopers.rambler.ru/likes/
@@ -15710,6 +15772,7 @@ ratniksafe.ru##.carousel-devs
 ratniksafe.ru##.manufacturer
 ratniksafe.ru###tab-description > p:has-text(Купить)
 ratniksafe.ru###tab-description > div:has-text(Купить)
+ratniksafe.ru##.category-manufacturer
 
 ravak.ru###header-brand
 
@@ -19059,6 +19122,8 @@ tonygonzalez0379.com##body::before
 tonygonzalez0379.com##.site-content:style(margin-left:0px !important; width:100% !important)
 tonygonzalez0379.com##.donations__container
 
+topbestalternatives.com##div.app.section
+
 ||topclimat.ru/$third-party
 
 top-hammam.ru###fancybox-wrap
@@ -20211,6 +20276,15 @@ vodoparad.ru##.count
 ||voenhronika.ru/pic/header-red.jpg
 ||voenhronika.ru/pic/knopkainst.png
 
+voenpro.ru##.new_manegers
+voenpro.ru###cart_informer
+voenpro.ru###left
+voenpro.ru##.call_order
+
+voenshop51.ru##.future
+voenshop51.ru##.future2
+voenshop51.ru##.contact-link
+
 voensud.ru###adunits-footer
 
 ||voenteka.ru/*/paysystem/logotip/
@@ -20221,6 +20295,7 @@ voenteka.ru##.logo-row
 
 ||voen-torg.ru/*/ab__so_seohide/
 voen-torg.ru##.fixed-top:style(position:static !important)
+voen-torg.ru##.top-menu-grid:style(position:static !important)
 voen-torg.ru##.top-menu:style(margin-top:0px !important)
 voen-torg.ru##.top-menu::before
 voen-torg.ru##.top-menu::after
@@ -20234,6 +20309,12 @@ voen-torg.ru##.ty-cr-phone-number
 ||voentorg.ru/images/img/man1.png
 voentorg.ru##.front_banner
 voentorg.ru##.contact_info
+
+voentorga.ru##.fancybox.catalog_buy
+voentorga.ru##.holidays
+voentorga.ru##.holidays-holder
+voentorga.ru##.manufacturer-holder
+voentorga.ru##.payment-list
 
 voentorgt.ru##.c-bxmaker_geoip_line_default_box
 voentorgt.ru##.sertificat
@@ -21255,6 +21336,14 @@ xn--80axgaaqjw.xn--p1ai##.plogo
 xn----8sbjufbbcmolbtcflf.xn--p1ai###ipsDebug_footer
 
 xn----8sbmnbjdi5acl5a.xn--p1ai##header
+
+||xn--90abj6adui5e.xn--p1ai/*/vo_header.jpg
+||xn--90abj6adui5e.xn--p1ai/*/voentorg.png
+||xn--90abj6adui5e.xn--p1ai/*/vo_basket.jpg
+||xn--90abj6adui5e.xn--p1ai/*/vo_footer.jpg
+xn--90abj6adui5e.xn--p1ai##.voHeader:style(height:auto !important)
+xn--90abj6adui5e.xn--p1ai##.headerLine
+xn--90abj6adui5e.xn--p1ai##.slider-wrapper
 
 xn--90acbu5aj5f.xn--p1ai###contact_me
 xn--90acbu5aj5f.xn--p1ai##.site-footer
