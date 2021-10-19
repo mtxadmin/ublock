@@ -3147,6 +3147,10 @@ tarif-24.ru##.mh-ticker-bottom
 4pda.ru,4pda.to##*:matches-css(width:300px)
 4pda.ru,4pda.to##img[src^="https://s.4pda.to"]:matches-css(height:240px):matches-css(width:240px)
 !4pda.ru,4pda.to##*:matches-css(width:240px)
+    ! top menu banners
+4pda.to##.menu-main-item > [href^="https://4pda.to/huawei/"]
+    ! logo
+4pda.to##.icon-4PDA-plain
     ! promo (todo: collapse space)
 4pda.ru,4pda.to##div > h2:has-text(/(A|А)(p|р)(p|р)(P|Р)r(o|о)m(o|о)/)
 4pda.ru,4pda.to##div:matches-css(border-bottom-width:6px):matches-css(border-bottom-style:solid):matches-css(border-bottom-color: rgb(0, 114, 188))
@@ -3881,12 +3885,15 @@ androidauthority.com##.positive
 androidauthority.com##.buy-holder
 
 androidcentral.com##.region-site-header
+androidcentral.com##.notices
 
 androidfeel.ru##.header
 androidfeel.ru##.all-wrap:style(background:none !important; background-color:white !important)
 androidfeel.ru##.rel-wrap
 
 androidforums.com##.noticeContent
+androidforums.com##.mystuff
+androidforums.com##.uix_message:has(.primary)
 
 androidheadlines.com##.widget-ahsocial
 androidheadlines.com##.widget-ahcount
@@ -7122,6 +7129,7 @@ duolingo.com##div:has(> div > h2:has-text(/Используете блокиро
 duolingo.com##.logged-out-topbar:style(position:static !important)
 duolingo.com##.splash-container:style(margin-top:0px !important; margin-bottom:0px !important; padding-bottom:0px !important)
 duolingo.com##button:has-text(2020 offer)
+duolingo.com##div:has-text(in just 5 minutes):matches-css(position:fixed)
   ||duolingo.com/images/juicy-duo-ad-blocker.svg
 ||cloudfront.net/images/juicy-duo-ad-blocker.svg
   ||duolingo.com/images/duo-plus-ribbon.svg
@@ -8021,6 +8029,9 @@ firesticktricks.com###sgpb-popup-dialog-main-div-wrapper
 firesticktricks.com##.sgpb-popup-overlay
 firesticktricks.com##.warning
 firesticktricks.com##.su-label-type-important
+firesticktricks.com##.mysticky-welcomebar-fixed-wrap
+firesticktricks.com##.card-affi
+firesticktricks.com##.card-compare
 
 ||firewall.cx/images/stories/collaborations/$image
 ||firewall.cx/images/stories/header/firewallcx-logo
@@ -10765,6 +10776,7 @@ kodibeginner.com###masthead.site-header
 ! banners
 kodi-guide.com##.privacy-box
 ! other
+kodi-guide.com##.textwidget
 
 koditips.com##.mtsnb
 koditips.com##.entry-content > .entry-content > div
@@ -19291,6 +19303,8 @@ troypoint.com##.fusion-sticky-shadow:style(height:auto !important)
 troypoint.com##a[href^="https://troypoint.lpages.co/"]
 troypoint.com##a[href^="https://troypoint.com/troypoint-rapid-app-installer"]
 ! other
+troypoint.com##[href="https://troypoint.com"]
+troypoint.com##.su-box
 
 trubamaster.ru##.widget-title:has-text(Реклама)
 
@@ -22535,3 +22549,5 @@ airtable.com##.mb2.pb2.pt2.px2.rounded-big.cyanLight2:has-text(trial)
 airtable.com##.absolute:style(position:static !important)
 airtable.com##.homeScreenTopBar:style(position:static !important)
 airtable.com##a[href="https://airtable.com/"][aria-label="Airtable home"]
+
+moodeaudio.org##.signature
