@@ -11,11 +11,11 @@
 
 !! Disable stats for sources
 mastarti.com/stats/$important
-c1.hdgo.cc$important
+!c1.hdgo.cc$important  # transfered to hosts
 vio.to/stat_date/$important
 streamguard.cc/stats/$important
 alforenao.com/stats/
-hbplatform.com  # is in Ru AdList and Adguard
+!hbplatform.com  # is in Ru AdList and Adguard  # transfered to hosts
 ! from EasyPricacy
 ||streamango.com/log
 !||streamango.com/googlead.js$important
@@ -840,8 +840,7 @@ hdkinoup.online##.m-age
 hdkinoup.online##.new-rating
 hdkinoup.online##.to-rate
 
-! fake video site
-hdpopcorns.online
+!hdpopcorns.online  # fake video site. Transferred to hosts.
 
 hdreactor.club###footer-vesna2
 ||hdreactor.club/templates/hdkino.gif
@@ -894,6 +893,7 @@ hdrezka.website##.b-post__support_holder
 hdrezka.website##.b-post__support_holder_report
 hdrezka.tv##.show-trailer
 rezka.ag##.show-trailer
+rezka.ag##.cat
 ! Adguard rule
 hdrezka.tv,hdrezka.website,rezka.ag##+js(remove-class, active-brand, body)
 ! Adguard rule
@@ -1222,17 +1222,16 @@ kinorai.org##.plus
 kinorai.org##[href="/tv-onlajn/"]
 kinorai.org##.sidebar2 > ul > li:nth-of-type(1)
 
-! kino-sayt.net is offline
-kino-sayt.net##.cap
-kino-sayt.net##.header
+! kino-sayt.net is offline. Update: online again, but parked
+!kino-sayt.net##.cap
+!kino-sayt.net##.header
 !kino-sayt.net##.rollover
 !kino-sayt.net##.u-star-rating-20
 !kino-sayt.net##.u-star-rating-30
-||kino-sayt.net/images/te.png$image
-kino-sayt.net###acform
+!||kino-sayt.net/images/te.png
+!kino-sayt.net###acform
 
-! background setting script
-||kinosezon.tv/*/ulightbox.min.js
+||kinosezon.tv/*/ulightbox.min.js  # background setting script
 kinosezon.tv###header
 kinosezon.tv###user-box
 !kinosezon.tv##div.sidebox:has-text(/Календарь|Советуем|Про Нас|Хит Сезона|Популярное|Статистика|Форма входа/)
@@ -1280,9 +1279,8 @@ kinosezon.tv###rated
 ! kinostar.pro now is not cinema
 !kinostar.pro##.line
 
-kinostuff.com
-! from NoCoin Filter List
-||play.mix.kinostuff.com^
+!kinostuff.com - transferred to hosts
+!# from NoCoin Filter List: ||play.mix.kinostuff.com^
 
 kinosub-online.ru##.slider_box
 !kinosub-online.ru###footer
@@ -1363,7 +1361,7 @@ kinozabor.net##.wrp:style(margin-top:0px !important)
 
 ! kmt-max.ru - кривое скачивание: яндекс-браузер, mediaget. Block it.
 ! now it blocks by itself
-kmt-max.ru
+! kmt-max.ru  # and now it is closed
 ! all before it:
 !||kmt-max.ru/templates/Kino/images/offer/
 !kmt-max.ru##.fullstory-age
@@ -1660,8 +1658,9 @@ pickfilm.ru##.inline-rating
 pickfilm.ru###rating_votes
 ||veleto.ru/media/theme/pickfilm_ru1.png
 
-plrjs.com$xhr
-lic.plrjs.com
+! transferred to hosts
+!plrjs.com$xhr
+!lic.plrjs.com
 
 ! disable exception from uBlock
 @@||popcornflix.com^$generichide,badfilter
@@ -2136,8 +2135,6 @@ topserials.tv##.category-header
 topserials.tv##.cinemapress-news
 
 ||grimm-serial.ru/*/bgs.jpg
-
-rezka.ag##.cat
 
 60-fps.org##.div_avert
 60-fps.org##div.small > div:has-text(in this forum)
