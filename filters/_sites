@@ -12411,20 +12411,30 @@ meridianoutpost.com###header
 meshok.net$3p  # ad cookies
 ||meshok.net/*/mlogo.png
 ||meshok.net/googleMeshok.png
+||meshok.ru/googleMeshok.png
 ||meshok.net/apple1.png
+||meshok.ru/apple1.png
 ||meshok.net/i/ui.totop.png
+||meshok.ru/i/ui.totop.png
 ###logoD
-meshok.net##.bar:style(position:static !important)
 meshok.net##[class^=goTopButton]
 meshok.net##td > .a3.doted:has-text(является благотворительным)
-! top
+    ! top
+meshok.net##.bar:style(position:static !important)
+meshok.ru##.bar:style(position:static !important)
 meshok.net##.backAvailable_pg-bI > div
-! footer
+! top filler
+meshok.net##.application--wrap > div > div:has-text(/^$/)
+meshok.ru###topTit
+    ! footer
 meshok.net###footer > div
 ||meshok.net/nuxt/app-apple-en.svg
 ||meshok.net/nuxt/app-google-en.svg
-! other
-meshok.net##div.card_1A_5U:has-text(Recently viewed)
+    ! popups
+meshok.net##[class^=updateRequired]
+    ! other
+meshok.net##.card_1A_5U:has-text(Recently viewed)
+meshok.net##.card_1A_5U:has-text(This lot is charitable)
 
 messermeister.ru##.fixednav:style(position:static !important)
 messermeister.ru##.product-ribbon
