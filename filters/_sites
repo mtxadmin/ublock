@@ -20830,6 +20830,8 @@ wikiwand.com###article_content_wrapper:style(margin-top:40px !important)
 ||wbstatic.net/marketing/
     ! top
 wildberries.ru##.header-bg:style(top:0px !important)
+! проблема с поисковой формой. Если убрать класс, то хотя бы placeholder виден
+wildberries.ru##+js(remove-attr, class, .search-catalog__input)
     ! quick view
 wildberries.ru##.preview-item
 wildberries.ru##.j-open-product-popup
@@ -20841,11 +20843,13 @@ wildberries.ru##.j-vip-status-popup
 wildberries.ru##.tooltipster-content:has-text(Используйте разные размеры карточек)
     ! promos and banners
 wildberries.ru##.i-spec-action
+wildberries.ru##.spec-action
 !wildberries.ru##.new-carousels-and-banners
     ! old (striked out) prices
 wildberries.ru##.old-price
 wildberries.ru##.price-last
 wildberries.ru##.price-old-block
+wildberries.ru##.product-card__sale
     ! up button
 wildberries.ru##.j-quicknav
 wildberries.ru##.quicknav-v1
@@ -20872,6 +20876,7 @@ wildberries.ru##.suppliers-section
 wildberries.ru##.compatability
 wildberries.ru##.i-tags-group
 wildberries.ru##.also-buy-wrapper
+wildberries.ru##.scrolled-socials
 
 ||wild-mistress.ru/rs/img/limitsign-min.png
 wild-mistress.ru##.tbcust.row
