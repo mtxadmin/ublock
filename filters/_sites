@@ -4490,11 +4490,22 @@ avidreaders.ru##.footer
 ||avito.ru/dstatic/build/sentry
 ||avito.ru/dstatic/build/fingerprint
 ||avito.ru/stat/  # is in EasyPrivacy
-avito.ru##.js-catalog-item-enum:has-text(Компьютерный мастер)
-avito.ru##[class^=sendout-banner]
+    ! unstick top
+!avito.ru##*:matches-css(position:sticky):style(position:static !important) - моргает
+avito.ru##[class*=index-stickyHeader]:style(position:static !important)
+avito.ru##[class*=header]:style(position:static !important)
+avito.ru##[class*=sticky]:style(position:static !important)
+! это уже не работает, но пусть будет
 avito.ru##.sticky-header
+! и снизу там еще дубликат
+avito.ru##[class^=push-root]
+    ! banners and promos
+avito.ru##[class^=sendout-banner]
 avito.ru##[class*=tooltip-placement-bottom]
 avito.ru##[class*=items-vip]
+    ! спам и разводки
+avito.ru##.js-catalog-item-enum:has-text(Компьютерный мастер)
+    ! other
 avito.ru##[class^=logo-]
 avito.ru##[class^=index-social-]
 avito.ru##.icon-forbidden
@@ -19066,6 +19077,7 @@ titki.top##.footer-links
 tiu.ru##.x-overlay__dialog_type_padded.x-overlay__dialog
 tiu.ru##.x-overlay
 ! header
+tiu.ru##*:matches-css(position:sticky):style(position:static !important)
 tiu.ru##.x-top-banner
 tiu.ru##.ek-grid__item > .ek-link
 tiu.ru##.x-catalog__custom_sticky:style(position:static !important)
