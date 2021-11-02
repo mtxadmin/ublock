@@ -9536,6 +9536,8 @@ huntergo.ru##.bottom-under
 huntergo.ru##.brand_main_wrapper
 huntergo.ru##.adv_bottom_block
 
+hunter-izh.ru##.content-logo
+
 huntfish.by##.logo-text-wrap
 huntfish.by##.logo-pic
 huntfish.by##.edit-block-wrap
@@ -15277,6 +15279,11 @@ ponominalu.ru##.pn-site-footer__icon_sberbank
 ponominalu.ru##.pn-subscription
 ponominalu.ru##.td_block_trending_now
 
+||ponyfiction.org/localstatic/ponyfiction/$image
+||ponyfiction.org/media/logopics/
+||ponyfiction.org/media/characters/
+ponyfiction.org###loading-icon
+
 ponymashka.ru##.slider
 
 popadiv10.ru##.b1c
@@ -19437,6 +19444,11 @@ treasury.gov###usa-header:style(position:static !important)
 
 trekker.net##.site-header
 
+||trellocdn.com/*/snowplow  # analytics
+||atlassian.com/sentry/
+! in new design, workplaces sometimes are padded left. Don't know why, but let's correct it.
+trello.com##div:matches-css(padding-left: 260px):style(padding-left:0px !important)
+
 trendmicro.com##[class^=_nav_logo]
 trendmicro.com##[class^=_nav_navigation]:style(position:static !important)
 
@@ -19863,6 +19875,12 @@ unlimtariffs.ru###navi
 
 ||unpkg.com/eventemitter
 ||unpkg.com/web-vitals  # ad tracking scripts  #https://unpkg.com/web-vitals@1.1.0/dist/web-vitals.umd.js
+! shopify scripts
+! upd: not only. There are some non-ad scripts there
+!unpkg.com
+||unpkg.com/freezeframe/
+! shopify ad scripts
+||unpkg.com/libphonenumber-js
 
 update.ph##.site-header
 
@@ -21966,6 +21984,12 @@ zeit.de##.consent
 
 ||zelen.ru/images/b/
 
+zelenograd.ru##.form-panel_fixed:style(position:static !important)
+
+zelenograd-avtoshkola.ru##.logo_wrap
+zelenograd-avtoshkola.ru##.header_wrap_information
+zelenograd-avtoshkola.ru##.slider-1
+
 zello.com##.wrapper:style(padding-top:0px !important)
 zello.com,zellowork.com##.header-container:style(height:auto !important)
 
@@ -22713,31 +22737,6 @@ umterps.com##div:has-text(Ad Blocker Detected)
 pixelexperience.org##[href="/"]
 pixelexperience.org##.contribute
 pixelexperience.org##.about__art
-
-! shopify scripts
-! upd: not only. There are some non-ad scripts there
-!unpkg.com
-||unpkg.com/freezeframe/
-! shopify ad scripts
-||unpkg.com/libphonenumber-js
-
-||trellocdn.com/*/snowplow  # analytics
-||atlassian.com/sentry/
-! in new design, workplaces sometimes are padded left. Don't know why, but let's correct it.
-trello.com##div:matches-css(padding-left: 260px):style(padding-left:0px !important)
-
-||ponyfiction.org/localstatic/ponyfiction/$image
-||ponyfiction.org/media/logopics/
-||ponyfiction.org/media/characters/
-ponyfiction.org###loading-icon
-
-zelenograd-avtoshkola.ru##.logo_wrap
-zelenograd-avtoshkola.ru##.header_wrap_information
-zelenograd-avtoshkola.ru##.slider-1
-
-zelenograd.ru##.form-panel_fixed:style(position:static !important)
-
-hunter-izh.ru##.content-logo
 
 libreelec.tv##.overlay
 
