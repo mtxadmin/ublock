@@ -1440,6 +1440,7 @@ _pagespeed_beacon?  # from AdGuard
 ###back-to-the-top
 ! from Fanboy's
 ###back-to-top
+##.back-to-top
 ###backtoTop
 ###backtotopbutton
 ###backtotoplink
@@ -1471,6 +1472,7 @@ _pagespeed_beacon?  # from AdGuard
 ##.fa-arrow-circle-up
 ##.fa-arrow-down
 ##.fa-angle-up
+##.fa-angle-double-up
 ##.fa-chevron-up
 ##.fastBack
 ###fast-back-top
@@ -6075,9 +6077,14 @@ computing.net##p > font
 !computingforgeeks.com##.td-banner-wrap-full  ! doesn't work with general -- it was an exception from AdGuard
 computingforgeeks.com##.td-trending-now-wrapper
 
-docs.cntd.ru##.on:style(position:absolute !important)
-docs.cntd.ru##.payBlockAssistant
+cntd.ru##.on:style(position:absolute !important)
+cntd.ru##.payBlockAssistant
 cntd.ru##.reviewStars-case
+cntd.ru##.__marketing
+cntd.ru##.bottom-banner
+cntd.ru##.header_top_logo
+cntd.ru##.__fixed
+cntd.ru##.fix-panel
 
 codeby.net##.uix_headerContainer > div:nth-of-type(4)
 
@@ -8034,6 +8041,7 @@ film.ru$3p  # ad xhrs  # paid movies (megogo)
 ! hochuvkino
 film.ru##.hochuvkino
 film.ru##div > [href="https://hochuvkino.ru"]
+film.ru##[href="/online"]
 ! okko
 film.ru###okko
 ! is in Ru AdList
@@ -8042,6 +8050,8 @@ film.ru##a[href*="okko."]
 film.ru##.wink
     ! other
 ||film.ru/*/adult.png
+film.ru##.toolbar
+film.ru##.social-likes__button
 
 filmon.com##.subscribe-annotation
 ||filmon.com/*/watch-hd-without-ads.png
@@ -10689,6 +10699,12 @@ kinopoisk.ru###kinopoisk-header-sticky-container:style(position:static !importan
 ! from Ru AdList
 kinopoisk.ru###header-info-bg:style(background-color: transparent !important; background-image: none !important)
 kinopoisk.ru##li.header-fresh-partial-component__navigation-item
+kinopoisk.ru##.kinopoisk-header-logo__img
+kinopoisk.ru##div:matches-css(position:fixed):style(position:static ! important)
+kinopoisk.ru##.sticky__inner_fixed:style(position:static !important)
+kinopoisk.ru##.sticky__inner_header-offset:style(position:static !important)
+kinopoisk.ru##.sticky__inner_sticky_top:style(position:static !important)
+kinopoisk.ru##.sticky__inner:style(position:static !important)
     ! footer
 kinopoisk.ru##.footer-partial-component__content-apps
 kinopoisk.ru##.footer-partial-component__bottom-info-age
@@ -17696,7 +17712,9 @@ snipingclub.md##.spu-bg
 snipp.ru$3p  # ad scripts
 
 ||snob.ru/images/header/$image
+||snob.ru/embed/nav/$image
 snob.ru##.ant-affix:style(position:static !important)
+snob.ru##div:matches-css(position:fixed)
 snob.ru##.hotNews
 snob.ru##.entry__donate
 snob.ru##.comments__lock
@@ -22743,3 +22761,9 @@ motor.ru##div:matches-css(height:42px):has(a[href="/theme/acura"])
 ! Browsec ad popups
 ##[class^=_Not][class*=_Big_In]:has-text(You’re using Browsec Free)
 
+kinointeres.ru###scroll_down
+kinointeres.ru###scroll_up
+kinointeres.ru##.site-title
+kinointeres.ru##.site-description
+
+afisha.ru##div:matches-css(position:fixed)
