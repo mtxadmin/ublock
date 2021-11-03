@@ -13008,6 +13008,14 @@ motherless.com##.media-comments
 ! top (old forum, yes)
 forum.motolodka.ru##body > table > tbody > tr > td > table
 
+motor.ru##.zalipuha
+! Adguard rule
+motor.ru##div:not([class$="native-banner"]) > div[data-render-state] > div[id^="block-id-"][id$="-container"]
+! Ru AdList rule
+motor.ru##div[data-render-state] > div[style*="min-height:"]
+! logos
+motor.ru##div:matches-css(height:42px):has(a[href="/theme/acura"])
+
 motor1.com##.m1-header-main:style(position:static !important)
 motor1.com##.m1-header-ad.top-banner-placeholder
 motor1.com##.m1-header-main:style(margin-bottom:0px !important)
@@ -16024,6 +16032,8 @@ ratniksafe.ru###tab-description > p:has-text(Купить)
 ratniksafe.ru###tab-description > div:has-text(Купить)
 ratniksafe.ru##.category-manufacturer
 
+ratnikshop.ru##.owp-floating-bar
+
 ravak.ru###header-brand
 
 raymond.cc###aa_wpfs_wrap
@@ -16475,6 +16485,9 @@ roem.ru###main-sidebar:style(position:static !important)
 roem.ru##.left
 roem.ru##.entry-footer-add-news
 roem.ru##.news-block-footer-add-link
+
+rogatkashop.ru##.header-widget-phone
+rogatkashop.ru##.fly-panel:style(position:static !important)
 
 rogerebert.com##.contributor-bio--text > p
 
@@ -18562,6 +18575,8 @@ sweepatic.com##.site-nav-main
 
 swyper.ru##.basic-question-text-vertical.basic-question.basic-element
 swyper.ru##.basic-form
+
+syhpay.ru##.navbar-nav:style(position:static !important)
 
 syl.ru##.fixedblock:style(position:static !important)
 syl.ru##.topnews__title
@@ -21040,6 +21055,12 @@ webworld.md##+js(cookie-remover.js)  # ad cookies  # "веб-студия"
 
 week.news$3p  # is in RU AdList
 
+||werdum-army.ru$inline-script  # site blocks copypaste
+||werdum-army.ru/wp-content,_plugins,_click-to-chat-for-whatsapp
+werdum-army.ru###menu-zakazat-zvonok-futer
+werdum-army.ru##.xoo-wsc-modal
+werdum-army.ru###top-bar-wrap
+
 ||weter-peremen.org/*/fons/$image
 ||weter-peremen.org/*/fons.jpg
 ||weter-peremen.org/images/fmk280x90.jpg
@@ -22787,29 +22808,6 @@ yandex.ru###modal
 /bitrix/spread.php?$important  # is in Adguard and EasyPrivacy
 
 /cdn-cgi/bm/cv/*  # is in EasyPrivacy
-
-ratnikshop.ru##.owp-floating-bar
-
-||werdum-army.ru$inline-script  # site blocks copypaste
-||werdum-army.ru/wp-content,_plugins,_click-to-chat-for-whatsapp
-werdum-army.ru###menu-zakazat-zvonok-futer
-werdum-army.ru##.xoo-wsc-modal
-werdum-army.ru###top-bar-wrap
-
-rogatkashop.ru##.header-widget-phone
-rogatkashop.ru##.fly-panel:style(position:static !important)
-
-syhpay.ru##.navbar-nav:style(position:static !important)
-
-motor.ru##.zalipuha
-
-! Adguard rule
-motor.ru##div:not([class$="native-banner"]) > div[data-render-state] > div[id^="block-id-"][id$="-container"]
-! Ru AdList rule
-motor.ru##div[data-render-state] > div[style*="min-height:"]
-
-! logos
-motor.ru##div:matches-css(height:42px):has(a[href="/theme/acura"])
 
 ! is in Adguard
 ##.topbaner
