@@ -219,6 +219,7 @@ _advert/  # from EasyList
 /pagead/*
 /pagead2/*
 /pageview.js  # is in EasyPrivacy
+/pbjsandwich-  # is in EasyList
 /pcs/click^
 /popunder.js$important
 /porpoiseant/*$important  # ad scripts  # is in EasyList
@@ -454,6 +455,8 @@ _advert/  # from EasyList
 ##[class^="WNAd"]:not(html):not(body):not(article)
 ##[id^="WNAd"]:not(html):not(body):not(article)
 ##[src^="/images/banner"]
+! Browsec ad popups
+##[class^=_Not][class*=_Big_In]:has-text(You’re using Browsec Free)
 ! other
 ##[href^="javascript:AddComplaint"]
 ###abAlert
@@ -663,10 +666,14 @@ _advert/  # from EasyList
 ##.front-banner--content
 ##.fullwidthbanner-container
 ##.full-width-narrow-banner
+! is in Ru AdList
+##.gaminator
 ! is in EasyList
 ###gf-mrecs-ads
 ! is in FanBoy's
 ###gh-bt
+! is in EasyList
+##.gnt_x
 ###goodbye-box
 ###goodbye-form
 ! from EasyList
@@ -706,6 +713,8 @@ _advert/  # from EasyList
 ##.main-banners
 ##.main-float-buttons
 ##.maxwidth-banner
+! is in Adguard and Ru AdList
+##.mediaget
 ##.menu-banner
 ###middle_banner
 ! is in EasyList
@@ -771,6 +780,8 @@ _advert/  # from EasyList
 ##.sb-banner
 ##.SC_TBlock
 ##.SearchSegments__directSnippet
+! is in Adguard and Ru AdList
+##.serp-adv__banner
 ! from EasyList
 ##.sideads
 ##.side-banner
@@ -785,6 +796,8 @@ _advert/  # from EasyList
 ##.td-banner-wrap-full
 ! from Web Annoyances Ultralist
 ##.td-header-sp-top-widget
+! is in Adguard
+##.topbaner
 ##.top_banner
 ##.top-banner
 ##.topbanner
@@ -795,6 +808,8 @@ _advert/  # from EasyList
 ##.top_page_banner
 ! is in Adguard
 ###total_banner
+! is in Ru AdList
+##.tv-grid__item-adv-content
 ! is in Ru AdList
 ##.tv-grid__item-adv_wide_no
 ! from FanBoy's
@@ -22761,23 +22776,12 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 
 ||avatars.mds.yandex.net/get-zen_pictures/$image
 
-/pbjsandwich-  # is in EasyList
-
-! is in EasyList
-##.gnt_x
-
 /media/index$domain=gdz-putina.fun|gdz.ninja|gdz.ru|gdzguru.com|gdzotputina.club|gdzputina.net|gdzputina.ru|megaresheba.com|megaresheba.ru|resheba.me|reshebnik.com|spishi.fun|stavcur.ru|zoobrilka.net  # Ru AdList rule
 
 /\.com\/[0-9a-z]{2}\/[0-9a-z]{2}\/[0-9a-z]{2}\/[0-9a-z]{32}\.js/$script,3p  # Adguard rule
 
 ! is in Adguard and Ru AdList
 ##.module-one-search
-
-! is in Ru AdList
-##.gaminator
-
-! is in Adguard and Ru AdList
-##.mediaget
 
 ||svc.dynamics.com/t/w$3p  # ad scripts  # is in EasyPrivacy
 
@@ -22792,17 +22796,4 @@ trafficmanager.net  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.traffic
 
 ||mail.ru/sw.js
 
-/bitrix/spread.php?$important  # is in Adguard and EasyPrivacy
-
 /cdn-cgi/bm/cv/*  # is in EasyPrivacy
-
-! is in Adguard
-##.topbaner
-! is in Ru AdList
-##.tv-grid__item-adv-content
-! is in Adguard and Ru AdList
-##.serp-adv__banner
-
-! Browsec ad popups
-##[class^=_Not][class*=_Big_In]:has-text(You’re using Browsec Free)
-
