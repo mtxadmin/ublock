@@ -6768,11 +6768,11 @@ dni.ru##.head:style(position:static !important)
 dni.ru###for_fix:style(position:static !important)
 
 ! dns-shop.ru,technopoint.ru
-! location script
+    ! location script
 ||dns-shop.ru/pwa-sw-main.js
 ||technopoint.ru/pwa-sw-main.js
 ||dns-shop.ru/*/button-install-pwa.js
-! scripts
+    ! scripts
 !||dns-shop.ru/*/feedback-modal-widget.js  # don't  # yes, don't (brokes main page)
 ||dns-shop.ru/*/catalog-analitycs.js
 ||dns-shop.ru/*/homepage-analitycs.js
@@ -6786,71 +6786,70 @@ dni.ru###for_fix:style(position:static !important)
 ||dns-shop.ru/*/subscription.js
 ||dns-shop.ru/*/header-mobile.js
 ||dns-shop.ru/*/user-notifications.js
-! new year
+    ! new year
 ||dns-shop.ru/*/garland.svg
 ||dns-shop.ru/*/footer-garland.svg
-! backgrounds
+    ! backgrounds
 ||dns-shop.ru/*/alien2.png
 ||dns-shop.ru/*/assembly.jpg
 ||dns-shop.ru/*/assembly-hover.gif
 ||dns-shop.ru/*/header*.png
 ||dns-shop.ru/*/footer-background*.jpg
-! header
+    ! header
 dns-shop.ru,technopoint.ru###header-search:style(position:static !important;)
 dns-shop.ru,technopoint.ru##.headroom_pinned:style(position:static !important)
 dns-shop.ru,technopoint.ru##header:style(padding-bottom:0px !important)
 dns-shop.ru,technopoint.ru##.header-mobile__wrap_fixed:style(position:static !important)
+dns-shop.ru##.club-header:style(position:static !important)
 dns-shop.ru##.header-top-menu__info
-! footer
+    ! footer
 dns-shop.ru,technopoint.ru##div.layout-footer__content-text-grey:has-text(Администрация Сайта не несет ответственности)
 dns-shop.ru,technopoint.ru##.container.footer-content > div.row:nth-of-type(1):has-text(опубликованы посетителями нашего портала и могут не совпадать с мнением редакции.)
 dns-shop.ru,technopoint.ru##.main-footer__responsibility
 dns-shop.ru,technopoint.ru##.main-footer__social-link
 dns-shop.ru,technopoint.ru##.main-footer__install-app-block
 dns-shop.ru,technopoint.ru###footer-notice
-! banners
+    ! banners and promos
 dns-shop.ru,technopoint.ru##.homepage-exchange-bonus-banner
 dns-shop.ru,technopoint.ru##.items-group__banner
 dns-shop.ru,technopoint.ru##.single-banner-container
 dns-shop.ru,technopoint.ru##.homepage-top-grid__banners
-! stickers
+    ! stickers
 dns-shop.ru,technopoint.ru##.additional-vobler
 dns-shop.ru,technopoint.ru##.product-info__voblers
 dns-shop.ru,technopoint.ru##.w-product-voblers
-! no reviews - если ничего нет - не надо маскировать дурными картинками
+    ! no reviews - если ничего нет - не надо маскировать дурными картинками
 ||dns-shop.ru/*/zero-opinions.png
 dns-shop.ru##.ow-zero__image
 dns-shop.ru,technopoint.ru##.no-opinions
 dns-shop.ru,technopoint.ru##.no-opinions-grade
-! гайд хелпер - тупо предложение написать на внутренний форумчик. Маячит, отвлекает
-##.guide-helper
-! не надо подсовывать ненужную хрень в корзину
+    ! не надо подсовывать ненужную хрень в корзину
 dns-shop.ru##.accessories__items
 dns-shop.ru##.select-accessories
-! с мерщающих поповеров тошнит
+    ! с мерцающих поповеров тошнит
 dns-shop.ru##span.product-info__search-icon
 dns-shop.ru##span.product-info__search-icon_active
-! аватары
+    ! аватары
 dns-shop.ru##.comment__avatar
 dns-shop.ru##.ow-user-info__avatar
-! хрень на аватарах
+    ! хрень на аватарах
 dns-shop.ru##.user-avatar__level
 dns-shop.ru##.user-avatar__online
-! кредиты
+    ! кредиты
 dns-shop.ru,technopoint.ru##.credit-info
 dns-shop.ru,technopoint.ru##.credit-calculator-open-link
-! бренды
+    ! бренды
 dns-shop.ru,technopoint.ru##.brand-logo
 dns-shop.ru,technopoint.ru##.product-card-top__brand
 dns-shop.ru##.homepage-brands
-! всплывающие окна
+    ! всплывающие окна
 dns-shop.ru,technopoint.ru##.confirm-city-mobile
 dns-shop.ru,technopoint.ru###page-notification
 dns-shop.ru,technopoint.ru##.dropdown-city
 dns-shop.ru,technopoint.ru##.info-widget_warning.info-widget
 dns-shop.ru,technopoint.ru##.survey-button-widget
 dns-shop.ru,technopoint.ru##.alert.page-notification
-! всякая ерунда на странице товара
+    ! всякая ерунда на странице товара
 dns-shop.ru,technopoint.ru##.gift-bonuses-container
 dns-shop.ru,technopoint.ru##.complaint-container
 dns-shop.ru,technopoint.ru##.dns-recommends
@@ -6861,7 +6860,9 @@ dns-shop.ru,technopoint.ru##.product-card-tabs__product
 dns-shop.ru,technopoint.ru##.helpers
 dns-shop.ru,technopoint.ru##.product-buttons
 dns-shop.ru,technopoint.ru##.benefit
-! other
+    ! гайд хелпер - тупо предложение написать на внутренний форумчик. Маячит, отвлекает
+##.guide-helper
+    ! other
 ||dns-shop.ru/*/choice-guide.png
 dns-shop.ru,technopoint.ru##.rsu-configurator-block
 dns-shop.ru,technopoint.ru##.show-tab.show-related
@@ -10980,14 +10981,22 @@ kom-dir.ru##.id2-polezno
 ||kommersant.ru/common/bannernew
 ||kommersant.ru/komcounter/readcounter
 ||kommersant.ru/poll/
+    ! popups
+! is in Adguard
+kommersant.ru##.new-subscription-popup
+    ! top
 kommersant.ru##.sticked_top:style(position:static !important)
 kommersant.ru##.main_header__main_logo
-kommersant.ru##.fixed_bottom
-kommersant.ru##.slider-announce
+    ! unstick elements
 kommersant.ru##.sticky_priority.sticked_top > .place
 kommersant.ru##.sticky_box::after:style(content:normal !important)
-! is in AdGuard
-kommersant.ru##.new-subscription-popup
+kommersant.ru##.fixed_bottom
+    ! banners and promos
+kommersant.ru##.slider-announce
+kommersant.ru##.adv_nest
+! "Партнерский проект"
+kommersant.ru##.top_news__link:has(.top_news__update)
+    ! other
 ! is in Fanboy's
 kommersant.ru##.network
 
@@ -11088,10 +11097,10 @@ kovearussia.ru##.advantage
 kovearussia.ru##.advantage-block
 kovearussia.ru##.dostavka
 
-! popups
+    ! popups
 kp.ru##.shadow-close
 kp.ru##.popup
-! говно, разъезжается. todo.
+    ! говно, разъезжается. todo. Update: вроде исправили?
 !kp.ru##.menuHead:style(position:static !important)
 !kp.ru##.topInfo.flex-container:style(position:static !important)
 !kp.ru##.openNews:style(position:static !important)
@@ -11099,17 +11108,23 @@ kp.ru##.popup
 !kp.ru##.main:style(top:0px !important)
 !kp.ru##.Page:style(margin-top:0px !important)
 !kp.ru##.flex-container:style(display:block !important)
-! fixed header
+    ! top
 kp.ru##[class*=_imglogo]
 kp.ru##[class*=_positionfixed]:style(position:static !important)
 kp.ru##[class*=_burger_container]
-! other
+kp.ru##.header-top__soc-icon
+kp.ru##.header-top
+    ! banners and promos
+kp.ru##.page-header__promo
+kp.ru##.ya-market__container
+kp.ru##.ya-market
+kp.ru##.afisha-r__above-seo
+kp.ru##.afisha-r__header
+    ! other
 kp.ru##.openNews
 kp.ru##.read_time
 kp.ru##[class*=FixedWrapper]:style(position:static !important)
 kp.ru##.kpfooter
-kp.ru##.afisha-r__above-seo
-kp.ru##.afisha-r__header
 
 ! webflow
 ! "La messagerie de talkie-walkie pour tracer vos opérations"
@@ -13883,6 +13898,17 @@ nversia.ru##.symbol--rating
 ||nytimes.com^*/data-layer?  # is in EasyPrivacy
 nytimes.com##div:matches-css(position:fixed)
 
+    ! popups
+obi.ru##.modal
+    ! logos
+obi.ru##.news-template-author-subscription__photo
+    ! banners and promos
+||obi.ru/campaign/
+||obi.ru/images/marketing/
+obi.ru##.communication-tile__item
+obi.ru##.large.product:has(.communication-tile__item)
+obi.ru##section.auto-init:has-text(/Рекомендуем|Популярные товары/)
+    ! other
 obi.ru##.deliveryinfo
 obi.ru##.empty-ratings.ratings.row-fluid
 obi.ru##.auto-init..slick-slider-last-view
@@ -13895,17 +13921,14 @@ obi.ru##.js-tmt-layer-close.tmt-layer__greyout
 obi.ru##.tmt-layer
 obi.ru##.auto-init.js-wt-rightclick.slick-slider-last-view
 obi.ru##.slick--has-pagination.auto-init.js-wt-rightclick.slick-slider-last-view
-obi.ru##.advantages--centered.advantages.row-fluid
+obi.ru##.advantages--centered.advantages
 obi.ru##.mobile-pd-lr15.empty-ratings.ratings.row-fluid
 obi.ru##.deliveryinfo.del.in.collapse
 obi.ru##.row-fluid.js-add-to-cart.button-to-card
 obi.ru##.marg_t15.row-flud
 obi.ru##.nav-meta
-||obi.ru/campaign/
-||obi.ru/images/marketing/
-obi.ru##.communication-tile__item
-obi.ru##.large.product:has(.communication-tile__item)
-obi.ru##section.auto-init:has-text(/Рекомендуем|Популярные товары/)
+obi.ru##.footer-mobile
+obi.ru##.footer-store__item
 
 ||obninsk.name/*/0_banners/
 
