@@ -341,56 +341,71 @@ syndication.twitter.com  # syndication.twitter.com$third-party,important
 
 ping.ublock.org  # from Peter Lowe's hosts file
 
-adn.insight.ucweb.com  # from AdGuard
+insight.ucweb.com
+    ! adn.insight.ucweb.com  # from Adguard
 
-analytics.cloud.unity3d.com  # from Energized Blu and Adguard
-cdp.cloud.unity3d.com  # from Energized Blu, MobileAdTrackers, Adguard
-config.uca.cloud.unity3d.com
-data-optout-service.uca.cloud.unity3d.com
-perf-events.cloud.unity3d.com  # from MobileAdTrackers
-config.uca.cloud.unity3d.com  # from MobileAdTrackers
-data-optout-service.uca.cloud.unity3d.com  # from MobileAdTrackers
-userreporting.cloud.unity3d.com  # from MobileAdTrackers and Energized Blu
+cloud.unity3d.com
+! analytics.cloud.unity3d.com  # from Energized Blu and Adguard
+! cdp.cloud.unity3d.com  # from Energized Blu, MobileAdTrackers, Adguard
+! perf-events.cloud.unity3d.com  # from MobileAdTrackers
+!+  uca.cloud.unity3d.com
+    ! config.uca.cloud.unity3d.com  # is in MobileAdTrackers
+    ! data-optout-service.uca.cloud.unity3d.com  # is in MobileAdTrackers
+! userreporting.cloud.unity3d.com  # from MobileAdTrackers and Energized Blu
 !
-thind-gke-euw.prd.data.corp.unity3d.com  # from Adguard and Energized Blu
-ads.prd.ie.internal.unity3d.com  # from Energized Blu
-tracking.prd.mz.internal.unity3d.com  # from Energized Blu
-ads-game-configuration-master.ads.prd.ie.internal.unity3d.com  # from MobileAdTrackers
-tracking.prd.mz.internal.unity3d.com  # from MobileAdTrackers
+data.corp.unity3d.com
+!+  prd.data.corp.unity3d.com
+    ! thind-gke-euw.prd.data.corp.unity3d.com  # from Adguard and Energized Blu
+!
+iap.unity3d.com
+    ! ecommerce.iap.unity3d.com  # ad requests
+!
+internal.unity3d.com
+!+  ie.internal.unity3d.com
+!+      prd.ie.internal.unity3d.com
+        ! ads.prd.ie.internal.unity3d.com  # from Energized Blu
+        ! ads-game-configuration-master.ads.prd.ie.internal.unity3d.com  # from MobileAdTrackers
+        ! publisher-event.ads.prd.ie.internal.unity3d.com  # from Energized Blu
+        ! ads-game-configuration-master.ads.prd.ie.internal.unity3d.com  # from Energized Blu
+!+  mz.internal.unity3d.com
+    ! tracking.prd.mz.internal.unity3d.com  # from Energized Blu and MobileAdTrackers
+!
+mz.utity3d.com
+    ! events.mz.utity3d.com  # app ads
+!
 stats.unity3d.com  # from MobileAdTrackers
 !
 hwstats.unity3d.com  # from Energized Blu and Adguard
+!
 unityads.unity3d.com  # from Energized Blu
 !+  adsx.unityads.unity3d.com
-! end of unityads.unity3d.com
-unityads.unitychina.cn  # from Energized Blu
 ! also subdomains from Energized Blu and Adguard:
-ads-brand-postback.unityads.unity3d.com
-adserver.unityads.unity3d.com
-auction.unityads.unity3d.com
-auiopt.unityads.unity3d.com
-cdn-creatives-akamai-prd.unityads.unity3d.com
-cdn-creatives-highwinds-prd.unityads.unity3d.com
-cdn-creatives-prd.unityads.unity3d.com
-cdn-highwinds.unityads.unity3d.com
-cdn-store-icons-akamai-prd.unityads.unity3d.com
-cdn-store-icons-highwinds-prd.unityads.unity3d.com
-cdn-webview-pge.unityads.unity3d.com
-china-cdn3.unityads.unity3d.com
-config.unityads.unity3d.com
-dsp-endscreens.unityads.unity3d.com
-dsp-tracking.unityads.unity3d.com
-geocdn.unityads.unity3d.com
-httpkafka.unityads.unity3d.com
-installtracker.unityads.unity3d.com
-nginx-auction-prd-gcp.adsx.unityads.unity3d.com
-pge.unityads.unity3d.com
-publisher-event.unityads.unity3d.com
-tracking.adsx.unityads.unity3d.com
-publisher-event.ads.prd.ie.internal.unity3d.com  # from Energized Blu
-ads-game-configuration-master.ads.prd.ie.internal.unity3d.com  # from Energized Blu
-config.unityads.unitychina.cn
-ecommerce.iap.unity3d.com  # ad requests
+! ads-brand-postback.unityads.unity3d.com
+! adserver.unityads.unity3d.com
+! auction.unityads.unity3d.com
+! auiopt.unityads.unity3d.com
+! cdn-creatives-akamai-prd.unityads.unity3d.com
+! cdn-creatives-highwinds-prd.unityads.unity3d.com
+! cdn-creatives-prd.unityads.unity3d.com
+! cdn-highwinds.unityads.unity3d.com
+! cdn-store-icons-akamai-prd.unityads.unity3d.com
+! cdn-store-icons-highwinds-prd.unityads.unity3d.com
+! cdn-webview-pge.unityads.unity3d.com
+! china-cdn3.unityads.unity3d.com
+! config.unityads.unity3d.com
+! dsp-endscreens.unityads.unity3d.com
+! dsp-tracking.unityads.unity3d.com
+! geocdn.unityads.unity3d.com
+! httpkafka.unityads.unity3d.com
+! installtracker.unityads.unity3d.com
+! nginx-auction-prd-gcp.adsx.unityads.unity3d.com
+! pge.unityads.unity3d.com
+! publisher-event.unityads.unity3d.com
+! tracking.adsx.unityads.unity3d.com
+! end of unityads.unity3d.com
+!
+unityads.unitychina.cn  # from Energized Blu
+! config.unityads.unitychina.cn
 
 urbandroid.org  # app requests to sleep.urbandroid.org
 
