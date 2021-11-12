@@ -84,6 +84,7 @@ yandex.*##.distr-default-search__image
 yandex.*##.distr-default-search__content
 yandex.*##.distr-default-search
 yandex.*##.footer2__distr
+yandex.*##.MessageBox-Content:has(.news-tips__tooltip-inner)
 
     ! "Плюс"
 !yandex.*##.yaplus_js_inited
@@ -270,6 +271,7 @@ market.yandex.ru##*:matches-css(position:fixed)
 
 ! logos
 yandex.ru##.header2__logo
+yandex.ru##.header3__logo-ru
 yandex.ru##.home-logo__default
 yandex.ru##.yandex-header__logo
 yandex.ru##.yandex-search__logo
@@ -546,36 +548,36 @@ zen.yandex.ru##.feed__row > .feed__item-wrap div:after:style(background: transpa
 yandex.ru##.floating-links
 
 ! попытка решить "в лоб" яндекс.директ. Пусть будет, для истории. Правильный метод у коллег из Ru AdList
-yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-2kyfm7669.png/orig")))
-yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-gp41w8605.png/orig")))
-yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-fj9532421.png/orig")))
-yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-yzyo31629.png/orig")))
-yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-qg40o8010.png/orig")))
-yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15285/serpt-17g445151.png/orig")))
-yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39011/serpt-ovxz39526.png/orig")))
-yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39681/serpt-04dny3208.png/orig")))
-yandex.ru##li.serp-item:has([class*=label_type_eksrj])
-yandex.ru##li.serp-item:has([class*=label_type_ltryi])
-yandex.ru##li.serp-item:has([class*=label_type_aqftb])
-yandex.ru##li.serp-item:has([class*=label_type_sjker])
-yandex.ru##li.serp-item:has([class*=label_type_qwwsk])
-yandex.ru##li.serp-item:has([class*=label_type_ktpeo])
-yandex.ru##li.serp-item:has([class*=label_type_fxwkv])
-yandex.ru##li.serp-item:has([class*=label_type_vhfet])
-yandex.ru##li.serp-item:has([class*=label_type_qeetm])
-yandex.ru##li.serp-item:has([class*=label_type_whmqp])
-yandex.ru##li.serp-item:has([class*=label_type_nvwao])
-yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
-yandex.ru##li.serp-item:has([class*=label_type_atipl])
-yandex.ru##li.serp-item:has([class*=label_type_imuti])
-yandex.ru##li.serp-item:has([class*=label_type_eliyn])
-yandex.ru##li.serp-item:has([class*=label_type_vnvog])
-yandex.ru##li.serp-item:has([class*=label_type_wuss])
-yandex.ru##li.serp-item:has([class*=label_type_jtocp])
-yandex.ru##li.serp-item:has([class*=label_type_nyhzo])
-yandex.ru##li.serp-item:has([class*=label_type_aroxf])
-yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
-yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
+!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-2kyfm7669.png/orig")))
+!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-gp41w8605.png/orig")))
+!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-fj9532421.png/orig")))
+!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-yzyo31629.png/orig")))
+!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-qg40o8010.png/orig")))
+!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15285/serpt-17g445151.png/orig")))
+!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39011/serpt-ovxz39526.png/orig")))
+!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39681/serpt-04dny3208.png/orig")))
+!yandex.ru##li.serp-item:has([class*=label_type_eksrj])
+!yandex.ru##li.serp-item:has([class*=label_type_ltryi])
+!yandex.ru##li.serp-item:has([class*=label_type_aqftb])
+!yandex.ru##li.serp-item:has([class*=label_type_sjker])
+!yandex.ru##li.serp-item:has([class*=label_type_qwwsk])
+!yandex.ru##li.serp-item:has([class*=label_type_ktpeo])
+!yandex.ru##li.serp-item:has([class*=label_type_fxwkv])
+!yandex.ru##li.serp-item:has([class*=label_type_vhfet])
+!yandex.ru##li.serp-item:has([class*=label_type_qeetm])
+!yandex.ru##li.serp-item:has([class*=label_type_whmqp])
+!yandex.ru##li.serp-item:has([class*=label_type_nvwao])
+!yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
+!yandex.ru##li.serp-item:has([class*=label_type_atipl])
+!yandex.ru##li.serp-item:has([class*=label_type_imuti])
+!yandex.ru##li.serp-item:has([class*=label_type_eliyn])
+!yandex.ru##li.serp-item:has([class*=label_type_vnvog])
+!yandex.ru##li.serp-item:has([class*=label_type_wuss])
+!yandex.ru##li.serp-item:has([class*=label_type_jtocp])
+!yandex.ru##li.serp-item:has([class*=label_type_nyhzo])
+!yandex.ru##li.serp-item:has([class*=label_type_aroxf])
+!yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
+!yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
 
 
 ||yandex.ru/bell/api/v1/get-ticker
@@ -646,6 +648,13 @@ yandex.ru##.button_primary:has-text(в избранное)
 ||avatars.mds.yandex.net/get-adfox-content/$image
 ||yastatic.net/market-export/$image
 ||yastat.net/s3/market-static/$image
+
+turbopages.org##.turbo-image
+turbopages.org##.button_width_max.button_primary.button_type_link.button
+turbopages.org##.ext-embed__loader
+turbopages.org##.header_wide-logo
+turbopages.org##.ext-embed
+
 
 ! zen.yandex.ru parameters todo
 ! from
