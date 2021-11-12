@@ -11793,7 +11793,7 @@ liveexpert.ru##.online-wrapper
 
 !! livejournal.com: remake at 2020-02
 !
-!! discoverytimes promos below the post
+    !! discoverytimes promos below the post
 livejournal.com##.b-discoverytimes
 livejournal.com##.b-discoverytimes-state-random
 livejournal.com##.b-discoverytimes-state-branding
@@ -11812,7 +11812,7 @@ lena-miro.ru,livejournal.com,varlamov.ru##.j-w-content
 lena-miro.ru,livejournal.com,varlamov.ru##.j-w-customtext
 lena-miro.ru,livejournal.com,varlamov.ru##.j-w-subscribe
 !
-!! promos
+    !! promos
 ||livejournal.net/img/journalpromo/
 ! is in Ru AdList (general as is)
 ##.appwidget-journalpromo
@@ -11832,7 +11832,7 @@ livejournal.com##.s-ljvideo
 ! from RU AdList
 livejournal.com##.stories__promo
 !
-!! banners
+    !! banners
 ! from AdGuard
 livejournal.com##.allbanners
 ! from AdGuard
@@ -11892,7 +11892,7 @@ livejournal.com##div:has-text(ad or script blocking software is interfering)
 likes.services.livejournal.com/get
 livejournal.com##.cookies-banner
 !
-!! from specific users
+    !! from specific users
 ! from RU AdList
 ||img-fotki.yandex.ru/get/*_orig|$image,domain=masterok.livejournal.com
 ! from RU AdList
@@ -11920,11 +11920,12 @@ prostitutka-ket.livejournal.com,sergeydolya.livejournal.com##dl[class="sidebar-b
 rarog.livejournal.com###lenta-top > .entryunit--feedpromo
 morethantravel.livejournal.com###header-name
 !
-!! footer
+    !! footer
 livejournal.com##html:style(padding-bottom:0px !important)
 livejournal.com##.flaticon--platform-huawei
+livejournal.com##.main-footer__apps-link
 !
-!! backgrounds
+    !! backgrounds
 livejournal.com##.sidebar:style(background-image:none !important)
 livejournal.com##.layout:style(background-image:none !important)
 livejournal.com##.sidebar-block:style(background-image:none !important)
@@ -11932,7 +11933,19 @@ livejournal.com##.content:style(background-image:none !important)
 livejournal.com##.entry-title:style(background-image:none !important)
 livejournal.com##.hr:style(background-image:none !important)
 !
-!! other
+    !! socials
+livejournal.com##[href^="https://plus.google.com/"]
+livejournal.com##[href^="http://vk.com/"]
+livejournal.com##[href^="https://twitter.com/"]
+livejournal.com##[href^="http://www.facebook.com/"]
+livejournal.com##[href^="https://www.instagram.com/"]
+livejournal.com##[href^="https://zen.yandex.ru/"]
+livejournal.com##.main-footer__social-link
+!
+    !! "like" button
+livejournal.com##.b-singlepost-reactions
+livejournal.com##.reaction-state
+    !! other
 ! There are many annoying gifs and it is not possible to differentiate them from static pictures
 ||l-userpic.livejournal.com/$image
 ! default lj avatar
@@ -11953,15 +11966,6 @@ livejournal.com##+js(set-constant, Object.prototype.Autocontext, undefined)
 ||livejournal.com^*/pagestats/
 ! from RU AdList
 liveinternet.ru,livejournal.com##[id*="_R-A-"]
-! "like" button
-livejournal.com##.reaction-state
-! socials
-livejournal.com##[href^="https://plus.google.com/"]
-livejournal.com##[href^="http://vk.com/"]
-livejournal.com##[href^="https://twitter.com/"]
-livejournal.com##[href^="http://www.facebook.com/"]
-livejournal.com##[href^="https://www.instagram.com/"]
-livejournal.com##[href^="https://zen.yandex.ru/"]
 ! other
 livejournal.com##.is-link
 !
@@ -11971,7 +11975,6 @@ livejournal.com##.is-link
 !livejournal.com##.l-flatslide-scrolltop
 !livejournal.com##.asset-name-hover
 !livejournal.com##.powered-widget
-!livejournal.com##.b-singlepost-reactions
 !livejournal.com##.js--controlstrip.s-header-extra
 !livejournal.com##.sidebar-friendstimes
 !livejournal.com##.ContextualPopup
