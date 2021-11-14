@@ -1032,6 +1032,7 @@ aliexpress.com##.left-menu-container:style(max-height:none !important)
 ||alicdn.com/kf/HTB14YdikRjTBKNjSZFNq6ysFXXa9.jpg
     ! А, так это была реклама (AD на фото)! Сжечь её!
 aliexpress.com##.other-store-more > div > div > div:has-text(/AD/)
+aliexpress.com##div:has(>div>div>span:has-text(/^AD$/))
 
 !!aliexpress.com##.next-overlay-wrapper - don`t, not only ad popups. Again: don't!
 ! Instead that: block empty overlay
