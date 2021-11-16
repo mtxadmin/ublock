@@ -25,14 +25,14 @@ For this hosts file version, you have to install an app which can works with ast
 Attention:
 - Blokada is absent in markets, because of its adblocking nature. There is Blokada Slim reduced version in Play Market, but it has very limited functions. Use blokada.org
 - There are two versions of Blokada: v4 and v5. Fifth CANNOT add custom lists, use fourth
-- In newest versions of Blokada v4 there is (a bug)[https://github.com/blokadaorg/blokada/issues/900] which leads to miss some ad requests. Last known good version:
+- In newest versions of Blokada v4 there is [a bug](https://github.com/blokadaorg/blokada/issues/900) which leads to miss some ad requests. Last known good version:
 
 https://github.com/blokadaorg/blokada/releases/download/4.11.1/blokada-v4.11.1.apk
 
 The address of the hosts file of this project:
-> ```
-``https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt``
-> ```
+```
+https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt
+```
 
 After adding this new host list, go to *Ad blocking Sessions* and set options:
 - Advanced adblocking rules: Yes
