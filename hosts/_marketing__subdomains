@@ -15,11 +15,11 @@
 
 ! /ad* subdomains see in _marketing_ad-
 
+/aff.  # I suspected it earlier, yes, but general subdomains form is from github.com/asterriya/regex-ads/
 aff.adguard.com  # "партнёрская программа для вебмастеров"
 aff.bstatic.com  # booking domain  # is in Adguard
 
-! from EasyList: ://affiliate.$3p
-/affiliate.
+/affiliate.  # from EasyList: ://affiliate.$3p
 affilate.hh.ru  # is in EasyPrivacy  # yes, typo
 affiliate.ria.com  # ad scripts
 affiliate.astraweb.com  # from Adguard
@@ -47,6 +47,7 @@ analytics.faw-sky.com.akadns.net
 analytics.finam.ru
 analytics.global.sky.com  # from Dan Pollock's hosts file
 analytics.hrmos.co
+analytics.lbry.com  # from github.com/asterriya/regex-ads/
 analytics.linuxbabe.com
 analytics.makro.be  # from frogeye
 analytics.makro.cz  # from frogeye
@@ -125,11 +126,13 @@ click.studymetro.com
 click.tasksbay.com
 click.mailerweb.trainingdoyens.com
 
+/clicks.  # I suspected it earlier, yes, but general subdomains form is from github.com/asterriya/regex-ads/
 clicks.rbs.co.uk  # root is legit
 
 /cnt.
 cnt.krasland.ru
 
+/cnt0.
 cnt0.www.uz
 
 /counter.
@@ -159,6 +162,8 @@ email.thgsportsmail.com
 email.wefunder.com  # email.wefunder.com/c/eJxNUMuKw..
 
 /forex.
+
+/gcirm.  # from github.com/asterriya/regex-ads/
 
 ! /go. ?
 go.cyberark.com  # "Identity Security" # ad redirects and empty root
@@ -208,20 +213,13 @@ mms.gizmodo.com  # from Adguard
 mms.jalopnik.com  # from Adguard
 mmm.theweek.co.uk  # from Adguard
 
-/matomo.
-matomo.workaround.org
-/piwik.
-piwik.aptekarsk.ru
-piwik.cam-content.com  #[Piwik.Analytics]
-piwik.datawrapper.de  #[Piwik.Analytics]
-piwik.mortgageloan.com
-piwik.openstreetmap.org
-piwik.pokerlistings.com
-piwik.syloe.com
-piwik.wildberries.ru
-piwik.wsws.org  #[Piwik.Analytics]  # is in MVPS
+/matomo.  # piwik
 /matomo.js$important  # from EasyPrivacy
-/piwik.js$important
+matomo.workaround.org
+
+/oas.  # from github.com/asterriya/regex-ads/
+
+/oascentral.  # from github.com/asterriya/regex-ads/
 
 /newsletter.
 newsletter.bigcommerce.com  # o1.newsletter.bigcommerce.com
@@ -256,6 +254,20 @@ partners.rusdate.net
 partners.walla.co.il  # ad cookies
 partners.xhamster.com  # from MVPS
 
+/phorm.  # from github.com/asterriya/regex-ads/
+
+/piwik.
+/piwik.js$important
+piwik.aptekarsk.ru
+piwik.cam-content.com  #[Piwik.Analytics]
+piwik.datawrapper.de  #[Piwik.Analytics]
+piwik.mortgageloan.com
+piwik.openstreetmap.org
+piwik.pokerlistings.com
+piwik.syloe.com
+piwik.wildberries.ru
+piwik.wsws.org  #[Piwik.Analytics]  # is in MVPS
+
 /pixel.
 pixel.reddit.com  # from Adguard
 pixel.s3xified.com
@@ -271,11 +283,9 @@ promo.sebnews.ru
 
 /promos.
 
-! from Ru AdList
-||promoblock.$third-party
+||promoblock.$third-party  # from Ru AdList
 
 /push.
-/webpush.
 push.daksham.in$important  # empty root  # in 2 lists
 push.zhanzhang.baidu.com  # http://push.zhanzhang.baidu.com/push.js
 
@@ -283,10 +293,14 @@ push.zhanzhang.baidu.com  # http://push.zhanzhang.baidu.com/push.js
 redirect.2gis.com  # is in Ru AdList
 redirect.ovh.net
 
+/reklam.  # from github.com/asterriya/regex-ads/
+
 /reklama.
 reklama.ngs.ru
 reklama.ntv.ru
 reklama.rambler.ru
+
+/scrooge.  # from github.com/asterriya/regex-ads/
 
 ! /sentry. crashes avito.ru
 sentry.srv.habr.com
@@ -521,6 +535,8 @@ tracking.vcommission.com
 tracking.veoxa.com
 tracking.viewster.com  # zombie
 tracking.ws.eurosport.com
+
+/webpush.
 
 /widget.
 widget.afisha.yandex.ru
