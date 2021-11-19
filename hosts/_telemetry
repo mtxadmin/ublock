@@ -55,6 +55,8 @@ rmb.ops.beeline.ru
 
 gdn.bigfishgames.com  # from Adguard
 
+variations.brave.com  # from many lists
+
 bugherd.com$important
 
 bugsnag.com$important  # telemetry scripts  # "Error Monitoring and Reporting"  # is in AdGuard
@@ -99,6 +101,7 @@ ad-ettoday.cdn.hinet.net  # from Adguard
 adv-ettoday.cdn.hinet.net  # from Adguard
 
 # About Facebook Pixel: https://www.facebook.com/business/help/952192354843755
+# About Facebook Graph: from GoodbyeAds: "We block graph.facebook.com. The reason is that this domain serves many of the ads. So, in order to use Facebook, you should consider to whitelist either facebook's main app, or whitelist graph.facebook.com in your ad blocker — otherwise the Facebook app will not work (there are no problems with facebook lite app and other facebook client apps). If you are using Facebook lite messenger, then whitelist the app or whitelist mqtt-mini.facebook.com. Otherwise messenger will not work. We always recommend our users to use Open Source Facebook Clients for 100% ad free experience."
 ak.facebook.com  # zombie  # creative.ak.facebook.com  # from Dan Pollock's hosts file  # zombie
 api.facebook.com  # api.facebook.com$domain=~facebook.com|~fb.com,important  # https://clinetworking.com/2018/06/03/1984-called/
 b-graph.facebook.com  # block!  # b-graph.facebook.com$domain=~facebook.com|~fb.com,important  # from 1Hosts
@@ -124,6 +127,8 @@ smartlock.google.com  # smartlock.google.com$3p
 plusone.google.com  # ||plusone.google.com^$third-party,important  # from Ru AdList
 
 api.green-way.com.ua  # app requests  # don't block root
+
+igg.com  # pay-fb.igg.com  # "video game developer"
 
 graph.instagram.com  # https://xakep.ru/2018/07/02/android-231/  # https://clinetworking.com/2018/06/03/1984-called/
 
@@ -158,6 +163,7 @@ gpm.samsungqbe.com  # is in BlockListProject/SmartTV
 img-resize-cdn-prod.samsungnyc.com  # is in BlockListProject/SmartTV
 infolink.pavv.co.kr  # is in BlockListProject/SmartTV
 lgad.cjpowercast.com  # is in BlockListProject/SmartTV
+lgtvonline.lge.com  # from github.com/asterriya/regex-ads/
 ngfts.lge.com  # is in BlockListProject/SmartTV
 ocfconnect-shard-eu02-euwest1.samsungiotcloud.com  # is in BlockListProject/SmartTV
 osb-v2.samsungqbe.com  # is in BlockListProject/SmartTV
@@ -209,6 +215,8 @@ ichannel.musical.ly
 log16-normal-c-useast1a.tiktokv.com
 
 myinstashot.com  # "Hello" root  # from Adguard
+
+gfe.nvidia.com  # from github.com/asterriya/regex-ads/ and 1Hosts
 
 ! Ads from Opera mini browser. Which have some default adblock (so!). Blocked by some adlist in Blokada
 operamini-sub.osp.opera.software
@@ -446,37 +454,49 @@ ad.xiaomi.com
 !+  globalapi.ad.xiaomi.com
 !+  log.ad.xiaomi.com
 !+  track.ad.xiaomi.com
-ad.intl.xiaomi.com
+ad1.xiaomi.com  # from GoodbyeAds
 admob.xiaomi.com  # from MobileAdTrackers
+api.xiaomi.com  # from GoodbyeAds
+!+  o2o.api.xiaomi.com
+elb.xiaomi.com  # internet.81a2d69a72.elb.xiaomi.com
+game.xiaomi.com  # from GoodbyeAds
+igame.xiaomi.com  # from GoodbyeAds
+intl.xiaomi.com  # from github.com/asterriya/regex-ads/
+!+  ad.intl.xiaomi.com
+!+  hybrid.intl.xiaomi.com  # from GoodbyeAds
+!+  mistat.intl.xiaomi.com
+!+      data.mistat.intl.xiaomi.com  # my
+!+  video.intl.xiaomi.com  # from Adguard
 mistat.xiaomi.com  # from Adguard: abtest.mistat.intl.xiaomi.com abtest.mistat.xiaomi.com
 !+  data.mistat.xiaomi.com  # xiaomi spying  # https://forum.adguard.com/index.php?threads/Решено-Шпионские-домены-miui.13437/
 security.xiaomi.com  # from Adguard: api.miui.security.xiaomi.com
-video.intl.xiaomi.com  # from AdGuard
-data.mistat.intl.xiaomi.com  # моё
-internet.81a2d69a72.elb.xiaomi.com
+!+  miui.security.xiaomi.com
 shenghuo.xiaomi.com
-o2o.api.xiaomi.com
+xmpush.xiaomi.com  # from GoodbyeAds
     ! xiaomi.net
 device.xiaomi.net  # from MobileAdTrackers
     ! mi.com
 mistat.dev.mi.com  # cname.mistat.dev.mi.com
+mistat.india.xiaomi.com  # from GoodbyeAds
+mistat.rus.xiaomi.com  # from GoodbyeAds
     ! miui.com
 newsfeed.intl.miui.com    # from Adguard: api.newsfeed.intl.miui.com
-brs.intl.miui.com  # from Adguard: api.brs.intl.miui.com
 browser.miui.com  # r.browser.miui.com
-browser.intl.miui.com  # from Adguard: activity.browser.intl.miui.com
 huangye.miui.com  # from AdGuard
+intl.miui.com
+!+  brs.intl.miui.com  # from Adguard: api.brs.intl.miui.com
+!+  browser.intl.miui.com  # from Adguard: activity.browser.intl.miui.com
+!+  tracking.intl.miui.com
 sec.miui.com  # logupdate.avlyun.sec.miui.com  # (looks like remote logging?)  # miui: adv.sec.miui.com  # mazu.sec.miui.com
 sec.intl.miui.com  # from Adguard: adv.sec.intl.miui.com
-update.avlyun.sec.miui.com  # (supposedly update checking?)  # + todo  # + еще https://habr.com/en/post/320612/  # https://www.quora.com/Do-Xiaomi-phones-really-spy-on-our-data-question-details
-!+  avlyun.sec.miui.com
-tracking.miui.com
-tracking.intl.miui.com
+!+  avlyun.sec.miui.com  # update.avlyun.sec.miui.com  # (supposedly update checking?)  # + todo  # + еще https://habr.com/en/post/320612/  # https://www.quora.com/Do-Xiaomi-phones-really-spy-on-our-data-question-details
 !+  adv.sec.miui.com
 !+  be.sec.miui.com  # auth.be.sec.miui.com
 !+  xlmc.sec.miui.com
 !+      ra1.xlmc.sec.miui.com
 !+      ra2.xlmc.sec.miui.com
+tracking.miui.com
+!+  miuiboot.tracking.miui.com
 metok.sys.miui.com
     ! other
 stat.duokanbox.com
