@@ -7838,10 +7838,13 @@ expertreviews.co.uk##p > strong
 
 experts-exchange.com##.exitOverlay.featherlight
 experts-exchange.com###bottomBarSignup
-! top
+    ! top
 experts-exchange.com##.topicNavWrapper:style(top:0px !important)
 experts-exchange.com###topHeader
-! banners and popups
+experts-exchange.com##.buttonPrimary
+experts-exchange.com##[class^=header__TopHeaderWrapper]:style(position:static !important)
+experts-exchange.com##[class^=contentWrapper]:style(padding-top:0px !important; padding-bottom:0px !important; top:0px !important)
+    ! banners and popups
 experts-exchange.com###lastCTA
 experts-exchange.com##.articleNewCTA
 experts-exchange.com###welcomeBack
@@ -7849,7 +7852,7 @@ experts-exchange.com##.interceptMain.solutionTopWrapper
 experts-exchange.com##.interceptBackgroundBlocker.interceptContainer
 ! is in uBlock and Adguard
 experts-exchange.com###topHeaderBannerWrap
-! paywall
+    ! paywall
 ||experts-exchange.com/images/experts-exchange/question-pages/solution-blur-tinted.webp
 ||experts-exchange.com/*/answer-blur.$image
 experts-exchange.com##[class^=solutionComment__UnlockModal]
@@ -7871,6 +7874,10 @@ experts-exchange.com##.topics
 experts-exchange.com##.content.nolinks
 experts-exchange.com###issuesMatter
 experts-exchange.com###valueProp
+experts-exchange.com##[class^=ctaButtonSection]
+experts-exchange.com##[class^=learnFromTheBest]
+experts-exchange.com##[class*=CertifiedSolution]
+experts-exchange.com##[class^=solutionComment]:has-text(/^$/)
 
 experty.io##.footermenu__icons
 
