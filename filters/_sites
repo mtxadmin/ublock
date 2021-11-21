@@ -1475,9 +1475,8 @@ _pagespeed_beacon?  # from AdGuard
 ###backtotopbutton
 ###backtotoplink
 ###backtotop-scroll
-##button[aria-label="Наверх"]
-###buttonontop
-##.buttonontop
+##.b-button-up
+##.b-scroller-up
 ##.btn-scroll
 ##.btn--top
 ###btnTop
@@ -1491,11 +1490,15 @@ _pagespeed_beacon?  # from AdGuard
 ##.bt_up
 ##.bt_up_scroll
 ##.but-scroll
+##button[aria-label="Наверх"]
 ###button_down
 ##.button_down
 ###button-go-up
+###buttonontop
+##.buttonontop
 ##.button--scroll
 ##.button_to_down
+##.buttonUp
 ##.button_up
 ##.button__up
 ##.bxr-button-up
@@ -1509,6 +1512,7 @@ _pagespeed_beacon?  # from AdGuard
 ##.fa-chevron-up
 ##.fastBack
 ###fast-back-top
+##.fixed-goto-top
 ##.floating-bottom
 ##.floating-top
 ###float_top
@@ -1531,6 +1535,7 @@ _pagespeed_beacon?  # from AdGuard
 ##.go_top_button
 ##.go-to-up
 ###goup
+##.goUp
 ##.go-up
 ##.go_up_btn
 ##.go-up-button
@@ -1541,6 +1546,7 @@ _pagespeed_beacon?  # from AdGuard
 ##.icon-angle-up
 ##.icon-back-to-top
 ##.icon_moveup
+##.icon-top
 ##.icon-up
 ##.icon-up-small
 ##.in_top
@@ -1576,10 +1582,16 @@ _pagespeed_beacon?  # from AdGuard
 ##.scroll2top_button
 ##.scroll_arrow
 ###scroll-arrow
+##.scrollback
 ##.scroll__btn
 ##.scroll_down
 ##.scroll-to-fixed-fixed
 ###scroller
+    ! alfaplan.ru###scroller
+    ! texterra.ru###scroller
+##.scroller
+    ! chatrating.ru##.active.scroller
+    ! itsyourip.com##.scroller.fixed-goto-top
 ##.scroll-icon
 ##.scroll-top-link
 ##.scrollTo_top
@@ -1596,10 +1608,13 @@ _pagespeed_beacon?  # from AdGuard
 ###ToBottom
 ###to-bottom
 ##.to-bottom
+###top
+##.top
 ##.top-btn
 ##.top_button
 ###todown
 ##.top_btn
+##.toplink
 ! is in RuAdList and Fanboy's
 ##.tothetop
 ##.top-button
@@ -1626,24 +1641,28 @@ _pagespeed_beacon?  # from AdGuard
 ###up
 ##.up_arr
 ##.uparrow
+###up-btn
 ##.up-btn
 ###up_btn
 ###upbut
 ###up_but
+###upButton
+##.upButton
+###upbutton
+##.upbutton
 ###up-button
 ###up_button
 ! is in Fanboy's
 ##.up_button
 ##.up-button
 ##.up-button_js
-###upButton
-##.upButton
-###upbutton
-##.upbutton
+##.up-button-page
 ##.updown
 ##.updown--shown
-##.uppage
+##.up_link
 ###up-link
+##.uppage
+##.up-page
 ##.uptop
 ##.v-moveup__wrap
 ##.webnavoz_button_action_up
@@ -3767,7 +3786,6 @@ aslife.ru##.tn-atom
 ||ocenka-alfabank.ru/dist/img/alfa_icon_work$image
 ||ocenka-alfabank.ru/dist/img/alfa_icon_adv$image
 
-alfaplan.ru###scroller
 alfaplan.ru###hh
 alfaplan.ru##p.pr-ph-num
 alfaplan.ru##.stamp
@@ -5739,8 +5757,6 @@ chargebackblog.ru##.form-wrapper
 charlifox.ru###logo_desc_new
 
 chartio.com##.tutorial-toc__wrapper
-
-chatrating.ru##.active.scroller
 
 chayka-sport.ru##.main_ico_phone
 
@@ -10368,8 +10384,6 @@ itsimple.info##.rsrc-header-img
 ||itsketch.ru/images/headers/$image
 itsketch.ru##.your-ip
 
-itsyourip.com##.scroller.fixed-goto-top
-
 it-tehnik.ru##.posts-view-carousel
 ! it-tehnik.ru$script:contains(requestNotificationPermission) - doesn't (and shouldn't) work.
 it-tehnik.ru##^script:has-text(requestNotificationPermission)
@@ -11062,6 +11076,8 @@ kom-dir.ru##.id2-polezno
 ||kommersant.ru/common/bannernew
 ||kommersant.ru/komcounter/readcounter
 ||kommersant.ru/poll/
+||kommersant.ru^*/top100.  # from Fanboy's
+||kommersant.uk^*-subscribe-  # from Fanboy's
     ! popups
 ! is in Adguard
 kommersant.ru##.new-subscription-popup
@@ -11077,6 +11093,12 @@ kommersant.ru##.slider-announce
 kommersant.ru##.adv_nest
 ! "Партнерский проект"
 kommersant.ru##.top_news__link:has(.top_news__update)
+! from Fanboy's
+kommersant.uk##.article-subscribe
+! from Fanboy's
+kommersant.uk##.subscription-form
+! from Fanboy's
+kommersant.uk##.subscription-message
     ! other
 ! is in Fanboy's
 kommersant.ru##.network
@@ -19308,7 +19330,6 @@ teslarati.com##.body-top-pad:style(padding-top:15px !important)
 
 teusink.net###header-wrapper
 
-texterra.ru###scroller
 texterra.ru##.guideankor
 texterra.ru##.menu-top
 texterra.ru###matnav
