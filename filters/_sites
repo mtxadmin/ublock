@@ -14668,22 +14668,34 @@ oxsy.ru##.nav-toggle:style(position:static !important)
 
 oxy-center.ru##.anketa-patsienta
 
-ozon.ru##.bWarnPoup
-ozon.ru##.b4u0
-||ozone.ru/s3/cms/$image
-ozon.ru##.skeleton-banner
-! footer icons
-ozon.ru##svg:matches-css(width:24px):matches-css(height:24px)
-||ozone.ru/_nuxt/cms-all-banner*
+    ! top
+!ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
+ozon.ru###stickyHeader:style(position:static !important)
+ozon.ru###stickyHeader::before
+    ! popups
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
-||ozone.ru/_nuxt/pdp-all-sharing-button*
-||ozone.ru/graphics/client-metrics/
-||ozone.ru/graphics/new_no_photo.png
-||ozone.ru/assets/cms-desktop-promo
+ozon.ru##.bWarnPoup
+    ! banners and promos
+||ozone.ru/_nuxt/cms-all-banner*
+||ozone.ru/graphics/bx/
+||ozone.ru/s3/marketing-api/
+||ozone.ru/s3/cms/$image
 ||ozone.ru/assets/marketing
 ||ozone.ru/s3/marketplace-seller-actions/banners/$image
+ozon.ru##button:has-text(Premium)
+ozon.ru##.skeleton-banner
+    ! trackers
+||ozone.ru/s3/ozon-tag-manager/
+||ozon.ru/api/logs-gateway/
+||ozone.ru/graphics/client-metrics/
+    ! other
+ozon.ru##.b4u0
+! footer icons
+ozon.ru##svg:matches-css(width:24px):matches-css(height:24px)
+||ozone.ru/_nuxt/pdp-all-sharing-button*
+||ozone.ru/graphics/new_no_photo.png
+||ozone.ru/assets/cms-desktop-promo
 ||ozone.ru/s3/sellerassets/
-ozon.ru##*:matches-css(position:fixed):style(position:static !important)
 
 packtpub.com##.upsell-box
 packtpub.com##.upsell-banner
