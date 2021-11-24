@@ -14672,6 +14672,7 @@ oxy-center.ru##.anketa-patsienta
 !ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
 ozon.ru###stickyHeader:style(position:static !important)
 ozon.ru###stickyHeader::before
+ozon.ru##div[triggering-object-selector="#short-product-info-trigger-new"]
     ! popups
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
 ozon.ru##.bWarnPoup
@@ -14681,7 +14682,8 @@ ozon.ru##.bWarnPoup
 ||ozone.ru/s3/marketing-api/
 ||ozone.ru/s3/cms/$image
 ||ozone.ru/assets/marketing
-||ozone.ru/s3/marketplace-seller-actions/banners/$image
+||ozone.ru/s3/marketplace-seller-actions/banners/
+||ozone.ru/*/banners_services/
 ozon.ru##button:has-text(Premium)
 ozon.ru##.skeleton-banner
     ! trackers
@@ -14696,6 +14698,9 @@ ozon.ru##svg:matches-css(width:24px):matches-css(height:24px)
 ||ozone.ru/graphics/new_no_photo.png
 ||ozone.ru/assets/cms-desktop-promo
 ||ozone.ru/s3/sellerassets/
+!||ozone.ru/assets/vendors - don't, map blocked
+!||ozone.ru/assets/vendors-node_modules_bx - don't, map blocked
+!||ozone.ru/assets/cms-desktop-top-bar - don't
 
 packtpub.com##.upsell-box
 packtpub.com##.upsell-banner
