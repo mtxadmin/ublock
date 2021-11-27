@@ -7624,18 +7624,23 @@ elbor.ru##.mod_configdoor_akcia
 ||eldorado.ru/static_spa/assets/footerIconOdnoklassniki$image
 ||eldorado.ru/static_spa/assets/footerIconYoutube$image
 ||eldorado.ru/static_spa/assets/payment$image
-! header and fixed elements
+||eldorado.ru/upload/newbx/$image
+!||eldorado.ru/upload/iblock/$image - don't
+||eldorado.ru/static_spa/assets/check-bonus$image
+!||eldorado.ru/_next/static/chunks/  # scripts - don't
+    ! header and fixed elements
 eldorado.ru##.fixedApplied:style(position:static !important)
 eldorado.ru##.q-fixed-item:style(position:static !important)
 eldorado.ru##.fixedScroll:style(position:static !important)
 eldorado.ru##.header-main-logo
-! brands list
+eldorado.ru##*:matches-css(position:fixed)
+    ! brands list
 eldorado.ru##.js-slider-brands
 eldorado.ru##.q-slider-brands
-! marketing prices
+    ! marketing prices
 eldorado.ru##.product-box-price__old
 eldorado.ru##.product-box-price > .product-box-price__text
-! other
+    ! other
 eldorado.ru##.usersReviewsListItemInnerContainer > .middleBlockItem > p > b:has-text(/^0 человек считают этот отзыв полезным/)
 eldorado.ru##.slick-slider
 eldorado.ru##.q-slider-last-viewed
