@@ -40,6 +40,9 @@ $removeparam=|gs_l  # Google
 
 ||3dnews.ru$removeparam=from
 
+airbnb.com$removeparam=|source_impression_id|euid|c
+airbnb.ru$removeparam=|source_impression_id|euid|c
+
 ! See aliexpress rules in aliexpress file
 
 ! Found independently, but cannot be applied in uBlock Origin as in NeatURL
@@ -76,6 +79,8 @@ location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https
 ! test URL: https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct
 addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|isDefaultBrowser|searchEngine|syncSetup|type|flowId  # from NeatURL
 
+mvideo.ru$removeparam=reff
+
 ||nationalinterest.org$removeparam=itok|timestamp
 
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
@@ -88,7 +93,11 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 
 ||sourceforge.net$removeparam=|source|position  # from NeatURL
 
+tinkoff.ru$removeparam=dsp_click_id
+
 ||tweakers.net$removeparam=|nb|u  # from https://github.com/Smile4ever/Neat-URL
+
+udemy.com$removeparam=referralCode
 
 ||unsplash.com$removeparam=|ixlib|ixid
 
@@ -126,7 +135,6 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 !@@||t.send.vt.edu/r/?id=$removeparam=utm_campaign
 !@@||onet.pl/?utm_source=$removeparam
 
-
 ! from NeatURL
 !Google Analytics - tracking https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
 !tid, aip, ds, qt, cid, uid, uip, ua, geoid, dr, cn, cs, cm, ck, cc, ci, gclid, dclid, linkid
@@ -160,11 +168,3 @@ ozon.ru$removeparam=|asb|asb2|sh
 
 satom.ru$removeparam=|i
 
-tinkoff.ru$removeparam=dsp_click_id
-
-airbnb.com$removeparam=|source_impression_id|euid|c
-airbnb.ru$removeparam=|source_impression_id|euid|c
-
-udemy.com$removeparam=referralCode
-
-mvideo.ru$removeparam=reff
