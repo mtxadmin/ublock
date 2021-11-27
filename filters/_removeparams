@@ -84,6 +84,8 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 
 ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 
+#sevenforums.com$removeparam=__cf_chl_jschl_tk__  # don`t, it seems, it is "DDoS protection by Cloudflare" param
+
 ||sourceforge.net$removeparam=|source|position  # from NeatURL
 
 ||tweakers.net$removeparam=|nb|u  # from https://github.com/Smile4ever/Neat-URL
@@ -153,8 +155,6 @@ addons.mozilla.org$removeparam=src|source|surveyversion|updateChannel|fxVersion|
 !    ncid
 !    nid
 !    ref_
-
-#sevenforums.com$removeparam=__cf_chl_jschl_tk__  # don`t, it seems, it is "DDoS protection by Cloudflare" param
 
 ozon.ru$removeparam=|asb|asb2|sh
 
