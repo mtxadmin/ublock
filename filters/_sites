@@ -1271,7 +1271,7 @@ _pagespeed_beacon?  # from AdGuard
 !! ratings and surveys
 /rate.widget.js
 ! generalized
-~aliexpress.com,~aliexpress.ru,~air-gun.ru,~backit.me,~epn.bz,~support.google.com,~trimble.com,~dobrodel.ru,~mosreg.ru,~mos.ru,~neorabote.net,~news2.ru,~wildberries.ru,~yandex.ru##[class*="feedback"]:not(html):not(body)
+~aliexpress.com,~aliexpress.ru,~air-gun.ru,~backit.me,~epn.bz,~support.google.com,~trimble.com,~dobrodel.ru,~mosreg.ru,~mos.ru,~neorabote.net,~news2.ru,~wildberries.ru,~wildberries.co.il,~~wildberries.fr,~yandex.ru##[class*="feedback"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru,~disconnect.me,~trimble.com,~zen.yandex.ru##[id*="feedback"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru##[class*="Survey"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru##[id*="Survey"]:not(html):not(body)
@@ -1390,7 +1390,7 @@ _pagespeed_beacon?  # from AdGuard
     ##.scroll_up
 ##[id*="_to_top"]:not(html):not(body)
 ! Оказывается, глюки с картами были связаны именно с этим правилом - на встраиваемых яндекс-картах попапы подпадают под раздачу. Пробуем аккуратно отключить через ymaps (возможно, сработает не везде). Update: да, отлично работает
-~dobrodel.ru,~dobrodel.mosreg.ru,~wildberries.ru##[class*="_to_top"]:not(html):not(body):not(ymaps)
+~dobrodel.ru,~dobrodel.mosreg.ru,~wildberries.ru,~wildberries.co.il,~wildberries.fr##[class*="_to_top"]:not(html):not(body):not(ymaps)
 ##[class*="-to-top"]:not([class*="sticked-to-top"]):not(html):not(body)
 ##[id*="-to-top"]:not(html):not(body)
     ! is in Fanboy's
@@ -21476,8 +21476,17 @@ wikiwand.com###cover_image_wrapper
 wikiwand.com###article_content_wrapper:style(margin-top:40px !important)
 
 ||wildberries.ru/stats/
+||wildberries.co.il/stats/
+||wildberries.fr/stats/
+!
 ||wildberries.ru/visitedgoods
+||wildberries.co.il/visitedgoods
+||wildberries.fr/visitedgoods
+!
 ||wildberries.ru/search/tagsbyurl
+||wildberries.co.il/search/tagsbyurl
+||wildberries.fr/search/tagsbyurl
+!
 ||wb.ru/sdk/sdk.js
 ||wbstatic.net/j/externalStat.min.js
 ||wbstatic.net/i/fastSubscribe.png
@@ -21487,57 +21496,57 @@ wildberries.ru##.header-bg:style(top:0px !important)
 ! проблема с поисковой формой. Если убрать класс, то хотя бы placeholder виден
 wildberries.ru##+js(remove-attr, class, .search-catalog__input)
     ! quick view
-wildberries.ru##.preview-item
-wildberries.ru##.j-open-product-popup
-!wildberries.ru##.hover
+wildberries.ru,wildberries.co.il,wildberries.fr##.preview-item
+wildberries.ru,wildberries.co.il,wildberries.fr##.j-open-product-popup
+!wildberries.ru,wildberries.co.il,wildberries.fr##.hover
     ! popups
-wildberries.ru###vip-status-popup
-wildberries.ru##.i-vip-status-popup
-wildberries.ru##.j-vip-status-popup
-wildberries.ru##.tooltipster-content:has-text(Используйте разные размеры карточек)
+wildberries.ru,wildberries.co.il,wildberries.fr###vip-status-popup
+wildberries.ru,wildberries.co.il,wildberries.fr##.i-vip-status-popup
+wildberries.ru,wildberries.co.il,wildberries.fr##.j-vip-status-popup
+wildberries.ru,wildberries.co.il,wildberries.fr##.tooltipster-content:has-text(Используйте разные размеры карточек)
     ! promos and banners
-wildberries.ru##.i-spec-action
-wildberries.ru##.spec-action
-!wildberries.ru##.new-carousels-and-banners
+wildberries.ru,wildberries.co.il,wildberries.fr##.i-spec-action
+wildberries.ru,wildberries.co.il,wildberries.fr##.spec-action
+!wildberries.ru,wildberries.co.il,wildberries.fr##.new-carousels-and-banners
     ! old (striked out) prices
-wildberries.ru##.old-price
-wildberries.ru##.price-last
-wildberries.ru##.price-old-block
-wildberries.ru##.product-card__sale
+wildberries.ru,wildberries.co.il,wildberries.fr##.old-price
+wildberries.ru,wildberries.co.il,wildberries.fr##.price-last
+wildberries.ru,wildberries.co.il,wildberries.fr##.price-old-block
+wildberries.ru,wildberries.co.il,wildberries.fr##.product-card__sale
     ! credits
-wildberries.ru##.price-block__credit-payment
-wildberries.ru##.list-item__price-credit
+wildberries.ru,wildberries.co.il,wildberries.fr##.price-block__credit-payment
+wildberries.ru,wildberries.co.il,wildberries.fr##.list-item__price-credit
     ! up button
-wildberries.ru##.j-quicknav
-wildberries.ru##.quicknav-v1
+wildberries.ru,wildberries.co.il,wildberries.fr##.j-quicknav
+wildberries.ru,wildberries.co.il,wildberries.fr##.quicknav-v1
     ! footer
-wildberries.ru##.social
-wildberries.ru##.important-link
+wildberries.ru,wildberries.co.il,wildberries.fr##.social
+wildberries.ru,wildberries.co.il,wildberries.fr##.important-link
     ! apps
-wildberries.ru##.google-play
-wildberries.ru##.app-store
-wildberries.ru##.app-gallery
+wildberries.ru,wildberries.co.il,wildberries.fr##.google-play
+wildberries.ru,wildberries.co.il,wildberries.fr##.app-store
+wildberries.ru,wildberries.co.il,wildberries.fr##.app-gallery
     ! pay cards
-wildberries.ru##.group
-wildberries.ru##.masterCard
-wildberries.ru##.mir
-wildberries.ru##.toPay
-wildberries.ru##.footer__pay-list
+wildberries.ru,wildberries.co.il,wildberries.fr##.group
+wildberries.ru,wildberries.co.il,wildberries.fr##.masterCard
+wildberries.ru,wildberries.co.il,wildberries.fr##.mir
+wildberries.ru,wildberries.co.il,wildberries.fr##.toPay
+wildberries.ru,wildberries.co.il,wildberries.fr##.footer__pay-list
     ! backgrounds
-wildberries.ru##.navbar-pc__link:style(color:#000 !important)
-wildberries.ru##.search-catalog__input:style(color:#000 !important)
-wildberries.ru##.lego-background
+wildberries.ru,wildberries.co.il,wildberries.fr##.navbar-pc__link:style(color:#000 !important)
+wildberries.ru,wildberries.co.il,wildberries.fr##.search-catalog__input:style(color:#000 !important)
+wildberries.ru,wildberries.co.il,wildberries.fr##.lego-background
     ! other
-!wildberries.ru##.tooltipster-content
-wildberries.ru##.suppliers-section
-wildberries.ru##.compatability
-wildberries.ru##.i-tags-group
-wildberries.ru##.also-buy-wrapper
-wildberries.ru##.scrolled-socials
+!wildberries.ru,wildberries.co.il,wildberries.fr##.tooltipster-content
+wildberries.ru,wildberries.co.il,wildberries.fr##.suppliers-section
+wildberries.ru,wildberries.co.il,wildberries.fr##.compatability
+wildberries.ru,wildberries.co.il,wildberries.fr##.i-tags-group
+wildberries.ru,wildberries.co.il,wildberries.fr##.also-buy-wrapper
+wildberries.ru,wildberries.co.il,wildberries.fr##.scrolled-socials
 ! don't edit, there are several divs named ".recently-watched", but only this is really "recently-watched"
-wildberries.ru##.j-recent-items > .recently-watched
+wildberries.ru,wildberries.co.il,wildberries.fr##.j-recent-items > .recently-watched
 ! oneclick
-wildberries.ru##.same-part-kt__btn-buy
+wildberries.ru,wildberries.co.il,wildberries.fr##.same-part-kt__btn-buy
 
 ||wild-mistress.ru/rs/img/limitsign-min.png
 wild-mistress.ru##.tbcust.row
