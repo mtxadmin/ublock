@@ -150,22 +150,22 @@ aliexpress.ru$removeparam=|pdp_ext_f
 !! aliexpress filters and subdomains
 
     ! history
-aliexpress.com##.buyer-activity-bit
-aliexpress.com###historyOuterBox
-aliexpress.com##.show-history
-aliexpress.com##.shopping-history
+aliexpress.com,aliexpress.ru##.buyer-activity-bit
+aliexpress.com,aliexpress.ru###historyOuterBox
+aliexpress.com,aliexpress.ru##.show-history
+aliexpress.com,aliexpress.ru##.shopping-history
 
     ! promotions
 !promotion.aliexpress.com - don't, coupons use it
 ||alicdn.com/g/aemod/ae-pc-promoteSingleBanner/
 aliexpress.com,aliexpress.ru##.festival-header
 aliexpress.com,aliexpress.ru##.festival-sub-venue
-aliexpress.com##.aff-banner
-aliexpress.com##.banner-big-sale
-aliexpress.com##.banner-big-sale-wrap
-aliexpress.com###bigsale-notice
-aliexpress.com##.global-sale-main
-aliexpress.com##.global-sale-module-title
+aliexpress.com,aliexpress.ru##.aff-banner
+aliexpress.com,aliexpress.ru##.banner-big-sale
+aliexpress.com,aliexpress.ru##.banner-big-sale-wrap
+aliexpress.com,aliexpress.ru###bigsale-notice
+aliexpress.com,aliexpress.ru##.global-sale-main
+aliexpress.com,aliexpress.ru##.global-sale-module-title
 aliexpress.com,aliexpress.ru##[class*=bannerLink]
 aliexpress.com,aliexpress.ru##[class*=styles_carousel]
 aliexpress.com,aliexpress.ru##.fmcg-banner
@@ -176,16 +176,23 @@ shoppingcart.aliexpress.com##.big-sale.empty-default
 shoppingcart.aliexpress.com##.empty-default
 
     ! carousel sliders (only active)
-aliexpress.com##.prime-slideshow
+aliexpress.com,aliexpress.ru##.prime-slideshow
 
     ! cookies notice
 ! is in AdGuard, Fanboy's, EasyList
-aliexpress.com##.aliexpress-notice
-aliexpress.com###j-aliexpress-notice
+aliexpress.com,aliexpress.ru##.aliexpress-notice
+aliexpress.com,aliexpress.ru###j-aliexpress-notice
 
     ! social login
-aliexpress.com##.flyout-signIn-type
-aliexpress.com##.login-sns-wrap
+aliexpress.com,aliexpress.ru##.flyout-signIn-type
+aliexpress.com,aliexpress.ru##.login-sns-wrap
+
+    ! app
+aliexpress.com,aliexpress.ru##.sf-download-app
+aliexpress.com,aliexpress.ru##.mobile-app
+aliexpress.com,aliexpress.ru##.android-link
+aliexpress.com,aliexpress.ru##.iphone-link
+aliexpress.com,aliexpress.ru###mobile-download
 
     ! register banners
 aliexpress.com###user-benefits
@@ -1144,11 +1151,8 @@ offer.alibaba.com  # is in Dan Pollock’s hosts file and hpHosts’ Ad and trac
 ||aliexpress.com/h5/mtop.global.ug.webpush
 
 
-aliexpress.ru##.product-fix-wrap
-aliexpress.ru##.sf-download-app
-aliexpress.com##.mobile-app
-aliexpress.ru##.android-link
-aliexpress.ru##.iphone-link
+aliexpress.com,aliexpress.ru##.product-fix-wrap
+
 ! is in Adguard and Ru AdList (https://forums.lanik.us/viewtopic.php?f=102&t=44550)
 aliexpress.com,aliexpress.ru###ae-ru-privacy-banner
 ||alicdn.com/*/privacy-policy-banner/  # from https://forums.lanik.us/viewtopic.php?f=102&t=44550
