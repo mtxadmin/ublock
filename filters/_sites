@@ -9539,6 +9539,21 @@ hi-tech-obzor.ru###menu-hi-tech-obzor-1
 hi-tech-obzor.ru##.owl-dots
 hi-tech-obzor.ru##.has-pale-cyan-blue-background-color.has-small-font-size.has-background
 
+    ! site blocks copypaste
+!hitsauce.ru$inline-script - don't, photos disabled
+!hitsauce.ru##script:contains(onselectstart)
+hitsauce.ru##^script:has-text(/onselectstart|disableSelection|window.event/)
+    ! ad scripts
+||hitsauce.ru/*/wpo-minify-header-jqueryacoplw
+||hitsauce.ru/*/wpo-minify-header-acoplw
+||hitsauce.ru/*/wpo-minify-header-jquerywoo-coupon-reminders
+||hitsauce.ru/*/wpo-minify-header-jquerywt-smart-coupon
+||hitsauce.ru/*/wpo-minify-footer-woobadges
+||hitsauce.ru/*/wpo-minify-footer-jquery-blockui
+||hitsauce.ru/*/wpo-minify-footer-select
+||hitsauce.ru/*/wpo-minify-footer-joinchat
+||hitsauce.ru/*/wpo-minify-footer-selectWoo
+    ! banners and promos
 hitsauce.ru##.banner-item-holder
 hitsauce.ru##.general-banner
 hitsauce.ru##.onsale
