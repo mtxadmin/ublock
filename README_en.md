@@ -30,6 +30,8 @@ First, if you didn't setup [uBlock Origin](https://github.com/gorhill/uBlock) ye
 
 #### On a PC
 
+Just find an extension/add-on named **uBlock Origin** in the Addons/Extensions menu, and add it by clicking a couple of buttons. Please note, search not in your already installed addons, there will be empty, but in the general accessible list online. You can't go wrong there, this add-on has a huge number of installations - millions, as well as a high rating of four and a half stars, with thousands of reviews. The uBlock Origin icon looks like this: ![](https://user-images.githubusercontent.com/22258847/39936895-7ca7a8fc-553d-11e8-9496-45a96b623614.png).
+
 - [uBlock Origin для Google Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 
 - [uBlock Origin для Mozilla FireFox](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
@@ -39,6 +41,8 @@ First, if you didn't setup [uBlock Origin](https://github.com/gorhill/uBlock) ye
 - [uBlock Origin для Opera](https://addons.opera.com/extensions/details/ublock/)
 
 #### On a smartphone
+
+Совершенно аналогично, найдите дополнение по имени uBlock Origin в меню Дополнения (Addons). Иконка та же.
 
 - [uBlock Origin для Mozilla FireFox на Android](https://addons.mozilla.org/EN-US/android/addon/ublock-origin/) 
 
