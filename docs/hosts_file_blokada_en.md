@@ -15,10 +15,12 @@ Wildcard characters are SUPPORTED in this (Blokada) version! You can block a dom
 
 However, there are **advantages:**
 - Blocking with the use of hosts applies to the entire system. Banners and commercials in applications, various telemetry and other
-- Blocking works continuously and [does not require resources](hosts_file_performance_en.md)
-
+- Blocking works continuously and [almost does not require resources](hosts_file_performance_en.md)
 
 Thus, it is best to install **AND** an ad blocker in the browser, **AND** an application that updates the hosts.
+
+If your phone is rooted, you can also block ad hosts in [system hosts file](hosts_file_en.md), to protect your phone while rebooting and just after it, before Blokada started.
+
 
 For this hosts file version, you have to install an app which can works with asterisks in names. At the moment, I know only one such app: [Blokada](https://blokada.org). It is opensource and free.
 
