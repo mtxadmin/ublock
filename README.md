@@ -48,12 +48,19 @@
 
 
 #### На компьютере
+
+Просто найдите расширение/дополнение по имени **uBlock Origin** в меню Дополнения (Addons/Extensions, в зависимости от браузера) и добавьте его, нажав пару кнопок. Обратите внимание, ищите не у себя в уже установленных, там будет пусто, а в общем доступном списке онлайн. Вы там не ошибётесь, это дополнение имеет огромное количество установок - миллионы, а также высокий рейтинг в четыре с половиной звезды, с тысячами отзывов. Иконка uBlock Origin выглядит так: ![](https://user-images.githubusercontent.com/22258847/39936895-7ca7a8fc-553d-11e8-9496-45a96b623614.png).
+
+Для информации, прямые ссылки:
 - [uBlock Origin для Google Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 - [uBlock Origin для Mozilla FireFox](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 - [uBlock Origin для Apple Safari](https://github.com/el1t/uBlock-Safari#installation)
 - [uBlock Origin для Opera](https://addons.opera.com/extensions/details/ublock/)
 
 #### На телефоне
+
+Совершенно аналогично, найдите дополнение по имени **uBlock Origin** в меню Дополнения (Addons). Иконка та же.
+
 - [uBlock Origin для Mozilla FireFox на Android](https://addons.mozilla.org/EN-US/android/addon/ublock-origin/) 
 
 
