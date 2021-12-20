@@ -15,15 +15,33 @@
 ||mail.ru/api/v1/utils/xray/
 ||mail.ru/sw.js
 ||imgsmail.ru/pkgs/2promo/
-! https://pikabu.ru/story/mailru__adblock_plus_kak_skryit_reklamu_7650259
-mail.ru##.layout__column_right
+    ! top
+mail.ru##.pm-logo
+mail.ru##.pm-menu__left__vk-logo
+    ! unstick
+mail.ru##.sticky-springs__item:style(position:static !important)
+mail.ru##.w-pm-menu_submenu:style(position:static !important)
+mail.ru##.sticky:style(position:static !important)
+mail.ru##.sticky__inner:style(position:static !important)
+mail.ru##.m-fixed-panel:style(position:static !important)
+mail.ru##.stickypanel__container
+    ! reflinks
+mail.ru##.article-aligate__links
+mail.ru##.link:has-text(Перейти в магазин)
+mail.ru##.text:has-text(Нажмите на картинку)
+    ! banners and promos
 mail.ru##.letter-list-item-adv
 mail.ru##.spec-project-letter
 mail.ru##.letter-list-item-adv__container
-mail.ru##.sticky-springs__item:style(position:static !important)
-mail.ru##.stickypanel__container
-mail.ru##.w-pm-menu_submenu:style(position:static !important)
-mail.ru##.pm-logo
+    ! bottom
+mail.ru##.margin_left_off
+mail.ru##.margin_right_off
+    ! trash
+||imgsmail.ru/assets/horo_icons/
+mail.ru##.horoscope
+    ! other
+! https://pikabu.ru/story/mailru__adblock_plus_kak_skryit_reklamu_7650259
+mail.ru##.layout__column_right
 mail.ru##.block_widgets
 
 mail.ru##div[class*=ViewerToolbar__downloadApp_fixed]
