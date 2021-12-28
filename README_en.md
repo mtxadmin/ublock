@@ -70,7 +70,7 @@ After setup, click [this link](https://subscribe.adblockplus.org/?location=https
 
 <details>
     <summary>
-    Sometimes this method maybe doesn't work. Let's do it long way.
+    Unfortunately, often this one-click subscription method may not work. Let's do it long way, but it always works.
     </summary>
   
 1. Open uBlock Origin's window, pressing its button ![](https://user-images.githubusercontent.com/22258847/39936895-7ca7a8fc-553d-11e8-9496-45a96b623614.png).
