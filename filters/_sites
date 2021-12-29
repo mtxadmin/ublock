@@ -16592,11 +16592,16 @@ redcocktube.com##.s_desc
 ||redditmedia.com/gtm/jail?  # from EasyPrivacy
 ! disable rule from Fanboy’s Enhanced Tracking List
 @@*$generichide,domain=reddit.com,badfilter
+    ! unfix top
 reddit.com##div:matches-css(position:sticky)
 reddit.com##div:matches-css(position:fixed)
+reddit.com##*:matches-css(position:sticky)
+reddit.com##*:matches-css(position:fixed)
+    ! top
 reddit.com##.redditname.pagename.hover
 reddit.com##.commentsignupbar.infobar
 reddit.com##.listingsignupbar.infobar
+    ! other
 ! from EasyList
 reddit.com##div[id^="overlay-sidebar-atf-"]
 ! from EasyList
