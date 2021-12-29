@@ -15152,17 +15152,17 @@ pikabu.ru##+js(remove-class.js, story_short)
 ! 2021-12 author descriptions in post titles
 pikabu.ru##.story__author-description
 !
-! email subscription forms
+    ! email subscription forms
 pikabu.ru##.email-block
 pikabu.ru##.email-form_block
-! ads in posts (by platform)
+    ! ads in posts (by platform)
 pikabu.ru##.page-story__story:has(#adfox_context_story_1)
-! ads in posts (by users)
+    ! ads in posts (by users)
 !pikabu.ru##p:has(a[href*="http://t.me"])
 !pikabu.ru##p:has(a[href*="https://t.me"])
 !pikabu.ru##p:has(a[href*="https://www.instagram.com/"])
 !
-! sidebar is full of fintiflyushek
+    ! sidebar is full of fintiflyushek
 pikabu.ru##.sidebar-block__content_links
 pikabu.ru##.sidebar-block-links
 pikabu.ru##.sidebar-block-links__apps
@@ -15210,19 +15210,20 @@ pikabu.ru##.ny2022-btn
 !
 ! ads in menu ("special projects")
 pikabu.ru##a.sidebar-menu__item_main.sidebar-menu__item:has(img)
+! ads in lenta
+pikabu.ru##.stories-feed__recommend-button
 !
 ! pictures below the menu
 pikabu.ru##:root::after:style(background-image:none !important)
 pikabu.ru##.header__main::after:style(background-image:none !important)
 !
-! apps
+    ! apps
 pikabu.ru##.footer__buttons
 pikabu.ru##.footer__title
-!
 ! small icons about app-posted messages
 pikabu.ru##.comment__platform
 !
-! socials
+    ! socials
 pikabu.ru##.social-icon
 pikabu.ru##div.section-hr
 pikabu.ru##.share
@@ -15230,10 +15231,10 @@ pikabu.ru##.share-facebook
 pikabu.ru##.share-linkedin
 pikabu.ru##.share-twitter
 !
-! dots on avatar
+    ! dots on avatar
 pikabu.ru##.avatar__note
 !
-! turbo top
+    ! turbo top
 pikabu.ru##.advert__item
 pikabu.ru##.advert
 pikabu.ru##.header-turbo-icon
@@ -15241,6 +15242,10 @@ pikabu.ru##.header_logo-host
 pikabu.ru##.cover::before
 ! emotions in posts
 pikabu.ru##.emotions
+    ! lightbulbs
+pikabu.ru##div.menu_vertical.menu.sidebar-block__content_hr.sidebar-block__content:has-text(Ламповый конструктор)
+pikabu.ru##.lightbulbs__welcome
+pikabu.ru##.stories-feed__container > section:has-text(Создать свою доску)
 !
 ! other
 pikabu.ru##div.sidebar-block_border.sidebar-block:has(.sidebar-block__header:has-text(Вакансии))
@@ -15256,6 +15261,8 @@ pikabu.ru##.halloween
 pikabu.ru##.story__top
 ! xz
 pikabu.ru##.profile_short
+! post author descriptions
+pikabu.ru##.story__author-description
 ! don't remove popups, they are all needed
 !pikabu.ru##.popup_show.popup_animation.popup
 !pikabu.ru##.popup
@@ -15282,10 +15289,6 @@ pikabu.ru##.comment-image:not(:has(.player)):style(height:100px)
 ! ad icons in right top menu
 pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeneyahe_i_d_4931277"]
 !cs.specials.pikabu.ru
-! lightbulbs
-pikabu.ru##div.menu_vertical.menu.sidebar-block__content_hr.sidebar-block__content:has-text(Ламповый конструктор)
-pikabu.ru##.lightbulbs__welcome
-pikabu.ru##.stories-feed__container > section:has-text(Создать свою доску)
 !
 ! some user-generated pictures
 ||pikabu.ru/post_img/2020/04/16/10/1587058488132653149.png
