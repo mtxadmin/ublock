@@ -22741,7 +22741,7 @@ zaycev.net##.bookmarks
 zbord.ru##.maintitle
 
 ! zoho
-zcsend.net$domain=~zoho.com,domain=~zohopublic.com,domain=~zohostatic.com,domain=~zohosupport.com,domain=~zohowebstatic.com
+zcsend.net$domain=~zoho.com,domain=~zohopublic.com|~zohostatic.com|~zohosupport.com|~zohowebstatic.com
 
 urs.zdnet.com  # ad scripts  # is in EasyList
 ||zdnet.com/*promo$xmlhttprequest  # is in uBlock filters
@@ -23809,3 +23809,6 @@ spermlab.ru##.ct-text-block
 spermlab.ru##.ct-code-block
 spermlab.ru##.about-lab
 spermlab.ru##.wpcf7-form
+
+! ad cookies
+dadata.ru##+js(cookie-remover.js)
