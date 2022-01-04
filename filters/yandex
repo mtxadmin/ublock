@@ -504,7 +504,8 @@ yandex.ru/monitoring
 mail.yandex.ru##.ns-view-rcnxnpi+div
 mail.yandex.ru##.ns-view-infoline-box+div
 ! https://pikabu.ru/story/kak_ubrat_reklamu_v_yandekspochte_7564444
-mail.yandex.ru##.ns-view-id-*:contains(Реклама)
+!mail.yandex.ru##.ns-view-id-*:contains(Реклама) - doesn't work
+mail.yandex.ru##[class^=ns-view-id-]:contains(Реклама)
 
 yandex.ru##.cl-modal-unauth
 yandex.ru##.modal__backdrop
