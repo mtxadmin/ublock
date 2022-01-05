@@ -26,7 +26,7 @@ google.*###gbw > div:has-text(Войти)
 google.*##div.fbar:nth-of-type(2)
 
 translate.google.com##.gb_g.gb_Vc.gb_wd
-translate.googleapis.com$domain=~translate.google.com
+!translate.googleapis.com$domain=~translate.google.com - don't, it can be called when translating urls
 
 ads.google.com
 
