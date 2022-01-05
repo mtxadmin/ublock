@@ -97,6 +97,9 @@ youtube.com###consent-bump
 ! is in uBlock. Applies to google recaptcha as well, ok.
 www.google.*##+js(remove-attr, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
 
+! Adguard rule
+www.google.*##+js(remove-attr, ping, div[id="search"] a[data-ved][ping])
+
 ! is in EasyList
 ##iframe[id^="google_ads_frame"]
 
