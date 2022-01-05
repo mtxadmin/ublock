@@ -329,6 +329,9 @@ reklama.ngs.ru
 reklama.ntv.ru
 reklama.rambler.ru
 
+/rtb.
+rtb.mts.ru  # is in Ru AdList
+
 /scrooge.  # from github.com/asterriya/regex-ads/
 
 /securemetrics.
@@ -780,6 +783,8 @@ cs.avito.ru  # ad xhrs (clickstream)
 
 rev.avsforum.com  # from MVPS
 
+vybbem.avtovzglyad.ru  # from GoodbyeAds
+
 upselly.azurewebsites.net
 
 emptygif.babyblog.ru
@@ -1079,6 +1084,10 @@ ad.daum.net
 !+  analytics.ad.daum.net
 !+  advertise.ad.daum.net
 track.tiara.g.daum.net
+analytics.ad.g.daum.net
+display.ad.g.daum.net
+get.daum.net  # from https://potplayer.club/net-blocking.html
+tiara.daum.net  # from https://potplayer.club/net-blocking.html and GoodbyeAds
 
 admp-tc.delfi.ee  # from Ru AdList
 ado.delfi.ee  # from Ru AdList
@@ -1352,6 +1361,8 @@ zpshq.labrys.ru  # from GoodbyeAds
 
 sentry-js.lamoda.ru
 
+vkgsdl.lassieshop.ru  # from GoodbyeAds
+
 ! "Feature management platform"
 emailtracking.launchdarkly.com  # AS15169 - GOOGLE, US  # "Continuous Delivery"
 events.launchdarkly.com  # is in Adguard and EasyPrivacy  # AS15169 - GOOGLE, US  # "Continuous Delivery"
@@ -1395,6 +1406,15 @@ casino-ad-mediation.me2zengame.com  # from Adguard
 
 embed.megogo.net  # Embedding blocks
 
+mi.miliboo.be  # from GoodbyeAds
+mi.miliboo.ch  # from GoodbyeAds
+mi.miliboo.co.uk  # from GoodbyeAds
+mi.miliboo.com  # from GoodbyeAds
+mi.miliboo.de  # from GoodbyeAds
+mi.miliboo.es  # from GoodbyeAds
+mi.miliboo.it  # from GoodbyeAds
+mi.miliboo.lu  # from GoodbyeAds
+
 an.mlb.com  # from Dan Pollock's hosts file
 
 card.mmos.com  # from Ru AdList
@@ -1411,8 +1431,6 @@ stats.mos.ru  # from EasyPrivacy
 snippets.mozilla.com  # from Ru AdList
 
 pop.mrstiff.com  # from Adguard
-
-rtb.mts.ru  # is in Ru AdList
 
 a.multik-online.net  # from Ru AdList  # zombie
 
@@ -1435,6 +1453,8 @@ tools.naughtyamerica.com  # from MVPS
 autoru.naydex.net  # auto.ru ad scripts
 
 trusted-web-seal.cybertrust.ne.jp
+
+ad-tech.nbcuni.com  # from GoodbyeAds
 
 bx.neolabs.kz  # from Adguard
 
@@ -1586,19 +1606,20 @@ dot-stat.radikal.ru$important
 banneradmin.rai.it$important
 
 c.rambler.ru
-rcmjs.um.rambler.ru
-ssp.rambler.ru$important  # from EasyPrivacy
-sync.rambler.ru$important  # from EasyPrivacy
-um.rambler.ru
+developers.rambler.ru  # ad scripts
 id.rambler.ru  # ad scripts
 loyalty.rambler-co.ru  # ad scripts
-zoomdecorate.rambler.ru  # ad xhrs and tracking imgs
+peroxide.rambler.ru  # ad xhrs
 prime.rambler.ru
 rcm.rambler.ru  # ad xhrs
 rcmjs.rambler.ru  # ad scripts  # "{"name":"recommender_api","version""
-developers.rambler.ru  # ad scripts
+ssp.rambler.ru$important  # from EasyPrivacy
+sync.rambler.ru$important  # from EasyPrivacy
+um.rambler.ru
+    !rcmjs.um.rambler.ru
 vp.rambler.ru  # app (3p) requests and no root (only /admin/ with error)
-api.vp.rambler.ru  # ad xhrs  # api.vp.rambler.ru/events/...
+    !api.vp.rambler.ru  # ad xhrs  # api.vp.rambler.ru/events/...
+zoomdecorate.rambler.ru  # ad xhrs and tracking imgs
 
 info.rapid7.com  # ad redirects
 
@@ -1892,6 +1913,8 @@ vod.wix.com  # ad xhrs
 shoutout.wix.com$important  # ad redirects  # shoutout.wix.com/so/dfMmFmX...
 adsense.codev.wixapps.net
 
+vybbem.womanhit.ru  # from GoodbyeAds
+
 botd.wordpress.com  #[WebBug]  # from MVPS
 botd2.wordpress.com  #[WebBug]  # from MVPS
 !s0.wp.com - don't block
@@ -1956,34 +1979,6 @@ tsr.zlatoff.ru  # from Adguard
 tools.ztod.com  # from MVPS
 
 !! todo
-analytics.ad.g.daum.net
-display.ad.g.daum.net
-
-get.daum.net  # from https://potplayer.club/net-blocking.html
-tiara.daum.net  # from https://potplayer.club/net-blocking.html and GoodbyeAds
-||daumcdn.net/*/tiara.min.js
-/tiara/*
-/tiara.min.js
-
-mi.miliboo.be  # from GoodbyeAds
-mi.miliboo.ch  # from GoodbyeAds
-mi.miliboo.co.uk  # from GoodbyeAds
-mi.miliboo.com  # from GoodbyeAds
-mi.miliboo.de  # from GoodbyeAds
-mi.miliboo.es  # from GoodbyeAds
-mi.miliboo.it  # from GoodbyeAds
-mi.miliboo.lu  # from GoodbyeAds
-
-ad-tech.nbcuni.com  # from GoodbyeAds
-
-peroxide.rambler.ru  # ad xhrs
-
-vkgsdl.lassieshop.ru  # from GoodbyeAds
-
-vybbem.avtovzglyad.ru  # from GoodbyeAds
-
-vybbem.womanhit.ru  # from GoodbyeAds
-
 wdwwfu.poshvu.ru  # from GoodbyeAds
 
 vwegpo.adamas.ru  # from GoodbyeAds
