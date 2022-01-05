@@ -1856,6 +1856,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /snoweffect.js
 /snowplow/*$script  # from EasyPrivacy  # https://a.trellocdn.com/lib/snowplow/2.9.0.js
 ||cdnjs.cloudflare.com/ajax/libs/snowstorm/$script,important  # from uBlock
+##.snowflake
 
 
 
@@ -3694,6 +3695,8 @@ affluentinvestor.com##center
 
 afisha.ru##div:matches-css(position:fixed)
 
+afisha21.ru###headers
+
 afrodita.guru##.logo-info
 ||afrodita.guru/wp-content/themes/afrodita/i/back_head.png
 afrodita.guru##.ask-a-Question
@@ -3988,6 +3991,11 @@ alp.org.ua###sape_links-2
 
 ||alphaporno.com/*.php  # is in uBlock filters
 
+altapress.ru##.sticky_header:style(position:static !important)
+altapress.ru##.a_top_place
+altapress.ru##.sp_notify_prompt
+altapress.ru##.sendpulse
+
 altaro.com###sidebar
 altaro.com###tve_editor
 altaro.com##.hdr-blog-link
@@ -4032,6 +4040,9 @@ american-boffin.com##.site-credits
 
 ammo1.ru##.navbar-header
 ammo1.ru##.navbar
+
+ammoland.com##.ai_widget
+ammoland.com##a[href^="https://amolnd.us/"]
 
 ! ad scripts
 amocrm.ru$3p
@@ -4476,6 +4487,8 @@ askme4tech.com##[href^="//go.altaro.com/vm-backup/"]
 ! see askubuntu.com in stackexchange
 
 astera.ru##.footer-widgets
+astera.ru##.table-of-contents__list
+astera.ru##.table-of-contents__header
 
 asus.com##.asusOfficialProductMenu:style(position:static !important)
 asus.com##[class^=HeaderDesktop__logo]
@@ -4537,6 +4550,11 @@ audiobooks.pw##noindex
 
 ! 3p scripts
 audioeye.com$3p
+
+audit-it.ru###gold_block
+audit-it.ru##.h-text
+||audit-it.ru/images/$image
+audit-it.ru##.col_right
 
 auth0.com##.btn-primary.btn
 auth0.com##[class*="stickyNav"]
@@ -5495,6 +5513,7 @@ bobcares.com##.et-l--header
 bobcares.com##.tnp
 bobcares.com##.custom-h2-p1-blocks
 bobcares.com##.fix_me
+bobcares.com##.et_pb_inner_shadow
 
 boffo.ru##.new-bottom_block
 boffo.ru##p > em
@@ -5574,6 +5593,13 @@ bowandtie.ru##.responsive-menu-button:style(position:static !important)
 
 box.com##.or-container
 box.com##.sign-in-with-google-button
+
+boxberry.ru##.form-bar-desktop__fixed
+boxberry.ru##.city-submit
+||storage.yandexcloud.net/boxberrysite-public/$image
+boxberry.ru##.slider
+boxberry.ru##.reviews_stories
+boxberry.ru##.mobile-app-stores__wrap
 
 brain-games.ru##.footer-push
 
@@ -5756,6 +5782,14 @@ bugaga.ru###bnr
 
 buh.ru###side_navigation
 buh.ru##.logo-block
+
+||buhgalteria.ru/*/gift.png
+    ! banners and promos
+buhgalteria.ru##.mobileimg
+buhgalteria.ru##a[href^="/bitrix/rk.php"]
+buhgalteria.ru###bottomPopup.bottomPopup
+    ! other
+buhgalteria.ru##.is-affixed
 
 buhta-msk.ru##.main-slider
 buhta-msk.ru##.connect
@@ -6623,6 +6657,8 @@ danycom.ru##.investing-slide--banner
 ||darkweb.su/peklama/  # from Adguard
 darkweb.su##.p-body-sidebar
 darkweb.su##.p-navEl
+
+darrenjrobinson.com##.custom-header
 
 databasejournal.com##.sprite-logo-left
 ||databasejournal.com/*/dbjlogo.gif
@@ -23721,13 +23757,6 @@ myfactore.com  # "platform for your analytics and investment proposal generation
 
 memepedia.ru##.a
 
-boxberry.ru##.form-bar-desktop__fixed
-boxberry.ru##.city-submit
-||storage.yandexcloud.net/boxberrysite-public/$image
-boxberry.ru##.slider
-boxberry.ru##.reviews_stories
-boxberry.ru##.mobile-app-stores__wrap
-
 gtm4wp.com
 
 fabianlee.org##body:style(background-color:unset !important)
@@ -23751,11 +23780,6 @@ gunmag.com.ua##.btVerticalMenuTrigger
 
 mfd.ru$3p
 
-altapress.ru##.sticky_header:style(position:static !important)
-altapress.ru##.a_top_place
-altapress.ru##.sp_notify_prompt
-altapress.ru##.sendpulse
-
 ||privacy.truste.com/$image
 
 gunmag.com.ua##.btTickerSlider
@@ -23772,8 +23796,6 @@ full-houses.ru##.fhMenu__links-phone
 
 clickpay.com##.scroll-to-fixed-fixed:style(position:static !important)
 
-afisha21.ru###headers
-
 shoowbizz.com##.bg
 
 ||cheb.ru/css/bg/$image
@@ -23781,15 +23803,8 @@ shoowbizz.com##.bg
 ! Adguard rule
 www.google.*##+js(remove-attr, ping, div[id="search"] a[data-ved][ping])
 
-ammoland.com##.ai_widget
-ammoland.com##a[href^="https://amolnd.us/"]
-
-bobcares.com##.et_pb_inner_shadow
-
 meraki.com##.nav
 meraki.com##.bold-rounded-box
-
-darrenjrobinson.com##.custom-header
 
 ||vkusnyy.top/*/sunrise_background1.jpg
 
@@ -23812,9 +23827,6 @@ medium.com##.c.s:has-text(Read the rest)
 ! cookies popup
 advgazeta.ru##.popup--confidential
 
-astera.ru##.table-of-contents__list
-astera.ru##.table-of-contents__header
-
 wordpress.com###entry-author-info
 
 ! no bluring
@@ -23826,20 +23838,6 @@ kontur.ru##.article-announce
 kontur.ru###pageWrapper:style(filter:none !important)
 ! other
 kontur.ru##.text-block
-
-audit-it.ru###gold_block
-audit-it.ru##.h-text
-||audit-it.ru/images/$image
-audit-it.ru##.col_right
-
-buhgalteria.ru###bottomPopup.bottomPopup
-buhgalteria.ru##.snowflake
-||buhgalteria.ru/*/gift.png
-buhgalteria.ru##.is-affixed
-! banners
-buhgalteria.ru##.mobileimg
-buhgalteria.ru##a[href^="/bitrix/rk.php"]
-! other
 
 restfulapi.net##.helpful
 restfulapi.net##.gb-button
