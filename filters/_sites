@@ -2016,6 +2016,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /ico_subscribe.png
 /newsletter/*  # ||nitrocdn.com/*/newsletter/
 /newsletterwidget/*
+/subscribe.$image
 /subscribe.quick.form/*  # /bitrix/*/subscribe.quick.form/
 ! generalized
 ~domclick.ru,~eff.org,~mail.ru,~sberbank.ru,~mail.yandex.ru##[class*="Letter"]:not(html):not(body):not(article)
@@ -15915,6 +15916,14 @@ pikabu.ru##article.story:has(.story__user-info:has-text(PYCCKuu64))
 ! политтролль
 pikabu.ru##article.story:has(.story__user-info:has-text(DasVasser))
 pikabu.ru##article.story:has(.story__user-info:has-text(Medicolegist))
+! Спам спам спам
+pikabu.ru##article.story:has(.story__user-info:has-text(EnotTravel.ru))
+! Копирайтерский спам
+pikabu.ru##article.story:has(.story__user-info:has-text(teamwows))
+! Дзен-копирайтерский спам
+pikabu.ru##article.story:has(.story__user-info:has-text(freetraveler))
+pikabu.ru##article.story:has(.story__user-info:has-text(levi.juden))
+pikabu.ru##article.story:has(.story__user-info:has-text(madmuazel))
 !
 !
 pikabu.ru##.pik-virus
