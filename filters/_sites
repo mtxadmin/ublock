@@ -1486,6 +1486,7 @@ _pagespeed_beacon?  # from AdGuard
 ###backtotop-scroll
 ##.b-button-up
 ##.b-scroller-up
+##.btn-on-top
 ##.btn-scroll
 ##.btn--top
 ###btnTop
@@ -2195,6 +2196,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 ##.fa-cc-mastercard
 ##.fa-cc-visa
 ##.f-buy-methods
+##.footer__area-pay
 ##.footer-bottom__icons
 ##.footer__cards
 ##.footer_cards
@@ -10447,10 +10449,12 @@ inbox.lv##.branding
 inc.com$script
 
 ! don't. Sometimes, rarely, when these rules enabled, a page is blocked
-!incapdns.net$3p,script,image  # strange scripts and tracking imgs  # no root  # seems to be Incapsula site (see /_Incapsula_Resource rule, for instance)  # but don't block it entirely, at least, css is needed
-!!+  ip.incapdns.net
-!! end of incapdns.net
-!/_Incapsula_Resource  # their script redirects
+! update: see ozon.ru as an example. But with these rules disabled, it has cycled redirects or cycled captchas
+! so, enabled again
+incapdns.net$3p,script,image  # strange scripts and tracking imgs  # no root  # seems to be Incapsula site (see /_Incapsula_Resource rule, for instance)  # but don't block it entirely, at least, css is needed
+!+  ip.incapdns.net
+! end of incapdns.net
+/_Incapsula_Resource  # their script redirects
 
 indeed.com##.gnav-Logo
 indeed.com##.popover
