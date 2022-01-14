@@ -1171,6 +1171,7 @@ blank.gif
 /js/analitics.  # is in EasyPrivacy
 /js/analytics.  # from EasyPrivacy
 /js/tracking/*  # is in EasyPrivacy
+/logger/*  # is in Adguard: /logger/p.gif?*d=/*
 _loghuman=  # from EasyPrivacy
 /mobile-useragent-info.js
 /mod_pagespeed_beacon?  # from Fanboy's
@@ -1620,7 +1621,7 @@ _pagespeed_beacon?  # from AdGuard
 ###ToBottom
 ###to-bottom
 ##.to-bottom
-###top:not(.p-pageWrapper):not(.btPageWrap)
+###top:not(html):not(body):not(article):not(.p-pageWrapper):not(.btPageWrap)
 ##.top
 ##.top-btn
 ##.top_button
