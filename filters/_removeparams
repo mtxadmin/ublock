@@ -26,7 +26,8 @@ $removeparam=|yclid|_openstat  # Campaign tracking (Yandex)  # https://yandex.co
 $removeparam=|mbid|cmpid|c_id|campaign_id|Campaign  # Campaign tracking (others) # cid is excluded - it is being used by some forum engines  # https://www.parse.ly/help/post/4843/campaign-data-tracking/
 $removeparam=|fb_action_ids|fb_action_types|fb_ref|fb_source|fbclid  # Facebook
 $removeparam=|spReportId|spJobID|spUserID|spMailingID  # "IBM Acoustic Campaign
-$removeparam=|elqTrackId|elqTrack|assetType|assetId|recipientId|campaignId|siteId  # Oracle Eloqua 
+$removeparam=|elqTrackId|elqTrack|campaignId|siteId  # Oracle Eloqua
+#$removeparam=|assetType|assetId|recipientId|campaignId|siteId  # Oracle Eloqua, but do not block senderId and recipientId in general
 $removeparam=|_hsenc|_hsmi|__hssc|__hstc|hsCtaTracking  # Hubspot
 $removeparam=|gs_l  # Google
 
