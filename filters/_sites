@@ -15266,12 +15266,14 @@ oxy-center.ru##.anketa-patsienta
 
     ! top
 !ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
-ozon.ru##.modal:has-text(город)
 ozon.ru###stickyHeader:style(position:static !important)
 ozon.ru###stickyHeader::before
 ozon.ru##div[triggering-object-selector="#short-product-info-trigger-new"]
+ozon.ru##.white-bg:style(top:0px !important)
+ozon.ru##.white-bg:style(position:static !important)
     ! popups
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
+ozon.ru##.modal:has-text(город)
 ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли)
 
