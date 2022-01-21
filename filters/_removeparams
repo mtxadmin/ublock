@@ -34,6 +34,8 @@ $removeparam=|gs_l  # Google
 ! Note: || is essential here. Because rule for amazon.com does not catch www.amazon.com
 ! Maybe it is wrong? It seems, ref@amazon cannot be removed for some reason
 
+$removeparam=referer
+    referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 
 !! domains
 
@@ -79,7 +81,6 @@ hh.ru$removeparam=hhtmFromLabel
 hh.ru$removeparam=sent_date
 
 $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
-referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 ?dl=$xhr,removeparam=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 
