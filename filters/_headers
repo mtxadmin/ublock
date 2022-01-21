@@ -587,6 +587,12 @@
     ! vsetv.com##[href="/"]
     ! worki.ru##[href="/"] > div > svg
     ! zdorovayagolova.ru##[href="/"]
+! and other text(!) redirects. In general, do not remove image redirects
+##a[href^="/click/"]:not(:has(img))
+##a[href^="/out/"]:not(:has(img))
+##a[href^="/out2/"]:not(:has(img))
+##a[href^="/out3/"]:not(:has(img))
+##a[href^="/out4/"]:not(:has(img))
 /adaptive_logo.png
 /images/headers/*
 /logo*$image,$domain=~winitpro.ru
