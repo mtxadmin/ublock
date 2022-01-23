@@ -258,6 +258,7 @@ _banner_rotator.php  # from Adguard
 /media/upload_adv/*$image
 /mobile-banner/*
 /module_sticker.min.js  # from Adguard
+/myout.php  # from Adguard: /myout.php?g=
 /native.php  # from AdGuard: .com/native.php?b=
 /nativeads.  # is in Easylist
 /newAd/*
@@ -332,9 +333,11 @@ _player_vpaid_as3.swf  # from Adguard
 /upsell_hero$important
 /upselltracker.js
 /uutils.fcg?  # from EasyPrivacy
-/vast/*  # from EasyList: /vast/ads-
+/vast/*  # from EasyList: /vast/ads-  # from Adguard: ||kodik.biz/vast/
+    /adv-vast/*  # also.  # from Adguard: kodik*/adv-vast/
 /vastad/*  # from Adguard: /vastad/*/manifest.xml
 /vastadv/*  # from Adguard: /vastadv/*/manifest.xml
+/vastadvert/*  # from Adguard: ||kodik.cc/vastadvert/
 /vast-ad/*  # from Adguard: /vast-ad/*/manifest.xml
 /vast-adv/*  # from Adguard: /vast-adv/*/manifest.xml
 /vast-advert/*  # from Adguard: /vast-advert/*/manifest.xml
@@ -2990,8 +2993,8 @@ tarif-24.ru##.mh-ticker-bottom
 /service-worker.js
     ||wordpress.com/service-worker.js
 /sw.js
-    ! is in uBlock filters
-    ||gearbest.com/sw.js$important
+    ||docviewer.yandex.*/sw.js  # from Adguard
+    ||gearbest.com/sw.js$important  # is in uBlock filters
     ||lamoda.ru/sw.js
     ||pikabu.ru/sw.js
     ||yandex.ru/sw.js
