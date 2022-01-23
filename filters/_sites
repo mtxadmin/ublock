@@ -166,6 +166,8 @@ _banner_rotator.php  # from Adguard
     ||nakanune.ru/images/banners/  # from Adguard
 /banners.js
 /banner-support.js
+/bans/*
+    ! ||stopgame.ru/bans/  # from Adguard
 /bens/vinos.js?$important  # is in AdGuard
 /bitrix/spread.php?$important  # is in RU AdList, EasyPrivacy, AdGuard
 /bn/tracker/*  # from EasyPrivacy
@@ -272,14 +274,21 @@ _banner_rotator.php  # from Adguard
 /pagead2/*
 /pageview.js  # is in EasyPrivacy
 /partners/*
+    ! /uploads/partners/*.swf  # from Adguard
+    ! ||allbasketball.org/uploads/partners/  # from Adguard
+    ! ||anti-malware.ru/images/partners/  # from Adguard
+    ! ||civic-club.ru/static/partners/  # from Adguard
     ! ||clib.me/partners/$image
+    ! ||adst.fwdcdn.com/frame/partners/*.html  # from Adguard
     ! ||hclada.ru/img/partners/  # from Adguard
     ! ||i.ua/v2/homepage/partners/
-    ! ||kaztorrents.info/pic/partners/  # from Adguard
     ! ||overclockers.ru/images/partners/wsr_logo.png
+    ! ||printbar.ru/upload/partners/  # from Adguard
     ! ||rg.ru/api/partners/  # is in Ru AdList
+    ! ||sport.ua/images/cyber/partners/  # from Adguard
     ! ||sport-express.ru/fb/img/icons/partners/
-
+    ! ||stopgame.ru/*partners/  # from Adguard
+    ! and others
 /pbjsandwich-  # is in EasyList
 /pc_static.min.js  # from Adguard
 /pc_sticker.min.js  # from Adguard
@@ -1719,7 +1728,7 @@ _pagespeed_beacon?  # from AdGuard
 ##.to-bottom
 ###toolbar_scrollup
 ##.toolbar-scrollup
-###top:not(html):not(body):not(article):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(ul)
+###top:not(html):not(body):not(article):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(ul)
 ##.top
 ##.top-btn
 ##.top_button
@@ -24733,3 +24742,8 @@ ipaddress.com$3p  # from GoodbyeAds: ipaddress.com
 
 ||seo-monster.ru/img_  # from Adguard 
 seo-monster.ru###logo_opis_rekl
+
+||civic-club.ru/photo/  # not a directory, but one photo on root
+||civic-club.ru/static/civic-club.gif
+
+||sport.ua/images/tv/megogo
