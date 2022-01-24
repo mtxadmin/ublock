@@ -70,9 +70,16 @@ _8831.gif  # from Ru AdList
 ! here are some false positives in URL. But generally this rule is very good
 /ad/*$important,domain=~condenast-media.gcdn.co|~dhresource.com|~etutorium.com|~habr.com|~habrastorage.org|~imfdb.org|~livemaster.ru  # condenast-media.gcdn.co (admagazine.ru) is not ads, it is Arch Design
 _ad.aspx  # from Adguard
+/ad.aspx  # from Adguard
+/ad.html  # from Adguard
 /ad.js$important
+/ad.pl?z  # from Adguard
+/ad1.html  # from Adguard
 /ad1.js$important
 -ad1.jpg  # from Adguard
+/ad2.aspx  # from Adguard
+/ad2.html  # from Adguard
+/ad300.htm  # from Adguard
 /adbanner$important
 /ad-banners
 /adbdetect.js  # from Adguard
@@ -369,6 +376,7 @@ _player_vpaid_as3.swf  # from Adguard
     ! ||domsnov.ru/underbanner/  # from Adguard
     ! ||otvetkak.ru/wp-content/themes/yoo_everest_wp/underbanner/zone*.html  # from Adguard
     ! ||prisnilos.su/underbanner/js/the_underbanner  # from Adguard
+/upload/jackets/*  # Ru AdList rule: ||ua/upload/jackets/  # https://s.056.ua/upload/jackets/000/...
 /upsell.js
 /upsell_hero$important
 /upselltracker.js
@@ -973,6 +981,7 @@ _player_vpaid_as3.swf  # from Adguard
 /adv_teasers.  # is in EasyList
 /nettyzer/*
 /teaser
+?teaser_  # from Ru AdList
 /teaser.$~media,~object,domain=~amocrm.ru|~gosuslugi.ru|~insomnihack.ch|~pik-comfort.ru|~play.date  # from Ru AdList  # ok, exclusions from there
 /teaser2.  # from Ru AdList
 /teaser_klubnika/*  # from Ru AdList
@@ -988,6 +997,7 @@ _player_vpaid_as3.swf  # from Adguard
 /tizer.$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
 /tizer/*  # from Ru AdList
 /tizer2.  # from Ru AdList
+_tizer2.  # from Ru AdList
 /tizer2/*  # from Ru AdList
 /tizer_$domain=~mos.ru|~mosmetod.ru  # from Ru AdList
 /tizermedia.  # from Ru AdList
