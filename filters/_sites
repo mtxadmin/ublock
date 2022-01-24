@@ -57,6 +57,7 @@ _728x90.$important
 728x90.p  # from Adguard
 728x90.s  # from Adguard
 768x60.gif  # from Adguard
+_8831.gif  # from Ru AdList
 /8831_1.gif  # from Ru AdList
 /achecker.js
 ! here are some false positives in URL. But generally this rule is very good
@@ -239,6 +240,8 @@ _banner_rotator.php  # from Adguard
 /informer.js$important  # is in Ru AdList
 /informer.php?  # from Ru AdList
 /_informer_/*
+/informer.cgi
+/informer.swf
 /informer/*$third-party,important
     ||sinoptik.ua/_uploaded_files/informer/
 /informers/*$third-party,important
@@ -1969,10 +1972,16 @@ _cookie_policy_  # from Fanboy's and AdGuard
 
 
 !! snowflakes
+_christmaslights.js  # from Ru AdList
 /snow.js
 /snow.min.js
+/snow2.js  # from Ru AdList
+/snowfall.min.js  # from Ru AdList
 /snowflakes.min.js  # not from cdnjs.cloudflare.com/ajax/libs/snowstorm/, but similar annoyance
+/snowstorm.js  # from Ru AdList
+/snowstorm/lights/  # from Ru AdList
 /snowstorm-min.js  # cdnjs.cloudflare.com/ajax/libs/snowstorm/
+_snowstorm-min.js  # from Ru AdList
 /snoweffect.js
 /snowplow/*$script  # from EasyPrivacy  # https://a.trellocdn.com/lib/snowplow/2.9.0.js
 ||cdnjs.cloudflare.com/ajax/libs/snowstorm/$script,important  # from uBlock
@@ -2834,6 +2843,7 @@ tarif-24.ru##.mh-ticker-bottom
     libreelec.tv##.reading-time
 
 ! tag clouds
+/tagcloud.swf  # from Ru AdList
 ##.tagcloud
 ##.tagline
     ! laurakokkarinen.com##.tagline
@@ -24769,3 +24779,10 @@ masterinvest.info##.about-text
 ! don't, there are some images inside
 ||xme.net/trades  
 ||xme.net/.*gif
+
+||zol.ru/noteb/  # is in Ru AdList
+zol.ru###right_banner
+
+||liga.net/js/remp.js  # is in Ru AdList and Fanboy's
+
+_liveinternet.gif  # from Ru AdList
