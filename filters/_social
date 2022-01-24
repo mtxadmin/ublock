@@ -49,6 +49,7 @@ _facebook_icon.  # from Fanboy's and Ru AdList
     /images/fb-  # is in Fanboy's
 /fb_$image
     /fb-icon$important
+.fbshare.js  # from Ru AdList
 /icon-facebook.
 /icon_fb.
 /soc_facebook.svg
@@ -212,6 +213,7 @@ facebook.com##div:matches-css(position:fixed):style(position:static !important)
     /vkontakte.png
     /vkontakte.svg
     /img/vkontakte
+_vkontakte.png  # from Ru AdList
 ||userapi.com/js/api/$domain=~vk.com,important
 ||vk.com/js^$third-party,important,domain=~senler.ru|~vse.fm
 ||vk.com/js/api/openapi.js$third-party,important,domain=~senler.ru|~vse.fm  # disabled rule from AdList RU
@@ -444,6 +446,7 @@ cdn.syndication.twimg.com
 /tw.png
 /tw.svg
 /tw-button  # from Ru AdList, modified
+-tweet.png  # from Ru AdList
 /tweetbutton.  # from Ru AdList
 /tweet-button.  # from Ru AdList
 /tweet_button.  # from Fanboy's
@@ -617,6 +620,8 @@ cdn.syndication.twimg.com
 /twitter-widget$important
     ! /twitter-widget-  # from Ru AdList
     ! /twitter-widget.  # from Ru AdList
+-twitter.js  # from Ru AdList
+_twitter.png  # from Ru AdList
 _twitter_icon.
 /twitterfeed/*
 /twitthis_  # from Ru AdList
@@ -943,8 +948,8 @@ wf.mail.ru###header
 ! also see many cosmetic rules for lj in _sites
 ! from RU AdList
 livejournal.com##[lj-widget-fb-page]
-! from RU AdList
-/livejournal.png$domain=~livejournal.com
+_livejournal.gif  # from Ru AdList
+/livejournal.png$domain=~livejournal.com  # from Ru AdList
 ! from RU AdList
 ~livejournal.com##a[href^="http://www.livejournal.com/update.bml?subject="]
 ! from RU AdList, modified
@@ -2275,3 +2280,10 @@ discord.me##li.menu-link.d-xl-inline-block
 ##.article__share-wrapper
 
 /sharer.min.js
+
+.share.dossierheader.  # from Ru AdList
+.share.lead.  # from Ru AdList
+.share.utils.  # from Ru AdList
+.sharebar.js  # from Ru AdList
+.sharing.js  # from Ru AdList
+
