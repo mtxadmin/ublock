@@ -417,6 +417,8 @@
     ! pai-bx.com##.navbar-brand
 ##.navbar__logo
     ! isanteh.ru##.navbar__logo
+##.navbar-logo
+    ! 1plus1.video##.navbar-logo
 ##.nav-logo
 ###nav-logo
 ~wikipedia.org###p-logo
@@ -585,16 +587,22 @@
     ! neotren.ru##[href="/"]
     ! orabote.biz##[href="/"]
     ! pingvinoff.net##[href="/"]
-    reddit.com##a[href="/"]:has(svg>g)
     ! shoot-club.ru##[href="/"]
     ! squaredup.com##[href="/"]
     ! studopedia.info##a[href="/"]
     ! tdsayany.ru##[href="/"]
     ! thg.ru##[href="/"]
     ! troitsk.org##a[href="/"]
-    ! vsetv.com##[href="/"]
+    !! vsetv.com##[href="/"]
     ! worki.ru##[href="/"] > div > svg
-    ! zdorovayagolova.ru##[href="/"]
+    ! zdorovayagolova.ru##[href="/"]  # 2022:parked
+! new version 2022 rules. Still targetting to site logos, but more specific
+##a[href="/"]:not(:has(img))
+##a[href="/"]:has(svg)
+##a[href="/"]:has(img[src*="logo"])
+##a[href="/"]:has(img[src*="/i/"])
+    ! 1plus1.video##a[href="/"]:has(svg)
+    ! reddit.com##a[href="/"]:has(svg>g)
 ! and other text(!) redirects. In general, do not remove image redirects
 ##a[href^="/click/"]:not(:has(img))
 ##a[href^="/out/"]:not(:has(img))
