@@ -369,6 +369,7 @@ _player_vpaid_as3.swf  # from Adguard
 /cgi-bin/visit.pl
 /webbanners/*
 /widget/*$domain=~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru
+    ! /widget/?45;*|1|1|1|1  # strange rule from Ru AdList
 /widgets/*$domain=~aliexpress.com|~aliexpress.ru|~dns-shop.ru|~domclick.ru|~sberbank.ru
 ||/wp-content/*/ad-$script,important  # disable exclusion from Fanboy’s Enhanced Tracking List
 ||/wp-content/*/ads*.js$script,important  # disable exclusions from Fanboy's list
@@ -15652,7 +15653,9 @@ ozon.ru##div[triggering-object-selector="#short-product-info-trigger-new"]
 ozon.ru##.white-bg:style(top:0px !important)
 ozon.ru##.white-bg:style(position:static !important)
     ! popups
+||ozone.ru/_nuxt/marketing-all-adv_banner.  # from Ru AdList
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
+||ozone.ru/_nuxt/uw-*-atom-sku-shelf-goods.  # from Ru AdList
 ozon.ru##.modal:has-text(город)
 ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли)
@@ -16563,6 +16566,7 @@ pleasuregirl.net##.svg-icon
 pleasuregirl.net##.toggle-theme
 pleasuregirl.net##.rating-container
 
+||pleer.ru/pbann/  # from Ru AdList
 pleer.ru##.pie.dobro
 pleer.ru###close_pop > .modern_popup_bg
 pleer.ru##.cd_popup_container
