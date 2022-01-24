@@ -116,8 +116,11 @@ chat.slb.com
     ! /push_notification_  # from Ru AdList
     ! /push_notifications.  # from Ru AdList
 -push-notification.  # /plugins/pwa-for-wp/assets/js/pwa-push-notification.js  # from Ru AdList and Fanboy's
-/pushnotifications
+/pushnotification
+    ! /pushnotification.  # from Ru AdList
+    ! /pushnotifications/*  # from Ru AdList
     ! /pushnotifications.js  # from Fanboy's Annoyance List
+    ! /pushNotificationsdknew.  # from Ru AdList
 -push-notifications/$important  # from RU AdList and Fanboy's
 /push-pro-site-settings/*  # from Ru AdList
 /push-subscribe/*
@@ -1546,11 +1549,10 @@ genietrial.com
 ###notifier
 ##.shake-horizontal
 
-propu.sh$important  # push ad scripts  # is in uBlock filters
-
-propush.me$important  # push ads network
-
 propush.net  # from GoodbyeAds
+propush.me$important  # push ads network
+propu.sh$important  # push ad scripts  # is in uBlock filters
+/prpushsw.  # from Ru AdList
 
 provely.io  # "Boost Conversions By ... Social Proof"  # ad popups
 ||amazonaws.com/provely-public/
@@ -1734,9 +1736,10 @@ pushery.info
 
 pushetta.com
 
+pushex.com
 pushex.io  # from Adguard
-
 pushex.net$important  # push ads network
+/pushexsdk.  # from Ru AdList
 
 pushey.net$important  # push ads network
 
@@ -1806,6 +1809,8 @@ pushlommy.com  # from Adguard
 pushlum.com
 
 pushly.com  # from GoodbyeAds
+/pushly-sdk.  # from Ru AdList
+/pushly-sw.  # from Ru AdList
 
 pushmaze.com
 
@@ -1969,7 +1974,10 @@ pushwoosh.com$important  # is in Ru AdList
 !+  stage.pushwoosh.com
 !+  svc.pushwoosh.com
 pushwoosh.ru$important
-/pushwoosh-$important  # is in Fanboy's
+/openpushwoosh_  # from Ru AdList
+/pushwoosh-$important  # is in Fanboy's and Ru AdList
+    ! /pushwooshnotification/*  # from Ru AdList
+/sna-pushwoosh.  # from Ru AdList
 
 pushworth.com  # from GoodbyeAds
 
