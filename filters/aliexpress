@@ -247,6 +247,8 @@ aliexpress.com##.alime-avatar
 aliexpress.com###J_xiaomi_dialog:has-text(Need help?)
 aliexpress.com###J_xiaomi_dialog:has-text(Eva):has-text(Reason for order close)
 aliexpress.com##.safe-info-hook
+aliexpress.ru##[class^=FixedStoreInfoBar_]:style(position:static !important)
+aliexpress.ru##.ui-fixed-panel
     ! pseudo filler
 aliexpress.com##.placeholder-div
 
@@ -1226,7 +1228,6 @@ aliexpress.com##.all-categories-banner
 aliexpress.com###categories-banner
 ||alicdn.com/ae-affiliate-ui/$image
 aliexpress.ru##.seo-left
-aliexpress.ru##.ui-fixed-panel
 aliexpress.ru###brands-wall-box
 aliexpress.ru##.multi-sidebar-tab
 aliexpress.ru##.rus-mall-img
@@ -1391,6 +1392,8 @@ moduleanalysis.aliexpress.com
 us.cobra.aliexpress.com  # yes! it doesn't need for anything, only for tracking
 
 ||aliexpress.com/check.gif?  # gtrus.aliexpress.com/check.gif?
+
+@@||aliexpress.ru/*/tracking.  # 2022-01: перестало работать, ага (а может, и ранее так было). Именно ru, com продолжает нормально
 
 yupoo.com$3p  # Aliexpress banner
 aliexpress.ru,domain=~aliexpress.ru|~tmall.ru  # Aliexpress cookie
