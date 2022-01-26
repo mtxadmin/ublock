@@ -1365,11 +1365,6 @@ _pagespeed_beacon?  # from AdGuard
 -track-inview.  # is in EasyPrivacy
 /transparent-pixel.
 /trigger-visit-event  # from EasyPrivacy
-/VisitorAPI.js$important
-/wle_tracker.js
-/?wordfence
-/wp-slimstat/*  # is in 3 lists
-/wt?p=  # is in EasyPrivacy
 /umami.js$important
 /user-geo-info
 /__utm.js  # is in EasyPrivacy
@@ -1378,7 +1373,40 @@ _pagespeed_beacon?  # from AdGuard
 /video.counters.js$important
 /videotracking.min.js$important
 /video-tracking-youtube.js
+/view.gif?  # from EasyPrivacy
+/viewcount
+    ! /viewcount-service.  # from EasyPrivacy
+    ! /viewcount.ashx?*&referrer=  # from EasyPrivacy
+    ! /viewcounter/*  # from EasyPrivacy
+    ! /viewcounterjqueryproxy.  # from EasyPrivacy
+    ! /viewcounterproxy.  # from EasyPrivacy
+/view-log?  # from EasyPrivacy
+/view_stats.js.php  # from EasyPrivacy
+/viewerimpressions?  # from EasyPrivacy
+/viglink_  # from EasyPrivacy
+/vimn_tracking.  # from EasyPrivacy
+/vip-analytics.  # from EasyPrivacy
+/viperbar/stats.php?  # from EasyPrivacy
+/visci-interface.  # from EasyPrivacy
+/visistat.js  # from EasyPrivacy
+/visit.gif?  # from EasyPrivacy
+/visit?id=  # from EasyPrivacy
+/visit/?*&ref=  # from EasyPrivacy
+/visit/init?  # from EasyPrivacy
+/visit/log.js?  # from EasyPrivacy
+/visit/record.gif?  # from EasyPrivacy
+/visit/record?  # from EasyPrivacy
+/visitcounter.  # from EasyPrivacy
+/visitorapi.js$important  # is in EasyPrivacy
+/visitor/identity?  # from EasyPrivacy
+/visitor_id.jsp  # from EasyPrivacy
 /visitoridentification.js$important  # is in Adguard and EasyPrivacy
+/visit-tag?  # from EasyPrivacy
+/visit-tracker.js  # from EasyPrivacy
+/wle_tracker.js
+/?wordfence
+/wp-slimstat/*  # is in 3 lists
+/wt?p=  # is in EasyPrivacy
 !
 ! cosmetic filters
 ! general first, specific last
@@ -2027,6 +2055,9 @@ _site/gotop.  # from Ru AdList
 .cookiesdirective.  # from AdGuard
     !/jquery.cookiesdirective.js
 /cookieinfo.  # is in EasyList, AdGuard and Fanboy's
+-cookie-law.js  # from Adguard
+.cookielaw.js  # from Adguard
+-cookie-message.js  # from Adguard
 /cookie-notice/*$script,important  # from AdGuard and Fanboy's
 /cookienotice.  # is in EasyList, AdGuard and Fanboy's
 /cookie_notification.js
