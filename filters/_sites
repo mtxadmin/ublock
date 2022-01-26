@@ -1325,6 +1325,8 @@ _pagespeed_beacon?  # from AdGuard
 /parking-crew.js
 /ping/*$xmlhttprequest
 /pixel/*
+/pixel?
+    ! /visits/pixel?  # from EasyPrivacy
 /pixel.gif
     ||paypalobjects.com^*/pixel.gif  # from EasyPrivacy
 /pixel.png
@@ -1371,7 +1373,13 @@ _pagespeed_beacon?  # from AdGuard
 /utm-tracking.js$important
 /vantage$script
 /video.counters.js$important
-/videotracking.min.js$important
+/videoanalytic/*  # from EasyPrivacy
+/videoanalytics.  # from EasyPrivacy
+/videotracking$important
+    ! /videotracking/*  # from EasyPrivacy
+    ! /videotracking.  # from EasyPrivacy
+    ! /videotracking.min.js$important
+    ! /videotracking-v3/*  # from EasyPrivacy
 /video-tracking-youtube.js
 /view.gif?  # from EasyPrivacy
 /viewcount
@@ -1414,6 +1422,8 @@ _pagespeed_beacon?  # from AdGuard
     ! /visitor.min.js  # from EasyPrivacy
 /visitorapi.js$important  # is in EasyPrivacy
 /visitor/identity?  # from EasyPrivacy
+/visitorcookie.  # from EasyPrivacy
+/visitorcountry.svc/*  # from EasyPrivacy
 /visitor-event?  # from EasyPrivacy
 /visitor_id.jsp  # from EasyPrivacy
 /visitoridentification.js$important  # is in Adguard and EasyPrivacy
