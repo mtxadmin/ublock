@@ -237,7 +237,13 @@ _banner_rotator.php  # from Adguard
 /context_ads/*
 -contrib-ads/  # from EasyList
 /dcmads.js
+/dfp/*
+    ! /packages/dfp/*  # from EasyList
+    ! avito.ru*/dfp/px.js  # from Ru AdList
 /dfp_mobile.js
+/dfp_page
+    ! ||autonews.ru/dfp_page
+    ! ||rbc.ru/dfp_page  # ad scripts  # https://www.rbc.ru/dfp_page
 /dragscroll/*
 /dragscroll.js
 /easy-social-share-buttons.min.js
@@ -395,6 +401,7 @@ _player_vpaid_as3.swf  # from Adguard
 /vast-ad/*  # from Adguard: /vast-ad/*/manifest.xml
 /vast-adv/*  # from Adguard: /vast-adv/*/manifest.xml
 /vast-advert/*  # from Adguard: /vast-advert/*/manifest.xml
+.vast.ad.js  # from Ru AdList: zoneofgames.ru*/native.video.vast.ad.js
 /video_banner.js
 /cgi-bin/visit.pl
 /webbanners/*
@@ -5118,7 +5125,6 @@ autonews.ru##.catalog__title
 autonews.ru##noindex
 autonews.ru##.header__wrap:style(position:static !important)
 autonews.ru##.l-base__sticky:style(position:static !important)
-||autonews.ru/dfp_page
 
 auto-online.ru##.paralax
 auto-online.ru##.slider
@@ -11799,9 +11805,7 @@ justconnect.ru##.arcticmodal-overlay
 ! other
 justconnect.ru##.index_top_phone
 
-! from EasyList
-||jwpcdn.com/player/plugins/vast/
-||jwpsrv.com/watermarks/
+||jwpsrv.com/watermarks/  # from EasyList
 
 k31.ru##.modern-appo-btn.button
 
@@ -17901,7 +17905,6 @@ rb.ru##.footer-list--social
 
 /rbcmetrika-  # is in EasyPrivacy
 ||rbc.ru$script,domain=~rbc.ru|~rbk.ru  # strange 3p scripts
-||rbc.ru/dfp_page  # ad scripts  # https://www.rbc.ru/dfp_page
 ||rbk.ru/*/_core.js  # site breaks copypaste
 ||rbk.ru/*/gt-targeting.js
 ||rbk.ru/*/_paywall.js
@@ -24804,9 +24807,6 @@ kb.zyxel.ru###launcher
 
 ! from EasyPrivacy
 /idg_clarity.
-
-! from EasyList
-/packages/dfp/*
 
 /topbar/*
 
