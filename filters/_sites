@@ -151,6 +151,9 @@ _advert/  # from EasyList
 /advpic/*  # from EasyList China
 /adwords/$important
 /adx/*
+/aff/*
+    ! ||bomb-club.com/aff/  # from Ru AdList
+    ! ||pc-user-shop.com/aff/  # from Ru AdList
 /affiliate/*
 /affiliatelinks.  # from Adguard
 /affiliates/*
@@ -170,7 +173,8 @@ ban100x100.swf  # from Adguard
 /banery/*
 /%21banery/*
 /banner$important,domain=~doshirak.com|~sberbank.ru
-/banner/*
+/banner/*$important
+    ! /cgi-bin/banner/*  # from Ru AdList
 _banner.gif  # from Adguard
 _banner.swf  # from Adguard
 /banner.js$important
@@ -185,6 +189,28 @@ _banner.gif  # from Ru AdList
 _banner_rotator.php  # from Adguard
 /_banners/*
 /banners/*$important
+    ! /cgi-bin/banners/*  # from Ru AdList
+    ! /free/banners/*  # from Ru AdList
+    ! /media/banners/*  # from Ru AdList
+    ! /networks//banners/*  # from Ru AdList
+    ! /upload/banners/*  # from Ru AdList
+    ! /upload_photo/banners/*  # from Ru AdList
+    ! /userfiles/banners/*  # from Ru AdList
+    ! ||ado.hu/banners/  # from Hufilter
+    ! ||baku.ws/banners/  # from Ru AdList
+    ! ||bankcomat.org/res/bankomat/banners/  # from Ru AdList
+    ! ||b-port.com/mediafiles/banners/  # from Ru AdList
+    ||bestchange.ru/images/banners/  # from Ru AdList
+||beznal.cc/banners/  # from Ru AdList
+||bkn.ru/content/banners/  # from Ru AdList
+||bos.bz/assets/php/banners/  # from Ru AdList
+||callonline.ru/images/banners/  # from Ru AdList
+||cfts.org.ua/_i/banners/  # from Ru AdList
+||channel4it.com/pub/banners/  # from Ru AdList
+
+    ! ||ozone.ru/s3/marketplace-seller-actions/banners/
+    ! ||qiwi.com/img/qiwi_com/banners/
+    ! static.wi-fi.ru/mtt/banners/
     ||nakanune.ru/images/banners/  # from Adguard
 /banners.js
 /banner-support.js
@@ -312,6 +338,7 @@ _banner_rotator.php  # from Adguard
     ! ||anti-malware.ru/images/partners/  # from Adguard
     ! ||civic-club.ru/static/partners/  # from Adguard
     ! ||clib.me/partners/$image
+    ! ||ecosigara.com.ua/partners/  # from Ru AdList
     ! ||fonarevka.ru/images/partners/  # from Adguard
     ! ||adst.fwdcdn.com/frame/partners/*.html  # from Adguard
     ! ||hclada.ru/img/partners/  # from Adguard
@@ -384,9 +411,11 @@ _player_vpaid_as3.swf  # from Adguard
 /trafficguard.js$important
 /uedata?$important  # from AdGuard Tracking Protection and EasyPrivacy, modified
 /underbanner/*
-    ! ||domsnov.ru/underbanner/  # from Adguard
+    ! azbukadiet.ru*/underbanner/  # from Ru AdList
+    ! ||domsnov.ru/underbanner/  # from Adguard and Ru AdList
     ! ||otvetkak.ru/wp-content/themes/yoo_everest_wp/underbanner/zone*.html  # from Adguard
     ! ||prisnilos.su/underbanner/js/the_underbanner  # from Adguard
+    ! prisnilos.su*underbanner/  # from Ru AdList
 /upload/jackets/*  # Ru AdList rule: ||ua/upload/jackets/  # https://s.056.ua/upload/jackets/000/...
 /upsell.js
 /upsell_hero$important
@@ -5273,6 +5302,7 @@ avtoprofi71.ru###flash
 avtoprofi71.ru##div#content > form
 ||avtoprofi71.ru/images/stories/zapis.jpg
 
+||avtoradio.ru/smi2  # from Ru AdList
 ! from Fanboy's
 avtoradio.ru##div[id^="unit_"]
 ! from Fanboy's
@@ -16092,7 +16122,6 @@ ozon.ru##*:matches-css(position:fixed):has-text(Не нашли)
 ||ozone.ru/s3/fs-chat-api/$image  # banners
 ||ozone.ru/s3/cms/$image
 ||ozone.ru/assets/marketing
-||ozone.ru/s3/marketplace-seller-actions/banners/
 ||ozone.ru/*/banners_services/
 ozon.ru##button:has-text(Premium)
 ozon.ru##.skeleton-banner
@@ -17678,7 +17707,6 @@ qaru.site##.navbar-header
 
 qiwi.com##.qw-top-info
 qiwi.com##[class^=auth-double-footer-social]
-||qiwi.com/img/qiwi_com/banners/
 ||qiwi.com/img/qiwi_com/header/$image
 qiwi.com##[class^=cookies-]
 qiwi.com##[class^=header-unauthorized-logo]
@@ -25223,8 +25251,6 @@ steamcommunity.com##[class^=modals_OverlayModal]
 
 ||tvn.hu/tvn/kepek/xpoker.hu/  # from Hufilter  # xpoker.hu seems closed.
 
-||ado.hu/banners/  # from Hufilter
-
 ||eudomain.eu/affiliate  # from Hufilter
 
 prfl.me  # yndx.prfl.me  # ad URLs
@@ -25319,3 +25345,6 @@ adultvideotop.com###user18div
 
 /adbdetect/*
 /adbdetect.
+
+||ado.hu/*/szaklap_banner/
+ado.hu###lapSlider
