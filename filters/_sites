@@ -173,47 +173,50 @@ ban100x100.swf  # from Adguard
 /banery/*
 /%21banery/*
 /banner$important,domain=~doshirak.com|~sberbank.ru
-/banner/*$important
+    ! ##[src^="/images/banner"]
+    ! /banner/*$important
+    ! /banner.js$important
+    ! /banner.php
+    ! /bannerBackgroundImage
+    ! /bannerek/*  # Hungary banners
+    ! /banners/*$important
+        ! /cgi-bin/banners/*  # from Ru AdList
+        ! /free/banners/*  # from Ru AdList
+        ! /media/banners/*  # from Ru AdList
+        ! /networks//banners/*  # from Ru AdList
+        ! /upload/banners/*  # from Ru AdList
+        ! /upload_photo/banners/*  # from Ru AdList
+        ! /userfiles/banners/*  # from Ru AdList
+        ! ||ado.hu/banners/  # from Hufilter
+        ! ||baku.ws/banners/  # from Ru AdList
+        ! ||bankcomat.org/res/bankomat/banners/  # from Ru AdList
+        ! ||b-port.com/mediafiles/banners/  # from Ru AdList
+        ! ||bestchange.ru/images/banners/  # from Ru AdList
+        ! ||beznal.cc/banners/  # from Ru AdList
+        ! ||bkn.ru/content/banners/  # from Ru AdList
+        ! ||bos.bz/assets/php/banners/  # from Ru AdList
+        ! ||callonline.ru/images/banners/  # from Ru AdList
+        ! ||cfts.org.ua/_i/banners/  # from Ru AdList
+        ! ||channel4it.com/pub/banners/  # from Ru AdList
+        ! ||nakanune.ru/images/banners/  # from Adguard
+        ! ||ozone.ru/s3/marketplace-seller-actions/banners/
+        ! ||qiwi.com/img/qiwi_com/banners/
+        ! ||tumix.ru/*/banners/  # from Ru AdList
+        ! ||turbo.az/banners/  # from Ru AdList
+        ! ||wi-fi.ru/mtt/banners/
+    ! /banners.js
+    ! /banner-support.js
     ! /cgi-bin/banner/*  # from Ru AdList
-_banner.gif  # from Adguard
+    ! /partner/banner/*  # from Ru AdList
+    ! ||szepsegbroker.hu/banner/  # from Hufilter
+_banner.gif  # from Adguard and Ru AdList
 _banner.swf  # from Adguard
-/banner.js$important
-/banner.php
 _banner120_2.gif  # from Adguard
-/bannerBackgroundImage
 .bannerbank.  # from Ru AdList
 .bannerbank_  # from Ru AdList
 /_banner_common.php
-/bannerek/*  # Hungary banners
-_banner.gif  # from Ru AdList
 _banner_rotator.php  # from Adguard
 /_banners/*
-/banners/*$important
-    ! /cgi-bin/banners/*  # from Ru AdList
-    ! /free/banners/*  # from Ru AdList
-    ! /media/banners/*  # from Ru AdList
-    ! /networks//banners/*  # from Ru AdList
-    ! /upload/banners/*  # from Ru AdList
-    ! /upload_photo/banners/*  # from Ru AdList
-    ! /userfiles/banners/*  # from Ru AdList
-    ! ||ado.hu/banners/  # from Hufilter
-    ! ||baku.ws/banners/  # from Ru AdList
-    ! ||bankcomat.org/res/bankomat/banners/  # from Ru AdList
-    ! ||b-port.com/mediafiles/banners/  # from Ru AdList
-    ||bestchange.ru/images/banners/  # from Ru AdList
-||beznal.cc/banners/  # from Ru AdList
-||bkn.ru/content/banners/  # from Ru AdList
-||bos.bz/assets/php/banners/  # from Ru AdList
-||callonline.ru/images/banners/  # from Ru AdList
-||cfts.org.ua/_i/banners/  # from Ru AdList
-||channel4it.com/pub/banners/  # from Ru AdList
-
-    ! ||ozone.ru/s3/marketplace-seller-actions/banners/
-    ! ||qiwi.com/img/qiwi_com/banners/
-    ! static.wi-fi.ru/mtt/banners/
-    ||nakanune.ru/images/banners/  # from Adguard
-/banners.js
-/banner-support.js
 /bans/*
     ! ||stopgame.ru/bans/  # from Adguard
 /bens/vinos.js?$important  # is in AdGuard
@@ -332,6 +335,24 @@ _banner_rotator.php  # from Adguard
 /pagead/*
 /pagead2/*
 /pageview.js  # is in EasyPrivacy
+/partner/*
+    ! /partner/banner/*  # from Ru AdList
+    ! ||agrarii-razom.com.ua/files/partner/  # from Ru AdList
+    ! antihacker.info*/partner/  # from Ru AdList  # parked
+    ! ||bigcinema.tv/uploads/partner/
+    ! ||igromagaz.ru/partner/  # from Ru AdList
+    ! ||labirint.ru/design/partner/  # from Ru AdList
+    ! ||passport-rk.ru/widgets/partner/  # from Ru AdList: ||passport-rk.ru/widgets/partner/
+    ! ||pc-newcomer.ru/partner/  # from Ru AdList
+    ! ||reforum.ru/j/partner/  # from Ru AdList
+    ! ||ruload.org/partner/  # from Ru AdList
+    ! ||rutracker.ru/images/partner/  # from Ru AdList
+    ! ||slavabogam.ru/catalog/partner/  # from Ru AdList
+    ! ||teremok.org.ua/partner/images/  # from Ru AdList
+    ! ||tripster.ru/partner/widget.js
+    ! ||tulapressa.ru/partner/  # from Ru AdList
+    ! ||ukrbuy.com/partner/  # from Ru AdList
+    ! ||volgo-mame.ru/partner/  # from Ru AdList
 /partners/*
     ! /uploads/partners/*.swf  # from Adguard
     ! ||allbasketball.org/uploads/partners/  # from Adguard
@@ -616,7 +637,6 @@ _player_vpaid_as3.swf  # from Adguard
 ##[id*="sponsor"]:not(html):not(body):not(article)
 ##[class^="WNAd"]:not(html):not(body):not(article)
 ##[id^="WNAd"]:not(html):not(body):not(article)
-##[src^="/images/banner"]
 ! Browsec ad popups
 ##[class^=_Not][class*=_Big_In]:has-text(You’re using Browsec Free)
 ! other
@@ -16409,6 +16429,8 @@ imagetwist.com$script
 ! К сожалению, Пикабу перегрузили финтифлюшками и скриптами, и оно подтормаживает на обработке общих косметических правил. 
 ! Сделаем исключение и повторим применимые общие правила конкретно на сайт
 @@||pikabu.ru^$generichide
+! bad filter in Adguard
+pikabu.ru#@#div[class="overlay"][style^="z-index:"]
 ||pikabu.ru/files/techworks.swf
 ||pikabu.ru/images/fun/scheadar.png
 ||pikabu.ru/images/jobseeker/
@@ -21779,8 +21801,6 @@ tripandme.ru##.site-branding
 tripandme.ru##blockquote
 tripandme.ru##.b-share--post.b-share
 
-||tripster.ru/partner/widget.js
-
 ! ad links (paid excursions etc)
 trip-together.ru##[href^="https://trip-together.ru/out/"]
 trip-together.ru##.table-of-contents
@@ -24667,6 +24687,8 @@ kb.zyxel.ru###launcher
 /jellyfish.webp$script  # from EasyList
 
 /cdn-cgi/apps/head/*$1p,script  # from Fanboy's
+    ! ||ed-protect.org/cdn-cgi/apps/head/  # from Ru AdList
+    ! ||vazhno.ru/cdn-cgi/apps/head/*.js  # from Ru AdList
 
 /goodshare.  # from Fanboy's
 !||jsdelivr.net/npm/goodshare.js
@@ -25226,7 +25248,6 @@ steamcommunity.com##[class^=modals_OverlayModal]
 ||napidroid.hu/*/*hird  # from Hufilter
 ||napidroid.hu/*/*logo  # from Hufilter
 
-||szepsegbroker.hu/banner/  # from Hufilter
 ||szepsegbroker.hu/elements/bannerz  # to Hufilter
 
 ||femcafe.hu/*/spike_ad/  # from Hufilter
@@ -25348,3 +25369,5 @@ adultvideotop.com###user18div
 
 ||ado.hu/*/szaklap_banner/
 ado.hu###lapSlider
+
+||nextinpact.com/assets/images/autopromo-adblock  # from Ru AdList
