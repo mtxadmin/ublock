@@ -83,7 +83,9 @@ _ad.aspx  # from Adguard
 /ad300.htm  # from Adguard
 /adbanner$important
 /ad-banners
+/adbdetect.
 /adbdetect.js  # from Adguard
+/adbdetect/*
 /adblock-detect/*  # from Adblock Warning Removal
 /adblock.js$important
 /adblocker-check.  # is in EasyPrivacy
@@ -1929,6 +1931,7 @@ _pagespeed_beacon?  # from AdGuard
     ! chatrating.ru##.active.scroller
     ! itsyourip.com##.scroller.fixed-goto-top
 ##.scroll-icon
+##.scroll-top-btn
 ##.scroll-top-link
 ##.scrollTo_top
 ##.scrollto_top
@@ -4047,6 +4050,7 @@ acomics.ru##header.serial
 
 activedirectorypro.com##a[href^="http://www.solarwinds.com/register"]
 activedirectorypro.com##.awac
+activedirectorypro.com##.gb-inside-container
 
 ||active-hunt.ru/*/no_photo.png
 ||active-hunt.ru/payment/cards.jpg
@@ -4123,6 +4127,9 @@ adminxp.ru##.art-Header
 
 admtroitsk.ru##.foot-copy
 
+||ado.hu/*/szaklap_banner/
+ado.hu###lapSlider
+
 ||adobe.com/*/get_flash_player.gif$3p
 adobe.com###helpful-pod
 adobe.com##.locale-modal
@@ -4163,6 +4170,8 @@ adult-images.ru$inline-script
 
 adultium.com##.player_modal_content
 adultium.com##.count
+
+adultvideotop.com###user18div
 
 ||advance24.ru/pl/fileservice/video-hosting/statistic
 ||advance-club.ru/*/cookiesAgreePopup/*
@@ -6239,6 +6248,8 @@ bor-stroy.com###carousel-example-generic
 bor-stroy.com##.home
 
 bountysource.com##.body-scrolled.navbar-bountysource:style(position:static !important)
+
+bournemouthecho.co.uk##.site-brand
 
 bowandtie.ru##.responsive-menu-button:style(position:static !important)
 
@@ -14211,7 +14222,8 @@ mindmajix.com###exitpop
 mindmajix.com##.modal-backdrop
 mindmajix.com##.footer-sticky
 
-minfin.com.ua##.js-scroll-top.scroll-top-btn
+||minfin.com.ua/i/multi-invest/
+minfin.com.ua##.header-top__bonus
 
 ! ad scripts
 miniclip.com$3p
@@ -15208,6 +15220,8 @@ new-rutor.org,rutor.info,xrutor.org##tr.c_h:has-text(MOCKBAsity)
 
 news2.ru##.m18
 
+newsandstar.co.uk##.site-brand
+
 ||newsfrol.ru/*/yandexwizet-telega.jpg
 ||newsfrol.ru/*/youtube-banner.jpg
 ||newsfrol.ru/*/vidyandex.png
@@ -15260,6 +15274,8 @@ newtimes.ru##.navbar:style(height:auto !important)
 ||nexplorer.ru/*/nners/$image
 nexplorer.ru##.header_container
 nexplorer.ru##.header
+
+||nextinpact.com/assets/images/autopromo-adblock  # from Ru AdList
 
 nextofwindows.com###random-image-3
 
@@ -15795,6 +15811,10 @@ om-saratov.ru##.sign
 oneplus.com###header_raffle
 ||oneplus.net/attachments/1536/1536171-b16d5fa668e74a58b6d3a6cadeeabe20.jpg
 oneplus.com##.card-deck-wrapper
+
+oneprogs.ru##.christmas-block
+oneprogs.ru##.teleg-group
+oneprogs.ru##.vk-group
 
 onetrust.com$3p,important  # hmm... 3p scripts...
 
@@ -21129,6 +21149,9 @@ tehnometal.ru##.b-head-control-panel__opinions-bar.b-review-info
 ||tehnot.com/*/tehnot-logo.png
 tehnot.com##.jeg_breakingnews_title
 
+! site blocks copypaste
+tekst-pesni.online$script
+
 tekstream.com##[href="https://www.tekstream.com"]
 tekstream.com##[href^="https://www.tekstream.com/resource/on-demand-webinars/"]
 
@@ -21778,6 +21801,8 @@ travmatik.com##.mainheadertext
 travmatik.com##[src*="data:image/png;base64,"]
 
 treasury.gov###usa-header:style(position:static !important)
+
+treeum.net$3p  # ad scripts
 
 trekker.net##.site-header
 
@@ -25359,33 +25384,3 @@ _liveinternet.gif  # from Ru AdList
 ||cdn13.com^$script,3p,domain=~leafy.pro  # from EasyList  # ad scripts  # don't block videos from there
 
 notizie.it##.mh-logo-big-front
-
-oneprogs.ru##.christmas-block
-oneprogs.ru##.teleg-group
-oneprogs.ru##.vk-group
-
-treeum.net$3p  # ad scripts
-
-||minfin.com.ua/i/multi-invest/
-minfin.com.ua##.header-top__bonus
-
-newsandstar.co.uk##.site-brand
-
-bournemouthecho.co.uk##.site-brand
-
-adultvideotop.com###user18div
-
-/adbdetect/*
-/adbdetect.
-
-||ado.hu/*/szaklap_banner/
-ado.hu###lapSlider
-
-||nextinpact.com/assets/images/autopromo-adblock  # from Ru AdList
-
-activedirectorypro.com##.gb-inside-container
-
-! site blocks copypaste
-tekst-pesni.online$script
-
-lgxcza.com  # ad scripts
