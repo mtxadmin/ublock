@@ -2330,10 +2330,12 @@ _snowstorm-min.js  # from Ru AdList
 /app-icon-app-store.svg
 /app-icon-google-play.svg
 /appgallery$image
+-app-gallery.$image
 /app-google.svg
 /app__google-play.png
 /app_store$image
 /app-store$image
+-app-store.$image
 /appstore$image
     !/img/appstore
 /appstore-footer.png
@@ -2341,6 +2343,7 @@ _snowstorm-min.js  # from Ru AdList
 /googleplay$image
     !/googleplay-footer.png
 /google-play$image
+-google-play.$image
 /google_play$image
     !/google-play.png
     !/google-play.svg
@@ -10109,7 +10112,18 @@ kaa.gorodkirov.ru  # from Adguard
 gorodkirov.ru##.attention
 gorodkirov.ru##.main-footer
 
+    ! popups
 gorodtroika.ru##.Overlay.ReactModal__Overlay--after-open.ReactModal__Overlay:has-text(Лучшие предложения в городе!)
+gorodtroika.ru###install-mobile-modal
+gorodtroika.ru##.modal-dialog
+    ! banners and promos
+||gorodtroika.ru/img/app-banner
+gorodtroika.ru###app-banner
+gorodtroika.ru##.coin-box
+    ! bg fix
+gorodtroika.ru##a:style(color:initial !important)
+gorodtroika.ru##.header-hero:style(color:initial !important)
+    ! others
 
 goroskop.org$third-party,script,important
 
@@ -25404,6 +25418,7 @@ teremok.org.ua##.sm_slider
 
 # futurecdn.net  # "platform for specialist media with scalable, diversified brands  market leading brands  lead generation  advertising solutions  digital licensing  marketforce"
 # update: do not block imgs from there.
+# update: there are some tracking scripts there. When they blocked, techradar.com doesn't show imgs. Ok.
 futurecdn.net$script
 futurecdn.net$xhr
     ! ||futurecdn.net$xhr
@@ -25411,3 +25426,5 @@ futurecdn.net$xhr
     ! champagne.futurecdn.net/champagne.js
     ! freyr.futurecdn.net/freyr.js
     ! vanilla.futurecdn.net
+
+atomy.ru##.gnbPartWrap:style(position:static !important)
