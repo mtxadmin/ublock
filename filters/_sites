@@ -1315,6 +1315,7 @@ volveter.ru##.has_offer_prop
 /amp-geo-  # from EasyPrivacy
 _analytics.js?  # from EasyPrivacy
 /analytics.min.js$important
+.analytics.min.  # from EasyPrivacy
 /analytics/$important,domain=~dropbox.com|~fandom.com|~globalvoices.org|~sberbank.ru|~trello.com
     ! увы, но иначе в Сбербанк и Домклик не входит
     !||sberbank.ru/*analytics$script,redirect=noopjs
@@ -1338,10 +1339,13 @@ _analytics.js?  # from EasyPrivacy
     ! /px/*/blank.gif?  # is in EasyPrivacy
     ! ||blogblog.com/img/blank.gif
 /browser.min.js
+/browserdetect.js
 /calameo-beacon.  # from EasyPrivacy  # calameo is a publishing platform, ok. But.
 .campaign-tracking.
     !/hr.campaign-tracking.js
 /cast_sender.js$important  # video ad counter
+.cdn-tracking.js  # from EasyPrivacy
+_chartbeat.js  # from EasyPrivacy
 /clear.png
 /cnt.js
 /count.js
@@ -1353,10 +1357,13 @@ _analytics.js?  # from EasyPrivacy
 /counter.min.js$important
 /counters^  # from RU AdList
 /crossdevice.min.js$important
+.d-engine.js  # from EasyPrivacy
 /devicepx-jetpack.js$important  # https://wordpress.org/support/topic/remove-render-blocking-javascript-devicepx-jetpack-js/
+-didomi.js  # from EasyPrivacy
 /doctracking.  # from EasyPrivacy
 /dspixel.js$important
 /easylocation/*
+.eloqua.js  # from EasyPrivacy
 /empty.gif
 /emptypixel.png
 /engine/ping?  # is in EasyPrivacy
@@ -1368,13 +1375,19 @@ _analytics.js?  # from EasyPrivacy
 /fingerprint2.min.js$important  # is in EasyPrivacy and AdGuard
 	||jsdelivr.net/fingerprintjs2/  # Also
 ?frm=script&se_referrer=  # from AdGuard
+_gatrack.js  # from EasyPrivacy
+.gatracking.js  # from EasyPrivacy
 /gccounter.js
 /geo.php?  # is in EasyPrivacy
 /geocheck$important
+-geoip.js  # from EasyPrivacy
 /geoip.city  # bitrix popups removed: ##.bxmaker__geoip__city__line-question and ##.current-city-notice
 /geotools/*  # ad xhrs
 .gif?event=  # is in EasyPrivacy
+.googleanalytics.js  # from EasyPrivacy
+.googleanalytics.prod.  # from EasyPrivacy
 /gtagservices/*
+_hightraffic_code.js  # from EasyPrivacy
 .iframetracker/  # from EasyPrivacy
 /imp.gif?  # from EasyPrivacy
 /internal/page_view?  # is in EasyPrivacy
@@ -1387,6 +1400,8 @@ _analytics.js?  # from EasyPrivacy
 _loghuman=  # from EasyPrivacy
 /mobile-useragent-info.js
 /mod_pagespeed_beacon?  # from Fanboy's
+_nedstat.js  # from EasyPrivacy
+_nielsen.js  # from EasyPrivacy
 /ntfc.php?$script  # from uBlock
 /p.gif?  # tracking imgs  # is in EasyPrivacy
 /packaged-js/trackers.  # from EasyPrivacy
@@ -1401,6 +1416,7 @@ _pagespeed_beacon?  # from AdGuard
     ||paypalobjects.com^*/pixel.gif  # from EasyPrivacy
 /pixel.png
 /pixel.php?  # in EasyPrivacy and Adguard
+.pixel.archive.  # from EasyPrivacy
 /platform-detect
 /pum-site-scripts.  # from Fanboy's
 /purecounter.js
@@ -1410,12 +1426,16 @@ _pagespeed_beacon?  # from AdGuard
     !||avito.ru^*/dfp/px.js  # from RU AdList
 /rendertimingpixel.  # from EasyPrivacy
 /ruxitagentjs_  # from EasyPrivacy
+-scroll-tracker.js  # from EasyPrivacy
 /search-tracking.
 /send_watching/*
 /sensorsdata.  # is in EasyPrivacy
 /setbucket?signature=  # from EasyPrivacy
 /shopify-tracker/*
-/smartTagging.js
+.sitecatalyst.js  # from EasyPrivacy
+.skimlinks.js  # from EasyPrivacy
+/smarttagging.js
+_social_tracking.js  # from EasyPrivacy
 /ssi/rc.js
 /stat/count  # is in EasyPrivacy
 /_stat/log_  # is in EasyPrivacy
@@ -1431,7 +1451,9 @@ _pagespeed_beacon?  # from AdGuard
 /track_click?  # from EasyPrivacy
 /tracker?*=  # from EasyPrivacy
 /tracker.js$important
+_tracker.js.  # from EasyPrivacy
 /trackify.js$important
+-tracking.gtm.  # from EasyPrivacy
 /tracking-opt-in.  # ad scripts   # /tracking-opt-in.min.js  # is in Fanboy's and EasyList
 -tracking.js?  # from EasyPrivacy
 /tracking.min.js
@@ -1442,6 +1464,7 @@ _pagespeed_beacon?  # from AdGuard
 /user-geo-info
 /__utm.js  # is in EasyPrivacy
 /utm-tracking.js$important
+.v4.analytics.  # from EasyPrivacy
 /vantage$script
 /video_count.php?  # from EasyPrivacy
 /video.counters.js$important
@@ -1545,6 +1568,7 @@ _pagespeed_beacon?  # from AdGuard
     ! /vtrack.php?  # from EasyPrivacy
 /vtracker_  # from EasyPrivacy
 /vuukle-analytics.  # from EasyPrivacy
+.webmetrics.js  # from EasyPrivacy
 /wle_tracker.js
 /?wordfence
 /wp-slimstat/*  # is in 3 lists
