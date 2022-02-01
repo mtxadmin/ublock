@@ -22211,8 +22211,13 @@ udemy.com##div[class*="smart-bar"]
 ! working rule
 # udemy.com##[class*="alert-banner"] # v2
 udemy.com##[class*="alert-banner"]:not(:has([class*="udlite-icon-color-positive"])):not(:has(.udlite-sr-only))
+    ! in-list banners
+udemy.com##[class^=search--unit-injection]
+udemy.com##.ud-component--course-landing-page-udlite--curated-for-ufb-notice
     ! not a menu, tag cloud
 udemy.com##nav:not(:has(button))
+    ! "old" prices
+udemy.com##s
     ! other
 ! is in AdGuard
 udemy.com##.ud-component--footer--eu-cookie-message
@@ -22221,7 +22226,6 @@ udemy.com##[class^=marketplace-share-menu-item]
 udemy.com##[class*=social-share-button]
 udemy.com##[class^=billboard--content-box]
 udemy.com##[class^=invite-alert]
-
 udemy.com##.streamer--fixed
 udemy.com##.original-price-container
 udemy.com##.course-landing-page_sidebar-container
@@ -22230,6 +22234,7 @@ udemy.com##.ud-component--footer--ufb-notice
 udemy.com##.udlite-btn:has-text(/Share|Поделиться/)
 uft.me###clickbg
 ||uft.me/wp-content/uploads/2013/06/88x31-3.gif
+udemy.com##[class^=popover--popover]
 
 ugoloknavanny.ru##.cit
 ugoloknavanny.ru##.top
