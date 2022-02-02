@@ -621,7 +621,7 @@ _logo.$image
     !! vsetv.com##[href="/"]
     ! worki.ru##[href="/"] > div > svg
     ! zdorovayagolova.ru##[href="/"]  # 2022:parked
-! new version 2022 rules. Still targetting to site logos, but more specific
+! new version 2022-01 rules. Still targetting to site logos, but more specific
 ##a[href="/"]:not(:has(img)):not(.sidemenu-link)
 ##a[href="/"]:has([class*=logo])
 ##a[href="/"]:has(svg)
@@ -629,6 +629,9 @@ _logo.$image
 ##a[href="/"]:has(img[src*="/i/"])
     ! 1plus1.video##a[href="/"]:has(svg)
     ! reddit.com##a[href="/"]:has(svg>g)
+! update 2022-02: don't know why, but it doesn't works. Ok, previous version
+##a[href="/"]:not(.sidemenu-link)
+!
 ! and other text(!) redirects. In general, do not remove image redirects
 ##a[href^="/click/"]:not(:has(img))
 ##a[href^="/out/"]:not(:has(img))
