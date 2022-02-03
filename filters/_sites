@@ -752,7 +752,7 @@ _player_vpaid_as3.swf  # from Adguard
 ~datadoghq.com##.announcement:not(.forumbg)
 ##.announcement_banner
 ##.article-top-banner
-##.aw
+~medium.com##.aw
 ! from EasyList
 ##.b-adv
 ###ban240x400
@@ -1858,6 +1858,8 @@ _tracker.js.  # from EasyPrivacy
 ###buttonontop
 ##.buttonontop
 ##.button--scroll
+##.button-scroll
+##.button-scroll__up
 ##.button_to_down
 ###buttonUp
 ##.buttonUp
@@ -13508,6 +13510,8 @@ lleo.me##.podp:style(margin-bottom:0px !important)
 lleo.me###bodyz:style(margin-top:0px !important; margin-bottom:0px !important)
 lleo.me###flake2
 ||lleo.me/*.gif
+||lleo.me/*/karantin.png
+||lleo.me/dnevnik/design/userpick/$image
 lleo.me##.shr
 lleo.me##h1
 
@@ -16799,6 +16803,7 @@ pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeney
 ||pikabu.ru/avatars/2968/*2968862-913769113.$image
 ||pikabu.ru/avatars/2994/*2994148-2132945680.$image
 ||pikabu.ru/avatars/300/*300611-686609703.$image
+||pikabu.ru/avatars/301/*301540-1745815784.$image
 ||pikabu.ru/avatars/3023/*3023711-1200782549.$image
 ||pikabu.ru/avatars/3035/*3035022-96002119.$image
 ||pikabu.ru/avatars/3070/*3070825-682152274.$image
@@ -16990,6 +16995,10 @@ pikabu.ru##article.story:has(.story__user-info:has-text(anttttttt))
 pikabu.ru##article.story:has(.story__user-info:has-text(AlexJuk))
 ! Мракобес https://pikabu.ru/story/klassicheskiy_kreatsionist_8809591
 pikabu.ru##article.story:has(.story__user-info:has-text(orignews))
+! см. также fakenews
+pikabu.ru##article.story:has(.story__user-info:has-text(NewsBY.info))
+! Копирайтерский спам
+pikabu.ru##article.story:has(.story__user-info:has-text(luxorta))
 !
 !
 pikabu.ru##.pik-virus
@@ -25586,3 +25595,5 @@ autodesk.com###helpful-widget-react
 rome2rio.com###vector_logo
 
 xn--d1aqf.xn--p1ai##[class^=styles__OverlayWrapper]
+
+luxorta.ru  # spam
