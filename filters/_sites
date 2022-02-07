@@ -2225,10 +2225,12 @@ _site/gotop.  # from Ru AdList
 ##.tracking-consent
 !
 /ajax/dataconsentcookies  # ad tracking image  # is in EasyList and Fanboy's
+/avia-snippet-cookieconsent.js  # from Adguard: /js/avia-snippet-cookieconsent.js
 /booster_eu_cookie$important
 /cookie-banner  # is in EasyList and Fanboy’s
 /cookiebar.  # from AdGuard
 /cookie_consent.js$important
+/cookie-consent?  # from Adguard
 /cookieconsent.$important  # from AdGuard
 /cookieconsent2/*$important
     ||cloudflare.com/ajax/libs/cookieconsent2/  # from EasyList
@@ -2240,6 +2242,7 @@ _site/gotop.  # from Ru AdList
 /cookieinfo.  # is in EasyList, AdGuard and Fanboy's
 -cookie-law.js  # from Adguard
 .cookielaw.js  # from Adguard
+/cookie-law-info-public.js  # from Adguard
 -cookie-message.js  # from Adguard
 /cookie-notice/*$script,important  # from AdGuard and Fanboy's
 /cookienotice.  # is in EasyList, AdGuard and Fanboy's
@@ -2249,6 +2252,9 @@ _cookie_policy_  # from Fanboy's and AdGuard
     ! /wp-content/plugins/ginger/front/js/cookies-enabler.min.js
     ! also see /plugins/ginger/*
 /cookies_policy.  # is in Fanboy's and EasyList
+/cmp_didomi.js  # from Adguard  # see didomi.io
+/didomi.js  # from Adguard  # see didomi.io
+/emh_cookiebanner/*  # from Adguard
 /eucookie/*  # is in 2 lists
 /eu-cookie-  # from AdGuard
 /eu_cookie_$script,important  # is in 3 lists
@@ -3332,6 +3338,11 @@ tarif-24.ru##.mh-ticker-bottom
 ! exclusions from Fanboy's Anti-thirdparty Fonts
 ! It seems it is not a good idea... Disabled
 !fonts.gstatic.com^$important,domain=floatplane.com|google.com|youtube.com|bloble.io|regexpal.com
+
+
+
+!! local resources
+||localhost^$3p,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost  # Block Outsider Intrusion into LAN  # in the wild: didomi.io calls script http://localhost/web/tracking-hbspt-management-v2.js
 
 
 
