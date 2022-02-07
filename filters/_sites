@@ -102,6 +102,8 @@ _ad.aspx  # from Adguard
 /adlogger_tracker.js?  # from Ru AdList
 /adobe_target/*
 /adobe_target.js
+/adpic/*  # from EasyList
+/adplayer/*  # from EasyList
 /adpuba/*  # from EasyList China
 /adrum/*  # AppDynamics Adrum scripts: https://cdn.comcast.com/-/media/Common/adrum/adrumext7a88a5f34b3368a060fd963640d8c56b.js
 /ads/*$important,domain=~cnn.com  # exclusion - cnn loads page through json: https://cdn.cnn.com/ads/cnni/cnni_homepage.json
@@ -114,11 +116,30 @@ _ad.aspx  # from Adguard
 /ads.js$important
 /ads2.html  # from Adguard
 /ads2.php  # from Adguard
+/adsense
+    ! /adsense-  # from EasyList
+    ! /adsense1.  # from EasyList
+    ! /adsense2.  # from EasyList
+    ! /adsense3.  # from EasyList
+    ! /adsense4.  # from EasyList
+    ! /adsense5.  # from EasyList
+    ! /adsense23.  # from EasyList
+    ! /adsense24.  # from EasyList
+    ! /adsense250.  # from EasyList
+    ! /adsense?  # from EasyList
+    ! /AdsenseBlockView.  # from EasyList
+    ! /adsenseClient-  # from EasyList
+    ! /adsensecommon.  # from EasyList
+    ! /adsensegb.  # from EasyList
+    ! /adsensegoogle.  # from EasyList
+    ! /adsensets.  # from EasyList
+    ! /adsensev2.  # from EasyList
 /adsjs.  # ad scripts  # is in EasyList
 /adsjs/*
 ?ads=$domain=~booking.loganair.co.uk  # from EasyList
 -adserver.  # from EasyList
 /AdsShow.
+/_adslot/*  # from EasyList
 -ads-manager/  # from EasyList
 /ads-iframe/*
 /AdsMarketing/*
@@ -218,6 +239,16 @@ ban100x100.swf  # from Adguard
     ! ||szepsegbroker.hu/banner/  # from Hufilter
 _banner.gif  # from Adguard and Ru AdList
 _banner.swf  # from Adguard
+/banner_
+    ! ||beforeitsnews.com/img/banner_  # from EasyList
+    ! ||h-sant.ru/*/banner_vd_left.jpg
+    ! ||inmyroom.ru/*/banner_places/
+    ! ||labirint.ru/*/b/banner_
+    ! ||ohota360.ru/*/banner_*.png
+    ! ||ohrana.ru/images/banner_automation.jpg
+    ! ||revistalider.com/banner_fixer.php
+    ! ||sportsweek.org/banner_js
+    ! ||warhead.su/system/uploads/banner_image/*
 _banner120_2.gif  # from Adguard
 .bannerbank.  # from Ru AdList
 .bannerbank_  # from Ru AdList
@@ -388,6 +419,7 @@ _player_vpaid_as3.swf  # from Adguard
 /prebid.js$important
 /prebid_$important
 /prebid2.$important  # from EasyList
+/prebidLibrary.  # from EasyList
 /prebid-setup.js
 /profitwell.js$important
 /promobanner
@@ -10817,7 +10849,7 @@ homeli.ru##.box-option
 home-santehnika.ru###getbonus_link
 home-santehnika.ru##.left_brands_list
 home-santehnika.ru##.banner-description
-||h-sant.ru/*/banner_vd_left.jpg
+!||h-sant.ru/*/banner_vd_left.jpg
 
 homtom.cc###layui-layer1
 homtom.cc###layui-layer-shade1
@@ -11434,7 +11466,6 @@ ingmarverheij.com###headerbar
 
 ||injapan.com/rest/*/track  # is in Adguard
 
-||inmyroom.ru/*/banner_places/
 ||inmyroom.ru/*/new_relic/
 ||inmyroom.ru/assets/footer/payment_provider/$image
 inmyroom.ru##.b-ActionPanel
@@ -12824,7 +12855,6 @@ labirint.ru##.b-rfooter-info-content
 labirint.ru##.only_desc.b-ymmain
 labirint.ru##.b-header-b-logo-e-label-icon.pers-icon
 ||labirint.ru/design/ym-logo.png
-||labirint.ru/*/b/banner_
 ||labirint.ru/design/left-banner
 ||labirint.ru/ajax/getvideoviewcount/
 ||labirint.ru/ajax/addbannersshowingcount/
@@ -15732,7 +15762,6 @@ ohota.guru##.autor_logo
 ohota.guru##.subscribe
 ohota.guru##.bar_top
 
-||ohota360.ru/*/banner_*.png
 ||ohota360.ru/img/pricel.png
 ||ohota360.ru/img/ohota_bg_2.jpg
 
@@ -15827,7 +15856,6 @@ ohotnik-kolomna.ru##.header
 ohotpodm.com###main_back
 ||ohotpodm.com/telefon.jpg
 
-||ohrana.ru/images/banner_automation.jpg
 ohrana.ru##.page > [href^="/rdr.php"]
 
 ||oid-info.com/images/treewall.jpg
@@ -18421,7 +18449,6 @@ reviewpoint.ru###mt-menu-wrap:style(position:static !important)
 reviewpoint.ru##.top-header-section
 reviewpoint.ru##figure#attachment_840
 
-||revistalider.com/banner_fixer.php
 revistalider.com##^script:has-text(adblock)
 
 rexegg.com##.rightcolumn
@@ -20472,7 +20499,6 @@ sports.ru##.subscribe
 sports.ru##.subscribe__form
 sports.ru##.subscribe__button
 
-||sportsweek.org/banner_js
 
 sportwiki.to$inline-script  # site breaks copypaste
 ! ads. Yes, ads in this "wiki".
@@ -23431,7 +23457,6 @@ warhead.su###button-random-article
 warhead.su###aside-widgets
 warhead.su##.header__bottom:style(position:static !important)
 warhead.su##.article__cover::after:style(position:static !important)
-||warhead.su/system/uploads/banner_image/*
 warhead.su##.site-wide-banner
 warhead.su##.article__stats
 warhead.su##.article__footer
@@ -25664,3 +25689,5 @@ lifebio.wiki##.bookmarkme
 
 ||euroroaming.ru/*/Logo$image
 euroroaming.ru##.fab__button
+
+||ytmp3.plus/ba  # from EasyList
