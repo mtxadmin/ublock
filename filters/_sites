@@ -2227,6 +2227,10 @@ _site/gotop.  # from Ru AdList
 /ajax/dataconsentcookies  # ad tracking image  # is in EasyList and Fanboy's
 /avia-snippet-cookieconsent.js  # from Adguard: /js/avia-snippet-cookieconsent.js
 /booster_eu_cookie$important
+/cmp/*  # "consent manager policy"
+    ! /cmp/heycookie.js  # from Adguard
+    ! /cmp/int_cmp.  # from Adguard
+/cmp_shim.js  # from Adguard
 /cookie-banner  # is in EasyList and Fanboy’s
 /cookiebar.  # from AdGuard
 /cookie_consent.js$important
@@ -2234,6 +2238,7 @@ _site/gotop.  # from Ru AdList
 /cookieconsent.$important  # from AdGuard
 /cookieconsent2/*$important
     ||cloudflare.com/ajax/libs/cookieconsent2/  # from EasyList
+/cookie-consent-manager.js  # from Adguard
 /cookieconsentpub/*$important  # from Fanboy's, modified
 -cookie-consent/$stylesheet  # from Fanboy's
 .cookiecuttr. # is in Fanboy's and EasyList
@@ -2261,11 +2266,12 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /eu-cookie-law/*$important
 /evercookie.  # from EasyPrivacy
 /evercookie_$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
-/gdpr.js  # from Fanboy's
+/gdpr.js  # from Fanboy's and Adguard
 /jquery-eu-cookie-law-popup.js$important
 /privacy-consent/*
 /referrer-cookie.js
 /setcookie?  # from EasyPrivacy
+/sncmp.min.js  # from Adguard
 /track-cookies.js$important
 /trackingcookiecheck?  # from EasyPrivacy
 /um-gdpr.$important  # is in Fanboy's and EasyList
