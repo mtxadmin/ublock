@@ -83,12 +83,32 @@ _ad.aspx  # from Adguard
 /ad300.htm  # from Adguard
 /adbanner$important
 /ad-banners
-/adbdetect.
-/adbdetect.js  # from Adguard
-/adbdetect/*
-/adblock-detect/*  # from Adblock Warning Removal
+/adbdetect
+    ! /adbdetect.
+    ! /adbdetect.js  # from Adguard
+    ! /adbdetect/*
+/adblock.gif?  # from EasyList
+/adblock-checker$important
+    ! /adblock-checker.js$important
+/adblockdetect$important  # from EasyList
+    ! /adblockdetect.  # from EasyList
+    ! /adblockdetection.  # from EasyList
+    ! /adblockdetector.js$important
+    ! /adBlockDetector/*  # from EasyList
+    ! /adblockdetectorwithga.  # from EasyList
+/adblocker.js$important  # is in EasyList
 /adblock.js$important
+/adblock-icon.png  # gocitysites.ru network
+/adblock-detect$important
+    ! /adblock-detect/*  # from Adblock Warning Removal
+    ! /adblock_detect.  # from EasyList
+    ! /adblock_detector.  # from EasyList
 /adblocker-check.  # is in EasyPrivacy
+-adblocker-detect
+    ! -adblocker-detection/  # from EasyList
+    ! -adblocker-detector/  # from EasyList
+/ad-blocking-advisor/*  # from EasyList
+/ad-blocking-alert/*  # from EasyList
 /adblockTester.js  # from EasyList China
 /adbs.js  # from Adguard
 /adclick$important
@@ -116,6 +136,9 @@ _ad.aspx  # from Adguard
 /ads.js$important
 /ads2.html  # from Adguard
 /ads2.php  # from Adguard
+/adsblocker.  # from EasyList
+/adseller/*  # from EasyList
+/adsen/*  # from EasyList
 /adsense
     ! /adsense-  # from EasyList
     ! /adsense1.  # from EasyList
@@ -134,6 +157,47 @@ _ad.aspx  # from Adguard
     ! /adsensegoogle.  # from EasyList
     ! /adsensets.  # from EasyList
     ! /adsensev2.  # from EasyList
+/adsenze.  # from EasyList
+/adseo/*  # from EasyList
+/adser/*  # from EasyList
+/adserv
+    ! /adserv.  # from EasyList
+    ! /adserv_  # from EasyList
+    ! /adserv/*  # from EasyList
+    ! /adserv1.  # from EasyList
+    ! /adserv2.  # from EasyList
+    ! /adserv3.  # from EasyList
+    ! /adserve-  # from EasyList
+    ! /adserve.  # from EasyList
+    ! /adserve/*  # from EasyList
+    ! /adserve_  # from EasyList
+    ! /adserver-  # from EasyList
+    ! /adserver_  # from EasyList
+    ! /adserver/*  # from EasyList
+    ! /adserver?  # from EasyList
+    ! /adserver01.  # from EasyList
+    ! /adserver1-  # from EasyList
+    ! /adserver1.  # from EasyList
+    ! /adserver2.  # from EasyList
+    ! /adserver2/*  # from EasyList
+    ! /adserver3.  # from EasyList
+    ! /adserver7/*  # from EasyList
+    ! /adserverc.  # from EasyList
+    ! /adserverdata.  # from EasyList
+    ! /adServerDfp.  # from EasyList
+    ! /adserverpub?  # from EasyList
+    ! /adservers-  # from EasyList
+    ! /adserversolutions/*  # from EasyList
+    ! /adserverstore.  # from EasyList
+    ! /adservervastvideovizu.  # from EasyList
+    ! /adservice-  # from EasyList
+    ! /adservices.  # from EasyList
+    ! /adservices/*  # from EasyList
+    ! /adserving.  # from EasyList
+    ! /adserving/*  # from EasyList
+    ! /adserving_  # from EasyList
+    ! /AdServlet?  # from EasyList
+    ! /adserv|*|adtech;  # from EasyList
 /adsjs.  # ad scripts  # is in EasyList
 /adsjs/*
 ?ads=$domain=~booking.loganair.co.uk  # from EasyList
@@ -304,6 +368,7 @@ _banner_rotator.php  # from Adguard
 /context_ads/*
 -contrib-ads/  # from EasyList
 /dcmads.js
+-detect-adblock.  # from EasyList
 /dfp/*
     ! /packages/dfp/*  # from EasyList
     ! avito.ru*/dfp/px.js  # from Ru AdList
@@ -320,8 +385,11 @@ _banner_rotator.php  # from Adguard
 /flo.js  # is in Adguard
 /flr.js  # is in uBlock filters
 /footer_ads.  # is in EasyList
-/fuckadblock/*$important
-/fuckadblock.js$important
+/fuckadb$important
+    ! /fuckadb.js  # from EasyList
+    ! /fuckadblock/*$important
+    ! /fuckadblock.js$important
+/fuckingadblockplus.  # from EasyList
 /gampad/*$important  #/gampad/ad  #/gampad/ads  #/gampad/adx  #/gampad/google_ads.js
 /gpt/pubads_impl_$script,important
 /gujAd/*$important
@@ -409,6 +477,9 @@ _banner_rotator.php  # from Adguard
     ! ||sport-express.ru/fb/img/icons/partners/
     ! ||stopgame.ru/*partners/  # from Adguard
     ! and others
+/pb.min.  # from EasyList
+/pbjs-*.js  # from EasyList
+/pbjsandwich.  # from EasyList
 /pbjsandwich-  # is in EasyList
 /pc_static.min.js  # from Adguard
 /pc_sticker.min.js  # from Adguard
@@ -416,14 +487,38 @@ _banner_rotator.php  # from Adguard
 _player_vpaid_as3.swf  # from Adguard
 /popunder.js$important
 /porpoiseant/*$important  # ad scripts  # is in EasyList
-/prebid.js$important
-/prebid_$important
-/prebid2.$important  # from EasyList
-/prebidLibrary.  # from EasyList
-/prebid-setup.js
+/prebid$important
+    ! /js/prebid-  # from EasyList
+    ! /npm/prebid-  # from EasyList
+    ! /prebid/*  # from EasyList
+    ! /prebid?  # from EasyList
+    ! /prebid.js$important
+    ! /prebid_$important
+    ! /prebid1.  # from EasyList
+    ! /prebid2.$important  # from EasyList
+    ! /prebid3.  # from EasyList
+    ! /prebid4.  # from EasyList
+    ! /prebid5.  # from EasyList
+    ! /prebid6.  # from EasyList
+    ! /prebid14.js  # from EasyList
+    ! /prebid2140.  # from EasyList
+    ! /prebid35.  # from EasyList
+    ! /prebidAdcall.  # from EasyList
+    ! /prebidjs/*  # from EasyList
+    ! /prebidLibrary.  # from EasyList
+    ! /prebidlink/*  # from EasyList
+    ! /prebid-min-  # from EasyList
+    ! /prebid_request.  # from EasyList
+    ! /prebid-sdk.  # from EasyList
+    ! /prebid-setup.js
+    ! /prebidtest.  # from EasyList
+    ! /prebid_v4.  # from EasyList
+    ! /prebid-worker/*  # from EasyList
+    ! ||akamaihd.net/player/*/akamai/amp/prebid/$important
 /profitwell.js$important
 /promobanner
 /pubads/*$important
+/pubfig.min.js  # from EasyList
 /rbs_scripts/rbs_banner_  # is in Ru AdList
 /redirect_base/*  # ad scripts
 /redirect/cpa/*
@@ -467,6 +562,7 @@ _player_vpaid_as3.swf  # from Adguard
 -stdlauncher.js  # from Adguard
 /sticker_pc.min.js  # from Adguard
 /sys/js/$third-party  # from Adguard (many random domains)
+/tagman/*  # from EasyList
 /test-widget/*
 /top-banner.jpg
 /trafficguard.js$important
@@ -4418,9 +4514,7 @@ akado.ru##.banner
 
 akado-telecom.ru##.slider
 
-! from EasyPrivacy
-||akamaihd.net/javascripts/browserfp.
-||akamaihd.net/player/*/akamai/amp/prebid/$important
+||akamaihd.net/javascripts/browserfp.  # from EasyPrivacy
 
 ||akamaized.net/oil/
 /oil/*-release.chunk.js  # is in EasyList and Fanboy's
@@ -25088,8 +25182,6 @@ kb.zyxel.ru###launcher
 
 ! from EasyPrivacy
 /demandbase_
-
-/adblock-checker.js$important
 
 ! from EasyPrivacy
 .js?referer=$important
