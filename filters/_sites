@@ -12988,8 +12988,6 @@ pikabu.ru#@#div[class="overlay"][style="z-index: 6001;"]
 ||pikabu.ru/*/telegram_widget/
 ||specials.pikabu.ru/yandex_taxi/
 !
-pikabu.ru$removeparam=|from
-!
 ! from AdGuard
 pikabu.ru##div[id^="adfox_"]
 pikabu.ru##div[id^=crt-]
@@ -13048,6 +13046,7 @@ pikabu.ru##.messengers-widget
 pikabu.ru##.vk_groups
 pikabu.ru##.sidebar__inner_fixed:style(position:static !important)
 pikabu.ru##.wimmelbook
+pikabu.ru##.add-post-and-community
 ! from RU AdList
 pikabu.ru##.footer__inner:style(background-color: var(--color--app__bg) !important; color: var(--color--app__text) !important)
 pikabu.ru##.footer__main:style(position:static !important)
@@ -13059,10 +13058,13 @@ pikabu.ru##.sidebar-block_placeholder
 pikabu.ru##.stories-feed__message:has(:scope > .widget-container)
 ! fixed theme picker button
 pikabu.ru##.theme-picker
+! fixed theme picker button
+pikabu.ru##pkb-theme-picker-button
 ! header changed, now it is not sticky
 !pikabu.ru##.header__main
 !pikabu.ru##.header_absolute
 pikabu.ru##.header__mobile:style(position:static !important)
+pikabu.ru##pkb-header:style(position:static !important)
 pikabu.ru##.app__content:style(padding-top:0px !important)
 pikabu.ru##.sidebar__right:style(position:static !important)
 pikabu.ru##.page-story > section
@@ -13082,6 +13084,7 @@ pikabu.ru##.footer__image
 pikabu.ru##.bd2021__cake
 pikabu.ru##.ny2022-btn
 pikabu.ru##.hny-btn
+pikabu.ru##a[href="/"] > pkb-icon
 !
 ! ads in menu ("special projects")
 pikabu.ru##a.sidebar-menu__item_main.sidebar-menu__item:has(img)
@@ -13121,6 +13124,9 @@ pikabu.ru##.emotions
 pikabu.ru##div.menu_vertical.menu.sidebar-block__content_hr.sidebar-block__content:has-text(Ламповый конструктор)
 pikabu.ru##.lightbulbs__welcome
 pikabu.ru##.stories-feed__container > section:has-text(Создать свою доску)
+    ! skidki with urlshorneners
+pikabu.ru##pkb-deal:has(a[href^="https://fas.st/"])
+pikabu.ru##pkb-deal:has(a[href^="https://lite.bz/"])
 !
 ! other
 pikabu.ru##div.sidebar-block_border.sidebar-block:has(.sidebar-block__header:has-text(Вакансии))
