@@ -37,6 +37,7 @@ _120x500.  # from EasyList
 
 
     ! 120x600 banners
+-120x600  # from Adguard
 -120x600-  # from EasyList
 -120x600.  # from EasyList
 -120x600_  # from EasyList
@@ -91,9 +92,10 @@ _160x500.  # from EasyList
 
 
     ! 160x600 banners
--160x600-  # from EasyList
--160x600.  # from EasyList
--160x600_  # from EasyList
+-160x600  # from Adguard
+    # -160x600-  # from EasyList
+    # -160x600.  # from EasyList
+    # -160x600_  # from EasyList
 -160-600.  # from EasyList
 /-160x600-$important
 /_160x600.$important
@@ -169,7 +171,9 @@ _323x120_  # from EasyList
 _336x120.  # from EasyList
 
 
+
     ! 336x280 banners
+-336x280  # from Adguard
 /336x280-  # from EasyList
 /336x280.  # from EasyList
 /336x280_  # from EasyList
@@ -179,6 +183,7 @@ _336x120.  # from EasyList
 _350_100.  # from EasyList
 _350_100_  # from EasyList
 _350x100.  # from EasyList
+-360x110.  # from Adguard
 _400-80.  # from EasyList
 _400x60.  # from EasyList
 _400x68.  # from EasyList
@@ -897,7 +902,6 @@ _player_vpaid_as3.swf  # from Adguard
     ! /prebid-worker/*  # from EasyList
     ! ||akamaihd.net/player/*/akamai/amp/prebid/$important
 /profitwell.js$important
-/promobanner
 /pubads/*$important
 /pubfig.min.js  # from EasyList
 /rbs_scripts/rbs_banner_  # is in Ru AdList
@@ -962,6 +966,9 @@ _player_vpaid_as3.swf  # from Adguard
 /vast/*  # from EasyList: /vast/ads-  # from Adguard: ||kodik.biz/vast/
     /adv-vast/*  # also.  # from Adguard: kodik*/adv-vast/
 /vast.php
+/vast.xml
+    ||mxttrf.com/vast.xml  # from Adguard
+    ||n278adserv.com/vast.xml  # from Adguard
 /vastad/*  # from Adguard: /vastad/*/manifest.xml
 /vastadv/*  # from Adguard: /vastadv/*/manifest.xml
 /vastadvert/*  # from Adguard: ||kodik.cc/vastadvert/
@@ -1657,6 +1664,8 @@ _tizers.  # from Ru AdList
 /promo/*$domain=~livejournal.com|~mts.ru  # mts.ru loads non-ad /Promo/ links in lk
 /promo.js$important
 /promo.php
+/promo_b/*  # from Adguard: /images/promo_b/*
+/promobanner
 /promo-banner.js$important
 /promolinks.
 /promos/*  # is in Ru AdList
