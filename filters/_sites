@@ -13126,10 +13126,15 @@ pikabu.ru##pkb-deal:has(a[href^="https://ali.ski/"])
 pikabu.ru##pkb-deal:has(a[href^="https://fas.st/"])
 pikabu.ru##pkb-deal:has(a[href^="https://lite.al/"])
 pikabu.ru##pkb-deal:has(a[href^="https://lite.bz/"])
+    ! fake notifications
+pikabu.ru##.bell:has-text(/^1$/)
+pikabu.ru##.header-right-menu__notification_active > icon:style(animation:none)
 !
 ! other
 pikabu.ru##div.sidebar-block_border.sidebar-block:has(.sidebar-block__header:has-text(Вакансии))
 pikabu.ru##div.footer__section:has-text(Партнёры)
+pikabu.ru##.grecaptcha-logo
+pikabu.ru##.grecaptcha-badge
 pikabu.ru##.page-story__placeholder
 pikabu.ru##.user__sberbank
 pikabu.ru##fw-game1-launcher
