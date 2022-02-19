@@ -2,48 +2,556 @@
 ! See https://github.com/mtxadmin/ublock for details
 !
 !
-
 ! List of URL parameters for removing
 ! See https://github.com/uBlockOrigin/uBlock-issues/issues/760
 ! and https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#removeparam
-! NeatURL: see Neat URL mozilla extention config at https://github.com/Smile4ever/Neat-URL
+! NeatURL: see Neat URL mozilla extension config at https://github.com/Smile4ever/Neat-URL
+!
+! Also, there are many community-driven rules from Adguard. See "from" comments
+!
+! And some of my findings here are too :-)
+!
+! All rules and domains are sorted alphabetically with comments. Just for convenience.
+!
+! Note: it seems, ref@amazon cannot be removed for some reason
 
-$removeparam=|cpa|utm_source|utm_medium|utm_campaign,important
-# Ru AdList rule: utm_campaign=$document,queryprune=|,domain=yandex.*|aliexpress.com|aliexpress.ru
 
-! general rules from NeatURL
-$removeparam=|action_object_map|action_type_map|action_ref_map  # Action Map
-$removeparam=|sc_cid  # Campaign tracking (Adobe Analytics)
-$removeparam=|mkt_tok  # Campaign tracking (Adobe Marketo)
-$removeparam=|trk|trkCampaign  # Campaign tracking (Amazon Kendra)
-$removeparam=/^ga_.*/  # Campaign tracking (ga, Google Analytics)
-$removeparam=|hmb_medium|hmb_source  # Campaign tracking (Humble Bundle)
-$removeparam=/^itm_.*/ # Campaign tracking (itm)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/
-$removeparam=/^pk_.*/  # Campaign tracking (pk)
-$removeparam=|sc_campaign|sc_channel|sc_content|sc_medium|sc_outcome|sc_geo|sc_country  # Campaign tracking (sc)
-$removeparam=/utm_.*/  # Campaign tracking (utm)
-$removeparam=|yclid|_openstat  # Campaign tracking (Yandex)  # https://yandex.com/support/direct/statistics/url-tags.html
-$removeparam=|mbid|cmpid|c_id|campaign_id|Campaign  # Campaign tracking (others) # cid is excluded - it is being used by some forum engines  # https://www.parse.ly/help/post/4843/campaign-data-tracking/
-$removeparam=|fb_action_ids|fb_action_types|fb_ref|fb_source|fbclid  # Facebook
-$removeparam=|spReportId|spJobID|spUserID|spMailingID  # "IBM Acoustic Campaign
-$removeparam=|elqTrackId|elqTrack|campaignId|siteId  # Oracle Eloqua
-#$removeparam=|assetType|assetId|recipientId|campaignId|siteId  # Oracle Eloqua, but do not block senderId and recipientId in general
-$removeparam=|_hsenc|_hsmi|__hssc|__hstc|hsCtaTracking  # Hubspot
-$removeparam=|gs_l  # Google
+!! rules
 
-! Note: || is essential here. Because rule for amazon.com does not catch www.amazon.com
-! Maybe it is wrong? It seems, ref@amazon cannot be removed for some reason
+! Good policy from Adguard:
+!
+! This section contains the list of generic `$removeparam` rules that are applied on every website.
+! You should only put here known parameters that are used on many websites.
+! IMPORTANT: add a comment that explains where this parameter comes from (what tracking company is using it).
+! Ideally, supply a link to the document that explains how this parameter is used.
+!
+
+$removeparam=action_object_map  # Action Map  # from NeatURL and Adguard
+$removeparam=action_ref_map  # Action Map  # from NeatURL and Adguard
+$removeparam=action_type_map  # Action Map  # from NeatURL and Adguard
+
+$removeparam=/^adjust_.*/  # adjust.com campains. Also see adjust ad network
+    ! $removeparam=adjust_adgroup  # from Adguard
+    ! $removeparam=adjust_campaign  # from Adguard
+    ! $removeparam=adjust_creative  # from Adguard
+    ! $removeparam=adjust_tracker  # from Adguard
+    ! $removeparam=adjust_tracker_limit  # from Adguard
+    ! adj.st$removeparam=adjust_deeplink  # from Adguard
+    ! adj.st$removeparam=CollectionId  # from Adguard
+
+$removeparam=admitad_uid  # AdmitAd tracking  # from Adguard and Ru AdList
+
+$removeparam=/^aff_/
+    ! $removeparam=aff_platform  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
+    ! $removeparam=aff_trace_key  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
+    ! ||aliexpress.$removeparam=aff_fcid  # from Adguard
+        ! aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com  # from Ru AdList
+    ! ||aliexpress.$removeparam=aff_trace_key  # from Adguard
+    ! ||aliexpress.$removeparam=aff_fsk  # from Adguard
+    ! iqbroker.com$removeparam=aff_model  # from Adguard
+$removeparam=/^affi/
+    ! cyberlink.com$removeparam=affid  # from Adguard
+    ! ||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest  # from Adguard
+    ! otto.de$removeparam=AffiliateID  # from Adguard
+
+$removeparam=assetId  # Oracle Eloqua  # from NeatURL
+$removeparam=assetType  # Oracle Eloqua  # from NeatURL
+
+$removeparam=asgtbndr  # from Adguard
+
+$removeparam=/^at_custom.*/  # Campaign tracking (at)  # from NeatURL
+$removeparam=at_medium  # Campaign tracking (at)  # from NeatURL
+
+$removeparam=_branch_match_id  # from Adguard
+    ! Branch.io ( https://stackoverflow.com/questions/37882810/what-is-meaning-of-branch-match-id )
+    ! medium.com$removeparam=_branch_match_id  # from NeatURL
+
+$removeparam=/^bsft_.*/
+    ! https://github.com/AdguardTeam/AdguardFilters/issues/89869
+    ! email subscriptions tracking
+    ! $removeparam=bsft_aaid  # from Adguard
+    ! $removeparam=bsft_clkid  # from Adguard
+    ! $removeparam=bsft_eid  # from Adguard
+    ! $removeparam=bsft_ek  # from Adguard
+    ! $removeparam=bsft_mid  # from Adguard
+    ! $removeparam=bsft_uid  # from Adguard
+
+$removeparam=/campaign/  # maybe it needs i? Not sure
+    ! $removeparam=at_campaign  # Campaign tracking (at)  # from NeatURL
+    ! $removeparam=campaign  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+        ! $removeparam=adjust_campaign  # from Adguard
+        ! $removeparam=dpg_campaign  # from Adguard
+        ! alternate.de$removeparam=campaign  # from Adguard
+        ! ||boomstore.de*.html$removeparam=campaign  # from Adguard
+        ! caseking.de$removeparam=campaign  # from NeatURL
+    ! $removeparam=campaign_id  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+    ! $removeparam=campaignId  # Oracle Eloqua  # from NeatURL
+    ! $removeparam=sc_campaign  # Campaign tracking (sc)  # from NeatURL
+    ! ||amazon.*/aa$removeparam=bitCampaignCode  # from Adguard
+    ! editor.flixier.com$removeparam=/fx_(source|medium|campaign)/  # from Adguard
+    ! trendyol.com$removeparam=tyutm_campaign  # from Adguard
+    ! ||play.google.com/store/$removeparam=pcampaignid  # from Adguard
+
+# cid - do not generally remove parameter! It is used by several forum engines and sites. See discussion at https://github.com/Smile4ever/Neat-URL/issues/226
+# c_id is not so wide, but: https://github.com/Smile4ever/Neat-URL/issues/232
+$removeparam=c_id,domain=~libsyn.com  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+
+$removeparam=/clickid$/
+    ! $removeparam=irclickid  # from Ru AdList
+    ! $removeparam=rb_clickid  # from Adguard  # https://github.com/brave/brave-browser/issues/17451
+    ! aufast.co$removeparam=clickid  # from Adguard
+    ! duda.co$removeparam=irclickid  # from Adguard
+    ! iqbroker.com$removeparam=clickid  # from Adguard
+    ! microsoft.com$removeparam=irclickid  # from Adguard
+    ! voyeur-house.tv$removeparam=clickid  # from Adguard
+$removeparam=/click_id$/
+    ! $removeparam=mt_click_id  # from Ru AdList
+    ! $removeparam=unicorn_click_id  # adjust.com tracking  # from Adguard
+    ! tinkoff.ru$removeparam=dsp_click_id
+
+! $removeparam=/clid/ - hmmm... Maybe too broad. But all these client ids definitely look similar
+    $removeparam=adclid
+        ! zestradar.com$removeparam=adclid  # from Adguard
+    $removeparam=afclid  # from Ru AdList
+    $removeparam=clid
+        ! ||www.yandex.$removeparam=clid  # from Adguard
+        ! ://yandex.$removeparam=clid  # from Adguard
+        ! &clid=$document,removeparam=|clid,domain=yandex.*  # from Ru AdList
+        ! ?clid=$document,removeparam=|clid,domain=yandex.*  # from Ru AdList
+        ! ||yandex.ru/?clid=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+    $removeparam=dclid  # from Adguard
+    $removeparam=fbclid  # Facebook general parameter  # from NeatURL and Adguard
+        ! fbclid=$document,removeparam=fbclid  # from Ru AdList
+        ! ||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
+    $removeparam=gclid  # Campaign tracking (Google Analytics, ga)  # from NeatURL, Adguard, Ru AdList
+        ! ||youtube.com^*gclid*$removeparam=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467  # also it is found indepedently and presents in NeatURL. Very popular parameter.
+    $removeparam=twclid  # Twitter general parameter  # from NeatURL
+    $removeparam=yaclid  # from Ru AdList
+    $removeparam=yclid  # Campaign tracking (Yandex (and Google?))  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList
+    $removeparam=ymclid
+        ! ?ymclid=$document,removeparam=|  # from Ru AdList
+        ! &ymclid=$document,removeparam=|,domain=~ozon.onelink.me  # from Ru AdList
+
+$removeparam=cmpid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL and Adguard
+
+$removeparam=cpa,important
+
+$removeparam=/^dpg_.*/  # Campaign tracking (DPG Media)  # used on Dutch sites  # from NeatURL
+    ! $removeparam=dpg_campaign  # from Adguard
+    ! $removeparam=dpg_content  # from Adguard
+    ! $removeparam=dpg_medium  # from Adguard
+    ! $removeparam=dpg_source  # from Adguard
+
+$removeparam=ebisAdID  # AD EBiS  # from Adguard
+
+$removeparam=elqTrack  # Oracle Eloqua  # from NeatURL
+$removeparam=elqTrackId  # Oracle Eloqua  # from NeatURL
+
+$removeparam=/^etcc_/
+    ! hitseller.de$removeparam=etcc_cmp  # from Adguard
+    ! hitseller.de$removeparam=etcc_med  # from Adguard
+    ! hitseller.de$removeparam=etcc_produkt  # from Adguard
+    ! marketing.net.idealo-partner.com$removeparam=etcc_cmp  # from Adguard
+    ! marketing.net.idealo-partner.com$removeparam=etcc_med  # from Adguard
+    ! marketing.net.idealo-partner.com$removeparam=etcc_produkt  # from Adguard
+
+! unusual Ru AdList form:
+/?f=ukr.net$document,removeparam=|  # from Ru AdList
+
+$removeparam=fb_action_ids  # Facebook general parameter # from NeatURL and Adguard
+$removeparam=fb_action_types  # Facebook general parameter  # from NeatURL and Adguard
+$removeparam=fb_comment_id  # from Adguard
+$removeparam=fb_ref  # Facebook general parameter  # from NeatURL and Adguard
+$removeparam=fb_source  # Facebook general parameter  # from NeatURL and Adguard
+
+$removeparam=fref  # from Ru AdList
+
+$removeparam=from
+    ! /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
+    ! 3dnews.ru$removeparam=from
+    ! ||amazon.*/hz/contact-us/csp$removeparam=from  # from Adguard
+    ! bilibili.com$removeparam=from  # from Adguard
+    ! hh.ru$removeparam=from
+    ! pikabu.ru$removeparam=from
+    ! rbc.ru$removeparam=from
+    ! ||yandex.*/news/$removeparam=from  # from Adguard
+    ! ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
+    ! ||yandex.*/news*?from=main$document,removeparam=|,domain=yandex.*  # from Ru AdList
+    ! ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
+    ! ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
+    ! ?from=tabbar$document,removeparam=|from,domain=yandex.*  # from Ru AdList
+    ! ?from=yanews$document,removeparam=|  # from Ru AdList
+    ! ||daraz.*$removeparam=/from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
+    ! from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+$removeparam=frommail
+    ! mail.ru*frommail=1$document,removeparam=|frommail=1,domain=mail.ru  # from Ru AdList
+    ! sportmail.ru*frommail=1$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
+
+$removeparam=/^ga_.*/  # Campaign tracking (Google Analytics, ga)  # from NeatURL
+
+$removeparam=_ga  # from Ru AdList
+    ! unusual Ru AdList form (it seems, all the parameters will be removed):
+        ! .com/?_ga=$document,removeparam=|  # from Ru AdList
+        ! .net/?_ga=$document,removeparam=|  # from Ru AdList
+        ! .ru/?_ga=$document,removeparam=|  # from Ru AdList
+        ! .ua/?_ga=$document,removeparam=|  # from Ru AdList
+    ! trendyol.com$removeparam=_ga  # from Adguard
+
+$removeparam=_gl  # from Ru AdList
+
+$removeparam=gbraid  # Google ads/analytics  # from Adguard
+
+$removeparam=gclsrc  # Campaign tracking (Google Analytics, ga)  # from NeatURL and Adguard
+
+$removeparam=gps_adid  # adjust.com tracking  # from Adguard
+
+$removeparam=gs_l  # Google general parameter  # from NeatURL
+
+$removeparam=gtm  # from Ru AdList
+
+$removeparam=guccounter  # from Adguard
+    ! yahoo.com$removeparam=guccounter  # from NeatURL
+
+$removeparam=hmb_campaign  # Campaign tracking (Humble Bundle)  # from NeatURL
+$removeparam=hmb_medium  # Campaign tracking (Humble Bundle)  # from NeatURL
+$removeparam=hmb_source  # Campaign tracking (Humble Bundle)  # from NeatURL
+
+$removeparam=__hssc  # Hubspot  # from NeatURL
+$removeparam=__hstc  # Hubspot  # from NeatURL
+$removeparam=_hsenc  # Hubspot  # from NeatURL
+$removeparam=_hsmi  # Hubspot  # from NeatURL
+$removeparam=hsCtaTracking  # Hubspot  # from NeatURL
+
+$removeparam=idealoid
+    ! alternate.de$removeparam=idealoid  # from Adguard
+    ! ejoker.de$removeparam=idealoid  # from Adguard
+    ! electronic4you.de$removeparam=idealoid  # from Adguard
+    ! galaxus.de$removeparam=idealoid  # from Adguard
+    ! hitseller.de$removeparam=idealoid  # from Adguard
+    ! mioga.de$removeparam=idealoid  # from Adguard
+    ! netgames.de$removeparam=idealoid  # from Adguard
+    ! technikdirekt.de$removeparam=idealoid  # from Adguard
+
+$removeparam=/^itm_.*/ # Campaign tracking (itm)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+
+$removeparam=irgwc  # from Adguard and Ru AdList
+    ! https://github.com/AdguardTeam/AdguardFilters/issues/108478
+
+$removeparam=mbid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+    ! wired.co.uk$removeparam=mbid  # from Adguard
+
+$removeparam=mc_cid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # from NeatURL
+$removeparam=mc_eid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # from NeatURL
+
+$removeparam=/^mkt_tok.*/
+    ! $removeparam=mkt_tok  # Campaign tracking (Adobe Marketo)  # from NeatURL
+    ! digikey.com^$removeparam=/^mkt_tok/  # from Adguard
+        ! Lately: $domain=atlanticcouncil.org|digikey.com,removeparam=/^mkt_tok/  # from Adguard
+
+$removeparam=ml_subscriber  # from Adguard
+$removeparam=ml_subscriber_hash  # from Adguard
+    ! https://github.com/brave/brave-browser/issues/17507
+
+! Mail.ru tracking
+$removeparam=mt_click
+    ! mt_click$document,removeparam=|,domain=mail.ru|ok.ru  # from Ru AdList
+$removeparam=mt_click_id  # from Ru AdList
+$removeparam=mt_sub
+    ! mt_sub$document,removeparam=|,domain=mail.ru|ok.ru  # from Ru AdList
+
+$removeparam=/^mtm_.*/,important  # Campaign tracking (Matomo/Piwik)  # from NeatURL
+    ! $removeparam=mtm_campaign  # from Adguard
+    ! $removeparam=mtm_cid  # from Adguard
+    ! $removeparam=mtm_content  # from Adguard
+    ! $removeparam=mtm_group  # from Adguard
+    ! $removeparam=mtm_keyword  # from Adguard
+    ! $removeparam=mtm_medium  # from Adguard
+    ! $removeparam=mtm_placement  # from Adguard
+    ! $removeparam=mtm_source  # from Adguard
+
+$removeparam=ncid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+
+$removeparam=/^ns_.*/  # Campaign tracking (ns)  # from NeatURL
+
+$removeparam=nx_source  # from Adguard
+
+$removeparam=ocid
+    ! microsoft.com$removeparam=ocid  # from Adguard
+    ! office.com$removeparam=ocid  # from Adguard
+    ! bbc.com$removeparam=ocid  # from Adguard
+
+$removeparam=oly_anon_id  # from Adguard
+$removeparam=oly_enc_id  # from Adguard
+    ! https://github.com/brave/brave-browser/issues/13644
+
+$removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList
+
+$removeparam=/^pk_.*/,important  # Campaign tracking (Matomo/Piwik)  # from NeatURL
+    ! $removeparam=pk_campaign  # from Adguard
+    ! $removeparam=pk_medium  # from Adguard
+    ! $removeparam=pk_source  # from Adguard
 
 $removeparam=promoid
+    ! Later:
+    ! get.adobe.com$removeparam=promoid  # from Adguard
 
-$removeparam=referer
-    referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+# recipientId - do not remove in general. Though it is being used in Oracle Eloqua
+
+$removeparam=ref
+    ! amazon.*$removeparam=ref  # Found independently. Also is in Adguard
+    ! ||amazon.*$removeparam=refRID  # from Adguard
+    ! ||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/  # from Adguard
+    ! arcelik.com.tr$removeparam=ref  # from Adguard
+    ! coconala.com$removeparam=ref  # from Adguard
+    ! visit.digidip.net$removeparam=/^(ppref|ref|pid)=/
+    ! d-markets.net$removeparam=ref  # from Adguard
+    ! etsy.com$removeparam=ref  # from NeatURL
+    ! goodreads.com$removeparam=ref  # from Adguard
+    ! jasonsavard.com$removeparam=/cUrl|ref/  # from Adguard
+    ! video.laxd.com$removeparam=ref  # from Adguard
+    ! livedoor.biz$removeparam=ref  # from Adguard
+    ! ||app.mi.com/download/*?id=$removeparam=ref  # from Adguard
+    ! mvideo.ru$removeparam=/^(_requestid|reff)=/
+    ! netgames.de$removeparam=refID  # from Adguard
+    ! nicovideo.jp$removeparam=ref  # from Adguard
+    ! mein.onlinekonto.de$removeparam=ref  # from Adguard
+    ! ||rakuten.co.jp/Web?$removeparam=ref  # from Adguard
+    ! reddit.com$removeparam=ref  # from Adguard
+    ! uspoloassn.com$removeparam=ref  # from Adguard
+
+$removeparam=/^ref_.*/
+    ! $removeparam=ref_
+        ! amazon.*$removeparam=ref_  # Found independently. Is in NeatURL too
+        ! imdb.com$removeparam=ref_  # from NeatURL and Adguard
+    ! coconala.com$removeparam=ref_kind  # from Adguard
+    ! coconala.com$removeparam=ref_no  # from Adguard
+    ! ||github.com/signup$removeparam=/^ref_/  # from Adguard
+    ! reddit.com$removeparam=ref_campaign  # from Adguard
+    ! reddit.com$removeparam=ref_source  # from Adguard
+    ! twitter.com$removeparam=/^ref_.*/  # from NeatURL
+        ! twitter.com$removeparam=ref_src  # from Adguard
+        ! twitter.com$removeparam=ref_url  # from Adguard
+
+$removeparam=/referer/
+    ! $removeparam=/^referer.*/
+        ! $removeparam=referer
+        ! referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+        ! cosse.de$removeparam=referer  # from Adguard
+        ! play.google.*^$removeparam=referrer  # from Adguard
+        ! reddit.app.link$removeparam=referrer_domain  # from Adguard
+        ! reddit.app.link$removeparam=referrer_url  # from Adguard
+    ! $removeparam=nr_email_referer  # Campaign tracking (utm)  # from NeatURL
+    ! $removeparam=guce_referrer  # from Adguard
+    ! $removeparam=guce_referrer_sig  # from Adguard
+    ! ||linkedin.com/authwall?$removeparam=originalReferer  # from Adguard
+    ! reddit.com$removeparam=_branch_referrer  # from Adguard
+    ! ?referrer_block=$document,removeparam=|referrer_,domain=mail.ru|sportmail.ru  # from Ru AdList
+
+$removeparam=ruid  # from Ru AdList, modified
+    ! RBC network tracking. Better to make general rule for their future projects
+    ! ?ruid=$document,removeparam=|ruid,domain=autonews.ru|rbc.ru|sportrbc.ru  # from Ru AdList
+
+$removeparam=sc_campaign  # Campaign tracking (sc)  # from NeatURL
+$removeparam=sc_channel  # Campaign tracking (sc)  # from NeatURL
+$removeparam=sc_cid  # Campaign tracking (Adobe Analytics)  # from NeatURL
+$removeparam=sc_content  # Campaign tracking (sc)  # from NeatURL
+$removeparam=sc_country  # Campaign tracking (sc)  # from NeatURL
+$removeparam=sc_geo  # Campaign tracking (sc)  # from NeatURL
+$removeparam=sc_outcome  # Campaign tracking (sc)  # from NeatURL
+
+$removeparam=s_cid  # Campaign tracking (Omniture)  # https://moz.com/community/q/omniture-tracking-code-urls-creating-duplicate-content  # from NeatURL
+
+! Chinese tracking parameters.
+$removeparam=scm
+    ! is in NeatURL and Adguard. Confirmed by months of testing.
+    !aliexpress.com$removeparam=|scm
+    !aliexpress.ru$removeparam=|scm
+    ! 2022-02: Also from Adguard:
+    !aliyun.com$removeparam=scm  # from Adguard
+    !taobao.com$removeparam=scm  # from Adguard
+    !||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard
+$removeparam=scm_id
+    ! Found independently. Confirmed by months of testing. Now it is in NeatURL and Adguard too
+    !aliexpress.com$removeparam=|scm_id
+    !aliexpress.ru$removeparam=|scm_id
+$removeparam=scm-url
+    ! Found independently. Confirmed by months of testing. Now it is in Adguard
+    !aliexpress.com$removeparam=|scm-url
+    !aliexpress.ru$removeparam=|scm-url
+$removeparam=spm
+    ! is in NeatURL Adguard, Ru AdList. Confirmed by months of testing.
+    !aliexpress.com$removeparam=|spm
+    !aliexpress.ru$removeparam=|spm
+    ! Also from Adguard:
+    !$removeparam=spm,domain=aliyun.com|sohu.com  # from Adguard
+    !||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard
+    ! unusual Ru AdList forms:
+        ! .html?spm=$document,removeparam=spm,domain=aliexpress.*  # from Ru AdList
+        ! .ru/?spm=$document,removeparam=spm,domain=aliexpress.*  # from Ru AdList
+        ! ://aliexpress.*.htm?spm=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
+
+# senderId - do not remove in general. Though it is being used in Oracle Eloqua
+
+$removeparam=/^share_/
+    ! bilibili.com$removeparam=share_source  # from Adguard
+    ! bilibili.com$removeparam=share_medium  # from Adguard
+    ! bilibili.com$removeparam=share_plat  # from Adguard
+    ! bilibili.com$removeparam=share_session_id  # from Adguard
+    ! bilibili.com$removeparam=share_source  # from Adguard
+    ! bilibili.com$removeparam=share_tag  # from Adguard
+    ! tiktok.com$removeparam=share_app_id  # from NeatURL and Adguard
+    ! tiktok.com$removeparam=share_author_id  # from Adguard
+    ! tiktok.com$removeparam=share_link_id  # from NeatURL
+    ! tiktok.com$removeparam=share_item_id  # from NeatURL
+    ! weidian.com$removeparam=share_relation  # from Adguard
+
+! don't generalize removing sid parameter. I have already tried it many, many years ago
+! Some forum engines will broke.
+
+$removeparam=siteId  # Oracle Eloqua  # from NeatURL
+
+$removeparam=soc_src  # Yahoo general parameter  # from NeatURL
+$removeparam=soc_trk  # Yahoo general parameter  # from NeatURL
+
+$removeparam=source
+    ! ||amazon.*/hz/contact-us/csp$removeparam=source  # from Adguard
+    ! cht.com.tw$removeparam=Source  # from Adguard
+    ! edx.org$removeparam=source  # from Adguard
+    ! ||github.com/signup$removeparam=source  # from Adguard
+    ! google.*/search$removeparam=source  # from Adguard
+    ! ||www.google.*/search?$removeparam=source  # from Ru AdList
+    ! hh.ru$removeparam=source
+    ! medium.com$removeparam=source  # from NeatURL
+    ! sourceforge.net$removeparam=source  # from NeatURL
+    ! tiktok.com$removeparam=source  # from NeatURL
+    ! tradingview.com$removeparam=source  # from Adguard
+    ! ://yandex.$removeparam=source  # from Adguard
+    ! ?source=ukrnet$document,removeparam=|  # from Ru AdList
+    ! ||banki.ru/*?source=*menu_$removeparam=|,domain=banki.ru  # from Ru AdList
+
+$removeparam=sPartner
+    ! caseking.de$removeparam=sPartner  # from NeatURL
+    ! cosse.de$removeparam=sPartner  # from Adguard
+    ! ejoker.de$removeparam=sPartner  # from Adguard
+    ! hitseller.de$removeparam=sPartner  # from Adguard
+    ! technikdirekt.de$removeparam=sPartner  # from Adguard
+
+$removeparam=spJobID  # "IBM Acoustic Campaign  # from NeatURL
+$removeparam=spMailingID  # "IBM Acoustic Campaign  # from NeatURL
+$removeparam=spReportId  # "IBM Acoustic Campaign  # from NeatURL
+$removeparam=spUserID  # "IBM Acoustic Campaign  # from NeatURL
+
+$removeparam=/^stm_.*/  # Campaign tracking (stm)  # from NeatURL
+
+$removeparam=/^trk.*/
+    ! $removeparam=trk  # Campaign tracking (Amazon Kendra)  # also is in NeatURL. Very common parameter.
+    ! linkedin.com$removeparam=/^trk/  # from Adguard
+        ! linkedin.com$removeparam=trk  # from NeatURL
+        ! xkcd.com$removeparam=trk  # from Adguard
+    ! $removeparam=trkCampaign  # Campaign tracking (Amazon Kendra)  # from NeatURL
+    ! linkedin.com$removeparam=trkEmail  # from NeatURL
+    ! ||linkedin.com/authwall?$removeparam=trkInfo  # from Adguard
+    
+$removeparam=tt_content  # Twitch.tv general parameter  # from NeatURL
+$removeparam=tt_medium  # Twitch.tv general parameter  # from NeatURL
+
+$removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and RuAdList. Very common parameters.
+    ! $removeparam=|utm_source|utm_medium|utm_campaign,important
+    ! (old) Ru AdList rule: utm_campaign=$document,queryprune=|,domain=yandex.*|aliexpress.com|aliexpress.ru
+    ! In Adguard there are a bunch of specific rules. Maybe they don't like regexps?
+    ! $removeparam=utm_ad  # from Adguard
+    ! $removeparam=utm_brand  # from Adguard
+    ! $removeparam=utm_campaign  # from Adguard and Ru AdList
+    ! $removeparam=utm_campaing  # from Ru AdList
+    ! $removeparam=utm_campaignid  # from Adguard
+    ! $removeparam=utm_cmpaign  # from Ru AdList
+    ! $removeparam=utm_channel  # from Adguard
+    ! $removeparam=utm_cid  # from Adguard
+    ! $removeparam=utm_content  # from Adguard and Ru AdList
+    ! $removeparam=utm_emcid  # from Adguard
+    ! $removeparam=utm_emmid  # from Adguard
+    ! $removeparam=utm_id  # from Adguard and Ru AdList
+    ! $removeparam=utm_medium  # from Adguard and Ru AdList
+    ! $removeparam=utm_name  # from Adguard
+    ! $removeparam=utm_place  # from Adguard
+    ! $removeparam=utm_product  # from Adguard
+    ! $removeparam=utm_pubreferrer  # from Adguard
+    ! $removeparam=utm_reader  # from Adguard
+    ! $removeparam=utm_referrer  # from Adguard and Ru AdList
+    ! $removeparam=utm_serial  # from Adguard
+    ! $removeparam=utm_social  # from Adguard
+    ! $removeparam=utm_social-type  # from Adguard
+    ! $removeparam=utm_source  # from Adguard and Ru AdList
+    ! $removeparam=utm_swu  # from Adguard
+    ! $removeparam=utm_term  # from Adguard and Ru AdList
+    ! $removeparam=utm_umguk  # from Adguard
+    ! $removeparam=utm_userid  # from Adguard
+    ! $removeparam=utm_viz_id  # from Adguard
+    ! unusual Ru AdList forms:
+        !/?amp;utm_*ukr$document,removeparam=|  # from Ru AdList
+        !=ukraine_news&utm_$document,removeparam=|utm_  # from Ru AdList
+        !?utm_partner_id=$document,removeparam=|,domain=mail.ru|sportmail.ru  # from Ru AdList
+        !utm_$document,removeparam=ig_rid,domain=instagram.com  # from Ru AdList
+    ! aufast.co$removeparam=/^utm_/  # from Adguard
+    ! digikey.com$removeparam=/^utm_cid/  # from Adguard
+    ! fastshare.cz/top*?utm_source=*&utm_medium=*&utm_campaign=$domain=warforum.cz  # from Adguard
+    ! ||gamebet.news/*/index.html?utm_placement=$third-party  # from Adguard
+    ! ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
+    ! trendyol.com$removeparam=utm_subaff  # from Adguard
+    ! upgrad.com$removeparam=UTM_MEDIUM  # from Adguard
+    ! wikihow.com$removeparam=?utm_source  # from Adguard
+    !   Exclusions from Adguard. Very strange and suspicious (they are old and maybe unneeded)
+    ! @@||lanacion.com.ar/*module$removeparam=utm_source  # from Adguard
+    ! @@||onet.pl/?utm_source=$removeparam  # from Adguard
+    ! @@||plex.tv/api/v*/users/*?utm_source=$removeparam=utm_source,domain=watch.plex.tv  # from Adguard
+    ! @@||t.send.vt.edu/r/?id=$removeparam=utm_medium  # from Adguard
+    ! @@||t.send.vt.edu/r/?id=$removeparam=utm_campaign  # from Adguard
+    ! @@||t.send.vt.edu/r/?id=$removeparam=utm_source  # from Adguard
+
+$removeparam=vc_lpp  # from Adguard
+    ! Valuecommerce ( https://help.valuecommerce.ne.jp/mer/dl/ITP2.0_for_iTAG.pdf )
+
+$removeparam=vero_conv  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # from NeatURL
+$removeparam=vero_id  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # from NeatURL
+
+$removeparam=wbraid  # Google ads/analytics  # from Adguard
+
+$removeparam=wt_mc  # Zeit.de general parameter  # from NeatURL
+$removeparam=wt_zmc  # Zeit.de general parameter  # from NeatURL
+
+$removeparam=xtor  # Campaign link tracking  # https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/campaigns-javascript-en/marketing-campaigns-javascript-en/#direct-method_5  # from Adguard
+
+$removeparam=_zucks_suid  # from Adguard
+
 
 !! domains
 
+! This section contains the list of domain-specific rules that remove URL tracking parameters
+! If several sites has the same parameter, it is preferably to make a general rule with commented those specific rules afterwards.
+! (For information and just in case if the general rule will be considered not so good and return to specific ones will be needed)
+
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
-||3dnews.ru$removeparam=from
+! blocked entirely, just for information
+! adjust.com$removeparam=adgroup  # from Adguard
+
+! blocked entirely, just for information
+ad.admitad.com$removeparam=/^subid/  # from Adguard
+
+! not ad
+adorama.com$removeparam=obem  # from Adguard
+adorama.com$removeparam=bc_pid  # from Adguard
+
+! blocked entirely, just for information
+||pixel.adsafeprotected.com/services/pub?$removeparam=anId  # from Adguard
+||pixel.adsafeprotected.com/services/pub?$removeparam=sessionId  # from Adguard
+||pixel.adsafeprotected.com/services/pub?$removeparam=slot  # from Adguard
+||pixel.adsafeprotected.com/services/pub?$removeparam=sr  # from Adguard
+||pixel.adsafeprotected.com/services/pub?$removeparam=url  # from Adguard
+||pixel.adsafeprotected.com/services/pub?$removeparam=wr  # from Adguard
+
+! blocked entirely, just for information
+!adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
 
 airbnb.com$removeparam=|source_impression_id|euid
 airbnb.ru$removeparam=|source_impression_id|euid
@@ -55,38 +563,143 @@ airbnb.ru$removeparam=|source_impression_id|euid
 ! Found independently, but cannot be applied in uBlock Origin as in NeatURL
 ! That is not URL parameter, but URL ending
 #  $/ref@amazon.*
-! from NeatURL. Todo: make and text regexp here
-!pd_rd_*@amazon.*", "psc@amazon.*", "tag@amazon.*", "pf_rd_*@amazon.*"]},
-||amazon.com$removeparam=|_encoding|psc|tag
-||amazon.com$removeparam=ref_  # is in NeatURL
-! Found independently. Todo: make regexp
-!amazon.com$removeparam=|dchild|keywords|qid|sr|th|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_
-||amazon.com$removeparam=|dchild|qid|sr|th|pf_rd_m|pf_rd_r|pd_rd_r|pf_rd_p|pd_rd_w|pd_rd_wg|ref_|ref|rid
+! Note: in NeatURL amazon.com is amazon.* . It should work, but need to test 
+amazon.*$removeparam=ascsubtag  # from NeatURL and Adguard
+amazon.*$removeparam=c  # from Adguard
+amazon.*$removeparam=camp  # from Adguard
+amazon.*$removeparam=creative  # from Adguard
+amazon.*$removeparam=creativeASIN  # from Adguard
+amazon.*$removeparam=dchild  # Found independently. Also is in Adguard
+amazon.*$removeparam=_encoding  # from NeatURL
+||amazon.*/hz/contact-us/csp$removeparam=/entries/  # from Adguard
+amazon.*$removeparam=field-lbr_brands_browse-bin  # from Adguard
+amazon.*$removeparam=ingress  # from Adguard
+amazon.*$removeparam=initialIssue  # from Adguard
+! do not block keywords parameter
+||amazon.*/message-us$removeparam=muClientName  # from Adguard
+amazon.*$removeparam=/^pd_rd_.*/  # from NeatURL
+    ! ||amazon.*$removeparam=pd_rd_i  # from Adguard
+    ! amazon.*$removeparam=pd_rd_r  # Found independently but was too lazy to make a regexp. Also it is in Adguard.
+    ! amazon.*$removeparam=pd_rd_w  # Found independently but was too lazy to make a regexp. Also it is in Adguard.
+    ! amazon.*$removeparam=pd_rd_wg  # Found independently but was too lazy to make a regexp. Also it is in Adguard.
+amazon.*$removeparam=pf  # from NeatURL
+amazon.*$removeparam=/^pf_rd_.*/  # from NeatURL
+    ! ||amazon.*$removeparam=pf_rd_i  # from Adguard
+    ! amazon.*$removeparam=pf_rd_m  # Found independently but was too lazy to make a regexp. Also it is in Adguard.
+    ! amazon.*$removeparam=pf_rd_r  # Found independently but was too lazy to make a regexp. Also it is in Adguard.
+    ! amazon.*$removeparam=pf_rd_p  # Found independently but was too lazy to make a regexp. Also it is in Adguard.
+    ! ||amazon.*$removeparam=pf_rd_s  # from Adguard
+    ! ||amazon.*$removeparam=pf_rd_t  # from Adguard
+    ! ||amazon.*$removeparam=pf_rd_w  # from Adguard
+amazon.*$removeparam=plattr  # from Adguard
+amazon.*$removeparam=psc  # from NeatURL
+amazon.*$removeparam=qid  # Found independently. Also it is in Adguard.
+amazon.*$removeparam=rdc  # from Adguard
+amazon.*$removeparam=rid  # Found independently
+amazon.*$removeparam=smid  # from Adguard
+amazon.*$removeparam=sr  # Found independently
+amazon.*$removeparam=tag  # from NeatURL and Adguard
+amazon.*$removeparam=th  # Found independently
+amazon.*$removeparam=ts_id  # from Adguard
+||amazon.*/hz/contact-us/csp$removeparam=/Version/  # from Adguard
+amazon.*$removeparam=visitId  # from Adguard
+amazon.*$removeparam=vt  # from Adguard
+!@@||data.amazon.*/api/marketplaces/*/cart/carts/retail/items$removeparam=ref  # strange exclusion from Adguard
 
-||bilibili.com$removeparam=|callback  # from NeatURL
+bilibili.com$removeparam=callback  # from NeatURL
+bilibili.com$removeparam=from_source  # from Adguard
+bilibili.com$removeparam=from_spm_id  # from Adguard
+bilibili.com$removeparam=seid  # from Adguard
+bilibili.com$removeparam=spm_id_from  # from Adguard
+bilibili.com$removeparam=timestamp  # from Adguard
+bilibili.com$removeparam=unique_k  # from Adguard
 
-||bing.com$removeparam=|cvid|form|sk|sp|sc|qs|pq  # from NeatURL
+bing.com$removeparam=cvid  # from NeatURL
+bing.com$removeparam=form  # from NeatURL
+bing.com$removeparam=pq  # from NeatURL
+bing.com$removeparam=qs  # from NeatURL
+bing.com$removeparam=sc  # from NeatURL
+bing.com$removeparam=sk  # from NeatURL
+bing.com$removeparam=sp  # from NeatURL
 
-! Adguard rules
-||digikey.com^$removeparam=/^mkt_tok/
-||digikey.com^$removeparam=/^utm_cid/
+! blocked entirely, just for information
+!cyber-ad01.cc$removeparam=ip  # from Adguard
 
 ||discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
 
-! See google URL parameters in google file
+! blocked entirely, just for information
+||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
 
-hh.ru$removeparam=|source|from|hhtmFrom
-hh.ru$removeparam=requestId
-hh.ru$removeparam=totalVacancies
-hh.ru$removeparam=position
-hh.ru$removeparam=targetingParams
+facebook.com$removeparam=hrc  # Facebook  # from NeatURL
+facebook.com$removeparam=refsrc  # Facebook  # from NeatURL
+
+! blocked entirely, just for information
+||hit.gemius.pl/hitredir$removeparam=id  # from Adguard
+||hit.gemius.pl/hitredir$removeparam=extra  # from Adguard
+
+! I am not sure, is it safe to modify these google rules. So they mostly are as is here.
+! Too lazy to test it out, sorry :-) Maybe, sometimes.
+! Also, there is one global google rule from NeatURL, see above
+google.*/search$removeparam=aqs  # from Adguard
+    ! ||www.google.*/search?$removeparam=aqs  # from Ru AdList
+||www.google.*/search?$removeparam=authuser  # from Ru AdList
+google.*/search$removeparam=bih  # from Adguard
+    ! ||www.google.*/search?$removeparam=bih  # from Ru AdList
+google.*/search$removeparam=biw  # from Adguard
+    ! ||www.google.*/search?$removeparam=biw  # from Ru AdList
+||www.google.*/search?client=$removeparam=client  # from Ru AdList
+||www.google.*/search?$removeparam=cshid  # from Ru AdList
+||www.google.*/search?$removeparam=dpr  # from Ru AdList
+google.*$removeparam=ei  # from NeatURL
+    ! google.*/search$removeparam=ei  # from Adguard
+    ! ||www.google.*/search?$removeparam=ei  # from Ru AdList
+google.*$removeparam=gws_rd  # from NeatURL
+google.*$removeparam=gs_gbg  # from NeatURL
+google.*$removeparam=gs_lcp  # from NeatURL
+    ! google.*/search$removeparam=gs_lcp  # from Adguard
+    ! ||www.google.*/search?$removeparam=gs_lcp  # from Ru AdList
+google.*$removeparam=gs_mss  # from NeatURL
+google.*$removeparam=gs_rn  # from NeatURL
+||www.google.*/search?$removeparam=gs_ssp  # from Ru AdList
+||www.google.*/search?$removeparam=hl  # from Ru AdList
+||www.google.*/search?$removeparam=ie  # from Ru AdList
+||www.google.*/search?$removeparam=iflsig  # from Ru AdList
+||www.google.*/search?$removeparam=newwindow  # from Ru AdList
+||www.google.*/search?$removeparam=oq  # from Ru AdList
+google.*/search$removeparam=sa  # from Adguard
+    ! ||www.google.*/search?$removeparam=sa  # from Ru AdList
+||www.google.*/search?$removeparam=sclient  # from Ru AdList
+google.*$removeparam=sei
+google.*/search$removeparam=sourceid  # from Adguard
+    ! ||www.google.*/search?$removeparam=sourceid  # from Ru AdList
+||www.google.*/search?$removeparam=uact  # from Ru AdList
+google.*$removeparam=ved
+    ! ||www.google.*/search?$removeparam=ved  # from Ru AdList
+google.*/websearch$removeparam=visit_id  # from Adguard
+
 hh.ru$removeparam=hhtmFrom
 hh.ru$removeparam=hhtmFromLabel
+hh.ru$removeparam=position
+hh.ru$removeparam=requestId
 hh.ru$removeparam=sent_date
+hh.ru$removeparam=targetingParams
+hh.ru$removeparam=totalVacancies
+
+! blocked entirely, just for information
+!iqbroker.com$removeparam=afftrack  # from Adguard
 
 $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 ?dl=$xhr,removeparam=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+
+! blocked entirely, just for information
+||cc.loginfra.com/cc$removeparam=a  # from Adguard
+||cc.loginfra.com/cc$removeparam=bw  # from Adguard
+||cc.loginfra.com/cc$removeparam=px  # from Adguard
+||cc.loginfra.com/cc$removeparam=py  # from Adguard
+||cc.loginfra.com/cc$removeparam=sx  # from Adguard
+||cc.loginfra.com/cc$removeparam=sy  # from Adguard
+||cc.loginfra.com/cc$removeparam=nsc  # from Adguard
 
 ! only works when extensions.webextensions.restrictedDomains is edited in about:config
 ! test URL: https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct
@@ -99,17 +712,17 @@ mvideo.ru$removeparam=reff
 
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
-rbc.ru$removeparam=from
+! blocked entirely, just for information
+rakuten.co.jp$removeparam=scid  # from Adguard
+
 
 ||ria.ru$removeparam=|rcmd_alg|rcmd_id
-
-||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 
 #sevenforums.com$removeparam=__cf_chl_jschl_tk__  # don`t, it seems, it is "DDoS protection by Cloudflare" param
 
 ||sourceforge.net$removeparam=|source|position  # from NeatURL
 
-tinkoff.ru$removeparam=dsp_click_id
+! See taobao rules in aliexpress file
 
 ||tweakers.net$removeparam=|nb|u  # from https://github.com/Smile4ever/Neat-URL
 
@@ -125,35 +738,53 @@ udemy.com$removeparam=referralCode
 
 ||yandex.ru/player/*autoplay=$subdocument,removeparam=|  # from Ru AdList
 ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck!
+||yandex.*/news/$removeparam=persistent_id  # from Adguard
+||yandex.*/sport/$removeparam=persistent_id  # from Adguard
+||yandex.*/news/$removeparam=msid  # from Adguard
+||yandex.*/sport/$removeparam=msid  # from Adguard
+||yandex.*/news/$removeparam=mlid  # from Adguard
+||yandex.*/sport/$removeparam=mlid  # from Adguard
+||yandex.*/news/$removeparam=stid  # from Adguard
+||yandex.*/sport/$removeparam=stid  # from Adguard
+||yandex.*/images/$removeparam=source-serpid  # from Adguard
 
-||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
 ||youtube.com$removeparam=|feature  # from NeatURL
-||youtube.com^*gclid*$removeparam=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467  # also it is found indepedently and presents in NeatURL. Very popular parameter.
+    ! unusual Ru AdList form:
+    ! &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com  # from Ru AdList
 ||youtube.com$removeparam=|kw  # from NeatURL
 ||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|  # from Ru AdList
-
-||zeit.de$removeparam=|wt_zmc  # from NeatURL, modified. Originally it was global rule
 
 ||zr.ru$removeparam=|internal_visits  # found independently
 
 !! todo
 
-! from Adguard. Todo: recheck.
-!@@||auto-swiat.pl/*&srcc=ucs$removeparam
-!@@||komputerswiat.pl/*&srcc=ucs$removeparam
-!@@||lanacion.com.ar/*module$removeparam=utm_source
-!@@||noizz.pl/*&srcc=ucs$removeparam
-!@@||plejada.pl/*&srcc=ucs$removeparam
-!@@||medonet.pl/*&srcc=ucs$removeparam
-!@@||businessinsider.com.pl/*&srcc=ucs$removeparam
-!@@||t.send.vt.edu/r/?id=$removeparam=utm_source
-!@@||t.send.vt.edu/r/?id=$removeparam=utm_medium
-!@@||t.send.vt.edu/r/?id=$removeparam=utm_campaign
-!@@||onet.pl/?utm_source=$removeparam
+!  Polish exclusions from Adguard. I don't care much, just for information
+!@@||auto-swiat.pl/*&srcc=ucs$removeparam  # from Adguard
+!@@||businessinsider.com.pl/*&srcc=ucs$removeparam  # from Adguard
+!@@||fakt.pl/*&srcc=ucs$removeparam  # from Adguard  # from Adguard
+!@@||komputerswiat.pl/*&srcc=ucs$removeparam  # from Adguard
+!@@||medonet.pl/*&srcc=ucs$removeparam  # from Adguard
+!@@||noizz.pl/*&srcc=ucs$removeparam  # from Adguard
+!@@||plejada.pl/*&srcc=ucs$removeparam  # from Adguard
+!@@||przegladsportowy.pl/*&srcc=ucs$removeparam  # from Adguard
+
+! Some other exlusions from Adguard
+@@||tix.axs.com^$removeparam  # from Adguard
+@@/mediaserver/*$removeparam,domain=ramtrucks.com|chrysler.com|fiatusa.com|alfaromeousa.com|jeep.com|dodge.com  # from Adguard
+@@||dkbs.sabio.de/sabio/services/$removeparam  # from Adguard
+@@||img*.nga$removeparam=cmpid  # from Adguard
+@@||mywot.com/*/confirmNewEmail/$removeparam  # from Adguard
+@@/embed/comments^$removeparam,~third-party,domain=avclub.com|clickhole.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|lifehacker.com|splinternews.com|theinventory.com|theonion.com|theroot.com|thetakeout.com|sportskeeda.com  # from Adguard
+@@||urldefense.com^$removeparam  # from Adguard
+@@||cdn.privatehost.com/videos*/$removeparam  # from Adguard
+@@||rightnowtech.com/engagement/api/consumer/nvidia/*/requestEngagement?pool=$removeparam  # from Adguard
+@@||gizmodo.com/embed/comments/$removeparam  # from Adguard
+@@||kotaku.com/embed/comments$removeparam  # from Adguard
+
 
 ! from NeatURL
 !Google Analytics - tracking https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
-!tid, aip, ds, qt, cid, uid, uip, ua, geoid, dr, cn, cs, cm, ck, cc, ci, gclid, dclid, linkid
+!tid, aip, ds, qt, cid, uid, uip, ua, geoid, dr, cn, cs, cm, ck, cc, ci, linkid
 !
 !Google (possibly tracking)
 !    aqs (https://superuser.com/questions/653295/what-is-the-aqs-parameter-in-google-search-query)
@@ -176,22 +807,457 @@ udemy.com$removeparam=referralCode
 !Other parameters you can consider (website unknown)
 !    iid
 !    ijn
-!    ncid
 !    nid
 !    ref_
 
-ozon.ru$removeparam=|asb|asb2|sh
+ozon.ru$removeparam=asb
+ozon.ru$removeparam=asb2
+ozon.ru$removeparam=sh
 
-satom.ru$removeparam=|i
+satom.ru$removeparam=i
 
 ozon.ru$removeparam=_bctx
 ozon.ru$removeparam=advert
 ozon.ru$removeparam=miniapp
 
-3dnews.ru$removeparam=from
-
 hqbabes.com$removeparam=novoref
 
 yandex.ru$removeparam=parent-reqid
 
-pikabu.ru$removeparam=from
+change.org$removeparam=guest  # Campaign tracking (Change.org)  # from NeatURL
+change.org$removeparam=recruited_by_id  # Campaign tracking (Change.org)  # from NeatURL
+change.org$removeparam=recruiter  # Campaign tracking (Change.org)  # from NeatURL
+change.org$removeparam=short_display_name  # Campaign tracking (Change.org)  # from NeatURL
+change.org$removeparam=source_location  # Campaign tracking (Change.org)  # from NeatURL
+
+ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
+ebay.*$removeparam=campid  # from Adguard
+ebay.*$removeparam=hash  # from NeatURL
+ebay.*$removeparam=epid  # from NeatURL
+ebay.*$removeparam=mkrid  # from Adguard
+ebay.*$removeparam=_trkparms  # from NeatURL and Adguard
+ebay.*$removeparam=_trksid  # from NeatURL and Adguard
+ebay.*$removeparam=var  # from NeatURL
+
+etsy.com$removeparam=click_key  # from NeatURL
+etsy.com$removeparam=click_sum  # from NeatURL
+etsy.com$removeparam=organic_search_click  # from NeatURL
+
+imdb.com$removeparam=/pf_rd_.*/  # from NeatURL
+
+linkedin.com$removeparam=eBP  # from NeatURL
+linkedin.com$removeparam=lgCta  # from NeatURL
+linkedin.com$removeparam=lgTemp  # from NeatURL
+linkedin.com$removeparam=lipi  # from NeatURL
+linkedin.com$removeparam=midSig  # from NeatURL
+linkedin.com$removeparam=midToken  # from NeatURL
+linkedin.com$removeparam=recommendedFlavor  # from NeatURL
+linkedin.com$removeparam=refId  # from NeatURL
+linkedin.com$removeparam=trackingId  # from NeatURL
+
+sourceforge.net$removeparam=position  # from NeatURL
+
+spotify.com$removeparam=context  # from NeatURL
+spotify.com$removeparam=si  # from NeatURL
+
+tiktok.com$removeparam=checksum  # from NeatURL
+tiktok.com$removeparam=_d  # from NeatURL
+tiktok.com$removeparam=is_copy_url  # from NeatURL
+tiktok.com$removeparam=is_from_webapp  # from NeatURL
+tiktok.com$removeparam=language  # from NeatURL
+tiktok.com$removeparam=preview_pb  # from NeatURL
+tiktok.com$removeparam=sec_user_id  # from NeatURL
+tiktok.com$removeparam=sender_device  # from NeatURL
+tiktok.com$removeparam=sender_web_id  # from NeatURL
+tiktok.com$removeparam=timestamp  # from NeatURL
+tiktok.com$removeparam=tt_from  # from NeatURL and Adguard
+tiktok.com$removeparam=u_code  # from NeatURL
+tiktok.com$removeparam=user_id  # from NeatURL
+
+twitter.com$removeparam=cxt  # from NeatURL
+twitter.com$removeparam=s  # from NeatURL
+twitter.com$removeparam=t  # from NeatURL
+
+yandex.*$removeparam=lr  # from NeatURL
+yandex.*$removeparam=lrredircnt  # from NeatURL
+
+youtube.com$removeparam=feature  # from NeatURL
+youtube.com$removeparam=kw  # from NeatURL
+
+||alexa.com/data/$xmlhttprequest,removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/
+
+trendyol.com$removeparam=tyutm_medium  # from Adguard
+trendyol.com$removeparam=tyutm_source  # from Adguard
+
+cxense.com$removeparam=/^cx_/  # from Adguard
+cxense.com$removeparam=/^pickup_list_click/  # from Adguard
+
+jasonsavard.com$removeparam=cUrl  # from Adguard: jasonsavard.com$removeparam=/cUrl|ref/
+
+tinkoff.ru$removeparam=mindbox-click-id  # from Adguard
+
+msn.com$removeparam=pc  # from Adguard
+
+yahoo.*$removeparam=code  # from Adguard
+yahoo.*$removeparam=fr  # from Adguard
+
+agoda.com$removeparam=tag  # from Adguard
+
+nikkei.com$removeparam=i_cid  # from Adguard
+nikkei.com$removeparam=n_cid  # from Adguard
+nikkeibp.co.jp$removeparam=i_cid  # from Adguard
+
+reddit.app.link$removeparam=adblock  # from Adguard
+reddit.app.link$removeparam=compact_view  # from Adguard
+reddit.app.link$removeparam=dnt  # from Adguard
+reddit.app.link$removeparam=geoip_country  # from Adguard
+
+||weibo.*^$removeparam=dt_dapp  # from Adguard
+||weibo.*^$removeparam=weibo_id  # from Adguard
+
+microsoft.com$removeparam=ranEAID  # from Adguard
+microsoft.com$removeparam=ranSiteID  # from Adguard
+microsoft.com$removeparam=tduid  # from Adguard
+$removeparam=epi,domain=microsoft.com|xbox.com  # from Adguard
+
+zerkalo.io$removeparam=tg  # from Adguard
+zerkalo.io$removeparam=vk  # from Adguard
+
+hepsiburada.com$removeparam=af_ad  # from Adguard
+hepsiburada.com$removeparam=af_adset  # from Adguard
+hepsiburada.com$removeparam=af_force_deeplink  # from Adguard
+hepsiburada.com$removeparam=c  # from Adguard
+hepsiburada.com$removeparam=is_retargeting  # from Adguard
+hepsiburada.com$removeparam=pid  # from Adguard
+hepsiburada.com$removeparam=shortlink  # from Adguard
+
+dmm.co.jp$removeparam=dmmref  # from Adguard
+dmm.co.jp$removeparam=i3_ord  # from Adguard
+dmm.co.jp$removeparam=i3_ref  # from Adguard
+
+reddit.com$removeparam=correlation_id  # from Adguard
+reddit.com$removeparam=post_fullname  # from Adguard
+
+alternate.de$removeparam=partner  # from Adguard
+
+galaxus.de$removeparam=pcscpId  # from Adguard
+
+marketing.net.idealo-partner.com$removeparam=amc  # from Adguard
+
+lidl.de$removeparam=msktc  # from Adguard
+
+otto.de$removeparam=ActionID  # from Adguard
+
+otto.de$removeparam=campid  # from Adguard
+
+pricezilla.de$removeparam=bid  # from Adguard
+
+marketing.net.idealo-partner.com$removeparam=smc2  # from Adguard
+marketing.net.idealo-partner.com$removeparam=smc5  # from Adguard
+
+||idealo.de/*.html$removeparam=offerKey  # from Adguard
+||idealo.de/*.html$removeparam=offerListId  # from Adguard
+
+mp.weixin.qq.com$removeparam=chksm  # from Adguard
+mp.weixin.qq.com$removeparam=key  # from Adguard
+mp.weixin.qq.com$removeparam=devicetype  # from Adguard
+mp.weixin.qq.com$removeparam=exportkey  # from Adguard
+mp.weixin.qq.com$removeparam=mpshare  # from Adguard
+mp.weixin.qq.com$removeparam=nettype  # from Adguard
+mp.weixin.qq.com$removeparam=scene  # from Adguard
+mp.weixin.qq.com$removeparam=srcid  # from Adguard
+mp.weixin.qq.com$removeparam=uin  # from Adguard
+
+cam4.com$removeparam=act  # from Adguard
+cam4.com$removeparam=showSignupPopup  # from Adguard
+cam4.com$removeparam=suid  # from Adguard
+
+marktjagd.de$removeparam=client  # from Adguard
+
+kaspersky.com$removeparam=icid  # from Adguard
+
+coursera.org$removeparam=siteID  # from Adguard
+
+editor.flixier.com$removeparam=/fx_(source|medium)/  # from Adguard: editor.flixier.com$removeparam=/fx_(source|medium|campaign)/
+
+$removeparam=l-id,domain=nikki.ne.jp|rebates.jp  # from Adguard: $removeparam=l-id,domain=nikki.ne.jp|rakuten.co.jp|rebates.jp
+
+dmkt-sp.jp$removeparam=impressionId  # from Adguard
+
+kitbag.com$removeparam=ab  # from Adguard
+kitbag.com$removeparam=_ref  # from Adguard
+
+# from Adguard (sic!): $removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
+adguard.com$removeparam=aid  # from Adguard
+adguard-dns.com$removeparam=aid  # from Adguard
+adguard-vpn.com$removeparam=aid  # from Adguard
+
+||web.vstat.info$removeparam=guid  # from Adguard
+||web.vstat.info$removeparam=user_agent  # from Adguard
+
+mail.ru$removeparam=oprtrack  # from Adguard
+
+nordvpn.com$removeparam=data1  # from Adguard
+
+start.pm.by$removeparam=adtag  # from Adguard
+
+wuzhuiso.com$removeparam=src  # from Adguard
+
+redhotpawn.com$removeparam=cbqsid  # from Adguard
+
+comodo.com$removeparam=af  # from Adguard
+comodo.com$removeparam=track  # from Adguard
+
+dengekionline.com$removeparam=osusume_banner  # from Adguard
+
+coupang.com$removeparam=traceid  # from Adguard
+coupang.com$removeparam=wPcid  # from Adguard
+coupang.com$removeparam=wRef  # from Adguard
+coupang.com$removeparam=wTime  # from Adguard
+
+||lcs.naver.com/m?u=$removeparam=bh  # from Adguard
+naver.com$removeparam=bw  # from Adguard
+    ! ||lcs.naver.com/m?u=$removeparam=bw  # from Adguard
+    ! ||cc.naver.com/cc?a$removeparam=bw  # from Adguard
+||lcs.naver.com/m?u=$removeparam=domComplete  # from Adguard
+||lcs.naver.com/m?u=$removeparam=domContentLoadedEventEnd  # from Adguard
+||lcs.naver.com/m?u=$removeparam=domContentLoadedEventStart  # from Adguard
+||lcs.naver.com/m?u=$removeparam=domInteractive  # from Adguard
+||lcs.naver.com/m?u=$removeparam=domLoading  # from Adguard
+||lcs.naver.com/m?u=$removeparam=ln  # from Adguard
+||lcs.naver.com/m?u=$removeparam=loadEventEnd  # from Adguard
+||lcs.naver.com/m?u=$removeparam=loadEventStart  # from Adguard
+||lcs.naver.com/m?u=$removeparam=ls  # from Adguard
+||lcs.naver.com/m?u=$removeparam=navigationStart  # from Adguard
+||lcs.naver.com/m?u=$removeparam=os  # from Adguard
+||lcs.naver.com/m?u=$removeparam=pid  # from Adguard
+||cc.naver.com/cc?a$removeparam=px  # from Adguard
+||cc.naver.com/cc?a$removeparam=py  # from Adguard
+||lcs.naver.com/m?u=$removeparam=requestStart  # from Adguard
+||lcs.naver.com/m?u=$removeparam=responseEnd  # from Adguard
+||lcs.naver.com/m?u=$removeparam=responseStart  # from Adguard
+||lcs.naver.com/m?u=$removeparam=sr  # from Adguard
+||cc.naver.com/cc?a$removeparam=sx  # from Adguard
+||cc.naver.com/cc?a$removeparam=sy  # from Adguard
+||search.naver.com/search.naver$removeparam=tqi  # from Adguard
+||lcs.naver.com/m?u=$removeparam=ts  # from Adguard
+
+get.adobe.com$removeparam=browser_type  # from Adguard
+get.adobe.com$removeparam=browser_dist  # from Adguard
+get.adobe.com$removeparam=type  # from Adguard
+get.adobe.com$removeparam=workflow  # from Adguard
+get.adobe.com$removeparam=TRILIBIS_EMULATOR_UA  # from Adguard
+
+5-delivery.ru$removeparam=c  # from Adguard
+5-delivery.ru$removeparam=pid  # from Adguard
+
+||xplosion.de/ctx?event_id=$removeparam  # from Adguard
+
+||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=ads_params  # from Adguard
+||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=origin  # from Adguard
+
+mvideo.ru$removeparam=/^_requestid=/  # from Adguard: mvideo.ru$removeparam=/^(_requestid|reff)=/
+
+visit.digidip.net$removeparam=/^(ppref|pid)=/  # from Adguard: visit.digidip.net$removeparam=/^(ppref|ref|pid)=/
+
+||alza.de/*.htm$removeparam=kampan  # from Adguard
+
+web.de$removeparam=mc  # from Adguard
+
+mag2.com$removeparam=trflg  # from Adguard
+
+dailymail.co.uk$removeparam=ito  # from Adguard
+
+hepsiburada.com$removeparam=wt_af  # from Adguard
+
+mioga.de$removeparam=pl  # from Adguard
+
+||web.de/logoutlounge$removeparam=p  # from Adguard
+
+||gmx.*^$removeparam=mc  # from Adguard
+||gmx.*/logoutlounge$removeparam=p  # from Adguard
+||lotto.gmx.*^$removeparam=advertisementId  # from Adguard
+||lotto.gmx.*^$removeparam=partnerId  # from Adguard
+
+||app.mi.com/download/*?id=$removeparam=appClientId  # from Adguard
+||app.mi.com/download/*?id=$removeparam=appSignature  # from Adguard
+||app.mi.com/download/*?id=$removeparam=nonce  # from Adguard
+
+cod.bitrec.com/topocentras-services/js/recs?$removeparam=externalVisitorId  # from Adguard
+cod.bitrec.com/topocentras-services/js/recs?$removeparam=r  # from Adguard
+cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adguard
+
+baidu.com/link?url=$removeparam=eqid  # from Adguard
+baidu.com$removeparam=rsv_pq  # from Adguard
+baidu.com$removeparam=rsv_t  # from Adguard
+
+||daraz.*$removeparam=/keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
+
+lotto.web.de$removeparam=advertisementId  # from Adguard
+lotto.web.de$removeparam=partnerId  # from Adguard
+
+||shopping.gmx.*^$removeparam=origin  # from Adguard
+
+shopping.web.de$removeparam=origin  # from Adguard
+
+||media01.eu/set.aspx$removeparam=trackid  # from Adguard
+
+nytimes.com$removeparam=impression_id  # from Adguard
+
+rakuten.co.jp*&trflg=$removeparam=trflg  # from Adguard
+
+||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com  # from Adguard
+
+nicovideo.jp$removeparam=cmnhd_ref  # from Adguard
+
+instagram.com$removeparam=igshid  # from Adguard
+
+$removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com  # from Adguard
+
+mediamarkt.com.tr$removeparam=rbtc  # from Adguard
+
+t.myvisualiq.net$removeparam=~red  # from Adguard
+
+express.de$removeparam=cb  # from Adguard
+
+ksta.de$removeparam=cb  # from Adguard
+
+$removeparam=a_aid,domain=expressvpn.com|vpnarea.com  # from Adguard
+
+||hog.*^$removeparam=ad  # from Adguard
+
+infoq.com$removeparam=/topicPageSponsorship|^itm_/  # from Adguard
+
+coupondunia.in$removeparam=itm_source  # from Adguard
+
+adshares.net$removeparam=cid  # from Adguard
+
+cht.com.tw$removeparam=Identifier  # from Adguard
+
+kohls.com$removeparam=CID  # from Adguard
+
+euronews.com$removeparam=_ope  # from Adguard
+
+azby.fmworld.net$removeparam=mc_pc  # from Adguard
+
+link.coupang.com$removeparam=lptag  # from Adguard
+
+$removeparam=dt_dapp,domain=douban.com|163.com  # from Adguard
+
+douban.com$removeparam=dt_platform  # from Adguard
+
+weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$removeparam=/distributorid|wfr|ifr|share_relation/
+
+wuzhuiso.com$removeparam=src  # from uBlock filters
+
+zhihu.com$removeparam=hybrid_search_extra  # from uBlock filters
+zhihu.com$removeparam=hybrid_search_source  # from uBlock filters
+
+sextgem.com$removeparam=id  # from uBlock filters
+
+||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xhr,domain=tvnz.co.nz  # from uBlock filters
+||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xmlhttprequest,domain=tvnz.co.nz  # from Adguard
+||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,domain=tvnz.co.nz  # from Adguard
+||brightcovecdn.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xhr,domain=tvnz.co.nz  # from uBlock filters
+
+! unusual Ru AdList form:
+$document,removeparam=fm,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=fr,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=frm,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=hasnavig,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=sbmt,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=src,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=test_id,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=us,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=ushq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=usln,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=usqid,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=usstr,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=ustq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+
+nnm-club.lib$removeparam=sid  # from Ru AdList, modified
+nnm-club.me$removeparam=sid  # from Ru AdList, modified
+nnmclub.ro$removeparam=sid  # from Ru AdList, modified
+nnmclub.to$removeparam=sid  # from Ru AdList, modified
+    ! unusual Ru AdList form:
+    ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
+
+rutor.in$removeparam=sid  # from Ru AdList, modified
+    ! unusual Ru AdList form:
+    ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
+
+||player.octivid.com/*/video?*&autoplay=$removeparam=autoplay,domain=kooora.com  # from Adguard
+||player.octivid.com/*/video?*&custom_ads=$removeparam=custom_ads,domain=kooora.com  # from Adguard
+
+dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
+
+||api.discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/,domain=hgtv.com  # from Adguard
+
+||vcms-api*.starlight.digital/hls/*?file=*&testadv=$removeparam=testadv  # from Adguard
+
+facebook.com*/?hc_ref$removeparam=|,domain=facebook.com  # from Ru AdList
+facebook.com*/?ref=$removeparam=|,domain=facebook.com  # from Ru AdList
+
+||finance.ua/*?mpl=$document,removeparam=|,domain=finance.ua  # from Ru AdList
+
+||imdb.com/*pf_rd_$document,removeparam=|pf_rd_,domain=imdb.com  # from Ru AdList
+
+||imdb.com/*ref_=$document,removeparam=|ref,domain=imdb.com  # from Ru AdList
+
+mail.ru*exp_id=$document,removeparam=|,domain=mail.ru  # from Ru AdList
+
+||yandex.*/news*msid$document,removeparam=|,domain=yandex.*  # from Ru AdList
+
+ykt.ru$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru  # from Ru AdList
+
+sportmail.ru*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
+
+/*purchase-referrer=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+
+rambler.ru$removeparam=readmore  # from Ru AdList, modified
+    ! unusual Ru AdList form:
+    ! /?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru  # from Ru AdList
+
+||yandex.*/story/$removeparam=|  # from Ru AdList, modified
+    ! unusual Ru AdList form:
+    /story/*?lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+
+rambler.ru$removeparam=block_click  # from Ru AdList, modified
+    ! block_click=$removeparam=block_click,domain=rambler.ru  # from Ru AdList
+
+mail.ru$removeparam=smotri_id  # from Ru AdList, modified
+    ! smotri_id=$document,removeparam=|smotri_id,domain=mail.ru  # from Ru AdList
+
+ria.com$removeparam=r_audience  # from Ru AdList, modified
+    ! ?*r_audience=$document,removeparam=|,domain=ria.com  # from Ru AdList
+
+ria.com$removeparam=commercial  # from Ru AdList, modified
+    ! ?commercial=$document,removeparam=|,domain=ria.com  # from Ru AdList
+
+zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
+    ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
+
+market.yandex.*$removeparam=cpc  # from Ru AdList, modified
+    ! ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+
+sports.ru$removeparam=e  # from Ru AdList, modified
+    ! ?e=lfm$document,removeparam=|,domain=sports.ru  # from Ru AdList
+
+market.yandex.*$removeparam=nid  # from Ru AdList, modified
+    ! ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+
+market.yandex.*$removeparam=pokupki  # from Ru AdList, modified
+    ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+
+maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
+    ! ?previewToken=$document,removeparam=|,domain=maximonline.ru  # from Ru AdList
+
+ria.ru$removeparam=rcmd_  # from Ru AdList, modified
+    ! ?rcmd_$document,removeparam=|rcmd_,domain=ria.ru  # from Ru AdList
+
+youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
+    ! ?sub_confirmation=1$document,removeparam=|,domain=youtube.com  # from Ru AdList
+
+3dnews.ru$removeparam=topblock  # from Ru AdList, modified
+    ! ?topblock$document,removeparam=|,domain=3dnews.ru  # from Ru AdList
+
