@@ -751,11 +751,14 @@ udemy.com$removeparam=referralCode
 ||yandex.*/sport/$removeparam=stid  # from Adguard
 ||yandex.*/images/$removeparam=source-serpid  # from Adguard
 
-||youtube.com$removeparam=|feature  # from NeatURL
+youtube.com$removeparam=autoplay
+    ! ||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|  # from Ru AdList
+youtube.com$removeparam=feature  # from NeatURL
     ! unusual Ru AdList form:
     ! &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com  # from Ru AdList
-||youtube.com$removeparam=|kw  # from NeatURL
-||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|  # from Ru AdList
+youtube.com$removeparam=kw  # from NeatURL
+youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
+    ! ?sub_confirmation=1$document,removeparam=|,domain=youtube.com  # from Ru AdList
 
 ||zr.ru$removeparam=|internal_visits  # found independently
 
@@ -882,9 +885,6 @@ twitter.com$removeparam=t  # from NeatURL
 
 yandex.*$removeparam=lr  # from NeatURL
 yandex.*$removeparam=lrredircnt  # from NeatURL
-
-youtube.com$removeparam=feature  # from NeatURL
-youtube.com$removeparam=kw  # from NeatURL
 
 ||alexa.com/data/$xmlhttprequest,removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/
 
@@ -1256,7 +1256,4 @@ maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
 
 ria.ru$removeparam=rcmd_  # from Ru AdList, modified
     ! ?rcmd_$document,removeparam=|rcmd_,domain=ria.ru  # from Ru AdList
-
-youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
-    ! ?sub_confirmation=1$document,removeparam=|,domain=youtube.com  # from Ru AdList
 
