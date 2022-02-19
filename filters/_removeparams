@@ -346,6 +346,7 @@ $removeparam=/referer/
     ! ||linkedin.com/authwall?$removeparam=originalReferer  # from Adguard
     ! reddit.com$removeparam=_branch_referrer  # from Adguard
     ! ?referrer_block=$document,removeparam=|referrer_,domain=mail.ru|sportmail.ru  # from Ru AdList
+    ! /*purchase-referrer=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 
 $removeparam=ruid  # from Ru AdList, modified
     ! RBC network tracking. Better to make general rule for their future projects
@@ -774,17 +775,35 @@ udemy.com$removeparam=referralCode
 
 ||wildberries.ru$removeparam=|targetUrl
 
-||yandex.ru/player/*autoplay=$subdocument,removeparam=|  # from Ru AdList
 ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck!
-||yandex.*/news/$removeparam=persistent_id  # from Adguard
-||yandex.*/sport/$removeparam=persistent_id  # from Adguard
-||yandex.*/news/$removeparam=msid  # from Adguard
-||yandex.*/sport/$removeparam=msid  # from Adguard
-||yandex.*/news/$removeparam=mlid  # from Adguard
-||yandex.*/sport/$removeparam=mlid  # from Adguard
-||yandex.*/news/$removeparam=stid  # from Adguard
-||yandex.*/sport/$removeparam=stid  # from Adguard
-||yandex.*/images/$removeparam=source-serpid  # from Adguard
+||yandex.ru/player/$removeparam=autoplay  # from Ru AdList, modified
+    ! ||yandex.ru/player/*autoplay=$subdocument,removeparam=|  # from Ru AdList
+zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
+    ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
+market.yandex.*$removeparam=cpc  # from Ru AdList, modified
+    ! ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+||yandex.*/story/$removeparam=lang  # from Ru AdList, modified
+    ! unusual Ru AdList form:
+    /story/*?lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+yandex.*$removeparam=mlid  # from Adguard, modified
+    ! ||yandex.*/news/$removeparam=mlid  # from Adguard
+    ! ||yandex.*/sport/$removeparam=mlid  # from Adguard
+yandex.*$removeparam=msid
+    ! ||yandex.*/news/$removeparam=msid  # from Adguard
+    ! ||yandex.*/news*msid$document,removeparam=|,domain=yandex.*  # from Ru AdList
+    ! ||yandex.*/sport/$removeparam=msid  # from Adguard
+market.yandex.*$removeparam=nid  # from Ru AdList, modified
+    ! ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+yandex.*$removeparam=persistent_id  # from Adguard, modified
+    ! ||yandex.*/news/$removeparam=persistent_id  # from Adguard
+    ! ||yandex.*/sport/$removeparam=persistent_id  # from Adguard
+market.yandex.*$removeparam=pokupki  # from Ru AdList, modified
+    ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+yandex.*$removeparam=stid  # from Adguard, modified
+    ! ||yandex.*/news/$removeparam=stid  # from Adguard
+    ! ||yandex.*/sport/$removeparam=stid  # from Adguard
+yandex.*$removeparam=source-serpid  # from Adguard
+    ! ||yandex.*/images/$removeparam=source-serpid  # from Adguard
 
 youtube.com$removeparam=autoplay
     ! ||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|  # from Ru AdList
@@ -1215,21 +1234,13 @@ facebook.com*/?ref=$removeparam=|,domain=facebook.com  # from Ru AdList
 
 mail.ru*exp_id=$document,removeparam=|,domain=mail.ru  # from Ru AdList
 
-||yandex.*/news*msid$document,removeparam=|,domain=yandex.*  # from Ru AdList
-
 ykt.ru$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru  # from Ru AdList
 
 sportmail.ru*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
 
-/*purchase-referrer=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
-
 rambler.ru$removeparam=readmore  # from Ru AdList, modified
     ! unusual Ru AdList form:
     ! /?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru  # from Ru AdList
-
-||yandex.*/story/$removeparam=|  # from Ru AdList, modified
-    ! unusual Ru AdList form:
-    /story/*?lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
 
 mail.ru$removeparam=smotri_id  # from Ru AdList, modified
     ! smotri_id=$document,removeparam=|smotri_id,domain=mail.ru  # from Ru AdList
@@ -1240,17 +1251,5 @@ ria.com$removeparam=r_audience  # from Ru AdList, modified
 ria.com$removeparam=commercial  # from Ru AdList, modified
     ! ?commercial=$document,removeparam=|,domain=ria.com  # from Ru AdList
 
-zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
-    ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
-
-market.yandex.*$removeparam=cpc  # from Ru AdList, modified
-    ! ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
-
 sports.ru$removeparam=e  # from Ru AdList, modified
     ! ?e=lfm$document,removeparam=|,domain=sports.ru  # from Ru AdList
-
-market.yandex.*$removeparam=nid  # from Ru AdList, modified
-    ! ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
-
-market.yandex.*$removeparam=pokupki  # from Ru AdList, modified
-    ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
