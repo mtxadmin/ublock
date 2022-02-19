@@ -712,6 +712,9 @@ location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https
 ||cc.loginfra.com/cc$removeparam=sy  # from Adguard
 ||cc.loginfra.com/cc$removeparam=nsc  # from Adguard
 
+maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
+    ! ?previewToken=$document,removeparam=|,domain=maximonline.ru  # from Ru AdList
+
 ! only works when extensions.webextensions.restrictedDomains is edited in about:config
 ! test URL: https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct
 # from NeatURL
@@ -726,7 +729,12 @@ mvideo.ru$removeparam=reff
 ! blocked entirely, just for information
 rakuten.co.jp$removeparam=scid  # from Adguard
 
-||ria.ru$removeparam=|rcmd_alg|rcmd_id
+rambler.ru$removeparam=block_click  # from Ru AdList, modified
+    ! block_click=$removeparam=block_click,domain=rambler.ru  # from Ru AdList
+
+ria.ru$removeparam=/^rcmd_/
+    ! ria.ru$removeparam=|rcmd_alg|rcmd_id
+    ! ?rcmd_$document,removeparam=|rcmd_,domain=ria.ru  # from Ru AdList
 
 satom.ru$removeparam=i
 
@@ -1223,9 +1231,6 @@ rambler.ru$removeparam=readmore  # from Ru AdList, modified
     ! unusual Ru AdList form:
     /story/*?lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
 
-rambler.ru$removeparam=block_click  # from Ru AdList, modified
-    ! block_click=$removeparam=block_click,domain=rambler.ru  # from Ru AdList
-
 mail.ru$removeparam=smotri_id  # from Ru AdList, modified
     ! smotri_id=$document,removeparam=|smotri_id,domain=mail.ru  # from Ru AdList
 
@@ -1249,10 +1254,3 @@ market.yandex.*$removeparam=nid  # from Ru AdList, modified
 
 market.yandex.*$removeparam=pokupki  # from Ru AdList, modified
     ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
-
-maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
-    ! ?previewToken=$document,removeparam=|,domain=maximonline.ru  # from Ru AdList
-
-ria.ru$removeparam=rcmd_  # from Ru AdList, modified
-    ! ?rcmd_$document,removeparam=|rcmd_,domain=ria.ru  # from Ru AdList
-
