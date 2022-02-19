@@ -12,25 +12,21 @@
 aliexpress.com$removeparam=|ad_pvid
 aliexpress.ru$removeparam=|ad_pvid
 
-! is in NeatURL. Confirmed by months of testing.
-aliexpress.com$removeparam=|aff_platform
-aliexpress.ru$removeparam=|aff_platform
-
-! is in NeatURL. Confirmed by months of testing.
-aliexpress.com$removeparam=|aff_trace_key
-aliexpress.ru$removeparam=|aff_trace_key
+! See aff_ parameters in _removeparams
 
 ! Found independently.
 aliexpress.com$removeparam=|algo_exp_id
 aliexpress.ru$removeparam=|algo_exp_id
 
-! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=|algo_pvid
-aliexpress.ru$removeparam=|algo_pvid
-
-! Found independently. Confirmed by months of testing.
+! Found independently. Confirmed by months of testing. Now it is in NeatURL too
 aliexpress.com$removeparam=|algo_expid
 aliexpress.ru$removeparam=|algo_expid
+
+! Found independently. Confirmed by months of testing. Now it is in NeatURL too
+aliexpress.com$removeparam=|algo_pvid
+aliexpress.ru$removeparam=|algo_pvid
+    ! Later: unusual form from Ru AdList
+    ! algo_pvid=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
 
 !aliexpress.com$removeparam=|appKey - don't, it breaks related search
 
@@ -38,7 +34,7 @@ aliexpress.ru$removeparam=|algo_expid
 aliexpress.com$removeparam=|browser_id
 aliexpress.ru$removeparam=|browser_id
 
-! Found independently. Confirmed by months of testing.
+! Found independently. Confirmed by months of testing. Now it is in NeatURL too
 aliexpress.com$removeparam=|btsid
 aliexpress.ru$removeparam=|btsid
 
@@ -56,9 +52,13 @@ aliexpress.ru$removeparam=|cv
 
 !aliexpress.com$removeparam=|dl - don't!
 
-! Found independently.
+! Found independently. Also it is in the Adguard
 aliexpress.com$removeparam=|dp
 aliexpress.ru$removeparam=|dp
+
+! from NeatURL (6.0, added here 2022-02). Seems variation of algo_exp_id and algo_expid so it looks logical
+aliexpress.com$removeparam=expid
+aliexpress.ru$removeparam=expid
 
 ! Found independently, earlier than 2021-04. Seems fully working
 aliexpress.com$removeparam=|fromDetail
@@ -75,6 +75,12 @@ aliexpress.ru$removeparam=|gclid
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=|gps-id
 aliexpress.ru$removeparam=|gps-id
+! Later: unusual Ru AdList form (it seems, all the parameters will be removed):
+    ! .html?gps-id=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
+
+! from NeatURL (6.0, added here 2022-02)
+aliexpress.com$removeparam=initiative_id
+aliexpress.ru$removeparam=initiative_id
 
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=|mp
@@ -84,11 +90,24 @@ aliexpress.ru$removeparam=|mp
 aliexpress.com$removeparam=|m_page_id
 aliexpress.ru$removeparam=|m_page_id
 
+aliexpress.com$removeparam=|pdp_ext_f
+aliexpress.ru$removeparam=|pdp_ext_f
+! unusual Ru AdList form (it seems, all the parameters will be removed):
+    !.html?pdp_ext_f=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
+    ! See gps-id above
+
+! Found independently, added 2022-01-11
+aliexpress.com$removeparam=|pdp_pi
+aliexpress.ru$removeparam=|pdp_pi
+
 ! Found independently. Confirmed by months of testing. 
 ! Update: don't, it breaks search filters in category :-(
 ! Update2. Ok, cleaner urls are more important. Removing again.
+! Update3. It turns out Adguard has this rule too.
 aliexpress.com$removeparam=|pvid
 aliexpress.ru$removeparam=|pvid
+! 2022-02: Adguard has this rule also for taobao
+taobao.com$removeparam=pvid  # from Adguard
 
 ! Found independently.
 aliexpress.com$removeparam=|rmsg
@@ -102,31 +121,21 @@ aliexpress.ru$removeparam=|rowan_id1
 aliexpress.com$removeparam=|rowan_msg_id
 aliexpress.ru$removeparam=|rowan_msg_id
 
-! is in NeatURL. Confirmed by months of testing.
-aliexpress.com$removeparam=|scm
-aliexpress.ru$removeparam=|scm
-
-! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=|scm_id
-aliexpress.ru$removeparam=|scm_id
-
-! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=|scm-url
-aliexpress.ru$removeparam=|scm-url
+! from Adguard, added 2022-02
+||aliexpress.$removeparam=sk
 
 ! Found independently, added 2021-05-28
 aliexpress.com$removeparam=sku_id
 aliexpress.ru$removeparam=sku_id
-
-! is in NeatURL. Confirmed by months of testing.
-aliexpress.com$removeparam=|spm
-aliexpress.ru$removeparam=|spm
 
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=|_t
 aliexpress.ru$removeparam=|_t
 
 !aliexpress.com$removeparam=|t - don't, it breaks related search
+
+! from Adguard, added 2022-02
+||aliexpress.$removeparam=terminal_id  # from Adguard
 
 ! Found independently, earlier than 2021-04. Seems fully working
 aliexpress.com$removeparam=|tracelog
@@ -136,7 +145,13 @@ aliexpress.ru$removeparam=|tracelog
 aliexpress.com$removeparam=|ug_edm_item_id
 aliexpress.ru$removeparam=|ug_edm_item_id
 
-! Found independently. Confirmed by months of testing.
+! from Adguard, added 2022-02
+||aliexpress.$removeparam=utparam  # from Adguard
+! Adguard has this rule also for taobao
+taobao.com$removeparam=utparam  # from Adguard
+
+
+! Found independently. Confirmed by months of testing. Now it is in NeatURL too
 aliexpress.com$removeparam=|ws_ab_test
 aliexpress.ru$removeparam=|ws_ab_test
 
@@ -144,9 +159,6 @@ aliexpress.ru$removeparam=|ws_ab_test
 aliexpress.com$removeparam=|compareFields
 aliexpress.ru$removeparam=|compareFields
 
-! Found independently, added 2022-01-11
-aliexpress.com$removeparam=|pdp_pi
-aliexpress.ru$removeparam=|pdp_pi
 
 ! todo: aliexpress parameters
 !srcSns
@@ -161,10 +173,6 @@ aliexpress.ru$removeparam=|scenario
 
 aliexpress.com$removeparam=|tpp_rcmd_bucket_id
 aliexpress.ru$removeparam=|tpp_rcmd_bucket_id
-
-aliexpress.com$removeparam=|pdp_ext_f
-aliexpress.ru$removeparam=|pdp_ext_f
-
 
 
 !! aliexpress filters and subdomains
@@ -1201,7 +1209,8 @@ aliexpress.com###fd-channel-title
 aliexpress.com,aliexpress.ru##.fm-sns
 
 cmap.alibaba.com
-||alibaba.com/ts?  # is in EasyPrivacy #||fourier.taobao.com/ts
+||alibaba.com/ts?  # is in EasyPrivacy
+||taobao.com/ts  #||fourier.taobao.com/ts
 offer.alibaba.com  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
 ||tdum.alibaba.com/dss.js
 
