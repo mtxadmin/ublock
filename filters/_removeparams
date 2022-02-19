@@ -290,6 +290,7 @@ $removeparam=/^pk_.*/,important  # Campaign tracking (Matomo/Piwik)  # from Neat
     ! $removeparam=pk_campaign  # from Adguard
     ! $removeparam=pk_medium  # from Adguard
     ! $removeparam=pk_source  # from Adguard
+    ! originally commented rules from NeatURL: #?pk_campaign@vivaldi.com, #?pk_kwd@vivaldi.com - now it turned out it was Piwik
 
 $removeparam=promoid
     ! Later:
@@ -547,20 +548,21 @@ adorama.com$removeparam=obem  # from Adguard
 adorama.com$removeparam=bc_pid  # from Adguard
 
 ! blocked entirely, just for information
-||pixel.adsafeprotected.com/services/pub?$removeparam=anId  # from Adguard
-||pixel.adsafeprotected.com/services/pub?$removeparam=sessionId  # from Adguard
-||pixel.adsafeprotected.com/services/pub?$removeparam=slot  # from Adguard
-||pixel.adsafeprotected.com/services/pub?$removeparam=sr  # from Adguard
-||pixel.adsafeprotected.com/services/pub?$removeparam=url  # from Adguard
-||pixel.adsafeprotected.com/services/pub?$removeparam=wr  # from Adguard
+!||pixel.adsafeprotected.com/services/pub?$removeparam=anId  # from Adguard
+!||pixel.adsafeprotected.com/services/pub?$removeparam=sessionId  # from Adguard
+!||pixel.adsafeprotected.com/services/pub?$removeparam=slot  # from Adguard
+!||pixel.adsafeprotected.com/services/pub?$removeparam=sr  # from Adguard
+!||pixel.adsafeprotected.com/services/pub?$removeparam=url  # from Adguard
+!||pixel.adsafeprotected.com/services/pub?$removeparam=wr  # from Adguard
 
 ! blocked entirely, just for information
 !adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
 
 airbnb.com$removeparam=|source_impression_id|euid
 airbnb.ru$removeparam=|source_impression_id|euid
-!airbnb.com$removeparam=|source_impression_id|euid|c
-!airbnb.ru$removeparam=|source_impression_id|euid|c
+    ! don't remove c parameter:
+    !airbnb.com$removeparam=|source_impression_id|euid|c
+    !airbnb.ru$removeparam=|source_impression_id|euid|c
 
 ! See aliexpress rules in aliexpress file
 
@@ -780,8 +782,6 @@ udemy.com$removeparam=referralCode
 ||unsplash.com$removeparam=|ixlib|ixid
 
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|  # from Ru AdList
-
-!originally commented rules from NeatURL: #?pk_campaign@vivaldi.com, #?pk_kwd@vivaldi.com
 
 ||wildberries.ru$removeparam=|targetUrl
 
