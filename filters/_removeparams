@@ -537,10 +537,10 @@ $removeparam=_zucks_suid  # from Adguard
     ! ?topblock$document,removeparam=|,domain=3dnews.ru  # from Ru AdList
 
 ! blocked entirely, just for information
-! adjust.com$removeparam=adgroup  # from Adguard
+!adjust.com$removeparam=adgroup  # from Adguard
 
 ! blocked entirely, just for information
-ad.admitad.com$removeparam=/^subid/  # from Adguard
+!ad.admitad.com$removeparam=/^subid/  # from Adguard
 
 ! not ad
 adorama.com$removeparam=obem  # from Adguard
@@ -638,7 +638,7 @@ change.org$removeparam=source_location  # Campaign tracking (Change.org)  # from
 ||discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
 
 ! blocked entirely, just for information
-||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
+!||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
 
 facebook.com$removeparam=hrc  # Facebook  # from NeatURL
 facebook.com$removeparam=refsrc  # Facebook  # from NeatURL
@@ -704,17 +704,24 @@ $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.
 location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 ?dl=$xhr,removeparam=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 
+lidl.de$removeparam=msktc  # from Adguard
+
 ! blocked entirely, just for information
-||cc.loginfra.com/cc$removeparam=a  # from Adguard
-||cc.loginfra.com/cc$removeparam=bw  # from Adguard
-||cc.loginfra.com/cc$removeparam=px  # from Adguard
-||cc.loginfra.com/cc$removeparam=py  # from Adguard
-||cc.loginfra.com/cc$removeparam=sx  # from Adguard
-||cc.loginfra.com/cc$removeparam=sy  # from Adguard
-||cc.loginfra.com/cc$removeparam=nsc  # from Adguard
+!||cc.loginfra.com/cc$removeparam=a  # from Adguard
+!||cc.loginfra.com/cc$removeparam=bw  # from Adguard
+!||cc.loginfra.com/cc$removeparam=px  # from Adguard
+!||cc.loginfra.com/cc$removeparam=py  # from Adguard
+!||cc.loginfra.com/cc$removeparam=sx  # from Adguard
+!||cc.loginfra.com/cc$removeparam=sy  # from Adguard
+!||cc.loginfra.com/cc$removeparam=nsc  # from Adguard
 
 maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
     ! ?previewToken=$document,removeparam=|,domain=maximonline.ru  # from Ru AdList
+
+microsoft.com$removeparam=ranEAID  # from Adguard
+microsoft.com$removeparam=ranSiteID  # from Adguard
+microsoft.com$removeparam=tduid  # from Adguard
+$removeparam=epi,domain=microsoft.com|xbox.com  # from Adguard
 
 ! only works when extensions.webextensions.restrictedDomains is edited in about:config
 ! test URL: https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct
@@ -728,10 +735,13 @@ mvideo.ru$removeparam=reff
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
 ! blocked entirely, just for information
-rakuten.co.jp$removeparam=scid  # from Adguard
+!rakuten.co.jp$removeparam=scid  # from Adguard
 
 rambler.ru$removeparam=block_click  # from Ru AdList, modified
     ! block_click=$removeparam=block_click,domain=rambler.ru  # from Ru AdList
+
+reddit.com$removeparam=correlation_id  # from Adguard
+reddit.com$removeparam=post_fullname  # from Adguard
 
 ria.ru$removeparam=/^rcmd_/
     ! ria.ru$removeparam=|rcmd_alg|rcmd_id
@@ -943,11 +953,6 @@ reddit.app.link$removeparam=geoip_country  # from Adguard
 ||weibo.*^$removeparam=dt_dapp  # from Adguard
 ||weibo.*^$removeparam=weibo_id  # from Adguard
 
-microsoft.com$removeparam=ranEAID  # from Adguard
-microsoft.com$removeparam=ranSiteID  # from Adguard
-microsoft.com$removeparam=tduid  # from Adguard
-$removeparam=epi,domain=microsoft.com|xbox.com  # from Adguard
-
 zerkalo.io$removeparam=tg  # from Adguard
 zerkalo.io$removeparam=vk  # from Adguard
 
@@ -963,16 +968,11 @@ dmm.co.jp$removeparam=dmmref  # from Adguard
 dmm.co.jp$removeparam=i3_ord  # from Adguard
 dmm.co.jp$removeparam=i3_ref  # from Adguard
 
-reddit.com$removeparam=correlation_id  # from Adguard
-reddit.com$removeparam=post_fullname  # from Adguard
-
 alternate.de$removeparam=partner  # from Adguard
 
 galaxus.de$removeparam=pcscpId  # from Adguard
 
 marketing.net.idealo-partner.com$removeparam=amc  # from Adguard
-
-lidl.de$removeparam=msktc  # from Adguard
 
 otto.de$removeparam=ActionID  # from Adguard
 
