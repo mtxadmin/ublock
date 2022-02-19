@@ -532,6 +532,9 @@ $removeparam=_zucks_suid  # from Adguard
 
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
+3dnews.ru$removeparam=topblock  # from Ru AdList, modified
+    ! ?topblock$document,removeparam=|,domain=3dnews.ru  # from Ru AdList
+
 ! blocked entirely, just for information
 ! adjust.com$removeparam=adgroup  # from Adguard
 
@@ -780,7 +783,6 @@ udemy.com$removeparam=referralCode
 @@||rightnowtech.com/engagement/api/consumer/nvidia/*/requestEngagement?pool=$removeparam  # from Adguard
 @@||gizmodo.com/embed/comments/$removeparam  # from Adguard
 @@||kotaku.com/embed/comments$removeparam  # from Adguard
-
 
 ! from NeatURL
 !Google Analytics - tracking https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
@@ -1257,7 +1259,4 @@ ria.ru$removeparam=rcmd_  # from Ru AdList, modified
 
 youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
     ! ?sub_confirmation=1$document,removeparam=|,domain=youtube.com  # from Ru AdList
-
-3dnews.ru$removeparam=topblock  # from Ru AdList, modified
-    ! ?topblock$document,removeparam=|,domain=3dnews.ru  # from Ru AdList
 
