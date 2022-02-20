@@ -142,6 +142,12 @@ $removeparam=/^dpg_.*/  # Campaign tracking (DPG Media)  # used on Dutch sites  
     ! $removeparam=dpg_medium  # from Adguard
     ! $removeparam=dpg_source  # from Adguard
 
+! Chinese tracking parameters.
+$removeparam=/^dt_.*/ 
+    ! douban.com$removeparam=dt_platform  # from Adguard
+    ! $removeparam=dt_dapp,domain=douban.com|163.com  # from Adguard
+    ! ||weibo.*^$removeparam=dt_dapp  # from Adguard
+
 $removeparam=ebisAdID  # AD EBiS  # from Adguard
 
 $removeparam=elqTrack  # Oracle Eloqua  # from NeatURL
@@ -1029,7 +1035,6 @@ reddit.app.link$removeparam=compact_view  # from Adguard
 reddit.app.link$removeparam=dnt  # from Adguard
 reddit.app.link$removeparam=geoip_country  # from Adguard
 
-||weibo.*^$removeparam=dt_dapp  # from Adguard
 ||weibo.*^$removeparam=weibo_id  # from Adguard
 
 zerkalo.io$removeparam=tg  # from Adguard
@@ -1225,10 +1230,6 @@ euronews.com$removeparam=_ope  # from Adguard
 azby.fmworld.net$removeparam=mc_pc  # from Adguard
 
 link.coupang.com$removeparam=lptag  # from Adguard
-
-$removeparam=dt_dapp,domain=douban.com|163.com  # from Adguard
-
-douban.com$removeparam=dt_platform  # from Adguard
 
 weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$removeparam=/distributorid|wfr|ifr|share_relation/
 
