@@ -597,6 +597,9 @@ adorama.com$removeparam=bc_pid  # from Adguard
 !||pixel.adsafeprotected.com/services/pub?$removeparam=wr  # from Adguard
 
 ! blocked entirely, just for information
+!adshares.net$removeparam=cid  # from Adguard
+
+! blocked entirely, just for information
 !adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
 
 airbnb.com$removeparam=|source_impression_id|euid
@@ -671,12 +674,16 @@ comodo.com$removeparam=track  # from Adguard
 ! blocked entirely, just for information
 !cyber-ad01.cc$removeparam=ip  # from Adguard
 
+coupang.com$removeparam=lptag  # from Adguard: link.coupang.com$removeparam=lptag
+
 dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
 
 ||discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
 
 ! blocked entirely, just for information
 !||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
+
+euronews.com$removeparam=_ope  # from Adguard
 
 facebook.com$removeparam=hc_ref  # from Ru AdList, modified
     ! facebook.com*/?hc_ref$removeparam=|,domain=facebook.com  # from Ru AdList
@@ -685,6 +692,8 @@ facebook.com$removeparam=refsrc  # Facebook  # from NeatURL
 
 finance.ua$removeparam=mpl  # from Ru AdList,modified
     ! ||finance.ua/*?mpl=$document,removeparam=|,domain=finance.ua  # from Ru AdList
+
+fmworld.net$removeparam=mc_pc  # from Adguard: azby.fmworld.net$removeparam=mc_pc
 
 ! blocked entirely, just for information
 ||hit.gemius.pl/hitredir$removeparam=id  # from Adguard
@@ -773,6 +782,9 @@ mail.ru$removeparam=smotri_id  # from Ru AdList, modified
 maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
     ! ?previewToken=$document,removeparam=|,domain=maximonline.ru  # from Ru AdList
 
+! blocked entirely, just for information
+||media01.eu/set.aspx$removeparam=trackid  # from Adguard
+
 microsoft.com$removeparam=ranEAID  # from Adguard
 microsoft.com$removeparam=ranSiteID  # from Adguard
 microsoft.com$removeparam=tduid  # from Adguard
@@ -786,6 +798,9 @@ addons.mozilla.org$removeparam=|src|source|surveyversion|updateChannel|fxVersion
 mvideo.ru$removeparam=reff
 mvideo.ru$_requestid
     ! mvideo.ru$removeparam=/^(_requestid|reff)=/  # from Adguard
+
+! blocked entirely, just for information
+!t.myvisualiq.net$removeparam=~red  # from Adguard
 
 ||nationalinterest.org$removeparam=|itok|timestamp
 
@@ -802,6 +817,7 @@ nnmclub.to$removeparam=sid  # from Ru AdList, modified
 
 ! blocked entirely, just for information
 !rakuten.co.jp$removeparam=scid  # from Adguard
+!rakuten.co.jp*&trflg=$removeparam=trflg  # from Adguard
 
 rambler.ru$removeparam=block_click  # from Ru AdList, modified
     ! block_click=$removeparam=block_click,domain=rambler.ru  # from Ru AdList
@@ -1193,19 +1209,13 @@ lotto.web.de$removeparam=partnerId  # from Adguard
 
 shopping.web.de$removeparam=origin  # from Adguard
 
-||media01.eu/set.aspx$removeparam=trackid  # from Adguard
-
 nytimes.com$removeparam=impression_id  # from Adguard
-
-rakuten.co.jp*&trflg=$removeparam=trflg  # from Adguard
 
 ||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com  # from Adguard
 
 $removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com  # from Adguard
 
 mediamarkt.com.tr$removeparam=rbtc  # from Adguard
-
-t.myvisualiq.net$removeparam=~red  # from Adguard
 
 express.de$removeparam=cb  # from Adguard
 
@@ -1219,17 +1229,9 @@ infoq.com$removeparam=/topicPageSponsorship|^itm_/  # from Adguard
 
 coupondunia.in$removeparam=itm_source  # from Adguard
 
-adshares.net$removeparam=cid  # from Adguard
-
 cht.com.tw$removeparam=Identifier  # from Adguard
 
 kohls.com$removeparam=CID  # from Adguard
-
-euronews.com$removeparam=_ope  # from Adguard
-
-azby.fmworld.net$removeparam=mc_pc  # from Adguard
-
-link.coupang.com$removeparam=lptag  # from Adguard
 
 weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$removeparam=/distributorid|wfr|ifr|share_relation/
 
