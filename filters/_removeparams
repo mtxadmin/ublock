@@ -689,6 +689,8 @@ comodo.com$removeparam=track  # from Adguard
 
 coupang.com$removeparam=lptag  # from Adguard: link.coupang.com$removeparam=lptag
 
+coursera.org$removeparam=siteID  # from Adguard
+
 dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
 
 ||discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
@@ -780,6 +782,8 @@ hqbabes.com$removeparam=novoref
 
 instagram.com$removeparam=igshid  # from Adguard
 
+kaspersky.com$removeparam=icid  # from Adguard
+
 kitbag.com$removeparam=ab  # from Adguard
 kitbag.com$removeparam=_ref  # from Adguard
 
@@ -789,6 +793,15 @@ kp.ru$removeparam=location
     ! location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 
 lidl.de$removeparam=msktc  # from Adguard
+
+linkedin.com$removeparam=eBP  # from NeatURL
+linkedin.com$removeparam=lgCta  # from NeatURL
+linkedin.com$removeparam=lgTemp  # from NeatURL
+linkedin.com$removeparam=lipi  # from NeatURL
+linkedin.com$removeparam=midSig  # from NeatURL
+linkedin.com$removeparam=midToken  # from NeatURL
+linkedin.com$removeparam=recommendedFlavor  # from NeatURL
+linkedin.com$removeparam=trackingId  # from NeatURL
 
 ! blocked entirely, just for information
 !||cc.loginfra.com/cc$removeparam=a  # from Adguard
@@ -810,6 +823,8 @@ maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
 
 ! blocked entirely, just for information
 ||media01.eu/set.aspx$removeparam=trackid  # from Adguard
+
+mediamarkt.com.tr$removeparam=rbtc  # from Adguard
 
 microsoft.com$removeparam=ranEAID  # from Adguard
 microsoft.com$removeparam=ranSiteID  # from Adguard
@@ -880,7 +895,7 @@ satom.ru$removeparam=i
 
 #sevenforums.com$removeparam=__cf_chl_jschl_tk__  # don`t, it seems, it is "DDoS protection by Cloudflare" param
 
-||sourceforge.net$removeparam=|source|position  # from NeatURL
+sourceforge.net$removeparam=position  # from NeatURL
 
 sportmail.ru$removeparam=exp_id
     ! sportmail.ru*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
@@ -891,6 +906,9 @@ sports.ru$removeparam=e  # from Ru AdList, modified
 ! blocked entirely, just for information
 ! starlight.digital$removeparam=testadv  # from Ru AdList, modified
     ! ||vcms-api*.starlight.digital/hls/*?file=*&testadv=$removeparam=testadv  # from Adguard
+
+spotify.com$removeparam=context  # from NeatURL
+spotify.com$removeparam=si  # from NeatURL
 
 ! See taobao rules in aliexpress file
 
@@ -939,6 +957,8 @@ market.yandex.*$removeparam=cpc  # from Ru AdList, modified
 ||yandex.*/story/$removeparam=lang  # from Ru AdList, modified
     ! unusual Ru AdList form:
     /story/*?lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+yandex.*$removeparam=lr  # from NeatURL
+yandex.*$removeparam=lrredircnt  # from NeatURL
 yandex.*$removeparam=mlid  # from Adguard, modified
     ! ||yandex.*/news/$removeparam=mlid  # from Adguard
     ! ||yandex.*/sport/$removeparam=mlid  # from Adguard
@@ -1029,23 +1049,6 @@ youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
 !    nid
 !    ref_
 
-linkedin.com$removeparam=eBP  # from NeatURL
-linkedin.com$removeparam=lgCta  # from NeatURL
-linkedin.com$removeparam=lgTemp  # from NeatURL
-linkedin.com$removeparam=lipi  # from NeatURL
-linkedin.com$removeparam=midSig  # from NeatURL
-linkedin.com$removeparam=midToken  # from NeatURL
-linkedin.com$removeparam=recommendedFlavor  # from NeatURL
-linkedin.com$removeparam=trackingId  # from NeatURL
-
-sourceforge.net$removeparam=position  # from NeatURL
-
-spotify.com$removeparam=context  # from NeatURL
-spotify.com$removeparam=si  # from NeatURL
-
-yandex.*$removeparam=lr  # from NeatURL
-yandex.*$removeparam=lrredircnt  # from NeatURL
-
 cxense.com$removeparam=/^cx_/  # from Adguard
 cxense.com$removeparam=/^pickup_list_click/  # from Adguard
 
@@ -1119,10 +1122,6 @@ cam4.com$removeparam=showSignupPopup  # from Adguard
 cam4.com$removeparam=suid  # from Adguard
 
 marktjagd.de$removeparam=client  # from Adguard
-
-kaspersky.com$removeparam=icid  # from Adguard
-
-coursera.org$removeparam=siteID  # from Adguard
 
 editor.flixier.com$removeparam=/fx_(source|medium)/  # from Adguard: editor.flixier.com$removeparam=/fx_(source|medium|campaign)/
 
@@ -1217,8 +1216,6 @@ cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adgua
 ||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com  # from Adguard
 
 $removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com  # from Adguard
-
-mediamarkt.com.tr$removeparam=rbtc  # from Adguard
 
 express.de$removeparam=cb  # from Adguard
 
