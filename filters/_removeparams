@@ -324,6 +324,7 @@ $removeparam=ref
     ! visit.digidip.net$removeparam=/^(ppref|ref|pid)=/
     ! d-markets.net$removeparam=ref  # from Adguard
     ! etsy.com$removeparam=ref  # from NeatURL
+    ! facebook.com*/?ref=$removeparam=|,domain=facebook.com  # from Ru AdList
     ! goodreads.com$removeparam=ref  # from Adguard
     ! jasonsavard.com$removeparam=/cUrl|ref/  # from Adguard
     ! video.laxd.com$removeparam=ref  # from Adguard
@@ -664,13 +665,20 @@ comodo.com$removeparam=track  # from Adguard
 ! blocked entirely, just for information
 !cyber-ad01.cc$removeparam=ip  # from Adguard
 
+dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
+
 ||discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
 
 ! blocked entirely, just for information
 !||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
 
+facebook.com$removeparam=hc_ref  # from Ru AdList, modified
+    ! facebook.com*/?hc_ref$removeparam=|,domain=facebook.com  # from Ru AdList
 facebook.com$removeparam=hrc  # Facebook  # from NeatURL
 facebook.com$removeparam=refsrc  # Facebook  # from NeatURL
+
+finance.ua$removeparam=mpl  # from Ru AdList,modified
+    ! ||finance.ua/*?mpl=$document,removeparam=|,domain=finance.ua  # from Ru AdList
 
 ! blocked entirely, just for information
 ||hit.gemius.pl/hitredir$removeparam=id  # from Adguard
@@ -822,6 +830,10 @@ sportmail.ru$removeparam=exp_id
 
 sports.ru$removeparam=e  # from Ru AdList, modified
     ! ?e=lfm$document,removeparam=|,domain=sports.ru  # from Ru AdList
+
+! blocked entirely, just for information
+! starlight.digital$removeparam=testadv  # from Ru AdList, modified
+    ! ||vcms-api*.starlight.digital/hls/*?file=*&testadv=$removeparam=testadv  # from Adguard
 
 ! See taobao rules in aliexpress file
 
@@ -1250,14 +1262,5 @@ $document,removeparam=ustq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 ||player.octivid.com/*/video?*&autoplay=$removeparam=autoplay,domain=kooora.com  # from Adguard
 ||player.octivid.com/*/video?*&custom_ads=$removeparam=custom_ads,domain=kooora.com  # from Adguard
 
-dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
-
 ||api.discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/,domain=hgtv.com  # from Adguard
-
-||vcms-api*.starlight.digital/hls/*?file=*&testadv=$removeparam=testadv  # from Adguard
-
-facebook.com*/?hc_ref$removeparam=|,domain=facebook.com  # from Ru AdList
-facebook.com*/?ref=$removeparam=|,domain=facebook.com  # from Ru AdList
-
-||finance.ua/*?mpl=$document,removeparam=|,domain=finance.ua  # from Ru AdList
 
