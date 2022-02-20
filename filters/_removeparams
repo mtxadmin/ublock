@@ -41,6 +41,10 @@ $removeparam=/^adjust_.*/  # adjust.com campains. Also see adjust ad network
 
 $removeparam=admitad_uid  # AdmitAd tracking  # from Adguard and Ru AdList
 
+$removeparam=advertisementId
+    ! lotto.web.de$removeparam=advertisementId  # from Adguard
+    ! ||lotto.gmx.*^$removeparam=advertisementId  # from Adguard
+
 $removeparam=/^aff_/
     ! $removeparam=aff_platform  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
     ! $removeparam=aff_trace_key  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
@@ -291,6 +295,10 @@ $removeparam=oly_enc_id  # from Adguard
     ! https://github.com/brave/brave-browser/issues/13644
 
 $removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList
+
+$removeparam=partnerId
+    ! ||lotto.gmx.*^$removeparam=partnerId  # from Adguard
+    ! lotto.web.de$removeparam=partnerId  # from Adguard
 
 $removeparam=/^pd_rd_.*/
     ! amazon.*$removeparam=/^pd_rd_.*/  # from NeatURL
@@ -683,6 +691,19 @@ dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
 ! blocked entirely, just for information
 !||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
 
+ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
+ebay.*$removeparam=campid  # from Adguard
+ebay.*$removeparam=hash  # from NeatURL
+ebay.*$removeparam=epid  # from NeatURL
+ebay.*$removeparam=mkrid  # from Adguard
+ebay.*$removeparam=_trkparms  # from NeatURL and Adguard
+ebay.*$removeparam=_trksid  # from NeatURL and Adguard
+ebay.*$removeparam=var  # from NeatURL
+
+etsy.com$removeparam=click_key  # from NeatURL
+etsy.com$removeparam=click_sum  # from NeatURL
+etsy.com$removeparam=organic_search_click  # from NeatURL
+
 euronews.com$removeparam=_ope  # from Adguard
 
 facebook.com$removeparam=hc_ref  # from Ru AdList, modified
@@ -815,6 +836,13 @@ nnmclub.to$removeparam=sid  # from Ru AdList, modified
 
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
+ozon.ru$removeparam=advert
+ozon.ru$removeparam=asb
+ozon.ru$removeparam=asb2
+ozon.ru$removeparam=_bctx
+ozon.ru$removeparam=miniapp
+ozon.ru$removeparam=sh
+
 ! blocked entirely, just for information
 !rakuten.co.jp$removeparam=scid  # from Adguard
 !rakuten.co.jp*&trflg=$removeparam=trflg  # from Adguard
@@ -910,6 +938,9 @@ yandex.*$removeparam=msid
     ! ||yandex.*/sport/$removeparam=msid  # from Adguard
 market.yandex.*$removeparam=nid  # from Ru AdList, modified
     ! ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+
+yandex.ru$removeparam=parent-reqid
+
 yandex.*$removeparam=persistent_id  # from Adguard, modified
     ! ||yandex.*/news/$removeparam=persistent_id  # from Adguard
     ! ||yandex.*/sport/$removeparam=persistent_id  # from Adguard
@@ -987,29 +1018,6 @@ youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
 !    ijn
 !    nid
 !    ref_
-
-ozon.ru$removeparam=asb
-ozon.ru$removeparam=asb2
-ozon.ru$removeparam=sh
-
-ozon.ru$removeparam=_bctx
-ozon.ru$removeparam=advert
-ozon.ru$removeparam=miniapp
-
-yandex.ru$removeparam=parent-reqid
-
-ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
-ebay.*$removeparam=campid  # from Adguard
-ebay.*$removeparam=hash  # from NeatURL
-ebay.*$removeparam=epid  # from NeatURL
-ebay.*$removeparam=mkrid  # from Adguard
-ebay.*$removeparam=_trkparms  # from NeatURL and Adguard
-ebay.*$removeparam=_trksid  # from NeatURL and Adguard
-ebay.*$removeparam=var  # from NeatURL
-
-etsy.com$removeparam=click_key  # from NeatURL
-etsy.com$removeparam=click_sum  # from NeatURL
-etsy.com$removeparam=organic_search_click  # from NeatURL
 
 linkedin.com$removeparam=eBP  # from NeatURL
 linkedin.com$removeparam=lgCta  # from NeatURL
@@ -1185,8 +1193,6 @@ mioga.de$removeparam=pl  # from Adguard
 
 ||gmx.*^$removeparam=mc  # from Adguard
 ||gmx.*/logoutlounge$removeparam=p  # from Adguard
-||lotto.gmx.*^$removeparam=advertisementId  # from Adguard
-||lotto.gmx.*^$removeparam=partnerId  # from Adguard
 
 ||app.mi.com/download/*?id=$removeparam=appClientId  # from Adguard
 ||app.mi.com/download/*?id=$removeparam=appSignature  # from Adguard
@@ -1201,9 +1207,6 @@ baidu.com$removeparam=rsv_pq  # from Adguard
 baidu.com$removeparam=rsv_t  # from Adguard
 
 ||daraz.*$removeparam=/keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
-
-lotto.web.de$removeparam=advertisementId  # from Adguard
-lotto.web.de$removeparam=partnerId  # from Adguard
 
 ||shopping.gmx.*^$removeparam=origin  # from Adguard
 
