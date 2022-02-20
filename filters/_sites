@@ -22552,3 +22552,8 @@ web.de##section:style(position:static !important)
 billiger.de$3p  # 3p scripts
 
 hentaibaka.one$3p  # from uBlock filters
+
+fwdcdn.com$3p,script  # don't block css
+||fwdcdn.com/frame/partners/  # from Ru AdList
+! from Ru AdList
+##iframe[src*="fwdcdn.com/frame/partners/"]
