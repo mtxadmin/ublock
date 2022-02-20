@@ -498,6 +498,7 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! digikey.com$removeparam=/^utm_cid/  # from Adguard
     ! fastshare.cz/top*?utm_source=*&utm_medium=*&utm_campaign=$domain=warforum.cz  # from Adguard
     ! ||gamebet.news/*/index.html?utm_placement=$third-party  # from Adguard
+    ! $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
     ! ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
     ! trendyol.com$removeparam=utm_subaff  # from Adguard
     ! upgrad.com$removeparam=UTM_MEDIUM  # from Adguard
@@ -542,6 +543,17 @@ $removeparam=_zucks_suid  # from Adguard
 
 ! blocked entirely, just for information
 !ad.admitad.com$removeparam=/^subid/  # from Adguard
+
+# from Adguard (sic!): $removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
+adguard.com$removeparam=aid  # from Adguard
+adguard-dns.com$removeparam=aid  # from Adguard
+adguard-vpn.com$removeparam=aid  # from Adguard
+
+get.adobe.com$removeparam=browser_type  # from Adguard
+get.adobe.com$removeparam=browser_dist  # from Adguard
+get.adobe.com$removeparam=type  # from Adguard
+get.adobe.com$removeparam=workflow  # from Adguard
+get.adobe.com$removeparam=TRILIBIS_EMULATOR_UA  # from Adguard
 
 ! not ad
 adorama.com$removeparam=obem  # from Adguard
@@ -634,6 +646,9 @@ change.org$removeparam=recruiter  # Campaign tracking (Change.org)  # from NeatU
 change.org$removeparam=short_display_name  # Campaign tracking (Change.org)  # from NeatURL
 change.org$removeparam=source_location  # Campaign tracking (Change.org)  # from NeatURL
 
+comodo.com$removeparam=af  # from Adguard
+comodo.com$removeparam=track  # from Adguard
+
 ! blocked entirely, just for information
 !cyber-ad01.cc$removeparam=ip  # from Adguard
 
@@ -702,9 +717,13 @@ hqbabes.com$removeparam=novoref
 ! blocked entirely, just for information
 !iqbroker.com$removeparam=afftrack  # from Adguard
 
-$doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
-location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
-?dl=$xhr,removeparam=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+kitbag.com$removeparam=ab  # from Adguard
+kitbag.com$removeparam=_ref  # from Adguard
+
+kp.ru$removeparam=dl
+    ! ?dl=$xhr,removeparam=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+kp.ru$removeparam=location
+    ! location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 
 lidl.de$removeparam=msktc  # from Adguard
 
@@ -716,6 +735,8 @@ lidl.de$removeparam=msktc  # from Adguard
 !||cc.loginfra.com/cc$removeparam=sx  # from Adguard
 !||cc.loginfra.com/cc$removeparam=sy  # from Adguard
 !||cc.loginfra.com/cc$removeparam=nsc  # from Adguard
+
+mail.ru$removeparam=oprtrack  # from Adguard
 
 maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
     ! ?previewToken=$document,removeparam=|,domain=maximonline.ru  # from Ru AdList
@@ -734,6 +755,13 @@ mvideo.ru$removeparam=reff
 
 ||nationalinterest.org$removeparam=|itok|timestamp
 
+nnm-club.lib$removeparam=sid  # from Ru AdList, modified
+nnm-club.me$removeparam=sid  # from Ru AdList, modified
+nnmclub.ro$removeparam=sid  # from Ru AdList, modified
+nnmclub.to$removeparam=sid  # from Ru AdList, modified
+    ! unusual Ru AdList form:
+    ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
+
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
 ! blocked entirely, just for information
@@ -741,6 +769,9 @@ mvideo.ru$removeparam=reff
 
 rambler.ru$removeparam=block_click  # from Ru AdList, modified
     ! block_click=$removeparam=block_click,domain=rambler.ru  # from Ru AdList
+rambler.ru$removeparam=readmore  # from Ru AdList, modified
+    ! unusual Ru AdList form:
+    ! /?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru  # from Ru AdList
 
 reddit.com$removeparam=correlation_id  # from Adguard
 reddit.com$removeparam=post_fullname  # from Adguard
@@ -748,6 +779,10 @@ reddit.com$removeparam=post_fullname  # from Adguard
 ria.ru$removeparam=/^rcmd_/
     ! ria.ru$removeparam=|rcmd_alg|rcmd_id
     ! ?rcmd_$document,removeparam=|rcmd_,domain=ria.ru  # from Ru AdList
+
+rutor.in$removeparam=sid  # from Ru AdList, modified
+    ! unusual Ru AdList form:
+    ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
 
 satom.ru$removeparam=i
 
@@ -1012,18 +1047,8 @@ $removeparam=l-id,domain=nikki.ne.jp|rebates.jp  # from Adguard: $removeparam=l-
 
 dmkt-sp.jp$removeparam=impressionId  # from Adguard
 
-kitbag.com$removeparam=ab  # from Adguard
-kitbag.com$removeparam=_ref  # from Adguard
-
-# from Adguard (sic!): $removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
-adguard.com$removeparam=aid  # from Adguard
-adguard-dns.com$removeparam=aid  # from Adguard
-adguard-vpn.com$removeparam=aid  # from Adguard
-
 ||web.vstat.info$removeparam=guid  # from Adguard
 ||web.vstat.info$removeparam=user_agent  # from Adguard
-
-mail.ru$removeparam=oprtrack  # from Adguard
 
 nordvpn.com$removeparam=data1  # from Adguard
 
@@ -1032,9 +1057,6 @@ start.pm.by$removeparam=adtag  # from Adguard
 wuzhuiso.com$removeparam=src  # from Adguard
 
 redhotpawn.com$removeparam=cbqsid  # from Adguard
-
-comodo.com$removeparam=af  # from Adguard
-comodo.com$removeparam=track  # from Adguard
 
 dengekionline.com$removeparam=osusume_banner  # from Adguard
 
@@ -1069,12 +1091,6 @@ naver.com$removeparam=bw  # from Adguard
 ||cc.naver.com/cc?a$removeparam=sy  # from Adguard
 ||search.naver.com/search.naver$removeparam=tqi  # from Adguard
 ||lcs.naver.com/m?u=$removeparam=ts  # from Adguard
-
-get.adobe.com$removeparam=browser_type  # from Adguard
-get.adobe.com$removeparam=browser_dist  # from Adguard
-get.adobe.com$removeparam=type  # from Adguard
-get.adobe.com$removeparam=workflow  # from Adguard
-get.adobe.com$removeparam=TRILIBIS_EMULATOR_UA  # from Adguard
 
 5-delivery.ru$removeparam=c  # from Adguard
 5-delivery.ru$removeparam=pid  # from Adguard
@@ -1203,17 +1219,6 @@ $document,removeparam=usqid,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=usstr,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=ustq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 
-nnm-club.lib$removeparam=sid  # from Ru AdList, modified
-nnm-club.me$removeparam=sid  # from Ru AdList, modified
-nnmclub.ro$removeparam=sid  # from Ru AdList, modified
-nnmclub.to$removeparam=sid  # from Ru AdList, modified
-    ! unusual Ru AdList form:
-    ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
-
-rutor.in$removeparam=sid  # from Ru AdList, modified
-    ! unusual Ru AdList form:
-    ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
-
 ||player.octivid.com/*/video?*&autoplay=$removeparam=autoplay,domain=kooora.com  # from Adguard
 ||player.octivid.com/*/video?*&custom_ads=$removeparam=custom_ads,domain=kooora.com  # from Adguard
 
@@ -1237,10 +1242,6 @@ mail.ru*exp_id=$document,removeparam=|,domain=mail.ru  # from Ru AdList
 ykt.ru$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru  # from Ru AdList
 
 sportmail.ru*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
-
-rambler.ru$removeparam=readmore  # from Ru AdList, modified
-    ! unusual Ru AdList form:
-    ! /?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru  # from Ru AdList
 
 mail.ru$removeparam=smotri_id  # from Ru AdList, modified
     ! smotri_id=$document,removeparam=|smotri_id,domain=mail.ru  # from Ru AdList
