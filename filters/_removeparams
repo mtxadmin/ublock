@@ -30,6 +30,14 @@ $removeparam=action_object_map  # Action Map  # from NeatURL and Adguard
 $removeparam=action_ref_map  # Action Map  # from NeatURL and Adguard
 $removeparam=action_type_map  # Action Map  # from NeatURL and Adguard
 
+$removeparam=ad_config_id
+    ! edge.api.brightcove.com$xhr,removeparam=ad_config_id,domain=9now.com.au|threenow.co.nz  # from uBlock filters
+    ! ||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xhr,domain=tvnz.co.nz  # from uBlock filters
+    ! ||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xmlhttprequest,domain=tvnz.co.nz  # from Adguard
+    ! ||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,domain=tvnz.co.nz  # from Adguard
+    ! ||brightcovecdn.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xhr,domain=tvnz.co.nz  # from uBlock filters
+    ! *$xhr,removeparam=ad_config_id,domain=telequebec.tv  # from uBlock filters
+
 $removeparam=/^adjust_.*/  # adjust.com campains. Also see adjust ad network
     ! $removeparam=adjust_adgroup  # from Adguard
     ! $removeparam=adjust_campaign  # from Adguard
@@ -62,6 +70,20 @@ $removeparam=assetId  # Oracle Eloqua  # from NeatURL
 $removeparam=assetType  # Oracle Eloqua  # from NeatURL
 
 $removeparam=asgtbndr  # from Adguard
+
+$removeparam=autoplay
+    ! ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
+    ! ||player.octivid.com/*/video?*&autoplay=$removeparam=autoplay,domain=kooora.com  # from Adguard
+    ! ||player.octivid.com/*/video?*&custom_ads=$removeparam=custom_ads,domain=kooora.com  # from Adguard
+    ! ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
+    ! ||sportrecs.com/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
+    ! ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|  # from Ru AdList
+    ! ||yandex.ru/player/$removeparam=autoplay  # from Ru AdList, modified
+        ! ||yandex.ru/player/*autoplay=$subdocument,removeparam=|  # from Ru AdList
+        ! /^https?://frontend\.vh\.yandex\.ru\/player\/[^\s]+\autoplay=1(?![^\s]+service=ya-sport$)/$subdocument,removeparam=|  # from Ru AdList
+    ! youtube.com$removeparam=autoplay
+        ! ||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|  # from Ru AdList
+        ! ||youtube.com/embed/*autoplay=1$subdocument,removeparam=|,domain=112ua.tv|1news.com.ua|7days.ru|factor.ua|gamasexual.com|gamasexual.ru|go.mail.ru|igromania.ru|kanobu.ru|newsoneua.tv|segodnya.ua|sledcom.ru|u24.ua|xn--b1ats.xn--80asehdb  # from Ru AdList
 
 $removeparam=/^at_custom.*/  # Campaign tracking (at)  # from NeatURL
 $removeparam=at_medium  # Campaign tracking (at)  # from NeatURL
@@ -570,8 +592,6 @@ $removeparam=_zucks_suid  # from Adguard
 ! If several sites has the same parameter, it is preferably to make a general rule with commented those specific rules afterwards.
 ! (For information and just in case if the general rule will be considered not so good and return to specific ones will be needed)
 
-||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
-
 3dnews.ru$removeparam=topblock  # from Ru AdList, modified
     ! ?topblock$document,removeparam=|,domain=3dnews.ru  # from Ru AdList
 
@@ -856,8 +876,6 @@ nnmclub.to$removeparam=sid  # from Ru AdList, modified
 
 nytimes.com$removeparam=impression_id  # from Adguard
 
-||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
-
 ozon.ru$removeparam=advert
 ozon.ru$removeparam=asb
 ozon.ru$removeparam=asb2
@@ -940,16 +958,12 @@ udemy.com$removeparam=referralCode
 
 ||unsplash.com$removeparam=|ixlib|ixid
 
-||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|  # from Ru AdList
-
 shopping.web.de$removeparam=origin  # from Adguard
 ||shopping.gmx.*^$removeparam=origin  # from Adguard
 
 ||wildberries.ru$removeparam=|targetUrl
 
 ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck!
-||yandex.ru/player/$removeparam=autoplay  # from Ru AdList, modified
-    ! ||yandex.ru/player/*autoplay=$subdocument,removeparam=|  # from Ru AdList
 zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
     ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
 market.yandex.*$removeparam=cpc  # from Ru AdList, modified
@@ -985,8 +999,6 @@ yandex.*$removeparam=source-serpid  # from Adguard
 ykt.ru$removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/  # from Ru AdList, modified
     ! ykt.ru$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru  # from Ru AdList
 
-youtube.com$removeparam=autoplay
-    ! ||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|  # from Ru AdList
 youtube.com$removeparam=feature  # from NeatURL
     ! unusual Ru AdList form:
     ! &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com  # from Ru AdList
@@ -1136,7 +1148,7 @@ nordvpn.com$removeparam=data1  # from Adguard
 
 start.pm.by$removeparam=adtag  # from Adguard
 
-wuzhuiso.com$removeparam=src  # from Adguard
+wuzhuiso.com$removeparam=src  # from Adguard and uBlock filters
 
 redhotpawn.com$removeparam=cbqsid  # from Adguard
 
@@ -1235,17 +1247,10 @@ kohls.com$removeparam=CID  # from Adguard
 
 weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$removeparam=/distributorid|wfr|ifr|share_relation/
 
-wuzhuiso.com$removeparam=src  # from uBlock filters
-
 zhihu.com$removeparam=hybrid_search_extra  # from uBlock filters
 zhihu.com$removeparam=hybrid_search_source  # from uBlock filters
 
 sextgem.com$removeparam=id  # from uBlock filters
-
-||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xhr,domain=tvnz.co.nz  # from uBlock filters
-||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xmlhttprequest,domain=tvnz.co.nz  # from Adguard
-||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,domain=tvnz.co.nz  # from Adguard
-||brightcovecdn.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xhr,domain=tvnz.co.nz  # from uBlock filters
 
 ! unusual Ru AdList form:
 $document,removeparam=fm,domain=go.mail.ru|r.mail.ru  # from Ru AdList
@@ -1262,8 +1267,6 @@ $document,removeparam=usqid,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=usstr,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=ustq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 
-||player.octivid.com/*/video?*&autoplay=$removeparam=autoplay,domain=kooora.com  # from Adguard
-||player.octivid.com/*/video?*&custom_ads=$removeparam=custom_ads,domain=kooora.com  # from Adguard
-
-||api.discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/,domain=hgtv.com  # from Adguard
-
+discovery.com$removeparam=/^ad/
+    ! ||api.discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/,domain=hgtv.com  # from Adguard
+    ! ||api.discovery.com/v1/streaming/video/*&adNetworkId=$xhr,removeparam=/^ad/,domain=ahctv.com|animalplanet.com|cookingchanneltv.com|destinationamerica.com|discovery.com|discoverylife.com|diynetwork.com|foodnetwork.com|hgtv.com|investigationdiscovery.com|motortrend.com|sciencechannel.com|tlc.com|travelchannel.com  # from uBlock filters
