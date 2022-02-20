@@ -198,23 +198,26 @@ $removeparam=fb_source  # Facebook general parameter  # from NeatURL and Adguard
 
 $removeparam=fref  # from Ru AdList
 
-$removeparam=from
-    ! /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
-    ! 3dnews.ru$removeparam=from
-    ! ||amazon.*/hz/contact-us/csp$removeparam=from  # from Adguard
-    ! bilibili.com$removeparam=from  # from Adguard
-    ! hh.ru$removeparam=from
-    ! pikabu.ru$removeparam=from
-    ! rbc.ru$removeparam=from
-    ! ||yandex.*/news/$removeparam=from  # from Adguard
-    ! ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
-    ! ||yandex.*/news*?from=main$document,removeparam=|,domain=yandex.*  # from Ru AdList
-    ! ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
-    ! ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
-    ! ?from=tabbar$document,removeparam=|from,domain=yandex.*  # from Ru AdList
-    ! ?from=yanews$document,removeparam=|  # from Ru AdList
-    ! ||daraz.*$removeparam=/from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
-    ! from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+! from - in general don't. Yandex sometimes glitches.
+! Todo.
+!$removeparam=from
+    /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
+    3dnews.ru$removeparam=from
+    ||amazon.*/hz/contact-us/csp$removeparam=from  # from Adguard
+    bilibili.com$removeparam=from  # from Adguard
+    hh.ru$removeparam=from
+    pikabu.ru$removeparam=from
+    rbc.ru$removeparam=from
+    ||yandex.*/news/$removeparam=from  # from Adguard
+    ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
+    ||yandex.*/news*?from=main$document,removeparam=|,domain=yandex.*  # from Ru AdList
+    ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
+    ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
+    ?from=tabbar$document,removeparam=|from,domain=yandex.*  # from Ru AdList
+    ?from=yanews$document,removeparam=|  # from Ru AdList
+    ||daraz.*$removeparam=/from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
+    from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+
 $removeparam=frommail
     ! mail.ru*frommail=1$document,removeparam=|frommail=1,domain=mail.ru  # from Ru AdList
     ! sportmail.ru*frommail=1$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
