@@ -787,6 +787,15 @@ google.*$removeparam=ved
     ! ||www.google.*/search?$removeparam=ved  # from Ru AdList
 google.*/websearch$removeparam=visit_id  # from Adguard
 
+hentaibaka.one$removeparam=code
+    ! ||hentaibaka.one/*?code=$doc,other,removeparam=code  # from uBlock filters
+
+hentaicomics.pro$removeparam=code
+    ! ||hentaicomics.pro/*?code=$doc,other,removeparam=code  # from uBlock filters
+
+hentai-party.com$removeparam=view
+    ! ||hentai-party.com/*?view=$doc,other,removeparam=view  # from uBlock filters
+
 hh.ru$removeparam=hhtmFrom
 hh.ru$removeparam=hhtmFromLabel
 hh.ru$removeparam=position
@@ -958,6 +967,9 @@ udemy.com$removeparam=referralCode
 
 ||unsplash.com$removeparam=|ixlib|ixid
 
+uplynk.com$removeparam=/^ad/
+    ! ||content.uplynk.com/api/*&ad=$xhr,removeparam=/^ad/,domain=abc7ny.com|abc7.com|abc7chicago.com|6abc.com|abc7news.com|abc13.com|abc11.com|abc30.com  # from uBlock filters
+
 shopping.web.de$removeparam=origin  # from Adguard
 ||shopping.gmx.*^$removeparam=origin  # from Adguard
 
@@ -982,6 +994,9 @@ yandex.*$removeparam=msid
     ! ||yandex.*/sport/$removeparam=msid  # from Adguard
 market.yandex.*$removeparam=nid  # from Ru AdList, modified
     ! ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+
+xxx-comics.pro$removeparam=view
+    ! ||xxx-comics.pro/*?view=$doc,other,removeparam=view  # from uBlock filters
 
 yandex.ru$removeparam=parent-reqid
 
