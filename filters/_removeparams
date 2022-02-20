@@ -654,6 +654,11 @@ amazon.*$removeparam=visitId  # from Adguard
 amazon.*$removeparam=vt  # from Adguard
 !@@||data.amazon.*/api/marketplaces/*/cart/carts/retail/items$removeparam=ref  # strange exclusion from Adguard
 
+baidu.com$removeparam=eqid  # from Adguard
+    ! baidu.com/link?url=$removeparam=eqid  # from Adguard
+baidu.com$removeparam=rsv_pq  # from Adguard
+baidu.com$removeparam=rsv_t  # from Adguard
+
 bilibili.com$removeparam=callback  # from NeatURL
 bilibili.com$removeparam=from_source  # from Adguard
 bilibili.com$removeparam=from_spm_id  # from Adguard
@@ -834,6 +839,8 @@ nnmclub.to$removeparam=sid  # from Ru AdList, modified
     ! unusual Ru AdList form:
     ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
 
+nytimes.com$removeparam=impression_id  # from Adguard
+
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
 
 ozon.ru$removeparam=advert
@@ -916,6 +923,9 @@ udemy.com$removeparam=referralCode
 ||unsplash.com$removeparam=|ixlib|ixid
 
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|  # from Ru AdList
+
+shopping.web.de$removeparam=origin  # from Adguard
+||shopping.gmx.*^$removeparam=origin  # from Adguard
 
 ||wildberries.ru$removeparam=|targetUrl
 
@@ -1202,17 +1212,7 @@ cod.bitrec.com/topocentras-services/js/recs?$removeparam=externalVisitorId  # fr
 cod.bitrec.com/topocentras-services/js/recs?$removeparam=r  # from Adguard
 cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adguard
 
-baidu.com/link?url=$removeparam=eqid  # from Adguard
-baidu.com$removeparam=rsv_pq  # from Adguard
-baidu.com$removeparam=rsv_t  # from Adguard
-
 ||daraz.*$removeparam=/keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
-
-||shopping.gmx.*^$removeparam=origin  # from Adguard
-
-shopping.web.de$removeparam=origin  # from Adguard
-
-nytimes.com$removeparam=impression_id  # from Adguard
 
 ||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com  # from Adguard
 
