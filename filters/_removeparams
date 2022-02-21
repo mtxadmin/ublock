@@ -602,6 +602,9 @@ $removeparam=_zucks_suid  # from Adguard
 3dnews.ru$removeparam=topblock  # from Ru AdList, modified
     ! ?topblock$document,removeparam=|,domain=3dnews.ru  # from Ru AdList
 
+5-delivery.ru$removeparam=c  # from Adguard
+5-delivery.ru$removeparam=pid  # from Adguard
+
 ! adjust.com - blocked entirely, just for information
 !adjust.com$removeparam=adgroup  # from Adguard
 
@@ -701,6 +704,11 @@ bing.com$removeparam=qs  # from NeatURL
 bing.com$removeparam=sc  # from NeatURL
 bing.com$removeparam=sk  # from NeatURL
 bing.com$removeparam=sp  # from NeatURL
+
+! bitrec.com - blocked entirely, just for information
+    ! cod.bitrec.com/topocentras-services/js/recs?$removeparam=externalVisitorId  # from Adguard
+    ! cod.bitrec.com/topocentras-services/js/recs?$removeparam=r  # from Adguard
+    ! cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adguard
 
 change.org$removeparam=guest  # Campaign tracking (Change.org)  # from NeatURL
 change.org$removeparam=recruited_by_id  # Campaign tracking (Change.org)  # from NeatURL
@@ -820,6 +828,11 @@ hh.ru$removeparam=totalVacancies
 
 hqbabes.com$removeparam=novoref
 
+! idealo-partner.com - blocked entirely, just for information
+    ! marketing.net.idealo-partner.com$removeparam=amc  # from Adguard
+    ! marketing.net.idealo-partner.com$removeparam=smc2  # from Adguard
+    ! marketing.net.idealo-partner.com$removeparam=smc5  # from Adguard
+
 infoq.com$removeparam=topicPageSponsorship  # from Adguard: infoq.com$removeparam=/topicPageSponsorship|^itm_/
 
 ! iqbroker.com - blocked entirely, just for information
@@ -899,9 +912,8 @@ $removeparam=epi,domain=microsoft.com|xbox.com  # from Adguard
 # from NeatURL
 addons.mozilla.org$removeparam=|src|source|surveyversion|updateChannel|fxVersion|isDefaultBrowser|searchEngine|syncSetup|type|flowId
 
-mvideo.ru$removeparam=reff
-mvideo.ru$_requestid
-    ! mvideo.ru$removeparam=/^(_requestid|reff)=/  # from Adguard
+mvideo.ru$removeparam=reff  # from Adguard: mvideo.ru$removeparam=/^(_requestid|reff)=/
+mvideo.ru$removeparam=_requestid  # from Adguard: mvideo.ru$removeparam=/^(_requestid|reff)=/
 
 ! myvisualiq.net - blocked entirely, just for information
 !t.myvisualiq.net$removeparam=~red  # from Adguard
@@ -1167,16 +1179,11 @@ alternate.de$removeparam=partner  # from Adguard
 
 galaxus.de$removeparam=pcscpId  # from Adguard
 
-marketing.net.idealo-partner.com$removeparam=amc  # from Adguard
-
 otto.de$removeparam=ActionID  # from Adguard
 
 otto.de$removeparam=campid  # from Adguard
 
 pricezilla.de$removeparam=bid  # from Adguard
-
-marketing.net.idealo-partner.com$removeparam=smc2  # from Adguard
-marketing.net.idealo-partner.com$removeparam=smc5  # from Adguard
 
 ||idealo.de/*.html$removeparam=offerKey  # from Adguard
 ||idealo.de/*.html$removeparam=offerListId  # from Adguard
@@ -1246,15 +1253,10 @@ naver.com$removeparam=bw  # from Adguard
 ||search.naver.com/search.naver$removeparam=tqi  # from Adguard
 ||lcs.naver.com/m?u=$removeparam=ts  # from Adguard
 
-5-delivery.ru$removeparam=c  # from Adguard
-5-delivery.ru$removeparam=pid  # from Adguard
-
 ||xplosion.de/ctx?event_id=$removeparam  # from Adguard
 
 ||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=ads_params  # from Adguard
 ||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=origin  # from Adguard
-
-mvideo.ru$removeparam=/^_requestid=/  # from Adguard: mvideo.ru$removeparam=/^(_requestid|reff)=/
 
 visit.digidip.net$removeparam=/^(ppref|pid)=/  # from Adguard: visit.digidip.net$removeparam=/^(ppref|ref|pid)=/
 
@@ -1279,10 +1281,6 @@ mioga.de$removeparam=pl  # from Adguard
 ||app.mi.com/download/*?id=$removeparam=appSignature  # from Adguard
 ||app.mi.com/download/*?id=$removeparam=nonce  # from Adguard
 
-cod.bitrec.com/topocentras-services/js/recs?$removeparam=externalVisitorId  # from Adguard
-cod.bitrec.com/topocentras-services/js/recs?$removeparam=r  # from Adguard
-cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adguard
-
 ||daraz.*$removeparam=/keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
 
 ||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com  # from Adguard
@@ -1290,3 +1288,4 @@ cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adgua
 $removeparam=a_aid,domain=expressvpn.com|vpnarea.com  # from Adguard
 
 ||hog.*^$removeparam=ad  # from Adguard
+
