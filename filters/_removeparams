@@ -738,6 +738,8 @@ etsy.com$removeparam=organic_search_click  # from NeatURL
 
 euronews.com$removeparam=_ope  # from Adguard
 
+express.de$removeparam=cb  # from Adguard
+
 facebook.com$removeparam=hc_ref  # from Ru AdList, modified
     ! facebook.com*/?hc_ref$removeparam=|,domain=facebook.com  # from Ru AdList
 facebook.com$removeparam=hrc  # Facebook  # from NeatURL
@@ -821,10 +823,14 @@ kaspersky.com$removeparam=icid  # from Adguard
 kitbag.com$removeparam=ab  # from Adguard
 kitbag.com$removeparam=_ref  # from Adguard
 
+kohls.com$removeparam=CID  # from Adguard
+
 kp.ru$removeparam=dl
     ! ?dl=$xhr,removeparam=|dl=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
 kp.ru$removeparam=location
     ! location=$xhr,removeparam=|location=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+
+ksta.de$removeparam=cb  # from Adguard
 
 lidl.de$removeparam=msktc  # from Adguard
 
@@ -1272,10 +1278,6 @@ cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adgua
 
 ||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com  # from Adguard
 
-express.de$removeparam=cb  # from Adguard
-
-ksta.de$removeparam=cb  # from Adguard
-
 $removeparam=a_aid,domain=expressvpn.com|vpnarea.com  # from Adguard
 
 ||hog.*^$removeparam=ad  # from Adguard
@@ -1285,6 +1287,3 @@ infoq.com$removeparam=/topicPageSponsorship|^itm_/  # from Adguard
 coupondunia.in$removeparam=itm_source  # from Adguard
 
 cht.com.tw$removeparam=Identifier  # from Adguard
-
-kohls.com$removeparam=CID  # from Adguard
-
