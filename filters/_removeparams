@@ -598,10 +598,10 @@ $removeparam=_zucks_suid  # from Adguard
 3dnews.ru$removeparam=topblock  # from Ru AdList, modified
     ! ?topblock$document,removeparam=|,domain=3dnews.ru  # from Ru AdList
 
-! blocked entirely, just for information
+! adjust.com - blocked entirely, just for information
 !adjust.com$removeparam=adgroup  # from Adguard
 
-! blocked entirely, just for information
+! admitad.com - blocked entirely, just for information
 !ad.admitad.com$removeparam=/^subid/  # from Adguard
 
 # from Adguard (sic!): $removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
@@ -619,7 +619,7 @@ get.adobe.com$removeparam=TRILIBIS_EMULATOR_UA  # from Adguard
 adorama.com$removeparam=obem  # from Adguard
 adorama.com$removeparam=bc_pid  # from Adguard
 
-! blocked entirely, just for information
+! adsafeprotected.com - blocked entirely, just for information
 !||pixel.adsafeprotected.com/services/pub?$removeparam=anId  # from Adguard
 !||pixel.adsafeprotected.com/services/pub?$removeparam=sessionId  # from Adguard
 !||pixel.adsafeprotected.com/services/pub?$removeparam=slot  # from Adguard
@@ -627,10 +627,10 @@ adorama.com$removeparam=bc_pid  # from Adguard
 !||pixel.adsafeprotected.com/services/pub?$removeparam=url  # from Adguard
 !||pixel.adsafeprotected.com/services/pub?$removeparam=wr  # from Adguard
 
-! blocked entirely, just for information
+! adshares.net - blocked entirely, just for information
 !adshares.net$removeparam=cid  # from Adguard
 
-! blocked entirely, just for information
+! adweek.com - blocked entirely, just for information
 !adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
 
 airbnb.com$removeparam=|source_impression_id|euid
@@ -707,7 +707,7 @@ change.org$removeparam=source_location  # Campaign tracking (Change.org)  # from
 comodo.com$removeparam=af  # from Adguard
 comodo.com$removeparam=track  # from Adguard
 
-! blocked entirely, just for information
+! cyber-ad01.cc - blocked entirely, just for information
 !cyber-ad01.cc$removeparam=ip  # from Adguard
 
 coupang.com$removeparam=lptag  # from Adguard: link.coupang.com$removeparam=lptag
@@ -717,8 +717,10 @@ coursera.org$removeparam=siteID  # from Adguard
 dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
 
 ||discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
+    ! ||api.discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/,domain=hgtv.com  # from Adguard
+    ! ||api.discovery.com/v1/streaming/video/*&adNetworkId=$xhr,removeparam=/^ad/,domain=ahctv.com|animalplanet.com|cookingchanneltv.com|destinationamerica.com|discovery.com|discoverylife.com|diynetwork.com|foodnetwork.com|hgtv.com|investigationdiscovery.com|motortrend.com|sciencechannel.com|tlc.com|travelchannel.com  # from uBlock filters
 
-! blocked entirely, just for information
+! doubleclick.net - blocked entirely, just for information
 !||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
 
 ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
@@ -746,9 +748,9 @@ finance.ua$removeparam=mpl  # from Ru AdList,modified
 
 fmworld.net$removeparam=mc_pc  # from Adguard: azby.fmworld.net$removeparam=mc_pc
 
-! blocked entirely, just for information
-||hit.gemius.pl/hitredir$removeparam=id  # from Adguard
-||hit.gemius.pl/hitredir$removeparam=extra  # from Adguard
+! gemius.pl - blocked entirely, just for information
+!||hit.gemius.pl/hitredir$removeparam=id  # from Adguard
+!||hit.gemius.pl/hitredir$removeparam=extra  # from Adguard
 
 ! I am not sure, is it safe to modify these google rules. So they mostly are as is here.
 ! Too lazy to test it out, sorry :-) Maybe, sometimes.
@@ -809,7 +811,7 @@ hh.ru$removeparam=totalVacancies
 
 hqbabes.com$removeparam=novoref
 
-! blocked entirely, just for information
+! iqbroker.com - blocked entirely, just for information
 !iqbroker.com$removeparam=afftrack  # from Adguard
 
 instagram.com$removeparam=igshid  # from Adguard
@@ -835,7 +837,7 @@ linkedin.com$removeparam=midToken  # from NeatURL
 linkedin.com$removeparam=recommendedFlavor  # from NeatURL
 linkedin.com$removeparam=trackingId  # from NeatURL
 
-! blocked entirely, just for information
+! loginfra.com - blocked entirely, just for information
 !||cc.loginfra.com/cc$removeparam=a  # from Adguard
 !||cc.loginfra.com/cc$removeparam=bw  # from Adguard
 !||cc.loginfra.com/cc$removeparam=px  # from Adguard
@@ -849,12 +851,26 @@ mail.ru$removeparam=exp_id
 mail.ru$removeparam=oprtrack  # from Adguard
 mail.ru$removeparam=smotri_id  # from Ru AdList, modified
     ! smotri_id=$document,removeparam=|smotri_id,domain=mail.ru  # from Ru AdList
+! unusual Ru AdList form:
+$document,removeparam=fm,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=fr,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=frm,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=hasnavig,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=sbmt,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=src,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=test_id,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=us,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=ushq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=usln,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=usqid,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=usstr,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=ustq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 
 maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
     ! ?previewToken=$document,removeparam=|,domain=maximonline.ru  # from Ru AdList
 
-! blocked entirely, just for information
-||media01.eu/set.aspx$removeparam=trackid  # from Adguard
+! media01.eu - blocked entirely, just for information
+!||media01.eu/set.aspx$removeparam=trackid  # from Adguard
 
 mediamarkt.com.tr$removeparam=rbtc  # from Adguard
 
@@ -872,7 +888,7 @@ mvideo.ru$removeparam=reff
 mvideo.ru$_requestid
     ! mvideo.ru$removeparam=/^(_requestid|reff)=/  # from Adguard
 
-! blocked entirely, just for information
+! myvisualiq.net - blocked entirely, just for information
 !t.myvisualiq.net$removeparam=~red  # from Adguard
 
 ||nationalinterest.org$removeparam=|itok|timestamp
@@ -897,7 +913,7 @@ ozon.ru$removeparam=_bctx
 ozon.ru$removeparam=miniapp
 ozon.ru$removeparam=sh
 
-! blocked entirely, just for information
+! rakuten - blocked entirely, just for information
 !rakuten.co.jp$removeparam=scid  # from Adguard
 !rakuten.co.jp*&trflg=$removeparam=trflg  # from Adguard
 
@@ -927,6 +943,9 @@ satom.ru$removeparam=i
 
 #sevenforums.com$removeparam=__cf_chl_jschl_tk__  # don`t, it seems, it is "DDoS protection by Cloudflare" param
 
+! sextgem.com - blocked entirely, just for information
+!sextgem.com$removeparam=id  # from uBlock filters
+
 sourceforge.net$removeparam=position  # from NeatURL
 
 sportmail.ru$removeparam=exp_id
@@ -935,12 +954,16 @@ sportmail.ru$removeparam=exp_id
 sports.ru$removeparam=e  # from Ru AdList, modified
     ! ?e=lfm$document,removeparam=|,domain=sports.ru  # from Ru AdList
 
-! blocked entirely, just for information
-! starlight.digital$removeparam=testadv  # from Ru AdList, modified
+! starlight.digital - blocked entirely, just for information
+!starlight.digital$removeparam=testadv  # from Ru AdList, modified
     ! ||vcms-api*.starlight.digital/hls/*?file=*&testadv=$removeparam=testadv  # from Adguard
 
 spotify.com$removeparam=context  # from NeatURL
 spotify.com$removeparam=si  # from NeatURL
+
+steampowered.com$removeparam=/^curator_clanid/  # from Adguard, modified
+steamcommunity.com$removeparam=/^curator_clanid/  # from Adguard, modified
+    ! $removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com  # from Adguard
 
 ! See taobao rules in aliexpress file
 
@@ -1245,8 +1268,6 @@ cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adgua
 
 ||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com  # from Adguard
 
-$removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com  # from Adguard
-
 express.de$removeparam=cb  # from Adguard
 
 ksta.de$removeparam=cb  # from Adguard
@@ -1268,23 +1289,3 @@ weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$rem
 zhihu.com$removeparam=hybrid_search_extra  # from uBlock filters
 zhihu.com$removeparam=hybrid_search_source  # from uBlock filters
 
-sextgem.com$removeparam=id  # from uBlock filters
-
-! unusual Ru AdList form:
-$document,removeparam=fm,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=fr,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=frm,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=hasnavig,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=sbmt,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=src,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=test_id,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=us,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=ushq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=usln,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=usqid,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=usstr,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=ustq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-
-discovery.com$removeparam=/^ad/
-    ! ||api.discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/,domain=hgtv.com  # from Adguard
-    ! ||api.discovery.com/v1/streaming/video/*&adNetworkId=$xhr,removeparam=/^ad/,domain=ahctv.com|animalplanet.com|cookingchanneltv.com|destinationamerica.com|discovery.com|discoverylife.com|diynetwork.com|foodnetwork.com|hgtv.com|investigationdiscovery.com|motortrend.com|sciencechannel.com|tlc.com|travelchannel.com  # from uBlock filters
