@@ -1003,6 +1003,8 @@ uplynk.com$removeparam=/^ad/
 shopping.web.de$removeparam=origin  # from Adguard
 ||shopping.gmx.*^$removeparam=origin  # from Adguard
 
+weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$removeparam=/distributorid|wfr|ifr|share_relation/
+
 ||wildberries.ru$removeparam=|targetUrl
 
 ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck!
@@ -1050,6 +1052,10 @@ youtube.com$removeparam=feature  # from NeatURL
 youtube.com$removeparam=kw  # from NeatURL
 youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
     ! ?sub_confirmation=1$document,removeparam=|,domain=youtube.com  # from Ru AdList
+
+! zhihu.com - blocked entirely, just for information
+zhihu.com$removeparam=hybrid_search_extra  # from uBlock filters
+zhihu.com$removeparam=hybrid_search_source  # from uBlock filters
 
 ||zr.ru$removeparam=|internal_visits  # found independently
 
@@ -1283,9 +1289,4 @@ coupondunia.in$removeparam=itm_source  # from Adguard
 cht.com.tw$removeparam=Identifier  # from Adguard
 
 kohls.com$removeparam=CID  # from Adguard
-
-weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$removeparam=/distributorid|wfr|ifr|share_relation/
-
-zhihu.com$removeparam=hybrid_search_extra  # from uBlock filters
-zhihu.com$removeparam=hybrid_search_source  # from uBlock filters
 
