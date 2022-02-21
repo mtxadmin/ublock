@@ -268,6 +268,10 @@ $removeparam=idealoid
     ! technikdirekt.de$removeparam=idealoid  # from Adguard
 
 $removeparam=/^itm_.*/ # Campaign tracking (itm)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+    # ITM - Internal Marketing Campaign. Like UTM, but ITM
+    # https://www.smashingmagazine.com/2017/08/tracking-internal-marketing-campaigns-google-analytics/
+    ! coupondunia.in$removeparam=itm_source  # from Adguard
+    ! infoq.com$removeparam=/topicPageSponsorship|^itm_/  # from Adguard
 
 $removeparam=irgwc  # from Adguard and Ru AdList
     ! https://github.com/AdguardTeam/AdguardFilters/issues/108478
@@ -704,6 +708,9 @@ change.org$removeparam=recruiter  # Campaign tracking (Change.org)  # from NeatU
 change.org$removeparam=short_display_name  # Campaign tracking (Change.org)  # from NeatURL
 change.org$removeparam=source_location  # Campaign tracking (Change.org)  # from NeatURL
 
+! cht.com.tw - blocked entirely, just for information
+!cht.com.tw$removeparam=Identifier  # from Adguard: cht.com.tw$removeparam=Identifier
+
 comodo.com$removeparam=af  # from Adguard
 comodo.com$removeparam=track  # from Adguard
 
@@ -812,6 +819,8 @@ hh.ru$removeparam=targetingParams
 hh.ru$removeparam=totalVacancies
 
 hqbabes.com$removeparam=novoref
+
+infoq.com$removeparam=topicPageSponsorship  # from Adguard: infoq.com$removeparam=/topicPageSponsorship|^itm_/
 
 ! iqbroker.com - blocked entirely, just for information
 !iqbroker.com$removeparam=afftrack  # from Adguard
@@ -1281,9 +1290,3 @@ cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adgua
 $removeparam=a_aid,domain=expressvpn.com|vpnarea.com  # from Adguard
 
 ||hog.*^$removeparam=ad  # from Adguard
-
-infoq.com$removeparam=/topicPageSponsorship|^itm_/  # from Adguard
-
-coupondunia.in$removeparam=itm_source  # from Adguard
-
-cht.com.tw$removeparam=Identifier  # from Adguard
