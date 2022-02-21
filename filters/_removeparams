@@ -1007,6 +1007,9 @@ weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$rem
 
 ||wildberries.ru$removeparam=|targetUrl
 
+xxx-comics.pro$removeparam=view
+    ! ||xxx-comics.pro/*?view=$doc,other,removeparam=view  # from uBlock filters
+
 ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck!
 zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
     ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
@@ -1026,12 +1029,7 @@ yandex.*$removeparam=msid
     ! ||yandex.*/sport/$removeparam=msid  # from Adguard
 market.yandex.*$removeparam=nid  # from Ru AdList, modified
     ! ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
-
-xxx-comics.pro$removeparam=view
-    ! ||xxx-comics.pro/*?view=$doc,other,removeparam=view  # from uBlock filters
-
 yandex.ru$removeparam=parent-reqid
-
 yandex.*$removeparam=persistent_id  # from Adguard, modified
     ! ||yandex.*/news/$removeparam=persistent_id  # from Adguard
     ! ||yandex.*/sport/$removeparam=persistent_id  # from Adguard
