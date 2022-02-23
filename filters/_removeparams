@@ -482,7 +482,7 @@ $removeparam=siteId  # Oracle Eloqua  # from NeatURL
 $removeparam=soc_src  # Yahoo general parameter  # from NeatURL
 $removeparam=soc_trk  # Yahoo general parameter  # from NeatURL
 
-$removeparam=source
+$removeparam=source,domain=~googlevideo.com  # Exclusion: youtube
     ! ||amazon.*/hz/contact-us/csp$removeparam=source  # from Adguard
     ! cht.com.tw$removeparam=Source  # from Adguard
     ! edx.org$removeparam=source  # from Adguard
