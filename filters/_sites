@@ -3510,26 +3510,31 @@ cisoclub.ru##.fa-angle-up
 cisoclub.ru###btn-gotop
 cisoclub.ru##.social-widgets
 
-! banners and promos
+    ! banners and promos
 ||citilink.ru/banners$image
+||citilink.ru/*/banners/$image
 citilink.ru##.banner_tr
 citilink.ru##.between-card-banner_gtm-js
 citilink.ru##.between-card-banner_pageevents-js
 citilink.ru##.link-between-card-banners_gtm-js
 citilink.ru##.link-between-card-banners_pageevents-js
 citilink.ru##.toggling_banners
-! striked prices
+citilink.ru##a[href^="/promo/"]
+||citilink.ru/media/home/main_top_right.jpg
+citilink.ru##.Tooltip__content
+citilink.ru##.Main__slider-wrapper
+    ! striked prices
 citilink.ru##.old_price
-! related blocks
+    ! related blocks
 citilink.ru##.main_content_inner > .products-slider-box:has-text(С этим товаром часто покупают)
 citilink.ru##.opinions_view.product_view > .products-slider-box:has-text(Похожие товары)
-! telemetry
+    ! telemetry
 ! ping to frontend-monitoring.services.citik.ru/api/saveMetrics
 citik.ru/api/saveMetrics
 ||citilink.ru/*/saveMetrics
 !citilink.ru/frontend-monitoring.service/api/saveMetrics
 ||citilink.ru/geo/
-! other
+    ! other
 citilink.ru##.product-card-info-error
 citilink.ru##.recently-product-box
 citilink.ru##.menu_action
@@ -3557,6 +3562,7 @@ citilink.ru##.PersonalDataConfirm
 citilink.ru##.ProductPage__resently-viewed
 citilink.ru##.BrandList
 citilink.ru##.SpecificationsFull__ask-question-button
+citilink.ru##.ConfiguratorBox
 
 city-denta.ru##.rev_slider_wrapper
 
@@ -5059,7 +5065,9 @@ ecco-shoes.ru##.position-icons-pay
 
 @@||echo.msk.ru^$generichide,badfilter
 echo.msk.ru##.mmage
+echo.msk.ru##.mmperson
 echo.msk.ru##.fixedpopul
+echo.msk.ru##.live-icon
 
 eco-dush.ru##.fix-scroll
 
@@ -13893,6 +13901,12 @@ pikabu.ru##article.story:has(.story__user-info:has-text(fumetox))
 pikabu.ru##article.story:has(.story__user-info:has-text(Tarazed))
 pikabu.ru##article.story:has(.story__user-info:has-text(dredfordead))
 pikabu.ru##article.story:has(.story__user-info:has-text(Mik.007))
+pikabu.ru##article.story:has(.story__user-info:has-text(BigWar2020))
+pikabu.ru##article.story:has(.story__user-info:has-text(Expert.Crimea))
+pikabu.ru##article.story:has(.story__user-info:has-text(Mr.RatHunter))
+pikabu.ru##article.story:has(.story__user-info:has-text(bolt2001))
+pikabu.ru##article.story:has(.story__user-info:has-text(Sigmil))
+pikabu.ru##article.story:has(.story__user-info:has-text(Dgamsaran))
 !
 !
 pikabu.ru##.pik-virus
@@ -22639,3 +22653,35 @@ geeksforgeeks.org##.shell
 338lm.ru##.widget-button
 
 d3ward.github.io##.gt-link
+
+unian.net,unian.ua##.main-menu__content:style(position:static !important)
+unian.net,unian.ua##.window
+unian.net,unian.ua##.footer-menu__app
+! "time to read"
+unian.net,unian.ua##.comments.article__info-item
+unian.ua,unian.ua##.comments.publication__info-item
+! top
+unian.net,unian.ua##.main-menu__close
+
+||1plus1.video/ab
+||1plus1.video/static/img/ab/
+||1plus1.video/*/recommendation_projects/
+
+korrespondent.net##.icon-photo
+korrespondent.net##.icon-photo_large
+korrespondent.net##.icon-video
+korrespondent.net##.icon-video_large
+
+intrepidintegration.com###animatedComponent
+
+pac.ru##.floating-info-block
+pac.ru##.PacAndGo
+
+autostat.ru##.Block-subscribe
+
+moex.com##.banners-slider
+moex.com##.widget-ticker
+moex.com##.new-moex-main-page-content-block__socials.new-moex-socials
+moex.com##.new-moex-socials
+moex.com##.floatHeader
+moex.com##.header-content-top-phones
