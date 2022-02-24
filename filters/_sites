@@ -3510,26 +3510,31 @@ cisoclub.ru##.fa-angle-up
 cisoclub.ru###btn-gotop
 cisoclub.ru##.social-widgets
 
-! banners and promos
+    ! banners and promos
 ||citilink.ru/banners$image
+||citilink.ru/*/banners/$image
 citilink.ru##.banner_tr
 citilink.ru##.between-card-banner_gtm-js
 citilink.ru##.between-card-banner_pageevents-js
 citilink.ru##.link-between-card-banners_gtm-js
 citilink.ru##.link-between-card-banners_pageevents-js
 citilink.ru##.toggling_banners
-! striked prices
+citilink.ru##a[href^="/promo/"]
+||citilink.ru/media/home/main_top_right.jpg
+citilink.ru##.Tooltip__content
+citilink.ru##.Main__slider-wrapper
+    ! striked prices
 citilink.ru##.old_price
-! related blocks
+    ! related blocks
 citilink.ru##.main_content_inner > .products-slider-box:has-text(С этим товаром часто покупают)
 citilink.ru##.opinions_view.product_view > .products-slider-box:has-text(Похожие товары)
-! telemetry
+    ! telemetry
 ! ping to frontend-monitoring.services.citik.ru/api/saveMetrics
 citik.ru/api/saveMetrics
 ||citilink.ru/*/saveMetrics
 !citilink.ru/frontend-monitoring.service/api/saveMetrics
 ||citilink.ru/geo/
-! other
+    ! other
 citilink.ru##.product-card-info-error
 citilink.ru##.recently-product-box
 citilink.ru##.menu_action
@@ -3557,6 +3562,7 @@ citilink.ru##.PersonalDataConfirm
 citilink.ru##.ProductPage__resently-viewed
 citilink.ru##.BrandList
 citilink.ru##.SpecificationsFull__ask-question-button
+citilink.ru##.ConfiguratorBox
 
 city-denta.ru##.rev_slider_wrapper
 
