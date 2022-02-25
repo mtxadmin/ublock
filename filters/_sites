@@ -1120,7 +1120,7 @@ amazon.com##.a-carousel
 ||ssl-images-amazon.com/images/*/dasf-  # is in EasyList
 ||amazon.*/ajax/counter?  # from EasyPricacy
 ||amazon.com/gp/cerberus  # trackers?
-||unagi-*.amazon.com/1/events^  # from AdGuard Tracking Protection
+||unagi*.amazon.com/1/events^  # from AdGuard Tracking Protection
 ||a2z.com/x.png  # tracking
 @@||amazon.*/*uedata$first-party,image,badfilter  # No exclusion for amazon. Also added $important up in general rules
 ! see in _marketing: fls-na.amazon.com$important
@@ -13914,6 +13914,8 @@ pikabu.ru##article.story:has(.story__user-info:has-text(Yuripupolos))
 pikabu.ru##article.story:has(.story__user-info:has-text(taoekk))
 pikabu.ru##article.story:has(.story__user-info:has-text(SUPERROBOT))
 pikabu.ru##article.story:has(.story__user-info:has-text(ideallogin))
+pikabu.ru##article.story:has(.story__user-info:has-text(ar.30))
+pikabu.ru##article.story:has(.story__user-info:has-text(ZelenyyKarandash))
 !
 !
 pikabu.ru##.pik-virus
@@ -22692,3 +22694,7 @@ moex.com##.new-moex-main-page-content-block__socials.new-moex-socials
 moex.com##.new-moex-socials
 moex.com##.floatHeader
 moex.com##.header-content-top-phones
+
+leadberry.com$3p  # from Adguard: ||leadberry.com/trackers/$third-party
+
+metricskey.com$3p  # from Adguard
