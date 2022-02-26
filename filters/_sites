@@ -13773,6 +13773,8 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="dezzzdr
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^dezzzdro$/)):style(color:#F0F0F0)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="QwertyNovikov"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^QwertyNovikov$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dragovich1986"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Dragovich1986$/)):style(color:#F0F0F0)
 !
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Diego123"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Diego123$/)):style(color:#F0F0F0)
@@ -21908,13 +21910,6 @@ kb.zyxel.ru###launcher
 ! from uBlock filters
 ###bio_ep_bg
 
-/jquery.smartbanner.js$important  # from Ru AdList, modified
-
-! is in EasyList
-/edmonton.webp$script,important
-
-/logimpressions?$important  # is in EasyPrivacy and uBlock filter
-    ! ||docs.google.com/*/logimpressions
 
 /stats/ida_  # from EasyPrivacy
 
@@ -21922,8 +21917,6 @@ kb.zyxel.ru###launcher
 .php?referer=
 
 -ads.js?  # from EasyList
-
-||cse.google.com/cse.js?cx=partner-pub$important
 
 ! is in Fanboy’s and Web Annoyances Ultralist 
 ##.actnbr-has-follow
