@@ -6,6 +6,19 @@
 !
 ! At present, all official Russian jornalism is mostly fake. But even against this background, some sites stand out
 
+
+
+! сборные правила для вычистки пропаганды и fakenews из выдачи поисковых систем. Список доменов (только основные) ниже
+! 
+
+yandex.com,yandex.ru##.serp-item:has-text(/(/|\.)(24smi.org|dni.ru|iz.ru|kp.ru|news-front.info|pravdoryb.info|news.rambler.ru|ria.ru|riafan.ru|rt.com|smi.today|ukraina.ru|zelv.ru)/i)
+
+www.google.com,www.google.ru##div.g:has-text(/(/|\.)(24smi.org|dni.ru|iz.ru|kp.ru|news-front.info|pravdoryb.info|news.rambler.ru|ria.ru|riafan.ru|rt.com|smi.today|ukraina.ru|zelv.ru)/i)
+
+duckduckgo.com##.result__body:has-text(/(/|\.)(24smi.org|dni.ru|iz.ru|kp.ru|news-front.info|pravdoryb.info|news.rambler.ru|ria.ru|riafan.ru|rt.com|smi.today|ukraina.ru|zelv.ru)/i)
+
+
+
 !! domains
 
 ! news aggregator 123ru.net/29ru.net, network with several domains. 
