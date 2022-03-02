@@ -1,0 +1,613 @@
+﻿!! It is a sublist of Yet another small uBlock filter list
+! See https://github.com/mtxadmin/ublock for details
+!
+! Something doesn't work? Something is missing? Please, feel free to write about it here:
+! https://github.com/mtxadmin/ublock/issues/new
+
+
+! pikabu.ru
+! К сожалению, Пикабу перегрузили финтифлюшками и скриптами, и оно подтормаживает на обработке общих косметических правил. 
+! Сделаем исключение и повторим применимые общие правила конкретно на сайт
+@@||pikabu.ru^$generichide
+! bad filter in Adguard
+pikabu.ru#@#div[class="overlay"][style^="z-index:"]
+! bad filter in Adguard
+pikabu.ru#@#div[class="overlay"][style="z-index: 6001;"]
+||pikabu.ru/files/techworks.swf
+||pikabu.ru/images/fun/scheadar.png
+||pikabu.ru/images/jobseeker/
+||pikabu.ru/images/pechenka*.png$image
+||pikabu.ru/promo-test/
+||pikabu.ru/stat/
+||pikabu.ru/*/telegram_widget/
+@@||pikabu.ru/images/previews_gif_comm/*.gif  # exclusion from gif filter. Gifs are static here, statring on click.
+||specials.pikabu.ru/yandex_taxi/
+!
+! from AdGuard
+pikabu.ru##div[id^="adfox_"]
+pikabu.ru##div[id^=crt-]
+! from Ru AdList
+pikabu.ru##[data-placeholder-handled]
+! from Ru AdList
+pikabu.ru##header > .header__main:style(background-color: var(--color--header__bg) !important)
+! is in Ru AdList
+pikabu.ru##.header-right-menu > a[href][target="_blank"]
+! is in Ru AdList
+pikabu.ru##[onclick*="branding_click"]
+pikabu.ru##.ads-placeholder
+pikabu.ru##.promo-banner
+pikabu.ru##.thematic-campaign
+!
+! ads: promos and ad posts
+pikabu.ru##.section-group:has(p > a[href^="https://pikabu.ru/page/interview/"])
+pikabu.ru##.story:has(.story__sponsor)
+pikabu.ru##.story__main:has(.story__sponsor)
+pikabu.ru##.story:has(.story__pin)
+! is in Ru AdList
+pikabu.ru##.story:has(* > [id] + script)
+pikabu.ru##.story__share
+pikabu.ru##.story__share-icon
+pikabu.ru##.story__share-new
+!
+! 2021-11 short posts backgrounds
+! Disable fancy style for short posts
+! see https://pikabu.ru/story/ubiraem_krasivoe_oformlenie_korotkikh_postov_8621629
+pikabu.ru##svg.icon--ui__bg-story-short
+pikabu.ru##+js(remove-class.js, story_short)
+!
+! 2021-12 author descriptions in post titles
+pikabu.ru##.story__author-description
+!
+    ! email subscription forms
+pikabu.ru##.email-block
+pikabu.ru##.email-form_block
+    ! ads in posts (by platform)
+pikabu.ru##.page-story__story:has(#adfox_context_story_1)
+    ! ads in posts (by users)
+!pikabu.ru##p:has(a[href*="http://t.me"])
+!pikabu.ru##p:has(a[href*="https://t.me"])
+!pikabu.ru##p:has(a[href*="https://www.instagram.com/"])
+!
+    ! sidebar is full of fintiflyushek
+pikabu.ru##.sidebar-block__content_links
+pikabu.ru##.sidebar-block-links
+pikabu.ru##.sidebar-block-links__apps
+pikabu.ru##.sidebar-block_placeholder
+pikabu.ru##.sidebar-block__promo
+pikabu.ru##.sidebar-social
+pikabu.ru##.social-icon
+pikabu.ru##.telegram-widget
+pikabu.ru##.messengers-widget
+pikabu.ru##.vk_groups
+pikabu.ru##.sidebar__inner_fixed:style(position:static !important)
+pikabu.ru##.wimmelbook
+!pikabu.ru##.add-post-and-community - don't
+pikabu.ru##.add-post-and-community__title
+pikabu.ru##.add-post-and-community__text
+pikabu.ru##.add-post-and-community__content
+! from RU AdList
+pikabu.ru##.footer__inner:style(background-color: var(--color--app__bg) !important; color: var(--color--app__text) !important)
+pikabu.ru##.footer__main:style(position:static !important)
+! from RU AdList
+!pikabu.ru##.app > .app__inner[style*="padding-top"]:style(padding-top: 64px !important
+! from RU AdList and AdGuard
+pikabu.ru##.sidebar-block_placeholder
+! from RU AdList
+pikabu.ru##.stories-feed__message:has(:scope > .widget-container)
+! fixed theme picker button
+pikabu.ru##.theme-picker
+! fixed theme picker button
+pikabu.ru##pkb-theme-picker-button
+! header changed, now it is not sticky
+!pikabu.ru##.header__main
+!pikabu.ru##.header_absolute
+pikabu.ru##.header__mobile:style(position:static !important)
+pikabu.ru##pkb-header:style(position:static !important)
+pikabu.ru##.app__content:style(padding-top:0px !important)
+pikabu.ru##.sidebar__right:style(position:static !important)
+pikabu.ru##.page-story > section
+! рекомендации в ленте
+pikabu.ru##.stories-feed__recommend-button
+!
+! unstick mobile sticky header
+pikabu.ru###right_container:style(position:absolute !important)
+!
+! cookie pictures
+||pikabu.ru/apps/ub/*/sprite_*dpi.png
+||pikabu.ru/post_img/2021/04/07/8/1617798406116975272.png
+pikabu.ru##.logo
+pikabu.ru###brov
+pikabu.ru###myflash
+pikabu.ru##.footer__cookie
+pikabu.ru##.footer__image
+pikabu.ru##.bd2021__cake
+pikabu.ru##.ny2022-btn
+pikabu.ru##.hny-btn
+pikabu.ru##a[href="/"] > pkb-icon
+!
+! ads in menu ("special projects")
+pikabu.ru##a.sidebar-menu__item_main.sidebar-menu__item:has(img)
+! ads in lenta
+pikabu.ru##.stories-feed__recommend-button
+!
+! pictures below the menu
+pikabu.ru##:root::after:style(background-image:none !important)
+pikabu.ru##.header__main::after:style(background-image:none !important)
+!
+    ! apps
+pikabu.ru##.footer__buttons
+pikabu.ru##.footer__title
+! small icons about app-posted messages
+pikabu.ru##.comment__platform
+!
+    ! socials
+pikabu.ru##.social-icon
+pikabu.ru##div.section-hr
+pikabu.ru##.share
+pikabu.ru##.share-facebook
+pikabu.ru##.share-linkedin
+pikabu.ru##.share-twitter
+!
+    ! dots on avatar
+pikabu.ru##.avatar__note
+!
+    ! turbo top
+pikabu.ru##.advert__item
+pikabu.ru##.advert
+pikabu.ru##.header-turbo-icon
+pikabu.ru##.header_logo-host
+pikabu.ru##.cover::before
+! emotions in posts
+pikabu.ru##.emotions
+    ! lightbulbs
+pikabu.ru##div.menu_vertical.menu.sidebar-block__content_hr.sidebar-block__content:has-text(Ламповый конструктор)
+pikabu.ru##.lightbulbs__welcome
+pikabu.ru##.stories-feed__container > section:has-text(Создать свою доску)
+    ! skidki with urlshorneners
+pikabu.ru##pkb-deal:has(a[href^="https://ali.ski/"])
+pikabu.ru##pkb-deal:has(a[href^="https://fas.st/"])
+pikabu.ru##pkb-deal:has(a[href^="https://lite.al/"])
+pikabu.ru##pkb-deal:has(a[href^="https://lite.bz/"])
+! and footer
+skidki.pikabu.ru##pkb-footer
+    ! fake notifications
+pikabu.ru##.bell:has-text(/^1$/)
+pikabu.ru##.header-right-menu__notification_active > icon:style(animation:none)
+!
+! other
+pikabu.ru##div.sidebar-block_border.sidebar-block:has(.sidebar-block__header:has-text(Вакансии))
+pikabu.ru##div.footer__section:has-text(Партнёры)
+pikabu.ru##.grecaptcha-logo
+pikabu.ru##.grecaptcha-badge
+pikabu.ru##.page-story__placeholder
+pikabu.ru##.user__sberbank
+pikabu.ru##fw-game1-launcher
+pikabu.ru##.kong-vs-godzilla
+pikabu.ru##.popup_bottom-widget
+pikabu.ru##.halloween
+pikabu.ru##.story__top
+! xz
+pikabu.ru##.profile_short
+! post author descriptions
+pikabu.ru##.story__author-description
+! don't remove popups, they are all needed
+!pikabu.ru##.popup_show.popup_animation.popup
+!pikabu.ru##.popup
+pikabu.ru##.section_gray:has-text(Чтобы оставить комментарий, необходимо)
+! bottom icons
+pikabu.ru##.birthday-2020__button
+pikabu.ru##.play-snowball
+pikabu.ru##.play-snowball_show
+! comments refresher to up
+pikabu.ru##.comments-navigator__inner:style(top:20px !important)
+! profile name
+pikabu.ru##.user__nick_big
+! popups - doesn't work properly
+!pikabu.ru##+js(remove-attr.js,mouseover,.comment__user)
+!pikabu.ru##.popup__wrapper  ! don't!
+! popups new ver
+pikabu.ru##.popup__content-notification
+!pikabu.ru##.overlay - don't
+pikabu.ru##.evaluation
+! pictures in comments (todo: need to exclude gifs)
+!pikabu.ru##.comment-image:style(height:100px)
+pikabu.ru##.comment-image:not(:has(.player)):style(height:100px)
+! for todo: images (not gif) descriptor  ##.comment-image:has(>.comment-image__content)
+! ad icons in right top menu
+pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeneyahe_i_d_4931277"]
+!cs.specials.pikabu.ru
+!
+! some user-generated pictures
+||pikabu.ru/post_img/2020/04/16/10/1587058488132653149.png
+!||cs10.pikabu.ru/post_img/2020/04/16/10/1587058488132653149.png
+!
+! naggy avatars
+! technical detail: instead l,m,x,v,s file prefixes there are asterisks here
+! for users who changed one naggy avatar to another there are asterisk in the end
+||pikabu.ru/avatars/1008/*1008977-1366017883.$image
+||pikabu.ru/avatars/1026/*1026521-753486151.$image
+||pikabu.ru/avatars/1073/*1073747-31130728.$image
+||pikabu.ru/avatars/1080/*1080132-965648953.$image
+||pikabu.ru/avatars/1091/*1091825-2054329892.$image
+||pikabu.ru/avatars/1096/*1096039-743553140.$image
+||pikabu.ru/avatars/1101/*1101896-835075015.$image
+||pikabu.ru/avatars/1196/*1196896-1115528890.$image
+||pikabu.ru/avatars/1246/*1246844-414113464.$image
+||pikabu.ru/avatars/1257/*1257417-725253209.$image
+||pikabu.ru/avatars/1266/*1266719-1915821138.$image
+||pikabu.ru/avatars/1281/*1281267-1760226258.$image
+||pikabu.ru/avatars/1330/*1330554-269315424.$image
+||pikabu.ru/avatars/1349/*1349111-1060810106.$image
+||pikabu.ru/avatars/1367/*1367125-1511337278.$image
+||pikabu.ru/avatars/1388/*1388707-473698224.$image
+||pikabu.ru/avatars/1440/*1440715-1317571894.$image
+||pikabu.ru/avatars/1447/*1447661-1534066706.$image
+||pikabu.ru/avatars/1456/*1456878-1311679838.$image
+||pikabu.ru/avatars/1510/*1510797-1709723718.$image
+||pikabu.ru/avatars/1551/*1551346-830212768.$image
+||pikabu.ru/avatars/1559/*1559641-41185554.$image
+||pikabu.ru/avatars/156/*156380-1861719492.$image
+||pikabu.ru/avatars/1574/*1574710-1513273728.$image
+||pikabu.ru/avatars/1619/*1619396-*.$image
+||pikabu.ru/avatars/1641/*1641684-*.$image
+||pikabu.ru/avatars/1665/*1665129-1598061669.$image
+||pikabu.ru/avatars/1728/*1728022-1396337591.$image
+||pikabu.ru/avatars/1740/*1740772-657271432.$image
+||pikabu.ru/avatars/1822/*1822732-1540532175.$image
+||pikabu.ru/avatars/1822/*1822749-822469082.$image
+||pikabu.ru/avatars/1877/*1877095-626341361.$image
+||pikabu.ru/avatars/1889/*1889504-3554591.$image
+||pikabu.ru/avatars/1913/*1913483-2127488860.$image
+||pikabu.ru/avatars/196/*196627-1975217352.$image
+||pikabu.ru/avatars/2010/*2010279-1166779222.$image
+||pikabu.ru/avatars/2025/*2025700-1456545963.$image
+||pikabu.ru/avatars/2025/*2025888-915478001.$image
+||pikabu.ru/avatars/2065/*2065406-1943112822.$image
+||pikabu.ru/avatars/2078/*2078268-577050161.$image
+||pikabu.ru/avatars/2108/*2108016-1041809838.$image
+||pikabu.ru/avatars/2225/*2225324-1043675825.$image
+||pikabu.ru/avatars/2227/*2227647-1057542251.$image
+||pikabu.ru/avatars/2247/*2247480-1307976850.$image
+||pikabu.ru/avatars/2315/*2315349-1289887118.$image
+||pikabu.ru/avatars/2351/*2351922-85726685.$image
+||pikabu.ru/avatars/2376/*2376127-454198417.$image
+||pikabu.ru/avatars/2382/*2382121-97405594.$image
+||pikabu.ru/avatars/2400/*2400777-474677994.$image
+||pikabu.ru/avatars/2406/*2406557-2100424455.$image
+||pikabu.ru/avatars/2429/*2429655-1551465768.$image
+||pikabu.ru/avatars/244/*244223-$image
+||pikabu.ru/avatars/2466/*2466421-828110642.$image
+||pikabu.ru/avatars/2468/*2468862-2050693708.$image
+||pikabu.ru/avatars/2480/*2480812-494463187.$image
+||pikabu.ru/avatars/2531/*2531595-1490186805.$image
+||pikabu.ru/avatars/2544/*2544877-1863435265.$image
+||pikabu.ru/avatars/255/l255424-780265340.$image
+||pikabu.ru/avatars/2573/*2573866-894041253.$image
+||pikabu.ru/avatars/26/*26439-370412912.$image
+||pikabu.ru/avatars/2613/*2613714-397781318.$image
+||pikabu.ru/avatars/2643/*2643850-243022014.$image
+||pikabu.ru/avatars/2656/*2656224-615281879.$image
+||pikabu.ru/avatars/2752/*2752673-15146129.$image
+||pikabu.ru/avatars/2765/*2765368-1988781534.$image
+||pikabu.ru/avatars/2805/*2805162-1170105742.$image
+||pikabu.ru/avatars/2806/*2806576-193133188.$image
+||pikabu.ru/avatars/2828/*2828290-2024029288.$image
+||pikabu.ru/avatars/2838/*2838243-478810401.$image
+||pikabu.ru/avatars/2856/*2856444-356776053.$image
+||pikabu.ru/avatars/2871/*2871567-2047915574.$image
+||pikabu.ru/avatars/2910/*2910296-633010009.$image
+||pikabu.ru/avatars/292/*292469-1801891975.$image
+||pikabu.ru/avatars/2925/*2925857-20646334.$image
+||pikabu.ru/avatars/2940/*2940341-1456609682.$image
+||pikabu.ru/avatars/2968/*2968862-913769113.$image
+||pikabu.ru/avatars/2994/*2994148-2132945680.$image
+||pikabu.ru/avatars/300/*300611-686609703.$image
+||pikabu.ru/avatars/301/*301540-1745815784.$image
+||pikabu.ru/avatars/3023/*3023711-1200782549.$image
+||pikabu.ru/avatars/3035/*3035022-96002119.$image
+||pikabu.ru/avatars/3070/*3070825-682152274.$image
+||pikabu.ru/avatars/309/*309101-2114825130.$image
+||pikabu.ru/avatars/3090/*3090077-854350645.$image
+||pikabu.ru/avatars/3093/*3093360-619545804.$image
+||pikabu.ru/avatars/3096/*3096510-2008837351.$image
+||pikabu.ru/avatars/3099/*3099516-453458943.$image
+||pikabu.ru/avatars/310/*310086-2004267976.$image
+||pikabu.ru/avatars/3114/*3114772-471920543.$image
+||pikabu.ru/avatars/3130/*3130331-538416565.$image
+||pikabu.ru/avatars/3151/*3151724-*.$image
+||pikabu.ru/avatars/317/*317377-42116878.$image
+||pikabu.ru/avatars/3245/*3245821-*.$image
+||pikabu.ru/avatars/3229/*3229515-1799565939.$image
+||pikabu.ru/avatars/327/*327284-416089351.$image
+||pikabu.ru/avatars/3270/*3270710-1096194552.$image
+||pikabu.ru/avatars/335/*335228-1370546035.$image
+||pikabu.ru/avatars/3336/*3336462-1624149658.$image
+||pikabu.ru/avatars/336/*336448-1223915473.$image
+||pikabu.ru/avatars/336/*336076-1482896630.$image
+||pikabu.ru/avatars/3385/*3385526-848761665.$image
+||pikabu.ru/avatars/3393/*3393000-965783980.$image
+||pikabu.ru/avatars/3409/l3409738-*070702800.$image
+||pikabu.ru/avatars/3443/*3443762-2091369584.$image
+||pikabu.ru/avatars/3449/*3449500-229875860.$image
+||pikabu.ru/avatars/3536/*3536648-*.$image
+||pikabu.ru/avatars/370/*370452-675075823.$image
+||pikabu.ru/avatars/375/*375871-477211633.$image
+||pikabu.ru/avatars/410/*410422-696043980.$image
+||pikabu.ru/avatars/490/*490359-70279312.$image
+||pikabu.ru/avatars/499/*499083-176920602.$image
+||pikabu.ru/avatars/535/*535419-164992723.$image
+||pikabu.ru/avatars/558/*558259-1970909874.$image
+||pikabu.ru/avatars/615/*615872-702765440.$image
+||pikabu.ru/avatars/668/*668802-1000763849.$image
+||pikabu.ru/avatars/675/*675024-552267743.$image
+||pikabu.ru/avatars/676/*676765-1565614075.$image
+||pikabu.ru/avatars/679/*679579-1199963488.$image
+||pikabu.ru/avatars/680/*680656-1196678769.$image
+!||pikabu.ru/avatars/69/*69075.$image - recheck
+||pikabu.ru/avatars/697/*697062-221120206.$image
+||pikabu.ru/avatars/698/*698066-1158715451.$image
+||pikabu.ru/avatars/738/*738322-661982211.$image
+||pikabu.ru/avatars/787/*787355-*.$image
+||pikabu.ru/avatars/815/*815358-1375202131.$image
+||pikabu.ru/avatars/822/*822250-813704048.$image
+||pikabu.ru/avatars/880/*880992-1970735078.$image
+||pikabu.ru/avatars/914/*914779-1569405615.$image
+||pikabu.ru/avatars/929/*929826-1331025171.$image
+||pikabu.ru/avatars/95/*95264-1213014243.$image
+||pikabu.ru/avatars/977/*977799-1006074098.$image
+||pikabu.ru/avatars/997/*997531-2038632380.$image
+||pikabu.ru/avatars/999/*999037-1683903799.$image
+||pikabu.ru/images/community/3246/1616672614217960285.$image
+||pikabu.ru/images/community/539/1471161882263774261.$image
+!
+!
+! Отдельные то ли политботы, продвигающие оперативную повестку, то ли просто сильно упоротые
+! К слову, модераторы там хорошие, и сообщество очень интересное. 
+!
+! Под анонимами часто идут вбросы
+pikabu.ru##article.story:has(.story__user-info:has-text(Аноним)):not(:matches-path(/story/))
+!
+! Уже заблокированные
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ArthuMorgan1863"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ArthuMorgan1863$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Metoza"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Metoza$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="dezzzdro"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^dezzzdro$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="QwertyNovikov"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^QwertyNovikov$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dragovich1986"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Dragovich1986$/)):style(color:#F0F0F0)
+!
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Diego123"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Diego123$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="reznikd"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^reznikd$/)):style(color:#F0F0F0)
+! Консерва 
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="erzankurbanoff"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="magistr82"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="rug178"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Eragot"]):not(:matches-path(/story/))~div
+! Этот не политбот, просто съехавший  https://pikabu.ru/story/dlya_svyazi_s_bogom_nazovite_familiyu_imya_otchestvo_i_ozhidayte_na_linii_8718228
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Treueheinrich"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="alimapaka"]):not(:matches-path(/story/))~div
+! Спам спам спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="groover21"]):not(:matches-path(/story/))~div
+! Якобы украинец, но иногда забывается
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="OrehoMafia"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="BHD2R"]):not(:matches-path(/story/))~div
+! Не политбот, просто слегка дебил
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="chadavitaminoz"]):not(:matches-path(/story/))~div
+! Спам спам спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Pika.Bulochka"]):not(:matches-path(/story/))~div
+! "Шиза косит наши ряды"
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="kaiserschultze"]):not(:matches-path(/story/))~div
+! просто ватник
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="rusbond"]):not(:matches-path(/story/))~div
+! просто ватник
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="49mm"]):not(:matches-path(/story/))~div
+! Спам спам спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="fmihalna"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Potemkin77"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="VladimirVDK"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Archisai"]):not(:matches-path(/story/))~div
+! Спам спам спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Julyana91"]):not(:matches-path(/story/))~div
+! неадекват
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="karenass"]):not(:matches-path(/story/))~div
+! Единая Россия junior
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ONFnews"]):not(:matches-path(/story/))~div
+! Оно же
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="socialnews"]):not(:matches-path(/story/))~div
+! И еще одно
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ONF36"]):not(:matches-path(/story/))~div
+! И еще одно
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ONFMurmansk"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="LeftTheFishki"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="TOP2040"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="RobbinBobbin"]):not(:matches-path(/story/))~div
+! повернутый на ватничестве и почему-то антифеминизме. Вот так бывает.
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="GreatDestroyer"]):not(:matches-path(/story/))~div
+! упоротый и, к тому же, спамит
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="MediaKiller"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="trashbox"]):not(:matches-path(/story/))~div
+! Спам спам спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="0ksID"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="MaratGuru"]):not(:matches-path(/story/))~div
+! эзотерика, серьезно?
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Astrocreep"]):not(:matches-path(/story/))~div
+! еще одна эзотеричка
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="procxela"]):not(:matches-path(/story/))~div
+! и еще одна эзотеричка
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="GreyHorse"]):not(:matches-path(/story/))~div
+! сплошное гачимучи
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="prosto4elovek"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="PYCCKuu64"]):not(:matches-path(/story/))~div
+! политтролль
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="DasVasser"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Medicolegist"]):not(:matches-path(/story/))~div
+! Спам спам спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="EnotTravel.ru"]):not(:matches-path(/story/))~div
+! Копирайтерский спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="teamwows"]):not(:matches-path(/story/))~div
+! Дзен-копирайтерский спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="freetraveler"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="levi.juden"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="madmuazel"]):not(:matches-path(/story/))~div
+! Копирайтерский спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="natalia.remish"]):not(:matches-path(/story/))~div
+! инста спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Zemlianichnaia"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dwarf1968"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="MilLitonn"]):not(:matches-path(/story/))~div
+! Копирайтерский спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="sertifikat"]):not(:matches-path(/story/))~div
+! Копирайтерский спам?
+!pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="W2E.RU"]):not(:matches-path(/story/))~div
+! Копирайтерский спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="as.help"]):not(:matches-path(/story/))~div
+! Копирайтерский спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="gdebil"]):not(:matches-path(/story/))~div
+! Спам спам спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="LoriaDi"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Lis001"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="SexyGod"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="elkin1988"]):not(:matches-path(/story/))~div
+! Спам спам спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="AutoDealer"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="WilfredIvanhoe"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="GreyW0rm"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="FoxIstra"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Butinic"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Strogi"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Brizant"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="StarikovN70"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Serg73RUS"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="karmapolice82"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="zahar65"]):not(:matches-path(/story/))~div
+! Копирайтерский спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="NATOten"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ADDDA"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="LLItoLLILLI"]):not(:matches-path(/story/))~div
+! Копирайтерский спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="bigmeh"]):not(:matches-path(/story/))~div
+! Копирайтерский спам с грузинским акцентом
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="gruziasaksentom"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Rname998"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="MooDroo"]):not(:matches-path(/story/))~div
+! Поехавший
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="psalom22alex"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="anttttttt"]):not(:matches-path(/story/))~div
+! Поехавший
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="AlexJuk"]):not(:matches-path(/story/))~div
+! Мракобес https://pikabu.ru/story/klassicheskiy_kreatsionist_8809591
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="orignews"]):not(:matches-path(/story/))~div
+! см. также fakenews
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="NewsBY.info"]):not(:matches-path(/story/))~div
+! Копирайтерский спам
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="luxorta"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Chinpoko656"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="fumetox"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Tarazed"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user:has-text(Tarazed)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="dredfordead"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Mik.007"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="BigWar2020"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Expert.Crimea"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Mr.RatHunter"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="bolt2001"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Sigmil"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dgamsaran"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Mefodii"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Russian.Militarian"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="11.11"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Yuripupolos"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="taoekk"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="SUPERROBOT"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ideallogin"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ar.30"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ZelenyyKarandash"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="FancySunny"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="AP1982"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="RedRenaissance"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Kit2020"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="spunzh"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="AlAnLock79"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="allcash777"]):not(:matches-path(/story/))~div
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="popison"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^popison$/)):style(color:#F0F0F0)
+! политбот в комментах
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Alexneya"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Alexneya$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Geografik"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Geografik$/)):style(color:#F0F0F0)
+! котики и политботпропаганда. Классика.
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Edmond.Dantes"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Edmond.Dantes$/)):style(color:#F0F0F0)
+! политконсерва
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="klekka87"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^klekka87$/)):style(color:#F0F0F0)
+! не политбот, но постоянно несет хрень. Тролль?
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Mortog"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Mortog$/)):style(color:#F0F0F0)
+! ну эти официально провластную повестку пропагандируют
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="TASSagency"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^TASSagency$/)):style(color:#F0F0F0)
+! политконсерва
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Messier64"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Messier64$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="AAIWIAA"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^AAIWIAA$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="MiniSun"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^MiniSun$/)):style(color:#F0F0F0)
+! политкопирайтер
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="octagonmedia"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^octagonmedia$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="chrizolit"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^chrizolit$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="NSBING"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^NSBING$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Gallapagozzz"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Gallapagozzz$/)):style(color:#F0F0F0)
+! токсичный ватник
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="kilikin"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^kilikin$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="lonzk"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^lonzk$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="FedorGromovick"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^FedorGromovick$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Limon19"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Limon19$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="viktor1408"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^viktor1408$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="heltad"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^heltad$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Filosof050"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Filosof050$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="kovanykony"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^kovanykony$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="YaHammm"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^YaHammm$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pixorama"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^pixorama$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="undeadmazay"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^undeadmazay$/)):style(color:#F0F0F0)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="chikkibrikki"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^chikkibrikki$/)):style(color:#F0F0F0)
+!
+pikabu.ru##.pik-virus
+! is in Ru AdList
+pikabu.ru###branding_ad_comment
+! duplicate section below the post
+pikabu.ru##.section_padding
+! post views
+pikabu.ru##.story__views
+! tech users
+pikabu.ru##article.story:has(.user__nick.story__user-link:has-text(ads.news))
+
+
+!! It is a sublist of Yet another small uBlock filter list
+! See https://github.com/mtxadmin/ublock for details
+!
+! Something doesn't work? Something is missing? Please, feel free to write about it here:
+! https://github.com/mtxadmin/ublock/issues/new
