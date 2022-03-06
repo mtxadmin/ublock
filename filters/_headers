@@ -653,7 +653,9 @@ _logo.$image
 ##a[href^="/out3/"]:not(:has(img))
 ##a[href^="/out4/"]:not(:has(img))
 /adaptive_logo.png
-/images/headers/*
+/header/*$image
+/headers/*$image
+    ! /images/headers/*
 /logo*$image,$domain=~winitpro.ru
 ! the idea is from EasyList China, modified
 !/logo/*$script
