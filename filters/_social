@@ -121,15 +121,6 @@ _social_fb.  # from Fanboy’s
 ~facebook.com,~fb.com,~google.com##[class$="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com##[id$="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com,~aliexpress.com,~aliexpress.ru,~alfamiles.com,~belarus2020.org,~bite-byte.ru,~doma-karkas.ru##[class^="fb"]:not(html):not(body):not(article):not([class^="fb2"])
-    ~belarus2020.org##.fb
-    ! is in 3 lists
-    ##.fb-like
-    ! is in Adguard and Fanboy's
-    ##.fb-like-box
-    ! from Fanboy's, modified
-    ##.fb-xfbml-parse-ignore:not(blockquote)
-    ! from Adguard and Fanboy's
-    ##.fb-page
 ~facebook.com,~fb.com,~aliexpress.com,~alfamiles.com,~microsoft.com##[id^="fb"]:not(html):not(body):not(article):not(.fb-post)
     ! is in Ru AdList and Fanboy's
     ###fb_icon
@@ -157,6 +148,16 @@ facebook.com,facebookcorewwwi.onion#@#.post-ads
 facebook.com,facebookcorewwwi.onion#$#body > .AdBox.Ad.advert { display:block!important; }
 ! exclusions end
 ##.facebook
+! Exclusions: medium.com projects (there are two-letters obfuscated divs)
+~belarus2020.org,~medium.com,~towardsdatascience.com##.fb
+! is in 3 lists
+##.fb-like
+! is in Adguard and Fanboy's
+##.fb-like-box
+! from Adguard and Fanboy's
+##.fb-page
+! from Fanboy's, modified
+##.fb-xfbml-parse-ignore:not(blockquote)
 ! from Fanboy's
 ##a[title="Facebook"]
 ! from Fanboy's
@@ -284,7 +285,8 @@ vk.com##.OldBrowser
 ##.icon-vk-24
 ##.ico-vkontakte
 ##.icon-vkontakte
-~belarus2020.org,~vk.com##.vk
+! Exclusions: medium.com projects (there are two-letters obfuscated divs)
+~belarus2020.org,~medium.com,~towardsdatascience.com,~vk.com##.vk
 !##[class$="-vk"]
 ! is in Adguard
 ###vk_group
@@ -415,7 +417,8 @@ connect.ok.ru$important  # from hpHosts’ Ad and tracking servers
 ##.icons-ok
 ##.like-od
 ##.odnoklassniki
-~belarus2020.org##.ok
+! Exclusions: medium.com projects (there are two-letters obfuscated divs)
+~belarus2020.org,~medium.com,~towardsdatascience.com##.ok
     !argumenti.ru##.ok
     !splav.ru##.ok
     !torex.ru##.ok
@@ -722,7 +725,8 @@ twitter.com###layers:has-text(Something wrong)
 ##.ico-tw
 ##.ico-twttr
 ##.like-tw
-~belarus2020.org##.tw
+! Exclusions: medium.com projects (there are two-letters obfuscated divs)
+~belarus2020.org,~medium.com,~towardsdatascience.com##.tw
     !argumenti.ru##.tw
     !torex.ru##.tw
     !vesti.ru##.tw
@@ -2078,13 +2082,15 @@ plus.google.com
 ##.like-us
 ##.likeUsLayer
 ##.likes-widget-placeholder
-##.lj
+! Exclusions: medium.com projects (there are two-letters obfuscated divs)
+~medium.com,~towardsdatascience.com##.lj
 ##.lj-like
 
 ##.menu-icon-tw
 ##.menu-icon-go
 ##.repost-button
-~belarus2020.org,~nnmclub.ch,~nnmclub.to##.tg
+! Exclusions: medium.com projects (there are two-letters obfuscated divs)
+~belarus2020.org,~medium.com,~nnmclub.ch,~nnmclub.to,~towardsdatascience.com##.tg
 ##.tips
 ###uLogin
 ##.ulogin_block
