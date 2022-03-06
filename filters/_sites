@@ -10785,13 +10785,16 @@ medinfo.ua$3p
 
 ||medium.com^*/performance/  # is in EasyPrivacy
 ||lightstep.medium.systems^*/reports  # is in EasyPrivacy
+    ! logo
+medium.com,towardsdatascience.com##a[href^="https://medium.com/"]
+    ! paywall
+medium.com###regwall-background-color
+medium.com##.c.s:has-text(Read the rest)
+    ! other
 medium.com##[data-test-id="post-sidebar"]
-medium.com##a[href^="https://medium.com/"]
 medium.com##.js-stickyFooter
 medium.com###lo-highlight-meter-1-highlight-box
-medium.com###regwall-background-color
 medium.com##.wc
-medium.com##.c.s:has-text(Read the rest)
 
 medlib.net##.interesno
 medlib.net##.copy2
