@@ -318,6 +318,11 @@ sentry.io  # feedback and application monitoring service, commercial. I doubt it
 !+  services.sentry.io
 sentry-cdn.com  #browser.sentry-cdn.com
 /sentry.bundle.min.js  # sentry.io library, see https://github.com/getsentry/sentry-javascript
+/sentry/*
+    ! ||atlassian.com/sentry/
+    ! ||avito.ru/dstatic/build/sentry
+    ! ||ferra.ru/sentry/
+||github.com/getsentry/$3p
 
 appgift.sinaapp.com  # from Adguard
 
