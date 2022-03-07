@@ -1,0 +1,734 @@
+﻿!! It is a sublist of Yet another small uBlock filter list
+! See https://github.com/mtxadmin/ublock for details
+!
+!
+! Here are commented previous specific rules, which formed the basis of rules in _headers sublist.
+! This sublist in not included in the whole list. Just for information and backup. Actual rules of the last version see in _headers
+
+
+
+!##.logo
+    ! ##.logo is very, very common rule. Here are only part of my old findings. See actual rules in _headers
+    ! 1bluetooth.ru##.logo
+    ! 4pna.com##.logo
+    ! aksessuary-vanna.ru##.logo
+    ! apescout.com##.logo
+    ! apmode.ru##.logo
+    ! aquabum.ru##.logo
+    ! aquanet-shop.ru##.logo
+    ! aquavivo.ru##.header-bottom-pane-left > .logo
+    ! baxov.net##.logo
+    ! beauty.ua##.logo
+    ! certlibrary.com##.logo
+    ! citilink.ru##.logo
+    ! click-or-die.ru##.logo
+    ! consultant.ru##.logo_header.logo
+    ! datis-arad.com##.logo
+    ! davidwalsh.name##.logo
+    ! derevianniesideniy.ru##.logo
+    ! diagnos.ru##.logo
+    ! dphd.ru##.logo
+    ! dronomania.ru##.logo
+    ! dushlux.ru##.logo
+    ! dyplet.com##.logo
+    ! econet.ru##.logo
+    ! eldorado.ru##.headerLogo
+    ! english-films.com##.logo
+    ! feringer.ru##.logo
+    ! funtik.tv##.logo
+    ! garlicfarm.ru##.logo
+    ! gecid.com##.logo
+    ! hostenko.com##.logo
+    ! iceberg-shop.ru##.logo
+    ! ivd.ru##.logo
+    ! izkirpicha.com##.logo
+    ! kakpravilnosdelat.ru##.logo
+    ! kalashnikovgroup.ru###headerLogo
+    ! keramag-online.ru##.logo
+    ! kotofilm.net##.logo
+    ! kp.ru##.logo
+    ! laminat-msc.ru##.logo
+    ! forums.lenovo.com##.logo
+    ! lifeofageekadmin.com##.logo
+    ! lifewire.com##.logo
+    ! manualsdir.ru##.logo
+    ! meatreview.com##.logo
+    ! meduzza.ru##.logo
+    ! mirquadrocopterov.ru##.logo
+    ! missaqua.ru##.logo
+    ! mizomed.ru##.logo
+    ! mobile-review.com##.logo
+    ! moiobzor.su##.logo
+    ! moyavanna.com##.logo
+    ! moydrygpk.ru##.logo
+    ! mrsanteh.ru##.logo
+    ! msk-alternativa.ru##.logo
+    ! newsland.com##.logo
+    ! newtimes.ru##.container > .logo
+    ! ohrana.ru##.logo
+    ! olife.tv##.logo
+    ! otoplenie-gid.ru##.logo
+    ! pcpro100.info##.logo
+    ! pravbaza.ru##.logo
+    ! predprodaja-advance.ru##.logo
+    ! proinfekcii.ru##.logo
+    ! remstd.ru##.logo
+    ! rybkies.ru##.logo
+    ! santehnika-msk.ru##.logo
+    ! santehnika-tut.ru##.logo
+    ! santehvid.ru##.logo
+    ! santexkomfort.ru##.logo
+    ! sanok.ru##.logo
+    ! santx.ru##.logo
+    ! sanvol.ru##.logo
+    ! sapien.com##.logo
+    ! sasplanet.ru##.logo
+    ! sdelajrukami.ru##.logo
+    ! sid-500.com##.logo
+    ! skedraft.ru##.logo
+    ! sovetclub.ru##.logo
+    ! spletnik.ru##.logo
+    ! spravka2.ru##.logo
+    ! stroymaterialopt.ru##.logo
+    ! stroy-podskazka.ru##.logo
+    ! stroyportal.ru##.logo
+    ! teh-beauty.ru##.logo
+    ! televizore.ru##.logo
+    ! teplokrepost.ru##.logo
+    ! thewindowsclub.com##.logo
+    ! trest.market##.logo
+    ! tutu.ru##.logo
+    ! vannamoskva.ru##.logo
+    ! vannayasovety.ru##.logo
+    ! vestifinance.ru##.logo
+    ! vplate.ru##.logo
+    ! vsanuzel.ru##.logo
+    ! vsehoztovari.ru##.logo
+    ! vseinstrumenti.ru##.logo
+    ! v-vanna.ru##.logo
+    ! wiki-android.com##.logo
+    ! windd.ru##.logo
+    ! winnote.ru##.logo
+    ! wodolei.ru##.logo
+    ! wylsa.com##.logo
+    ! yourselfbranding.com##.logo
+    ! zhalobi.com.ua##.logo
+    ! zod.ru##.logo
+
+
+###logo
+    ! Also as ##.logo
+    ! akvis.ru###logo
+    ! calcsoft.ru###logo
+    ! droidforums.net###logo
+    ! dronnews.ru###logo
+    ! fishforum.travel###logo
+    ! f-np.ru###logo
+    ! fonarik24.ru###logo
+    ! frap-frud.ru###logo
+    ! gamedeus.ru###logo
+    ! greendail.ru###logo
+    ! kita-shop.ru###logo
+    ! lelang.ru###logo
+    ! majordomo.ru###logo
+    ! mirf.ru###logo
+    ! mosstroi.market###logo
+    ! msserverpro.com###logo
+    ! mywebpc.ru###logo
+    ! nemcd.com###logo
+    ! oszone.net###logo
+    ! rebeladmin.com###logo
+    ! remstroiblog.ru###logo
+    ! royalsan.ru###logo
+    ! russian-mifs.ru###logo
+    ! salon-san.ru###logo
+    ! santech-nika.ru###logo
+    ! sdelatbanyu.ru###logo
+    ! sdvk.ru###logo
+    ! searchengines.guru###logo
+    ! seopirat.club###logo
+    ! skladchik.com###logo
+    ! sprosivideo.com###logo
+    ! ssskkk.ru###logo
+    ! thomasmaurer.ch###logo
+    ! ultrafiolet.guru###logo
+    ! usbtor.ru###logo
+    ! shop.vostok.ru###logo:style(height: 20px !important)
+    ! xn----7sbngpudl3a7gxc.xn--p1ai###logo  ! таёжный-дом.рф
+    ! xn--80ado1abokv5d.xn--80asehdb###logo  ! хозтовары.онлайн
+
+
+
+
+
+
+	!academyit.ru##body:style(overflow:auto !important)
+	!academyit.ru##html:style(overflow:auto !important)
+	!admobispy.com##html:style(overflow:auto !important)
+	!turboimagehost.com##body:style(overflow:auto !important)
+	!vodoparad.ru##.fancybox-lock:style(overflow:auto !important)
+	!xn----7sbeemsdjlc1kud.xn--p1ai##.fancybox-enabled:style(overflow:auto !important)
+    !au.ru##body:style(overflow:auto !important)
+    !careerist.ru##body:style(overflow:auto !important)
+    !davitamebel.ru##body:style(overflow:auto !important)
+    !devteam.space##body:style(overflow:auto !important)
+    !eko-village.com##body:style(overflow:auto !important)
+    !ems.post##body:style(overflow:auto !important)
+    !etm.ru##body:style(overflow:auto !important)
+    !exam-labs.com##body:style(overflow:auto !important)
+    !freedownloadmanager.org##body:style(overflow:auto !important)
+    !hipdir.com##body:style(overflow:auto !important)
+    !kp.ru##body:style(overflow:auto !important)
+    !law-world.ru##body:style(overflow:auto !important)
+    !mts.ru##body:style(overflow:visible !important; position:static !important)
+    !napolke.ru##body:style(overflow:auto !important)
+    !ofsant.ru##body:style(overflow:auto !important)
+    !philips.ru##body:style(overflow:auto !important)
+    !samag.ru##body:style(overflow:auto !important)
+    !silagrupp.ru##html:style(overflow:auto !important)
+    !spasibosberbank.ru##body:style(overflow:auto !important)
+    !techopedia.com##body:style(overflow:auto !important)
+    !theinpaint.com##body:style(overflow:auto !important)
+    !tiu.ru##body:style(overflow:auto !important)
+    !transip.be,transip.eu##body:style(overflow:auto !important)
+    !vdyoutube.com##body:style(overflow:auto !important)
+    !vkusvill.ru##body:style(overflow:auto !important)
+    !vodoparad.ru##body:style(overflow:auto !important)
+    !wiley.com##body:style(overflow:auto !important)
+    !xn----7sbeemsdjlc1kud.xn--p1ai##body:style(overflow:auto !important)
+
+    !12kalibr.com##.header-sticky:style(position:static !important)
+    !12kalibr.com##.navbar:style(position:static !important)
+    !24tv.ua##header:style(position:static !important)
+    !4pda.ru##.fixed-menu > div:style(position:static !important)
+    !academyit.ru##.header:style(position:static !important)
+    !adblockplus.org###navbar:style(position:static !important)
+    !adguard.com##.sticky-bar:style(position:static !important)
+    !adguard.com##.sidebar__sticky:style(position:static !important)
+    !admagazine.ru##.navbar:style(position:static !important)
+    !admobispy.com##.sticky-navigation:style(position:static !important)
+    !adview.ru###header:style(position:static !important)
+    !aif.ru##.topline:style(padding-top:0px !important)    
+    !airexplorer.net##header:style(position:static !important)
+    !almatel.ru##.fixed-header:style(position:static !important)
+    !androidforums.com###navigation:style(position:static !important)
+    !androidguys.com##.td-header-menu-wrap:style(position:static !important)
+    !androidp1.ru##.td-ss-main-sidebar:style(position:static !important)
+    !androidtop.org##.header:style(position:static !important)
+    !angrycitizen.ru##.top-menu:style(position:static !important)
+    !annamama.ru##.x-navbar-fixed-top:style(position:static !important)
+    !apescout.com###header:style(position:static !important)
+    !aquaphor.ru##.fixed-menu:style(position:static !important)
+    !argonsys.com##.et-fixed-header:style(position:static !important)
+    !argonsys.com###main-header:style(position:static !important)
+    !as.com##.fixed-menu:style(position:static !important)    
+    !atvclub.ru##.uix_stickyBar.p-navSticky--all.p-navSticky:style(position:static !important)
+    !audi-club.ru##.sidebar:style(position:static !important)
+    !author.today##.navbar-fixed-top:style(position:static !important)
+    !automania.ru##.is-sticky.uix_stickyBar.p-navSticky--all.p-navSticky:style(position:static !important)
+    !avanpost.ru##.fixed-top:style(position:static !important)
+    !avtonomnoeteplo.ru##.sidebar:style(position:static !important)
+    !babyblog.ru##.nav:style(position:static !important)
+    !baniclub.ru###navigation:style(position:static !important)
+    !banya-expert.com##.header:style(height:0 !important)
+    !banya-expert.com##.header-top
+    !baxov.net##.navbar-fixed-top:style(position:static !important)
+    !benpan.ru##.main_nav:style(position:static !important)
+    !benzopila.ru##.header-menu:style(position:static !important)
+    !bestwebber.ru##.td-header-menu-wrap:style(position:static !important)
+    !bestwebber.ru##.td-ss-main-sidebar:style(position:static !important)
+    !bgpview.io##.navbar-fixed-top:style(position:static !important)
+    !bigdatacloud.com##header.header:style(position:static !important)
+    !blackops.ca##.custom-header:style(margin-bottom:0px !important)
+    !blackops.ca##.site-navigation-fixed:style(position:static !important)
+    !blackview.hk##.header:style(position:static !important)
+    !blog.malwarebytes.com##.navbar-fixed-top:style(position:static !important)
+    !blokada.org##.d-header-wrap:style(position:static !important)
+    !bonus-spasibo.ru##.header-top:style(position:absolute !important)
+    !business2community.com##.navbar-fixed-top:style(position:static !important)
+    !cinemapress.org##.navbar-fixed:style(position:static !important)
+    !clickbigdeals.com##.header-top:style(position:static !important)
+    !cloudzone.ru##.navbar-fixed-top:style(position:static !important)
+    !cnews.ru##.header:style(position:static !important)
+    !cnews.ru##.header_fixed:style(position:static !important)
+    !codeby.net##.p-navSticky:style(position:static !important)
+    !companion.pl##.et-fixed-header:style(position:static !important)
+    !companion.pl###main-header:style(position:static !important)
+    !composs.ru##.site-header:style(position:static !important)
+    !computerperformance.co.uk###header:style(position:static !important)
+    !computerra.ru##.header:style(position:static !important)
+    !computingforgeeks.com##.td-header-menu-wrap:style(position:static !important)
+    !cottageplans.ru###header-top
+    !couchpota.to##header:style(position:static !important)
+    !cryptoworld.su##.sticky_header:style(position:static !important)
+    !ctc.ru###header:style(position:static !important)
+    !cyberpointllc.com##.navbar-fixed-top:style(position:static !important)
+    !darrenjrobinson.com##.custom-header:style(margin-bottom:0px !important)
+    !davidwalsh.name##.sidebar:style(position:static !important)
+    !day.az##.navbar-fixed:style(position:static !important)
+    !db-ip.com##.fixed-top:style(position:static !important)
+    !diletant.media##header:style(height:auto !important)
+    !dille.name##.sidebar:style(position:static !important)
+    !ditching.eu##.td-ss-main-sidebar:style(position:static !important)
+    !droidviews.com##.mainhead:style(position:static !important)
+    !dtf.ru##.main_menu:style(position:static !important)
+    !econet.ru###header:style(height:auto !important)
+    !edinstvennaya.ua##.nav-fixed:style(position:static !important)
+    !eightforums.com##.p-navSticky:style(position:static !important)
+    !electricpulp.com##.navbar:style(position:static !important)
+    !eva.ru##.fixed-top:style(position:static !important)
+    !eventtracker.com##.navbar-fixed-top.navbar:style(position:static !important)
+    !exler.ru##.header-top
+    !expert.ru##.header:style(position:static !important)
+    !fazasporta.com##.header:style(position:static !important)
+    !fixya.com###header.header:style(position:static !important)
+    !flexera.com##.nav:style(position:static !important)
+    !forbes.ru##.header:style(position:static !important)
+    !fortgun.ru##.header:style(position:static !important)
+    !forum.adguard.com###navigation:style(position:static !important)
+    !forum.motorka.org##.is-sticky.p-navSticky--all.p-navSticky:style(position:static !important)
+    !freebsd.org##.is-sticky.p-navSticky--all.p-navSticky:style(position:static !important)
+    !freebsdnews.com###main-header:style(position:static !important)
+    !freehtmlthemes.ru##.header-container
+    !gazetabiznes.ru##.td-header-menu-wrap:style(position:static !important)
+    !geeklib.ru##.header-container
+    !geekville.ru##.td-ss-main-sidebar:style(position:static !important)
+    !gfinityesports.com##.header-container:style(position:static !important)
+    !gizmochina.com##.td-ss-main-sidebar:style(position:static !important)
+    !grafana.com##.d-header-wrap:style(position:static !important)
+    !gravitsapa.info##.nav:style(position:static !important)
+    !grosh-blog.ru###site-navigation:style(position:static !important)
+    !guns.allzip.org###nav:style(position:static !important)
+    !hackernoon.com###header:style(position:static !important)
+    !help.keenetic.com##header:style(position:static !important)
+    !hi-tech-obzor.ru###navigation:style(position:static !important)
+    !home-gid.com##.td-header-menu-wrap:style(position:static !important)
+    !hrodna.life##.sticky-bar:style(position:static !important)
+    !httpmaster.ru###header:style(position:static !important)
+    !hype.ru##.metabar--fixed:style(position:static !important)
+    !hype.tech##.metabar--fixed:style(position:static !important)    
+    !ichip.ru##.td-ss-main-sidebar:style(position:static !important)
+    !ilike.guru##.site-navigation-fixed.fixed:style(position:static !important)
+    !inc.com##.header:style(position:static !important)
+    !info-comp.ru##.site-navigation-fixed:style(position:static !important)
+    !interface31.ru##.navbar:style(position:static !important)
+    !isanteh.ru##.navbar:style(position:static !important)
+    !itingredients.com###site-navigation:style(position:static !important)
+    !itsecforu.ru###site-navigation:style(position:static !important)
+    !ixsystems.com##.is-sticky.p-navSticky--primary.p-navSticky:style(position:static !important)
+    !k31.ru##header:style(position:static !important)
+    !kachestvolife.club##.navbar-fixed-top:style(position:static !important)
+    !kdservis.ru##.sticky.header:style(position:static !important)
+    !kemprogress.ru##.td-header-menu-wrap:style(position:static !important)
+    !kemprogress.ru##.td-ss-main-sidebar:style(position:static !important)
+    !kinozal.tv###header:style(height:auto !important)
+    !klik.hr###global-header:style(position:static !important)
+    !klubstroitelei.com##.b-header
+    !kremlin.ru##.topline:style(position:static !important)
+    !kodi.tv##.navbar-fixed-top:style(position:static !important)
+    !kom-dir.ru##.header-fixed:style(position:static !important)
+    !koofr.eu##.header:style(position:static !important)
+    !koofr.eu##.site-header:style(position:static !important)
+    !korshop.ru##.header:style(position:static !important)
+    !kostikov.co##.fixed-top:style(position:static !important)
+    !kp.ru##.header:style(position:static !important)
+    !lenta.ru##.b-header:style(height:auto !important)
+    !libreelec.tv##.navbar-fixed-top.navbar:style(position:static !important)
+    !lifewire.com##.header:style(position:static !important)
+    !limeproxies.com##.sticky_header:style(position:static !important)
+    !losst.ru##.sticky-navigation:style(position:static !important)
+    !mangoost-airsoft.ru##.header:style(height:auto !important)
+    !marieclaire.ru##.nav:style(position:static !important)
+    !mashtips.com##.td-header-menu-wrap:style(position:static !important)
+    !masterts.ru##.header_fixed:style(position:static !important)
+    !maxmaster.ru##.fixed-header:style(position:static !important)
+    !mcgrp.ru##.navbar-fixed-top:style(position:static !important)
+    !mediapure.ru##.td-ss-main-sidebar:style(position:static !important)
+    !menunedeli.ru##header:style(height:80px !important)
+    !metro-cc.ru###b-header-fixed.b-header-fixed:style(position:static !important)
+    !militaryarms.ru##.header:style(height:45px !important)
+    !miltor.ru##.navbar-fixed-top:style(position:static !important)
+    !miped.ru###navigation:style(position:static !important)
+    !mirtesen.ru##.header:style(position:static !important)
+    !morkniga.ru##.main_header:style(padding-top:0px !important; padding-bottom:0px !important)
+    !mosk-setki.ru##.navbar-fixed-top:style(position:static !important)
+    !msk-ix.ru##.header_fixed:style(position:static !important)
+    !mspoweruser.com##.navbar-fixed-top:style(position:static !important)
+    !multcloud.com##.header:style(position:static !important)
+    !mybellaria.ru##.navbar-fixed-top.navbar:style(position:static !important)
+    !m-zaschita.ru##.header-fixed:style(position:static !important)
+    !nalog.ru##.header-fixed:style(position:static !important)
+    !nemaloknig.com##.navbar-fixed-top:style(position:static !important)
+    !newizv.ru##.topline:style(position:static !important)
+    !newsignature.com##.navbar:style(position:static !important)
+    !newtimes.ru##.navbar-fixed-top:style(position:static !important)
+    !!newstracker.ru##.topline:style(position:static !important)
+    !nikols.org###header:style(height:auto !important)
+    !nkj.ru##.top-menu:style(position:static !important)
+    !noa-lit.ru##.navbar-fixed-top.navbar:style(position:static !important)
+    !obozrevatel.com##.header:style(position:static !important)
+    !obozrevatel.com##.header-top:style(position:static !important)
+    !obozrevatel.com##.header-bottom:style(position:static !important)
+    !ohota.guru##header:style(height:auto !important)
+    !ohota.guru##nav:style(position:static !important)
+    !ohotaktiv.ru##.header:style(position:static !important)
+    !ohotarius.ru##.navbar-fixed-top:style(position:static !important)
+    !okanalizacii.ru##.td-ss-main-sidebar:style(position:static !important)
+    !osradar.com##.td-header-menu-wrap:style(position:static !important)
+    !ot.help###header-top
+    !owncloud.org##header.main:style(position:static !important; height:auto !important)
+    !pai-bx.com##.navbar-fixed-top:style(position:static !important)
+    !partitionwizard.com##.fixed-nav:style(position:static !important)
+    !piluli.ru##.fixed-header:style(position:static !important)
+    !pix-feed.com###header:style(position:static !important)
+    !plainnews.ru##.navbar:style(position:static !important)
+    !planetpowershell.com##.navbar-fixed-top:style(position:static !important)
+    !plex.tv##.d-header-wrap:style(position:static !important)
+    !popmech.ru##header.header:style(position:static !important)
+    !powershellexplained.com##.navbar-fixed-top:style(position:static !important)
+    !powervideo.ru##.navbar:style(position:static !important)
+    !predprodaja-advance.ru##.header-top:style(position:static !important)
+    !prigotovimvkusno.com##.b-header:style(position:static !important)
+    !proivf.ru##header:style(position:static !important)
+    !prophotos.ru##.navbar:style(position:static !important)
+    !psychologos.ru##.header:style(position:static !important; height:auto !important)
+    !pythonz.net##.sticky-top:style(position:static !important)
+    !qna.center##.navbar-fixed-top:style(position:static !important)
+    !questarter.com##.navbar-fixed-top:style(position: absolute !important)
+    !rackspace.com##.navbar-fixed-top:style(position:static !important)
+    !ratniksafe.ru##.header-top:style(position:static !important)
+    !razula.ru##.is-sticky.p-navSticky--primary.p-navSticky:style(position:static !important)
+    !rb.ru##.global-header:style(position:static !important)
+    !rbc.ru##.topline:style(position:static !important)
+    !rclone.org##.navbar-fixed-top:style(position:static !important)
+    !reddit.com##header:style(position:absolute !important)
+    !relax-volga.ru##.header-wrapper:style(position:static !important)
+    !remington.com##.global-header:style(position:static !important)
+    !remont-vann.ru##.b-header:style(padding-top:0px !important; height:auto !important)
+    !ria.ru##.header:style(height:auto !important)
+    !root-nation.com##.td-header-menu-wrap.td-affix:style(position:static !important)
+    !rootmyandroid.org##.navbar-fixed-top:style(position:static !important)
+    !rosoncoweb.ru###header:style(height:auto !important)
+    !russian-miracles.ru##.site-navigation-fixed:style(position:static !important)
+    !rutoken.ru##.fixed-top:style(position:static !important)
+    !safezone.cc##.p-navSticky:style(position:static !important)
+    !sanotes.ru##.td-header-menu-wrap.td-affix:style(position:static !important)
+    !santehekonomservis.ru##.b-header
+    !sasplanet.ru##.is-sticky:style(position:static !important)
+    !securitylab.ru##.header-bottom
+    !seopirat.club##.is-sticky.p-navSticky--primary.p-navSticky:style(position:static !important)
+    !shop.vostok.ru###header:style(position: absolute !important;)
+    !shopolog.ru##.b-header__fixed:style(position:static !important)
+    !slideserve.com##.navbar-fixed-top:style(position:static !important)
+    !smartcalc.ru##.navbar-fixed-top:style(position:static !important)
+    !softikbox.com##.header-menu:style(position:static !important)
+    !sovet-ingenera.com##.header:style(height:auto !important)
+    !splunk.com##.navbar-fixed-top:style(position:static !important)
+    !sportpremier.ru##.sidebar:style(position:static !important)
+    !stereo.ru##.sidebar__sticky:style(position:static !important)
+    !stigviewer.com##.header:style(position:static !important)
+    !stroi-help.ru##header:style(background:none !important; min-height:0px !important)
+    !stroi-help.ru##.navbar-fixed-bottom:style(position:static !important)
+    !stroi-help.ru##.navbar-fixed-top:style(position:static !important)
+    !stroybat.ru##.navbar-fixed-top:style(position:static !important)
+    !stroy-okey.ru###header:style(position:static !important; height:auto !important)
+    !sturmuniform.ru###header:style(height:auto !important)
+    !sumki.ru##.header:style(position:static !important)
+    !sumki.ru##.header-bottom:style(height:auto !important)
+    !svyaznoy.ru##.b-header:style(position:static !important)
+    !syl.ru##.header:style(position:absolute !important)
+    !sysadmins.lv##.navbar-fixed-top:style(position:static !important)
+    !tarifgid.info##.site-navigation-fixed:style(position:static !important)
+    !tass.ru###header:style(position:static !important)
+    !tech-coffee.net##.fixed-nav:style(position:static !important)
+    !techlist.top##.td-ss-main-sidebar:style(position:static !important)
+    !techopedia.com##.navbar:style(position:static !important)
+    !techstronghold.com##.navbar-fixed-top.navbar:style(position:static !important)
+    !techtalkz.com##.p-navSticky--primary:style(position:static !important)
+    !techtalkz.com##.p-navSticky:style(position:static !important)
+    !telekom.de##.is-sticky:style(position:static !important)
+    !tenti.ru##.header-top
+    !tenti.ru##.fixed-header:style(position:static !important)
+    !texterra.ru##.header-top
+    !thehackerblog.com##.header-menu:style(position:static !important)
+    !themechanic.ru##.td-ss-main-sidebar:style(position:static !important)
+    !thequestion.ru##.header:style(position:static !important)
+    !thermalinfo.ru###site-navigation:style(position:static !important)
+    !thinkpowershell.com##.site-header:style(position:static !important)
+    !tjournal.ru##.main_menu:style(position:static !important)
+    !tomsguide.com##.p-navSticky:style(position:static !important)
+    !tomshardware.com##.is-sticky.uix_stickyBar.p-navSticky--all.p-navSticky:style(position:static !important)
+    !topobzor.com##.td-header-menu-wrap.td-affix:style(position:static !important)
+    !travel.ru##.b-header-fixed:style(position:static !important)
+    !trello.com##.fixed-top:style(position:static !important)
+    !twitrss.me##.navbar:style(position:static !important)
+    !uanic.name##.navbar:style(position:static !important)
+    !ubackup.com##.sidebar:style(position:static !important)
+    !undocumented-features.com##.custom-header:style(margin-bottom:0px !important)
+    !undocumented-features.com##.site-navigation-fixed:style(position:static !important)
+    !universal-guns.ru##.navbar-fixed-top:style(position:static !important)
+    !vannayasovety.ru##.fixed.header:style(position:static !important)
+    !variety.com##.header-sticky:style(position:static !important)
+    !veritas.com##.fixed-top:style(position:static !important)
+    !vestifinance.ru##.b-header
+    !vgtimes.ru##header:style(position:static !important)
+    !viva.ua##.header-top
+    !viva.ua##.header-bottom
+    !viva.ua##.header-menu:style(position:static !important)
+    !vmblog.ru###navigation:style(position:static !important)
+    !vmtv.ru##.navbar-fixed-top:style(position:absolute !important)
+    !voen-torg.ru##.top-menu:style(position:static !important)
+    !voin.guru##.td-ss-main-sidebar:style(position:static !important)
+    !vseprotruby.ru###site-navigation:style(position:static !important)
+    !webcusp.com##.et-fixed-header:style(position:static !important)
+    !winitpro.ru##.navbar-default.navbar:style(position:static !important)
+    !worldofplayers.ru##.is-sticky.p-navSticky--primary.p-navSticky:style(position:static !important)
+    !woutervisser.net##.header-top
+    !xn----7sbecl2dbcfoo.xn--p1ai##.header:style(position:static !important)
+    !yamart.ru##.mainHeader:style(position:static !important)
+    !yareviews.ru##.sticky-top:style(position:static !important)
+    !zabbix.com##.sidebar:style(position:static !important)
+    !zapas-pro.ru##.header-top
+    !zello.com,zellowork.com##.header-container:style(position:static !important)
+    !zoon.ru##.header-wrapper:style(position:static !important)
+
+    !9mm.ru##.opener:style(position:static !important)
+    !androidforums.com##.sticky_wrapper:style(position:static !important)
+    !antichat.ru##.sticky_wrapper:style(position:static !important)
+    !atvclub.ru##.uix_stickyBodyElement:style(position:static !important)
+    !benzopila.ru###sticky-wrapper.is-sticky.sticky-wrapper:style(position:static !important)
+    !droidforums.net##.sticky_wrapper:style(position:static !important)
+    !dyplet.com##.theiaStickySidebar:style(position:static !important)
+    !fatcatslim.ru##.theiaStickySidebar:style(position:static !important)
+    !huntergo.ru##.opener
+    !laminat-msc.ru##.opener
+    !loleknbolek.com##.theiaStickySidebar:style(position:static !important)
+    !makeuseof.com##.sidebar-sticky:style(position:static !important)
+    !miped.ru##.sticky_wrapper:style(position:static !important)
+    !ohamam.ru##.opener
+    !pix-feed.com##.theiaStickySidebar:style(position:static !important)
+    !rukzakoff.ru##.sidebar-sticky:style(position:static !important)
+    !sotmarket.ru##.opener:style(position:static !important)
+    !technibble.com##.sticky_wrapper:style(position:static !important)
+    !vmblog.ru##.theiaStickySidebar:style(position:static !important; top:auto !important)
+    !vsemtoy.ru##.opener:style(position:static !important)
+    !vse-pro-laminat.ru##.theiaStickySidebar:style(position:static !important)
+
+    !alexgyver.ru##.fusion-is-sticky:style(position:static !important)
+    !ampravda.ru##.fix:style(position:static !important)
+    !androidauthority.com##.fixed:style(position:static !important)
+    !androidauthority.com##.sticky-mobile:style(position:static !important)
+    !androidguys.com##.td-affix:style(position:static !important)
+    !androidheadlines.com###sticky.stick
+    !anoopcnair.com##.td-affix:style(position:static !important)
+    !arenda-kater.com##.top_menu:style(position:static !important)
+    !arenda-kater.com##.bottom_menu:style(position:static !important)
+    !askme4tech.com##.is_stuck.stick-in-parent:style(position:static !important)
+    !askubuntu.com##._fixed:style(position:static !important)
+    !au.ru##.affix:style(position:static !important)
+    !autonews.ru##.topline.fixed:style(position:static !important)
+    !backblaze.com##.stuck:style(position:static !important)
+    !beauty.ua##.fixed:style(position:static !important)
+    !cheap-safe.ru###top3.affix:style(position;static !important)
+    !cheap-safe.ru##.affix:style(position;static !important)
+    !chicagovps.net##.fixed.sticky:style(position:static !important)
+    !computingforgeeks.com##.td-affix:style(position:static !important)
+    !credera.com##.sticky:style(position:static !important)
+    !davidwalsh.name##.fixed:style(position:static !important)
+    !dixy.ru##.fixed:style(position:static !important)
+    !dogsecrets.ru##.td-affix:style(position:static !important)
+    !dom4m.ru###topline.fixed:style(position:static !important)
+    !dtf.ru##.sticky:style(position:static !important)
+    !econet.ru##.affix:style(position:static !important)
+    !ectocervical.ru##.fixed:style(position:static !important)
+    !educba.com##.fixed:style(position:static !important)
+    !edx.org##.stuck:style(position:static !important)
+    !esg-moscow.ru##.fixed:style(position:static !important)
+    !esquire.ru##.fixed:style(position:static !important)
+    !fandom.com,wikia.com##is-sticky:style(position:static !important)
+    !fatcatslim.ru##.show.is-fixed:style(position:static !important)
+    !film.ru##.is_stuck:style(position:static !important)
+    !fortgun.ru##.fixed:style(position:static !important)
+    !foursquare.com##.pinned:style(position:static !important)
+    !gazeta.ru##.fixed:style(position:static !important)
+    !gazetabiznes.ru##.td-affix:style(position:static !important)
+    !geekon.media##.td-affix:style(position:static !important)
+    !gitlab.com##.sticky:style(position:static !important)
+    !glamour.ru##.sticky:style(position:static !important)
+    !globus.ru##.sticking:style(position:static !important)
+    !hft.ru##.fixed:style(position:static !important)
+    !home-gid.com##.td-affix:style(position:static !important)
+    !hostbrz.com##.affix:style(position:static !important)
+    !huntmania.ru##.isStuck:style(position:static !important)
+    !idd35.ru##.affix:style(position:static !important)
+    !indeed.com##.is-sticky:style(position:static !important)
+    !introserv.eu##.fixed:style(position:static !important)
+    !ipinfo.io,host.io##.is-fixed:style(position:static !important)
+    !ipinfo.io,host.io##.sticky:style(position:static !important)
+    !it.ie##.fusion-is-sticky:style(position:static !important)
+    !karkas-na-veka.ru##.isStuck:style(position:static !important)
+    !kavaonline.sk##.stuck:style(position:static !important)
+    !kemprogress.ru##.td-affix:style(position:static !important)
+    !korshop.ru##.fixed:style(position:static !important)
+    !leroymerlin.kz,leroymerlin.ru##.is-sticky:style(position:static !important)
+    !mashtips.com##.td-affix.:style(position:static !important)
+    !metro-cc.ru##.is_stuck:style(position:static !important)
+    !microsoft.com##.is-fixed:style(position:static !important)
+    !novostroy.ru##.bottom_menu:style(position:static !important)
+    !obozrevatel.com##.fixed:style(position:static !important)
+    !osradar.com##.td-affix:style(position:static !important)
+    !parents.ru##.fixed:style(position:static !important)
+    !polov.ru##.menu_top_wrap.is_stuck:style(position:static !important)
+    !popadiv10.ru##.fixed:style(display:block !important)
+    !popadiv10.ru##.fixed:style(position:static !important)
+    !popmech.ru##.top_menu.fixed:style(position:static !important)
+    !pravo.ru##.sticky.is-stuck:style(position:static !important)
+    !priorclinic.ru##.affix:style(position:static !important)
+    !proekty.ru##.fixed:style(position:static !important)
+    !protarif.info##.fixed:style(position:static !important)
+    !raidrive.com##.fusion-is-sticky:style(position:static !important; height:auto !important)
+    !reuters.com##.fixed:style(position:static !important)
+    !rukzakoff.ru##.sticky:style(position:static !important)
+    !santehnika.io##.fixed:style(position:static !important)
+    !serpuhovich.ru##.fix:style(position:static !important)
+    !shop.vostok.ru##.sticky:style(position: absolute !important;)
+    !splunk.com##.fixed:style(position:static !important)
+    !stapravda.ru##.affix:style(position:static !important)
+    !stvol.ua##.bottom_menu:style(position:static !important)
+    !support.citrix.com##.sticky:style(position:static !important)
+    !taker.im##.sticky:style(position:static !important)
+    !techtalkz.com##.is-sticky:style(position:static !important)
+    !teh-beauty.ru##.affix:style(position:static !important)
+    !themechanic.ru##.td-affix:style(position:static !important)
+    !tomsguide.com##.is-sticky:style(position:static !important)
+    !viacode.com##.is-fixed:style(position:static !important)
+    !vsanuzel.ru##.affix:style(position:static !important)
+    !vvd.su##.fixed:style(position:static !important)
+    !washingtonpost.com##.fixed:style(position:static !important)
+    !wikihow.com##.sticking:style(position:static !important)
+
+    !adamtheautomator.com##body:style(padding-bottom:0px !important)
+    !adblockplus.org##body:style(padding-top:0px !important)
+    !androeed.ru##body:style(margin-top:0px !important)
+    !angrycitizen.ru##body:style(padding-top:0px !important)
+    !apescout.com##body:style(padding-top:0px !important; margin-top:0px !important; margin-bottom:0px !important)
+    !askubuntu.com##body:style(padding-top:0px !important)
+    !au.ru##body:style(padding-top:0px !important)
+    !autohotkey.com##body:style(padding-top:0px !important)
+    !babyblog.ru##body:style(padding-top:0px !important)
+    !baxov.net##body:style(margin-top:0px !important)
+    !blog.malwarebytes.com##body:style(padding-top:0px !important)
+    !bydom.ru##body:style(padding-top:0px !important)
+    !cont.ws##body:style(padding-top:0px !important)
+    !dgl.ru##body:style(padding-top:0px !important)
+    !dobrodel.ru,dobrodel.mosreg.ru##body:style(padding-bottom:0px !important)
+    !edimdoma.ru##body:style(padding-top:0px !important)
+    !expertreviews.co.uk##body:style(padding-top:0px !important)
+    !fandom.com##body:style(padding-bottom:0px !important)
+    !fixya.com##body:style(margin-top:0px !important)
+    !freelancermap.com##body:style(padding-top:0px !important)
+    !host.io##body:style(padding-top:0px !important)
+    !interface31.ru##body:style(padding-top:0px !important)
+    !ipaddress.com##body:style(margin-top:0px !important)
+    !libreelec.tv##body:style(padding-top:0px !important)
+    !livejournal.com##body:style(padding-bottom:0px !important)
+    !mirtesen.ru##body:style(margin-top:0px !important; padding-top:0px !important)
+    !mspoweruser.com##body:style(padding-top:0px !important)
+    !nemaloknig.com##body:style(padding-top:0px !important)
+    !newstracker.ru##body:style(padding-top:0px !important)
+    !newtimes.ru##body:style(padding-top:0px !important)
+    !owncloud.org##body:style(padding-top:0px !important)
+    !plainnews.ru##body:style(padding-top:0px !important)
+    !popadiv10.ru##body:style(padding-top:0px !important)
+    !rclone.org##body:style(margin-top:0px !important)
+    !serpuhovich.ru##body:style(padding-top:0px !important)
+    !shopsirop.ru##body:style(padding-top:0px !important)
+    !sobaka.ru##body:style(padding-top:0px !important)
+    !sobyanin.ru##body:style(padding-top:0px !important)
+    !splunk.com##body:style(padding-top:0px !important)
+    !stroybat.ru##body:style(padding-top:0px !important)
+    !sumki.ru##body:style(margin-top:0px !important)
+    !techopedia.com##body:style(padding-top:0px !important)
+    !tiger-gun.ru##body:style(padding-bottom:0px !important)
+    !travel.ru##body:style(padding-top:0px !important)
+    !universal-guns.ru##body:style(padding-top:0px !important)
+    !vestifinance.ru##body:style(margin-top:0px !important)
+    !vmware.com##body:style(padding-top:0px !important)
+    !vodien.com##body:style(padding-top:0px !important)
+    !xda-developers.com##body:style(padding-top:0px !important)
+    !yamart.ru##body:style(padding-top:0px !important)
+    !youla.ru##body:style(padding-bottom:0px !important)
+
+    !budetinteresno.info###header:style(padding-top:0px !important)
+    !findtenders.ru##.header:style(padding-top:0px !important)
+    !iguides.ru##header:style(padding-top:0px !important)
+    !indiedev.name###header:style(padding-top:0px !important)
+    !interfax.ru##header:style(position:static !important)
+    !ipaddress.com##header:style(position:static !important)
+    !mdl.ru###header:style(position:static !important)
+    !medbe.ru##.header:style(position:static !important)
+    !nakivo.com###header:style(position:static !important)
+    !probirka.org###header:style(padding-top:0px !important)
+    !rashodnika.ru###header:style(padding-bottom:0px !important)
+    !rootmyandroid.org##.header:style(margin-bottom:0px !important)
+
+    ! remont-book.com##.header::before:style(background:none !important)
+    ! sovet-ingenera.com##.header::before:style(background:none !important)
+
+    ! admobispy.com###page:style(padding-top:0px !important)
+    ! mexiconewsdaily.com###page:style(padding-bottom:0px !important)
+    ! shkolazhizni.ru###page:style(margin-top:0px !important)
+    ! uft.me###page:style(margin-top:0px !important)
+    ! vento.ru###page:style(padding-top:0px !important)
+
+    !akvis.ru##.fixed-panel
+    !fishingstore.ru##.fixed-panel:style(position:static !important)
+    !remont-book.com##.fixed-panel
+    !shop4toys.ru##.fixed-panel
+
+    !adview.ru###main:style(padding-top:0px !important)
+    !computerra.ru##.content:style(margin-top:0px !important)
+    !intercharm.ru###main:style(margin-top:0px !important)
+    !itprotoday.com##main:style(padding-top:0px !important)
+    !lifewire.com##.main:style(margin-top:0px !important)
+    !mdl.ru###content:style(margin-top:0px !important;)
+    !mirtesen.ru###content:style(margin-top:0px !important)
+    !mustbegeek.com###main:style(margin-top:0px !important)
+    !nakivo.com###main:style(margin-top:0px !important)
+    !softpedia.com##.main:style(padding-top:0px !important)
+    !stroy-okey.ru##main:style(padding-top:0px !important)
+    !timeweb.com###main:style(margin-top:0px !important)
+    !winitpro.ru##.content:style(margin-bottom:0 !important)
+    !winitpro.ru##.content:style(margin-top:0 !important)
+
+    ! alfastrah.ru##.fixed-footer:style(position:static !important)
+    ! caida.org###footer:style(position:static !important)
+    ! mxtoolbox.com##footer:style(position:static !important)
+    ! pikabu.ru##.footer:style(height: auto !important)  ! from Ru AdList
+    ! psychologos.ru##.footer:style(height:auto !important)
+    ! steamcommunity.com###footer:style(position:static !important)
+    ! twitrss.me##footer:style(position:static !important)
+    ! xn--80adxhks.xn----9sbjfsfefvbc3afg.xn--p1ai##footer:style(position:static !important)
+
+    ! satra.ru##.fix.sticky-box
+    ! wired.com##.sticky-box
+    ! wired.com##.sticky-box__primary
+
+    ! gamenewsblog.ru##.fa-stack
+    ! protivpozhara.com##.fa-stack
+    ! protivpozhara.com##.fa-stack-1x
+    ! protivpozhara.com##.fa-stack-2x
+    ! tv.ua##.fa-stack
+
+    !diary.ru##body:style(background-image:none !important)
+    !iseptick.ru##body:style(background-image:none !important)
+    !from RU AdList: livejournal.com##body:not(#id):style(background-image: none !important)
+    !from RU AdList: livejournal.com##html:not(#id):style(background-image: none !important)
+    !mediapure.ru##body:style(background-image:none !important)
+
+    ! iohotnik.ru##blockquote::before:style(content:"" !important; position:static !important)
+    ! militaryarms.ru##blockquote::before:style(background:none !important)
+    ! militaryarms.ru##blockquote:style(background:none !important)
+    ! smarthomebeginner.com##blockquote::before:style(content:" " !important)
+    ! sotka.guru##blockquote::before:style(content:" " !important)
+    ! svoboda.org##blockquote:style(content:"" !important)
