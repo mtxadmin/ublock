@@ -8149,6 +8149,7 @@ inoreader.com###sb_rp_upgrade
 inoreader.com###adb_dialog_wrapper
 inoreader.com###adb_dialog_modal_overlay
 inoreader.com##.ad_title_centered
+inoreader.com##.article_content > div:has-text(/^$/)
     ! popups
 inoreader.com###whats_new_dialog_wrapper
 inoreader.com###whats_new_dialog_scroll_overlay
@@ -8158,6 +8159,9 @@ inoreader.com###sitecontent:style(overflow:visible !important)
 inoreader.com###tree_pane:style(overflow:visible !important; height:auto !important)
 inoreader.com###splitter:style(height:auto !important)
 !inoreader.com###reader_pane:style(height:auto !important)
+    ! socials
+inoreader.com##.landing_input_social_login.landing_input_box > .landing_sign_social_buttons
+inoreader.com##.landing_sign_or_simply_use_container
     ! other
 inoreader.com###consent_bbb
 inoreader.com##.top_notification
@@ -8165,8 +8169,6 @@ inoreader.com##.sd
 inoreader.com###sinner_container
 ! disable exceptions
 ||inoreader.com/adv/$important
-! social
-inoreader.com##.landing_input_social_login.landing_input_box > .landing_sign_social_buttons
 inoreader.com##.tree_announce
 ! uBlock rule
 inoreader.com##+js(abort-on-property-read, max_raids)
