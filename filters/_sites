@@ -8137,26 +8137,36 @@ inmyroom.ru##.c-subscribe-popup
 
 inopressa.ru##.alignleft > div:has-text(adfox)
 
-inoreader.com###consent_bbb
-inoreader.com###sb_rp_upgrade
-inoreader.com##.top_notification
-inoreader.com###adb_dialog_wrapper
-inoreader.com###adb_dialog_modal_overlay
-inoreader.com##.sd
-inoreader.com##.ad_title_centered
-inoreader.com###sinner_container
-! modal
-!inoreader.com##.inno_dialog_modal_overlay
+    ! banners and promos
+inoreader.com##+js(set-constant, tippy, noopFunc)
+inoreader.com##+js(set-constant, PaymentRequest, noopFunc)
+!!inoreader.com##.inno_dialog_modal_overlay
 !inoreader.com##.inno_dialog_modal.inno_shadow_big.inno_dialog
 inoreader.com##.inno_dialog_modal:has-text(Adblock Detected)
-inoreader.com##.inno_dialog_modal_overlay
+! is in 3 lists
+inoreader.com##.landing_promo_banner_top
+inoreader.com###sb_rp_upgrade
+inoreader.com###adb_dialog_wrapper
+inoreader.com###adb_dialog_modal_overlay
+inoreader.com##.ad_title_centered
+    ! popups
+inoreader.com###whats_new_dialog_wrapper
+inoreader.com###whats_new_dialog_scroll_overlay
+    ! normalized height and scroll
+inoreader.com###sitecontent:style(overflow:visible !important)
+inoreader.com###tree_pane:style(overflow:visible !important; height:auto !important)
+inoreader.com###splitter:style(height:auto !important)
+inoreader.com###reader_pane:style(height:auto !important)
+    ! other
+inoreader.com###consent_bbb
+inoreader.com##.top_notification
+inoreader.com##.sd
+inoreader.com###sinner_container
 ! disable exceptions
 ||inoreader.com/adv/$important
 ! social
 inoreader.com##.landing_input_social_login.landing_input_box > .landing_sign_social_buttons
 inoreader.com##.tree_announce
-! is in 3 lists
-inoreader.com##.landing_promo_banner_top
 ! uBlock rule
 inoreader.com##+js(abort-on-property-read, max_raids)
 ! Adguard rule
