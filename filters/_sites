@@ -17506,11 +17506,11 @@ superdom.ua##.nav-top:style(position:static !important)
 !||superjob.ru/fstc/*/AdfoxBanner - don't
 ||superjob.ru/*/savePerformanceStat  # stats
 ||superjob.ru/ws/  # www.superjob.ru/ws/trec/  # www.superjob.ru/ws/hit/  # is in EasyPrivacy
-! header
+    ! header
 superjob.ru##div > div > div > div:has-text(Ваш браузер устарел)
 !superjob.ru##div:matches-css(position:sticky) - don't, the menu is useful
 !superjob.ru##div:watch-attr(div):matches-css(position: sticky):style(position:static !important) - don't, works too slowly
-! socials
+    ! socials
 superjob.ru##.f-test-social-link-ok
 superjob.ru##.f-test-social-link-vk
 superjob.ru##.f-test-social-link-mailru
@@ -17519,9 +17519,10 @@ superjob.ru##.f-test-social-link-yandex
 superjob.ru##.f-test-social-link-hh
 superjob.ru##.f-test-vacancy-subscripion
 superjob.ru##.f-test-button-Podelitsya
-! other
+    ! other
 ! Adguarg rule
 superjob.ru##div[class*="f-test-vacancy-ad-context-"]
+superjob.ru##div:has-text(cookies):matches-css(position:fixed)
 
 syloe.com##.mf-modal-iframe
 syloe.com##.mf-modal-overlay
