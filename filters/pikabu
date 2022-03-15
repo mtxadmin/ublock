@@ -2186,6 +2186,10 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Hugeman
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Hugeman$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Hugeman"]))
 
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="thinkingabout"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^thinkingabout$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="thinkingabout"]))
+
 !
 pikabu.ru##.pik-virus
 ! is in Ru AdList
