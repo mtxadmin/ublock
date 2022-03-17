@@ -2262,6 +2262,11 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="AlexRad
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^AlexRadio$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="AlexRadio"]))
 
+! антипрививочник и ватник
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="KeeVorobjeng"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^KeeVorobjeng$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="KeeVorobjeng"]))
+
 !
 pikabu.ru##.pik-virus
 ! is in Ru AdList
