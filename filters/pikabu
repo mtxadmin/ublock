@@ -2350,6 +2350,10 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dill.Do
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Dill.Doe$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Dill.Doe"]))
 
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="gama.delta"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^gama.delta$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="gama.delta"]))
+
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="laszlokovacs"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^laszlokovacs$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="laszlokovacs"]))
