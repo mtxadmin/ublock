@@ -2324,6 +2324,10 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="q000p"]
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^q000p$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="q000p"]))
 
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="kremlebot.457693"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^kremlebot.457693$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="kremlebot.457693"]))
+
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="omnita"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^omnita$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="omnita"]))
