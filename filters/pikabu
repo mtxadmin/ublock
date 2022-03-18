@@ -2307,6 +2307,10 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="XXDok"]
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^XXDok$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="XXDok"]))
 
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="broming"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^broming$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="broming"]))
+
 !
 pikabu.ru##.pik-virus
 ! is in Ru AdList
