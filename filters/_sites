@@ -18589,9 +18589,15 @@ trekkingmania.ru##.bt-top
 trekkingmania.ru##.topbar:style(position:static !important)
 
 ||trellocdn.com/*/snowplow  # analytics
+    ! padding-left
 ! in new design, workplaces sometimes are padded left. Don't know why, but let's correct it.
-trello.com##div:matches-css(padding-left: 260px):style(padding-left:0px !important)
+! v1
+!trello.com##div:matches-css(padding-left: 260px):style(padding-left:0px !important)
+! v2
+trello.com###content-wrapper:style(padding-left:0px !important)
+    ! banners and promos
 trello.com##button:has-text(Premium)
+    ! other
 
 trendmicro.com##[class^=_nav_logo]
 trendmicro.com##[class^=_nav_navigation]:style(position:static !important)
