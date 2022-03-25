@@ -13252,6 +13252,14 @@ ozon.ru##.white-bg:style(position:static !important)
 ozon.ru##.modal:has-text(город)
 ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли)
+    ! banners and promos
+||ozone.ru/assets/*-banner$script
+ozon.ru##div[data-widget="banner"]
+ozon.ru##a[href^="/travel/info/hotels-cashback/"]
+ozon.ru##div[data-widget="objectBannerList"]
+ozon.ru##div[data-widget="webPremiumPointsInfo"]
+ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
+    ! other
 
     ! banners and promos
 ||ozone.ru/_nuxt/cms-all-banner*
