@@ -13272,9 +13272,17 @@ ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 ||ozone.ru/s3/cms/$image
 ||ozone.ru/assets/marketing
 ||ozone.ru/*/banners_services/
+||ozone.ru/s3/video/cover/$image
 ozon.ru##button:has-text(Premium)
 ozon.ru##.skeleton-banner
 ozon.ru##button:has-text(/Подарить|в один клик/)
+ozon.ru##div[data-widget="webTopStreams"]:has(a[href^="/live"])
+ozon.ru##div[data-widget="setOfPreviews"]
+ozon.ru##div:has(> a[href^="/highlight/"])
+ozon.ru##li:has(> a[href^="/highlight/"])
+ozon.ru##div:has(>p:has-text(Оформить подписку))
+! not aside column, but banner
+ozon.ru##aside
     ! trackers
 ||ozone.ru/s3/ozon-tag-manager/
 ||ozon.ru/api/logs-gateway/
@@ -13291,6 +13299,7 @@ ozon.ru##.b4u0
 !||ozone.ru/assets/vendors - don't, map blocked
 !||ozone.ru/assets/vendors-node_modules_bx - don't, map blocked
 !||ozone.ru/assets/cms-desktop-top-bar - don't
+ozon.ru##div[data-widget="separator"]
 
 packtpub.com##.upsell-box
 packtpub.com##.upsell-banner
