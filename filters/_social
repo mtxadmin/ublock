@@ -1301,7 +1301,8 @@ plus.google.com
 ~medtehno.ru##[class*="follow"]:not(html):not(body):not(article)
 ~facebook.com,~vk.com##[id*="follow"]:not(html):not(body):not(article)
 ! Exclusions: on oracle.com there are many elements with class="selectionShareable"
-~officeapps.live.com,~joom.com,~oracle.com##[class*="Share"]:not(html):not(body):not(article)
+~officeapps.live.com,~joom.com,~oracle.com##[class*="Share"]:not(html):not(body):not(article):not(.selectionShareable)
+    ! .selectionShareable - see /plugins/selection-sharer/*
 ##[title^="Follow me on "]
 ##[id*="Share"]:not(html):not(body):not(article)
 ! Too many exclusions. Disabled. 
