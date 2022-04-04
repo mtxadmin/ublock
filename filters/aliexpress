@@ -259,6 +259,7 @@ aliexpress.ru##[class^=FixedStoreInfoBar_]:style(position:static !important)
 aliexpress.ru##.ui-fixed-panel
     ! pseudo filler
 aliexpress.com##.placeholder-div
+aliexpress.com##div[data-role="for_header_fixed"]
 
     ! hover icons on photos
 aliexpress.com##.atwl-btn-wrap
@@ -1229,12 +1230,18 @@ offer.alibaba.com  # is in Dan Pollock’s hosts file and hpHosts’ Ad and trac
 
 aliexpress.ru##[class^=Header_Logo]
 aliexpress.ru##[class*=HeaderPDP_Logo]
+!.site-logo is removed by general rule, but there is a margin
+aliexpress.com##.site-logo:style(padding:0px !important)
 aliexpress.ru##[class^=styles_campaignWrapper]
 aliexpress.ru##[class^=IntroductionCarousel]
 aliexpress.ru##[class*=styles_appsIcon]
 aliexpress.ru##[class^=styles_benefits]
 
 aliexpress.com,aliexpress.ru##.product-fix-wrap
+
+    ! seo
+aliexpress.ru##.seo-left
+aliexpress.com##.hot-words
 
 ! is in Adguard and Ru AdList (https://forums.lanik.us/viewtopic.php?f=102&t=44550)
 aliexpress.com,aliexpress.ru###ae-ru-privacy-banner
@@ -1243,7 +1250,6 @@ aliexpress.com,aliexpress.ru###ae-ru-privacy-banner__container
 aliexpress.com##.all-categories-banner
 aliexpress.com###categories-banner
 ||alicdn.com/ae-affiliate-ui/$image
-aliexpress.ru##.seo-left
 aliexpress.ru###brands-wall-box
 aliexpress.ru##.multi-sidebar-tab
 aliexpress.ru##.rus-mall-img
