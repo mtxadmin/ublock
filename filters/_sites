@@ -7076,6 +7076,25 @@ gravitsapa.info##header
 gravitsapa.info##.podaite-pozhalyista
 gravitsapa.info##h3:has-text(Так же в блоге:)
 
+||graylog.org/docs/get-smart-bar/
+    ! top
+graylog.org##.header_top_nav:style(min-height:auto !important)
+graylog.org##.stickytop
+graylog.org###top-navbar:style(position:static !important)
+graylog.org##.header-title
+graylog.org##.categories-wrapper
+graylog.org###main-outlet:style(padding-top:0px !important)
+    ! sticky left menu
+graylog.org##.left_sidebar_main:style(position:static !important)
+graylog.org##.left_sidebar_nav_menu:style(height:auto !important)
+graylog.org##.left-arrow
+    ! sticky right
+graylog.org##.right_sidebar_sticky
+    ! other
+graylog.org##body:style(background-color:initial !important)
+graylog.org##.watermark_logo
+graylog.org##.article-vote-container
+
 greendail.ru###footer
 
 greywizard.com$3p
@@ -8752,6 +8771,9 @@ jelectro.ru##.logo_mini
 jelectro.ru##.rating_wrapper
 
 jetbrains.com##.acceptance-popup
+
+! medium.com
+jetruby.com##a[aria-label=Homepage]
 
 jetsetter.com##.hero-gallery-container
 
@@ -12366,6 +12388,8 @@ nexplorer.ru##.header
 nextofwindows.com###random-image-3
 
 nexustours.com##.banner__center
+
+nginx.com##.nginx-logo-footer
 
 nice.de##.cd-top
 nice.de##.wrap-right
@@ -17257,6 +17281,11 @@ stackify.com###headerwrap:style(position:static !important)
 stackpathcdn.com$script,subdocument
 
 stackshare.io##[src^="https://img.stackshare.io/s_assets/"]
+stackshare.io##div[data-testid="getAdvice"]
+stackshare.io##aside
+stackshare.io##div:has(>a[href="/private"])
+stackshare.io##div:has(>button[data-testid="signupFullAccessButton"])
+stackshare.io##div:has(>div>button:has-text(Get Advice))
 
 starmommy.com##.sticky-header:style(position:static !important)
 
@@ -19125,21 +19154,44 @@ umterps.com##div:has-text(Ad Blocker Detected)
 unclinic.ru##.meta-cat
 unclinic.ru##.menu-item.btn
 
-! top
+    ! top
+unian.net,unian.ua##.main-menu__close
+unian.net,unian.ua##.nano
+unian.net,unian.ua##.main-menu__logo
+unian.net,unian.ua##.main-menu__content:style(position:static !important)
+    ! "time to read"
+unian.net,unian.ua##.comments.article__info-item
+unian.net,unian.ua##.comments.publication__info-item
+    ! popups
+unian.net,unian.ua##.navigation
+unian.net,unian.ua##.menu-trigger-btn
+    ! bullshit
+unian.net,unian.ua##div.newsfeed-lite__item:has(.newsfeed-lite__rubric:has-text(Астролог))
+unian.net,unian.ua##.newsfeed-lite__item
+unian.net,unian.ua##.lite-subtitle
+unian.net,unian.ua##.newsfeed__item:has(a[href^="https://www.unian.net/lite/"])
+unian.net,unian.ua##.footer-menu__block:has-text(Гороскоп)
+    ! other
+unian.net,unian.ua##.window
+unian.net,unian.ua##.footer-menu__app
+! gaps between articles
+unian.net,unian.ua##.margin-bottom-10.margin-top-15
+
+    ! top
 unite4buy.com##.n-header:style(position:static !important)
 unite4buy.com##.n-header-wrapper:style(position:static !important)
 unite4buy.ru##.n-header-wrapper:style(position:static !important)
-! banners
+    ! banners
 ||unite4buy.ru/static/img/xlabel-price$image
 !unite4buy.ru##.banner-line - this one is now content block
 unite4buy.ru##.banner_line
 unite4buy.ru##.abanner
-! inline promos
+    ! inline promos
 unite4buy.ru##.review-content > p:has-text(можно получить лучшую цену)
 unite4buy.ru##.prat:has-text(Помоги своим отзывом тысячам)
 unite4buy.ru##p:has([href="/nfilter/smartphone/"])
 unite4buy.ru##p:has(.a_href)
-! other
+    ! other
 unite4buy.ru##.btn
 unite4buy.ru##.wf.item__stats
 unite4buy.ru##.item__timer
@@ -22463,29 +22515,6 @@ geeksforgeeks.org##.shell
 
 d3ward.github.io##.gt-link
 
-    ! top
-unian.net,unian.ua##.main-menu__close
-unian.net,unian.ua##.nano
-unian.net,unian.ua##.main-menu__logo
-unian.net,unian.ua##.main-menu__content:style(position:static !important)
-    ! "time to read"
-unian.net,unian.ua##.comments.article__info-item
-unian.net,unian.ua##.comments.publication__info-item
-    ! popups
-unian.net,unian.ua##.navigation
-unian.net,unian.ua##.menu-trigger-btn
-    ! bullshit
-unian.net,unian.ua##div.newsfeed-lite__item:has(.newsfeed-lite__rubric:has-text(Астролог))
-unian.net,unian.ua##.newsfeed-lite__item
-unian.net,unian.ua##.lite-subtitle
-unian.net,unian.ua##.newsfeed__item:has(a[href^="https://www.unian.net/lite/"])
-unian.net,unian.ua##.footer-menu__block:has-text(Гороскоп)
-    ! other
-unian.net,unian.ua##.window
-unian.net,unian.ua##.footer-menu__app
-! gaps between articles
-unian.net,unian.ua##.margin-bottom-10.margin-top-15
-
 ||1plus1.video/ab
 ||1plus1.video/*/ab/
 ||1plus1.video/static/img/ab/
@@ -22726,32 +22755,3 @@ phoenixnap.com##.ct-div-block:has(>a)
 
 fontanka.ru##svg[data-test=logo]
 
-||graylog.org/docs/get-smart-bar/
-    ! top
-graylog.org##.header_top_nav:style(min-height:auto !important)
-graylog.org##.stickytop
-graylog.org###top-navbar:style(position:static !important)
-graylog.org##.header-title
-graylog.org##.categories-wrapper
-graylog.org###main-outlet:style(padding-top:0px !important)
-    ! sticky left menu
-graylog.org##.left_sidebar_main:style(position:static !important)
-graylog.org##.left_sidebar_nav_menu:style(height:auto !important)
-graylog.org##.left-arrow
-    ! sticky right
-graylog.org##.right_sidebar_sticky
-    ! other
-graylog.org##body:style(background-color:initial !important)
-graylog.org##.watermark_logo
-graylog.org##.article-vote-container
-
-nginx.com##.nginx-logo-footer
-
-! medium.com
-jetruby.com##a[aria-label=Homepage]
-
-stackshare.io##div[data-testid="getAdvice"]
-stackshare.io##aside
-stackshare.io##div:has(>a[href="/private"])
-stackshare.io##div:has(>button[data-testid="signupFullAccessButton"])
-stackshare.io##div:has(>div>button:has-text(Get Advice))
