@@ -4,23 +4,33 @@
 !
 
     ! banners
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.js-dismissable-hero
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.js-dismissable-hero
     ! top
 ! subtop (empty)
-stackexchange.com##.site-header--container
+askubuntu.com,stackexchange.com##.site-header--container
+stackoverflow.com##.top-bar ~ .container:style(position:static !important; margin-top:0px !important)
+stackoverflow.com##.top-bar:style(position:static !important)
+stackoverflow.com##.ps-sticky
+    ! logos
+||sstatic.net/img/*/logo-$image
+||sstatic.net/*/logosponsored.svg
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.-logo
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.s-topbar--logo
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.af-logo-img
+    ! popups
+askubuntu.com,stackoverflow.com##.s-popover
     ! social
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.short-link
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.short-link
     ! other
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.new-login-form
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.new-feature-wrapper
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##._fixed:style(position:absolute !important)
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com###post-form
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com###footer
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.bottom-notice
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com###left-sidebar
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.everyoneloves__top-leaderboard
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.everyonelovesstackoverflow
-stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.-logo
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.new-login-form
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.new-feature-wrapper
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##._fixed:style(position:absolute !important)
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com###post-form
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com###footer
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.bottom-notice
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com###left-sidebar
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.everyoneloves__top-leaderboard
+askubuntu.com,stackexchange.com,stackoverflow.com,serverfault.com,superuser.com##.everyonelovesstackoverflow
 
 serverfault.com##.site-header
 
@@ -31,9 +41,7 @@ clc.stackoverflow.com
 
 askubuntu.com##.js-sticky-leftnav:style(position:static !important)
 ||sstatic.net/*/site-background-image.png
-||sstatic.net/*/logosponsored.svg
 askubuntu.com##.site-header
-askubuntu.com##.-logo
 
 
 ! Russian translated clone
