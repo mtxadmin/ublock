@@ -14722,7 +14722,8 @@ rambler.ru##._3mubT
 ! Adguard rule
 rambler.ru###root div[data-blocks] div:not([aria-label]):empty:style(min-height: 0 !important;)
 ! footer svg logo
-rambler.ru##a[data-cerber="footer::news::logo"]
+rambler.ru##a[data-cerber$="::logo"]
+rambler.ru##button[data-blocks^="mini_video_player"]
 
 ramayoga.ru##.header__fixed:style(position:static !important)
 
@@ -22729,6 +22730,10 @@ fontanka.ru##svg[data-test=logo]
     ! top
 graylog.org##.header_top_nav:style(min-height:auto !important)
 graylog.org##.stickytop
+graylog.org###top-navbar:style(position:static !important)
+graylog.org##.header-title
+graylog.org##.categories-wrapper
+graylog.org###main-outlet:style(padding-top:0px !important)
     ! sticky left menu
 graylog.org##.left_sidebar_main:style(position:static !important)
 graylog.org##.left_sidebar_nav_menu:style(height:auto !important)
@@ -22736,5 +22741,17 @@ graylog.org##.left-arrow
     ! sticky right
 graylog.org##.right_sidebar_sticky
     ! other
+graylog.org##body:style(background-color:initial !important)
 graylog.org##.watermark_logo
 graylog.org##.article-vote-container
+
+nginx.com##.nginx-logo-footer
+
+! medium.com
+jetruby.com##a[aria-label=Homepage]
+
+stackshare.io##div[data-testid="getAdvice"]
+stackshare.io##aside
+stackshare.io##div:has(>a[href="/private"])
+stackshare.io##div:has(>button[data-testid="signupFullAccessButton"])
+stackshare.io##div:has(>div>button:has-text(Get Advice))
