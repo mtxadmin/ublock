@@ -617,6 +617,8 @@ yandex.*##.news-app > div.news-navigation-menu__wrapper ~ div[class][data-log-id
 ! Ru AdList rule. Works on 2021-03
 yandex.ru##div[class*=" news-"][class$="_mode_daas"]
 ||yandex.net/get-ynews-logo/
+! подсовывает "яндекс-новости" с цензурированной подборкой
+yandex.ru,ya.ru##a[class="mini-suggest__item-link"]
 
 yandex.ru##.mg-navigation-menu:style(position:static !important)
 yandex.ru##.serp-header__wrapper:style(position:static !important)
