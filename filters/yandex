@@ -620,6 +620,10 @@ yandex.ru##div[class*=" news-"][class$="_mode_daas"]
 ! подсовывает "яндекс-новости" с цензурированной подборкой
 yandex.ru,ya.ru##a[class="mini-suggest__item-link"]
 
+yandex.ru##.serp-item:has(a[href*="//yandex.com/news//"])
+yandex.ru##.serp-item:has(a[href*="//yandex.fr/news/"])
+yandex.ru##.serp-item:has(a[href*="//yandex.ua/news/"])
+
 yandex.ru##.mg-navigation-menu:style(position:static !important)
 yandex.ru##.serp-header__wrapper:style(position:static !important)
 
