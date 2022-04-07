@@ -1690,26 +1690,28 @@ au.ru##.au-modal
 au.ru##.au-adult-modal-background
 ! other
 
-! banners
+    ! banners
+||auchan.ru/pokupki/media/banners$image
 auchan.ru##li#sale-banner1
 auchan.ru##[id^=sale-banner]
 auchan.ru##.banner_slider
-||auchan.ru/pokupki/media/banners$image
-! footer
+auchan.ua##div[class*=banner]
+    ! footer
 auchan.ru##.footer__popup-agreement
 auchan.ru##.homepage-block--prefooter
-! logos
+    ! logos
 auchan.ru##.brand-cat
 auchan.ru###logos
 auchan.ru##.wr_logo
-! compacting list of products
+    ! compacting list of products
 auchan.ru##.products__item-outofstock-block
 auchan.ru##.products__item-footer > .cf.products__item-btns
 auchan.ru##.homepage-block__content > p
-! other
+    ! other
 auchan.ru##.products__item-badges
 auchan.ru##.news-subscribe
 auchan.ru##.popup
+auchan.ru##section:has-text(Любимые марки)
 
 ! exclusion: classes in body
 audi-club.ru#@#.activeSmallLogo
@@ -8759,6 +8761,10 @@ j4web.ru##.header-content
 
 jakondo.ru##.donate_breadcrumb
 
+jam-news.net###donationPopup
+jam-news.net##.header-support-button
+jam-news.net##.header-links
+
 japantoday.com##.widget--animated
 
 jaxenter.com##h4:has-text(SEE MORE:)
@@ -13606,14 +13612,13 @@ pfvektor.com##.main-slider
 pfvektor.com##.side-navbar:style(position:static !important)
 pfvektor.com##.html
 
-! popups
+    ! popups
 philips.ru##.mfp-content
 philips.ru##.mfp-ready.mfp-wrap2
 philips.ru##.mfp-ready.mfp-bg2
-! other
+    ! other
 philips.ru##.p-toggler
 philips.ru##.p-open.p-panel
-philips.ru##.p-toggler
 
 phishlabs.com##.return-top
 
@@ -15526,6 +15531,9 @@ rusavtodomodedovo.ru,rusavtopodolsk.ru,rusavtovidnoe.ru##.snowitem
 rusavtodomodedovo.ru,rusavtopodolsk.ru,rusavtovidnoe.ru##.review-carousel
 rusavtodomodedovo.ru,rusavtopodolsk.ru,rusavtovidnoe.ru##.top-menu-call-btn
 rusavtodomodedovo.ru,rusavtopodolsk.ru,rusavtovidnoe.ru##.cssload-loader
+
+||rusbankrot.ru/images/muk_banner$image
+rusbankrot.ru##.toast
 
 rusbestrailways.com##.rteright
 rusbestrailways.com##.knopka
@@ -22741,16 +22749,4 @@ medium.com##*:matches-css(position:sticky):style(position:static !important)
 medium.com##span:has(div > p:has-text(Share your ideas))
 
 4tololo.ru##.top-image
-
-||rusbankrot.ru/images/muk_banner$image
-rusbankrot.ru##.toast
-rusbankrot.ru##.ticker-text
-
-auchan.ua##div[class*=banner]
-
-auchan.ru##section:has-text(Любимые марки)
-
-jam-news.net###donationPopup
-jam-news.net##.header-support-button
-jam-news.net##.header-links
 
