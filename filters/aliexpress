@@ -56,6 +56,10 @@ aliexpress.ru$removeparam=|cv
 aliexpress.com$removeparam=|dp
 aliexpress.ru$removeparam=|dp
 
+! Found independently (2022-04)
+aliexpress.com$removeparam=_evo_buckets
+aliexpress.ru$removeparam=_evo_buckets
+
 ! from NeatURL (6.0, added here 2022-02). Seems variation of algo_exp_id and algo_expid so it looks logical
 aliexpress.com$removeparam=expid
 aliexpress.ru$removeparam=expid
@@ -83,6 +87,10 @@ aliexpress.ru$removeparam=|gps-id
 ! from NeatURL (6.0, added here 2022-02)
 aliexpress.com$removeparam=initiative_id
 aliexpress.ru$removeparam=initiative_id
+
+! Found independently (2022-04)
+aliexpress.com$removeparam=item_id
+aliexpress.ru$removeparam=item_id
 
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=|mp
@@ -239,6 +247,8 @@ aliexpress.com,aliexpress.ru##[href^="//campaign.aliexpress.com/"]
 ! is in Ru AdList (https://forums.lanik.us/viewtopic.php?f=102&t=44550)
 aliexpress.com,aliexpress.ru###J_xiaomi_dialog
 alimebot.aliexpress.com  # from https://forums.lanik.us/viewtopic.php?f=102&t=44550
+
+aliexpress.ru##[class^=CampaignEntrance]
 
     ! store banners
 aliexpress.com,aliexpress.ru##.product-store-banner
