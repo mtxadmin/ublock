@@ -614,12 +614,15 @@ yandex.ru##.neo-advert
 yandex.*##.news-story__share
 ! Adguard rule. Works on 2021-03
 yandex.*##.news-app > div.news-navigation-menu__wrapper ~ div[class][data-log-id]
+
 ! Ru AdList rule. Works on 2021-03
 yandex.ru##div[class*=" news-"][class$="_mode_daas"]
 ||yandex.net/get-ynews-logo/
-! подсовывает "яндекс-новости" с цензурированной подборкой
+! подсовывает "fake-яндекс-новости" с цензурированной подборкой
 yandex.ru,ya.ru##a[class="mini-suggest__item-link"]
-
+! fakenews на главной
+yandex.ru##.news__header
+! fakenews, свои же, подсунутые в поиске
 yandex.ru##.serp-item:has(a[href*="//yandex.com/news//"])
 yandex.ru##.serp-item:has(a[href*="//yandex.fr/news/"])
 yandex.ru##.serp-item:has(a[href*="//yandex.ua/news/"])
