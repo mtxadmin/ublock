@@ -14746,6 +14746,9 @@ raidrive.com##.fusion-animated:style(visibility:visible !important)
 ||rambler.ru/metrics/  # is in EastPrivacy
 ||ssp.rambler.ru/capirs_async.js$important
 ||ramblernews.media.eagleplatform.com$subdocument  # rambler
+    ! fakenews
+rambler.ru##div:has(>div>h3>a[href*="//news.rambler.ru/"])
+rambler.ru##div:has(>h3>a[href*="//news.rambler.ru/"])
     ! rules
 rambler.ru$inline-script  # Рамблер ломает себе вёрстку при загрузке через пару секунд. А контент всё равно не отображает. Да и фиг с ним.
 ! rambler "recommendations" (ads)
