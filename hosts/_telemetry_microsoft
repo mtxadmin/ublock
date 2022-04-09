@@ -35,6 +35,8 @@
 
 ac3.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads
 
+activity.windows.com  # https://brave.com/popular-browsers-first-run/
+
 adevents.msn.com  # from GoodbyeAds
 
 ads.msn.com
@@ -54,17 +56,30 @@ analytics.r.msn.com  # from MVPS
 analytics.msnbc.msn.com  # from Dan Pollock's hosts file
 analytics.live.com  # from MVPS
 
+! https://brave.com/popular-browsers-first-run/
+api.msn.com
+
+arc.msn.com  # https://brave.com/popular-browsers-first-run/ : "set of tracking instructions"
+arc.msn.com.nsatc.net
 arc1.msn.com  # from Peter Lowe's hosts file
 
-az361816.vo.msecnd.net  # from Dan Pollock's hosts file
-az512334.vo.msecnd.net  # from Dan Pollock's hosts file
+! https://xakep.ru/2018/07/02/android-231/
+! https://clinetworking.com/2018/06/03/1984-called/
+! https://brave.com/popular-browsers-first-run/
+aria.microsoft.com
+!+  pipe.aria.microsoft.com
+! browser.pipe.aria.microsoft.com
+! mobile.pipe.aria.microsoft.com
 
 bat.bing.com$important  # from many lists
 !+  r.bat.bing.com
 ! end of bat.bing.com
 
+||bing.com/qbox  # https://brave.com/popular-browsers-first-run/
+
 bingads.trafficmanager.net  # azure.bingads.trafficmanager.net
 
+! in many sources, for instance, see https://brave.com/popular-browsers-first-run/
 browser.events.data.msn.com
 
 c.bing.com  # from MVPS
@@ -110,6 +125,9 @@ choice.microsoft.com
 !+  api.choice.microsoft.com
 choice.microsoft.com.nsatc.net
 
+! https://brave.com/popular-browsers-first-run/
+clarity.ms
+
 compatexchange.cloudapp.net
 
 corp.sts.microsoft.com
@@ -121,6 +139,12 @@ diagnostics.support.microsoft.com
 
 edge-bingads-westeurope.cloudapp.net
 
+# https://brave.com/popular-browsers-first-run/
+edgewelcomecdn.microsoft.com
+microsoftedgewelcome.microsoft.com
+
+edge.skype.com  # https://brave.com/popular-browsers-first-run/
+
 fe2.update.microsoft.com.akadns.net
 
 feedback.microsoft-hohm.com  # from Dan Pollock's hosts file
@@ -129,6 +153,17 @@ feedback.windows.com
 
 flex.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads  # is in Dan Pollock's hosts file and MVPS
 
+! https://betanews.com/2018/07/31/all-the-websites-windows-10-connects-to-clean-install/  # "Apps and Windows Insider builds", or "Enables connections to Windows Update". Very suspicious.
+footprint.net
+!+  c.footprint.net
+!+      com.c.footprint.net
+!+          microsoft.com.c.footprint.net
+!+              mp.microsoft.com.c.footprint.net
+!+                  delivery.mp.microsoft.com.c.footprint.net
+!+                      dl.delivery.mp.microsoft.com.c.footprint.net
+!+                          tlu.dl.delivery.mp.microsoft.com.c.footprint.net
+! end of footprint.net
+
 g.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads  # is in Dan Pollock's hosts file
 g00.msn.com
 
@@ -136,11 +171,15 @@ h1.msn.com  # from Dan Pollock's hosts file
 
 in.appcenter.ms  # do not block appcenter.ms entirely  # blocked by some adlist in Blokada. Redirects to appcenter.ms (MS telemetry). The domain itself belongs to MS and has bad reputation.
 
+! https://brave.com/popular-browsers-first-run/
+iris.microsoft.com
+!+  api.iris.microsoft.com
+
 lb1.www.ms.akadns.net  # from Dan Pollock's hosts file
 
 measure.office.com  # from Peter Lowe's hosts file
 
-mem.gfx.ms  # ad scripts and 404 root
+mem.gfx.ms  # ad scripts and 404 root  # also see https://brave.com/popular-browsers-first-run/
 
 metaservices.microsoft.com
 !+  dmd.metaservices.microsoft.com
@@ -158,10 +197,6 @@ metron.live.com.nsatc.net
 !+      vortex-win.data.metron.live.com.nsatc.net
 ! end of metron
 
-! https://xakep.ru/2018/07/02/android-231/
-! https://clinetworking.com/2018/06/03/1984-called/
-mobile.pipe.aria.microsoft.com
-
 mobileads.msn.com  # from MVPS
 mobileleads.msn.com  # from Dan Pollock's hosts file
 
@@ -174,6 +209,13 @@ msads.net$important  # is in many lists
 !+  ads2.msads.net
 !+  global.msads.net
 ! end of msads.net
+
+msecnd.net
+!+   vo.msecnd.net
+    ! az361816.vo.msecnd.net  # from Dan Pollock's hosts file
+    ! az512334.vo.msecnd.net  # from Dan Pollock's hosts file
+    ! az725175.vo.msecnd.net  # https://brave.com/popular-browsers-first-run/
+! end of msecnd.net
 
 msnbot-65-55-108-23.search.msn.com  # from Dan Pollock's hosts file
 
