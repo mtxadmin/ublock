@@ -64,10 +64,10 @@
 yandex.*##.desk-notif-card_messenger_yes
 
 ||yastatic.net/*/notifier/  # ad popups
-yandex.ru##.interview
+yandex.*##.interview
 ||yastatic.net/s3/home/notifications/$image
 
-yandex.ru##.desk-notif-card_promo_yes
+yandex.*##.desk-notif-card_promo_yes
 
 ||yastatic.net/market-affiliate/
 ||yastatic.net/partner-code-bundles/
@@ -75,7 +75,7 @@ yandex.ru##.desk-notif-card_promo_yes
 yandex.*##.distr-popup__content
 yandex.*##.distr-popup_js_inited
 ! is in AdGuard
-yandex.ru##.distr-popup_js_inited
+yandex.*##.distr-popup_js_inited
 yandex.*##.distr-popup_animation_fall-show
 yandex.*##.distr-popup_shadow_yes
 yandex.*##.distr-popup_theme_black
@@ -95,9 +95,9 @@ yandex.*##.MessageBox-Content:has(.news-tips__tooltip-inner)
 !yandex.*##.yaplus_available_yes
 ! is in Ru AdList and Fanboy's
 yandex.*##.yaplus
-yandex.ru##.Link_lego
-yandex.ru##.menu-plus-promo
-yandex.ru##.mheader3__plus
+yandex.*##.Link_lego
+yandex.*##.menu-plus-promo
+yandex.*##.mheader3__plus
 
     ! "Скачайте Яндекс-браузер. Ну скачайте! Ну очень надо."
 ! is in Ru AdList and Fanboy's
@@ -107,8 +107,8 @@ yandex.*##.footer
     ! other banners and promos (not all, there are too many of them)
 ||yastatic.net/s3/home/promos/$image
 ! is in Adguard
-yandex.ru##.serp-footer__promo
-yandex.ru##.menu-login-promo
+yandex.*##.serp-footer__promo
+yandex.*##.menu-login-promo
 yandex.*##.serp-adv__add
 yandex.*##.serp-adv__displayed
 yandex.*##.serp-adv__all
@@ -179,7 +179,7 @@ yandex.*##.content-with-thumb_margin_no
 yandex.*##.content-with-thumb
 
 ! maps
-yandex.ru##[class^=_id_branding]
+yandex.*##[class^=_id_branding]
     ! yandex.ru##._id_branding_mastercard
     ! yandex.ru##._id_branding_yandex-gasstation
 yandex.*##.branding-control
@@ -198,8 +198,8 @@ yandex.*##.business-post-view
 
 ! Yandex.Popups, блин. Хватит уже выстреливать в лицо всякое
 !yandex.ru##.Popup2 - don`t, там не только реклама. Нужно сузить условия
-yandex.ru###popup-wrapper
-yandex.ru###modal
+yandex.*###popup-wrapper
+yandex.*###modal
 
 yandex.*##.layout__right
 !yandex.*##.content__right_cols_12.content__right
@@ -216,26 +216,26 @@ yandex.*##.object-figures_type_video.object-figures
 yandex.*##.label_font_own.label_color_white.label:has-text(/^[0-9]+\+$/)
 
 ! QR-code
-yandex.ru##.app__qr
+yandex.*##.app__qr
 
 yandex.*##.ygogn5__content
-yandex.ru/data/mail.js
+||yandex.ru/data/mail.js
 yandex.*##.misspell
 ! ads in images' search
 yandex.*##.incut
 
 !yandex.*##video - don't, Yandex.efir (https://yandex.ru/efir/) is video too
 ! is in Adguard
-yandex.ru##.stream-share
+yandex.*##.stream-share
 
 yandex.*##.desk-notif-card_login-plus
 yandex.*##.media-infinity-footer__content_visible_yes
 yandex.*##.media-infinity-footer__content
 
-yandex.ru##.voter
-yandex.ru##.service-section
+yandex.*##.voter
+yandex.*##.service-section
 
-ya.ru/design/*
+||ya.ru/design/*
 ya.ru##.layout__header-cell
 ya.ru##.layout__header
 ya.ru##.layout__footer
@@ -243,7 +243,7 @@ ya.ru##.input__voice-search
 ya.ru##.personal
 ya.ru##.mtabs
 
-yastatic.net/s3/distribution/promo/
+||yastatic.net/s3/distribution/promo/
 ||avatars.mds.yandex.net/get-market_banners$image
 
 ! answers
@@ -279,24 +279,24 @@ market.yandex.ru##.widget-loader__paranja
 market.yandex.ru##*:matches-css(position:fixed)
 
 ! logos
-yandex.ru##.header2__logo
-yandex.ru##.header3__logo-ru
-yandex.ru##.home-logo__default
-yandex.ru##.yandex-header__logo
-yandex.ru##.yandex-search__logo
-yandex.ru##.serp-header__logo
-yandex.ru##.mlogo
+yandex.*##.header2__logo
+yandex.*##.header3__logo-ru
+yandex.*##.home-logo__default
+yandex.*##.yandex-header__logo
+yandex.*##.yandex-search__logo
+yandex.*##.serp-header__logo
+yandex.*##.mlogo
 ||yastatic.net/s3/frontend/yandex-lego/serp-header/
 
 ! $third-party will not work, it loads in frame
 ||money.yandex.ru/quickpay/
 ||money.yandex.ru/embed/
 
-yandex.ru##.NavBarLogo
-yandex.ru##.FooterApps__link
-yandex.ru##[class^=PageAside__logo]
-yandex.ru##[class^=PageAside__stickyContainer]:style(position:static !important)
-yandex.ru##[class^=PostPhoneCallerBlockArenda]
+yandex.*##.NavBarLogo
+yandex.*##.FooterApps__link
+yandex.*##[class^=PageAside__logo]
+yandex.*##[class^=PageAside__stickyContainer]:style(position:static !important)
+yandex.*##[class^=PostPhoneCallerBlockArenda]
 
 realty.yandex.ru##.GalleryGuadeloupe:has-text(Яндекс.Директ)
 realty.yandex.ru###offer-gallery-aside-ad__rtb
@@ -314,47 +314,44 @@ uslugi.yandex.ru##.Footer-Badges
 ##.ya-browser-updater__stripe
 !yandex.ru##div:has-text(Скачайте) - it seems it is not very good filter?
 yandex.ru##[href^="https://browser.yandex.ru"]
-! from Ru AdList, generalized
-##a[href*="ya-distrib.ru"]
-ya-distrib.ru
 ||yandex.net/browser-updater/
 /ya_browser_updater.js
 
-yandex.ru##.desk-notif-card_plus-wallet_yes
+yandex.*##.desk-notif-card_plus-wallet_yes
 
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.zen-ui-header-container__wrapper:style(position:absolute !important)
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-right-block__stick-wrapper:has-text(Понравилось?)
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-render__block_quote:has-text(/подписаться на канал|палец вверх/)
+zen.yandex.*##.zen-ui-header-container__wrapper:style(position:absolute !important)
+zen.yandex.*##.article-right-block__stick-wrapper:has-text(Понравилось?)
+zen.yandex.*##.article-render__block_quote:has-text(/подписаться на канал|палец вверх/)
 ! logo
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.ui-lib-header2__logo
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.ui-lib-logo
+zen.yandex.*##.ui-lib-header2__logo
+zen.yandex.*##.ui-lib-logo
 ! top
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.ui-lib-header2:style(position:static !important)
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.ui-lib-header-container2:style(position:static !important)
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.ui-lib-header-container2__wrapper:style(position:static !important)
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.zen-header:style(position:static !important)
+zen.yandex.*##.ui-lib-header2:style(position:static !important)
+zen.yandex.*##.ui-lib-header-container2:style(position:static !important)
+zen.yandex.*##.ui-lib-header-container2__wrapper:style(position:static !important)
+zen.yandex.*##.zen-header:style(position:static !important)
 ! right
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.sticky-container:style(position:static !important)
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-right-suggested-publications-wrapper__sticky:style(top:0px !important)
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-right-suggested-publications-wrapper:style(padding-top:0px !important)
+zen.yandex.*##.sticky-container:style(position:static !important)
+zen.yandex.*##.article-right-suggested-publications-wrapper__sticky:style(top:0px !important)
+zen.yandex.*##.article-right-suggested-publications-wrapper:style(padding-top:0px !important)
 ! popups
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-feedback-observer
+zen.yandex.*##.article-feedback-observer
 ||avatars.mds.yandex.net/get-zen-logos/
 ! smiles
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.zen-ui-emoji-bar__icon
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.comment-editor-emojis
+zen.yandex.*##.zen-ui-emoji-bar__icon
+zen.yandex.*##.comment-editor-emojis
 ! removing some begging for subs
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-render__block_quote:has-text(Подпишитесь)
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##b:has-text(Подпишитесь)
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.ui-lib-likes-count
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-render__block:has-text(/(С|с)тавьте лайк/)
+zen.yandex.*##.article-render__block_quote:has-text(Подпишитесь)
+zen.yandex.*##b:has-text(Подпишитесь)
+zen.yandex.*##.ui-lib-likes-count
+zen.yandex.*##.article-render__block:has-text(/(С|с)тавьте лайк/)
 ! banners
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article__bottom-embed
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##[class$=__ad-content]
+zen.yandex.*##.article__bottom-embed
+zen.yandex.*##[class$=__ad-content]
 ! other
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-stats-view-redesign__info-container
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-stat__info
-zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.lv,zen.yandex.md,zen.yandex.tm,zen.yandex.ua,zen.yandex.uz##.article-stats-view__info-inner
+zen.yandex.*##.article-stats-view-redesign__info-container
+zen.yandex.*##.article-stat__info
+zen.yandex.*##.article-stats-view__info-inner
 ||zen.yandex.ru/api/v4/stats/
 ||zen.yandex.by/api/v4/stats/
 ||zen.yandex.com/api/v4/stats/
@@ -420,8 +417,8 @@ zen.yandex.ru,zen.yandex.by,zen.yandex.com,zen.yandex.com.am,zen.yandex.com.tr,z
 ||zen.yandex.ua/editor-api/v2/client-error-proxy
 ||zen.yandex.uz/editor-api/v2/client-error-proxy
 
-zen.yandex.ru##.publication-sticky-header_is-sticky.publication-sticky-header_active.publication-sticky-header_page-type_article:style(position:static !important)
-zen.yandex.ru##.article-subscribe-banner
+zen.yandex.*##.publication-sticky-header_is-sticky.publication-sticky-header_active.publication-sticky-header_page-type_article:style(position:static !important)
+zen.yandex.*##.article-subscribe-banner
 
 ! Hmm.. needs recheck
 !||yastatic.net/s3/zen-lib/publishers/
@@ -619,31 +616,36 @@ yandex.*##.news-app > div.news-navigation-menu__wrapper ~ div[class][data-log-id
 yandex.ru##div[class*=" news-"][class$="_mode_daas"]
 ||yandex.net/get-ynews-logo/
 ! подсовывает "fake-яндекс-новости" с цензурированной подборкой
-yandex.ru,ya.ru##a[class="mini-suggest__item-link"]
+yandex.*,ya.ru##a[class="mini-suggest__item-link"]
 ! fakenews на главной
-yandex.ru##.news__header
+yandex.*##.news__header
 ! fakenews, свои же, подсунутые в поиске
-yandex.ru##.serp-item:has(a[href*="//yandex.com/news//"])
-yandex.ru##.serp-item:has(a[href*="//yandex.fr/news/"])
-yandex.ru##.serp-item:has(a[href*="//yandex.ua/news/"])
+yandex.*##.serp-item:has(a[href*="//yandex.ru/news/"])
+yandex.*##.serp-item:has(a[href*="//yandex.by/news/"])
+yandex.*##.serp-item:has(a[href*="//yandex.com/news//"])
+yandex.*##.serp-item:has(a[href*="//yandex.fr/news/"])
+yandex.*##.serp-item:has(a[href*="//yandex.kz/news/"])
+yandex.*##.serp-item:has(a[href*="//yandex.net/news//"])
+yandex.*##.serp-item:has(a[href*="//yandex.ua/news/"])
+yandex.*##.serp-item:has(a[href*="//yandex.uz/news/"])
 
-yandex.ru##.mg-navigation-menu:style(position:static !important)
-yandex.ru##.serp-header__wrapper:style(position:static !important)
+yandex.*##.mg-navigation-menu:style(position:static !important)
+yandex.*##.serp-header__wrapper:style(position:static !important)
 
-yandex.ru##.media-infinity-footer__up
+yandex.*##.media-infinity-footer__up
 
-yandex.ru##.afisha-inserts__content
-yandex.ru##.kinopoisk__panels
-yandex.ru##.kinopoisk
+yandex.*##.afisha-inserts__content
+yandex.*##.kinopoisk__panels
+yandex.*##.kinopoisk
 ||avatars.mds.yandex.net/get-kinopoisk-post-img/$image
 
 yandex.ru##.services-new__promo-bubble
 
 ! погода  https://habr.com/ru/company/gms/blog/566030/#comment_23226220
-yandex.ru##.b-page__container :matches-css(width: 0px)
-yandex.ru##.b-page__container .content__bottom + div
-yandex.ru##.b-page__container .content__bottom + div + div
-yandex.ru##.map-left-pane__link + div
+yandex.*##.b-page__container :matches-css(width: 0px)
+yandex.*##.b-page__container .content__bottom + div
+yandex.*##.b-page__container .content__bottom + div + div
+yandex.*##.map-left-pane__link + div
 
 ! banners on home
 ||yastatic.net/www/$image
@@ -651,9 +653,9 @@ yandex.ru##.map-left-pane__link + div
 
 ! banners in news
 !yandex.ru##[class*=__column] - don't, hides zen posts
-yandex.ru##[class*=_type_native]
-yandex.ru##[class*=-banger]
-yandex.ru##.button_primary:has-text(в избранное)
+yandex.*##[class*=_type_native]
+yandex.*##[class*=-banger]
+yandex.*##.button_primary:has-text(в избранное)
 
 ||yastatic.net/s3/home/ga-counter/
 
