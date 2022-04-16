@@ -106,6 +106,7 @@ www.google.*##+js(remove-attr, ping, div[id="search"] a[data-ved][ping])
 ||play.google.com/_/PlayStoreUi/browserinfo?
 
 ! cookies popup
-google.com##div:matches-css(position:fixed)
+google.*##div:matches-css(position:fixed)
+google.*##div[aria-modal="true"]:has-text(cookies)
 
 ||cse.google.com/cse.js?cx=partner-pub$important
