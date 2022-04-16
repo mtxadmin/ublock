@@ -14824,7 +14824,10 @@ rambler.ru###root div[data-blocks] div:not([aria-label]):empty:style(min-height:
 ! footer svg logo
 rambler.ru##a[data-cerber$="::logo"]
 rambler.ru##button[data-blocks^="mini_video_player"]
+rambler.ru##div:has-text(/^18\+$/)
 rambler.ru##span:has-text(/^18\+$/)
+rambler.ru##a[data-cerber="footer::search::ok"]
+rambler.ru##a[data-cerber="footer::search::vk"]
 
 ramayoga.ru##.header__fixed:style(position:static !important)
 
@@ -22851,3 +22854,8 @@ mayatnik.net##form:has-text(рассылки)
 mayatnik.net##div:has(>h2>a[href*=mayatnik])
 mayatnik.net##div:has(>a>wix-image)
 
+letidor.ru##button:has-text(/^Узнать ответ$/)
+
+||cxid.info/other/$image  # banners
+cxid.info##.last10Table
+cxid.info##.cxidlogos
