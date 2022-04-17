@@ -67,6 +67,8 @@ _social_fb.  # from Fanboy’s
 !
 ! is in Adguard
 ##a[href^="fb-messenger://share"]
+! from Adguard
+##a[href^="javascript:window.open('http://www.facebook.com/sharer.php"]
 ! is in Adguard
 ~facebook.com##a[href^="https://www.facebook.com/dialog/send"]
 ! is in Adguard
@@ -1678,18 +1680,38 @@ plus.google.com
     ###masthead-socialblock2
     ! from Fanboy's
     ##.site-head-social--small
+##[class^=social-icon]
+    !##.social-icon
+    ! is in Fanboy's, Adguard, Ru AdList
+    !##.social-icons
+    !##.social-icons__link
+    ! from Adguard
+    !##.social-icons-widget
+    ! from Fanboy's
+    !##.social-icon-wrap
+    ! from Fanboy's
+    !##.social-icons-wrapper
 ##[class^=social-likes]
     ! is in Adguard, RU AdList, Fanboy's
-    ##.social-likes
-    ##.social-likes__icon
-    ##.social-likes__button
-    ##.social-likes__widget
+    !##.social-likes
+    !##.social-likes__icon
+    !##.social-likes__button
+    !##.social-likes__widget
+    ! from Adguard
+    !autoua.net#?#.single-post > div.l-container:has(> div[class] div.social-likes)
+    ! from Adguard
+    !cyberleninka.ru#?#.half:has(> .social-likes)
 ##[class^=social-links]
-    ##.social-links
+    !##.social-links
     ! is in Adguard and Fanboy's
-    ##.social-links-block
+    !##.social-links-block
     ! is in Adguard and Fanboy's
-    ##.social-links-wrapper
+    !##.social-links-wrapper
+    ! from Adguard
+    !denofgeek.com##.social-links__items + span.sep
+    ! from Adguard
+    !tokyohive.com##body.single .post .social-links > li:not(:first-child)
+
 ##.links__socials
 
 ! from Fanboy's
@@ -1783,7 +1805,6 @@ plus.google.com
 ! from Fanboy's
 ##.siteFooter_socialItem
 ! initially it was Aliexpress socials. Is in Ru AdList and Fanboy's
-##.sns-btns
 ##.soc
 ! is in Ru AdList
 ###social
@@ -1804,19 +1825,11 @@ plus.google.com
 ! is in Adguard, Ru AdList and Fanboy's
 ##.social-count
 ! is in Adguard and Fanboy's
-##.social-icon
-! is in Fanboy's, Adguard, Ru AdList
-##.social-icons
-##.social-icons__link
-! from Fanboy's
-##.social-icon-wrap
-! from Fanboy's
-##.social-icons-wrapper
 ! is in Ru AdList and Fanboy's
 ##.social-large
 ! is in Fanboy's
 ##.social__link
-##.social-links
+!##.social-links - see above
 ##.socialLinks
 ! is in Fanboy's
 ##.social-list:not(html):not(body)
@@ -1963,7 +1976,7 @@ plus.google.com
     ! is in Fanboy's 
     ##.social-link-fb
     ! from Fanboy's
-    ##.social-links
+    !##.social-links - see above
     ! is in Fanboy's 
     ##.social-link-tw
     ! is in Fanboy's
@@ -2320,3 +2333,107 @@ _social_insta.svg
 ##.fa-tumblr
 
 /social-sign-in/*  # nexusmedia-ua
+
+##.article-social-btn
+##.social_button
+##.social-button
+
+##.open-share-toolbar
+##.p-articleShare
+
+##.socialArea
+##.social-area
+
+##.tw_btn
+
+##.social-bottom
+##.social_button
+##.social-holder
+##.socials
+##.social-share
+
+##.fa-share-alt
+    ! from Adguard
+    qiita.com#?#div[id^="PersonalArticlePage-"] > .p-items_wrapper + div[class^="css-"] > div[class^="css-"] > div[class^="css-"]:has(> .fa-share-alt)
+
+##.fab-btn
+
+###article_share
+##.post__share
+##.share-content
+##share-action
+##.share-this
+
+    ! sns
+##.article-sns
+##.sns
+##.snsArea
+##.sns-btns
+##.SNSButton
+##.snsShare
+##.btn-sns
+##.m-sns
+##.p-sns
+##.sns-btn
+##.sns-wrapper
+! from Adguard
+sp.live.nicovideo.jp##button[class^="___sns-share-button_"]
+! from Adguard
+sp.nttxstore.jp##.sns_mainitem
+! from Adguard
+newsdigest.jp##.post-sns
+! from Adguard
+yutori.co.jp##.block-goods-sns
+! from Adguard
+benesse.co.jp##.sns__listUpper
+! from Adguard
+orangepage.net##.articleDetailSns
+! from Adguard
+gamebiz.jp##.share-sns
+! from Adguard
+fujinkoron.jp##.article-bottom-sns-wrap
+! from Adguard
+diskunion.net##.sidenav__snsArea
+! from Adguard
+eigahitottobi.com##.lead_sns_box
+! from Adguard
+ggoorr.net##.to_sns
+! from Adguard
+ananweb.jp##.footer-sns-wrap
+
+###like-it
+
+##amp-addthis
+
+##.floating-wpp
+
+! from Adguard
+~autosalon.tv##.article-line
+
+! from Adguard
+##.paylas
+
+##.socialicon
+##.socialList
+##.social_list
+##.sociaPayLasim
+
+##.o-actionControl__item--social
+
+##a[data-share-url]
+##.listShare
+##.shareIcon
+##.sharelink
+##.share-toolbox
+
+##.a-icon--share
+
+! from Adguard
+##.social-line
+! from Adguard
+##.social-love
+
+##.soc_box
+    ! from Fanboy's
+    !onlineprnews.com##.soc_box[style=" margin-bottom:10px; border:solid 1px #EEEEEE; clear:both"]
+##.soc-box
