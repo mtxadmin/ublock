@@ -106,7 +106,10 @@
     ! /push_notification/*  # from Ru AdList
     ! /push_notification_  # from Ru AdList
     ! /push_notifications.  # from Ru AdList
--push-notification.  # /plugins/pwa-for-wp/assets/js/pwa-push-notification.js  # from Ru AdList and Fanboy's
+-push-notification.$domain=~github.com  # /plugins/pwa-for-wp/assets/js/pwa-push-notification.js  # from Ru AdList and Fanboy's
+    ! exclusion is from Fanboy's
+-push-notification/$domain=~github.com
+    ! exclusion is from Fanboy's
 /pushnotification
     ! /pushnotification.  # from Ru AdList
     ! /pushnotifications/*  # from Ru AdList
