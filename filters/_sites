@@ -11120,12 +11120,16 @@ medium.com,towardsdatascience.com##a[href^="https://medium.com/"]
     ! paywall
 medium.com###regwall-background-color
 medium.com##.c.s:has-text(Read the rest)
+    ! top
+medium.com##div:has-text(/^Published in$/)
     ! sticky columns. They can't be unsticked smoothly. Let's remove them then, they are too naggy
 !medium.com##+js(ra, style, main ~div>div>div, stay)
 !medium.com##+js(ra, class, main ~div>div>div, stay)
 !medium.com##+js(aopw, style)
 medium.com##main ~div>div>div
 medium.com##nav
+    ! banners and promos
+medium.com##div>p:has-text(free member-only stories left this month)
     ! other
 medium.com##[data-test-id="post-sidebar"]
 medium.com##.js-stickyFooter
