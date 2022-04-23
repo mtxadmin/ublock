@@ -8855,9 +8855,6 @@ jelectro.ru##.rating_wrapper
 
 jetbrains.com##.acceptance-popup
 
-! medium.com
-jetruby.com##a[aria-label=Homepage]
-
 jetsetter.com##.hero-gallery-container
 
 ! jimdofree.com
@@ -11113,8 +11110,6 @@ medinfo.ua$3p
 
 ||medium.com^*/performance/  # is in EasyPrivacy
 ||lightstep.medium.systems^*/reports  # is in EasyPrivacy
-    ! logo
-medium.com,towardsdatascience.com##a[href^="https://medium.com/"]
     ! paywall
 medium.com###regwall-background-color
 medium.com##.c.s:has-text(Read the rest)
@@ -11125,7 +11120,8 @@ medium.com##div:has-text(/^Published in$/)
 !medium.com##+js(ra, class, main ~div>div>div, stay)
 !medium.com##+js(aopw, style)
 medium.com##main ~div>div>div
-medium.com##nav
+! medium.com and medium-based blogs:
+medium.com,jetruby.com,itnext.io,towardsdatascience.com##nav
     ! banners and promos
 medium.com##div>p:has-text(free member-only stories left this month)
 medium.com##div:has(>div>p:has-text(Learn on the go with our new app))
@@ -11136,10 +11132,10 @@ medium.com##[data-test-id="post-sidebar"]
 medium.com##.js-stickyFooter
 medium.com###lo-highlight-meter-1-highlight-box
 medium.com##.wc
-medium.com##*:matches-css(position:sticky):style(position:static !important)
+medium.com,jetruby.com,itnext.io,towardsdatascience.com##*:matches-css(position:sticky):style(position:static !important)
 medium.com##span:has(div > p:has-text(Share your ideas))
 ! floating button below
-medium.com##*:matches-css(position:sticky):remove()
+medium.com,jetruby.com,itnext.io,towardsdatascience.com##*:matches-css(position:sticky):remove()
 
 medlib.net##.interesno
 medlib.net##.copy2
