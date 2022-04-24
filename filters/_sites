@@ -11190,9 +11190,21 @@ meetup.com##.stickyHeader:style(position:static !important)
 meetup.com##.sticky--top:style(position:static !important)
 meetup.com##.sticky--bottom:style(position:static !important)
 
-megafon.ru##.ng_personal_popup_start
+    ! popups
 megafon.ru##.ng_personal_popup
+megafon.ru##.ng_personal_popup_start
+    ! banners and promos
+||megafon.ru/static/blocks/newLkBanner/$image
+||megafon.ru/tariffs/media/$image
 megafon.ru##.lk_smart_banner
+megafon.ru##.mf_super-offer
+megafon.ru##.gadget_personal_offers_ng
+megafon.ru##.tile_personal
+megafon.ru##.available-options-interesting
+    ! other
+megafon.ru##.mfui-tile > svg
+megafon.ru##.footer__app-badge
+megafon.ru##.footer__networks-list
 
 ||megaobzor.com/images/121.png
 ||megaobzor.com/images/brand/*$image
@@ -11910,33 +11922,38 @@ mtforce.ru##.index_subsc
 ! mirtesen.ru
 mtml.ru$script,domain=~mirtesen.ru
 
-rtb.mts.ru^$3p  # ad scripts  # is in Ru AdList
-mtsopros.mts.ru  # ad xhrs
-! popups there are not just with ads - changing options breaks too
-!lk.mts.ru##.popup__questionnaire
+    ! popups
+!! popups there are not just with ads - changing options breaks too
+! this one seems ad-only
+lk.mts.ru##.popup__questionnaire
+! and this in used in general GUI. Do not block.
 !lk.mts.ru##.popup-modal
-!lk.mts.ru##.popup__overlay
-!lk.mts.ru##.is-open.js-disable-closing.popup-modal
 ||mts.ru/content/i/popups-images/start.jpg
+! popup overlay can be removed in any case
 lk.mts.ru##.popup__overlay
-!
-mts.ru##.product-info__inner
 mts.ru##.popup--open:style(overflow:visible !important)
+mts.ru###ask-current-city
+mts.ru##.top-msg
+    ! banners and promos
+mts.ru##.banner_htop.banner
+mts.ru###banner_po_umolchaniyu_dlya_ssp_vside
+mts.ru##.b-hint__drop
+mts.ru##.login-slider
+mts.ru##.header__body-inner
+    ! footer
+mts.ru##.mts16-footer__app-btns
+mts.ru##.mts16-footer__social
+mts.ru##.mts16-footer__age
+    ! other
+mts.ru##.product-info__inner
 !mts.ru##body:style(position:static !important) - generalized
 mts.ru##.header__body:style(position:static !important)
 mts.ru##.is-sticked:style(position:static !important)
-mts.ru##.login-slider
-mts.ru###ask-current-city
 mts.ru##greeting-step
 mts.ru##.bx-slider.parental-statistics-cover__slider-wrap
-mts.ru##.mts16-footer__social
-mts.ru##.mts16-footer__age
 mts-gpon.ru##.mx-trf-form
 !||mts.ru/api/banners - don't?
 !||mts.ru/api/sharing/counters - don't
-lk.mts.ru##.banner_htop.banner
-lk.mts.ru###banner_po_umolchaniyu_dlya_ssp_vside
-lk.mts.ru##.b-hint__drop
 
 ||mukownino.ru/assets/images/strela.png
 
