@@ -11825,6 +11825,8 @@ convertro.com   # from Dan Pollock's hosts file
 
 conviva.com  # is in rpz-block-list  # "Integrated analytics"
 !+  cws.conviva.com
+!+      ipv4.cws.conviva.com
+!+      ipv6.cws.conviva.com
 !+  m.conviva.com
 ! end of conviva.com
 
@@ -12152,6 +12154,8 @@ coupwn.com  # from GoodbyeAds
 coursecopy.com  # from uBlock filters
 
 coveo.com  # usageanalytics.coveo.com  # "Analytics  Content Personalization  Salesforce  digital experience"
+!+  cloud.coveo.com
+! end of coveo.com
 /coveo.analytics.js
 /coveoua.js
 
@@ -12551,8 +12555,11 @@ creatensend.com  # incomeelite.com
 
 createsend1.com  # is in hpHosts’ Ad and tracking servers  # no root  # possible getfeedback domain (spam?)
 createsend11.com  # from GoodbyeAds
+!+  static.createsend11.com
 createsend12.com  # from GoodbyeAds
+!+  static.createsend12.com
 createsend13.com  # from GoodbyeAds
+!+  static.createsend13.com
 createsend2.com  # from GoodbyeAds
 createsend22.com  # from GoodbyeAds
 createsend3.com  # from GoodbyeAds
@@ -12614,7 +12621,16 @@ crispwireless.com  # from Malvertising filter list by Disconnect
 critdick.com  # zombie
 
 criteo.net$important
+!+  as.criteo.net
+!+  eu.criteo.net
+!+  prod.criteo.net
+!+      vip.prod.criteo.net
+!+  us.criteo.net
 criteo.com$important  # also is in Blogscan
+!+  as.criteo.com
+!+  prod.criteo.com
+!+      vip.prod.criteo.com
+!+  us.criteo.com
 /criteo.$important  # is in EasyPrivacy
 
 critictruck.com  # from Peter Lowe's hosts file
@@ -12980,6 +12996,8 @@ cutescale.online  # from Adguard
 cuteturkey.com  # from Peter Lowe's hosts file
 
 cux.io  # from Adguard
+!+  track.cux.io
+! end of cux.io
 
 cuys.ru  # ad scripts  # is in Ru AdList
 
@@ -13175,6 +13193,16 @@ dailykarma.io  # shopify ad scripts and empty root  # squarespace
 dailymails.org  # automate.dailymails.org, crm.dailymails.org, mobiads.dailymails.org  # "Omnichannel Marketing Automation & Customer Engagement"
 
 dailymotion.com  # from Blogscan
+!+  api.dailymotion.com
+!+  api-aws.dailymotion.com
+!+  dc3.dailymotion.com
+!+  ix7.dailymotion.com
+!+  sg1.dailymotion.com
+!+  sg1.dailymotion.com
+!+  sv4.dailymotion.com
+!+  sv6.dailymotion.com
+!+  ty4.dailymotion.com
+! end of dailymotion.com
 
 dailynewstonight.com  # from Dan Pollock's hosts file
 
@@ -13399,6 +13427,8 @@ datatrics.com  # from GoodbyeAds
 dataunion.com.br  # from GoodbyeAds
 
 dataunlocker.com  # from GoodbyeAds
+!+  ddns.dataunlocker.com
+! end of dataunlocker.com
 
 datawrkz.com  # from Adguard
 
@@ -13570,6 +13600,7 @@ dbankcdn.com  #appdl2.dbankcdn.com  #appdl3.dbankcdn.com
 dbankcloud.asia  #grs.dbankcloud.asia
 dbankcloud.com  #grs.dbankcloud.com
 dbankcloud.cn  #grs.dbankcloud.cn
+!+  cloud.dbankcloud.cn
 dbankcloud.eu  #grs.dbankcloud.eu
 
 dbbsrv.com  # from Peter Lowe's hosts file
@@ -13942,7 +13973,7 @@ detoxionis.com  # webvork.com cpa ad network
 
 detox-kit.com  # from Dan Pollock's hosts file
 
-deutschepost.de  # from Blogscan
+!deutschepost.de - don't, false positive  # from Blogscan
 
 dev-2-dev.com
 devtodev.com
