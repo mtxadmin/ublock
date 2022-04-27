@@ -285,6 +285,11 @@ market.yandex.ru##.widget-loader__paranja
 ! new design with random fixed elements
 market.yandex.ru##*:matches-css(position:fixed)
 
+! "Q"
+yandex.ru##a[href="/q/"]:has(svg)
+yandex.ru##div:has-text(/^Вы\s+знаете\s+ответ\s+на\s+этот\s+вопрос/)
+yandex.ru##a:has-text(Скачайте приложение)
+
 ! logos
 yandex.*##.header2__logo
 yandex.*##.header3__logo-ru
