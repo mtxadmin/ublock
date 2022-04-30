@@ -1223,7 +1223,7 @@ _rebid.js  # from EasyList
 ##[id*="reklam"]:not(html):not(body):not(article)
     ! from EasyList
     !##.reklama
-##[class*="Sponsor"]:not(html):not(body):not(article)
+##[class*="Sponsor"]:not(html):not(body):not(article):not([class*=hideSponsored])
 ##[id*="Sponsor"]:not(html):not(body):not(article)
 ~drtuber.com##[class*="sponsor"]:not(html):not(body):not(article)
     ! from EasyList
@@ -2619,6 +2619,7 @@ _tracker.js.  # from EasyPrivacy
 ###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper)
 ##.top:not(html):not(body):not(article):not(table):not(ul)
 ##.top-btn
+###top-but
 ##.top_button
 ###todown
 ##.top_btn
