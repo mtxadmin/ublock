@@ -1083,6 +1083,130 @@ speee-ad.akamaized.net  # from SecurityEntire BaseFilter
 
 xoomer.alice.it  # from Dan Pollock's hosts file
 
+    ! Aliexpress ad subdomains
+adservice.aliexpress.com  # from GoodbyeAds
+aeu.alicdn.com  # DRM  #aeu.alicdn.com/ctl/ctl.js
+alimebot.aliexpress.com  # from https://forums.lanik.us/viewtopic.php?f=102&t=44550
+brands.aliexpress.com  # from GoodbyeAds
+campaign.aliexpress.com  # ad popups
+cdp.aliexpress.com  # card
+us.cobra.aliexpress.com  # yes! it doesn't need for anything, only for tracking
+connectkeyword.aliexpress.com
+gtreus.aliexpress.com  # from GoodbyeAds
+is.alicdn.com  # card
+moduleanalysis.aliexpress.com
+pcookie.aliexpress.com  # from GoodbyeAds
+us-click.aliexpress.com  # tracking images  # us-click.aliexpress.com/ci_bb?...
+wp.aliexpress.com  # wp.aliexpress.com/trace.gif?event=
+cmap.alibaba.com
+offer.alibaba.com  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
+tracelog.www.alibaba.com  # from Adguard
+local.alipcsec.com
+aliyuncs.com  # ad scripts and tracker imgs and empty root
+    !||aliyuncs.com/r.png
+    !retcode-us-west-1.arms.aliyuncs.com/r.png
+err.taobao.com
+dm.taobaojuhuasuan.cn  # Aliexpress marketing from Energized Blu
+    ! in-app Aliexpress marketing from Energized Blu
+aecpm.alicdn.com
+afp.alicdn.com
+afpmm.alicdn.com
+alimama.alicdn.com
+appdownload.alicdn.com
+asearch.alicdn.com
+atanx.alicdn.com
+atanx2.alicdn.com
+baichuan-sdk.alicdn.com
+dorangesource.alicdn.com
+gen.alicdn.com
+gma.alicdn.com
+ilce.alicdn.com
+nbsdk-baichuan.alicdn.com
+proxy-mob-cld.alicdn.com
+strip.alicdn.com  # is in many lists
+tce.alicdn.com
+unidesk.alicdn.com
+vali.cp31.ott.cibntv.net.302.myalicdn.com
+ykugc.cp31.ott.cibntv.net.302.myalicdn.com
+    ! in-app Aliexpress related marketing from Energized Blu
+acs4baichuan.m.taobao.com
+acs.m.taobao.com
+adashbc.m.taobao.com
+adashbc.ut.taobao.com
+adash.m.taobao.com
+adashx4ae.ut.taobao.com
+adashx4yt.m.taobao.com
+adashxgc.ut.taobao.com
+adashx.m.taobao.com
+adashx.ut.taobao.com
+agoodm.m.taobao.com
+ai.m.taobao.com
+ai.taobao.com
+amdcopen.m.taobao.com
+apoll.m.taobao.com
+audid-api.taobao.com
+c-adash.m.taobao.com
+click.mz.simba.taobao.com
+click.simba.taobao.com
+click.taobao.com
+click.tz.simba.taobao.com
+count.taobao.com
+dsp.simba.taobao.com
+eco.taobao.com
+fav.simba.taobao.com
+g.click.taobao.com
+h-adashx4ae.ut.taobao.com
+h-adashx.ut.taobao.com
+ip.taobao.com
+ju.taobao.com
+m-adash.m.taobao.com
+mclick.simba.taobao.com
+m.simba.taobao.com
+nbsdk-baichuan.taobao.com
+openjmacs.m.taobao.com
+pcookie.taobao.com
+redirect.simba.taobao.com
+re.m.taobao.com
+re.taobao.com
+retcode.taobao.com
+rj.m.taobao.com
+sdkinit.taobao.com
+shop115048570.taobao.com
+show.re.taobao.com
+simaba.taobao.com
+simba.m.taobao.com
+sjarvis.taobao.com
+srd.simba.taobao.com
+tbskip.taobao.com
+tejia.taobao.com
+temai.m.taobao.com
+temai.taobao.com
+textlink.simba.taobao.com
+tns.simba.taobao.com
+tui.taobao.com
+tunion-api.m.taobao.com
+tyh.taobao.com
+umengacs.m.taobao.com
+umengjmacs.m.taobao.com
+unitacs.m.taobao.com
+wb.110.taobao.com
+w.m.taobao.com
+youku-acs.m.taobao.com
+    ! parasytic domains
+alibuilder.com
+aliclick.shop
+aliexpress-internet.ru
+alifenix.ru
+aligarazh.com  # ads
+alitarget.ru
+alitems.com  # steals cashback  # root redirects to https://s.click.aliexpress.com/...
+alitools.io  # steals cashback
+!+  api.alitools.io
+kupimdeshevo.ru
+nadavi.ru  # not Aliexpress (yet?), but has redirects to some Russian stores  # see in _marketing__subdomains
+top-shop-magazin.ru  # Ali hidden dropshipping?  # root 504  # see in _marketing__subdomains
+vkoff.ru  # root redirects to Google  # see in _marketing__subdomains
+
 loggw-exsdk.alipay.com  # from GoodbyeAds
 
 smart.allocine.fr  # from Adguard
@@ -2570,129 +2694,3 @@ tsr.zlatoff.ru  # from Adguard
 tools.ztod.com  # from MVPS
 
 !! todo
- - see in _marketing__subdomains
-  # see in _marketing__subdomains
-    ! Aliexpress ad subdomains
-adservice.aliexpress.com  # from GoodbyeAds
-aeu.alicdn.com  # DRM  #aeu.alicdn.com/ctl/ctl.js
-alimebot.aliexpress.com  # from https://forums.lanik.us/viewtopic.php?f=102&t=44550
-brands.aliexpress.com  # from GoodbyeAds
-campaign.aliexpress.com  # ad popups
-cdp.aliexpress.com  # card
-us.cobra.aliexpress.com  # yes! it doesn't need for anything, only for tracking
-connectkeyword.aliexpress.com
-gtreus.aliexpress.com  # from GoodbyeAds
-is.alicdn.com  # card
-moduleanalysis.aliexpress.com
-pcookie.aliexpress.com  # from GoodbyeAds
-us-click.aliexpress.com  # tracking images  # us-click.aliexpress.com/ci_bb?...
-wp.aliexpress.com  # wp.aliexpress.com/trace.gif?event=
-cmap.alibaba.com
-offer.alibaba.com  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
-tracelog.www.alibaba.com  # from Adguard
-local.alipcsec.com
-aliyuncs.com  # ad scripts and tracker imgs and empty root
-    !||aliyuncs.com/r.png
-    !retcode-us-west-1.arms.aliyuncs.com/r.png
-err.taobao.com
-dm.taobaojuhuasuan.cn  # Aliexpress marketing from Energized Blu
-    ! in-app Aliexpress marketing from Energized Blu
-aecpm.alicdn.com
-afp.alicdn.com
-afpmm.alicdn.com
-alimama.alicdn.com
-appdownload.alicdn.com
-asearch.alicdn.com
-atanx.alicdn.com
-atanx2.alicdn.com
-baichuan-sdk.alicdn.com
-dorangesource.alicdn.com
-gen.alicdn.com
-gma.alicdn.com
-ilce.alicdn.com
-nbsdk-baichuan.alicdn.com
-proxy-mob-cld.alicdn.com
-strip.alicdn.com  # is in many lists
-tce.alicdn.com
-unidesk.alicdn.com
-vali.cp31.ott.cibntv.net.302.myalicdn.com
-ykugc.cp31.ott.cibntv.net.302.myalicdn.com
-    ! in-app Aliexpress related marketing from Energized Blu
-acs4baichuan.m.taobao.com
-acs.m.taobao.com
-adashbc.m.taobao.com
-adashbc.ut.taobao.com
-adash.m.taobao.com
-adashx4ae.ut.taobao.com
-adashx4yt.m.taobao.com
-adashxgc.ut.taobao.com
-adashx.m.taobao.com
-adashx.ut.taobao.com
-agoodm.m.taobao.com
-ai.m.taobao.com
-ai.taobao.com
-amdcopen.m.taobao.com
-apoll.m.taobao.com
-audid-api.taobao.com
-c-adash.m.taobao.com
-click.mz.simba.taobao.com
-click.simba.taobao.com
-click.taobao.com
-click.tz.simba.taobao.com
-count.taobao.com
-dsp.simba.taobao.com
-eco.taobao.com
-fav.simba.taobao.com
-g.click.taobao.com
-h-adashx4ae.ut.taobao.com
-h-adashx.ut.taobao.com
-ip.taobao.com
-ju.taobao.com
-m-adash.m.taobao.com
-mclick.simba.taobao.com
-m.simba.taobao.com
-nbsdk-baichuan.taobao.com
-openjmacs.m.taobao.com
-pcookie.taobao.com
-redirect.simba.taobao.com
-re.m.taobao.com
-re.taobao.com
-retcode.taobao.com
-rj.m.taobao.com
-sdkinit.taobao.com
-shop115048570.taobao.com
-show.re.taobao.com
-simaba.taobao.com
-simba.m.taobao.com
-sjarvis.taobao.com
-srd.simba.taobao.com
-tbskip.taobao.com
-tejia.taobao.com
-temai.m.taobao.com
-temai.taobao.com
-textlink.simba.taobao.com
-tns.simba.taobao.com
-tui.taobao.com
-tunion-api.m.taobao.com
-tyh.taobao.com
-umengacs.m.taobao.com
-umengjmacs.m.taobao.com
-unitacs.m.taobao.com
-wb.110.taobao.com
-w.m.taobao.com
-youku-acs.m.taobao.com
-    ! parasytic domains
-alibuilder.com
-aliclick.shop
-aliexpress-internet.ru
-alifenix.ru
-aligarazh.com  # ads
-alitarget.ru
-alitems.com  # steals cashback  # root redirects to https://s.click.aliexpress.com/...
-alitools.io  # steals cashback
-!+  api.alitools.io
-kupimdeshevo.ru
-nadavi.ru  # not Aliexpress (yet?), but has redirects to some Russian stores  # see in _marketing__subdomains
-top-shop-magazin.ru  # Ali hidden dropshipping?  # root 504  # see in _marketing__subdomains
-vkoff.ru  # root redirects to Google  # see in _marketing__subdomains
-
