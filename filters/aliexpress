@@ -242,11 +242,11 @@ aliexpress.com,aliexpress.ru###mobile-download
 aliexpress.com###user-benefits
 aliexpress.com,aliexpress.ru##li.member-entry-product-item
 
-campaign.aliexpress.com  # ad popups
+!campaign.aliexpress.com  # ad popups - see in _marketing__subdomains
 aliexpress.com,aliexpress.ru##[href^="//campaign.aliexpress.com/"]
 ! is in Ru AdList (https://forums.lanik.us/viewtopic.php?f=102&t=44550)
 aliexpress.com,aliexpress.ru###J_xiaomi_dialog
-alimebot.aliexpress.com  # from https://forums.lanik.us/viewtopic.php?f=102&t=44550
+!alimebot.aliexpress.com  # from https://forums.lanik.us/viewtopic.php?f=102&t=44550 - see in _marketing__subdomains
 
 aliexpress.ru##[class^=CampaignEntrance]
 
@@ -1141,6 +1141,7 @@ aliexpress.com##.left-menu-container:style(max-height:none !important)
 ||alicdn.com/kf/Ue5826d5f16d94ffca759452f3a484213E.png
 ||alicdn.com/tfs/TB1arM9tk9l0K4jSZFKXXXFjpXa-420-142.jpg
 ||alicdn.com/tfs/TB1iSq6bTM11u4jSZPxXXahcXXa-750-60.png
+||alicdn.com/tfs/TB15FriwAT2gK0jSZPcXXcKkpXa-176-40.png
 
     ! Эти задолбали появляться в поиске, причем по совершенно разным и не связанным позициям
 ||alicdn.com/kf/H0d54b8072f804f74935abcdde6bd9ce1N.jpg_350x350xz.jpg
@@ -1173,7 +1174,6 @@ aliexpress.com##.left-menu-container:style(max-height:none !important)
 ||alicdn.com/kf/H04703a85244b48c4943950fb761940480.jpg
 ||alicdn.com/kf/HTB1phgyDeuSBuNjSsplq6ze8pXaP.jpg
 ||alicdn.com/kf/HTB14YdikRjTBKNjSZFNq6ysFXXa9.jpg
-||alicdn.com/tfs/TB15FriwAT2gK0jSZPcXXcKkpXa-176-40.png
     ! А, так это была реклама (AD на фото)! Сжечь её!
 aliexpress.com##.other-store-more > div > div > div:has-text(/AD/)
 aliexpress.com##div:has(>div>div>span:has-text(/^AD$/))
@@ -1227,10 +1227,8 @@ aliexpress.com##.hot-products
 aliexpress.com###fd-channel-title
 aliexpress.com,aliexpress.ru##.fm-sns
 
-cmap.alibaba.com
 ||alibaba.com/ts?  # is in EasyPrivacy
 ||taobao.com/ts  #||fourier.taobao.com/ts
-offer.alibaba.com  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
 ||tdum.alibaba.com/dss.js
 
 ||aliexpress.com/sw.js  # new 2020
@@ -1310,9 +1308,7 @@ aliexpress.com##.fm-logo
 aliexpress.com##.marqueeBoxView.marqueeContentView
 aliexpress.com##.messages_container
 
-wp.aliexpress.com  # wp.aliexpress.com/trace.gif?event=
-
-err.taobao.com
+!wp.aliexpress.com  # wp.aliexpress.com/trace.gif?event= - see in _marketing__subdomains
 
 !ru-aebridge.aliexpress.com.gds.alibabadns.com  # don't. Blocks flashsales
 
@@ -1322,7 +1318,7 @@ aliexpress.com##.__resizable_base__
 
 !! unneeded hosts, tested for months
 
-local.alipcsec.com
+!local.alipcsec.com - see in _marketing__subdomains
 
 ! don't block, it needed for sale.aliexpress.com and flashdeals
 ! time-ae.akamaized.net/gettime
@@ -1407,10 +1403,8 @@ aliexpress.com,aliexpress.ru##[class^=styles_middleBlock]
 
 ||alicdn.com/wimg/monitor/*
 
-!cloud.video.taobao.com
-is.alicdn.com  # card
-cdp.aliexpress.com  # card
-aeu.alicdn.com  # DRM  #aeu.alicdn.com/ctl/ctl.js
+!cloud.video.taobao.com - don't, video
+!aeu.alicdn.com  # DRM  #aeu.alicdn.com/ctl/ctl.js  # see in _marketing__subdomains
 ||alicdn.com/*/ctl/ctl.js
 
 ! from AdGuard
@@ -1423,7 +1417,6 @@ aliexpress.com##+js(remove-attr, class, .blur, stay)
 ! false-positive rule in EasyList and Fanboy's: aliexpress.ru##div[class^="styles_wrapper_"]
 aliexpress.ru#@#div[class^="styles_wrapper_"]
 
-connectkeyword.aliexpress.com
 !/sufei/*
 ||alicdn.com/sufei/
 ||alicdn.com/*/sufei/
@@ -1432,21 +1425,10 @@ connectkeyword.aliexpress.com
 
 !cfus.aliyun.com
 
-||aliyuncs.com/r.png
-!retcode-us-west-1.arms.aliyuncs.com/r.png
-aliyuncs.com  # ad scripts and tracker imgs and empty root
 
 !/pointman/*
 ||alicdn.com/pointman/
 ||alicdn.com/*/pointman/
-
-adservice.aliexpress.com  # from GoodbyeAds
-brands.aliexpress.com  # from GoodbyeAds
-gtreus.aliexpress.com  # from GoodbyeAds
-pcookie.aliexpress.com  # from GoodbyeAds
-
-moduleanalysis.aliexpress.com
-us.cobra.aliexpress.com  # yes! it doesn't need for anything, only for tracking
 
 ||aliexpress.com/check.gif?  # gtrus.aliexpress.com/check.gif?
 
@@ -1466,100 +1448,7 @@ taobao.com$domain=~taobao.com|~aliexpress.com|~aliexpress.ru   # see cloud.video
 ~alicdn.com##a > img[width="960"][src*=".alicdn.com/"]
 ||alicdn.com/ad-product/
 
-! in-app Aliexpress marketing from Energized Blu
-aecpm.alicdn.com
-afp.alicdn.com
-afpmm.alicdn.com
-alimama.alicdn.com
-appdownload.alicdn.com
-asearch.alicdn.com
-atanx.alicdn.com
-atanx2.alicdn.com
-baichuan-sdk.alicdn.com
-dorangesource.alicdn.com
-gen.alicdn.com
-gma.alicdn.com
-ilce.alicdn.com
-nbsdk-baichuan.alicdn.com
-proxy-mob-cld.alicdn.com
-strip.alicdn.com  # is in many lists
-tce.alicdn.com
-unidesk.alicdn.com
-
-! in-app Aliexpress marketing from Energized Blu
-vali.cp31.ott.cibntv.net.302.myalicdn.com
-ykugc.cp31.ott.cibntv.net.302.myalicdn.com
-
-! in-app Aliexpress marketing from Energized Blu
-acs4baichuan.m.taobao.com
-acs.m.taobao.com
-adashbc.m.taobao.com
-adashbc.ut.taobao.com
-adash.m.taobao.com
-adashx4ae.ut.taobao.com
-adashx4yt.m.taobao.com
-adashxgc.ut.taobao.com
-adashx.m.taobao.com
-adashx.ut.taobao.com
-agoodm.m.taobao.com
-ai.m.taobao.com
-ai.taobao.com
-amdcopen.m.taobao.com
-apoll.m.taobao.com
-audid-api.taobao.com
-c-adash.m.taobao.com
-click.mz.simba.taobao.com
-click.simba.taobao.com
-click.taobao.com
-click.tz.simba.taobao.com
-count.taobao.com
-dsp.simba.taobao.com
-eco.taobao.com
-fav.simba.taobao.com
-g.click.taobao.com
-h-adashx4ae.ut.taobao.com
-h-adashx.ut.taobao.com
-ip.taobao.com
-ju.taobao.com
-m-adash.m.taobao.com
-mclick.simba.taobao.com
-m.simba.taobao.com
-nbsdk-baichuan.taobao.com
-openjmacs.m.taobao.com
-pcookie.taobao.com
-redirect.simba.taobao.com
-re.m.taobao.com
-re.taobao.com
-retcode.taobao.com
-rj.m.taobao.com
-sdkinit.taobao.com
-shop115048570.taobao.com
-show.re.taobao.com
-simaba.taobao.com
-simba.m.taobao.com
-sjarvis.taobao.com
-srd.simba.taobao.com
-tbskip.taobao.com
-tejia.taobao.com
-temai.m.taobao.com
-temai.taobao.com
-textlink.simba.taobao.com
-tns.simba.taobao.com
-tui.taobao.com
-tunion-api.m.taobao.com
-tyh.taobao.com
-umengacs.m.taobao.com
-umengjmacs.m.taobao.com
-unitacs.m.taobao.com
-wb.110.taobao.com
-w.m.taobao.com
-youku-acs.m.taobao.com
-
-dm.taobaojuhuasuan.cn  # Aliexpress marketing from Energized Blu
-
-tracelog.www.alibaba.com  # from Adguard
-
-us-click.aliexpress.com  # tracking images  # us-click.aliexpress.com/ci_bb?...
+!us-click.aliexpress.com  # tracking images  # us-click.aliexpress.com/ci_bb?...  # see in _marketing__subdomains
 ||aliexpress.com/ci_bb  # tracking images  # us-click.aliexpress.com/ci_bb?...
 
 ! "brand stories" banners
@@ -1573,9 +1462,9 @@ aliexpress.com,aliexpress.ru##.drogue-poplayer-modal
 
 !! Ali related sites stealing cashback
 
-ali.onl  # ali url shorter which often used to steal cashback
-ali.pub  # ali url shorter which often used to steal cashback
-s.click.aliexpress.com
+ali.onl  # ali url shortener which often used to steal cashback
+ali.pub  # ali url shortener which often used to steal cashback
+s.click.aliexpress.com  # ali url shortener which often used to steal cashback
 ! ali indirect cashback-stealing links
 ##[href^="http://s.click.aliexpress.com/"]
 
@@ -1599,9 +1488,9 @@ shp.pub  # epn
 
 !! sites not directly related to Aliexpress itself, but discussion forums about it, product listings and reviews, etc
 
-alibuilder.com  # "Learn How You Can Boost Your Dropshipping Business profits"
+!alibuilder.com  # "Learn How You Can Boost Your Dropshipping Business profits" - see in _marketing__subdomains
 
-aliclick.shop
+!aliclick.shop - see in _marketing__subdomains
 
 aliexhelp.ru###header-text-nav-container > .inner-wrap
 aliexhelp.ru##noindex
@@ -1610,7 +1499,7 @@ aliexpress-expert.com##.url
 aliexpress-expert.com##.btn-poll
 aliexpress-expert.com##.btn-anim
 
-aliexpress-internet.ru$important  # ad scripts and 403 root  # is in AdGuard and RU AdList
+aliexpress-internet.ru$important  # ad scripts and 403 root  # is in AdGuard and RU AdList  # see in _marketing__subdomains
 
 aliexpress-obzor.ru##h2
 aliexpress-obzor.ru###sidebar
@@ -1624,9 +1513,7 @@ aliexpresstop-obzor.ru##.btn-box
 
 aliextop.ru###mouselayer
 
-alifenix.ru$important  # root redirects to https://s.click.aliexpress.com/...  # is in RU AdList
-
-aligarazh.com  # ads
+alifenix.ru$important  # root redirects to https://s.click.aliexpress.com/...  # is in RU AdList  # see in _marketing__subdomains
 
 aliprofi.ru##.knopkapodder
 
@@ -1639,11 +1526,7 @@ alisovet.site##.button_ali
 alisupport.ru##.logotipe
 alisupport.ru##.topul
 
-alitarget.ru
-
-alitems.com  # steals cashback  # root redirects to https://s.click.aliexpress.com/...
-
-alitools.io  # steals cashback
+alitools.io$important  # steals cashback  # see in _marketing__subdomains
 !+  api.alitools.io
 !aliexpress.api.alitools.io
 !api.alitools.io
@@ -1656,12 +1539,3 @@ alitoptovar.ru##.btn
 
 expertali.ru###menu
 expertali.ru###head
-
-kupimdeshevo.ru
-
-nadavi.ru  # not Aliexpress (yet?), but has redirects to some Russian stores
-
-top-shop-magazin.ru  # Ali hidden dropshipping?
-
-vkoff.ru
-
