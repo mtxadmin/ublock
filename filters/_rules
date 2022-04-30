@@ -1697,7 +1697,8 @@ _tizers.  # from Ru AdList
 .trafficdok.com^  # from Ru AdList
 .trafficlide.com^  # from Ru AdList
 .viptizer.  # from Ru AdList
-~geeks.hu,~irecommend.ru,~metro-cc.ru,~youtube.com##[class*=teaser]:not(html):not(body):not(article)
+! .media_image-field - Drupal images
+~geeks.hu,~irecommend.ru,~metro-cc.ru,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
 ##[id*=teaser]
     ! ##.b-content__section_teasers
     ! au.ru###header-teaser
