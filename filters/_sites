@@ -215,9 +215,13 @@
 ||3dn.ru/notest/
 
 ||3dnews.ru/assets/images/button_01.jpg
+    ! top
+3dnews.ru###date
+    ! banners and promos
 3dnews.ru##.huawei-menu
-3dnews.ru###voteBox
 3dnews.ru##[href="https://www.hostkey.ru/"]
+    ! other
+3dnews.ru###voteBox
 
 3dplitka.ru##.contact_form
 3dplitka.ru###top_block:style(position:static !important)
@@ -3492,6 +3496,8 @@ chizhik.club##.box:has(.message_telegram)
 chizhik.club##div:matches-css(position:fixed):style(position:static !important)
 chizhik.club##.animate_bird
 
+chocolatey.org##.btn-announcement-notifications
+
 ||chubbydeveloper.com/*/chubby-developer-logo-w.png
 chubbydeveloper.com##.elementor-widget-html
 chubbydeveloper.com##.elementor-widget-wrap:has-text(/newsletter/i)
@@ -4243,6 +4249,8 @@ decorativemodels.com##nav
 
 decu.ru##.product_card-label
 
+degoo.com##.dot
+
 dekoriko.ru##nav.navigation:nth-of-type(1)
 
 ||delikateska.ru/*/delivery-banner$image
@@ -4441,6 +4449,12 @@ i-digiseller.ru$3p
 mydigiseller.ru$3p
 
 digitaldefynd.com##.mega-stuck.mega-sticky:style(position:static !important)
+
+||digitalocean.com/_next/static/chunks/pages/_error
+! While scrolling, site breaks itself
+digitalocean.com##+js(aeld)
+||digitalocean.com/_next/static/media/ctaFish$image
+digitalocean.com##[class*=StyledCTA]
 
 digitaltrends.com##.b-nav__logo
 digitaltrends.com##.h-nav-container.b-nav:style(position:static !important)
@@ -6898,6 +6912,13 @@ glazdik.ru##.pre_post_info
 ! many spam subdomains
 ||glitch.me$3p
 
+globalnews.ca##.l-article__details
+globalnews.ca##p > strong:has-text(READ MORE:)
+globalnews.ca##.l-navbar__top
+    !:style(position:static !important)
+globalnews.ca##.c-posts--inline
+globalnews.ca##.l-inlineStories
+
 ||globalsign.com$third-party
 
     ! popups
@@ -7984,6 +8005,8 @@ hunter-izh.ru##.content-logo
 huntfish.by##.logo-text-wrap
 huntfish.by##.logo-pic
 huntfish.by##.edit-block-wrap
+
+huntflow.ru##.demo-button
 
 hunting.ru##.konkurs-anons
 hunting.ru##.ctxt
@@ -10329,6 +10352,7 @@ liquidweb.com##[class^=FixedButton]
 liquidweb.com##.EyeCatcher__startButton
 liquidweb.com##.knowledgeBase
 liquidweb.com##.subscribe-sidebar-form
+liquidweb.com##.inline-block
 
 litlife.club##.modal-dialog
 litlife.club###askAgeModal.modal
@@ -10943,6 +10967,10 @@ masterts.ru##.buttons-fixed
 masterxoloda.ru##.htop
 
 masyan.ru##.td-front-end-display-block.td-more-articles-box
+
+||matburo.ru/images/order_btn.png
+matburo.ru##.request
+matburo.ru##.responses
 
 matovsky.com##.navbar
 matovsky.com##.container:style(padding-top:0px !important; padding-bottom:0px !important)
@@ -11649,6 +11677,15 @@ mognb.ru##.shares
 mognb.ru##.right_column
 mognb.ru##.od
 mognb.ru##.shares
+
+moiprava.pro$inline-script  # site blocks copypaste
+    ! top
+moiprava.pro##.logo-header_line
+moiprava.pro##.after-header_before
+    ! banners and promos
+moiprava.pro##.code-block
+moiprava.pro##.title-comments_site
+    ! other
 
 molot.biz##.nav-extra-fixed:style(position:static !important; padding-top:0px !important)
 molot.biz##.nav-extra-b:style(position:static !important)
@@ -18958,10 +18995,15 @@ tpko.ru###wpadminbar:style(position:static !important)
 
 tpprf.ru##.logo-uni
 
-tproger.ru##.citation
+    ! top
 tproger.ru###above-content-container
+tproger.ru##.container-header:style(position:static !important)
+    ! other
+tproger.ru##.citation
 tproger.ru##.hint
 tproger.ru##.elevator-arrow
+tproger.ru###asideMenu:style(position:static !important)
+tproger.ru##.collaboration-message
 
 ! [EFF Tracker Detection] - from https://adaway.org/hosts.txt
 trackersimulator.org
@@ -23030,40 +23072,5 @@ hashicorp.com##.g-type-label:has-text(/[0-9] min/)
 
 ssh.com##.c-navigation-extra
 
-tproger.ru##.container-header:style(position:static !important)
-tproger.ru###asideMenu:style(position:static !important)
-tproger.ru##.collaboration-message
-
-moiprava.pro$inline-script  # site blocks copypaste
-    ! top
-moiprava.pro##.logo-header_line
-moiprava.pro##.after-header_before
-    ! banners and promos
-moiprava.pro##.code-block
-moiprava.pro##.title-comments_site
-    ! other
-
-||digitalocean.com/_next/static/chunks/pages/_error
-! While scrolling, site breaks itself
-digitalocean.com##+js(aeld)
-||digitalocean.com/_next/static/media/ctaFish$image
-digitalocean.com##[class*=StyledCTA]
-
-huntflow.ru##.demo-button
-
-degoo.com##.dot
-
-globalnews.ca##.l-article__details
-globalnews.ca##p > strong:has-text(READ MORE:)
-globalnews.ca##.l-navbar__top
-    !:style(position:static !important)
-globalnews.ca##.c-posts--inline
-globalnews.ca##.l-inlineStories
-
-||matburo.ru/images/order_btn.png
-matburo.ru##.request
-matburo.ru##.responses
-
-liquidweb.com##.inline-block
-
-chocolatey.org##.btn-announcement-notifications
+proshoper.ru##.banner-second-bottom
+proshoper.ru##.btn-app
