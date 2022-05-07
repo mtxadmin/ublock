@@ -1237,7 +1237,15 @@ plus.google.com
 
 
 
-!! general: like, share, social, etc
+!! General: like, share, social, etc
+!
+! hosts
+! comments are preferably inline with  #
+!
+!
+! urls
+! comments are preferably inline with  # 
+!
 /bitrix/js/socialservices/*
 /follow-us-on-  # from Fanboy's
 -footer-social-  # from Fanboy's
@@ -1309,10 +1317,16 @@ plus.google.com
 /soc_icons/*
 /ya-share.$important  # is in Fanboy's and Ru AdList
 !
+!
+! cosmetic filters
+! general first, specific last
+! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
 ##[class*="Follow"]:not(html):not(body):not(article)
 ##[id*="Follow"]:not(html):not(body):not(article)
 ~medtehno.ru##[class*="follow"]:not(html):not(body):not(article)
 ~facebook.com,~vk.com##[id*="follow"]:not(html):not(body):not(article)
+
 ! Exclusions: on oracle.com there are many elements with class="selectionShareable"
 ~officeapps.live.com,~joom.com,~oracle.com##[class*="Share"]:not(html):not(body):not(article):not(.selectionShareable)
     ! .selectionShareable - see /plugins/selection-sharer/*
@@ -1350,6 +1364,13 @@ plus.google.com
     !##a[title="Share on Twitter"]
 ! is in Fanboy's
 ##a[title^="Share this article"]
+##[class^=et_social]
+    ! is in Fanboy's
+    !##.et_social_mobile
+    ! is in Adguard and Fanboy's
+    !##.et_social_sidebar_networks
+    ! is in Fanboy's
+    !##.et_social_fadein
 ! from Fanboy's
 ##img[alt^="Share on "]
 ! from Fanboy's
@@ -1393,13 +1414,6 @@ plus.google.com
 ##[id*="_soc_"]:not(html):not(body):not(article)
 !
 !
-##[class^=et_social]
-    ! is in Fanboy's
-    !##.et_social_mobile
-    ! is in Adguard and Fanboy's
-    !##.et_social_sidebar_networks
-    ! is in Fanboy's
-    !##.et_social_fadein
 ! on nalog.ru it is not social buttons, it is a tax name
 ~nalog.ru##[class*="Social"]:not(html):not(body):not(article)
     !from Fanboy's: Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
@@ -1416,8 +1430,10 @@ plus.google.com
 ##[class*="zocial"]:not(html):not(body):not(article)
 ##[id*="zocial"]:not(html):not(body):not(article)
 !
+!
 ! from Fanboy's
 ##.abh_social
+##.a-icon--share
 ! is in Adguard and Fanboy's
 ##amp-social-share
 ! is in Fanboy's
@@ -1445,6 +1461,7 @@ plus.google.com
 ! is in Fanboy's and Ru AdList
 ##button[title="Share"]
 ##.button-like
+##.c-social
 ! from Fanboy's
 ###donate-social
 ! is in Fanboy's
@@ -1461,72 +1478,8 @@ plus.google.com
 ##.footerSocial
 ##[class*=footer__social]
 ##[id*=footer__social]
-    !! Some examples
-    ! from Fanboy's
-    ##.b-article-image-footer__social-link
-    ! is in Fanboy's
-    ##.b-footer__social
-    ! from Fanboy's
-    ##.b_footer__socialmedia
-    ! from Fanboy's
-    ##.bottom-footer__social
-    ! from Fanboy's
-    ##.bt__footer__social
-    ! from Fanboy's
-    ##.c-footer__social
-    ! from Fanboy's
-    ##.c-footer__social-links
-    ! from Fanboy's
-    ##.c-footer__social-list
-    ! from Fanboy's
-    ##.c-footer__social-list-item
-    ! from Fanboy's
-    ##.c-main-footer__social
-    ! from Fanboy's
-    ##.c-site-footer__social-icons
-    ! from Fanboy's
-    ##._footer__social
-    ! from Fanboy's
-    ##.footer__socialButtons
-    ! is in Ru AdList and Fanboy's
-    ##.footer__social
-    ##.footer__social-group
-    ! from Fanboy's
-    ##.footer__social-icon
-    ! from Fanboy's
-    ##.footer__socialIcon
-    ! from Fanboy's
-    ##.footer__social-items
-    ! from Fanboy's
-    ##.footer__social-links
-    ! is in Fanboy's
-    ##.footer__social-list
-    ! from Fanboy's
-    ##.footer__social-media
-    ! from Fanboy's
-    ##.footer__socialmedia
-    ! from Fanboy's
-    ##.footer__social-menu
-    ! from Fanboy's
-    ##.footer__socialNetwork
-    ! from Fanboy's
-    ##.footer__socialNetworkItem
-    ! is in Fanboy's
-    ##.footer__socials
-    ! from Fanboy's
-    ##.footer__social-wrapper
-    ! from Fanboy's
-    ##.global-footer__social
-    ! from Fanboy's
-    ##.global-footer__social-link
-    ! from Fanboy's
-    ##.lp-global-footer__social-list
-    ! from Fanboy's
-    ##.m-footer__social-container
-    ! from Fanboy's
-    ##.main-footer__social
-    ! from Fanboy's
-    ##.main-footer__socials
+    ! See examples at backups/_socials_examples
+
 ##[class*=footer_social]
     ! from Fanboy's
     ##.footer_social
@@ -2431,7 +2384,6 @@ ananweb.jp##.footer-sns-wrap
 ##.sharelink
 ##.share-toolbox
 
-##.a-icon--share
 
 ! from Adguard
 ##.social-line
@@ -2440,13 +2392,11 @@ ananweb.jp##.footer-sns-wrap
 
 ##.soc_box
     ! from Fanboy's
-    !onlineprnews.com##.soc_box[style=" margin-bottom:10px; border:solid 1px #EEEEEE; clear:both"]
+    !onlineprnews.com##.soc_box[style="margin-bottom:10px; border:solid 1px #EEEEEE; clear:both"]
 ##.soc-box
 
 ! is in Adguard
 ##button[aria-label^="Share on "]
-
-##.c-social
 
 ##.icon-twitch
 ##.bg-twitch
