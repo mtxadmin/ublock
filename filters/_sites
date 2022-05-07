@@ -22081,11 +22081,18 @@ zosoptic.ru###phonenum
 ||zosoptic.ru/*/card_sberbank.png
 zosoptic.ru##.agree_button2_slim
 
-zr.ru##noindex
+    ! top
 zr.ru##.header__wrap_fixed:style(position:static !important)
 zr.ru##.header__container:style(position:static !important)
+    ! socials
+zr.ru##li:has(a[href^="https://ok.ru/"])
+zr.ru##li:has-text(можно читать в)
+    ! other
+zr.ru##noindex
 zr.ru##.popular__item-counters
 zr.ru##.story-note-subscribe
+! inline related (seems not related. Maybe some sort of internal banners)
+zr.ru##.readmore
 
 z-safe.ru##.moduletable
 z-safe.ru##.cat-phone
@@ -23120,6 +23127,8 @@ hashicorp.com##.g-type-label:has-text(/[0-9] min/)
 ssh.com##.c-navigation-extra
 
 ||kngnator.com/storage/uploads/settings/$image
+kngnator.com##.el-header:style(height:auto !important)
+kngnator.com##.def-header:style(transition:none !important)
 
 bestknigi.com##.cd-dropdown-wrapper
 
