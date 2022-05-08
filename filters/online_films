@@ -275,6 +275,16 @@ gstatic.com/recaptcha/$important,domain=123serial.com|1lostfilm1080.online|1seri
 
 !! paid sites
 
+! remove them from search (see list below)
+                yandex.com,yandex.ru##.serp-item:has(b:has-text(/(^|/|\.)(allocine.fr|best-trailer.ru|ctc.ru|culture.ru|disney.ru|domashniy.ru|film.ru|filmhd.to|ivi.ru|ivi.tv|1tv.ru|kinoafisha.info|kinohod.ru|kino.mail.ru|kinopoisk.ru|kino-teatr.ru|kino-teatr.ua|kinotut.tv|kinowinx.ru|megafon.tv|megogo.ru|more.tv|videomore.ru|my-hit.org|okko.tv|popcorntime.co|popcorntime-online.ch|rutube.ru|start.ru|sweet.tv|tnt-online.ru|tricolor.tv|tvigle.ru|tvzavr.ru|utorrentfilmi.ru|vsetam.net|wink.rt.ru)/i))
+
+                   www.google.com,www.google.ru##div.g:has-text(/(^|/|\.)(allocine.fr|best-trailer.ru|ctc.ru|culture.ru|disney.ru|domashniy.ru|film.ru|filmhd.to|ivi.ru|ivi.tv|1tv.ru|kinoafisha.info|kinohod.ru|kino.mail.ru|kinopoisk.ru|kino-teatr.ru|kino-teatr.ua|kinotut.tv|kinowinx.ru|megafon.tv|megogo.ru|more.tv|videomore.ru|my-hit.org|okko.tv|popcorntime.co|popcorntime-online.ch|rutube.ru|start.ru|sweet.tv|tnt-online.ru|tricolor.tv|tvigle.ru|tvzavr.ru|utorrentfilmi.ru|vsetam.net|wink.rt.ru)/i)
+
+                         duckduckgo.com##.result__body:has-text(/(^|/|\.)(allocine.fr|best-trailer.ru|ctc.ru|culture.ru|disney.ru|domashniy.ru|film.ru|filmhd.to|ivi.ru|ivi.tv|1tv.ru|kinoafisha.info|kinohod.ru|kino.mail.ru|kinopoisk.ru|kino-teatr.ru|kino-teatr.ua|kinotut.tv|kinowinx.ru|megafon.tv|megogo.ru|more.tv|videomore.ru|my-hit.org|okko.tv|popcorntime.co|popcorntime-online.ch|rutube.ru|start.ru|sweet.tv|tnt-online.ru|tricolor.tv|tvigle.ru|tvzavr.ru|utorrentfilmi.ru|vsetam.net|wink.rt.ru)/i)
+duckduckgo.com##.result__body:has(.result__url__domain:has-text(/(^|/|\.)(allocine.fr|best-trailer.ru|ctc.ru|culture.ru|disney.ru|domashniy.ru|film.ru|filmhd.to|ivi.ru|ivi.tv|1tv.ru|kinoafisha.info|kinohod.ru|kino.mail.ru|kinopoisk.ru|kino-teatr.ru|kino-teatr.ua|kinotut.tv|kinowinx.ru|megafon.tv|megogo.ru|more.tv|videomore.ru|my-hit.org|okko.tv|popcorntime.co|popcorntime-online.ch|rutube.ru|start.ru|sweet.tv|tnt-online.ru|tricolor.tv|tvigle.ru|tvzavr.ru|utorrentfilmi.ru|vsetam.net|wink.rt.ru)$/i))
+     duckduckgo.com##div>article[data-testid="result"]:has-text(/(^|/|\.)(allocine.fr|best-trailer.ru|ctc.ru|culture.ru|disney.ru|domashniy.ru|film.ru|filmhd.to|ivi.ru|ivi.tv|1tv.ru|kinoafisha.info|kinohod.ru|kino.mail.ru|kinopoisk.ru|kino-teatr.ru|kino-teatr.ua|kinotut.tv|kinowinx.ru|megafon.tv|megogo.ru|more.tv|videomore.ru|my-hit.org|okko.tv|popcorntime.co|popcorntime-online.ch|rutube.ru|start.ru|sweet.tv|tnt-online.ru|tricolor.tv|tvigle.ru|tvzavr.ru|utorrentfilmi.ru|vsetam.net|wink.rt.ru)/i)
+
+
 !||afisha.tut.by/online-cinema/  # ссылка на tvigle.tv
 
 !allocine.fr  # paid non-working French site  # from Adguard: smart.allocine.fr
@@ -284,6 +294,8 @@ gstatic.com/recaptcha/$important,domain=123serial.com|1lostfilm1080.online|1seri
 !ctc.ru  # "Оформить подписку", ага. До свидания.
 
 !culture.ru  # по подписке
+
+!disney.ru
 
 !domashniy.ru  # нет просмотра
 
@@ -353,6 +365,10 @@ ivi.ru##.service-notification
 
 !sweet.tv  # платно
 
+!tnt-online.ru  # not free
+
+!tricolor.tv  # not free
+
 ! просмотр стал платным. Block it.
 !tvigle.ru
 !!tvigle.ru###body:style(background-image:none !important)
@@ -380,6 +396,8 @@ ivi.ru##.service-notification
 
 ! https://forums.lanik.us/viewtopic.php?f=102&t=43963
 !utorrentfilmi.ru
+
+!vsetam.net  # not free
 
 !wink.rt.ru  # paid movies site
 
