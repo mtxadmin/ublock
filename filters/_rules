@@ -684,7 +684,8 @@ ban100x100.swf  # from Adguard
 /baner_$important
 /banery/*
 /%21banery/*
-/banner$important,domain=~archive.org|~doshirak.com|~sberbank.ru
+!/banner$important,domain=~archive.org|~doshirak.com|~sberbank.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it
+/banner*$all,important,domain=~archive.org|~doshirak.com|~sberbank.ru
     ! ##[src^="/images/banner"]
     ! /banner/*$important
     ! /banner.js$important
@@ -1049,7 +1050,7 @@ _rebid.js  # from EasyList
 /webbanners/*
 /widget/*$domain=~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru
     ! /widget/?45;*|1|1|1|1  # strange rule from Ru AdList
-/widgets/*$domain=~aliexpress.com|~aliexpress.ru|~dns-shop.ru|~domclick.ru|~leroymerlin.ru|~sberbank.ru
+/widgets/*$domain=~aliexpress.com|~aliexpress.ru|~dns-shop.ru|~domclick.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
 ||/wp-content/*/ad-$script,important  # disable exclusion from Fanboy’s Enhanced Tracking List
 ||/wp-content/*/ads*.js$script,important  # disable exclusions from Fanboy's list
 /www/delivery/*  # from EasyList
