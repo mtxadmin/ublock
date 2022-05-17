@@ -913,10 +913,9 @@ tracking.ws.eurosport.com
 
 /webpush.
 
-/widget.$domain=~mts.ru|~scribblemaps.com|~sbis.ru
+/widget.$domain=~mts.ru|~scribblemaps.com
 ! exclusions: 
 !   mts.ru - GUI
-!   sbis.ru - GUI scripts
 widget.afisha.yandex.ru
 widget.cdek.ru
 widget.cloudpayments.ru
@@ -932,7 +931,9 @@ widget.sellwild.com  # is in EasyList
 widget.trustpilot.com$important  # from RU AdList and Fanboy’s
 widget.utinet.ru  # from Adguard
 
-/widgets.$domain=~scribblemaps.com
+/widgets.$domain=~sbis.ru|~scribblemaps.com
+! exclusions: 
+!   sbis.ru - GUI scripts
 widgets.kinopoisk.ru  #widgets.kinopoisk.ru$third-party doesn't work for some sites. Iframe? Ok, let's block
 widgets.membership.s-msft.com
 widgets.planeta.ru  # from Adguard
