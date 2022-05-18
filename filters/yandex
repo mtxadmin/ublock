@@ -630,9 +630,12 @@ yandex.ru##div[class*=" news-"][class$="_mode_daas"]
 ||yandex.net/get-ynews-logo/
 ! подсовывает "fake-яндекс-новости" с цензурированной подборкой
 yandex.*,ya.ru##a[class="mini-suggest__item-link"]
-! fakenews на главной
+    ! fakenews на главной
 yandex.*##.news__header
-! fakenews, свои же, подсунутые в поиске
+yandex.*##a[href^="https://yandex.ru/news/"]
+yandex.*##.service_name_news
+yandex.*##.navigation__item_name_news
+    ! fakenews, свои же, подсунутые в поиске
 yandex.*##.serp-item:has(a[href*="//yandex.ru/news"])
 yandex.*##.serp-item:has(a[href*="//yandex.by/news"])
 yandex.*##.serp-item:has(a[href*="//yandex.com/news"])
@@ -681,6 +684,9 @@ yandex.*##.button_primary:has-text(в избранное)
 ||yandex.net/csp?
 
 ||yandex.ru/push?
+
+! хз что, но как-то лишнее
+||yandex.ru/ick/
 
 ||yastatic.net/forgetmenot/
 
