@@ -711,22 +711,27 @@ adlock.com##.adl__spec__disc
 
 admagazine.ru##.header__top
 
+! adme.ru -> adme.media
 ||adme.ru/metric-collector  # is in Adguard
+||adme.media/metric-collector
     ! smiles buttons
-adme.ru##a[data-test-id="like-button"]
-adme.ru##a[data-test-id="dislike-button"]
-adme.ru##a[data-test-id="favorite-button"]
-adme.ru##a[data-test-id="comments-link"]
-adme.ru##div[data-test-id="top-action-bar"]
-adme.ru##div[data-test-id="bottom-action-bar"]
+adme.ru,adme.media##a[data-test-id="like-button"]
+adme.ru,adme.media##a[data-test-id="dislike-button"]
+adme.ru,adme.media##a[data-test-id="favorite-button"]
+adme.ru,adme.media##a[data-test-id="comments-link"]
+adme.ru,adme.media##div[data-test-id="top-action-bar"]
+adme.ru,adme.media##div[data-test-id="bottom-action-bar"]
     ! popups
 !adme.ru##*:matches-css(position:fixed):has-text(Попробуйте наши тесты)
 ||adme.ru/dist/$image
-adme.ru##a[href="/quizzes/"]
+||adme.media/dist/$image
+adme.ru,adme.media##a[href="/quizzes/"]
+    ! totop
+adme.media##aside ~ button
     ! other
-!adme.ru##*:matches-css(position:fixed):style(position:static !important)
-adme.ru##.article-stats-wrap
-adme.ru##strong:has-text(AdMe.ru)
+!adme.ru,adme.media##*:matches-css(position:fixed):style(position:static !important)
+adme.ru,adme.media##.article-stats-wrap
+adme.ru,adme.media##strong:has-text(AdMe.ru)
 
 adminxp.ru##.art-Header
 
