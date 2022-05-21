@@ -280,11 +280,15 @@ vk.com##.OldBrowser
 ##div[id^="vk_group"]
 ! from Adguard
 ##div[id^="vk_like"]
+! from Ru AdList
+###com_vk
 ##.fa-vk
 ! is in Fanboy's
 ##.icon-vk
 ##.icon-VK
 ##.icon-vk-24
+! from Ru AdList
+##.icon_vkontakte
 ##.ico-vkontakte
 ##.icon-vkontakte
 ! Exclusions: medium.com projects (there are two-letters obfuscated divs)
@@ -296,10 +300,16 @@ vk.com##.OldBrowser
 ##.vk-group-block
 ###vk_groups
 ##.vk_icon
-##.vk-white-icon
+! from Ru AdList
+###vk_like
 ! is in Ru AdList and Fanboy's
 ##.vkontakte
 ###vkontakte
+! from Ru AdList
+###vkshare0
+! from Ru AdList
+~vk.com###vk_subscribe
+##.vk-white-icon
 ! from Adguard
 vk.com##+js(set-constant, noAdsAtAll, true)
 ! is in Adguard
@@ -969,6 +979,10 @@ _livejournal.gif  # from Ru AdList
 ~livejournal.com##a[href^="http://www.livejournal.com/update.bml?subject="]
 ! from RU AdList, modified
 livejournal.com##a[href*="offer"][target="_blank"]
+! from Ru AdList
+##.lj-like
+! from Ru AdList
+##.lj-like-item:not(.lj-like-item-repost)
 
 
 
@@ -2228,3 +2242,12 @@ ananweb.jp##.footer-sns-wrap
 
 ##.icon-twitch
 ##.bg-twitch
+
+! from Ru AdList
+##.socials-button_webnavoz
+
+! from Ru AdList
+##.social-zen
+
+! from Ru AdList
+##.social_fixed
