@@ -50,6 +50,7 @@
 /fbcheck.min.js  # firebase
 /feracommerce/*
 /firebase/*
+/firebase.js  # from Adguard, modified
 /firebase-messaging.js
 /firebase-messaging-sw.js
 /firebase_subscribe.js
@@ -68,6 +69,7 @@
 /mobile-detect.min.js$domain=~sudrf.ru
 !/modal.js - disabled. Some sites make forms with it
 /mypushdc.$important  # from RU AdList and Fanboy's
+/notification.js  # from Adguard, modified
 /notification-bell.svg  # gocitysites.ru network
 /notifications.js
 /notifyjs/*
@@ -86,6 +88,7 @@
 /push_app.js  # from Ru AdList
 /push_count$script
 /pushjs/*$important
+/push.latest.min.js  # from Adguard, modified
 /push_loader.js
 /push_main.js
 /push_newsletter_  # from Ru AdList
@@ -125,6 +128,7 @@
     # also pushtoast-a.akamaihd.net
 /push_token_  # from Ru AdList
 /pushworker.js
+/push-worker.js  # from Adguard, modified
 /push-wrap.js  # is in Ru AdList
 /pushy.js
 /robot_chat/*
@@ -139,6 +143,9 @@
 /trackpush/$important
 /webchat/*$domain=~gosuslugi.ru
 /webpush.  # push ad scripts  # is in Ru AdList and in AdGuard
+    ! /webpush.js
+    ! /webpush.min.js
+/webpush/*
 /web-push-$important  # is in Fanboy's  # my old version (Fanboy's is more general): /web-push-client/*$important
 /whatschat$important
 /widgets/eu-cookie-law/*$important
@@ -193,6 +200,7 @@
 ###pushholding
 ###push-overlay
 ###push-overlay-modal
+##.push-panel
 ! is in Ru AdList and Fanboy's
 ###push_subscribe
 ##.pushy
