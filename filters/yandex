@@ -284,6 +284,13 @@ market.yandex.ru##.n-w-tab__discount_icon
 market.yandex.ru##.widget-loader__paranja
 ! new design with random fixed elements
 market.yandex.ru##*:matches-css(position:fixed)
+! from Adguard
+market.yandex.*##div[data-apiary-widget-name="@MarketNode/ReviewPollPopup"]
+! from Adguard
+market.yandex.*##div[data-apiary-widget-id="/fullScreenAppDistributionPopup"]
+! from Adguard
+market.yandex.*##div[data-apiary-widget-id="/bannerAfterReverseScroll"]
+
 
 ! "Q"
 yandex.ru##a[href="/q/"]:has(svg)
@@ -524,8 +531,10 @@ yandex.ru##.Modal:has-text(поиск Яндекса)
 
 ||yandex.ru/services/inception
 
-yandex.ru##.zalogin-head
-yandex.ru##.zalogin-smart
+! from Adguard
+yandex.*##.i-zalogin-cookie
+yandex.*##.zalogin-head
+yandex.*##.zalogin-smart
 
 ! from RU AdList
 ##a[href*="zen.yandex."] > img:not([src*="gstatic.com"]):not([onload*="google"]):not([jsaction])
@@ -557,13 +566,15 @@ yandex.*##+js(abort-on-property-read, yaads.renderWidget)
 yandex.*##+js(abort-on-property-read, Ya.loaderVer)
 yandex.*##+js(abort-on-property-read, ya.mediaAd)
 
-! no-csp-reports: * true
-csp.yandex.net
-
 ! is in AdGuard and Ru AdList
-yandex.ru###yabro-strip-element
+yandex.*###yabro-strip-element
 
-yandex.ru##.yabrowser-promo
+yandex.*##.yabrowser-promo
+! from Adguard
+yandex.*##.DistrSmartbanner
+
+! from Adguard
+yandex.*##.promo-popup
 
 ! is in Ru AdList
 zen.yandex.ru##.feed__row > .feed__item-wrap div:after:style(background: transparent !important)
