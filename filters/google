@@ -24,15 +24,6 @@ google.*##div.fbar:nth-of-type(2)
 translate.google.com##.gb_g.gb_Vc.gb_wd
 !translate.googleapis.com$domain=~translate.google.com - don't, it can be called when translating urls
 
-ads.google.com
-
-googlesyndication.com/pagead/
-||googlesyndication.com/pagead/$important
-
-googleadservices.com
-partner.googleadservices.com
-||googleadservices.com$important
-
 googleadapis.l.google.com
 gstaticadssl.l.google.com
 pagead-googlehosted.l.google.com
@@ -110,5 +101,3 @@ google.*##div:matches-css(position:fixed)
 google.*##div[aria-modal="true"]:has-text(cookies)
 
 ||cse.google.com/cse.js?cx=partner-pub$important
-
-fundingchoicesmessages.google.com  # ad scripts  # is in 3 lists
