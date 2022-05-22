@@ -2009,9 +2009,11 @@ _chartbeat.js  # from EasyPrivacy
 /event/track?  # from EasyPrivacy
 /event-tracker/*  # bitrix lib
 /events-metrica-scripts.js
-/fingerprint.min.js$important
-/fingerprint2.min.js$important  # is in EasyPrivacy and AdGuard
-	||jsdelivr.net/fingerprintjs2/  # Also
+/fingerprint$important,all
+    ! /fingerprint.min.js$important
+    ! /fingerprint2.min.js$important  # is in EasyPrivacy and AdGuard
+        ! ||jsdelivr.net/fingerprintjs2/  # Also
+    ! /fingerprintjs2/*
 ?frm=script&se_referrer=  # from AdGuard
 _gatrack.js  # from EasyPrivacy
 .gatracking.js  # from EasyPrivacy
@@ -4397,6 +4399,7 @@ tarif-24.ru##.mh-ticker-bottom
 /jquery.stickyPanel.min.js
 /sticky/*$domain=~twitter.com|~twimg.com
 /sticky.js
+/sticky.min.js
 /stickyads.  # is in EasyList
 /sticky-cart/*
 /stickyfill.min.js
