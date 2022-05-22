@@ -329,6 +329,8 @@ $removeparam=partnerId
     ! ||lotto.gmx.*^$removeparam=partnerId  # from Adguard
     ! lotto.web.de$removeparam=partnerId  # from Adguard
 
+$removeparam=pbsubid  # tracking on parked domains
+
 $removeparam=/^pd_rd_.*/
     ! amazon.*$removeparam=/^pd_rd_.*/  # from NeatURL
         ! ||amazon.*$removeparam=pd_rd_i  # from Adguard
