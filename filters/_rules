@@ -2024,6 +2024,8 @@ _gatrack.js  # from EasyPrivacy
 /geoip.city  # bitrix popups removed: ##.bxmaker__geoip__city__line-question and ##.current-city-notice
 /geotools/*  # ad xhrs
 .gif?event=  # is in EasyPrivacy
+/google-analytics
+-google-analytics/$important
 .googleanalytics.js  # from EasyPrivacy
 .googleanalytics.prod.  # from EasyPrivacy
 /gtagservices/*
@@ -4375,7 +4377,7 @@ tarif-24.ru##.mh-ticker-bottom
 ! https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
 /service-worker.js
     ||wordpress.com/service-worker.js
-/sw.js
+/sw.js$domain=~twitter.com
     ||docviewer.yandex.*/sw.js  # from Adguard
     ||gearbest.com/sw.js$important  # is in uBlock filters
     ||lamoda.ru/sw.js
