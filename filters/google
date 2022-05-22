@@ -24,16 +24,10 @@ google.*##div.fbar:nth-of-type(2)
 translate.google.com##.gb_g.gb_Vc.gb_wd
 !translate.googleapis.com$domain=~translate.google.com - don't, it can be called when translating urls
 
-googleadapis.l.google.com
-gstaticadssl.l.google.com
-pagead-googlehosted.l.google.com
-
 ||youtube.com/pixel
 
 ! from Fanboy's
 ||contributor.google.com^*/loader.js$third-party
-! from Fanboy's
-||fundingchoices.google.com^$third-party
 
 ||google.com/log?$important
 
@@ -79,7 +73,6 @@ google.com###gc-wrapper:style(margin-top:0px !important)
 
 youtube.com##.yt-upsell-dialog-renderer
 youtube.com###consent-bump
-||consent.google.com/$subdocument
 
 ! is in uBlock. Applies to google recaptcha as well, ok.
 www.google.*##+js(remove-attr, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
