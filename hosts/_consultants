@@ -142,9 +142,11 @@
 /trackpush.min.js$important  # is in EasyPrivacy
 /trackpush/$important
 /webchat/*$domain=~gosuslugi.ru
-/webpush.  # push ad scripts  # is in Ru AdList and in AdGuard
-    ! /webpush.js
-    ! /webpush.min.js
+/webpush
+    !/webpush.  # push ad scripts  # is in Ru AdList and in AdGuard
+        ! /webpush.js
+        ! /webpush.min.js
+    ! /webpush-launcher.js
 /webpush/*
 /web-push-$important  # is in Fanboy's  # my old version (Fanboy's is more general): /web-push-client/*$important
 /whatschat$important
