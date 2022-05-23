@@ -11331,15 +11331,16 @@ medium.com##div>p:has-text(free member-only stories left this month)
 medium.com##div:has(>div>p:has-text(Learn on the go with our new app))
     ! reading time
 medium.com##span:has-text(/^[0-9]+ min read$/)
+    ! floating button below
+!medium.com,jetruby.com,itnext.io,towardsdatascience.com##*:matches-css(position:sticky):style(position:static !important)
+medium.com,jetruby.com,itnext.io,towardsdatascience.com##*:watch-attr(position):matches-css(position:sticky):remove()
+medium.com,jetruby.com,itnext.io,towardsdatascience.com##div:has(>div>.pw-multi-vote-count)
     ! other
 medium.com##[data-test-id="post-sidebar"]
 medium.com##.js-stickyFooter
 medium.com###lo-highlight-meter-1-highlight-box
 medium.com##.wc
 medium.com##span:has(div > p:has-text(Share your ideas))
-! floating button below
-!medium.com,jetruby.com,itnext.io,towardsdatascience.com##*:matches-css(position:sticky):style(position:static !important)
-medium.com,jetruby.com,itnext.io,towardsdatascience.com##*:watch-attr(position):matches-css(position:sticky):remove()
 ! cookie popups
 itnext.io##div:has(>div>div>div[role=alert]:has-text(cookie policy))
 
@@ -23396,3 +23397,6 @@ bronya-shop.ru##span:has-text(Купить в 1 клик)
 blokada.org##footer::before
 blokada.org##.shape
 blokada.org##.text-white:style(color:#000 !important)
+
+live4fun.ru##.head_center
+live4fun.ru##.top_users.block
