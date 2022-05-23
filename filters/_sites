@@ -20103,16 +20103,23 @@ vbt.io$3p
 ! vbt.io/ext/builder/countdown02.js
 ! vbt.io/lp/8833/tracker
 
-vc.ru##.main_menu__container
+    ! sticky elements
 vc.ru##.sticky.comments__navigation:style(position:static !important)
-vc.ru##.main_menu__logo
 vc.ru##.main_menu:style(position:static !important)
+vc.ru##.layout__column--sticky:style(top:0px !important)
+vc.ru##.layout__column--sticky:style(position:static !important)
 vc.ru##.layout__column--sticky.layout__column--right
+    ! flying comments
+vc.ru##.flying-photo:remove()
+! yes, this one too. Icon is animated and changing its shape when new comments arrive
+vc.ru##.icon--v_comments:remove()
+vc.ru##.icon--ui_pencil:remove()
+    ! other
+vc.ru##.main_menu__container
+vc.ru##.main_menu__logo
 vc.ru##.sidebar__spacer
 vc.ru##.sidebar-button
-vc.ru##.layout__column--sticky:style(top:0px !important)
 vc.ru##.live
-vc.ru##.layout__column--sticky:style(position:static !important)
 vc.ru##.subsite_card_short_with_content
 vc.ru##.content__write-suggestion
 vc.ru##.head-notifies__badge
