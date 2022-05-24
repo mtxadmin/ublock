@@ -36,6 +36,7 @@ adfox.yandex.ru
 ##div[id^="AdFox_banner_"]
 
 advertising.yandex.ru$important
+adfstat.yandex.ru  # from Adguard
 
 ||an.yandex.  # from Adguard
 an.yandex.ru$important
@@ -65,6 +66,7 @@ web-metrica.yandex.ru
 mc.yandex.ru$important
 !+  mediascope.mc.yandex.ru
 ! end of mc.yandex.ru
+mc.yandex.com  # from Adguard
 
 ! yandex.metrica? Finland, but Yandex DNS. Now closed? Let's block anyway.
 ymetrica.com
@@ -80,6 +82,8 @@ clck.yandex.com.tr
 clck.yandex.kz
 clck.yandex.ru
 clck.yandex.ua
+
+external-promo-metrics.yandex.net  # from Adguard
 
 ! metrika yandex hosts mostly from https://hosts-file.net/ad_servers.txt
 ! disable any whitelists
@@ -157,7 +161,7 @@ bs.yandex.ru$important
 
 cloud-api.yandex.ru  # app requests
 
-csp.yandex.net
+csp.yandex.net  # no-csp-reports: * true
 
 direct.yandex.ru$important
 !+  api.direct.yandex.ru
@@ -285,6 +289,8 @@ uniproxy.alice.yandex.net
 
 ! a-b tests
 aab-pub.s3.yandex.net$important
+
+||button.blogs.yandex.  # from Adguard
 
 ! seen on one of Yandex sites
 tools.messenger.yandex.net
