@@ -4,10 +4,6 @@
 !
 ! List of known subdomains (where main domain itself is legit)
 !
-! Possible exceptions:
-! see ad.* in _marketing_ad-
-! see click.*, clik.*, clix.*, clk* in _marketing_click-
-!
 ! Some individual subdomains may be in other files
 
 
@@ -313,6 +309,7 @@ analytics.metro-tr.com  # from frogeye
 analytics.move.ru
 analytics.nexonm.com  # +  # from GoodbyeAds
 analytics.ngs24.ru  # ad scripts
+analytics.plex.tv  # from Adguard
 analytics.runsignup.com
 analytics.sarbc.ru
 analytics.shopify.com$important  # from EnergizedProtection
@@ -323,6 +320,7 @@ analytics.tiktok.com  # from Dan Pollock's hosts file
 analytics.trutv.com  # from MVPS
 analytics.twitter.com  # from EasyPrivacy
 analytics.vendemore.com
+analytics.zeekit.co  # from Adguard
 
 /banner.$domain=~sbis.ru
 banner.abbyy.com
@@ -371,6 +369,9 @@ chat.sarbacane.com
 chat.slb.com
 chat.wildberries.ru
 
+/clk.
+clk.onet.pl  # from Adguard
+
 /click.$domain=~alfabank.ru
 click.cloudcheckr.com
 click.email.sans.org
@@ -388,7 +389,9 @@ click.mailerweb.trainingdoyens.com
 
 /clicks.  # I suspected it earlier, yes, but general subdomains form is from github.com/asterriya/regex-ads/
 clicks.adultplex.com  # from GoodbyeAds
+clicks.biletix.ru
 clicks.rbs.co.uk  # root is legit
+clicks.wawlabs.com  # from Adguard
 
 /cnt.
 cnt.hd21.com  # from uBlock filters
@@ -398,9 +401,22 @@ cnt.promodj.com
 cntcerber.rambler.ru  # from Adguard
 cnt.cerber.rambler.ru  # from Adguard
 cnt.ramlife.ru  # from Adguard
+cnt.xhamster.com  # from Adguard
 
 /cnt0.
 cnt0.www.uz
+
+/collector.
+collector.cdp.cnn.com  # from Adguard
+collector.githubapp.com  # from Adguard
+collector.mazeberry.com  # from Adguard
+collector.megaxh.com  # from Adguard
+collector.puhutv.com  # from Adguard
+collector.rn.de  # from Adguard
+collector.szlcsc.com  # from Adguard
+collector.vhx.tv  # from Adguard
+collector.wawlabs.com  # from Adguard
+collector.xhwide1.com  # from Adguard
 
 /consent.
 consent.dropbox.com  # from Adguard
@@ -410,6 +426,7 @@ consent.scm-verlagsgruppe.de  # from Adguard
 
 /counter.
 counter.24smi.info
+counter.adguard.com  # from Adguard (sic!)
 counter.adona.ru
 counter.aport.ru  # from Dan Pollock's hosts file
 counter.bloke.com   # +  # from Dan Pollock's hosts file
@@ -422,14 +439,63 @@ counter.rambler.ru$important
 counter.sberbank.ru
 counter.sudrf.ru
 counter.ukr.net$important
+counter.web.money  # from Adguard
 
 /eloqua.
+/eloquatracking.
 /elq.
+/elqtrack.
+/elqtracking.
+/elqtrck.
 /elqtrk.
+eloqua.53.com  # from Adguard
+eloqua.binarytree.com  # from Adguard
+eloqua.cphi-china.cn  # from Adguard
+eloqua.eft.com  # from Adguard
+eloqua.erwin.com  # from Adguard
+eloqua.ethicalcorp.com  # from Adguard
+eloqua.eyeforpharma.com  # from Adguard
+eloqua.infobip.com  # from Adguard
+eloqua.liberty.edu  # from Adguard
+eloqua.pearsonvue.com  # from Adguard
+eloqua.roche.com  # from Adguard
 eloqua.talktalkbusiness.co.uk  # from Adguard
+eloquatracking.iqvia.com  # from Adguard
+eloquatracking.mindbody.io  # from Adguard
+eloquatracking.relayr.io  # from Adguard
+elq.blackrock.com  # from Adguard
+elq.cirium.com  # from Adguard
 elq.eg.co.uk  # from Adguard
 elq.egi.co.uk  # from Adguard
 elq.farmplan.co.uk  # from Adguard
+elq.forrester.com  # from Adguard
+elq.keysight.com  # from Adguard
+elq.keysight.com.cn  # from Adguard
+elq.macu.com  # from Adguard
+elq.mouser.ca  # from Adguard
+elq.mouser.com  # from Adguard
+elq.redhat.com  # from Adguard
+elq.sonicwall.com  # from Adguard
+elq.symantec.com  # from Adguard
+elqtrack.kubotausa.com  # from Adguard
+elqtracking.capella.edu  # from Adguard
+elqtracking.cengage.com  # from Adguard
+elqtracking.flexera.com  # from Adguard
+elqtracking.hitachi-powergrids.com  # from Adguard
+elqtracking.hitachienergy.com  # from Adguard
+elqtracking.macegroup.com  # from Adguard
+elqtracking.medidata.com  # from Adguard
+elqtracking.revenera.com  # from Adguard
+elqtracking.richardsonrfpd.com  # from Adguard
+elqtracking.strayer.edu  # from Adguard
+elqtracking.victorops.com  # from Adguard
+elqtrck.motor.no  # from Adguard
+elqtrck.nanawall.com  # from Adguard
+elqtrk.ext.hp.com  # from Adguard
+elqtrk.insight.tech  # from Adguard  # investors
+elqtrk.intel.com  # from Adguard
+elqtrk.thailand.intel.com  # from Adguard
+elqtrk.intel.cn  # from Adguard
 elqtrk.intel.co.il  # from Adguard
 elqtrk.intel.co.jp  # from Adguard
 elqtrk.intel.co.kr  # from Adguard
@@ -438,8 +504,43 @@ elqtrk.intel.com.au  # from Adguard
 elqtrk.intel.com.br  # from Adguard
 elqtrk.intel.com.tr  # from Adguard
 elqtrk.intel.com.tw  # from Adguard
+elqtrk.intel.de  # from Adguard
+elqtrk.intel.es  # from Adguard
+elqtrk.intel.fr  # from Adguard
+elqtrk.intel.in  # from Adguard
+elqtrk.intel.io  # from Adguard
+elqtrk.intel.it  # from Adguard
+elqtrk.intel.la  # from Adguard
+elqtrk.intel.pl  # from Adguard
+elqtrk.intel.ru  # from Adguard
+elqtrk.intel.sg  # from Adguard
+elqtrk.intelrealsense.com  # from Adguard
+elqtrk.morningstar.com  # from Adguard
+elqtrk.hk.morningstar.com  # from Adguard
+elqtrk.my.morningstar.com  # from Adguard
+elqtrk.sg.morningstar.com  # from Adguard
+elqtrk.tw.morningstar.com  # from Adguard
+elqtrk.morningstar.at  # from Adguard
+elqtrk.morningstar.be  # from Adguard
+elqtrk.morningstar.ca  # from Adguard
+elqtrk.morningstar.ch  # from Adguard
 elqtrk.morningstar.co.uk  # from Adguard
 elqtrk.morningstar.com.mx  # from Adguard
+elqtrk.morningstar.de  # from Adguard
+elqtrk.morningstar.dk  # from Adguard
+elqtrk.morningstar.es  # from Adguard
+elqtrk.morningstar.fi  # from Adguard
+elqtrk.morningstar.fr  # from Adguard
+elqtrk.morningstar.hk  # from Adguard
+elqtrk.morningstar.it  # from Adguard
+elqtrk.morningstar.nl  # from Adguard
+elqtrk.morningstar.no  # from Adguard
+elqtrk.morningstar.pt  # from Adguard
+elqtrk.morningstar.se  # from Adguard
+elqtrk.morningstarbr.com  # from Adguard
+elqtrk.morningstarfunds.ie  # from Adguard
+elqtrk.rsmcanada.com  # from Adguard
+elqtrk.rsmus.com  # from Adguard
 
 ! /email. ?
 email.2gis.ru  # ad redirects
@@ -480,11 +581,19 @@ hawk.techradar.com
 hawk.tomsguide.com  # hawk.tomsguide.com/hl/hawklinks.js
 
 /log.
+log.book.baidu.com  # from GoodbyeAds
+log.music.baidu.com  # from GoodbyeAds
 log.diagrams.net  # ad tracker images
+log.ttbc-hcm.gov.vn  # from Adguard
 log.kmplayer.com  # from GoodbyeAds
 log.krs-ix.ru  # from Ru AdList
+log.ohmynews.com  # from Adguard
+log.reformal.ru  # from Adguard
+log.tbs.qq.com  # from Adguard
+log.zingnews.vn  # from Adguard
 
 /logger.
+logger.tvchosun.com  # from Adguard
 
 /logging.
 
@@ -498,27 +607,118 @@ marketing.trainingdoyens.com
 
 /metric.
 metric.gstatic.com
+metric.nissan.co.uk  # from Adguard
 
 /metrics.
+metrics.adelaidenow.com.au  # from Adguard
+metrics.abbottfamily.co.id  # from Adguard
 metrics.apple.com  # from GoodbyeAds
 metrics.articulate.com
 metrics.aviasales.ru  # from MVPS
+metrics.aviva.co.uk  # from Adguard
+metrics.aviva.com.sg  # from Adguard
+metrics.babycentre.co.uk  # from Adguard
+metrics.bakeryinfo.co.uk  # from Adguard
+metrics.barclays.co.uk  # from Adguard
 metrics.bestbuy.com  # zombie
+metrics.bestrecipes.com.au  # from Adguard
+metrics.bighospitality.co.uk  # from Adguard
+metrics.bingle.com.au  # from Adguard
+metrics.bodyandsoul.com.au  # from Adguard
 metrics.brightcove.com$important
 metrics.brightcove.net
+metrics.businessinteriors.co.nz  # from Adguard
+metrics.businessinteriors.com.au  # from Adguard
+metrics.buysearchsell.com.au  # from Adguard
+metrics.cairnspost.com.au  # from Adguard
+metrics.caracol.com.co  # from Adguard
+metrics.catlife.com.tw  # from Adguard
 metrics.cnn.com  # is in 5 lists
+metrics.codesports.com.au  # from Adguard
+metrics.conveniencestore.co.uk  # from Adguard
+metrics.cosmopolitan.co.uk  # from Adguard
+metrics.couriermail.com.au  # from Adguard
+metrics.currys.co.uk  # from Adguard
+metrics.dailytelegraph.com.au  # from Adguard
+metrics.delicious.com.au  # from Adguard
+metrics.dhc.co.jp  # from Adguard
+metrics.digitaleditions.com.au  # from Adguard
 metrics.domclick.ru  # metrics.domclick.ru/research/api/metrics/v2/event
+metrics.ee.co.uk  # from Adguard
+metrics.egencia.co.in  # from Adguard
+metrics.egencia.co.uk  # from Adguard
+metrics.egencia.co.za  # from Adguard
+metrics.egencia.com.au  # from Adguard
+metrics.egencia.com.hk  # from Adguard
+metrics.egencia.com.sg  # from Adguard
+metrics.egencia.com.tr  # from Adguard
+metrics.elle.co.jp  # from Adguard
+metrics.energyaustralia.com.au  # from Adguard
+metrics.escape.com.au  # from Adguard
+metrics.familiaynutricion.com.co  # from Adguard
+metrics.fancl.co.jp  # from Adguard
+metrics.foodmanufacture.co.uk  # from Adguard
+metrics.forecourttrader.co.uk  # from Adguard
 metrics.foxnews.com
+metrics.foxsports.com.au  # from Adguard
 metrics.gap.co.jp  # from EasyPrivacy
 metrics.gap.co.uk  # from EasyPrivacy
+metrics.geelongadvertiser.com.au  # from Adguard
+metrics.goldcoastbulletin.com.au  # from Adguard
 metrics.govexec.com  # from Peter Lowe's hosts file
+metrics.gq.com.au  # from Adguard
 metrics.heraldsun.com.au  # from EasyPrivacy
+metrics.ionos.co.uk  # from Adguard
+metrics.keno.com.au  # from Adguard
+metrics.kidsnews.com.au  # from Adguard
+metrics.kidspot.com.au  # from Adguard
+metrics.kone.co.il  # from Adguard
+metrics.kone.co.uk  # from Adguard
+metrics.kone.com.tr  # from Adguard
+metrics.lululemon.co.uk  # from Adguard
+metrics.lululemon.com.au  # from Adguard
+metrics.lululemon.com.hk  # from Adguard
 metrics.macys.net  # zombie
+metrics.mitsubishi-motors.co.jp  # from Adguard
+metrics.morningadvertiser.co.uk  # from Adguard
+metrics.mytributes.com.au  # from Adguard
+metrics.nab.com.au  # from Adguard
+metrics.nabbroker.com.au  # from Adguard
+metrics.news.co.uk  # from Adguard
+metrics.news.com.au  # from Adguard
+metrics.newsconcierge.com.au  # from Adguard
+metrics.nrma.com.au  # from Adguard
+metrics.ntnews.com.au  # from Adguard
 metrics.us.playstation.com$important
+metrics.plusrewards.com.au  # from Adguard
+metrics.postoffice.co.uk  # from Adguard
+metrics.ralphlauren.co.uk  # from Adguard
 metrics.sdkbox.com
+metrics.sen.com.au  # from Adguard
+metrics.shopjapan.co.jp  # from Adguard
+metrics.similac.com.tr  # from Adguard
+metrics.skynews.com.au  # from Adguard
+metrics.suncorp.com.au  # from Adguard
+metrics.suncorpbank.com.au  # from Adguard
+metrics.taste.com.au  # from Adguard
 metrics.telegraph.co.uk  # from EasyPrivacy
 metrics.theaustralian.com.au  # from EasyPrivacy
+metrics.thechronicle.com.au  # from Adguard
+metrics.thegrocer.co.uk  # from Adguard
+metrics.themercury.com.au  # from Adguard
+metrics.thinkbaby.co.uk  # from Adguard
+metrics.three.co.uk  # from Adguard
+metrics.tips.com.au  # from Adguard
+metrics.townsvillebulletin.com.au  # from Adguard
+metrics.tsb.co.uk  # from Adguard
+metrics.uktv.co.uk  # from Adguard
+metrics.uol.com.br  # from Adguard
+metrics.vero.co.nz  # from Adguard
+metrics.vodafone.co.uk  # from Adguard
 metrics.vogue.com.au  # from EasyPrivacy
+metrics.weeklytimesnow.com.au  # from Adguard
+metrics.ybs.co.uk  # from Adguard
+metrics.youandyourwedding.co.uk  # from Adguard
 
 /metrika.
 metrika.kontur.ru
@@ -547,6 +747,10 @@ newsletter.bigcommerce.com  # o1.newsletter.bigcommerce.com
 newsletter.cermati.com
 newsletter.damart.be
 newsletter.sk.ru
+
+/nsmetrics.
+nsmetrics.geelongadvertiser.com.au  # from Adguard
+nsmetrics.themercury.com.au  # from Adguard
 
 /partner.
 partner.alfa.kz  # from Ru AdList
@@ -592,8 +796,10 @@ piwik.wildberries.ru
 piwik.wsws.org  #[Piwik.Analytics]  # is in MVPS
 
 /pixel.
+pixel.4players.de  # from Adguard
 pixel.blog.hu  # from Hufilter
 pixel.reddit.com  # from Adguard
+pixel.redditmedia.com  # from Adguard
 pixel.s3xified.com
 pixel.wp.com
 pixel.wp.pl$important  # is in Adguard
@@ -638,6 +844,11 @@ rtb.beeline.ru  # from Ru AdList
 rtb.com.ru  # from Ru AdList
 rtb.mts.ru  # is in Ru AdList
 
+/sanalytics.
+sanalytics.boomerangtv.com.au  # from Adguard
+sanalytics.esporteinterativo.com.br  # from Adguard
+sanalytics.tnt.com.br  # from Adguard
+
 /scrooge.  # from github.com/asterriya/regex-ads/
 
 /sdc.
@@ -664,6 +875,10 @@ securemetrics.gapfactory.com  # from GoodbyeAds
 securemetrics.marthastewart.com  # from GoodbyeAds
 securemetrics.nbnco.com.au  # from GoodbyeAds
 
+/securetags.
+securetags.esri.com.tr  # from Adguard
+securetags.img.com.br  # from Adguard
+
 ! /sentry. crashes avito.ru
 sentry.srv.habr.com
 sentry.innologica.com
@@ -679,15 +894,60 @@ shareit.meta.ua
 
 ||sher.  # from Hufilter: ||sher.*.hu^
 
+/smetric.
+smetric.carview.co.jp  # from Adguard
+smetric.sydneywater.com.au  # from Adguard
+
 /smetrics.
+smetrics.10daily.com.au  # from Adguard
+smetrics.10play.com.au  # from Adguard
+smetrics.28degreescard.com.au  # from Adguard
+smetrics.7eleven.com.au  # from Adguard
+smetrics.aainsurance.co.nz  # from Adguard
+smetrics.aami.com.au  # from Adguard
 smetrics.abbott  # from EasyPrivacy  # yes, it is a real domain  # redirect to smetrics.abbott.ssl.sc.omtrdc.net
+smetrics.abbott.co.in  # from Adguard
 smetrics.abbott.ssl.sc.omtrdc.net
 smetrics.abbottnutrition.com.my  # from EasyPrivacy
+smetrics.aia.co.kr  # from Adguard
+smetrics.ajinomoto.co.jp  # from Adguard
+smetrics.allianz.com.au  # from Adguard
+smetrics.apia.com.au  # from Adguard
+smetrics.argos.co.uk  # from Adguard
+smetrics.asgrow.com.mx  # from Adguard
+smetrics.asx.com.au  # from Adguard
 smetrics.audi.co.uk  # from EasyPrivacy
+smetrics.autodesk.com.cn  # from Adguard
+smetrics.aviva.co.uk  # from Adguard
+smetrics.aviva.com.sg  # from Adguard
+smetrics.axa-direct-life.co.jp  # from Adguard
+smetrics.babycentre.co.uk  # from Adguard
 smetrics.bankofmelbourne.com.au  # from EasyPrivacy
+smetrics.banksa.com.au  # from Adguard
+smetrics.bankwest.com.au  # from Adguard
+smetrics.barandblock.co.uk  # from Adguard
+smetrics.bayer.com.tr  # from Adguard
+smetrics.bbva.com.ar  # from Adguard
+smetrics.bbva.com.co  # from Adguard
+smetrics.bbvanet.com.co  # from Adguard
+smetrics.bbvanet.com.mx  # from Adguard
+smetrics.beatsbydre.com.cn  # from Adguard
 smetrics.beefeater.co.uk  # from EasyPrivacy
+smetrics.binge.com.au  # from Adguard
+smetrics.bingle.com.au  # from Adguard
+smetrics.boehringer-ingelheim.com.br  # from Adguard
+smetrics.brewersfayre.co.uk  # from Adguard
+smetrics.britishgas.co.uk  # from Adguard
+smetrics.bupa.com.au  # from Adguard
+smetrics.buyagift.co.uk  # from Adguard
+smetrics.buyersedge.com.au  # from Adguard
+smetrics.caracol.com.co  # from Adguard
+smetrics.casio.co.jp  # from Adguard
+smetrics.casio.com.tw  # from Adguard
+smetrics.chemistanddruggist.co.uk  # from Adguard
 smetrics.citibank.co.id  # from EasyPrivacy
 smetrics.citibank.co.th  # from EasyPrivacy
+smetrics.citibank.co.uk  # from Adguard
 smetrics.citibank.com.au  # from EasyPrivacy
 smetrics.citibank.com.hk  # from EasyPrivacy
 smetrics.citibank.com.my  # from EasyPrivacy
@@ -696,43 +956,191 @@ smetrics.citibank.com.sg  # from EasyPrivacy
 smetrics.ipb.citibank.com.sg  # from EasyPrivacy
 smetrics.citibank.com.tw  # from EasyPrivacy
 smetrics.citibank.com.vn  # from EasyPrivacy
+smetrics.cnn.com  # from Adguard
+smetrics.cookhouseandpub.co.uk  # from Adguard
+smetrics.cpaaustralia.com.au  # from Adguard
+smetrics.crystalski.co.uk  # from Adguard
+smetrics.cua.com.au  # from Adguard
+smetrics.currys.co.uk  # from Adguard
+smetrics.dhc.co.jp  # from Adguard
+smetrics.diners.co.jp  # from Adguard
+smetrics.directlineforbusiness.co.uk  # from Adguard
+smetrics.e-casio.co.jp  # from Adguard
+smetrics.e-casio.com.tw  # from Adguard
+smetrics.ee.co.uk  # from Adguard
+smetrics.einsure.com.au  # from Adguard
+smetrics.energyaustralia.com.au  # from Adguard
+smetrics.energywatch.com.au  # from Adguard
+smetrics.ernestjones.co.uk  # from Adguard
+smetrics.familiaynutricion.com.co  # from Adguard
+smetrics.fancl.co.jp  # from Adguard
+smetrics.flashnews.com.au  # from Adguard
 smetrics.foxbusiness.com$important
+smetrics.frontline.co.th  # from Adguard
+smetrics.frontlinepetcare.com.au  # from Adguard
+smetrics.gemfinance.co.nz  # from Adguard
+smetrics.gemvisa.co.nz  # from Adguard
+smetrics.gemvisa.com.au  # from Adguard
+smetrics.gio.com.au  # from Adguard
+smetrics.gomastercard.com.au  # from Adguard
+smetrics.greatsouthernbank.com.au  # from Adguard
+smetrics.hagerty.co.uk  # from Adguard
+smetrics.hbf.com.au  # from Adguard
+smetrics.healthengine.com.au  # from Adguard
+smetrics.hoseasons.co.uk  # from Adguard
+smetrics.hsamuel.co.uk  # from Adguard
+smetrics.interbank.com.pe  # from Adguard
+smetrics.iselect.com.au  # from Adguard
+smetrics.jcb.co.jp  # from Adguard
+smetrics.jewson.co.uk  # from Adguard
+smetrics.kanebo-cosmetics.co.jp  # from Adguard
+smetrics.kao.co.jp  # from Adguard
+smetrics.kayosports.com.au  # from Adguard
+smetrics.kioxia-iwate.co.jp  # from Adguard
+smetrics.landrover.com.au  # from Adguard
+smetrics.latitudefinancial.com.au  # from Adguard
+smetrics.latitudefinancial.co.nz  # from Adguard
+smetrics.lina.co.kr  # from Adguard
+smetrics.lululemon.co.jp  # from Adguard
+smetrics.lululemon.co.kr  # from Adguard
+smetrics.lululemon.co.nz  # from Adguard
+smetrics.lululemon.co.uk  # from Adguard
+smetrics.lululemon.com.au  # from Adguard
+smetrics.lululemon.com.hk  # from Adguard
+smetrics.maillife.co.uk  # from Adguard
+smetrics.maxxia.com.au  # from Adguard
+smetrics.minsteronline.co.uk  # from Adguard
+smetrics.mitsubishi-motors.co.jp  # from Adguard
+smetrics.mitsubishi-motors.com.au  # from Adguard
+smetrics.m1.com.sg  # from Adguard
+smetrics.mouse-jp.co.jp  # from Adguard
+smetrics.nab.com.au  # from Adguard
+smetrics.nationaltrust.org.uk  # from Adguard
+smetrics.nationwide.co.uk  # from Adguard
+smetrics.nexgard.com.ar  # from Adguard
+smetrics.nexgard.com.au  # from Adguard
+smetrics.nexgard.com.co  # from Adguard
+smetrics.nexgardbrasil.com.br  # from Adguard
+smetrics.news.co.uk  # from Adguard
+smetrics.nfl.com  # from Adguard
 smetrics.ni.com  # is in Adguard and EasyPrivacy
+smetrics.nisbets.co.nz  # from Adguard  # distributor
+smetrics.nisbets.co.uk  # from Adguard  # distributor
+smetrics.nisbets.com.au  # from Adguard  # distributor
+smetrics.noblehome.co.jp  # from Adguard
+smetrics.npubank.com.au  # from Adguard
+smetrics.officeworks.com.au  # from Adguard
+smetrics.onward.co.jp  # from Adguard
+smetrics.opsm.com.au  # from Adguard
+smetrics.oxfam.org.uk  # from Adguard
+smetrics.petbarn.com.au  # from Adguard
 smetrics.marketing.lighting.philips.co.id  # from Adguard
 smetrics.marketing.lighting.philips.co.in  # from Adguard
 smetrics.marketing.lighting.philips.co.jp  # from Adguard
 smetrics.marketing.lighting.philips.co.kr  # from Adguard
 smetrics.marketing.lighting.philips.co.nz  # from Adguard
+smetrics.marketing.lighting.philips.co.uk  # from Adguard
 smetrics.marketing.lighting.philips.co.za  # from Adguard
 smetrics.marketing.lighting.philips.com.ar  # from Adguard
 smetrics.marketing.lighting.philips.com.au  # from Adguard
 smetrics.marketing.lighting.philips.com.br  # from Adguard
 smetrics.marketing.lighting.philips.com.co  # from Adguard
 smetrics.marketing.lighting.philips.com.hk  # from Adguard
+smetrics.marketing.lighting.philips.com.mx  # from Adguard
+smetrics.marketing.lighting.philips.com.my  # from Adguard
 smetrics.marketing.lighting.philips.com.pe  # from Adguard
+smetrics.marketing.lighting.philips.com.ph  # from Adguard
+smetrics.marketing.lighting.philips.com.sg  # from Adguard
 smetrics.marketing.lighting.philips.com.tr  # from Adguard
+smetrics.marketing.lighting.philips.com.tw  # from Adguard
 smetrics.marketing.lighting.philips.com.vn  # from Adguard
+smetrics.pediasure.com.my  # from Adguard
+smetrics.platformservices.co.uk  # from Adguard
+smetrics.aem.playstation.com  # from Adguard
+smetrics.pruadviser.co.uk  # from Adguard
+smetrics.rac.co.uk  # from Adguard
+smetrics.racq.com.au  # from Adguard
+smetrics.racv.com.au  # from Adguard
+smetrics.ralphlauren.co.uk  # from Adguard
+smetrics.ralphlauren.com.au  # from Adguard
+smetrics.realcommercial.com.au  # from Adguard
+smetrics.realestate.com.au  # from Adguard
+smetrics.redletterdays.co.uk  # from Adguard
+smetrics.remserv.com.au  # from Adguard
+smetrics.remservsalarypackage.com.au  # from Adguard
+smetrics.repco.co.nz  # from Adguard
+smetrics.repco.com.au  # from Adguard
+smetrics.sainsburysbank.co.uk  # from Adguard
+smetrics.samsung.com  # from Adguard
+smetrics.santander.co.uk  # from Adguard
+smetrics.savethechildren.org.uk  # from Adguard
+smetrics.sbisec.co.jp  # from Adguard
+smetrics.sbs.com.au  # from Adguard
+smetrics.seat.co.uk  # from Adguard
+smetrics.securemaxxia.com.au  # from Adguard
+smetrics.secureremserv.com.au  # from Adguard
+smetrics.sen.com.au  # from Adguard
+smetrics.shannons.com.au  # from Adguard
+smetrics.shell.co.uk  # from Adguard
+smetrics.shellenergy.co.uk  # from Adguard
+smetrics.shopjapan.co.jp  # from Adguard
+smetrics.skipton.co.uk  # from Adguard
+smetrics.smbcnikko.co.jp  # from Adguard
+smetrics.sofina.co.jp  # from Adguard
+smetrics.stgeorge.com.au  # from Adguard
+smetrics.stwater.co.uk  # from Adguard
+smetrics.suncorp.com.au  # from Adguard
+smetrics.tab.com.au  # from Adguard
+smetrics.tabletable.co.uk  # from Adguard
+smetrics.telegraph.co.uk  # from Adguard
+smetrics.theathletesfoot.com.au  # from Adguard
+smetrics.three.co.uk  # from Adguard
+smetrics.tiffany.com.br  # from Adguard
+smetrics.tiffany.com.mx  # from Adguard
+smetrics.travelmoneyonline.co.uk  # from Adguard
+smetrics.trendmicro.co.jp  # from Adguard
+smetrics.truenergy.com.au  # from Adguard
+smetrics.u-can.co.jp  # from Adguard
+smetrics.vwfs.co.uk  # from Adguard
+smetrics.virginmediabusiness.co.uk  # from Adguard
+smetrics.virginmoney.com.au  # from Adguard
+smetrics.buytickets.virgintrains.co.uk  # from Adguard
 smetrics.vodafone.co.uk  # from EasyPrivacy
 smetrics.vodafone.com.gh  # from EasyPrivacy
 smetrics.vodafone.com.tr  # from EasyPrivacy
+smetrics.vwfs.com.br  # from Adguard
+smetrics.waseda-ac.co.jp  # from Adguard
+smetrics.comms.westpac.co.nz  # from Adguard
+smetrics.westpac.com.au  # from Adguard
+smetrics.westpacgroup.com.au  # from Adguard
+smetrics.winc.com.au  # from Adguard
+smetrics.wradio.com.co  # from Adguard
+smetrics.ybs.co.uk  # from Adguard
+smetrics.yellowpages.com.au  # from Adguard
+smetrics.zurichlife.co.jp  # from Adguard
 
 ! do not block all "stat." subdomains, there may be statics
+stat.5-tv.ru  # from Adguard
 stat.delo.ua  # from MVPS
 stat.icestonesoft.com
 stat.megapesni.com
+stat.nate.com  # from Adguard
 stat.ntv.ru
+stat.onemob.mobi  # from Adguard  # Chinese phones
 stat.pravmir.ru  # from GoodbyeAds
 stat.stars.ru  #[WebBug]  # from MVPS
 stat.tildacdn.com$important  # is in EasyPrivacy
+stat.tvigle.ru  # from Adguard
 stat.tvrain.ru
 stat.xiaomi.com  # from GoodbyeAds
 
-! do not block all "stats." subdomains, there maybe statics
+! do not block all "stats." subdomains, there may be statics
 stats.consultnn.ru
 stats.datawrapper.de  # tracking images  # is in Adguard  # do not block datawrapper.de entirely
 stats.kod.ru  # ad scripts  # is in Adguard and EasyPrivacy
 stats.newsweek.com  # from GoodbyeAds
 stats.nextcloud.com  # from GoodbyeAds
+stats.media.onet.pl  # from Adguard
 stats.pandora.com
 stats.travelask.ru
 stats.virtuemart.net  #[Piwik.Analytics]  # from MVPS
@@ -751,6 +1159,7 @@ telemetry.battle.net
 telemetry.malwarebytes.com
 telemetry.mozilla.org  # from Peter Lowe's hosts file
 telemetry.nvidia.com
+telemetry.api.playstation.com  # from Adguard
 telemetry.reembed.com
 telemetry.swe.quicinc.com  # Blocked by some adlist in Blokada  # quicinc.com redirects to qualcomm.com
 telemetry.soundcloud.com
@@ -960,6 +1369,11 @@ tracking.veoxa.com
 tracking.viewster.com  # zombie
 tracking.ws.eurosport.com
 
+/trk.
+trk.fensi.plus  # from Adguard
+trk.freepik.com
+trk.pinterest.com  # from Adguard
+
 /webpush.
 
 /widget.$domain=~hotbot.ai|~mts.ru|~scribblemaps.com
@@ -1040,6 +1454,8 @@ engage.3mphilippines.com.ph  # from EasyPrivacy
 revive.3wayint.com  # from uBlock filters
 
 wzpwxe.4lapy.ru  # from GoodbyeAds
+
+subpixel.4players.de  # from Adguard
 
 js.users.51.la$important  # is in 3 lists
 
@@ -1355,8 +1771,6 @@ idm-su.baidu.com  # from GoodbyeAds
 hm.baidu.com$important  # ad scripts  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
 imgstat.baidu.com  # from GoodbyeAds
 iwanad.baidu.com  # from GoodbyeAds
-log.book.baidu.com  # from GoodbyeAds
-log.music.baidu.com  # from GoodbyeAds
 kstj.baidu.com  # from GoodbyeAds
 miao.baidu.com  # from GoodbyeAds
 mipengine.baidu.com  # from GoodbyeAds
@@ -1468,7 +1882,6 @@ i.bigmir.net  # from Energized Blu  # is in MVPS
 
 zoomumba.bigpoint.com  # from Adguard
 
-clicks.biletix.ru
 hello.biletix.ru
 
 analytics-ingress-global.bitmovin.com  # root seems legit  # from Dan Pollock's hosts file
@@ -1800,11 +2213,11 @@ start.fotostrana.ru  # from Adguard
 
 sg.freeimg.ru  # from Adguard
 
-trk.freepik.com
-
 c0.froala.com
 
 bannet.fryazino.net  # from Adguard
+
+elq-trk.fullsail.edu  # from Adguard
 
 adst.fwdcdn.com
 sinst.fwdcdn.com$important  # ad scripts
@@ -1812,6 +2225,8 @@ sinst.fwdcdn.com$important  # ad scripts
 r6.galya.ru  # from Adguard
 
 trader.garant.ru  # ad scripts from trader.garant.ru/www/delivery/ - see rule on /www/delivery/
+
+elq-lantern.ruggedsolution.getac.com  # from Adguard
 
 sitetracker.getfeedback.com
 tipico.getfeedback.com
@@ -1884,6 +2299,8 @@ js.hdzog.com$important  # is in EasyList
 
 websocket.hh.ru
 
+adbsmetrics.ep.hmc.co.kr  # from Adguard
+
 p.hoff.ru  # many sub-subdomains - see marketing_all
 push.hoff.ru
 r.hoff.ru
@@ -1947,6 +2364,7 @@ mo7her.incest.click  # from GoodbyeAds
 tothemoon.incest-porno.pro  # from Adguard
 sidebar.incest-porno.tv  # from Adguard
 
+education.seek.intel.com  # from Adguard
 www91.intel.co.jp  # from GoodbyeAds
 www91.intel.co.kr  # from GoodbyeAds
 www91.intel.co.uk  # from GoodbyeAds
@@ -1962,6 +2380,7 @@ www91.intel.it  # from GoodbyeAds
 www91.intel.la  # from GoodbyeAds
 www91.intel.pl  # from GoodbyeAds
 www91.intel.ru  # from GoodbyeAds
+elqtrkstg.intel.com  # from Adguard
 
 push-parking.inzhener-info.ru  # from Adguard
 
@@ -1998,6 +2417,7 @@ tr1.kaspersky.co.uk  # from GoodbyeAds
 tr1.kaspersky.com  # from GoodbyeAds
 tr2.kaspersky.co.uk  # from GoodbyeAds
 tr2.kaspersky.com  # from GoodbyeAds
+tr2.kaspersky.ru  # from Adguard
 
 info.kinoclub77.ru  # ad scripts  # is in AdGuard
 
@@ -2038,6 +2458,7 @@ gdpr.laxd.com  # from Adguard
 crm.lenta.com
 
 id.lenta.ru  # ad xhrs  # id.lenta.ru/jsonrpc
+montblanc.lenta.ru  # from Adguard
 
 a.letsjerk.to  # from Adguard
 
@@ -2081,7 +2502,11 @@ events.mapbox.com$important  # ad xhrs  # is in Adguard
 
 adbn.masterinvest.info  # from Adguard
 
+eloquamarketing.masterlock.com  # from Adguard
+
 casino-ad-mediation.me2zengame.com  # from Adguard
+
+zlolhl.mediametrics.ru  # from Adguard: zlolhl.mediametrics.ru
 
 ogepodownload.mediatek.com  # from GoodbyeAds
 
@@ -2120,6 +2545,8 @@ uptime.monitorus.ru  # from Adguard
 
 stats.mos.ru  # from EasyPrivacy
 
+eloqua-uat.motorolasolutions.com  # from Adguard
+
 snippets.mozilla.com  # from Ru AdList
 
 geo.mozilla.org  # from Ru AdList
@@ -2145,6 +2572,8 @@ tc.mybb.ru  # from Ru AdList
 tg.mybb.ru  # from Ru AdList
 
 familygiftlove.myshopify.com  # from Energized Blu
+
+sit-metrics.nab.com.au  # from Adguard
 
 banstat.nadavi.net  # is in 2 lists
 
@@ -2198,6 +2627,9 @@ slots.baxter.olx.org  # ad scripts
 
 capi.onelya.ru  # capi.onelya.ru/ads
 
+csr.onet.pl  # from Adguard
+kropka.onet.pl  # from Adguard
+
 notifications.onliner.by
 
 potd.onlytease.com  # from EasyList
@@ -2225,6 +2657,12 @@ creatives.pichunter.com  # from EasyList
 
 d.pikabu.ru  # d.pikabu.ru/stat/
 tf.pikabu.ru  # ad(?) xhrs
+
+ct.pinterest.com  # from Adguard
+trk2.pinterest.com  # from Adguard
+
+applogs.pixelfederation.com  # from Adguard
+applogs-v2.pixelfederation.com  # from Adguard
 
 bobik.playflock.com  # from Ru AdList
 balance.playflock.com  # alias to bobik.playflock.com
@@ -2259,6 +2697,9 @@ news.pustgovorjat.ru  # from Adguard
 
 trace2.pv.com.cn  # ad scripts
 
+lps.qantas.com  # from Adguard
+lpx.qantas.com  # from Adguard
+
 !# qq.com
 ad.qq.com  # from Dan Pollock's hosts file
 analy.qq.com  # telemetry
@@ -2268,7 +2709,6 @@ e.qq.com  # from Adguard
 monitor.uu.qq.com
 pingma.qq.com
 cfg.imtt.qq.com  # from Adguard
-log.tbs.qq.com  # from Adguard
 mqqad.html5.qq.com  # from Adguard
 ott.video.qq.com  # from Energized Blu
 livep.l.qq.com  # from Energized Blu
@@ -2333,13 +2773,16 @@ tcadserver.rain-digital.ca  # from EasyList
 
 c.rambler.ru
 developers.rambler.ru  # ad scripts
+err.rambler.ru  # from Adguard
 horoscopes.rambler.ru
 id.rambler.ru  # ad scripts
 loyalty.rambler-co.ru  # ad scripts
+montblanc.rambler.ru  # from Adguard
 peroxide.rambler.ru  # ad xhrs
 prime.rambler.ru
 rcm.rambler.ru  # ad xhrs
 rcmjs.rambler.ru  # ad scripts  # "{"name":"recommender_api","version""
+rcounter.rambler.ru  # from Adguard
 ssp.rambler.ru$important  # from EasyPrivacy
 sync.rambler.ru$important  # from EasyPrivacy
 um.rambler.ru
@@ -2423,6 +2866,8 @@ boo.samara24.ru  # from GoodbyeAds
 
 tr.samoresim.ru  # from Adguard
 
+target-us.samsung.com  # from Adguard
+
 e.sapinsideronline.com  # ad redirects. Root redirects to sapinsider.wispubs.com - news about SAP
 
 pfm-stat.online.sberbank.ru
@@ -2457,6 +2902,8 @@ t.simply-hentai.com  # from uBlock filters
 info.skipta.com  # ad redirects
 
 a.slashdotmedia.com  # from uBlock filters
+
+zlolhl.smart-lab.ru  # from Adguard
 
 mobile-stats.socialquantum.com  # from GoodbyeAds
 
@@ -2517,6 +2964,8 @@ nsg.symantec.com  # from Fanboy's
 p.tanx.com  # from Adguard
 
 stat-counter.tass-online.ru  # from Dan Pollock's hosts file  # zombie
+
+elqtracking1.tetrapak.com  # from Adguard
 
 seal.thawte.com  # is in Fanboy's
 
@@ -2582,6 +3031,9 @@ reklama-cluster.g2.tutby.com  # tut.by
 
 fronterr.tutu.ru
 
+elqview.uclahealth.org  # from Adguard
+elqview2.uclahealth.org  # from Adguard
+
 s4.ucoz.net$important
 s9.ucoz.net$important
 s15.ucoz.net$important
@@ -2610,7 +3062,7 @@ daserver.ultraweb.hu  # from Hufilter
 
 outs.unicom.co.uk  #outs.unicom.co.uk/link.php?
 
-unityads.unity3d.com
+! see unity3d.com in _telemetry
 
 views.unsplash.com
 
@@ -2705,6 +3157,7 @@ ding.wix.com  # ad tracker of wix
 frog.wix.com$important  # from EasyPrivacy and hpHosts’ Ad and tracking servers
 vod.wix.com  # ad xhrs
 shoutout.wix.com$important  # ad redirects  # shoutout.wix.com/so/dfMmFmX...
+stores-counters.wix.com  # from Adguard
 adsense.codev.wixapps.net
 
 vybbem.womanhit.ru  # from GoodbyeAds
