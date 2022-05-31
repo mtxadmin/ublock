@@ -341,22 +341,24 @@ yandex.*##.desk-notif-card_plus-wallet_yes
 zen.yandex.*##.zen-ui-header-container__wrapper:style(position:absolute !important)
 zen.yandex.*##.article-right-block__stick-wrapper:has-text(Понравилось?)
 zen.yandex.*##.article-render__block_quote:has-text(/подписаться на канал|палец вверх/)
-! logo
+    ! logo
 zen.yandex.*##.ui-lib-header2__logo
 zen.yandex.*##.ui-lib-logo
-! top
+    ! top
 zen.yandex.*##.ui-lib-header2:style(position:static !important)
 zen.yandex.*##.ui-lib-header-container2:style(position:static !important)
 zen.yandex.*##.ui-lib-header-container2__wrapper:style(position:static !important)
 zen.yandex.*##.zen-header:style(position:static !important)
-! right
+    ! right
 zen.yandex.*##.sticky-container:style(position:static !important)
 zen.yandex.*##.article-right-suggested-publications-wrapper__sticky:style(top:0px !important)
 zen.yandex.*##.article-right-suggested-publications-wrapper:style(padding-top:0px !important)
-! popups
+    ! popups
 zen.yandex.*##.article-feedback-observer
 ||avatars.mds.yandex.net/get-zen-logos/
-! smiles
+zen.yandex.*##[src^="https://yastatic.net/naydex/zen-yandex-ru/"]
+zen.yandex.*##div:has-text(В приложении удобнее):has-text("Яндекс.Дзен на главном экране")
+    ! smiles
 zen.yandex.*##.zen-ui-emoji-bar__icon
 zen.yandex.*##.comment-editor-emojis
 ! removing some begging for subs
@@ -364,10 +366,10 @@ zen.yandex.*##.article-render__block_quote:has-text(Подпишитесь)
 zen.yandex.*##b:has-text(Подпишитесь)
 zen.yandex.*##.ui-lib-likes-count
 zen.yandex.*##.article-render__block:has-text(/(С|с)тавьте лайк/)
-! banners
+    ! banners
 zen.yandex.*##.article__bottom-embed
 zen.yandex.*##[class$=__ad-content]
-! other
+    ! other
 zen.yandex.*##.article-stats-view-redesign__info-container
 zen.yandex.*##.article-stat__info
 zen.yandex.*##.article-stats-view__info-inner
