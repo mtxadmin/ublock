@@ -538,8 +538,10 @@ yandex.*##.i-zalogin-cookie
 yandex.*##.zalogin-head
 yandex.*##.zalogin-smart
 
+    ! рекламки дзена
 ! from RU AdList
 ##a[href*="zen.yandex."] > img:not([src*="gstatic.com"]):not([onload*="google"]):not([jsaction])
+yandex.*##.zen-app
 
 ##.ya-widget-preloader
 
@@ -568,12 +570,13 @@ yandex.*##+js(abort-on-property-read, yaads.renderWidget)
 yandex.*##+js(abort-on-property-read, Ya.loaderVer)
 yandex.*##+js(abort-on-property-read, ya.mediaAd)
 
+    ! рекламки яндекс-браузера (их тут больше, лезут из всех щелей)
 ! is in AdGuard and Ru AdList
 yandex.*###yabro-strip-element
-
 yandex.*##.yabrowser-promo
 ! from Adguard
 yandex.*##.DistrSmartbanner
+yandex.*##.services-new__promo
 
 ! from Adguard
 yandex.*##.promo-popup
