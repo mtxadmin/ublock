@@ -372,11 +372,13 @@ zen.yandex.*##.article-render__block_quote:has-text(Подпишитесь)
 zen.yandex.*##b:has-text(Подпишитесь)
 zen.yandex.*##.ui-lib-likes-count
 zen.yandex.*##.article-render__block:has-text(/(С|с)тавьте лайк/)
-    ! banners
+    ! banners and promos
 zen.yandex.*##.article__bottom-embed
 zen.yandex.*##[class$=__ad-content]
 zen.yandex.*##.browser-article
 zen.yandex.*##.article__s2s
+zen.yandex.*##.feed__item-wrap:has(.zen-ui-channel-info__subtitle-text:has-text(promo))
+zen.yandex.*##.feed__item-wrap:has(div[data-name=zen2-article-header-ad-text])
     ! other
 zen.yandex.*##.article-stats-view-redesign__info-container
 zen.yandex.*##.article-stat__info
@@ -550,6 +552,9 @@ yandex.*##.zalogin-smart
 ! from RU AdList
 ##a[href*="zen.yandex."] > img:not([src*="gstatic.com"]):not([onload*="google"]):not([jsaction])
 yandex.*##.zen-app
+yandex.*##.zen-page__wrapper
+
+zen.yandex.*##.hint-eula
 
 ##.ya-widget-preloader
 
