@@ -2954,6 +2954,8 @@ _site/gotop.  # from Ru AdList
 /cookiebar.  # from AdGuard
 /cookie_consent.js$important
 /cookie-consent?  # from Adguard
+-cookie-consent.js  # from EasyList
+_CookieConsent.js  # from EasyList
 /cookieconsent.$important  # from AdGuard
 /cookieconsent2/*$important
     ||cloudflare.com/ajax/libs/cookieconsent2/  # from EasyList
@@ -2961,11 +2963,12 @@ _site/gotop.  # from Ru AdList
 /cookieconsentpub/*$important  # from Fanboy's, modified
 -cookie-consent/$stylesheet  # from Fanboy's
 .cookiecuttr. # is in Fanboy's and EasyList
-.cookiesdirective.  # from AdGuard
-    !/jquery.cookiesdirective.js
+-cookie-form.lib.  # from EasyList
 /cookieinfo.  # is in EasyList, AdGuard and Fanboy's
 -cookie-law.js  # from Adguard
+_cookie_law.js  # from EasyList
 .cookielaw.js  # from Adguard
+.cookielaw.min.  # from EasyList
 /cookie-law-info-public.js  # from Adguard
 -cookie-message.js  # from Adguard
 /cookie-notice/*$script,important  # from AdGuard and Fanboy's
@@ -2973,6 +2976,10 @@ _site/gotop.  # from Ru AdList
 /cookie_notification.js
 /cookie.policy.  # from SecurityEntire CookieFilter
 _cookie_policy_  # from Fanboy's and AdGuard
+.cookie.policy.  # from EasyList
+.cookiesdirective.  # from AdGuard
+    !/jquery.cookiesdirective.js
+    !.cookiesdirective.js  # from EasyList
 /cookies-enabler.  # is in EasyList, Fanboy's, AdGuard
     ! /wp-content/plugins/ginger/front/js/cookies-enabler.min.js
     ! also see /plugins/ginger/*
@@ -2989,6 +2996,10 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /evercookie.  # from EasyPrivacy
 /evercookie_$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
 /gdpr.js  # from Fanboy's and Adguard
+.gdpr.$script
+    ! .gdpr.js  # from EasyList
+    ! .gdpr.min  # from EasyList
+    ! .javascript.gdpr.  # from EasyList
 /jquery-eu-cookie-law-popup.js$important
 /privacy-consent/*
 /referrer-cookie.js
