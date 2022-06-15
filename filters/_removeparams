@@ -331,6 +331,8 @@ $removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex
 $removeparam=partnerId
     ! ||lotto.gmx.*^$removeparam=partnerId  # from Adguard
     ! lotto.web.de$removeparam=partnerId  # from Adguard
+$removeparam=partner_id
+    ! ticketscloud.org$removeparam=partner_id
 
 $removeparam=pbsubid  # tracking on parked domains
 
