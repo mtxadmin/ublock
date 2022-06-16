@@ -196,6 +196,7 @@ $removeparam=fb_action_types  # Facebook general parameter  # from NeatURL and A
 $removeparam=fb_comment_id  # from Adguard
 $removeparam=fb_ref  # Facebook general parameter  # from NeatURL and Adguard
 $removeparam=fb_source  # Facebook general parameter  # from NeatURL and Adguard
+$removeparam=fbclid  # from Adguard
 
 $removeparam=fref  # from Ru AdList
 
@@ -246,7 +247,11 @@ $removeparam=gs_l  # Google general parameter  # from NeatURL
 $removeparam=gtm  # from Ru AdList
 
 $removeparam=guccounter  # from Adguard
+    ! $removeparam=guccounter  # from Adguard
     ! yahoo.com$removeparam=guccounter  # from NeatURL
+
+$removeparam=guce_referrer  # from Adguard
+$removeparam=guce_referrer_sig  # from Adguard
 
 $removeparam=hmb_campaign  # Campaign tracking (Humble Bundle)  # from NeatURL
 $removeparam=hmb_medium  # Campaign tracking (Humble Bundle)  # from NeatURL
@@ -586,6 +591,10 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! @@||t.send.vt.edu/r/?id=$removeparam=utm_medium  # from Adguard
     ! @@||t.send.vt.edu/r/?id=$removeparam=utm_campaign  # from Adguard
     ! @@||t.send.vt.edu/r/?id=$removeparam=utm_source  # from Adguard
+
+$removeparam=utparam
+    ! ||aliexpress.$removeparam=utparam  # from Adguard
+    ! taobao.com$removeparam=utparam  # from Adguard
 
 $removeparam=vc_lpp  # from Adguard
     ! Valuecommerce ( https://help.valuecommerce.ne.jp/mer/dl/ITP2.0_for_iTAG.pdf )
