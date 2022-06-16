@@ -510,6 +510,9 @@ $removeparam=source,domain=~youtube.com  # Exclusion: youtube
     ! ?source=ukrnet$document,removeparam=|  # from Ru AdList
     ! ||banki.ru/*?source=*menu_$removeparam=|,domain=banki.ru  # from Ru AdList
 
+$removeparam=sourceid
+    ! ||google.*/search$removeparam=sourceid  # from Adguard
+
 $removeparam=sPartner
     ! caseking.de$removeparam=sPartner  # from NeatURL
     ! cosse.de$removeparam=sPartner  # from Adguard
