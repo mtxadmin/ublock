@@ -7548,6 +7548,8 @@ habr.com##.tm-features
 habr.com##.tm-page-article__counters-panel
 habr.com###effect
 habr.com##.promo-block
+! from Adguard
+habr.com##.promo-block_freelansim-tasks
 habr.com##.tm-header__become-author-btn
 habr.com##.limited-access-card
 habr.com##.tm-most-reading-block__label
@@ -7615,14 +7617,25 @@ habr.com##.tm-article__icons-wrapper_sticky
 special.habrahabr.ru##.on-top
 habr.com##.tm-page-article__counters-panel_sticky:style(position:static !important)
 habr.com,~qna.habr.com##.layout__navbar:style(position:static !important)
-! is in Ru AdList
-habr.com##.tm-project-block
-! is in Adguard
-habr.com##.tm-project-block_variant-tasks
+habr.com##[class^=tm-project-block]
+    ! is in Ru AdList
+    ! habr.com##.tm-project-block
+    ! from Adguard
+    ! habr.com##.tm-project-block_variant-courses
+    ! from Adguard
+    ! habr.com##.tm-project-block_variant-salary
+    ! is in Adguard
+    ! habr.com##.tm-project-block_variant-tasks
+    ! from Adguard
+    ! habr.com##.tm-project-block_variant-vacancies
 ! is in Adguard
 habr.com##.tm-editoral-subscription
 ! is in Adguard
 habr.com##.tm-sharing
+! from Adguard
+habr.com#?#section.tm-block_spacing-bottom:has(> div.tm-block__body > div.tm-vacancies-block__item)
+! from Adguard
+habr.com#?#section.tm-block_spacing-around:has(> div.tm-block__body > div.tm-promo-block__content-wrapper)
 # ||habr.com/kek/ - don't, it is json comments
 ||hsto.org/getpro/neuro-habr/
 ||hsto.org/getpro/effect/  # also effect.habr.com
@@ -21735,6 +21748,8 @@ xakep.ru##.bdaia-alert-new-posts-content
 xakep.ru###current_issue_box
 xakep.ru###headerwrap:style(position:static !important)
 xakep.ru##.comment-button-wrapper > a:style(background-color:white !important; color:black !important)
+! from Adguard
+xakep.ru##.bdaia-block-wrap.bd-course
 
 xakinfo.ru###wpd-bubble-wrapper
 xakinfo.ru##.preloader
