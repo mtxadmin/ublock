@@ -300,6 +300,7 @@ analytics.dpd.com  # from Adguard
 analytics.edgekey.net$important # +
 analytics.edgesuite.net$important # +
 analytics.feedly.com  # from EasyPrivacy
+analytics.gokwik.co  # from Adguard
 analytics.grupogodo.com-v1.edgekey.net
 analytics.faw-sky.com.akadns.net
 analytics.finam.ru
@@ -333,6 +334,7 @@ analytics.move.ru
 analytics.nexonm.com  # +  # from GoodbyeAds
 analytics.ngs24.ru  # ad scripts
 analytics.plex.tv  # from Adguard
+analytics.regex101.com  # from Adguard
 analytics.runsignup.com
 analytics.sarbc.ru
 analytics.shopify.com$important  # from EnergizedProtection
@@ -435,10 +437,17 @@ cmp.tori.fi  # from EasyList
 cmp.tvspielfilm.de  # from EasyList
 
 /cnt.
+!||cnt.hd21.  # from Adguard
+!||cnt.proporn.  # from Adguard
+!||cnt.tubeon.  # from Adguard
+!||cnt.winporn.  # from Adguard
+!||cnt.yeptube.  # from Adguard
+!||cnt.vivatube.  # from Adguard
 cnt.hd21.com  # from uBlock filters
 cnt.krasland.ru
 cnt.nov.ru  # from GoodbyeAds
 cnt.promodj.com
+cnt.rambler.ru  # from Adguard
 cntcerber.rambler.ru  # from Adguard
 cnt.cerber.rambler.ru  # from Adguard
 cnt.ramlife.ru  # from Adguard
@@ -1187,6 +1196,7 @@ smetrics.vodafone.com.gh  # from EasyPrivacy
 smetrics.vodafone.com.tr  # from EasyPrivacy
 smetrics.vwfs.com.br  # from Adguard
 smetrics.waseda-ac.co.jp  # from Adguard
+smetrics.washingtonpost.com  # from Adguard
 smetrics.comms.westpac.co.nz  # from Adguard
 smetrics.westpac.com.au  # from Adguard
 smetrics.westpacgroup.com.au  # from Adguard
@@ -1206,6 +1216,7 @@ stat.nate.com  # from Adguard
 stat.ntv.ru
 stat.onemob.mobi  # from Adguard  # Chinese phones
 stat.pravmir.ru  # from GoodbyeAds
+stat.sputnik.ru  # see _fakenews
 stat.stars.ru  #[WebBug]  # from MVPS
 stat.tildacdn.com$important  # is in EasyPrivacy
 stat.tvigle.ru  # from Adguard
@@ -1259,6 +1270,7 @@ top.hunter.com.ua  # tracking images
 top100.mafia.ru  # from Peter Lowe's hosts file
 top100.rambler.ru
 top100-images.rambler.ru$important
+top100.vkirove.ru  # from Adguard
 
 /track.$domain=~4px.com
 track.adrianalynnrush.net  # from GoodbyeAds
@@ -1601,6 +1613,8 @@ webcollector-1abr-cn.agora.io
 webcollector-2.agora.io
 webcollector-rtm.agora.io
 
+cool.ah-me.com  # from Adguard
+
 # "ГАУ МО "АИС "Подмосковье""
 banner.aismo.ru
 !static.banner.aismo.ru
@@ -1677,6 +1691,7 @@ tce.alicdn.com  # in-app Aliexpress marketing from Energized Blu
 unidesk.alicdn.com  # in-app Aliexpress marketing from Energized Blu
     ! alibaba.com
 cmap.alibaba.com
+dmtracking2.alibaba.com  # from Adguard
 offer.alibaba.com  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
 tracelog.www.alibaba.com  # from Adguard
     ! alipcsec.com
@@ -1684,6 +1699,7 @@ local.alipcsec.com
     ! aliyuncs.com
 aliyuncs.com  # ad scripts and tracker imgs and empty root
     !||aliyuncs.com/r.png
+    !||log*.aliyuncs.com^  # from Adguard
     !retcode-us-west-1.arms.aliyuncs.com/r.png
     ! taobao
 err.taobao.com
@@ -1702,6 +1718,7 @@ adashx.ut.taobao.com
 agoodm.m.taobao.com
 ai.m.taobao.com
 ai.taobao.com
+amdc.m.taobao.com  # from Adguard
 amdcopen.m.taobao.com
 apoll.m.taobao.com
 audid-api.taobao.com
@@ -1779,6 +1796,7 @@ adr.alltorrents.net  # from Ru AdList
 
 aso.altapress.ru  # from GoodbyeAds
 
+annuncivicini.altervista.org  # from Adguard
 fcstats.altervista.org  # from Adguard
 
 dc.altmob.com  # from Adguard
@@ -1932,6 +1950,7 @@ a1.api.bbc.co.uk  # from Ru AdList
 
 ! BBC
 ssc.api.bbc.com  # is in EasyPrivacy
+sa.bbc.com  # from Adguard
 mybbc-analytics.files.bbci.co.uk
 
 froling.bee.pl  # from Dan Pollock's hosts file
@@ -1941,6 +1960,10 @@ mmi.bemobile.ua  # from GoodbyeAds
 bulk.berryprofessionals.com  # gmass.co
 
 test.besstidniki.ru  # from Adguard
+
+ban.bhol.co.il  # from Adguard
+ext.bhol.co.il  # from Adguard
+st1.bhol.co.il  # from Adguard
 
 #bigcommerce.com  # don't block all  # "Create differentiated commerce experiences"
 mail.bigcommerce.com
@@ -2903,6 +2926,7 @@ um.rambler.ru
     !rcmjs.um.rambler.ru
 vp.rambler.ru  # app (3p) requests and no root (only /admin/ with error)
     !api.vp.rambler.ru  # ad xhrs  # api.vp.rambler.ru/events/...
+zerg.rambler.ru  # from Adguard: sentry01.zerg.rambler.ru
 zoomdecorate.rambler.ru  # ad xhrs and tracking imgs
 
 tools.ranker.com  # from MVPS
@@ -2920,6 +2944,7 @@ cache.realitykings.com  # from MVPS
 hostedads.realitykings.com  # from Peter Lowe's hosts file
 track.realitykings.com  # from MVPS
 
+e.reddit.com  # from Adguard
 events.reddit.com  # from Adguard
 
 oops.redditmedia.com$important  # is in EasyPrivacy
@@ -3010,6 +3035,8 @@ delivery.sexyxxx.biz  # from uBlock filters
 s.shopify.com$important  # from MVPS HOSTS file  # in AdGuard: ||s.shopify.com/visit/record.gif?
 stats.shopify.com$important  # is in AdGuard and EasyPricacy
 v.shopify.com$important  # is in AdGuard and EasyPricacy  #v.shopify.com/internal_errors/track
+
+vote.sibnet.ru  # from Adguard
 
 te.signonsandiego.com  # from Dan Pollock's hosts file
 
