@@ -2888,23 +2888,27 @@ blogss.ru###header
 blogss.ru###footer
 blogss.ru##.pings
 
-location.bloomberg.com  # is in EasyPrivacy
 ||bloomberg.com/8fcgygk4/  # is in EasyPrivacy
+    ! top
 bloomberg.com##.navi-breaking-news
 bloomberg.com##.navi-bar__logo
 bloomberg.com##.navi-data-strip
 bloomberg.com###navi:style(position:static !important)
 bloomberg.com##.navi-quick-links
+bloomberg.com##.unsupported-browser-notification-container
+    ! sticky
+! before: bloomberg.com##.sticky-container:style(position:static !important)
+bloomberg.com##[class^=sticky-container]:style(position:static !important)
+    ! terminal promos
+! before: bloomberg.com##.terminal-tout-v2
+bloomberg.com##[class^=terminal-tout]
+    ! other
 bloomberg.com##.bb-that
-bbthat.com$important
-gotraffic.net$important
-bloomberg.com##.sticky-container:style(position:static !important)
 ! from uBlock filters
 bloomberg.com##+js(raf-if, !paywall-inline-tout)
 ! from AdGuard
 bloomberg.com##+js(nofab)
 bloomberg.com##.postr-recirc__index-title
-bloomberg.com##.terminal-tout-v2
 bloomberg.com##.bb-global-footer__ad-choices
 ! is in AdGuard
 ||bloomberg.com/*/init.js
