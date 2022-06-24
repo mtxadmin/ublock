@@ -561,12 +561,14 @@ adblockdetector/$important
 /ads_$important,domain=~vk.com
 /ads-  # from EasyList: .com/ads-
 /ads.$important
+    ! /ads.css$important
+    ! /ads.gif$important
+    ! /ads.html$important
+    ! /ads.js$important
+    ! /ads.min.js$important
 /ads?
-/ads.css$important
 -ads.generated.  # from EasyList
 -ads.gif  # from EasyList
-/ads.gif$important
-/ads.js$important
 -ads1.htm  # from EasyList
 -ads2.htm  # from EasyList
 -ads3.htm  # from EasyList
@@ -685,6 +687,7 @@ _advert/  # from EasyList
 /advertise.js$important
 /advertisement.js$xmlhttprequest,important
 /advertisement.js$important
+/advertisement.min.js$important
 /advertising/$important,domain=~aliexpress.com|~aliexpress.ru|~duckduckgo.com
 /advertising.banner/*$important
 _adverts.js  # from EasyList
