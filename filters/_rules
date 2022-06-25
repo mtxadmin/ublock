@@ -563,8 +563,8 @@ adblockdetector/$important
 /ads/*$important,domain=~cnn.com  # exclusion - cnn loads page through json: https://cdn.cnn.com/ads/cnni/cnni_homepage.json
 /ads_$important,domain=~vk.com
 /ads-  # from EasyList: .com/ads-
-/ads.$important
-    ! /ads.css$important
+/ads.$important,~stylesheet
+    ! /ads.css$important - hmm, uBlock filters recommends remove it. Ok.
     ! /ads.gif$important
     ! /ads.html$important
     ! /ads.js$important
@@ -593,7 +593,7 @@ _ads.station.  # from EasyList
 /adsblocker.  # from EasyList
 /adseller/*  # from EasyList
 /adsen/*  # from EasyList
-/adsense
+/adsense$important
     ! /adsense/*
     ! /adsence.  # from EasyList
     ! /adsense-  # from EasyList
@@ -896,7 +896,7 @@ _banner_rotator.php  # from Adguard
     ||banki.ru/_export/informers/  # from Adguard
     ||nyx.su/informers/  # from Adguard
     ||price.ua/informers/  # from Adguard
-/istripper/*  # ads on many sites  # is in EasyList
+/istripper/*  # ads on many sites  # is in EasyList and uBlock filters
 /jllikepro/js/buttons.
 /jquery.adsplace
 /jquery.bootstrap.scrollspy.js
@@ -1057,7 +1057,7 @@ _rebid.js  # from EasyList
 /show-ads.js$important
 /showads.$important  # disable exclusion from Fanboy’s Enhanced Tracking List
 /sidebar_banners/*
-/siropu/am/core.min.js  # is in uBlock filters
+/siropu/am/core.min.js$script,important  # is in uBlock filters as is
 /siropu/am/display.$script  # from RU AdList
 /sitecatalyst/*  # from Fanboy’s
 /smart-app-banner/
