@@ -468,12 +468,15 @@ zen.yandex.*##.article-subscribe-banner
 ||dialogs.s3.yandex.net/badges/$image
 
 ! disable any whitelists
-||yandex.*/metrika/$third-party,important
+||yandex.*/metrika/$important
+    !||yandex.*/metrika/$third-party,important
 ||yandex.st/share/share.js$important
 ||yandex.st/swf/ad-sdk-module/$important
 ||yastatic.net/share/$important
 ||yastatic.net/share2/$important
 ||jsdelivr.net/npm/yandex-metrica-watch/$important
+||yandex.ru/watch/$important
+||yandex.ru/webvisor/$important
 ! is in AdGuard
 ##a[href^="http://metrika.yandex.ru/stat/"]
 ! disable exception from RUS: AdGuard Russian filter 
