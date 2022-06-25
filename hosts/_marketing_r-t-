@@ -2428,6 +2428,10 @@ rtxplatform.com  # from Peter Lowe's hosts file
 
 rtyznd.com$important  # ad redirects and empty root
 
+! Заблокированы поддомены ru.ru и ru.com. Похоже, ничего полезного там нет, зато очень много сайтов, пытающихся снять деньги. (from _wapclick)
+ru.com$important
+ru.ru$important
+
 reklamka.ru.net
 ! from Ru AdList
 ##a[onclick*="reklamka.ru.net"]
@@ -2804,9 +2808,10 @@ sailplay.ru$important
 sailthru.com$important  # "Cross-Channel Campaign Management"
 ! is in RU AdList and Fanboy’s
 /sailthru/*$important
-! is in RU AdList and Fanboy’s
-/sailthru-$important
-/sailthru.js  #/sailthru-newsletter-signup.js
+/sailthru$script,important
+    ! is in RU AdList and Fanboy’s
+    ! /sailthru-$important
+    ! /sailthru.js$important  #/sailthru-newsletter-signup.js
 
 sajtiket.ru  # from Adguard
 
@@ -4466,6 +4471,8 @@ short.bet  # 404 root  # admarket.network
 
 shorteh.com$important  # ad scripts and root redirects to Google  # is in AdGuard
 
+shorterall.com$important  # ad URL shortener  # there is an exclusion in uBlock filters  # promo-visits.site, shorterall.com
+
 shortest.name  # from GoodbyeAds
 
 shorthand.com  # " This story is no longer available. To create beautifully simple stories for the web, visit shorthand.com. We offer publishing plans for teams of all sizes."  # "Client Engaging Digital Stories"
@@ -4933,6 +4940,8 @@ skimresources.com$important  # from Peter Lowe’s Ad and tracking server list
 skinected.com  # from MVPS
 
 skinopushka.xyz  # zombie
+
+skiptheadz.com$all  # from uBlock filters
 
 skocz.pl  # from Dan Pollock's hosts file
 
@@ -8022,6 +8031,10 @@ techads.info  # from Peter Lowe's hosts file
 
 techbeat.com  # from Adguard
 
+techbumper.info  # from uBlock filters
+
+techcdn.com  # from uBlock filters
+
 techclicks.net  # from Peter Lowe's hosts file
 
 techdignity.com  # shopify apps
@@ -8035,6 +8048,8 @@ techfunder.de  # techfunder
 ! end of techfunder.de
 
 techlab-cdn.com  # from Adguard
+
+techmyntra.net  # from uBlock filters
 
 technicalconsumerreports.com  # from Dan Pollock's hosts file
 
