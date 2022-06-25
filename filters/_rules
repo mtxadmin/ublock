@@ -838,6 +838,8 @@ _banner_rotator.php  # from Adguard
 -contrib-ads/  # from EasyList
 -core-ads  # ad scripts  # is in EasyList
 /coremetrics/*$important  # many exclusions in Fanboy's
+/countly.js  # from Adguard  # see count.ly, countly.org
+/countly.min.js  # from Adguard  # see count.ly, countly.org
 /dcmads.js
 /deblocker.min.js
 -detect-adblock.  # from EasyList
@@ -967,6 +969,7 @@ _banner_rotator.php  # from Adguard
 /pcs/click^
 /phoenixgoogleanalytics.  # ad scripts  # is in EasyPrivacy
 _player_vpaid_as3.swf  # from Adguard
+/pmc-google-universal-analytics/*  # from Adguard
 /popunder.js$important
 .popunder.js  # from EasyList
 /porpoiseant/*$important  # ad scripts  # is in EasyList
@@ -2179,7 +2182,9 @@ _tracker.js.  # from EasyPrivacy
 .v4.analytics.  # from EasyPrivacy
 /vantage$script
 /video_count.php?  # from EasyPrivacy
-/video.counters.js$important
+/video.counters$important
+    ! /video.counters.js$important
+    ! /video.counters.2.js?  # from Adguard
 /video/tracking.js  # from EasyPrivacy
 /videoanalytic/*  # from EasyPrivacy
 /videoanalytics.  # from EasyPrivacy
