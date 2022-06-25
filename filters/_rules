@@ -2035,8 +2035,9 @@ _analytics.js?  # from EasyPrivacy
 /autotrack.js  # is in AdGuard and EasyPrivacy
 /autotrack.carbon.js  # from EasyPrivacy
 /beacon$important
-/beacon.js$important
-/beacon.min.js$important
+    ! /beacon.js$important
+    ! /beacon.min.js$important
+    ! /cdn-cgi/challenge-platform/h/g/beacon/*$xmlhttprequest,~third-party  # from Adguard
 .beacon.min.js  # from EasyPrivacy
 /blank.gif
     ! /px/*/blank.gif?  # is in EasyPrivacy
