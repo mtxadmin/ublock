@@ -18,6 +18,9 @@
 /cdn-cgi/pe/bag2?*connect.facebook.net  # from Anti-Facebook
 ||facebook.com/ajax/bnzai*__comet_req=  # Adguard rule
 ||facebook.com/csp/reporting/
+||facebook.com/*/plugins/$domain=~facebook.com  # from Adguard
+||facebook.com/plugins/$domain=~facebook.com|~freepresets.com  # from Adguard
+||facebook.com/sharer.php$third-party,domain=~speedtest.net  # from Adguard
 !
 ! facebook pixels
 /hsts-pixel.gif
@@ -417,6 +420,7 @@ connect.ok.ru$important  # from hpHosts’ Ad and tracking servers
 /ok-icon.png
 /soc_ok.svg
 ||odnoklassniki.ru^$~stylesheet,domain=~odnoklassniki.ru|~ok.ru  # from Fanboy's
+||odnoklassniki.ru/share/$third-party,domain=~mail.ru|~odnoklassniki.ru  # from Adguard
 ||ok.ru/dk/?st.cmd=extLike$3p
 ||ok.ru/dk?cmd=videoStatNew
 ||ok.ru/gwtlog
@@ -1006,6 +1010,7 @@ livejournal.com##a[href*="offer"][target="_blank"]
 ##.icon_digg
 ##.icon-digg
 /digg.png  # from Fanboy's
+||diggstatic.com/img/badges/$domain=~digg.com  # from Adguard
 
 
 
