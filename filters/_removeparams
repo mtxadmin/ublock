@@ -190,9 +190,6 @@ $removeparam=/^etcc_/
     ! marketing.net.idealo-partner.com$removeparam=etcc_med  # from Adguard
     ! marketing.net.idealo-partner.com$removeparam=etcc_produkt  # from Adguard
 
-! unusual Ru AdList form:
-/?f=ukr.net$document,removeparam=|  # from Ru AdList
-
 $removeparam=fb_action_ids  # Facebook general parameter # from NeatURL and Adguard
 $removeparam=fb_action_types  # Facebook general parameter  # from NeatURL and Adguard
 $removeparam=fb_comment_id  # from Adguard
@@ -1042,6 +1039,7 @@ tiktok.com$removeparam=user_id  # from NeatURL
 tinkoff.ru$removeparam=mindbox-click-id  # from Adguard
 
 trendyol.com$removeparam=/^tyutm_/  # from Adguard, modified
+    ! trendyol.com$removeparam=tyutm_campaign  # from Adguard
     ! trendyol.com$removeparam=tyutm_medium  # from Adguard
     ! trendyol.com$removeparam=tyutm_source  # from Adguard
 
@@ -1052,6 +1050,10 @@ twitter.com$removeparam=s  # from NeatURL
 twitter.com$removeparam=t  # from NeatURL
 
 udemy.com$removeparam=referralCode
+
+ukr.net$removeparam
+    ! unusual Ru AdList form:
+    ! /?f=ukr.net$document,removeparam=|  # from Ru AdList
 
 ||unsplash.com$removeparam=|ixlib|ixid
 
