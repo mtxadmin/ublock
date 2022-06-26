@@ -67,6 +67,7 @@ $removeparam=/^affi/
     ! cyberlink.com$removeparam=affid  # from Adguard
     ! ||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest  # from Adguard
     ! otto.de$removeparam=AffiliateID  # from Adguard
+    ! flipkart.com$removeparam=affid  # from Adguard
 
 $removeparam=aiad_clid  # from Adguard
 
@@ -125,6 +126,9 @@ $removeparam=/campaign/  # maybe it needs i? Not sure
 # cid - do not generally remove parameter! It is used by several forum engines and sites. See discussion at https://github.com/Smile4ever/Neat-URL/issues/226
 # c_id is not so wide, but: https://github.com/Smile4ever/Neat-URL/issues/232
 $removeparam=c_id,domain=~libsyn.com  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+
+$removeparam=_clde  # from Adguard
+$removeparam=_cldee  # from Adguard
 
 $removeparam=/clickid$/
     ! $removeparam=irclickid  # from Ru AdList
@@ -300,6 +304,8 @@ $removeparam=ml_subscriber  # from Adguard
 $removeparam=ml_subscriber_hash  # from Adguard
     ! https://github.com/brave/brave-browser/issues/17507
 
+$removeparam=msclkid  # from Adguard
+
 ! Mail.ru tracking
 $removeparam=mt_click
     ! mt_click$document,removeparam=|,domain=mail.ru|ok.ru  # from Ru AdList
@@ -399,7 +405,7 @@ $removeparam=/pvid$/
 
 # recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
-$removeparam=ref
+$removeparam=ref,domain=~amazon.*  # exclusion is from Adguard.
     ! amazon.*$removeparam=ref  # Found independently. Also is in Adguard
     ! ||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/  # from Adguard
     ! arcelik.com.tr$removeparam=ref  # from Adguard
@@ -481,6 +487,8 @@ $removeparam=scm
     !aliyun.com$removeparam=scm  # from Adguard
     !taobao.com$removeparam=scm  # from Adguard
     !||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard
+    !v.youku.com$removeparam=scm  # from Adguard
+    !sohu.com$removeparam=scm  # from Adguard
 $removeparam=scm_id
     ! Found independently. Confirmed by months of testing. Now it is in NeatURL and Adguard too
     !aliexpress.com$removeparam=|scm_id
@@ -500,6 +508,8 @@ $removeparam=spm
         ! .html?spm=$document,removeparam=spm,domain=aliexpress.*  # from Ru AdList
         ! .ru/?spm=$document,removeparam=spm,domain=aliexpress.*  # from Ru AdList
         ! ://aliexpress.*.htm?spm=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
+    ! sohu.com$removeparam=spm  # from Adguard
+    ! v.youku.com$removeparam=spm  # from Adguard
 
 # senderId - do not remove in general. Though it is being used in Oracle Eloqua
 
@@ -643,7 +653,7 @@ $removeparam=vero_id  # Campaign tracking (Vero)  # https://help.getvero.com/art
 
 $removeparam=wbraid  # Google ads/analytics  # from Adguard
 
-$removeparam=wt_mc  # Zeit.de general parameter  # from NeatURL
+$removeparam=wt_mc  # Zeit.de general parameter  # from NeatURL  # is in Adguard
 $removeparam=wt_zmc  # Zeit.de general parameter  # from NeatURL
 
 $removeparam=xtor  # Campaign link tracking  # https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/campaigns-javascript-en/marketing-campaigns-javascript-en/#direct-method_5  # from Adguard
@@ -1414,3 +1424,5 @@ deezer.com$removeparam=origin  # from Adguard
 
 get-express-vpns.com$removeparam=sxid  # from Adguard
 get-express-vpns.com$removeparam=ttorigin  # from Adguard
+
+flipkart.com$removeparam=/^affExtParam/  # from Adguard
