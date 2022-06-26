@@ -152,6 +152,7 @@ $removeparam=/click_id$/
     $removeparam=dclid  # from Adguard
     $removeparam=fbclid  # Facebook general parameter  # from NeatURL and Adguard
         ! fbclid=$document,removeparam=fbclid  # from Ru AdList
+        ! $removeparam=fbclid  # from Adguard
         ! ||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
     $removeparam=gclid  # Campaign tracking (Google Analytics, ga)  # from NeatURL, Adguard, Ru AdList
         ! ||youtube.com^*gclid*$removeparam=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467  # also it is found indepedently and presents in NeatURL. Very popular parameter.
@@ -282,6 +283,8 @@ $removeparam=/^itm_.*/ # Campaign tracking (itm)  # https://www.parse.ly/help/po
 $removeparam=irgwc  # from Adguard and Ru AdList
     ! https://github.com/AdguardTeam/AdguardFilters/issues/108478
 
+$removeparam=maf  # from Adguard
+
 $removeparam=mbid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
     ! wired.co.uk$removeparam=mbid  # from Adguard
 
@@ -332,6 +335,9 @@ $removeparam=oly_enc_id  # from Adguard
     ! https://github.com/brave/brave-browser/issues/13644
 
 $removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList
+
+$removeparam=oprtrack  # from Adguard
+    ! mail.ru$removeparam=oprtrack  # from Adguard
 
 $removeparam=partnerId
     ! ||lotto.gmx.*^$removeparam=partnerId  # from Adguard
@@ -436,6 +442,7 @@ $removeparam=/referrer/
         ! referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
         ! cosse.de$removeparam=referer  # from Adguard
         ! play.google.*^$removeparam=referrer  # from Adguard
+        ! rapidgator.net$removeparam=Referer  # from Adguard
         ! reddit.app.link$removeparam=referrer_domain  # from Adguard
         ! reddit.app.link$removeparam=referrer_url  # from Adguard
     ! $removeparam=nr_email_referer  # Campaign tracking (utm)  # from NeatURL
@@ -495,6 +502,11 @@ $removeparam=spm
         ! ://aliexpress.*.htm?spm=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
 
 # senderId - do not remove in general. Though it is being used in Oracle Eloqua
+
+$removeparam=/^sgm/
+    ! $removeparam=_sgm_action  # from Adguard
+    ! $removeparam=_sgm_campaign  # from Adguard
+    ! $removeparam=_sgm_source  # from Adguard
 
 $removeparam=/^share_/
     ! bilibili.com$removeparam=share_source  # from Adguard
@@ -580,6 +592,7 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! $removeparam=utm_emcid  # from Adguard
     ! $removeparam=utm_emmid  # from Adguard
     ! $removeparam=utm_id  # from Adguard and Ru AdList
+    ! $removeparam=utm_keyword  # from Adguard
     ! $removeparam=utm_medium  # from Adguard and Ru AdList
     ! $removeparam=utm_name  # from Adguard
     ! $removeparam=utm_place  # from Adguard
@@ -930,7 +943,6 @@ linkedin.com$removeparam=trackingId  # from NeatURL
 
 mail.ru$removeparam=exp_id
     ! mail.ru*exp_id=$document,removeparam=|,domain=mail.ru  # from Ru AdList
-mail.ru$removeparam=oprtrack  # from Adguard
 mail.ru$removeparam=smotri_id  # from Ru AdList, modified
     ! smotri_id=$document,removeparam=|smotri_id,domain=mail.ru  # from Ru AdList
 ! unusual Ru AdList form:
