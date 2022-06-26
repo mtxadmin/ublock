@@ -346,6 +346,10 @@ $removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex
 $removeparam=oprtrack  # from Adguard
     ! mail.ru$removeparam=oprtrack  # from Adguard
 
+$removeparam=oref
+    ! defenseone.com$removeparam=oref  # from Adguard
+    ! nextgov.com$removeparam=oref  # from Adguard
+
 $removeparam=partnerId
     ! ||lotto.gmx.*^$removeparam=partnerId  # from Adguard
     ! lotto.web.de$removeparam=partnerId  # from Adguard
@@ -723,7 +727,7 @@ alexa.com$removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest
 ! That is not URL parameter, but URL ending
 #  $/ref@amazon.*
 ! Note: in NeatURL amazon.com is amazon.* . It should work, but need to test 
-! 2022: ref parameter is recommended to exclude by Adguard
+! 2022: ref parameter (?ref=)is recommended to exclude by Adguard
 amazon.*$removeparam=ascsubtag  # from NeatURL and Adguard
 amazon.*$removeparam=c  # from Adguard
 amazon.*$removeparam=camp  # from Adguard
@@ -747,11 +751,13 @@ amazon.*$removeparam=rid  # Found independently
 amazon.*$removeparam=smid  # from Adguard
 amazon.*$removeparam=sr  # Found independently
 amazon.*$removeparam=tag  # from NeatURL and Adguard
+    ! ||amazon.*/dp/$removeparam=tag  # also from Adguard
 amazon.*$removeparam=th  # Found independently
 amazon.*$removeparam=ts_id  # from Adguard
 ||amazon.*/hz/contact-us/csp$removeparam=/Version/  # from Adguard
 amazon.*$removeparam=visitId  # from Adguard
 amazon.*$removeparam=vt  # from Adguard
+||amazon.*$removeparam=vtr  # from Adguard
 !@@||data.amazon.*/api/marketplaces/*/cart/carts/retail/items$removeparam=ref  # strange exclusion from Adguard
 
 app.link$removeparam=adblock  # from Adguard
@@ -1470,3 +1476,4 @@ wizcase.com$removeparam=vid  # from Adguard
 
 linksynergy.com$removeparam=u1  # from Adguard
 linksynergy.com$removeparam=u2  # from Adguard
+
