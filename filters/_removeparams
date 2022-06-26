@@ -1038,9 +1038,9 @@ ozon.ru$removeparam=sh
 
 rabota.ru$removeparam=search_id
 
-! rakuten - blocked entirely, just for information
-!rakuten.co.jp$removeparam=scid  # from Adguard
-!rakuten.co.jp*&trflg=$removeparam=trflg  # from Adguard
+! rakuten - blocked entirely, just for information. But.
+rakuten.co.jp$removeparam=scid  # from Adguard
+rakuten.co.jp$removeparam=trflg  # from Adguard: rakuten.co.jp*&trflg=$removeparam=trflg
 
 rambler.ru$removeparam=block_click  # from Ru AdList, modified
     ! block_click=$removeparam=block_click,domain=rambler.ru  # from Ru AdList
