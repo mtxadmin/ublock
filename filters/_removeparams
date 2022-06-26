@@ -723,6 +723,7 @@ alexa.com$removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest
 ! That is not URL parameter, but URL ending
 #  $/ref@amazon.*
 ! Note: in NeatURL amazon.com is amazon.* . It should work, but need to test 
+! 2022: ref parameter is recommended to exclude by Adguard
 amazon.*$removeparam=ascsubtag  # from NeatURL and Adguard
 amazon.*$removeparam=c  # from Adguard
 amazon.*$removeparam=camp  # from Adguard
@@ -752,6 +753,11 @@ amazon.*$removeparam=ts_id  # from Adguard
 amazon.*$removeparam=visitId  # from Adguard
 amazon.*$removeparam=vt  # from Adguard
 !@@||data.amazon.*/api/marketplaces/*/cart/carts/retail/items$removeparam=ref  # strange exclusion from Adguard
+
+app.link$removeparam=adblock  # from Adguard
+app.link$removeparam=compact_view  # from Adguard
+app.link$removeparam=dnt  # from Adguard
+app.link$removeparam=geoip_country  # from Adguard
 
 baidu.com$removeparam=eqid  # from Adguard
     ! baidu.com/link?url=$removeparam=eqid  # from Adguard
@@ -1238,11 +1244,6 @@ nikkei.com$removeparam=i_cid  # from Adguard
 nikkei.com$removeparam=n_cid  # from Adguard
 nikkeibp.co.jp$removeparam=i_cid  # from Adguard
 
-reddit.app.link$removeparam=adblock  # from Adguard
-reddit.app.link$removeparam=compact_view  # from Adguard
-reddit.app.link$removeparam=dnt  # from Adguard
-reddit.app.link$removeparam=geoip_country  # from Adguard
-
 ||weibo.*^$removeparam=weibo_id  # from Adguard
 
 zerkalo.io$removeparam=tg  # from Adguard
@@ -1455,3 +1456,14 @@ mp.weixin.qq.com$removeparam=aid  # from Adguard
 mp.weixin.qq.com$removeparam=launchid  # from Adguard
 mp.weixin.qq.com$removeparam=v_p  # from Adguard
 mp.weixin.qq.com$removeparam=WBAPIAnalysisOriUICodes  # from Adguard
+
+instagram.com$removeparam=ig_rid  # from Adguard
+
+msafflnk.net$removeparam=sharedid  # from Adguard
+msafflnk.net$removeparam=/^subid/  # from Adguard
+
+ozon.ru$removeparam=asb2  # from Adguard
+
+||wizcase.com/?$removeparam=pageview_id  # from Adguard
+||wizcase.com/?$removeparam=clickout_id  # from Adguard
+||wizcase.com/?$removeparam=vid  # from Adguard
