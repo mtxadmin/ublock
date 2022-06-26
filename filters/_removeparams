@@ -251,9 +251,6 @@ $removeparam=guccounter  # from Adguard
     ! $removeparam=guccounter  # from Adguard
     ! yahoo.com$removeparam=guccounter  # from NeatURL
 
-$removeparam=guce_referrer  # from Adguard
-$removeparam=guce_referrer_sig  # from Adguard
-
 $removeparam=hmb_campaign  # Campaign tracking (Humble Bundle)  # from NeatURL
 $removeparam=hmb_medium  # Campaign tracking (Humble Bundle)  # from NeatURL
 $removeparam=hmb_source  # Campaign tracking (Humble Bundle)  # from NeatURL
@@ -370,6 +367,28 @@ $removeparam=promoid
     ! Later:
     ! get.adobe.com$removeparam=promoid  # from Adguard
 
+$removeparam=/pvid$/
+    ! Found independently. Confirmed by months of testing.
+    ! aliexpress.com$removeparam=ad_pvid
+    ! aliexpress.ru$removeparam=ad_pvid
+
+    ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
+    ! aliexpress.com$removeparam=|algo_pvid
+    ! aliexpress.ru$removeparam=|algo_pvid
+        ! Later: unusual form from Ru AdList
+        ! algo_pvid=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
+
+    ! taobao.com$removeparam=app_pvid  # from Adguard
+
+    ! Found independently. Confirmed by months of testing. 
+    ! Update: don't, it breaks search filters in category :-(
+    ! Update2. Ok, cleaner urls are more important. Removing again.
+    ! Update3. It turns out Adguard has this rule too.
+    !aliexpress.com$removeparam=pvid
+    !aliexpress.ru$removeparam=pvid
+    ! 2022-02: Adguard has this rule also for taobao
+    !taobao.com$removeparam=pvid  # from Adguard
+
 # recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
 $removeparam=ref
@@ -422,6 +441,7 @@ $removeparam=/referrer/
     ! $removeparam=guce_referrer_sig  # from Adguard
     ! ||linkedin.com/authwall?$removeparam=originalReferer  # from Adguard
     ! reddit.com$removeparam=_branch_referrer  # from Adguard
+    ! open.spotify.com$removeparam=_branch_referrer  # from Adguard
     ! ?referrer_block=$document,removeparam=|referrer_,domain=mail.ru|sportmail.ru  # from Ru AdList
     ! /*purchase-referrer=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 
@@ -1355,4 +1375,12 @@ $removeparam=ocid,domain=bbc.com|bbc.co.uk  # from Adguard
 ||cc.loginfra.com/cc$removeparam=sx  # from Adguard
 ||cc.loginfra.com/cc$removeparam=sy  # from Adguard
 ||cc.loginfra.com/cc$removeparam=nsc  # from Adguard
+
+toomics.com$removeparam=channel  # from Adguard
+toomics.com$removeparam=gen  # from Adguard
+toomics.com$removeparam=pid  # from Adguard
+toomics.com$removeparam=subpid  # from Adguard
+
+! already blocked, but
+p.typekit.net$stylesheet,removeparam  # from Adguard
 
