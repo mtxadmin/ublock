@@ -188,6 +188,7 @@ $removeparam=ebisAdID  # AD EBiS  # from Adguard
 
 $removeparam=elqTrack  # Oracle Eloqua  # from NeatURL
 $removeparam=elqTrackId  # Oracle Eloqua  # from NeatURL
+    ! lp.sophos.com$removeparam=elqTrackId  # from Adguard
 
 $removeparam=/^etcc_/
     ! hitseller.de$removeparam=etcc_cmp  # from Adguard
@@ -1508,3 +1509,25 @@ iguru.gr$removeparam=_unique_id  # from Adguard
 iguru.gr$removeparam=feed_id  # from Adguard
 
 ojrq.net$removeparam=cid  # from Adguard
+
+xxvidsx.com$removeparam=ad  # from Adguard
+xxvidsx.com$removeparam=site  # from Adguard
+
+cinematoday.jp$removeparam=g_clk  # from Adguard
+
+atlassian.net$removeparam=atlOrigin  # from Adguard
+
+so-net.ne.jp$removeparam=SmRcid  # from Adguard
+
+ameblo.jp$removeparam=frm_id  # from Adguard
+
+||popin.cc/popin_discovery/$script,removeparam=info  # from Adguard
+||popin.cc/popin_discovery/$script,removeparam=uid  # from Adguard
+
+cancanlah.com$removeparam=click_id  # from Adguard
+
+||api.cxense.com/public/widget/data?json=$script,removeparam=usi  # from Adguard
+||api.cxense.com/public/widget/data?json=$script,removeparam=widgetId  # from Adguard
+
+apple.com$removeparam=ct  # from Adguard
+apple.com$removeparam=pt  # from Adguard
