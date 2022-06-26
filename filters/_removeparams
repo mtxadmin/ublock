@@ -225,6 +225,7 @@ $removeparam=fref  # from Ru AdList
     ?from=yanews$document,removeparam=|  # from Ru AdList
     ||daraz.*$removeparam=/from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
     from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+    mp.weixin.qq.com$removeparam=from  # from Adguard
 
 $removeparam=frommail
     ! mail.ru*frommail=1$document,removeparam=|frommail=1,domain=mail.ru  # from Ru AdList
@@ -1441,3 +1442,15 @@ flipkart.com$removeparam=store  # from Adguard
 iqiyi.com$removeparam=vfrm  # from Adguard
 iqiyi.com$removeparam=vfrmblk  # from Adguard
 iqiyi.com$removeparam=vfrmrst  # from Adguard
+
+sohu.com$removeparam=_f  # from Adguard
+sohu.com$removeparam=_trans_  # from Adguard
+
+youku.com$removeparam=ptag  # from Adguard
+
+theregister.com$removeparam=td  # from Adguard
+
+mp.weixin.qq.com$removeparam=aid  # from Adguard
+mp.weixin.qq.com$removeparam=launchid  # from Adguard
+mp.weixin.qq.com$removeparam=v_p  # from Adguard
+mp.weixin.qq.com$removeparam=WBAPIAnalysisOriUICodes  # from Adguard
