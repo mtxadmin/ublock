@@ -745,8 +745,8 @@ change.org$removeparam=source_location  # Campaign tracking (Change.org)  # from
 comodo.com$removeparam=af  # from Adguard
 comodo.com$removeparam=track  # from Adguard
 
-! cyber-ad01.cc - blocked entirely, just for information
-!cyber-ad01.cc$removeparam=ip  # from Adguard
+! cyber-ad01.cc - blocked entirely, just for information. But.
+cyber-ad01.cc$removeparam=ip  # from Adguard
 
 coupang.com$removeparam=lptag  # from Adguard: link.coupang.com$removeparam=lptag
 
@@ -1337,12 +1337,22 @@ giphy.com$removeparam=cid  # from Adguard
 giphy.com$removeparam=ct  # from Adguard
 giphy.com$removeparam=rid  # from Adguard
 
-$removeparam=at_campaign,domain=bbc.com|bbc.co.uk  # from Adguard
+!$removeparam=at_campaign,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=/^at_custom/,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=at_medium,domain=bbc.com|bbc.co.uk  # from Adguard
-$removeparam=ns_campaign,domain=bbc.com|bbc.co.uk  # from Adguard
+!$removeparam=ns_campaign,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_fee,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_linkname,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_mchannel,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_source,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ocid,domain=bbc.com|bbc.co.uk  # from Adguard
+
+! already blocked, but
+||cc.loginfra.com/cc$removeparam=a  # from Adguard
+||cc.loginfra.com/cc$removeparam=bw  # from Adguard
+||cc.loginfra.com/cc$removeparam=px  # from Adguard
+||cc.loginfra.com/cc$removeparam=py  # from Adguard
+||cc.loginfra.com/cc$removeparam=sx  # from Adguard
+||cc.loginfra.com/cc$removeparam=sy  # from Adguard
+||cc.loginfra.com/cc$removeparam=nsc  # from Adguard
+
