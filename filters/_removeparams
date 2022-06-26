@@ -47,7 +47,6 @@ $removeparam=/^adjust_.*/  # adjust.com campains. Also see adjust ad network
     ! $removeparam=adjust_tracker  # from Adguard
     ! $removeparam=adjust_tracker_limit  # from Adguard
     ! adj.st$removeparam=adjust_deeplink  # from Adguard
-    ! adj.st$removeparam=CollectionId  # from Adguard
 
 $removeparam=admitad_uid  # AdmitAd tracking  # from Adguard and Ru AdList
 
@@ -687,6 +686,7 @@ $removeparam=_zucks_suid  # from Adguard
 
 ! adjust.com - blocked entirely, just for information. But.
 adjust.com$removeparam=adgroup  # from Adguard
+adj.st$removeparam=CollectionId  # from Adguard
 
 ! admitad.com - blocked entirely, just for information. But.
 admitad.com$removeparam=/^subid/  # from Adguard
@@ -1249,6 +1249,7 @@ msn.com$removeparam=pc  # from Adguard
 
 yahoo.*$removeparam=code  # from Adguard
 yahoo.*$removeparam=fr  # from Adguard
+    ! search.yahoo.co.jp$removeparam=fr  # from Adguard
 
 agoda.com$removeparam=tag  # from Adguard
 
