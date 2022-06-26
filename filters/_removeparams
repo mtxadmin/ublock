@@ -137,11 +137,11 @@ $removeparam=_cldee  # from Adguard
 
 $removeparam=/clickid$/
     ! $removeparam=irclickid  # from Ru AdList
+        ! duda.co$removeparam=irclickid  # from Adguard
+        ! microsoft.com$removeparam=irclickid  # from Adguard
     ! $removeparam=rb_clickid  # from Adguard  # https://github.com/brave/brave-browser/issues/17451
     ! aufast.co$removeparam=clickid  # from Adguard
-    ! duda.co$removeparam=irclickid  # from Adguard
     ! iqbroker.com$removeparam=clickid  # from Adguard
-    ! microsoft.com$removeparam=irclickid  # from Adguard
     ! voyeur-house.tv$removeparam=clickid  # from Adguard
 $removeparam=/click_id$/
     ! $removeparam=mt_click_id  # from Ru AdList
@@ -996,7 +996,7 @@ maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
     ! ?previewToken=$document,removeparam=|,domain=maximonline.ru  # from Ru AdList
 
 ! media01.eu - blocked entirely, just for information. But.
-||media01.eu/set.aspx$removeparam=trackid  # from Adguard
+media01.eu$removeparam=trackid  # from Adguard
 
 mediamarkt.com.tr$removeparam=rbtc  # from Adguard
 
