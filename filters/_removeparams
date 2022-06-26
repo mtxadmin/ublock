@@ -1141,6 +1141,10 @@ xxx-comics.pro$removeparam=view
     ! ||xxx-comics.pro/*?view=$doc,other,removeparam=view  # from uBlock filters
 
 ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck!
+
+yandex.$removeparam=clid
+    ! ||www.yandex.$removeparam=clid  # from Adguard
+    ! ://yandex.$removeparam=clid  # from Adguard
 zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
     ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
 market.yandex.*$removeparam=cpc  # from Ru AdList, modified
