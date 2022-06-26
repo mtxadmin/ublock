@@ -10,18 +10,18 @@
 !! URL parameters
 
 ! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=|ad_pvid
-aliexpress.ru$removeparam=|ad_pvid
+aliexpress.com$removeparam=ad_pvid
+aliexpress.ru$removeparam=ad_pvid
 
 ! See aff_ parameters in _removeparams
 
 ! Found independently.
-aliexpress.com$removeparam=|algo_exp_id
-aliexpress.ru$removeparam=|algo_exp_id
+aliexpress.com$removeparam=algo_exp_id
+aliexpress.ru$removeparam=algo_exp_id
 
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
-aliexpress.com$removeparam=|algo_expid
-aliexpress.ru$removeparam=|algo_expid
+aliexpress.com$removeparam=algo_expid
+aliexpress.ru$removeparam=algo_expid
 
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
 aliexpress.com$removeparam=|algo_pvid
@@ -29,33 +29,33 @@ aliexpress.ru$removeparam=|algo_pvid
     ! Later: unusual form from Ru AdList
     ! algo_pvid=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
 
-!aliexpress.com$removeparam=|appKey - don't, it breaks related search
+!aliexpress.com$removeparam=appKey - don't, it breaks related search
 
 ! Found independently. 
-aliexpress.com$removeparam=|browser_id
-aliexpress.ru$removeparam=|browser_id
+aliexpress.com$removeparam=browser_id
+aliexpress.ru$removeparam=browser_id
 
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
-aliexpress.com$removeparam=|btsid
-aliexpress.ru$removeparam=|btsid
+aliexpress.com$removeparam=btsid
+aliexpress.ru$removeparam=btsid
 
 ! Found independently, added 2021-04-25
-aliexpress.com$removeparam=|ck
-aliexpress.ru$removeparam=|ck
+aliexpress.com$removeparam=ck
+aliexpress.ru$removeparam=ck
 
 ! Found independently.
-aliexpress.com$removeparam=|cn
-aliexpress.ru$removeparam=|cn
+aliexpress.com$removeparam=cn
+aliexpress.ru$removeparam=cn
 
 ! Found independently.
-aliexpress.com$removeparam=|cv
-aliexpress.ru$removeparam=|cv
+aliexpress.com$removeparam=cv
+aliexpress.ru$removeparam=cv
 
-!aliexpress.com$removeparam=|dl - don't!
+!aliexpress.com$removeparam=dl - don't!
 
 ! Found independently. Also it is in the Adguard
-aliexpress.com$removeparam=|dp
-aliexpress.ru$removeparam=|dp
+aliexpress.com$removeparam=dp
+aliexpress.ru$removeparam=dp
 
 ! Found independently (2022-04)
 aliexpress.com$removeparam=_evo_buckets
@@ -66,23 +66,23 @@ aliexpress.com$removeparam=expid
 aliexpress.ru$removeparam=expid
 
 ! Found independently, earlier than 2021-04. Seems fully working
-aliexpress.com$removeparam=|fromDetail
-aliexpress.ru$removeparam=|fromDetail
+aliexpress.com$removeparam=fromDetail
+aliexpress.ru$removeparam=fromDetail
 
 ! Testing was relatively short, but this parameter seems useless
-aliexpress.com$removeparam=|_ga
-aliexpress.ru$removeparam=|_ga
+aliexpress.com$removeparam=_ga
+aliexpress.ru$removeparam=_ga
 
 aliexpress.com$removeparam=gatewayAdapt
 aliexpress.ru$removeparam=gatewayAdapt
 
 ! Found independently.
-aliexpress.com$removeparam=|gclid
-aliexpress.ru$removeparam=|gclid
+aliexpress.com$removeparam=gclid
+aliexpress.ru$removeparam=gclid
 
 ! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=|gps-id
-aliexpress.ru$removeparam=|gps-id
+aliexpress.com$removeparam=gps-id
+aliexpress.ru$removeparam=gps-id
 ! Later: unusual Ru AdList form (it seems, all the parameters will be removed):
     ! .html?gps-id=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
 
@@ -95,43 +95,43 @@ aliexpress.com$removeparam=item_id
 aliexpress.ru$removeparam=item_id
 
 ! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=|mp
-aliexpress.ru$removeparam=|mp
+aliexpress.com$removeparam=mp
+aliexpress.ru$removeparam=mp
 
 ! Found independently.
-aliexpress.com$removeparam=|m_page_id
-aliexpress.ru$removeparam=|m_page_id
+aliexpress.com$removeparam=m_page_id
+aliexpress.ru$removeparam=m_page_id
 
-aliexpress.com$removeparam=|pdp_ext_f
-aliexpress.ru$removeparam=|pdp_ext_f
+aliexpress.com$removeparam=pdp_ext_f
+aliexpress.ru$removeparam=pdp_ext_f
 ! unusual Ru AdList form (it seems, all the parameters will be removed):
     !.html?pdp_ext_f=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
     ! See gps-id above
 
 ! Found independently, added 2022-01-11
-aliexpress.com$removeparam=|pdp_pi
-aliexpress.ru$removeparam=|pdp_pi
+aliexpress.com$removeparam=pdp_pi
+aliexpress.ru$removeparam=pdp_pi
 
 ! Found independently. Confirmed by months of testing. 
 ! Update: don't, it breaks search filters in category :-(
 ! Update2. Ok, cleaner urls are more important. Removing again.
 ! Update3. It turns out Adguard has this rule too.
-aliexpress.com$removeparam=|pvid
-aliexpress.ru$removeparam=|pvid
+aliexpress.com$removeparam=pvid
+aliexpress.ru$removeparam=pvid
 ! 2022-02: Adguard has this rule also for taobao
 taobao.com$removeparam=pvid  # from Adguard
 
 ! Found independently.
-aliexpress.com$removeparam=|rmsg
-aliexpress.ru$removeparam=|rmsg
+aliexpress.com$removeparam=rmsg
+aliexpress.ru$removeparam=rmsg
 
 ! Found independently, added 2021-04-25
-aliexpress.com$removeparam=|rowan_id1
-aliexpress.ru$removeparam=|rowan_id1
+aliexpress.com$removeparam=rowan_id1
+aliexpress.ru$removeparam=rowan_id1
 
 ! Found independently, added 2021-04-25
-aliexpress.com$removeparam=|rowan_msg_id
-aliexpress.ru$removeparam=|rowan_msg_id
+aliexpress.com$removeparam=rowan_msg_id
+aliexpress.ru$removeparam=rowan_msg_id
 
 ! from Adguard, added 2022-02
 ||aliexpress.$removeparam=sk
@@ -141,21 +141,21 @@ aliexpress.com$removeparam=sku_id
 aliexpress.ru$removeparam=sku_id
 
 ! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=|_t
-aliexpress.ru$removeparam=|_t
+aliexpress.com$removeparam=_t
+aliexpress.ru$removeparam=_t
 
-!aliexpress.com$removeparam=|t - don't, it breaks related search
+!aliexpress.com$removeparam=t - don't, it breaks related search
 
 ! from Adguard, added 2022-02
 ||aliexpress.$removeparam=terminal_id  # from Adguard
 
 ! Found independently, earlier than 2021-04. Seems fully working
-aliexpress.com$removeparam=|tracelog
-aliexpress.ru$removeparam=|tracelog
+aliexpress.com$removeparam=tracelog
+aliexpress.ru$removeparam=tracelog
 
 ! Found independently, added 2021-04-25
-aliexpress.com$removeparam=|ug_edm_item_id
-aliexpress.ru$removeparam=|ug_edm_item_id
+aliexpress.com$removeparam=ug_edm_item_id
+aliexpress.ru$removeparam=ug_edm_item_id
 
 ! from Adguard, added 2022-02
 ||aliexpress.$removeparam=utparam  # from Adguard
@@ -164,12 +164,12 @@ taobao.com$removeparam=utparam  # from Adguard
 
 
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
-aliexpress.com$removeparam=|ws_ab_test
-aliexpress.ru$removeparam=|ws_ab_test
+aliexpress.com$removeparam=ws_ab_test
+aliexpress.ru$removeparam=ws_ab_test
 
 ! Found independently, added 2022-01-11
-aliexpress.com$removeparam=|compareFields
-aliexpress.ru$removeparam=|compareFields
+aliexpress.com$removeparam=compareFields
+aliexpress.ru$removeparam=compareFields
 
 
 ! todo: aliexpress parameters
@@ -180,11 +180,11 @@ aliexpress.ru$removeparam=|compareFields
 !shareId
 !terminal_id
 
-aliexpress.com$removeparam=|scenario
-aliexpress.ru$removeparam=|scenario
+aliexpress.com$removeparam=scenario
+aliexpress.ru$removeparam=scenario
 
-aliexpress.com$removeparam=|tpp_rcmd_bucket_id
-aliexpress.ru$removeparam=|tpp_rcmd_bucket_id
+aliexpress.com$removeparam=tpp_rcmd_bucket_id
+aliexpress.ru$removeparam=tpp_rcmd_bucket_id
 
 
 !! aliexpress filters and subdomains
