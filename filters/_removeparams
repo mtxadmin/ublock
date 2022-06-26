@@ -67,6 +67,7 @@ $removeparam=/^affi/
     ! cyberlink.com$removeparam=affid  # from Adguard
     ! ||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest  # from Adguard
     ! otto.de$removeparam=AffiliateID  # from Adguard
+    ! $removeparam=AffiliateID,domain=otto.de|ottoversand.at  # from Adguard
     ! flipkart.com$removeparam=affid  # from Adguard
 
 $removeparam=aiad_clid  # from Adguard
@@ -122,6 +123,11 @@ $removeparam=/campaign/  # maybe it needs i? Not sure
     ! editor.flixier.com$removeparam=/fx_(source|medium|campaign)/  # from Adguard
     ! trendyol.com$removeparam=tyutm_campaign  # from Adguard
     ! ||play.google.com/store/$removeparam=pcampaignid  # from Adguard
+
+$removeparam=campid
+    ! ebay.*$removeparam=campid  # from Adguard
+    ! otto.de$removeparam=campid  # from Adguard
+    ! $removeparam=campid,domain=otto.de|ottoversand.at  # from Adguard
 
 # cid - do not generally remove parameter! It is used by several forum engines and sites. See discussion at https://github.com/Smile4ever/Neat-URL/issues/226
 # c_id is not so wide, but: https://github.com/Smile4ever/Neat-URL/issues/232
@@ -828,7 +834,6 @@ dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
 ||doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
 
 ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
-ebay.*$removeparam=campid  # from Adguard
 ebay.*$removeparam=hash  # from NeatURL
 ebay.*$removeparam=epid  # from NeatURL
 ebay.*$removeparam=mkrid  # from Adguard
@@ -1273,7 +1278,6 @@ alternate.de$removeparam=partner  # from Adguard
 galaxus.de$removeparam=pcscpId  # from Adguard
 
 otto.de$removeparam=ActionID  # from Adguard
-otto.de$removeparam=campid  # from Adguard
 
 pricezilla.de$removeparam=bid  # from Adguard
 
@@ -1531,3 +1535,12 @@ cancanlah.com$removeparam=click_id  # from Adguard
 
 apple.com$removeparam=ct  # from Adguard
 apple.com$removeparam=pt  # from Adguard
+
+||search.naver.com/p/crd/rd$removeparam=i  # from Adguard
+||search.naver.com/p/crd/rd$removeparam=p  # from Adguard
+||search.naver.com/p/crd/rd$removeparam=px  # from Adguard
+||search.naver.com/p/crd/rd$removeparam=py  # from Adguard
+||search.naver.com/p/crd/rd$removeparam=s  # from Adguard
+||search.naver.com/p/crd/rd$removeparam=sx  # from Adguard
+||search.naver.com/p/crd/rd$removeparam=sy  # from Adguard
+||search.naver.com/p/crd/rd$removeparam=time  # from Adguard
