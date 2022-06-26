@@ -342,6 +342,7 @@ $removeparam=ocid
     ! microsoft.com$removeparam=ocid  # from Adguard
     ! office.com$removeparam=ocid  # from Adguard
     ! bbc.com$removeparam=ocid  # from Adguard
+    ! $removeparam=ocid,domain=bbc.com|bbc.co.uk  # from Adguard
 
 $removeparam=oly_anon_id  # from Adguard
 $removeparam=oly_enc_id  # from Adguard
@@ -609,6 +610,7 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! $removeparam=utm_cmpaign  # from Ru AdList
     ! $removeparam=utm_channel  # from Adguard
     ! $removeparam=utm_cid  # from Adguard
+        ! digikey.com$removeparam=/^utm_cid/  # from Adguard
     ! $removeparam=utm_content  # from Adguard and Ru AdList
     ! $removeparam=utm_emcid  # from Adguard
     ! $removeparam=utm_emmid  # from Adguard
@@ -1141,7 +1143,6 @@ xxx-comics.pro$removeparam=view
     ! ||xxx-comics.pro/*?view=$doc,other,removeparam=view  # from uBlock filters
 
 ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck!
-
 yandex.$removeparam=clid
     ! ||www.yandex.$removeparam=clid  # from Adguard
     ! ://yandex.$removeparam=clid  # from Adguard
@@ -1421,7 +1422,6 @@ $removeparam=ns_fee,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_linkname,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_mchannel,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_source,domain=bbc.com|bbc.co.uk  # from Adguard
-$removeparam=ocid,domain=bbc.com|bbc.co.uk  # from Adguard
 
 ! already blocked, but
 ||cc.loginfra.com/cc$removeparam=a  # from Adguard
