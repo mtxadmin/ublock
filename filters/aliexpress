@@ -9,11 +9,9 @@
 
 !! URL parameters
 
-! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=ad_pvid
-aliexpress.ru$removeparam=ad_pvid
-
 ! See aff_ parameters in _removeparams
+
+taobao.com$removeparam=activityId  # from Adguard
 
 ! Found independently.
 aliexpress.com$removeparam=algo_exp_id
@@ -23,11 +21,7 @@ aliexpress.ru$removeparam=algo_exp_id
 aliexpress.com$removeparam=algo_expid
 aliexpress.ru$removeparam=algo_expid
 
-! Found independently. Confirmed by months of testing. Now it is in NeatURL too
-aliexpress.com$removeparam=|algo_pvid
-aliexpress.ru$removeparam=|algo_pvid
-    ! Later: unusual form from Ru AdList
-    ! algo_pvid=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
+tmall.com$removeparam=ali_trackid  # from Adguard
 
 !aliexpress.com$removeparam=appKey - don't, it breaks related search
 
@@ -38,6 +32,8 @@ aliexpress.ru$removeparam=browser_id
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
 aliexpress.com$removeparam=btsid
 aliexpress.ru$removeparam=btsid
+
+tmall.com$removeparam=bxsign  # from Adguard
 
 ! Found independently, added 2021-04-25
 aliexpress.com$removeparam=ck
@@ -50,6 +46,10 @@ aliexpress.ru$removeparam=cn
 ! Found independently.
 aliexpress.com$removeparam=cv
 aliexpress.ru$removeparam=cv
+
+! Found independently, added 2022-01-11
+aliexpress.com$removeparam=compareFields
+aliexpress.ru$removeparam=compareFields
 
 !aliexpress.com$removeparam=dl - don't!
 
@@ -112,14 +112,7 @@ aliexpress.ru$removeparam=pdp_ext_f
 aliexpress.com$removeparam=pdp_pi
 aliexpress.ru$removeparam=pdp_pi
 
-! Found independently. Confirmed by months of testing. 
-! Update: don't, it breaks search filters in category :-(
-! Update2. Ok, cleaner urls are more important. Removing again.
-! Update3. It turns out Adguard has this rule too.
-aliexpress.com$removeparam=pvid
-aliexpress.ru$removeparam=pvid
-! 2022-02: Adguard has this rule also for taobao
-taobao.com$removeparam=pvid  # from Adguard
+taobao.com$removeparam=ptl  # from Adguard
 
 ! Found independently.
 aliexpress.com$removeparam=rmsg
@@ -149,6 +142,8 @@ aliexpress.ru$removeparam=_t
 ! from Adguard, added 2022-02
 ||aliexpress.$removeparam=terminal_id  # from Adguard
 
+taobao.com$removeparam=traceId  # from Adguard
+
 ! Found independently, earlier than 2021-04. Seems fully working
 aliexpress.com$removeparam=tracelog
 aliexpress.ru$removeparam=tracelog
@@ -157,19 +152,18 @@ aliexpress.ru$removeparam=tracelog
 aliexpress.com$removeparam=ug_edm_item_id
 aliexpress.ru$removeparam=ug_edm_item_id
 
+$removeparam=union_lens,domain=tmall.com|taobao.com  # from Adguard
+
 ! from Adguard, added 2022-02
 ||aliexpress.$removeparam=utparam  # from Adguard
 ! Adguard has this rule also for taobao
 taobao.com$removeparam=utparam  # from Adguard
 
-
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
 aliexpress.com$removeparam=ws_ab_test
 aliexpress.ru$removeparam=ws_ab_test
 
-! Found independently, added 2022-01-11
-aliexpress.com$removeparam=compareFields
-aliexpress.ru$removeparam=compareFields
+taobao.com$removeparam=xId  # from Adguard
 
 
 ! todo: aliexpress parameters
