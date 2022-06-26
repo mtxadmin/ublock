@@ -38,6 +38,8 @@ $removeparam=ad_config_id
     ! ||brightcovecdn.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xhr,domain=tvnz.co.nz  # from uBlock filters
     ! *$xhr,removeparam=ad_config_id,domain=telequebec.tv  # from uBlock filters
 
+$removeparam=adfrom  # from Adguard
+
 $removeparam=/^adjust_.*/  # adjust.com campains. Also see adjust ad network
     ! $removeparam=adjust_adgroup  # from Adguard
     ! $removeparam=adjust_campaign  # from Adguard
@@ -949,8 +951,8 @@ $document,removeparam=ustq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 maximonline.ru$removeparam=previewToken  # from Ru AdList, modified
     ! ?previewToken=$document,removeparam=|,domain=maximonline.ru  # from Ru AdList
 
-! media01.eu - blocked entirely, just for information
-!||media01.eu/set.aspx$removeparam=trackid  # from Adguard
+! media01.eu - blocked entirely, just for information. But.
+||media01.eu/set.aspx$removeparam=trackid  # from Adguard
 
 mediamarkt.com.tr$removeparam=rbtc  # from Adguard
 
@@ -1384,3 +1386,19 @@ toomics.com$removeparam=subpid  # from Adguard
 ! already blocked, but
 p.typekit.net$stylesheet,removeparam  # from Adguard
 
+lazada.vn$removeparam=mkttid  # from Adguard
+lazada.vn$removeparam=laz_trackid  # from Adguard
+
+||trib.al$removeparam=h  # from Adguard
+||trib.al$removeparam=__tn__  # from Adguard
+||trib.al$removeparam=c[0]  # from Adguard
+
+qcplay.co.jp/?shortlink=*&c=$removeparam=c  # from Adguard
+
+deezer.com$removeparam=origin  # from Adguard
+
+! already blocked, but
+||mkaff.com/landings/$removeparam  # from Adguard
+
+get-express-vpns.com$removeparam=sxid  # from Adguard
+get-express-vpns.com$removeparam=ttorigin  # from Adguard
