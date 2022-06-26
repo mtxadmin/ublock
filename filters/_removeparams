@@ -628,11 +628,11 @@ $removeparam=_zucks_suid  # from Adguard
 5-delivery.ru$removeparam=c  # from Adguard
 5-delivery.ru$removeparam=pid  # from Adguard
 
-! adjust.com - blocked entirely, just for information
-!adjust.com$removeparam=adgroup  # from Adguard
+! adjust.com - blocked entirely, just for information. But.
+adjust.com$removeparam=adgroup  # from Adguard
 
-! admitad.com - blocked entirely, just for information
-!ad.admitad.com$removeparam=/^subid/  # from Adguard
+! admitad.com - blocked entirely, just for information. But.
+admitad.com$removeparam=/^subid/  # from Adguard
 
 # from Adguard (sic!): $removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
 adguard.com$removeparam=aid  # from Adguard
@@ -657,11 +657,11 @@ adorama.com$removeparam=bc_pid  # from Adguard
 !||pixel.adsafeprotected.com/services/pub?$removeparam=url  # from Adguard
 !||pixel.adsafeprotected.com/services/pub?$removeparam=wr  # from Adguard
 
-! adshares.net - blocked entirely, just for information
-!adshares.net$removeparam=cid  # from Adguard
+! adshares.net - blocked entirely, just for information. But.
+adshares.net$removeparam=cid  # from Adguard
 
-! adweek.com - blocked entirely, just for information
-!adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
+! adweek.com - blocked entirely, just for information. But.
+adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
 
 airbnb.com$removeparam=|source_impression_id|euid
 airbnb.ru$removeparam=|source_impression_id|euid
@@ -728,10 +728,10 @@ bing.com$removeparam=sc  # from NeatURL
 bing.com$removeparam=sk  # from NeatURL
 bing.com$removeparam=sp  # from NeatURL
 
-! bitrec.com - blocked entirely, just for information
-    ! cod.bitrec.com/topocentras-services/js/recs?$removeparam=externalVisitorId  # from Adguard
-    ! cod.bitrec.com/topocentras-services/js/recs?$removeparam=r  # from Adguard
-    ! cod.bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adguard
+! bitrec.com - blocked entirely, just for information. But.
+||bitrec.com/topocentras-services/js/recs?$removeparam=externalVisitorId  # from Adguard
+||bitrec.com/topocentras-services/js/recs?$removeparam=r  # from Adguard
+||bitrec.com/topocentras-services/js/recs?$removeparam=visitorId  # from Adguard
 
 change.org$removeparam=guest  # Campaign tracking (Change.org)  # from NeatURL
 change.org$removeparam=recruited_by_id  # Campaign tracking (Change.org)  # from NeatURL
@@ -739,8 +739,8 @@ change.org$removeparam=recruiter  # Campaign tracking (Change.org)  # from NeatU
 change.org$removeparam=short_display_name  # Campaign tracking (Change.org)  # from NeatURL
 change.org$removeparam=source_location  # Campaign tracking (Change.org)  # from NeatURL
 
-! cht.com.tw - blocked entirely, just for information
-!cht.com.tw$removeparam=Identifier  # from Adguard: cht.com.tw$removeparam=Identifier
+! cht.com.tw - blocked entirely, just for information. But.
+cht.com.tw$removeparam=Identifier  # from Adguard: cht.com.tw$removeparam=Identifier
 
 comodo.com$removeparam=af  # from Adguard
 comodo.com$removeparam=track  # from Adguard
@@ -753,6 +753,8 @@ coupang.com$removeparam=traceid  # from Adguard
 coupang.com$removeparam=wPcid  # from Adguard
 coupang.com$removeparam=wRef  # from Adguard
 coupang.com$removeparam=wTime  # from Adguard
+||coupang.com/*/products/$removeparam=q  # from Adguard
+||coupang.com/*/products/$removeparam=searchId  # from Adguard
 
 coursera.org$removeparam=siteID  # from Adguard
 
@@ -762,8 +764,8 @@ dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
     ! ||api.discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/,domain=hgtv.com  # from Adguard
     ! ||api.discovery.com/v1/streaming/video/*&adNetworkId=$xhr,removeparam=/^ad/,domain=ahctv.com|animalplanet.com|cookingchanneltv.com|destinationamerica.com|discovery.com|discoverylife.com|diynetwork.com|foodnetwork.com|hgtv.com|investigationdiscovery.com|motortrend.com|sciencechannel.com|tlc.com|travelchannel.com  # from uBlock filters
 
-! doubleclick.net - blocked entirely, just for information
-!||ad.doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
+! doubleclick.net - blocked entirely, just for information. But.
+||doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
 
 ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
 ebay.*$removeparam=campid  # from Adguard
@@ -945,10 +947,10 @@ addons.mozilla.org$removeparam=|src|source|surveyversion|updateChannel|fxVersion
 mvideo.ru$removeparam=reff  # from Adguard: mvideo.ru$removeparam=/^(_requestid|reff)=/
 mvideo.ru$removeparam=_requestid  # from Adguard: mvideo.ru$removeparam=/^(_requestid|reff)=/
 
-! myvisualiq.net - blocked entirely, just for information
-!t.myvisualiq.net$removeparam=~red  # from Adguard
+! myvisualiq.net - blocked entirely, just for information. But.
+myvisualiq.net$removeparam=~red  # from Adguard
 
-||nationalinterest.org$removeparam=|itok|timestamp
+nationalinterest.org$removeparam=|itok|timestamp
 
 nicovideo.jp$removeparam=cmnhd_ref  # from Adguard
 
