@@ -1991,6 +1991,7 @@ volveter.ru##.has_offer_prop
 /1x1.png$important  # from RU AdList, modified
 /1x1.trans.  # from Fanboy's
 /1x1transparent.  # is in Fanboy's
+/acctag.js  # from Adguard
 &action=js_stats&  # EasyPrivacy rule
 /ajax_counter.php
 /akam/*
@@ -2039,6 +2040,8 @@ _analytics.js?  # from EasyPrivacy
     ! /beacon.js$important
     ! /beacon.min.js$important
     ! /cdn-cgi/challenge-platform/h/g/beacon/*$xmlhttprequest,~third-party  # from Adguard
+    ! ||github.com/notifications/beacon/$important  # from Adguard
+    ! ||yemeksepeti.com/*/xhr/b/s/beacon  # from Adguard
 .beacon.min.js  # from EasyPrivacy
 /blank.gif
     ! /px/*/blank.gif?  # is in EasyPrivacy
@@ -2080,6 +2083,7 @@ _chartbeat.js  # from EasyPrivacy
 /event/track?  # from EasyPrivacy
 /event-tracker/*  # bitrix lib
 /events-metrica-scripts.js
+/facebook_pixel_  # from Adguard
 /fingerprint$important,all
     ! /fingerprint.min.js$important
     ! /fingerprint2.min.js$important  # is in EasyPrivacy and AdGuard
@@ -2162,6 +2166,7 @@ _social_tracking.js  # from EasyPrivacy
 /tag-manager-client/*
 /tbw/pixels/*  # is in EasyPrivacy
 /track?$image  # from EasyPrivacy: .com/track?$image
+    ! ||seesaa.net/common/track.gif^  # from Adguard
 /track.js$important
 /tracklog.  # is in EasyPrivacy
 /track.min.js
@@ -2288,6 +2293,7 @@ _tracker.js.  # from EasyPrivacy
 /vtracker_  # from EasyPrivacy
 /vuukle-analytics.  # from EasyPrivacy
 .webmetrics.js  # from EasyPrivacy
+/wherego_tracker.js  # from Adguard
 /wle_tracker.js
 /?wordfence
 /wp-slimstat/*  # is in 3 lists
