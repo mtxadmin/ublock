@@ -2077,7 +2077,6 @@ _chartbeat.js  # from EasyPrivacy
 /empty.gif
 /emptypixel.png
 .emsecure.min.js  # from EasyPrivacy
-/engine/ping?  # is in EasyPrivacy
 /eprivacy.  # is in Fanboy's
 /event_logger  # from EasyPrivacy
 /event/track?  # from EasyPrivacy
@@ -2129,6 +2128,9 @@ _pagespeed_beacon?  # from AdGuard
 /parking-crew.js
 /paystats-public.js
 /ping/*$xmlhttprequest
+/ping?*$xmlhttprequest
+    ! /engine/ping?  # is in EasyPrivacy
+    ! /stats/ping?  # is in EasyPrivacy
 /pixel/*
 /pixel?
     ! /visits/pixel?  # from EasyPrivacy
