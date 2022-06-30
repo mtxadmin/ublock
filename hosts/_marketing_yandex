@@ -13,17 +13,17 @@ api.passport.yandex.ru$third-party
 ! ads and telemetry
 
 ! adfox belongs to Yandex. A pair of cosmetic rules about it are also here
-adfox.ru$important
+adfox.ru$important,all
 !+  ads.adfox.ru
 !+  help.adfox.ru
 !+  iva.adfox.ru
 !+  1.adfox.ru
 !+  myt.adfox.ru
-adfox.net$important
+adfox.net$important,all
 !+  banners.adfox.net
 adfox.me  # from MobileAdTrackers
 adfox-external-l3-engine.stable.qloud-b.yandex.net
-/adfox$important
+/adfox$important,all
 adfox.yandex.ru
 ##[class*="adfox"]:not(html):not(body):not(article)
 ##[id*="adfox"]:not(html):not(body):not(article)
@@ -34,35 +34,35 @@ adfox.yandex.ru
 ! from AdGuard
 ##div[id^="AdFox_banner_"]
 
-advertising.yandex.ru$important
+advertising.yandex.ru$important,all
 adfstat.yandex.ru  # from Adguard
 
 ||an.yandex.  # from Adguard
-an.yandex.ru$important
+an.yandex.ru$important,all
 /cdn-cgi/pe/bag2?r[]=*an.yandex.ru  # from Ru AdList
 
 
     ! metrics and trackers
 
-appmetrica.yandex.net$important
+appmetrica.yandex.net$important,all
 !+  api.appmetrica.yandex.net
-appmetrica.yandex.com$important
+appmetrica.yandex.com$important,all
 !+  api.appmetrica.yandex.com
 !+  redirect.appmetrica.yandex.com
-appmetrica.yandex.ru$important
+appmetrica.yandex.ru$important,all
 !+  api.appmetrica.yandex.ru
 !+  redirect.appmetrica.yandex.ru
-appmetrika.yandex.$important
-appmetrika.yandex.net$important
-appmetrika.yandex.com$important
-appmetrika.yandex.ru$important
-appmetrica.yandex.$important
+appmetrika.yandex.$important,all
+appmetrika.yandex.net$important,all
+appmetrika.yandex.com$important,all
+appmetrika.yandex.ru$important,all
+appmetrica.yandex.$important,all
 ! end of appmetrica.yandex
 
 api-metrica.yandex.ru
 web-metrica.yandex.ru
 
-mc.yandex.ru$important
+mc.yandex.ru$important,all
 !+  mediascope.mc.yandex.ru
 ! end of mc.yandex.ru
 mc.yandex.com  # from Adguard
@@ -87,50 +87,50 @@ external-promo-metrics.yandex.net  # from Adguard
 ! metrika yandex hosts mostly from https://hosts-file.net/ad_servers.txt
 ! disable any whitelists
 ! Don't know, make these hosts $third-party or not. 
-    ! metrica.yandex.*$important
-metrica.yandex.by$important
-metrica.yandex.com$important
-metrica.yandex.com.tr$important
-metrica.yandex.com.ua$important
-metrica.yandex.kz$important
-metrica.yandex.net$important
-metrica.yandex.ru$important
-metrica.yandex.ua$important
-    ! metrika.yandex.$important    
-metrika.yandex.by$important
-metrika.yandex.com$important
-metrika.yandex.com.tr$important
-metrika.yandex.com.ua$important
-metrika.yandex.kz$important
-metrika.yandex.net$important
-metrika.yandex.ru$important
-metrika.yandex.ua$important
-    ! web-metrica.yandex.*$important
-web-metrica.yandex.by$important
-web-metrica.yandex.com$important
-web-metrica.yandex.com.tr$important
-web-metrica.yandex.com.ua$important
-web-metrica.yandex.kz$important
-web-metrica.yandex.net$important
-web-metrica.yandex.ru$important
-web-metrica.yandex.ua$important
+    ! metrica.yandex.*$important,all
+metrica.yandex.by$important,all
+metrica.yandex.com$important,all
+metrica.yandex.com.tr$important,all
+metrica.yandex.com.ua$important,all
+metrica.yandex.kz$important,all
+metrica.yandex.net$important,all
+metrica.yandex.ru$important,all
+metrica.yandex.ua$important,all
+    ! metrika.yandex.$important,all    
+metrika.yandex.by$important,all
+metrika.yandex.com$important,all
+metrika.yandex.com.tr$important,all
+metrika.yandex.com.ua$important,all
+metrika.yandex.kz$important,all
+metrika.yandex.net$important,all
+metrika.yandex.ru$important,all
+metrika.yandex.ua$important,all
+    ! web-metrica.yandex.*$important,all
+web-metrica.yandex.by$important,all
+web-metrica.yandex.com$important,all
+web-metrica.yandex.com.tr$important,all
+web-metrica.yandex.com.ua$important,all
+web-metrica.yandex.kz$important,all
+web-metrica.yandex.net$important,all
+web-metrica.yandex.ru$important,all
+web-metrica.yandex.ua$important,all
 /metric.js
-/metrica.js$important
+/metrica.js$important,all
 /metrica/*  # is in EasyPrivacy: /metrica/sp.js
-/metrics.js$important
-/metrika/*$important
-/metrika.js$important
+/metrics.js$important,all
+/metrika/*$important,all
+/metrika.js$important,all
 /yametrika/*
 /yandex-metrica-watch/*
 ! is in AdGuard
 ##a[href^="https://metrika.yandex.ru/stat/"]
 
-metrika-informer.com$important
+metrika-informer.com$important,all
 
 metrica-yandex.com  # from GoodbyeAds
 
 ! some embed modules from 3rd sites
-jstracer.yandex.ru$important
+jstracer.yandex.ru$important,all
 !strm.yandex.ru$important --video, don't block entirely
 !strm.yandex.net - maybe too
 ! but:
@@ -143,47 +143,46 @@ log.strm.yandex.ru
 
     ! banners
 
-||awaps.yandex.$important  # from Adguard, modified
-awaps.yandex.by$important
-awaps.yandex.com$important
-awaps.yandex.com.tr$important
-awaps.yandex.com.ua$important
-awaps.yandex.kz$important
-awaps.yandex.net$important
-awaps.yandex.ru$important
-awaps.yandex.ua$important
+||awaps.yandex.$important,all  # from Adguard, modified
+awaps.yandex.by$important,all
+awaps.yandex.com$important,all
+awaps.yandex.com.tr$important,all
+awaps.yandex.com.ua$important,all
+awaps.yandex.kz$important,all
+awaps.yandex.net$important,all
+awaps.yandex.ru$important,all
+awaps.yandex.ua$important,all
 /ya-awaps2/*  # from Ru AdList
-||yastatic.net/awaps-ad-sdk-js$important
+||yastatic.net/awaps-ad-sdk-js$important,all
     ! ||yastatic.net/awaps-ad-sdk-js/
 
-bs.yandex.ru$important
+bs.yandex.ru$important,all
 bs-meta.yandex.ru  # from MVPS
 
 cloud-api.yandex.ru  # app requests
 
 csp.yandex.net  # no-csp-reports: * true
 
-direct.yandex.ru$important
+direct.yandex.ru$important,all
 !+  api.direct.yandex.ru
 ! disable any whitelists. Third-party option doesn't work on search pages on yandex.ru, so block it completely
 ! from Ru AdList
 ##iframe[src*="directadvert"]
 
 ||kiks.yandex.  # from Adguard
-kiks.yandex.ru$important
+kiks.yandex.ru$important,all
 
 push.yandex.ru  # app requests
 
-yabs.yandex.ru$important
+yabs.yandex.ru$important,all
 
-yandexadexchange.net$important
+yandexadexchange.net$important,all
 !+  dsp.yandexadexchange.net
 ! end of yandexadexchange.net
 
 informer.yandex.ru$important,third-party
 
-! from RU AdList, modified
-zenadservices.net$important
+zenadservices.net$important,all  # from Ru AdList, modified
 zen-test.yandex.ru  # from Ru AdList
 
 ad-constructor.yandex.ru
@@ -205,10 +204,10 @@ ya-distrib.ru
 
 
 ! "updater"
-browser-updater.yandex.net$important  # from Ru AdList
+browser-updater.yandex.net$important,all  # from Ru AdList
 updater.mobile.yandex.net
 updater.tst.mobile.yandex.net
-||yastatic.net/browser-updater/$important
+||yastatic.net/browser-updater/$important,all
 
 # don't block mobile.yandex.net entirely
 addappter.mobile.yandex.net
@@ -216,10 +215,10 @@ addappter-api.mobile.yandex.net
 advisor-retail.mobile.yandex.net
 advisor-widget.mobile.yandex.net
 advisor-widget.tst.mobile.yandex.net
-analytics.mobile.yandex.net$important
-analytics-slb.mobile.yandex.net$important
+analytics.mobile.yandex.net$important,all
+analytics-slb.mobile.yandex.net$important,all
 appmetrica.ios.mobile.yandex.net
-banners.mobile.yandex.net$important  # is in Adguard
+banners.mobile.yandex.net$important,all  # is in Adguard
 banners-slb.mobile.yandex.net  # is in Adguard
 banners.tst.mobile.yandex.net
 certificate.mobile.yandex.net
@@ -264,7 +263,7 @@ soft.export.yandex.ru  # soft.export.yandex.ru/status.xm  # soft.export.yandex.r
 sovengard.mobile.yandex.net
 staging-startup.mobile.yandex.net
 startup.ios.mobile.yandex.net
-startup.mobile.yandex.net$important
+startup.mobile.yandex.net$important,all
 startup.tst.mobile.yandex.net
 startup-partners.ios.mobile.yandex.net
 startup-partners.mobile.yandex.net
@@ -278,8 +277,8 @@ yastore.mobile.yandex.net
 awsync.yandex.ru  # from Adguard
 
 ! share buttons
-share.yandex.ru$important
-share.yandex.net$important
+share.yandex.ru$important,all
+share.yandex.net$important,all
 
 z5h64q92x9.net
 !+  pssp.z5h64q92x9.net
@@ -290,7 +289,7 @@ z5h64q92x9.net
 uniproxy.alice.yandex.net
 
 ! a-b tests
-aab-pub.s3.yandex.net$important
+aab-pub.s3.yandex.net$important,all
 
 ||button.blogs.yandex.  # from Adguard
 
