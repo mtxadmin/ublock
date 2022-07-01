@@ -1785,6 +1785,8 @@ au.ru##.au-footer-copyblock
 ! modal
 au.ru##.au-modal
 au.ru##.au-adult-modal-background
+! premium
+krsk.au.ru##.au-recommended-item:has(.au-lot-card-pic__ribbon)
 ! other
 
     ! banners
@@ -3825,6 +3827,16 @@ citrix.com##.page-banner
 
 city-denta.ru##.rev_slider_wrapper
 
+cityescape.ru$inline-script  # site is blocking copypaste
+! site is blocking selection
+cityescape.ru##html:style(-webkit-touch-callout:initial !important)
+cityescape.ru##html:style(-webkit-user-select:initial !important)
+cityescape.ru##html:style(-khtml-user-select:initial !important)
+cityescape.ru##html:style(-moz-user-select:initial !important)
+cityescape.ru##html:style(-ms-user-select:initial !important)
+cityescape.ru##html:style(user-select:initial !important)
+cityescape.ru##html:style(-webkit-tap-highlight-color:initial !important)
+
 ||citymaker.ru/tpldata/images/logo*.png
 
 classmag.ru##.slider
@@ -3937,6 +3949,8 @@ cnn.com##.ticker-ribbon
 cnn.com##.pg__branding-logo
 
 ||codecguide.com/stats.js  # is in EasyPrivacy
+
+codeless.co##.header_wrapper:style(position:static !important)
 
 codeproject.com##.sub-headerbar-divider
 codeproject.com##.author-wrapper
@@ -4158,6 +4172,11 @@ cov.su##[class$=__positionfixed]
 cov.su##[href="javascript:t190_scrollToTop()"]
 
 cpanet.com##.birdseye-header:style(position:static !important)
+
+||crash-tests.net/*/header_r.jpg
+||crash-tests.net/images/crash.jpg
+crash-tests.net###tdTopBG
+crash-tests.net###addBookmarkContainer
 
 credera.com##p:has-text(/Transform your business|Explore Our Microsoft Consulting/)
 ! it is hr in fact
@@ -6070,6 +6089,8 @@ eztv.io###header_logo
 f.ua##div.articles_related_products
 f.ua##.toolbar
 f.ua##.call_block
+
+||f1cd.ru/images/img/portal-title.png
 
 f1comp.ru##.linkhome
 f1comp.ru###header
@@ -10822,6 +10843,10 @@ litrec.net##.splide
 ||littleone.com/*/header_resp_link.png
 littleone.com##.snackbar
 
+litvak.me##header
+||litvak.me/*/wrapp_b.jpg
+litvak.me##.f_blank
+
 liveexpert.ru##.applications-section
 liveexpert.ru##.online-wrapper
 
@@ -13472,6 +13497,9 @@ ochkov.net##.nfe_header__our-lenses
 ocomp.info##.usk_w
 ocomp.info###toc_container
 
+culturemeter.od.ua##.sidebar
+culturemeter.od.ua##.pad:style(padding-top:0px !important; padding-bottom:0px !important )
+
 odintsovo.info##.news-yzen
 odintsovo.info##.news-ynews
 odintsovo.info##.news-telegram
@@ -14877,6 +14905,8 @@ popmech.ru##.icon-ins
 popmech.ru##.subscription_block
 ! from Adguard
 popmech.ru##.detail-video-recommendation
+
+popsters.ru$3p  # transferred from _marketing
 
 ! previous: popwrecked.com  # fake porno site. Redirects. Update: there are many such sites
 ! it is interesting, but root is some king of a news site. With porno galleries inside (or it was long ago?)
@@ -20036,6 +20066,10 @@ tursar.ru##.pickto:style(position:static !important)
 tursar.ru##.news
 tursar.ru##.Fuser
 
+tursvodka.ru##.block-regionsubmit
+||tursvodka.ru/tpl/template/img/bk-subscript.png
+tursvodka.ru##.block-subscript
+
 ||tut.by/1px.gif
 ||tut.by/push/
 ! is in Ru AdList
@@ -24170,41 +24204,6 @@ veslo.su##.et_pb_section--fixed:style(position:static !important)
 
 hot-team.ru##.logoAndInfoWrapper
 hot-team.ru##.headerImage
-
-tursvodka.ru##.block-regionsubmit
-||tursvodka.ru/tpl/template/img/bk-subscript.png
-tursvodka.ru##.block-subscript
-
-! premium
-krsk.au.ru##.au-recommended-item:has(.au-lot-card-pic__ribbon)
-
-cityescape.ru$inline-script  # site is blocking copypaste
-! site is blocking selection
-cityescape.ru##html:style(-webkit-touch-callout:initial !important)
-cityescape.ru##html:style(-webkit-user-select:initial !important)
-cityescape.ru##html:style(-khtml-user-select:initial !important)
-cityescape.ru##html:style(-moz-user-select:initial !important)
-cityescape.ru##html:style(-ms-user-select:initial !important)
-cityescape.ru##html:style(user-select:initial !important)
-cityescape.ru##html:style(-webkit-tap-highlight-color:initial !important)
-
-||crash-tests.net/*/header_r.jpg
-||crash-tests.net/images/crash.jpg
-crash-tests.net###tdTopBG
-crash-tests.net###addBookmarkContainer
-
-codeless.co##.header_wrapper:style(position:static !important)
-
-litvak.me##header
-||litvak.me/*/wrapp_b.jpg
-litvak.me##.f_blank
-
-||f1cd.ru/images/img/portal-title.png
-
-popsters.ru$3p  # transferred from _marketing
-
-culturemeter.od.ua##.sidebar
-culturemeter.od.ua##.pad:style(padding-top:0px !important; padding-bottom:0px !important )
 
 ||gettyimages.*/pulse$ping  # is in EasyPrivacy
 
