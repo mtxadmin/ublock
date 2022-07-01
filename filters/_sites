@@ -1152,6 +1152,9 @@ allo-santehnika.ru###grafik2
 
 allparket.com###head
 
+allpremium.net##.single-prev-next
+allpremium.net##.wp_random_inside
+
 ||allrussian.info/wcf/images/edited/header_hintergrund.png
 
 all-shoes.ru##.logo_block
@@ -1742,6 +1745,9 @@ astv.ru##.main-title-rubric
 asus.com##.asusOfficialProductMenu:style(position:static !important)
 asus.com##[class^=HeaderDesktop__logo]
 asus.com##[class^=Footer__communityLink]
+
+aternos.org$script,redirect-rule=noopjs  # from uBlock filters  # "free Minecraft servers"
+||aternos.org/panel/ajax/reportDetection.php?$xhr,1p  # from uBlock filters
 
 ! atlassian.com
 community.atlassian.com##.atl-register-login-hero
@@ -4119,6 +4125,8 @@ coursehero.com
 coursera.org##.LearnerOutcomes__container
 coursera.org##.rc-UserTestimonialsSection
 
+||courses99.com/wp-content/uploads/2021/12/6056607*.png
+
 cov.su##.autoflash
 cov.su##[class$=_animate]
 cov.su##.t-sbs-anim_started
@@ -6049,6 +6057,8 @@ familyhandyman.com##.author-extended-meta
 familyhandyman.com##.logo-socials
 familyhandyman.com##.diyu-logo
 
+familyporner.com##.textovka
+
 fanatical.com$3p  # ad cookies
 
 fanboy.co.nz##+js(cookie-remover.js)
@@ -6435,6 +6445,9 @@ floy.com.ua###head:style(position:static !important)
 ! FluidSurveys - closed (joined Surveymonkey.com)
 fluidsurveys.com$3p
 
+||flypgs.com/files/anasayfa_app_banner/pegasus_app_download_banner_ru.jpg
+flypgs.com##.text-block
+
 ||flysat.com/resim  # from Adguard
 
 f-np.ru##.headerbar
@@ -6599,6 +6612,8 @@ fractal-design.com##.c-product-menu:style(position:static !important)
 freebsdnews.com###sidebar
 
 freeccnaworkbook.com$inline-script  # "Adblocker detected"
+
+@@||freecoursesite.com^$generichide,badfilter  # Adguard exclusion rule
 
 ||freecram.com/imgs/adts.png
 ||freecram.com/imgs/downpdf.png
@@ -9276,6 +9291,8 @@ joyreactor.cc,reactor.cc##.top_logo
 joyreactor.cc,reactor.cc###header
 
 jpearson.blog###hero-header
+
+||jsdelivr.net/*/subscribe_banner$image
 
 jsprav.ru##.float-menu:style(position:static !important)
 jsprav.ru##.float-menu-head:style(position:static !important)
@@ -13627,6 +13644,18 @@ oneprogs.ru##.vk-group
 
 onetrust.com$3p,important  # hmm... 3p scripts...
 
+    ! banners and promos
+||onetwotrip.com/images/index/$image
+    ! ||onetwotrip.com/images/index/mobileApp/$image
+    ! ||onetwotrip.com/images/index/press/$image
+||onetwotrip.com/images/marketing/$image
+onetwotrip.com##[data-locator="banner-app-desktop"]
+onetwotrip.com##[data-locator="subscription-banner"]
+onetwotrip.com##div:has-text(/^Mobile app$/)
+    ! seo
+onetwotrip.com###seoText
+    ! other
+
 oneweb.pro##.show > [href^="/слайдер/"]
 oneweb.pro###slider
 
@@ -14175,6 +14204,11 @@ pcworld.com##.primaryFooter-top
 pechenek.net##[href^="https://ru.spamguardapp.com/"]
 pechenek.net##.mega-sticky:style(position:static !important)
 pechenek.net##.yadengi
+
+pegastk.com##.njt-nofi-container
+pegastk.com##a[href="https://pegastk.com/"]
+pegas-turistik.ru##.njt-nofi-container
+pegas-turistik.ru##a[href="https://pegas-turistik.ru/"]
 
 pemato.de###colophon
 
@@ -15047,6 +15081,9 @@ programiz.com##.notice-bar-top
 
 ||programming4.us/images/bo-left-mnu.png
 
+programmingoneonone.com$inline-script  # ad redirects
+programmingoneonone.com##.header-header
+
 pro-ielts.ru##.entry-header
 
 proivf.ru##.sticky-header:style(position:static !important)
@@ -15888,6 +15925,10 @@ reuters.com##.reuters-logo
 reuters.com##.header-mini-logo
 reuters.com##div.bleeding.module.section
 reuters.com###hp-newsletters
+
+||api.reverso.net/stats/  # from Adguard
+||cdn.reverso.net/ramjs/  # from Adguard
+||cdn.reverso.net/rumjs/  # from Adguard
 
 reviewpoint.ru###mt-menu-wrap:style(position:static !important)
 reviewpoint.ru##.top-header-section
@@ -18132,6 +18173,8 @@ stackshare.io##div:has(>a[href="/private"])
 stackshare.io##div:has(>button[data-testid="signupFullAccessButton"])
 stackshare.io##div:has(>div>button:has-text(Get Advice))
 
+stalker-kb.ru##[href="http://stalker-kb.ru/"]
+
 starmommy.com##.sticky-header:style(position:static !important)
 
 startfilm.ru###takeover_up
@@ -18372,6 +18415,9 @@ stvol.ua##.fancybox-wrap
 stvol.ua##.credit
 stvol.ua##.m-one-click
 stvol.ua##.black_credit
+
+stylelib.org##.ielements
+stylelib.org###top-wrapper:style(position:static !important)
 
 sub-cult.ru##.carouselbanner
 sub-cult.ru##a[href^="https://yandex.ru/news/"]
@@ -20025,6 +20071,10 @@ udemy.com##.udlite-btn:has-text(/Share|Поделиться/)
 uft.me###clickbg
 udemy.com##[class^=popover--popover]
 
+!udemyfreecourses.org$inline-script  # ad popups
+||udemyfreecourses.org/images/udemy-free-courses.jpg
+udemyfreecourses.org##.jumbotron
+
 ugoloknavanny.ru##.cit
 ugoloknavanny.ru##.top
 ugoloknavanny.ru##.centerblock1:style(margin-top:0px !important)
@@ -21260,6 +21310,9 @@ wearediagram.com##.section-break__line-wrapper
 ! many other things
 web.de##.notification-alert
 
+webcourses.us##.wptwa-container
+webcourses.us##.wp-caption-text
+
 webcusp.com##.et_pb_widget
 webcusp.com###wpautbox_about
 webcusp.com##.wpautbox-below
@@ -22401,6 +22454,9 @@ zabota-market.ru##.v-header__list
 zabota-market.ru###logo_sidelka
 zabota-market.ru###slovo_sid
 zabota-market.ru###bit
+
+||zabroniryi.ru/images/HorizontalLogos.png
+zabroniryi.ru##.AandASlogan
 
 zachestnyibiznes.ru##.to-stat
 
@@ -24154,62 +24210,4 @@ bronevik.com##.banner-cashback-main
 bronevik.com##.sendsay-container
 
 ||acase.ru/*/menu_back_$image
-
-    ! banners and promos
-||onetwotrip.com/images/index/$image
-    ! ||onetwotrip.com/images/index/mobileApp/$image
-    ! ||onetwotrip.com/images/index/press/$image
-||onetwotrip.com/images/marketing/$image
-onetwotrip.com##[data-locator="banner-app-desktop"]
-onetwotrip.com##[data-locator="subscription-banner"]
-onetwotrip.com##div:has-text(/^Mobile app$/)
-    ! seo
-onetwotrip.com###seoText
-    ! other
-
-||zabroniryi.ru/images/HorizontalLogos.png
-zabroniryi.ru##.AandASlogan
-
-||flypgs.com/files/anasayfa_app_banner/pegasus_app_download_banner_ru.jpg
-flypgs.com##.text-block
-
-pegastk.com##.njt-nofi-container
-pegastk.com##a[href="https://pegastk.com/"]
-pegas-turistik.ru##.njt-nofi-container
-pegas-turistik.ru##a[href="https://pegas-turistik.ru/"]
-
-musicc.xyz##[href="#"]
-
-familyporner.com##.textovka
-
-stylelib.org##.ielements
-stylelib.org###top-wrapper:style(position:static !important)
-
-||courses99.com/wp-content/uploads/2021/12/6056607*.png
-
-||jsdelivr.net/*/subscribe_banner$image
-
-aternos.org$script,redirect-rule=noopjs  # from uBlock filters  # "free Minecraft servers"
-||aternos.org/panel/ajax/reportDetection.php?$xhr,1p  # from uBlock filters
-
-@@||freecoursesite.com^$generichide,badfilter  # Adguard exclusion rule
-
-||api.reverso.net/stats/  # from Adguard
-||cdn.reverso.net/ramjs/  # from Adguard
-||cdn.reverso.net/rumjs/  # from Adguard
-
-stalker-kb.ru##[href="http://stalker-kb.ru/"]
-
-allpremium.net##.single-prev-next
-allpremium.net##.wp_random_inside
-
-webcourses.us##.wptwa-container
-webcourses.us##.wp-caption-text
-
-programmingoneonone.com$inline-script  # ad redirects
-programmingoneonone.com##.header-header
-
-!udemyfreecourses.org$inline-script  # ad popups
-||udemyfreecourses.org/images/udemy-free-courses.jpg
-udemyfreecourses.org##.jumbotron
 
