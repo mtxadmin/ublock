@@ -191,17 +191,27 @@ pikabu.ru##.page-story__placeholder
 pikabu.ru##.user__sberbank
 pikabu.ru##fw-game1-launcher
 pikabu.ru##.kong-vs-godzilla
-pikabu.ru##.popup_bottom-widget
 pikabu.ru##.halloween
 pikabu.ru##.story__top
 ! xz
 pikabu.ru##.profile_short
 ! post author descriptions
 pikabu.ru##.story__author-description
+    ! popups
 ! don't remove popups, they are all needed
 !pikabu.ru##.popup_show.popup_animation.popup
 !pikabu.ru##.popup
 !pikabu.ru##.popup__container
+!pikabu.ru##.overlay - don't
+pikabu.ru##.popup__overlay
+! popups - doesn't work properly
+!pikabu.ru##.popup__wrapper  ! don't!
+pikabu.ru##.popup__content-notification
+pikabu.ru##.popup_bottom-widget
+pikabu.ru##.popup__container:has(.auth__picture)
+pikabu.ru##.auth__picture
+pikabu.ru##.auth_modal-extended
+
 pikabu.ru##.section_gray:has-text(Чтобы оставить комментарий, необходимо)
 ! bottom icons
 pikabu.ru##.birthday-2020__button
@@ -211,12 +221,8 @@ pikabu.ru##.play-snowball_show
 pikabu.ru##.comments-navigator__inner:style(top:20px !important)
 ! profile name
 pikabu.ru##.user__nick_big
-! popups - doesn't work properly
 !pikabu.ru##+js(remove-attr.js,mouseover,.comment__user)
-!pikabu.ru##.popup__wrapper  ! don't!
 ! popups new ver
-pikabu.ru##.popup__content-notification
-!pikabu.ru##.overlay - don't
 pikabu.ru##.evaluation
 ! pictures in comments (todo: need to exclude gifs)
 !pikabu.ru##.comment-image:style(height:100px)
