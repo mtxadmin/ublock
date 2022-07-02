@@ -603,6 +603,7 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! (old) Ru AdList rule: utm_campaign=$document,queryprune=|,domain=yandex.*|aliexpress.com|aliexpress.ru
     ! In Adguard there are a bunch of specific rules. Maybe they don't like regexps?
     ! $removeparam=utm_ad  # from Adguard
+    ! $removeparam=utm_affiliate  # from Adguard
     ! $removeparam=utm_brand  # from Adguard
     ! $removeparam=utm_campaign  # from Adguard and Ru AdList
     ! $removeparam=utm_campaing  # from Ru AdList
@@ -833,7 +834,9 @@ dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
     ! ||api.discovery.com/v1/streaming/video/*&adNetworkId=$xhr,removeparam=/^ad/,domain=ahctv.com|animalplanet.com|cookingchanneltv.com|destinationamerica.com|discovery.com|discoverylife.com|diynetwork.com|foodnetwork.com|hgtv.com|investigationdiscovery.com|motortrend.com|sciencechannel.com|tlc.com|travelchannel.com  # from uBlock filters
 
 ! doubleclick.net - blocked entirely, just for information. But.
-||doubleclick.net/ddm/trackclk/$removeparam=/^dc_trk_/  # from Adguard
+doubleclick.net$removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|[abdeg-or-x])/  # from uBlock filters
+doubleclick.net$removeparam=/^dc_trk_/  # from Adguard
+doubleclick.net$removeparam=p  # from uBlock filters
 
 ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
 ebay.*$removeparam=hash  # from NeatURL
@@ -1365,12 +1368,13 @@ naver.com$removeparam=sy
 
 ||xplosion.de/ctx?event_id=$removeparam  # from Adguard
 
-||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=ads_params  # from Adguard
-||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=origin  # from Adguard
+! Already blocked
+dailymotion.com$removeparam=ads_params  # from Adguard
+dailymotion.com$removeparam=origin  # from Adguard
 
 visit.digidip.net$removeparam=/^(ppref|pid)=/  # from Adguard: visit.digidip.net$removeparam=/^(ppref|ref|pid)=/
 
-||alza.de/*.htm$removeparam=kampan  # from Adguard
+alza.de$removeparam=kampan  # from Adguard
 
 web.de$removeparam=mc  # from Adguard
 
@@ -1391,7 +1395,21 @@ mioga.de$removeparam=pl  # from Adguard
 ||app.mi.com/download/*?id=$removeparam=appSignature  # from Adguard
 ||app.mi.com/download/*?id=$removeparam=nonce  # from Adguard
 
-||daraz.*$removeparam=/keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
+||daraz.*$removeparam=/^abbucket/  # from Adguard
+||daraz.*$removeparam=/^abtest/  # from Adguard
+||daraz.*$removeparam=acm  # from Adguard
+||daraz.*$removeparam=algArgs  # from Adguard
+||daraz.*$removeparam=c  # from Adguard
+||daraz.*$removeparam=clickTrackInfo  # from Adguard
+||daraz.*$removeparam=item_id  # from Adguard
+||daraz.*$removeparam=keyori  # from Adguard
+||daraz.*$removeparam=mp  # from Adguard
+||daraz.*$removeparam=pos  # from Adguard
+||daraz.*$removeparam=search  # from Adguard
+||daraz.*$removeparam=sugg  # from Adguard
+||daraz.*$removeparam=themeID  # from Adguard
+||daraz.*$removeparam=up_id  # from Adguard
+||daraz.*$removeparam=version  # from Adguard
 
 ||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com  # from Adguard
 
@@ -1570,7 +1588,4 @@ adobe.com$removeparam=workflow  # from Adguard
 ! Already blocked. But.
 adshares.net$removeparam=cid  # from Adguard
 
-! Already blocked. But.
-doubleclick.net$removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|[abdeg-or-x])/  # from uBlock filters
-doubleclick.net$removeparam=p  # from uBlock filters
-
+heraldcorp.com$removeparam=pos  # from Adguard
