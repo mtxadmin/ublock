@@ -490,7 +490,7 @@ _800x100.  # from EasyList
 .ace.advertising.  # from EasyList
 /achecker.js
 ! here are some false positives in URL. But generally this rule is very good
-/ad/*$important,domain=~condenast-media.gcdn.co|~dhresource.com|~etutorium.com|~habr.com|~habrastorage.org|~imfdb.org|~livemaster.ru  # condenast-media.gcdn.co (admagazine.ru) is not ads, it is Arch Design
+/ad/*$important,all,domain=~condenast-media.gcdn.co|~dhresource.com|~etutorium.com|~habr.com|~habrastorage.org|~imfdb.org|~livemaster.ru  # condenast-media.gcdn.co (admagazine.ru) is not ads, it is Arch Design
 _ad.aspx  # from Adguard
 _ad.gif|  # from EasyList
 /ad.aspx  # from Adguard
@@ -700,6 +700,7 @@ _adverts.js  # from EasyList
 -adverts.libs.  # from EasyList
 -adverts.min.  # from EasyList
 /advpic/*  # from EasyList China
+/adv-vast/*  # see /vast/.  # from Adguard: kodik*/adv-vast/
 /adwords/$important
 /adx/*
 /aff/*
@@ -719,6 +720,7 @@ _adverts.js  # from EasyList
 /ban/*
 ban100x100.swf  # from Adguard
 /ban.min.js
+/baner.  # from Ru AdList
 /baner/*$important
 /baner_$important
 /banery/*
@@ -804,6 +806,10 @@ _banner_rotator.php  # from Adguard
 /bouncy.php$important  # malware on parked domains  # uBlock filters – Badware risks: /bouncy.php?*&inpopup=$document
 /brand.js
 /bugsnag.min.js
+/bundle-vast.min.js  # also see /vast/
+    ! /bundle-vast.min.js$domain=defileb.com|fplay.online|hovels.info|likelol.online|playep.pro|playy.online|plplayer.online|plwork.net|sorb.info|toplay.biz|ttutu.biz  # from Ru AdList
+/bundle.vast.min.js  # also see /vast/
+    ! /bundle.vast.min.js$domain=defileb.com|fplay.online|hovels.info|likelol.online|playep.pro|playy.online|plplayer.online|plwork.net|sorb.info|toplay.biz|ttutu.biz  # from Ru AdList
 /busting/*/gtm-  # /wp-content/cache/busting/1/gtm-ad...  # is in EasyPrivacy
 /clipboard.min.js$important
 /cdn-cgi/pe/bag2?r$important  # generalized rule. Sources from Ru AdList (see all mentioned domains here too):
@@ -973,8 +979,12 @@ _banner_rotator.php  # from Adguard
 /phoenixgoogleanalytics.  # ad scripts  # is in EasyPrivacy
 _player_vpaid_as3.swf  # from Adguard
 /pmc-google-universal-analytics/*  # from Adguard
+/popads.  # from Ru AdList
+/popads/*  # from Ru AdList
+/popua/*  # from Ru AdList
 /popunder.js$important
 .popunder.js  # from EasyList
+/popupclick/$popup  # from Ru AdList
 /porpoiseant/*$important  # ad scripts  # is in EasyList
 /prebid$important
     ! /js/prebid-  # from EasyList
@@ -1012,6 +1022,17 @@ _prebid.js  # from EasyList
 /pubads.ad$important
 /pubfig.min.js  # from EasyList
 /rbs_scripts/rbs_banner_  # is in Ru AdList
+/rd.php?
+    ! ||accountant/*rd.php?id=$third-party,popup  # from Ru AdList
+    ! ||bid/*rd.php?id=$third-party,popup  # from Ru AdList
+    ! ||cricket/*rd.php?id=$third-party,popup  # from Ru AdList
+    ! ||date/*rd.php?id=$third-party,popup  # from Ru AdList
+    ! ||download/*rd.php?id=$third-party,popup  # from Ru AdList
+    ! ||online/*rd.php?id=$third-party,popup  # from Ru AdList
+    ! ||site/*rd.php?id=$third-party,popup  # from Ru AdList
+    ! ||stream/*rd.php?id=$third-party,popup  # from Ru AdList
+    ! ||top/*rd.php?id=$third-party,popup  # from Ru AdList
+    ! ||xyz/*rd.php?id=$third-party,popup  # from Ru AdList
 _rebid.js  # from EasyList
 /redirect_base/*  # ad scripts
 /redirect/cpa/*
@@ -1046,6 +1067,26 @@ _rebid.js  # from EasyList
 !/rotator.js  # don't block - it may be used in non-ad video for previews
 /rotator.min.js$important
 /rotban/*  # from Adguard: /rotban/rotator.js
+/rtr/$script
+    ! ||am/rtr/$script  # from Ru AdList
+    ! ||biz/rtr/$script  # from Ru AdList
+    ! ||by/rtr/$script  # from Ru AdList
+    ! ||cc/rtr/$script  # from Ru AdList
+    ! ||club/rtr/$script  # from Ru AdList
+    ! ||co/rtr/$script  # from Ru AdList
+    ! ||com/rtr/$script  # from Ru AdList
+    ! ||es/rtr/$script  # from Ru AdList
+    ! ||info/rtr/$script  # from Ru AdList
+    ! ||kz/rtr/$script  # from Ru AdList
+    ! ||me/rtr/$script  # from Ru AdList
+    ! ||net/rtr/$script  # from Ru AdList
+    ! ||org/rtr/$script  # from Ru AdList
+    ! ||pl/rtr/$script  # from Ru AdList
+    ! ||ro/rtr/$script  # from Ru AdList
+    ! ||ru/rtr/$script  # from Ru AdList
+    ! ||so/rtr/$script  # from Ru AdList
+    ! ||tv/rtr/$script  # from Ru AdList
+    ! ||ua/rtr/$script  # from Ru AdList
 /ru-n4p/*.js$important  # from AdGuard
 /sam-pro-free/*  # from EasyList
 /sam-pro-images/*  # from EasyList
@@ -1093,12 +1134,38 @@ _rebid.js  # from EasyList
 /upselltracker.js
 .utils.ads.  # from EasyList
 /uutils.fcg?  # from EasyPrivacy
-/vast/*  # from EasyList: /vast/ads-  # from Adguard: ||kodik.biz/vast/
-    /adv-vast/*  # also.  # from Adguard: kodik*/adv-vast/
-/vast.php
-/vast.xml
-    ||mxttrf.com/vast.xml  # from Adguard
-    ||n278adserv.com/vast.xml  # from Adguard
+/vast/*$important,all
+    ! /api/outreach/vast/*$xmlhttprequest  # from Ru AdList
+    ! /vast/ads-  # from EasyList
+    ! ||cdngate.org/vast/  # from Ru AdList
+    ! ||freep2p.info/vast/  # from Ru AdList
+    ! ||kodik.biz/vast/  # from Adguard
+    ! ||u-tv.ru/vast/  # from Ru AdList
+    ! ||vmeste.xyz/vast/  # from Ru AdList
+    ! ||api.yapfiles.ru/vast/  # from Ru AdList
+    ! ||ykt.ru/vast/$xmlhttprequest  # from Ru AdList
+/vast.
+    ! /vast.js
+        ! /handler_static/js/vast.js  # from Ru AdList
+        ! /testserial/vendor/vast.js  # from Ru AdList
+        ! ||jwpcdn.com/*/vast.js$domain=playground.ru  # from Ru AdList
+        ! ||noodlemagazine.com/static/engine/*/vast.js  # from Ru AdList
+        ! ||ukdevilz.com/static/engine/*/vast.js  # from Ru AdList
+        ! ||xuy.tv/player*/vast.js  # from Ru AdList
+    ! /vast.php
+        ! ||stats.anidub.life/vast.php  # from Ru AdList
+        ! ||jiouv.com/vast.php  # from Ru AdList
+    ! /vast.xml
+        ! /vast.xml?key=  # from Ru AdList
+        ! ||50.7.134.117/ttv_omorp/vast.xml$object  # from Ru AdList
+        ! ||mxttrf.com/vast.xml  # from Adguard
+        ! ||n278adserv.com/vast.xml  # from Adguard
+    ! /player/vast.$domain=imasdk.googleapis.com  # from Ru AdList
+    ! /vast.min.js$domain=defileb.com|fplay.online|hovels.info|likelol.online|playep.pro|playy.online|plplayer.online|plwork.net|sorb.info|toplay.biz|ttutu.biz  # from Ru AdList
+/vast?
+    ! ||bazr.ru/vast?$xmlhttprequest  # from Ru AdList
+    ! ||okay.uz/api/default/vast?$xmlhttprequest  # from Ru AdList
+/vast*php?$xmlhttprequest  # from Ru AdList
 /vastad/*  # from Adguard: /vastad/*/manifest.xml
 /vastadv/*  # from Adguard: /vastadv/*/manifest.xml
 /vastadvert/*  # from Adguard: ||kodik.cc/vastadvert/
@@ -1106,6 +1173,8 @@ _rebid.js  # from EasyList
 /vast-adv/*  # from Adguard: /vast-adv/*/manifest.xml
 /vast-advert/*  # from Adguard: /vast-advert/*/manifest.xml
 .vast.ad.js  # from Ru AdList: zoneofgames.ru*/native.video.vast.ad.js
+/vast-bundle.min.js
+    ! /vast-bundle.min.js$domain=defileb.com|fplay.online|hovels.info|likelol.online|playep.pro|playy.online|plplayer.online|plwork.net|sorb.info|toplay.biz|ttutu.biz  # from Ru AdList
 .vert.ad.  # from EasyList
 .video.ads.  # from EasyList
 /video_banner.js
@@ -1114,6 +1183,7 @@ _rebid.js  # from EasyList
 /cgi-bin/visit.pl
 /webbanners/*
 .weborama.js  # from EasyList
+/webunder.  # from Ru AdList
 /widget/*$~stylesheet,domain=~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru|~sbis.ru
     ! /widget/?45;*|1|1|1|1  # strange rule from Ru AdList
 /widget.min.js$important,domain=~sbis.ru
@@ -1828,6 +1898,7 @@ _tizers.  # from Ru AdList
 /app.promo$script
 /load-promo/*  # from Ru AdList
 /promo.
+/promo?
 /promo/*$domain=~livejournal.com|~mts.ru  # mts.ru loads non-ad /Promo/ links in lk
 /promo.js$important
 /promo.php
@@ -3658,7 +3729,8 @@ _snowstorm-min.js  # from Ru AdList
 ##.section-brand
 ##.vendors
 ###vendors-slider
-/branding$domain=~livejournal.com
+/branding$all,important,domain=~livejournal.com
+    ! many, many rules from different lists
     ! /branding/*
 /brands/*$domain=~google.com
 /images/brand$image
