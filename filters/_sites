@@ -6280,6 +6280,10 @@ confiant-integrations.global.ssl.fastly.net  # is in EasyPrivacy
 
 ||fastmarksman.ru/*/fast.png  # logo
 
+||fastpic.org/?$popup  # from Ru AdList
+||fastpic.ru/?$popup  # from Ru AdList
+fastpic.org$third-party,subdocument  # from Ru AdList: $third-party,subdocument,domain=fastpic.org|fastpic.ru
+fastpic.ru$third-party,subdocument  # from Ru AdList: $third-party,subdocument,domain=fastpic.org|fastpic.ru
 fastpic.ru###abuse
 fastpic.ru###copyright
 fastpic.ru##.navbar
@@ -6288,11 +6292,14 @@ fastpic.ru###footer
 !fastpic.ru##.top
 ||fastpic.ru/android.png  # is in Ru AdList and AdGuard
 ||fastpic.ru/g/f.js  # is in AdGuard
+||fastpic.*/g*/$script,domain=fastpic.org|fastpic.ru  # from Ru AdList
 ||fastpic.ru/if_*.html  # is in AdGuard
 ||fastpic.ru/*/if.html?rnd=  # is in AdGuard
 ||fastpic.ru/n/b.php$image
 ||fastpic.ru/*/b.php
 ||fastpic.ru/js/js.cookie.min.js
+||fastpic.org/z$image  # from Ru AdList
+||static.fastpic.$subdocument,domain=fastpic.org|fastpic.ru  # from Ru AdList
 ! пока так
 fastpic.ru##.bleft.p-1.rounded.bg-dark.col-auto
 fastpic.ru##.d-lg-block.d-none.p-1.rounded.bg-dark.col-auto
@@ -6301,6 +6308,9 @@ fastpic.ru##.col-auto > .justify-content-center
 fastpic.ru##.text-muted
 ! from EasyList
 fastpic.ru##.d-lg-block
+fastpic.org,fastpic.ru#?#.justify-content-center > .col[id]:style(max-width: max-content !important)  # from Ru AdList
+fastpic.org,fastpic.ru#?#body > footer:style(background: none !important)  # from Ru AdList
+fastpic.org,fastpic.ru#?#main#mainContainer:style(max-width: unset !important)  # from Ru AdList
 
 fazasporta.com##.marquiz__container
 fazasporta.com##.block-s-geolocation
@@ -20170,6 +20180,7 @@ tribute-to.com##.button-models
 trinket.io###interest-email-form
 
 tripadvisor.com$domain=~tripadvisor.com|~tripadvisor.be|~tripadvisor.ca|~tripadvisor.ch|~tripadvisor.co|~tripadvisor.co.id|~tripadvisor.co.uk|~tripadvisor.co.za|~tripadvisor.com.ar|~tripadvisor.com.au|~tripadvisor.com.br|~tripadvisor.com.eg|~tripadvisor.com.gr|~tripadvisor.com.hk|~tripadvisor.com.sg|~tripadvisor.com.tr|~tripadvisor.de|~tripadvisor.dk|~tripadvisor.es|~tripadvisor.fr|~tripadvisor.in|~tripadvisor.it|~tripadvisor.nl|~tripadvisor.ru|~tripadvisor.se|~tripadvisor.uk.com
+||tripadvisor.ru/PriceFinderPopunder$popup  # from Ru AdList
 ! tripadvisor CDNs
 jscache.com$domain=~tripadvisor.com|~tripadvisor.be|~tripadvisor.ca|~tripadvisor.ch|~tripadvisor.co|~tripadvisor.co.id|~tripadvisor.co.uk|~tripadvisor.co.za|~tripadvisor.com.ar|~tripadvisor.com.au|~tripadvisor.com.br|~tripadvisor.com.eg|~tripadvisor.com.gr|~tripadvisor.com.hk|~tripadvisor.com.sg|~tripadvisor.com.tr|~tripadvisor.de|~tripadvisor.dk|~tripadvisor.es|~tripadvisor.fr|~tripadvisor.in|~tripadvisor.it|~tripadvisor.nl|~tripadvisor.ru|~tripadvisor.se|~tripadvisor.uk.com
 tacdn.com$domain=~tripadvisor.com|~tripadvisor.be|~tripadvisor.ca|~tripadvisor.ch|~tripadvisor.co|~tripadvisor.co.id|~tripadvisor.co.uk|~tripadvisor.co.za|~tripadvisor.com.ar|~tripadvisor.com.au|~tripadvisor.com.br|~tripadvisor.com.eg|~tripadvisor.com.gr|~tripadvisor.com.hk|~tripadvisor.com.sg|~tripadvisor.com.tr|~tripadvisor.de|~tripadvisor.dk|~tripadvisor.es|~tripadvisor.fr|~tripadvisor.in|~tripadvisor.it|~tripadvisor.nl|~tripadvisor.ru|~tripadvisor.se|~tripadvisor.uk.com
@@ -22724,6 +22735,7 @@ yaplakal.com##.edit
 ||yapfiles.ru/action/track/
 ||yapfiles.ru/uploads/branddata/$important
 ||yapfiles.ru/ypxl/
+yapfiles.ru*/rating_by_pop/$popup  # from Ru AdList
 ||yaplakal.com/*/18only.png
 ||yaplakal.com/html/smm/
 yaplakal.com##.telega_button
@@ -24235,3 +24247,32 @@ xn-----xlcfvffioc4g.xn--p1ai$third-party  # курсы-по-ит.рф  # from Ru
 ||acestream.net/plan/select?popup=noads$popup  # from Ru AdList
 
 ege-study.ru$3p  # from Ru AdList, modified
+
+drako.ru$3p
+
+ninjaworld.ru$3p
+
+umschool.net$3p  # from Ru AdList
+
+||goha.ru/~$popup,domain=www.goha.ru  # from Ru AdList
+goha.ru##.layout-menu__sticky:style(position:static !important)
+goha.ru##.layout-footer-body__logo
+
+topofgames.com*?path=$popup  # from Ru AdList
+||topofgames.com/images/back2.jpg
+
+comments.ua##.logo__new
+comments.ua##.logo_comments
+comments.ua##.logos_masav
+comments.ua###foote-text
+
+wargaming.net*/?pub_id=$popup  # from Ru AdList
+warthunder.ru*/free_registration?r=$popup  # from Ru AdList
+warthunder.ru*/register-for-free?r=$popup  # from Ru AdList
+||worldoftanks.eu/play/$popup  # from Ru AdList
+
+||gecid.com/inc/brclick.$popup  # from Ru AdList
+
+||travian.com.ua/landingpage/$popup  # from Ru AdList
+
+vse-sdal.com$3p
