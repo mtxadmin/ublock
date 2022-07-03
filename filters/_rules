@@ -1116,7 +1116,6 @@ _rebid.js  # from EasyList
 /top-banner.jpg
 /trafficguard.js$important
 /uedata?$important  # from AdGuard Tracking Protection and EasyPrivacy, modified
-/utftizer.  # from Ru AdList
 /underbanner/*
     ! azbukadiet.ru*/underbanner/  # from Ru AdList
     ! ||domsnov.ru/underbanner/  # from Adguard and Ru AdList
@@ -1177,7 +1176,6 @@ _rebid.js  # from EasyList
 /video_banner.js
 /videojs-contrib-ads.$important
 /videojs-contrib-ads/*$important
-/viptizer.  # from Ru AdList
 /volcano_banner  # from Ru AdList
 /webbanners/*
 .weborama.js  # from EasyList
@@ -1811,7 +1809,6 @@ _rebid.js  # from EasyList
 /adv_teasers.  # is in EasyList
 /nettyzer/*
 /teaser$domain=~vento.ru
-?teaser_  # from Ru AdList
 /teaser.$~media,~object,domain=~amocrm.ru|~gosuslugi.ru|~insomnihack.ch|~pik-comfort.ru|~play.date  # from Ru AdList  # ok, exclusions from there
 /teaser2.  # from Ru AdList
 /teaser_klubnika/*  # from Ru AdList
@@ -1823,19 +1820,20 @@ _rebid.js  # from EasyList
 /tionline150x60.  # from Ru AdList
 /tionline240x100.  # from Ru AdList
 /tionline240x400.  # from Ru AdList
-/tizer-  # from Ru AdList
-/tizer.$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
-/tizer/*  # from Ru AdList
-/tizer2.  # from Ru AdList
+/tizer$all,domain=~mos.ru|~mosmetod.ru|~tizer.io
+    /tizer-  # from Ru AdList
+    /tizer.$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
+    /tizer/*  # from Ru AdList
+    /tizer2.  # from Ru AdList
+    /tizer2/*  # from Ru AdList
+    /tizer_$domain=~mos.ru|~mosmetod.ru  # from Ru AdList
+    /tizermedia.  # from Ru AdList
+    /tizerotator/*  # from Ru AdList
+    /tizers/*  # from Ru AdList
+    /tizers2.  # from Ru AdList
+    /tizers3.  # from Ru AdList
+    /tizers_  # from Ru AdList
 _tizer2.  # from Ru AdList
-/tizer2/*  # from Ru AdList
-/tizer_$domain=~mos.ru|~mosmetod.ru  # from Ru AdList
-/tizermedia.  # from Ru AdList
-/tizerotator/*  # from Ru AdList
-/tizers/*  # from Ru AdList
-/tizers2.  # from Ru AdList
-/tizers3.  # from Ru AdList
-/tizers_  # from Ru AdList
 /tizshow.  # from Ru AdList
 /utftizer.  # from Ru AdList
 ?teaser_  # from Ru AdList
@@ -1851,6 +1849,7 @@ _tizers.  # from Ru AdList
 .trafficdok.com^  # from Ru AdList
 .trafficlide.com^  # from Ru AdList
 .viptizer.  # from Ru AdList
+/viptizer.  # from Ru AdList
 ! .media_image-field - Drupal images
 ~geeks.hu,~irecommend.ru,~metro-cc.ru,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
 ##[id*=teaser]
