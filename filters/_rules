@@ -845,6 +845,7 @@ _banner_rotator.php  # from Adguard
 .clickunder.  # from Ru AdList
 ^clickunder^$popup  # from Ru AdList
 /code/native.js?h=  # is in Adguard
+/console-ban.min.js  # from uBlock filters: ||cdn.jsdelivr.net/*/console-ban.min.js
 /context_ads/*
 -contrib-ads/  # from EasyList
 -core-ads  # ad scripts  # is in EasyList
@@ -855,8 +856,10 @@ _banner_rotator.php  # from Adguard
 /deblocker.min.js
 -detect-adblock.  # from EasyList
 /detectadblock.js
+/detect-adblock.js
 /detectadblockpc.js
 /detector.min.js$important
+/dev-console-detect.js
 /dfp/*
     ! /packages/dfp/*  # from EasyList
     ! avito.ru*/dfp/px.js  # from Ru AdList
@@ -864,6 +867,9 @@ _banner_rotator.php  # from Adguard
 /dfp_page
     ! ||autonews.ru/dfp_page
     ! ||rbc.ru/dfp_page  # ad scripts  # https://www.rbc.ru/dfp_page
+/disable-devtool$important,all
+    ||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js  # from uBlock filters
+    ||motphim123.com/assets/js/disable-devtool.min.js  # from uBlock filters
 /dragscroll/*
 /dragscroll.js
 /easy-social-share-buttons.min.js
@@ -2793,6 +2799,7 @@ _tracker.js.  # from EasyPrivacy
 ##.quick-scroll-scrolling
 ##.quickScroll-toBottom
 ##.quickScroll-toTop
+##.s-btn-gotop
 ##.scroll2top_button
 ##.scroll_arrow
 ###scroll-arrow
@@ -2821,6 +2828,7 @@ _tracker.js.  # from EasyPrivacy
 ##.ScrollUpButton__Container
 ##.scrollUp-child
 ##.scroolTop
+##.s-gotop-wrap
 ##.show_scroll
 ###takeMeToTheTopOfPagePlease
 ###ToBottom
