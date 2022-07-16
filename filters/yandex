@@ -331,6 +331,7 @@ ya.ru##.search3__logo
 yandex.*##.NavBarLogo
 yandex.*##[class^=PSHeaderLogo]
 yandex.*##.PSHeaderLogo360
+yandex.*##.PSHeaderLogo360-Ya
 yandex.*##.FooterApps__link
 yandex.*##[class^=PageAside__logo]
 yandex.*##[class^=PageAside__stickyContainer]:style(position:static !important)
@@ -771,6 +772,9 @@ yandex.ru##.mg-sticky__inner:style(position:static !important)
 
 ! Ru Ad List rule
 disk.yandex.ru##div[class^="direct"]:not([class^="directory-content"])
+
+# from Ru AdList
+yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno .serp-adv__counter)
 
 turbopages.org##.turbo-image
 turbopages.org##.button_width_max.button_primary.button_type_link.button
