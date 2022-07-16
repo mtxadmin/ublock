@@ -437,16 +437,21 @@ clicks.rbs.co.uk  # root is legit
 clicks.wawlabs.com  # from Adguard
 
 ||cmp.
+cmp.acronymfinder.com  # from Adguard
 cmp.deondernemer.nl  # from EasyList
+cmp.ganref.jp  # from Adguard
+cmp.impress.co.jp  # from Adguard
 cmp.infopro-digital.com  # from EasyList
 cmp.lavie.fr  # from EasyList
 cmp.lepoint.fr  # from EasyList
 cmp.macworld.co.uk  # from Adguard
+cmp.netatopi.jp  # from Adguard
 cmp.nextday.media  # from EasyList
 cmp.osano.com  # from EasyList
 cmp.parkers.co.uk  # from EasyList
 cmp.playpilot.com  # from EasyList
 cmp.pcwelt.de  # from EasyList
+cmp.seniorguide.jp  # from Adguard
 cmp.cdn.thesun.co.uk  # from EasyList
 cmp.cdn.thesun.ie  # from EasyList
 cmp.tori.fi  # from EasyList
@@ -489,11 +494,14 @@ collector.xhwide1.com  # from Adguard
 /consent.
 consent.amateurphotographer.co.uk  # from EasyList
 consent.berliner-kurier.de  # from EasyList
+consent.boerse-online.de  # from Adguard
 consent.dropbox.com  # from Adguard
 consent.faz.net  # from EasyList
+consent.finanzen.net  # from Adguard
 consent.google.com  # ||consent.google.com/$subdocument
 consent.gutefrage.net  # from EasyList
 consent.economist.com  # from Adguard
+consent.prismamedia.com  # from Adguard
 consent.scm-verlagsgruppe.de  # from Adguard
 consent.themeteocompany.com  # from EasyList
 consent.t-mobile.cz  # from EasyList
@@ -927,6 +935,7 @@ promo.sebnews.ru
 ||promoblock.$third-party  # from Ru AdList
 
 /push.
+push.akket.com  # from Adguard
 push.daksham.in$important  # empty root  # in 2 lists
 push.newscraft.io  # from Adguard
 push.zdips.ru  # from Adguard
@@ -1231,12 +1240,19 @@ smetrics.ybs.co.uk  # from Adguard
 smetrics.yellowpages.com.au  # from Adguard
 smetrics.zurichlife.co.jp  # from Adguard
 
+||sp.
+sp.azcentral.com  # from Adguard
+sp.booking.com  # from uBlock filters
+sp.desmoinesregister.com  # from Adguard
+sp.nintendolife.com  # from Adguard
+
 ! do not block all "stat." subdomains, there may be statics
 stat.5-tv.ru  # from Adguard
 stat.delo.ua  # from MVPS
 stat.icestonesoft.com
 stat.net.ixbt.com  # from Ru AdList
 stat.megapesni.com
+stat.moonwalk.co  # from Adguard
 stat.nate.com  # from Adguard
 stat.ntv.ru
 stat.onemob.mobi  # from Adguard  # Chinese phones
@@ -1255,6 +1271,7 @@ stats.cnevids.com  # from Adguard
 stats.consultnn.ru
 stats.datawrapper.de  # tracking images  # is in Adguard  # do not block datawrapper.de entirely
 stats.ft.com  # from Adguard
+stats.imgpay.ru  # from Adguard
 stats.kod.ru  # ad scripts  # is in Adguard and EasyPrivacy
 stats.newsweek.com  # from GoodbyeAds
 stats.nextcloud.com  # from GoodbyeAds
@@ -1497,6 +1514,7 @@ trk.freepik.com
 trk.pinterest.com  # from Adguard
 
 /webpush.
+webpush.hackers.com  # from Adguard
 webpush.ria.com  # from Adguard
 
 /widget.$domain=~hotbot.ai|~mts.ru|~scribblemaps.com
@@ -1642,6 +1660,8 @@ webcollector-1.agora.io
 webcollector-1abr-cn.agora.io
 webcollector-2.agora.io
 webcollector-rtm.agora.io
+
+rodo.agora.pl  # from Adguard
 
 cool.ah-me.com  # from Adguard
 
@@ -1842,6 +1862,8 @@ coordinator-production-28516768.us-east-1.elb.amazonaws.com  # from BlockListPro
 mailmunch.s3.amazonaws.com  # from Ru AdList
 syncplusconfig.s3.amazonaws.com  # from BlockListProject/SmartTV
 twitter-badges.s3.amazonaws.com  # from Ru AdList
+
+tracking-consent.static.anwb.nl  # from Adguard
 
 advertising.aol.com  # from 1024 Hosts  # +
 
@@ -2053,8 +2075,6 @@ landers.bookbub.com
 messages.bookbub.com
 outbound.bookbub.com  #messages.bookbub.com/ls/click?
 
-sp.booking.com  # from uBlock filters
-
 zznfip.bork.ru  # from GoodbyeAds
 
 bournemouthecho-gb.bournemouthecho.co.uk  # from Adguard
@@ -2182,6 +2202,8 @@ creatives.cliphunter.com  # from EasyList
 go.cloudcheckr.com
 
 cnb.cnews.ru  # ad scripts  # is in Ru AdList
+
+u939.colgate.com  # from Adguard
 
 d3410ost8gg4o3.cloudfront.net  # ad scripts
 d2oupip9s5ltdo.cloudfront.net  # ad scripts  # stamped.io
@@ -2341,6 +2363,8 @@ misc.espritgames.ru
 
 nasi.etherscan.com  # from EasyPrivacy
 
+eurogamer-uk.eurogamer.net  # from Adguard
+
 isi-tracking.eventim.com  # from Adguard
 
 action.evrikak.ru  # from Adguard
@@ -2360,6 +2384,10 @@ pi.feedsportal.com  # from Ru AdList
 cash.femjoy.com  # from EasyList
 
 id.ferra.ru  # ad xhrs
+
+mdsngpush.finanzen.net  # ad push  # is in Fanboy's
+
+engine.findaphd.com  # from Adguard
 
 alireviews-cdn.fireapps.vn
 
@@ -2538,6 +2566,8 @@ adilk.ilikecomix.com  # from Adguard
 
 cams.imagetwist.com
 
+statistic.imgpay.ru  # from Adguard
+
 adman.in.gr  # from Dan Pollock's hosts file
 
 mo7her.incest.click  # from GoodbyeAds
@@ -2607,6 +2637,8 @@ tr1.kaspersky.com  # from GoodbyeAds
 tr2.kaspersky.co.uk  # from GoodbyeAds
 tr2.kaspersky.com  # from GoodbyeAds
 tr2.kaspersky.ru  # from Adguard
+
+shop.kicker.de  # from Adguard
 
 player-metrics.kinescope.io  # ad xhrs
 
@@ -2680,6 +2712,8 @@ shrcnt.livejournal.net
 
 cas.livemaster.ru  # from GoodbyeAds
 
+ttauri.livescience.com  # from Adguard
+
 web-push.test.loccitane.com  # from GoodbyeAds
 
 wt.lovfot.ru  # from Ru AdList
@@ -2701,6 +2735,8 @@ events.mapbox.com$important  # ad xhrs  # is in Adguard
 adbn.masterinvest.info  # from Adguard
 
 eloquamarketing.masterlock.com  # from Adguard
+
+cmd.maturexxxporno.net  # from Adguard
 
 casino-ad-mediation.me2zengame.com  # from Adguard
 
@@ -2846,6 +2882,8 @@ customerfeedback.opentext.com
 s-adx.op-mobile.opera.com  # from Adguard
 s.adx.opera.com  # from Adguard
 
+ppmakl.oscarcalcados.com.br  # from EasyPrivacy
+
 privacy.outdoorsg.com  # ad frames
 
 rotor.overclockers.ru$important
@@ -2874,6 +2912,8 @@ tf.pikabu.ru  # ad(?) xhrs
 
 ct.pinterest.com  # from Adguard
 trk2.pinterest.com  # from Adguard
+
+zzz.pissrip.net  # from Adguard
 
 applogs.pixelfederation.com  # from Adguard
 applogs-v2.pixelfederation.com  # from Adguard
@@ -3117,6 +3157,8 @@ rekl.seasonvar.ru  # from Adguard
 
 cdn-admx.segodnya.ua  # is in Ru AdList
 
+privacy.selbst.de  # from Adguard
+
 emailmkt.semantix.com.br  # "mais inteligente com Big Data, IA e IoT"  #t.emailmkt.semantix.com.br
 
 rek.serial24.com  # from Adguard
@@ -3130,6 +3172,8 @@ delivery.sexyxxx.biz  # from uBlock filters
 s.shopify.com$important  # from MVPS HOSTS file  # in AdGuard: ||s.shopify.com/visit/record.gif?
 stats.shopify.com$important  # is in AdGuard and EasyPricacy
 v.shopify.com$important  # is in AdGuard and EasyPricacy  #v.shopify.com/internal_errors/track
+
+asg.shudhdesiporn.com  # from Adguard
 
 vote.sibnet.ru  # from Adguard
 
@@ -3204,6 +3248,8 @@ yhyped.stolplit.ru  # from GoodbyeAds
 
 b.stranamam.ru  # from Adguard
 
+sp-consent.stuttgarter-zeitung.de  # from Adguard
+
 sumologic.stv.tv  # from uBlock filters
 
 t.superjob.ru  # tracking image  # https://t.superjob.ru/i?...
@@ -3211,9 +3257,13 @@ t.superjob.ru  # tracking image  # https://t.superjob.ru/i?...
 clicktime.symantec.com
 nsg.symantec.com  # from Fanboy's
 
+bn.take-profit.org  # from Adguard
+
 p.tanx.com  # from Adguard
 
 stat-counter.tass-online.ru  # from Dan Pollock's hosts file  # zombie
+
+pp.teksty-pesenok.ru  # from Adguard
 
 webtrends.telegraph.co.uk  # from Peter Lowe's Ad and tracking server list
 
@@ -3223,6 +3273,8 @@ seal.thawte.com  # is in Fanboy's
 
 dclk.themarker.com  # is in MVPS and Dan Pollock's hosts file
 meitavads-18723.kxcdn.com  # ad scripts
+
+thestrad-gb.thestrad.com  # from Adguard
 
 c.ticketmanager.com
 
@@ -3245,6 +3297,8 @@ adv-cdn.tnt-online.ru
 elc.tomsk.ru  # from GoodbyeAds
 
 embed.tonews.org  # from Adguard
+
+ttauri.toptenreviews.com  # from Adguard
 
 carte-gr.total.fr  # subdomains from GoodbyeAds
 
@@ -3320,6 +3374,9 @@ reklama-cluster.g2.tutby.com  # tut.by
 fronterr.tutu.ru
 
 blabla.tword.ru  # from Ru AdList
+
+ashot.txxx.com  # from Adguard
+gu7socdn.txxx.com  # from Adguard
 
 elqview.uclahealth.org  # from Adguard
 elqview2.uclahealth.org  # from Adguard
