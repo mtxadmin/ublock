@@ -204,6 +204,8 @@ adtrack.king.com  # from Adguard
 
 kingsoft-office-service.com  # abroad-ad.kingsoft-office-service.com  # from Adguard
 
+sensors.larkplayerapp.com  # from Adguard
+
 ad.lgappstv.com  # is in BlockListProject/SmartTV
 aic-ngfts.lge.com  # is in BlockListProject/SmartTV
 control-zoo-dtsstage.tvinteractive.tv  # is in BlockListProject/SmartTV
@@ -385,6 +387,8 @@ tr.snapchat.com  # from Adguard
 tr6.snapchat.com  # from GoodbyeAds
 # ghs.googlehosted.com  # hmm...
 
+sensors.snaptubeapp.com  # from Adguard
+
 ! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
 snssdk.com  # China root  # root redirects to toutiao.com
 !rtlog.snssdk.com
@@ -438,6 +442,7 @@ tvinteractive.tv  # from BlockListProject/SmartTV
 
 mp.twitch.tv  # from Quidsup NoTrack-Blocklist
 
+ads-bidder-api.twitter.com  # from Adguard
 analytics.twitter.com$important  # ad scripts  # is in EasyPrivacy  # https://brave.com/popular-browsers-first-run/
 api.twitter.com  # api.twitter.com$third-party,important  # even that way: https://cdn.api.twitter.com/1/urls/count.json?url=
 syndication.twitter.com  # syndication.twitter.com$third-party,important
@@ -659,10 +664,15 @@ resolver.gslb.mi-idc.com  # from Adguard
     ! miui.com
 browser.miui.com  # from GoodbyeAds
 huangye.miui.com  # from GoodbyeAds
+    ! mp.huangye.miui.com  # from Adguard
 inf.miui.com  # from GoodbyeAds: mcc.intl.inf.miui.com
 intl.miui.com
-    browser.intl.miui.com  # from GoodbyeAds: india.activity.browser.intl.miui.com
-    newsfeed.intl.miui.com    # from Adguard: api.newsfeed.intl.miui.com
+    ! activity.browser.intl.miui.com  # from Adguard
+    ! adv.sec.intl.miui.com  # from Adguard
+    ! api.brs.intl.miui.com  # from Adguard
+    ! api.newsfeed.intl.miui.com  # from Adguard
+    ! browser.intl.miui.com  # from GoodbyeAds: india.activity.browser.intl.miui.com
+    ! newsfeed.intl.miui.com    # from Adguard: api.newsfeed.intl.miui.com
 browser.miui.com  # r.browser.miui.com
 comm.miui.com  # from GoodbyeAds
 feedback.miui.com  # from GoodbyeAds
