@@ -393,6 +393,8 @@ $removeparam=promoid
     ! Later:
     ! get.adobe.com$removeparam=promoid  # from Adguard
 
+$removeparam=pulse_traffic  # from Ru AdList
+
 $removeparam=/pvid$/
     ! Found independently. Confirmed by months of testing.
     ! aliexpress.com$removeparam=ad_pvid
@@ -431,6 +433,7 @@ $removeparam=ref,domain=~amazon.*  # exclusion is from Adguard.
     ! jasonsavard.com$removeparam=/cUrl|ref/  # from Adguard
     ! video.laxd.com$removeparam=ref  # from Adguard
     ! livedoor.biz$removeparam=ref  # from Adguard
+    ! ||my.mail.ru/apps$document,removeparam=ref,domain=my.mail.ru  # from Ru AdList
     ! ||app.mi.com/download/*?id=$removeparam=ref  # from Adguard
     ! nicovideo.jp$removeparam=ref  # from Adguard
     ! mein.onlinekonto.de$removeparam=ref  # from Adguard
@@ -442,6 +445,8 @@ $removeparam=/^ref_.*/
     ! $removeparam=ref_
         ! amazon.*$removeparam=ref_  # Found independently. Is in NeatURL too
         ! imdb.com$removeparam=ref_  # from NeatURL and Adguard
+        ! $removeparam=ref_src  # from Ru AdList
+        ! $removeparam=ref_url  # from Ru AdList
     ! coconala.com$removeparam=ref_kind  # from Adguard
     ! coconala.com$removeparam=ref_no  # from Adguard
     ! ||github.com/signup$removeparam=/^ref_/  # from Adguard
@@ -632,6 +637,7 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! $removeparam=utm_source  # from Adguard and Ru AdList
     ! $removeparam=utm_swu  # from Adguard
     ! $removeparam=utm_term  # from Adguard and Ru AdList
+    ! $removeparam=utm_test  # from Ru AdList
     ! $removeparam=utm_umguk  # from Adguard
     ! $removeparam=utm_userid  # from Adguard
     ! $removeparam=utm_viz_id  # from Adguard
