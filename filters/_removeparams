@@ -447,7 +447,7 @@ $removeparam=/pvid$/
 
 # recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
-$removeparam=ref,domain=~amazon.*  # exclusion is from Adguard.
+$removeparam=ref
     ! amazon.*$removeparam=ref  # Found independently. Also is in Adguard
     ! ||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/  # from Adguard
     ! arcelik.com.tr$removeparam=ref  # from Adguard
