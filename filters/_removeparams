@@ -83,6 +83,7 @@ $removeparam=autoplay
     ! ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
     ! ||sportrecs.com/embed/*autoplay=1$subdocument,removeparam=|  # from Ru AdList
     ! ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|  # from Ru AdList
+    ! ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay  # from Ru AdList
     ! ||yandex.ru/player/$removeparam=autoplay  # from Ru AdList, modified
         ! ||yandex.ru/player/*autoplay=$subdocument,removeparam=|  # from Ru AdList
         ! /^https?://frontend\.vh\.yandex\.ru\/player\/[^\s]+\autoplay=1(?![^\s]+service=ya-sport$)/$subdocument,removeparam=|  # from Ru AdList
@@ -212,26 +213,28 @@ $removeparam=fbclid  # from Adguard
 
 $removeparam=fref  # from Ru AdList
 
-! from - in general don't. Yandex sometimes glitches.
-! Todo.
-!$removeparam=from
-    /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
-    3dnews.ru$removeparam=from
-    ||amazon.*/hz/contact-us/csp$removeparam=from  # from Adguard
-    bilibili.com$removeparam=from  # from Adguard
-    hh.ru$removeparam=from
-    pikabu.ru$removeparam=from
-    rbc.ru$removeparam=from
+! from - in general, don't. Yandex sometimes glitches.
+! v2: with yandex excluded
+$removeparam=from,domain=~yandex.*
+    ! /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
+    ! 3dnews.ru$removeparam=from
+    ! ||amazon.*/hz/contact-us/csp$removeparam=from  # from Adguard
+    ! bilibili.com$removeparam=from  # from Adguard
+    ! hh.ru$removeparam=from
+    ! pikabu.ru$removeparam=from
+    ! rbc.ru$removeparam=from
+    ! ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
+    ! ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
+    ! mp.weixin.qq.com$removeparam=from  # from Adguard
+    ! ||daraz.*$removeparam=/from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
+    !
+    ! And yandex rules:
     ||yandex.*/news/$removeparam=from  # from Adguard
     ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
     ||yandex.*/news*?from=main$document,removeparam=|,domain=yandex.*  # from Ru AdList
-    ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
-    ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
     ?from=tabbar$document,removeparam=|from,domain=yandex.*  # from Ru AdList
     ?from=yanews$document,removeparam=|  # from Ru AdList
-    ||daraz.*$removeparam=/from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
     from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
-    mp.weixin.qq.com$removeparam=from  # from Adguard
 
 $removeparam=frommail
     ! mail.ru*frommail=1$document,removeparam=|frommail=1,domain=mail.ru  # from Ru AdList
@@ -653,6 +656,7 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! fastshare.cz/top*?utm_source=*&utm_medium=*&utm_campaign=$domain=warforum.cz  # from Adguard
     ! ||gamebet.news/*/index.html?utm_placement=$third-party  # from Adguard
     ! $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
+    ! $document,removeparam=utm_p,domain=pulse.mail.ru  # from Ru AdList
     ! ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
     ! trendyol.com$removeparam=utm_subaff  # from Adguard
     ! upgrad.com$removeparam=UTM_MEDIUM  # from Adguard
@@ -1623,3 +1627,16 @@ sextgem.com$removeparam=id  # from uBlock filters
 fifa.com$removeparam=adConfig  # from uBlock filters: ||cxm-api.fifa.com/fifaplusweb/api/video/*$xhr,removeparam=adConfig
 fifa.com$removeparam=adPostroll  # from uBlock filters: ||cxm-api.fifa.com/fifaplusweb/api/video/GetVerizonPreplayParameters?*&adPostroll$xmlhttprequest,removeparam=adPostroll
 fifa.com$removeparam=prerollAds  # from uBlock filters: ||cxm-api.fifa.com/fifaplusweb/api/video/GetVerizonPreplayParameters?*&prerollAds$xmlhttprequest,removeparam=prerollAds
+
+go.mysku.ru$removeparam=~r  # from Adguard
+
+revolut.com$removeparam=%7Ecampaign_id  # from Adguard
+revolut.com$removeparam=%7Eclick_id  # from Adguard
+revolut.com$removeparam=ext  # from Adguard
+revolut.com$removeparam=%7Esecondary_publisher  # from Adguard
+revolut.com$removeparam=%243p  # from Adguard
+
+wise.com$removeparam=partnerizecampaignID  # from Adguard
+wise.com$removeparam=adref  # from Adguard
+wise.com$removeparam=clickref  # from Adguard
+wise.com$removeparam=partnerID  # from Adguard
