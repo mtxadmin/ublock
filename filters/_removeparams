@@ -68,6 +68,7 @@ $removeparam=/^affi/
     ! otto.de$removeparam=AffiliateID  # from Adguard
     ! $removeparam=AffiliateID,domain=otto.de|ottoversand.at  # from Adguard
     ! flipkart.com$removeparam=affid  # from Adguard
+    ! zavvi.com$removeparam=affil  # from Adguard
 
 $removeparam=aiad_clid  # from Adguard
 
@@ -125,6 +126,7 @@ $removeparam=/campaign/  # maybe it needs i? Not sure
     ! editor.flixier.com$removeparam=/fx_(source|medium|campaign)/  # from Adguard
     ! trendyol.com$removeparam=tyutm_campaign  # from Adguard
     ! ||play.google.com/store/$removeparam=pcampaignid  # from Adguard
+    ! zavvi.com$removeparam=sv_campaign_id  # from Adguard
 
 $removeparam=campid
     ! ebay.*$removeparam=campid  # from Adguard
@@ -217,10 +219,15 @@ $removeparam=fref  # from Ru AdList
 
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
-$removeparam=from,domain=~yandex.*
+$removeparam=from,domain=~yandex.*|~auth.mail.ru
+    ! ~auth.mail.ru exception is from Ru AdList. Don't know, but ok
+    !
     ! /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
     ! 3dnews.ru$removeparam=from
+    ! ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|quote.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
+    ! /?from=$removeparam=from,domain=mail.ru|sportmail.ru  # from Ru AdList
     ! ||amazon.*/hz/contact-us/csp$removeparam=from  # from Adguard
+    ! ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
     ! bilibili.com$removeparam=from  # from Adguard
     ! hh.ru$removeparam=from
     ! pikabu.ru$removeparam=from
