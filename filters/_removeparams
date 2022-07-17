@@ -246,6 +246,7 @@ $removeparam=from,domain=~yandex.*|~auth.mail.ru
     from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
 
 $removeparam=frommail
+    ! $removeparam=frommail,domain=mail.ru|sportmail.ru  # from Ru AdList
     ! mail.ru*frommail=1$document,removeparam=|frommail=1,domain=mail.ru  # from Ru AdList
     ! sportmail.ru*frommail=1$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
 
@@ -1005,14 +1006,16 @@ linkedin.com$removeparam=recommendedFlavor  # from NeatURL
 linkedin.com$removeparam=trackingId  # from NeatURL
 
 ! loginfra.com - blocked entirely, just for information
-!||cc.loginfra.com/cc$removeparam=a  # from Adguard
-!||cc.loginfra.com/cc$removeparam=bw  # from Adguard
-!||cc.loginfra.com/cc$removeparam=px  # from Adguard
-!||cc.loginfra.com/cc$removeparam=py  # from Adguard
-!||cc.loginfra.com/cc$removeparam=sx  # from Adguard
-!||cc.loginfra.com/cc$removeparam=sy  # from Adguard
-!||cc.loginfra.com/cc$removeparam=nsc  # from Adguard
+loginfra.com$removeparam=a  # from Adguard: ||cc.loginfra.com/cc$removeparam=a
+loginfra.com$removeparam=bw  # from Adguard: ||cc.loginfra.com/cc$removeparam=bw
+loginfra.com$removeparam=px  # from Adguard
+loginfra.com$removeparam=py  # from Adguard
+loginfra.com$removeparam=sx  # from Adguard
+loginfra.com$removeparam=sy  # from Adguard
+loginfra.com$removeparam=nsc  # from Adguard
 
+mail.ru$removeparam=cr  # from Ru AdList
+sportmail.ru$removeparam=cr  # from Ru AdList
 mail.ru$removeparam=exp_id
     ! mail.ru*exp_id=$document,removeparam=|,domain=mail.ru  # from Ru AdList
 mail.ru$removeparam=smotri_id  # from Ru AdList, modified
@@ -1026,6 +1029,7 @@ $document,removeparam=sbmt,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=src,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=test_id,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=us,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+$document,removeparam=user_session_id,domain=pulse.mail.ru  # from Ru AdList
 $document,removeparam=ushq,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=usln,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=usqid,domain=go.mail.ru|r.mail.ru  # from Ru AdList
@@ -1674,3 +1678,11 @@ weather.com$removeparam=par  # from Adguard
 mirtesen.ru$removeparam=ad  # from Adguard
 mirtesen.ru$removeparam=bvuuid  # from Adguard
 mirtesen.ru$removeparam=nvuuid  # from Adguard
+
+hentaicomics.pro$removeparam=code  # from uBlock filters
+
+xxx-comics.pro$removeparam=view  # from uBlock filters
+
+hentai-party.com$removeparam=view  # from uBlock filters
+
+uplynk.com$removeparam=/^ad/  # from uBlock filters: ||content.uplynk.com/api/*&ad=$xhr,removeparam=/^ad/,domain=abc7ny.com|abc7.com|abc7chicago.com|6abc.com|abc7news.com|abc13.com|abc11.com|abc30.com
