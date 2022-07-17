@@ -213,7 +213,7 @@ $removeparam=fb_action_types  # Facebook general parameter  # from NeatURL and A
 $removeparam=fb_comment_id  # from Adguard
 $removeparam=fb_ref  # Facebook general parameter  # from NeatURL and Adguard
 $removeparam=fb_source  # Facebook general parameter  # from NeatURL and Adguard
-$removeparam=fbclid  # from Adguard
+$removeparam=fbclid  # from Adguard and Ru AdList
 
 $removeparam=fref  # from Ru AdList
 
@@ -383,6 +383,7 @@ $removeparam=oprtrack  # from Adguard
 $removeparam=oref
     ! defenseone.com$removeparam=oref  # from Adguard
     ! nextgov.com$removeparam=oref  # from Adguard
+    ! $removeparam=oref,domain=defenseone.com|govexec.com|nextgov.com|route-fifty.com  # from Adguard
 
 $removeparam=partnerId
     ! ||lotto.gmx.*^$removeparam=partnerId  # from Adguard
@@ -511,6 +512,8 @@ $removeparam=/referrer/
 $removeparam=refid
     ! linkedin.com$removeparam=refId  # from NeatURL
     ! netgames.de$removeparam=refID  # from Adguard
+
+$removeparam=rtclick  # from Ru AdList
 
 $removeparam=ruid  # from Ru AdList, modified
     ! RBC network tracking. Better to make general rule for their future projects
