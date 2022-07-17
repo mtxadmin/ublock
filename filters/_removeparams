@@ -478,6 +478,8 @@ $removeparam=/referrer/
     ! open.spotify.com$removeparam=_branch_referrer  # from Adguard
     ! ?referrer_block=$document,removeparam=|referrer_,domain=mail.ru|sportmail.ru  # from Ru AdList
     ! /*purchase-referrer=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+    ! apple.com$removeparam=referrer  # from uBlock filters
+    ! google.com$removeparam=referrer  # from uBlock filters
 
 $removeparam=refid
     ! linkedin.com$removeparam=refId  # from NeatURL
@@ -1537,6 +1539,8 @@ humblebundle.com$removeparam=hmb_source  # from Adguard
 humblebundle.com$removeparam=mcID  # from Adguard
 humblebundle.com$removeparam=linkID  # from Adguard
 
+! blocked
+theplatform.com$removeparam=params  # from uBlock filters
 theplatform.com$removeparam=playeranalytics  # from Adguard
 theplatform.com$removeparam=targetedlink  # from Adguard
 
@@ -1599,3 +1603,10 @@ adshares.net$removeparam=cid  # from Adguard
 heraldcorp.com$removeparam=pos  # from Adguard
 
 intickets.ru$removeparam=int_enter_url
+
+warnermediacdn.com$removeparam=caid  # from uBlock filters
+
+boltdns.net$removeparam=prof  # from uBlock filters
+
+! already blocked
+rubiconproject.com$removeparam  # from uBlock filters
