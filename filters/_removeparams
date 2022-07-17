@@ -94,6 +94,8 @@ $removeparam=autoplay
 $removeparam=/^at_custom.*/  # Campaign tracking (at)  # from NeatURL
 $removeparam=at_medium  # Campaign tracking (at)  # from NeatURL
 
+$removeparam=awc  # from Adguard
+
 $removeparam=_branch_match_id  # from Adguard
     ! Branch.io ( https://stackoverflow.com/questions/37882810/what-is-meaning-of-branch-match-id )
     ! medium.com$removeparam=_branch_match_id  # from NeatURL
@@ -277,6 +279,20 @@ $removeparam=__hstc  # Hubspot  # from NeatURL
 $removeparam=_hsenc  # Hubspot  # from NeatURL
 $removeparam=_hsmi  # Hubspot  # from NeatURL
 $removeparam=hsCtaTracking  # Hubspot  # from NeatURL
+
+$removeparam=/^hsa_/
+    ! $removeparam=hsa_acc  # from Adguard
+    ! $removeparam=hsa_ad  # from Adguard
+    ! $removeparam=hsa_cam  # from Adguard
+    ! $removeparam=hsa_grp  # from Adguard
+    ! $removeparam=hsa_kw  # from Adguard
+    ! $removeparam=hsa_la  # from Adguard
+    ! $removeparam=hsa_mt  # from Adguard
+    ! $removeparam=hsa_net  # from Adguard
+    ! $removeparam=hsa_ol  # from Adguard
+    ! $removeparam=hsa_src  # from Adguard
+    ! $removeparam=hsa_tgt  # from Adguard
+    ! $removeparam=hsa_ver  # from Adguard
 
 $removeparam=idealoid
     ! alternate.de$removeparam=idealoid  # from Adguard
