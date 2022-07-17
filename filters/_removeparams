@@ -637,6 +637,11 @@ $removeparam=/^trk.*/
 $removeparam=tt_content  # Twitch.tv general parameter  # from NeatURL
 $removeparam=tt_medium  # Twitch.tv general parameter  # from NeatURL
 
+$removeparam=uclick
+$removeparam=uclickhash
+    ! /?uclick=*;uclickhash=$removeparam  # from Adguard
+    ! &uclick=*&uclickhash=$removeparam  # from Adguard
+
 $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and RuAdList. Very common parameters.
     ! $removeparam=|utm_source|utm_medium|utm_campaign,important
     ! (old) Ru AdList rule: utm_campaign=$document,queryprune=|,domain=yandex.*|aliexpress.com|aliexpress.ru
