@@ -3804,10 +3804,14 @@ _snowstorm-min.js  # from Ru AdList
 ##.section-brand
 ##.vendors
 ###vendors-slider
+/brand/*$image
 /branding$all,important,domain=~livejournal.com
     ! many, many rules from different lists
     ! /branding/*
-/brands/*$domain=~google.com
+/brands/*$image,domain=~google.com
+    ! ||devapps.ru/img/brand/$image  # 4pda banners
+    ! ||megaobzor.com/images/brand/*$image
+    ! ||shopsirop.ru/uploads/images/Brands/$image
 /images/brand$image
 /logos/*$domain=~vse.fm
 
