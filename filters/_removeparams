@@ -1078,6 +1078,8 @@ nnmclub.ro$removeparam=sid  # from Ru AdList, modified
 nnmclub.to$removeparam=sid  # from Ru AdList, modified
     ! unusual Ru AdList form:
     ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
+! from Ru AdList
+@@/forum\/(login|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
 
 nordvpn.com$removeparam=data1  # from Adguard
 
@@ -1134,7 +1136,7 @@ sports.ru$removeparam=e  # from Ru AdList, modified
     ! ?e=lfm$document,removeparam=|,domain=sports.ru  # from Ru AdList
 
 ! starlight.digital - blocked entirely, just for information
-!starlight.digital$removeparam=testadv  # from Ru AdList, modified
+starlight.digital$removeparam=testadv  # from Ru AdList, modified
     ! ||vcms-api*.starlight.digital/hls/*?file=*&testadv=$removeparam=testadv  # from Adguard
 
 spotify.com$removeparam=context  # from NeatURL
@@ -1700,3 +1702,20 @@ rac.co.uk$removeparam=cid  # from Adguard
 ostrovok.ru$removeparam=sid  # doesn't work, but
 
 dell.com$removeparam=gacd  # from Adguard
+
+! already blocked
+exosrv.com$removeparam  # from Adguard: ||syndication.exosrv.com/splash.php?$removeparam
+
+octivid.com$removeparam=custom_ads  # from Adguard: ||player.octivid.com/*/video?*&custom_ads=$removeparam=custom_ads
+
+mydirtyhobby.com$removeparam  # from Adguard: lp.mydirtyhobby.com$removeparam
+
+! already blocked
+realsrv.com$removeparam  # from Adguard: ||syndication.realsrv.com/splash.php?$removeparam
+
+! already blocked
+utarget.ru$removeparam  # from Adguard: ||utarget.ru/*/?siteid=$removeparam
+
+/?r=dir&zoneid=$removeparam  # from Adguard
+
+/?rb=*&zoneid=$removeparam  # from Adguard
