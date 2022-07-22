@@ -1103,7 +1103,7 @@ _rebid.js  # from EasyList
 !/rotator.js  # don't block - it may be used in non-ad video for previews
 /rotator.min.js$important
 /rotban/*  # from Adguard: /rotban/rotator.js
-/rtr/*$script
+/rtr/*$script,important
     ! ||am/rtr/$script  # from Ru AdList
     ! ||biz/rtr/$script  # from Ru AdList
     ! ||by/rtr/$script  # from Ru AdList
@@ -1865,7 +1865,13 @@ _rebid.js  # from EasyList
 /tionline150x60.  # from Ru AdList
 /tionline240x100.  # from Ru AdList
 /tionline240x400.  # from Ru AdList
-/tizer$all,domain=~mos.ru|~mosmetod.ru|~tizer.io
+/tizer$all,important,domain=~mos.ru|~mosmetod.ru
+    # Ru AdList exclisions: 
+    # asau.ru: closed
+    # mos.ru: govt
+    # mosmetod.ru: govt
+    # tizer.io: closed
+    # all other: seems unneeded
     /tizer-  # from Ru AdList
     /tizer.$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
     /tizer/*  # from Ru AdList
