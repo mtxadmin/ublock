@@ -2883,6 +2883,7 @@ bloggerku.com##.g.a:style(position:static !important)
 
 blogspot.com##[href^="http://ucoz.net"]
 blogspot.com###clustrMapsImg
+||blogads*.blogspot.com^  # from Adguard
 ||blogspot.com/*/air-gun-banner2.png
 ||blogspot.com/*/undercons.gif
 
@@ -8907,6 +8908,9 @@ inmyroom.ru##.c-subscribe-popup
 
 inopressa.ru##.alignleft > div:has-text(adfox)
 
+@@||inoreader.com^$generichide  # from Ru AdList  # hmm... ok.
+! from Ru AdList
+!inoreader.com#@#.ad_title
     ! banners and promos
 inoreader.com##+js(set-constant, tippy, noopFunc)
 inoreader.com##+js(set-constant, PaymentRequest, noopFunc)
@@ -8937,8 +8941,7 @@ inoreader.com###consent_bbb
 inoreader.com##.top_notification
 inoreader.com##.sd
 inoreader.com###sinner_container
-! disable exceptions
-||inoreader.com/adv/$important
+||inoreader.com/adv/$important  # disable exceptions
 inoreader.com##.tree_announce
 ! uBlock rule
 inoreader.com##+js(abort-on-property-read, max_raids)
@@ -24561,3 +24564,20 @@ hitex.com.ua##.mt-logo-row-wrapper:style(position:static !important)
 papamama.ru##.popup-window-overlay
 papamama.ru##.popup_banner
 papamama.ru###warning
+
+gigacourse.com##img[alt="In article ad"]
+gigacourse.com##img[alt="In feed Ad"]
+gigacourse.com##img[alt="Sticky Ad"]
+gigacourse.com##img[alt="Header Ad"]
+gigacourse.com##img[alt="Sidebar"]
+gigacourse.com##.header-inner
+
+||simplilearn.com/*/course-banner$image
+simplilearn.com##.free-app
+
+freetutorialshub.com##.breaking-news
+freetutorialshub.com###author-box
+! popup
+freetutorialshub.com##.check-also-right
+
+indiatimes.com$image,redirect-rule=1x1.gif  # from uBlock filters
