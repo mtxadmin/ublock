@@ -417,6 +417,8 @@ $removeparam=/^pk_.*/,important  # Campaign tracking (Matomo/Piwik)  # from Neat
     ! $removeparam=pk_source  # from Adguard
     ! originally commented rules from NeatURL: #?pk_campaign@vivaldi.com, #?pk_kwd@vivaldi.com - now it turned out it was Piwik
 
+$removeparam=promo
+    
 $removeparam=promoid
     ! Later:
     ! get.adobe.com$removeparam=promoid  # from Adguard
@@ -1633,7 +1635,6 @@ vstat.info$removeparam=user_agent  # from Adguard
 
 adobe.com$removeparam=browser_type  # from Adguard
 adobe.com$removeparam=browser_dist  # from Adguard
-adobe.com$removeparam=promoid  # from Adguard
 adobe.com$removeparam=TRILIBIS_EMULATOR_UA  # from Adguard
 adobe.com$removeparam=type  # from Adguard
 adobe.com$removeparam=workflow  # from Adguard
