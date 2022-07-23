@@ -18295,6 +18295,8 @@ spicybabe.net##.slide_panel
 spicybabe.net##.footer
 spicybabe.net##.footer_logo
 
+*$script,redirect-rule=noopjs,domain=spiegel.de  # from uBlock filters
+*$xhr,redirect-rule=noopjs,domain=spiegel.de  # from uBlock filters
 ! Шпигель выставил paywall. Да и фиг с ним.
     ! paywall
 ||spiegel.de/*/staticBackgroundImage.jpg
@@ -24597,3 +24599,7 @@ hdtube.porn##.heading__title
 xhamster.com##.parental-control-dialog
 xhamster.com##.dlg-backing
 xhamster.com##.dialog-desktop-container
+
+||marketbeat.com/scripts/modal/*  # from uBlock filters
+marketbeat.com##.hello-bar
+marketbeat.com###scrollingIndexes
