@@ -19,8 +19,6 @@ magicplayer-s.acestream.org
 magicplayer-api.torrentstream.org  # from Adguard
 magicplayer-s.torrentstream.org  # from Adguard
 
-telemetry.acronic.com
-
 s1.adguard.com  # from Adguard (sic!)
 dnscheck.adguard.com  # from Adguard (sic!)
 
@@ -32,6 +30,8 @@ dc.altamob.com  # from Adguard
 
 api.mediation.amberweather.com  # from Adguard
 aqi.wd.amberweather.com  # from Adguard
+
+apptelemetry.io  # Apple - Tracker  # from Quidsup NoTrack-Blocklist
 
 collector-hpn.ghostery.net  # from Adguard
 
@@ -172,6 +172,9 @@ goforandroid.com
 smartlock.google.com  # smartlock.google.com$3p
 plusone.google.com  # ||plusone.google.com^$third-party,important  # from Ru AdList
 
+clouderrorreporting.googleapis.com  # Google - Tracker  # from Quidsup NoTrack-Blocklist
+firebaselogging.googleapis.com  # Firebase - Tracker  # from Quidsup NoTrack-Blocklist
+
 api.green-way.com.ua  # app requests  # don't block root
 
 igg.com  # pay-fb.igg.com  # "video game developer"
@@ -276,10 +279,12 @@ directads.mcafee.com  # from Dan Pollock's hosts file
 vik-analytics.moonactive.net  # from GoodbyeAds
 vik-analytics-gke.moonactive.net  # from GoodbyeAds
 
+download-stats.mozilla.org  # from Adguard
 ostats.mozilla.com  # from Dan Pollock's hosts file
 sostats.mozilla.com  # from Dan Pollock's hosts file
-download-stats.mozilla.org  # from Adguard
-telemetry.mozilla.org  # app requests
+! telemetry.mozilla.org  # app requests  # see _marketing_subdomains
+telemetry-experiment.cdn.mozilla.net  # Mozilla - Tracker  # from Quidsup NoTrack-Blocklist
+telemetry-incoming.r53-2.services.mozilla.com  # Mozilla - Tracker  # from Quidsup NoTrack-Blocklist
 
 ! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
 rtlog.musical.ly
@@ -290,6 +295,7 @@ log16-normal-c-useast1a.tiktokv.com
 myinstashot.com  # "Hello" root  # from Adguard
 
 gfe.nvidia.com  # from github.com/asterriya/regex-ads/ and 1Hosts
+    ! telemetry-dce.gfe.nvidia.com  # Nvidia - Tracker  # from Quidsup NoTrack-Blocklist
 
 ! Ads from Opera mini browser. Which have some default adblock (so!). Blocked by some adlist in Blokada
 operamini-sub.osp.opera.software
@@ -303,6 +309,8 @@ speeddials.opera.com  # https://brave.com/popular-browsers-first-run/
 
 adserver.pandora.com  # from Adguard
 
+prod-telemetry.paradox-interactive.com  # paradox-interactive.com - Tracker  # from Quidsup NoTrack-Blocklist
+
 stats.paypal.com  # from MobileAdTrackers and Adguard
 t.paypal.com  # from Adguard
 
@@ -310,6 +318,9 @@ ads.pinger.com  # from Adguard
 cf-ads.pinger.com  # from Adguard
 
 log.pinterest.com$important  # is in 3 lists
+
+telemetry-cii.api.playstation.com  # Sony - Tracker  # from Quidsup NoTrack-Blocklist
+telemetry-console.api.playstation.com  # Sony - Tracker  # from Quidsup NoTrack-Blocklist
 
 pluginmanagerconfig1.info  # app telemetry and empty root
 
@@ -411,6 +422,7 @@ toutiao.com  # is in Adguard
 collector.pi.spectrum.net  # from Adguard
 
 adeventtracker.spotify.com  # from Adguard
+crashdump.spotify.com  # Spotify - Tracker  # from Quidsup NoTrack-Blocklist
 
 sgs.sputnik.ru
 stat.sputnik.ru
@@ -452,6 +464,8 @@ pstatp.com  # empty root
 
 tvinteractive.tv  # from BlockListProject/SmartTV
 
+client-event-reporter.twitch.tv  # Twitch - Tracker  # from Quidsup NoTrack-Blocklist
+countess.twitch.tv  # Twitch - Tracker  # from Quidsup NoTrack-Blocklist
 mp.twitch.tv  # from Quidsup NoTrack-Blocklist
 spade.twitch.tv  # from Adguard
 
@@ -540,6 +554,8 @@ unity3d.com.edgekey.net  # from GoodbyeAds
 unityads.unitychina.cn  # from Energized Blu
 ! config.unityads.unitychina.cn
 
+tracking.unrealengine.com  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
+
 urbandroid.org  # app requests to sleep.urbandroid.org
 
 ads.viber.com  # from MobileAdTrackers
@@ -583,6 +599,7 @@ ad.xiaomi.com
 !+  track.ad.xiaomi.com
 !+  zeus.ad.xiaomi.com
 ad.india.xiaomi.com
+ad.rus.xiaomi.com  # Xiaomi - Tracker  # from Quidsup NoTrack-Blocklist
 ad1.xiaomi.com  # from GoodbyeAds
 admob.xiaomi.com  # from MobileAdTrackers
 ai.xiaomi.com  # from GoodbyeAds
@@ -691,6 +708,7 @@ comm.miui.com  # from GoodbyeAds
 feedback.miui.com  # from GoodbyeAds
 huangye.miui.com  # from AdGuard
 india.miui.com  # from GoodbyeAds
+    ! tracking.india.miui.com  # Miui - Tracker  # from Quidsup NoTrack-Blocklist
 intl.miui.com
 !+  brs.intl.miui.com  # from Adguard: api.brs.intl.miui.com
 !+  browser.intl.miui.com  # from Adguard: activity.browser.intl.miui.com
@@ -699,6 +717,7 @@ intl.miui.com
 !+  sec.intl.miui.com  # from Adguard: adv.sec.intl.miui.com
 !+  tracking.intl.miui.com
 rus.miui.com  # from GoodbyeAds
+    ! tracking.rus.miui.com  # Miui - Tracker  # from Quidsup NoTrack-Blocklist
 sec.miui.com  # logupdate.avlyun.sec.miui.com  # (looks like remote logging?)  # miui: adv.sec.miui.com  # mazu.sec.miui.com
 !+  avast.sec.miui.com  # analytics.ff.avast.sec.miui.com
 !+  avlyun.sec.miui.com  # update.avlyun.sec.miui.com  # (supposedly update checking?)  # + todo  # + еще https://habr.com/en/post/320612/  # https://www.quora.com/Do-Xiaomi-phones-really-spy-on-our-data-question-details
