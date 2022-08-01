@@ -139,19 +139,21 @@
 /shopify_chat/*$important
 /smartpushmarketing.js
 /stopsovetnik/*
-/sweetalert/*  #unpkg.com/sweetalert/dist/sweetalert.min.js
-/sweetalert2/*  #unpkg.com/sweetalert/dist/sweetalert.min.js
-/sweetalert.min.js  #unpkg.com/sweetalert/dist/sweetalert.min.js
+/sweetalert$important,all
+    ! /sweetalert/*  #unpkg.com/sweetalert/dist/sweetalert.min.js
+    ! /sweetalert2/*  #unpkg.com/sweetalert/dist/sweetalert.min.js
+    ! /sweetalert.min.js  #unpkg.com/sweetalert/dist/sweetalert.min.js
+    ! /sweetalert2.min.js
 /toastr.min.js
 /trackpush.min.js$important  # is in EasyPrivacy
 /trackpush/$important
 /webchat/*$domain=~gosuslugi.ru
-/webpush
+/webpush$important,all
     !/webpush.  # push ad scripts  # is in Ru AdList and in AdGuard
         ! /webpush.js
         ! /webpush.min.js
+    ! /webpush/*
     ! /webpush-launcher.js
-/webpush/*
 /web-push-$important  # is in Fanboy's  # my old version (Fanboy's is more general): /web-push-client/*$important
 /whatschat$important
 /widgets/eu-cookie-law/*$important
@@ -257,6 +259,8 @@ aaawebstore.com$important  # shopify ad scripts  # "Convert More Visitors Into C
 
 accengage.net  # from Adguard
 
+acobot.ai  # from Adguard
+
 acquire.io  # chat
 
 actirinius.com  # from Adguard
@@ -357,6 +361,8 @@ amattepush.com  # from Ru AdList
 checkouts-public.s3.amazonaws.com$important  # popups like "Someone purchased ..."
 ||amazonaws.com/yo-apps/
 
+amplify.ai  # from Adguard
+
 ampush.io  # ad scripts
 
 antiblock.info$important  # ad scripts  # is in AdGuard
@@ -395,7 +401,11 @@ arello-mobile.com  # pushwoosh.com
 !+  dragon.arello-mobile.com
 ! end of arello-mobile.com
 
+artibot.ai  # from Adguard
+
 atms.at  #wat.atms.at
+
+autofaq.ai  # from Adguard
 
 autoketing.org  # push ad scripts
 
@@ -417,6 +427,8 @@ bazzaro.ru
 bazzarobot.ru
 
 beaconpush.com
+
+beesender.com  # from Adguard
 
 bigreal.org$important  # is in Peter Lowe’s Ad and tracking server list  # push ad scripts (/pushJs/)
 backforward.bid$important
@@ -466,6 +478,8 @@ bosspush.com$important  # is in RU AdList and Fanboy’s
 boxcar.io
 
 brainsins.com  # tracking and popup ad scripts
+
+britopush.com  # from Adguard
 
 brn.ai
 
@@ -606,12 +620,14 @@ cdnativepush.com  # from GoodbyeAds
 
 cdn-sitegainer.com  # from Adguard
 
+centrpush.com  # from Adguard
+
 cepbep.org  # chat scripts and no root
 
 cesnaver.cf  # redirects  # "Press Allow button to continue"
 
-cevapla.tv$third-party
-||cevapla.tv/widget/$third-party
+cevapla.tv
+||cevapla.tv/widget/
 
 cfpushsdevpw.com  # from GoodbyeAds
 
@@ -635,15 +651,23 @@ chatango.com
 
 chatappdemo.com
 
+chatbot.com  # from Adguard
+
 chatbro.com$important
+
+chatbullet.com  # from Adguard
 
 chatelaine.com  # from GoodbyeAds
 
 chatfocus.com
 
+chatinator.com  # from Adguard
+
 chatovod.ru$important
 chatovod.com  #ads.chatovod.ru$important
 ! end of chatovod
+
+chatplus.jp  # from Adguard
 
 chatra.io$important
 !+  em.chatra.io
@@ -651,6 +675,8 @@ chatra.io$important
 chatra.com  #chat.chatra.io
 
 chatrwireless.com  # from GoodbyeAds
+
+chatterpal.me  # from Adguard
 
 civey.com  #widget.civey.com
 
@@ -711,11 +737,15 @@ confirmate.org  # ad scripts  # "Please, switch off Ad-blocker"
 
 conforama-push.com  # from GoodbyeAds
 
+connect.digital  # 404 root  # from Adguard: push.connect.digital
+
 consultsystems.ru$important  # WebConsult
 
 contactleader.pl  #widget.contactleader.pl
 
 contentsitesrv.com  # push ad scripts and near empty root  # is in uBlock filters  #contentsitesrv.com/js/push/
+
+conversiobot.com  # from Adguard
 
 convertflow.com$important  # "platform for converting your website visitors"  # "forms, popups, surveys and landing pages"  # webflow
 convertflow.co
@@ -733,6 +763,8 @@ copiny.ru
 copush.com  # from Adguard
 
 corer.ru  # push ads
+
+corover.mobi  # from Adguard
 
 cracataum.com  # from Adguard
 
@@ -798,11 +830,15 @@ dialogwidget.ru  # from Ru AdList: service.dialogwidget.ru
 
 digitalforce.pw
 
+digital-interview.com  # from Adguard
+
 digitalpush.org
 
 directlinkkpush.com  #adaranth.com  # "18+", black screen and pusher-locker.js
 
 disrepush.com  # "Браузерные уведомления"
+
+dlyakleopushey.ru  # from Adguard
 
 donorbox.org  # Popup buttons  #donorbox.org/install-popup-button.js  #donorbox.org/widget.js
 
@@ -841,6 +877,8 @@ d1q3axnfhmyveb.cloudfront.net  # ecwid
 d28ns6j2m7zepp.cloudfront.net  # ecwid
 /integrations-ecwid.js
 
+edialog24.com  # from Adguard
+
 edrone.me  # from Adguard
 
 engagespot.co  # push ads
@@ -856,6 +894,8 @@ epushclick.com  # from Adguard
 
 esputnik.com$important  # "Behavior-based bulk and automated omnichannel campaigns"
 esputnik.com.ua$important
+
+estart.jp  # 403 root  # from Adguard: push.estart.jp
 
 ethinking.de  # "push service"  # from Ru AdList: push.delivery.ethinking.de
 
@@ -940,6 +980,10 @@ fortpush.com  # from Adguard
 foxpush.com$important
 foxpush.net  # from Adguard
 
+frase.io  # from Adguard
+
+freshbots.ai  # from Adguard
+
 freshchat.com
 !+  us2.freshchat.com
 !+  webpush.freshchat.com
@@ -956,6 +1000,7 @@ frontapp.com
 ! end of frontapp.com
 
 fstrkchat.com  # ad scripts  # is in Adguard
+fstrkchat.com  # from Adguard
 
 funnwebs.com  # directlinkkpush.com
 
@@ -975,6 +1020,8 @@ getbeamer.com  # push ads
 get-my-push.xyz  # from GoodbyeAds
 
 getpush.net$important  # ad scripts  # is in Ru AdList, Fanboy's and AdGuard
+
+getpush.org  # from Adguard
 
 getpushmonkey.com
 
@@ -1041,6 +1088,8 @@ goodmod.ru$important  # "Блокировщик Советника Яндекс.
 
 gopushmajor1.com  # from Ru AdList
 
+gorgias.chat  # from Adguard
+
 gorgias.io$important  # "all your customer communication is in one place"
 
 goroost.com$important  # push ads
@@ -1091,7 +1140,8 @@ happydesk.com
 happyfox.com
 happyfoxchat.com  # ad scripts
 hfweb-assets.s3.amazonaws.com  # happyfox.com
-d1l7z5ofrj6ab8.cloudfront.net  # happyfox.com
+
+hattepush.com  # from Adguard
 
 headlinerlabs.com$important  # "Facebook Messenger chatbots send automated marketing to your web traffic"
 
@@ -1150,6 +1200,8 @@ in-page-push.net  # from GoodbyeAds
 
 hidepaypal2-static.inscoder.com$important  # "frequently requested feature on Shopify support forums for merchants who simply wants to hide the Paypal button on shopping cart page"
 
+installchatbot.com  # from Adguard
+
 insticator.com
 
 intercom.com$important  # on-site chat service  # is in Ru AdList
@@ -1165,6 +1217,8 @@ intercom-clicks.com
 intercom-mail.com
 
 invitemanager.com
+
+iopushtech.com  # from Adguard
 
 i-push.ru  # ad push  # js root
 
@@ -1256,6 +1310,8 @@ landbot.io  # ad scripts  # chatbot
 
 lattepush.com  # from GoodbyeAds
 
+leadada.com  # from Adguard
+
 leadback.ru$important  # "виджет обратного звонка для сайта"
 
 leadcase.ru  # from Ru AdList
@@ -1291,8 +1347,7 @@ xn--80aaiioqjolhnko5a.xn--p1ai  # алгоритмуспеха.рф
 
 leeloo.ai
 
-leetero.ru
-||leetero.ru/consultant/$third-party
+leetero.ru  # ||leetero.ru/consultant/
 
 ! see leo.cash at megapu.sh
 
@@ -1325,6 +1380,8 @@ liveexpert.ru
 
 livehelper.com  # from MVPS
 
+livesupporti.com  # from Adguard
+
 livetex.ru$important  # "Подключите web-консультанта, обратный звонок, социальные сети, мессенджеры и чат-ботов"  #web-client.livetex.ru  #web-client-02.livetex.ru  #widgets.livetex.ru
 livetex.me$important
 liveoperator.ru$important
@@ -1354,6 +1411,8 @@ mailfire.io  # mailfire.io - email subscription widget  #scripts.mailfire.io
 majorpush.pro$important  # push ads network
 
 makedreamprofits.ru$important  # jumpout  # "Умные формы для сбора подписчиков"
+
+malerex.ru  # from Adguard
 
 mampark.ru$important  # push ads  # domain is parked in reg.ru, but push ads scripts are working: mam.mampark.ru/2635/8580a6efa49774c292c10f0eb4516652b3c8ea1e.js
 
@@ -1426,6 +1485,8 @@ modulepush.com$important
 
 moengage.com  # from Adguard
 
+moin.ai  # from Adguard
+
 molie.chat  # from GoodbyeAds
 
 mortypush.com$important
@@ -1437,6 +1498,8 @@ mpush.cn  # from GoodbyeAds
 mtt.ru  #business.mtt.ru
 
 mylivechat.com
+
+mypush.online  # from Adguard
 
 mypushz.com  # from GoodbyeAds
 
@@ -1501,6 +1564,8 @@ nighkclick.biz  # "Click Allow"
 
 nominaver.ga  # redirects  # "Press Allow button to continue"
 
+noterium.com  # from Adguard
+
 notibar.com  # also see /plugins/notification-bar-notibar/
 
 notifadz.com  # from Adguard
@@ -1561,6 +1626,8 @@ onlyadshere.info
 on-push.com  # from Adguard
 
 onwebchat.com
+
+opencmp.net  # from Adguard
 
 openpush.im
 
@@ -1763,6 +1830,8 @@ pushcentr.com  # from Ru AdList
 
 pushchev.info  # from GoodbyeAds
 
+pushcode.jp  # from Adguard
+
 pushcodetop.ru$important  # push ad scripts
 
 pushcrew.com$important
@@ -1783,13 +1852,15 @@ pushdom.co  # from Adguard
 
 pushdusk.com  # from Adguard
 
+pushe.co  # from Adguard
+
 pushebrod.com  # from Adguard
 
 pushed.co
 
 pusheds.info  # from GoodbyeAds
 
-pushedwebnews.com$third-party
+pushedwebnews.com
 
 pushego.com  # push ad scripts  # is in EasyList
 
@@ -1842,7 +1913,8 @@ pushgaga.com
 push-house.net  # from Adguard
 
 pushible.com  # push ad scripts
-dap2y8k6nefku.cloudfront.net  # pushible
+
+pushid.info  # from Adguard
 
 pushify.com  # from Adguard
 
@@ -1880,7 +1952,11 @@ pushkapro.com  # from GoodbyeAds and Adguard
 
 pushkav.com  # from GoodbyeAds
 
+pushkintop.ru  # from Adguard
+
 pushkov.info  # from Ru AdList
+
+pushland.net  # from Adguard
 
 pushlaram.com$important
 
@@ -1903,6 +1979,8 @@ pushly.com  # from GoodbyeAds
 /pushly-sw.  # from Ru AdList
 
 pushmajor1.com  # from Ru AdList
+
+pushmaster.xyz  # from Adguard
 
 pushmaster-cdn.xyz  # from EasyPrivacy
 
@@ -1953,6 +2031,8 @@ push-notification.tools  # from Dan Pollock's hosts file
 
 push-notifications.top  # from Adguard
 
+pushnotificationx.com  # from Adguard
+
 push-notifs.com  # from GoodbyeAds
 
 pushnow.net  # RollerAds - Advertising  # from Quidsup NoTrack-Blocklist
@@ -1983,6 +2063,8 @@ pushover.net
 pushowl.com$important  # "visitors into loyal customers with push notifications"
 
 pushpad.xyz
+
+pushpanda.io  # from Adguard
 
 pushplay.com  # is in Spam404  # from Peter Lowe's hosts file
 
@@ -2102,6 +2184,8 @@ qarm.org
 
 qbutton.ru
 
+qform24.com  # from Adguard
+
 qmerce.com
 
 qpush.net
@@ -2121,6 +2205,8 @@ rapporto.ru
 rbcall.com  # closed ?
 
 realpush.digital  # from Adguard
+
+realpush.media  # from Adguard
 
 realpush.net$important  # push ads network
 realpush.network  # from GoodbyeAds
@@ -2146,6 +2232,8 @@ refractionius.com$important  # push ads  # refractionius.com,wherently.com  # "�
 replain.cc$important  # "Messages from your website"
 
 reprocautious.com  # from Adguard
+
+reserve-widget.ru  # from Adguard
 
 responster.com
 
@@ -2369,6 +2457,8 @@ snd.tc  # from Adguard
 
 socadviser.ru  # ad scripts
 
+sociomile.com  # from Adguard
+
 sofinpushpile.com  # from GoodbyeAds
 
 sovetnik-off.ru$important  # блокировка Яндекс-советника
@@ -2526,7 +2616,6 @@ truepush.com$important  # is in 3 lists
 trytada.com$important  # shopify ad scripts  # "engaging game to win a discount in exchange for their email address"
 tada-cdn.s3.ca-central-1.amazonaws.com$important
 ec2-35-182-64-189.ca-central-1.compute.amazonaws.com$important
-d2zfzf6gy158sa.cloudfront.net
 
 ttweb.net  # no root  # push.ttweb.net
 
@@ -2632,6 +2721,8 @@ virtualspirits.com
 
 visitchattanooga.com  # from GoodbyeAds
 
+visitor.chat  # from Adguard
+
 voice-connect.ru
 !+  my.voice-connect.ru
 ! end of voice-connect.ru
@@ -2649,9 +2740,13 @@ vuukle.com
 
 wame.chat
 
+webandname.com  # default root  # from Adguard: push.webandname.com
+
 webanketa.com
 
 web-chat.eu  # from GoodbyeAds
+
+webica.pro  # from Adguard
 
 webim.ru$important  # ad scripts
 !+  pro-service.webim.ru
@@ -2731,6 +2826,8 @@ x4pollyxxpush.com  # from GoodbyeAds
 xatech.com
 !+  ns.xatech.com
 ! end of xatech.com
+
+xedo.me  # from Adguard
 
 xn--b1afaigyfhel.xn--p1ai  # перезвоним.рф
 
