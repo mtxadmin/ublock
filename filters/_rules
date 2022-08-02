@@ -530,6 +530,7 @@ _ad.gif|  # from EasyList
     ! /adbdetect.js  # from Adguard
     ! /adbdetect/*
 /adblock.gif?  # from EasyList
+/adblock.js
 /adblock-checker$important
     ! /adblock-checker.js$important
 /adblockdetect$important  # from EasyList
@@ -570,6 +571,8 @@ adblockdetector/$important
 /adliftqueue.js  # from Ru AdList
 /adloaderplus?  # from EasyList
 /adlogger_tracker.js?  # from Ru AdList
+/admanager/*$important
+/admanager.js$important
 /adobe_target/*
 /adobe_target.js
 /adpic/*  # from EasyList
@@ -1254,9 +1257,10 @@ _rebid.js  # from EasyList
 .weborama.js  # from EasyList
 /webunder.  # from Ru AdList
 /webunder_  # from Ru AdList
-/widget/*$~stylesheet,domain=~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru|~sbis.ru
-    ! /widget/?45;*|1|1|1|1  # strange rule from Ru AdList
-/widget.min.js$important,domain=~sbis.ru
+! widget rules need refactoring :-( They block /jquery/ui/widget.min.js
+!/widget/*$~stylesheet,domain=~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru|~sbis.ru
+!    ! /widget/?45;*|1|1|1|1  # strange rule from Ru AdList
+!/widget.min.js$important,domain=~sbis.ru
 /widget-a-b.js  # from Ru AdList
 /widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~dns-shop.ru|~domclick.ru|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
 @@||embedly.com/widgets/
