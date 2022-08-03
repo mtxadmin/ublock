@@ -211,7 +211,7 @@
 
 /plugins/addthis-all/*
 
-/plugins/add-to-any$important,~stylesheet  # is in Fanboy's
+/plugins/add-to-any$important,~stylesheet  # is in Fanboy's and Adguard
 
 /plugins/addzakl/*  # from Ru AdList
 
@@ -243,7 +243,7 @@
 
 /plugins/ad-tweaker/*
 
-/plugins/adunblocker  # from Adguard and uBlock filters
+/plugins/adunblocker$important  # from Adguard and uBlock filters
 
 /plugins/advanced-ads/*
 /plugins/advanced-ads-pro/*
@@ -1323,7 +1323,10 @@
 /plugins/screets-lcx/*
 
 /plugins/script-manager/*
+    ! ||hanime.xxx/wp-content/plugins/script-manager/assets/js/script-manager.js  # from Adguard
     ! ||hentaidude.xxx/wp-content/plugins/script-manager/  # from EasyList
+    ! /plugins/script-manager/assets/js/script-manager.js$domain=nhentai.io|hanime.xxx|hentaihaven.xxx  # from Adguard
+    ! ||hentaihaven.xxx/wp-content/plugins/script-manager/assets/js/script-manager.js  # from Adguard
 
 /plugins/scroll$important
     ! /plugins/scroll-back-to-top/*
@@ -1549,6 +1552,8 @@
 
 /plugins/ubillboard/*
 
+/plugins/uji-popup/*  # from Adguard
+
 /plugins/uk-cookie-consent/*$important
     /uk-cookie-$important  # is in 2 lists
 
@@ -1561,6 +1566,8 @@
 /plugins/ultimate-social-deux/*$~stylesheet  # is in Fanboy's
 
 /plugins/ultimate-social-media-icons/*
+
+/plugins/ultimate-social-media-plus/*  # from Adguard
 
 /plugins/unblock-adsense/*  # from Adguard: /plugins/unblock-adsense/*/adunblock
 
@@ -1684,6 +1691,8 @@
 
 /plugins/wp-embed-facebook/*
 
+/plugins/wp-evolve-gpt/*  # from Adguard
+
 /plugins/wpfixedverticalfeedbackbuttonaddon/*
 
 /plugins/wp-floating-menu/*
@@ -1756,6 +1765,12 @@
 
 /plugins/wp-share-to-xing/*  # is in Adguard
 
+/plugins/wpsite-background-takeover
+    ! */wp-content/plugins/wpsite-background-takeover*/js/wpsite_clickable.js$script  # from uBlock filters
+    ! ||vladan.fr/wp-content/*/plugins/wpsite-background-takeover*/js/wpsite_clickable-*.js  # from Adguard
+    ! ||techcentral.ie/wp-content/plugins/wpsite-background-takeover  # from Adguard
+    ! ||wrestling-online.com/News/wp-content/plugins/wpsite-background-takeover/js/wpsite_clickable.js  # from Adguard
+
 /plugins/wp-social-sharing/*
     /socialshare.js
 
@@ -1818,6 +1833,8 @@
     /wysija-newsletters/*  # is in RuAdList And Fanboy's
 
 /plugins/xt-woo-floating-cart/*
+
+/plugins/yalaan/*  # from Adguard
 
 /plugins/yikes-inc-easy-mailchimp-extender/*
 
