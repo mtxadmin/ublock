@@ -193,9 +193,20 @@
 
 /plugins/activecampaign-subscription-forms/*
 
+/plugins/ad-ace/*$important
+
+/plugins/adblock/*$important
+
+/plugins/ad-block-defender/*  # from Ru AdList
+
+/plugins/ad-blocker/*$important
+
 /plugins/ad-blocking-advisor/*$important
 
 /plugins/ad-blocking-detector/*$important
+
+/plugins/adblock-monetizer/*$important
+    /adblock-monetizer.js  # from Adguard
 
 /plugins/adblock-notify-by-bweb/*$important
 
@@ -233,7 +244,8 @@
 
 /plugins/ads/*  # from EasyList
 
-/plugins/adsanity-  # from EasyList
+/plugins/adsanity*  # from uBlock filters
+    ! /plugins/adsanity-  # from EasyList
 
 /plugins/ads-for-wp/*$important
 
@@ -255,11 +267,13 @@
 
 /plugins/advanced-advertising-wrapper/*$important
 
-/plugins/advanced-browser-check/*
+/plugins/advanced-browser-check/*$~stylesheet  # is in Fanboy's
 
 /plugins/advanced-facebook-content-locker/*
 
-/plugins/advert/*  # from Adguard
+/plugins/advanced-facebook-page-promoter-lighbox/*
+
+/plugins/advert/*$important  # from Adguard
 
 /plugins/advert_tcc$important
 
@@ -329,7 +343,9 @@
 
 /plugins/arrived/*
 
-/plugins/arscode-ninja-popups/*
+/plugins/arscode-ninja-popups/*$important
+
+/plugins/asmb-tracking/*  # from Adguard
 
 /plugins/as-social-popup/*
 
@@ -338,6 +354,8 @@
 /plugins/attention-grabber-hello-bar-alternative/*
 
 /plugins/autobadge/*
+
+/plugins/aurora-heatmap$stylesheet,script  # from Adguard
 
 /plugins/automatic-social-locker/*  # from EasyList
 
@@ -558,6 +576,8 @@
 
 /plugins/cutroni-content-tracking-master/*
 
+/plugins/da-unblock  # from Adguard
+
 /plugins/deadblocker/*  # from Adguard and uBlock filters
 
 /plugins/deblocker/*$important  # antiadblock
@@ -572,11 +592,15 @@
 
 /plugins/diggclick/*
 
+/plugins/digiproveblog/*  # ad scripts  # is in Adguard  # see digiprove.com
+
 /plugins/digital-climate-strike-wp/*$important  # "it will show a footer banner"
 
 /plugins/digitalpush/*
 
 /plugins/discourse-push-notifications
+
+/plugins/dispensary-age-verification/*
 
 /plugins/distr-adv/*  # from Ru AdList
     /plugins/distr/*/distr-adv-  # from Ru AdList
@@ -728,6 +752,8 @@
 
 /plugins/fiwex/*
 
+/plugins/fixed-toc/*  # also, this plugin breaks scrolling, so let's definitely block it
+
 /plugins/flare/*$~stylesheet  # is in Fanboy's
 
 /plugins/flat_pm/*$important  # is in Ru AdList
@@ -850,6 +876,8 @@
 
 /plugins/gravitydivi-forms-customizer-module/*
 
+/plugins/growl/*  # notifications
+
 /plugins/haiku-minimalist-audio-player/*
 
 /plugins/handl-utm-grabber/*
@@ -925,6 +953,8 @@
 
 /plugins/kodex-posts-likes/*
 
+/plugins/kupibilet/*  # ||roem.ru/wp-content/plugins/kupibilet/  # from Adguard
+
 /plugins/lara-google-analytics/*
 
 /plugins/layered-popups/*
@@ -989,9 +1019,11 @@
     ! /plugins/mashsharer/*$~stylesheet  # from Fanboy's
     ! some plugins:
     ! /plugins/mashshare-floating-sidebar/
+    ! /plugins/mashshare-google-analytics/assets/js/mashga.min.js  # from Adguard
     ! /plugins/mashshare-networks/
     ! /plugins/mashshare-pageviews/
     ! /plugins/mashsharer/
+    ! /plugins/mashshare-videopost/*
     ! from Fanboy's
     ##.mashsb-box
     ! from AdGuard and Fanboy's
@@ -1148,6 +1180,8 @@
 
 /plugins/patreon-connect/*
 
+/plugins/pb-ga-google-analytics/*
+
 /plugins/pc-google-analytics/*
 
 /plugins/perelink/*
@@ -1190,6 +1224,8 @@
 
 /plugins/popup-shraddha/*
 
+/plugins/popup-with-fancybox/*
+
 /plugins/postmatic-premium/*
 
 /plugins/post-pusater/*
@@ -1202,6 +1238,8 @@
 /plugins/powerkit/modules/share-buttons/*
     !/wp-content/plugins/powerkit/modules/share-buttons/public/js/public-powerkit-share-buttons.js
     /share-buttons/*$important  # is in Fanboy's and Ru AdList
+
+/plugins/prebid/*$important
 
 /plugins/productaddicons/*
 
@@ -1352,6 +1390,8 @@
 
 /plugins/secure-copy-content-protection/*$important
 
+/plugins/selection-sharer/*
+
 /plugins/sendpulse-web-push/*
 
 /plugins/seniorbar/*
@@ -1456,11 +1496,17 @@
 /plugins/social$~stylesheet,important
     ! /plugins/social-$script  # is in Fanboy’s
     ! /plugins/socialauth-wp/*$important
+    ! /plugins/social-by-webnavoz/*  # from Adguard
     ! /plugins/social-community-popup/*  # from Ru AdList
+    ! /plugins/social-count-plus/*  # from Adguard
+    ! /plugins/socialer/*
     ! /plugins/socialgrid/*$~stylesheet  # from Fanboy's
     ! /plugins/social-locker/*  # from Adguard
     ! /plugins/sociallocker-  # from Adguard
+    ! /plugins/sociallocker-next-premium/*$script,css  # from uBlock filters
+    ! /plugins/social-share-buttons-by-supsystic/*  # from Adguard
     ! /plugins/socialsnap/*
+    ! /plugins/social-warfare/*  # from Adguard
 
 /plugins/soslider-social-slider/*
 
@@ -1469,6 +1515,10 @@
 /plugins/sp-ads/*
 
 /plugins/spider-faq/*
+
+/plugins/stat-analytics/*  # from Adguard
+
+/plugins/stat-dfp/*  # from Adguard
 
 /plugins/sticky
     ! /plugins/sticky-ad-bar/*$important
@@ -1512,6 +1562,8 @@
 
 /plugins/system/joompush/*
 /plugins/system/smoothtop/*  # scroll-up button
+
+/plugins/ta2021-plugin-cookie-consent/*  # from SecurityEntire CookieFilter
 
 /plugins/table-of-contents-plus/*
 
@@ -1578,11 +1630,13 @@
 
 /plugins/ultimate-marketo-forms/*$important  # also see marketo.com and _marketing_marketo
 
+/plugins/ultimate-popunder/*$~stylesheet  # from EasyList
+
 /plugins/ultimate-social-deux/*$~stylesheet  # is in Fanboy's
 
 /plugins/ultimate-social-media-icons/*
 
-/plugins/ultimate-social-media-plus/*  # from Adguard
+/plugins/ultimate-social-media-plus/*$important  # from Adguard
 
 /plugins/unblock-adsense/*  # from Adguard: /plugins/unblock-adsense/*/adunblock
 
@@ -1596,8 +1650,9 @@
 
 /plugins/useinfluence/*$important  # also see useinfluence.co
 
+/plugins/vast*.js  # from Adguard
 /plugins/vast/*$important  # from EasyList: ||jwpcdn.com/player/plugins/vast/
-/plugins/vast-  # from uBlock filters: */player/plugins/vast-*.js$script
+/plugins/vast-$important  # from uBlock filters: */player/plugins/vast-*.js$script
 
 /plugins/videobg/*
 
@@ -1745,6 +1800,8 @@
 
 /plugins/wp-modal-popup-with-cookie-integration/*
 
+/plugins/wp-mop-analytics/*  # from Adguard
+
 /plugins/wp-notification-bars/*
 
 /plugins/wp-ooma-reviews-plugin/*
@@ -1773,6 +1830,9 @@
 /plugins/wp-reading-progress/*
 
 !/plugins/wp-rocket/* - don't block: caching, images...
+
+/plugins/wp-safelink/*$important
+/plugins/wp-safelink-v$important
 
 /plugins/wps-cookie-consent/*
 
