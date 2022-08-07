@@ -9,6 +9,10 @@
 ! hosts
 ! comments are preferably inline with  #
 !
+api.facebook.com$third-party  # from Anti-Facebook
+badge.facebook.com$third-party  # from Anti-Facebook
+graph.facebook.com$third-party,xmlhttprequest  # from Anti-Facebook
+||graph.facebook.com/?id=$third-party  # from Anti-Facebook
 !
 ! urls
 ! comments are preferably inline with  # 
@@ -17,10 +21,18 @@
 /cdn-cgi/pe/bag2?*connect.facebook.com  # from Anti-Facebook
 /cdn-cgi/pe/bag2?*connect.facebook.net  # from Anti-Facebook
 ||facebook.com/ajax/bnzai*__comet_req=  # Adguard rule
+||facebook.com/connect/$third-party  # from Anti-Facebook
 ||facebook.com/csp/reporting/
-||facebook.com/*/plugins/$domain=~facebook.com  # from Adguard
-||facebook.com/plugins/$domain=~facebook.com|~freepresets.com  # from Adguard
-||facebook.com/sharer.php$third-party,domain=~speedtest.net  # from Adguard
+||facebook.com/dialog/oauth?display=popup$popup,domain=humorhub.org  # from Anti-Facebook
+||facebook.com/*/plugins/$important,domain=~facebook.com  # from Adguard
+||facebook.com/plugins/$important,domain=~facebook.com  # from Adguard and Anti-Facebook
+||facebook.com/restserver.php?*.getStats&$third-party  # from Anti-Facebook
+||api-read.facebook.com/restserver.php?api_key=$third-party  # from Anti-Facebook
+||facebook.com/share/$third-party
+||facebook.com/sharer/sharer.php$important,third-party  # from Adguard
+||facebook.com/sharer.php$important,third-party  # from Adguard
+||facebook.com/whitepages/wpminiprofile.php$third-party  # from Anti-Facebook
+||facebook.com/widgets/$third-party  # from Adguard and Anti-Facebook
 !
 ! facebook pixels
 /hsts-pixel.gif
@@ -62,6 +74,7 @@ _facebook_icon.  # from Fanboy's and Ru AdList
 _social_fb.  # from Fanboy’s
 ||facebook.com/audiencenetwork/$third-party  # from EasyList
 ||facebook.com/plugins/$important,domain=~facebook.com|~fb.com|~freepresets.com  # from Adguard Social Media
+||facebook.com/*/plugins/$important,domain=~facebook.com|~fb.com|~freepresets.com  # from Adguard Social Media
 ||facebook.com/tr?$important  # is in Adguard
 !
 ! cosmetic filters
@@ -165,6 +178,14 @@ facebook.com,facebookcorewwwi.onion#$#body > .AdBox.Ad.advert { display:block!im
 ##.fb-xfbml-parse-ignore:not(blockquote)
 ! from Fanboy's
 ##a[title="Facebook"]
+! from Adguard, modified
+~facebook.com##iframe[src*="facebook.com/plugins/"]
+    ! from Adguard, modified
+    ! ##iframe[src^="https://www.facebook.com/plugins/"]
+! from Adguard, modified
+##iframe[data-src^="//www.facebook.com/plugins/like"]
+! from Fanboy's
+##iframe[src^="https://fb.com/plugins/page.php?href="]
 ! from Fanboy's
 ##img[alt="Facebook"]
 ! is in Web Annoyances Ultralist
@@ -1039,6 +1060,8 @@ plus.google.com
 /google-plus.png  # from Fanboy's
 /googleplus-sign-in.js$important
 /plusone.js$important
+    ||google.com/js/client:plusone.js$third-party  # from Anti-Facebook
+    ||google.com/js/plusone.js$third-party  # from Anti-Facebook
 /social/google.  # from Fanboy's
 ||apis.google.com/_/apps-static/_/js/gapi/*plusone/$third-party  # from Ru AdList
 ||apis.google.com/js/plusone.js$domain=~blogger.com|~blogspot.com|~blogspot.ru|~pikucha.ru|~googleblog.com|~abcnews.go.com  # from Adguard
@@ -2416,3 +2439,4 @@ _follow_me-b.png  # from Adguard
 
 /social2s.min.js  # from Fanboy's
 
+/public/social/*  # from Fanboy's
