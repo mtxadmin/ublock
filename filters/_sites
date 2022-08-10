@@ -194,8 +194,12 @@
 2do2go.ru##.page_nav-spacer
 2do2go.ru##.progress
 
+    ! popups
 ||2gis.ru/museum/museum.js$important  # "old browser" popup
 ||2gis.ru/museum/$important  # "old browser" popup
+! geo popups
+2gis.ru###modal
+    ! other
 ! is in Ru AdList
 2gis.ru##a[href*="://redirect.2gis.com/adv/"]
 2gis.ru##.dashboard__betaLink
@@ -10920,6 +10924,7 @@ linksys.com##.lia-quilt-row-footer
 
 linode.com##.bg-brand
 linode.com###toc-component
+linode.com##.c-navbar:style(position:static !important)
 
 linux.org.ru##.userpic
 linux.org.ru##.fav-buttons
@@ -24827,3 +24832,16 @@ fineshoes.ru##.blog-action
 
 ||myqqjd.com/wp-content/plugins/*.js  # from Adguard Chinese
 myqqjd.com$csp=script-src 'self' * 'unsafe-inline'  # from Adguard Chinese
+
+||pritchi.ru/js/fancybox/jquery.fancybox.pack.js  # popups
+
+urlpay.net##.breaking-news
+
+oakley.com##.countrySelector__outer
+
+seattletimes.com##.home-header-wordmark
+seattletimes.com##.native-block
+
+pingdom.com$3p  # from The SNAFU Blocklist  # moved to 3p
+
+host-tracker.com$3p  # from MVPS  # moved to 3p
