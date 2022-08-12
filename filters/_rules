@@ -2281,6 +2281,7 @@ _gatrack.js  # from EasyPrivacy
 /google-tag-manager/*$domain=~stackexchange.com|~superuser.com  # from EasyPrivacy
 .Google.Tracker.js  # from EasyPrivacy
 /gtagservices/*
+/heatmap.js$important
 _hightraffic_code.js  # from EasyPrivacy
 .iframetracker/  # from EasyPrivacy
 /imp.gif?  # from EasyPrivacy
@@ -3187,7 +3188,7 @@ _site/gotop.  # from Ru AdList
     ! /cmp/int_cmp.  # from Adguard
 /cmp_shim.js  # from Adguard
 -cnil-popup-  # from EasyList
-/consent
+/consent$important
     ! /consent.js
     ! /consent/*
     ! /consent-mapping/*
@@ -3201,6 +3202,7 @@ _site/gotop.  # from Ru AdList
 -cookie-consent.js  # from EasyList
 _CookieConsent.js  # from EasyList
 /cookieconsent.$important  # from AdGuard
+    ! /cookieconsent.min.js$important
 /cookieconsent2/*$important
     ||cloudflare.com/ajax/libs/cookieconsent2/  # from EasyList
 /cookie-consent-$script
@@ -3249,7 +3251,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
     ! /eu-cookie-law.min.js$important
 /evercookie.  # from EasyPrivacy
 /evercookie_$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
-/gdpr.js  # from Fanboy's and Adguard
+/gdpr.js$important  # from Fanboy's and Adguard
 .gdpr.$script
     ! .gdpr.js  # from EasyList
     ! .gdpr.min  # from EasyList
@@ -3257,6 +3259,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 .GdprCookieBanner.  # from EasyList
 /gdprcookiepolicy.js  # from EasyList
 /gdpr-consent/*$important
+/jquery.cookieconsent.min.js$important
 /jquery-eu-cookie-law-popup.js$important
 /jquery.ihavecookies.  # from EasyList
 /privacy-consent/*
@@ -3574,8 +3577,8 @@ _snowstorm-min.js  # from Ru AdList
 !! scripts
 ! scripts in uploads folder are highly suspicious
 ! Not ideal Adguard rule, but 99%+ sites are covered well
-/wp-content/uploads/*/*.js  # from Adguard
-
+/wp-content/uploads/*/*.js$domain=~linode.com  # initially from Adguard
+    ! on linode.com: /wp-content/uploads/bb-plugin/cache/*.js
 
 
 !! viewed products
