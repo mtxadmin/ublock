@@ -181,6 +181,8 @@
 
 /plugin/gaofen_ad/*$important  # from EasyList China
 
+/plugin/share/*$important
+
 /plugin/sweetalert-master/*
     /sweetalert.min.js
 
@@ -203,6 +205,7 @@
 
 /plugins/abss-adblock-notice/*
 
+/plugins/accesspress-social-icons/*$important  # from Ru AdList
 /plugins/accesspress-social-login$important
     /accesspress-social-  # is in Ru AdList and Fanboy's
 
@@ -575,6 +578,7 @@
 /plugins/cookie$~stylesheet,important
     ! /plugins/cookie-$~stylesheet,important
         !/plugins/cookie-$~stylesheet  # from Fanboy's
+        !/plugins/cookieconsent/*$important  # from Adguard
         !/plugins/cookie-consent/*$important
         !/plugins/cookie-law-info/*$important
         !/plugins/cookie-notice/*  # from Fanboy's and Adguard
@@ -757,6 +761,8 @@
 /plugins/easy-twitter-  # is in Fanboy's
 
 /plugins/easy-vkontakte-connect/*$important
+
+/plugins/econa-stats/*$important  # from Adguard
 
 /plugins/elegance-modal-box/*
 
@@ -1061,7 +1067,7 @@
 
 /plugins/leadsquared-website-topbar/*  # also see leadsquared in _marketing
 
-/plugins/leaky-paywall/*
+/plugins/leaky-paywall/*$important
     /leaky-paywall/*  # is in Fanboy's
 
 /plugins/lh-push/*
@@ -1072,7 +1078,7 @@
 
 /plugins/lightweight-social-icons/*
 
-/plugins/like-box-pro/*
+/plugins/like-box-pro/*$important
 
 /plugins/likebtn-like-button/*
     ! also see likebtn.com
@@ -1636,8 +1642,9 @@
     ! /plugins/social-locker/*  # from Adguard
     ! /plugins/sociallocker-  # from Adguard
     ! /plugins/sociallocker-next-premium/*$script,css  # from uBlock filters
-    ! /plugins/social-network-tabs/*
+    ! /plugins/social-network-tabs/*$important
     ! /plugins/social-share-buttons-by-supsystic/*  # from Adguard
+    ! /plugins/socialshareprivacy/*$important  # from Fanboy's
     ! /plugins/socialsnap/*
     ! /plugins/social-warfare/*  # from Adguard
 
@@ -1655,7 +1662,7 @@
 
 /plugins/stat-dfp/*  # from Adguard
 
-/plugins/sticky
+/plugins/sticky$important
     ! /plugins/sticky-ad-bar/*$important
         /sticky-ad-  # from EasyList
     ! /plugins/stickyads/*
@@ -1782,7 +1789,7 @@
 
 /plugins/ultimate-popunder/*$~stylesheet  # from EasyList
 
-/plugins/ultimate-social-deux/*$~stylesheet  # is in Fanboy's
+/plugins/ultimate-social-deux/*$important,~stylesheet  # is in Fanboy's
 
 /plugins/ultimate-social-media-icons/*
 
