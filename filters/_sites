@@ -1361,9 +1361,14 @@ androidpolice.com##.header
 
 anekdot.eu##.txt11
 
+||anekdot.ru/favicon
 ||anekdot.ru/i/bg/$image
 anekdot.ru##.nav-line:style(position:static !important)
 anekdot.ru##.txt_promo
+   ! right column. But these rules are mostly useless, text is divided by brs
+anekdot.ru##.col-left-margin:style(margin-right:0px !important)
+anekdot.ru##title:style(max-width:initial !important)
+anekdot.ru##.text:style(max-width:initial !important)
 
 anekdotov.me$inline-script  # site breaks copypaste
 anekdotov.me##header
@@ -2872,6 +2877,8 @@ bleepingcomputer.com##.error.message:has-text(Javascript Disabled Detected)
 bleepingcomputer.com##.post_block:has-text(BC AdBot)
 bleepingcomputer.com###branding
 bleepingcomputer.com##.cz-full-bio-wrapp
+bleepingcomputer.com##.bc_wrapper:style(padding-top:0px !important)
+bleepingcomputer.com##header.nav-up:style(transform:none !important; -webkit-transform:none !important; -webkit-transition:none !important)
 
 ||blindage.org/favicon.png  # gif
 
@@ -5339,6 +5346,8 @@ dtf.ru/chan/
 dtf.ru##.l-fixed:style(position:static !important)
 dtf.ru##.sticky_sidebar:style(position:static !important)
 dtf.ru##.layout__column--sticky:style(position:static !important)
+dtf.ru##.site-header-container:style(position:static !important)
+dtf.ru##.layout__sticky:style(position:static !important)
 dtf.ru##.live
 dtf.ru##.subsite_card_short_with_content
 dtf.ru##.kojima-sidebar-item
@@ -5346,6 +5355,7 @@ dtf.ru##.head-notifies__badge
 dtf.ru##.sidebar__footer__icon
 ! "online" dot on avatars
 dtf.ru##.comment__avatar--online::after
+dtf.ru##.subsite-card__description
 
     ! banners and promos
 dtln.ru##.tm-bnr
@@ -8028,6 +8038,8 @@ hh.ru##[class^=infoblock]
 hh.ru##[class^=infoblock-content--]
 hh.ru##.vacancy-description > .bloko-text
 hh.ru##.bloko-button:has-text(руб)
+! promo
+hh.ru##button[data-qa="negotiations-vacancy_summary"]
     ! logos
 hh.ru##.idc-logo-block
 hh.ru##[class^=footer-nav-logo]
@@ -11800,6 +11812,7 @@ medinfo.ua$3p
     ! paywall
 medium.com###regwall-background-color
 medium.com##.c.s:has-text(Read the rest)
+medium.com##p:has-text(free member-only stor)
     ! top
 medium.com##div:has-text(/^Published in$/)
     ! sticky columns. They can't be unsticked smoothly. Let's remove them then, they are too naggy
@@ -19347,6 +19360,7 @@ teckangaroo.com##.skip-link
 tecmint.com##.after-post-box
 tecmint.com##.link-overlay
 tecmint.com###quickiebarpro
+tecmint.com##.inside-header
 
 teenpussy.pink##.pause-block
 teenpussy.pink##.mask
@@ -21362,6 +21376,7 @@ vmgu.ru##span.articles_info > b:has-text(Реклама:)
 
 ||vmware.com/s/sfsites/aura*beacon*$xmlhttprequest
 ||vmware.com/s/sfsites/aura*tracking*$xmlhttprequest
+||vmware.com/*/header-redesign/  # vmware.com/etc.clientlibs/vmware-modernize-cms/componentlibrary/components/content/header-redesign/clientlibs.min.js
     ! popups
 kb.vmware.com##.slds-modal__container
 kb.vmware.com##.slds-fade-in-open.slds-modal
@@ -21374,6 +21389,8 @@ vmware.com##.main-container:style(display:initial !important)
 vmware.com##.container:style(margin-top:0px !important)
 vmware.com##.container:style(min-height:auto !important)
 vmware.com##.logo-wrapper
+vmware.com##.hdr-bottom-nav
+vmware.com##.hdr-wrapper:style(position:static !important)
     ! other
 vmware.com##.cKM_Feedback_update
 vmware.com##.jive-sidebar.j-box:has-text(Share This Page)
@@ -23034,6 +23051,10 @@ zapas-pro.ru##.header-top
 
 zapier.com##.blog-hero:style(height:200px !important)
 zapier.com##.support-button
+zapier.com##[class$=-ProgressBar]
+zapier.com##[class*=-Outer]:style(position:static !important)
+zapier.com##[class*=-TimeToRead]
+zapier.com##[class*=-LinkOverride]
 
 zarplata.ru##div[class^=notices-container]
 ||zarplata.ru/*/img/age
@@ -24012,6 +24033,7 @@ vokrugsveta.ru##.creative__slot
 
 ||hackr.io/blog/media/udacity-horizontal-banner.png
 
+geeksforgeeks.org##.header-main__slider:style(position:static !important)
 geeksforgeeks.org##.vote-wrap
 geeksforgeeks.org##.tooltip
 
@@ -24905,3 +24927,10 @@ statuscake.com##[href="/SmsCredits.php"]
 statuscake.com##a[href^="Plan.php"]
 statuscake.com##.page-alert
 
+securityinnovation.com##.header-container-wrapper:style(position:static !important)
+securityinnovation.com##.blog-subs-form
+
+howtofix.guide##.header-main-area
+
+intezer.com##.top-posts
+intezer.com##.blog-text-link.blog-side-cta.blog-side-join
