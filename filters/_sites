@@ -18590,7 +18590,11 @@ stackify.com###headerwrap:style(position:static !important)
 ! ad scripts and subdomains. But some sites load css from there
 stackpathcdn.com$script,subdocument
 
-stackshare.io##div:matches-css(position:sticky):style(position:static !important)
+    ! top
+!stackshare.io##div:matches-css(position:sticky):style(position:static !important)
+stackshare.io##div[data-testid="navigationBar"]:style(position:static !important)
+stackshare.io##div[data-testid="navigationBar"]:upward(2):style(position:static !important)
+    ! other
 stackshare.io##[src^="https://img.stackshare.io/s_assets/"]
 stackshare.io##div[data-testid="getAdvice"]
 stackshare.io##aside
@@ -20749,11 +20753,13 @@ uplab.ru###Layer_1
 uptimerobot.com##.notyfy_container
 uptimerobot.com###main-container:style(opacity:initial !important)
 uptimerobot.com##.main-container:style(opacity:initial !important)
+    ! banners and promos
+uptimerobot.com###top-bar-banner-container
+uptimerobot.com##.upgradeProAccount
     ! other
 uptimerobot.com###headerMenuWrap:style(position:static !important)
 uptimerobot.com###main-sidebar:style(margin-top:0px !important)
 uptimerobot.com###header-container
-uptimerobot.com###top-bar-banner-container
 uptimerobot.com##.sidebar-item:style(position:static !important)
 
 uptimesoftware.com##.uimGridHeaderLogoBox
@@ -24923,6 +24929,7 @@ teamviewer.com##.wd-second-menu
 
 statuscake.com$3p  # Traffic Cake - Tracker  # from Quidsup NoTrack-Blocklist  # moved to sites
 statuscake.com##.LogoBox
+statuscake.com##.top-section
 statuscake.com##[href="/SmsCredits.php"]
 statuscake.com##a[href^="Plan.php"]
 statuscake.com##.page-alert
