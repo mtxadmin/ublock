@@ -3722,9 +3722,17 @@ chipmk.ru###header
 
 chitai-gorod.ru##.footer-section_subscribe
 
-chizhik.club##.box:has(.message_telegram)
+    ! unstick elements
 chizhik.club##div:matches-css(position:fixed):style(position:static !important)
+chizhik.club##button:upward(2):style(position:static !important)
+    ! other
+chizhik.club##.box:has(.message_telegram)
 chizhik.club##.animate_bird
+chizhik.club##.policy_icon:upward(1)
+chizhik.club##.agree_box:upward(1)
+chizhik.club##a[href="/feedback"]:upward(1)
+chizhik.club##.what_new_block
+||chizhik.club/pic/cart-land.png
 
 chocolatey.org##.btn-announcement-notifications
 
@@ -6069,10 +6077,12 @@ exgirlfriendmarket.com##p
 ||exler.es/images/depositphotos.png
 ||exler.ru/*/help.png
 ||exler.ru/*/depositphotos.png
+exler.me##.depositphotos
 exler.es##.help__btn
 exler.ru##.header-top
 exler.ru##.custom-section-border.custom-section
 exler.ru##.hosting__info-block
+exler.me##.hosting__info
 
 expert.ru##.content-share-buttons
 
@@ -8381,6 +8391,8 @@ houzz.ru##.hz-scroll-top__button
 
 how2shout.com###toc_container
 
+howtofix.guide##.header-main-area
+
 ||howtoforge.com/images/socialmedia/
 
     ! top
@@ -9073,6 +9085,9 @@ interviewing.io##.main-header-bar:style(position:static !important)
 interworks.com##.header_bottom
 
 ||active.interzet.ru/log.php?  # from Adguard
+
+intezer.com##.top-posts
+intezer.com##.blog-text-link.blog-side-cta.blog-side-join
 
 ! is in AdGuard
 ||intimshop.ru^$script,3p
@@ -10963,6 +10978,8 @@ linuxfordevices.com##em:has-text(Also read:)
 linuxhandbook.com##.gh-portal-triggerbtn-iframe
 linuxhandbook.com##.sidebar__subscribe
 linuxhandbook.com##.widget
+
+linuxize.com##.bg-yellow-100
 
 ||linuxquestions.org/questions/images/LinuxQuestions.png
 linuxquestions.org##.navbar_notice
@@ -15616,6 +15633,8 @@ pyatilistnik.org###header
 pyatilistnik.org###footer
 pyatilistnik.org##[src^="data:image/jpeg;base64,"]
 
+pyrogram.org##.pyrogram-text
+
 pythonforbeginners.com##.ab-block-cta
 
 pythongui.org###trp-floater-ls
@@ -17454,6 +17473,9 @@ securitygladiators.com###exit-intent-underlay
 ! pseudoclass, changing height and filling gap to make sidebar sticky
 securitygladiators.com##.sticky-inside-pad
 
+securityinnovation.com##.header-container-wrapper:style(position:static !important)
+securityinnovation.com##.blog-subs-form
+
 ! site breaks copypaste
 securitylab.ru$inline-script
 ||securitylab.ru/js/cpb.js
@@ -17477,6 +17499,9 @@ seloved.ru##.vopros.groupsidebar
 seloved.ru##[href^="https://zen.yandex.ru/"]
 
 ||selteq.com/wimage/h1.jpg
+
+||semanticforce.net/*/jquery.bpopup.min.js
+semanticforce.net##.b-modal
 
 ||semenapost.ru/images/left.png
 ||semenapost.ru/images/right.png
@@ -17524,6 +17549,8 @@ seopirat.club##.reputation-ranks
 septik.guru##.logoarea
 
 serank.ru$3p  # from Adguard
+
+sergey-computers.ru##.wpcr_floating_links
 
 ||serpcity.ru/uploads/bush.jpg
 
@@ -18626,6 +18653,13 @@ statstool.com##.in.fade.modal.confirmation-modal
 #statuspage.com$domain=~statuspage.io|~statuspage.com|~stspg.io
 #stspg.io$domain=~statuspage.io|~statuspage.com|~stspg.io
 
+statuscake.com$3p  # Traffic Cake - Tracker  # from Quidsup NoTrack-Blocklist  # moved to sites
+statuscake.com##.LogoBox
+statuscake.com##.top-section
+statuscake.com##[href="/SmsCredits.php"]
+statuscake.com##a[href^="Plan.php"]
+statuscake.com##.page-alert
+
 stcatherines-stuttgart.de$script,3p
 
 stealthbits.com##.boxzilla-container
@@ -19146,6 +19180,8 @@ team2.travel##.ts-item-ispremium
 team2.travel##.tl-bl-center-trip-right-purpose
     ! other
 team2.travel###float-top-link
+
+teamviewer.com##.wd-second-menu
 
 techair.ru###slider1_container
 ||techair.ru/images/goods/IT_27171_b.jpg
@@ -20525,6 +20561,9 @@ ubr.ua##.story-nav
 ucbreport.ru##app-ask-email
 
 ||uceleu.ru/templates/skin/webdo/images/bg/woodland.png
+
+ucheba.ru$3p  # from Adguard: api.ucheba.ru$third-party
+ucheba.ru###notifications
 
 ||ucoz.net/cgi/uutils.fcg$important
 
@@ -21916,6 +21955,13 @@ webtalk.ru###title-logo-table
 webtalk.ru###pun-about
 
 webtoons.com##.login_set
+
+webtrafff.com##.dashicons
+webtrafff.com##.mojo-sp-button
+webtrafff.com##.mojo-sp
+webtrafff.com##.related-posts
+webtrafff.com##.sticky-sidebar
+webtrafff.com##.menu
 
 webvisions.com##.container-fluid
 
@@ -23553,17 +23599,6 @@ kb.zyxel.ru###launcher
 ###infinite-footer
 	! privacyonline.home.blog###infinite-footer
 
-/detroitchicago/$script,important
-    ! /detroitchicago/cmbdv2.js  # is in EasyList
-    ! /detroitchicago/houston.js  # is in EasyList
-    ! /detroitchicago/rochester.js  # is in EasyList
-    ! cookies scripts
-    !||techgenix.com/detroitchicago/anaheim.js
-    !||techgenix.com/detroitchicago/boise.js
-    ! is in EasyList
-    !||thewindowsclub.com/detroitchicago/
-    !https://www.thewindowsclub.com/detroitchicago/rochester.js
-
 /banger.js  # is in EasyList
 
 ! from AdGuard
@@ -24910,34 +24945,3 @@ sweetsweethome.com.ua###btm_nav
 sweetsweethome.com.ua##h2
 sweetsweethome.com.ua##.container > p
 
-ucheba.ru$3p  # from Adguard: api.ucheba.ru$third-party
-ucheba.ru###notifications
-
-pyrogram.org##.pyrogram-text
-
-webtrafff.com##.dashicons
-webtrafff.com##.mojo-sp-button
-webtrafff.com##.mojo-sp
-webtrafff.com##.related-posts
-webtrafff.com##.sticky-sidebar
-webtrafff.com##.menu
-
-||semanticforce.net/*/jquery.bpopup.min.js
-semanticforce.net##.b-modal
-
-teamviewer.com##.wd-second-menu
-
-statuscake.com$3p  # Traffic Cake - Tracker  # from Quidsup NoTrack-Blocklist  # moved to sites
-statuscake.com##.LogoBox
-statuscake.com##.top-section
-statuscake.com##[href="/SmsCredits.php"]
-statuscake.com##a[href^="Plan.php"]
-statuscake.com##.page-alert
-
-securityinnovation.com##.header-container-wrapper:style(position:static !important)
-securityinnovation.com##.blog-subs-form
-
-howtofix.guide##.header-main-area
-
-intezer.com##.top-posts
-intezer.com##.blog-text-link.blog-side-cta.blog-side-join
