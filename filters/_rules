@@ -1050,7 +1050,6 @@ _banner_rotator.php  # from Adguard
 /popunder.js$important
 .popunder.js  # from EasyList
 /popupclick/$popup  # from Ru AdList
-/porpoiseant/*$important  # ad scripts  # is in EasyList
 /prebid$important
     ! /js/prebid-  # from EasyList
     ! /npm/prebid-  # from EasyList
@@ -3649,6 +3648,7 @@ _snowstorm-min.js  # from Ru AdList
     ! ||goodprice4you.ru/*/payment.png
     ! ||santehmarka.ru/image/catalog/modern/payment.png
 /payment_icons/*
+/payment-icons/*
 /payment_icons.png
 /payment_logos/*
 /payment_logos.png
@@ -3958,6 +3958,21 @@ turboimagehost.com##.modal-footer
     !howtogeek.com##.email-overlay + .overlay-wrapper
     ! from uBlock filters
     !mlb66.ir##.overlay-wrapper
+
+
+! strange ad scripts
+/detroitchicago/$script,important
+    ! /detroitchicago/cmbdv2.js  # is in EasyList
+    ! /detroitchicago/houston.js  # is in EasyList
+    ! /detroitchicago/rochester.js  # is in EasyList
+    ! cookies scripts
+    !||techgenix.com/detroitchicago/anaheim.js
+    !||techgenix.com/detroitchicago/boise.js
+    ! is in EasyList
+    !||thewindowsclub.com/detroitchicago/
+    !https://www.thewindowsclub.com/detroitchicago/rochester.js
+/porpoiseant/*$important  # ad scripts  # is in EasyList
+/tardisrocinante/*  # detroitchicago, porpoiseant
 
 
 ! noisy gifs and smiles
