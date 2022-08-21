@@ -1350,7 +1350,7 @@ _rebid.js  # from EasyList
 ~babyblog.ru,~blokada.org,~cnn.com,~dirteam.com,~domclick.ru,~youtube.com##[class*="-ad-"]:not(html):not(body):not(article):not([class*=page-wrapper])
     ! from EasyList
     ##.ytp-ad-progress-list
-~afisha.ru,~cnn.com##[id*="-ad-"]:not(html):not(body):not(article)
+~afisha.ru,~ansible.com,~cnn.com##[id*="-ad-"]:not(html):not(body):not(article)
 ! ._ad_U,._ad_V,._ad_Y,... there are in MS OWA. Don't know how to make precise exclusion of such. :not(._ad_U):not(._ad_V):not(._ad_Y) don't not work - there are too many of them.
 ! As a workaround, one can add exclusion for corporate mail server:
 ! @@||<server_host>^$generichide
@@ -2264,6 +2264,7 @@ _chartbeat.js  # from EasyPrivacy
         ! ||jsdelivr.net/fingerprintjs2/  # Also
     ! /fingerprintjs2/*
 ?frm=script&se_referrer=  # from AdGuard
+/ga_setup.js$important
 _gatrack.js  # from EasyPrivacy
 .gatracking.js  # from EasyPrivacy
 /gccounter.js
@@ -2273,8 +2274,10 @@ _gatrack.js  # from EasyPrivacy
 /geoip.city  # bitrix popups removed: ##.bxmaker__geoip__city__line-question and ##.current-city-notice
 /geotools/*  # ad xhrs
 .gif?event=  # is in EasyPrivacy
-/google-analytics
+/googleanalytics$important
+/google-analytics$important
 -google-analytics/$important
+-google-analytics.$important
 .googleanalytics.js  # from EasyPrivacy
 .googleanalytics.prod.  # from EasyPrivacy
 /google-tag-manager/*$domain=~stackexchange.com|~superuser.com  # from EasyPrivacy
