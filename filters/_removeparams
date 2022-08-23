@@ -65,9 +65,10 @@ $removeparam=/^aff_/
 $removeparam=/^affi/
     ! cyberlink.com$removeparam=affid  # from Adguard
     ! ||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest  # from Adguard
+    ! flipkart.com$removeparam=affid  # from Adguard
     ! otto.de$removeparam=AffiliateID  # from Adguard
     ! $removeparam=AffiliateID,domain=otto.de|ottoversand.at  # from Adguard
-    ! flipkart.com$removeparam=affid  # from Adguard
+    ! parter.ru$removeparam=affiliate
     ! zavvi.com$removeparam=affil  # from Adguard
 
 $removeparam=aiad_clid  # from Adguard
@@ -966,6 +967,7 @@ hentai-party.com$removeparam=view
     ! ||hentai-party.com/*?view=$doc,other,removeparam=view  # from uBlock filters
 
 hh.ru$removeparam=dpt
+hh.ru$removeparam=email_hash
 hh.ru$removeparam=hhtmFrom
 hh.ru$removeparam=hhtmFromLabel
 hh.ru$loginkey  # Arguably
