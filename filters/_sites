@@ -40,6 +40,8 @@
 100bucksbabes.com##.footer
 
 101.ru##.hypotheses-poll
+101.ru##.bnr-wide
+101.ru##.header__agelimit
 
     ! banners and promos
 101hotels.com##.advantages-holder
@@ -452,6 +454,8 @@
 
 4tololo.ru##.top-image
 
+4u2movie.com$3p,media,redirect=noopmp3-0.1s  # from uBlock filters
+
 ! flickering photos
 4x4.media###layout-sidebar
 
@@ -546,6 +550,8 @@
     ! 8692.ru##app-ads-teaser
 ##app-companies-news
 ##.article-card:has-text(/Гороскоп|зодиак/)
+
+80-e.ru###navstrip
 
 ||88gals.com/*.gif
 ||88gals.com/images/
@@ -733,6 +739,8 @@ adamtheautomator.com##.justify-center.items-center.mr-auto.ml-auto > svg
 adamtheautomator.com###ez-toc-container:style(position:static !important)
 adamtheautomator.com##header
 adamtheautomator.com##.xl\:hidden
+
+add.pics$3p,script  # from uBlock filters
 
 addictivetips.com##.oui-modal
 addictivetips.com###at_popup_modal
@@ -3969,6 +3977,9 @@ cloudenius.com###masthead
 
 cloudflare.com###top-navbar:style(position:static !important)
 
+||cloudfront.net/atrk.js$important
+||cloudfront.net/vis_opt.js$important
+
 ! site blocks copypaste
 ||clubhunters.ru/wp-content/themes/copy/js/common.min.js
 
@@ -4063,6 +4074,8 @@ coinmarketcap.com##.icon-Chevron-up
 coins.su##.custom-bn-block-top.custom-bn-block
 coins.su##.jq-top
 coins.su##.jq-bottom
+
+collegiummusicum.ru##.cs-toolbar
 
 collimator.su##.f-panel:style(position:static !important)
 
@@ -5176,6 +5189,8 @@ donsimon.net##.pps
 donsimon.net###gallery
 donsimon.net##.vc_figure
 donsimon.net##.bs-text.bs-shortcode
+
+doodstream.com##.title-box
 
 ||doogee.cc/promotion/*/giveaway.png
 
@@ -6865,6 +6880,8 @@ freetutorialshub.com##.breaking-news
 freetutorialshub.com###author-box
 ! popup
 freetutorialshub.com##.check-also-right
+! too long
+freetutorialshub.com##.widget_categories
 
 ||fresher.ru/widget/
 
@@ -7167,6 +7184,8 @@ getdroidtips.com##.after-header-container
 getdroidtips.com##.site-header
 
 getfeedback.com$3p  # surveys  # "Your customers are happy"
+
+@@||getfreecourses.$generichide,badfilter
 
 ||getfreedumps.com/images/registernow.png
 getfreedumps.com##.sidebar1
@@ -8161,6 +8180,35 @@ hh.ru##[class^=online-users]
 hh.ru##[class^=count--]
 hh.ru##.supernova-navi-counter_dot-only
 hh.ru##.vacancy-viewers-count
+    ! different promo blocks (not all!)
+hh.ru##.tmpl_hh_advantages
+hh.ru##.tmpl_hh_banner
+hh.ru##.tmpl_hh_bens
+hh.ru##.tmpl_hh_brands
+hh.ru##.tmpl_hh_blue
+hh.ru##.tmpl_hh_content__slogn
+hh.ru##.tmpl_hh_corp
+hh.ru##.tmpl_hh_header
+hh.ru##.tmplt_hh-header
+hh.ru##.tmpl_hh_hero
+hh.ru##.tmpl_hh_flex
+hh.ru##.tmpl_hh_footer
+hh.ru##.tmpl_hh_gap
+hh.ru##.tmpl_hh_geo
+hh.ru##.tmpl_hh_icons
+hh.ru##.tmpl_hh_logo
+hh.ru##.tmpl_hh_marque
+hh.ru##.tmpl_hh_offer
+hh.ru##.tmpl_hh_photo
+hh.ru##.tmpl_hh_project
+hh.ru##.tmpl_hh_reward
+hh.ru##.tmpl_hh_slider
+hh.ru##.tmpl_hh_sliderSlogan
+hh.ru##.tmpl_hh_social
+hh.ru##.tmpl_hh_start
+hh.ru##.tmpl_hh_success
+hh.ru##.tmpl_hh_why
+hh.ru##.tmpl_hh_worths
     ! other
 ! spam vacancies
 hh.ru,career.ru##div.vacancy-serp-item:has-text(/Компьютерный мастер|Мастер по ремонту компьютеров|Выездной системный администратор|выезды к клиентам/)
@@ -8169,30 +8217,6 @@ hh.ru##.applicant-phone-container
 hh.ru##div.serp-special
 hh.ru##.bloko-notification
 hh.ru##.employer-sidebar__logo-container
-hh.ru##.tmpl_hh_blue
-hh.ru##.tmpl_hh_content__slogn
-hh.ru##.tmpl_hh_header
-hh.ru##.tmpl_hh_flex
-hh.ru##.tmpl_hh_footer
-hh.ru##.tmpl_hh_marque
-hh.ru##.tmpl_hh_photo
-hh.ru##.tmpl_hh_slider
-hh.ru##.tmpl_hh_sliderSlogan
-hh.ru##.tmpl_hh_social
-hh.ru##.tmpl_hh_icons
-hh.ru##.tmpl_hh_logo
-hh.ru##.tmpl_hh_gap
-hh.ru##.tmpl_hh_worths
-hh.ru##.tmpl_hh_banner
-hh.ru##.tmpl_hh_advantages
-hh.ru##.tmpl_hh_success
-hh.ru##.tmpl_hh_reward
-hh.ru##.tmpl_hh_corp
-hh.ru##.tmpl_hh_project
-hh.ru##.tmpl_hh_geo
-hh.ru##.tmpl_hh_start
-hh.ru##.tmpl_hh_why
-hh.ru##.tmplt_hh-header
 hh.ru##.supernova-dashboard-footer
 hh.ru##.related-vacancies-preview_sticky:style(position:static !important)
 hh.ru##.idc-head
@@ -10283,6 +10307,9 @@ komus.ru##.online_call
 komus.ru##.b-sticker__wrapper
 
 kondicionershik.ru##.header-desc
+
+konten.co.id##.jeg_midbar
+konten.co.id##.jeg_top_date
 
     ! no blurring
 kontur.ru##.lightbox-cell
@@ -14112,6 +14139,10 @@ online.ua##.nav-tabs
 online812.ru##.cens
 online812.ru###header
 
+@@||online-courses.club^$generichide,badfilter
+online-courses.club##.admania_headertop
+online-courses.club##.admania_ftrattbtonbottom
+
 online-knigi.com##.glyphicon
 online-knigi.com##.fixed_desktop
 
@@ -14322,6 +14353,11 @@ ostraining.com##.header
 ostraining.com##.slider
 ostraining.com##.alert-info.alert.uk-alert
 ostraining.com##.ost-box-image
+
+||ostrovok.ru/hc/static/funnel.js
+ostrovok.ru##.homepage-mobile-wrapper
+ostrovok.ru##[class^=Footer__rewards]
+ostrovok.ru##[class^=Seo__content]
 
 ||oszone.net/ibm.html  # from Ru AdList
 oszone.net###professor
@@ -14729,6 +14765,8 @@ performancegunworks.com##.jeg_midbar
 
 pervoevtoroe.ru$3p  # from Ru AdList
 
+pesnimp3.co##.footer
+
 peterburg.ru##.footer-header
 
 peterevans.dev##header:style(position:static !important)
@@ -14847,6 +14885,8 @@ pichunter.com##.item:hover img:style(filter:none !important)
 pichunter.com##div:matches-css(position: fixed)
 
 pic-mir.ru###header
+
+picmix.com##.register-message
 
 pic-money.ru###left
 
@@ -15300,16 +15340,19 @@ pornclipsxxx.com##.adbox-inner
 porngo.com$csp=child-src *  # from uBlock filters
 *preRoll$xhr,domain=porngo.com  # from uBlock filters
 
+    ! trash texts
 porno365.haus##.image > p
 porno365.haus##h1
 porno365.haus##.story_desription
 porno365.haus##.comments_outer
 porno365.haus##.cat_description
+porno365.haus##p
+    ! counters
 porno365.haus##.video_views
+porno365.haus##.video-views
 porno365.haus##.mini-rating
 porno365.haus##.video_comments
-porno365.haus##p
-porno365.haus##.video-views
+    ! other
 
 pornoadvid.info$3p  # from Adguard
 pornoadvid.info###masthead > p
@@ -15819,6 +15862,8 @@ pvsm.ru###footer-bott:style(height:auto !important)
 ||pvsm.ru/wp-content/themes/greyzed/images/$image
 ||pvsm.ru/img/pvsmlogo-cbp.png
 
+pxxbay.com##.gridmax-site-header:style(position:static !important)
+
 pyatilistnik.org###header
 pyatilistnik.org###footer
 pyatilistnik.org##[src^="data:image/jpeg;base64,"]
@@ -16202,6 +16247,10 @@ readovka.ru##.community-icon-tg
 readovka.ru##.community-icon-zen
 ||readovka.ru/*/age_limit.png
 readovka.ru##.block-community-tg
+
+readsomethinggreat.com##.progressier-widget-logo
+readsomethinggreat.com##.progressier-widget
+!||firebasestorage.googleapis.com$image
 
 readthedocs.io##.rst-versions:style(position:static !important)
 readthedocs.io##.rst-badge
@@ -17866,6 +17915,10 @@ sharetotest.com##.salesbox
 sharetotest.com##.nav-menu
 sharetotest.com##.entry-content > p:has-text(/Recommend!|2passeasy/)
 
+shazam.com##.justlogo
+shazam.com##.actions
+shazam.com##.deeplink-am-signupflow
+
 ||shazoo.ru/ping  # is in AdGuard
 shazoo.ru##.navLogo
 shazoo.ru##.mav-container
@@ -18097,6 +18150,8 @@ site-on-ip.com#@#.ad336
 sitepoint.com##.sp-smartbar
 sitepoint.com###navigation-bar
 sitepoint.com##.NavBar_offsetSpacer
+! too long
+sitepoint.us##.widget_categories
 
 siteuptime.com###np-menu-wrap:style(position:static !important)
 siteuptime.com##.np-logo-section-wrapper
@@ -18774,6 +18829,8 @@ sqlauthority.com##.at_top
 sqlauthority.com##.at_middle.l-subheader
 
 sqldbawithabeard.com##hgroup
+
+||sqlmatters.com/images/SQLMatters.jpg
 
 sqlservercentral.com##.bbp-signature
 sqlservercentral.com##.notification
@@ -20360,6 +20417,10 @@ topshouse.ru###footer
 
 toptal.com##.subscribe_card
 
+toptechtalk.xyz##.admania-sitetitle
+toptechtalk.xyz##.admania-header-eighth-top
+toptechtalk.xyz##.admania-top
+
 topwar.ru##.pos_sticky:style(position:static !important)
 topwar.ru##.headmenu:style(position:static !important)
 topwar.ru##.ctrl_enter
@@ -20711,6 +20772,8 @@ tursvodka.ru##.block-subscript
 
 tutorialguruji.com###breadcrumm
 
+tutorialsplanet.net$inline-script
+
 tutorialspoint.com##.mini-logo
     ! banners and promos
     ! "old" prices
@@ -21041,6 +21104,12 @@ universal-guns.ru##.flexBoxContacts
 
 unixforum.org##.headerbar
 
+unizoo.ru##.event-banner-b
+unizoo.ru##.card-b-stuff
+unizoo.ru##.card-b__block_rupor
+unizoo.ru##.header__small
+unizoo.ru##.header__top--phone
+
 unlimtariffs.ru##.gift.block
 unlimtariffs.ru##.cool.content.block
 ||unlimtariffs.ru/img/cards-footer.png
@@ -21056,6 +21125,8 @@ unlimtariffs.ru###navi
 ||unpkg.com/@tryghost/  # vegastack.com##.gh-portal-triggerbtn-iframe
 
 update.ph##.site-header
+
+updatedideas.com$inline-script  # site blocks copypaste
 
 upgrade-android.ru###headerbar
 upgrade-android.ru###top-a
@@ -23066,6 +23137,8 @@ xn----gtbdmohbpajtp0j4b.xn--p1ai###header
 
 xn--h1aagk2bza.xn--p1ai##.popup-regionality-tvf
 
+xnxx-cdn.com$script  # ads and no root
+
 xnxx-sexfilme.com##.vjs-overlayed
 xnxx-sexfilme.com##.ur_code
 xnxx-sexfilme.com##.send_event
@@ -24935,66 +25008,4 @@ ksl.com##.ksl-header__outer:style(position:static !important)
 ||naver.net/wcslog.js$important
 
 zoohit.*,zooplus.*##.uxt-carousel
-
-pxxbay.com##.gridmax-site-header:style(position:static !important)
-
-doodstream.com##.title-box
-
-||cloudfront.net/atrk.js$important
-||cloudfront.net/vis_opt.js$important
-
-add.pics$3p,script  # from uBlock filters
-
-toptechtalk.xyz##.admania-sitetitle
-toptechtalk.xyz##.admania-header-eighth-top
-toptechtalk.xyz##.admania-top
-
-80-e.ru###navstrip
-
-4u2movie.com$3p,media,redirect=noopmp3-0.1s  # from uBlock filters
-
-shazam.com##.justlogo
-shazam.com##.actions
-shazam.com##.deeplink-am-signupflow
-
-pesnimp3.co##.footer
-
-||sqlmatters.com/images/SQLMatters.jpg
-
-unizoo.ru##.event-banner-b
-unizoo.ru##.card-b-stuff
-unizoo.ru##.card-b__block_rupor
-unizoo.ru##.header__small
-unizoo.ru##.header__top--phone
-
-101.ru##.bnr-wide
-101.ru##.header__agelimit
-
-||ostrovok.ru/hc/static/funnel.js
-ostrovok.ru##.homepage-mobile-wrapper
-ostrovok.ru##[class^=Footer__rewards]
-ostrovok.ru##[class^=Seo__content]
-
-readsomethinggreat.com##.progressier-widget-logo
-readsomethinggreat.com##.progressier-widget
-!||firebasestorage.googleapis.com$image
-
-collegiummusicum.ru##.cs-toolbar
-
-@@||getfreecourses.$generichide,badfilter
-
-@@||online-courses.club^$generichide,badfilter
-
-tutorialsplanet.net$inline-script
-
-! too long
-freetutorialshub.com##.widget_categories
-
-! too long
-sitepoint.us##.widget_categories
-
-updatedideas.com$inline-script  # site blocks copypaste
-
-online-courses.club##.admania_headertop
-online-courses.club##.admania_ftrattbtonbottom
 
