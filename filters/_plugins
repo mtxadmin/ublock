@@ -73,7 +73,14 @@
 /mod/seo-recommend-video/*
 
 
+/module/detector/*$important
+
+
 /modules/about/*  # from Ru AdList: ||prostootdam.ru/modules/about/
+
+/modules/ad/*  # from EasyList
+
+/modules/ad_  # from EasyList
 
 /modules/additionalmarkers/*
 
@@ -101,6 +108,10 @@
 /modules/blocknewsletter/*  # PrestaShop module
 
 /modules/chat_widget/*
+
+/modules/dfp/*  # from EasyList
+
+/modules/doubleclick/*  # from EasyList
 
 /modules/easyadvertising/*
 
@@ -177,6 +188,11 @@
 
 /plugin/banner/*
 
+/plugin/cookie/*
+    /jquery-eu-cookie-law-popup.js$important  # /plugin/cookie/jquery-eu-cookie-law-popup.js
+    ! @@/jquery-eu-cookie-law-popup.css$stylesheet - doesn't work
+        -cookie-law-popup.  # a rule in 3 lists
+    
 /plugin/drk_ledadv/*$important  # from Adguard Chinese Filter
 
 /plugin/gaofen_ad/*$important  # from EasyList China
@@ -456,6 +472,8 @@
 /plugins/bookmarkify/*
 
 /plugins/boom-social/*
+
+!/plugins/bootstrap-modal/* - don't
 
 /plugins/bootstrappopups/*
 
@@ -978,6 +996,8 @@
 
 /plugins/hide-price-until-login/*
 
+/plugins/holdback/*$~stylesheet  # from Adguard
+
 /plugins/hreflang-tags-for-wordpress/*
 
 /plugins/hurrytimer/*
@@ -1167,7 +1187,7 @@
 
 /plugins/ml-slider/*  # from EasyList, modified
 
-/plugins/mm-social-share/*
+/plugins/mm-social-share/*$~stylesheet
 
 /plugins/mobiloud-smart-app-banner/*  # from Adguard
 
