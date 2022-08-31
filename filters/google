@@ -31,7 +31,9 @@ translate.google.com##.gb_g.gb_Vc.gb_wd
 
 ||google.com/log?$important
 
-||google.com/images/cleardot.gif$3p
+/cleardot.gif
+    ! ||google.com/images/cleardot.gif$3p
+    ! ||gstatic.com/docs/common/cleardot.gif
 
 ! is in Ru Adlist and Fanboy's
 ||apis.google.com/js/platform.js$3p,important
@@ -90,7 +92,7 @@ www.google.*##+js(remove-attr, ping, div[id="search"] a[data-ved][ping])
 ||play.google.com/_/PlayStoreUi/browserinfo?
 
 ! cookies popup
-google.*##div:matches-css(position:fixed)
+!google.*##div:matches-css(position:fixed) - don't?
 google.*##div[aria-modal="true"]:has-text(cookies)
 
 ||cse.google.com/cse.js?cx=partner-pub$important
