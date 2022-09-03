@@ -34,6 +34,7 @@
 ://*.*.com/xj/$script,important,redirect-rule=noop.txt  # Adguard rule
 .ru/proxy_*.php?init_form=$script  # ad scripts  # from AdGuard
 /?dm=*&blogid=$script,domain=~wordpress.org  # ad scripts  # is in EasyPrivacy
+@@|data:text^$popup,domain=box.com|clker.com|labcorp.com  # interesting rule from EasyList
 /favicon.ico$image,third-party,domain=~streameast.live|~apple.com|~douban.com|~bahn.de|~winfuture.de|~bt.com|~ebay.com.au|~ebay.com|~ebay.co.uk|~go.com|~github.com|~microsoft.com|~stackexchange.com|~stackoverflow.com|~askubuntu.com|~reddit.com|~4chan.org|~twitter.com|~live.com|~espn.com|~yahoo.com|~jit.si
 .php?zoneid=  # from CJX's EasyList Lite
 &referer=$script,domain=~sportdiver.com|~gismeteo.ru|~vuokraovi.com|~24ur.com|~cdon.dk|~cdon.fi|~cdon.no|~cdon.se|~ratp.fr|~skype.com  # from Fanboy's
@@ -708,6 +709,8 @@ _ads.station.  # from EasyList
     ! /adserving_  # from EasyList
     ! /AdServlet?  # from EasyList
     ! /adserv|*|adtech;  # from EasyList
+/adshare.
+/adshare/*  # from EasyList
 /adsjs.  # ad scripts  # is in EasyList
 /adsjs/*
 /adsnews.  # from Ru AdList
@@ -746,9 +749,11 @@ _adsys.js  # from Adguard
 /advanced-ads-$domain=~wordpress.org  # is in EasyList
 _advert/  # from EasyList
 /advert.js$important
+/advert-  # from EasyList
 /advert3.js$important
 /advertise.
 /advertise.js$important
+/advertisers/*$important
 /advertisement.js$xmlhttprequest,important
 /advertisement.js$important
 /advertisement.min.js$important
@@ -1300,6 +1305,7 @@ _rebid.js  # from EasyList
 !/widget.min.js$important,domain=~sbis.ru
 /widget-a-b.js  # from Ru AdList
 /widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~dns-shop.ru|~domclick.ru|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
+/wp-banners.js$important
 @@||embedly.com/widgets/
 ||/wp-content/*/ad-$script,important  # disable exclusion from Fanboy’s Enhanced Tracking List
 ||/wp-content/*/ads*.js$script,important  # disable exclusions from Fanboy's list
@@ -1327,7 +1333,8 @@ _rebid.js  # from EasyList
     ##.text-ad
     ! is in EasyList
     ##.top-ad
-##[id$="-ad"]:not(html):not(body):not(article)
+~kijiji.ca##[id$="-ad"]:not(html):not(body):not(article)
+    ! kijiji.ca is a classifieds site
     ###nav-ad
 ~opensubtitles.org,~dkc7dev.com##[class$="_ad"]:not(html):not(body):not(article)
 ##[id$="_ad"]:not(html):not(body):not(article)
@@ -1419,7 +1426,8 @@ _rebid.js  # from EasyList
     ! from Ru AdList: ##div[id^="ads_games_"]
     ! is in EasyList: ##.ads-fr
 ~blogspot.com,~xstepmother.com,~yandex.*##[class$="-ads"]:not(html):not(body):not(article)
-~yandex.*##[id$="-ads"]:not(html):not(body):not(article)
+~kijiji.ca,~yandex.*##[id$="-ads"]:not(html):not(body):not(article)
+    ! kijiji.ca is a classifieds site
     ! is in EasyList
     !###player-ads
     ! is in EasyList
@@ -2357,10 +2365,11 @@ _pagespeed_beacon?  # from AdGuard
 /pixel/*
 /pixel?
     ! /visits/pixel?  # from EasyPrivacy
-/pixel.gif
-    ||paypalobjects.com^*/pixel.gif  # from EasyPrivacy
-/pixel.png
-/pixel.php?  # in EasyPrivacy and Adguard
+/pixel.
+    ! /pixel.php?  # in EasyPrivacy and Adguard
+    ! /pixel.png
+    ! /pixel.png?  # from Ru AdList
+    ! ||paypalobjects.com^*/pixel.gif  # from EasyPrivacy
 .pixel.archive.  # from EasyPrivacy
 /platform-detect
 /pum-site-scripts.  # from Fanboy's
