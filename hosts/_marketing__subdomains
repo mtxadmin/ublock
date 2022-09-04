@@ -58,7 +58,7 @@ ad.kissanime.org.ru  # from EasyList
 ad.liveinternet.ru  # from Peter Lowe's Ad and tracking server list
 ad.lupa.cz  # from Peter Lowe's Ad and tracking server list
 ad.love.hu  # from Hufilter
-ad.mail.ru
+ad.mail.ru$important,all
 ad.market4game.ru  # from Ru AdList
 ad.myapple.pl  # from Peter Lowe's hosts file
 ad.netmedia.hu  # from Hufilter
@@ -147,6 +147,7 @@ ads.digitalalchemy.tv  # from MVPS
 ads.echo.msk.ru  # from Ru AdList
 ads.edadeal.ru  # app requests
 ads.elperiodic.ad  # from GoodbyeAds
+ads.facebook.com$important  # from Adguard
 ads.forbes.net
 ads.fotoable.com  #+  # from Adguard
 ads.fuckingmachines.com  # from MVPS
@@ -229,7 +230,7 @@ adserver.vidcoin.com
 /adserver2  # from github.com/asterriya/regex-ads/
 
 /adservice.
-adservice.google.com.mt
+! see _marketing_doobleclick
 
 /adsrv.
 adsrv.advanced-television.tv  # from GoodbyeAds
@@ -251,7 +252,7 @@ adv.informika.ru
 adv.webmd.com  # from MVPS
 adv.medscape.com  #[ads.webmd.com]  # from MVPS
 adv.pilseta24.lv  # from Adguard
-adv.rutube.ru
+adv.rutube.ru$important,all
 adv.vz.ru  # from Adguard
 adv.wp.pl  # from Dan Pollock's hosts file
 adv.zapal.ru  # from Dan Pollock's hosts file
@@ -280,7 +281,10 @@ advertising.apple.com  # from GoodbyeAds
 advertising.bbcworldwide.com  # BBC - Advertising  # from Quidsup NoTrack-Blocklist
 advertising.microsoft.com  # Microsoft - Advertising  # from Quidsup NoTrack-Blocklist
 
-/adx.
+/adx.$domain=~adx.co.nz|~adx.nz|~adx.rs|~adx.tribefire.com|~journals.uchicago.edu  # is in EasyList as is (not ||adx.)
+! adx.nz, adx.co.nz - don't, not ad, "ADX Electronics"
+! adx.rs is a crypto wallet
+! adx.tribefire.com - don't, seems to be not ad
 adx.chip.de  # from MVPS
 adx.hendersonvillenews.com
 adx.ocala.com
@@ -289,6 +293,9 @@ adx.starnewsonline.com
 adx.telegram.com
 adx.timesdaily.com
 adx.theledger.com
+adx.traveledge.com  # from EasyList
+adx.uk.com  # from EasyList
+adx.wowfi.com  # from EasyList
 
 /aff.  # I suspected it earlier, yes, but general subdomains form is from github.com/asterriya/regex-ads/
 aff.adguard.com  # "партнёрская программа для вебмастеров"
@@ -2057,6 +2064,7 @@ widget.utinet.ru  # from Adguard
 ! exclusions: 
 !   sbis.ru - GUI scripts
 widgets.coingecko.com  # from Adguard
+widgets.dzone.com  # is in Fanboy's
 widgets.kinopoisk.ru  #widgets.kinopoisk.ru$third-party doesn't work for some sites. Iframe? Ok, let's block
 widgets.membership.s-msft.com
 widgets.openli.com  # from EasyList
@@ -3475,6 +3483,8 @@ servedby.o2.co.uk  # from Adguard
 
 news.officegamespot.com  # from uBlock filters
 
+analytics-coletor-site.ojc.com.br  # from EasyPrivacy
+
 slots.baxter.olx.org  # ad scripts
 
 ad2.on.cc  # Oriental Press Group - Advertising  # from Quidsup NoTrack-Blocklist
@@ -3732,6 +3742,8 @@ crm.serverscheck.com
 pornve.sexyadsrun.com  # from Adguard
 
 delivery.sexyxxx.biz  # from uBlock filters
+
+adm.shinobi.jp  # from EasyList
 
 s.shopify.com$important  # from MVPS HOSTS file  # in AdGuard: ||s.shopify.com/visit/record.gif?
 stats.shopify.com$important  # is in AdGuard and EasyPricacy
