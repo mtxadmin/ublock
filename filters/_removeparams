@@ -876,6 +876,8 @@ baidu.com$removeparam=eqid  # from Adguard
 baidu.com$removeparam=rsv_pq  # from Adguard
 baidu.com$removeparam=rsv_t  # from Adguard
 
+banggood.com$removeparam=utmid  # from Adguard
+
 bilibili.com$removeparam=callback  # from NeatURL
 bilibili.com$removeparam=from_source  # from Adguard
 bilibili.com$removeparam=from_spm_id  # from Adguard
@@ -909,6 +911,9 @@ cht.com.tw$removeparam=Identifier  # from Adguard: cht.com.tw$removeparam=Identi
 comodo.com$removeparam=af  # from Adguard
 comodo.com$removeparam=key5sk1  # from Adguard
 comodo.com$removeparam=track  # from Adguard
+
+coolblue.nl$removeparam=cmt  # from Adguard
+coolblue.nl$removeparam=PHGref  # from Adguard
 
 ! cyber-ad01.cc - blocked entirely, just for information. But.
 cyber-ad01.cc$removeparam=ip  # from Adguard
@@ -963,6 +968,9 @@ fmworld.net$removeparam=mc_pc  # from Adguard: azby.fmworld.net$removeparam=mc_p
 ! gemius.pl - blocked entirely, just for information
 !||hit.gemius.pl/hitredir$removeparam=id  # from Adguard
 !||hit.gemius.pl/hitredir$removeparam=extra  # from Adguard
+
+! already blocked
+georiot.com$removeparam=tsid  # from Adguard
 
 ! I am not sure, is it safe to modify these google rules. So they mostly are as is here.
 ! Too lazy to test it out, sorry :-) Maybe, sometimes.
@@ -1027,6 +1035,13 @@ hh.ru$removeparam=targetingParams
 hh.ru$removeparam=totalVacancies
 hh.ru$removeparam=vss
 
+! already blocked
+hololivepro.com$removeparam=pr_rec_id  # from Adguard
+hololivepro.com$removeparam=pr_rec_pid  # from Adguard
+hololivepro.com$removeparam=pr_ref_pid  # from Adguard
+hololivepro.com$removeparam=pr_seq  # from Adguard
+hololivepro.com$removeparam=pr_prod_strat  # from Adguard
+
 hqbabes.com$removeparam=novoref
 
 ! idealo-partner.com - blocked entirely, just for information. But.
@@ -1040,6 +1055,8 @@ infoq.com$removeparam=topicPageSponsorship  # from Adguard: infoq.com$removepara
 iqbroker.com$removeparam=afftrack  # from Adguard
 
 instagram.com$removeparam=igshid  # from Adguard
+
+kamigame.jp$removeparam=kamigame_source  # from Adguard
 
 kaspersky.com$removeparam=icid  # from Adguard
 
@@ -1216,6 +1233,9 @@ tiktok.com$removeparam=u_code  # from NeatURL
 tiktok.com$removeparam=user_id  # from NeatURL
 
 tinkoff.ru$removeparam=mindbox-click-id  # from Adguard
+
+! already blocked
+tradedoubler.com$removeparam=tduid  # from Adguard
 
 trendyol.com$removeparam=/^tyutm_/  # from Adguard, modified
     ! trendyol.com$removeparam=tyutm_campaign  # from Adguard
@@ -1782,24 +1802,3 @@ $removeparam=rf,domain=mail.ru|sportmail.ru  # from Ru AdList
 ngtv.io$removeparam=ssaiProfile
     ! ||medium.ngtv.io/v*/media/*&ssaiProfile$xmlhttprequest,removeparam=ssaiProfile,domain=cnn.com  # from Adguard
     ! ngtv.io$xhr,removeparam=ssaiProfile,domain=cnn.com  # from uBlock filters
-
-banggood.com$removeparam=utmid  # from Adguard
-
-coolblue.nl$removeparam=cmt  # from Adguard
-coolblue.nl$removeparam=PHGref  # from Adguard
-
-! already blocked
-tradedoubler.com$removeparam=tduid  # from Adguard
-
-! already blocked
-hololivepro.com$removeparam=pr_rec_id  # from Adguard
-hololivepro.com$removeparam=pr_rec_pid  # from Adguard
-hololivepro.com$removeparam=pr_ref_pid  # from Adguard
-hololivepro.com$removeparam=pr_seq  # from Adguard
-hololivepro.com$removeparam=pr_prod_strat  # from Adguard
-
-kamigame.jp$removeparam=kamigame_source  # from Adguard
-
-! already blocked
-georiot.com$removeparam=tsid  # from Adguard
-
