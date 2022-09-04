@@ -231,6 +231,7 @@ $removeparam=from,domain=~yandex.*|~auth.mail.ru|~sberbank.ru
     ! ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
     ! bilibili.com$removeparam=from  # from Adguard
     ! hh.ru$removeparam=from
+    ! /?from_block=$document,removeparam=from_block,domain=www.kinopoisk.ru  # from Ru AdList
     ! pikabu.ru$removeparam=from
     ! rbc.ru$removeparam=from
     ! ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
@@ -313,6 +314,11 @@ $removeparam=idealoid
     ! netgames.de$removeparam=idealoid  # from Adguard
     ! technikdirekt.de$removeparam=idealoid  # from Adguard
 
+$removeparam=/^ila_.*/
+    ! $removeparam=ila_camaign  # from Ru AdList
+    ! $removeparam=ila_context  # from Ru AdList
+    ! $removeparam=ila_location  # from Ru AdList
+
 $removeparam=/^itm_.*/ # Campaign tracking (itm)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
     # ITM - Internal Marketing Campaign. Like UTM, but ITM
     # https://www.smashingmagazine.com/2017/08/tracking-internal-marketing-campaigns-google-analytics/
@@ -329,6 +335,12 @@ $removeparam=mbid  # Campaign tracking (others)  # https://www.parse.ly/help/pos
 
 $removeparam=mc_cid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # from NeatURL
 $removeparam=mc_eid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # from NeatURL
+
+$removeparam=media
+    ! livejournal.com$removeparam=media
+        ! from Ru AdList: ||livejournal.com/*.html?media|$removeparam=|media,domain=livejournal.com
+        ! ||livejournal.com/*.html?media|$removeparam=|media,domain=livejournal.com  
+    ! ?media&ila_camaign=$document,removeparam=media  # from Ru AdList
 
 $removeparam=/^mkt_tok.*/
     ! $removeparam=mkt_tok  # Campaign tracking (Adobe Marketo)  # from NeatURL
@@ -448,6 +460,8 @@ $removeparam=/pvid$/
     ! 2022-02: Adguard has this rule also for taobao
     !taobao.com$removeparam=pvid  # from Adguard
 
+    ! jd.com$removeparam=pvid  # from Adguard
+
 # recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
 $removeparam=ref
@@ -456,6 +470,7 @@ $removeparam=ref
     ! arcelik.com.tr$removeparam=ref  # from Adguard
     ! buzzfeednews.com$removeparam=ref  # from Adguard
     ! coconala.com$removeparam=ref  # from Adguard
+    ! coolblue.nl$removeparam=ref  # from Adguard
     ! visit.digidip.net$removeparam=/^(ppref|ref|pid)=/
     ! d-markets.net$removeparam=ref  # from Adguard
     ! etsy.com$removeparam=ref  # from NeatURL
@@ -467,6 +482,7 @@ $removeparam=ref
     ! ||my.mail.ru/apps$document,removeparam=ref,domain=my.mail.ru  # from Ru AdList
     ! ||app.mi.com/download/*?id=$removeparam=ref  # from Adguard
     ! nicovideo.jp$removeparam=ref  # from Adguard
+    ! $removeparam=ref,domain=mail.ru|sportmail.ru  # from Ru AdList
     ! mein.onlinekonto.de$removeparam=ref  # from Adguard
     ! ||rakuten.co.jp/Web?$removeparam=ref  # from Adguard
     ! reddit.com$removeparam=ref  # from Adguard
@@ -505,6 +521,7 @@ $removeparam=/referrer/
         ! yahoo.com$removeparam=guce_referrer
         ! yahoo.com$removeparam=guce_referrer_sig
     ! ||linkedin.com/authwall?$removeparam=originalReferer  # from Adguard
+    ! linkedin.com$removeparam=original_referer  # from Adguard
     ! reddit.com$removeparam=_branch_referrer  # from Adguard
     ! open.spotify.com$removeparam=_branch_referrer  # from Adguard
     ! ?referrer_block=$document,removeparam=|referrer_,domain=mail.ru|sportmail.ru  # from Ru AdList
@@ -513,7 +530,7 @@ $removeparam=/referrer/
     ! google.com$removeparam=referrer  # from uBlock filters
 
 $removeparam=refid
-    ! linkedin.com$removeparam=refId  # from NeatURL
+    ! linkedin.com$removeparam=refId  # from NeatURL and Adguard
     ! netgames.de$removeparam=refID  # from Adguard
 
 $removeparam=rtclick  # from Ru AdList
@@ -626,6 +643,18 @@ $removeparam=spMailingID  # "IBM Acoustic Campaign  # from NeatURL
 $removeparam=spReportId  # "IBM Acoustic Campaign  # from NeatURL
 $removeparam=spUserID  # "IBM Acoustic Campaign  # from NeatURL
 
+$removeparam=srcc$important
+    !  Polish exclusions from Adguard. I don't care much, just for information
+    !@@||auto-swiat.pl/*&srcc=ucs$removeparam  # from Adguard
+    !@@||businessinsider.com.pl/*&srcc=ucs$removeparam  # from Adguard
+    !@@||fakt.pl/*&srcc=ucs$removeparam  # from Adguard  # from Adguard
+    !@@||komputerswiat.pl/*&srcc=ucs$removeparam  # from Adguard
+    !@@||medonet.pl/*&srcc=ucs$removeparam  # from Adguard
+    !@@||noizz.pl/*&srcc=ucs$removeparam  # from Adguard
+    !@@||onet.pl/?utm_source=$removeparam  # from Adguard
+    !@@||plejada.pl/*&srcc=ucs$removeparam  # from Adguard
+    !@@||przegladsportowy.pl/*&srcc=ucs$removeparam  # from Adguard
+
 $removeparam=/^stm_.*/  # Campaign tracking (stm)  # from NeatURL
 
 $removeparam=/^trk.*/
@@ -637,8 +666,8 @@ $removeparam=/^trk.*/
     ! linkedin.com$removeparam=trkEmail  # from NeatURL
     ! ||linkedin.com/authwall?$removeparam=trkInfo  # from Adguard
     
-$removeparam=tt_content  # Twitch.tv general parameter  # from NeatURL
-$removeparam=tt_medium  # Twitch.tv general parameter  # from NeatURL
+$removeparam=tt_content  # Twitch.tv general parameter  # from NeatURL and Ru AdList
+$removeparam=tt_medium  # Twitch.tv general parameter  # from NeatURL and Ru AdList
 
 $removeparam=uclick
 $removeparam=uclickhash
@@ -662,19 +691,24 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! $removeparam=utm_content  # from Adguard and Ru AdList
     ! $removeparam=utm_emcid  # from Adguard
     ! $removeparam=utm_emmid  # from Adguard
+    ! $removeparam=utm_event  # from Ru AdList
     ! $removeparam=utm_id  # from Adguard and Ru AdList
     ! $removeparam=utm_keyword  # from Adguard
     ! $removeparam=utm_medium  # from Adguard and Ru AdList
     ! $removeparam=utm_name  # from Adguard
+    ! $removeparam=utm_partner_id,domain=mail.ru|sportmail.ru  # from Ru AdList
     ! $removeparam=utm_place  # from Adguard
     ! $removeparam=utm_product  # from Adguard
     ! $removeparam=utm_pubreferrer  # from Adguard
     ! $removeparam=utm_reader  # from Adguard
     ! $removeparam=utm_referrer  # from Adguard and Ru AdList
     ! $removeparam=utm_serial  # from Adguard
+    ! $removeparam=utm_session  # from Adguard
+    ! $removeparam=utm_siteid  # from Adguard
     ! $removeparam=utm_social  # from Adguard
     ! $removeparam=utm_social-type  # from Adguard
     ! $removeparam=utm_source  # from Adguard and Ru AdList
+    ! $removeparam=utm_supplier  # from Adguard
     ! $removeparam=utm_swu  # from Adguard
     ! $removeparam=utm_term  # from Adguard and Ru AdList
     ! $removeparam=utm_test  # from Ru AdList
@@ -700,6 +734,7 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! @@||lanacion.com.ar/*module$removeparam=utm_source  # from Adguard
     ! @@||onet.pl/?utm_source=$removeparam  # from Adguard
     ! @@||plex.tv/api/v*/users/*?utm_source=$removeparam=utm_source,domain=watch.plex.tv  # from Adguard
+    ! @@||assetstore.unity.com/packages/*?aid=*&utm_$removeparam  # from Adguard
     ! @@||t.send.vt.edu/r/?id=$removeparam=utm_medium  # from Adguard
     ! @@||t.send.vt.edu/r/?id=$removeparam=utm_campaign  # from Adguard
     ! @@||t.send.vt.edu/r/?id=$removeparam=utm_source  # from Adguard
@@ -1017,7 +1052,7 @@ linkedin.com$removeparam=lipi  # from NeatURL
 linkedin.com$removeparam=midSig  # from NeatURL
 linkedin.com$removeparam=midToken  # from NeatURL
 linkedin.com$removeparam=recommendedFlavor  # from NeatURL
-linkedin.com$removeparam=trackingId  # from NeatURL
+linkedin.com$removeparam=trackingId  # from NeatURL and Adguard
 
 ! loginfra.com - blocked entirely, just for information
 loginfra.com$removeparam=a  # from Adguard: ||cc.loginfra.com/cc$removeparam=a
@@ -1189,6 +1224,7 @@ ukr.net$removeparam
 
 ||unsplash.com$removeparam=|ixlib|ixid
 
+! already blocked
 uplynk.com$removeparam=/^ad/
     ! ||content.uplynk.com/api/*&ad=$xhr,removeparam=/^ad/,domain=abc7ny.com|abc7.com|abc7chicago.com|6abc.com|abc7news.com|abc13.com|abc11.com|abc30.com  # from uBlock filters
 
@@ -1221,6 +1257,7 @@ yandex.*$removeparam=mlid  # from Adguard, modified
 yandex.*$removeparam=msid
     ! ||yandex.*/news/$removeparam=msid  # from Adguard
     ! ||yandex.*/news*msid$document,removeparam=|,domain=yandex.*  # from Ru AdList
+    ! ||yandex.*/search/$document,removeparam=msid,domain=yandex.*  # from Ru AdList
     ! ||yandex.*/sport/$removeparam=msid  # from Adguard
 market.yandex.*$removeparam=nid  # from Ru AdList, modified
     ! ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
@@ -1253,16 +1290,6 @@ zhihu.com$removeparam=hybrid_search_source  # from uBlock filters
 ||zr.ru$removeparam=|internal_visits  # found independently
 
 !! todo
-
-!  Polish exclusions from Adguard. I don't care much, just for information
-!@@||auto-swiat.pl/*&srcc=ucs$removeparam  # from Adguard
-!@@||businessinsider.com.pl/*&srcc=ucs$removeparam  # from Adguard
-!@@||fakt.pl/*&srcc=ucs$removeparam  # from Adguard  # from Adguard
-!@@||komputerswiat.pl/*&srcc=ucs$removeparam  # from Adguard
-!@@||medonet.pl/*&srcc=ucs$removeparam  # from Adguard
-!@@||noizz.pl/*&srcc=ucs$removeparam  # from Adguard
-!@@||plejada.pl/*&srcc=ucs$removeparam  # from Adguard
-!@@||przegladsportowy.pl/*&srcc=ucs$removeparam  # from Adguard
 
 ! Some other exlusions from Adguard
 @@||tix.axs.com^$removeparam  # from Adguard
@@ -1329,11 +1356,13 @@ zerkalo.io$removeparam=vk  # from Adguard
 
 hepsiburada.com$removeparam=af_ad  # from Adguard
 hepsiburada.com$removeparam=af_adset  # from Adguard
+hepsiburada.com$removeparam=af_click_lookback  # from Adguard
 hepsiburada.com$removeparam=af_force_deeplink  # from Adguard
 hepsiburada.com$removeparam=c  # from Adguard
 hepsiburada.com$removeparam=is_retargeting  # from Adguard
 hepsiburada.com$removeparam=pid  # from Adguard
 hepsiburada.com$removeparam=shortlink  # from Adguard
+hepsiburada.com$removeparam=wt_gl  # from Adguard
 
 dmm.co.jp$removeparam=dmmref  # from Adguard
 dmm.co.jp$removeparam=i3_ord  # from Adguard
@@ -1373,8 +1402,8 @@ $removeparam=l-id,domain=nikki.ne.jp|rebates.jp  # from Adguard: $removeparam=l-
 
 dmkt-sp.jp$removeparam=impressionId  # from Adguard
 
-||web.vstat.info$removeparam=guid  # from Adguard
-||web.vstat.info$removeparam=user_agent  # from Adguard
+vstat.info$removeparam=guid  # from Adguard
+vstat.info$removeparam=user_agent  # from Adguard
 
 start.pm.by$removeparam=adtag  # from Adguard
 
@@ -1513,7 +1542,10 @@ toomics.com$removeparam=pid  # from Adguard
 toomics.com$removeparam=subpid  # from Adguard
 
 ! already blocked, but
+typekit.net$font,removeparam  # from Adguard
 p.typekit.net$stylesheet,removeparam  # from Adguard
+use.typekit.net$font,removeparam
+use.typekit.net$font,removeparam=~/^(primer|subset_id)=/  # from Adguard
 
 lazada.vn$removeparam=mkttid  # from Adguard
 lazada.vn$removeparam=laz_trackid  # from Adguard
@@ -1732,3 +1764,37 @@ shopyourlikes.com$removeparam=afCampaignId
 shopyourlikes.com$removeparam=afCreativeId
 shopyourlikes.com$removeparam=afId
 shopyourlikes.com$removeparam=afPlacementId
+
+||yandex.*/search/$document,removeparam=search_source,domain=yandex.*  # from Ru AdList: 
+$removeparam=rid,domain=zen.yandex.*  # from Ru AdList
+$document,removeparam=via,domain=yandex.*  # from Ru AdList
+
+$removeparam=fm,domain=mail.ru|sportmail.ru  # from Ru AdList
+$removeparam=rf,domain=mail.ru|sportmail.ru  # from Ru AdList
+
+! already blocked
+ngtv.io$removeparam=ssaiProfile
+    ! ||medium.ngtv.io/v*/media/*&ssaiProfile$xmlhttprequest,removeparam=ssaiProfile,domain=cnn.com  # from Adguard
+    ! ngtv.io$xhr,removeparam=ssaiProfile,domain=cnn.com  # from uBlock filters
+
+banggood.com$removeparam=utmid  # from Adguard
+
+coolblue.nl$removeparam=clickref  # from Adguard
+coolblue.nl$removeparam=cmt  # from Adguard
+coolblue.nl$removeparam=PHGref  # from Adguard
+
+! already blocked
+tradedoubler.com$removeparam=tduid  # from Adguard
+
+! already blocked
+hololivepro.com$removeparam=pr_rec_id  # from Adguard
+hololivepro.com$removeparam=pr_rec_pid  # from Adguard
+hololivepro.com$removeparam=pr_ref_pid  # from Adguard
+hololivepro.com$removeparam=pr_seq  # from Adguard
+hololivepro.com$removeparam=pr_prod_strat  # from Adguard
+
+kamigame.jp$removeparam=kamigame_source  # from Adguard
+
+! already blocked
+georiot.com$removeparam=tsid  # from Adguard
+
