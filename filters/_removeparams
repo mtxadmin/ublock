@@ -122,11 +122,15 @@ $removeparam=/campaign/  # maybe it needs i? Not sure
         ! caseking.de$removeparam=campaign  # from NeatURL
     ! $removeparam=campaign_id  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
     ! $removeparam=campaignId  # Oracle Eloqua  # from NeatURL
+    ! $removeparam=hmb_campaign  # Campaign tracking (Humble Bundle)  # from NeatURL
     ! $removeparam=sc_campaign  # Campaign tracking (sc)  # from NeatURL
     ! ||amazon.*/aa$removeparam=bitCampaignCode  # from Adguard
     ! editor.flixier.com$removeparam=/fx_(source|medium|campaign)/  # from Adguard
-    ! trendyol.com$removeparam=tyutm_campaign  # from Adguard
     ! ||play.google.com/store/$removeparam=pcampaignid  # from Adguard
+    ! revolut.com$removeparam=%7Ecampaign_id  # from Adguard
+    ! shopyourlikes.com$removeparam=afCampaignId
+    ! trendyol.com$removeparam=tyutm_campaign  # from Adguard
+    ! wise.com$removeparam=partnerizecampaignID  # from Adguard
     ! zavvi.com$removeparam=sv_campaign_id  # from Adguard
 
 $removeparam=campid
@@ -153,6 +157,10 @@ $removeparam=/click_id$/
     ! $removeparam=mt_click_id  # from Ru AdList
     ! $removeparam=unicorn_click_id  # adjust.com tracking  # from Adguard
     ! tinkoff.ru$removeparam=dsp_click_id
+
+$removeparam=clickref
+    ! coolblue.nl$removeparam=clickref  # from Adguard
+    ! wise.com$removeparam=clickref  # from Adguard
 
 ! $removeparam=/clid/ - hmmm... Maybe too broad. But all these client ids definitely look similar
     $removeparam=adclid
@@ -280,7 +288,7 @@ $removeparam=guccounter  # from Adguard
     ! $removeparam=guccounter  # from Adguard
     ! yahoo.com$removeparam=guccounter  # from NeatURL
 
-$removeparam=hmb_campaign  # Campaign tracking (Humble Bundle)  # from NeatURL
+! $removeparam=hmb_campaign  # blocked as /campaign/  # Campaign tracking (Humble Bundle)  # from NeatURL
 $removeparam=hmb_medium  # Campaign tracking (Humble Bundle)  # from NeatURL
 $removeparam=hmb_source  # Campaign tracking (Humble Bundle)  # from NeatURL
 
@@ -532,6 +540,11 @@ $removeparam=/referrer/
 $removeparam=refid
     ! linkedin.com$removeparam=refId  # from NeatURL and Adguard
     ! netgames.de$removeparam=refID  # from Adguard
+
+$removeparam=rid
+    ! amazon.*$removeparam=rid  # Found independently
+    ! giphy.com$removeparam=rid  # from Adguard
+    ! $removeparam=rid,domain=zen.yandex.*  # is in Ru AdList
 
 $removeparam=rtclick  # from Ru AdList
 
@@ -841,7 +854,6 @@ amazon.*$removeparam=psc  # from NeatURL
 amazon.*$removeparam=qid  # Found independently. Also it is in Adguard.
 amazon.*$removeparam=rdc  # from Adguard
 amazon.*$removeparam=refRID  # from Adguard
-amazon.*$removeparam=rid  # Found independently
 amazon.*$removeparam=smid  # from Adguard
 amazon.*$removeparam=sr  # Found independently
 amazon.*$removeparam=tag  # is in NeatURL and Adguard
@@ -1238,7 +1250,7 @@ weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$rem
 xxx-comics.pro$removeparam=view
     ! ||xxx-comics.pro/*?view=$doc,other,removeparam=view  # from uBlock filters
 
-! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck!
+! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck! Update: rid seems ad-related and now is in Ru AdList
 yandex.$removeparam=clid
     ! ||www.yandex.$removeparam=clid  # from Adguard
     ! ://yandex.$removeparam=clid  # from Adguard
@@ -1516,12 +1528,11 @@ qcplay.co.jp$removeparam=shortlink  # from Adguard
 
 giphy.com$removeparam=cid  # from Adguard
 giphy.com$removeparam=ct  # from Adguard
-giphy.com$removeparam=rid  # from Adguard
 
-!$removeparam=at_campaign,domain=bbc.com|bbc.co.uk  # from Adguard
+!$removeparam=at_campaign,domain=bbc.com|bbc.co.uk  # blocked as /campaign/  # from Adguard
 $removeparam=/^at_custom/,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=at_medium,domain=bbc.com|bbc.co.uk  # from Adguard
-!$removeparam=ns_campaign,domain=bbc.com|bbc.co.uk  # from Adguard
+!$removeparam=ns_campaign,domain=bbc.com|bbc.co.uk  # blocked as /campaign/  # from Adguard
 $removeparam=ns_fee,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_linkname,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_mchannel,domain=bbc.com|bbc.co.uk  # from Adguard
@@ -1615,7 +1626,7 @@ mozilla.org$removeparam=attribution_code  # from Adguard
 mozilla.org$removeparam=telemetry-client-id  # from Adguard
 
 humblebundle.com$removeparam=hmb_medium  # from Adguard
-humblebundle.com$removeparam=hmb_campaign  # from Adguard
+!humblebundle.com$removeparam=hmb_campaign  # blocked as /campaign/  # from Adguard
 humblebundle.com$removeparam=hmb_source  # from Adguard
 humblebundle.com$removeparam=mcID  # from Adguard
 humblebundle.com$removeparam=linkID  # from Adguard
@@ -1706,15 +1717,12 @@ fifa.com$removeparam=prerollAds  # from uBlock filters: ||cxm-api.fifa.com/fifap
 
 go.mysku.ru$removeparam=~r  # from Adguard
 
-revolut.com$removeparam=%7Ecampaign_id  # from Adguard
 revolut.com$removeparam=%7Eclick_id  # from Adguard
 revolut.com$removeparam=ext  # from Adguard
 revolut.com$removeparam=%7Esecondary_publisher  # from Adguard
 revolut.com$removeparam=%243p  # from Adguard
 
-wise.com$removeparam=partnerizecampaignID  # from Adguard
 wise.com$removeparam=adref  # from Adguard
-wise.com$removeparam=clickref  # from Adguard
 wise.com$removeparam=partnerID  # from Adguard
 
 ||join.worldoftanks.$removeparam=xid  # from Adguard
@@ -1760,13 +1768,11 @@ utarget.ru$removeparam  # from Adguard: ||utarget.ru/*/?siteid=$removeparam
 /?rb=*&zoneid=$removeparam  # from Adguard
 
 ! already blocked
-shopyourlikes.com$removeparam=afCampaignId
 shopyourlikes.com$removeparam=afCreativeId
 shopyourlikes.com$removeparam=afId
 shopyourlikes.com$removeparam=afPlacementId
 
 ||yandex.*/search/$document,removeparam=search_source,domain=yandex.*  # from Ru AdList: 
-$removeparam=rid,domain=zen.yandex.*  # from Ru AdList
 $document,removeparam=via,domain=yandex.*  # from Ru AdList
 
 $removeparam=fm,domain=mail.ru|sportmail.ru  # from Ru AdList
@@ -1779,7 +1785,6 @@ ngtv.io$removeparam=ssaiProfile
 
 banggood.com$removeparam=utmid  # from Adguard
 
-coolblue.nl$removeparam=clickref  # from Adguard
 coolblue.nl$removeparam=cmt  # from Adguard
 coolblue.nl$removeparam=PHGref  # from Adguard
 
