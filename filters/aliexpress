@@ -251,6 +251,8 @@ aliexpress.com,aliexpress.ru##.product-store-banner
 aliexpress.com,aliexpress.ru##.store-banner
 aliexpress.ru##[class^=StoreBanner]
 
+aliexpress.ru##[class^=InfoBanner]
+
     ! fixed elements
 aliexpress.com,aliexpress.ru##.float-image
 aliexpress.com##.fixed-header:style(position:static !important)
@@ -1250,6 +1252,7 @@ aliexpress.ru##[class*=styles_appsIcon]
 aliexpress.ru##[class*=footerApps]
 aliexpress.ru##[class*=_appIcon]
 aliexpress.ru##[class*=_appsIcon]
+||aliexpress.ru/mixer-storage/qr-code.png
     ! "benefits"
 aliexpress.ru##[class*=_benefits]
     !aliexpress.ru##[class^=styles_benefits]
@@ -1278,6 +1281,10 @@ aliexpress.com,aliexpress.ru##.cf-wrapper
 
 ! "did you find?"
 aliexpress.ru##[class^=SearchPool]
+
+aliexpress.ru##+js(set,window.Tracker,noopFunc)
+aliexpress.ru##+js(set,tracker.install,noopFunc)
+aliexpress.ru##+js(set,tracker.log,noopFunc)
 
 
 ! is in Adguard and Ru AdList (https://forums.lanik.us/viewtopic.php?f=102&t=44550)
