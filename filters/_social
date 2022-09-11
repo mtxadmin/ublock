@@ -466,6 +466,7 @@ connect.ok.ru$important  # from hpHosts’ Ad and tracking servers
 ##a[href^="http://connect.ok.ru/offer?url="]
 !todo: blocking window
 !ok.ru##.media-layer_close_ovr
+ok.ru##.invite-block
 !ok.ru###mtLayer
 ~belarus2020.org##.fa-odnoklassniki
 ##.icon-odnoklassniki
@@ -2208,7 +2209,7 @@ _social_linkedin.svg
 
 ###article_share
 ##.post__share
-##.share-content
+~shutok.ru##.share-content
 ##share-action
 ##.share-this
 
@@ -2440,3 +2441,6 @@ _follow_me-b.png  # from Adguard
 /social2s.min.js  # from Fanboy's
 
 /public/social/*  # from Fanboy's
+
+/sharer.js$important
+    ! ||jsdelivr.net/npm/sharer.js$important
