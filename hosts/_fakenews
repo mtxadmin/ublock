@@ -6,9 +6,9 @@
 !
 ! At present, all official Russian jornalism is mostly fake. But even against this background, some sites stand out
 ! Update: after 2022-02-24 many earlier neutral Russian news sites turned to volcanoes of pro-putin propaganda.
+!
 
-
-
+!
 ! сборные правила для вычистки пропаганды и fakenews из выдачи поисковых систем. Список доменов (только основные) ниже
 ! 
 
@@ -383,6 +383,7 @@ mail.ru##.result__li:has(a[href^="https://yandex.tm/news"])
 mail.ru##.result__li:has(a[href^="https://yandex.ua/news"])
 mail.ru##.result__li:has(a[href^="https://yandex.uz/news"])
 
+!
 
 !! domains
 
@@ -659,6 +660,7 @@ etleboro.org  # possible affiliated to RT/Sputnik
 evrazia.org
 
 expert.ru
+rusrep.ru  # redir to expert.ru
 
 faqkontakt.ru  # pre-war
 
@@ -759,41 +761,70 @@ info-balkan.ru
 infobrics.org$important
 infobrics.ru
 infoshos.ru
+infosco.biz
+patriot-alt.ru
 
 infopolk.ru
 
 ! teasers scam
 informerspro.ru
+mediarepost.site  # informerspro.ru
 
 informing.ru
 
 inforos.ru$important  # under US sanctions 2021-04
 # https://home.treasury.gov/news/press-releases/jy0126 :
 # "The GRU operates InfoRos. InfoRos calls itself a news agency but is primarily run by the GRU’s 72nd Main Intelligence Information Center (GRITs)."
+aban-pyatnitsa.ru
 ahtubinsk-projektor.ru
 akua-suhum.info
 aleksandriyskaya.ru
 alexsandrov-sloboda.ru
-altaiskaya-iskra.ru
 altai-week.ru
+altaiskaya-iskra.ru
 apchas.ru
+argumenty-kuragino.ru
 argungazeta.ru
+armavir-zerkalo.ru  # inforos.ru  # error root
+atamanovskaya-pravda.ru
+balashiha-news.ru
+baltvedomosti.ru
+belomorskie-vesti.ru
+boguchany-vestnik.ru
+bogved.ru
+bolmurta.ru
+delovaya-istra.ru
+dubna-gorodok.ru
+egorievskoe-utro.ru
+emelyanovo-besedy.ru
+eniseiskaya-gubernia.ru
+ermakovskoe-utro.ru
+fryazinets.ru
 gazeta-osered.ru
 georgievsk-krepost.ru
+golos-t.ru
+gorod-frolovo.ru
 govorit-krivosheino.ru
 govorit-zhukovka.ru
 grach26.ru
 gradjeleznogorsk.ru
+gradzheleznogorsk.ru
+gurievski-vestnik.ru
 gusnovosti.ru
 hangalasski-ulus.ru
+himki-gazeta.ru
+ilanskoe-znamya.ru
 infoalan.ru
 infobaltica.ru
+infoberezovka.ru
 infoburatia.ru
 infochuv.ru
 infocursk.ru
+infodivnogorsk.ru
 infodobryanka.ru
 infodonskoe.ru
 infodyatkovo.ru
+infoeniseisk.ru
 infoenisey.ru
 infoipatovo.ru
 infoistochnik.ru
@@ -803,6 +834,8 @@ infokirzhach.ru
 infokologriv.ru
 infokrim.info
 infokurg.ru
+infokursavka.ru
+infokurskaya.ru
 infokushchevskaya.ru
 infolipechk.ru
 infomagad.ru
@@ -810,17 +843,69 @@ infomikhailovka.ru
 infomosk.ru
 infomoskovia.ru
 infonerl.ru
+infoneva.ru
 infonezlobnaya.ru
+infonnov.ru
 infonovousman.ru
 infonovousmansk.ru
 infonsib.ru
 infoossora.ru
+infopartizansk.ru
 infopraskoveya.ru
 infopskova.ru
+infopushkino.ru
 inforaychihinsk.ru
 inforyaz.ru
+infosahalin.ru
 infosarat.ru
+infoseveromorsk.ru
+infosibai.ru
+infosokol.ru
+infosolnechnyi.ru
+infostavr.ru
+infotom.ru
+infotosno.ru
+infotsiolkovskiy.ru
+infotver.ru
+infotynda.ru
 infovolga.com  # "На данном сайте распространяется информация сетевого издания “Информационное агенство “Инфорос”"
+infovostok.ru
+infoya.ru
+infozelenokumsk.ru
+infozeya.ru
+jenbur.ru
+kalach-izvestia.ru
+kalevalskaya-gornitsa.ru
+kanevskaya-nedelya.ru
+klimvestnik.ru
+klin-novosti.ru
+kodinskie-vesty.ru
+kola-bay.ru
+kolomnal.ru
+kompass-bui.ru
+kondopoj.ru
+korenovskaya-nov.ru
+korolyov-news.ru
+krasnoznamensk-plus.ru
+lesosibirsk-vesti.ru
+lobnya-pravda.ru
+mestnaya-vlast.ru
+minusinsk-today.ru
+moya-shatura.ru
+nashsosnovoborsk.ru
+naukograd-reutov.ru
+nazarovoonline.ru
+nf-vestnik.ru
+nr-odincovo.ru
+pp-vesti.ru
+pravoznat-39.ru
+rodniki-gazeta.ru
+ruza-express.ru
+sergievposadpress.ru
+sever-podmoskovia.ru
+shelkovchanka.ru
+shushenskoevremya.ru
+sibnedelya.ru
 
 inforuss.info  # from Ru AdList: https://forums.lanik.us/viewtopic.php?f=102&t=46135
 lentaruss.ru
@@ -979,6 +1064,8 @@ nashstore.ru
 ##a[href*="nashstore.ru"]
 
 new91.ru  # aggregator
+
+newc.info  # mediarepost.ru
 
 ! pro-putin fakes
 newdaynews.ru
@@ -1197,6 +1284,8 @@ politobzor.net
 politonline.ru
 
 politrussia.com
+
+postnews24.ru  # error root  # rt.com
 
 ! mostly fakenews
 pravda.ru
