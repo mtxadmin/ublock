@@ -69,6 +69,7 @@ $removeparam=/^affi/
     ! otto.de$removeparam=AffiliateID  # from Adguard
     ! $removeparam=AffiliateID,domain=otto.de|ottoversand.at  # from Adguard
     ! parter.ru$removeparam=affiliate
+    ! stripchat.com$removeparam=affiliateId  # from Adguard
     ! zavvi.com$removeparam=affil  # from Adguard
 
 $removeparam=aiad_clid  # from Adguard
@@ -336,6 +337,8 @@ $removeparam=/^itm_.*/ # Campaign tracking (itm)  # https://www.parse.ly/help/po
 $removeparam=irgwc  # from Adguard and Ru AdList
     ! https://github.com/AdguardTeam/AdguardFilters/issues/108478
 
+$removeparam=_kx  # from Adguard
+
 $removeparam=maf  # from Adguard
 
 $removeparam=mbid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
@@ -536,6 +539,7 @@ $removeparam=/referrer/
     ! /*purchase-referrer=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
     ! apple.com$removeparam=referrer  # from uBlock filters
     ! google.com$removeparam=referrer  # from uBlock filters
+    ! stripchat.com$removeparam=referrer  # from Adguard
 
 $removeparam=refid
     ! linkedin.com$removeparam=refId  # from NeatURL and Adguard
@@ -551,6 +555,8 @@ $removeparam=rtclick  # from Ru AdList
 $removeparam=ruid  # from Ru AdList, modified
     ! RBC network tracking. Better to make general rule for their future projects
     ! ?ruid=$document,removeparam=|ruid,domain=autonews.ru|rbc.ru|sportrbc.ru  # from Ru AdList
+
+$removeparam=__s  # from Adguard
 
 $removeparam=sc_campaign  # Campaign tracking (sc)  # from NeatURL
 $removeparam=sc_channel  # Campaign tracking (sc)  # from NeatURL
@@ -733,6 +739,7 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
         !=ukraine_news&utm_$document,removeparam=|utm_  # from Ru AdList
         !?utm_partner_id=$document,removeparam=|,domain=mail.ru|sportmail.ru  # from Ru AdList
         !utm_$document,removeparam=ig_rid,domain=instagram.com  # from Ru AdList
+    ! 1password.university$removeparam=utm_ref  # from Adguard
     ! aufast.co$removeparam=/^utm_/  # from Adguard
     ! digikey.com$removeparam=/^utm_cid/  # from Adguard
     ! fastshare.cz/top*?utm_source=*&utm_medium=*&utm_campaign=$domain=warforum.cz  # from Adguard
@@ -836,6 +843,7 @@ alexa.com$removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest
 ! Note: in NeatURL amazon.com is amazon.* . It should work, but need to test 
 ! 2022: ref parameter (?ref=)is recommended to exclude by Adguard
 amazon.*$removeparam=ascsubtag  # is in NeatURL and Adguard
+||amazon.*$removeparam=AssociateTag  # from Adguard
 amazon.*$removeparam=c  # from Adguard
 amazon.*$removeparam=camp  # from Adguard
 amazon.*$removeparam=creative  # from Adguard
@@ -1140,6 +1148,11 @@ myvisualiq.net$removeparam=~red  # from Adguard
 
 nationalinterest.org$removeparam=|itok|timestamp
 
+! already blocked
+ngtv.io$removeparam=ssaiProfile
+    ! ||medium.ngtv.io/v*/media/*&ssaiProfile$xmlhttprequest,removeparam=ssaiProfile,domain=cnn.com  # from Adguard
+    ! ngtv.io$xhr,removeparam=ssaiProfile,domain=cnn.com  # from uBlock filters
+
 nicovideo.jp$removeparam=cmnhd_ref  # from Adguard
 
 nnm-club.lib$removeparam=sid  # from Ru AdList, modified
@@ -1244,6 +1257,8 @@ trendyol.com$removeparam=/^tyutm_/  # from Adguard, modified
 
 ||tweakers.net$removeparam=|nb|u  # from https://github.com/Smile4ever/Neat-URL
 
+twitch.tv$removeparam=/web_only|_branch_referrer/  # from Adguard
+
 twitter.com$removeparam=cxt  # from NeatURL
 twitter.com$removeparam=s  # from NeatURL
 twitter.com$removeparam=t  # from NeatURL
@@ -1253,6 +1268,8 @@ udemy.com$removeparam=referralCode
 ukr.net$removeparam
     ! unusual Ru AdList form:
     ! /?f=ukr.net$document,removeparam=|  # from Ru AdList
+
+$removeparam=/^__s=[A-Za-z0-9]{6\,}/,domain=~univis.uni-erlangen.de|~univis.uni-bamberg.de|~univis.uni-luebeck.de|~univis.uni-kiel.de|~univis.th-koeln.de  # from Adguard
 
 ||unsplash.com$removeparam=|ixlib|ixid
 
@@ -1266,6 +1283,9 @@ shopping.web.de$removeparam=origin  # from Adguard
 weidian.com$removeparam=/distributorid|wfr|ifr/  # from Adguard: weidian.com$removeparam=/distributorid|wfr|ifr|share_relation/
 
 ||wildberries.ru$removeparam=|targetUrl
+
+! already blocked
+xlivrdr.com$removeparam  # from Adguard
 
 xxx-comics.pro$removeparam=view
     ! ||xxx-comics.pro/*?view=$doc,other,removeparam=view  # from uBlock filters
@@ -1797,8 +1817,3 @@ $document,removeparam=via,domain=yandex.*  # from Ru AdList
 
 $removeparam=fm,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=rf,domain=mail.ru|sportmail.ru  # from Ru AdList
-
-! already blocked
-ngtv.io$removeparam=ssaiProfile
-    ! ||medium.ngtv.io/v*/media/*&ssaiProfile$xmlhttprequest,removeparam=ssaiProfile,domain=cnn.com  # from Adguard
-    ! ngtv.io$xhr,removeparam=ssaiProfile,domain=cnn.com  # from uBlock filters
