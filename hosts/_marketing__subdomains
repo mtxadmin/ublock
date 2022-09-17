@@ -457,6 +457,7 @@ analytics.test.cheggnet.com  # from EasyPrivacy
 analytics.cinemax.tv  # from Adguard
 analytics.cnfanart.com  # from Adguard
 analytics.corusent.com  # from Adguard
+analytics.credible.com
 analytics.dns-shop.ru
 analytics.docdoc.ru
 analytics.dpd.com  # from Adguard
@@ -583,6 +584,8 @@ chat.wildberries.ru
 clk.onet.pl  # from Adguard
 
 /click.$domain=~alfabank.ru
+click.alibaba.com  # from EasyList
+click.aliexpress.com  # from EasyList
 click.cloudcheckr.com
 click.email.sans.org
 click.email.vimeo.com  # ad redirects
@@ -828,7 +831,8 @@ elq.utas.edu.au  # from Adguard
 email.2gis.ru  # ad redirects
 email.bigcommerce.com
 email.bridgestonegolf.com  # ExactTarget AS22606
-email.email.pandadoc.com
+email.credible.com
+email.pandadoc.com  # email.email.pandadoc.com
 email.hackerearth.com  # ad redirects, Sendgrid
 email.mxtoolbox.com
 email.sv.bigcommerce.com
@@ -849,6 +853,7 @@ gdpr.laxd.com  # from Adguard
 ! /go. ?
 go.cyberark.com  # "Identity Security" # ad redirects and empty root
 go.gem.com  # ad redirects. Gem.com is some hiring CRM
+go.isostech.com  # from EasyList
 go.ticketmanager.com
 go.unas.ru  # from Ru AdList
 go.wisinfo1.com  # ad redirects
@@ -1353,7 +1358,7 @@ sentry.worldota.net  # ostrovok.ru tech domain
 /?sentry_key=  # is in EasyPrivacy
 /sentry.min.js
 
-/share.
+/share.$domain=~share.zabbix.com
 share.baidu.com  # from Fanboy's
 share.notizie.it  # from uBlock filters
 
@@ -2709,6 +2714,9 @@ sadmin.brightcove.com  # sadmin.brightcove.com/js/BrightcoveExperiences.js
 
 datadump.buildfire.com  # "app builder"
 
+api.buymeacoffee.com
+chat.buymeacoffee.com
+
 pixiedust.buzzfeed.com  # buzzfeed.com - Tracker  # from Quidsup NoTrack-Blocklist
 
 # cachefly.net is CDN, do not block it entirely. See https://en.wikipedia.org/wiki/CacheFly
@@ -3101,6 +3109,8 @@ effect.habr.com
 bigyapan.hamropatro.com  # from Adguard
 
 em.hartenergy.com
+
+tarantula.hashicorp.com  # ad scripts  # is in Adguard
 
 c1.hdgo.cc$important  # kino stats
 
@@ -3564,6 +3574,8 @@ opx.podolsk.ru  # from Ru AdList
 nativ.podruzke.ru  # from Adguard
 
 info.ponyfiction.org  # ad pings
+
+public.porn.fr  # from EasyList
 
 pci.pornclipsxxx.com  # from Adguard
 
@@ -4142,6 +4154,7 @@ adspotblog.wordpress.com
 sherlockedgeek.wordpress.com
 
 stats.wp.com$important
+s1.wp.com  # from EasyList
 
 adsearch.wp.pl  # from Dan Pollock's hosts file
 
