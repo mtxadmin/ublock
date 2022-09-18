@@ -3503,7 +3503,7 @@ butovopark.com##.adv_blk2
 ||butovopark.com/forum/template/default/img/*top*.jpg
 ||butovopark.com/forum/template/default/img/newlogo*.jpg
 
-buymeacoffee.com$3p  # ad popups  # domain should not be blocked, see #19
+buymeacoffee.com$3p  # ad popups  # domain should not be blocked, see #19 and #50 (it happens...)
 
 buzzfeednews.com##.newsblock-header
 buzzfeednews.com##.sticky-header
@@ -4338,6 +4338,8 @@ credera.com##p:has-text(/Transform your business|Explore Our Microsoft Consultin
 ! it is hr in fact
 credera.com##div.aligncenter
 
+credible.com$3p
+
 ||crimean-hunter.ru/*/sidebar1glare.png
 crimean-hunter.ru###art-main:style(background-image:none !important)
 crimean-hunter.ru##.art-header
@@ -4590,6 +4592,8 @@ deadline.com##.header__bar:style(position:static !important)
 deadline.com##.o-social-list
 
 deadlylaugh.ru##.top:style(position:static !important)
+
+||dealextreme.com/affiliate_upload/  # from EasyList
 
     ! banners
 ||decathlon.ru/*/HP%20banners/$image
@@ -6979,6 +6983,9 @@ from-ua.com$third-party,subdocument  # from Ru AdList
 from-ua.com##.mCustomScrollbar
 from-ua.com##.sidebar-nav__overlay
 
+frontendmasters.com##.FmLogo
+frontendmasters.com##.diagonal
+
 blog.f-secure.com##.b-page-content--offset:style(padding-top:0px !important)
 
 ||fuckingbreak.com/images/
@@ -7039,6 +7046,8 @@ game-debate.com###gd-main-site-logo
 game-debate.com###topBar:style(position:static !important)
 
 gamedeus.ru##.please
+
+gameduell.de$domain=~gameduell.com|~gameduell.de  # from GoodbyeAds, modified
 
 ||gamemag.ru/images/no_avatar.jpg
 ||gamemag.ru/images/galleries/icons/$image
@@ -7802,6 +7811,7 @@ group-ib.ru$3p,important  # is in Adguard and EasyPrivacy
 grouple.co$3p  # ads
 
 groupon.com$3p  # closed?  # from Fanboy's
+||groupon.com/javascripts/common/affiliate_widget/  # from EasyList
 
 ||grouponcdn.com/deal/$image,3p
 
@@ -8408,6 +8418,8 @@ hkrtrainings.com##.s-header
 hkrtrainings.com##.curriculum
 hkrtrainings.com##.enroll-form
 hkrtrainings.com##.author
+
+||hktvmall.com/yuicombo|$script,1p  # from uBlock filters
 
 hobbyits.com##.vw-site-logo-wrapper
 hobbyits.com##.vw-widget-feedburner-container
@@ -13381,6 +13393,8 @@ navigation-professionell.de##.post-row
 navigation-professionell.de##.novashare-buttons
 navigation-professionell.de##.et_pb_text_inner > h1
 
+ndtv.com$3p  # ad video popups
+ndtvimg.com$domain=~ndtv.com
 ! top
 ndtv.com##.navbar_header
 ndtv.com##.stickylogo
@@ -13390,12 +13404,6 @@ ndtv.com##.sticky_navbar
 ||ndtv.com/*/appstore_badge.png
 ||ndtv.com/*/playstore_badge.png
 ###___ndtvpushdiv
-!is in AdGuard: @@||gadgets360.com/*ad$script
-||gadgets360.com/*ad$important
-! promoted widget with ad redirects to pricee.com/api/redirect/t.php
-hotdeals360.com$3p
-||pricee.com/api/
-pricee.com##.topbar
 
 ndv.ru##.main-header__complex-mark
 
@@ -13713,6 +13721,10 @@ noadsradio.ru##.not-adb
 noadsradio.ru##p:has-text(рекламный ролик)
 
 noa-lit.ru##.logo_s
+
+||nocensor.biz/go/$popup  # from EasyList
+||nocensor.world/go/
+nocensor.world##.alwocme4ir
 
 ! movies
 nono.games##.vid
@@ -15316,6 +15328,10 @@ pluralsight.com##.ps-nav--button
 pluralsight.com##.main-course-signup
     ! other
 
+plus500.com$3p
+||marketools.plus500.com/feeds/  # from EasyList
+||marketools.plus500.com/widgets/  # from EasyList
+
 plusworld.ru##.banner-button
 plusworld.ru###after_article
 
@@ -15639,6 +15655,8 @@ pppkazan.com##body.modal-open:style(filter:none !important)
 ||pppkazan.com/*/ru-badge-ios.png
 ||pppkazan.com/*/ru_badge_web_generic.png
 ! other
+
+practical365.com##.blog-detail-sticky
 
 prajwaldesai.com##.bs-pinning-block:style(position:static !important)
 prajwaldesai.com##.header-inner
@@ -20467,6 +20485,7 @@ timeweb.com##.ia-splitter:style(padding-top:0px !important)
 
 tinkoff.ru$3p  # ad scripts (maybe credits)
 ||cdn-tinkoff.ru/twa/
+||tinkoff.ru/sl/  # ref links
     ! banners and promos
 tinkoff.ru###bannerlink-level
 tinkoff.ru##section[id="drive-footer-banner"]
@@ -20909,6 +20928,7 @@ trustedreviews.com##div.egl-popup
 trustedsite.com$3p
 
 trustpilot.com##.header__actual:style(position:static !important)
+trustpilot.com##[class*=Sticky]
 
 trustradius.com##.vendor-shout
 trustradius.com##.login-modal
@@ -21549,6 +21569,9 @@ vademec.ru##.footer__images
 vademec.ru##.b-soc__item
 
 blog.vadmin.ru###header-inner
+
+vagrantup.com##[class^=banner_root]
+vagrantup.com##[class^=style_contentWrap]:style(margin-top:0px !important)
 
 ||value-instrument.ru/images/value.png
 value-instrument.ru##.navbar-right
@@ -25101,3 +25124,12 @@ zoohit.*,zooplus.*##.uxt-carousel
 
 semaphoreci.com##.logo-blog
 semaphoreci.com##.prev-next
+
+!is in AdGuard: @@||gadgets360.com/*ad$script
+||gadgets360.com/*ad$important
+
+! promoted widget with ad redirects to pricee.com/api/redirect/t.php
+hotdeals360.com$3p
+
+||pricee.com/api/
+pricee.com##.topbar
