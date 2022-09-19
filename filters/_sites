@@ -961,6 +961,8 @@ air-gun.ru##.promo-slider
 air-gun.ru##.social
 air-gun.ru##.icons8-share
 air-gun.ru##.skidka
+air-gun.ru##+js(set, Cackle, noopFunc)
+air-gun.ru##+js(set, Cackle.bootstrap, noopFunc)
 
 ! todo: rewrite if it will be critical.
 ! Now it isn't but it's not ad: https://legalbetweb-a.akamaihd.net/assets/LB-TB-1/js/admin/jquery-file-upload/jquery.iframe-transport.js
@@ -1768,6 +1770,7 @@ asienda.ru###header
 asienda.ru###popup_message
 asienda.ru##.flyDocs
 asienda.ru###flyingLeft
+asienda.ru##.main-calendar-sadovoda
 
 askbot.org##.notification
 askbot.org##.notify
@@ -4339,6 +4342,7 @@ credera.com##p:has-text(/Transform your business|Explore Our Microsoft Consultin
 credera.com##div.aligncenter
 
 credible.com$3p
+||credible.com/sdk.js  # from EasyList
 
 ||crimean-hunter.ru/*/sidebar1glare.png
 crimean-hunter.ru###art-main:style(background-image:none !important)
@@ -4904,9 +4908,7 @@ discord-pc.ru$third-party
 ||discordemoji.com^
 
 disqus.com##.recommend-post-title
-! ad scripts
-! is in MVPS HOSTS
-glitter.services.disqus.com
+||disqus.com/listPromoted?  # from EasyList
 ! is in AdGuard
 disqus.com###thread-share-bar
 ! is in AdGuard
@@ -4914,6 +4916,7 @@ disqus.com##.comment__share
 ||disqusservice.com/iframe/fallback/$subdocument
 /disqus-count$script
 ||disqus.com/count-data.js
+||disqusservice.com/iframe/fallback/  # from EasyList
 
 distrowatch.com##a[href="./"]
 
@@ -11601,6 +11604,7 @@ login-cabinet.com$inline-script  # site breaks copypaste
 
 loginza.ru$third-party
 
+logz.io$third-party  # from EasyPrivacy
 logz.io##.menu_free_trial
 logz.io##.menu_request_demo
 logz.io##.inline_bottom_banner
@@ -13115,6 +13119,7 @@ mygoodknife.com###pqnp-win
 
 ||myjane.ru/i/content-bg2.png
 ||myjane.ru/i/footer-splash.png
+||myjane.ru/i/head-$image
 myjane.ru###ushko_alt
 
 myjulia.ru###popup_message
@@ -14130,11 +14135,16 @@ ohotnik.com##.carousel-brands__item
 
 ohotnik.org##.header-main-area
 
-! top
+    ! top
 ohotnik50.ru##.cs-page__content > div:has-text(/^$/)
 ohotnik50.ru##.cs-header
 ohotnik50.ru##.b-head-control-panel__link_type_register
-! other
+ohotnik50.ru##.company__logo
+ohotnik50.ru##.company__desc
+    ! banners
+ohotnik50.ru##.slider_wrap
+ohotnik50.ru##.b-slider__container
+    ! other
 ohotnik50.ru##.b-slider
 ohotnik50.ru##.cs-product__label
 ohotnik50.ru###product-sticky-panel
@@ -14142,7 +14152,6 @@ ohotnik50.ru##.cs-page__float:style(position:static !important)
 ohotnik50.ru##.cs-page__row:has-text(/Вы просматривали|Мы рекомендуем/)
 ohotnik50.ru##.cs-product-gift
 ohotnik50.ru##.cs-counter
-ohotnik50.ru##.b-slider__container
 ohotnik50.ru##.cs-product-gallery__buttons
 ohotnik50.ru##.js-oco-phone
 ohotnik50.ru##.js-oco-inline
@@ -14678,6 +14687,7 @@ ozerki.ru##.popup-region
 ozerki.ru##.medication__banner
 ozerki.ru##.g-section_banner
 
+||ozon.ru/referral/
 ||ozone.ru/s3/client-metrics/
     ! top
 !ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
@@ -17197,6 +17207,7 @@ rusrappers.ru##.menu
 
 russianblogs.com##h1
 
+||russianfood.com/tapi  # stat4.russianfood.com/tapi
 ||russianfood.com/*/bottom_logo
 ||russianfood.com/*/recipe_add_btn*.gif
 russianfood.com##.annonce_purple.annonce
@@ -20067,6 +20078,8 @@ tempgun.ru##.logo_and_menu-row .inner-table-block:style(height:auto !important)
 tempgun.ru##.logo_and_menu-row .search-wrapper:style(height:auto !important)
 tempgun.ru##.item_slider:style(padding-top:0px !important; padding-bottom:0px !important)
 tempgun.ru##.brands_slider_wrapp
+! Uncaught TypeError: $(...).ihavecookies is not a function
+tempgun.ru##+js(set, Object.prototype.ihavecookies, noopFunc)
 
 ||temptingangels.org/images/$image
 temptingangels.org###m
@@ -25127,9 +25140,60 @@ semaphoreci.com##.prev-next
 
 !is in AdGuard: @@||gadgets360.com/*ad$script
 ||gadgets360.com/*ad$important
+gadgets360.com##.navbar_header
+gadgets360.com##.vidstk
+gadgets360.com##.vidstkdiv
 
 ! promoted widget with ad redirects to pricee.com/api/redirect/t.php
 hotdeals360.com$3p
 
 ||pricee.com/api/
 pricee.com##.topbar
+
+! ad popups
+zealcu.org##.modal
+
+||crunchyroll.com/awidget/  # from EasyList
+
+||djicdn.com/uploads/ad_image_  # from EasyList
+
+! popups
+1hunting.ru##.fixed
+
+hakko.com###page-top
+
+cookpad.com##.btn--cookpad-orange-500
+cookpad.com##.popover
+
+ataka-ssm.ru###dhtmlgoodies_marquee
+
+yapoel.ru##[href^="https://www.ozon.ru/referral/"]
+yapoel.ru##.parallax-mirror
+
+tyshenka.ru##.cp_container
+tyshenka.ru##.mail-subscribe-container
+
+mediafort.ru$3p
+
+    ! top
+mmenu.com##.scroll_div:style(position:static !important)
+mmenu.com##.header
+||mmenu.com/img/patterns/$image
+    ! banners and promos
+mmenu.com##.mm_banner_place
+mmenu.com###add_mm_to_favorite
+    ! other
+||mmenu.com/img/mm/choke_recipe_$image
+
+! seo
+mmenu.com##.start_text
+mmenu.com##.mm_tools_wrap
+
+! top and left tg banners
+||timetoboil.ru/images/plate1.png
+||timetoboil.ru/images/telegram.svg
+timetoboil.ru##.tg-plate-container
+timetoboil.ru##.tg-left
+timetoboil.ru##.tg-wrap
+
+crunchify.com##.arrowNav
