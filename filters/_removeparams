@@ -583,7 +583,8 @@ $removeparam=refid
     ! linkedin.com$removeparam=refId  # from NeatURL and Adguard
     ! netgames.de$removeparam=refID  # from Adguard
 
-$removeparam=rid
+$removeparam=rid,domain=~russianfood.com
+    !  russianfood.com: rid=ReceptId
     ! amazon.*$removeparam=rid  # Found independently
     ! giphy.com$removeparam=rid  # from Adguard
     ! $removeparam=rid,domain=zen.yandex.*  # is in Ru AdList
@@ -1309,8 +1310,8 @@ trendyol.com$removeparam=/^tyutm_/  # from Adguard, modified
 twitch.tv$removeparam=/web_only|_branch_referrer/  # from Adguard
 
 twitter.com$removeparam=cxt  # from NeatURL
-twitter.com$removeparam=s  # from NeatURL
-twitter.com$removeparam=t  # from NeatURL
+twitter.com$removeparam=s  # is in NeatURL
+twitter.com$removeparam=t  # is in NeatURL
 
 udemy.com$removeparam=referralCode
 
