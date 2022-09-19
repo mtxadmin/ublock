@@ -550,6 +550,7 @@ _ad.gif|  # from EasyList
 /ad300.htm  # from Adguard
 /adb.min.js$important
 /adbanner$important
+/ad_banner_  # is in EasyList
 /ad-banner.  # from SecurityEntire RussianFilter
 /ad-banners
 /adbdetect
@@ -2667,7 +2668,12 @@ _tracker.js.  # from EasyPrivacy
 ##[id*="scrolldown"]:not(html):not(body)
 ##[class*="scroll-top"]:not(html):not(body)
 ##[id*="scroll-top"]:not(html):not(body):not(.row)
-~1hunting.ru,~larsenal.ru,~stalkersafe.ru,~vsemtoy.ru##[class*="scroll_top"]:not(html):not(body):not(article):not(header)
+##[class*="scroll_top"]:not(html):not(body):not(article):not(header):not(.mfixed_view_scroll_top)
+    ! karabin69.ru: wrapper1  header_bgcolored long_header colored_header with_left_block  basket_fly fly2 basket_fill_WHITE side_LEFT block_side_NORMAL catalog_icons_N banner_auto with_fast_view mheader-v1 header-v1 header-font-lower_N regions_Y title_position_LEFT fill_ footer-vcustom front-vindex1 mfixed_Y mfixed_view_scroll_top title-v3 lazy_Y with_phones compact-catalog dark-hover-overlay normal-catalog-img landing-normal big-banners-mobile-slider bottom-icons-panel-Y compact-breadcrumbs-N catalog-delayed-btn-Y
+    ! larsenal.ru: wrapper1 with_left_block front_page basket_normal basket_fill_DARK side_LEFT catalog_icons_Y banner_auto  mheader-v1 header-v3 regions_N fill_N footer-v2 front-vindex3 mfixed_Y mfixed_view_scroll_top title-v1 with_phones
+    ! 1hunting.ru: wrapper1  front_page basket_normal basket_fill_DARK side_LEFT catalog_icons_N banner_auto with_fast_view mheader-v2 header-v11 regions_N fill_Y footer-v4 front-vindex1 mfixed_Y mfixed_view_scroll_top title-v1 with_phones with_lazy
+    ! stalkersafe.ru: wrapper1  header_bgcolored front_page basket_normal basket_fill_DARK side_LEFT catalog_icons_N banner_auto with_fast_view mheader-v2 header-vcustom regions_Y fill_Y footer-v1 front-vindex1 mfixed_Y mfixed_view_scroll_top title-v3 with_phones ce_cmp with_lazy store_COMBINE_AMOUNT
+    ! vsemtoy.ru: wrapper1  front_page basket_fly basket_fill_DARK side_LEFT catalog_icons_Y banner_auto with_fast_view mheader-v1 header-v3 regions_N fill_N footer-v2 front-vindex2 mfixed_Y mfixed_view_always title-v2 with_phones ce_cmp with_lazy
 ##[id*="scroll_top"]:not(html):not(body)
 ##[class*="scrolltop"]:not(html):not(body)
     ##.icons-scrolltop-black
@@ -3098,6 +3104,7 @@ _backtotop.  # from Ru AdList
 /icon_gototop.  # from Ru AdList
 /icon_scrollup.  # from Ru AdList
 /jquery.scrollTo.min.js
+/jquery.tooltipster.min.js
 /jquery.toTop.js
 /jump_to_top.$image
 /top-link.svg
