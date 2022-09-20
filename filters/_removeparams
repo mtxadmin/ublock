@@ -266,7 +266,6 @@ $removeparam=from,domain=~yandex.*|~auth.mail.ru|~sberbank.ru
     from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
     /story/*?lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
     from=*_portal&lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
-    $document,removeparam=via,domain=dzen.*|yandex.*  # from Ru AdList
 
 $removeparam=frommail
     ! $removeparam=frommail,domain=mail.ru|sportmail.ru  # from Ru AdList
@@ -1340,12 +1339,28 @@ xlivrdr.com$removeparam  # from Adguard
 xxx-comics.pro$removeparam=view
     ! ||xxx-comics.pro/*?view=$doc,other,removeparam=view  # from uBlock filters
 
-! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck! Update: rid seems ad-related and now is in Ru AdList
 yandex.$removeparam=clid
     ! ||www.yandex.$removeparam=clid  # from Adguard
     ! ://yandex.$removeparam=clid  # from Adguard
-zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
-    ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
+
+dzen.*,yandex.*$removeparam=via
+    ! $document,removeparam=via,domain=dzen.*|yandex.*  # is in Ru AdList
+
+dzen.*,yandex.*$removeparam=integration
+dzen.*,yandex.*$removeparam=place
+dzen.*,yandex.*$removeparam=secdata
+dzen.*,yandex.*$removeparam=feed_exp
+dzen.*$removeparam=from
+    ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck! 
+    ! Update: "rid" seems ad-related and now is in Ru AdList
+    ! Update: I found such link, it was the set of parameters of zen. Good. And "feed_exp" too. 
+    ! "Rid" - see above. "From" is on zen, but I saw glitches on yandex.
+
+dzen.*,yandex.*$removeparam=country_code
+    !zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
+    ! Update: now dzen.ru and yandex.*
+        ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
+
 market.yandex.*$removeparam=cpc  # from Ru AdList, modified
     ! ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 ||yandex.*/story/$removeparam=lang  # from Ru AdList, modified
