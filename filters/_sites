@@ -129,6 +129,9 @@
 
 ||1gb.ru/*/site_back0.gif
 
+! popups
+1hunting.ru##.fixed
+
 ! exception is from AdGuard Annoyances filter
 1plus1.ua#$#.js-cookies { display: none!important; }
 
@@ -1829,6 +1832,8 @@ asus.com##[class*="filterButtonWrapper"]
 asus.com##.asusOfficialProductMenu:style(position:static !important)
 asus.com##[class^=HeaderDesktop__logo]
 asus.com##[class^=Footer__communityLink]
+
+ataka-ssm.ru###dhtmlgoodies_marquee
 
 aternos.org$script,redirect-rule=noopjs  # from uBlock filters  # "free Minecraft servers"
 ||aternos.org/panel/ajax/reportDetection.php?$xhr,1p  # from uBlock filters
@@ -4255,6 +4260,9 @@ converterino.net##div.column:nth-of-type(2)
 cookdown.com###jsd-widget
 
 cookmaster.online##.fixed-header-w:style(position:static !important)
+
+cookpad.com##.btn--cookpad-orange-500
+cookpad.com##.popover
 
 coop-land.ru$script  # ad popup
 
@@ -8086,6 +8094,8 @@ hairshop.ru##.masthead
 hairshop.ru##.header_top
 hairshop.ru##.footer_right > .footer_search
 hairshop.ru##.footer_left
+
+hakko.com###page-top
 
 handmade-expert.info##.logo-section-holder
 handmade-expert.info##.logo-section-wrap
@@ -19209,6 +19219,10 @@ startpack.ru##[href^="http://bit.ly/"]
 startribune.com##.nav-weather-mod
 startribune.com##.nav-logo-star
 
+||starwindsoftware.com/*/images/partners/banner$image
+! jQuery(...).theiaStickySidebar is not a function
+starwindsoftware.com##+js(set, Object.prototype.theiaStickySidebar, noopFunc)
+
 statstool.com##.modal-content
 statstool.com##.in.fade.modal.confirmation-modal
 
@@ -21165,6 +21179,9 @@ typekit.net$third-party,script
 
 typo3worx.eu###main-header
 typo3worx.eu##.header
+
+tyshenka.ru##.cp_container
+tyshenka.ru##.mail-subscribe-container
 
 ! inline related
 tyzhden.ua##.read-also
@@ -23550,6 +23567,9 @@ yaplakal.com##.telega_button
 yaplakal.com##div > div > b:has-text(в Телеграм-канале)
 yaplakal.com##tr.collapsebox > td.darkrow3
 
+yapoel.ru##[href^="https://www.ozon.ru/referral/"]
+yapoel.ru##.parallax-mirror
+
 yarea.ru##.bbc_link
 
 ||yavitrina.ru/context.js
@@ -25199,18 +25219,3 @@ zealcu.org##.modal
 
 ||djicdn.com/uploads/ad_image_  # from EasyList
 
-! popups
-1hunting.ru##.fixed
-
-hakko.com###page-top
-
-cookpad.com##.btn--cookpad-orange-500
-cookpad.com##.popover
-
-ataka-ssm.ru###dhtmlgoodies_marquee
-
-yapoel.ru##[href^="https://www.ozon.ru/referral/"]
-yapoel.ru##.parallax-mirror
-
-tyshenka.ru##.cp_container
-tyshenka.ru##.mail-subscribe-container
