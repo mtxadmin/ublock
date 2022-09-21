@@ -8226,14 +8226,21 @@ hft.ru##.footer__pay
 
 ||hh.ru/analytics^  # from AdGuard
 ||career.ru/analytics^
+!
 ||hh.ru/performance_stat
 ||career.ru/performance_stat
-||hh.ru/stat?url=  # from AdGuard
-||career.ru/stat?url=
+!
+||hh.ru/stat  # is in Adguard
+||hh.kz/stat
+||career.ru/stat
+!
 ||hh.ru/*/vk__min_.svg
 ||hh.ru/*/ok__min_.svg
+!
 ||hhcdn.ru/ichameleon/$image
+!
 ||hhcdn.ru/employer-logo/$image
+||hh.ru/employer-logo/$image
     ! top
 hh.ru,career.ru##.HH-RelatedVacanciesPreview-StickyContainer
 hh.ru,career.ru##.navi__menu:style(position:static !important)
@@ -8291,21 +8298,22 @@ hh.ru##[class^=container--]
 hh.ru##.supernova-notification:has-text(автопоиск)
 hh.ru##.supernova-navi-counter_dot-only
 hh.ru##.bloko-modal-overlay
+hh.ru,hh.kz##.bloko-notification
     ! apps
 ||hh.ru/*/index-messengers-bots/
-hh.ru##.messengers-bots-qr-code
-hh.ru##.supernova-footer-nav-mobile
-hh.ru##.supernova-app-buttons
-hh.ru##[class^=mobile-app-button]
+hh.ru,hh.kz##.messengers-bots-qr-code
+hh.ru,hh.kz##.supernova-footer-nav-mobile
+hh.ru,hh.kz##.supernova-app-buttons
+hh.ru,hh.kz##[class^=mobile-app-button]
     ! counters
 ! inadequate counter
-hh.ru##.bloko-form-row:has(.vacancy-viewers-count)
-hh.ru##span:has-text(/^смотрят$/)
-hh.ru##.vacancy-viewers-count
-hh.ru##[class^=online-users]
-hh.ru##[class^=count--]
-hh.ru##.supernova-navi-counter_dot-only
-hh.ru##.vacancy-viewers-count
+hh.ru,hh.kz##.bloko-form-row:has(.vacancy-viewers-count)
+hh.ru,hh.kz##span:has-text(/^смотрят$/)
+hh.ru,hh.kz##.vacancy-viewers-count
+hh.ru,hh.kz##[class^=online-users]
+hh.ru,hh.kz##[class^=count--]
+hh.ru,hh.kz##.supernova-navi-counter_dot-only
+hh.ru,hh.kz##.vacancy-viewers-count
     ! different promo blocks (not all!)
 hh.ru##.tmpl_hh_advantages
 hh.ru##.tmpl_hh_banner
@@ -8341,7 +8349,6 @@ hh.ru,career.ru##div.vacancy-serp-item:has-text(/Компьютерный мас
 hh.ru##.account-login-social-icon
 hh.ru##.applicant-phone-container
 hh.ru##div.serp-special
-hh.ru##.bloko-notification
 hh.ru##.employer-sidebar__logo-container
 hh.ru##.supernova-dashboard-footer
 hh.ru##.related-vacancies-preview_sticky:style(position:static !important)
@@ -10429,6 +10436,7 @@ kommersant.ru##.basement_news
     ! top
 kommersant.ru##.sticked_top:style(position:static !important)
 kommersant.ru##.main_header__main_logo
+kommersant.ru##.main_header__brand_logo
     ! unstick elements
 kommersant.ru##.sticky_priority.sticked_top > .place
 kommersant.ru##.sticky_box::after:style(content:normal !important)
@@ -11228,9 +11236,11 @@ link2sd.co###regular-header
 
     ! trackers
 ||linkedin.com/li/track
+||realtime.www.linkedin.com/realtime/realtimeFrontendClientConnectivityTracking
 licdn.com$domain=~linkedin.com  # linkedin scripts on third sites  # 3p ad scripts  # linkedin host  # snap.licdn.com/li.lms-analytics/insight.min.js
 ||licdn.com/li.lms-analytics/  # linkedin tracker, from AdGuard Tracking Protection. Seen far not only linkedin
 ||linkedin.com/sensorcollect/  # is in EasyPrivacy
+||linkedin.com/*/api/ingraphs/  # ad pings
     ! header
 linkedin.com##.org-sticky-top-card:style(position:static !important)
 linkedin.com##.authentication-outlet:style(padding-top:0px !important)
