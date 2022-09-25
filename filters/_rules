@@ -2242,12 +2242,18 @@ _analytics.js?  # from EasyPrivacy
     ! /analytics.min.js$important
     ! and many EasyPrivacy rules
 .analytics.min.  # from EasyPrivacy
+/analytics^
+/analytics?
+    ||hh.ru/analytics^  # is in Adguard
+    ||career.ru/analytics^
+    ||rabota.by/analytics?  # is in EasyPrivacy
 /analytics/$important,domain=~dropbox.com|~fandom.com|~globalvoices.org|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~twitter.com
     ! увы, но иначе в Сбербанк и Домклик не входит
     !||sberbank.ru/*analytics$script,redirect=noopjs
     @@||sberbank.ru/*analytics$script
     ! /rest/analytics/*  # is in EasyPrivacy
     ! /vwfiles/analytics/*  # from EasyPrivacy
+    ||cnn.com/analytics/  # from EasyPrivacy
     ! false positive: !https://services.rome2rio.com/api/1.5/json/search?key=...&analytics=true&debugFeatures=&debugExperiments=&groupOperators=true
 /analytics-$important
     /analytics-event
