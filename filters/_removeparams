@@ -885,6 +885,8 @@ alexa.com$removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest
 
 ! See aliexpress rules in aliexpress file
 
+facebook.com$removeparam=extid  # from Adguard
+
 ! Found independently, but cannot be applied in uBlock Origin as in NeatURL
 ! That is not URL parameter, but URL ending
 #  $/ref@amazon.*
@@ -1078,18 +1080,33 @@ hentaicomics.pro$removeparam=code
 hentai-party.com$removeparam=view
     ! ||hentai-party.com/*?view=$doc,other,removeparam=view  # from uBlock filters
 
-hh.ru$removeparam=dpt
-hh.ru$removeparam=email_hash
-hh.ru$removeparam=hhtmFrom
-hh.ru$removeparam=hhtmFromLabel
-hh.ru$loginkey  # Arguably
-hh.ru$removeparam=position
-hh.ru$removeparam=query  # NOT search
-hh.ru$removeparam=requestId
-hh.ru$removeparam=sent_date
-hh.ru$removeparam=targetingParams
-hh.ru$removeparam=totalVacancies
-hh.ru$removeparam=vss
+! hh.ru domains
+! hh.ru,career.ru,hh.by,rabota.by,hh.kz,hh.ua,grc.ua
+$removeparam=dpt,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+$removeparam=email_hash,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+$removeparam=hhtmFrom,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+$removeparam=hhtmFromLabel,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+  # Arguably
+$removeparam=loginkey,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+$removeparam=position,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+  # NOT search
+$removeparam=query,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+$removeparam=requestId,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+$removeparam=sent_date,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+$removeparam=targetingParams,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+$removeparam=totalVacancies,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+!
+$removeparam=vss,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
 
 ! already blocked
 hololivepro.com$removeparam=pr_rec_id  # from Adguard
@@ -1293,8 +1310,16 @@ tiktok.com$removeparam=timestamp  # from NeatURL
 tiktok.com$removeparam=tt_from  # from NeatURL and Adguard
 tiktok.com$removeparam=u_code  # from NeatURL
 tiktok.com$removeparam=user_id  # from NeatURL
+tiktok.com$removeparam=sec_uid  # from Adguard
+tiktok.com$removeparam=web_id  # from Adguard
 
 tinkoff.ru$removeparam=mindbox-click-id  # from Adguard
+
+! already blocked
+! u is url, don't block
+tp.media$removeparam=marker
+tp.media$removeparam=p
+tp.media$removeparam=trs
 
 ! already blocked
 tradedoubler.com$removeparam=tduid  # from Adguard
@@ -1399,6 +1424,9 @@ youtube.com$removeparam=feature  # from NeatURL
 youtube.com$removeparam=kw  # from NeatURL
 youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
     ! ?sub_confirmation=1$document,removeparam=|,domain=youtube.com  # from Ru AdList
+
+zenaps.com$removeparam=bId  # from Adguard
+zenaps.com$removeparam=cookie  # from Adguard
 
 ! zhihu.com - blocked entirely, just for information
 zhihu.com$removeparam=hybrid_search_extra  # from uBlock filters
@@ -1908,14 +1936,6 @@ netflix.com$removeparam=trackId  # from Adguard
 
 music.apple.com$removeparam=itscg  # from Adguard
 music.apple.com$removeparam=itsct  # from Adguard
-
-facebook.com$removeparam=extid  # from Adguard
-
-zenaps.com$removeparam=bId  # from Adguard
-zenaps.com$removeparam=cookie  # from Adguard
-
-tiktok.com$removeparam=sec_uid  # from Adguard
-tiktok.com$removeparam=web_id  # from Adguard
 
 ! don't know, but ok
 @@||dkbs.sabio.de/sabio/services/$removeparam  # from Adguard
