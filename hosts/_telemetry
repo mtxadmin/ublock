@@ -473,7 +473,14 @@ spade.twitch.tv  # from Adguard
 
 ads-bidder-api.twitter.com  # from Adguard
 analytics.twitter.com$important  # ad scripts  # is in EasyPrivacy  # https://brave.com/popular-browsers-first-run/
-api.twitter.com  # api.twitter.com$third-party,important  # even that way: https://cdn.api.twitter.com/1/urls/count.json?url=
+#api.twitter.com - in general, don't
+    # api.twitter.com$third-party,important  # even that way: https://cdn.api.twitter.com/1/urls/count.json?url=
+    ||api.twitter.com/*/count.json
+    ||api.twitter.com/*/error_log.json
+    ||twitter.com/i/api/*/jot/
+        ! twitter.com/i/api/1.1/jot/
+    ! it seems, this one should be unblocked:
+    ! api.twitter.com/1.1/guest/activate.json
 syndication.twitter.com  # syndication.twitter.com$third-party,important
 
 ping.ublock.org  # from Peter Lowe's hosts file
