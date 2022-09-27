@@ -1036,6 +1036,7 @@ _banner_rotator.php  # from Adguard
 /ngclipboard/*
 /ngclipboard.min.js$domain=~play-with-docker.com
 /no-right-click.$script  # from EasyList and Fanboy's
+-omniture.js  # from Fanboy's
 /openx/*$important  # is in EasyList
 /openxtag.js$important
 /pagead/*
@@ -2322,6 +2323,7 @@ _chartbeat.js  # from EasyPrivacy
 /event_logger  # from EasyPrivacy
 /event/track?  # from EasyPrivacy
 /event-tracker/*  # bitrix lib
+.event-tracking.js  # from Fanboy's
 /events-metrica-scripts.js
 /facebook_pixel_  # from Adguard
 /fingerprint$important,all
@@ -2349,6 +2351,7 @@ _gatrack.js  # from EasyPrivacy
 /google-tag-manager/*$domain=~stackexchange.com|~superuser.com  # from EasyPrivacy
 .Google.Tracker.js  # from EasyPrivacy
 /gtagservices/*
+_hcode.js  # from Fanboy's
 /heatmap.js$important
 _hightraffic_code.js  # from EasyPrivacy
 .iframetracker/  # from EasyPrivacy
@@ -2398,11 +2401,14 @@ _pagespeed_beacon?  # from AdGuard
 /recordrtc.min.js
 /rendertimingpixel.  # from EasyPrivacy
 /ruxitagentjs_  # from EasyPrivacy
+.s_code.js  # from Fanboy's
+_scode.js  # from Fanboy's
 -scroll-tracker.js  # from EasyPrivacy
 /search-tracking.
 /send_watching/*
 /sensorsdata.  # is in EasyPrivacy
 /setbucket?signature=  # from EasyPrivacy
+_sdc.js  # from Fanboy's
 /shopify-tracker/*
 .sitecatalyst.js  # from EasyPrivacy
 .skimlinks.js  # from EasyPrivacy
@@ -2434,6 +2440,7 @@ _tracker.js.  # from EasyPrivacy
 /transparent-pixel.
 /trigger-visit-event  # from EasyPrivacy
 /umami.js$important
+_urchin.js  # from Fanboy's
 /user-geo-info
 /__utm.js  # is in EasyPrivacy
 /utm-tracking.js$important
@@ -2546,6 +2553,10 @@ _tracker.js.  # from EasyPrivacy
 /vtracker_  # from EasyPrivacy
 /vuukle-analytics.  # from EasyPrivacy
 .webmetrics.js  # from EasyPrivacy
+.Webtrends.js  # from Fanboy's
+_WebTrends.js  # from Fanboy's
+_wtBase.js  # from Fanboy's
+_wtInit.js  # from Fanboy's
 /wherego_tracker.js  # from Adguard
 /wle_tracker.js
 /?wordfence
@@ -2569,6 +2580,7 @@ _tracker.js.  # from EasyPrivacy
 ! from AdGuard Tracking Protection
 ##img[src*="counter.yadro.ru"]
 ##.article__meta__post-views
+##.article-views
 ##.blog-views
 ~yandex.*##.counter
 ~yandex.*##.counters
@@ -2975,6 +2987,8 @@ _tracker.js.  # from EasyPrivacy
 ##.scroll-fix-btn
 ##.scroll-icon
 ###scroll_page
+###scrollTo
+    ! gb.ru###scrollTo
 ##.scroll-to-fixed-fixed
 ##.scroll-top-btn
 ###Scroll_Top_Button
