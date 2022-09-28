@@ -4563,7 +4563,9 @@ tarif-24.ru##.mh-ticker-bottom
 /images/ranks/*$image  # forum ranks images
 /noavatar.jpg  # ugly default avatar
 /noavatar.png  # ugly default avatar
-/no-image.jpg  # libraries
+/no-image.jpg$domain=~splav.ru  # libraries
+    ! Exclusions:
+    ! splav.ru: no-image.jpg dynamically(js) changes to real photo
 /np_l.gif  # libraries
 /np_r.gif  # libraries
 /razdel_in.gif  # libraries
