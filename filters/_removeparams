@@ -261,7 +261,7 @@ $removeparam=from,domain=~yandex.*|~auth.mail.ru|~sberbank.ru
     ||yandex.*/news/$removeparam=from  # from Adguard
     ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
     ||yandex.*/news*?from=main$document,removeparam=|,domain=yandex.*  # from Ru AdList
-    ?from=tabbar$document,removeparam=|from,domain=yandex.*  # from Ru AdList
+    ?from=tabbar$document,removeparam=|from,domain=ya.ru|yandex.*  # from Ru AdList
     ?from=yanews$document,removeparam=|  # from Ru AdList
     from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
     /story/*?lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
@@ -677,6 +677,7 @@ $removeparam=source,domain=~youtube.com  # Exclusion: youtube
     ! hh.ru$removeparam=source
     ! medium.com$removeparam=source  # from NeatURL
     ! sourceforge.net$removeparam=source  # from NeatURL
+    ! teknosa.com$removeparam=source  # from Adguard
     ! tiktok.com$removeparam=source  # from NeatURL
     ! tradingview.com$removeparam=source  # from Adguard
     ! ://yandex.$removeparam=source  # from Adguard
@@ -1372,8 +1373,10 @@ dzen.*,yandex.*$removeparam=via
     ! $document,removeparam=via,domain=dzen.*|yandex.*  # is in Ru AdList
 
 dzen.*,yandex.*$removeparam=integration
+dzen.ru$removeparam=persistent_id  # from Adguard
 dzen.*,yandex.*$removeparam=place
 dzen.*,yandex.*$removeparam=secdata
+dzen.ru$removeparam=stid  # from Adguard
 dzen.*,yandex.*$removeparam=feed_exp
 dzen.*$removeparam=from
     ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck! 
@@ -1827,7 +1830,7 @@ heraldcorp.com$removeparam=pos  # from Adguard
 
 intickets.ru$removeparam=int_enter_url
 
-warnermediacdn.com$removeparam=caid  # from uBlock filters
+warnermediacdn.com$removeparam=caid  # from uBlock filters and Adguard
 
 boltdns.net$removeparam=prof  # from uBlock filters
 
@@ -1942,3 +1945,17 @@ music.apple.com$removeparam=itsct  # from Adguard
 
 ! don't know, but ok
 @@/mediaserver/*$removeparam,domain=ramtrucks.com|chrysler.com|fiatusa.com|alfaromeousa.com|jeep.com|dodge.com  # from Adguard
+
+! jk - job id, don't block
+indeed.com$removeparam=tk  # session id
+indeed.com$removeparam=vjs
+
+bunte.de$removeparam=umt_source  # from Adguard
+
+teknosa.com$removeparam=aid  # from Adguard
+teknosa.com$removeparam=campid  # from Adguard
+teknosa.com$removeparam=cid  # from Adguard
+teknosa.com$removeparam=crid  # from Adguard
+teknosa.com$removeparam=plid  # from Adguard
+teknosa.com$removeparam=sid  # from Adguard
+
