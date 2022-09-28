@@ -626,6 +626,8 @@
 9ban.ru##.add_company
 
 9gag.com##.fixed-wrap-post-bar:style(position:static !important)
+! 9gag.com domain
+||9cache.com/images/thumbnail-facebook/$image
 
 9mm.ru##.confirm_region
 9mm.ru###headerfixed
@@ -4600,7 +4602,7 @@ dbrnd.com##.single-author-upic
 
 ddestiny.ru$3p  # "-2018 game developers"  # from Adguard
 
-ddos-guard.net$3p
+!ddos-guard.net$3p - in general, don't
 
 dd-wrt.com###header-wrap:style(position:static !important)
 dd-wrt.com###header_wrap:style(background-position-y:0px !important)
@@ -9208,15 +9210,19 @@ incapdns.net$3p,script,image  # strange scripts and tracking imgs  # no root  # 
 ! end of incapdns.net
 /_Incapsula_Resource  # their script redirects
 
-indeed.com##.gnav-Logo
-indeed.com##.popover
-indeed.com###jobalertswrapper
-indeed.com##.jobCardShelf
-indeed.com##.footerCta
 ||indeed.com/hp/rpc/frontendlogging
 ||indeed.com/rpc/cnavperf
 ||indeed.com/rpc/dwell/logPerf
 ||indeed.com/m/rpc/frontendlogging
+    ! popups
+indeed.com###jobalertswrapper
+indeed.com##.popover
+indeed.com##.google-Only-Modal
+    ! banners and promos
+indeed.com##.footerCta
+    ! other
+indeed.com##.gnav-Logo
+indeed.com##.jobCardShelf
 
 indiatimes.com$image,redirect-rule=1x1.gif  # from uBlock filters
 
