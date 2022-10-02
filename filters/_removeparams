@@ -182,7 +182,7 @@ $removeparam=clickref
         ! ?clid=$document,removeparam=|clid,domain=yandex.*  # from Ru AdList
         ! ||yandex.ru/?clid=$document,removeparam=|,domain=yandex.*  # from Ru AdList
     $removeparam=dclid  # from Adguard
-    $removeparam=fbclid  # Facebook general parameter  # from NeatURL and Adguard
+    $removeparam=fbclid  # Facebook general parameter  # from NeatURL, Adguard, Ru AdList
         ! fbclid=$document,removeparam=fbclid  # from Ru AdList
         ! $removeparam=fbclid  # from Adguard
         ! ||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
@@ -231,7 +231,6 @@ $removeparam=fb_action_types  # Facebook general parameter  # from NeatURL and A
 $removeparam=fb_comment_id  # from Adguard
 $removeparam=fb_ref  # Facebook general parameter  # from NeatURL and Adguard
 $removeparam=fb_source  # Facebook general parameter  # from NeatURL and Adguard
-$removeparam=fbclid  # from Adguard and Ru AdList
 
 $removeparam=fref  # from Ru AdList
 
@@ -793,6 +792,7 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
     ! $document,removeparam=utm_p,domain=pulse.mail.ru  # from Ru AdList
     ! ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
+    ! iranicard.ir$removeparam=/utm_source|utm_campaign|utm_content/  # from uBlock filters
     ! trendyol.com$removeparam=utm_subaff  # from Adguard
     ! store.udiscovermusic.com$removeparam=/utm_/  # from Adguard
     ! upgrad.com$removeparam=UTM_MEDIUM  # from Adguard
@@ -885,8 +885,6 @@ airbnb.ru$removeparam=|source_impression_id|euid
 alexa.com$removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/
 
 ! See aliexpress rules in aliexpress file
-
-facebook.com$removeparam=extid  # from Adguard
 
 ! Found independently, but cannot be applied in uBlock Origin as in NeatURL
 ! That is not URL parameter, but URL ending
@@ -1014,9 +1012,11 @@ euronews.com$removeparam=_ope  # from Adguard
 
 express.de$removeparam=cb  # from Adguard
 
+facebook.com$removeparam=extid  # from Adguard
 facebook.com$removeparam=hc_ref  # from Ru AdList, modified
     ! facebook.com*/?hc_ref$removeparam=|,domain=facebook.com  # from Ru AdList
 facebook.com$removeparam=hrc  # Facebook  # from NeatURL
+facebook.com$removeparam=mibextid
 facebook.com$removeparam=refsrc  # Facebook  # from NeatURL
 
 finance.ua$removeparam=mpl  # from Ru AdList,modified
@@ -1128,7 +1128,7 @@ infoq.com$removeparam=topicPageSponsorship  # from Adguard: infoq.com$removepara
 ! iqbroker.com - blocked entirely, just for information
 iqbroker.com$removeparam=afftrack  # from Adguard
 
-instagram.com$removeparam=igshid  # from Adguard
+instagram.com$removeparam=igshid  # is in Adguard
 
 kamigame.jp$removeparam=kamigame_source  # from Adguard
 
@@ -1958,4 +1958,15 @@ teknosa.com$removeparam=cid  # from Adguard
 teknosa.com$removeparam=crid  # from Adguard
 teknosa.com$removeparam=plid  # from Adguard
 teknosa.com$removeparam=sid  # from Adguard
+
+! already blocked
+malinazaim.ru$removeparam=webmaster_id
+
+smsc.ru$removeparam  # random ref param names
+
+! already blocked
+campaign-archive.com$removeparam=id
+campaign-archive.com$removeparam=u
+
+amazon.*$removeparam=tag  # reflinks
 
