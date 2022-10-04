@@ -5097,6 +5097,7 @@ dns-shop.ru,technopoint.ru##.dropdown-city
 dns-shop.ru,technopoint.ru##.info-widget_warning.info-widget
 dns-shop.ru,technopoint.ru##.survey-button-widget
 dns-shop.ru,technopoint.ru##.alert.page-notification
+dns-shop.ru##.catalog-desktop-filters__smart-hint
     ! всякая ерунда на странице товара
 dns-shop.ru,technopoint.ru##.gift-bonuses-container
 dns-shop.ru,technopoint.ru##.complaint-container
@@ -9587,6 +9588,7 @@ it-fm.ru##header
 ||itgeared.com/images/website/gearlogo.png
 ||itgeared.com/images/books/$image
 itgeared.com###divBooks
+itgeared.com##.sb-author-widget
 
 it-handbook.ru###scroll-tool.scroll_button
 
@@ -25343,3 +25345,14 @@ gadgets360.com##.vidstkdiv
 pricee.com##.topbar
 
 eldernode.com##.inline-post
+
+newegg.com##.sticky-bottom-right
+! fake notifications
+newegg.com##.newegg-notification:has-text(/^1[^0-9]/)
+
+windowstechno.com$inline-script  # site blocks copypaste
+windowstechno.com##.header-elements
+windowstechno.com##.avatar
+
+||capterra.com/*/b/s|  # from Adguard
+||capterra.com/*/collector  # from Adguard
