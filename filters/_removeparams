@@ -40,6 +40,9 @@ $removeparam=ad_config_id
 
 $removeparam=adfrom  # from Adguard
 
+$removeparam=adid
+    ! &siteid=*&adid=$removeparam  # from Adguard
+
 $removeparam=/^adjust_.*/  # adjust.com campains. Also see adjust ad network
     ! $removeparam=adjust_adgroup  # from Adguard
     ! $removeparam=adjust_campaign  # from Adguard
@@ -114,6 +117,10 @@ $removeparam=/^bsft_.*/
     ! $removeparam=bsft_mid  # from Adguard
     ! $removeparam=bsft_uid  # from Adguard
 
+$removeparam=caid
+    ! warnermediacdn.com$removeparam=caid  # from uBlock filters and Adguard
+    ! yspsvc-na.net$removeparam=caid  # from uBlock filters
+
 $removeparam=/campaign/  # maybe it needs i? Not sure
     ! $removeparam=at_campaign  # Campaign tracking (at)  # from NeatURL
     ! $removeparam=campaign  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
@@ -176,6 +183,7 @@ $removeparam=clickref
         ! zestradar.com$removeparam=adclid  # from Adguard
     $removeparam=afclid  # from Ru AdList
     $removeparam=clid
+        ! adguard.com$removeparam=clid  # from Adguard
         ! ||www.yandex.$removeparam=clid  # from Adguard
         ! ://yandex.$removeparam=clid  # from Adguard
         ! &clid=$document,removeparam=|clid,domain=yandex.*  # from Ru AdList
@@ -512,6 +520,7 @@ $removeparam=/pvid$/
 # recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
 $removeparam=ref
+    ! /?ref=tg$document,removeparam=ref  # from Ru AdList
     ! amazon.*$removeparam=ref  # Found independently. Also is in Adguard
     ! ||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/  # from Adguard
     ! arcelik.com.tr$removeparam=ref  # from Adguard
@@ -662,6 +671,10 @@ $removeparam=/^share_/
 ! Some forum engines will broke.
 
 $removeparam=siteId  # Oracle Eloqua  # from NeatURL
+    ! &siteid=*&adid=$removeparam  # from Adguard
+    ! coursera.org$removeparam=siteID  # from Adguard
+    ! already blocked
+    ! utarget.ru$removeparam  # from Adguard: ||utarget.ru/*/?siteid=$removeparam
 
 $removeparam=soc_src  # Yahoo general parameter  # from NeatURL
 $removeparam=soc_trk  # Yahoo general parameter  # from NeatURL
@@ -714,6 +727,10 @@ $removeparam=srcc$important
     !@@||przegladsportowy.pl/*&srcc=ucs$removeparam  # from Adguard
 
 $removeparam=/^stm_.*/  # Campaign tracking (stm)  # from NeatURL
+
+$removeparam=trackingid
+    ! adobe.com$removeparam=trackingid  # from Adguard
+    ! linkedin.com$removeparam=trackingId  # from NeatURL and Adguard
 
 $removeparam=/^trk.*/
     ! $removeparam=trk  # Campaign tracking (Amazon Kendra)  # also is in NeatURL. Very common parameter.
@@ -983,8 +1000,6 @@ coupang.com$removeparam=wTime  # from Adguard
 ||coupang.com/*/products/$removeparam=q  # from Adguard
 ||coupang.com/*/products/$removeparam=searchId  # from Adguard
 
-coursera.org$removeparam=siteID  # from Adguard
-
 dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
 
 ||discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
@@ -1156,7 +1171,6 @@ linkedin.com$removeparam=lipi  # from NeatURL
 linkedin.com$removeparam=midSig  # from NeatURL
 linkedin.com$removeparam=midToken  # from NeatURL
 linkedin.com$removeparam=recommendedFlavor  # from NeatURL
-linkedin.com$removeparam=trackingId  # from NeatURL and Adguard
 
 ! loginfra.com - blocked entirely, just for information
 loginfra.com$removeparam=a  # from Adguard: ||cc.loginfra.com/cc$removeparam=a
@@ -1830,8 +1844,6 @@ heraldcorp.com$removeparam=pos  # from Adguard
 
 intickets.ru$removeparam=int_enter_url
 
-warnermediacdn.com$removeparam=caid  # from uBlock filters and Adguard
-
 boltdns.net$removeparam=prof  # from uBlock filters
 
 ! already blocked
@@ -1894,9 +1906,6 @@ mydirtyhobby.com$removeparam  # from Adguard: lp.mydirtyhobby.com$removeparam
 
 ! already blocked
 realsrv.com$removeparam  # from Adguard: ||syndication.realsrv.com/splash.php?$removeparam
-
-! already blocked
-utarget.ru$removeparam  # from Adguard: ||utarget.ru/*/?siteid=$removeparam
 
 /?r=dir&zoneid=$removeparam  # from Adguard
 
@@ -1970,3 +1979,9 @@ campaign-archive.com$removeparam=u
 
 amazon.*$removeparam=tag  # reflinks
 
+pingdom.com$removeparam=CMP  # reflinks
+
+site24x7.com$removeparam=ad_src  # reflinks
+
+shopee.ph$removeparam=sp_atk  # from Adguard
+shopee.ph$removeparam=xptdk  # from Adguard
