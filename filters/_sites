@@ -625,7 +625,12 @@
 ||9ban.ru/wp-content/themes/1brus/img/bloquote.png
 9ban.ru##.add_company
 
+    ! top
 9gag.com##.fixed-wrap-post-bar:style(position:static !important)
+9gag.com##.post-container:style(margin-top:0px !important)
+    ! banners and promos
+9gag.com##.campaign-banner
+    ! other
 ! 9gag.com domain
 ||9cache.com/images/thumbnail-facebook/$image
 
@@ -3462,6 +3467,8 @@ bunnylust.com##h2
 bunnylust.com##p
 bunnylust.com##font
 
+bunte.de###header-side-nav
+
 burdastyle.ru$3p  # ad xhrs
 
 burlingtonbathrooms.ru###top-banner-slider
@@ -4071,6 +4078,11 @@ cmsdk.com###hosting-banner
     ! other
 
 cnbc.com##.branding-menu-logo
+cnbc.com##[class^=SelectPopularOffers]
+cnbc.com###hfs-header:style(position:static !important)
+cnbc.com##.SelectHFSNav-container:style(position:static !important)
+cnbc.com##[class^=AffiliateDisclosure]
+cnbc.com##.SidebarArticle-sticky:style(position:static !important)
 
 cnet.com###leaderTopWrap
 cnet.com##.-noscroll.c-trendingBar
@@ -4174,6 +4186,8 @@ comparitech.com##.home-nav
 comparitech.com##.ct_popup_modal
 comparitech.com##b > i:has-text(legal)
 comparitech.com##.sticky_widget:style(position:static !important)
+comparitech.com##.home-tagline
+comparitech.com##.section-featured-in
 
 ||compendium.com/*/database_blog_header.jpg
 
@@ -4732,6 +4746,8 @@ dev.to##.crayons-article-actions:style(position:static !important)
 deviantart.com##[href="https://www.deviantart.com"]
 
 devopsconf.io##.header-features::before
+
+devopscube.com##.navbar-dummy
 
 devopsschool.com##.intro-banner-vdo-play-btn
 
@@ -6036,6 +6052,8 @@ enterinit.com##.more-stories
 epraktika.ru##.b-window-up
 ||epraktika.ru/*/pay.png
 
+epsed.ru###add-history
+
 ! banners
 equip.ru##.inner-page.pic
 equip.ru##.action
@@ -6132,6 +6150,7 @@ euro-diski.ru###name_site
 eurogamer.net##.supporter_promo
 eurogamer.net##.supporter_shelf
 
+europa.eu##.ecl-language-list__logo
 europa.eu##.ema-share-btn-wrapper
 
 ||euroroaming.ru/*/Logo$image
@@ -13820,6 +13839,8 @@ nix.ru###fast_purchase_btn
 nix.ru###online_credit
 nix.ru###front_eye
 
+nixstats.com##a, nav#top, .box, #login input, .box h2:style(color:initial !important)
+
 ! there is an exclusion in EasyList
 nme.com##.td-scroll-up
 ||nme.com/*/logo-
@@ -15180,6 +15201,7 @@ phishlabs.com##.return-top
 phoenixnap.com##.topbutton.ct-link
 ! inline related links
 phoenixnap.com##.ct-div-block:has(>a)
+phoenixnap.com##.ct-shortcode
 
 phonedady.com##.selector-wrapper
 
@@ -18534,6 +18556,12 @@ siropa.net##.div-block
 
 sirv.com$3p,script
 
+site24x7.com##+js(set,zohouser,true)
+! signup checkbox
+site24x7.com#@#.za-newsletter
+site24x7.com##.floating-buttons
+! but the site still does not function properly, even with uBlock turned off.
+
 ! not ad blocks, just stupid webmasters
 site-on-ip.com#@#.ad336
 
@@ -20957,10 +20985,10 @@ travel.ru##.body-offset:style(padding-top:0px !important)
 travel.ru##.b-section-hotels-list
 travel.ru##.b-icon-appstore
 
-stats.travelask.ru
 travelask.ru##.report-bug
 travelask.ru##.footer__bottom-age
 
+travelata.ru##.popoverStack
 travelata.ru##.ui-widget-overlay
 
 travelbird.be##.ia-signup-modal
@@ -21305,6 +21333,9 @@ twincdn.com$3p,script,image  # from uBlock filters
 !||ttvnw.net/v1/segment/$important - don't. It blocks video
 ! from Fanboy's
 player.twitch.tv##.player-overlay
+
+txxx.com##.page-description
+txxx.com##.overlay-modal
 
 tybet.ru##.brand-name
 tybet.ru##.rd-navbar-panel
@@ -23586,6 +23617,9 @@ xn--90aennii1b.xn--p1ai##.header
 ! москва.слободской-лес.рф
 xn--80adxhks.xn----9sbjfsfefvbc3afg.xn--p1ai##.top-header:style(position:static !important)
 xn--80adxhks.xn----9sbjfsfefvbc3afg.xn--p1ai##.bottom-header:style(margin-top:0 !important)
+
+! inline related
+xn--b1ahgrjafjgng.xn--p1ai##.middle-articles
 
 xn----btbkal1aiuh2a0h.xn--p1ai###wb_header > .wb_cont_inner > .wb_element_picture
 xn----btbkal1aiuh2a0h.xn--p1ai###wb_sbg_placeholder
