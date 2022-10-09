@@ -1425,7 +1425,9 @@ _rebid.js  # from EasyList
     ##div[id^="adrotate_widgets-"]
     ! is in EasyList
     ##.adrotate_widgets
-~obi.ru,~yandex.*##[class^="ads"]:not(html):not(body):not(article):not(#issue)
+~24ru.com,~obi.ru,~yandex.*##[class^="ads"]:not(html):not(body):not(article):not(#issue)
+    ! Exclusions:
+    ! 24ru.com - adv board (buy/sell etc.)
 ~e-du.ru,~yandex.*##[id^="ads"]:not(html):not(body):not(article)
     ! from Ru AdList: ##div[id^="ads_games_"]
     ! is in EasyList: ##.ads-fr
@@ -1439,7 +1441,9 @@ _rebid.js  # from EasyList
 ~libreelec.tv,~obi.ru,~yandex.*##[class*="-ads-"]:not(html):not(body):not(article)
 ~yandex.*##[id*="-ads-"]:not(html):not(body):not(article)
 ~yandex.*##[class*="_ads_"]:not(html):not(body):not(article)
-~yandex.*##[id*="_ads_"]:not(html):not(body):not(article)
+~24ru.com,~yandex.*##[id*="_ads_"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! 24ru.com - adv board (buy/sell etc.)
 ~yandex.*##[class$="_ads"]:not(html):not(body):not(article)
 ~adblockplus.org,~yandex.*##[id$="_ads"]:not(html):not(body):not(article)
 ##[class*="Advert"]:not(html):not(body):not(article)
@@ -1573,8 +1577,10 @@ _rebid.js  # from EasyList
 ! is in EasyList
 ##.ad-top
 ###adultCoverWarning
-! is in Ru AdList: ~mail.ru,ru,~sportmail.ru,ua##.adv
-##.adv
+~24ru.com##.adv
+    ! is in Ru AdList: ~mail.ru,ru,~sportmail.ru,ua##.adv
+    ! Exclusions:
+    ! 24ru.com - adv board (buy/sell etc.)
 ! is in EasyList
 ##.adv300x250
 ##.advantages
@@ -2701,6 +2707,7 @@ _wtInit.js  # from Fanboy's
 ##[class*="scroll-top"]:not(html):not(body)
 ##[id*="scroll-top"]:not(html):not(body):not(.row)
 ##[class*="scroll_top"]:not(html):not(body):not(article):not(header):not(.mfixed_view_scroll_top)
+    ! former exlusion sites (later made addition - :not(.mfixed_view_scroll_top)):
     ! 1hunting.ru: wrapper1  front_page basket_normal basket_fill_DARK side_LEFT catalog_icons_N banner_auto with_fast_view mheader-v2 header-v11 regions_N fill_Y footer-v4 front-vindex1 mfixed_Y mfixed_view_scroll_top title-v1 with_phones with_lazy
     ! karabin69.ru: wrapper1  header_bgcolored long_header colored_header with_left_block  basket_fly fly2 basket_fill_WHITE side_LEFT block_side_NORMAL catalog_icons_N banner_auto with_fast_view mheader-v1 header-v1 header-font-lower_N regions_Y title_position_LEFT fill_ footer-vcustom front-vindex1 mfixed_Y mfixed_view_scroll_top title-v3 lazy_Y with_phones compact-catalog dark-hover-overlay normal-catalog-img landing-normal big-banners-mobile-slider bottom-icons-panel-Y compact-breadcrumbs-N catalog-delayed-btn-Y
     ! larsenal.ru: wrapper1 with_left_block front_page basket_normal basket_fill_DARK side_LEFT catalog_icons_Y banner_auto  mheader-v1 header-v3 regions_N fill_N footer-v2 front-vindex3 mfixed_Y mfixed_view_scroll_top title-v1 with_phones
@@ -3037,6 +3044,8 @@ _wtInit.js  # from Fanboy's
 ##.top-link
 ##.top-scroll
 ##.toptop
+###topup
+##.topup
 ###to-top
 ##.to-top
     ! general rule doesn't work
