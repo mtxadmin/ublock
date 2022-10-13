@@ -207,6 +207,7 @@ $removeparam=clickref
 $removeparam=cmpid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL and Adguard
 
 $removeparam=cpa,important
+    ! market.yandex.*$removeparam=cpa
 
 $removeparam=/^dpg_.*/  # Campaign tracking (DPG Media)  # used on Dutch sites  # from NeatURL
     ! $removeparam=dpg_campaign  # from Adguard
@@ -1433,8 +1434,9 @@ dzen.*,yandex.*$removeparam=country_code
     ! Update: now dzen.ru and yandex.*
         ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
 
-market.yandex.*$removeparam=cpc  # from Ru AdList, modified
+market.yandex.*$removeparam=cpc  # is in Ru AdList, modified
     ! ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+market.yandex.$removeparam=do-waremd5
 ||yandex.*/story/$removeparam=lang  # from Ru AdList, modified
     ! unusual Ru AdList form:
     /story/*?lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
@@ -1448,7 +1450,7 @@ yandex.*$removeparam=msid
     ! ||yandex.*/news*msid$document,removeparam=|,domain=yandex.*  # from Ru AdList
     ! ||yandex.*/search/$document,removeparam=msid,domain=yandex.*  # from Ru AdList
     ! ||yandex.*/sport/$removeparam=msid  # from Adguard
-market.yandex.*$removeparam=nid  # from Ru AdList, modified
+market.yandex.*$removeparam=nid  # is in Ru AdList, modified
     ! ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 yandex.ru$removeparam=parent-reqid
 yandex.*$removeparam=persistent_id  # from Adguard, modified
@@ -1456,11 +1458,13 @@ yandex.*$removeparam=persistent_id  # from Adguard, modified
     ! ||yandex.*/sport/$removeparam=persistent_id  # from Adguard
 market.yandex.*$removeparam=pokupki  # from Ru AdList, modified
     ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+market.yandex.*$removeparam=sku
 yandex.*$removeparam=stid  # from Adguard, modified
     ! ||yandex.*/news/$removeparam=stid  # from Adguard
     ! ||yandex.*/sport/$removeparam=stid  # from Adguard
 yandex.*$removeparam=source-serpid  # from Adguard
     ! ||yandex.*/images/$removeparam=source-serpid  # from Adguard
+#market.yandex.*$removeparam=|text - don't, blocks search on market
 
 ykt.ru$removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/  # from Ru AdList, modified
     ! ykt.ru$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru  # from Ru AdList
