@@ -1448,7 +1448,10 @@ _rebid.js  # from EasyList
 ~adblockplus.org,~yandex.*##[id$="_ads"]:not(html):not(body):not(article)
 ##[class*="Advert"]:not(html):not(body):not(article)
 ##[id*="Advert"]:not(html):not(body):not(article)
-~e.mail.ru,~radikal.ru,~yandex.*##[class*="advert"]:not(html):not(body):not(article)
+~e.mail.ru,~prace.cz,~radikal.ru,~yandex.*##[class*="advert"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! prace.cz: .search-result__advert
+    !
     ! is in EasyList
     ##.advert-block
     ! is in EasyList
