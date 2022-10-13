@@ -9873,6 +9873,28 @@ joaoapps.com##.czr-btta.czr-btt.btn
 
 ||job.ws/_bann/  # from Adguard
 
+    ! top
+jobs.cz##.header-block
+jobs.cz##.company-profile__cover
+jobs.cz##.company-profile__logo
+jobs.cz##.neutral.header
+jobs.cz###Top_bar:style(position:static !important)
+jobs.cz##.m-detail:style(top:0px !important)
+jobs.cz##.home
+||jobs.cz/assets/components/hero/images/$image
+||jobs.cz/assets/components-react/hero/images/$image
+    ! popups
+jobs.cz##.low-replied-jd
+jobs.cz##.tippy-popper
+    ! banners and promos
+||jobs.cz/assets/components/vacancy-banner/$image
+jobs.cz##.vacancy-banner
+||jobs.cz/wp-content/themes/default/images/position-detail/$image
+jobs.cz##.hero--banner-2
+    ! other
+jobs.cz##.apply-fixed
+||jobs.cz/assets/components/hero/images/neutral.jpg
+
 jobsora.com##.logo-sm
 
 jobs-sg.com##.badge_area
@@ -11370,9 +11392,12 @@ licdn.com$domain=~linkedin.com  # linkedin scripts on third sites  # 3p ad scrip
 ||licdn.com/li.lms-analytics/  # linkedin tracker, from AdGuard Tracking Protection. Seen far not only linkedin
 ||linkedin.com/sensorcollect/  # is in EasyPrivacy
 ||linkedin.com/*/api/ingraphs/  # ad pings
+||linkedin.com/voyager/api/voyagerLegoDashWidgetImpressionEvents
+||linkedin.com/voyager/api/voyagerPremiumDashAnalyticsView
     ! header
 linkedin.com##.org-sticky-top-card:style(position:static !important)
 linkedin.com##.authentication-outlet:style(padding-top:0px !important)
+linkedin.com##.pv1.pv-profile-sticky-header-v2__container
     ! li logos
 linkedin.com##.global-nav__logo
 linkedin.com##.loader__linkedin-logo
@@ -11395,6 +11420,7 @@ linkedin.com##.jss-upsell
 linkedin.com##.nt-card:has-text(Premium)
     ! other
 linkedin.com##.sign-in-card
+linkedin.com##.scaffold-layout-toolbar
 
 linksys.com##.lia-quilt-row-footer
 
@@ -16376,6 +16402,8 @@ quizlet.com##.SetPage-adzWrapper
 quora.com##.logo_fill
 quora.com##[class*=position__Fixed]:style(position:static !important)
 quora.com##.q-sticky:style(position:static ! important)
+quora.com##.q-fixed:style(position:static !important)
+quora.com##.q-box:has-text(/^$/):matches-css(height:50px)
     ! paywall
 quora.com##.content-monetization-wall
     ! other
@@ -22045,7 +22073,14 @@ vedomosti.ru##.the-sidebar
 vedomosti.ru##.article__sidebar
 vedomosti.ru##.popup-register
 
+||img.veeam.com/careers/global/employees/$image
+    ! top
 veeam.com##.header-component__spacer--sticky
+veeam.com##.container-spacer-lg:style(padding-top:0px !important)
+veeam.com##.container-main:style(margin-top:0px !important)
+    ! banners and promos
+veeam.com##.card-banner
+    ! other
 
 vegalab.ru###notices
 vegalab.ru###navbar:style(position:static !important)
@@ -25446,3 +25481,14 @@ pricee.com##.topbar
 
 eldernode.com##.inline-post
 
+praga-praha.ru###fixplace:style(position:static !important)
+
+rabotaeu.net##h1
+rabotaeu.net##.logo-lnk
+
+emigras.ru###timing.popup
+||emigras.ru/wp-content/uploads/rabota-v-$image
+emigras.ru##.home_form
+emigras.ru##.openForm
+
+mindmajix.com##.MuiFab-root
