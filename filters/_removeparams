@@ -398,7 +398,7 @@ $removeparam=media
 $removeparam=mindbox-message-key  # from Adguard
 
 $removeparam=/^mkt_tok.*/
-    ! $removeparam=mkt_tok  # Campaign tracking (Adobe Marketo)  # from NeatURL
+    ! $removeparam=mkt_tok  # Campaign tracking (Adobe Marketo)  # from NeatURL and Adguard
     ! digikey.com^$removeparam=/^mkt_tok/  # from Adguard
         ! Lately: $domain=atlanticcouncil.org|digikey.com,removeparam=/^mkt_tok/  # from Adguard
 
@@ -621,6 +621,7 @@ $removeparam=scm
     !aliexpress.ru$removeparam=|scm
     ! 2022-02: Also from Adguard:
     !aliyun.com$removeparam=scm  # from Adguard
+    !lazada.com.ph$removeparam=scm  # from Adguard
     !taobao.com$removeparam=scm  # from Adguard
     !||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard
     !v.youku.com$removeparam=scm  # from Adguard
@@ -640,6 +641,7 @@ $removeparam=spm
     ! Also from Adguard:
     !$removeparam=spm,domain=aliyun.com|sohu.com  # from Adguard
     !||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard
+    !lazada.com.ph$removeparam=spm  # from Adguard
     ! unusual Ru AdList forms:
         ! .html?spm=$document,removeparam=spm,domain=aliexpress.*  # from Ru AdList
         ! .ru/?spm=$document,removeparam=spm,domain=aliexpress.*  # from Ru AdList
@@ -1006,6 +1008,8 @@ dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
     ! ||api.discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/,domain=hgtv.com  # from Adguard
     ! ||api.discovery.com/v1/streaming/video/*&adNetworkId=$xhr,removeparam=/^ad/,domain=ahctv.com|animalplanet.com|cookingchanneltv.com|destinationamerica.com|discovery.com|discoverylife.com|diynetwork.com|foodnetwork.com|hgtv.com|investigationdiscovery.com|motortrend.com|sciencechannel.com|tlc.com|travelchannel.com  # from uBlock filters
 
+dogfartnetwork.com$removeparam=nats  # from Adguard
+
 ! doubleclick.net - blocked entirely, just for information. But.
 doubleclick.net$removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|[abdeg-or-x])/  # from uBlock filters
 doubleclick.net$removeparam=/^dc_trk_/  # from Adguard
@@ -1145,6 +1149,10 @@ iqbroker.com$removeparam=afftrack  # from Adguard
 
 instagram.com$removeparam=igshid  # is in Adguard
 
+jobs.cz$removeparam=recommended
+jobs.cz$removeparam=rps
+jobs.cz$removeparam=searchId
+
 kamigame.jp$removeparam=kamigame_source  # from Adguard
 
 ||kaspersky.$removeparam=icid  # from Adguard
@@ -1162,15 +1170,20 @@ kp.ru$removeparam=location
 
 ksta.de$removeparam=cb  # from Adguard
 
+lazada.com.ph$removeparam=acm  # from Adguard
+lazada.com.ph$removeparam=clickTrackInfo  # from Adguard
+
 lidl.de$removeparam=msktc  # from Adguard
 
 linkedin.com$removeparam=eBP  # from NeatURL
 linkedin.com$removeparam=lgCta  # from NeatURL
 linkedin.com$removeparam=lgTemp  # from NeatURL
+linkedin.com$removeparam=lici
 linkedin.com$removeparam=lipi  # from NeatURL
 linkedin.com$removeparam=midSig  # from NeatURL
 linkedin.com$removeparam=midToken  # from NeatURL
 linkedin.com$removeparam=recommendedFlavor  # from NeatURL
+linkedin.com$removeparam=trackingCode
 
 ! loginfra.com - blocked entirely, just for information
 loginfra.com$removeparam=a  # from Adguard: ||cc.loginfra.com/cc$removeparam=a
@@ -1216,6 +1229,10 @@ microsoft.com$removeparam=ranSiteID  # from Adguard
 microsoft.com$removeparam=tduid  # from Adguard
 $removeparam=epi,domain=microsoft.com|xbox.com  # from Adguard
 
+monster.com.sg$removeparam=application_source
+monster.com.sg$removeparam=spl
+monster.com.sg$removeparam=WT.mc_n
+
 ! only works when extensions.webextensions.restrictedDomains is edited in about:config
 ! test URL: https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct
 # from NeatURL
@@ -1256,6 +1273,10 @@ ozon.ru$removeparam=_bctx
 ozon.ru$removeparam=miniapp
 ozon.ru$removeparam=sh
 
+politica.com.ua$removeparam=isUser  # from Adguard
+
+quora.com$removeparam=srid
+
 rabota.ru$removeparam=search_id
 
 ! rakuten - blocked entirely, just for information. But.
@@ -1271,6 +1292,8 @@ rambler.ru$removeparam=readmore  # from Ru AdList, modified
 reddit.com$removeparam=correlation_id  # from Adguard
 reddit.com$removeparam=post_fullname  # from Adguard
 
+redgifs.com$removeparam=for  # from Adguard:||thumbs4.redgifs.com/*&for=$removeparam=for
+
 ria.com$removeparam=commercial  # from Ru AdList, modified
     ! ?commercial=$document,removeparam=|,domain=ria.com  # from Ru AdList
 ria.com$removeparam=r_audience  # from Ru AdList, modified
@@ -1284,12 +1307,17 @@ rutor.in$removeparam=sid  # from Ru AdList, modified
     ! unusual Ru AdList form:
     ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
 
+rutube.ru$removeparam=advertiser_id
+
 satom.ru$removeparam=i
 
 #sevenforums.com$removeparam=__cf_chl_jschl_tk__  # don`t, it seems, it is "DDoS protection by Cloudflare" param
 
 ! sextgem.com - blocked entirely, just for information
 !sextgem.com$removeparam=id  # from uBlock filters
+
+shopee.ph$removeparam=sp_atk  # from Adguard
+shopee.ph$removeparam=xptdk  # from Adguard
 
 sourceforge.net$removeparam=position  # from NeatURL
 
@@ -1329,6 +1357,8 @@ tiktok.com$removeparam=sec_uid  # from Adguard
 tiktok.com$removeparam=web_id  # from Adguard
 
 tinkoff.ru$removeparam=mindbox-click-id  # from Adguard
+
+totaljobs.com$removeparam=WT.mc_id
 
 ! already blocked
 ! u is url, don't block
@@ -1983,5 +2013,3 @@ pingdom.com$removeparam=CMP  # reflinks
 
 site24x7.com$removeparam=ad_src  # reflinks
 
-shopee.ph$removeparam=sp_atk  # from Adguard
-shopee.ph$removeparam=xptdk  # from Adguard
