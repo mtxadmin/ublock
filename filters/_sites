@@ -11394,6 +11394,8 @@ licdn.com$domain=~linkedin.com  # linkedin scripts on third sites  # 3p ad scrip
 ||linkedin.com/*/api/ingraphs/  # ad pings
 ||linkedin.com/voyager/api/voyagerLegoDashWidgetImpressionEvents
 ||linkedin.com/voyager/api/voyagerPremiumDashAnalyticsView
+    ! popups
+linkedin.com##.artdeco-toasts_toasts
     ! header
 linkedin.com##.org-sticky-top-card:style(position:static !important)
 linkedin.com##.authentication-outlet:style(padding-top:0px !important)
@@ -14952,6 +14954,9 @@ ozon.ru##div[data-widget="webPremiumPointsInfo"]
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 ozon.ru##div[data-widget=webInstallmentPurchase]
     ! other
+ozon.ru##.vacancy__actions:style(position:static !important)
+ozon.ru##.vacancy__benefits
+ozon.ru##h3
 
     ! banners and promos
 ||ozone.ru/_nuxt/cms-all-banner*
