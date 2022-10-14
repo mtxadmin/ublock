@@ -931,6 +931,7 @@ ahasayen.com##.header.post-thumbnail
 ||ah-me.com/movie-counter/
 ah-me.com##.controls
 ah-me.com###fullBannerContent
+ah-me.com###cookies
 
 ||aif.ru/iframes/$third-party  # from Adguard
 aif.ru##.show.fixed_menu
@@ -6174,6 +6175,10 @@ euro-diski.ru###name_site
 eurogamer.net##.supporter_promo
 eurogamer.net##.supporter_shelf
 
+    ! popups
+europa.eu##.modal-dialog:has-text(without registering)
+europa.eu##.modal:has-text(without registering)
+    ! other
 europa.eu##.ecl-language-list__logo
 europa.eu##.ema-share-btn-wrapper
 
@@ -6301,6 +6306,16 @@ exler.ru##.header-top
 exler.ru##.custom-section-border.custom-section
 exler.ru##.hosting__info-block
 exler.me##.hosting__info
+
+    ! top
+expats.cz##.expats-menu-strip:style(position:static !important)
+expats.cz##.expats-filler
+expats.cz##header:style(border-bottom:none !important)
+    ! banners and promos
+expats.cz##.clients.container
+expats.cz##.premium-profiles-widget
+    ! other
+expats.cz##.submit:style(position:static !important; bottom:0px !important)
 
 expert.ru##.content-share-buttons
 
@@ -15927,6 +15942,12 @@ pppkazan.com##body.modal-open:style(filter:none !important)
 ||pppkazan.com/*/ru_badge_web_generic.png
 ! other
 
+    ! banners and promos
+prace.cz###signUpBar
+prace.cz###signUpWrapper
+prace.cz##.jdTooltip
+    ! other
+
 practical365.com##.blog-detail-sticky
 
 prajwaldesai.com##.bs-pinning-block:style(position:static !important)
@@ -16085,6 +16106,12 @@ proekt-sam.ru##.strtoleft
 proekt-sam.ru###vk_groups
 
 proekty.ru##header
+
+    ! popups
+profesia.cz##.popoffer-box
+    ! other
+!inline subscribe
+profesia.cz##.native-agent
 
 profi.ru##.wizard-landing-conversion_fixed:style(position:fixed !important)
 
@@ -25502,3 +25529,21 @@ mindmajix.com##.MuiFab-root
 ||redfin.com/rift?  # from EasyPrivacy
 
 ||rantapallo.fi/s/redirect/tracking?  # from EasyPrivacy
+
+chistayrabota.ru###site-desc
+
+tkaner.com##.tgtg
+tkaner.com##.tnl_link
+
+iamondemand.com##.elementor-background-overlay
+iamondemand.com##.author-wrapper
+iamondemand.com##.elementor-heading-title
+
+megatube.xxx##.hidden-xs
+
+uradprace.cz##+js(set, CookieConsent, noopFunc)
+
+dobraprace.cz##.jobOffer__box-jobs-odber
+
+!popup - ||hledampraci.cz/toppozice.php
+hledampraci.cz$popup
