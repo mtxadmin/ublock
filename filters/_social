@@ -985,7 +985,9 @@ wf.mail.ru###header
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-~linkedin.com##[class*="linkedin"]:not(html):not(body):not(article)
+~expats.cz,~linkedin.com##[class*="linkedin"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! expats.cz - job service
 ~europa.eu,~linkedin.com##[id*="linkedin"]:not(html):not(body):not(article)
     ! europa.eu: CV service
 ! is in Adguard
