@@ -167,7 +167,9 @@
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-~eapteka.ru##[class*="callback"]:not(html):not(body):not(article)
+~eapteka.ru,~expats.cz##[class*="callback"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! expats.cz: Job apply form - .default-form has-validation-callback
 ##[id*="callback"]:not(html):not(body):not(article)
 ! good rules in general, but messengers and webinar services must be excluded
 ~aliexpress.com,~bizon365.ru,~dhgate.com,~fincult.info,~worknf.ru##[class*="Chat"]:not(html):not(body):not(article):not(section)
