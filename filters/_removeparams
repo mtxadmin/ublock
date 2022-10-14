@@ -907,8 +907,7 @@ alexa.com$removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest
 ! See aliexpress rules in aliexpress file
 
 ! Found independently, but cannot be applied in uBlock Origin as in NeatURL
-! That is not URL parameter, but URL ending
-#  $/ref@amazon.*
+! That is not URL parameter, but URL ending: $/ref@amazon.*
 ! Note: in NeatURL amazon.com is amazon.* . It should work, but need to test 
 ! 2022: ref parameter (?ref=)is recommended to exclude by Adguard
 amazon.*$removeparam=ascsubtag  # is in NeatURL and Adguard
@@ -933,7 +932,7 @@ amazon.*$removeparam=rdc  # from Adguard
 amazon.*$removeparam=refRID  # from Adguard
 amazon.*$removeparam=smid  # from Adguard
 amazon.*$removeparam=sr  # Found independently
-amazon.*$removeparam=tag  # is in NeatURL and Adguard
+amazon.*$removeparam=tag  # is in NeatURL and Adguard  # reflinks
     ! ||amazon.*/dp/$removeparam=tag  # also from Adguard
 amazon.*$removeparam=th  # Found independently
 amazon.*$removeparam=ts_id  # from Adguard
@@ -1274,7 +1273,12 @@ ozon.ru$removeparam=_bctx
 ozon.ru$removeparam=miniapp
 ozon.ru$removeparam=sh
 
+pingdom.com$removeparam=CMP  # reflinks
+
 politica.com.ua$removeparam=isUser  # from Adguard
+
+prace.cz$removeparam=rps
+prace.cz$removeparam=searchId
 
 quora.com$removeparam=srid
 
@@ -1319,6 +1323,8 @@ satom.ru$removeparam=i
 
 shopee.ph$removeparam=sp_atk  # from Adguard
 shopee.ph$removeparam=xptdk  # from Adguard
+
+site24x7.com$removeparam=ad_src  # reflinks
 
 sourceforge.net$removeparam=position  # from NeatURL
 
@@ -2011,9 +2017,5 @@ smsc.ru$removeparam  # random ref param names
 campaign-archive.com$removeparam=id
 campaign-archive.com$removeparam=u
 
-amazon.*$removeparam=tag  # reflinks
-
-pingdom.com$removeparam=CMP  # reflinks
-
-site24x7.com$removeparam=ad_src  # reflinks
-
+hclips.com$removeparam=fr
+hclips.com$removeparam=rp
