@@ -1041,7 +1041,6 @@ a1991.dscr.akamai.net$script  # page blocking scripts
 ak-info.ru###header
 ak-info.ru###tabarea
 
-coads.akipress.org  # from Ru AdList
 ||akipress.org/akipress_logo2.png
 ||akipress.org/img/plogo_$image
 akipress.org##.crosstop:style(position:static !important)
@@ -1465,6 +1464,13 @@ animalreader.ru##.td-header-top-menu
 
 annamama.ru##.bottom.x-colophon
 
+    ! popups
+annonce.cz##.overlay
+annonce.cz###lightbox:has(.watchdog-exit)
+    ! sticky
+annonce.cz###watchdog-box
+    ! other
+
 anothercoffee.net##.topnav-fixed-header-text
 
 ||ansible.com/api/internal/events/
@@ -1781,7 +1787,6 @@ artlebedev.ru##.als-header-wrap:style(position:static !important)
 artlebedev.ru##.als-header-2019-padding
 ! other
 artlebedev.ru###als-expressform-open.als-expressform-open
-metricus.artlebedev.ru
 
 ||asau.ru/images/banerpriem
 asau.ru##.imenu:style(position:static !important)
@@ -2246,25 +2251,25 @@ avtovzglyad.ru##.ring
 
 avtozakony.ru##.article-nav
 
-! site breaks copypaste
+    ! site breaks copypaste
 awaqa.com##^script:has-text(onselect)
 awaqa.com##^style:has-text(unselectable)
-! and also disables right click
+    ! and also disables right click
 awaqa.com##^script:has-text(wpcp)
 awaqa.com##^script:has-text(oncontextmenu)
-! ad ref links
+    ! ad ref links
 awaqa.com##.egg-list
 awaqa.com##.affcoups
-! other
+    ! other
 awaqa.com##.newsup_posts_slider_widget
 awaqa.com##.mg-head-detail
 awaqa.com##.mg-nav-widget-area-back
 awaqa.com##.newsup-tags
 
-! banners and promos
+    ! banners and promos
 forum.awd.ru##.rules
 forum.awd.ru###navbar
-! other
+    ! other
 awd.ru##.page404
 ||forum.awd.ru/images/avatars/$image
 
@@ -4724,7 +4729,6 @@ delikateska.ru##.product-label
 delimobil.ru##.page
 delimobil.ru##.triangle
 
-boomerang.dell.com  # is in EasyPrivacy
 dell.com###contactslidertitle
 dell.com###okbFeedback
 dell.com##.lia-button-image-kudos-not-kudoed
@@ -5162,6 +5166,8 @@ dns-shop.ru,technopoint.ru##.on-air
 dns-shop.ru##.product-buy__sub
 dns-shop.ru##.catalog-product__zoom
 ||dns-shop.ru/*/empty-result.png
+
+dobraprace.cz##.jobOffer__box-jobs-odber
 
 dobrodel.ru,dobrodel.mosreg.ru##.riamo-news
 dobrodel.ru,dobrodel.mosreg.ru##.footer-portals
@@ -5714,9 +5720,6 @@ ebay.com###app-product-sticky-header
 ||gha.ebay.com/nproxy/notification/v1/bullseye?callback
 ||ebay.com/gh/dfpsvc
 ||ebay.com/gh/useracquisition
-! is in EasyList
-epnt.ebay.com$important
-    !epnt.ebay.com/static/epn-smart-tools.js
 
 ecco-shoes.ru##noindex
 ecco-shoes.ru##.position-icons-pay
@@ -6328,13 +6331,13 @@ expertbani.ru##.author_rank
 expertology.ru$inline-script  # site blocks copypaste
 expertology.ru$script  # site blocks copypaste
 
-! top
+    ! top
 expertreviews.co.uk###header-group:style(position:static !important)
 ||expertreviews.co.uk/*/expert-reviews-logo.svg
-! inline ads
+    ! inline ads
 expertreviews.co.uk##[href^="/vouchercodes/"]
 expertreviews.co.uk##p > strong
-! other
+    ! other
 
 experts-exchange.com##.exitOverlay.featherlight
 experts-exchange.com###bottomBarSignup
@@ -6401,7 +6404,6 @@ extremetube.com###onpagetext
 
 eyeo.com###site-header
 
-||top100.ezar.ru  # from Adguard
 ||ezar.ru/wp-content/uploads/2017/03/Webinar-300x250.jpeg
 
 ! there is an exclusion in EasyList. Ok.
@@ -6431,6 +6433,17 @@ facenews.ua##.gnews
 forum.fairphone.com##.extra-info-wrapper
 forum.fairphone.com##.d-header:style(position:static !important)
 forum.fairphone.com###main-outlet:style(padding-top:0px !important)
+
+    ! top
+fajn-brigady.cz##.header-heading
+fajn-brigady.cz##.job-search
+    ! popups
+fajn-brigady.cz##.modal:has-text(na email)
+fajn-brigady.cz##.jak-najit-brigadu-side-image
+    ! banners and promos
+||fajnsprava.cz/reklamni_bannery/
+fajn-brigady.cz##.featured-posts
+    ! other
 
 fakty.ua##.shapka_fix:style(position:static !important)
 fakty.ua##.weather_widget
@@ -6525,13 +6538,13 @@ farfor.ru##.b-bigSlider
 
 fastcompany.com##.post__readTime
 
-! popups
+    ! popups
 fastestvpn.com##.modal
-! banners
+    ! banners
 fastestvpn.com##.blog-baba
 fastestvpn.com##.fastest-hd-btn
 fastestvpn.com##.text-capitalize
-! other
+    ! other
 fastestvpn.com##.list-group
 
 confiant-integrations.global.ssl.fastly.net  # is in EasyPrivacy
@@ -6840,12 +6853,14 @@ fixya.com##[href^="https://www.6ya.com/"]
 fixya.com##.reports-module
 fixya.com##.action
 
+! inline
+flagma.cz##.mainpage-post
+
 ||flammlin.com/*/cropped-Background.jpg
 
 ! stick moving sidebar
 flemmingriis.com##.no-mar:style(margin-top:0px !important)
 
-share.flipboard.com  # is in Fanboy's
 ||flipboard.com/web/buttons/$third-party
 ! is in Adguard
 ##a[href^="https://share.flipboard.com/bookmarklet/"]
@@ -7130,7 +7145,6 @@ fxstreet.com##.fxs_positionFixed:style(position:static !important)
 
 ! g2.com
 g2crowd.com$domain=~g2.com|~g2crowd.com
-tracking.g2crowd.com
 ||g2.com/activity/events
 
 gadgetsnow.com##.logo_strip
@@ -7513,14 +7527,6 @@ docs.github.com##.toggle-images
 ! from NoCoin Filter List  ! https://forums.lanik.us/viewtopic.php?f=91&t=42871
 ||github.io^$third-party,xmlhttprequest,websocket,domain=~docuss.org|~facebook.com|~gametactic.org|~github.com|~github.io|~tumblr.com|~wottactic.com
 !
-! different marketing projects on Github
-! ad scripts
-! falls to general Ru AdList filter. Seen on a videos site, videos are working
-actlz.github.io  #https://actlz.github.io/actualize.js
-partnercoll.github.io$important  # ad scripts  # is in Ru AdList and uBlock filters
-weblion777.github.io$important  # ad scripts  # is in Ru AdList and uBlock filters
-wp-r.github.io$important  # ad scripts  # is in AdGuard
-collector.githubapp.com  # is in MVPS HOSTS, AdGuard, EasyPrivacy
 ||buttons.github.io/buttons.js$3p  # is in Fanboy's
 
 github.community##.d-header-wrap:style(position:static !important)
@@ -8136,7 +8142,6 @@ habr.com##.tm-social-icons__icon
 habr.com##.tm-notice:has-text(Только полноправные пользователи могут оставлять комментарии)
 habr.com##.post__text > blockquote:has-text(Минутка заботы от НЛО)
 habr.com###effect-sidebar
-u.tmtm.ru  # habr reflinks
 habr.com##.content-list__item:has(a[href^="https://u.habr.com/"])
 habr.com###widget
 habr.com###companies_rating
@@ -8558,6 +8563,9 @@ hkrtrainings.com##.enroll-form
 hkrtrainings.com##.author
 
 ||hktvmall.com/yuicombo|$script,1p  # from uBlock filters
+
+!popup - ||hledampraci.cz/toppozice.php
+hledampraci.cz$popup
 
 hobbyits.com##.vw-site-logo-wrapper
 hobbyits.com##.vw-widget-feedburner-container
@@ -9014,6 +9022,10 @@ i.ua##+js(abort-current-inline-script, decodeURIComponent, getAdBlockStatus)
 ! Ru AdList rule
 i.ua##+js(abort-current-inline-script, String.fromCharCode, /Function\('return/)
 
+iamondemand.com##.elementor-background-overlay
+iamondemand.com##.author-wrapper
+iamondemand.com##.elementor-heading-title
+
 ||ibathroom.ru/wp-content/uploads/2016/12/HelpProject2.jpg
 
 ibm.com##.cm-pill
@@ -9255,11 +9267,9 @@ imyfone.com##.base-floatcontactus
 in.gr###tickerEl
 in.gr###logo-row
 
-info.inamo.ru  # from Adguard
 ||inamo.ru/*/clareblogbanner.jpg
 inamo.ru##.header-main
 
-b.inbox.lv  # from Ru AdList
 inbox.lv##.branding
 
 ! top
@@ -9322,10 +9332,6 @@ infoplease.com##.addBlockerPopUp
 @@||informer.com^$generichide,badfilter
 informer.com$third-party,important
 website.informer.com###wi-plugin-corner
-
-infox.ru$important,3p
-infox.sg$important,3p
-stats.infox.sg
 
 infozuby.ru##.logotext
 
@@ -9725,6 +9731,15 @@ itslet.su##.one-page-
 
 itslet.su##.money_amount
 
+    ! banners and promos
+ittalents.cz###carousel-testi
+    ! bottom
+||ittalents.cz/noRW_layout/o/bottom_man.png
+ittalents.cz###bottom_man
+||ittalents.cz/noRW_layout/o/bottom_street.png
+ittalents.cz###bottom_street
+    ! other
+
 it-tehnik.ru##.posts-view-carousel
 ! it-tehnik.ru$script:contains(requestNotificationPermission) - doesn't (and shouldn't) work.
 it-tehnik.ru##^script:has-text(requestNotificationPermission)
@@ -9888,6 +9903,12 @@ jiosaavn.com##.c-banner
 joaoapps.com##.czr-btta.czr-btt.btn
 
 ||job.ws/_bann/  # from Adguard
+
+    ! popups
+jobdnes.cz###dogOusko
+    ! top
+jobdnes.cz###header
+    ! other
 
     ! top
 jobs.cz##.header-block
@@ -11377,9 +11398,6 @@ lifehacker.ru##.widgets-renderer-item_comments
 
 ||lifelink.ru/img/lifelink_banner$image
 
-@@||lifenews.ru^$generichide,badfilter
-@@||lifenews78.ru^$generichide,badfilter
-
 lightyeardocs.com.au$3p
 
 likegeeks.com##.nd-social-links
@@ -12110,7 +12128,6 @@ masteravannoy.ru##blockquote:has-text(/Если вам нужны мастера
 
 ||mastergrad.com$script
 ||mastergrad.com##script
-widgets.mastergrad.com
 s3.amazonaws.com$domain=mastergrad.com
 mastergrad.com##.msw-navbar
 mastergrad.com##.msw-header
@@ -12452,10 +12469,11 @@ megasantexnika.ru###tags_box
 ||mega-stars.ru/bloodyhill.php
 mega-stars.ru###bloodyhill
 
+megatube.xxx$frame,1p  # from uBlock filters
 ||megatube.xxx/atrm^  # in in Adguard
     !||megatube.xxx/atrm/*$script,1p  # from uBlock filters
 megatube.xxx##.logo-header
-megatube.xxx$frame,1p  # from uBlock filters
+megatube.xxx##.hidden-xs
 
 megazonehosting.com###desktop_header:style(position:static !important)
 
@@ -13601,10 +13619,7 @@ natropinkah.ru##.recommend_text-big
 
 nautil.us##.subscibe-bar
 
-! naver.com
-pb.m.naver.com  # from EasyPrivacy
-veta.naver.com  # from EasyPrivacy
-! naver.net
+! naver.net & naver.com
 ||naver.net/wcslog.js  # from EasyPrivacy
 
 ||naver.net/wcslog.js$important
@@ -13878,6 +13893,8 @@ nextofwindows.com###random-image-3
 
 nexustours.com##.banner__center
 
+neziskovky.cz##.master-banner
+
 nginx.com##.nginx-logo-footer
 
 nice.de##.cd-top
@@ -13906,8 +13923,6 @@ nikopolnews.net##.googlenews
 
 nipponkempo.com.ua###site-header
 
-! URL Short
-ref.nix.ru
 ! top
 nix.ru###toolbar-fixed:style(position:static !important)
 nix.ru###spacer_page_header
@@ -15948,6 +15963,9 @@ prace.cz###signUpWrapper
 prace.cz##.jdTooltip
     ! other
 
+||pracevit.cz/images/img-ksichtik.jpg
+||pracevit.cz/images/img-rada-starsich.jpg
+
 practical365.com##.blog-detail-sticky
 
 prajwaldesai.com##.bs-pinning-block:style(position:static !important)
@@ -16047,8 +16065,6 @@ prigotovimvkusno.com##.b-footer__terms-text
 prikladov.ru##.copyhint
 
 primatel.ru$third-party
-skorozvon.primatel.ru
-smscenter.primatel.ru
 
 prime.ru##.splash-wrapper:style(position:static !important)
 prime.ru##.prime-message
@@ -16170,7 +16186,6 @@ prokatis.ru##.footer_content
 
 ||prolor.ru/*/vrach.png
 
-chat.c.prom.st
 prom.ua##div[class^=besida-bubbleButton]
 prom.ua##.x-footer-extra
 
@@ -16501,9 +16516,6 @@ rackcdn.com
 sharepoint.rackspace.com##.heroBackground
 sharepoint.rackspace.com###topSection
 sharepoint.rackspace.com##.sidebar
-! https://atlas.eff.org//domains/raxcdn.com.html
-bvadtgs.scdn1.secure.raxcdn.com
-!bvadtgs.scdn1.secure.raxcdn.com/bidvertiser/
 ! from EasyList
 /bvadtgs.
 
@@ -18547,7 +18559,6 @@ siapress.ru###lastcomment
 
 sibkray.ru##.b-header__nav:style(margin-top:0px !important; margin-bottom:0px !important)
 
-ad1.sibnet.ru  # from Ru AdList
 sibnet.ru##[class*="head_v3__logo"]
 sibnet.ru##.bu
 
@@ -18696,9 +18707,6 @@ secureservercdn.net$script
 wsimg.com$script,domain=~godaddy.com
 ||wsimg.com/wrhs/*/heartbeat.min.js
 ||wsimg.com/wrhs/*/tcc.min.js
-
-! https://xakep.ru/2019/08/27/click-interception/
-sixshop.co.kr$third-party
 
 sizcontract.ru##.pays
 
@@ -19139,7 +19147,6 @@ specodegda.ru##.catalogue__wrapper > .product__btn
 ||specodegdaopt.ru/*/jumbotron.jpg
 
 speechki.org$3p  # audio widgets
-widget.speechki.org
 
 speedshooter.ru##.ty-scroller-discussion-list
 speedshooter.ru##.ypi-socials
@@ -20108,11 +20115,9 @@ techgenix.com##ul.sidebar_widget > li:has(:scope > div > .sidebar-optin)
 techgenix.com###wrapper:style(padding-top:0px !important)
 ! podcast widget
 techgenix.com##.widget_soundcloud_is_gold_widget.widget
-widget.sndcdn.com$domain=techgenix.com
-w.soundcloud.com$domain=techgenix.com
 ! Flash
 ||techgenix.com/*/custom_plugins.js
-! other
+    ! other
 techgenix.com###footer:style(padding-top:0px !important; padding-bottom:0px !important)
 
 ||tech-guide.ru/images/pay_system/$image
@@ -20711,7 +20716,6 @@ thg.ru##[href^="https://vk.cc/"]
 ||thg.ru/images/article_arrow_left_back.png
 ! "AD BLOCKER INTERFERENCE DETECTED"
 tomshardware.com##^script:has-text(window.vanilla)
-hawk.tomshardware.com
 ! there is an exclusion in EasyList. Hmm, ok.
 tomshardware.com###logo
 tomshardware.*###logo
@@ -20903,6 +20907,9 @@ tjournal.ru##.comments__item__ico--device
 ! is in Adguard
 tjournal.ru##.v-shares
 tjournal.ru##.v-plus-badge
+
+tkaner.com##.tgtg
+tkaner.com##.tnl_link
 
 tkaney.ru##.arrow-topsroll_site
 tkaney.ru##.article-after_post
@@ -21245,6 +21252,8 @@ trud.com##.banner-systems-container
 trud.com/track/
 ! is in AdGuard
 trud.com##.scroll-follow-unit
+trud.com##.ap__next
+trud.com##.ap__prev
 
 trudvsem.ru##.rostrud-notification
 trudvsem.ru##.covid-panel:style(position:static !important)
@@ -21795,6 +21804,8 @@ upwork.com##.w-nav-brand
 
 ura.news##.yandex-rss-hidden
 
+uradprace.cz##+js(set, CookieConsent, noopFunc)
+
 ura-inform.com##.header-navbar
 ura-inform.com##.post-count
 ura-inform.com##.booster-ratings-block
@@ -21915,7 +21926,6 @@ uvnc.com##.sp-scroll-up
 
 ||uznatpochemu.ru^$third-party  # from RU Adlist
 
-cfs1.uzone.id  # from Adguard
 uzone.id##.top-nav-container:style(position:static !important)
 uzone.id##.banner-youtube-mid-parent
 uzone.id##.box-content-trending
@@ -24262,8 +24272,6 @@ zello.com,zellowork.com##.header-container:style(height:auto !important)
 zendesk.com$third-party
 zendesk.com.ru$third-party
 zendesk.co.uk$third-party
-int.zendesk.com
-!int.zendesk.com$third-party
 !zdassets.com$domain=~zendesk.com|~zendesk.com.ru|~blokada.org|~umbrella.com
 ||zdassets.com/ekr/snippet.js  # is in Ru AdList and Fanboy's
 ##.zendesk-chat
@@ -25310,10 +25318,6 @@ oborot.ru##p:has-text(Подпишитесь на наш Telegram-канал)
 newshopper.ru###jm-top-bar:style(position:static !important)
 newshopper.ru###jm-logo-sitedesc
 
-safethings.avira.com  # telemetry  # https://3dnews.ru/1061902/routeri-tplink-otpravlyayut-dannie-v-avira-bez-soglasiya-polzovateley
-
-ma.kinopoisk.ru  # ma.kinopoisk.ru/api-frontend//graphql
-
 vc.ru##.site-header-container:style(position:static !important)
 
 metricfire.com##.topbar:style(position:static !important)
@@ -25532,18 +25536,3 @@ mindmajix.com##.MuiFab-root
 
 chistayrabota.ru###site-desc
 
-tkaner.com##.tgtg
-tkaner.com##.tnl_link
-
-iamondemand.com##.elementor-background-overlay
-iamondemand.com##.author-wrapper
-iamondemand.com##.elementor-heading-title
-
-megatube.xxx##.hidden-xs
-
-uradprace.cz##+js(set, CookieConsent, noopFunc)
-
-dobraprace.cz##.jobOffer__box-jobs-odber
-
-!popup - ||hledampraci.cz/toppozice.php
-hledampraci.cz$popup
