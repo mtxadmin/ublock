@@ -939,6 +939,7 @@ _banner_rotator.php  # from Adguard
 .clickunder.  # from Ru AdList
 ^clickunder^$popup  # from Ru AdList
 /clp0zi/*
+/cnads.js$important
 /code/native.js?h=  # is in Adguard
 /console-ban.min.js  # from uBlock filters: ||cdn.jsdelivr.net/*/console-ban.min.js
 /context_ads/*
@@ -2733,6 +2734,7 @@ _wtInit.js  # from Fanboy's
 ##[class*="ScrollTop"]:not(html):not(body)
 ##[id*="ScrollTop"]:not(html):not(body)
 ##[class*="scrollTop"]:not(html):not(body)
+~europa.eu##[id*="scrollTop"]:not(html):not(body)
 ##[id*="scroll-up"]:not(html):not(body)
 ~ikea.com##[class*="scroll-up"]:not(html):not(body)
     !##.btn-scroll-up
@@ -2747,7 +2749,6 @@ _wtInit.js  # from Fanboy's
     !##.scroll-up-button-wrapper
     ! is in Fanboy's
     !##.td-scroll-up
-~europa.eu##[id*="scrollTop"]:not(html):not(body)
 ##[id*="scrollup"]:not(html):not(body)
 ##[class*="scrollup"]:not(html):not(body)
     ##.hc_scrollup
@@ -2808,7 +2809,9 @@ _wtInit.js  # from Fanboy's
     ##.media-infinity-footer__up
     ##.media-infinity-footer__up-arrow
     ##.x-page-up-arrow
-!other
+!
+! other
+!
 ! from Fanboy's
 ##a[title="Back to top"]
 ###arrow
@@ -3245,6 +3248,9 @@ _site/gotop.  # from Ru AdList
     !##.widget_eu_cookie_law_widget
 ##[id*="cookie"]:not(html):not(body):not(article)
     ! the list is not full, just _some_ rules
+    !
+    ! from Fanboy's
+    !###accept-cookie:not(.btn):not(.btn-primary)
     ! is in 3 lists
     !##.alert-cookie
     ! is in 3 lists 
@@ -3260,6 +3266,60 @@ _site/gotop.  # from Ru AdList
     !###eu-cookie-law
     ! is in EasyList and Fanboy's
     !###w-cookies-notice
+##[class*="coockie"]:not(html):not(body):not(article)
+##[id*="coockie"]:not(html):not(body):not(article)
+    ! the list is not full, just _some_ rules
+    ! from Adguard
+    !##.coockie
+    ! from EasyList
+    !###coockie
+    ! from Adguard
+    !###coockieAPContainer
+    !##.coockie_down
+    ! from EasyList
+    !###coockie-message    
+    ! from Adguard
+    !###coockie-mex
+    !##.coockie-notification-block
+    ! from EasyList
+    !###datenschutzcoockie
+    ! from EasyList
+    !##.fluv-eu-coockies-wrapper
+    ! from EasyList
+    !###header-coockie
+    !##.ibx-coockie-agree
+    ! from EasyList
+    !###overlay-coockie    
+    ! from EasyList
+    !##.p-coockie
+    ! from EasyList
+    !##.popupcoockie
+    ! from Adguard
+    !der-ersatzteile-profi.de###coockiePoliy
+    ! from Adguard
+    !eduonix.com###coockieGDPR
+    ! from Adguard
+    !euroakademie.de###coockiehinweis
+    ! from Adguard
+    !grandgames.net###coockie_mes
+    !ogk2.ru###coockie-rules
+    ! from Fanboy's
+    !##.p-coockie
+    ! from Adguard
+    !shopenauer.com##.polcoder_coockie_block
+    ! from Adguard
+    !tabletka.by##.js-coockie
+##[class*="Coockie"]:not(html):not(body):not(article)
+##[id*="Coockie"]:not(html):not(body):not(article)
+    ! the list is not full, just _some_ rules
+    !
+    ! from Fanboy's
+    !###CoockiesPage
+    ! from Fanboy's
+    !###cnilCoockies
+!
+! GDPR is EU's data protection law. Popups about it are very, very often present on sites
+!
 ##[class*="GDPR"]:not(html):not(body):not(article)
 ##[id*="GDPR"]:not(html):not(body):not(article)
 ##[class*="Gdpr"]:not(html):not(body):not(article)
@@ -3268,35 +3328,89 @@ _site/gotop.  # from Ru AdList
 ##[id*="gdpr"]:not(html):not(body):not(article):not(input)
     ! is in EasyList and Fanboy's
     !###gdpr:not(body):not(html):not(input)
+!
+! LGPD is Brazil's data protection law. Not so ubiquitous as GDPR, but still presents
+!
+##[class*="lgpd"]:not(html):not(body):not(article)
+##[id*="lgpd"]:not(html):not(body):not(article)
+    ! from Fanboy's
+    !##.banner-lgpd-consent
+    ! from Fanboy's
+    !##.card-lgpd
+    ! from Fanboy's
+    !##.card-lgpd-overlay
+    ! from Fanboy's
+    !###footer-lgpd
+    ! from Fanboy's
+    !catracalivre.com.br###lgpd-box
+    ! from Fanboy's
+    !##.lgpd-message
+    ! from Fanboy's
+    !##.lgpd-modal-content
+    ! from Fanboy's
+    !###lgpd_optall
+    ! from Fanboy's
+    !###lgpd-wrapper
+    ! from Fanboy's
+    !##.informativo-lgpd
+    ! from Fanboy's
+    !concursosnobrasil.com.br###lgpd
+!
+! I have see only two rules. Let's not to make general rules for such form
+! from EasyList
+###LGPDdisclaimer
+! from EasyList
+###BannerLGPD
+!
 ##[class*="Privacy"]:not(html):not(body):not(article)
 ##[id*="Privacy"]:not(html):not(body):not(article)
 ~reddit.com,sardu.pro##[class*="privacy"]:not(html):not(body):not(article)
 ~sardu.pro,trakt.tv##[id*="privacy"]:not(html):not(body):not(article)
+!
 ##div[data-storage-item*="cookiename"]
     ! baydaroshnaya.ru##div[data-storage-item*="cookiename"]
     ! mytravelbar.ru##div[data-storage-item*="cookiename"]
+!
 ! other
+!
 ###__agreementBar
+! from Fanboy's
+##app-aviso-cookies
+! from Fanboy's
+##[aria-label="Consent Banner"]
 ! is in EasyList and Fanboy's
 ##.akismet_comment_form_privacy_notice
+! from Fanboy's
+###avis_cockies
 ! is in EasyList and Fanboy's
 ##.cm-notification-container
 ! is in EasyList and Fanboy's
 ###consent_blackbar
 ! is in EasyList and Fanboy's
 ##.consent-popup
-##.coockie_down
-##.coockie-notification-block
+! from Fanboy's
+##[data-cy="cookiebar"]
+! from Fanboy's
+##[data-popmake*="cookie_"]
+! from Fanboy's
+##[data-role="cookie-notice"]
+! from Fanboy's
+##[data-test="gdpr-cookies-popup"]
+! from Fanboy's
+##[data-testid="cookie-policy"]
 ###easy-cookies-policy-main-wrapper
 ##.footer_bottom_politics
 ##.footer__popup-agreement
 ##.gdrp-popup-content
-##.ibx-coockie-agree
 ##.law__footer
 ###legalbar
 ###legal-notice
 ##.message-cockies
+! from Fanboy's
+##ofi-cookie-box-widget
 ##.personal-data-warning
+! from Fanboy's
+##proactua-cookie-consent
 ! is in EasyList and Fanboy's
 ##.pum[data-popmake*="cookie-consent"]
 ! is in EasyList and Fanboy's
