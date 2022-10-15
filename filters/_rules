@@ -1367,8 +1367,9 @@ _rebid.js  # from EasyList
     ##.ad_unit
     ! from EasyList
     ##div[id^="ad_rect_"]
-~cnn.com,~ferra.ru,~indicator.ru,~moslenta.ru,~motor.ru##[class^="ad-"]:not(html):not(body):not(article):not(.ad-site-wrapper)
+~cnn.com,~ferra.ru,~indicator.ru,~moslenta.ru,~motor.ru,~trud.com##[class^="ad-"]:not(html):not(body):not(article):not(.ad-site-wrapper)
         ! letidor.ru,secretmag.ru: #@#.ad-site-wrapper
+        ! trud.com: .ad-free .ad-pages
     ! is in EasyList
     !##.ad-popup-content
     ! is in EasyList
@@ -1610,7 +1611,9 @@ _rebid.js  # from EasyList
 ##.afs_ads
 ###alert
 ##.alert-announcement
-~datadoghq.com##.announcement:not(.forumbg):not(#masthead)
+~adrr-buro.ru,~datadoghq.com##.announcement:not(.forumbg):not(#masthead)
+    ! Exclusions:
+    ! adrr-buro.ru - доска объявлений, типа. Хз, но .announcement точно предполагает баннер сверху, а там не так
 ##.announcement_banner
 ##.article-top-banner
 ! Exclusions: medium.com projects (there are two-letters obfuscated divs)
