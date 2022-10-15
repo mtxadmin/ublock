@@ -89,6 +89,7 @@ ad.wynk.in  # from AdGuard
 /ad1.
 /ad2.
 /ad3.
+ad1.sibnet.ru  # from Ru AdList
 ad2.lupa.cz  # from Peter Lowe's Ad and tracking server list
 ad2.rambler.ru  # from Adguard
 ad3.rambler.ru  # from Adguard
@@ -579,6 +580,7 @@ beacon.wikia-services.com  #https://beacon.wikia-services.com/__track/
 chat.olx.kz
 chat.olx.ua
 chat.olx.uz
+chat.c.prom.st  # chatbot from prom.ua
 chat.sarbacane.com
 chat.slb.com
 chat.wildberries.ru
@@ -875,6 +877,7 @@ go.wisinfo1.com  # ad redirects
 hawk.pcgamer.com
 hawk.techradar.com
 hawk.tomsguide.com  # hawk.tomsguide.com/hl/hawklinks.js
+hawk.tomshardware.com
 
 ||heartbeat.
 heartbeat.dm.origin.com  # EA - Tracker  # from Quidsup NoTrack-Blocklist
@@ -1371,6 +1374,7 @@ sentry.worldota.net  # ostrovok.ru tech domain
 
 /share.$domain=~share.zabbix.com
 share.baidu.com  # from Fanboy's
+share.flipboard.com  # is in Fanboy's
 share.notizie.it  # from uBlock filters
 
 /shareit.  # is in Ru AdList and Fanboy's
@@ -1669,6 +1673,7 @@ stats.consultnn.ru
 stats.datawrapper.de  # tracking images  # is in Adguard  # do not block datawrapper.de entirely
 stats.ft.com  # from Adguard
 stats.imgpay.ru  # from Adguard
+stats.infox.sg
 stats.kod.ru  # ad scripts  # is in Adguard and EasyPrivacy
 stats.mbamupdates.com  # Malwarebytes - Tracker  # from Quidsup NoTrack-Blocklist
 stats.merriam-webster.com  # Merriam Webster - Tracker  # from Quidsup NoTrack-Blocklist
@@ -1792,6 +1797,7 @@ top.azur.ru  # ads(counters?)  # root is img  # is in AdGuard: ||top.azur.ru/?id
 top.my.ua  # from Ru AdList: top-js-metrics.top.my.ua
 top.photopulse.ru
 top.hunter.com.ua  # tracking images
+top100.ezar.ru  # from Adguard
 top100.mafia.ru  # from Peter Lowe's hosts file
 top100.rambler.ru
 top100-images.rambler.ru$important
@@ -1922,6 +1928,7 @@ tracking.crobo.com
 tracking.deltadefense.com
 tracking.deutscheladies.de  # from EasyPrivacy
 tracking.devoteladies.de  # from EasyPrivacy
+tracking.digitalocean.com  # from EasyPrivacy
 tracking.directservices.it
 tracking.dominanteladies.de  # from EasyPrivacy
 tracking.drsfostersmith.com
@@ -1939,6 +1946,7 @@ tracking.feedperfect.com
 tracking.fits.me
 tracking.fkk24.de  # from EasyPrivacy
 tracking.foxnews.com
+tracking.g2crowd.com
 tracking.gammae.com
 tracking.gfycat.com
 tracking.godatafeed.com
@@ -2098,6 +2106,8 @@ widget.psi.cash
 widget.kassa.rambler.ru
 widget.reviews.io
 widget.sellwild.com  # is in EasyList
+widget.sndcdn.com  # soundcloud.com widgets
+widget.speechki.org
 widget.time.is
 widget.trustpilot.com$important  # from RU AdList and Fanboy’s
 widget.utinet.ru  # from Adguard
@@ -2105,9 +2115,11 @@ widget.utinet.ru  # from Adguard
 /widgets.$domain=~github.com|~sbis.ru|~scribblemaps.com
 ! exclusions: 
 !   sbis.ru - GUI scripts
+widgets.booked.net
 widgets.coingecko.com  # from Adguard
 widgets.dzone.com  # is in Fanboy's
 widgets.kinopoisk.ru  #widgets.kinopoisk.ru$third-party doesn't work for some sites. Iframe? Ok, let's block
+widgets.mastergrad.com
 widgets.membership.s-msft.com
 widgets.openli.com  # from EasyList
 widgets.planeta.ru  # from Adguard
@@ -2290,6 +2302,8 @@ ds-aksb-a.akamaihd.net  # ad scripts  # is in MVPS HOSTS, AdGuard and EasyPrivac
 pushtoast-a.akamaihd.net
 protectsurf-a.akamaihd.net  # from uBlock filters
 speee-ad.akamaized.net  # from SecurityEntire BaseFilter
+
+coads.akipress.org  # from Ru AdList
 
 xoomer.alice.it  # from Dan Pollock's hosts file
 
@@ -2478,6 +2492,8 @@ imgpfx.arenavision.run
 imgpfx.arenavision.site
 imgpfx.arenavision.website
 
+metricus.artlebedev.ru
+
 affiliation.arukereso.hu  # from Hufilter: ||affiliation.arukereso.hu/pbox/
 
 goto.astdn.ru  # from Adguard
@@ -2503,6 +2519,8 @@ oqbimz.aviasales.ru  # from GoodbyeAds
 pulse.aviasales.ru  # from Ru AdList
 
 mgo.avid.com  # ad redirects
+
+safethings.avira.com  # telemetry  # https://3dnews.ru/1061902/routeri-tplink-otpravlyayut-dannie-v-avira-bez-soglasiya-polzovateley
 
 stats.avito.ru  # ad xhrs
 cs.avito.ru  # ad xhrs (clickstream)
@@ -2887,6 +2905,8 @@ ado.delfi.ee  # from Ru AdList
 t.delfi.ee  # from Ru AdList
 t.delfi.lt  # from Ru AdList
 
+boomerang.dell.com  # is in EasyPrivacy
+
 rb1.design.ru  # from Peter Lowe's hosts file
 
 oneclicksociallogin.devcloudsoftware.com
@@ -2959,6 +2979,7 @@ mobiletelemetry.ebay.com  # from GoodbyeAds
 partnernetwork.ebay.com  # from GoodbyeAds
 rover.ebay.com$important
 stats.ebay.com  # from GoodbyeAds
+epnt.ebay.com$important  # is in EasyList  # epnt.ebay.com/static/epn-smart-tools.js
 
 digitalmarketing.citibankonline.com-v2.edgekey.net
 mobileads.indiatimes.com-v1.edgesuite.net
@@ -3060,6 +3081,15 @@ pingback.giphy.com  # Giphy - Tracker  # from Quidsup NoTrack-Blocklist
 
 stat-api-yndx.cloud.gismeteo.net  # from Ru AdList
 
+! different marketing projects on Github
+! ad scripts
+! falls to general Ru AdList filter. Seen on a videos site, videos are working
+actlz.github.io  #https://actlz.github.io/actualize.js
+partnercoll.github.io$important  # ad scripts  # is in Ru AdList and uBlock filters
+weblion777.github.io$important  # ad scripts  # is in Ru AdList and uBlock filters
+wp-r.github.io$important  # ad scripts  # is in AdGuard
+collector.githubapp.com  # is in MVPS HOSTS, AdGuard, EasyPrivacy
+
 gjapplog.uc.cn  # https://xakep.ru/2018/07/02/android-231/  # https://clinetworking.com/2018/06/03/1984-called/
 
 ads-api.glassdoor.com  # from The SNAFU Blocklist
@@ -3142,6 +3172,7 @@ bt1.gutgirl.ru  # from Ru AdList
 dclk.haaretz.co.il  # from Dan Pollock's hosts file
 
 effect.habr.com
+u.tmtm.ru  # habr reflinks
 
 bigyapan.hamropatro.com  # from Adguard
 
@@ -3227,6 +3258,10 @@ statistic.imgpay.ru  # from Adguard
 
 adman.in.gr  # from Dan Pollock's hosts file
 
+info.inamo.ru  # from Adguard
+
+b.inbox.lv  # from Ru AdList
+
 mo7her.incest.click  # from GoodbyeAds
 
 tothemoon.incest-porno.pro  # from Adguard
@@ -3306,6 +3341,8 @@ info.kinoclub77.ru  # ad scripts  # is in AdGuard
 vast4.kinogo.la  # from Adguard
 
 prostoimya.kino-o-voine.ru  # from Adguard
+
+ma.kinopoisk.ru  # ma.kinopoisk.ru/api-frontend//graphql
 
 technopolis.kirov.ru  # from Dan Pollock's hosts file
 
@@ -3495,6 +3532,9 @@ a10.nationalreview.com  # from EasyPrivacy
 
 tools.naughtyamerica.com  # from MVPS
 
+pb.m.naver.com  # from EasyPrivacy
+veta.naver.com  # from EasyPrivacy
+
 autoru.naydex.net  # auto.ru ad scripts
 
 trusted-web-seal.cybertrust.ne.jp
@@ -3528,6 +3568,8 @@ cdn-rum.ngenix.net  # is in EasyPrivacy
 
 adpriv.nikkei.com  # from Adguard
 nkis.nikkei.com  # from Adguard
+
+ref.nix.ru  # private URL shortener
 
 remp.nv.ua  # no root
 ! beam.remp.nv.ua  # ad scripts  # is in AdGuard
@@ -3639,6 +3681,9 @@ zontent.powvideo.net  # from uBlock filters
 jvs.price.ru  # from Adguard
 track.price.ru  # from Adguard
 
+skorozvon.primatel.ru
+smscenter.primatel.ru
+
 cgicounter.puretec.de  # from Dan Pollock's hosts file  # ionos.de
 
 news.pustgovorjat.ru  # from Adguard
@@ -3690,6 +3735,8 @@ zoomdecorate.rambler.ru  # ad xhrs and tracking imgs
 tools.ranker.com  # from MVPS
 
 info.rapid7.com  # ad redirects
+
+bvadtgs.scdn1.secure.raxcdn.com  # https://atlas.eff.org//domains/raxcdn.com.html  # bvadtgs.scdn1.secure.raxcdn.com/bidvertiser/
 
 video.razvratu.net  # from Adguard
 
@@ -3857,6 +3904,7 @@ info.sosintl.com  # ad redirects  # "power industry training and compliance"
 
 l9bjkkhaycw6f8f4.soundcloud.com  # soundcloud.com - Tracker  # from Quidsup NoTrack-Blocklist
 promoted.soundcloud.com  # from Adguard
+w.soundcloud.com  # soundcloud.com widgets
 
 images-aud.sourceforge.net  # from MVPS
 
@@ -4089,6 +4137,8 @@ tally.upsideout.com  #[Piwik.Analytics]  # from MVPS
 
 data.nal.usda.gov  #[Universal Federated Analytics]  # from MVPS
 
+cfs1.uzone.id  # from Adguard
+
 gtm.vanmoof.com  # from Adguard
 pc3.vanmoof.com  # from Adguard
 
@@ -4171,6 +4221,8 @@ illicium.web.money  # ad scripts  # is in AdGuard
 illicium.wmtransfer.com
 
 as.webmd.com  # from MVPS
+
+cdn-promote.weebly.com  # from Adguard: ||cdn-promote.weebly.com/js/dist/lead-form.js  # from Adguard
 
 alitui.weibo.com  # from MobileAdTrackers
 game.weibo.com  # from MobileAdTrackers
@@ -4265,6 +4317,8 @@ go.zdos.ru  # 3p ad scripts  # is in Adguard
 
 consent-cdn.zeit.de
 premium.zeit.de
+
+int.zendesk.com  # int.zendesk.com$third-party
 
 loader.zeroform.com  # from EasyPrivacy
 
