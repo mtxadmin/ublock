@@ -2640,10 +2640,11 @@ _wtInit.js  # from Fanboy's
 ~aliexpress.com,~aliexpress.ru##[id*="Survey"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru,~dbi-services.com,~pikabu.ru,~support.google.com##[class*="survey"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru##[id*="survey"]:not(html):not(body)
+!
 ! other
+!
 ##.ask
 ##.ask_expert
-##.article-survey-container
 ##.article-votes
 ###button_mnenie
 ##.democracy
@@ -3317,6 +3318,8 @@ _site/gotop.  # from Ru AdList
     !###CoockiesPage
     ! from Fanboy's
     !###cnilCoockies
+##[class*="Coockie"]:not(html):not(body):not(article)
+##[id*="Coockie"]:not(html):not(body):not(article)
 !
 ! GDPR is EU's data protection law. Popups about it are very, very often present on sites
 !
@@ -3356,7 +3359,7 @@ _site/gotop.  # from Ru AdList
     ! from Fanboy's
     !concursosnobrasil.com.br###lgpd
 !
-! I have see only two rules. Let's not to make general rules for such form
+! Let's not to make general rules for such form
 ! from EasyList
 ###LGPDdisclaimer
 ! from EasyList
