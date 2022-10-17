@@ -595,6 +595,7 @@ $removeparam=rid,domain=~russianfood.com
     !  russianfood.com: rid=ReceptId
     ! amazon.*$removeparam=rid  # Found independently
     ! giphy.com$removeparam=rid  # from Adguard
+    ! $removeparam=rid,domain=dzen.ru  # from Ru AdList
     ! $removeparam=rid,domain=zen.yandex.*  # is in Ru AdList
 
 $removeparam=rtclick  # from Ru AdList
@@ -910,8 +911,9 @@ alexa.com$removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest
 ! That is not URL parameter, but URL ending: $/ref@amazon.*
 ! Note: in NeatURL amazon.com is amazon.* . It should work, but need to test 
 ! 2022: ref parameter (?ref=)is recommended to exclude by Adguard
+amazon.*$removeparam=adgrpid  # from Adguard
 amazon.*$removeparam=ascsubtag  # is in NeatURL and Adguard
-||amazon.*$removeparam=AssociateTag  # from Adguard
+amazon.*$removeparam=AssociateTag  # from Adguard
 amazon.*$removeparam=c  # from Adguard
 amazon.*$removeparam=camp  # from Adguard
 amazon.*$removeparam=creative  # from Adguard
@@ -920,6 +922,15 @@ amazon.*$removeparam=dchild  # Found independently. Also is in Adguard
 amazon.*$removeparam=_encoding  # from NeatURL
 ||amazon.*/hz/contact-us/csp$removeparam=/entries/  # from Adguard
 amazon.*$removeparam=field-lbr_brands_browse-bin  # from Adguard
+amazon.*$removeparam=hvadid  # from Adguard
+amazon.*$removeparam=hvbmt  # from Adguard
+amazon.*$removeparam=hvdev  # from Adguard
+amazon.*$removeparam=hvlocphy  # from Adguard
+amazon.*$removeparam=hvnetw  # from Adguard
+amazon.*$removeparam=hvqmt  # from Adguard
+amazon.*$removeparam=hvrand  # from Adguard
+amazon.*$removeparam=hvtargid  # from Adguard
+amazon.*$removeparam=hydadcr  # from Adguard
 amazon.*$removeparam=ingress  # from Adguard
 amazon.*$removeparam=initialIssue  # from Adguard
 ! do not block keywords parameter
@@ -1012,6 +1023,7 @@ dogfartnetwork.com$removeparam=nats  # from Adguard
 
 ! doubleclick.net - blocked entirely, just for information. But.
 doubleclick.net$removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|[abdeg-or-x])/  # from uBlock filters
+doubleclick.net$removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|u_|ga_|url|dt|adk)/  # from uBlock filters
 doubleclick.net$removeparam=/^dc_trk_/  # from Adguard
 doubleclick.net$removeparam=p  # from uBlock filters
 
@@ -1420,8 +1432,9 @@ yandex.$removeparam=clid
     ! ||www.yandex.$removeparam=clid  # from Adguard
     ! ://yandex.$removeparam=clid  # from Adguard
 
-dzen.*,yandex.*$removeparam=via
+dzen.*,yandex.*,ya.ru$removeparam=via
     ! $document,removeparam=via,domain=dzen.*|yandex.*  # is in Ru AdList
+    ! $removeparam=via,domain=ya.ru  # from Ru AdList
 
 dzen.*,yandex.*$removeparam=integration
 dzen.ru$removeparam=persistent_id  # from Adguard
@@ -1960,6 +1973,7 @@ shopyourlikes.com$removeparam=afPlacementId
 $document,removeparam=via,domain=yandex.*  # from Ru AdList
 
 $removeparam=fm,domain=mail.ru|sportmail.ru  # from Ru AdList
+$removeparam=fromprefix,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=rf,domain=mail.ru|sportmail.ru  # from Ru AdList
 
 ! already blocked url
