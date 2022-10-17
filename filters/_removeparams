@@ -440,6 +440,38 @@ $removeparam=ocid
     ! bbc.com$removeparam=ocid  # from Adguard
     ! $removeparam=ocid,domain=bbc.com|bbc.co.uk  # from Adguard
 
+$removeparam=offer_id  # Let's remove ad offers radically
+    ! /aff_c?*offer_id=*&aff_id=  # from Adguard
+    ! /aff_i?offer_id=  # from Adguard and EasyPrivacy
+    ! /aff_r?*offer_id=*&aff_id=  # from Adguard
+    ! /click?pid=*&offer_id=  # from uBlock filters
+    ! ||t.crsmc.link/*&offer_id=$subdocument  # from Adguard
+    ! ||t.frtyt.com/*offer_id=*&aff_id=  # from Adguard
+    ! ||safecurr.g2afse.com/click?pid=*&offer_id$popup  # from uBlock filters
+    ! impiego24.it#?#.annunciLavoro > li.boxAnnunci:has(> a[href^="http://go.ketc.it/aff_c?offer_id="])  # from Adguard
+    ! shareae.com##a[href*="/aff_c?offer_id="]  # from Adguard
+    ! from Ru AdList
+    !vpnmag.ru##a[href*="aff_c?offer_id"]
+    ! from Ru AdList
+    !rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##a[href*="offer_id="]
+    ! from Ru AdList
+    !root-nation.com,vpnmag.ru##a[href*="aff_c?offer_id"]
+    ! from uBlock filters
+    !xxvids.net##[href*="offer_id"]
+    !rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org#?#tr.row3 > td > ul > li:-abp-has(> a[href*="offer_id="])  # from Ru AdList
+    ! from EasyList
+    !##a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="]
+    ! from EasyList
+    !##a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img
+    ! from Adguard
+    !manutd.pl##a[href*="/aff_c?offer_id="] > img
+    ! from Adguard
+    !christianforums.com##a[href*="/aff_c?offer_id="] > img
+    ! from Adguard
+    !passivevoiceconverter.com##a[href^="https://grammarly.go2cloud.org/aff_c?offer_id="] > img
+    ! from Adguard
+    !fuckamouth.ru##a[href*="&offer_id="]
+
 $removeparam=oly_anon_id  # from Adguard
 $removeparam=oly_enc_id  # from Adguard
     ! https://github.com/brave/brave-browser/issues/13644
