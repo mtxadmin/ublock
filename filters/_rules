@@ -42,6 +42,10 @@
 /transparent.gif?ray=  # EasyPrivacy rule
 
 
+! Antiphishing rule from from uBlock filters:
+||apple.com-  # from uBlock filters - Badware: ||apple.com-*.live^
+
+
     ! 88x31 banners
 _8831.gif  # from Ru AdList
 /8831_1.gif  # from Ru AdList
@@ -1522,7 +1526,10 @@ _rebid.js  # from EasyList
     !##.reklama
 ##[class*="Sponsor"]:not(html):not(body):not(article):not([class*=hideSponsored])
 ##[id*="Sponsor"]:not(html):not(body):not(article)
-~drtuber.com##[class*="sponsor"]:not(html):not(body):not(article)
+##[class*="sponsor"]:not(html):not(body):not(article):not(.drt-video-player)
+    ! Exclusions:
+    ! drtuber.com, iceporn.com: "drt-video-player sponsored"
+    !
     ! from EasyList
     !##.sponsoredlinks
 ##[id*="sponsor"]:not(html):not(body):not(article)
