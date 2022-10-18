@@ -983,13 +983,36 @@ _banner_rotator.php  # from Adguard
 /detectadblockpc.js
 /detector.min.js$important
 /dev-console-detect.js
+/devicead/*  # from EasyList
 /dfp/*
+    ! /dfp/async.  # from EasyList
+    ! /dfp/blocks/*  # from EasyList
+    ! /dfp/common/*  # from EasyList
+    ! /dfp/dc.js  # from EasyList
+    ! /dfp/dfp-  # from EasyList
+    ! /dfp/head/*  # from EasyList
+    ! /dfp/jquery.  # from EasyList
     ! /packages/dfp/*  # from EasyList
     ! avito.ru*/dfp/px.js  # from Ru AdList
+/dfp.js  # from EasyList
+/dfp.min.js$third-party  # from EasyList
+/dfpad/*  # from EasyList
+/dfp-ads.  # from EasyList
+/dfp-ads/*  # from EasyList
+/dfp_ads/*  # from EasyList
+/dfp-custom/*  # from EasyList
+/dfp_delivery.js  # from EasyList
+/dfp_init.  # from EasyList
+/dfp_js/*  # from EasyList
+/dfp_overlay.  # from EasyList
+/dfp_skin.js  # from EasyList
 /dfp_mobile.js
 /dfp_page
     ! ||autonews.ru/dfp_page
     ! ||rbc.ru/dfp_page  # ad scripts  # https://www.rbc.ru/dfp_page
+/dfpInAngular.  # from EasyList
+/dfpsds.  # from EasyList
+/dfpsearchads.  # from EasyList
 /disable-devtool$important,all
     ||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js  # from uBlock filters
     ||motphim123.com/assets/js/disable-devtool.min.js  # from uBlock filters
@@ -2428,6 +2451,7 @@ _pagespeed_beacon?  # from AdGuard
 /parking-crew.js
 /paystats-public.js
 /pdp.gif?  # from EasyPrivacy
+/perflog/*  # from EasyPrivacy
 /ping/*$xmlhttprequest
 /ping?*$xmlhttprequest
     ! /engine/ping?  # is in EasyPrivacy
@@ -3641,6 +3665,8 @@ _snowstorm-min.js  # from Ru AdList
 ###register-banner
 ##.signup-prompt
 ##.signup-prompt-bg
+! from Adguard
+##wecoma-lite
 ~adguard.com,~aliexpress.com,~aliexpress.ru,~degoo.com,~sud.ua,~trakt.tv##.welcome
 ###welcome
 ##.welcome1
