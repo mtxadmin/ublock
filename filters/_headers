@@ -573,7 +573,7 @@ _logo.$image
     ! seopirat.club##.uix-logo
 ##a[href^="javascript:AddComplaint"]
 ! in general, don't remove js links with pictures
-~telegram.org,~urlscan.io##[href="/"]:not(.sidemenu-link):not(:has(img)):not(.button)
+~urlscan.io##[href="/"]:not(.sidemenu-link):not(:has(img)):not(.button)
     ! androidinsider.ru##[href="/"]
     ! bezboleznej.ru##[href="/"]
     ! eventid.net##[href="/"]
@@ -608,7 +608,7 @@ _logo.$image
     ! 1plus1.video##a[href="/"]:has(svg)
     ! reddit.com##a[href="/"]:has(svg>g)
 ! update 2022-02: don't know why, but it doesn't works. Ok, previous version
-##a[href="/"]:not(.sidemenu-link)
+~telegram.org##a[href="/"]:not(.sidemenu-link)
 !
 ! and other text(!) redirects. In general, do not remove image redirects
 ##a[href^="/click/"]:not(:has(img))
