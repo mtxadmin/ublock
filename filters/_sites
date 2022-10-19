@@ -856,9 +856,10 @@ ad-norma.ru##.carousel
 adomino.net##.cf__mask
 
 adp.com$3p  # ad redirects, but..  # from GoodbyeAds
-adp.ca  # from GoodbyeAds
-adpemploymentreport.ca  # adp.ca
-adphrassist.com  # adp.ca
+adp.ca$3p  # from GoodbyeAds
+adpemploymentreport.ca$3p  # adp.ca
+adphrassist.com$3p  # adp.ca
+adp.com##.si-overlay
 
 adsecurity.org###sidebar_bottom
 adsecurity.org###footer
@@ -1630,6 +1631,7 @@ aptekamos.ru###ama-modal-app
 aptekamos.ru###ama-modal-app-content
 aptekamos.ru###ama-modal-app-overlay
 aptekamos.ru###ama-header
+aptekamos.ru###right-data-container > p > noindex
 
 aquabum.ru##.note
 
@@ -6235,6 +6237,13 @@ euro-diski.ru###name_site
 eurogamer.net##.supporter_promo
 eurogamer.net##.supporter_shelf
 
+eurojobs.com##.featured-companies
+eurojobs.com##.listing-info > .right-side
+eurojobs.com###header-right:style(padding-top:60px !important)
+eurojobs.com###header-right >a:style(color:initial !important)
+! inline ads
+eurojobs.com##tr.evenrow > td:has(script)
+
     ! popups
 europa.eu##.modal-dialog:has-text(without registering)
 europa.eu##.modal:has-text(without registering)
@@ -9146,6 +9155,9 @@ ichip.ru##.article-list-announce
 ichudoru.com###masthead
 ichudoru.com###toc_container
 
+! Exclusion?
+icims.com###logo
+
 ict2go.ru##.event-subscribe
 
 idea4web.biz##.head1
@@ -9376,9 +9388,12 @@ indeed.com##.popover
 indeed.com##.google-Only-Modal
     ! banners and promos
 indeed.com##.footerCta
+indeed.com##.microContentQuestion
     ! other
 indeed.com##.gnav-Logo
 indeed.com##.jobCardShelf
+indeed.com##.jobsearch-JobInfoHeader-headerImage
+indeed.com##.jobsearch-JobInfoHeader-logo
 
 indiatimes.com$image,redirect-rule=1x1.gif  # from uBlock filters
 
@@ -11213,6 +11228,8 @@ most-dnepr.info##.read-social
 
 leanpub.com##.quick-buy-header
 
+||learn4good.com/jobs/images/reg_jobseeker.jpg
+
 learndatasci.com##.container-fluid:style(padding-top:0px !important)
 learndatasci.com##.blog-category-tag:style(margin-top:0px !important; position:static !important)
 learndatasci.com##.article-content:style(margin-top:0px !important)
@@ -11957,6 +11974,15 @@ lovely-dog.ru###masthead
 
 loveread.club##.tech_info
 
+||loveread.ec/img/letter_nav.jpg
+||loveread.ec/img/navbg.jpg
+    ! top
+loveread.ec##h1
+loveread.ec##td[style*="background-image: url(img/header_fon.jpg"]
+    ! bottom
+loveread.ec##.footer
+loveread.ec##.tb_read_book > p
+
 ||loveread.me/img/background_tracery.jpg
 ||loveread.com.ua/images/page.png
 ||lovereads.ru/img/find.jpg
@@ -12005,6 +12031,9 @@ lunavi.com##.byline-tag
 
 lux.fm##.menu-wrapper:style(position:static !important)
 lux.fm##.header-player-wrapper:style(position:static !important)
+
+luxoft.com##.pos-sticky-desktop:style(position:static !important)
+luxoft.com##.scrolledBtns:style(position:static !important)
 
 luxorta.ru  # spam
 
@@ -14132,6 +14161,7 @@ notepad-plus-plus.org##.intro-and-nav:style(height:auto !important)
 ||notion.site/api/v3/ping
 ! exclusion?
 notion.so##.logo
+notion.site##.notion-topbar
 
 nou-centr.ru##.brand-text
 
@@ -15227,6 +15257,8 @@ paulradzkov.com##.navlinks
 paulradzkov.com##.page-header.allpage--header > .content-width.nav-placeholder
 
 payeer.com$third-party  # from Ru AdList
+
+paylocity.com##.branding-company-logo
 
 ||paypal.com/xoplatform/logger/$important  # is in EasyPrivacy and Adguard
 ||paypal.com/credit-presentment/log
@@ -16562,6 +16594,8 @@ qna.center###errmsg
 qna.center##.mt5.mb5.well
 qna.center##.maw100
 
+quantedge.com###SITE_HEADER:style(position:static !important)
+
 quarta-hunt.ru##.alarma
 quarta-hunt.ru##.wholesalers
 ||quarta-hunt.ru/*/paysystems-footer.png
@@ -17105,6 +17139,9 @@ reminder.media##[class^=_asterisk_]
 remington.com##.featured-carousel
 
 rem-kol.ru##.phone-contact
+
+remocate.app##.navbar:style(position:static !important)
+remocate.app##.section:style(padding-top:0px !important)
 
 remont-book.com##.post__read-time
 remont-book.com##.sidebar-find
@@ -19003,6 +19040,8 @@ smartnator.com##.container:style(filter:none !important; -webkit-filter:none !im
 
 smart-planets.ru###masthead
 
+smartrecruiters.com##.summary
+
 smarttvnews.ru##.logo_section_wrap
 
 ||smartphone.ua/inc/images/all-bg.jpg
@@ -20505,6 +20544,10 @@ telegraf.by##.navbar-toggler
 telegraf.com.ua$3p  # cross-site ads
 telegraf.com.ua##.c-footer::before
 telegraf.com.ua##.c-footer::after
+
+! To not change Telegram Instant View debug field
+@@instantview.telegram.org$ghide
+@@ivwebcontent.telegram.org$ghide
 
 ! is in AdGuard
 ||telegram.im/widget-button/
@@ -23183,6 +23226,9 @@ whitehouse.gov##.bottomcta-wrapper
 
 white-windows.ru##.ww-note-frame
 
+who.int###sf-main-header
+who.int##.navigation:style(position:static !important)
+
 whois.com##.slides-container
 whois.com##.whois_rhs_column
 whois.com##.chiclet
@@ -25666,4 +25712,11 @@ manageengine.com##.ctaWrapper
 mega.nz##.pages-menu:style(position:static !important)
 mega.nz##body:style(user-select:initial !important)
 mega.nz##body *:style(user-select:initial !important)
+
+myworkdayjobs.com##div[data-automation-id="jobPostingStickyWrapper"]
+myworkdayjobs.com##div[data-automation-id="legalNotice"]
+
+ttpsc.com##html:style(opacity:initial !important)
+
+youmail.com##.header-content-wrapper:style(padding-top:0px !important)
 
