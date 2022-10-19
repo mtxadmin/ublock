@@ -1549,9 +1549,10 @@ _rebid.js  # from EasyList
     !##.reklama
 ##[class*="Sponsor"]:not(html):not(body):not(article):not([class*=hideSponsored])
 ##[id*="Sponsor"]:not(html):not(body):not(article)
-##[class*="sponsor"]:not(html):not(body):not(article):not(.drt-video-player)
+~indeed.com##[class*="sponsor"]:not(html):not(body):not(article):not(.drt-video-player)
     ! Exclusions:
     ! drtuber.com, iceporn.com: "drt-video-player sponsored"
+    ! indeed.com: sponsoredJob (cardOutline tapItem fs-unmask result sponsoredJob resultWithShelf sponTapItem)
     !
     ! from EasyList
     !##.sponsoredlinks
@@ -2386,6 +2387,7 @@ _chartbeat.js  # from EasyPrivacy
 /discourse-fingerprint_  # from EasyPrivacy
 /doctracking.  # from EasyPrivacy
 /dspixel.js$important
+/dwell/log?  # is in EasyPrivacy
 /easylocation/*
 .eloqua.js  # from EasyPrivacy
 /empty.gif
@@ -2439,6 +2441,7 @@ _hightraffic_code.js  # from EasyPrivacy
 /logger/*  # is in Adguard: /logger/p.gif?*d=/*
 _loghuman=  # from EasyPrivacy
 /logimpressions?$important  # is in EasyPrivacy and uBlock filter  # ||docs.google.com/*/logimpressions
+/logperf?  # is in EasyPrivacy
 /mobile-useragent-info.js
 /mod_pagespeed_beacon?  # from Fanboy's
 _nedstat.js  # from EasyPrivacy
