@@ -121,7 +121,10 @@ $removeparam=caid
     ! warnermediacdn.com$removeparam=caid  # from uBlock filters and Adguard
     ! yspsvc-na.net$removeparam=caid  # from uBlock filters
 
-$removeparam=/campaign/  # maybe it needs i? Not sure
+$removeparam=/campaign/,domain=~recruitics.com  # maybe it needs i? Not sure
+    ! Exclusions:
+    ! recruitics.com - false positive in redirecting url (&rx_url=https%3A%2F%2F...%3Frx_campaign...)
+    !
     ! $removeparam=at_campaign  # Campaign tracking (at)  # from NeatURL
     ! $removeparam=campaign  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
         ! $removeparam=adjust_campaign  # from Adguard
