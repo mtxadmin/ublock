@@ -855,6 +855,11 @@ ad-norma.ru##.carousel
 
 adomino.net##.cf__mask
 
+adp.com$3p  # ad redirects, but..  # from GoodbyeAds
+adp.ca  # from GoodbyeAds
+adpemploymentreport.ca  # adp.ca
+adphrassist.com  # adp.ca
+
 adsecurity.org###sidebar_bottom
 adsecurity.org###footer
 
@@ -4376,6 +4381,9 @@ couchpota.to##.intro
 countryscanner.ru##.bt-sub-navigation
 
 coupons.com$third-party
+
+coursary.com##.mp-pusher
+coursary.com##.float_bottom_popup
 
 course4it.com###SITE_HEADER:style(position:static !important)
 course4it.com##[id*=pinned-layer]:style(position:static !important)
@@ -9361,6 +9369,7 @@ incapdns.net$3p,script,image  # strange scripts and tracking imgs  # no root  # 
 ||indeed.com/rpc/cnavperf
 ||indeed.com/rpc/dwell/logPerf
 ||indeed.com/m/rpc/frontendlogging
+||indeed.com/*/log^$ping  # is in Adguard
     ! popups
 indeed.com###jobalertswrapper
 indeed.com##.popover
@@ -16938,6 +16947,8 @@ reboot.pro##.avatar
 
 reconomica.ru##.navbar-brand-image
 
+recruitics.com$3p  # is in Adguard  # ad redirects, but..
+
 ||recsgames.ru/imgdf/recsgames.png
 
 recurly.com$3p  # ad scripts  # don't block at hosts  # "Subscription Billing"
@@ -21879,6 +21890,13 @@ unizoo.ru##.card-b__block_rupor
 unizoo.ru##.header__small
 unizoo.ru##.header__top--phone
 
+*$xhr,redirect-rule=nooptext,domain=unknowncheats.me  # from uBlock filters
+    ! top
+||unknowncheats.me/*/forum_banner$image
+unknowncheats.me###top_header_slot
+unknowncheats.me###bannerImage
+    ! other
+
 unlimtariffs.ru##.gift.block
 unlimtariffs.ru##.cool.content.block
 ||unlimtariffs.ru/img/cards-footer.png
@@ -25637,9 +25655,6 @@ lepide.com##.content-sec-form
 
 marwat-tech.com##.theiaStickySidebarIfy:style(position:static !important)
 
-coursary.com##.mp-pusher
-coursary.com##.float_bottom_popup
-
 courssatnet.blogspot.com$inline-script  # ad redirects
 
 hackr.io##.appstore-links
@@ -25652,4 +25667,3 @@ mega.nz##.pages-menu:style(position:static !important)
 mega.nz##body:style(user-select:initial !important)
 mega.nz##body *:style(user-select:initial !important)
 
-recruitics.com$3p  # is in Adguard  # ad redirects, but..
