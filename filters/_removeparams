@@ -144,6 +144,7 @@ $removeparam=/campaign/,domain=~recruitics.com  # maybe it needs i? Not sure
     ! doctolib.de$removeparam=utm_website  # from Adguard
     ! editor.flixier.com$removeparam=/fx_(source|medium|campaign)/  # from Adguard
     ! ||play.google.com/store/$removeparam=pcampaignid  # from Adguard
+    ! indeed.com$removeparam=campaignid
     ! nationalgeographic.com$removeparam=utm_rd  # from Adguard
     ! revolut.com$removeparam=%7Ecampaign_id  # from Adguard
     ! shopyourlikes.com$removeparam=afCampaignId
@@ -261,6 +262,7 @@ $removeparam=from,domain=~yandex.*|~auth.mail.ru|~sberbank.ru
     ! fmworld.net$removeparam=from  # from Adguard
     ! hh.ru$removeparam=from
     ! /?from_block=$document,removeparam=from_block,domain=www.kinopoisk.ru  # from Ru AdList
+    ! indeed.com$removeparam=from
     ! pikabu.ru$removeparam=from
     ! rbc.ru$removeparam=from
     ! ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
@@ -2045,8 +2047,16 @@ music.apple.com$removeparam=itsct  # from Adguard
 @@/mediaserver/*$removeparam,domain=ramtrucks.com|chrysler.com|fiatusa.com|alfaromeousa.com|jeep.com|dodge.com  # from Adguard
 
 ! jk - job id, don't block
+indeed.com$removeparam=fromjk
 indeed.com$removeparam=tk  # session id
 indeed.com$removeparam=vjs
+!
+indeed.com$removeparam=pos
+indeed.com$removeparam=mvj
+indeed.com$removeparam=spon
+indeed.com$removeparam=sjdu
+indeed.com$removeparam=vjfrom
+indeed.com$removeparam=assa
 
 bunte.de$removeparam=umt_source  # from Adguard
 
@@ -2068,3 +2078,11 @@ campaign-archive.com$removeparam=u
 
 hclips.com$removeparam=fr
 hclips.com$removeparam=rp
+
+myworkdayjobs.com$removeparam=src
+
+adp.com$removeparam=rb  # ref
+
+mirror.co.uk$removeparam=int_source  # from Adguard
+
+wiley.com$removeparam=/elq/  # from Adguard
