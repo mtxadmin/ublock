@@ -1063,6 +1063,7 @@ doubleclick.net$removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|[abdeg-or-x])/  # fr
 doubleclick.net$removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|u_|ga_|url|dt|adk)/  # from uBlock filters
 doubleclick.net$removeparam=/^dc_trk_/  # from Adguard
 doubleclick.net$removeparam=p  # from uBlock filters
+doubleclick.net$all,removeparam=/^([a-dfmnr-u]|e[ir]|ga|i[dfm]|o[hi]|p[s-v]|vi)/  # from uBlock filters
 
 ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
 ebay.*$removeparam=hash  # from NeatURL
@@ -1150,32 +1151,32 @@ hentai-party.com$removeparam=view
     ! ||hentai-party.com/*?view=$doc,other,removeparam=view  # from uBlock filters
 
 ! hh.ru domains
-! hh.ru,career.ru,hh.by,rabota.by,hh.kz,hh.ua,grc.ua
-$removeparam=dpt,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+! hh.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg
+$removeparam=dpt,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
-$removeparam=email_hash,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=email_hash,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
-$removeparam=hhtmFrom,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=hhtmFrom,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
-$removeparam=hhtmFromLabel,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=hhtmFromLabel,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
   # Arguably
-$removeparam=loginkey,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=loginkey,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
-$removeparam=position,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=position,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
   # NOT search
-$removeparam=query,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=query,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
-$removeparam=requestId,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=requestId,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
-$removeparam=sent_date,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=sent_date,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
-$removeparam=targetingParams,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=targetingParams,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
-$removeparam=totalVacancies,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=totalVacancies,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 !
-$removeparam=vss,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+$removeparam=vss,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 
 ! already blocked
 hololivepro.com$removeparam=pr_rec_id  # from Adguard
@@ -2086,3 +2087,17 @@ adp.com$removeparam=rb  # ref
 mirror.co.uk$removeparam=int_source  # from Adguard
 
 wiley.com$removeparam=/elq/  # from Adguard
+
+tiktok.com$removeparam=is_from_webapp
+tiktok.com$removeparam=item_id
+!
+tiktok.com$removeparam=btag
+tiktokcdn.com$removeparam=btag
+tiktok.com$removeparam=cd
+tiktokcdn.com$removeparam=cd
+tiktok.com$removeparam=ft  # some uid
+tiktokcdn.com$removeparam=ft  # some uid
+tiktok.com$removeparam=l
+tiktokcdn.com$removeparam=l
+tiktok.com$removeparam=rc  # some uid
+tiktokcdn.com$removeparam=rc  # some uid
