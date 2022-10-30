@@ -8441,13 +8441,13 @@ hft.ru##.footer__pay
 ! other
 
 ! hh.ru domains:
-! hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.ua,grc.ua
+! hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg
 !
-/performance_stat$domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+/performance_stat$domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
     ! ||hh.ru/performance_stat
     ! ||career.ru/performance_stat
 !
-/stat$domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.ua|grc.ua
+/stat$domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
     ! ||hh.ru/stat  # is in Adguard
     ! ||career.ru/stat
     ! ||hh.kz/stat
@@ -8457,9 +8457,10 @@ hft.ru##.footer__pay
 !
 ||hhcdn.ru/ichameleon/$image
 !
-||hhcdn.ru/employer-logo/$image
-||hh.ru/employer-logo/$image
-||hh.kz/employer-logo/$image
+/employer-logo/$image,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
+  ! ||hhcdn.ru/employer-logo/$image
+  ! ||hh.ru/employer-logo/$image
+  ! ||hh.kz/employer-logo/$image
     ! top
 hh.ru,career.ru##.HH-RelatedVacanciesPreview-StickyContainer
 hh.ru,career.ru##.navi__menu:style(position:static !important)
@@ -8511,14 +8512,14 @@ hh.ru##.bloko-social-icon_dnr
 ||i.hh.ru/css/globals/blocks/dashboard-tiles/viber__min_.svg
     ! popups
 hh.ru##[class^=wrapper]:has-text(приложении)
-hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.ua,grc.ua##[class^=overlay]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=overlay]
 hh.ru##[class^=container--]
 ! задолбали продвигать свой автопоиск
 hh.ru##.supernova-notification:has-text(автопоиск)
 hh.ru##.supernova-navi-counter_dot-only
-!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.ua,grc.ua##.bloko-modal-overlay - todo, there are some useful popups
-    hh.ru,hh.by,rabota.by,hh.kz,hh.ua,grc.ua##.bloko-modal-overlay:has-text(Пусть поднимает бот)
-hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.ua,grc.ua##.bloko-notification
+!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay - todo, there are some useful popups
+    hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay:has-text(Пусть поднимает бот)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-notification
     ! apps
 ||hh.ru/*/index-messengers-bots/
 hh.ru,hh.kz##.messengers-bots-qr-code
