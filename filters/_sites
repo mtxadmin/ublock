@@ -7683,6 +7683,7 @@ glashkoff.com##div.alert-info.alert.undefined.wp-block-vk-blocks-alert:has-text(
 
 ||glassdoor.com/app/static/js/gd-fj-ads-init  # from Hufilter
 ||glassdoor.com/assets/images/locked-home/hero-brand-campaign$image
+||glassdoor.*/geb/events/  # from Adguard
     ! popups
 glassdoor.com##.mfp-bg
 glassdoor.com##.mfp-wrap
@@ -12819,6 +12820,10 @@ miltor.ru##.navbar-header
 mindmajix.com###exitpop
 mindmajix.com##.footer-sticky
 mindmajix.com##.MuiFab-root
+!inline ads
+mindmajix.com##table
+!subs
+mindmajix.com##.jss50
 
 ||minfin.com.ua/i/multi-invest/
 minfin.com.ua##.header-top__bonus
@@ -22012,6 +22017,8 @@ uplab.ru###Layer_1
 uptimerobot.com##.notyfy_container
 uptimerobot.com###main-container:style(opacity:initial !important)
 uptimerobot.com##.main-container:style(opacity:initial !important)
+uptimerobot.com##.modal-scrollable:has(#upgradeOrFree)
+!uptimerobot.com##.modal-scrollable:has(.hide)
     ! banners and promos
 uptimerobot.com###top-bar-banner-container
 uptimerobot.com##.upgradeProAccount
@@ -22020,6 +22027,8 @@ uptimerobot.com###headerMenuWrap:style(position:static !important)
 uptimerobot.com###main-sidebar:style(margin-top:0px !important)
 uptimerobot.com###header-container
 uptimerobot.com##.sidebar-item:style(position:static !important)
+uptimerobot.com##iframe[name^="__privateStripeMetricsController"]
+uptimerobot.com###sortMonitors:style(position:static !important)
 
 uptimesoftware.com##.uimGridHeaderLogoBox
 
@@ -24133,6 +24142,8 @@ yaplakal.com##.telega_button
 yaplakal.com##div > div > b:has-text(в Телеграм-канале)
 yaplakal.com##tr.collapsebox > td.darkrow3
 yaplakal.com###super-search
+! some signatures
+yaplakal.com##.postcolor > span
 
 yapoel.ru##[href^="https://www.ozon.ru/referral/"]
 yapoel.ru##.parallax-mirror
@@ -25734,3 +25745,11 @@ mega.nz##body *:style(user-select:initial !important)
 
 ttpsc.com##html:style(opacity:initial !important)
 
+techtarget.com$3p  # don't block entirely  # "Real revenue results  Latest sales & marketing thinking"  # Also see https://forums.lanik.us/viewtopic.php?f=64&t=44717 (EasyList)
+||techtarget.com^*/GetCookiesWithCallback?  # from EasyPrivacy
+
+||tiktok.com/web/report
+||ttwstatic.com/obj/tiktok-web-us/pns/tiktok-cookie-banner/
+tiktok.com##[class*=StyledLinkLogo]
+
+topcv.com###headerSinglePriceCTA
