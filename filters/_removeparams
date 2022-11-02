@@ -249,8 +249,9 @@ $removeparam=fref  # from Ru AdList
 
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
-$removeparam=from,domain=~yandex.*|~auth.mail.ru|~sberbank.ru
+$removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~sberbank.ru
     ! ~auth.mail.ru exception is from Ru AdList. Don't know, but ok
+    ! ~account.mail.ru - v2 of it
     !
     ! /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
     ! 3dnews.ru$removeparam=from
@@ -265,7 +266,7 @@ $removeparam=from,domain=~yandex.*|~auth.mail.ru|~sberbank.ru
     ! indeed.com$removeparam=from
     ! pikabu.ru$removeparam=from
     ! rbc.ru$removeparam=from
-    ! ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~account.mail.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
+    ! ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
     ! ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
     ! mp.weixin.qq.com$removeparam=from  # from Adguard
     ! ||daraz.*$removeparam=/from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/  # from Adguard: ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
