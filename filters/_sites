@@ -4114,6 +4114,9 @@ cloudenius.com###masthead
 
 cloudflare.com###top-navbar:style(position:static !important)
 
+cloudflare-quic.com##.desktop-nav:style(position:static !important)
+cloudflare-quic.com##.mobile-nav:style(position:static !important)
+
 ||cloudfront.net/atrk.js$important
 ||cloudfront.net/videojs/videojs-contrib-ads.js$script,important,redirect-rule=noopjs  # from uBlock filters
 ||cloudfront.net/vis_opt.js$important
@@ -6231,6 +6234,8 @@ etpgpb.ru##.blurable:style(filter:none !important)
 etpgpb.ru##.modal--archiveProcedure.modal
     ! other
 
+eurabota.com##.artop
+
 eureca.ru##.left_stick
 
 !moving slides
@@ -6262,6 +6267,8 @@ europa.eu##.ema-share-btn-wrapper
 europa.jobs##.help-btn
 !inline
 europa.jobs##.wp-block-buttons
+
+||euro-rabota.com/favicon.ico  # gif
 
 ||euroroaming.ru/*/Logo$image
 euroroaming.ru##.fab__button
@@ -7526,6 +7533,16 @@ gethuman.com##.bar-share
 
 gethunt.ru##.appNotifications
 gethunt.ru##.margin-bottom-20
+
+||getmatch.ru/uploads/companies_logos/$image
+! убогие нечитаемые шрифты
+getmatch.ru##*:style(font-family:initial !important)
+! визуальный мусор в списке
+getmatch.ru##.b-vacancy-card-actions
+getmatch.ru##.b-go-top
+getmatch.ru##.b-salaries-banner
+getmatch.ru##.company__list
+getmatch.ru##app-people
 
 getstream.io##.str-topbar:style(position:static !important)
 
@@ -10136,6 +10153,8 @@ justconnect.ru##.arcticmodal-overlay
 ! other
 justconnect.ru##.index_top_phone
 
+justlanded.com##.justin-footer
+
 justworldporn.com##.dbz
 justworldporn.com##.fur
 
@@ -10935,6 +10954,8 @@ krasotaimedicina.ru##.fullLogoIndex
 krasotaimedicina.ru##.kmHead:style(position:static !important)
 krasotaimedicina.ru##.ratingBlock
 krasotaimedicina.ru##.kmFNText
+
+kray-zemli.com##.quote
 
 kremlin.ru##.wrapfix:style(position:static !important)
 
@@ -16315,6 +16336,8 @@ prismic.io$3p,script
 ||agent.privatbank.ua/branches$third-party  # from Adguard
 ||agent.privatbank.ua/gadget$third-party  # from Adguard
 
+prmira.ru##.close-block
+
 prnt.sc##.header
 
 probirka.org##.main-nav:style(position:static !important)
@@ -20532,6 +20555,9 @@ techstronghold.com##body.fixed-nav:style(padding-top:0px !important)
 techsupportforum.com###head_image
 ||techsupportforum.com/forums/images/sk/logonew.png
 
+techtarget.com$3p  # don't block entirely  # "Real revenue results  Latest sales & marketing thinking"  # Also see https://forums.lanik.us/viewtopic.php?f=64&t=44717 (EasyList)
+||techtarget.com^*/GetCookiesWithCallback?  # from EasyPrivacy
+
 techwalla.com##.email-capture-popup-container
 techwalla.com##.popup-mask
 
@@ -21031,9 +21057,21 @@ tiger-gun.ru##.wrap:style(padding-top:0px !important)
 tiger-gun.ru##.bg_footer:style(position:static !important)
 tiger-gun.ru##.prop_licen_item
 
+||tiktok.com/web/report
+||ttwstatic.com/obj/tiktok-web-us/pns/tiktok-cookie-banner/
+tiktok.com##[class*=StyledLinkLogo]
+
 ||tildacdn.com/js/tilda-errors  # ad telemetry script
 ||tildacdn.com/js/tilda-stat  # ad telemetry script
 ||tildacdn.com/*/noroot.png
+
+time.com##.grecaptcha-logo
+time.com##.grecaptcha-badge
+time.com##.navigation
+time.com###pushdown-ad
+time.com##.magazine-region-header
+time.com##.social-links
+time.com##.top-banner
 
 timeanddate.com###naw:style(position:static !important)
 timeanddate.com###header__inner:style(top:0px !important)
@@ -21051,6 +21089,8 @@ timepad.ru##.mmainmenu__logo-wrapper
 timepad.ru##.meventpage__floating-header:style(position:static !important)
 timepad.ru##.meventpage__floating-title:style(position:static !important)
     ! other
+
+timescale.com##.post-page__meta:style(position:static !important)
 
     ! top and left tg banners
 ||timetoboil.ru/images/plate1.png
@@ -21231,6 +21271,8 @@ tonygonzalez0379.com##.donations__container
 topbestalternatives.com##div.app.section
 
 ||topclimat.ru/$third-party
+
+topcv.com###headerSinglePriceCTA
 
 topdb.ru$3p
 
@@ -23166,6 +23208,10 @@ watchmusic.ru##.Notice
 water-service.com.ua##.art-header
 
 waygrand.com###sp-header
+
+! inline
+wccftech.com##.story-related
+wccftech.com##.story-products-wrapper
 
 wday.ru##.app-header__wrapper:style(position:static !important)
 wday.ru##.app-header__sticky-placeholder
@@ -25763,34 +25809,3 @@ mega.nz##body *:style(user-select:initial !important)
 
 ttpsc.com##html:style(opacity:initial !important)
 
-techtarget.com$3p  # don't block entirely  # "Real revenue results  Latest sales & marketing thinking"  # Also see https://forums.lanik.us/viewtopic.php?f=64&t=44717 (EasyList)
-||techtarget.com^*/GetCookiesWithCallback?  # from EasyPrivacy
-
-||tiktok.com/web/report
-||ttwstatic.com/obj/tiktok-web-us/pns/tiktok-cookie-banner/
-tiktok.com##[class*=StyledLinkLogo]
-
-topcv.com###headerSinglePriceCTA
-
-cloudflare-quic.com##.desktop-nav:style(position:static !important)
-cloudflare-quic.com##.mobile-nav:style(position:static !important)
-
-time.com##.grecaptcha-logo
-time.com##.grecaptcha-badge
-time.com##.navigation
-time.com###pushdown-ad
-time.com##.magazine-region-header
-time.com##.social-links
-time.com##.top-banner
-
-eurabota.com##.artop
-
-||euro-rabota.com/favicon.ico  # gif
-
-justlanded.com##.justin-footer
-
-kray-zemli.com##.quote
-
-timescale.com##.post-page__meta:style(position:static !important)
-
-prmira.ru##.close-block
