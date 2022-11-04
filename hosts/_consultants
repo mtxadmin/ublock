@@ -172,9 +172,9 @@
     ! expats.cz: Job apply form - .default-form has-validation-callback
 ##[id*="callback"]:not(html):not(body):not(article)
 ! good rules in general, but messengers and webinar services must be excluded
-~aliexpress.com,~bizon365.ru,~dhgate.com,~fincult.info,~worknf.ru##[class*="Chat"]:not(html):not(body):not(article):not(section)
+~aliexpress.com,~bizon365.ru,~dhgate.com,~fincult.info,~worknf.ru,~telemost.yandex.ru##[class*="Chat"]:not(html):not(body):not(article):not(section)
 ~worknf.ru##[id*="Chat"]:not(html):not(body):not(article):not(section)
-~advance24.online,~aliexpress.com,~bizon365.ru,~chatik.hh.ru,~clickmeeting.com,~dhgate.com,~fincult.info,~gosuslugi.ru,~icq.com,~telemetr.io,~twitch.tv,~vk.com,~worknf.ru##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
+~advance24.online,~aliexpress.com,~bizon365.ru,~chatik.hh.ru,~clickmeeting.com,~dhgate.com,~fincult.info,~gosuslugi.ru,~icq.com,~telemetr.io,~twitch.tv,~vk.com,~worknf.ru,~telemost.yandex.ru##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
 ~bizon365.ru,~clickmeeting.com,~facebook.com,~gosuslugi.ru,~telethon.dev,~twitch.tv,~vk.com,~worknf.ru,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"])
 ##.bellLightB
 ##.btn-call-back
@@ -287,7 +287,7 @@ adblade.com
 !+  cdn.adblade.com
 ! end of adblade.com
 
-adblockdetecter.ru
+adblockdetecter.ru  # Checked:2022-10-17
 
 adcalls.com  # closed ?
 adcalls.nl
@@ -447,6 +447,8 @@ billionpush.com  # from GoodbyeAds
 binotel.ua
 binotel.com  #my.binotel.ua  #widgets.binotel.com
 
+bitspush.io  # from EasyList
+
 blablateka.com  # push ad scripts  # seems closed  # zombie
 
 blinger.ru
@@ -479,6 +481,8 @@ boldchat.com$important
 
 bosspush.com$important  # is in RU AdList and Fanboy’s
 
+botpenguin.com
+
 boxcar.io
 
 brainsins.com  # tracking and popup ad scripts
@@ -487,7 +491,7 @@ britopush.com  # from Adguard
 
 brn.ai
 
-bropush.site  # from Ru AdList
+bropush.site  # from Ru AdList  # Checked:2022-11-03
 
 browserpusher.com  # from Adguard
 
@@ -704,7 +708,7 @@ clickdesk-dot-sandbox-dot-agile-crm-cloud.appspot.com$important
 
 clicklive.ru
 
-clickpay.money$important  # push ads network
+clickpay.money$important  # push ads network  # Checked:2022-10-17
 
 clickpush.biz  # from uBlock filters - Badware
 
@@ -818,7 +822,7 @@ customerly.io
 czater.pl  # "Live chat i telefon na stronę  Co daje livechat i callback"
 chater.biz
 
-czpush.com  # from Adguard
+czpush.com  # from Adguard  # Checked:2022-10-17
 
 daksham.in$important  # empty root  # in 2 lists
 
@@ -924,7 +928,7 @@ eyenewton.ru
 eyetronic.net
 eyepost.ru
 
-f1call.com
+f1call.com  # Checked:2022-11-03
 
 face-push.com
 
@@ -1416,6 +1420,7 @@ mampark.ru$important  # push ads  # domain is parked in reg.ru, but push ads scr
 widgets.mango-office.ru$important  # ad scripts
 
 manychat.com$important  # "Chat Marketing"  #widget.manychat.com
+manychat.com.hk
 mccdn.me  # from The SNAFU Blocklist  # manychat
 
 marketingcontrols.com  # push ads  # "Click Allow to confirm that you are not a robot"
@@ -1439,7 +1444,7 @@ vats.megafon.ru
 megapbx.ru
 
 megapu.sh$important  # push ads network
-leo.cash$important
+leo.cash$important  # Checked:2022-11-03
 
 mega-push.com  # from Ru AdList
 
@@ -1743,7 +1748,7 @@ push.express$important  # push ads network
 
 push.gold$important  # push ads network  # Zombie:2022-09-20
 
-push.guru$important  # push ads network
+push.guru$important  # push ads network  # Checked:2022-10-17
 
 push.house$important  # push ads network
 gotohouse1.club  # push.house
@@ -1798,7 +1803,7 @@ pushance.com$important  # ad scripts
 
 pushanert.com  # from Adguard
 
-pushark.com$important  # push ads network
+pushark.com$important  # push ads network  # Checked:2022-10-17
 
 pushassist.com
 
@@ -1837,6 +1842,7 @@ pushcode.jp  # from Adguard
 pushcodetop.ru$important  # push ad scripts
 
 pushcrew.com$important  # VWO Engage - Tracker  # is in Quidsup NoTrack-Blocklist
+/pushcrew.js
 
 pushd.com  # from GoodbyeAds
 !+  email-mandrill.pushd.com
@@ -1902,7 +1908,7 @@ pushex.io  # from Adguard
 pushex.net$important  # push ads network
 /pushexsdk.  # from Ru AdList
 
-pushey.net$important  # push ads network
+pushey.net$important  # push ads network  # Checked:2022-10-17
 
 pushfeeds.com  # from Adguard
 
@@ -1995,7 +2001,7 @@ pushmejs.com
 
 pushmeup.art$all  # from GoodbyeAds  # from uBlock filters - Badware
 
-push-me-up.com  # root 403
+push-me-up.com  # root 403  # Checked:2022-10-17
 
 pushmobilemedia.com
 
@@ -2014,13 +2020,11 @@ pushnetwork.com  # Digital Media Solutions - Advertising  # from Quidsup NoTrack
 pushnevis.com  # from Adguard
 
 pushnews.eu
-
-push-news.net  # from GoodbyeAds
-
 pushnews.org  # from Adguard
-
+push-news.org  # from EasyList
+push-news.net  # from GoodbyeAds
 pushnews24.com  # from GoodbyeAds
-
+push-news-info.com$all  # from EasyList  # Checked:2022-11-03
 pushnewsnow.com  # from GoodbyeAds
 
 pushnice.com  # from Adguard
@@ -2182,7 +2186,7 @@ putncall.com
 
 puwpush.com  # from GoodbyeAds
 
-qaeuzk.com
+qaeuzk.com  # Checked:2022-11-03
 
 qarm.org
 
@@ -2291,10 +2295,15 @@ rocketcall.ru$important  # "обзвон по базам"
 
 rocket-push.com  # from GoodbyeAds
 
+rockstartpush.com  # from EasyList
+rockstartpush.net  # from EasyList
+
 roistat.com$important  # "Marketing Analytics System"
 roistat.net$important
 
 rollcall.com  #scout.rollcall.com
+
+rushpushy.com  # from EasyList
 
 rvrpushserv.com  # from GoodbyeAds
 rvrpushsrv.com  # from GoodbyeAds
@@ -2762,6 +2771,8 @@ vuukle.com
 ! end of vuukle.com
 
 wame.chat
+
+wascrm.com  # SocialEpoch
 
 webandname.com  # default root  # from Adguard: push.webandname.com
 
