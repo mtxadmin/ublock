@@ -250,7 +250,7 @@ $removeparam=fref  # from Ru AdList
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
 $removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~sberbank.ru
-    ! ~auth.mail.ru exception is from Ru AdList. Don't know, but ok
+    ! ~auth.mail.ru exception is from Ru AdList. Don't know, but ok. Update: removing it prevent useful popups, so it's really ok.
     ! ~account.mail.ru - v2 of it
     !
     ! /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
@@ -2102,3 +2102,5 @@ tiktok.com$removeparam=l
 tiktokcdn.com$removeparam=l
 tiktok.com$removeparam=rc  # some uid
 tiktokcdn.com$removeparam=rc  # some uid
+
+getmatch.ru$removeparam=s  # ref
