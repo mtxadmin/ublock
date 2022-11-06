@@ -227,7 +227,7 @@
 ! from Adguard
 2gis.*##.layout__app > a[href^="https://2gis.onelink.me/"]
 
-2ip.ru$3p  # ad cookies
+2ip.ru$3p  # ad cookies  # also is in Ru AdList
 
 2kom.ru##.menu-2016:style(position:static !important)
 2kom.ru##.footer2-social
@@ -6282,6 +6282,8 @@ eva.ru##.recomedations
 eva.ru##.btn-ok
 eva.ru##a.btn-primary.btn
 eva.ru##.eva:style(padding-top:0px !important)
+! from Adguard
+eva.ru##a[href^="http://ad.eva.ru/"]
 
 evastroy.ru###pop-up-fortuneteller-answer.fortuneteller-answer.pop-up
 evastroy.ru##.overlaynew
@@ -6987,8 +6989,14 @@ f-np.ru##.avatar
 f-np.ru##.online-list.stat-block
 f-np.ru##.profile-rank
 
+    ! inline related
+focus.ua##.u-link.c-post__card
+focus.ua##.s-content > ul:has-text(ЧИТАЙТЕ ТАКЖЕ)
+    ! other
 focus.ua##.c-banner__logo
 focus.ua##.c-support
+!inline
+focus.ua##p:has(strong:has-text(Telegram))
 
 forum.fonarevka.ru###krsmPageNav
 forum.fonarevka.ru###krtab_content
@@ -7539,6 +7547,9 @@ gethunt.ru##.margin-bottom-20
 getmatch.ru##*:style(font-family:initial !important)
 ! визуальный мусор в списке
 getmatch.ru##.b-vacancy-card-actions
+! popups
+getmatch.ru##.in-app-announce
+    ! other
 getmatch.ru##.b-go-top
 getmatch.ru##.b-salaries-banner
 getmatch.ru##.company__list
@@ -8786,7 +8797,7 @@ hostenko.com##.wpcafe-logo
 
 hostinger.com##.colored:style(position:static !important)
 
-host-tracker.com$3p  # from MVPS  # moved to 3p
+host-tracker.com$3p  # from MVPS and Ru AdList  # moved to 3p
 host-tracker.com##.simplebar-mask
 
 hotbabeswanted.com##a[href="/partners/"]
@@ -11151,6 +11162,7 @@ lakshmikanth.com##.site-header-content
 laminat-msc.ru##.article-rate
 laminat-msc.ru##.rating
 
+||lamoda.ru/z?  # from EasyPrivacy
 ! После удаления баннеров главная страница необычно чиста :-) Но меню и поиск работают. Рекламное мельтешение не отвлекает от выбора.
     ! banners and promos
 lamoda.ru##.main-banner__redesign
@@ -12952,10 +12964,37 @@ mir-sumok.ru##.cheaper_button_block
 mir-sumok.ru##.wrapper-toolbar
 mir-sumok.ru##.applist
 
-! from Fanboy's
-||mirtesen.ru^$third-party
+||mirtesen.ru^$third-party  # from Fanboy's
+||mirtesen.ru/gadgets/partner.php$third-party,script  # from Ru AdList
+||mirtesen.ru/js/ms.js  # from EasyPrivacy
+||mirtesen.ru/pa*/js/*&callback=news_  # from Ru AdList
+||gamma.mirtesen.ru/mtop  # from Ru AdList
 mirtesen.ru###local:style(margin-top:0px !important)
 mirtesen.ru##.blog-post__subscribe
+! from Adguard
+mirtesen.ru#$#.app-promotion-fullscreen { display: none !important; }
+! from Adguard
+mirtesen.ru,kino-teatr.ru###aio_passback
+! from Adguard
+mirtesen.ru###mainPageLeftAds
+! from Adguard
+mirtesen.ru##.post-data > div[id^="pad_b"]
+! from Adguard
+pnp.ru,kino-teatr.ru,ren.tv##a[href="http://mirtesen.ru/"]
+! from Adguard
+mirtesen.aif.ru,mirtesen.profile.ru,mirtesen.sovsport.ru,mirtesen.spletnik.ru,mirtesen.sputnik.ru,mirtesen.tsargrad.tv,mt.argumenti.ru,mt.karelinform.ru,mt.korolevriamo.ru,mt.riamobalashiha.ru,mt.subscribe.ru,social.iz.ru,social.primechaniya.ru,social.radioromantika.ru,social.sport.ru,social.steaklovers.menu,mirtesen.ru##.blog-post__video-ad
+! from Adguard
+mirtesen.aif.ru,mirtesen.profile.ru,mirtesen.sovsport.ru,mirtesen.spletnik.ru,mirtesen.sputnik.ru,mirtesen.tsargrad.tv,mt.argumenti.ru,mt.karelinform.ru,mt.korolevriamo.ru,mt.riamobalashiha.ru,mt.subscribe.ru,social.iz.ru,social.primechaniya.ru,social.radioromantika.ru,social.sport.ru,social.steaklovers.menu,mirtesen.ru###very-right-column
+! from Adguard
+mirtesen.aif.ru,mirtesen.profile.ru,mirtesen.sovsport.ru,mirtesen.spletnik.ru,mirtesen.sputnik.ru,mirtesen.tsargrad.tv,mt.argumenti.ru,mt.karelinform.ru,mt.korolevriamo.ru,mt.riamobalashiha.ru,mt.subscribe.ru,social.iz.ru,social.primechaniya.ru,social.radioromantika.ru,social.sport.ru,social.steaklovers.menu,mirtesen.ru##.blog-post__share
+! from Adguard
+mirtesen.ru##.sportrecs
+    ! from Adguard
+    !pravdaru.mirtesen.ru##.sportrecs
+! from Adguard
+mirtesen.ru##.partner-block-wrapper
+! from Adguard
+mirtesen.ru##.container > div[id^="block-"]:has(> div > div[class^="container-"] + style)
 
 mirvracha.ru$inline-script
 mirvracha.ru##.mobile-registration-form
@@ -13198,6 +13237,7 @@ morkniga.ru##.phone_block
 morzh.pro##.privacy-container
 morzh.pro##.footer-subscribe-container
 
+||mos.ru/shared/counters/spatz.js
 mos.ru##[class^="Header_header"]:style(position:static !important)
 mos.ru##[class^="Header_spacer"]
 mos.ru##[class^="Caption_title"]
@@ -14160,6 +14200,7 @@ nn.ru##.invitation
 nndv.ru###logobar
 nndv.ru###votesPanel
 
+||cdn.*/libs/b.js$third-party,domain=nnmclub.ro|nnm-club.t0r.xyz|nnm-club-me.appspot.com|nnm-club.lib|nnm-club.me|nnmclub.to  # from Adguard
 ! Ru AdList rule
 nnmclub.to##+js(abort-current-inline-script, Math.random)
 ! Adguard rule
@@ -14864,6 +14905,7 @@ forums.opera.com##.slideout-menu
 forums.opera.com##.topic-main-buttons > .operaLoginButton
 forums.opera.com##.topic-header:style(position:static !important)
 forums.opera.com##.post-footer:style(top:0px !important)
+forums.opera.com##.status
 opera.com##.frame-hero
 opera.com##.block--frame
 opera.com##.header__menu-nav:style(padding-top:0px !important; padding-bottom:0px !important)
@@ -15170,6 +15212,7 @@ ozerki.ru##.medication__banner
 ozerki.ru##.g-section_banner
 
 ||ozon.ru/referral/
+||ozon.ru/tracker/  # from EasyPrivacy
 ||ozone.ru/s3/client-metrics/
     ! top
 !ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
@@ -16254,7 +16297,9 @@ pravoved.ru##.header-top__support-phone
 pravoved.ru##.header-top__support-info
 ||pravoved.ru/polling/  # ad xhrs
 
+pr-cy.ru^$third-party  # from Ru AdList
 pr-cy.ru##.ipsUserPhoto
+||prcy.  # from Ru AdList
 
 prcy-info.ru$3p  # from Adguard
 
@@ -16937,7 +16982,9 @@ rb.ru##.custom-tag-banner
 
 /rbcmetrika-  # is in EasyPrivacy
 ||rbc.ru$script,domain=~rbc.ru|~rbk.ru  # strange 3p scripts
+||rbc.ru/click?  # from Ru AdList
 ||rbk.ru/*/_core.js  # site breaks copypaste
+rbc.ru*/geoinfo/by-ip/  # from Ru AdList
 ||rbk.ru/*/gt-targeting.js
 ||rbk.ru/*/_paywall.js
 ||rbk.ru/*/paywall
@@ -17092,7 +17139,7 @@ reddit.com##*:matches-css(position:fixed)
 reddit.com##.redditname.pagename.hover
 reddit.com##.commentsignupbar.infobar
 reddit.com##.listingsignupbar.infobar
-reddit.com##[id^="AppRouter-main-content"]:style(padding-top:0px !important)
+reddit.com##[id^="AppRouter-main-content"]:style(padding-top:0px !important; padding-left:0px !important)
     ! other
 ! from EasyList
 reddit.com##div[id^="overlay-sidebar-atf-"]
@@ -18363,6 +18410,7 @@ sbcode.net##.md-sidebar:style(position:static !important)
 ||sberbank.ru/sms/
 ||sberbank.ru/t/
 ||sberbank.ru/web/broker-api/v1/content/feedbacks
+!
 ! So many bad looking backgrounds there...
     ! old design
 !||stat.online.sberbank.ru/CSAFront-res/32.0/skins/sbrf/images/csa/loginPage/slide0.jpg
@@ -18403,6 +18451,7 @@ spasibosberbank.ru##.popup-custom__container
 spasibosberbank.ru##.popup-custom
 spasibosberbank.ru##.popup_app_container
 sberbank.ru###design30Banner
+sberbank.ru###stories-region
     ! other
 sberbank.ru##div[id^=notification]:has(.bunnerLists)
 sberbank.ru##.chat-retail-block
@@ -20500,15 +20549,30 @@ technopark.ru##.header__main--fixed:style(position:static !important)
 !technopark.ru##.js-analytics-list - don't
 technopark.ru##.recommendations-box
 
+! technopoint.ru is dns-shop.ru project, look in there
+
 technosova.ru##.bottomline
 technosova.ru###top_header_menu
 technosova.ru##.cd-top
+
+techopedia.com##.topSiteLink
+techopedia.com##.featured-form
+techopedia.com##.dictionaryAd
 
 techport.ru##.tcp-logo
 ||techport-st.cdn.ngenix.net/aero/images/general/section.png
 techport.ru##.tcp-subscribe
 techport.ru##.tcp-social-line
 techport.ru##.you-just-watched
+techport.ru##.tcp-nuid
+techport.ru##.tcp-item-sidebar
+techport.ru###city-accept
+techport.ru##.tcp-find-bug
+techport.ru##.tcp-about-rating
+techport.ru##.tcp-product-detail:nth-of-type(2)
+techport.ru##.tcp-modal-complectation-warning
+
+techproresearch.com###site-search
 
 ! @@||techradar.com^$generichide in Fanboy's. Hmm... Ok.
     ! logos
@@ -20546,20 +20610,47 @@ techrepublic.com##newselement
     ! other
 techrepublic.com##.locked
 techrepublic.com##.in-reply-to
+techrepublic.com##.go-to-content
+techrepublic.com##.desktop.parallax.mega-display
+techrepublic.com##p:has-text(Download this article as a PDF (free registration required))
 
 techspot.com##.intro
 techspot.com##.notice
+techspot.com##.Notice
 
 techspree.net###title-area
 
 ||techstronghold.com/media/shared/social
 techstronghold.com##body.fixed-nav:style(padding-top:0px !important)
 
-techsupportforum.com###head_image
+||techsupportforum.com/forums/asap/$image
 ||techsupportforum.com/forums/images/sk/logonew.png
+techsupportforum.com###head_image
+techsupportforum.com##.p-header-banner
 
 techtarget.com$3p  # don't block entirely  # "Real revenue results  Latest sales & marketing thinking"  # Also see https://forums.lanik.us/viewtopic.php?f=64&t=44717 (EasyList)
 ||techtarget.com^*/GetCookiesWithCallback?  # from EasyPrivacy
+techtarget.com###comments-1-miniRegv2-loginForm-1-buttonExpand
+! todo: jumping header, sticky-kit
+techtarget.com###page-header
+cdn.ttgtmedia.com$script
+techtarget.com##.sign-up-wrapper
+techtarget.com##.extra-info
+techtarget.com##.dig-deeper
+
+tech-touch.ru##.logo-outer-wrapper
+tech-touch.ru##.sidebar.right-sidebar
+tech-touch.ru##.kc__wrap
+tech-touch.ru##.read_more
+
+techunboxed.com###header-inner
+techunboxed.com##footer
+techunboxed.com###Image1_img
+
+techveze.com##.sidebar-to-right
+techveze.com##.nav-wrapper
+techveze.com##.shortcode_widget
+techveze.com##footer
 
 techwalla.com##.email-capture-popup-container
 techwalla.com##.popup-mask
@@ -20583,6 +20674,10 @@ teenhooker.net$frame,1p  # from uBlock filters
 teenpussy.pink##.pause-block
 teenpussy.pink##.mask
 
+||teh-beauty.ru/wp-content/uploads/2018/08/makeup-clipart-girly-wallpaper-16.jpg
+teh-beauty.ru##.widget:has-text(Об авторе)
+teh-beauty.ru###head_top_block
+
 tehnika.expert##.navi
 
 tehnobzor.ru##.btn:has-text(AliExpress)
@@ -20591,6 +20686,8 @@ tehnobzor.ru##.footer-info > noindex
 tehnobzor.ru##^script:has-text(oncopy)
 ! other
 tehnobzor.ru##.mistape_caption
+tehnobzor.ru##.lWeWePOBoUda-bg
+tehnobzor.ru###xTGaosJkTXQb
 
 tehnometal.ru##.b-header-company-name__row
 tehnometal.ru##.b-header__company-name
@@ -20600,6 +20697,9 @@ tehnometal.ru##.b-head-control-panel__opinions-bar.b-review-info
 
 ||tehnot.com/*/tehnot-logo.png
 tehnot.com##.jeg_breakingnews_title
+
+tehnowar.ru###ed-shortbar
+tehnowar.ru##.color_button.site_button
 
 tekneed.com##.wp-block-button
 
@@ -20619,6 +20719,15 @@ tek-tips.com###leftcol > .cont
 
 tele2.ru##.download-app__buttons
 tele2.ru##.banner-lenta
+
+te-le2.ru##.sidebar_button_fix_link
+||te-le2.ru/wp-content/themes/tele2/images/about/
+te-le2.ru##.overlay-blink
+te-le2.ru##div.sidebar_button_fix
+te-le2.ru##blockquote:style(box-shadow:none !important)
+||te-le2.ru/wp-content/themes/tele2/images/quote.png
+
+tele2-kak.ru###ampz_flyin
 
 ! "read more"
 telegraf.by##.embed-container
@@ -20658,8 +20767,23 @@ telekom.de##.c-header__claim
 telekom.de##.chf-social-media
 telekom.de##.chf-footer-social
 
+    ! top
+telemetr.io##.extra-block
+telemetr.io##.header-container:style(padding-top:0px !important; padding-bottom:0px !important)
+telemetr.io##.navbar:style(min-height:auto !important)
+telemetr.io##.navbar:style(height:auto !important)
+telemetr.io##.selected-filter-block:style(padding-top:0px !important; padding-bottom:0px !important)
+    ! sticky
+telemetr.io##.quick-filter-block:style(position:static !important)
+telemetr.io##.list-header:style(position:static !important)
+    ! other
+
 telenor.hu##.hero-carousel
 telenor.hu##.hero-top-banner
+
+temowind.ru###header
+temowind.ru###sidebar
+temowind.ru###footer
 
 ! larsenal.ru and tempgun.ru are using similar engine
 tempgun.ru###headerfixed
@@ -20713,123 +20837,14 @@ tengrinews.kz##.tn-type-materials
 tenorshare.ru###banner-seasonal
 tenorshare.ru###return-top.return-top
 
+||tenti.ru/_menu.js
+||tenti.ru/*/watch.js
+tenti.ru##.cont-pay
+
 teplo.guru###colorbox
 teplo.guru###cboxOverlay
 
 teplofan.ru##.expert
-
-! Terraform Hashicorp
-terraform.io,hashicorp.com##[class^=banner_root]
-    ! top
-hashicorp.com##.g-learn-nav:style(position:static !important)
-hashicorp.com##[class^=ContentNav]:style(position:static !important)
-    ! reading time
-hashicorp.com##.g-type-label:has-text(/[0-9]+ min/)
-    ! other
-
-terrikon.com##.logoabout
-terrikon.com##.keywords
-
-te-st.ru##.site-header__container:style(height:auto !important)
-te-st.ru###hamburger:style(position:static !important; margin-top:0px !important)
-
-testadmit.com##.navWrapperBefore:style(position:static !important)
-testadmit.com##.el-backtop
-
-testseek.com##.reveal-modal
-testseek.com##.reveal-modal-bg
-||testseek.com/templates/v2/images/owl_over$image
-
-texnoblogger.com##.header-wrap
-texnoblogger.com##body:style(background:none !important)
-texnoblogger.com##.fa-thumbs-up
-texnoblogger.com##.rmp-main
-texnoblogger.com##.bx-wrapper
-texnoblogger.com##.pinglist
-
-techopedia.com##.topSiteLink
-techopedia.com##.featured-form
-techopedia.com##.dictionaryAd
-
-! technopoint.ru is dns-shop.ru project, look in there
-
-techport.ru##.tcp-nuid
-techport.ru##.tcp-item-sidebar
-techport.ru###city-accept
-techport.ru##.tcp-find-bug
-techport.ru##.tcp-about-rating
-techport.ru##.tcp-product-detail:nth-of-type(2)
-techport.ru##.tcp-modal-complectation-warning
-
-techproresearch.com###site-search
-
-techrepublic.com##.go-to-content
-techrepublic.com##.desktop.parallax.mega-display
-techrepublic.com##p:has-text(Download this article as a PDF (free registration required))
-
-techspot.com##.Notice
-
-||techsupportforum.com/forums/asap/$image
-
-techtarget.com###comments-1-miniRegv2-loginForm-1-buttonExpand
-! todo: jumping header, sticky-kit
-techtarget.com###page-header
-cdn.ttgtmedia.com$script
-techtarget.com##.sign-up-wrapper
-techtarget.com##.extra-info
-techtarget.com##.dig-deeper
-
-tech-touch.ru##.logo-outer-wrapper
-tech-touch.ru##.sidebar.right-sidebar
-tech-touch.ru##.kc__wrap
-tech-touch.ru##.read_more
-
-techunboxed.com###header-inner
-techunboxed.com##footer
-techunboxed.com###Image1_img
-
-techveze.com##.sidebar-to-right
-techveze.com##.nav-wrapper
-techveze.com##.shortcode_widget
-techveze.com##footer
-
-|teh-beauty.ru/wp-content/uploads/2018/08/makeup-clipart-girly-wallpaper-16.jpg
-teh-beauty.ru##.widget:has-text(Об авторе)
-teh-beauty.ru###head_top_block
-
-tehnobzor.ru##.lWeWePOBoUda-bg
-tehnobzor.ru###xTGaosJkTXQb
-
-tehnowar.ru###ed-shortbar
-tehnowar.ru##.color_button.site_button
-
-te-le2.ru##.sidebar_button_fix_link
-||te-le2.ru/wp-content/themes/tele2/images/about/
-te-le2.ru##.overlay-blink
-te-le2.ru##div.sidebar_button_fix
-te-le2.ru##blockquote:style(box-shadow:none !important)
-||te-le2.ru/wp-content/themes/tele2/images/quote.png
-
-tele2-kak.ru###ampz_flyin
-
-    ! top
-telemetr.io##.extra-block
-telemetr.io##.header-container:style(padding-top:0px !important; padding-bottom:0px !important)
-telemetr.io##.navbar:style(min-height:auto !important)
-telemetr.io##.navbar:style(height:auto !important)
-telemetr.io##.selected-filter-block:style(padding-top:0px !important; padding-bottom:0px !important)
-    ! sticky
-telemetr.io##.quick-filter-block:style(position:static !important)
-telemetr.io##.list-header:style(position:static !important)
-    ! other
-
-temowind.ru###header
-temowind.ru###sidebar
-temowind.ru###footer
-
-||tenti.ru/_menu.js
-||tenti.ru/*/watch.js
-tenti.ru##.cont-pay
 
 teplogalaxy.ru##.header-main
 
@@ -20851,14 +20866,43 @@ teron.online##.rep_bar
 teron.online###board_footer
 teron.online###topic_stats
 
+! Terraform Hashicorp
+terraform.io,hashicorp.com##[class^=banner_root]
+    ! top
+hashicorp.com##.g-learn-nav:style(position:static !important)
+hashicorp.com##[class^=ContentNav]:style(position:static !important)
+    ! reading time
+hashicorp.com##.g-type-label:has-text(/[0-9]+ min/)
+    ! other
+
+terrikon.com##.logoabout
+terrikon.com##.keywords
+
 teslarati.com##.body-top-pad:style(padding-top:15px !important)
 
-teusink.net###header-wrapper
+te-st.ru##.site-header__container:style(height:auto !important)
+te-st.ru###hamburger:style(position:static !important; margin-top:0px !important)
+
+testadmit.com##.navWrapperBefore:style(position:static !important)
+testadmit.com##.el-backtop
+
+||testseek.com/templates/v2/images/owl_over$image
+testseek.com##.reveal-modal
+testseek.com##.reveal-modal-bg
+
+texnoblogger.com##.header-wrap
+texnoblogger.com##body:style(background:none !important)
+texnoblogger.com##.fa-thumbs-up
+texnoblogger.com##.rmp-main
+texnoblogger.com##.bx-wrapper
+texnoblogger.com##.pinglist
 
 texterra.ru##.guideankor
 texterra.ru##.menu-top
 texterra.ru###matnav
 texterra.ru##div.incut
+
+teusink.net###header-wrapper
 
 tgrm.su##a.b-channel__item:has(span:has-text(ТОП-КАНАЛ))
 tgrm.su##.app-header__fixed:style(position:static !important)
@@ -22409,6 +22453,7 @@ v-detalyah.ru##.footer-info
 
 vdyoutube.com##.modal
 
+vdmsti.ru  # from Ru AdList:||vdmsti.ru/empty.gif?
 vedomosti.ru##.header-fixed
 vedomosti.ru##.the-header-announce
 vedomosti.ru##.layout__newspaper-info
@@ -25814,3 +25859,33 @@ ttpsc.com##html:style(opacity:initial !important)
 
 jobbio.com$third-party  # from EasyList
 
+understandingwar.org##.block-nice-menus:style(position:static !important)
+
+sciencedaily.com##header
+sciencedaily.com##.affix-top:style(position:static !important)
+sciencedaily.com###navwrapper:style(top:0px !important)
+
+! from Adguard
+orsk.ru##.banner-top
+! from Adguard
+orsk.ru##div[bs_id]
+! from Adguard
+orsk.ru##.bs_bottom
+
+ovdinfo.org##.page-wrapper:style(visibility:visible !important)
+ovdinfo.org##footer:style(visibility:visible !important)
+
+goha.ru*&geodata=  # from Ru AdList
+||goha.ru*/event?hash=  # from Ru AdList
+
+rufox.ru*/ncounter.pl?  # from Ru AdList
+
+||colonist.io/dist/images/ab_  # from Adguard
+colonist.io##.in_game_ab_left
+colonist.io##.in_game_ab_right
+
+||conversationexchange.com/javaScript/checkBlock.js  # from Adguard
+
+imgbox.com$script,third-party  # from EasyList
+
+audiotag.info##.c-agree
