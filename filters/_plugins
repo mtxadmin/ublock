@@ -34,6 +34,8 @@
 ! from EasyList
 !@@||wordpress.org/stats/plugin/$domain=wordpress.org
 
+/wp-content/embeded-adtional-content/*$redirect=noop.txt,important,image,media,subdocument,stylesheet,script,xmlhttprequest,other  # from Adguard
+
 /apps/hurrify/plugin/js/hurrify.js
 
 /plg_n3tcopylink/*  # Joomla
@@ -64,6 +66,9 @@
 !! Plugins
 
 /addons/adsplacer_pro_adblocker/*
+
+/wp-content/blog-plugins/wordads-classes/js/notice.bundle.js  # from EasyList
+/wp-content/blog-plugins/wordads-classes/js/banner.bundle.js  # from EasyList
 
 
 /jquery/moneymaker2/*
@@ -227,6 +232,8 @@
 /plugins/accesspress-social-login$important
     /accesspress-social-  # is in Ru AdList and Fanboy's
 
+/plugins/acpl-campaigns/*  # from Adguard
+
 /plugins/activecampaign-subscription-forms/*
 
 /plugins/ad.  # from EasyList
@@ -266,6 +273,8 @@
 /plugins/add-to-any$important,~stylesheet  # is in Fanboy's and Adguard
 
 /plugins/addzakl/*  # is in Ru AdList
+
+/plugins/adfoxly/*  # from Adguard
 
 /plugins/adhelper/*
     /adhelper/*  # from Ru AdList: /wp-json/adhelper/*
@@ -394,7 +403,7 @@
 
 /plugins/aspexi-facebook-like-box  # from Adguard
 
-/plugins/as-social-popup/*
+/plugins/as-social-popup/*  # is in Ru AdList
 
 /plugins/astero/*  # Weather plugin
 
@@ -571,6 +580,8 @@
 /plugins/complianz-gdpr/*$important
 /plugins/complianz-gdpr-premium/*$important
 
+/plugins/confection/bridge.php  # from EasyPrivacy and Adguard
+
 /plugins/constant-contact-api/*$important  # also see constantcontact.com
 
 /plugins/contact-call-plugin/*
@@ -601,10 +612,13 @@
         !/plugins/cookieconsent/*$important  # from Adguard
         !/plugins/cookie-consent/*$important
         !/plugins/cookie-law-info/*$important
+        !/plugins/cookielay/public/*/cookielay.$domain=die-autodoktoren.tv  # from Adguard
         !/plugins/cookie-notice/*  # from Fanboy's and Adguard
         !/cookie-notice/*$script,important  # from Fanboy's and Adguard
     ! /plugins/cookieinfo/*$important
+    ! /plugins/cookie-law-info/*  # from Fanboy's
     ! /plugins/cookiemedia/*
+    ! /plugins/cookies-and-content-security-policy  # from Fanboy's and EasyList
     ! /plugins/cookies-for-comments/*$important
         /cookies-for-comments/*  # is in EasyList and Fanboy's
 
@@ -628,6 +642,8 @@
 /plugins/counters/*
 
 /plugins/coupon-reveal-button/*
+
+/plugins/cpx-advert/*$script  # from EasyList
 
 /plugins/creame-whatsapp-me/*  # from Adguard
 
@@ -685,6 +701,7 @@
 
 /plugins/digitalpush/*
 
+/plugins/discourse-fingerprint-  # from Adguard
 /plugins/discourse-push-notifications
 
 /plugins/dispensary-age-verification/*
@@ -735,9 +752,12 @@
 
 /plugins/dw-promobar/*$important
 
+/plugins/dx-ads/*$script  # from EasyList
+
 /plugins/dynamic-headers/*
 
 /plugins/eazy-ad-unblocker/*  # from Adguard
+    /eazy-ad-unblocker/*$script,css  # from uBlock filters
 
 /plugins/easy-affiliate-links/*
 
@@ -787,6 +807,7 @@
 /plugins/elegance-modal-box/*
 
 /plugins/elfsight-countdown-timer-cc/*
+/plugins/elfsight-popup-cc/*  # from EasyList
 /plugins/elfsight-testimonials-slider-cc/*
 /plugins/elfsight-whatsapp-chat-cc/*  # from Adguard
 
@@ -828,6 +849,7 @@
     ! /plugins/facebook-button-plugin/*  # from Fanboy's
     ! /plugins/facebook-fanbox-popup/*  # from Fanboy's
     ! /plugins/facebook-like-content-locker/*  # from Fanboy's
+    ! /plugins/facebook-like-page-locker/*  # from Ru AdList
     ! /plugins/facebook-page-promoter-$~stylesheet  # from Fanboy's
     ! /plugins/facebook-page-promoter-lightbox/*$important
     ! /plugins/facebookpopuppro/*  # from Fanboy's
@@ -1004,7 +1026,7 @@
 
 /plugins/hurrytimer/*
 
-/plugins/icegram/*$important  # is in Adguard
+/plugins/icegram/*$important  # is in Adguard and Ru AdList
 
 /plugins/ics-button/*
 
@@ -1097,6 +1119,8 @@
 /plugins/leaky-paywall/*$important
     /leaky-paywall/*  # is in Fanboy's
 
+/plugins/lexar-cookie-accept/*  # from Adguard
+
 /plugins/lh-push/*
 /plugins/lh-talker/*
 /plugins/lh-views/*
@@ -1175,10 +1199,14 @@
 
 /plugins/matomo/*$important
 
+/plugins/MBM-GDPR/*
+    ! ||talkingretail.com/wp-content/plugins/MBM-GDPR/assets/dist/js/MBM_GDPR.min.js  # from Adguard
+
 /plugins/medsosboost/*  # from Adguard: ||bagilagi.com/wp-content/plugins/medsosboost/msb-script.js
 
 /plugins/mega-subscribe-popup/*
 
+/plugins/meks-easy-ads-widget/*  # from EasyList
 /plugins/meks-easy-social-share/*
 /plugins/meks-flexible-shortcodes/*
 /plugins/meks-smart-author-widget/*
@@ -1253,6 +1281,8 @@
 
 /plugins/newsletter
 
+/plugins/newspack-popups/*  # from Adguard
+
 /plugins/newsticker/*
 
 /plugins/nextend-facebook-connect/*$important
@@ -1260,6 +1290,8 @@
 /plugins/niceseo-gallery/*
 
 /plugins/nimiq/*$script  # from EasyPrivacy
+
+/plugins/ninja-gdpr-compliance/*  # from Adguard
 
 /plugins/nks-subscription/*$important  # from Fanboy's
 
@@ -1431,7 +1463,7 @@
 /plugins/pwa-for-wp/*$important
     /pwa-$script  # sometimes pwa scripts are outside plugins directory
 
-/plugins/q2w3-fixed-widget/*$important
+/plugins/q2w3-fixed-widget/*$important  # now is in Ru AdList
     /q2w3-fixed-widget
     ##.q2w3-fixed-widget-container
 
@@ -1743,6 +1775,8 @@
 /plugins/system/joompush/*
 /plugins/system/smoothtop/*  # scroll-up button
 
+/plugins/t42-content-protector/*  # from uBlock filters
+
 /plugins/ta2021-plugin-cookie-consent/*  # from SecurityEntire CookieFilter
 
 /plugins/table-of-contents-plus/*
@@ -1776,6 +1810,10 @@
 /plugins/timed-content/*
 
 /plugins/tired-horse/*$important  # from Adguard exclusions
+
+/plugins/tfnotifier-wp/swloader.php  # from Adguard
+
+/plugins/THEOplayerAkamaiSDK/  # from Adguard
 
 /plugins/tocheckout/*
 
@@ -1829,6 +1867,8 @@
 /plugins/ultimate-social-media-plus/*$important  # from Adguard
 
 /plugins/unblock-adsense/*  # from Adguard: /plugins/unblock-adsense/*/adunblock
+
+/plugins/uncopy/*  # from uBlock filters
 
 /plugins/ungrabber/*  # from Adguard and uBlock filters
 
@@ -1955,6 +1995,7 @@
 /plugins/wp-adblock-dedect/*$important  # from Adguard: /plugins/wp-adblock-dedect/js/dedect.js^
 
 /plugins/wp-ad-guru/*$important
+    /wp-ad-guru/*  # from EasyList
 
 /plugins/wp-analytify/*$important
 
@@ -2031,6 +2072,8 @@
 /plugins/wp-plus-one/*
 
 /plugins/wp-polls/*
+
+/plugins/wppopups/*  # from Adguard
 
 /plugins/wp-post-email-notification/*
 
