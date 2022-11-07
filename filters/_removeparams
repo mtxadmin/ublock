@@ -921,6 +921,8 @@ get.adobe.com$removeparam=TRILIBIS_EMULATOR_UA  # from Adguard
 adorama.com$removeparam=obem  # from Adguard
 adorama.com$removeparam=bc_pid  # from Adguard
 
+adp.com$removeparam=rb  # ref
+
 ! adsafeprotected.com - blocked entirely, just for information
 !||pixel.adsafeprotected.com/services/pub?$removeparam=anId  # from Adguard
 !||pixel.adsafeprotected.com/services/pub?$removeparam=sessionId  # from Adguard
@@ -971,7 +973,7 @@ amazon.*$removeparam=hvtargid  # from Adguard
 amazon.*$removeparam=hydadcr  # from Adguard
 amazon.*$removeparam=ingress  # from Adguard
 amazon.*$removeparam=initialIssue  # from Adguard
-! do not block keywords parameter
+# do not block keywords parameter
 ||amazon.*/message-us$removeparam=muClientName  # from Adguard
 amazon.*$removeparam=pf  # from NeatURL
 amazon.*$removeparam=plattr  # from Adguard
@@ -1101,6 +1103,8 @@ fmworld.net$removeparam=mc_pc  # from Adguard: azby.fmworld.net$removeparam=mc_p
 ! already blocked
 georiot.com$removeparam=tsid  # from Adguard
 
+getmatch.ru$removeparam=s  # ref
+
 ! I am not sure, is it safe to modify these google rules. So they mostly are as is here.
 ! Too lazy to test it out, sorry :-) Maybe, sometimes.
 ! Also, there is one global google rule from NeatURL, see above
@@ -1141,6 +1145,9 @@ google.*$removeparam=ved
     ! ||www.google.*/search?$removeparam=ved  # from Ru AdList
 google.*/websearch$removeparam=visit_id  # from Adguard
 gstatic.com$removeparam=zx
+
+hclips.com$removeparam=fr
+hclips.com$removeparam=rp
 
 hentaibaka.one$removeparam=code
     ! ||hentaibaka.one/*?code=$doc,other,removeparam=code  # from uBlock filters
@@ -1187,6 +1194,8 @@ hololivepro.com$removeparam=pr_seq  # from Adguard
 hololivepro.com$removeparam=pr_prod_strat  # from Adguard
 
 hqbabes.com$removeparam=novoref
+
+careers.ibm.com$removeparam=codes  # ref
 
 ! idealo-partner.com - blocked entirely, just for information. But.
 idealo-partner.com$removeparam=amc  # from Adguard: marketing.net.idealo-partner.com$removeparam=amc
@@ -1279,6 +1288,7 @@ microsoft.com$removeparam=ranEAID  # from Adguard
 microsoft.com$removeparam=ranSiteID  # from Adguard
 microsoft.com$removeparam=tduid  # from Adguard
 $removeparam=epi,domain=microsoft.com|xbox.com  # from Adguard
+careers.microsoft.com$removeparam=jobsource  # ref
 
 monster.com.sg$removeparam=application_source
 monster.com.sg$removeparam=spl
@@ -2051,6 +2061,7 @@ music.apple.com$removeparam=itsct  # from Adguard
 ! jk - job id, don't block
 indeed.com$removeparam=fromjk
 indeed.com$removeparam=tk  # session id
+indeed.com$removeparam=vjk  # tempid
 indeed.com$removeparam=vjs
 !
 indeed.com$removeparam=pos
@@ -2078,12 +2089,7 @@ smsc.ru$removeparam  # random ref param names
 campaign-archive.com$removeparam=id
 campaign-archive.com$removeparam=u
 
-hclips.com$removeparam=fr
-hclips.com$removeparam=rp
-
 myworkdayjobs.com$removeparam=src
-
-adp.com$removeparam=rb  # ref
 
 mirror.co.uk$removeparam=int_source  # from Adguard
 
@@ -2103,4 +2109,3 @@ tiktokcdn.com$removeparam=l
 tiktok.com$removeparam=rc  # some uid
 tiktokcdn.com$removeparam=rc  # some uid
 
-getmatch.ru$removeparam=s  # ref
