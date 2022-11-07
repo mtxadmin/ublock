@@ -15,6 +15,7 @@ pikabu.ru#@#div[class="overlay"][style^="z-index:"]
 pikabu.ru#@#div[class="overlay"][style="z-index: 6001;"]
 ||pikabu.ru/ajax/analytics.php
 ||pikabu.ru/ajax/log.php
+||pikabu.ru/ajax/save_stories_stat.php|$xmlhttprequest  # from Ru AdList
 ||pikabu.ru/cdn-cgi/images/trace/
 ||pikabu.ru/files/techworks.swf
 ||pikabu.ru/images/fun/scheadar.png
@@ -301,6 +302,7 @@ pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeney
 ||pikabu.ru/avatars/2382/*2382121-97405594.$image
 ||pikabu.ru/avatars/2400/*2400777-474677994.$image
 ||pikabu.ru/avatars/2406/*2406557-2100424455.$image
+||pikabu.ru/avatars/2416/*2416164-1968676087.$image
 ||pikabu.ru/avatars/2429/*2429655-1551465768.$image
 ||pikabu.ru/avatars/244/*244223-$image
 ||pikabu.ru/avatars/2466/*2466421-828110642.$image
@@ -3508,9 +3510,85 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="IboNech
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^IboNechego$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="IboNechego"]))
 
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Helltrain"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Helltrain$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Helltrain"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="anf770"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^anf770$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="anf770"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="FastYahoo"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^FastYahoo$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="FastYahoo"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dr0papayka"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Dr0papayka$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Dr0papayka"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="E.ntropy"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^E.ntropy$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="E.ntropy"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Nazz340"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Nazz340$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Nazz340"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dzidanbo"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Dzidanbo$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Dzidanbo"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="deadmazdai"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^deadmazdai$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="deadmazdai"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="FancyDavid"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^FancyDavid$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="FancyDavid"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="cjctl"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^cjctl$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="cjctl"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Nika.Russlikh"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Nika.Russlikh$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Nika.Russlikh"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="denissam"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^denissam$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="denissam"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Cat1987"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Cat1987$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Cat1987"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Tlen1984"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Tlen1984$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Tlen1984"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Lexey1977"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Lexey1977$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Lexey1977"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Ciko55"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Ciko55$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Ciko55"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="zambox"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^zambox$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="zambox"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Zliger"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Zliger$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Zliger"]))
+
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="NovostiSegodnya"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^NovostiSegodnya$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="NovostiSegodnya"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Profitrolka"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Profitrolka$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Profitrolka"]))
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="GoodCurrentNews"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^GoodCurrentNews$/)):style(color:#F0F0F0)
