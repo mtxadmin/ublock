@@ -611,10 +611,15 @@ adblockdetector/$important
 /adland.php  # from Ru AdList
 /adlift.js  # from Ru AdList
 /adliftqueue.js  # from Ru AdList
+/adlink-  # from EasyList
+/adlink.  # from EasyList
+/adlink/*  # from EasyList
+/adlink.  # from EasyList
 /adloaderplus?  # from EasyList
 /adlogger_tracker.js?  # from Ru AdList
 /admanager/*$important
 /admanager.js$important
+/adnext.  # from EasyList
 /adobe_target/*
 /adobe_target.js
 /adpic/*  # from EasyList
@@ -1023,8 +1028,10 @@ _banner_rotator.php  # from Adguard
 /edmonton.webp$script,important  # is in EasyList
 /empty.json  # from Hufilter
 /eu-banned-popup/*  # from Hufilter
+/exoclick/*  # from EasyList
 /exosrv.js$script  # from uBlock filters
 /fixads.js
+/flashads.  # from EasyList
 /flo.js  # is in Adguard
 /flr.js  # is in uBlock filters
 /footer_ads.  # is in EasyList
@@ -1044,6 +1051,8 @@ _banner_rotator.php  # from Adguard
 /gujAd.js$important
 /HarbergerTaxBanner
 /homebanner/*
+/homepage_ads/*  # from EasyList
+/housead.  # from EasyList
 -images/ad-  # is in EasyList
 /images/ad_  # is in AdGuard and RU AdList
 /images/ban/*  # from Ru AdList
@@ -1085,7 +1094,7 @@ _banner_rotator.php  # from Adguard
 /nativeads.  # is in Easylist
 /newAd/*
 /newrelic-browser.js
-/news.js  # from Ru AdList, modified
+/news.js  # from Ru AdList and Adguard, modified
 /ngclipboard/*
 /ngclipboard.min.js$domain=~play-with-docker.com
 /no-right-click.$script  # from EasyList and Fanboy's
@@ -1143,7 +1152,12 @@ _banner_rotator.php  # from Adguard
 /popads.  # from Ru AdList
 /popads/*  # from Ru AdList
 /popua/*  # from Ru AdList
-/popunder.js$important
+/popunder.$important
+    ! /popunder.  # from EasyList
+    ! /popunder.js$important
+    ! /sponsors/popunder.  # from EasyList
+    ! ||akamaized.net/mr/popunder.js  # from EasyList
+    ! ||scriptadmin.com/scripts/popunder.js  # from EasyList
 .popunder.js  # from EasyList
 /popupclick/$popup  # from Ru AdList
 /prebid$important
@@ -1179,6 +1193,7 @@ _prebid.js  # from EasyList
 ~Prebid.js  # from EasyList
 /prepare/ads^  # from Adguard
 /profitwell.js$important
+/propellerads.  # from EasyList
 /pubads/*$important
 /pubads.ad$important
 /pubfig.min.js  # from EasyList
@@ -1349,6 +1364,8 @@ _rebid.js  # from EasyList
 /video_banner.js
 /videojs-contrib-ads.$important
 /videojs-contrib-ads/*$important
+/view.js  # from Ru AdList and Adguard, modified
+/viewc.js  # from Ru AdList, modified
 /volcano_banner  # from Ru AdList
 /webbanners/*
 .weborama.js  # from EasyList
@@ -2444,6 +2461,10 @@ _hightraffic_code.js  # from EasyPrivacy
 _loghuman=  # from EasyPrivacy
 /logimpressions?$important  # is in EasyPrivacy and uBlock filter  # ||docs.google.com/*/logimpressions
 /logperf?  # is in EasyPrivacy
+/metrika/*
+    ! ||cloudfront.me/metrika/watch  # from Ru AdList
+    ! ||cloudfront.net/metrika/watch  # from Ru AdList
+    ! ||cloudfront.pro/metrika/watch  # from Ru AdList
 /mobile-useragent-info.js
 /mod_pagespeed_beacon?  # from Fanboy's
 _nedstat.js  # from EasyPrivacy
@@ -2461,6 +2482,7 @@ _pagespeed_beacon?  # from AdGuard
 /ping?*$xmlhttprequest
     ! /engine/ping?  # is in EasyPrivacy
     ! /stats/ping?  # is in EasyPrivacy
+/ping.gif
 /pixel/*
 /pixel?
     ! /visits/pixel?  # from EasyPrivacy
@@ -2522,6 +2544,7 @@ _tracker.js.  # from EasyPrivacy
 /universal-federated-analytics.  # is in EasyPrivacy
 _urchin.js  # from Fanboy's
 /user-geo-info
+/__utm.gif  # from EasyPrivacy
 /__utm.js  # is in EasyPrivacy
 /utm-tracking.js$important
 .v4.analytics.  # from EasyPrivacy
@@ -2670,7 +2693,7 @@ _wtInit.js  # from Fanboy's
 ##.article-views
 ##.blog-views
 ~yandex.*##.counter
-~yandex.*##.counters
+~turbopages.org,~yandex.*##.counters
 ##.count_views
 ##.count-visitor
 ##.entry-meta__views
@@ -3383,12 +3406,20 @@ _site/gotop.  # from Ru AdList
 !
 ! GDPR is EU's data protection law. Popups about it are very, very often present on sites
 !
+/dist/gdpr-$domain=~express.co.uk  # from EasyList
+/gdpr/pdcc.  # from Fanboy's
+/gdprcookie/*  # from Fanboy's
+/gdprDialog.  # from Fanboy's
+/nanoGDPR.  # from Fanboy's
+/util/gdpr/*  # from Fanboy's
 ##[class*="GDPR"]:not(html):not(body):not(article)
 ##[id*="GDPR"]:not(html):not(body):not(article)
 ##[class*="Gdpr"]:not(html):not(body):not(article)
 ##[id*="Gdpr"]:not(html):not(body):not(article)
 ##[class*="gdpr"]:not(html):not(body):not(article):not(input)
 ##[id*="gdpr"]:not(html):not(body):not(article):not(input)
+    ! the list is not full, just _some_ rules
+    !
     ! is in EasyList and Fanboy's
     !###gdpr:not(body):not(html):not(input)
 !
@@ -3396,6 +3427,8 @@ _site/gotop.  # from Ru AdList
 !
 ##[class*="lgpd"]:not(html):not(body):not(article)
 ##[id*="lgpd"]:not(html):not(body):not(article)
+    ! the list is not full, just _some_ rules
+    !
     ! from Fanboy's
     !##.banner-lgpd-consent
     ! from Fanboy's
@@ -3416,8 +3449,63 @@ _site/gotop.  # from Ru AdList
     !###lgpd-wrapper
     ! from Fanboy's
     !##.informativo-lgpd
+    ! from EasyList
+    !##.upsd__lgpd__render
     ! from Fanboy's
     !concursosnobrasil.com.br###lgpd
+!
+! RGPD is Spain's Reglamento General de Protección de datos
+!
+/ik-rgpd.  # from Fanboy's
+/iticonseil-rgpd/*  # from Fanboy's
+/nc-rgpd-cookies.  # from Fanboy's
+/ob_rgpd/*  # from Fanboy's
+/onpc-rgpd/*  # from Fanboy's
+/rgpd.js  # from Fanboy's
+/rgpd/iab/*  # from Fanboy's
+/rgpd/js/*  # from Fanboy's
+/rgpd_cookie_  # from Fanboy's
+/rgpd/discreto.min.js  # from Fanboy's
+
+/module-rgpd.  # from Fanboy's
+@@||santepubliquefrance.fr/rgpd/smarttag.js  # from EasyList
+
+##[class*="rgpd"]:not(html):not(body):not(article)
+##[id*="rgpd"]:not(html):not(body):not(article)
+    ! the list is not full, just _some_ rules
+    !
+    ! from Fanboy's
+    !###ban_rgpd
+    ! from Fanboy's
+    !###bandeau-rgpd
+    ! from Fanboy's
+    !###banner_rgpd
+    ! from EasyList
+    !###block-rgpd-bandeau
+    ! from EasyList
+    !###bloc_rgpd
+    ! from EasyList
+    !###pop_rgpd
+    ! from Fanboy's
+    !###rgpd
+    ! from Fanboy's
+    !##.rgpd
+    ! from EasyList
+    !##.rgpd-data-control-banner
+    ! from Fanboy's
+    !##.rgpd-content
+    ! from EasyList
+    !##.rgpd-layer
+    ! from Fanboy's
+    !###rgpd-notice
+    ! from Fanboy's
+    !##.rgpd-overlay
+    ! from EasyList
+    !##.rgpd-wrapper
+    ! from Fanboy's
+    !parrot.com##.RgpdDrawer_rgpd_drawer__2VCU0
+    ! from Adguard
+    !receitanatureba.com###myModalrgpd
 !
 ! Let's not to make general rules for such form
 ! from EasyList
@@ -4688,6 +4776,7 @@ tarif-24.ru##.mh-ticker-bottom
 !! seo and copyrights
 /copirate.js
 /copy.js  # from Ru AdList
+/copy.min.js
 /copyright.js
 /copyright.min.js
 /nocopy.js
