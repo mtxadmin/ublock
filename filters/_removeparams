@@ -213,6 +213,8 @@ $removeparam=cmpid  # Campaign tracking (others)  # https://www.parse.ly/help/po
 $removeparam=cpa,important
     ! market.yandex.*$removeparam=cpa
 
+$removeparam=cx_click  # from Adguard
+
 $removeparam=/^dpg_.*/  # Campaign tracking (DPG Media)  # used on Dutch sites  # from NeatURL
     ! $removeparam=dpg_campaign  # from Adguard
     ! $removeparam=dpg_content  # from Adguard
@@ -517,6 +519,12 @@ $removeparam=/^pf_rd_.*/
         ! ||amazon.*$removeparam=pf_rd_w  # from Adguard
     ! imdb.com$removeparam=/pf_rd_.*/  # from NeatURL
         ! ||imdb.com/*pf_rd_$document,removeparam=|pf_rd_,domain=imdb.com  # from Ru AdList
+        ! imdb.com$removeparam=pf_rd_i  # from Adguard
+        ! imdb.com$removeparam=pf_rd_m  # from Adguard
+        ! imdb.com$removeparam=pf_rd_p  # from Adguard
+        ! imdb.com$removeparam=pf_rd_r  # from Adguard
+        ! imdb.com$removeparam=pf_rd_s  # from Adguard
+        ! imdb.com$removeparam=pf_rd_t  # from Adguard
 
 $removeparam=/^pk_.*/,important  # Campaign tracking (Matomo/Piwik)  # from NeatURL
     ! $removeparam=pk_campaign  # from Adguard
@@ -737,6 +745,7 @@ $removeparam=source,domain=~youtube.com  # Exclusion: youtube
     ! ://yandex.$removeparam=source  # from Adguard
     ! ?source=ukrnet$document,removeparam=|  # from Ru AdList
     ! ||banki.ru/*?source=*menu_$removeparam=|,domain=banki.ru  # from Ru AdList
+    ! ?source=tableau_tv$document,removeparam=|,domain=yandex.*  # from Ru AdList
 
 $removeparam=sourceid
     ! ||google.*/search$removeparam=sourceid  # from Adguard
@@ -1330,6 +1339,9 @@ nytimes.com$removeparam=impression_id  # from Adguard
 ozon.ru$removeparam=advert
 ozon.ru$removeparam=asb
 ozon.ru$removeparam=asb2
+ozon.ru$removeparam=avtc  # from Ru AdList
+ozon.ru$removeparam=avte  # from Ru AdList
+ozon.ru$removeparam=avts  # from Ru AdList
 ozon.ru$removeparam=_bctx
 ozon.ru$removeparam=miniapp
 ozon.ru$removeparam=sh
@@ -2109,3 +2121,19 @@ tiktokcdn.com$removeparam=l
 tiktok.com$removeparam=rc  # some uid
 tiktokcdn.com$removeparam=rc  # some uid
 
+vercel.com$removeparam=redirected  # from Adguard
+vercel.com$removeparam=sfmc_activityid  # from Adguard
+vercel.com$removeparam=sfmc_activity_id  # from Adguard
+vercel.com$removeparam=sfmc_activity_name  # from Adguard
+vercel.com$removeparam=sfmc_asset_id  # from Adguard
+vercel.com$removeparam=sfmc_channel  # from Adguard
+vercel.com$removeparam=sfmc_journey_id  # from Adguard
+vercel.com$removeparam=sfmc_journey_name  # from Adguard
+
+getir.com$removeparam=af_xp  # from Adguard
+getir.com$removeparam=af_force_deeplink  # from Adguard
+getir.com$removeparam=c  # from Adguard
+getir.com$removeparam=deep_link_value  # from Adguard
+getir.com$removeparam=is_retargeting  # from Adguard
+getir.com$removeparam=pid  # from Adguard
+getir.com$removeparam=shortlink  # from Adguard
