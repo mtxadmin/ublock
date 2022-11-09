@@ -1076,6 +1076,7 @@ doubleclick.net$removeparam=/^(?:correlator|f[cr-w]|p[e-sv]|u_|ga_|url|dt|adk)/ 
 doubleclick.net$removeparam=/^dc_trk_/  # from Adguard
 doubleclick.net$removeparam=p  # from uBlock filters
 doubleclick.net$all,removeparam=/^([a-dfmnr-u]|e[ir]|ga|i[dfm]|o[hi]|p[s-v]|vi)/  # from uBlock filters
+doubleclick.net$all,removeparam=/^(cookie|ga_|u_)/  # from uBlock filters
 
 ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
 ebay.*$removeparam=hash  # from NeatURL
@@ -1549,6 +1550,7 @@ yandex.*$removeparam=source-serpid  # from Adguard
 ykt.ru$removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/  # from Ru AdList, modified
     ! ykt.ru$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru  # from Ru AdList
 
+youtube.com$removeparam=ab_channel
 youtube.com$removeparam=feature  # from NeatURL
     ! unusual Ru AdList form:
     ! &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com  # from Ru AdList
