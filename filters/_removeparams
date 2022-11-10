@@ -251,9 +251,12 @@ $removeparam=fref  # from Ru AdList
 
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
-$removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~sberbank.ru
-    ! ~auth.mail.ru exception is from Ru AdList. Don't know, but ok. Update: removing it prevent useful popups, so it's really ok.
-    ! ~account.mail.ru - v2 of it
+$removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~sberbank.ru|~tradingview.com
+    ! Exceptions:
+    ! auth.mail.ru exception is from Ru AdList. Don't know, but ok. Update: removing it prevent useful popups, so it's really ok.
+    ! account.mail.ru - v2 of it (auth.mail.ru)
+    ! yandex, sberbank.ru - don't remember exactly, but they are definitely needed
+    ! tradingview.com - graphs: !wss://data.tradingview.com/socket.io/websocket?from=symbols%2FBTCUSD%2F&date=
     !
     ! /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
     ! 3dnews.ru$removeparam=from
@@ -1636,11 +1639,13 @@ hepsiburada.com$removeparam=af_ad  # from Adguard
 hepsiburada.com$removeparam=af_adset  # from Adguard
 hepsiburada.com$removeparam=af_click_lookback  # from Adguard
 hepsiburada.com$removeparam=af_force_deeplink  # from Adguard
+hepsiburada.com$removeparam=af_xp  # from Adguard
 hepsiburada.com$removeparam=c  # from Adguard
 hepsiburada.com$removeparam=is_retargeting  # from Adguard
 hepsiburada.com$removeparam=pid  # from Adguard
 hepsiburada.com$removeparam=shortlink  # from Adguard
 hepsiburada.com$removeparam=wt_gl  # from Adguard
+hepsiburada.com$removeparam=wt_so  # from Adguard
 
 dmm.co.jp$removeparam=dmmref  # from Adguard
 dmm.co.jp$removeparam=i3_ord  # from Adguard
@@ -2139,3 +2144,9 @@ getir.com$removeparam=deep_link_value  # from Adguard
 getir.com$removeparam=is_retargeting  # from Adguard
 getir.com$removeparam=pid  # from Adguard
 getir.com$removeparam=shortlink  # from Adguard
+
+elgato.com$removeparam=attribution_window  # from Adguard
+elgato.com$removeparam=contact_id  # from Adguard
+elgato.com$removeparam=link_id  # from Adguard
+elgato.com$removeparam=platform  # from Adguard
+elgato.com$removeparam=token  # from Adguard
