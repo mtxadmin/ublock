@@ -80,6 +80,7 @@ ad.tehno-rating.ru  # from Adguard
 ad.tgdaily.com  # from Dan Pollock's hosts file
 ad.tam.by$important  # ads and ad scripts  # tut.by
 ad.tomshardware.com  #+  # from Dan Pollock's hosts file
+ad.topwar.ru  # from Ru AdList
 ad.trialsport.ru
 ad.velomania.ru  # from AdGuard
 ad.w3docs.com
@@ -283,6 +284,10 @@ advertising.aolp.jp  # from GoodbyeAds
 advertising.apple.com  # from GoodbyeAds
 advertising.bbcworldwide.com  # BBC - Advertising  # from Quidsup NoTrack-Blocklist
 advertising.microsoft.com  # Microsoft - Advertising  # from Quidsup NoTrack-Blocklist
+
+/advstat.  # from Ru AdList
+
+/adw.$domain=~adw.amsterdam.nl|~adw.be|~adw.olsztyn.pl|~adw.org|~adw.org.pl|~gnome.org|~valadoc.org  # from EasyList
 
 /adx.$domain=~adx.co.nz|~adx.nz|~adx.rs|~adx.tribefire.com|~journals.uchicago.edu  # is in EasyList as is (not ||adx.)
 ! adx.nz, adx.co.nz - don't, not ad, "ADX Electronics"
@@ -515,6 +520,7 @@ analytics.recruitics.com
 analytics.regex101.com  # from Adguard
 analytics.developer.riotgames.com  # from Adguard
 analytics.runsignup.com
+analytics.santander.co.uk  # from Peter Lowe's Ad and tracking server list
 analytics.sarbc.ru
 analytics.shopify.com$important  # from EnergizedProtection
 analytics.similarweb.com
@@ -526,6 +532,7 @@ analytics.sydney.edu.au  # from Adguard
 analytics.technopoint.ru
 analytics.techtarget.com
 analytics.tiktok.com  # from Dan Pollock's hosts file
+analytics.tn.kz  # from Ru AdList
 analytics.tntsports.cl  # from Adguard
 analytics.trutv.com  # from MVPS
 analytics.twitter.com$important  # from EasyPrivacy
@@ -570,6 +577,7 @@ beacon.gutefrage.net
 beacon.v.dropbox.com
 beacon.qq.com
 beacon.shazam.com
+beacon.sina.com.cn  # from EasyPrivacy
 beacon.toyota.co.jp  # from Adguard
 beacon.xfinity.com
 beacon.walmart.com  # from EasyPrivacy
@@ -607,12 +615,15 @@ click.nexgoal.com
 click.productleadership.com
 click.sellingbrew.com
 click.studymetro.com
+click.taobao.com  # from EasyPrivacy
 click.tasksbay.com
 click.mailerweb.trainingdoyens.com
 
 /clicks.  # I suspected it earlier, yes, but general subdomains form is from github.com/asterriya/regex-ads/
 clicks.adultplex.com  # from GoodbyeAds
 clicks.biletix.ru
+clicks.deliveroo.co.uk  # from Peter Lowe's Ad and tracking server list
+clicks.moy.su  # from Ru AdList
 clicks.rbs.co.uk  # root is legit
 clicks.wawlabs.com  # from Adguard
 
@@ -638,7 +649,7 @@ cmp.cdn.thesun.ie  # from EasyList
 cmp.tori.fi  # from EasyList
 cmp.tvspielfilm.de  # from EasyList
 
-/cnt.
+/cnt.  # is in Ru AdList
 !||cnt.hd21.  # from Adguard
 !||cnt.proporn.  # from Adguard
 ||cnt.nuvid.  # from Adguard
@@ -709,6 +720,9 @@ cookies.unidadeditorial.es  # from EasyList
 cookie.vrt.be  # from EasyList
 cookie.wieni.be  # from EasyList
 
+/count.  # from Ru AdList
+count.taobao.com
+
 /counter.
 counter.24smi.info
 counter.adguard.com  # from Adguard (sic!)
@@ -726,6 +740,8 @@ counter.sberbank.ru
 counter.sudrf.ru
 counter.ukr.net$important
 counter.web.money  # from Adguard
+
+/counting.  # from Ru AdList
 
 /eloq.
 /eloqua.
@@ -856,6 +872,10 @@ email.wefunder.com  # email.wefunder.com/c/eJxNUMuKw..
 
 ||etargetnet.  # from Hufilter
 
+/exoclick.  # from EasyList
+exoclick.bamboohr.co.uk
+exoclick.kayako.com
+
 /forex.
 
 /gcirm.  # from github.com/asterriya/regex-ads/
@@ -864,11 +884,12 @@ email.wefunder.com  # email.wefunder.com/c/eJxNUMuKw..
 gdpr.internetbrands.com  # from EasyList
 gdpr.laxd.com  # from Adguard
 
-! /go. ?
+||go.
 go.contented.ru  # ad redirects
 go.cyberark.com  # "Identity Security" # ad redirects and empty root
 go.gem.com  # ad redirects. Gem.com is some hiring CRM
 go.isostech.com  # from EasyList
+go.skillfactory.ru
 go.sky.pro
 go.tass.ru  # ad redirects
 go.techtarget.com$all  # is in EasyPrivacy
@@ -908,6 +929,7 @@ link.snob.ru  # private URL shortener
 log.book.baidu.com  # from GoodbyeAds
 log.music.baidu.com  # from GoodbyeAds
 log.diagrams.net  # ad tracker images
+log.dzen.ru  # from Ru AdList
 log.espn.com  # Disney - Tracker  # from Quidsup NoTrack-Blocklist
 log.gns.go.com  # Disney - Tracker  # from Quidsup NoTrack-Blocklist
 log.go.com  # Disney - Tracker  # from Quidsup NoTrack-Blocklist
@@ -1160,6 +1182,9 @@ newsletter.sk.ru
 nsmetrics.geelongadvertiser.com.au  # from Adguard
 nsmetrics.themercury.com.au  # from Adguard
 
+parking.godaddy.com  # from EasyList
+parking.reg.ru
+
 /partner.
 partner.2din.cz  # from Adguard
 partner.alfa.kz  # from Ru AdList
@@ -1282,9 +1307,11 @@ pixel.nur.kz  # nur.kz - Tracker  # from Quidsup NoTrack-Blocklist
 pixel.patch.com  # patch.com - Tracker  # from Quidsup NoTrack-Blocklist
 pixel.reddit.com  # from Adguard
 pixel.redditmedia.com  # from Adguard
+pixel.redgifs.com  # from EasyPrivacy
 pixel.s3xified.com
 pixel.spotify.com  # Spotify - Tracker  # from Quidsup NoTrack-Blocklist
 pixel.staticworld.net  # staticworld.net - Tracker  # from Quidsup NoTrack-Blocklist
+pixel.tuko.co.ke  # from EasyPrivacy
 pixel.wenxuecity.com  # wenxuecity.com - Tracker  # from Quidsup NoTrack-Blocklist
 pixel.wp.com
 pixel.wp.pl$important  # is in Adguard
@@ -1580,6 +1607,7 @@ smetrics.pruadviser.co.uk  # from Adguard
 smetrics.rac.co.uk  # from Adguard
 smetrics.racq.com.au  # from Adguard
 smetrics.racv.com.au  # from Adguard
+smetrics.ralphlauren.com  # from EasyPrivacy
 smetrics.ralphlauren.co.uk  # from Adguard
 smetrics.ralphlauren.com.au  # from Adguard
 smetrics.realcommercial.com.au  # from Adguard
@@ -1697,6 +1725,7 @@ stats.infox.sg
 stats.kod.ru  # ad scripts  # is in Adguard and EasyPrivacy
 stats.mbamupdates.com  # Malwarebytes - Tracker  # from Quidsup NoTrack-Blocklist
 stats.merriam-webster.com  # Merriam Webster - Tracker  # from Quidsup NoTrack-Blocklist
+stats.netdna-storage.com  # from EasyPrivacy
 stats.newsweek.com  # from GoodbyeAds
 stats.nextcloud.com  # from GoodbyeAds
 stats.media.onet.pl  # from Adguard
@@ -1817,6 +1846,9 @@ top.azur.ru  # ads(counters?)  # root is img  # is in AdGuard: ||top.azur.ru/?id
 top.my.ua  # from Ru AdList: top-js-metrics.top.my.ua
 top.photopulse.ru
 top.hunter.com.ua  # tracking images
+
+/top100.  # from Ru AdList
+/top100/*  # from Ru AdList
 top100.ezar.ru  # from Adguard
 top100.mafia.ru  # from Peter Lowe's hosts file
 top100.rambler.ru
@@ -1829,6 +1861,7 @@ track.childrensalon.com  #[Piwik.Analytics]  # from MVPS
 track.cj.akadns.net
 track.cafu.com  # from Adguard
 track.dws.com
+track.fabrikaonline.ru  # from Ru AdList
 track.ferrari.com  # from Adguard
 track.ferraridealers.com  # from Adguard
 track.listings.flyhomes.com  # from Adguard
@@ -1901,6 +1934,7 @@ tracker.plan2.net
 tracker.realclearpolitics.com
 tracker.roitesting.com
 tracker.scao.it
+tracker.softcube.com  # from Ru AdList
 tracker.tiu.ru
 tracker.uprinting.com
 tracker.winload.de
@@ -2079,6 +2113,9 @@ trk.m1.stadiumgoods.com  # from Adguard
 trk.underarmour.com  # from Adguard
 trk.e.underarmour.com  # from Adguard
 trk.us.underarmour.com  # from Adguard
+trk.business.westernunion.co.nz  # from EasyPrivacy
+trk.business.westernunion.co.uk  # from EasyPrivacy
+trk.business.westernunion.com.au  # from EasyPrivacy
 
 ||wa.gmx.  # from Adguard
 wa.metro.co.uk  # from Adguard
@@ -2231,6 +2268,7 @@ o.60sk.ru  # from Adguard
 
 vd.7vid.net
 
+mxpl.9gag.com  # from EasyPrivacy
 web-t.9gag.com  #[Piwik.Analytics]  # from MVPS
 
 vwegpo.adamas.ru  # from GoodbyeAds
@@ -2295,6 +2333,8 @@ webcollector-rtm.agora.io
 rodo.agora.pl  # from Adguard
 
 cool.ah-me.com  # from Adguard
+
+b2b.ainews.kz  # from Ru AdList
 
 # "ГАУ МО "АИС "Подмосковье""
 banner.aismo.ru
@@ -2411,7 +2451,6 @@ click.mz.simba.taobao.com
 click.simba.taobao.com
 click.taobao.com
 click.tz.simba.taobao.com
-count.taobao.com
 dsp.simba.taobao.com
 eco.taobao.com
 fav.simba.taobao.com
@@ -2494,6 +2533,7 @@ assoc-redirect.amazon.com  # ad redirects
 
 coordinator-production-28516768.us-east-1.elb.amazonaws.com  # from BlockListProject/SmartTV
 mailmunch.s3.amazonaws.com  # from Ru AdList
+paywall-ad-bucket.s3.amazonaws.com$important  # from Adguard
 syncplusconfig.s3.amazonaws.com  # from BlockListProject/SmartTV
 twitter-badges.s3.amazonaws.com  # from Ru AdList
 
@@ -2666,6 +2706,8 @@ push.api.bbci.co.uk  # from Fanboy's
 
 froling.bee.pl  # from Dan Pollock's hosts file
 
+ops.beeline.ru  # from Ru AdList
+
 mmi.bemobile.ua  # from GoodbyeAds
 
 bulk.berryprofessionals.com  # gmass.co
@@ -2732,6 +2774,8 @@ zznfip.bork.ru  # from GoodbyeAds
 bournemouthecho-gb.bournemouthecho.co.uk  # from Adguard
 chesterstandard-gb.chesterstandard.co.uk  # from Adguard
 newsandstar-gb.newsandstar.co.uk  # from Adguard
+
+popular-tracker.brainly.com  # from Ru AdList
 
 # from Dan Pollock's hosts file
 counter1.bravenet.com
@@ -2844,6 +2888,8 @@ partnerzyapi.ceneo.pl  # from Adguard
 bet.championat.com$important  # from Adguard: bet.championat.com$important
 favorit.championat.com
 
+s5.charliehebdo.fr  # from EasyPrivacy
+
 www-banner.chat.ru  # from Peter Lowe's hosts file
 
 chesterstandard-gb.chesterstandard.co.uk  # from Adguard
@@ -2867,6 +2913,8 @@ csp-reporting.cloudflare.com  # from EasyPrivacy
 cnb.cnews.ru  # ad scripts  # is in Ru AdList
 
 u939.colgate.com  # from Adguard
+
+net.shop.com.mm  # many subdomains from Adguard
 
 www3.convergenciadigital.com.br  # Revive Adserver - Advertising  # from Quidsup NoTrack-Blocklist
 
@@ -3114,6 +3162,8 @@ elq-lantern.ruggedsolution.getac.com  # from Adguard
 sitetracker.getfeedback.com
 tipico.getfeedback.com
 
+to.getnitropack.com  # from Ru AdList
+
 spectrum.gettyimages.com  # is in EasyPrivacy
 
 pingback.giphy.com  # Giphy - Tracker  # from Quidsup NoTrack-Blocklist
@@ -3223,6 +3273,8 @@ c1.hdgo.cc$important  # kino stats
 
 js.hdzog.com$important  # is in EasyList
 
+customer.heartinternet.co.uk  # from EasyList
+
 cpa.hh.ru
 websocket.hh.ru
 
@@ -3279,6 +3331,8 @@ chatbot.hyve.group
 
 r.i.ua  # tracking images  # http://r.i.ua/s?...  # is in Adguard: ://r.i.ua^
 
+net.iberostar.com  # many subdomains from Adguard
+
 ads.ibibo.com  # goibibo.com
 
 smpop.icfcdn.com  # from uBlock filters
@@ -3326,6 +3380,8 @@ www91.intel.pl  # from GoodbyeAds
 www91.intel.ru  # from GoodbyeAds
 elqtrkstg.intel.com  # from Adguard
 
+yfp.intuit.com  # from EasyPrivacy
+
 adsparking.inzhener-info.ru  # from Adguard
 push-parking.inzhener-info.ru  # from Adguard
 
@@ -3356,6 +3412,8 @@ adspy.javrank.com  # from uBlock filters
 
 ajdivotdelbloab24.jio.com  # from Adguard
 
+partner-api.jobbio.com  # from Dan Pollock's hosts file
+
 jtrackern.joins.com  # from GoodbyeAds
 
 cookies.joneslanglasalle.co.jp  # from Adguard
@@ -3374,6 +3432,8 @@ tr2.kaspersky.com  # from GoodbyeAds
 tr2.kaspersky.ru  # from Adguard
 
 shop.kicker.de  # from Adguard
+
+a-counter.kiev.ua  # from Ru AdList
 
 player-metrics.kinescope.io  # ad xhrs
 
@@ -3430,6 +3490,8 @@ crm.lenta.com
 id.lenta.ru  # ad xhrs  # id.lenta.ru/jsonrpc
 montblanc.lenta.ru  # from Adguard
 
+a.letsjerk.org  # from Adguard
+
 a.letsjerk.to  # from Adguard
 
 bcontent.life.ru  # from Ru AdList  # zombie
@@ -3438,6 +3500,8 @@ chatbot.lifecell.ua  # from Adguard
 
 crm-campaign.liga.net  # from Ru AdList
 crm-tracker.liga.net  # from Ru AdList
+
+torimochi.line-apps.com  # from EasyPrivacy
 
 itad.linetv.tw  # Chinese  # from Adguard
 
@@ -3510,6 +3574,8 @@ mi.miliboo.lu  # from GoodbyeAds
 
 informer.minfin.com.ua  # from Adguard
 
+advert.mirtesen.ru
+
 an.mlb.com  # from Dan Pollock's hosts file
 
 t.mmnt.net  # from Adguard
@@ -3525,9 +3591,12 @@ uptime.monitorus.ru  # from Adguard
 
 ad-app.morion.ua  # from Quidsup NoTrack-Blocklist
 
+mstat.mos.ru
 stats.mos.ru  # from EasyPrivacy
 
 eloqua-uat.motorolasolutions.com  # from Adguard
+
+event-collector.moviesanywhere.com  # from EasyPrivacy
 
 ext.movixhub.com  # from Adguard
 
@@ -3539,6 +3608,7 @@ snippets-stats.mozilla.org  # from Ru AdList
 pop.mrstiff.com  # from Adguard
 
 api-marketolog.mts.ru  # from Ru AdList
+client-analytics.mts.ru  # from EasyPrivacy
 mtsopros.mts.ru  # ad xhrs
 
 a.multik-online.net  # from Ru AdList  # zombie
@@ -3605,7 +3675,7 @@ landing.newgensoft.com
 
 newsandstar-gb.newsandstar.co.uk  # from Adguard
 
-cdn-rum.ngenix.net  # is in EasyPrivacy
+cdn-rum.ngenix.net  # is in EasyPrivacy and Ru AdList
 
 adpriv.nikkei.com  # from Adguard
 nkis.nikkei.com  # from Adguard
@@ -3694,6 +3764,8 @@ pixanalytics2.pixnet.net  # pixnet.net - Tracker  # from Quidsup NoTrack-Blockli
 bobik.playflock.com  # from Ru AdList
 balance.playflock.com  # alias to bobik.playflock.com
 
+srv.plesk.com  # from EasyPrivacy
+
 i.plug.it  # ad scripts  # is in hpHosts’ Ad and tracking servers
 
 opx.podolsk.ru  # from Ru AdList
@@ -3723,6 +3795,8 @@ zontent.powvideo.net  # from uBlock filters
 qontent.powvibeo.me  # from uBlock filters
 rontent.powvibeo.me  # from uBlock filters
 
+a.pr-cy.ru  # from Ru AdList
+
 jvs.price.ru  # from Adguard
 track.price.ru  # from Adguard
 
@@ -3732,6 +3806,8 @@ smscenter.primatel.ru
 t.procrastinator.tips  # from Adguard
 
 cgicounter.puretec.de  # from Dan Pollock's hosts file  # ionos.de
+
+bobcat.pushplay.nl  # from Adguard
 
 news.pustgovorjat.ru  # from Adguard
 
@@ -3822,8 +3898,6 @@ pings-2.reembed.com
 ! (feedback service)
 adline.reformal.ru
 
-parking.reg.ru
-
 ovz.vps.regruhosting.ru  # from Energized Blu
 
 content.relax.ru  # from Ru AdList
@@ -3890,7 +3964,7 @@ scr.online.sberbank.ru  # analytics
 
 visitor.sbis.ru  # ad xhrs  # visitor.sbis.ru/consumertracking/service/user_error/
 
-yotta.scrolller.com  # from EasyList
+yotta.scrolller.com  # from EasyList and Adguard
 
 adrs.sdo.com  # Chinese  # from Adguard
 
@@ -3913,6 +3987,8 @@ adm.shinobi.jp  # from EasyList
 s.shopify.com$important  # from MVPS HOSTS file  # in AdGuard: ||s.shopify.com/visit/record.gif?
 stats.shopify.com$important  # is in AdGuard and EasyPricacy
 v.shopify.com$important  # is in AdGuard and EasyPricacy  #v.shopify.com/internal_errors/track
+
+geolocation-recommendations.shopifycloud.com  # shopify ad scripts
 
 asg.shudhdesiporn.com  # from Adguard
 
@@ -4005,6 +4081,9 @@ yhyped.stolplit.ru  # from GoodbyeAds
 b.stranamam.ru  # from Adguard
 
 adc.streamspread.com  # from Adguard
+
+m.stripe.com  # from EasyPrivacy
+r.stripe.com  # from EasyPrivacy
 
 sp-consent.stuttgarter-zeitung.de  # from Adguard
 
@@ -4286,11 +4365,14 @@ illicium.wmtransfer.com
 
 as.webmd.com  # from MVPS
 
+i.webo.in  # from Ru AdList
+
 cdn-promote.weebly.com  # from Adguard: ||cdn-promote.weebly.com/js/dist/lead-form.js  # from Adguard
 
 alitui.weibo.com  # from MobileAdTrackers
 game.weibo.com  # from MobileAdTrackers
 
+d.wi-fi.ru  # from Ru AdList
 dmp.wi-fi.ru
 
 athena-ads.wikia.com  # from Peter Lowe's hosts file
