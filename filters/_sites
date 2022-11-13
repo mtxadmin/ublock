@@ -311,6 +311,8 @@
 ||4heating.ru/img/ic4.png
 ||4heating.ru/img/ic5.png
 
+4italka.ru##.bg-page
+
 ||4kids.com.ua/img/*.swf
 ||4kids.com.ua/img/advr/  # from Adguard
 ||4kids.com.ua/img/head_left.jpg
@@ -3012,6 +3014,8 @@ bleepingcomputer.com##header.nav-up:style(transform:none !important; -webkit-tra
 
 ||blindage.org/favicon.png  # gif
 
+blioteka.ru##[href^="https://videocomics.ru/"]
+
 blokada.org##footer::before
 blokada.org##.shape
 blokada.org##.text-white:style(color:#000 !important)
@@ -5013,6 +5017,8 @@ dimonvideo.ru##.fullmenu
 
 dimox.name##.header::after
 
+direct-cloud.me$3p  # from uBlock filters: *$3p,domain=direct-cloud.me
+
 direct-credit.ru$3p
 dc2b.ru$3p
 
@@ -6640,8 +6646,10 @@ fanfics.me###banner_read_bottom_728x90
 fanfics.me##.first:style(padding-top:0px !important)
 fanfics.me##.ReadContent:style(padding-top:0px)
 
-fantasy-worlds.net##.bookfooter
-fantasy-worlds.org##.bookfooter
+||fantasy-worlds.net/i/alienbird$image
+||fantasy-worlds.org/i/alienbird$image
+fantasy-worlds.net,fantasy-worlds.org##.bookfooter
+fantasy-worlds.net,fantasy-worlds.org##noindex
 
 fanzon-portal.ru##.subscribe-form-fix
 
@@ -6799,8 +6807,15 @@ fetter1901.ru##.page_section_parallax
 fettershop.ru##.stylebanner
 fettershop.ru##.box-subscribe
 
-ficbook.net##.discount-sticky
 ||ficbook.net/assets/dist/images/pattern$image
+||ficbook.net/assets/dist/images/bg-pattern$image
+||ficbook.net/assets/dist/images/corner-$image
+ficbook.net##[class^=book-stiches]
+ficbook.net##.alert-news
+ficbook.net##.discount-sticky
+ficbook.net###toTop
+ficbook.net##.ic_arrow-up
+ficbook.net##.page-footer__pwa
 
 file.org##.main-sidebar:style(position:static !important)
 
@@ -7216,6 +7231,10 @@ freetutorialshub.com###author-box
 freetutorialshub.com##.check-also-right
 ! too long
 freetutorialshub.com##.widget_categories
+
+freetutsdownload.com##.jeg_sticky_nav
+freetutsdownload.com##.widget_categories
+freetutsdownload.com##a[href*="grunoaph.net"]
 
 ||fresher.ru/widget/
 
@@ -7917,6 +7936,8 @@ goodstone.realty##.b-header_bottom
 goodstone.realty##.b-slid_text
 ||goodstone.realty/images/slid/*$image
 ||goodstone.realty/images/ytong.jpg
+
+goodvas.com$3p  # МТС English (from mts_podpiski). Do not block entirely.
 
 gordonua.com$inline-script  # site blocks copypaste
 gordonua.com##header:style(background:none !important)
@@ -13275,6 +13296,7 @@ mos.ru##[class^="Caption_title"]
 mos.ru##[href*="scrollToTop()"]
 mos.ru##.scene__logo
 mos.ru##.head__logo__text_small
+mos.ru##.system-header__desc
 
 mosautoshina.ru##.owl-carousel
 mosautoshina.ru###clb-bottom-btn
@@ -15212,6 +15234,9 @@ overclockers.ru##.comments-feed
 overclockers.ru##.material-other-feed
 overclockers.ru##.spinner
 overclockers.ru##.segment
+
+! already blocked, but
+overdrive.com##.reveal-modal-bg
 
 overplay.net$third-party
 
@@ -23424,6 +23449,10 @@ week.news$3p  # is in RU AdList
 werdum-army.ru###menu-zakazat-zvonok-futer
 werdum-army.ru##.xoo-wsc-modal
 
+we-reads.com##.abs_row
+we-reads.com##.shared
+we-reads.com###footer > .container
+
 westernjournal.com##.white-logo
 westernjournal.com##.menu-top:style(position:static !important)
 westernjournal.com##.color-logo.ff-logo
@@ -25876,8 +25905,6 @@ u-tv.ru##.show-gallery__wrap
 motphim123.com##.banner-preload
 
 ||01net.com/telecharger/  # from uBlock filters - Badware
-
-direct-cloud.me$3p  # from uBlock filters: *$3p,domain=direct-cloud.me
 
 ||vaikuttajamedia.fi^*/markuk_evastevaroitus.js  # from EasyList
 
