@@ -1101,6 +1101,7 @@ _banner_rotator.php  # from Adguard
 -omniture.js  # from Fanboy's
 /openx/*$important  # is in EasyList
 /openxtag.js$important
+/page/bouncy.php  # is in Adguard
 /pagead/*
 /pagead2/*
 /pageview.js  # is in EasyPrivacy
@@ -1279,8 +1280,11 @@ _rebid.js  # from EasyList
 /show-ads.js$important
 /showads.$important  # disable exclusion from Fanboy’s Enhanced Tracking List
 /sidebar_banners/*
-/siropu/am/core.min.js$script,important  # is in uBlock filters as is
-/siropu/am/display.$script  # from RU AdList
+/siropu/am/*$script,important
+    ! /siropu/am/core.min.js$script,important  # is in uBlock filters as is
+    ! /siropu/am/display.$script  # from RU AdList
+    ! ||cdn.car4um.com/js/Siropu/AM/ads.min.js  # from Adguard
+    ! ||germancarforum.com/js/Siropu/AM/ads.min.js  # from Adguard
 /sitecatalyst/*  # from Fanboy’s
 /smart-app-banner/
 /smart-app-banner.js
