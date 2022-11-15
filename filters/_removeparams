@@ -233,6 +233,11 @@ $removeparam=elqTrack  # Oracle Eloqua  # from NeatURL
 $removeparam=elqTrackId  # Oracle Eloqua  # from NeatURL
     ! lp.sophos.com$removeparam=elqTrackId  # from Adguard
 
+! https://thebell.io/kto-budet-uchityvat-vsyu-reklamu-v-internete-chto-budet-s-vizami-i-kak-raskryt-moshennichestvo-po-fotografii
+! https://interactivead.ru/wp-content/uploads/2022/08/arir22_rkn.pdf
+! "Получить идентификатор креатива может любой участник рынка, обратившись в ОРД и предоставив необходимые для регистрации данные... "Повесить" полученный идентификатор на креатив агенство может при прямом размещении, добавив идентификатор (erid=XXX) в кликовую ссылку рекламного объявления"
+$removeparam=erid
+
 $removeparam=/^etcc_/
     ! hitseller.de$removeparam=etcc_cmp  # from Adguard
     ! hitseller.de$removeparam=etcc_med  # from Adguard
@@ -608,8 +613,8 @@ $removeparam=/^ref_.*/
     ! reddit.com$removeparam=ref_campaign  # from Adguard
     ! reddit.com$removeparam=ref_source  # from Adguard
     ! twitter.com$removeparam=/^ref_.*/  # from NeatURL
-        ! twitter.com$removeparam=ref_src  # from Adguard
-        ! twitter.com$removeparam=ref_url  # from Adguard
+        ! twitter.com$removeparam=ref_src  # is in Adguard
+        ! twitter.com$removeparam=ref_url  # is in Adguard
 
 $removeparam=/referer/
 $removeparam=/referrer/
@@ -1348,6 +1353,7 @@ ozon.ru$removeparam=avte  # from Ru AdList
 ozon.ru$removeparam=avts  # from Ru AdList
 ozon.ru$removeparam=_bctx
 ozon.ru$removeparam=miniapp
+ozon.ru$removeparam=partner  # ref
 ozon.ru$removeparam=sh
 
 pingdom.com$removeparam=CMP  # reflinks
@@ -1554,10 +1560,11 @@ ykt.ru$removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_in
     ! ykt.ru$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru  # from Ru AdList
 
 youtube.com$removeparam=ab_channel
-youtube.com$removeparam=feature  # from NeatURL
+youtube.com$removeparam=feature  # is in NeatURL
     ! unusual Ru AdList form:
     ! &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com  # from Ru AdList
 youtube.com$removeparam=kw  # from NeatURL
+youtube.com$removeparam=si
 youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
     ! ?sub_confirmation=1$document,removeparam=|,domain=youtube.com  # from Ru AdList
 
@@ -2150,3 +2157,12 @@ elgato.com$removeparam=contact_id  # from Adguard
 elgato.com$removeparam=link_id  # from Adguard
 elgato.com$removeparam=platform  # from Adguard
 elgato.com$removeparam=token  # from Adguard
+
+yourcodereview.com$removeparam=add_name_parameter  # ref
+
+paycard.link$removeparam=r  # ref
+
+synergyacademy.com$removeparam=marketer  # ref
+synergyacademy.com$removeparam=produkt  # ref
+
+docs.google.com$removeparam=usp
