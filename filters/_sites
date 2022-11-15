@@ -6873,6 +6873,11 @@ finanzen.net##.sticky-height-prefix
 finanzen.net##.fixed-height-desktop-only
 finanzen.net##.footer-box
 
+    ! ad popups
+finder.vc##.modal__container
+finder.vc##.modal
+    ! other
+
 findmevk.com##.resultContainer:has-text(Регистрация ИП)
 ||findmevk.com/images/3eac_2bab36dbc6e79a2963a076a57861.jpeg
 
@@ -7258,6 +7263,13 @@ blog.f-secure.com##.b-page-content--offset:style(padding-top:0px !important)
 
 ||fssquad.com/hotlink-ok/$image
 fssquad.com##.userBanner
+
+    ! paywall (but not removed)
+||ft.com/*/mobile-article-blur.png
+ft.com###article-trial-barrier:style(background-image:none !important; text-indent:initial !important; left:0px !important)
+ft.com##.blurred_title:style(background-image:none !important; text-indent:initial !important; left:0px !important)
+ft.com##.o-subs-card__container
+    ! other
 
 ||fuckingbreak.com/images/
 fuckingbreak.com##.btn
@@ -7866,6 +7878,7 @@ disney.com$3p
 go4hosting.in##.sbmtqurybtn
 
 goabroad.com###notice-bar
+goabroad.com##.top-programs-wrapper
 
 gocd.org##.top:style(position:static !important)
 
@@ -21053,6 +21066,19 @@ thefreedictionary.com##.icon-notif
 
 thegeekdiary.com##.site-header
 
+   ! banners and promos
+! inline
+theguardian.com###jbe-variation
+! inline
+theguardian.com##.lister-alert-signup
+theguardian.com###cta-right-column
+    ! other
+theguardian.com##.lister__logo
+theguardian.com##.rec-logo
+theguardian.com##.button--lister-view-details
+!socials
+theguardian.com##.job-details__social-share
+
 ||theins.ru/proxy/fb/
 ||theins.ru/proxy/ok/
 ||theins.ru/proxy/vk?
@@ -22235,7 +22261,8 @@ uplab.ru###Layer_1
 ! todo: remove annoying animation
 !||tildacdn.com/js/tilda-animation
 
-||uptime.com/static/rum/$3p  # ad scripts  # is in EasyPrivacy
+uptime.com$3p
+||uptime.com/static/rum/$3p  # ad scripts  # is in EasyPrivacy  # also from Adguard: rum.uptime.com
 
     ! popups
 uptimerobot.com##.notyfy_container
@@ -25987,3 +26014,35 @@ rufox.ru*/ncounter.pl?  # from Ru AdList
 
 migrator.ru##.mh-site-descr-head
 migrator.ru##.wp-caption-text:has-text(Источник:)
+
+!duunitori.fi
+||duunitori.imgix.net/media/duunivahti-hero-desk.jpg
+
+yourcodereview.com$3p  # spam
+
+synergyacademy.com$3p  # spam
+
+uniter.ai$3p  # spam
+||uniter.ai/r/  # ref
+
+gordischool.ru$3p  # spam  # getcourse.ru platform
+
+english-tm.ru$3p  # spam
+
+otus.pw$3p  # spam
+
+romankapa.ru$3p  # spam  # now empty :-)
+
+sematext.com$3p  # Sematext - Tracker  # from Quidsup NoTrack-Blocklist  # moved to 3p
+
+! popups
+aeza.net##div:matches-css(position:fixed)
+
+15min.lt##.sticky-bar
+15min.lt###scroll-top
+
+!totop
+sostav.ru###pageup
+
+! https://thebell.io/kto-budet-uchityvat-vsyu-reklamu-v-internete-chto-budet-s-vizami-i-kak-raskryt-moshennichestvo-po-fotografii
+interactivead.ru$3p  # possible 3p  # https://interactivead.ru/wp-content/uploads/2022/08/arir22_rkn.pdf
