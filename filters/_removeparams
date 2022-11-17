@@ -137,6 +137,7 @@ $removeparam=/campaign/,domain=~recruitics.com  # maybe it needs i? Not sure
         ! stripchat.com$removeparam=campaignId  # from Adguard
     ! $removeparam=hmb_campaign  # Campaign tracking (Humble Bundle)  # from NeatURL
     ! $removeparam=sc_campaign  # Campaign tracking (sc)  # from NeatURL
+    ! adjust.com$removeparam=campaign  # from Adguard
     ! ||amazon.*/aa$removeparam=bitCampaignCode  # from Adguard
     ! doctolib.de$removeparam=utm_button  # from Adguard
     ! doctolib.de$removeparam=utm_content-group  # from Adguard
@@ -175,6 +176,7 @@ $removeparam=/clickid$/
 $removeparam=/click_id$/
     ! $removeparam=mt_click_id  # from Ru AdList
     ! $removeparam=unicorn_click_id  # adjust.com tracking  # from Adguard
+    ! adjust.com$removeparam=nend_click_id  # from Adguard
     ! tinkoff.ru$removeparam=dsp_click_id
 
 $removeparam=clickref
@@ -318,6 +320,7 @@ $removeparam=gclsrc  # Campaign tracking (Google Analytics, ga)  # from NeatURL 
 $removeparam=gps_adid  # adjust.com tracking  # from Adguard
 
 $removeparam=gs_l  # Google general parameter  # from NeatURL
+    ||google.*/search$removeparam=gs_l  # from Adguard
 
 $removeparam=gtm  # from Ru AdList
 
@@ -1085,6 +1088,24 @@ doubleclick.net$removeparam=/^dc_trk_/  # from Adguard
 doubleclick.net$removeparam=p  # from uBlock filters
 doubleclick.net$all,removeparam=/^([a-dfmnr-u]|e[ir]|ga|i[dfm]|o[hi]|p[s-v]|vi)/  # from uBlock filters
 doubleclick.net$all,removeparam=/^(cookie|ga_|u_)/  # from uBlock filters
+doubleclick.net$removeparam=/^a/,important  # from uBlock filters
+doubleclick.net$removeparam=/^b/,important  # from uBlock filters
+doubleclick.net$removeparam=/^c/,important  # from uBlock filters
+doubleclick.net$removeparam=/^d/,important  # from uBlock filters
+doubleclick.net$removeparam=/^f/,important  # from uBlock filters
+doubleclick.net$removeparam=/^ga/,important  # from uBlock filters
+doubleclick.net$removeparam=/^id/,important  # from uBlock filters
+doubleclick.net$removeparam=/^m/,important  # from uBlock filters
+doubleclick.net$removeparam=/^n/,important  # from uBlock filters
+doubleclick.net$removeparam=/^r/,important  # from uBlock filters
+doubleclick.net$removeparam=/^s/,important  # from uBlock filters
+doubleclick.net$removeparam=/^u/,important  # from uBlock filters
+doubleclick.net$removeparam=eid,important  # from uBlock filters
+doubleclick.net$removeparam=gpic,important  # from uBlock filters
+doubleclick.net$removeparam=lmt,important  # from uBlock filters
+doubleclick.net$removeparam=ohw,important  # from uBlock filters
+doubleclick.net$removeparam=psts,important  # from uBlock filters
+doubleclick.net$removeparam=pvsid,important  # from uBlock filters
 
 ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
 ebay.*$removeparam=hash  # from NeatURL
@@ -1124,7 +1145,7 @@ georiot.com$removeparam=tsid  # from Adguard
 getmatch.ru$removeparam=s  # ref
 
 ! I am not sure, is it safe to modify these google rules. So they mostly are as is here.
-! Too lazy to test it out, sorry :-) Maybe, sometimes.
+! Too lazy to test it out, sorry :-) Maybe, sometime.
 ! Also, there is one global google rule from NeatURL, see above
 google.*/search$removeparam=aqs  # from Adguard
     ! ||www.google.*/search?$removeparam=aqs  # from Ru AdList
@@ -1133,7 +1154,7 @@ google.*/search$removeparam=bih  # from Adguard
     ! ||www.google.*/search?$removeparam=bih  # from Ru AdList
 google.*/search$removeparam=biw  # from Adguard
     ! ||www.google.*/search?$removeparam=biw  # from Ru AdList
-||www.google.*/search?client=$removeparam=client  # from Ru AdList
+||google.*/search?client=$removeparam=client  # from Ru AdList and Adguard
 ||www.google.*/search?$removeparam=cshid  # from Ru AdList
 ||www.google.*/search?$removeparam=dpr  # from Ru AdList
 google.*$removeparam=ei  # from NeatURL
@@ -1148,10 +1169,11 @@ google.*$removeparam=gs_mss  # from NeatURL
 google.*$removeparam=gs_rn  # from NeatURL
 ||www.google.*/search?$removeparam=gs_ssp  # from Ru AdList
 ||www.google.*/search?$removeparam=hl  # from Ru AdList
-||www.google.*/search?$removeparam=ie  # from Ru AdList
+||google.*/search?$removeparam=ie  # from Ru AdList and Adguard
 ||www.google.*/search?$removeparam=iflsig  # from Ru AdList
 ||www.google.*/search?$removeparam=newwindow  # from Ru AdList
-||www.google.*/search?$removeparam=oq  # from Ru AdList
+||google.*/search$removeparam=oe  # from Adguard
+||google.*/search?$removeparam=oq  # from Ru AdList and Adguard
 google.*/search$removeparam=sa  # from Adguard
     ! ||www.google.*/search?$removeparam=sa  # from Ru AdList
 ||www.google.*/search?$removeparam=sclient  # from Ru AdList
@@ -1159,6 +1181,7 @@ google.*$removeparam=sei
 google.*/search$removeparam=sourceid  # from Adguard
     ! ||www.google.*/search?$removeparam=sourceid  # from Ru AdList
 ||www.google.*/search?$removeparam=uact  # from Ru AdList
+docs.google.com$removeparam=usp
 google.*$removeparam=ved
     ! ||www.google.*/search?$removeparam=ved  # from Ru AdList
 google.*/websearch$removeparam=visit_id  # from Adguard
@@ -2165,4 +2188,10 @@ paycard.link$removeparam=r  # ref
 synergyacademy.com$removeparam=marketer  # ref
 synergyacademy.com$removeparam=produkt  # ref
 
-docs.google.com$removeparam=usp
+promo.korabli.su$removeparam  # from Adguard
+
+adjust.com$removeparam=creative  # from Adguard
+adjust.com$removeparam=/^event_callback_/  # from Adguard
+adjust.com$removeparam=install_callback  # from Adguard
+adjust.com$removeparam=ip_address  # from Adguard
+adjust.com$removeparam=user_agent  # from Adguard
