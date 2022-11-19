@@ -8311,6 +8311,7 @@ habr.com##a[href="https://bit.ly/PochtoyHABR"]
 habr.com##[href^="https://itsoft.ru/"]
 habr.com##a[href^="http://madrobots.ru"]
 habr.com##a[href^="https://madrobots.ru"]
+habr.com##a[href^="https://www.mvideo.ru/"]
 habr.com##a[href^="https://t.me/g_jobbot"]
 habr.com##a[href^="https://t.me/iaasblog/"]
 habr.com##a[href^="https://www.englishdom.com/"]
@@ -8322,6 +8323,9 @@ habr.com##a[href^="https://ruvds.com/"]
 habr.com##a[href^="https://vdsina.ru/"]
 habr.com##a[href^="https://about.me/"]
 habr.com##a[href^="https://www.globalsign.com/"] > img
+    ! remove ads from posts list
+! Mvideo SMM (and links)
+habr.com##.tm-articles-list__item:has(a.tm-user-info__username[href$="/fedorborovitsky/"]):not(:matches-path(/posts/))
     ! socials
 habr.com##div.default-block_sidebar:has-text(Twitter)
 habr.com##div.default-block_sidebar:has-text(ВКонтакте)
@@ -19451,7 +19455,9 @@ sotmarket.ru##.top.elc_notification
 sotosstore.ru##.fixed-link
 sotosstore.ru##.sidebar-edges
 
-soundcloud.com$xhr
+# soundcloud.com$xhr - in general, don't
+||soundcloud.com/errors
+||soundcloud.com/report-errors
 
 souravmahato.com##.inner-banner
 
@@ -26046,3 +26052,8 @@ sostav.ru###pageup
 
 ! https://thebell.io/kto-budet-uchityvat-vsyu-reklamu-v-internete-chto-budet-s-vizami-i-kak-raskryt-moshennichestvo-po-fotografii
 interactivead.ru$3p  # possible 3p  # https://interactivead.ru/wp-content/uploads/2022/08/arir22_rkn.pdf
+
+! "SmartBanner is not a constructor"
+findtwin.ru##+js(set, SmartBanner, noopFunc)
+
+jango.com$3p  # from EasyList  # radio, do not block entirely
