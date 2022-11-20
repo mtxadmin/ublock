@@ -789,6 +789,9 @@ forum.adguard.com##.staticNavDummy
 adguard.com##.sidebar__sticky-in:style(position:static !important)
 adtidy.org##+js(cookie-remover.js)
 
+adlibweb.com##.menu-container:style(position:static !important)
+adlibweb.com##.gsb-switcher:style(position:static !important)
+
 ||adlock.com/*/adl__spec.js
 adlock.com##.adl__spec__disc
 
@@ -1303,6 +1306,8 @@ amazon.com###woodstock-detail
 aws.amazon.com##.m-nav-panel-exits
 aws.amazon.com##.lb-blog-nav:style(position:static !important)
 aws.amazon.com###aws-page-content:style(margin-top:0px !important; padding-top:0px !important)
+
+amazon.jobs###privacy-preferences-banner
 
 ||amazonaws.com/oneclickupsell/
 
@@ -3241,6 +3246,8 @@ booksonline.com.ua##.footer_style.wrapper
 booksonline.com.ua###toPrev
 booksonline.com.ua##.book_preview
 booksonline.com.ua##.view_now_read
+
+boosty.to$3p  # монетизация VK от mail.ru
 
 ! disable exclusion in Fanboy's
 @@*$generichide,domain=boredpanda.com,badfilter
@@ -6892,6 +6899,9 @@ findtenders.ru##.control-panel:style(position:static !important)
 findtenders.ru##.our-clients
 ||findtenders.ru/templates/findtenders/images/clients.png
 
+! "SmartBanner is not a constructor"
+findtwin.ru##+js(set, SmartBanner, noopFunc)
+
 fineshoes.ru##.header-top
 fineshoes.ru##.slide-menu
 fineshoes.ru##.blog-action
@@ -8447,6 +8457,7 @@ hausberg.ru##.back-link
 
 !hbr.org##.sticky-top-header:style(position:static ! important)
 hbr.org##.persistent-banner
+hbr.org##.sticky-top-header:style(position:static !important)
 
 ! topline :-)
 hc5.ru##.currency-toggle
@@ -9644,6 +9655,9 @@ communities.intel.com###j-header-wrap > span
 intelligentsystemsmonitoring.com###masthead
 intelligentsystemsmonitoring.com##.enhanced-text-widget
 
+! https://thebell.io/kto-budet-uchityvat-vsyu-reklamu-v-internete-chto-budet-s-vizami-i-kak-raskryt-moshennichestvo-po-fotografii
+interactivead.ru$3p  # possible 3p  # https://interactivead.ru/wp-content/uploads/2022/08/arir22_rkn.pdf
+
 intercharm.ru##.header__fixed:style(position:static !important)
 
 interesimir.ru##.art-Logo
@@ -10080,6 +10094,8 @@ jam-news.net###donationPopup
 jam-news.net##.header-support-button
 jam-news.net##.header-links
 
+jango.com$3p  # from EasyList  # radio, do not block entirely
+
 japantoday.com##.widget--animated
 
 ||jav.si/js/zplay.js  # from uBlock filters
@@ -10122,6 +10138,9 @@ joaoapps.com##.czr-btta.czr-btt.btn
 ||job.ws/_bann/  # from Adguard
 
 jobbio.com$third-party  # from EasyList
+
+jobcyprus.online##.tab-title:has-text(Реклама)
+jobcyprus.online##.type-reklama
 
     ! popups
 jobdnes.cz###dogOusko
@@ -16473,6 +16492,9 @@ primecurves.com##h1
 primecurves.com##h2
 primecurves.com##h3
 
+principal33.com##.top-button-container
+principal33.com##.sales-info
+
 printdirect.ru$3p  # from Adguard
 printdirect.ru##.news-subscribe
 
@@ -17990,6 +18012,7 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.org/big/2017/0803/69/a4f5cc3fa4822eb538d940ae05352069.png
 ||fastpic.org/big/2017/0804/a4/47ecbe85694e340e5f891e0fec9466a4.png
 ||fastpic.org/big/2017/1205/3c/31dd111f6b53750d3b98ab643ad93c3c.jpg
+||fastpic.org/big/2017/1218/b1/2b40b455ed7dc111d226b952565c8db1.png
 ||fastpic.org/big/2019/1029/ff/5dae8a02467f3c409432c9ff77de44ff.png
 ||fastpic.org/big/2019/1101/6e/0b475919c9d011fe3ee0d890954fbc6e.jpg
 ||fastpic.org/big/2019/1101/8b/845d8ff9e3c1c3e8f0305578aaffcd8b.jpg
@@ -20543,6 +20566,10 @@ tech-coffee.net##.fixed-nav:style(top:0px !important)
 tech-coffee.net##.background-cover
 tech-coffee.net##.single-post-thumb
 
+techcommuters.com##.sticky-spacer
+techcommuters.com##.detail-icon.meta
+techcommuters.com##.adverTisement
+
 techcosmetic.ru###us_fixed_contact_button
 techcosmetic.ru##.oct-fixed-bar
 techcosmetic.ru##.top-phone-btn
@@ -21637,6 +21664,8 @@ trekkingmania.ru##.topbar:style(position:static !important)
 !trello.com##div:matches-css(padding-left: 260px):style(padding-left:0px !important)
 ! v2
 trello.com###content-wrapper:style(padding-left:0px !important)
+! left
+trello.com###popover-boundary > div > .js-react-root:has-text(/^$/)
     ! banners and promos
 trello.com##button:has-text(Premium)
 trello.com##div:has(>button[data-test-id="team-home-sidebar-upgrade-prompt"])
@@ -23734,6 +23763,8 @@ windows10i.ru###masthead
 
 windowscentral.com##.header-top:style(position:static !important)
 windowscentral.com##.header-top-inner:style(position:static !important)
+!inline
+windowscentral.com##.hawk-nest
 
 windowslatest.com##.block-title > span:has-text(Advertisement)
 
@@ -26050,10 +26081,3 @@ aeza.net##div:matches-css(position:fixed)
 !totop
 sostav.ru###pageup
 
-! https://thebell.io/kto-budet-uchityvat-vsyu-reklamu-v-internete-chto-budet-s-vizami-i-kak-raskryt-moshennichestvo-po-fotografii
-interactivead.ru$3p  # possible 3p  # https://interactivead.ru/wp-content/uploads/2022/08/arir22_rkn.pdf
-
-! "SmartBanner is not a constructor"
-findtwin.ru##+js(set, SmartBanner, noopFunc)
-
-jango.com$3p  # from EasyList  # radio, do not block entirely
