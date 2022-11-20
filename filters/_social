@@ -1175,6 +1175,43 @@ plus.google.com
 ##.telegram-widget
 !##.tlg-link
 ##.tlg-msg
+!
+!     Rules for Telegram Web
+!
+! Notifications: title is flickering. Very annoying.
+web.telegram.org##+js(set, document.title, undefined)
+!
+! standard Telegram ads
+web.telegram.org##.Message.SponsoredMessage
+!
+!
+!   Hide messages that contain:
+!
+! ads - bizon365 (webinars)
+web.telegram.org##.message-list-item.Message:has(a[href^="https://start.bizon365.ru"])
+!
+! ads - otus (overpriced paid IT courses and annoying ads)
+web.telegram.org##.message-list-item.Message:has(a[href^="https://otus.pw"])
+web.telegram.org##.message-list-item.Message:has(.text-content:has-text(/OTUS/))
+!
+! ads - slurm (overpriced paid IT courses and annoying ads)
+web.telegram.org##.message-list-item.Message:has(a[href^="https://slurm.club"])
+!
+! ads - zavodit.ru (hackatons)
+web.telegram.org##.message-list-item.Message:has(a[href^="https://www.zavodit.ru/"])
+!
+!
+! URL shorteners. Typically ads, ads, ads...
+!
+web.telegram.org##.message-list-item.Message:has(a[href^="https://bit.ly/"])
+!
+web.telegram.org##.message-list-item.Message:has(a[href^="https://clc.to/"])
+!
+web.telegram.org##.message-list-item.Message:has(a[href^="https://clck.ru/"])
+!
+web.telegram.org##.message-list-item.Message:has(a[href^="http://e42.link/"])
+web.telegram.org##.message-list-item.Message:has(a[href^="http://a.e42.link/"])
+!
 
 
 
