@@ -8079,6 +8079,7 @@ grafana.com##.page-submenu:style(position:static !important)
 grafana.com##.mega-menu__logo
     ! banners and promos
 grafana.com##.docs-featured
+grafana.com##.signup-cta
     ! subscriptions
 grafana.com##.page-footer__form
     ! other
@@ -21597,6 +21598,12 @@ trackersimulator.org
 tradingview.com$3p  # from marketing
 ||tradingview.com/ping
 ! s3.tradingview.com/tv.js
+    ! popups
+! yes, it is an ad popup
+tradingview.com##[class^=banner-]
+tradingview.com##.tv-dialog__modal-wrap
+tradingview.com##.tv-dialog__overlay
+    ! other
 
 traektoria.ru##.cityguess > .sub
 
@@ -26082,3 +26089,6 @@ aeza.net##div:matches-css(position:fixed)
 sostav.ru###pageup
 
 seeip.org$third-party,important  # is in EasyPrivacy and Ru AdList
+
+sim-networks.com##.wiki-banner-widget
+sim-networks.com##.main-site-logo
