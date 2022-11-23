@@ -2726,7 +2726,9 @@ _wtInit.js  # from Fanboy's
 !! ratings and surveys
 /rate.widget.js
 ! generalized
-~aliexpress.com,~aliexpress.ru,~air-gun.ru,~backit.me,~epn.bz,~support.google.com,~trimble.com,~dobrodel.ru,~mosreg.ru,~mos.ru,~neorabote.net,~news2.ru,~wildberries.ru,~wildberries.co.il,~~wildberries.fr,~yandex.ru##[class*="feedback"]:not(html):not(body)
+~aliexpress.com,~aliexpress.ru,~air-gun.ru,~backit.me,~epn.bz,~support.google.com,~trimble.com,~dobrodel.ru,~mosreg.ru,~mos.ru,~neorabote.net,~news2.ru,~wildberries.ru,~wildberries.co.il,~~wildberries.fr,~yandex.ru##[class*="feedback"]:not(html):not(body):not(.deferredfeedback)
+    ! Exclusions:
+    ! .deferredfeedback - Moodle (edu platform)
 ~alfabank.ru,~aliexpress.com,~aliexpress.ru,~disconnect.me,~trimble.com,~zen.yandex.ru##[id*="feedback"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru##[class*="Survey"]:not(html):not(body)
 ~aliexpress.com,~aliexpress.ru##[id*="Survey"]:not(html):not(body)
