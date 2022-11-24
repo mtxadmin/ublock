@@ -57,18 +57,21 @@ $removeparam=advertisementId
     ! lotto.web.de$removeparam=advertisementId  # from Adguard
     ! ||lotto.gmx.*^$removeparam=advertisementId  # from Adguard
 
-$removeparam=/^aff_/
+$removeparam=/^aff_/,important
     ! $removeparam=aff_platform  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
     ! $removeparam=aff_trace_key  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
     ! ||aliexpress.$removeparam=aff_fcid  # from Adguard
         ! aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com  # from Ru AdList
     ! ||aliexpress.$removeparam=aff_short_key  # from Adguard
+        ! but:
+        ! @@||s.click.aliexpress.com/deep_link.htm?aff_short_key=$removeparam=aff_short_key  # from Adguard
     ! ||aliexpress.$removeparam=aff_trace_key  # from Adguard
     ! ||aliexpress.$removeparam=aff_fsk  # from Adguard
     ! iqbroker.com$removeparam=aff_model  # from Adguard
 $removeparam=/^affi/
     ! cyberlink.com$removeparam=affid  # from Adguard
     ! ||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest  # from Adguard
+    ! dhits.docomo.ne.jp$removeparam=affiliate  # from Adguard  # blocked
     ! flipkart.com$removeparam=affid  # from Adguard
     ! otto.de$removeparam=AffiliateID  # from Adguard
     ! $removeparam=AffiliateID,domain=otto.de|ottoversand.at  # from Adguard
@@ -139,14 +142,9 @@ $removeparam=/campaign/,domain=~recruitics.com  # maybe it needs i? Not sure
     ! $removeparam=sc_campaign  # Campaign tracking (sc)  # from NeatURL
     ! adjust.com$removeparam=campaign  # from Adguard
     ! ||amazon.*/aa$removeparam=bitCampaignCode  # from Adguard
-    ! doctolib.de$removeparam=utm_button  # from Adguard
-    ! doctolib.de$removeparam=utm_content-group  # from Adguard
-    ! doctolib.de$removeparam=utm_page-url  # from Adguard
-    ! doctolib.de$removeparam=utm_website  # from Adguard
     ! editor.flixier.com$removeparam=/fx_(source|medium|campaign)/  # from Adguard
     ! ||play.google.com/store/$removeparam=pcampaignid  # from Adguard
     ! indeed.com$removeparam=campaignid
-    ! nationalgeographic.com$removeparam=utm_rd  # from Adguard
     ! revolut.com$removeparam=%7Ecampaign_id  # from Adguard
     ! shopyourlikes.com$removeparam=afCampaignId
     ! trendyol.com$removeparam=tyutm_campaign  # from Adguard
@@ -238,7 +236,7 @@ $removeparam=elqTrackId  # Oracle Eloqua  # from NeatURL
 ! https://thebell.io/kto-budet-uchityvat-vsyu-reklamu-v-internete-chto-budet-s-vizami-i-kak-raskryt-moshennichestvo-po-fotografii
 ! https://interactivead.ru/wp-content/uploads/2022/08/arir22_rkn.pdf
 ! "Получить идентификатор креатива может любой участник рынка, обратившись в ОРД и предоставив необходимые для регистрации данные. "Повесить" полученный идентификатор на креатив агенство может при прямом размещении, добавив идентификатор (erid=XXX) в кликовую ссылку рекламного объявления"
-$removeparam=erid
+$removeparam=erid  # now is in Adguard and Ru AdList
 
 $removeparam=/^etcc_/
     ! hitseller.de$removeparam=etcc_cmp  # from Adguard
@@ -642,7 +640,9 @@ $removeparam=/referrer/
     ! /*purchase-referrer=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
     ! apple.com$removeparam=referrer  # from uBlock filters
     ! google.com$removeparam=referrer  # from uBlock filters
+    ! immobilienscout24.de$removeparam=referrer  # from Adguard
     ! stripchat.com$removeparam=referrer  # from Adguard
+    ! tumblr.com$removeparam=_branch_referrer  # from Adguard
 
 $removeparam=refid
     ! linkedin.com$removeparam=refId  # from NeatURL and Adguard
@@ -748,10 +748,12 @@ $removeparam=source,domain=~youtube.com  # Exclusion: youtube
     ! google.*/search$removeparam=source  # from Adguard
     ! ||www.google.*/search?$removeparam=source  # from Ru AdList
     ! hh.ru$removeparam=source
+    ! immobilienscout24.de$removeparam=source  # from Adguard
     ! medium.com$removeparam=source  # from NeatURL
     ! sourceforge.net$removeparam=source  # from NeatURL
     ! teknosa.com$removeparam=source  # from Adguard
     ! tiktok.com$removeparam=source  # from NeatURL
+    ! tumblr.com$removeparam=source  # from Adguard
     ! tradingview.com$removeparam=source  # from Adguard
     ! ://yandex.$removeparam=source  # from Adguard
     ! ?source=ukrnet$document,removeparam=|  # from Ru AdList
@@ -784,7 +786,7 @@ $removeparam=srcc$important
     !@@||komputerswiat.pl/*&srcc=ucs$removeparam  # from Adguard
     !@@||medonet.pl/*&srcc=ucs$removeparam  # from Adguard
     !@@||noizz.pl/*&srcc=ucs$removeparam  # from Adguard
-    !@@||onet.pl/?utm_source=$removeparam  # from Adguard
+    !@@||ofeminin.pl/*&srcc=ucs$removeparam=utm_source  # from Adguard
     !@@||plejada.pl/*&srcc=ucs$removeparam  # from Adguard
     !@@||przegladsportowy.pl/*&srcc=ucs$removeparam  # from Adguard
 
@@ -864,12 +866,17 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! asiatech.ir$removeparam=/^utm_/  # from uBlock filters
     ! aufast.co$removeparam=/^utm_/  # from Adguard
     ! digikey.com$removeparam=/^utm_cid/  # from Adguard
+    ! doctolib.de$removeparam=utm_button  # from Adguard
+    ! doctolib.de$removeparam=utm_content-group  # from Adguard
+    ! doctolib.de$removeparam=utm_page-url  # from Adguard
+    ! doctolib.de$removeparam=utm_website  # from Adguard
     ! fastshare.cz/top*?utm_source=*&utm_medium=*&utm_campaign=$domain=warforum.cz  # from Adguard
     ! ficbook.net$removeparam=utm_compaign  # from Adguard
     ! ||gamebet.news/*/index.html?utm_placement=$third-party  # from Adguard
     ! iranicard.ir$removeparam=/^utm_/  # from uBlock filters
     ! $doc,xhr,removeparam=|utm_,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
     ! $document,removeparam=utm_p,domain=pulse.mail.ru  # from Ru AdList
+    ! nationalgeographic.com$removeparam=utm_rd  # from Adguard
     ! ||reddit.com^*utm_$removeparam=|utm_  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
     ! iranicard.ir$removeparam=/utm_source|utm_campaign|utm_content/  # from uBlock filters
     ! trendyol.com$removeparam=utm_subaff  # from Adguard
@@ -877,12 +884,18 @@ $removeparam=/^utm_.*/,important  # Campaign tracking (utm)  # is in NeatURL and
     ! upgrad.com$removeparam=UTM_MEDIUM  # from Adguard
     ! wikihow.com$removeparam=?utm_source  # from Adguard
     !   Exclusions from Adguard. Very strange and suspicious (they are old and maybe unneeded)
+    ! @@||insurancexblog.blogspot.com/?utm_source=$removeparam=utm_source  # from Adguard
     ! @@||lanacion.com.ar/*module$removeparam=utm_source  # from Adguard
+    ! @@||mmcref.pl/?$removeparam=utm_medium  # from Adguard
+    ! @@||noizz.pl/*&srcc=ucs$removeparam=utm_source  # from Adguard
+    ! @@||ofeminin.pl/*&srcc=ucs$removeparam=utm_source  # from Adguard
     ! @@||onet.pl/?utm_source=$removeparam  # from Adguard
     ! @@||plex.tv/api/v*/users/*?utm_source=$removeparam=utm_source,domain=watch.plex.tv  # from Adguard
+    ! @@||sendgb.com/*/?utm_source=$removeparam=utm_source  # from Adguard
+    ! @@||transfernow.net/*/dltransfer$removeparam=utm_source  # from Adguard
     ! @@||assetstore.unity.com/packages/*?aid=*&utm_$removeparam  # from Adguard
-    ! @@||t.send.vt.edu/r/?id=$removeparam=utm_medium  # from Adguard
     ! @@||t.send.vt.edu/r/?id=$removeparam=utm_campaign  # from Adguard
+    ! @@||t.send.vt.edu/r/?id=$removeparam=utm_medium  # from Adguard
     ! @@||t.send.vt.edu/r/?id=$removeparam=utm_source  # from Adguard
 
 $removeparam=utparam
@@ -1361,8 +1374,7 @@ nnmclub.ro$removeparam=sid  # from Ru AdList, modified
 nnmclub.to$removeparam=sid  # from Ru AdList, modified
     ! unusual Ru AdList form:
     ! /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in  # from Ru AdList
-! from Ru AdList
-@@/forum\/(login|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
+@@/forum\/(login|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to  # from Ru AdList
 
 nordvpn.com$removeparam=data1  # from Adguard
 
@@ -1506,8 +1518,9 @@ $removeparam=/^__s=[A-Za-z0-9]{6\,}/,domain=~univis.uni-erlangen.de|~univis.uni-
 ||unsplash.com$removeparam=|ixlib|ixid
 
 ! already blocked
-uplynk.com$removeparam=/^ad/
-    ! ||content.uplynk.com/api/*&ad=$xhr,removeparam=/^ad/,domain=abc7ny.com|abc7.com|abc7chicago.com|6abc.com|abc7news.com|abc13.com|abc11.com|abc30.com  # from uBlock filters
+uplynk.com$removeparam=/ad/
+    ! ||content.uplynk.com/api/*&ad=$xhr,removeparam=/^ad/,domain=abc7ny.com|abc7.com|abc7chicago.com|6abc.com|abc7news.com|abc13.com|abc11.com|abc30.com  # from uBlock filters (old version)
+    ! ||uplynk.com/*preplay*&ad$removeparam=/ad/  # from uBlock filters
 
 shopping.web.de$removeparam=origin  # from Adguard
 ||shopping.gmx.*^$removeparam=origin  # from Adguard
@@ -1525,6 +1538,7 @@ xxx-comics.pro$removeparam=view
 yandex.$removeparam=clid
     ! ||www.yandex.$removeparam=clid  # from Adguard
     ! ://yandex.$removeparam=clid  # from Adguard
+||yandex.*/promo/$removeparam=utm-term  # from Adguard
 
 dzen.*,yandex.*,ya.ru$removeparam=via
     ! $document,removeparam=via,domain=dzen.*|yandex.*  # is in Ru AdList
@@ -1609,6 +1623,8 @@ zhihu.com$removeparam=hybrid_search_source  # from uBlock filters
 @@||img*.nga$removeparam=cmpid  # from Adguard
 @@||mywot.com/*/confirmNewEmail/$removeparam  # from Adguard
 @@/embed/comments^$removeparam,~third-party,domain=avclub.com|clickhole.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|lifehacker.com|splinternews.com|theinventory.com|theonion.com|theroot.com|thetakeout.com|sportskeeda.com  # from Adguard
+    ! @@||gizmodo.com/embed/comments/$removeparam  # from Adguard
+    ! @@||kotaku.com/embed/comments$removeparam  # from Adguard
 @@||urldefense.com^$removeparam  # from Adguard
 @@||cdn.privatehost.com/videos*/$removeparam  # from Adguard
 @@||rightnowtech.com/engagement/api/consumer/nvidia/*/requestEngagement?pool=$removeparam  # from Adguard
@@ -2195,3 +2211,15 @@ adjust.com$removeparam=/^event_callback_/  # from Adguard
 adjust.com$removeparam=install_callback  # from Adguard
 adjust.com$removeparam=ip_address  # from Adguard
 adjust.com$removeparam=user_agent  # from Adguard
+
+! blocked but
+googletagmanager.com$removeparam=id
+
+immobilienscout24.de$removeparam=enteredFrom  # from Adguard
+immobilienscout24.de$removeparam=navigationServiceUrl  # from Adguard
+immobilienscout24.de$removeparam=searchId  # from Adguard
+immobilienscout24.de$removeparam=searchGeoPath  # from Adguard
+
+! blocked but
+app.link$removeparam=_p  # from Adguard
+    ! tumblr.app.link$removeparam=_p  # from Adguard
