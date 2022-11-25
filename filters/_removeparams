@@ -740,7 +740,11 @@ $removeparam=siteId  # Oracle Eloqua  # from NeatURL
 $removeparam=soc_src  # Yahoo general parameter  # from NeatURL
 $removeparam=soc_trk  # Yahoo general parameter  # from NeatURL
 
-$removeparam=source,domain=~youtube.com  # Exclusion: youtube
+$removeparam=source,domain=~youtube.com|~kavin.rocks|~tokhmi.xyz|~moomoo.me|~syncpundit.io|~mha.fi|~whatever.social|~garudalinux.org|~rivo.lol|~aeong.one|~daviteusz.eu|~jae.fi|~mint.lgbt|~il.ax|~privacy.com.de|~esmailelbob.xyz|~projectsegfau.lt|~privacydev.net|~palveluntarjoaja.eu|~plibre.com|~smnz.de|~adminforge.de|~qdi.fi|~hostux.net
+    ! Exclusions: 
+    ! - youtube
+    ! - and all YouTube Piped instances (on 2022-11) - see #51 and https://github.com/TeamPiped/Piped/wiki/Instances
+    !
     ! ||amazon.*/hz/contact-us/csp$removeparam=source  # from Adguard
     ! cht.com.tw$removeparam=Source  # from Adguard
     ! edx.org$removeparam=source  # from Adguard
