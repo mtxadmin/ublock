@@ -4086,12 +4086,12 @@ city-denta.ru##.rev_slider_wrapper
 
 cityescape.ru$inline-script  # site is blocking copypaste
 ! site is blocking selection
-cityescape.ru##html:style(-webkit-touch-callout:initial !important)
-cityescape.ru##html:style(-webkit-user-select:initial !important)
-cityescape.ru##html:style(-khtml-user-select:initial !important)
-cityescape.ru##html:style(-moz-user-select:initial !important)
-cityescape.ru##html:style(-ms-user-select:initial !important)
-cityescape.ru##html:style(user-select:initial !important)
+!cityescape.ru##html:style(-webkit-touch-callout:initial !important)
+!cityescape.ru##html:style(-webkit-user-select:initial !important)
+!cityescape.ru##html:style(-khtml-user-select:initial !important)
+!cityescape.ru##html:style(-moz-user-select:initial !important)
+!cityescape.ru##html:style(-ms-user-select:initial !important)
+!cityescape.ru##html:style(user-select:initial !important)
 cityescape.ru##html:style(-webkit-tap-highlight-color:initial !important)
 
 ||citymaker.ru/tpldata/images/logo*.png
@@ -4644,7 +4644,7 @@ dachniy-ugolok.ru##.shipping_and_payment
 ! bad: https://suggestions.dadata.ru/suggestions/api/4_1/rs/detectAddressByIp
 ! good: https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address
 ! ad cookies
-dadata.ru##+js(cookie-remover.js)
+dadata.ru##+js(cookie-remover)
 
 ! from EasyPrivacy
 ||speedtest.dailymotion.com/latencies.js
@@ -17311,6 +17311,8 @@ redhat.com##.rc-footer-menu-about-items
 redhat.com##.status-legal
     ! other
 ||redhat.com/libs/redhat/marketing/
+! timetoread
+redhat.com##.PFElement
 
 redmondmag.com##.header
 redmondmag.com##.footer
@@ -26102,3 +26104,16 @@ seek.com.au##div[data-testid="bx-cover-container"]
 seek.com.au##div[data-testid="bx-logo-container"]
 seek.com.au$removeparam=type
 seek.com.au##div[data-testid="bx-logo-image"]
+
+unpictures.ru$inline-script  # site blocks copypaste
+
+||magesy.blog/wp-content/plugins/  # from uBlock filters
+
+||pkclinok.ru/image/data/Baneri/
+pkclinok.ru##.section-slider-top
+
+coursesdaddy.com$inline-script  # site blocks copypaste: "Right click is disabled!", "Cut/Copy/Paste is disabled!"
+
+themesinfo.com##a[href*="/affiliates/"]
+
+||sportsnet.ca/*-logo.jpg$redirect=1x1.gif  # constantly requests blocked img
