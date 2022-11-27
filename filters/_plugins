@@ -224,6 +224,9 @@
 /plugins/aawp/*$important  # "Amazon Affiliate"
     ##.widget_aawp_widget_bestseller
 
+/plugins/abc-analytics/*$important
+    /analytics.min.js$important
+
 /plugins/ab-press-optimizer/*
 
 /plugins/abss-adblock-notice/*
@@ -256,6 +259,7 @@
 /plugins/adblock-notify-by-bweb/*$important
 
 /plugins/adbox/*$important  # jquery
+    ! @@||chinacourt.gov.cn/share/jquery/plugins/adbox/  # from Adguard Chinese
 
 /plugins/add-cookie-notice/*$important
 
@@ -287,6 +291,7 @@
 
 /plugins/adrotate/*
     /adrotate/*$important  # from EasyList
+    /jquery.adrotate.
 
 /plugins/adsense-click-fraud-monitoring-master/*
 
@@ -306,9 +311,10 @@
 /plugins/ad-tweaker/*
 
 /plugins/adunblocker$important  # from Adguard and uBlock filters
+    ! @@||getitfree.cn/wp-content/plugins/adunblocker/public/js/banner_ads_*.js  # from Adguard Chinese
 
-/plugins/advanced-ads/*
-/plugins/advanced-ads-pro/*
+/plugins/advanced-ads/*$important
+/plugins/advanced-ads-pro/*$important
 /plugins/advanced-ads-responsive/*
     ! is in EasyList
     ##.advads-widget
@@ -428,7 +434,7 @@
 /plugins/background-manager/*
     ! ||volyninfo.com/core/wp-content/plugins/background-manager/  # from Ru AdList
 
-/plugins/banner-manager/*  # from EasyList
+/plugins/banner-manager/*$important  # from EasyList
 
 /plugins/banneroid/*
 
@@ -570,6 +576,8 @@
 /plugins/clicklite/*
 
 /plugins/click-to-chat-for-whatsapp/*
+
+/plugins/cmg-prebid/*$important  # from ABP
 
 /plugins/cm-pop-up-banners/*  # from Adguard
 
@@ -716,9 +724,11 @@
 
 /plugins/dfp/*$important
     ! ||gamer-network.net/plugins/dfp/  # from EasyList
+    ! @@||static-seloger.com^*/Plugins/DFP/$script  # from ABP
 
 /plugins/dfp-ads/*$important
-    /dfp-ads/*  # is in EasyList
+    /dfp-ads/*$important  # is in EasyList
+    /google-ads.min.js$important
 
 /plugins/dfpadshtml/*  # from Adguard
 
@@ -925,6 +935,9 @@
 
 /plugins/full-site-editing/premium-content/*
 
+/plugins/fuzqing-ad-plus/*$important
+    ! @@||koyi.pub/wp-content/plugins/fuzqing-ad-plus/assets/js/*.js  # from Adguard Chinese
+
 /plugins/fv-sharing/*$~stylesheet  # is in Fanboy's
 
 /plugins/gabfire-widget-pack/*
@@ -1020,6 +1033,8 @@
 
 /plugins/hide-price-until-login/*
 
+/plugins/hm-header-bidding-dfpapi/*$important  # from ABP
+
 /plugins/holdback/*$~stylesheet  # from Adguard
 
 /plugins/hreflang-tags-for-wordpress/*
@@ -1072,6 +1087,8 @@
 /plugins/jcwp-copy-paste-blocker/*  # from Adguard
 
 /plugins/jeeng-push-notifications/*$important
+
+/plugins/jet-blocker-anti-ad-blocker-detector/*  # from Adguard
 
 /plugins/jet-popup/*
 
@@ -1325,6 +1342,8 @@
 /plugins/official-mailerlite
 /plugins/woo-mailerlite/*
 
+/plugins/oiopub-direct/*$important  # from ABP
+
 /plugins/olark-live-chat/*$important  # also see olark.com
 
 /plugins/omg-magnific/*
@@ -1346,6 +1365,11 @@
 /plugins/ordercall/*
 
 /plugins/osd-social-media-sharing/*
+
+/plugins/outrigger/*$important
+    ! @@||postfun.com/wp-content/plugins/outrigger/scripts/vendor/header.js$script,domain=postfun.com  # from ABP
+    ! @@/wp-content/plugins/outrigger/scripts/vendor/dist/prebid.js*$script,domain=moneypop.com|postfun.com|healthygem.com  # from ABP
+    ! @@/wp-content/plugins/outrigger/scripts/vendor/BV/prebid.js$script,domain=bavardist.com|buzznet.com|dadpatrol.com|desafiomundial.com|healthygem.com|hooch.net|idolator.com|moneypop.com|pastfactory.com|postfun.com|quizscape.com|tacorelish.com|trend-chaser.com  # from ABP
 
 /plugins/page-cornr-  # from EasyList
 
@@ -1395,7 +1419,10 @@
 
 /plugins/popunderpro/*
 
-/plugins/popup-builder/*  # is in Adguard and Ru AdList
+/plugins/popup-builder/*$important  # is in Adguard and Ru AdList
+    ! There is an exclusion in uBlock filters:
+    ! @@/wp-content/plugins/popup-builder-$image,css,script,1p  # from uBlock filters – Unbreak
+    ! But I think, naggy ad popups should be eliminated
 
 /plugins/popupbuilder-adblock/*  # from Adguard
 
@@ -1480,6 +1507,8 @@
 
 /plugins/quickorder/*
 
+/plugins/radiantthemes-addons/*  # "digital marketing themes"  # from Adguard: ||propellerads.com/wp-content/plugins/radiantthemes-addons/tabs/js/radiantthemes-tab-element-four.js
+
 /plugins/random-banner/*  # from Ru AdList
 
 /plugins/rate-my-post/*
@@ -1496,7 +1525,7 @@
 
 /plugins/rcd-right-click-disabler/*$script  # from uBlock filters
 
-/plugins/rdm-daac-notice/*  # from Adguard
+/plugins/rdm-daac-notice/*$important  # from Adguard
 
 /plugins/reading-progress-bar/*
 
@@ -1586,6 +1615,8 @@
 
 /plugins/selection-sharer/*
 
+/plugins/sem-external-links/*
+
 /plugins/sendpulse-web-push/*
 
 /plugins/seniorbar/*
@@ -1620,6 +1651,8 @@
 
 /plugins/simple-adblock-notice/*$important,~css  # is in Adguard
 /plugins/simple-adblock-notice-pro/*  # from Adguard
+
+/plugins/simple-ads-manager/*$important  # from ABP
 
 /plugins/simple-author-box/*
 
@@ -1670,7 +1703,7 @@
 
 /plugins/smart-cookie-kit/*  # from Adguard
 
-/plugins/smartertravel-shared/*
+/plugins/smartertravel-shared/*$important  # is in ABP
 
 /plugins/smart-facebook-page-like
 
@@ -1682,6 +1715,8 @@
 /plugins/smooth-page-scroll-updown-buttons/*
 
 /plugins/smooth-scroll-up/*$important  # scroll-up button  
+
+/plugins/smpl-shortcodes/*
 
 /plugins/sm-social-share/*$important
 
@@ -1708,9 +1743,21 @@
     ! /plugins/sociallocker-next-premium/*$script,css  # from uBlock filters
     ! /plugins/social-network-tabs/*$important
     ! /plugins/social-share-buttons-by-supsystic/*  # from Adguard
-    ! /plugins/socialshareprivacy/*$important  # from Fanboy's
     ! /plugins/socialsnap/*
     ! /plugins/social-warfare/*  # from Adguard
+    !
+    ! socialshareprivacy plugin:
+    /jquery.socialshareprivacy.min.js$important
+        ! @@||notebookcheck.com^*/jquery.socialshareprivacy.min.js  # from Adguard
+        ! @@||spardaspendenwahl.de^*/jquery.socialshareprivacy.min.js  # from Adguard
+    /socialshareprivacy/*$important        
+        ! /plugins/socialshareprivacy/*$important  # from Fanboy's
+        ! @@||panzi.github.io/SocialSharePrivacy/  # from Adguard
+        ! @@||weser-kurier.de/stellen/riot-utils/joined.js?*/socialshareprivacy/  # from Adguard
+        ! @@||wn-gruesse.de^*/socialshareprivacy/$script  # from Adguard
+        ! @@||wn-jobs.de^*/socialshareprivacy/$script  # from Adguard
+        ! @@||wn-markt.de^*/socialshareprivacy/$script  # from Adguard
+        ! @@||wn-mobil.de^*/socialshareprivacy/$script  # from Adguard
 
 /plugins/soralink/*  # from Adguard
 
@@ -1866,6 +1913,8 @@
 
 /plugins/ultimate-social-media-plus/*$important  # from Adguard
 
+/plugins/ump-exacttarget/*$important  # see janrain.com
+
 /plugins/unblock-adsense/*  # from Adguard: /plugins/unblock-adsense/*/adunblock
 
 /plugins/uncopy/*  # from uBlock filters
@@ -1883,7 +1932,7 @@
 /plugins/useinfluence/*$important  # also see useinfluence.co
 
 /plugins/vast*.js  # from Adguard
-/plugins/vast/*$important  # from EasyList: ||jwpcdn.com/player/plugins/vast/
+/plugins/vast/*$important,all  # from EasyList: ||jwpcdn.com/player/plugins/vast/
 /plugins/vast-$important  # from uBlock filters: */player/plugins/vast-*.js$script
 
 /plugins/videobg/*
@@ -1921,8 +1970,9 @@
 
 /plugins/web-push-notifications-lite/*
 
-/plugins/webtech-topbar/*  # from Adguard Chinese
-
+/plugins/webtech-topbar/*$important  # from Adguard Chinese
+    ! @@||ibf.tw/user/plugins/webtech-topbar/fuckadblock.js  # from Adguard Chinese
+    
 /plugins/webtoffee-gdpr-cookie-consent/*
 
 /plugins/weforms-business/*
@@ -2114,6 +2164,9 @@
     /wp-snow-effect/*  # from Fanboy's and Ru AdList
     /wp-snow-effect-pro/*  # from Fanboy's and Ru AdList
 
+/plugins/wpsocialite/*$important
+    ! @@||orlandoweekly.com/wp-content/plugins/wpsocialite/Socialite/socialite.min.js  # from Adguard
+
 /plugins/wp-social-sharing/*
     /socialshare.js
 
@@ -2194,6 +2247,5 @@
 /plugins/zmpush-web-push-notifications/*$important  # also see zmpush.com
 
 /plugins/zoho-crm-forms/*  # also see zoho.com
-
 
 !! todo
