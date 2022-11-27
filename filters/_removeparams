@@ -618,7 +618,10 @@ $removeparam=/^ref_.*/
         ! twitter.com$removeparam=ref_url  # is in Adguard
 
 $removeparam=/referer/
-$removeparam=/referrer/
+$removeparam=/referrer/$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion
+    ! Exclusions:
+    ! twitter - inner(!) error while scrolling (in https://twitter.com/i/api/graphql/ ). Also see #52
+    !
     ! $removeparam=/^referer.*/
         ! $removeparam=referer
         ! referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
