@@ -605,6 +605,10 @@ adblockdetector/$important
 /adframe.js$important
 /adframes/*$important
 /adframetop$important
+/adfuel/*$important
+    ! @@/adfuel/*$script,domain=cnn.com  # from ABP
+    ! @@/adfuel/initiator.js^$script,~third-party,domain=nba.com  # from ABP
+    ! @@||cdn.turner.com/ads/adfuel/*.min.js^$script,domain=nba.com  # from ABP
 /adgear.js$important
 /adgroupdetailv2.  # is in EasyList
 /ad-inserter/*  # from EasyList
@@ -756,6 +760,7 @@ _adsys.js  # from Adguard
 /adv?
 /adv.aspx  # from Adguard
 /adv.js$important
+.adv.cdn.  # from EasyList
 =advanced-ads-  # from EasyList
 /advanced-ads-$domain=~wordpress.org  # is in EasyList
 _advert/  # from EasyList
@@ -939,6 +944,7 @@ _banner_rotator.php  # from Adguard
 /bx/*$domain=~aliexpress.ru
     ! /upload/bx/*  # from Ru AdList
     ! ||rugrad.eu/bx/  # from Ru AdList
+/campaigns/*
 /clipboard.min.js$important$domain=~play-with-docker.com
 /cdn-cgi/pe/bag2?r$important  # generalized rule. Sources from Ru AdList (see all mentioned domains here too):
     ! /cdn-cgi/pe/bag2?r*aksessuarov.ru
@@ -1102,7 +1108,7 @@ _banner_rotator.php  # from Adguard
 /openx/*$important  # is in EasyList
 /openxtag.js$important
 /page/bouncy.php  # is in Adguard
-/pagead/*
+/pagead/*$important  # google ads
 /pagead2/*
 /pageview.js  # is in EasyPrivacy
 /partner/*
@@ -2504,7 +2510,7 @@ _pagespeed_beacon?  # from AdGuard
 /platform-detect
 /pum-site-scripts.  # from Fanboy's
 /purecounter.js
-/px.gif?  # from EasyPrivacy
+/px.gif?  # from EasyPrivacy and ABP
 /px.js$important
     !/px.js?ch=$script  # from EasyPrivacy
     !||avito.ru^*/dfp/px.js  # from RU AdList
@@ -2545,6 +2551,7 @@ _tracker.js.  # from EasyPrivacy
 -tracking.gtm.  # from EasyPrivacy
 /tracking-opt-in.  # ad scripts   # /tracking-opt-in.min.js  # is in Fanboy's and EasyList
 -tracking.js?  # from EasyPrivacy
+/tracking.js$important
 /tracking.min.js
 -track-inview.  # is in EasyPrivacy
 /transparent-pixel.
@@ -2665,6 +2672,7 @@ _urchin.js  # from Fanboy's
     ! /vtrack.php?  # from EasyPrivacy
 /vtracker_  # from EasyPrivacy
 /vuukle-analytics.  # from EasyPrivacy
+/watch_ua.js$important
 /webanalytics/*$important  # is in EasyPrivacy
 /webanalytics.js$important
 /webanalytics3.  # from EasyPrivacy
@@ -3427,7 +3435,7 @@ _site/gotop.  # from Ru AdList
 ##[id*="GDPR"]:not(html):not(body):not(article)
 ##[class*="Gdpr"]:not(html):not(body):not(article)
 ##[id*="Gdpr"]:not(html):not(body):not(article)
-##[class*="gdpr"]:not(html):not(body):not(article):not(input)
+##[class*="gdpr"]:not(html):not(body):not(article):not(input):not(.main-layout)
 ##[id*="gdpr"]:not(html):not(body):not(article):not(input)
     ! the list is not full, just _some_ rules
     !
@@ -4378,6 +4386,7 @@ turboimagehost.com##.modal-footer
 /detroitchicago/$script,important
     ! /detroitchicago/cmbdv2.js  # is in EasyList
     ! /detroitchicago/houston.js  # is in EasyList
+    ! /detroitchicago/minneapolis.js  # from uBlock filters
     ! /detroitchicago/rochester.js  # is in EasyList
     ! cookies scripts
     !||techgenix.com/detroitchicago/anaheim.js
