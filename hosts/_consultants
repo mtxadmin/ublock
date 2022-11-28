@@ -36,7 +36,10 @@
 /callme.min.js
 /callmenow/js/*
 /call.tracker.js
-/chat/*$domain=~coco.gg|~sberbank.ru
+/chat/*$domain=~coco.gg|~hh.ru|~sberbank.ru
+    ! Exclusions:
+    ! hh.ru - chat (useful, not bots, not "consultants")
+    ! sberbank.ru - support chat, but useful
 /chatbot/*
 /chatbot.js
 /chatcheckstatus/*
@@ -335,7 +338,7 @@ urbanairship.com  # https://clinetworking.com/2018/06/03/1984-called/
 ! end of urbanairship.com
 !device-api.urbanairship.com
 
-akiwastat.ru  # Akiwastat - closed
+akiwastat.ru  # Akiwastat - closed  # Checked:2022-11-19
 
 alcmeon.com
 alc.cx
@@ -511,7 +514,7 @@ call2track.com
 
 call-back.co
 
-callback.pw$important
+callback.pw$important,all
 
 callback-free.ru
 
@@ -1496,7 +1499,7 @@ molie.chat  # from GoodbyeAds
 
 mortypush.com$important
 
-mp3zvyk.com  # ad push domain
+mp3zvyk.com  # ad push domain  # Checked:2022-11-19
 
 mpush.cn  # from GoodbyeAds
 
@@ -1668,7 +1671,7 @@ pleasestay.co$important  # "Bring shopify customers back"  # very naggy script, 
 
 p-n.io  # push ad scripts  # is in Peter Lowe’s Ad and tracking server list
 
-pogodiwidget.com$important  # "Обратный звонок, чат и коллтрекинг"
+pogodiwidget.com$important  # "Обратный звонок, чат и коллтрекинг"  # Checked:2022-11-19
 
 popcornews.me$important  # push spam
 
@@ -2673,7 +2676,7 @@ twin24.ai
 
 twintwoo.ai  # "chatbot"  # ad scripts
 
-ucall.im  # zombie
+ucall.im  # zombie  # Checked:2022-11-19
 
 ugrastes.uk  # from Ru AdList
 
@@ -2946,7 +2949,7 @@ zotabox.com$important
 
 zpush.biz$important  # push ads network
 
-zvonimba.ru  #api.zvonimba.ru
+zvonimba.ru  #api.zvonimba.ru  # Checked:2022-11-19
 
 zvonobot.ru
 !+  pes.zvonobot.ru
