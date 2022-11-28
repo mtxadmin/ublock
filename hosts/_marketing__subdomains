@@ -3005,8 +3005,10 @@ sw88.thelionking.co.uk  # from EasyPrivacy
 referrer.disqus.com$important  # from many lists
 glitter.services.disqus.com  # ad scripts  # is in MVPS HOSTS
 links.services.disqus.com  # from hpHosts’ Ad and tracking servers and MVPS
+tempest.services.disqus.com$important  # from ABP
 ||disqus.com/api/*/listrelated.json?  # from Fanboy’s Annoyance List
-disqusads.com$important
+disqusads.com$important  # is in ABP
+disqusservice.com  # from ABP
 
 wfkemc.dmsky.ru  # from GoodbyeAds
 
@@ -3272,7 +3274,7 @@ js.hdzog.com$important  # is in EasyList
 customer.heartinternet.co.uk  # from EasyList
 
 cpa.hh.ru
-websocket.hh.ru
+! websocket.hh.ru - don't, seems to be useful chat
 
 adbsmetrics.ep.hmc.co.kr  # from Adguard
 
@@ -3532,6 +3534,7 @@ cm8.lycos.com  # from MVPS
 cmpv2.macworld.co.uk  # from Adguard
 
 legacy-telemetry.malwarebytes.com  # Malwarebytes - Tracker  # from Quidsup NoTrack-Blocklist
+genesis.malwarebytes.com  # from EasyPrivacy
 
 star.manystars.ru  # from Adguard
 
@@ -3799,6 +3802,7 @@ a.pr-cy.ru  # from Ru AdList
 
 jvs.price.ru  # from Adguard
 track.price.ru  # from Adguard
+krutilka.price.ru  # from Ru AdList: ||krutilka.price.ru/count_
 
 skorozvon.primatel.ru
 smscenter.primatel.ru
@@ -3854,6 +3858,7 @@ vp.rambler.ru  # app (3p) requests and no root (only /admin/ with error)
 winline.rambler.ru  # from Ru AdList
 zerg.rambler.ru  # from Adguard: sentry01.zerg.rambler.ru
 zoomdecorate.rambler.ru  # ad xhrs and tracking imgs
+kraken.rambler.ru  # from Ru AdList
 
 tools.ranker.com  # from MVPS
 
@@ -4558,3 +4563,14 @@ tools.ztod.com  # from MVPS
 madbanner.zvuki.ru  # from Adguard
 
 !! todo
+
+aax.forbes.com$important  # from ABP
+
+related.speedtest.net$important  # from ABP
+
+1l-hit.my.games  # ad xhrs
+
+bordeaux.futurecdn.net$important  # is in Adguard, EasyList and ABP
+champagne.futurecdn.net  # from Adguard
+||futurecdn.net/bordeaux.js$all  # from EasyPrivacy
+||futurecdn.net^*/abp.js  # from EasyPrivacy
