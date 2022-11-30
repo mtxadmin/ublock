@@ -7069,6 +7069,7 @@ fonarik24.ru##.time
 fonariki.ru###pageHeader2 > noindex
 fonariki.ru###fixpanel
 !fonariki.ru###toup.toupfixed
+fonariki.ru###example
 
 fonarik-market.ru##.r-header:style(position:static !important)
 fonarik-market.ru##.shop-regions-ip-analyzer
@@ -9022,6 +9023,7 @@ hozzi.ru##.c_related-cont
 ||hpe.com/global/metrics/
 hp.com##.alert-section
 hp.com##.hp-custom-notice
+hp.com##.wpr-main-logo-svg
 hp.com##.footer-fixed
 hp.com##.reply-metoo-wrapper
 hp.com##.email_signup
@@ -11539,7 +11541,8 @@ leroymerlin.kz,leroymerlin.ru##uc-pdp-vendor-badge
     ! stickers
 leroymerlin.kz,leroymerlin.ru##.red
 ! товары "только онлайн" - без отзывов, без возможности посмотреть и вообще нафиг их
-leroymerlin.kz,leroymerlin.ru##.largeCard div:has(.blue:has-text(Только онлайн))
+! Update: в связи с санкциями и сокращением ассортимента включено обратно. Да, печально.
+!leroymerlin.kz,leroymerlin.ru##.largeCard div:has(.blue:has-text(Только онлайн))
     ! other
 leroymerlin.kz,leroymerlin.ru##.sp-review-recommended
 leroymerlin.kz,leroymerlin.ru##.sp-summary-block.sp-summary-recommended
@@ -20335,6 +20338,15 @@ svoboda.org##.banner__a
 
 ||svoizabor.ru/$inline-script  # script there disables onselectstart. Bad practice, uncomfortable.
 
+    ! top
+svyazi.app##.main_wrapper_jobs:style(margin-top:0px !important)
+    ! sticky elements
+svyazi.app##.navbar:style(position:static !important)
+svyazi.app##.buttons_support
+svyazi.app##.jobs_overview-column:style(position:static !important)
+    ! banners and promos
+svyazi.app##div:has(>a[href="https://www.svyazist.app/nastavniki"])
+
 svyaznoy.ru##.s-button-top.b-button-top
 svyaznoy.ru##.s-header:style(position:static !important)
 svyaznoy.ru##.b-nav:style(position:static !important)
@@ -26129,3 +26141,5 @@ w3cschoool.com##.row-one:style(position:static !important)
 bobcares.com##strong:has-text(Experts)
 
 victoriametrics.com##.customer_logo
+
+phoronix.com###about-author
