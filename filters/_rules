@@ -633,6 +633,7 @@ adblockdetector/$important
 /ads/*$important,domain=~cnn.com  # exclusion - cnn loads page through json: https://cdn.cnn.com/ads/cnni/cnni_homepage.json
 /ads_$important,domain=~vk.com
 /ads-  # from EasyList: .com/ads-
+    /ads-iframe/*$important  # from ABP
 /ads.$important,~stylesheet
     ! /ads.css$important - hmm, uBlock filters recommends remove it. Ok.
     ! /ads.gif$important
@@ -4902,9 +4903,11 @@ tarif-24.ru##.mh-ticker-bottom
 /topic_read.gif  # PhpBB gifs
 /topic_read_hot.gif  # PhpBB gifs
 /user_offline.gif
+!##.bbcodeblock - old incorrect rule. On vbulletin forums it is a codeblock(##pre.bbcodeblock). See linuxquestions.org for instance
 ! vbulletin forum "you can't do" block (one of)
-##.bbcodeblock
 ###collapseobj_forumrules
+    !samforum.org###collapseobj_forumrules
+    !forum.fonarevka.ru###collapseobj_forumrules
 ! fixed blocks on libraries
 ##.fixed_block1
 ##.fixed_block2
