@@ -3775,6 +3775,10 @@ certlibrary.com##.buy-exam-button
 championat.com$inline-script  # site breaks itself. Let's stop it
 ||championat.com/connection/
 ||championat.com/ads-min.js
+! from Adguard
+championat.com##+js(abort-on-property-read, getSelection)
+! from Adguard
+championat.com##+js(abort-on-property-write, Object.prototype.getPlaceSelectorByBannerId)
 championat.com##.footer-icons
 # is in Ru AdList and Fanboy's
 championat.com##a[href*="bet.championat.com"]
@@ -12740,7 +12744,7 @@ medtehno.ru###composite_header_contacts
 
 meduza.io##.MaterialPanel-sticked.MaterialPanel-root
 meduza.io##.Header-logo
-meduza.io##h2
+!meduza.io##h2 - in general, don't
 meduza.io##[class^=DonatesTeaser]
 meduza.io##.TopBar-container
 ! inline related
@@ -26193,3 +26197,5 @@ infoit.com.ua##.widget_block.widget
 fedoraproject.org##.toolbar:style(position:static !important)
 fedoraproject.org##.nav-panel-explore:style(position:static !important)
 fedoraproject.org##.toc-menu:style(position:static !important)
+
+gitlab.com##.content-wrapper:style(margin-top:0px !important; padding-bottom:0px !important)
