@@ -51,6 +51,7 @@ webcollector-1.agora.io
 webcollector-1abr-cn.agora.io
 webcollector-2.agora.io
 webcollector-rtm.agora.io
+/projectagora.min.js$important  # from ABP
 
 stat.alibaba.com  # from Adguard
 
@@ -131,7 +132,7 @@ bugreplay.com  # from GoodbyeAds
 
 bugsnag.com$important  # telemetry scripts  # "Error Monitoring and Reporting"  # is in AdGuard
 /bugsnag.js
-/bugsnag.min.js
+/bugsnag.min.js$important
 /bugsnag-3.min.js  # bugsnag  #https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js
 ||cloudfront.net/bugsnag$domain=~docker.com
 
@@ -402,6 +403,7 @@ sentry.io$important  # feedback and application monitoring service, commercial. 
 !+  services.sentry.io
 sentry-cdn.com$important,all  #browser.sentry-cdn.com
 /sentry$script
+    @@/flu/player/sentry$script  # Microsoft video player (NodeJS) on some sites
     /sentry.bundle.min.js  # sentry.io library, see https://github.com/getsentry/sentry-javascript
     /sentry/*
         ! /sentry/bundle.min.js
