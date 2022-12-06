@@ -1089,8 +1089,6 @@ alexgyver.ru##.fusion-sticky-header-wrapper:style(position:static !important)
 alexgyver.ru##.fusion-secondary-main-menu:style(position:static !important)
 alexgyver.ru##.alert-danger.error.alert.fusion-alert
 
-@@||alexstuff.ru^$generichide,badfilter
-
 alexzsoft.ru##.blog-header
 ||alexzsoft.ru/wp-content/themes/alexsoft/img/fon/triangles.jpg
 
@@ -1145,6 +1143,8 @@ alfaplan.ru##.stamp
 algimed.com###region-popup
 
 @@||alhimika.net^$generichide,badfilter
+@@||alhimika.net/images/$image,domain=alhimika.net  # from Ru AdList
+alhimika.net##.breadcrumb
 
 alienwarearena.com##.navbar-top:style(position:static !important)
 
@@ -1191,6 +1191,7 @@ all-companies.ru###last_companies_view
 
 ! that's from Ru AdList (todo: is it really needed?)
 @@||all-episodes.tv^$generichide,badfilter
+@@||all-episodes.tv/retlplayer/downretl.js$script,1p  # from uBlock filters
 
 allfest.ru##.region-pre-header-left
 ||allfest.ru/sites/default/files/inline-images/$image
@@ -5856,11 +5857,38 @@ ebay.com###app-product-sticky-header
 ecco-shoes.ru##noindex
 ecco-shoes.ru##.position-icons-pay
 
-@@||echo.msk.ru^$generichide,badfilter
-echo.msk.ru##.mmage
-echo.msk.ru##.mmperson
-echo.msk.ru##.fixedpopul
-echo.msk.ru##.live-icon
+! echo.msk.ru - closed. Root 405 now
+!@@||echo.msk.ru^$generichide,badfilter
+!echo.msk.ru##.mmage
+!echo.msk.ru##.mmperson
+!echo.msk.ru##.fixedpopul
+!echo.msk.ru##.live-icon
+    ! Just for information: many old rules
+!@@||doc.echoban.ru/delivery/spcjs.php?id=1$domain=echo.msk.ru|doc.echoban.ru  # from Adguard
+!knfjhy.echo.msk.ru  # from Adguard and EasyPrivacy
+!/^https?://echo\.msk\.ru/[^\s]{400,}/$xmlhttprequest,domain=echo.msk.ru  # from Ru AdList
+!/^https?://echomsk\.static-storage\.net/[^\s]{500,}/$script,domain=echo.msk.ru  # from Ru AdList
+!echo.msk.ru##+js(set-constant, Object.prototype.hasShadowDomSupport, undefined)  # from Adguard
+!echo.msk.ru##+js(set-constant, Object.prototype.BannerDirect, undefined)  # from Adguard
+!echo.msk.ru##+js(set-constant, Object.prototype.PushSubscription, '')  # from Adguard
+!echo.msk.ru##div.first[style]  # from Adguard
+!echo.msk.ru##*:not(div)[class] > div[style^="overflow:"]  # from Adguard
+!echo.msk.ru##div[style="padding: 10px 0px 0px;"]:empty  # from Adguard
+!echo.msk.ru##div[id]:empty  # from Adguard
+!echo.msk.ru#?#*:not(div)[class] > div[style^="overflow:"] ~ div[class]:not(:has(> a[href]))  # from Adguard
+!echo.msk.ru#$?#.header_top:not(:has(> .wrapper)) { margin-top: -30px !important; }  # from Adguard
+!echo.msk.ru#?##mainsidebar > div.ad.iblock:not(:has(> a[href]))  # from Adguard
+!echo.msk.ru##+js(abort-on-property-read, Object.prototype.blockImpId)  # from Ru AdList
+!echo.msk.ru##+js(cookie-remover, /altrs|bltsr/)  # from Ru AdList
+!echo.msk.ru##+js(set-constant, Object.prototype.contentshare, noopFunc)  # from Ru AdList
+!echo.msk.ru,web-shpargalka.ru##+js(abort-on-property-read, Date.prototype.toUTCString)  # from Ru AdList
+!echo.msk.ru#@#.contentshare  # from Ru AdList
+!echo.msk.ru##.netWorkBlock  # from Ru AdList
+!echo.msk.ru##.socmenu  # from Ru AdList
+!echo.msk.ru##.tooltipster-base  # from Ru AdList
+!echo.msk.ru##.tooltipster-default  # from Adguard
+!echo.msk.ru##iframe[src*="iconosquare.com"]  # from Ru AdList
+!echo.msk.ru##.up_link  # from Fanboy's
 
 eco-dush.ru##.fix-scroll
 
@@ -6430,6 +6458,13 @@ examcollection.com###p_fade
 
 @@||examenpdd.com^$generichide,badfilter
 examenpdd.com##.share
+!@@||yastatic.net/safeframe-bundles/0.83/host.js|$script,domain=examenpdd.com  # from Ru AdList
+! from Ru AdList
+!examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
+! from Ru AdList
+examenpdd.com##[class][style*="important"] * *
+! from Ru AdList
+examenpdd.com##[data-container="outer"]
 
 examer.ru###static_reviews
 ||examer.ru/*/vms.svg
@@ -7258,6 +7293,12 @@ freebsdnews.com###sidebar
 freeccnaworkbook.com$inline-script  # "Adblocker detected"
 
 @@||freecoursesite.com^$generichide,badfilter  # Adguard exclusion rule
+! from Adguard
+freecoursesite.com##.share-handler-wrap
+! from uBlock filters
+freecoursesite.com##+js(acis, eval, replace)
+! from uBlock filters
+freecoursesite.com##+js(nostif, show)
 
 ||freecram.com/imgs/adts.png
 ||freecram.com/imgs/downpdf.png
@@ -13320,8 +13361,6 @@ momoporn.com##.technological
 
 mona.ru###callReq
 
-@@||money-pic.ru^$generichide,badfilter
-
 monitis.com###masthead
 monitis.com##[href^="https://info.monitis.com/"]
 
@@ -15808,7 +15847,7 @@ picmix.com##.register-message
 
 pic-money.ru###left
 
-! Странный сайт. Почему его поставили в исключения, интересно?
+! Странный сайт (сочетание домена и контента). Почему его поставили в исключения, интересно?
 @@||pics-money.ru^$generichide,badfilter
 ||pics-money.ru/*/shapka.png
 pics-money.ru##[href="chrome://editor/"]
@@ -17987,7 +18026,7 @@ rusfishing.ru##.blockMessage
 
 rusknife.com###top-bottom-menu
 
-! какая-то сборная солянка.
+! какая-то сборная солянка. Судя по всему, автогенерируемая
 @@||ru-skript.ru^$generichide,badfilter
 
 rus-linux.net##header
@@ -26193,3 +26232,6 @@ trendoceans.com##blockquote
 ualinux.com##.uk-navbar-brand
 
 infoit.com.ua##.widget_block.widget
+
+! popup
+ethereum.org###dot
