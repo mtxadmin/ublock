@@ -148,7 +148,7 @@ ads.cvut.cz
 ads.cybersales.cz  # from Malvertising filter list by Disconnect
 ads.devicebondage.com  # from MVPS
 ads.digitalalchemy.tv  # from MVPS
-ads.echo.msk.ru  # from Ru AdList
+!ads.echo.msk.ru  # from Ru AdList
 ads.edadeal.ru  # app requests
 ads.elperiodic.ad  # from GoodbyeAds
 ads.facebook.com$important  # from Adguard
@@ -893,6 +893,7 @@ go.cyberark.com  # "Identity Security" # ad redirects and empty root
 go.finder.vc
 go.gem.com  # ad redirects. Gem.com is some hiring CRM
 go.isostech.com  # from EasyList
+go.mindmanager.com
 go.skillfactory.ru
 go.sky.pro
 go.tass.ru  # ad redirects
@@ -1946,7 +1947,7 @@ tracker.tiu.ru
 tracker.uprinting.com
 tracker.winload.de
 
-/tracking.
+/tracking.$domain=~tracking.exposed
 tracking.247search.com
 tracking.4v4jfe79erfxfu8z8.com
 tracking.aatkit.com
@@ -3130,6 +3131,7 @@ execution-ci360.flypgs.com  # tracker scripts  # execution-ci360.flypgs.com/js/o
 a.fobos.tv  # from Ru AdList
 
 ab-machine.forbes.com  # from GoodbyeAds
+aax.forbes.com$important  # from ABP
 
 hiq.fotolog.com  # from MVPS
 
@@ -3142,6 +3144,11 @@ c0.froala.com
 bannet.fryazino.net  # from Adguard
 
 elq-trk.fullsail.edu  # from Adguard
+
+bordeaux.futurecdn.net$important  # is in Adguard, EasyList and ABP
+champagne.futurecdn.net  # from Adguard
+||futurecdn.net/bordeaux.js$all  # from EasyPrivacy
+||futurecdn.net^*/abp.js  # from EasyPrivacy
 
 adst.fwdcdn.com
 sinst.fwdcdn.com$important  # ad scripts
@@ -3624,6 +3631,8 @@ oko.muz-tv.ru  # 3p ad scripts
 r.my.com  # is in 3 lists
 tracker-api.my.com
 
+1l-hit.my.games  # ad xhrs
+
 wqrwrwqr.myarena.ru  # from GoodbyeAds
 
 bs.mybb.ru  # from Ru AdList
@@ -4077,6 +4086,8 @@ wm.networkworld-na-central.speedera.net  # zombie
 wm.npr.na-central.speedera.net  # zombie
 wm.videohometours.na-central.speedera.net  # zombie
 
+related.speedtest.net$important  # from ABP
+
 clancy.spiceworks.com  # is in EasyPrivacy
 gekko.spiceworks.com$important  # is in Adguard And EasyPrivacy
 
@@ -4234,6 +4245,8 @@ s4r.tut.by  # is in Adguard and Ru AdList
 reklama-cluster.g2.tutby.com  # tut.by
 
 fronterr.tutu.ru
+
+ads-api.twitter.com$important  # from Adguard
 
 blabla.tword.ru  # from Ru AdList
 
@@ -4563,14 +4576,3 @@ tools.ztod.com  # from MVPS
 madbanner.zvuki.ru  # from Adguard
 
 !! todo
-
-aax.forbes.com$important  # from ABP
-
-related.speedtest.net$important  # from ABP
-
-1l-hit.my.games  # ad xhrs
-
-bordeaux.futurecdn.net$important  # is in Adguard, EasyList and ABP
-champagne.futurecdn.net  # from Adguard
-||futurecdn.net/bordeaux.js$all  # from EasyPrivacy
-||futurecdn.net^*/abp.js  # from EasyPrivacy
