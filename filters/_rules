@@ -539,7 +539,7 @@ _800x100.  # from EasyList
 !
 /3dssWoWG/*
 _468.gif  # from CJX's EasyList Lite
-/abdetect$important
+/abdetect*$important
 .ace.advertising.  # from EasyList
 /achecker.js
 ! here are some false positives in URL. But generally this rule is very good
@@ -563,7 +563,7 @@ _ad.gif|  # from EasyList
 /ad2.html  # from Adguard
 /ad300.htm  # from Adguard
 /adb.min.js$important
-/adbanner$important
+/adbanner*$important
 /ad_banner_  # is in EasyList
 /ad-banner.  # from SecurityEntire RussianFilter
 /ad-banners
@@ -576,14 +576,14 @@ _ad.gif|  # from EasyList
 /adblock.js$important
 /adblock-alerter/*  # from EasyList
 /adblock-blocker/*  # from EasyList
-/adblock-checker$important
+/adblock-checker*$important
     ! /adblock-checker.js$important
-/adblock-detect$important
+/adblock-detect*$important
     ! /adblock-detect/*  # from Adblock Warning Removal
     ! /adblock_detect.  # from EasyList
     ! /adblock-detect.js$script,important  # from uBlock filters
     ! /adblock_detector.  # from EasyList
-/adblockdetect$important  # from EasyList
+/adblockdetect*$important  # from EasyList
     ! /adblockdetect.  # from EasyList
     ! /adblockdetection.  # from EasyList
     ! /adblockdetector.js$important
@@ -609,12 +609,12 @@ adblockdetector/$important
 /adblockTester.js  # from EasyList China
 /adblock-tracking
 /adbs.js  # from Adguard
-/adclick$important
+/adclick*$important
 /adetector/*$important
 /adflash/*  # from EasyList China
 /adframe.js$important
 /adframes/*$important
-/adframetop$important
+/adframetop*$important
 /adfuel/*$important
     ! @@/adfuel/*$script,domain=cnn.com  # from ABP
     ! @@/adfuel/initiator.js^$script,~third-party,domain=nba.com  # from ABP
@@ -641,10 +641,10 @@ adblockdetector/$important
 /adpuba/*  # from EasyList China
 /adrum/*  # AppDynamics Adrum scripts: https://cdn.comcast.com/-/media/Common/adrum/adrumext7a88a5f34b3368a060fd963640d8c56b.js
 /ads/*$important,domain=~cnn.com  # exclusion - cnn loads page through json: https://cdn.cnn.com/ads/cnni/cnni_homepage.json
-/ads_$important,domain=~vk.com
+/ads_*$important,domain=~vk.com
 /ads-  # from EasyList: .com/ads-
     /ads-iframe/*$important  # from ABP
-/ads.$important,~stylesheet
+/ads.*$important,~stylesheet
     ! /ads.css$important - hmm, uBlock filters recommends remove it. Ok.
     ! /ads.gif$important
     ! /ads.html$important
@@ -674,7 +674,7 @@ _ads.station.  # from EasyList
 /adsblocker.  # from EasyList
 /adseller/*  # from EasyList
 /adsen/*  # from EasyList
-/adsense$important
+/adsense*$important
     ! /adsense/*
     ! /adsence.  # from EasyList
     ! /adsense-  # from EasyList
@@ -754,15 +754,15 @@ _ads.station.  # from EasyList
 /adsplacer.
 /ad_status.$important
 /ad_status.js$important
-/ads-top$important  # ads-top.ru (now closed)
-/adstyle$important  # adstyle.com.ua (now closed)
-/ad_top_$important
+/ads-top*$important  # ads-top.ru (now closed)
+/adstyle*$important  # adstyle.com.ua (now closed)
+/ad_top_*$important
 _ad_content.  # from Adguard
 _ad_superbanner.  # from EasyList
 _adsys.js  # from Adguard
 /ad-tag-  # is in EasyList  # /ad-tag-manager/*
-/adtoniq-$script,stylesheet,domain=theregister.co.uk  # from Adguard
-/adtoniq/
+/adtoniq-*$script,stylesheet,domain=theregister.co.uk  # from Adguard
+/adtoniq/*
 /adtop.js  # from Adguard
 /adunion/*
 /adunit.js$important
@@ -773,7 +773,7 @@ _adsys.js  # from Adguard
 /adv.js$important
 .adv.cdn.  # from EasyList
 =advanced-ads-  # from EasyList
-/advanced-ads-$domain=~wordpress.org  # is in EasyList
+/advanced-ads-*$domain=~wordpress.org  # is in EasyList
 _advert/  # from EasyList
 /advert.js$important
 /advert-  # from EasyList
@@ -832,17 +832,17 @@ _adverts.js  # from EasyList
 /async-ads.js$important
 -auto-ads-  # from EasyList
 /avada-scrollspy.js
-/awaps$important
+/awaps*$important
 /b/ss/*/js-  # is in AdGuard and EasyPrivacy  # dell.com/b/ss/dellglobalonline/1/JS-
 /bab.min.js  # from uBlock filters
 /ban/*
 /ban.min.js
 /baner.  # from Ru AdList
 /baner/*$important
-/baner_$important
+/baner_*$important
 /banery/*
 /%21banery/*
-!/banner$important,domain=~archive.org|~doshirak.com|~sberbank.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it
+!/banner*$important,domain=~archive.org|~doshirak.com|~sberbank.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it. Update: maybe asterisk was needed
 /banner*$all,important,domain=~archive.org|~doshirak.com|~sberbank.ru|~sbis.ru
     ! ##[src^="/images/banner"]
     ! /banner/*$important
@@ -929,7 +929,7 @@ _banner_rotator.php  # from Adguard
     ! ||stopgame.ru/bans/  # from Adguard
 /bens/vinos.js?$important  # is in AdGuard
 /bitrix/spread.php?$important  # is in RU AdList, EasyPrivacy, AdGuard
-/blockadblock$important
+/blockadblock*$important
     ! Adguard exclusions:
     ! /blockadblock.$script,redirect=nofab.js  # from Adguard
     ! /blockadblock-$script,redirect=nofab.js  # from Adguard
@@ -1052,7 +1052,7 @@ _banner_rotator.php  # from Adguard
 /flo.js  # is in Adguard
 /flr.js  # is in uBlock filters
 /footer_ads.  # is in EasyList
-/fuckadb$important
+/fuckadb*$important
     ! /fuckadb.js  # from EasyList
     ! /fuckadblock/*$important
     ! /fuckadblock.js$important
@@ -1063,7 +1063,7 @@ _banner_rotator.php  # from Adguard
     ! /fuckadblock-$script,redirect=nofab.js  # from Adguard
 /fuckingadblockplus.  # from EasyList
 /gampad/*$important  #/gampad/ad  #/gampad/ads  #/gampad/adx  #/gampad/google_ads.js
-/gpt/pubads_impl_$script,important
+/gpt/pubads_impl_*$script,important
 /gujAd/*$important
 /gujAd.js$important
 /HarbergerTaxBanner
@@ -1170,7 +1170,7 @@ _banner_rotator.php  # from Adguard
 /popads.  # from Ru AdList
 /popads/*  # from Ru AdList
 /popua/*  # from Ru AdList
-/popunder.$important
+/popunder.*$important
     ! /popunder.  # from EasyList
     ! /popunder.js$important
     ! /sponsors/popunder.  # from EasyList
@@ -1178,7 +1178,7 @@ _banner_rotator.php  # from Adguard
     ! ||scriptadmin.com/scripts/popunder.js  # from EasyList
 .popunder.js  # from EasyList
 /popupclick/$popup  # from Ru AdList
-/prebid$important
+/prebid*$important
     ! /js/prebid-  # from EasyList
     ! /npm/prebid-  # from EasyList
     ! /prebid/*  # from EasyList
@@ -1252,7 +1252,7 @@ _rebid.js  # from EasyList
     ! ||filsrver.com/video/*/rekl/  # from Adguard
     ! ||rus-linux.net/rekl/  # from Adguard
 /reklam/*$domain=~reklam.com.tr  # from EasyList
-/reklama$important
+/reklama*$important
 /renderbanner.do?  # is in EasyList
 /retargeting/*
 .richbanner.  # from Ru AdList
@@ -1261,8 +1261,8 @@ _rebid.js  # from EasyList
 !/rotator.js  # don't block - it may be used in non-ad video for previews
 /rotator.min.js$important
 /rotban/*  # from Adguard: /rotban/rotator.js
-/RTABlur$script
-/RTAModal$script
+/RTABlur*$script
+/RTAModal*$script
 /rtr/*$script,important
     ! ||am/rtr/$script  # from Ru AdList
     ! ||biz/rtr/$script  # from Ru AdList
@@ -1295,7 +1295,7 @@ _rebid.js  # from EasyList
 /segment.js$important
 /show_ads.js$important
 /show-ads.js$important
-/showads.$important  # disable exclusion from Fanboy’s Enhanced Tracking List
+/showads.*$important  # disable exclusion from Fanboy’s Enhanced Tracking List
 /sidebar_banners/*
 /siropu/am/*$script,important
     ! /siropu/am/core.min.js$script,important  # is in uBlock filters as is
@@ -1330,7 +1330,7 @@ _rebid.js  # from EasyList
     ! prisnilos.su*underbanner/  # from Ru AdList
 /upload/jackets/*  # Ru AdList rule: ||ua/upload/jackets/  # https://s.056.ua/upload/jackets/000/...
 /upsell.js
-/upsell_hero$important
+/upsell_hero*$important
 /upselltracker.js
 .utils.ads.  # from EasyList
 /uutils.fcg?  # from EasyPrivacy
@@ -1383,7 +1383,7 @@ _rebid.js  # from EasyList
 /videoadcode/*  # from Ru AdList
 .video.ads.  # from EasyList
 /video_banner.js
-/videojs-contrib-ads.$important
+/videojs-contrib-ads.*$important
 /videojs-contrib-ads/*$important
 /view.js  # from Ru AdList and Adguard, modified
 /viewc.js  # from Ru AdList, modified
@@ -1400,7 +1400,7 @@ _rebid.js  # from EasyList
 /widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~dns-shop.ru|~domclick.ru|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
 /wp-banners.js$important
 @@||embedly.com/widgets/
-||/wp-content/*/ad-$script,important  # disable exclusion from Fanboy’s Enhanced Tracking List
+||/wp-content/*/ad-*$script,important  # disable exclusion from Fanboy’s Enhanced Tracking List
 ||/wp-content/*/ads*.js$script,important  # disable exclusions from Fanboy's list
 /www/delivery/*  # from EasyList
 /xavi4.php
@@ -1408,7 +1408,7 @@ _rebid.js  # from EasyList
 /yads.  # from SecurityEntire BaseFilter
 /youxia.js  # from EasyList China, modified
 /cdn-cgi/zaraz/*  # ad scripts  # is in Adguard and EasyPrivacy
-/zcvisitor/*?campaignid$document  # is in: uBlock filters – Badware risks
+/zcvisitor/*  # is in: uBlock filters – Badware risks: /zcvisitor/*?campaignid$document
 /zuoxia.js  # from EasyList China, modified
 !
 ! cosmetic filters
@@ -2043,8 +2043,8 @@ _rebid.js  # from EasyList
 !! teasers
 /adv_teasers.  # is in EasyList
 /nettyzer/*
-/teaser$domain=~vento.ru
-/teaser.$~media,~object,domain=~amocrm.ru|~gosuslugi.ru|~insomnihack.ch|~pik-comfort.ru|~play.date  # from Ru AdList  # ok, exclusions from there
+/teaser*$domain=~vento.ru
+/teaser.*$~media,~object,domain=~amocrm.ru|~gosuslugi.ru|~insomnihack.ch|~pik-comfort.ru|~play.date  # from Ru AdList  # ok, exclusions from there
 /teaser2.  # from Ru AdList
 /teaser_klubnika/*  # from Ru AdList
 /teaserblock.site.js  # from Ru AdList
@@ -2055,7 +2055,7 @@ _rebid.js  # from EasyList
 /tionline150x60.  # from Ru AdList
 /tionline240x100.  # from Ru AdList
 /tionline240x400.  # from Ru AdList
-/tizer$all,important,domain=~mos.ru|~mosmetod.ru
+/tizer*$all,important,domain=~mos.ru|~mosmetod.ru
     # Ru AdList exclisions: 
     # asau.ru: closed
     # mos.ru: govt
@@ -2063,11 +2063,11 @@ _rebid.js  # from EasyList
     # tizer.io: closed
     # all other: seems unneeded
     /tizer-  # from Ru AdList
-    /tizer.$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
+    /tizer.*$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
     /tizer/*  # from Ru AdList
     /tizer2.  # from Ru AdList
     /tizer2/*  # from Ru AdList
-    /tizer_$domain=~mos.ru|~mosmetod.ru  # from Ru AdList
+    /tizer_*$domain=~mos.ru|~mosmetod.ru  # from Ru AdList
     /tizermedia.  # from Ru AdList
     /tizerotator/*  # from Ru AdList
     /tizers/*  # from Ru AdList
@@ -2135,7 +2135,7 @@ _tizers.  # from Ru AdList
 !! promos
 ! is in EasyList
 ://promo.$3p
-/app.promo$script
+/app.promo*$script
 /load-promo/*  # from Ru AdList
 /promo.
 /promo?
@@ -2369,14 +2369,14 @@ _analytics.js?  # from EasyPrivacy
     ! /vwfiles/analytics/*  # from EasyPrivacy
     ||cnn.com/analytics/  # from EasyPrivacy
     ! false positive: !https://services.rome2rio.com/api/1.5/json/search?key=...&analytics=true&debugFeatures=&debugExperiments=&groupOperators=true
-/analytics-$important
+/analytics-*$important
     /analytics-event
         ! /analytics-event-  # from EasyPrivacy
         ! /analytics-event.  # from EasyPrivacy
         ! /analytics-events-  # from EasyPrivacy
         ! ||vc.ru/analytics-event
     ! and many EasyPrivacy rules
-/analytics_$important
+/analytics_*$important
 /analyticstracking.js  # from Adguard
 /antibot.php
 /api/fl?
@@ -2392,7 +2392,7 @@ _analytics.js?  # from EasyPrivacy
 /atrk.gif
 /autotrack.js  # is in AdGuard and EasyPrivacy
 /autotrack.carbon.js  # from EasyPrivacy
-/beacon$important
+/beacon*$important
     ! /beacon.js$important
     ! /beacon.min.js$important
     ! /cdn-cgi/challenge-platform/h/g/beacon/*$xmlhttprequest,~third-party  # from Adguard
@@ -2445,7 +2445,7 @@ _chartbeat.js  # from EasyPrivacy
 .event-tracking.js  # from Fanboy's
 /events-metrica-scripts.js
 /facebook_pixel_  # from Adguard
-/fingerprint$important,all
+/fingerprint*$important,all
     ! /fingerprint.min.js$important
     ! /fingerprint2.min.js$important  # is in EasyPrivacy and AdGuard
         ! ||jsdelivr.net/fingerprintjs2/  # Also
@@ -2456,15 +2456,15 @@ _gatrack.js  # from EasyPrivacy
 .gatracking.js  # from EasyPrivacy
 /gccounter.js
 /geo.php?  # is in EasyPrivacy
-/geocheck$important
+/geocheck*$important
 -geoip.js  # from EasyPrivacy
 /geoip.city  # bitrix popups removed: ##.bxmaker__geoip__city__line-question and ##.current-city-notice
 /geotools/*  # ad xhrs
 .gif?event=  # is in EasyPrivacy
-/googleanalytics$important
-/google-analytics$important
--google-analytics/$important
--google-analytics.$important
+/googleanalytics*$important
+/google-analytics*$important
+-google-analytics/*$important
+-google-analytics.*$important
 .googleanalytics.js  # from EasyPrivacy
 .googleanalytics.prod.  # from EasyPrivacy
 /google-tag-manager/*$domain=~stackexchange.com|~superuser.com  # from EasyPrivacy
@@ -2479,7 +2479,7 @@ _hightraffic_code.js  # from EasyPrivacy
 /jquery.blockui.js
 /js/analitics.  # is in EasyPrivacy
 /js/analytics.  # from EasyPrivacy
-/js/parking.$script
+/js/parking.*$script
 /js/tracking/*  # is in EasyPrivacy
 /karamba/*  # Yandex tracker
 /karamba2.js  # Yandex tracker
@@ -2575,10 +2575,10 @@ _urchin.js  # from Fanboy's
 /__utm.js  # is in EasyPrivacy
 /utm-tracking.js$important
 .v4.analytics.  # from EasyPrivacy
-/vantage$script
+/vantage*$script
 /vestigo/v1/measure  # from EasyPrivacy
 /video_count.php?  # from EasyPrivacy
-/video.counters$important
+/video.counters*$important
     ! /video.counters.js$important
     ! /video.counters.2.js?  # from Adguard
 /video/tracking.js  # from EasyPrivacy
@@ -2589,7 +2589,7 @@ _urchin.js  # from Fanboy's
 /videojs-tracking.  # from EasyPrivacy
 /videojs.ga.  # from EasyPrivacy
 /videolog?vid=  # from EasyPrivacy
-/videotracking$important
+/videotracking*$important
     ! /videotracking/*  # from EasyPrivacy
     ! /videotracking.  # from EasyPrivacy
     ! /videotracking.min.js$important
@@ -3231,7 +3231,7 @@ _wtInit.js  # from Fanboy's
     ! /appbacktotop_  # from Ru AdList
 /arrow-top.svg
 /arrow-up.png
-/avada-to-top.$important  # in Ru AdList and Fanboy's
+/avada-to-top.*$important  # in Ru AdList and Fanboy's
 /back-top-btn.  # from Ru AdList
 /back-top-top-arrow.png
 _backtotop.  # from Ru AdList
@@ -3269,7 +3269,7 @@ _backtotop.  # from Ru AdList
 /jquery.scrollTo.min.js
 /jquery.tooltipster.min.js
 /jquery.toTop.js
-/jump_to_top.$image
+/jump_to_top.*$image
 /top-link.svg
 /ontop.png
 /sbtt.js  # from Ru AdList
@@ -3300,15 +3300,15 @@ _site/gotop.  # from Ru AdList
     ! ||bugaga.ru/*/top.png
     ! ||miniso.com/*/top.png
 /to_pagetop.  # from Ru AdList
-/top-arrow.$image
-/top_arrow.$image
+/top-arrow.*$image
+/top_arrow.*$image
 /top-bg.svg
 /topbutton.js  # is in Fanboy's
 /torna-su.  # from Ru AdList
 /to-top.
     ! /to-top.js
     ! /to-top.png
-/totop$image
+/totop*$image
     ! /totop.png
     ! /totop.svg
     ! /totop-btn.png
@@ -3426,7 +3426,7 @@ _site/gotop.  # from Ru AdList
 !
 ! GDPR is EU's data protection law. Popups about it are very, very often present on sites
 !
-/dist/gdpr-$domain=~express.co.uk  # from EasyList
+/dist/gdpr-*$domain=~express.co.uk  # from EasyList
 /gdpr/pdcc.  # from Fanboy's
 /gdprcookie/*  # from Fanboy's
 /gdprDialog.  # from Fanboy's
@@ -3592,13 +3592,13 @@ _site/gotop.  # from Ru AdList
 !
 /ajax/dataconsentcookies  # ad tracking image  # is in EasyList and Fanboy's
 /avia-snippet-cookieconsent.js  # from Adguard: /js/avia-snippet-cookieconsent.js
-/booster_eu_cookie$important
+/booster_eu_cookie*$important
 /cmp/*  # "consent manager policy"
     ! /cmp/heycookie.js  # from Adguard
     ! /cmp/int_cmp.  # from Adguard
 /cmp_shim.js  # from Adguard
 -cnil-popup-  # from EasyList
-/consent$important
+/consent*$important
     ! /consent.js
     ! /consent/*
     ! /consent-mapping/*
@@ -3613,11 +3613,11 @@ _site/gotop.  # from Ru AdList
 /cookie-consent?  # from Adguard
 -cookie-consent.js  # from EasyList
 _CookieConsent.js  # from EasyList
-/cookieconsent.$important  # from AdGuard
+/cookieconsent.*$important  # from AdGuard
     ! /cookieconsent.min.js$important
 /cookieconsent2/*$important
     ||cloudflare.com/ajax/libs/cookieconsent2/  # from EasyList
-/cookie-consent-$script
+/cookie-consent-*$script
     ! /cookie-consent-manager.js  # from Adguard
     ! /scripts/cookie-consent-  # from Adguard, modified
 /cookieconsentbar.  # from EasyList
@@ -3632,7 +3632,7 @@ _CookieConsent.js  # from EasyList
 _cookie_law.js  # from EasyList
 .cookielaw.js  # from Adguard
 .cookielaw.min.  # from EasyList
-/cookie-law-$~stylesheet  # from Adguard: /cookie-law-$~script,~stylesheet
+/cookie-law-*$~stylesheet  # from Adguard: /cookie-law-$~script,~stylesheet
 /cookie-law-generator/*  # from Adguard
 /cookie-law-info-public.js  # from Adguard
 /cookie-line.  # from EasyList
@@ -3656,13 +3656,13 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /didomi.js  # from Adguard  # see didomi.io
 /emh_cookiebanner/*  # from Adguard
 /eucookie/*  # is in 2 lists
-/eu-cookie-$script,important  # from Adguard, modified
-/eu_cookie_$script,important  # is in 3 lists
-/eu-cookie-law$important
+/eu-cookie-*$script,important  # from Adguard, modified
+/eu_cookie_*$script,important  # is in 3 lists
+/eu-cookie-law*$important
     ! /eu-cookie-law/*$important
     ! /eu-cookie-law.min.js$important
 /evercookie.  # from EasyPrivacy
-/evercookie_$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
+/evercookie_*$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
 /gdpr.js$important  # from Fanboy's and Adguard
 .gdpr.$script
     ! .gdpr.js  # from EasyList
@@ -3683,7 +3683,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /sncmp.min.js  # from Adguard
 /track-cookies.js$important
 /trackingcookiecheck?  # from EasyPrivacy
-/um-gdpr.$important  # is in Fanboy's and EasyList
+/um-gdpr.*$important  # is in Fanboy's and EasyList
 /wecoma-lite.js  # from EasyList
 /wrappermessagingwithoutdetection.js  # is in Fanboy's and EasyList
 /warncookies.  # is in EasyList, Adguard, Fanboy's
@@ -3710,7 +3710,7 @@ _christmaslights.js  # from Ru AdList
 /snowstorm.js  # from Ru AdList
 /snowstorm/lights/  # from Ru AdList
 /snowstorm.min.js  # from Ru AdList
-/snow-storm-$script  # from Ru AdList
+/snow-storm-*$script  # from Ru AdList
 /snowstorm-min.js  # cdnjs.cloudflare.com/ajax/libs/snowstorm/
 _snowstorm-min.js  # from Ru AdList
 /snoweffect.js
@@ -3797,25 +3797,25 @@ _snowstorm-min.js  # from Ru AdList
 /app__app-store.png
 /app-icon-app-store.svg
 /app-icon-google-play.svg
-/appgallery$image
-/app-gallery.$image
--app-gallery.$image
+/appgallery*$image
+/app-gallery.*$image
+-app-gallery.*$image
 /app-google.svg
 /app__google-play.png
-/app_store$image
-/app-store$image
--app-store.$image
-/appstore$image
+/app_store*$image
+/app-store*$image
+-app-store.*$image
+/appstore*$image
     !/img/appstore
 /appstore-footer.png
 /btn-appstore.svg
 /btn-googleplay.svg
 /footer-app-store.png
-/googleplay$image
+/googleplay*$image
     !/googleplay-footer.png
-/google-play$image
--google-play.$image
-/google_play$image
+/google-play*$image
+-google-play.*$image
+/google_play*$image
     !/google-play.png
     !/google-play.svg
     !/google_play.svg
@@ -3823,7 +3823,7 @@ _snowstorm-min.js  # from Ru AdList
 /gplay.jpg
 /huawei-store.svg
 /itunes.svg
-/play_market$image
+/play_market*$image
 ||play.google.com/intl/en_us/badges/$3p
 ##a[href^="https://appgallery.huawei.com"]
 ###apple-icon
@@ -3894,7 +3894,7 @@ _snowstorm-min.js  # from Ru AdList
 /ico_subscribe.png
 /newsletter/*  # ||nitrocdn.com/*/newsletter/
 /newsletterwidget/*
-/subscribe.$image
+/subscribe.*$image
 /subscribe.quick.form/*  # /bitrix/*/subscribe.quick.form/
 ! generalized
 ~domclick.ru,~eff.org,~mail.ru,~sberbank.ru,~mail.yandex.ru##[class*="Letter"]:not(html):not(body):not(article):not(.post_content):not(.wp_content)
@@ -4025,15 +4025,15 @@ _snowstorm-min.js  # from Ru AdList
 
 
 !! payment methods
-/applepay.$image
-/googlepay.$image
+/applepay.*$image
+/googlepay.*$image
 /google_pay.svg
-/footer-icon-apple$image
-/footer-icon-gpay$image
-/footer-icon-mastercard$image
-/footer-icon-mir$image
-/footer-icon-pay$image
-/footer-icon-visa$image
+/footer-icon-apple*$image
+/footer-icon-gpay*$image
+/footer-icon-mastercard*$image
+/footer-icon-mir*$image
+/footer-icon-pay*$image
+/footer-icon-visa*$image
 /halva.gif
 /halva.svg
 /home_credit.svg
@@ -4042,13 +4042,13 @@ _snowstorm-min.js  # from Ru AdList
 ! /m-logo.png  # -logo.$image rule
 /maestro.png
 /mast2.png
-/mastercard.$image
+/mastercard.*$image
     !/mastercard.jpg
     !/mastercard.png
     !/mastercard.svg
     !/mastercard.webp
-/master_card$image
-/master-card$image
+/master_card*$image
+/master-card*$image
 /master-card-big.svg
 !/mastercard_logo.png  # _logo.$image rule
 /master-visa.svg
@@ -4067,16 +4067,16 @@ _snowstorm-min.js  # from Ru AdList
 /payment_icons.png
 /payment_logos/*
 /payment_logos.png
-/payment/logo$image
+/payment/logo*$image
 /paypal.png
-/peace-card$image
+/peace-card*$image
 /qiwi.png$domain=~qiwi.com
-/samsungpay$image
+/samsungpay*$image
 /sberbank.jpg
 /sberbank.svg
 /sber-pokupay.svg
 /sovest.svg
-/visa$image
+/visa*$image
 /visa.jpg
 /visa.png
 /visa.svg
@@ -4169,13 +4169,13 @@ _snowstorm-min.js  # from Ru AdList
 /countdown.min.js
 /hurrify/
 /hurrify.js
-/jquery.countdown$important,domain=~advance24.ru
+/jquery.countdown*$important,domain=~advance24.ru
     ! /jquery.countdown.min.js$important
     ! /jquery.countdown-en.js
     ! /jquery.countdown-ru2.js
 /jquery-countdown/*
 /sales-countdown-timer/*
-/ultimate-countdown-timer$important
+/ultimate-countdown-timer*$important
 
 
 
@@ -4279,14 +4279,14 @@ _snowstorm-min.js  # from Ru AdList
 ##.vendors
 ###vendors-slider
 /brand/*$image
-/branding$all,important,domain=~livejournal.com
+/branding*$all,important,domain=~livejournal.com
     ! many, many rules from different lists
     ! /branding/*
 /brands/*$image,domain=~google.com
     ! ||devapps.ru/img/brand/$image  # 4pda banners
     ! ||megaobzor.com/images/brand/*$image
     ! ||shopsirop.ru/uploads/images/Brands/$image
-/images/brand$image
+/images/brand*$image
 /logos/*$domain=~vse.fm
 
 
@@ -4754,8 +4754,8 @@ yoursmileys.ru$image,third-party
 /lsxemojipicker.$script
 /images/*emoji/*$domain=~github.com
 /twemoji.js
-/wp-emoji$script,stylesheet
-/wp-emoji.js
+/wp-emoji*$script,stylesheet
+    ! /wp-emoji.js
 
 
 
