@@ -72,6 +72,8 @@ _gaTrack.js  # from EasyPrivacy
 /google-tracking/*  # is in AdGuard: /wp-content/cache/busting/google-tracking/*
 /gtm.js$important
 .initdoubleclickadselementcontent?
+||google.com/ads/$important  # is in ABP
+||google.com/afs/$important  # from ABP
 ~zen.yandex.*##[class*="adsense"]:not(html):not(body):not(article)
 ##[id*="adsense"]:not(html):not(body):not(article)
     ! is in CJX's EasyList Lite
@@ -643,7 +645,7 @@ adsense.su$important  # adsense
 !# [Google / DoubleClick][AS15169][64.233.160.0 - 64.233.191.255]
 !# [Google / DoubleClick][AS15169][173.194.0.0 - 173.194.255.255]
 !# [Google / DoubleClick][AS15169][209.85.128.0 - 209.85.255.255]
-doubleclick.net$important  # overrides
+doubleclick.net$important,all  # overrides
 !+  3au.doubleclick.net
 !+  3ad.doubleclick.net
 !+  3optimization.doubleclick.net
@@ -716,7 +718,7 @@ doubleclick.net$important  # overrides
 !+  video.doubleclick.net
 !+  za.doubleclick.net
 ! end of doubleclick.net
-doubleclick.com$important
+doubleclick.com$important,all
 !+  comms.doubleclick.com
 !+  g.doubleclick.com
 ! end of doubleclick.com
@@ -735,7 +737,6 @@ doubleclick-analytics.com$important
 doubleclickbygoogle.com$important
 static-doubleclick-net.l.google.com
 doubleclickindustries.com
-marketing.doubleclickindustries.com
 doubleclick.cn.com
 doubleclick.shockwave.com
 doubleclick.d4p.net
@@ -989,13 +990,13 @@ gstaticadssl.l.google.com
 fundingchoices.google.com  # from Fanboy's
 fundingchoicesmessages.google.com$important  # ad scripts  # is in uBlock filters  # is in 3 lists
 
-googleadservices.com$important  # disable RU ADList exceptions
+googleadservices.com$important,all  # disable RU ADList exceptions
 !+  afs.googleadservices.com
 ! end of googleadservices.com
 ! is in EasyList
 ##a[href^="https://www.googleadservices.com/pagead/aclk?"]
 
-google-analytics.com$important
+google-analytics.com$important,all
 google-analytics.l.google.com
 googleadapis.l.google.com
 gstaticadssl.l.google.com
@@ -1220,6 +1221,7 @@ google-feed.net  # Checked:2022-11-20
 ads-icl.googleusercontent.com
 affiliate.googleusercontent.com
 ampcid.google.com
+adservice.google.*$important
 adservice.google.alsace
 adservice.google.cat
 adservice.google.boats
@@ -1286,24 +1288,26 @@ clients2.google.com
 
 crashlyticsreports-pa.googleapis.com  # app requests
 footprints-pa.googleapis.com  # app requests
-imasdk.googleapis.com$important  # see https://better.fyi/trackers/imasdk.googleapis.com/ for example: "Display ads in your application's video, audio, and game content."
+imasdk.googleapis.com$important,all  # see https://better.fyi/trackers/imasdk.googleapis.com/ for example: "Display ads in your application's video, audio, and game content."
 lamssettings-pa.googleapis.com  # app requests
 myphonenumbers-pa.googleapis.com  # app requests
 regioninfo-pa.googleapis.com  # app requests
 
 !1e100.net
 
-googlesyndication.com$important
+googlesyndication.com$important,all
 !+  c.googlesyndication.com
 !+      cache.c.googlesyndication.com
 !+  safeframe.googlesyndication.com
 ! end of c.googlesyndication.com
 
-googletagmanager.com$important
+googletagmanager.com$important,all
 
 www-googletagmanager.l.google.com$important
 
-googletagservices.com$important
+googletagservices.com$important,all
+
+googletraveladservices.com$important
 
 csi.gstatic.com$important  # from many lists
 
