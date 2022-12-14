@@ -305,7 +305,21 @@ market.yandex.*##div[data-apiary-widget-name="@MarketNode/ReviewPollPopup"]
 market.yandex.*##div[data-apiary-widget-id="/fullScreenAppDistributionPopup"]
 ! from Adguard
 market.yandex.*##div[data-apiary-widget-id="/bannerAfterReverseScroll"]
-
+! promos
+||avatars.mds.yandex.net/get-marketcms/$image
+||yastatic.net/market-export/_/i/express-delivery/$image
+!plus
+market.yandex.ru##div[data-zone-name="CASHBACK"]
+!plus
+market.yandex.ru##[id^=deal-terms-hint-tooltip]
+!loans
+market.yandex.ru##div[data-auto="financial-product-label"]
+!apps
+market.yandex.ru##div[data-apiary-widget-id="/footer/appPromoLoader"]
+!seo
+market.yandex.ru##noindex >p
+! "вы смотрели"
+market.yandex.ru##div[data-apiary-widget-id="/footer/history"]
 
 ! "Q"
 yandex.ru##a[href="/q/"]:has(svg)
