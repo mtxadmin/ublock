@@ -3,6 +3,29 @@
 !
 !
 
+! from Adguard
+overclockers.com###sidebar > div:not(.reference)
+! from Adguard
+overclockers.com##div[id^="ad-widget"]
+
+
+||overclockers.co.uk/KitGuru/similarArticle  # from Adguard
+! from Adguard
+overclockers.co.uk,caseking.de###ckLbOverlay
+! from Adguard
+overclockers.co.uk###header .samBannerUnit #Offer > a[href][target="_blank"] > img
+! from Adguard
+overclockers.co.uk###wallpaper
+! from Fanboy's
+overclockers.co.uk##.s-wrapper
+! from Adguard
+forums.overclockers.co.uk###Offer
+
+
+! from Adguard
+overclockers.ge##a[href="https://topbuy.ge"] > img
+
+
 @@||overclockers.ru^$generichide,badfilter
 @@||forums.overclockers.ru^$generichide,badfilter
 !
@@ -28,6 +51,13 @@ overclockers.ru##.message.warning
 ! from Adguard
 overclockers.ru##div[itemprop="articleBody"] + div.sixteen > div.warning.message
     ! banners and promos
+! from Ru AdList
+overclockers.ru##a.over-hiddenlink-html[href*="citilink.ru"]:style(pointer-events: none !important; color: inherit !important)
+! from Ru AdList
+overclockers.ru##a.over-hiddenlink-html[data-link*="citilink.ru"]:style(pointer-events: none !important; color: inherit !important)
+! from Ru AdList
+overclockers.ru##a.over-hiddenlink-html[data-link*="regard.ru"]:style(pointer-events: none !important; color: inherit !important)
+!
 ! from Adguard
 overclockers.ru#?#.container-block.woback:has(> div > ins[data-revive-zoneid])
 ! from Adguard
@@ -83,6 +113,8 @@ overclockers.ru##[id^="pipMtbRoot"]
     !overclockers.ru#?#div[class]:has(> [id^="pipMtbRoot"])
 ! from Ru AdList
 overclockers.ru#?#noindex:has(> .an-link-list)
+! from Ru AdList
+overclockers.ru##.an-link-list:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
 ! from Adguard
 overclockers.ru#?#body > div[class="ui container main-wrap"] > div[class="ui grid"] > div[class*="wide column container-block"]:has(> div.grid > div > ul.an-link-list)
 ! from Adguard
@@ -329,16 +361,13 @@ overclockers.ru##.article-card:has(a[href^="/blog/RaddaR/"])
 overclockers.ru##.top-menu ~ .main-wrap.container > .grid.ui > .row.container-block
 ! from Ru AdList
 overclockers.ru#?#div:has(> #fixScrollPip)
-! from Ru AdList
-overclockers.ru#?#div:has(> .an-link-list)
+
 ! from Ru AdList
 overclockers.ru##div[class*="__lxG__"]
 ! from Ru AdList
 overclockers.ru##img[src^="https://overclockers.ru/st/images/partners/"]
 ! from Ru AdList
 forums.overclockers.ru#?#table > tbody > tr:-abp-has(> [class^="profile"]:-abp-contains(/РџР°СЂС‚РЅРµСЂ|Р РµРєР»Р°РјР°/))
-! from Ru AdList
-overclockers.ru#?#.an-link-list:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
 ! from Ru AdList
 overclockers.ru#?#.main-wrap > .grid.ui > .sixteen.wide.column.container-block:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
 ! from Ru AdList
@@ -350,6 +379,8 @@ forums.overclockers.ru#?#tr > td[nowrap="nowrap"][style="color: red;  font-weigh
 overclockers.ru##body > div[class][style*="margin-"]
 
 ! from Ru AdList
+overclockers.ru#?#div:has(> .an-link-list)
+! from Ru AdList
 overclockers.ru#?#.an-link-list:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
 ! from Ru AdList
 overclockers.ru#?#.main-wrap > .grid.ui > .sixteen.wide.column.container-block:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
@@ -359,26 +390,17 @@ overclockers.ru#?#.material-inline-an:style(position: fixed !important; top: -10
 forums.overclockers.ru#?#tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"]:style(color: #004488 !important; font-weight: 200 !important)
 
 ! from Ru AdList
-overclockers.ru##.an-link-list:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
-! from Ru AdList
 overclockers.ru##.main-wrap > .grid.ui > .sixteen.wide.column.container-block:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
 ! from Ru AdList
 overclockers.ru##.material-inline-an:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
 ! from Ru AdList
 forums.overclockers.ru##tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"]:style(color: #004488 !important; font-weight: 200 !important)
 
-! from Ru AdList
-overclockers.ru##a.over-hiddenlink-html[href*="citilink.ru"]:style(pointer-events: none !important; color: inherit !important)
-
-! from Ru AdList
-overclockers.ru##a.over-hiddenlink-html[data-link*="citilink.ru"]:style(pointer-events: none !important; color: inherit !important)
-
-! from Ru AdList
-overclockers.ru##a.over-hiddenlink-html[data-link*="regard.ru"]:style(pointer-events: none !important; color: inherit !important)
-
-
-
 
 ! overclockers.UA is also here
 ||overclockers.ua/branding.css  # from Adguard
+! from Ru AdList
+forum.overclockers.ua##+js(abort-on-property-read, a_urls)
+! from Ru AdList
+overclockers.ua##.patreon
 
