@@ -196,6 +196,7 @@ yandex.*##[class^=_id_branding]
     yandex.ru##._id_branding_mastercard
     yandex.ru##._id_branding_yandex-gasstation
     yandex.ru##._id_branding_yandex-gasstation
+    yandex.*##._id_branding_tele2  # is in Adguard
 yandex.*##.branding-control
 yandex.*##._branding
 yandex.*##._type_branding
@@ -795,6 +796,9 @@ yandex.*##.button_primary:has-text(в избранное)
 !test
 ||yandex.ru/api/status
 ||yastatic.net/nearest.js
+
+! is in Adguard
+yandex.*##.search-lavka-view
 
 yandex.ru##.mg-sticky:style(position:static !important)
 yandex.ru##.mg-sticky__inner:style(position:static !important)
