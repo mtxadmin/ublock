@@ -1395,6 +1395,7 @@ _rebid.js  # from EasyList
 ! widget rules need refactoring :-( They block /jquery/ui/widget.min.js
 !/widget/*$~stylesheet,domain=~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru|~sbis.ru
 !    ! /widget/?45;*|1|1|1|1  # strange rule from Ru AdList
+    ||market.yandex.ru/widget/$third-party,script  # from Ru AdList
 !/widget.min.js$important,domain=~sbis.ru
 /widget-a-b.js  # from Ru AdList
 /widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~dns-shop.ru|~domclick.ru|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
@@ -3148,7 +3149,7 @@ _wtInit.js  # from Fanboy's
 ##.to-bottom
 ###toolbar_scrollup
 ##.toolbar-scrollup
-###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper)
+###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper):not(.site)
 ~nano-editor.org##.top:not(html):not(body):not(article):not(table):not(ul)
 ##.top-btn
 ###top-but
