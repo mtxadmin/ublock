@@ -79,6 +79,10 @@ $removeparam=/^affi/
     ! stripchat.com$removeparam=affiliateId  # from Adguard
     ! zavvi.com$removeparam=affil  # from Adguard
 
+$removeparam=afid
+    ! $removeparam=afid,domain=123chat.jp|kanochat.jp  # from Adguard
+    ! shopyourlikes.com$removeparam=afId
+
 $removeparam=aiad_clid  # from Adguard
 
 $removeparam=assetId  # Oracle Eloqua  # from NeatURL
@@ -971,6 +975,9 @@ adjust.com$removeparam=user_agent  # from Adguard
 ! admitad.com - blocked entirely, just for information. But.
 admitad.com$removeparam=/^subid/  # from Adguard
 
+! already blocked. But.
+adnxs.com$removeparam,important  # from uBlock filters
+
 # from Adguard (sic!): $removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
 adguard.com$removeparam=aid  # from Adguard
 adguard-dns.com$removeparam=aid  # from Adguard
@@ -1066,6 +1073,9 @@ app.link$removeparam=_p  # from Adguard
 
 asahi.com$removeparam=iref  # from Adguard
 asahi.com$removeparam=cid  # from Adguard
+
+askubuntu.com$removeparam=lq
+askubuntu.com$removeparam=noredirect
 
 ! already blocked
 awin1.com$removeparam=awinaffid  # from Adguard
@@ -1317,6 +1327,12 @@ $removeparam=totalVacancies,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|h
 !
 $removeparam=vss,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
 
+! already blocked url
+||hktvmall.com/yuicombo?$script,removeparam=/^\/_ui\/desktop\/common\/js\/uiAnalytics\//  # from Adguard and uBlock filters
+||hktvmall.com/yuicombo?$script,removeparam=/_ui\/shared\/common\/js\/analytics\/with-intersection-track.js/  # from Adguard
+||hktvmall.com/yuicombo?$script,removeparam=/_ui\/shared\/common\/js\/InappCommunicationManager.js/  # from Adguard
+||hktvmall.com/yuicombo?$script,removeparam=/_ui\/shared\/common\/js\/util\/jquery.analytics-utils.js/  # from Adguard
+
 ! already blocked
 hololivepro.com$removeparam=pr_rec_id  # from Adguard
 hololivepro.com$removeparam=pr_rec_pid  # from Adguard
@@ -1547,6 +1563,9 @@ rambler.ru$removeparam=readmore  # from Ru AdList, modified
     ! unusual Ru AdList form:
     ! /?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru  # from Ru AdList
 
+! already blocked
+realsrv.com$removeparam  # from Adguard: ||syndication.realsrv.com/splash.php?$removeparam
+
 reddit.com$removeparam=correlation_id  # from Adguard
 reddit.com$removeparam=post_fullname  # from Adguard
 
@@ -1577,6 +1596,10 @@ satom.ru$removeparam=i
 shopee.ph$removeparam=sp_atk  # from Adguard
 shopee.ph$removeparam=xptdk  # from Adguard
 
+! already blocked
+shopyourlikes.com$removeparam=afCreativeId
+shopyourlikes.com$removeparam=afPlacementId
+
 site24x7.com$removeparam=ad_src  # reflinks
 
 smsc.ru$removeparam  # random ref param names
@@ -1599,6 +1622,9 @@ spotify.com$removeparam=si  # from NeatURL and Adguard
 steampowered.com$removeparam=/^curator_clanid/  # from Adguard, modified
 steamcommunity.com$removeparam=/^curator_clanid/  # from Adguard, modified
     ! $removeparam=/^curator_clanid/,domain=steampowered.com|steamcommunity.com  # from Adguard
+
+! already blocked
+stripchat.com$removeparam=realDomain  # from Adguard
 
 synergyacademy.com$removeparam=marketer  # ref
 synergyacademy.com$removeparam=produkt  # ref
@@ -1690,6 +1716,8 @@ vercel.com$removeparam=sfmc_asset_id  # from Adguard
 vercel.com$removeparam=sfmc_channel  # from Adguard
 vercel.com$removeparam=sfmc_journey_id  # from Adguard
 vercel.com$removeparam=sfmc_journey_name  # from Adguard
+
+weather.com$removeparam=par  # from Adguard
 
 shopping.web.de$removeparam=origin  # from Adguard
 ||shopping.gmx.*^$removeparam=origin  # from Adguard
@@ -2213,8 +2241,6 @@ wise.com$removeparam=partnerID  # from Adguard
 ||join.worldoftanks.$removeparam=enctid  # from Adguard
 ||join.worldoftanks.$removeparam=pub_id  # from Adguard
 
-weather.com$removeparam=par  # from Adguard
-
 mirtesen.ru$removeparam=ad  # from Adguard
 mirtesen.ru$removeparam=bvuuid  # from Adguard
 mirtesen.ru$removeparam=nvuuid  # from Adguard
@@ -2232,31 +2258,18 @@ octivid.com$removeparam=custom_ads  # from Adguard: ||player.octivid.com/*/video
 
 mydirtyhobby.com$removeparam  # from Adguard: lp.mydirtyhobby.com$removeparam
 
-! already blocked
-realsrv.com$removeparam  # from Adguard: ||syndication.realsrv.com/splash.php?$removeparam
-
 /?r=dir&zoneid=$removeparam  # from Adguard
 
 /?rb=*&zoneid=$removeparam  # from Adguard
 
-! already blocked
-shopyourlikes.com$removeparam=afCreativeId
-shopyourlikes.com$removeparam=afId
-shopyourlikes.com$removeparam=afPlacementId
-
 ||yandex.*/search/$document,removeparam=search_source,domain=yandex.*  # from Ru AdList: 
-
-! already blocked url
-||hktvmall.com/yuicombo?$script,removeparam=/^\/_ui\/desktop\/common\/js\/uiAnalytics\//  # from Adguard and uBlock filters
-||hktvmall.com/yuicombo?$script,removeparam=/_ui\/shared\/common\/js\/analytics\/with-intersection-track.js/  # from Adguard
-||hktvmall.com/yuicombo?$script,removeparam=/_ui\/shared\/common\/js\/InappCommunicationManager.js/  # from Adguard
-||hktvmall.com/yuicombo?$script,removeparam=/_ui\/shared\/common\/js\/util\/jquery.analytics-utils.js/  # from Adguard
-
-! already blocked
-stripchat.com$removeparam=realDomain  # from Adguard
 
 ! don't know, but ok
 @@||dkbs.sabio.de/sabio/services/$removeparam  # from Adguard
 
 ! don't know, but ok
 @@/mediaserver/*$removeparam,domain=ramtrucks.com|chrysler.com|fiatusa.com|alfaromeousa.com|jeep.com|dodge.com  # from Adguard
+
+basketballking.jp$removeparam=cx_art  # from Adguard
+
+cinematoday.jp$removeparam=g_clk  # from Adguard
