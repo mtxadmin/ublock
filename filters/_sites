@@ -7504,6 +7504,7 @@ garagetula.ru##.side-infa
 garagetula.ru##.img-skola
 garagetula.ru###bottom_info
 
+||garant.ru/static/garant/images/layout/ny/
 garant.ru##.wf2-popover
 garant.ru##.grwf2_backdrop
 garant.ru##.info-important
@@ -8427,6 +8428,8 @@ habr.com##.tm-most-reading-block__promo-post
 habr.com##.vacancy-banner
 habr.com##.vacancy-banner-slider
 habr.com##.tm-stories-block
+habr.com##.tm-company-profile-card
+habr.com##.tm-company-snippet__description
     ! popups
 habr.com##.tm-notification
 habr.com##.Vue-Toastification__container
@@ -15422,22 +15425,8 @@ outsidethebox.ms##.widget-wrap:has-text(Подпишитесь)
 ||overclock.net/awards/NewBadges/$image
 overclock.net##.post-sig
 
-! top
-overclockers.ru##.mobile-sidebar
-! popups
-overclockers.ru##.message.warning
-! logos
-!||overclockers.ru/assets/asus_logo_blue.png  # _logo_$image rule
-! other
-overclockers.ru##div.right-blog-wrap.container-block.aligned.center.column.wide.sixteen
-overclockers.ru##.donate-author-link
-@@||overclockers.ru^$generichide,badfilter
-@@||forums.overclockers.ru^$generichide,badfilter
-overclockers.ru##.asus.item
-overclockers.ru##.comments-feed
-overclockers.ru##.material-other-feed
-overclockers.ru##.spinner
-overclockers.ru##.segment
+! see overclockers.ru in overclockers file
+! see overclockers.ua in overclockers file
 
 ! already blocked, but
 overdrive.com##.reveal-modal-bg
@@ -24111,17 +24100,21 @@ woomhost.com###typed
 woomhost.com##.outliner-middl-ha > h5
 
 ||wordpress.com/nostats.js
+    ! top
+wordpress.org###wpadminbar:style(position:static !important)
+wordpress.com##.custom-header:not(html):not(body):not(article)
+    ! banners and promos
+wordpress.com###branding:not(html):not(body):not(article)
+wordpress.org##.plugin-banner
+    ! other
 wordpress.com###jp-post-flair
 wordpress.com###actionbar
 wordpress.com##.widget_blog_subscription
-wordpress.com##.custom-header:not(html):not(body):not(article)
-wordpress.com###branding:not(html):not(body):not(article)
 wordpress.com###pagetitle
 wordpress.com###footer
 wordpress.com###site-generator
 wordpress.com###entry-author-info
-! from Web Annoyances Ultralist 
-wordpress.com##body:style(padding-top: 0 !important;)
+!
 ||wordpress.com/geo/  # from EasyPrivacy
 ||wordpress.org/plugins/wp-json/plugins/v1/locale-banner
 ||wp.com/wp-content/themes/pub/motion/images/bodybg.jpg$important
