@@ -1,0 +1,384 @@
+﻿!! It is a sublist of Yet another small uBlock filter list
+! See https://github.com/mtxadmin/ublock for details
+!
+!
+
+@@||overclockers.ru^$generichide,badfilter
+@@||forums.overclockers.ru^$generichide,badfilter
+!
+||overclockers.ru/assets/app/app-ecatalog.js  # from Ru AdList
+||overclockers.ru/images/buttons/  # from Ru AdList
+||overclockers.ru/st/images/partners/  # from Ru AdList
+||overclockers.ru/static/js/app-pip.js  # from Adguard
+    !||overclockers.ru/static/js/app-pip.js|$script,redirect=noop.js,important  # from Adguard
+||overclockers.ru/webservice/getPipPlace?  # from Ru AdList and Adguard
+!
+! from Adguard
+~forums.overclockers.ru,overclockers.ru##+js(abort-on-property-read, cardinals)
+! from Ru AdList
+overclockers.ru##+js(abort-on-property-read, cardinals)
+! from Ru AdList
+overclockers.ru##+js(addEventListener-defuser, load, mamydirect)
+    ! top
+overclockers.ru##.mobile-sidebar
+overclockers.ru##.top-an-underlogo
+overclockers.ru##.ui.dimmer:style(position:static !important)
+    ! popups
+overclockers.ru##.message.warning
+! from Adguard
+overclockers.ru##div[itemprop="articleBody"] + div.sixteen > div.warning.message
+    ! banners and promos
+! from Adguard
+overclockers.ru#?#.container-block.woback:has(> div > ins[data-revive-zoneid])
+! from Adguard
+overclockers.ru#?#.five.column > div.grid >div.container-block:has(> ins[data-revive-zoneid])
+! from Adguard
+overclockers.ru#?#.page-content > div.grid > div.container-block:has(> ins)
+! from Adguard
+overclockers.ru#?#.five.column > div.right-content-wrap > div.container-block:has(> div > ins)
+! from Adguard
+overclockers.ru#?#.five.column > div.right-content-wrap > div.container-block:has(> ins)
+! from Adguard
+overclockers.ru#?#.five.column > div.grid >div.container-block:has(> ins[data-revive-zoneid])
+! from Adguard
+overclockers.ru#?#body > div.main-wrap > div.grid > div.container-block:has(> div > ins)
+! from Adguard
+overclockers.ru#?#body > div.main-wrap > div.grid > div.container-block:has(> ins)
+! from Adguard
+overclockers.ru#?#.five.column > div.right-content-wrap > div.container-block:has(> div > ins)
+! from Adguard
+overclockers.ru#?#.five.column > div.right-content-wrap > div.container-block:has(> ins)
+! from Adguard
+overclockers.ru#?#.page-content > div.grid > div.container-block:has(> ins)
+! from Adguard
+overclockers.ru#?#body > div.main-wrap > div.grid > div.container-block:has(> div > ins)
+! from Adguard
+overclockers.ru#?#body > div.main-wrap > div.grid > div.container-block:has(> ins)
+! from Ru AdList
+overclockers.ru#?#.container-block:has(> ins:first-child)
+! from Ru AdList
+overclockers.ru#?#.container-block:has(> [class]:not(.container-block) > ins)
+! from Ru AdList
+overclockers.ru##.material-content > .column > p > ins ~ br
+! from Ru AdList
+overclockers.ru#?#.right-sticky-content:has(> ins)
+!
+! from Adguard
+forums.overclockers.ru#?##pagecontent > table.tablebg:has(> tbody > tr > td.profile_username > b.postauthor:contains(Реклама)):has(> tbody > tr > td.profile:contains(Партнер))
+
+!
+! from Adguard
+overclockers.ru#?#.grid > div.container-block + div.column > div.grid:has(> div.container-block > div[id^="yandex_rtb"])
+! from Ru AdList
+overclockers.ru#?#.spoiler-block:has(> .spoiler-body > [id^="yandex_rtb_"])
+! from Ru AdList
+overclockers.ru##div[itemprop="articleBody"] > div[id^="yandex_rtb"] ~ br
+
+!
+! from Ru AdList
+overclockers.ru##[id^="pipMtbRoot"]
+    ! from Adguard
+    !overclockers.ru#?#.five.column > div.right-content-wrap > div.container-block:has(> div[id^="pipMtbRoot"])
+    ! from Ru AdList
+    !overclockers.ru#?#div[class]:has(> [id^="pipMtbRoot"])
+! from Ru AdList
+overclockers.ru#?#noindex:has(> .an-link-list)
+! from Adguard
+overclockers.ru#?#body > div[class="ui container main-wrap"] > div[class="ui grid"] > div[class*="wide column container-block"]:has(> div.grid > div > ul.an-link-list)
+! from Adguard
+overclockers.ru#?#body > div[class="ui container main-wrap"] > div[class="ui grid"] > div[class="five wide column"] > div[class="ui grid"]:has(> div > div#fbRoot)
+!
+! from Ru AdList
+forums.overclockers.ru##.needblock
+    ! from Adguard
+    !forums.overclockers.ru#$#.needblock { position: absolute!important; left: -3000px!important; }
+! from Adguard
+overclockers.ru##img[src$="/gta5rp.png"]
+! from Adguard
+overclockers.ru##.an-bottom
+! from Ru AdList
+overclockers.ru##.an-line-between
+! from Ru AdList
+overclockers.ru##.right-content-wrap.sticky-container
+    ! from Adguard
+    !overclockers.ru##.right-content-wrap > div.right-sticky-content
+!
+! from Adguard
+overclockers.ru##.mainlist-inline-an
+! from Adguard
+overclockers.ru##.mainlist-inline-an.regard
+! from Ru AdList
+overclockers.ru##.mainlist-inline-an > :not(.tag-trend)
+! from Ru AdList
+overclockers.ru##.mainlist-inline-an[class*="main-articles"]
+!
+! from Ru AdList
+overclockers.ru##.mixed-news-wrap > .pip-right-inner
+! from Ru AdList
+overclockers.ru##.pip-right-inner.first-news
+!
+! from Ru AdList
+overclockers.ru##.pip-main-top
+! from Adguard
+overclockers.ru##h4.header.left.aligned
+! from Adguard
+overclockers.ru#?#div[itemprop="articleBody"] > h4:contains(реклама)
+! from Ru AdList
+overclockers.ru##h4.left.aligned.divider.header ~ .divider
+! from Ru AdList
+overclockers.ru##h4.left.aligned.divider.header
+
+! from Adguard
+overclockers.ru##div.pip-right-inner.first-news
+! is in Adguard
+overclockers.ru##.material-other-feed
+! from Adguard
+overclockers.ru##.topadvert-wrap
+! from Adguard
+forums.overclockers.ru##div[style^="text-align:center;"] > div[id^="yandex_ad_"]
+! from Ru AdList
+forums.overclockers.ru##div[style="border: 1px solid #ccc; margin: 5px 0; text-align:center; background-color: #d9e5f1; font-size:20px; font-weight:bold;padding:10px"]
+! from Adguard
+overclockers.ru##body > div.center > a[target="_blank"] > img
+! from Adguard
+overclockers.ru#?#.column > div.grid:has(> div[class] > div[class^="an-block-"])
+! from Adguard
+forums.overclockers.ru#?##pagecontent > table.tablebg:has(> tbody > tr > td.profile_username > b.postauthor:contains(Реклама)):has(> tbody > tr > td.profile:contains(Партнер))
+! from Ru AdList
+overclockers.ru##.main-wrap > .grid.ui > div[style="display: block;"]
+    ! logos
+!||overclockers.ru/assets/asus_logo_blue.png  # _logo_$image rule
+! from Ru AdList
+forums.overclockers.ru##td > #logo
+forums.overclockers.ru*/logo_forum.gif  # from Ru AdList
+    ! socials
+! from Ru AdList
+overclockers.ru#?#.column > .ui:has(> [class]:not(.pip-soci) > #vkRoot)
+! from Adguard
+overclockers.ru#?#body > div[class="ui container main-wrap"] > div[class="ui grid"] > div[class="five wide column"] > div[class="ui grid"]:has(> div > div#vkRoot)
+! from Adguard
+overclockers.ru#?#.five.column > div.right-content-wrap > div.container-block:has(> div#vkRoot)
+! from Adguard
+overclockers.ru#?#.five.column > div.grid > div.container-block:has(> div#vkRoot)
+!
+! from Ru AdList
+overclockers.ru#?#.column > .ui:has(> [class]:not(.pip-soci) > .faceLink)
+! from Adguard
+overclockers.ru#?#.five.column > div.right-content-wrap > div.container-block:has( > div.faceLink)
+!
+! from Ru AdList and Adguard
+overclockers.ru##.pip-soci
+! from Ru AdList and Adguard
+overclockers.ru##.soci-link
+! from Ru AdList
+overclockers.ru##[data-tab="commentsVK"]
+    ! other
+overclockers.ru##div.right-blog-wrap.container-block.aligned.center.column.wide.sixteen
+overclockers.ru##.donate-author-link
+overclockers.ru##.asus.item
+overclockers.ru##.comments-feed
+overclockers.ru##.spinner
+overclockers.ru##.segment
+! from Ru AdList
+overclockers.ru##.top-scroll
+!
+! from Ru AdList
+overclockers.ru###otherPageContent > .ui > .column > .divided
+! from Ru AdList
+overclockers.ru#?##otherPageContent > #comments ~ .ui > .column:has(.divided > .material-near-feed)
+!
+! from Ru AdList
+overclockers.ru##.main-wrap > .grid.ui > .sixteen.wide.column.container-block
+! from Adguard
+overclockers.ru#?#.main-wrap > div.grid > div.container-block:has(> div > div > div.an-block-desc)
+! from Ru AdList
+overclockers.ru##.right-blog-wrap
+! from Ru AdList
+overclockers.ru##.hostkey
+    ! from Adguard
+    !overclockers.ru##.item.hostkey
+!
+! from Ru AdList
+forums.overclockers.ru###datebar
+! from Ru AdList
+forums.overclockers.ru##tr > td[valign="top"][width="100%"] ~ td[style^="max-width"]
+! from Ru AdList
+forums.overclockers.ru##tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"]
+! from Adguard
+forums.overclockers.ru###pagecontent > table.tablebg+div[style^="border: 1px solid #ccc; margin: 5px 0; text-align:center; background-color: #d9e5f1;"]
+!
+! from Adguard
+forums.overclockers.ru#@##yandex_ad_1
+! from Adguard and EasyList
+forums.overclockers.ru#@#div[id^="yandex_ad"]
+
+overclockers.ru#$?#.material-inline-an { remove: true; }  # from Adguard
+overclockers.ru#$?#.material-other-feed { remove: true; }  # from Adguard
+    ! from Ru AdList
+    !overclockers.ru##.material-other-feed
+
+
+!
+! overclockers.ru site news and blogs are flooded with pro-kremlin low quality propaganda. Let's clean it.
+!
+! bot-like news
+overclockers.ru##.article-wrap:has(a[href="/world/show/"])
+overclockers.ru##.event:has(a[href^="/world/show/"])
+overclockers.ru##.newsline-item:has(a[href^="/world/show/"])
+overclockers.ru##.newsline-item:has(a[href^="/world/show/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/world/show/"])
+! corp ads
+overclockers.ru##.article-wrap:has(a[href="/itnews/show/"])
+overclockers.ru##.event:has(a[href^="/itnews/show/"])
+overclockers.ru##.newsline-item:has(a[href^="/itnews/show/"])
+overclockers.ru##.newsline-item:has(a[href^="/itnews/show/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/itnews/show/"])
+!
+!! redactors
+! bot-like news
+overclockers.ru##.newsline-item:has(a[href="/author/show/Михаил Андреев"])
+overclockers.ru##.newsline-item:has(a[href="/author/show/Михаил Андреев"]) + .material-comments
+! corp ads and reflinks
+overclockers.ru##.newsline-item:has(a[href="/author/show/Фома Шилов"])
+overclockers.ru##.newsline-item:has(a[href="/author/show/Фома Шилов"]) + .material-comments
+overclockers.ru##.event:has-text(/Aliexpress/i)
+overclockers.ru##.mobile-hide-news:has-text(/Aliexpress/i)
+!
+!! bots
+overclockers.ru##.article-wrap:has(a[href="/blog/TEXHAPb"])
+overclockers.ru##.event:has(a[href^="/blog/TEXHAPb/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/TEXHAPb/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/TEXHAPb/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/TEXHAPb/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/ProKino"])
+overclockers.ru##.event:has(a[href^="/blog/ProKino/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/ProKino/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/ProKino/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/ProKino/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/AngryLibrarian"])
+overclockers.ru##.event:has(a[href^="/blog/AngryLibrarian/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/AngryLibrarian/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/AngryLibrarian/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/AngryLibrarian/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/Razg0n_blog"])
+overclockers.ru##.event:has(a[href^="/blog/Razg0n_blog/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Razg0n_blog/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Razg0n_blog/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/Razg0n_blog/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/amv212"])
+overclockers.ru##.event:has(a[href^="/blog/amv212/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/amv212/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/amv212/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/amv212/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/Technoblog"])
+overclockers.ru##.event:has(a[href^="/blog/Technoblog/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Technoblog/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Technoblog/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/Technoblog/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/Fantoci"])
+overclockers.ru##.event:has(a[href^="/blog/Fantoci/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Fantoci/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Fantoci/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/Fantoci/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/Zeroblog"])
+overclockers.ru##.event:has(a[href^="/blog/Zeroblog/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Zeroblog/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Zeroblog/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/Zeroblog/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/RoadToKnowledge"])
+overclockers.ru##.event:has(a[href^="/blog/RoadToKnowledge/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/RoadToKnowledge/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/RoadToKnowledge/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/RoadToKnowledge/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/Deep_FPGA"])
+overclockers.ru##.event:has(a[href^="/blog/Deep_FPGA/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Deep_FPGA/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Deep_FPGA/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/Deep_FPGA/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/Zelikman"])
+overclockers.ru##.event:has(a[href^="/blog/Zelikman/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Zelikman/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Zelikman/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/Zelikman/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/DenebCore"])
+overclockers.ru##.event:has(a[href^="/blog/DenebCore/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/DenebCore/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/DenebCore/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/DenebCore/"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/RaddaR"])
+overclockers.ru##.event:has(a[href^="/blog/RaddaR/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/RaddaR/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/RaddaR/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/RaddaR/"])
+
+
+
+! from Ru AdList
+overclockers.ru##.top-menu ~ .main-wrap.container > .grid.ui > .row.container-block
+! from Ru AdList
+overclockers.ru#?#div:has(> #fixScrollPip)
+! from Ru AdList
+overclockers.ru#?#div:has(> .an-link-list)
+! from Ru AdList
+overclockers.ru##div[class*="__lxG__"]
+! from Ru AdList
+overclockers.ru##img[src^="https://overclockers.ru/st/images/partners/"]
+! from Ru AdList
+forums.overclockers.ru#?#table > tbody > tr:-abp-has(> [class^="profile"]:-abp-contains(/РџР°СЂС‚РЅРµСЂ|Р РµРєР»Р°РјР°/))
+! from Ru AdList
+overclockers.ru#?#.an-link-list:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
+! from Ru AdList
+overclockers.ru#?#.main-wrap > .grid.ui > .sixteen.wide.column.container-block:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
+! from Ru AdList
+overclockers.ru#?#.material-inline-an:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
+! from Ru AdList
+forums.overclockers.ru#?#tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"]:style(color: #004488 !important; font-weight: 200 !important)
+
+! from Ru AdList
+overclockers.ru##body > div[class][style*="margin-"]
+
+! from Ru AdList
+overclockers.ru#?#.an-link-list:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
+! from Ru AdList
+overclockers.ru#?#.main-wrap > .grid.ui > .sixteen.wide.column.container-block:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
+! from Ru AdList
+overclockers.ru#?#.material-inline-an:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
+! from Ru AdList
+forums.overclockers.ru#?#tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"]:style(color: #004488 !important; font-weight: 200 !important)
+
+! from Ru AdList
+overclockers.ru##.an-link-list:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
+! from Ru AdList
+overclockers.ru##.main-wrap > .grid.ui > .sixteen.wide.column.container-block:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
+! from Ru AdList
+overclockers.ru##.material-inline-an:style(position: fixed !important; top: -10000px !important; left: -10000px !important)
+! from Ru AdList
+forums.overclockers.ru##tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"]:style(color: #004488 !important; font-weight: 200 !important)
+
+! from Ru AdList
+overclockers.ru##a.over-hiddenlink-html[href*="citilink.ru"]:style(pointer-events: none !important; color: inherit !important)
+
+! from Ru AdList
+overclockers.ru##a.over-hiddenlink-html[data-link*="citilink.ru"]:style(pointer-events: none !important; color: inherit !important)
+
+! from Ru AdList
+overclockers.ru##a.over-hiddenlink-html[data-link*="regard.ru"]:style(pointer-events: none !important; color: inherit !important)
+
+
+
+
+! overclockers.UA is also here
+||overclockers.ua/branding.css  # from Adguard
+
