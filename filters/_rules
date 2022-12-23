@@ -1398,7 +1398,12 @@ _rebid.js  # from EasyList
     ||market.yandex.ru/widget/$third-party,script  # from Ru AdList
 !/widget.min.js$important,domain=~sbis.ru
 /widget-a-b.js  # from Ru AdList
-/widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~dns-shop.ru|~domclick.ru|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
+/widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~banki.ru|~dns-shop.ru|~domclick.ru|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
+    ! Exclusions:
+    ! banki.ru - currency courses (first-party)
+    ! 
+    ! In the most cases this rule is very useful. But maybe remake it to 3p?
+    !
 /wp-banners.js$important
 @@||embedly.com/widgets/
 ||/wp-content/*/ad-*$script,important  # disable exclusion from Fanboy’s Enhanced Tracking List
@@ -1486,7 +1491,10 @@ _rebid.js  # from EasyList
     !##.ad-unit
     ! is in EasyList
     !##.ad-wide
-~babyblog.ru,~blokada.org,~cnn.com,~dirteam.com,~domclick.ru,~youtube.com##[class*="-ad-"]:not(html):not(body):not(article):not([class*=page-wrapper])
+~babyblog.ru,~blokada.org,~cnn.com,~dirteam.com,~domclick.ru,~nextdns.io,~youtube.com##[class*="-ad-"]:not(html):not(body):not(article):not([class*=page-wrapper])
+    ! Exclusions:
+    ! nextdns.io - it needs recheck later  https://help.nextdns.io/category/privacy-blocklist-ad-blocking : "posting topic-summary -cat-privacy-blocklist-ad-blocking js-topic-summary -article -r1 -unread"
+    !
     ! from EasyList
     ##.ytp-ad-progress-list
 ~afisha.ru,~ansible.com,~cnn.com##[id*="-ad-"]:not(html):not(body):not(article)
