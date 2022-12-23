@@ -253,6 +253,8 @@ $removeparam=/^etcc_/
     ! marketing.net.idealo-partner.com$removeparam=etcc_med  # from Adguard
     ! marketing.net.idealo-partner.com$removeparam=etcc_produkt  # from Adguard
 
+$removeparam=famad_xuid  # from Adguard
+
 $removeparam=fb_action_ids  # Facebook general parameter # from NeatURL and Adguard
 $removeparam=fb_action_types  # Facebook general parameter  # from NeatURL and Adguard
 $removeparam=fb_comment_id  # from Adguard
@@ -263,12 +265,13 @@ $removeparam=fref  # from Ru AdList
 
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
-$removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~sberbank.ru|~tradingview.com
+$removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~nextdns.io|~sberbank.ru|~tradingview.com
     ! Exceptions:
     ! auth.mail.ru exception is from Ru AdList. Don't know, but ok. Update: removing it prevent useful popups, so it's really ok.
     ! account.mail.ru - v2 of it (auth.mail.ru)
-    ! yandex, sberbank.ru - don't remember exactly, but they are definitely needed
+    ! nextdns.io - #53: dashboard (https://api.nextdns.io/profiles/)
     ! tradingview.com - graphs: !wss://data.tradingview.com/socket.io/websocket?from=symbols%2FBTCUSD%2F&date=
+    ! yandex, sberbank.ru - don't remember exactly, but they are definitely needed
     !
     ! /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru  # from Ru AdList
     ! 3dnews.ru$removeparam=from
@@ -2273,3 +2276,9 @@ mydirtyhobby.com$removeparam  # from Adguard: lp.mydirtyhobby.com$removeparam
 basketballking.jp$removeparam=cx_art  # from Adguard
 
 cinematoday.jp$removeparam=g_clk  # from Adguard
+
+seek.com.au$removeparam=type
+
+dhgate.com$removeparam=|dspm|resource_id|scm_id
+
+msn.com$removeparam=li
