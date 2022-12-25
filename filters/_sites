@@ -3617,6 +3617,11 @@ buymeacoffee.com$3p  # ad popups  # domain should not be blocked, see #19 and #5
 buzzfeednews.com##.newsblock-header
 buzzfeednews.com##.sticky-header
 
+    ! top
+bvedomosti.ru##.bv-header
+bvedomosti.ru##.bv-bar
+    ! other
+
 ||bvf.ru/listen/
 ||bvf.ru/upchk/  # from Adguard
 sp.bvf.ru##.send_quest
@@ -14420,6 +14425,15 @@ nexustours.com##.banner__center
 
 neziskovky.cz##.master-banner
 
+    ! banners and promos
+||ng.kz/images/library/news_lenta/2016/03/22/blagotv_2.png
+||ng.kz/images/library/chance-inform.png
+||ng.kz/images/library/telegram-1.png   # too big
+||unionstandardbank.com/*.gif  # external gif banners
+    ! other
+ng.kz###header
+ng.kz##.widget-ncomm
+
 nginx.com##.nginx-logo-footer
 
 nice.de##.cd-top
@@ -16279,6 +16293,16 @@ pohodmsk.ru##.fa-youtube-play
 pointdev.com###download
 pointdev.com##h1
 pointdev.com###menu_logiciels_faq
+
+    ! banners and promos
+||poiskvps.ru/images/*.svg$image  # gif banners
+poiskvps.ru##noindex
+poiskvps.ru##a[href^="./g-o.php"]
+||poiskvps.ru/images/screenshots/$image
+||poiskvps.ru/images/companies/$image
+    ! other
+! totop
+poiskvps.ru###UpDiv.UpDiv
 
 ||pokatashkin.com/wp-content/uploads/2015/02/pattern.png
 
@@ -23426,6 +23450,15 @@ vsanuzel.ru###link-top:style(position:static !important)
 vsanuzel.ru##.menu-thumb
 vsanuzel.ru##.ust-ban
 
+    ! top
+||vsatke.ru/*/bgtop.jpg
+||vsatke.ru/images/headerlogo.png
+vsatke.ru###zo2-main-header-wrap
+    ! banners and promos
+vsatke.ru##.bannergroupsmalltitle
+||vsatke.ru/foto8/mechet_2018.png
+    ! other
+
     ! cookie popup
 ||vsaunah.ru/*/warning.js
 vsaunah.ru##.coo_wclose_outer
@@ -26397,3 +26430,60 @@ send.cm##.marker-primary
 
 ! inline related
 networkworld.com##aside.fakesidebar
+
+||au.ru/auctioninformer/  # from Ru AdList
+
+zamena-podshipnikov.ru##.header-wr:style(position:static !important)
+! seo
+zamena-podshipnikov.ru###site-navigation-footer
+
+! already blocked
+    ! site blocks copypaste
+bitpump.ru$inline-script
+bitpump.ru##+js(ra,onmousedown)
+bitpump.ru##+js(ra,onkeypress)
+    ! other
+bitpump.ru###hyipgosite
+
+||bryansktoday.ru/images/unknownuser2.png
+bryansktoday.ru##aside.module:has-text(Последние комментарии)
+
+! regional news network of several sites
+nsday.ru##.woch.nl-wrapper
+perevolockday.ru##.woch.nl-wrapper
+orenday.ru##.horoscope-list-main
+!seo
+buzulukday.ru,nsday.ru,orenday.ru,perevolockday.ru,saltday.ru,sorochinskday.ru##.bottomcol-3
+
+||naurfo.ru/*/naurfo.ru.jpg  # default news img
+||naurfo.ru/images/news/diagnoz/$image  # banners
+naurfo.ru###header
+
+theoplayer.com##.blog-subscription
+theoplayer.com##.header__sticky-element:style(position:static !important)
+theoplayer.com##.footer__form
+
+||gdz-online.ws/favicon.svg
+
+uff.uz##.navigation-content__logotype
+uff.uz##.footer-content__info
+uff.uz##.footer-content__rate
+uff.uz##.branding-box
+
+||express-prigorod.ru/upload/images/slider/
+express-prigorod.ru##.slider
+
+house.kg###business-slider-block
+
+fuzz-magazine.ru##.pic:has(img[src*="/news_default_"])
+fuzz-magazine.ru##.menuBlock:style(position:static !important)
+||piter.tv/img/news_default_
+
+dtpptz.ru##.feed-date
+dtpptz.ru##.no-gutters
+
+||krysha.kg/static/clientapp/
+krysha.kg##.h-top-branding
+krysha.kg##.c-app-banner
+krysha.kg##.l-footer__bottom
+krysha.kg##.c-listing__banner
