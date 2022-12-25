@@ -2101,7 +2101,9 @@ _tizers.  # from Ru AdList
 .viptizer.  # from Ru AdList
 /viptizer.  # from Ru AdList
 ! .media_image-field - Drupal images
-~geeks.hu,~irecommend.ru,~metro-cc.ru,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
+~geeks.hu,~irecommend.ru,~metro-cc.ru,~ua-independent.com,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
+    ! Exclusions:
+    ! ua-independent.com - normal, non-ad news: "itemteaser teaser_title"
 ##[id*=teaser]
     ! ##.b-content__section_teasers
     ! au.ru###header-teaser
@@ -3016,6 +3018,7 @@ _wtInit.js  # from Fanboy's
 ###button_up
 ##.button_up
 ##.button__up
+##.but-top
 ###butt_up
 ##.bxr-button-up
 ##.cd-top
@@ -3754,6 +3757,7 @@ _snowstorm-min.js  # from Ru AdList
 ##.age-limitation
 ##.age_rate
 ##.age-rating
+##.age-restriction
 ##.contacts-age
 ##.eighteen
 ##.field-name-field-age-rating
@@ -3765,6 +3769,7 @@ _snowstorm-min.js  # from Ru AdList
 ##.min-age
 ##.nui-pg18
 ##.plus18
+##.plus-18
 ##.rating-18
 ##.ww-18-plus
 
