@@ -16,9 +16,15 @@
 
 !! domains
 
+a.ki  # from Adaway: fl.a.ki  # "digital advertising campaigns"
+
 a013.com  # from Adguard
 
 a1000k.com  # seems parked now  # from Ru AdList: ||a1000k.com/button.php
+
+a14refresh.com  # from EasyList
+
+a14tdsa.com  # from EasyList
 
 a1webstats.com  # A1Webstats - Tracker  # from Quidsup NoTrack-Blocklist
 
@@ -38,7 +44,13 @@ a2pub.com  # from MVPS
 
 a2ure.work  # ad redirects  # "Cannot get /" root
 
-a2z.com  # empty root  # from Adguard: prod.entry.video-ads.a2z.com
+a2z.com  # empty root  # from Adguard: prod.entry.video-ads.a2z.com  # from Adaway: many subdomains
+!+  aws.a2z.com
+!+      console.aws.a2z.com
+!+          analytics.console.aws.a2z.com
+!+  video.a2z.com
+!+      insights.video.a2z.com
+!+          telemetry.insights.video.a2z.com
 !+  video-ads.a2z.com
 ! end of a2z.com
 
@@ -62,8 +74,6 @@ a-5.info  # from GoodbyeAds
 
 a5a5a.com  # from Adguard
 
-a6f845e6c37b2833148.com  # from Adguard  # zombie  # Checked:2022-11-20
-
 a7cleaner.com  # from Dan Pollock's hosts file
 
 a8.net  # from MobileAdTrackers
@@ -75,22 +85,27 @@ a8a8altrk.com  # from Peter Lowe's hosts file
 
 a9.com  # from Malvertising filter list by Disconnect
 
+a-94interdads.com  # from EasyList
+
 aaacompany.net  # from Adguard
 
 aaaecommerce.com  # from The SNAFU Blocklist
 
 aaam.fr  # from Dan Pollock's hosts file
 
-aab-check.me  # from Antipopads-re
+aab-check.me  # from Antipopads-re and EasyList
 
 aabd.ru$all  # from Ru AdList
 
 aab-proxy-tests.top  # from EasyList
 aabproxytests.top  # from EasyList
+aabproxytestsdomain.top  # from EasyList
 
 aac-lyon.fr  # from Dan Pollock's hosts file
 
 aaddcount.com  # from Adguard
+
+aaddhlcn.com  # from EasyList
 
 aaddzz.com  # from Peter Lowe's hosts file
 
@@ -112,6 +127,8 @@ aapsis.com  # from Adguard
 
 aarki.com  # from MobileAdTrackers
 
+aarki.net  # from Adaway  # no root
+
 aaronautosandtrucks.com  # from GoodbyeAds
 
 aaronwestbrook.com  # from GoodbyeAds
@@ -124,19 +141,20 @@ aarth.com  # from GoodbyeAds
 
 aarth.net  # from Dan Pollock's hosts file
 
+aatkit.com  # from Adaway  # 504 root
+
 aaucwbe.com  # from GoodbyeAds
 
 aaukg.ru  # from GoodbyeAds
 
-aavconstructionllc.com  # from GoodbyeAds  # Checked:2022-11-13
-
 aax.media  # from Blogscan
 
-aaxads.com
+aaxads.com$important  # is in ABP
+aaxads.com.edgekey.net  # from Adaway
 
-aaxdetect.com  # from Peter Lowe's hosts file
+aaxdetect.com$important  # from Peter Lowe's hosts file
 
-aaxwall.com  # from Adguard and EasyPrivacy
+aaxwall.com$important  # from Adguard, EasyPrivacy, ABP
 
 ab1n.net  # from EasyList
 
@@ -170,9 +188,11 @@ abbeyblog.me  # from Antipopads-re
 
 abbgrysbok.store  # from EasyList
 
+abbine.com  # from EasyList
+
 abbottclix.com
 
-abbp1.com  # from Antipopads-re
+abbp1.com  # from Antipopads-re  # Checked:2022-12-04
 
 abbp1.pw  # from Antipopads-re
 
@@ -196,8 +216,6 @@ abchina.fr  # from Dan Pollock's hosts file
 
 abcjmp.com  # from MVPS
 
-abclistor.ovh  # zombie  # Checked:2022-11-20
-
 abclnks.com   # from Dan Pollock's hosts file
 
 abcnewspro.com  # from Adguard
@@ -214,9 +232,7 @@ abctrcker.com  # from GoodbyeAds
 
 abcvideo.cc$all  # from EasyList
 
-abdaubda.com$all  # from Ru AdList
-
-abdittoan.com$all  # from uBlock filters  # Checked:2022-11-20
+abdaubda.com$all  # from Ru AdList  # Checked:2022-12-04
 
 abebooks.com  #[WebBug.eluminate]  # from MVPS
 
@@ -232,7 +248,9 @@ abetting.net  # from GoodbyeAds
 
 abgeobalancer.com  # from Antipopads-re
 
-abi.run  # from GoodbyeAds
+abh.jp  # from EasyList
+
+abi.run  # from GoodbyeAds  # Checked:2022-12-23
 
 abisko.ru  # cleantalkorg
 
@@ -260,10 +278,7 @@ aborld.com  # from uBlock filters and EasyList
 
 abortmaydesirable.com  # from Antipopads-re
 
-abough.com  # from Adguard
-abough.com  # from EasyList
-
-abourselfi.com  # from Dan Pollock's hosts file and Ru AdList  # Checked:2022-11-04
+abough.com  # from Adguard and EasyList
 
 aboutads.info$important  # aboutads
 
@@ -296,7 +311,7 @@ above.net
 
 abovealloffers.com  # consumerzoneusa.com
 abovetrack.com  # consumerzoneusa.com
-abovetrk.com  # consumerzoneusa.com
+abovetrk.com  # consumerzoneusa.com  # Checked:2022-12-16
 
 abovemarket.com  # shopify ad scripts
 
@@ -416,8 +431,11 @@ accesstrade.com.vn
 accesstrade.net  # from Adguard
 accesstrade.co.id  # from Adguard
 accesstrade.in.th  # from https://github.com/kowith337/ThaiParanoidBlock/
+accesstrade.vn  # from Adaway
 
 acc-hd.de  # from Adguard
+
+acches.com  # from EasyList
 
 accio.ai  # from Adguard
 
@@ -437,8 +455,6 @@ account-identifiant.com  # from GoodbyeAds
 
 accountkit.com  # https://xakep.ru/2018/07/02/android-231/  # https://clinetworking.com/2018/06/03/1984-called/
 
-accountnotify.com  # from GoodbyeAds  # Checked:2022-11-20
-
 accounts.mx  # from GoodbyeAds
 
 accountsdead.com  # from EasyList
@@ -450,7 +466,7 @@ accountviewlpl.com  # zombie
 acdcdn.com  # from Adguard  # is in EasyList
 achcdn.com  # from Adguard
 acscdn.com  # from Adguard
-ahscdn.com  # from Adguard
+ahscdn.com  # from Adguard  # is in EasyList and iam-py-test's anti-redirectors
 acdnpro.com  # zombie
 !+  r.acdnpro.com
 !+    falconv.r.acdnpro.com
@@ -493,8 +509,6 @@ achilles-ena.com  # from Adguard
 acid-adserver.click  # from Peter Lowe's hosts file
 
 acint.net$important
-
-acinuf.com  # from GoodbyeAds  # Checked:2022-11-05
 
 ! see ack.net in _marketing_appnexus
 
@@ -687,6 +701,8 @@ acuityplatform.com  #aboutads.info  # is in Peter Lowe’s Ad and tracking serve
 
 aculo.fr  # from Dan Pollock's hosts file
 
+acults.com  # from EasyList
+
 ac-versdailles.fr  # from Dan Pollock's hosts file
 
 acxiom.com$important  # from Blogscan  # "Identity Solution & People-Based Marketing"
@@ -711,11 +727,7 @@ aeclick.com  # from GoodbyeAds
 
 aedgency.com  # aedgency
 
-aeer-cpa.com$important  # "CPA-сеть aeer-cpa.com"  # Checked:2022-10-23
-
 aektschen.de  # from Dan Pollock's hosts file
-
-aelick.com  # from GoodbyeAds  # Checked:2022-11-13
 
 aemedia.ru  #adwatch.ru
 
@@ -746,6 +758,8 @@ aerserv.com  # from Peter Lowe's hosts file
 aes01.com  # from GoodbyeAds
 
 aesinv.com  # from GoodbyeAds  # Checked:2022-11-04
+
+aetnd.com  # from Adaway: pulse.svod.aetnd.com, insights.vip.aetnd.com  # 404 root  # "Copyright © 2001-2008 NeuStar, Inc."
 
 af1.bz  # ad scripts and no root
 
@@ -819,7 +833,7 @@ affen.at  # from GoodbyeAds
 
 affex.org  # from Adguard
 
-affforce.com  # from GoodbyeAds
+affforce.com$all  # from GoodbyeAds and Adguard
 
 affgadgets.com  # affgadgets.com/giant-lottos
 
@@ -899,7 +913,7 @@ affiliateguarddog.com
 
 affiliateguide.com  # from GoodbyeAds
 
-affiliatehub.co.in  # from GoodbyeAds
+affiliatehub.co.in  # from GoodbyeAds  # Checked:2022-12-04
 
 affiliatelounge.com  # from MVPS
 
@@ -1046,7 +1060,7 @@ affilo.io$important  # ad scripts  # "Create your own affiliate program"
 
 affilotopia.com
 
-affimax.de  # from Adguard
+affimax.de  # from Adguard  # Checked:2022-12-16
 
 affinesystems.com  # from Dan Pollock's hosts file
 
@@ -1083,8 +1097,6 @@ afflat3d1.com  # from GoodbyeAds
 afflift.com  # afflift.com/f/link-directory/adcombo.113/
 
 afflight.biz  # from GoodbyeAds
-
-affluencepaymentlandscape.com  # from GoodbyeAds  # Checked:2022-11-04
 
 affluencesoap.com  # from EasyList
 
@@ -1188,6 +1200,8 @@ afk-i.com  # from GoodbyeAds
 
 aflink.com  # from GoodbyeAds
 
+afm01.com  # from EasyList
+
 afmtrk.net  # 403 root  # ugyplysh.com
 
 afnan-amc.com  # from GoodbyeAds
@@ -1195,8 +1209,6 @@ afnan-amc.com  # from GoodbyeAds
 afnet.jp  # from GoodbyeAds
 
 afora.ru  # from GoodbyeAds
-
-afordi.com  # from GoodbyeAds  # Checked:2022-11-20
 
 afp.ai$important  # ad scripts  # is in Ru AdList  # "contextually relevant advertising"
 
@@ -1221,8 +1233,6 @@ africimmo.com  # from GoodbyeAds
 
 afriflatry.co  # from Adguard
 
-afrigale.co  # from Adguard  # Checked:2022-10-23
-
 afrikad.com  # "de la publicité digitale en Afrique"  # from Adguard
 
 afrimedspecialist.com  # from GoodbyeAds
@@ -1239,6 +1249,8 @@ afsnew.com
 afshanthough.pro  # from Adguard  # zombie
 
 afteen.com  # from EasyList
+
+afterclick.co  # from EasyPrivacy
 
 afterdownload.com  # from Dan Pollock's hosts file
 
@@ -1270,6 +1282,8 @@ afyonturkreklam.com  # from Adguard
 af-z.jp  # from Adguard
 
 aga.in.ua  # from GoodbyeAds
+
+agabreloomr.com$all  # from EasyList
 
 agadum.com  # from EasyList
 
@@ -1329,7 +1343,11 @@ agentology.com
 
 ageore.com  # from EasyList
 
+ageory.com  # from EasyList
+
 ageverify.co$important  # ad scripts  # is in hpHosts’ Ad and tracking servers
+
+aggary.com  # from EasyList
 
 aggemi.eu  # pr0gram.org  # 403 root
 
@@ -1403,8 +1421,6 @@ agriturismoilcascinone.com  # from GoodbyeAds
 
 agro.net.ru  # from Adguard
 
-agroinwestpl.space  # from GoodbyeAds  # Checked:2022-11-20
-
 agrotmissa.com  # from GoodbyeAds
 
 agroturist.com.pl  # from GoodbyeAds
@@ -1457,6 +1473,8 @@ ahtate.ru  # from GoodbyeAds
 ahuano.com  # from GoodbyeAds
 
 ahvclick.com  # from EasyList
+
+ahyvmx.com  # from Ru AdList
 
 ai.me  # from GoodbyeAds
 
@@ -1532,8 +1550,6 @@ aino2.com  # from EasyList
 
 ainsyndication.com  # from Adguard
 
-aintere.com  # from Ru AdList  # Checked:2022-10-23
-
 aio.media
 !+  dev.aio.media
 !+  sb.aio.media
@@ -1597,7 +1613,6 @@ aj1058.online  # from Adguard
 aj1070.online  # from EasyList
 aj1090.online  # from Adguard
 aj1110.online  # from uBlock filters
-aj1354.online  # from GoodbyeAds  # Checked:2022-11-13
 aj1408.online  # from GoodbyeAds
 aj1431.online  # from GoodbyeAds
 aj1432.online  # from Adguard
@@ -1616,7 +1631,7 @@ aj1867.online  # from GoodbyeAds
 aj1907.online$important  # from Adguard
 aj1913.online  # from Adguard
 aj1985.online  # from GoodbyeAds
-aj2021.online  # from Ru AdList
+aj2021.online  # from Ru AdList  # Checked:2022-12-16
 aj2031.online  # from EasyList
 aj2113.online$important  # ad scripts  # is in Ru AdList
 aj2142.online  # from GoodbyeAds
@@ -1657,7 +1672,7 @@ ajillionmax.com  # from Adguard
 
 ajisushigrill.com  # from GoodbyeAds
 
-ajkelra.com  # from Adguard
+ajkelra.com  # from Adguard  # Checked:2022-12-23
 
 ajkrls.com  # from GoodbyeAds
 
@@ -1672,8 +1687,6 @@ ajrkm.link  # from GoodbyeAds
 ajservice.de  # from GoodbyeAds
 
 ajshjbmircwlh.me  # from GoodbyeAds
-
-ajtctiiiaz.com  # ad scripts  # is in EasyList  # zombie  # Checked:2022-11-20
 
 ajuguete.com  # from GoodbyeAds
 
@@ -1720,15 +1733,13 @@ akcer.cz  # from GoodbyeAds
 
 akcjasgk.pl  # from GoodbyeAds
 
-akcrdstmn.xyz  # from GoodbyeAds
+akcrdstmn.xyz  # from GoodbyeAds  # Checked:2022-12-04
 
 akdbr.com  # from EasyList
 
 akdvidyalaya.com  # from GoodbyeAds
 
 akemretheb.top  # from GoodbyeAds
-
-akhtanjt.xyz  # from GoodbyeAds  # Checked:2022-11-20
 
 akiba-anime.com  # from GoodbyeAds
 
@@ -1758,8 +1769,6 @@ akiwi.ru  # from Ru AdList
 akktis.com  # from GoodbyeAds
 
 akkubuy.de  # from GoodbyeAds
-
-akkukaufen.at  # from GoodbyeAds  # Checked:2022-11-20
 
 akku-laden.at  # from GoodbyeAds
 
@@ -1812,8 +1821,6 @@ akwam.to  # ad scripts (adblock detection)
 
 al4a.com  # from GoodbyeAds
 
-alabamabackpage.com  # from GoodbyeAds  # Checked:2022-10-23
-
 alabamaballdrop.com  # from GoodbyeAds
 
 alabirambulance.com  # from GoodbyeAds
@@ -1824,7 +1831,7 @@ alamosupply.com  # from GoodbyeAds
 
 alamuk.com  # from GoodbyeAds
 
-alandenz.dk  # from GoodbyeAds
+alandenz.dk  # from GoodbyeAds  # Checked:2022-12-16
 
 alanyacilingirbilal.com  # from GoodbyeAds
 
@@ -1842,8 +1849,6 @@ alawachi.net  # from GoodbyeAds
 
 albacross.com$important  # from EasyPrivacy
 
-albado-tech.xyz  # from Adguard  # zombie  # Checked:2022-11-20
-
 albamargroup.com  # from GoodbyeAds
 
 albanypowerexchange.com  # from GoodbyeAds
@@ -1857,8 +1862,6 @@ albertodionigi.it  # from GoodbyeAds
 albertoleather.com  # from GoodbyeAds
 
 albertsgruen.de  # from GoodbyeAds
-
-albiondrugs.com  # from MVPS  # Checked:2022-11-05
 
 alblux.com  # from GoodbyeAds
 
@@ -1880,7 +1883,7 @@ aldeb-zeu.com  # ad scripts
 
 aldik.com  # from GoodbyeAds
 
-aldtec.net.br  # from GoodbyeAds
+aldtec.net.br  # from GoodbyeAds  # Checked:2022-12-04
 
 aleadpay.com
 
@@ -1919,7 +1922,7 @@ alesmail.com  # from GoodbyeAds
 
 alessandraleone.com  # from GoodbyeAds
 
-alexacdn.com  # from Adguard
+alexacdn.com  # from Adguard  # Checked:2022-12-16
 
 alexajstrack.com  # from Adguard
 
@@ -1944,7 +1947,7 @@ alfa-img.com  # from GoodbyeAds
 
 alfainternet.su  # from Ru AdList
 
-alfaiztech.com  # from GoodbyeAds
+alfaiztech.com  # from GoodbyeAds  # Checked:2022-12-16
 
 alfaleads.net$important  # cpa ad network
 
@@ -2049,7 +2052,7 @@ aliprofi.ru  # from Ru AdList
 
 alipromo.com  # from EasyList and Antipopads-re
 
-aliru1.ru  # is in Adguard  # zombie
+aliru1.ru  # is in Adguard  # zombie  # Checked:2022-12-16
 
 alis.io  # root ad redirect
 
@@ -2089,13 +2092,11 @@ alklinker.com  # from EasyList
 
 alktr.com  # idates.com
 
-all24news.net  # zombie  # Checked:2022-11-20
-
 all4spy.com  # from Peter Lowe's hosts file
 
 all4wap.ru  # from GoodbyeAds
 
-all-4you.pl  # from GoodbyeAds
+all-4you.pl  # from GoodbyeAds  # Checked:2022-12-04
 
 allabc.com  # from Adguard
 
@@ -2104,6 +2105,8 @@ all-about-tech.com  # from EasyList
 allaboutthemoney.ro  # from GoodbyeAds
 
 allaboutyouadultyouthservices.com  # from GoodbyeAds
+
+allaccess.com.ph  # from Adaway: ads.allaccess.com.ph  # no root
 
 allactualstories.com  # from GoodbyeAds
 
@@ -2116,8 +2119,6 @@ alladvantage.com  # from GoodbyeAds
 alladvantage.de  # from GoodbyeAds
 
 allalla.com  # from Adguard
-
-allashark.site  # from GoodbyeAds  # Checked:2022-11-13
 
 allbanners.ru  # from Energized Blu
 
@@ -2169,8 +2170,6 @@ allemodels.com  # from Antipopads-re
 
 allenedmonds.com  # from GoodbyeAds
 
-allengao.top  # from GoodbyeAds  # Checked:2022-11-20
-
 allenprepareattic.com  # from GoodbyeAds
 
 allergiques.com  # from GoodbyeAds
@@ -2212,7 +2211,7 @@ alliancehub.com  # "spam bugs"  # from Dan Pollock's hosts file
 
 allianzmarket.biz  # from GoodbyeAds
 
-allibest.com  # from GoodbyeAds
+allibest.com  # from GoodbyeAds  # Checked:2022-12-23
 
 allimpactdesign.com$all  # from Adguard
 
@@ -2250,8 +2249,6 @@ allnews.md  # from GoodbyeAds
 allnokia.ru  # from Ru AdList
 
 allocnie.fr  # from Dan Pollock's hosts file
-
-alloe.xyz  # from GoodbyeAds  # Checked:2022-10-23
 
 allogarages.fr  # from Dan Pollock's hosts file
 
@@ -2300,6 +2297,8 @@ all-player.pl  # from GoodbyeAds
 allpositions.ru  # from Ru AdList
 
 allproblog.com  # from GoodbyeAds
+
+allprofitsurvey.top$all  # from Adguard
 
 allroll.biz  # from Ru AdList
 
@@ -2361,6 +2360,8 @@ alm.com  # omeda, exacttarget
 
 almamedia.fi$important,3p  # from EasyList
 
+almapa2.com$all  # from EasyList
+
 almighty-offers.com  # from GoodbyeAds
 
 almondnetworks.com  # from MVPS
@@ -2369,11 +2370,11 @@ almoslataan.com  # from GoodbyeAds
 
 almosto.com  # from Ru AdList
 
-alnera.eu  # from Adguard  # zombie  # Checked:2022-11-20
-
 alobby-x.eu  # from EasyList
 
 alocdn.com  # from Dan Pollock's hosts file
+
+alogiz.com  # from EasyList
 
 aloha-news.net  # from Antipopads-re
 aloha-news.org  # from EasyList
@@ -2388,7 +2389,7 @@ alooma.com$important  # ad scripts
 
 alovirs.com  # from Antipopads-re
 
-alpha-affiliates.com$important  # ad network (gambling)
+alpha-affiliates.com$important  # ad network (gambling)  # now is in EasyList
 
 alphaload.com  # from GoodbyeAds
 
@@ -2411,8 +2412,6 @@ alpixtrack.com  # from GoodbyeAds
 alpsmarkets.com  # from GoodbyeAds
 
 alsmdb.com  # from Adguard
-
-alsscanblog.com  # ad redirects  # my4offer.com  # zombie  # Checked:2022-11-20
 
 altabold1.com  # from Adguard
 
@@ -2515,13 +2514,13 @@ amateurseite.com  # from GoodbyeAds
 
 amateursexdvd.com  # from GoodbyeAds
 
-amatocanizalez.net  # from GoodbyeAds
+amatocanizalez.net  # from GoodbyeAds  # Checked:2022-12-04
 
 amatrck.com  # from GoodbyeAds
 
 amatrice-partouzeuse.com  # from GoodbyeAds
 
-amaurt.com  # from Antipopads-re
+amaurt.com  # from Antipopads-re  # Checked:2022-12-23
 
 amavalet.com  # from Adguard
 
@@ -2543,7 +2542,7 @@ amazing-date4u.com  # from GoodbyeAds
 
 amazing-dating.com  # from GoodbyeAds
 
-amazing-flirt.life  # from Antipopads-re
+amazing-flirt.life  # from Antipopads-re  # Checked:2022-12-16
 
 amazingjokes.com  # from GoodbyeAds
 
@@ -2640,7 +2639,7 @@ amcdn.vn  # from Adguard
 
 amei.cf  # zombie
 
-amenitypassenger.com  # from GoodbyeAds
+amenitypassenger.com  # from GoodbyeAds  # Checked:2022-12-23
 
 americanclassifiedservices.com  # ad network
 
@@ -2719,11 +2718,11 @@ ammaandha.biz  # from GoodbyeAds
 
 ammapettai.com  # from GoodbyeAds
 
-amnestynanny.com  # from GoodbyeAds  # Checked:2022-11-13
-
 amnet.tw  # from Adguard
 
 a-mo.net$important  # from Adguard
+
+amo.si  # ad redirects and 403 root
 
 amoad.com  # from MobileAdTrackers
 
@@ -2784,8 +2783,6 @@ ampxchange.com
 
 amp-project.pro  # from GoodbyeAds
 
-amsfi.com  # from Adguard  # Checked:2022-11-04
-
 am-smart.ru  # from GoodbyeAds
 
 amt-k.ru  # from GoodbyeAds
@@ -2802,8 +2799,6 @@ amurehotel.mn  # from GoodbyeAds
 
 amuseer.com  # from Ru AdList
 
-amusevar.com  # from Ru AdList  # Checked:2022-11-20
-
 amusive.com  # from GoodbyeAds
 
 amusun.com  # from GoodbyeAds
@@ -2814,9 +2809,9 @@ amwatching.com  # from GoodbyeAds
 
 a-mx.com  # from uBlock filters
 
-amzbr.com  # from Adguard
+amycob.com  # from EasyList
 
-amzcode.net  # zombie  # Checked:2022-11-20
+amzbr.com  # from Adguard
 
 amzuu.com  # from Adguard
 
@@ -2832,13 +2827,11 @@ anaheim.ru  # from Ru AdList
 
 anahtars.com  # from Malvertising filter list by Disconnect
 
-anal.cx  # from GoodbyeAds
+anal.cx  # from GoodbyeAds  # Checked:2022-12-04
 
 anal100000fpp.com  # from GoodbyeAds
 
 anal-acrobats.com  # from GoodbyeAds
-
-anale-seks.nl  # from GoodbyeAds  # Checked:2022-10-23
 
 anal-et-sodomie.com  # from GoodbyeAds
 
@@ -2921,6 +2914,8 @@ analytk.com  # from Adguard
 
 analyze.ly  # from The SNAFU Blocklist
 
+analyzz.com  # from EasyPrivacy
+
 anametrix.com  # ensighten
 !+  gw.anametrix.com
 ! end of anametrix.com
@@ -2996,7 +2991,7 @@ angelfishstats.com  # from Adguard
 
 angelsgroup.org.uk  # from Malvertising filter list by Disconnect: openx.angelsgroup.org.uk  # empty root
 
-angelsofwoves.org  # zombie
+angelsofwoves.org  # zombie  # Checked:2022-12-04
 
 angers-radioloagie.fr  # from Dan Pollock's hosts file
 
@@ -3016,8 +3011,6 @@ animated-company.pro  # from EasyList
 
 anime-free.net  # from Adguard
 
-animeglitchserver10.cloud  # zombie  # Checked:2022-11-20
-
 anime-jl.net  # from uBlock filters
 
 animenime.ru  # from GoodbyeAds
@@ -3031,8 +3024,6 @@ animeyes.ru  # from Adguard
 animi2.com  # from GoodbyeAds
 
 aniview.com$important  # from Peter Lowe's hosts file, MobileAdTrackers, Blogscan
-
-anizablevetor.pro$all  # from Adguard  # Checked:2022-11-05
 
 anketolog.ru  # anketolog
 !+  new.anketolog.ru
@@ -3049,8 +3040,6 @@ anm.co.uk  # Associated Newspapers - Advertising  # from Quidsup NoTrack-Blockli
 anmdr.link  # from EasyList
 
 annalect.com  # from The SNAFU Blocklist
-
-annecy.media  # zombie  # Checked:2022-11-20
 
 annienne.com  # from Ru AdList
 
@@ -3144,6 +3133,8 @@ antirgiocub.com  # from uBlock filters
 antirobotsystem.com  # from EasyList
 
 antivirushub.co$all  # from EasyList
+
+antivirussprotection.com$all  # from EasyList
 
 antmoney.com  # from Ru AdList
 
@@ -3257,7 +3248,7 @@ speedyrhino.co  #apenterprise.io
 
 apepix.com  # from GoodbyeAds
 
-apester.com$important  # also is in Blogscan
+apester.com$important  # also is in Blogscan and Ru AdList
 !+  dasha.apester.com
 !+  demo.apester.com
 !+  infra.apester.com
@@ -3318,7 +3309,7 @@ api-spotify.net  # from GoodbyeAds
 
 apitech.ru  # "AffTomat is a game distribution system for all kinds of flash developers. We publish your game in social networks, on partners’ websites"  # from Adguard  # former afftomat
 
-ap-jam.com  # from Ru AdList
+ap-jam.com  # from Ru AdList  # Checked:2022-12-04
 
 apk.net  # from MVPS
 
@@ -3524,8 +3515,6 @@ appdynamics.com$important
 
 appearch.info  # from MobileAdTrackers
 
-appelamule.com  # from Adguard  # Checked:2022-11-05
-
 append.pl  # from GoodbyeAds
 
 appendad.com  # from Adguard
@@ -3544,8 +3533,6 @@ appfigures.com
 ! end of appfigures.com
 
 appfireworks.com  # from MobileAdTrackers
-
-appfixing.space  # from Dan Pollock's hosts file  # zombie  # Checked:2022-11-20
 
 appflood.com  #atracking-auto.appflood.com  #i.appflood.com
 !+  atracking.appflood.com
@@ -3580,6 +3567,8 @@ appitate.com$important
 appjiagu.com  # from GoodbyeAds
 
 appjolt.com  # from Adguard
+
+appleads-trk.com  # from Adaway  # no root
 
 appleadwords.net  # from GoodbyeAds
 
@@ -3624,6 +3613,7 @@ applogy.com  # from GoodbyeAds  # Checked:2022-11-04
 applovefrom.com  # from Adguard
 
 applovin.com$important  # ad network  # applovin
+applovin.com.edgekey.net  # from Adaway
 
 applvn.com  # 404 root  # from Dan Pollock's hosts file
 
@@ -3714,9 +3704,11 @@ appsfire.net  # from Malvertising filter list by Disconnect
 
 appsflybeta.biz  # from Adguard
 
-appsflyer.club  # from GoodbyeAds
-
 appsflyer.com$important  # "marketing tech stack"
+appsflyer.com.akamaized.net  # from Adaway
+appsflyer.club  # from GoodbyeAds
+appsflyer.tk  # from Adaway
+appsflyersdk.com  # from Adaway
 onelink.me  # ad redirects and root redirects to appsflyer.com
 
 appsgeyser.com  # from GoodbyeAds
@@ -3766,7 +3758,7 @@ appular.com  # from GoodbyeAds
 
 app-us1.com  # ad scripts
 
-appuu.cn  # from GoodbyeAds
+appuu.cn  # from GoodbyeAds  # Checked:2022-12-16
 
 appvirality.com  # from GoodbyeAds
 
@@ -3829,11 +3821,9 @@ aptimorph.com  # from GoodbyeAds
 
 aptracking1.com  # from GoodbyeAds
 
-aptrafficnetwork.com  # from MVPS
+aptrafficnetwork.com  # from MVPS  # Checked:2022-12-04
 
 aptrinsic.com  # Gainsight PX - Tracker  # from Quidsup NoTrack-Blocklist
-
-aptrk7.com  # zombie  # Checked:2022-11-20
 
 apture.com  # from Peter Lowe's hosts file
 
@@ -3855,7 +3845,7 @@ apxor.com  # from GoodbyeAds
 
 apxtarget.com  # from Adguard
 
-apxy.io  # from Adguard
+apxy.io  # from Adguard  # Checked:2022-12-16
 
 apycdn.com  # actionpay
 apycomm.com$all  # actionpay  # is in Ru AdList
@@ -3875,7 +3865,7 @@ aqcxa.com  # Unknown - Tracker  # from Quidsup NoTrack-Blocklist
 
 aqedsw4.com  # from GoodbyeAds
 
-aqscences.com  # ExactTarget AS22606
+aqscences.com  # ExactTarget AS22606  # Checked:2022-12-16
 
 aqtracker.com  # from Adguard
 
@@ -3903,8 +3893,6 @@ arandomserver.com  # ad redirects and empty root  #ecelticseo.com
 ! end of arandomserver.com
 
 arank.com  # from MVPS
-
-aratyr.com  # from Antipopads-re  # Checked:2022-11-20
 
 arautsod.com  # from Antipopads-re
 
@@ -3948,7 +3936,7 @@ arcor-partner.de  # from Adguard
 
 arcpublishing.com  # Arcpublishing - Advertising  # from Quidsup NoTrack-Blocklist
 
-arcspire.io  # from Blogscan
+arcspire.io  # from Blogscan and Adguard
 
 arcstudiopro.com  # from GoodbyeAds
 
@@ -3972,7 +3960,7 @@ arearmark.club  # from Adguard
 
 areasnap.com  #[Parking.Service]  # from MVPS
 
-a-redirect.com  # from Dan Pollock's hosts file
+a-redirect.com  # from Dan Pollock's hosts file  # Checked:2022-12-23
 
 areka-cake.ru  # from GoodbyeAds
 
@@ -4020,8 +4008,6 @@ arminius.io  # from many lists
 
 armis.tech  # from Blogscan
 
-armlideramber.ru  # from GoodbyeAds  # Checked:2022-11-04
-
 armsart.com  # from Dan Pollock's hosts file
 
 ar-mtch1.com$important  # ad redirects and 404 root
@@ -4061,8 +4047,6 @@ artemisaffiliates.com  # from Adguard
 artfut.com  # from Ru AdList
 
 arthahoonte.biz  # from GoodbyeAds
-
-arthyadtrack.online  # from GoodbyeAds  # Checked:2022-10-23
 
 arthyredir.com  # from GoodbyeAds
 
@@ -4140,6 +4124,8 @@ asextube.net  # from Adguard
 
 as-farm.com  # from Adguard
 
+asforsalesr.one  # from Adguard
+
 asgclickpp.com  # from Antipopads-re
 
 asgust.com  # from EasyList
@@ -4168,7 +4154,7 @@ asiatone.net  # from GoodbyeAds
 
 asiatravel2017.com  # from Adguard
 
-asimad.com  # from Antipopads-re
+asimad.com  # from Antipopads-re  # Checked:2022-12-04
 
 asing.ru$important  # is in AdGuard and RU AdList
 
@@ -4230,7 +4216,6 @@ bypolice.com  # from Dan Pollock's hosts file
 capolice.com  # from Dan Pollock's hosts file
 ccpolice.com  # from Dan Pollock's hosts file
 espolice.com  # from Dan Pollock's hosts file
-frpolice.com  # from Dan Pollock's hosts file  # Checked:2022-11-20
 gapolice.com  # from Dan Pollock's hosts file
 hkpolice.com  # from Dan Pollock's hosts file
 hnpolice.com  # from Dan Pollock's hosts file
@@ -4243,7 +4228,6 @@ lapolice.com  # from Dan Pollock's hosts file
 lapolice.net  # from Dan Pollock's hosts file
 lbpolice.com  # from Dan Pollock's hosts file
 lcpolice.com  # from Dan Pollock's hosts file
-lipolice.com  # from Dan Pollock's hosts file  # Checked:2022-11-05
 lrpolice.com  # from Dan Pollock's hosts file
 lspolice.com  # from Dan Pollock's hosts file
 lvpolice.com  # from Dan Pollock's hosts file
@@ -4276,11 +4260,9 @@ ass4all.com  # from GoodbyeAds
 
 assandart.site  # from Adguard
 
-assantie.com  # from Ru AdList  # Checked:2022-11-13
-
 assembledscout.com  # from GoodbyeAds
 
-assemblyexchange.com  # from EasyList
+assemblyexchange.com  # from EasyList  # Assembly Exchange - Advertising  # from Quidsup NoTrack-Blocklist
 
 assertednodding.com  # from GoodbyeAds
 
@@ -4301,6 +4283,8 @@ assets-cdk.com  # ad scripts and 403 root
 assicuriamoci.net  # zombie
 
 assisteggs.com  # from GoodbyeAds
+
+assistpub.com$important  # empty root  # from ABP
 
 assoc-amazon.com$important  # is in 4 lists
 assoc-amazon.ca  # from Adguard
@@ -4328,11 +4312,13 @@ astaninki2.com  # from Ru AdList
 
 a-static.com  # from Adguard
 
+astatic.site  # from Ru AdList
+
+astato.online  # from Ru AdList
+
 astdn.com$all  # from Ru AdList
 
 astdn.ru  # from Ru AdList
-
-aster18cdn.nl  # from Adguard  # Checked:2022-11-05
 
 asteriresearch.com  # from Adguard
 
@@ -4358,7 +4344,7 @@ astrolabio.net  # from Adguard
 
 astronomytrek.com  # from GoodbyeAds
 
-astro--pacific.com  # from GoodbyeAds
+astro--pacific.com  # from GoodbyeAds  # Checked:2022-12-23
 
 astroscope.ru  # astrology informers
 
@@ -4380,6 +4366,8 @@ atadserver.com  # from Adguard
 
 atatus.com$important  # ad scripts  # is in AdGuard and EasyPrivacy
 
+atcelebitor.com$all  # from EasyList
+
 atcombo.com  # from Antipopads-re
 
 atdmt.com$important
@@ -4392,6 +4380,8 @@ atdmt.speedera.net
 atdnetwork.com  # from Adguard
 
 ateam-ad.jp  # from GoodbyeAds
+
+atedra.com  # from Adaway
 
 atemda.com  # de17a.com  # is in MVPS
 
@@ -4448,6 +4438,8 @@ atonato.de  # from Adguard
 atout-energie-69.com  # from Dan Pollock's hosts file
 
 atp.io$important  # from Adguard and Blogscan
+
+atrafik.ru  # from Ru AdList
 
 atraxio.com  # from Adguard
 
@@ -4558,8 +4550,6 @@ audio-pa-service.de  # from Dan Pollock's hosts file
 
 audiotools.blog  # from uBlock filters
 
-audiovl.com  # zombie  # Checked:2022-11-20
-
 auditude.com  # from MVPS  # closed?
 !+  cdn.auditude.com
 !+  manifest.auditude.com
@@ -4644,7 +4634,6 @@ autodiscover.am
 autodiscover.amsterdam
 autodiscover.army
 autodiscover.ax
-autodiscover.baby  # Checked:2022-11-04
 autodiscover.bayern
 autodiscover.beer
 autodiscover.berlin
@@ -4654,7 +4643,6 @@ autodiscover.blog
 autodiscover.brussels
 autodiscover.by
 autodiscover.bz
-autodiscover.cab  # Checked:2022-11-05
 autodiscover.camera
 autodiscover.capetown
 autodiscover.cards
@@ -4668,7 +4656,6 @@ autodiscover.chat
 autodiscover.ci
 autodiscover.city
 autodiscover.cl
-autodiscover.click  # Checked:2022-11-04
 autodiscover.clothing
 autodiscover.cn
 autodiscover.co
@@ -4715,17 +4702,13 @@ autodiscover.com.vn
 autodiscover.computer
 autodiscover.consulting
 autodiscover.contact
-autodiscover.contractors  # Checked:2022-11-05
 autodiscover.cool
 autodiscover.cr
 autodiscover.credit
-autodiscover.cyou  # Checked:2022-11-04
 autodiscover.cz
 autodiscover.date
 autodiscover.de
 autodiscover.dep.no
-autodiscover.design  # Checked:2022-11-04
-autodiscover.digital  # Checked:2022-11-04
 autodiscover.directory
 autodiscover.dk
 autodiscover.dm
@@ -4755,12 +4738,10 @@ autodiscover.foundation
 autodiscover.fr
 autodiscover.fun
 autodiscover.fyi
-autodiscover.gay  # Checked:2022-11-05
 autodiscover.gdn
 autodiscover.ge
 autodiscover.gg
 autodiscover.gl
-autodiscover.global  # Checked:2022-11-04
 autodiscover.gold
 autodiscover.gov.af
 autodiscover.gov.bm
@@ -4808,7 +4789,6 @@ autodiscover.lib.ee
 autodiscover.lib.ms.us
 autodiscover.life
 autodiscover.lighting
-autodiscover.link  # Checked:2022-11-04
 autodiscover.live
 autodiscover.llc
 autodiscover.loans
@@ -4822,14 +4802,12 @@ autodiscover.management
 autodiscover.market
 autodiscover.marketing
 autodiscover.markets
-autodiscover.mba  # Checked:2022-11-05
 autodiscover.media
 autodiscover.menu
 autodiscover.mg
 autodiscover.miami
 autodiscover.mn
 autodiscover.mobi  # Checked:2022-11-04
-autodiscover.moe  # Checked:2022-11-05
 autodiscover.money
 autodiscover.mortgage
 autodiscover.movie
@@ -4891,7 +4869,6 @@ autodiscover.rs  # Checked:2022-10-18
 autodiscover.ru
 autodiscover.rw
 autodiscover.sale
-autodiscover.sbs  # Checked:2022-11-05
 autodiscover.science
 autodiscover.sex
 autodiscover.sexy
@@ -4907,7 +4884,6 @@ autodiscover.srl
 autodiscover.st
 autodiscover.store  # Checked:2022-11-04
 autodiscover.style
-autodiscover.supply  # Checked:2022-11-05
 autodiscover.surf
 autodiscover.systems
 autodiscover.tattoo
@@ -4921,20 +4897,14 @@ autodiscover.tf
 autodiscover.tg
 autodiscover.tm
 autodiscover.tn
-autodiscover.today  # Checked:2022-11-04
 autodiscover.tours
 autodiscover.toys
 autodiscover.tsk.tr
-autodiscover.tube  # Checked:2022-11-04
-autodiscover.tv  # Checked:2022-11-04
 autodiscover.tw
 autodiscover.ug
 autodiscover.us
 autodiscover.uy
-autodiscover.vc  # Checked:2022-11-04
 autodiscover.video
-autodiscover.vin  # Checked:2022-11-05
-autodiscover.vip  # Checked:2022-11-04
 autodiscover.vu
 autodiscover.watch
 autodiscover.webcam
@@ -5025,10 +4995,6 @@ autoviewz.com  # from GoodbyeAds
 
 autusdigital.com  # from GoodbyeAds
 
-auuayepftovx.com  # from GoodbyeAds  # Checked:2022-11-04
-
-auxaltkft.xyz  # from GoodbyeAds  # Checked:2022-11-13
-
 auxin-box.com  # from Dan Pollock's hosts file
 
 auxml.com
@@ -5046,8 +5012,6 @@ avads.co.uk  # from Adguard
 avalanchers.com  # from Adguard
 
 avandor.com  # "data, tracking, advertising and marketing technologies"  # from MVPS
-
-avanpad.com  # Firefox blocks  # Checked:2022-11-04
 
 avantajados.com  # from uBlock filters
 
@@ -5127,8 +5091,6 @@ avenuea.com  # from Peter Lowe's hosts file and MVPS
 avertise.ru$important
 ! from Ru AdList
 ##a[href*="//avertise.ru/"]
-
-avertscratch.com  # from GoodbyeAds  # Checked:2022-11-04
 
 avfay.com  # from EasyList
 
@@ -5293,6 +5255,8 @@ awspls.com
 
 awstaticdn.net  # from Adguard
 
+awstats.cloud  # from EasyPrivacy
+
 awstrack.me
 !+  ap-south-1.awstrack.me
 !+  ap-southeast-1.awstrack.me
@@ -5310,6 +5274,12 @@ awsurveys.com  # from Adguard
 awzbijw.com  # from Peter Lowe's hosts file
 
 axandra.com  # from EasyList: ||axandra.com/affiliates/  # root 404
+
+axdsz.pro  # is in EasyList
+! from EasyList
+##a[href*=".axdsz.pro/"]
+! from EasyList
+##a[href^="https://axdsz.pro/"]
 
 axecash.com  # from Adguard
 
@@ -5333,6 +5303,8 @@ axiatraders.com  # from GoodByeAds
 
 axill.com  # zombie
 
+axiom.co  # from EasyPrivacy
+
 axiomaticalley.com  # from Peter Lowe's hosts file
 
 axiom-project.eu  # from GoodbyeAds
@@ -5341,19 +5313,13 @@ axioxi.com  # from GoodbyeAds
 
 axis-communications.com  # from GoodbyeAds
 
-axonicanserous.info  # from GoodbyeAds  # Checked:2022-11-04
-
 axonix.com$important  # from MobileAdTrackers, Peter Lowe's hosts file, Blogscan
-
-axp9.com  # from EasyList  # Checked:2022-11-13
-axp9.net$all  # from EasyList  # Checked:2022-11-13
-axp9.org$all  # from EasyList  # Checked:2022-11-13
 
 ay.delivery  # from GoodbyeAds and Adguard
 
 ayads.co$important  # also is in Blogscan
 
-ayandns.com  # from Adguard
+ayandns.com  # from Adguard  # Checked:2022-12-16
 
 ayboll.com  # from Adguard
 
@@ -5401,6 +5367,7 @@ b.link  # from EasyList
 
 b0tnet.com  # from GoodbyeAds
 
+b11stop.com  # from EasyList
 b12stop.com  # from EasyList
 b13stop.com  # from Antipopads-re
 
@@ -5438,9 +5405,9 @@ b4q.ru  # from Ru AdList
 
 b7team.com  # from GoodbyeAds
 
-ba01n.com  # from Antipopads-re
-ba02n.com  # from Antipopads-re
-ba03n.com  # from Antipopads-re
+ba01n.com  # from Antipopads-re  # Checked:2022-12-04
+ba02n.com  # from Antipopads-re  # Checked:2022-12-04
+ba03n.com  # from Antipopads-re  # Checked:2022-12-04
 
 baba-t.com  # from GoodbyeAds
 
@@ -5463,6 +5430,8 @@ babyboomboomads.com  # from Adguard
 baby-channel.ru  # root ad redirect
 
 babyclick.ru  # from Ru AdList
+
+baccelerator.online  # from Ru AdList
 
 bachchpok.com  # from Ru AdList
 
@@ -5494,7 +5463,7 @@ badana.me  # from uBlock filters
 
 badassjv.com  # from MVPS
 
-badazz.org  # from Dan Pollock's hosts file  # zombie
+badazz.org  # from Dan Pollock's hosts file  # zombie  # Checked:2022-12-23
 
 badjocks.com  # from Adguard
 
@@ -5556,6 +5525,8 @@ bak-home.com  # from Dan Pollock's hosts file
 
 bakibarus.com  # from Adguard and Ru AdList
 
+bakjaqa.net$all  # from EasyList
+
 bakteso.ru$important  # is in AdGuard and RuAdlist
 
 bal8ntrk.com  # Performance Tracking - Tracker  # from Quidsup NoTrack-Blocklist
@@ -5593,16 +5564,6 @@ bam-interactive.de  # from Blogscan
 baminw.com.cn  # from GoodbyeAds
 
 bam-x.com$important  # is in AdGuard and EasyPrivacy
-
-ban2mid.com  # from GoodbyeAds  # Checked:2022-10-23
-ban3mid.com  # from GoodbyeAds  # Checked:2022-10-23
-ban4mid.com  # from GoodbyeAds  # Checked:2022-10-23
-ban5mid.com  # from GoodbyeAds  # Checked:2022-11-04
-ban6mid.com  # from GoodbyeAds  # Checked:2022-11-04
-ban7mid.com  # from GoodbyeAds  # Checked:2022-11-04
-ban8mid.com  # from GoodbyeAds  # Checked:2022-11-04
-
-banalyze.net  #i-adv.biz  # zombie  # Checked:2022-11-20
 
 banamertur.com  # from Adguard
 
@@ -5649,6 +5610,8 @@ ban-host.ru$important  # "Сервис баннерной рекламы"
 bannerlot.ru$important
 
 banhq.com  # from Adguard
+
+banibajury.website$all  # from Adguard
 
 bankads.com  # from GoodbyeAds
 
@@ -5811,8 +5774,6 @@ bannersvideo.com  # from Ru AdList
 
 bannerswap.com  # from Peter Lowe's hosts file
 
-bannerswipes.com  # zombie  # Checked:2022-11-20
-
 bannersxchange.com  # from GoodbyeAds
 
 bannersystem.cz  # from GoodbyeAds
@@ -5942,6 +5903,8 @@ bathandbodyworks.com  #[WebBug.eluminate]  # from MVPS
 
 batmobi.net  # from Adguard
 
+batmobil.net  # from Adaway
+
 bauernative.com  # from Adguard
 
 bauerstroy.ru  # from Ru AdList
@@ -5969,8 +5932,6 @@ bazamodov.ru  # from EasyList
 bazazath.com  # from Ru AdList
 
 bazilhan.com  # from Ru AdList
-
-bazore.ru  # zombie  # Checked:2022-11-20
 
 baztrack.com  # from Adguard
 
@@ -6161,7 +6122,7 @@ beautycounter.com  # from GoodbyeAds
 
 beauty-teaser.ru$important
 
-beautytonus.com  # sup24.net
+beautytonus.com  # sup24.net  # Checked:2022-12-23
 
 beaverads.com  # from Adguard
 
@@ -6268,6 +6229,8 @@ beliebtestewebseite.de  # from Adguard
 
 belierlaine.com   # from Dan Pollock's hosts file
 
+beliet.com  # from EasyList
+
 belizetoursunlimited.com  #dingligh.ru
 
 bellmetric.net  # from Adguard: insight.bellmetric.net
@@ -6331,6 +6294,8 @@ benimreklam.com  # from Dan Pollock's hosts file
 
 bentonow.com  # from Adguard
 
+benumelan.com$all  # from EasyList
+
 beop.io  # from Blogscan and uBlock filters
 
 beopinion.com  # is in RU AdList and Fanboy’s
@@ -6359,8 +6324,6 @@ berush.com  # from Adguard
 
 beseed.ru$important  # video ad network
 
-besoes.com  # from GoodbyeAds  # Checked:2022-11-20
-
 besplatno.life  # from Ru AdList
 
 bespuantiye.com  # from GoodbyeAds
@@ -6380,8 +6343,6 @@ bestadbid.com$important  #dingligh.ru # is in MVPS
 bestadmax.com  # from GoodbyeAds
 
 bestads.me  # from GoodbyeAds
-
-best-adultgames.com  # from Antipopads-re  # Checked:2022-11-20
 
 bestanimegame.com  # from GoodbyeAds
 
@@ -6470,9 +6431,7 @@ bestexotic.com  # from Ru AdList
 
 bestexp1.com  # from EasyList
 
-best-flirt.life  # from GoodbyeAds  # Checked:2022-11-20
-
-best-flirt-zone.life  # from Antipopads-re
+best-flirt-zone.life  # from Antipopads-re  # Checked:2022-12-04
 
 bestfollowers.org  # from GoodbyeAds
 
@@ -6502,7 +6461,7 @@ besthookup-findhere1.com  # from Antipopads-re
 
 besthookuphere.com  # from Antipopads-re
 
-bestin.site  # from GoodbyeAds
+bestin.site  # from GoodbyeAds  # Checked:2022-12-04
 
 bestincentiveaffiliates.com  # finteza.com
 
@@ -6518,13 +6477,9 @@ best-mam.ru  # from GoodbyeAds
 
 bestmmo2018.com  # from Dan Pollock's hosts file
 
-best-nas.com  # from GoodbyeAds
+best-nas.com  # from GoodbyeAds  # Checked:2022-12-04
 
 bestnews.biz  # from Adguard
-
-bestnewsoft.ru  # from EasyList  # Checked:2022-11-04
-
-bestoccasions4youonlynow.com  # from GoodbyeAds  # Checked:2022-11-13
 
 bestofadnetwork.com
 
@@ -6572,11 +6527,11 @@ best-real-lady.com  # from Antipopads-re
 
 bestrealprizes.life  # ad rule
 
-bestrxcanada.com  # from GoodbyeAds
+bestrxcanada.com  # from GoodbyeAds  # Checked:2022-12-04
 
 bestrxpills.com  # from Dan Pollock's hosts file
 
-best-sales.top  # from GoodbyeAds
+best-sales.top  # from GoodbyeAds  # Checked:2022-12-16
 
 bestsearch.com  # from GoodbyeAds
 
@@ -6594,7 +6549,7 @@ best-sexy-partner1.com$all  # from Adguard
 
 bestshopping-voucher.com  # from GoodbyeAds
 
-beststores4u.com  # from Dan Pollock's hosts file
+beststores4u.com  # from Dan Pollock's hosts file  # Checked:2022-12-16
 
 bestsushiever.com  # from Dan Pollock's hosts file
 
@@ -6619,7 +6574,7 @@ bestyourcams.com  # from Antipopads-re
 
 best-zb.com  # from GoodbyeAds
 
-best-zdorovye.ru  # from Ru AdList
+best-zdorovye.ru  # from Ru AdList  # Checked:2022-12-16
 
 besuchercounter.de  # from GoodbyeAds
 
@@ -6700,15 +6655,13 @@ betterbanners.com  # from Blogscan
 
 betterbannerscloud.com  # from GoodbyeAds
 
-better-better.com.cn  # from GoodbyeAds  # Checked:2022-11-04
-
 bettercollective.rocks  # from GoodbyeAds
 
 better-counter.com  # from GoodbyeAds
 
 better-explorer.com  # from GoodbyeAds
 
-betterlivin.co  # from GoodbyeAds
+betterlivin.co  # from GoodbyeAds  # Checked:2022-12-16
 
 bettermail.ca  # from GoodbyeAds
 
@@ -6774,8 +6727,6 @@ be-well.es  # from uBlock filters
 
 bewilderedblade.com  # from Peter Lowe's hosts file
 
-bext.info  # from Ru AdList  # Checked:2022-11-05
-
 beyondcompare.cc  # from GoodbyeAds
 
 beyondsecurity.com  # from EasyPrivacy
@@ -6812,8 +6763,6 @@ bgcounter.com  # from GoodbyeAds
 
 bget.ru  # from Adguard
 
-bgk24login.com  # from GoodbyeAds  # Checked:2022-11-04
-
 bgpng.me  # from Adguard
 
 bgrndi.com$important,all  # from AdGuard  # https://xakep.ru/2019/08/27/click-interception/
@@ -6835,8 +6784,6 @@ bhteam.ru  # ad scripts
 
 bhyuu.com  # from Dan Pollock's hosts file  # Checked:2022-10-18
 
-bhzejltg.info  # from Adguard  # Checked:2022-11-05
-
 biallo1.de  # from Adguard
 biallo2.de  # from Adguard
 biallo3.de  # from Adguard
@@ -6847,7 +6794,7 @@ biberukalap.com$all  # from Ru AdList: |ws*//*biberukalap.com^
 
 biciklo.xyz  # zombie
 
-bid.run$important  # from Adguard, modified
+bid.run$important  # from Adguard and Ru AdList, modified
 
 bid4keywords.com  # from MVPS
 
@@ -6857,8 +6804,6 @@ bidberrymedia.com  # from Blogscan
 
 bidclix.com$important  # from Peter Lowe's hosts file and MVPS
 bidclix.net$important  # from Peter Lowe's hosts file and MVPS
-
-bidd.monster  # from GoodbyeAds  # Checked:2022-11-20
 
 bidder.dev  # from Adguard
 
@@ -6981,6 +6926,8 @@ bigbrandrewards.com  # from Dan Pollock's hosts file
 
 bigbrothercanada.ca  # from uBlock filters
 
+bigcache.ml  # from EasyList
+
 bigcattracks.com  # from Adguard
 
 bigchoicegroup.com  # from Adguard
@@ -7005,9 +6952,7 @@ bigclickupsell.com  # "to smash sales and profit up to 35% simply by getting you
 
 big-data-server.com  # from GoodbyeAds
 
-bigdate.biz  # from Adguard
-
-bigfilmproduction.com  # from Dan Pollock's hosts file  # zombie  # Checked:2022-11-20
+bigdate.biz  # from Adguard  # Checked:2022-12-04
 
 bigfreelotto.com  # from Dan Pollock's hosts file
 
@@ -7026,6 +6971,8 @@ bigmailer.io  # "Email Marketing"
 bigmobileads.com  # from MVPS
 
 bignox.com  # from GoodbyeAds
+
+bigog.xyz$all  # from EasyList
 
 bigpenisguide.com  # from MVPS
 
@@ -7050,8 +6997,6 @@ bigtracker.com  # from Adguard
 bijmy.com  # zombie
 
 biketing.com  # zombie
-
-bikim01.com  #damneddevastator.com  # zombie  # Checked:2022-11-20
 
 bikoms.ru  # from GoodbyeAds
 
@@ -7150,7 +7095,7 @@ bioanalysis.lt  # from GoodbyeAds
 
 biocdn.net  # from GoodbyeAds
 
-biocoaching.fr  # from GoodbyeAds
+biocoaching.fr  # from GoodbyeAds  # Checked:2022-12-23
 
 biohailijie.cn  # from GoodbyeAds
 
@@ -7163,8 +7108,6 @@ bionika-digital.ru  # from Adguard: services.bionika-digital.ru
 bioperfect.pl  # from GoodbyeAds  # Checked:2022-10-18
 
 biopharmsus.com  # from GoodbyeAds
-
-biopiracydrat.info  # from GoodbyeAds  # Checked:2022-11-04
 
 biosagentplus.com  # from GoodbyeAds
 
@@ -7195,6 +7138,8 @@ birkin30.com  # from GoodbyeAds
 birlerskababs.com  # from GoodbyeAds
 
 birthdiscipline.com  # from GoodbyeAds  # Checked:2022-10-18
+
+birtun.com  # from EasyList
 
 bis-dic15.com  # Lead Forensics - Tracker  # from Quidsup NoTrack-Blocklist
 
@@ -7297,7 +7242,7 @@ bitcointrader.site  # from GoodbyeAds
 
 bitcoin-ua.top  # from GoodbyeAds
 
-bitcoin-upappl.com  # from GoodbyeAds
+bitcoin-upappl.com  # from GoodbyeAds  # Checked:2022-12-04
 
 bitcoin-wallet.net  # from GoodbyeAds
 
@@ -7409,7 +7354,7 @@ bitupsss.com$all  # from uBlock filters
 
 bitx.tv  # from Adguard
 
-bitzad.com  # from Adguard and uBlock filters
+bitzad.com  # from Adguard and uBlock filters  # Checked:2022-12-23
 
 biwhamto.com  # from GoodbyeAds
 
@@ -7465,7 +7410,7 @@ bizzclick.com  # from Peter Lowe's hosts file
 
 bjcathay.com  # from Adguard
 
-bjhdrx.com  # from Dan Pollock's hosts file
+bjhdrx.com  # from Dan Pollock's hosts file  # Checked:2022-12-16
 
 bjjabc.com  # from Adguard Chinese
 
@@ -7484,8 +7429,6 @@ blablahub.com  # from Adguard
 blacil.com  # from EasyList
 
 black6adv.com  # from Adguard
-
-blackads.ru  # from Ru AdList  # Checked:2022-11-04
 
 blackcarrot.be  # advertserve
 
@@ -7553,11 +7496,13 @@ blltrk.com
 
 blobar.org  # from MVPS
 
-block.com  # 2022: "Coming soon" root  # from Adguard: ||block.s*block.com^
+block.com  # 2022: "Coming soon" root  # from Adguard: ||block.s*block.com^  # Checked:2022-12-16
 
 blockadblock.com$important  # blockadblock
 
 blockadsnot.com$important
+
+block-ads-now.com$all  # from EasyList
 
 blockchain-ads.com  # from uBlock filters
 
@@ -7612,6 +7557,8 @@ blogfest.ru  # from Ru AdList
 
 blogflux.com  # from MVPS
 
+blogfoster.com  # from uBlock filters
+
 blogger2020.com  # from Antipopads-re
 
 bloggerads.net  # from Dan Pollock's hosts file
@@ -7630,9 +7577,7 @@ bloggersideas.com  # bloggersideas.com/adcombo-review/
 
 bloggingeclipse.com  # bloggingeclipse.com/adcombo-review/
 
-blogginggyanbox.com  # from Adguard  # Checked:2022-11-05
-
-blogherads.com$important  # ad scripts  # is in Peter Lowe's hosts file
+blogherads.com$important  # ad scripts  # is in Peter Lowe's hosts file and ABP
 
 blogiblogi.com  # from Ru AdList
 
@@ -7641,7 +7586,7 @@ blogifeed.com  # from Ru AdList
 bloginno.com
 bloginfosphera.com
 
-blogi-novosti.ru  # from Ru AdList
+blogi-novosti.ru  # from Ru AdList  # Checked:2022-12-04
 
 blogis.org  # from Ru AdList
 
@@ -7655,7 +7600,7 @@ blogmeetsbrand.com  # from Adguard
 
 blogmission.com
 
-blogobo.com  #i-adv.biz
+blogobo.com  #i-adv.biz  # Checked:2022-12-23
 
 blogofest.com  # from Ru AdList
 
@@ -7702,8 +7647,6 @@ blogtraffic.de  # from Adguard
 
 blogtw.net  # from Adguard
 
-blogujea-teraz.xyz  # from GoodbyeAds  # Checked:2022-11-05
-
 blogun.ru  # from Adguard
 
 blog-webkatalog.de  # from Adguard
@@ -7714,7 +7657,7 @@ blok.link  # from Adguard
 
 blondinka.ru
 
-bloodpounds.com  # from Antipopads-re
+bloodpounds.com  # from Antipopads-re  # Checked:2022-12-16
 
 blooks.info  # from Antipopads-re
 
@@ -7727,6 +7670,8 @@ bloomingdales.com  # from MVPS
 blossoms.com  # from EasyList
 
 blowclick.ru  # from Ru AdList
+
+bloxplay.com  # from Adguard
 
 blozoo.info  # from Adguard
 
@@ -7762,6 +7707,8 @@ bluecounter.de  # from Adguard
 bluecrabhosting.co.uk  # from GoodbyeAds
 
 bluedawning.com  # from Adguard
+
+blueduckredapple.com  # from Adguard
 
 blueheart.org  # from GoodbyeAds
 
@@ -7896,15 +7843,7 @@ bmumuh.com  # from GoodbyeAds
 
 bmwebm.org  # from Adguard
 
-bmwforum.co  # grabify.link  # Checked:2022-11-04
-
 bname.ru  # from Ru AdList
-
-bnc1m.com  # from GoodbyeAds  # Checked:2022-11-20
-bnc2m.com  # from GoodbyeAds  # Checked:2022-11-20
-bnc3m.com  # from GoodbyeAds  # Checked:2022-11-20
-bnc4m.com  # from GoodbyeAds  # Checked:2022-11-20
-bnc5m.com  # from Antipopads-re  # Checked:2022-11-20
 
 bncloudfl.com  # from EasyList
 
@@ -7942,9 +7881,9 @@ bnqt.com  # from Adguard
 
 bnr.bg  # from GoodbyeAds
 
-bnr901.com  # from Antipopads-re
-bnr902.com  # from Antipopads-re
-bnr903.com  # from Antipopads-re
+bnr901.com  # from Antipopads-re  # Checked:2022-12-16
+bnr902.com  # from Antipopads-re  # Checked:2022-12-16
+bnr903.com  # from Antipopads-re  # Checked:2022-12-16
 
 bnrdom.com  # from Adguard
 
@@ -7985,8 +7924,6 @@ bobi-bobi.info  # from Adguard
 
 bob-recs.com  # from EasyPrivacy
 
-bobrilla.com  # from Ru AdList  # Checked:2022-11-13
-
 bobtrk.com  # from Antipopads-re
 
 boctopus.com
@@ -7996,6 +7933,8 @@ bodaybo.net  # from Adguard
 bodelen.com  # empty root  # is in Dan Pollock’s hosts file
 
 bodher.com  # from uBlock filters
+
+bodiff.com  # from EasyList
 
 bodis.com  # trellian  # "Smart domain monetization"
 
@@ -8020,6 +7959,8 @@ boilingumbrella.com  # from Peter Lowe's hosts file
 boinkcash.com  # from Antipopads-re
 
 bokarsolutions.co.uk  # static.bokarsolutions.co.uk/tracker/  # "AdOps"
+
+bokecc.com  # from Adaway  # 504 root
 
 bokotraffic.com  # popcash.net  # is in MVPS
 
@@ -8127,6 +8068,8 @@ bonusmaniac.com  # from Adguard
 
 bonusmne.com  # from Ru AdList
 
+bonus-point1.life  # from EasyList
+
 bonuswm.org$important  # ad scripts  # "Раздавая бонусы WebMoney можно привлечь большой приток посетителей на свой сайт"
 
 bonzai.ad  # from Adguard
@@ -8165,9 +8108,7 @@ bookwitty.com  # 403 root
 !+  cdn.bookwitty.com
 ! end of bookwitty.com
 
-boolff.com  # from Ru AdList  # Checked:2022-11-20
-
-boom365hd.com  # from uBlock filters
+boom365hd.com  # from uBlock filters  # Checked:2022-12-04
 
 boomads.com$important  # from Peter Lowe's hosts file
 
@@ -8187,7 +8128,7 @@ boostcdn.net  # from EasyList
 
 boostclic.com  # from Adguard
 
-boostervideo.ru  # from Adguard
+boostervideo.ru  # from Adguard and uBlock filters
 
 boostflow.com  # ad scripts
 
@@ -8212,6 +8153,8 @@ bopstermedia56.com  # from Dan Pollock's hosts file
 borderlinedesign.net  # from Phishing URL Blocklist
 
 bordernode.com  # empty root  # from EasyList: ||bordernode.com/images/$third-party
+
+boredactress.com$all  # from EasyList
 
 boredcrown.com  # from Peter Lowe's hosts file
 
@@ -8243,6 +8186,8 @@ boss-www.com  # from Adguard
 
 bostonwall.com  # from Dan Pollock's hosts file
 
+bosuch.com  # from EasyList
+
 bot.nu
 
 botchk.net  # no root  # from Adguard: client.botchk.net
@@ -8270,7 +8215,7 @@ botsrv.com  # ad scripts  #botsrv.com/qb/widget/
 
 botsvisit.com  # from Adguard
 
-bottlehere.com  # from Dan Pollock's hosts file
+bottlehere.com  # from Dan Pollock's hosts file  # Checked:2022-12-04
 
 bot-traffic.icu  # from GoodbyeAds
 bot-traffic.xyz  # from GoodbyeAds
@@ -8337,8 +8282,6 @@ bptracking.com  # from Adguard
 
 bqstreamer.com  # from EasyPrivacy
 
-bqugumvxc.biz  # from Adguard  # zombie  # Checked:2022-11-20
-
 br3011.com  # from EasyList
 br3021.com  # from EasyList
 
@@ -8350,7 +8293,7 @@ brainfox.com  # from MVPS
 
 brainient.com  # from Adguard
 
-brainlyads.com  # from Antipopads-re
+brainlyads.com$important  # from Antipopads-re and ABP
 
 braintb.com  # from EasyList
 
@@ -8435,8 +8378,6 @@ brandwatch.com  # from Blogscan
 
 branovate.com
 
-brasoads.com  # zombie  # Checked:2022-11-20
-
 brat-online.ro  # from Adguard
 
 braun634.com$important  # adbetnet  # is in Ru AdList
@@ -8520,6 +8461,8 @@ brickandmobile.com  # from Malvertising filter list by Disconnect
 
 brid.tv$important  # video ad network
 
+bridae.com  # from EasyList
+
 bridgetrack.com$important  # from MVPS  #[Tracking.Cookie]
 !+  ads.bridgetrack.com
 !+  uat.bridgetrack.com
@@ -8546,7 +8489,7 @@ brightfunnel.com  # from Adguard
 
 brightinfo.com$important
 
-brightline.tv  # BrightLine - Advertising  # from Quidsup NoTrack-Blocklist
+brightline.tv  # BrightLine - Advertising  # from Quidsup NoTrack-Blocklist and Adaway
 
 brightmountainmedia.com  # from Peter Lowe's hosts file
 
@@ -8574,7 +8517,7 @@ brmediatrk.com  # from GoodbyeAds
 
 brndrm.com  # from Ru AdList
 
-bro.kim  # ad scripts
+bro.kim  # ad scripts  # is in EasyList
 
 bro1.biz  # from GoodbyeAds
 bro2.biz  # from Ru AdList
@@ -8610,6 +8553,8 @@ brokerbabe.com  # from Adguard
 
 brokertraffic.com  # from GoodbyeAds
 
+bromusic.site  # from EasyList
+
 bronewlook.com  # from GoodbyeAds
 
 bronto.com$important  # ad scripts  # is in AdGuard and EasyPrivacy
@@ -8620,7 +8565,7 @@ bropu2.com  # from EasyList
 
 brostraffic.com  # from GoodbyeAds
 
-brothersail.com  # from GoodbyeAds
+brothersail.com  # from GoodbyeAds  # Checked:2022-12-23
 
 brothers-company.ru  # from Ru AdList
 
@@ -8634,8 +8579,6 @@ brothers-smaller.ru  # from GoodbyeAds
 
 brounelink.com  # from GoodbyeAds
 
-brow.vip  # from Phishing URL Blocklist  # Checked:2022-11-20
-
 broweb.site  # from Ru AdList
 
 browfileext.com  # from GoodbyeAds
@@ -8646,7 +8589,7 @@ browork3er.cc  # from Ru AdList
 
 broworker1s.com  # ad scripts
 
-broworker4s.com  # from Ru AdList
+broworker4s.com  # from Ru AdList and EasyList
 
 broworker7.com  # from EasyList
 
@@ -8671,8 +8614,6 @@ browser-tools.systems  # from Dan Pollock's hosts file
 
 browser-update.org$important  # "tool to unobtrusively notify visitors". In fact, is is a banner in the top
 
-browser-ya.pro  # from EasyList  # Checked:2022-11-04
-
 browse-safe.net  # from GoodbyeAds
 
 browsiprod.com  # from Adguard and Ru AdList
@@ -8689,6 +8630,8 @@ bruceleadx1.com  # from Antipopads-re
 bruceleadx2.com  # from Antipopads-re
 
 brushmoney.com  # from Ru AdList
+
+brwsc.org  # aarki.net
 
 brxfinance.com  # from Dan Pollock's hosts file
 
@@ -8782,7 +8725,7 @@ bubblenik.com  # from Ru AdList
 
 bubblesmedia.net  # ad network
 
-bubblesmoke.net  # from Dan Pollock's hosts file
+bubblesmoke.net  # from Dan Pollock's hosts file  # Checked:2022-12-16
 
 bubblestat.com  # from Adguard
 
@@ -8795,8 +8738,6 @@ buckridge.link  # from Adguard
 bucksense.com$important  # "We provide Brands and Publishers with tools to improve their reach and revenue"  # also is in Blogscan
 
 budaicius.com  # ad scripts and empty root
-
-budapest1873.net  # from Dan Pollock's hosts file  # Checked:2022-11-13
 
 buddyplay.net  # scam: https://www.mywot.com/scorecard/buddyplay.net
 
@@ -8824,6 +8765,8 @@ bugfender.com  # app telemetry service  # is in GoodbyeAds
 bughd.com  # from GoodbyeAds
 
 buglife.com   # from Dan Pollock's hosts file
+
+bugs2022.com  # from Adguard and Ru AdList
 
 bugsbunnyy.com  # from GoodbyeAds
 
@@ -8862,6 +8805,8 @@ bulkclicks.com  # from Dan Pollock's hosts file
 
 bulkhentai.com  # from Adguard: js.bulkhentai.com
 
+bulky-battle.com  # from Adguard
+
 bulldogcpi.com  # from Adguard
 
 bulldogmedia.com  # commissionsoup
@@ -8887,8 +8832,6 @@ bullionyield.com  # ad scripts
 
 bumaikr.com  # from Adguard
 
-bumbux.shop  # ad scripts  # zombie  # "Мы молодой и перспективный проект в области рекламы и заработка в сети"  # Checked:2022-11-20
-
 bumlam.com  #adsniper.ru
 !+  u2.bumlam.com
 ! end of bumlam
@@ -8901,13 +8844,15 @@ bunchbox.co  # from Adguard
 
 bundasnovinhas.com  # from Dan Pollock's hosts file
 
+bungalowsimply.com$all  # from EasyList
+
 bunkirling.co  # from Adguard
 
 bunny-net.com  # from MVPS
 
 bunti.ng  # Bunting - Advertising  # from Quidsup NoTrack-Blocklist
 
-buntips.com  # from The SNAFU Blocklist
+buntips.com  # from The SNAFU Blocklist  # Checked:2022-12-04
 
 bunzlaucastle.com  # from GoodbyeAds
 
@@ -8968,8 +8913,6 @@ bus-offer.com  # from Dan Pollock's hosts file
 
 bus-safety-lawyers.com  # zombie
 
-bustbomb.com  # zombie  # Checked:2022-11-20
-
 busterzaster.de  # from Adguard
 
 bustlinganimal.com  # from Peter Lowe's hosts file
@@ -8979,8 +8922,6 @@ busyprice.ru  # from Adguard
 buttcandy.com  # from Dan Pollock's hosts file
 
 butylotto.pl  # from GoodbyeAds
-
-buxclerk.com  # from uBlock filters  # Checked:2022-11-20
 
 buxept.com  # from Adguard
 
@@ -9011,6 +8952,8 @@ buyflood.com  # from Adguard
 
 buyhitscheap.com  # from Dan Pollock's hosts file
 
+buyist.app  # from EasyPrivacy: t.buyist.app  # root 401  # "Native Apps"
+
 buylicensekey.com  # from MVPS
 
 buylike.pro$important  # [webvork.com?] landings. Root is 404  #variluxpremiumcit.buylike.pro
@@ -9034,7 +8977,7 @@ buypmpwithoutexams.com  # ads
 buypremiumslots.com  # from GoodbyeAds
 
 buysellads.com$important
-buysellads.net$important  # ad scripts  # is in EasyList
+buysellads.net$important  # ad scripts  # is in EasyList and ABP
 servedby-buysellads.com$important
 
 buyseoblog.com  # from GoodbyeAds
@@ -9112,13 +9055,15 @@ bv68.net  # from GoodbyeAds
 
 bvalphaserver.com  # from GoodbyeAds
 
-bveyge.com$important  # ad scripts  # Checked:2022-11-04
+bvmbnr.xyz$all  # from EasyList
 
 bvmcdn.net  # from Adguard
 
 bvmtogo.com$all  # from Adguard
 
 bwcdn.xyz  # from GoodbyeAds  # Checked:2022-10-18
+
+bwredir.com$all  # from EasyList
 
 bwtsrv.com  # from uBlock filters
 
@@ -9139,8 +9084,6 @@ byinspired.com  # from Blogscan
 
 byluvdiscor.com  # from EasyList
 
-bynff.com  # from Ru AdList  # Checked:2022-11-20
-
 byplay.net  # from GoodbyeAds
 
 byri.by  # from Ru AdList
@@ -9158,10 +9101,6 @@ bytemgdd.com  # from Adguard
 bytex.io  # hybrid.ai
 
 bytogeticr.com  # from uBlock filters
-
-byuop.com  # from Ru AdList  # Checked:2022-11-04
-
-byzoo.org  # from Adguard  # Checked:2022-11-13
 
 bzadx.pro  # trellian parked domain
 
@@ -9210,6 +9149,8 @@ ca-briepcardie.fr  # from Dan Pollock's hosts file
 
 cache.am  # from Adguard
 cache.fm  # from Adguard
+
+cachegorilla.com  # cachegorilla - Advertising  # from Quidsup NoTrack-Blocklist
 
 cachemetracking.com   # from Dan Pollock's hosts file
 
@@ -9306,8 +9247,6 @@ calmcactus.com  # from Peter Lowe's hosts file
 
 calmlydung.com  # from EasyList
 
-calotag.com  # from Adguard and EasyPrivacy  # Checked:2022-11-13
-
 calq.io  # from Adguard
 
 caltat.com  # mails about abandoned shopping cart
@@ -9329,8 +9268,6 @@ camads.net  # from MVPS
 !+  ifa.camads.net
 ! end of camads.net
 
-cambodiaoutsourcing.com  # from MVPS  # Checked:2022-11-20
-
 cambro.tv  # from uBlock filters
 
 camcrush.com  # from EasyList
@@ -9343,11 +9280,9 @@ camelspit.org  # advertserve
 
 cameraprive.com  # from EasyList
 
-camgeil.com  # from Dan Pollock's hosts file
+camgeil.com  # from Dan Pollock's hosts file  # Checked:2022-12-04
 
 camghosts.com  # from EasyList
-
-camilacoelho.xyz  # zombie  # Checked:2022-11-20
 
 cam-lolita.net  # from EasyList
 
@@ -9409,8 +9344,6 @@ camprime.com  # from Antipopads-re
 
 camptrck.com  # from EasyList
 
-campuscompositionzodiac.com  # from GoodbyeAds  # Checked:2022-11-05
-
 camsads.com$important  # ad network
 
 camsareonline.com  # ad redirects
@@ -9437,11 +9370,11 @@ canada.com  # from GoodbyeAds
 
 canadaalltax.com  # from Dan Pollock's hosts file
 
-canadagoosepromos-ch.com  # from GoodbyeAds  # Checked:2022-11-13
-
 canadastatehealthinsurance.com  # from Adguard
 
 canalds.com  # from Ru AdList
+
+can-cdn.net$important  # 404 root  # from ABP
 
 canddi.com  # from Adguard
 canddi.download  # CANDDi - Advertising  # from Quidsup NoTrack-Blocklist
@@ -9488,8 +9421,6 @@ capath.com  # from Dan Pollock's hosts file
 
 caphyon-analytics.com  # from Adguard
 
-capitaworld.ae  # zombie  # Checked:2022-11-20
-
 capndr.com  # from Adguard
 
 cappumedia.com
@@ -9508,7 +9439,7 @@ captainsofcrush.ru  # from Ru AdList
 
 captcha-display.com$important  # from EasyPrivacy
 
-captchatest.live  # ugyplysh.com
+captchatest.live  # ugyplysh.com  # Checked:2022-12-04
 
 captify.co.uk$important  # from Adguard and Blogscan
 
@@ -9569,11 +9500,15 @@ careerqna.com  # from uBlock filters
 
 careerwebsite.com  # 403 root  # from EasyList: ||careerwebsite.com/distrib_pages/jobs.cfm?
 
+careful-oven.pro  # from EasyList
+
 carfax.com  # error 403  # from EasyList: ||carfax.com/img_myap/
 
 carmuffler.net  # from Dan Pollock's hosts file
 
 carnegienet.net  # from Dan Pollock's hosts file
+
+carnivalmobile.com  # from Adaway: devices.carnivalmobile.com  # root 504
 
 carnow.com  # ad scripts  # "Sell more cars now"
 
@@ -9908,7 +9843,7 @@ cdn.house  # from EasyList
 
 cdn.tax  # from GoodbyeAds
 
-cdn1.pro  # from GoodbyeAds
+cdn1.pro  # from GoodbyeAds  # Checked:2022-12-04
 
 cdn13.com  # no root  # from Adguard: a75-10-so.ssl.cdn13.com
 
@@ -10034,6 +9969,10 @@ cdnvt.ru  # from Ru AdList
 
 cdnwa.com  # from Dan Pollock's hosts file
 
+cdnwidget.com  # from Adaway
+
+cdrvrs.com  # from Antipopads-re, EasyList, iam-py-test's anti-redirectors
+
 cdsbnrs.com$important  # ad scripts  # is in AdGuard
 
 cds-tracking.com
@@ -10055,15 +9994,9 @@ cedexis.net  # from EasyPrivacy
 
 cedexis-test.com  # CedexisRadar - Tracker  # from Quidsup NoTrack-Blocklist
 
-ceeglousaud.com  # from Adguard  # zombie  # Checked:2022-11-20
-
 ceepq.com  # from EasyList
 
-ceespc.biz  # from Adguard  # zombie  # Checked:2022-11-20
-
 cegmarketing.hu  # from Hufilter: cegmarketing.hu/banner
-
-ceincreatedaughtcha.info  # from Adguard  # zombie  # Checked:2022-11-20
 
 celeb-ads.com  # from GoodbyeAds
 
@@ -10086,13 +10019,13 @@ celign.com  # from EasyList
 
 cellbux.com  # from Adguard
 
-cellphoneincentives.com  # from Dan Pollock's hosts file  # zombie  # Checked:2022-11-20
-
 celltick.com  # from GoodbyeAds
 
 celtra.com$important  # is in 5 lists
 !+  beta.celtra.com
 ! end of celtra.com
+
+celxkpdir.com$all  # from Adguard
 
 cendyn.com  # "drive marketing, sales"  # contact-client.com
 !+  templates.cendyn.com
@@ -10104,13 +10037,15 @@ cennter.com  # from Dan Pollock's hosts file
 
 cenoval.ru  # from GoodbyeAds
 
+censelysoviell.xyz$all  # from EasyList
+
 centech.vn
 
 center.io$important  # leadpages.co
 
 centerpointmedia.com  # from Peter Lowe's hosts file
 
-centersession.com  # from Dan Pollock's hosts file
+centersession.com  # from Dan Pollock's hosts file  # Checked:2022-12-16
 
 centertrack.com  # Unknown - Tracker  # from Quidsup NoTrack-Blocklist
 
@@ -10237,8 +10172,6 @@ chango.com  # from MVPS
 !+  d.chango.com
 ! end of chango.com
 
-channel1vids.com  # from Peter Lowe's hosts file  # Checked:2022-11-04
-
 channeladvisor.com  # from YHosts
 !+  beta.channeladvisor.com
 !+  complete.channeladvisor.com
@@ -10276,8 +10209,6 @@ charltonmedia.com  # from Adguard
 
 charmflirt.com  # from Dan Pollock's hosts file
 
-charmstroy.info  # from Dan Pollock's hosts file  # zombie  # Checked:2022-11-20
-
 chart.dk  # from Peter Lowe's hosts file
 
 chartaca.com  # from Adguard
@@ -10307,7 +10238,7 @@ chbn.ru  # from Ru AdList
 
 cheap-ads.net  # from Adguard
 
-cheapapartmentsaroundme.com  # from Dan Pollock's hosts file
+cheapapartmentsaroundme.com  # from Dan Pollock's hosts file  # Checked:2022-12-16
 
 cheaptop.ru  # from Adguard
 
@@ -10329,7 +10260,9 @@ checkifyouarealive.me  # from Adguard
 
 checking-your-browser.com  # from uBlock filters
 
-checkklist.net  # from Phishing URL Blocklist
+checkita.com  # from EasyList
+
+checkklist.net  # from Phishing URL Blocklist  # Checked:2022-12-23
 
 checkm8.com  #[CHECKM8 AD TAGS]  # from MVPS and Peter Lowe's hosts file
 
@@ -10431,8 +10364,6 @@ chipleader.com  # from Adguard
 
 chiptionics.co  # from Adguard
 
-chistochisto.com  # from Adguard  # Checked:2022-11-04
-
 chitika.net$important  # ad scripts  # is in 3 lists
 chitika.com$important  # is in 2 lists
 
@@ -10451,8 +10382,6 @@ choisimoncode.fr  # from Dan Pollock's hosts file
 chokertraffic.com  # from GoodbyeAds
 
 choogeet.net  # from Adguard
-
-choose-a-lady.biz  # from Adguard  # zombie  # Checked:2022-11-20
 
 chooseanesp.com  # smfads
 
@@ -10608,11 +10537,11 @@ ciuvo.com  # from Ru AdList
 
 civiccomputing.com  # Civic - Tracker  # from Quidsup NoTrack-Blocklist
 
-civicscience.com$important  # ad scripts  # "Consumer Intelligence"
+civicscience.com$important  # ad scripts  # "Consumer Intelligence"  # is in uBlock filters
 
 civilhir.net  # from Dan Pollock's hosts file
 
-civitik.com$all  # from Adguard  # zombie  # Checked:2022-11-20
+civilizationthose.com$all  # from EasyList
 
 cizion.com  # from Adguard
 
@@ -10745,6 +10674,8 @@ cleanallspyware.com  # from GoodbyeAds
 
 cleananalytics.com  # from Adguard
 
+clean-blocker.com$all  # from EasyList
+
 cleanbrowser.com  # from GoodbyeAds
 
 cleanbrowser.network  # from Adguard
@@ -10859,9 +10790,9 @@ clic-douaisis.fr  # from GoodbyeAds
 ! see clix* domains in _marketing_click-
 ! see clk* domains in _marketing_click-
 
-clien.net  # from Dan Pollock's hosts file
+clickcanoe.com$all  # from Adguard
 
-clientev.xyz  # zombie  # Checked:2022-11-20
+clien.net  # from Dan Pollock's hosts file
 
 clientgear.com  # ad scripts  # is in EasyPrivacy  # "YeahTargeter"
 
@@ -10869,11 +10800,11 @@ clientify.com  # "Plataforma de automatización de marketing"  # clientify CRM
 clientify.net  # "Plataforma de automatización de marketing"  # clientify CRM
 clientify.website  # "Plataforma de automatización de marketing"  # clientify CRM
 
+clients-cdnnow.ru  # ad scripts and ampty root
+
 clientsdemoarea.com  # from GoodbyeAds
 
 clientsmanagementsystem.com  # from GoodbyeAds
-
-clientsviolet.com  # from GoodbyeAds  # Checked:2022-10-23
 
 clifads.com  # from Adguard
 
@@ -10913,8 +10844,6 @@ cliqz.com  # from GoodbyeAds
 !+  proxy.cliqz.com
 ! end of cliqz.com
 
-clisorensal.site  # zombie  # Checked:2022-11-20
-
 ! see clk* is _marketing_click-
 
 clivads.com  # from GoodbyeAds
@@ -10953,8 +10882,6 @@ cloneclicks.com  # from GoodbyeAds
 
 closealert.com  # CloseAlert - Tracker  # from Quidsup NoTrack-Blocklist
 
-closefly.com  # from GoodbyeAds  # Checked:2022-11-20
-
 closeload.com
 
 closetalk.ca  # from GoodbyeAds
@@ -10966,6 +10893,8 @@ clotezar.com  # from Adguard
 clothingsphere.com  # from GoodbyeAds
 
 cloud-9751.com  # from GoodbyeAds
+
+cloudaaaa.com  # from Adguard
 
 cloudads.net  # from GoodbyeAds
 
@@ -11006,8 +10935,6 @@ cloud-iq.com  # from Adguard
 cloudiq.com  # from Peter Lowe's Ad and tracking server list
 cloud-iq.com.au  # from EasyPrivacy
 
-cloud-lander.com  # Checked:2022-11-05
-
 cloudleadia.com  # no root  # from Ru AdList
 
 cloudlogobox.com  # from EasyList
@@ -11019,6 +10946,8 @@ cloudmosa.net  # from GoodbyeAds
 ! end of cloudmosa.net
 
 cloudpoa.com  # from GoodbyeAds
+
+cloud-repository.com  # from EasyList
 
 cloudsc1s2.com  # from GoodbyeAds
 
@@ -11045,8 +10974,6 @@ cloudvideo.tv  # from uBlock filters
 cloudvpsfiles.com  # from GoodbyeAds
 
 cloudwp.io  # from GoodbyeAds
-
-cloutbeliefphantom.com  # from GoodbyeAds  # Checked:2022-11-05
 
 clownsong.com  # from GoodbyeAds
 
@@ -11078,7 +11005,7 @@ clubesspaysdumans.fr  # from Phishing URL Blocklist
 
 club-sale.ru  # from Ru AdList
 
-clubscatter.com  # from GoodbyeAds
+clubscatter.com  # from GoodbyeAds  # Checked:2022-12-04
 
 clubsexdating.nl  # from GoodbyeAds
 
@@ -11095,8 +11022,6 @@ cluep.com  # Cluep - Tracker  # from Quidsup NoTrack-Blocklist and EasyList
 cluethydash.com  # from GoodbyeAds
 
 clunder.net  # from Ru AdList
-
-clupc.com  # from GoodbyeAds  # Checked:2022-11-04
 
 clustrmaps.com$important  # ad scripts  # is in Malvertising filter list by Disconnect, Peter Lowe’s Ad and tracking server list, MVPS
 
@@ -11154,8 +11079,6 @@ cms100.xyz$all  # from EasyList
 
 cmsbetconstruct.com  # from Adguard
 
-cms-shop.site  # zombie  # Checked:2022-11-20
-
 cmtgroup.com  # from GoodbyeAds
 
 cm-trk3.com  # from Adguard
@@ -11174,8 +11097,6 @@ cngcpy.com  # from EasyList
 cnhv.co  # from Ru AdList
 
 cnlongshou.com  # from GoodbyeAds
-
-cnlrajyp.xyz  # from GoodbyeAds  # Checked:2022-11-13
 
 cnn.cm  # from GoodbyeAds
 
@@ -11208,8 +11129,6 @@ cntrafficpro.com  # from Adguard and EasyList
 cntr-di5.com  # Lead Forensics - Tracker  # from Quidsup NoTrack-Blocklist
 
 cntr-di7.com  # Lead Forensics - Tracker  # from Quidsup NoTrack-Blocklist
-
-cntstat.com  # from Ru AdList  # Checked:2022-11-05
 
 cnt-tm-1.com  # Lead Forensics - Tracker  # from Quidsup NoTrack-Blocklist
 
@@ -11282,7 +11201,7 @@ codeads.com  # from MVPS
 
 codeblackbelt.com  # shopify scripts
 
-codebrew.nl  # from GoodbyeAds
+codebrew.nl  # from GoodbyeAds  # Checked:2022-12-16
 
 codedesign.org  # "Digital Marketing Agency"
 codedesign.ae
@@ -11291,8 +11210,6 @@ codedexchange.com  # from Adguard
 
 codefund.app  # from Adguard
 codefund.io  # from Adguard
-
-codemylife.info  # from Adguard  # Checked:2022-10-18
 
 codenow.cn  # from GoodbyeAds
 
@@ -11316,8 +11233,6 @@ code-zp1.com$important  # is in Ru AdList
 codezp1.com  # from Adguard
 
 codigo.se  # Codigo - Tracker  # from Quidsup NoTrack-Blocklist
-
-codigotributario.com.br  # from GoodbyeAds  # Checked:2022-11-13
 
 codingjungle.net  # empty root  # from Ru AdList
 
@@ -11346,6 +11261,8 @@ cogmatch.net  # from Adguard
 cognativex.com  # from Adguard
 
 cognism.com  # "Lead Generation"
+
+cognitionmesmerize.com$all  # from EasyList
 
 cognitiv.ai  # from Peter Lowe's hosts file
 
@@ -11407,8 +11324,6 @@ cokhach.com  # from Adguard
 
 colamirus.com  # from Ru AdList
 
-coldcertainchannel.com  # from Dan Pollock's hosts file  # Checked:2022-11-04
-
 colddry.com  # from Dan Pollock's hosts file
 
 colibri.io
@@ -11465,7 +11380,7 @@ colorfulnotebooks.com  # from Dan Pollock's hosts file
 
 colorking.es  # from GoodbyeAds
 
-colorsoflife.online  # from Dan Pollock's hosts file
+colorsoflife.online  # from Dan Pollock's hosts file  # Checked:2022-12-04
 
 coloryee.com  # from GoodbyeAds
 
@@ -11480,8 +11395,6 @@ colpirio.com  # from uBlock filters  # https://github.com/uBlockOrigin/uAssets/p
 coluim.com  # from EasyList
 
 columbiarecords.com  # from GoodbyeAds
-
-casalemedia.com.co  # casalemedia  # zombie  # Checked:2022-11-20
 
 com.com  # yes, exactly  # also is in MVPS and in Adguard
 # adlog.com.com  # from Dan Pollock's hosts file
@@ -11624,6 +11537,8 @@ compteur-visite.com  # from Adguard
 
 compufixshop.com  # from Dan Pollock's hosts file
 
+compulsionspotsbeacon.com  # from Adguard
+
 computer-arts.info  # from GoodbyeAds
 
 computer-offer.com  # from Dan Pollock's hosts file
@@ -11640,8 +11555,6 @@ comscoreresearch.com  # from MobileAdTrackers
 comurbate.com  # from uBlock filters
 
 conative.de$important  # from Adguard
-
-conatr.com  # from Antipopads-re  # Checked:2022-11-04
 
 conatysystems.com  # from EasyList
 
@@ -11692,7 +11605,7 @@ conduze.com  # from Adguard
 
 confiant.com$important  # "Ad Security & Ad Quality Controls"
 confiant-integrations.net  # ad scripts  # no root
-confiant-integrations.global.ssl.fastly.net$important  # ad scripts  # is in EasyPrivacy
+confiant-integrations.global.ssl.fastly.net$important  # ad scripts  # is in EasyPrivacy and ABP
 
 configforthis.site  # from Ru AdList
 
@@ -11723,7 +11636,7 @@ connectif.cloud  # from Adguard
 
 connectignite.com  # from Adguard
 
-connecting-to.com  # from Dan Pollock's hosts file
+connecting-to.com  # from Dan Pollock's hosts file  # Checked:2022-12-04
 
 connectionads.com  # from Adguard
 
@@ -11841,13 +11754,9 @@ consultant-online.ru  # from GoodbyeAds
 
 consumable.com$important  # from Adguard and Blogscan
 
-consumentenbeloning.com  # Checked:2022-11-13
-
 consumer.net  # from Peter Lowe's hosts file
 
 consumerconnection-email.com
-
-consumergenepool.com  # from Adguard  # Checked:2022-11-04
 
 consumerzoneusa.com  #www.consumerzoneusa.com
 
@@ -11878,7 +11787,7 @@ contadorvisitasgratis.com  # from Adguard
 contatoreaccessi.com  # from Adguard
 
 contaxe.com  # from MVPS
-contaxe.de  # from Peter Lowe's Ad and tracking server list
+contaxe.de  # from Peter Lowe's Ad and tracking server list  # Checked:2022-12-04
 
 contehos.com  # from Adguard
 
@@ -11913,7 +11822,7 @@ contentclick.co.uk  # from Adguard
 
 content-cooperation.com  # from Adguard
 
-content-delivery.top$important  # 504 root  # from Adguard Chinese
+content-delivery.top$important  # 504 root -> empty root  # from Adguard Chinese
 
 contentdigital.info  # from Adguard
 
@@ -11933,7 +11842,7 @@ contentika.com  # from Ru AdList
 
 contentinsights.com  # from Adguard
 
-contentiq.com  # from GoodbyeAds
+contentiq.com$important  # from GoodbyeAds and ABP
 
 contentjs.com  # from Adguard
 
@@ -11971,8 +11880,6 @@ contentum.de
 
 contenture.com  # from Adguard
 
-contentwidgets.net  # from MVPS  # Checked:2022-11-13
-
 contentza.com  # from GoodbyeAds
 
 contextad.com  # from GoodbyeAds
@@ -12008,9 +11915,7 @@ continue.com  # from Adguard
 
 continuedhostilityequipped.com  # from GoodbyeAds
 
-continuepast.com  # from GoodbyeAds  # Checked:2022-11-20
-
-continue-site.website  # from GoodbyeAds
+continue-site.website  # from GoodbyeAds  # Checked:2022-12-16
 
 contlist.com  # from Ru AdList
 
@@ -12190,6 +12095,8 @@ cookiepro.com$important  # ad scripts (cookies)  # is in EasyList and Fanboy’s
 
 cookie-script.com  # is in 2 lists
 
+cookiespool.com  # from Fanboy's
+
 cookie-widget.ru  # from Adguard
 
 cookihq.com
@@ -12240,8 +12147,6 @@ cool-technology.com  # from GoodbyeAds
 
 coolwebstats.com  # from MVPS  # [ISWest / Trade News][AS5033]
 
-coop-gamers.org  # zombie  # Checked:2022-11-20
-
 co-optraining.ca  # from GoodbyeAds
 
 coordinatedcub.com  # from Peter Lowe's hosts file
@@ -12253,8 +12158,6 @@ cootlogix.com  # from GoodbyeAds
 cootro.com  # from EasyList
 
 copacet.com  # from Adguard
-
-copercato.com  # from Ru AdList  # Checked:2022-11-20
 
 copilotadvisor.com  # "Uncover your hidden revenue  social lead generation tool"
 copilotai.com
@@ -12314,6 +12217,8 @@ coremetrics.com$important  # is in MVPS
 ! see coremotivesmarketing.com in _marketing_ibmmarketingcloud
 ! see cmm01.com in _marketing_ibmmarketingcloud
 
+corepsh.top  # from EasyList
+
 coretalk.co  # from Malvertising filter list by Disconnect
 
 corkysegment.com  # from EasyList
@@ -12326,13 +12231,9 @@ cortonlab.com  # from Ru AdList
 
 corulu.com  # from Ru AdList
 
-corwrite.com  # from Adguard  # Checked:2022-10-23
-
 cos.ro  # from GoodbyeAds
 
 cosatoos.com  # from uBlock filters
-
-cosimolaugh.pro  # from Adguard  # zombie  # Checked:2022-11-20
 
 cosmi.io  # from Adguard
 
@@ -12354,7 +12255,7 @@ cougarpourmoi.com$important  # dating ad network  profitsocial
 
 coull.com  # from Adguard
 
-counciladvertising.net  # from Adguard
+counciladvertising.net$important,all  # from Adguard and ABP
 
 count.be  # from GoodbyeAds
 
@@ -12375,8 +12276,6 @@ countar.de  # from Adguard
 
 countby.com  # from Adguard and  # from Ru AdList
 
-countcount.co  # from Ru AdList  # Checked:2022-11-05
-
 counted.com  # from Dan Pollock's hosts file
 
 counter.co.kz  # from MVPS
@@ -12384,8 +12283,6 @@ counter.cz  # from Dan Pollock's hosts file
 counter.de  # from Adguard
 counter.dev  # from GoodbyeAds
 counter.gd  # from Adguard
-
-counter160.com  # from Adguard  # Checked:2022-11-13
 
 counter27.ch  # from Adguard
 
@@ -12499,6 +12396,8 @@ coupwn.com  # from GoodbyeAds
 
 coursecopy.com  # from uBlock filters
 
+courteous-development.com  # from Adguard and Ru AdList
+
 coveo.com  # usageanalytics.coveo.com  # "Analytics  Content Personalization  Salesforce  digital experience"
 !+  cloud.coveo.com
 ! end of coveo.com
@@ -12558,8 +12457,6 @@ cpadna.com
 
 cpadoc.com  # from GoodbyeAds
 
-cpads.net  # cpaaffiliatesnetwork.com  # Checked:2022-11-05
-
 cpaempire.com  # from MVPS
 
 cpaevent.ru  # from Adguard
@@ -12575,7 +12472,6 @@ cpagetti.com
 cpagetti1.com
 cpagettio.com
 cpaggetti.com
-cpaggetti.ru  # Checked:2022-11-13
 ! from Ru AdList
 ##a[href*="cpagette.com"]
 ! from Ru AdList
@@ -12586,8 +12482,6 @@ cpaggetti.ru  # Checked:2022-11-13
 ##a[href*="cpagettio.com"]
 ! from Ru AdList
 ##a[href*="cpaggetti.com"]
-! from Ru AdList
-##a[href*="cpaggetti.ru"]
 
 cpagrip.com$important  # downloader ads
 
@@ -12613,7 +12507,7 @@ cpalock.com  # from Adguard
 
 cpalockup.com  # from GoodbyeAds
 
-cpam.pro  # from Adguard
+cpam.pro  # from Adguard  # Checked:2022-12-04
 
 cpamatica.com$important  # cpa ad network
 cpamatica.io$important
@@ -12673,7 +12567,7 @@ cpcjain.com  # from GoodbyeAds
 
 cpcmanager.com  # from Adguard
 
-cpex.cz$important  # from Blogscan  # there is an exclusion  # "Czech publisher exchange"
+cpex.cz$important  # from Blogscan  # there is an exclusion  # "Czech publisher exchange"  # from ABP
 
 cpfclassifieds.com  # from Adguard
 
@@ -12739,8 +12633,6 @@ cpmtree.com  # from Adguard
 cpmwork.com$important
 
 cpng.be$all  # from EasyList
-cpng.ch$all  # from EasyList  # Checked:2022-11-13
-cpng.club$all  # from EasyList  # Checked:2022-11-13
 cpng.lol$all  # from EasyList
 
 c-points.de  # from Adguard
@@ -12929,6 +12821,8 @@ credits-1.ru  # redirect
 
 credo.ru  # from Dan Pollock's hosts file
 
+cremateretainedsurname.com  # ad scripts  # is in EasyList
+
 crentexgate.com  # from Antipopads-re
 
 creoads.com  # from Antipopads-re
@@ -12963,17 +12857,20 @@ crispwireless.com  # from Malvertising filter list by Disconnect
 
 critdick.com  # zombie
 
-criteo.net$important
+criteo.net$important,all
 !+  as.criteo.net
 !+  eu.criteo.net
 !+  prod.criteo.net
 !+      vip.prod.criteo.net
+!+          hk5.vip.prod.criteo.net
 !+  us.criteo.net
-criteo.com$important  # also is in Blogscan
+criteo.com$important,all  # also is in Blogscan
 !+  as.criteo.com
+!+      hk.as.criteo.com
 !+  prod.criteo.com
 !+      vip.prod.criteo.com
 !+  us.criteo.com
+!+      da.us.criteo.com
 /criteo.$important  # is in EasyPrivacy
 
 critictruck.com  # from Peter Lowe's hosts file
@@ -13017,7 +12914,7 @@ croea.com  # from Adguard
 
 cromo.name  # from Antipopads-re
 
-crorop.com  # from Antipopads-re
+crorop.com  # from Antipopads-re  # Checked:2022-12-16
 
 crossboardmobile.com  # from Adguard
 
@@ -13097,8 +12994,6 @@ crvtrk.com  # from Adguard
 
 crwdcntrl.net$important
 
-crxbox.com  # zombie  # Checked:2022-11-20
-
 cryplister.com  # from GoodbyeAds
 
 crypto1x1.com  # from GoodbyeAds
@@ -13131,7 +13026,7 @@ cryptofxts.com  # from GoodbyeAds
 
 cryptoimgs.com  # ad scripts
 
-cryptoinfuseusa.com  # from GoodbyeAds
+cryptoinfuseusa.com  # from GoodbyeAds  # Checked:2022-12-04
 
 cryptokitties.com  # from GoodbyeAds
 
@@ -13200,6 +13095,8 @@ cshield.io  # from EasyPrivacy
 
 csht.ru  # from Ru AdList
 
+csid.com  # root redirect
+
 csjuq.com  # from GoodbyeAds
 
 csk.ru  # from GoodbyeAds
@@ -13242,7 +13139,7 @@ cten10010.com  # Lead Forensics - Tracker  # from Quidsup NoTrack-Blocklist
 
 ctenetwork.com  # from Adguard
 
-ctengine.io  # from EasyList
+ctengine.io  # from EasyList and Adguard
 
 ctitbytrk.com  # sandscp.com
 
@@ -13280,7 +13177,7 @@ cubics.com  # from Peter Lowe's hosts file
 
 cubo.ru  # from Ru AdList
 
-cucalm.com  # from Antipopads-re
+cucalm.com  # from Antipopads-re  # Checked:2022-12-16
 
 cuccu.me  # x-plarium.com  # empty root
 
@@ -13338,8 +13235,6 @@ curse.com  # from GoodbyeAds
 
 curtaincows.com  # from Peter Lowe's hosts file
 
-curtisfrierson.com  # from Adguard  # Checked:2022-10-23
-
 curtlychit.com  # from Antipopads-re
 
 curulate.com  # Curulate - Advertising  # from Quidsup NoTrack-Blocklist
@@ -13359,8 +13254,6 @@ customer.guru  # from The SNAFU Blocklist
 customerconversio.com  # from Adguard
 
 customerlabs.co  # from Adguard
-
-customerrewards.mobi$important  # Google Safe Browsing  # Checked:2022-10-23
 
 customerthermometer.com  # "email surveys"  # tracking.customerthermometer.com
 
@@ -13390,17 +13283,17 @@ cuys.ru  # ad scripts  # is in Ru AdList
 
 cvastico.com$all  # from EasyList
 
-cvdow.com  # from Adguard  # zombie  # Checked:2022-11-20
-
 cvlb.dev  # from EasyPrivacy
 
 cvtr.io  # from Adguard
 
 cw.nu   # from Dan Pollock's hosts file
 
+cwchmb.com$third-party  # from Adguard
+
 cwkuki.com  # from Adguard
 
-cwyxyw.com  # from Ru AdList
+cwyxyw.com  # from Ru AdList  # Checked:2022-12-16
 
 cxa.de  # from Dan Pollock's hosts file  # zombie
 
@@ -13428,7 +13321,7 @@ cyber-ad01.cc  # from Adguard: cyber-ad01.cc$removeparam=ip  # no root
 
 cyberads.io  # from GoodbyeAds
 
-cyberanalytics.nl  # from Adguard
+cyberanalytics.nl  # from Adguard and EasyPrivacy
 
 cyberbounty.com  # from Peter Lowe's hosts file
 
@@ -13508,6 +13401,8 @@ czapkinewerapromocja.com  # from GoodbyeAds
 
 czechcash.com  # https://xakep.ru/2019/08/27/click-interception/
 
+czilladx.com  # from EasyList
+
 czxxx.org  # from Adguard
 
 d0main.ru  # from GoodbyeAds
@@ -13535,7 +13430,7 @@ dabong247.com  # from GoodbyeAds
 
 daccroit.com  # from Ru AdList  # zombie
 
-dacebe.com  # from Antipopads-re
+dacebe.com  # from Antipopads-re  # Checked:2022-12-04
 
 dacmaiss.com  # from Antipopads-re
 
@@ -13568,8 +13463,6 @@ d-agency.net  # root 500  # from Ru AdList
 dagnar.com  # from Adguard
 
 dahit.co  # ad redirects and "Affiliate redirect" root
-
-daibusee.com  # from Adguard  # zombie  # Checked:2022-11-20
 
 dailyads4you.com  # zombie
 
@@ -13628,8 +13521,6 @@ daklatasvir.su  # ad scripts and empty root
 
 damdoor.com  # from Peter Lowe's hosts file
 
-damneddevastator.com  # Checked:2022-11-13
-
 damnetut.ru  # from Ru AdList
 
 dan.com  # parking ads
@@ -13685,8 +13576,6 @@ darakht.com  # from Dan Pollock's hosts file
 daraz.com  # from many lists
 !+  net.daraz.com
 ! end of daraz.com
-
-daredac.com  # from Ru AdList  # Checked:2022-11-20
 
 dark-reader.com$all  # from EasyList
 
@@ -13768,13 +13657,11 @@ datadoghq.eu  # 401 root  # from Peter Lowe's hosts file
 datadoghq-browser-agent.com$important  # is in EasyPrivacy
 browser-intake-datadoghq.com  # from EasyPrivacy
 
-datadome.co  # from Adguard and Ru AdList
+datadome.co  # ad scripts  # is in Adguard and Ru AdList
 
 datadsk.com  # from Adguard
 
 data-dynamic.net  # from Adguard
-
-data-ero-advertising.com  # from GoodbyeAds  # Checked:2022-11-04
 
 dataeye.ro  # from GoodbyeAds
 
@@ -13825,8 +13712,6 @@ datasense.fr
 
 datasteam.io  # is in EasyPrivacy
 dtstmio.com
-
-datastorage.pw  # Checked:2022-11-20
 
 datatech.es  # from Dan Pollock's hosts file
 
@@ -13886,8 +13771,6 @@ dateszone.net  # from GoodbyeAds
 
 datethatgirls.com  # from GoodbyeAds
 
-date-this-supergirl3.com  # from GoodbyeAds  # Checked:2022-11-04
-
 datetraders.com  # from GoodbyeAds
 
 datewon.net  # from GoodbyeAds
@@ -13927,7 +13810,7 @@ dating-exchange.com  # from Ru AdList
 
 dating-for-you1.com  # from GoodbyeAds
 
-datingforyour1.com  # idates.com  # zombie
+datingforyour1.com  # idates.com  # zombie  # Checked:2022-12-16
 
 datinggold.com$important  # ad network  # is in Adguard
 
@@ -13988,10 +13871,6 @@ datxxx.com
 
 dauiel.com  # from GoodbyeAds
 
-daunteegyptian.pro  # from Adguard  # zombie  # Checked:2022-11-20
-
-daurnkakaomail.com  # zombie  # Checked:2022-11-20
-
 dauup.com  # DAU-UP - Advertising  # from Quidsup NoTrack-Blocklist
 
 davarello.com  # from Ru AdList
@@ -14016,11 +13895,12 @@ dazeads1.online  # Unknown - Advertising  # from Quidsup NoTrack-Blocklist
 
 dbank.com  # https://steamcommunity.com/groups/penguindome/discussions/14/1837937637884911934/  # https://www.reddit.com/r/privacy/comments/fflu4m/chinese_domains/  #openapi5.dbank.com
 dbankcdn.com  #appdl2.dbankcdn.com  #appdl3.dbankcdn.com
-dbankcloud.asia  #grs.dbankcloud.asia
+dbankcloud.asia  #grs.dbankcloud.asia  # now is in Adguard
 dbankcloud.com  #grs.dbankcloud.com
-dbankcloud.cn  #grs.dbankcloud.cn
+dbankcloud.cn  #grs.dbankcloud.cn  # now is in Adguard
 !+  cloud.dbankcloud.cn
-dbankcloud.eu  #grs.dbankcloud.eu
+dbankcloud.eu  #grs.dbankcloud.eu  # now is in Adguard
+dbankcloud.ru  # from Adguard
 
 dbbp1.net$all  # from EasyList
 dbbp1.pro  # from EasyList
@@ -14040,8 +13920,6 @@ d-bi.fr  # from Adguard
 dbios.org  # from Dan Pollock's hosts file
 
 dblks.net  # from EasyList
-
-dblpmp.com  # from EasyList  # Checked:2022-11-20
 
 dbvault.net  # from Adguard
 
@@ -14093,8 +13971,6 @@ dealerinspire.com  # "connected marketing"  # ad scripts
 !+  conversations.dealerinspire.com
 !+  dev.dealerinspire.com
 ! end of dealerinspire.com
-
-dealfast.site  # "investors"  # zombie  # Checked:2022-11-20
 
 deals.net
 
@@ -14156,7 +14032,7 @@ deckaffiliates.com  # from GoodbyeAds
 
 decknetwork.net$important  # from Peter Lowe's hosts file
 
-decktrade.com  # ad network
+decktrade.com  # ad network  # Checked:2022-12-16
 
 declk.com$all  # from uBlock filters
 
@@ -14181,8 +14057,6 @@ dedicated.domains  # from GoodbyeAds
 dedicatedmedia.com$important
 
 dedicatednetworks.com  # from Adguard
-
-dediom.com  # from GoodbyeAds  # Checked:2022-11-13
 
 deecash.com  # from GoodbyeAds
 
@@ -14216,8 +14090,6 @@ definemedia.de  # from Blogscan
 
 definitial.com  # from Adguard
 
-defiques.com  # from Ru AdList  # zombie  # Checked:2022-11-20
-
 def-platform.com  # from Adguard
 def-platform.de  # from Adguard
 def-platform.net  # from Adguard
@@ -14240,6 +14112,8 @@ delegatediscussion.com  # from Peter Lowe's hosts file
 
 delen.ru
 
+deleterasks.digital$all  # from EasyList
+
 deliads.com  # from Dan Pollock's hosts file
 
 delidatax.net$important  # from Adguard and Blogscan
@@ -14254,7 +14128,7 @@ delikatsov.com  # from Ru AdList and Adguard
 
 delivered-by-madington.com  # from Blogscan
 
-deliverimp.com  # Unknown - Tracker  # from Quidsup NoTrack-Blocklist
+deliverimp.com  # Unknown - Tracker  # from Quidsup NoTrack-Blocklist and Adaway
 
 deliverydom.com  # from EasyList
 
@@ -14263,8 +14137,6 @@ deliverymodo.com  # from MVPS
 deliverysapgoblet.com  # from Ru AdList
 
 dellivers.info  # from GoodbyeAds
-
-delmlk.com  # from Ru AdList  # Checked:2022-11-20
 
 delmovip.com  # ads
 
@@ -14284,11 +14156,33 @@ delovoemesto.ru  # ad scripts and no root
 
 de-lovoo.com  # strange redirects and Google root
 
-delta-boa.com  # from Dan Pollock's hosts file  # zombie  # Checked:2022-11-20
-
 deltaction.com  # from Adguard
 
 deltadna.com
+deltadna.net  # 401 root
+    ! balanced-collect.deltadna.net  # from Adaway
+    ! balanced-engage.deltadna.net  # from Adaway
+    ! collect10791rllrc.deltadna.net  # from Adaway
+    ! collect10854wrdcr.deltadna.net  # from Adaway
+    ! collect11136gwntd.deltadna.net  # from Adaway
+    ! collect12348wrdvs.deltadna.net  # from Adaway
+    ! collect12981wrdfl.deltadna.net  # from Adaway
+    ! collect17070dvntr.deltadna.net  # from Adaway
+    ! collect2585gmsfw.deltadna.net  # from Adaway
+    ! collect3515gvrnr.deltadna.net  # from Adaway
+    ! collect4739mgndm.deltadna.net  # from Adaway
+    ! collect5081wrdch.deltadna.net  # from Adaway
+    ! engage10665dd4kq.deltadna.net  # from Adaway
+    ! engage10791rllrc.deltadna.net  # from Adaway
+    ! engage10854wrdcr.deltadna.net  # from Adaway
+    ! engage11442ldybg.deltadna.net  # from Adaway
+    ! engage12348wrdvs.deltadna.net  # from Adaway
+    ! engage12981wrdfl.deltadna.net  # from Adaway
+    ! engage13764wrdst.deltadna.net  # from Adaway
+    ! engage17070dvntr.deltadna.net  # from Adaway
+    ! engage3515gvrnr.deltadna.net  # from Adaway
+    ! engage5081wrdch.deltadna.net  # from Adaway
+    ! engage8829thscr.deltadna.net  # from Adaway
 
 deltago.com  # from Adguard
 
@@ -14333,11 +14227,9 @@ demoup.com
 
 demuz.ru  # from Ru AdList  # zombie
 
-denakop.com  # from Adguard
+denakop.com  # from Adguard  # Denakop - Advertising  # from Quidsup NoTrack-Blocklist
 
 dendrito.name  # from Antipopads-re
-
-denety.com  # from Antipopads-re  # Checked:2022-11-05
 
 dengage.com  # from GoodbyeAds
 
@@ -14357,6 +14249,8 @@ deobp.com  # from Adguard
 deostr.com  # from MVPS
 
 departapp.com  # browser tracker  # [Google / DoubleClick][AS15169]  # from MVPS
+
+depekt.com  # from EasyList
 
 deployads.com$important  # ad scripts  # is in Peter Lowe’s Ad and tracking server list
 
@@ -14383,15 +14277,11 @@ derkeiler.com  # from Dan Pollock's hosts file
 
 dermtrk.com  #printrk.com
 
-derzhava.click  # from GoodbyeAds  # Checked:2022-11-04
-
 desadu.com  # from EasyList
 
 desbloqueador.org$important  # 404 root: "Sorry, we could not find any content for this web address. Please check the URL."
 
 descow.com  # from EasyList
-
-descrydorado.xyz  # zombie  # Checked:2022-11-20
 
 desert.ru  # from Adguard
 
@@ -14420,8 +14310,6 @@ destyy.com  # from uBlock filters  # from Adguard: destyy.com$removeheader=reque
 
 detailedglue.com  # from Peter Lowe's hosts file
 detailedgovernment.com  # from Peter Lowe's hosts file
-
-detail-pl.me  # from GoodbyeAds  # Checked:2022-11-04
 
 detaires.com  # from Ru AdList
 
@@ -14478,11 +14366,11 @@ device9.com  # from Adguard
 
 devicer.co  # from GoodbyeAds
 
-devidework.com  # from GoodbyeAds
+devidework.com  # from GoodbyeAds  # Checked:2022-12-04
 
 devis-abri-de-piscine.fr  # from Dan Pollock's hosts file
 
-devkiforyou.org  # from Adguard
+devkiforyou.org  # from Adguard  # Checked:2022-12-16
 
 devochki.cz  # from Ru AdList
 
@@ -14506,15 +14394,11 @@ dewrain.life  # Kochava - Tracker  # from Quidsup NoTrack-Blocklist
 dewrain.site  # Kochava - Tracker  # from Quidsup NoTrack-Blocklist
 dewrain.world  # Kochava - Tracker  # from Quidsup NoTrack-Blocklist
 
-dexim.space  # from Adguard  # Checked:2022-11-05
-
 deximedia.com  # from MVPS
 
 dexplatform.com  # from Adguard
 
 dezisparum.com  # from Ru AdList
-
-dfasxm.biz  # from Adguard  # zombie  # Checked:2022-11-20
 
 dfbanners.com  # from GoodbyeAds
 
@@ -14573,11 +14457,11 @@ diaspora-news.com  # from Dan Pollock's hosts file
 
 dia-traffic.com  # from MVPS
 
-dicarlotrack.com  # from MVPS  # Checked:2022-11-04
-
 dicki.net  # from Ru AdList
 
-didata.bw  # from Dan Pollock's hosts file
+dicrol.com  # from EasyList
+
+didata.bw  # from Dan Pollock's hosts file  # Checked:2022-12-04
 
 dididzroxa.ml  # from Ru AdList
 
@@ -14771,13 +14655,13 @@ dinclinx.com  # from Adguard
 
 dioguinho.pt
 
-dioneperson.pro  # from Adguard  # zombie  # Checked:2022-11-20
-
 diradvert.ru  # from Ru AdList
 
 dircash-promost.com  # from Adguard
 
 dircont3.com$important  # is in AdGuard, EasyPrivacy, RU AdList
+
+direce.com  # from EasyList
 
 directaclick.com  # from Peter Lowe's hosts file
 
@@ -14841,6 +14725,8 @@ directrev.com  # from Dan Pollock's hosts file
 
 directrix.ru  # from Adguard
 
+directshopping.pro  # from EasyList
+
 directstar.ru
 
 direct-stats.com  # from MVPS
@@ -14885,6 +14771,8 @@ discreetfield.com  # from Peter Lowe's hosts file
 
 dishphysics.com$all  # from EasyList
 
+dismountpoint.com  # from EasyList
+
 dispatchbot.com  # appads
 
 dispatchunique.com  # from EasyPrivacy
@@ -14911,8 +14799,6 @@ displaymarketplace.com  # from Adguard
 
 displaynetworkcontent.com  # from Antipopads-re
 
-displaypagerank.com  # from Malvertising filter list by Disconnect  # Checked:2022-11-20
-
 displaytag.net  # from Dan Pollock's hosts file
 
 displayvertising.com  # Unknown - Advertising  # from Quidsup NoTrack-Blocklist
@@ -14922,6 +14808,8 @@ disploot.com$important  # ad scripts  # is in EasyList
 disply.me  #qualityestudio.com
 
 dispop.com  # from Adguard
+
+disq.us  # "The disq.us domain is used for outbound links from Disqus to provide accurate referral traffic data"  # is in Adaway
 
 distantnews.com  # from EasyList
 
@@ -14946,8 +14834,6 @@ districtm.ca$important  # ad scripts  # is in Peter Lowe’s Ad and tracking ser
 distroscale.com  # from Blogscan
 
 disurm.com  # from EasyList
-
-ditds.xyz  # from Adguard  # Checked:2022-11-05
 
 divascam.com  # from Adguard
 
@@ -14983,6 +14869,8 @@ dizee-ptp.com  # ads  "Bienvenue sur dizee-ptp"
 
 dizzcloud.com  # from Dan Pollock's hosts file
 
+dizzy-illegal.pro  # from EasyList
+
 djaxadserver.com  # from GoodByeAds
 
 djers.com  # from Adguard
@@ -15004,6 +14892,8 @@ dl8.me  # from Adguard
 dle-news.info  # from Ru AdList
 
 dl-rms.com  # from Adguard
+
+dlstngulshedates.net$all  # from EasyList
 
 dltags.com  # from Adguard
 
@@ -15041,6 +14931,8 @@ dmdi.pl  # from Adguard
 dm-event.net  # from Adguard
 
 dmgmediaprivacy.co.uk  # DMG - Advertising  # from Quidsup NoTrack-Blocklist
+
+dmgpak.com  # "Diversified Marketing Group"  # scam subdomains: paypal-verification.dmgpak.com
 
 dmnprx.com  # from Antipopads-re
 
@@ -15084,8 +14976,6 @@ dnsdelegation.io  # from Dan Pollock's hosts file  # is in Adguard  # 404 root
 
 dns-upload.com  # from Dan Pollock's hosts file
 
-dntrax.com  # from Antipopads-re  # Checked:2022-11-13
-
 dnt-userreport.com  # from EasyPrivacy
 
 dntx.com  # from MVPS
@@ -15122,9 +15012,9 @@ doclix.com  # from Adguard
 
 docodoco.jp  # from Adguard
 
-docomo-analytics.com  # from Adguard
+docomo.ne.jp  # root 404
 
-docthomasimaging.com  # ad redirects  # my4offer.com  # Checked:2022-11-20
+docomo-analytics.com  # from Adguard
 
 doctopdfplus.com  # "Not Found" root
 
@@ -15139,8 +15029,6 @@ doctortrust.me  # from Ru AdList
 ! see docusign.com in _marketing_salesforce
 
 dodostats.com  # from MVPS
-
-doesxyz.com  # from Adguard  # Checked:2022-11-04
 
 dofunapps.com$important
 !ads.dofunapps.com
@@ -15212,7 +15100,7 @@ domainnamesales.com  #[Parking.Service]  # from MVPS
 
 domainplayersclub.com  # from MVPS
 
-domainport.net  # from Dan Pollock's hosts file
+domainport.net  # from Dan Pollock's hosts file  # Checked:2022-12-23
 
 domainsponsor.com  # from Peter Lowe's hosts file
 
@@ -15290,6 +15178,8 @@ donreach.com  # from Adguard
 
 donschaffer.com  # from GoodbyeAds
 
+donstick.com  # from EasyList
+
 dont.pl  # from GoodbyeAds
 
 dontbeevils.de  # from GoodbyeAds
@@ -15300,15 +15190,13 @@ donttbeevils.de  # from GoodbyeAds
 
 doodlemobile.com  # nginx default root and ad subdomains  # from Adguard
 
-dooloust.net  # from GoodbyeAds
+dooloust.net$all  # from GoodbyeAds and Adguard
 
 doom-afterburn.de  # from GoodbyeAds
 
 doomail.org  # from Adguard
 
 doomna.com  # from Adguard
-
-doorbellbadge.com  # from GoodbyeAds  # Checked:2022-11-04
 
 doorbrazil.com  # from Adguard
 
@@ -15339,6 +15227,8 @@ dordtsaccordeoncentrum.nl  # from GoodbyeAds
 doreenblog.online  # from GoodbyeAds
 
 doremido.com  # from GoodbyeAds
+
+dorful.com  # from EasyList
 
 dorgroup.com  # from Adguard
 
@@ -15447,6 +15337,8 @@ dotomi.com$important  # valueclick  # is in Malvertising filter list by Disconne
 
 dotzup.com  # from GoodbyeAds
 
+doubat.com  # from EasyList
+
 double.net  # from Adguard
 
 double6affiliation.com  # from GoodbyeAds
@@ -15513,7 +15405,11 @@ doubleverify.com$important  # Fingerprinting service, see https://publications.s
 !+  srv.doubleverify.com
 ! end of doubleverify.com
 
+doubleview.online  # from Ru AdList
+
 doubtfulrainstorm.com  # from Peter Lowe's hosts file
+
+dougale.com$all  # from Adguard
 
 dougartinus.com  # from Ru AdList
 
@@ -15575,8 +15471,6 @@ downloadpirate.com  # 403 root  # from uBlock filters: ||downloadpirate.com/sw.j
 
 download-portal.net  # from EasyList
 
-downloadr.xyz  # from Peter Lowe's hosts file  # Checked:2022-11-13
-
 download-ready.net  # from EasyList
 
 download-ready-now.com$all  # from uBlock filters
@@ -15637,7 +15531,7 @@ dragonawaken.com  # from Dan Pollock's hosts file
 
 dragonparking.com  # from Energized Blu
 
-dragpro.ru  # from Ru AdList
+dragpro.ru  # from Ru AdList  # Checked:2022-12-23
 
 dragzebra.com  # from Peter Lowe's hosts file
 
@@ -15663,6 +15557,8 @@ dreamteaser.ru  # from Adguard
 
 dressipi.com  # Unknown - Tracker  # from Quidsup NoTrack-Blocklist
 
+dribbleads.com$all  # from EasyList
+
 driftawayforfun.com
 ! from Ru AdList
 ##[href*="driftawayforfun.com"]
@@ -15674,8 +15570,6 @@ driftt.com  # Drift - Tracker  # from Quidsup NoTrack-Blocklist
 drip.com$important  # drip (drip.com) - DRM brands, embedded
 
 driv-analytics.com  # Unknown - Tracker  # from Quidsup NoTrack-Blocklist
-
-drive20now.com  # zombie  # Checked:2022-11-20
 
 driveback.ru$important
 
@@ -15691,13 +15585,9 @@ drivotracker.com  # from GoodbyeAds
 
 drlyy.com  # from Ru AdList
 
-drnxs.com  # from Adguard  # Checked:2022-11-05
-
 d-road.com  # from GoodbyeAds
 
 drochnika.com  # zombie  # Checked:2022-11-20
-
-droopingmore.com  # from Antipopads-re  # Checked:2022-11-13
 
 dropbox-dns.com  # ad scripts and empty root
 
@@ -15706,15 +15596,13 @@ dropgalaxy.in$important  # dropgalaxy.com  # zombie  # don't remove  # Checked:2
 dropgalaxy.vip$important  # dropgalaxy.com
 /dropgalaxycom.min.js$important
 
-drowle.com  # from Dan Pollock's hosts file
+drowle.com  # from Dan Pollock's hosts file  # Checked:2022-12-16
 
 drozd.red  # ad links  # маркетинговое агенство
 
-drprofit.ru$important  # ad scripts
+drprofit.ru$important  # ad scripts  # Checked:2022-12-04
 
 drs24.com  # from Adguard
-
-drtbn.com  # from Adguard  # Checked:2022-11-13
 
 drtladv.com  # from EasyList
 
@@ -15730,13 +15618,17 @@ drumup.io
 
 drunk-porno.net  # redirect
 
+drupta.com  # from EasyList
+
 drydrum.com  # from Peter Lowe's hosts file
 
 drylnk.com  # from Antipopads-re
 
 dryum.ru  # from GoodbyeAds and Ru AdList
 
-dsail-tech.com  # ad scripts  # is in Ru AdList
+ds360.co  # ad tracking images (ds360.co/track/index.php?code=...) and no root
+
+dsail-tech.com  # ad scripts  # is in Ru AdList and EasyPrivacy
 
 dsccams.com  # from uBlock filters
 
@@ -15758,9 +15650,7 @@ dsnr-affiliates.com  # from Adguard  # zombie
 
 dsnrmg.com$important
 
-dsnrtg.com  # from Ru AdList
-
-dsources.com  # Checked:2022-11-20
+dsnrtg.com  # from Ru AdList  # Checked:2022-12-04
 
 dsp.io  # from Peter Lowe's hosts file
 
@@ -15779,6 +15669,8 @@ dspsuper.com  # from EasyList
 dspultra.com  # from EasyList
 
 dspunion.com  # ad requests and no root  # is in Adguard
+
+dspx.tv  # from EasyPrivacy
 
 dsstrk.com  # from EasyList
 
@@ -15815,6 +15707,8 @@ dtmpub.com  # from Adguard
 dtprofit.com  # from Adguard
 
 dtrck.net  # Unknown - Tracker  # from Quidsup NoTrack-Blocklist
+
+dtscdn.com  # from Adaway  # no root
 
 dtscout.com$important
 
@@ -15900,13 +15794,15 @@ durasser.com  # ad redirects and 404 root
 
 durationmedia.net$important  # ad scripts  # is in Adguard and Blogscan
 
+durits.com  # from EasyList
+
 durrent.com  # from uBlock filters
 
 dutchsales.org  # from Dan Pollock's hosts file
 
 dutrag.com  # from Antipopads-re
 
-dvanadva.ru  # ad scripts and "ok!" root
+dvanadva.ru  # ad scripts and "ok!" root  # is in Ru AdList
 
 dv-bay.com  # aichat
 
@@ -15929,6 +15825,8 @@ dxaffiliates.com  # cpa ad network
 dxatrk.com  #printrk.com
 
 dxglobal.com  #dentsuaegis.ru
+
+dxsvr.com  # from Adaway  # no root
 
 dx-tv.com  # from uBlock filters
 
