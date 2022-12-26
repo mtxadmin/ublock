@@ -598,13 +598,17 @@ beacon.wikia-services.com  #https://beacon.wikia-services.com/__track/
 ||browser-update.  # from uBlock filters - Badware: ||browser-update.*.top^
 
 ! chatbots and noisy consultants on sites
-/chat.$domain=~bizon365.ru|~domclick.ru|~etutorium.com|~worknf.ru
+/chat.$domain=~bizon365.ru|~openai.com|~domclick.ru|~etutorium.com|~worknf.ru
+! Exclusions:
+! openai.com - chatbot, not embedded, just single-user AI
+chat.buymeacoffee.com
 chat.olx.kz
 chat.olx.ua
 chat.olx.uz
 chat.c.prom.st  # chatbot from prom.ua
 chat.sarbacane.com
 chat.slb.com
+chat.my.tiu.ru
 chat.wildberries.ru
 
 /clk.
@@ -2883,7 +2887,6 @@ sadmin.brightcove.com  # sadmin.brightcove.com/js/BrightcoveExperiences.js
 datadump.buildfire.com  # "app builder"
 
 api.buymeacoffee.com
-chat.buymeacoffee.com
 
 pixiedust.buzzfeed.com  # buzzfeed.com - Tracker  # from Quidsup NoTrack-Blocklist
 
@@ -3690,6 +3693,7 @@ pop.mrstiff.com  # from Adguard
 
 api-marketolog.mts.ru  # from Ru AdList
 client-analytics.mts.ru  # from EasyPrivacy
+l.mts.ru  # ads
 mtsopros.mts.ru  # ad xhrs
 
 a.multik-online.net  # from Ru AdList  # zombie
@@ -4242,8 +4246,6 @@ ads.tiscali.fr  # from Dan Pollock's hosts file
 ads.tiscali.it  # from Dan Pollock's hosts file
 ss.tiscali.it  # from Dan Pollock's hosts file
 
-chat.my.tiu.ru
-
 adv-cdn.tnt-online.ru
 
 elc.tomsk.ru  # from GoodbyeAds
@@ -4504,8 +4506,8 @@ beacon-all.walmart.com
 beacon-all.walmart.com.akadns.net
 beacon-cdn.walmart.com
 beacon-cdn.walmart.com.akadns.net
-tracking01.walmart.com  # from Peter Lowe's hosts file
 drfdisvc.walmart.com  # from Adaway
+tracking01.walmart.com  # from Peter Lowe's hosts file
 
 cpm.wargaming.net  # from Adguard
 rdr.wargaming.net  # from Adguard
@@ -4532,6 +4534,8 @@ cdn-promote.weebly.com  # from Adguard: ||cdn-promote.weebly.com/js/dist/lead-fo
 
 alitui.weibo.com  # from MobileAdTrackers
 game.weibo.com  # from MobileAdTrackers
+
+blue.wfla.com  # https://blue.wfla.com/script.js  # EasyPrivacy rule: ://blue.*/script.js
 
 d.wi-fi.ru  # from Ru AdList
 dmp.wi-fi.ru
