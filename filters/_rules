@@ -2182,7 +2182,10 @@ _tizers.  # from Ru AdList
     ##.promo_line
     ##.promo_widget
 ##[id*="-promo"]:not(html):not(body):not(article)
-~aliexpress.com,~aliexpress.ru,~stepik.org,~yoomoney.ru##[class*="-promo"]:not(html):not(body):not(article):not(.node-promoted):not(.content)
+~aliexpress.com,~aliexpress.ru,~stepik.org,~yoomoney.ru##[class*="-promo"]:not(html):not(body):not(article):not(.node-promoted):not(.content):not(.content__header)
+    ! Exclusions:
+    ! cbsnews.com: "content__header  content__header--no-promo", but it has "yes-promos". Added ".content__header"
+    !
     ! delikateska.ru##.header-promo-container
     ! popup
     ! exam-labs.com##.quick-registration-promo
