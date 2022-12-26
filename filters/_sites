@@ -5269,6 +5269,7 @@ dns-shop.ru,dns-shop.kz##.homepage-brands
     ! всплывающие окна
 dns-shop.ru,dns-shop.kz,technopoint.ru##.confirm-city-mobile
 dns-shop.ru,dns-shop.kz,technopoint.ru##.v-confirm-city-mobile
+dns-shop.ru,dns-shop.kz,technopoint.ru##.v-confirm-city
 dns-shop.ru,dns-shop.kz,technopoint.ru###page-notification
 dns-shop.ru,dns-shop.kz,technopoint.ru##.dropdown-city
 dns-shop.ru,dns-shop.kz,technopoint.ru##.info-widget_warning.info-widget
@@ -7854,6 +7855,9 @@ github.io##.site-avatar
 !
 ||airtucha.github.io/SortVis/savonia.png
 !
+!totop
+astronvim.github.io##.theme-back-to-top-button
+!
 sergiotocalini.github.io##.post:style(margin-top:0px !important)
 sergiotocalini.github.io###btn-top
 !
@@ -8417,8 +8421,10 @@ habr.com##.layout__row_navbar:style(position:static !important)
 habr.com##.sidebar_right_sticky:style(position:static !important)
 habr.com##.sidebar_right_stick-top:style(position:static !important)
 habr.com##.tm-base-layout__header:style(position:static !important)
-habr.com##.tm-sexy-sidebar:style(position:static !important)
 habr.com##.tm-article-sticky-panel:style(position:static !important)
+habr.com##.tm-sexy-sidebar:style(position:static !important)
+! филлер к правилу про fixed "sexy sidebar". Без него (с ним) сайдбар прыгает-мерцает
+habr.com##.tm-layout-sidebar__placeholder_stick-top
     ! banners and sponsor posts
 habr.com##.default-block:has-text(Хабр рекомендует)
 habr.com##.post_preview:has-text(Блог компании ТechMedia)
@@ -8445,6 +8451,7 @@ habr.com##.vacancy-banner-slider
 habr.com##.tm-stories-block
 habr.com##.tm-company-profile-card
 habr.com##.tm-company-snippet__description
+habr.com##.tm-companies-rating
     ! popups
 habr.com##.tm-notification
 habr.com##.Vue-Toastification__container
@@ -8479,6 +8486,7 @@ habr.com##a[href^="https://clck.ru/"]
 habr.com##a[href^="https://vdsina.ru/"]
 habr.com##a[href^="https://about.me/"]
 habr.com##a[href^="https://www.globalsign.com/"] > img
+habr.com##.spoiler:has(a[href*="wunderfund.io"])
     ! remove ads from posts list
 ! Mvideo SMM (and links)
 habr.com##.tm-articles-list__item:has(a.tm-user-info__username[href$="/fedorborovitsky/"]):not(:matches-path(/posts/))
@@ -15869,6 +15877,8 @@ phoenixnap.com##.topbutton.ct-link
 ! inline related links
 phoenixnap.com##.ct-div-block:has(>a)
 phoenixnap.com##.ct-shortcode
+! empty toc
+phoenixnap.com##.ftwp-wrap
 
 phonedady.com##.selector-wrapper
 
@@ -18803,6 +18813,8 @@ sberbank.com##.bc-container
 sberbank.ru##.bc-container
 sberbank.ru##.sb-include
 sberbank.ru##.header__logo-image
+! забытый и посему долго тестированный локально фильтр, вполне актуальный и рабочий. Для чего он, уже не помню, но точно ничего не ломает
+online.sberbank.ru##svg > g
 
 sberbank-ast.ru###sb_ast_loan_banner
 
@@ -21386,6 +21398,26 @@ thestreet.com##.m-flex-nav--left-engagement
 thestreet.com##.m-site-nav--brand-logos
 thestreet.com##.m-detail--feature-spacer
 
+    ! top
+the-sun.com###logo-mini
+the-sun.com##.sun-header-bg:style(position:static !important)
+the-sun.com##.scrolling:style(position:static !important)
+the-sun.com##.sun-header--nav:style(position:static !important)
+the-sun.com##.sun-header-bg
+the-sun.com##.sun-header--nav:style(margin-left:0px !important)
+the-sun.com##.sub-nav__container:style(top:auto !important)
+the-sun.com##.main-content-wrap:style(padding-top:0px !important)
+the-sun.com##.featured-video-container
+the-sun.com##.sub-nav__container:style(position:static !important)
+    ! banners and promos
+the-sun.com##.article-boxout
+the-sun.com##.digital-personalisation
+the-sun.com##.sim-module-wrapper
+the-sun.com##.advert-wrapper
+the-sun.com###sidebar
+the-sun.com##.billboard
+    ! other
+
 thesurlyadmin.com##.grofile
 
 blog.thesysadmins.co.uk##.section.header
@@ -23806,6 +23838,14 @@ westernjournal.com##.admiral-btn-container:style(position:static !important; tra
 ||weter-peremen.org/*/fons.jpg
 ||weter-peremen.org/images/fmk280x90.jpg
 ||weter-peremen.org/images/prokat_210x90.jpg
+
+    ! videos
+wfla.com##.video-playlist
+wfla.com##.ns-block-embed-anvato
+    ! other
+wfla.com##.site-footer__content
+wfla.com##.alert-banners
+wfla.com##.site-header__weather
 
 whatsabyte.com##.scrollmagic-pin-spacer
 whatsabyte.com##.header__top
@@ -26487,3 +26527,9 @@ krysha.kg##.h-top-branding
 krysha.kg##.c-app-banner
 krysha.kg##.l-footer__bottom
 krysha.kg##.c-listing__banner
+
+linuxjournal.com##.material-icons
+
+lunarvim.org##[class^=lightrope]
+lunarvim.org##[class^=fallingStar]
+lunarvim.org##[class^=announcementBar]
