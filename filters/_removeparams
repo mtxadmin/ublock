@@ -57,7 +57,10 @@ $removeparam=advertisementId
     ! lotto.web.de$removeparam=advertisementId  # from Adguard
     ! ||lotto.gmx.*^$removeparam=advertisementId  # from Adguard
 
+$removeparam=adv_id  # good old rule from Prx: adv_id (one of)
+
 $removeparam=/^aff_/,important
+    ! good old rule from Prx: aff (one of)
     ! $removeparam=aff_platform  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
     ! $removeparam=aff_trace_key  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
     ! ||aliexpress.$removeparam=aff_fcid  # from Adguard
@@ -69,6 +72,7 @@ $removeparam=/^aff_/,important
     ! ||aliexpress.$removeparam=aff_fsk  # from Adguard
     ! iqbroker.com$removeparam=aff_model  # from Adguard
 $removeparam=/^affi/
+    ! good old rule from Prx: affilate (one of)
     ! cyberlink.com$removeparam=affid  # from Adguard
     ! ||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest  # from Adguard
     ! dhits.docomo.ne.jp$removeparam=affiliate  # from Adguard  # blocked
@@ -409,6 +413,9 @@ $removeparam=linkid
     ! awin1.com$removeparam=linkid  # from Adguard
     ! humblebundle.com$removeparam=linkID  # from Adguard
 
+$removeparam=link_id  # good old rule from Prx: link_id (one of)
+    ! elgato.com$removeparam=link_id  # from Adguard
+
 $removeparam=maf  # from Adguard
 
 $removeparam=mbid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
@@ -514,6 +521,8 @@ $removeparam=oref
     ! nextgov.com$removeparam=oref  # from Adguard
     ! $removeparam=oref,domain=defenseone.com|govexec.com|nextgov.com|route-fifty.com  # from Adguard
 
+$removeparam=partner  # good old rule from Prx: partner (one of)
+
 $removeparam=partnerId
     ! ||lotto.gmx.*^$removeparam=partnerId  # from Adguard
     ! lotto.web.de$removeparam=partnerId  # from Adguard
@@ -563,6 +572,7 @@ $removeparam=publisherID  # from ABP
 $removeparam=pulse_traffic  # from Ru AdList
 
 $removeparam=/pvid$/
+    ! good old rule from Prx: pvid (one of)
     ! Found independently. Confirmed by months of testing.
     ! aliexpress.com$removeparam=ad_pvid
     ! aliexpress.ru$removeparam=ad_pvid
@@ -638,6 +648,7 @@ $removeparam=/referrer/$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5vztmjur
     ! Exclusions:
     ! twitter - inner(!) error while scrolling (in https://twitter.com/i/api/graphql/ ). Also see #52
     !
+    !ood old rule from Prx: referer (one of)
     ! $removeparam=/^referer.*/
         ! $removeparam=referer
         ! referer=$xhr,removeparam=|referer=,domain=kp.ru  # kp.ru by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-727253269
@@ -667,6 +678,9 @@ $removeparam=refid
     ! linkedin.com$removeparam=refId  # from NeatURL and Adguard
     ! netgames.de$removeparam=refID  # from Adguard
 
+$removeparam=revid  # good old rule from Prx: revid (one of)
+$removeparam=rev_id  # good old rule from Prx: rev_id (one of)
+
 $removeparam=rid,domain=~russianfood.com
     !  russianfood.com: rid=ReceptId
     ! amazon.*$removeparam=rid  # Found independently
@@ -694,6 +708,7 @@ $removeparam=s_cid  # Campaign tracking (Omniture)  # https://moz.com/community/
 
 ! Chinese tracking parameters.
 $removeparam=scm
+    ! good old rule from Prx: scm (one of)
     ! is in NeatURL and Adguard. Confirmed by months of testing.
     !aliexpress.com$removeparam=|scm
     !aliexpress.ru$removeparam=|scm
@@ -713,6 +728,7 @@ $removeparam=scm-url
     !aliexpress.com$removeparam=|scm-url
     !aliexpress.ru$removeparam=|scm-url
 $removeparam=spm
+    ! good old rule from Prx: spm (one of)
     ! is in NeatURL Adguard, Ru AdList. Confirmed by months of testing.
     !aliexpress.com$removeparam=|spm
     !aliexpress.ru$removeparam=|spm
@@ -814,6 +830,8 @@ $removeparam=srcc$important
     !@@||przegladsportowy.pl/*&srcc=ucs$removeparam  # from Adguard
 
 $removeparam=/^stm_.*/  # Campaign tracking (stm)  # from NeatURL
+
+$removeparam=subprogram_id  # good old rule from Prx: subprogram_id (one of)
 
 $removeparam=tag
     agoda.com$removeparam=tag  # from Adguard
@@ -943,6 +961,8 @@ $removeparam=vero_id  # Campaign tracking (Vero)  # https://help.getvero.com/art
 $removeparam=wbraid  # Google ads/analytics  # from Adguard
 
 $removeparam=wickedid  # from Adguard
+
+$removeparam=ws_ab_test  # good old rule from Prx: ws_ab_test (one of)
 
 $removeparam=wt_mc  # Zeit.de general parameter  # from NeatURL  # is in Adguard
 $removeparam=wt_zmc  # Zeit.de general parameter  # from NeatURL
@@ -1199,7 +1219,6 @@ ebay.*$removeparam=var  # from NeatURL
 
 elgato.com$removeparam=attribution_window  # from Adguard
 elgato.com$removeparam=contact_id  # from Adguard
-elgato.com$removeparam=link_id  # from Adguard
 elgato.com$removeparam=platform  # from Adguard
 elgato.com$removeparam=token  # from Adguard
 
