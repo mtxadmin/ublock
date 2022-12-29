@@ -4062,9 +4062,15 @@ citilink.ru##.link-between-card-banners_pageevents-js
 citilink.ru##.toggling_banners
 citilink.ru##a[href^="/promo/"]
 ||citilink.ru/media/home/main_top_right.jpg
-citilink.ru##.Tooltip__content
+!citilink.ru##.Tooltip__content - don't
 citilink.ru##.Main__slider-wrapper
 citilink.ru##.ProductLabelsSet
+citilink.ru##.ProductPageConsultationSection__ask-expert-block
+citilink.ru##.ProductCardLayoutNEW__actions
+citilink.ru##.ProductPageBonusesSection
+citilink.ru##.ProductPageCreditSection__credit-block.ProductPageCreditSection__block
+citilink.ru##.ProductCardLayoutNEW__services
+citilink.ru##.ProductPageBadgesSection
     ! striked prices
 citilink.ru##.old_price
 citilink.ru##.ProductCardVerticalPrice__price-old__price
@@ -4077,6 +4083,10 @@ citik.ru/api/saveMetrics
 ||citilink.ru/*/saveMetrics
 !citilink.ru/frontend-monitoring.service/api/saveMetrics
 ||citilink.ru/geo/
+    ! unneeded icons
+||citilink.ru/media/svg/Pickup.svg
+||citilink.ru/media/svg/ProductDeliveryCar.svg
+||citilink.ru/media/svg/ProductDeliveryCarGrey.svg
     ! other
 citilink.ru##.product-card-info-error
 citilink.ru##.recently-product-box
@@ -9958,6 +9968,7 @@ ipotekaved.ru##.post__time
 ipv4info.com###sup1
 ipv4info.ru###sup1
 
+||irecommend.ru/*/newyear$image
 ||irecommend.ru/superstat/
 irecommend.ru##.textButtonsBar.reviewFooter
 irecommend.ru##.conclusion
@@ -15538,7 +15549,8 @@ ozon.ru##.modal:has-text(город)
 ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли)
 ozon.ru##div[data-widget=alertPopup]
-ozon.ru##.vue-portal-target
+!ozon.ru##.vue-portal-target - don't, filters use it too
+ozon.ru##.vue-portal-target:has-text(опрос)
     ! banners and promos
 ||ozone.ru/assets/*-banner$script
 ||ozon.ru/graphics/img/  # from Ru AdList
@@ -17527,7 +17539,7 @@ redhat.com##.status-legal
 ! timetoread
 redhat.com##.PFElement
 !inline
-redhat.com##strong
+!redhat.com##strong - don't, not only
 
 redmondmag.com##.header
 redmondmag.com##.footer
@@ -26548,3 +26560,29 @@ n-tv.de##.newcontent-note
 ||dailykos.com/avatars/large/missing.png
 
 unix.com##.pb-userinfo-wrapXXX
+
+! popup
+digma.ru##.isyourcity
+
+! promo carousel
+planetacomp.com##.hd_nws_scroll
+
+! popup
+kns.ru##.modal
+kns.ru##.price-old
+kns.ru##.phone-order
+! promo
+kns.ru##.alert
+kns.ru##.avatarDef
+!seo
+kns.ru##.add-info
+
+imarket.by##.modal
+imarket.by##.banner-bf
+
+otzivi-tut.ru##.css-rek-list
+otzivi-tut.ru##.list_market_brand
+
+||24review.ru/images/opticwhite-3-nn.jpg
+24review.ru###rpanel
+24review.ru###setabs
