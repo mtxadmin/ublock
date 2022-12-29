@@ -2169,7 +2169,10 @@ _tizers.  # from Ru AdList
 ##[class*="Promo"]:not(html):not(body):not(article)
 ##[id*="promo"]:not(html):not(body):not(article)
 ! too many exclusions
-!~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru##[class*="promo"]:not(html):not(body):not(article)
+!~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru,~redhat.com##[class*="promo"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! redhat.com: "full full--article node node--promoted"
+    ! 
     ##.open_promo
     ~pochtabank.ru##.promo
     ##.promo__banner
@@ -4832,7 +4835,10 @@ tarif-24.ru##.mh-ticker-bottom
 /nocopy.js
 /seohide/*
 /seoHiddenLink/*
-~livemaster.ru##[class*="copyright"]:not(html):not(body):not(article):not(header):not(.article-content)
+~irecommend.ru,~livemaster.ru##[class*="copyright"]:not(html):not(body):not(article):not(header):not(.article-content)
+    ! Exclusions:
+    ! irecommend.ru: "photo imagecache-copyright pswp_item svg-background photoswipe-processed"
+    !
 ##[id*="copyright"]:not(html):not(body):not(article)
 ##[class*="Disclaimer"]:not(html):not(body):not(article)
 ##[id*="Disclaimer"]:not(html):not(body):not(article)
