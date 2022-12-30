@@ -85,6 +85,7 @@ $removeparam=/^affi/
 
 $removeparam=afid
     ! $removeparam=afid,domain=123chat.jp|kanochat.jp  # from Adguard
+    ! apple.com$removeparam=afid  # from Adguard
     ! shopyourlikes.com$removeparam=afId
 
 $removeparam=aiad_clid  # from Adguard
@@ -288,6 +289,7 @@ $removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~nextdns.io|~s
     ! hh.ru$removeparam=from
     ! /?from_block=$document,removeparam=from_block,domain=www.kinopoisk.ru  # from Ru AdList
     ! indeed.com$removeparam=from
+    ! jlcpcb.com$removeparam=from  # from Adguard
     ! oshiete.goo.ne.jp$removeparam=from  # from Adguard
     ! pikabu.ru$removeparam=from
     ! rbc.ru$removeparam=from
@@ -601,6 +603,7 @@ $removeparam=/pvid$/
 $removeparam=ref
     ! /?ref=tg$document,removeparam=ref  # from Ru AdList
     ! 9gag.com$removeparam=ref  # Found independently
+    ! aeza.net$removeparam=ref  # Found independently
     ! amazon.*$removeparam=ref  # Found independently. Also is in Adguard
     ! ||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/  # from Adguard
     ! arcelik.com.tr$removeparam=ref  # from Adguard
@@ -880,6 +883,7 @@ $removeparam=/^utm_.*/,important,domain=~youtube.com  # Campaign tracking (utm) 
     ! $removeparam=utm_cid  # from Adguard
         ! digikey.com$removeparam=/^utm_cid/  # from Adguard
     ! $removeparam=utm_content  # from Adguard and Ru AdList
+    ! $removeparam=utm_creative  # from Adguard
     ! $removeparam=utm_emcid  # from Adguard
     ! $removeparam=utm_emmid  # from Adguard
     ! $removeparam=utm_event  # from Ru AdList
@@ -2304,3 +2308,9 @@ msn.com$removeparam=li
 
 norton.com$removeparam=callback  # inner refs
 norton.com$removeparam=inid  # inner refs
+
+morhipo.com$removeparam=srsltid  # from Adguard
+
+hoken-mammoth.jp$removeparam=s_mf  # from Adguard
+
+apple.com$removeparam=cid  # from Adguard
