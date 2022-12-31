@@ -557,6 +557,11 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ASSASIN
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ASSASIN1964$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="ASSASIN1964"]))
 
+pikabu.ru##article.story:has(.user__nick[data-name="Zelenskyy"]):not(:matches-path(/@))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Zelenskyy"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Zelenskyy$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Zelenskyy"]))
+
 ! Прочие
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Diego123"]):not(:matches-path(/story/))~div
@@ -4158,6 +4163,18 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="cubbish"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^cubbish$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="cubbish"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="a.kovalenko"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^a.kovalenko$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="a.kovalenko"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="zemlexod"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^zemlexod$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="zemlexod"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="LiIM"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^LiIM$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="LiIM"]))
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="dot22"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^dot22$/)):style(color:#F0F0F0)
