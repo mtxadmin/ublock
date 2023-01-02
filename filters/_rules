@@ -997,6 +997,7 @@ _banner_rotator.php  # from Adguard
 /coremetrics/*$important  # many exclusions in Fanboy's
 /countly.js  # from Adguard  # see count.ly, countly.org
 /countly.min.js  # from Adguard  # see count.ly, countly.org
+/dclk_video_ads/*$important  # from Adguard: @@||redirector.gvt1.com/videoplayback/id/*/source/dclk_video_ads/*
 /dcmads.js
 /deb.html$frame,1p  # from uBlock filters
 /deblocker.min.js
@@ -1773,6 +1774,9 @@ _rebid.js  # from EasyList
 ~kla.tv##.big-banner
 ##.big-banner-inner
 ##.big-banner-out
+##.billboard
+    ! 9gag.com,hotstar.com,sport360.fit,talksport.com,trademe.co.nz##.billboard  # from EasyList
+    ! the-sun.com##.billboard
 ###BottomAd
 ###bn-1
 ! is in EasyList
@@ -3451,11 +3455,13 @@ _site/gotop.  # from Ru AdList
 ! GDPR is EU's data protection law. Popups about it are very, very often present on sites
 !
 /dist/gdpr-*$domain=~express.co.uk  # from EasyList
+/gdpr/native-message  # from EasyList
 /gdpr/pdcc.  # from Fanboy's
+/gdpr/tracker-loaders.js  # from EasyList
 /gdprcookie/*  # from Fanboy's
 /gdprDialog.  # from Fanboy's
 /nanoGDPR.  # from Fanboy's
-/util/gdpr/*  # from Fanboy's
+/util/gdpr/*  # from Fanboy's and EasyList
 ##[class*="GDPR"]:not(html):not(body):not(article)
 ##[id*="GDPR"]:not(html):not(body):not(article)
 ##[class*="Gdpr"]:not(html):not(body):not(article)
@@ -3616,6 +3622,7 @@ _site/gotop.  # from Ru AdList
 !
 /ajax/dataconsentcookies  # ad tracking image  # is in EasyList and Fanboy's
 /avia-snippet-cookieconsent.js  # from Adguard: /js/avia-snippet-cookieconsent.js
+/aviso_cookies.  # from EasyList
 /booster_eu_cookie*$important
 /cmp/*  # "consent manager policy"
     ! /cmp/heycookie.js  # from Adguard
@@ -3625,11 +3632,14 @@ _site/gotop.  # from Ru AdList
 /consent*$important
     ! /consent.js
     ! /consent/*
+    ! /consentbanner-fragment/*  # from EasyList
+    ! /consentbar/consent-bar.min.js  # from EasyList
     ! /consent-mapping/*
     ! ||bigcommerce.com/shared/js/storefront/consent-manager-  # from Adguard
 /coockiealert.  # from EasyList
 /cookiebanner/*$important
 /cookie-banner  # is in EasyList and Fanboy’s
+-cookie-banner-$~image  # from EasyList
 /cookiebar.  # from AdGuard
 /cookie-cnil/*  # from EasyList
 /cookie_consent.js$important
@@ -3659,6 +3669,7 @@ _cookie_law.js  # from EasyList
 /cookie-law-*$~stylesheet  # from Adguard: /cookie-law-$~script,~stylesheet
 /cookie-law-generator/*  # from Adguard
 /cookie-law-info-public.js  # from Adguard
+/cookielayover.  # from EasyList
 /cookie-line.  # from EasyList
 -cookie-message.js  # from Adguard
 /cookie-notice/*$script,important  # from AdGuard and Fanboy's
@@ -3692,25 +3703,31 @@ _cookie_policy_  # from Fanboy's and AdGuard
     ! .gdpr.js  # from EasyList
     ! .gdpr.min  # from EasyList
     ! .javascript.gdpr.  # from EasyList
+/gdpr-compliance.js  # from EasyList
+/gdpr-consent/*$important
 .GdprCookieBanner.  # from EasyList
 /gdprcookiepolicy.js  # from EasyList
-/gdpr-consent/*$important
 /jquery.cookieconsent.min.js$important
 /jquery.ihavecookies.  # from EasyList
+/popupcookies.  # from EasyList
 /privacy-consent/*$domain=~seek.com.au
     ! seek.com.au: root redirects to seek.com.au/privacy-consent/ and that's all
+/qc-consent.js  # from EasyList and Fanboy's
 /referrer-cookie.js
 /rodo.js$important  # is in EasyList and Fanboy’s
 -rodo.min.js  # from EasyList
 /setcookie?  # from EasyPrivacy
+/sibbo-cmp-core.js  # from EasyList
+/simplyflex_cookies.  # from EasyList
 /smart-eu-cookies.  # from EasyList
 /sncmp.min.js  # from Adguard
 /track-cookies.js$important
 /trackingcookiecheck?  # from EasyPrivacy
 /um-gdpr.*$important  # is in Fanboy's and EasyList
+/warncookies.  # is in EasyList, Adguard, Fanboy's
 /wecoma-lite.js  # from EasyList
 /wrappermessagingwithoutdetection.js  # is in Fanboy's and EasyList
-/warncookies.  # is in EasyList, Adguard, Fanboy's
+/ws5_eucookie/*  # from EasyList
 
 
 
@@ -5234,6 +5251,10 @@ tarif-24.ru##.mh-ticker-bottom
     ! air-gun.ru##.old-price
     ! vseinstrumenti.ru##.old-price
     ! wildberries.ru,wildberries.co.il,wildberries.fr##.old-price
+##.price-old
+    ! electrotown.ru##.price-old
+    ! kns.ru##.price-old
+    ! petrasport.ru##.price-old
 
 
 
@@ -5418,6 +5439,17 @@ tarif-24.ru##.mh-ticker-bottom
 ##.widget_recent_comments
 /recent_comments_widget.js
 
+
+
+# франшиза citysites.ua / portal-goroda.ru / citysites.info
+# несколько десятков сайтов, ага. Днепропетровск, Севастополь - в одном флаконе
+/cap.jpg
+    ! ||056.ua/*/cap.jpg
+    ! ||8692.ru/*/cap.jpg
+##app-ads-teaser
+    ! 8692.ru##app-ads-teaser
+##app-companies-news
+##.article-card:has-text(/Гороскоп|зодиак/)
 
 
 
