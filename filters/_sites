@@ -561,16 +561,6 @@
 
 7ya.ru##.c-errorbutton
 
-# франшиза citysites.ua / portal-goroda.ru / citysites.info
-# несколько десятков сайтов, ага. Днепропетровск, Севастополь - в одном флаконе
-/cap.jpg
-    ! ||056.ua/*/cap.jpg
-    ! ||8692.ru/*/cap.jpg
-##app-ads-teaser
-    ! 8692.ru##app-ads-teaser
-##app-companies-news
-##.article-card:has-text(/Гороскоп|зодиак/)
-
 80-e.ru###navstrip
 
 ||88gals.com/*.gif
@@ -635,15 +625,87 @@
 ||9ban.ru/wp-content/themes/1brus/img/bloquote.png
 9ban.ru##.add_company
 
+||9gag.com/track/  # from EasyPrivacy
     ! top
 9gag.com##.fixed-wrap-post-bar:style(position:static !important)
 9gag.com##.post-container:style(margin-top:0px !important)
     ! banners and promos
 9gag.com##.campaign-banner
+! from Adguard
+9gag.com##.post-signup-list-banner
+! from Adguard
+9gag.com##a[class="get-the-app-banner"]
+! from Fanboy's
+9gag.com##.get-the-app-banner
+! from Adguard
+9gag.com##.signup-list-banner
+! from Adguard
+9gag.com##.signup-side-banner
+! from Adguard
+9gag.com##.comment-signup-banner
+! from Adguard
+9gag.com#?#.list-stream > article:has(p > a[target="_blank"]:contains(Promoted))
+! from uBlock filters
+9gag.com##.promoted:upward(article)
+! from Adguard
+9gag.com#?#.list-stream > article:not([id]):has(a[href="https://9gag.com/advertise"])
+! from Adguard
+9gag.com#?#.main-wrap > div:has(> [id|="dfp"])
+! from Adguard
+9gag.com#?#div[id^="sidebar-stream-"] > h4:contains(Advertisement)
+! from uBlock filters
+9gag.com##[id^="sidebar-stream-"] > h4:has-text(Advertisement)
+! from Adguard
+9gag.com##.featured-video
+||9gag.com/embed/featured-videos.html  # from EasyList
+! from Adguard and EasyList
+9gag.com##.salt-container
+! from Adguard
+9gag.com##.salt-section
+! from Adguard
+9gag.com#$##jsid-app > div[style^="position: fixed; width:"][style*="top: 50px"] { top: 0 !important; }
+! from Adguard
+9gag.com#$##jsid-app > div[style^="padding-top:"][style*="padding-top: 146px"] { padding-top: 100px !important; }
+! from Adguard
+9gag.com#$##jsid-app > div[style^="padding-top:"][style*="padding-top: 98px"] { padding-top: 50px !important; }
+! from Fanboy's
+9gag.com###jsid-sidebar-footer
+! from Adguard
+9gag.com#$#.post-tab-bar__container.sticky[style*="top:"] { top: 48px !important; }
+! from EasyList
+9gag.com##[style^="width: 640px; min-height: 360px;"]
+! from EasyList
+9gag.com##div[style*="width: 500px; height: 281px;"]
+! from EasyList
+9gag.com##div[style^="position: relative; z-index: 1; width: 640px;"]
+    ! apps
+! from Adguard
+9gag.com##a[href="/apps"]
+! from Adguard
+9gag.com#$#.open-in-app { display: none !important; }
+! from Adguard
+9gag.com#$#body { overflow: auto !important; }
+! from Adguard and Fanboy's
+9gag.com##.download-app-container
+! from Adguard
+9gag.com##.use-app
     ! other
 ! 9gag.com domain
 ||9cache.com/images/thumbnail-facebook/$image
 9gag.com##.avatar__online
+! from Adguard
+9gag.com##.badge-share
+! from Adguard
+9gag.com##.bottom-sheet > ul.menu-list > li > a[class="icon"]:not([href])
+! from Fanboy's
+9gag.com###sidebar-box-0
+! from Fanboy's
+9gag.com##.message-block
+! from Fanboy's
+9gag.com##.spread-bar
+
+! from EasyList
+9gag.tv##.size-728x90
 
 9mm.ru##.confirm_region
 9mm.ru###headerfixed
@@ -4693,6 +4755,8 @@ dachniy-ugolok.ru##.shipping_and_payment
 ! ad cookies
 dadata.ru##+js(cookie-remover)
 
+||dailykos.com/avatars/large/missing.png
+
 ! from EasyPrivacy
 ||speedtest.dailymotion.com/latencies.js
 ! ad scripts
@@ -5054,6 +5118,9 @@ digitaltrends.com##a.b-foot__app
 digitaltrends.com##.b-foot__social
 digitaltrends.com##.b-sticky
 
+! popup
+digma.ru##.isyourcity
+
 ! "Online booking beauty salons"
 dikidi.net$3p
 
@@ -5333,6 +5400,7 @@ dns-shop.ru,dns-shop.kz##.additional-opinion
 dns-shop.ru,dns-shop.kz##.quick-opinion
 ! from Adguard (for ru&techno)
 dns-shop.ru,dns-shop.kz,technopoint.ru##.main-footer__subscription
+dns-shop.ru##.choice-guide:style(background-image:none !important)
 
 dobraprace.cz##.jobOffer__box-jobs-odber
 
@@ -5730,6 +5798,9 @@ dtln.ru##.no-time-wrapper
     ! other
 dtln.ru###bottom-wide
 dtln.ru##.yashare-block
+
+dtpptz.ru##.feed-date
+dtpptz.ru##.no-gutters
 
 dtulyakov.ru###banner
 
@@ -6187,7 +6258,6 @@ electrotown.ru##.contactinfo
 ||electrotown.ru/image/data/scooter/electrotown-citycoco.jpg
 ||electrotown.ru/image/catalog/stickers/$image
 electrotown.ru##.july-stickers
-electrotown.ru##.price-old
 electrotown.ru##.custom-footer
     ! other
 ! credit
@@ -7457,7 +7527,8 @@ fuqqt.com##footer
 
 furnituremalldirect.com$script,3p  # ad scripts (furniture)
 
-push-minor-api.fxstreet.com
+f-w.in##.header
+
 fxstreet.com###tracking-gtm-global-alert
 fxstreet.com##.fxs_alert_featured
 fxstreet.com##.fxs_positionFixed:style(position:static !important)
@@ -9256,9 +9327,18 @@ htmlbook.ru###block-sape
 
 httpmaster.ru##.googlia.moduletable
 
-support.huawei.com##.btnsContainer.slice-item
-support.huawei.com##.zl-pc-header:style(position:static !important)
-support.huawei.com##.dirScroll.newDocRelatedInfo:style(position:static !important)
+    ! top
+huawei.com##.zl-pc-header:style(position:static !important)
+huawei.com###second-navigation-v4:style(position:static !important)
+huawei.com###header-placeholder
+huawei.com##.main-nav
+    ! banners and promos
+huawei.com##.optionchoose-services
+! sticky chat icon
+huawei.com##.robot-icon
+    ! other
+huawei.com##.btnsContainer.slice-item
+huawei.com##.dirScroll.newDocRelatedInfo:style(position:static !important)
 
 huawei-helpers.ru###masthead
 
@@ -10989,6 +11069,14 @@ knivesadvice.com##.notice
 
 ||kns.ru/i/spec_1.png
 ||kns.ru/i/spec_new.png
+! popup
+kns.ru##.modal
+kns.ru##.phone-order
+! promo
+kns.ru##.alert
+kns.ru##.avatarDef
+!seo
+kns.ru##.add-info
 
 kodi.tv##.navbar-fixed-bottom:style(position:static !important)
 kodi.tv##.breadcrumb-navi:style(position:static !important)
@@ -11302,6 +11390,12 @@ krugovik.ru##.site-slog
 
 krutimotor.ru##.form-openexpert_plag
 krutimotor.ru##.form-resultexpert_plag
+
+||krysha.kg/static/clientapp/
+krysha.kg##.h-top-branding
+krysha.kg##.c-app-banner
+krysha.kg##.l-footer__bottom
+krysha.kg##.c-listing__banner
 
 ksamolet.ru$inline-script  # site blocks copypaste
 ksamolet.ru##.author
@@ -11958,6 +12052,8 @@ linuxhandbook.com##.post-toc:style(position:static !important)
 
 linuxize.com##.bg-yellow-100
 
+linuxjournal.com##.material-icons
+
 ||linuxquestions.org/questions/images/LinuxQuestions.png
 linuxquestions.org##.navbar_notice
 
@@ -12403,6 +12499,10 @@ lumpics.ru##.header-area:style(position:static !important)
 
 ||orbit*.lun.ua  # from Adguard. Yes, uBlock cannot do it that way
 lun.ua##.ImageAnimation
+
+lunarvim.org##[class^=lightrope]
+lunarvim.org##[class^=fallingStar]
+lunarvim.org##[class^=announcementBar]
 
 lunavi.com##.byline-tag
 
@@ -14289,6 +14389,11 @@ neris.moscow##.custom-block-left
 neris.moscow##.custom-block-right
 neris.moscow###commnts
 
+nerohelp.info###banner-468
+nerohelp.info###menu:style(position:static !important)
+nerohelp.info###menu-sub:style(position:static !important)
+nerohelp.info##.cbp-vimenu
+
 ners.ru###ners-headerbar-wrap
 ners.ru###ners_news_telegram
 ners.ru##div.viewtopic_yandex_inside
@@ -14736,6 +14841,11 @@ nsaneforums.com##.cAnnouncementsFloat.cAnnouncements
 ||nsauditor.com/images/nsauditor.jpg
 
 nsovetnik.ru##.banner_kp-bottom
+
+! is in Adguard
+n-tv.de##.topbanner-mobile
+! popups
+n-tv.de##.newcontent-note
 
     ! autoopening popups
 ntv.ru###newplayer
@@ -15864,7 +15974,6 @@ petrasport.ru##.button-wrap2
 petrasport.ru##div.js-bl1
 petrasport.ru##.shop2-tags
 petrasport.ru##.product-special
-petrasport.ru##.price-old
 petrasport.ru##.-visor-no-click
 petrasport.ru##.site-phone
 petrasport.ru##.company-name
@@ -16097,6 +16206,9 @@ plainnews.ru###fl-top
 planengo.ru##.fof.footer__elem
 planengo.ru##.fos.footer__elem
 
+! promo carousel
+planetacomp.com##.hd_nws_scroll
+
 planeta-sirius.ru##.fast_preview
 planeta-sirius.ru##.add_to_cart_button.primary-bg.btn
 
@@ -16210,21 +16322,33 @@ pleasuregirl.net##.svg-icon
 pleasuregirl.net##.toggle-theme
 pleasuregirl.net##.rating-container
 
+||pleer.ru/cnt/*
 ||pleer.ru/pbann/  # from Ru AdList
-pleer.ru##.pie.dobro
+    ! popups
 pleer.ru###close_pop > .modern_popup_bg
 pleer.ru##.cd_popup_container
-pleer.ru##.product_accessories
-pleer.ru/cnt/*
+    ! top
+pleer.ru##.top-menu-fixed
+! top text is too big. It is partially sometimes useful, so don't remove it
+pleer.ru##+js(rc,mar_btm15)
+pleer.ru##+js(rc,big3)
+pleer.ru##h4:style(color:initial !important)
+!
+pleer.ru##.header-table:style(padding-top:0px !important)
+    ! banners and promos
 pleer.ru##div.comments:nth-of-type(1):has-text(Самый частый вопрос от клиентов)
+pleer.ru##.pie.dobro
+pleer.ru##.banners_content
+price.ru##.promo-banner
+pleer.ru##.lk_abs
+pleer.ru##.product_price_color2
+    ! other
+pleer.ru##.product_accessories
 pleer.ru##.image.pad_t2
 pleer.ru##.footer.spacer3
 pleer.ru##.pad_lr
-pleer.ru##.lk_abs
-pleer.ru##.top-menu-fixed
 pleer.ru##.off_hours
 pleer.ru##.viewed
-pleer.ru##.banners_content
 pleer.ru##.phones-table-container
 pleer.ru##.write-container
 pleer.ru##.phone-icon
@@ -16232,6 +16356,7 @@ pleer.ru##.product_price_subtext
 pleer.ru###oneclick_form_mini
 pleer.ru##.product_right_block
 pleer.ru##.off_hours_fixed
+pleer.ru##.price_disk > s
 
 plitkanadom.ru##.header_wrap
 plitkanadom.ru##.rbs-header-brands
@@ -19178,6 +19303,10 @@ sharetotest.com##.salesbox
 sharetotest.com##.nav-menu
 sharetotest.com##.entry-content > p:has-text(/Recommend!|2passeasy/)
 
+sharlib.com##.abs_top
+sharlib.com##.abs_bottom
+sharlib.com##.abs_row
+
 shazam.com##.justlogo
 shazam.com##.actions
 shazam.com##.deeplink-am-signupflow
@@ -21476,7 +21605,6 @@ the-sun.com##.digital-personalisation
 the-sun.com##.sim-module-wrapper
 the-sun.com##.advert-wrapper
 the-sun.com###sidebar
-the-sun.com##.billboard
     ! other
 
 thesurlyadmin.com##.grofile
@@ -22583,6 +22711,8 @@ help.univention.com##.d-header:style(position:static !important)
 help.univention.com###topic-progress-wrapper:style(position:static !important)
 
 universal-guns.ru##.flexBoxContacts
+
+unix.com##.pb-userinfo-wrapXXX
 
 unixforum.org##.headerbar
 
@@ -24465,6 +24595,8 @@ xbmc.ru##[id^=td_post] > div:has-text(__________________)
 xbmc.ru##[id^=td_post] > hr
 
 xcom-shop.ru##.eaist
+xcom-shop.ru##[href^="https://www.xcom.ru/services/"]
+xcom-shop.ru##.product-block-description__last-block-wrap
 
 xcook.info##.branding
 xcook.info##.receipt_rating
@@ -26588,43 +26720,6 @@ fuzz-magazine.ru##.pic:has(img[src*="/news_default_"])
 fuzz-magazine.ru##.menuBlock:style(position:static !important)
 ||piter.tv/img/news_default_
 
-dtpptz.ru##.feed-date
-dtpptz.ru##.no-gutters
+||fidelity.com/prod/meas/
 
-||krysha.kg/static/clientapp/
-krysha.kg##.h-top-branding
-krysha.kg##.c-app-banner
-krysha.kg##.l-footer__bottom
-krysha.kg##.c-listing__banner
-
-linuxjournal.com##.material-icons
-
-lunarvim.org##[class^=lightrope]
-lunarvim.org##[class^=fallingStar]
-lunarvim.org##[class^=announcementBar]
-
-! is in Adguard
-n-tv.de##.topbanner-mobile
-! popups
-n-tv.de##.newcontent-note
-
-||dailykos.com/avatars/large/missing.png
-
-unix.com##.pb-userinfo-wrapXXX
-
-! popup
-digma.ru##.isyourcity
-
-! promo carousel
-planetacomp.com##.hd_nws_scroll
-
-! popup
-kns.ru##.modal
-kns.ru##.price-old
-kns.ru##.phone-order
-! promo
-kns.ru##.alert
-kns.ru##.avatarDef
-!seo
-kns.ru##.add-info
-
+aiware.com$3p  # ad scripts
