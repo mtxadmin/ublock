@@ -23,6 +23,8 @@ Thus, it is best to install **AND** an ad blocker in the browser, **AND** an app
 
 What application to install? Anyone that can download new versions of hosts from the Internet. Of course, it is much better if you can specify several sources at once to combine them. For Android, for example, you can look at [AdAway](https://github.com/AdAway/AdAway) - an open, free project. Or any other to your taste. Unlike the browser ad blocker, there are minimum requirements for such an application. For Windows you can use [hostsmgr](https://github.com/henrypp/hostsmgr) (console) or some autoupdating Powershell scripts. (Also, there is [HostsMan](http://www.abelhadigital.com/hostsman/) with GUI, but it doesn't work with Github files [[1]](https://github.com/crazy-max/WindowsSpyBlocker/issues/103))
 
+Also, there is mentions that Windows Defender could assume changing HOSTS-file with telemetry blocking as a bug/error: [[1]](https://www.bleepingcomputer.com/news/microsoft/windows-10-hosts-file-blocking-telemetry-is-now-flagged-as-a-risk/),[[2]](https://windowsreport.com/windows-hosts-file-modification-bug/)
+
 The address of the hosts file of this project:
 > ```
 ``https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt``
