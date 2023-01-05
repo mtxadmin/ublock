@@ -5302,6 +5302,11 @@ dni.ru##.floating
 ||dns-shop.kz/*/header*.png
 ||dns-shop.ru/*/footer-background*.jpg
 ||dns-shop.kz/*/footer-background*.jpg
+    ! buttons
+dns-shop.ru##.compare-link-counter__icon
+dns-shop.ru##.wishlist-link-counter__img
+dns-shop.ru##.cart-link-counter__img
+dns-shop.ru##.user-profile__login-icon
     ! header
 ! partial override of general header rule
 dns-shop.ru,dns-shop.kz##header:style(background-image:none !important; height:auto !important; min-height:0px !important)
@@ -16342,6 +16347,8 @@ pleer.ru##.banners_content
 price.ru##.promo-banner
 pleer.ru##.lk_abs
 pleer.ru##.product_price_color2
+pleer.ru##.banners_shrinking
+pleer.ru##.bnr
     ! other
 pleer.ru##.product_accessories
 pleer.ru##.image.pad_t2
@@ -21109,17 +21116,25 @@ technologyadvice.com##.blog-single__back-btn
 ||technologys.info/templates/rt_oculus/images/overlays/$image
 technologys.info###rt-footer-surround
 
-technopark.ru##.footer-text__text
+    ! popups
 technopark.ru##.mail-collect-popup
 technopark.ru##.js-city-picker-popup.city-picker
+technopark.ru##.modal-banner
+technopark.ru##.vue-portal-target:has(.mail-collect)
+    ! banners and promos
 technopark.ru##.js-gtm-promo
+technopark.ru##.personal-price-banner
+    ! top
+technopark.ru##.header__main--fixed:style(position:static !important)
+    ! other
+technopark.ru##.footer-text__text
 technopark.ru##.index__section-shader
 technopark.ru##.personal-service-widget
 technopark.ru##.labels
 technopark.ru##.button--has-loader.button--subcontent.button--blue
-technopark.ru##.header__main--fixed:style(position:static !important)
 !technopark.ru##.js-analytics-list - don't
 technopark.ru##.recommendations-box
+technopark.ru##.credit-button
 
 ! technopoint.ru is dns-shop.ru project, look in there
 
@@ -22116,6 +22131,7 @@ trello.com###popover-boundary > div > .js-react-root:has-text(/^$/)
     ! banners and promos
 trello.com##button:has-text(Premium)
 trello.com##div:has(>button[data-test-id="team-home-sidebar-upgrade-prompt"])
+trello.com##div:has(>button[data-testid="team-home-sidebar-upgrade-prompt"])
 trello.com##.card-back-card-back-upgrade-prompt-section
     ! other
 trello.com##.board-share-button
@@ -26723,3 +26739,13 @@ fuzz-magazine.ru##.menuBlock:style(position:static !important)
 ||fidelity.com/prod/meas/
 
 aiware.com$3p  # ad scripts
+
+nhncloud.com##.modal:has-text(Letter)
+nhncloud.com##.is_fixed:style(position:static !important)
+
+ulta.com##.StickyEmailSignUp
+
+18virginsex.com##.warning_modal
+
+today.com##[class^=styles_marqueeBreaking]
+today.com##.layout-header:style(position:static !important)
