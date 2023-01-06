@@ -23,6 +23,8 @@
 
 Какое приложение ставить? Любое, которое умеет скачивать новые версии hosts из интернета. Конечно, намного лучше, если можно задавать сразу несколько источников для их объединения. Для Android, например, можете посмотреть на [AdAway](https://github.com/AdAway/AdAway) - свободный, открытый, бесплатный проект. Или же любой другой по вкусу, требования, в отличие от баннерной баннерорезки, к такому приложению минимальные. Для Windows можно использовать программу [hostsmgr](https://github.com/henrypp/hostsmgr) (консольная), либо же скрипты Powershell с автообновлением. (Еще есть [HostsMan](http://www.abelhadigital.com/hostsman/) c GUI, но оно не работает с файлами Github [[1]](https://github.com/crazy-max/WindowsSpyBlocker/issues/103))
 
+Также, есть упоминания о том, что Windows Defender может считать изменение HOSTS-файла с блокировкой телеметрии ошибкой/проблемой: [[1]](https://www.bleepingcomputer.com/news/microsoft/windows-10-hosts-file-blocking-telemetry-is-now-flagged-as-a-risk/), [[2]](https://windowsreport.com/windows-hosts-file-modification-bug/)
+
 Адрес файла hosts данного проекта:
 > ```
 ``https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt``
