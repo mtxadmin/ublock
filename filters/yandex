@@ -125,6 +125,12 @@ yandex.*##li.serp-item:has(.label_theme_direct.label)
 yandex.*##.serp-user__promo-popup
 ! from Adguard
 yandex.*##div[class^="MobileWidgetPromo_"]
+! is in Adguard
+market.yandex.*##div[data-zone-data*="bannerUrl"]
+
+!fenek.market.yandex.ru - maybe don't, captcha
+!fenek.market.yandex.ru/*/event?hash
+!||market.yandex.ru/*/event?
 
 ||yastatic.net/s3/frontend/granny/$image
 
@@ -213,6 +219,7 @@ yandex.*##.business-card-view__offers
 yandex.*##.business-post-view
 ! top
 yandex.ru##iframe[src*="iframe-ux-feedback.html"]
+||yandex.net/*/uxfeedback/
 
 ! Yandex.Popups, блин. Хватит уже выстреливать в лицо всякое
 !yandex.ru##.Popup2 - don`t, там не только реклама. Нужно сузить условия
