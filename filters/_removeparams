@@ -569,6 +569,9 @@ $removeparam=promoid
     ! Later:
     ! get.adobe.com$removeparam=promoid  # from Adguard
 
+$removeparam=prov
+    ! ?prov=ukrnet$removeparam=prov  # from Ru AdList
+
 $removeparam=publisherID  # from ABP
 
 $removeparam=pulse_traffic  # from Ru AdList
@@ -1176,6 +1179,9 @@ coupang.com$removeparam=wTime  # from Adguard
 ! cyber-ad01.cc - blocked entirely, just for information. But.
 cyber-ad01.cc$removeparam=ip  # from Adguard
 
+! already blocked
+exdynsrv.com$removeparam  # from Adguard
+
 dailycaller.com$removeparam=spot_im_redirect_source  # from Adguard
 
 ||discovery.com/v*/streaming/video/*&adNetworkId$removeparam=/^ad/  # Adguard rule, modified
@@ -1240,6 +1246,7 @@ facebook.com$removeparam=hc_ref  # from Ru AdList, modified
 facebook.com$removeparam=hrc  # Facebook  # from NeatURL
 facebook.com$removeparam=mibextid
 facebook.com$removeparam=refsrc  # Facebook  # from NeatURL
+||facebook.com/marketplace/$removeparam=tracking  # from Adguard
 
 fashion-press.net$removeparam=media  # from Adguard
 
@@ -2067,9 +2074,16 @@ qcplay.co.jp$removeparam=shortlink  # from Adguard
 giphy.com$removeparam=cid  # from Adguard
 giphy.com$removeparam=ct  # from Adguard
 
+||bbc.$removeparam=at_bbc_team  # from Adguard
 !$removeparam=at_campaign,domain=bbc.com|bbc.co.uk  # blocked as /campaign/  # from Adguard
+!||bbc.$removeparam=at_campaign_type  # blocked as /campaign/  # from Adguard
 $removeparam=/^at_custom/,domain=bbc.com|bbc.co.uk  # from Adguard
+||bbc.$removeparam=at_link_id  # from Adguard
+||bbc.$removeparam=at_link_origin  # from Adguard
+||bbc.$removeparam=at_link_type  # from Adguard
 $removeparam=at_medium,domain=bbc.com|bbc.co.uk  # from Adguard
+||bbc.$removeparam=at_ptr_name  # from Adguard
+||bbc.$removeparam=facebook_page  # from Adguard
 !$removeparam=ns_campaign,domain=bbc.com|bbc.co.uk  # blocked as /campaign/  # from Adguard
 $removeparam=ns_fee,domain=bbc.com|bbc.co.uk  # from Adguard
 $removeparam=ns_linkname,domain=bbc.com|bbc.co.uk  # from Adguard
@@ -2314,3 +2328,5 @@ morhipo.com$removeparam=srsltid  # from Adguard
 hoken-mammoth.jp$removeparam=s_mf  # from Adguard
 
 apple.com$removeparam=cid  # from Adguard
+
+limoo.host$removeparam=wr  # from uBlock filters
