@@ -1974,6 +1974,8 @@ aternos.org$script,redirect-rule=noopjs  # from uBlock filters  # "free Minecraf
 ||aternos.org/panel/ajax/reportDetection.php?$xhr,1p  # from uBlock filters
 
 ! atlassian.com
+||api.atlassian.com/metal/ingest  # is in Adguard
+||atlassian.com/gateway/api/*/batch  # is in Adguard
 community.atlassian.com##.atl-register-login-hero
 community.atlassian.com##.atl-qanda-register-login-card
 community.atlassian.com##.atl-comment-likes
@@ -5300,6 +5302,8 @@ dni.ru##.floating
 ||dns-shop.kz/*/assembly-hover.gif
 ||dns-shop.ru/*/header*.png
 ||dns-shop.kz/*/header*.png
+||dns-shop.ru/*/empty-result.png
+||dns-shop.kz/*/empty-result.png
 ||dns-shop.ru/*/footer-background*.jpg
 ||dns-shop.kz/*/footer-background*.jpg
     ! buttons
@@ -5330,6 +5334,7 @@ dns-shop.ru,dns-shop.kz,technopoint.ru##.homepage-top-grid__banners
 dns-shop.ru,dns-shop.kz,technopoint.ru##.products-list__banner
 dns-shop.ru,dns-shop.kz##.soft-bundle-widget
 dns-shop.ru,dns-shop.kz##.additional-sales-tabs
+dns-shop.ru,dns-shop.kz###homepage-stories-container
     ! stickers
 dns-shop.ru,dns-shop.kz,technopoint.ru##.additional-vobler
 dns-shop.ru,dns-shop.kz,technopoint.ru##.product-info__voblers
@@ -6213,12 +6218,17 @@ eldernode.com##.inline-post
 !||eldorado.ru/upload/iblock/$image - don't
 ||eldorado.ru/static_spa/assets/check-bonus$image
 !||eldorado.ru/_next/static/chunks/  # scripts - don't
+||eldorado.ru/*/check-bonus$image
     ! header and fixed elements
 eldorado.ru##.fixedApplied:style(position:static !important)
 eldorado.ru##.q-fixed-item:style(position:static !important)
 eldorado.ru##.fixedScroll:style(position:static !important)
 eldorado.ru##.header-main-logo
 eldorado.ru##*:matches-css(position:fixed)
+    ! popups
+eldorado.ru##header div:matches-css(position:absolute):has-text(Ваш регион)
+    ! banners and promos
+eldorado.ru##div[data-dy=BannerListingPromo] ~ div
     ! brands list
 eldorado.ru##.js-slider-brands
 eldorado.ru##.q-slider-brands
@@ -6231,6 +6241,8 @@ eldorado.ru##.slick-slider
 eldorado.ru##.q-slider-last-viewed
 eldorado.ru##.product-one-click-buy
 eldorado.ru##.footer-info__pay
+! seo
+eldorado.ru##.product-bottom-text
 
 electrik.info##table:nth-of-type(2) > tbody > tr > td > table:nth-of-type(1):has-text(онлайн журнал про электричество)
 
@@ -11082,6 +11094,7 @@ kns.ru##.alert
 kns.ru##.avatarDef
 !seo
 kns.ru##.add-info
+kns.ru##.btn:has-text(/клик|кредит/)
 
 kodi.tv##.navbar-fixed-bottom:style(position:static !important)
 kodi.tv##.breadcrumb-navi:style(position:static !important)
@@ -13974,6 +13987,7 @@ mvideo.ru##.location-icon_animated
 mvideo.ru##.insider-banner
 ||mvideo.ru/media/SmallBanners/
 mvideo.ru##.promo-links__image
+||mvideo.ru/*/promo-banners/
     ! akit
 mvideo.ru##.footer-akit-ico
 mvideo.ru##.akit-logo-link
@@ -16329,6 +16343,7 @@ pleasuregirl.net##.rating-container
 
 ||pleer.ru/cnt/*
 ||pleer.ru/pbann/  # from Ru AdList
+
     ! popups
 pleer.ru###close_pop > .modern_popup_bg
 pleer.ru##.cd_popup_container
@@ -16344,11 +16359,11 @@ pleer.ru##.header-table:style(padding-top:0px !important)
 pleer.ru##div.comments:nth-of-type(1):has-text(Самый частый вопрос от клиентов)
 pleer.ru##.pie.dobro
 pleer.ru##.banners_content
-price.ru##.promo-banner
 pleer.ru##.lk_abs
 pleer.ru##.product_price_color2
 pleer.ru##.banners_shrinking
 pleer.ru##.bnr
+pleer.ru##.mar_left7
     ! other
 pleer.ru##.product_accessories
 pleer.ru##.image.pad_t2
@@ -16364,6 +16379,7 @@ pleer.ru###oneclick_form_mini
 pleer.ru##.product_right_block
 pleer.ru##.off_hours_fixed
 pleer.ru##.price_disk > s
+pleer.ru###share_select
 
 plitkanadom.ru##.header_wrap
 plitkanadom.ru##.rbs-header-brands
@@ -16849,8 +16865,13 @@ prian.ru##.pr-b-object-interview
 
 ||price.ru/images/icon/apple.svg
 ||price.ru/images/qr.svg
+||price.ru/*/stats/  # ad pings  # price.ru/v3/stats/
     ! popups
 price.ru##.question
+    ! banners and promos
+||price.ru/*-Adfox.js
+price.ru##.promo-banner
+price.ru##.section.slider
     ! other
 
 priceboon.com##.aps-offer-link
@@ -17750,6 +17771,9 @@ regard.ru##.lot.bblock-long.block > noindex
 regard.ru##.minitextblock
 regard.ru###q-order
 regard.ru###rsidebar
+regard.ru##button:has-text(Быстрый заказ)
+!regard.ru##button:style(animation-play-state:paused !important)
+regard.ru##button::after
 
 regexbuddy.com##.buynow
 regexbuddy.com##.testimonial
@@ -23858,9 +23882,14 @@ w3docs.com##.stackdev-banner
 ! unfix menu. Note: absolte, not static.
 w3docs.com##.aside-menu:style(position:absolute !important)
 
+    ! top
 w3schools.com##.top.w3-container
 w3schools.com###topnav.topnav:style(position:static !important)
 w3schools.com###belowtopnav:style(padding-top:0px !important)
+    ! banners and promos
+w3schools.com###upperfeatureshowcase
+w3schools.com###lowerfeatureshowcase
+    ! other
 
 ||waaw.tv/cdn-cgi/trace
 
@@ -26764,3 +26793,12 @@ today.com##.layout-header:style(position:static !important)
 onmsft.com##+js(addEventListener-defuser.js)
 ! top
 onmsft.com##.inside-header:style(padding-top:0px !important; padding-bottom:0px !important)
+
+10minutemail.net###noadright
+10minutemail.net###header
+10minutemail.net###support-table
+
+brigo.ru##.padding_holidays:style(padding-top:0px !important)
+
+! modal popup
+bagpipe.news$inline-script
