@@ -6229,6 +6229,8 @@ eldorado.ru##*:matches-css(position:fixed)
 eldorado.ru##header div:matches-css(position:absolute):has-text(Ваш регион)
     ! banners and promos
 eldorado.ru##div[data-dy=BannerListingPromo] ~ div
+eldorado.ru##.setOfThree.setConstructor.kit
+eldorado.ru##.q-slider-parent:has(.q-services-header)
     ! brands list
 eldorado.ru##.js-slider-brands
 eldorado.ru##.q-slider-brands
@@ -19409,7 +19411,7 @@ shop-gun24.ru##.header_conts
 ||shopify.com/*/shop_events_listener$important
 /shopify-boomerang-$important  # from EasyPrivacy
 /shopify_stats.js$important  # is in AdGuard and EasyPricacy
-||shopify.com/s/trekkie  # ad scripts
+||shopify.com/s/trekkie$important  # ad scripts
 ||shopify.com/*/ndnapps-sociallogin
 ||shopify.com/*/restocked_alerts
 ||shopify.com/*/modal.js$important
@@ -26802,3 +26804,18 @@ brigo.ru##.padding_holidays:style(padding-top:0px !important)
 
 ! modal popup
 bagpipe.news$inline-script
+
+! it is sports.ru URL shortener
+! Update: not only. There are images and css there. Todo.
+!s5o.ru
+
+kiktu.com$inline-script
+kiktu.com##div:has-text(Ad Blocker Detected)
+||wp.com/kiktu.com/wp-content/uploads/kiktuwp-logoNew.png
+kiktu.com##.ue-scroll-to
+kiktu.com##.ue-scroll-to-cta
+
+xn--mgbkt9eckr.net##.p-guest--message
+xn--mgbkt9eckr.net##.notice
+
+rtl.hu##.vote-banner
