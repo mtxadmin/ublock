@@ -5,6 +5,10 @@
 ! List of CMS plugins (modules, extentions, etc) to block completely
 ! CMS are: Wordpress, Drupal, maybe other less popular
 ! Descriptions of most Wordpress plugins see at https://wordpress.org/plugins/
+!
+! Note: most of the plugins catched "in-the-wild", and I was lazy to search descriptions for every such plugin.
+! For me, it is enough if a site works ok after blocking.
+! But it is clear that almost all of those plugins are ad-related and rest was added to make a site "fancy-cool-design"
 ! 
 !
 ! see removing policy at https://github.com/mtxadmin/ublock/blob/master/docs/policy_en.md
@@ -213,6 +217,8 @@
 
 /plugin/trackEvents.  # from EasyPrivacy
 
+/plugin/woobought/*  # https://studiowombat.com/plugin/woobought/  # Woocommerce notifications
+
 
 
 /plugins/10up-quiz/*
@@ -263,6 +269,10 @@
 /plugins/adbox/*$important  # jquery
     ! @@||chinacourt.gov.cn/share/jquery/plugins/adbox/  # from Adguard Chinese
 
+/plugins/adbusters/*  # https://wordpress.org/plugins/adbusters/
+
+/plugins/ad-code-manager/*  # https://wordpress.org/plugins/ad-code-manager/
+
 /plugins/add-cookie-notice/*$important
 
 /plugins/addgifts/*
@@ -285,15 +295,17 @@
 /plugins/adhelper/*
     /adhelper/*  # from Ru AdList: /wp-json/adhelper/*
 
-/plugins/ad-inserter/*$important
+/plugins/ad-inserter/*$important  # https://wordpress.org/plugins/ad-inserter/
 /plugins/ad-inserter-pro/*$important
     /ad-inserter*$important  # from EasyList, modified
 
 /plugins/ad-invalid-click-protector/*
 
+/plugins/adredux/*  # https://wordpress.org/plugins/adredux/
+
 /plugins/adroadblock/*
 
-/plugins/adrotate/*$important
+/plugins/adrotate/*$important  # https://wordpress.org/plugins/adrotate/
 /plugins/adrotate-pro/*$important  # from Adguard
     /adrotate/*$important  # from EasyList
     /jquery.adrotate.
@@ -308,7 +320,7 @@
     ! /plugins/adsanity-  # from EasyList
     ! /plugins/adsanity-adblock-detection/*$important  # from Adguard
 
-/plugins/ads-for-wp/*$important
+/plugins/ads-for-wp/*$important  # https://wordpress.org/plugins/ads-for-wp/
 
 /plugins/adsplacer_pro/*$important  # is in Ru AdList
 
@@ -320,7 +332,7 @@
     ! @@||getitfree.cn/wp-content/plugins/adunblocker/public/js/banner_ads_*.js  # from Adguard Chinese
     ! /wp-content/plugins/adunblocker  # from Adguard
 
-/plugins/advanced-ads/*$important
+/plugins/advanced-ads/*$important  # https://wordpress.org/plugins/advanced-ads/
 /plugins/advanced-ads-pro/*$important
 /plugins/advanced-ads-responsive/*
     ! is in EasyList
@@ -651,6 +663,7 @@
 /plugins/cookie*$~stylesheet,important
     ! /plugins/cookie-$~stylesheet,important
         !/plugins/cookie-$~stylesheet  # from Fanboy's
+        !/plugins/cookies-and-content-security-policy/*  # https://wordpress.org/plugins/cookies-and-content-security-policy/
         !/plugins/cookieconsent/*$important  # from Adguard
         !/plugins/cookie-consent/*$important
         !/plugins/cookieinfo/*$important
@@ -771,7 +784,7 @@
     ! ||gamer-network.net/plugins/dfp/  # from EasyList
     ! @@||static-seloger.com^*/Plugins/DFP/$script  # from ABP
 
-/plugins/dfp-ads/*$important
+/plugins/dfp-ads/*$important  # https://wordpress.org/plugins/dfp-ads/
     /dfp-ads/*$important  # is in EasyList
     /google-ads.min.js$important
 
@@ -795,7 +808,7 @@
 
 /plugins/distr-adv/*$important  # is in Ru AdList
 
-/modules/doubleclick/*  # from EasyList
+/plugins/double-click/*  # https://wordpress.org/plugins/double-click/
 
 /plugins/download-manager/*
 
@@ -809,7 +822,9 @@
 
 /plugins/dx-ads/*$script  # from EasyList
 
-/plugins/dynamic-headers/*
+/plugins/dynamic-headers/*  # old plugin, but I saw it in the wild. It was custom header, if you look into code: https://wordpress.org/plugins/dynamic-headers/ . Remove that fancy header images.
+
+/plugins/easy-accordion-free/*  # it seems, it was FAQ: https://wordpress.org/plugins/easy-accordion-free/ . Hmm, marketologists are even FAQ transforming to banners.
 
 /plugins/eazy-ad-unblocker/*  # from Adguard
     /eazy-ad-unblocker/*$script,css  # from uBlock filters
@@ -964,6 +979,9 @@
     ! from Fanboy's
     ###fsb-social-bar
 
+/plugins/fluentform/*  # yes, form. Subscription form, to be clear. Thanks, no need
+    ##.fluentform
+
 /plugins/fluid-notification-bar/*
 
 /plugins/flying-analytics/*
@@ -1052,6 +1070,9 @@
 /plugins/go-ads/*
 
 /plugins/gobot/*
+    # https://wphive.com/plugins/gobot/ : "generate qualified leads"
+    # https://wpprotools.io/plugins/gobot/ : chatbot
+    ! also see getgobot.com
 
 /plugins/go-local-subscriptions/*
 
@@ -1098,6 +1119,8 @@
 /plugins/hreflang-tags-for-wordpress/*
 
 /plugins/hurrytimer/*
+
+/plugins/iabtechlab-adstxt-generator/*  # https://wordpress.org/plugins/iabtechlab-adstxt-generator/
 
 /plugins/icegram/*$important  # is in Adguard and Ru AdList
 
@@ -1349,6 +1372,8 @@
 
 /plugins/monarch/*$~stylesheet  # from AdGuard, modified. Sharing plugin for WP
 
+/plugins/monetizemore-ads-txt/*  # https://wordpress.org/plugins/monetizemore-ads-txt/
+
 /plugins/mousewheel-smooth-scroll/*  # from Ru AdList
 
 /plugins/mts-wp-in-post-ads/*  # from EasyList
@@ -1423,6 +1448,8 @@
 
 /plugins/notifyvisitors-web-push-notification/*$important
 
+/plugins/notix-web-push-notifications/*  # also see notix.co
+
 /plugins/novashare/*
 
 /plugins/nrelate-related-content/*$~stylesheet  # is in Ru AdList
@@ -1449,6 +1476,8 @@
 
 /plugins/onionbuzz-viral-quiz/*
 
+/plugins/optimate-ads/*  # https://wordpress.org/plugins/optimate-ads/
+
 /plugins/optin-cat-wp/*
 
 /plugins/opt-in-hound/*
@@ -1460,6 +1489,8 @@
 /plugins/ordercall/*
 
 /plugins/osd-social-media-sharing/*
+
+/plugins/outdated-browser/*  # yes, there is a such plugin. Go away, my browser is ok.
 
 /plugins/outrigger/*$important
     ! @@||postfun.com/wp-content/plugins/outrigger/scripts/vendor/header.js$script,domain=postfun.com  # from ABP
@@ -1601,7 +1632,7 @@
 
 /plugins/quantcast-choice/*  # also see quantcast.com
 
-/plugins/quick-adsense-reloaded/*$important
+/plugins/quick-adsense-reloaded/*$important  # https://wordpress.org/plugins/quick-adsense-reloaded/
     /quick-adsense-reloaded/*  # is in EasyList
 
 /plugins/quick-bar/*
@@ -1674,6 +1705,10 @@
 /plugins/rnbt-sticky-banner/*
 
 /plugins/rodo
+
+/plugins/rontar-blog-retargeting/*  # https://wordpress.org/plugins/rontar-blog-retargeting/
+/plugins/rontar-dynamic-retargeting-for-woocommerce/*  # https://wordpress.org/plugins/rontar-dynamic-retargeting-for-woocommerce/
+    ! also see rontar.com - "dynamic retargeting platform"
 
 /plugins/roost-for-bloggers/*
 
@@ -2020,6 +2055,8 @@
     ! "Uncaught ReferenceError: catapultReadCookie is not defined"
     fundacjapsom.pl,gazetabilgoraj.pl,gieldykryptowalut.pl,impossible3ds.com,lecourrier-du-soir.com,spacecentre.co.uk,winsetupfromusb.com##+js(set, catapultReadCookie, noopFunc)
     
+/plugins/ultimate-ads-manager/*  # https://wordpress.org/plugins/ultimate-ads-manager/
+
 /plugins/ultimate-contact-buttons/*
 
 /plugins/ultimate-follow-me/*
@@ -2117,6 +2154,8 @@
 
 /plugins/wise-notifications/*
 
+/plugins/wlseo-feedback/*
+
 /plugins/woo-cart-abandonment-recovery/*
 
 ! /plugins/woocommerce/* - this one seems ok
@@ -2173,6 +2212,8 @@
 /plugins/wp_actionpop/*  # from EasyList
 
 /plugins/wp-adblock-dedect/*$important  # from Adguard: /plugins/wp-adblock-dedect/js/dedect.js^
+
+/plugins/wpadcenter/*  # https://wordpress.org/plugins/wpadcenter/
 
 /plugins/wp-ad-guru/*$important
     /wp-ad-guru/*  # from EasyList
