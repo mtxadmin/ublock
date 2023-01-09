@@ -53,6 +53,10 @@ webcollector-2.agora.io
 webcollector-rtm.agora.io
 /projectagora.min.js$important  # from ABP
 
+data.alexa.com  # from NextDNS native-tracking-domains alexa
+device-metrics-us.amazon.com  # from NextDNS native-tracking-domains alexa
+device-metrics-us-2.amazon.com  # from NextDNS native-tracking-domains alexa
+
 stat.alibaba.com  # from Adguard
 
 dc.altamob.com  # from Adguard
@@ -83,9 +87,18 @@ stat.aport.ru  # from MVPS
 
 iadsdk.apple.com  # from MobileAdTrackers
 banners.itunes.apple.com  # from MobileAdTrackers
-securemetrics.apple.com  # from Peter Lowe's hosts file
+metrics.apple.com  # from NextDNS native-tracking-domains apple
+securemetrics.apple.com  # from Peter Lowe's hosts file and NextDNS native-tracking-domains apple
+supportmetrics.apple.com  # from NextDNS native-tracking-domains apple
 weather-analytics-events.apple.com  # from GoodbyeAds
 widgets.itunes.apple.com  # from GoodbyeAds
+metrics.icloud.com  # from NextDNS native-tracking-domains apple
+metrics.mzstatic.com  # from NextDNS native-tracking-domains apple
+dzc-metrics.mzstatic.com  # from NextDNS native-tracking-domains apple
+books-analytics-events.news.apple-dns.net  # from NextDNS native-tracking-domains apple
+books-analytics-events.apple.com  # from NextDNS native-tracking-domains apple
+stocks-analytics-events.apple.com  # from NextDNS native-tracking-domains apple
+stocks-analytics-events.news.apple-dns.net  # from NextDNS native-tracking-domains apple
 
 ! seems to be Google Android telemetry
 ! is in Dan Pollock’s hosts file
@@ -152,7 +165,7 @@ cloudrail.com
 crashlytics.com$important  # is in Dan Pollock's hosts file
 !+  firebase.crashlytics.com
 !+  outbound.crashlytics.com
-crashlyticsreports-pa.googleapis.com
+crashlyticsreports-pa.googleapis.com  # app requests
 betas.to
 
 ads.cricbuzz.com  # from Adguard
@@ -213,6 +226,57 @@ firebaselogging.googleapis.com  # Firebase - Tracker  # from Quidsup NoTrack-Blo
 
 api.green-way.com.ua  # app requests  # don't block root
 
+# it turned out that hicloud.com is Huawei Cloud. Don't block entirely, only some subdomains
+campaign2b-dra.himovie.hicloud.com
+campaigncs-dra.himovie.hicloud.com
+campaign-dra.jos.hicloud.com
+campaign-dra.music.hicloud.com
+campaign-dre.music.hicloud.com
+campaign-himovie.hicloud.com
+campaign-music.hicloud.com
+datacollector-dre.dt.hicloud.com
+datacollector-drru.dt.hicloud.com
+geo.hicloud.com
+geo-dra.platform.hicloud.com
+geo-drcn.platform.hicloud.com
+geo-dre.platform.hicloud.com
+geo-drru.platform.hicloud.com
+hiapplog.hicloud.com
+himessageapi.hicloud.com
+inappadm.hicloud.com
+location.hicloud.com
+logbak.hicloud.com
+logservice.hicloud.com  # is in NextDNS native-tracking-domains huawei
+logservice1.hicloud.com  # is in NextDNS native-tracking-domains huawei
+logservice-dra.platform.hicloud.com
+logservice-dre.platform.hicloud.com
+logtransform.hicloud.com
+metrics.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
+metrics1.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
+metrics2.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
+metrics3.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
+metrics4.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
+metrics5.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
+metrics-dra.dt.hicloud.com
+metrics-drcn.dt.hicloud.com
+!+  push.hicloud.com
+!api.push.hicloud.com
+!pushtrs.push.hicloud.com
+!pushtrs1.push.hicloud.com
+!pushtrs6.push.hicloud.com
+!pushtrs7.push.hicloud.com
+!pushtrs8.push.hicloud.com
+!pushtrs9.push.hicloud.com
+push1.hicloud.com
+push5.hicloud.com
+push6.hicloud.com
+push8.hicloud.com
+push9.hicloud.com
+pushaix1.hicloud.com
+userbehavior-reader-drcn.himovie.hicloud.com
+wap2.hispace.hicloud.com
+wap3.hispace.hicloud.com
+
 igg.com  # pay-fb.igg.com  # "video game developer"
 
 graph.instagram.com  # https://xakep.ru/2018/07/02/android-231/  # https://clinetworking.com/2018/06/03/1984-called/
@@ -256,28 +320,16 @@ sensors.larkplayerapp.com  # from Adguard
 ad.lgappstv.com  # is in BlockListProject/SmartTV
 aic-ngfts.lge.com  # is in BlockListProject/SmartTV
 control-zoo-dtsstage.tvinteractive.tv  # is in BlockListProject/SmartTV
-nmetrics.samsung.com  # is in Adguard
-us-api.mcsvc.samsung.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
-eu-auth2.samsungosp.com  # is in BlockListProject/SmartTV
 game.internetat.tv  # is in BlockListProject/SmartTV
-gpm.samsungqbe.com  # is in BlockListProject/SmartTV
-img-resize-cdn-prod.samsungnyc.com  # is in BlockListProject/SmartTV
 infolink.pavv.co.kr  # is in BlockListProject/SmartTV
 lgad.cjpowercast.com  # is in BlockListProject/SmartTV
 lgtvonline.lge.com  # from github.com/asterriya/regex-ads/
 ngfts.lge.com  # is in BlockListProject/SmartTV
-ocfconnect-shard-eu02-euwest1.samsungiotcloud.com  # is in BlockListProject/SmartTV
-osb-v2.samsungqbe.com  # is in BlockListProject/SmartTV
 premium-videos.telly.com  # is in BlockListProject/SmartTV
-scs.samsungqbe.com  # is in BlockListProject/SmartTV
 smartshare.lgtvsdp.com  # is in BlockListProject/SmartTV
-uimetadata.samsungiotcloud.com  # is in BlockListProject/SmartTV
 us.ibs.lgappstv.com  # is in BlockListProject/SmartTV
 us.lgtvsdp.com  # is in BlockListProject/SmartTV
 us.rdx2.lgtvsdp.com  # is in BlockListProject/SmartTV
-osb-apps-v2.samsungqbe.com  # is in BlockListProject/SmartTV
-osb.samsungqbe.com  # is in BlockListProject/SmartTV
-gld.push.samsungosp.com  # is in BlockListProject/SmartTV
 
 lgsmartad.com  # from BlockListProject/SmartTV
 
@@ -352,13 +404,18 @@ telemetry-console.api.playstation.com  # Sony - Tracker  # from Quidsup NoTrack-
 
 pluginmanagerconfig1.info  # app telemetry and empty root
 
-
 quicinc.com  # app requests to telemetry.swe.quicinc.com, root redirects to qualcomm.com  # Blocked by some adlist in Blokada
 !+  swe.quicinc.com
 !+      telemetry.swe.quicinc.com
 ! end of quicinc.com
 
-roku.com  # is in BlockListProject/SmartTV
+# Roku is a paid streaming service and with analytics inside.
+roku.com  # from Blogscan  # is in BlockListProject/SmartTV  # from from github.com/asterriya/regex-ads/: (ads|captive|cloudservices|logs).roku.com
+!+  ads.roku.com
+!+  logs.roku.com
+! logs.roku.com  # from NextDNS native-tracking-domains roku: logs.roku.com
+roku.co  # from from github.com/asterriya/regex-ads/: (ads|captive|cloudservices|logs).roku.co
+# In this blocklist it blocked completely. If you have their device, you can whitelist some subdomains like update.roku.com or support.roku.com . For discovered list of subdomains see logs and _telemetry_all
 
 plausible.safing.io  # from EasyPrivacy
 
@@ -385,6 +442,18 @@ samsungrm.net  # from BlockListProject/SmartTV
 samsungcloudsolution.com  # from BlockListProject/SmartTV
 samsungcloudsolution.net  # from BlockListProject/SmartTV
 samsungtvads.com  # Samsung - Advertising  # from Quidsup NoTrack-Blocklist
+bigdata.ssp.samsung.com  # from NextDNS native-tracking-domains samsung
+us-api.mcsvc.samsung.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
+eu-auth2.samsungosp.com  # is in BlockListProject/SmartTV
+push.samsungosp.com  # is in BlockListProject/SmartTV: gld.push.samsungosp.com
+gpm.samsungqbe.com  # is in BlockListProject/SmartTV
+osb.samsungqbe.com  # is in BlockListProject/SmartTV
+osb-v2.samsungqbe.com  # is in BlockListProject/SmartTV
+osb-apps-v2.samsungqbe.com  # is in BlockListProject/SmartTV
+scs.samsungqbe.com  # is in BlockListProject/SmartTV
+img-resize-cdn-prod.samsungnyc.com  # is in BlockListProject/SmartTV
+ocfconnect-shard-eu02-euwest1.samsungiotcloud.com  # is in BlockListProject/SmartTV
+uimetadata.samsungiotcloud.com  # is in BlockListProject/SmartTV
 
 sentry.io$important  # feedback and application monitoring service, commercial. I doubt it is a good idea to send errors somewhere.
 !+  a.sentry.io
@@ -451,6 +520,9 @@ toutiao.com  # is in Adguard
 ! end of toutiao.com
 ! also pstatp.com, see here below too
 
+msmetrics.ws.sonos.com  # from NextDNS native-tracking-domains sonos
+msmetrics-test.ws.sonos.com  # from NextDNS native-tracking-domains sonos
+
 collector.pi.spectrum.net  # from Adguard
 
 adeventtracker.spotify.com  # from Adguard
@@ -460,8 +532,6 @@ sgs.sputnik.ru
 stat.sputnik.ru
 
 networksdk.ssacdn.com  # from Adguard
-
-supersonic.com  # app ads
 
 swtest.ru  # some app (pdd) wants to go there. No way.  # 504 root
 !+  app.swtest.ru
@@ -674,7 +744,7 @@ intl.xiaomi.com  # from github.com/asterriya/regex-ads/
 !+  ad.intl.xiaomi.com
 !+  hybrid.intl.xiaomi.com  # from GoodbyeAds
 !+  mistat.intl.xiaomi.com
-!+      data.mistat.intl.xiaomi.com  # my
+!+      data.mistat.intl.xiaomi.com  # my  # also is in NextDNS native-tracking-domains xiaomi
 !+  sys.intl.xiaomi.com
 !+  video.intl.xiaomi.com  # from Adguard
 lg.xiaomi.com  # from GoodbyeAds
@@ -694,11 +764,11 @@ meihua.xiaomi.com  # from GoodbyeAds
 mibi.xiaomi.com  # from GoodbyeAds
 migc.xiaomi.com  # from GoodbyeAds
 mistat.xiaomi.com  # from Adguard: abtest.mistat.intl.xiaomi.com abtest.mistat.xiaomi.com
-!+  data.mistat.xiaomi.com  # xiaomi spying  # https://forum.adguard.com/index.php?threads/Решено-Шпионские-домены-miui.13437/
+!+  data.mistat.xiaomi.com  # xiaomi spying  # https://forum.adguard.com/index.php?threads/Решено-Шпионские-домены-miui.13437/  # also is in NextDNS native-tracking-domains xiaomi
 mistat.india.xiaomi.com
-!data.mistat.india.xiaomi.com  # from Adguard
+!data.mistat.india.xiaomi.com  # from Adguard and NextDNS native-tracking-domains xiaomi
 mistat.rus.xiaomi.com
-!data.mistat.rus.xiaomi.com  # from Adguard
+!data.mistat.rus.xiaomi.com  # from Adguard and NextDNS native-tracking-domains xiaomi
 music.xiaomi.com  # from GoodbyeAds
 mvideo.xiaomi.com  # from GoodbyeAds
 pandora.xiaomi.com
@@ -746,12 +816,14 @@ intl.miui.com
     ! api.newsfeed.intl.miui.com  # from Adguard
     ! browser.intl.miui.com  # from GoodbyeAds: india.activity.browser.intl.miui.com
     ! newsfeed.intl.miui.com    # from Adguard: api.newsfeed.intl.miui.com
+    ! sa.api.intl.miui.com  # is in NextDNS native-tracking-domains xiaomi
+    ! tracking.intl.miui.com  # is in NextDNS native-tracking-domains xiaomi
 browser.miui.com  # r.browser.miui.com
 comm.miui.com  # from GoodbyeAds
 feedback.miui.com  # from GoodbyeAds
 huangye.miui.com  # from AdGuard
 india.miui.com  # from GoodbyeAds
-    ! tracking.india.miui.com  # Miui - Tracker  # from Quidsup NoTrack-Blocklist
+    ! tracking.india.miui.com  # Miui - Tracker  # from Quidsup NoTrack-Blocklist and NextDNS native-tracking-domains xiaomi
 intl.miui.com
 !+  brs.intl.miui.com  # from Adguard: api.brs.intl.miui.com
 !+  browser.intl.miui.com  # from Adguard: activity.browser.intl.miui.com
@@ -760,7 +832,7 @@ intl.miui.com
 !+  sec.intl.miui.com  # from Adguard: adv.sec.intl.miui.com
 !+  tracking.intl.miui.com
 rus.miui.com  # from GoodbyeAds
-    ! tracking.rus.miui.com  # Miui - Tracker  # from Quidsup NoTrack-Blocklist
+    ! tracking.rus.miui.com  # Miui - Tracker  # from Quidsup NoTrack-Blocklist and NextDNS native-tracking-domains xiaomi
 sec.miui.com  # logupdate.avlyun.sec.miui.com  # (looks like remote logging?)  # miui: adv.sec.miui.com  # mazu.sec.miui.com
 !+  avast.sec.miui.com  # analytics.ff.avast.sec.miui.com
 !+  avlyun.sec.miui.com  # update.avlyun.sec.miui.com  # (supposedly update checking?)  # + todo  # + еще https://habr.com/en/post/320612/  # https://www.quora.com/Do-Xiaomi-phones-really-spy-on-our-data-question-details
@@ -769,7 +841,7 @@ sec.miui.com  # logupdate.avlyun.sec.miui.com  # (looks like remote logging?)  #
 !+  xlmc.sec.miui.com
 !+      ra1.xlmc.sec.miui.com
 !+      ra2.xlmc.sec.miui.com
-tracking.miui.com
+tracking.miui.com  # also is in NextDNS native-tracking-domains xiaomi
 !+  miuiboot.tracking.miui.com
 sys.miui.com
 !+  intl.sys.miui.com
@@ -796,3 +868,5 @@ bms.zeptolab.com  # from MobileAdTrackers
 log-collector.svctr.zynga.com  # from MobileAdTrackers
 
 !! todo
+
+snoop.minecraft.net  # Microsoft - Tracker  # from Quidsup NoTrack-Blocklist
