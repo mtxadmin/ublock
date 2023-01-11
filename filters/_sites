@@ -12262,6 +12262,12 @@ livejournal.com##.story-meta__item--time
     ! other
 ! big quotes symbol while selecting
 livejournal.com##.aentry-toolbar
+! sticky top after cut, useless
+livejournal.com##.b-sticky-cut
+! cut expanded icon, useless
+livejournal.com##.ljcut-expanded
+! sticky panel on hover
+livejournal.com##.entryunit__controls
 !
     !! from specific users
 ! from RU AdList
@@ -15441,6 +15447,8 @@ opera.com##.frame-hero
 opera.com##.block--frame
 opera.com##.header__menu-nav:style(padding-top:0px !important; padding-bottom:0px !important)
 opera.com##.hf__label,.hf__label::after:style(height:auto !important; padding-top:0px !important; padding-bottom:0px !important)
+!top
+opera.com##.sub-header
 
 operatingquadrant.com###header
 
@@ -16386,7 +16394,6 @@ pleasuregirl.net##.rating-container
 
 ||pleer.ru/cnt/*
 ||pleer.ru/pbann/  # from Ru AdList
-
     ! popups
 pleer.ru###close_pop > .modern_popup_bg
 pleer.ru##.cd_popup_container
@@ -16401,6 +16408,9 @@ pleer.ru##.header-table:style(padding-top:0px !important)
     ! banners and promos
 pleer.ru##div.comments:nth-of-type(1):has-text(Самый частый вопрос от клиентов)
 pleer.ru##.pie.dobro
+pleer.ru##.banner-card
+pleer.ru##.charity
+pleer.ru##.infoblocks__box
 pleer.ru##.banners_content
 pleer.ru##.lk_abs
 pleer.ru##.product_price_color2
@@ -23520,6 +23530,7 @@ vmgu.ru##span.articles_info > b:has-text(Реклама:)
 ||vmware.com/s/sfsites/aura*beacon*$xmlhttprequest
 ||vmware.com/s/sfsites/aura*tracking*$xmlhttprequest
 ||vmware.com/*/header-redesign/  # vmware.com/etc.clientlibs/vmware-modernize-cms/componentlibrary/components/content/header-redesign/clientlibs.min.js
+||vmware.com/*/scrapercontent.en.js
     ! popups
 kb.vmware.com##.slds-modal__container
 kb.vmware.com##.slds-fade-in-open.slds-modal
@@ -23534,6 +23545,18 @@ vmware.com##.container:style(min-height:auto !important)
 vmware.com##.logo-wrapper
 vmware.com##.hdr-bottom-nav
 vmware.com##.hdr-wrapper:style(position:static !important)
+vmware.com##.sub-header:style(position:static !important)
+vmware.com##.lhs-container:style(position:static !important)
+vmware.com##.searchbox-wrapper:style(padding-top:0px !important)
+vmware.com##.search:style(margin-top:0px !important)
+docs.vmware.com##.rhs-container:style(left:0px !important; padding-top:0px !important; padding-bottom:0px !important)
+docs.vmware.com##.tech-pub-container:style(top:0px !important)
+    ! right panel
+vmware.com###RightMenu
+vmware.com##.rhs-right-container
+    ! left panel
+! sometimes height changed dynamically
+vmware.com##.left-panel:style(height:auto !important)
     ! other
 vmware.com##.cKM_Feedback_update
 vmware.com##.jive-sidebar.j-box:has-text(Share This Page)
@@ -23543,6 +23566,8 @@ vmware.com##.crayon-main:style(overflow:visible !important)
 ||vmware.com/themes/global/images/vmware_icn_logo.png
 vmware.com##.CoveoErrorReport
 vmware.com##.relatedResources
+! strange empty
+docs.vmware.com##.backdrop
 
 vodasovet.ru##.mobile-navigation
 
@@ -26889,3 +26914,5 @@ tenforums.com##.sim1
 
 ! already blocked.
 wpquads.com##.custom-social-proof
+
+nudgify.com##.beacon-button
