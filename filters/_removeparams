@@ -524,6 +524,8 @@ $removeparam=oref
     ! $removeparam=oref,domain=defenseone.com|govexec.com|nextgov.com|route-fifty.com  # from Adguard
 
 $removeparam=partner  # good old rule from Prx: partner (one of)
+    ! Exclusions:
+    @@||download.opera.com$removeparam=partner  # Opera distribs refuse to download, even from the main page
 
 $removeparam=partnerId
     ! ||lotto.gmx.*^$removeparam=partnerId  # from Adguard
