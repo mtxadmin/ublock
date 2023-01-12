@@ -15,7 +15,7 @@ Wildcard characters are SUPPORTED in this (Blokada) version! You can block a dom
 
 However, there are **advantages:**
 - Blocking with the use of hosts applies to the entire system. Banners and commercials in applications, various telemetry and other
-- Blocking works continuously and [almost does not require resources](hosts_file_performance_en.md)
+- Blocking works continuously and [almost does not require resources](hosts_file_performance_en.md) (Upd 2023: on Windows systems now Microsoft Antivirus actively protests against hosts file changing and even may freeze the system. Microsoft wants their telemetry up and running)
 
 Thus, it is best to install **AND** an ad blocker in the browser, **AND** an application that updates the hosts.
 
