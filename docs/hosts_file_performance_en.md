@@ -21,6 +21,6 @@ On Windows 7 (and older) in some cases, indeed, there may be slowdowns. On Windo
 It is worth noting that Windows 7 has already been withdrawn from support and does not receive updates. If you are using this version, or even older, you can try to disable the DNS Client service (see the link above for details). But it is better to go to the current version.
 
 #### Update 2023:
-Now on Windows systems Microsoft Antivirus actively protests against hosts file changing. In case of small file, it just throws a "virus-like" notification and suggests user to rollback hosts file to default. In case of relatively big file, it may conflict with network services and therefore render the system unusable.
+Now on Windows systems Microsoft Antivirus actively protests against changing of the hosts file. In case of small file, it just throws a "virus-like" notification and suggests user to rollback hosts file to default. In case of relatively big file, it may conflict with network services and therefore render the system unusable.
 
 So, don't directly change hosts file on Windows system. Microsoft wants their telemetry up and running. But you can use intermediate tool like Pi-hole, external DNS or something other solution.
