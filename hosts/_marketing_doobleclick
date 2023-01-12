@@ -1236,7 +1236,7 @@ afs.googleusercontent.com
 ad-creatives-public.commondatastorage.googleapis.com
 androidtvchannels-pa.googleapis.com  # from Adguard
 androidtvwatsonfe-pa.googleapis.com  # from Adguard
-clientmetrics-pa.googleapis.com
+!notifications-pa.googleapis.com - don't block this one! it breaks all the network on Android. Found out on tests, thankfully.
 /admob.
 admob.biz
 admob.co.nz
@@ -1289,13 +1289,14 @@ clients2.google.com
 #!alt7-mtalk.google.com
 #!alt8-mtalk.google.com
 
-crashlyticsreports-pa.googleapis.com  # app requests
-footprints-pa.googleapis.com  # app requests
+clientmetrics-pa.googleapis.com  # this one works ok
+crashlyticsreports-pa.googleapis.com  # app requests  # this one too
+footprints-pa.googleapis.com  # app requests  # and this
 geomobileservices-pa.googleapis.com  # app requests  # tested for months
 growth-pa.googleapis.com  # app requests  # tested for months
 imasdk.googleapis.com$important,all  # see https://better.fyi/trackers/imasdk.googleapis.com/ for example: "Display ads in your application's video, audio, and game content."
-lamssettings-pa.googleapis.com  # app requests
-myphonenumbers-pa.googleapis.com  # app requests
+lamssettings-pa.googleapis.com  # app requests  # that's good
+myphonenumbers-pa.googleapis.com  # app requests  # seems ok
 regioninfo-pa.googleapis.com  # app requests  # tested for months
 
 !1e100.net
