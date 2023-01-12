@@ -2608,16 +2608,35 @@ baniclub.ru##.messageUserBlock > .avatarHolder
 
 banisauni.ru###header
 
+||banki.ru/*/copy-text$script  # site blocks copypaste
+||banki.ru/*/init-banners$script
 ||banki.ru/*/user-geo-widget$script
     ! top
 !banki.ru##.header-mobile:style(height:40px !important)
 banki.ru##.header-mobile
 banki.ru##.header-content
 banki.ru##*:matches-css(position:fixed)
+    ! banners and promos
+||banki.ru/*/HomePageBundle/slider/$image  # banners
+banki.ru##div:has(>a[href^="/news/special_project/"])
+banki.ru##section:has(div:has(>a[href*="/news/partners/"]))
+banki.ru##section[data-gtm-view]:has(a[href*="tracking.banki.ru"])
+banki.ru##section:has(a[data-role=button])
+! promos
+banki.ru##[class^=AggregatorCalc]
+! space for banners
+banki.ru##[class^=HorizontalScroll]
+! space for banners
+banki.ru##[class^=Panel__]
     ! other
 banki.ru##.lazy-widget
 !banki.ru##[class^=Area_] - don't
 banki.ru##.icon-arrow-top-16
+! inline TOC
+banki.ru##.expand-content:has-text(Содержание)
+banki.ru##.text-header-3:has-text(Эксклюзивное видео)
+! non-clickable and useless tags
+banki.ru##[class^=TabsPanel]
 
 ! from Fanboy's
 banki.ua##.b-fb-overlay
