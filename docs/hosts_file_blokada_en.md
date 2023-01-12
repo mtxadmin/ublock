@@ -1,4 +1,4 @@
-﻿[Нажмите сюда для русской версии](hosts_file_blokada_ru.md)
+﻿<!-- [Нажмите сюда для русской версии](hosts_file_blokada_ru.md) -->
 
 #### Yet another smart Blokada hosts file
 
