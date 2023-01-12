@@ -14,6 +14,13 @@
 pikabu.ru#@#div[class="overlay"][style^="z-index:"]
 ! bad filter in Adguard
 pikabu.ru#@#div[class="overlay"][style="z-index: 6001;"]
+
+    ! blurring overlay
+!pikabu.ru##.comments__container_overlayed:style(filter:none !important; pointer-event:initial !important)
+pikabu.ru##.story__adult-overlay
+pikabu.ru##+js(rc,story__content_overlayed)
+pikabu.ru##+js(rc,comments__container_overlayed)
+
 ||pikabu.ru/css/ad_branding_  # from Ru AdList
 ||pikabu.ru/ajax/analytics.php
 ||pikabu.ru/ajax/log.php
@@ -4252,6 +4259,34 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Rollyness"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Rollyness$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Rollyness"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="R2Z2"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^R2Z2$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="R2Z2"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Rizzzli"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Rizzzli$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Rizzzli"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="TOMkpy3"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^TOMkpy3$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="TOMkpy3"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="lelik829"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^lelik829$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="lelik829"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="dot22"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^dot22$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="dot22"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="studio26"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^studio26$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="studio26"]))
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="serpson"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^serpson$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="serpson"]))
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="dot22"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^dot22$/)):style(color:#F0F0F0)
