@@ -19,10 +19,17 @@ However, there are **advantages:**
 
 Thus, it is best to install **AND** an ad blocker in the browser, **AND** an application that updates the hosts.
 
-If your phone is rooted, you can also block ad hosts in [system hosts file](hosts_file_en.md), to protect your phone while rebooting and just after it, before Blokada started.
+If your phone is rooted, you can also block ad hosts in [system hosts file](hosts_file_en.md), to protect your phone while rebooting and just after it, before the filtering app (Blokada or else) started.
 
+For this hosts file version, you have to install an app which can works with asterisks in subdomains. At the moment, I know only one such app: Blokada. Update: @ignoramous recommends another filtering app: Nebulo. There are other DNS filtering apps, but they do not support asterisks.
 
-For this hosts file version, you have to install an app which can works with asterisks in names. At the moment, I know only one such app: [Blokada](https://blokada.org). It is opensource and free.
+## Blokada
+
+Blokada is opensource and free app to filter traffic on the DNS level. I used it for several years, it is a functional and stable app (but only 4.11.1, see below).
+
+Project resources:
+- Official site: https://blokada.org
+- Github: https://github.com/blokadaorg/blokada
 
 Attention:
 - Blokada is absent in markets, because of its adblocking nature. There is Blokada Slim reduced version in Play Market, but it has very limited functions. Use blokada.org
@@ -40,5 +47,29 @@ After adding this new host list, go to *Ad blocking Sessions* and set options:
 - Advanced adblocking rules: Yes
 - Smart List: No
 - CName-Blocking: Yes
+
+## Nebulo
+
+@ignoramous [recommends](https://github.com/mtxadmin/ublock/issues/54#issuecomment-1381255510) another filtering app: Nebulo. Free and opensource.
+
+Project resources:
+- [Nebulo](https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen). Yes, you can download this app right from the Google Play Market
+- [XDA developers thread](https://forum.xda-developers.com/t/app-5-0-nebulo-dns-changer-for-doh-dot-against-censorship-open-source-no-root.4156645/)
+- Github: https://github.com/ch4t4r/nebulo
+
+After install, go to the app menu -> DNS rules:
+- Switch DNS rules on (at the right-top corner)
+- Tap on the + button (round button at the bottom)
+- Enter any name and the address of the hosts file of this project:
+```
+https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt
+```
+(yes, the link is quite long, but it needs to enter it only once)
+- After adding the blocklist, tap refresh button. In less than a minute counter "Rules from this source: " will change from 0 to actual number. If not, recheck link again.
+- Enable query logging (Settings -> Query logging). This can be very useful to find out which domains was blocked and which was not.
+
+Nebulo has an interesting feature: Non-VPN mode. So, you can use AND Blokada, AND Nebulo. Or AND Blokada, AND any non-filtering VPN app. This is a very promising feature.
+
+## Other
 
 Please note that there is no point in adding this file to uBlock Origin, although it partially understands this format - it’s better to use [full version of subscription](../README.md) for this.
