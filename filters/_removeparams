@@ -40,7 +40,10 @@ $removeparam=ad_config_id
 
 $removeparam=adfrom  # from Adguard
 
-$removeparam=adid
+$removeparam=adgroup  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+$removeparam=adgroupid  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
+$removeparam=adid  # also: Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
     ! &siteid=*&adid=$removeparam  # from Adguard
 
 $removeparam=/^adjust_.*/  # adjust.com campains. Also see adjust ad network
@@ -88,6 +91,8 @@ $removeparam=afid
     ! apple.com$removeparam=afid  # from Adguard
     ! shopyourlikes.com$removeparam=afId
 
+$removeparam=agid  # https://learn.microsoft.com/en-us/advertising/guides/url-tracking-upgraded-urls
+
 $removeparam=aiad_clid  # from Adguard
 
 $removeparam=assetId  # Oracle Eloqua  # from NeatURL
@@ -115,6 +120,8 @@ $removeparam=at_medium  # Campaign tracking (at)  # from NeatURL
 
 $removeparam=awc  # from Adguard
 
+$removeparam=bidmatchtype  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
 $removeparam=_branch_match_id  # from Adguard
     ! Branch.io ( https://stackoverflow.com/questions/37882810/what-is-meaning-of-branch-match-id )
     ! medium.com$removeparam=_branch_match_id  # from NeatURL
@@ -133,23 +140,25 @@ $removeparam=caid
     ! warnermediacdn.com$removeparam=caid  # from uBlock filters and Adguard
     ! yspsvc-na.net$removeparam=caid  # from uBlock filters
 
-$removeparam=/campaign/,domain=~recruitics.com|~youtube.com  # maybe it needs i? Not sure
+$removeparam=/campaign/,domain=~recruitics.com|~wikipedia.org|~youtube.com  # maybe it needs i? Not sure
     ! Exclusions:
     ! recruitics.com - false positive in redirecting url (&rx_url=https%3A%2F%2F...%3Frx_campaign...)
+    ! wikipedia.org - false positive: https://en.wikipedia.org/w/load.php?lang=en&modules=ext.centralNotice.choiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2ClargeBannerLimit%2ClegacySupport%2CstartUp%7Cext.centralauth.centralautologin%7Cext.cite.ux-enhancements%7Cext.cx.eventlogging.campaigns%7Cext...
     ! youtube.com - false positive (on uBlock side) on redirects links with "utm_campaign=" encoded: https://www.youtube.com/redirect?...&q=..%3Futm_campaign%3D
     !
     ! $removeparam=at_campaign  # Campaign tracking (at)  # from NeatURL
-    ! $removeparam=campaign  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+    ! $removeparam=campaign  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL  # also: Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
         ! $removeparam=adjust_campaign  # from Adguard
         ! $removeparam=dpg_campaign  # from Adguard
         ! alternate.de$removeparam=campaign  # from Adguard
         ! ||boomstore.de*.html$removeparam=campaign  # from Adguard
         ! caseking.de$removeparam=campaign  # from NeatURL
     ! $removeparam=campaign_id  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
-    ! $removeparam=campaignId  # Oracle Eloqua  # from NeatURL
-        ! /zcvisitor/*?campaignid$document  # is in: uBlock filters – Badware risks
+    ! $removeparam=campaignId  # Oracle Eloqua  # is in NeatURL  # https://docs.oracle.com/en/cloud/saas/marketing/eloqua-user/Help/EloquaAsynchronousTrackingScripts/EloquaTrackingParameters.htm  # also: Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+          ! /zcvisitor/*?campaignid$document  # is in: uBlock filters – Badware risks
         ! stripchat.com$removeparam=campaignId  # from Adguard
     ! $removeparam=hmb_campaign  # Campaign tracking (Humble Bundle)  # from NeatURL
+    ! $removeparam=mt_campaign  # https://tracker.my.com/docs/tracking/links/click-url
     ! $removeparam=sc_campaign  # Campaign tracking (sc)  # from NeatURL
     ! adjust.com$removeparam=campaign  # from Adguard
     ! ||amazon.*/aa$removeparam=bitCampaignCode  # from Adguard
@@ -175,6 +184,7 @@ $removeparam=_clde  # from Adguard
 $removeparam=_cldee  # from Adguard
 
 $removeparam=/clickid$/
+    ! $removeparam=clickid  # https://tracker.my.com/docs/tracking/links/click-url
     ! $removeparam=irclickid  # from Ru AdList
         ! duda.co$removeparam=irclickid  # from Adguard
         ! microsoft.com$removeparam=irclickid  # from Adguard
@@ -206,7 +216,7 @@ $removeparam=clickref
         ! ?clid=$document,removeparam=|clid,domain=yandex.*  # from Ru AdList
         ! ||yandex.ru/?clid=$document,removeparam=|,domain=yandex.*  # from Ru AdList
     $removeparam=dclid  # from Adguard
-    $removeparam=fbclid  # Facebook general parameter  # from NeatURL, Adguard, Ru AdList
+    $removeparam=fbclid  # Facebook general parameter  # is in NeatURL, Adguard, Ru AdList
         ! fbclid=$document,removeparam=fbclid  # from Ru AdList
         ! $removeparam=fbclid  # from Adguard
         ! ||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
@@ -220,12 +230,24 @@ $removeparam=clickref
         ! &ymclid=$document,removeparam=|,domain=~ozon.onelink.me  # from Ru AdList
     $removeparam=ysclid  # New version of third-party yandex id
 
-$removeparam=cmpid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL and Adguard
+$removeparam=cmpid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # is in NeatURL and Adguard  # https://learn.microsoft.com/en-us/advertising/guides/url-tracking-upgraded-urls
+
+!$removeparam=copy  # {copy:queryparameter}  # seems don't  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 $removeparam=cpa,important
     ! market.yandex.*$removeparam=cpa
 
-$removeparam=cx_click  # from Adguard
+$removeparam=criterionid  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
+$removeparam=/^cx_/
+    $removeparam=/^cx_click/
+        $removeparam=cx_click  # from Adguard
+        basketballking.jp$removeparam=cx_art  # from Adguard
+        joshi-spa.jp$removeparam=cx_clicks_art_mdl  # from Adguard
+        joshi-spa.jp$removeparam=cx_clicks_sldbox  # from Adguard
+    cxense.com$removeparam=/^cx_/  # from Adguard
+
+!$removeparam=device ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 $removeparam=/^dpg_.*/  # Campaign tracking (DPG Media)  # used on Dutch sites  # from NeatURL
     ! $removeparam=dpg_campaign  # from Adguard
@@ -241,8 +263,8 @@ $removeparam=/^dt_.*/
 
 $removeparam=ebisAdID  # AD EBiS  # from Adguard
 
-$removeparam=elqTrack  # Oracle Eloqua  # from NeatURL
-$removeparam=elqTrackId  # Oracle Eloqua  # from NeatURL
+$removeparam=elqTrack  # Oracle Eloqua  # is in NeatURL  # https://docs.oracle.com/en/cloud/saas/marketing/eloqua-user/Help/EloquaAsynchronousTrackingScripts/EloquaTrackingParameters.htm
+$removeparam=elqTrackId  # Oracle Eloqua  # is in NeatURL  # https://docs.oracle.com/en/cloud/saas/marketing/eloqua-user/Help/EloquaAsynchronousTrackingScripts/EloquaTrackingParameters.htm
     ! lp.sophos.com$removeparam=elqTrackId  # from Adguard
 
 ! https://thebell.io/kto-budet-uchityvat-vsyu-reklamu-v-internete-chto-budet-s-vizami-i-kak-raskryt-moshennichestvo-po-fotografii
@@ -265,6 +287,8 @@ $removeparam=fb_action_types  # Facebook general parameter  # from NeatURL and A
 $removeparam=fb_comment_id  # from Adguard
 $removeparam=fb_ref  # Facebook general parameter  # from NeatURL and Adguard
 $removeparam=fb_source  # Facebook general parameter  # from NeatURL and Adguard
+
+$removeparam=feeditemid  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 $removeparam=fref  # from Ru AdList
 
@@ -290,6 +314,7 @@ $removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~nextdns.io|~s
     ! /?from_block=$document,removeparam=from_block,domain=www.kinopoisk.ru  # from Ru AdList
     ! indeed.com$removeparam=from
     ! jlcpcb.com$removeparam=from  # from Adguard
+    ! kingsoft.jp$removeparam=from  # from Adguard
     ! oshiete.goo.ne.jp$removeparam=from  # from Adguard
     ! pikabu.ru$removeparam=from
     ! rbc.ru$removeparam=from
@@ -349,7 +374,7 @@ $removeparam=hmb_source  # Campaign tracking (Humble Bundle)  # from NeatURL
 
 $removeparam=__hssc  # Hubspot  # from NeatURL
 $removeparam=__hstc  # Hubspot  # from NeatURL
-$removeparam=_hsenc  # Hubspot  # from NeatURL
+$removeparam=_hsenc  # Hubspot  # is in NeatURL  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
 $removeparam=_hsmi  # Hubspot  # from NeatURL
 $removeparam=hsCtaTracking  # Hubspot  # from NeatURL
 
@@ -387,6 +412,12 @@ $removeparam=idealoid
     ! netgames.de$removeparam=idealoid  # from Adguard
     ! technikdirekt.de$removeparam=idealoid  # from Adguard
 
+!$removeparam=/^ifmobile/ ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+!$removeparam=/^ifnotmobile/ ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+!$removeparam=/^ifsearch/ ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+!$removeparam=/^ifnative/ ?  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+!$removeparam=/^ifpla/ ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
 $removeparam=/^ila_.*/
     ! $removeparam=ila_camaign  # from Ru AdList
     ! $removeparam=ila_context  # from Ru AdList
@@ -406,6 +437,8 @@ $removeparam=/^itm_.*/ # Campaign tracking (itm)  # https://www.parse.ly/help/po
 $removeparam=irgwc  # from Adguard and Ru AdList
     ! https://github.com/AdguardTeam/AdguardFilters/issues/108478
 
+!$removeparam=keyword - definitely not!  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
 $removeparam=_kx  # from Adguard
     ! moodfabrics.com$removeparam=_kx  # from Adguard
 
@@ -418,14 +451,20 @@ $removeparam=linkid
 $removeparam=link_id  # good old rule from Prx: link_id (one of)
     ! elgato.com$removeparam=link_id  # from Adguard
 
+$removeparam=loc_interest_ms  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+$removeparam=loc_physical_ms  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
+$removeparam=/lpurl/  # this maybe will break landing pages redirects, but it is good  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799  # also: https://support.google.com/google-ads/answer/2375447
+
 $removeparam=maf  # from Adguard
+
+$removeparam=matchtype  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 $removeparam=mbid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
     ! wired.co.uk$removeparam=mbid  # from Adguard
 
 $removeparam=mc_cid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # from NeatURL
-$removeparam=mc_eid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # from NeatURL
-    ! $removeparam=mc_eid  # from Adguard
+$removeparam=mc_eid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # is in NeatURL and Adguard # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
 
 $removeparam=media
     ! livejournal.com$removeparam=media
@@ -436,7 +475,7 @@ $removeparam=media
 $removeparam=mindbox-message-key  # from Adguard
 
 $removeparam=/^mkt_tok.*/
-    ! $removeparam=mkt_tok  # Campaign tracking (Adobe Marketo)  # from NeatURL and Adguard
+    ! $removeparam=mkt_tok  # Campaign tracking (Adobe Marketo)  # is in NeatURL and Adguard  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
     ! digikey.com^$removeparam=/^mkt_tok/  # from Adguard
         ! Lately: $domain=atlanticcouncil.org|digikey.com,removeparam=/^mkt_tok/  # from Adguard
 
@@ -444,15 +483,23 @@ $removeparam=ml_subscriber  # from Adguard
 $removeparam=ml_subscriber_hash  # from Adguard
     ! https://github.com/brave/brave-browser/issues/17507
 
-$removeparam=msclkid  # from Adguard
+$removeparam=msclkid  # is in Adguard  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 ! Mail.ru tracking
-$removeparam=mt_click
-    ! mt_click$document,removeparam=|,domain=mail.ru|ok.ru  # from Ru AdList
-$removeparam=mt_click_id  # from Ru AdList
-$removeparam=mt_sub
-    ! mt_sub$document,removeparam=|,domain=mail.ru|ok.ru  # from Ru AdList
-
+$removeparam=/^mt_/
+    ! $removeparam=mt_adset  # https://tracker.my.com/docs/tracking/links/click-url
+    ! !$removeparam=mt_campaign  # see /campaign/ rule  # https://tracker.my.com/docs/tracking/links/click-url
+    ! $removeparam=mt_click
+        ! mt_click$document,removeparam=|,domain=mail.ru|ok.ru  # from Ru AdList
+    ! $removeparam=mt_click_id  # from Ru AdList
+    ! $removeparam=mt_gaid  # https://tracker.my.com/docs/tracking/links/click-url
+    ! $removeparam=mt_creative  # https://tracker.my.com/docs/tracking/links/click-url
+    ! $removeparam=mt_idfa  # https://tracker.my.com/docs/tracking/links/click-url
+    ! $removeparam=mt_network  # https://tracker.my.com/docs/tracking/links/click-url
+    ! $removeparam=/^mt_sub[0-9]/  # https://tracker.my.com/docs/tracking/links/click-url
+        ! $removeparam=mt_sub
+            ! mt_sub$document,removeparam=|,domain=mail.ru|ok.ru  # from Ru AdList
+ 
 $removeparam=/^mtm_.*/,important  # Campaign tracking (Matomo/Piwik)  # from NeatURL
     ! $removeparam=mtm_campaign  # from Adguard
     ! $removeparam=mtm_cid  # from Adguard
@@ -464,6 +511,8 @@ $removeparam=/^mtm_.*/,important  # Campaign tracking (Matomo/Piwik)  # from Nea
     ! $removeparam=mtm_source  # from Adguard
 
 $removeparam=ncid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
+
+!$removeparam=network ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799  # https://support.google.com/google-ads/answer/6277564
 
 $removeparam=noads  # tracking on parked domains
 
@@ -509,8 +558,8 @@ $removeparam=offer_id  # Let's remove ad offers radically
     ! from Adguard
     !fuckamouth.ru##a[href*="&offer_id="]
 
-$removeparam=oly_anon_id  # from Adguard
-$removeparam=oly_enc_id  # from Adguard
+$removeparam=oly_anon_id  # is in Adguard  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
+$removeparam=oly_enc_id  # is in Adguard  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
     ! https://github.com/brave/brave-browser/issues/13644
 
 $removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList
@@ -518,10 +567,14 @@ $removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex
 $removeparam=oprtrack  # from Adguard
     ! mail.ru$removeparam=oprtrack  # from Adguard
 
+!$removeparam=orderitemid ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
 $removeparam=oref
     ! defenseone.com$removeparam=oref  # from Adguard
     ! nextgov.com$removeparam=oref  # from Adguard
     ! $removeparam=oref,domain=defenseone.com|govexec.com|nextgov.com|route-fifty.com  # from Adguard
+
+!$removeparam=/^param[1-3]:/ # seems don't  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 $removeparam=partner  # good old rule from Prx: partner (one of)
     ! Exclusions:
@@ -565,6 +618,12 @@ $removeparam=/^pk_.*/,important  # Campaign tracking (Matomo/Piwik)  # from Neat
     ! $removeparam=pk_source  # from Adguard
     ! originally commented rules from NeatURL: #?pk_campaign@vivaldi.com, #?pk_kwd@vivaldi.com - now it turned out it was Piwik
 
+$removeparam=product_channel  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+$removeparam=product_country  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+!$removeparam=product_language  # hmm.. not very tracking, after all  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
+!$removeparam=productid - definitely not!  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
 $removeparam=promo
     
 $removeparam=promoid
@@ -602,6 +661,8 @@ $removeparam=/pvid$/
     !taobao.com$removeparam=pvid  # from Adguard
 
     ! jd.com$removeparam=pvid  # from Adguard
+
+!$removeparam=querystring  # seems don't  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 # recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
@@ -702,7 +763,7 @@ $removeparam=ruid  # from Ru AdList, modified
     ! RBC network tracking. Better to make general rule for their future projects
     ! ?ruid=$document,removeparam=|ruid,domain=autonews.ru|rbc.ru|sportrbc.ru  # from Ru AdList
 
-$removeparam=__s  # from Adguard
+$removeparam=__s  # is in Adguard  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
 
 $removeparam=sc_campaign  # Campaign tracking (sc)  # from NeatURL
 $removeparam=sc_channel  # Campaign tracking (sc)  # from NeatURL
@@ -750,6 +811,8 @@ $removeparam=spm
         ! ://aliexpress.*.htm?spm=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
     ! sohu.com$removeparam=spm  # from Adguard
     ! v.youku.com$removeparam=spm  # from Adguard
+
+# seller_name - seems don't  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 # senderId - do not remove in general. Though it is being used in Oracle Eloqua
 
@@ -849,6 +912,8 @@ $removeparam=tag
         ! ||amazon.*/dp/$removeparam=tag  # also from Adguard
     cnet.com$removeparam=tag  # from Adguard
 
+$removeparam=targetid  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
 $removeparam=trackingid
     ! adobe.com$removeparam=trackingid  # from Adguard
     ! linkedin.com$removeparam=trackingId  # from NeatURL and Adguard
@@ -869,10 +934,11 @@ $removeparam=uclick
 $removeparam=uclickhash
     ! /?uclick=*;uclickhash=$removeparam  # from Adguard
     ! &uclick=*&uclickhash=$removeparam  # from Adguard
+    ! ?uclick=*&uclickhash=$removeparam  # from Adguard
 
 $removeparam=usqp  # from Adguard
 
-$removeparam=/^utm_.*/,important,domain=~youtube.com  # Campaign tracking (utm)  # is in NeatURL and RuAdList. Very common parameters.
+$removeparam=/^utm_.*/,important,domain=~youtube.com  # Campaign tracking (utm)  # is in NeatURL and RuAdList. Very common parameters.  # UTM - Urchin Tracking Modules
     ! Exclusions:
     ! youtube.com - false positive (on uBlock side) on redirects links with "utm_campaign=" encoded: https://www.youtube.com/redirect?...&q=..%3Futm_campaign%3D
     !
@@ -967,7 +1033,7 @@ $removeparam=vc_lpp  # from Adguard
     ! Valuecommerce ( https://help.valuecommerce.ne.jp/mer/dl/ITP2.0_for_iTAG.pdf )
 
 $removeparam=vero_conv  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # from NeatURL  # is in Adguard
-$removeparam=vero_id  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # from NeatURL  # is in Adguard
+$removeparam=vero_id  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # is in NeatURL and Adguard  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
 
 $removeparam=wbraid  # Google ads/analytics  # from Adguard
 
@@ -1816,6 +1882,7 @@ yandex.*$removeparam=persistent_id  # from Adguard, modified
     ! ||yandex.*/sport/$removeparam=persistent_id  # from Adguard
 market.yandex.*$removeparam=pokupki  # from Ru AdList, modified
     ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
+market.yandex.*$removeparam=rs  # some id
 market.yandex.*$removeparam=sku
 yandex.*$removeparam=stid  # from Adguard, modified
     ! ||yandex.*/news/$removeparam=stid  # from Adguard
@@ -1893,7 +1960,6 @@ zhihu.com$removeparam=hybrid_search_source  # from uBlock filters
 !    nid
 !    ref_
 
-cxense.com$removeparam=/^cx_/  # from Adguard
 cxense.com$removeparam=/^pickup_list_click/  # from Adguard
 
 jasonsavard.com$removeparam=cUrl  # from Adguard: jasonsavard.com$removeparam=/cUrl|ref/
@@ -2314,8 +2380,6 @@ mydirtyhobby.com$removeparam  # from Adguard: lp.mydirtyhobby.com$removeparam
 ! don't know, but ok
 @@/mediaserver/*$removeparam,domain=ramtrucks.com|chrysler.com|fiatusa.com|alfaromeousa.com|jeep.com|dodge.com  # from Adguard
 
-basketballking.jp$removeparam=cx_art  # from Adguard
-
 cinematoday.jp$removeparam=g_clk  # from Adguard
 
 seek.com.au$removeparam=type
@@ -2334,3 +2398,8 @@ hoken-mammoth.jp$removeparam=s_mf  # from Adguard
 apple.com$removeparam=cid  # from Adguard
 
 limoo.host$removeparam=wr  # from uBlock filters
+
+n11.com$removeparam=/pfx|adj/  # from Adguard
+n11.com$removeparam=magaza
+
+whoisxmlapi.com$removeparam=mc  # ref
