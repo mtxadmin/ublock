@@ -15796,6 +15796,7 @@ ozon.ru##div[data-widget="banner"]
 ozon.ru##a[href^="/travel/info/hotels-cashback/"]
 ozon.ru##div[data-widget="objectBannerList"]
 ozon.ru##div[data-widget="webPremiumPointsInfo"]
+ozon.ru##div[data-widget="webMarketingLabels"]
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 ozon.ru##div[data-widget=webInstallmentPurchase]
@@ -16422,6 +16423,8 @@ pleer.ru##.top-menu-fixed
 pleer.ru##+js(rc,mar_btm15)
 pleer.ru##+js(rc,big3)
 pleer.ru##h4:style(color:initial !important)
+! "вы смотрели" on top
+pleer.ru##.header-top__link--brand
 !
 pleer.ru##.header-table:style(padding-top:0px !important)
     ! banners and promos
@@ -24273,9 +24276,13 @@ wikiwand.com###article_content_wrapper:style(margin-top:40px !important)
 ||wildberries.co.il/stats/
 ||wildberries.fr/stats/
 !
+    ! visited goods
 ||wildberries.ru/visitedgoods
 ||wildberries.co.il/visitedgoods
 ||wildberries.fr/visitedgoods
+wildberries.ru##.j-recent-items
+! don't edit, there are several divs named ".recently-watched", but only this is really "recently-watched"
+wildberries.ru,wildberries.co.il,wildberries.fr##.j-recent-items > .recently-watched
 !
 ||wildberries.ru/search/tagsbyurl
 ||wildberries.co.il/search/tagsbyurl
@@ -24339,8 +24346,6 @@ wildberries.ru,wildberries.co.il,wildberries.fr##.compatability
 wildberries.ru,wildberries.co.il,wildberries.fr##.i-tags-group
 wildberries.ru,wildberries.co.il,wildberries.fr##.also-buy-wrapper
 wildberries.ru,wildberries.co.il,wildberries.fr##.scrolled-socials
-! don't edit, there are several divs named ".recently-watched", but only this is really "recently-watched"
-wildberries.ru,wildberries.co.il,wildberries.fr##.j-recent-items > .recently-watched
 ! oneclick
 wildberries.ru,wildberries.co.il,wildberries.fr##.same-part-kt__btn-buy
 wildberries.ru,wildberries.co.il,wildberries.fr##.error500
@@ -24384,8 +24389,11 @@ windows10forums.com###header
 
 windows10i.ru###masthead
 
+    ! top
 windowscentral.com##.header-top:style(position:static !important)
 windowscentral.com##.header-top-inner:style(position:static !important)
+windowscentral.com##.sticky-nav:style(position:static !important)
+    ! other
 !inline
 windowscentral.com##.hawk-nest
 
@@ -26935,3 +26943,15 @@ tenforums.com##.sim1
 wpquads.com##.custom-social-proof
 
 nudgify.com##.beacon-button
+
+||pro-katalog.ru/js/fancybox.umd.js  # scroll unfix
+    ! city popup
+pro-katalog.ru##.fancybox__container
+pro-katalog.ru##.overlay
+    ! other
+! seo
+pro-katalog.ru##.footer-info
+
+naobzorah.ru##.fly:style(position:static !important)
+
+videoregobzor.ru##.postnavprev
