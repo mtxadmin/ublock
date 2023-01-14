@@ -1381,9 +1381,10 @@ google.*$removeparam=sei
 google.*/search$removeparam=sourceid  # from Adguard
     ! ||www.google.*/search?$removeparam=sourceid  # from Ru AdList
 ||www.google.*/search?$removeparam=uact  # from Ru AdList
+||google.*/url$removeparam=usg
 docs.google.com$removeparam=usp
 google.*$removeparam=ved
-    ! ||www.google.*/search?$removeparam=ved  # from Ru AdList
+    ! ||www.google.*/search?$removeparam=ved  # from Ru AdList  # and in https://www.google.com/url?... too
 google.*/websearch$removeparam=visit_id  # from Adguard
 gstatic.com$removeparam=zx
 
@@ -2403,3 +2404,6 @@ n11.com$removeparam=/pfx|adj/  # from Adguard
 n11.com$removeparam=magaza
 
 whoisxmlapi.com$removeparam=mc  # ref
+
+welcometothejungle.com$removeparam=o  # some number
+welcometothejungle.com$removeparam=q  # some id
