@@ -68,7 +68,7 @@ https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt
 - After adding the blocklist, tap refresh button. In less than a minute counter "Rules from this source: " will change from 0 to actual number. If not, recheck link again.
 - Enable query logging (Settings -> Query logging). This can be very useful to find out which domains was blocked and which was not.
 
-Nebulo has an interesting feature: Non-VPN mode. So, you can use AND Blokada, AND Nebulo. Or AND Blokada, AND any non-filtering VPN app. This is a very promising feature.
+*Nebulo has an interesting feature: Non-VPN mode. So, theoretically, you can use AND Blokada, AND Nebulo. Or AND Blokada, AND any non-filtering VPN app. This is a very promising feature. But in practice, since Android can send DNS queries only on port 53, and the system cannot allow you to set port number in Nebulo lower than 1024, you have to [make a local port redirect](https://github.com/Ch4t4r/Nebulo/blob/master/docs/NONVPNMODE.md) for that.*
 
 ## Other
 
