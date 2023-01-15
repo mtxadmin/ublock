@@ -1255,10 +1255,6 @@ allboox.ru##.pagination:style(margin-bottom:0px !important)
 
 all-companies.ru###last_companies_view
 
-! that's from Ru AdList (todo: is it really needed?)
-@@||all-episodes.tv^$generichide,badfilter
-@@||all-episodes.tv/retlplayer/downretl.js$script,1p  # from uBlock filters
-
 allfest.ru##.region-pre-header-left
 ||allfest.ru/sites/default/files/inline-images/$image
 allfest.ru##.view-popular-objects
@@ -1557,9 +1553,6 @@ aniko-gas.ru###masthead
 animalreader.ru##.td-header-top-menu
 
 ! that's from Ru AdList (todo: is it really needed?)
-@@||anistar.me^$generichide,badfilter
-
-! that's from Ru AdList (todo: is it really needed?)
 @@||anivisual.net^$generichide,badfilter
 
 annamama.ru##.bottom.x-colophon
@@ -1667,7 +1660,13 @@ aphorismos.ru/_informer/*
 
 apomusic.ru##.site-desc-wr
 
-@@||www.aport.ru^$generichide,badfilter
+# @@||www.aport.ru^$generichide,badfilter  # yes, that rule is needed
+    ! popups
+aport.ru##.site-announcer
+aport.ru##.found-mistake-alert
+    ! sticky
+aport.ru##.btn:style(position:static !important)
+    ! other
 
 app-android.ru##.main-contacts
 app-android.ru##.social-repost
@@ -1761,6 +1760,7 @@ arcenal-m.ru##.box.relative
 
 ! mapping resource, heavy and no ads, so we don't need to process general rules
 @@||arcgis.com^$generichide
+||arcgis.com/js/app/telemetry.js$redirect=noopjs  # still "TypeError: Telemetry.init is not a function"
 
 ! static header
 web.archive.org###wm-ipp:style(position:static !important)
@@ -1814,6 +1814,9 @@ armada-spec.ru##.prmn-cmngr__confirm
 armada-spec.ru###delTime > svg
 armada-spec.ru###delPrice > svg
 armada-spec.ru###flycart-widget
+
+armeyka.ua##.popup-login
+armeyka.ua##.footer-device-mobile
 
 armguns.ru##.str_wrap
 armguns.ru##em
@@ -3037,8 +3040,10 @@ bizebra.me$3p  # ad xhrs  # paid movies (megogo)
 
 bizjournals.com##.SnapLinksContainer:style(display:initial !important)
 
+||bizon365.ru/img/bg1.jpg
 ! mostly unneeded, but recheck
 @@bizon365.ru$generichide
+bizon365.ru##.logo
 
 b-kontur.ru##.aside
 
@@ -4370,6 +4375,8 @@ cntd.ru##.header_top_logo
 cntd.ru##.__fixed
 cntd.ru##.fix-panel
 
+coalfire.com###contact-form
+
 codeby.net##.uix_headerContainer > div:nth-of-type(4)
 
 ||codecguide.com/stats.js  # is in EasyPrivacy
@@ -4606,6 +4613,7 @@ cov.su##.t-sbs-anim_started
 cov.su##[class$=__positionfixed]
 cov.su##[href="javascript:t190_scrollToTop()"]
 
+||covertarget.com/ct.gif  # logo
 covertarget.com*_*.php  # from EasyList
 
 cpanet.com##.birdseye-header:style(position:static !important)
@@ -6009,6 +6017,11 @@ easydoit.ru##div.table-responsive
 
 easylist.to##+js(cookie-remover.js)
 
+||easyspeak.ru/assets/templates/easy/img/action/$image
+easyspeak.ru##.main_slider
+easyspeak.ru##.phone_mobile
+easyspeak.ru##.content_upgrade
+
 ebay.com##body table ul#bc:style(margin-top:20px !important)
 ebay.com###gf-norton
 ebay.com###gh-top:style(position:static !important)
@@ -6142,6 +6155,7 @@ educba.com###banner_1
 educba.com###take-bundle
 educba.com##.inline-pp-banner
 educba.com##.code-block:has(a)
+educba.com##.banner-3
     ! top
 educba.com##.page-header
 educba.com###topdiv
@@ -6149,6 +6163,8 @@ educba.com###topdiv
 educba.com##.five-sixths
 educba.com##.quiz-sticky
 ||educba.com/ajax/js/ckk.js
+educba.com##.sixths
+educba.com##.footer-widgets
 
 edugeek.net##.options_block
 edugeek.net###notices
@@ -6436,6 +6452,11 @@ english-language.ru###rightfixbut
 englishpage.com##.ep
 
 enjoysurvey.com$3p
+
+enosha.ru##.main-slider
+enosha.ru##.slider-custom
+! seo
+enosha.ru##.about-block
 
 ||enter.online/img/accept_card.jpg
     ! top
@@ -9319,6 +9340,12 @@ howtofix.guide##.header-main-area
     ! top
 howtogeek.com##.header-commission-statement
 howtogeek.com##.affiliate-disclosure
+    ! popups
+! is in AdGuard and Fanboy's
+howtogeek.com##.email-overlay
+    ! inline related
+howtogeek.com##.relatedside
+howtogeek.com##p:has-text(/RELATED:/)
     ! other
 howtogeek.com##.message
 howtogeek.com###colophon
@@ -9331,8 +9358,6 @@ howtogeek.com##.social-share > .share-heading
 howtogeek.com##div[id^="purch_"]
 ! is in EasyList
 howtogeek.com##div[id^="purch"]
-! is in AdGuard and Fanboy's
-howtogeek.com##.email-overlay
 ! is in AdGuard
 howtogeek.com##.social-media-buttons > div.social-wrapper
 ! There is an exclusion in Fanboy's
@@ -14330,6 +14355,8 @@ nalog-nalog.ru##.insert
 
 namba.net##.footer-heading
 
+naobzorah.ru##.fly:style(position:static !important)
+
 ! popup
 napolke.ru##[class^=App__AgePopupContent]
 napolke.ru##.mui-fixed
@@ -14981,6 +15008,8 @@ nude.hu###leftpanel
 nude.hu###rightpanel
 nude.hu###next_button
 nude.hu###prev_button
+
+nudgify.com##.beacon-button
 
 ||nudity911.com/images/$image
 nudity911.com###below_header
@@ -15638,6 +15667,9 @@ osp.ru##.lan-siblings-links
 ||osp-ua.info/*/logos.jpg
 osp-ua.info###linktext
 
+osradar.com##.wpb_wrapper:style(position:static !important)
+osradar.com##.tdb_header_weather
+
 ostonline.net##.rels
 
 ostraining.com###top-box
@@ -15885,6 +15917,8 @@ pai-bx.com##.text-info
 palladium.ru##.city
 
 paloaltonetworks.com##.first-logo
+
+pancer.com.ua##.tl-call-catcher
 
 pandia.ru##body > center > div
 
@@ -17118,6 +17152,14 @@ projectgurukul.org##.czr-mr-loader.czr-css-loader
 
 project-home.ru##.h.go_top
 
+||pro-katalog.ru/js/fancybox.umd.js  # scroll unfix
+    ! city popup
+pro-katalog.ru##.fancybox__container
+pro-katalog.ru##.overlay
+    ! other
+! seo
+pro-katalog.ru##.footer-info
+
 prokatis.ru##.price-notification
 prokatis.ru##.msg_block
 prokatis.ru##.gp_block_open
@@ -17128,6 +17170,8 @@ prokatis.ru##.footer_content
 
 prom.ua##div[class^=besida-bubbleButton]
 prom.ua##.x-footer-extra
+||static-cache.ua.uaprom.net/*/pop-up/$image
+||images.prom.ua/*mob_panel_$image
 
 promislovik.info$inline-script  # site blocks copypaste 
 ! header
@@ -17797,13 +17841,16 @@ reddit.com##.commentsignupbar.infobar
 reddit.com##.listingsignupbar.infobar
 reddit.com##[id^="AppRouter-main-content"]:style(padding-top:0px !important; padding-left:0px !important)
 reddit.com##.ListingLayout-backgroundContainer
+    ! banners and promos
+! from uBlock filters
+reddit.com##div[class][data-before-content="advertisement"]:not([id])
+! empty div under the post (before comments)
+reddit.com##.ListingLayout-outerContainer > div > div > div > div > div:has-text(/^$/)
     ! other
 ! from EasyList
 reddit.com##div[id^="overlay-sidebar-atf-"]
 ! from EasyList
 reddit.com##div[id^="overlay-sidebar-btf-"]
-! from uBlock filters
-reddit.com##div[class][data-before-content="advertisement"]:not([id])
 ! is in EasyList
 reddit.com##.promotedlink
 ! from AdGuard
@@ -18553,10 +18600,15 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.org/big/2017/0804/a4/47ecbe85694e340e5f891e0fec9466a4.png
 ||fastpic.org/big/2017/1205/3c/31dd111f6b53750d3b98ab643ad93c3c.jpg
 ||fastpic.org/big/2017/1218/b1/2b40b455ed7dc111d226b952565c8db1.png
+||fastpic.org/big/2018/0108/f4/c192b0b3d97828ef8ec068cd7d56edf4.jpg
+||fastpic.org/big/2018/0222/72/3da798ffe01a9ce7de3e6ee13623d372.jpg
+||fastpic.org/big/2018/0919/82/67f0b225cca42f2f2f821f5b09e0e982.jpg
+||fastpic.org/big/2019/1028/5a/814a17cb7dbe1bf051022c52e7a2765a.png
 ||fastpic.org/big/2019/1029/ff/5dae8a02467f3c409432c9ff77de44ff.png
 ||fastpic.org/big/2019/1101/6e/0b475919c9d011fe3ee0d890954fbc6e.jpg
 ||fastpic.org/big/2019/1101/8b/845d8ff9e3c1c3e8f0305578aaffcd8b.jpg
 ||fastpic.org/big/2019/1118/c1/b186615ab6df8990dea99022d7b9b9c1.png
+||fastpic.org/big/2020/1125/ff/2e13908aeb2b511bafd9bca2e4a142ff.jpg
 ||fastpic.org/big/2019/1226/55/c7c8483b3b664832f3bbf6a2b0e8c955.png
 ||fastpic.org/big/2019/1226/5a/4c564a74f8bd6c56b6f3d488442fc65a.jpg
 ||fastpic.org/big/2019/1226/5d/b6427e579588fdb051a339f7c14ae15d.png
@@ -18722,6 +18774,7 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.ru/big/2021/0507/10/9748d184d7f3bece6e93e36883d5de10.png
 ||fastpic.ru/big/2021/0510/73/67ca74c2f4e32159623220d5ae065873.jpg
 ||fastpic.ru/thumb/2014/0302/8d/d18f38591d152fca9da17ef139e15f8d.jpeg
+||imageban.ru/out/2018/08/11/e93ce72b01d6a52f81b197dd54ec0060.jpg
 ||imageban.ru/out/2018/12/06/028cbda372e272916502fa6d9a36818c.png
 ||imgur.com/lZPBJzD.png
 ||imgur.com/rHY2oMb.png
@@ -19259,6 +19312,12 @@ sdvk.ru###geo-selector
 sdvk.ru##.item-action
 
 seagate.com###helpfulQ
+
+searchenginejournal.com##.sej-logo
+searchenginejournal.com##.sej-header:style(position:static !important)
+||searchenginejournal.com/wp-json/  # banners
+! useless top img
+searchenginejournal.com##.sej-sthumb
 
 searchengines.guru##[id^="header"]
 searchengines.guru##[id^="td_post"] > div.smallfont
@@ -21644,6 +21703,10 @@ texterra.ru##.menu-top
 texterra.ru###matnav
 texterra.ru##div.incut
 
+! site breaks copypaste
+textove.com$inline-script
+textove.com$script
+
 tgrm.su##a.b-channel__item:has(span:has-text(ТОП-КАНАЛ))
 tgrm.su##.app-header__fixed:style(position:static !important)
 
@@ -21789,6 +21852,10 @@ the-village.ru##.screens-Article-_-StickyTopBlock--StickyTopBlock__wrapper:style
 the-village.ru##[class*=-HeaderDesktop__topCenter]
 the-village.ru##[class$=LocalServices__localServices]
 the-village.ru##[class*=_-Header-]:style(padding-top:0px !important)
+
+thewindowsclub.com##a[href="https://www.thewindowsclub.com/pc-repair-tool"]
+! useless TOC
+thewindowsclub.com##.calloutList
 
 thewindowsplus.org##.site-header
 thewindowsplus.org##.sidebar
@@ -23438,6 +23505,8 @@ videoregistratoravto.ru##.uk-alert
 videoregistratoravto.ru##.uk-button
 videoregistratoravto.ru##.uk-sticky:style(position:static !important)
 
+videoregobzor.ru##.postnavprev
+
 vidora.com$third-party  # from EasyList  # "Machine Learning Decisioning for Consumer Data"
 
 ! "video hosting  Share videos & get rewarded  Affiliate Manager"
@@ -24473,6 +24542,7 @@ windowsphoneinfo.com###headerProxy
     ! top
 windowsreport.com##.logo__image
 windowsreport.com##.mega-menu__container__logo
+windowsreport.com##.mega-menu__container__wr-logo
 windowsreport.com##.article-details__bottom__actions__affiliate
 windowsreport.com##.article-details__bottom__actions__share-btn
     ! banners and promos
@@ -25486,6 +25556,14 @@ zcsend.net$domain=~zoho.com|~zohopublic.com|~zohostatic.com|~zohosupport.com|~zo
     ! logo
 zdnet.com##.svg-logo-header
 zdnet.com##.zd-logo
+    ! inline related
+zdnet.com##.c-shortcodePinbox-textList_floating.c-shortcodePinbox-textList
+zdnet.com##p:has(strong):has-text(/^Also:/)
+zdnet.com##.c-listingVertical
+    ! banners and promos
+zdnet.com##.c-commerceBuyButton
+zdnet.com##.c-globalBreakingNews
+zdnet.com###taboola-below-home-thumbnails-homepage
     ! other
 ! is in Adguard
 zdnet.com###ot-sdk-btn
@@ -25496,9 +25574,7 @@ zdnet.com##.leader-bottom
 ! is in Fanboy's
 zdnet.com##.keepUp
 ! is in Adguard
-zdnet.com###taboola-below-home-thumbnails-homepage
 zdnet.com##.c-shortcodeListicle_buttonContainer
-zdnet.com##.c-commerceBuyButton
 zdnet.com##.sharebar-trigger
 
 zdorovaya-eda.com###prevnext-nav
@@ -26996,29 +27072,4 @@ tenforums.com##.sim1
 
 ! already blocked.
 wpquads.com##.custom-social-proof
-
-nudgify.com##.beacon-button
-
-||pro-katalog.ru/js/fancybox.umd.js  # scroll unfix
-    ! city popup
-pro-katalog.ru##.fancybox__container
-pro-katalog.ru##.overlay
-    ! other
-! seo
-pro-katalog.ru##.footer-info
-
-naobzorah.ru##.fly:style(position:static !important)
-
-videoregobzor.ru##.postnavprev
-
-enosha.ru##.main-slider
-enosha.ru##.slider-custom
-! seo
-enosha.ru##.about-block
-
-searchenginejournal.com##.sej-logo
-searchenginejournal.com##.sej-header:style(position:static !important)
-||searchenginejournal.com/wp-json/  # banners
-! useless top img
-searchenginejournal.com##.sej-sthumb
 
