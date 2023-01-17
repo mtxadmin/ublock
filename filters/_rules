@@ -1618,6 +1618,8 @@ _rebid.js  # from EasyList
 ! Browsec ad popups
 ##[class^=_Not][class*=_Big_In]:has-text(You’re using Browsec Free)
 ! other
+! from uBlock filters
+##a[href^="http://adtrack"]
 ###abAlert
 ###abDetected
 ###abnban
@@ -2946,6 +2948,8 @@ _wtInit.js  # from Fanboy's
 !
 ! other
 !
+! many js totops
+##a[href$="scrollToTop()"]
 ! from Fanboy's
 ##a[title="Back to top"]
 ###arrow
