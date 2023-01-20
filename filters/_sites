@@ -2309,6 +2309,7 @@ avito.ru##[class^=push-root]
 avito.ru##[class^=sendout-banner]
 avito.ru##[class*=tooltip-placement-bottom]
 avito.ru##[class*=items-vip]
+avito.ru##[class^=carousel-list]
     ! спам и разводки
 avito.ru##.js-catalog-item-enum:has-text(Компьютерный мастер)
     ! socials
@@ -8628,6 +8629,9 @@ habr.com##.tm-article-sticky-panel:style(position:static !important)
 habr.com##.tm-sexy-sidebar:style(position:static !important)
 ! филлер к правилу про fixed "sexy sidebar". Без него (с ним) сайдбар прыгает-мерцает
 habr.com##.tm-layout-sidebar__placeholder_stick-top
+! еще филлеры
+habr.com##.tm-layout-sidebar__placeholder_margin
+habr.com##.tm-layout-sidebar__placeholder_stick-bottom
     ! banners and sponsor posts
 habr.com##.default-block:has-text(Хабр рекомендует)
 habr.com##.post_preview:has-text(Блог компании ТechMedia)
@@ -22607,6 +22611,8 @@ tutsnode.net$inline-script
 tutsnode.net##div:has-text(using an ad blocker)
 tutsnode.net##.left-logo
 tutsnode.net##.bam-date
+! useless duplicate menu
+tutsnode.net##.main-navigation
 
     ! top
 tutu.ru##[class^=__logo__]
