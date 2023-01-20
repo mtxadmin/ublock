@@ -3046,6 +3046,16 @@ bizjournals.com##.SnapLinksContainer:style(display:initial !important)
 @@bizon365.ru$generichide
 bizon365.ru##.logo
 
+    ! banners and promos
+bizorg.su##.banner-div
+bizorg.su##.list-banner-wrapper
+bizorg.su##.companies-list__header:has(.list-banner-wrapper)
+bizorg.su##.sidebar-slider
+bizorg.su##.footer-banner-wrapper
+    ! other
+bizorg.su##.product-aside-description:style(position:static !important)
+bizorg.su##.section--note
+
 b-kontur.ru##.aside
 b-kontur.ru##[class^=SupportButton]
 
@@ -4009,11 +4019,20 @@ chickteases.com###headerCat
 chickteases.com###footer > p
 
 ||chilibros.co/*/sale.geo.positiion/
-chilibros.co###footerLine
-chilibros.co##.marker
+    ! top
 chilibros.co###mainMenuContainer.fixed:style(position:static !important)
+    ! banners and promos
 chilibros.co##.banner-top
+    ! bottom
+chilibros.co###topProduct
+chilibros.co###footerTabsCaption
+chilibros.co###footerLine
 chilibros.co###footerBottom
+    ! other
+chilibros.co##.marker
+chilibros.co###catalog .addCart
+chilibros.co###catalog .addCompare
+chilibros.co###catalog .addWishlist
 
 chilihead.ru##.l-header:style(position:static !important)
 
@@ -15362,17 +15381,17 @@ olore.ru##.sub-email
 olore.ru##.fone
 
     ! top
-olx.ua###headerLogo
-olx.ua##.navi:style(position:static !important)
-olx.ua###innerLayout:style(padding-top:0px !important)
+olx.ua,olx.kz###headerLogo
+olx.ua,olx.kz##.navi:style(position:static !important)
+olx.ua,olx.kz###innerLayout:style(padding-top:0px !important)
     ! banners and promos
-olx.ua##.siteinfobox
-olx.ua###mainpageAds
+olx.ua,olx.kz##.siteinfobox
+olx.ua,olx.kz###mainpageAds
     ! seo texts and links
-olx.ua###structure-links
-olx.ua###categoryLinksSuggestions
+olx.ua,olx.kz###structure-links
+olx.ua,olx.kz###categoryLinksSuggestions
     ! other
-olx.ua###searchCriteriaSave
+olx.ua,olx.kz###searchCriteriaSave
 
 om1.ru$inline-script  # location script with popup
 ||om1.ru/lite/checkmobile/
@@ -15843,6 +15862,7 @@ ozon.ru###stickyHeader::before
 ozon.ru##div[triggering-object-selector="#short-product-info-trigger-new"]
 ozon.ru##.white-bg:style(top:0px !important)
 ozon.ru##.white-bg:style(position:static !important)
+ozon.ru##section[data-widget="searchHistory"]
     ! popups
 ||ozone.ru/_nuxt/marketing-all-adv_banner.  # from Ru AdList
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
@@ -15862,6 +15882,8 @@ ozon.ru##a[href^="/travel/info/hotels-cashback/"]
 ozon.ru##div[data-widget="objectBannerList"]
 ozon.ru##div[data-widget="webPremiumPointsInfo"]
 ozon.ru##div[data-widget="webMarketingLabels"]
+ozon.ru##[data-widget="skuGrid"]
+ozon.ru##[data-widget="skuShelfGoods"]
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 ozon.ru##div[data-widget=webInstallmentPurchase]
@@ -15869,6 +15891,7 @@ ozon.ru##div[data-widget=webInstallmentPurchase]
 ozon.ru##.vacancy__actions:style(position:static !important)
 ozon.ru##.vacancy__benefits
 ozon.ru##h3
+ozon.ru##p:has-text(Наведите камеру и скачайте)
 
     ! banners and promos
 ||ozone.ru/_nuxt/cms-all-banner*
@@ -16497,6 +16520,7 @@ pleer.ru##h4:style(color:initial !important)
 pleer.ru##.header-top__link--brand
 !
 pleer.ru##.header-table:style(padding-top:0px !important)
+pleer.ru##.header__box:style(position:static !important)
     ! banners and promos
 pleer.ru##div.comments:nth-of-type(1):has-text(Самый частый вопрос от клиентов)
 pleer.ru##.pie.dobro
@@ -19141,7 +19165,20 @@ satra.ru##.LP-popup
 satra.ru##.LP-show.LP-background
 satra.ru##.LP-center.LP-wrapper
 
-satu.kz$3p  # ad scripts
+||satu.kz$domain=~satu.kz|~djemmy.kz  # earlier: satu.kz$3p  # ad scripts
+    ! top
+satu.kz##[data-qaid="mega_filters"]:style(position:static !important)
+satu.kz##[data-qaid="filter_popup"]:style(position:static !important)
+    ! banners and promos
+satu.kz##[data-qaid="promo_panel"]
+satu.kz##[data-qaid="besida_tool_block"]
+satu.kz##[data-qaid="listing-banner"]
+    ! bottom
+satu.kz##div:has(>img[src*="/cloud-cgi/"])
+satu.kz##[data-qaid="footer_app"]
+    ! other
+satu.kz##[data-qaid="companies_block"]
+satu.kz##[data-qaid="Смотрите также"]
 
 satvision-cctv.ru##.requestPriceBtn
 
@@ -24438,6 +24475,8 @@ wildberries.ru,wildberries.co.il,wildberries.fr##.j-recent-items > .recently-wat
 wildberries.ru##.header-bg:style(top:0px !important)
 ! проблема с поисковой формой. Если убрать класс, то хотя бы placeholder виден
 wildberries.ru##+js(remove-attr, class, .search-catalog__input)
+! sticky duplicate
+wildberries.ru##.product-line
     ! quick view
 wildberries.ru,wildberries.co.il,wildberries.fr##.preview-item
 wildberries.ru,wildberries.co.il,wildberries.fr##.j-open-product-popup
@@ -25648,6 +25687,7 @@ zello.com,zellowork.com##.header-container:style(height:auto !important)
 zendesk.com$third-party
 zendesk.com.ru$third-party
 zendesk.co.uk$third-party
+! Hmm... don't remember why, but don't
 !zdassets.com$domain=~zendesk.com|~zendesk.com.ru|~blokada.org|~umbrella.com
 ||zdassets.com/ekr/snippet.js  # is in Ru AdList and Fanboy's
 ##.zendesk-chat
@@ -27103,3 +27143,66 @@ coingecko.com$3p  # is in Ru AdList
 coincap.io$3p
 
 ||lugasoft.ru/sites/default/files/advagg_js  # https://lugasoft.ru/sites/default/files/advagg_js/js__ymW-rl9lD6KBolMA5i4aTm5RtAGdXpWFkCEIRJEoeSg__bYql3V-oJFRYwqyWRsHFOBwFvjz8GWKDr13zKsqR2Dg__3A1VosOGEjIxBma_LG1rYWMWvou3vJ4TDNl9wQuf4RY.js
+
+magnumopt.kz###popup_iframe_wrapper
+    ! deblur
+magnumopt.kz##+js(rc,jqm-initied,body,stay)
+    ! other
+magnumopt.kz##.sticky-sidebar
+
+baron.kz##.is-sticky
+
+tsinkaz.kz##.se-pre-con
+
+! казросфуд.қаз
+xn--80aiikwliqi.xn--80ao21a##.b-slider
+! seo
+xn--80aiikwliqi.xn--80ao21a##.b-user-content:has-text(Надежное сотрудничество)
+
+@@||instashop.kz/*/promo/$css
+
+coffeemag.kz,horeca24.kz##.header__bottom:style(position:static !important)
+    ! bottom
+coffeemag.kz,horeca24.kz##.content__toggle
+coffeemag.kz,horeca24.kz##.wrapper::after
+    ! other
+coffeemag.kz,horeca24.kz##.footer__promo
+
+! popups
+arbuz.kz##.modal
+arbuz.kz##.fa-popup
+
+tomas.kz##.invite-mobile-app
+
+kaspi.kz##.footer-2
+! popup
+kaspi.kz##.current-location__confirm-city
+
+||iamcook.ru/images/backtoparrow.png
+iamcook.ru###bt
+iamcook.ru##.toppanel:style(position:static !important)
+
+sxodim.com##.notification
+
+chel-fish.ru##.b-top-inner
+||chel-fish.ru/static/pic/index-ask-back.png
+chel-fish.ru##.b-itquestion
+chel-fish.ru##.js-toup.arrow__toup
+
+||polkilo.kz/*/3-Banners/$image
+polkilo.kz##p:has-text(Внешний вид товара может отличаться)
+
+foodclick.kz##.modx_evo_inner_modal
+foodclick.kz##.seoitkod_content
+foodclick.kz##.seoitkod_bg_form
+foodclick.kz##.modx_evo_seo_itkod_title_block_paf
+foodclick.kz##.titleForSeo
+
+podrygka.ru##.large-slider
+podrygka.ru##.sale-sliders
+podrygka.ru##.section-exclusive
+podrygka.ru##.shortjournal
+! top
+podrygka.ru##.main_panel
+podrygka.ru##.footer__logo-section
+podrygka.ru##.header.fixed + section, .header.fixed + div:style(padding-top:0px !important)
