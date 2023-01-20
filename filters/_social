@@ -314,8 +314,10 @@ vk.com###donation_app_widget
     ! other
 ~vk.com,~belarus2020.org##[class$="-vk"]:not(html):not(body):not(article)
 ~vk.com##[id$="-vk"]:not(html):not(body):not(article)
+!
 ! Notifications: title is flickering. Very annoying.
 !vk.com##+js(set, document.title, undefined)
+! update: this triggers inner script error on VK. Disabled. No flickering now, but maybe todo
 !
 ! is in Ru AdList
 ##div[id^="vk_comments"]
@@ -1876,6 +1878,7 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
     ! is in Fanboy's, RU AdList
     !###sharelist
     ##.ya-share
+    ##.ya-share-label
     ! is in Ru AdList and Fanboy's, generalized. In Adguard is generalized already.
     ##.ya-share2
     ##.ya-share2__container
