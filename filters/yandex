@@ -242,6 +242,7 @@ yandex.*##.label_font_own.label_color_white.label:has-text(/^[0-9]+\+$/)
 
 ! QR-code
 yandex.*##.app__qr
+||disk.yandex.net/qr/
 
 yandex.*##.ygogn5__content
 ||yandex.ru/data/mail.js
@@ -336,6 +337,8 @@ market.yandex.ru##body:style(overflow:initial !important)
 market.yandex.ru##div[data-apiary-widget-name="@MarketNode/StickyProductCard"]
 ! loans
 market.yandex.ru##div[data-zone-name="BnplWidget"]
+! label
+market.yandex.ru##[data-baobab-name="customerChoice"]
 
 ! "Q"
 yandex.ru##a[href="/q/"]:has(svg)
