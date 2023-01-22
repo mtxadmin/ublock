@@ -21521,6 +21521,8 @@ techrepublic.com##.in-reply-to
 techrepublic.com##.go-to-content
 techrepublic.com##.desktop.parallax.mega-display
 techrepublic.com##p:has-text(Download this article as a PDF (free registration required))
+! inline related
+techrepublic.com##p > strong:has-text("/^SEE:/")
 
 techspot.com##.intro
 techspot.com##.notice
@@ -23272,6 +23274,7 @@ utro.ru##.news__social
 
 ||uvnc.com/img/teamviewerlogo.  # is in EasyList
 ||uvnc.com/img/yourad.png
+uvnc.com$inline-script  # "Addblock detected!" popup
 ! EasyList rule
 uvnc.com##tr > td[valign="middle"][style="width: 10px;"]:first-child + td[valign="top"][style="width: 180px;"]
 ! is in Adguard
@@ -27305,3 +27308,6 @@ majorgeeks.com##.colleft:style(height:auto !important)
 majorgeeks.com##.colright:style(height:auto !important)
 
 ||microsoft-watch.com/restore/middle.php
+
+! also see xda-developers.com rule
+truenas.com##.p-navSticky + div:has-text(/^$/)
