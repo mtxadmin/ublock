@@ -323,6 +323,8 @@ aboveredirect.top  # from Antipopads-re
 
 aboxdeal.com  # root is empty  # from Dan Pollock's hosts file
 
+abqjst.com  # from Adguard
+
 abracadabrahub.com  # from Adguard
 
 abrankings.com  # ad scripts  # seoscout.com
@@ -354,6 +356,8 @@ absoluteroute.com  # from Ru AdList
 absolutewrite.fr  # from Dan Pollock's hosts file
 
 absorbingband.com  # from Peter Lowe's hosts file
+
+absors.com  # from EasyList
 
 abs-static.org  # from Adguard
 
@@ -514,6 +518,8 @@ achievablecpmrevenue.com  # from GoodbyeAds
 
 achilles-ena.com  # from Adguard
 
+achnic.com  # from EasyList
+
 acid-adserver.click  # from Peter Lowe's hosts file
 
 acint.net$important
@@ -610,9 +616,12 @@ actionfeed.net  # shopify ad scripts  # actionfeed  # "Add social proof to your 
 
 actionflash.com  # from Dan Pollock's hosts file
 
-action-mcfr.ru  # Action site widgets - https://cdn.action-mcfr.ru/widgets/loader.js
+# action-media.ru  # from GoodbyeAds  # is in Badmojr 1Hosts: Xtra
+# action-media.ru - don't: action-press.ru, academygms.ru fd.ru, glavbukh.ru, menobr.ru, seminar.ru and others are making calls to ||api.action-media.ru/callback for content, they don't have content by themselves
+# AS209684
+action-marketing.ru  # action-media.ru
 
-action-media.ru  # from GoodbyeAds
+action-mcfr.ru  # Action site widgets - https://cdn.action-mcfr.ru/widgets/loader.js
 
 actionpay.net$important,all  # actionpay ad network
 actionpay.ru$important,all  # actionpay ad network
@@ -839,7 +848,7 @@ affectincentiveyelp.com  # from GoodbyeAds
 
 affen.at  # from GoodbyeAds
 
-affex.org  # from Adguard
+affex.org  # from Adguard and NextDNS CNAME Cloaking Blocklist
 
 affforce.com$all  # from GoodbyeAds and Adguard
 
@@ -847,7 +856,7 @@ affgadgets.com  # affgadgets.com/giant-lottos
 
 affgambler.com
 
-aff-handler.com  # from GoodbyeAds
+aff-handler.com$all  # from GoodbyeAds and EasyList
 
 affhub.net
 
@@ -3075,6 +3084,8 @@ animeyes.ru  # from Adguard
 
 animi2.com  # from GoodbyeAds
 
+anistar.me  # @@||anistar.me$generichide,badfilter  # that's from Ru AdList (todo: is it really needed?)  # now parked
+
 aniview.com$important  # from Peter Lowe's hosts file, MobileAdTrackers, Blogscan
 aniview.com.edgekey.net  # from Adaway
 
@@ -3758,6 +3769,8 @@ onelink.me  # ad redirects and root redirects to appsflyer.com
 
 appsgeyser.com  # from GoodbyeAds
 
+appsli.me  # from EasyList
+
 appslinker.net  # from GoodbyeAds
 
 appsliving.com  # from GoodbyeAds
@@ -3773,6 +3786,8 @@ appsolve.io$important  # "Shopify app generated my store over $140,000"
 ! see appspot.com subdomains in _trash_dyndns
 
 appswiss.ch  # from GoodbyeAds
+
+appsyoga.com  # from EasyList
 
 apptap.com
 !+  api.apptap.com
@@ -3812,6 +3827,8 @@ appvivirpro.com  # from GoodbyeAds
 appwebview.com  # from Adguard
 
 appwifi.com  # from GoodbyeAds
+
+appzery.com$all  # from EasyList
 
 appzforpc.com  # blocked root
 
@@ -5284,7 +5301,7 @@ awfonts.com  # from EasyPrivacy: awfonts.com$script,third-party
 
 awin.com  # from Blogscan
 
-awin1.com$important  # ad banners (php)  # is in 3 lists
+awin1.com$important  # ad banners (php)  # is in 3 lists  # https://habr.com/ru/news/t/711790/
 
 a-wlmw.com  # yllix
 
@@ -5346,8 +5363,8 @@ axecash.com  # from Adguard
 
 axeldivision.com  # from Adguard
 
-axept.io  # from EasyPrivacy and EasyList
-axeptio.eu  # from EasyList
+axept.io$important  # from EasyPrivacy and EasyList  # error root
+axeptio.eu  # from EasyList  # "La seule popup de consentement"
 
 axes.co  # from GoodbyeAds
 
@@ -5408,6 +5425,8 @@ aziznews.ru  # from GoodbyeAds
 azjmp.com  # from Dan Pollock's hosts file
 
 azmnp.com  # from Adguard
+
+azmrimo.com  # from EasyList
 
 azointel.com  # from Adguard
 
@@ -5709,7 +5728,7 @@ bannerads.de  # from Peter Lowe's hosts file
 bannerads.nl
 banneradsday.com  # is in GoodbyeAds
 
-bannerator.com  # from GoodbyeAds
+bannerator.com  # from GoodbyeAds and EasyList
 
 bannerbackup.com  # from Dan Pollock's hosts file
 
@@ -7602,6 +7621,8 @@ block.com  # 2022: "Coming soon" root  # from Adguard: ||block.s*block.com^  # C
 
 blockadblock.com$important  # blockadblock
 
+block-ad-easy.net$all  # from EasyList
+
 blockadsnot.com$important
 
 block-ads-now.com$all  # from EasyList
@@ -8438,7 +8459,7 @@ branch.io$important  # from hpHosts’ Ad and tracking servers & Peter Lowe’s 
 !+  prod.branch.io
 !+  qa.branch.io
 ! end of branch.io
-app.link$important  # ad scripts  # branch.io
+app.link$important  # ad scripts  # branch.io  # also is in NextDNS Affiliate & Tracking
 ! many links with ad shorten urls
 ##a[href*=".app.link/"]
 bnc.lt$important  # branch.io
@@ -9807,6 +9828,8 @@ cashtube.ru  # from Ru AdList
 
 cashurl.in  # from uBlock filters
 
+casksteam.com  # from EasyList
+
 caspion.com  # from Adguard
 
 cast.cc  # 404 root  # from Dan Pollock's hosts file
@@ -9960,6 +9983,10 @@ cdn.gallery  # from Adguard
 cdn.house  # from EasyList
 
 cdn.tax  # from GoodbyeAds
+
+cdn.traffic
+! from Ru AdList
+##a[href*="://z.cdn.traffic"][href*="/load"]
 
 cdn1.pro  # from GoodbyeAds
 
@@ -13370,6 +13397,8 @@ cumbersomecloud.com  # from Peter Lowe's hosts file
 
 cum-shows.net  # from uBlock filters
 
+cumuda.com  # from EasyList
+
 cunderdr.net  # from Adguard
 
 cuntador.com  # from Adguard
@@ -13804,7 +13833,7 @@ datablocks.net  # from GoodbyeAds
 
 databrain.com  # from Adguard
 
-databreakers.com  # Data Breakers - Tracker  # from Quidsup NoTrack-Blocklist
+databreakers.com  # Data Breakers - Tracker  # from Quidsup NoTrack-Blocklist and EasyPrivacy
 
 datacaciques.com  # from Adguard
 
@@ -15659,6 +15688,10 @@ downloadboutique.com  # from Adguard
 
 downloadbrowserepeat.com  # from Ru AdList
 
+downloadbrowsernew.com
+! from Ru AdList
+##a[href*="://downloadbrowsernew.com/"]
+
 downloadcdn.com  # from Dan Pollock's hosts file
 
 downloadeigiesoquahv.com
@@ -15733,6 +15766,8 @@ dptsco.ir  # from GoodbyeAds
 dqvzrs.com  # from Ru AdList
 
 dr.cash$important
+
+dr5.biz  # from Adguard
 
 drabsize.com  # from Peter Lowe's hosts file
 
