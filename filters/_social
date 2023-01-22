@@ -1463,7 +1463,9 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ~officeapps.live.com,~joom.com,~oracle.com##[class*="Share"]:not(html):not(body):not(article):not(.selectionShareable)
     ! .selectionShareable - see /plugins/selection-sharer/*
 ##[title^="Follow me on "]
-##[id*="Share"]:not(html):not(body):not(article)
+##[id*="Share"]:not(html):not(body):not(article):not(:matches-path(\^/phpvirtualbox\/))
+    ! Exclusions:
+    ! phpVirtualBox instances - Shared folders
 ! Too many exclusions. Disabled. 
 !~microsoft.com,~sketchup.com,~topsharepoint.com,~joom.com,~gfycat.com##[class*="share"]:not(html):not(body):not(article)
 ~etutorium.com,~facebook.com,~host.io,~steamcommunity.com,~vesti.ru,~vk.com,votesmart.navalny-team.org##[id*="share"]:not(html):not(body):not(article)
