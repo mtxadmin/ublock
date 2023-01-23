@@ -228,12 +228,14 @@ duckduckgo.com##.result__body:has(.result__url__domain:has-text(/(^|/|\.)(alloci
 ivi.ru$3p  # paid movies site  # update: not only  # also see: https://pikabu.ru/story/promokod_ot_pyaterochki_dlya_prosmotra_ivi_razobrali_dlya_vas_vse_khitryie_usloviya_aktsii_i_pravil_polzovaniya_ivi_9823724
 ivi.tv$3p
 ! with || for subdomains
-||ivi.ru/logger/
+||ivi.ru/event/  # from Adguard: ||rocket.ivi.ru/event/
+||ivi.ru/logger/  # is in Adguard: ||l.ivi.ru/logger/
 ||ivi.ru/mobileapi/video/watchtime/
 !||ivi.ru/mobileapi/billing/
 ||ivi.ru/mobileapi/billing/v1/purchase/
 ||ivi.ru/ajax/frontlog/
 ||ivi.ru/pausebanner_mts.jpg
+||ivi.ru/track  # is in Adguard: ||g.ivi.ru/track
 ||tivision.ru/images/informer/$image
 ivi.ru##.service-notification
 
