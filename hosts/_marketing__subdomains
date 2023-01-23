@@ -2225,7 +2225,7 @@ webpush.hackers.com  # from Adguard
 webpush.ria.com  # from Adguard
 
 !/widget.$domain=~hotbot.ai|~mts.ru|~scribblemaps.com - don't use this form, at least, for widget.
-||widget$domain=~hotbot.ai|~mts.ru|~scribblemaps.com
+||widget$domain=~hotbot.ai|~mts.ru|~scribblemaps.com  # all widgets here, not only widget.* . It happened accidentally, but the idea is good.
 ! exclusions: 
 !   mts.ru - GUI
 widget.afisha.yandex.ru
@@ -2263,7 +2263,11 @@ widgets.planeta.ru  # from Adguard
 widgets.quadpay.com
 widgets.techtarget.com
 widgets.twimg.com
+widgets.media.weather.com
 widgets.wp.com
+
+! all othe widgets, see ||widget rule
+widget-product.kontur.ru
 
 ||wttd.
 wttd.douglas.at  # from Adguard
@@ -2629,6 +2633,7 @@ pt.appirits.com  # from Adguard
 
 sdkapicdn.applanga.com  # from Adaway
 
+autolinkmaker.itunes.apple.com  # is in Ru AdList  # 3p something
 books-analytics-events.apple.com  # from GoodbyeAds
 books-analytics-events.news.apple-dns.net  # from GoodbyeAds
 cstat.apple.com  # from GoodbyeAds
@@ -3025,6 +3030,8 @@ www3.convergenciadigital.com.br  # Revive Adserver - Advertising  # from Quidsup
 
 monetize-api.coronalabs.com  # from Adaway
 stats.coronalabs.com  # from Adaway
+
+pics99.cumlouder.com  # from EasyList
 
 openapi.cymera.com  # from Adaway
 
@@ -3941,9 +3948,10 @@ ss.photospecialist.co.uk  # from EasyPrivacy
 
 creatives.pichunter.com  # from EasyList
 
+a.pikabu.ru  # from Adguard
+aydtkb.pikabu.ru  # from Adguard and EasyPrivacy
 d.pikabu.ru  # d.pikabu.ru/stat/
 tf.pikabu.ru  # ad(?) xhrs
-aydtkb.pikabu.ru  # from Adguard and EasyPrivacy
 
 ct.pinterest.com  # from Adguard
 trk2.pinterest.com  # from Adguard
@@ -3970,6 +3978,8 @@ nativ.podruzke.ru  # from Adguard
 info.ponyfiction.org  # ad pings
 
 public.porn.fr  # from EasyList
+
+pics99.porn300.com  # from EasyList
 
 pci.pornclipsxxx.com  # from Adguard
 
@@ -4678,6 +4688,8 @@ cdn-promote.weebly.com  # from Adguard: ||cdn-promote.weebly.com/js/dist/lead-fo
 
 alitui.weibo.com  # from MobileAdTrackers
 game.weibo.com  # from MobileAdTrackers
+
+sp.welcometothejungle.com  # ad post requests
 
 blue.wfla.com  # https://blue.wfla.com/script.js  # EasyPrivacy rule: ://blue.*/script.js
 
