@@ -961,7 +961,7 @@ _banner_rotator.php  # from Adguard
     ! /upload/bx/*  # from Ru AdList
     ! ||rugrad.eu/bx/  # from Ru AdList
 /campaigns/*
-/clipboard.min.js$important$domain=~play-with-docker.com
+/clipboard.min.js$important,domain=~play-with-docker.com
 /cdn-cgi/pe/bag2?r$important  # generalized rule. Sources from Ru AdList (see all mentioned domains here too):
     ! /cdn-cgi/pe/bag2?r*aksessuarov.ru
     ! /cdn-cgi/pe/bag2?r*am15.net
@@ -1058,6 +1058,7 @@ _banner_rotator.php  # from Adguard
 /flashads.  # from EasyList
 /flo.js  # is in Adguard
 /flr.js  # is in uBlock filters
+/float_panel/*
 /footer_ads.  # is in EasyList
 /fuckadb*$important
     ! /fuckadb.js  # from EasyList
@@ -2199,6 +2200,7 @@ _tizers.  # from Ru AdList
     ##.promo-button
     ##.promo-carousel
     ##.promo_line
+    ##.promo_top
     ##.promo_widget
 ##[id*="-promo"]:not(html):not(body):not(article)
 ~aliexpress.com,~aliexpress.ru,~stepik.org,~yoomoney.ru##[class*="-promo"]:not(html):not(body):not(article):not(.node-promoted):not(.content):not(.content__header)
@@ -3206,6 +3208,7 @@ _wtInit.js  # from Fanboy's
 ##.to-top
     ! general rule doesn't work
     yandex.ru##.to-top
+##.to_top
 ! is in Ru AdList and Fanboy's
 ###to_top:not(body)
 ###toTop
@@ -3228,6 +3231,7 @@ _wtInit.js  # from Fanboy's
 ###up
 ##.up_arr
 ##.uparrow
+###up_arrow
 ###up-btn
 ##.up-btn
 ###up_btn
@@ -3357,6 +3361,7 @@ _site/gotop.  # from Ru AdList
 /up.png
 /up.svg
 /uparrow.png
+/up_arrow.svg
 /up_btn.
 /up-button.png
 /widget/buttontop/*
