@@ -5399,12 +5399,15 @@ dns-shop.ru,dns-shop.kz,technopoint.ru##.header-mobile__wrap_fixed:style(positio
 dns-shop.ru,dns-shop.kz##.club-header:style(position:static !important)
 dns-shop.ru,dns-shop.kz##.header-top-menu__info
 dns-shop.ru,dns-shop.kz,technopoint.ru##.header-space
+dns-shop.ru,dns-shop.kz,technopoint.ru##.header-desktop:style(padding-bottom:0px !important)
+dns-shop.ru,dns-shop.kz,technopoint.ru##.header-mobile-compact__wrap_fixed:style(position:static !important)
     ! footer
 dns-shop.ru,dns-shop.kz,technopoint.ru##div.layout-footer__content-text-grey:has-text(Администрация Сайта не несет ответственности)
 dns-shop.ru,dns-shop.kz,technopoint.ru##.container.footer-content > div.row:nth-of-type(1):has-text(опубликованы посетителями нашего портала и могут не совпадать с мнением редакции.)
 dns-shop.ru,dns-shop.kz,technopoint.ru##.main-footer__responsibility
 dns-shop.ru,dns-shop.kz,technopoint.ru##.main-footer__install-app-block
 dns-shop.ru,dns-shop.kz,technopoint.ru###footer-notice
+dns-shop.ru,dns-shop.kz,technopoint.ru##.bottom-navbar-mobile:style(position:static !important)
     ! banners and promos
 dns-shop.ru,dns-shop.kz,technopoint.ru##.homepage-exchange-bonus-banner
 dns-shop.ru,dns-shop.kz,technopoint.ru##.items-group__banner
@@ -5470,6 +5473,7 @@ dns-shop.ru,dns-shop.kz,technopoint.ru##.benefit
     ! гайд хелпер - тупо предложение написать на внутренний форумчик. Маячит, отвлекает
 !ранее было общим правилом, но правильнее сделать специфическое
 dns-shop.ru,dns-shop.kz,technopoint.ru##.guide-helper
+dns-shop.ru,dns-shop.kz,technopoint.ru##.left-filters__consult-wrap
     ! other
 ||dns-shop.ru/*/choice-guide.png
 ||dns-shop.kz/*/choice-guide.png
@@ -10411,9 +10415,7 @@ ivd.ru##.subscribe-content
 
 ivedu.ru###politics
 
-||ivi.ru/event/  # from Adguard: ||rocket.ivi.ru/event/
-||ivi.ru/logger/  # from Adguard: ||l.ivi.ru/logger/
-||ivi.ru/track  # from Adguard: ||g.ivi.ru/track
+! see ivi.ru in online_films
 
 ||ivlim.ru/forpage/fox.gif
 
@@ -11910,6 +11912,8 @@ lenta.ru##.b-age-limit
 
 leopard-fil.ru##.header-main
 
+||leroymerlin.ru/qrerror/
+||leroymerlin.kz/qrerror/
     ! header
 leroymerlin.kz,leroymerlin.ru##ab-mobile-app
 leroymerlin.kz,leroymerlin.ru##.market-tab
@@ -14129,11 +14133,15 @@ mvexpo.ru##.head
 mvideo.ru##.sticky-header:style(position:static !important)
 mvideo.ru##.pdp-header__sticky-bar
 mvideo.ru##.location-icon_animated
+    ! popups
+mvideo.ru##.promo-configurator-side-panel
+mvideo.ru##.promo-configurator-side-panel__overlay
     ! banners and promos
 mvideo.ru##.insider-banner
 ||mvideo.ru/media/SmallBanners/
 mvideo.ru##.promo-links__image
 ||mvideo.ru/*/promo-banners/
+mvideo.ru##.customer-services
     ! akit
 mvideo.ru##.footer-akit-ico
 mvideo.ru##.akit-logo-link
@@ -24081,6 +24089,9 @@ vsehoztovari.ru##.foot_panel_all:style(position:static !important)
     ! popups
 vseinstrumenti.ru###region_modal
 vseinstrumenti.ru###region_shadow
+vseinstrumenti.ru##.city-selection
+vseinstrumenti.ru##.webim_button
+vseinstrumenti.ru##[data-qa="header-actions"]:style(position:static !important)
     ! top
 vseinstrumenti.ru##.-header-bottom-color.wrapper-wide:style(position:static !important)
 vseinstrumenti.ru###page-wrapper:style(background-image:none !important)
@@ -24092,7 +24103,6 @@ vseinstrumenti.ru##.bl_sn
 vseinstrumenti.ru##.good-card-right
 vseinstrumenti.ru##.sticky-product
 vseinstrumenti.ru##.foundErrorLink
-vseinstrumenti.ru##.city-selection
 vseinstrumenti.ru##.addItemToBasket
 vseinstrumenti.ru##.vi-btn-white
 vseinstrumenti.ru###subscribe-form-btn
@@ -24112,6 +24122,15 @@ vseinstrumenti.ru###page-locate-down.btn-down.btn-page-locate
 vseinstrumenti.ru###stickyBuy.sticky-buy-stick:style(position:static !important)
 vseinstrumenti.ru##.product-price > .title
 vseinstrumenti.ru##.product-price > .line
+! consultants
+vseinstrumenti.ru##.product-expert
+! label
+vseinstrumenti.ru##.nameplate
+! oneclick, general rule failed
+vseinstrumenti.ru##.quick-order
+! loans
+vseinstrumenti.ru##.payment-by-instalments
+vseinstrumenti.ru##.bonus
 
 ||vsekroham.ru/local/templates/main_new/js/chunks/danner-buy-profitable$script
 vsekroham.ru##.danner-buy-profitable__fixed
@@ -27311,3 +27330,153 @@ majorgeeks.com##.colright:style(height:auto !important)
 
 ! also see xda-developers.com rule
 truenas.com##.p-navSticky + div:has-text(/^$/)
+    ! unhide downloads
+truenas.com##.ix-oauth
+truenas.com##[href^="https://www.ixsystems.com/oauth/"]
+! hubspot ad form
+truenas.com##.et_pb_module:has(script[src*="js.hsforms.net"])
+truenas.com##.element-download-show:style(display:initial !important)
+truenas.com##.ixhs-hide-download
+    ! other
+
+pochtabank.ru$3p  # ad scripts (loans)
+
+wiki.factorio.com###mw-head:style(top:0px !important)
+wiki.factorio.com###left-navigation:style(margin-top:0px !important)
+wiki.factorio.com###right-navigation:style(margin-top:0px !important)
+
+! theia-sticky-sidebar
+technewstoday.com##.smart-head-sticky:style(position:static !important)
+
+svetodiodoff.ru##.jcarousel-container
+svetodiodoff.ru##.span_link
+svetodiodoff.ru###usefull_link_block
+! oneclick as is
+svetodiodoff.ru##.btn.exclusive
+
+! jumping icon at top
+flip.kz##.pulse
+flip.kz##.app-icons
+
+s-44.ru###modal-cities.modal
+
+belbaza31.ru##.bp-personal:style(position:static !important)
+
+! top
+epool.ru##.menu_top:style(position:static !important)
+! popup
+epool.ru###mycity.fade.modal
+epool.ru###bottom_string:style(position:static !important)
+epool.ru###baner_side
+
+slavelektro.ru##.header_slider
+slavelektro.ru##.right_sidebar > div > b
+slavelektro.ru##.right_sidebar > .send
+slavelektro.ru##.right_sidebar > .contact_form
+slavelektro.ru##.right_sidebar > h3
+
+s3.ru###personal_info
+s3.ru###footer_wrapper
+
+    ! popups
+danilovskymarket.ru##.app-modal
+||danilovskymarket.ru/static/images/basket-background.png
+danilovskymarket.ru##[class^="styled__Basket"]:style(position:static !important)
+    ! other
+
+usbmag.ru###geo-location-window
+usbmag.ru###footerLine:style(position:static !important)
+usbmag.ru##.fixContainer
+
+maxidom.ru##.fixbar:style(position:static !important)
+
+kaypu.com###float_menu:style(position:static !important)
+
+! oneclick
+electro-mpo.ru##.s-b1click-elem
+electro-mpo.ru##.s-float-header:style(position:static !important)
+
+proton.by##.cs-float:style(position:static !important)
+! ?
+proton.by##div .cs-float
+
+    ! popups
+kazanexpress.ru##.popups-container
+kazanexpress.ru##.event-modal
+kazanexpress.ru##.scroller
+    ! other
+
+    ! banners and promos
+vamsvet.ru##.topb
+vamsvet.ru##.btn__bf
+vamsvet.ru##.is-bin-liquidation
+    ! other
+vamsvet.ru##.isFixed:style(position:static !important)
+vamsvet.ru##.find-error
+vamsvet.ru##.subscribe-sm
+
+strmir.ru##.l-header__top:style(position:static !important)
+strmir.ru##[id^=bigdata_recommended_products]
+
+svetitok.ru###menu_wrap:style(position:static !important)
+
+||eraworld.ru/img/vendors/$image
+||eraworld.ru/img/mobileapp$image
+
+! добрострой.рф
+xn--90afqsbambik.xn--p1ai##.page-header__main:style(position:static !important)
+! loans
+xn--90afqsbambik.xn--p1ai##.product-page__credit
+
+||baumaster69.ru/*/slides/$image
+baumaster69.ru##.slider
+baumaster69.ru##.section--menu-fixed:style(position:static !important)
+
+mayak-shop.ru##body:style(opacity:initial !important)
+mayak-shop.ru##.company
+mayak-shop.ru##.headerBottom
+mayak-shop.ru##.shop2-panel
+! subscribe
+mayak-shop.ru##.formWrap
+
+    ! popups
+||invertory.ru/whatsapp.png
+invertory.ru##.opener
+    ! other
+invertory.ru##.sticky-sidebar:style(position:static !important)
+invertory.ru##.text-center
+invertory.ru##.sticky-sidebar__inner:style(position:static !important)
+
+! oneclick (as is)
+lampochca.ru##p > input.button
+
+    ! top
+smartled.by##.breadcrumbs-location-below_header,.single-breadcrumbs-wrapper:style(margin-top:0px !important)
+smartled.by##.wd-header-text
+smartled.by##.whb-top-bar
+    ! callback
+smartled.by##.wd-open-popup
+smartled.by###zakobrzvon
+    ! other
+
+    ! top
+dom-otdelki.ru##.tline
+    ! callback
+dom-otdelki.ru##.recall
+    ! other
+
+mirsveta-online.ru##.cont-head
+mirsveta-online.ru##.slick-slider
+
+    ! top
+optes.ru###shop:style(padding-top:0px !important)
+optes.ru##.at_middle.l-subheader
+    ! other
+
+! top
+ooo-set.ru##.h-row
+
+! popup
+tddomovoy.ru##.M-set-region
+! top
+tddomovoy.ru##.s-header-top_line
