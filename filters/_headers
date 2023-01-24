@@ -21,15 +21,35 @@
 
 
 !! headers and header logos
-!   do not general block ###header, ###masthead, ##.site-branding or similar - they often contain search and menus
+!   in general, do not block ###header, ###masthead, ##.site-branding or similar - they often contain search and menus
 !   of course, there may be some exclusions here (but it is unlikely)
 !   below there are some of old logo rules, just for information
 -logo-$image
+    ! -logo-line.$image
 -logo.$image,domain=~factorio.fandom.com
     ! Exclusions:
     ! Factorio wiki - useful interface elements
+    !
+    ! /-logo.gif/
+    ! /-logo.jpg/
+    ! /-logo.png/
+    ! /-logo.svg/
+/_logo_/$image
+    ! /vbulletin3_logo_white.png
 _logo_$image
-_logo.$image
+_logo.$image,domain=~factorio.fandom.com
+    ! Exclusions:
+    ! Factorio wiki - useful interface elements
+    !
+    ! /adaptive_logo.png
+    ! /_logo.gif/
+    !     !/site_logo.gif
+    !         ! PhpBB: /forum/styles/subsilver2/imageset/site_logo.gif
+    ! /_logo.jpg/
+    ! /_logo.png/
+    !     ! /site_logo.png
+    !     ! /small_logo.png
+    ! /_logo.svg/
 ##[class*=head_logo]
     ! Some examples removed. Old generalized (and not very) rules:
     ! ##.b-head-logo
@@ -618,13 +638,86 @@ _logo.$image
 ##a[href^="/out2/"]:not(:has(img))
 ##a[href^="/out3/"]:not(:has(img))
 ##a[href^="/out4/"]:not(:has(img))
-/adaptive_logo.png
-/header/*$image
-/header-images/*$image
-/headers/*$image
-    ! /images/headers/*
+/header$image
+    ! /header/*$image
+        ! ||4pda.biz/templates/yoo_catalyst/images/header/*.png
+    ! /header-images/*$image
+    ! /headers/*$image
+        ! /images/headers/*
+        ! ||itsketch.ru/images/headers/$image
+    ! /header.jpg
+    ! /header.webp
+        ! ||go68.ru/*/header.jpg
+        ! ||go68.ru/*/header.webp
+        ! ||militaryarms.ru/*/header.jpg
+        ! ||tropki.ru/*/header.jpg
+        ! ||xn----7sbaegss0bebjcb2g.xn--p1ai/styles/prosilver/theme/images/header.jpg  ! нахабино-новое.рф
+    ! /header2.jpg
+        ! ||rubulat.ru/wp-content/themes/rubulat/img/header2.jpg
+    ! /header.gif
+        ! ||forumfiles.ru/*/header.gif
+        ! ||gorposmos.ru/skript/forum/header.gif
+        ! ||sysadmins.ru/images/header.gif
+    ! /header.png
+        ! ||allo-santehnika.ru/templates/6_SANTEX/images/header.png
+        ! ||xn----ftbnafed0afniox8a.xn--p1ai/ico/header.png  ! троицкий-округ.рф
+    ! /header-background.jpg
+    ! /headerbg.jpg
+    ! /images/header$image
+    !
+    ! And my specific rules, now generalized as the current rule above
+    ! ||24ru.com/img/header$image
+    ! ||allrussian.info/wcf/images/edited/header_hintergrund.png
+    ! ||aquavivo.ru/bitrix/templates/aquavivo/images/header-bg.jpg
+    ! ||arsenal007.ru/local/templates/arsenal007/images/header_block4_button.png
+    ! ||art4x4.ru/*/header_mybg.jpg
+    ! ||boredpanda.com/*/header-panda-new.svg
+    ! ||crash-tests.net/*/header_r.jpg
+    ! ||dns-shop.ru/*/header*.png
+    ! ||dns-shop.kz/*/header*.png
+    ! ||rdrom.ru/js/bundles/header-mobile-app-promotion
+    ! ||firewall.cx/images/stories/header/firewallcx-logo
+    ! ||hisgun.ru/*/header-logo_big.png
+    ! ||izhguns.ru/sites/default/pic/header/header_bgr.png
+    ! ||izhguns.ru/sites/default/pic/header/header_gds.png
+    ! ||izhguns.ru/sites/default/pic/header_soc_panel.png
+    ! ||izhguns.ru/image/catalog/header/$image
+    ! ||littleone.com/*/header_resp_link.png
+    ! ||livelib.ru/img/headerunreg/*$image
+    ! ||lovchy.ru/i/headerBack.jpg
+    ! ||magizoo.ru/images/header_lion.png
+    ! ||maxidom.ru/*/header_01.png
+    ! ||militaryarticle.ru/templates/yoo_catalyst/images/header/grunge/header_glas.png
+    ! ||pescps.dl.mlsi.gov.cy/CPSWeb/common/images/header$image
+    ! ||mmgp.com/*/header/$image
+    ! ||mybellaria.ru/img/header/$image
+    ! ||netdna-ssl.com/*/header-*.jpg
+    ! ||ohotniki.ru/i/header_fon.jpg
+    ! ||platimzafoto.ru/html/img/header-bg.png
+    ! ||pic-money.ru/html/img/header-bg.png
+    ! ||push.eu/images/default-source/headers/$image
+    ! ||qiwi.com/img/qiwi_com/header/$image
+    ! ||regular-expressions.info/img/header100.png
+    ! ||rezbaderevo.ru/*/header-back.png
+    ! ||safari.bg/*/headerBgnd.jpg
+    ! ||santeh-opt.ru/images/header_*.jpg
+    ! ||santexmania.ru/wa-data/public/site/themes/santehmania/img/header_bg.jpg
+    ! ||snob.ru/images/header/$image
+    ! ||sobaka.ru/*/header_logos/
+    ! ||spec-army.ru/*/header$image
+    ! ||strike-active.ru/*/header-pattern.jpg
+    ! ||tek-tips.com/images/header-logo.png
+    ! ||theomegaproject.org/*/header_line.jpg
+    ! ||ticketland.ru/img2/header/page-1.svg
+    ! ||videoconverterfactory.com/*/header-r.png
+    ! ||vmware.com/*/header-redesign/  # vmware.com/etc.clientlibs/vmware-modernize-cms/componentlibrary/components/content/header-redesign/clientlibs.min.js
+    ! ||voenhronika.ru/pic/header-red.jpg
+    ! ||vooosoo.ru/*/header_background.jpg
+    ! ||vrazvedka.ru/*/header2_f.jpg
+    ! ||vsatke.ru/images/headerlogo.png
+    ! ||yadishu.com/wp-content/themes/yadishu/img/header2.png
+
 /images/footer$image
-/images/header$image
 /logo*$image
     ! /logo*$image,$domain=~winitpro.ru  # don't know why, but with $domain this rule doesn't work. Weird.
     ! /images/logo$image  # seems, more general rule sometimes doesn't work. Update: see above.
@@ -702,21 +795,6 @@ _logo.$image
     ! ||myfreesoft.ru/picts/logo_*.png$image
     ! ||overclockers.ru/assets/logo_text.png
     ! ||prophotos.ru/assets/logo_prophotos_big$image
--logo-line.$image
-/_logo.gif/
-    !/site_logo.gif
-        ! PhpBB: /forum/styles/subsilver2/imageset/site_logo.gif
-/-logo.gif/
-/_logo.jpg/
-/-logo.jpg/
-/_logo.png/
-    ! /site_logo.png
-    ! /small_logo.png
-/-logo.png/
-/_logo.svg/
-/-logo.svg/
-/_logo_/$image
-    ! /vbulletin3_logo_white.png
 /logobg.png
     ! ||alisupport.ru/templates/web/images/logobg.png
 /logodesktop.png
@@ -22323,24 +22401,7 @@ _bg.svg$image
 /head.png
 /headbg.$image
 /headbg2.$image
-/header.jpg
-/header.webp
-    ! ||go68.ru/*/header.jpg
-    ! ||go68.ru/*/header.webp
-    ! ||militaryarms.ru/*/header.jpg
-    ! ||tropki.ru/*/header.jpg
-    ! ||xn----7sbaegss0bebjcb2g.xn--p1ai/styles/prosilver/theme/images/header.jpg  ! нахабино-новое.рф
-/header2.jpg
-    ! ||rubulat.ru/wp-content/themes/rubulat/img/header2.jpg
-/header.gif
-    ! ||forumfiles.ru/*/header.gif
-    ! ||gorposmos.ru/skript/forum/header.gif
-    ! ||sysadmins.ru/images/header.gif
-/header.png
-    ! ||allo-santehnika.ru/templates/6_SANTEX/images/header.png
-    ! ||xn----ftbnafed0afniox8a.xn--p1ai/ico/header.png  ! троицкий-округ.рф
-/header-background.jpg
-/headerbg.jpg
+! see /header$image rule above
 /pagebg.jpg
 
 
