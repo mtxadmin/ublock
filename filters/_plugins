@@ -142,6 +142,9 @@
 
 /modules/livechatpro/*
 
+/modules/mbn_offers/*
+    ! ||windowscentral.com/sites/all/modules/mbn_offers/  # from Adguard
+
 /modules/modal/*  # Drupal module
 
 /modules/mod_ablockdetector/*
@@ -624,6 +627,11 @@
 
 /plugins/cm-pop-up-banners/*  # from Adguard
 
+/plugins/cmptcf2/*$important
+    ! https://assets.vlitag.com/plugins/cmptcf2/cmp-v2.0.1.js
+    ! https://assets.bilsyndication.com/plugins/cmptcf2/cmp2.js
+    ! https://assets.bilsyndication.com/plugins/cmptcf2/cmp-v2.0.1.js
+
 /plugins/coin-market-cap/*
 
 /plugins/complaincebar/*
@@ -643,7 +651,7 @@
 /plugins/content/myshariff/*$important  # see https://www.xadomir.de/webentwicklung/cms/joomla/plugins/18-myshariff-en.html : "enables website users to share content"
     ! @@||bauen-und-heimwerken.de/plugins/content/myshariff/js/shariff.min.js  # from Fanboy's
 
-/plugins/content-copy-protection-disable-right-click/*  # from Adguard
+/plugins/content-copy-protection-disable-right-click/*  # from Adguard  # now is in uBlock filters
 
 /plugins/content-egg/*
 
