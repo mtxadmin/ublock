@@ -1344,6 +1344,8 @@ _rebid.js  # from EasyList
 /upselltracker.js
 .utils.ads.  # from EasyList
 /uutils.fcg?  # from EasyPrivacy
+/valnet-header.  # is in EasyPrivacy  # valnetinc.com (yet not blocked)
+/valnet-footer  # /valnet-footer-article. and /valnet-footer. scripts
 /vast/*$important,all
     ! /api/outreach/vast/*$xmlhttprequest  # from Ru AdList
     ! /vast/ads-  # from EasyList
@@ -2165,21 +2167,25 @@ _tizers.  # from Ru AdList
 ://promo.$3p
 /app.promo*$script
 /load-promo/*  # from Ru AdList
-/promo.
+/promo.$important
+    ! /promo.js$important
+    ! /promo.php
 /promo?
 /promo/*$domain=~livejournal.com|~mts.ru  # mts.ru loads non-ad /Promo/ links in lk
-/promo.js$important
-/promo.php
+    ! /promo/impression?  # from EasyPrivacy
 /promo_b/*  # from Adguard: /images/promo_b/*
 /promobanner
 /promo-banner.js$important
 /promolinks.
 /promos/*  # is in Ru AdList
+    ! /promos/pixels?  # from EasyPrivacy
 /promotion/*$domain=~doogee.cc
 /promotions/*
     ! ||gbtcdn.com/GB/images/promotion/$image
     ! ||mvideo.ru/media/promotions/*$image
     ! ||wbstatic.net/promotions/
+/promo_tracking.  # from EasyPrivacy
+/promo_tracking/*  # from EasyPrivacy
 /searchpromote/*
 ##[id*="Promo"]:not(html):not(body):not(article)
 ##[class*="Promo"]:not(html):not(body):not(article)
@@ -2390,20 +2396,24 @@ _analytics.js?  # from EasyPrivacy
 /analytics.$important
     ! /analytics.js$important  # uBlock exclusion
     ! /analytics.min.js$important
-    ! and many EasyPrivacy rules
+    ! and many many EasyPrivacy rules
 .analytics.min.  # from EasyPrivacy
 /analytics^
 /analytics?
     ||hh.ru/analytics^  # is in Adguard
     ||career.ru/analytics^
     ||rabota.by/analytics?  # is in EasyPrivacy
-/analytics/$important,domain=~dropbox.com|~fandom.com|~globalvoices.org|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~twitter.com
+/analytics/$important,domain=~dropbox.com|~duckduckgo.com|~fandom.com|~globalvoices.org|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~twitter.com
+    ! Exclusions:
     ! увы, но иначе в Сбербанк и Домклик не входит
     !||sberbank.ru/*analytics$script,redirect=noopjs
     @@||sberbank.ru/*analytics$script
+    ! duckduckgo - it blocks any search about analytics. Other search systems are ok.
+    !
     ! /rest/analytics/*  # is in EasyPrivacy
     ! /vwfiles/analytics/*  # from EasyPrivacy
     ||cnn.com/analytics/  # from EasyPrivacy
+    ! and many many EasyPrivacy rules
     ! false positive: !https://services.rome2rio.com/api/1.5/json/search?key=...&analytics=true&debugFeatures=&debugExperiments=&groupOperators=true
 /analytics-*$important
     /analytics-event
@@ -2470,15 +2480,35 @@ _chartbeat.js  # from EasyPrivacy
 /dspixel.js$important
 /dwell/log?  # is in EasyPrivacy
 /easylocation/*
+/eloqua
+    ! /eloqua.  # from EasyPrivacy
+    ! /eloqua_  # from EasyPrivacy
 .eloqua.js  # from EasyPrivacy
+/elq
+    ! /elqcfg-$script  # from EasyPrivacy
+    ! /elqcfg.js  # from EasyPrivacy
+    ! /elqcfg.min.js  # from EasyPrivacy
+    ! /elqfcs.js  # from EasyPrivacy
+    ! /elqidg.js  # from EasyPrivacy
+    ! /elqimg.js  # from EasyPrivacy
+    ! /elqnow/*  # from EasyPrivacy
+    ! /elqscr.js  # from EasyPrivacy
+    ! /elqtracking.  # from EasyPrivacy
+    ! /elqtrk.  # from EasyPrivacy
 /empty.gif
 /emptypixel.png
 .emsecure.min.js  # from EasyPrivacy
 /eprivacy.  # is in Fanboy's
 /event_logger  # from EasyPrivacy
 /event/track?  # from EasyPrivacy
+/eventtrack
+    ! /eventtracker.js  # from EasyPrivacy
+    ! /eventtracking-  # from EasyPrivacy
+    ! /eventtracking.  # from EasyPrivacy
+    ! /eventtracking/*  # from EasyPrivacy
 /event-tracker/*  # bitrix lib
 .event-tracking.js  # from Fanboy's
+/eventsbeacon?  # is in EasyPrivacy
 /events-metrica-scripts.js
 /facebook_pixel_  # from Adguard
 /fingerprint*$important,all
@@ -2555,12 +2585,57 @@ _pagespeed_beacon?  # from AdGuard
     ! ||paypalobjects.com^*/pixel.gif  # from EasyPrivacy
 .pixel.archive.  # from EasyPrivacy
 /platform-detect
+
 /pum-site-scripts.  # from Fanboy's
 /purecounter.js
-/px.gif?  # from EasyPrivacy and ABP
-/px.js$important
-    !/px.js?ch=$script  # from EasyPrivacy
-    !||avito.ru^*/dfp/px.js  # from RU AdList
+/pv?
+    ! /pv?fe=*&elg=  # from EasyPrivacy
+    ! /pv?place=  # from EasyPrivacy
+    ! /pv?token=  # from EasyPrivacy
+/pv.
+    ! /pv.gif?  # from EasyPrivacy
+    ! /pv.php?id=  # from EasyPrivacy
+    ! /pv.txt?  # from EasyPrivacy
+/pv/*
+    ! /pv/?aid=  # from EasyPrivacy
+    ! /pv/code.asp?  # from EasyPrivacy
+    ! /pv/new?  # from EasyPrivacy
+/pv2.gif?  # from EasyPrivacy
+/pvcount
+    ! /pvcount.  # from EasyPrivacy
+    ! /pvcounter.  # from EasyPrivacy
+    ! /pvcounter/*  # from EasyPrivacy
+    ! /pvcounter?  # from EasyPrivacy
+/pv_count.  # from EasyPrivacy
+/pvevent_  # from EasyPrivacy
+/pview?event  # from EasyPrivacy
+/pv_web.gif  # from EasyPrivacy
+/px.$important
+    ! /px.gif?  # from EasyPrivacy and ABP
+    ! /px.js$important
+        ! /px.js?ch=$script  # from EasyPrivacy
+        ! ||avito.ru^*/dfp/px.js  # from RU AdList
+/px/*
+    ! /px/*/blank.gif?  # from EasyPrivacy
+    ! /px/client/main.min.js  # from EasyPrivacy
+/px?t=  # from EasyPrivacy
+/pxa.min.js  # from EasyPrivacy
+/pxf.gif?  # from EasyPrivacy
+/pxgif/*  # from EasyPrivacy
+/pxl.cgi?  # from EasyPrivacy
+/pxl.gif?  # from EasyPrivacy
+/pxl.png?  # from EasyPrivacy
+/pxlctl.  # from EasyPrivacy
+/pxls/*  # from EasyPrivacy
+/pxlspamanalyst-  # from EasyPrivacy
+/px_trans.gif  # from EasyPrivacy
+/qubit-integration1.  # from EasyPrivacy
+/qubit-integration2.  # from EasyPrivacy
+/qubittracker/*  # from EasyPrivacy
+/quotaservice.recordevent?  # is in EasyPrivacy  # seen on google maps
+/radio-analytics.htm  # from EasyPrivacy
+/radioanalytics.js  # from EasyPrivacy
+/radioanalyticsiframe.js  # from EasyPrivacy
 /recordrtc.min.js
 /rendertimingpixel.  # from EasyPrivacy
 /ruxitagentjs_  # from EasyPrivacy
@@ -3715,6 +3790,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
     ! /eu-cookie-law.min.js$important
 /evercookie.  # from EasyPrivacy
 /evercookie_*$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
+/evercookie/*  # from EasyPrivacy
 /gdpr.js$important  # from Fanboy's and Adguard
 .gdpr.$script
     ! .gdpr.js  # from EasyList
