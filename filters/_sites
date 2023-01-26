@@ -231,6 +231,8 @@
 2gis.*##.layout__app > a[href^="https://2gis.onelink.me/"]
 
 2ip.ru$3p  # ad cookies  # also is in Ru AdList
+2ip.io$3p
+2ip.me$3p
 
 2kom.ru##.menu-2016:style(position:static !important)
 2kom.ru##.footer2-social
@@ -628,6 +630,11 @@
     ! top
 9gag.com##.fixed-wrap-post-bar:style(position:static !important)
 9gag.com##.post-container:style(margin-top:0px !important)
+9gag.com##section.post-comment:style(padding-bottom:0px !important; margin-bottom:0px !important)
+9gag.com###container:style(padding-top:0px !important; padding-bottom:0px !important)
+9gag.com##.comment-community__guideline
+    ! bottom
+9gag.com##.bottom-comment-composer:style(position:static !important)
     ! banners and promos
 9gag.com##.campaign-banner
 ! from Adguard
@@ -4191,6 +4198,7 @@ citilink.ru##.ProductPageCreditSection__credit-block.ProductPageCreditSection__b
 citilink.ru##.ProductCardLayoutNEW__services
 citilink.ru##.ProductPageBadgesSection
 citilink.ru##.TogetherCheaper
+citilink.ru##form:has-text(Хочу быть в курсе акций)
     ! striked prices
 citilink.ru##.old_price
 citilink.ru##.ProductCardVerticalPrice__price-old__price
@@ -4212,6 +4220,7 @@ citik.ru/api/saveMetrics
 citilink.ru##.ProductPage__resently-viewed
 citilink.ru##.ResentlyViewedSlider
 citilink.ru##.Subcategory__resently-viewed
+citilink.ru##section:has(>div>div>div>h3:has-text(Вы недавно смотрели))
     ! other
 citilink.ru##.product-card-info-error
 citilink.ru##.recently-product-box
@@ -4238,6 +4247,9 @@ citilink.ru##.PersonalDataConfirm
 citilink.ru##.BrandList
 citilink.ru##.SpecificationsFull__ask-question-button
 citilink.ru##.ConfiguratorBox
+! копеечные скидки
+citilink.ru##.ProductPagePriceSection__club-price
+citilink.ru##.ProductCardAskQuestionWidget
 
 citrix.com##.page-banner
 
@@ -9142,6 +9154,8 @@ hitsauce.ru##^script:has-text(/onselectstart|disableSelection|window.event/)
 ||hitsauce.ru/*/wpo-minify-footer-selectWoo
     ! popups
 hitsauce.ru##.wa__widget_container
+    ! top
+hitsauce.ru##.mid-header:style(padding-top:0px !important; padding-bottom:0px !important)
     ! banners and promos
 hitsauce.ru##.banner-item-holder
 hitsauce.ru##.general-banner
@@ -10594,8 +10608,10 @@ jooble.org##aside:has-text(Подпишитесь)
 jooble.org##p:has-text(вы скоро найдете)
 
 joom.com##[class^=logo]
+joom.com##[class^=product_]:has([class^=adBadge])
 joom.com,joom.ru##div[class^=discount__]
 joom.com/*/getGoogleAnalyticsClientID
+!||joomcdn.net/web-client/bugsnag$redirect=noopjs - error
 
 jorgebernhardt.com##.has-fixed-header.mb-brand
 jorgebernhardt.com##.mb-header-holder
@@ -15843,7 +15859,20 @@ ozerki.ru##.g-section_banner
 
 ||ozon.ru/referral/
 ||ozon.ru/tracker/  # from EasyPrivacy
+||ozone.ru/s3/blackfriday-widgets-api-images/$image
 ||ozone.ru/s3/client-metrics/
+||ozone.ru/s3/ozon-tag-manager/
+||ozon.ru/api/logs-gateway/
+||ozone.ru/graphics/client-metrics/
+||ozone.ru/s3/hotsale-api/$image
+ozon.ru##div[trackinginfo]
+||ozone.ru/_nuxt/pdp-all-sharing-button*
+||ozone.ru/graphics/new_no_photo.png
+||ozone.ru/assets/cms-desktop-promo
+||ozone.ru/s3/sellerassets/
+!||ozone.ru/assets/vendors - don't, map blocked
+!||ozone.ru/assets/vendors-node_modules_bx - don't, map blocked
+!||ozone.ru/assets/cms-desktop-top-bar - don't
     ! top
 !ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
 ozon.ru###stickyHeader:style(position:static !important)
@@ -15852,6 +15881,7 @@ ozon.ru##div[triggering-object-selector="#short-product-info-trigger-new"]
 ozon.ru##.white-bg:style(top:0px !important)
 ozon.ru##.white-bg:style(position:static !important)
 ozon.ru##section[data-widget="searchHistory"]
+ozon.ru###stickyHeader:style(padding:initial !important; margin:initial !important; height:auto !important)
     ! popups
 ||ozone.ru/_nuxt/marketing-all-adv_banner.  # from Ru AdList
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
@@ -15866,23 +15896,6 @@ ozon.ru##.vue-portal-target:has-text(опрос)
 ||ozone.ru/assets/*-banner$script
 ||ozon.ru/graphics/img/  # from Ru AdList
 ||ozon.ru/graphics/img_ban/  # from Ru AdList
-ozon.ru##div[data-widget="banner"]
-ozon.ru##a[href^="/travel/info/hotels-cashback/"]
-ozon.ru##div[data-widget="objectBannerList"]
-ozon.ru##div[data-widget="webPremiumPointsInfo"]
-ozon.ru##div[data-widget="webMarketingLabels"]
-ozon.ru##[data-widget="skuGrid"]
-ozon.ru##[data-widget="skuShelfGoods"]
-    ! loans
-ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
-ozon.ru##div[data-widget=webInstallmentPurchase]
-    ! other
-ozon.ru##.vacancy__actions:style(position:static !important)
-ozon.ru##.vacancy__benefits
-ozon.ru##h3
-ozon.ru##p:has-text(Наведите камеру и скачайте)
-
-    ! banners and promos
 ||ozone.ru/_nuxt/cms-all-banner*
 ||ozone.ru/graphics/bx/
 ||ozone.ru/s3/marketing-api/
@@ -15890,6 +15903,13 @@ ozon.ru##p:has-text(Наведите камеру и скачайте)
 ||ozone.ru/s3/cms/$image
 ||ozone.ru/assets/marketing
 ||ozone.ru/s3/video/cover/$image
+ozon.ru##div[data-widget="banner"]
+ozon.ru##a[href^="/travel/info/hotels-cashback/"]
+ozon.ru##div[data-widget="objectBannerList"]
+ozon.ru##div[data-widget="webPremiumPointsInfo"]
+ozon.ru##div[data-widget="webMarketingLabels"]
+ozon.ru##[data-widget="skuGrid"]
+ozon.ru##[data-widget="skuShelfGoods"]
 ozon.ru##button:has-text(Premium)
 ozon.ru##.skeleton-banner
 ozon.ru##button:has-text(/Подарить|в один клик/)
@@ -15900,22 +15920,26 @@ ozon.ru##li:has(> a[href^="/highlight/"])
 ozon.ru##div:has(>p:has-text(Оформить подписку))
 ! not aside column, but banner
 ozon.ru##aside
-    ! trackers
-||ozone.ru/s3/ozon-tag-manager/
-||ozon.ru/api/logs-gateway/
-||ozone.ru/graphics/client-metrics/
-ozon.ru##div[trackinginfo]
+ozon.ru##div > div:has-text(/c Ozon Картой$/)
+! fake notifications
+ozon.ru##span.tsCaptionBold:has-text(/^1$/)
+ozon.ru##div[data-widget="webOzonAccountPrice"]
+    ! labels
+ozon.ru##section:has(span:has-text("Распродажа Зимы"))
+ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
+    ! loans
+ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
+ozon.ru##div[data-widget=webInstallmentPurchase]
+    ! seo
+ozon.ru##div[data-widget="semanticText"]
     ! other
+ozon.ru##.vacancy__actions:style(position:static !important)
+ozon.ru##.vacancy__benefits
+ozon.ru##h3
+ozon.ru##p:has-text(Наведите камеру и скачайте)
 ozon.ru##.b4u0
 ! footer icons
 !ozon.ru##svg:matches-css(width:24px):matches-css(height:24px) - don't, not only footer
-||ozone.ru/_nuxt/pdp-all-sharing-button*
-||ozone.ru/graphics/new_no_photo.png
-||ozone.ru/assets/cms-desktop-promo
-||ozone.ru/s3/sellerassets/
-!||ozone.ru/assets/vendors - don't, map blocked
-!||ozone.ru/assets/vendors-node_modules_bx - don't, map blocked
-!||ozone.ru/assets/cms-desktop-top-bar - don't
 ozon.ru##div[data-widget="separator"]
 
 packtpub.com##.upsell-box
@@ -21829,6 +21853,14 @@ theguardian.com###jbe-variation
 ! inline
 theguardian.com##.lister-alert-signup
 theguardian.com###cta-right-column
+    ! scripts
+||guim.co.uk/assets/sentry
+||guim.co.uk/assets/signingateselector-  # is in Adguard
+||guim.co.uk/assets/stickybottombanner-
+||guim.co.uk/assets/readerrevenuedev-
+||guim.co.uk/assets/metrics-
+||guim.co.uk/assets/toprightadslot-
+||guim.co.uk/assets/setabtests-
     ! other
 theguardian.com##.lister__logo
 theguardian.com##.rec-logo
@@ -23444,6 +23476,11 @@ veeam.com##.container-spacer-lg:style(padding-top:0px !important)
 veeam.com##.container-main:style(margin-top:0px !important)
     ! banners and promos
 veeam.com##.card-banner
+veeam.com##.card-banner__new
+    ! useless backgrounds
+||veeam.com/*/pattern-left$image
+||veeam.com/*/pattern-right$image
+veeam.com##.img-pattern
     ! other
 
 vegalab.ru###notices
@@ -25636,9 +25673,11 @@ zcsend.net$domain=~zoho.com|~zohopublic.com|~zohostatic.com|~zohosupport.com|~zo
 
 ||zdnet.com/*promo$xmlhttprequest  # is in uBlock filters
 ||zdnet.com/m3d0s1/$important  # is in EasyList and Adguard
+||zdnet.com/*/zdnet-footer-background$image
     ! logo
 zdnet.com##.svg-logo-header
 zdnet.com##.zd-logo
+zdnet.com##.logo-horizontal
     ! inline related
 zdnet.com##.c-shortcodePinbox-textList_floating.c-shortcodePinbox-textList
 zdnet.com##p:has(strong):has-text(/^Also:/)
@@ -25659,6 +25698,7 @@ zdnet.com##.keepUp
 ! is in Adguard
 zdnet.com##.c-shortcodeListicle_buttonContainer
 zdnet.com##.sharebar-trigger
+zdnet.com##.c-globalAuthor_image
 
 zdorovaya-eda.com###prevnext-nav
 zdorovaya-eda.com###table-of-contents-sticly
@@ -27438,3 +27478,59 @@ gamingscan.com##.tocContainer
 gamingscan.com##.fs-related-post
 ! inline toc
 gamingscan.com##.content-toc
+
+||duden.de/modules/custom/duden_ads/  # from uBlock filters
+
+inkfrog.com###launcher-icon-container
+
+juliaclinic.ru###jv-topnav
+
+! sticky button
+itsfoss.com##.gh-portal-triggerbtn-iframe
+
+julia-v.ru##.carousel
+
+medihost.ru###window-select-city
+medihost.ru##.clinic-header-container:style(position:static !important)
+||medihost.ru/images/clinics/backgrounds/$image
+medihost.ru###btn-down
+medihost.ru##.bl-banners
+medihost.ru###info:style(margin-top:0px !important)
+medihost.ru###btn-up
+
+azuma.store##.main_page-catalog_banner
+azuma.store##.btn_go-top
+
+    ! popups
+manicurshop.ru##.su-header-basket_dropdown
+manicurshop.ru##.gift
+    ! banners and promos
+manicurshop.ru##.discount
+manicurshop.ru##.su-sidebar-bnr
+    ! other
+
+    ! top
+manicurshop.ru##.head-line:style(position:static !important)
+manicurshop.ru##.su-header-contacts_phones
+manicurshop.ru##.su-header-contacts
+manicurshop.ru##.su-header-info
+    ! other
+
+||letu.ru/dist/old-browser.js
+
+||randewoo.ru/assets/promo-tooltip
+
+! fake question. See pleer.ru
+randewoo.ru##.popular-question
+
+ubuntupit.com###ftwp-trigger
+ubuntupit.com###ftwp-header-minimize
+ubuntupit.com##.wpb_wrapper:style(position:static !important)
+
+||don-holod.ru/wp-content/uploads/2021/03/podarok_korobka_rozhdestvo_195305_1280x720.jpg
+
+! popup
+redmall.ru##noindex
+
+! top
+malwaretips.com##.p-navSticky ~ div:style(height:auto !important)
