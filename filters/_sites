@@ -1961,6 +1961,11 @@ aspektcenter.ru##blockquote
 
 assistentus.ru##.footer_left
 assistentus.ru##.ukp
+! left menu
+assistentus.ru##.sb-slidebar:style(position:absolute !important)
+assistentus.ru##.promo_bottom
+assistentus.ru##.footer_level_two
+assistentus.ru##.index_subscribe
 
 astera.ru##.footer-widgets
 astera.ru##.table-of-contents__list
@@ -2628,15 +2633,24 @@ banki.ru##*:matches-css(position:fixed)
     ! banners and promos
 ||banki.ru/*/HomePageBundle/slider/$image  # banners
 banki.ru##div:has(>a[href^="/news/special_project/"])
-banki.ru##section:has(div:has(>a[href*="/news/partners/"]))
-banki.ru##section[data-gtm-view]:has(a[href*="tracking.banki.ru"])
-banki.ru##section:has(a[data-role=button])
+! тремя правилами ниже скрывается внутренняя реклама. К сожалению, при этом может зацепляться нужное. Пока добавлены исключения по пути, возможно, будут дополняться
+banki.ru##section:has(div:has(>a[href*="/news/partners/"])):not(:matches-path(/products/))
+banki.ru##section[data-gtm-view]:has(a[href*="tracking.banki.ru"]):not(:matches-path(/products/))
+banki.ru##section:has(a[data-role=button]):not(:matches-path(/products/))
 ! promos
 banki.ru##[class^=AggregatorCalc]
 ! space for banners
 banki.ru##[class^=HorizontalScroll]
 ! space for banners
 banki.ru##[class^=Panel__]
+! promo
+banki.ru##.products-offers
+! promo
+banki.ru##.specials-list
+    ! seo texts
+banki.ru##[data-test="header-subtitle"]
+banki.ru##.notice-text
+banki.ru##.notice--warning
     ! other
 banki.ru##.lazy-widget
 !banki.ru##[class^=Area_] - don't
@@ -2646,6 +2660,7 @@ banki.ru##.expand-content:has-text(Содержание)
 banki.ru##.text-header-3:has-text(Эксклюзивное видео)
 ! non-clickable and useless tags
 banki.ru##[class^=TabsPanel]
+banki.ru##div:has(>div>img[alt=mobile-app])
 
 ! from Fanboy's
 banki.ua##.b-fb-overlay
@@ -21495,6 +21510,8 @@ techradar.com##.supernav
 techradar.com##aside.hawk-nest
 techradar.com##.stickyProductBrowser
 techradar.com##.newsletter-signup
+! top
+techradar.com##.sub-brands-bar
 
     ! premium banners
 techrepublic.com##.btn-premium
@@ -22493,6 +22510,7 @@ tacdn.com$domain=~tripadvisor.com|~tripadvisor.be|~tripadvisor.ca|~tripadvisor.c
 ||tripadvisor.com/img2/popups/ #banners
 ! general ad rule not working
 tripadvisor.com##.advertisment
+tripadvisor.ru##.stickyBar:style(position:static !important)
 
 tripandme.ru##.menu-shapka-container
 tripandme.ru##.site-branding
@@ -25678,10 +25696,17 @@ zcsend.net$domain=~zoho.com|~zohopublic.com|~zohostatic.com|~zohosupport.com|~zo
 zdnet.com##.svg-logo-header
 zdnet.com##.zd-logo
 zdnet.com##.logo-horizontal
+    ! top
+zdnet.com##.c-siteHeaderNavigation_topicShelf:style(height:auto !important)
+zdnet.com##.c-siteHeaderNavigation_buttonShelf:style(height:80px !important)
+! top-left
+zdnet.com##.c-sectionHeading
+zdnet.com##.c-globalAuthor_image
     ! inline related
 zdnet.com##.c-shortcodePinbox-textList_floating.c-shortcodePinbox-textList
 zdnet.com##p:has(strong):has-text(/^Also:/)
 zdnet.com##.c-listingVertical
+zdnet.com##.c-shortcodePinbox
     ! banners and promos
 zdnet.com##.c-commerceBuyButton
 zdnet.com##.c-globalBreakingNews
@@ -25698,7 +25723,8 @@ zdnet.com##.keepUp
 ! is in Adguard
 zdnet.com##.c-shortcodeListicle_buttonContainer
 zdnet.com##.sharebar-trigger
-zdnet.com##.c-globalAuthor_image
+! seo
+zdnet.com##.c-globalDisclosure
 
 zdorovaya-eda.com###prevnext-nav
 zdorovaya-eda.com###table-of-contents-sticly
@@ -27536,3 +27562,14 @@ redmall.ru##noindex
 malwaretips.com##.p-navSticky ~ div:style(height:auto !important)
 
 akned.ru##.navigation
+
+group-ib.ru$third-party  # from EasyPrivacy
+
+opensource.com##.branding
+opensource.com###block-aboutthissitefooter
+
+! popup
+slant.co##.FAB-Floating
+
+restoclub.ru##.popup-notification
+restoclub.ru##.fixed-element:style(position:static !important)
