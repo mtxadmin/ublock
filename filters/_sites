@@ -2636,6 +2636,8 @@ banki.ru##div:has(>a[href^="/news/special_project/"])
 ! тремя правилами ниже скрывается внутренняя реклама. К сожалению, при этом может зацепляться нужное. Пока добавлены исключения по пути, возможно, будут дополняться
 banki.ru##section:has(div:has(>a[href*="/news/partners/"])):not(:matches-path(/products/))
 banki.ru##section[data-gtm-view]:has(a[href*="tracking.banki.ru"]):not(:matches-path(/products/))
+    ! вот так интересно даже в продуктах
+    banki.ru##a[href*="https://tracking.banki.ru/"]
 banki.ru##section:has(a[data-role=button]):not(:matches-path(/products/))
 ! promos
 banki.ru##[class^=AggregatorCalc]
@@ -5194,8 +5196,18 @@ digitaldefynd.com##.mega-stuck.mega-sticky:style(position:static !important)
 ||digitalocean.com/_next/static/chunks/pages/_error
 ! While scrolling, site breaks itself
 digitalocean.com##+js(aeld)
+    ! top
+! top duplicate
+digitalocean.com##[class^=TopHatNavigationStyles]
+digitalocean.com##[class^=NavigationStyles]:style(position:static !important)
+    ! sidebars
+digitalocean.com##[class*=StyledStickyContainer]:style(position:static !important)
+    ! banners and promos
 ||digitalocean.com/_next/static/media/ctaFish$image
 digitalocean.com##[class*=StyledCTA]
+digitalocean.com##[class*=ProductFeature]
+digitalocean.com##[class*=FooterSectionProduct]
+    ! other
 
 digitaltrends.com##.b-nav__logo
 digitaltrends.com##.h-nav-container.b-nav:style(position:static !important)
@@ -25778,7 +25790,7 @@ zendesk.com.ru$third-party
 zendesk.co.uk$third-party
 ! Hmm... don't remember why, but don't
 !zdassets.com$domain=~zendesk.com|~zendesk.com.ru|~blokada.org|~umbrella.com
-||zdassets.com/ekr/snippet.js  # is in Ru AdList and Fanboy's
+||zdassets.com/ekr/snippet.js$important  # is in Ru AdList and Fanboy's
 ##.zendesk-chat
 ##.zenLink
 /zendesk.js
@@ -27573,3 +27585,28 @@ slant.co##.FAB-Floating
 
 restoclub.ru##.popup-notification
 restoclub.ru##.fixed-element:style(position:static !important)
+
+    ! popups
+royal-computers.ru##.city-confirm
+royal-computers.ru##.side-form
+    ! other
+
+    ! top
+systranbox.com##.topbar
+systranbox.com##.header-middle-area
+    ! other
+! totop
+systranbox.com##.BackTo
+systranbox.com###glt-translate-trigger
+
+fossmint.com##.header-1-wrapper:style(padding-top:0px !important; height:auto !important)
+fossmint.com##.header-sticky
+fossmint.com##a:has(.ctaButton)
+
+reddit.com##button:has-text(Get App)
+reddit.com##span:matches-css(background-image:/bannerBackground/)
+
+forum.openmediavault.org###pageHeaderLogo
+forum.openmediavault.org##.pageHeaderFacade
+forum.openmediavault.org##.messageSidebar > .messageAuthor > .userAvatar
+forum.openmediavault.org##.pageHeaderPanel:style(position:static !important)
