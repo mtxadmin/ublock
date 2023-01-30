@@ -16,6 +16,8 @@ taobao.com$removeparam=activityId  # from Adguard
 ! Found independently.
 aliexpress.com$removeparam=algo_exp_id
 aliexpress.ru$removeparam=algo_exp_id
+    ! I suppose, this parameter Aliexpress-specific only
+    ! $removeparam=algo_exp_id  # from DandelionSprout's URLShortener
 
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
 aliexpress.com$removeparam=algo_expid
@@ -44,10 +46,12 @@ aliexpress.com$removeparam=cn
 aliexpress.ru$removeparam=cn
 
 ||aliexpress.$removeparam=curPageLogUid  # from Adguard
+    ! ||aliexpress.*^$removeparam=curPageLogUid  # from DandelionSprout's URLShortener
 
 ! Found independently.
 aliexpress.com$removeparam=cv
 aliexpress.ru$removeparam=cv
+    ! ||aliexpress.*^$removeparam=cv  # from DandelionSprout's URLShortener
 
 ! Found independently, added 2022-01-11
 aliexpress.com$removeparam=compareFields
@@ -55,7 +59,7 @@ aliexpress.ru$removeparam=compareFields
 
 !aliexpress.com$removeparam=dl - don't!
 
-! Found independently. Also it is in the Adguard
+! Found independently. Also it is in the Adguard and DandelionSprout's URLShortener
 aliexpress.com$removeparam=dp
 aliexpress.ru$removeparam=dp
 
@@ -77,6 +81,7 @@ aliexpress.ru$removeparam=_ga
 
 aliexpress.com$removeparam=gatewayAdapt
 aliexpress.ru$removeparam=gatewayAdapt
+    ! ||aliexpress.*^$removeparam=gatewayAdapt  # from DandelionSprout's URLShortener
 
 ! Found independently.
 aliexpress.com$removeparam=gclid
@@ -85,12 +90,14 @@ aliexpress.ru$removeparam=gclid
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=gps-id
 aliexpress.ru$removeparam=gps-id
-! Later: unusual Ru AdList form (it seems, all the parameters will be removed):
+    ! Later: unusual Ru AdList form (it seems, all the parameters will be removed):
     ! .html?gps-id=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
+    ! ||aliexpress.*^$removeparam=gps-id  # from DandelionSprout's URLShortener
 
 ! from NeatURL (6.0, added here 2022-02)
 aliexpress.com$removeparam=initiative_id
 aliexpress.ru$removeparam=initiative_id
+    ! ||aliexpress.*^$removeparam=initiative_id  # from DandelionSprout's URLShortener
 
 ! Found independently (2022-04)
 aliexpress.com$removeparam=item_id
@@ -106,11 +113,15 @@ aliexpress.ru$removeparam=m_page_id
 
 aliexpress.com$removeparam=pdp_ext_f
 aliexpress.ru$removeparam=pdp_ext_f
-! unusual Ru AdList form (it seems, all the parameters will be removed):
+    ! unusual Ru AdList form (it seems, all the parameters will be removed):
     !.html?pdp_ext_f=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
     ! See gps-id above
+    !
+    ! ||aliexpress.*^$removeparam=pdp_ext_f  # from DandelionSprout's URLShortener
 
-! Found independently, added 2022-01-11. Later: is in Adguard
+aliexpress.*$removeparam=pdp_npi  # from DandelionSprout's URLShortener
+
+! Found independently, added 2022-01-11. Later: is in Adguard and DandelionSprout's URLShortener
 aliexpress.com$removeparam=pdp_pi
 aliexpress.ru$removeparam=pdp_pi
 
@@ -131,7 +142,10 @@ aliexpress.ru$removeparam=rowan_msg_id
 alibaba.com$removeparam=__sceneInfo  # https://m.alibaba.com/product/62078657382/2022-trend-tube-case-design-TWS.html?__sceneInfo=%7B%22cacheTime%22%3A%221800000%22%2C%22type%22%3A%22appDetailShare%22%7D&from=Android
 
 ! from Adguard, added 2022-02
-||aliexpress.$removeparam=sk
+!||aliexpress.$removeparam=sk
+! later:
+!$removeparam=sk,domain=bing.com|aliexpress.*  # from DandelionSprout's URLShortener
+! transferred to _removeparams
 
 ! Found independently, added 2021-05-28
 aliexpress.com$removeparam=sku_id
@@ -140,28 +154,25 @@ aliexpress.ru$removeparam=sku_id
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=_t
 aliexpress.ru$removeparam=_t
+    ! ||aliexpress.*^$removeparam=_t  # from DandelionSprout's URLShortener
 
 !aliexpress.com$removeparam=t - don't, it breaks related search
 
 ! from Adguard, added 2022-02
 ||aliexpress.$removeparam=terminal_id  # from Adguard
+    ! ||aliexpress.*^$removeparam=terminal_id  # from DandelionSprout's URLShortener
+
+||aliexpress.*^$removeparam=__tppBottom  # from DandelionSprout's URLShortener
 
 taobao.com$removeparam=traceId  # from Adguard
 
-! Found independently, earlier than 2021-04. Seems fully working
-aliexpress.com$removeparam=tracelog
-aliexpress.ru$removeparam=tracelog
+aliexpress.*$removeparam=tt  # from DandelionSprout's URLShortener
 
 ! Found independently, added 2021-04-25
 aliexpress.com$removeparam=ug_edm_item_id
 aliexpress.ru$removeparam=ug_edm_item_id
 
 $removeparam=union_lens,domain=tmall.com|taobao.com  # from Adguard
-
-! from Adguard, added 2022-02
-||aliexpress.$removeparam=utparam  # from Adguard
-! Adguard has this rule also for taobao
-taobao.com$removeparam=utparam  # from Adguard
 
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
 aliexpress.com$removeparam=ws_ab_test
