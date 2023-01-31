@@ -6,7 +6,7 @@ This is the [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) for blockin
 
 Applying of the hosts file can be useful for general ad blocking in the system, not just in the browser.
 
-Wildcard characters are SUPPORTED in this (Blokada) version! You can block a domain and all its subdomains by mask. This means compact list and effective ad blocking.
+Wildcard characters are [SUPPORTED](https://community.blokada.org/t/wildcard-support-in-blokada/11659) in this (Blokada) version! You can block a domain and all its subdomains by mask. This means compact list and effective ad blocking.
 
 **Restrictions:**
 - The capabilities of the hosts file are limited only by blocking nodes by name (and mask in this version)
