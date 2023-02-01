@@ -626,89 +626,8 @@
 ||9ban.ru/wp-content/themes/1brus/img/bloquote.png
 9ban.ru##.add_company
 
-||9gag.com/track/  # from EasyPrivacy
-    ! top
-9gag.com##.fixed-wrap-post-bar:style(position:static !important)
-9gag.com##.post-container:style(margin-top:0px !important)
-9gag.com##section.post-comment:style(padding-bottom:0px !important; margin-bottom:0px !important)
-9gag.com###container:style(padding-top:0px !important; padding-bottom:0px !important)
-9gag.com##.comment-community__guideline
-    ! bottom
-9gag.com##.bottom-comment-composer:style(position:static !important)
-    ! banners and promos
-9gag.com##.campaign-banner
-! from Adguard
-9gag.com##.post-signup-list-banner
-! from Adguard
-9gag.com##a[class="get-the-app-banner"]
-! from Fanboy's
-9gag.com##.get-the-app-banner
-! from Adguard
-9gag.com##.signup-list-banner
-! from Adguard
-9gag.com##.signup-side-banner
-! from Adguard
-9gag.com##.comment-signup-banner
-! from Adguard
-9gag.com#?#.list-stream > article:has(p > a[target="_blank"]:contains(Promoted))
-! from uBlock filters
-9gag.com##.promoted:upward(article)
-! from Adguard
-9gag.com#?#.list-stream > article:not([id]):has(a[href="https://9gag.com/advertise"])
-! from Adguard
-9gag.com#?#.main-wrap > div:has(> [id|="dfp"])
-! from Adguard
-9gag.com#?#div[id^="sidebar-stream-"] > h4:contains(Advertisement)
-! from uBlock filters
-9gag.com##[id^="sidebar-stream-"] > h4:has-text(Advertisement)
-! from Adguard
-9gag.com##.featured-video
-||9gag.com/embed/featured-videos.html  # from EasyList
-! from Adguard and EasyList
-9gag.com##.salt-container
-! from Adguard
-9gag.com##.salt-section
-! from Adguard
-9gag.com#$##jsid-app > div[style^="position: fixed; width:"][style*="top: 50px"] { top: 0 !important; }
-! from Adguard
-9gag.com#$##jsid-app > div[style^="padding-top:"][style*="padding-top: 146px"] { padding-top: 100px !important; }
-! from Adguard
-9gag.com#$##jsid-app > div[style^="padding-top:"][style*="padding-top: 98px"] { padding-top: 50px !important; }
-! from Fanboy's
-9gag.com###jsid-sidebar-footer
-! from Adguard
-9gag.com#$#.post-tab-bar__container.sticky[style*="top:"] { top: 48px !important; }
-! from EasyList
-9gag.com##[style^="width: 640px; min-height: 360px;"]
-! from EasyList
-9gag.com##div[style*="width: 500px; height: 281px;"]
-! from EasyList
-9gag.com##div[style^="position: relative; z-index: 1; width: 640px;"]
-    ! apps
-! from Adguard
-9gag.com##a[href="/apps"]
-! from Adguard
-9gag.com#$#.open-in-app { display: none !important; }
-! from Adguard
-9gag.com#$#body { overflow: auto !important; }
-! from Adguard and Fanboy's
-9gag.com##.download-app-container
-! from Adguard
-9gag.com##.use-app
-    ! other
-! 9gag.com domain
-||9cache.com/images/thumbnail-facebook/$image
-9gag.com##.avatar__online
-! from Adguard
-9gag.com##.badge-share
-! from Adguard
-9gag.com##.bottom-sheet > ul.menu-list > li > a[class="icon"]:not([href])
-! from Fanboy's
-9gag.com###sidebar-box-0
-! from Fanboy's
-9gag.com##.message-block
-! from Fanboy's
-9gag.com##.spread-bar
+! see 9gag.com in 9gag
+! see 9gag.tv in 9gag
 
 ! from EasyList
 9gag.tv##.size-728x90
@@ -1136,6 +1055,8 @@ akipress.org##.flickity-viewport
 akket.com###header
 akket.com###footer
 akket.com##nofollow
+
+akned.ru##.navigation
 
 ||aksessuary-vanna.ru/i/snow_sky.png
 aksessuary-vanna.ru##.nav-fixed
@@ -1753,6 +1674,11 @@ arborio.ru##.header--logo
 arborio.ru##.header--about
 arborio.ru##.header--writeme
 arborio.ru##.header--about__cursor
+
+    ! popups
+arbuz.kz##.modal
+arbuz.kz##.fa-popup
+    ! other
 
 arcenal-m.ru###policy
 arcenal-m.ru##.skidki-img
@@ -2976,6 +2902,7 @@ biglion.ru##.lead-ribbon__wrap
 biglion.ru##.color--blue.btn-round
 biglion.ru##.blog-banner
 
+bigmir.net$third-party  # from EasyPrivacy
 bigmir.net##.category-maps__container
 bigmir.net##.page:style(padding-top:0px !important)
 bigmir.net##.news__slider
@@ -3041,6 +2968,8 @@ index-api.bitcoin.com$third-party
 
 bite-byte.ru###custom-header
 bite-byte.ru###wpd-post-rating
+
+bitlaunch.io##.site-header
 
 ||bitrix.info^$3p  # ad scripts from Bitrix  # is in RU AdList and AdGuard
 ||bitrix.info/ba.js$important  # from AdGuard Tracking Protection and EasyPrivacy
@@ -4653,7 +4582,6 @@ cov.su##.autoflash
 cov.su##[class$=_animate]
 cov.su##.t-sbs-anim_started
 cov.su##[class$=__positionfixed]
-cov.su##[href="javascript:t190_scrollToTop()"]
 
 ||covertarget.com/ct.gif  # logo
 covertarget.com*_*.php  # from EasyList
@@ -4853,6 +4781,12 @@ dakineshop.ru###header-right
 dakineshop.ru###header-left
 dakineshop.ru##.js-coupon-popup-open
 
+    ! popups
+danilovskymarket.ru##.app-modal
+||danilovskymarket.ru/static/images/basket-background.png
+danilovskymarket.ru##[class^="styled__Basket"]:style(position:static !important)
+    ! other
+
 danycom.ru##.main-slider
 danycom.ru##.tariffs-item__image
 danycom.ru##.footer__year
@@ -4934,6 +4868,7 @@ dd-wrt.com###header-wrap:style(position:static !important)
 dd-wrt.com###header_wrap:style(background-position-y:0px !important)
 dd-wrt.com###gumax-page:style(margin-top:0px !important)
 dd-wrt.com###gumax-header:style(height:auto !important)
+dd-wrt.com###gumax-header:style(min-height:60px !important)
 forum.dd-wrt.com###header:style(height:40px !important)
 
 deadline.com##.toaster
@@ -5667,6 +5602,12 @@ domnomore.com##.telegram-dm
 domnomore.com##.footer__note
 domnomore.com##.foot-down
 
+    ! top
+dom-otdelki.ru##.tline
+    ! callback
+dom-otdelki.ru##.recall
+    ! other
+
 domsobaki.com##noindex
 domsobaki.com##div.blok
 
@@ -5677,6 +5618,8 @@ dom-s-ymom.org##.banner-area:style(margin-top:0px !important; margin-bottom:0px 
 ! top spacing. Do not edit
 dom-s-ymom.org##.sidebar-no.col-left
 dom-s-ymom.org##.footer
+
+||don-holod.ru/wp-content/uploads/2021/03/podarok_korobka_rozhdestvo_195305_1280x720.jpg
 
 do-not-tracker.org  # [EFF Tracker Detection] - from https://adaway.org/hosts.txt
 
@@ -7547,6 +7490,10 @@ forward.bike###headerfixed:style(position:static !important)
 
 ||for-web.ru/uploads/elovaya_vetka.png
 
+fossmint.com##.header-1-wrapper:style(padding-top:0px !important; height:auto !important)
+fossmint.com##.header-sticky
+fossmint.com##a:has(.ctaButton)
+
 ||fosspost.org/goodloader.js
 fosspost.org##.svq-header--sticky:style(position:static !important)
 fosspost.org##a[href^="https://bit.ly/"]
@@ -8481,6 +8428,8 @@ grafana.com##.page-footer__form
 
 grand-oxota.ru###ja-topsl
 
+gratisvps.net##.preloader
+
 gravitsapa.info##header
 gravitsapa.info##.podaite-pozhalyista
 gravitsapa.info##h3:has-text(Так же в блоге:)
@@ -8530,6 +8479,7 @@ grosh-blog.ru##.footer-widget-wrap
 group-ib.com$3p  # 3p ad xhrs
 
 group-ib.ru$3p,important  # is in Adguard and EasyPrivacy
+group-ib.ru$third-party  # from EasyPrivacy
 
 grouple.co$3p  # ads
 
@@ -8659,6 +8609,8 @@ news.guru.ua##a.s
 ||guru.ua/vk_banner.php$subdocument
 
 guru99.com##.kt-info-svg-icon
+! logos
+guru99.com##a[rel^=sponsored] > img
 
 guruadmin.ru###header2
 guruadmin.ru##.addzakl
@@ -9281,14 +9233,34 @@ homychok.ru##.footer-widgets
 
 hook.report##p.has-background
 
+    ! popups
+hostadvice.com##.popup
+hostadvice.com##.footer_menus
+    ! other
+
 hostenko.com##.sidethemes
 hostenko.com###mc_embed_signup
 hostenko.com##.Green-button
 hostenko.com##.wpcomm
-
 hostenko.com##.wpcafe-logo
 
 hostinger.com##.colored:style(position:static !important)
+
+||hostinghub.ru/*/ratepages/$image
+    ! promos
+hostinghub.ru##.view-id-side_recommend
+hostinghub.ru##.view-rklm-plans
+hostinghub.ru##.views-row-first
+    ! other
+
+! promos
+hostings.info##.best
+! Uncaught TypeError: $(...).sticky is not a function
+hostings.info##+js(set, Object.prototype.sticky, noopFunc)
+! popup
+hostings.info##.pop-up-text-footer
+! left column
+hostings.info##.layout-navbar:style(position:absolute !important)
 
 host-tracker.com$3p  # from MVPS and Ru AdList  # moved to 3p
 host-tracker.com##.simplebar-mask
@@ -10159,6 +10131,14 @@ intickets.ru##*:style(user-select:initial !important)
 ||intuit.com/*/track-event
 ||intuitcdn.net/@cloud-monitoring/
 
+    ! popups
+||invertory.ru/whatsapp.png
+invertory.ru##.opener
+    ! other
+invertory.ru##.sticky-sidebar:style(position:static !important)
+invertory.ru##.text-center
+invertory.ru##.sticky-sidebar__inner:style(position:static !important)
+
 investfuture.ru###header-branding:style(height:auto !important)
 
 ||investing.com/*/_error$script
@@ -10886,6 +10866,12 @@ kavkaz-uzel.eu##.b-header_top:style(margin-bottom:0px !important)
 
 ||kavkazweb.net3p  # from Adguard
 
+    ! popups
+kazanexpress.ru##.popups-container
+kazanexpress.ru##.event-modal
+kazanexpress.ru##.scroller
+    ! other
+
 kdelo.ru##.topLine
 kdelo.ru##noindex
 kdelo.ru##.defaultBlock > blockquote
@@ -10956,8 +10942,6 @@ kimovil.com##.if-not-logged
 kingston.com###footer
 ||media.kingston.com/kingston/hero/$image
 kingston.com##.s-kt-navigation:style(position:static !important)
-
-kinky-party.com##[href$="scrollToTop()"]
 
 kinoafisha.info$3p  # ad xhrs
 
@@ -12832,6 +12816,9 @@ makeuseof.com##.browse-clip:has(a[href="/category/sponsored/"])
 
 blog.malwarebytes.com##body > .hidden-xs
 
+! top
+malwaretips.com##.p-navSticky ~ div:style(height:auto !important)
+
 mamalife24.ru$inline-script  # site breaks copypaste
 ||mamalife24.ru/*/fon-kopippya.jpg
 mamalife24.ru###masthead
@@ -12845,6 +12832,19 @@ mangoost-airsoft.ru###head-slider
 mangoost-airsoft.ru##.new_header:style(height:auto !important)
 mangoost-airsoft.ru###wrap_header:style(height:auto !important)
 mangoost-airsoft.ru##.slider,.nivoSlider:style(height:auto !important)
+
+    ! popups
+manicurshop.ru##.su-header-basket_dropdown
+manicurshop.ru##.gift
+    ! banners and promos
+manicurshop.ru##.discount
+manicurshop.ru##.su-sidebar-bnr
+    ! top
+manicurshop.ru##.head-line:style(position:static !important)
+manicurshop.ru##.su-header-contacts_phones
+manicurshop.ru##.su-header-contacts
+manicurshop.ru##.su-header-info
+    ! other
 
 manualslib.com###manualban
 manualslib.com##.headerwr
@@ -13111,6 +13111,13 @@ medickon.com##.head_doc
 medickon.com##.headup
 medickon.com##a[href*="myfreetopcu1.online/click/"]
 medickon.com##.openform_expertPlagin-item
+
+medihost.ru###window-select-city
+medihost.ru##.clinic-header-container:style(position:static !important)
+||medihost.ru/images/clinics/backgrounds/$image
+medihost.ru###btn-down
+medihost.ru##.bl-banners
+medihost.ru###info:style(margin-top:0px !important)
 
 medikforum.ru##.rd-navbar-panel
 
@@ -13527,6 +13534,11 @@ miped.ru##.uix_navigationWrapper:style(position:static !important)
 ||miped.ru/f/styles/default/xenforo/logo.og.png
 ||miped.ru/f/proxy.php?image=*.gif
 
+    ! gif avatars
+||mipped.com/f/data/avatars/$image
+mipped.com##.avatar
+    ! other
+
 mir4x4.ru###svjaz.svjaz:style(position:static !important)
 mir4x4.ru##.coin-slider
 mir4x4.ru##noindex > [href="http://www.mir4x4.ru/Partners/"]
@@ -13779,6 +13791,11 @@ monitorus.ru$3p
 
 mononline.ru##.widget_execphp
 
+    ! top
+monserveurnas.com##.empty
+monserveurnas.com##.smart-head-row-full
+    ! other
+
 ||monster.com.sg/trex/prod-cdn/media/promotedemployer/
 ||monsterindia.com/penguin/api/public/events/
 ||media.monster.com.sg/trex/public/default/images/hero-img.jpg
@@ -13849,7 +13866,6 @@ morzh.pro##.footer-subscribe-container
 mos.ru##[class^="Header_header"]:style(position:static !important)
 mos.ru##[class^="Header_spacer"]
 mos.ru##[class^="Caption_title"]
-mos.ru##[href*="scrollToTop()"]
 mos.ru##.scene__logo
 mos.ru##.head__logo__text_small
 mos.ru##.system-header__desc
@@ -15543,11 +15559,19 @@ open-dive.ru##.btn-oneclick
 openedu.ru##.cource-detail:style(position:static !important)
 openedu.ru##.course-descr-data:style(padding-top:0px !important)
 
+forum.openmediavault.org###pageHeaderLogo
+forum.openmediavault.org##.pageHeaderFacade
+forum.openmediavault.org##.messageSidebar > .messageAuthor > .userAvatar
+forum.openmediavault.org##.pageHeaderPanel:style(position:static !important)
+
 ||opennet.ru/opennet2.gif
 
 opensea.ru##.topbutton
 opensea.ru##.top_filter:style(position:static !important)
 opensea.ru###header
+
+opensource.com##.branding
+opensource.com###block-aboutthissitefooter
 
 openssource.info##.wad-post
 
@@ -15583,6 +15607,11 @@ opera.com##.sub-header
 operatingquadrant.com###header
 
 optakula74.ru##.ir-arriba
+
+    ! top
+optes.ru###shop:style(padding-top:0px !important)
+optes.ru##.at_middle.l-subheader
+    ! other
 
 opticstrade.com###leftheader
 opticstrade.com###arrup
@@ -15643,7 +15672,6 @@ ordvor.ru##.question-city
 
 oreilly.com##svg
 
-orelexpo.com##[href="javascript:t190_scrollToTop()"]
 orelexpo.com##[class*=social_links]
 
     ! banners and promos
@@ -16706,6 +16734,16 @@ podpricelom.com###toc_container
 podpricelom.com##.header-content
 podpricelom.com##.footer-bottom
 
+    ! top
+podrygka.ru##.main_panel
+podrygka.ru##.footer__logo-section
+podrygka.ru##.header.fixed + section, .header.fixed + div:style(padding-top:0px !important)
+    ! other
+podrygka.ru##.large-slider
+podrygka.ru##.sale-sliders
+podrygka.ru##.section-exclusive
+podrygka.ru##.shortjournal
+
 ||podu.me/*/advertisement  # from uBlock filters
 
 pohodmsk.ru##.tel-header
@@ -17690,6 +17728,9 @@ rambler.ru##span:has-text(/^18\+$/)
 rambler.ru##a[data-cerber="footer::search::ok"]
 rambler.ru##a[data-cerber="footer::search::vk"]
 
+! fake question. See pleer.ru
+randewoo.ru##.popular-question
+
 ||rantapallo.fi/s/redirect/tracking?  # from EasyPrivacy
 
 rapidseedbox.com##a > strong
@@ -17885,6 +17926,9 @@ redarmyairsoft.ru###aside
 ||redcocktube.com/images/h1.jpg
 redcocktube.com##.s_desc
 
+reddit.com##button:has-text(Get App)
+reddit.com##span:matches-css(background-image:/bannerBackground/)
+
 ||redditstatic.com/desktop2x/js/xads.js
 ||redditstatic.com/desktop2x/img/upsell/
 ||redditstatic.com/desktop2x/PushNotifications
@@ -17962,6 +18006,9 @@ redhat.com##.status-legal
 redhat.com##.PFElement
 !inline
 !redhat.com##strong - don't, not only
+
+! popup
+redmall.ru##noindex
 
 redmondmag.com##.header
 redmondmag.com##.footer
@@ -18134,6 +18181,9 @@ restate.ru##.publish_t2017_foradaptiv
 
 restfulapi.net##.helpful
 restfulapi.net##.gb-button
+
+restoclub.ru##.popup-notification
+restoclub.ru##.fixed-element:style(position:static !important)
 
 retailmenot.com##[class^=Modal__Overlay]
 
@@ -18426,6 +18476,11 @@ rossoporn.com##a[href="#2top"]
 rossoporn.com##.footer_container
 
 rotor43.ru##.widget_metaslider_widget
+
+    ! popups
+royal-computers.ru##.city-confirm
+royal-computers.ru##.side-form
+    ! other
 
 royallib.com###top
 ||royallib.com/img/cover.jpg
@@ -18909,6 +18964,8 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 
 ! https://pikabu.ru/story/chernoe_zerkalo_uzhe_zdes_7363440
 ||rutube.ru/*/survey.js
+
+ruvds.com##.noresource
 
 rvsmaster.ru##.blog-viewed-record
 
@@ -19566,8 +19623,6 @@ servis-tent.ru###masthead
 
 ! cookie popup
 sestroretsk-arms.ru##.t886__wrapper
-! other
-sestroretsk-arms.ru##[href="javascript:t190_scrollToTop()"]
 
 setka.io$third-party
 
@@ -19973,6 +20028,9 @@ skysim.ru##.site-top-content
 ! cookie alert
 skytowner.com###r
 
+! popup
+slant.co##.FAB-Floating
+
     ! table headers
 slashdot.org##.col-header:style(top:0px !important)
 slashdot.org##.m-paid-button-tile
@@ -20053,6 +20111,15 @@ smart-lab.ru##.brokers_block
 smart-lab.ru##.user_rek
 smart-lab.ru##.scrollDown
 smart-lab.ru##.toggle
+
+    ! top
+smartled.by##.breadcrumbs-location-below_header,.single-breadcrumbs-wrapper:style(margin-top:0px !important)
+smartled.by##.wd-header-text
+smartled.by##.whb-top-bar
+    ! callback
+smartled.by##.wd-open-popup
+smartled.by###zakobrzvon
+    ! other
 
 smartnator.com###announcementModal
 smartnator.com###adBlockModal
@@ -20143,7 +20210,6 @@ sntclub.ru##[class*=text_mobile]
 sntclub.ru##[class*=wrapper]
 !sntclub.ru##[class*=wrapper_mobile]
 ! other
-sntclub.ru##[href="javascript:t190_scrollToTop()"]
 sntclub.ru##[class*=sociallinkimg]
 sntclub.ru##[class*=publish]
 sntclub.ru##.t-cover
@@ -21235,6 +21301,14 @@ systemscenter.ru##.ru
 
 systemzone.ru##.heder
 
+    ! top
+systranbox.com##.topbar
+systranbox.com##.header-middle-area
+    ! other
+! totop
+systranbox.com##.BackTo
+systranbox.com###glt-translate-trigger
+
 tadviser.ru##.abcfc
 
 take-profit.org###quotes
@@ -21496,6 +21570,15 @@ techport.ru##.tcp-about-rating
 techport.ru##.tcp-product-detail:nth-of-type(2)
 techport.ru##.tcp-modal-complectation-warning
 
+techpp.com##.tppAds
+techpp.com###ez-toc-container
+! top
+techpp.com##.bg-white.brxe-section
+! logo
+techpp.com##.brxe-svg
+! bottom
+techpp.com##.brxe-shortcode
+
 techproresearch.com###site-search
 
 ! @@||techradar.com^$generichide in Fanboy's. Hmm... Ok.
@@ -21609,6 +21692,11 @@ teh-beauty.ru##.widget:has-text(Об авторе)
 teh-beauty.ru###head_top_block
 
 tehnika.expert##.navi
+
+    ! top
+tehnoblog.org###title
+tehnoblog.org###intro
+    ! other
 
 tehnobzor.ru##.btn:has-text(AliExpress)
 tehnobzor.ru##.footer-info > noindex
@@ -21758,6 +21846,14 @@ tender.media##.bg-side-btn
 
 tender.plus##.widget-form
 tender.plus##.widget-button
+
+||tenforums.com/fav/$image  # logo
+||tenforums.com/img/TenForumsLogo.png  # logo
+||tenforums.com/img/footlogo.png  # logo. Still too big.
+    ! google banners
+tenforums.com###similar
+tenforums.com##.sim1
+    ! other
 
 ||tengrinews.kz/img/tn-18.svg
 tengrinews.kz##.tn-menu-fixed:style(position:static !important)
@@ -22604,6 +22700,22 @@ truegun.ru###tab-description > div > p:has-text(менеджер)
 truegun.ru##.oct-sticker-box
 truegun.ru##.phones-top-box
 
+! also see xda-developers.com rule
+truenas.com##.p-navSticky + div:has-text(/^$/)
+    ! top
+truenas.com##.et_pb_column_0_tb_body:style(padding-top:0px !important)
+truenas.com###divi-sticky-header:style(position:static !important)
+truenas.com##.et_pb_sticky:style(position:static !important)
+truenas.com##.et_pb_sticky_placeholder
+    ! unhide downloads
+truenas.com##.ix-oauth
+truenas.com##[href^="https://www.ixsystems.com/oauth/"]
+! hubspot ad form
+truenas.com##.et_pb_module:has(script[src*="js.hsforms.net"])
+truenas.com##.element-download-show:style(display:initial !important)
+truenas.com##.ixhs-hide-download
+    ! other
+
 trumplearning.com##.subscribe-email
 trumplearning.com##.navbar-header
 
@@ -22856,6 +22968,10 @@ uborka.co##.top-header
 ubr.ua##.job-block
 ! from Fanboy's
 ubr.ua##.story-nav
+
+ubuntupit.com###ftwp-trigger
+ubuntupit.com###ftwp-header-minimize
+ubuntupit.com##.wpb_wrapper:style(position:static !important)
 
 ucbreport.ru##app-ask-email
 
@@ -23327,6 +23443,15 @@ value-instrument.ru##.navbar-right
 
 valynkin.ru###headerLeft
 valynkin.ru###footerLeft
+
+    ! banners and promos
+vamsvet.ru##.topb
+vamsvet.ru##.btn__bf
+vamsvet.ru##.is-bin-liquidation
+    ! other
+vamsvet.ru##.isFixed:style(position:static !important)
+vamsvet.ru##.find-error
+vamsvet.ru##.subscribe-sm
 
 vamtlgrm.com##.body-top-pad:style(padding-top:0px !important)
 
@@ -24058,9 +24183,14 @@ vprok.ru##.xf-product-picture__preview-link
 vprok.ru##.xf-product__badges
 vprok.ru##.js-catalog-product__preview
 
+vps.today##a[href^="/go.php"]
+! useless promos
+vps.today##.border-success
+
 vps2.me##.bottom-arrow-wrap
 
 vpshostingninja.com##.ttfmake-testimonial
+vpshostingninja.com##.su-button
 
 ||vptbnp.com/stripchat/
 
@@ -24130,7 +24260,6 @@ vseinstrumenti.ru##.button-new-grey:has-text(Быстрый заказ)
 vseinstrumenti.ru##.bl_to
 vseinstrumenti.ru##.sprFooter
 vseinstrumenti.ru##.footer-subscribe-form-email
-vseinstrumenti.ru###page-locate-up.btn-up.btn-page-locate
 vseinstrumenti.ru##.card-report-an-improve-button
 vseinstrumenti.ru###page-locate-down.btn-down.btn-page-locate
 vseinstrumenti.ru###stickyBuy.sticky-buy-stick:style(position:static !important)
@@ -24992,6 +25121,12 @@ wsj.com##.trending_videos
 wsj.com##[class*=social-logo]
 ||barrons.com/*/wsj-logo-big-black$image
 ||barrons.com/*/wsj-logo$image
+
+    ! popups
+wundertech.net##.overlay-header-media
+    ! top
+wundertech.net###content-wrap:style(padding-top:0px !important; padding-bottom:0px !important)
+    ! other
 
 wutils.com##.fixdiv
 
@@ -27016,6 +27151,7 @@ romankapa.ru$3p  # spam  # now empty :-)
 
 sematext.com$3p  # Sematext - Tracker  # from Quidsup NoTrack-Blocklist  # moved to 3p
 
+aeza.net##video
 ! popups
 aeza.net##div:matches-css(position:fixed)
 
@@ -27214,24 +27350,7 @@ appypie.com##.offerbanner
 
 smartblogger.com##.sticky-element
 
-techpp.com##.tppAds
-techpp.com###ez-toc-container
-! top
-techpp.com##.bg-white.brxe-section
-! logo
-techpp.com##.brxe-svg
-! bottom
-techpp.com##.brxe-shortcode
-
 pcerror-fix.com##h3 > a[href="https://www.pcerror-fix.com/get-pc-repair-tool"]
-
-||tenforums.com/fav/$image  # logo
-||tenforums.com/img/TenForumsLogo.png  # logo
-||tenforums.com/img/footlogo.png  # logo. Still too big.
-    ! google banners
-tenforums.com###similar
-tenforums.com##.sim1
-    ! other
 
 ! already blocked.
 wpquads.com##.custom-social-proof
@@ -27269,10 +27388,6 @@ coffeemag.kz,horeca24.kz##.wrapper::after
     ! other
 coffeemag.kz,horeca24.kz##.footer__promo
 
-! popups
-arbuz.kz##.modal
-arbuz.kz##.fa-popup
-
 tomas.kz##.invite-mobile-app
 
 kaspi.kz##.footer-2
@@ -27299,41 +27414,15 @@ foodclick.kz##.seoitkod_bg_form
 foodclick.kz##.modx_evo_seo_itkod_title_block_paf
 foodclick.kz##.titleForSeo
 
-podrygka.ru##.large-slider
-podrygka.ru##.sale-sliders
-podrygka.ru##.section-exclusive
-podrygka.ru##.shortjournal
-! top
-podrygka.ru##.main_panel
-podrygka.ru##.footer__logo-section
-podrygka.ru##.header.fixed + section, .header.fixed + div:style(padding-top:0px !important)
-
 ko-fi.com$3p  # "Byu me a coffee" widgets
-
-    ! popups
-wundertech.net##.overlay-header-media
-    ! top
-wundertech.net###content-wrap:style(padding-top:0px !important; padding-bottom:0px !important)
 
 ||dannyda.com/myplugin/wp-hide-security-enhancer/*  # devtools-detect
 ! empty
 dannyda.com##.custom-header
 dannyda.com###ytWidget
 
-    ! top
-monserveurnas.com##.empty
-monserveurnas.com##.smart-head-row-full
-    ! other
-
 ! top
 sourceforge.net##.backdrop:style(padding-bottom:0px !important)
-
-    ! top
-truenas.com##.et_pb_column_0_tb_body:style(padding-top:0px !important)
-truenas.com###divi-sticky-header:style(position:static !important)
-truenas.com##.et_pb_sticky:style(position:static !important)
-truenas.com##.et_pb_sticky_placeholder
-    ! other
 
 xxxsave.net##a[href="/affiliate.html"]
 
@@ -27351,17 +27440,6 @@ majorgeeks.com##.colleft:style(height:auto !important)
 majorgeeks.com##.colright:style(height:auto !important)
 
 ||microsoft-watch.com/restore/middle.php
-
-! also see xda-developers.com rule
-truenas.com##.p-navSticky + div:has-text(/^$/)
-    ! unhide downloads
-truenas.com##.ix-oauth
-truenas.com##[href^="https://www.ixsystems.com/oauth/"]
-! hubspot ad form
-truenas.com##.et_pb_module:has(script[src*="js.hsforms.net"])
-truenas.com##.element-download-show:style(display:initial !important)
-truenas.com##.ixhs-hide-download
-    ! other
 
 pochtabank.ru$3p  # ad scripts (loans)
 
@@ -27402,12 +27480,6 @@ slavelektro.ru##.right_sidebar > h3
 s3.ru###personal_info
 s3.ru###footer_wrapper
 
-    ! popups
-danilovskymarket.ru##.app-modal
-||danilovskymarket.ru/static/images/basket-background.png
-danilovskymarket.ru##[class^="styled__Basket"]:style(position:static !important)
-    ! other
-
 usbmag.ru###geo-location-window
 usbmag.ru###footerLine:style(position:static !important)
 usbmag.ru##.fixContainer
@@ -27423,21 +27495,6 @@ electro-mpo.ru##.s-float-header:style(position:static !important)
 proton.by##.cs-float:style(position:static !important)
 ! ?
 proton.by##div .cs-float
-
-    ! popups
-kazanexpress.ru##.popups-container
-kazanexpress.ru##.event-modal
-kazanexpress.ru##.scroller
-    ! other
-
-    ! banners and promos
-vamsvet.ru##.topb
-vamsvet.ru##.btn__bf
-vamsvet.ru##.is-bin-liquidation
-    ! other
-vamsvet.ru##.isFixed:style(position:static !important)
-vamsvet.ru##.find-error
-vamsvet.ru##.subscribe-sm
 
 strmir.ru##.l-header__top:style(position:static !important)
 strmir.ru##[id^=bigdata_recommended_products]
@@ -27463,39 +27520,11 @@ mayak-shop.ru##.shop2-panel
 ! subscribe
 mayak-shop.ru##.formWrap
 
-    ! popups
-||invertory.ru/whatsapp.png
-invertory.ru##.opener
-    ! other
-invertory.ru##.sticky-sidebar:style(position:static !important)
-invertory.ru##.text-center
-invertory.ru##.sticky-sidebar__inner:style(position:static !important)
-
 ! oneclick (as is)
 lampochca.ru##p > input.button
 
-    ! top
-smartled.by##.breadcrumbs-location-below_header,.single-breadcrumbs-wrapper:style(margin-top:0px !important)
-smartled.by##.wd-header-text
-smartled.by##.whb-top-bar
-    ! callback
-smartled.by##.wd-open-popup
-smartled.by###zakobrzvon
-    ! other
-
-    ! top
-dom-otdelki.ru##.tline
-    ! callback
-dom-otdelki.ru##.recall
-    ! other
-
 mirsveta-online.ru##.cont-head
 mirsveta-online.ru##.slick-slider
-
-    ! top
-optes.ru###shop:style(padding-top:0px !important)
-optes.ru##.at_middle.l-subheader
-    ! other
 
 ! top
 ooo-set.ru##.h-row
@@ -27504,11 +27533,6 @@ ooo-set.ru##.h-row
 tddomovoy.ru##.M-set-region
 ! top
 tddomovoy.ru##.s-header-top_line
-
-    ! gif avatars
-||mipped.com/f/data/avatars/$image
-mipped.com##.avatar
-    ! other
 
 ! popup
 gamingscan.com##.tocContainer
@@ -27528,85 +27552,12 @@ itsfoss.com##.gh-portal-triggerbtn-iframe
 
 julia-v.ru##.carousel
 
-medihost.ru###window-select-city
-medihost.ru##.clinic-header-container:style(position:static !important)
-||medihost.ru/images/clinics/backgrounds/$image
-medihost.ru###btn-down
-medihost.ru##.bl-banners
-medihost.ru###info:style(margin-top:0px !important)
-medihost.ru###btn-up
-
 azuma.store##.main_page-catalog_banner
 azuma.store##.btn_go-top
-
-    ! popups
-manicurshop.ru##.su-header-basket_dropdown
-manicurshop.ru##.gift
-    ! banners and promos
-manicurshop.ru##.discount
-manicurshop.ru##.su-sidebar-bnr
-    ! other
-
-    ! top
-manicurshop.ru##.head-line:style(position:static !important)
-manicurshop.ru##.su-header-contacts_phones
-manicurshop.ru##.su-header-contacts
-manicurshop.ru##.su-header-info
-    ! other
 
 ||letu.ru/dist/old-browser.js
 
 ||randewoo.ru/assets/promo-tooltip
 
-! fake question. See pleer.ru
-randewoo.ru##.popular-question
-
-ubuntupit.com###ftwp-trigger
-ubuntupit.com###ftwp-header-minimize
-ubuntupit.com##.wpb_wrapper:style(position:static !important)
-
-||don-holod.ru/wp-content/uploads/2021/03/podarok_korobka_rozhdestvo_195305_1280x720.jpg
-
-! popup
-redmall.ru##noindex
-
-! top
-malwaretips.com##.p-navSticky ~ div:style(height:auto !important)
-
-akned.ru##.navigation
-
-group-ib.ru$third-party  # from EasyPrivacy
-
-opensource.com##.branding
-opensource.com###block-aboutthissitefooter
-
-! popup
-slant.co##.FAB-Floating
-
-restoclub.ru##.popup-notification
-restoclub.ru##.fixed-element:style(position:static !important)
-
-    ! popups
-royal-computers.ru##.city-confirm
-royal-computers.ru##.side-form
-    ! other
-
-    ! top
-systranbox.com##.topbar
-systranbox.com##.header-middle-area
-    ! other
-! totop
-systranbox.com##.BackTo
-systranbox.com###glt-translate-trigger
-
-fossmint.com##.header-1-wrapper:style(padding-top:0px !important; height:auto !important)
-fossmint.com##.header-sticky
-fossmint.com##a:has(.ctaButton)
-
-reddit.com##button:has-text(Get App)
-reddit.com##span:matches-css(background-image:/bannerBackground/)
-
-forum.openmediavault.org###pageHeaderLogo
-forum.openmediavault.org##.pageHeaderFacade
-forum.openmediavault.org##.messageSidebar > .messageAuthor > .userAvatar
-forum.openmediavault.org##.pageHeaderPanel:style(position:static !important)
+! seo
+serfstack.com##.about-img
