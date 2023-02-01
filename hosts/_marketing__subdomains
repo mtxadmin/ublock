@@ -1332,8 +1332,10 @@ partners.xhamster.com  # from MVPS
 
 /phorm.  # from github.com/asterriya/regex-ads/
 
-/piwik.  # also: ||9gag.com/static/piwik.
-/piwik.js$important
+/piwik.$important  # also: ||9gag.com/static/piwik.
+    ! /piwik.js  # from Ru AdList
+    ! /piwik.php  # from Ru AdList
+    ! /piwik.js$important
 piwik.aptekarsk.ru
 piwik.cam-content.com  #[Piwik.Analytics]
 piwik.com-online.com  # PIWIK - Tracker  # from Quidsup NoTrack-Blocklist
@@ -1366,6 +1368,7 @@ pixel.s3xified.com
 pixel.spotify.com  # Spotify - Tracker  # from Quidsup NoTrack-Blocklist
 pixel.staticworld.net  # staticworld.net - Tracker  # from Quidsup NoTrack-Blocklist
 pixel.tuko.co.ke  # from EasyPrivacy
+piwik.vpsfree.cz
 pixel.wenxuecity.com  # wenxuecity.com - Tracker  # from Quidsup NoTrack-Blocklist
 pixel.wp.com
 pixel.wp.pl$important  # is in Adguard
@@ -1398,6 +1401,7 @@ push.autosaratov.ru  # from Ru AdList
 push.daksham.in$important  # empty root  # in 2 lists
 push.englishraven.com  # from Adguard
 push.newscraft.io  # from Adguard
+push.systranbox.com
 push.yandex.ru  # app request
 push.zdips.ru  # from Adguard
 push.zhanzhang.baidu.com  # http://push.zhanzhang.baidu.com/push.js
@@ -4485,7 +4489,7 @@ reklama-cluster.g2.tutby.com  # tut.by
 
 fronterr.tutu.ru
 
-ads-api.twitter.com$important  # from Adguard
+ads-api.twitter.com$important  # from Adguard and EasyList
 
 blabla.tword.ru  # from Ru AdList
 
