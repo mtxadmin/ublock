@@ -638,6 +638,7 @@ adblockdetector/$important
 /adlogger_tracker.js?  # from Ru AdList
 /admanager/*$important
 /admanager.js$important
+/admp-tc.  # from Ru AdList
 /adnext.  # from EasyList
 /adobe_target/*
 /adobe_target.js
@@ -1100,6 +1101,7 @@ _banner_rotator.php  # from Adguard
 /jllikepro/js/buttons.
 /jquery.adsplace
 /jquery.bootstrap.scrollspy.js
+/jquery.counterup  # fiction marketing "counters"  # https://gratisvps.net/assets/plugins/waypoints/jquery.counterup.min.js  # https://www.npmjs.com/package/jquery.counterup
 /jquery.iframetracker
 /jquery.modal.min.js
 /jquery.scrollto.js
@@ -2452,6 +2454,9 @@ _analytics.js?  # from EasyPrivacy
     ! ||blogblog.com/img/blank.gif
 !/browser.min.js - in general, don't, it can be a core ReactJS library
 /browserdetect.js
+/c.gif?
+    ! /c.gif?*&udc=  # from Ru AdList
+    ! /c.gif?*rnd=  # from Ru AdList
 /calameo-beacon.  # from EasyPrivacy  # calameo is a publishing platform, ok. But.
 .campaign-tracking.
     !/hr.campaign-tracking.js
@@ -2460,18 +2465,26 @@ _analytics.js?  # from EasyPrivacy
 _chartbeat.js  # from EasyPrivacy
 /clear.png
 /clientele/reports/*  # is in EasyPrivacy
-/cnt.js
-/cnt.php
+/cnt.
+    ! /cnt.cgi?  # from Ru AdList
+    ! /cnt.js
+    ! /cnt.php
+/cnt-gif1x1.php?  # is in Ru AdList
 /count.js
+/count.php  # from Ru AdList
 ^counter.$image,3p  # from Ru AdList
-/counter^$important  # from RU AdList,modified
+/counter^$important  # from RU AdList, modified
+/counter_  # from Ru AdList
 /counter.aspx
 .counter.js
 /counter.js$important
 /counter.min.js$important
+/counter.php?$~object  # from Ru AdList
 /counters^  # from RU AdList
 /crossdevice.min.js$important
 /ctracker/*$domain=~charmtracker.com  # from EasyPrivacy  # charmtracker.com is not a ad tracker
+/cycounter.  # from Ru AdList
+/cycounter^  # from Ru AdList
 .d-engine.js  # from EasyPrivacy
 /devicepx-jetpack.js$important  # https://wordpress.org/support/topic/remove-render-blocking-javascript-devicepx-jetpack-js/
 -didomi.js  # from EasyPrivacy
@@ -2491,7 +2504,7 @@ _chartbeat.js  # from EasyPrivacy
     ! /elqfcs.js  # from EasyPrivacy
     ! /elqidg.js  # from EasyPrivacy
     ! /elqimg.js  # from EasyPrivacy
-    ! /elqnow/*  # from EasyPrivacy
+    ! /elqnow/*  # from EasyPrivacy and Ru AdList
     ! /elqscr.js  # from EasyPrivacy
     ! /elqtracking.  # from EasyPrivacy
     ! /elqtrk.  # from EasyPrivacy
@@ -2516,8 +2529,10 @@ _chartbeat.js  # from EasyPrivacy
     ! /fingerprint2.min.js$important  # is in EasyPrivacy and AdGuard
         ! ||jsdelivr.net/fingerprintjs2/  # Also
     ! /fingerprintjs2/*
+/foresee/*  # from Ru AdList
 ?frm=script&se_referrer=  # from AdGuard
 /ga_setup.js$important
+/ga_social_tracking.js  # from Ru AdList
 _gatrack.js  # from EasyPrivacy
 .gatracking.js  # from EasyPrivacy
 /gccounter.js
@@ -2527,6 +2542,7 @@ _gatrack.js  # from EasyPrivacy
 /geoip.city  # bitrix popups removed: ##.bxmaker__geoip__city__line-question and ##.current-city-notice
 /geotools/*  # ad xhrs
 .gif?event=  # is in EasyPrivacy
+/google-analyticator/*  # from Ru AdList
 /googleanalytics*$important
 /google-analytics*$important
 -google-analytics/*$important
@@ -2564,6 +2580,8 @@ _nielsen.js  # from EasyPrivacy
 /ntfc.php?$script  # from uBlock
 /p.gif?  # tracking imgs  # is in EasyPrivacy
 /packaged-js/trackers.  # from EasyPrivacy
+/pagerank.$image  # from Ru AdList
+/pagerank/*$image  # from Ru AdList
 _pagespeed_beacon?  # from AdGuard
 /pageviews/*$domain=~stats.wikimedia.org|~tools.wmflabs.org  # is in EasyPrivacy
 /parking-crew.js
@@ -2575,17 +2593,19 @@ _pagespeed_beacon?  # from AdGuard
     ! /engine/ping?  # is in EasyPrivacy
     ! /stats/ping?  # is in EasyPrivacy
 /ping.gif
+! see /piwik. rule in _marketing__subdomains
+/piwikTracker.  # from Ru AdList
 /pixel/*
 /pixel?
     ! /visits/pixel?  # from EasyPrivacy
 /pixel.
+    ! /pixel.gif?  # from Ru AdList
     ! /pixel.php?  # in EasyPrivacy and Adguard
     ! /pixel.png
     ! /pixel.png?  # from Ru AdList
     ! ||paypalobjects.com^*/pixel.gif  # from EasyPrivacy
 .pixel.archive.  # from EasyPrivacy
 /platform-detect
-
 /pum-site-scripts.  # from Fanboy's
 /purecounter.js
 /pv?
@@ -2636,6 +2656,7 @@ _pagespeed_beacon?  # from AdGuard
 /radio-analytics.htm  # from EasyPrivacy
 /radioanalytics.js  # from EasyPrivacy
 /radioanalyticsiframe.js  # from EasyPrivacy
+/readcounter.  # from Ru AdList
 /recordrtc.min.js
 /rendertimingpixel.  # from EasyPrivacy
 /ruxitagentjs_  # from EasyPrivacy
@@ -2660,13 +2681,18 @@ _social_tracking.js  # from EasyPrivacy
 /superstat/collect
 /tag-manager-client/*
 /tbw/pixels/*  # is in EasyPrivacy
-/track?$image  # from EasyPrivacy: .com/track?$image
+/top/img.php?  # from Ru AdList
+/top_counter.  # from Ru AdList
+/track?$image
+    ! .com/track?$image  # from EasyPrivacy
     ! ||seesaa.net/common/track.gif^  # from Adguard
+    ! /track?*http$image,~third-party  # from Ru AdList
 /track.js$important
 /tracklog.  # is in EasyPrivacy
 /track.min.js
 /track_click?  # from EasyPrivacy
 /tracker?*=  # from EasyPrivacy
+/tracker.dll?  # from Ru AdList
 /tracker.js$important
 _tracker.js.  # from EasyPrivacy
 /trackify.js$important
@@ -2678,6 +2704,7 @@ _tracker.js.  # from EasyPrivacy
 -track-inview.  # is in EasyPrivacy
 /transparent-pixel.
 /trigger-visit-event  # from EasyPrivacy
+/ucounter.  # from Ru AdList
 /umami.js$important
 /universal-federated-analytics.  # is in EasyPrivacy
 _urchin.js  # from Fanboy's
@@ -3029,6 +3056,12 @@ _wtInit.js  # from Fanboy's
 !
 ! many js totops
 ##a[href$="scrollToTop()"]
+    ! cov.su##[href="javascript:t190_scrollToTop()"]
+    ! kinky-party.com##[href$="scrollToTop()"]
+    ! mos.ru##[href*="scrollToTop()"]
+    ! orelexpo.com##[href="javascript:t190_scrollToTop()"]
+    ! sestroretsk-arms.ru##[href="javascript:t190_scrollToTop()"]
+    ! sntclub.ru##[href="javascript:t190_scrollToTop()"]
 ! from Fanboy's
 ##a[title="Back to top"]
 ###arrow
@@ -3099,6 +3132,7 @@ _wtInit.js  # from Fanboy's
 ##.btn-up
 ##.btn_up
 ##.btn--up
+###btn-up
 ##.b-top-but
 ##.bt_up
 ##.bt_up_scroll
@@ -3802,6 +3836,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /gdprcookiepolicy.js  # from EasyList
 /jquery.cookieconsent.min.js$important
 /jquery.ihavecookies.  # from EasyList
+/nli-cookie-banner/*$important
 /popupcookies.  # from EasyList
 /privacy-consent/*$domain=~seek.com.au
     ! seek.com.au: root redirects to seek.com.au/privacy-consent/ and that's all
@@ -5327,7 +5362,10 @@ tarif-24.ru##.mh-ticker-bottom
 
 
 !! discount badges and stickers
-##.badge
+~vps.today##.badge
+    ! Exclusions:
+    ! vps.today: just non-ad class
+    !
     ! vanna-rum.ru##.badge-wrapper > .low-price.badge
     ! vanna-rum.ru##.bestseller.badge
 ##.badges
