@@ -1,0 +1,308 @@
+﻿!! It is a sublist of Yet another small uBlock filter list
+! See https://github.com/mtxadmin/ublock for details
+!
+!
+
+||9gag.com/track/  # from EasyPrivacy
+    ! top
+9gag.com##.fixed-wrap-post-bar:style(position:static !important)
+9gag.com##.post-container:style(margin-top:0px !important)
+9gag.com##section.post-comment:style(padding-bottom:0px !important; margin-bottom:0px !important)
+9gag.com###container:style(padding-top:0px !important; padding-bottom:0px !important)
+9gag.com##.comment-community__guideline
+    ! bottom
+9gag.com##.bottom-comment-composer:style(position:static !important)
+    ! banners and promos
+9gag.com##.campaign-banner
+! from Adguard
+9gag.com##.post-signup-list-banner
+! from Adguard
+9gag.com##a[class="get-the-app-banner"]
+! from Fanboy's
+9gag.com##.get-the-app-banner
+! from Adguard
+9gag.com##.signup-list-banner
+! from Adguard
+9gag.com##.signup-side-banner
+! from Adguard
+9gag.com##.comment-signup-banner
+! from Adguard
+9gag.com#?#.list-stream > article:has(p > a[target="_blank"]:contains(Promoted))
+! from uBlock filters
+9gag.com##.promoted:upward(article)
+! from Adguard
+9gag.com#?#.list-stream > article:not([id]):has(a[href="https://9gag.com/advertise"])
+! from Adguard
+9gag.com#?#.main-wrap > div:has(> [id|="dfp"])
+! from Adguard
+9gag.com#?#div[id^="sidebar-stream-"] > h4:contains(Advertisement)
+! from uBlock filters
+9gag.com##[id^="sidebar-stream-"] > h4:has-text(Advertisement)
+! from Adguard
+9gag.com##.featured-video
+||9gag.com/embed/featured-videos.html  # from EasyList
+! from Adguard and EasyList
+9gag.com##.salt-container
+! from Adguard
+9gag.com##.salt-section
+! from Adguard
+9gag.com#$##jsid-app > div[style^="position: fixed; width:"][style*="top: 50px"] { top: 0 !important; }
+! from Adguard
+9gag.com#$##jsid-app > div[style^="padding-top:"][style*="padding-top: 146px"] { padding-top: 100px !important; }
+! from Adguard
+9gag.com#$##jsid-app > div[style^="padding-top:"][style*="padding-top: 98px"] { padding-top: 50px !important; }
+! from Fanboy's
+9gag.com###jsid-sidebar-footer
+! from Adguard
+9gag.com#$#.post-tab-bar__container.sticky[style*="top:"] { top: 48px !important; }
+! from EasyList
+9gag.com##[style^="width: 640px; min-height: 360px;"]
+! from EasyList
+9gag.com##div[style*="width: 500px; height: 281px;"]
+! from EasyList
+9gag.com##div[style^="position: relative; z-index: 1; width: 640px;"]
+    ! apps
+! from Adguard
+9gag.com##a[href="/apps"]
+! from Adguard
+9gag.com#$#.open-in-app { display: none !important; }
+! from Adguard
+9gag.com#$#body { overflow: auto !important; }
+! from Adguard and Fanboy's
+9gag.com##.download-app-container
+! from Adguard
+9gag.com##.use-app
+    ! other
+! 9gag.com domain
+||9cache.com/images/thumbnail-facebook/$image
+9gag.com##.avatar__online
+! from Adguard
+9gag.com##.badge-share
+! from Adguard
+9gag.com##.bottom-sheet > ul.menu-list > li > a[class="icon"]:not([href])
+! from Fanboy's
+9gag.com###sidebar-box-0
+! from Fanboy's
+9gag.com##.message-block
+! from Fanboy's
+9gag.com##.spread-bar
+! default user description
+9gag.com##.ui-user-profile__about:has-text(My Funny Collection)
+!
+    ! rusbots
+    ! see https://en.wikipedia.org/wiki/Internet_Research_Agency
+    ! https://globalvoices.org/2015/07/13/open-source-information-reveals-pro-kremlin-web-campaign/
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^breathesoftly$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^breathesoftly$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^hallospecial$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^hallospecial$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^meronil$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^meronil$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^hinbhasgvf$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^hinbhasgvf$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^dienazibitches$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^dienazibitches$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^taygan86$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^taygan86$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^catothewiser$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^catothewiser$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/armng4X#cs_comment_id=c_167520024727308276
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^burzum_666$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^burzum_666$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^xipoohaaa$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^xipoohaaa$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^lallinois$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^lallinois$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^michaelnhedega$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^michaelnhedega$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^begginzz$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^begginzz$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^djows$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^djows$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^demir_said$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^demir_said$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/a9qK01K#cs_comment_id=c_167178132035161918
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^mrfromthefutr$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^mrfromthefutr$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/avQZw1M
+    ! https://9gag.com/gag/a9qK01K#cs_comment_id=c_167175481901391126
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^shbahn$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^shbahn$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aVb72Aw
+    ! https://9gag.com/gag/adPVb7D
+    ! https://9gag.com/gag/a9qK01K#cs_comment_id=c_167178684401788268
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^buttlercup$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^buttlercup$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/armng4X#cs_comment_id=c_167518520259525021
+    ! https://9gag.com/gag/a1P1Q5D
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^ladakapund$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^ladakapund$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/anzgMzE#cs_comment_id=c_167520948262965944
+    ! https://9gag.com/gag/armeQm0
+    ! https://9gag.com/gag/
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^diggenson$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^diggenson$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/awZzXyy#cs_comment_id=c_167518783548233111
+    ! https://9gag.com/gag/a4oEN4v
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^ij0k3r$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^ij0k3r$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/awZzXyy#cs_comment_id=c_167520895779918349
+    ! https://9gag.com/gag/aVb7NWO
+    ! https://9gag.com/gag/aBd27YZ
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^mrfromthefuture$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^mrfromthefuture$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/awZzXyy#cs_comment_id=c_167518584508977469
+    ! https://9gag.com/gag/a1148oD
+    ! https://9gag.com/gag/ajVQGZp
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^turkey_hunter$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^turkey_hunter$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aoKgNPn#cs_comment_id=c_167518892163908826
+    ! https://9gag.com/gag/avQ5dRq
+    ! https://9gag.com/gag/aOx3MQN
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^steflash9000$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^steflash9000$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/az2e9nZ#cs_comment_id=c_167522977603239815
+    ! https://9gag.com/gag/armVwe0
+    ! https://9gag.com/gag/anzNpAB
+    ! https://9gag.com/gag/a61qWV9
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^deathtoukrnazis$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^deathtoukrnazis$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aoKgeNx#cs_comment_id=c_167520493549713582
+    ! https://9gag.com/gag/a4od1Vy
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^ruluzululll$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^ruluzululll$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aoKgeNx#cs_comment_id=c_167521962454585264
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^vnovik92$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^vnovik92$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/az2e9nZ#cs_comment_id=c_167526340186068884
+    ! https://9gag.com/gag/aGEKz8Z
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^emanresu13$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^emanresu13$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/agogG2q#cs_comment_id=c_167518545658147912
+    ! https://9gag.com/gag/aPgBdGV
+    ! https://9gag.com/gag/aREV3mG
+    ! https://9gag.com/gag/a61XrR8
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^majorgaspar$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^majorgaspar$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/ajVgqWg#cs_comment_id=c_167518570558819941
+    ! https://9gag.com/gag/amArm24
+    ! https://9gag.com/gag/a11NMw8
+    ! https://9gag.com/gag/a1173B8
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^lenatula73$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^lenatula73$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/ajVgqWg#cs_comment_id=c_167517294622046474
+    ! https://9gag.com/gag/a5XPKWV
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^georgestrong$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^georgestrong$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/ajVgqWg#cs_comment_id=c_167511848354896693
+    ! https://9gag.com/gag/aeQgGXm
+    ! https://9gag.com/gag/anzgeKo
+9gag.com##article:has(.ui-post-creator__author:has-text(/^bosanders$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^bosanders$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aDYDGV7#cs_comment_id=c_167510974151448485
+    ! https://9gag.com/gag/a31Z6Re
+! 
+!
+! comments-only bots
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^lesshev$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^lesshev$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aXnrx1P#cs_comment_id=c_167519765070775193
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^dnv555$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^dnv555$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aXnrx6d#cs_comment_id=c_167525284756104436
+    ! https://9gag.com/gag/aXnrx1P#cs_comment_id=c_167525274027027904
+    ! https://9gag.com/gag/a9qK01K#cs_comment_id=c_167179481819103018
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^ukr_bot$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^ukr_bot$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/a9qK01K#cs_comment_id=c_167177535984021272
+    ! https://9gag.com/gag/a9qK01K#cs_comment_id=c_167188929285643676
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^rare1886$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^rare1886$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aXnrx1P#cs_comment_id=c_167521191082043406
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^johntheo_pap$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^johntheo_pap$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aXnrx1P#cs_comment_id=c_167520129681303584
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^nayk$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^nayk$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/a3Z1KbQ#cs_comment_id=c_167519766095036170
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^blackwalrus2$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^blackwalrus2$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aXnrx1P#cs_comment_id=c_167519610740468995
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^propeller411$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^propeller411$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/aXnrx1P#cs_comment_id=c_167519604818864264
+    ! https://9gag.com/gag/aXnrx1P#cs_comment_id=c_167519712799561729
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^teethy$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^teethy$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/a9qK01K#cs_comment_id=c_167178595938902790
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^rublebot$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^rublebot$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/a9qK01K#cs_comment_id=c_167178347322853250
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^nanaimoba$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^nanaimoba$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/anzgMzE#cs_comment_id=c_167519375437045270
+    ! https://9gag.com/gag/anzQV05
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^palms1521$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^palms1521$/)) .comment-list-item__text:style(color:#E0E0E0)
+    ! https://9gag.com/gag/awZzXyy#cs_comment_id=c_167522482020661262
+!
+! other politbots
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^vox_obscura$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^vox_obscura$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^1ma1$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^1ma1$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^muh_hate_sperch$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^muh_hate_sperch$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+9gag.com##article:has(.ui-post-creator__author:has-text(/^9mikegag$/)) > .post-container
+9gag.com##.comment-list-item:has(.ui-comment-header__username:has-text(/^9mikegag$/)) .comment-list-item__text:style(color:#E0E0E0)
+!
+
+
+! from EasyList
+9gag.tv##.size-728x90
