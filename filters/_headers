@@ -595,8 +595,9 @@ _logo.$image,domain=~factorio.fandom.com
     ! seopirat.club##.uix-logo
 ##a[href^="javascript:AddComplaint"]
 !
+! Initially, this intended to remove top-left logos.
 ! in general, don't remove js links with pictures
-! update: there are some duplicate rules below... Needs todo...
+! update: there are some duplicate rules below... Maybe they need to combine, but the practice shows it is a very good generalization
 ~diafilmy.su,~urlscan.io##[href="/"]:not(.sidemenu-link):not(:has(img)):not(.button)
     ! Exclusions:
     ! diafilmy.su - navigation buttons
