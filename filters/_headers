@@ -594,7 +594,9 @@ _logo.$image,domain=~factorio.fandom.com
 ##.uix-logo
     ! seopirat.club##.uix-logo
 ##a[href^="javascript:AddComplaint"]
+!
 ! in general, don't remove js links with pictures
+! update: there are some duplicate rules below... Needs todo...
 ~diafilmy.su,~urlscan.io##[href="/"]:not(.sidemenu-link):not(:has(img)):not(.button)
     ! Exclusions:
     ! diafilmy.su - navigation buttons
@@ -633,7 +635,7 @@ _logo.$image,domain=~factorio.fandom.com
     ! 1plus1.video##a[href="/"]:has(svg)
     ! reddit.com##a[href="/"]:has(svg>g)
 ! update 2022-02: don't know why, but it doesn't works. Ok, previous version
-~telegram.org##a[href="/"]:not(.sidemenu-link)
+~diafilmy.su,~telegram.org##a[href="/"]:not(.sidemenu-link)
 !
 ! and other text(!) redirects. In general, do not remove image redirects
 ##a[href^="/click/"]:not(:has(img))
