@@ -1047,6 +1047,7 @@ _banner_rotator.php  # from Adguard
 /disable-devtool$important,all
     ||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js  # from uBlock filters
     ||motphim123.com/assets/js/disable-devtool.min.js  # from uBlock filters
+/discourse-adplugin-  # ad scripts  # is in EasyList
 /dragscroll/*
 /dragscroll.js
 /easy-social-share-buttons.min.js
@@ -2197,6 +2198,8 @@ _tizers.  # from Ru AdList
     ! Exclusions:
     ! redhat.com: "full full--article node node--promoted"
     ! 
+    ! is in Ru AdList
+    ##.flex-promo-series
     ##.open_promo
     ~pochtabank.ru##.promo
     ##.promo__banner
@@ -3296,7 +3299,9 @@ _wtInit.js  # from Fanboy's
 ##.to-bottom
 ###toolbar_scrollup
 ##.toolbar-scrollup
-###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper):not(.site)
+~scat.kz###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper):not(.site)
+    ! Exclusions:
+    ! scat.kz: #top is a main div
 ~nano-editor.org##.top:not(html):not(body):not(article):not(table):not(ul)
 ##.top-btn
 ###top-but
