@@ -35,23 +35,36 @@ pikabu.ru##+js(rc,comments__container_overlayed)
 ||pikabu.ru/*/telegram_widget/
 @@||pikabu.ru/images/previews_gif_comm/*.gif  # exclusion from gif filter. Gifs are static here, statring on click.
 ||specials.pikabu.ru/yandex_taxi/
+    ! top
+pikabu.ru##.carousel__main
+! from Ru AdList
+pikabu.ru##header > .header__main:style(background-color: var(--color--header__bg) !important)
+! header changed, now it is not sticky
+!pikabu.ru##.header__main
+!pikabu.ru##.header_absolute
+pikabu.ru##.header__mobile:style(position:static !important)
+pikabu.ru##pkb-header:style(position:static !important)
 !
+! from Ru AdList
+pikabu.ru##[data-placeholder-handled]
+! is in Ru AdList
+pikabu.ru##.header-right-menu > a[href][target="_blank"]
+    ! banners and promos
 ! from AdGuard
 pikabu.ru##div[id^="adfox_"]
 pikabu.ru##div[id^=crt-]
-! from Ru AdList
-pikabu.ru##[data-placeholder-handled]
-! from Ru AdList
-pikabu.ru##header > .header__main:style(background-color: var(--color--header__bg) !important)
-! is in Ru AdList
-pikabu.ru##.header-right-menu > a[href][target="_blank"]
 ! is in Ru AdList
 pikabu.ru##[onclick*="branding_click"]
+! ads in menu ("special projects")
+pikabu.ru##a.sidebar-menu__item_main.sidebar-menu__item:has(img)
+! ads in lenta
+pikabu.ru##.stories-feed__recommend-button
 pikabu.ru##.ads-placeholder
 pikabu.ru##.promo-banner
 pikabu.ru##.thematic-campaign
 pikabu.ru##.player__adfox
 pikabu.ru##.feed-notify.info-banner
+pikabu.ru##.questions-sidebar-promo
 !
     ! ads: promos and ad posts
 pikabu.ru##.section-group:has(p > a[href^="https://pikabu.ru/page/interview/"])
@@ -64,8 +77,6 @@ pikabu.ru##.story__share
 pikabu.ru##.story__share-icon
 pikabu.ru##.story__share-new
 pikabu.ru##.information-block
-! top
-pikabu.ru##.carousel__main
 !
 ! рекламные юзеры
 ! promo: https://pikabu.ru/story/vazhno_blogi_na_pikabu_kak_oni_rabotayut_9196072
@@ -113,6 +124,7 @@ pikabu.ru##.wimmelbook
 pikabu.ru##.add-post-and-community__title
 pikabu.ru##.add-post-and-community__text
 pikabu.ru##.add-post-and-community__content
+    ! other
 ! from RU AdList
 pikabu.ru##.footer__inner:style(background-color: var(--color--app__bg) !important; color: var(--color--app__text) !important)
 pikabu.ru##.footer__main:style(position:static !important)
@@ -126,16 +138,9 @@ pikabu.ru##.stories-feed__message:has(:scope > .widget-container)
 pikabu.ru##.theme-picker
 ! fixed theme picker button
 pikabu.ru##pkb-theme-picker-button
-! header changed, now it is not sticky
-!pikabu.ru##.header__main
-!pikabu.ru##.header_absolute
-pikabu.ru##.header__mobile:style(position:static !important)
-pikabu.ru##pkb-header:style(position:static !important)
 pikabu.ru##.app__content:style(padding-top:0px !important)
 pikabu.ru##.sidebar__right:style(position:static !important)
 pikabu.ru##.page-story > section
-! рекомендации в ленте
-pikabu.ru##.stories-feed__recommend-button
 ! донаты
 pikabu.ru##.story__donate
 ! раскрыть спойлеры
@@ -156,11 +161,6 @@ pikabu.ru##.bd2021__cake
 pikabu.ru##.ny2022-btn
 pikabu.ru##.hny-btn
 pikabu.ru##a[href="/"] > pkb-icon
-!
-! ads in menu ("special projects")
-pikabu.ru##a.sidebar-menu__item_main.sidebar-menu__item:has(img)
-! ads in lenta
-pikabu.ru##.stories-feed__recommend-button
 !
 ! pictures below the menu
 pikabu.ru##:root::after:style(background-image:none !important)
@@ -343,6 +343,7 @@ pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeney
 ||pikabu.ru/avatars/2573/*2573866-894041253.$image
 ||pikabu.ru/avatars/26/*26439-370412912.$image
 ||pikabu.ru/avatars/2613/*2613714-397781318.$image
+||pikabu.ru/avatars/2623/*2623565-2067596532.$image  # z
 ||pikabu.ru/avatars/2643/*2643850-243022014.$image
 ||pikabu.ru/avatars/2656/*2656224-615281879.$image
 ||pikabu.ru/avatars/2752/*2752673-15146129.$image
@@ -683,6 +684,21 @@ pikabu.ru##article.story:has(.user__nick[data-name="anf770"]):not(:matches-path(
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="anf770"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^anf770$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="anf770"]))
+
+pikabu.ru##article.story:has(.user__nick[data-name="FrenchCoffee"]):not(:matches-path(/@)):not(:matches-path(/story/))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="FrenchCoffee"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^FrenchCoffee$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="FrenchCoffee"]))
+
+pikabu.ru##article.story:has(.user__nick[data-name="Terv1r"]):not(:matches-path(/@)):not(:matches-path(/story/))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Terv1r"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Terv1r$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Terv1r"]))
+
+pikabu.ru##article.story:has(.user__nick[data-name="Rockfighter"]):not(:matches-path(/@)):not(:matches-path(/story/))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Rockfighter"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Rockfighter$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Rockfighter"]))
 
 pikabu.ru##article.story:has(.user__nick[data-name="Zelenskyy"]):not(:matches-path(/@)):not(:matches-path(/story/))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Zelenskyy"]):not(:matches-path(/story/))~div
@@ -4005,10 +4021,6 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="JeanBad
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^JeanBadonMakaron$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="JeanBadonMakaron"]))
 
-pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="FrenchCoffee"]):not(:matches-path(/story/))~div
-pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^FrenchCoffee$/)):style(color:#F0F0F0)
-pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="FrenchCoffee"]))
-
 # пиарит livekuban.ru
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="LiveKuban"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^LiveKuban$/)):style(color:#F0F0F0)
@@ -4652,10 +4664,30 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="sklwpsh"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^sklwpsh$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="sklwpsh"]))
+    ! https://pikabu.ru/story/ot_imeni_chvk_vagnera_vyipustili_reklamnyiy_rolik_dlya_verbovki_grazhdan_ssha_9900541
+    ! https://pikabu.ru/story/vika_tsyiganova_vyipustila_pesnyu_i_klip_pro_chvk_vagner_9552351
+    ! https://pikabu.ru/story/litva_mozhet_unichtozhit_moskvu_izza_mongolov_9348902
+    ! https://pikabu.ru/story/zelenskiy_khochet_vstretitsya_s_si_tszinpinom_i_dogovoritsya_o_postavkakh_kitayskogo_oruzhiya_9341787
+    ! https://pikabu.ru/story/izrail_ozhidaet_velikiy_iskhod_9344912
+    ! https://pikabu.ru/story/na_portale_gosuslugi_startoval_priem_zayavok_na_otsrochku_ot_armii_dlya_itspetsialistov_9341369
+    ! https://pikabu.ru/story/youtube_udalil_kanal_dmitriya_goblina_puchkova_9339427
+    ! https://pikabu.ru/story/vyiyasnilas_prichina_myagkogo_otveta_pekina_na_vizit_pelosi_na_tayvan_9336296
+    ! https://pikabu.ru/story/ozon_provel_ucheniya_na_odnom_iz_svoikh_skladov_na_sluchay_ataki_vsu_9335254
+    ! И это только на первой странице
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dobrik74"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Dobrik74$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Dobrik74"]))
+    ! https://pikabu.ru/story/ot_imeni_zhivyikh_i_pogibshikh_9908403
+    ! https://pikabu.ru/story/sb_oon_ot_21102022_vyistuplenie_predstavitelya_rf_9578371
+    ! https://pikabu.ru/story/mobilizatsiya_9497958
+    ! https://pikabu.ru/story/volonteryi_vyiyavili_bolee_21_mln_feykov_o_chastichnoy_mobilizatsii_i_referendumakh_9488866
+    ! https://pikabu.ru/story/podderzhat_detey_yelitki_ili_uchastnikov_spetsoperatsii_9031118
+    ! и это только первая страница. Но там и ранее:
+    ! https://pikabu.ru/story/den_voennovozdushnyikh_sil_rossii_7645895
+    ! https://pikabu.ru/story/rodzher_uoters_russkiy_narod_razgromil_natsizm_7542982
+    ! https://pikabu.ru/story/neobyichnyiy_politicheskiy_fenomen_koronavirusa_7374646
+    
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="sssr24"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^sssr24$/)):style(color:#F0F0F0)
@@ -4672,6 +4704,34 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/bpla_9733350
     ! https://pikabu.ru/story/voyskovaya_chast__10003_9742332
 
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="qwer2004"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^qwer2004$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="qwer2004"]))
+    ! https://pikabu.ru/story/otvet_na_post_ambassador_yetodrugina_v_es_9928627
+    ! https://pikabu.ru/story/chto_proiskhodit_9922649
+    ! https://pikabu.ru/story/magiya_tsifr_9914040
+    ! https://pikabu.ru/story/a_chto_tak_mozhno_byilo_9782152
+    ! https://pikabu.ru/story/ironichnoe_ukrainskiy_narod_poluchil_premiyu_sakharova_9749393
+    ! https://pikabu.ru/story/otvet_idikudapodalshe_v_nu_raz_poshla_takaya_pyanka_odin_iz_moikh_lyubimyikh_anekdotov_9746855
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Viktor198319"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Viktor198319$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Viktor198319"]))
+    ! фоточки, с привкусом ваты
+    ! https://pikabu.ru/story/balaklava_kryim_9928502
+    ! https://pikabu.ru/story/kormovaya_shvartovaya_komanda_9924067
+    ! https://pikabu.ru/story/5_fevralya_2022_goda_poslednyaya_posadka_an225_mriya_9923622
+    ! https://pikabu.ru/story/aviatsionnaya_gruppa_russkie_vityazi_v_podmoskove_9922226
+    ! https://pikabu.ru/story/osobenno_redkaya_zimnyaya_atmosfera_balaklavskoy_bukhtyi_sevastopol_kryim_9921171
+    ! https://pikabu.ru/story/aprk_k266_oryol_9918191
+    ! https://pikabu.ru/story/oformlenie_raketyi_soyuz21a_v_chest_80letiya_pobedyi_v_stalingradskoy_bitve_9917382
+
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="QuickCharge"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^QuickCharge$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="QuickCharge"]))
+    ! первый пост и в политику https://pikabu.ru/story/listaya_staryie_podshivki_9920479
+    ! аватарка с серпом-молотом
+    
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^history2022$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="history2022"]))
