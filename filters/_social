@@ -118,8 +118,17 @@ _social_fb.  # from Fanboy’s
 ##.fa-facebook
 ! from Web Annoyances Ultralist (modified)
 ~belarus2020.org##.fa-facebook-f
-! is in Ru AdList and Fanboy's
-##iframe[src*="//www.facebook.com/plugins/like.php?"]
+##iframe[src*="facebook.com/plugins/"]
+    ! is in Ru AdList and Fanboy's
+    !##iframe[src*="//www.facebook.com/plugins/like.php?"]
+    ! from Adguard
+    !zaytung.com#?#font > div:has(> iframe[src^="http://www.facebook.com/plugins/likebox.php"])
+    ! from Adguard
+    !flyblog.cc,maxfoodfun.com##iframe[src*="facebook.com/plugins/"]  # from Adguard
+    ! from Adguard
+    !maxfoodfun.com##iframe[src*="facebook.com/plugins/"]
+    ! from Adguard
+    !flyblog.cc##iframe[src*="facebook.com/plugins/"]
 ! from Adguard, modified
 ||facebook.com/*/plugins/$domain=~facebook.com|~fb.com,important
 ~facebook.com,~fb.com##[class*="Facebook"]:not(html):not(body):not(article)
