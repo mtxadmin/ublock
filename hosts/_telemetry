@@ -471,7 +471,10 @@ sentry.io$important  # feedback and application monitoring service, commercial. 
 !+  services.sentry.io
 sentry-cdn.com$important,all  #browser.sentry-cdn.com
 /sentry$script
+    ! Exclusions:
     @@/flu/player/sentry$script  # Microsoft video player (NodeJS) on some sites
+    @@||avito.ru/dstatic/build/client/sentry  # avito is completely broken without it
+    !
     /sentry.bundle.min.js  # sentry.io library, see https://github.com/getsentry/sentry-javascript
     /sentry/*
         ! /sentry/bundle.min.js
