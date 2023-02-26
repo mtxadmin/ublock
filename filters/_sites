@@ -48,6 +48,7 @@
 101hotels.com##.user-rating__wrapper
 101hotels.com##.housing-registration_wrapper
 101hotels.com##.bonuses-container
+101hotels.com##.bonus-banner-personal-area
     ! logo
 101hotels.com##.avatar
     ! seo
@@ -1267,6 +1268,17 @@ alp.org.ua###sape_links-2
 
 alpinefile.ru###getfavor
 
+    ! popups
+alser.kz##.ask-location
+alser.kz##.location-modal
+    ! banners and promos
+alser.kz##.brands-company
+alser.kz##.big-banner-carousel
+alser.kz##.mini-banner-carousel
+    ! other
+! seo
+alser.kz##.footer-top
+
 altapress.ru##.sticky_header:style(position:static !important)
 altapress.ru##.a_top_place
 altapress.ru##.sp_notify_prompt
@@ -1681,6 +1693,9 @@ aquavivo.ru##.bottom-panel
 
 arbalet-airgun.ru##.art-Header
 arbalet-airgun.ru##.dropshadowboxes-drop-shadow
+
+arbat.media##.today_header
+arbat.media##.main__latest:style(position:static !important)
 
 arborio.ru##.header--logo
 arborio.ru##.header--about
@@ -2234,6 +2249,20 @@ aviales.ru##.topmenu:style(position:static !important)
 ||avianews.ru/if/
 
     ! top
+aviasales.kz##.header__title-form
+aviasales.kz##.page-header__titles
+aviasales.kz##div[data-selene-widget=navbar] div:style(position:static !important)
+    ! banners and promos
+aviasales.kz##div[data-selene-widget="premium_free_markets_banner"]
+aviasales.kz##div:has-text(Мы используем cookie)
+aviasales.kz##div[data-selene-widget="email_subscription_form"]
+    ! "открыть ostrovok.ru в новой вкладке" / "открыть booking.com в новой вкладке"
+aviasales.kz##label[data-test-id="checkbox"]:has-text("в новой вкладке")
+aviasales.kz##input[data-test-id="booking-checkbox"]:remove-attr(checked)
+aviasales.kz##input[data-test-id="no-cashback-label"]:remove-attr(checked)
+    ! other
+
+    ! top
 aviasales.ru###oldBrowserModal
 aviasales.ru##.aviasales-app__navbar-wrap:style(position:static !important)
 aviasales.ru##.page-header__bottom
@@ -2430,6 +2459,8 @@ babeimpact.com##p
 babeimpact.com##.meta
 babeimpact.com##.meta2
 
+babepedia.com##.gallerybanner
+
 ||babesandbitches.net/*/head_big.jpg
 ||babesandbitches.net/*/sideleft.jpg
 babesandbitches.net/*/sprite.png
@@ -2461,6 +2492,8 @@ babesandgirls.com##.info-block
 babesandgirls.com##.item-post::after
 babesandgirls.com##.tags-link
 babesandgirls.com##.vda
+babesandgirls.com##a[href^="/click/o/"]:remove-attr(href)
+||babesandgirls.com/*/logo.svg$redirect=1x1.gif
 
 ||babesaround.com/images/$image
 babesaround.com###header
@@ -2486,6 +2519,8 @@ babesbang.com##.m-thumb-date
 babesbang.com##form
 babesbang.com##p
 babesbang.com###m-side-block
+
+babesexy.com##.content-msg
 
 babesinporn.com###header
 babesinporn.com##.blockheader
@@ -2742,6 +2777,20 @@ beebom.com##ol
 ||beeg.com/css/preroll-ad
 beeg.com##.full-page-loader
 beeg.com##.sidebar
+
+beeline.kz##.svg-logo
+    ! banners and promos
+||beeline.kz/*/footer-banner.png
+beeline.kz##.footer__banner
+! promos
+beeline.kz##.popular.bg-.vas-magazine
+! promos: "Авторизуйтесь, чтобы посмотреть рекомендации"
+beeline.kz##.bls-tariff__not-auth
+beeline.kz##.super:has-text(СуперСил)
+    ! "интернет-магазин"
+beeline.kz##.shopping
+beeline.kz###shopping
+beeline.kz##.h2_space:has-text(Интернет-магазин)
 
 ||beeline.ru/*/bee-logo/
 ||beeline.ru/*/roamingbanner.jpg
@@ -3278,6 +3327,10 @@ boards.net##.personal-text
 
 boatclub.ru###header
 ||boatclub.ru/img/admiral-banner.jpg
+
+bobbyhadz.com##.mv-sidebar
+bobbyhadz.com##.prose.mx-auto
+bobbyhadz.com##.relative:style(padding-bottom:0px !important)
 
 bobcares.com##.banner-section
 bobcares.com##.et-l--header
@@ -4065,6 +4118,9 @@ chizhik.club##.what_new_block
 ||chizhik.club/pic/cart-land.png
 
 chocolatey.org##.btn-announcement-notifications
+
+chronicles.report##.pinnedTopLeft
+chronicles.report##.SITE_HEADER:style(position:static !important)
 
 ||chubbydeveloper.com/*/chubby-developer-logo-w.png
 chubbydeveloper.com##.elementor-widget-html
@@ -5188,7 +5244,7 @@ digikey.com###carousel-wrapper
 ||digisat.ru/*.gif  # from Adguard
 
 ! money for nothing. Later update: activation codes etc. are there too. Linked to plati.market
-digiseller.ru$domain=~digiseller.ru|~plati.market  # 2023-02: current main domains
+digiseller.ru$domain=~digiseller.ru|~plati.market|~wmcentre.net  # 2023-02: current main domains
 digiseller.com$3p
 digiseller.market$3p
 mydigishop.biz$3p  # old, parked
@@ -5200,10 +5256,25 @@ plati.com$3p  # root redirects to plati.market
 plati.io$3p  # root redirects to plati.market
 platiz.com$3p
 666how.com$3p  # platiz.com: "666how.com is a global website that attracts thousands of people to participate in. Everyone has a common goal: 666how.com to teach anyone in the world how to do anything"
+ggsel.com$3p  # digiseller
+wmcentre.net$3p  # digiseller
+! mixed rules :-)
+    ! popups
+mydigiseller.ru###ouibounce-modal
+    ! top
+plati.market##.main-cont:style(padding-top:0px !important)
+plati.market##.my_buy > span:style(color:initial !important)
+plati.market##.my_note > span:style(color:initial !important)
+    ! counters
 digiseller.com###counters
 digiseller.ru###counters
-mydigiseller.ru###ouibounce-modal
-plati.market##.main-cont:style(padding-top:0px !important)
+    ! banners and promos
+ggsel.net##.btn-page-circle
+ggsel.net##.btn-lucky
+ggsel.net##.block-products-slider
+ggsel.net##.block-earn
+plati.market##.popular_products_preview
+    ! other
 
 digitaldefynd.com##.mega-stuck.mega-sticky:style(position:static !important)
 
@@ -6170,6 +6241,11 @@ ecco-shoes.ru##.position-icons-pay
 !echo.msk.ru##.tooltipster-default  # from Adguard
 !echo.msk.ru##iframe[src*="iconosquare.com"]  # from Ru AdList
 !echo.msk.ru##.up_link  # from Fanboy's
+
+! marquees
+echofm.online##div[class^="sc-"]:style(animation:none !important)
+! doesn't work
+echofm.online##div:matches-css(position:sticky):style(position:static !important)
 
 eco-dush.ru##.fix-scroll
 
@@ -7368,6 +7444,10 @@ firstbase-baseball.ru##body::before:style(background:none)
 
 firstlinesoftware.com##.footer::before
 
+firstpornaid.com##.icon-zoom
+firstpornaid.com##.footer_logo
+firstpornaid.com##.subscribe_box
+
 fischereditor.ru  # scam: https://pikabu.ru/story/goblin_puchkov_fisher_i_samogon_s_privkusom_negra_8608407#comments
 
 fishboatlive.ru##.postavatars
@@ -7537,6 +7617,7 @@ fooxybabes.com##.wrap_rate
 fooxybabes.com##p
 fooxybabes.com##.gallery_button
 fooxybabes.com##.spots
+fooxybabes.com##.question_block
 
 ||api.forbes.ru/api/pub/lists/partners
 !waterfall.forbes.ru - don't, it's news list
@@ -7573,6 +7654,8 @@ fornote.net##.ns_wrap
 forosstroy.ru##a[rel=nofollow]
 
 forsageodincovo.ru###filial_banner
+
+forte.kz$3p  # скрипты рассрочки
 
 fortrader.org$3p  # ad scripts  # transferred from marketing
 
@@ -7621,6 +7704,7 @@ fountravel.ru##.smart-head-sticky:style(position:static !important)
 
 ||foxhq.com/images/
 ||foxhq.com/rockinthumbs/
+||foxhq.com/bb_banner.jpg
 foxhq.com##.navigation
 foxhq.com##.navbar
 foxhq.com##h3
@@ -7685,6 +7769,9 @@ freelibrary.ru##.br-widget
 @@||freeopenvpn.org^$generichide,badfilter
 
 freeproxy.ru##[src="/images/vpn/hmn_ru.png"]
+
+! banners
+freerutube.com##.code-block:has(.ai-dynamic)
 
 freetutorialshub.com##.breaking-news
 freetutorialshub.com###author-box
@@ -8152,6 +8239,7 @@ girlsofdesire.org##.pink
 girlsofdesire.org##.prev_button
 girlsofdesire.org##.next_button
 girlsofdesire.org##.rightContent
+girlsofdesire.org##a[href^="/click/o/"]
 
 ||github.com/_private/browser/stats$important  # from EasyPrivacy  # is in Adguard
 ||github.io/aplacer$third-party  # from RU AdList
@@ -12223,6 +12311,24 @@ letovmeste.ru##.jv-spotlight
 
 ||letu.ru/dist/old-browser.js
 
+! https://t.me/data1eaks/699
+    ! popups
+level.travel##[class^=GeolocationTooltip]
+    ! banners and promos
+! flying map: popups
+level.travel##.mapboxgl-popup
+! flying map: texts
+level.travel##.header-pax
+level.travel##.mailer_widget
+level.travel##.footer__mobile-apps
+level.travel##.homepage-searcher__mobile-app-links
+level.travel##.pa_list
+! ad "testimonials"
+level.travel##.testimonials
+! seo texts
+level.travel##.mpage_text_stitle
+    ! other
+
 lfirmal.com$3p  # ads
 ||lfirmal.com/wp-content/uploads/firmal.svg
 
@@ -12443,6 +12549,8 @@ livejasminbabes.net##.btn
 livejasminbabes.net##.desc
 livejasminbabes.net##.dividerlink
 livejasminbabes.net##.safety-icons
+livejasminbabes.net##a[href="/"]:remove-attr(href)
+livejasminbabes.net##.zoom
 
 !! livejournal.com: remake at 2020-02
 !
@@ -13961,7 +14069,12 @@ modelsinporn.com##.modelsinporn_flex_btn
 modelsinporn.com##.modelsinporn_i
 modelsinporn.com##h3
 
+||moe-online.ru/themes/default/front/js/probaclick/dist/probaclick.umd.js
+moe-online.ru##.header-line-1-back
+moe-online.ru##.sticky-spacer
+moe-online.ru##.greedy-nav-top-fixed
 moe-online.ru###header_baner
+moe-online.ru##.header-line-2:style(position:static !important)
 
 mognb.ru##.right_column
 mognb.ru##.od
@@ -15308,6 +15421,8 @@ nude.hu###rightpanel
 nude.hu###next_button
 nude.hu###prev_button
 
+nudebabes.sexy##.content-msg
+
 nudgify.com##.beacon-button
 
 ||nudity911.com/images/$image
@@ -15405,6 +15520,9 @@ obozrevatel.com##.videoOfDay
 
 obrazovaka.ru##.results
 
+obshchayagazeta.eu##.years-limit
+obshchayagazeta.eu##.current-date
+
 obustroen.ru##.sidebar-right
 
 obustroeno.com###ez-toc-container
@@ -15473,6 +15591,8 @@ ofsant.ru##.credit.info
 ofsant.ru##div.benefit
 ofsant.ru##.inform-when-price-drops
 ofsant.ru##.btn-silver.next.thumb-control
+
+og47.ru##.service_panel
 
 ||oglaf.com/ageconfirmation/
 
@@ -15713,6 +15833,8 @@ onetrust.com$3p,important  # hmm... 3p scripts...
 onetwotrip.com##[data-locator="banner-app-desktop"]
 onetwotrip.com##[data-locator="subscription-banner"]
 onetwotrip.com##div:has-text(/^Mobile app$/)
+    ! logo
+onetwotrip.com##header a svg
     ! seo
 onetwotrip.com###seoText
     ! other
@@ -16566,6 +16688,10 @@ phpbbguru.net##.page-footer
 
 phpclub.ru##.avatar
 
+phun.org###headerProxy
+phun.org##.scrollContainer
+phun.org##[href*="fontplace9.com/"]
+
 piccash.net##.pcash-toolbar
 piccash.net##.pcash-toolbar-content-logo
 piccash.net##.snet
@@ -16620,6 +16746,9 @@ pi-hole.net##.homepage:style(color:initial !important)
 pi-hole.net##.header-top.homepage #drop_mainmenu > li > a:style(color:initial !important)
 
 ! see pikabu.ru at pikabu
+
+pilkinail.ru##.p-galleria
+pilkinail.ru###app-block
 
 piluli.ru##.icon
 piluli.ru###b_footer_mobile_app.download-app
@@ -16806,6 +16935,7 @@ pleasuregirl.net##.swiper-block
 pleasuregirl.net##.svg-icon
 pleasuregirl.net##.toggle-theme
 pleasuregirl.net##.rating-container
+pleasuregirl.net##.swiper-container:style(opacity:initial !important)
 
 ||pleer.ru/cnt/*
 ||pleer.ru/pbann/  # from Ru AdList
@@ -17174,6 +17304,9 @@ pornreactor.cc##.logo
 ||pornreactor.cc/pics/award/$image  # gifs
 ! from Ru AdList
 pornreactor.cc##.uhead_share
+
+pornstarsnaked.com##.icon-search
+pornstarsnaked.com##.more
 
 poroloner.com##.foot_panel_all:style(position:static !important)
 poroloner.com##.discount_left
@@ -18271,6 +18404,7 @@ redpornblog.com###pic-tags
 redpornblog.com##.gal-nav
 redpornblog.com##.left-side-atag
 redpornblog.com###redfooter
+redpornblog.com###pic-text-inner
 
 redrumers.com##.header
 
@@ -19837,6 +19971,7 @@ sensualgirls.org##h2
 sensualgirls.org##.cat
 sensualgirls.org##[href="/videos/"]
 sensualgirls.org##form
+sensualgirls.org##.cbox:has(script)
 
 seoded.ru###seoded
 
@@ -19918,6 +20053,11 @@ sexybabes.club##.headline
 sexybabes.club##.heading
 sexybabes.club##.title
 sexybabes.club##.information
+! script error though
+sexybabes.club###preloader
+
+sexybabesart.com##.content-catdesc-txt
+sexybabesart.com##.header-content
 
 sexybabesz.com##.heading
 sexybabesz.com##.headline
@@ -23676,6 +23816,10 @@ ursus.ru##.fixed-header-block:style(position:static !important)
 ursus.ru##.mailing-popup
 ursus.ru##.site-menu
 
+usa.one$inline-script  # site blocks copypaste
+usa.one##strong:has-text(с друзьями в соцсетях)
+usa.one##i:has-text(Нажмите, чтобы поделиться)
+
 ||usamodelkina.ru/uploads/fotos/foto_1.jpg
 ||usamodelkina.ru/*/shtampnm.png
 usamodelkina.ru##.header
@@ -24724,6 +24868,11 @@ wantedbabes.com##.aligen-jus
 wantedbabes.com###col-right
 wantedbabes.com##.searches
 wantedbabes.com###footer
+! EasyList rule is not ideal, so I made this
+wantedbabes.com##a[href^="https://pb-track.com/"]:remove-attr(href)
+! and rule to remove reflinks, general, temporarily here
+!wantedbabes.com##[href^="http://join.teamskeet.com/"]:remove-attr(href)
+*##[href^="http://join.teamskeet.com/"]:remove-attr(href)
 
 warbook.club###masthead
 warbook.club##.action
@@ -25455,15 +25604,18 @@ wragg.io##.bg-image
 writingexplained.org##.inside-header
 
 wsj.net$script,domain=~wsj.com
+    ! logos
+wsj.com##[class*=social-logo]
+wsj.com##[class^=style--section-logo-wrapper]
+||barrons.com/*/wsj-logo-big-black$image
+||barrons.com/*/wsj-logo$image
+    ! other
 wsj.com##[class*=collapsed-header]
 wsj.com##[class*=market-data]
 wsj.com##.wsj-snippet-body::after
 wsj.com##[class*=show-count]
 wsj.com###cx-what-to-read-next
 wsj.com##.trending_videos
-wsj.com##[class*=social-logo]
-||barrons.com/*/wsj-logo-big-black$image
-||barrons.com/*/wsj-logo$image
 
     ! popups
 wundertech.net##.overlay-header-media
