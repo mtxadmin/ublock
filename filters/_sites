@@ -2284,9 +2284,11 @@ avito.ru##[class*=sticky]:style(position:static !important)
 avito.ru##.sticky-header
 ! и снизу там еще дубликат
 avito.ru##[class^=push-root]
+    ! popups
+!avito.ru##[class*=tooltip-placement-bottom] - breaks categories popup. Banners?
+avito.ru##[class*=tooltip-placement-bottom]:has-text(ваш город)
     ! banners and promos
 avito.ru##[class^=sendout-banner]
-!avito.ru##[class*=tooltip-placement-bottom] - breaks categories popup
 avito.ru##[class*=items-vip]
 avito.ru##[class^=carousel-list]
     ! спам и разводки
