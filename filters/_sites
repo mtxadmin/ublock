@@ -6172,6 +6172,8 @@ e1.ru##*:matches-css(position:fixed)
 e1.ru##button[data-test="report-news-button"] + div[class]
 
 easeus.com##[class^=article_banner]
+easeus.com##.box_all
+easeus.com##[class^=epm_banner]
 
 eastsideco.io
 ! script with fixed button: contactforms.eastsideco.io/assets/forms.js
@@ -7631,11 +7633,25 @@ fooxybabes.com##.question_block
 
 ||api.forbes.ru/api/pub/lists/partners
 !waterfall.forbes.ru - don't, it's news list
-forbes.ru##*:matches-css(position:absolute)
+||forbes.ru/placeholder.svg
+    ! top
+!forbes.ru##*:matches-css(position:absolute) - old
+! forbes.ru##div:matches-css(position:sticky):style(position:static !important) - don't, jumps
+! top of the left column
+forbes.ru##button:has-text(Подписаться)
+!forbes.ru##div:xpath(//div[contains(text(),'Рассылка')]):upward(1) - don't, jumps
+! top of the right column
+forbes.ru##img[src="/placeholder.svg"]:upward(1)
+    ! subscribe
+forbes.ru##a:has-text(Подписаться)
+forbes.ru##svg[height="56"]
+forbes.ru##div:xpath(//div[contains(text(),'Подпишитесь')]):upward(2)
+    ! other
 forbes.ru##.header-menu-wrap:style(position:static !important)
 forbes.ru##.block-bnr-in-text
 forbes.ru##.main-menu:style(padding-top:0px !important)
 forbes.ru##.header-bottom:style(margin-top:0px !important)
+forbes.ru##a:has-text(Партнерский материал)
 
     ! paywall
 foreignpolicy.com##.content-gated:style(display:initial !important)
@@ -16524,6 +16540,7 @@ pcworld.com##.primaryNav-left--logo
 pcworld.com##.primaryNav--article:style(position:static !important)
 pcworld.com###pcworld-logo
 pcworld.com##.primaryFooter-top
+pcworld.com##.product-widget
 
 pdfcomplete.com$popup,third-party  # from EasyList
 
@@ -27322,8 +27339,6 @@ znak.com##.minilogo
 
 ||sobesednik.ru/images/logo1.png
 
-forbes.ru##a:has-text(Партнерский материал)
-
 ifbest.org##.top-menu-left
 ifbest.org##.logo-banner
 
@@ -27835,3 +27850,8 @@ shopozz.ru##.countries-list
 shopozz.ru##.call-btns
 ! seo again
 shopozz.ru##.description_block
+
+! buttons
+smm-tips.ru##.has-background
+
+dualshockers.com##.article-alert
