@@ -928,6 +928,8 @@ $removeparam=pm_campaign  # from DandelionSprout's URLShortener
 $removeparam=pm_medium  # from DandelionSprout's URLShortener
 $removeparam=pm_source  # from DandelionSprout's URLShortener
 
+$removeparam=ppid  # from DandelionSprout's URLShortener
+
 $removeparam=product_channel  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 $removeparam=product_country  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 !$removeparam=product_language  # hmm.. not very tracking, after all  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
@@ -1017,7 +1019,9 @@ $removeparam=ref,important
     ! emag.ro$removeparam=ref  # from DandelionSprout's URLShortener
     ! etsy.com$removeparam=ref  # from NeatURL
     ! facebook.com*/?ref=$removeparam=|,domain=facebook.com  # from Ru AdList
+    ! ^ref=futurepedia^$removeparam=ref  # from DandelionSprout's URLShortener
     ! goodreads.com$removeparam=ref  # from Adguard
+    ! ^ref=hackernoon.com^$removeparam=ref  # from DandelionSprout's URLShortener
     ! jasonsavard.com$removeparam=/cUrl|ref/  # from Adguard
     ! video.laxd.com$removeparam=ref  # from Adguard
     ! livedoor.biz$removeparam=ref  # from Adguard
@@ -1557,6 +1561,7 @@ $removeparam=via
     ! ^via=futurepedia^$removeparam=via  # from DandelionSprout's URLShortener
     ! $removeparam=/^via=rss$/  # from DandelionSprout's URLShortener
     ! ^via=toolbar^$removeparam=via,domain=user.qzone.qq.com  # from DandelionSprout's URLShortener
+    ! thedailybeast.com$removeparam=via  # from DandelionSprout's URLShortener
 
 $removeparam=wbraid  # Google ads/analytics  # from Adguard
 
@@ -2701,7 +2706,7 @@ tiktok.com$removeparam=sender_web_id  # from NeatURL
 tiktok.com$removeparam=timestamp  # from NeatURL
 tiktok.com$removeparam=tt_from  # from NeatURL and Adguard
 tiktok.com$removeparam=u_code  # from NeatURL
-tiktok.com$removeparam=user_id  # from NeatURL
+tiktok.com$removeparam=user_id  # from NeatURL and DandelionSprout's URLShortener
 tiktok.com$removeparam=sec_uid  # from Adguard
 tiktok.com$removeparam=sec_user_id  # from DandelionSprout's URLShortener
 tiktok.com$removeparam=web_id  # from Adguard
@@ -2883,11 +2888,13 @@ youku.com$removeparam=ptag  # from Adguard
 yourcodereview.com$removeparam=add_name_parameter  # ref
 
 youtube.com$removeparam=ab_channel
+youtube.com$removeparam=embeds_euri  # from DandelionSprout's URLShortener
 youtube.com$removeparam=feature  # is in NeatURL
     ! unusual Ru AdList form:
     ! &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com  # from Ru AdList
 youtube.com$removeparam=kw  # from NeatURL
 youtube.com$removeparam=si
+youtube.com$removeparam=source_ve_path  # from DandelionSprout's URLShortener
 youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
     ! ?sub_confirmation=1$document,removeparam=|,domain=youtube.com  # from Ru AdList
 
@@ -3068,3 +3075,19 @@ epicgames.com$removeparam=epic_affiliate,important  # seems, it is epic specific
     ! @@$removeparam=epic_affiliate  # from DandelionSprout's URLShortener
     ! epicgames.com$removeparam=epic_affiliate  # from DandelionSprout's URLShortener
 epicgames.com$removeparam=epic_gameId  # from DandelionSprout's URLShortener
+
+porn2012.com$removeparam=hash
+
+bing.com$removeparam=/^sh[a-np-z0-9]/  # from DandelionSprout's URLShortener
+
+hot-sex-tube.com$removeparam=hash
+
+newfreeporn.net$removeparam=vs
+
+zzbabes.com$removeparam=vs
+
+quizlet.com$removeparam=funnelUUID  # from DandelionSprout's URLShortener
+quizlet.com$removeparam=signupOrigin  # from DandelionSprout's URLShortener
+
+! already blocked
+eastday.com$removeparam=qid  # from DandelionSprout's URLShortener
