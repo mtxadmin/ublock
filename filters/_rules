@@ -30,8 +30,8 @@
     ! .site/?pus=$script,third-party  # from Adguard
     ! .vip/?pus=$script,third-party  # from Adguard
 .club/rp/rp.php?site=  # Adguard rule  # see publisher.house and rtbmedia.org
-/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script  # from Fanboy's. Matches http://www.zlfgedpuxrbpgm.com/xtzj.js and http://www.zckphynp.com/d.js
-://*.*.com/xj/$script,important,redirect-rule=noop.txt  # Adguard rule
+/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$3p,script  # from Fanboy's. Matches http://www.zlfgedpuxrbpgm.com/xtzj.js and http://www.zckphynp.com/d.js
+://*.*.com/xj/*$script,important,redirect-rule=noop.txt  # Adguard rule
 .ru/proxy_*.php?init_form=$script  # ad scripts  # from AdGuard
 /?dm=*&blogid=$script,domain=~wordpress.org  # ad scripts  # is in EasyPrivacy
 @@|data:text^$popup,domain=box.com|clker.com|labcorp.com  # interesting rule from EasyList
@@ -1329,7 +1329,7 @@ _rebid.js  # from EasyList
 -stats.video.  # from Adguard
 -stdlauncher.js  # from Adguard
 /sticker_pc.min.js  # from Adguard
-/sys/js/$third-party  # from Adguard (many random domains)
+/sys/js/*$third-party  # from Adguard (many random domains)
 /tagman/*  # from EasyList
 /test-widget/*
 /top-banner.jpg
@@ -1410,7 +1410,7 @@ _rebid.js  # from EasyList
 ! widget rules need refactoring :-( They block /jquery/ui/widget.min.js
 !/widget/*$~stylesheet,domain=~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru|~sbis.ru
 !    ! /widget/?45;*|1|1|1|1  # strange rule from Ru AdList
-    ||market.yandex.ru/widget/$third-party,script  # from Ru AdList
+    ||market.yandex.ru/widget/*$third-party,script  # from Ru AdList
 !/widget.min.js$important,domain=~sbis.ru
 /widget-a-b.js  # from Ru AdList
 /widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~banki.ru|~dns-shop.ru|~domclick.ru|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
@@ -2184,7 +2184,7 @@ _tizers.  # from Ru AdList
     ! /promos/pixels?  # from EasyPrivacy
 /promotion/*$domain=~doogee.cc
 /promotions/*
-    ! ||gbtcdn.com/GB/images/promotion/$image
+    ! ||gbtcdn.com/GB/images/promotion/*$image
     ! ||mvideo.ru/media/promotions/*$image
     ! ||wbstatic.net/promotions/
 /promo_tracking.  # from EasyPrivacy
@@ -2387,8 +2387,8 @@ volveter.ru##.has_offer_prop
     ! /akam/13/*
     ! /akam/*/pixel_  # from Adguard and EasyPrivacy
     ! ||foxsports.com.au/akam/  # from EasyPrivacy
-    ! ||l-tike.com/akam/$script  # from EasyPrivacy
-    ! ||pia.jp/akam/$script  # from EasyPrivacy
+    ! ||l-tike.com/akam/*$script  # from EasyPrivacy
+    ! ||pia.jp/akam/*$script  # from EasyPrivacy
 /akamai/pixy.gif  # from EasyPrivacy
 /akamai_analytics_  # from EasyPrivacy
 /AkamaiAnalytics.  # from EasyPrivacy
@@ -2448,7 +2448,7 @@ _analytics.js?  # from EasyPrivacy
     ! /beacon.min.js$important
     ! /cdn-cgi/challenge-platform/h/g/beacon/*$xmlhttprequest,~third-party  # from Adguard
     ! ||amagi.tv/beacon  # from EasyPrivacy
-    ! ||github.com/notifications/beacon/$important  # from Adguard
+    ! ||github.com/notifications/beacon/*$important  # from Adguard
     ! ||xumo.com/xumocdn/*/beacon  # from EasyPrivacy
     ! ||yemeksepeti.com/*/xhr/b/s/beacon  # from Adguard
 .beacon.min.js  # from EasyPrivacy
@@ -4005,7 +4005,7 @@ _snowstorm-min.js  # from Ru AdList
 /huawei-store.svg
 /itunes.svg
 /play_market*$image
-||play.google.com/intl/en_us/badges/$3p
+||play.google.com/intl/en_us/badges/*$3p
 ##a[href^="https://appgallery.huawei.com"]
 ###apple-icon
 ###apple-store
@@ -4469,9 +4469,9 @@ _snowstorm-min.js  # from Ru AdList
     ! many, many rules from different lists
     ! /branding/*
 /brands/*$image,domain=~google.com
-    ! ||devapps.ru/img/brand/$image  # 4pda banners
+    ! ||devapps.ru/img/brand/*$image  # 4pda banners
     ! ||megaobzor.com/images/brand/*$image
-    ! ||shopsirop.ru/uploads/images/Brands/$image
+    ! ||shopsirop.ru/uploads/images/Brands/*$image
 /images/brand*$image
 /logos/*$domain=~vse.fm
 
@@ -4571,7 +4571,7 @@ turboimagehost.com##.modal-footer
 
 
 ! strange ad scripts
-/detroitchicago/$script,important
+/detroitchicago/*$script,important
     ! /detroitchicago/cmbdv2.js  # is in EasyList
     ! /detroitchicago/houston.js  # is in EasyList
     ! /detroitchicago/minneapolis.js  # from uBlock filters
