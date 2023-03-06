@@ -1476,11 +1476,14 @@ securemetrics.nbnco.com.au  # from GoodbyeAds
 securetags.esri.com.tr  # from Adguard
 securetags.img.com.br  # from Adguard
 
-! /sentry. crashes avito.ru
+/sentry.$domain=~avito.ru
+    ! Exclusions:
+    ! avito.ru - crashes
 sentry.srv.habr.com
 sentry.innologica.com
 sentry.kanobu.ru
 sentry.web.prod.ya.mvideo.ru
+sentry.timeweb.cloud
 sentry.worldota.net  # ostrovok.ru tech domain
 /?sentry_key=  # is in EasyPrivacy
 /sentry.min.js
