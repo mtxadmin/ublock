@@ -11089,6 +11089,16 @@ kanobu.ru##.wrap > main:not(#id):style(margin-top: calc(-100vh + 10px) !importan
 ! from RU AdList
 kanobu.ru##.wrap > header ~ div[style*="background"] > a
 
+    ! popups
+kant.ru##.kant__header-geo__choice
+    ! banners and promos
+kant.ru##.js-banners-item
+kant.ru##.js-banners-list
+kant.ru##.kant__main__promo
+kant.ru##.kant__categories__slider--brands
+kant.ru##.kant__catalog__special-offer
+    ! other
+
 ||kanzoboz.ru/data/chuvak2/$image
 kanzoboz.ru##.chuvak
 kanzoboz.ru##.important-text-slider
@@ -16316,6 +16326,7 @@ ozon.ru##div[trackinginfo]
 !||ozone.ru/assets/vendors - don't, map blocked
 !||ozone.ru/assets/vendors-node_modules_bx - don't, map blocked
 !||ozone.ru/assets/cms-desktop-top-bar - don't
+||v.ozone.ru/vod/*/tile.mp4  # видео в карточках: слегка подбешивает
     ! top
 !ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
 ozon.ru###stickyHeader:style(position:static !important)
@@ -16356,6 +16367,8 @@ ozon.ru##[data-widget="skuShelfGoods"]
 ozon.ru##button:has-text(Premium)
 ozon.ru##.skeleton-banner
 ozon.ru##button:has-text(/Подарить|в один клик/)
+! strange, but repeat
+ozon.ru##button:has-text(Купить в один клик)
 ozon.ru##div[data-widget="webTopStreams"]:has(a[href^="/live"])
 ozon.ru##div[data-widget="setOfPreviews"]
 ozon.ru##div:has(> a[href^="/highlight/"])
@@ -16363,13 +16376,16 @@ ozon.ru##li:has(> a[href^="/highlight/"])
 ozon.ru##div:has(>p:has-text(Оформить подписку))
 ! not aside column, but banner
 ozon.ru##aside
-ozon.ru##div > div:has-text(/Ozon\s*Картой$/)
+ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not-path(/product/)
 ! fake notifications
 ozon.ru##span.tsCaptionBold:has-text(/^1$/)
 ozon.ru##div[data-widget="webOzonAccountPrice"]
+ozon.ru##span:has-text("успейте купить")
+ozon.ru##div:has(>a[href*=campaign])
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
+ozon.ru##div:has(>span:has-text(/(Р|р)аспродажа|(С|с)кидки/))
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 ozon.ru##div[data-widget=webInstallmentPurchase]
@@ -25196,7 +25212,7 @@ wikihow.com##.altblock
 wikihow.com###trust_banner
 
 wikiporn.tv##.head-pl:style(position:static !important)
-wikiporn.tv##.on-player
+!wikiporn.tv##.on-player - generalized
 wikiporn.tv##.on-player-pl
 
 wikispravka.ru##.side_left > .text
@@ -26051,6 +26067,7 @@ yaplakal.com,yap.ru##.logo__img
 ! "Отправлено с приложения"
 yaplakal.com##.edit
 ||yaplakal.com/html/premia*$image
+||yaplakal.com/html/static/video-loader.gif
 ||yap.ru/html/premia*$image
 ||yapfiles.ru/action/track/
 ||yapfiles.ru/uploads/branddata/$important
@@ -27891,13 +27908,8 @@ freeporn247.org##.toptext
 
 freeporno.xxx##.side-title
 
-! popup
-newfreeporn.net##.spot-player
-
 hdzog.com##.overlay::after
 hdzog.com##.header-menu-toggle
-
-tamilsex24.com##.spot-player
 
 zzbabes.com##.main-aside
 zzbabes.com##p
@@ -27932,4 +27944,47 @@ nakedgirls.fun##.main-desc
 
 hqpornvideos.fun##.active
 hqpornvideos.fun##.toptext
-hqpornvideos.fun##.spot-player
+
+agroserver.ru##.end
+
+md-meat.ru###header-decor
+
+meat-supermarket.ru##.block_dog
+
+meatinfo.ru###analytical-report
+meatinfo.ru##.info-block
+
+epicgames.com##div:matches-css(position:sticky):style(position: static !important)
+
+infomeat.ru###auto_scroll_menu
+infomeat.ru###table_right_banner1
+infomeat.ru###table_right_banner2
+infomeat.ru##.addblock
+
+planeta-sport.ru##.popup-box
+planeta-sport.ru##.popup-outer-box
+planeta-sport.ru##.sale-banner
+planeta-sport.ru##.logo-panel-title
+
+extrememarket.ru##.push_row
+
+zetalink.ru##.nav-menu > li > a:style(color:initial !important)
+
+ztv.su###carouselExampleIndicators
+
+hip-hosting.com##.location-details-banner
+
+timeweb.cloud##.video-player
+
+prohoster.info##.wp-block-cover
+
+firstbyte.ru##.head_slog
+
+hostinghub.ru##.floating-block-active:style(position:static !important)
+
+ipaddress.com##.btt
+
+aireng.ru##.pop-block
+
+weasel.cloud##.text-center
+weasel.cloud##.site-banner
