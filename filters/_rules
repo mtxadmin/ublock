@@ -2075,6 +2075,16 @@ _rebid.js  # from EasyList
 
 
 
+! fluid web player ads
+###fluid-buffer_spot
+###fluid-onpause_spot
+##.fluid-spot
+! ad popup
+##.spot-player
+
+
+
+
 !! teasers
 /adv_teasers.  # is in EasyList
 /nettyzer/*
@@ -2620,7 +2630,10 @@ _pagespeed_beacon?  # from AdGuard
     ! /pv?fe=*&elg=  # from EasyPrivacy
     ! /pv?place=  # from EasyPrivacy
     ! /pv?token=  # from EasyPrivacy
-/pv.
+/pv.$domain=~megatube.xxx
+    ! Exclusions:
+    ! pv.megatube.xxx - previews
+    !
     ! /pv.gif?  # from EasyPrivacy
     ! /pv.php?id=  # from EasyPrivacy
     ! /pv.txt?  # from EasyPrivacy
