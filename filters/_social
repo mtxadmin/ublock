@@ -570,7 +570,7 @@ cdn.syndication.twimg.com
 -twitter.js  # from Ru AdList
 /twitter.png
 /twitter.svg$domain=~votesmart.appspot.com
-/twitter-
+/twitter-$~css
     ! exclusion: https://secretmag.ru/news/twitter-zakhotel-zashititsya-ot-ilona-maska-otravlennoi-pilyulei-15-04-2022.htm
     @@/news/twitter-
     ! /assets/twitter-$image  # is in Fanboy's and Ru AdList
@@ -1467,7 +1467,7 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 !
 ##[class*="Follow"]:not(html):not(body):not(article)
 ##[id*="Follow"]:not(html):not(body):not(article)
-~medtehno.ru##[class*="follow"]:not(html):not(body):not(article)
+~medtehno.ru##[class*="follow"]:not(html):not(body):not(article):not(.main-container)
 ~facebook.com,~vk.com##[id*="follow"]:not(html):not(body):not(article)
 
 ! Exclusions: on oracle.com there are many elements with class="selectionShareable"
