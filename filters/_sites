@@ -7062,6 +7062,9 @@ fabianlee.org##body:style(background-color:unset !important)
 
 facenews.ua##.gnews
 
+forums.factorio.com##.sitetitle
+forums.factorio.com###search-box:style(margin-top:0px !important)
+forums.factorio.com##.headerbar:style(height:auto !important)
 wiki.factorio.com###mw-head:style(top:0px !important)
 wiki.factorio.com###left-navigation:style(margin-top:0px !important)
 wiki.factorio.com###right-navigation:style(margin-top:0px !important)
@@ -7421,7 +7424,16 @@ fineshoes.ru##.blog-action
 
 fingazeta.ru##.region-primary-menu:style(position:static !important)
 
+fintolk.pro$inline-script  # site blocks copypaste
+    ! banners and promos
+fintolk.pro##.banner_single_post_content_2
+fintolk.pro##.container-articles-content-banner-center
+fintolk.pro##.sd-banner-video
+fintolk.pro##.sd-telegram-widget
 fintolk.pro##.banner-sticky-bottom
+    ! other
+fintolk.pro##iframe
+fintolk.pro##.wp-embedded-content
 
 finuslugi.ru##.bottom-message
 finuslugi.ru##.common-header__fixed:style(position:static !important)
@@ -9653,6 +9665,7 @@ howtogeek.com##.social
 howtogeek.com##.footer-email
 howtogeek.com##.entry-footer
 howtogeek.com###v2campaignmidpage
+howtogeek.com###floating-sidebar-area
 
 howtoguides.org##.navbutton2.next
 howtoguides.org##.navbutton2.prev
@@ -13152,6 +13165,11 @@ maketecheasier.com##.sidebar-subscribe-box
 makeuseof.com##.browse-clip:has(a[href="/category/sponsored/"])
 ! override Fanboy's exception - instead of !makeuseof.com##.header-logo and other
 @@*$generichide,domain=makeuseof.com,badfilter
+! top
+makeuseof.com##.heading_image
+makeuseof.com##.sidebar-poll
+! inline related
+makeuseof.com##.related-single
 
 ||mal-kuz.ru/images/vk1.png
 ||mal-kuz.ru/images/in.png
@@ -17611,7 +17629,6 @@ prmira.ru##.close-block
 
 prnt.sc##.header
 
-probirka.org##.main-nav:style(position:static !important)
 probirka.org##.slick-track
 probirka.org##.store-links
 probirka.org##p:has-text(Telegram-канале)
@@ -17944,12 +17961,18 @@ qawithexperts.com##.Top-Head-Ad-Mobile
 
 ||qb.ru/buttons/  # from Adguard  # don't block this domain - price.ru gets css from there
 
+    ! banners and promos
+qiwi.com##[class^=banner-img]
+    ! logos
+qiwi.com##[class^=header-authorized-logo]
+qiwi.com##[class^=header-unauthorized-logo]
+qiwi.com##[class^=account-avatar-icon]
+    ! other
+||qiwi.com/features/rnd_api/features/widget
+||qiwi.com/img/qiwi_com/landing/$image
 qiwi.com##.qw-top-info
 qiwi.com##[class^=auth-double-footer-social]
 qiwi.com##[class^=cookies-]
-qiwi.com##[class^=header-unauthorized-logo]
-qiwi.com##[class^=banner-img]
-||qiwi.com/features/rnd_api/features/widget
 
 qna.center###errmsg
 qna.center##.mt5.mb5.well
@@ -27988,3 +28011,26 @@ aireng.ru##.pop-block
 
 weasel.cloud##.text-center
 weasel.cloud##.site-banner
+
+xxxvideo.one##.pwrpopularsearches.pwrpopular
+
+sexxxx.rodeo##.popular-searches.popular
+
+sexvideos.rodeo##.text-block
+
+newxxx24.cc##.active
+
+||tropictube.com/tt/tt.php
+
+hqsexonly.com##.flt_hor
+
+goldfreeporn.cc##.active
+
+hqfreexxx.cc##.active
+
+xnxxmovies.su##.KkFONDlogo
+
+porno247.net##.active
+porno247.net##.toptext
+
+xbabe.com##.header-holder
