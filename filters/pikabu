@@ -905,6 +905,16 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/nespokoynyiy_segodnya_den_10002505
     ! https://pikabu.ru/story/otvet_na_post_armeniya_ne_budet_provodit_ucheniya_odkb_v_2023_godu_9833669
 
+pikabu.ru##article.story:has(.user__nick[data-name="NikKotovski"]):not(:matches-path(/@)):not(:matches-path(/story/))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="NikKotovski"]):not(:matches-path(/story/))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^NikKotovski$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="NikKotovski"]))
+    ! https://pikabu.ru/story/nasha_tsel__smena_rezhima_v_rossii__mid_kanadyi_10041290
+    ! https://pikabu.ru/story/net_strakhovki_umiray_ne_khochesh_politsiya_tebe_pomozhet_10000777
+    ! https://pikabu.ru/story/v_ssha_testirovanie_pokazalo_chto_shkolnuyu_programmu_po_bazovyim_predmetam_znayut_ot_26_do_36_uchenikov_vuzyi_massovo_otmenyayut_prokhodnyie_ballyi_9949549
+    ! https://pikabu.ru/story/v_kanade_uchenika_starshey_shkolyi_otstranili_ot_uchyobyi_za_slova_o_tom_chto_est_vsego_dva_pola_a_potom_arestovali_pri_popyitke_vernutsya_k_uchyobe_9942023
+    ! https://pikabu.ru/story/v_ssha_vnesli_na_rassmotrenie_zakon_po_kotoromu_zaklyuchennyie_mogut_sdavat_organyi_na_transplantatsiyu_chtobyi_umenshit_sebe_tyuremnyiy_srok_9918089
+
 pikabu.ru##article.story:has(.user__nick[data-name="Zelenskyy"]):not(:matches-path(/@)):not(:matches-path(/story/))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Zelenskyy"]):not(:matches-path(/story/))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Zelenskyy$/)):style(color:#F0F0F0)
