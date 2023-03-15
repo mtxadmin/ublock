@@ -2,7 +2,7 @@
 ! See https://github.com/mtxadmin/ublock for details
 !
 !
-! Aliexpress related hosts and filters
+! Alibaba and Aliexpress related hosts and filters
 ! update: hosts transferred to _marketing__subdomains
 
 
@@ -194,6 +194,21 @@ aliexpress.ru$removeparam=scenario
 
 aliexpress.com$removeparam=tpp_rcmd_bucket_id
 aliexpress.ru$removeparam=tpp_rcmd_bucket_id
+
+
+!! alibaba filters and subdomains
+! many rules match earlier added rules for Aliexpress
+
+||alicdn.com/sc-affiliate/
+
+    ! logo
+alibaba.com##.sc-hd-m-logo
+
+! "get the app"
+alibaba.com##.sc-hd-download-link
+! fixed sidebar
+alibaba.com##.bar-normal
+alibaba.com##.m-toolbar-side
 
 
 !! aliexpress filters and subdomains
