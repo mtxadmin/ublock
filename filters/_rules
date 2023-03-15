@@ -1798,6 +1798,8 @@ _rebid.js  # from EasyList
 ###BottomAd
 ###bn-1
 ! is in EasyList
+##.BottomAd-container
+! is in EasyList
 ##.bottom-adv
 ##.bottom-banner-wrapper
 ! is in Adguard
@@ -1873,6 +1875,8 @@ _rebid.js  # from EasyList
 ##.fullwidthbanner-container
 ##.full-width-narrow-banner
 ##.gallery-banner
+! is in EasyList
+##.Gallery-Content-BottomAd
 ! is in Ru AdList
 ##.gaminator
 ! is in EasyList
@@ -2252,7 +2256,10 @@ _tizers.  # from Ru AdList
     ! travel.ru##.b-footer-mobile-app-promo-icon
     ! wildberries.ru##.j-promo-carousel-wrapper
 ##[id*="promotion"]:not(html):not(body):not(article)
-~aliexpress.com,~aliexpress.ru,~chess.com##[class*="promotion"]:not(html):not(body):not(article)
+~alibaba.com,~aliexpress.com,~aliexpress.ru,~chess.com##[class*="promotion"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! alibaba.com, aliexpress.com: .promotion is a regular price, not a promo
+    !
     ! ##.close-promotion
     ! ##.promotion-box
     ! ##.promotion-flex
@@ -2660,6 +2667,10 @@ _pagespeed_beacon?  # from AdGuard
 /pview?event  # from EasyPrivacy
 /pv_web.gif  # from EasyPrivacy
 /px.$important
+    ! Exclusion from Adguard, doesn't need
+    !@@||s.imgur.com/min/px.js$domain=imgur.com
+        !||imgur.com/min/px.js  # is in Fanboy's  # matches /px.
+    !
     ! /px.gif?  # from EasyPrivacy and ABP
     ! /px.js$important
         ! /px.js?ch=$script  # from EasyPrivacy
