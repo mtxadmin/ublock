@@ -4249,6 +4249,8 @@ citilink.ru##.ProductCardLayoutNEW__services
 citilink.ru##.ProductPageBadgesSection
 citilink.ru##.TogetherCheaper
 citilink.ru##form:has-text(Хочу быть в курсе акций)
+citilink.ru##div[data-meta-name=BannersLayout__static-slider]
+citilink.ru##div > a[href*="/promo/"]
     ! striked prices
 citilink.ru##.old_price
 citilink.ru##.ProductCardVerticalPrice__price-old__price
@@ -8898,6 +8900,8 @@ habr.com##.tm-layout-sidebar__placeholder_stick-top
 ! еще филлеры
 habr.com##.tm-layout-sidebar__placeholder_margin
 habr.com##.tm-layout-sidebar__placeholder_stick-bottom
+! 2nd marketing header
+habr.com##.tm-header
     ! banners and sponsor posts
 habr.com##.default-block:has-text(Хабр рекомендует)
 habr.com##.post_preview:has-text(Блог компании ТechMedia)
@@ -10135,15 +10139,27 @@ imgpay.ru###quote
 imgpay.ru##.jumbotron
 ||imgpay.ru/reg/
 
-||p.imgur.com  # is in hpHosts’ Ad and tracking servers
-||imgur.com/min/px.js  # is in Fanboy's
+#||imgur.com/min/px.js  # is in Fanboy's  # matches /px.
+! Uncaught TypeError: this.measure is null
+! it works (but not very useful)
+imgur.com##+js(set, this.measure, noopFunc)
+! TypeError: t is not a constructor
+!imgur.com##+js(set, t, noopFunc) - doesn't work and somehow disables this.measure above
+!imgur.com##+js(set, Object.prototype.t, noopFunc) - does not work at all
+!
+    ! popups
+imgur.com##.NewCover
+imgur.com##.Overlay
+    ! bottom unrelated posts
+imgur.com##.BottomRecirc
+imgur.com##.Footer-app
+    ! other
 imgur.com##.isFixed:style(position:static !important)
+! #.Gallery-Content-BottomAd and .BottomAd-container is already generalized by EasyList. Wow.
 imgur.com##.Gallery-EngagementBar
 imgur.com##.Gallery-Sidebar
-imgur.com##.NewCover
 imgur.com##.Gallery-Header
 imgur.com##.Footer-wrapper:style(position:static !important)
-imgur.com##.Overlay
 
 ||imho.ws/images/custom/$image
 
@@ -18407,9 +18423,6 @@ redarmyairsoft.ru###aside
 ||redcocktube.com/images/h1.jpg
 redcocktube.com##.s_desc
 
-reddit.com##button:has-text(Get App)
-reddit.com##span:matches-css(background-image:/bannerBackground/)
-
 ||redditstatic.com/desktop2x/js/xads.js
 ||redditstatic.com/desktop2x/img/upsell/
 ||redditstatic.com/desktop2x/PushNotifications
@@ -18438,6 +18451,10 @@ reddit.com##.commentsignupbar.infobar
 reddit.com##.listingsignupbar.infobar
 reddit.com##[id^="AppRouter-main-content"]:style(padding-top:0px !important; padding-left:0px !important)
 reddit.com##.ListingLayout-backgroundContainer
+reddit.com##shreddit-app:style(--page-y-padding:0px !important)
+reddit.com##faceplate-tracker[noun=user_avatar]
+! top
+reddit.com##button[id=get-app]
 ! logo
 reddit.com##a[aria-label="Home"]
     ! banners and promos
@@ -18456,6 +18473,9 @@ reddit.com##.promotedlink
 reddit.com##div[style*="fakelightbox-overlay-"] ~ div[tabindex] > div > div > div > div[data-redditstyle="false"]:has(:scope > div > div > div[data-before-content="advertisement"])
 ! from Fanboy's
 reddit.com##._3RPJ8hHnfFohktLZca18J6
+! the app is on market
+reddit.com##button:has-text(Get App)
+reddit.com##span:matches-css(background-image:/bannerBackground/)
 
 ||redfin.com/rift?  # from EasyPrivacy
 
@@ -28085,3 +28105,4 @@ tamilsex24.com##.list
 
 zzbabes.com###bclose
 
+thenewstack.io###tns-footer-bar
