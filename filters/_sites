@@ -1166,9 +1166,7 @@ alienwarearena.com##.navbar-top:style(position:static !important)
 ! ali.pub - see in aliexpress
 ! s.click.aliexpress.com - see in aliexpress
 
-! alisupport.ru - see in aliexpress
-
-ali-yes.ru##.podborka-link
+! ali* - see in aliexpress
 
 all4bath.ru###footer-pane
 all4bath.ru##.rss_block
@@ -2360,6 +2358,11 @@ avtoved.guru##.headersmenu
 
 avtovzglyad.ru##.rating
 avtovzglyad.ru##.ring
+avtovzglyad.ru##.header-specproject
+avtovzglyad.ru##footer::before
+avtovzglyad.ru##footer::after
+avtovzglyad.ru##nav::before
+avtovzglyad.ru##nav::after
 
 avtozakony.ru##.article-nav
 
@@ -2604,8 +2607,18 @@ banana-pi.org##.fixed-action-btn
 ! from Fanboy's
 bancaintesa.ru##.cb-goup
 
+    ! popups
+banggood.com##.modal-newbie
+banggood.com##.suspended-banner-wrap
+    ! banners and promos
+banggood.com##.top-item
+banggood.com##.main-central-configuration
+banggood.com##.main-havemain-central-configuration.main-flash
+    ! other
+banggood.com##.has-announcement.main-mt-slide
 banggood.com##.coupon-newuser
 banggood.com##.aside-bar
+||psr.staticbg.com/rum/monitor.min.js  # banggood ad script (and it seems, it is their domain)  # is in Adguard
 
 baniclub.ru##.descr_soc
 baniclub.ru###headerProxy
@@ -7657,10 +7670,12 @@ fooxybabes.com##.question_block
     ! top
 !forbes.ru##*:matches-css(position:absolute) - old
 ! forbes.ru##div:matches-css(position:sticky):style(position:static !important) - don't, jumps
-! top of the left column
+    ! top of the left column
 forbes.ru##button:has-text(Подписаться)
 !forbes.ru##div:xpath(//div[contains(text(),'Рассылка')]):upward(1) - don't, jumps
-! top of the right column
+! top-left fixed "Рассылка Forbes"
+forbes.ru##*:matches-css(height:176px)
+    ! top of the right column
 forbes.ru##img[src="/placeholder.svg"]:upward(1)
     ! subscribe
 forbes.ru##a:has-text(Подписаться)
@@ -27422,6 +27437,7 @@ vokrugsveta.ru##.creative__slot
 geeksforgeeks.org##.header-main__slider:style(position:static !important)
 geeksforgeeks.org##.vote-wrap
 geeksforgeeks.org##.tooltip
+geeksforgeeks.org##.editor-buttons-container:style(position:static !important)
 
 thehealthsite.com##.zee-coins
 
@@ -28106,3 +28122,88 @@ tamilsex24.com##.list
 zzbabes.com###bclose
 
 thenewstack.io###tns-footer-bar
+
+scrapfly.io##.sticky-nav:style(position:static !important)
+
+neolurk.org###left-navigation:style(margin-top:0px !important; margin-bottom:0px !important)
+
+doctoram.net###sidebar
+doctoram.net###cats:style(position:static !important)
+
+investopedia.com$3p  # click.investopedia.com  # transferred to 3p
+investopedia.fr$3p
+
+! banners and promos
+aliexpert.com.ua##.gb-container
+
+ali-skidki.com##.gridlove-header-wrapper
+
+! long inline toc
+svyazin.ru##.toc
+
+! popups
+alihot.ru##.cp-btn-wrapper
+
+||foto.vsesoki.ru/*/5kbpromo.gif
+vsesoki.ru##.loader
+vsesoki.ru##.panel_left
+vsesoki.ru##.cat-arrow
+vsesoki.ru###middle:style(margin-top:0px !important)
+
+hub-book.com##.b-reader:style(padding-top:0px !important)
+hub-book.com##.b-reader-top:style(position:static !important)
+hub-book.com##.b-footer-bottom:style(padding-top:0px !important; margin-top:0px !important)
+hub-book.com##.b-reader:style(padding-bottom:0px !important)
+
+freecodecamp.org##.site-nav-logo
+
+||radio-online.su/gugl_play.png
+radio-online.su##.side-desc
+
+! seo
+hitmotop.com##.p-info-description
+
+    ! popups
+||megabonus.com/images/comebacker
+megabonus.com###install_ext
+megabonus.com###comeback-modal
+||megabonus.com/scripts/installext.js
+||megabonus.com/scripts/user/comebacker.js
+    ! top
+megabonus.com##.blog_megabonus
+    ! bottom
+megabonus.com###main:style(padding-bottom:0px !important)
+    ! other
+megabonus.com##noindex
+megabonus.com###footer
+megabonus.com##.megabonus_projects
+
+kakzarabativat.ru##.sticky.head
+! fake notifications
+kakzarabativat.ru##.bagde
+! inline toc
+kakzarabativat.ru##.contents
+
+restcamp.ru##.carousel
+! seo texts
+restcamp.ru##.text-white
+restcamp.ru##.navbar
+
+dataoverhaulers.com##.about-copy
+dataoverhaulers.com##.legal-info-container
+
+headphonesty.com##body:style(font-family:initial !important)
+
+moscow-city.guide###line-scroll
+moscow-city.guide###sp-up
+
+! fixed panel
+soundguys.com##aside
+! progress
+soundguys.com##div:style(transform:none !important)
+! inline related
+soundguys.com##p:has(strong:has-text(Related:))
+
+thegadgetbuyer.com##.widget-area
+thegadgetbuyer.com##.entry-author
+
