@@ -605,6 +605,10 @@
 
 /plugins/chimpmatepro/*  # from Adguard
 
+/plugins/chlz-pop-up/*
+    ##.chlz__pop-up
+    ##.chlz__pop-up-overlay
+
 /plugins/christmas-greetings/  # from Ru AdList
 
 /plugins/christmasify/*
@@ -1377,6 +1381,8 @@
 
 /plugins/miniorange-login-openid/*
 
+/plugins/mistape/*
+
 !/plugins/ml-slider/*  # from EasyList: eawaz.com/wp-content/plugins/ml-slider/ (removed)
 
 /plugins/mm-social-share/*$~stylesheet
@@ -1927,7 +1933,7 @@
     ! /plugins/social-network-tabs/*$important
     ! /plugins/social-share-buttons-by-supsystic/*  # from Adguard
     ! /plugins/socialsnap/*
-    ! /plugins/social-warfare/*  # from Adguard
+    ! /plugins/social-warfare/*  # is in Adguard
     !
     ! socialshareprivacy plugin:
     /jquery.socialshareprivacy.min.js$important
@@ -2276,11 +2282,7 @@
 
 /plugins/wp-content-copy-protection/*  # from Adguard
 
-! /plugins/wpdiscuz/ - don't, comments plugin, https://wordpress.org/plugins/wpdiscuz/
-    ! /plugins/wpdiscuz/assets/third-party/wpdcookiejs/customcookie.js - ?
-        ! not actual:
-        ! @@||downloadgameps3.com/wp-content/plugins/*/wpdcookiejs/customcookie.js$script,1p  # from uBlock filters – Unbreak
-        ! @@||gamepciso.com/wp-content/plugins/*/wpdcookiejs/customcookie.js$script,1p  # from uBlock filters – Unbreak
+/plugins/wp-coupons-and-deals/*
 
 /plugins/wp-cta-top-bar/*
 
@@ -2289,6 +2291,12 @@
 
 /plugins/wp-dark-mode/*
     ##.wp-dark-mode-switcher
+
+! /plugins/wpdiscuz/ - don't, it's a comments plugin, https://wordpress.org/plugins/wpdiscuz/
+    ! /plugins/wpdiscuz/assets/third-party/wpdcookiejs/customcookie.js - ?
+        ! not actual:
+        ! @@||downloadgameps3.com/wp-content/plugins/*/wpdcookiejs/customcookie.js$script,1p  # from uBlock filters – Unbreak
+        ! @@||gamepciso.com/wp-content/plugins/*/wpdcookiejs/customcookie.js$script,1p  # from uBlock filters – Unbreak
 
 /plugins/wp-emailfeedburnerpop/*
 
