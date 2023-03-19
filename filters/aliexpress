@@ -201,14 +201,36 @@ aliexpress.ru$removeparam=tpp_rcmd_bucket_id
 
 ||alicdn.com/sc-affiliate/
 
+    ! popups
+alibaba.com##.shade
+alibaba.com##.form-box
+    ! top
+alibaba.com##.next-affix:style(position:static !important)
     ! logo
 alibaba.com##.sc-hd-m-logo
-
-! "get the app"
-alibaba.com##.sc-hd-download-link
-! fixed sidebar
+alibaba.com##.banner-top-left
+alibaba.com##.bannerTop-logo
+alibaba.com##.alibaba-logo
+    ! banners and promos
+alibaba.com##.suction-bottom-wrap
+alibaba.com##.bottom-wrap
+alibaba.com##.J-wending
+! "discount" counter
+alibaba.com##.product-activity
+    ! autoplay videos
+||cloud.video.alibaba.com/play/$media  # autoplay videos in top ads
+alibaba.com##.video-container
+!||video01.alibaba.com/vod-icbu/  # autoplay videos in product card - don't, sometimes useful
+    ! fixed sidebar
 alibaba.com##.bar-normal
 alibaba.com##.m-toolbar-side
+    ! other
+!alibaba.com##.banner-top - don't, it's a top menu
+!alibaba.com##.banner-topLeft - don't, it's a top menu
+alibaba.com##.pmod-social-card
+alibaba.com##.next-progress-line
+! "get the app"
+alibaba.com##.sc-hd-download-link
 
 
 !! aliexpress filters and subdomains
@@ -1573,12 +1595,22 @@ aliextop.ru###mouselayer
 
 alifenix.ru$important  # root redirects to https://s.click.aliexpress.com/...  # is in RU AdList  # see in _marketing__subdomains
 
+! popups
+alihot.ru##.cp-btn-wrapper
+
 aliprofi.ru##.knopkapodder
 
 ||aliradar.com/api/stats
 ||aliradar.com/graphql
 
 ||aliru*.ru^$third-party  # from Ru AdList
+
+alisale.by$script  # site blocks copypaste
+! "пишите комментарии"
+alisale.by##.question
+
+ali-sale.ru##.gridlove-header-wrapper
+ali-sale.ru##.gridlove-header-sticky:style(position:static !important)
 
 ||alishop*.ru^$third-party  # from Ru AdList
 ||alshops*.ru^$third-party  # from Ru AdList
@@ -1599,6 +1631,17 @@ alitools.io$important  # steals cashback  # see in _marketing__subdomains
 
 alitoptovar.ru##.expert-review-poll
 alitoptovar.ru##.btn
+
+aliwow.ru$script  # site blocks copypaste
+     ! popups
+aliwow.ru##.sgpb-popup-dialog-main-div-wrapper
+aliwow.ru##.sgpb-popup-overlay
+     ! banners and promos
+aliwow.ru##.FixedWidget__fixed_widget
+aliwow.ru##.js-link
+     ! other
+
+ali-yes.ru##.podborka-link
 
 expertali.ru###menu
 expertali.ru###head
