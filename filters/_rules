@@ -2337,7 +2337,6 @@ _tizers.  # from Ru AdList
     ! linkedin.com##.sub-nav-cta
 ##.c2018Q1CtaSolution
 ~degoo.com##.cta
-##.ctaButton
 ##.ctaSolutionSticky
 ##.ctaSolutionStickyWrapper
 ##.headerCta-Lo
@@ -2345,12 +2344,14 @@ _tizers.  # from Ru AdList
 
 
 
-!! inline related inserts in blogs
+!! inline related inserts in blogs, random inline blog insertions
 ##.ctaText
-##.ctaText ~ .postTitle
-! tested on several sites. Maybe needs correcting.
-##.ctaText:upward(2)
-
+    ##.ctaText ~ .postTitle
+    ! tested on several sites. Maybe needs correcting.
+    ##.ctaText:upward(2)
+    ##a:has(.ctaText)
+##.ctaButton
+    ##a:has(.ctaButton)
 
 
 !! ad "offers"
