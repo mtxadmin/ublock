@@ -10933,6 +10933,19 @@ joom.com##[class^=product_]:has([class^=adBadge])
 joom.com,joom.ru##div[class^=discount__]
 joom.com/*/getGoogleAnalyticsClientID
 !||joomcdn.net/web-client/bugsnag$redirect=noopjs - error
+joom.com##div[aria-label="Карусель акций"]
+joom.com##div[aria-label="Carousel of elements"]
+! "striked" prices
+joom.com##*:matches-css(text-decoration-line:line-through)
+! ads in search
+joom.com##div[class^=cell_]:has(img[src*="/adGroup"])
+! "discount" badges and apps pictures
+joom.com##[class^=badge_]
+! other badges
+joom.com##div[class^=offer_]
+! other badges
+joom.com##div[class^=notice_]
+joom.com##div[class*="seoBottomBlock_"]
 
 jorgebernhardt.com##.has-fixed-header.mb-brand
 jorgebernhardt.com##.mb-header-holder
