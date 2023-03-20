@@ -67,6 +67,7 @@ pikabu.ru##.feed-notify.info-banner
 pikabu.ru##.questions-sidebar-promo
 pikabu.ru##e-page--start--help
 pikabu.ru##e-header
+pikabu.ru##.app-banner
 !
     ! ads: promos and ad posts
 pikabu.ru##.section-group:has(p > a[href^="https://pikabu.ru/page/interview/"])
@@ -990,6 +991,29 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/ozon_provel_ucheniya_na_odnom_iz_svoikh_skladov_na_sluchay_ataki_vsu_9335254
     ! И это только на первой странице
 
+pikabu.ru##span:has-text(/^Opuon$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Opuon"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Opuon"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Opuon$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Opuon"]))
+    ! https://pikabu.ru/story/statya_putina_rossiya_i_kitay__partnerstvo_ustremlennoe_v_budushchee_polnyiy_tekst_10056812
+    ! https://pikabu.ru/story/v_parlamente_frantsii_rassmotryat_predlozheniya_o_nedoverii_pravitelstvu_10056775
+    ! https://pikabu.ru/story/osnovnyie_mitingi_protestyi_i_besporyadki_za_nedelyu_1219_marta_10056533
+    ! https://pikabu.ru/story/dr_kongo_poprosila_sodeystviya_rossii_v_borbe_s_terroristami_na_vostoke_stranyi_10055518
+    ! https://pikabu.ru/story/chtoto_dazhe_smeshno_stalo_10055088
+    ! https://pikabu.ru/story/nyt_aviakompanii_ssha_trebuyut_zapretit_inostrannyim_perevozchikam_poletyi_nad_rossiey_10052967
+    ! https://pikabu.ru/story/chtoto_stalo_nemnogo_smeshno_ot_pomenyavsheysya_reaktsii_nekotoryikh_lyudey_na_makron_i_le_pen_v_svyazi_s_pensionnoy_reformoy_10051050
+
+pikabu.ru##span:has-text(/^Vki13$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Vki13"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Vki13"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Vki13$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Vki13"]))
+    ! https://pikabu.ru/story/myi_tochno_vsyo_eshchyo_v_toy_realnosti_nakhodimsya_10056062
+    ! https://pikabu.ru/story/nemnogo_demokratii_i_svobodnogo_mira_vam_v_lentu_10055801
+    ! https://pikabu.ru/story/litsa_gruzinskikh_soprotvlentsev_predstavili_10035739
+    ! https://pikabu.ru/story/malenkie_treshchinyi_voennoe_edinstvo_ssha_i_ukrainyi_medlenno_treshchit_po_shvam_10033548
+
 pikabu.ru##span:has-text(/^Zelenskyy$/):style(color:#D0D0D0 !important)
 pikabu.ru##article.story:has(.user__nick[data-name="Zelenskyy"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Zelenskyy"]):not(:matches-path(/\/story\//))~div
@@ -1436,6 +1460,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="FancySunny"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^FancySunny$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="FancySunny"]))
+    ! v_tsentre_moskvyi_u_vkhoda_v_bolshoy_teatr_proshla_zaukrainskaya_aktsiya_protiv_spetsoperatsii_na_ukraine_9088301
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="AP1982"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^AP1982$/)):style(color:#F0F0F0)
@@ -3131,9 +3156,14 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="e4rni1"
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^e4rni1$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="e4rni1"]))
 
+! ватничек, смехуечки разбавляют контент
+pikabu.ru##span:has-text(/^BrushTool$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="BrushTool"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^BrushTool$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="BrushTool"]))
+    ! https://pikabu.ru/story/evgen_karas_rasskazyivaet_o_roli_radikalnyikh_natsionalistov_v_tekushchem_polozhenii_ukrainyi_i_kak_oni_povliyali_na_maydan_i_chto_oni_khotyat_8909053
+    ! https://pikabu.ru/story/kak_meduza_sozdaet_negativ_ot_pozitivnyikh_izmeneniy_beloe__chyornoe_9415822
+    ! https://pikabu.ru/story/otvet_na_post_vidimo_yeto_irantsyi_sami_letayut_9565077
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Cymes2"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Cymes2$/)):style(color:#F0F0F0)
@@ -3850,10 +3880,6 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="dragonxp"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^dragonxp$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="dragonxp"]))
-
-pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Opuon"]):not(:matches-path(/\/story\//))~div
-pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Opuon$/)):style(color:#F0F0F0)
-pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Opuon"]))
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="neis124"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^neis124$/)):style(color:#F0F0F0)
@@ -5313,6 +5339,15 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/god_proshyol__i_chyort_s_nim__komolov_amp_abdulov_9845587
     ! https://pikabu.ru/story/dedollarizatsiya_mif_ili_realnost__oleg_komolov_prostyie_chisla_9776237
     ! https://pikabu.ru/story/kommunisticheskaya_partiya_navalnogo_5472927
+
+pikabu.ru##span:has-text(/^Slart$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Slart"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Slart$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Slart"]))
+    ! https://pikabu.ru/story/pentagon_pokazal_video_sbrosa_topliva_rossiyskim_su27_na_bpla_ssha_mq9_reaper_10045913
+    ! https://pikabu.ru/story/dvoynyie_standartyi_10000022
+    ! https://pikabu.ru/story/slozhnosti_novogo_yazyika_9863684
+    ! https://pikabu.ru/story/zakreplenie_v_zakone_prizyivnogo_vozrasta_s_21_goda_mozhet_proizoyti_v_2023_godu_9775528
 
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
