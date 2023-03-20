@@ -18490,6 +18490,12 @@ reddit.com##a[aria-label="Home"]
 reddit.com##div[class][data-before-content="advertisement"]:not([id])
 ! empty div under the post (before comments)
 reddit.com##.ListingLayout-outerContainer > div > div > div > div > div:has-text(/^$/)
+    ! default avatars are ugly
+||redditstatic.com/shreddit/assets/favicon/$image
+||redditmedia.com/*/styles/communityIcon$image
+||redditstatic.com/avatars/defaults/$image
+||redditmedia.com/*/styles/profileIcon_snoo$image
+||redditstatic.com/shreddit/assets/snoovatar$image
     ! other
 ! from EasyList
 reddit.com##div[id^="overlay-sidebar-atf-"]
@@ -28217,3 +28223,11 @@ soundguys.com##p:has(strong:has-text(Related:))
 thegadgetbuyer.com##.widget-area
 thegadgetbuyer.com##.entry-author
 
+alpindustria.ru##.contact_top
+alpindustria.ru##.plashka
+alpindustria.ru##.rr_widget
+alpindustria.ru##.new-advantages
+alpindustria.ru###top-link
+
+! overlay
+anonymsms.com##.header-mobile-menu
