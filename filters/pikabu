@@ -5451,6 +5451,14 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/yadernyiy_apokalipsis_vsyo_blizhe_no_ego_mozhno_ostanovit_9886973?cid=262955874
     ! https://pikabu.ru/story/yadernyiy_apokalipsis_vsyo_blizhe_no_ego_mozhno_ostanovit_9886973?cid=262952874
 
+pikabu.ru##span:has-text(/^Merrus$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Merrus"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Merrus$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Merrus"]))
+    ! https://pikabu.ru/story/sveta_ya_proshchala_tebya_10062763
+    ! https://pikabu.ru/story/yeto_drugoe_iz_palatyi_mer_i_vesov_10058637
+    ! https://pikabu.ru/story/v_kompyuternoy_igre_civilization_vi_uberut_vozmozhnost_oderzhat_pobedu_pri_igre_za_rossiyu_9987466
+
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^history2022$/)):style(color:#F0F0F0)
