@@ -278,6 +278,10 @@ _vkontakte.png  # from Ru AdList
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
+! Oh, yes! Long-awaited feature! https://github.com/uBlockOrigin/uBlock-issues/issues/2531
+vk.com,vk.ru##+js(href-sanitizer, a[href^="/away.php?to="]:not([title]))
+vk.com,vk.ru##+js(href-sanitizer, a[href^="/away.php?to="][title], [title])
+!
     ! popups
 ! vk.com##.box_body:has(.vk_connect_policy_notice_box)  # test remove 2020-07
 ! vk.com###box_layer_wrap  # test remove 2020-07
@@ -730,6 +734,9 @@ platform.twitter.com/widgets.js$important
 ! cosmetic filters
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
+!
+! Oh, yes! Long-awaited feature! https://github.com/uBlockOrigin/uBlock-issues/issues/2531
+twitter.com##+js(href-sanitizer, a[href^="https://t.co/"])
 !
 ~twitter.com##[class*="Tweet"]:not(html):not(body):not(article)
 ~twitter.com##[id*="Tweet"]:not(html):not(body):not(article)
