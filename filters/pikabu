@@ -506,6 +506,11 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="finkovi
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^finkovich$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="finkovich"]))
 
+! blocked for multiacc
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="AlexKrouli"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^AlexKrouli$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="AlexKrouli"]))
+
 
 !! Активные боты и ватники
 
@@ -2790,9 +2795,13 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="4esalMa
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^4esalMantu$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="4esalMantu"]))
 
+pikabu.ru##span:has-text(/^mox3r$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="mox3r"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^mox3r$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="mox3r"]))
+    ! https://pikabu.ru/story/yadernyiy_apokalipsis_vsyo_blizhe_no_ego_mozhno_ostanovit_9886973
+    ! https://pikabu.ru/story/a_olenichev_prizovite_menya_na_voynu_9703409
+    ! https://pikabu.ru/story/novyie_priklyucheniya_nepolzhivoy_pressyi_9498378
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ZSLAVA.ru"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ZSLAVA.ru$/)):style(color:#F0F0F0)
@@ -3898,9 +3907,15 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Timehaz
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Timehaze$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Timehaze"]))
 
+pikabu.ru##span:has-text(/^ElFarango$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ElFarango"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ElFarango$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="ElFarango"]))
+    ! https://pikabu.ru/story/britaniya_reshila_peredat_ukraine_boepripasyi_s_obednennyim_uranom_10062257
+    ! https://pikabu.ru/story/prismotrite_za_svoey_stranoy_a_myi_prismotrim_za_svoey_10034569
+    ! https://pikabu.ru/story/gruzinskie_boytsyi_prinimayushchie_uchastie_v_voyne_za_ukrainu_vozvrashchayutsya_chtobyi_ustroit_gosperevorot_v_gruzii_utverzhdaet_gruzinskiy_politik_10029536
+    ! https://pikabu.ru/story/pryamaya_translyatsiya_u_parlamenta_gruzii_vozobnovilas_aktsiya_protesta_10020914
+    ! https://pikabu.ru/story/ssha_trebuyut_ot_turtsii_zapretit_poletyi_boeing_prinadlezhashchie_rf_9886844
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Meatelf"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Meatelf$/)):style(color:#F0F0F0)
@@ -4050,9 +4065,15 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Schneid
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Schneider21$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Schneider21"]))
 
+pikabu.ru##span:has-text(/^YURITIGER$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="YURITIGER"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^YURITIGER$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="YURITIGER"]))
+    ! https://pikabu.ru/story/otvet_na_post_vs_ssha_zayavili_o_stolknovenii_rossiyskogo_su27_s_amerikanskim_bpla_mq9_10042419
+    ! https://pikabu.ru/story/na_ukraine_proshel_sotsopros_pered_vyiborami_deputatov_9722034
+    ! https://pikabu.ru/story/otvet_na_post_srazu_byilo_ponyatno_chto_tut_ne_oboydyotsya_bez_kurvyi_9604419
+    ! https://pikabu.ru/story/otvet_na_post_video_ot_cnn_o_rastrele_grazhdanskikh_rossiyskimi_voennyimi_v_avtosalone_po_doroge_na_kiev_9104697
+    ! https://pikabu.ru/story/okonchatelnoe_razoblachenie_feyka_s_roddomom_v_mariupole_8946381
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="moonlane"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^moonlane$/)):style(color:#F0F0F0)
@@ -4747,9 +4768,16 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="yivozer
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^yivozerg$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="yivozerg"]))
 
+pikabu.ru##span:has-text(/^Kotshred$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Kotshred"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Kotshred$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Kotshred"]))
+    ! https://pikabu.ru/story/raskryit_oblik_rossiyskogo_bespilotnogo_samoleta_tramp_10046683?cid=267772227
+    ! https://pikabu.ru/story/sotrudniki_pvz_vayldberriz_obyavili_zabastovku_10042046?cid=267654834
+    ! https://pikabu.ru/story/sotrudniki_pvz_vayldberriz_obyavili_zabastovku_10042046?cid=267656206
+    ! https://pikabu.ru/story/vozdushnyiy_khuligan_vasya_tsyimbal_10041944?cid=267659254
+    ! https://pikabu.ru/story/vozdushnyiy_khuligan_vasya_tsyimbal_10041944?cid=267660029
+    ! https://pikabu.ru/story/vozdushnyiy_khuligan_vasya_tsyimbal_10041944?cid=267660992
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="JlEHb9"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^JlEHb9$/)):style(color:#F0F0F0)
