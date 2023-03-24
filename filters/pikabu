@@ -444,7 +444,9 @@ pikabu.ru##article.story:has(.story__user-info:has-text(Аноним)):not(:matc
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Аноним"]))
 ! Промо от администрации. Ну, такое себе
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))~div
 
 
 ! Сворачивание ботоконтента
@@ -529,6 +531,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
 pikabu.ru##span:has-text(/^torbova$/):style(color:#D0D0D0 !important)
 pikabu.ru##article.story:has(.user__nick[data-name="torbova"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="torbova"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="torbova"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^torbova$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="torbova"]))
 pikabu.ru##.rv-related:has(.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="torbova"]))
