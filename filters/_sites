@@ -28288,3 +28288,12 @@ iplocation.com$3p  # from ShadowWhisperer's Tracking
 iplocation.net$3p  # from ShadowWhisperer's Tracking
 
 nozhiman.ru###tcb_call_1
+
+||dualshockers.com/public/build/newsletter-popup
+! lazyload data-img-url => src
+! window.googletag === typeof undefined || !window.googletag.hasOwnProperty('cmd') || typeof window.adsNinjaHeaderBiddingManager
+! don't work:
+!dualshockers.com##+js(set, window.googletag, noopFunc)
+!dualshockers.com##+js(set, window.googletag.com, noopFunc)
+!dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager, noopFunc)
+!dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager.arePassiveEventListenersSupported, noopFunc)
