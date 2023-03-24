@@ -11533,6 +11533,10 @@ kngnator.com##.flex-v-center:has(b)
 
 knife.media##.widget-recent
 
+! popup
+knife.ru##.geolocation
+knife.ru##.foot_panel_all:style(position:static !important)
+
 kniga-online.com##.owl-carousel
 kniga-online.com##.karusel
 kniga-online.com##.fa-book
@@ -28282,3 +28286,14 @@ ipinfo.info$3p  # from ShadowWhisperer's Tracking
 
 iplocation.com$3p  # from ShadowWhisperer's Tracking
 iplocation.net$3p  # from ShadowWhisperer's Tracking
+
+nozhiman.ru###tcb_call_1
+
+||dualshockers.com/public/build/newsletter-popup
+! lazyload data-img-url => src
+! window.googletag === typeof undefined || !window.googletag.hasOwnProperty('cmd') || typeof window.adsNinjaHeaderBiddingManager
+! don't work:
+!dualshockers.com##+js(set, window.googletag, noopFunc)
+!dualshockers.com##+js(set, window.googletag.com, noopFunc)
+!dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager, noopFunc)
+!dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager.arePassiveEventListenersSupported, noopFunc)

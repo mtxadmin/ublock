@@ -444,7 +444,9 @@ pikabu.ru##article.story:has(.story__user-info:has-text(Аноним)):not(:matc
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Аноним"]))
 ! Промо от администрации. Ну, такое себе
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))~div
 
 
 ! Сворачивание ботоконтента
@@ -529,6 +531,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
 pikabu.ru##span:has-text(/^torbova$/):style(color:#D0D0D0 !important)
 pikabu.ru##article.story:has(.user__nick[data-name="torbova"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="torbova"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="torbova"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^torbova$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="torbova"]))
 pikabu.ru##.rv-related:has(.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="torbova"]))
@@ -2508,9 +2511,17 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Boriska
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Boriskach$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Boriskach"]))
 
+! смехуёчки и ватничество
+pikabu.ru##span:has-text(/^cptDosug$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="cptDosug"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="cptDosug"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^cptDosug$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="cptDosug"]))
+    ! https://pikabu.ru/story/fotofakt_9922184
+    ! https://pikabu.ru/story/kak_russkie_ostavlyali_novuyu_kakhovku_10070608
+    ! https://pikabu.ru/story/v_voennoe_vremya_chislo_pi_dostigaet_chetyiryokh__9602899
+    ! https://pikabu.ru/story/pokayanie_krasovskogo_9583399
+    ! https://pikabu.ru/story/antidronovyie_9564735
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Noconformist"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Noconformist$/)):style(color:#F0F0F0)
@@ -3622,9 +3633,16 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Toxito"
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Toxito$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Toxito"]))
 
+pikabu.ru##span:has-text(/^Geoross$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Geoross"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Geoross"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Geoross$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Geoross"]))
+    ! https://pikabu.ru/story/spisok_deputatov_gosdumyi_uekhavshikh_v_zonu_svo_ili_podavshikh_zayavleniya_na_mobilizatsiyu_9569779
+    ! https://pikabu.ru/story/evgeniy_royzman_i_g_9322708
+    ! https://pikabu.ru/story/shikarnoe_video_proryiva_pvo_pod_dnepropetrovskom_9283430
+    ! https://pikabu.ru/story/nemetskiy_malchik_zigi_i_sanktsii_chast_3_9146467
+    ! https://pikabu.ru/story/podborka_krestikovot_bpla_inokhodets_9029347
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Polom"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Polom$/)):style(color:#F0F0F0)
@@ -4153,9 +4171,14 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="9poIIIa
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^9poIIIa$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="9poIIIa"]))
 
+pikabu.ru##span:has-text(/^SedoyIrlandec$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="SedoyIrlandec"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="SedoyIrlandec"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^SedoyIrlandec$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="SedoyIrlandec"]))
+    ! https://pikabu.ru/story/o_sbitom_bespilotnike_10068064
+    ! https://pikabu.ru/story/o_tsennostyakh_10065907
+    ! https://pikabu.ru/story/ob_odesse_9608464
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="soniaspit"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^soniaspit$/)):style(color:#F0F0F0)
@@ -4321,9 +4344,26 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="sidor1"
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^sidor1$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="sidor1"]))
 
+pikabu.ru##span:has-text(/^Baltnews$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Baltnews"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Baltnews"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Baltnews$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Baltnews"]))
+    ! https://pikabu.ru/story/zhelayushchikh_oskvernyat_chuzhie_tsennosti_v_evrope_vse_bolshe_9875548
+    ! https://pikabu.ru/story/kak_grek_chiliets_i_russkiy_pridumali_bukhanku_i_pomogayut_zhitelyam_donbassa_9474605
+    ! https://pikabu.ru/story/zhitel_narvyi_s_russkim_pasportom_vyishel_za_granitsu_a_obratno_ne_pustili_9673618
+    ! https://pikabu.ru/story/yestonskie_pogranichniki_potrebovali_ot_bezhentsev_brosit_kota_chtobyi_popast_v_stranu_9460233
+
+pikabu.ru##span:has-text(/^Seferot1986$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Seferot1986"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Seferot1986"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Seferot1986$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Seferot1986"]))
+    ! https://pikabu.ru/story/neudobno_poluchilos_9959703
+    ! https://pikabu.ru/story/v_altayskom_krae_zaderzhan_yekstremist_za_oskorbleniya_i_prizyivyi_k_ubiystvu_grazhdan_rossiyskoy_federatsii_9455988
+    ! https://pikabu.ru/story/v_mariupole_pervyie_semi_poluchili_klyuchi_ot_novenkikh_kvartir_9447658
+    ! https://pikabu.ru/story/memorialnyiy_kompleks_saurmogila_polnostyu_vosstanovlen_9441819
+    ! https://pikabu.ru/story/kakuyu_krasotu_nashi_zababakhal_v_mariupole_9432389
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="bobstfik20six"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^bobstfik20six$/)):style(color:#F0F0F0)
@@ -4341,9 +4381,15 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="6yxou"]
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^6yxou$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="6yxou"]))
 
+pikabu.ru##span:has-text(/^denis3bo$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="denis3bo"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="denis3bo"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^denis3bo$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="denis3bo"]))
+    ! https://pikabu.ru/story/volonterom_na_donbass_lekarstva_9600329
+    ! https://pikabu.ru/story/budni_volonterov_na_donbasse_9596948
+    ! https://pikabu.ru/story/budni_volonterov_nv_donbasse_2_9602509
+    ! https://pikabu.ru/story/mariupol_mikrorayon_cheremushki_letoosen_2022_9527355
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dentraveler"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Dentraveler$/)):style(color:#F0F0F0)
@@ -4790,9 +4836,12 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="miam"])
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^miam$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="miam"]))
 
+pikabu.ru##span:has-text(/^MoToPuCT$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="MoToPuCT"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="MoToPuCT"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^MoToPuCT$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="MoToPuCT"]))
+    ! https://pikabu.ru/story/chyornyiy_tank_10067690
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Rasyn"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Rasyn$/)):style(color:#F0F0F0)
@@ -5025,6 +5074,7 @@ pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:h
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Dzhubadze"]))
 
 pikabu.ru##span:has-text(/^Dobrik74$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Dobrik74"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Dobrik74"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Dobrik74$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Dobrik74"]))
@@ -5039,6 +5089,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/neobyichnyiy_politicheskiy_fenomen_koronavirusa_7374646
     
 pikabu.ru##span:has-text(/^sssr24$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="sssr24"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="sssr24"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^sssr24$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="sssr24"]))
@@ -5047,6 +5098,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/nemtsyi_otvetili_na_vopros__chey_kryim_yeksposol_melnik_opyat_oskandalilsya_9709152
 
 pikabu.ru##span:has-text(/^vivattVAD$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="vivattVAD"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="vivattVAD"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^vivattVAD$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="vivattVAD"]))
@@ -5056,6 +5108,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/voyskovaya_chast__10003_9742332
 
 pikabu.ru##span:has-text(/^qwer2004$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="qwer2004"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="qwer2004"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^qwer2004$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="qwer2004"]))
@@ -5067,6 +5120,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/otvet_idikudapodalshe_v_nu_raz_poshla_takaya_pyanka_odin_iz_moikh_lyubimyikh_anekdotov_9746855
 
 pikabu.ru##span:has-text(/^Viktor198319$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Viktor198319"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Viktor198319"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Viktor198319$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Viktor198319"]))
@@ -5376,6 +5430,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
 
 ! "Za Мир! Зa праVду!" - не, просто ватник
 pikabu.ru##span:has-text(/^poFACKtu$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="poFACKtu"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="poFACKtu"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^poFACKtu$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="poFACKtu"]))
@@ -5387,6 +5442,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/vozmozhnosti_diplomatii_segodnya_10002574
 
 pikabu.ru##span:has-text(/^cdomodedovo$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="cdomodedovo"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="cdomodedovo"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^cdomodedovo$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="cdomodedovo"]))
@@ -5395,6 +5451,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! и много телеграм-рекламы
 
 pikabu.ru##span:has-text(/^Bob91$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Bob91"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Bob91"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Bob91$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Bob91"]))
@@ -5404,6 +5461,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/rossiyskaya_armiya_budet_unichtozhena_esli_ona_naneset_yadernyiy_udar_po_ukraine_preduprezhdaet_zhozep_borrel_9589365
 
 pikabu.ru##span:has-text(/^BezRodiny$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="BezRodiny"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="BezRodiny"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^BezRodiny$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="BezRodiny"]))
@@ -5463,6 +5521,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
 
 ! реклама ватного mskvremya.ru
 pikabu.ru##span:has-text(/^mskvremya$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="mskvremya"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="mskvremya"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^mskvremya$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="mskvremya"]))
@@ -5480,11 +5539,13 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/esli_yeto_ne_dvoynyie_standartyi_to_ya_ne_ministr_inostrannyikh_del_10053198
 
 pikabu.ru##span:has-text(/^Kitsdurak$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Kitsdurak"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Kitsdurak"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Kitsdurak$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Kitsdurak"]))
     ! https://pikabu.ru/story/kto_u_nas_tut_takoy_dogovorosposobnyiy_10059481
     ! https://pikabu.ru/story/mirnyiy_protest_10020031
+    ! https://pikabu.ru/story/a_blizhe_stran_net_chto_byi_pomoch_s_demokratiey_10067809
 
 pikabu.ru##span:has-text(/^PornDungeon$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="PornDungeon"]):not(:matches-path(/\/story\//))~div
@@ -5496,6 +5557,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/russkiy_gaz_9472475
 
 pikabu.ru##span:has-text(/^Jvbx$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Jvbx"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Jvbx"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Jvbx$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Jvbx"]))
@@ -5549,6 +5611,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/sovmestnoe_zayavlenie_rf_i_kitaya_10063294
 
 pikabu.ru##span:has-text(/^nochnoj$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="nochnoj"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="nochnoj"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^nochnoj$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="nochnoj"]))
@@ -5560,6 +5623,7 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/otvet_na_post_moment_unichtozheniya_tankom_gruppyi_vsu_v_upor_ot_pervogo_litsa_9018782
 
 pikabu.ru##span:has-text(/^Singapore$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Singapore"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Singapore"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Singapore$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Singapore"]))
@@ -5639,6 +5703,205 @@ pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:h
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="voldemar12"]))
     ! https://pikabu.ru/story/duda_zayavil_chto_polsha_s_ukrainoy_ne_budet_imet_granits_9087565
     ! https://pikabu.ru/story/britaniya_sobiraetsya_peredat_ukraine_boepripasyi_s_obednennyim_uranom_10062091
+
+pikabu.ru##span:has-text(/^YriyOtradnoe$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="YriyOtradnoe"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^YriyOtradnoe$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="YriyOtradnoe"]))
+
+! первый пост и сразу в политику
+pikabu.ru##span:has-text(/^Glib45679$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Glib45679"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Glib45679$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Glib45679"]))
+    ! https://pikabu.ru/story/deputat_parlamenta_rumyinii_mikhay_ioan_laska_prizval_vlasti_stranyi_vyiyti_iz_nato_10066362
+
+pikabu.ru##span:has-text(/^Osen2022$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Osen2022"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Osen2022$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Osen2022"]))
+    ! https://pikabu.ru/story/dokumentyi_podtverdili_rol_ukrainskikh_karateley_v_sozhzhenii_zhiteley_khatyini_10064589
+    ! https://pikabu.ru/story/yoklmn_oni_uzhe_do_kalugi_doletayut_9923734
+    ! https://pikabu.ru/story/ot_geroev_byilyikh_vremyon__novyim_9921961
+
+! армейская вата
+pikabu.ru##span:has-text(/^MilitaryHistory$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="MilitaryHistory"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^MilitaryHistory$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="MilitaryHistory"]))
+    ! https://pikabu.ru/story/segodnya_korotkiy_rolik_s_fotografiyami_nekotoryikh_voennosluzhashchikh_pogibshikh_v_raznoe_vremya_nachinaya_s_fevralya_i_zakanchivaya_dekabrem_2022_goda_9980919
+    ! https://pikabu.ru/story/yekipazh_korabley_tof_mozhet_popast_v_knigu_rekordov_vs_rf_posle_boevoy_sluzhbyi_v_sredizemnom_more_9658372
+    ! https://pikabu.ru/story/kreyser_varyag_i_bpk_admiral_tributs_napravlyayutsya_vo_vladivostok_9652149
+    ! https://pikabu.ru/story/an74_vir__samolyot_s_shikarnyim_intererom_na_nyom_letal_muammar_kaddafi_9631656
+    ! https://pikabu.ru/story/norvezhskiy_samolyot_sbrosil_buy_s_mikrofonami_pryamo_pered_apl_knyaz_vladimir_9622551
+    ! https://pikabu.ru/story/atomnaya_podvodnaya_lodka_generalissimus_suvorov_vyipolnila_strelbu_ballisticheskoy_raketoy_bulava_9614030
+
+pikabu.ru##span:has-text(/^Lukaut$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Lukaut"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Lukaut$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Lukaut"]))
+    ! https://pikabu.ru/story/vsyo_tak_i_est_9100448
+    ! https://pikabu.ru/story/angliyskiy_naemnik_yendryu_khill_do_i_posle_vstrechi_s_vs_rf_9094612
+
+pikabu.ru##span:has-text(/^DragonRU$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="DragonRU"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^DragonRU$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="DragonRU"]))
+    ! https://pikabu.ru/story/v_ssha_tsenzuryi_net_s_lyuboy_idiot_7946315
+    ! https://pikabu.ru/story/vyi_ne_ponimaete_yeto_drugoe_7833028
+    ! https://pikabu.ru/story/otvet_na_post_2_17_avgusta_protestyi_v_belarusi_7657973
+    ! https://pikabu.ru/story/otvet_na_post_kazakhstan_s_1_aprelya_nachnyot_blokirovat_tovaryi_kotoryie_idut_v_rossiyu_po_parallelnomu_importu_10070190
+
+! сплошное @AlexRadio
+pikabu.ru##span:has-text(/^KioSoffi$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="KioSoffi"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="KioSoffi"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^KioSoffi$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="KioSoffi"]))
+
+pikabu.ru##span:has-text(/^Pornopskov$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Pornopskov"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Pornopskov"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Pornopskov$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Pornopskov"]))
+    ! https://pikabu.ru/story/amerikanskiy_voennyiy_yekspert_sryivaet_pokrovyi_10069747
+    ! https://pikabu.ru/story/s_transportnyikh_samolyotov_vvs_ssha_udalyayutsya_bortovyie_nomera_i_identifikatsionnyie_kodyi_10018204
+    ! https://pikabu.ru/story/otvet_na_post_myi_ne_budem_zagonyat_nikogo_palkami_na_voynu_s_9966513
+
+pikabu.ru##span:has-text(/^Baloo666$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Baloo666"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Baloo666"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Baloo666$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Baloo666"]))
+    ! https://pikabu.ru/story/mariupol_10069676
+    ! https://pikabu.ru/story/donetsk_10030242
+    ! https://pikabu.ru/story/muzyikalnodramaticheskiy_teatr_9795032
+
+pikabu.ru##span:has-text(/^Annagarts$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Annagarts"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Annagarts"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Annagarts$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Annagarts"]))
+    ! https://pikabu.ru/story/korol_i_shut_novoe_zvuchanie_10069373
+    ! https://pikabu.ru/story/kakov_khod_a_9500635
+    ! https://pikabu.ru/story/proverka_vremenem_9127860
+    ! https://pikabu.ru/story/otvet_makwinroom_v_v_evrosoyuze_predlozhili_lishit_serbiyu_finansovoy_pomoshchi_za_podderzhku_rossii_9095058
+
+! про-сербский ватничек
+pikabu.ru##span:has-text(/^1983$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="1983"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="1983"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^1983$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="1983"]))
+
+pikabu.ru##span:has-text(/^LimovPolitologia$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="LimovPolitologia"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="LimovPolitologia"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^LimovPolitologia$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="LimovPolitologia"]))
+    ! https://pikabu.ru/story/nato__ugroza_miru_sovetskiy_propagandistskiy_film_dlya_shkolnikov_1985_g_10069140
+    ! https://pikabu.ru/story/miting_vo_lvove_posvyashchyonnyiy_prisoedineniyu_zapadnoy_ukrainyi_k_sssr_10050031
+    ! https://pikabu.ru/story/karikatura_i_propaganda_mezhdu_pervoy_i_vtoroy_mirovoy_voynoy_10046638
+
+! "наша цель - коммунизм"
+pikabu.ru##span:has-text(/^Smoki77777$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Smoki77777"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Smoki77777"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Smoki77777$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Smoki77777"]))
+    ! https://pikabu.ru/story/vashington_muzey_zhertv_kommunizma_on_posvyashchen_100_000_000_mnimyikh_zhertv_kommunisticheskikh_rezhimov_9869020
+    ! https://pikabu.ru/story/ocherednaya_zhertva_politicheskogo_terrora_9783434
+
+pikabu.ru##span:has-text(/^pro100maxik$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="pro100maxik"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pro100maxik"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^pro100maxik$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="pro100maxik"]))
+    ! https://pikabu.ru/story/prodolzhenie_posta_novyiy_uroven_marazma_9038349
+    ! https://pikabu.ru/story/novyiy_uroven_marazma_9035628
+    ! https://pikabu.ru/story/gumanitarnaya_pomoshch_9025768
+    ! https://pikabu.ru/story/samouvazhenie_9015196
+
+! ватничек
+pikabu.ru##span:has-text(/^VadimFedorov$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="VadimFedorov"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="VadimFedorov"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^VadimFedorov$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="VadimFedorov"]))
+    ! https://pikabu.ru/story/malyiy_biznes_10070516
+    ! https://pikabu.ru/story/kuda_propal_aleks_radio_est_otvet_10051407
+    ! https://pikabu.ru/story/shefa_uvolili_iz_teatra_9845472
+
+! восимь лет
+pikabu.ru##span:has-text(/^TrueMorfei$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="TrueMorfei"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="TrueMorfei"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^TrueMorfei$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="TrueMorfei"]))
+
+! и еще восимь
+pikabu.ru##span:has-text(/^KuznecSerega$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="KuznecSerega"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="KuznecSerega"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^KuznecSerega$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="KuznecSerega"]))
+
+pikabu.ru##span:has-text(/^ZZYbeR$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="ZZYbeR"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ZZYbeR"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ZZYbeR$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="ZZYbeR"]))
+    ! https://pikabu.ru/story/mariupol__yanvar_2023_9920308
+    ! https://pikabu.ru/story/svoe_mnenie_ob_svo_vyiskazal_oliver_stoun_9708284
+    ! https://pikabu.ru/story/intervyu_rodzhera_uotersa_cnn_9348067
+    ! https://pikabu.ru/story/pelosi_otklonilas_ot_kursa_9323692
+
+pikabu.ru##span:has-text(/^Alex.Mitl$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Alex.Mitl"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Alex.Mitl$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Alex.Mitl"]))
+    ! https://pikabu.ru/story/obstrel_donetska_16012023_9851424
+    ! https://pikabu.ru/story/oskara_yetomu_akteru_8864427
+    ! https://pikabu.ru/story/kak_tak_to_8858901
+
+pikabu.ru##span:has-text(/^The.Batman$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="The.Batman"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="The.Batman"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^The.Batman$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="The.Batman"]))
+    ! https://pikabu.ru/story/vse_chto_nado_znat_o_tepereshnem_sharie_9959570
+    ! https://pikabu.ru/story/prigozhin_vs_strelkov_9893612
+    ! https://pikabu.ru/story/mariupol_chto_izmenilos_za_polgoda_9830013
+    ! https://pikabu.ru/story/zhiv_mariupol_prikvel_9440143
+    ! https://pikabu.ru/story/a_kak_smyisl_pomenyalsya_8915048
+
+pikabu.ru##span:has-text(/^ykrainec$/):style(color:#D0D0D0 !important)
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ykrainec"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ykrainec$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="ykrainec"]))
+    ! https://pikabu.ru/story/zhelanie_v_novom_godu_9802832
+
+pikabu.ru##span:has-text(/^SuperSnowflake$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="SuperSnowflake"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="SuperSnowflake"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^SuperSnowflake$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="SuperSnowflake"]))
+    ! https://pikabu.ru/story/otvet_na_post_rossiya_predstavit_faktyi_narusheniya_ssha_i_ukrainoy_konventsii_po_biooruzhiyu_9425863
+    ! https://pikabu.ru/story/v_neapole_protestuyushchie_szhigayut_scheta_za_yelektroyenergiyu_posle_povyisheniya_tarifov_v_tri_raza_9423869
+    ! https://pikabu.ru/story/v_zaporozhe_rasskazali_o_sryive_popyitki_vsu_vyisadit_desant_v_yenergodare_9423774
+    ! https://pikabu.ru/story/rossiya_mozhet_primenit_yadernoe_oruzhie_9422957
+    ! https://pikabu.ru/story/prodolzhenie_posta_darya_dugina__vechnaya_pamyat_fanatyi_serbskoy_tsrvenyi_zvezdyi_pod_katyushu_razvernuli_plakat_v_pamyat_o_dare_duginoy_9406747
+
+pikabu.ru##span:has-text(/^otecetlau$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="otecetlau"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="otecetlau"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^otecetlau$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="otecetlau"]))
+    ! https://pikabu.ru/story/mobilizatsiya_i_kollektoryi_9588528
+    ! https://pikabu.ru/story/pravitelstvo_utverdilo_postanovlenie_o_sokhranenii_rabochikh_mest_dlya_mobilizovannyikh_grazhdan_9485690
+    ! https://pikabu.ru/story/na_zlobu_dnya_9423208
+    ! https://pikabu.ru/story/prodolzhenie_posta_ya_vam_pokazhu_koreyskuyu_diviziyu_9352033
+    ! https://pikabu.ru/story/yevakuatsiya_v_plen_9120200
 
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
