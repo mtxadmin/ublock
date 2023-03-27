@@ -26313,32 +26313,35 @@ youtube.com,youtube-nocookie.com##.annotation.iv-branding
 !youtube.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 ! is in EasyList
 youtube.com,youtube-nocookie.com##.ytp-ad-progress-list
-! 2020-08: videos sometimes were black. I didn't find the cause, so here is workaround
+	! 2020-08: videos sometimes were black. I didn't find the cause, so here is workaround
 youtube.com,youtube-nocookie.com##.html5-video-player:style(position:static !important; overflow:hidden !important)
 youtube.com,youtube-nocookie.com##.html5-video-container:style(position:static !important; overflow:hidden !important)
 youtube.com,youtube-nocookie.com##.ytp-iv-video-content:style(position:static !important; overflow:hidden !important)
 !
 youtube.com,youtube-nocookie.com#@#.video-annotations
 youtube.com,youtube-nocookie.com#@#[class*="-ad-"]
-! teaser mini-popups. Attention: do not generalize rules as [class*=teaser], added exclusion for youtube.com there
+    ! teaser mini-popups. Attention: do not generalize rules as [class*=teaser], added exclusion for youtube.com there
 youtube.com,youtube-nocookie.com##.ytp-cards-teaser-box
 youtube.com,youtube-nocookie.com##.ytp-cards-teaser-text
-! subs mini-popups.
+    ! subs mini-popups.
 youtube.com,youtube-nocookie.com##.ytp-ce-expanding-overlay
-! dialog popup
+    ! dialog popup
 youtube.com,youtube-nocookie.com##.yt-confirm-dialog-renderer
-! Icon "i" in top-right corner
+    ! Icon "i" in top-right corner
 youtube.com,youtube-nocookie.com##.ytp-cards-button-icon
-! Cookies consent popup
+    ! Cookies consent popup
 youtube.com,youtube-nocookie.com##.ytd-consent-bump-v2-lightbox
 youtube.com,youtube-nocookie.com##.opened
-! logos
-youtube.com##.mobile-topbar-logo
-youtube.com##.ringo-logo
-! youtube cards over video
-youtube.com##.ytp-chrome-top
-youtube.com##.ytp-show-cards-title
-
+    ! logos
+youtube.com,youtube-nocookie.com##.mobile-topbar-logo
+youtube.com,youtube-nocookie.com##.ringo-logo
+    ! youtube cards over video
+youtube.com,youtube-nocookie.com##.ytp-chrome-top
+youtube.com,youtube-nocookie.com##.ytp-show-cards-title
+    ! top of channels. See #61
+youtube.com,youtube-nocookie.com###wrapper #contentContainer:style(padding-top:0px !important)
+youtube.com,youtube-nocookie.com###header:style(transform:none !important)
+    ! other
 
 ypapa.ru##.fake
 ypapa.ru##.yp-consult
