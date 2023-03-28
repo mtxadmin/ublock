@@ -443,10 +443,15 @@ pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeney
 ! Под анонимами часто идут вбросы
 pikabu.ru##article.story:has(.story__user-info:has-text(Аноним)):not(:matches-path(/\/story\//))
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Аноним"]))
+!
 ! Промо от администрации. Ну, такое себе
+!
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))~div
-pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))~div
-pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))~div
+!pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##article.story:has(.story__author-panel-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))
+!
+!pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##article.story:has(.story__author-panel-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))
 pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))~div
 
 
@@ -5968,6 +5973,25 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/reuters_lider_kitaya_si_tszinpin_otkazalsya_ot_telefonnogo_razgovora_s_prezidentom_ssha_baydenom_10076339
     ! https://pikabu.ru/story/bakhmut_dorogi_smerti_pod_ognyom_rossiyskoy_artillerii_10075295
     ! https://pikabu.ru/story/myasnoy_shturm_polnoe_video_samoubiystvennoy_ataki_bronetekhniki_nato_i_pekhotyi_na_zaporozhskom_fronte_10075148
+
+pikabu.ru##span:has-text(/^illahad$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="illahad"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="illahad"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^illahad$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="illahad"]))
+    ! https://pikabu.ru/story/analiticheskiy_doklad_avstriyskogo_polkovnika_markusa_raysnera_o_boevyikh_deystviyakh_na_ukraine_10079842
+    ! https://pikabu.ru/story/glaza_donbassa__uspeshnyiy_volontyorskiy_proekt_pomoshchi_oftalmologicheskomu_tsentru_v_donetske_10073382
+    ! https://pikabu.ru/story/stolknovenie_kultur_na_kodrevyu_rossiya_protiv_ssha_9569360
+
+pikabu.ru##span:has-text(/^IrlandecPoNevole$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="IrlandecPoNevole"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="IrlandecPoNevole"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^IrlandecPoNevole$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="IrlandecPoNevole"]))
+    ! https://pikabu.ru/story/o_svobodakh_10081315
+    ! https://pikabu.ru/story/ob_istorii_10081022
+    ! https://pikabu.ru/story/o_mariupole_10080868
+    ! https://pikabu.ru/story/o_fekhtovanii_10080809
 
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
