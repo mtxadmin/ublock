@@ -6101,6 +6101,19 @@ duolingo.com##div:has-text(in just 5 minutes):matches-css(position:fixed)
   ||duolingo.com/images/duolingo-plus-logo-feather.svg
 ||cloudfront.net/images/duolingo-plus-logo-feather.svg
 ||cloudfront.net/test.png  # tracking image. Seen on Amazon
+! 2023
+! Adguard rule
+duolingo.com##div[class^="_"]:has(> div[class^="_"] > a[href*="How-can-I-disable-my-ad-blocker-to-support-Duolingo"])
+    ! Too loud sounds. They cannot be turned off, as in the app
+||d35aaqx5ub95lt.cloudfront.net/sounds/7abe057dc8446ad325229edd6d8fd250.mp3  # end of level, loud
+||d35aaqx5ub95lt.cloudfront.net/sounds/2aae0ea735c8e9ed884107d6f0a09e35.mp3  # end of level, loud
+||d35aaqx5ub95lt.cloudfront.net/sounds/37d8f0b39dcfe63872192c89653a93f6.mp3  # ok
+||d35aaqx5ub95lt.cloudfront.net/sounds/421d48c53ad6d52618dba715722278e0.mp3  # fail
+    ! paid subscription
+duolingo.com##div:has(>img[src*="cloudfront.net/images/super/"])
+duolingo.com##div:has(>img[src*="cloudfront.net/images/practiceHub/"])
+duolingo.com##button:has(img[src*="cloudfront.net/images/super/"])
+    ! other
 
 dushlux.ru##.ico_block
 
