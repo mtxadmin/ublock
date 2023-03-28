@@ -70,6 +70,9 @@ pikabu.ru##e-header
 pikabu.ru##.become-donator-btn
 pikabu.ru##.app-banner
 pikabu.ru##.bell_profile-menu
+pikabu.ru##.sidebar-block:has(.bell_profile-menu)
+! излишне прорежает сайдбар, но рекламу убирает
+pikabu.ru##.sidebar-block:has(.comment__link)
 !
     ! ads: promos and ad posts
 pikabu.ru##.section-group:has(p > a[href^="https://pikabu.ru/page/interview/"])
@@ -3468,9 +3471,15 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Ashmeta
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Ashmetay$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Ashmetay"]))
 
+pikabu.ru##span:has-text(/^glazki.pugovki$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="glazki.pugovki"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="glazki.pugovki"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^glazki.pugovki$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="glazki.pugovki"]))
+    ! https://pikabu.ru/story/ani_lorak_valeriy_meladze_i_aleksandr_revva_ostalis_bez_kontsertov_v_rostovenadonu_10082980
+    ! https://pikabu.ru/story/medvedev_dopustil_primenenie_yadernogo_oruzhiya_pri_popyitke_ukrainyi_otvoevat_kryim_10072224
+    ! https://pikabu.ru/story/yeto_sluchilos_ne_v_vashingtone_9956550
+    ! https://pikabu.ru/story/v_tinkoff_banke_zayavili_kryimchaninu_chto_kryim__ne_chast_rossii_9909523
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ManLeanBoo"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ManLeanBoo$/)):style(color:#F0F0F0)
