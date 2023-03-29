@@ -937,7 +937,9 @@ $removeparam=product_country  # Microsoft tracking URL parameters: https://help.
 !$removeparam=productid - definitely not!  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 $removeparam=promo
-    
+    ! avideos.xxx$removeparam=promo
+    ! hclips.com$removeparam=promo
+
 $removeparam=promoid
     ! Later:
     ! get.adobe.com$removeparam=promoid  # from Adguard
@@ -1115,7 +1117,7 @@ $removeparam=/referrer/$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5vztmjur
     !
     ! entradas.com$removeparam=referer_info  # from DandelionSprout's URLShortener
     ! ||linkedin.com/authwall?$removeparam=originalReferer  # from Adguard
-    ! linkedin.com$removeparam=original_referer  # from Adguard and DandelionSprout's URLShortener
+    ! linkedin.com$removeparam=original_referer  # is in Adguard and DandelionSprout's URLShortener
     ! reddit.com$removeparam=_branch_referrer  # from Adguard
     ! open.spotify.com$removeparam=_branch_referrer  # from Adguard
     ! tumblr.com$removeparam=_branch_referrer  # from Adguard
@@ -1563,6 +1565,9 @@ $removeparam=via
     ! ^via=toolbar^$removeparam=via,domain=user.qzone.qq.com  # from DandelionSprout's URLShortener
     ! thedailybeast.com$removeparam=via  # from DandelionSprout's URLShortener
 
+$removeparam=vs
+    ! many redirects on porno sites, some kind of ref or utm param
+
 $removeparam=wbraid  # Google ads/analytics  # from Adguard
 
 $removeparam=websitemapnodeid  # from DandelionSprout's URLShortener
@@ -1827,6 +1832,9 @@ baidu.com$removeparam=srcp  # from DandelionSprout's URLShortener
 baidu.com$removeparam=vslid  # from DandelionSprout's URLShortener
 
 banggood.com$removeparam=utmid  # from Adguard
+banggood.com$removeparam=rmmds  # ref
+banggood.com$removeparam=bid  # num
+banggood.com$removeparam=last_spm  # ref
 
 ! bbc
 bbc.$removeparam=/^at_/
@@ -3081,10 +3089,6 @@ porn2012.com$removeparam=hash
 bing.com$removeparam=/^sh[a-np-z0-9]/  # from DandelionSprout's URLShortener
 
 hot-sex-tube.com$removeparam=hash
-
-newfreeporn.net$removeparam=vs
-
-zzbabes.com$removeparam=vs
 
 quizlet.com$removeparam=funnelUUID  # from DandelionSprout's URLShortener
 quizlet.com$removeparam=signupOrigin  # from DandelionSprout's URLShortener
