@@ -18465,6 +18465,7 @@ redcocktube.com##.s_desc
 ||reddit.com/errors
 ||reddit.com/static/$3p  # is in Fanboy's
 ||reddit.com/counters/$important  # is in EasyPrivacy
+||reddit.com/svc/shreddit/perfMetrics
 ||reddit.com/timings/  # from EasyPrivacy
 ||redditmedia.com/gtm/jail?  # from EasyPrivacy
 ! disable rule from Fanboy’s Enhanced Tracking List
@@ -18486,6 +18487,9 @@ reddit.com##faceplate-tracker[noun=user_avatar]
 reddit.com##button[id=get-app]
 ! logo
 reddit.com##a[aria-label="Home"]
+    ! popups
+reddit.com##xpromo-nsfw-blocking-modal-desktop
+reddit.com##*:style(filter:none !important)
     ! banners and promos
 ! from uBlock filters
 reddit.com##div[class][data-before-content="advertisement"]:not([id])
@@ -18511,6 +18515,7 @@ reddit.com##._3RPJ8hHnfFohktLZca18J6
 ! the app is on market
 reddit.com##button:has-text(Get App)
 reddit.com##span:matches-css(background-image:/bannerBackground/)
+reddit.com##faceplate-perfmetric-collector
 
 ||redfin.com/rift?  # from EasyPrivacy
 
