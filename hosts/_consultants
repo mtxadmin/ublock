@@ -174,11 +174,49 @@
     ! Exclusions:
     ! expats.cz: Job apply form - .default-form has-validation-callback
 ##[id*="callback"]:not(html):not(body):not(article)
-! good rules in general, but messengers and webinar services must be excluded
-~aliexpress.com,~bizon365.ru,~dhgate.com,~fincult.info,~hh.ru,~worknf.ru,~telemost.yandex.ru##[class*="Chat"]:not(html):not(body):not(article):not(section)
+!
+!! very good and useful rules in general, but messengers, streaming and webinar services must be excluded
+~aliexpress.com,~bizon365.ru,~dhgate.com,~fincult.info,~hh.ru,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="Chat"]:not(html):not(body):not(article):not(section)
+    ! Exclusions:
+    ! aliexpress.com - useful support chat
+    ! bizon365.ru - videos/streams
+    ! dhgate.com - useful support chat
+    ! fincult.info - don't remember, I think, videos/streams
+    ! hh.ru - chats on a job site
+    ! telemost.yandex.ru - like Russian Zoom, videoconferences (bad, but it was a nice try)
+    ! youtube.com - videos/streams. See #61
 ~worknf.ru##[id*="Chat"]:not(html):not(body):not(article):not(section)
-~advance24.online,~aliexpress.com,~bizon365.ru,~chatik.hh.ru,~clickmeeting.com,~dhgate.com,~fincult.info,~gosuslugi.ru,~icq.com,~telemetr.io,~twitch.tv,~vk.com,~worknf.ru,~telemost.yandex.ru##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
-~bizon365.ru,~clickmeeting.com,~facebook.com,~gosuslugi.ru,~telethon.dev,~twitch.tv,~vk.com,~worknf.ru,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"])
+    ! Exclusions:
+    ! worknf.ru - don't remember, I think, videos/streams
+~advance24.online,~aliexpress.com,~bizon365.ru,~chatik.hh.ru,~clickmeeting.com,~dhgate.com,~fincult.info,~gosuslugi.ru,~icq.com,~telemetr.io,~twitch.tv,~vk.com,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
+    ! Exclusions:
+    ! advance24.online - videos/streams
+    ! aliexpress.com - useful support chat
+    ! bizon365.ru - videos/streams
+    ! chatik.hh.ru - chats on a job site
+    ! clickmeeting.com - videos/streams
+    ! dhgate.com - useful support chat
+    ! fincult.info - don't remember, I think, videos/streams
+    ! gosuslugi.ru - useful support chat
+    ! icq.com - chat windows on a messenger site
+    ! telemetr.io - don't remember
+    ! twitch.tv - videos/streams
+    ! vk.com - chat windows on a social network
+    ! worknf.ru - don't remember, I think, videos/streams
+    ! telemost.yandex.ru - like Russian Zoom, videoconferences (bad, but it was a nice try)
+    ! youtube.com - videos/streams. See #61
+~bizon365.ru,~clickmeeting.com,~facebook.com,~gosuslugi.ru,~telethon.dev,~twitch.tv,~vk.com,~worknf.ru,~youtube.com,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"])
+    ! Exclusions:
+    ! bizon365.ru - videos/streams
+    ! clickmeeting.com - videos/streams
+    ! gosuslugi.ru - useful support chat
+    ! telethon.dev - don't remember, maybe teleconference site
+    ! twitch.tv - videos/streams
+    ! vk.com - chat windows on a social network
+    ! worknf.ru - don't remember, I think, videos/streams
+    ! youtube.com - videos/streams. See #61
+    ! zoom.us - teleconference service
+!
 ##.bellLightB
 ##.btn-call-back
 ##.btn-order-call

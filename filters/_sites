@@ -674,7 +674,6 @@ abekker.ru###shop-info:style(padding-top:0px !important; padding-bottom:0px !imp
 abekker.ru##.feature-inner
 abekker.ru##.row-elect-categories
 
-abnews.ru##.header::after
 abnews.ru##.news:has(.title_big:has-text(Пресс-релизы))
 
 abookfree.ru###rek_fixed
@@ -999,7 +998,6 @@ air-gun.ru##+js(set, Cackle.bootstrap, noopFunc)
 
 ||airsoft-rus.ru/images/mailToDirector.png
 ! menu
-airsoft-rus.ru##.main-nav::before
 airsoft-rus.ru##.main-menu a:style(color:#000 !important)
 ! recommended: autorotates
 airsoft-rus.ru##.detail-recomended-section
@@ -1431,7 +1429,6 @@ androidlime.ru###origamiez-header-top
 androidmir.org##.w-logo
 
 androidpcreview.com##.entry-comments-link
-androidpcreview.com##.wrap:style(padding-top:0px !important; padding-bottom:0px !important)
 androidpcreview.com##.title-area
 androidpcreview.com##[href^="https://amzn.to/"]
 androidpcreview.com##.ck_form
@@ -2359,10 +2356,6 @@ avtoved.guru##.headersmenu
 avtovzglyad.ru##.rating
 avtovzglyad.ru##.ring
 avtovzglyad.ru##.header-specproject
-avtovzglyad.ru##footer::before
-avtovzglyad.ru##footer::after
-avtovzglyad.ru##nav::before
-avtovzglyad.ru##nav::after
 
 avtozakony.ru##.article-nav
 
@@ -2959,8 +2952,6 @@ bibe.ru##.masthead-container
 bibiguru.ru##noindex
 bibiguru.ru###header
 
-bibimot.ru##body::before
-
 bicotender.ru##.registration-login-wrapper
 bicotender.ru##.widget_consultation
 
@@ -3284,7 +3275,6 @@ blogss.ru###header
 blogss.ru###footer
 blogss.ru##.pings
 
-blokada.org##footer::before
 blokada.org##.shape
 blokada.org##.text-white:style(color:#000 !important)
 
@@ -3412,7 +3402,6 @@ bookol.ru##.site-footer
 ||bookre.org/precopyrac.js
 
 book-save.ru##.fb2-area:style(padding-top:0px !important)
-book-save.ru##.wrap:style(margin-top:0px !important; padding-top:0px !important)
 book-save.ru##.foot_plus
 
 booksbunker.com###nl24bar
@@ -3642,8 +3631,6 @@ briefmenow.org##.comment-body:has-text(Every after inside a although we pick out
 !briefmenow.org##.comment-body:has-text(always a big fan of linking to bloggers that I love but really don’t get quite a bit of link appreciate from)
 
 brigo.ru##.padding_holidays:style(padding-top:0px !important)
-
-britishcouncil.org##header::before
 
 brodude.ru##.meta-posts___item
 brodude.ru##.comments.post__header-meta-info-item
@@ -5356,8 +5343,6 @@ dimonvideo.ru###menumain:style(position:static !important)
 !||dimonvideo.ru/images/noavatar.png
 dimonvideo.ru##.fullmenu
 
-dimox.name##.header::after
-
 direct-cloud.me$3p  # from uBlock filters: *$3p,domain=direct-cloud.me
 
 direct-credit.ru$3p
@@ -6116,6 +6101,19 @@ duolingo.com##div:has-text(in just 5 minutes):matches-css(position:fixed)
   ||duolingo.com/images/duolingo-plus-logo-feather.svg
 ||cloudfront.net/images/duolingo-plus-logo-feather.svg
 ||cloudfront.net/test.png  # tracking image. Seen on Amazon
+! 2023
+! Adguard rule
+duolingo.com##div[class^="_"]:has(> div[class^="_"] > a[href*="How-can-I-disable-my-ad-blocker-to-support-Duolingo"])
+    ! Too loud sounds. They cannot be turned off, as in the app
+||d35aaqx5ub95lt.cloudfront.net/sounds/7abe057dc8446ad325229edd6d8fd250.mp3  # end of level, loud
+||d35aaqx5ub95lt.cloudfront.net/sounds/2aae0ea735c8e9ed884107d6f0a09e35.mp3  # end of level, loud
+||d35aaqx5ub95lt.cloudfront.net/sounds/37d8f0b39dcfe63872192c89653a93f6.mp3  # ok
+||d35aaqx5ub95lt.cloudfront.net/sounds/421d48c53ad6d52618dba715722278e0.mp3  # fail
+    ! paid subscription
+duolingo.com##div:has(>img[src*="cloudfront.net/images/super/"])
+duolingo.com##div:has(>img[src*="cloudfront.net/images/practiceHub/"])
+duolingo.com##button:has(img[src*="cloudfront.net/images/super/"])
+    ! other
 
 dushlux.ru##.ico_block
 
@@ -7485,9 +7483,6 @@ firewall.cx##.deepest.mod-box.module
 firewall.cx##p.box-info
 
 firstbase-baseball.ru##.hover-effect
-firstbase-baseball.ru##body::before:style(background:none)
-
-firstlinesoftware.com##.footer::before
 
 firstpornaid.com##.icon-zoom
 firstpornaid.com##.footer_logo
@@ -9781,10 +9776,6 @@ hubspot.net$important,script  # don't block css
 
 huihoo.com##.footer-bg
 huihoo.com##.page-header-bg
-huihoo.com##.page-header::before
-huihoo.com##.page-header::after
-huihoo.com##.page-footer::before
-huihoo.com##.page-footer::after
 huihoo.com##.page-header h1:style(margin-top:0px !important)
 
 hunfis.ru##.pagination-sticky
@@ -11218,8 +11209,6 @@ kazanexpress.ru##.popups-container
 kazanexpress.ru##.event-modal
 kazanexpress.ru##.scroller
     ! other
-
-kde.org##.header::after
 
 kdelo.ru##.topLine
 kdelo.ru##noindex
@@ -16286,9 +16275,6 @@ otepleivode.ru##.footer-yellow
 
 ot-help.ru##.page-title
 
-otkan.ru##article::before
-otkan.ru##article::after
-
 otkluchit.ru$inline-script  # site breaks copypaste
 otkluchit.ru##.heder_man
 
@@ -21110,7 +21096,6 @@ spina-help.ru###masthead
 spkostroma.ru##.items
 
 ! header
-splav.ru##.navigation-header::after:style(background:none !important)
 splav.ru##.header__login-cart__bonus
 splav.ru###headerCartLink > em
 splav.ru##.header__toolbar-item--phone
@@ -22386,8 +22371,6 @@ telegram-region.com##.card_item_adv
 telegram-region.com##.header_bg:style(height:80px !important)
     ! other
 
-telegrator.ru##header::after
-
 telekom.com##.claim
 telekom.com##com-brandbar
 telekom.com##.header-wrapper:style(position:static !important)
@@ -22745,10 +22728,11 @@ tomshardware.com##.trophyShowcase
 tomshardware.com##.future_quickThreadWidget
 tomshardware.com##.uix_headerContainer > div:style(height:auto !important)
 ! tomsguide.com
-||futurecdn.net$xhr
+!||futurecdn.net$xhr - don't, its their mini-CDN site. images are there too now
 !||api.vanilla.futurecdn.net/article/v3/related
 ||unpkg.com/react$domain=tomsguide.com  # I don't know why, but these scripts make loop with footprint.net call
 thg.ru###clnk_main
+! tomshardware.com: lazyload data-original-mos
 
 thinkful.com###branding-bar
 thinkful.com##.tf-cm-signup
@@ -22796,7 +22780,6 @@ ticketscloud.org##.showroom-event-slide__cover
 tiger-gun.ru##.fixed_block_top:style(position:static !important)
 tiger-gun.ru##.bg_subscribe_wrapper
 tiger-gun.ru###tg_viewed_products
-tiger-gun.ru##.wrap:style(padding-top:0px !important)
 tiger-gun.ru##.bg_footer:style(position:static !important)
 tiger-gun.ru##.prop_licen_item
 
@@ -23012,7 +22995,6 @@ forums.tomsguide.com##.avatar
 tonkosti.ru##.journal-subscribe
 
 tonygonzalez0379.com###sidebar.sidebar
-tonygonzalez0379.com##body::before
 tonygonzalez0379.com##.site-content:style(margin-left:0px !important; width:100% !important)
 tonygonzalez0379.com##.donations__container
 
@@ -24351,7 +24333,6 @@ vestifinance.ru##.header_filter:style(position:static !important)
 vestifinance.ru##.g-columns2-left_sticky:style(position:static !important; top:0px !important)
 
 vesti-ua.net##.current_date
-vesti-ua.net##.wrap:style(padding-top:0px !important; padding-bottom:0px !important)
 vesti-ua.net##.play_icon
 
 vetasen.no###site-branding
@@ -25390,11 +25371,11 @@ wildberries.ru,wildberries.co.il,wildberries.fr##.google-play
 wildberries.ru,wildberries.co.il,wildberries.fr##.app-store
 wildberries.ru,wildberries.co.il,wildberries.fr##.app-gallery
     ! pay cards
-wildberries.ru,wildberries.co.il,wildberries.fr##.group
-wildberries.ru,wildberries.co.il,wildberries.fr##.masterCard
-wildberries.ru,wildberries.co.il,wildberries.fr##.mir
-wildberries.ru,wildberries.co.il,wildberries.fr##.toPay
-wildberries.ru,wildberries.co.il,wildberries.fr##.footer__pay-list
+!wildberries.ru,wildberries.co.il,wildberries.fr##.group
+!wildberries.ru,wildberries.co.il,wildberries.fr##.masterCard
+!wildberries.ru,wildberries.co.il,wildberries.fr##.mir
+!wildberries.ru,wildberries.co.il,wildberries.fr##.toPay
+!wildberries.ru,wildberries.co.il,wildberries.fr##.footer__pay-list
     ! backgrounds
 wildberries.ru,wildberries.co.il,wildberries.fr##.navbar-pc__link:style(color:#000 !important)
 wildberries.ru,wildberries.co.il,wildberries.fr##.search-catalog__input:style(color:#000 !important)
@@ -25406,6 +25387,7 @@ wildberries.ru,wildberries.co.il,wildberries.fr##.compatability
 wildberries.ru,wildberries.co.il,wildberries.fr##.i-tags-group
 wildberries.ru,wildberries.co.il,wildberries.fr##.also-buy-wrapper
 wildberries.ru,wildberries.co.il,wildberries.fr##.scrolled-socials
+wildberries.ru,wildberries.co.il,wildberries.fr##.general-preloader
 ! oneclick
 wildberries.ru,wildberries.co.il,wildberries.fr##.same-part-kt__btn-buy
 wildberries.ru,wildberries.co.il,wildberries.fr##.error500
@@ -26317,32 +26299,35 @@ youtube.com,youtube-nocookie.com##.annotation.iv-branding
 !youtube.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 ! is in EasyList
 youtube.com,youtube-nocookie.com##.ytp-ad-progress-list
-! 2020-08: videos sometimes were black. I didn't find the cause, so here is workaround
+	! 2020-08: videos sometimes were black. I didn't find the cause, so here is workaround
 youtube.com,youtube-nocookie.com##.html5-video-player:style(position:static !important; overflow:hidden !important)
 youtube.com,youtube-nocookie.com##.html5-video-container:style(position:static !important; overflow:hidden !important)
 youtube.com,youtube-nocookie.com##.ytp-iv-video-content:style(position:static !important; overflow:hidden !important)
 !
 youtube.com,youtube-nocookie.com#@#.video-annotations
 youtube.com,youtube-nocookie.com#@#[class*="-ad-"]
-! teaser mini-popups. Attention: do not generalize rules as [class*=teaser], added exclusion for youtube.com there
+    ! teaser mini-popups. Attention: do not generalize rules as [class*=teaser], added exclusion for youtube.com there
 youtube.com,youtube-nocookie.com##.ytp-cards-teaser-box
 youtube.com,youtube-nocookie.com##.ytp-cards-teaser-text
-! subs mini-popups.
+    ! subs mini-popups.
 youtube.com,youtube-nocookie.com##.ytp-ce-expanding-overlay
-! dialog popup
+    ! dialog popup
 youtube.com,youtube-nocookie.com##.yt-confirm-dialog-renderer
-! Icon "i" in top-right corner
+    ! Icon "i" in top-right corner
 youtube.com,youtube-nocookie.com##.ytp-cards-button-icon
-! Cookies consent popup
+    ! Cookies consent popup
 youtube.com,youtube-nocookie.com##.ytd-consent-bump-v2-lightbox
 youtube.com,youtube-nocookie.com##.opened
-! logos
-youtube.com##.mobile-topbar-logo
-youtube.com##.ringo-logo
-! youtube cards over video
-youtube.com##.ytp-chrome-top
-youtube.com##.ytp-show-cards-title
-
+    ! logos
+youtube.com,youtube-nocookie.com##.mobile-topbar-logo
+youtube.com,youtube-nocookie.com##.ringo-logo
+    ! youtube cards over video
+youtube.com,youtube-nocookie.com##.ytp-chrome-top
+youtube.com,youtube-nocookie.com##.ytp-show-cards-title
+    ! top of channels. See #61
+youtube.com,youtube-nocookie.com###wrapper #contentContainer:style(padding-top:0px !important)
+youtube.com,youtube-nocookie.com###header:style(transform:none !important)
+    ! other
 
 ypapa.ru##.fake
 ypapa.ru##.yp-consult
@@ -26371,7 +26356,6 @@ ywxi.net$third-party,domain=~mcafee.com|~mcafeesecure.com  # from Fanboy's
     ! unfix and compact
 zabbix.com###header:style(position:static !important; padding-top:0px !important)
 zabbix.com###header:style(height:auto !important)
-zabbix.com##body::before:style(height:auto !important)
 zabbix.com##.sc_layouts_row_fixed_on:style(position:static !important)
 zabbix.com##.sc_layouts_row_fixed_placeholder
 zabbix.com##.scrolltofixed:style(position:static !important)
@@ -26598,7 +26582,6 @@ zelenograd-avtoshkola.ru##.logo_wrap
 zelenograd-avtoshkola.ru##.header_wrap_information
 zelenograd-avtoshkola.ru##.slider-1
 
-zello.com##.wrapper:style(padding-top:0px !important)
 zello.com,zellowork.com##.header-container:style(height:auto !important)
 
 ||zelwin.com/trends.js  # download.zelwin.com/trends.js
@@ -27511,8 +27494,6 @@ autodesk.com###helpful-widget-react
 istmat.org###search-form:style(position:static !important)
 istmat.org##.forum-post-footer
 
-proxyway.com##footer::after
-
 ||dsmcdn.com/marketing/
 ||dsmcdn.com/mweb/production/dom-event-tracker.min.js
 ||dsmcdn.com/mweb/master/country-selection  # script blurs the page on trendyol.com
@@ -28124,7 +28105,6 @@ stellarinfo.com##.right_side_bar:style(position:static !important)
 stellarinfo.com##.author_top
 stellarinfo.com##.best_selling
 
-toolspond.com###content::before
 toolspond.com###primary:style(margin-top:0px !important)
 ! toc is inline, long and not useful
 toolspond.com###toc_container
@@ -28297,3 +28277,24 @@ nozhiman.ru###tcb_call_1
 !dualshockers.com##+js(set, window.googletag.com, noopFunc)
 !dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager, noopFunc)
 !dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager.arePassiveEventListenersSupported, noopFunc)
+
+||vgtimes.ru/minified/jvgt_ads_adfox_loader
+vgtimes.ru##.comments_last
+vgtimes.ru##.notification
+vgtimes.ru##.ctrcounter
+vgtimes.ru##.tg_ad
+
+! empty
+nice-books.ru##.cover-svg
+
+! totop
+knigavruke.ru##.im-angle-double-up
+
+! related
+homeread.net##.reader-window > .mt-4
+
+! bottoms
+nice-books.ru##.foot-line
+nice-books.ru##.full-comms > div
+nice-books.ru##.full-comms > p
+nice-books.ru##.h5 > p
