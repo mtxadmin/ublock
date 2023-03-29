@@ -1039,7 +1039,9 @@ metric.schwabplan.com  # from Adguard
 metric.sciencemag.org  # from Adguard
 metric.volkswagen-nutzfahrzeuge.de  # from Adguard
 
-/metrics.
+/metrics.$domain=~factorio.com
+! Exclusions:
+! factorio.com: js for download stats
 metrics.aarp.org  # from Adguard
 metrics.actemra.com  # from Adguard
 metrics.actemrahcp.com  # from Adguard
