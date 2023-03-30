@@ -1078,6 +1078,9 @@ _logo.$image,domain=~factorio.fandom.com
 *###masthead:style(position:static !important; background-image:none !important; height:auto !important; min-height:0px !important)
 !
 !
+! As well as sidebars, menus can be set to static (more often) or absolute (less often)
+! Exclusions here are set to absolute - see in _sites
+!
 *##.fixed-menu:style(position:static !important)
 !
 *##.top_menu:style(position:static !important)
@@ -1150,11 +1153,16 @@ _logo.$image,domain=~factorio.fandom.com
 !
 *##.header-fixed:style(position:static !important)
 !
-~gunsparts.ru,*##.sidebar:style(position:static !important)
+!
+! sticky sidebars can be set to static (more often) or absolute (less often)
+! exclusions here are set to absolute - see in _sites
+!
+~club.dns-shop.*,~gunsparts.ru,*##.sidebar:style(position:static !important)
 !
 *##.sidebar__sticky:style(position:static !important)
 !
 *##.td-ss-main-sidebar:style(position:static !important)
+!
 !
 *##.main-content:style(position:static !important; margin-top:0px !important; padding-top:0px !important; opacity:initial !important)
 !
