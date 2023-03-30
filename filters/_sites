@@ -18532,6 +18532,9 @@ reddit.com##*:style(filter:none !important)
 reddit.com##div[class][data-before-content="advertisement"]:not([id])
 ! empty div under the post (before comments)
 reddit.com##.ListingLayout-outerContainer > div > div > div > div > div:has-text(/^$/)
+    ! fixed sidebar
+reddit.com##div[role=menu]
+reddit.com##div[data-redditstyle=true]
     ! default avatars are ugly
 ||redditstatic.com/shreddit/assets/favicon/$image
 ||redditmedia.com/*/styles/communityIcon$image
@@ -18553,6 +18556,7 @@ reddit.com##._3RPJ8hHnfFohktLZca18J6
 reddit.com##button:has-text(Get App)
 reddit.com##span:matches-css(background-image:/bannerBackground/)
 reddit.com##faceplate-perfmetric-collector
+reddit.com##button:has-text(Back to Top)
 
 ||redfin.com/rift?  # from EasyPrivacy
 
@@ -21442,8 +21446,13 @@ stcatherines-stuttgart.de$script,3p
 stealthbits.com##.boxzilla-container
 stealthbits.com###masthead
 
-steamcommunity.com###ItemControls
 steamcommunity.com##.market_header_bg
+    ! bottom
+steamcommunity.com##.pagecontent:style(padding-bottom:0px !important)
+steamcommunity.com###footer_spacer
+steamcommunity.com###footerLogo
+    ! other
+steamcommunity.com###ItemControls
 
 ! money for nothing
 steamgifts.com$3p
@@ -25900,6 +25909,10 @@ xhamster.com##.parental-control-dialog
 xhamster.com##.dlg-backing
 xhamster.com##.dialog-desktop-container
 xhamster.com##.overlay-footer
+xhamster.com##.top-video-block--recommendations
+xhamster.com##.thumb-list__item:has(.thumb-image-container__status-text:has-text(/^(\s*)(Only for owner|Friends only)(\s*)/))
+! popups
+xhamster.com##[class^=tip-]
 
 xhamster3.com##.dialog-desktop-container
 ! no blurring
