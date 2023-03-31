@@ -562,10 +562,11 @@ yandex.*##.init__age
 yandex.ru##div[id^="BlogPost"][data-state*="/promo/popup/"]
 
 ||yandex.*/clck/  # beacons and images  #previous: ||yandex.*/clck/counter
-#! in EasyPrivacy: ||yandex.*/clck/$script
-#! in EasyPrivacy: ||yandex.*/clck/$xmlhttprequest
-#! in EasyPrivacy: ||yandex.*/clck/$image
-#! in Ru AdList:   ||yandex.*/clck/
+    ! ||yandex.ru/clck/  # is in EasyPrivacy
+    ! in EasyPrivacy: ||yandex.*/clck/$script
+    ! in EasyPrivacy: ||yandex.*/clck/$xmlhttprequest
+    ! in EasyPrivacy: ||yandex.*/clck/$image
+    ! in Ru AdList:   ||yandex.*/clck/
 
 ||yandex.ru/cycounter?  # from EasyPricacy
 
