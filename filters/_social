@@ -816,8 +816,10 @@ twitter.com##+js(href-sanitizer, a[href^="https://t.co/"])
 ##.ico-tw
 ##.ico-twttr
 ##.like-tw
-! Exclusions: medium.com projects (there are two-letters obfuscated divs)
-~belarus2020.org,~medium.com,~towardsdatascience.com##.tw
+~belarus2020.org,~fandom.com,~medium.com,~towardsdatascience.com##.tw
+    ! Exclusions:
+    ! medium.com projects (there are two-letters obfuscated divs)
+    ! fandom.com: false-positive, there are no socials in wikis
     !argumenti.ru##.tw
     !torex.ru##.tw
     !vesti.ru##.tw
