@@ -6459,6 +6459,15 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/kogda_piar_aktsiya_poshla_ne_po_planu_9984864
     ! https://pikabu.ru/story/smi_soobshchili_o_podryive_dambyi_na_severozapade_bakhmuta_9984728
 
+pikabu.ru##span:has-text(/^Milenial1990$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Milenial1990"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Milenial1990"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Milenial1990$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Milenial1990"]))
+    ! https://pikabu.ru/story/postavshchik_osobyikh_veshchestv_dlya_vsu_10053284
+    ! https://pikabu.ru/story/ukraina_zhizn_v_zazerkale_konstruktiv_s_ukrainskim_aytishnikom_10050798
+    ! https://pikabu.ru/story/ukraina_zhizn_v_zazerkale_20_10093436
+
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^history2022$/)):style(color:#F0F0F0)
