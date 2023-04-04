@@ -1385,7 +1385,10 @@ $removeparam=subid1  # domain parking ids
 
 $removeparam=subprogram_id  # good old rule from Prx: subprogram_id (one of)
 
-$removeparam=tag
+$removeparam=tag,domain=~pikabu.monster
+    ! Exclusions:
+    ! pikabu.monster - analytical service, doesn't advertise or track users
+    !
     ! agoda.com$removeparam=tag  # from Adguard
     amazon.*$removeparam=tag,important  # is in NeatURL and Adguard  # reflinks
         ! @@||amazon.$removeparam=tag  # from DandelionSprout's URLShortener  # definitely not
