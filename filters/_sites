@@ -23680,8 +23680,10 @@ udecourse.com##.gmr-ontop
 ||udemy.com/api-2.0/visits/  #||udemy.com/api-2.0/visits/me/funnel-logs/
 !||udemy.com/api-2.0/ecl - don't, it breaks videos
 ||udemy.com/*/view-logs/
-||udemycdn.com/notices/featured_banner/
-||udemycdn.com/notices/web_banner/
+||udemycdn.com/notices/$image  # banners
+    ! ||udemycdn.com/notices/featured_banner/
+    ! ||udemycdn.com/notices/home_carousel_slide/
+    ! ||udemycdn.com/notices/web_banner/
 ||udemycdn.com/partner-logos/
 #||udemy.com/staticx/udemy/js/webpack/vendor-mobx - don't
 #||udemy.com/staticx/udemy/js/webpack/vendor-videojs - don't
@@ -23707,12 +23709,18 @@ udemy.com##[class*="alert-banner"]:not(:has([class*="udlite-icon-color-positive"
     ! in-list banners
 udemy.com##[class^=search--unit-injection]
 udemy.com##.ud-component--course-landing-page-udlite--curated-for-ufb-notice
+    ! quick view popups
+udemy.com##div[class*="course-details-quick-view-box--popover-wrapper"]
+udemy.com##div[class*="course-objectives-quick-view-box--popover-wrapper"]
+! old
+udemy.com##[class^=popover--popover]
     ! not a menu, tag cloud
 udemy.com##nav:not(:has(button))
     ! "old" prices
 udemy.com##s
     ! promos
 udemy.com##[class^=bundle-unit--bundle-border]
+udemy.com##[class*=testimonials]
     ! other
 ! is in AdGuard
 udemy.com##.ud-component--footer--eu-cookie-message
@@ -23728,8 +23736,7 @@ udemy.com##.course-landing-page_slider-menu-container
 udemy.com##.ud-component--footer--ufb-notice
 udemy.com##.udlite-btn:has-text(/Share|Поделиться/)
 uft.me###clickbg
-udemy.com##[class^=popover--popover]
-! inline related
+ inline related
 udemy.com##[class*=show-more--container--]
 
 !udemyfreecourses.org$inline-script  # ad popups
