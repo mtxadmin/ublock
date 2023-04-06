@@ -4258,6 +4258,7 @@ citilink.ru##.ProductCardLayoutNEW__services
 citilink.ru##.ProductPageBadgesSection
 citilink.ru##.TogetherCheaper
 citilink.ru##form:has-text(Хочу быть в курсе акций)
+citilink.ru##div[data-meta-name=BannersLayout]
 citilink.ru##div[data-meta-name=BannersLayout__static-slider]
 citilink.ru##div > a[href*="/promo/"]
     ! striked prices
@@ -4278,24 +4279,28 @@ citik.ru/api/saveMetrics
 ||citilink.ru/media/svg/ProductDeliveryCar.svg
 ||citilink.ru/media/svg/ProductDeliveryCarGrey.svg
     ! "recently viewed"
+citilink.ru##.recently-product-box
 citilink.ru##.ProductPage__resently-viewed
 citilink.ru##.ResentlyViewedSlider
 citilink.ru##.Subcategory__resently-viewed
 citilink.ru##section:has(>div>div>div>h3:has-text(Вы недавно смотрели))
+    ! subscriptions
+citilink.ru##.footer__subscription
+citilink.ru##div[data-meta-name="Footer__subscriptions"]
+    ! brands
+citilink.ru##.brand-logos
+citilink.ru##.menu-item_cat_brands
+citilink.ru##.BrandList
     ! other
 citilink.ru##.product-card-info-error
-citilink.ru##.recently-product-box
 citilink.ru##.menu_action
-citilink.ru##.menu-item_cat_brands
 citilink.ru##.eaist
 citilink.ru##.footer__contacts
 m.citilink.ru##a.button-clear.button
 m.citilink.ru##.bar-header:style(position:static !important)
-citilink.ru##.brand-logos
 citilink.ru##.credit_price
 citilink.ru##.root-popup-basket
 !citilink.ru##.ui-widget-overlay - возможно, надо убрать - не показывает уцененный товар
-citilink.ru##.footer__subscription
 citilink.ru##.product-card-ask-expert
 citilink.ru##.for_certificates_view
 citilink.ru##.service-btn-list
@@ -4305,7 +4310,6 @@ citilink.ru##.product_view.specification_view > .products-slider-box
 citilink.ru##.best-opinion-window
 citilink.ru##.footer__social-group-ico
 citilink.ru##.PersonalDataConfirm
-citilink.ru##.BrandList
 citilink.ru##.SpecificationsFull__ask-question-button
 citilink.ru##.ConfiguratorBox
 ! копеечные скидки
@@ -25067,8 +25071,9 @@ w3cub.com##.el-dialog
 w3cub.com##.el-dialog-overlay
 
 w3docs.com##.stackdev-banner
-! unfix menu. Note: absolte, not static.
+! unfix menu. Note: absolute, not static.
 w3docs.com##.aside-menu:style(position:absolute !important)
+w3docs.com##.left-aside:style(position:absolute !important)
 
     ! top
 w3schools.com##.top.w3-container
@@ -28374,3 +28379,16 @@ rnk.ru##.incontentButton
     ! other
 
 shopozz.ru##.img::before
+
+selenium.dev##.td-sidebar-toc:style(position:static !important)
+! promo
+selenium.dev##.card-header
+
+lambdatest.com##section:style(margin-top:0px !important)
+    ! banners and promos
+lambdatest.com##.top-sect
+lambdatest.com##.g_review_blog_inner
+lambdatest.com##.sitekitwebinar
+lambdatest.com###SeleniumPythonCTA
+lambdatest.com##p > [href*="lambdatest.com/register"]
+    ! other
