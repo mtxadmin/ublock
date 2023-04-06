@@ -4249,18 +4249,23 @@ citilink.ru##a[href^="/promo/"]
 ||citilink.ru/media/home/main_top_right.jpg
 !citilink.ru##.Tooltip__content - don't
 citilink.ru##.Main__slider-wrapper
-citilink.ru##.ProductLabelsSet
-citilink.ru##.ProductPageConsultationSection__ask-expert-block
 citilink.ru##.ProductCardLayoutNEW__actions
-citilink.ru##.ProductPageBonusesSection
-citilink.ru##.ProductPageCreditSection__credit-block.ProductPageCreditSection__block
 citilink.ru##.ProductCardLayoutNEW__services
 citilink.ru##.ProductPageBadgesSection
 citilink.ru##.TogetherCheaper
-citilink.ru##form:has-text(Хочу быть в курсе акций)
 citilink.ru##div[data-meta-name=BannersLayout]
 citilink.ru##div[data-meta-name=BannersLayout__static-slider]
+citilink.ru##section[data-meta-name="ProductListLayout__banners"]
 citilink.ru##div > a[href*="/promo/"]
+    ! "консультанты"
+citilink.ru##.product-card-ask-expert
+citilink.ru##.ProductPageConsultationSection__ask-expert-block
+citilink.ru##.SpecificationsFull__ask-question-button
+citilink.ru##.ProductCardAskQuestionWidget
+citilink.ru##div:has(>div>button:has-text(Консультация специалиста))
+    ! всякие "услуги"
+citilink.ru##.service-btn-list
+citilink.ru##.service_list_for_choose
     ! striked prices
 citilink.ru##.old_price
 citilink.ru##.ProductCardVerticalPrice__price-old__price
@@ -4285,12 +4290,26 @@ citilink.ru##.ResentlyViewedSlider
 citilink.ru##.Subcategory__resently-viewed
 citilink.ru##section:has(>div>div>div>h3:has-text(Вы недавно смотрели))
     ! subscriptions
+citilink.ru##form:has-text(Хочу быть в курсе акций)
 citilink.ru##.footer__subscription
 citilink.ru##div[data-meta-name="Footer__subscriptions"]
     ! brands
 citilink.ru##.brand-logos
 citilink.ru##.menu-item_cat_brands
 citilink.ru##.BrandList
+    ! loans
+citilink.ru##.credit_price
+citilink.ru##.ProductPageCreditSection__block
+citilink.ru##.ProductPageCreditSection__credit-block
+citilink.ru##div[data-meta-name=Credit]
+citilink.ru##div[data-meta-name=Installment]
+    ! stickers
+citilink.ru##.ProductLabelsSet
+citilink.ru##div:has(>span:has-text(/Рассрочка|Промокод/))
+    ! копеечные скидки
+citilink.ru##.ProductPageBonusesSection
+citilink.ru##.ProductPagePriceSection__club-price
+citilink.ru##div[data-meta-name="BonusPoints"]
     ! other
 citilink.ru##.product-card-info-error
 citilink.ru##.menu_action
@@ -4298,23 +4317,15 @@ citilink.ru##.eaist
 citilink.ru##.footer__contacts
 m.citilink.ru##a.button-clear.button
 m.citilink.ru##.bar-header:style(position:static !important)
-citilink.ru##.credit_price
 citilink.ru##.root-popup-basket
 !citilink.ru##.ui-widget-overlay - возможно, надо убрать - не показывает уцененный товар
-citilink.ru##.product-card-ask-expert
 citilink.ru##.for_certificates_view
-citilink.ru##.service-btn-list
 citilink.ru##.product_view.specification_view > p:has-text(/оставляет за собой право|действительно в течение срока наличия/)
-citilink.ru##.service_list_for_choose
 citilink.ru##.product_view.specification_view > .products-slider-box
 citilink.ru##.best-opinion-window
 citilink.ru##.footer__social-group-ico
 citilink.ru##.PersonalDataConfirm
-citilink.ru##.SpecificationsFull__ask-question-button
 citilink.ru##.ConfiguratorBox
-! копеечные скидки
-citilink.ru##.ProductPagePriceSection__club-price
-citilink.ru##.ProductCardAskQuestionWidget
 
 citrix.com##.page-banner
 
@@ -17126,6 +17137,9 @@ pleer.ru##.product_price_color2
 pleer.ru##.banners_shrinking
 pleer.ru##.bnr
 pleer.ru##.mar_left7
+    ! stickers
+pleer.ru##.discount_badge
+pleer.ru##.discount_badge_list
     ! other
 pleer.ru##.product_accessories
 pleer.ru##.image.pad_t2
