@@ -66,6 +66,8 @@ aqi.wd.amberweather.com  # from Adguard
 
 apptelemetry.io  # Apple - Tracker  # from Quidsup NoTrack-Blocklist
 
+apptrace.com  # telemetry service
+
 collector-hpn.ghostery.net  # from Adguard
 
 collector.githubapp.com  # is in MVPS HOSTS, AdGuard, EasyPrivacy
@@ -110,7 +112,8 @@ api-adservices.apple.com  # from NextDNS native-tracking-domains apple
 ! seems to be Google Android telemetry
 ! is in Dan Pollock’s hosts file
 ! AS15169 - GOOGLE, US
-app-measurement.com$important
+! https://www.forbes.com/sites/kateoflahertyuk/2020/03/06/meet-lockdown-the-app-that-reveals-whos-tracking-you-on-your-iphone/
+app-measurement.com$important  # Forbes: "app-measurement.com is a tracking tool used by a company called Firebase, which was acquired by Google. It was reverse-engineered to find a surprising amount of private data being sent"
 
 ads.appsgeyser.com  # from Adguard
 ads-leaseweb.appsgeyser.com  # from Adguard
@@ -174,6 +177,7 @@ crashlytics.com$important  # is in Dan Pollock's hosts file
 !+  firebase.crashlytics.com
 !+  outbound.crashlytics.com
 crashlytics.ru  # from ShadowWhisperer's Tracking
+crashlytics2.l.google.com
 crashlyticsreports-pa.googleapis.com  # app requests
 betas.to
 
@@ -218,6 +222,7 @@ static.ak.fbcdn.net  # static.ak.fbcdn.net$domain=~facebook.com|~fb.com  # is in
 notifications.farpost.ru  # app telemetry
 
 ! firebaseio.com  # app requests and no root  # in general, don't block Firebase. Yes, they have analytics and pushes but side-to-side with other services - see in _consultants
+||admob-app-id-*.firebaseio.com  # from Adguard
 
 gamesight.io  # from GoodbyeAds  # "Performance marketing"
 
@@ -349,6 +354,8 @@ ads.linkedin.com
 ! end of ads.linkedin.com
 platform.linkedin.com  # ||platform.linkedin.com^$3p  # from hpHosts’ Ad and tracking servers, modified
 
+loganalytics.io  # telemetry service
+
 adsapi.manhuaren.com  # from Adguard
 euadsapi.manhuaren.com  # from Adguard
 
@@ -387,6 +394,8 @@ myinstashot.com  # "Hello" root  # from Adguard
 gfe.nvidia.com  # from github.com/asterriya/regex-ads/ and 1Hosts
     ! telemetry-dce.gfe.nvidia.com  # Nvidia - Tracker  # from Quidsup NoTrack-Blocklist
 
+opentelemetry.io  # telemetry service
+
 ! Ads from Opera mini browser. Which have some default adblock (so!). Blocked by some adlist in Blokada
 operamini-sub.osp.opera.software
 api-a.op-mobile.opera.com
@@ -414,6 +423,9 @@ telemetry-cii.api.playstation.com  # Sony - Tracker  # from Quidsup NoTrack-Bloc
 telemetry-console.api.playstation.com  # Sony - Tracker  # from Quidsup NoTrack-Blocklist
 
 pluginmanagerconfig1.info  # app telemetry and empty root
+
+bugly.qcloud.com  # telemetry service
+bugly.qq.com  # telemetry service
 
 quicinc.com  # app requests to telemetry.swe.quicinc.com, root redirects to qualcomm.com  # Blocked by some adlist in Blokada
 !+  swe.quicinc.com
@@ -480,10 +492,13 @@ sentry-cdn.com$important,all  #browser.sentry-cdn.com
     /sentry.bundle.min.js  # sentry.io library, see https://github.com/getsentry/sentry-javascript
     /sentry/*
         ! /sentry/bundle.min.js
+        ! /sentry-logger.js  # from EasyPrivacy
         ! ||atlassian.com/sentry/
         ! ||avito.ru/dstatic/build/sentry
         ! ||ferra.ru/sentry/
 ||github.com/getsentry/$3p
+
+signalfx.com  # telemetry service
 
 appgift.sinaapp.com  # from Adguard
 
