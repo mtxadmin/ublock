@@ -689,6 +689,11 @@ cmp.cdn.thesun.ie  # from EasyList
 cmp.tori.fi  # from EasyList
 cmp.tvspielfilm.de  # from EasyList
 
+||cmpv2.$important
+cmpv2.cookist.it  # from EasyList
+cmpv2.fanpage.it  # from EasyList
+cmpv2.macworld.co.uk  # from Adguard
+
 /cnt.  # is in Ru AdList
 !||cnt.hd21.  # from Adguard
 !||cnt.proporn.  # from Adguard
@@ -997,6 +1002,7 @@ log.quora.com  # from Adguard
 log.reformal.ru  # from Adguard
 log.mix.sina.com.cn  # from uBlock filters
 log.tbs.qq.com  # from Adguard
+log.snssdk.com  # from Adguard
 log.spotify.com  # Spotify - Tracker  # from Quidsup NoTrack-Blocklist
 log.video.taobao.com  # Taobao.Com - Tracker  # from Quidsup NoTrack-Blocklist
 log.core.cloud.vewd.com  # vewd.com - Tracker  # from Quidsup NoTrack-Blocklist
@@ -3732,8 +3738,6 @@ orbit.lun.ua  # ad scripts  # is in Ru AdList
 
 cm8.lycos.com  # from MVPS
 
-cmpv2.macworld.co.uk  # from Adguard
-
 legacy-telemetry.malwarebytes.com  # Malwarebytes - Tracker  # from Quidsup NoTrack-Blocklist
 genesis.malwarebytes.com  # from EasyPrivacy
 links.e.malwarebytes.com  # from iam-py-test's anti-redirectors
@@ -4295,6 +4299,15 @@ zlolhl.smart-lab.ru  # from Adguard
 topnews.smi.one  # from Ru AdList
 
 adsapi.snapchat.com  # from Adguard
+
+! From Adguard: "Be careful when blocking snssdk.com. It is used also for legal purposes"
+mon.snssdk.com
+mcs.snssdk.com
+i.snssdk.com
+    !||i.snssdk.com/log/*
+    !||i.snssdk.com/slardar/sdk.jslog-hl.snssdk.com
+ib.snssdk.com
+xlog.snssdk.com
 
 mobile-stats.socialquantum.com  # from GoodbyeAds
 
