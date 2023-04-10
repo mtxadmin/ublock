@@ -118,6 +118,11 @@
 
 /modules/chat_widget/*
 
+/modules/clean/ux_analytics/*$important  # from EasyPrivacy
+
+/modules/custom/ex_omniture/*$important
+/modules/custom/wbnotifications/*  # from Adguard
+
 /modules/dfp/*  # from EasyList
 
 /modules/doubleclick/*  # from EasyList
@@ -137,6 +142,8 @@
 /modules/gpt/*
 
 /modules/hifacebookconnect/*  # Drupal module
+
+/modules/it.tiscali.portal.homepage.v2/*  # from Adguard: ||tiscali.it/export/system/modules/it.tiscali.portal.homepage.v2/resources/js/shp-pasyc.js
 
 /modules/lastorder/*
 
@@ -462,6 +469,8 @@
 
 /plugins/ax-social-stream/*
 
+/plugins/ays-facebook-popup-likebox/*  # from Adguard
+
 /plugins/background-manager/*
     ! ||volyninfo.com/core/wp-content/plugins/background-manager/  # from Ru AdList
 
@@ -492,11 +501,13 @@
 
 /plugins/berserk-shortcodes/*
 
+/plugins/best-ads-block-detector/*  # from Adguard
+
 /plugins/bestprice/*
 
 /plugins/better-adsmanager/*$important
 
-/plugins/better-content-protector/*$script  # from uBlock filters
+/plugins/better-content-protector/*  # from uBlock filters: /plugins/better-content-protector/*$script
 
 /plugins/better-post-views/*  # post views counter
 
@@ -640,8 +651,10 @@
 
 /plugins/complaincebar/*
 
-/plugins/complianz-gdpr/*$important
-/plugins/complianz-gdpr-premium/*$important
+/plugins/complianz-gdpr*$important
+    ! /plugins/complianz-gdpr/*$important
+    ! /plugins/complianz-gdpr-premium/*$important
+    ! /plugins/complianz-gdpr-premium-multisite/*$important
 
 /plugins/confection/bridge.php  # from EasyPrivacy and Adguard
 
@@ -806,7 +819,7 @@
     /dfp-ads/*$important  # is in EasyList
     /google-ads.min.js$important
 
-/plugins/dfpadshtml/*  # from Adguard
+/plugins/dfpadshtml/*  # from Adguard: ||emp.bbci.co.uk/plugins/dfpAdsHTML/
 
 /plugins/df-shortcodes/*
 
@@ -909,6 +922,8 @@
 /plugins/elfsight-popup-cc/*  # from EasyList
 /plugins/elfsight-testimonials-slider-cc/*
 /plugins/elfsight-whatsapp-chat-cc/*  # from Adguard
+
+/plugins/em_ad/*  # from Adguard
 
 /plugins/email-before-download/*
 
@@ -1284,6 +1299,8 @@
 /plugins/lh-views/*
 
 /plugins/light-social/*$~stylesheet  # is in Fanboy's
+
+/plugins/lightweight-cookie-notice-free/*  # from Adguard
 
 /plugins/lightweight-social-icons/*
 
@@ -1690,7 +1707,7 @@
 
 /plugins/quick-pagepost-redirect-plugin/*
 
-/plugins/radiantthemes-addons/*  # "digital marketing themes"  # from Adguard: ||propellerads.com/wp-content/plugins/radiantthemes-addons/tabs/js/radiantthemes-tab-element-four.js
+/plugins/radiantthemes-addons/*$important  # "digital marketing themes"  # from Adguard: ||propellerads.com/wp-content/plugins/radiantthemes-addons/tabs/js/radiantthemes-tab-element-four.js
 
 /plugins/random-banner/*  # from Ru AdList
 
@@ -1923,6 +1940,7 @@
 
 /plugins/sociable*$important,~stylesheet
     ! /plugins/sociable-$~stylesheet  # from Fanboy's  # might be pro version?
+    ! /plugins/sociable/*  # from Ru AdList, modified
 
 ! all many social* plugins here. Let's make an exclusion for css
 /plugins/social*$~stylesheet,important
@@ -2045,7 +2063,10 @@
 
 /plugins/testimonialslider/*
 
-/plugins/tfnotifier-wp/*  # from Adguard: /plugins/tfnotifier-wp/swloader.php
+/plugins/tfnotifier-wp/*
+    ! from Adguard: /plugins/tfnotifier-wp/swloader.php
+    ! now is in Ru AdList as is: /plugins/tfnotifier-wp/*
+    ! now is in Fanboy's as is /plugins/tfnotifier-wp/*
 
 /plugins/themewich-shortcodes/*
 
@@ -2186,6 +2207,7 @@
 
 /plugins/wccp-pro  # from uBlock filters and Adguard
     ! /wp-content/plugins/wccp-pro/*$script,xhr,css  # from uBlock filters (v2 version)
+    ! /wp-content/plugins/wccp-pro/*$script,xhr,css,image  # from uBlock filters (v3 version)
 
 /plugins/weblizar-pinterest-feeds/*
 
@@ -2292,7 +2314,7 @@
 
 /plugins/wp-chatbot/*
 
-/plugins/wp-content-copy-protection/*  # from Adguard
+/plugins/wp-content-copy-protection/*  # from Adguard, uBlock, Ru AdList
 
 /plugins/wp-coupons-and-deals/*
 
@@ -2446,6 +2468,8 @@
 
 /plugins/wp-to-twitter/*
 
+/plugins/wptqn  # from Adguard: ||topsporter.net/wp-content/plugins/wptqn
+
 /plugins/wp-trending-post-slider-and-widget/*
 
 /plugins/wpt-tea-coffee-dance/*
@@ -2481,7 +2505,7 @@
 /plugins/wt-web-push-notifications/*
 
 /plugins/wysija-newsletters/*$important
-    /wysija-newsletters/*  # is in RuAdList And Fanboy's
+    /wysija-newsletters/*  # is in Ru AdList And Fanboy's
 
 /plugins/xt-woo-floating-cart/*
 
