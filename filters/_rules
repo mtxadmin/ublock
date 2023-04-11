@@ -2510,6 +2510,11 @@ _analytics.js?  # from EasyPrivacy
 _chartbeat.js  # from EasyPrivacy
 /clear.png
 /clientele/reports/*  # is in EasyPrivacy
+/client-metrics/*
+    ! ||ozone.ru/s3/client-metrics/
+    ! ||ozone.ru/graphics/client-metrics/
+/client_metrics/*
+    ! ||dropbox.com/2/client_metrics/record
 /cnt.
     ! /cnt.cgi?  # from Ru AdList
     ! /cnt.js
@@ -2577,6 +2582,8 @@ _chartbeat.js  # from EasyPrivacy
     ! /fingerprintjs2/*
 /foresee/*  # from Ru AdList
 ?frm=script&se_referrer=  # from AdGuard
+/frontend-metrics/*
+    ! ||cian.ru/frontend-metrics/
 /ga_setup.js$important
 /ga_social_tracking.js  # from Ru AdList
 _gatrack.js  # from EasyPrivacy
@@ -2616,6 +2623,16 @@ _hightraffic_code.js  # from EasyPrivacy
 _loghuman=  # from EasyPrivacy
 /logimpressions?$important  # is in EasyPrivacy and uBlock filter  # ||docs.google.com/*/logimpressions
 /logperf?  # is in EasyPrivacy
+/metrics/*
+    ! ||apple.com/metrics/
+    ! ||hpe.com/global/metrics/
+    ! ||imdb.com/api/_ajax/metrics/  # is in EasyPrivacy
+    ! ||mainfin.ru/js/metrics/
+    ! ||msk1.ru/api/metrics/
+    ! ||oracleimg.com/us/assets/metrics/  # tracking scripts
+    ! ||rambler.ru/metrics/  # is in EastPrivacy
+    ! ||sberbank.ru/metrics/
+    ! ||sobyanin.ru/metrics/
 /metrika/*
     ! ||cloudfront.me/metrika/watch  # from Ru AdList
     ! ||cloudfront.net/metrika/watch  # from Ru AdList
