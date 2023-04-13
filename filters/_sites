@@ -13266,15 +13266,17 @@ maketecheasier.com##[id^="MTE_in_content_ad"]
 ! is in Adguard
 maketecheasier.com##.sidebar-subscribe-box
 
-! promoted posts
-makeuseof.com##.browse-clip:has(a[href="/category/sponsored/"])
 ! override Fanboy's exception - instead of !makeuseof.com##.header-logo and other
 @@*$generichide,domain=makeuseof.com,badfilter
-! top
+    ! promoted posts
+makeuseof.com##.browse-clip:has(a[href="/category/sponsored/"])
+    ! top
 makeuseof.com##.heading_image
 makeuseof.com##.sidebar-poll
-! inline related
+makeuseof.com##.emphasized
+    ! inline related
 makeuseof.com##.related-single
+    ! other
 
 ||mal-kuz.ru/images/vk1.png
 ||mal-kuz.ru/images/in.png
@@ -22106,6 +22108,7 @@ techdiving.pro###header-inner > [href="https://www.techdiving.pro/"]
 techexpert.tips##.fusion-header:style(position:static !important)
 techexpert.tips##.fusion-sticky-shadow
 ||gstatic.com/s/raleway/$important,font  # techexpert.tips блюэээ
+d1ny9casiyy5u5.cloudfront.net/wp-content/uploads/fusion-gfonts/  # new version of techexpert.tips блюэээ
 
 tech-faq.com##^script:has-text(adblock)
 
