@@ -5,7 +5,6 @@
 ! List of specific cosmetic rules for sites (mostly Russian, but not only)
 ! General rules were transferred to _rules . They are very important, do not use this file alone
 !
-! Sites sorted by a-z only, without _ and - (just for human convenience).
 ! And please don't add subdomains here, add them to _marketing__subdomains file
 ! 
 ! See cosmetic rules policy at https://github.com/mtxadmin/ublock/blob/master/docs/policy_en.md
@@ -4462,6 +4461,7 @@ cnews.ru##.market-item
 ! from Adguard
 cnews.ru##article > a.other-news-note
 
+||cnn.com/media/sites/cnn/video-placeholder.svg
 cnn.com###breaking-news
 cnn.com##.business-logo-icon
 cnn.com###header-nav-container:style(position:static !important)
@@ -12437,6 +12437,7 @@ leroymerlin.ru##.m16ecsez_plp
 ||cloudinary.com/lmru-test/image/upload/*/snizenie-ceny*.jpg
 leroymerlin.ru##.banner-image
 leroymerlin.ru##.uc-carousel
+leroymerlin.ru##.main-img
 
 letidor.ru##button:has-text(/^Узнать ответ$/)
 
@@ -16515,6 +16516,9 @@ ozon.ru##span:has-text("успейте купить")
 ozon.ru##div:has(>a[href*=campaign])
 ozon.ru##div > a[href^="/product/podpiska"]
 ozon.ru##div:matches-css(height:155px):has-text(Реклама)
+ozon.ru##div[data-widget=objectLine]:has-text(Ловите часы продажи)
+ozon.ru##div[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
+ozon.ru##div[data-widget="skuLine"]:has-text(Лучшие предложения)
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
@@ -16524,12 +16528,15 @@ ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 ozon.ru##div[data-widget=webInstallmentPurchase]
     ! seo
 ozon.ru##div[data-widget="semanticText"]
+ozon.ru##div[data-widget="tagList"]
+    ! bottom
+ozon.ru##a:has(img[alt="Ozon Job"])
     ! other
 ozon.ru##.vacancy__actions:style(position:static !important)
 ozon.ru##.vacancy__benefits
 ozon.ru##h3
 ozon.ru##p:has-text(Наведите камеру и скачайте)
-ozon.ru##.b4u0
+!ozon.ru##.b4u0 - a random one, don't
 ! footer icons
 !ozon.ru##svg:matches-css(width:24px):matches-css(height:24px) - don't, not only footer
 ozon.ru##div[data-widget="separator"]
@@ -28485,3 +28492,33 @@ pravilamag.ru##.author-article:has(img[alt="Редакция сайта"])
 skai.gr###breaking-news
 
 ! chilivesti.ru - lazyload: data-srcset
+
+||nonano.ru/a1sys/$image
+    ! top
+nonano.ru###rec_b
+nonano.ru###h #hl
+nonano.ru###sr
+nonano.ru###a1
+    ! other
+nonano.ru###h2:style(height:auto !important; background-image:none !important)
+
+sysarchitects.com##.region-sidebar-first
+
+erarussia.ru##.advantage
+
+eraworld.ru##.mainspot
+eraworld.ru##.panel-catalog-news
+eraworld.ru##.panel-news
+eraworld.ru##.person
+eraworld.ru##.text-center:has-text(Нашли ошибку?)
+eraworld.ru##.slick-slider
+eraworld.ru##h3:has-text(Отраслевые решения)
+eraworld.ru##div.container:has-text(часто покупают)
+
+era-world.ru##.v-subscribe-mail
+era-world.ru##.v-last-reviews
+
+thisisbarry.com##a[href^="https://www.buymeacoffee.com/"]:has(img)
+
+screenrant.com##.emphasized.nav-link
+! screenrant.com lazyload data-img-url
