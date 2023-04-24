@@ -6833,6 +6833,23 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/tri_sovetskie_partizanki_10168684
     ! https://pikabu.ru/story/izobrazhenie_layki_i_sputnika2_10167857
 
+pikabu.ru##span:has-text(/^FreeSerbin$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="FreeSerbin"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="FreeSerbin"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^FreeSerbin$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="FreeSerbin"]))
+    ! https://pikabu.ru/story/yuliya_peresild_geroy_rossii_10166289
+    ! https://pikabu.ru/story/dedushku_segodnya_vspominali_153_godika_zhivee_vsekh_zhivyikh_10168800
+    ! https://pikabu.ru/story/alf_neyroset_kto_sharit_sdelayte_alfa_v_rossii_zimoy_v_ushanke_9840903
+
+pikabu.ru##span:has-text(/^Xarakterno$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Xarakterno"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Xarakterno"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Xarakterno$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Xarakterno"]))
+    ! https://pikabu.ru/story/andzhelina_dzholi_priekhala_vo_lvov_9071512
+    ! https://pikabu.ru/story/pust_trepeshchut_v_polshe_nazvali_glavnyiy_strakh_rossii_8444143
+
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^history2022$/)):style(color:#F0F0F0)
