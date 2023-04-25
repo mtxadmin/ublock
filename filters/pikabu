@@ -455,15 +455,23 @@ pikabu.ru##article.story:has(.story__user-info:has-text(DELETED)):not(:matches-p
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="DELETED"]))
 !
 ! Промо от администрации. Ну, такое себе
+pikabu.ru##article.story:has(.story__user-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))~div
 !pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##article.story:has(.story__author-panel-info > .user__nick[data-name="pikabu"]):not(:matches-path(/\/story\//))
 !
 ! Оно же
+! добавлено закомментированным. Пока todo до выяснения
+!pikabu.ru##article.story:has(.story__user-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))
+! не помню, почему закомментировано
 !pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##article.story:has(.story__author-panel-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))
 pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="pikablog"]):not(:matches-path(/\/story\//))~div
-
+!
+! И еще
+pikabu.ru##article.story:has(.story__user-info > .user__nick[data-name="SupportTags"]):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="SupportTags"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.story__author-panel:has(.story__author-panel-info > .user__nick[data-name="SupportTags"]):not(:matches-path(/\/story\//))~div
 
 ! Сворачивание ботоконтента
 ! 1 - сворачивание ботостатей, кроме открытых напрямую по ссылке (иначе блок комментов выглядит странно. А комменты нужны - туда бывают ссылки)
@@ -2687,9 +2695,28 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ixoxosh
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ixoxoshka$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="ixoxoshka"]))
 
+pikabu.ru##span:has-text(/^ixoxoshka$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="ixoxoshka"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ixoxoshka"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ixoxoshka$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="ixoxoshka"]))
+    ! https://pikabu.ru/story/ocherednoy_feyk_9021290
+    ! https://pikabu.ru/story/gossekretar_ssha_smert_500_tyisyach_detey_v_irake__opravdana_8917147
+    ! https://pikabu.ru/story/taktika_banderovskoy_shvali_i_pri_chem_tut_bucha_8997818
+
+! упоротый
+pikabu.ru##span:has-text(/^Lider13$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Lider13"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Lider13"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Lider13$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Lider13"]))
+    ! https://pikabu.ru/story/pochemu_ya_poshel_dobrovoltsem_na_svo_10176806
+    ! https://pikabu.ru/story/nemnogo_o_byitovoy_zhizni_uchastnikov_svo_9701214
+    ! https://pikabu.ru/story/spasibo_za_gumanitarku__9655679
+    ! https://pikabu.ru/story/prodolzhenie_posta_kak_ya_stal_voinom_sveta__akhmat_9394877
+    ! https://pikabu.ru/story/kak_ya_stal_voinom_sveta__akhmat_9393775
+    ! https://pikabu.ru/story/bred_ot_times__na_parade_9_maya_v_moskve_budet_voennoplennyim_vsu_9082016
+    ! https://pikabu.ru/story/evropeyskiy_politik_na_sayte_mirotvorets_9076030
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="pcoverlord"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^pcoverlord$/)):style(color:#F0F0F0)
@@ -3716,9 +3743,17 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="ilyaBes
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^ilyaBess$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="ilyaBess"]))
 
+pikabu.ru##span:has-text(/^Sertorius$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Sertorius"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Sertorius"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Sertorius$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Sertorius"]))
+    ! https://pikabu.ru/story/voenkor_rt_andrey_filatov_v_zone_svo_na_yelektrobayke_sluchayno_naekhal_na_minu_10175722
+    ! https://pikabu.ru/story/u_menya_razryivaetsya_serdtse_izvestnyiy_pornorezhissyor_nachal_nabor_ukrainskikh_bezhenok_dlya_syomok_9284737
+    ! https://pikabu.ru/story/deputat_radyi_goncharenko_zayavil_o_skorom_begstve_prezidenta_serbii_vuchicha_v_rossiyu_9284666
+    ! https://pikabu.ru/story/ukrainskaya_bezhenka_pro_yestoniyu_9053673
+    ! https://pikabu.ru/story/pro_video_azova_pro_podzemnyiy_gorod_pod_azovstalyu_9053442
+    ! https://pikabu.ru/story/amerikanskiy_nayomnik_alkogol_maroderka_i_prochee_ot_pervogo_litsa_9052803
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="BorZiiVolk"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^BorZiiVolk$/)):style(color:#F0F0F0)
@@ -6849,6 +6884,31 @@ pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:h
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Xarakterno"]))
     ! https://pikabu.ru/story/andzhelina_dzholi_priekhala_vo_lvov_9071512
     ! https://pikabu.ru/story/pust_trepeshchut_v_polshe_nazvali_glavnyiy_strakh_rossii_8444143
+
+! скромный ватничек
+pikabu.ru##span:has-text(/^Skartex131$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Skartex131"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Skartex131"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Skartex131$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Skartex131"]))
+    ! https://pikabu.ru/story/otvet_vikand_v_v_zone_svo_proizoshyol_yekstraordinarnyiy_sluchay_mezhdu_rossiyskimi_i_ukrainskimi_voennyimi_10177230
+    ! https://pikabu.ru/story/otvet_na_post_v_preddverii_muzhenskikh_prazdnikov_9898173
+    ! https://pikabu.ru/story/otvet_na_post_buzova_9598604
+    ! https://pikabu.ru/story/otvet_na_post_kak_to_tak_9568873
+    ! https://pikabu.ru/story/ne_khotyat_uchitsya_na_svoikh_oshibkakh_9557403
+    ! https://pikabu.ru/story/otvet_na_post_sbu_obyavila_v_rozyisk_dmitriya_medvedeva_9541022
+    ! https://pikabu.ru/story/zlobodnevnoe_9499498
+    ! https://pikabu.ru/story/predlozhenie_ubrat_reaktsii_iz_postov_s_tegom_politika_9452339
+    ! https://pikabu.ru/story/gaz_za_rubli_9071046
+
+pikabu.ru##span:has-text(/^vikand$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="vikand"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="vikand"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^vikand$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="vikand"]))
+    ! https://pikabu.ru/story/nemetskomu_tanku_leopard_2a4_sneslo_bashnyu_10153668
+    ! https://pikabu.ru/story/otvet_na_post_v_zone_svo_proizoshyol_yekstraordinarnyiy_sluchay_mezhdu_rossiyskimi_i_ukrainskimi_voennyimi_10176065
+    ! https://pikabu.ru/story/otvet_na_post_btr_vyiderzhal_popadanie_nemetskoy_i_shvedskoy_granat_amerikantsam_prishlos_bezhat_9148725
 
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
