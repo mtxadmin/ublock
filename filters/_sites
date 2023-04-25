@@ -2186,9 +2186,18 @@ autoprogs.ru###header
 autoprogs.ru###infobar
 autoprogs.ru##body:style(margin-top:-100px !important)
 
+    ! banners and promos
 autoreview.ru##.comment-content:has-text(промокод)
+    ! paywall
+! an exclusion for .subscription was made (see _rules), added specific rules to make more descriptive error:
+autoreview.ru##.subscription-wrapp
+autoreview.ru##.subscription-title > span
+autoreview.ru##.subscription > .already-subscribe
+autoreview.ru##.subscription::after
+    ! other
 autoreview.ru##.article-hidding-overlay:style(background-image:none !important)
 autoreview.ru##.head-left-logo
+autoreview.ru##.sidebar-discussing
 
 auto-rostov.ru###branding
 auto-rostov.ru##.ipsBadge
@@ -2205,6 +2214,8 @@ autotonkosti.ru##.region-header.region
 autotonkosti.ru##.sub-title
 autotonkosti.ru##.butts
 autotonkosti.ru##.submitted-user
+
+autotravel.ru##.search-box:style(margin-top:0px !important)
 
 ! from Fanboy's
 autowp.ru##.links
@@ -5979,12 +5990,16 @@ drom.ru##a[href^="market://"]:upward(1)
     ! logo
 !drom.ru##svg > g > path
 drom.ru##svg
+||c.rdrom.ru/reviews/images/autumn/dromish2.svg
+||c.rdrom.ru/reviews/images/autumn/dromish3.svg
     ! banners
 drom.ru##.js-banner-dummy
 drom.ru##.viewdir-awesome-info
 drom.ru##.bzr-viewdir-status__stick
 drom.ru##.amayamaTire
 ||c.rdrom.ru/js/bundles/media/osago.
+    ! social
+drom.ru##.b-header-top-media__item_ico_mail
     ! other
 drom.ru##.b-topline
 drom.ru##.b-media-cont_left
@@ -5994,6 +6009,7 @@ drom.ru##.nps-wrapper
 drom.ru##button[data-ga-stats-name=scroll_to_top_button]
 drom.ru##.stats
 drom.ru##div[data-ga-stats-name="widgetNewBlock"]
+drom.ru##div:has(>.b-tire-scroll):style(position:static !important)
 ! lazyload: data-src
 
 dronnews.ru##.aliad-block
@@ -22967,6 +22983,8 @@ timeweb.com##.ia-splitter:style(padding-top:0px !important)
 tinkoff.ru$3p  # ad scripts (maybe credits)
 ||cdn-tinkoff.ru/twa/
 ||tinkoff.ru/sl/  # ref links
+    ! popups
+tinkoff.ru###tooltip-description
     ! banners and promos
 tinkoff.ru###bannerlink-level
 tinkoff.ru##section[id="drive-footer-banner"]
@@ -28575,3 +28593,16 @@ kroksw.com##.g-panel
 whatsabyte.com##p:has-text(Disclaimer):has-text(affiliate)
 
 forums.att.com##.askQuestionBubble
+
+carbee.ru###bar
+
+! there are good related links, but also many promos and fixed-unfixed jumps. Let's remove.
+quto.ru##.sideColumn
+
+censor.net##.section-container-main:style(position:static !important)
+censor.net##.logo-center-container
+! totop
+censor.net##.focus_up
+
+careta.info##.date
+careta.info###right-sidebar > div
