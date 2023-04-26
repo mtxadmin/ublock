@@ -3403,7 +3403,9 @@ _wtInit.js  # from Fanboy's
     ! Exclusions:
     ! scat.kz: #top is a main div
     ! thestrad.com #top is a main div
-~nano-editor.org##.top:not(html):not(body):not(article):not(table):not(ul)
+~nano-editor.org,~planetazdorovo.ru##.top:not(html):not(body):not(article):not(table):not(ul)
+    ! Exclusions:
+    ! planetazdorovo.ru: not totop button, useful map popups
 ##.top-btn
 ###top-but
 ##.top_button
@@ -5590,6 +5592,7 @@ tarif-24.ru##.mh-ticker-bottom
 !! disabling serice workers
 ! https://developers.google.com/web/fundamentals/primers/service-workers/
 ! https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
+/offline-service-worker.js
 /serviceworker.js
 /service-worker.js
     ||wordpress.com/service-worker.js
