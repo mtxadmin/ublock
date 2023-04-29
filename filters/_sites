@@ -7507,8 +7507,14 @@ fintolk.pro##.banner-sticky-bottom
 fintolk.pro##iframe
 fintolk.pro##.wp-embedded-content
 
-finuslugi.ru##.bottom-message
 finuslugi.ru##.common-header__fixed:style(position:static !important)
+    ! popups
+finuslugi.ru##.registerModal
+finuslugi.ru##.modal-popup
+    ! fixed
+finuslugi.ru##.fixed-help
+    ! other
+finuslugi.ru##.bottom-message
 finuslugi.ru##.interesting-categories
 finuslugi.ru##.interesting-arms
 finuslugi.ru##.interesting-news
@@ -8692,6 +8698,32 @@ gorodtroika.ru##.header-hero:style(color:initial !important)
 goroskop.org$third-party,script,important
 
 ||gorposmos.ru/skript/forum/2.png
+
+    ! top
+! top placeholder
+gorzdrav.org##.c-fixing-controller
+gorzdrav.org##.header__main::after
+gorzdrav.org##.header__off:style(opacity:initial !important)
+    ! banners and promos
+! home slider
+gorzdrav.org##.b-homepage-top.yCmsComponent
+! "advantages"
+gorzdrav.org##.Features
+! labels
+gorzdrav.org##.Product-bonuses
+! labels
+gorzdrav.org##.Product-label
+    ! carousels
+gorzdrav.org##.owl-carousel
+gorzdrav.org##.js-carousel--products
+gorzdrav.org##.js-owl-recently-viewed
+gorzdrav.org##.c-gallery--outside
+    ! apps
+||gorzdrav.org/*/app-gallery-footer-gz.svg
+||gorzdrav.org/*/app-qr-footer-gz.svg
+gorzdrav.org##.c-footer__qr
+    ! other
+! lazyload data-src (without errors)
 
 gosuslugi.ru##.footer:style(position:static !important)
 gosuslugi.ru##.p-footer:style(position:static !important)
@@ -17057,6 +17089,11 @@ planetavistrel.ru##.landing-block-socials-container
     ! popups
 planetazdorovo.ru##.popup-city-acceptV.popup
 planetazdorovo.ru##.block-fixed_price
+!@@||planetazdorovo.ru/build/js/vendor/toastr.min.js  # not very useful exclusion, just copies in form of popups. Remain blocked.
+! just for information, js errors then toastr is blocked
+! Uncaught ReferenceError: toastr is not defined
+!planetazdorovo.ru##+js(set, toastr, noopFunc)
+! Uncaught TypeError: toastr.success is not a function
     ! top
 planetazdorovo.ru##.page-header:style(padding-bottom:0px !important; position:static !important)
 planetazdorovo.ru##.popup-layout, .mav-main-layout, .filter-layout:style(position:static !important)
@@ -28647,3 +28684,5 @@ beeg.company##.publicly
 beeg.company##.glad
 
 bizmrg.com$script  # ad scripts  # don't block as host - gorzdrav.org uses hb.bizmrg.com for images
+
+||unpkg.com/tua-body-scroll-lock
