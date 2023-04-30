@@ -2451,12 +2451,14 @@ _analytics.js?  # from EasyPrivacy
     ||hh.ru/analytics^  # is in Adguard
     ||career.ru/analytics^
     ||rabota.by/analytics?  # is in EasyPrivacy
-/analytics/$important,domain=~dropbox.com|~duckduckgo.com|~fandom.com|~globalvoices.org|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~twitter.com
+/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~globalvoices.org|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~twitter.com
     ! Exclusions:
-    ! увы, но иначе в Сбербанк и Домклик не входит
-    !||sberbank.ru/*analytics$script,redirect=noopjs
-    @@||sberbank.ru/*analytics$script
+    ! alfabank - финансовая аналитика по счету
     ! duckduckgo - it blocks any search about analytics. Other search systems are ok.
+    ! sberbank & domclick:
+        ! увы, но иначе в Сбербанк и Домклик не входит
+        !||sberbank.ru/*analytics$script,redirect=noopjs
+        @@||sberbank.ru/*analytics$script
     !
     ! /rest/analytics/*  # is in EasyPrivacy
     ! /vwfiles/analytics/*  # from EasyPrivacy
