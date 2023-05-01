@@ -1105,7 +1105,8 @@ alfabank.ru##[class^=header-warning__root]:has-text(блокировщик ко�
 aslife.ru##.t824__popup
 aslife.ru##.tn-atom
     ! logos
-alfabank.ru##svg
+!alfabank.ru##svg - don't, svg.icon-button.. are useful inteface buttons
+alfabank.ru##[class^=Hlayout_logo_]
     ! banners and promos
 alfabank.ru##.fin-health-banner
 ||gcdn.co/*/benefit-banner.png
@@ -1132,6 +1133,8 @@ alfabank.ru##.page-layout__content:style(padding-top:0px !important; padding-bot
 alfastrah.ru##.toolbar:style(position:static !important)
 alfastrah.ru##.fake-header
     ! other
+alfabank.ru##aside:style(position:static !important)
+alfabank.ru##[class^=backward-button]
 ||alfabank.ru/67d4f9e82794b440330d4551fc3b855f.jpg
 ||alfastrah.ru/docs/images/life.jpg
 ||alfastrah.ru/docs/images/life_1.jpg
@@ -16536,6 +16539,7 @@ ozon.ru##div[trackinginfo]
 !||ozone.ru/assets/vendors-node_modules_bx - don't, map blocked
 !||ozone.ru/assets/cms-desktop-top-bar - don't
 ||v.ozone.ru/vod/*/tile.mp4  # видео в карточках: слегка подбешивает
+||ozon.ru/cdn-cgi/challenge-platform/  # "outdated browser" script, blocks browser. Without it, all is working
     ! top
 !ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
 ozon.ru###stickyHeader:style(position:static !important)
