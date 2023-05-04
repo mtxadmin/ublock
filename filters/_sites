@@ -13097,6 +13097,25 @@ losst.ru##.widget:has-text(/Реклама|Мы вконтакте|Обнару�
 losst.ru##.avatar
 losst.ru##.postrating
 
+    ! top logo
+lostfilm.tv##.left-side:style(background-image:none !important)
+! deblacking menu after removing top logo
+! #3498db is from their css.
+lostfilm.tv##.lstfml:style(color:#3498db !important)
+lostfilm.tv##.wrapper:style(color:#3498db !important)
+lostfilm.tv##.mainheader:style(color:#3498db !important)
+lostfilm.tv##.top-menu:style(color:#3498db !important)
+lostfilm.tv##.left-side:style(color:#3498db !important)
+lostfilm.tv##.menu:style(color:#3498db !important) 
+lostfilm.tv##.item:style(color:#3498db !important)
+    ! naggy autosliders
+lostfilm.tv##.f-sliders
+lostfilm.tv##.f-slider
+lostfilm.tv##.f-top--blocks
+lostfilm.tv##.f-news--photos
+    ! other
+||lostfilm*/plugin_checker.min.js  # Ru AdList rule  # https://www.lostfilm.tv/js/plugin_checker.min.js
+
 lotostube.com##.bottom
 
 ||lovchy.ru/i/footerBack.jpg
@@ -25521,7 +25540,6 @@ wikiwand.com###article_content_wrapper:style(margin-top:40px !important)
 ||wildberries.ru/stats/
 ||wildberries.co.il/stats/
 ||wildberries.fr/stats/
-!
     ! visited goods
 ||wildberries.ru/visitedgoods
 ||wildberries.co.il/visitedgoods
@@ -25534,10 +25552,16 @@ wildberries.ru,wildberries.co.il,wildberries.fr##.j-recent-items > .recently-wat
 ||wildberries.co.il/search/tagsbyurl
 ||wildberries.fr/search/tagsbyurl
 !
-||wb.ru/sdk/sdk.js
+||wb.ru/sdk/sdk.js$redirect=noop.js  # https://a.wb.ru/sdk/sdk.js and others
 ||wbstatic.net/j/externalStat.min.js
 ||wbstatic.net/i/fastSubscribe.png
 ||wbstatic.net/marketing/
+    ! getting rid of js errors on mobile:
+!||wb.ru/sdk/sdk.js$redirect=noop.js
+||wb.ru/*/customTags/banners$redirect=noop.js
+||wildberries.ru/public/v1/banners$redirect=noop.js
+||wb.ru/vol0/data/banners$redirect=noop.js
+||wbstatic.net/data/banners$redirect=noop.js
     ! top
 wildberries.ru##.header-bg:style(top:0px !important)
 ! проблема с поисковой формой. Если убрать класс, то хотя бы placeholder виден
@@ -25598,6 +25622,8 @@ wildberries.ru,wildberries.co.il,wildberries.fr##.general-preloader
 ! oneclick
 wildberries.ru,wildberries.co.il,wildberries.fr##.same-part-kt__btn-buy
 wildberries.ru,wildberries.co.il,wildberries.fr##.error500
+! too large menu in the mobile mode
+wildberries.ru,wildberries.co.il,wildberries.fr##.footer__nav
 
 ||wildfanny.com/adgallery1
 wildfanny.com###header
@@ -28705,3 +28731,15 @@ beeg.company##.glad
 bizmrg.com$script  # ad scripts  # don't block as host - gorzdrav.org uses hb.bizmrg.com for images
 
 ||unpkg.com/tua-body-scroll-lock
+
+vpnscanner.com##tr.nitro-offscreen
+vpnscanner.com##.niche_table
+
+temp-mail.io##.apps
+
+divan.ru##a[href^="/category/promo"]
+
+doctu.ru##.smi_logo
+||doctu.ru/img/bgr_partn.jpg
+doctu.ru##.mainpage:style(padding-top:0px !important; padding-bottom:0px !important)
+doctu.ru##.mainpage:style(background-image:none !important)
