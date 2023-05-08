@@ -2310,9 +2310,14 @@ aviasales.ru##.header__title-form
 
 avidreaders.ru##.footer
 
-||avito.ru/dstatic/build/sentry
-||avito.ru/dstatic/build/fingerprint
+||avito.ru/*/build/sentry
+||avito.st/*/build/sentry
+||avito.ru/*/build/fingerprint
+||avito.st/*/build/fingerprint
 ||avito.ru/stat/  # is in EasyPrivacy
+||avito.st/stat/
+||avito.ru/*/build/modern/clickstream
+||avito.st/*/build/modern/clickstream
     ! unstick top
 !avito.ru##*:matches-css(position:sticky):style(position:static !important) - моргает
 avito.ru##[class*=index-stickyHeader]:style(position:static !important)
@@ -24884,15 +24889,21 @@ voenteka.ru##.specials
 voenteka.ru##.logo-row
 
 ||voen-torg.ru/*/ab__so_seohide/
+    ! top
 voen-torg.ru##.fixed-top:style(position:static !important)
 voen-torg.ru##.top-menu-grid:style(position:static !important)
 voen-torg.ru##.top-menu:style(margin-top:0px !important)
 voen-torg.ru##.top-menu::before
 voen-torg.ru##.top-menu::after
+voen-torg.ru##.hamburger-trigger
+voen-torg.ru##.nav-collections
+voen-torg.ru##.header-menu:style(color:initial !important; background-color:initial !important; transition:none !important)
+voen-torg.ru##.nav-item > a:style(color:initial !important)
+voen-torg.ru##.ty-cr-phone-number
+voen-torg.ru##.b-top
+    ! other
 voen-torg.ru##.row-fluid:style(top:0px !important)
 voen-torg.ru##.social-proof__inline
-voen-torg.ru##.b-top
-voen-torg.ru##.ty-cr-phone-number
 
 ||voentorg.ru/images/bgr/$image
 ||voentorg.ru/images/img/man.png
@@ -28743,3 +28754,23 @@ doctu.ru##.smi_logo
 ||doctu.ru/img/bgr_partn.jpg
 doctu.ru##.mainpage:style(padding-top:0px !important; padding-bottom:0px !important)
 doctu.ru##.mainpage:style(background-image:none !important)
+
+valdaypark.ru##[class$=__arrow]
+
+appbrain.com##.floating-footer
+appbrain.com##.destinations
+appbrain.com##.new-header-spacer
+
+xxxdan.com###content > p
+
+   ! banners
+wikiporn.tv##h2:has-text( Ads)
+wikiporn.tv##.bns-bl
+wikiporn.tv##.bn
+wikiporn.tv##.loading.initial
+   ! other
+
+freecoursesonline.me##.header-container
+freecoursesonline.me##.srr-vticker
+
+wizcase.com###sidebar-top-vendors
