@@ -262,6 +262,7 @@ aliexpress.com,aliexpress.ru##[class*=bannerLink]
 aliexpress.com,aliexpress.ru##[class*=styles_carousel]
 aliexpress.com,aliexpress.ru##.fmcg-banner
 aliexpress.com,aliexpress.ru##.instore-info-rcmds
+aliexpress.com##[class^=price-banner]
 
     ! banner in empty shopping cart
 shoppingcart.aliexpress.com##.big-sale.empty-default
@@ -285,6 +286,16 @@ aliexpress.com,aliexpress.ru##.mobile-app
 aliexpress.com,aliexpress.ru##.android-link
 aliexpress.com,aliexpress.ru##.iphone-link
 aliexpress.com,aliexpress.ru###mobile-download
+aliexpress.com##[class^=appScan-]
+
+! totop
+aliexpress.com##.comet-icon-chevronup
+aliexpress.com##.comet-back-top
+
+! right
+aliexpress.com##[class^=action--container]:style(position:static !important)
+
+aliexpress.com##[class^=survey--wrap]
 
     ! register banners
 aliexpress.com###user-benefits
@@ -1338,6 +1349,9 @@ aliexpress.com,aliexpress.ru##.seo-page-content
 aliexpress.com,aliexpress.ru##.footer-copywrite
 aliexpress.com,aliexpress.ru##.teletext-section
 aliexpress.com,aliexpress.ru##.cf-wrapper
+aliexpress.com##[class^=bottom--container]
+aliexpress.com##[class^=relatedSearch]
+aliexpress.com##[class^=cross-link--crossLink]
 
 ! "did you find?"
 aliexpress.ru##[class^=SearchPool]
@@ -1596,7 +1610,14 @@ aliexpressom.ru###respond
 aliexpressom.ru###toc_container
 aliexpressom.ru##.affix:style(position:static !important)
 
+    ! unfix
+aliexpresstop-obzor.ru##.FixedWidget__fixed_widget:style(position:static !important)
+aliexpresstop-obzor.ru##div:has-text(/^$/)
+    ! other
 aliexpresstop-obzor.ru##.btn-box
+aliexpresstop-obzor.ru##.table-of-contents
+! inline related
+aliexpresstop-obzor.ru##.warning
 
 aliextop.ru###mouselayer
 
