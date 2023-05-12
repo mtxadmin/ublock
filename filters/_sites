@@ -2643,7 +2643,9 @@ bagway.ru###bottomMenu.bottom-menu
 baikalinc.ru##.sticked
 baikalinc.ru##.hero.first-screen
 
+ballistica.su/?counter
 ballistica.su##.l_header:style(position:static !important)
+ballistica.su##.uss_privacy_policy_wrap
 
 banana-pi.org##.fixed-action-btn
 
@@ -3008,14 +3010,32 @@ bibiguru.ru###header
 bicotender.ru##.registration-login-wrapper
 bicotender.ru##.widget_consultation
 
-bigam.ru##.footer-subscribe-wrap
-bigam.ru##.icons__logo_mastercard.icons__logo
-bigam.ru##.icons__logo_mcart.icons__item
-bigam.ru##.inline-social
+||bigam.ru/js/mindbox.js
+    ! popups
 bigam.ru###popup-city
+bigam.ru##.a-top-modal:has(.a-confirm-city-modal-content)
+bigam.ru##.vm--overlay
+bigam.ru###modals-container
+    ! top
+bigam.ru##.a-header__constrain:style(position:static !important)
+bigam.ru##.a-header__middle:style(position:static !important)
+bigam.ru##.a-header__stub
+    ! oneclick
+bigam.ru##.a-main-button:has-text(Купить в 1 клик)
+    ! credits
+bigam.ru##.a-pay-parts
+bigam.ru##.a-sidebar__section:has-text(Купить в рассрочку)
+    ! logos
+bigam.ru##.footer_app_logo_wpapper
+bigam.ru##.a-footer__logo
+    ! other
+bigam.ru##.a-footer__mobile-stores
+bigam.ru##.footer-subscribe-wrap
+!bigam.ru##.icons__logo_mastercard.icons__logo
+!bigam.ru##.icons__logo_mcart.icons__item
+bigam.ru##.inline-social
 bigam.ru##.page-wrapper-fixed:style(padding-top:30px !important)
 bigam.ru##.catalog-grid__price-old
-bigam.ru##.footer_app_logo_wpapper
 bigam.ru##.icons__item
 bigam.ru##.footer-icons__desc
 
@@ -3989,6 +4009,7 @@ celsis.ru##.popup-with-form
 celsis.ru###soput
 
 centlinux.com###header-wrappers
+centlinux.com###logo1
 
 ||centrash.ru/im/price.jpg
 centrash.ru##[href="pochta_bank.html"]
@@ -6193,6 +6214,7 @@ duolingo.com##div[class^="_"]:has(> div[class^="_"] > a[href*="How-can-I-disable
 duolingo.com##div:has(>img[src*="cloudfront.net/images/super/"])
 duolingo.com##div:has(>img[src*="cloudfront.net/images/practiceHub/"])
 duolingo.com##button:has(img[src*="cloudfront.net/images/super/"])
+duolingo.com##div:has(>img[data-test="plus-offer-logo"]):has-text(Попробуйте Super бесплатно)
     ! other
 
 dushlux.ru##.ico_block
@@ -12133,6 +12155,8 @@ kuvalda.ru##.main-footer__bottom
 kuvalda.ru##.product-buy__button:has-text(Быстрый заказ)
 kuvalda.ru##.product-tabs__header_fixed
 kuvalda.ru##.section_white
+! top
+kuvalda.ru##.header-announcement
 
 blog.kvv213.com/wp-content/uploads/2015/06/20140906_080522.jpg
 blog.kvv213.com##hgroup
@@ -12428,6 +12452,7 @@ leroymerlin.kz,leroymerlin.ru##.mowk68k_header-footer
 leroymerlin.kz,leroymerlin.ru##.header-location-hint
 leroymerlin.kz,leroymerlin.ru##.popover-location
 !leroymerlin.kz,leroymerlin.ru##.js-location-hint
+leroymerlin.kz,leroymerlin.ru##[data-qa-region-notification]
     ! other popups
 leroymerlin.kz,leroymerlin.ru###pop-question
 leroymerlin.kz,leroymerlin.ru##.service-sticky
@@ -15926,17 +15951,26 @@ ohotaktiv.ru##.product-intro__warning
 ! buttons in catalog (not in card)
 ohotaktiv.ru##.card-prod__info > .card-prod__add
 
+! autoplay carousel
+ohota-magazin.ru##.bullets
+ohota-magazin.ru##.sidebar-pad:style(padding-top:0px !important)
+
 ||ohota-mania.ru/*/top7.jpg
 
 ohota-ribalka-club.ru##.ridesidelogo
 ohota-ribalka-club.ru###menuDiv:style(position:static !important)
 
-! popups
+    ! popups
 ohotnik.com##.modal-dialog
 ohotnik.com##.fade.modal
-! other
+    ! banners and promos
+ohotnik.com##.main-carousel
+ohotnik.com##.features__list
+ohotnik.com##.news-sale__blocks
+    ! other
 ohotnik.com##.topBut
 ohotnik.com##.carousel-brands__item
+ohotnik.com##.button_outline:has-text(Купить в 1 клик)
 
 ohotnik.org##.header-main-area
 
@@ -16903,16 +16937,26 @@ petri.com##.user-content.widget_user-content
 petri.com###pbOverlay
 ||petri.com/*/hero-placeholder-bg.jpg
 
-petrovich.ru##video
-petrovich.ru##.side_button
-petrovich.ru##.error__item
+||petrovich.ru/common/img/build-day.jpg
+    ! top
 petrovich.ru##.scroll__fixed:style(position:static !important)
 petrovich.ru##.head_wrapper:style(position:static !important)
+petrovich.ru##.header-middle:style(position:static !important)
+petrovich.ru##.header-top:style(margin-top:0px !important; margin-bottom:0px !important)
+    ! banners and promos
+petrovich.ru##video
+petrovich.ru##.baner_topLevel
+petrovich.ru##.baner__long-box
+petrovich.ru##.pet-banner
+    ! other
+petrovich.ru##.side_button
+petrovich.ru##.error__item
 petrovich.ru##.bottom-catalog-info__for-buyer
 petrovich.ru##.card_variants
 petrovich.ru##.footer_top_wrapper
 petrovich.ru##.sp-review-recommended
-||petrovich.ru/common/img/build-day.jpg
+! loans
+petrovich.ru##.split-payment
 
 petrovshop.ru##.js-contacts-header
 
@@ -20161,18 +20205,19 @@ sbercloud.ru##.c-subscribe
 
 ||sbermegamarket.ru/*/promoContent/
 ||sbermegamarket.ru/*/promoContentService/
-! banners
+    ! banners
 sbermegamarket.ru##.banner-view
 sbermegamarket.ru##.landing-banner-view__control
 sbermegamarket.ru##.home-aside-slider
 sbermegamarket.ru##.square-banners-list
 sbermegamarket.ru##.mobile-app-widget
-! other
+    ! other
 sbermegamarket.ru##.subscription-form
 sbermegamarket.ru##.money-bonus
 sbermegamarket.ru##.item-price__price-drop
 sbermegamarket.ru##.item-add2fav
 sbermegamarket.ru##.to-favorite-button
+sbermegamarket.ru##.spinner
 
 sbfront.ru##.ty-cr-phone-number
 
@@ -24582,6 +24627,7 @@ vezuvdom.ru
 vgtimes.ru##.vgt_logo4
 vgtimes.ru##.handle
 vgtimes.ru##.vgt_orig_bg
+vgtimes.ru##a:style(color:initial !important)
 
 ||viacode.com/images/mp_diagram/mrbeanwithtext.png
 
@@ -25102,6 +25148,7 @@ vsehoztovari.ru##.foot_panel_all:style(position:static !important)
 vseinstrumenti.ru###region_modal
 vseinstrumenti.ru###region_shadow
 vseinstrumenti.ru##.city-selection
+vseinstrumenti.ru##.tooltip:has-text(Ваш город)
 vseinstrumenti.ru##.webim_button
 vseinstrumenti.ru##[data-qa="header-actions"]:style(position:static !important)
     ! top
@@ -25139,6 +25186,7 @@ vseinstrumenti.ru##.product-expert
 vseinstrumenti.ru##.nameplate
 ! oneclick, general rule failed
 vseinstrumenti.ru##.quick-order
+vseinstrumenti.ru##.base-button:has-text(Быстрый заказ)
 ! loans
 vseinstrumenti.ru##.payment-by-instalments
 vseinstrumenti.ru##.bonus
@@ -28779,3 +28827,47 @@ freecoursesonline.me##.header-container
 freecoursesonline.me##.srr-vticker
 
 wizcase.com###sidebar-top-vendors
+
+! bottom
+axeandtool.com##.wp-block-group__inner-container
+! axeandtool.com ! lazyload data-ezsrc
+
+! quickview
+adrenalin.ru##.fast_vie
+! promos
+adrenalin.ru##.reco
+adrenalin.ru##.rc_oneclick
+adrenalin.ru##.credito
+adrenalin.ru##.rc_mistake
+
+toppickguide.com##.wpadc-wrapper-class
+toppickguide.com##.nav-primary::before
+!lazyload data-ezsrc
+
+! popup
+zanex.ru###first_city
+
+fsk-russia.ru##.back-call
+
+imperiatools.ru##.widget-html
+imperiatools.ru###iview
+
+garm-shop.ru##.button-credit
+garm-shop.ru##.scrolled:style(padding-top:0px !important)
+garm-shop.ru##.maincols:style(padding-top:0px !important)
+garm-shop.ru##.for-send-error-press
+
+fiskars.ru##.product-details-top-button
+fiskars.ru##.quick-links:style(position:static !important)
+fiskars.ru##.m-navigation:style(position:static !important)
+fiskars.ru##.desktop:style(position:static !important)
+
+mindboxindia.com##.show-pv.protected-view-modal
+
+hotwav.com##.recommendation-modal__container
+hotwav.com##.productView-stickyCart
+hotwav.com##.halo-popup
+
+techxreviews.com##.td-footer-wrapper
+
+realme.com##.sec-banner
