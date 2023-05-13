@@ -1635,6 +1635,8 @@ _rebid.js  # from EasyList
 ! Browsec ad popups
 ##[class^=_Not][class*=_Big_In]:has-text(You’re using Browsec Free)
 ! other
+! Ru AdList rule
+##[data-la-block]
 ! from uBlock filters
 ##a[href^="http://adtrack"]
 ###abAlert
@@ -1716,6 +1718,10 @@ _rebid.js  # from EasyList
     ! 24ru.com - adv board (buy/sell etc.)
 ! is in EasyList
 ##.adv300x250
+##.advantage
+    ! erarussia.ru##.advantage
+    ! fskrs.ru##.advantage
+    ! kovearussia.ru##.advantage
 ##.advantages
     ! instrument.ms##.advantages
     ! obi.ru##.advantages--centered.advantages
@@ -2367,11 +2373,12 @@ _tizers.  # from Ru AdList
 ##.aps-offer-link
 ##.bundle-offer
 ###limited-offer-wrap
-~e-catalog.shop,~flatinfo.ru,~gosuslugi.ru,~hubic.com,~jobs.pl,~olx.ua##.offer
+~e-catalog.shop,~flatinfo.ru,~gosuslugi.ru,~hubic.com,~jobs.pl,~olx.ua,~yavirina.ru##.offer
     ! Exclusions:
     ! flatinfo.ru, gosuslugi.ru, hubic.com, olx.ua - don't remember exactly, sorry
     ! e-catalog.shop (price aggregator) - "offer link"
     ! jobs.pl - job offer list
+    ! yavirina.ru - regular goods
 ~gazprombank.ru###offer
 ###offerBlock
 !
