@@ -2537,7 +2537,9 @@ _chartbeat.js  # from EasyPrivacy
 /count.php  # from Ru AdList
 ^counter.$image,3p  # from Ru AdList
 /counter^$important  # from RU AdList, modified
-/counter_  # from Ru AdList
+/counter_$domain=~images.stopgame.ru  # from Ru AdList
+    ! Exclusions:
+    ! images.stopgame.ru - false positive at https://stopgame.ru/game/counter_strike_source  # https://github.com/easylist/ruadlist/issues/61
 /counter.aspx
 .counter.js
 /counter.js$important
