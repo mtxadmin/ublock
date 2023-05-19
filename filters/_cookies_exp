@@ -1,0 +1,425 @@
+﻿!! It is NOT a sublist of Yet another small uBlock filter list
+!! It is an experimental blocklist, not included to Yet another small uBlock filter list
+! This list is experimental. Can be a source of authentication problems
+! This list does not contain common ad networks' cookies, due to blocking them
+!
+! See https://github.com/mtxadmin/ublock for details
+! You can use some browser extention to watch cookies in your Browser. For instance, for Mozilla: Cookie Quick Manager or Cookie Manager (it exists even on mobile)
+! Something doesn't work? Something is missing? Please, feel free to write about it here:
+! https://github.com/mtxadmin/ublock/issues/new
+
+!! general rules
+
+! bitrix trackers
+*##+js(cookie-remover, BITRIX_SM_BANNERS)
+    ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_BANNERS)
+    ! go64.ru##+js(cookie-remover, BITRIX_SM_BANNERS)
+    ! kprfnsk.ru##+js(cookie-remover, BITRIX_SM_BANNERS)  # sic! sale banners on a political party site
+*##+js(cookie-remover, BITRIX_SM_GUEST_ID)
+    ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
+    ! avicom.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
+    ! bigam.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
+    ! ohotnik.com##+js(cookie-remover, BITRIX_SM_GUEST_ID)
+    ! technocity.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
+*##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+    ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+    ! avicom.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+    ! bigam.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+    ! ohotnik.com##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+    ! technocity.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+*##+js(cookie-remover, BITRIX_SM_SALE_UID)
+    ! izhohota.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
+    ! technocity.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
+
+! DDoS cookies. They are usually http-only
+!*##+js(cookie-remover, /^__ddg/)
+    ! There are many sites. Only examples:
+    ! ayzdorov.ru##+js(cookie-remover, __ddg1_)
+    ! garmin.ru##+js(cookie-remover, __ddg1_)
+    ! hh.ru##+js(cookie-remover, __ddg1_)
+    ! kemono.party##+js(cookie-remover, __ddg1_)
+    ! nozhikov.ru##+js(cookie-remover, __ddg1_)
+    ! pikabu.ru##+js(cookie-remover, __ddg1_)
+    ! pikabu.ru##+js(cookie-remover, __ddg5_)
+    ! pikabu.ru##+js(cookie-remover, __ddgid_)
+    ! pikabu.ru##+js(cookie-remover, __ddgmark_)
+    ! platiza.ru##+js(cookie-remover, __ddg1_)
+    ! podpiska.org##+js(cookie-remover, __ddg1_)
+
+! laravel_session - in general, don't, it is a Laravel session id. And also it is http-only
+!*##+js(cookie-remover, laravel_session)
+    ! autoreview.ru##+js(cookie-remover, laravel_session)
+    ! mindbox.in##+js(cookie-remover, laravel_session)
+    ! mindboxindia.com##+js(cookie-remover, laravel_session)
+
+! PHPSESSID - in general, don't, it is a PHP session id. And also it is http-only, but not everywhere
+!*##+js(cookie-remover, PHPSESSID)
+
+*##+js(cookie-remover, referer)
+    ! fasko.ru##+js(cookie-remover, referer)
+    ! nozhikov.ru##+js(cookie-remover, referer)
+    ! ohota-magazin.ru##+js(cookie-remover, referer)
+    ! udsezon.ru##+js(cookie-remover, referer)
+
+! XSRF-TOKEN - in general, don't: it is typically a token for form sending security
+!*##+js(cookie-remover, XSRF-TOKEN)
+
+! yandex 3p trackers
+*##+js(cookie-remover, _ym_d)
+*##+js(cookie-remover, _ym_isad)
+*##+js(cookie-remover, _ym_uid)
+    ! fskrs.ru##+js(cookie-remover, _ym_d)
+    ! fskrs.ru##+js(cookie-remover, _ym_isad)
+    ! fskrs.ru##+js(cookie-remover, _ym_uid)
+    ! morakniv-russia.ru##+js(cookie-remover, _ym_d)
+    ! morakniv-russia.ru##+js(cookie-remover, _ym_isad)
+    ! morakniv-russia.ru##+js(cookie-remover, _ym_uid)
+
+!! domains
+
+3dnews.ru##+js(cookie-remover, 3d-viewer-id)
+
+9gag.com##+js(cookie-remover, gag_lru)
+9gag.com##+js(cookie-remover, sign_up_referer)
+9gag.com##+js(cookie-remover, ts1)
+
+!aliexpress.com##+js(cookie-remover, aep_history)
+!aliexpress.com##+js(cookie-remover, aep_usuc_f)
+!aliexpress.com##+js(cookie-remover, AKA_A2)
+!aliexpress.com##+js(cookie-remover, ali_apache_id)
+!aliexpress.com##+js(cookie-remover, ali_apache_track)
+!aliexpress.com##+js(cookie-remover, e_id)
+!aliexpress.com##+js(cookie-remover, intl_common_forever)
+!aliexpress.com##+js(cookie-remover, _m_h5_tk)
+!aliexpress.com##+js(cookie-remover, _m_h5_tk_enc)
+!aliexpress.com##+js(cookie-remover, xman_f)
+!aliexpress.com##+js(cookie-remover, xman_t)
+!aliexpress.com##+js(cookie-remover, xman_us_f)
+
+!aliexpress.ru##+js(cookie-remover, aep_usuc_f)
+!aliexpress.ru##+js(cookie-remover, aer_lang)
+!aliexpress.ru##+js(cookie-remover, aer_abid)
+!aliexpress.ru##+js(cookie-remover, intl_common_forever)
+!aliexpress.ru##+js(cookie-remover, xman_t)
+!aliexpress.ru##+js(cookie-remover, xman_f)
+!aliexpress.ru##+js(cookie-remover, xman_us_f)
+
+amazon.com##+js(cookie-remover, csm-hit)
+amazon.com##+js(cookie-remover, session-id)
+amazon.com##+js(cookie-remover, session-id-time)
+amazon.com##+js(cookie-remover, session-token)
+amazon.com##+js(cookie-remover, ubid-main)
+
+auto.ru##+js(cookie-remover, autoru_sid)
+auto.ru##+js(cookie-remover, autoruuid)
+auto.ru##+js(cookie-remover, bltsr)
+auto.ru##+js(cookie-remover, coockoos)
+auto.ru##+js(cookie-remover, count-visits)
+auto.ru##+js(cookie-remover, layout-config)
+auto.ru##+js(cookie-remover, los)
+auto.ru##+js(cookie-remover, speaker_lottery_popup)
+auto.ru##+js(cookie-remover, sso_status)
+auto.ru##+js(cookie-remover, suid)
+auto.ru##+js(cookie-remover, yandexuid)
+auto.ru##+js(cookie-remover, _yasc)
+auto.ru##+js(cookie-remover, yuidlt)
+
+autonews.ru##+js(cookie-remover, splituid)
+
+! id
+avito.ru##+js(cookie-remover, u)
+avito.ru##+js(cookie-remover, luri)
+avito.ru##+js(cookie-remover, buyer_location_id)
+! id
+avito.ru##+js(cookie-remover, v)
+! id
+avito.ru##+js(cookie-remover, sx)
+avito.ru##+js(cookie-remover, dfp_group)
+
+axeandtool.com##+js(cookie-remover, active_template)
+axeandtool.com##+js(cookie-remover, ezAdBlockUser)
+axeandtool.com##+js(cookie-remover, ezCMPCCS)
+axeandtool.com##+js(cookie-remover, ezds)
+axeandtool.com##+js(cookie-remover, ezepvv)
+axeandtool.com##+js(cookie-remover, /^ezo/)
+axeandtool.com##+js(cookie-remover, /^lp_/)
+
+ballistica.su##+js(cookie-remover, lastposition)
+ballistica.su##+js(cookie-remover, user_visits)
+ballistica.su##+js(cookie-remover, uss_visitor)
+
+bigam.ru##+js(cookie-remover, advcake_track_id)
+bigam.ru##+js(cookie-remover, advcake_session_id)
+bigam.ru##+js(cookie-remover, accessToken)
+bigam.ru##+js(cookie-remover, currentCity)
+bigam.ru##+js(cookie-remover, fingerprint)
+bigam.ru##+js(cookie-remover, refreshToken)
+bigam.ru##+js(cookie-remover, updateSubdomainCookie)
+
+! site blocks browser even without those rules.  
+! PerimeterX. blocked.
+capterra.com##+js(cookie-remover, experimentSessionId)
+capterra.com##+js(cookie-remover, _pxhd)
+capterra.com##+js(cookie-remover, SignUpShowingProductToSaveExperiment)
+
+censor.net##+js(cookie-remover, cf_clearance)
+censor.net##+js(cookie-remover, user_session)
+
+citilink.ru##+js(cookie-remover, _pcl)
+
+comparebeforebuying.com##+js(cookie-remover, _TS_)
+
+dns-shop.ru##+js(cookie-remover, _ab_)
+dns-shop.ru##+js(cookie-remover, cartUserCookieIdent_v3)
+dns-shop.ru##+js(cookie-remover, current_path)
+dns-shop.ru##+js(cookie-remover, ipp_key)
+dns-shop.ru##+js(cookie-remover, ipp_sign)
+dns-shop.ru##+js(cookie-remover, ipp_uid)
+dns-shop.ru##+js(cookie-remover, phonesIdent)
+dns-shop.ru##+js(cookie-remover, rerf)
+restapi.dns-shop.ru##+js(cookie-remover, ipp_key)
+restapi.dns-shop.ru##+js(cookie-remover, ipp_uid)
+restapi.dns-shop.ru##+js(cookie-remover, rerf)
+webapi.dns-shop.ru##+js(cookie-remover, ipp_key)
+webapi.dns-shop.ru##+js(cookie-remover, ipp_uid)
+webapi.dns-shop.ru##+js(cookie-remover, rerf)
+
+driven.co.nz##+js(cookie-remover, previousUrl)
+
+edimdoma.ru##+js(cookie-remover, _edimdoma_session_id)
+edimdoma.ru##+js(cookie-remover, quizPopupDietTimer)
+
+fasko.ru##+js(cookie-remover, landing)
+
+! id
+fb.ru##+js(cookie-remover, a)
+! id
+fb.ru##+js(cookie-remover, fbru)
+
+! changed bitrix trackers (see above)
+garmin.ru##+js(cookie-remover, GARMIN_CO_GUEST_ID)
+garmin.ru##+js(cookie-remover, GARMIN_CO_LAST_VISIT)
+garmin.ru##+js(cookie-remover, GARMIN_CO_SALE_UID)
+
+garm-shop.ru##+js(cookie-remover, viewed)
+
+docs.github.com##+js(cookie-remover, _docs-events)
+
+go64.ru##+js(cookie-remover, privacy-policy-informer)
+
+google.com##+js(cookie-remover, NID)
+accounts.google.com##+js(cookie-remover, __Host-GAPS)
+
+gsmarena.com##+js(cookie-remover, keyw)
+gsmarena.com##+js(cookie-remover, lpe)
+
+habr.com##+js(cookie-remover, habr_uuid)
+habr.com##+js(cookie-remover, visited_articles)
+
+hacksnation.com##+js(cookie-remover, cf_chl_2)
+
+hdkinoteatr.com##+js(cookie-remover, user_hot_news)
+
+hotwav.com##+js(cookie-remover, _cmp_a)
+hotwav.com##+js(cookie-remover, keep_alive)
+hotwav.com##+js(cookie-remover, _landing_page)
+hotwav.com##+js(cookie-remover, _orig_referrer)
+hotwav.com##+js(cookie-remover, _s)
+hotwav.com##+js(cookie-remover, _shopify_y)
+hotwav.com##+js(cookie-remover, _shopify_s)
+hotwav.com##+js(cookie-remover, _y)
+
+investing.com##+js(cookie-remover, __cf_bm)
+investing.com##+js(cookie-remover, firstUdid)
+investing.com##+js(cookie-remover, gcc)
+investing.com##+js(cookie-remover, gsc)
+investing.com##+js(cookie-remover, pm_score)
+investing.com##+js(cookie-remover, SideBlockUser)
+! id
+investing.com##+js(cookie-remover, smd)
+! id
+investing.com##+js(cookie-remover, udid)
+investing.com##+js(cookie-remover, user-browser-sessions)
+ru.investing.com##+js(cookie-remover, __cflb)
+ru.investing.com##+js(cookie-remover, _dd_s)
+ru.investing.com##+js(cookie-remover, page_equity_viewed)
+ru.investing.com##+js(cookie-remover, SideBlockUser)
+
+ishooter.ru##+js(cookie-remover, guest_guid)
+
+ixbt.com##+js(cookie-remover, _ix)
+
+justwatch.com##+js(cookie-remover, jw_id)
+justwatch.com##+js(cookie-remover, jw/user)
+justwatch.com##+js(cookie-remover, jw_user)
+
+kinogo.biz##+js(cookie-remover, viewed_ids)
+
+kns.ru##+js(cookie-remover, pc)
+kns.ru##+js(cookie-remover, pvg)
+kns.ru##+js(cookie-remover, _rcmx_session)
+
+kuvalda.ru##+js(cookie-remover, kuvnew)
+
+leroymerlin.ru##+js(cookie-remover, cookie_accepted)
+leroymerlin.ru##+js(cookie-remover, qrator_jsr)
+leroymerlin.ru##+js(cookie-remover, qrator_jsid)
+leroymerlin.ru##+js(cookie-remover, sawOPH)
+leroymerlin.ru##+js(cookie-remover, uid_experiment)
+
+livejournal.com##+js(cookie-remover, luid)
+livejournal.com##+js(cookie-remover, ljuniq)
+
+mail.ru##+js(cookie-remover, mrcu)
+mail.ru##+js(cookie-remover, mtrc)
+
+microsoft.com##+js(cookie-remover, mbox)
+learn.microsoft.com##+js(cookie-remover, original_req_url)
+
+indbox.in##+js(cookie-remover, XSRF-TOKEN)
+mindboxindia.com##+js(cookie-remover, AWSALB)
+mindboxindia.com##+js(cookie-remover, AWSALBCORS)
+mindboxindia.com##+js(cookie-remover, XSRF-TOKEN)
+
+morakniv-russia.ru##+js(cookie-remover, PHPSESSID)
+
+motor.ru##+js(cookie-remover, uid)
+
+mysku.club##+js(cookie-remover, _avid)
+
+ndtv.com##+js(cookie-remover, PublisherProvidedIdsNew)
+social.ndtv.com##+js(cookie-remover, rediruri)
+
+nozhikov.ru##+js(cookie-remover, rees46_session_last_act)
+nozhikov.ru##+js(cookie-remover, rees46_device_id)
+nozhikov.ru##+js(cookie-remover, ins_nozhikov)
+! url
+nozhikov.ru##+js(cookie-remover, first_current_location)
+nozhikov.ru##+js(cookie-remover, first_referer)
+! url
+nozhikov.ru##+js(cookie-remover, current_location)
+
+ohota-magazin.ru##+js(cookie-remover, shop_viewed)
+
+! 3p cookies
+ok.ru##+js(cookie-remover, bci)
+ok.ru##+js(cookie-remover, _statid)
+
+onlinetrade.ru##+js(cookie-remover, onlinetrade)
+onlinetrade.ru##+js(cookie-remover, spid)
+onlinetrade.ru##+js(cookie-remover, session_id)
+
+ozon.ru##+js(cookie-remover, __Secure-ext_xcid)
+! =0. Guest?
+ozon.ru##+js(cookie-remover, __Secure-user-id)
+ozon.ru##+js(cookie-remover, __Secure-access-token)
+ozon.ru##+js(cookie-remover, __Secure-refresh-token)
+ozon.ru##+js(cookie-remover, __Secure-ab-group)
+ozon.ru##+js(cookie-remover, __cf_bm)
+
+petrovich.ru##+js(cookie-remover, UIN)
+api.petrovich.ru##+js(cookie-remover, UIN)
+
+! some random names
+pikabu.ru##+js(cookie-remover, 7xkodguI)
+pikabu.ru##+js(cookie-remover, 9k7MtyP)
+pikabu.ru##+js(cookie-remover, abccv)
+pikabu.ru##+js(cookie-remover, bs)
+pikabu.ru##+js(cookie-remover, clpr1)
+pikabu.ru##+js(cookie-remover, la)
+pikabu.ru##+js(cookie-remover, pcid)
+pikabu.ru##+js(cookie-remover, PHPSESS)
+pikabu.ru##+js(cookie-remover, Tas)
+pikabu.ru##+js(cookie-remover, Uas)
+pikabu.ru##+js(cookie-remover, ulfs)
+special.pikabu.ru##+js(cookie-remover, user)
+
+planetazdorovo.ru##+js(cookie-remover, help_phone)
+planetazdorovo.ru##+js(cookie-remover, order_phone)
+planetazdorovo.ru##+js(cookie-remover, PHPSESSID)
+planetazdorovo.ru##+js(cookie-remover, qrator_ssid)
+planetazdorovo.ru##+js(cookie-remover, qrator_jsr)
+planetazdorovo.ru##+js(cookie-remover, qrator_jsid)
+planetazdorovo.ru##+js(cookie-remover, recently_watched)
+
+product-test.ru##+js(cookie-remover, ReferPage)
+
+quto.ru##+js(cookie-remover, uid)
+
+reddit.com##+js(cookie-remover, csv)
+reddit.com##+js(cookie-remover, edgebucket)
+reddit.com##+js(cookie-remover, loid)
+reddit.com##+js(cookie-remover, token_v2)
+
+redhat.com##+js(cookie-remover, akaalb_prod_rhdc)
+
+rezka.ag##+js(cookie-remover, dle_user_taken)
+rezka.ag##+js(cookie-remover, dle_user_token)
+
+send.cm##+js(cookie-remover, aff)
+send.cm##+js(cookie-remover, __cf_bm)
+
+stackexchange.com##+js(cookie-remover, prov)
+    ! stackexchange sites:
+askubuntu.com##+js(cookie-remover, prov)
+stackoverflow.com##+js(cookie-remover, prov)
+superuser.com##+js(cookie-remover, prov)
+
+technocity.ru##+js(cookie-remover, LIVECHAT_GUEST_HASH)
+
+toppickguide.com##+js(cookie-remover, active_template)
+toppickguide.com##+js(cookie-remover, ezAdBlockUser)
+toppickguide.com##+js(cookie-remover, ezCMPCCS)
+toppickguide.com##+js(cookie-remover, /^ezo/)
+toppickguide.com##+js(cookie-remover, ezepvv)
+toppickguide.com##+js(cookie-remover, ezds)
+toppickguide.com##+js(cookie-remover, /^lp_/)
+
+! id
+translate.ru##+js(cookie-remover, _ppup)
+
+twitter.com##+js(cookie-remover, ct0)
+twitter.com##+js(cookie-remover, guest_id)
+
+udsezon.ru##+js(cookie-remover, referer_referer)
+udsezon.ru##+js(cookie-remover, referer_time)
+udsezon.ru##+js(cookie-remover, referer_type)
+udsezon.ru##+js(cookie-remover, referer_uri)
+udsezon.ru##+js(cookie-remover, sh2lastfid)
+
+ulefone.com##+js(cookie-remover, history[0][ProId])
+ulefone.com##+js(cookie-remover, history[0][Name])
+ulefone.com##+js(cookie-remover, history[0][PicPath])
+ulefone.com##+js(cookie-remover, history[0][PageUrl])
+ulefone.com##+js(cookie-remover, history[0][Price])
+ulefone.com##+js(cookie-remover, history[0][OldPrice])
+ulefone.com##+js(cookie-remover, session_id)
+
+unite4buy.com##+js(cookie-remover, utr)
+
+vedomosti.ru##+js(cookie-remover, salmon-viewport)
+
+vseinstrumenti.ru##+js(cookie-remover, wucf)
+!vseinstrumenti.ru##+js(cookie-remover, cartToken) ?
+!vseinstrumenti.ru##+js(cookie-remover, acctoken) ?
+vseinstrumenti.ru##+js(cookie-remover, reftoken)
+vseinstrumenti.ru##+js(cookie-remover, ab_exps)
+vseinstrumenti.ru##+js(cookie-remover, emitted_experiments)
+
+wlooks.ru##+js(cookie-remover, yandex_ym_lvs)
+
+woman.ru##+js(cookie-remover, user-loyality)
+woman.ru##+js(cookie-remover, forum_creator)
+woman.ru##+js(cookie-remover, woman_uid)
+woman.ru##+js(cookie-remover, woman_sid_2)
+
+youtube.com##+js(cookie-remover, CONSISTENCY)
+youtube.com##+js(cookie-remover, /^ST-/)
+youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
+! id
+youtube.com##+js(cookie-remover, YSC)
+
+zanex.ru##+js(cookie-remover, user1)
+
+!! todo
+
