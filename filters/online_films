@@ -1055,6 +1055,8 @@ kinoglobe.ru##.wrapReg
 kinoglobe.ru##.ntitle
 ||kinoglobe.ru/templates/cinema/images/header-mask_1.jpg$image
 
+!kinogo.biz lazyload data-src
+
 ! kinogorod.com is offline
 !kinogorod.com##.post-data
 !kinogorod.com##.info
@@ -1122,6 +1124,14 @@ kinoknopka.plus###topper:style(position:static !important)
 !kinokoza.com##.mov-comp2
 !kinokoza.com##.scrolla.mb-online2
 !kinokoza.com##.sector_title
+
+! seo
+kinokrad.cc##.conttext
+kinokrad.cc##.boxsoc
+kinokrad.cc###video-box:style(display:initial !important)
+! Uncaught TypeError: $(...).stick_in_parent is not a function
+kinokrad.cc##+js(set, Object.prototype.stick_in_parent, noopFunc)
+kinokrad.cc##.head:style(position:static !important)
 
 kinokrol.ru##p
 kinokrol.ru##li:has-text(/Ожидаемые|Написать|FAQ|Инфо$/)
@@ -1194,6 +1204,21 @@ kinopod.ru##.video-right
 kinopod.ru##.age
 !kinopod.ru/videos/stats/
 kinopod.ru##.add-favorite
+
+||s.kinoprofi.io/emo/  # smiles
+    ! top
+kinoprofi.io##.header-absolute:style(position:static !important)
+kinoprofi.io##.content:style(position:static !important)
+    ! seo
+kinoprofi.io##.category-text
+    ! crowns in comments
+||s.kinoprofi.io/t/images/lvl.png
+kinoprofi.io##.lvl
+kinoprofi.io##.comment-block:style(color:initial !important; background-color:initial !important)
+    ! labels
+kinoprofi.io##.btn-tosee
+kinoprofi.io##.playTrailer
+    ! other
 
 ! kinoprokat.online => kinoprokat.cc => closed
 !kinoprokat.cc##[href="#favorite"]
