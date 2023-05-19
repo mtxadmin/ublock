@@ -2125,13 +2125,14 @@ _rebid.js  # from EasyList
 /tionline150x60.  # from Ru AdList
 /tionline240x100.  # from Ru AdList
 /tionline240x400.  # from Ru AdList
-/tizer*$all,important,domain=~mos.ru|~mosmetod.ru
-    # Ru AdList exclisions: 
-    # asau.ru: closed
-    # mos.ru: govt
-    # mosmetod.ru: govt
-    # tizer.io: closed
-    # all other: seems unneeded
+/tizer*$all,important,domain=~mos.ru|~mosmetod.ru|~stopgame.ru
+    ! Exclusions:
+    ! asau.ru: closed  # Ru AdList exclusion
+    ! mos.ru: govt  # Ru AdList exclusion
+    ! mosmetod.ru: govt  # Ru AdList exclusion
+    ! stopgame.ru - false positive at https://stopgame.ru/newsdata/58024/tizer_trailer_seriala_po_twisted_metal  # https://github.com/easylist/ruadlist/issues/61#issuecomment-1528030907
+    ! tizer.io: closed  # Ru AdList exclusion
+    ! all other Ru AdList exclusion seems unneeded (2023-04)
     /tizer-  # from Ru AdList
     /tizer.*$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
     /tizer/*  # from Ru AdList
