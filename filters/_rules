@@ -2133,18 +2133,19 @@ _rebid.js  # from EasyList
     ! stopgame.ru - false positive at https://stopgame.ru/newsdata/58024/tizer_trailer_seriala_po_twisted_metal  # https://github.com/easylist/ruadlist/issues/61#issuecomment-1528030907
     ! tizer.io: closed  # Ru AdList exclusion
     ! all other Ru AdList exclusion seems unneeded (2023-04)
-    /tizer-  # from Ru AdList
-    /tizer.*$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
-    /tizer/*  # from Ru AdList
-    /tizer2.  # from Ru AdList
-    /tizer2/*  # from Ru AdList
-    /tizer_*$domain=~mos.ru|~mosmetod.ru  # from Ru AdList
-    /tizermedia.  # from Ru AdList
-    /tizerotator/*  # from Ru AdList
-    /tizers/*  # from Ru AdList
-    /tizers2.  # from Ru AdList
-    /tizers3.  # from Ru AdList
-    /tizers_  # from Ru AdList
+    !
+    !/tizer-  # from Ru AdList
+    !/tizer.*$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
+    !/tizer/*  # from Ru AdList
+    !/tizer2.  # from Ru AdList
+    !/tizer2/*  # from Ru AdList
+    !/tizer_*$domain=~mos.ru|~mosmetod.ru  # from Ru AdList
+    !/tizermedia.  # from Ru AdList
+    !/tizerotator/*  # from Ru AdList
+    !/tizers/*  # from Ru AdList
+    !/tizers2.  # from Ru AdList
+    !/tizers3.  # from Ru AdList
+    !/tizers_  # from Ru AdList
 _tizer2.  # from Ru AdList
 /tizshow.  # from Ru AdList
 /utftizer.  # from Ru AdList
@@ -2163,10 +2164,11 @@ _tizers.  # from Ru AdList
 .viptizer.  # from Ru AdList
 /viptizer.  # from Ru AdList
 ! .media_image-field - Drupal images
-~freeones.com,~geeks.hu,~irecommend.ru,~metro-cc.ru,~n-tv.de,~ua-independent.com,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
+~freeones.com,~geeks.hu,~irecommend.ru,~metro-cc.ru,~n-tv.de,~tvklik.ru,~ua-independent.com,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
     ! Exclusions:
     ! freeones.com: previews
     ! n-tv.de news site: many teaser classes - "bnews__slides__teaser slick-slide slick-cloned", "teaser__date", "teaser__kicker", "teaser__headline", "teaser teaser--wide teaser--hero teaser--gallery"
+    ! tvklik.ru: just regular list items - .rt-teaser-articles
     ! ua-independent.com - normal, non-ad news: "itemteaser teaser_title"
 ##[id*=teaser]
     ! ##.b-content__section_teasers
