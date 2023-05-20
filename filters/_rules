@@ -934,7 +934,6 @@ _banner_rotator.php  # from Adguard
 /_banners/*
 /bans/*
     ! ||stopgame.ru/bans/  # from Adguard
-/bens/vinos.js?$important  # is in AdGuard
 /bitrix/spread.php?$important  # is in RU AdList, EasyPrivacy, AdGuard
 /blockadblock*$important
     ! Adguard exclusions:
@@ -1411,6 +1410,9 @@ _rebid.js  # from EasyList
 /videojs-contrib-ads/*$important
 /view.js$domain=~livejournal.com  # from Ru AdList and Adguard, modified
 /viewc.js  # from Ru AdList, modified
+/vinos.js?$important
+    ! /bens/vinos.js?$important  # is in AdGuard
+    ! /grand/vinos.js$script  # from https://github.com/easylist/ruadlist/issues/153
 /volcano_banner  # from Ru AdList
 /webbanners/*
 .weborama.js  # from EasyList
@@ -1735,6 +1737,8 @@ _rebid.js  # from EasyList
 ##.adv-box-right
 ##.advBrand
 ##.adv-contacts
+! is in EasyList
+##.adver
 ##.advers
 ##.adversing_block
 ##.adversing_operator_count
