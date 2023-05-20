@@ -780,7 +780,6 @@ _adsys.js  # from Adguard
 /adv.js$important
 .adv.cdn.  # from EasyList
 =advanced-ads-  # from EasyList
-/advanced-ads-*$domain=~wordpress.org  # is in EasyList
 _advert/  # from EasyList
 /advert.js$important
 /advert-  # from EasyList
@@ -2127,25 +2126,27 @@ _rebid.js  # from EasyList
 /tionline150x60.  # from Ru AdList
 /tionline240x100.  # from Ru AdList
 /tionline240x400.  # from Ru AdList
-/tizer*$all,important,domain=~mos.ru|~mosmetod.ru
-    # Ru AdList exclisions: 
-    # asau.ru: closed
-    # mos.ru: govt
-    # mosmetod.ru: govt
-    # tizer.io: closed
-    # all other: seems unneeded
-    /tizer-  # from Ru AdList
-    /tizer.*$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
-    /tizer/*  # from Ru AdList
-    /tizer2.  # from Ru AdList
-    /tizer2/*  # from Ru AdList
-    /tizer_*$domain=~mos.ru|~mosmetod.ru  # from Ru AdList
-    /tizermedia.  # from Ru AdList
-    /tizerotator/*  # from Ru AdList
-    /tizers/*  # from Ru AdList
-    /tizers2.  # from Ru AdList
-    /tizers3.  # from Ru AdList
-    /tizers_  # from Ru AdList
+/tizer*$all,important,domain=~mos.ru|~mosmetod.ru|~stopgame.ru
+    ! Exclusions:
+    ! asau.ru: closed  # Ru AdList exclusion
+    ! mos.ru: govt  # Ru AdList exclusion
+    ! mosmetod.ru: govt  # Ru AdList exclusion
+    ! stopgame.ru - false positive at https://stopgame.ru/newsdata/58024/tizer_trailer_seriala_po_twisted_metal  # https://github.com/easylist/ruadlist/issues/61#issuecomment-1528030907
+    ! tizer.io: closed  # Ru AdList exclusion
+    ! all other Ru AdList exclusion seems unneeded (2023-04)
+    !
+    !/tizer-  # from Ru AdList
+    !/tizer.*$domain=~tizer.io  # from Ru AdList  # tizer.io is cryptowallet app
+    !/tizer/*  # from Ru AdList
+    !/tizer2.  # from Ru AdList
+    !/tizer2/*  # from Ru AdList
+    !/tizer_*$domain=~mos.ru|~mosmetod.ru  # from Ru AdList
+    !/tizermedia.  # from Ru AdList
+    !/tizerotator/*  # from Ru AdList
+    !/tizers/*  # from Ru AdList
+    !/tizers2.  # from Ru AdList
+    !/tizers3.  # from Ru AdList
+    !/tizers_  # from Ru AdList
 _tizer2.  # from Ru AdList
 /tizshow.  # from Ru AdList
 /utftizer.  # from Ru AdList
@@ -2164,10 +2165,11 @@ _tizers.  # from Ru AdList
 .viptizer.  # from Ru AdList
 /viptizer.  # from Ru AdList
 ! .media_image-field - Drupal images
-~freeones.com,~geeks.hu,~irecommend.ru,~metro-cc.ru,~n-tv.de,~ua-independent.com,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
+~freeones.com,~geeks.hu,~irecommend.ru,~metro-cc.ru,~n-tv.de,~tvklik.ru,~ua-independent.com,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
     ! Exclusions:
     ! freeones.com: previews
     ! n-tv.de news site: many teaser classes - "bnews__slides__teaser slick-slide slick-cloned", "teaser__date", "teaser__kicker", "teaser__headline", "teaser teaser--wide teaser--hero teaser--gallery"
+    ! tvklik.ru: just regular list items - .rt-teaser-articles
     ! ua-independent.com - normal, non-ad news: "itemteaser teaser_title"
 ##[id*=teaser]
     ! ##.b-content__section_teasers
@@ -2539,7 +2541,9 @@ _chartbeat.js  # from EasyPrivacy
 /count.php  # from Ru AdList
 ^counter.$image,3p  # from Ru AdList
 /counter^$important  # from RU AdList, modified
-/counter_  # from Ru AdList
+/counter_$domain=~images.stopgame.ru  # from Ru AdList
+    ! Exclusions:
+    ! images.stopgame.ru - false positive at https://stopgame.ru/game/counter_strike_source  # https://github.com/easylist/ruadlist/issues/61
 /counter.aspx
 .counter.js
 /counter.js$important
@@ -4841,7 +4845,8 @@ turboimagehost.com##.modal-footer
     ! ||yarea.ru/images/18plus.gif
     ! ||zevka.com/images/prosmotr_kino.gif
     ! ||рефераты-и-сочинения.рф/images/hosting.gif  # from Adguard
-/images/*.js$domain=~amazon.*|~media-amazon.com|~domaintools.com  # strange, but Amazon has js in images dir, as well as domaintools.com
+/images/*.js$domain=~amazon.*|~media-amazon.com|~domaintools.com|~mail.ru|~imgsmail.ru  # strange, but Amazon has js in images dir, as well as domaintools.com
+    ! The rule was created to disable scripts on hacked sites. But it turned out that some sites strangely use scripts from images folder. All such found sites added to exlusions
 /img/*.gif,domain=~drebedengi.ru
     ! ||1wt.eu/img/ipv6ok.gif
     ! ||autocamper.ru/sites/autocamper.ru/themes/d1theme/img/h-1.gif

@@ -342,9 +342,12 @@
     ! @@||getitfree.cn/wp-content/plugins/adunblocker/public/js/banner_ads_*.js  # from Adguard Chinese
     ! /wp-content/plugins/adunblocker  # from Adguard
 
-/plugins/advanced-ads/*$important  # https://wordpress.org/plugins/advanced-ads/
-/plugins/advanced-ads-pro/*$important
-/plugins/advanced-ads-responsive/*
+/plugins/advanced-ads$important,domain=~wordpress.org
+    ! /plugins/advanced-ads/*$important  # https://wordpress.org/plugins/advanced-ads/
+    ! /plugins/advanced-ads-pro/*$important
+    ! /plugins/advanced-ads-responsive/*
+    ! /plugins/advanced-ads-tracking/*
+    /advanced-ads-*$domain=~wordpress.org  # is in EasyList
     ! is in EasyList
     ##.advads-widget
     ! is in EasyList
@@ -620,7 +623,9 @@
     ##.chlz__pop-up
     ##.chlz__pop-up-overlay
 
-/plugins/christmas-greetings/  # from Ru AdList
+/plugins/chp-ads-block-detector/*
+
+/plugins/christmas-greetings/*  # from Ru AdList
 
 /plugins/christmasify/*
 
