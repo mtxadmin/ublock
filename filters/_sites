@@ -241,6 +241,7 @@
 2ip.io$3p
 2ip.me$3p
 2ip.ua$3p from GoodbyeAds
+@@||2ip.ua/images/*.png
 
 2kom.ru##.menu-2016:style(position:static !important)
 2kom.ru##.footer2-social
@@ -7493,25 +7494,9 @@ fileinfo.com##.scrollnav
 filext.com###svg-links
 filext.com###svg-rechts
 
-film.ru$3p  # ad xhrs  # paid movies (megogo)
-    ! paid links
-! hochuvkino
-film.ru##.hochuvkino
-film.ru##div > [href="https://hochuvkino.ru"]
-film.ru##[href="/online"]
-! okko
-film.ru###okko
-! is in Ru AdList
-film.ru##a[href*="okko."]
-! wink
-film.ru##.wink
-    ! other
-||film.ru/*/adult.png
-film.ru##.toolbar
-film.ru##.social-likes__button
+! see film.ru in online_films
 
-filmon.com##.subscribe-annotation
-||filmon.com/*/watch-hd-without-ads.png
+! see filmon.com in online_films
 
 filtrvody.com##.pos-fix:style(position:static !important)
 
@@ -10898,11 +10883,11 @@ ivspecodezda.ru##.mfp-bg
 ivspecodezda.ru##.call-order
 ivspecodezda.ru##.fix_scroll.scup
 
-! sidebar
+    ! sidebar
 ixbt.com##.block-type-blog
-! banners
+    ! banners and promos
 ixbt.com##.btn-default
-! other
+    ! other
 ixbt.com##.mini.right.column
 ixbt.com##center > form > table > tbody
 ixbt.com##.block__describe
@@ -10910,6 +10895,7 @@ ixbt.com##.b-ixbt_tv
 ixbt.com##.icon-mature
 ixbt.com##.buttonlink
 ixbt.com##div.panel-default.panel:has-text(Об авторе)
+ixbt.com##.line__logo
 ||ixbt.com/js/fancy/img/zoom.png
 ||forum.ixbt.com/lol.gif
 ||forum.ixbt.com/insane.gif
@@ -11737,6 +11723,7 @@ knipex.ru##.header__main-section-inner:style(min-height:0px !important)
 
 knivesadvice.com##.notice
 
+||kns.ru/ajaxdata.aspx
 ||kns.ru/i/spec_1.png
 ||kns.ru/i/spec_new.png
 ! popup
@@ -11748,6 +11735,9 @@ kns.ru##.avatarDef
 !seo
 kns.ru##.add-info
 kns.ru##.btn:has-text(/клик|кредит/)
+kns.ru##.price-club
+kns.ru###spec_id
+kns.ru##.persent-sale
 
 kodi.tv##.navbar-fixed-bottom:style(position:static !important)
 kodi.tv##.breadcrumb-navi:style(position:static !important)
@@ -19000,8 +18990,17 @@ retailmenot.com##[class^=Modal__Overlay]
 
 retwork.com##.bpanel
 
+    ! top
 reuters.com##.reuters-logo
 reuters.com##.header-mini-logo
+reuters.com##[class^=refinitiv-promo-bar]
+reuters.com##[class^=site-header__logo]
+reuters.com##[class*=site-header__inner-sticky]:style(position:static !important)
+reuters.com##[class^=article__toolbar-container]:style(position:absolute !important)
+    ! bottom
+reuters.com##[class^=site-footer__company]
+reuters.com##[class^=site-footer__product]
+    ! other
 reuters.com##div.bleeding.module.section
 reuters.com###hp-newsletters
 
@@ -27321,7 +27320,6 @@ kb.zyxel.ru###launcher
 @@||audioportal.su^$generichide,badfilter
 @@||audioskazki.net^$generichide,badfilter
 @@||browserleaks.com^$generichide,badfilter
-@@||by.tribuna.com^$generichide,badfilter
 @@||dterod.com/player.php^$generichide,badfilter
 @@||electric-house.ru^$generichide,badfilter
 @@||electro-sila.ru^$generichide,badfilter
@@ -28939,3 +28937,28 @@ allgames.zone##.speedbar
 
 ! promos
 empireg.ru##.title_spoiler
+
+! generic exclusion in Ru AdList
+@@||by.tribuna.com^$generichide,badfilter
+tribuna.com##[class^=ModalHOC_modal]
+
+! seo
+teenpornvideo.sex##.headline
+
+mumuglobal.com##.sq_btn
+
+nashgorod.ru##[class^=ScrollToButton]
+
+||selezen.cloud/tgslz.gif
+||selezen.cloud/slz.gif
+
+invitescene.com###yt__acme_goup
+
+||torrentinvites.org/donor_heart.gif
+torrentinvites.org##.guestwarn
+torrentinvites.org##.notices
+
+overstock.com##.cl-dialog-body-modal
+overstock.com##.cl-dialog-backdrop
+overstock.com###page_triggers
+overstock.com##[class*=header_stickyHeader]:style(position:static !important)
