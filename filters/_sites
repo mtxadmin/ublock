@@ -3077,6 +3077,8 @@ biglion.ru##.lead-ribbon
 biglion.ru##.lead-ribbon__wrap
 biglion.ru##.color--blue.btn-round
 biglion.ru##.blog-banner
+biglion.ru##.footer__mobiles
+biglion.ru##.footer__info
 
 bigmir.net$third-party  # from EasyPrivacy
 bigmir.net##.category-maps__container
@@ -4509,6 +4511,7 @@ cnet.com##.logo_image
 !||cbsistatic.com/*/logo_192.png
 cnet.com##.c-verticalNav
 cnet.com##.shortcode
+cnet.com##.c-head_disclosure
 
     ! top
 cnev.ru##.tm-headerbar-top
@@ -10887,6 +10890,7 @@ ivspecodezda.ru##.fix_scroll.scup
 ixbt.com##.block-type-blog
     ! banners and promos
 ixbt.com##.btn-default
+ixbt.com##.video-slider-block
     ! other
 ixbt.com##.mini.right.column
 ixbt.com##center > form > table > tbody
@@ -12463,6 +12467,13 @@ leroymerlin.kz,leroymerlin.ru##.service-sticky
 leroymerlin.kz,leroymerlin.ru##uc-region-submit-notification
 leroymerlin.kz,leroymerlin.ru##uc-notification-mobile-app
 leroymerlin.kz,leroymerlin.ru##[role=tooltip]
+leroymerlin.ru##[class*=header-footer]:has-text(cookie):has(>button)
+leroymerlin.ru##a[data-qa-support-button]
+    ! banners and promos
+||res.cloudinary.com/lmru-test/image/upload/*/images/main-new/$image
+||res.cloudinary.com/lmru-test/image/upload/*/images/main-new/carousel/$image
+leroymerlin.ru##div[data-qa-offer-carousel]
+leroymerlin.ru##div[data-qa-promo-carousel]
     ! paying options
 leroymerlin.kz,leroymerlin.ru##.footer-main__pay
     ! sticky
@@ -12554,6 +12565,9 @@ leroymerlin.ru##.m16ecsez_plp
 leroymerlin.ru##.banner-image
 leroymerlin.ru##.uc-carousel
 leroymerlin.ru##.main-img
+! Uncaught ReferenceError: Sentry is not defined
+!leroymerlin.ru##+js(set, Sentry, noopFunc)
+! Uncaught TypeError: Sentry.BrowserTracing is not a constructor
 
 letidor.ru##button:has-text(/^Узнать ответ$/)
 
@@ -14702,8 +14716,10 @@ mssqltips.com##.hide-for-print
 mssqltips.com##.wistia_responsive_padding
 mssqltips.com##article > div:has-text(Free MSSQLTips)
 
+m-strana.ru$inline-script  # site blocks copypaste
     ! top
-m-strana.ru###sticky-nav:style(position:static !important)
+!m-strana.ru###sticky-nav:style(position:static !important)
+m-strana.ru###sticky-nav
 m-strana.ru##.sticky-menu
     ! carousels
 m-strana.ru##.slider.news
@@ -14716,6 +14732,8 @@ m-strana.ru###branding-new-mobile
 m-strana.ru##.article_perelink
 m-strana.ru##.social-networks
 m-strana.ru##.subscription
+m-strana.ru##blockquote::after
+m-strana.ru##.building-request
 
 mtforce.ru##.top_news_wrap
 mtforce.ru##.index_sliders
@@ -25175,6 +25193,10 @@ vseinstrumenti.ru##[data-qa="header-actions"]:style(position:static !important)
     ! top
 vseinstrumenti.ru##.-header-bottom-color.wrapper-wide:style(position:static !important)
 vseinstrumenti.ru###page-wrapper:style(background-image:none !important)
+    ! image labels
+vseinstrumenti.ru##.nameplates
+!vseinstrumenti.ru##.ns.nameplates
+vseinstrumenti.ru##.nameplate-wrapper
     ! other
 vseinstrumenti.ru###first-purchase-block
 !vseinstrumenti.ru###catalogSearchBox
@@ -25189,9 +25211,6 @@ vseinstrumenti.ru###subscribe-form-btn
 !vseinstrumenti.ru##.purchase-button
 !vseinstrumenti.ru##.js-purchase-button
 vseinstrumenti.ru###prep
-! image labels
-vseinstrumenti.ru##.nameplates
-!vseinstrumenti.ru##.ns.nameplates
 vseinstrumenti.ru##.button-new-grey:has-text(Быстрый заказ)
 vseinstrumenti.ru##.bl_to
 vseinstrumenti.ru##.sprFooter
@@ -28968,3 +28987,40 @@ w-lovers.ru##div:style(filter:none !important)
 productplacementblog.com##a[href^="https://www.productplacement.com/"]:has(img)
 ! author description
 productplacementblog.com##.abh_description
+
+storagepoint.net###secondary:style(position:static !important)
+
+freevpnplanet.com##.overlay
+freevpnplanet.com##.descr-bg
+freevpnplanet.com##.pc-background
+
+altaro.com##.short-desc-author
+altaro.com##.social-list-author
+altaro.com##.dojo_favorites
+altaro.com##.not-a-dojo
+altaro.com###scrollbar
+
+torex.ru##header p
+torex.ru##.scroll
+torex.ru##.cp-form-1
+
+zamkielbor.ru##.delivery
+
+lockspro.ru##.header-fixed
+
+||moyzamok.ru/pages/bnr$image
+moyzamok.ru###brnds
+
+door.ru##.rasprodazha_dverey
+
+||dverzamok.com/images/_dom/$image  # banners
+
+! top
+medwegonok.ru##.related-posts
+medwegonok.ru##.table-of-contents
+
+abuslock.su##.slider-obol
+
+victel63.ru##.widget-view-fixed
+
+fixthephoto.com##.fixed-state:style(position:static !important)
