@@ -144,7 +144,10 @@
 /shopify_chat/*$important
 /smartpushmarketing.js
 /stopsovetnik/*
-/sweetalert$important,all
+/sweetalert$important,all,domain=~mp3-cherry.com
+    ! Exclusions:
+    ! mp3-cherry.com - false positive
+    !
     ! /sweetalert/*  #unpkg.com/sweetalert/dist/sweetalert.min.js
     ! /sweetalert2/*  #unpkg.com/sweetalert/dist/sweetalert.min.js
     ! /sweetalert.min.js  #unpkg.com/sweetalert/dist/sweetalert.min.js
