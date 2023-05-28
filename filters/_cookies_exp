@@ -10,73 +10,6 @@
 
 !! general rules
 
-! bitrix trackers
-*##+js(cookie-remover, BITRIX_SM_BANNERS)
-    ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_BANNERS)
-    ! go64.ru##+js(cookie-remover, BITRIX_SM_BANNERS)
-    ! kprfnsk.ru##+js(cookie-remover, BITRIX_SM_BANNERS)  # sic! sale banners on a political party site
-*##+js(cookie-remover, BITRIX_SM_GUEST_ID)
-    ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
-    ! avicom.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
-    ! bigam.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
-    ! ohotnik.com##+js(cookie-remover, BITRIX_SM_GUEST_ID)
-    ! technocity.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
-*##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
-    ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
-    ! avicom.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
-    ! bigam.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
-    ! ohotnik.com##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
-    ! technocity.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
-*##+js(cookie-remover, BITRIX_SM_SALE_UID)
-    ! izhohota.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
-    ! technocity.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
-
-! DDoS cookies. They are usually http-only
-!*##+js(cookie-remover, /^__ddg/)
-    ! There are many sites. Only examples:
-    ! ayzdorov.ru##+js(cookie-remover, __ddg1_)
-    ! garmin.ru##+js(cookie-remover, __ddg1_)
-    ! hh.ru##+js(cookie-remover, __ddg1_)
-    ! kemono.party##+js(cookie-remover, __ddg1_)
-    ! nozhikov.ru##+js(cookie-remover, __ddg1_)
-    ! pikabu.ru##+js(cookie-remover, __ddg1_)
-    ! pikabu.ru##+js(cookie-remover, __ddg5_)
-    ! pikabu.ru##+js(cookie-remover, __ddgid_)
-    ! pikabu.ru##+js(cookie-remover, __ddgmark_)
-    ! platiza.ru##+js(cookie-remover, __ddg1_)
-    ! podpiska.org##+js(cookie-remover, __ddg1_)
-
-! laravel_session - in general, don't, it is a Laravel session id. And also it is http-only
-!*##+js(cookie-remover, laravel_session)
-    ! autoreview.ru##+js(cookie-remover, laravel_session)
-    ! mindbox.in##+js(cookie-remover, laravel_session)
-    ! mindboxindia.com##+js(cookie-remover, laravel_session)
-
-! PHPSESSID - in general, don't, it is a PHP session id. And also it is http-only, but not everywhere
-!*##+js(cookie-remover, PHPSESSID)
-
-*##+js(cookie-remover, referer)
-    ! fasko.ru##+js(cookie-remover, referer)
-    ! nozhikov.ru##+js(cookie-remover, referer)
-    ! ohota-magazin.ru##+js(cookie-remover, referer)
-    ! udsezon.ru##+js(cookie-remover, referer)
-
-! XSRF-TOKEN - in general, don't: it is typically a token for form sending security
-!*##+js(cookie-remover, XSRF-TOKEN)
-
-! yandex 3p trackers
-*##+js(cookie-remover, _ym_d)
-*##+js(cookie-remover, _ym_isad)
-*##+js(cookie-remover, _ym_uid)
-    ! fskrs.ru##+js(cookie-remover, _ym_d)
-    ! fskrs.ru##+js(cookie-remover, _ym_isad)
-    ! fskrs.ru##+js(cookie-remover, _ym_uid)
-    ! morakniv-russia.ru##+js(cookie-remover, _ym_d)
-    ! morakniv-russia.ru##+js(cookie-remover, _ym_isad)
-    ! morakniv-russia.ru##+js(cookie-remover, _ym_uid)
-
-!! domains
-
 ! random cookies
 2ip.ua##+js(cookie-remover)
 
@@ -133,8 +66,6 @@ auto.ru##+js(cookie-remover, los)
 auto.ru##+js(cookie-remover, speaker_lottery_popup)
 auto.ru##+js(cookie-remover, sso_status)
 auto.ru##+js(cookie-remover, suid)
-auto.ru##+js(cookie-remover, yandexuid)
-auto.ru##+js(cookie-remover, _yasc)
 auto.ru##+js(cookie-remover, yuidlt)
 
 autonews.ru##+js(cookie-remover, splituid)
@@ -186,18 +117,21 @@ comparebeforebuying.com##+js(cookie-remover, _TS_)
 
 dns-shop.ru##+js(cookie-remover, _ab_)
 dns-shop.ru##+js(cookie-remover, cartUserCookieIdent_v3)
+dns-shop.ru##+js(cookie-remover, cookieImagesUploadId)
 dns-shop.ru##+js(cookie-remover, current_path)
+dns-shop.ru##+js(cookie-remover, _gat)
+dns-shop.ru##+js(cookie-remover, _gcl_au)
+dns-shop.ru##+js(cookie-remover, _gid
 dns-shop.ru##+js(cookie-remover, ipp_key)
 dns-shop.ru##+js(cookie-remover, ipp_sign)
 dns-shop.ru##+js(cookie-remover, ipp_uid)
 dns-shop.ru##+js(cookie-remover, phonesIdent)
-dns-shop.ru##+js(cookie-remover, rerf)
+dns-shop.ru##+js(cookie-remover, rcuid)
+dns-shop.ru##+js(cookie-remover, rrpvid)
 restapi.dns-shop.ru##+js(cookie-remover, ipp_key)
 restapi.dns-shop.ru##+js(cookie-remover, ipp_uid)
-restapi.dns-shop.ru##+js(cookie-remover, rerf)
 webapi.dns-shop.ru##+js(cookie-remover, ipp_key)
 webapi.dns-shop.ru##+js(cookie-remover, ipp_uid)
-webapi.dns-shop.ru##+js(cookie-remover, rerf)
 
 door.ru##+js(cookie-remover, /^BITRIX_SM_/
 
@@ -209,6 +143,23 @@ drive2.ru##+js(cookie-remover, hurricane)
 drive2.ru##+js(cookie-remover, .UTZ)
 
 driven.co.nz##+js(cookie-remover, previousUrl)
+
+! ref
+duolingo.com##+js(cookie-remover, initial_referrer)
+! some id, seems, it is user number
+duolingo.com##+js(cookie-remover, logged_out_uuid)
+! url
+duolingo.com##+js(cookie-remover, lu)
+! some id
+duolingo.com##+js(cookie-remover, jwt_token)
+! some id
+duolingo.com##+js(cookie-remover, tsl)
+
+! empty (not authed)
+!dzen.ru##+js(cookie-remover, yandex_login)
+dzen.ru##+js(cookie-remover, mda2_beacon)
+dzen.ru##+js(cookie-remover, sso_status)
+! +some random cookie
 
 edimdoma.ru##+js(cookie-remover, _edimdoma_session_id)
 edimdoma.ru##+js(cookie-remover, quizPopupDietTimer)
@@ -293,15 +244,20 @@ kns.ru##+js(cookie-remover, _rcmx_session)
 kuvalda.ru##+js(cookie-remover, kuvnew)
 
 leroymerlin.ru##+js(cookie-remover, cookie_accepted)
+leroymerlin.ru##+js(cookie-remover, disp_abc_categories
+leroymerlin.ru##+js(cookie-remover, disp_plp_promo_ab)
 leroymerlin.ru##+js(cookie-remover, ggr-widget-test)
 leroymerlin.ru##+js(cookie-remover, plp)
 !leroymerlin.ru##+js(cookie-remover, qrator_jsid) - don't
 !leroymerlin.ru##+js(cookie-remover, qrator_jsr) - don't
+!leroymerlin.ru##+js(cookie-remover, qrator_ssid) - don't?
 leroymerlin.ru##+js(cookie-remover, _regionID)
+leroymerlin.ru##+js(cookie-remover, recently_viewed)
 leroymerlin.ru##+js(cookie-remover, sawOPH)
 leroymerlin.ru##+js(cookie-remover, _slid_server)
 leroymerlin.ru##+js(cookie-remover, uid_experiment)
 leroymerlin.ru##+js(cookie-remover, user-geolocation)
+api.leroymerlin.ru##+js(cookie-remover, NSC_ESNS)
 
 livejournal.com##+js(cookie-remover, luid)
 livejournal.com##+js(cookie-remover, ljuniq)
@@ -325,7 +281,6 @@ morakniv-russia.ru##+js(cookie-remover, PHPSESSID)
 
 motor.ru##+js(cookie-remover, uid)
 
-mozilla.org##+js(cookie-remover, /^_ga/)
 mozilla.org##+js(cookie-remover, _gid)
 
 m-strana.ru##+js(cookie-remover, BITRIX_SM_FAVORITES_UID)
@@ -407,11 +362,17 @@ special.pikabu.ru##+js(cookie-remover, user)
 
 planetazdorovo.ru##+js(cookie-remover, help_phone)
 planetazdorovo.ru##+js(cookie-remover, order_phone)
-planetazdorovo.ru##+js(cookie-remover, PHPSESSID)
-planetazdorovo.ru##+js(cookie-remover, qrator_ssid)
-planetazdorovo.ru##+js(cookie-remover, qrator_jsr)
-planetazdorovo.ru##+js(cookie-remover, qrator_jsid)
+!planetazdorovo.ru##+js(cookie-remover, qrator_ssid) - don't?
+!planetazdorovo.ru##+js(cookie-remover, qrator_jsr) - don't?
+!planetazdorovo.ru##+js(cookie-remover, qrator_jsid) - don't?
 planetazdorovo.ru##+js(cookie-remover, recently_watched)
+
+price.ru##+js(cookie-remover, puid)
+price.ru##+js(cookie-remover, otherSessionData)
+price.ru##+js(cookie-remover, session)
+price.ru##+js(cookie-remover, sessionLastAction)
+price.ru##+js(cookie-remover, embryo)
+price.ru##+js(cookie-remover, uuts)
 
 product-test.ru##+js(cookie-remover, ReferPage)
 
@@ -487,8 +448,11 @@ vedomosti.ru##+js(cookie-remover, salmon-viewport)
 victel63.ru##+js(cookie-remover, BITRIX_SM_ABTEST_s1)
 victel63.ru##+js(cookie-remover, BITRIX_SM_SALE_UI)
 
-! 3p cookies
+! Third-party affiliate marketing referrer from VK
+! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+! It described as third-party, but I didn't see it yet, only on vk. Maybe due to adblock.
 vk.com##+js(cookie-remover, remixlang)
+! other 3p cookies
 vk.com##+js(cookie-remover, remixlgck)
 vk.com##+js(cookie-remover, remixrefkey)
 vk.com##+js(cookie-remover, remixstid)
@@ -517,22 +481,14 @@ woman.ru##+js(cookie-remover, forum_creator)
 woman.ru##+js(cookie-remover, woman_uid)
 woman.ru##+js(cookie-remover, woman_sid_2)
 
-ya.ru##+js(cookie-remover, is_gdpr)
-ya.ru##+js(cookie-remover, is_gdpr_b)
 ya.ru##+js(cookie-remover, KIykI)
 ya.ru##+js(cookie-remover, my)
 ya.ru##+js(cookie-remover, spravka)
 ya.ru##+js(cookie-remover, yandex_csyr)
 ya.ru##+js(cookie-remover, yandex_gid)
-ya.ru##+js(cookie-remover, yandexuid)
-ya.ru##+js(cookie-remover, _yasc)
 ya.ru##+js(cookie-remover, yp)
 
-yandex.ru##+js(cookie-remover, is_gdpr)
-yandex.ru##+js(cookie-remover, is_gdpr_b)
 yandex.ru##+js(cookie-remover, sq)
-yandex.ru##+js(cookie-remover, yandexuid)
-yandex.ru##+js(cookie-remover, _yasc)
 yandex.ru##+js(cookie-remover, yp)
 yandex.ru##+js(cookie-remover, ys)
 
@@ -548,3 +504,53 @@ zanex.ru##+js(cookie-remover, user1)
 
 !! todo
 
+specials.pikabu.ru##+js(cookie-remover, _pvk)
+
+steampowered.com##+js(cookie-remover, bm_sv)
+
+substack.com##+js(cookie-remover, ajs_anonymous_id)
+
+! 3p
+analytics.dns-shop.ru##+js(cookie-remover, ipp_uid)
+analytics.dns-shop.ru##+js(cookie-remover, ipp_key)
+
+pleer.ru##+js(cookie-remover, adtech_uid)
+!pleer.ru##+js(cookie-remover, cart_products) - don't?
+!pleer.ru##+js(cookie-remover, cart_products_total) - don't?
+!pleer.ru##+js(cookie-remover, cart_total_price) - don't?
+pleer.ru##+js(cookie-remover, cats_visit)
+pleer.ru##+js(cookie-remover, clientbuyer)
+pleer.ru##+js(cookie-remover, email)
+pleer.ru##+js(cookie-remover, exit_block)
+pleer.ru##+js(cookie-remover, fio)
+pleer.ru##+js(cookie-remover, _gcl_au)
+pleer.ru##+js(cookie-remover, __gpmn_ab)
+pleer.ru##+js(cookie-remover, JS_c)
+pleer.ru##+js(cookie-remover, last_visit)
+pleer.ru##+js(cookie-remover, login)
+pleer.ru##+js(cookie-remover, phone)
+pleer.ru##+js(cookie-remover, prods_visit
+pleer.ru##+js(cookie-remover, rulesconfirm)
+pleer.ru##+js(cookie-remover, /t3_sid_/)
+pleer.ru##+js(cookie-remover, top100_id)
+
+! ustream.tv third-party targeted advertising
+! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!*##+js(cookie-remover, ab_test_2)
+
+! ustream.tv targeted advertising
+! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!*##+js(cookie-remover, mte_use_lonpoll)
+
+! third party - mediarithmics marketing cloud
+! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!*##+js(cookie-remover, mics_lts)
+
+! some id
+osdn.net##+js(cookie-remover, __rvi)
+
+translated.turbopages.org##+js(cookie-remover, OptanonAlertBoxClosed)
+
+t.me##+js(cookie-remover, stel_ssid)
+
+mibf.info##+js(cookie-remover, ipp_uid)
