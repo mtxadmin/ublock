@@ -338,7 +338,7 @@
 
 /plugins/ad-tweaker/*
 
-/plugins/adunblocker*$important  # from Adguard and uBlock filters
+/plugins/adunblocker*$important  # from Adguard, uBlock filters, Ru AdList
     ! @@||getitfree.cn/wp-content/plugins/adunblocker/public/js/banner_ads_*.js  # from Adguard Chinese
     ! /wp-content/plugins/adunblocker  # from Adguard
 
@@ -402,6 +402,9 @@
 /plugins/analytics/*$important
 
 /plugins/analytify-analytics-dashboard-widget/*
+
+/plugins/ane-banners-  # from EasyList
+/plugins/ane-preroll-  # from EasyList
 
 /plugins/angwp/*$important  # "WordPress Plugin Adning Advertising"
 /plugins/angwp2/*$important
@@ -780,7 +783,7 @@
 
 /plugins/deadblocker/*  # from Adguard and uBlock filters
 
-/plugins/deblocker/*$important  # antiadblock
+/plugins/deblocker/*$important  # antiadblock  # now is in Ru AdList
     /deblocker.min.js
 
 /plugins/deductor/*$important
@@ -1061,7 +1064,7 @@
 
 /plugins/ga-google-analytics/*$important
 
-/plugins/galleryAdvert/*
+/plugins/galleryAdvert/*  # is in Ru AdList
 
 /plugins/gapro/*$important
     /gapro.js  # is in EasyPrivacy
@@ -1164,6 +1167,8 @@
 /plugins/hm-header-bidding-dfpapi/*$important  # from ABP
 
 /plugins/holdback/*$~stylesheet  # from Adguard
+
+/plugins/honeypot/*  # https://wordpress.org/plugins/honeypot/  # I am not a spammer :-)
 
 /plugins/hreflang-tags-for-wordpress/*
 
@@ -1869,7 +1874,7 @@
 ! "collection of elements, which you can use in the post editor, text widgets or even in template files. Using Shortcodes Ultimate you can easily create tabs, buttons, boxes, sliders and carousels"
 ! https://wordpress.org/plugins/shortcodes-ultimate/
 ! update: many blogs use this to highlight their inline ads.
-! update2: yes, inline ads from this plugin again.
+! update2: yes, inline ads from this plugin again.  # update3: and again
 /plugins/shortcodes-ultimate/*
     ##.su-box
     ##.su-button
