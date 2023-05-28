@@ -238,6 +238,7 @@
 2gis.*##.layout__app > a[href^="https://2gis.onelink.me/"]
 
 2ip.ru$3p  # ad cookies  # also is in Ru AdList
+2ip.fun$3p  # from ShadowWhisperer's Tracking
 2ip.io$3p
 2ip.me$3p
 2ip.ua$3p from GoodbyeAds
@@ -14104,7 +14105,6 @@ militaryarms.ru##.b-yandex-zen
 militaryarms.ru##.post-author__content
 militaryarms.ru##.post-author__img
 ||militaryarms.ru/*/panzer.png
-militaryarms.ru##blockquote::after
 militaryarms.ru##.post_bottom
 militaryarms.ru##.single.post > noindex
 ||militaryarticle.ru/templates/yoo_catalyst/images/background/*$image
@@ -14733,7 +14733,6 @@ m-strana.ru###branding-new-mobile
 m-strana.ru##.article_perelink
 m-strana.ru##.social-networks
 m-strana.ru##.subscription
-m-strana.ru##blockquote::after
 m-strana.ru##.building-request
 
 mtforce.ru##.top_news_wrap
@@ -27096,6 +27095,16 @@ zr.ru##.fly_forms
 zr.ru##.logo-row
 zr.ru###for_footer
 
+zrelki.click##+js(addEventListener-defuser, /contextmenu/)
+zrelki.click##.notice
+    ! seo
+zrelki.click##.header-block__text
+! top seo
+zrelki.click##.content-box__title
+zrelki.click##p.video__meta-text
+zrelki.click##.thumb .thumb__title
+    ! other
+
 z-safe.ru##.moduletable
 z-safe.ru##.cat-phone
 z-safe.ru##.zkopen.btn-info
@@ -29054,3 +29063,21 @@ junglekey.com##.djunglekey
 ||junglekey.com/junglekeycom_qrcode.png$image
 
 tecmint.com##.gb-container:has(.gb-headline)
+
+pornfappy.com##.fp-brand
+
+!stroitelstvo-gid.ru lazyload data-src
+
+wikihow.com##.sidebox:has-text(Quizzes)
+
+prostozamok.ru###sliderFrame
+
+biznessrussia.ru##.table-of-contents
+
+dvery.ru##.header__middle
+dvery.ru##.footer__measuring
+dvery.ru##.footer__contacts
+dvery.ru##.footer__menu
+dvery.ru##.footer__list
+
+iletyou.ru##.table-of-contents
