@@ -3616,7 +3616,10 @@ _site/gotop.  # from Ru AdList
 ##[class*="Cookie"]:not(html):not(body):not(article)
 ##[id*="Cookie"]:not(html):not(body):not(article)
 ! exception is from AdGuard Annoyances filter
-~1plus1.ua,~intel.com,~metro-cc.ru##[class*="cookie"]:not(html):not(body):not(article)
+~1plus1.ua,~cookiedatabase.org,~intel.com,~metro-cc.ru##[class*="cookie"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! cookiedatabase.org - just information about, not popups
+    !
     ! the list is not full, just _some_ rules
     ! is in EasyList, AdGuard and Fanboy's
     !##.acceptcookies
@@ -3877,6 +3880,8 @@ _site/gotop.  # from Ru AdList
 ! is in EasyList and Fanboy's
 ##.pum[data-popmake*="cookies"]
 ##.pum-overlay[data-popmake*="cookies"]
+! is in Fanboy's and EasyList
+###teconsent
 ! is in EasyList and Fanboy's
 ##.tracking-consent
 !
@@ -4473,7 +4478,7 @@ _snowstorm-min.js  # from Ru AdList
 !! countdowns
 ~bizon365.ru,~clickmeeting.com,~worknf.ru##[class*="Countdown"]:not(html):not(body):not(article)
 ##[id*="Countdown"]:not(html):not(body):not(article)
-~bizon365.ru,~clickmeeting.com,~worknf.ru##[class*="countdown"]:not(html):not(body):not(article)
+~bizon365.ru,~clickmeeting.com,~pornolab.net,~worknf.ru##[class*="countdown"]:not(html):not(body):not(article)
 ##[id*="countdown"]:not(html):not(body):not(article)
 ##[class^="timer"]:not(html):not(body):not(article)
 ~tomato-timer.com##[id^="timer"]:not(html):not(body):not(article)
