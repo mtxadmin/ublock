@@ -2224,7 +2224,7 @@ _tizers.  # from Ru AdList
     ! /promo.js$important
     ! /promo.php
 /promo?
-/promo/*$domain=~livejournal.com|~mts.ru  # mts.ru loads non-ad /Promo/ links in lk
+/promo/*$~stylesheet,domain=~livejournal.com|~mts.ru  # mts.ru loads non-ad /Promo/ links in lk
     ! /promo/impression?  # from EasyPrivacy
 /promo_b/*  # from Adguard: /images/promo_b/*
 /promobanner
