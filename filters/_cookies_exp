@@ -10,6 +10,11 @@
 
 !! general rules
 
+101.ru##+js(cookie-remover, uniqClientId)
+101.ru##+js(cookie-remover, incomeUrl)
+101.ru##+js(cookie-remover, srvr101)
+101.ru##+js(cookie-remover, lastTime)
+
 ! random cookies
 2ip.ua##+js(cookie-remover)
 
@@ -113,6 +118,9 @@ championat.com##+js(cookie-remover, cuid)
 
 citilink.ru##+js(cookie-remover, _pcl)
 
+docs.cntd.ru##+js(cookie-remover, auth_sso_session)
+docs.cntd.ru##+js(cookie-remover, blockInfo)
+
 comparebeforebuying.com##+js(cookie-remover, _TS_)
 
 dns-shop.ru##+js(cookie-remover, _ab_)
@@ -178,6 +186,8 @@ fb.ru##+js(cookie-remover, a)
 ! id
 fb.ru##+js(cookie-remover, fbru)
 
+garant.ru##+js(cookie-remover, garantId)
+
 ! changed bitrix trackers (see above)
 garmin.ru##+js(cookie-remover, GARMIN_CO_GUEST_ID)
 garmin.ru##+js(cookie-remover, GARMIN_CO_LAST_VISIT)
@@ -189,8 +199,11 @@ docs.github.com##+js(cookie-remover, _docs-events)
 
 go64.ru##+js(cookie-remover, privacy-policy-informer)
 
+google.com##+js(cookie-remover, 1P_JAR)
+google.com##+js(cookie-remover, AEC)
 google.com##+js(cookie-remover, NID)
 accounts.google.com##+js(cookie-remover, __Host-GAPS)
+translate.google.com##+js(cookie-remover, OTZ)
 
 gsmarena.com##+js(cookie-remover, keyw)
 gsmarena.com##+js(cookie-remover, lpe)
@@ -241,6 +254,9 @@ kns.ru##+js(cookie-remover, pc)
 kns.ru##+js(cookie-remover, pvg)
 kns.ru##+js(cookie-remover, _rcmx_session)
 
+# 3p cookies
+auth.kodeks.ru##+js(cookie-remover, cas1_session)
+
 kuvalda.ru##+js(cookie-remover, kuvnew)
 
 leroymerlin.ru##+js(cookie-remover, cookie_accepted)
@@ -264,8 +280,15 @@ livejournal.com##+js(cookie-remover, ljuniq)
 
 lockspro.ru##+js(cookie-remover, OCSESSID)
 
+mail.ru##+js(cookie-remover, act)
 mail.ru##+js(cookie-remover, mrcu)
+mail.ru##+js(cookie-remover, mrhc)
+! "mytrackerid"
 mail.ru##+js(cookie-remover, mtrc)
+mail.ru##+js(cookie-remover, o)
+mail.ru##+js(cookie-remover, oid)
+mail.ru##+js(cookie-remover, ph)
+mail.ru##+js(cookie-remover, s)
 
 medwegonok.ru##+js(cookie-remover, flat_r_mb)
 
@@ -355,10 +378,13 @@ pikabu.ru##+js(cookie-remover, clpr1)
 pikabu.ru##+js(cookie-remover, la)
 pikabu.ru##+js(cookie-remover, pcid)
 pikabu.ru##+js(cookie-remover, PHPSESS)
+pikabu.ru##+js(cookie-remover, /^pin_/)
 pikabu.ru##+js(cookie-remover, Tas)
 pikabu.ru##+js(cookie-remover, Uas)
 pikabu.ru##+js(cookie-remover, ulfs)
+pikabu.ru##+js(cookie-remover, vn_buff)
 special.pikabu.ru##+js(cookie-remover, user)
+specials.pikabu.ru##+js(cookie-remover, _pvk)
 
 planetazdorovo.ru##+js(cookie-remover, help_phone)
 planetazdorovo.ru##+js(cookie-remover, order_phone)
@@ -394,6 +420,13 @@ root-nation.com##+js(cookie-remover, dwqa_anonymous)
 
 send.cm##+js(cookie-remover, aff)
 send.cm##+js(cookie-remover, __cf_bm)
+
+! already blocked
+similarweb.com##+js(cookie-remover, _abck)
+similarweb.com##+js(cookie-remover, ak_bmsc)
+similarweb.com##+js(cookie-remover, bm_sz)
+similarweb.com##+js(cookie-remover, loyal-user)
+similarweb.com##+js(cookie-remover, sgID)
 
 stackexchange.com##+js(cookie-remover, prov)
     ! stackexchange sites:
@@ -502,9 +535,14 @@ zamkielbor.ru##+js(cookie-remover, qform_refer)
 
 zanex.ru##+js(cookie-remover, user1)
 
-!! todo
+supportcommunity.zebra.com##+js(cookie-remover, pctrk)
+supportcommunity.zebra.com##+js(cookie-remover, sfdc-stream)
 
-specials.pikabu.ru##+js(cookie-remover, _pvk)
+zona.media##+js(cookie-remover, mz.t)
+zona.media##+js(cookie-remover, mz.t_freferrer)
+zona.media##+js(cookie-remover, mz.t_search)
+
+!! todo
 
 steampowered.com##+js(cookie-remover, bm_sv)
 
@@ -582,11 +620,6 @@ wynk.in##+js(cookie-remover, nonLoggedInUser)
 
 moyzamok.ru##+js(cookie-remover, cookiessid)
 
-101.ru##+js(cookie-remover, uniqClientId)
-101.ru##+js(cookie-remover, incomeUrl)
-101.ru##+js(cookie-remover, srvr101)
-101.ru##+js(cookie-remover, lastTime)
-
 ! some id
 translate.ru##+js(cookie-remover, _ppup)
 
@@ -597,7 +630,7 @@ banki.ru##+js(cookie-remover, BANKI_RU_LAST_ADV)
 banki.ru##+js(cookie-remover, BANKI_RU_LAST_VISIT)
 !banki.ru##+js(cookie-remover, BANKI_RU_USER_IDENTITY_UID)
 banki.ru##+js(cookie-remover, _flpt_credits_loans_switch)
-!banki.ru##+js(cookie-remover, __hash_)
+banki.ru##+js(cookie-remover, __hash_)
 banki.ru##+js(cookie-remover, __lhash_)
 
 bki-okb.ru##+js(cookie-remover, spsc)
@@ -608,3 +641,24 @@ linuxize.com##+js(cookie-remover, ezds)
 linuxize.com##+js(cookie-remover, /^ezo/)
 
 advancedelements.com##+js(cookie-remover, QuiversSession)
+
+osteopluscct.ru##+js(cookie-remover, apbct_timestamp)
+osteopluscct.ru##+js(cookie-remover, apbct_prev_referer)
+osteopluscct.ru##+js(cookie-remover, apbct_site_landing_ts)
+osteopluscct.ru##+js(cookie-remover, apbct_page_hits)
+osteopluscct.ru##+js(cookie-remover, apbct_cookies_test)
+osteopluscct.ru##+js(cookie-remover, ct_checkjs)
+
+econet.ru##+js(cookie-remover, _econet_session)
+
+poe.com##+js(cookie-remover, p-b)
+
+nxlog.co##+js(cookie-remover, nxlbackoffice_session)
+
+solarwinds.com#+js(cookie-remover, akacd_PR_AWS)
+
+consultant.ru##+js(cookie-remover, CID)
+consultant.ru##+js(cookie-remover, spid)
+
+musiklip.ru##+js(cookie-remover, 0musiklipuzll)
+musiklip.ru##+js(cookie-remover, 0musiklippushi)
