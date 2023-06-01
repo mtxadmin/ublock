@@ -18,6 +18,10 @@
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, ad-id)
 
+*##+js(cookie-remover, adtech_uid)
+    ! livejournal.com##+js(cookie-remover, adtech_uid)
+    ! pleer.ru##+js(cookie-remover, adtech_uid)
+
 ! Bitrix first-party trackers
 *##+js(cookie-remover, BITRIX_SM_BANNERS)
     ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_BANNERS)
@@ -37,6 +41,7 @@
     ! technocity.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
 *##+js(cookie-remover, BITRIX_SM_SALE_UID)
     ! izhohota.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
+    ! qwertysh.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
     ! technocity.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
 
 ! ContentSquare tracking cookies
@@ -89,6 +94,7 @@
 ! laravel_session - in general, don't(?), it is a Laravel session id. And also it is http-only
 !*##+js(cookie-remover, laravel_session)
     ! autoreview.ru##+js(cookie-remover, laravel_session)
+    ! meme-generator.ru##+js(cookie-remover, laravel_session)
     ! mindbox.in##+js(cookie-remover, laravel_session)
     ! mindboxindia.com##+js(cookie-remover, laravel_session)
 
@@ -120,7 +126,12 @@
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, /^s_vi_/)
 
-! VK third-party affiliate marketing referrer domain
+! Mail.ru third party tracking cookie
+! https://cookiedatabase.org/cookie/mail-ru/tmr_detect/
+*##+js(cookie-remover, tmr_detect)
+    ! eldorado.ru##+js(cookie-remover, tmr_detect)
+    ! pleer.ru##+js(cookie-remover, tmr_detect)
+! VK (belongs to Mail.ru) third-party affiliate marketing referrer domain
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, tmr_lvid)
 *##+js(cookie-remover, tmr_lvidTS)
@@ -154,15 +165,16 @@
 ! view-source:https://notify.events/en/blog/wix-notifications-setup-guide
 ! And it is definitely Yandex-related cookie (not Google). Also see examples.
 *##+js(cookie-remover, _yasc)
-*##+js(cookie-remover, _ym_d)
-*##+js(cookie-remover, _ym_debug)
-*##+js(cookie-remover, _ym_hostIndex)
-! "this cookie determines whether a user has ad-blockers"
-*##+js(cookie-remover, _ym_isad)
-*##+js(cookie-remover, _ym_metrika_enabled)
+*##+js(cookie-remover, /^_ym_/)
+    ! *##+js(cookie-remover, _ym_d)
+    ! *##+js(cookie-remover, _ym_debug)
+    ! *##+js(cookie-remover, _ym_hostIndex)
+    ! "this cookie determines whether a user has ad-blockers"
+    ! *##+js(cookie-remover, _ym_isad)
+    ! *##+js(cookie-remover, _ym_metrika_enabled)
+    ! *##+js(cookie-remover, _ym_uid)
+    ! *##+js(cookie-remover, /^_ym_visorc_/)
 *##+js(cookie-remover, ymex)
-*##+js(cookie-remover, _ym_uid)
-*##+js(cookie-remover, /^_ym_visorc_/)
 *##+js(cookie-remover, yuidss)
     ! Some examples:
     ! auto.ru##+js(cookie-remover, yandexuid)
