@@ -592,6 +592,7 @@ $removeparam=_ga  # from Ru AdList
         ! .net/?_ga=$document,removeparam=|  # from Ru AdList
         ! .ru/?_ga=$document,removeparam=|  # from Ru AdList
         ! .ua/?_ga=$document,removeparam=|  # from Ru AdList
+    ! 24tv.ua$removeparam=_ga
     ! ||kaspersky.$removeparam=_ga  # from Adguard
     ! trendyol.com$removeparam=_ga  # from Adguard
 
@@ -602,7 +603,8 @@ $removeparam=gaa_ts  # from DandelionSprout's URLShortener
 
 $removeparam=gci  # from Adguard
 
-$removeparam=_gl  # from Ru AdList
+$removeparam=_gl  # is in Ru AdList
+    ! 24tv.ua$removeparam=_gl
 
 $removeparam=gm  # from Ru AdList, modified
 
@@ -1678,6 +1680,9 @@ adshares.net$removeparam=cid  # from Adguard
 
 ! adweek.com - blocked entirely, just for information. But.
 adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
+
+! already blocked
+adthrive.com$removeparam  # from uBlock filters
 
 ! already blocked
 afreecatv.com$removeparam=szFrom  # from Adguard and DandelionSprout's URLShortener
