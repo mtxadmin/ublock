@@ -7772,11 +7772,17 @@ fooxybabes.com##.gallery_button
 fooxybabes.com##.spots
 fooxybabes.com##.question_block
 
+    ! top
+forbes.com##.global-header__subscribe_to_newsletters
+forbes.com##.icon--forbes-logo
+forbes.com##.story-package__nav-wrapper:style(position:static !important)
     ! banners and promos
 ! inline "related" (not very related though, they are promos)
 forbes.com##.recirc-module
 forbes.com##.marketPlace
+    ! other
 ||forbesimg.com/simple-site/nr-agent/index.js  # new relic and google tags
+forbes.com##.contrib-bio
 
 ||api.forbes.ru/api/pub/lists/partners
 !waterfall.forbes.ru - don't, it's news list
@@ -11852,6 +11858,7 @@ kommersant.ru##.slider-announce
 kommersant.ru##.adv_nest
 ! "Партнерский проект"
 kommersant.ru##.top_news__link:has(.top_news__update)
+kommersant.ru##.subscribe_announcement
 ! from Fanboy's
 kommersant.uk##.article-subscribe
 ! from Fanboy's
@@ -16604,6 +16611,13 @@ overdrive.com##.reveal-modal-bg
 
 overplay.net$third-party
 
+    ! top
+||overthewire.org/img/domokitten.png
+overthewire.org###topmenu:style(position:static !important)
+overthewire.org##ul:style(margin-top:0px !important)
+overthewire.org###shortcuts
+    ! other
+
 owncloud.org##.easeintop.award
 owncloud.com##.easeintop.award
 owncloud.com###site-navigation:style(position:static !important)
@@ -21186,8 +21200,21 @@ sotosstore.ru##.fixed-link
 sotosstore.ru##.sidebar-edges
 
 # soundcloud.com$xhr - in general, don't
+||soundcloud.com/audio-ads?
+    ! ||api-v*.soundcloud.com/audio-ads?  # Adguard rule
 ||soundcloud.com/errors
 ||soundcloud.com/report-errors
+    ! top
+soundcloud.com##.l-top:style(position:static !important)
+soundcloud.com##.l-fixed-top-one-column:style(padding-top:0px !important)
+    ! comments on the song timeline
+soundcloud.com##.commentPopover
+soundcloud.com##.commentPlaceholder
+soundcloud.com##.waveformCommentsNode
+    ! pictures on the song
+soundcloud.com##.listenArtworkWrapper
+soundcloud.com##.fullHero__artwork
+    ! other
 
 souravmahato.com##.inner-banner
 
@@ -22603,7 +22630,11 @@ teckangaroo.com##.main-title
 teckangaroo.com##.has-branding
 teckangaroo.com##.skip-link
 
+    ! after post
 tecmint.com##.after-post-box
+tecmint.com##.gb-container
+tecmint.com###main > div:has-text(tweet)
+    ! other
 tecmint.com##.link-overlay
 tecmint.com###quickiebarpro
 tecmint.com##.inside-header
@@ -29125,3 +29156,27 @@ econet.ru##.social_networks_top_fixed
 
 celt.ru##+js(rc, page--loading)
 celt.ru##.client-online
+
+! not really code blocks (they are different), but banners
+lynxbee.com##.code-block
+
+codefather.tech##.widget_block
+
+poftut.com##.inside-header
+
+baeldung.com##body:style(font-family:initial !important)
+baeldung.com##.language-shell:style(font-weight:800 !important; font-family:monospace !important)
+
+! inline related
+linuxshelltips.com##p strong:has-text(You might also like:)
+
+ssheasy.com##.iframe-container
+
+||serfish.com/root/img/serfish$image
+||serfish.com/root/img/quarium$image
+serfish.com##.quarium
+
+filestash.app###oem
+
+ftpweb.net##.smicon
+
