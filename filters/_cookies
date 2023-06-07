@@ -128,11 +128,13 @@
 
 ! Mail.ru third party tracking cookie
 ! https://cookiedatabase.org/cookie/mail-ru/tmr_detect/
+! https://www.change.org/policies/cookies
 *##+js(cookie-remover, tmr_detect)
     ! eldorado.ru##+js(cookie-remover, tmr_detect)
     ! pleer.ru##+js(cookie-remover, tmr_detect)
 ! VK (belongs to Mail.ru) third-party affiliate marketing referrer domain
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+! https://www.change.org/policies/cookies
 *##+js(cookie-remover, tmr_lvid)
 *##+js(cookie-remover, tmr_lvidTS)
     ! Some examples:
@@ -140,6 +142,8 @@
     ! dns-shop.ru##+js(cookie-remover, tmr_lvidTS)
     ! pleer.ru##+js(cookie-remover, tmr_lvid)
     ! pleer.ru##+js(cookie-remover, tmr_lvidTS)
+! https://www.change.org/policies/cookies
+*##+js(cookie-remover, tmr_reqNum)
 
 ! XSRF-TOKEN - in general, don't(?): it is typically a token for form sending security
 !*##+js(cookie-remover, XSRF-TOKEN)
