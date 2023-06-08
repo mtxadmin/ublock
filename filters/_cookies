@@ -222,5 +222,28 @@
 
 !! domains
 
+biglion.ru##+js(cookie-remover, /^raw_utm_/)
+    ! biglion.ru##+js(cookie-remover, raw_utm_content)
+    ! biglion.ru##+js(cookie-remover, raw_utm_medium
+    ! biglion.ru##+js(cookie-remover, raw_utm_ext)  # ref
+    ! biglion.ru##+js(cookie-remover, raw_utm_source)  # ref
+    ! biglion.ru##+js(cookie-remover, raw_utm_date)
+
+!citilink.ru##+js(cookie-remover, _pcl) - don't, it breaks the site loading
+!(it breaks later, though, due to their WAF, but)
+
+cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_cookies_test)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_headless)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_page_hits)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_pixel_url)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_prev_referer)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_site_landing_ts)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_site_referer)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_timestamp)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_urls)
+! fingerprinting
+cloudstorageinfo.org##+js(cookie-remover, ct_screen_info)
+
 !! todo
 
