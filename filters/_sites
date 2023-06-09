@@ -20668,7 +20668,8 @@ shop-gun24.ru##.header_conts
 ||shopify.com/*/tricorder/$important  # from EasyPrivacy: ||shopify.com/s/javascripts/tricorder/$script
 ||shopify.com/track.js$important  # from EasyPrivacy
 ||shopify.com/*/shop_events_listener$important
-/shopify-boomerang-$important  # from EasyPrivacy
+/shopify-boomerang-$important  # is in EasyPrivacy
+    ||shopify.com/shopifycloud/boomerang/
 /shopify_stats.js$important  # is in AdGuard and EasyPricacy
 ||shopify.com/s/trekkie$important  # ad scripts
 ||shopify.com/*/ndnapps-sociallogin
@@ -29196,9 +29197,19 @@ seosniffer.com##div:has(>script)
 ! inline related
 dualshockers.com##.related-single
 
-||ruwix.com/noindex/$subdocument
+rubiks.com##[class^=styles__NavContainer]:style(position:static !important)
+
+||ruwix.com/noindex/
+||ruwix.es/noindex/
 @@||ruwix.com/img/jquery$script  # it falls under /img/*.js rule
-ruwix.com###preventMouseHoverOnPageLoad
-ruwix.com##.sticked:style(position:static !important)
-ruwix.com##button:style(animation:none !important)
-ruwix.com##.headerLinks
+@@||ruwix.es/img/jquery$script  # it falls under /img/*.js rule
+ruwix.com,ruwix.es###preventMouseHoverOnPageLoad
+ruwix.com,ruwix.es##.sticked:style(position:static !important)
+ruwix.com,ruwix.es##button:style(animation:none !important)
+ruwix.com,ruwix.es##.headerLinks
+
+instructables.com##.promo-side
+
+cubelelo.com##.slideshow
+cubelelo.com###cubelelo-smile-wrapper
+cubelelo.com##.shopify-section:style(position:static !important)
