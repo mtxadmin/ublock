@@ -3154,6 +3154,14 @@ bitlaunch.io##.site-header
 ||bitrix.info^$3p  # ad scripts from Bitrix  # is in RU AdList and AdGuard
 ||bitrix.info/ba.js$important  # from AdGuard Tracking Protection and EasyPrivacy
 ||bitrix.info/bx_stat  # from EasyPrivacy
+    ! banners and promos
+bitrix24.com##.content-alternatives__header
+bitrix24.com##.content-alternatives-banner
+bitrix24.com##.row:has(.bx-ui-button_lg)
+bitrix24.com##.header-content-area
+bitrix24.com##.content-migration
+bitrix24.com##.bxw-block-try
+    ! other
 
 bit-tech.net##.fa-chevron-left
 bit-tech.net##.settings-box-element
@@ -7777,6 +7785,8 @@ fooxybabes.com##.question_block
 forbes.com##.global-header__subscribe_to_newsletters
 forbes.com##.icon--forbes-logo
 forbes.com##.story-package__nav-wrapper:style(position:static !important)
+forbes.com##.header__logo
+forbes.com##.site-wrapper:style(padding-top:0px !important)
     ! banners and promos
 ! inline "related" (not very related though, they are promos)
 forbes.com##.recirc-module
@@ -7784,6 +7794,7 @@ forbes.com##.marketPlace
     ! other
 ||forbesimg.com/simple-site/nr-agent/index.js  # new relic and google tags
 forbes.com##.contrib-bio
+forbes.com##.article__editors-note:has-text(partner links)
 
 ||api.forbes.ru/api/pub/lists/partners
 !waterfall.forbes.ru - don't, it's news list
@@ -9673,6 +9684,13 @@ homychok.ru##.inside-header
 homychok.ru###sticky-placeholder
 homychok.ru##.anycomment-form__guest-socials
 homychok.ru##.footer-widgets
+
+    ! popups
+honeybook.com##.promo-popup
+honeybook.com##.hbui-modal__backdrop
+    ! banners and promos
+honeybook.com##.promo-banner
+    ! other
 
 hook.report##p.has-background
 
@@ -12645,6 +12663,7 @@ libo.ru##.reklcol
 libo.ru##.podval
 libo.ru###tti
 
+||libreelec.tv/assets/vendor/startbootstrap-clean-blog/js/scripts.js  # top jumping
 libreelec.tv##.pageHeaderPanel:style(position:static !important)
 libreelec.tv###dw__toc.affix
 libreelec.tv###dw__pagetools
@@ -15530,6 +15549,15 @@ blog.nigmatullin.net##footer
 nikols.org##.stats-module
 
 nikopolnews.net##.googlenews
+
+    ! top
+nimble.com###mainMenu:style(transform:none !important)
+nimble.com##a:style(color:initial !important)
+    ! banners and promos
+nimble.com##.horisontal-bottom-banner
+nimble.com##a[href^="https://www.nimble.com/register/business_trial/"]
+    ! other
+nimble.com##.mb-sct
 
 ninjaworld.ru$3p
 
@@ -20680,6 +20708,12 @@ shop-gun24.ru##.header_conts
 ||shopifycloud.com/apple_business_chat_commerce/
 ||shopifycloud.com/messenger_commerce/
 ||shopifycloud.com/shopify_chat/
+    ! top
+shopify.com##a[href="https://www.shopify.com"]
+shopify.com##.subnav-wrapper
+shopify.com##.one-signup__container
+shopify.com##.remix-header:style(position:static !important)
+    ! other
 
 shopolog.ru##.b-catalog:has-text(Подписаться)
 shopolog.ru##.modal
@@ -22908,6 +22942,12 @@ tgstat.ru##.content-page:style(padding-top:0px !important)
 thearraypost.com##.td-loader-gif
 thearraypost.com##.ss-popup-overlay
 
+    ! logo
+theatlantic.com##[class^=Nav_bigA]
+theatlantic.com##[class^=Nav_logo]
+    ! other
+! inline promo
+theatlantic.com##[class^=LostInventoryMessage]
 theatlantic.com##.c-nudge__container
 
 thebell.io##.mb-hide.tb-hide.ball
@@ -24951,6 +24991,7 @@ vmgu.ru##span.articles_info > b:has-text(Реклама:)
 kb.vmware.com##.slds-modal__container
 kb.vmware.com##.slds-fade-in-open.slds-modal
 kb.vmware.com##.slds-backdrop--open.slds-backdrop
+kb.vmware.com##c-kb-shd-alert
     ! top
 vmware.com##.header-group:style(position:static !important)
 vmware.com##.rhs-right-container:style(position:static !important)
@@ -25698,6 +25739,9 @@ wikiwand.com##.wikiwand_footer > .ng-scope
 wikiwand.com###cover_image
 wikiwand.com###cover_image_wrapper
 wikiwand.com###article_content_wrapper:style(margin-top:40px !important)
+wikiwand.com##[class^=navbar_wrapper_]
+wikiwand.com##[class^=cover_cover_]
+wikiwand.com##[class^=footer_section_]
 
 ||wildberries.ru/stats/
 ||wildberries.co.il/stats/
@@ -26852,7 +26896,18 @@ zapal.ru###zz-ucp:style(position:static !important)
 
 zapas-pro.ru##.header-top
 
+    ! top
 zapier.com##.blog-hero:style(height:200px !important)
+zapier.com##[data-testid="secondary-navigation"]:style(position:static !important)
+zapier.com##[class*=UniversalNav]:style(position:static !important)
+zapier.com##div:style(position:static !important)
+    ! banners and promos
+zapier.com##[data-testid="half-width-cta"]
+    ! hover flickering
+zapier.com##div::before
+zapier.com##div::after
+zapier.com##summary
+    ! other
 zapier.com##.support-button
 zapier.com##[class$=-ProgressBar]
 zapier.com##[class*=-Outer]:style(position:static !important)
@@ -26904,6 +26959,12 @@ zaycev.net##sup:has-text(18+)
 ||zbord.ru/images/zbord_ru_logo/
 zbord.ru##.maintitle
 
+    ! banners and promos
+zoho.com##.zcrmhm-bansec
+zoho.com##.zcrm-cussec
+    ! popups
+zoho.com##.crm-pop-bg-frame
+    ! other
 ! zoho
 zcsend.net$domain=~zoho.com|~zohopublic.com|~zohostatic.com|~zohosupport.com|~zohowebstatic.com
 
@@ -29215,3 +29276,29 @@ instructables.com##.promo-side
 cubelelo.com##.slideshow
 cubelelo.com###cubelelo-smile-wrapper
 cubelelo.com##.shopify-section:style(position:static !important)
+
+basecamp.com##.header__notification
+basecamp.com##.footer__signup
+
+||engagebay.com/3pp/tracking-code.js
+! popup
+engagebay.com##.engagebay-dashboard-noty
+engagebay.com##.testimonial-sec
+
+creativo.one###accept_q
+creativo.one###last-comments-sidebar
+
+doit.software##.cta_block
+doit.software##.call_to_action
+
+||cookiedatabase.org/*/Cookiedatabase*.png$image
+cookiedatabase.org##.wp-caption
+
+phenom.com##[class*=_bannerHero_]
+phenom.com##[class*=LivePosts]
+
+obsidian.md##.purple-fade2::before
+obsidian.md##.purple-fade2:style(position:static !important)
+
+! banners and promos
+crm.org##.softwares-list-container
