@@ -21,6 +21,13 @@ google.*##.fbar:has-text(Отправить отзыв)
 google.*###gbw > div:has-text(Войти)
 google.*##div.fbar:nth-of-type(2)
 
+!play.google.com##+js(ra,data-p) - don't, it breaks screenshots
+!play.google.com##+js(ra,jsaction) - don't, it breaks search
+! seems fine
+play.google.com##+js(ra,jsdata)
+! seems fine
+play.google.com##+js(ra,jslog)
+
 translate.google.com##.gb_g.gb_Vc.gb_wd
 !translate.googleapis.com$domain=~translate.google.com - don't, it can be called when translating urls
 
@@ -92,7 +99,7 @@ www.google.*##+js(remove-attr, ping, div[id="search"] a[data-ved][ping])
 ||play.google.com/log?$xmlhttprequest,redirect-rule=noop.txt
 ! EasyPrivacy rule
 ||google.com^*/log?  # play.google.com/play/log?format=json&...
-||play.google.com/_/PlayStoreUi/browserinfo?
+!||play.google.com/_/PlayStoreUi/browserinfo? - generalized
 
 ! cookies popup
 !google.*##div:matches-css(position:fixed) - don't?
