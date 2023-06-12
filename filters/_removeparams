@@ -5,6 +5,7 @@
 ! List of URL parameters for removing
 ! See https://github.com/uBlockOrigin/uBlock-issues/issues/760
 ! and https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#removeparam
+! and https://adguard.com/kb/general/ad-filtering/create-own-filters/#removeparam-modifier
 ! NeatURL: see Neat URL mozilla extension config at https://github.com/Smile4ever/Neat-URL
 !
 ! Also, there are many community-driven rules from Adguard. See "from" comments
@@ -1016,7 +1017,10 @@ $removeparam=ranSiteID  # from DandelionSprout's URLShortener
 
 # recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
-$removeparam=ref,important
+$removeparam=ref,important,domain=~flowlu.com
+    ! Exclusions:
+    ! flowlu.com - ref is a part of web engine, suddenly.
+    !
     ! @@||gamesplanet.com^$removeparam=ref  # from DandelionSprout's URLShortener
     ! /?ref=tg$document,removeparam=ref  # from Ru AdList
     ! $removeparam=ref,domain=jin115.com|bipblog.com|animember.net|sbbit.jp|blog.livedoor.jp|blog.jp|2chblog.jp  # from Adguard
@@ -3157,3 +3161,9 @@ ya.ru$removeparam=redirect_ts  # from Ru AdList
 oformi-foto.ru$removeparam=gid  # from Ru AdList
 
 @@||youtrack.cloud^$removeparam  # from DandelionSprout's ClearURLs for uBo  # issue tracker, ok
+
+! already blocked, but
+salesforce.com$removeparam=d  # tracker
+
+! already blocked, but
+zoho.com$removeparam=source_from
