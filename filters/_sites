@@ -16650,11 +16650,15 @@ overthewire.org##ul:style(margin-top:0px !important)
 overthewire.org###shortcuts
     ! other
 
-owncloud.org##.easeintop.award
-owncloud.com##.easeintop.award
+    ! top
 owncloud.com###site-navigation:style(position:static !important)
 owncloud.com##.uk-sticky-fixed:style(position:static !important)
 owncloud.com##.uk-sticky-placeholder
+owncloud.com##.topbar__section:style(position:static !important)
+owncloud.com##.topbar__logo
+    ! other
+owncloud.org##.easeintop.award
+owncloud.com##.easeintop.award
 
 ||ownedcore.com/images/ba/$image
 ownedcore.com###header
@@ -22945,9 +22949,12 @@ thearraypost.com##.ss-popup-overlay
     ! logo
 theatlantic.com##[class^=Nav_bigA]
 theatlantic.com##[class^=Nav_logo]
-    ! other
+    ! banners and promos
 ! inline promo
 theatlantic.com##[class^=LostInventoryMessage]
+theatlantic.com##[class^=InjectedGate]
+theatlantic.com##[class^=GateToast]
+    ! other
 theatlantic.com##.c-nudge__container
 
 thebell.io##.mb-hide.tb-hide.ball
@@ -25392,6 +25399,17 @@ vshf.ru##.cs-header-company-info__description
 
 vsugrobe.ru##.overlay
 
+    ! to avoid js errors in the interface
+! Ok, it is not a big deal, just scrollbars
+@@||vtiger.com/*/nprogress/nprogress.js
+@@||vtiger.com/*/jquery.mcustomscrollbar
+@@||vtiger.com/*/jquery/perfect-scrollbar/
+    ! top
+vtiger.com##.category-header:style(position:static !important)
+vtiger.com##.logoImage
+vtiger.com##.mainContent:style(margin-top:0px !important)
+    ! other
+
 vtimes.io##.contribute-bar
 vtimes.io##.sidebar__section > .signup-form
 
@@ -26903,6 +26921,8 @@ zapier.com##[class*=UniversalNav]:style(position:static !important)
 zapier.com##div:style(position:static !important)
     ! banners and promos
 zapier.com##[data-testid="half-width-cta"]
+zapier.com##section[data-testid="zapier-product-module"]
+zapier.com##[class*=ZapCard]
     ! hover flickering
 zapier.com##div::before
 zapier.com##div::after
@@ -29302,3 +29322,16 @@ obsidian.md##.purple-fade2:style(position:static !important)
 
 ! banners and promos
 crm.org##.softwares-list-container
+
+optimizesmart.com$inline-script  # site blocks copypaste
+optimizesmart.com###in-page-book-banner-container
+
+megaplan.ru##.c-elements-banners-top2
+megaplan.ru##.stickyed:style(position:static !important)
+megaplan.ru##.prefooter
+
+planetcrust.com##.avia-testimonial-wrapper
+
+selecthub.com##.category-product-banner
+
+forum.proxmox.com###top > div:has-text(/^$/)
