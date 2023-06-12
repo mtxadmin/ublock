@@ -11,22 +11,56 @@
 !! general rules
 
 ! Third-party ad tracking cookies by 6sc.co
-! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, 6suuid)
 
 ! ustream.tv third-party targeted advertising
-! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 !*##+js(cookie-remover, ab_test_2)
 
+! Ezoic tracking cookies
+! "Used by the analytics and personalization company, Ezoic"  # https://www.ezoic.com/terms/
+*##+js(cookie-remover, active_template)
+    ! linuxize.com##+js(cookie-remover, active_template)
+    ! thewindowsclub.com##+js(cookie-remover, active_template)
+    ! axeandtool.com##+js(cookie-remover, active_template)
+    ! toppickguide.com##+js(cookie-remover, active_template)
+
 ! Amazon third-party affiliate marketing cookie
-! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, ad-id)
 
 *##+js(cookie-remover, adtech_uid)
     ! livejournal.com##+js(cookie-remover, adtech_uid)
     ! pleer.ru##+js(cookie-remover, adtech_uid)
 
+! advcake third-party tracking cookies
+*##+js(cookie-remover, /^advcake_/)
+    !*##+js(cookie-remover, advcake_click_id)
+    !*##+js(cookie-remover, advcake_track_id)
+    !*##+js(cookie-remover, advcake_session_id)
+        ! bigam.ru##+js(cookie-remover, advcake_session_id)
+        ! bigam.ru##+js(cookie-remover, advcake_track_id)
+        ! citilink.ru##+js(cookie-remover, advcake_session_id)
+        ! citilink.ru##+js(cookie-remover, advcake_track_id)
+        ! eldorado.ru##+js(cookie-remover, advcake_click_id)
+        ! eldorado.ru##+js(cookie-remover, advcake_session_id)
+        ! eldorado.ru##+js(cookie-remover, advcake_trackid)
+        ! eldorado.ru##+js(cookie-remover, advcake_track_url)
+        ! eldorado.ru##+js(cookie-remover, advcake_utm_partner)
+        ! eldorado.ru##+js(cookie-remover, advcake_utm_webmaster)
+        ! mvideo.ru##+js(cookie-remover, advcake_click_id)
+        ! mvideo.ru##+js(cookie-remover, advcake_session_id)
+        ! mvideo.ru##+js(cookie-remover, advcake_track_id)
+        ! mvideo.ru##+js(cookie-remover, advcake_utm_partner)
+        ! mvideo.ru##+js(cookie-remover, advcake_utm_webmaster)
+        ! mvideo.ru##+js(cookie-remover, advcake_track_id)
+        ! mvideo.ru##+js(cookie-remover, advcake_track_url)
+
 ! Bitrix first-party trackers
+##+js(cookie-remover, /^BITRIX_SM_ABTEST_/)
+    ! eksmo.ru##+js(cookie-remover, BITRIX_SM_ABTEST_ru)
+    ! victel63.ru##+js(cookie-remover, BITRIX_SM_ABTEST_s1)
 *##+js(cookie-remover, BITRIX_SM_BANNERS)
     ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_BANNERS)
     ! go64.ru##+js(cookie-remover, BITRIX_SM_BANNERS)
@@ -36,20 +70,23 @@
     ! avicom.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
     ! bigam.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
     ! ohotnik.com##+js(cookie-remover, BITRIX_SM_GUEST_ID)
+    ! specodegda.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
     ! technocity.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
 *##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
     ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
     ! avicom.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
     ! bigam.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
     ! ohotnik.com##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+    ! specodegda.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
     ! technocity.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
 *##+js(cookie-remover, BITRIX_SM_SALE_UID)
     ! izhohota.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
     ! qwertysh.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
+    ! specodegda.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
     ! technocity.ru##+js(cookie-remover, BITRIX_SM_SALE_UID)
 
 ! ContentSquare tracking cookies
-! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, _cs_c)
 *##+js(cookie-remover, _cs_ex)
 *##+js(cookie-remover, _cs_id)
@@ -58,8 +95,16 @@
 *##+js(cookie-remover, _cs_vars)
 
 ! Marketo ad network persistent cookies
-! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, __cf_bm)
+
+! Google Analytics ID third-party tracking cookies
+!   https://cookiedatabase.org/cookie/google-analytics/_dc_gtm_ua/
+!   https://cookiepedia.co.uk/cookie/12712424
+!   https://itecnote.com/tecnote/official-documentation-of-the-_dc_gtm-cookie-from-google-tag-manager/
+*##+js(cookie-remover, /^_dc_gtm_/)
+    ! citilink.ru##+js(cookie-remover, /^_dc_gtm_/)
+    ! eldorado.ru##+js(cookie-remover, /^_dc_gtm_/)
 
 ! DDoS cookies. They are usually http-only. It seems, don't block, just for information
 !*##+js(cookie-remover, /^__ddg/)
@@ -77,15 +122,78 @@
     ! podpiska.org##+js(cookie-remover, __ddg1_)
 
 ! Device id. For instance, Twitch's third party
-! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, device_id)
 
+! Ezoic tracking cookies
+! "Used by the analytics and personalization company, Ezoic"  # https://www.ezoic.com/terms/
+*##+js(cookie-remover, ezds)
+*##+js(cookie-remover, /^ezo/)
+*##+js(cookie-remover, /^ezux_/)
+    ! axeandtool.com##+js(cookie-remover, ezds)
+    ! axeandtool.com##+js(cookie-remover, /^ezo/)
+    ! easy2boot.com##+js(cookie-remover, /^ezo/)
+    ! ezoic.com##+js(cookie-remover, /^ezo/)
+    ! linuxize.com##+js(cookie-remover, ezds)
+    ! linuxize.com##+js(cookie-remover, /^ezo/)
+    ! thewindowsclub.com##+js(cookie-remover, ezds)
+    ! thewindowsclub.com##+js(cookie-remover, /^ezoab_/)
+    ! thewindowsclub.com##+js(cookie-remover, /^ezoadgid_/)
+    ! thewindowsclub.com##+js(cookie-remover, /^ezopvc_/)
+    ! thewindowsclub.com##+js(cookie-remover, ezohw)
+    ! thewindowsclub.com##+js(cookie-remover, /^ezoref_/)
+    ! thewindowsclub.com##+js(cookie-remover, /^ezosuibasgeneris/)
+    ! thewindowsclub.com##+js(cookie-remover, /^ezovid_/)
+    ! thewindowsclub.com##+js(cookie-remover, /^ezovuuid_/)
+    ! thewindowsclub.com##+js(cookie-remover, /^ezovuuidtime_/)
+    ! toppickguide.com##+js(cookie-remover, ezds)
+    ! toppickguide.com##+js(cookie-remover, /^ezo/)
+! not in the list of Ezoic cookies, but, it seems, they are theirs too
+*##+js(cookie-remover, ezAdBlockUser)
+*##+js(cookie-remover, ezCMPCCS)
+*##+js(cookie-remover, ezepvv)
+    ! axeandtool.com##+js(cookie-remover, ezCMPCCS)
+    ! axeandtool.com##+js(cookie-remover, ezAdBlockUser)
+    ! axeandtool.com##+js(cookie-remover, ezepvv)
+    ! toppickguide.com##+js(cookie-remover, ezAdBlockUser)
+    ! toppickguide.com##+js(cookie-remover, ezCMPCCS)
+    ! toppickguide.com##+js(cookie-remover, ezepvv)
+    ! thewindowsclub.com##+js(cookie-remover, ezepvv)
+
 ! Google Analytics third-party tracking cookies
-! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, _ga)
+    ! 10minutemail.net##+js(cookie-remover, _ga)
     ! dns-shop.ru##+js(cookie-remover, _ga)
-! dns-shop.ru##+js(cookie-remover, /^_ga_/)
-! mozilla.org##+js(cookie-remover, /^_ga/)
+    ! eldorado.ru##+js(cookie-remover, _ga)
+    ! mvideo.ru##+js(cookie-remover, _ga)
+*##+js(cookie-remover, /^_ga_/)
+    ! 10minutemail.net##+js(cookie-remover, /^_ga_/)
+    ! dns-shop.ru##+js(cookie-remover, /^_ga_/)
+    ! eldorado.ru##+js(cookie-remover, /^_ga_/)
+    ! mozilla.org##+js(cookie-remover, /^_ga/)
+    ! mvideo.ru##+js(cookie-remover, /^_ga_/)
+! also
+*##+js(cookie-remover, _gat)
+!   https://itecnote.com/tecnote/official-documentation-of-the-_dc_gtm-cookie-from-google-tag-manager/
+    ! dns-shop.ru##+js(cookie-remover, _gat)
+    ! gameplay.tips##+js(cookie-remover, _gat)
+*##+js(cookie-remover, /^_gat_/)
+    ! citilink.ru##+js(cookie-remover, /^_gat_/)
+    ! mvideo.ru##+js(cookie-remover, /^_gat_/)  # _gat_gtag_UA_{id}
+*##+js(cookie-remover, _gcl_au)
+    ! citilink.ru##+js(cookie-remover, _gcl_au)
+    ! dns-shop.ru##+js(cookie-remover, _gcl_au)
+    ! eldorado.ru##+js(cookie-remover, _gcl_au)
+    ! pleer.ru##+js(cookie-remover, _gcl_au)
+    ! mvideo.ru##+js(cookie-remover, _gcl_au)
+! "_gid – used to identify the user"  # https://www.optimizesmart.com/google-analytics-cookies-ultimate-guide/ :
+*##+js(cookie-remover, _gid)
+    ! 10minutemail.net##+js(cookie-remover, _gid)
+    ! dns-shop.ru##+js(cookie-remover, _gid
+    ! eldorado.ru##+js(cookie-remover, _gid)
+    ! mozilla.org##+js(cookie-remover, _gid)
+    ! mvideo.ru##+js(cookie-remover, _gid)
 
 ! DoubleClick third-party persistent ad cookies
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
@@ -101,6 +209,12 @@
     ! meme-generator.ru##+js(cookie-remover, laravel_session)
     ! mindbox.in##+js(cookie-remover, laravel_session)
     ! mindboxindia.com##+js(cookie-remover, laravel_session)
+
+! not in the list of Ezoic cookies, but, it seems, they are theirs too. Last page visited.  # https://www.ezoic.com/terms/
+axeandtool.com##+js(cookie-remover, /^lp_[0-9]+/)
+ezoic.com##+js(cookie-remover, /^lp_[0-9]+/)  # lp_{numid}:https://www.ezoic.com/terms/
+thewindowsclub.com##+js(cookie-remover, /^lp_[0-9]+$/)
+toppickguide.com##+js(cookie-remover, /^lp_/)
 
 ! third party - mediarithmics marketing cloud
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
@@ -142,6 +256,8 @@
 ! https://cookiedatabase.org/cookie/mail-ru/tmr_detect/
 ! https://www.change.org/policies/cookies
 *##+js(cookie-remover, tmr_detect)
+    ! citilink.ru##+js(cookie-remover, tmr_detect)
+    ! dns-shop.ru##+js(cookie-remover, tmr_detect)
     ! eldorado.ru##+js(cookie-remover, tmr_detect)
     ! pleer.ru##+js(cookie-remover, tmr_detect)
 ! VK (belongs to Mail.ru) third-party affiliate marketing referrer domain
@@ -150,8 +266,12 @@
 *##+js(cookie-remover, tmr_lvid)
 *##+js(cookie-remover, tmr_lvidTS)
     ! Some examples:
+    ! citilink.ru##+js(cookie-remover, tmr_lvid)
+    ! citilink.ru##+js(cookie-remover, tmr_lvidTS)
     ! dns-shop.ru##+js(cookie-remover, tmr_lvid)
     ! dns-shop.ru##+js(cookie-remover, tmr_lvidTS)
+    ! eldorado.ru##+js(cookie-remover, tmr_lvid)
+    ! eldorado.ru##+js(cookie-remover, tmr_lvidTS)
     ! pleer.ru##+js(cookie-remover, tmr_lvid)
     ! pleer.ru##+js(cookie-remover, tmr_lvidTS)
 ! https://www.change.org/policies/cookies
@@ -174,51 +294,63 @@
 ! And they are definitely Yandex-related cookie (not Google). Also see examples.
 *##+js(cookie-remover, is_gdpr)
 *##+js(cookie-remover, is_gdpr_b)
+    ! ya.ru##+js(cookie-remover, is_gdpr)
+    ! ya.ru##+js(cookie-remover, is_gdpr_b)
+    ! yandex.ru##+js(cookie-remover, is_gdpr)
+    ! yandex.ru##+js(cookie-remover, is_gdpr_b)
 *##+js(cookie-remover, usst)
 *##+js(cookie-remover, yabs-sid)
 *##+js(cookie-remover, yandexuid)
+    ! auto.ru##+js(cookie-remover, yandexuid)
+    ! dzen.ru##+js(cookie-remover, yandexuid)
+    ! kinopoisk.ru##+js(cookie-remover, yandexuid)
+    ! ya.ru##+js(cookie-remover, yandexuid)
+    ! yandex.ru##+js(cookie-remover, yandexuid)
 ! _yasc is not present in the links above but exists in some pivacy policies.
 ! view-source:https://notify.events/en/blog/wix-notifications-setup-guide
 ! And it is definitely Yandex-related cookie (not Google). Also see examples.
 *##+js(cookie-remover, _yasc)
+    ! auto.ru##+js(cookie-remover, _yasc)
+    !   some uid
+    ! dzen.ru##+js(cookie-remover, _yasc)
+    ! kinopoisk.ru*##+js(cookie-remover, _yasc)
+    ! turbopages.org##+js(cookie-remover, _yasc)
+    ! ya.ru##+js(cookie-remover, _yasc)
+    ! yandex.ru##+js(cookie-remover, _yasc)
 *##+js(cookie-remover, /^_ym_/)
     ! *##+js(cookie-remover, _ym_d)
     ! *##+js(cookie-remover, _ym_debug)
     ! *##+js(cookie-remover, _ym_hostIndex)
-    ! "this cookie determines whether a user has ad-blockers"
+    !   "this cookie determines whether a user has ad-blockers"
     ! *##+js(cookie-remover, _ym_isad)
     ! *##+js(cookie-remover, _ym_metrika_enabled)
     ! *##+js(cookie-remover, _ym_uid)
     ! *##+js(cookie-remover, /^_ym_visorc_/)
+        ! Some examples:
+        ! dns-shop.ru##+js(cookie-remover, _ym_d)
+        ! dns-shop.ru##+js(cookie-remover, _ym_isad)
+        ! dns-shop.ru##+js(cookie-remover, _ym_uid)
+        ! dns-shop.ru##+js(cookie-remover, _ym_visorc)
+        ! eldorado.ru##+js(cookie-remover, _ym_d)
+        ! eldorado.ru##+js(cookie-remover, _ym_isad)
+        ! eldorado.ru##+js(cookie-remover, _ym_uid)
+        ! fskrs.ru##+js(cookie-remover, _ym_d)
+        ! fskrs.ru##+js(cookie-remover, _ym_isad)
+        ! fskrs.ru##+js(cookie-remover, _ym_uid)
+        ! morakniv-russia.ru##+js(cookie-remover, _ym_d)
+        ! morakniv-russia.ru##+js(cookie-remover, _ym_isad)
+        ! morakniv-russia.ru##+js(cookie-remover, _ym_uid)
+        ! mvideo.ru##+js(cookie-remover, _ym_d)
+        ! mvideo.ru##+js(cookie-remover, _ym_uid)
+        ! pleer.ru##+js(cookie-remover, _ym_d)
+        ! pleer.ru##+js(cookie-remover, _ym_isad)
+        ! pleer.ru##+js(cookie-remover, _ym_uid)
+        ! translate.ru##+js(cookie-remover, _ym_d)
+        ! translate.ru##+js(cookie-remover, _ym_isad)
+        ! translate.ru##+js(cookie-remover, _ym_uid)
+        ! translate.ru##+js(cookie-remover, _ym_visorc)
 *##+js(cookie-remover, ymex)
 *##+js(cookie-remover, yuidss)
-    ! Some examples:
-    ! auto.ru##+js(cookie-remover, yandexuid)
-    ! auto.ru##+js(cookie-remover, _yasc)
-    ! dns-shop.ru##+js(cookie-remover, _ym_d)
-    ! dns-shop.ru##+js(cookie-remover, _ym_isad)
-    ! dns-shop.ru##+js(cookie-remover, _ym_uid)
-    ! dns-shop.ru##+js(cookie-remover, _ym_visorc)
-    ! dzen.ru##+js(cookie-remover, yandexuid)
-    !   some uid
-    ! dzen.ru##+js(cookie-remover, _yasc)
-    ! fskrs.ru##+js(cookie-remover, _ym_d)
-    ! fskrs.ru##+js(cookie-remover, _ym_isad)
-    ! fskrs.ru##+js(cookie-remover, _ym_uid)
-    ! morakniv-russia.ru##+js(cookie-remover, _ym_d)
-    ! morakniv-russia.ru##+js(cookie-remover, _ym_isad)
-    ! morakniv-russia.ru##+js(cookie-remover, _ym_uid)
-    ! pleer.ru##+js(cookie-remover, _ym_d)
-    ! pleer.ru##+js(cookie-remover, _ym_isad)
-    ! pleer.ru##+js(cookie-remover, _ym_uid)
-    ! ya.ru##+js(cookie-remover, is_gdpr)
-    ! ya.ru##+js(cookie-remover, is_gdpr_b)
-    ! ya.ru##+js(cookie-remover, yandexuid)
-    ! ya.ru##+js(cookie-remover, _yasc)
-    ! yandex.ru##+js(cookie-remover, is_gdpr)
-    ! yandex.ru##+js(cookie-remover, is_gdpr_b)
-    ! yandex.ru##+js(cookie-remover, _yasc)
-    ! yandex.ru##+js(cookie-remover, yandexuid)
 
 !! domains
 
@@ -244,6 +376,24 @@ cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
     ! cloudstorageinfo.org##+js(cookie-remover, apbct_urls)
 ! fingerprinting
 cloudstorageinfo.org##+js(cookie-remover, ct_screen_info)
+
+! not session cookie, 10 years
+eksmo.ru##+js(cookie-remover, eid)
+
+gameplay.tips##+js(cookie-remover, caosLocalGa)
+gameplay.tips##+js(cookie-remover, caosLocalGa_gid)
+
+invideo.io##+js(cookie-remover, /^amp_/)
+
+nordvpn.com##+js(cookie-remover, /^popups_/i)
+    ! nordvpn.com##+js(cookie-remover, popups_session_pageviews)
+    ! nordvpn.com##+js(cookie-remover, popups_referrer)
+    ! nordvpn.com##+js(cookie-remover, popups_session_duration)
+
+! not session cookie, 10 years
+zoom.us##+js(cookie-remover, _zm_mtk_guid)
+! not session cookie, several months
+zoom.us##+js(cookie-remover, _zm_visitor_guid)
 
 !! todo
 
