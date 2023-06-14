@@ -2336,7 +2336,9 @@ _tizers.  # from Ru AdList
     ! microsoft.com - download button: .ow-cta-btns
     ! oracle.com: .two-column-cta-vertical in the menu
 ##[id*="-cta-"]:not(html):not(body):not(article)
-##[class^="cta-"]:not(html):not(body):not(article)
+~freshworks.com,~myfreshworks.com##[class^="cta-"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! freshworks.com, myfreshworks.com - (multiple cta classes inside the form) is a continue button there
 ##[id^="-cta-"]:not(html):not(body):not(article)
     ! ###cta-container
     ! ionos.com##.cta-container
