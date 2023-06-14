@@ -2332,7 +2332,9 @@ _tizers.  # from Ru AdList
 ##[id*="call-to-action"]:not(html):not(body):not(article)
     securitylab.ru##call-to-action
     securitylab.ru##.call-to-action
-~google.com,~linkedin.com,~microsoft.com,~oracle.com,~udemy.com,~wasabi.com##[class*="-cta-"]:not(html):not(body):not(article)
+~freshworks.com,~google.com,~linkedin.com,~microsoft.com,~myfreshworks.com,~oracle.com,~udemy.com,~wasabi.com##[class*="-cta-"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! freshworks.com, myfreshworks.com - (multiple cta classes inside the form) is a continue button there
     ! microsoft.com - download button: .ow-cta-btns
     ! oracle.com: .two-column-cta-vertical in the menu
 ##[id*="-cta-"]:not(html):not(body):not(article)
