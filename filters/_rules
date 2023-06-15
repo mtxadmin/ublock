@@ -779,6 +779,11 @@ _adsys.js  # from Adguard
 /adv.aspx  # from Adguard
 /adv.js$important
 .adv.cdn.  # from EasyList
+/advagg_js/*$domain=lugasoft.ru|tropki.ru
+    # advagg_js means "Advanced CSS/JS Aggregation | Drupal.org", in general it is neutral, but sometimes such scripts need to be blocked. Seen several times. For example, also anti-copypaste script on tropki.ru
+    # again, don't block in general.
+    ! ||lugasoft.ru/sites/default/files/advagg_js  # https://lugasoft.ru/sites/default/files/advagg_js/js__ymW-rl9lD6KBolMA5i4aTm5RtAGdXpWFkCEIRJEoeSg__bYql3V-oJFRYwqyWRsHFOBwFvjz8GWKDr13zKsqR2Dg__3A1VosOGEjIxBma_LG1rYWMWvou3vJ4TDNl9wQuf4RY.js
+    ! ||tropki.ru/sites/default/files/advagg_js/
 =advanced-ads-  # from EasyList
 _advert/  # from EasyList
 /advert.js$important
