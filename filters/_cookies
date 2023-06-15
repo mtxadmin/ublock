@@ -211,10 +211,12 @@
     ! mindboxindia.com##+js(cookie-remover, laravel_session)
 
 ! not in the list of Ezoic cookies, but, it seems, they are theirs too. Last page visited.  # https://www.ezoic.com/terms/
-axeandtool.com##+js(cookie-remover, /^lp_[0-9]+/)
-ezoic.com##+js(cookie-remover, /^lp_[0-9]+/)  # lp_{numid}:https://www.ezoic.com/terms/
-thewindowsclub.com##+js(cookie-remover, /^lp_[0-9]+$/)
-toppickguide.com##+js(cookie-remover, /^lp_/)
+*##+js(cookie-remover, /^lp_[0-9]+$/)
+    ! axeandtool.com##+js(cookie-remover, /^lp_[0-9]+/)
+    !  lp_{numid}:https://www.ezoic.com/terms/
+    ! ezoic.com##+js(cookie-remover, /^lp_[0-9]+/)
+    ! thewindowsclub.com##+js(cookie-remover, /^lp_[0-9]+$/)
+    ! toppickguide.com##+js(cookie-remover, /^lp_/)
 
 ! third party - mediarithmics marketing cloud
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
@@ -230,15 +232,30 @@ toppickguide.com##+js(cookie-remover, /^lp_/)
 !   ustream.tv targeted advertising
 !   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 
-*##+js(cookie-remover, referer)
-    ! fasko.ru##+js(cookie-remover, referer)
-    ! nozhikov.ru##+js(cookie-remover, referer)
-    ! ohota-magazin.ru##+js(cookie-remover, referer)
-    ! udsezon.ru##+js(cookie-remover, referer)
-
-! Referer. For instance, Twitch's third party
-! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
-*##+js(cookie-remover, referrer_url)
+*##+js(cookie-remover, /refer/i)
+    !*##+js(cookie-remover, referer)
+        ! fasko.ru##+js(cookie-remover, referer)
+        ! nozhikov.ru##+js(cookie-remover, referer)
+        ! ohota-magazin.ru##+js(cookie-remover, referer)
+        ! udsezon.ru##+js(cookie-remover, referer)
+    ! Referer. For instance, Twitch's third party
+    ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+    !*##+js(cookie-remover, referrer_url)
+    !
+    ! altaro.com##+js(cookie-remover, AltaroSoftwareRefer)
+    ! duolingo.com##+js(cookie-remover, initial_referrer)
+    ! grafana.com##+js(cookie-remover, rl_page_init_referring_domain)
+    ! grafana.com##+js(cookie-remover, rl_page_init_referrer)
+    ! hotwav.com##+js(cookie-remover, _orig_referrer)
+    ! nozhikov.ru##+js(cookie-remover, first_referer)
+    ! osteopluscct.ru##+js(cookie-remover, apbct_prev_referer)
+    ! product-test.ru##+js(cookie-remover, ReferPage)
+    ! udsezon.ru##+js(cookie-remover, referer_referer)
+    ! udsezon.ru##+js(cookie-remover, referer_time)
+    ! udsezon.ru##+js(cookie-remover, referer_type)
+    ! udsezon.ru##+js(cookie-remover, referer_uri)
+    ! zamkielbor.ru##+js(cookie-remover, qform_refer)
+    ! zona.media##+js(cookie-remover, mz.t_freferrer)
 
 *##+js(cookie-remover, rerf)
     ! dns-shop.ru##+js(cookie-remover, rerf)
@@ -278,6 +295,7 @@ toppickguide.com##+js(cookie-remover, /^lp_/)
 *##+js(cookie-remover, tmr_reqNum)
 
 ! XSRF-TOKEN - in general, don't(?): it is typically a token for form sending security
+! It should be strictly session though. Todo for research.
 !*##+js(cookie-remover, XSRF-TOKEN)
 
     ! Yandex trackers
@@ -288,7 +306,14 @@ toppickguide.com##+js(cookie-remover, /^lp_/)
 ! Don't think that removing cookies "i" can be false-positives. 
 ! 1)Yandex Metrica is wide accepted, 
 ! 2)it is just on-start removing cookies, effectively making them session
-*##+js(cookie-remover, i)
+! Update: this cookie somehow is used by qrator anti-ddos service. Do not block it.
+! At least, you can see examples on dns-shop.ru (worldwide) and leroymerlin.ru (only with rus ip)
+! heavily obfuscated scripts:
+!||dns-shop.ru/__qrator/qauth_utm_v2_vcf8c.js
+!||dns-shop.ru/__qrator/validate
+! resume:
+!*##+js(cookie-remover, i) - don't block
+!
 ! is_gdpr and is_gdpr_b are not present in the links above but exists in some pivacy policies.
 ! view-source:https://notify.events/en/blog/wix-notifications-setup-guide
 ! And they are definitely Yandex-related cookie (not Google). Also see examples.
@@ -345,10 +370,12 @@ toppickguide.com##+js(cookie-remover, /^lp_/)
         ! pleer.ru##+js(cookie-remover, _ym_d)
         ! pleer.ru##+js(cookie-remover, _ym_isad)
         ! pleer.ru##+js(cookie-remover, _ym_uid)
+        ! stroy-podskazka.ru##+js(cookie-remover, yandex_ym_lvs)
         ! translate.ru##+js(cookie-remover, _ym_d)
         ! translate.ru##+js(cookie-remover, _ym_isad)
         ! translate.ru##+js(cookie-remover, _ym_uid)
         ! translate.ru##+js(cookie-remover, _ym_visorc)
+        ! wlooks.ru##+js(cookie-remover, yandex_ym_lvs)
 *##+js(cookie-remover, ymex)
 *##+js(cookie-remover, yuidss)
 
