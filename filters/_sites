@@ -7337,7 +7337,12 @@ faphouse.com$subdocument,third-party  # from EasyList
 
 faptm.ru###sliza-wgt-button
 
+    ! banners and promos
 farfor.ru##.b-bigSlider
+    ! apps
+farfor.ru##.app-factoid
+farfor.ru##.main__page-app
+    ! other
 
 fast-anime.ru$third-party  # from Ru AdList
 
@@ -9980,7 +9985,11 @@ huawei-helpers.ru###masthead
 ! Hubspot: "All-in-one marketing software", "Inbound Marketing, Sales, and Service Software", "platform of marketing, sales, customer service, and CRM software"
 hubspot.com$important,script,3p  # don't block css
 hubspot.net$important,script,3p  # don't block css
+    ! popups
+! make closing "X" visible
 hubspot.com##.private-modal__close:style(color:initial !important)
+hubspot.com##.private-alert--banner
+    ! other
 
 huihoo.com##.footer-bg
 huihoo.com##.page-header-bg
@@ -12530,14 +12539,15 @@ leroymerlin.kz,leroymerlin.ru##.header-location-hint
 leroymerlin.kz,leroymerlin.ru##.popover-location
 !leroymerlin.kz,leroymerlin.ru##.js-location-hint
 leroymerlin.kz,leroymerlin.ru##[data-qa-region-notification]
+leroymerlin.kz,leroymerlin.ru##[role="presentation"]:has-text(Ваш регион)
     ! other popups
 leroymerlin.kz,leroymerlin.ru###pop-question
 leroymerlin.kz,leroymerlin.ru##.service-sticky
 leroymerlin.kz,leroymerlin.ru##uc-region-submit-notification
 leroymerlin.kz,leroymerlin.ru##uc-notification-mobile-app
 leroymerlin.kz,leroymerlin.ru##[role=tooltip]
-leroymerlin.ru##[class*=header-footer]:has-text(cookie):has(>button)
-leroymerlin.ru##a[data-qa-support-button]
+leroymerlin.kz,leroymerlin.ru##[class*=header-footer]:has-text(cookie):has(>button)
+leroymerlin.kz,leroymerlin.ru##a[data-qa-support-button]
     ! banners and promos
 ||res.cloudinary.com/lmru-test/image/upload/*/images/main-new/$image
 ||res.cloudinary.com/lmru-test/image/upload/*/images/main-new/carousel/$image
@@ -29379,3 +29389,5 @@ intuit.com##[class^=overlay_overlay]
 intuit.com###TalkToSales
 intuit.com##[class^=RwGlobalNav]:style(position:static !important)
 intuit.com##[class^=S01GlobalNavigation]:style(position:static !important)
+
+apptivo.com##.leftlilogo
