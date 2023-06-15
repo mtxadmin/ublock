@@ -3154,6 +3154,12 @@ bitlaunch.io##.site-header
 ||bitrix.info^$3p  # ad scripts from Bitrix  # is in RU AdList and AdGuard
 ||bitrix.info/ba.js$important  # from AdGuard Tracking Protection and EasyPrivacy
 ||bitrix.info/bx_stat  # from EasyPrivacy
+||bitrix24.com/bitrix/js/ui/feedback/  # tracking scripts
+||bitrix24.com/bitrix/js/im/old-chat-embedding/
+    ! popups
+! и окошко это неотключаемое задолбало
+bitrix24.com##.popup-window:has-text(Select your Bitrix24 most used items)
+bitrix24.com##.popup-window-overlay
     ! banners and promos
 bitrix24.com##.content-alternatives__header
 bitrix24.com##.content-alternatives-banner
@@ -5665,6 +5671,7 @@ dns-shop.ru,dns-shop.kz##.additional-sales-tabs
 dns-shop.ru,dns-shop.kz###homepage-stories-container
 dns-shop.ru,dns-shop.kz##.homepage__cards
 dns-shop.ru##.stories__card:has-text(/(Р|р)еклама/)
+dns-shop.ru##.action-swiper
     ! stickers
 dns-shop.ru,dns-shop.kz,technopoint.ru##.additional-vobler
 dns-shop.ru,dns-shop.kz,technopoint.ru##.product-info__voblers
@@ -7700,6 +7707,14 @@ flirc.tv$inline-script  # the site turns white until loading tracking scripts
 
 flot.com##.button-attach
 
+! this js error is blocking
+! Uncaught ReferenceError: toastr is not defined
+flowlu.com##+js(set, toastr, noopFunc)
+! and this is not
+! Uncaught ReferenceError: firebase is not defined
+!flowlu.com##+js(set, firebase, noopFunc)
+! Uncaught TypeError: firebase.initializeApp is not a function
+
 floy.com.ua###head:style(position:static !important)
 
 ! FluidSurveys - closed (joined Surveymonkey.com)
@@ -7984,6 +7999,9 @@ freetutsdownload.com##.widget_categories
 freetutsdownload.com##a[href*="grunoaph.net"]
 
 ||fresher.ru/widget/
+
+freshworks.com##.inpage-scroll:style(position:static !important)
+freshworks.com##.banner-default
 
 frickelsoft.net##body:style(background-color:white !important)
 
@@ -9960,8 +9978,9 @@ huawei.com##.dirScroll.newDocRelatedInfo:style(position:static !important)
 huawei-helpers.ru###masthead
 
 ! Hubspot: "All-in-one marketing software", "Inbound Marketing, Sales, and Service Software", "platform of marketing, sales, customer service, and CRM software"
-hubspot.com$important,script  # don't block css
-hubspot.net$important,script  # don't block css
+hubspot.com$important,script,3p  # don't block css
+hubspot.net$important,script,3p  # don't block css
+hubspot.com##.private-modal__close:style(color:initial !important)
 
 huihoo.com##.footer-bg
 huihoo.com##.page-header-bg
@@ -13281,9 +13300,6 @@ ludovicperrichon.com###bkgd_svg
 ludovicperrichon.com###bkgd_transparent
 ludovicperrichon.com##.header-title
 
-||lugasoft.ru/sites/default/files/advagg_js  # https://lugasoft.ru/sites/default/files/advagg_js/js__ymW-rl9lD6KBolMA5i4aTm5RtAGdXpWFkCEIRJEoeSg__bYql3V-oJFRYwqyWRsHFOBwFvjz8GWKDr13zKsqR2Dg__3A1VosOGEjIxBma_LG1rYWMWvou3vJ4TDNl9wQuf4RY.js
-# advagg_js means "Advanced CSS/JS Aggregation | Drupal.org", in general it is neutral, but sometimes such scripts need to be blocked. Seen several times. For example, also anti-copypaste script on tropki.ru
-
 lullabot.com##.site-header.is-fixed:style(position:static !important)
 lullabot.com##.site-header:style(margin-top:0px !important; position:static !important)
 lullabot.com##.page-header:style(padding-top:0px !important; padding-bottom:0px !important; margin-bottom:0px !important)
@@ -15661,6 +15677,12 @@ noteits.net##.title-area
 
 notepad-plus-plus.org##.intro-and-nav:style(height:auto !important)
 ! todo: на https://notepad-plus-plus.org/downloads/ съехала верстка
+
+    ! top
+notik.ru##.hide-pad:style(position:static !important)
+    ! banners and promos
+notik.ru###slider-wrapper:has(.bnblock)
+    ! other
 
 ||notion.site/api/v3/ping
 ! exclusion?
@@ -19559,6 +19581,12 @@ rusknife.com###top-bottom-menu
 rus-linux.net##header
 rus-linux.net###left_col
 rus-linux.net##.sbe
+
+    ! top
+ruskeala.ru##a:style(pointer-events:initial !important)
+ruskeala.ru##h1:style(color:initial !important)
+ruskeala.ru##.product_top_bg
+    ! other
 
 ruspdd.com##.tooltip
 
@@ -23669,7 +23697,9 @@ troffi.ru##.free-block
 
 ||troitski.org/skins/skin2/images/lg.png
 
+!tropki.ru$script  # site blocks copypaste - generalized as /advagg_js/*
 ||tropki.ru/*/footer.jpg
+tropki.ru###menu-line:style(box-shadow:none !important)
 
 troubleshooter.xyz##.hkb-site-search
 
@@ -28418,8 +28448,6 @@ xn--80aiikwliqi.xn--80ao21a##.b-slider
 xn--80aiikwliqi.xn--80ao21a##.b-user-content:has-text(Надежное сотрудничество)
 
 @@||instashop.kz/*/promo/$css
-
-tropki.ru$script  # site blocks copypaste
 
 testsigma.com##.ts-floating-wrapper
 testsigma.com##.ts-announcement-bar
