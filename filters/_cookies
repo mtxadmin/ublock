@@ -132,10 +132,13 @@
 *##+js(cookie-remover, /^ezux_/)
     ! axeandtool.com##+js(cookie-remover, ezds)
     ! axeandtool.com##+js(cookie-remover, /^ezo/)
+    ! codefather.tech##+js(cookie-remover, /^ezo/)
     ! easy2boot.com##+js(cookie-remover, /^ezo/)
     ! ezoic.com##+js(cookie-remover, /^ezo/)
     ! linuxize.com##+js(cookie-remover, ezds)
     ! linuxize.com##+js(cookie-remover, /^ezo/)
+    ! lynxbee.com##+js(cookie-remover, ezds)
+    ! lynxbee.com##+js(cookie-remover, /^ezo/)
     ! thewindowsclub.com##+js(cookie-remover, ezds)
     ! thewindowsclub.com##+js(cookie-remover, /^ezoab_/)
     ! thewindowsclub.com##+js(cookie-remover, /^ezoadgid_/)
@@ -152,9 +155,17 @@
 *##+js(cookie-remover, ezAdBlockUser)
 *##+js(cookie-remover, ezCMPCCS)
 *##+js(cookie-remover, ezepvv)
-    ! axeandtool.com##+js(cookie-remover, ezCMPCCS)
     ! axeandtool.com##+js(cookie-remover, ezAdBlockUser)
+    ! axeandtool.com##+js(cookie-remover, ezCMPCCS)
     ! axeandtool.com##+js(cookie-remover, ezepvv)
+    ! codefather.tech##+js(cookie-remover, ezCMPCCS)
+    ! codefather.tech##+js(cookie-remover, ezepvv)
+    ! linuxize.com##+js(cookie-remover, ezAdBlockUser)
+    ! linuxize.com##+js(cookie-remover, ezepvv)
+    ! linuxize.com##+js(cookie-remover, ezCMPCCS)
+    ! lynxbee.com##+js(cookie-remover, ezAdBlockUser)
+    ! lynxbee.com##+js(cookie-remover, ezCMPCCS)
+    ! lynxbee.com##+js(cookie-remover, ezepvv)
     ! toppickguide.com##+js(cookie-remover, ezAdBlockUser)
     ! toppickguide.com##+js(cookie-remover, ezCMPCCS)
     ! toppickguide.com##+js(cookie-remover, ezepvv)
@@ -213,8 +224,10 @@
 ! not in the list of Ezoic cookies, but, it seems, they are theirs too. Last page visited.  # https://www.ezoic.com/terms/
 *##+js(cookie-remover, /^lp_[0-9]+$/)
     ! axeandtool.com##+js(cookie-remover, /^lp_[0-9]+/)
+    ! codefather.tech##+js(cookie-remover, /^lp_[0-9]+$/)
     !  lp_{numid}:https://www.ezoic.com/terms/
     ! ezoic.com##+js(cookie-remover, /^lp_[0-9]+/)
+    ! linuxize.com##+js(cookie-remover, /^lp_[0-9]+$/)
     ! thewindowsclub.com##+js(cookie-remover, /^lp_[0-9]+$/)
     ! toppickguide.com##+js(cookie-remover, /^lp_/)
 
@@ -243,7 +256,11 @@
     !*##+js(cookie-remover, referrer_url)
     !
     ! altaro.com##+js(cookie-remover, AltaroSoftwareRefer)
+    !  http-only, but
+    ! cubelelo.com##+js(cookie-remover, _orig_referrer)
+    ! digitalocean.com##+js(cookie-remover, referrer)
     ! duolingo.com##+js(cookie-remover, initial_referrer)
+    ! filestash.app##+js(cookie-remover, referral)
     ! grafana.com##+js(cookie-remover, rl_page_init_referring_domain)
     ! grafana.com##+js(cookie-remover, rl_page_init_referrer)
     ! hotwav.com##+js(cookie-remover, _orig_referrer)
@@ -263,6 +280,7 @@
     ! analytics.dns-shop.ru##+js(cookie-remover, rerf)
     ! restapi.dns-shop.ru##+js(cookie-remover, rerf)
     ! webapi.dns-shop.ru##+js(cookie-remover, rerf)
+    ! api.farfor.ru##+js(cookie-remover, rerf)
     ! mibf.info##+js(cookie-remover, rerf)
 
 ! Adobe third-party persistent ad cookies
@@ -312,8 +330,11 @@
     ! pleer.ru##+js(cookie-remover, cats_visit)
     ! pleer.ru##+js(cookie-remover, last_visit)
     ! pleer.ru##+js(cookie-remover, prods_visit)
+    !  http-only, but
+    ! sourceforge.net##+js(cookie-remover, VISITOR)
     ! stopgame.ru##+js(cookie-remover, last_visit_date_v2)
     ! thestreet.com##+js(cookie-remover, last_visit_bc)
+    !  http-only, but
     ! youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
     !  non-session cookie, several months
     ! zoom.us##+js(cookie-remover, _zm_visitor_guid)
@@ -337,6 +358,8 @@
 !||dns-shop.ru/__qrator/validate
 ! resume:
 !*##+js(cookie-remover, i) - don't block
+    ya.ru##+js(cookie-remover, i)
+    yandex.ru##+js(cookie-remover, i)
 !
 ! is_gdpr and is_gdpr_b are not present in the links above but exists in some pivacy policies.
 ! view-source:https://notify.events/en/blog/wix-notifications-setup-guide
@@ -412,6 +435,9 @@ biglion.ru##+js(cookie-remover, /^raw_utm_/)
     ! biglion.ru##+js(cookie-remover, raw_utm_source)  # ref
     ! biglion.ru##+js(cookie-remover, raw_utm_date)
 
+buffer.com##+js(cookie-remover, buffer-marketing)
+buffer.com##+js(cookie-remover, buffer-marketing.sig)
+
 !citilink.ru##+js(cookie-remover, _pcl) - don't, it breaks the site loading
 !(it breaks later, though, due to their WAF, but)
 
@@ -428,18 +454,44 @@ cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
 ! fingerprinting
 cloudstorageinfo.org##+js(cookie-remover, ct_screen_info)
 
+creatio.com##+js(cookie-remover, /^visid_incap_/)
+
+! url
+cubelelo.com##+js(cookie-remover, _landing_page)
+
+digitalocean.com##+js(cookie-remover, ajs_anonymous_id)
+digitalocean.com##+js(cookie-remover, first_landing_page)
+digitalocean.com##+js(cookie-remover, last_landing_page)
+digitalocean.com##+js(cookie-remover, last_landing_page_timestamp)
+
 ! not session cookie, 10 years
 eksmo.ru##+js(cookie-remover, eid)
 
 gameplay.tips##+js(cookie-remover, caosLocalGa)
 gameplay.tips##+js(cookie-remover, caosLocalGa_gid)
 
+! some visitor ids
+indeed.com##+js(cookie-remover, CTK)
+indeed.com##+js(cookie-remover, LV)
+indeed.com##+js(cookie-remover, RF)
+indeed.com##+js(cookie-remover, RQ)
+indeed.com##+js(cookie-remover, UD)
+
 invideo.io##+js(cookie-remover, /^amp_/)
+
+! http-only, but
+learn.microsoft.com##+js(cookie-remover, original_req_url)
+
+nethunt.com##+js(cookie-remover, NH-EXIT-BANNER)
 
 nordvpn.com##+js(cookie-remover, /^popups_/i)
     ! nordvpn.com##+js(cookie-remover, popups_session_pageviews)
     ! nordvpn.com##+js(cookie-remover, popups_referrer)
     ! nordvpn.com##+js(cookie-remover, popups_session_duration)
+
+reallysimplesystems.com##+js(cookie-remover, MoneypennyRef)
+
+yandex.ru##+js(cookie-remover, usurveys)
 
 ! not session cookie, 10 years
 zoom.us##+js(cookie-remover, _zm_mtk_guid)
