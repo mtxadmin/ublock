@@ -72,7 +72,7 @@
     ! ohotnik.com##+js(cookie-remover, BITRIX_SM_GUEST_ID)
     ! specodegda.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
     ! technocity.ru##+js(cookie-remover, BITRIX_SM_GUEST_ID)
-*##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+!*##+js(cookie-remover, BITRIX_SM_LAST_VISIT) - see /visit/
     ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
     ! avicom.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
     ! bigam.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
@@ -294,6 +294,30 @@
 ! https://www.change.org/policies/cookies
 *##+js(cookie-remover, tmr_reqNum)
 
+*##+js(cookie-remover, /visit/i)
+    !*##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+        ! adrenalin.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+        ! avicom.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+        ! bigam.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+        ! ohotnik.com##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+        ! specodegda.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+        ! technocity.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+    ! auto.ru##+js(cookie-remover, count-visits)
+    ! ballistica.su##+js(cookie-remover, user_visits)
+    ! ballistica.su##+js(cookie-remover, uss_visitor)
+    ! banki.ru##+js(cookie-remover, BANKI_RU_LAST_VISIT)
+    ! garmin.ru##+js(cookie-remover, GARMIN_CO_LAST_VISIT)
+    ! habr.com##+js(cookie-remover, visited_articles)
+    ! kb.macrium.com##+js(cookie-remover, IKB_InstantKBLastVisit)
+    ! pleer.ru##+js(cookie-remover, cats_visit)
+    ! pleer.ru##+js(cookie-remover, last_visit)
+    ! pleer.ru##+js(cookie-remover, prods_visit)
+    ! stopgame.ru##+js(cookie-remover, last_visit_date_v2)
+    ! thestreet.com##+js(cookie-remover, last_visit_bc)
+    ! youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
+    !  non-session cookie, several months
+    ! zoom.us##+js(cookie-remover, _zm_visitor_guid)
+
 ! XSRF-TOKEN - in general, don't(?): it is typically a token for form sending security
 ! It should be strictly session though. Todo for research.
 !*##+js(cookie-remover, XSRF-TOKEN)
@@ -419,8 +443,6 @@ nordvpn.com##+js(cookie-remover, /^popups_/i)
 
 ! not session cookie, 10 years
 zoom.us##+js(cookie-remover, _zm_mtk_guid)
-! not session cookie, several months
-zoom.us##+js(cookie-remover, _zm_visitor_guid)
 
 !! todo
 
