@@ -283,6 +283,11 @@
     ! api.farfor.ru##+js(cookie-remover, rerf)
     ! mibf.info##+js(cookie-remover, rerf)
 
+*##+js(cookie-remover, sh2lastfid)
+    ! dsezon.ru##+js(cookie-remover, sh2lastfid)
+    ! ruskeala.ru##+js(cookie-remover, sh2lastfid)
+    ! sotohit.ru##+js(cookie-remover, sh2lastfid)
+
 ! Adobe third-party persistent ad cookies
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, /^s_vi_/)
@@ -325,6 +330,7 @@
     ! ballistica.su##+js(cookie-remover, uss_visitor)
     ! banki.ru##+js(cookie-remover, BANKI_RU_LAST_VISIT)
     ! garmin.ru##+js(cookie-remover, GARMIN_CO_LAST_VISIT)
+    ! getapp.com##+js(cookie-remover, /^most_visited_apps/)
     ! habr.com##+js(cookie-remover, visited_articles)
     ! kb.macrium.com##+js(cookie-remover, IKB_InstantKBLastVisit)
     ! pleer.ru##+js(cookie-remover, cats_visit)
@@ -358,6 +364,7 @@
 !||dns-shop.ru/__qrator/validate
 ! resume:
 !*##+js(cookie-remover, i) - don't block
+    sso.dzen.ru##+js(cookie-remover, i)
     ya.ru##+js(cookie-remover, i)
     yandex.ru##+js(cookie-remover, i)
 !
@@ -428,6 +435,9 @@
 
 !! domains
 
+beeline.ru##+js(cookie-remover, abtest_new_basket)
+beeline.ru##+js(cookie-remover, abtest_new_basket_shop)
+
 biglion.ru##+js(cookie-remover, /^raw_utm_/)
     ! biglion.ru##+js(cookie-remover, raw_utm_content)
     ! biglion.ru##+js(cookie-remover, raw_utm_medium
@@ -440,6 +450,10 @@ buffer.com##+js(cookie-remover, buffer-marketing.sig)
 
 !citilink.ru##+js(cookie-remover, _pcl) - don't, it breaks the site loading
 !(it breaks later, though, due to their WAF, but)
+citilink.ru##+js(cookie-remover, /^ab_test/)
+    ! citilink.ru##+js(cookie-remover, ab_test)
+    ! citilink.ru##+js(cookie-remover, ab_test_analytics)
+citilink.ru##+js(cookie-remover, mindboxDeviceUUID)
 
 cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
     ! cloudstorageinfo.org##+js(cookie-remover, apbct_cookies_test)
