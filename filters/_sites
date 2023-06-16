@@ -2855,7 +2855,9 @@ beeg.com##.full-page-loader
 beeg.com##.sidebar
 
 beeline.kz##.svg-logo
-    ! banners and promos
+   ! banners and promos
+! top
+beeline.kz##.popup-myBeeline
 ||beeline.kz/*/footer-banner.png
 beeline.kz##.footer__banner
 ! promos
@@ -3995,6 +3997,10 @@ cashbacki.top##[href^="https://letyshops.com/welcome"]
 ||castorama.ru/local/templates/castorama/skin/frontend/castorama/default/js/oggetto/yandex/advisor.js
 ||castorama.ru/local/templates/castorama/skin/frontend/castorama/default/js/oggetto/target2sell/init.js
 ||castorama.ru/local/templates/castorama/skin/frontend/castorama/default/js/oggetto/customer/social-login.js
+    ! top
+castorama.ru##.toolbar-top:style(position:static !important)
+castorama.ru##.mobile-toolbar:style(position:static !important)
+    ! other
 castorama.ru###widget-196c5d0d8d0a44c6bf3de329da18f278
 castorama.ru###pdp-text-img
 castorama.ru##.buy-section__fixed
@@ -4336,6 +4342,8 @@ cisoclub.ru##.header-advertisement
 cisoclub.ru##.social-widgets
 
 citilink.ru$third-party  # from Ru AdList
+    ! popups
+citilink.ru##.fresnel-container
     ! banners and promos
 citilink.ru##.banner_tr
 citilink.ru##.between-card-banner_gtm-js
@@ -8344,6 +8352,7 @@ germania.one##.code-block
 germany.ru##.float-left
 
 ||getapp.com/chatbot/
+getapp.com##[class*=_withSticky_]:style(position:static !important)
 
 ! todo :-(
 @@||getcourse.ru
@@ -11419,8 +11428,14 @@ support.kaspersky.ru##.w_cont:has-text(Была ли информация пол
 !https://ru.fp.kaspersky-labs.com/oxwdsq?cid=
 
 kaspi.kz##.footer-2
-! popup
+    ! popups
 kaspi.kz##.current-location__confirm-city
+kaspi.kz##.dialog__content
+kaspi.kz##.dialog
+kaspi.kz##.onboarding-tooltip
+kaspi.kz##.onboarding-overlay
+    ! other
+kaspi.kz##.smart-banner
 
 kavaonline.sk##.banner-grid-wrapper
 
@@ -13954,6 +13969,11 @@ megaobzor.com###menu
 megaobzor.com###mobzor:style(margin-top:0px !important)
 megaobzor.com##.icon-2vkontakte
 megaobzor.com##.icon-2youtube
+
+megapit.kz##.selected-products-header
+megapit.kz##.products-gallery > flag-wrap
+megapit.kz##.product-cashback
+megapit.kz##.cashback
 
 megaplan.ru##.pages-inner:style(padding-top:0px !important)
 megaplan.ru##.pages-inner-info-views
@@ -25335,6 +25355,7 @@ vse-dni.ru##.cap-top
 vsehoztovari.ru##.left-slider
 vsehoztovari.ru##.foot_panel_all:style(position:static !important)
 
+||vseinstrumenti.ru/res/content/downloadAppImg
     ! popups
 vseinstrumenti.ru###region_modal
 vseinstrumenti.ru###region_shadow
@@ -25382,6 +25403,7 @@ vseinstrumenti.ru##.base-button:has-text(Быстрый заказ)
 ! loans
 vseinstrumenti.ru##.payment-by-instalments
 vseinstrumenti.ru##.bonus
+vseinstrumenti.ru##.bottom-sheet
 
 ||vsekroham.ru/local/templates/main_new/js/chunks/danner-buy-profitable$script
 vsekroham.ru##.danner-buy-profitable__fixed
@@ -28951,10 +28973,13 @@ freeones.com##.sticky-dashboard-details
 freeones.com##.sidebar-right__scroll-container
 
 tau24.kz##.slider
+tau24.kz###advantages
 
 kaspi.kz##.popup:has-text(в Приложении)
 
 planetofhotels.com##.c-anchor:style(position:static !important)
+    ! popup
+planetofhotels.com##.region-page-bottom
 
 ! Side panel
 kicb.net##.recomend
@@ -29266,6 +29291,10 @@ dvery.ru##.footer__list
 iletyou.ru##.table-of-contents
 
 translate.ru##.topBlog
+! ad links (through yandex)
+translate.ru##.app-download
+! ads on site
+translate.ru###bttAdv
 
 zennolab.com##.notice
 zennolab.com##.notices
@@ -29391,3 +29420,6 @@ intuit.com##[class^=RwGlobalNav]:style(position:static !important)
 intuit.com##[class^=S01GlobalNavigation]:style(position:static !important)
 
 apptivo.com##.leftlilogo
+apptivo.com##.fixed-sec
+
+vegastack.com##.gh-portal-triggerbtn-iframe
