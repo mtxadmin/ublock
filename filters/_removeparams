@@ -1404,8 +1404,10 @@ $removeparam=subid1  # domain parking ids
 
 $removeparam=subprogram_id  # good old rule from Prx: subprogram_id (one of)
 
-$removeparam=tag,domain=~pikabu.monster
+$removeparam=tag,domain=~drebedengi.ru|~livejournal.com|~pikabu.monster
     ! Exclusions:
+    ! drebedengi.ru - financial service, there are non-ad tags there
+    ! livejournal.com - blog platform, there are non-ad tags there
     ! pikabu.monster - analytical service, doesn't advertise or track users
     !
     ! agoda.com$removeparam=tag  # from Adguard
@@ -3170,3 +3172,6 @@ salesforce.com$removeparam=d  # tracker
 ! already blocked, but
 zoho.com$removeparam=zsrc  # ref
 zoho.com$removeparam=source_from  # ref
+
+! already blocked, but
+connatix.com$3p,removeparam=cid  # from uBlock filters – Unbreak
