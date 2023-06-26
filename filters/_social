@@ -281,6 +281,8 @@ _vkontakte.png  # from Ru AdList
 ! Oh, yes! Long-awaited feature! https://github.com/uBlockOrigin/uBlock-issues/issues/2531
 vk.com,vk.ru##+js(href-sanitizer, a[href^="/away.php?to="]:not([title]))
 vk.com,vk.ru##+js(href-sanitizer, a[href^="/away.php?to="][title], [title])
+! and Ru AdList variant
+vk.com,vk.ru##+js(href-sanitizer, a[href*="/away.php?to="], ?to)
 !
     ! popups
 ! vk.com##.box_body:has(.vk_connect_policy_notice_box)  # test remove 2020-07
@@ -291,10 +293,14 @@ vk.com,vk.ru##+js(href-sanitizer, a[href^="/away.php?to="][title], [title])
 vk.com###cookies_policy_wrap
 ||vk.com/images/layer_bg_black.png
 vk.com##.UnauthActionBoxContainer
+! Ru AdList exclusion
+vk.com#@#div[id$="notifiers_wrap"]
     ! popup overlay
 ! don't block so general. Popups can be sometimes useful
 !vk.com###box_layer_bg
 !vk.com###box_layer_wrap
+    ! banners and promos
+vk.com##.audio_promo
     ! share scripts and buttons
 ! here will be some exclusion sites, yes
 ! Ru Adlist and Fanboy's rule
@@ -907,6 +913,11 @@ imgsmail.ru/gstat?  # from EasyPrivacy
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
+! from Ru AdList
+light.mail.ru##+js(href-sanitizer, [href^="https://checklink.mail.ru/proxy?"], ?url)
+! from Ru AdList
+light.mail.ru##+js(href-sanitizer, [href^="https://click.mail.ru/redir?u="], ?u)
+!
 ! is in Adguard
 ##a[href^="https://connect.mail.ru/share"]
 ! is in RU AdList
@@ -1173,6 +1184,7 @@ meet.google.com##div[aria-live]
 @@ivwebcontent.telegram.org$ghide
 ! В порядке эксперимента включены обратно телеграммные иконки. В принципе, большая их часть есть в других подписках
 ! Виджеты и шаринг остаются отключенными.
+! Update later: да, оптимально
 !/icon-telegram$image
 !/icon_telegram$image
 !/telegram$image
@@ -1300,6 +1312,7 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 /whatsapp.svg
 /whatsapp-button.  # ad scripts  # is in Fanboy’s and RU AdList
 /whatsapp-icon.png
+||dit.whatsapp.net/deidentified_telemetry
 ! from Fanboy's
 ~votesmart.appspot.com##a[href^="https://api.whatsapp.com/send?"]
 ! from Adguard
