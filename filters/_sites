@@ -1405,6 +1405,8 @@ androeed.ru##.shad.padd20.FFF
 developer.android.com##.devsite-snackbar-snack
 developer.android.com##devsite-page-rating
 
+! from uBlock filters
+androidauthority.com##+js(href-sanitizer, a[href^="https://androidauth.wpengine.com/wp-json/api/advanced_redirect?ref="], ?ref)
     ! logos
 ||androidauthority.net/*/aa-green-logo.svg
 androidauthority.com##.aa-logo-container
@@ -5511,6 +5513,8 @@ discord-pc.ru$third-party
 diskpart.com##.js-toc-box
 diskpart.com###post-sidebar
 
+! from Ru AdList
+disqus.com##+js(href-sanitizer, a[href^="https://disq.us/url?url="], [title])
 disqus.com##.recommend-post-title
 ||disqus.com/listPromoted?  # from EasyList
 ! is in AdGuard
@@ -14721,6 +14725,8 @@ moylor.ru###block-right-fxd
 
 moyo.ua##.header__content:style(position:static !important)
 
+! from uBlock filters
+mozilla.org##+js(href-sanitizer, a[href^="https://app.adjust.com/"][href*="?redirect="], ?redirect)
 !jumping header
 ! in Firefox address support.mozilla.org is privileged.
 ! to disable, go to about:config ang remove support.mozilla.org from extensions.webextensions.restrictedDomains
@@ -16281,6 +16287,7 @@ omskinform.ru##.top_menu_div:style(position:static !important)
 omskinform.ru##.menu_table:style(margin-top:0px !important)
 omskinform.ru##.top_fon
 
+!||onclass.com/assets/incntx.js
     ! popups
 onclass.com##.modal-container
 onclass.com##.shade
@@ -29437,3 +29444,16 @@ vegastack.com##.gh-portal-triggerbtn-iframe
 cisa-service.ru##.widgets
 
 ||monday.com/prod/event
+
+scat.kz##.spark-footer
+scat.kz##div[data-component-id=SabreDxContainerFooter]
+
+! from uBlock filters
+zefoy.com##+js(set, firebase.analytics, noopFunc)
+
+! from uBlock filters
+pcgamingwiki.com##+js(href-sanitizer, a[href^="https://www.dpbolvw.net/click-"][href*="?url="], ?url)
+! from uBlock filters
+pcgamingwiki.com##+js(href-sanitizer, a[href^="https://greenmangaming.sjv.io/c/"][href*="?u="], ?u)
+
+sms-activate.org###popupDesctopApp > .modal-dialog
