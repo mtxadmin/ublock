@@ -120,6 +120,8 @@
 
 /modules/clean/ux_analytics/*$important  # from EasyPrivacy
 
+/modules/cookiebanner/*$important  # from EasyList
+
 /modules/custom/ex_omniture/*$important
 /modules/custom/wbnotifications/*  # from Adguard
 
@@ -159,7 +161,7 @@
 
 /modules/mod_bgbanner/*
 
-/modules/mod_jtwitter/*  # Drupal module
+/modules/mod_jtwitter/*  # Drupal module  # is in EasyList
 
 /modules/mod_socialmedialinks/*
     /mod_socialmedialinks/*  # is in 3 lists
@@ -859,6 +861,8 @@
 
 /plugins/dpSocialShare/*$important,~stylesheet  # is in Fanboy's
 
+/plugins/dreamgrow-scroll-triggered-box/*  # from Adguard
+
 /plugins/dsgvo-tools-cookie-hinweis-datenschutz/*  # from Adguard
 
 /plugins/duracelltomi-google-tag-manager/*$important
@@ -1499,6 +1503,8 @@
 /plugins/nevermind_reklama/*
 
 /plugins/newsletter
+    ! /plugins/newsletter-  # from EasyList
+    ! /plugins/newsletter/*  # from EasyList
 
 /plugins/newspack-popups/*  # from Adguard
 
@@ -1797,7 +1803,7 @@
 
 /plugins/rnbt-sticky-banner/*
 
-/plugins/rodo
+/plugins/rodo  # is in EasyList
 
 /plugins/rontar-blog-retargeting/*  # https://wordpress.org/plugins/rontar-blog-retargeting/
 /plugins/rontar-dynamic-retargeting-for-woocommerce/*  # https://wordpress.org/plugins/rontar-dynamic-retargeting-for-woocommerce/
@@ -2044,6 +2050,8 @@
 /plugins/strong-testimonials/*
 
 /plugins/st-user-messaging/*
+
+/plugins/surbma-yes-no-popup/*  # from EasyList
 
 /plugins/subscribe/*
 
@@ -2490,7 +2498,7 @@
 /plugins/wp-sticky-menu/*
 
 /plugins/wp-subscribe
-    ! /plugins/wp-subscribe-pro/*  # from Fanboy's
+    ! /plugins/wp-subscribe-pro/*  # from Fanboy's and EasyList
 
 /plugins/wp-super-popup/*$~stylesheet  # from EasyList
 /plugins/wp-super-popup-pro/*  # from EasyList
@@ -2555,7 +2563,7 @@
 
 /plugins/yyi-rinker/*  # from Adguard: /plugins/yyi-rinker/js/event-tracking.js
 
-/plugins/zigcookie/*  # is in Adguard
+/plugins/zigcookie/*  # is in Adguard and EasyList
 
 /plugins/zmpush-web-push-notifications/*$important  # also see zmpush.com
 
