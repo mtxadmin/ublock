@@ -175,9 +175,13 @@
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-~eapteka.ru,~expats.cz##[class*="callback"]:not(html):not(body):not(article)
+##[class*="callback"]:not(html):not(body):not(article):not(.has-validation-callback)
     ! Exclusions:
-    ! expats.cz: Job apply form - .default-form has-validation-callback
+    !
+    ! .has-validation-callback : 
+    ! eapteka.ru - from: has-validation-callback
+    ! expats.cz - job apply form: default-form has-validation-callback
+    ! saphyte.cloud - login form: login-form has-validation-callback
 ##[id*="callback"]:not(html):not(body):not(article)
 !
 !! very good and useful rules in general, but messengers, streaming and webinar services must be excluded
