@@ -1427,6 +1427,7 @@ androidauthority.com##.buy-holder
 
 androidcentral.com##.region-site-header
 androidcentral.com##.notices
+androidcentral.com##.sticky-nav
 
 androidfeel.ru##.header
 androidfeel.ru##.all-wrap:style(background:none !important; background-color:white !important)
@@ -3072,6 +3073,8 @@ bigdatacloud.com##.header-scrolled-contents:style(position:static !important)
 
 big-forum.ru###ipsLayout_header:style(background:none !important)
 
+bigin.com##.float-btn
+
 ||biglion.ru/*/conditional_banner_collection/$image
 ||biglion.ru/*/deal_offer/$image,important
 ||biglion.ru/*/deal_offer_category/$image,important
@@ -3249,25 +3252,27 @@ blackops.ca##.main-navigation > div > ul:style(border-top-color:#fff !important)
 blackops.ca##.main-navigation div ul:style(border-top-color:#fff !important)
 ! other
 
-! top
+    ! top
 blackview.hk##.breadcrumbs-box:style(position:static !important)
 blackview.hk##.header:style(display:block !important)
 blackview.hk##.live_stuck:style(position:static !important)
 blackview.hk##.ntheader:style(position:static !important)
 blackview.hk##.ntheader_wrapper:style(position:static !important)
 blackview.hk##.h__top
-! popups
+    ! popups
 blackview.hk##.mfp-container
 blackview.hk##.mfp-wrap
 blackview.hk##.mfp-bg
-! banners and promos
+    ! banners and promos
 blackview.hk##.pr_flash_sold
 blackview.hk##.sticky_atc_wrap
 blackview.hk##.lbc_nav
-! don't shake buttons
+blackview.hk##.banner-contanter
+    ! don't shake buttons
 blackview.hk##+js(remove-attr, data-ani)
-! other
+    ! other
 blackview.hk##.m-video
+blackview.hk##.product-label
 bbs.blackview.hk##.forum-permissions
 
 blackview-phone.com##.menu-label
@@ -5769,6 +5774,7 @@ dns-shop.ru,dns-shop.kz###id_spinner
 ! gifs
 dns-shop.ru,dns-shop.kz##.reaction-modal__list
 dns-shop.ru,dns-shop.kz##.reaction-modal__title
+dns-shop.ru,dns-shop.kz##.menu-contacts__apps
 
 dobraprace.cz##.jobOffer__box-jobs-odber
 
@@ -10563,6 +10569,14 @@ inpearls.ru###right-side-bar
 kladr.insales.ru/current_location.json
 /insales_counter.  # is in EasyPrivacy
 
+insightly.com##.updateAccount.modal
+insightly.com##.modal-backdrop
+! don't remove in general
+insightly.com##.upgrade-bar:has-text(limited plan)
+insightly.com###footer-logo
+insightly.com###appname:style(margin-left:60px !important)
+insightly.com###content:style(top:0px !important)
+
 inspectortools.com##.top-menu
 
 ||instrument.ms/*/SocialAccounts/$image
@@ -11177,6 +11191,10 @@ joom.com##[class*=goToApp_]
 
 jorgebernhardt.com##.has-fixed-header.mb-brand
 jorgebernhardt.com##.mb-header-holder
+
+jottech.app###popups-wrapper
+jottech.app##[id^=bgLayers_comp]
+jottech.app##.POPUPS_ROOT
 
 ||joyreactor.cc/pics/avatar/user/$image
 ||reactor.cc/pics/avatar/user/$image
@@ -12270,6 +12288,8 @@ blog.kvv213.com##hgroup
 ky24.ru##.alert-spinner
 
 kyky.org##.article__content__related
+
+kylas.io##.callIcon
 
 labaz.ru##.pinned2top.pin2top
 labaz.ru##.photo-wr::after
@@ -17580,6 +17600,9 @@ pobetony.expert##.widget_search
 # Исключение: трекинг почтовых посылок. А так правило неплохое
 @@||pochta.ru/*/js/tracking.
 
+pobuca.com##.widget-HowItWorksPricing
+pobu.ca##.hint-icon
+
 pochtabank.ru$3p  # ad scripts (loans)
 pochtabank.ru##div.geo-tile-cell
 
@@ -21148,6 +21171,8 @@ smartrecruiters.com##.alert:has-text(browser)
 
 smarttvnews.ru##.logo_section_wrap
 
+||smartycrm.com/crm/assets/*.mp3
+
 smesiteli.ru##header > .sm-bcolor-h-f > .container.row
 smesiteli.ru##.sm-navbar-fix:style(position:static !important)
 
@@ -22360,6 +22385,10 @@ systranbox.com##.header-middle-area
 systranbox.com##.BackTo
 systranbox.com###glt-translate-trigger
 
+    ! banners and promos
+tadviser.com##noindex > nofollow
+tadviser.com###ta-header-middle
+    ! other
 tadviser.ru##.abcfc
 
 take-profit.org###quotes
@@ -25186,6 +25215,7 @@ voentorgt.ru##.sockarta
 
 vogue.ru##div[class^=LogoWrapper]
 ||vogue.ru/js/NewsletterWithMutation
+! vogue.com|vogue.com.tw|vogue.co.jp|vogue.co.uk|vogue.de|vogue.es|vogue.fr|vogue.in|vogue.it|vogue.mx|vogue.ph
 
 voi.id##.see-also
 
@@ -27256,9 +27286,13 @@ support.zoho.com$domain=~zoho.com|~zohopublic.com|~zohostatic.com|~zohosupport.c
     ! banners and promos
 zoho.com##.zcrmhm-bansec
 zoho.com##.zcrm-cussec
+zoho.com##.testimonial-main-con
+zoho.com##.show_btn
     ! popups
+||zoho.com/sites/zweb/images/zoholics/$image
 zoho.com##.crm-pop-bg-frame
     ! other
+zoho.eu##.micsDiv
 
 zona.media##.mz-agent-banner
 
@@ -29074,12 +29108,12 @@ appbrain.com##.new-header-spacer
 
 xxxdan.com###content > p
 
-   ! banners
+    ! banners and promos
 wikiporn.tv##h2:has-text( Ads)
 wikiporn.tv##.bns-bl
 wikiporn.tv##.bn
 wikiporn.tv##.loading.initial
-   ! other
+    ! other
 
 freecoursesonline.me##.header-container
 freecoursesonline.me##.srr-vticker
@@ -29443,3 +29477,5 @@ pcgamingwiki.com##+js(href-sanitizer, a[href^="https://www.dpbolvw.net/click-"][
 pcgamingwiki.com##+js(href-sanitizer, a[href^="https://greenmangaming.sjv.io/c/"][href*="?u="], ?u)
 
 sms-activate.org###popupDesctopApp > .modal-dialog
+
+slashdot.org$3p  # from EasyList
