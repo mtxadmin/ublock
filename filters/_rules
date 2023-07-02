@@ -1112,7 +1112,7 @@ _banner_rotator.php  # from Adguard
 /jquery.iframetracker
 /jquery.modal.min.js
 /jquery.scrollto.js
-/jquery.smartbanner.js$important  # from Ru AdList, modified
+/jquery.smartbanner.js$important  # from Ru AdList and EasyList, modified
 /jquerymin18.js  # from Adguard
 /jsmd.min.js$important
 /js.ng/*  # from CJX's EasyList Lite, modified
@@ -1330,7 +1330,7 @@ _rebid.js  # from EasyList
     ! ||germancarforum.com/js/Siropu/AM/ads.min.js  # from Adguard
 /sitecatalyst/*  # from Fanboy’s
 /smart-app-banner/
-/smart-app-banner.js
+/smart-app-banner.js$important  # is in EasyList
 /smartBanner/*
 /smartbanner.js
 /smartbanner.min.js$important
@@ -2344,9 +2344,10 @@ _tizers.  # from Ru AdList
     ! microsoft.com - download button: .ow-cta-btns
     ! oracle.com: .two-column-cta-vertical in the menu
 ##[id*="-cta-"]:not(html):not(body):not(article)
-~freshworks.com,~myfreshworks.com##[class^="cta-"]:not(html):not(body):not(article)
+~freshworks.com,~google.com,~myfreshworks.com##[class^="cta-"]:not(html):not(body):not(article)
     ! Exclusions:
     ! freshworks.com, myfreshworks.com - (multiple cta classes inside the form) is a continue button there
+    ! google.com - many buttons on Google Earth landing page (https://www.google.com/intl/en/earth/ - yes, www.google.com domain
 ##[id^="-cta-"]:not(html):not(body):not(article)
     ! ###cta-container
     ! ionos.com##.cta-container
@@ -3954,7 +3955,7 @@ _cookie_law.js  # from EasyList
 /cookie-law-info-public.js  # from Adguard
 /cookielayover.  # from EasyList
 /cookie-line.  # from EasyList
--cookie-message.js  # from Adguard
+-cookie-message.js  # from Adguard and EasyList
 /cookie-notice/*$script,important  # from AdGuard and Fanboy's
 /cookienotice.  # is in EasyList, AdGuard and Fanboy's
 /cookie_notification.js
