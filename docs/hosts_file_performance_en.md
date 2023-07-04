@@ -23,4 +23,4 @@ It is worth noting that Windows 7 has already been withdrawn from support and do
 #### Update 2023:
 Now on Windows systems Microsoft Antivirus actively protests against changing of the hosts file. In case of a small file, it just throws a "virus-like" notification and suggests user to rollback hosts file to default. In case of a relatively big file, it may conflict with network services and therefore render the system unusable.
 
-So, don't directly change hosts file on Windows system. Microsoft wants their telemetry up and running. But you can use intermediate tool like Pi-hole, external DNS or some different solution.
+So, don't directly change hosts file on Windows system. Microsoft wants their telemetry up and running. But you can use intermediate tool like Pi-hole, external DNS or some different solution. If you have installed any other antivirus, then, of course, you can change hosts-file freely.
