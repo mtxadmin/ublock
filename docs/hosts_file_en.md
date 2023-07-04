@@ -8,7 +8,7 @@ Applying of the hosts file can be useful for general ad blocking in the system, 
 
 **Restrictions:**
 - The capabilities of the hosts file are limited only by blocking nodes by name
-- Wildcard characters and name masks are not supported
+- Wildcard characters and name masks are not supported (wildcards are supported in [this optimized version](https://github.com/mtxadmin/ublock/blob/master/docs/hosts_file_blokada_en.md))
 - In general, nothing else from the rich arsenal of browser-type banner cutters like uBlock Origin is supported
 - To change the hosts file, you need full rights in the system. Administrator on Windows, root on Android, jailbreak on iOS
 - When connecting via a proxy server, the hosts file will most likely not be used
