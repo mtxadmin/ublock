@@ -21,11 +21,12 @@ However, there are **advantages:**
 
 Thus, it is best to install **AND** an ad blocker in the browser, **AND** an application that updates the hosts.
 
-What application to install? Anyone that can download new versions of hosts from the Internet. Of course, it is much better if you can specify several sources at once to combine them. For Android, for example, you can look at [AdAway](https://github.com/AdAway/AdAway) - an open, free project. Or any other to your taste. Unlike the browser ad blocker, there are minimum requirements for such an application. For Windows you can use [hostsmgr](https://github.com/henrypp/hostsmgr) (console) or some autoupdating Powershell scripts. (Also, there is [HostsMan](http://www.abelhadigital.com/hostsman/) with GUI, but it doesn't work with Github files [[1]](https://github.com/crazy-max/WindowsSpyBlocker/issues/103))
+What application to install? Anyone that can download new versions of hosts from the Internet. Of course, it is much better if you can specify several sources at once to combine them. For rooted(!) Android you can look at [AdAway](https://github.com/AdAway/AdAway) - an open, free project. Or any other to your taste. Unlike the browser ad blocker, there are minimum requirements for such an application. But unrooted Android won't allow you to change hosts file.
 
-Also, there is mentions that Windows Defender could assume changing HOSTS-file with telemetry blocking as a bug/error: [[1]](https://www.bleepingcomputer.com/news/microsoft/windows-10-hosts-file-blocking-telemetry-is-now-flagged-as-a-risk/), [[2]](https://windowsreport.com/windows-hosts-file-modification-bug/)
+~~For Windows you can use [hostsmgr](https://github.com/henrypp/hostsmgr) (console) or some autoupdating Powershell scripts. (Also, there is [HostsMan](http://www.abelhadigital.com/hostsman/) with GUI, but it doesn't work with Github files [[1]](https://github.com/crazy-max/WindowsSpyBlocker/issues/103))~~
 
-Update 2023: Now it is not recommended to change Windows hosts file - this can make the system unstable. See note [here](https://github.com/mtxadmin/ublock/blob/master/docs/hosts_file_performance_en.md).
+~~Also, there is mentions that Windows Defender could assume changing HOSTS-file with telemetry blocking as a bug/error: [[1]](https://www.bleepingcomputer.com/news/microsoft/windows-10-hosts-file-blocking-telemetry-is-now-flagged-as-a-risk/), [[2]](https://windowsreport.com/windows-hosts-file-modification-bug/)~~
+Update 2023: Now it is not recommended to change Windows hosts file - this can make the system completely unstable. See note [here](https://github.com/mtxadmin/ublock/blob/master/docs/hosts_file_performance_en.md). Use Pi-Hole or any other external network solution instead.
 
 The address of the hosts file of this project:
 > ```
