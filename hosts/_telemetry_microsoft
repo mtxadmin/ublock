@@ -179,15 +179,15 @@ feedback.windows.com
 flex.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads  # is in Dan Pollock's hosts file and MVPS
 
 ! https://betanews.com/2018/07/31/all-the-websites-windows-10-connects-to-clean-install/  # "Apps and Windows Insider builds", or "Enables connections to Windows Update". Very suspicious.
-footprint.net
-!+  c.footprint.net
-!+      com.c.footprint.net
-!+          microsoft.com.c.footprint.net
-!+              mp.microsoft.com.c.footprint.net
-!+                  delivery.mp.microsoft.com.c.footprint.net
-!+                      dl.delivery.mp.microsoft.com.c.footprint.net
-!+                          tlu.dl.delivery.mp.microsoft.com.c.footprint.net
-! end of footprint.net
+! footprint.net - don't. Yes, it's suspicious and strange, but don't. See #58 and #66
+! !+  c.footprint.net
+! !+      com.c.footprint.net
+! !+          microsoft.com.c.footprint.net
+! !+              mp.microsoft.com.c.footprint.net
+! !+                  delivery.mp.microsoft.com.c.footprint.net
+! !+                      dl.delivery.mp.microsoft.com.c.footprint.net
+! !+                          tlu.dl.delivery.mp.microsoft.com.c.footprint.net
+! ! end of footprint.net
 
 g.msn.com  # this subdomain (among others) often cited in forum topics about blocking skype ads  # is in Dan Pollock's hosts file
 g00.msn.com
