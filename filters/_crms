@@ -1,0 +1,469 @@
+﻿!! It is a sublist of Yet another small uBlock filter list
+!
+! This list contains some services, which do usertracking, 
+! but they are useful so it is undesirable to block them completely on the host level.
+! For example, IP-address detection services, or some CRMs
+!
+! Such services are restricted here to not have third-party browser queries, allowing first-party
+!
+! Only 3p-rules here. See cosmetic rules in _sites
+!
+! Something doesn't work? Something is missing? Please, feel free to write about it here:
+! https://github.com/mtxadmin/ublock/issues/new
+
+!! domains
+
+1cont.ru$3p  # ad scripts
+
+24molnia.com$3p,script  # cross-site ad scripts
+
+24timezones.com$3p  # time informer. 3p scripts
+
+2ip.ru$3p  # ad cookies  # also is in Ru AdList
+2ip.fun$3p  # from ShadowWhisperer's Tracking
+2ip.io$3p
+2ip.me$3p
+2ip.ua$3p from GoodbyeAds
+@@||2ip.ua/images/*.png
+
+3rs.ru$3p  # "-2013"  # from Adguard
+
+4u2movie.com$3p,media,redirect=noopmp3-0.1s  # from uBlock filters
+
+a2ztechworld.com$3p  # from uBlock filters  # not ad network
+
+add.pics$3p,script  # from uBlock filters
+
+adp.com$3p  # ad redirects, but..  # from GoodbyeAds
+adp.ca$3p  # from GoodbyeAds
+adpemploymentreport.ca$3p  # adp.ca
+adphrassist.com$3p  # adp.ca
+
+aiware.com$3p  # ad scripts
+
+allnewspoint.com$3p  # from Adguard
+
+amocrm.ru$3p  # 3p ad scripts  # https://forms.amocrm.ru/forms/assets/js/ga_utm_cookies.js
+
+amplifr.com$3p  # "Autoposting and analytics"
+
+analyzethis.ru$3p  # from Adguard
+
+appoptics.com$3p
+
+ashurbeyli.ru$3p  # 3p ad scripts
+
+audioeye.com$3p  # 3p scripts
+
+autodealer.ru$3p  # from Adguard
+
+averin.pro$3p
+
+avia.ru$3p  # from Adguard
+
+aviabay.ru$3p,all  # from Ru AdList: |ws*//*aviabay.ru^
+
+bagirastyle.ru$3p  # ad scripts  # is in Adguard
+
+bce-tyt.ru$3p
+
+beboss.ru$3p  # from Adguard
+
+besmarty.ru$3p  # spam
+
+bestplaces.net$3p,important
+
+beyondsecurity.com$3p  # 3p images
+
+billiger.de$3p  # 3p scripts
+
+bitrix.info$3p  # ad scripts from Bitrix  # is in RU AdList and Adguard
+
+bizbuysell.com$3p
+
+bizebra.me$3p  # ad xhrs  # paid movies (megogo)
+
+bloggerku.com$3p  # ad scripts
+
+booked.net$3p
+
+boosty.to$3p  # монетизация VK от mail.ru
+
+burdastyle.ru$3p  # ad xhrs
+
+buymeacoffee.com$3p  # ad popups  # domain should not be blocked, see #19 and #50 (it happens...)
+
+capterra.com$3p  # PerimeterX  # it turns out, it has useful CRM reviews
+
+||cdn13.com^$script,3p,domain=~leafy.pro  # from EasyList  # ad scripts  # don't block videos from there
+
+clicksondelivery.com$3p  # ad scripts. Also redirects but they (maybe) ok
+
+@@||cogmento.com/api/1/campaigns/$first-party
+
+coincap.io$3p
+
+coingecko.com$3p  # is in Ru AdList
+
+contentful.com$3p  # ad xhrs
+
+credible.com$3p
+
+csgo.tm$3p  # money for nothing
+
+currencyrate.today$3p
+
+customdonations.com$3p
+
+cyble.io$3p  # captcha to enter
+cyble.ai$3p  # captcha to enter
+
+cypressinfo.org$script,3p
+
+datadoghq.com$3p  # ad xhrs
+datalock.ru$3p
+
+ddestiny.ru$3p  # "-2018 game developers"  # from Adguard
+
+!ddos-guard.net$3p - in general, don't
+
+digicert.com$3p  # ad scripts  # is in EasyPrivacy
+
+digift.ru$3p  # ad scripts  # "Электронные подарочные карты"
+
+! money for nothing. Later update: activation codes etc. are there too. Linked to plati.market
+digiseller.ru$domain=~digiseller.ru|~plati.market|~wmcentre.net  # 2023-02: current main domains
+digiseller.com$3p
+digiseller.market$3p
+mydigishop.biz$3p  # old, parked
+#i-digiseller.ru$3p   #old, closed
+mydigiseller.ru$3p
+plati.ru$3p  # root redirects to plati.market
+plati.market$3p
+plati.com$3p  # root redirects to plati.market
+plati.io$3p  # root redirects to plati.market
+platiz.com$3p
+666how.com$3p  # platiz.com: "666how.com is a global website that attracts thousands of people to participate in. Everyone has a common goal: 666how.com to teach anyone in the world how to do anything"
+ggsel.com$3p  # digiseller
+wmcentre.net$3p  # digiseller
+
+dikidi.net$3p  # "Online booking beauty salons"
+
+direct-cloud.me$3p  # from uBlock filters: *$3p,domain=direct-cloud.me
+
+direct-credit.ru$3p
+dc2b.ru$3p
+
+market.dota2.net$3p  # money for nothing
+
+drako.ru$3p
+
+ege-study.ru$3p  # from Ru AdList, modified
+
+# e-katalog.ru & nadavi.ru
+e-katalog.ru##.fix-shadow.fix-preset
+e-katalog.ru$3p,important  # ad scripts from e-katalog.ru
+nadavi.ru$important  # задолбали. Также см. в _aliexpress
+nadavi.net$important  # from Adguard
+
+embrace.io$3p
+
+english-tm.ru$3p  # spam
+
+enjoysurvey.com$3p
+
+ethplorer.io$3p  # "Ethereum Tokens Explorer"
+
+exdiy.ru$3p  # Aliexpress image banners
+
+falconsender.ru$3p # "e-mail рассылки"
+
+fanat.kz$3p  # from Ru AdList
+
+fanatical.com$3p  # ad cookies
+
+fcase.io$3p
+
+feedburner.com$image,3p  # is in Fanboy's
+
+fluidsurveys.com$3p  # FluidSurveys - closed (joined Surveymonkey.com)
+
+forte.kz$3p  # скрипты рассрочки
+
+fortrader.org$3p  # ad scripts  # transferred from marketing
+
+freshdesk.com$important,domain=~freshdesk.com|~freshdes.net|~freshworks.com|~freshsales.io  # ad crm
+freshdes.net$domain=~freshdesk.com|~freshdes.net|~freshworks.com|~freshsales.io
+freshworks.com$domain=~freshdesk.com|~freshdes.net|~freshworks.com|~freshsales.io
+freshsales.io$domain=~freshdesk.com|~freshdes.net|~freshworks.com|~freshsales.io
+widget.freshworks.com$3p,important
+
+furnituremalldirect.com$script,3p  # ad scripts (furniture)
+
+gamexp.ru$3p  # ads
+
+seal.geotrust.com$3p
+
+getfeedback.com$3p  # surveys  # "Your customers are happy"
+
+gifovina.ru$3p
+
+gifts.tm$3p  # money for nothing
+
+glitch.me$3p  # many spam subdomains
+
+! disney's marketing
+go.com$3p
+!global.go.com/stat/dolWebAnalytics.js
+disney.io$3p
+disney.com$3p
+
+goodvas.com$3p  # МТС English (from mts_podpiski). Do not block entirely.
+
+gordischool.ru$3p  # spam  # getcourse.ru platform
+
+greywizard.com$3p
+greywizard.net$3p
+
+groenlandselskab.dk$script,3p
+
+group-ib.com$3p  # 3p ad xhrs
+group-ib.ru$3p,important  # is in Adguard and EasyPrivacy
+
+grouple.co$3p  # ads
+
+groupon.com$3p  # closed?  # from Fanboy's
+
+gruen.net$3p
+
+grupazpr.pl$3p  # ad scripts  # falls to Ru AdList rule: /^https?:\/\/[^/]+\/[a-z0-9]{15,}(\?hope=.*)?$/$script
+
+gumroad.com$3p  # "Creators deserve to get paid for their work  Start selling  Escape your 9-5 desk job"  # "Analytics and customer management"
+
+handsetdetection.com$3p
+
+hentaibaka.one$3p  # from uBlock filters
+
+hitex.com.ua$3p  # from Ru AdList
+
+host-tracker.com$3p  # from MVPS and Ru AdList  # moved to 3p
+
+@@||hotbot.ai/widget.js  # booking service
+
+hotdeals360.com$3p  # promoted widget with ad redirects to pricee.com/api/redirect/t.php
+
+! Hubspot: "All-in-one marketing software", "Inbound Marketing, Sales, and Service Software", "platform of marketing, sales, customer service, and CRM software"
+hubspot.com$important,script,domain=~hubspot.com|~hubspot.net|~hsappstatic.net  # Hubspot - Tracker  # from Quidsup NoTrack-Blocklist  # don't block css
+hubspot.net$important,script,domain=~hubspot.com|~hubspot.net|~hsappstatic.net  # Hubspot - Tracker  # from Quidsup NoTrack-Blocklist  # don't block css
+hsappstatic.net$domain=~hubspot.com|~hubspot.net|~hsappstatic.net
+
+ingka.com$domain=~ikea.com|~ingka.com  # 3p cookies  # IKEA domain
+
+infiplay.ru$3p  # from Adguard
+
+! https://thebell.io/kto-budet-uchityvat-vsyu-reklamu-v-internete-chto-budet-s-vizami-i-kak-raskryt-moshennichestvo-po-fotografii
+interactivead.ru$3p  # possible 3p  # https://interactivead.ru/wp-content/uploads/2022/08/arir22_rkn.pdf
+
+interserver.net$3p  # from uBlock filters
+
+intimshop.ru$script,3p  # is in Adguard
+
+investopedia.com$3p  # click.investopedia.com  # transferred to 3p
+investopedia.fr$3p
+
+ipaddress.com$3p  # from GoodbyeAds: ipaddress.com
+
+ipapi.co$3p
+
+ipfind.com$3p
+ipfind.co$3p
+
+ipgeolocation.io$3p
+
+ipify.org$3p,important
+
+ipinfo.io$3p,important  # in Ru AdList, EasyPrivacy, ShadowWhisperer's Tracking
+ipinfo.info$3p  # from ShadowWhisperer's Tracking
+
+iplocation.com$3p  # from ShadowWhisperer's Tracking
+iplocation.net$3p  # from ShadowWhisperer's Tracking
+
+!itmatrix.ru$script,3p  # don't block, even scripts
+
+jango.com$3p  # from EasyList  # radio, do not block entirely
+
+justbutik.ru$3p  # ads
+
+justclick.ru$3p  # "Сервис для продажи курсов онлайн"
+justclick.ru#@#.subscribe-form
+@@||justclick.ru/subscribe/process
+
+kaspersky-labs.com$3p
+	! https://ru.fp.kaspersky-labs.com/cld_track?cid=
+	! https://ru.fp.kaspersky-labs.com/oxwdsq?cid=
+
+kavkazweb.net$3p  # from Adguard
+
+magnet.kiev.ua$3p  # is in Ru AdList: ||magnet.kiev.ua^$domain=~magnet.kiev.ua
+meganews.kiev.ua$domain=~meganews.kiev.ua  # is in Ru AdList
+
+kinoafisha.info$3p  # ad xhrs
+
+kinobilety.net$3p  # ads
+
+ko-fi.com$3p  # "Byu me a coffee" widgets
+
+kraaft.co$3p  # webflow  # "La messagerie de talkie-walkie pour tracer vos opérations"
+
+kununu.com$3p  # job site? 3p scripts
+
+ladoshki.com$3p  # "-2015"  # from Adguard
+
+leadberry.com$3p  # from Adguard: ||leadberry.com/trackers/$third-party
+
+leadconnectorhq.com$3p  # 3p ad scripts  # is in ShadowWhisperer's Tracking
+
+lfirmal.com$3p  # ads
+
+lightyeardocs.com.au$3p
+
+likes.ru$3p  # likes.ru/js/widget/build/widget.js
+
+linkedin.com$3p,script
+licdn.com$domain=~linkedin.com  # linkedin scripts on third-party sites  # 3p ad scripts  # linkedin host  # snap.licdn.com/li.lms-analytics/insight.min.js
+
+linternaute.com$3p  # from uBlock filters
+
+long.xxx$3p  # from uBlock filters
+
+lowendbox.com$3p  # from uBlock filters
+
+marketwatch.com$3p  # from MVPS
+s.marketwatch.com$domain=~marketwatch.com  # from MVPS
+mktw.net$domain=~marketwatch.com  # from Peter Lowe's hosts file
+
+mayka.kz$3p  # from Adguard
+mediafort.ru$3p
+
+medialeaks.ru$3p  # ad xhrs
+
+! пока вынесено из маркетинга. Посмотрим.
+mediametrics.ru$important,3p  # yadro, mediametrics
+
+medinfo.ua$3p  # ad redirects. And fake news, it seems
+
+megabook.ru$3p  # km.ru side project
+
+meshok.net$3p  # ad cookies
+
+metricskey.com$3p  # from Adguard
+
+mfd.ru$3p
+
+miniclip.com$3p  # ad scripts
+
+monitorus.ru$3p  # uptime.monitorus.ru  # from Adguard
+
+muz-tv.ru$3p
+
+mysearches.co$3p  # 3p scripts. Possible marketing or scam
+
+ndtv.com$3p  # ad video popups
+ndtvimg.com$domain=~ndtv.com
+
+netlify.app$script,3p  # ad scripts  # is in GoodbyeAds  # don't block images and css, only scripts
+# do not block entirely. At least, not css. 
+netlify.com$3p,important,script,image  # ad scripts. Shopify but not only.  # "Increase your conversion rates, customize your user experience and experiment with pricing, layouts and promotions"  #disco-flipclock.netlify.com/main.js  #shopify-backorder-3c367a.netlify.com  #https://identity.netlify.com/v1/netlify-identity-widget.js
+
+netology.ru$3p  # ads
+
+netscout.com$3p
+arbor.net$3p
+netscoutindia.com$3p
+netscout.in$3p
+
+nifigas.ru$3p
+
+ninjaworld.ru$3p
+
+websecurity.norton.com$3p  # is in EasyPrivacy and Fanboy's
+
+ogurcova-portal.com$3p
+
+onetrust.com$3p,important  # hmm... 3p scripts...
+
+online-exchange-rate.info$3p
+
+oraclecloud.com$3p  # ad scripts
+
+otto.de$3p  # from Blogscan
+
+otus.pw$3p  # spam
+
+pervoevtoroe.ru$3p  # from Ru AdList
+
+pingdom.com$3p  # from The SNAFU Blocklist  # moved to 3p
+
+pipedrive.com$3p  # "CRM-программа для продаж"
+!leadbooster-chat.pipedrive.com
+pipedriveassets.com$domain=~pipedrive.com
+
+plus500.com$3p
+
+@@||pochta.ru/*/js/tracking.  # Исключение: трекинг почтовых посылок. А так правило неплохое
+pochtabank.ru$3p  # ad scripts (loans)
+
+pocketsurvey.com$3p
+
+podari-zhizn.ru$3p
+###widget-grantlife
+
+popsters.ru$3p  # transferred from _marketing
+
+porn300.com$3p  # from GoodbyeAds and EasyList  # false positive? but it is in several lists. Transferred to 3p
+
+romankapa.ru$3p  # spam  # now empty :-)
+
+sematext.com$3p  # Sematext - Tracker  # from Quidsup NoTrack-Blocklist  # moved to 3p
+
+slashdot.org$3p  # from EasyList
+
+softwareadvice.com$3p  # ad redirects  # "Get real advice"  # it turns out, it has useful CRM reviews
+
+sputnik8.com$3p  # 3p ad cookies
+
+synergyacademy.com$3p  # spam
+
+uniter.ai$3p  # spam
+
+vkrugudruzei.ru$3p  # km.ru side project
+
+yourcodereview.com$3p  # spam
+
+! not very marketing, but sometimes embedded (chat, as I remember)
+zoho.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zoho.eu$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zoho.jp$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zoho.com.au$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zoho.in$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+bigin.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zohocdn.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zohopublic.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net  # m?
+zohosalesiq.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net  # m?
+zohostatic.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zohostatic.eu$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zohosupport.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zohowebstatic.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zcsend.net$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+! some subdomains
+!campaigns.zoho.com
+!chat.zoho.com
+!connect.zoho.com
+!contacts.zoho.com
+!creator.zoho.com
+!crm.zoho.com
+!iplocation.zoho.com
+!salesiq.zoho.com
+!support.zoho.com
+
+!! todo
