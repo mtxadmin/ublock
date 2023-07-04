@@ -286,19 +286,21 @@ vk.com,vk.ru##+js(href-sanitizer, a[href*="/away.php?to="], ?to)
 !
     ! popups
 ! vk.com##.box_body:has(.vk_connect_policy_notice_box)  # test remove 2020-07
-! vk.com###box_layer_wrap  # test remove 2020-07
-!vk.com###box_layer_bg  # test remove 2020-07
+!
+! popup class. In general, do not block it, popups are used in GUI
+!vk.com###box_layer_wrap
+vk.com###box_layer_wrap:has(.UnauthActionBoxContainer)
+||vk.com/images/layer_bg_black.png
+vk.com##.UnauthActionBoxContainer
+!
+! this is empty backdrop, safe to remove
+vk.com###box_layer_bg
+!
 !vk.com##.scroll_fix_wrap - don't, that's not
 ! is in Ru AdList and Adguard
 vk.com###cookies_policy_wrap
-||vk.com/images/layer_bg_black.png
-vk.com##.UnauthActionBoxContainer
 ! Ru AdList exclusion
 vk.com#@#div[id$="notifiers_wrap"]
-    ! popup overlay
-! don't block so general. Popups can be sometimes useful
-!vk.com###box_layer_bg
-!vk.com###box_layer_wrap
     ! banners and promos
 vk.com##.audio_promo
     ! share scripts and buttons
