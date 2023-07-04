@@ -567,6 +567,7 @@ analytics.slashdotmedia.com$important  #[Piwik.Analytics]  # is in MVPS
 analytics.sports.ru  # from Ru AdList
 analytics.spotify.com  # Spotify - Tracker  # from Quidsup NoTrack-Blocklist
 analytics.sydney.edu.au  # from Adguard
+analytics.tecart.de  # analytics.tecart.de/matomo.js
 analytics.technopoint.ru
 analytics.techtarget.com
 analytics.tiktok.com  # from Dan Pollock's hosts file
@@ -629,9 +630,10 @@ beacon.wikia-services.com  #https://beacon.wikia-services.com/__track/
 ||browser-update.  # from uBlock filters - Badware: ||browser-update.*.top^
 
 ! chatbots and noisy consultants on sites
-/chat.$domain=~bizon365.ru|~openai.com|~domclick.ru|~etutorium.com|~worknf.ru
-! Exclusions:
-! openai.com - chatbot, not embedded, just single-user AI
+/chat.$domain=~bizon365.ru|~domclick.ru|~etutorium.com|~kuki.ai|~openai.com|~worknf.ru
+    ! Exclusions:
+    ! kuki.ai - chatbot, not embedded, just single-user AI
+    ! openai.com - chatbot, not embedded, just single-user AI
 chat.buymeacoffee.com
 chat.digiseller.ru
 chat.olx.kz
@@ -953,6 +955,7 @@ go.microsoft.com  # from iam-py-test's anti-redirectors
 go.mindmanager.com
 go.mitchell1.com  # is in EasyPrivacy and Adguard
 go.mysku.me  # internal URL shortener which steals cashback
+go.salesscreen.com
 go.skillfactory.ru
 go.skimresources.com  # from iam-py-test's anti-redirectors
 go.sky.pro
@@ -1379,6 +1382,9 @@ piwik.proxmox.com
 piwik.syloe.com
 piwik.wildberries.ru
 piwik.wsws.org  #[Piwik.Analytics]  # is in MVPS
+
+/piwik2.  # is in EasyPrivacy
+piwik2.firmao.net
 
 /pixel.
 pixel.4players.de  # from Adguard
@@ -2280,6 +2286,7 @@ widget.afisha.yandex.ru
 widget.bitay.com  # from Adguard
 widget.cdek.ru
 widget.cloudpayments.ru
+widget.freshworks.com
 widget.getgist.com
 widget.golfscape.com  # from EasyList
 widget.instagramm.ru
@@ -2679,6 +2686,8 @@ mailmunch.s3.amazonaws.com  # from Ru AdList
 paywall-ad-bucket.s3.amazonaws.com$important  # from Adguard
 syncplusconfig.s3.amazonaws.com  # from BlockListProject/SmartTV
 twitter-badges.s3.amazonaws.com  # from Ru AdList
+
+gso.amocrm.com  # from EasyList
 
 crta.and.co.uk  # from EasyPrivacy
 
@@ -3761,6 +3770,8 @@ cas.livemaster.ru  # from GoodbyeAds
 
 ttauri.livescience.com  # from Adguard
 
+sentry-relay.lmru.tech  # leroymerlin.ru sentry
+
 web-push.test.loccitane.com  # from GoodbyeAds
 
 pion.loveserials.net  # from Adguard
@@ -3887,6 +3898,8 @@ tc.mybb.ru  # from Ru AdList
 tg.mybb.ru  # from Ru AdList
 
 api.mycdn.me  # mycdn.me - VK videos, api.mycdn.me - their analytics
+! Hmm... Maybe it should be removed? I discovered an exclusion
+! and, yes: ASN	47764 Mail.Ru LLC
 
 familygiftlove.myshopify.com  # from Energized Blu
 
@@ -4416,6 +4429,8 @@ clancy.spiceworks.com  # is in EasyPrivacy
 gekko.spiceworks.com$important  # is in Adguard And EasyPrivacy
 
 rb.sport-express.ru  # from Adguard and Ru AdList
+
+im-sentry.sportmaster.ru
 
 senoval.sports.ru  # from Ru AdList
 
