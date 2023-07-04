@@ -1104,9 +1104,10 @@ $removeparam=ranSiteID  # from DandelionSprout's URLShortener
 
 # recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
-$removeparam=ref,important,domain=~flowlu.com
+$removeparam=ref,important,domain=~flowlu.com|~privyr.com
     ! Exclusions:
     ! flowlu.com - ref is a part of web engine, suddenly.
+    ! privyr.com - [at least, internal] ref is needed for signup
     !
     ! @@||gamesplanet.com^$removeparam=ref  # from DandelionSprout's URLShortener
     ! /?ref=tg$document,removeparam=ref  # from Ru AdList
