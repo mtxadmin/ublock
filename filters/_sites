@@ -8018,6 +8018,7 @@ freetutsdownload.com##a[href*="grunoaph.net"]
 
 ||fresher.ru/widget/
 
+widget.freshworks.com$3p,important
 freshworks.com##.inpage-scroll:style(position:static !important)
 freshworks.com##.banner-default
 
@@ -9433,6 +9434,7 @@ hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.k
     ! banners and promos
 #hh.ru##.noprint - don't
 hh.ru##.resumesearch__registration
+hh.ru##.bloko-button:has-text(Рекомендация)
 hh.ru##.app-banner
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.banner-substrate
 ! from RuAdlist
@@ -20336,6 +20338,7 @@ sbcode.net##.md-sidebar:style(position:static !important)
 ||sberbank.ru/*/error.js
 #||sberbank.ru/PL/lib.analytics/   # там только json грузится, его не надо
 ||sberbank.ru/lib.analytics/  # всё работает
+||sberbank.ru/metrics/  # 3p post  # Adguard has more specific rule: ||sve.online.sberbank.ru/metrics/partners
 ||sberbank.ru/CMS/CAMPAIGNS/$image
 ||sberbank.ru/CAMPAIGN/$image
 ||sberbank.ru/CMS/PRELOGINBANNERS/  # ahrs and images
@@ -21655,12 +21658,19 @@ sport-marafon.ru##.footer-author
 sport-marafon.ru##.find-error__message
 sport-marafon.ru##.blog-info
 
+||sportmaster.ru/web-api/v1/brands/
     ! header
 sportmaster.ru##.headerBar:style(position:static !important)
 sportmaster.ru##.sm-header__banner
 sportmaster.ru##.smHeaderPhone
+sportmaster.ru##.sm-header__sticky-wrapper:style(position:static !important)
+sportmaster.ru##.sm-header:style(padding-bottom:0px !important)
     ! popups
 sportmaster.ru##sm-changecity-popup-mini
+    ! banners and promos
+sportmaster.ru##.yk_above_rotator
+sportmaster.ru##.sm-banner
+sportmaster.ru##.sm-header-main-banner
     ! other
 sportmaster.ru##.custom-evil-content
 sportmaster.ru##.sp-review-recommended
@@ -25555,6 +25565,11 @@ w3schools.com###lowerfeatureshowcase
 
 ||waaw.tv/cdn-cgi/trace
 
+    ! popups
+wakeupsales.com##.footer-popup
+wakeupsales.com###page-loader
+    ! other
+
 ||walletone.com/scripts/jstelemetry.js
 
 wantedbabes.com###main-menu
@@ -25685,6 +25700,7 @@ webfaction.com##.notify
 # d3e54v103j8qbb.cloudfront.net$domain=~webflow.com - don't, it is used on other sites too
 # website-files.com$script,domain=~webflow.com
 ##.w-webflow-badge
+webflow.com##.exit-modal_wrap
 
 webfx.com###footer-contact
 webfx.com###footer-form
@@ -27291,6 +27307,8 @@ zoho.com##.show_btn
     ! popups
 ||zoho.com/sites/zweb/images/zoholics/$image
 zoho.com##.crm-pop-bg-frame
+    ! top
+zoho.*##.stick + .lcrm-details-sections:style(padding-top:30px !important)
     ! other
 zoho.eu##.micsDiv
 
@@ -29479,3 +29497,101 @@ pcgamingwiki.com##+js(href-sanitizer, a[href^="https://greenmangaming.sjv.io/c/"
 sms-activate.org###popupDesctopApp > .modal-dialog
 
 slashdot.org$3p  # from EasyList
+
+appsumo.com###pdpTabsParent:style(position:static !important)
+appsumo.com##.pdp-buynow-container
+appsumo.com##.pdp-interaction-container
+
+assistive.site##.subheader:style(position:static !important)
+
+firmao.net###callBackWrapper
+
+saas-alternatives.com##.logo_image_mobile
+saas-alternatives.com###content-sticky-panel
+saas-alternatives.com##.floating
+
+omnibasis.com##+js(cookie-remover, omnitrack)
+
+totvs.com##.whatsapp-btn
+
+cosmoscrm.com##.ls-animating
+
+djaboo.com##.betterdocs-widget-container
+
+seotoaster.com##.sms-popup-wrapper
+
+seosamba.com##.sms-popup-wrapper
+
+capterra.com##[data-testid="knowledge-base-content-cta"]
+
+popl.co##.recommendation-modal__container
+popl.co##.recommendation-modal__backdrop
+popl.co##.promo_banner
+
+heymarket.com###heymarket-widget
+
+gridlex.com##.testimonials-carousel
+gridlex.com##.owl-carousel
+
+privyr.com##.transition-all:has(.fa-rocket-launch)
+
+fitsmallbusiness.com##.content-disclosure
+
+crmgrow.com##.loader
+crmgrow.com##body > *:style(filter:none !important)
+
+! Raleway font again
+ubuntupit.com##*:style(font-family:initial !important)
+
+softwaresuggest.com##.sslogo
+
+attio.com##.bg-gradient-radial.absolute
+
+itqlick.com##.typeform-share
+
+||office24by7.com/assets/js/floating-totop-button.min.js
+office24by7.com##.ofc__whatsapp
+
+atmosaicrm.com##.modal
+
+espocrm.com###privacy-reminder
+
+trustradius.com##[class^=FirstVisitTooltip]
+
+! popup
+halerp.com###commandbar
+halerp.com##.alert
+
+wethod.com##.backdrop
+wethod.com##body:style(background-color:initial !important)
+
+growsmartmarketing.com##chat-widget
+growsmartmarketing.com##.wpcp-image-carousel
+growsmartmarketing.com##.et_pb_slider
+
+vogsy.com##.elementor-background-overlay
+
+tecart.de##.u-go-to
+
+saphyte.cloud##.uk-slider
+saphyte.cloud##.alert-box
+! gif-like
+saphyte.cloud##video
+    ! remove paywalled options
+saphyte.cloud##[href="/admin/form-builder"]
+saphyte.cloud##[href="/admin/custom-fields"]
+saphyte.cloud##[href="/admin/workflows"]
+
+! popup
+eapteka.ru##.headerCity-root-bubble--adaptive
+
+! top menu hides somehow
+tabasco.com##+js(rc, product__header-image)
+
+! popup
+centrahubcrm.com##.circle-ripple
+
+! popup
+salezshark.com###whatsapp.whats-app
+
+bluecamroo.com##.tryFeature
