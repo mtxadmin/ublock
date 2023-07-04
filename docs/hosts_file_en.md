@@ -21,7 +21,13 @@ However, there are **advantages:**
 
 Thus, it is best to install **AND** an ad blocker in the browser, **AND** an application that updates the hosts.
 
-What application to install? Anyone that can download new versions of hosts from the Internet. Of course, it is much better if you can specify several sources at once to combine them. For rooted(!) Android you can look at [AdAway](https://github.com/AdAway/AdAway) - an open, free project. Or any other to your taste. Unlike the browser ad blocker, there are minimum requirements for such an application. But unrooted Android won't allow you to change hosts file.
+What application to install? Anyone that can download new versions of hosts from the Internet. Of course, it is much better if you can specify several sources at once to combine them. 
+
+### Android
+
+For rooted(!) Android you can look at [AdAway](https://github.com/AdAway/AdAway) - an open, free project. Or any other to your taste. Unlike the browser ad blocker, there are minimum requirements for such an application. But unrooted Android won't allow you to change hosts file.
+
+### Windows
 
 ~~For Windows you can use [hostsmgr](https://github.com/henrypp/hostsmgr) (console) or some autoupdating Powershell scripts. (Also, there is [HostsMan](http://www.abelhadigital.com/hostsman/) with GUI, but it doesn't work with Github files [[1]](https://github.com/crazy-max/WindowsSpyBlocker/issues/103))~~
 
@@ -29,9 +35,10 @@ What application to install? Anyone that can download new versions of hosts from
 
 Update 2023: Now it is not recommended to change Windows hosts file - this can make the system completely unstable. See note [here](https://github.com/mtxadmin/ublock/blob/master/docs/hosts_file_performance_en.md). Use Pi-Hole or any other external network solution instead.
 
+## Resume
+
 The address of the hosts file of this project:
-> ```
-``https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt``
-> ```
+
+**https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt**
 
 Please note that there is no point in adding this file to uBlock Origin, although it understands this format - it’s better to use [full version of subscription](../README.md) for this.
