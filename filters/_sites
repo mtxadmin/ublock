@@ -10831,6 +10831,8 @@ ja-zdorov.ru###sidebar
 
 jeffbrown.tech##.background-image-page-header-overlay
 
+jeffsu.org##.absolute
+
 jelectro.ru##.logo_mini
 jelectro.ru##.rating_wrapper
 
@@ -15387,9 +15389,25 @@ notik.ru###slider-wrapper:has(.bnblock)
     ! other
 
 ||notion.site/api/v3/ping
+||notion.so/api/v3/recordPageVisit
+||notion.so/api/v3/getUserAnalytics
+||notion.so/tutorial/ada-1.png
+    ! popups
+notion.so##.notion-overlay-container > div>div>div:has-text(cookies)
+    ! top
 ! exclusion?
 notion.so##.logo
 notion.site##.notion-topbar
+    ! layout
+! blocks
+notion.so##div:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-left:0px !important; margin-right:0px !important)
+! some strange empty div, which prevents selection
+notion.so##div:matches-css(position: absolute):has-text(/^$/)
+! right table
+notion.so##.notion-frame > div > div > div:style(height:auto !important)
+    ! other
+
+
 
 nou-centr.ru##.brand-text
 
@@ -16646,6 +16664,8 @@ pcloud.com##.usedby.reviews_bar
 ||pcmag.com/pcmag.js?url=
 ||pcmag.com/user/eu-check
 ||pcmag.com/*/pcmag_navlogo.png
+||pcmag.com/imagery/series/$image
+||pcmag.com/images/pcmag.svg
 ! is in Adguard
 pcmag.com##aside[class^="zmgad-"]
 pcmag.com##.leading-none
@@ -19663,6 +19683,12 @@ s7.ru##.white-footer:style(position:static !important)
 sa1nikov.ru##div > [href^="https://sa1nikov.ru/book/"]
 sa1nikov.ru##.centered-text-area
 
+    ! popups
+||saasadviser.co/front_end/vendor/popper/
+saasadviser.co##.initexit-benefits
+saasadviser.co##.initexit-popup
+    ! other
+
 safari.bg##.categoryInfo
 
 safe-buy.ru##.part
@@ -21227,6 +21253,8 @@ splitbrain.org##header > section
 splunk.com##.talk-sales
 splunk.com##.splunk_products
 splunk.com##.subnav-fixed:style(position:static !important)
+
+||splunkcloud.com/services/collector/  # is in EasyPrivacy
 
 spod.com$3p
 
@@ -29151,3 +29179,7 @@ centrahubcrm.com##.circle-ripple
 salezshark.com###whatsapp.whats-app
 
 bluecamroo.com##.tryFeature
+
+empoweredcrm.io###overlay
+
+||fleeg.com/wp-content/themes/fleeg/custom/js/adiciona_link_copy.js  # site block copypaste
