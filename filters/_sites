@@ -16480,11 +16480,11 @@ ozon.ru##.vue-portal-target:has-text(опрос)
 ||ozone.ru/s3/cms/$image
 ||ozone.ru/assets/marketing
 ||ozone.ru/s3/video/cover/$image
-ozon.ru##div[data-widget="banner"]
+ozon.ru##[data-widget="banner"]
 ozon.ru##a[href^="/travel/info/hotels-cashback/"]
-ozon.ru##div[data-widget="objectBannerList"]
-ozon.ru##div[data-widget="webPremiumPointsInfo"]
-ozon.ru##div[data-widget="webMarketingLabels"]
+ozon.ru##[data-widget="objectBannerList"]
+ozon.ru##[data-widget="webPremiumPointsInfo"]
+ozon.ru##[data-widget="webMarketingLabels"]
 ozon.ru##[data-widget="skuGrid"]
 ozon.ru##[data-widget="skuShelfGoods"]
 ozon.ru##button:has-text(Premium)
@@ -16492,35 +16492,36 @@ ozon.ru##.skeleton-banner
 ozon.ru##button:has-text(/Подарить|в один клик/)
 ! strange, but repeat
 ozon.ru##button:has-text(Купить в один клик)
-ozon.ru##div[data-widget="webTopStreams"]:has(a[href^="/live"])
-ozon.ru##div[data-widget="setOfPreviews"]
+ozon.ru##[data-widget="webTopStreams"]:has(a[href^="/live"])
+ozon.ru##[data-widget="setOfPreviews"]
 ozon.ru##div:has(> a[href^="/highlight/"])
 ozon.ru##li:has(> a[href^="/highlight/"])
 ozon.ru##div:has(>p:has-text(Оформить подписку))
+ozon.ru##[data-widget="webPrice"] button:has-text(Ozon Картой)
 ! not aside column, but banner
 ozon.ru##aside
 ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not-path(/product/)
 ! fake notifications
 ozon.ru##span.tsCaptionBold:has-text(/^1$/)
-ozon.ru##div[data-widget="webOzonAccountPrice"]
+ozon.ru##[data-widget="webOzonAccountPrice"]
 ozon.ru##span:has-text("успейте купить")
 ozon.ru##div:has(>a[href*=campaign])
 ozon.ru##div > a[href^="/product/podpiska"]
 ozon.ru##div:matches-css(height:155px):has-text(Реклама)
-ozon.ru##div[data-widget=objectLine]:has-text(Ловите часы продажи)
-ozon.ru##div[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
-ozon.ru##div[data-widget="skuLine"]:has-text(Лучшие предложения)
-ozon.ru##div[data-widget="sellerCarousel"]
+ozon.ru##[data-widget=objectLine]:has-text(Ловите часы продажи)
+ozon.ru##[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
+ozon.ru##[data-widget="skuLine"]:has-text(Лучшие предложения)
+ozon.ru##[data-widget="sellerCarousel"]
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
 ozon.ru##div:has(>span:has-text(/(Р|р)аспродажа|(С|с)кидки/))
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
-ozon.ru##div[data-widget=webInstallmentPurchase]
+ozon.ru##[data-widget=webInstallmentPurchase]
     ! seo
-ozon.ru##div[data-widget="semanticText"]
-ozon.ru##div[data-widget="tagList"]
+ozon.ru##[data-widget="semanticText"]
+ozon.ru##[data-widget="tagList"]
     ! bottom
 ozon.ru##a:has(img[alt="Ozon Job"])
     ! other
@@ -16531,7 +16532,7 @@ ozon.ru##p:has-text(Наведите камеру и скачайте)
 !ozon.ru##.b4u0 - a random one, don't
 ! footer icons
 !ozon.ru##svg:matches-css(width:24px):matches-css(height:24px) - don't, not only footer
-ozon.ru##div[data-widget="separator"]
+ozon.ru##[data-widget="separator"]
 
 packtpub.com##.upsell-box
 packtpub.com##.upsell-banner
