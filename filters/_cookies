@@ -14,6 +14,9 @@
 !   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, 6suuid)
 
+! apbct_* - CleanTalk Spam Protect cookies. They intend to be useful, but can be tracking. See examples below (referrer etc.)
+!   https://cleantalk.org/help/cookies-description
+
 ! ustream.tv third-party targeted advertising
 !   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 !*##+js(cookie-remover, ab_test_2)
@@ -263,10 +266,13 @@
     ! filestash.app##+js(cookie-remover, referral)
     ! grafana.com##+js(cookie-remover, rl_page_init_referring_domain)
     ! grafana.com##+js(cookie-remover, rl_page_init_referrer)
+    ! hexospark.com##+js(cookie-remover, document_referrer)
     ! hotwav.com##+js(cookie-remover, _orig_referrer)
     ! nozhikov.ru##+js(cookie-remover, first_referer)
     ! osteopluscct.ru##+js(cookie-remover, apbct_prev_referer)
+    ! popl.co##+js(cookie-remover, _orig_referrer)
     ! product-test.ru##+js(cookie-remover, ReferPage)
+    ! tigerlrm.com##+js(cookie-remover, _referrer)
     ! udsezon.ru##+js(cookie-remover, referer_referer)
     ! udsezon.ru##+js(cookie-remover, referer_time)
     ! udsezon.ru##+js(cookie-remover, referer_type)
@@ -323,12 +329,20 @@
         ! avicom.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
         ! bigam.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
         ! ohotnik.com##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
+        ! promt.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
         ! specodegda.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
         ! technocity.ru##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
     ! auto.ru##+js(cookie-remover, count-visits)
     ! ballistica.su##+js(cookie-remover, user_visits)
     ! ballistica.su##+js(cookie-remover, uss_visitor)
     ! banki.ru##+js(cookie-remover, BANKI_RU_LAST_VISIT)
+    !  httpOnly
+    ! coldsteel.com##+js(cookie-remover, athena_short_visit_id)
+    ! crmnext.us##+js(cookie-remover, ifso_visit_counts)
+    ! crozdesk.com##+js(cookie-remover, ahoy_visit)
+    ! crozdesk.com##+js(cookie-remover, ahoy_visitor)
+    ! httpOnly
+    ! cubicl.io##+js(cookie-remover, visitorId)
     ! garmin.ru##+js(cookie-remover, GARMIN_CO_LAST_VISIT)
     ! getapp.com##+js(cookie-remover, /^most_visited_apps/)
     ! habr.com##+js(cookie-remover, visited_articles)
@@ -336,12 +350,17 @@
     ! pleer.ru##+js(cookie-remover, cats_visit)
     ! pleer.ru##+js(cookie-remover, last_visit)
     ! pleer.ru##+js(cookie-remover, prods_visit)
+    ! producthunt.com##+js(cookie-remover, visitor_id)
+    ! setforbusiness.com##+js(cookie-remover, visitCount)
+    ! smartsalescrm.com##+js(cookie-remover, ifso_visit_counts)
     !  http-only, but
     ! sourceforge.net##+js(cookie-remover, VISITOR)
     ! stopgame.ru##+js(cookie-remover, last_visit_date_v2)
+    ! syncfusion.com##+js(cookie-remover, nQ_userVisitId)
     ! thestreet.com##+js(cookie-remover, last_visit_bc)
     !  http-only, but
     ! youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
+    ! zapier.com##+js(cookie-remover, visitor_id)
     !  non-session cookie, several months
     ! zoom.us##+js(cookie-remover, _zm_visitor_guid)
 
@@ -468,6 +487,8 @@ cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
 ! fingerprinting
 cloudstorageinfo.org##+js(cookie-remover, ct_screen_info)
 
+coldsteel.com##+js(cookie-remover, fornax_anonymousId)
+
 creatio.com##+js(cookie-remover, /^visid_incap_/)
 
 ! url
@@ -509,6 +530,9 @@ price.ru##+js(cookie-remover, ruid)
 
 reallysimplesystems.com##+js(cookie-remover, MoneypennyRef)
 
+! httpOnly id
+slashdot.org##+js(cookie-remover, VISITOR)
+
 yandex.ru##+js(cookie-remover, usurveys)
 
 ! not session cookie, 10 years
@@ -516,3 +540,80 @@ zoom.us##+js(cookie-remover, _zm_mtk_guid)
 
 !! todo
 
+fridaycrm.com##+js(cookie-remover, income_point_uri)
+!fridaycrm.com##+js(cookie-remover, income_point_referer) - as /refer/
+
+drivecentric.com##+js(cookie-remover, Ignitify)
+
+! httpOnly 
+gaana.com##+js(cookie-remover, reftoken)
+
+! ref
+salescrm.org##+js(cookie-remover, mailchimp_landing_site)
+
+producthunt.com##+js(cookie-remover, track_code)
+
+ru-shopping.ru##+js(cookie-remover, nc_Netshop_RecentGoods_sid)
+
+! ref
+webflow.com##+js(cookie-remover, wf_first_touch)
+webflow.com##+js(cookie-remover, wf_first_touch_v2)
+
+yclients.com##+js(cookie-remover, yc_utm_campaign)
+yclients.com##+js(cookie-remover, yc_utm_source)
+yclients.com##+js(cookie-remover, yc_utm_medium)
+
+firmao.net##+js(cookie-remover, initialWebpage)
+firmao.net##+js(cookie-remover, pk_campaign)
+firmao.net##+js(cookie-remover, pk_campaign_set)
+! visitorid
+firmao.net##+js(cookie-remover, vjs)
+
+radreads.co##+js(cookie-remover, __sl-fingerprint)
+
+gold-vision.com##+js(cookie-remover, _monsterinsights_uj)
+
+! httpOnly 
+growsmartmarketing.com##+js(cookie-remover, apbct_urls)
+! httpOnly
+!growsmartmarketing.com##+js(cookie-remover, apbct_site_referer) - as /refer/
+
+intuit.com##+js(cookie-remover, ADRUM_BT)
+intuit.com##+js(cookie-remover, hosted-shell)
+intuit.com##+js(cookie-remover, qbn.qbo_sc)
+
+involve.me##+js(cookie-remover, first_lp)
+
+crozdesk.com##+js(cookie-remover, conversion)
+
+! "direct"
+softr.io##+js(cookie-remover, sfic)
+! "direct"
+softr.io##+js(cookie-remover, slic)
+! visit url
+softr.io##+js(cookie-remover, sfip)
+! visit url
+softr.io##+js(cookie-remover, sfid)
+! visit url
+softr.io##+js(cookie-remover, slip)
+! visit time
+softr.io##+js(cookie-remover, slid)
+
+! "{"landing_page_url":"https%3A%2F%2Fwww.hellobonsai.com%2F","initial_referrer" ..."
+hellobonsai.com##+js(cookie-remover, bonsai_attribution_data)
+
+! ref
+fleeg.com##+js(cookie-remover, custom_origin_first)
+! "undefined"
+fleeg.com##+js(cookie-remover, user_origin)
+! "custom_origin_first: duckduckgo/https://fleeg.com/
+fleeg.com##+js(cookie-remover, origin)
+! "custom_origin_first: duckduckgo/https://fleeg.com/"
+fleeg.com##+js(cookie-remover, custom_origin_last)
+fleeg.com##+js(cookie-remover, param_tag)
+
+! visitor id
+forbes.com##+js(cookie-remover, fadvfpuid)
+forbes.com##+js(cookie-remover, fadve2etid)
+
+empoweringsystems.com##+js(cookie-remover, _wpfuj)
