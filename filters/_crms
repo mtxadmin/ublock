@@ -30,6 +30,8 @@
 
 4u2movie.com$3p,media,redirect=noopmp3-0.1s  # from uBlock filters
 
+6sense.com3p
+
 a2ztechworld.com$3p  # from uBlock filters  # not ad network
 
 add.pics$3p,script  # from uBlock filters
@@ -108,6 +110,8 @@ coincap.io$3p
 coingecko.com$3p  # is in Ru AdList
 
 contentful.com$3p  # ad xhrs
+
+craft.co$3p
 
 credible.com$3p
 
@@ -202,9 +206,15 @@ widget.freshworks.com$3p,important
 
 furnituremalldirect.com$script,3p  # ad scripts (furniture)
 
+fwdcdn.com$3p,script  # don't block css
+
 gamexp.ru$3p  # ads
 
+geoiplookup.io$3p  # ad scripts
+
 seal.geotrust.com$3p
+
+getapp.com$3p
 
 getfeedback.com$3p  # surveys  # "Your customers are happy"
 
@@ -258,6 +268,8 @@ hotdeals360.com$3p  # promoted widget with ad redirects to pricee.com/api/redire
 hubspot.com$important,script,domain=~hubspot.com|~hubspot.net|~hsappstatic.net  # Hubspot - Tracker  # from Quidsup NoTrack-Blocklist  # don't block css
 hubspot.net$important,script,domain=~hubspot.com|~hubspot.net|~hsappstatic.net  # Hubspot - Tracker  # from Quidsup NoTrack-Blocklist  # don't block css
 hsappstatic.net$domain=~hubspot.com|~hubspot.net|~hsappstatic.net
+
+hypestat.com$3p
 
 ingka.com$domain=~ikea.com|~ingka.com  # 3p cookies  # IKEA domain
 
@@ -424,39 +436,247 @@ popsters.ru$3p  # transferred from _marketing
 
 porn300.com$3p  # from GoodbyeAds and EasyList  # false positive? but it is in several lists. Transferred to 3p
 
+pornoadvid.info$3p  # from Adguard
+
+pornovau.club$3p  # from Adguard
+
+pr-cy.ru$3p  # from Ru AdList
+
+prcy-info.ru$3p  # from Adguard
+
+premiumread.com$3p  # ads
+
+printfriendly.com$3p,script  # from Fanboy's
+
+printdirect.ru$3p  # from Adguard
+
+printful.com$3p
+
+prismic.io$3p,script
+
+profinance.ru$3p  # forexpf
+
+proofpoint.com$3p
+! former urldefense.proofpoint.com
+proofpoint.us$3p
+urldefense.com$3p
+
+quotemedia.com$3p  # 3p scripts  # "Stock Market Data"
+
+rbc.ru$script,domain=~rbc.ru|~rbk.ru  # strange 3p scripts
+
+recruitics.com$3p  # is in Adguard  # ad redirects, but..
+
+recurly.com$3p  # ad scripts  # don't block at hosts  # "Subscription Billing"
+
+regmarkets.ru$3p  # ad scripts
+
+rockthevote.com$3p
+
+roda.site$3p  # from uBlock filters
+
 romankapa.ru$3p  # spam  # now empty :-)
+
+rss-loader.com$3p  # from Adguard
+
+rusexclips.com$3p  # from uBlock filters
+
+satu.kz$domain=~satu.kz|~djemmy.kz  # earlier: satu.kz$3p  # ad scripts
 
 sematext.com$3p  # Sematext - Tracker  # from Quidsup NoTrack-Blocklist  # moved to 3p
 
+sendpulse.com$3p
+
+seo-monster.ru$3p  # from Adguard
+
+serank.ru$3p  # from Adguard
+
+! shiptor.ru$3p  # ad scripts (seems, it was not ads? ok, don't)  # "Логистическая платформа для интернет-магазинов ... агрегатор курьерских служб"
+
+shop.pe$3p
+
+sirv.com$3p,script
+
 slashdot.org$3p  # from EasyList
+
+smutr.com$3p  # from uBlock filters
+
+snipp.ru$3p  # ad scripts
 
 softwareadvice.com$3p  # ad redirects  # "Get real advice"  # it turns out, it has useful CRM reviews
 
+sovsport.ru$3p  # 3p widgets
+
+spankbang.com$3p  # from uBlock filters
+
+speechki.org$3p  # audio widgets
+
+spendino.de$3p
+
+spod.com$3p
+
 sputnik8.com$3p  # 3p ad cookies
+
+squadhelp.com$3p  # ad scripts  # naming company
+
+!squarespace.com$3p,script - don't  # "Website builder"  # this is suspicious, but..
+
+! https://forums.lanik.us/viewtopic.php?f=102&p=155116
+sravni.ru$3p
+sravnikupi.ru$3p
+
+statuscake.com$3p  # Traffic Cake - Tracker  # from Quidsup NoTrack-Blocklist  # moved to sites
+
+stcatherines-stuttgart.de$3p,script
+
+steamgifts.com$3p  # money for nothing
+
+sucuri.net3p  # "We Clean and Protect Websites"
+
+surveyanalytics.com$3p
+
+surveyanyplace.com$3p  # "Interactive questionnaires"
+quizzme.cc$3p
+su.vc$3p
+
+surveygizmo.com$3p
+surveygizmo.eu$3p
+
+! 3p: https://github.com/mtxadmin/ublock/issues/8
+surveymonkey.com$3p
+surveymonkey.co.uk$3p
+surveymonkey.de$3p
+surveymonkey.ru$3p
+research.net$3p
+smassets.net$domain=~surveymonkey.com|~surveymonkey.co.uk|~surveymonkey.de|~surveymonkey.ru|~research.net
+||smassets.net/assets/anonweb/anonweb-click-$script  # is in EasyPrivacy  # it is in _crms and not in _sites as exclusion
+
+surveynuts.com$3p
+
+surveyplanet.com$3p
+
+surveypocket.com$3p
+
+survicate.com$3p  # is in 2 lists
+
+survio.com$3p
+
+svitnews.com$3p  # is in Ru AdList and Adguard
 
 synergyacademy.com$3p  # spam
 
+tdnu.ru$3p,script  # Ru AdList rule: *$script,3p,domain=tdnu.ru
+
+tdsevcable.ru$3p  # ads
+
+techtarget.com$3p  # don't block entirely  # "Real revenue results  Latest sales & marketing thinking"  # Also see https://forums.lanik.us/viewtopic.php?f=64&t=44717 (EasyList)
+cdn.ttgtmedia.com$script
+
+telegraf.com.ua$3p  # cross-site ads
+
+tgstat.ru$3p
+
+thebookee.net$3p  # from uBlock filters
+
+ticketmanager.com$3p  #activehosted.com
+ticketmanager.io$3p
+
+tinkoff.ru$3p  # ad scripts (maybe credits)
+
+topdb.ru$3p
+
+tradingview.com$3p  # from marketing
+
+treeum.net$3p  # ad scripts
+
+trustedsite.com$3p  # ad scripts  # "Look for the TrustedSite trustmark as you shop online and stay safe" What?
+
+trustwave.com$3p
+sealserver.trustwave.com$3p  # from Fanboy’s Enhanced Tracking List
+
+trvdp.com$3p,image,important  # it seems, the domain from truvidplayer.com  # pixel.gif and empty root
+
+tubepornclassic.com$3p  # from uBlock filters
+
+tunein.com$3p  # from uBlock filters
+
+twincdn.com$3p,script,image  # from uBlock filters
+
+ucheba.ru$3p  # from Adguard: api.ucheba.ru$third-party
+
+uguide.ru$3p
+
+umh.ua$3p  # 3p tracking and ad scripts # ||umh.ua/libs/e.js
+
+umschool.net$3p  # from Ru AdList
+
 uniter.ai$3p  # spam
+
+uptime.com$3p
+
+userway.org$3p  # "accessibility without refactoring  legal & regulatory compliance"  # widgets  #https://cdn.userway.org/widget.js
+
+vbt.io$3p
+! vbt.io//js/webpush/popup/
+! vbt.io/js/intl-tel-input/
+! vbt.io/ext/builder/countdown02.js
+! vbt.io/lp/8833/tracker
+
+via-mobi.com$3p,important
+
+virtonnews.com$3p  # ad scripts  # is in Ru AdList
 
 vkrugudruzei.ru$3p  # km.ru side project
 
+voin.guru$3p,script  # is in Ru AdList
+
+vse-sdal.com$3p
+
+weboborona.ru$3p
+
+week.news$3p  # is in RU AdList
+
+wi-fi.ru$3p  # ad banners and cross-site ad scripts  # static.wi-fi.ru/mtt/banners/  #https://static.wi-fi.ru/mtt/banners/libs/1.5.3/all.js
+
+! money for nothing
+wmcentre.net$3p
+wmcentre.xyz$3p
+
+world-weather.ru$3p  # weather informers
+
+wpscan.com$3p
+
+x-lines.ru$3p
+
+x-tk.ru$3p
+
+yelp.com$3p
+yelpcdn.com$domain=~yelp.com
+
 yourcodereview.com$3p  # spam
 
+yournewhosting.com$3p  # "© 2001-2008"  # from Adguard
+
 ! not very marketing, but sometimes embedded (chat, as I remember)
-zoho.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zoho.eu$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zoho.jp$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zoho.com.au$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zoho.in$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-bigin.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zohocdn.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zohopublic.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net  # m?
-zohosalesiq.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net  # m?
-zohostatic.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zohostatic.eu$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zohosupport.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zohowebstatic.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
-zcsend.net$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net
+zoho.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zoho.eu$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zoho.jp$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zoho.com.au$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zoho.in$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+bigin.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zohocdn.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zohocorp.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zohoinsights.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co  # from ShadowWhisperer's Tracking
+zohopublic.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zohosalesiq.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zohostatic.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zohostatic.eu$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zohosupport.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zohowebstatic.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zcsend.net$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zfrmz.com$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zfrmz.eu$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
+zurl.co$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~zohocdn.com|~zohocorp.com|~zohopublic.com|~zohosalesiq.com|~zohostatic.com|~zohostatic.eu|~zohosupport.com|~zohowebstatic.com|~zcsend.net|~zfrmz.com|~zfrmz.eu|~zurl.co
 ! some subdomains
 !campaigns.zoho.com
 !chat.zoho.com
@@ -467,5 +687,14 @@ zcsend.net$domain=~zoho.com|~zoho.eu|~zoho.jp|~zoho.com.au|~zoho.in|~bigin.com|~
 !iplocation.zoho.com
 !salesiq.zoho.com
 !support.zoho.com
+!+  api.zoho.com
+!+  challenge.zoho.com
+!+  commentbox.zoho.com
+!+  creator.zoho.com
+!+  discussions.zoho.com
+!+  sheet.zoho.com
+!+  wiki.zoho.com
+!+  writer.zoho.com
+!+  zmverify.zoho.com
 
 !! todo
