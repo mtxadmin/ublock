@@ -8876,6 +8876,7 @@ habr.com##.tm-stories-block
 habr.com##.tm-company-profile-card
 habr.com##.tm-company-snippet__description
 habr.com##.tm-companies-rating
+habr.com##.tm-article-presenter__banner
     ! popups
 habr.com##.tm-notification
 habr.com##.Vue-Toastification__container
@@ -12455,6 +12456,8 @@ link2sd.co###regular-header
 ||linkedin.com/*/api/ingraphs/  # ad pings
 ||linkedin.com/voyager/api/voyagerLegoDashWidgetImpressionEvents
 ||linkedin.com/voyager/api/voyagerPremiumDashAnalyticsView
+    ! top
+linkedin.com##.x-article-base-page:style(max-height:initial !important)
     ! popups
 linkedin.com##.artdeco-toasts
 linkedin.com##.artdeco-toasts_toasts
@@ -16374,6 +16377,7 @@ ozon.ru##div[trackinginfo]
 !||ozone.ru/assets/cms-desktop-top-bar - don't
 ||v.ozone.ru/vod/*/tile.mp4  # видео в карточках: слегка подбешивает
 ||ozon.ru/cdn-cgi/challenge-platform/  # "outdated browser" script, blocks browser. Without it, all is working
+||ozone.ru/assets/*/pdp-all-marketing-labels-v3.js
     ! top
 !ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
 ozon.ru###stickyHeader:style(position:static !important)
@@ -16387,6 +16391,7 @@ ozon.ru###stickyHeader:style(padding:initial !important; margin:initial !importa
 ||ozone.ru/_nuxt/marketing-all-adv_banner.  # from Ru AdList
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
 ||ozone.ru/_nuxt/uw-*-atom-sku-shelf-goods.  # from Ru AdList
+||ozone.ru/assets/*/bx-  # location popups
 ozon.ru##.modal:has-text(город)
 ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли)
@@ -16421,7 +16426,8 @@ ozon.ru##[data-widget="setOfPreviews"]
 ozon.ru##div:has(> a[href^="/highlight/"])
 ozon.ru##li:has(> a[href^="/highlight/"])
 ozon.ru##div:has(>p:has-text(Оформить подписку))
-ozon.ru##[data-widget="webPrice"] button:has-text(Ozon Картой)
+!ozon.ru##[data-widget="webPrice"] button:has-text(Ozon Картой)
+ozon.ru##button span:has-text(Ozon Картой)
 ! not aside column, but banner
 ozon.ru##aside
 ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not-path(/product/)
@@ -16436,13 +16442,16 @@ ozon.ru##[data-widget=objectLine]:has-text(Ловите часы продажи)
 ozon.ru##[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
 ozon.ru##[data-widget="skuLine"]:has-text(Лучшие предложения)
 ozon.ru##[data-widget="sellerCarousel"]
+||ozone.ru/assets/*/marketing-black-friday-hammer
+ozon.ru##[data-widget="hammers"]
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
 ozon.ru##div:has(>span:has-text(/(Р|р)аспродажа|(С|с)кидки/))
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
-ozon.ru##[data-widget=webInstallmentPurchase]
+!ozon.ru##[data-widget=webInstallmentPurchase]
+ozon.ru##div > a[href="https://www.ozon.ru/section/limit"]
     ! seo
 ozon.ru##[data-widget="semanticText"]
 ozon.ru##[data-widget="tagList"]
@@ -18435,6 +18444,7 @@ reddit.com##faceplate-tracker[noun=user_avatar]
 reddit.com##button[id=get-app]
 ! logo
 reddit.com##a[aria-label="Home"]
+redd.it###reddit-logo
     ! popups
 reddit.com##xpromo-nsfw-blocking-modal-desktop
 reddit.com##*:style(filter:none !important)
@@ -28883,3 +28893,16 @@ burgerkingrus.ru##.bk-mir-banner
 burgerkingrus.ru##.bk-categories:style(position:static !important)
 burgerkingrus.ru##.bk-options-popup__popup.bk-popup__overlay
 burgerkingrus.ru##.bk-seo
+
+uservoice.com##.nav_banner
+
+dignited.com##.site-header-outer
+dignited.com##.site-header-inner:style(margin-top:0px !important)
+dignited.com###footer-mobile-menu
+dignited.com##header::after
+dignited.com##.site-header-inner:style(position:static !important)
+
+||tildacdn.com/js/tilda-popup
+  ##.t-popup
+
+allmulticam.ru##.buttonMobsted
