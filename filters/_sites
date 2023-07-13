@@ -1830,6 +1830,9 @@ arstechnica.com###social-left
 
 art4x4.ru###headerbar
 
+! placeholder
+artemida-hunter.ru###headerfixed
+
 ||artfile.ru/i/l.png  # logo
 ! <b id="lt"> - spam links in the footer
 artfile.ru##b#lt
@@ -6656,10 +6659,12 @@ epraktika.ru##.b-window-up
 
 epsed.ru###add-history
 
-! banners
+    ! top
+equip.ru##.search > form:style(margin-top:0px !important)
+    ! banners and promos
 equip.ru##.inner-page.pic
 equip.ru##.action
-! other
+    ! other
 equip.ru##.footer_bot
 
 ||eraworld.ru/img/vendors/$image
@@ -16448,10 +16453,14 @@ ozon.ru##[data-widget="skuLine"]:has-text(Лучшие предложения)
 ozon.ru##[data-widget="sellerCarousel"]
 ||ozone.ru/assets/*/marketing-black-friday-hammer
 ozon.ru##[data-widget="hammers"]
+finance.ozon.ru##.notification:has-text(подписку)
+finance.ozon.ru##.premium-benefit-card
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
 ozon.ru##div:has(>span:has-text(/(Р|р)аспродажа|(С|с)кидки/))
+ozon.ru##div:has(>span:has-text(/ХИТЫ НЕДЕЛИ|Новинка|Хит|бонус|баллов/))
+ozon.ru##span:has-text(%)
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 !ozon.ru##[data-widget=webInstallmentPurchase]
@@ -16567,6 +16576,7 @@ paylocity.com##.branding-company-logo
 
 ||paypal.com/xoplatform/logger/$important  # is in EasyPrivacy and Adguard
 ||paypal.com/credit-presentment/log
+||paypal.com/tagmanager/  # is in Adguard
 
     ! banners
 ||pb.wtf/t4zet/$image
@@ -25256,11 +25266,13 @@ wildberries.ru,wildberries.co.il,wildberries.fr##.j-recent-items > .recently-wat
 ||wb.ru/vol0/data/banners$redirect=noop.js
 ||wbstatic.net/data/banners$redirect=noop.js
     ! top
-wildberries.ru##.header-bg:style(top:0px !important)
+wildberries.ru,wildberries.co.il,wildberries.fr##.header-bg:style(top:0px !important)
 ! проблема с поисковой формой. Если убрать класс, то хотя бы placeholder виден
-wildberries.ru##+js(remove-attr, class, .search-catalog__input)
+wildberries.ru,wildberries.co.il,wildberries.fr##+js(remove-attr, class, .search-catalog__input)
 ! sticky duplicate
-wildberries.ru##.product-line
+wildberries.ru,wildberries.co.il,wildberries.fr##.product-line
+! floating filters
+wildberries.ru,wildberries.co.il,wildberries.fr##.filters-block__wrap:style(position:static !important)
     ! quick view
 wildberries.ru,wildberries.co.il,wildberries.fr##.preview-item
 wildberries.ru,wildberries.co.il,wildberries.fr##.j-open-product-popup
@@ -25281,6 +25293,7 @@ wildberries.ru,wildberries.co.il,wildberries.fr##.product-card__sale
 wildberries.ru,wildberries.co.il,wildberries.fr##.price-block__old-price
     ! labels
 wildberries.ru,wildberries.co.il,wildberries.fr##.product-card__tip-wrap
+wildberries.ru,wildberries.co.il,wildberries.fr##.product-card__tip
     ! credits
 wildberries.ru,wildberries.co.il,wildberries.fr##.price-block__credit-payment
 wildberries.ru,wildberries.co.il,wildberries.fr##.list-item__price-credit
