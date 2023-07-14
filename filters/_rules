@@ -1432,13 +1432,17 @@ _rebid.js  # from EasyList
 !/widget.min.js$important,domain=~sbis.ru
 /widget/*$~stylesheet,domain=~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru|~sbis.ru  # v2
 /widget-a-b.js  # from Ru AdList
-/widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~aplaut.io|~banki.ru|~dns-shop.ru|~domclick.ru|~embedly.com|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
+/widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~banki.ru|~dns-shop.ru|~domclick.ru|~embedly.com|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
     ! Exclusions:
-    ! aplaut.io - useful reviews/feedback widgets
     ! banki.ru - currency courses (first-party)
-    ! embedly.com - embedded elements (video, as far as I remember)  # earler: @@||embedly.com/widgets/
+    !
+    ! Update: useful third-party widgets cannot be allowed as domain=... because they are third-party. So, direct exclusions:
+    ! aplaut.io - useful reviews/feedback widgets
+    @@||aplaut.io/widgets  # aplaut.io/widgets/ and aplaut.io/*/widgets.css
+    ! embedly.com - embedded elements (video, as far as I remember)
+    @@||embedly.com/widgets/
     ! 
-    ! In the most cases this rule is very useful. But maybe remake it to 3p?
+    ! In the most cases this rule is very useful. But maybe remake it to 3p? It would solve all these problems
     !
 /wp-banners.js$important
 ||/wp-content/*/ad-*$script,important  # disable exclusion from Fanboy’s Enhanced Tracking List
