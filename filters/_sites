@@ -10388,7 +10388,11 @@ investfuture.ru###header-branding:style(height:auto !important)
 
 ||investing.com/*/_error$script
 ||investing.com/api/editions/streamer
+    ! popups
+investing.com##[class^=watchlist-onboarding-drawer]
+    ! top
 investing.com##div[class*=header_sticky]:style(position:static !important)
+    ! other
 investing.com##.notification
 investing.com##.alertText
 investing.com##.sidebarCommentary
@@ -16386,6 +16390,7 @@ ozon.ru##div[trackinginfo]
 ||v.ozone.ru/vod/*/tile.mp4  # видео в карточках: слегка подбешивает
 ||ozon.ru/cdn-cgi/challenge-platform/  # "outdated browser" script, blocks browser. Without it, all is working
 ||ozone.ru/assets/*/pdp-all-marketing-labels-v3.js
+!||ozon.ru/api/entrypoint-api.bx/page/json/ - don't, it's reviews
     ! top
 !ozon.ru##*:matches-css(position:fixed):style(position:static !important) - don't, flickers
 ozon.ru###stickyHeader:style(position:static !important)
@@ -16438,7 +16443,8 @@ ozon.ru##div:has(>p:has-text(Оформить подписку))
 !ozon.ru##[data-widget="webPrice"] button:has-text(Ozon Картой)
 ozon.ru##button span:has-text(Ozon Картой)
 ! not aside column, but banner
-ozon.ru##aside
+! update: there is an "real" aside there too
+!ozon.ru##aside
 ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not-path(/product/)
 ! fake notifications
 ozon.ru##span.tsCaptionBold:has-text(/^1$/)
@@ -16453,6 +16459,10 @@ ozon.ru##[data-widget="skuLine"]:has-text(Лучшие предложения)
 ozon.ru##[data-widget="sellerCarousel"]
 ||ozone.ru/assets/*/marketing-black-friday-hammer
 ozon.ru##[data-widget="hammers"]
+ozon.ru##[data-widget="actionCards"]
+ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
+ozon.ru##div:has(>a[href^="https://www.ozon.ru/special/care/"])
+ozon.ru##[data-widget="userAvatar"]
 finance.ozon.ru##.notification:has-text(подписку)
 finance.ozon.ru##.premium-benefit-card
     ! labels
@@ -16479,6 +16489,7 @@ ozon.ru##p:has-text(Наведите камеру и скачайте)
 ! footer icons
 !ozon.ru##svg:matches-css(width:24px):matches-css(height:24px) - don't, not only footer
 ozon.ru##[data-widget="separator"]
+ozon.ru##[data-paginator-loader]
 
 packtpub.com##.upsell-box
 packtpub.com##.upsell-banner
