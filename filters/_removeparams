@@ -962,14 +962,15 @@ $removeparam=/^otm_/i  # from DandelionSprout's URLShortener  # like utm_, stm_,
 
 !$removeparam=/^param[1-3]:/i # seems don't  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
-$removeparam=partner,important  # good old rule from Prx: partner (one of)
+$removeparam=partner,important,domain=~opera.com  # good old rule from Prx: partner (one of)
+    ! Exclusions:
+    opera.com - Opera distribs refuse to download, even from the main page. It needs some partner param (partner=www by default)
+    !
     ! alternate.de$removeparam=partner  # from Adguard
     ! humblebundle.com$removeparam=partner  # from Adguard
         ! @@||humblebundle.com$removeparam=partner  # from DandelionSprout's URLShortener  # seems strange. Recheck. Update: clearly mistake
     ! ozon.ru$removeparam=partner  # ref
     ! steambuy.com$removeparam=partner  # from Ru AdList
-    ! Exclusions:
-    @@||download.opera.com$removeparam=partner  # Opera distribs refuse to download, even from the main page
 
 $removeparam=/partnerid$/i,important
     ! @@$removeparam=/^partnerid$/i  # from DandelionSprout's URLShortener
