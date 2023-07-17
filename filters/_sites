@@ -1280,19 +1280,21 @@ amalgama-lab.com##.title
 amalgama-lab.com##.forest
     ! other
 
-! banners
-amazon.com##.a-carousel
-! other
+||amazon.com/gp/cerberus  # trackers?
 ||ssl-images-amazon.com/images/*/dasf-  # is in EasyList
 ||amazon.*/ajax/counter?  # from EasyPricacy
-||amazon.com/gp/cerberus  # trackers?
 ||unagi*.amazon.com/1/events^  # from AdGuard Tracking Protection
+||assoc-na.associates-amazon.com/abid/
 ||a2z.com/x.png  # tracking
 @@||amazon.*/*uedata$first-party,image,badfilter  # No exclusion for amazon. Also added $important up in general rules
+    ! popups
+amazon.com##.nav-flyout
+    ! banners and promos
+amazon.com##.a-carousel
+    ! other
 ! see in _marketing: fls-na.amazon.com$important
 ! see in _marketing: cloudfront-labs.amazonaws.com$important
 amazon.com##.nav-flyout.nav-coreFlyout.glow-toaster-slot-default.glow-toaster-theme-default.glow-toaster.a-section
-assoc-na.associates-amazon.com/abid/
 amazon.com##.rhf-border
 amazon.com##.unified_widget
 amazon.com###cerberusVotingContainer
@@ -2218,6 +2220,7 @@ avangard-sp.ru##.price-whol:style(font-size: 16px !important;)
 
 ! avast
 ||forum.avast.com/avt/avatar*.gif$image
+||forum.avast.com/avast-forum.png
 avast.com##.intro
 avast.com##.nav-inner:style(padding-top:0px !important; padding-bottom:0px !important)
 
@@ -5315,6 +5318,14 @@ digitbin.com##p:has(a[href="#comments"])
 ! popup
 digma.ru##.isyourcity
 
+    ! popups
+dikoed.ru##.banner__container
+    ! banners and promos
+dikoed.ru##.what-to-try-section
+dikoed.ru##.bg-red
+dikoed.ru##.item__sale-preview:has-text(Съедено уже)
+    ! other
+
 diletant.media##.footer-main__section_notice
 diletant.media##.sticky-block:style(position:static !important)
 diletant.media##.main-nav__label:style(color:#000 !important)
@@ -6100,6 +6111,9 @@ duolingo.com##div:has(>img[src*="cloudfront.net/images/practiceHub/"])
 duolingo.com##button:has(img[src*="cloudfront.net/images/super/"])
 duolingo.com##div:has(>img[data-test="plus-offer-logo"]):has-text(Попробуйте Super бесплатно)
     ! other
+
+! oneclick
+dvafazana.ru##.MDclick
 
 dushlux.ru##.ico_block
 
@@ -6944,6 +6958,8 @@ expertbani.ru##.author_rank
 
 expertology.ru$inline-script  # site blocks copypaste
 expertology.ru$script  # site blocks copypaste
+! inline related
+expertology.ru##blockquote.advices
 
     ! top
 expertreviews.co.uk###header-group:style(position:static !important)
@@ -12179,6 +12195,8 @@ lenklimat.ru##.new-header__inner
 lenklimat.ru##.call-master-block
 lenklimat.ru##.subscribe-email-block
 
+lenovo.com##.loyalty_wrap
+lenovo.com##.bottomStickyDock
 forums.lenovo.com##.guidelines
 forums.lenovo.com##.lia-quilt-column-alley-inner
 forums.lenovo.com###ratingenumerationdisplay
@@ -16460,9 +16478,12 @@ ozon.ru##div > a[href^="/product/podpiska"]
 ozon.ru##div:matches-css(height:155px):has-text(Реклама)
 ozon.ru##[data-widget=objectLine]:has-text(Ловите часы продажи)
 ozon.ru##[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
+
 ozon.ru##[data-widget="skuLine"]:has-text(Лучшие предложения)
 ozon.ru##[data-widget="sellerCarousel"]
-||ozone.ru/assets/*/marketing-black-friday-hammer
+||ozone.ru/assets/*/marketing-black-friday
+	! ||ozone.ru/assets/*/marketing-black-friday-hammer
+	! ||ozone.ru/assets/*/marketing-black-friday-counter
 ozon.ru##[data-widget="hammers"]
 ozon.ru##[data-widget="actionCards"]
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
@@ -28953,3 +28974,15 @@ oum.ru##.desktop-scroller
 tion.ru##.tes-loader__overlay
 
 7dach.ru##.floating-hat
+
+sena.com##.news-alert
+
+! preview on imgs
+nevcos.ru##.jqmTrigger
+
+ovdi.ru##.akcii
+ovdi.ru##.owl-main-wrap
+ovdi.ru##.callUsSingleCatalog
+
+enchentech.com##.recommendation-modal__container
+enchentech.com##.recommendation-modal__backdrop
