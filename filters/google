@@ -14,12 +14,14 @@
 ! Some Youtube scripts, all works without it. Later it turned out, that is Google recaptcha and it needs to be unblocked to post comments to some sites
 !google.com/js/bg/$script
 
-google.*###Rzn5id
-google.*###_L8b
-google.*###rhs
-google.*##.fbar:has-text(Отправить отзыв)
-google.*###gbw > div:has-text(Войти)
-google.*##div.fbar:nth-of-type(2)
+! old random classes
+!google.*###Rzn5id
+!google.*###_L8b
+!google.*###rhs
+!google.*##.fbar:has-text(Отправить отзыв)
+!google.*###gbw > div:has-text(Войти)
+!google.*##div.fbar:nth-of-type(2)
+!translate.google.com##.gb_g.gb_Vc.gb_wd
 
 !play.google.com##+js(ra,data-p) - don't, it breaks screenshots
 !play.google.com##+js(ra,jsaction) - don't, it breaks search
@@ -28,7 +30,6 @@ play.google.com##+js(ra,jsdata)
 ! seems fine
 play.google.com##+js(ra,jslog)
 
-translate.google.com##.gb_g.gb_Vc.gb_wd
 !translate.googleapis.com$domain=~translate.google.com - don't, it can be called when translating urls
 
 ||youtube.com/pixel
@@ -63,6 +64,10 @@ google.com##.header:style(position:static !important)
 
 ! "old browser" notification, may be other
 docs.google.com##.docs-butterbar-container
+
+    ! google drive
+! popup
+one.google.com##div:has(>img[src*="/subscriptions/"])
 
 support.google.com##.survey
 
