@@ -1930,7 +1930,8 @@ amazon.*$removeparam=hydadcr  # from Adguard
 ||amazon.*^$removeparam=imprToken  # from DandelionSprout's URLShortener
 amazon.*$removeparam=ingress  # from Adguard
 amazon.*$removeparam=initialIssue  # from Adguard
-# do not block keywords parameter
+# do not block keywords parameter  # Update: hmmm... something changed?
+amazon.com$removeparam=keywords  # NOT search itself (it's k=), but ref to it
 ||amazon.*^$removeparam=linkCode  # is in DandelionSprout's URLShortener  # ref?
 ||amazon.*^$removeparam=lp_asins  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=lp_page_asin  # from DandelionSprout's URLShortener
