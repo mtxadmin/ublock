@@ -4649,7 +4649,11 @@ _snowstorm-min.js  # from Ru AdList
 /branding*$all,important,domain=~livejournal.com
     ! many, many rules from different lists
     ! /branding/*
-/brands/*$image,domain=~google.com
+/brands/*$image,domain=~google.com|~zabbix.com
+    ! Exclusions:
+    ! google.com - don't remember, but suppose, third-party site icons in search results
+    ! zabbix.com - icons of monitored systems. Yes, they are logos, but 1) purpose is not marketing, and 2) it really needs for GUI because of absense of alternate text names
+    ! 
     ! ||devapps.ru/img/brand/*$image  # 4pda banners
     ! ||megaobzor.com/images/brand/*$image
     ! ||shopsirop.ru/uploads/images/Brands/*$image
