@@ -16487,6 +16487,9 @@ ozon.ru##[data-widget="blackFridayStatus"]
 	! ||ozone.ru/assets/*/marketing-black-friday-hammer
 	! ||ozone.ru/assets/*/marketing-black-friday-counter
 ozon.ru##[data-widget="hammers"]
+ozon.ru##[data-widget="hotsaleMain"]
+ozon.ru##[data-widget="container"]:has([data-widget="hotsaleMain"])
+ozon.ru##[data-widget="rateBoughtItems"]
 ozon.ru##[data-widget="actionCards"]
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/special/care/"])
@@ -21126,22 +21129,26 @@ spina-help.ru###masthead
 
 spkostroma.ru##.items
 
-! header
+splav.ru$inline-script  # site breaks itself  # yes, it breaks some functionality on the site, but without it it breaks itself completely
+    ! header
 splav.ru##.header__login-cart__bonus
 splav.ru###headerCartLink > em
 splav.ru##.header__toolbar-item--phone
-! main banners
+    ! main banners
 splav.ru##.main-slider
 splav.ru##.main__carousel
 splav.ru##.main__items-wrapper
 splav.ru##.main__mobile-banner
-! footer
+splav.ru##.swiper:has(a[href*="/bonus/"])
+    ! footer
 splav.ru##.footer__contacts
 splav.ru##.social
-! other
+    ! other
 splav.ru##.main__items:has-text(Недавно просмотренные)
 splav.ru##.content__catalog-info
 splav.ru##.catalog__item--promo
+! uncrop comments (display:-webkit-box)
+splav.ru##.brnd-clamped:style(display:initial !important)
 
 spletnik.ru##.rating-top
 
