@@ -354,6 +354,7 @@ pikabu.ru##[href="https://pikabu.ru/story/dofenihenovo_kasny_smo_bkiknloolndeney
 ||pikabu.ru/avatars/2544/*2544877-1863435265.$image
 ||pikabu.ru/avatars/255/l255424-780265340.$image
 ||pikabu.ru/avatars/2573/*2573866-894041253.$image
+||pikabu.ru/avatars/2588/*2588146-174105011.$image
 ||pikabu.ru/avatars/26/*26439-370412912.$image
 ||pikabu.ru/avatars/2613/*2613714-397781318.$image
 ||pikabu.ru/avatars/2623/*2623565-2067596532.$image  # z
@@ -7581,6 +7582,13 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/leps_zaplatil_1_mln_rubley_unichtozhivshemu_tank_leopard_rossiyskomu_boytsu_10434429
     ! https://pikabu.ru/story/boytsa_chvk_vagner_zastrelili_cherez_den_posle_ego_vozvrashcheniya_s_svo_10269655
     ! https://pikabu.ru/story/razgovor_s_kitaytsem_10265436
+
+pikabu.ru##span:has-text(/^mexico777$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="mexico777"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="mexico777"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^mexico777$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="mexico777"]))
+    ! https://pikabu.ru/story/otvet_na_post_kak_menya_zaneslo_v_meksikanskuyu_tyurmu_ili_mozhet_byit_khvatit_skandalyi_intrigi_rassledovaniya_10474514
 
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
