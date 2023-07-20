@@ -9754,6 +9754,9 @@ huihoo.com##.page-header h1:style(margin-top:0px !important)
 hunfis.ru##.pagination-sticky
 hunfis.ru##.kleo-main-header:style(position:static !important)
 
+hungarylife.ru##.topbar
+hungarylife.ru##.topbar-date
+
 ! top logo
 hunter.ru##.top
 ! right column
@@ -16473,13 +16476,14 @@ ozon.ru##[data-widget="webTopStreams"]:has(a[href^="/live"])
 ozon.ru##[data-widget="setOfPreviews"]
 ozon.ru##div:has(> a[href^="/highlight/"])
 ozon.ru##li:has(> a[href^="/highlight/"])
+ozon.ru##a[href^="/highlight/"]
 ozon.ru##div:has(>p:has-text(Оформить подписку))
 !ozon.ru##[data-widget="webPrice"] button:has-text(Ozon Картой)
 ozon.ru##button span:has-text(Ozon Картой)
 ! not aside column, but banner
 ! update: there is an "real" aside there too
 !ozon.ru##aside
-ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not-path(/product/)
+ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not(:matches-path(/product/))
 ! fake notifications
 ozon.ru##span.tsCaptionBold:has-text(/^1$/)
 ozon.ru##[data-widget="webOzonAccountPrice"]
@@ -16503,7 +16507,6 @@ ozon.ru##[data-widget="actionCards"]
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/special/care/"])
 ozon.ru##[data-widget="userAvatar"]
-ozon.ru##a[href^="/highlight/"]
 finance.ozon.ru##.notification:has-text(подписку)
 finance.ozon.ru##.premium-benefit-card
     ! labels
@@ -17533,6 +17536,7 @@ postroika.biz###pagebg:style(background-image:none !important)
 potolok8.ru##.big-header
 potolok8.ru##.fx-toc
 
+||povar.ru/skins/recipie/images/submenu/$image
 povar.ru###head
 povar.ru##.plus16
 povar.ru##.perelink
@@ -19248,6 +19252,8 @@ rusrappers.ru##.menu
 
 russianblogs.com##h1
 
+||russianfood.com/images/blg.png
+||russianfood.com/images/common/bottom_line$image
 ||russianfood.com/tapi  # stat4.russianfood.com/tapi
 ||russianfood.com/*/bottom_logo
 ||russianfood.com/*/recipe_add_btn*.gif
