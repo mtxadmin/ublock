@@ -313,6 +313,9 @@ uniproxy.alice.yandex.net
 aab-pub.s3.yandex.net$important,all
 
 ||button.blogs.yandex.  # from Adguard and Ru AdList
+! for hosts:
+button.blogs.yandex.ru
+button.blogs.yandex.net
 
 plus.yandex.net  # app requests
 
@@ -321,9 +324,12 @@ sba.yandex.ru  # ad redirects
 
 offerwall.yandex.net  # from Adguard
 
-! seen on one of Yandex sites
-tools.messenger.yandex.net
-uniproxy.messenger.yandex.ru
+# update: let's block this "messenger" completely
+messenger.yandex.net
+    ! seen on one of Yandex sites
+    ! tools.messenger.yandex.net
+messenger.yandex.ru
+    ! uniproxy.messenger.yandex.ru
 ||yastatic.net/s3/chat-static/
 chat.s3.yandex.net
 
