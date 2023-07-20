@@ -13780,13 +13780,19 @@ met-all.org##.footer
 ||metallicheckiy-portal.ru/jsscripts/testrek.html
 ||metallicheckiy-portal.ru/jsscripts/*.html
 
-! fixed header
+    ! fixed header
 metro-cc.ru###header-tabnavigation:style(position:static !important)
 metro-cc.ru##.l-page:style(padding-top:0px !important)
 metro-cc.ru##.l-page_cnt:style(margin-top:0px !important)
-! header logo
+    ! header logo
 metro-cc.ru##.b-header-fixed_logo
-! other
+    ! popups
+metro-cc.ru##.modal-root
+    ! banners and promos
+metro-cc.ru##.teaser-branded
+    ! labels
+metro-cc.ru##.product-card-photo__flags
+    ! other
 ! compacting product list
 metro-cc.ru##.middle-line > .me-box-details
 metro-cc.ru##.category_instamart
@@ -16501,8 +16507,8 @@ finance.ozon.ru##.premium-benefit-card
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
-ozon.ru##div:has(>span:has-text(/(Р|р)аспродажа|(С|с)кидк(а|и)/))
-ozon.ru##div:has(>span:has-text(/ХИТЫ НЕДЕЛИ|Новинка|Хит|Ликвидация|Оригинал|Цена что надо|бонус|баллов/))
+ozon.ru##div:has(>span:has-text(/Распродажа|Скидк(а|и)/i))
+ozon.ru##div:has(>span:has-text(/ХИТЫ НЕДЕЛИ|Новинка|Хит|Ликвидация|Оригинал|Цена что надо|бонус|баллов/i))
 ozon.ru##span:has-text(%)
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
