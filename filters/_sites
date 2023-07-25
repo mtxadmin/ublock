@@ -16505,7 +16505,8 @@ ozon.ru##[data-widget="blackFridayStatus"]
 ozon.ru##[data-widget="hammers"]
 ozon.ru##[data-widget="hotsaleMain"]
 ozon.ru##[data-widget="container"]:has([data-widget="hotsaleMain"])
-ozon.ru##[data-widget="rateBoughtItems"]
+! навязчивые предложения оценить, быстро задолбали. Разрешаем только из самого заказа или их списка 
+ozon.ru##[data-widget="rateBoughtItems"]:not(:matches-path(/my/orderdetails)):not(:matches-path(/my/orderlist))
 ozon.ru##[data-widget="actionCards"]
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/special/care/"])
