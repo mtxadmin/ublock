@@ -16475,6 +16475,7 @@ ozon.ru##button:has-text(/Подарить|в один клик/)
 ozon.ru##button:has-text(Купить в один клик)
 ozon.ru##[data-widget="webTopStreams"]:has(a[href^="/live"])
 ozon.ru##[data-widget="setOfPreviews"]
+!ozon.ru##div:has(>a[href*="ozon.onelink.me"]) - don't, this breaks mobile product pages. General rule ##[href*=".onelink.me"] works well
 ! these two rules combined break catalog on mobile. Weird.
 !ozon.ru##div:has(> a[href^="/highlight/"])
 !ozon.ru##div:has(>a[href*=campaign])
@@ -29036,3 +29037,16 @@ oxfordfabric.net###Pop_UpsBtn
 ||thenaturallaboratory.com/cdn/wpm/  # https://thenaturallaboratory.com/cdn/wpm/babd83086w6100c671p96a62313md77ea07am.js
 
 sidex.ru##.pop.webui-popover
+
+! popup
+nzmir.ru##.sg_seo_modal_block
+! fixed panel
+nzmir.ru##.right_fixed_orders
+
+rcpp19.ru##.table-of-contents
+
+vamber.ru##.code-block:has-text(зарабатывай)
+
+status-list.ru##.table-of-contents
+
+mostech-group.ru##.open.table-of-contents
