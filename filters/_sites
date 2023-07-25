@@ -8409,6 +8409,7 @@ globus.ru##.fancybox-stage
 globus.ru##.fancybox-container
 globus.ru##.floating-block
 globus.ru##.popup-fabuza
+globus.ru###cboxContent:has(#cboxLoadedContent)
     ! banners
 globus.ru##.carousel_banner
 globus.ru##.banner-top
@@ -16445,7 +16446,7 @@ ozon.ru##div:has(>a[href*="ozon.onelink.me"])
 !||ozone.ru/assets/*/bx-fe-ui-kit-typography-helper.js  # location popups  # don't, it breaks json loading
 ozon.ru##.modal:has-text(город)
 ozon.ru##.bWarnPoup
-ozon.ru##*:matches-css(position:fixed):has-text(Не нашли)
+ozon.ru##*:matches-css(position:fixed):has-text(Не нашли):not(:has-text(Не нашли нужный фильтр))
 ozon.ru##div[data-widget=alertPopup]
 !ozon.ru##.vue-portal-target - don't, filters use it too
 ozon.ru##.vue-portal-target:has-text(опрос)
