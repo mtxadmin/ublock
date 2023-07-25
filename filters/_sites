@@ -227,11 +227,7 @@
 2gis.ru##.dashboard__specialProjects
 2gis.ru##._type_whatsNew
 ! from Adguard
-2gis.*##a[href^="https://2gis.onelink.me/nw2S/"]:upward(1)
-! from Adguard
 2gis.*##._w4tulz
-! from Adguard
-2gis.*##.layout__app > a[href^="https://2gis.onelink.me/"]
 
 2kom.ru##.menu-2016:style(position:static !important)
 2kom.ru##.footer2-social
@@ -16438,7 +16434,6 @@ ozon.ru##.white-bg:style(top:0px !important)
 ozon.ru##.white-bg:style(position:static !important)
 ozon.ru##section[data-widget="searchHistory"]
 ozon.ru###stickyHeader:style(padding:initial !important; margin:initial !important; height:auto !important)
-ozon.ru##div:has(>a[href*="ozon.onelink.me"])
     ! popups
 ||ozone.ru/_nuxt/marketing-all-adv_banner.  # from Ru AdList
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
@@ -16451,6 +16446,8 @@ ozon.ru##*:matches-css(position:fixed):has-text(Не нашли):not(:has-text(�
 ozon.ru##div[data-widget=alertPopup]
 !ozon.ru##.vue-portal-target - don't, filters use it too
 ozon.ru##.vue-portal-target:has-text(опрос)
+||ozone.ru/assets/*/cms-cookie-bubble.  # is in Ru AdList
+ozon.ru##[data-widget="cookieBubble"]
     ! banners and promos
 ||ozone.ru/assets/*-banner$script
 ||ozon.ru/graphics/img/  # from Ru AdList
@@ -16459,7 +16456,7 @@ ozon.ru##.vue-portal-target:has-text(опрос)
 ||ozone.ru/graphics/bx/
 ||ozone.ru/s3/marketing-api/
 ||ozone.ru/s3/fs-chat-api/$image  # banners
-||ozone.ru/s3/cms/$image
+!||ozone.ru/s3/cms/$image - don't, category icons
 ||ozone.ru/assets/marketing
 ||ozone.ru/s3/video/cover/$image
 ozon.ru##[data-widget="banner"]
@@ -16476,7 +16473,10 @@ ozon.ru##button:has-text(/Подарить|в один клик/)
 ozon.ru##button:has-text(Купить в один клик)
 ozon.ru##[data-widget="webTopStreams"]:has(a[href^="/live"])
 ozon.ru##[data-widget="setOfPreviews"]
-ozon.ru##div:has(> a[href^="/highlight/"])
+! these two rules combined break catalog on mobile. Weird.
+!ozon.ru##div:has(> a[href^="/highlight/"])
+!ozon.ru##div:has(>a[href*=campaign])
+!
 ozon.ru##li:has(> a[href^="/highlight/"])
 ozon.ru##a[href^="/highlight/"]
 ozon.ru##div:has(>p:has-text(Оформить подписку))
@@ -16490,7 +16490,6 @@ ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not(:matches-path(/product/)
 ozon.ru##span.tsCaptionBold:has-text(/^1$/)
 ozon.ru##[data-widget="webOzonAccountPrice"]
 ozon.ru##span:has-text("успейте купить")
-ozon.ru##div:has(>a[href*=campaign])
 ozon.ru##div > a[href^="/product/podpiska"]
 !ozon.ru##div:matches-css(height:155px):has-text(Реклама) - todo: rigid sizes are not good practice
 ozon.ru##[data-widget="container"]:has-text(Реклама)
@@ -16539,6 +16538,7 @@ ozon.ru##p:has-text(Наведите камеру и скачайте)
 !ozon.ru##svg:matches-css(width:24px):matches-css(height:24px) - don't, not only footer
 ozon.ru##[data-widget="separator"]
 ozon.ru##[data-paginator-loader]
+ozon.ru##[data-widget="webSharingButton"]
 
 packtpub.com##.upsell-box
 packtpub.com##.upsell-banner
@@ -20821,7 +20821,6 @@ snob.ru##.comments__lock
 sntclub.ru##.t481__positionfixed:style(position:static !important)
 ! banners
 sntclub.ru##.rendered
-sntclub.ru##[href*="onelink.me"]
 sntclub.ru##[class*=col_form]
 sntclub.ru##[class*=text_mobile]
 sntclub.ru##[class*=wrapper]
