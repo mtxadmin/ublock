@@ -16519,7 +16519,7 @@ finance.ozon.ru##.premium-benefit-card
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
-ozon.ru##div:has(>span:has-text(/Распродажа|Скидк(а|и)/i))
+ozon.ru##div:has(>span:has-text(/Распродажа|Скидк(а|и)/i)):not(:matches-path(/my/))
 ozon.ru##div:has(>span:has-text(/ХИТЫ НЕДЕЛИ|Новинка|Хит|Ликвидация|Оригинал|Цена что надо|бонус|баллов/i))
 ozon.ru##span:has-text(%)
     ! loans
@@ -29050,3 +29050,9 @@ vamber.ru##.code-block:has-text(зарабатывай)
 status-list.ru##.table-of-contents
 
 mostech-group.ru##.open.table-of-contents
+
+registratura24.com##.progress-wrap
+
+t3travel.ru##.footer
+t3travel.ru##.slick-slider
+t3travel.ru##.card__btn
