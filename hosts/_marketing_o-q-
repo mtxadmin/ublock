@@ -1105,11 +1105,11 @@ onelink.to  # from PeterDaveHello's URL Shorteners
 onelink.me  # url shortener
 ##[href*=".onelink.me"]
     ! from Adguard
-    2gis.*##a[href^="https://2gis.onelink.me/nw2S/"]:upward(1)
+    !2gis.*##a[href^="https://2gis.onelink.me/nw2S/"]:upward(1)
     ! from Adguard
-    2gis.*##.layout__app > a[href^="https://2gis.onelink.me/"]
-    ozon.ru##div:has(>a[href*="ozon.onelink.me"])
-    sntclub.ru##[href*="onelink.me"]
+    !2gis.*##.layout__app > a[href^="https://2gis.onelink.me/"]
+    !ozon.ru##a[href*="ozon.onelink.me"]
+    !sntclub.ru##[href*="onelink.me"]
 
 onelink-translations.com  # from BlockListProject - Ads
 
