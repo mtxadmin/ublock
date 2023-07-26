@@ -3777,9 +3777,11 @@ rtyznd.com$important  # ad redirects and empty root
 
 ! Заблокированы поддомены ru.ru и ru.com. Похоже, ничего полезного там нет, зато очень много сайтов, пытающихся снять деньги. (from _wapclick - see there)
 ! Update: еще и ru.net
-||ru.com$important
-||ru.net  # from EasyPrivacy
-||ru.ru$important
+! Update: ||ru.com почему-то цепляется за https://as.dns-shop.ru/static/07/1gnrnap/ru.comments-list.js . Ну, блин, как бы так сказать, что это именно домен, а не часть урла?
+!   Этот случай есть в https://github.com/gorhill/uBlock/wiki/Syntax-quirks , ага
+||ru.com^$important
+||ru.net^  # from EasyPrivacy
+||ru.ru^$important
 reklamka.ru.net
 ! from Ru AdList
 ##a[onclick*="reklamka.ru.net"]
