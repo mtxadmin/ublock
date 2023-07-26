@@ -16498,7 +16498,7 @@ ozon.ru##[data-widget="webOzonAccountPrice"]
 ozon.ru##span:has-text("успейте купить")
 ozon.ru##div > a[href^="/product/podpiska"]
 !ozon.ru##div:matches-css(height:155px):has-text(Реклама) - todo: rigid sizes are not good practice
-ozon.ru##[data-widget="container"]:has-text(Реклама)
+ozon.ru##[data-widget="container"]:has-text(Реклама):not(:matches-path(/category/))
 ozon.ru##[data-widget=objectLine]:has-text(Ловите часы продажи)
 ozon.ru##[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
 ozon.ru##[data-widget="skuLine"]:has-text(Лучшие предложения)
