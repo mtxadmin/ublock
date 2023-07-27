@@ -1806,6 +1806,7 @@ _rebid.js  # from EasyList
 ##.banner-slider
 ##.banner-slider-container
 ##.banner-slider-wrapper
+##.banner-small
 ##.banners
 ##.banners-bottom
 ##.banners-item
@@ -2483,6 +2484,7 @@ volveter.ru##.has_offer_prop
 /AkamaiMediaAnalytics.  # from EasyPrivacy
 /AkamaiTrackingPixel.  # from EasyPrivacy
 /alerte_tracking.  # from Ru AdList
+/altasib.errorsend/*  # bitrix
 /amp-analytics
 /amp-geo-  # from EasyPrivacy
 _analytics.js?  # from EasyPrivacy
@@ -4622,6 +4624,7 @@ _snowstorm-min.js  # from Ru AdList
 
 !! quickviews
 ##.catalog-fast-view
+##.fast-view
 ##.fast_view_block
 ##.getFastView
 ##.products-view-quickview
@@ -5708,11 +5711,13 @@ tarif-24.ru##.mh-ticker-bottom
 /carbon_sticky_ads.js
 /hc-sticky/*
 /hc-sticky.min.js
-/jquery.sticky/*
-/jquery.sticky.js$important
-/jquery.sticky.min.js
-/jquery.sticky-kit.min.js
-/jquery.stickyPanel.min.js
+/jquery.sticky$script,important
+    ! /jquery.sticky/*
+    ! /jquery.sticky2
+    ! /jquery.sticky.js$important
+    ! /jquery.sticky.min.js
+    ! /jquery.sticky-kit.min.js
+    ! /jquery.stickyPanel.min.js
 /sticky/*$domain=~twitter.com|~twimg.com
 /sticky.js
 /sticky.min.js
