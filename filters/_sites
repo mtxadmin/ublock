@@ -2643,11 +2643,11 @@ banki.ru##*:matches-css(position:fixed)
 ||banki.ru/*/HomePageBundle/slider/$image  # banners
 banki.ru##div:has(>a[href^="/news/special_project/"])
 ! тремя правилами ниже скрывается внутренняя реклама. К сожалению, при этом может зацепляться нужное. Пока добавлены исключения по пути, возможно, будут дополняться
-banki.ru##section:has(div:has(>a[href*="/news/partners/"])):not(:matches-path(\/products/))
-banki.ru##section[data-gtm-view]:has(a[href*="tracking.banki.ru"]):not(:matches-path(\/products/))
+banki.ru##section:has(div:has(>a[href*="/news/partners/"])):not(:matches-path(/\/products\//))
+banki.ru##section[data-gtm-view]:has(a[href*="tracking.banki.ru"]):not(:matches-path(/\/products\//))
     ! вот так интересно даже в продуктах
     banki.ru##a[href*="https://tracking.banki.ru/"]
-banki.ru##section:has(a[data-role=button]):not(:matches-path(\/products/))
+banki.ru##section:has(a[data-role=button]):not(:matches-path(/\/products\//))
 ! promos
 banki.ru##[class^=AggregatorCalc]
 ! space for banners
@@ -8955,7 +8955,7 @@ habr.com##p:has(a[href^="https://otus.pw/"])
 habr.com##.spoiler:has(a[href*="wunderfund.io"])
     ! remove ads from posts list
 ! Mvideo SMM (and links)
-habr.com##.tm-articles-list__item:has(a.tm-user-info__username[href$="/fedorborovitsky/"]):not(:matches-path(\/posts/))
+habr.com##.tm-articles-list__item:has(a.tm-user-info__username[href$="/fedorborovitsky/"]):not(:matches-path(/\/posts\//))
     ! socials
 habr.com##div.default-block_sidebar:has-text(Twitter)
 habr.com##div.default-block_sidebar:has-text(ВКонтакте)
@@ -16517,14 +16517,14 @@ ozon.ru##button span:has-text(Ozon Картой)
 ! not aside column, but banner
 ! update: there is an "real" aside there too
 !ozon.ru##aside
-ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not(:matches-path(\/product/))
+ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not(:matches-path(/\/product\//))
 ! fake notifications
 ozon.ru##span.tsCaptionBold:has-text(/^1$/)
 ozon.ru##[data-widget="webOzonAccountPrice"]
 ozon.ru##span:has-text("успейте купить")
 ozon.ru##div > a[href^="/product/podpiska"]
 !ozon.ru##div:matches-css(height:155px):has-text(Реклама) - todo: rigid sizes are not good practice
-ozon.ru##[data-widget="container"]:has-text(Реклама):not(:matches-path(\/category/))
+ozon.ru##[data-widget="container"]:has-text(Реклама):not(:matches-path(/\/category\//))
 ozon.ru##[data-widget=objectLine]:has-text(Ловите часы продажи)
 ozon.ru##[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
 ozon.ru##[data-widget="skuLine"]:has-text(Лучшие предложения)
@@ -16537,7 +16537,7 @@ ozon.ru##[data-widget="hammers"]
 ozon.ru##[data-widget="hotsaleMain"]
 ozon.ru##[data-widget="container"]:has([data-widget="hotsaleMain"])
 ! навязчивые предложения оценить, быстро задолбали. Разрешаем только из самого заказа или их списка 
-ozon.ru##[data-widget="rateBoughtItems"]:not(:matches-path(\/my/orderdetails)):not(:matches-path(\/my/orderlist))
+ozon.ru##[data-widget="rateBoughtItems"]:not(:matches-path(/my/orderdetails)):not(:matches-path(/my/orderlist))
 ozon.ru##[data-widget="actionCards"]
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/special/care/"])
@@ -16550,7 +16550,7 @@ ozon.ru##a[href="/travel/"]:has(img)
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
-ozon.ru##div:has(>span:has-text(/Распродажа|Скидк(а|и)/i)):not(:matches-path(\/my/))
+ozon.ru##div:has(>span:has-text(/Распродажа|Скидк(а|и)/i)):not(:matches-path(/\/my\//))
 ozon.ru##div:has(>span:has-text(/ХИТЫ НЕДЕЛИ|Новинка|Хит|Ликвидация|Оригинал|Цена что надо|бонус|баллов/i))
 ozon.ru##span:has-text(%)
     ! loans
