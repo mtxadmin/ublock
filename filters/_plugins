@@ -1355,6 +1355,9 @@
 /plugins/link-whisper
     ! /plugins/link-whisper-premium/*
 
+!/plugins/litespeed-cache/* - don't. Just for information here. It's just a cache plugin. See https://wordpress.com/plugins/litespeed-cache
+    !/litespeed/*$script  - also, in general don't block. Yes, it can contain ad scripts in /wp-content/litespeed/js/, but.  # And definitely, don't block css (/wp-content/litespeed/css/...)
+
 /plugins/litres-plugin/*
 
 /plugins/live-news/*
