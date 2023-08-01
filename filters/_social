@@ -178,8 +178,10 @@ facebook.com,facebookcorewwwi.onion#@#.post-ads
 facebook.com,facebookcorewwwi.onion#$#body > .AdBox.Ad.advert { display:block!important; }
 ! exclusions end
 ##.facebook
-! Exclusions: medium.com projects (there are two-letters obfuscated divs)
-~belarus2020.org,~medium.com,~towardsdatascience.com##.fb
+~belarus2020.org,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru##.fb
+    ! Exclusions:
+    ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
+    ! ozon.ru - random two-letter classes
 ! is in 3 lists
 ##.fb-like
 ! is in Adguard and Fanboy's
@@ -358,8 +360,10 @@ vk.com###donation_app_widget
 ##.icon_vkontakte
 ##.ico-vkontakte
 ##.icon-vkontakte
-! Exclusions: medium.com projects (there are two-letters obfuscated divs)
-~belarus2020.org,~medium.com,~towardsdatascience.com,~vk.com##.vk
+~belarus2020.org,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~vk.com##.vk
+    ! Exclusions:
+    ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
+    ! ozon.ru - random two-letter classes
 ###vk
 !##[class$="-vk"]
 ! is in Adguard
@@ -505,12 +509,12 @@ ok.ru##.invite-block
 ##.icons-ok
 ##.like-od
 ##.odnoklassniki
-! Exclusions: medium.com projects (there are two-letters obfuscated divs)
-~belarus2020.org,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com##.ok
+~belarus2020.org,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,ozon.ru,ok.ru##.ok
     ! Exclusions:
     ! flagma.cz - not odnoklassniki, OK button
     ! belarus2020.org - voting platform (not very successful, but)
     ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random classes, medium engine
+    ! ozon.ru - random two-letter classes
     !
     !argumenti.ru##.ok
     !splav.ru##.ok
@@ -825,10 +829,12 @@ twitter.com##+js(href-sanitizer, a[href^="https://t.co/"])
 ##.ico-tw
 ##.ico-twttr
 ##.like-tw
-~belarus2020.org,~fandom.com,~medium.com,~towardsdatascience.com##.tw
+~belarus2020.org,~fandom.com,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru##.tw
     ! Exclusions:
-    ! medium.com projects (there are two-letters obfuscated divs)
     ! fandom.com: false-positive, there are no socials in wikis
+    ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
+    ! ozon.ru - random two-letter classes
+    !
     !argumenti.ru##.tw
     !torex.ru##.tw
     !vesti.ru##.tw
@@ -2086,17 +2092,19 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ##.like-us
 ##.likeUsLayer
 ##.likes-widget-placeholder
-~medium.com,~ozon.com,~ozon.ru,~towardsdatascience.com##.lj
+~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~livejournal.com##.lj
     ! Exclusions:
-    ! medium.com projects - there are two-letter obfuscated divs
-    ! ozon - two-letter random divs
+    ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
+    ! ozon.ru - random two-letter classes
 ##.lj-like
 
 ##.menu-icon-tw
 ##.menu-icon-go
 ##.repost-button
-! Exclusions: medium.com projects (there are two-letters obfuscated divs)
-~belarus2020.org,~medium.com,~nnmclub.ch,~nnmclub.to,~towardsdatascience.com##.tg
+~belarus2020.org,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru##.tg
+    ! Exclusions:
+    ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
+    ! ozon.ru - random two-letter classes
 ##.tips
 ###uLogin
 ##.ulogin_block
