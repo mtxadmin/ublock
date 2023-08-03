@@ -16517,7 +16517,7 @@ ozon.ru##button span:has-text(Ozon Картой)
 ! not aside column, but banner
 ! update: there is an "real" aside there too
 !ozon.ru##aside
-ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not(:matches-path(/\/product\//))
+ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not(:matches-path(/\/product\//)):not(:matches-path(/gocheckout))
 ! fake notifications
 ozon.ru##span.tsCaptionBold:has-text(/^1$/)
 ozon.ru##[data-widget="webOzonAccountPrice"]
