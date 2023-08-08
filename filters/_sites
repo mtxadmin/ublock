@@ -16551,6 +16551,8 @@ ozon.ru##[data-widget="hotsaleMain"]
 ozon.ru##[data-widget="container"]:has([data-widget="hotsaleMain"])
 ! навязчивые предложения оценить, быстро задолбали. Разрешаем только из самого заказа или их списка 
 ozon.ru##[data-widget="rateBoughtItems"]:not(:matches-path(/my/orderdetails)):not(:matches-path(/my/orderlist))
+! inline related - полезно, но не надо сходу в нос совать. Ниже после отзывов там еще один такой же блок есть, тот оставлен
+ozon.ru##div:has-text(Вам помог этот отзыв) ~ [data-widget="skuGrid"]
 ozon.ru##[data-widget="actionCards"]
 ozon.ru##[data-widget="objectLine"]:has-text(/распродаж/i)
 ozon.ru##div[data-widget="skuGrid"]:matches-path(miniapp=)
