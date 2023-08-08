@@ -16530,7 +16530,7 @@ ozon.ru##button span:has-text(Ozon Картой)
 ! update: there is an "real" aside there too
 !ozon.ru##aside
 ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not(:matches-path(/\/product\//)):not(:matches-path(/gocheckout))
-ozon.ru##div:has(>div>svg):has(>div:has-text(/Скидка .* ₽ при оплате Ozon Картой/))
+ozon.ru##div:has(>div>svg):has(>div:has-text(/скидк(а|у) .* ₽ при оплате Ozon Картой/i))
 ! fake notifications
 ozon.ru##span.tsCaptionBold:has-text(/^1$/)
 ozon.ru##[data-widget="webOzonAccountPrice"]
