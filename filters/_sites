@@ -4478,15 +4478,21 @@ cnev.ru##.uk-sticky-fixed:style(position:static !important)
 
 ! that's from Ru AdList, disabled
 @@||cnews.ru^$generichide,badfilter
+    ! top
 cnews.ru##.tizer_stick:style(position:static !important)
 cnews.ru##.nav_stick:style(position:static !important)
 cnews.ru##.header-inner
-events.cnews.ru##.right-block
+    ! banners and promos
 cnews.ru##.banner_new_design
 cnews.ru##.pr-item
 cnews.ru##.market-item
+cnews.ru##.ns_item
+    ! other
+events.cnews.ru##.right-block
 ! from Adguard
 cnews.ru##article > a.other-news-note
+! url shortener
+cnews.ru##.copy-link.copy-btn
 
 ||cnn.com/media/sites/cnn/video-placeholder.svg
 cnn.com###breaking-news
@@ -7674,6 +7680,8 @@ forbes.ru##.block-bnr-in-text
 forbes.ru##.main-menu:style(padding-top:0px !important)
 forbes.ru##.header-bottom:style(margin-top:0px !important)
 forbes.ru##a:has-text(Партнерский материал)
+! sticky div after the footer
+forbes.ru##footer ~ div
 
     ! paywall
 foreignpolicy.com##.content-gated:style(display:initial !important)
@@ -8292,6 +8300,7 @@ docs.github.com##.tooltipped
 github.io##.article-author-side
 github.io##article.post:style(margin-left:40px !important)
 github.io###banner
+github.com##.flash:has-text(Sign in to comment)
 docs.github.com##.arrow-for-scrolling-top
 docs.github.com##.article-grid-toc-content:style(position:static !important)
 docs.github.com##.octicon
@@ -8718,6 +8727,7 @@ graylog.org##.topic-hero h1:style(color:initial !important)
 graylog.org##.left_sidebar_main:style(position:static !important)
 graylog.org##.left_sidebar_nav_menu:style(height:auto !important)
 graylog.org##.left-arrow
+graylog.org##.sidebar-wrapper:style(position:static !important)
     ! sticky right
 graylog.org##.right_sidebar_sticky
     ! other
@@ -8726,6 +8736,7 @@ graylog.org##.watermark_logo
 graylog.org##.article-vote-container
 graylog.org##.w-button
 graylog.org##.promo_001
+graylog.org##.signup-cta
 
 greendail.ru###footer
 
@@ -9646,6 +9657,7 @@ howtogeek.com##footer ~ div
     ! inline related
 howtogeek.com##.relatedside
 howtogeek.com##p:has-text(/RELATED:/)
+howtogeek.com##.related-single
     ! other
 howtogeek.com##.message
 howtogeek.com###colophon
@@ -14507,6 +14519,7 @@ mssqltips.com##.hide-for-print
 ||mssqltips.com/images/mslogo$image
 mssqltips.com##.wistia_responsive_padding
 mssqltips.com##article > div:has-text(Free MSSQLTips)
+mssqltips.com##table:has(a[href^="https://www.mssqltips.com/sql-server-webcast-signup/"])
 
 m-strana.ru$inline-script  # site blocks copypaste
     ! top
@@ -16440,7 +16453,6 @@ ozerki.ru##.g-section_banner
 ||ozon.ru/dlte/multi
 ||ozon.ru/st/service-worker/
 ||ozone.ru/s3/hotsale-api/$image
-ozon.ru##div[trackinginfo]
 ||ozone.ru/_nuxt/pdp-all-sharing-button*
 ||ozone.ru/graphics/new_no_photo.png$redirect=2x2.png
 ||ozone.ru/assets/cms-desktop-promo
@@ -16518,6 +16530,7 @@ ozon.ru##button span:has-text(Ozon Картой)
 ! update: there is an "real" aside there too
 !ozon.ru##aside
 ozon.ru##div > div:has-text(/Ozon\s*Картой$/):not(:matches-path(/\/product\//)):not(:matches-path(/gocheckout))
+ozon.ru##div:has(>div>svg):has(>div:has-text(/Скидка .* ₽ при оплате Ozon Картой/))
 ! fake notifications
 ozon.ru##span.tsCaptionBold:has-text(/^1$/)
 ozon.ru##[data-widget="webOzonAccountPrice"]
@@ -16539,6 +16552,8 @@ ozon.ru##[data-widget="container"]:has([data-widget="hotsaleMain"])
 ! навязчивые предложения оценить, быстро задолбали. Разрешаем только из самого заказа или их списка 
 ozon.ru##[data-widget="rateBoughtItems"]:not(:matches-path(/my/orderdetails)):not(:matches-path(/my/orderlist))
 ozon.ru##[data-widget="actionCards"]
+ozon.ru##[data-widget="objectLine"]:has-text(/распродаж/i)
+ozon.ru##div[data-widget="skuGrid"]:matches-path(miniapp=)
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/special/care/"])
 ozon.ru##[data-widget="userAvatar"]
@@ -16559,6 +16574,7 @@ ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 ozon.ru##div > a[href="https://www.ozon.ru/section/limit"]
 ozon.ru##div:has(>span:has-text(/^Частями по /))
 ozon.ru##span:has-text(/^Частями по /)
+ozon.ru##div:has(> span:has-text(В рассрочку))
     ! seo
 ozon.ru##[data-widget="semanticText"]
 ozon.ru##[data-widget="tagList"]
@@ -16567,11 +16583,16 @@ ozon.ru##div:has-text(/^\s*Товар куплен на OZON\s*$/)
 ozon.ru##[data-widget="createReviewButton"]:has-text(честный рейтинг)
     ! bottom
 ozon.ru##a:has(img[alt="Ozon Job"])
+    ! tracking
+!ozon.ru##div[trackinginfo] - payment methods fall in in (/gocheckout)
+ozon.ru##*:remove-attr(trackinginfo)
+    ! apps
+ozon.ru##p:has-text(Наведите камеру и скачайте)
+||ozone.ru/s3/cms/*/qr-code$image
     ! other
 ozon.ru##.vacancy__actions:style(position:static !important)
 ozon.ru##.vacancy__benefits
 ozon.ru##h3
-ozon.ru##p:has-text(Наведите камеру и скачайте)
 !ozon.ru##.b4u0 - a random one, don't
 ! footer icons
 !ozon.ru##svg:matches-css(width:24px):matches-css(height:24px) - don't, not only footer
@@ -18535,6 +18556,7 @@ redcocktube.com##.s_desc
 ||redditstatic.com/desktop2x/PushNotifications
 ! ||redditstatic.com/desktop2x/vendors - don't, maybe? Threads...
 ||redditstatic.com/gold/awards/icon/Animated
+||reddit.com/counters/$important  # is in EasyPrivacy
 ||reddit.com/desktopapi/v1/sidebar_ad$important
 ! from uBlock Privacy
 ! https://www.reddit.com/r/uBlockOrigin/comments/b9qsix/new_reddit_tracks_a_ton_more_data_someone_said/
@@ -18542,7 +18564,7 @@ redcocktube.com##.s_desc
 ||reddit.com/desktopapi/v1/comments_page_ads$important
 ||reddit.com/errors
 ||reddit.com/static/$3p  # is in Fanboy's
-||reddit.com/counters/$important  # is in EasyPrivacy
+||reddit.com/sw.$script  # service worker
 !||reddit.com/svc/shreddit/perfMetrics
     /shreddit/perfMetrics  # from EasyPrivacy
 ||reddit.com/timings/  # from EasyPrivacy
@@ -23178,6 +23200,9 @@ trackingmore.com##.service-text
 
 ||tradingview.com/ping
 ! s3.tradingview.com/tv.js
+! don't. Moreover, it's an useful 3p chart block
+@@||tradingview.com/tv.js  # 3p charts
+@@||tradingview.com/*/widgetembed/  # 3p charts
     ! popups
 ! yes, it is an ad popup
 tradingview.com##[class^=banner-]
@@ -29146,3 +29171,18 @@ mirtyrista.ru###footerBottom
 autoventuri.ru##.bx_areas
 
 delikatess-dich.ru##.navbar-nav:style(position:static !important)
+
+! unstick
+stackhero.io##aside:style(position:static !important)
+! promos
+stackhero.io##blockquote:has-text(Stackhero offers)
+
+! top
+malls.ru##table:has-text(в Telegram-канале)
+
+retail.ru##.sticky-right-colom:style(position:static !important)
+
+||music-hit.com/img/new_music.png
+music-hit.com##.artist_block-bio:has-text(слушать онлайн песни бесплатно)
+
+saltmg.ru##[href^="https://saltmg.ru/akczii/"]
