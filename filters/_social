@@ -1508,7 +1508,9 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 !
 ##[class*="Follow"]:not(html):not(body):not(article)
 ##[id*="Follow"]:not(html):not(body):not(article)
-~medtehno.ru##[class*="follow"]:not(html):not(body):not(article):not(.main-container)
+~medtehno.ru,~timepad.ru##[class*="follow"]:not(html):not(body):not(article):not(.main-container)
+    ! Exclusions:
+    ! timepad.ru - .mfollowedbyicon* in the booking form
 ~facebook.com,~vk.com##[id*="follow"]:not(html):not(body):not(article)
 
 ! Exclusions: on oracle.com there are many elements with class="selectionShareable"
