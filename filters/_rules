@@ -2508,8 +2508,8 @@ _analytics.js?  # from EasyPrivacy
     ! alfabank - финансовая аналитика по счету
     ! duckduckgo - it blocks any search about analytics. Other search systems are ok.
     ! github - granular rules:
-        ||githubassets.com/assets/vendors-node_modules_github_hydro-analytics  # analytics
-        ! githubassets.com/assets/ui_packages_analytics-provider_analytics-provider_ts-app_assets_modules_react-code-view_pages  # this one must be unblocked
+        ! ||githubassets.com/assets/vendors-node_modules_github_hydro-analytics  # analytics  # this one must be unblocked - some functionality is broken (labels and editing)
+        ! ||githubassets.com/assets/ui_packages_analytics-provider_analytics-provider_ts-app_assets_modules_react-code-view_pages  # this one must be unblocked
     ! sberbank & domclick:
         ! увы, но иначе в Сбербанк и Домклик не входит
         !||sberbank.ru/*analytics$script,redirect=noopjs
