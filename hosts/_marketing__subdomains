@@ -5,7 +5,7 @@
 ! List of known subdomains (where main domain itself is legit)
 !
 ! Some individual subdomains may be in other files
-
+!
 
 !! general subdomains
 
@@ -14,9 +14,9 @@ a02342.thestrad.com  # https://a02342.thestrad.com/wrapperMessagingWithoutDetect
 
 /ablink.
 
-/ad.
-    ||ad.kinozal.  # from Ru AdList
-    ||ad.kinozaltv.  # from Ru AdList
+/ad.  # this form is time-proven, but it can be ||ad. (not including some elements though)
+    ! ||ad.kinozal.  # from Ru AdList
+    ! ||ad.kinozaltv.  # from Ru AdList
 ad.12dt.com  # from Quidsup NoTrack-Blocklist
 ad.3dnews.com
 ad.a8.net
@@ -93,19 +93,44 @@ ad.wretch.cc  # Yahoo. From MVPS
 ad.wynk.in  # from AdGuard
 
 # from github.com/asterriya/regex-ads/ . Reasonable.
+/ad0.
 /ad1.
 /ad2.
 /ad3.
+/ad4.
+/ad5.
+/ad6.
+/ad7.
+/ad8.
+/ad9.
+/ad10.
+ad0.bigmir.net
+ad1.bigmir.net
+ad2.bigmir.net
+ad3.bigmir.net
+ad4.bigmir.net
+ad5.bigmir.net
+ad6.bigmir.net
+ad7.bigmir.net
 ad1.sibnet.ru  # from Ru AdList
 ad2.lupa.cz  # from Peter Lowe's Ad and tracking server list
 ad2.rambler.ru  # from Adguard
 ad3.rambler.ru  # from Adguard
+ad1.udn.com  # from Adguard
+ad2.udn.com  # from Adguard
+ad3.udn.com  # from Adguard
+ad4.udn.com  # from Adguard
+ad5.udn.com  # from Adguard
 
 /adbmetrics.
 adbmetrics.eldiariomontanes.es  # from Adguard
 adbmetrics.elnortedecastilla.es  # from Adguard
 adbmetrics.ideal.es  # from Adguard
 adbmetrics.xn--futuroenespaol-1nb.es  # from Adguard
+
+/adcache.
+adcache.aftenposten.no  # from Dan Pollock's hosts file  # zombie
+adcache.nymag.com
 
 /adexchange.
 
@@ -1187,6 +1212,8 @@ metrics.nissan.lv  # from Adguard
 metrics.nrma.com.au  # from Adguard
 metrics.ntnews.com.au  # from Adguard
 metrics.nykredit.dk  # from Adguard
+metrics.nymag.com
+metrics.prom.third-party-app.sberdevices.ru  # sbrf
 metrics.pfizerpro.com  # from Adguard
 metrics.us.playstation.com$important
 metrics.plex.tv  # plex.tv - Tracker  # from Quidsup NoTrack-Blocklist
@@ -2461,7 +2488,6 @@ kino.afisha21.ru  # from GoodbyeAds
 
 u.afp.com  # private URL shortener
 
-adcache.aftenposten.no  # from Dan Pollock's hosts file  # zombie
 oasfile.aftenposten.no  # from Dan Pollock's hosts file
 webhit.aftenposten.no  # from Dan Pollock's hosts file  # zombie
 
@@ -2905,14 +2931,6 @@ mail9.bigcommerce.com
 payments.bigcommerce.com
 sv.bigcommerce.com
 
-ad0.bigmir.net
-ad1.bigmir.net
-ad2.bigmir.net
-ad3.bigmir.net
-ad4.bigmir.net
-ad5.bigmir.net
-ad6.bigmir.net
-ad7.bigmir.net
 adi.bigmir.net  # from Energized Blu
 c.bigmir.net$important  # it is at least in 6 lists
 i.bigmir.net  # from Energized Blu  # is in MVPS
@@ -3993,8 +4011,6 @@ remp.nv.ua  # no root
 ! campaign.remp.nv.ua  # ad scripts
 
 acache.nymag.com
-adcache.nymag.com
-metrics.nymag.com
 pixel.nymag.com
 promo.nymag.com
 sstats.nymag.com
@@ -4312,6 +4328,7 @@ mpclickstream.online.sberbank.ru
 pfm-stat.online.sberbank.ru
 scr.online.sberbank.ru  # analytics
 visor.sberbank.ru  # from EasyPrivacy
+webclickstream.online.sberbank.ru  # webclickstream.online.sberbank.ru/metrics/
 
 visitor.sbis.ru  # ad xhrs  # visitor.sbis.ru/consumertracking/service/user_error/
 
@@ -4652,12 +4669,6 @@ sys000.ucoz.net$important
 ucounter.ucoz.net$important
 
 page-events-ustats.udemy.com  # is in EasyPrivacy
-
-ad1.udn.com  # from Adguard
-ad2.udn.com  # from Adguard
-ad3.udn.com  # from Adguard
-ad4.udn.com  # from Adguard
-ad5.udn.com  # from Adguard
 
 cosmeticscentre.uk.com  # from Dan Pollock's hosts file
 search123.uk.com  # from EasyList
