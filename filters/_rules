@@ -543,11 +543,12 @@ _468.gif  # from CJX's EasyList Lite
 .ace.advertising.  # from EasyList
 /achecker.js
 ! here are some false positives in URL. But generally this rule is very good
-/ad/*$important,all,domain=~1000.menu|~alza.de|~condenast-media.gcdn.co|~dhresource.com|~etutorium.com|~habr.com|~habrastorage.org|~imfdb.org|~livemaster.ru
+/ad/*$important,all,domain=~1000.menu|~alza.de|~condenast-media.gcdn.co|~dhresource.com|~etutorium.com|~habr.com|~habrastorage.org|~imfdb.org|~livemaster.ru|~xnxx.com
     ! Exclusions:
     ! alza.de - images (https://cdn.alza.de/Foto/f8/AD/ADL27u31p.jpg)
     ! condenast-media.gcdn.co (admagazine.ru) is not ads, it is Arch Design
     ! habr.com & habrastorage.org - images
+    ! xnxx.com - images
 _ad.aspx  # from Adguard
 _ad.gif|  # from EasyList
 /ad.aspx  # from Adguard
@@ -5756,7 +5757,7 @@ tarif-24.ru##.mh-ticker-bottom
 ###progress
 ##.progress-amt
 ###progressBar
-##.progress-bar
+~xnxx.com##.progress-bar
 ##.progress-container
 ##.reading-progress
 ##.scroll-bar
