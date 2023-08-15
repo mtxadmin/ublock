@@ -2927,6 +2927,8 @@ ozon.ru$removeparam=keywords
 ozon.ru$removeparam=layout_container
 ozon.ru$removeparam=layout_page_index
 !ozon.ru$removeparam=miniapp - don't, incorrect redirection at least on sellers
+    ||ozon.ru/product/$removeparam=miniapp
+    ozon.ru/*/?miniapp=supermarket$removeparam=miniapp
 ozon.ru$removeparam=oos_search
 ozon.ru$removeparam=sh  # doesn't work though
 ozon.ru$removeparam=start_page_id
