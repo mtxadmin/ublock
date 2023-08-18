@@ -1290,6 +1290,8 @@ amalgama-lab.com##.forest
 amazon.com##.nav-flyout
     ! banners and promos
 amazon.com##.a-carousel
+! errors 500 from EU with dog pictures
+amazon.com##[href^="/dogsofamazon"]
     ! other
 ! see in _marketing: fls-na.amazon.com$important
 ! see in _marketing: cloudfront-labs.amazonaws.com$important
@@ -9199,16 +9201,25 @@ hft.ru##.footer__pay
 ||hhcdn.ru/ichameleon/$image
 ||hhcdn.ru/uxfeedback/
 !
-/employer-logo/$image,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
-  ! ||hhcdn.ru/employer-logo/$image
-  ! ||hh.ru/employer-logo/$image
-  ! ||hh.kz/employer-logo/$image
 ! "Automatic publicPath is not supported in this browser"
 hh.ru##+js(set, publicPath, empty)
+    ! popups
+hh.ru##[class^=wrapper]:has-text(приложении)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=overlay]
+hh.ru##[class^=container--]
+! задолбали продвигать свой автопоиск
+hh.ru##.supernova-notification:has-text(автопоиск)
+hh.ru##.supernova-navi-counter_dot-only
+!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay - todo, there are some useful popups
+    hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay:has-text(Пусть поднимает бот)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-notification
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-drop:has-text(Понятно)
+hh.ru##[class^=wrapper-]:has-text(cookie)
     ! top
 hh.ru,career.ru##.HH-RelatedVacanciesPreview-StickyContainer
 hh.ru,career.ru##.navi__menu:style(position:static !important)
 hh.ru##.tmpl_hh_top:style(position:static !important)
+hh.ru##.tmpl_hh_content:style(margin-top:0px !important; margin-bottom:0px !important)
 hh.ru##[class^=important-notifications]
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-button:style(color:initial !important; background:#fff !important)
     ! banners and promos
@@ -9253,9 +9264,14 @@ hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.k
 ! inline
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=smiles-wrapper]
     ! logos
+/employer-logo/$image,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
+  ! ||hhcdn.ru/employer-logo/$image
+  ! ||hh.ru/employer-logo/$image
+  ! ||hh.kz/employer-logo/$image
+||hh.ru/logos/$image
 hh.ru##.idc-logo-block
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=footer-nav-logo]
-||hh.ru/logos/$image
+hh.ru##.employer-sidebar__logo-container
     ! socials
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-gap_top:has-text(Вход через соцсети)
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-form-item:has-text(через соцсеть)
@@ -9270,17 +9286,6 @@ hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.k
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_gplus
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_dnr
 ||i.hh.ru/css/globals/blocks/dashboard-tiles/viber__min_.svg
-    ! popups
-hh.ru##[class^=wrapper]:has-text(приложении)
-hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=overlay]
-hh.ru##[class^=container--]
-! задолбали продвигать свой автопоиск
-hh.ru##.supernova-notification:has-text(автопоиск)
-hh.ru##.supernova-navi-counter_dot-only
-!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay - todo, there are some useful popups
-    hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay:has-text(Пусть поднимает бот)
-hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-notification
-hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-drop:has-text(Понятно)
     ! apps
 ||hh.ru/*/index-messengers-bots/
 hh.ru,hh.kz##.messengers-bots-qr-code
@@ -9337,7 +9342,6 @@ hh.ru,career.ru##div.vacancy-serp-item:has-text(/Компьютерный мас
 hh.ru##.account-login-social-icon
 hh.ru##.applicant-phone-container
 hh.ru##div.serp-special
-hh.ru##.employer-sidebar__logo-container
 hh.ru##.supernova-dashboard-footer
 hh.ru##.related-vacancies-preview_sticky:style(position:static !important)
 hh.ru##.idc-head
