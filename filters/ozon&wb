@@ -185,7 +185,9 @@ ozon.ru##h3
 ! footer icons
 !ozon.ru##svg:matches-css(width:24px):matches-css(height:24px) - don't, not only footer
 ozon.ru##[data-widget="separator"]
-!ozon.ru##[data-paginator-loader] - don't. It worked earlier, but now it hides full description and somehow orderlist
+ozon.ru##[data-paginator-loader]
+  ! Update: it worked earlier, but now it hides full description and somehow orderlist. Update2: no, that's not this rule. Seems to be site glitches, sometimes working and sometimes not. Weird.
+!
 ozon.ru##[data-widget="webSharingButton"]
 
     ! Wildberries
