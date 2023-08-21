@@ -104,6 +104,7 @@ overclockers.ru#?#.spoiler-block:has(> .spoiler-body > [id^="yandex_rtb_"])
 ! from Ru AdList
 overclockers.ru##div[itemprop="articleBody"] > div[id^="yandex_rtb"] ~ br
 
+overclockers.ru##.over-pay
 !
 ! from Ru AdList
 overclockers.ru##[id^="pipMtbRoot"]
@@ -135,12 +136,12 @@ overclockers.ru##.right-content-wrap.sticky-container
     ! from Adguard
     !overclockers.ru##.right-content-wrap > div.right-sticky-content
 !
-! from Adguard
-overclockers.ru##.mainlist-inline-an
-! from Adguard
-overclockers.ru##.mainlist-inline-an.regard
 ! from Ru AdList
 overclockers.ru##.mainlist-inline-an > :not(.tag-trend)
+    ! from Adguard
+    ! overclockers.ru##.mainlist-inline-an
+    ! from Adguard
+    ! overclockers.ru##.mainlist-inline-an.regard
 ! from Ru AdList
 overclockers.ru##.mainlist-inline-an[class*="main-articles"]
 !
@@ -266,6 +267,7 @@ overclockers.ru##.newsline-item:has(a[href^="/itnews/show/"])
 overclockers.ru##.newsline-item:has(a[href^="/itnews/show/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/itnews/show/"])
 !
+!
 !! redactors
 ! bot-like news
 overclockers.ru##.newsline-item:has(a[href="/author/show/Михаил Андреев"])
@@ -277,84 +279,137 @@ overclockers.ru##.event:has-text(/Aliexpress/i)
 overclockers.ru##.mobile-hide-news:has-text(/Aliexpress/i)
 !
 !! bots
-overclockers.ru##.article-wrap:has(a[href="/blog/TEXHAPb"])
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/TEXHAPb"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/TEXHAPb/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/TEXHAPb/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/TEXHAPb/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/TEXHAPb/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/TEXHAPb/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/ProKino"])
+overclockers.ru##.article-wrap:has(a[href="/blog/ProKino"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/ProKino/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/ProKino/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/ProKino/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/ProKino/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/ProKino/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/AngryLibrarian"])
+overclockers.ru##.article-wrap:has(a[href="/blog/AngryLibrarian"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/AngryLibrarian/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/AngryLibrarian/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/AngryLibrarian/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/AngryLibrarian/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/AngryLibrarian/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/Razg0n_blog"])
+overclockers.ru##.article-wrap:has(a[href="/blog/Razg0n_blog"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/Razg0n_blog/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/Razg0n_blog/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Razg0n_blog/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/Razg0n_blog/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/Razg0n_blog/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/amv212"])
+overclockers.ru##.article-wrap:has(a[href="/blog/amv212"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/amv212/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/amv212/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/amv212/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/amv212/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/amv212/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/Technoblog"])
+overclockers.ru##.article-wrap:has(a[href="/blog/Technoblog"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/Technoblog/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/Technoblog/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Technoblog/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/Technoblog/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/Technoblog/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/Fantoci"])
+overclockers.ru##.article-wrap:has(a[href="/blog/Fantoci"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/Fantoci/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/Fantoci/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Fantoci/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/Fantoci/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/Fantoci/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/Zeroblog"])
+overclockers.ru##.article-wrap:has(a[href="/blog/Zeroblog"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/Zeroblog/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/Zeroblog/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Zeroblog/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/Zeroblog/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/Zeroblog/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/RoadToKnowledge"])
+overclockers.ru##.article-wrap:has(a[href="/blog/RoadToKnowledge"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/RoadToKnowledge/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/RoadToKnowledge/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/RoadToKnowledge/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/RoadToKnowledge/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/RoadToKnowledge/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/Deep_FPGA"])
+overclockers.ru##.article-wrap:has(a[href="/blog/Deep_FPGA"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/Deep_FPGA/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/Deep_FPGA/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Deep_FPGA/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/Deep_FPGA/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/Deep_FPGA/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/Zelikman"])
+overclockers.ru##.article-wrap:has(a[href="/blog/Zelikman"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/Zelikman/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/Zelikman/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Zelikman/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/Zelikman/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/Zelikman/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/DenebCore"])
+overclockers.ru##.article-wrap:has(a[href="/blog/DenebCore"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/DenebCore/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/DenebCore/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/DenebCore/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/DenebCore/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/DenebCore/"])
 !
-overclockers.ru##.article-wrap:has(a[href="/blog/RaddaR"])
+overclockers.ru##.article-wrap:has(a[href="/blog/RaddaR"]):not(:matches-path(//blog//))
 overclockers.ru##.event:has(a[href^="/blog/RaddaR/"])
-overclockers.ru##.newsline-item:has(a[href^="/blog/RaddaR/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/RaddaR/"]):not(:matches-path(//blog//))
 overclockers.ru##.newsline-item:has(a[href^="/blog/RaddaR/"]) + .material-comments
 overclockers.ru##.article-card:has(a[href^="/blog/RaddaR/"])
-
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/Vizir47"]):not(:matches-path(//blog//))
+overclockers.ru##.event:has(a[href^="/blog/Vizir47/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Vizir47/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Vizir47/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/Vizir47/"])
+    ! https://overclockers.ru/blog/Vizir47/show/104892/kak-vpk-ssha-izbavilsya-ot-nemeckogo-konkurenta
+    ! https://overclockers.ru/blog/Vizir47/show/104547/amerikanskij-opyt-podryva-mostov-i-diversionnaya-ataka-ukrainoj-krymskogo-mosta
+    ! https://overclockers.ru/blog/Vizir47/show/103515/chem-oborachivaetsya-strategiya-ssha-oruzhie-v-obmen-na-rychagi-vozdejstviya-na-blizhnem-vostoke
+    ! https://overclockers.ru/blog/Vizir47/show/102481/rossiya-i-kitaj-otvetili-na-provokacii-ssha-sovmestnym-voenno-morskim-patrulirovaniem-u-beregov-alyaski
+    ! https://overclockers.ru/blog/Vizir47/show/102056/specsluzhby-ssha-manipuliruet-vikipediej-bolee-desyati-let
+    ! https://overclockers.ru/blog/Vizir47/show/101201/v-finlyandii-predprinimateli-i-zhiteli-massovo-razoryajutsya-iz-za-razryva-otnoshenij-s-rf
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/cool-gadgets"]):not(:matches-path(//blog//))
+overclockers.ru##.event:has(a[href^="/blog/cool-gadgets/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/cool-gadgets/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/cool-gadgets/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/cool-gadgets/"])
+    ! https://overclockers.ru/blog/cool-gadgets/show/104667/komandujuschij-vvs-vsu-rossijskie-su-35-vedut-ohotu-na-ukrainskie-mig-29-a-sootnoshenie-9-k-1
+    ! https://overclockers.ru/blog/cool-gadgets/show/104835/armiya-rf-pereshla-k-unichtozheniju-boepripasov-vsu-poezda-i-sklady-stali-novoj-celju-dlya-raket
+    ! https://overclockers.ru/blog/cool-gadgets/show/104824/rossijskie-inzhenery-razrabotali-antidronovye-kozyrki-dlya-tankov-s-ispolzovaniem-setki-i-shifera
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/letsplay"]):not(:matches-path(//blog//))
+overclockers.ru##.event:has(a[href^="/blog/letsplay/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/letsplay/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/letsplay/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/letsplay/"])
+    ! https://overclockers.ru/blog/letsplay/show/104624/sbu-rassleduet-fakt-postavki-brakovannyh-snaryadov-dlya-vsu
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/Hardware_inc"]):not(:matches-path(//blog//))
+overclockers.ru##.event:has(a[href^="/blog/Hardware_inc/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Hardware_inc/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Hardware_inc/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/Hardware_inc/"])
+    ! https://overclockers.ru/blog/Hardware_inc/show/104620/rossiya-predstavila-novejshij-legkobronirovannyj-vezdehod-na-forume-armiya-2023
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/GOTREK"]):not(:matches-path(//blog//))
+overclockers.ru##.event:has(a[href^="/blog/GOTREK/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/GOTREK/"]):not(:matches-path(//blog//))
+overclockers.ru##.newsline-item:has(a[href^="/blog/GOTREK/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/GOTREK/"])
+    ! https://overclockers.ru/blog/GOTREK/show/104621/us-news-and-world-vsu-nesposobny-vzyat-melitopol-letnee-kontrnastuplenie-provaleno
+!
+overclockers.ru##.article-wrap:has(a[href="/blog/Nacvark"]):not(:matches-path(//blog//))
+overclockers.ru##.event:has(a[href^="/blog/Nacvark/"])
+overclockers.ru##.newsline-item:has(a[href^="/blog/Nacvark/"]):not(:matches-path(//blog//))
+overclockers.ru##.newsline-item:has(a[href^="/blog/Nacvark/"]) + .material-comments
+overclockers.ru##.article-card:has(a[href^="/blog/Nacvark/"])
+    ! https://overclockers.ru/blog/Nacvark/show/104654/rossiya-nanesla-udar-po-dramteatru-v-chernigove-gde-prohodila-vystavka-dronov
+    ! https://overclockers.ru/blog/Nacvark/show/104814/ukraina-vydvinula-izrailju-ultimatum-prodolzhat-vyselyat-ukraincev-ne-smogut-palomnichat-v-uman
+    ! https://overclockers.ru/blog/Nacvark/show/104808/pod-kievom-eksperty-kriminalisty-mvd-ukrainy-raspilivali-raketu-bolgarkoj-i-pogibli-pri-vzryve
+    ! https://overclockers.ru/blog/Nacvark/show/104805/zelenskij-my-gotovy-obmenyat-belgorod-na-chlenstvo-v-nato
+!
 
 
 ! from Ru AdList
