@@ -634,14 +634,13 @@ $removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~nextdns.io|~s
     ! $removeparam=from,domain=apkpure.com|bandcamp.com|browserling.com|luisaviaroma.com|sogou.com|store.hbr.org|app.snyk.io|onlinepngtools.com|indiatimes.com|jetbrains.com  # from DandelionSprout's URLShortener
     !
     ! And yandex rules:
-    ||yandex.*/news/$removeparam=from  # from Adguard
-    ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
-    ||yandex.*/news*?from=main$document=campaign,removeparam=|,domain=yandex.*  # from Ru AdList
-    ?from=tabbar$document,removeparam=|from,domain=ya.ru|yandex.*  # from Ru AdList
-    ?from=yanews$document,removeparam=|  # from Ru AdList
-    from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
-    /story/*?lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
-    from=*_portal&lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
+    ! ||yandex.*/news/$removeparam=from  # from Adguard
+    ! ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
+    ! ||yandex.*/news*?from=main$document=campaign,removeparam=|,domain=yandex.*  # from Ru AdList
+    ! ?from=tabbar$document,removeparam=|from,domain=ya.ru|yandex.*  # from Ru AdList
+    ! ?from=yanews$document,removeparam=|  # from Ru AdList
+    ! from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+    ! from=*_portal&lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
 
 $removeparam=_from  # from DandelionSprout's URLShortener
 
@@ -3353,9 +3352,8 @@ $removeparam=from,domain=dzen.*  # in general rule up there there is an exclusio
     ! Update: I found such link, it was the set of parameters of zen. Good. And "feed_exp" too.
     ! "Rid" - see above. "From" is on zen, but I saw glitches on yandex.
 $removeparam=integration,domain=dzen.*|yandex.*
-||yandex.*/story/$removeparam=lang  # from Ru AdList, modified
-    ! unusual Ru AdList form:
-    /story/*?lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+! lang
+    /story/*?lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
 yandex.*$removeparam=lr  # from NeatURL
 yandex.*$removeparam=lrredircnt  # from NeatURL
 ||market.yandex.$removeparam=mclid  # from Adguard
@@ -3382,7 +3380,7 @@ $removeparam=pokupki,domain=market.yandex.*  # from Ru AdList, modified
 ya.ru$removeparam=redirect_ts  # from Ru AdList
 $removeparam=rs,domain=market.yandex.*  # some id
 $removeparam=search_source,domain=yandex.*  # from Ru AdList: ||yandex.*/search/$document,removeparam=search_source
-$removeparam=secdata,domain=dzen.*,yandex.*
+$removeparam=secdata,domain=dzen.*|yandex.*
 $removeparam=sku,domain=market.yandex.*
 $removeparam=source-serpid,domain=yandex.*  # from Adguard
     ! ||yandex.*/images/$removeparam=source-serpid  # from Adguard
