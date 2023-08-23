@@ -209,7 +209,8 @@ yandex.*##[class^=_id_branding]
     yandex.ru##._id_branding_mastercard
     yandex.ru##._id_branding_yandex-gasstation
     yandex.ru##._id_branding_yandex-gasstation
-    yandex.*##._id_branding_tele2  # is in Adguard
+    ! is in Adguard
+    yandex.*##._id_branding_tele2
 yandex.*##.branding-control
 yandex.*##._branding
 yandex.*##._type_branding
@@ -667,7 +668,7 @@ yandex.*,ya.ru##.alice-fab
 yandex.*,ya.ru##.alice-fab__promo
 
 ! is in Ru AdList
-zen.yandex.ru##.feed__row > .feed__item-wrap div:after:style(background: transparent !important)
+zen.yandex.ru##.feed__row > .feed__item-wrap div::after:style(background: transparent !important)
 ||zen.yandex.ru/media/stub-sw.js
 
 ! is in Ru AdList
