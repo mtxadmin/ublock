@@ -2197,7 +2197,7 @@ _tizers.  # from Ru AdList
     ! n-tv.de news site: many teaser classes - "bnews__slides__teaser slick-slide slick-cloned", "teaser__date", "teaser__kicker", "teaser__headline", "teaser teaser--wide teaser--hero teaser--gallery"
     ! tvklik.ru: just regular list items - .rt-teaser-articles
     ! ua-independent.com - normal, non-ad news: "itemteaser teaser_title"
-~ heise.de##[id*=teaser]
+~heise.de##[id*=teaser]
     ! Exclusions:
     ! heise.de - non-ad teasers
     !
@@ -2656,7 +2656,8 @@ _gatrack.js  # from EasyPrivacy
 /geo.php?  # is in EasyPrivacy
 /geocheck*$important
 -geoip.js  # from EasyPrivacy
-/geoip.city  # bitrix popups removed: ##.bxmaker__geoip__city__line-question and ##.current-city-notice
+/geoip.city
+    # bitrix popups removed: ##.bxmaker__geoip__city__line-question and ##.current-city-notice
 /geotools/*  # ad xhrs
 .gif?event=  # is in EasyPrivacy
 /google-analyticator/*  # from Ru AdList
@@ -3033,7 +3034,7 @@ _wtInit.js  # from Fanboy's
 !! ratings and surveys
 /rate.widget.js
 ! generalized
-~aliexpress.com,~aliexpress.ru,~air-gun.ru,~backit.me,~epn.bz,~support.google.com,~trimble.com,~dobrodel.ru,~mosreg.ru,~mos.ru,~neorabote.net,~news2.ru,~wildberries.ru,~wildberries.co.il,~~wildberries.fr,~yandex.ru##[class*="feedback"]:not(html):not(body):not(.deferredfeedback)
+~aliexpress.com,~aliexpress.ru,~air-gun.ru,~backit.me,~epn.bz,~support.google.com,~trimble.com,~dobrodel.ru,~mosreg.ru,~mos.ru,~neorabote.net,~news2.ru,~wildberries.ru,~wildberries.co.il,~wildberries.fr,~yandex.ru##[class*="feedback"]:not(html):not(body):not(.deferredfeedback)
     ! Exclusions:
     ! .deferredfeedback - Moodle (edu platform)
 ~alfabank.ru,~aliexpress.com,~aliexpress.ru,~disconnect.me,~trimble.com,~zen.yandex.ru##[id*="feedback"]:not(html):not(body)
@@ -3446,7 +3447,7 @@ _wtInit.js  # from Fanboy's
 ###scroller
     ! alfaplan.ru###scroller
     ! texterra.ru###scroller
-##.scroller$domain=~intickets.ru
+~intickets.ru##.scroller
     ! chatrating.ru##.active.scroller
     ! itsyourip.com##.scroller.fixed-goto-top
 ##.scroll-fix-btn
