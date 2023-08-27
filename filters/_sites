@@ -1249,6 +1249,7 @@ allmbt.ru###footerCart
 allmbt.ru###pesapallo-topbar
 
 allmulticam.ru##.wrfooter-contacts2-oplata
+allmulticam.ru##.buttonMobsted
 
 ||all-news.net.ua/*/wrapper.jpg
 all-news.net.ua###header
@@ -1296,6 +1297,12 @@ almazovdom.ru##.elementor-widget-premium-addon-modal-box
 alp.org.ua###sape_links-2
 
 ||alphaporno.com/*.php  # is in uBlock filters
+
+alpindustria.ru##.contact_top
+alpindustria.ru##.plashka
+alpindustria.ru##.rr_widget
+alpindustria.ru##.new-advantages
+alpindustria.ru###top-link
 
 alpinefile.ru###getfavor
 
@@ -1555,6 +1562,9 @@ annonce.cz###lightbox:has(.watchdog-exit)
 annonce.cz###watchdog-box
     ! other
 
+! overlay
+anonymsms.com##.header-mobile-menu
+
 anothercoffee.net##.topnav-fixed-header-text
 
 ||ansible.com/api/internal/events/
@@ -1642,6 +1652,7 @@ a-otvet.ru,i-otvet.ru,my-question.ru,otvet-master.ru##.qa-footer
 ap.org###openModal.modalDialog
 
 apeaksoft.com##.usernotice_pop
+apeaksoft.com###share-list
 
 apexsql.com##.responsive
 apexsql.com##.footer_social_Icons
@@ -1662,8 +1673,15 @@ aport.ru##.btn:style(position:static !important)
 app-android.ru##.main-contacts
 app-android.ru##.social-repost
 
+appbrain.com##.floating-footer
+appbrain.com##.destinations
+appbrain.com##.new-header-spacer
+
 appcenter.ms##.nav-brand
 appcenter.ms###sticky-nav-container.stuck .sticky-nav-complete:style(position:static !important)
+
+appdividend.com##.topbar
+appdividend.com##.topbar-date
 
 ! blurring popup
 apple.com###ac-localnav
@@ -1675,6 +1693,13 @@ apple-iphone.ru##.post-ratings-loading
 votesmart.appspot.com#@#a[href*="facebook.com/sharer/sharer.php?"]
 votesmart.appspot.com#@#a[href^="https://vk.com/share.php"]
 votesmart.appspot.com#@#a[href^="https://twitter.com/intent/tweet/"]
+
+appsumo.com###pdpTabsParent:style(position:static !important)
+appsumo.com##.pdp-buynow-container
+appsumo.com##.pdp-interaction-container
+
+apptivo.com##.leftlilogo
+apptivo.com##.fixed-sec
 
 ||apptoday.ru/videowidget/autoplay/$third-party  # from Ru AdList
 
@@ -1694,6 +1719,11 @@ apteka-april.ru##.disposable-hint-compared
 apteka-april.ru##.c-notices
 apteka-april.ru##.c-notifications
     ! other
+apteka-april.ru##.c-top-navigation-bar
+apteka-april.ru##.c-chat-bot
+apteka-april.ru##.app-gallery
+apteka-april.ru##.yandex-delivery-badge
+apteka-april.ru##.fast-order
 
 aptekamos.ru##.d-table-td-la
 aptekamos.ru##.am-widget-container:has-text(Новости)
@@ -1776,8 +1806,12 @@ arcenal-m.ru##.box.relative
 @@||arcgis.com^$generichide
 ||arcgis.com/js/app/telemetry.js$redirect=noopjs  # still "TypeError: Telemetry.init is not a function"
 
+! bad exclusion from EasyList. It unblocks many hidden blocks on archived pages
+@@||web.archive.org^$generichide,badfilter
 ! static header
 web.archive.org###wm-ipp:style(position:static !important)
+! from Ru AdList
+archive.org###donate_banner
 
 ||archlinux.org/*/archlogo.svg
 archlinux.org###archnavbarlogo
@@ -28226,8 +28260,6 @@ datacamp.com##.logoContainer
 
 macworld.co.uk##.topNav:style(position:static !important)
 
-apeaksoft.com###share-list
-
 discovery.com##.m-NavItemWrap--siteLogo
 discovery.com##.o-Header__m-Area--Top
 discovery.com##.o-FooterFresh__m-Info
@@ -28247,9 +28279,6 @@ coupondunia.in##[href^="/home/download-"]
 coupondunia.in##.notify-unread
 ||d1nrhamtcpp354.cloudfront.net/modules/web/assets/images/upgrade-app-banner.jpg
 ||d1nrhamtcpp354.cloudfront.net/modules/web/assets/images/hp-refer-earn-compressor.png
-
-appdividend.com##.topbar-date
-appdividend.com##.topbar
 
 learnpython.dev###header
 learnpython.dev##.nav
@@ -28302,11 +28331,6 @@ chinas-lafa.ru##.code-block
 metal-san.ru###logo-link-header
 metal-san.ru##.header-scroll
 metal-san.ru###brends-sidebar
-
-! from Ru AdList
-archive.org###donate_banner
-! bad exclusion from EasyList. It unblocks many hidden blocks on archived pages
-@@||web.archive.org^$generichide,badfilter
 
 /nct.php?nid=  # is in EasyPrivacy
 
@@ -28564,15 +28588,6 @@ headphonesty.com##body:style(font-family:initial !important)
 moscow-city.guide###line-scroll
 moscow-city.guide###sp-up
 
-alpindustria.ru##.contact_top
-alpindustria.ru##.plashka
-alpindustria.ru##.rr_widget
-alpindustria.ru##.new-advantages
-alpindustria.ru###top-link
-
-! overlay
-anonymsms.com##.header-mobile-menu
-
 bestgamer.su##.page__poster
 bestgamer.su###pageskin
 
@@ -28644,12 +28659,6 @@ allergy-center.ru$inline-script  # site blocks copypaste (trying to)
 
 ! sticky
 geotree.ru###charity
-
-apteka-april.ru##.c-top-navigation-bar
-apteka-april.ru##.c-chat-bot
-apteka-april.ru##.app-gallery
-apteka-april.ru##.yandex-delivery-badge
-apteka-april.ru##.fast-order
 
 ! thegamer.com : lazyload data-img-url
 
@@ -28752,10 +28761,6 @@ doctu.ru##.smi_logo
 ||doctu.ru/img/bgr_partn.jpg
 doctu.ru##.mainpage:style(padding-top:0px !important; padding-bottom:0px !important)
 doctu.ru##.mainpage:style(background-image:none !important)
-
-appbrain.com##.floating-footer
-appbrain.com##.destinations
-appbrain.com##.new-header-spacer
 
 freecoursesonline.me##.header-container
 freecoursesonline.me##.srr-vticker
@@ -28945,9 +28950,6 @@ intuit.com###TalkToSales
 intuit.com##[class^=RwGlobalNav]:style(position:static !important)
 intuit.com##[class^=S01GlobalNavigation]:style(position:static !important)
 
-apptivo.com##.leftlilogo
-apptivo.com##.fixed-sec
-
 cisa-service.ru##.widgets
 
 ||monday.com/prod/event
@@ -28956,10 +28958,6 @@ cisa-service.ru##.widgets
 pcgamingwiki.com##+js(href-sanitizer, a[href^="https://www.dpbolvw.net/click-"][href*="?url="], ?url)
 ! from uBlock filters
 pcgamingwiki.com##+js(href-sanitizer, a[href^="https://greenmangaming.sjv.io/c/"][href*="?u="], ?u)
-
-appsumo.com###pdpTabsParent:style(position:static !important)
-appsumo.com##.pdp-buynow-container
-appsumo.com##.pdp-interaction-container
 
 assistive.site##.subheader:style(position:static !important)
 
@@ -29042,6 +29040,4 @@ burgerkingrus.ru##.bk-mir-banner
 burgerkingrus.ru##.bk-categories:style(position:static !important)
 burgerkingrus.ru##.bk-options-popup__popup.bk-popup__overlay
 burgerkingrus.ru##.bk-seo
-
-allmulticam.ru##.buttonMobsted
 
