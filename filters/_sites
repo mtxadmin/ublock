@@ -23614,6 +23614,8 @@ traveller-eu.ru##.btn-btt
 !travellinecdn.com$3p
 ##.tl-widgets-container
 
+||travian.com.ua/landingpage/$popup  # from Ru AdList
+
 travmatik.com##.mainheadertext
 travmatik.com##[src*="data:image/png;base64,"]
 
@@ -23644,8 +23646,15 @@ trello.com##.board-share-button
 trendmicro.com##[class^=_nav_logo]
 trendmicro.com##[class^=_nav_navigation]:style(position:static !important)
 
+! inline related
+trendoceans.com##blockquote
+
 triaservice.com.ua###header
 triaservice.com.ua##.sidebar
+
+! generic exclusion in Ru AdList
+@@||by.tribuna.com^$generichide,badfilter
+tribuna.com##[class^=ModalHOC_modal]
 
 tribunnews.com##.thead:style(position:static !important)
 tribunnews.com###popsec
@@ -23700,6 +23709,8 @@ troffi.ru##.free-block
 ||troitsk.org/im01upx.gif
 
 ||troitski.org/skins/skin2/images/lg.png
+
+||tropictube.com/tt/tt.php
 
 !tropki.ru$script  # site blocks copypaste - generalized as /advagg_js/*
 ||tropki.ru/*/footer.jpg
@@ -23789,9 +23800,12 @@ trustedreviews.com##div.egl-popup
 trustpilot.com##.header__actual:style(position:static !important)
 trustpilot.com##[class*=Sticky]
 
-trustradius.com##.vendor-shout
-trustradius.com##.login-modal
 ||trustradius.com/*/reg_wall.js
+    ! popups
+trustradius.com##.login-modal
+trustradius.com##[class^=FirstVisitTooltip]
+    ! other
+trustradius.com##.vendor-shout
 
 tsargrad.tv##.fly-start
 tsargrad.tv##.fly-on-scroll
@@ -28111,8 +28125,6 @@ comments.ua###foote-text
 
 ||gecid.com/inc/brclick.$popup  # from Ru AdList
 
-||travian.com.ua/landingpage/$popup  # from Ru AdList
-
 ||lovecity3d.com/img/promo.$popup  # from Ru AdList
 ||lovecity3d.com/images/flash.jpg
 ||lovecity3d.com/net/usermedia/$image
@@ -28202,9 +28214,6 @@ themesinfo.com##a[href*="/affiliates/"]
 ||sportsnet.ca/*-logo.jpg$redirect=1x1.gif  # constantly requests blocked img
 
 phoronix.com###about-author
-
-! inline related
-trendoceans.com##blockquote
 
 infoit.com.ua##.widget_block.widget
 
@@ -28363,8 +28372,6 @@ aireng.ru##.pop-block
 sexvideos.rodeo##.text-block
 
 newxxx24.cc##.active
-
-||tropictube.com/tt/tt.php
 
 hqsexonly.com##.flt_hor
 
@@ -28748,10 +28755,6 @@ allgames.zone##.speedbar
 ! promos
 empireg.ru##.title_spoiler
 
-! generic exclusion in Ru AdList
-@@||by.tribuna.com^$generichide,badfilter
-tribuna.com##[class^=ModalHOC_modal]
-
 ! seo
 teenpornvideo.sex##.headline
 
@@ -28979,8 +28982,6 @@ office24by7.com##.ofc__whatsapp
 atmosaicrm.com##.modal
 
 espocrm.com###privacy-reminder
-
-trustradius.com##[class^=FirstVisitTooltip]
 
 ! popup
 halerp.com###commandbar
