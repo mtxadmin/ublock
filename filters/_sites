@@ -17247,6 +17247,11 @@ pcerror-fix.com##h3 > a[href="https://www.pcerror-fix.com/get-pc-repair-tool"]
 pcgamebenchmark.com###head:style(position:static !important)
 ||pcgamebenchmark.com/img/placement/$image
 
+! from uBlock filters
+pcgamingwiki.com##+js(href-sanitizer, a[href^="https://www.dpbolvw.net/click-"][href*="?url="], ?url)
+! from uBlock filters
+pcgamingwiki.com##+js(href-sanitizer, a[href^="https://greenmangaming.sjv.io/c/"][href*="?u="], ?u)
+
 pc-helpp.com###body_left
 
 pcloud.com##.notify_bar_wrap
@@ -17407,6 +17412,9 @@ petzl.ru##.page-footer__header
 pfvektor.com##.main-slider
 pfvektor.com##.side-navbar:style(position:static !important)
 pfvektor.com##.html
+
+phenom.com##[class*=_bannerHero_]
+phenom.com##[class*=LivePosts]
 
     ! top
 ||philenews.com/Files/logicom_small.png
@@ -18022,6 +18030,10 @@ poparimsya.online###header
 
 popgun.ru##.headerbar
 
+popl.co##.recommendation-modal__container
+popl.co##.recommendation-modal__backdrop
+popl.co##.promo_banner
+
 !popmech.ru##.top_menu.fixed:style(position:static !important)
 popmech.ru##.block_logo
 popmech.ru##.icon-ins
@@ -18345,6 +18357,8 @@ priorclinic.ru##.call-order-waves
 ||agent.privatbank.ua/branches$third-party  # from Adguard
 ||agent.privatbank.ua/gadget$third-party  # from Adguard
 
+privyr.com##.transition-all:has(.fa-rocket-launch)
+
 prmira.ru##.close-block
 
 prnt.sc##.header
@@ -18544,6 +18558,8 @@ provoda.me##.b-footer__button
 ! "Пожалуйста, отключите блокировщик рекламы Adblock"
 provse.news$script
 provse.news$inline-script
+
+forum.proxmox.com###top > div:has-text(/^$/)
 
 ||pro-zdorovie.com/pl/fileservice/video-hosting/statistic
 ! test
@@ -28973,14 +28989,9 @@ creativo.one###last-comments-sidebar
 doit.software##.cta_block
 doit.software##.call_to_action
 
-phenom.com##[class*=_bannerHero_]
-phenom.com##[class*=LivePosts]
-
 megaplan.ru##.c-elements-banners-top2
 megaplan.ru##.stickyed:style(position:static !important)
 megaplan.ru##.prefooter
-
-forum.proxmox.com###top > div:has-text(/^$/)
 
 intuit.com##[class^=GeoipModal]
 intuit.com##[class^=overlay_overlay]
@@ -28992,22 +29003,11 @@ cisa-service.ru##.widgets
 
 ||monday.com/prod/event
 
-! from uBlock filters
-pcgamingwiki.com##+js(href-sanitizer, a[href^="https://www.dpbolvw.net/click-"][href*="?url="], ?url)
-! from uBlock filters
-pcgamingwiki.com##+js(href-sanitizer, a[href^="https://greenmangaming.sjv.io/c/"][href*="?u="], ?u)
-
 assistive.site##.subheader:style(position:static !important)
 
 djaboo.com##.betterdocs-widget-container
 
-popl.co##.recommendation-modal__container
-popl.co##.recommendation-modal__backdrop
-popl.co##.promo_banner
-
 heymarket.com###heymarket-widget
-
-privyr.com##.transition-all:has(.fa-rocket-launch)
 
 itqlick.com##.typeform-share
 
