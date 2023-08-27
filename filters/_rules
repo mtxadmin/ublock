@@ -1011,6 +1011,7 @@ _banner_rotator.php  # from Adguard
 /coremetrics/*$important  # many exclusions in Fanboy's
 /countly.js  # from Adguard  # see count.ly, countly.org
 /countly.min.js  # from Adguard  # see count.ly, countly.org
+/crm/site_button/loader_*.js  # from Adguard
 /dclk_video_ads/*$important  # from Adguard: @@||redirector.gvt1.com/videoplayback/id/*/source/dclk_video_ads/*
 /dcmads.js
 /deb.html$frame,1p  # from uBlock filters
@@ -1083,6 +1084,8 @@ _banner_rotator.php  # from Adguard
     ! /fuckadblock-$script,redirect=nofab.js  # from Adguard
 /fuckingadblockplus.  # from EasyList
 /gampad/*$important  #/gampad/ad  #/gampad/ads  #/gampad/adx  #/gampad/google_ads.js
+/goodshare.  # from Fanboy's
+    !||jsdelivr.net/npm/goodshare.js
 /gpt/pubads_impl_*$script,important
 /gujAd/*$important
 /gujAd.js$important
@@ -4786,6 +4789,7 @@ turboimagehost.com##.modal-footer
 
 
 ! strange ad scripts
+! hacked: https://webmasters.stackexchange.com/questions/136399/strange-variations-of-url-showing-up-in-google-search-console
 /detroitchicago/*$script,important
     ! /detroitchicago/cmbdv2.js  # is in EasyList
     ! /detroitchicago/houston.js  # is in EasyList
@@ -4797,6 +4801,7 @@ turboimagehost.com##.modal-footer
     ! is in EasyList
     !||thewindowsclub.com/detroitchicago/
     !https://www.thewindowsclub.com/detroitchicago/rochester.js
+    /jellyfish.webp$script  # from EasyList  # https://webmasters.stackexchange.com/questions/136399/strange-variations-of-url-showing-up-in-google-search-console
 /edmontonalberta/*  # /edmontonalberta/calgary.js
 /porpoiseant/*$important  # ad scripts  # is in EasyList
 /tardisrocinante/*  # detroitchicago, porpoiseant
