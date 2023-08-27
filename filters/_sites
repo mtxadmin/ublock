@@ -8225,6 +8225,8 @@ getdroidtips.com##.after-header-container
 getdroidtips.com##.site-header
 
 @@||getfreecourses.$generichide,badfilter  # parked?
+    ! https://github.com/uBlockOrigin/uAssets/issues/5667
+    ! https://github.com/uBlockOrigin/uAssets/issues/6727
 
 ||getfreedumps.com/images/registernow.png
 getfreedumps.com##.sidebar1
@@ -19772,12 +19774,19 @@ saitavtoshkoly.ru##.widget_categories
 
 sakhalife.ru##.icon-18
 
+salesdoor.com###wizard_confirmation
+
+! popup
+salezshark.com###whatsapp.whats-app
+
 salsus.ru##.flex__header__contacts
 salsus.ru##.work-time
 salsus.ru##.callme-button
 salsus.ru##.flex__header__callme
 salsus.ru##.payment__method
 salsus.ru##.product_detail
+
+saltmg.ru##[href^="https://saltmg.ru/akczii/"]
 
 salvanik.com###tpbr_box
 salvanik.com##.toupnavw
@@ -20501,6 +20510,8 @@ sibset.ru##.anticon
 sibset.ru##.ant-btn
 
 sid-500.com##.footer-wrap
+
+sidex.ru##.pop.webui-popover
 
 ||signal-sos.ru/image/wall4.jpg
 signal-sos.ru##.soci
@@ -21444,6 +21455,11 @@ ssskkk.ru###hoax-sidebar-tags
 
 st.com##.st-support
 
+! unstick
+stackhero.io##aside:style(position:static !important)
+! promos
+stackhero.io##blockquote:has-text(Stackhero offers)
+
 stackify.com###headerwrap:style(position:static !important)
 
 ! ad scripts and subdomains. But some sites load css from there
@@ -21515,6 +21531,8 @@ statuscake.com##.top-section
 statuscake.com##[href="/SmsCredits.php"]
 statuscake.com##a[href^="Plan.php"]
 statuscake.com##.page-alert
+
+status-list.ru##.table-of-contents
 
 ! statuspage.io - don't. Removed from hosts. Experimentally commented here too. See #22.
 #statuspage.io$domain=~statuspage.io|~statuspage.com|~stspg.io  # "Easily communicate real-time status to your users"
@@ -21992,6 +22010,10 @@ systranbox.com##.header-middle-area
 ! totop
 systranbox.com##.BackTo
 systranbox.com###glt-translate-trigger
+
+t3travel.ru##.footer
+t3travel.ru##.slick-slider
+t3travel.ru##.card__btn
 
     ! banners and promos
 tadviser.com##noindex > nofollow
@@ -22616,6 +22638,8 @@ testizer.com###certificate-modal
 ||testseek.com/templates/v2/images/owl_over$image
 testseek.com##.reveal-modal
 testseek.com##.reveal-modal-bg
+
+tetris.com##.cover
 
 teusink.net###header-wrapper
 
@@ -23501,6 +23525,9 @@ turboimagehost.com###AB
 turboimagehost.com##.titleFullS
 turboimagehost.com##.fa-info
 turboimagehost.com##.footer
+
+turclub-pik.ru##.subscription-popup
+turclub-pik.ru##.subscription-modal
 
 turklub-kolomna.ru$inline-script  # popups
 
@@ -28909,9 +28936,6 @@ tabasco.com##+js(rc, product__header-image)
 ! popup
 centrahubcrm.com##.circle-ripple
 
-! popup
-salezshark.com###whatsapp.whats-app
-
 bluecamroo.com##.tryFeature
 
 empoweredcrm.io###overlay
@@ -28921,8 +28945,6 @@ empoweredcrm.io###overlay
 ||squarespace.com/universal/scripts-compressed/performance-$script,3p  # is in EasyPrivacy and Adguard
 
 crm.solutions##.fusion-footer
-
-salesdoor.com###wizard_confirmation
 
 efisend.com##.elementor-background-overlay
 
@@ -28936,8 +28958,6 @@ noritz.com##.cfi-overlay
 ||edazii.ru/qrcode/$image
 
 whoosh.bike##.t972__banner
-
-tetris.com##.cover
 
 ! fapcat.com lazyload data-src
 
@@ -29000,8 +29020,6 @@ oxfordfabric.net###Pop_UpsBtn
 
 ||thenaturallaboratory.com/cdn/wpm/  # https://thenaturallaboratory.com/cdn/wpm/babd83086w6100c671p96a62313md77ea07am.js
 
-sidex.ru##.pop.webui-popover
-
 ! popup
 nzmir.ru##.sg_seo_modal_block
 ! fixed panel
@@ -29011,15 +29029,9 @@ rcpp19.ru##.table-of-contents
 
 vamber.ru##.code-block:has-text(зарабатывай)
 
-status-list.ru##.table-of-contents
-
 mostech-group.ru##.open.table-of-contents
 
 registratura24.com##.progress-wrap
-
-t3travel.ru##.footer
-t3travel.ru##.slick-slider
-t3travel.ru##.card__btn
 
 1marshrut.ru##.slider-main
 
@@ -29047,11 +29059,6 @@ autoventuri.ru##.bx_areas
 
 delikatess-dich.ru##.navbar-nav:style(position:static !important)
 
-! unstick
-stackhero.io##aside:style(position:static !important)
-! promos
-stackhero.io##blockquote:has-text(Stackhero offers)
-
 ! top
 malls.ru##table:has-text(в Telegram-канале)
 
@@ -29060,12 +29067,7 @@ retail.ru##.sticky-right-colom:style(position:static !important)
 ||music-hit.com/img/new_music.png
 music-hit.com##.artist_block-bio:has-text(слушать онлайн песни бесплатно)
 
-saltmg.ru##[href^="https://saltmg.ru/akczii/"]
-
 grammarly.com##[class*=banner]
-
-turclub-pik.ru##.subscription-popup
-turclub-pik.ru##.subscription-modal
 
 perspekt174.ru##.fly_forms
 
