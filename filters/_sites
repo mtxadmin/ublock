@@ -5289,6 +5289,9 @@ digikey.com###carousel-wrapper
 
 ||digisat.ru/*.gif  # from Adguard
 
+! logo
+gdedostavka.ru##[href="https://gdedostavka.ru"]
+
 ! digiseller - mixed rules :-)
 digiseller##.just_for_sorting
     ! popups
@@ -15046,6 +15049,11 @@ navigation-professionell.de##.et_pb_text_inner > h1
 
 nbcdfw.com##.nbc-weather-widget
 
+nbu.ru##.clients
+nbu.ru##.profit
+nbu.ru##.onecourse-start__img
+nbu.ru##.more-call
+
     ! top
 ndtv.com##.navbar_header
 ndtv.com##.stickylogo
@@ -20874,6 +20882,8 @@ solutionsuggest.com##body:style(-moz-user-select:text !important; -webkit-user-s
 sonichits.com##body:style(display:block !important)
 sonichits.com##.logo
 
+sonicwall.com##.btn-orange:has-text(Sales)
+
 sonikelf.ru###myBtn
 sonikelf.ru##div.after_post:has-text(/Подписка:|Мы в соц.сетях/)
 
@@ -22531,6 +22541,8 @@ testadmit.com##.el-backtop
 testim.io##.box-free-trial
 ! totop
 testim.io##.btt-btn-wrap
+
+testizer.com###certificate-modal
 
 ||testseek.com/templates/v2/images/owl_over$image
 testseek.com##.reveal-modal
@@ -25306,7 +25318,14 @@ wikihow.com###rating_container
 wikihow.com##.altblock
 wikihow.com###trust_banner
 
+    ! banners and promos
+wikiporn.tv##h2:has-text( Ads)
+wikiporn.tv##.bns-bl
+wikiporn.tv##.bn
+wikiporn.tv##.loading.initial
+    ! top
 wikiporn.tv##.head-pl:style(position:static !important)
+    ! other
 !wikiporn.tv##.on-player - generalized
 wikiporn.tv##.on-player-pl
 
@@ -27225,14 +27244,6 @@ opticsplanet.com###coupon-rad__banner
 
 coolthings.com##.cb-nav-bar-wrap:style(position:static !important)
 
-    ! popups
-sputnik8.com##.bem-modal
-sputnik8.com##.gtm-modal-offer-discount
-    ! banners and offers
-sputnik8.com##.gtm-act_order-banner
-sputnik8.com##.screen-bottombar
-    ! other
-
 ||1plus1.video/video/embed/  # "Выключите адблок"
 1plus1.ua##.subHeader:style(position:static !important)
 
@@ -28070,21 +28081,6 @@ radio-online.su##.side-desc
 ! seo
 hitmotop.com##.p-info-description
 
-    ! popups
-||megabonus.com/images/comebacker
-megabonus.com###install_ext
-megabonus.com###comeback-modal
-||megabonus.com/scripts/installext.js
-||megabonus.com/scripts/user/comebacker.js
-    ! top
-megabonus.com##.blog_megabonus
-    ! bottom
-megabonus.com###main:style(padding-bottom:0px !important)
-    ! other
-megabonus.com##noindex
-megabonus.com###footer
-megabonus.com##.megabonus_projects
-
 kakzarabativat.ru##.sticky.head
 ! fake notifications
 kakzarabativat.ru##.bagde
@@ -28194,19 +28190,6 @@ rammount.com###shopify-section-header > .hidden
 ! top banners
 ofzdohod.ru##.page-hero
 
-    ! banners and promos
-buhsoft.ru##.incontentButton
-buhsoft.ru##.article__slider
-    ! other
-
-    ! banners and promos
-rnk.ru##.warning
-rnk.ru##.topLine
-rnk.ru##.moreInteresting__wrapper
-rnk.ru##.moreInterestingInJournal__wrapper
-rnk.ru##.incontentButton
-    ! other
-
 shopozz.ru##.img::before
 
 selenium.dev##.td-sidebar-toc:style(position:static !important)
@@ -28229,23 +28212,6 @@ gs.market##.subscribe-section
 granelle.ru##.index-hero
 granelle.ru##.menu-main__contacts
 granelle.ru##.pop-up
-
-    ! popups
-megapteka.ru##.popup-your-city
-    ! top
-megapteka.ru##.search-header__icon
-megapteka.ru##.search-header__unicorn
-megapteka.ru##.shadow-card:style(position:static !important)
-megapteka.ru##header > .shadow-card
-megapteka.ru##.search-header_floating
-    ! sticky
-megapteka.ru##.subscribe-social_scroll
-megapteka.ru##.sub-block
-megapteka.ru##.shared-d
-megapteka.ru##app-svg-arrow-up
-megapteka.ru##footer > .active
-megapteka.ru##.scroll-block:style(position:static !important)
-    ! other
 
 allergy-center.ru$inline-script  # site blocks copypaste (trying to)
     ! allergy-center.ru$script  # 1p notifications
@@ -28417,13 +28383,6 @@ valdaypark.ru##[class$=__arrow]
 appbrain.com##.floating-footer
 appbrain.com##.destinations
 appbrain.com##.new-header-spacer
-
-    ! banners and promos
-wikiporn.tv##h2:has-text( Ads)
-wikiporn.tv##.bns-bl
-wikiporn.tv##.bn
-wikiporn.tv##.loading.initial
-    ! other
 
 freecoursesonline.me##.header-container
 freecoursesonline.me##.srr-vticker
@@ -29050,14 +29009,55 @@ iab.ru##.reviews
 iab.ru##.whyChoose
 iab.ru##.clients
 
-nbu.ru##.clients
-nbu.ru##.profit
-nbu.ru##.onecourse-start__img
-nbu.ru##.more-call
+    ! popups
+sputnik8.com##.bem-modal
+sputnik8.com##.gtm-modal-offer-discount
+    ! banners and offers
+sputnik8.com##.gtm-act_order-banner
+sputnik8.com##.screen-bottombar
+    ! other
 
-! logo
-gdedostavka.ru##[href="https://gdedostavka.ru"]
+    ! popups
+||megabonus.com/images/comebacker
+megabonus.com###install_ext
+megabonus.com###comeback-modal
+||megabonus.com/scripts/installext.js
+||megabonus.com/scripts/user/comebacker.js
+    ! top
+megabonus.com##.blog_megabonus
+    ! bottom
+megabonus.com###main:style(padding-bottom:0px !important)
+    ! other
+megabonus.com##noindex
+megabonus.com###footer
+megabonus.com##.megabonus_projects
 
-sonicwall.com##.btn-orange:has-text(Sales)
+    ! banners and promos
+buhsoft.ru##.incontentButton
+buhsoft.ru##.article__slider
+    ! other
 
-testizer.com###certificate-modal
+    ! banners and promos
+rnk.ru##.warning
+rnk.ru##.topLine
+rnk.ru##.moreInteresting__wrapper
+rnk.ru##.moreInterestingInJournal__wrapper
+rnk.ru##.incontentButton
+    ! other
+
+    ! popups
+megapteka.ru##.popup-your-city
+    ! top
+megapteka.ru##.search-header__icon
+megapteka.ru##.search-header__unicorn
+megapteka.ru##.shadow-card:style(position:static !important)
+megapteka.ru##header > .shadow-card
+megapteka.ru##.search-header_floating
+    ! sticky
+megapteka.ru##.subscribe-social_scroll
+megapteka.ru##.sub-block
+megapteka.ru##.shared-d
+megapteka.ru##app-svg-arrow-up
+megapteka.ru##footer > .active
+megapteka.ru##.scroll-block:style(position:static !important)
+    ! other
