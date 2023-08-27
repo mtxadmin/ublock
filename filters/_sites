@@ -711,6 +711,8 @@ about-windows.ru##.td-ss-main-sidebar
 
 abrisburo.ru##.tp-banner-container
 
+abuslock.su##.slider-obol
+
     ! floating icons
 abvclub.ru###cart_informer
 abvclub.ru###adapt-hdr
@@ -736,6 +738,7 @@ academyit.ru##.top.panel:style(position:static !important)
 ! acestream, torrentstream
 ||acestream.net/*/aaa.gif
 ||torrentstream.org/*/aaa.gif
+||acestream.net/plan/select?popup=noads$popup  # from Ru AdList
 
 acm.org##.secondary-bar--sticky.fixed-element:style(position:static !important)
 acm.org##.recommendations
@@ -876,17 +879,29 @@ ad-norma.ru##.carousel
 ado.hu###lapSlider
 
 ||adobe.com/*/get_flash_player.gif$3p
-adobe.com###helpful-pod
+    ! popups
 adobe.com##.locale-modal
 adobe.com##locale-modal
+    ! unfix elements
 adobe.com###title-bar:style(position:static !important)
-adobe.com##.Subnav-wrapper
 adobe.com###sidebar:style(position:static !important)
+    ! other
+adobe.com###helpful-pod
+adobe.com##.Subnav-wrapper
 experienceleague.adobe.com##dx-docs-feedback-bar
 
 adomino.net##.cf__mask
 
 adp.com##.si-overlay
+
+||adrenalin.ru/upload/medialibrary/1e3/podarochnye_sertifikaty.jpg
+! quickview
+adrenalin.ru##.fast_vie
+! promos
+adrenalin.ru##.reco
+adrenalin.ru##.rc_oneclick
+adrenalin.ru##.credito
+adrenalin.ru##.rc_mistake
 
 adsecurity.org###sidebar_bottom
 adsecurity.org###footer
@@ -25228,7 +25243,6 @@ vmware.com##.container:style(min-height:auto !important)
 vmware.com##.logo-wrapper
 vmware.com##.hdr-bottom-nav
 vmware.com##.hdr-wrapper:style(position:static !important)
-vmware.com##.sub-header:style(position:static !important)
 vmware.com##.lhs-container:style(position:static !important)
 vmware.com##.searchbox-wrapper:style(padding-top:0px !important)
 vmware.com##.search:style(margin-top:0px !important)
@@ -27553,7 +27567,6 @@ zzbabes.com#@#.progress-bar
 zzbabes.com###bclose
 
 !! todo
-
 ! from EasyList: blocking detection of standard AdBlock subscriptions (very impressive! although it needs cookies)
 !||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
 ! disabled because of straightforwardness of such countermeasure.
@@ -28243,8 +28256,6 @@ archive.org###donate_banner
 
 ||gettyimages.*/pulse$ping  # is in EasyPrivacy
 
-||acestream.net/plan/select?popup=noads$popup  # from Ru AdList
-
 ||goha.ru/~$popup,domain=www.goha.ru  # from Ru AdList
 goha.ru##.layout-menu__sticky:style(position:static !important)
 goha.ru##.layout-footer-body__logo
@@ -28728,15 +28739,6 @@ freecoursesonline.me##.srr-vticker
 axeandtool.com##.wp-block-group__inner-container
 ! axeandtool.com ! lazyload data-ezsrc
 
-||adrenalin.ru/upload/medialibrary/1e3/podarochnye_sertifikaty.jpg
-! quickview
-adrenalin.ru##.fast_vie
-! promos
-adrenalin.ru##.reco
-adrenalin.ru##.rc_oneclick
-adrenalin.ru##.credito
-adrenalin.ru##.rc_mistake
-
 fsk-russia.ru##.back-call
 
 imperiatools.ru##.widget-html
@@ -28822,8 +28824,6 @@ door.ru##.rasprodazha_dverey
 ! top
 medwegonok.ru##.related-posts
 medwegonok.ru##.table-of-contents
-
-abuslock.su##.slider-obol
 
 fixthephoto.com##.fixed-state:style(position:static !important)
 
@@ -29008,8 +29008,6 @@ noritz.com##.cfi-overlay
 ||edazii.ru/qrcode/$image
 
 ! fapcat.com lazyload data-src
-
-adobe.com##.sub-header:style(position:static !important)
 
 cloudwards.net##.table-of-content
 
