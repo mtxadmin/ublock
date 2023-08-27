@@ -19854,6 +19854,12 @@ safe-buy.ru###headerfixed
 safe-buy.ru##.product-item-detail-tabs-container-fixed
 safe-buy.ru##.economy.price
 
+safe-dom.com.ua##.sdops
+safe-dom.com.ua##.fastchast
+safe-dom.com.ua##.shs-price > p
+safe-dom.com.ua##.fastconsultation
+safe-dom.com.ua##.ifu-wrap
+
 safegroup.ru##.tr
 safegroup.ru##.block_tag_cloud
 ||safegroup.ru/foto/yandex.png
@@ -20403,6 +20409,10 @@ seopirat.club##.reputation-ranks
 
 septik.guru##.logoarea
 
+||serfish.com/root/img/serfish$image
+||serfish.com/root/img/quarium$image
+serfish.com##.quarium
+
 ! seo
 serfstack.com##.about-img
 
@@ -20501,6 +20511,9 @@ sexynakeds.com##.box_header
 sexynakeds.com##p
 sexynakeds.com##.footer
 
+shafa.ua###js-catalog-top-banner
+shafa.ua##.b-block__promo
+
 shanskarelia.ru##.header_nav:style(position:static !important)
 
 sharepointdiary.com###header-blog
@@ -20568,6 +20581,10 @@ shop220.ru###float_panel:style(position:static !important)
 
 shopcarry.ru##.tmenu:style(position:static !important)
 
+shopee.sg##.shopee-top--sticky:style(position:static !important)
+shopee.sg##.full-home-banners
+shopee.sg##.full-home-banners-wrapper
+
 shop-gun24.ru##.popup-phone-wrapper
 shop-gun24.ru##.header_conts
 
@@ -20598,6 +20615,26 @@ shopify.com##.remix-header:style(position:static !important)
 
 shopolog.ru##.b-catalog:has-text(Подписаться)
 shopolog.ru##.modal
+
+@@||shopozz.ru/images/loading.gif  # lazy loading
+    ! popups
+shopozz.ru###fly_cityselect_first
+    ! banners and promos
+shopozz.ru##.mainslider
+shopozz.ru##.video_blok.how-it-works
+shopozz.ru##.advantages_brand
+shopozz.ru##.block-advantages
+shopozz.ru##.wrapper > .view-all-btn
+shopozz.ru##noindex
+  !shopozz.ru##.product-content > noindex
+! профильтрованные (=рекламные) отзывы. Негатива, конечно, нет - здесь всё белое и пушистое
+shopozz.ru##.feedbacks
+    ! other
+shopozz.ru##.popular-shops
+shopozz.ru##.countries-list
+shopozz.ru##.call-btns
+! seo again
+shopozz.ru##.description_block
 
 shop-project.ru##.rd-navbar-brand
 
@@ -21552,8 +21589,15 @@ squaredup.com##.hdr__title, .hdr__title p:style(color:#000 !important)
 squaredup.com##.subtitle.white h2:style(color:#000 !important)
 ||community.squaredup.com/*/Community_Answers_Banner$image
 
+    ! unfix elements
+sravni.ru##div:matches-css(position:fixed)
+sravni.ru##[class^=header]:style(position:static !important)
+sravni.ru##[class^=left-column_stickyBlock]:style(position:static !important)
 ! header
 sravni.ru##div[class^=Logo-]
+sravni.ru##[class^=extra-materials_wrapper]:has-text(Партнерские материалы)
+sravni.ru##div[class^=share_shareLink]
+sravni.ru##[class^=article-header_views]
 
 srbu.ru##.logosrbu
 
@@ -21572,6 +21616,8 @@ ss64.com###tnav
 ssecond-life.ru###header-text-nav-wrap
 
 ssh.com##.c-navigation-extra
+
+ssheasy.com##.iframe-container
 
 sso-mil.ru##.phone-area
 sso-mil.ru##.map-bay
@@ -27463,13 +27509,6 @@ martijnbrant.net###bottom-bar
 raiffeisen.ru##.informer
 raiffeisen.ru##.header-links__animate
 
-sravni.ru##div:matches-css(position:fixed)
-sravni.ru##div[class^=share_shareLink]
-sravni.ru##[class^=header]:style(position:static !important)
-sravni.ru##[class^=left-column_stickyBlock]:style(position:static !important)
-sravni.ru##[class^=article-header_views]
-sravni.ru##[class^=extra-materials_wrapper]:has-text(Партнерские материалы)
-
 opticsplanet.com###page-header-logo
 opticsplanet.com###header-shipping-banner-text
 opticsplanet.com##.e-header-banner__text
@@ -27552,10 +27591,6 @@ vg247.com##.logo
 vg247.com##.merch_component
 
 ||cp24.com/*/image.png
-
-shopee.sg##.shopee-top--sticky:style(position:static !important)
-shopee.sg##.full-home-banners
-shopee.sg##.full-home-banners-wrapper
 
 kapos.hu##.newsScroller
 
@@ -27803,12 +27838,6 @@ moex.com##.floatHeader
 moex.com##.header-content-top-phones
 
 ||level1techs.com/assets/browser-update
-
-safe-dom.com.ua##.sdops
-safe-dom.com.ua##.fastchast
-safe-dom.com.ua##.shs-price > p
-safe-dom.com.ua##.fastconsultation
-safe-dom.com.ua##.ifu-wrap
 
 ||awesomeopensource.com/awesome.gif
 awesomeopensource.com##.aos_fixed_header_container
@@ -28118,26 +28147,6 @@ paperpaper.ru##.submenu:style(backdrop-filter:none !important; -webkit-backdrop-
 isralove.org###birthday
 isralove.org###stop_block:style(position:static !important)
 isralove.org##.content .curved
-
-@@||shopozz.ru/images/loading.gif  # lazy loading
-    ! popups
-shopozz.ru###fly_cityselect_first
-    ! banners and promos
-shopozz.ru##.mainslider
-shopozz.ru##.video_blok.how-it-works
-shopozz.ru##.advantages_brand
-shopozz.ru##.block-advantages
-shopozz.ru##.wrapper > .view-all-btn
-shopozz.ru##noindex
-  !shopozz.ru##.product-content > noindex
-! профильтрованные (=рекламные) отзывы. Негатива, конечно, нет - здесь всё белое и пушистое
-shopozz.ru##.feedbacks
-    ! other
-shopozz.ru##.popular-shops
-shopozz.ru##.countries-list
-shopozz.ru##.call-btns
-! seo again
-shopozz.ru##.description_block
 
 ! buttons
 smm-tips.ru##.has-background
@@ -28804,12 +28813,6 @@ baeldung.com##.language-shell:style(font-weight:800 !important; font-family:mono
 ! inline related
 linuxshelltips.com##p strong:has-text(You might also like:)
 
-ssheasy.com##.iframe-container
-
-||serfish.com/root/img/serfish$image
-||serfish.com/root/img/quarium$image
-serfish.com##.quarium
-
 filestash.app###oem
 
 ftpweb.net##.smicon
@@ -29067,7 +29070,4 @@ registratura24.com##.progress-wrap
 ! popups
 fonarik.com##.mylang-modal
 fonarik.com##.c-backtotop
-
-shafa.ua###js-catalog-top-banner
-shafa.ua##.b-block__promo
 
