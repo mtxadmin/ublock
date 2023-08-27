@@ -141,8 +141,19 @@
 ! popups
 1hunting.ru##.fixed
 
-! exception is from AdGuard Annoyances filter
+! from Adguard Annoyances filter
 1plus1.ua#$#.js-cookies { display: none!important; }
+||1plus1.video/ab
+||1plus1.video/*/ab/
+||1plus1.video/static/img/ab/
+||1plus1.video/video/embed/  # "Выключите адблок"
+||1plus1.video/*/recommendation_projects/
+    ! top
+1plus1.ua##.subHeader:style(position:static !important)
+1plus1.video##.nav:style(position:static !important)
+    ! other
+1plus1.video##.btn-red
+1plus1.video##.footer-links-logo
 
 1prime.ru##.header__nav_fixed:style(position:static !important)
 1prime.ru##.header__nav-holder:style(position:static !important)
@@ -27552,9 +27563,6 @@ opticsplanet.com###coupon-rad__banner
 
 coolthings.com##.cb-nav-bar-wrap:style(position:static !important)
 
-||1plus1.video/video/embed/  # "Выключите адблок"
-1plus1.ua##.subHeader:style(position:static !important)
-
 smartfacts.ru##.ins_container
 
 ||moslenta.ru/assets/flatlogo$image
@@ -27678,10 +27686,6 @@ _liveinternet.gif  # from Ru AdList
 ||mobzon.ru/adbp/adbp.js  # from Ru AdList
 
 1in.am##.top_date
-
-1plus1.video##.nav:style(position:static !important)
-1plus1.video##.btn-red
-1plus1.video##.footer-links-logo
 
 notizie.it##.mh-logo-big-front
 
@@ -27830,11 +27834,6 @@ geeksforgeeks.org##.shell
 338lm.ru##.widget-button
 
 d3ward.github.io##.gt-link
-
-||1plus1.video/ab
-||1plus1.video/*/ab/
-||1plus1.video/static/img/ab/
-||1plus1.video/*/recommendation_projects/
 
 korrespondent.net##.icon-photo
 korrespondent.net##.icon-photo_large
