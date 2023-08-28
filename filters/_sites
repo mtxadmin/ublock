@@ -2785,6 +2785,9 @@ banki.ru##.products-offers
 banki.ru##.specials-list
 ! banners
 banki.ru##div[data-test=beautiful-slider__container]
+    ! apps
+banki.ru##div:has(>div>img[alt=mobile-app])
+banki.ru##[class^=appsWidgetstyled]
     ! seo texts
 banki.ru##[data-test="header-subtitle"]
 banki.ru##.notice-text
@@ -2799,7 +2802,6 @@ banki.ru##.expand-content:has-text(Содержание)
 banki.ru##.text-header-3:has-text(Эксклюзивное видео)
 ! non-clickable and useless tags
 banki.ru##[class^=TabsPanel]
-banki.ru##div:has(>div>img[alt=mobile-app])
 
 ! from Fanboy's
 banki.ua##.b-fb-overlay
@@ -9690,6 +9692,7 @@ hh.ru##.tmpl_hh_top:style(position:static !important)
 hh.ru##.tmpl_hh_content:style(margin-top:0px !important; margin-bottom:0px !important)
 hh.ru##[class^=important-notifications]
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-button:style(color:initial !important; background:#fff !important)
+hh.ru##.peach-vac__header
     ! banners and promos
 !hh.ru##.noprint - don't
 hh.ru##.resumesearch__registration
@@ -9723,6 +9726,7 @@ hh.ru##[class^=infoblock]
 hh.ru##[class^=infoblock-content--]
 hh.ru##.vacancy-description > .bloko-text
 hh.ru##.bloko-button:has-text(руб)
+hh.ru###animation
 ! promo
 hh.ru##button[data-qa="negotiations-vacancy_summary"]
 ! inline
@@ -12863,6 +12867,7 @@ leopard-fil.ru##.header-main
 ! "Cookie “qrator_jsr” does not have a proper “SameSite” attribute value"
 ||leroymerlin.ru/qrerror/
 ||leroymerlin.kz/qrerror/
+leroymerlin.ru##p:has-text(отключить VPN)
     ! header
 leroymerlin.kz,leroymerlin.ru##ab-mobile-app
 leroymerlin.kz,leroymerlin.ru##.market-tab
