@@ -152,6 +152,8 @@ pikabu.ru##.sidebar__right:style(position:static !important)
 pikabu.ru##.page-story > section
 ! донаты
 pikabu.ru##.story__donate
+! еще донаты
+pikabu.ru##.fundraising-widget
 ! раскрыть спойлеры
 pikabu.ru##+js(rc,pkb-spoiler)
 !
@@ -7715,6 +7717,34 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="mexico7
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^mexico777$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="mexico777"]))
     ! https://pikabu.ru/story/otvet_na_post_kak_menya_zaneslo_v_meksikanskuyu_tyurmu_ili_mozhet_byit_khvatit_skandalyi_intrigi_rassledovaniya_10474514
+
+pikabu.ru##span:has-text(/^Basurman76$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Basurman76"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Basurman76"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Basurman76$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Basurman76"]))
+    ! https://pikabu.ru/story/prishyol_tovarishch_s_svo_10595497
+    ! https://pikabu.ru/story/ni_razu_ne_razzhiganie_ya_i_sam_ne_russkiy_8259288
+    ! https://pikabu.ru/story/tabletka_pamyati_7643383
+    ! https://pikabu.ru/story/kasha_v_golovakh_7586420
+    ! https://pikabu.ru/story/besporyadki_v_ssha_7490545
+    ! https://pikabu.ru/story/neozhidannaya_kritika_rossiyskoy_oppozitsii_7409495
+
+pikabu.ru##span:has-text(/^adedas$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="adedas"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="adedas"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^adedas$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="adedas"]))
+    ! https://pikabu.ru/story/feya_10594722?cid=282371995
+
+pikabu.ru##span:has-text(/^marsikpessik$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="marsikpessik"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="marsikpessik"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^marsikpessik$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="marsikpessik"]))
+    ! https://pikabu.ru/story/nu_chto_narod_pognali_na_e_rot_10600386
+    ! https://pikabu.ru/story/vsem_udachi_gospoda_10595247
+    ! https://pikabu.ru/story/moya_rabota_10386276
 
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
