@@ -7919,6 +7919,15 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/lukashenko_chvk_vagner_ostanetsya_v_belarusi__ikh_chislennost_mozhet_byit_uvelichena_do_10_tyisyach_chelovek_10594664
     ! https://pikabu.ru/story/pochti_polovina_boytsov_chvk_vagner_pokinuli_territoriyu_belarusi_10590200
 
+pikabu.ru##span:has-text(/^CoolGaga$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="CoolGaga"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="CoolGaga"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^CoolGaga$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="CoolGaga"]))
+    ! https://pikabu.ru/story/v_rostovskoy_oblasti_migrantov_budut_lishat_grazhdanstva_za_uklonenie_ot_svo_10600511
+    ! https://pikabu.ru/story/otvet_na_post_papa_zhivoy_9913745
+
+
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^history2022$/)):style(color:#F0F0F0)
