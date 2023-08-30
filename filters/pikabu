@@ -3870,9 +3870,33 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="RDR2"])
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^RDR2$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="RDR2"]))
 
+! шок, сенсации, вата
+pikabu.ru##span:has-text(/^t.dzen$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="t.dzen"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="t.dzen"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^t.dzen$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="t.dzen"]))
+    ! https://pikabu.ru/story/disney_pokhozhe_vse_lgbt_do_dobra_ne_dovedet_10482447?cid=279393955
+    ! https://pikabu.ru/story/zhdem_novyikh_sanktsiy_10043643
+    ! https://pikabu.ru/story/svoboda_poamerikanski_pravoobladateli_trebuyut_ot_reddit_lichnyie_dannyie_piratov_9974997
+    ! https://pikabu.ru/story/prilozhenie_podskazyivayushchee_gde_u_cheloveka_pravaya_a_gde_levaya_ruka_stalo_samyim_skachivaemyim_na_ios_v_ssha_9873851
+    ! https://pikabu.ru/story/rasizm_odnoznachno_9870665
+    ! https://pikabu.ru/story/kak_takaya_malenkaya_strana_pobedila_napoleona_i_gitlera_ne_ponimayu_yetogo_9739785
+    ! https://pikabu.ru/story/naturalnyiy_boykot_9527337
+    ! https://pikabu.ru/story/netfliks_9471992
+    ! https://pikabu.ru/story/vot_poyetomu_chubays_ne_ezdil_nikogda_v_gomel_9852234
+    ! https://pikabu.ru/story/geneticheskaya_pamyat_9463667
+
+! еще один с постами про загнивающий запад. Неделя, а уже наклепал
+pikabu.ru##span:has-text(/^darkNtimes$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="darkNtimes"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="darkNtimes"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^darkNtimes$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="darkNtimes"]))
+    ! https://pikabu.ru/story/gosduma_predlozhila_voznagrazhdat_grazhdan_za_sdachu_zakladok_10602470
+    ! https://pikabu.ru/story/razrabotchiki_tor_zastavyat_polzovateley_maynit_chuchut_10599609
+    ! https://pikabu.ru/story/okazyivaetsya_v_ssha_proslushivat_politseyskie_radiokanalyi_ne_zapreshcheno_no_est_nyuansyi_10589443
+    ! https://pikabu.ru/story/eshchyo_plyus_v_kopilku_o_metodakh_rabotyi_spetssluzhb_v_darke_10586044
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="VoinSveta17"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^VoinSveta17$/)):style(color:#F0F0F0)
@@ -4238,9 +4262,46 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="NormoSP
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^NormoSPB$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="NormoSPB"]))
 
+pikabu.ru##span:has-text(/^MetaMorf$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="MetaMorf"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="MetaMorf"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^MetaMorf$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="MetaMorf"]))
+    ! https://pikabu.ru/story/otvet_na_post_mvd_polshi_i_stran_baltii_potrebovali_ot_belorussii_vyidvorit_chvk_vagner_10601861  # "пузыри мефодия"
+    ! https://pikabu.ru/story/otvet_na_post_pervaya_ugolovka_za_ispolzovanie_vpn_v_lichnyikh_tselyakh_9631553
+    ! https://pikabu.ru/story/otvet_na_post_zasedanie_soveta_bezopasnosti_oon_9143_za_10_minut_9572094
+    ! https://pikabu.ru/story/klikbeyt_uchyonyie_vyiyasnili_proiskhozhdenie_belarusov_9007812
+
+pikabu.ru##span:has-text(/^Kasak01$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Kasak01"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Kasak01"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Kasak01$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Kasak01"]))
+    ! https://pikabu.ru/story/podolyak_zayavil_chto_kiev_soglasoval_s_zapadom_udaryi_po_kryimu_10601549
+    ! https://pikabu.ru/story/uzhe_nachinat_volnovatsya_ili_eshche_rano_10545059
+    ! https://pikabu.ru/story/komandir_chvk_vagner_anonsiroval_nachalo_samoy_bolshoy_rabotyi_v_mire_10480000
+    ! https://pikabu.ru/story/glava_rosgvardii_v_khode_myatezha_prigozhina_sdal_zhene_zanachku_i_pozhalel_10412315
+    ! https://pikabu.ru/story/vooruzhyonnyie_silyi_rossii_budut_rasshiryatsya_tselyiy_god_10246860
+
+! про физику - бредово, но про коммунизм совсем уехал
+pikabu.ru##span:has-text(/^tuvavur$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="tuvavur"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="tuvavur"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^tuvavur$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="tuvavur"]))
+    ! https://pikabu.ru/story/protivorechiya_mezhdu_finansovyim_i_proizvodstvennyim_kapitalom_10601594
+    ! https://pikabu.ru/story/antiimperializm_kak_takticheskiy_soyuznik_sotsializma_10598677
+    ! https://pikabu.ru/story/mnogopolyarnyiy_mir_ili_sotsialisticheskie_preobrazovaniya_10591945
+
+pikabu.ru##span:has-text(/^sameperson9999$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="sameperson9999"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="sameperson9999"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^sameperson9999$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="sameperson9999"]))
+    ! https://pikabu.ru/story/nachalsya_pervyiy_zheleznodorozhnyiy_tranzit_tovarov_iz_rossii_v_saudovskuyu_araviyu_cherez_iranskiy_koridor_10601224
+    ! https://pikabu.ru/story/gipoteza_i_domyislyi_ne_bolee_10588747
+    ! https://pikabu.ru/story/o_kardinalnom_vliyanii_yelektrosamokatov_na_geopolitiku_i_yekonomiku_10453476
+    ! https://pikabu.ru/story/otvet_eosforos84_v_v_mit_opublikovali_video_vozmozhnyikh_posledstviy_yadernoy_voynyi_mezhdu_rf_i_ssha_10426505
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="BrieflyLife"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^BrieflyLife$/)):style(color:#F0F0F0)
@@ -4654,9 +4715,21 @@ pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Nayones
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Nayones$/)):style(color:#F0F0F0)
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Nayones"]))
 
-pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="RuRarusRisus"]):not(:matches-path(/\/story\//))~div
-pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^RuRarusRisus$/)):style(color:#F0F0F0)
-pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="RuRarusRisus"]))
+! renamed
+!pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="RuRarusRisus"]):not(:matches-path(/\/story\//))~div
+!pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^RuRarusRisus$/)):style(color:#F0F0F0)
+!pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="RuRarusRisus"]))
+
+pikabu.ru##span:has-text(/^RuRarusRisusRuma$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="RuRarusRisusRuma"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="RuRarusRisusRuma"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^RuRarusRisusRuma$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="RuRarusRisusRuma"]))
+    ! https://pikabu.ru/story/prodolzhenie_posta_yeto_ne_povtor_nakhodkinskiy_predprinimatel_peredal_baggi_blagodarya_kotoromu_uzhe_udalos_yevakuirovat_ranenyikh_10600830
+    ! https://pikabu.ru/story/baltiyskiy_flot_popolnilsya_novyim_mgs_yakov_lapushkin_pyatoe_v_serii_proekta_19910_10600678
+    ! https://pikabu.ru/story/prodolzhenie_posta_yeto_ne_povtor_nakhodkinskiy_predprinimatel_peredal_baggi_blagodarya_kotoromu_uzhe_udalos_yevakuirovat_ranenyikh_10599869
+    ! https://pikabu.ru/story/prodolzhenie_posta_yeto_ne_povtor_nakhodkinskiy_predprinimatel_peredal_baggi_blagodarya_kotoromu_uzhe_udalos_yevakuirovat_ranenyikh_10597185
+    ! https://pikabu.ru/story/otvet_anonim_v_v_rossii_provedenyi_uspeshnyie_ispyitaniya_rossiyskogo_udarnogo_drona_upyir_na_fronte_10597085
 
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="kwazikvv"]):not(:matches-path(/\/story\//))~div
 pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^kwazikvv$/)):style(color:#F0F0F0)
@@ -7845,6 +7918,15 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/lukashenko_chvk_vagner_ostanetsya_v_belarusi__ikh_chislennost_mozhet_byit_uvelichena_do_10_tyisyach_chelovek_10594664
     ! https://pikabu.ru/story/lukashenko_chvk_vagner_ostanetsya_v_belarusi__ikh_chislennost_mozhet_byit_uvelichena_do_10_tyisyach_chelovek_10594664
     ! https://pikabu.ru/story/pochti_polovina_boytsov_chvk_vagner_pokinuli_territoriyu_belarusi_10590200
+
+pikabu.ru##span:has-text(/^CoolGaga$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="CoolGaga"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="CoolGaga"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^CoolGaga$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="CoolGaga"]))
+    ! https://pikabu.ru/story/v_rostovskoy_oblasti_migrantov_budut_lishat_grazhdanstva_za_uklonenie_ot_svo_10600511
+    ! https://pikabu.ru/story/otvet_na_post_papa_zhivoy_9913745
+
 
 pikabu.ru##span:has-text(/^history2022$/):style(color:#D0D0D0 !important)
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="history2022"]):not(:matches-path(/\/story\//))~div
