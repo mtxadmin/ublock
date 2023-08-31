@@ -2777,17 +2777,20 @@ banki.ru##section:has(a[data-role=button]):not(:matches-path(/\/products\//))
 banki.ru##[class^=AggregatorCalc]
 ! space for banners
 banki.ru##[class^=HorizontalScroll]
-! space for banners
-banki.ru##[class^=Panel__]
+! space for banners. Update: no, that's too broad, there are non-ad panels too
+!banki.ru##[class^=Panel__]
 ! promo
 banki.ru##.products-offers
 ! promo
 banki.ru##.specials-list
 ! banners
 banki.ru##div[data-test=beautiful-slider__container]
+||banki.ru/products/*/getBanners/
     ! apps
 banki.ru##div:has(>div>img[alt=mobile-app])
 banki.ru##[class^=appsWidgetstyled]
+||banki.ru/static/layout-footer/$image
+banki.ru##[class^=AdsMobileAppstyled]
     ! seo texts
 banki.ru##[data-test="header-subtitle"]
 banki.ru##.notice-text
@@ -8724,6 +8727,9 @@ github.com##.gh-header-shadow
 github.com##.header-logged-out:style(background-color:black !important)
     ! fixed elements
 docs.github.com##.tooltipped
+    ! banners and promos
+github.com##.react-code-size-details-in-header:has-text(GitHub Copilot)
+github.com##[class^=types__StyledButton]:has-text(GitHub Copilot)
     ! other
 github.io##.article-author-side
 github.io##article.post:style(margin-left:40px !important)
@@ -29023,3 +29029,5 @@ heymarket.com###heymarket-widget
 ||at.staticfiles.at/img/privacywall/
 
 nascompares.com##a[href^="https://bit.ly/"]
+
+sap.com##.ds-global-announcement
