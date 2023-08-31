@@ -10995,6 +10995,7 @@ investfuture.ru###header-branding:style(height:auto !important)
 
 ||investing.com/*/_error$script
 ||investing.com/api/editions/streamer
+education.investing.com$script  # https://si.education.investing.com/inv/prebid.js  # https://si.education.investing.com/inv/imhb.js
     ! popups
 investing.com##[class^=watchlist-onboarding-drawer]
     ! top
@@ -18524,6 +18525,8 @@ profile.ru##.read-more-wrap
 profile.ru##.read-yzd
 
 profinance.ru###pfs_logo
+! ватные новости inline
+profinance.ru##.pfs-news5
 
 profi-user.ru##.form-bl
 
@@ -26351,8 +26354,15 @@ water-service.com.ua##.art-header
 
 waygrand.com###sp-header
 
-! inline
+    ! top
+wccftech.com##.topbar:style(position:static !important)
+    ! banners and promos
+! not aside, but bottom
+wccftech.com##.aside:has-text(Deal of the Day)
+    ! inline related
 wccftech.com##.story-related
+wccftech.com##.related-story
+    ! other
 wccftech.com##.story-products-wrapper
 
 wday.ru##.app-header__wrapper:style(position:static !important)
