@@ -190,8 +190,15 @@ ozon.ru##h3
 ! footer icons
 !ozon.ru##svg:matches-css(width:24px):matches-css(height:24px) - don't, not only footer
 ozon.ru##[data-widget="separator"]
+! Update: it worked earlier, but now it hides full description and somehow orderlist.
+! Update2: no, that's not this rule. Seems to be site glitches, sometimes working and sometimes not. Weird.
+! Update3: temporary gliches with the site, now everything seems ok
 ozon.ru##[data-paginator-loader]
-  ! Update: it worked earlier, but now it hides full description and somehow orderlist. Update2: no, that's not this rule. Seems to be site glitches, sometimes working and sometimes not. Weird.
+! в правой колонке верстка чуть едет без этого, сама по себе - там зачем-то отступ
+ozon.ru##[data-widget=row]:style(margin-bottom:0px !important)
+! в правой колонке название продавца дважды. Верхнее явно лишнее
+ozon.ru##[data-widget="webBrand"]
+
 !
 ozon.ru##[data-widget="webSharingButton"]
 
