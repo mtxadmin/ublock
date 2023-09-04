@@ -157,8 +157,8 @@ ozon.ru##a[href="/travel/"]:has(img)
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
-ozon.ru##div:has(>span:has-text(/Скидк(а|и)/i)):not(:matches-path(/\/my\//))
-ozon.ru##div:has(>span:has-text(/ХИТЫ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор|Распродажа|Ликвидация|Оригинал|Цена что надо|бонус|балл/i))
+ozon.ru##div:has(>span:has-text(/^\s*Скидк(а|и)/i)):not(:matches-path(/\/my\//))
+ozon.ru##div:has(>span:has-text(/^\s*(ХИТЫ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор|Распродажа|Ликвидация|Оригинал|Цена что надо|бонус|балл)/i))
 ozon.ru##span:has-text(%)
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
