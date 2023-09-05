@@ -4393,6 +4393,8 @@ chudochashca.ru##.site-header-inner
 ||chuvaz.ru/i/top.jpg
 ||chuvaz.ru/i/bgpage.jpg
 
+    ! popups
+cian.ru##[class*=-overlay-]
     ! header
 !||cian.site/frontend/mainpage/$image
 ||cian.site/frontend/$image
@@ -6045,9 +6047,15 @@ domashniy.ru##.g-header
 domashniy.ru##.sticky
 domashniy.ru##.footer-media
 
-||domclick.ru/homepage-confered/$image
+    ! popups
 domclick.ru##.dc-dialog__overlay-5-9-1
 domclick.ru##[class*="dialog__header--banner"]
+domclick.ru##[class*=overlay]:has(.callWindow_container)
+    ! fixed duplicate sidebar
+domclick.ru##.sc_greenSidebarHeader
+domclick.ru##.shell_railedContentSidebar
+    ! other
+||domclick.ru/homepage-confered/$image
 domclick.ru##.ftr-styles-qr-wrapper--2-4-1
 blog.domclick.ru##[class^=PostContent_post-page__sticky]
 
@@ -6055,7 +6063,6 @@ domenolog.ru###f-bottom
 
 dominospizza.ru##.dpe-modal-overlay
 dominospizza.ru##.react-swipeable-view-container
-
 dominospizza.ru##path
 ||dominospizza.ru/images/home-sprites$image
 
@@ -6087,6 +6094,13 @@ dom-s-ymom.org##.banner-area:style(margin-top:0px !important; margin-bottom:0px 
 ! top spacing. Do not edit
 dom-s-ymom.org##.sidebar-no.col-left
 dom-s-ymom.org##.footer
+
+    ! popups
+domter.ru##.dlf-timepopup
+domter.ru##.mfp-dlf-timepopup
+    ! other
+! sidebar
+domter.ru##.block-domter-dlf-zhk-request
 
 ||don-holod.ru/wp-content/uploads/2021/03/podarok_korobka_rozhdestvo_195305_1280x720.jpg
 
@@ -9753,6 +9767,7 @@ hh.ru##.idc-logo-block
 hh.ru##.tmplt_hh-logo
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=footer-nav-logo]
 hh.ru##.employer-sidebar__logo-container
+hh.ru##[class^=logo-]
     ! socials
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-gap_top:has-text(Вход через соцсети)
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-form-item:has-text(через соцсеть)
@@ -16262,6 +16277,11 @@ novostrong.com##.rating-container
 novostrong.com##.swiper-buttons
 novostrong.com##.tags
 novostrong.com##.text
+
+! video widget
+novostroy.ru###plankton-widget
+! duplicate panel
+novostroy.ru###card-fixed-panel
 
 novostroy-m.ru##.fixed_menu_box:style(position:static !important)
 novostroy-m.ru###fixed_right
@@ -29057,3 +29077,14 @@ teslatarget.ru##.wpcf7-form
 teslatarget.ru##.sub_box
 
 ingress.com##header:style(transform:none !important; -webkit-transform:none !important;)
+
+mskguru.ru##.button_wa
+mskguru.ru##.flat_right_col:style(position:static !important)
+
+||oxothik.ru/informer/$image
+oxothik.ru###oxcalentar
+
+brakonyerov.net##.entry-image:style(margin-top:0px !important)
+
+samoletplus.ru##.container:has-text(cookie)
+samoletplus.ru##[class^=HeaderLogo]
