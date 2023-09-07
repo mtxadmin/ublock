@@ -2201,13 +2201,14 @@ _tizers.  # from Ru AdList
 .viptizer.  # from Ru AdList
 /viptizer.  # from Ru AdList
 ! .media_image-field - Drupal images
-~bki-okb.ru,~dw.com,~freeones.com,~geeks.hu,~heise.de,~irecommend.ru,~metro-cc.ru,~n-tv.de,~tvklik.ru,~ua-independent.com,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
+~bki-okb.ru,~dw.com,~freeones.com,~geeks.hu,~heise.de,~irecommend.ru,~metro-cc.ru,~n-tv.de,~stuttgarter-zeitung.de,~tvklik.ru,~ua-independent.com,~youtube.com##[class*=teaser]:not(html):not(body):not(article):not(.media_image-field)
     ! Exclusions:
     ! bki-okb.ru: in fact, just articles in the FAQ
     ! dw.com: links to news (.link-in-teaser)
     ! freeones.com: previews
     ! heise.de - non-ad teasers. a-article-teaser*: a-article-teaser__link, a-article-teaser, a-article-teaser--horizontal-layout, a-article-teaser--mobile-in-list
     ! n-tv.de news site: many teaser classes - "bnews__slides__teaser slick-slide slick-cloned", "teaser__date", "teaser__kicker", "teaser__headline", "teaser teaser--wide teaser--hero teaser--gallery"
+    ! stuttgarter-zeitung.de - news articles: brick teaser-hero boxitem
     ! tvklik.ru: just regular list items - .rt-teaser-articles
     ! ua-independent.com - normal, non-ad news: "itemteaser teaser_title"
 ~heise.de##[id*=teaser]
