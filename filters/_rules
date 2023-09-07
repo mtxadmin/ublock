@@ -4797,13 +4797,26 @@ turboimagehost.com##.modal-footer
     ! from v1
 
 
-! strange ad scripts
+! strange ad scripts  # Update: ezoic ads
+/beardeddragon/*
+    ! /beardeddragon/drake.js  # is in EasyList
+    ! /beardeddragon/gilamonster.js
+    ! /beardeddragon/iguana.js
+    ! /beardeddragon/tortoise.js  # is in EasyList
+    ! /beardeddragon/wyvern.js
 ! hacked: https://webmasters.stackexchange.com/questions/136399/strange-variations-of-url-showing-up-in-google-search-console
 /detroitchicago/*$script,important
+    ! /detroitchicago/augusta.js  # is in EasyList
+    ! /detroitchicago/boise.js  # is in EasyList
     ! /detroitchicago/cmbdv2.js  # is in EasyList
     ! /detroitchicago/houston.js  # is in EasyList
+    ! /detroitchicago/kenai.js  # is in EasyList
     ! /detroitchicago/minneapolis.js  # from uBlock filters
+    ! /detroitchicago/reportads.js  # is in EasyList
     ! /detroitchicago/rochester.js  # is in EasyList
+    ! /detroitchicago/sidebarwall.js  # is in EasyList
+    ! /detroitchicago/stickyfix.js
+    ! /detroitchicago/tulsa.js
     ! cookies scripts
     !||techgenix.com/detroitchicago/anaheim.js
     !||techgenix.com/detroitchicago/boise.js
@@ -4811,9 +4824,20 @@ turboimagehost.com##.modal-footer
     !||thewindowsclub.com/detroitchicago/
     !https://www.thewindowsclub.com/detroitchicago/rochester.js
     /jellyfish.webp$script  # from EasyList  # https://webmasters.stackexchange.com/questions/136399/strange-variations-of-url-showing-up-in-google-search-console
-/edmontonalberta/*  # /edmontonalberta/calgary.js
+    ! also: https://ezodn.com/detroitchicago/consentsettings.js
+/edmontonalberta/*  
+    ! /edmontonalberta/calgary.js
+/parsonsmaize/*
+    ! /parsonsmaize/abilene.js
+    ! /parsonsmaize/olathe.js  # is in EasyList
 /porpoiseant/*$important  # ad scripts  # is in EasyList
-/tardisrocinante/*  # detroitchicago, porpoiseant
+    ! /porpoiseant/banger.js
+    ! /porpoiseant/et.js
+    ! /porpoiseant/fads.js
+/tardisrocinante/*  # detroitchicago, porpoiseant  # also: https://sf.ezoiccdn.com/tardisrocinante/cash.js
+    ! /tardisrocinante/css_onload.js
+    ! /tardisrocinante/screx.js
+    ! /tardisrocinante/script_delay.js
 
 
 ! noisy gifs and smiles
