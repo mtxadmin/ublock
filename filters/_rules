@@ -2658,6 +2658,12 @@ _chartbeat.js  # from EasyPrivacy
     ! /fingerprint2.min.js$important  # is in EasyPrivacy and AdGuard
         ! ||jsdelivr.net/fingerprintjs2/  # Also
     ! /fingerprintjs2/*
+    ||jsdelivr.net/npm/@fingerprintjs/fingerprintjs$redirect=noopjs
+    ! Sites:
+    sbermegamarket.ru##+js(set, Object.prototype.FingerprintJS, noopFunc)
+    sbermegamarket.ru##+js(set, FingerprintJS.Promise.load, noopFunc)
+    sbermegamarket.ru##+js(set, FingerprintJS,noopFunc)
+    sbermegamarket.ru##+js(set, FingerprintJS.load,noopFunc)
 /foresee/*  # from Ru AdList
 ?frm=script&se_referrer=  # from AdGuard
 /frontend-metrics/*
