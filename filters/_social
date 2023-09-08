@@ -225,6 +225,9 @@ facebook.com##[href="https://www.facebook.com/"]
 ! and again
 facebook.com##*:matches-css(position:fixed):style(position:static !important)
 facebook.com##[aria-label="Not Logged In"]
+    ! popups
+facebook.com##[role="dialog"]:has-text(cookies)
+facebook.com##[class^=__fb-light-mode]
 
 
 
