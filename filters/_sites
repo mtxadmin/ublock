@@ -766,6 +766,8 @@ active-hunt.ru##.product-info__bottom
 activestate.com###site-navigation
 activestate.com##.logo_left
 activestate.com##.wpb_content_element[class*=vc_custom_]
+! top fixed
+activestate.com##.hthb-notification
 
 activexperts.com###hero
 activexperts.com###topbar
@@ -9161,6 +9163,7 @@ grafana.com##.d-header:style(position:static !important)
 grafana.com##.page-submenu:style(position:static !important)
 grafana.com##.mega-menu__logo
 grafana.com##.position-sticky:style(position:static !important)
+grafana.com##.subnav:style(position:static !important)
     ! banners and promos
 grafana.com##.docs-featured
 grafana.com##.signup-cta
@@ -9826,6 +9829,7 @@ hh.ru##.tmpl_hh_corp
 hh.ru##.tmpl_hh_head
 hh.ru##.tmpl_hh_header
 hh.ru##.tmplt_hh-header
+hh.ru##.tmpl-hh-header__wrapper
 hh.ru##.tmpl_hh_hero
 hh.ru##.tmpl_hh_flex
 hh.ru##.tmpl_hh_footer
@@ -9834,6 +9838,7 @@ hh.ru##.tmpl_hh_geo
 hh.ru##.tmpl_hh_icons
 hh.ru##.tmpl_hh_logo
 hh.ru##.tmpl_hh_marque
+hh.ru##.tmpl_hh_marquee__item
 hh.ru##.tmpl_hh_offer
 hh.ru##.tmpl_hh_photo
 hh.ru##.tmpl_hh_project
@@ -9861,6 +9866,8 @@ hh.ru##.index-section-vacancies-of-the-day
 hh.ru##.vacancy-serp-sticky-filters-button
 hh.ru##[class*=blocked-activator]
 hh.ru##[class^="error-picture-"]
+! pic
+hh.ru##[class^=backplate-module]:has([class^=picture-widget-module])
 
 ||hightech.plus/api/textteasers/
 hightech.plus##[class^=bottom-injection]
@@ -12918,6 +12925,8 @@ leroymerlin.kz,leroymerlin.ru##.header-inner:style(position:static !important)
 leroymerlin.kz,leroymerlin.ru##uc-header:style(position:static !important)
 leroymerlin.kz,leroymerlin.ru##uc-sticky-header:style(position:static !important)
 leroymerlin.kz,leroymerlin.ru##.mowk68k_header-footer
+! top banner
+leroymerlin.ru##[class$=_main_page] > picture
     ! location popup
 leroymerlin.kz,leroymerlin.ru##.header-location-hint
 leroymerlin.kz,leroymerlin.ru##.popover-location
@@ -13031,6 +13040,8 @@ leroymerlin.ru##.main-img
 ! Uncaught ReferenceError: Sentry is not defined
 !leroymerlin.ru##+js(set, Sentry, noopFunc)
 ! Uncaught TypeError: Sentry.BrowserTracing is not a constructor
+! doesn't work
+leroymerlin.ru$permissions=geolocation=()
 
 letidor.ru##button:has-text(/^Узнать ответ$/)
 
@@ -20093,6 +20104,8 @@ ruspizda.com##.thumb_label
 ruspizda.com##.thumb_rating
 
 @@||rusprofile.ru^$generichide,badfilter
+! banner
+rusprofile.ru##.buy-subs
 
 rusrappers.ru##.site-footer
 rusrappers.ru##.menu
