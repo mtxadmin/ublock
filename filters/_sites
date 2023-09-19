@@ -9110,6 +9110,7 @@ gorzdrav.org##.c-gallery--outside
 gorzdrav.org##.c-footer__qr
     ! other
 ! lazyload data-src (without errors)
+    gorzdrav.org##+js(set-attr, img.lazyload, src, [data-src])
 
 gosuslugi.ru##.footer:style(position:static !important)
 gosuslugi.ru##.p-footer:style(position:static !important)
@@ -21038,6 +21039,7 @@ screenov.site$badfilter  # false positive from EasyList
 
 screenrant.com##.emphasized.nav-link
 ! screenrant.com lazyload data-img-url
+  ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
 
 scribd.com##.recommender_carousel_wrapper
 scribd.com##.recommender_carousel
@@ -29052,7 +29054,8 @@ freecoursesonline.me##.srr-vticker
 
 ! bottom
 axeandtool.com##.wp-block-group__inner-container
-! axeandtool.com ! lazyload data-ezsrc
+! lazyload data-ezsrc
+  axeandtool.com##+js(set-attr, img.ezlazyload, src, [data-ezsrc])
 
 fsk-russia.ru##.back-call
 
@@ -29117,6 +29120,8 @@ junglekey.com##.djunglekey
 pornfappy.com##.fp-brand
 
 !stroitelstvo-gid.ru lazyload data-src
+    ! now imgs are normal, but just for the case:
+    stroitelstvo-gid.ru##+js(set-attr, img.lazyload, src, [data-src])
 
 prostozamok.ru###sliderFrame
 
@@ -29149,6 +29154,7 @@ assistive.site##.subheader:style(position:static !important)
 heymarket.com###heymarket-widget
 
 ! fapcat.com lazyload data-src
+    fapcat.com##+js(set-attr, img.lazyload, src, [data-src])
 
 ||at.staticfiles.at/img/privacywall/
 
@@ -29194,3 +29200,15 @@ naumen.ru##.nau-tg-widget
 
 ||nypost.com/wp-content/plugins/nyp-membership/
 ||nypost.com/wp-content/plugins/nyp-video-player/
+
+openai.com##.h-screen.fixed
+    ! footer
+openai.com##footer .bg-inverse
+openai.com##.shutter-transition
+    ! other
+! video
+openai.com##.transition-opacity.object-cover
+! top pic overrides top menu
+openai.com##.w-full.h-full
+!theme-dark-gray fixed top-0 right-0 bottom-0 left-0 text-primary md:left-auto md:w-[400px] lg:hidden - not
+openai.com##+js(rc,hidden)
