@@ -10233,7 +10233,6 @@ howtogeek.com##footer ~ div
     ! inline related
 howtogeek.com##.relatedside
 howtogeek.com##p:has-text(/RELATED:/)
-howtogeek.com##.related-single
     ! other
 howtogeek.com##.message
 howtogeek.com###colophon
@@ -13914,9 +13913,9 @@ makeuseof.com##.browse-clip:has(a[href="/category/sponsored/"])
 makeuseof.com##.heading_image
 makeuseof.com##.sidebar-poll
 makeuseof.com##.emphasized
-    ! inline related
-makeuseof.com##.related-single
     ! other
+! lazyload
+  ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
 
 ||mal-kuz.ru/images/vk1.png
 ||mal-kuz.ru/images/in.png
@@ -28997,8 +28996,6 @@ allergy-center.ru$inline-script  # site blocks copypaste (trying to)
 
 ! thegamer.com : lazyload data-img-url
   ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
-! inline related
-thegamer.com##p .related-single
 
 ! pcgamer.com lazyload data-original-mos
     ! see tomshardware.com also
@@ -29009,8 +29006,6 @@ thegamer.com##p .related-single
 
 ! gamerant.com lazyload data-img-url
   ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
-! inline related
-gamerant.com##p .related-single
 
 ||learnsql.com/blog/js/flashsale.js
 learnsql.com##.flash-sale-box
@@ -29140,9 +29135,6 @@ linuxshelltips.com##p strong:has-text(You might also like:)
 filestash.app###oem
 
 ftpweb.net##.smicon
-
-! inline related
-dualshockers.com##.related-single
 
 doit.software##.cta_block
 doit.software##.call_to_action
