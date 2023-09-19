@@ -4350,6 +4350,14 @@ chilis.hu##.page_exitpopup_start
 chilis.hu###exposeMask
 chilis.hu###page_PopupContainerMobile
 
+    ! top
+chilivesti.ru##.sidebar::before
+chilivesti.ru##.sidebar:style(background-image:none !important)
+chilivesti.ru##.sidebar:style(position:absolute !important)
+! chilivesti.ru - lazyload: data-src
+    chilivesti.ru##+js(set-attr, img.lazyload, src, [data-src])
+    chilivesti.ru##.lazyload, .lazyloading:style(opacity:initial !important)
+
 chillychiles.com##.top_bar:style(position:static !important)
 chillychiles.com##.announcementBar
 chillychiles.com##.ss-icon
@@ -23931,6 +23939,10 @@ tomshardware.com##.uix_headerContainer > div:style(height:auto !important)
 ||unpkg.com/react$domain=tomsguide.com  # I don't know why, but these scripts make loop with footprint.net call
 thg.ru###clnk_main
 ! tomshardware.com: lazyload data-original-mos
+    ! there are picture tags: https://www.w3schools.com/TAGS/tag_picture.asp
+    tomshardware.com##+js(set-attr, picture>source, srcset, [data-original-mos])
+    tomshardware.com##+js(set-attr, picture>img, src, [data-original-mos])
+    ! it works, but futurecdn.net is slow
 
 thinkful.com###branding-bar
 thinkful.com##.tf-cm-signup
@@ -24237,9 +24249,13 @@ topofgames.com*?path=$popup  # from Ru AdList
 topogolic.ru##.top-header
 topogolic.ru##.nav-toogle
 
-toppickguide.com##.wpadc-wrapper-class
+    ! top
+toppickguide.com##.widget-full.image.front-page-2
 toppickguide.com##.nav-primary::before
-!lazyload data-ezsrc
+    ! other
+toppickguide.com##.wpadc-wrapper-class
+! lazyload data-ezsrc
+toppickguide.com##+js(set-attr, img.ezlazyload, src, [data-ezsrc])
 
 topqore.com###masthead
 topqore.com##.site-footer
@@ -28948,13 +28964,16 @@ freeadultporn.pro##.xxxlogo
 lisa.ru##.article-list-announce
 
 ||dualshockers.com/public/build/newsletter-popup
-! lazyload data-img-url => src
+! top
+dualshockers.com##.article-directory-sidenav:has-text(Table of contents)
 ! window.googletag === typeof undefined || !window.googletag.hasOwnProperty('cmd') || typeof window.adsNinjaHeaderBiddingManager
 ! don't work:
 !dualshockers.com##+js(set, window.googletag, noopFunc)
 !dualshockers.com##+js(set, window.googletag.com, noopFunc)
 !dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager, noopFunc)
 !dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager.arePassiveEventListenersSupported, noopFunc)
+! lazyload data-img-url => src
+  ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
 
 shopozz.ru##.img::before
 
@@ -28971,10 +28990,21 @@ allergy-center.ru$inline-script  # site blocks copypaste (trying to)
     ! allergy-center.ru$script  # 1p notifications
 
 ! thegamer.com : lazyload data-img-url
+  ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
+! inline related
+thegamer.com##p .related-single
 
 ! pcgamer.com lazyload data-original-mos
+    ! see tomshardware.com also
+    ! there are picture tags: https://www.w3schools.com/TAGS/tag_picture.asp
+    pcgamer.com##+js(set-attr, picture>source, srcset, [data-original-mos])
+    pcgamer.com##+js(set-attr, picture>img, src, [data-original-mos])
+    ! it works, but futurecdn.net is slow
 
 ! gamerant.com lazyload data-img-url
+  ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
+! inline related
+gamerant.com##p .related-single
 
 ||learnsql.com/blog/js/flashsale.js
 learnsql.com##.flash-sale-box
@@ -28982,8 +29012,6 @@ learnsql.com##.cookbook-post-gradient
 learnsql.com##.learnsql-blog-navigation:style(position:static !important)
 
 pravilamag.ru##.author-article:has(img[alt="Редакция сайта"])
-
-! chilivesti.ru - lazyload: data-srcset
 
 cheatsfile.com##.quote
 
