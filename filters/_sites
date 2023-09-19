@@ -1471,6 +1471,7 @@ androidauthority.com##.negative
 androidauthority.com##.positive
 androidauthority.com##.buy-holder
 ! lazyload srcset
+  ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
 
 androidcentral.com##.region-site-header
 androidcentral.com##.notices
@@ -6295,6 +6296,9 @@ drom.ru##.stats
 drom.ru##div[data-ga-stats-name="widgetNewBlock"]
 drom.ru##div:has(>.b-tire-scroll):style(position:static !important)
 ! lazyload: data-src
+    drom.ru##+js(set-attr, img[data-lazy="true"], src, [data-src])
+    ! site hides imgs by inline css. Very strange why
+    drom.ru##img:style(display:initial !important)
 
 dronnews.ru##.aliad-block
 
