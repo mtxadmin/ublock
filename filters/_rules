@@ -1630,7 +1630,10 @@ _rebid.js  # from EasyList
 ##[class*="leaderboard"]:not(html):not(body):not(article)
 ##[id*="leaderboard"]:not(html):not(body):not(article)
 ##[class*="Marketing"]:not(html):not(body):not(article)
-~kodi.wiki##[id*="Marketing"]:not(html):not(body):not(article)
+~kodi.wiki,~learn.microsoft.com##[id*="Marketing"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! kodi.wiki - don't remember, but definitely not marketing
+    ! learn.microsoft.com - main section
 ~surveymonkey.com##[class*="marketing"]:not(html):not(body):not(article)
 ##[id*="marketing"]:not(html):not(body):not(article)
 ##[class*="motivation"]:not(html):not(body):not(article)
@@ -3967,6 +3970,8 @@ _site/gotop.  # from Ru AdList
 ###easy-cookies-policy-main-wrapper
 ##.footer_bottom_politics
 ##.footer__popup-agreement
+! is in Adguard and EasyList
+##.fusion-privacy-bar
 ##.gdrp-popup-content
 ##.law__footer
 ###legalbar
