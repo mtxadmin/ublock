@@ -9855,6 +9855,7 @@ hh.ru##.tmpl_hh_footer
 hh.ru##.tmpl_hh_gap
 hh.ru##.tmpl_hh_geo
 hh.ru##.tmpl_hh_icons
+hh.ru##.tmpl_hh_intro
 hh.ru##.tmpl_hh_logo
 hh.ru##.tmpl_hh_marque
 hh.ru##.tmpl_hh_marquee__item
@@ -24071,13 +24072,24 @@ timeweb.com##.ia-splitter:style(padding-top:0px !important)
 
 ||cdn-tinkoff.ru/twa/
 ||tinkoff.ru/sl/  # ref links
+!
+! site blocks copypaste
+secrets.tinkoff.ru$inline-script
+secrets.tinkoff.ru$script
+tinkoffjournal.ru$script,domain=secrets.tinkoff.ru
     ! popups
 tinkoff.ru###tooltip-description
+tinkoff.ru##.SubscriptionPopup_container
+    ! top
+tinkoff.ru##[class^=ArticleBody_contents]:style(position:static !important)
+tinkoff.ru##.Page_headerContainer:style(position:static !important)
     ! banners and promos
 tinkoff.ru###bannerlink-level
 tinkoff.ru##section[id="drive-footer-banner"]
 tinkoff.ru##section[id="rec-team"]
 tinkoff.ru##.recommender-showcase
+tinkoff.ru##.HeaderCTA_cta
+tinkoff.ru##.Informer_informer
     ! backgrounds
 tinkoff.ru##.article-header__wallpaper:style(background-image:none !important)
 tinkoff.ru##.article-header:style(color:#000 !important)
@@ -29213,3 +29225,18 @@ openai.com##+js(rc,hidden)
 tecadmin.net##.smart-head-sticky:style(position:static !important)
 ! placeholders
 tecadmin.net##.a-wrap
+
+mozaiyka.ru##.table-of-contents
+
+! useless aside
+weeek.net##.components-container-articles
+
+! banners
+kinsta.com##aside
+
+wrike.com##.comparison-header:style(position:static !important)
+wrike.com##.layout__header:style(position:static !important)
+wrike.com##.comparison-header__shadow
+
+websiterating.com##.cta-sticky-container-header
+websiterating.com##.gb-grid-wrapper:has-text($)
