@@ -37,7 +37,7 @@
 !||ozone.ru/assets/vendors - don't, map blocked
 !||ozone.ru/assets/vendors-node_modules_bx - don't, map blocked
 !||ozone.ru/assets/cms-desktop-top-bar - don't
-||v.ozone.ru/vod/*/tile.mp4  # видео в карточках: слегка подбешивает
+!||v.ozone.ru/vod/*/tile.mp4  # видео в карточках: слегка подбешивает  # Update: слишком радикально. Там иногда полезное. Плюс вроде видео в отзывах попадает
 ||ozon.ru/cdn-cgi/challenge-platform/  # "outdated browser" script, blocks browser. Without it, all is working
     ! Update: rarely it can block the page loading. Hmm..
     @@||ozon.ru/cdn-cgi/challenge-platform/*/orchestrate/chl_page/v1
@@ -81,7 +81,7 @@ ozon.ru##[data-widget="cookieBubble"]
 ||ozone.ru/s3/fs-chat-api/$image  # banners
 !||ozone.ru/s3/cms/$image - don't, category icons
 ||ozone.ru/assets/marketing
-||ozone.ru/s3/video/cover/$image
+!||ozone.ru/s3/video/cover/$image - hmmm...?
 ozon.ru##[data-widget="banner"]
 ozon.ru##a[href^="/travel/info/hotels-cashback/"]
 ozon.ru##[data-widget="objectBannerList"]
