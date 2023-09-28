@@ -37,7 +37,12 @@
 !||ozone.ru/assets/vendors - don't, map blocked
 !||ozone.ru/assets/vendors-node_modules_bx - don't, map blocked
 !||ozone.ru/assets/cms-desktop-top-bar - don't
-!||v.ozone.ru/vod/*/tile.mp4  # видео в карточках: слегка подбешивает  # Update: слишком радикально. Там иногда полезное. Плюс вроде видео в отзывах попадает
+!
+||v.ozone.ru/vod/*/tile.mp4  # видео в карточках: слегка подбешивает
+! Update: слишком радикально. Там иногда полезное. Плюс вроде видео в отзывах попадает
+! Update2: видео в отзывах отломалось независимо от этого. Не нашел причину, что-то со скриптами, но дело не в этом правиле. 
+! А мелькание в карточках всё же неприятно, плюс страницы подтормаживают на тонком канале - правило включено опять.
+!
 ||ozon.ru/cdn-cgi/challenge-platform/  # "outdated browser" script, blocks browser. Without it, all is working
     ! Update: rarely it can block the page loading. Hmm..
     @@||ozon.ru/cdn-cgi/challenge-platform/*/orchestrate/chl_page/v1
