@@ -76,7 +76,7 @@ ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли):not(:has-text(Не нашли нужный фильтр))
 ozon.ru##div[data-widget=alertPopup]
 !ozon.ru##.vue-portal-target - don't, filters use it too
-ozon.ru##.vue-portal-target:has-text(опрос)
+ozon.ru##.vue-portal-target:has-text(/(^|\s)опрос/i)
 ||ozone.ru/assets/*/cms-cookie-bubble.  # is in Ru AdList
 ozon.ru##[data-widget="cookieBubble"]
     ! banners and promos
