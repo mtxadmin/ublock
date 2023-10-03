@@ -140,6 +140,10 @@ bing.com##.na_t[url*="//regnum.ru/"]
 bing.com##.slide:has(div[url*="//ria.ru/"])
     ! yahoo cards
 yahoo.com##.s-card:has(a[href*="rubaltic.ru/"])
+    ! yandex videos
+ya.ru##.VideoSnippet-Wrapper:has(.Link:has-text("/ntv.ru|rutube|kp.ru|VK Видео/i"))
+ya.ru##.SearchBlock:has(.VideoSnippet2-HostText:has-text("/ntv.ru|rutube|kp.ru|VK Видео/i"))
+ya.ru##.SearchBlock:has(.VideoSnippet2-HostText[href^="http://ok.ru/video/"])
     ! duckduckgo links
 duckduckgo.com##.result__body:has(.result__a[href^="https://yandex.ru/news"])
 duckduckgo.com##.result__body:has(.result__a[href^="https://yandex.by/news"])
