@@ -140,6 +140,67 @@ bing.com##.na_t[url*="//regnum.ru/"]
 bing.com##.slide:has(div[url*="//ria.ru/"])
     ! yahoo cards
 yahoo.com##.s-card:has(a[href*="rubaltic.ru/"])
+    ! yandex images
+! encoded form, that's on the page :-(
+! .ImagesGridJustifier-Item & .Link - on the main page
+! .serp-item & .serp-item__link - on the images page
+! rt.ru
+!ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https://cdni.rt.com/"])
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fcdni.rt.com%2F"])
+ya.ru##.serp-item[data-bem*=".rt.com/"]
+! newizv.ru
+!ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https://newizv.ru/"])
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fnewizv.ru%2F"])
+ya.ru##.serp-item[data-bem*="newizv.ru/"]
+! mtdata.ru (mirtesen.ru domain)
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fmtdata.ru%2F"])
+ya.ru##.serp-item[data-bem*="mtdata.ru/"]
+! kremlin.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fkremlin.ru%2F"])
+ya.ru##.serp-item[data-bem*="kremlin.ru/"]
+! 9111.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2F9111.ru%2F"])
+ya.ru##.serp-item[data-bem*="9111.ru/"]
+! smotrim.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fsmotrim.ru%2F"])
+ya.ru##.serp-item[data-bem*="smotrim.ru/"]
+! interfax.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Finterfax.ru%2F"])
+ya.ru##.serp-item[data-bem*="interfax.ru/"]
+! solenka.info
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fsolenka.info%2F"])
+ya.ru##.serp-item[data-bem*="solenka.info/"]
+! mk.ru
+ya.ru##.serp-item[data-bem*=".mk.ru/"]
+! oko-planet.su
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Foko-planet.su%2F"])
+ya.ru##.serp-item[data-bem*="oko-planet.su/"]
+! sputnik-abkhazia.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fsputnik-abkhazia.ru%2F"])
+ya.ru##.serp-item[data-bem*="sputnik-abkhazia.ru/"]
+! rg.ru
+ya.ru##.serp-item[data-bem*=".rg.ru/"]
+! a-novosti.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fa-novosti.ru%2F"])
+ya.ru##.serp-item[data-bem*="a-novosti.ru/"]
+! smartik.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fsmartik.ru%2F"])
+ya.ru##.serp-item[data-bem*="smartik.ru/"]
+! e-news.su
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fe-news.su%2F"])
+ya.ru##.serp-item[data-bem*="e-news.su/"]
+! news2.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fnews2.ru%2F"])
+ya.ru##.serp-item[data-bem*="news2.ru/"]
+! sharij.net
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fsharij.net%2F"])
+ya.ru##.serp-item[data-bem*="sharij.net/"]
+! kurer-sreda.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Fkurer-sreda.ru%2F"])
+ya.ru##.serp-item[data-bem*="kurer-sreda.ru/"]
+! rutube.ru
+ya.ru##.ImagesGridJustifier-Item:has(.Link[href*="&img_url=https%3A%2F%2Frutube.ru%2F"])
+ya.ru##.serp-item[data-bem*="rutube.ru/"]
     ! yandex videos
 ya.ru##.VideoSnippet-Wrapper:has(.Link:has-text("/ntv.ru|rutube|kp.ru|VK Видео/i"))
 ya.ru##.SearchBlock:has(.VideoSnippet2-HostText:has-text("/ntv.ru|rutube|kp.ru|VK Видео/i"))
@@ -523,7 +584,7 @@ readsoff.com  # 7ooo.ru  # aggregator with only pro-putin sites
 
 ! pro-putin fakes
 9111.ru
-9111s.ru
+9111s.ru  # 9111.ru domain
 
 a42.ru
 a42.ru##.subscribes
@@ -589,6 +650,8 @@ ankerch-crimea.ru
 anna-news.info  # RBC says it is not directly linked to the troll factory. See https://www.rbc.ru/magazine/2017/04/58d106b09a794710fa8934ac
 anna-news.ru  # RBC says it is not directly linked to the troll factory. See https://www.rbc.ru/magazine/2017/04/58d106b09a794710fa8934ac
 aesm.info  # RBC says it is not directly linked to the troll factory. See https://www.rbc.ru/magazine/2017/04/58d106b09a794710fa8934ac
+
+a-novosti.ru  # pro-putin fakes
 
 anticwar.ru
 
@@ -1847,6 +1910,8 @@ smotrim.ru
 rus24.tv  # smotrim.ru
 
 sobcor.news  # pro-putin fakes
+
+solenka.info  # pro-putin fakes
 
 sonar21.com  # russian bot post: https://9gag.com/gag/a3Z8XWQ
 
