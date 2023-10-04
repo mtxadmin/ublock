@@ -616,7 +616,6 @@ $removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~nextdns.io|~s
     ! column.sp.baseball.findfriends.jp$removeparam=from  # from Adguard
     ! fmworld.net$removeparam=from  # from Adguard
     ! hh.ru$removeparam=from
-    ! /?from_block=$document,removeparam=from_block,domain=www.kinopoisk.ru  # from Ru AdList
     ! indeed.com$removeparam=from
     ! jetbrains.com$removeparam=from  # from Adguard
     ! jlcpcb.com$removeparam=from  # from Adguard
@@ -1722,7 +1721,7 @@ $removeparam=vero_conv  # Campaign tracking (Vero)  # https://help.getvero.com/a
 $removeparam=vero_id  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # is in NeatURL and Adguard  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
 
 $removeparam=via
-    ! $removeparam=via,domain=dzen.*,yandex.*,ya.ru
+    ! $removeparam=via,domain=dzen.*,ya.ru,yandex.*
         ! $document,removeparam=via,domain=dzen.*|yandex.*  # is in Ru AdList
         ! $removeparam=via,domain=ya.ru  # from Ru AdList
     ! ^via=futurepedia^$removeparam=via  # from DandelionSprout's URLShortener
@@ -2607,6 +2606,9 @@ kamigame.jp$removeparam=kamigame_source  # from Adguard
 
 khan.co.kr$removeparam=nv  # from Adguard
 
+$removeparam=from_block,domain=kinopoisk.ru
+    ! /?from_block=$document,removeparam=from_block,domain=kinopoisk.ru  # from Ru AdList
+
 kitbag.com$removeparam=ab  # from Adguard
 kitbag.com$removeparam=_ref  # from Adguard
 
@@ -3337,7 +3339,7 @@ yahoo.*$removeparam=fr  # from Adguard
 
 ! yandex, dzen (yandex service), yandex.market, etc
 ! form "$removeparam=..,domain=.." here is just for params sorting convenience
-$removeparam=country_code,domain=dzen.*|yandex.*
+$removeparam=country_code,domain=dzen.*|ya.ru|yandex.*
     !zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
     ! Update: now dzen.ru and yandex.*
         ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
@@ -3345,23 +3347,24 @@ $removeparam=cpc,domain=market.yandex.*  # is in Ru AdList, modified
     ! ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 ||yandex.*/search/$removeparam=did  # from Adguard
 $removeparam=do-waremd5,domain=market.yandex.*
-$removeparam=feed_exp,domain=dzen.*|yandex.*
+$removeparam=feed_exp,domain=dzen.*|ya.ru|yandex.*
 dzen.ru$removeparam=force_common_feed  # from Ru AdList
 $removeparam=from,domain=dzen.*  # in general rule up there there is an exclusion. Seems strange, todo
     ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck! 
     ! Update: "rid" seems ad-related and now is in Ru AdList
     ! Update: I found such link, it was the set of parameters of zen. Good. And "feed_exp" too.
     ! "Rid" - see above. "From" is on zen, but I saw glitches on yandex.
-$removeparam=integration,domain=dzen.*|yandex.*
+ya.ru$removeparam=from_type
+$removeparam=integration,domain=dzen.*|ya.ru|yandex.*
 ! lang
-    /story/*?lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
-yandex.*$removeparam=lr  # from NeatURL
-yandex.*$removeparam=lrredircnt  # from NeatURL
+    /story/*?lang=$document,removeparam=|,domain=dzen.*|ya.ru|yandex.*  # from Ru AdList
+ya.ru,yandex.*$removeparam=lr  # from NeatURL
+ya.ru,yandex.*$removeparam=lrredircnt  # from NeatURL
 ||market.yandex.$removeparam=mclid  # from Adguard
-yandex.*$removeparam=mlid  # from Adguard, modified
+ya.ru,yandex.*$removeparam=mlid  # from Adguard, modified
     ! ||yandex.*/news/$removeparam=mlid  # from Adguard
     ! ||yandex.*/sport/$removeparam=mlid  # from Adguard
-$removeparam=msid,domain=yandex.*
+$removeparam=msid,domain=ya.ru|yandex.*
     ! ||yandex.*/news/$removeparam=msid  # from Adguard
     ! ||yandex.*/news*msid$document,removeparam=|,domain=yandex.*  # from Ru AdList
     ! ||yandex.*/search/$document,removeparam=msid,domain=yandex.*  # from Ru AdList
@@ -3369,8 +3372,9 @@ $removeparam=msid,domain=yandex.*
 $removeparam=nid,domain=market.yandex.*  # is in Ru AdList, modified
     ! ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 ya.ru$removeparam=nr  # from Ru AdList
-$removeparam=parent-reqid,domain=yandex.*
-$removeparam=persistent_id,domain=yandex.*|dzen.ru  # from Adguard
+$removeparam=parent-reqid,domain=ya.ru|yandex.*
+ya.ru$removeparam=path
+$removeparam=persistent_id,domain=ya.ru|yandex.*|dzen.ru  # from Adguard
     ! dzen.ru$removeparam=persistent_id  # from Adguard
     ! yandex.*$removeparam=persistent_id  # from Adguard, modified
         ! ||yandex.*/news/$removeparam=persistent_id  # from Adguard
@@ -3380,17 +3384,19 @@ $removeparam=pokupki,domain=market.yandex.*  # from Ru AdList, modified
     ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 ya.ru$removeparam=redirect_ts  # from Ru AdList
 $removeparam=rs,domain=market.yandex.*  # some id
-$removeparam=search_source,domain=yandex.*  # from Ru AdList: ||yandex.*/search/$document,removeparam=search_source
-$removeparam=secdata,domain=dzen.*|yandex.*
+$removeparam=search_source,domain=ya.ru|yandex.*  # from Ru AdList: ||yandex.*/search/$document,removeparam=search_source
+$removeparam=secdata,domain=dzen.*|ya.ru|yandex.*
 $removeparam=sku,domain=market.yandex.*
-$removeparam=source-serpid,domain=yandex.*  # from Adguard
+$removeparam=source-serpid,domain=ya.ru|yandex.*  # from Adguard
     ! ||yandex.*/images/$removeparam=source-serpid  # from Adguard
-$removeparam=stid,domain=dzen.*|yandex.*
+ya.ru$removeparam=src
+$removeparam=stid,domain=dzen.*|ya.ru|yandex.*
     ! dzen.ru$removeparam=stid  # from Adguard
     ! yandex.*$removeparam=stid  # from Adguard, modified
         ! ||yandex.*/news/$removeparam=stid  # from Adguard
         ! ||yandex.*/sport/$removeparam=stid  # from Adguard
-||yandex.*/search/$removeparam=suggest_reqid  # from Adguard
+ya.ru,yandex.*$removeparam=suggest_reqid
+    ! ||yandex.*/search/$removeparam=suggest_reqid  # from Adguard
 #market.yandex.*$removeparam=text - don't, it blocks search on the market
 ||market.yandex.$removeparam=vid  # from Adguard
 
