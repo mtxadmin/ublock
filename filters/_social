@@ -1232,7 +1232,8 @@ meet.google.com##div[aria-live]
 !##.fa-telegram
 !##.icon-telegram
 !##.telegram
-!##.telegram-button
+! .telegram-button is annoying and exists in-the-wild
+##.telegram-button
 !##.telegram_sub
 ! from Adguard
 ##.telegram_subscribe
@@ -1517,9 +1518,11 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
     ! timepad.ru - .mfollowedbyicon* in the booking form
 ~facebook.com,~vk.com##[id*="follow"]:not(html):not(body):not(article)
 
-! Exclusions: on oracle.com there are many elements with class="selectionShareable"
-~officeapps.live.com,~joom.com,~oracle.com##[class*="Share"]:not(html):not(body):not(article):not(.selectionShareable)
+~support.google.com,~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article):not(.selectionShareable)
+    ! Exclusions:
     ! .selectionShareable - see /plugins/selection-sharer/*
+        ! oracle.com - there are many elements with class="selectionShareable"
+    ! support.google.com - main div (scSharedMaterialcardroot scSharedMaterialcardelevated scSharedMaterialcardborder etc.)
 ##[title^="Follow me on "]
 ##[id*="Share"]:not(html):not(body):not(article):not(:matches-path(\^/phpvirtualbox\/))
     ! Exclusions:

@@ -233,8 +233,16 @@ yandex.ru##iframe[src*="iframe-ux-feedback.html"]
 
 ! Yandex.Popups, блин. Хватит уже выстреливать в лицо всякое
 !yandex.ru##.Popup2 - don`t, там не только реклама. Нужно сузить условия
+! вот, например - 2023-10
+ya.ru,yandex.*##.Popup2:has-text(Яндекс Браузер)
+! что-то раннее
 yandex.*###popup-wrapper
 yandex.*###modal
+yandex.ru##.cl-modal-unauth
+yandex.ru##.modal__backdrop
+yandex.ru###modal_unauth
+yandex.ru##.desktop-interview-modal
+yandex.ru##.Modal:has-text(поиск Яндекса)
 
 yandex.*##.layout__right
 !yandex.*##.content__right_cols_12.content__right
@@ -356,17 +364,17 @@ yandex.ru##div:has-text(/^Вы\s+знаете\s+ответ\s+на\s+этот\s+�
 yandex.ru##a:has-text(Скачайте приложение)
 
 ! logos
-yandex.*##.header2__logo
-yandex.*##.header3__logo-ru
-yandex.*##.home-logo__default
-yandex.*##.yandex-header__logo
-yandex.*##.yandex-search__logo
-yandex.*##.serp-header__logo
-yandex.*##.mlogo
-ya.ru##.headline__logo
-ya.ru##.search3__logo
-yandex.ru##.lc-header-lpc__logo-container
-yandex.ru##.lc-logo-block__logo-container
+ya.ru,yandex.*##.header2__logo
+ya.ru,yandex.*##.header3__logo-ru
+ya.ru,yandex.*##.home-logo__default
+ya.ru,yandex.*##.yandex-header__logo
+ya.ru,yandex.*##.yandex-search__logo
+ya.ru,yandex.*##.serp-header__logo
+ya.ru,yandex.*##.mlogo
+ya.ru,yandex.*##.headline__logo
+ya.ru,yandex.*##.search3__logo
+ya.ru,yandex.*##.lc-header-lpc__logo-container
+ya.ru,yandex.*##.lc-logo-block__logo-container
 market.yandex.ru##noindex:has(>svg)
 ||yastatic.net/s3/frontend/yandex-lego/serp-header/
 
@@ -375,15 +383,15 @@ market.yandex.ru##noindex:has(>svg)
 ||money.yandex.ru/embed/
 ||yoomoney.ru/quickpay/shop-widget$3p
 
-yandex.*##.NavBarLogo
-yandex.*##[class^=PSHeaderLogo]
-yandex.*##.PSHeaderLogo360
-yandex.*##.PSHeaderLogo360-Ya
-yandex.*##.FooterApps__link
-yandex.*##[class^=PageAside__logo]
-yandex.*##[class^=PageAside__stickyContainer]:style(position:static !important)
-yandex.*##[class^=PostPhoneCallerBlockArenda]
-yandex.*##.UserSurveys
+ya.ru,yandex.*##.NavBarLogo
+ya.ru,yandex.*##[class^=PSHeaderLogo]
+ya.ru,yandex.*##.PSHeaderLogo360
+ya.ru,yandex.*##.PSHeaderLogo360-Ya
+ya.ru,yandex.*##.FooterApps__link
+ya.ru,yandex.*##[class^=PageAside__logo]
+ya.ru,yandex.*##[class^=PageAside__stickyContainer]:style(position:static !important)
+ya.ru,yandex.*##[class^=PostPhoneCallerBlockArenda]
+ya.ru,yandex.*##.UserSurveys
 
 realty.yandex.ru##.GalleryGuadeloupe:has-text(Яндекс.Директ)
 realty.yandex.ru###offer-gallery-aside-ad__rtb
@@ -567,7 +575,7 @@ yandex.ru##.serp-header:style(margin-top: 0 !important)
 ! from AdGuard
 yandex.ru##.serp-item div.direct-snippet
 
-yandex.*##.init__age
+ya.ru,yandex.*##.init__age
 
 ! Ru AdList rule. Don't know why the exclusion here, but seems ok
 ||yandex.net/get-direct$domain=~e.mail.ru
@@ -608,12 +616,6 @@ mail.yandex.ru##.ns-view-infoline-box+div
 ! https://pikabu.ru/story/kak_ubrat_reklamu_v_yandekspochte_7564444
 !mail.yandex.ru##.ns-view-id-*:contains(Реклама) - doesn't work
 mail.yandex.ru##[class^=ns-view-id-]:contains(Реклама)
-
-yandex.ru##.cl-modal-unauth
-yandex.ru##.modal__backdrop
-yandex.ru###modal_unauth
-yandex.ru##.desktop-interview-modal
-yandex.ru##.Modal:has-text(поиск Яндекса)
 
 ||yandex.ru/services/inception
 
