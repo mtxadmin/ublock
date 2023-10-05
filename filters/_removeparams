@@ -89,6 +89,7 @@ $removeparam=adgroupid  # Microsoft tracking URL parameters: https://help.ads.mi
 $removeparam=/adid$/
     ! $removeparam=adid  # also: Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
         ! &siteid=*&adid=$removeparam  # from Adguard
+        ! orbis.co.jp$removeparam=adid  # from Adguard
     ! $removeparam=ebisAdID  # AD EBiS  # from Adguard
     ! $removeparam=gps_adid  # adjust.com tracking  # from Adguard
     ! $removeparam=ir_adid  # from Adguard
@@ -186,6 +187,7 @@ $removeparam=/^aff_/i,important
         ! but:
         ! @@||s.click.aliexpress.com/deep_link.htm?aff_short_key=$removeparam=aff_short_key  # from Adguard
     ! $removeparam=aff_sub
+        ! clickfunnels.com$removeparam=aff_sub  # from Adguard
     ! $removeparam=/^aff_sub[0-9]$/  # from DandelionSprout's URLShortener
         ! $removeparam=aff_sub2
         ! $removeparam=aff_sub3
@@ -209,7 +211,8 @@ $removeparam=/^affi/i
         ! @@$removeparam=affiliate  # from DandelionSprout's URLShortener
     ! $removeparam=/^affid$/  # from DandelionSprout's URLShortener
         ! cyberlink.com$removeparam=affid  # from Adguard
-    ! $removeparam=affil  # from DandelionSprout's URLShortener
+        ! roboform.com$removeparam=affid  # from Adguard
+    ! $removeparam=affil  # from DandelionSprout's URLShortener and Adguard
     ! $removeparam=affiliateCode  # from DandelionSprout's URLShortener
     ! $removeparam=affiliateCustomId  # from DandelionSprout's URLShortener
     ! $removeparam=/^affiliateid$/  # from DandelionSprout's URLShortener
@@ -243,6 +246,11 @@ $removeparam=afid,important
     ! shopyourlikes.com$removeparam=afId
 
 $removeparam=afftag  # from DandelionSprout's URLShortener
+
+$removeparam=afftrack
+    !  iqbroker.com - blocked entirely, just for information
+    ! iqbroker.com$removeparam=afftrack  # from Adguard
+    ! shareasale-analytics.com$removeparam=afftrack  # from Adguard
 
 $removeparam=agid  # https://learn.microsoft.com/en-us/advertising/guides/url-tracking-upgraded-urls
 
@@ -421,6 +429,7 @@ $removeparam=/clickid=/i  # /clickid$/
         ! duda.co$removeparam=irclickid  # from Adguard
         ! microsoft.com$removeparam=irclickid  # from Adguard
     ! $removeparam=rb_clickid  # from Adguard  # https://github.com/brave/brave-browser/issues/17451
+    ! rtkcid=*&clickid=$removeparam=clickid  # from Adguard
     ! /landing.$removeparam=clickid  # from Adguard
     ! aufast.co$removeparam=clickid  # from Adguard
     ! iqbroker.com$removeparam=clickid  # from Adguard
@@ -488,6 +497,10 @@ $removeparam=clicktime  # from DandelionSprout's URLShortener
         ! &ymclid=$document,removeparam=|,domain=~ozon.onelink.me  # from Ru AdList  # that exclusion is on ozon, redirect to thaeir app
     $removeparam=ysclid  # New version of third-party yandex id
 
+$removeparam=cm_me  # from Adguard
+$removeparam=cm_cr  # from Adguard
+$removeparam=/^cm_mmc/  # from Adguard
+
 $removeparam=cmpid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # is in NeatURL and Adguard  # https://learn.microsoft.com/en-us/advertising/guides/url-tracking-upgraded-urls
     ! $removeparam=cmpid  # from DandelionSprout's URLShortener
 
@@ -521,6 +534,7 @@ $removeparam=/^cx_/i
         ! $removeparam=cx_recsOrder  # from Adguard
         ! $removeparam=cx_recsWidget  # from Adguard
         ! basketballking.jp$removeparam=cx_art  # from Adguard
+        ! hbol.jp$removeparam=cx_clicks_art_mdl  # from Adguard
         ! joshi-spa.jp$removeparam=cx_clicks_art_mdl  # from Adguard
         ! joshi-spa.jp$removeparam=cx_clicks_sldbox  # from Adguard
     ! $removeparam=cx_artPos  # from DandelionSprout's URLShortener
@@ -612,16 +626,20 @@ $removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~nextdns.io|~s
     ! /?from=smm|$removeparam=from  # from Ru AdList
     ! ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
     ! you.163.com$removeparam=from  # from Adguard
+    ! bandcamp.com$removeparam=from  # from Adguard
     ! bilibili.com$removeparam=from  # from Adguard
     ! column.sp.baseball.findfriends.jp$removeparam=from  # from Adguard
+    ! doda.jp$removeparam=from  # from Adguard
     ! fmworld.net$removeparam=from  # from Adguard
     ! hh.ru$removeparam=from
     ! indeed.com$removeparam=from
     ! jetbrains.com$removeparam=from  # from Adguard
     ! jlcpcb.com$removeparam=from  # from Adguard
     ! kingsoft.jp$removeparam=from  # from Adguard
+    ! myoji-kamon.net$removeparam=from  # from Adguard
     ! oshiete.goo.ne.jp$removeparam=from  # from Adguard
     ! pikabu.ru$removeparam=from
+    ! pixiv.net$removeparam=from  # from Adguard
     ! rbc.ru$removeparam=from
     ! ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru  # from Ru AdList
     ! ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru  # from Ru AdList
@@ -652,13 +670,14 @@ $removeparam=ftag  # from DandelionSprout's URLShortener
 
 $removeparam=/^ga_/i  # Campaign tracking (Google Analytics, ga)  # from NeatURL
 
-$removeparam=_ga  # from Ru AdList
+$removeparam=_ga,important  # from Ru AdList and Adguard
     ! unusual Ru AdList form (it seems, all the parameters will be removed):
         ! .com/?_ga=$document,removeparam=|  # from Ru AdList
         ! .net/?_ga=$document,removeparam=|  # from Ru AdList
         ! .ru/?_ga=$document,removeparam=|  # from Ru AdList
         ! .ua/?_ga=$document,removeparam=|  # from Ru AdList
     ! 24tv.ua$removeparam=_ga
+    ! esquire.com$removeparam=_ga  # from Adguard
     ! ||kaspersky.$removeparam=_ga  # from Adguard
     ! trendyol.com$removeparam=_ga  # from Adguard
 
@@ -677,6 +696,8 @@ $removeparam=gm  # from Ru AdList, modified
 $removeparam=gbraid  # Google ads/analytics  # from Adguard
 
 $removeparam=gclsrc  # Campaign tracking (Google Analytics, ga)  # from NeatURL and Adguard
+
+$removeparam=_gl  # from Adguard
 
 $removeparam=googleloc  # from DandelionSprout's URLShortener
 
@@ -1146,8 +1167,10 @@ $removeparam=ref,important,domain=~flowlu.com|~privyr.com
     ! speee-ad.jp$removeparam=ref  # from Adguard
     ! uspoloassn.com$removeparam=ref  # from Adguard
     ! chunichi.co.jp$removeparam=ref  # from Adguard
+    ! ieagent.jp$removeparam=ref  # from Adguard
     ! kitizawa.com$removeparam=ref  # from Adguard
     ! boards.greenhouse.io$removeparam=ref  # from Adguard
+    ! record.pt$removeparam=ref  # from Adguard
     ! tokyo-calendar.jp$removeparam=ref  # from Adguard
     ! $removeparam=ref,domain=shein.co.uk|shein.com  # from Adguard
     ! gamesplanet.com$removeparam=ref  # from Adguard
@@ -1195,6 +1218,7 @@ $removeparam=/_ref_[^=]*=/i,$domain=~bing.com|~duckduckgo.com|~google.com|~ya.ru
 $removeparam=refclickid  # from DandelionSprout's URLShortener
 
 $removeparam=refcode,important
+    ! betcity.ru$removeparam=refcode  # from Adguard
 
 $removeparam=refd  # from DandelionSprout's URLShortener
 
@@ -1258,6 +1282,8 @@ $removeparam=/referrer[^=]*=/i$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5
     ! tiktok.com$removeparam=referer_url  # from Adguard
     ! twitch.tv$removeparam=/web_only|_branch_referrer/  # from Adguard
 
+$removeparam=referid  # from Adguard
+
 $removeparam=/referral[^=]*=/i,domain=~bing.com|~duckduckgo.com|~google.com|~ya.ru|~yahoo.com
     ! Exclusions:
     ! Search engines - do not remove queries :-)
@@ -1285,6 +1311,10 @@ $removeparam=refid
 
 $removeparam=refRID  # from DandelionSprout's URLShortener
 
+$removeparam=refsrc  # from Adguard
+    ! facebook.com$removeparam=refsrc  # Facebook  # from NeatURL
+    ! twitter.com$removeparam=refsrc  # from Adguard
+
 $removeparam=revid  # good old rule from Prx: revid (one of)
 $removeparam=rev_id  # good old rule from Prx: rev_id (one of)
 
@@ -1303,6 +1333,9 @@ $removeparam=rid,domain=~attachmail.ru|~russianfood.com
     ! $removeparam=rid,domain=zen.yandex.*  # is in Ru AdList
 
 $removeparam=rtclick  # from Ru AdList
+
+$removeparam=rtkcid  # from Adguard
+    ! rtkcid=*&clickid=$removeparam=clickid  # from Adguard (different rule)
 
 $removeparam=ruid  # from Ru AdList, modified
     ! RBC network tracking. Better to make general rule for their future projects
@@ -1516,6 +1549,8 @@ $removeparam=srcc,important
 $removeparam=srccode
     ! $removeparam=/^srcCode=/i  # from DandelionSprout's URLShortener
 
+$removeparam=sscid  # from Adguard
+
 $removeparam=/^stm_/i  # Campaign tracking (stm)  # from NeatURL
     ! shopee.ph$removeparam=stm_medium  # from Adguard
     ! shopee.ph$removeparam=stm_source  # from Adguard
@@ -1535,6 +1570,7 @@ $removeparam=tag,domain=~drebedengi.ru|~livejournal.com|~pikabu.monster
         ! @@||amazon.$removeparam=tag  # from DandelionSprout's URLShortener  # definitely not
         ! ||amazon.*/dp/$removeparam=tag  # also from Adguard
         ! ||amazon.*/dp/$removeparam=tag  # from DandelionSprout's URLShortener
+        ! ||amazon.*/gp/$removeparam=tag  # from Adguard
         ! ||amazon.*/stores/$removeparam=tag  # from DandelionSprout's URLShortener
     ! cnet.com$removeparam=tag  # from Adguard
     ! support.github.com$removeparam=tag  # from DandelionSprout's URLShortener
@@ -1575,12 +1611,13 @@ $removeparam=trflg
 
 $removeparam=/^trk/i
     ! $removeparam=trk  # Campaign tracking (Amazon Kendra)  # also is in NeatURL. Very common parameter.
+        ! wetransfer.com$removeparam=trk  # from Adguard
+        ! xkcd.com$removeparam=trk  # from Adguard
     ! linkedin.com$removeparam=/^trk/  # from Adguard
         ! linkedin.com$removeparam=trk  # from NeatURL
-        ! xkcd.com$removeparam=trk  # from Adguard
+        ! linkedin.com$removeparam=trkEmail  # from NeatURL
+        ! ||linkedin.com/authwall?$removeparam=trkInfo  # from Adguard
     ! $removeparam=trkCampaign  # Campaign tracking (Amazon Kendra)  # from NeatURL
-    ! linkedin.com$removeparam=trkEmail  # from NeatURL
-    ! ||linkedin.com/authwall?$removeparam=trkInfo  # from Adguard
 
 $removeparam=_trkparms  # from DandelionSprout's URLShortener
     ! ebay.*$removeparam=_trkparms  # from NeatURL and Adguard
@@ -1599,6 +1636,8 @@ $removeparam=uclickhash
     ! &uclick=*&uclickhash=$removeparam  # from Adguard
     ! ?uclick=*&uclickhash=$removeparam  # from Adguard
 
+$removeparam=user_email_address  # from Adguard
+
 $removeparam=usqp  # from Adguard
 
 $removeparam=/^utm_/i,important,domain=~youtube.com  # Campaign tracking (utm)  # is in NeatURL and RuAdList. Very common parameters.  # UTM - Urchin Tracking Modules
@@ -1609,6 +1648,7 @@ $removeparam=/^utm_/i,important,domain=~youtube.com  # Campaign tracking (utm)  
     ! (old) Ru AdList rule: utm_campaign=$document,queryprune=|,domain=yandex.*|aliexpress.com|aliexpress.ru
     ! In Adguard there are a bunch of specific rules. Maybe they don't like regexps?
     ! $removeparam=utm_ad  # from Adguard
+    ! $removeparam=utm_adgroup  # from Adguard
     ! $removeparam=utm_affiliate  # from Adguard
     ! $removeparam=utm_brand  # from Adguard
     ! $removeparam=utm_campaign  # from Adguard and Ru AdList
@@ -1932,7 +1972,7 @@ amazon.*$removeparam=ingress  # from Adguard
 amazon.*$removeparam=initialIssue  # from Adguard
 # do not block keywords parameter  # Update: hmmm... something changed?
 amazon.com$removeparam=keywords  # NOT search itself (it's k=), but ref to it
-||amazon.*^$removeparam=linkCode  # is in DandelionSprout's URLShortener  # ref?
+||amazon.*$removeparam=linkCode  # is in DandelionSprout's URLShortener and Adguard  # ref?
 ||amazon.*^$removeparam=lp_asins  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=lp_page_asin  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=lp_slot  # from DandelionSprout's URLShortener
@@ -1967,7 +2007,7 @@ amazon.*$removeparam=sr  # Found independently  # is in DandelionSprout's URLSho
 ||amazon.*^$removeparam=srpt  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=store_ref  # from DandelionSprout's URLShortener
 ||amazon.$removeparam=SubscriptionId  # from DandelionSprout's URLShortener
-amazon.*$removeparam=th  # Found independently  # is in DandelionSprout's URLShortener
+amazon.*$removeparam=th  # Found independently  # is in DandelionSprout's URLShortener and Adguard
 amazon.*$removeparam=ts_id  # from Adguard
 ||amazon.*/hz/contact-us/csp$removeparam=/Version/i  # from Adguard
 amazon.*$removeparam=visitId  # from Adguard
@@ -2185,7 +2225,8 @@ coupang.com$removeparam=wPcid  # from Adguard and DandelionSprout's URLShortener
 coupang.com$removeparam=wRef  # from Adguard and DandelionSprout's URLShortener
 coupang.com$removeparam=wTime  # from Adguard and DandelionSprout's URLShortener
 ||coupang.com/*/products/$removeparam=q  # from Adguard
-||coupang.com/*/products/$removeparam=searchId  # from Adguard
+coupang.com$removeparam=searchId  # from Adguard
+    ! ||coupang.com/*/products/$removeparam=searchId  # from Adguard (old version)
 
 cxense.com$removeparam=/^pickup_list_click/i  # from Adguard
 ||api.cxense.com/public/widget/data?json=$script,removeparam=usi  # from Adguard
@@ -2305,8 +2346,8 @@ epicgames.com$removeparam=epic_gameId  # from DandelionSprout's URLShortener
 
 espn.com$removeparam=appsrc  # from Adguard
 
-etsy.com$removeparam=click_key  # from NeatURL and DandelionSprout's URLShortener
-etsy.com$removeparam=click_sum  # from NeatURL and DandelionSprout's URLShortener
+etsy.com$removeparam=click_key  # from NeatURL, DandelionSprout's URLShortener, Adguard
+etsy.com$removeparam=click_sum  # from NeatURL, DandelionSprout's URLShortener, Adguard
 etsy.com$removeparam=organic_search_click  # from NeatURL
 
 etxt.ru$removeparam=r  # ref  # https://vc.ru/u/2191904-dmitry/787958-13-saytov-dlya-zarabotka-v-internete-chast-1?comment=6269156
@@ -2325,8 +2366,7 @@ facebook.com$removeparam=extid  # from Adguard
 facebook.com$removeparam=hc_ref  # from Ru AdList, modified
     ! facebook.com*/?hc_ref$removeparam=|,domain=facebook.com  # from Ru AdList
 facebook.com$removeparam=hrc  # Facebook  # from NeatURL
-facebook.com$removeparam=mibextid
-facebook.com$removeparam=refsrc  # Facebook  # from NeatURL
+facebook.com$removeparam=mibextid  # now is in Adguard
 ||facebook.com/marketplace/$removeparam=tracking  # from Adguard
 
 faphouse.com$removeparam=login  # from Adguard
@@ -2549,9 +2589,6 @@ iguru.gr$removeparam=feed_id  # from Adguard
 
 infoq.com$removeparam=topicPageSponsorship  # from Adguard: infoq.com$removeparam=/topicPageSponsorship|^itm_/
 
-! iqbroker.com - blocked entirely, just for information
-iqbroker.com$removeparam=afftrack  # from Adguard
-
 iqiyi.com$removeparam=vfrm  # from Adguard
 iqiyi.com$removeparam=vfrmblk  # from Adguard
 iqiyi.com$removeparam=vfrmrst  # from Adguard
@@ -2575,9 +2612,10 @@ indeed.com$removeparam=vjfrom
 indeed.com$removeparam=assa
 
 instagram.com$removeparam=ig_rid  # from Adguard
-instagram.com$removeparam=igshid  # is in Adguard
-    ! Seems, this parameter is specific for Instagram
-    ! $removeparam=igshid  # from DandelionSprout's URLShortener
+$removeparam=igshid,domain=instagram.com|threads.net  # from Adguard
+    ! instagram.com$removeparam=igshid  # is in Adguard
+        ! Seems, this parameter is specific for Instagram
+        ! $removeparam=igshid  # from DandelionSprout's URLShortener
 
 intickets.ru$removeparam=int_enter_url
 
@@ -2651,6 +2689,8 @@ linkedin.com$removeparam=lici
 linkedin.com$removeparam=lipi  # from NeatURL
 linkedin.com$removeparam=midSig  # from NeatURL
 linkedin.com$removeparam=midToken  # from NeatURL
+linkedin.com$removeparam=origin
+    ! ||linkedin.com/feed/update$removeparam=origin  # from Adguard
 linkedin.com$removeparam=recommendedFlavor  # from NeatURL
 linkedin.com$removeparam=trackingCode
 linkedin.com$removeparam=updateEntityUrn  # from DandelionSprout's URLShortener
@@ -3233,6 +3273,7 @@ tweakers.net$removeparam=|nb|u  # from https://github.com/Smile4ever/Neat-URL
 twitch.tv$removeparam=web_only
     ! twitch.tv$removeparam=/web_only|_branch_referrer/i  # from Adguard  # _branch_refererer blocked as /referrer/
 
+twitter.com$removeparam=cn  # from DandelionSprout's URLShortener
 twitter.com$removeparam=cxt  # from NeatURL and Ru AdList
 twitter.com$removeparam=s  # is in NeatURL
 twitter.com$removeparam=t  # is in NeatURL
@@ -3418,6 +3459,7 @@ youtube.com$removeparam=feature  # is in NeatURL and Ru AdList
     ! &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com  # from Ru AdList
 youtube.com$removeparam=kw  # from NeatURL
 youtube.com$removeparam=si
+youtu.be$removeparam=si  # from Adguard
 youtube.com$removeparam=source_ve_path  # from DandelionSprout's URLShortener and Ru AdList
 youtube.com$removeparam=sub_confirmation  # from Ru AdList, modified
     ! ?sub_confirmation=1$document,removeparam=|,domain=youtube.com  # from Ru AdList
@@ -3514,3 +3556,91 @@ $removeparam=urrad,domain=u-s-s.jp|belta.co.jp  # from Adguard
 ^z=*&var=$removeparam=var  # from Adguard
 
 /landing.$removeparam=pixelid  # from Adguard
+
+! already blocked
+betcity.ru$removeparam=icm  # from Adguard
+betcity.ru$removeparam=widget_id  # from Adguard
+
+wikipedia.org$removeparam=wprov  # from Adguard as is
+
+easyfundraising.org.uk$removeparam=efr_campaign  # from Adguard
+easyfundraising.org.uk$removeparam=efr_medium  # from Adguard
+easyfundraising.org.uk$removeparam=efr_source  # from Adguard
+
+blogtrottr.com$removeparam=lctg  # from Adguard
+
+wowma.jp$removeparam=wadd  # from Adguard
+
+otsuka-shokai.co.jp$removeparam=oiid  # from Adguard
+
+hatalike.jp$removeparam=track  # from Adguard
+
+ieagent.jp$removeparam=ct  # from Adguard
+ieagent.jp$removeparam=cv  # from Adguard
+ieagent.jp$removeparam=p  # from Adguard
+
+doda.jp$removeparam=fm  # from Adguard
+doda.jp$removeparam=recommendID  # from Adguard
+doda.jp$removeparam=usrclk  # from Adguard
+doda.jp$removeparam=usrclk_searchListCassette  # from Adguard
+
+zozo.jp$removeparam=t  # from Adguard
+
+am730.com.hk$removeparam=ncid  # from Adguard
+
+hatarako.net$removeparam=prelink  # from Adguard
+
+roboform.com$removeparam=a  # from Adguard
+roboform.com$removeparam=c  # from Adguard
+roboform.com$removeparam=frm  # from Adguard
+roboform.com$removeparam=s1  # from Adguard
+
+myprotein.jp$removeparam=a8  # from Adguard
+
+querie.me$removeparam=timestamp  # from Adguard
+
+nationalgeographic.com$removeparam=__F__  # from Adguard
+nationalgeographic.com$removeparam=__dU__  # from Adguard
+
+! already blocked
+mailchimp.com$removeparam=amp%3Baid  # from Adguard
+mailchimp.com$removeparam=amp%3Bafl  # from Adguard
+
+! already blocked
+shareasale-analytics.com$removeparam=lplid  # from Adguard
+shareasale-analytics.com$removeparam=shrsl_analytics_sscid  # from Adguard
+shareasale-analytics.com$removeparam=shrsl_analytics_sstid  # from Adguard
+
+sportsbull.jp$removeparam=vkTop  # from Adguard
+
+mora.jp$removeparam=fmid  # from Adguard
+
+wsj.com$removeparam=reflink  # from Adguard
+
+dvdfab.org$removeparam=c_ad  # from Adguard
+dvdfab.org$removeparam=c_app  # from Adguard
+dvdfab.org$removeparam=c_app_from  # from Adguard
+dvdfab.org$removeparam=c_bm  # from Adguard
+dvdfab.org$removeparam=c_dt  # from Adguard
+dvdfab.org$removeparam=c_sys  # from Adguard
+dvdfab.org$removeparam=c_u  # from Adguard
+dvdfab.org$removeparam=c_ut  # from Adguard
+dvdfab.org$removeparam=c_ver  # from Adguard
+dvdfab.org$removeparam=c_wh  # from Adguard
+dvdfab.org$removeparam=client_m  # from Adguard
+dvdfab.org$removeparam=client_t  # from Adguard
+dvdfab.org$removeparam=trackid  # from Adguard
+
+yna.co.kr$removeparam=site  # from Adguard
+
+bloomberg.com$removeparam=in_source  # from Adguard
+
+sportschosun.com$removeparam=f_url  # from Adguard
+
+douyin.com$removeparam=extra_params  # from Adguard
+douyin.com$removeparam=previous_page  # from Adguard
+
+zendesk.com$removeparam=amp%3Btrk  # from Adguard
+zendesk.com$removeparam=amp%3Btoken  # from Adguard
+
+kahoot.it$removeparam=refer_method  # from DandelionSprout's ClearURLs for uBo
