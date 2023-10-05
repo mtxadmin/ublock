@@ -62,6 +62,7 @@
 /wp-socializer/*  # from Adguard
 
 /wp-tarteaucitron-  # from EasyList
+  /tarteaucitron/*  # /modules/willowrgpd/lib/tarteaucitron/
 
 /wpmaster-cookie/*  # from Fanboy's
 
@@ -86,6 +87,8 @@
 
 
 /modules/about/*  # from Ru AdList: ||prostootdam.ru/modules/about/
+
+/modules/acris_cookie_privacy/*  # from Adguard
 
 /modules/ad/*  # from EasyList
 
@@ -122,6 +125,10 @@
 
 /modules/cookiebanner/*$important  # from EasyList
 
+/modules/cookiebar/*$important  # from Adguard
+
+/modules/cookieinfo/*$important  # from Adguard
+
 /modules/custom/ex_omniture/*$important
 /modules/custom/wbnotifications/*  # from Adguard
 
@@ -133,9 +140,14 @@
 
 /modules/ed-shortbar/*
 
-/modules/eu_cookie_compliance/*
+/eu_cookie_compliance/*$important
+    ! /modules/eu_cookie_compliance/*
+    ! /modules/contrib/eu_cookie_compliance/*$important  # from Adguard
+    ! that's no mistake, there are two forms there
 
 /modules/facebook_modal/*
+
+/modules/gdpr/*  # from Adguard
 
 /modules/giftonordermodule/*
 
@@ -146,6 +158,8 @@
 /modules/hifacebookconnect/*  # Drupal module
 
 /modules/it.tiscali.portal.homepage.v2/*  # from Adguard: ||tiscali.it/export/system/modules/it.tiscali.portal.homepage.v2/resources/js/shp-pasyc.js
+
+/modules/mod_jpayday/*  # from Adguard
 
 /modules/lastorder/*
 
@@ -172,9 +186,13 @@
 
 /modules/retailrocket/*
 
+/modules/rs/cookiemanager/*  # from Adguard
+
 /modules/smileys/*
 
 /modules/sohoshopcookies/*  # from Adguard
+
+/modules/splashify/*  # from Adguard
 
 /modules/statistics/*$important
     /statistics/statistics.php  # is in EasyPrivacy
@@ -558,7 +576,8 @@
 
 /plugins/bootstrap-sweetalert/*  # /plugins/bootstrap-sweetalert/sweetalert.min.js
 
-/plugins/borlabs-cookie$important  # from Adguard  # /plugins/borlabs-cookie/ , maybe
+/plugins/borlabs-cookie/*$important  # from Adguard
+    ! earlier: /plugins/borlabs-cookie$important  # from Adguard
 
 /plugins/boxzilla/*
 
@@ -984,7 +1003,7 @@
 
 /plugins/eucookie/*  # from Adguard
 
-/plugins/eu-cookie-law/*$important
+/plugins/eu-cookie-law/*$important  # is in Adguard
 
 /plugins/exactmetrics-  # from EasyPrivacy
 
@@ -1174,7 +1193,7 @@
 
 /plugins/gravitydivi-forms-customizer-module/*
 
-/plugins/growl/*  # notifications
+/plugins/growl/*  # notifications  # is in Adguard
 
 /plugins/haiku-minimalist-audio-player/*
 
@@ -1201,6 +1220,8 @@
 /plugins/hreflang-tags-for-wordpress/*
 
 /plugins/hurrytimer/*
+
+/plugins/hustle/*  # from Adguard
 
 /plugins/iabtechlab-adstxt-generator/*  # https://wordpress.org/plugins/iabtechlab-adstxt-generator/
 
@@ -1437,6 +1458,8 @@
 /plugins/MBM-GDPR/*
     ! ||talkingretail.com/wp-content/plugins/MBM-GDPR/assets/dist/js/MBM_GDPR.min.js  # from Adguard
 
+/plugins/mds_p2popup/*  # from Adguard
+
 /plugins/medsosboost/*  # from Adguard: ||bagilagi.com/wp-content/plugins/medsosboost/msb-script.js
 
 /plugins/mega-subscribe-popup/*
@@ -1487,6 +1510,8 @@
 /plugins/mouse-cursor-customizer/*
 
 /plugins/mousewheel-smooth-scroll/*  # from Ru AdList
+
+/plugins/mrdev-cmp/*  # from Adguard
 
 /plugins/mts-wp-in-post-ads/*  # from EasyList
 /plugins/mts-wp-notification-bar/*
@@ -1681,7 +1706,7 @@
 
 /plugins/popup-by-supsystic/*
 
-/plugins/popup-maker/*$~stylesheet  # is in Adguard and Ru AdList
+/plugins/popup-maker/*$~stylesheet,important  # is in Adguard and Ru AdList
     ! @@||celloworld.com/wp-content/plugins/popup-maker/assets/js/vendor/mobile-detect.min.js  # from Adguard  # seems not ad, just old 2013 js detector. Can be blocked though
     ! @@/plugins/popup-maker/$script,~third-party,domain=mindjet.com|pro-solution.ru  # from Ru AdList  # not actual in both cases
     ! @@||centrisfcu.org/wp-content/plugins/popup-maker/$domain=centrisfcu.org  # from Adguard  # cert error. Very suspicious for money site
@@ -1806,10 +1831,11 @@
 
 /plugins/realbig-media/*$important  # is in Ru AdList
 
+/plugins/real-cookie-banner-pro/*$important  # from Adguard
+    /real-cookie-banner-pro/*$important  # from Adguard
+
 /plugins/recallback/*
-
-/real-cookie-banner-pro/*$important  # from Adguard
-
+    
 /plugins/recent-tweets-widget/*
 
 /plugins/reduce-bounce-rate/*
@@ -2200,6 +2226,8 @@
 
 /plugins/travelpayouts/*$important  # also see travelpayouts.com
 
+/modules/tronet/*  # from Adguard  # /modules/tronet/tronewsletterpopup/
+
 /plugins/tt-proven/*
 
 /plugins/tweet-this/*
@@ -2364,6 +2392,7 @@
 
 /plugins/wordpress-notification-bar/*
 
+! https://wordpress.org/plugins/wordpress-popup/  # "Hustle - Email Marketing, Lead Generation, Optins, Popups"  # https://www.greengeeks.com/tutorials/email-marketing-wordpress-hustle/
 /plugins/wordpress-popup/*$important,~stylesheet  # from Ru AdList  # in Ru AdList there are exclusion for css. Hmm... Ok.
     ! @@||cdn.afk.guide/wp-content/plugins/wordpress-popup/assets/js/adb.min.js  # "hustle_optin_adBlock_detector"  # from Adguard
     ! ||media.fidoalliance.org/wp-content/plugins/wordpress-popup/$script  # from Adguard
@@ -2484,6 +2513,8 @@
 /plugins/wp-polls/*
 
 /plugins/wppopups/*  # from Adguard
+
+/plugins/wp-popups-lite/*  # from Adguard
 
 /plugins/wp-post-email-notification/*
 
