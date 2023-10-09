@@ -19420,7 +19420,8 @@ reddit.com##*:style(filter:none !important)
 ! from uBlock filters
 reddit.com##div[class][data-before-content="advertisement"]:not([id])
 ! empty div under the post (before comments)
-reddit.com##.ListingLayout-outerContainer > div > div > div > div > div:has-text(/^$/)
+! update: it hides "Choose a community" div when adding a post. That div also doesn't have text and falls to this structure. See #76
+!reddit.com##.ListingLayout-outerContainer > div > div > div > div > div:has-text(/^$/)
     ! fixed sidebar
 reddit.com##div[role=menu]
 reddit.com##div[data-redditstyle=true]
