@@ -1013,6 +1013,7 @@ $removeparam=/^pd_rd_/i
         ! amazon.*$removeparam=pd_rd_r  # Found independently but was too lazy to make a regexp. Also it is in Adguard.
         ! amazon.*$removeparam=pd_rd_w  # Found independently but was too lazy to make a regexp. Also it is in Adguard.
         ! amazon.*$removeparam=pd_rd_wg  # Found independently but was too lazy to make a regexp. Also it is in Adguard.
+    ! ||amazon.*^$removeparam=/^p[fd]_rd_[a-z]*=/  # from DandelionSprout's ClearURLs for uBo
 $removeparam=/^pf_rd_/i
     ! $removeparam=/^pf_rd_/,domain=shopbop.com|amazon.*|imdb.com|zappos.com|audible.*|6pm.com  # from DandelionSprout's URLShortener
     ! amazon.*$removeparam=/^pf_rd_.*/  # from NeatURL
@@ -1031,6 +1032,7 @@ $removeparam=/^pf_rd_/i
         ! imdb.com$removeparam=pf_rd_r  # from Adguard
         ! imdb.com$removeparam=pf_rd_s  # from Adguard
         ! imdb.com$removeparam=pf_rd_t  # from Adguard
+    ! ||amazon.*^$removeparam=/^p[fd]_rd_[a-z]*=/  # from DandelionSprout's ClearURLs for uBo
 
 $removeparam=/^pk_/i,important  # Campaign tracking (Matomo/Piwik)  # from NeatURL
     ! $removeparam=pk_campaign  # from Adguard
@@ -1184,6 +1186,7 @@ $removeparam=/^ref_/i
         ! imdb.com$removeparam=ref_  # from NeatURL and Adguard
         ! $removeparam=ref_src  # from Ru AdList
         ! $removeparam=ref_url  # from Ru AdList
+    ! ||amazon.*^$removeparam=/^ref_?=/  # from DandelionSprout's ClearURLs for uBo
     ! coconala.com$removeparam=ref_kind  # from Adguard
     ! coconala.com$removeparam=ref_no  # from Adguard
     ! ||github.com/signup$removeparam=/^ref_/  # from Adguard
@@ -1469,7 +1472,7 @@ $removeparam=sk,domain=bing.com|aliexpress.*  # from DandelionSprout's URLShorte
     !$removeparam=sk,domain=bing.com|aliexpress.*  # from DandelionSprout's URLShortener
 
 $removeparam=smid,domain=~opinion.no  # from DandelionSprout's URLShortener
-    ! amazon.*$removeparam=smid  # from Adguard
+    ! amazon.*$removeparam=smid  # from Adguard and DandelionSprout's
 
 $removeparam=soc_src  # Yahoo general parameter  # from NeatURL
 $removeparam=soc_trk  # Yahoo general parameter  # from NeatURL
@@ -1909,11 +1912,13 @@ alza.de$removeparam=kampan  # from Adguard
 !
 @@||amazon.*/gp/slredirect/picassoRedirect.html^$removeparam  # from DandelionSprout's URLShortener  # don't know, but ok
 !
+amazon.*$removeparam=/^[a-z%0-9]*ie=/  # from DandelionSprout's ClearURLs for uBo
+amazon.*$removeparam=/^[^a-z%0-9]adId=/  # from DandelionSprout's ClearURLs for uBo
 amazon.*$removeparam=%2AVersion%2A  # from DandelionSprout's URLShortener
 amazon.*$removeparam=%2Aentries%2A  # from DandelionSprout's URLShortener
-||amazon.*^$removeparam=/^aa_/i  # from DandelionSprout's URLShortener
-||amazon.$removeparam=aaxitk  # from DandelionSprout's URLShortener
-||amazon.*^$removeparam=ac_md  # from DandelionSprout's URLShortener
+amazon.*$removeparam=/^aa_/i  # from DandelionSprout's URLShortener
+amazon.$removeparam=aaxitk  # from DandelionSprout's URLShortener
+amazon.*$removeparam=ac_md  # from DandelionSprout's URLShortener
 amazon.*$removeparam=adgrpid  # from Adguard
     ! $removeparam=adgrpid  # from DandelionSprout's URLShortener
 $removeparam=asc_campaign,domain=aboutamazon.com|amazon.*|amzn.to  # from Adguard
@@ -1925,8 +1930,9 @@ $removeparam=asc_source,domain=aboutamazon.com|amazon.*|amzn.to  # from Adguard
 amazon.*$removeparam=ascsubtag  # is in NeatURL, Adguard, DandelionSprout's URLShortener
 amazon.*$removeparam=AssociateTag  # from Adguard
 amazon.*$removeparam=c  # from Adguard
-amazon.*$removeparam=camp  # from Adguard
+amazon.*$removeparam=camp  # from Adguard and DandelionSprout's
 ||amazon.*^$removeparam=channel  # from DandelionSprout's URLShortener
+||amazon.*^$removeparam=/^colii?d=/  # from DandelionSprout's ClearURLs for uBo
 ||amazon.*^$removeparam=colid  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=content-id  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=creative  # from DandelionSprout's URLShortener
@@ -1936,10 +1942,10 @@ amazon.*$removeparam=creativeASIN  # from Adguard
 amazon.*$removeparam=cstrackid  # seems, it is amazon specific param too
     ! $removeparam=cstrackid  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=/^cv_ct_/i  # from DandelionSprout's URLShortener
-amazon.*$removeparam=dchild  # Found independently. Also is in Adguard
+amazon.*$removeparam=dchild  # Found independently. Also is in Adguard and DandelionSprout's
 amazon.*$removeparam=_encoding  # from NeatURL
 ||amazon.*/hz/contact-us/csp$removeparam=/entries[^=]*=/i  # from Adguard
-amazon.*$removeparam=field-lbr_brands_browse-bin  # from Adguard
+amazon.*$removeparam=field-lbr_brands_browse-bin  # from Adguard and DandelionSprout's
 amazon.*$removeparam=hvbmt  # from Adguard
     ! $removeparam=hvbmt  # from DandelionSprout's URLShortener
 amazon.*$removeparam=hvdev  # from Adguard
@@ -1978,7 +1984,12 @@ amazon.com$removeparam=keywords  # NOT search itself (it's k=), but ref to it
 ||amazon.*^$removeparam=lp_slot  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=m  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=maas  # from DandelionSprout's URLShortener
-||amazon.*^$removeparam=/^__mk_*_/i  # from DandelionSprout's URLShortener
+amazon.*$removeparam=/^__mk_*_/i  # from DandelionSprout's URLShortener
+    ! ||amazon.*^$removeparam=/^__mk_[a-z]{1,3}_[a-z]{1,3}=/  # from DandelionSprout's ClearURLs for uBo
+    ! ||amazon.*/s?$removeparam=/^__mk_[a-z]{1,3}_[a-z]{1,3}=/  # from DandelionSprout's ClearURLs for uBo
+amazon.*$removeparam=ms3_c
+    ! ||amazon.*^$removeparam=ms3_c  # from DandelionSprout's ClearURLs for uBo
+    ! ||amazon.*/s?$removeparam=ms3_c  # from DandelionSprout's ClearURLs for uBo
 ||amazon.*/message-us$removeparam=muClientName  # from Adguard
 ||amazon.*$removeparam=newts  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=orig  # from DandelionSprout's URLShortener
@@ -1986,14 +1997,15 @@ amazon.*$removeparam=pf  # from NeatURL
 amazon.*$removeparam=plattr  # from Adguard
 amazon.*$removeparam=pldnSite  # from DandelionSprout's URLShortener
 amazon.*$removeparam=psc  # from NeatURL
-amazon.*$removeparam=qid  # Found independently. Also it is in Adguard.  # ref?
+amazon.*$removeparam=qid  # Found independently. Also it is in Adguard and DandelionSprout's  # ref?
 ||amazon.*^$removeparam=qsid  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=qu  # from DandelionSprout's URLShortener
+||amazon.*^$removeparam=qualifier  # from DandelionSprout's ClearURLs for uBo
 amazon.*$removeparam=rdc  # from Adguard
 gaming.amazon.com$removeparam=redirectRoute  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=refinements  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=ref-refURL  # from DandelionSprout's URLShortener
-amazon.*$removeparam=refRID  # from Adguard
+amazon.*$removeparam=refRID  # from Adguard and DandelionSprout's
 amazon.*$removeparam=returnFromLogin  # from DandelionSprout's URLShortener
 ||amazon.*/dp/$removeparam=rps,document  # from DandelionSprout's URLShortener
 ||amazon.*/dp/$removeparam=s,document  # from DandelionSprout's URLShortener
@@ -2001,10 +2013,12 @@ amazon.*$removeparam=returnFromLogin  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=/^sc_i/i  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=sig  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=sigts  # from DandelionSprout's URLShortener
+||amazon.*^$removeparam=spIA  # from DandelionSprout's ClearURLs for uBo
 ||amazon.*^$removeparam=sprefix  # from DandelionSprout's URLShortener
 amazon.*$removeparam=sr  # Found independently  # is in DandelionSprout's URLShortener
 ||amazon.*^$removeparam=sres  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=srpt  # from DandelionSprout's URLShortener
+amazon.*$removeparam=/^srs?=/  # from DandelionSprout's ClearURLs for uBo
 ||amazon.*^$removeparam=store_ref  # from DandelionSprout's URLShortener
 ||amazon.$removeparam=SubscriptionId  # from DandelionSprout's URLShortener
 amazon.*$removeparam=th  # Found independently  # is in DandelionSprout's URLShortener and Adguard
