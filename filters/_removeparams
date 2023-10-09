@@ -76,6 +76,8 @@ $removeparam=ad_prodid
 
 $removeparam=ad_src
     ! $removeparam=ad_src,domain=...  # from DandelionSprout's URLShortener
+    ! lazada.com.my$removeparam=ad_src  # from DandelionSprout's ClearURLs for uBo
+    ! site24x7.com$removeparam=ad_src  # reflinks
 
 $removeparam=ad_type  # from DandelionSprout's URLShortener
 
@@ -1473,6 +1475,7 @@ $removeparam=sk,domain=bing.com|aliexpress.*  # from DandelionSprout's URLShorte
 
 $removeparam=smid,domain=~opinion.no  # from DandelionSprout's URLShortener
     ! amazon.*$removeparam=smid  # from Adguard and DandelionSprout's
+    ! nytimes.com$removeparam=smid  # from DandelionSprout's ClearURLs for uBo
 
 $removeparam=soc_src  # Yahoo general parameter  # from NeatURL
 $removeparam=soc_trk  # Yahoo general parameter  # from NeatURL
@@ -1530,6 +1533,17 @@ $removeparam=spMailingID  # "IBM Acoustic Campaign  # from NeatURL
 $removeparam=spReportId  # "IBM Acoustic Campaign  # from NeatURL
 $removeparam=spUserID  # "IBM Acoustic Campaign  # from NeatURL
 
+! Maybe some exclusions will be needed here
+$removeparam=src
+    ! idealo.de$removeparam=src  # from DandelionSprout's ClearURLs for uBo
+    ! $document,removeparam=src,domain=go.mail.ru|r.mail.ru  # from Ru AdList
+    ! mozilla.org$removeparam=src  # from NeatURL and DandelionSprout's ClearURLs for uBo
+    ! myworkdayjobs.com$removeparam=src
+    ! shutterstock.com$removeparam=src  # from DandelionSprout's ClearURLs for uBo
+    ! thunderbird.net$removeparam=src  # from DandelionSprout's ClearURLs for uBo
+    ! tokopedia.com$removeparam=src  # from DandelionSprout's ClearURLs for uBo
+    ! wuzhuiso.com$removeparam=src  # from Adguard and uBlock filters
+
 !$removeparam=src_campaign  # from DandelionSprout's URLShortener  # blocked as /campaign/
 $removeparam=src_content  # from DandelionSprout's URLShortener
 $removeparam=src_custom  # from DandelionSprout's URLShortener
@@ -1548,6 +1562,8 @@ $removeparam=srcc,important
     !@@||ofeminin.pl/*&srcc=ucs$removeparam=utm_source  # from Adguard
     !@@||plejada.pl/*&srcc=ucs$removeparam  # from Adguard
     !@@||przegladsportowy.pl/*&srcc=ucs$removeparam  # from Adguard
+    !
+    ! onet.pl$removeparam=srcc  # from DandelionSprout's ClearURLs for uBo
 
 $removeparam=srccode
     ! $removeparam=/^srcCode=/i  # from DandelionSprout's URLShortener
@@ -1938,12 +1954,12 @@ amazon.*$removeparam=camp  # from Adguard and DandelionSprout's
 ||amazon.*^$removeparam=creative  # from DandelionSprout's URLShortener
 amazon.*$removeparam=creativeASIN  # from Adguard
     ! $removeparam=creativeASIN  # from DandelionSprout's URLShortener  # hmm...
-||amazon.*^$removeparam=crid  # is in DandelionSprout's URLShortener  # ref?
+amazon.*$removeparam=crid  # is in DandelionSprout's URLShortener  # ref?
 amazon.*$removeparam=cstrackid  # seems, it is amazon specific param too
     ! $removeparam=cstrackid  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=/^cv_ct_/i  # from DandelionSprout's URLShortener
 amazon.*$removeparam=dchild  # Found independently. Also is in Adguard and DandelionSprout's
-amazon.*$removeparam=_encoding  # from NeatURL
+amazon.*$removeparam=_encoding  # from NeatURL and DandelionSprout's ClearURLs for uBo
 ||amazon.*/hz/contact-us/csp$removeparam=/entries[^=]*=/i  # from Adguard
 amazon.*$removeparam=field-lbr_brands_browse-bin  # from Adguard and DandelionSprout's
 amazon.*$removeparam=hvbmt  # from Adguard
@@ -2742,7 +2758,6 @@ $document,removeparam=fr,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=frm,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=hasnavig,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=sbmt,domain=go.mail.ru|r.mail.ru  # from Ru AdList
-$document,removeparam=src,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=test_id,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=us,domain=go.mail.ru|r.mail.ru  # from Ru AdList
 $document,removeparam=user_session_id,domain=pulse.mail.ru  # from Ru AdList
@@ -2817,7 +2832,7 @@ morhipo.com$removeparam=srsltid  # from Adguard
 
 ! only works when extensions.webextensions.restrictedDomains is edited in about:config
 ! test URL: https://support.mozilla.org/de/kb/enterprise-roots?as=u&utm_source=inproduct
-addons.mozilla.org$removeparam=|src|source|surveyversion|updateChannel|fxVersion|isDefaultBrowser|searchEngine|syncSetup|type|flowId  # from NeatURL
+addons.mozilla.org$removeparam=|source|surveyversion|updateChannel|fxVersion|isDefaultBrowser|searchEngine|syncSetup|type|flowId  # from NeatURL
 mozilla.org$xmlhttprequest,removeparam=appID  # from Adguard
 mozilla.org$removeparam=attribution_sig  # from Adguard
 mozilla.org$removeparam=attribution_code  # from Adguard
@@ -2841,8 +2856,6 @@ go.mysku.ru$removeparam=~r  # from Adguard
 
 ! myvisualiq.net - blocked entirely, just for information. But.
 myvisualiq.net$removeparam=~red  # from Adguard
-
-myworkdayjobs.com$removeparam=src
 
 n11.com$removeparam=/pfx|adj/i  # from Adguard
 n11.com$removeparam=magaza
@@ -3144,8 +3157,6 @@ similarweb.com$removeparam=from_ext  # from Adguard
 
 simplelogin.io$removeparam=slref  # from Adguard
 
-site24x7.com$removeparam=ad_src  # reflinks
-
 smart-flash.jp$removeparam=rf  # from Adguard
 
 smsc.ru$removeparam  # random ref param names
@@ -3374,8 +3385,6 @@ wizcase.com$removeparam=vid  # from Adguard
 ||join.worldoftanks.$removeparam=pub_id  # from Adguard
 
 wsj.com$removeparam=st  # sid
-
-wuzhuiso.com$removeparam=src  # from Adguard and uBlock filters
 
 ! already blocked
 xlivrdr.com$removeparam  # from Adguard
