@@ -1236,7 +1236,7 @@ $removeparam=refer_code  # from DandelionSprout's URLShortener
 ! /referer/
 $removeparam=/referer[^=]*=/i
 ! /referrer/
-$removeparam=/referrer[^=]*=/i$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion
+$removeparam=/referrer[^=]*=/i$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion|~x.com
     ! Exclusions:
     ! Search engines - do not remove queries. Strangely, the regexp catches the value of param, not name. 
     !   Update: the explanation found, see the header. Regexp modified, exclusions for search engines removed
@@ -3302,6 +3302,12 @@ twitter.com$removeparam=cn  # from DandelionSprout's URLShortener
 twitter.com$removeparam=cxt  # from NeatURL and Ru AdList
 twitter.com$removeparam=s  # is in NeatURL
 twitter.com$removeparam=t  # is in NeatURL
+! also after renaming:
+! (twitter params are in place, see https://9gag.com/gag/aA07gPZ#cs_comment_id=c_169675443060692730 for instance)
+x.com$removeparam=cn
+x.com$removeparam=cxt
+x.com$removeparam=s
+x.com$removeparam=t
 
 udemy.com$removeparam=btn  # from DandelionSprout's URLShortener
 
