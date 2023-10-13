@@ -17874,6 +17874,11 @@ planetahost.ru##.slider__wrapper
 planeta-sirius.ru##.fast_preview
 planeta-sirius.ru##.add_to_cart_button.primary-bg.btn
 
+planeta-sport.ru##.popup-box
+planeta-sport.ru##.popup-outer-box
+planeta-sport.ru##.sale-banner
+planeta-sport.ru##.logo-panel-title
+
 planetavistrel.ru##.landing-block-socials-container
 
     ! popups
@@ -17902,6 +17907,10 @@ planetazdorovo.ru##.slider-benefits
 planetcrust.com##.avia-testimonial-wrapper
 
 planetgeek.ch##.typology-header:style(position:absolute !important)
+
+planetofhotels.com##.c-anchor:style(position:static !important)
+    ! popup
+planetofhotels.com##.region-page-bottom
 
 ||planirovkainfo.ru/wp-content/themes/hotel-melbourne/js/flexslider/
 ! remove annoying scrolling
@@ -18178,6 +18187,8 @@ podrygka.ru##.shortjournal
 
 ||podu.me/*/advertisement  # from uBlock filters
 
+poftut.com##.inside-header
+
 pohodmsk.ru##.tel-header
 pohodmsk.ru##.fa-youtube-play
 
@@ -18223,6 +18234,7 @@ politeka.net##.navbar--logotype
 politeka.net##.b__popular-article
 politeka.net##.b_apps-links
 politeka.net##.ai-top.ai-placement
+politeka.net##.h2::after
 
 politico.com##.header__branding
 politico.com##.pop-up-bar__branding
@@ -18324,12 +18336,16 @@ pornclipsxxx.com#@#.adv
 pornclipsxxx.com###offer
 pornclipsxxx.com##.adbox-inner
 
+pornfappy.com##.fp-brand
+
 porngo.com$csp=child-src *  # from uBlock filters
 *preRoll$xhr,domain=porngo.com  # from uBlock filters
 
 porn-hd.xxx##[href^="/out"]
 ! seo
 porn-hd.xxx##.tx
+
+pornlist.tv##.player-taxonomy a:has(center)
 
     ! trash texts
 porno365.haus##.image > p
@@ -18360,6 +18376,9 @@ pornolenta.cam##.rating
 ! is in uBlock filters
 pornoman.pl###porno_accept
 ||pornoman.pl/javascript/foreign/
+
+! anti-popunder redirects
+pornosex.vip##+js(set, go, noopFunc)
 
 pornoxo.com##.swal2-popup
 pornoxo.com##.swal2-container
@@ -18501,6 +18520,7 @@ epravda.com.ua##.fixed.post__menu
 ||pravda-sotrudnikov.ru/img/country-flag/*$image
 
 pravilamag.ru##.app-popup
+pravilamag.ru##.author-article:has(img[alt="Редакция сайта"])
 
 pravilno-vybrat.ru##.site-heading
 
@@ -18633,6 +18653,14 @@ prodaman.ru##.ui-header-fixed:style(position:static !important)
 
 prodive.ru##.smartfilter:style(position:static !important)
 prodive.ru##.cheaper_form
+
+! banners
+productplacementblog.com##a[href^="https://www.productplacement.com/"]:has(img)
+! author description
+productplacementblog.com##.abh_description
+
+proekt.media##.reversed:style(color:initial !important)
+proekt.media##.header_color:style(background-color:initial !important)
 
 proekt-sam.ru##.strtoright
 proekt-sam.ru##.strtoleft
@@ -28828,9 +28856,6 @@ duplichecker.com##.text-center.img1class
 duplichecker.com##.main-banner-part
 duplichecker.com##.carousel
 
-proekt.media##.reversed:style(color:initial !important)
-proekt.media##.header_color:style(background-color:initial !important)
-
 ! oneclick
 iddis.store##.base-button--primary
 iddis.store##.ids-banner-slider
@@ -28912,8 +28937,6 @@ awesomeopensource.com##.aos_fixed_header_container
 dsnews.ua##.c-banner__logo
 
 klymenko-time.com##.floatkt
-
-politeka.net##.h2::after
 
 metricfire.com##.topbar:style(position:static !important)
 
@@ -29032,11 +29055,6 @@ kaspi.kz##.popup:has-text(в Приложении)
 
 agroserver.ru##.end
 
-planeta-sport.ru##.popup-box
-planeta-sport.ru##.popup-outer-box
-planeta-sport.ru##.sale-banner
-planeta-sport.ru##.logo-panel-title
-
 extrememarket.ru##.push_row
 
 hip-hosting.com##.location-details-banner
@@ -29126,17 +29144,11 @@ learnsql.com##.flash-sale-box
 learnsql.com##.cookbook-post-gradient
 learnsql.com##.learnsql-blog-navigation:style(position:static !important)
 
-pravilamag.ru##.author-article:has(img[alt="Редакция сайта"])
-
 cheatsfile.com##.quote
 
 freeones.com##.banner-placeholder
 freeones.com##.sticky-dashboard-details
 freeones.com##.sidebar-right__scroll-container
-
-planetofhotels.com##.c-anchor:style(position:static !important)
-    ! popup
-planetofhotels.com##.region-page-bottom
 
 ! Side panel
 kicb.net##.recomend
@@ -29149,11 +29161,6 @@ mashtips.com##p:has-text(Related:)
 forums.att.com##.askQuestionBubble
 
 profavoska.ru##.et_parallax_bg
-
-! anti-popunder redirects
-pornosex.vip##+js(set, go, noopFunc)
-
-pornlist.tv##.player-taxonomy a:has(center)
 
 freecoursesonline.me##.header-container
 freecoursesonline.me##.srr-vticker
@@ -29196,11 +29203,6 @@ overstock.com##.cl-dialog-backdrop
 overstock.com###page_triggers
 overstock.com##[class*=header_stickyHeader]:style(position:static !important)
 
-! banners
-productplacementblog.com##a[href^="https://www.productplacement.com/"]:has(img)
-! author description
-productplacementblog.com##.abh_description
-
 freevpnplanet.com##.overlay
 freevpnplanet.com##.descr-bg
 freevpnplanet.com##.pc-background
@@ -29223,16 +29225,12 @@ junglekey.com##.djunglekey
 ||junglekey.com/*trefle*.png$image
 ||junglekey.com/junglekeycom_qrcode.png$image
 
-pornfappy.com##.fp-brand
-
 iletyou.ru##.table-of-contents
 
 medaboutme.ru##.listelem
 
 ! not really code blocks (they are different), but banners
 lynxbee.com##.code-block
-
-poftut.com##.inside-header
 
 ! inline related
 linuxshelltips.com##p strong:has-text(You might also like:)
