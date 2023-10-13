@@ -185,22 +185,25 @@
 ##[id*="callback"]:not(html):not(body):not(article)
 !
 !! very good and useful rules in general, but messengers, streaming and webinar services must be excluded
-~aliexpress.com,~bizon365.ru,~dhgate.com,~fincult.info,~hh.ru,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="Chat"]:not(html):not(body):not(article):not(section)
+~alfabank.ru,~aliexpress.com,~bizon365.ru,~dhgate.com,~fincult.info,~hh.ru,~psbank.ru,~sberbank.ru,~vtb.ru,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="Chat"]:not(html):not(body):not(article):not(section)
     ! Exclusions:
     ! aliexpress.com - useful support chat
+    ! banks - useful support chat
     ! bizon365.ru - videos/streams
     ! dhgate.com - useful support chat
     ! fincult.info - don't remember, I think, videos/streams
     ! hh.ru - chats on a job site
     ! telemost.yandex.ru - like Russian Zoom, videoconferences (bad, but it was a nice try)
     ! youtube.com - videos/streams. See #61
-~worknf.ru##[id*="Chat"]:not(html):not(body):not(article):not(section)
+~alfabank.ru,~psbank.ru,~sberbank.ru,~vtb.ru,~worknf.ru##[id*="Chat"]:not(html):not(body):not(article):not(section)
     ! Exclusions:
+    ! banks - useful support chat
     ! worknf.ru - don't remember, I think, videos/streams
-~advance24.online,~aliexpress.com,~bizon365.ru,~clickmeeting.com,~dhgate.com,~fincult.info,~gosuslugi.ru,~chatik.hh.ru,~icq.com,~telemetr.io,~twitch.tv,~vk.com,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
+~advance24.online,~alfabank.ru,~aliexpress.com,~bizon365.ru,~clickmeeting.com,~dhgate.com,~fincult.info,~gosuslugi.ru,~chatik.hh.ru,~icq.com,~psbank.ru,~sberbank.ru,~telemetr.io,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
     ! Exclusions:
     ! advance24.online - videos/streams
     ! aliexpress.com - useful support chat
+    ! banks - useful support chat
     ! bizon365.ru - videos/streams
     ! chatik.hh.ru - chats on a job site
     ! clickmeeting.com - videos/streams
@@ -215,8 +218,9 @@
     ! worknf.ru - don't remember, I think, videos/streams
     ! telemost.yandex.ru - like Russian Zoom, videoconferences (bad, but it was a nice try)
     ! youtube.com - videos/streams. See #61
-~bizon365.ru,~clickmeeting.com,~facebook.com,~gosuslugi.ru,~chatik.hh.ru,~telethon.dev,~twitch.tv,~vk.com,~worknf.ru,~youtube.com,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"])
+~alfabank.ru,~bizon365.ru,~clickmeeting.com,~facebook.com,~gosuslugi.ru,~chatik.hh.ru,~psbank.ru,~sberbank.ru,~telethon.dev,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~youtube.com,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"])
     ! Exclusions:
+    ! banks - useful support chat
     ! bizon365.ru - videos/streams
     ! clickmeeting.com - videos/streams
     ! gosuslugi.ru - useful support chat
