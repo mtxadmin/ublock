@@ -228,6 +228,9 @@
 24video-sexy.com##.inner-page__comments
 24video-sexy.com##.thumb-item__label--rating
 
+2books.su##.mfp-wrap
+2books.su##.mfp-bg
+
 2code-monte.co.uk##.custom-header
 
 2do2go.ru##.popup__error
@@ -714,6 +717,10 @@ about-windows.ru##.td-ss-main-sidebar
 
 abrisburo.ru##.tp-banner-container
 
+absolut-dostavka.ru###ez-toc-container
+absolut-dostavka.ru##+js(set-attr, img.lazy-hidden, src, [data-src])
+absolut-dostavka.ru##.lazy-hidden:style(display:initial !important)
+
 abuslock.su##.slider-obol
 
     ! floating icons
@@ -957,6 +964,10 @@ aeroflot.ru##.main-module__footer__button
 aeroflot.ru##.frame--attention
 ! other
 
+aeza.net##video
+! popups
+aeza.net##div:matches-css(position:fixed)
+
 aff1.ru###s5_logo
 
 affluentinvestor.com$inline-script  # "Disable your Ad Blocker"
@@ -986,6 +997,8 @@ agoda.com##.Searchbox:style(position:static !important)
 
 agropages.com##.common-searchbar:style(position:static !important)
 
+agroserver.ru##.end
+
 ||agyoga.com/*/back-img.jpg
 
 ahasayen.com##.header.post-thumbnail
@@ -1009,6 +1022,8 @@ aiotestking.com##.best-seller.btn
 
 ! popup background
 airbnb.*##header + div.dir-ltr.dir:has-text(/^$/)
+
+aireng.ru##.pop-block
 
     ! popups
 air-gun.ru###popover_region
@@ -1098,6 +1113,8 @@ a1991.dscr.akamai.net$script  # page blocking scripts
 ||akamaized.net/oil/
 /oil/*-release.chunk.js  # is in EasyList and Fanboy's
 
+||akcdn.net/partnerlogosmall/
+
 ak-info.ru###header
 ak-info.ru###tabarea
 
@@ -1183,6 +1200,10 @@ alfabank.ru##[class^=backward-button]
 ||tildacdn.com/tild6239-6435-4231-b437-616266656565/$image
 ||tildacdn.com/tild3335-6639-4036-b830-323364383765/$image
 
+alfaforex.ru##.message-button
+!alfaforex.ru##.page-header__fixed:style(position:static !important)
+alfaforex.ru##.page-header__fixed
+
 alfaplan.ru###hh
 alfaplan.ru##p.pr-ph-num
 alfaplan.ru##.stamp
@@ -1212,6 +1233,10 @@ alienwarearena.com##.navbar-top:style(position:static !important)
 
 ! ali* - see in aliexpress
 
+alkanesolutions.co.uk##.headerBg
+alkanesolutions.co.uk##.postheaderleft
+alkanesolutions.co.uk##.bmc-btn
+
 all4bath.ru###footer-pane
 all4bath.ru##.rss_block
 
@@ -1230,9 +1255,15 @@ allammo.ru###product-description > div > h3:has-text(Купить)
 ||allbanks.kz/img/vverh.png
 allbanks.kz##.vverh
 
+allbasketball.org##.betting-logo
+allbasketball.org##.block-betting
+
 allboox.ru##.pagination:style(margin-bottom:0px !important)
 
 all-companies.ru###last_companies_view
+
+allergy-center.ru$inline-script  # site blocks copypaste (trying to)
+    ! allergy-center.ru$script  # 1p notifications
 
 allfest.ru##.region-pre-header-left
 ||allfest.ru/sites/default/files/inline-images/$image
@@ -1389,6 +1420,7 @@ aws.amazon.com###aws-page-content:style(margin-top:0px !important; padding-top:0
 amazon.jobs###privacy-preferences-banner
 
 ||amazonaws.com/oneclickupsell/
+||amazonaws.com/videodownloaderpro/debug.json
 
 ||amdocs.com/docs/rmk-images/search-image$image
 ||amdocs.com/docs/images/rmk/awardsLogo$image
@@ -1986,6 +2018,8 @@ asienda.ru##.flyDocs
 asienda.ru###flyingLeft
 asienda.ru##.main-calendar-sadovoda
 
+asimovonline.ru##.sticky-block
+
 askbot.org##.notification
 askbot.org##.notify
 
@@ -2032,6 +2066,8 @@ assistentus.ru##.promo_bottom
 assistentus.ru##.footer_level_two
 assistentus.ru##.index_subscribe
 
+assistive.site##.subheader:style(position:static !important)
+
 astera.ru##.footer-widgets
 astera.ru##.table-of-contents__list
 astera.ru##.table-of-contents__header
@@ -2064,11 +2100,20 @@ community.atlassian.com##.atl-comment-likes
 
 atmosaicrm.com##.modal
 
+atomy.ru##.gnbPartWrap:style(position:static !important)
+
+atonce.com##.rightCtaContainer
+atonce.com##header
+atonce.com##.shareRightButtonsContainer
+atonce.com##.readingProgress
+atonce.com##.logo_main_footer
+
 atraining.ru##div.atthumb > .caption
 
 a-tree.ru#@#.subscribe-form
 
 att.com##.header-bar-container--sticky:style(position:static !important)
+att.com##.askQuestionBubble
 
 attacomsian.com##.sticky-sidebar
 
@@ -2521,6 +2566,11 @@ awd.ru##.page404
 
 ax.digital##.floating-active.floating-header
 ax.digital###eli
+
+! bottom
+axeandtool.com##.wp-block-group__inner-container
+! lazyload data-ezsrc
+  axeandtool.com##+js(set-attr, img.ezlazyload, src, [data-ezsrc])
 
 axion-tnp.ru##.anchor-up
 axion-tnp.ru##.popup-city
@@ -28702,8 +28752,6 @@ ru##.ErrorBox:has-text(AdBlock)
 ! is in Ru AdList, Fanboy's, EasyList
 ###sliding-popup.sliding-popup-bottom
 
-||amazonaws.com/videodownloaderpro/debug.json
-
 /_/batch|$xmlhttprequest,1p  # is in Fanboy's
 
 &idsite=*&send_image=$image  # is in EasyPrivacy
@@ -28821,8 +28869,6 @@ prfl.me  # yndx.prfl.me  # ad URLs
 
 kapos.hu##.newsScroller
 
-||akcdn.net/partnerlogosmall/
-
 laweekly.com##.cb-nav-bar-wrap:style(position:static !important)
 laweekly.com##.cb-logo-nav
 laweekly.com##.cb-logo-nav-sticky-type
@@ -28831,9 +28877,6 @@ laweekly.com###cb-nav-logo
 ||kulichki.net/images/frontnew4.jpg
 
 ||civic-club.ru/photo/  # not a directory, but one photo on root
-
-allbasketball.org##.betting-logo
-allbasketball.org##.block-betting
 
 ||masterinvest.info/*/navigation.jpg
 masterinvest.info##.referer-item
@@ -28872,8 +28915,6 @@ futurecdn.net$xhr
     ! freyr.futurecdn.net/freyr.js
     ! vanilla.futurecdn.net
 ||futurecdn.net/toptenreviews/media/img/missing-image.svg$image  # toptenreviews.com
-
-atomy.ru##.gnbPartWrap:style(position:static !important)
 
 ||gexo.com/gfx/fast/gexo.png
 
@@ -28996,10 +29037,6 @@ rufox.ru*/ncounter.pl?  # from Ru AdList
 !duunitori.fi
 ||duunitori.imgix.net/media/duunivahti-hero-desk.jpg
 
-aeza.net##video
-! popups
-aeza.net##div:matches-css(position:fixed)
-
 ||magesy.blog/wp-content/plugins/  # from uBlock filters
 
 ||pkclinok.ru/image/data/Baneri/
@@ -29011,15 +29048,6 @@ phoronix.com###about-author
 
 ! popup
 ethereum.org###dot
-
-! already blocked
-affbank.com##.whyblock
-
-asimovonline.ru##.sticky-block
-
-alfaforex.ru##.message-button
-!alfaforex.ru##.page-header__fixed:style(position:static !important)
-alfaforex.ru##.page-header__fixed
 
 ! already blocked
     ! site blocks copypaste
@@ -29053,15 +29081,11 @@ kaspi.kz##.main-screen-index
 kaspi.kz##.app-qr
 kaspi.kz##.popup:has-text(в Приложении)
 
-agroserver.ru##.end
-
 extrememarket.ru##.push_row
 
 hip-hosting.com##.location-details-banner
 
 firstbyte.ru##.head_slog
-
-aireng.ru##.pop-block
 
 porno247.net##.active
 porno247.net##.toptext
@@ -29123,9 +29147,6 @@ lambdatest.com###SeleniumPythonCTA
 lambdatest.com##p > [href*="lambdatest.com/register"]
     ! other
 
-allergy-center.ru$inline-script  # site blocks copypaste (trying to)
-    ! allergy-center.ru$script  # 1p notifications
-
 ! thegamer.com : lazyload data-img-url
   ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
 
@@ -29158,17 +29179,10 @@ decathlonkz.com##.whatsapp-wrapper
 mashtips.com##.td-header-active.tdc-zone-sticky-inactive.tdc-zone-sticky-invisible.td-header-mobile-sticky-wrap:style(position:static !important)
 mashtips.com##p:has-text(Related:)
 
-forums.att.com##.askQuestionBubble
-
 profavoska.ru##.et_parallax_bg
 
 freecoursesonline.me##.header-container
 freecoursesonline.me##.srr-vticker
-
-! bottom
-axeandtool.com##.wp-block-group__inner-container
-! lazyload data-ezsrc
-  axeandtool.com##+js(set-attr, img.ezlazyload, src, [data-ezsrc])
 
 fsk-russia.ru##.back-call
 
@@ -29244,8 +29258,6 @@ doit.software##.call_to_action
 
 ||monday.com/prod/event
 
-assistive.site##.subheader:style(position:static !important)
-
 ! fapcat.com lazyload data-src
     fapcat.com##+js(set-attr, img.lazyload, src, [data-src])
 
@@ -29314,19 +29326,9 @@ modernsurvivalblog.com##+js(set-attr, img.perfmatters-lazy, src, [data-src])
 
 mdcreekmore.com##.widget_us_debtclock_widget
 
-atonce.com##.rightCtaContainer
-atonce.com##header
-atonce.com##.shareRightButtonsContainer
-atonce.com##.readingProgress
-atonce.com##.logo_main_footer
-
 rothco.com###privacy-notice
 
 modernsurvivalblog.com##+js(set-attr, img.perfmatters-lazy, src, [data-src])
-
-absolut-dostavka.ru###ez-toc-container
-absolut-dostavka.ru##+js(set-attr, img.lazy-hidden, src, [data-src])
-absolut-dostavka.ru##.lazy-hidden:style(display:initial !important)
 
 homestratosphere.com##.item-is-fixed:style(position:static !important)
 homestratosphere.com##.item-is-stuck:style(position:static !important)
@@ -29362,13 +29364,6 @@ chitat-knigi.com##.link-no-color
 
 ! logo
 b-reading.com##.link-no-color
-
-2books.su##.mfp-wrap
-2books.su##.mfp-bg
-
-alkanesolutions.co.uk##.headerBg
-alkanesolutions.co.uk##.postheaderleft
-alkanesolutions.co.uk##.bmc-btn
 
 ! tutsnode.com, tutsnode.net, tutsnode.com
     ! popups
