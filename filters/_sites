@@ -17427,6 +17427,12 @@ ozerki.ru##.g-section_banner
 
 ! See Ozon rules in ozon&wb
 
+||p3k.hu/*_hatter*.  # from Hufilter
+||p3k.hu/*szponz*.  # from Hufilter
+
+pac.ru##.floating-info-block
+pac.ru##.PacAndGo
+
 packtpub.com##.upsell-box
 packtpub.com##.upsell-banner
 packtpub.com##.nav-link.button
@@ -17548,6 +17554,13 @@ pcerror-fix.com##h3 > a[href="https://www.pcerror-fix.com/get-pc-repair-tool"]
 
 pcgamebenchmark.com###head:style(position:static !important)
 ||pcgamebenchmark.com/img/placement/$image
+
+! pcgamer.com lazyload data-original-mos
+    ! see tomshardware.com also
+    ! there are picture tags: https://www.w3schools.com/TAGS/tag_picture.asp
+    pcgamer.com##+js(set-attr, picture>source, srcset, [data-original-mos])
+    pcgamer.com##+js(set-attr, picture>img, src, [data-original-mos])
+    ! it works, but futurecdn.net is slow
 
 ! from uBlock filters
 pcgamingwiki.com##+js(href-sanitizer, a[href^="https://www.dpbolvw.net/click-"][href*="?url="], ?url)
@@ -17905,6 +17918,9 @@ pizzapirat.ru##.small-cart:style(position:static !important)
 
 pizzasushiwok.ru##.vert
 pizzasushiwok.ru##.apps
+
+||pkclinok.ru/image/data/Baneri/
+pkclinok.ru##.section-slider-top
 
 pk-help.com##.header
 pk-help.com##.itemRatingBlock
@@ -22938,6 +22954,7 @@ sturmuniform.ru##.mob-reg-menu
 sturmuniform.ru###boxReviews
 
 stuttgarter-zeitung.de##.c1-banderole-target
+stuttgarter-zeitung.de###slider
 
 stvol.market##.submit-ann
 
@@ -28853,9 +28870,6 @@ fwwgo.com$script,3p  # ad scripts  # don't block css  # no root, but
 ||femcafe.hu/*/sponsoration/  # from Hufilter
 ||femcafe.hu/*/szponzoracio/  # from Hufilter
 
-||p3k.hu/*_hatter*.  # from Hufilter
-||p3k.hu/*szponz*.  # from Hufilter
-
 ||libri.hu/export/prodBann/  # from Hufilter
 ||libri.hu/html/images/skin/  # from Hufilter
 
@@ -28959,9 +28973,6 @@ learnpython.dev##.nav
 
 d3ward.github.io##.gt-link
 
-pac.ru##.floating-info-block
-pac.ru##.PacAndGo
-
 moex.com##.banners-slider
 moex.com##.widget-ticker
 moex.com##.new-moex-socials
@@ -29038,9 +29049,6 @@ rufox.ru*/ncounter.pl?  # from Ru AdList
 ||duunitori.imgix.net/media/duunivahti-hero-desk.jpg
 
 ||magesy.blog/wp-content/plugins/  # from uBlock filters
-
-||pkclinok.ru/image/data/Baneri/
-pkclinok.ru##.section-slider-top
 
 coursesdaddy.com$inline-script  # site blocks copypaste: "Right click is disabled!", "Cut/Copy/Paste is disabled!"
 
@@ -29149,13 +29157,6 @@ lambdatest.com##p > [href*="lambdatest.com/register"]
 
 ! thegamer.com : lazyload data-img-url
   ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
-
-! pcgamer.com lazyload data-original-mos
-    ! see tomshardware.com also
-    ! there are picture tags: https://www.w3schools.com/TAGS/tag_picture.asp
-    pcgamer.com##+js(set-attr, picture>source, srcset, [data-original-mos])
-    pcgamer.com##+js(set-attr, picture>img, src, [data-original-mos])
-    ! it works, but futurecdn.net is slow
 
 ! gamerant.com lazyload data-img-url
   ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
@@ -29285,8 +29286,6 @@ devopszones.com$inline-script  # redirects to templatesyard.com
 book24.ru##.location-d__popup
 
 dataoverhaulers.com##.about-wrapper
-
-stuttgarter-zeitung.de###slider
 
 deepcloud.ru##.table-of-contents
 
