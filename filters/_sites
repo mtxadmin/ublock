@@ -3644,6 +3644,11 @@ booking.com##.promote_article__overlay
 booking.com##.promote_article
 ||bstatic.com/static/js/error_catcher_bec_cloudfront_sd/
 
+booknet.ua##.modal:has([class^=modal-booknet-offer])
+booknet.ua##.bn_header:style(position:static !important)
+booknet.ua##.bn_header__menu-dropdown:style(position:static !important)
+booknet.ua##.bn_header__menu-dropdown:not(.open)
+
 bookol.ru##hgroup
 bookol.ru##.site-footer
 
@@ -3745,6 +3750,9 @@ brdteengal.com##.wide-bar-bottom
 brdteengal.com##.wide-bar-tl
 brdteengal.com##.section-footer
 brdteengal.com##.sub-footer
+
+! logo
+b-reading.com##.link-no-color
 
 b-reading.ru##.t-robotoslab
 b-reading.ru###myHeader:style(position:static !important)
@@ -4083,6 +4091,9 @@ camplace.com##.channel-settings-bar__title
 canada.ca##.wb-sec
 
 canadajobbank.org###tie-wrapper:style(filter:none !important)
+
+can-opener.org##.notifyme
+can-opener.org##.top-title-slide
 
 capital-gain.ru##.support-caption
 
@@ -4429,6 +4440,9 @@ chipmk.ru###header
 chistayrabota.ru###site-desc
 
 chitai-gorod.ru##.footer-section_subscribe
+
+! logo
+chitat-knigi.com##.link-no-color
 
     ! unstick elements
 chizhik.club##div:matches-css(position:fixed):style(position:static !important)
@@ -6550,7 +6564,6 @@ dx.com##.header-wrap:style(position:static !important)
 dx.com##.payment-method
 ||dxcdn.com/*/user-behavior-alalysis.min.js
 
-dxomark.com##.stuck.header-wrapper:style(position:static !important)
 dxomark.com##div.is-xsmall:has-text(Reading Time:)
 
 dymohod-msk.ru##.person
@@ -8314,6 +8327,9 @@ freelibrary.ru##.br-widget
 freeopenvpn.org##.just_for_sorting
 @@||freeopenvpn.org^$generichide,badfilter
 
+||freeporno.xxx/e/
+freeporno.xxx##.vjs-modal-dialog
+
 freeproxy.ru##[src="/images/vpn/hmn_ru.png"]
 
 ! banners
@@ -8412,6 +8428,8 @@ gadgetvictims.com##.header-wrap
 
 gagadget.com##.toplink-container
 gagadget.com##.header-wrap_fixed:style(position:static !important)
+
+galacentre.ru##.nav-scroller__app
 
     ! popups
 galamart.ru##.location__notice
@@ -11691,6 +11709,8 @@ jpearson.blog###hero-header
 
 ||jsdelivr.net/*/subscribe_banner$image
 ||jsdelivr.net/npm/tnet-clickstream-connector  # https://cdn.jsdelivr.net/npm/tnet-clickstream-connector@3.0.0/dist/tnet-clickstream-connector.min.js
+
+jsonlint.com##.memberful-button
 
 jsprav.ru##.float-menu:style(position:static !important)
 jsprav.ru##.float-menu-head:style(position:static !important)
@@ -23759,7 +23779,6 @@ telegram-region.com##.header_bg:style(height:80px !important)
 
 telekom.com##.claim
 telekom.com##com-brandbar
-telekom.com##.header-wrapper:style(position:static !important)
 telekom.com##.flickity-slider
 telekom.com##.next
 
@@ -24948,12 +24967,20 @@ tutorialspoint.com##.actual-price
 tutorialspoint.com##.ebook-discount
     ! other
 
+! tutsnode.com, tutsnode.net, tutsnode.org
+tutsnode.com$inline-script
 tutsnode.net$inline-script
-tutsnode.net##div:has-text(using an ad blocker)
-tutsnode.net##.left-logo
-tutsnode.net##.bam-date
+tutsnode.org$inline-script
+    ! popups
+tutsnode.*##div:has-text(Adblocker detected)
+! overlay
+tutsnode.*##[class$=-bg]
+    ! other
+tutsnode.*##div:has-text(using an ad blocker)
+tutsnode.*##.left-logo
+tutsnode.*##.bam-date
 ! useless duplicate menu
-tutsnode.net##.main-navigation
+tutsnode.*##.main-navigation
 
     ! top
 tutu.ru##[class^=__logo__]
@@ -26395,6 +26422,8 @@ vsaunah.ru##.header-middle__col-discounts
 vsaunah.ru##.card-list2:has-text(Скидки)
     ! other
 vsaunah.ru##.censor
+
+||live-screencaps.vscdns.com$image
 
 ||vse.fm/help.mp3
 
@@ -29340,36 +29369,6 @@ rothco.com###privacy-notice
 homestratosphere.com##.item-is-fixed:style(position:static !important)
 homestratosphere.com##.item-is-stuck:style(position:static !important)
 homestratosphere.com##.kadence-sticky-header:style(position:static !important)
-
-can-opener.org##.notifyme
-can-opener.org##.top-title-slide
-
-galacentre.ru##.nav-scroller__app
-
-jsonlint.com##.memberful-button
-
-||live-screencaps.vscdns.com$image
-
-||freeporno.xxx/e/
-freeporno.xxx##.vjs-modal-dialog
-
-booknet.ua##.modal:has([class^=modal-booknet-offer])
-booknet.ua##.bn_header:style(position:static !important)
-booknet.ua##.bn_header__menu-dropdown:style(position:static !important)
-booknet.ua##.bn_header__menu-dropdown:not(.open)
-
-! logo
-chitat-knigi.com##.link-no-color
-
-! logo
-b-reading.com##.link-no-color
-
-! tutsnode.com, tutsnode.net, tutsnode.com
-    ! popups
-tutsnode.*##div:has-text(Adblocker detected)
-! overlay
-tutsnode.*##[class$=-bg]
-    ! other
 
 !myfreshworks.com##.overlay-container - don't, there are useful popups there
 
