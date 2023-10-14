@@ -4698,6 +4698,8 @@ click-or-die.ru##.palach-border
 
 clickpay.com##.scroll-to-fixed-fixed:style(position:static !important)
 
+clickup.com##[class^=CuConsentBanner]
+
 ||clients-cdnnow.ru/*logo*.png
 
 climateexchangeplc.com##.index-post-thumbnail
@@ -10139,6 +10141,10 @@ home-santehnika.ru###getbonus_link
 home-santehnika.ru##.left_brands_list
 home-santehnika.ru##.banner-description
 
+homestratosphere.com##.item-is-fixed:style(position:static !important)
+homestratosphere.com##.item-is-stuck:style(position:static !important)
+homestratosphere.com##.kadence-sticky-header:style(position:static !important)
+
 homtom.cc###layui-layer1
 homtom.cc###layui-layer-shade1
 
@@ -12168,6 +12174,8 @@ kinozal.tv##.cmet_ava
 ||kinozal.tv/pic/radio_ban.jpg
 
 kinsta.com##[class^=yogurt-]
+! banners
+kinsta.com##aside
 
 kinstacdn.com$domain=~mexiconewsdaily.com  # banner cdn; unbounce. It is from kinsta.com, strange Wordpress hosting. I viewed only banners and tracking scripts from there  # upd: mexiconewsdaily.com uses kinstacdn.com for storing content. Ok.
 
@@ -15297,6 +15305,8 @@ moyo.ua##.header__content:style(position:static !important)
 ||moyzamok.ru/pages/bnr$image
 moyzamok.ru###brnds
 
+mozaiyka.ru##.table-of-contents
+
 ! from uBlock filters
 mozilla.org##+js(href-sanitizer, a[href^="https://app.adjust.com/"][href*="?redirect="], ?redirect)
 !jumping header
@@ -17080,6 +17090,18 @@ ooo-asteko.ru###masthead
 ! top
 ooo-set.ru##.h-row
 
+openai.com##.h-screen.fixed
+    ! footer
+openai.com##footer .bg-inverse
+openai.com##.shutter-transition
+    ! other
+! video
+openai.com##.transition-opacity.object-cover
+! top pic overrides top menu
+openai.com##.w-full.h-full
+!theme-dark-gray fixed top-0 right-0 bottom-0 left-0 text-primary md:left-auto md:w-[400px] lg:hidden - not
+openai.com##+js(rc,hidden)
+
 openarium.ru##.section-header
 
 open-dive.ru##.__sticky:style(position:static !important)
@@ -17706,6 +17728,8 @@ perfect-privacy.com##.sticky-header:style(position:static !important)
 perfect-privacy.com##.topbar:style(position:static !important)
 
 performancegunworks.com##.jeg_midbar
+
+blogs.perl.org##[id^=module-aux-about-author]
 
 perspekt174.ru##.fly_forms
 
@@ -20151,6 +20175,8 @@ rossoporn.com##.plugs_textbox
 rossoporn.com##p
 rossoporn.com##a[href="#2top"]
 rossoporn.com##.footer_container
+
+rothco.com###privacy-notice
 
 rotor43.ru##.widget_metaslider_widget
 
@@ -29337,38 +29363,9 @@ deepcloud.ru##.table-of-contents
 ||nypost.com/wp-content/plugins/nyp-membership/
 ||nypost.com/wp-content/plugins/nyp-video-player/
 
-openai.com##.h-screen.fixed
-    ! footer
-openai.com##footer .bg-inverse
-openai.com##.shutter-transition
-    ! other
-! video
-openai.com##.transition-opacity.object-cover
-! top pic overrides top menu
-openai.com##.w-full.h-full
-!theme-dark-gray fixed top-0 right-0 bottom-0 left-0 text-primary md:left-auto md:w-[400px] lg:hidden - not
-openai.com##+js(rc,hidden)
-
 !techviewleo.com
 ! lazyload: span with background, data-ezbg
 ! techviewleo.com##+js(set-attr, span.ezlazyload, style, background-image:url([data-ezbg]))  - doesn't work, of course
-
-mozaiyka.ru##.table-of-contents
-
-! banners
-kinsta.com##aside
-
-blogs.perl.org##[id^=module-aux-about-author]
-
-clickup.com##[class^=CuConsentBanner]
-
-modernsurvivalblog.com##+js(set-attr, img.perfmatters-lazy, src, [data-src])
-
-rothco.com###privacy-notice
-
-homestratosphere.com##.item-is-fixed:style(position:static !important)
-homestratosphere.com##.item-is-stuck:style(position:static !important)
-homestratosphere.com##.kadence-sticky-header:style(position:static !important)
 
 !myfreshworks.com##.overlay-container - don't, there are useful popups there
 
