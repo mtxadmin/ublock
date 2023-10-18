@@ -114,9 +114,17 @@ ozon.ru##button:has-text(Купить в один клик)
 ozon.ru##[data-widget="webTopStreams"]:has(a[href^="/live"])
 ozon.ru##[data-widget="setOfPreviews"]
 !ozon.ru##div:has(>a[href*="ozon.onelink.me"]) - don't, this breaks mobile product pages. General rule ##[href*=".onelink.me"] works well
+!
 ! these two rules combined break catalog on mobile. Weird.
+! update: I got it. It is really a mobile catalog, and its div contains <a href="/highlight/"> and <a href="href="https://www.ozon.ru/travel/hotels/?mwc_campaign">
 !ozon.ru##div:has(> a[href^="/highlight/"])
 !ozon.ru##div:has(>a[href*=campaign])
+! v2:
+ozon.ru##[data-widget="stickyContainer"]:has-text(Открыть в приложении)
+ozon.ru##a[href^="/highlight/"]
+ozon.ru##a[href^="https://ozon.ru/highlight/"]
+ozon.ru##a[href^="https://www.ozon.ru/highlight/"]
+!
 ! this one is a top banner. Also see erid in _removeparams
 ozon.ru##a[href*="/?erid="]
 !
@@ -201,6 +209,10 @@ ozon.ru##*:remove-attr(trackinginfo)
 ozon.ru##p:has-text(Наведите камеру и скачайте)
 ozon.ru##p:has-text(Наведите камеру и скачайте) ~ div:has(img[src*="/group"])
 ||ozone.ru/s3/cms/*/qr-code$image
+    ! socials
+ozon.ru##a[title="VK"]
+ozon.ru##a[title="Одноклассники"]
+ozon.ru##a[title="Telegram"]
     ! other
 ozon.ru##.vacancy__actions:style(position:static !important)
 ozon.ru##.vacancy__benefits
