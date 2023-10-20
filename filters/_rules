@@ -2675,7 +2675,8 @@ _chartbeat.js  # from EasyPrivacy
 /eventsbeacon?  # is in EasyPrivacy
 /events-metrica-scripts.js
 /facebook_pixel_  # from Adguard
-/fingerprint*$important,all
+/fingerprint*$important,all,domain=~github.com
+    ! @@||github.com/gorhill/uBlock/*/src/web_accessible_resources/fingerprint2.js$~third-party  # from EasyPrivacy
     ! /fingerprint.min.js$important
     ! /fingerprint2.min.js$important  # is in EasyPrivacy and AdGuard
         ! ||jsdelivr.net/fingerprintjs2/  # Also
