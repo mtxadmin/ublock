@@ -165,6 +165,7 @@ ozon.ru##[data-widget="caption"]:has-text(Подобрано для вас) ~ [d
 ozon.ru##[data-widget="actionCards"]
 ozon.ru##[data-widget="objectLine"]:has-text(/распродаж/i)
 ozon.ru##div[data-widget="skuGrid"]:matches-path(miniapp=)
+ozon.ru##[data-widget="cell"]:has-text(Время призов)
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
 ozon.ru##a[href^="https://www.ozon.ru/landing/"]:has(img)
     ! ozon.ru##a[href="https://www.ozon.ru/landing/giftcertificates/"]:has(img)
@@ -229,9 +230,14 @@ ozon.ru##[data-paginator-loader]
 ozon.ru##[data-widget=row]:style(margin-bottom:0px !important)
 ! в правой колонке название продавца дважды. Верхнее явно лишнее
 ozon.ru##[data-widget="webBrand"]
-
+ozon.ru##[data-widget="objectThumbnailList"]:has-text(Популярные бренды)
 !
 ozon.ru##[data-widget="webSharingButton"]
+!
+! товары с долгой доставкой из Китая зрительно выделяем красным
+! Озон силён своей моментальной логистикой. Но вот это обычный алиэкспресс, ещё и с заморочками.
+! да, заказывать можно, но нужно, чтобы этот момент был виднее
+ozon.ru##span:has-text(Условия доставки из-за рубежа):style(color:red !important)
 
     ! Wildberries
 ||wildberries.ru/stats/
