@@ -2215,6 +2215,8 @@ auto.ru##.ListingCars__c1Promo
 ! yes, yandex "plus"
 auto.ru##.Header__badgePlus
 auto.ru##.IndexSelector__banner
+! inline unrelated: journal tiles among goods (cars)
+auto.ru##[class^=PersonalizedFeedJournalItem]
     ! seo
 auto.ru##.Footer__seo-text
     ! apps
@@ -2231,9 +2233,12 @@ auto.ru##.Header2Placeholder
 auto.ru##.ScrollableSidebar:style(position:static !important)
     ! other
 ||yastatic.net/s3/vertis-frontend/autoru-frontend/manufacturer-cert-logo/$image
+||yastatic.net/s3/passport-auth-customs/  # login picture
+||yastatic.net/s3/vertis-front-deploy/_autoru-frontend/fomenko  # login picture
 auto.ru##.IndexMarks__super-marks
 auto.ru##.PageArticle__indexLink
 auto.ru##.ReviewStickyHeader
+auto.ru##[class^=PersonalizedFeed__item] [class^=ButtonFavorite]
 
 ! banners. Also login form, but..
 auto.today##.navbar-header
