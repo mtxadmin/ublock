@@ -79,7 +79,10 @@ ozon.ru##div[data-widget=alertPopup]
 !ozon.ru##.vue-portal-target - don't, filters use it too
 ozon.ru##.vue-portal-target:has-text(/(^|\s)опрос/i)
 ||ozone.ru/assets/*/cms-cookie-bubble.  # is in Ru AdList
+! is in Adguard
 ozon.ru##[data-widget="cookieBubble"]
+! fixed "?" button below. Is in Adguard.
+ozon.ru##div[data-widget="webFeedbackForm"]
     ! banners and promos
 ||ozone.ru/assets/*-banner$script
 ||ozon.ru/graphics/img/  # from Ru AdList
@@ -185,6 +188,8 @@ ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
 !ozon.ru##span:has-text(%) - sometimes hides comments (##span)
 ! new version
 ozon.ru##div:has(>div:has-text(/^[−-][0-9]+%$/))
+ozon.ru##div:has(>div:has-text(/^Больше [0-9]+% выкуп/))
+ozon.ru##div:has(>div:has-text(/^[0-9]+% возвратов$/))
 !ozon.ru##div:has(>div:has-text(/^\s*Скидк(а|и)/i)):not(:matches-path(/\/my\//))
 ozon.ru##div:has(>div:has-text(/^\s*\d+\s*(балл(а|ов|) за отзыв|бонус(а|ов|))$/i))
 ozon.ru##div:has(>div:has-text(/^\s*^(ХИТЫ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор покупателей|Распродажа|Ликвидация|Оригинал|Цена что надо|Купон на скидку|Ozon Promo|PRE-SALE 11.11|Соц. сертификат|Рассрочка 0%)$/i))
