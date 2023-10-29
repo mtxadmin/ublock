@@ -2575,6 +2575,7 @@ _analytics.js?  # from EasyPrivacy
 /analyticstracking.js  # from Adguard
 /antibot.php
 /api/fl?
+    ! ||eldorado.ru/api/fl?
     ! hh.ru domains: hh.ru,career.ru,hh.by,rabota.by,hh.kz,hh.ua,grc.ua
     !||sberbank.ru/api/fl?u  # proven rule
 /api/log/*
@@ -4011,6 +4012,10 @@ _site/gotop.  # from Ru AdList
 ##.tracking-consent
 !
 /ajax/dataconsentcookies  # ad tracking image  # is in EasyList and Fanboy's
+/angular-cookie-law$important  # from Adguard
+    ! /angular-cookie-law/*$important  # from Adguard
+    ! /angular-cookie-law.js$important  # from Adguard
+    ! /angular-cookie-law.min.js$important  # from Adguard
 /avia-snippet-cookieconsent.js  # from Adguard: /js/avia-snippet-cookieconsent.js
 /aviso_cookies.  # from EasyList
 /booster_eu_cookie*$important
@@ -4027,46 +4032,59 @@ _site/gotop.  # from Ru AdList
     ! /consent-mapping/*
     ! ||bigcommerce.com/shared/js/storefront/consent-manager-  # from Adguard
 /coockiealert.  # from EasyList
+/cookiealert.$important  # from Adguard
 /cookiebanner/*$important
-/cookie-banner  # is in EasyList and Fanboy’s
+/cookie-banner$important  # is in EasyList, Fanboy’s, Adguard
 -cookie-banner-$~image  # from EasyList
-/cookiebar.  # from AdGuard
+/cookiebar.$important  # from AdGuard
 /cookiebar/*
 /cookie-cnil/*  # from EasyList
+/cookie-consent/*$important  # from Adguard
+/cookie-consent.$important
+    ! /cookie-consent.js$important
+    ! /cookie-consent.*.min.js  # from Adguard
 /cookie_consent.js$important
-/cookie-consent.js$important
 /cookie-consent?  # from Adguard
 -cookie-consent.js  # from EasyList
 _CookieConsent.js  # from EasyList
-/cookieconsent.*$important  # from AdGuard
-    ! /cookieconsent.min.js$important
-/cookieconsent2/*$important
-    ||cloudflare.com/ajax/libs/cookieconsent2/  # from EasyList
+/cookieconsent$important
+    ! /cookieconsent.*$important  # from AdGuard
+        ! /cookieconsent.min.js$important
+    ! /cookieconsent/*$important
+    ! /cookieconsent2/*$important
+        ! ||cloudflare.com/ajax/libs/cookieconsent2/  # from EasyList
+    ! /cookieconsentbar.  # from EasyList
+    ! /cookieconsentpub/*$important  # from Fanboy's, modified
 /cookie-consent-*$script
     ! /cookie-consent-manager.js  # from Adguard
     ! /scripts/cookie-consent-  # from Adguard, modified
-/cookieconsentbar.  # from EasyList
-/cookieconsentpub/*$important  # from Fanboy's, modified
 -cookie-consent/$stylesheet  # from Fanboy's
+/cookiecontrol$important
 .cookiecuttr. # is in Fanboy's and EasyList
 /cookieDSVGo.  # from EasyList
 /cookiefly/*  # from EasyList
 -cookie-form.lib.  # from EasyList
 /cookieinfo.  # is in EasyList, AdGuard and Fanboy's
+/cookie-info.$important  # from Adguard
+/cookie_law/*$script,important  # from Adguard
 -cookie-law.js  # from Adguard
 _cookie_law.js  # from EasyList
 .cookielaw.js  # from Adguard
 .cookielaw.min.  # from EasyList
-/cookie-law-*$~stylesheet  # from Adguard: /cookie-law-$~script,~stylesheet
+/cookie-law-$~stylesheet  # from Adguard: /cookie-law-$~script,~stylesheet
 /cookie-law-generator/*  # from Adguard
 /cookie-law-info-public.js  # from Adguard
 /cookielayover.  # from EasyList
+/cookielex/*$important  # from Adguard
+
 /cookie-line.  # from EasyList
 -cookie-message.js  # from Adguard and EasyList
 /cookie-notice/*$script,important  # from AdGuard and Fanboy's
-/cookienotice.  # is in EasyList, AdGuard and Fanboy's
+/cookienotice.$important  # is in EasyList, AdGuard and Fanboy's
+/cookienotification.$important  # from Adguard
 /cookie_notification.js
 /cookie.policy.  # from SecurityEntire CookieFilter
+/cookie-policy.js$important  # from Adguard
 _cookie_policy_  # from Fanboy's and AdGuard
 .cookie.policy.  # from EasyList
 /cookiesbanner.js  # from EasyList
@@ -4085,6 +4103,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /eucookie/*  # is in 2 lists
 /eu-cookie-*$script,important  # from Adguard, modified
 /eu_cookie_*$script,important  # is in 3 lists
+/eu_cookie_compliance.$important  # from Adguard
 /eu-cookie-law*$important
     ! /eu-cookie-law/*$important
     ! /eu-cookie-law.js$important
@@ -4092,6 +4111,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /evercookie.  # from EasyPrivacy
 /evercookie_*$important  # tracking imgs and xhrs  # is in EasyPrivacy and Adguard
 /evercookie/*  # from EasyPrivacy
+/gdpr/*$important
 /gdpr.js$important  # from Fanboy's and Adguard
 .gdpr.$script
     ! .gdpr.js  # from EasyList
@@ -4121,7 +4141,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /um-gdpr.*$important  # is in Fanboy's and EasyList
 /warncookies.  # is in EasyList, Adguard, Fanboy's
 /wecoma-lite.js  # from EasyList
-/wrappermessagingwithoutdetection.js  # is in Fanboy's and EasyList
+/wrappermessagingwithoutdetection.js$important  # is in Fanboy's, EasyList, Adguard
 /ws5_eucookie/*  # from EasyList
 
 
