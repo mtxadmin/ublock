@@ -93,7 +93,7 @@ $removeparam=/adid$/
         ! &siteid=*&adid=$removeparam  # from Adguard
         ! orbis.co.jp$removeparam=adid  # from Adguard
     ! $removeparam=ebisAdID  # AD EBiS  # from Adguard
-    ! $removeparam=gps_adid  # adjust.com tracking  # from Adguard
+    ! $removeparam=gps_adid  # adjust.com tracking  # from Adguard and uBlock filters
     ! $removeparam=ir_adid  # from Adguard
     ! amazon.*$removeparam=hvadid  # from Adguard
         ! $removeparam=hvadid  # from DandelionSprout's URLShortener
@@ -107,12 +107,12 @@ $removeparam=/^adj_/i  # it seems, adjust.com campains too (see below). Also see
 
 $removeparam=/^adjust/i  # from DandelionSprout's URLShortener  # earlier it was /^adjust_/ too. Ok, I don't mind.
     ! $removeparam=/^adjust_/  # adjust.com campains. Also see adjust ad network
-        ! $removeparam=adjust_adgroup  # from Adguard
-        ! $removeparam=adjust_campaign  # from Adguard
-        ! $removeparam=adjust_creative  # from Adguard
+        ! $removeparam=adjust_adgroup  # from Adguard and uBlock filters
+        ! $removeparam=adjust_campaign  # from Adguard and uBlock filters
+        ! $removeparam=adjust_creative  # from Adguard and uBlock filters
         ! $removeparam=adjust_referrer  # from Adguard
-        ! $removeparam=adjust_tracker  # from Adguard
-        ! $removeparam=adjust_tracker_limit  # from Adguard
+        ! $removeparam=adjust_tracker  # from Adguard and uBlock filters
+        ! $removeparam=adjust_tracker_limit  # from Adguard and uBlock filters
         ! adj.st$removeparam=adjust_deeplink  # from Adguard
         ! nesine.com$removeparam=adjust_t  # from Adguard
         ! trendyol.com$removeparam=adjust_t  # from Adguard
@@ -310,12 +310,12 @@ $removeparam=_branch_match_id  # from Adguard and DandelionSprout's URLShortener
 $removeparam=/^bsft_/i
     ! https://github.com/AdguardTeam/AdguardFilters/issues/89869
     ! email subscriptions tracking
-    ! $removeparam=bsft_aaid  # from Adguard
-    ! $removeparam=bsft_clkid  # from Adguard
-    ! $removeparam=bsft_eid  # from Adguard
-    ! $removeparam=bsft_ek  # from Adguard
-    ! $removeparam=bsft_mid  # from Adguard
-    ! $removeparam=bsft_uid  # from Adguard
+    ! $removeparam=bsft_aaid  # from Adguard and uBlock filters
+    ! $removeparam=bsft_clkid  # from Adguard and uBlock filters
+    ! $removeparam=bsft_eid  # from Adguard and uBlock filters
+    ! $removeparam=bsft_ek  # from Adguard and uBlock filters
+    ! $removeparam=bsft_mid  # from Adguard and uBlock filters
+    ! $removeparam=bsft_uid  # from Adguard and uBlock filters
 
 $removeparam=caid
     ! warnermediacdn.com$removeparam=caid  # from uBlock filters and Adguard
@@ -431,7 +431,7 @@ $removeparam=/clickid=/i  # /clickid$/
     ! $removeparam=irclickid  # from Ru AdList and Adguard
         ! duda.co$removeparam=irclickid  # from Adguard
         ! microsoft.com$removeparam=irclickid  # from Adguard
-    ! $removeparam=rb_clickid  # from Adguard  # https://github.com/brave/brave-browser/issues/17451
+    ! $removeparam=rb_clickid  # from Adguard and uBlock filters  # https://github.com/brave/brave-browser/issues/17451
     ! rtkcid=*&clickid=$removeparam=clickid  # from Adguard
     ! /landing.$removeparam=clickid  # from Adguard
     ! aufast.co$removeparam=clickid  # from Adguard
@@ -447,7 +447,7 @@ $removeparam=/click_id=/i  # /click_id$/
     ! $removeparam=msclkid  # from DandelionSprout's URLShortener
     ! $removeparam=mt_click_id  # from Ru AdList
     ! $removeparam=pjxclick_id  # from DandelionSprout's URLShortener
-    ! $removeparam=unicorn_click_id  # adjust.com tracking  # from Adguard and DandelionSprout's URLShortener
+    ! $removeparam=unicorn_click_id  # adjust.com tracking  # from Adguard, DandelionSprout's URLShortener, uBlock filters
     !
     ! adjust.com$removeparam=nend_click_id  # from Adguard
     ! revolut.com$removeparam=%7Eclick_id  # from Adguard
@@ -486,20 +486,20 @@ $removeparam=clicktime  # from DandelionSprout's URLShortener
         ! &clid=$document,removeparam=|clid,domain=yandex.*  # from Ru AdList
         ! ?clid=$document,removeparam=|clid,domain=yandex.*  # from Ru AdList
         ! ||yandex.ru/?clid=$document,removeparam=|,domain=yandex.*  # from Ru AdList
-    $removeparam=dclid  # from Adguard
-    $removeparam=fbclid  # Facebook general parameter  # is in NeatURL, Adguard, Ru AdList
+    $removeparam=dclid  # from Adguard and uBlock filters
+    $removeparam=fbclid  # Facebook general parameter  # is in NeatURL, Adguard, Ru AdList, uBlock filters
         ! fbclid=$document,removeparam=fbclid  # from Ru AdList
         ! $removeparam=fbclid  # from Adguard
         ! ||youtube.com^*fbclid*$removeparam=fbclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467
-    $removeparam=gclid  # Campaign tracking (Google Analytics, ga)  # from NeatURL, Adguard, Ru AdList
+    $removeparam=gclid  # Campaign tracking (Google Analytics, ga)  # from NeatURL, Adguard, Ru AdList, uBlock filters
         ! ||youtube.com^*gclid*$removeparam=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467  # also it is found indepedently and presents in NeatURL. Very popular parameter.
-    $removeparam=twclid  # Twitter general parameter  # from NeatURL and Adguard
+    $removeparam=twclid  # Twitter general parameter  # from NeatURL, Adguard, uBlock filters
     $removeparam=yaclid  # from Ru AdList
-    $removeparam=yclid  # Campaign tracking (Yandex (and Google?))  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList
+    $removeparam=yclid  # Campaign tracking (Yandex (and Google?))  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList, uBlock filters
     $removeparam=ymclid
         ! ?ymclid=$document,removeparam=|  # from Ru AdList
         ! &ymclid=$document,removeparam=|,domain=~ozon.onelink.me  # from Ru AdList  # that exclusion is on ozon, redirect to thaeir app
-    $removeparam=ysclid  # New version of third-party yandex id
+    $removeparam=ysclid  # New version of third-party yandex id  # now is in uBlock filters
 
 $removeparam=cm_me  # from Adguard
 $removeparam=cm_cr  # from Adguard
@@ -535,9 +535,9 @@ $removeparam=cuid  # from Adguard
 
 $removeparam=/^cx_/i
     ! $removeparam=/^cx_click/
-        ! $removeparam=cx_click  # from Adguard
-        ! $removeparam=cx_recsOrder  # from Adguard
-        ! $removeparam=cx_recsWidget  # from Adguard
+        ! $removeparam=cx_click  # from Adguard and uBlock filters
+        ! $removeparam=cx_recsOrder  # from Adguard and uBlock filters
+        ! $removeparam=cx_recsWidget  # from Adguard and uBlock filters
         ! basketballking.jp$removeparam=cx_art  # from Adguard
         ! hbol.jp$removeparam=cx_clicks_art_mdl  # from Adguard
         ! joshi-spa.jp$removeparam=cx_clicks_art_mdl  # from Adguard
@@ -603,11 +603,11 @@ $removeparam=ext_source  # from DandelionSprout's URLShortener
 
 $removeparam=famad_xuid  # from Adguard
 
-$removeparam=fb_action_ids  # Facebook general parameter # from NeatURL and Adguard
-$removeparam=fb_action_types  # Facebook general parameter  # from NeatURL and Adguard
-$removeparam=fb_comment_id  # from Adguard
-$removeparam=fb_ref  # Facebook general parameter  # from NeatURL and Adguard
-$removeparam=fb_source  # Facebook general parameter  # from NeatURL and Adguard
+$removeparam=fb_action_ids  # Facebook general parameter # from NeatURL, Adguard, uBlock filters
+$removeparam=fb_action_types  # Facebook general parameter  # from NeatURL, Adguard, uBlock filters
+$removeparam=fb_comment_id  # from Adguard and uBlock filters
+$removeparam=fb_ref  # Facebook general parameter  # from NeatURL, Adguard, uBlock filters
+$removeparam=fb_source  # Facebook general parameter  # from NeatURL, Adguard, uBlock filters
 
 $removeparam=feeditemid  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
     ! megaknihy.cz$removeparam=feeditemid  # from Adguard
@@ -694,14 +694,14 @@ $removeparam=gaa_ts  # from DandelionSprout's URLShortener
 
 $removeparam=gci  # from Adguard
 
-$removeparam=_gl  # is in Ru AdList
+$removeparam=_gl  # is in Ru AdList and uBlock filters
     ! 24tv.ua$removeparam=_gl
 
 $removeparam=gm  # from Ru AdList, modified
 
-$removeparam=gbraid  # Google ads/analytics  # from Adguard
+$removeparam=gbraid  # Google ads/analytics  # from Adguard and uBlock filters
 
-$removeparam=gclsrc  # Campaign tracking (Google Analytics, ga)  # from NeatURL and Adguard
+$removeparam=gclsrc  # Campaign tracking (Google Analytics, ga)  # from NeatURL, Adguard, uBlock filters
 
 $removeparam=_gl  # from Adguard
 
@@ -724,29 +724,29 @@ $removeparam=__hssc  # Hubspot  # from NeatURL
 $removeparam=__hstc  # Hubspot  # from NeatURL
 $removeparam=_hsenc  # Hubspot  # is in NeatURL  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
 $removeparam=_hsmi  # Hubspot  # from NeatURL
-$removeparam=hsCtaTracking  # Hubspot  # from NeatURL and Adguard
+$removeparam=hsCtaTracking  # Hubspot  # from NeatURL, Adguard, uBlock filters
 
 $removeparam=/^hsa_/i
-    ! $removeparam=hsa_acc  # from Adguard
-    ! $removeparam=hsa_ad  # from Adguard
-    ! $removeparam=hsa_cam  # from Adguard
-    ! $removeparam=hsa_grp  # from Adguard
-    ! $removeparam=hsa_kw  # from Adguard
-    ! $removeparam=hsa_la  # from Adguard
-    ! $removeparam=hsa_mt  # from Adguard
-    ! $removeparam=hsa_net  # from Adguard
-    ! $removeparam=hsa_ol  # from Adguard
-    ! $removeparam=hsa_src  # from Adguard
-    ! $removeparam=hsa_tgt  # from Adguard
-    ! $removeparam=hsa_ver  # from Adguard
+    ! $removeparam=hsa_acc  # from Adguard and uBlock filters
+    ! $removeparam=hsa_ad  # from Adguard and uBlock filters
+    ! $removeparam=hsa_cam  # from Adguard and uBlock filters
+    ! $removeparam=hsa_grp  # from Adguard and uBlock filters
+    ! $removeparam=hsa_kw  # from Adguard and uBlock filters
+    ! $removeparam=hsa_la  # from Adguard and uBlock filters
+    ! $removeparam=hsa_mt  # from Adguard and uBlock filters
+    ! $removeparam=hsa_net  # from Adguard and uBlock filters
+    ! $removeparam=hsa_ol  # from Adguard and uBlock filters
+    ! $removeparam=hsa_src  # from Adguard and uBlock filters
+    ! $removeparam=hsa_tgt  # from Adguard and uBlock filters
+    ! $removeparam=hsa_ver  # from Adguard and uBlock filters
 
-$removeparam=_hsenc  # from Adguard
+$removeparam=_hsenc  # from Adguard and uBlock filters
 
-$removeparam=__hsfp  # from Adguard
+$removeparam=__hsfp  # from Adguard and uBlock filters
 
-$removeparam=__hssc  # from Adguard
+$removeparam=__hssc  # from Adguard and uBlock filters
 
-$removeparam=__hstc  # from Adguard
+$removeparam=__hstc  # from Adguard and uBlock filters
 
 $removeparam=idealoid
     ! alternate.de$removeparam=idealoid  # from Adguard
@@ -830,7 +830,7 @@ $removeparam=mbid  # Campaign tracking (others)  # https://www.parse.ly/help/pos
     ! wired.co.uk$removeparam=mbid  # from Adguard
 
 $removeparam=mc_cid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # from NeatURL
-$removeparam=mc_eid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # is in NeatURL and Adguard # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
+$removeparam=mc_eid  # Campaign tracking (MailChimp)  # https://www.learndigitaladvertising.com/solved-why-how-to-remove-mc_cid-and-mc_eid-from-google-analytics/  # is in NeatURL, Adguard, uBlock filters  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
 
 $removeparam=media
     ! livejournal.com$removeparam=media
@@ -851,8 +851,8 @@ $removeparam=/^mkt_tok/i
     ! digikey.com^$removeparam=/^mkt_tok/  # from Adguard
         ! Lately: $domain=atlanticcouncil.org|digikey.com,removeparam=/^mkt_tok/  # from Adguard
 
-$removeparam=ml_subscriber  # from Adguard
-$removeparam=ml_subscriber_hash  # from Adguard
+$removeparam=ml_subscriber  # from Adguard and uBlock filters
+$removeparam=ml_subscriber_hash  # from Adguard and uBlock filters
     ! https://github.com/brave/brave-browser/issues/17507
 
 $removeparam=/^mr:/i
@@ -876,7 +876,7 @@ $removeparam=/^mr%3A/i  # "%3A" is ":"
     ! $removeparam=mr:trackingCode  # from DandelionSprout's URLShortener
     ! $removeparam=mr%3AtrackingCode  # from DandelionSprout's URLShortener
 
-$removeparam=msclkid  # is in Adguard  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+$removeparam=msclkid  # is in Adguard and uBlock filters  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 ! Mail.ru tracking
 $removeparam=/^mt_/i
@@ -894,14 +894,14 @@ $removeparam=/^mt_/i
             ! mt_sub$document,removeparam=|,domain=mail.ru|ok.ru  # from Ru AdList
  
 $removeparam=/^mtm_/i,important  # Campaign tracking (Matomo/Piwik)  # from NeatURL
-    ! $removeparam=mtm_campaign  # from Adguard
-    ! $removeparam=mtm_cid  # from Adguard
-    ! $removeparam=mtm_content  # from Adguard
-    ! $removeparam=mtm_group  # from Adguard
-    ! $removeparam=mtm_keyword  # from Adguard
-    ! $removeparam=mtm_medium  # from Adguard
-    ! $removeparam=mtm_placement  # from Adguard
-    ! $removeparam=mtm_source  # from Adguard
+    ! $removeparam=mtm_campaign  # from Adguard and uBlock filters
+    ! $removeparam=mtm_cid  # from Adguard and uBlock filters
+    ! $removeparam=mtm_content  # from Adguard and uBlock filters
+    ! $removeparam=mtm_group  # from Adguard and uBlock filters
+    ! $removeparam=mtm_keyword  # from Adguard and uBlock filters
+    ! $removeparam=mtm_medium  # from Adguard and uBlock filters
+    ! $removeparam=mtm_placement  # from Adguard and uBlock filters
+    ! $removeparam=mtm_source  # from Adguard and uBlock filters
 
 $removeparam=ncid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
     ! yahoo.com$removeparam=ncid  # from Adguard
@@ -958,22 +958,22 @@ $removeparam=offer_id,important  # Let's remove ad offers radically
     !$removeparam=offer_id,domain=catch.com.au|surfshark.com  # from DandelionSprout's URLShortener
 
 $removeparam=/^oft_/i
-    ! $removeparam=oft_c  # from DandelionSprout's URLShortener
-    ! $removeparam=oft_ck  # from DandelionSprout's URLShortener
-    ! $removeparam=oft_d  # from DandelionSprout's URLShortener
-    ! $removeparam=oft_id  # from DandelionSprout's URLShortener
-    ! $removeparam=oft_ids  # from DandelionSprout's URLShortener
-    ! $removeparam=oft_k  # from DandelionSprout's URLShortener
-    ! $removeparam=oft_lk  # from DandelionSprout's URLShortener
-    ! $removeparam=oft_sk  # from DandelionSprout's URLShortener
+    ! $removeparam=oft_c  # from DandelionSprout's URLShortener and uBlock filters
+    ! $removeparam=oft_ck  # from DandelionSprout's URLShortener and uBlock filters
+    ! $removeparam=oft_d  # from DandelionSprout's URLShortener and uBlock filters
+    ! $removeparam=oft_id  # from DandelionSprout's URLShortener and uBlock filters
+    ! $removeparam=oft_ids  # from DandelionSprout's URLShortener and uBlock filters
+    ! $removeparam=oft_k  # from DandelionSprout's URLShortener and uBlock filters
+    ! $removeparam=oft_lk  # from DandelionSprout's URLShortener and uBlock filters
+    ! $removeparam=oft_sk  # from DandelionSprout's URLShortener and uBlock filters
 
-$removeparam=oly_anon_id  # is in Adguard  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
-$removeparam=oly_enc_id,important  # is in Adguard  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
+$removeparam=oly_anon_id  # is in Adguard and uBlock filters  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
+$removeparam=oly_enc_id,important  # is in Adguard and uBlock filters  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
     ! https://github.com/brave/brave-browser/issues/13644
     ! 
     ! @@||greenbuildingadvisor.com^$removeparam=oly_enc_id  # from Adguard
 
-$removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList
+$removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList, uBlock filters
     ! $removeparam=_openstat  # from DandelionSprout's URLShortener
 
 $removeparam=oprtrack  # from Adguard
@@ -1043,9 +1043,9 @@ $removeparam=/^pf_rd_/i
     ! ||amazon.*^$removeparam=/^p[fd]_rd_[a-z]*=/  # from DandelionSprout's ClearURLs for uBo
 
 $removeparam=/^pk_/i,important  # Campaign tracking (Matomo/Piwik)  # from NeatURL
-    ! $removeparam=pk_campaign  # from Adguard
-    ! $removeparam=pk_medium  # from Adguard
-    ! $removeparam=pk_source  # from Adguard
+    ! $removeparam=pk_campaign  # from Adguard and uBlock filters
+    ! $removeparam=pk_medium  # from Adguard and uBlock filters
+    ! $removeparam=pk_source  # from Adguard and uBlock filters
     ! $removeparam=pk_vid  # from Adguard
     ! originally commented rules from NeatURL: #?pk_campaign@vivaldi.com, #?pk_kwd@vivaldi.com - now it turned out it was Piwik
 
@@ -1268,8 +1268,8 @@ $removeparam=/referrer[^=]*=/i$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5
     ! $removeparam=adjust_referrer  # from Adguard
     ! $removeparam=_branch_referrer  # from DandelionSprout's URLShortener
         ! click_id=*_branch_referrer=$removeparam  # from Adguard
-    ! $removeparam=guce_referrer  # is in Adguard
-    ! $removeparam=guce_referrer_sig  # is in Adguard
+    ! $removeparam=guce_referrer  # is in Adguard and uBlock filters
+    ! $removeparam=guce_referrer_sig  # is in Adguard and uBlock filters
         ! yahoo.com$removeparam=guce_referrer
         ! yahoo.com$removeparam=guce_referrer_sig
     ! $removeparam=nr_email_referer  # Campaign tracking (utm)  # from NeatURL and DandelionSprout's URLShortener
@@ -1366,7 +1366,7 @@ $removeparam=sc_out
     ! yahoo.co.jp$removeparam=sc_out  # from Adguard
 $removeparam=sc_outcome  # Campaign tracking (sc)  # from NeatURL
 
-$removeparam=s_cid  # Campaign tracking (Omniture)  # https://moz.com/community/q/omniture-tracking-code-urls-creating-duplicate-content  # from NeatURL  # is in Adguard
+$removeparam=s_cid  # Campaign tracking (Omniture)  # https://moz.com/community/q/omniture-tracking-code-urls-creating-duplicate-content  # from NeatURL, Adguard, uBlock filters
 
 $removeparam=scid  # from DandelionSprout's URLShortener
     ! ! rakuten - blocked entirely, just for information. But.
@@ -1794,8 +1794,8 @@ $removeparam=utparam
 $removeparam=vc_lpp  # from Adguard
     ! Valuecommerce ( https://help.valuecommerce.ne.jp/mer/dl/ITP2.0_for_iTAG.pdf )
 
-$removeparam=vero_conv  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # from NeatURL  # is in Adguard
-$removeparam=vero_id  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # is in NeatURL and Adguard  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
+$removeparam=vero_conv  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # from NeatURL, Adguard, uBlock filters
+$removeparam=vero_id  # Campaign tracking (Vero)  # https://help.getvero.com/articles/conversion-tracking.html  # is in NeatURL, Adguard, uBlock filters  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
 
 $removeparam=via
     ! $removeparam=via,domain=dzen.*,ya.ru,yandex.*
@@ -1811,11 +1811,11 @@ $removeparam=via
 $removeparam=vs
     ! many redirects on porno sites, some kind of ref or utm param
 
-$removeparam=wbraid  # Google ads/analytics  # from Adguard
+$removeparam=wbraid  # Google ads/analytics  # from Adguard and uBlock filters
 
 $removeparam=websitemapnodeid  # from DandelionSprout's URLShortener
 
-$removeparam=wickedid  # from Adguard
+$removeparam=wickedid  # from Adguard and uBlock filters
 
 $removeparam=/^wpa_/i
     ! $removeparam=wpa_aduid  # from DandelionSprout's URLShortener
@@ -1952,12 +1952,12 @@ amazon.$removeparam=aaxitk  # from DandelionSprout's URLShortener
 amazon.*$removeparam=ac_md  # from DandelionSprout's URLShortener
 amazon.*$removeparam=adgrpid  # from Adguard
     ! $removeparam=adgrpid  # from DandelionSprout's URLShortener
-$removeparam=asc_campaign,domain=aboutamazon.com|amazon.*|amzn.to  # from Adguard
+$removeparam=asc_campaign,domain=aboutamazon.com|amazon.*|amzn.to  # from Adguard and uBlock filters
 ||amazon.*^$removeparam=asc_contentid  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=asc_contenttype  # from DandelionSprout's URLShortener
 ||amazon.*^$removeparam=asc_item  # from DandelionSprout's URLShortener
-$removeparam=asc_refurl,domain=aboutamazon.com|amazon.*|amzn.to  # from Adguard
-$removeparam=asc_source,domain=aboutamazon.com|amazon.*|amzn.to  # from Adguard
+$removeparam=asc_refurl,domain=aboutamazon.com|amazon.*|amzn.to  # from Adguard and uBlock filters
+$removeparam=asc_source,domain=aboutamazon.com|amazon.*|amzn.to  # from Adguard and uBlock filters
 amazon.*$removeparam=ascsubtag  # is in NeatURL, Adguard, DandelionSprout's URLShortener
 amazon.*$removeparam=AssociateTag  # from Adguard
 amazon.*$removeparam=c  # from Adguard
@@ -3108,7 +3108,7 @@ realsrv.com$removeparam  # from Adguard: ||syndication.realsrv.com/splash.php?$r
 
 reddit.com$removeparam=correlation_id  # from Adguard
 reddit.com$removeparam=post_fullname  # from Adguard
-reddit.com$removeparam=rdt
+reddit.com$removeparam=rdt  # now is in uBlock filters 
 reddit.com$removeparam=share_id  # from Adguard
 
 redgifs.com$removeparam=for  # from Adguard:||thumbs4.redgifs.com/*&for=$removeparam=for
@@ -3414,6 +3414,7 @@ wizcase.com$removeparam=vid  # from Adguard
 ||join.worldoftanks.$removeparam=enctid  # from Adguard
 ||join.worldoftanks.$removeparam=pub_id  # from Adguard
 
+wsj.com$removeparam=mod  # from uBlock filters
 wsj.com$removeparam=st  # sid
 
 ! already blocked
