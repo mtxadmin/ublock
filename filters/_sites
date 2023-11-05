@@ -1698,6 +1698,18 @@ a-otvet.ru,i-otvet.ru,my-question.ru,otvet-master.ru##.qa-footer
 
 ap.org###openModal.modalDialog
 
+    ! top
+apc.com##se-app:style(visibility:visible !important)
+apc.com##.sdlGlobalHeader:style(position:static !important)
+apc.com##.branding.logo-se-link
+apc.com##.logo-brand-link
+apc.com##.sdl-header-apc_logo-container
+apc.com##.sdl-header-global:style(position:static !important)
+apc.com##.se-header-sticky-wrap:style(position:static !important)
+    ! other
+apc.com##.se2--accessibility-toggle:style(position:static !important)
+apc.com##.slide-container
+
 apeaksoft.com##.usernotice_pop
 apeaksoft.com###share-list
 
@@ -4354,6 +4366,8 @@ cheap-safe.ru##.pokupka.form-group > .preimushestva
 cheatography.com##.footer_popup
 cheatography.com##.triptych3
 
+cheatsfile.com##.quote
+
 ||cheb.ru/css/bg/$image
 
 ! this is just testing service. No need to block them specially
@@ -5097,6 +5111,8 @@ coursera.org##.LearnerOutcomes__container
 coursera.org##.rc-UserTestimonialsSection
 
 ||courses99.com/wp-content/uploads/2021/12/6056607*.png
+
+coursesdaddy.com$inline-script  # site blocks copypaste: "Right click is disabled!", "Cut/Copy/Paste is disabled!"
 
 cov.su##.autoflash
 cov.su##[class$=_animate]
@@ -6513,6 +6529,19 @@ dtpptz.ru##.no-gutters
 
 dtulyakov.ru###banner
 
+||dualshockers.com/public/build/newsletter-popup
+! top
+dualshockers.com##.article-directory-sidenav:has-text(Table of contents)
+! window.googletag === typeof undefined || !window.googletag.hasOwnProperty('cmd') || typeof window.adsNinjaHeaderBiddingManager
+! don't work:
+!dualshockers.com##+js(set, window.googletag, noopFunc)
+!dualshockers.com##+js(set, window.googletag.com, noopFunc)
+!dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager, noopFunc)
+!dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager.arePassiveEventListenersSupported, noopFunc)
+! lazyload data-img-url => src
+  ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
+dualshockers.com##.article-alert
+
 ||duaweb.com/duaweb.svg
 
 ||duckduckgo.com/*/reportAnalytics  # from Adguard
@@ -7269,6 +7298,9 @@ esquire.ru##.top_menu:style(height:auto !important)
 essential.com###footerNotice
 
 e-techmaster.com$inline-script  # "ADBLOCK DETECTED"
+
+! popup
+ethereum.org###dot
 
 ! from EasyList
 etherscan.com##.d-lg-inline-block-alt
@@ -8360,6 +8392,8 @@ france24.com##.o-site-nav-wrapper
 france24.com##.a-brand-logo
     ! other
 
+freeadultporn.pro##.xxxlogo
+
 freebsdnews.com###sidebar
 
 freeccnaworkbook.com$inline-script  # "Adblocker detected"
@@ -8410,8 +8444,12 @@ freeones.com##.sidebar-right__scroll-container
 freeopenvpn.org##.just_for_sorting
 @@||freeopenvpn.org^$generichide,badfilter
 
+freeporn247.org##.active
+freeporn247.org##.toptext
+
 ||freeporno.xxx/e/
 freeporno.xxx##.vjs-modal-dialog
+freeporno.xxx##.side-title
 
 freeproxy.ru##[src="/images/vpn/hmn_ru.png"]
 
@@ -9815,6 +9853,8 @@ hdtube.porn##noindex
 hdtube.porn##.heading__title
 
 hdzog.com##.modal-age-verification
+hdzog.com##.overlay::after
+hdzog.com##.header-menu-toggle
 
 heaclub.ru##[href="/goroskop"]
 heaclub.ru##[href="https://heaclub.ru/goroskop"]
@@ -9822,6 +9862,8 @@ heaclub.ru##.top-info
 
 headphonesbest.ru##.stickyscroll_widget:style(position:static !important)
 headphonesbest.ru##.anycomment-comments-widget
+
+headphonesty.com##body:style(font-family:initial !important)
 
 heavy-r.com$csp=child-src *  # from uBlock filters
 
@@ -11098,6 +11140,8 @@ informpskov.ru##.running
 
 infozuby.ru##.logotext
 
+ingeneric.ru##.anchor
+
 ||ingmarverheij.com/*/page_body_img.jpg
 ingmarverheij.com###headerbar
 
@@ -11184,6 +11228,8 @@ insightly.com###appname:style(margin-left:60px !important)
 insightly.com###content:style(top:0px !important)
 
 inspectortools.com##.top-menu
+
+@@||instashop.kz/*/promo/$css
 
 instructables.com##.promo-side
 
@@ -11909,6 +11955,12 @@ kaksekonomit.com###sidebar
 kaksekonomit.com###divTizerGroup0
 kaksekonomit.com###divTizerGroup1
 kaksekonomit.com##.block-type-topic-best-bottom
+
+kakzarabativat.ru##.sticky.head
+! fake notifications
+kakzarabativat.ru##.bagde
+! inline toc
+kakzarabativat.ru##.contents
 
 ||kalashnikov.ru/*.gif  # banners
 kalashnikov.ru##a[href="https://www.kalashnikov.ru"]
@@ -12836,6 +12888,11 @@ kudago.com##.typo-help
 
 kudamoscow.ru##.about_site_desc
 
+kulikavto.ru##.item_aut_block
+kulikavto.ru##.header-name
+kulikavto.ru##.site-copy
+kulikavto.ru##.year-rating
+
 kulturologia.ru##.need-login
 ! Ru AdList: @@||kulturologia.ru^$generichide
 kulturologia.ru##.article__share
@@ -13542,6 +13599,9 @@ liquidweb.com##.EyeCatcher__startButton
 liquidweb.com##.knowledgeBase
 liquidweb.com##.subscribe-sidebar-form
 liquidweb.com##.inline-block
+
+! inline related
+lisa.ru##.article-list-announce
 
 litlife.club##.modal-dialog
 litlife.club###askAgeModal.modal
@@ -15377,6 +15437,9 @@ mosavtoshkola.org##.testimonial
 moscamp.ru##.recall
 
 moscowbooks.ru##.button_top
+
+moscow-city.guide###line-scroll
+moscow-city.guide###sp-up
 
 mosdef.ru##.header-location-hint
 ||mosdef.ru/*/bottom_line.svg
@@ -17719,6 +17782,8 @@ papamama.ru##.popup-window-overlay
 papamama.ru##.popup_banner
 papamama.ru###warning
 
+paperpaper.ru##.submenu:style(backdrop-filter:none !important; -webkit-backdrop-filter:none !important)
+
 papigun.ru##.bk_buy_button
 papigun.ru##.fcontblock
 ||papigun.ru/*/txtbg.png
@@ -18020,6 +18085,8 @@ phoneradar.com###mvp-main-nav-bot
 phoneradar.com###mvp-foot-logo
 
 phonesdata.com##.stickyfooter
+
+phoronix.com###about-author
 
 phosagro.ru##.agreed__modal-text:has-text(Cookies)
 
@@ -18666,6 +18733,9 @@ porn-hd.xxx##.tx
 pornlist.tv##.player-taxonomy a:has(center)
 
 porno247.cc##.active
+
+porno247.net##.active
+porno247.net##.toptext
 
     ! trash texts
 porno365.haus##.image > p
@@ -19455,6 +19525,13 @@ radidomapro.ru##div.titre_img_partenaire
 radikal.ru##.base-page_left-side
 radikal.ru##.pict-menu_glpp
 radikal.ru##.footer
+
+radiokot.ru###site_name
+radiokot.ru###logodesc
+radiokot.ru###forum_news
+||radiokot.ru/templates/radiokot_classic_neew/images/*$image
+! subs
+radiokot.ru##span.postbody
 
 ||radio-online.su/gugl_play.png
 radio-online.su##.side-desc
@@ -21872,6 +21949,7 @@ shopozz.ru##.countries-list
 shopozz.ru##.call-btns
 ! seo again
 shopozz.ru##.description_block
+shopozz.ru##.img::before
 
 shop-project.ru##.rd-navbar-brand
 
@@ -28604,6 +28682,8 @@ zhitov.ru###upper.icon-up-circled
 
 zik.ua##.stiky:style(position:static !important)
 
+zipstore.ru##.fixed-header-height
+
 ! disable RuAdlist exclusion
 @@||zismo.biz^$generichide,badfilter
 ||zismo.biz/uploads/nau/adimage
@@ -29340,13 +29420,6 @@ rufox.ru*/ncounter.pl?  # from Ru AdList
 
 ||magesy.blog/wp-content/plugins/  # from uBlock filters
 
-coursesdaddy.com$inline-script  # site blocks copypaste: "Right click is disabled!", "Cut/Copy/Paste is disabled!"
-
-phoronix.com###about-author
-
-! popup
-ethereum.org###dot
-
 ! already blocked
     ! site blocks copypaste
 bitpump.ru$inline-script
@@ -29354,53 +29427,6 @@ bitpump.ru##+js(ra,onmousedown)
 bitpump.ru##+js(ra,onkeypress)
     ! other
 bitpump.ru###hyipgosite
-
-@@||instashop.kz/*/promo/$css
-
-paperpaper.ru##.submenu:style(backdrop-filter:none !important; -webkit-backdrop-filter:none !important)
-
-dualshockers.com##.article-alert
-
-freeporn247.org##.active
-freeporn247.org##.toptext
-
-freeporno.xxx##.side-title
-
-hdzog.com##.overlay::after
-hdzog.com##.header-menu-toggle
-
-porno247.net##.active
-porno247.net##.toptext
-
-kakzarabativat.ru##.sticky.head
-! fake notifications
-kakzarabativat.ru##.bagde
-! inline toc
-kakzarabativat.ru##.contents
-
-headphonesty.com##body:style(font-family:initial !important)
-
-moscow-city.guide###line-scroll
-moscow-city.guide###sp-up
-
-freeadultporn.pro##.xxxlogo
-
-! inline related
-lisa.ru##.article-list-announce
-
-||dualshockers.com/public/build/newsletter-popup
-! top
-dualshockers.com##.article-directory-sidenav:has-text(Table of contents)
-! window.googletag === typeof undefined || !window.googletag.hasOwnProperty('cmd') || typeof window.adsNinjaHeaderBiddingManager
-! don't work:
-!dualshockers.com##+js(set, window.googletag, noopFunc)
-!dualshockers.com##+js(set, window.googletag.com, noopFunc)
-!dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager, noopFunc)
-!dualshockers.com##+js(set, window.adsNinjaHeaderBiddingManager.arePassiveEventListenersSupported, noopFunc)
-! lazyload data-img-url => src
-  ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
-
-shopozz.ru##.img::before
 
 lambdatest.com##section:style(margin-top:0px !important)
     ! banners and promos
@@ -29416,8 +29442,6 @@ lambdatest.com##p > [href*="lambdatest.com/register"]
 
 ! gamerant.com lazyload data-img-url
   ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
-
-cheatsfile.com##.quote
 
 ||at.staticfiles.at/img/privacywall/
 
