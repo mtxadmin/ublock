@@ -2230,6 +2230,9 @@ auto.ru##.Header__badgePlus
 auto.ru##.IndexSelector__banner
 ! inline unrelated: journal tiles among goods (cars)
 auto.ru##[class^=PersonalizedFeedJournalItem]
+auto.ru##[class^=CreditCardRoot]
+auto.ru##.SafeDealBlockDesktop
+auto.ru##[class^=MatchApplicationBanner]
     ! seo
 auto.ru##.Footer__seo-text
     ! apps
@@ -2242,6 +2245,7 @@ auto.ru##.ya-share2__icon
 auto.ru##.ya-share2__item_service_odnoklassniki
     ! top
 auto.ru##.Header2Placeholder
+auto.ru##[class^=CardStickyBar]
     ! sidebar
 auto.ru##.ScrollableSidebar:style(position:static !important)
     ! other
@@ -2558,6 +2562,10 @@ avtoshkola-ryazan.ru###JampPanel
 avtoshkola-ryazan.ru###footer-bg
 
 avtoshkoli.ru##.out:style(position:static !important)
+
+avtoslesar24.ru###page-body:style(background-image:none !important)
+avtoslesar24.ru###menubar
+avtoslesar24.ru###sidebar-a
 
     ! banners and promos
 ! top banner
@@ -6354,17 +6362,22 @@ drive.ru##.feedsub
 drive2.ru##.g-column-wide > .c-block:has-text(Реклама)
 drive2.ru##.c-infoblock:has-text(Зарегистрироваться)
     ! top
-drive2.ru##.c-index-title
+drive2.com,drive2.ru##.c-index-title
+drive2.com,drive2.ru##.l-header:style(position:static !important)
+    ! "я езжу на"
+drive2.com,drive2.ru##.c-user-card__cars
+drive2.com,drive2.ru##.c-user-mcard__meta
+drive2.com,drive2.ru##.c-user-lcard__cars
     ! other
-drive2.ru##.c-user-card__cars
 drive2.ru##.l-nav:style(position:static !important)
 drive2.ru##.c-block--mh
 ! rule from uBlock-AK-filter-rules
 drive2.ru##iframe:xpath((//ancestor::*[@id])[last() - 1])
 drive2.com,drive2.ru##.infoblock
 drive2.com,drive2.ru##.c-nightdrive
-drive2.com,drive2.ru##.l-header:style(position:static !important)
 drive2.com,drive2.ru##.c-pc-grid
+! too big avatar
+drive2.ru##.c-user-lcard__pic
 
 ||drivemusic.me/*/person-playing.jpg
 drivemusic.fm,ru-drivemusic.net##.music-like
@@ -13251,6 +13264,12 @@ lenta.ru##.b-age-limit
 
 leopard-fil.ru##.header-main
 
+||lepide.com/*/theme-bg-image-banner.png
+lepide.com##.bgheader:style(padding-bottom:0px !important)
+lepide.com###scrollsticky.stickyfixed
+lepide.com##.stickyfoxbox:style(position:static !important)
+lepide.com##.content-sec-form
+
     ! Qrator constant errors. WTF.
 ! "Cookie “qrator_jsr” does not have a proper “SameSite” attribute value"
 ||leroymerlin.ru/qrerror/
@@ -13997,6 +14016,13 @@ lovchy.ru##.btnAkcii
 lovchy.ru##.banner_mercury
 lovchy.ru##.price-reduced
 lovchy.ru##noindex
+
+||lovecity3d.com/img/promo.$popup  # from Ru AdList
+||lovecity3d.com/images/flash.jpg
+||lovecity3d.com/net/usermedia/$image
+lovecity3d.com##.banner2
+||lovecity3d.com/*/od.png
+lovecity3d.com##.body_t_bg
 
 lovely-dog.ru###masthead
 
@@ -15505,6 +15531,8 @@ motorola.com##.sub-nav:style(position:static !important)
 
 motorsguide.ru##.mh-header > .clearfix.mh-row.mh-container-inner.mh-container
 
+motphim123.com##.banner-preload
+
 ||mountain.ru/img/home_img.jpg
 
     ! top
@@ -15746,6 +15774,9 @@ music-hit.com##.artist_block-bio:has-text(слушать онлайн песни
 mustbegeek.com###header
 mustbegeek.com##.sticky-nav:style(position:static !important)
 mustbegeek.com###ts-fab-bio-below
+
+||muz-tv.ru/superanons/$image
+muz-tv.ru##.super-announce
 
 mvexpo.ru##.head
 
@@ -21927,6 +21958,8 @@ shopify.com##.one-signup__container
 shopify.com##.remix-header:style(position:static !important)
     ! other
 
+shop-modern.ru##.open.table-of-contents
+
 shopolog.ru##.b-catalog:has-text(Подписаться)
 shopolog.ru##.modal
 
@@ -25193,6 +25226,11 @@ tsn24.ru##.hide-mark
 tsn24.ru##.text-share
 tsn24.ru##.text-note
 tsn24.ru##.text-share_social
+
+ttpsc.com##html:style(opacity:initial !important)
+
+tts.ru###topScroller
+tts.ru##.btn-fixed_wrapper
 
 tubemania.org$frame,1p  # from uBlock filters
 
@@ -28796,6 +28834,8 @@ zr.ru##.readmore
 zr.ru##.fly_forms
 zr.ru##.logo-row
 zr.ru###for_footer
+forum.zr.ru##.avatar
+forum.zr.ru##.group_icon
 
 zrelki.click##+js(addEventListener-defuser, /contextmenu/)
 zrelki.click##.notice
@@ -29386,29 +29426,9 @@ metal-san.ru###brends-sidebar
 
 ||gettyimages.*/pulse$ping  # is in EasyPrivacy
 
-||lovecity3d.com/img/promo.$popup  # from Ru AdList
-||lovecity3d.com/images/flash.jpg
-||lovecity3d.com/net/usermedia/$image
-lovecity3d.com##.banner2
-||lovecity3d.com/*/od.png
-lovecity3d.com##.body_t_bg
-
-||muz-tv.ru/superanons/$image
-muz-tv.ru##.super-announce
-
-motphim123.com##.banner-preload
-
 ||vaikuttajamedia.fi^*/markuk_evastevaroitus.js  # from EasyList
 
-||lepide.com/*/theme-bg-image-banner.png
-lepide.com##.bgheader:style(padding-bottom:0px !important)
-lepide.com###scrollsticky.stickyfixed
-lepide.com##.stickyfoxbox:style(position:static !important)
-lepide.com##.content-sec-form
-
 courssatnet.blogspot.com$inline-script  # ad redirects
-
-ttpsc.com##html:style(opacity:initial !important)
 
 ! from Adguard
 orsk.ru##.banner-top
@@ -29459,3 +29479,4 @@ lambdatest.com##p > [href*="lambdatest.com/register"]
 ! lazyload: span with background, data-ezbg
 ! techviewleo.com##+js(set-attr, span.ezlazyload, style, background-image:url([data-ezbg]))  - doesn't work, of course
 
+autoteka.ru##button:has-text(Кредит)
