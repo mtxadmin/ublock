@@ -157,7 +157,10 @@
 /toastr.min.js
 /trackpush.min.js$important  # is in EasyPrivacy
 /trackpush/$important
-/webchat/*$domain=~gosuslugi.ru
+/webchat/*$domain=~alfabank.ru|~gosuslugi.ru|~psbank.ru|~sberbank.ru|~vtb.ru
+    ! Exclusions:
+    ! banks - useful support chat
+    ! gosuslugi - useful support chat
 /webnotification.  # from Ru AdList
 /webpush$important,all
     !/webpush.  # push ad scripts  # is in Ru AdList and in AdGuard
@@ -1083,6 +1086,7 @@ drift.com$important
 !+  api.drift.com
 !+      chat.api.drift.com
 !+      live.api.drift.com
+!+      push.api.drift.com
 !+      visitor-presence.api.drift.com
 driftt.com$important  #js.driftt.com
 !+  api.driftt.com
