@@ -2234,11 +2234,15 @@ auto.ru##.Header__badgePlus
 auto.ru##.IndexSelector__banner
 ! inline unrelated: journal tiles among goods (cars)
 auto.ru##[class^=PersonalizedFeedJournalItem]
+! inline unrelated: journal tiles among goods (cars)
+auto.ru##[class^=PersonalizedFeedUgcLogbookItem]
 auto.ru##[class^=CreditCardRoot]
 auto.ru##.SafeDealBlockDesktop
 auto.ru##[class^=MatchApplicationBanner]
 auto.ru##.ListingCars__banner
 auto.ru##.ListingHead__banner
+    ! labels
+
     ! seo
 auto.ru##.Footer__seo-text
     ! apps
@@ -9343,9 +9347,12 @@ gorzdrav.org##.c-footer__qr
 ! lazyload data-src (without errors)
     gorzdrav.org##+js(set-attr, img.lazyload, src, [data-src])
 
+! I strongly dislike telemetry, but this seems legitimate. O-o-ok.
+!||gosuslugi.ru/api/opentracing
 gosuslugi.ru##.footer:style(position:static !important)
 gosuslugi.ru##.p-footer:style(position:static !important)
 !test
+! there are some non-commercial banners there, but they are surpizely not intrusive at all. So let's keep this exclusion
 @@||gosuslugi.ru/assets/landing/
 gosuslugi.ru#@#.offer
 !test
@@ -12376,6 +12383,7 @@ kinozal.tv##.cmet_ava
 kinsta.com##[class^=yogurt-]
 ! banners
 kinsta.com##aside
+kinsta.com##.site-menu__logo
 
 kinstacdn.com$domain=~mexiconewsdaily.com  # banner cdn; unbounce. It is from kinsta.com, strange Wordpress hosting. I viewed only banners and tracking scripts from there  # upd: mexiconewsdaily.com uses kinstacdn.com for storing content. Ok.
 
@@ -19305,6 +19313,15 @@ psafe.ru##.contact
 psafe.ru##.tp-revslider-mainul
 psafe.ru##h4 > span
 
+! False positive in Ru AdList and Adguard: not only cookie(?) popups, but useful interface buttons too
+ib.psbank.ru#@#.cdk-overlay-container
+! instead:
+psbank.ru##.block:has-text(cookie):has(.button)
+! and blurring backdrop too. Not in all scenarios, though
+psbank.ru##.cdk-overlay-backdrop
+    ! banners and promos
+psbank.ru##.slider-wrapper
+
 psychologies.ru##.header__wrapper:style(position:static !important)
 psychologies.ru##.app-header__wrapper:style(position:static !important)
 psychologies.ru##.app-header__sticky-placeholder
@@ -24659,6 +24676,14 @@ timeweb.com##.ia-splitter:style(padding-top:0px !important)
 secrets.tinkoff.ru$inline-script
 secrets.tinkoff.ru$script
 tinkoffjournal.ru$script,domain=secrets.tinkoff.ru
+    ! trackers
+||tinkoff.ru/api/front/eventea-beer/event$important
+||tinkoff.ru/api/front/pfposago/log/$important
+||tinkoff.ru/gateway/v1/events$important  # ||api-statist.tinkoff.ru/gateway/v1/events$important
+! see cybertonica.tinkoff.ru at subdomains
+||cybertonica.tinkoff.ru/v2/fingerprint$important
+||cybertonica.tinkoff.ru/v2/tracking_b$important
+||tinkoff.ru/ws/monitoring/log$important
     ! popups
 tinkoff.ru###tooltip-description
 tinkoff.ru##.SubscriptionPopup_container
@@ -29487,3 +29512,5 @@ lambdatest.com##p > [href*="lambdatest.com/register"]
 ! techviewleo.com##+js(set-attr, span.ezlazyload, style, background-image:url([data-ezbg]))  - doesn't work, of course
 
 autoteka.ru##button:has-text(Кредит)
+
+||snippet.maze.co/contextualScaffold.js  # 3p script. Hmm..
