@@ -141,7 +141,7 @@ capterra.co.uk$3p
 
 ||cdn13.com^$script,3p,domain=~leafy.pro  # from EasyList  # ad scripts  # don't block videos from there
 
-cdn-tinkoff.ru$domain=~tinkoff.ru  # 3p ad scripts
+! see cdn-tinkoff.ru at tinkoff.ru below
 
 citilink.ru$3p  # from Ru AdList
 
@@ -749,7 +749,10 @@ thesoul-publishing.com$third-party
 ticketmanager.com$3p  #activehosted.com
 ticketmanager.io$3p
 
-tinkoff.ru$3p  # ad scripts (maybe credits)
+! not completely third-party, but only inside their bunch of domains
+tinkoff.ru$domain=~tinkoff.ru|~tinkoffjournal.ru|tinkoffinsurance.ru  # ad scripts (maybe credits)
+cdn-tinkoff.ru$domain=~tinkoff.ru|~tinkoffjournal.ru|tinkoffinsurance.ru  # 3p ad scripts
+tinkoffinsurance.ru$domain=~tinkoff.ru|~tinkoffjournal.ru|tinkoffinsurance.ru
 
 topclimat.ru$3p
 
