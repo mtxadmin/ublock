@@ -130,7 +130,8 @@ ozon.ru##a[href^="https://ozon.ru/highlight/"]
 ozon.ru##a[href^="https://www.ozon.ru/highlight/"]
 !
 ! this one is a top banner. Also see erid in _removeparams
-ozon.ru##a[href*="/?erid="]
+ozon.ru##a[href*="?erid="]
+ozon.ru##a[href*="&erid="]
 !
 ozon.ru##li:has(> a[href^="/highlight/"])
 ozon.ru##a[href^="/highlight/"]
@@ -197,6 +198,7 @@ ozon.ru##div:has(>div:has-text(/^[−-][0-9]+%$/))
 ozon.ru##div:has(>div:has-text(/^Больше [0-9]+% выкуп/))
 ozon.ru##div:has(>div:has-text(/^[0-9]+% возвратов$/))
 !ozon.ru##div:has(>div:has-text(/^\s*Скидк(а|и)/i)):not(:matches-path(/\/my\//))
+ozon.ru##div:has(>div:has-text(/^\s*Доберите до скидки/i)):not(:matches-path(/\/my\//))
 ozon.ru##div:has(>div:has-text(/^\s*\d+\s*(балл(а|ов|) за отзыв|бонус(а|ов|))$/i))
 ozon.ru##div:has(>div:has-text(/^\s*^(ХИТЫ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор покупателей|Распродажа|Ликвидация|Оригинал|Цена что надо|Купон на скидку|Ozon Promo|PRE-SALE 11.11|ЧЁРНАЯ ПЯТНИЦА|Соц. сертификат|Рассрочка 0%)$/i))
     ! loans
