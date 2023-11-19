@@ -185,7 +185,7 @@ iotanalytics.eu-central-1.amazonaws.com  # from GoodbyeAds
 iotanalytics.eu-west-1.amazonaws.com  # from GoodbyeAds
 japan2.ms.windows-driver-42717.win.s3-website-ap-northeast-1.amazonaws.com  # from GoodbyeAds
 jy75p2avi1.execute-api.us-west-2.amazonaws.com  # from GoodbyeAds
-kinesis.us-east-1.amazonaws.com  # from GoodbyeAds
+kinesis.us-east-1.amazonaws.com  # app requests  # is in GoodbyeAds, OISD, EnergizedProtection, hBlock, AdAway
 kinesisanalytics.eu-central-1.amazonaws.com  # from GoodbyeAds
 kinesisanalytics.eu-west-1.amazonaws.com  # from GoodbyeAds
 kraken-measurements.s3.amazonaws.com  # from GoodbyeAds
@@ -423,6 +423,7 @@ pp.ua  # many subdomains in different lists  # DynDNS
     ! .pp.ua^$script,3p  # from Ru AdList
     ! blablabla.pp.ua  # from Adguard
     ! ili.pp.ua  # from Adguard
+    ! smi.pp.ua  # from EasyList
     ! and others
 
 1xbet-ru.blogspot.com  # 1xbet
@@ -483,8 +484,7 @@ projop.dnsalias.com  # from Adguard
 
 btctopsss.ddnsfree.com  # from Energized Blu  # dynu.com
 
-02fckgwxqweod02.ddnsking.com  # from Energized Blu
-02odinxqwefck02.ddnsking.com  # from Energized Blu
+ddnsking.com  # root redirects to noip.com  # many scam subdomains
 
 adshunter.fra1.digitaloceanspaces.com  # from Adguard
 
@@ -560,6 +560,31 @@ jqcdn03.herokuapp.com  # zombie
 jqcdn2.herokuapp.com  # zombie
 sxcdn1.herokuapp.com  # zombie
 sxcdn5.herokuapp.com  # zombie
+binaryage-leechgate.herokuapp.com
+blackberry-support.herokuapp.com
+bundle-geoip.herokuapp.com
+bypasscors.herokuapp.com
+chaaaaassse.herokuapp.com
+citiesbank.herokuapp.com
+client-de-logon.herokuapp.com
+collection-endpoint-prod.herokuapp.com
+collection-endpoint-staging.herokuapp.com
+covid-19zambia.herokuapp.com
+cryptoalliance.herokuapp.com
+dhannu.herokuapp.com
+equaban-a-s-cz.herokuapp.com
+facebooknotify.herokuapp.com
+fftf-host-counter.herokuapp.com
+fs-client-logger.herokuapp.com
+fuegomod.herokuapp.com
+gdpr-service.herokuapp.com
+gov-az.herokuapp.com
+govaz.herokuapp.com
+ilyonanalytics.herokuapp.com
+login-live-auth.herokuapp.com
+mcgtrack.herokuapp.com
+obscure-headland-14472.herokuapp.com
+omni-ad-blocket.herokuapp.com
 
 !hopto.org  # hopto.org - DynDns service  # AS14627 - NOIP-VITAL - Vitalwerks Internet Solutions, LLC, US
 basilicview.hopto.org
@@ -578,7 +603,7 @@ whiterose.myftp.org  # ad redirects
 
 x888x.myserver.org  # from Dan Pollock's hosts file
 
-0day.myvnc.com  # from Energized Blu
+myvnc.com  # DDNS service
 
 adriverm.narod2.ru  # from Adguard
 
@@ -592,7 +617,7 @@ cdn-qualiteamsoftwar.netdna-ssl.com  # shopify ad scripts
 078outlookoffic.netlify.app  # from Energized Blu
 08-372officeout9-0.netlify.app  # from Energized Blu
 
-!no-ip.biz  # many spam subdomains  # from Energized Blu
+no-ip.biz  # many spam subdomains  # from Energized Blu
 0abc12.no-ip.biz  # from Energized Blu
 0andrewlol2.no-ip.biz  # from Energized Blu
 0basimtalal.no-ip.biz  # from Energized Blu
@@ -600,14 +625,15 @@ cdn-qualiteamsoftwar.netdna-ssl.com  # shopify ad scripts
 02preda.no-ip.biz  # from Energized Blu
 0716355104736691.no-ip.biz  # from Energized Blu
 
+no-ip.com
 test.no-ip.com  # from Energized Blu
 
-!no-ip.info  # many spam subdomains  # from Energized Blu
+no-ip.info  # many spam subdomains  # from Energized Blu
 00j.no-ip.info  # from Energized Blu
 00-xx-00.no-ip.info  # from Energized Blu
 00xx.no-ip.info  # from Energized Blu
 
-!no-ip.org  # many spam subdomains  # from Energized Blu
+no-ip.org  # many spam subdomains  # from Energized Blu
 
 coins.now.sh  # zombie
 coinstash1.now.sh  # zombie
@@ -663,8 +689,6 @@ ru.com$important
 #video-24.ru.com$important  # Youtube-like empty interface (when all ads blocked)
 
 chagrinoupas.serveblog.net  # ad redirects  # some domains of serveblog.net (Free dynamic DNS, no-ip.com)
-
-hotchix.servepics.com  # from Dan Pollock's hosts file
 
 www9.servequake.com  # from Dan Pollock's hosts file
 
@@ -733,22 +757,13 @@ duckdns.org  # many spam subdomains  # duckdns.org (free dynamic DNS)
 !+  resume-0.duckdns.org
 ! end of duckdns.org
 
-# Dynamic IPs
-.noip.com  # has many subdomains from Coin Blocker List
-.redirectme.net
-.myvnc.com
-.sytes.net  # has many subdomains from Coin Blocker List
-.hopto.org
-.zapto.org
-.ddns.net
-
 !beget.tech  # has subdomains from Coin Blocker List
 
 !now.sh  # it seems, there are too many spam apps there.
 
 !stackpathdns.com  # don't  # Hmmm... Some startups use they subdomains, but...  # from Coin Blocker List
 
-!weebly.com  # from Coin Blocker List
+weebly.com  # from Coin Blocker List
 
 !wix.com  # from Coin Blocker List - ok, they closed all the spammers
 
@@ -873,25 +888,9 @@ ucoz.club
 
 !my.id
 
-myfreesites.net  # no root  # many ad subdomains
-
-sitebeat.site  # no root  # many ad subdomains
-
-regruhosting.ru  # no root  # many ad subdomains
-
-sitey.me  # no root  # many ad subdomains
-
 .yolasite.com
 
 .colo.transip.net
-
-csb.app  # 404 root  # many ad subdomains
-
-.hyperphp.com
-
-.selcdn.ru
-
-godaddysites.com  # 404 root  # many ad subdomains
 
 !ipfs: ipfs.io, https://docs.ipfs.io/concepts/what-is-ipfs/
 !ipfs.dweb.link
@@ -917,3 +916,61 @@ gdpr-settings.s3.amazonaws.com  # from Adguard
 revboostprocdnadsprod.azureedge.net  # from EasyList
 
 d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com  # from Ru AdList
+
+5v.pl  # scam subdomains  # hoster
+
+mypi.co  # DynDNS service
+
+ddns.com.br
+
+noip.com  # DDNS service  # has many subdomains from Coin Blocker List
+
+redirectme.net  # DDNS service
+
+sytes.net  # DDNS service  # has many subdomains from Coin Blocker List
+
+hopto.org  # DDNS service
+
+zapto.org  # DDNS service
+
+ddns.net  # DDNS service
+
+csb.app  # 404 root  # many ad subdomains
+
+hyperphp.com
+
+selcdn.ru
+
+godaddysites.com  # 404 root  # many scam subdomains
+
+myfreesites.net  # no root  # many scam subdomains
+
+sitebeat.site  # no root  # many scam subdomains
+
+regruhosting.ru  # no root  # many scam subdomains
+
+sitey.me  # no root  # many scam subdomains
+
+serveirc.com  # root redirects to noip.com  # many scam subdomains
+
+webredirect.org  # DDNS service  # scam subdomains
+
+servepics.com  # DDNS service  # scam subdomains  # noip.com
+
+signinatt.yolasite.com
+signinatt.com.yolasite.com
+
+paypal-login-info-payment.netlify.appnetlify.app
+signin-att.netlify.app
+
+paypal-webnative.surge.sh
+
+dnsabr.com
+paypal-verifyssl.dnsabr.com
+
+serveftp.com  # root redirects to noip.com  # many scam subdomains
+
+3utilities.com  # root redirects to noip.com  # many scam subdomains
+
+# don't block us.com completely - they have/had only a pair catched subdomains
+icloud.us.com  # scam: https://pikabu.ru/story/krazha_telefona_9839202
