@@ -2204,8 +2204,11 @@ author.today##.layout-fixed:style(margin-top:0px !important)
 author.today##section.content:style(margin-top:0px !important)
 author.today##.reader-header:style(position:static !important; border-bottom:none !important; border-left:none !important)
 
+||auto.ru/-/ajax/$~xhr  # is in EasyPrivacy now
 ||auto.ru/-/ajax/desktop/events_log/
 ||auto.ru/-/ajax/desktop/getSearchlineHistory/  # post xhrs
+!||auto.ru/-/ajax/mag/events_log/  # EasyPrivacy rule
+||auto.ru/-/ajax/mag/getOffersAutoru/  # NOT EasyPrivacy rule
 ||yastatic.net/s3/vertis-frontend/internal-frontend/marketing/
 ! There is a general rule in Ru AdList. Hmmm, ok.
     ! logos
@@ -2213,6 +2216,7 @@ auto.ru##.FooterLogo
 auto.ru##.Header2__col-logo
 auto.ru##.Header2__logo
 auto.ru##.LogoLink
+auto.ru##header a[href*="auto.ru"]
     ! popups
 auto.ru##.CreditProductIcon__logo
 auto.ru##.Popup_withTail
@@ -2221,6 +2225,7 @@ auto.ru##.ReturningSplash
 auto.ru##.FullScreenSplashCarBanner
 ! auth banners
 auto.ru##.Modal:not(:matches-path(auth.auto.ru))
+auto.ru##[class*=IndexBackButton_sticky]
     ! banners and promos
 auto.ru##.FilterBannerCreditSber
 auto.ru##.CardBenefits
@@ -2236,13 +2241,18 @@ auto.ru##.IndexSelector__banner
 auto.ru##[class^=PersonalizedFeedJournalItem]
 ! inline unrelated: journal tiles among goods (cars)
 auto.ru##[class^=PersonalizedFeedUgcLogbookItem]
+! inline unrelated: review tiles among goods (cars)
+auto.ru##[class^=PersonalizedFeedReviewItem]
 auto.ru##[class^=CreditCardRoot]
 auto.ru##.SafeDealBlockDesktop
 auto.ru##[class^=MatchApplicationBanner]
 auto.ru##.ListingCars__banner
 auto.ru##.ListingHead__banner
+auto.ru##.BubbleBlock:has-text(Реклама)
+auto.ru##.CreditPrice
+! only img, not ad banner, but a noisy pic
+auto.ru##img[class*=ChinaLandingBanner]
     ! labels
-
     ! seo
 auto.ru##.Footer__seo-text
     ! apps
@@ -2253,9 +2263,11 @@ auto.ru##.AppStoreBanner
 auto.ru##.ya-share2__container
 auto.ru##.ya-share2__icon
 auto.ru##.ya-share2__item_service_odnoklassniki
+auto.ru##.Share
     ! top
 auto.ru##.Header2Placeholder
 auto.ru##[class^=CardStickyBar]
+auto.ru##.up-button
     ! sidebar
 auto.ru##.ScrollableSidebar:style(position:static !important)
     ! other
@@ -2266,6 +2278,8 @@ auto.ru##.IndexMarks__super-marks
 auto.ru##.PageArticle__indexLink
 auto.ru##.ReviewStickyHeader
 auto.ru##[class^=PersonalizedFeed__item] [class^=ButtonFavorite]
+auto.ru##.PollBlock
+auto.ru##.Comments__lazyPhoneAuth
 
 ! banners. Also login form, but..
 auto.today##.navbar-header
@@ -8281,7 +8295,9 @@ forbes.com##.marketPlace
     ! other
 ||forbesimg.com/simple-site/nr-agent/index.js  # new relic and google tags
 forbes.com##.contrib-bio
+forbes.com##.short-bio
 forbes.com##.article__editors-note:has-text(partner links)
+forbes.com##.save-tooltip
 
 ||api.forbes.ru/api/pub/lists/partners
 !waterfall.forbes.ru - don't, it's news list
@@ -29520,3 +29536,15 @@ autoteka.ru##button:has-text(Кредит)
 ||bamgrid.com/dust$domain=~disneyplus.com  # from EasyPrivacy
 ||bamgrid.com/telemetry  # from Adguard and EasyPrivacy
 ! See #78 also
+
+community.plus.net##.ui-widget-overlay
+
+penzainform.ru###currency-logo
+penzainform.ru##noindex
+
+! национальныепроекты.рф
+xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##.askLocationPopup
+xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##.opportunity
+xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##app-telegram-banner
+
+novosti.dn.ua###language.modal
