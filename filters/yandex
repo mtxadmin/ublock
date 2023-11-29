@@ -136,6 +136,17 @@ ya.ru##[class^=NavBarLogo]
 go.yandex##.lc-header-lpc__fixed-wrapper:style(position:static !important)
 yandex.ru##.lc-header-lpc__fixed-wrapper:style(position:static !important)
 
+! top banners
+||avatars.mds.yandex.net/get-market-adv/
+market.yandex.ru##a[href*="/special/"]
+
+! price
+market.yandex.ru##[data-auto="price-description"]
+market.yandex.ru##[data-auto="snippet-price-current"]
+market.yandex.ru##[data-auto="snippet-price-old"]:style(font-size:20px !important)
+market.yandex.ru##[data-auto="snippet-price-old"]>span:has-text(без:)
+market.yandex.ru##div::before
+
 !fenek.market.yandex.ru - maybe don't, captcha
 !fenek.market.yandex.ru/*/event?hash
 !||market.yandex.ru/*/event?
