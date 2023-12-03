@@ -2253,6 +2253,11 @@ auto.ru##.CreditPrice
 ! only img, not ad banner, but a noisy pic
 auto.ru##img[class*=ChinaLandingBanner]
     ! labels
+auto.ru##[class^=PersonalizedFeedOfferItem__badge]
+auto.ru##[class^=PersonalizedFeedOfferItem__discountBadge]
+auto.ru##[class^=OfferPriceBadge]
+auto.ru##[class^=PersonalizedFeedOfferItem__badge]
+auto.ru##[class^=PersonalizedFeedOfferItem__fairPriceBadge]
     ! seo
 auto.ru##.Footer__seo-text
     ! apps
@@ -4340,6 +4345,22 @@ centrahubcrm.com##.circle-ripple
 centrash.ru##[href="pochta_bank.html"]
 
 centrparts.com##.header
+
+    ! popups
+centr-to.ru##.popup-discount
+centr-to.ru##.popup-overlay
+    ! banners and promos
+centr-to.ru##.inset-instruction
+    ! top
+centr-to.ru##.header__mobile
+centr-to.ru##.header-top-bar
+centr-to.ru##.widgets
+centr-to.ru##.hero__socials
+centr-to.ru##.articleSidebar__popular:style(position:static !important)
+centr-to.ru##.button:has-text(в 1 клик)
+centr-to.ru##.good-card__calc-credit
+! inline related
+centr-to.ru##.blogDetail-readmore
 
 certifychat.com##.avatar
 certifychat.com##.funbox.sectionMain
@@ -9159,6 +9180,7 @@ globus.ru##.fancybox-container
 globus.ru##.floating-block
 globus.ru##.popup-fabuza
 globus.ru###cboxContent:has(#cboxLoadedContent)
+globus.ru###colorbox.popup-mobile.popup-warning
     ! banners
 globus.ru##.carousel_banner
 globus.ru##.banner-top
@@ -9722,11 +9744,14 @@ habr.com##a[href^="https://t.me/ruvds_community/"]
 !selectel
 habr.com##a[href^="https://selectel.ru/"]
 habr.com##a[href^="https://slc.tl/"]
+!general: sponsored telegram links
+habr.com##a[href^="https://t.me/"]
+    ! habr.com##a[href^="https://t.me/g_jobbot"]
+    ! habr.com##a[href^="https://t.me/iaasblog/"]
+    ! and many more
 !other
 habr.com##a[href^="https://itsoft.ru/"]
 habr.com##a[href^="https://www.mvideo.ru/"]
-habr.com##a[href^="https://t.me/g_jobbot"]
-habr.com##a[href^="https://t.me/iaasblog/"]
 habr.com##a[href^="https://www.englishdom.com/"]
 habr.com##a[href^="https://clck.ru/"]
 habr.com##a[href^="https://vdsina.ru/"]
@@ -29548,3 +29573,8 @@ xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##.opportunity
 xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##app-telegram-banner
 
 novosti.dn.ua###language.modal
+
+odin-kvd.ru##.menu-bar__title
+
+auto49.ru##.jorange-slider-block
+auto49.ru##.jorange-logo
