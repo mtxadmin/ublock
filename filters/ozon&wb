@@ -84,6 +84,9 @@ ozon.ru##.vue-portal-target:has-text(/(^|\s)опрос/i)
 ozon.ru##[data-widget="cookieBubble"]
 ! fixed "?" button below. Is in Adguard.
 ozon.ru##div[data-widget="webFeedbackForm"]
+! "Добавьте в избранное" popup. 
+! Не влияет на, собственно, избранное, просто визуальная фигня, чтобы задолбать человека
+ozon.ru##[id^=state-webAddToFavorite]
     ! banners and promos
 ||ozone.ru/assets/*-banner$script
 ||ozon.ru/graphics/img/  # from Ru AdList
@@ -251,6 +254,8 @@ ozon.ru##[data-widget="webSharingButton"]
 ! Озон силён своей моментальной логистикой. Но вот это обычный алиэкспресс, ещё и с заморочками.
 ! да, заказывать можно, но нужно, чтобы этот момент был виднее
 ozon.ru##span:has-text(Условия доставки из-за рубежа):style(color:red !important)
+! многие продавцы пишут полную фигню, тупую, однообразную и рекламную, в качестве ответов на отзывы. Задолбало.
+ozon.ru##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в ответ/)))
 
     ! Wildberries
 ||wildberries.ru/stats/
