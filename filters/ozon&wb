@@ -184,7 +184,8 @@ ozon.ru##a[href="https://finance.ozon.ru/"]:has(img)
 finance.ozon.ru##.notification:has-text(подписку)
 finance.ozon.ru##.premium-benefit-card
 ! и вот на это навязывание смотреть надоело. Иконку с топа убираем, пункт меню оставляем
-ozon.ru##a[href="/travel/"]:has(img)
+!ozon.ru##a[href="/travel/"]:has(img)  # v1
+ozon.ru##a[href^="/travel/"]:has(img)
 ozon.ru##a[href^="https://www.ozon.ru/travel/promo/"]
 ozon.ru##[data-widget="seasonWidget"]
 ! top banner 2023-11
