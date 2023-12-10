@@ -1583,7 +1583,10 @@ $removeparam=spReportId  # "IBM Acoustic Campaign"  # from NeatURL
 $removeparam=spUserID  # "IBM Acoustic Campaign"  # from NeatURL
 
 ! Maybe some exclusions will be needed here
-$removeparam=src
+$removeparam=src,domain=~google.*
+    ! Exclusions:
+    ! google - at least, embedded calendars (calendar.google.com) need this param
+    !
     ! idealo.de$removeparam=src  # from DandelionSprout's ClearURLs for uBo
     ! $document,removeparam=src,domain=go.mail.ru|r.mail.ru  # from Ru AdList
     ! mozilla.org$removeparam=src  # from NeatURL and DandelionSprout's ClearURLs for uBo
@@ -2598,7 +2601,7 @@ google.*/search$removeparam=sa  # from Adguard
     ! ||www.google.*/search?$removeparam=sa  # from Ru AdList
 ||www.google.*/search?$removeparam=sclient  # from Ru AdList
 google.*$removeparam=sei
-google.*/search$removeparam=sourceid  # from Adguard
+google.*/search$removeparam=sourceid  # is in Adguard
     ! ||www.google.*/search?$removeparam=sourceid  # from Ru AdList
 ||www.google.*/search?$removeparam=uact  # from Ru AdList
 ||google.*/url$removeparam=usg
@@ -2755,6 +2758,7 @@ kamigame.jp$removeparam=kamigame_source  # from Adguard
 
 ||kaspersky.$removeparam=icid  # from Adguard
     ! kaspersky.com$removeparam=icid  # from Adguard
+||kaspersky.*$removeparam=reseller
 
 khan.co.kr$removeparam=nv  # from Adguard
 
