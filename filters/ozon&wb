@@ -87,6 +87,7 @@ ozon.ru##div[data-widget="webFeedbackForm"]
 ! "Добавьте в избранное" popup. 
 ! Не влияет на, собственно, избранное, просто визуальная фигня, чтобы задолбать человека
 ozon.ru##[id^=state-webAddToFavorite]
+finance.ozon.ru###modal-container:has-text(Закажите)
     ! banners and promos
 ||ozone.ru/assets/*-banner$script
 ||ozon.ru/graphics/img/  # from Ru AdList
@@ -152,6 +153,9 @@ ozon.ru##[data-widget="webOzonAccountPrice"]
 ozon.ru##span:has-text("успейте купить")
 ozon.ru##div > a[href^="/product/podpiska"]
 !ozon.ru##div:matches-css(height:155px):has-text(Реклама) - todo: rigid sizes are not good practice
+! top banner
+ozon.ru##a[href^="https://www.ozon.ru/product/elektronnyy-lotereynyy-bilet"]
+    ozon.ru##div:matches-css(height:156px):has(a[href^="https://www.ozon.ru/product/elektronnyy-lotereynyy-bilet"])
 ozon.ru##[data-widget="container"]:has-text(Реклама):not(:matches-path(/\/category\//))
 ozon.ru##[data-widget=objectLine]:has-text(Ловите часы продажи)
 ozon.ru##[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
@@ -168,6 +172,7 @@ ozon.ru##[data-widget="container"]:has([data-widget="hotsaleMain"])
 ozon.ru##[data-widget="rateBoughtItems"]:not(:matches-path(/my/orderdetails)):not(:matches-path(/my/orderlist))
 ! inline related - полезно, но не надо сходу в нос совать. Ниже после отзывов там еще один такой же блок есть, тот оставлен
 ozon.ru##div:has-text(Вам помог этот отзыв) ~ [data-widget="skuGrid"]
+ozon.ru##[data-widget="webListReviews"] ~ [data-widget="skuGrid"]
 ! избранное захламляется посторонними вкраплениями. Оставляем только своё избранное.
 ozon.ru##[data-widget="caption"]:has-text(Подобрано для вас) ~ [data-widget="paginator"]:matches-path(/my/favorites)
 ozon.ru##[data-widget="actionCards"]
@@ -186,6 +191,7 @@ finance.ozon.ru##.premium-benefit-card
 ! и вот на это навязывание смотреть надоело. Иконку с топа убираем, пункт меню оставляем
 !ozon.ru##a[href="/travel/"]:has(img)  # v1
 ozon.ru##a[href^="/travel/"]:has(img)
+ozon.ru##a[href^="/brand/"]:has(img)
 ozon.ru##a[href^="https://www.ozon.ru/travel/promo/"]
 ozon.ru##[data-widget="seasonWidget"]
 ! top banner 2023-11
@@ -195,7 +201,7 @@ ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
 !ozon.ru##div:has(>span:has-text(/^\s*Скидк(а|и)/i)):not(:matches-path(/\/my\//))
 !ozon.ru##div:has(>span:has-text(/^\s*\d+\s*(балл(а|ов|) за отзыв|бонус(а|ов|))/i))
-!ozon.ru##div:has(>span:has-text(/^\s*^(ХИТЫ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор покупателей|Распродажа|Ликвидация|Оригинал|Цена что надо|Купон на скидку|Ozon Promo|Соц. сертификат|Рассрочка 0%)$/i))
+!ozon.ru##div:has(>span:has-text(/^\s*^(ХИТЫ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор покупателей|Распродажа|Ликвидация|Оригинал|Цена что надо|Купон на скидку|Ozon Promo|Подарок от мтс|Соц. сертификат|Рассрочка 0%)$/i))
 !ozon.ru##span:has-text(%) - sometimes hides comments (##span)
 ! new version
 ozon.ru##div:has(>div:has-text(/^[−-][0-9]+%$/))
@@ -257,6 +263,8 @@ ozon.ru##[data-widget="webSharingButton"]
 ozon.ru##span:has-text(Условия доставки из-за рубежа):style(color:red !important)
 ! многие продавцы пишут полную фигню, тупую, однообразную и рекламную, в качестве ответов на отзывы. Задолбало.
 ozon.ru##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в ответ/)))
+! new design
+ozon.ru##div:has(>div>span:has-text(1 комментарий))
 
     ! Wildberries
 ||wildberries.ru/stats/
