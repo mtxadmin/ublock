@@ -1261,6 +1261,10 @@ allbasketball.org##.block-betting
 
 allboox.ru##.pagination:style(margin-bottom:0px !important)
 
+allcarz.ru##.site-navigation__logo
+allcarz.ru##.site-header__adwrapper
+allcarz.ru###toc_container
+
 all-companies.ru###last_companies_view
 
 allergy-center.ru$inline-script  # site blocks copypaste (trying to)
@@ -2295,6 +2299,9 @@ auto.today##.social-blk
 auto2.info###toplnks
 auto2.info###events_answer
 
+auto49.ru##.jorange-slider-block
+auto49.ru##.jorange-logo
+
 autobild.es##[class^=embed-gallery_wrapperIcon]
 
 auto-bk.ru##.fa-bullhorn
@@ -2614,6 +2621,9 @@ avtovzglyad.ru##.ring
 avtovzglyad.ru##.header-specproject
 
 avtozakony.ru##.article-nav
+
+avtozam.com##.consultant
+avtozam.com##.widget_consult_widget
 
     ! site breaks copypaste
 awaqa.com##^script:has-text(onselect)
@@ -5941,6 +5951,8 @@ dmosk.ru##.article-yet:style(position:static !important)
 
 dmsky.ru##.toolbar
 
+novosti.dn.ua###language.modal
+
 dni.ru##.head:style(position:static !important)
 dni.ru###for_fix:style(position:static !important)
 dni.ru##.floating
@@ -6135,6 +6147,12 @@ dobrodel.ru,dobrodel.mosreg.ru##.pointer
 @@||suggestions.dadata.ru/suggestions/api$domain=dobrodel.mosreg.ru|dobrodel.ru  # Exception from Adguard
 ||dobrodel.mosreg.ru/static/img/general/dobroFace.png
 ||dobrodel.ru/static/img/general/dobroFace.png
+
+dobrolov.com##.header_top
+dobrolov.com##.topbtn
+dobrolov.com##.block_head:style(position:static !important)
+dobrolov.com##.block_head_gumburger_main.block_head_gumburger
+dobrolov.com##.article-banner_news
 
 ||dobrota.ru/*/buner/$image
 ||dobrota.ru/images/news/img1.png
@@ -7065,6 +7083,7 @@ eldorado.ru##.q-fixed-item:style(position:static !important)
 eldorado.ru##.fixedScroll:style(position:static !important)
 eldorado.ru##.header-main-logo
 eldorado.ru##*:matches-css(position:fixed)
+blog.eldorado.ru##.prm-header
     ! popups
 eldorado.ru##header div:matches-css(position:absolute):has-text(Ваш регион)
     ! banners and promos
@@ -7085,6 +7104,7 @@ eldorado.ru##.product-one-click-buy
 eldorado.ru##.footer-info__pay
 ! seo
 eldorado.ru##.product-bottom-text
+blog.eldorado.ru##.repost
 
 electrik.info##table:nth-of-type(2) > tbody > tr > td > table:nth-of-type(1):has-text(онлайн журнал про электричество)
 
@@ -9146,12 +9166,19 @@ glassdoor.com###HeroHeaderModule
 
 glavbukh.ru##.email-delivery
 
-!glavkniga.ru##.right_mail
+    ! popups
 glavkniga.ru###location_confirmation_window
-!glavkniga.ru##.right_poll
+glavkniga.ru##[class^=access_denied]
+    ! top
 glavkniga.ru###header_links
+glavkniga.ru###header_links_div
+    ! other
+!glavkniga.ru##.right_mail
+!glavkniga.ru##.right_poll
 glavkniga.ru##.kp_demo_container
 glavkniga.ru##.sim-slider
+glavkniga.ru##.article_introductory_end
+glavkniga.ru##.article_introductory_end_text
 
 ! inner push ads
 glavportal.com$script
@@ -10878,13 +10905,16 @@ iceporn.net##.furtherance
 iceporn.net##.estimation
 iceporn.net##.video-options
 
+||ichip.ru/img/chip_logo.svg
+    ! top
+ichip.ru##.js-header-scroll:style(position:static !important)
+ichip.ru##.header-stick:style(position:static !important; padding-top:0px !important)
+ichip.ru##.article-headline__rating
+    ! other
 ichip.ru##.td-affix
 ichip.ru##.td-footer-bottom-full
 ichip.ru##.sidebar-panel.subscriber
 ichip.ru##.contacts-links
-ichip.ru##.js-header-scroll:style(position:static !important)
-ichip.ru##.header-stick:style(position:static !important; padding-top:0px !important)
-ichip.ru/img/chip_logo.svg
 ichip.ru##.article-list-announce
 
 ichudoru.com###masthead
@@ -11710,6 +11740,11 @@ ixbt.com##.block-type-blog
     ! banners and promos
 ixbt.com##.btn-default
 ixbt.com##.video-slider-block
+    ! top
+ixbt.com##.line__logo
+ixbt.com##.tm-logo
+ixbt.com##.tm-wrapper:style(position:static !important)
+ixbt.com###page-wrapper:style(padding-top:0px !important)
     ! other
 ixbt.com##.mini.right.column
 ixbt.com##center > form > table > tbody
@@ -11718,17 +11753,17 @@ ixbt.com##.b-ixbt_tv
 ixbt.com##.icon-mature
 ixbt.com##.buttonlink
 ixbt.com##div.panel-default.panel:has-text(Об авторе)
-ixbt.com##.line__logo
 ||ixbt.com/js/fancy/img/zoom.png
-||forum.ixbt.com/lol.gif
-||forum.ixbt.com/insane.gif
-||forum.ixbt.com/weep.gif
-||forum.ixbt.com/confused.gif
+||forum.ixbt.com/*.gif
+    ! ||forum.ixbt.com/lol.gif
+    ! ||forum.ixbt.com/insane.gif
+    ! ||forum.ixbt.com/weep.gif
+    ! ||forum.ixbt.com/confused.gif
+    ! ||forum.ixbt.com/pofig.gif
+    ! ||forum.ixbt.com/puke.gif
+    ! ||forum.ixbt.com/up.gif
 ! hover dots on photos
 ixbt.com##._gallery::after:style(background:none !important)
-||forum.ixbt.com/pofig.gif
-||forum.ixbt.com/puke.gif
-||forum.ixbt.com/up.gif
 
 ixsystems.com###header
 
@@ -13544,17 +13579,19 @@ lifehacker.ru##div.white-box
 lifehacker.ru##.footer__warning
 lifehacker.ru##.footer-right-16-years
 lifehacker.ru##[href^="https://clck.ru/"]
-! header
+    ! top
 lifehacker.ru###single-post-header:style(height:200px)
 lifehacker.ru##.secondary-menu
-! typos
+    ! typos
 lifehacker.ru##.footer-right-typo-small
 lifehacker.ru##.footer-right-typo-big
+    ! other
 ! inline "related" (not) posts
 lifehacker.ru##.read-also
 ! "about author" duplicate box
 lifehacker.ru##.lh-user-info
 lifehacker.ru##.widgets-renderer-item_comments
+lifehacker.ru##.left-sidebar__sticky-container:style(position:static !important)
 
 ||lifelink.ru/img/lifelink_banner$image
 
@@ -14714,6 +14751,9 @@ itnext.io##div:has(>div>div>div[role=alert]:has-text(cookie policy))
 medlib.net##.interesno
 medlib.net##.copy2
 
+medmebel.ru##.bx_catalog-compare-list-small
+medmebel.ru##.fav_products_small
+
 ||medportal.ru/assets/footer/age_restriction
 
 medscape.com##.hp_editors
@@ -15396,6 +15436,12 @@ moiprava.pro##.code-block
 moiprava.pro##.title-comments_site
     ! other
 
+||mokka.ru/landings/  # mokka.ru/landings/seo-promo/
+mokka.ru##.rivax-logo
+mokka.ru##a[href="#loan-request"]
+mokka.ru##.sidebar-container-inner:style(position:static !important)
+mokka.ru##.post-reading-progress-indicator
+
 molot.biz##.nav-extra-fixed:style(position:static !important; padding-top:0px !important)
 molot.biz##.nav-extra-b:style(position:static !important)
 molot.biz##.nav-extra-social-i
@@ -15605,6 +15651,9 @@ moydrygpk.ru##.code-block
 moylor.ru###block-right-fxd
 
 moyo.ua##.header__content:style(position:static !important)
+moyo.ua##.widget-opener
+moyo.ua##.js-show-call-back-modal.call-back-title
+moyo.ua##.header_phone--wrapper
 
 ||moyzamok.ru/pages/bnr$image
 moyzamok.ru###brnds
@@ -15839,6 +15888,7 @@ mvideo.ru##.location-icon_animated
     ! popups
 mvideo.ru##.promo-configurator-side-panel
 mvideo.ru##.promo-configurator-side-panel__overlay
+mvideo.ru##.article__buttons
     ! banners and promos
 mvideo.ru##.insider-banner
 ||mvideo.ru/media/SmallBanners/
@@ -17044,12 +17094,15 @@ ochki.net##.age-limit-info
 ||ochkov.net/wiki/themes/bezochkov/assets/media/$image
 ochkov.net##.l-content__product
 ochkov.net##.nfe_header__our-lenses
+ochkov.net##.l-header__button
 
 ocomp.info##.usk_w
 ocomp.info###toc_container
 
 culturemeter.od.ua##.sidebar
 culturemeter.od.ua##.pad:style(padding-top:0px !important; padding-bottom:0px !important )
+
+odin-kvd.ru##.menu-bar__title
 
 odintsovo.info##.news-yzen
 odintsovo.info##.news-ynews
@@ -18018,6 +18071,9 @@ pemato.de###colophon
 ||pendrivelinux.com/wp-content/themes/Pendrivelinux/images/pendrive.png
 
 pentan.info###topnews
+
+penzainform.ru###currency-logo
+penzainform.ru##noindex
 
 pepper.ru##.bg--color-greyPanel
 pepper.ru##.carousel
@@ -21473,6 +21529,9 @@ satu.kz##[data-qaid="Смотрите также"]
 
 satvision-cctv.ru##.requestPriceBtn
 
+save4k.com##.b-widget-right
+save4k.com##.shadowa:has(.title_block > [href^="/trend.php"])
+
 saveimg.ru###header
 
 saveporn.net,phubdownload.net,yesdownloader.com##.itfloater
@@ -24719,6 +24778,8 @@ tinkoff.ru##.SubscriptionPopup_container
     ! top
 tinkoff.ru##[class^=ArticleBody_contents]:style(position:static !important)
 tinkoff.ru##.Page_headerContainer:style(position:static !important)
+||tinkoffjournal.ru/mercury/placeholder$image
+journal.tinkoff.ru##[class^=cover--]
     ! banners and promos
 tinkoff.ru###bannerlink-level
 tinkoff.ru##section[id="drive-footer-banner"]
@@ -24726,6 +24787,7 @@ tinkoff.ru##section[id="rec-team"]
 tinkoff.ru##.recommender-showcase
 tinkoff.ru##.HeaderCTA_cta
 tinkoff.ru##.Informer_informer
+journal.tinkoff.ru##[class^=studentBadge]
     ! backgrounds
 tinkoff.ru##.article-header__wallpaper:style(background-image:none !important)
 tinkoff.ru##.article-header:style(color:#000 !important)
@@ -27881,16 +27943,19 @@ xdrv.ru##.left_block
 xelent.ru##.tech-widget
 
 ||xhamster.com/service-worker-fake.js
+||xhamster.com/x-api?
 @@||xhcdn.com/*/images/transparent.gif  # exclusion for a placeholder
+    ! popups
+xhamster.com##[class^=tip-]
+xhamster.com##.search-page-suggestions-wrapper-sticky
 xhamster.com##.parental-control-dialog
-xhamster.com##.dlg-backing
 xhamster.com##.dialog-desktop-container
+xhamster.com##.alert-box
+    ! other
+xhamster.com##.dlg-backing
 xhamster.com##.overlay-footer
 xhamster.com##.top-video-block--recommendations
 xhamster.com##.thumb-list__item:has(.thumb-image-container__status-text:has-text(/^(\s*)(Only for owner|Friends only)(\s*)/))
-! popups
-xhamster.com##[class^=tip-]
-xhamster.com##.search-page-suggestions-wrapper-sticky
 
 xhamster3.com##.dialog-desktop-container
 ! no blurring
@@ -28040,6 +28105,11 @@ xn----7sbfmr1adiv9a.xn--p1ai##.custom-header.header-middle
 
 ! мастер-стол.рф
 xn----7sbpzbpmgdge.xn--p1ai##.g_button
+
+! национальныепроекты.рф
+xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##.askLocationPopup
+xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##.opportunity
+xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##app-telegram-banner
 
 xn--80ab1a9azaq.xn--p1ai##[href="https://xn--80ab1a9azaq.xn--p1ai/"]
 
@@ -29547,17 +29617,3 @@ autoteka.ru##button:has-text(Кредит)
 
 community.plus.net##.ui-widget-overlay
 
-penzainform.ru###currency-logo
-penzainform.ru##noindex
-
-! национальныепроекты.рф
-xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##.askLocationPopup
-xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##.opportunity
-xn--80aapampemcchfmo7a3c9ehj.xn--p1ai##app-telegram-banner
-
-novosti.dn.ua###language.modal
-
-odin-kvd.ru##.menu-bar__title
-
-auto49.ru##.jorange-slider-block
-auto49.ru##.jorange-logo
