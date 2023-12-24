@@ -3473,7 +3473,8 @@ whatsapp.com$removeparam=helpref  # from DandelionSprout's URLShortener
 
 whoisxmlapi.com$removeparam=mc  # ref
 
-wildberries.ru$removeparam=targetUrl
+wildberries.ru$removeparam=size  # 9-digit param. Not size. Maybe ref
+wildberries.ru$removeparam=targetUrl  # ref
 
 wiley.com$removeparam=/elq[^=]*=/i  # from Adguard
 
@@ -3555,7 +3556,7 @@ $removeparam=place,domain=dzen.*|yandex.*
 $removeparam=pokupki,domain=market.yandex.*  # from Ru AdList, modified
     ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 ya.ru$removeparam=redirect_ts  # from Ru AdList
-$removeparam=rs,domain=market.yandex.*  # some id
+$removeparam=rs,domain=market.yandex.*  # some long id  # again
 $removeparam=search_source,domain=ya.ru|yandex.*  # from Ru AdList: ||yandex.*/search/$document,removeparam=search_source
 $removeparam=secdata,domain=dzen.*|ya.ru|yandex.*
 $removeparam=sku,domain=market.yandex.*
@@ -3821,3 +3822,5 @@ autoteka.ru$removeparam=fromSource  # case-sensitive
 drive2.ru$removeparam=m
 
 dw.com$removeparam=maca  # ref
+
+ewaproduct.com$removeparam=purchase_ref_id
