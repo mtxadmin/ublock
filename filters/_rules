@@ -1676,6 +1676,7 @@ _rebid.js  # from EasyList
 ##[id^="WNAd"]:not(html):not(body):not(article)
 ! Browsec ad popups
 ##[class^=_Not][class*=_Big_In]:has-text(You’re using Browsec Free)
+##[class^=_Not][class*=_Big]:has-text(VPN)
 ! other
 ! Ru AdList rule
 ##[data-la-block]
@@ -3550,7 +3551,7 @@ _wtInit.js  # from Fanboy's
     ! onlinesim.io - #top is a main div (#__layout > #top)
     ! scat.kz - #top is a main div
     ! thestrad.com - #top is a main div
-~gnu.org,~nano-editor.org,~planetazdorovo.ru##.top:not(html):not(body):not(article):not(table):not(ul)
+~gnu.org,~nano-editor.org,~planetazdorovo.ru##.top:not(html):not(body):not(article):not(table):not(ul):not(.page-wrapper)
     ! Exclusions:
     ! gnu.org - .top is a main div ()
     ! planetazdorovo.ru - not totop button, useful map popups
