@@ -6638,6 +6638,7 @@ dualshockers.com##.article-alert
     ! header
 duckduckgo.com###header_wrapper:style(top:0px !important)
 duckduckgo.com##.header-wrap:style(position:static !important)
+duckduckgo.com##.header--aside__item
     ! other
 duckduckgo.com##.is-invisible:style(visibility:visible !important)
 ! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
@@ -12058,6 +12059,10 @@ kachestvolife.club##.navbar-header
 
 kachevo.org##.br-widget
 
+||kaiten.ru/assets/js/kw-sendsay-popup.js
+kaiten.ru##dialog
+kaiten.ru##.kw-sendsay-popup
+
 ||kak-bog.ru/*/kakbog.jpg
 kak-bog.ru##.h1header
 kak-bog.ru###shapka
@@ -15730,6 +15735,12 @@ mp3party.net##.rbt-list
 mp3party.net##.t-dsc
 ||mp3party.net/static/head-background
 ||mp3party.net/static/bottom-girls
+
+wiki.mpstats.io##nav:style(position:absolute !important; padding-top:0px !important; padding-bottom:0px !important; height:auto !important)
+mpstats.io##.v-btn--fixed
+mpstats.io##.snow
+mpstats.io##.statistics ~ div:matches-css(position:sticky)
+mpstats.io##.top-menu-container:style(position:static !important)
 
 mr-7.ru##.myblockbottom
 
@@ -28002,10 +28013,12 @@ xhamster.com##.search-page-suggestions-wrapper-sticky
 xhamster.com##.parental-control-dialog
 xhamster.com##.dialog-desktop-container
 xhamster.com##.alert-box
+    ! banners and promos
+xhamster.com##.top-video-block--recommendations
+xhamster.com##.live-nav
     ! other
 xhamster.com##.dlg-backing
 xhamster.com##.overlay-footer
-xhamster.com##.top-video-block--recommendations
 xhamster.com##.thumb-list__item:has(.thumb-image-container__status-text:has-text(/^(\s*)(Only for owner|Friends only)(\s*)/))
 
 xhamster3.com##.dialog-desktop-container
