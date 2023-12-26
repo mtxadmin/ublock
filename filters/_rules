@@ -1424,6 +1424,7 @@ _rebid.js  # from EasyList
 /videoadcode/*  # from Ru AdList
 .video.ads.  # from EasyList
 /video_banner.js
+/videojs.ads
 /videojs-contrib-ads.*$important
 /videojs-contrib-ads/*$important
 /view.js$domain=~livejournal.com  # from Ru AdList and Adguard, modified
@@ -3545,8 +3546,9 @@ _wtInit.js  # from Fanboy's
 ##.to-bottom
 ###toolbar_scrollup
 ##.toolbar-scrollup
-~hashdork.com,~onlinesim.io,~scat.kz,~thestrad.com###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper):not(.site):not(.page-wrapper)
+~fss.ru,~hashdork.com,~onlinesim.io,~scat.kz,~thestrad.com###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper):not(.site):not(.page-wrapper)
     ! Exclusions:
+    ! fss.ru - #top is a header (.wrapper > #top)
     ! hashdork.com - #top is a main div (body > #top.site-container)
     ! onlinesim.io - #top is a main div (#__layout > #top)
     ! scat.kz - #top is a main div
