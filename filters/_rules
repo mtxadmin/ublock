@@ -3546,17 +3546,19 @@ _wtInit.js  # from Fanboy's
 ##.to-bottom
 ###toolbar_scrollup
 ##.toolbar-scrollup
-~fss.ru,~hashdork.com,~onlinesim.io,~scat.kz,~thestrad.com###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper):not(.site):not(.page-wrapper)
+~fss.ru,~hashdork.com,~onlinesim.io,~scat.kz,~thestrad.com,~urban3p.ru###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper):not(.site):not(.page-wrapper)
     ! Exclusions:
     ! fss.ru - #top is a header (.wrapper > #top)
     ! hashdork.com - #top is a main div (body > #top.site-container)
     ! onlinesim.io - #top is a main div (#__layout > #top)
     ! scat.kz - #top is a main div
     ! thestrad.com - #top is a main div
-~gnu.org,~nano-editor.org,~planetazdorovo.ru##.top:not(html):not(body):not(article):not(table):not(ul)
+    ! urban3p.ru - top menu (body > #top .top > top-container)
+~gnu.org,~nano-editor.org,~planetazdorovo.ru,~urban3p.ru##.top:not(html):not(body):not(article):not(table):not(ul)
     ! Exclusions:
     ! gnu.org - .top is a main div ()
     ! planetazdorovo.ru - not totop button, useful map popups
+    ! urban3p.ru - top menu (body > #top .top > top-container)
 ##.top-btn
 ###top-but
 ##.top_button
@@ -4133,6 +4135,7 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /jquery.ihavecookies.  # from EasyList
 /nli-cookie-banner/*$important
 /popupcookies.  # from EasyList
+/privacy-consent-$script  # EasyList rule
 /privacy-consent/*$domain=~seek.com.au
     ! seek.com.au: root redirects to seek.com.au/privacy-consent/ and that's all
 /qc-consent.js  # from EasyList and Fanboy's
