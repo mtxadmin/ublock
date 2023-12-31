@@ -1357,8 +1357,9 @@ $removeparam=/referral[^=]*=/i,domain=~bing.com|~duckduckgo.com|~google.com|~ya.
 
 $removeparam=referringSource  # from DandelionSprout's URLShortener
 
-$removeparam=refid
+$removeparam=/^refid$/i
     ! $removeparam=/^refID=/i  # from DandelionSprout's URLShortener
+    ! binanceblockchainweek.com$removeparam=RefId
     ! linkedin.com$removeparam=refId  # from NeatURL, Adguard, DandelionSprout's URLShortener
     ! netgames.de$removeparam=refID  # from Adguard
 
@@ -3824,3 +3825,8 @@ drive2.ru$removeparam=m
 dw.com$removeparam=maca  # ref
 
 ewaproduct.com$removeparam=purchase_ref_id
+
+debank.com$removeparam=r  # ref
+
+proxy6.net$removeparam=r  # ref
+
