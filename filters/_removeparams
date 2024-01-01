@@ -491,7 +491,7 @@ $removeparam=clicktime  # from DandelionSprout's URLShortener
     $removeparam=clid
         ! adguard.com$removeparam=clid  # from Adguard
         ! ||www.yandex.$removeparam=clid  # from Adguard
-        ! yandex.,dzen.ru$removeparam=clid
+        ! yandex.,dzen.ru,ya.ru$removeparam=clid
             ! ||market.yandex.$removeparam=clid  # from Adguard
             ! ://yandex.$removeparam=clid  # from Adguard
         ! &clid=$document,removeparam=|clid,domain=yandex.*  # from Ru AdList
@@ -632,11 +632,11 @@ $removeparam=fref  # from Ru AdList
 
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
-$removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~nextdns.io|~sberbank.ru|~tradingview.com
+$removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~e.mail.ru|~nextdns.io|~sberbank.ru|~tradingview.com
     ! Exceptions:
     ! auth.mail.ru exception is from Ru AdList. Don't know, but ok. Update: removing it prevent useful popups, so it's really ok.
     ! account.mail.ru - v2 of it (auth.mail.ru)
-    ! nextdns.io - #53: dashboard (https://api.nextdns.io/profiles/)
+    ! nextdns.io - #53: dashboard (https://api.nextdns.io/profiles/)  # now is in DandelionSprout's URLShortener
     ! tradingview.com - graphs: !wss://data.tradingview.com/socket.io/websocket?from=symbols%2FBTCUSD%2F&date=
     ! yandex, sberbank.ru - don't remember exactly, but they are definitely needed
     !
@@ -1325,6 +1325,7 @@ $removeparam=/referrer[^=]*=/i$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5
     ! open.spotify.com$removeparam=_branch_referrer  # from Adguard
     ! tumblr.com$removeparam=_branch_referrer  # from Adguard
     ! ?referrer_block=$document,removeparam=|referrer_,domain=mail.ru|sportmail.ru  # from Ru AdList
+    ! ?referrer_block=$document,removeparam=|referrer_,domain=mail.ru|sportmail.ru  # from Ru AdList
     ! /*purchase-referrer=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
     ! apple.com$removeparam=referrer  # from uBlock filters
     ! google.com$removeparam=referrer  # from uBlock filters
@@ -1334,6 +1335,7 @@ $removeparam=/referrer[^=]*=/i$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5
     ! stripchat.com$removeparam=referrer  # from Adguard
     ! tiktok.com$removeparam=referer_url  # from Adguard
     ! twitch.tv$removeparam=/web_only|_branch_referrer/  # from Adguard
+    ! vk.com$removeparam=referrer  # from Ru AdList
 
 $removeparam=referid  # from Adguard
 
@@ -3830,3 +3832,4 @@ debank.com$removeparam=r  # ref
 
 proxy6.net$removeparam=r  # ref
 
+trymeter.org/ajax/$removeparam=|  # from Ru AdList
