@@ -27,7 +27,10 @@
 !   in general, do not block ###header, ###masthead, ##.site-branding or similar - they often contain search and menus
 !   of course, there may be some exclusions here (but it is unlikely)
 !   below there are some of old logo rules, just for information
--logo-$image
+-logo-$image,domain=~opera.com
+    ! Exclusions:
+    ! opera - bad interface on opera.com, no alternative texts
+    !
     ! -logo-line.$image
 -logo.$image,domain=~factorio.fandom.com|~opera.com
     ! Exclusions:
@@ -770,7 +773,10 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 /logo4.png
 /logo5.jpg
 /logo6.png
-/logo-$image,important
+/logo-$image,important,domain=~opera.com
+    ! Exclusions:
+    ! opera - bad interface on opera.com, no alternative texts
+    !
     ! /logo-bg.jpg
         ! ||banya-expert.com/wp-content/themes/septik/images/logo-bg.jpg
     ! /logo-big.png
