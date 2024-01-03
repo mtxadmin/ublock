@@ -29,9 +29,10 @@
 !   below there are some of old logo rules, just for information
 -logo-$image
     ! -logo-line.$image
--logo.$image,domain=~factorio.fandom.com
+-logo.$image,domain=~factorio.fandom.com|~opera.com
     ! Exclusions:
     ! Factorio wiki - useful interface elements
+    ! opera - bad interface on opera.com, no alternative texts
     !
     ! /-logo.gif/
     ! /-logo.jpg/
@@ -40,9 +41,10 @@
 /_logo_/$image
     ! /vbulletin3_logo_white.png
 _logo_$image
-_logo.$image,domain=~factorio.fandom.com
+_logo.$image,domain=~factorio.fandom.com|~opera.com
     ! Exclusions:
     ! Factorio wiki - useful interface elements
+    ! opera - bad interface on opera.com, no alternative texts
     !
     ! /adaptive_logo.png
     ! /_logo.gif/
@@ -733,7 +735,10 @@ _logo.$image,domain=~factorio.fandom.com
     ! ||yadishu.com/wp-content/themes/yadishu/img/header2.png
 /header2$image  # don't know why previous rule doesn't catch /header2.png
 /images/footer$image
-/logo*$image
+/logo*$image,domain=~opera.com
+    ! Exclusions:
+    ! opera - bad interface on opera.com, no alternative texts
+    !
     ! /logo*$image,$domain=~winitpro.ru  # don't know why, but with $domain this rule doesn't work. Weird.
     ! /images/logo$image  # seems, more general rule sometimes doesn't work. Update: see above.
 ! the idea is from EasyList China, modified
