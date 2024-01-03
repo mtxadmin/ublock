@@ -131,6 +131,8 @@
 
 /modules/cookieinfo/*$important  # from Adguard
 
+/modules/cookiesplus/*  # from Adguard
+
 /modules/custom/ex_omniture/*$important
 /modules/custom/wbnotifications/*  # from Adguard
 
@@ -316,7 +318,9 @@
 /plugins/addgifts/*
 
 /plugins/add-to-any/*$~stylesheet  # from Fanboy's
-/plugins/add-to-any-subscribe/*$image  # from Fanboy's
+/plugins/add-to-any-subscribe/*
+    ! /plugins/add-to-any-subscribe/*$image  # from Fanboy's
+    ! /plugins/add-to-any-subscribe/subscribe_  # from EasyList
 
 /plugins/additionalgoods/*
 
@@ -345,7 +349,7 @@
 
 /plugins/adroadblock/*
 
-/plugins/adrotate/*$important  # https://wordpress.org/plugins/adrotate/
+/plugins/adrotate/*$important  # https://wordpress.org/plugins/adrotate/  # now is in EasyList
 /plugins/adrotate-pro/*$important  # from Adguard
     /adrotate/*$important  # from EasyList
     /jquery.adrotate.
@@ -393,6 +397,8 @@
 
 /plugins/advert/*$important  # from Adguard
 
+/plugins/advertising/*  # from EasyList
+
 /plugins/advert_tcc*$important
 
 /plugins/adv-popup-plugin/*
@@ -434,6 +440,8 @@
 /plugins/analytify-analytics-dashboard-widget/*
 
 /plugins/ane-banners-  # from EasyList
+    ! /plugins/ane-banners-  # from EasyList
+    ! /plugins/ane-banners-entre-links/*  # from EasyList
 /plugins/ane-preroll-  # from EasyList
 
 /plugins/angwp/*$important  # "WordPress Plugin Adning Advertising"
@@ -527,7 +535,7 @@
 
 /plugins/beamer/*
 
-/plugins/beautiful-and-responsive-cookie-consent/*  # is in Adguard
+/plugins/beautiful-and-responsive-cookie-consent/*$important  # is in Adguard and EasyList
 
 /plugins/beehive-analytics/*
 
@@ -553,6 +561,8 @@
 /plugins/bibblio-related-posts/*$important  # also see bibblio.org
 
 /plugins/bidding/*  # from EasyList: ||jwpcdn.com/player/plugins/bidding/
+
+/plugins/bilujSocialModalPlugin/*  # from Adguard
 
 /plugins/blazemedia_adv/*$important
 
@@ -708,6 +718,10 @@
 
 /plugins/contact-call-plugin/*
 
+/plugins/contact-widgets/*
+
+/plugins/consentmanager/*  # from EasyList
+
 /plugins/content/jllike/*  # from Adguard
 /plugins/content/jllikepro/*
     ! /plugins/content/jllikepro/js/buttons.  # from Adguard
@@ -764,6 +778,8 @@
 /plugins/cordova-plugin-admobpro/*$important  # from EasyList
 /plugins/cordova-plugin-facebook4/*
 /plugins/cordova-plugin-fingerprint-aio/*$important
+/plugins/cordova-plugin-nielsen/*$important  # from EasyPrivacy
+/plugins/cordova-plugin-onetrust-cmp/*$important  # from EasyList
 /plugins/cordova-plugin-safariviewcontroller/*
 /plugins/cordova-plugin-statusbar/*
 /plugins/cordova-plugin-x-socialsharing/*$important  # from Fanboy's and EasyList
@@ -818,6 +834,8 @@
 /plugins/daftplug-instantify/*  # from Adguard, modified
 
 /plugins/da-unblock  # from Adguard
+
+/plugins/dccookie/*  # from Adguard
 
 /plugins/deadblocker/*  # from Adguard and uBlock filters
 
@@ -958,10 +976,13 @@
 /plugins/easy-testimonials/*
 
 /plugins/easy-twitter-  # is in Fanboy's
+    ! /plugins/easy-twitter-feeds/*  # from EasyList
 
 /plugins/easy-utm-tracking-with-contact-form-7/*
 
 /plugins/easy-vkontakte-connect/*$important
+
+/plugins/easy-wp-cookie-popup/*  # from EasyList
 
 /plugins/econa-stats/*$important  # from Adguard
 
@@ -1107,6 +1128,8 @@
 
 /plugins/fv-sharing/*$~stylesheet  # is in Fanboy's
 
+/plugins/ga/*  # Google user analytics  # ga,ua
+
 /plugins/gabfire-widget-pack/*
 
 /plugins/ga-google-analytics/*$important
@@ -1123,6 +1146,8 @@
 /plugins/gdpr-cookie-compliance/*$important
 
 /plugins/gdpr-magic/*$important
+
+/plugins/gdpr-notice-original/*$important  # from EasyList
 
 /plugins/gdpr_patron/*  # from Adguard
 
@@ -1250,6 +1275,8 @@
 
 /plugins/indigitall-web-push-notifications/*
 
+/plugins/infomoney/*  # from Adguard
+
 /plugins/info-toggle/*
 
 /plugins/infusionsoft-official-
@@ -1344,6 +1371,8 @@
 
 /plugins/kodex-posts-likes/*
 
+/plugins/ko-fi-button/*  # from EasyList
+
 /plugins/kupibilet/*  # ||roem.ru/wp-content/plugins/kupibilet/  # from Adguard
 
 /plugins/lakana/*  # /plugins/lakana/inc/alert-banners/js/live-now.js
@@ -1391,6 +1420,7 @@
 /plugins/litres-plugin/*
 
 /plugins/live-news/*
+/plugins/livenews/*
 
 /plugins/loftloader-pro/*  # popups
 
@@ -1537,7 +1567,7 @@
 /plugins/mediapress-mycred-addon/*
     mycred.me
 
-/plugins/my-popup/*
+/plugins/my-popup/*  # is in Ru AdList
 
 /plugins/mystickymenu/*
 /plugins/mystickymenu-pro/*
@@ -1552,6 +1582,8 @@
 /plugins/native-alerts-push-notifications/*
 
 /plugins/nativerent/*  # ads, also see nativerent.ru
+
+/plugins/ned-cookies-form/*  # from EasyList
 
 /plugins/nervous-pleasure/*$important  # from Adguard
 
@@ -1600,6 +1632,8 @@
 
 /plugins/ns-adblock-blocker/*
 
+/plugins/nsmg-tracking/*  # from EasyPrivacy
+
 /plugins/oa-push/*  # from Adguard
 
 /plugins/ocean-product-sharing/*
@@ -1635,6 +1669,7 @@
 /plugins/ordercall/*
 
 /plugins/osd-social-media-sharing/*
+    ! /plugins/osd-social-media-sharing/includes/style.css  # from EasyList
 
 /plugins/outdated-browser/*  # yes, there is a such plugin. Go away, my browser is ok.
 
@@ -1672,6 +1707,7 @@
 /plugins/pg-advanced-ads/*
 
 /plugins/pinterest-$~stylesheet  # is in Fanboy's
+    ! /plugins/pinterest-pin-it-button-on-image-hover-and-post/*  # from EasyList
 
 ! "manage Facebook Pixel  Created by AdEspresso, a certified Facebook Marketing Partner and #1 Facebook Ads Partner"
 /plugins/pixel-caffeine/*$important  # also see adespresso.com
@@ -1880,10 +1916,13 @@
 /plugins/rs-likes/*
 
 /plugins/rt-social/*$~stylesheet  # is in Fanboy's
+/plugins/rtsocial/*  # from Ru AdList
 
 /plugins/russocialknopki-  # from Ru AdList
 
 /plugins/s29*  # fakenews 123ru.net/29ru.net network
+
+/plugins/s2f-referral-tracking/*  # from Adguard and EasyPrivacy
 
 /plugins/sailthru/*$important  # also see sailthru.com
 /plugins/sailthru-custom/*$important
@@ -1946,6 +1985,7 @@
 /plugins/share*$important,~stylesheet  # all of social sharing plugins. Let's make an exclusion for css
     !/plugins/share42/*
         /share42.js
+    ! /plugins/share-and-follow/*$image  # from EasyList
     ! /plugins/share-social/*$~stylesheet  # from Fanboy's
     !/plugins/share-this-image/$important
 
@@ -2041,6 +2081,7 @@
 
 /plugins/sociable*$important,~stylesheet
     ! /plugins/sociable-$~stylesheet  # from Fanboy's  # might be pro version?
+        ! /plugins/sociable-re/*  # from EasyList
     ! /plugins/sociable/*  # from Ru AdList, modified
 
 ! all many social* plugins here. Let's make an exclusion for css
@@ -2244,6 +2285,8 @@
 
 /plugins/tzd-to-any/*  # from Adguard
 
+/plugins/ua/*  # Google user analytics  # ga,ua
+
 !/plugins/ubermenu/* - don't
 
 /plugins/ubillboard/*
@@ -2296,6 +2339,8 @@
 /plugins/vast*.js  # from Adguard
 /plugins/vast/*$important,all  # from EasyList: ||jwpcdn.com/player/plugins/vast/
 /plugins/vast-*$important  # from uBlock filters: */player/plugins/vast-*.js$script
+
+/plugins/vdz-google-analytics/*  # from EasyPrivacy
 
 /plugins/videobg/*
 
@@ -2371,6 +2416,7 @@
 ! /plugins/woocommerce-gateway-paypal-express-checkout/*
 /plugins/woocommerce-google-adwords-conversion-tracking-tag/*$important  # is in Adguard
 /plugins/woocommerce-lottery-wordpress-prizes-and-lotteries/*
+/plugins/woocommerce-notification/*  # from EasyList
 /plugins/woocommerce-side-cart-premium/*
 
 @@/plugins/woodev-russian-post/*
@@ -2430,6 +2476,8 @@
 /plugins/wp-ad-guru/*$important
     /wp-ad-guru/*  # from EasyList
 
+/plugins/wp-advertising/*  # from EasyList
+
 /plugins/wp-analytify/*$important
 
 /plugins/wp-banners/*  # from uBlock filters
@@ -2437,6 +2485,10 @@
 /plugins/wpcf7-redirect/*  # some scripts  # https://wordpress.org/plugins/cf7-redirects/
 
 /plugins/wp-chatbot/*
+
+/plugins/wp-clickmap/*  # from EasyPrivacy
+
+/plugins/wp-click-track/*  # from EasyPrivacy
 
 /plugins/wp-content-copy-protection/*  # from Adguard, uBlock, Ru AdList
 
@@ -2541,6 +2593,8 @@
     ! /plugins/wp-safelink-v3/*  # from Adguard
 
 /plugins/wps-cookie-consent/*
+
+/plugins/wp-scroll-to-top/*  # from EasyList
 
 /plugins/wpseo-local/*
 
