@@ -1022,7 +1022,7 @@ $removeparam=/^otm_/i  # from DandelionSprout's URLShortener  # like utm_, stm_,
 
 $removeparam=partner,important,domain=~opera.com  # good old rule from Prx: partner (one of)
     ! Exclusions:
-    opera.com - Opera distribs refuse to download, even from the main page. It needs some partner param (partner=www by default)
+    ! opera.com - Opera distribs refuse to download, even from the main page. It needs some partner param (partner=www by default)
     !
     ! alternate.de$removeparam=partner  # from Adguard
     ! humblebundle.com$removeparam=partner  # from Adguard
@@ -1532,9 +1532,10 @@ $removeparam=smid,domain=~opinion.no  # from DandelionSprout's URLShortener
 $removeparam=soc_src  # Yahoo general parameter  # from NeatURL
 $removeparam=soc_trk  # Yahoo general parameter  # from NeatURL
 
-$removeparam=source,domain=~4pda.to|~youtube.com|~kavin.rocks|~tokhmi.xyz|~moomoo.me|~syncpundit.io|~mha.fi|~whatever.social|~garudalinux.org|~rivo.lol|~aeong.one|~daviteusz.eu|~jae.fi|~mint.lgbt|~il.ax|~privacy.com.de|~esmailelbob.xyz|~projectsegfau.lt|~privacydev.net|~palveluntarjoaja.eu|~plibre.com|~smnz.de|~adminforge.de|~qdi.fi|~hostux.net
+$removeparam=source,domain=~4pda.to|~ft.com|~youtube.com|~kavin.rocks|~tokhmi.xyz|~moomoo.me|~syncpundit.io|~mha.fi|~whatever.social|~garudalinux.org|~rivo.lol|~aeong.one|~daviteusz.eu|~jae.fi|~mint.lgbt|~il.ax|~privacy.com.de|~esmailelbob.xyz|~projectsegfau.lt|~privacydev.net|~palveluntarjoaja.eu|~plibre.com|~smnz.de|~adminforge.de|~qdi.fi|~hostux.net
     ! Exclusions:
     ! - 4pda: source is a search parameter (https://4pda.to/forum/index.php?act=search&source=all&forums%5B%5D=all)
+    ! - ft.com: "Error 400  The source parameter is required and must be a valid system code"
     ! - youtube  # this exclusion is also in DandelionSprout's URLShortener
     ! - and all YouTube Piped instances (on 2022-11): kavin.rocks,tokhmi.xyz,moomoo.me,syncpundit.io,mha.fi,whatever.social,garudalinux.org,rivo.lol,aeong.one,daviteusz.eu,jae.fi,mint.lgbt,il.ax,privacy.com.de,esmailelbob.xyz,projectsegfau.lt,privacydev.net,palveluntarjoaja.eu,plibre.com,smnz.de,adminforge.de,qdi.fi,hostux.net - see #51 and https://github.com/TeamPiped/Piped/wiki/Instances
     ! possible todo: $removeparam=source,denyallow=googlevideo.com  # from DandelionSprout's URLShortener
