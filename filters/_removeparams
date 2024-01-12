@@ -1100,6 +1100,7 @@ $removeparam=product_country  # Microsoft tracking URL parameters: https://help.
 $removeparam=promo
     ! avideos.xxx$removeparam=promo
     ! hclips.com$removeparam=promo
+    ! secretdiscounter.com$removeparam=promo
     ! $removeparam=promo,domain=thegay.com|hammacher.com|upornia.com|hclips.com  # from DandelionSprout's URLShortener
     ! ||yandex.ru$removeparam=|promo
 
@@ -2577,11 +2578,11 @@ globus.ru$removeparam=search-err
 google.*/search$removeparam=aqs  # from Adguard
     ! ||www.google.*/search?$removeparam=aqs  # from Ru AdList
 ||www.google.*/search?$removeparam=authuser  # from Ru AdList
-google.*/search$removeparam=bih  # from Adguard
+google.*/search$removeparam=bih  # is in Adguard
     ! ||www.google.*/search?$removeparam=bih  # from Ru AdList
-google.*/search$removeparam=biw  # from Adguard
+google.*/search$removeparam=biw  # is in Adguard
     ! ||www.google.*/search?$removeparam=biw  # from Ru AdList
-||google.*/search?client=$removeparam=client  # from Ru AdList and Adguard
+||google.*/search?client=$removeparam=client  # is in Ru AdList and Adguard
 ||www.google.*/search?$removeparam=cshid  # from Ru AdList
 ||www.google.*/search?$removeparam=dpr  # from Ru AdList
 google.*$removeparam=ei  # from NeatURL
@@ -2601,6 +2602,7 @@ google.*$removeparam=gs_rn  # from NeatURL
 ||www.google.*/search?$removeparam=newwindow  # from Ru AdList
 ||google.*/search$removeparam=oe  # from Adguard
 ||google.*/search?$removeparam=oq  # from Ru AdList and Adguard
+#google.*/search$removeparam=prmd  # some id. Block?
 google.*/search$removeparam=sa  # from Adguard
     ! ||www.google.*/search?$removeparam=sa  # from Ru AdList
 ||www.google.*/search?$removeparam=sclient  # from Ru AdList
@@ -2610,7 +2612,7 @@ google.*/search$removeparam=sourceid  # is in Adguard
 ||www.google.*/search?$removeparam=uact  # from Ru AdList
 ||google.*/url$removeparam=usg
 docs.google.com$removeparam=usp
-google.*$removeparam=ved
+google.*$removeparam=ved  # some id
     ! ||www.google.*/search?$removeparam=ved  # from Ru AdList  # and in https://www.google.com/url?... too
 google.*/websearch$removeparam=visit_id  # from Adguard
 gstatic.com$removeparam=zx
@@ -3333,34 +3335,59 @@ theregister.com$removeparam=td  # from Adguard
 
 theresanaiforthat.com$removeparam=term
 
+tiktok.com$removeparam=aid
+tiktok.com$removeparam=app_name
+tiktok.com$removeparam=browser_language
+    ! earlier: language ?
+tiktok.com$removeparam=browser_name
+tiktok.com$removeparam=browser_online
+tiktok.com$removeparam=browser_platform
+tiktok.com$removeparam=browser_version
 tiktok.com$removeparam=btag
 tiktokcdn.com$removeparam=btag
 tiktok.com$removeparam=cd
 tiktokcdn.com$removeparam=cd
 tiktok.com$removeparam=checksum  # from NeatURL
+tiktok.com$removeparam=cookie_enabled
 tiktok.com$removeparam=_d  # from NeatURL
+tiktok.com$removeparam=device_id
+    ! earlier: sender_device ?
+tiktok.com$removeparam=device_platform
 tiktok.com$removeparam=embed_source  # from Adguard and DandelionSprout's URLShortener
+tiktok.com$removeparam=focus_state
+tiktok.com$removeparam=from_page
 tiktok.com$removeparam=ft  # some uid
 tiktokcdn.com$removeparam=ft  # some uid
 tiktok.com$removeparam=is_copy_url  # from NeatURL
 tiktok.com$removeparam=is_from_webapp  # is in NeatURL
+tiktok.com$removeparam=is_fullscreen
+tiktok.com$removeparam=is_page_visible
 tiktok.com$removeparam=item_id
 tiktok.com$removeparam=l
 tiktokcdn.com$removeparam=l
 tiktok.com$removeparam=language  # from NeatURL
+tiktok.com$removeparam=os
 tiktok.com$removeparam=preview_pb  # from NeatURL
+tiktok.com$removeparam=_r
 tiktok.com$removeparam=rc  # some uid
+tiktok.com$removeparam=region
 tiktokcdn.com$removeparam=rc  # some uid
+tiktok.com$removeparam=screen_height
+tiktok.com$removeparam=screen_width
 tiktok.com$removeparam=sec_user_id  # from NeatURL
 tiktok.com$removeparam=sender_device  # from NeatURL
 tiktok.com$removeparam=sender_web_id  # from NeatURL
+tiktok.com$removeparam=_t  # ref
 tiktok.com$removeparam=timestamp  # from NeatURL
 tiktok.com$removeparam=tt_from  # from NeatURL and Adguard
+tiktok.com$removeparam=tz_name
 tiktok.com$removeparam=u_code  # from NeatURL
 tiktok.com$removeparam=user_id  # from NeatURL and DandelionSprout's URLShortener
 tiktok.com$removeparam=sec_uid  # from Adguard
 tiktok.com$removeparam=sec_user_id  # from DandelionSprout's URLShortener
 tiktok.com$removeparam=web_id  # from Adguard
+tiktok.com$removeparam=WebIdLastTime
+    ! earlier: web_id ?
 
 toomics.com$removeparam=channel  # from Adguard
 toomics.com$removeparam=gen  # from Adguard
@@ -3596,7 +3623,7 @@ youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=feature  #
     ! unusual Ru AdList form:
     ! &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com  # from Ru AdList
 youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=kw  # from NeatURL
-youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=pp  # from Adguard
+youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=pp  # is in Adguard
 youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=si
     ! youtube.com$removeparam=si
     ! youtu.be$removeparam=si  # from Adguard
@@ -3834,3 +3861,5 @@ debank.com$removeparam=r  # ref
 proxy6.net$removeparam=r  # ref
 
 trymeter.org/ajax/$removeparam=|  # from Ru AdList
+
+dmail.ai$removeparam=icode  # ref
