@@ -1547,6 +1547,8 @@ androidpit.com##.adm-with-statement.adm-with-question.root.agree-disagree
 
 androidpolice.com##.header
 
+androidtvnews.com##.gb-container
+
 anekdot.eu##.txt11
 
 ||anekdot.ru/favicon
@@ -2436,6 +2438,8 @@ autospot.ru##.home-selection-banner
 
 autostat.ru##.Block-subscribe
 
+autoteka.ru##button:has-text(Кредит)
+
 autotonkosti.ru##.region-header.region
 autotonkosti.ru##.sub-title
 autotonkosti.ru##.butts
@@ -2879,6 +2883,12 @@ baikalinc.ru##.hero.first-screen
 ballistica.su/?counter
 ballistica.su##.l_header:style(position:static !important)
 ballistica.su##.uss_privacy_policy_wrap
+
+! https://www.reddit.com/r/uBlockOrigin/comments/ew4m1h/disneypluscom/
+@@||bamgrid.com^$domain=disneyplus.com  # from uBlock filters
+||bamgrid.com/dust$domain=~disneyplus.com  # from EasyPrivacy
+||bamgrid.com/telemetry  # from Adguard and EasyPrivacy
+! See #78 also
 
 banana-pi.org##.fixed-action-btn
 
@@ -3393,6 +3403,14 @@ bite-byte.ru###custom-header
 bite-byte.ru###wpd-post-rating
 
 bitlaunch.io##.site-header
+
+! already blocked
+    ! site blocks copypaste
+bitpump.ru$inline-script
+bitpump.ru##+js(ra,onmousedown)
+bitpump.ru##+js(ra,onkeypress)
+    ! other
+bitpump.ru###hyipgosite
 
 ||bitrix.info/ba.js$important  # from AdGuard Tracking Protection and EasyPrivacy
 ||bitrix.info/bx_stat  # from EasyPrivacy
@@ -5646,6 +5664,8 @@ dev.to##.crayons-article-sticky:style(position:static !important)
 dev.to##.crayons-article-actions:style(position:static !important)
 
 deviantart.com##[href="https://www.deviantart.com"]
+
+devicemag.com##.dynamic-author-description
 
 devopsconf.io##.header-features::before
 
@@ -12236,6 +12256,8 @@ kanzoboz.ru##.important-text-slider
 kanzoboz.ru##.firm_left_logo
 kanzoboz.ru##.birthday_block
 
+kapos.hu##.newsScroller
+
 ||kapterka.su/*/kap_pic.jpg
 kapterka.su##.companyname
 
@@ -13210,10 +13232,18 @@ lakshmikanth.com##.gh-head-logo
 lakshmikanth.com##.gh-head-actions
 lakshmikanth.com##.site-header-content
 
+lambdatest.com##section:style(margin-top:0px !important)
+    ! banners and promos
+lambdatest.com##.top-sect
+lambdatest.com##.g_review_blog_inner
+lambdatest.com##.sitekitwebinar
+lambdatest.com###SeleniumPythonCTA
+lambdatest.com##p > [href*="lambdatest.com/register"]
 lambdatest.com##.bg_cta_test
 lambdatest.com##.test_mob_app
 lambdatest.com###ThreeCombinationsCTA
 lambdatest.com##.btn_test_cta
+    ! other
 
 laminat-msc.ru##.article-rate
 laminat-msc.ru##.rating
@@ -21495,6 +21525,8 @@ san-housemarket.ru##.brand_main_wrapper
 san-housemarket.ru##.subscribe-block-wrapper
 san-house.ru##.basket_bottom_block
 
+san-krupskoy.ru$inline-script  # site breaks copypaste
+
 sanotes.ru##.td-header-header.td-header-row
 sanotes.ru##.td-footer-template-4
 
@@ -28118,6 +28150,8 @@ xelent.ru##.tech-widget
 ||xhamster.com/service-worker-fake.js
 ||xhamster.com/x-api?
 @@||xhcdn.com/*/images/transparent.gif  # exclusion for a placeholder
+xhamster.com##.main-wrap:style(filter:none !important)
+xhamster.com##div:style(filter:none !important)
     ! popups
 xhamster.com##[class^=tip-]
 xhamster.com##.search-page-suggestions-wrapper-sticky
@@ -29606,8 +29640,6 @@ prfl.me  # yndx.prfl.me  # ad URLs
 
 ||cp24.com/*/image.png
 
-kapos.hu##.newsScroller
-
 laweekly.com##.cb-nav-bar-wrap:style(position:static !important)
 laweekly.com##.cb-logo-nav
 laweekly.com##.cb-logo-nav-sticky-type
@@ -29755,23 +29787,6 @@ rufox.ru*/ncounter.pl?  # from Ru AdList
 
 ||magesy.blog/wp-content/plugins/  # from uBlock filters
 
-! already blocked
-    ! site blocks copypaste
-bitpump.ru$inline-script
-bitpump.ru##+js(ra,onmousedown)
-bitpump.ru##+js(ra,onkeypress)
-    ! other
-bitpump.ru###hyipgosite
-
-lambdatest.com##section:style(margin-top:0px !important)
-    ! banners and promos
-lambdatest.com##.top-sect
-lambdatest.com##.g_review_blog_inner
-lambdatest.com##.sitekitwebinar
-lambdatest.com###SeleniumPythonCTA
-lambdatest.com##p > [href*="lambdatest.com/register"]
-    ! other
-
 ! thegamer.com : lazyload data-img-url
   ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
 
@@ -29784,15 +29799,7 @@ lambdatest.com##p > [href*="lambdatest.com/register"]
 ! lazyload: span with background, data-ezbg
 ! techviewleo.com##+js(set-attr, span.ezlazyload, style, background-image:url([data-ezbg]))  - doesn't work, of course
 
-autoteka.ru##button:has-text(Кредит)
-
 ||snippet.maze.co/contextualScaffold.js  # 3p script. Hmm..
-
-! https://www.reddit.com/r/uBlockOrigin/comments/ew4m1h/disneypluscom/
-@@||bamgrid.com^$domain=disneyplus.com  # from uBlock filters
-||bamgrid.com/dust$domain=~disneyplus.com  # from EasyPrivacy
-||bamgrid.com/telemetry  # from Adguard and EasyPrivacy
-! See #78 also
 
 community.plus.net##.ui-widget-overlay
 
