@@ -196,6 +196,11 @@ ozon.ru##a[href^="https://www.ozon.ru/travel/promo/"]
 ozon.ru##[data-widget="seasonWidget"]
 ! top banner 2023-11
 ozon.ru##div:matches-css(height:32px):has(img:matches-css(height:32px))
+! реклама в выпадающем списке при поиске
+ozon.ru##.type-brand.suggestions-item
+! при поиске автозапчастей навязчиво вылезает "гараж" - убираем его, при необходимости оно есть в меню
+||ozone.ru/graphics/automoto/garage_entry_point/image_add_car.webp$image
+ozon.ru##div[data-widget=webGarageEntryPoint] > div:style(margin-top:0px !important; margin-bottom:0px !important; padding-top:0px !important; padding-bottom:0px !important)
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
@@ -210,7 +215,11 @@ ozon.ru##div:has(>div:has-text(/^[0-9]+% возвратов$/))
 !ozon.ru##div:has(>div:has-text(/^\s*Скидк(а|и)/i)):not(:matches-path(/\/my\//))
 ozon.ru##div:has(>div:has-text(/^\s*Доберите до скидки/i)):not(:matches-path(/\/my\//))
 ozon.ru##div:has(>div:has-text(/^\s*\d+\s*(балл(а|ов|) за отзыв|бонус(а|ов|))$/i))
-ozon.ru##div:has(>div:has-text(/^\s*^(ХИТЫ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор покупателей|Распродажа|Ликвидация|Оригинал|Цена что надо|Купон на скидку|Ozon Promo|PRE-SALE 11.11|ЧЁРНАЯ ПЯТНИЦА|Соц. сертификат|Рассрочка 0%)$/i))
+ozon.ru##div:has(>div:has-text(/^\s*^(ХИТЫ НЕДЕЛИ|АКЦИЯ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор покупателей|Распродажа|Ликвидация|Оригинал|Цена что надо|Купон на скидку|Ozon Promo|PRE-SALE 11.11|ЧЁРНАЯ ПЯТНИЦА|Соц. сертификат|Рассрочка 0%)$/i))
+! generanized
+ozon.ru##section > div:has(>div>svg[width][height]):has(>div)
+! аккуратнее, ранее выбор размера иногда попадал
+! "оплата после примерки" (для одежды) НЕ попадает, ну и отлично. А больше там ничего полезного и нету
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 !ozon.ru##[data-widget=webInstallmentPurchase]
@@ -224,6 +233,7 @@ ozon.ru##[data-widget="tagList"]
 ozon.ru##div:has-text(/^\s*Товар куплен на OZON\s*$/)
 ! not a button, but seo text
 ozon.ru##[data-widget="createReviewButton"]:has-text(честный рейтинг)
+ozon.ru###section-characteristics > small:has-text(Информация о технических характеристиках, комплекте поставки)
     ! bottom
 ozon.ru##a:has(img[alt="Ozon Job"])
     ! tracking
@@ -265,6 +275,7 @@ ozon.ru##span:has-text(Условия доставки из-за рубежа):s
 ozon.ru##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в ответ/)))
 ! new design
 ozon.ru##div:has(>div>span:has-text(/0 комментариев|1 комментарий/))
+ozon.ru##div[celltrackinginfo]
 ! and also. Old design.
 ! reviews without text are useless
 ozon.ru##div[data-review-uuid]:not(:has-text(/Вам помог этот отзыв\?|Показать весь отзыв/))
