@@ -179,6 +179,8 @@ cypressinfo.org$script,3p
 datadoghq.com$3p  # ad xhrs
 datalock.ru$3p
 
+db-ip.com$important,third-party,all  # from EasyPrivacy and ShadowWhisperer's Tracking. I think, don't, see https://github.com/ShadowWhisperer/BlockLists/pull/84  # Update: I was wrong. Moved to _crms
+
 ddestiny.ru$3p  # "-2018 game developers"  # from Adguard
 
 !ddos-guard.net$3p - in general, don't
@@ -894,7 +896,7 @@ zohowebstatic.com$domain=~zoho.com|~zoho.com.au|~zoho.eu|~zoho.in|~zoho.jp|~zoho
 !creator.zoho.com
 !crm.zoho.com
 !iplocation.zoho.com
-!salesiq.zoho.com
+salesiq.zoho.com  # ad scripts  # is in EasyList
 !support.zoho.com
 !+  api.zoho.com
 !+  challenge.zoho.com
