@@ -2601,6 +2601,8 @@ avtoradio.ru##.rss
 
 avtoschoolzel.ru###rt-extension
 
+avtoshark.com##.bCarAnim
+
 avtoshkola16.ru##.spu-box
 
 avtoshkola177.ru##.content-top
@@ -3572,6 +3574,8 @@ agorbunov.blogspot.com##header
 agorbunov.blogspot.com###navbar
 !
 clintboessen.blogspot.com###header
+!
+courssatnet.blogspot.com$inline-script  # ad redirects
 !
 dbasimple.blogspot.com##header
 !
@@ -8575,8 +8579,11 @@ freeporn247.org##.active
 freeporn247.org##.toptext
 
 ||freeporno.xxx/e/
+||freeporno.xxx/event  # post
 freeporno.xxx##.vjs-modal-dialog
 freeporno.xxx##.side-title
+freeporno.xxx##.uvb-random.b-uvb-spot
+freeporno.xxx##.ae-player__itv
 
 freeproxy.ru##[src="/images/vpn/hmn_ru.png"]
 
@@ -13678,6 +13685,7 @@ libreelec.tv###dw__pagetools
 libreelec.tv##.messageSignature
 libreelec.tv##.overlay
 libreelec.tv###animatedComponent
+forum.libreelec.tv##.userAvatarImage
 
 licenziya-fsb.com##noindex
 ||licenziya-fsb.com/*/trackback
@@ -18767,6 +18775,8 @@ pluralsight.com##.sticky-upvote
     ! other
 pluralsight.com##.sticky
 
+community.plus.net##.ui-widget-overlay
+
 ||marketools.plus500.com/feeds/  # from EasyList
 ||marketools.plus500.com/widgets/  # from EasyList
 
@@ -19575,14 +19585,19 @@ psafe.ru##.contact
 psafe.ru##.tp-revslider-mainul
 psafe.ru##h4 > span
 
+	! popups
 ! False positive in Ru AdList and Adguard: not only cookie(?) popups, but useful interface buttons too
 ib.psbank.ru#@#.cdk-overlay-container
 ! instead:
 psbank.ru##.block:has-text(cookie):has(.button)
 ! and blurring backdrop too. Not in all scenarios, though
 psbank.ru##.cdk-overlay-backdrop
+!
+psbank.ru##.cdk-global-overlay-wrapper:has-text(одобрен кредит)
+psbank.ru##.cdk-overlay-container:has(.persoffering-popup-dialog)
     ! banners and promos
 psbank.ru##.slider-wrapper
+psbank.ru##rtl-banner-slider
 
 psychologies.ru##.header__wrapper:style(position:static !important)
 psychologies.ru##.app-header__wrapper:style(position:static !important)
@@ -20292,11 +20307,14 @@ redpornblog.com###pic-text-inner
 
 redrumers.com##.header
 
+||redtube.com/videohotspot/timewatched
+||redtube.com/_xa/  # is in Adguard
 redtube.com##.premium_feature
 redtube.com##.premium_logos_section
 redtube.com###premium_video
 redtube.com##.textcloud
 redtube.com###footer-textcloud
+redtube.com##.mgp_eventCatcher
 
 reedr.ru##.posa_next
 reedr.ru##.posa_pre
@@ -23898,6 +23916,9 @@ systavi.com##noindex
 system-administrators.info###mini-nav
 system-administrators.info###access
 system-administrators.info##noindex
+
+system-blog.ru##.cool-tag-cloud
+system-blog.ru###sidebar:style(position:static !important)
 
 system-center.me##.site-header-cover-image
 
@@ -28185,6 +28206,8 @@ xhamster.com##div:style(filter:none !important)
 xhamster.com##[class^=tip-]
 xhamster.com##.search-page-suggestions-wrapper-sticky
 xhamster.com##.parental-control-dialog
+||xhcdn.com/xh-shared/js/*.age-protect.js
+xhamster.com##.age-protect
 xhamster.com##.dialog-desktop-container
 xhamster.com##.alert-box
     ! banners and promos
@@ -29190,6 +29213,8 @@ zosoptic.ru##.agree_button2_slim
     ! top
 zr.ru##.header__wrap_fixed:style(position:static !important)
 zr.ru##.header__container:style(position:static !important)
+	! banners and promos
+zr.ru###wide_readmore:has-text(/Выиграй/i)
     ! socials
 zr.ru##li:has(a[href^="https://ok.ru/"])
 zr.ru##li:has-text(можно читать в)
@@ -29785,8 +29810,6 @@ chibbis.ru##.main-no-subdomain_bg
 
 ||vaikuttajamedia.fi^*/markuk_evastevaroitus.js  # from EasyList
 
-courssatnet.blogspot.com$inline-script  # ad redirects
-
 ovdinfo.org##.page-wrapper:style(visibility:visible !important)
 ovdinfo.org##footer:style(visibility:visible !important)
 
@@ -29811,6 +29834,4 @@ rufox.ru*/ncounter.pl?  # from Ru AdList
 ! techviewleo.com##+js(set-attr, span.ezlazyload, style, background-image:url([data-ezbg]))  - doesn't work, of course
 
 ||snippet.maze.co/contextualScaffold.js  # 3p script. Hmm..
-
-community.plus.net##.ui-widget-overlay
 
