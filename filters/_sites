@@ -150,6 +150,8 @@
 
 1marshrut.ru##.slider-main
 
+1news.com.ua##.topbar-wrapper
+
 ! from Adguard Annoyances filter
 1plus1.ua#$#.js-cookies { display: none!important; }
 ||1plus1.video/ab
@@ -1792,16 +1794,20 @@ apteka-april.ru##.app-gallery
 apteka-april.ru##.yandex-delivery-badge
 apteka-april.ru##.fast-order
 
+	! popups
+aptekamos.ru###ama-modal-app
+aptekamos.ru###ama-modal-app-content
+aptekamos.ru###ama-modal-app-overlay
+	! top
+aptekamos.ru###ama-header
+aptekamos.ru###am-pc-header-logo-c
+	! other
 aptekamos.ru##.d-table-td-la
 aptekamos.ru##.am-widget-container:has-text(Новости)
 aptekamos.ru###footer
 aptekamos.ru##.h-cart
 aptekamos.ru##.ama-table-news
 aptekamos.ru##.ama-cont-round
-aptekamos.ru###ama-modal-app
-aptekamos.ru###ama-modal-app-content
-aptekamos.ru###ama-modal-app-overlay
-aptekamos.ru###ama-header
 aptekamos.ru###right-data-container > p > noindex
 
     ! banners and promos
@@ -2661,6 +2667,9 @@ forum.awd.ru###navbar
     ! other
 awd.ru##.page404
 ||forum.awd.ru/images/avatars/$image
+
+||awesomeopensource.com/awesome.gif
+awesomeopensource.com##.aos_fixed_header_container
 
 ax.digital##.floating-active.floating-header
 ax.digital###eli
@@ -3747,8 +3756,11 @@ boobliks.pro#@##up
 boobliks.pro##.logotip_ebanem
 boobliks.pro##body:style(background:none !important)
 
+	! popups
 book24.ru##.fake-jivosite
 book24.ru##.location-d__popup
+book24.ru##.page-wrap__notification.app-newbies-notification
+	! other
 
 bookafan.website##.full-text.fdesc > span
 bookafan.website##.tech_info
@@ -3788,6 +3800,12 @@ booksonline.com.ua##.footer_style.wrapper
 booksonline.com.ua###toPrev
 booksonline.com.ua##.book_preview
 booksonline.com.ua##.view_now_read
+
+bookvoed.ru###cityDetect
+! top banner
+bookvoed.ru##a[href^="/redirect/karusel/stat?"]
+! logo
+bookvoed.ru##a[href="https://www.bookvoed.ru/"][class]
 
 ! disable exclusion in Fanboy's
 @@*$generichide,domain=boredpanda.com,badfilter
@@ -4583,6 +4601,11 @@ chipmk.ru###header
 
 chistayrabota.ru###site-desc
 
+	! popups
+chitai-gorod.ru##.change-city-container__popup-confirmation.change-city
+! totop
+chitai-gorod.ru##.scroll-button
+	! other
 chitai-gorod.ru##.footer-section_subscribe
 
 ! logo
@@ -6618,6 +6641,9 @@ dsk1.ru##.v3-header:style(position:static ! important)
 dsk1.ru##.v3-shynav.v3-header-wrapper
 dsk1.ru##.v3-shynav.v3-header-wrapper
 dsk1.ru##.accept-cookies
+
+||dsnews.ua/static/build/img/svg/logo$image
+dsnews.ua##.c-banner__logo
 
 dtf.ru/hit/
 dtf.ru/booster/
@@ -8808,6 +8834,10 @@ garsingshop.ru##.soc-container__title
 garsingshop.ru##.header-bottom__logo
 
 garvis.ca##.header
+
+gastronom.ru##[class*=_nps_]
+gastronom.ru##[class^=_sidebar_]
+gastronom.ru##[class*=_ageLimitIcon_]
 
 gaw.ru##.tx
 
@@ -12637,6 +12667,8 @@ klonator.ru###comments
 
 klubstroitelei.com###right-column
 
+klymenko-time.com##.floatkt
+
 ||km.ru/*/km-block-social-image.jpg
 ||km.ru/*/km-block-social-bg-images.jpg
 
@@ -13656,6 +13688,8 @@ level.travel##.testimonials
 ! seo texts
 level.travel##.mpage_text_stitle
     ! other
+
+||level1techs.com/assets/browser-update
 
 ||lfirmal.com/wp-content/uploads/firmal.svg
 
@@ -14695,6 +14729,8 @@ mayatnik.net##form:has-text(рассылки)
 mayatnik.net##div:has(>h2>a[href*=mayatnik])
 mayatnik.net##div:has(>a>wix-image)
 
+||snippet.maze.co/contextualScaffold.js  # 3p script. Hmm..
+
 mcafee.com##.lia-decoration-border
 mcafee.com##.join_box1
 mcafee.com##.join_box2
@@ -15003,6 +15039,8 @@ megaplan.ru##.prefooter
 
     ! popups
 megapteka.ru##.popup-your-city
+! consultant popup
+megapteka.ru##ma-main-helper
     ! top
 megapteka.ru##.search-header__icon
 megapteka.ru##.search-header__unicorn
@@ -15017,6 +15055,8 @@ megapteka.ru##app-svg-arrow-up
 megapteka.ru##footer > .active
 megapteka.ru##.scroll-block:style(position:static !important)
     ! other
+! app
+megapteka.ru##.qr-code
 
 megasantexnika.ru##.btn-primary
 megasantexnika.ru###brends
@@ -15560,6 +15600,13 @@ moe-online.ru##.sticky-spacer
 moe-online.ru##.greedy-nav-top-fixed
 moe-online.ru###header_baner
 moe-online.ru##.header-line-2:style(position:static !important)
+
+moex.com##.banners-slider
+moex.com##.widget-ticker
+moex.com##.new-moex-socials
+moex.com##.new-moex-main-page-content-block__socials
+moex.com##.floatHeader
+moex.com##.header-content-top-phones
 
 mognb.ru##.right_column
 mognb.ru##.od
@@ -18030,6 +18077,9 @@ oxotnik-rybolov.ru##.toc_white
 oxsy.ru##.nav-toggle:style(position:static !important)
 
 oxy-center.ru##.anketa-patsienta
+
+oz.by##.main-nav__inner:style(position:static !important)
+oz.by##.popup:has-text(cookies)
 
 ozerki.ru##.popup-region
 ozerki.ru##.medication__banner
@@ -25951,6 +26001,8 @@ ukrainianwall.com##.nav-logotype
 
 ukrnews24.net##.header-line-2
 
+ukrrain.com##.xx-hide
+
     ! top
 ukr-today.com##.padd:style(padding-top:0px !important)
 ukr-today.com##.socgroup
@@ -26263,6 +26315,18 @@ uservoice.com##.nav_banner
 
 ustanovkaos.ru##.single.post > .title
 ustanovkaos.ru##.header
+
+	! banners and promos
+uteka.ru##.home-page-simple-banners
+uteka.ru##.home-page-how-we-work
+uteka.ru##.home-page-low-price
+uteka.ru##.public-media__carousel.ui-carousel
+uteka.ru###seoText
+	! oneclick
+uteka.ru##.product-page-card-offer-actions__fast-order
+uteka.ru##.ui-button_theme_primary-outlined:has-text(в 1 клик)
+	! other
+uteka.ru##.footer-contacts__social
 
 uteplenieplus.ru###head_top_block.head_top
 
@@ -26808,6 +26872,11 @@ vladimirbelev.ru##.b-post__image-link
 vladimirbelev.ru#$?#body > div.fancybox-container:has(div.fancybox-content > aside.b-subscribe) { display: none!important; }
 
 blog.vladios13.com##.ess-button--email
+
+vlast.kz##.in-news.donate
+vlast.kz##.l-sidebar:style(position:absolute !important)
+vlast.kz##.l-sidebar.affix:style(position:absolute !important)
+vlast.kz##.form-search:style(position:absolute !important)
 
 v-lodke.ru###policy
 v-lodke.ru##.prmn-cmngr__popup
@@ -29782,23 +29851,6 @@ learnpython.dev##.nav
 
 d3ward.github.io##.gt-link
 
-moex.com##.banners-slider
-moex.com##.widget-ticker
-moex.com##.new-moex-socials
-moex.com##.new-moex-main-page-content-block__socials
-moex.com##.floatHeader
-moex.com##.header-content-top-phones
-
-||level1techs.com/assets/browser-update
-
-||awesomeopensource.com/awesome.gif
-awesomeopensource.com##.aos_fixed_header_container
-
-||dsnews.ua/static/build/img/svg/logo$image
-dsnews.ua##.c-banner__logo
-
-klymenko-time.com##.floatkt
-
 metricfire.com##.topbar:style(position:static !important)
 
 ||chibbis.ru/content/img/app/$image
@@ -29832,6 +29884,4 @@ rufox.ru*/ncounter.pl?  # from Ru AdList
 !techviewleo.com
 ! lazyload: span with background, data-ezbg
 ! techviewleo.com##+js(set-attr, span.ezlazyload, style, background-image:url([data-ezbg]))  - doesn't work, of course
-
-||snippet.maze.co/contextualScaffold.js  # 3p script. Hmm..
 
