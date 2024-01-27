@@ -8422,6 +8422,7 @@ forbes.com##.save-tooltip
     ! top
 !forbes.ru##*:matches-css(position:absolute) - old
 ! forbes.ru##div:matches-css(position:sticky):style(position:static !important) - don't, jumps
+forbes.ru##div:style(padding-top:initial !important)
     ! top of the left column
 forbes.ru##button:has-text(Подписаться)
 !forbes.ru##div:xpath(//div[contains(text(),'Рассылка')]):upward(1) - don't, jumps
@@ -8441,6 +8442,7 @@ forbes.ru##.header-bottom:style(margin-top:0px !important)
 forbes.ru##a:has-text(Партнерский материал)
 ! sticky div after the footer
 forbes.ru##footer ~ div
+forbes.ru##div:has(>span:has-text(Теперь Forbes можно слушать))
 
     ! paywall
 foreignpolicy.com##.content-gated:style(display:initial !important)
@@ -19601,10 +19603,14 @@ proton.by##div .cs-float
 
 protoolreviews.com##.stuck
 
+	! top
 provereno.media##.header_style_wrapper:style(position:static !important)
 provereno.media###wrapper:style(padding-top:0px !important)
 provereno.media###nav_wrapper:style(padding-top:0px !important;padding-bottom:0px !important)
 provereno.media###logo_right_button:style(padding-top:0px !important;padding-bottom:0px !important)
+provereno.media###header:style(min-height:auto !important)
+provereno.media###header div:style(min-height:auto !important)
+	! other
 provereno.media##.mistape_caption
 
 provoda.me##.b-catalog-application
