@@ -39,7 +39,8 @@ play.google.com##+js(ra,jslog)
 
 ||google.com/log?$important
 
-/cleardot.gif
+!/cleardot.gif  # with this form google drive sometimes grays down filenames.
+/cleardot.gif$redirect=1x1.gif  #  updated version
     ! ||google.com/images/cleardot.gif$3p
     ! ||gstatic.com/docs/common/cleardot.gif
 
@@ -60,7 +61,9 @@ google.com##.header:style(position:static !important)
 ! from uBlock filters
 !||docs.google.com/*/logimpressions?$xmlhttprequest,domain=docs.google.com
 ! https://github.com/uBlockOrigin/uAssets/pull/5997
-||docs.google.com/*/logImpressions?$xhr,redirect=nooptext,domain=docs.google.com
+!||docs.google.com/*/logImpressions?$xhr,redirect=nooptext,domain=docs.google.com
+! Update: this not only on docs, on drive too. Updated version:
+||google.com/*/logImpressions?$xhr,redirect=nooptext
 
 ! "old browser" notification, may be other
 docs.google.com##.docs-butterbar-container
