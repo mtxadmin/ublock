@@ -3199,6 +3199,14 @@ bestbosoms.com##.header-bottom
 bestbosoms.com##form
 bestbosoms.com##.friends
 
+||bestbuy.com/*/analytics-*/  # is in Adguard
+||bestbuy.com/~assets/bby/_js/ext/bbydyn/dyn_digital_gvp.js
+||bestbuy.com/~assets/bby/_com/shop/welcome-back-toast/
+||bestbuy.com/~assets/bby/_com/shop/log-handler/
+||bestbuy.com/~assets/bby/_com/shop/location-persistence/  # popup
+bestbuy.com##a[href="https://www.bestbuy.com"]
+bestbuy.com##.top-sticky:style(position:static !important)
+
 ! banners
 bestdroidplayer.com##.block-caixa-de-atencao
 bestdroidplayer.com##[href="https://bestdroidplayer.com/get-free-guides/"]
@@ -6268,6 +6276,7 @@ doctorhead.ru##.section-banner-body
 doctorhead.ru##.product-quick
 doctorhead.ru##.button:has-text(в 1 клик)
 doctorhead.ru##.quick-view-bonuses
+doctorhead.ru##.modal-wr--location
 
 ||doctorlom.com/doctor_lom_znsm.png
 
@@ -8430,16 +8439,19 @@ forbes.ru##button:has-text(Подписаться)
 forbes.ru##*:matches-css(height:176px)
     ! top of the right column
 forbes.ru##img[src="/placeholder.svg"]:upward(1)
+	! banners and promos
+forbes.ru##.block-bnr-in-text
+! promos
+forbes.ru##li:has(a[href*="/spetsproekt/"])
+forbes.ru##a:has-text(Партнерский материал)
     ! subscribe
 forbes.ru##a:has-text(Подписаться)
 forbes.ru##svg[height="56"]
 forbes.ru##div:xpath(//div[contains(text(),'Подпишитесь')]):upward(2)
     ! other
 forbes.ru##.header-menu-wrap:style(position:static !important)
-forbes.ru##.block-bnr-in-text
 forbes.ru##.main-menu:style(padding-top:0px !important)
 forbes.ru##.header-bottom:style(margin-top:0px !important)
-forbes.ru##a:has-text(Партнерский материал)
 ! sticky div after the footer
 forbes.ru##footer ~ div
 forbes.ru##div:has(>span:has-text(Теперь Forbes можно слушать))
@@ -9401,7 +9413,6 @@ golinuxcloud.com##.inside-header
 
 ||golosobraz.ru/*/lp_top_back.jpg
 golosobraz.ru###note_18plus
-golosobraz.ru###testimonials
 golosobraz.ru###share
 golosobraz.ru###benefits
 
@@ -9958,6 +9969,8 @@ habr.com#?#section.tm-block_spacing-around:has(> div.tm-block__body > div.tm-pro
 # ||habr.com/kek/ - don't, it is json comments
 ! рейтинг свежих комментариев скрыли, теперь там заглушка с промо. Убираем.
 habr.com##.tm-votes-lever__score-fallback:has-text(Зарегистрируйтесь на Хабре)
+
+hranidengi.ru##.ban1
 
 ||hsto.org/getpro/neuro-habr/
 ||hsto.org/getpro/effect/  # also effect.habr.com
@@ -13685,8 +13698,6 @@ level.travel##.mailer_widget
 level.travel##.footer__mobile-apps
 level.travel##.homepage-searcher__mobile-app-links
 level.travel##.pa_list
-! ad "testimonials"
-level.travel##.testimonials
 ! seo texts
 level.travel##.mpage_text_stitle
     ! other
@@ -15749,7 +15760,6 @@ mosavtoshkola.org##.ledforma-statiy
 mosavtoshkola.org##.leadforma-1
 mosavtoshkola.org##.leadforma-2
 mosavtoshkola.org##.leadforma-3
-mosavtoshkola.org##.testimonial
 
 moscamp.ru##.recall
 
@@ -18154,6 +18164,12 @@ parazit-info.ru##noindex
 parilka.by###logodesc
 parilka.by##a[href="#wrapheader"]
 
+parismatch.com###menu-primary:style(margin-left:0px !important)
+parismatch.com##.lmn-topban
+parismatch.com##.lmn-desk
+parismatch.com##.lmn-mob
+parismatch.com##.subheader
+
 parthenon-house.ru##body > .container > div.row:nth-of-type(1)
 parthenon-house.ru###noshow1
 
@@ -20391,7 +20407,6 @@ regard.ru##button:has-text(Быстрый заказ)
 regard.ru##button::after
 
 regexbuddy.com##.buynow
-regexbuddy.com##.testimonial
 regexbuddy.com###label
 regexbuddy.com###icon
 
@@ -23454,7 +23469,6 @@ staff.am###hot_jobs_block
 staff.am##.stories
 staff.am##.stories_col
 staff.am##.stories_label
-staff.am##.testimonials
 staff.am##.job-list-item-add
 staff.am##.navbar-brand
 staff.am##.job-heard-text
@@ -24541,6 +24555,8 @@ telemetr.io##.list-header:style(position:static !important)
 
 telenor.hu##.hero-carousel
 telenor.hu##.hero-top-banner
+
+telltrue.net##.overlay
 
 temowind.ru###header
 temowind.ru###sidebar
@@ -28274,6 +28290,7 @@ xelent.ru##.tech-widget
 ||xhamster.com/mlxhl/v1/for-page
 ||xhamster.com/service-worker-fake.js
 ||xhamster.com/x-api?
+||xhcdn.com/*/vpnGeoPicker
 @@||xhcdn.com/*/images/transparent.gif  # exclusion for a placeholder
 xhamster.com##.main-wrap:style(filter:none !important)
 xhamster.com##div:style(filter:none !important)
@@ -28285,9 +28302,12 @@ xhamster.com##.parental-control-dialog
 xhamster.com##.age-protect
 xhamster.com##.dialog-desktop-container
 xhamster.com##.alert-box
+!totop
+xhamster.com##div:has(>.top)
     ! banners and promos
 xhamster.com##.top-video-block--recommendations
 xhamster.com##.live-nav
+xhamster.com##[class*=insideVideoList]
     ! other
 xhamster.com##.dlg-backing
 xhamster.com##.overlay-footer
