@@ -6663,6 +6663,14 @@ dsk1.ru##.v3-shynav.v3-header-wrapper
 dsk1.ru##.v3-shynav.v3-header-wrapper
 dsk1.ru##.accept-cookies
 
+! dmcdn.com: trendyol.com domain
+||dsmcdn.com/marketing/
+||dsmcdn.com/mweb/production/dom-event-tracker.min.js
+||dsmcdn.com/mweb/master/country-selection  # script blurs the page on trendyol.com
+||dsmcdn.com/mweb/master/boutique-list-seo
+||dsmcdn.com/mweb/master/gtm.service
+||dsmcdn.com/sfint/production/newrelic
+
 ||dsnews.ua/static/build/img/svg/logo$image
 dsnews.ua##.c-banner__logo
 
@@ -6776,6 +6784,13 @@ duolingo.com##div:has(>img[src*="cloudfront.net/images/practiceHub/"])
 duolingo.com##button:has(img[src*="cloudfront.net/images/super/"])
 duolingo.com##div:has(>img[data-test="plus-offer-logo"]):has-text(Попробуйте Super бесплатно)
     ! other
+
+||duplichecker.com/yxwyv/  # ad scripts  # is in Adguard
+duplichecker.com##.add_text_for_pro
+duplichecker.com##.plans-bottun
+duplichecker.com##.text-center.img1class
+duplichecker.com##.main-banner-part
+duplichecker.com##.carousel
 
 ! oneclick
 dvafazana.ru##.MDclick
@@ -8736,6 +8751,10 @@ fuzz-magazine.ru##.menuBlock:style(position:static !important)
 ||piter.tv/img/news_default_
 
 f-w.in##.header
+
+||fwdcdn.com/frame/partners/  # from Ru AdList
+! from Ru AdList
+##iframe[src*="fwdcdn.com/frame/partners/"]
 
 fxstreet.com###tracking-gtm-global-alert
 fxstreet.com##.fxs_alert_featured
@@ -11070,6 +11089,10 @@ ichudoru.com###toc_container
 icims.com###logo
 
 ict2go.ru##.event-subscribe
+
+! oneclick
+iddis.store##.base-button--primary
+iddis.store##.ids-banner-slider
 
 idea4web.biz##.head1
 idea4web.biz##.head2
@@ -14483,6 +14506,16 @@ magazin-t.ru##.header-menu-fixed:style(position:static !important)
 ||magazin-vann.ru/img/head*.jpg
 ||magazin-vann.ru/img/door.jpg
 magazin-vann.ru##div.novelty_s
+
+!||magesy.blog/wp-content/plugins/  # from uBlock filters  # old rule, now it is ineffective
+! in general, the site is useless. No info, all links are shorted. I don't want to block it though
+! some rules
+    ! sidebar
+||magesy.blog/magesy/forthepros$image
+||magesy.blog/magesy/magesy-header.webp$image
+magesy.blog##strong:has-text(Adblock)
+magesy.blog##.sidebar-container
+	! other
 
 magic-drive.ru##.offer-slide
 
@@ -29833,17 +29866,6 @@ _liveinternet.gif  # from Ru AdList
 
 ||mobzon.ru/adbp/adbp.js  # from Ru AdList
 
-||duplichecker.com/yxwyv/  # ad scripts  # is in Adguard
-duplichecker.com##.add_text_for_pro
-duplichecker.com##.plans-bottun
-duplichecker.com##.text-center.img1class
-duplichecker.com##.main-banner-part
-duplichecker.com##.carousel
-
-! oneclick
-iddis.store##.base-button--primary
-iddis.store##.ids-banner-slider
-
 # futurecdn.net  # "platform for specialist media with scalable, diversified brands  market leading brands  lead generation  advertising solutions  digital licensing  marketforce"
 # update: do not block imgs from there.
 # update: there are some tracking scripts there. When they blocked, techradar.com doesn't show imgs. Ok.
@@ -29865,17 +29887,6 @@ ifbest.org##.top-menu-left
 ifbest.org##.logo-banner
 
 knife.media##.footer__copy
-
-||dsmcdn.com/marketing/
-||dsmcdn.com/mweb/production/dom-event-tracker.min.js
-||dsmcdn.com/mweb/master/country-selection  # script blurs the page on trendyol.com
-||dsmcdn.com/mweb/master/boutique-list-seo
-||dsmcdn.com/mweb/master/gtm.service
-||dsmcdn.com/sfint/production/newrelic
-
-||fwdcdn.com/frame/partners/  # from Ru AdList
-! from Ru AdList
-##iframe[src*="fwdcdn.com/frame/partners/"]
 
 macworld.co.uk##.topNav:style(position:static !important)
 
@@ -29899,8 +29910,6 @@ rufox.ru*/ncounter.pl?  # from Ru AdList
 
 !duunitori.fi
 ||duunitori.imgix.net/media/duunivahti-hero-desk.jpg
-
-||magesy.blog/wp-content/plugins/  # from uBlock filters
 
 ! thegamer.com : lazyload data-img-url
   ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
