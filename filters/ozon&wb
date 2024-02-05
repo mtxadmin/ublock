@@ -73,12 +73,13 @@ ozon.ru###stickyHeader:style(padding:initial !important; margin:initial !importa
 !||ozone.ru/assets/*/bx-  # location popups  # don't, too broad, this breaks some ui elements. Instead:
 !||ozone.ru/assets/*/bx-fe-ui-kit-typography-helper.js  # location popups  # don't, it breaks json loading
 ozon.ru##.modal:has-text(город)
-ozon.ru##.vue-portal-target:has-text(/Добавить адрес в .*\?/)
 ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли):not(:has-text(Не нашли нужный фильтр))
 ozon.ru##div[data-widget=alertPopup]
 !ozon.ru##.vue-portal-target - don't, filters use it too
 ozon.ru##.vue-portal-target:has-text(/(^|\s)опрос/i)
+ozon.ru##.vue-portal-target:has-text(/Добавить адрес в .*\?/)
+ozon.ru##.vue-portal-target:has-text(Оцените ваши покупки)
 ||ozone.ru/assets/*/cms-cookie-bubble.  # is in Ru AdList
 ! is in Adguard
 ozon.ru##[data-widget="cookieBubble"]
@@ -159,6 +160,7 @@ ozon.ru##a[href^="https://www.ozon.ru/product/elektronnyy-lotereynyy-bilet"]
 ozon.ru##[data-widget="container"]:has-text(Реклама):not(:matches-path(/\/category\//))
 ozon.ru##[data-widget=objectLine]:has-text(Ловите часы продажи)
 ozon.ru##[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
+ozon.ru##div:has(>img[src*="/blackfriday-"])
 ozon.ru##[data-widget="skuLine"]:has-text(Лучшие предложения)
 ozon.ru##[data-widget="sellerCarousel"]
 ozon.ru##[data-widget="blackFridayStatus"]
@@ -188,6 +190,7 @@ ozon.ru##[data-widget="userAvatar"]
 ozon.ru##a[href="https://finance.ozon.ru/"]:has(img)
 finance.ozon.ru##.notification:has-text(подписку)
 finance.ozon.ru##.premium-benefit-card
+finance.ozon.ru###modal-container:has(button:has-text(Получить бесплатно))
 ! и вот на это навязывание смотреть надоело. Иконку с топа убираем, пункт меню оставляем
 !ozon.ru##a[href="/travel/"]:has(img)  # v1
 ozon.ru##a[href^="/travel/"]:has(img)
@@ -279,8 +282,13 @@ ozon.ru##div[celltrackinginfo]
 ! and also. Old design.
 ! reviews without text are useless
 ozon.ru##div[data-review-uuid]:not(:has-text(/Вам помог этот отзыв\?|Показать весь отзыв/))
+! just img
+||ozone.ru/s3/my-account-api-img/*/OD-ok.png$image
+
 
     ! Wildberries
+! their domains: wildberries.ru, wb.ru, paywb.com, paywb.ru, wb-bank.ru
+!
 ||wildberries.ru/stats/
 ||wildberries.co.il/stats/
 ||wildberries.fr/stats/
