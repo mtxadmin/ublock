@@ -174,7 +174,7 @@ ozon.ru##[data-widget="container"]:has([data-widget="hotsaleMain"])
 ozon.ru##[data-widget="rateBoughtItems"]:not(:matches-path(/my/orderdetails)):not(:matches-path(/my/orderlist))
 ! inline related - полезно, но не надо сходу в нос совать. Ниже после отзывов там еще один такой же блок есть, тот оставлен
 ozon.ru##div:has-text(Вам помог этот отзыв) ~ [data-widget="skuGrid"]
-ozon.ru##[data-widget="webListReviews"] ~ [data-widget="skuGrid"]
+ozon.ru##[data-widget="webListReviews"] ~ [data-widget="skuGrid"]:not(:matches-path(/reviewVuuid/))
 ! избранное захламляется посторонними вкраплениями. Оставляем только своё избранное.
 ozon.ru##[data-widget="caption"]:has-text(Подобрано для вас) ~ [data-widget="paginator"]:matches-path(/my/favorites)
 ozon.ru##[data-widget="actionCards"]
