@@ -278,7 +278,7 @@ ozon.ru##span:has-text(Условия доставки из-за рубежа):s
 ozon.ru##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в ответ/)))
 ! new design
 ozon.ru##div:has(>div>span:has-text(/0 комментариев|1 комментарий/))
-ozon.ru##div[celltrackinginfo]
+ozon.ru##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/))
 ! and also. Old design.
 ! reviews without text are useless
 ozon.ru##div[data-review-uuid]:not(:has-text(/Вам помог этот отзыв\?|Показать весь отзыв/))
