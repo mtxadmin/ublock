@@ -322,6 +322,13 @@
 
 ||3nx.ru/images/3nx_ru_logo/
 
+404media.co##.gh-announcement-bar
+    ! paywall
+404media.co##.post-access-cta
+404media.co##.fading::after
+    ! other
+404media.co##.footer__bottom
+
 ||40momporntube.com/images/
 
 433175.ru$inline-script  # "обнаружен блокировщик рекламы"
@@ -784,6 +791,8 @@ activexperts.com###topbar
 ||actualtraffic.ru/uploads/pr/$image
 
 acums.ru##.cs-expertPlagin-tpl
+! inline related
+acums.ru##.cherry
 
     ! top
 adamtheautomator.com##.post-meta:style(padding-top:0px !important)
@@ -922,6 +931,7 @@ adsecurity.org###sidebar_bottom
 adsecurity.org###footer
 
 adult-images.ru$inline-script
+@@||adult-images.ru^$generichide,badfilter
 
 adultium.com##.player_modal_content
 adultium.com##.count
@@ -1115,6 +1125,9 @@ a1991.dscr.akamai.net$script  # page blocking scripts
 ||akamaized.net/oil/
 /oil/*-release.chunk.js  # is in EasyList and Fanboy's
 
+! totop
+akbmoscow.ru##.topbutton
+
 ||akcdn.net/partnerlogosmall/
 
 ak-info.ru###header
@@ -1151,6 +1164,8 @@ alexell.ru###header
 alexgyver.ru##.fusion-sticky-header-wrapper:style(position:static !important)
 alexgyver.ru##.fusion-secondary-main-menu:style(position:static !important)
 alexgyver.ru##.alert-danger.error.alert.fusion-alert
+
+@@||alexstuff.ru^$generichide,badfilter
 
 alexzsoft.ru##.blog-header
 ||alexzsoft.ru/wp-content/themes/alexsoft/img/fon/triangles.jpg
@@ -2203,6 +2218,10 @@ audi-club.ru##.adv_strings_wrapper
 audi-club.ru##.XenAdvShop
 
 audiobooks.pw##noindex
+
+@@||audioportal.su^$generichide,badfilter
+! preheader
+audioportal.su##.p-header
 
 audiotag.info##.c-agree
 
@@ -3567,6 +3586,9 @@ bleepingcomputer.com##header.nav-up:style(transform:none !important; -webkit-tra
 
 blioteka.ru##[href^="https://videocomics.ru/"]
 
+||blog.hu/pixel  # from Hufilter
+||blog.hu/*/hird/  # from Hufilter
+
 ! blogspot
 ||blogblog.com/img/widgets/subscribe$image
 ||blogblog.com/1kt/awesomeinc/body_gradient_dark.png
@@ -4468,6 +4490,8 @@ charlifox.ru###logo_desc_new
 
 chartio.com##.tutorial-toc__wrapper
 
+||chat.hu/imgadverts  # from Hufilter
+
 chayka-sport.ru##.main_ico_phone
 
 cheaperthandirt.com##.guarantee-box
@@ -4855,6 +4879,8 @@ cityescape.ru##html:style(-webkit-tap-highlight-color:initial !important)
     ! other
 
 ||citymaker.ru/tpldata/images/logo*.png
+
+||civic-club.ru/photo/  # not a directory, but one photo on root
 
 classmag.ru##.slider
 classmag.ru###anketa-wrapper
@@ -5266,6 +5292,8 @@ cov.su##[class$=__positionfixed]
 
 ||covertarget.com/ct.gif  # logo
 covertarget.com*_*.php  # from EasyList
+
+||cp24.com/*/image.png
 
 cpanet.com##.birdseye-header:style(position:static !important)
 
@@ -7516,6 +7544,8 @@ etpgpb.ru##.blurable:style(filter:none !important)
 etpgpb.ru##.modal--archiveProcedure.modal
     ! other
 
+||eudomain.eu/affiliate  # from Hufilter
+
 eurabota.com##.artop
 
 eureca.ru##.left_stick
@@ -8066,6 +8096,10 @@ fembed.com##+js(aeld, /^(?:click|mousedown)$/, _0x)
 fembed.com##+js(aopw, _pop)
 fembed.com##+js(aopr, decodeURI)
 
+||femcafe.hu/*/spike_ad/  # from Hufilter
+||femcafe.hu/*/sponsoration/  # from Hufilter
+||femcafe.hu/*/szponzoracio/  # from Hufilter
+
 feringer.ru###rocketmeluncur
 feringer.ru##.clr.row1
 feringer.ru##.f-copy
@@ -8557,6 +8591,8 @@ fossmint.com##a:has(.ctaButton)
 fosspost.org##.svq-header--sticky:style(position:static !important)
 fosspost.org##a[href^="https://bit.ly/"]
 
+||fotolog.com/*/fotolog-fav.png
+
 fountravel.ru##.smart-head-sticky:style(position:static !important)
 
 ! is in EasyPrivacy
@@ -8755,6 +8791,9 @@ f-w.in##.header
 ||fwdcdn.com/frame/partners/  # from Ru AdList
 ! from Ru AdList
 ##iframe[src*="fwdcdn.com/frame/partners/"]
+
+fwwgo.com$script,3p  # ad scripts  # don't block css  # no root, but
+||fwwgo.com/images/
 
 fxstreet.com###tracking-gtm-global-alert
 fxstreet.com##.fxs_alert_featured
@@ -9120,6 +9159,8 @@ getmatch.ru##app-people
 forums.getpaint.net##.cPost_contentWrap > .ipsResponsive_hidePhone
 
 getstream.io##.str-topbar:style(position:static !important)
+
+||gexo.com/gfx/fast/gexo.png
 
 gfaq.ru##td:nth-of-type(2) > table:nth-of-type(1) > tbody > tr:nth-of-type(1) > td
 
@@ -10007,6 +10048,9 @@ habr.com#?#section.tm-block_spacing-around:has(> div.tm-block__body > div.tm-pro
 # ||habr.com/kek/ - don't, it is json comments
 ! рейтинг свежих комментариев скрыли, теперь там заглушка с промо. Убираем.
 habr.com##.tm-votes-lever__score-fallback:has-text(Зарегистрируйтесь на Хабре)
+
+||hirado.hu/*/microsites/*wallpaper*.  # from Hufilter
+||hirado.hu/Newsreel/*_bg_*.  # from Hufilter
 
 hranidengi.ru##.ban1
 
@@ -11115,6 +11159,9 @@ idriver.ru##.ts-logo
 
 i-fakt.ru##.logo-blog-info-widget-wrapper
 
+ifbest.org##.top-menu-left
+ifbest.org##.logo-banner
+
 igg-games.com###idModal.modal-content
 igg-games.com###HDQ
 ||igg-games.com/*/iggbackground.jpg
@@ -12005,6 +12052,8 @@ japantoday.com##.widget--animated
 ||jav.si/js/zplay.js  # from uBlock filters
 ||jav.si/js/mMbVAA7.js  # from uBlock filters
 ||javtiful.com/jtmoney/jtmoney_front.js  # from uBlock filters
+
+||javascript.ru/img/ws_*.png  # from Adguard
 
 javatpoint.com###myBtn
 ! top menu
@@ -13193,6 +13242,8 @@ kudago.com##.typo-help
 
 kudamoscow.ru##.about_site_desc
 
+||kulichki.net/images/frontnew4.jpg
+
 kulikavto.ru##.item_aut_block
 kulikavto.ru##.header-name
 kulikavto.ru##.site-copy
@@ -13459,6 +13510,11 @@ lastday.club##.td-post-sharing-bottom
 latestgadget.co##.menu-tiny-label
 
 launchberg.com##.site-nav-main:style(position:static !important)
+
+laweekly.com##.cb-nav-bar-wrap:style(position:static !important)
+laweekly.com##.cb-logo-nav
+laweekly.com##.cb-logo-nav-sticky-type
+laweekly.com###cb-nav-logo
 
 law-world.ru##.arcticmodal-container
 law-world.ru##.arcticmodal-overlay
@@ -13779,6 +13835,9 @@ libreelec.tv##.overlay
 libreelec.tv###animatedComponent
 forum.libreelec.tv##.userAvatarImage
 
+||libri.hu/export/prodBann/  # from Hufilter
+||libri.hu/html/images/skin/  # from Hufilter
+
 licenziya-fsb.com##noindex
 ||licenziya-fsb.com/*/trackback
 
@@ -13820,6 +13879,10 @@ lifehacker.ru##.widgets-renderer-item_comments
 lifehacker.ru##.left-sidebar__sticky-container:style(position:static !important)
 
 ||lifelink.ru/img/lifelink_banner$image
+
+life-with-cars.ru##.bottom-header-wrapper:style(position:static !important)
+
+||liga.net/js/remp.js  # is in Ru AdList and Fanboy's
 
 likegeeks.com##.nd-social-links
 likegeeks.com##.main-header-row
@@ -14686,6 +14749,9 @@ marketwatch.com##.container--footer
 marketwatch.com##.container--footer::before
 ! other
 
+martijnbrant.net##.sidebar-profile
+martijnbrant.net###bottom-bar
+
 ! autogenerated spam?
 martinzwerts.com###u:style(position:static !important)
 martinzwerts.com###l
@@ -14720,6 +14786,12 @@ masterim.guru###masthead
 masterim.guru##.site-footer
 masterim.guru##.rating-box
 masterim.guru##.entry-tags
+
+||masterinvest.info/*/navigation.jpg
+masterinvest.info##.referer-item
+masterinvest.info##.module-content-tags
+masterinvest.info##.social-group-buttons
+masterinvest.info##.about-text
 
 masterskayapola.ru###header
 masterskayapola.ru##blockquote:has-text(Если вам нужны мастера)
@@ -15646,6 +15718,8 @@ mobiltelefon.ru##i:has-text(Подписывайтесь)
 mob-mobile.ru##.slider
 mob-mobile.ru##.sliders
 
+||mobzon.ru/adbp/adbp.js  # from Ru AdList
+
 ! general rule for bg_ sometimes doesn't work here due to exclusions in lists. Ok, let's repeat it.
 ||moddb.com/*/bg_header_logo.png
 ||moddb.com/*/bg_header.png
@@ -15845,6 +15919,8 @@ moskvax.ru###pointer
 
 moskvichmag.ru##.MagCaption
 moskvichmag.ru##.ArticleIntro
+
+||moslenta.ru/assets/flatlogo$image
 
 mosreg.ru##app-announcement
 mosreg.ru##.w_footer__restriction
@@ -17721,6 +17797,8 @@ onlinesim.ru###support
 onlinetrade.ru##.siteAgeRate
 onlinetrade.ru##.footer__countersline
 
+only-paper.ru##.header-inner:style(height:auto !important)
+
 ! anti-Adblock popup:
 ! <script type="text/javascript" data-cfasync="false">window.addEventListener('DOMContentLoaded', ... It looks your adblocker or browser is blocking JavaScript</h3> ... Click Allow JavaScript for instructions. </div><button data-instructions-url=\"https://my.getadmiral.com/instructions\">Allow JavaScript</button><img src=\"https://pubimgs.com/ ... "https://succeedscene.com/ads_.../v2/ads.load.js" : f) })), s.insertBefore(u, $) })("https://chickensstation.com/v2cjh-...
 onmsft.com##+js(addEventListener-defuser.js)
@@ -18540,6 +18618,8 @@ phpclub.ru##.avatar
 phun.org###headerProxy
 phun.org##.scrollContainer
 phun.org##[href*="fontplace9.com/"]
+
+||piacesprofit.hu/files/skin/  # from Hufilter
 
 piccash.net##.pcash-toolbar
 piccash.net##.pcash-toolbar-content-logo
@@ -20768,6 +20848,10 @@ riverset.ru##.title:has-text(дружить)
 
 rivertourist.ru###logodesc
 
+rk-rti.ru##.popup-policy
+||rk-rti.ru/*/icon-arrow.png
+rk-rti.ru##.b-start-arrow
+
     ! popups
 rlsnet.ru##.attention-modal
     ! banners and promos
@@ -22113,13 +22197,16 @@ securitygladiators.com##.sticky-inside-pad
 securityinnovation.com##.header-container-wrapper:style(position:static !important)
 securityinnovation.com##.blog-subs-form
 
-! site breaks copypaste
+	! site breaks copypaste
 securitylab.ru$inline-script
 ||securitylab.ru/js/cpb.js
-! other
+	! socials
+securitylab.ru##.section-subscribe-social
+! big text block in the article
+securitylab.ru##.telegram-block
+    ! other
 securitylab.ru###mc-container:has-text(Никто ещё не оставил комментариев, станьте первым.)
 securitylab.ru##.last-news-block
-securitylab.ru##.section-subscribe-social
 
 securitynerd.com##[class^=astra-advanced-hook]
 
@@ -23531,6 +23618,9 @@ staff.am##.text-center:has-text(Share this job)
 
 stalker-kb.ru##[href="http://stalker-kb.ru/"]
 
+@@||stalker-mods.su^$generichide,badfilter
+@@||stalker-mods.clan.su^$generichide,badfilter
+
 starmommy.com##.sticky-header:style(position:static !important)
 
 ||stars-s.ru/img/astra.png
@@ -23592,6 +23682,8 @@ steelsafeshop.ru##.orange_submit
 stefanroth.net##.eggnews-ticker-wrapper
 stefanroth.net##.date-section
 
+steinberg.net##.steinberg-logo-bar
+
 stellarinfo.com##.Category_header:style(padding-top:0px !important; padding-bottom:0px !important)
 stellarinfo.com##.getexe1
 stellarinfo.com##.right_side_bar:style(position:static !important)
@@ -23647,6 +23739,7 @@ stm-electronics.ru##div.card-icons
 
 ||stopbeda.ru/images/shop/bnow1.png
 
+@@||stopgame.ru/users/$generichide,badfilter
 stopgame.ru##.inTop
 
 storagepoint.net###secondary:style(position:static !important)
@@ -23777,6 +23870,9 @@ stroy-okey.ru##.sb-rk-bn-item
 stroy-podskazka.ru##div:has-text(Информация предоставлена в справочных целях)
 stroy-podskazka.ru##.gallery-image::before
 stroy-podskazka.ru##.gallery-grid__image::before
+
+@@||studizba.com^$generichide,badfilter
+studizba.com##.video-widget
 
 ||studopedia.info/i/studopedia.jpg
 
@@ -25035,6 +25131,8 @@ ticketscloud.org##.navbar-event-sticky-se
     ! other
 ticketscloud.org##.showroom-widget-box__mobile
 ticketscloud.org##.showroom-event-slide__cover
+
+ticktick.com##[class^=brand_]
 
 tiger-gun.ru##.fixed_block_top:style(position:static !important)
 tiger-gun.ru##.bg_subscribe_wrapper
@@ -29614,10 +29712,8 @@ zzbabes.com###bclose
 /mobile_menu.js
 
 ! that's generichides from Ru AdList. Todo recheck all. Seems they are all ok.
-@@||audioportal.su^$generichide,badfilter
 @@||audioskazki.net^$generichide,badfilter
 @@||browserleaks.com^$generichide,badfilter
-@@||dterod.com/player.php^$generichide,badfilter
 @@||electric-house.ru^$generichide,badfilter
 @@||electro-sila.ru^$generichide,badfilter
 @@||elsyst.gnomio.com^$generichide,badfilter
@@ -29633,7 +29729,6 @@ zzbabes.com###bclose
 @@||gtavicecity.ru^$generichide,badfilter
 @@||gwss.ru^$generichide,badfilter
 @@||hideip.me^$generichide,badfilter
-hideip.me$script  # from Ru AdList
 @@||hosgeldi.com^$generichide,badfilter
 @@||html-template.ru^$generichide,badfilter
 @@||imgbum.net^$generichide,badfilter
@@ -29645,7 +29740,6 @@ hideip.me$script  # from Ru AdList
 @@||kubik3.ru^$generichide,badfilter
 @@||list-org.com^$generichide,badfilter
 @@||liveinternet.ru^$generichide,badfilter
-@@||lotzon.com^$generichide,badfilter
 @@||lovikod.ru^$generichide,badfilter
 @@||motocitizen.info^$generichide,badfilter
 @@||nabazare.blogspot.ru^$generichide,badfilter
@@ -29674,10 +29768,8 @@ hideip.me$script  # from Ru AdList
 @@||sochi.camera^$generichide,badfilter
 @@||spec-komp.com^$generichide,badfilter
 @@||sports.ru^$generichide,badfilter
-@@||stalker-mods.clan.su^$generichide,badfilter
 @@||svetmonet.ru^$generichide,badfilter
 @@||tmbw.ru^$generichide,badfilter
-@@||vnx.su^$generichide,badfilter
 ! and many others (todo)
 
 /convertfox.min.js
@@ -29808,63 +29900,7 @@ avid.com##.nav-menu:style(position:static !important)
 /tiara/*
 /tiara.min.js  # ||daumcdn.net/*/tiara.min.js
 
-martijnbrant.net##.sidebar-profile
-martijnbrant.net###bottom-bar
-
-||moslenta.ru/assets/flatlogo$image
-
-fwwgo.com$script,3p  # ad scripts  # don't block css  # no root, but
-||fwwgo.com/images/
-
-||blog.hu/ad/  # from Hufilter
-||blog.hu/*/ad/  # from Hufilter
-||blog.hu/pixel  # from Hufilter
-||blog.hu/*/hird/  # from Hufilter
-
-||chat.hu/imgadverts  # from Hufilter
-
-||hirado.hu/*/microsites/*wallpaper*.  # from Hufilter
-||hirado.hu/Newsreel/*_bg_*.  # from Hufilter
-
-||piacesprofit.hu/files/skin/  # from Hufilter
-
-||femcafe.hu/*/spike_ad/  # from Hufilter
-||femcafe.hu/*/sponsoration/  # from Hufilter
-||femcafe.hu/*/szponzoracio/  # from Hufilter
-
-||libri.hu/export/prodBann/  # from Hufilter
-||libri.hu/html/images/skin/  # from Hufilter
-
-||fotolog.com/*/fotolog-fav.png
-
-||eudomain.eu/affiliate  # from Hufilter
-
-prfl.me  # yndx.prfl.me  # ad URLs
-
-||cp24.com/*/image.png
-
-laweekly.com##.cb-nav-bar-wrap:style(position:static !important)
-laweekly.com##.cb-logo-nav
-laweekly.com##.cb-logo-nav-sticky-type
-laweekly.com###cb-nav-logo
-
-||kulichki.net/images/frontnew4.jpg
-
-||civic-club.ru/photo/  # not a directory, but one photo on root
-
-||masterinvest.info/*/navigation.jpg
-masterinvest.info##.referer-item
-masterinvest.info##.module-content-tags
-masterinvest.info##.social-group-buttons
-masterinvest.info##.about-text
-
-||liga.net/js/remp.js  # is in Ru AdList and Fanboy's
-
 _liveinternet.gif  # from Ru AdList
-
-||javascript.ru/img/ws_*.png  # from Adguard
-
-||mobzon.ru/adbp/adbp.js  # from Ru AdList
 
 # futurecdn.net  # "platform for specialist media with scalable, diversified brands  market leading brands  lead generation  advertising solutions  digital licensing  marketforce"
 # update: do not block imgs from there.
@@ -29879,22 +29915,13 @@ futurecdn.net$xhr
     ! vanilla.futurecdn.net
 ||futurecdn.net/toptenreviews/media/img/missing-image.svg$image  # toptenreviews.com
 
-||gexo.com/gfx/fast/gexo.png
-
 ||hackr.io/blog/media/udacity-horizontal-banner.png
-
-ifbest.org##.top-menu-left
-ifbest.org##.logo-banner
-
-knife.media##.footer__copy
 
 macworld.co.uk##.topNav:style(position:static !important)
 
 d3ward.github.io##.gt-link
 
 metricfire.com##.topbar:style(position:static !important)
-
-/nct.php?nid=  # is in EasyPrivacy
 
 ||gettyimages.*/pulse$ping  # is in EasyPrivacy
 
