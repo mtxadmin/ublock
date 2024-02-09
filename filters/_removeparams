@@ -185,11 +185,11 @@ $removeparam=aff,important
 $removeparam=/^aff_/i,important
     ! good old rule from Prx: aff (one of)
     ! $removeparam=aff_click_id  # from DandelionSprout's URLShortener
-    ! $removeparam=aff_fcid  # from DandelionSprout's URLShortener
+    ! $removeparam=aff_fcid  # is in DandelionSprout's URLShortener
         ! ||aliexpress.$removeparam=aff_fcid  # from Adguard
             ! aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com  # from Ru AdList
-    ! $removeparam=aff_fsk  # from DandelionSprout's URLShortener
-        ! ||aliexpress.$removeparam=aff_fsk  # from Adguard
+    ! $removeparam=aff_fsk  # is in DandelionSprout's URLShortener
+        ! ||aliexpress.$removeparam=aff_fsk  # is in Adguard
     ! $removeparam=aff_id
     ! $removeparam=/^aff_id[0-9]/  # from DandelionSprout's URLShortener
     ! $removeparam=aff_platform  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
@@ -1177,8 +1177,9 @@ $removeparam=ranSiteID  # from DandelionSprout's URLShortener
 
 # recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
-$removeparam=ref,important,domain=~flowlu.com|~privyr.com
+$removeparam=ref,important,domain=~cssportal.com|~flowlu.com|~privyr.com
     ! Exclusions:
+    ! cssportal.com - ref is a technical pointer, needed for internal navigation
     ! flowlu.com - ref is a part of web engine, suddenly.
     ! privyr.com - [at least, internal] ref is needed for signup
     !
@@ -1521,7 +1522,7 @@ $removeparam=siteId  # Oracle Eloqua  # from NeatURL
     ! $removeparam=/^siteid=/i  # from DandelionSprout's URLShortener
 
 $removeparam=sk,domain=bing.com|aliexpress.*  # from DandelionSprout's URLShortener
-    ! from Adguard, added 2022-02
+    ! ref param, is in Adguard, added 2022-02
     !||aliexpress.$removeparam=sk
     ! later:
     !$removeparam=sk,domain=bing.com|aliexpress.*  # from DandelionSprout's URLShortener
@@ -3295,7 +3296,7 @@ stacksocial.com$removeparam=rid  # from Adguard
 starlight.digital$removeparam=testadv  # from Ru AdList, modified
     ! ||vcms-api*.starlight.digital/hls/*?file=*&testadv=$removeparam=testadv  # from Adguard
 
-spotify.com$removeparam=si  # from NeatURL and Adguard
+spotify.com$removeparam=si  # is in NeatURL and Adguard
 
 steampowered.com$removeparam=/^curator_clanid/i  # from Adguard, modified
 steamcommunity.com$removeparam=/^curator_clanid/i  # from Adguard, modified
