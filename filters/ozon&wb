@@ -199,6 +199,8 @@ ozon.ru##a[href^="https://www.ozon.ru/travel/promo/"]
 ozon.ru##[data-widget="seasonWidget"]
 ! top banner 2023-11
 ozon.ru##div:matches-css(height:32px):has(img:matches-css(height:32px))
+! top banner 2024-02
+ozon.ru##div:has(>img[elementtiming*="lcp_eltiming_webToAppBanner"])
 ! реклама в выпадающем списке при поиске
 ozon.ru##.type-brand.suggestions-item
 ! при поиске автозапчастей навязчиво вылезает "гараж" - убираем его, при необходимости оно есть в меню
@@ -225,11 +227,13 @@ ozon.ru##section > div:has(>div>svg[width][height]):has(>div)
 ! "оплата после примерки" (для одежды) НЕ попадает, ну и отлично. А больше там ничего полезного и нету
     ! loans
 ozon.ru##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
-!ozon.ru##[data-widget=webInstallmentPurchase]
+! тут ранее встречалась какая-то ошибка, но не была зафиксирована
+ozon.ru##[data-widget=webInstallmentPurchase]
 ozon.ru##div > a[href="https://www.ozon.ru/section/limit"]
 ozon.ru##div:has(>span:has-text(/^Частями по /))
 ozon.ru##span:has-text(/^Частями по /)
 ozon.ru##div:has(> span:has-text(В рассрочку))
+ozon.ru##a[href^="/modal/pdp_installment"]
     ! seo
 ozon.ru##[data-widget="semanticText"]
 ozon.ru##[data-widget="tagList"]
