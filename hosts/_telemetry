@@ -503,7 +503,7 @@ sentry-cdn.com$important,all  #browser.sentry-cdn.com
 /sentry$script
     ! Exclusions:
     @@/flu/player/sentry$script  # Microsoft video player (NodeJS) on some sites
-    !@@||avito.ru/dstatic/build/client/sentry  # avito is completely broken without it  # update: disabled again
+    @@||avito.ru/dstatic/build/client/sentry  # avito is completely broken without it  # update: disabled again  # update2: enabled again, silently blocks all. Just this one script.
     !
     /sentry.bundle.min.js  # sentry.io library, see https://github.com/getsentry/sentry-javascript
     /sentry/*
