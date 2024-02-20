@@ -2543,12 +2543,14 @@ aviasales.ru##.header__title-form
 
 avidreaders.ru##.footer
 
-||avito.ru/*/build/sentry
-||avito.st/*/build/sentry
+! Exclusion
+!||avito.ru/*/build/sentry
+!||avito.st/*/build/sentry
 ||avito.ru/*/build/fingerprint
 ||avito.st/*/build/fingerprint
 ||avito.ru/stat/  # is in EasyPrivacy
 ||avito.st/stat/
+    ! ||avito.ru/stat/radar
 ||avito.ru/*/build/modern/clickstream
 ||avito.st/*/build/modern/clickstream
 ||avito.ru/dstatic/j/mon-check.js
@@ -2564,6 +2566,7 @@ avito.ru##[class^=push-root]
     ! popups
 !avito.ru##[class*=tooltip-placement-bottom] - breaks categories popup. Banners?
 avito.ru##[class*=tooltip-placement-bottom]:has-text(ваш город)
+avito.ru##div[data-popper-placement]
     ! banners and promos
 avito.ru##[class^=sendout-banner]
 avito.ru##[class*=items-vip]
@@ -6107,6 +6110,9 @@ dnschecker.org##.header-main-container:style(position:static !important)
 ||dns-shop.kz/*/user-notifications.js
 ||dns-shop.ru/*/page-notification.js
 ||dns-shop.kz/*/page-notification.js
+# затычка, уже случайно блокируется правилом ru.com, но и без этого скрипта всё работает. При обычной блокировке виснет на просмотре отзывов - F5 либо же так
+||dns-shop.ru/*/ru.comments-list.js$redirect=noop.js
+||dns-shop.kz/*/ru.comments-list.js$redirect=noop.js
     ! new year
 ||dns-shop.ru/*/garland.svg
 ||dns-shop.kz/*/garland.svg
@@ -6251,6 +6257,8 @@ dns-shop.ru,dns-shop.kz###id_spinner
 dns-shop.ru,dns-shop.kz##.reaction-modal__list
 dns-shop.ru,dns-shop.kz##.reaction-modal__title
 dns-shop.ru,dns-shop.kz##.menu-contacts__apps
+    ! other
+dns-shop.ru##.info-block__logo
 
 dobraprace.cz##.jobOffer__box-jobs-odber
 
@@ -6492,6 +6500,8 @@ downloadly.win##.herald-responsive-header:style(position:static !important)
 download-windows.org##.item:has(a[href="https://yandex-browser.download-windows.org"])
 ! an item too
 download-windows.org###main:has(a[href="https://yandex-browser.download-windows.org"])
+
+downsub.com##.v-alert:has-text(ad blocker)
 
 dp.ru##.b-main-menu:style(position:static !important)
 dp.ru##.b-nav-panel:style(position:static !important)
@@ -10882,6 +10892,9 @@ htmlbook.ru##aside > .block:has(a[href^="https://"])
 ! from Ru AdList
 htmlbook.ru###block-sape
 
+html-online.com##.nav-logo
+html-online.com##.site-branding
+
 ||hts.ru/?affid=$third-party  # from Adguard
 
 httpmaster.ru##.googlia.moduletable
@@ -12616,6 +12629,7 @@ kinopoisk.ru##.sticky__inner_fixed:style(position:static !important)
 kinopoisk.ru##.sticky__inner_header-offset:style(position:static !important)
 kinopoisk.ru##.sticky__inner_sticky_top:style(position:static !important)
 kinopoisk.ru##.sticky__inner:style(position:static !important)
+kinopoisk.ru##.app__header:style(position:static !important)
     ! footer
 kinopoisk.ru##.footer-partial-component__content-apps
 kinopoisk.ru##.footer-partial-component__bottom-info-age
@@ -12668,6 +12682,7 @@ kinopoisk.ru##.social-section
 kinopoisk.ru##.media-news__side
 kinopoisk.ru###footer-share-buttons
 kinopoisk.ru##.media-news__promo
+kinopoisk.ru##[class*=styles_geotag]
 
 kino-teatr.ru###special_block_img
 kino-teatr.ru###logo_block
@@ -14500,6 +14515,7 @@ m24.ru##[href="/radio"]
 m24.ru##.b-header-stripe01-wrapper_fixed
 m24.ru##.b-header-stripe02-and-stripe03-wrapper_fixed:style(position:static !important)
 m24.ru##.b-content:style(padding-top:0px !important)
+m24.ru##.b-header-wrapper:style(position:static !important)
 
 ||macrium.com/files-2/next-webinar.jpg
 macrium.com###cover
@@ -14695,6 +14711,8 @@ manageengine.com##.titleContainer
 manageengine.com##.menuDwn
 manageengine.com##.ctaWrapper
 
+mangalib.org##.page-modals:has-text(18)
+
 mangoost-airsoft.ru###head-slider
 mangoost-airsoft.ru##.new_header:style(height:auto !important)
 mangoost-airsoft.ru###wrap_header:style(height:auto !important)
@@ -14835,6 +14853,9 @@ maturexxxporno.net##h1
 maxidom.ru##.btn_click_subscription
 maxidom.ru##.toolbar
 maxidom.ru##.fixbar:style(position:static !important)
+
+maxima-library.com##.ctrlpanelbtn
+maxima-library.com##.reader:style(padding-left:10px !important; padding-right:10px !important)
 
 maximonline.ru##.app-header__wrapper:style(position:static !important)
 
@@ -15162,6 +15183,34 @@ megafon.ru##.available-options-interesting
 megafon.ru##.mfui-tile > svg
 megafon.ru##.footer__app-badge
 megafon.ru##.footer__networks-list
+
+! sbermegamarket.ru is now megamarket.ru
+||megamarket.ru/*/promoContent/
+||megamarket.ru/*/promoContentService/
+    ! popups
+megamarket.ru##.header-user-address__selector
+    ! banners
+megamarket.ru##.banner-view
+megamarket.ru##.landing-banner-view__control
+megamarket.ru##.home-aside-slider
+megamarket.ru##.square-banners-list
+megamarket.ru##.mobile-app-widget
+! top banner
+megamarket.ru##.mass-communication
+megamarket.ru##.header-entry-point__app
+megamarket.ru##.big-slider__slide
+megamarket.ru##.tile__item-banner
+megamarket.ru##.banner-view__content
+megamarket.ru##.ddl_campaign_link
+megamarket.ru##.ddl_campaign.banner-image
+    ! other
+megamarket.ru##.subscription-form
+megamarket.ru##.money-bonus
+megamarket.ru##.item-price__price-drop
+megamarket.ru##.item-add2fav
+megamarket.ru##.to-favorite-button
+megamarket.ru##.spinner
+||megamarket.ru/api/*/customerRecentlyViewedService/goods/list
 
 ||megaobzor.com/images/121.png
 ||megaobzor.com/images/mologo.jpg
@@ -20672,6 +20721,8 @@ ren.tv##.footer__bottom__left
 
 repost.uz##.new_menu--fixed:style(position:static !important)
 
+republic.ru##.post-navbar:style(position:static !important)
+
 researchgate.net##.lite-page::before
 
 resellerspanel.com##.top-wrap:style(position:static !important)
@@ -22078,21 +22129,7 @@ sberbank-ast.ru###sb_ast_loan_banner
 sbercloud.ru##.l-banner
 sbercloud.ru##.c-subscribe
 
-||sbermegamarket.ru/*/promoContent/
-||sbermegamarket.ru/*/promoContentService/
-    ! banners
-sbermegamarket.ru##.banner-view
-sbermegamarket.ru##.landing-banner-view__control
-sbermegamarket.ru##.home-aside-slider
-sbermegamarket.ru##.square-banners-list
-sbermegamarket.ru##.mobile-app-widget
-    ! other
-sbermegamarket.ru##.subscription-form
-sbermegamarket.ru##.money-bonus
-sbermegamarket.ru##.item-price__price-drop
-sbermegamarket.ru##.item-add2fav
-sbermegamarket.ru##.to-favorite-button
-sbermegamarket.ru##.spinner
+! sbermegamarket.ru is now megamarket.ru
 
 sbfront.ru##.ty-cr-phone-number
 
@@ -22527,6 +22564,8 @@ shopify.com##.subnav-wrapper
 shopify.com##.one-signup__container
 shopify.com##.remix-header:style(position:static !important)
     ! other
+
+shop-modern.ru$inline-script  # site blocks copypaste
 
 shopolog.ru##.b-catalog:has-text(Подписаться)
 shopolog.ru##.modal
@@ -27589,6 +27628,9 @@ vyborok.com$inline-script  # site blocks copypaste
 vyborok.com##.s-inner-layout__meta
 vyborok.com##noindex
 vyborok.com##.s-page-footer__suitability
+
+vyboroved.ru##.tfspoyler
+vyboroved.ru##.paneltop:style(position:static !important)
 
 vz.ru##.fly-panel__box
 
