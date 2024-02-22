@@ -2567,10 +2567,18 @@ avito.ru##[class^=push-root]
 !avito.ru##[class*=tooltip-placement-bottom] - breaks categories popup. Banners?
 avito.ru##[class*=tooltip-placement-bottom]:has-text(ваш город)
 avito.ru##div[data-popper-placement]
+! location popup
+avito.ru##div[data-marker="location/tooltip/target"]
     ! banners and promos
 avito.ru##[class^=sendout-banner]
 avito.ru##[class*=items-vip]
 avito.ru##[class^=carousel-list]
+avito.ru##div[class^=index-suggest_background]
+! promos in dropdown menu
+avito.ru##div:has(>span:has(img[src*="avito.st/s/suggest/full_color/"]))
+||avito.st/s/suggest/full_color/
+avito.ru##div[class*=credit-price]
+avito.ru##div[class*=credit-calc]
     ! спам и разводки
 avito.ru##.js-catalog-item-enum:has-text(Компьютерный мастер)
     ! socials
@@ -2581,6 +2589,11 @@ avito.ru##[class^=auth-app-social-auth-text]
 avito.ru##[class^=logo-]
 avito.ru##.icon-forbidden
 avito.ru##[class^=css-]:has-text(Войдите в профиль)
+! background images
+avito.ru##[class^=styles-module-cover]
+avito.ru##[class^=Logo-module-logo]
+! рекламные stories
+avito.ru##[class*=story-previewer]
 
 avon.com###TopNavigationContainer:style(position:static !important)
 avon.com###d-hero-carousel
