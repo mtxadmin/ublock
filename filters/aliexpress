@@ -13,7 +13,7 @@
 
 taobao.com$removeparam=activityId  # from Adguard
 
-aliexpress.com$removeparam=afSmartRedirect  # from DandelionSprout's URLShortener
+aliexpress.com$removeparam=afSmartRedirect  # is in DandelionSprout's URLShortener
 
 ! Found independently.
 aliexpress.com$removeparam=algo_exp_id
@@ -160,9 +160,9 @@ aliexpress.ru$removeparam=_t
 
 !aliexpress.com$removeparam=t - don't, it breaks related search
 
-! from Adguard, added 2022-02
-||aliexpress.$removeparam=terminal_id  # from Adguard
-    ! ||aliexpress.*^$removeparam=terminal_id  # from DandelionSprout's URLShortener
+! is in Adguard, added 2022-02
+||aliexpress.$removeparam=terminal_id  # is in Adguard
+    ! ||aliexpress.*^$removeparam=terminal_id  # is in DandelionSprout's URLShortener
 
 ||aliexpress.*^$removeparam=__tppBottom  # from DandelionSprout's URLShortener
 
@@ -265,6 +265,8 @@ aliexpress.com,aliexpress.ru##[class*=styles_carousel]
 aliexpress.com,aliexpress.ru##.fmcg-banner
 aliexpress.com,aliexpress.ru##.instore-info-rcmds
 aliexpress.com##[class^=price-banner]
+aliexpress.com##div[data-spm="newuser"]
+aliexpress.com##div[data-spm="sale_savings"]
 
     ! banner in empty shopping cart
 shoppingcart.aliexpress.com##.big-sale.empty-default
