@@ -1128,6 +1128,9 @@ a1991.dscr.akamai.net$script  # page blocking scripts
 ! totop
 akbmoscow.ru##.topbutton
 
+akbtest.ru##[class*=positionfixed]:style(position:static !important)
+akbtest.tilda.ws##[class*=positionfixed]:style(position:static !important)
+
 ||akcdn.net/partnerlogosmall/
 
 ak-info.ru###header
@@ -1765,7 +1768,6 @@ appcenter.ms##.nav-brand
 appcenter.ms###sticky-nav-container.stuck .sticky-nav-complete:style(position:static !important)
 
 appdividend.com##.topbar
-appdividend.com##.topbar-date
 
 ! blurring popup
 apple.com###ac-localnav
@@ -3071,6 +3073,8 @@ basitaalishan.com##.syndicate
 
 bassok.net##.side-text
 
+bastyon.com,pocketnet.app###footerWrapper:style(position:static !important)
+
 ||batch.moe/wp-content/themes/k-fanbatch/img/300ads.png
 ||batch.moe/wp-content/themes/k-fanbatch/img/728ads.png
 
@@ -3508,8 +3512,7 @@ bizorg.su##.footer-banner-wrapper
 bizorg.su##.product-aside-description:style(position:static !important)
 bizorg.su##.section--note
 
-b-kontur.ru##.aside
-b-kontur.ru##[class^=SupportButton]
+! see b-kontur.ru at kontur.ru
 
 ||b-kredit.com/js/leadback-events.js
 ||b-kredit.com/js/libphonenumber-js.min.js
@@ -6188,12 +6191,14 @@ dns-shop.ru,dns-shop.kz##.soft-bundle-widget
 dns-shop.ru,dns-shop.kz##.additional-sales-tabs
 dns-shop.ru,dns-shop.kz###homepage-stories-container
 dns-shop.ru,dns-shop.kz##.homepage__cards
-dns-shop.ru##.stories__card:has-text(/(Р|р)еклама/)
-dns-shop.ru##.action-swiper
+dns-shop.ru,dns-shop.kz##.stories__card:has-text(/(Р|р)еклама/)
+dns-shop.ru,dns-shop.kz##.action-swiper
+dns-shop.ru,dns-shop.kz##.info-banner
     ! stickers
 dns-shop.ru,dns-shop.kz,technopoint.ru##.additional-vobler
 dns-shop.ru,dns-shop.kz,technopoint.ru##.product-info__voblers
 dns-shop.ru,dns-shop.kz,technopoint.ru##.w-product-voblers
+dns-shop.ru,dns-shop.kz,technopoint.ru##.w-product-discount-voblers
     ! no reviews - если ничего нет - не надо маскировать дурными картинками
 ||dns-shop.ru/*/zero-opinions.png
 ||dns-shop.kz/*/zero-opinions.png
@@ -10963,7 +10968,6 @@ hunfis.ru##.pagination-sticky
 hunfis.ru##.kleo-main-header:style(position:static !important)
 
 hungarylife.ru##.topbar
-hungarylife.ru##.topbar-date
 
 ! top logo
 hunter.ru##.top
@@ -13051,6 +13055,11 @@ kondicionershik.ru##.header-desc
 konten.co.id##.jeg_midbar
 konten.co.id##.jeg_top_date
 
+! it seems, kontur.ru and b-kontur.ru are linked
+||kontur.ru/csi-reporter/
+||kontur.ru/*/header-abtest.js
+||kontur.ru/*/product-popup.js
+||b-kontur.ru/script/partial/SentryInit
     ! no blurring
 kontur.ru##.lightbox-cell
 kontur.ru##.lightbox2
@@ -13058,9 +13067,16 @@ kontur.ru###lightbox-veil
 kontur.ru##.article-announce__bg-image
 kontur.ru##.article-announce
 kontur.ru###pageWrapper:style(filter:none !important)
+    ! banners and promos
+b-kontur.ru##.header-menu__item:has-text(Попробовать)
+b-kontur.ru##.text-block:has-text(Попробовать бесплатно)
+b-kontur.ru##.aside
+    ! top
+b-kontur.ru##.page-layout__header:style(position:static !important)
     ! other
 kontur.ru##.text-block
 kontur.ru##[class^=SupportButton-supportWidgetButton]
+b-kontur.ru##[class^=SupportButton]
 
 ||koolinar.ru/media/svg/new-logo-header.svg
 koolinar.ru##.u-header:style(position:static !important)
@@ -14075,8 +14091,6 @@ litlife.club##.color-odnoklassniki.fa-odnoklassniki-square
 
 litmir.me###scrollingDiv
 
-litnet.com##.topbar:style(position:static !important)
-
 ! not litres
 litrec.net##.splide
 
@@ -14289,6 +14303,8 @@ livejournal.com##+js(set-constant, Object.prototype.Autocontext, undefined)
 ||livejournal.com^*/pagestats/  # from RU AdList
 ! from RU AdList
 liveinternet.ru,livejournal.com##[id*="_R-A-"]
+_liveinternet.gif  # from Ru AdList
+@@||liveinternet.ru^$generichide,badfilter
     ! other
 livejournal.com##.is-link
 livejournal.com##.fullscreen-wrapper
@@ -15492,8 +15508,6 @@ mignews.com.ua$inline-script  # some script AdBlock blocker
 migrantvisa.ru##.toc_white
 !inline
 migrantvisa.ru##.bs-irp
-! top
-migrantvisa.ru##.topbar-date
 ! bottom
 migrantvisa.ru##.footer-wrap::before
 
@@ -15806,6 +15820,12 @@ mobiclon.ru###our_plus
 mobile-review.com##.header__menu:style(position:static !important)
 mobile-review.com##.header__micro-anons:style(position:static !important)
 mobile-review.com##.migration-banner
+
+    ! top
+mobilespecs.net###news_top img
+mobilespecs.net###news_top:style(height:auto !important)
+mobilespecs.net###submenu > div:has(img[src*="/logo"])
+    ! other
 
 mobilewithprices.com##.coverc
 
@@ -19606,7 +19626,11 @@ price.ru##.question
 ||price.ru/*-Adfox.js
 price.ru##.promo-banner
 price.ru##.section.slider
+price.ru##.exclusive
+! labels
+price.ru##.marker
     ! other
+price.ru##.product-card__analytics
 
 priceboon.com##.aps-offer-link
 
@@ -27715,6 +27739,11 @@ wakeupsales.com###page-loader
 
 ||walletone.com/scripts/jstelemetry.js
 
+||walmart.com/px/$important,redirect=noopjs
+||walmartimages.com/*/ads_$script,redirect=noopjs
+||walmartimages.com/*/payments_analytics$redirect=noopjs
+walmart.com##.bg-washed-primary:has-text(feedback)
+
 wantedbabes.com###main-menu
 wantedbabes.com##.title
 wantedbabes.com###view-head
@@ -29434,6 +29463,8 @@ zelenograd-avtoshkola.ru##.slider-1
 
 zello.com,zellowork.com##.header-container:style(height:auto !important)
 
+zeluslugi.ru##.header__bar
+
 ||zelwin.com/trends.js  # download.zelwin.com/trends.js
 
 ||zdassets.com/ekr/snippet.js$important  # is in Ru AdList and Fanboy's
@@ -29876,7 +29907,6 @@ zzbabes.com###bclose
 @@||kttc.ru^$generichide,badfilter
 @@||kubik3.ru^$generichide,badfilter
 @@||list-org.com^$generichide,badfilter
-@@||liveinternet.ru^$generichide,badfilter
 @@||lovikod.ru^$generichide,badfilter
 @@||motocitizen.info^$generichide,badfilter
 @@||nabazare.blogspot.ru^$generichide,badfilter
@@ -29909,8 +29939,6 @@ zzbabes.com###bclose
 @@||tmbw.ru^$generichide,badfilter
 ! and many others (todo)
 
-/convertfox.min.js
-
 ! from Ru AdList
 ##DIV[id^="DIV_NNN_"]
 
@@ -29919,9 +29947,6 @@ zzbabes.com###bclose
 
 ! from Ru AdList
 ##[data-link*="/sb/clk/"]
-
-! from Ru AdList
-##[data-link*="://ubar-pro"]
 
 /top.bg.center.png
 /top.bg.left.png
@@ -30033,8 +30058,6 @@ ru##.ErrorBox:has-text(AdBlock)
 /tiara/*
 /tiara.min.js  # ||daumcdn.net/*/tiara.min.js
 
-_liveinternet.gif  # from Ru AdList
-
 # futurecdn.net  # "platform for specialist media with scalable, diversified brands  market leading brands  lead generation  advertising solutions  digital licensing  marketforce"
 # update: do not block imgs from there.
 # update: there are some tracking scripts there. When they blocked, techradar.com doesn't show imgs. Ok.
@@ -30052,14 +30075,9 @@ futurecdn.net$xhr
 
 d3ward.github.io##.gt-link
 
-metricfire.com##.topbar:style(position:static !important)
-
 ||gettyimages.*/pulse$ping  # is in EasyPrivacy
 
 ||vaikuttajamedia.fi^*/markuk_evastevaroitus.js  # from EasyList
-
-ovdinfo.org##.page-wrapper:style(visibility:visible !important)
-ovdinfo.org##footer:style(visibility:visible !important)
 
 goha.ru*&geodata=  # from Ru AdList
 ||goha.ru*/event?hash=  # from Ru AdList
