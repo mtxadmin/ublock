@@ -3780,6 +3780,10 @@ bogachev.ru##hgroup
 
 boingboing.net##.widget_stackcommerce_widget
 
+bol.com##.js_modal_window:has(.consent-modal-ofc)
+bol.com##.modal__overlay
+bol.com##wsp-modal-window
+
 bolshoyvopros.ru##.main_cont:style(padding-top:0px !important)
 bolshoyvopros.ru###mobile_suggest
 bolshoyvopros.ru##.footer_buttons
@@ -4952,6 +4956,8 @@ cloudflare-quic.com##.mobile-nav:style(position:static !important)
 ||cloudfront.net/videojs/videojs-contrib-ads.js$script,important,redirect-rule=noopjs  # from uBlock filters
 ||cloudfront.net/vis_opt.js$important
 
+cloudorian.com###reading-position-indicator
+
 cloudwards.net##.table-of-content
 
 ! site blocks copypaste
@@ -5070,6 +5076,8 @@ codetwo.com##.codetwo-sliding
 ||codetwo.com/*/post-bottom3.png
 codetwo.com##.client-slick-slider-border
 codetwo.com##.client-slick-slider-wide-container
+
+codingame.com##[class^=logoImage]
 
 coffeemag.kz,horeca24.kz##.header__bottom:style(position:static !important)
     ! bottom
@@ -7276,6 +7284,9 @@ electromaker.io##.navbar-outer:style(position:static !important)
 electro-mpo.ru##.s-b1click-elem
 electro-mpo.ru##.s-float-header:style(position:static !important)
 
+! lazyload data-ezsrc
+electronicshacks.com##+js(set-attr, img.ezlazyload, src, [data-ezsrc])
+
     ! top
 electro-skuter.ru##.wrapper-inner > .contacts
 electro-skuter.ru##.header-bottom-column
@@ -8642,6 +8653,8 @@ foxhq.com##.premium
 foxnews.com##.article-body [href^="https://www.foxnews.com/apps-products"]
 
 foxremont.com##.stickytop:style(position:static !important)
+
+foxtonforensics.com##.header-space
 
 foxtools.ru##.foxtools
 
@@ -10082,6 +10095,10 @@ habr.com##.tm-votes-lever__score-fallback:has-text(Зарегистрируйт�
 ||hirado.hu/*/microsites/*wallpaper*.  # from Hufilter
 ||hirado.hu/Newsreel/*_bg_*.  # from Hufilter
 
+holofly.ru##.main__button
+
+hologramart.ru##noindex
+
 hranidengi.ru##.ban1
 
 ||hsto.org/getpro/neuro-habr/
@@ -11137,6 +11154,10 @@ ibm.com##.ibm-mhplaceholder
 ibm.com###ibm-home
 ibm.com##.ibm-contact-widget-btn
 
+ibprem.ru##.call_to_action
+ibprem.ru##.offer-form
+ibprem.ru##.problem-block
+
 iceberg-shop.ru##.basket_right
 iceberg-shop.ru##.bk_buy_button
 
@@ -12062,6 +12083,8 @@ izi.ua##[class*="Header__headerWrapper"]:style(position:static !important)
 
 izmerkon.ru##.header_send
 
+izremonta.ru##.pix-animate
+
 izvolokna.com##blockquote
 
 j4web.ru##.header-content
@@ -12837,6 +12860,8 @@ knife.media##.widget-recent
 knife.ru##.geolocation
 knife.ru##.foot_panel_all:style(position:static !important)
 
+kniga-online.club##.tech_info
+
 kniga-online.com##.owl-carousel
 kniga-online.com##.karusel
 kniga-online.com##.fa-book
@@ -13141,6 +13166,8 @@ kovearussia.ru##.buttonline
 kovearussia.ru##.offerts-line
 kovearussia.ru##.advantage-block
 kovearussia.ru##.dostavka
+
+kovolt.ru##.brands-list
 
     ! popups
 kp.ru##.shadow-close
@@ -18562,6 +18589,10 @@ peterburg.ru##.footer-header
 peterevans.dev##header:style(position:static !important)
 peterevans.dev##header:style(padding-top:0px !important; padding-bottom:0px !important)
 
+petmall.bg##.pop-up-overlay
+petmall.bg##.homepage-slider-banner
+petmall.bg##.homepage-slider-banners
+
 petrasport.ru##.button-wrap2
 petrasport.ru##div.js-bl1
 petrasport.ru##.shop2-tags
@@ -22238,6 +22269,10 @@ sdelatbanyu.ru###toc_container
 
 sdvk.ru###geo-selector
 sdvk.ru##.item-action
+
+se.com##.repyLoginIntercept
+se.com##.se-hero-outer
+se.com##.companyImpact
 
 seagate.com###helpfulQ
 
@@ -29247,6 +29282,20 @@ zapier.com##[class*=-Outer]:style(position:static !important)
 zapier.com##[class*=-TimeToRead]
 zapier.com##[class*=-LinkOverride]
 
+    ! top
+zapovednik96.ru###__layout>div:style(display:initial !important)
+    ! banners and promos
+zapovednik96.ru##.main-slider
+zapovednik96.ru##.recommender-block-title
+zapovednik96.ru##.bonuses_wrapper_promo
+zapovednik96.ru##.veterinary_picture
+zapovednik96.ru##.recommended-items
+zapovednik96.ru##.bonuses
+zapovednik96.ru##.job
+    ! other
+! totop
+zapovednik96.ru##button[data-widget="ui-scroll-to-top"]
+
 zarplata.ru##div[class^=notices-container]
 ||zarplata.ru/*/img/age
 ||zp.ru/v1/events
@@ -29524,8 +29573,16 @@ zonepc.ru###custom_header
 zonepc.ru###footer
 zonepc.ru##.block_links
 
-! zoohit.cz, zoohit.si, zoohit.sk, ...
+zoocenter.bg##._slider
+zoocenter.bg##._showcase-product
+zoocenter.bg##.cc-click-to-call-button
+zoocenter.bg##.bottom-freezed-bar
+
+! zoohit.cz, zoohit.si, zoohit.sk, ..., zooplus.bg, ...
 zoohit.*,zooplus.*##.uxt-carousel
+zoohit.*,zooplus.*##[class^=GoTopButton]
+
+||zoomagazin.eu/images/chat-icon.png
 
 zoon.ru###serviceNavPanel:style(position:static !important)
 zoon.ru##.zoon-social-list-group
