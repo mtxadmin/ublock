@@ -141,6 +141,12 @@ capterra.co.uk$3p
 
 ||cdn13.com^$script,3p,domain=~leafy.pro  # from EasyList  # ad scripts  # don't block videos from there
 
+# cdncloudcart.com  # ad scripts and popups  # empty root
+# Do not block domain entirely - there are can be css and images from there. But scripts are really needed to block
+# Hmm, not all scripts... Interesting.
+# Even their loader? Not sure, but ok. But there is root case:
+||cdncloudcart.com/assets/site/js/modules/enable-push.min.js
+
 ! see cdn-tinkoff.ru at tinkoff.ru below
 
 citilink.ru$3p  # from Ru AdList
