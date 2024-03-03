@@ -593,6 +593,16 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
     ! xn----7sbeemsdjlc1kud.xn--p1ai###top-bar:style(position:static !important)
     ! yakadr.ru##.top-bar
     ! weekly-news.ru##.top-bar
+*##.topbar:style(position:static !important)
+    ! ##.topbar in several cases contains menu and/or search. But in general, it should not be fixed
+    ! litnet.com##.topbar:style(position:static !important)
+    ! metricfire.com##.topbar:style(position:static !important) - seems old?
+    ! splitbrain.org##.topbar:style(position:static !important)
+    ! trekkingmania.ru##.topbar:style(position:static !important)
+##.topbar-date
+    ! appdividend.com##.topbar-date
+    ! hungarylife.ru##.topbar-date
+    ! migrantvisa.ru##.topbar-date
 ###top-bar-wrap
     ! medcentr-diana-spb.ru###top-bar-wrap
     ! werdum-army.ru###top-bar-wrap
@@ -1230,6 +1240,9 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 !
 *##.opener:style(position:static !important)
 !
+*##.page-wrapper:style(position:static !important; visibility:visible !important)
+    ! ovdinfo.org##.page-wrapper:style(visibility:visible !important)
+!
 *##.sidebar-sticky:style(position:static !important)
 !
 *###sticky-wrapper:style(position:static !important)
@@ -1323,11 +1336,12 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
     ! from Fanboy's: manworldmedia sites
     !##.h-fixed-footer
 ! Now:
-*##.footer:style(position:static !important; background-image:none !important; height:auto !important; min-height:0px !important; margin-top:0px !important; padding-top:0px !important; margin-bottom:0px !important; padding-bottom:0px !important)
+*##.footer:style(position:static !important; background-image:none !important; height:auto !important; min-height:0px !important; margin-top:0px !important; padding-top:0px !important; margin-bottom:0px !important; padding-bottom:0px !important; visibility:visible)
 !
-*##footer:style(position:static !important; background-image:none !important; height:auto !important; min-height:0px !important; margin-top:0px !important; padding-top:0px !important; margin-bottom:0px !important; padding-bottom:0px !important)
+*##footer:style(position:static !important; background-image:none !important; height:auto !important; min-height:0px !important; margin-top:0px !important; padding-top:0px !important; margin-bottom:0px !important; padding-bottom:0px !important; visibility:visible)
+    ! ovdinfo.org##footer:style(visibility:visible !important)
 !
-*###footer:style(position:static !important; background-image:none !important; height:auto !important; min-height:0px !important; margin-top:0px !important; padding-top:0px !important; margin-bottom:0px !important; padding-bottom:0px !important)
+*###footer:style(position:static !important; background-image:none !important; height:auto !important; min-height:0px !important; margin-top:0px !important; padding-top:0px !important; margin-bottom:0px !important; padding-bottom:0px !important; visibility:visible)
 !
 *##.fixed_footer:style(position:static !important)
 !
