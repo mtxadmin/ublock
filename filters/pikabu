@@ -8461,6 +8461,13 @@ pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:h
 pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="DaySam"]))
     ! https://pikabu.ru/story/dyadko_dzhozefa_yak_zhe_mi_10719445
 
+pikabu.ru##span:has-text(/^Fly3110$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Fly3110"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Fly3110"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Fly3110$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Fly3110"]))
+    ! https://provereno.media/blog/2024/02/02/govoril-li-tramp-chto-terakt-11-sentyabrya-delo-ruk-ssha/
+
 pikabu.ru##span:has-text(/^cat2meow$/):style(color:#D0D0D0 !important)
 pikabu.ru##article.story:has(.user__nick[data-name="cat2meow"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="cat2meow"]):not(:matches-path(/\/story\//))~div
