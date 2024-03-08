@@ -405,7 +405,7 @@ $removeparam=/campaign[^=]*=/i,domain=~recruitics.com|~wikipedia.org|~youtube.co
     ! $removeparam=campaign,domain=reddit.app.link  # from DandelionSprout's URLShortener
 
 $removeparam=campid  # maybe we can encounter false positives on some camp-related sites :-) But "camp" more likely equals "campaign"
-    ! ebay.*$removeparam=campid  # from Adguard and DandelionSprout's URLShortener
+    ! ebay.*$removeparam=campid  # ref id  # is in Adguard and DandelionSprout's URLShortener
     ! otto.de$removeparam=campid  # from Adguard
     ! $removeparam=campid,domain=otto.de|ottoversand.at  # from Adguard
     ! teknosa.com$removeparam=campid  # from Adguard
@@ -1522,7 +1522,7 @@ $removeparam=siteId  # Oracle Eloqua  # from NeatURL
     ! $removeparam=/^siteid=/i  # from DandelionSprout's URLShortener
 
 $removeparam=sk,domain=bing.com|aliexpress.*  # from DandelionSprout's URLShortener
-    ! ref param, is in Adguard, added 2022-02
+    ! ref param, is in Adguard, added as general 2022-02. Before that, I added it as Aliexpress specific
     !||aliexpress.$removeparam=sk
     ! later:
     !$removeparam=sk,domain=bing.com|aliexpress.*  # from DandelionSprout's URLShortener
@@ -1593,6 +1593,7 @@ $removeparam=src,domain=~google.*
     ! Exclusions:
     ! google - at least, embedded calendars (calendar.google.com) need this param
     !
+    ! aliexpress.com$removeparam=src
     ! idealo.de$removeparam=src  # from DandelionSprout's ClearURLs for uBo
     ! $document,removeparam=src,domain=go.mail.ru|r.mail.ru  # from Ru AdList
     ! mozilla.org$removeparam=src  # from NeatURL and DandelionSprout's ClearURLs for uBo
@@ -2454,7 +2455,7 @@ eastday.com$removeparam=qid  # from DandelionSprout's URLShortener
 ebay.*$removeparam=amdata  # from NeatURL and Adguard  # Adguard: ||ebay.
 ebay.*$removeparam=hash  # from NeatURL
 ebay.*$removeparam=epid  # from NeatURL
-ebay.*$removeparam=mkrid  # from Adguard
+ebay.*$removeparam=mkrid  # ref id  # is in Adguard
 ebay.*$removeparam=var  # from NeatURL
 
 elgato.com$removeparam=attribution_window  # from Adguard
@@ -2594,16 +2595,18 @@ google.*$removeparam=gs_gbg  # from NeatURL
 google.*$removeparam=gs_lcp  # from NeatURL
     ! google.*/search$removeparam=gs_lcp  # from Adguard
     ! ||www.google.*/search?$removeparam=gs_lcp  # from Ru AdList
+google.*$removeparam=gs_lcrp  # some id, seems as new version
 google.*$removeparam=gs_mss  # from NeatURL
 google.*$removeparam=gs_rn  # from NeatURL
 ||www.google.*/search?$removeparam=gs_ssp  # from Ru AdList
 ||www.google.*/search?$removeparam=hl  # from Ru AdList
-||google.*/search?$removeparam=ie  # from Ru AdList and Adguard
+||google.*/search?$removeparam=ie  # is in Ru AdList and Adguard  # "UTF-8", but
 ||www.google.*/search?$removeparam=iflsig  # from Ru AdList
 ||www.google.*/search?$removeparam=newwindow  # from Ru AdList
 ||google.*/search$removeparam=oe  # from Adguard
-||google.*/search?$removeparam=oq  # from Ru AdList and Adguard
+||google.*/search?$removeparam=oq  # is in Ru AdList and Adguard  # seems ref
 #google.*/search$removeparam=prmd  # some id. Block?
+# don't block q param - it's search text
 google.*/search$removeparam=sa  # from Adguard
     ! ||www.google.*/search?$removeparam=sa  # from Ru AdList
 ||www.google.*/search?$removeparam=sclient  # from Ru AdList
@@ -2936,7 +2939,9 @@ mozilla.org$removeparam=telemetry-client-id  # from Adguard
 ! already blocked
 msafflnk.net$removeparam=sharedid  # from Adguard
 
+msn.com$removeparam=cvid  # some id
 msn.com$removeparam=li
+msn.com$removeparam=ocid  # some id
 msn.com$removeparam=pc  # from Adguard
 
 mts.ru$removeparam=sessionId  # ref
@@ -3624,7 +3629,7 @@ youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=feature  #
     ! unusual Ru AdList form:
     ! &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com  # from Ru AdList
 youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=kw  # from NeatURL
-youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=pp  # is in Adguard
+youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=pp  # is in Adguard  # some id
 youtu.be,youtube.com,youtubekids.com,youtube-nocookie.com$removeparam=si
     ! youtube.com$removeparam=si
     ! youtu.be$removeparam=si  # from Adguard
@@ -3802,6 +3807,8 @@ dvdfab.org$removeparam=trackid  # from Adguard
 yna.co.kr$removeparam=site  # from Adguard
 
 bloomberg.com$removeparam=in_source  # from Adguard
+bloomberg.com$removeparam=sref  # ref
+bloomberg.com$removeparam=srnd  # "undefined", but
 
 sportschosun.com$removeparam=f_url  # from Adguard
 
