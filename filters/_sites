@@ -2027,8 +2027,11 @@ arsenator.ru##.header
 arsenator.ru##.pull-pay
 
 ||arstechnica.com/keys/arstechnica.com/p.js  # is in EasyPrivacy
+    ! top
 arstechnica.com##.scrolled-up:style(position:static !important)
 arstechnica.com##.header-highlight-link
+arstechnica.com###top > div:has-text(/^$/)
+    ! other
 arstechnica.com###social-left
 
 art4x4.ru###headerbar
@@ -3809,6 +3812,7 @@ boobliks.pro#@##up
 boobliks.pro##.logotip_ebanem
 boobliks.pro##body:style(background:none !important)
 
+||book24.ru/r/  # ref
 	! popups
 book24.ru##.fake-jivosite
 book24.ru##.location-d__popup
@@ -6222,6 +6226,7 @@ dns-shop.ru,dns-shop.kz##span.product-info__search-icon_active
     ! аватары
 dns-shop.ru,dns-shop.kz##.comment__avatar
 dns-shop.ru,dns-shop.kz##.ow-user-info__avatar
+||c.dns-shop.ru/thumb/st1/crop/*.gif  # annoying gif avatars
     ! хрень на аватарах
 dns-shop.ru,dns-shop.kz##.user-avatar__level
 dns-shop.ru,dns-shop.kz##.user-avatar__online
@@ -6293,6 +6298,7 @@ dns-shop.ru,dns-shop.kz##.reaction-modal__title
 dns-shop.ru,dns-shop.kz##.menu-contacts__apps
     ! other
 dns-shop.ru##.info-block__logo
+dns-shop.ru##.viewed-products-slider
 
 dobraprace.cz##.jobOffer__box-jobs-odber
 
@@ -6605,6 +6611,8 @@ drive2.com,drive2.ru##.c-nightdrive
 drive2.com,drive2.ru##.c-pc-grid
 ! too big avatar
 drive2.ru##.c-user-lcard__pic
+
+drivecard.club##.main-link > span
 
 ||drivemusic.me/*/person-playing.jpg
 drivemusic.fm,ru-drivemusic.net##.music-like
@@ -8215,6 +8223,11 @@ filext.com###svg-rechts
 
 ! see film.ru in online_films
 
+! top
+filmitorrent.site###day
+! top
+filmitorrent.site###block2
+
 ! see filmon.com in online_films
 
 filmz.ru##.top-img
@@ -9028,6 +9041,8 @@ gbhackers.com##.size-full.attachment-full
 ||gcdn.co/*/old-browser.js
 ||gcdn.co/*/stacktrace.js
 
+gda.se##.article__overlay
+
 gde.ru##.main-about
 ||gde.ru/*/16.png
 gde.moscow##.main-about
@@ -9327,6 +9342,11 @@ astronvim.github.io##.theme-back-to-top-button
 !
 sergiotocalini.github.io##.post:style(margin-top:0px !important)
 sergiotocalini.github.io###btn-top
+!
+techno-tim.github.io##.site-subtitle
+! lazyload data-src
+techno-tim.github.io##+js(set-attr, img, src, [data-src])
+techno-tim.github.io##+js(rc,blur)
 !
 xainey.github.io##.panel-cover--overlay
 
@@ -14124,6 +14144,7 @@ livejasminbabes.net##a[href="/"]:remove-attr(href)
 livejasminbabes.net##.zoom
 
 !! livejournal.com: remake at 2020-02
+||livejournal.com/*/serviceWorker/$script
 !
     !! discoverytimes promos below the post
 livejournal.com##.b-discoverytimes
@@ -14565,6 +14586,11 @@ luxoft.com##.pos-sticky-desktop:style(position:static !important)
 luxoft.com##.scrolledBtns:style(position:static !important)
 
 luxorta.ru  # spam
+
+! popup
+lviv.media##.c-news-widget
+lviv.media##.l-numeric:has(a[data-badge="Реклама"])
+lviv.media##.c-footer-subscribe
 
 ! not really code blocks (they are different), but banners
 lynxbee.com##.code-block
@@ -15451,6 +15477,9 @@ metal-san.ru###logo-link-header
 metal-san.ru##.header-scroll
 metal-san.ru###brends-sidebar
 
+metricfire.com##.homepage-header__fade
+metricfire.com###animation
+
     ! fixed header
 metro-cc.ru###header-tabnavigation:style(position:static !important)
 metro-cc.ru##.l-page:style(padding-top:0px !important)
@@ -15786,6 +15815,8 @@ mkr-rodniki.ru##[href*="http://goo.gl/"]
 ||mkr-rodniki.ru/medison.gif
 ||mkr-rodniki.ru/nashi.jpg
 ||mkr-rodniki.ru/vinoterra.gif
+
+mksguide.com##p.has-background:has-text(Something similar:)
 
     ! top
 mmenu.com##.scroll_div:style(position:static !important)
@@ -16380,6 +16411,9 @@ mvideo.ru##.sticky-btn__container
 mvideo.ru##.popper
 mvideo.ru##mvid-you-watched
 
+mwave.com.au##.internalLinks:style(position:static !important)
+mwave.com.au##.terms_conditions_footer
+
 myaso-portal.ru##div > [href^="/bitrix/rk.php"]
 myaso-portal.ru##.dev
 
@@ -16669,6 +16703,10 @@ saiga-410.narod.ru##.MsoBodyText > span:style(color:#000 !important)
 !nashebutovo.com##.fixed.eltdf-fixed-wrapper:style(position:static !important)
 
 nascompares.com##a[href^="https://bit.ly/"]
+! the bottom there is really strange. But this works, after removed block there are a block of comments and footer
+nascompares.com##.wpcf7 ~ *
+! another form of bottom. At least, let's remove that bulk form
+nascompares.com##.wpcf7
 
 nashgazon.com##.resent
 nashgazon.com##.toc
@@ -18522,6 +18560,7 @@ pcmag.com##.leading-none
 pcmag.com##.container.text-white
 ! inline related
 pcmag.com##div[data-parent-group="related-stories"]
+pcmag.com###trust-badge
 
 @@||pcmobitech.com^$generichide
 pcmobitech.com##.custom-logo
@@ -19267,6 +19306,15 @@ politico.com##.pop-up-bar
 
 politifact.com##.o-disruptor
 politifact.com##.o-socializer
+
+# ad scripts from random domains wyyxjb.com and bihunekus.com
+# blocking thind-party scripts from all sites but *.google.com/recaptcha/
+# see https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp for details
+politnews24.biz$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.google.com/recaptcha/
+! "люкс в конце поста"
+politnews24.biz##.otke
+! sidebar
+politnews24.biz##.sticky-spacer
 
 statistik.polizei-beratung.de  #[Piwik.Analytics]  # from MVPS
 
@@ -22347,6 +22395,19 @@ securitylab.ru##.last-news-block
 
 securitynerd.com##[class^=astra-advanced-hook]
 
+! seedoff.net
+seedoff.net##.just_for_sorting
+||zannn.top/*.gif
+||innal.top/style/seedoff_net/images/osen21.png
+||zannn.top/style/seedoff_net/images/osen21.png
+||innal.top/style/seedoff_net/images/winter2022.png
+||zannn.top/style/seedoff_net/images/winter2022.png
+zannn.top##.slider
+innal.top##.slider
+innal.top##.footer
+zannn.top##.footer
+||zannn.top/voteforus/$image
+
 seek.com.au##div[data-testid="bx-cover-container"]
 seek.com.au##div[data-testid="bx-logo-container"]
 seek.com.au##div[data-testid="bx-logo-image"]
@@ -23838,6 +23899,9 @@ stepbystep.spb.ru##.bot-info
 stepbystep.spb.ru##.nivo-slider
 stepbystep.spb.ru##.madeby
 
+stephenwagner.com##.blogtitle
+stephenwagner.com###header
+
 stepik.org##.course-promo__aside-sticky-wrapper:style(position:static !important)
 
 stereo.ru##.misspelled__notice
@@ -23885,6 +23949,9 @@ stm-electronics.ru##div.card-icons
 stopgame.ru##.inTop
 
 storagepoint.net###secondary:style(position:static !important)
+
+storagereview.com##.align-left-logo
+storagereview.com###widget-area
 
 stpddrf.ru##noindex
 
@@ -24417,6 +24484,8 @@ tecadmin.net##.a-wrap
 
 tecart.de##.u-go-to
 
+techaddressed.com##.CTA
+
 techadvisor.com##.primaryNav-left--logo
 techadvisor.com##.priamyNav--sticky:style(position:static !important)
 techadvisor.com##.primaryFooter-top--logo
@@ -24622,9 +24691,17 @@ techpp.com##.brxe-shortcode
 techproresearch.com###site-search
 
 ! @@||techradar.com^$generichide in Fanboy's. Hmm... Ok.
+! techradar.com: lazyload data-original-mos
+    ! it works, but futurecdn.net is slow. See tomshardware.com with the same problem
+    techradar.com##+js(set-attr, .lazy-image-van, src, [data-original-mos])
+!
     ! logos
 techradar.com##.site-logo
 techradar.com##.logo
+    ! banners and promos
+techradar.com###section-today-s-best-deals
+! top
+techradar.com##.sub-brands-bar
     ! socials
 techradar.com##.facebook
 techradar.com##.buttons-social
@@ -24634,6 +24711,8 @@ techradar.com##.sticky-player.jwplayer
 techradar.com##.sticky-player-background
     ! non-related player in the text
 techradar.com##.jw-carousel
+    ! non-related repeating text
+techradar.com##.how-we-test
     ! inline related
 techradar.com##.related-articles-block
 techradar.com##.read-more-container
@@ -24645,8 +24724,8 @@ techradar.com##.supernav
 techradar.com##aside.hawk-nest
 techradar.com##.stickyProductBrowser
 techradar.com##.newsletter-signup
-! top
-techradar.com##.sub-brands-bar
+! slighly annoying headers in the main div
+techradar.com##.article-body__section
 
 techraptor.net##.quiz
 techraptor.net##.h3:has-text(Quiz)
@@ -25114,6 +25193,11 @@ themesinfo.com##a[href*="/affiliates/"]
 
 themoscowtimes.com##.site-header
 
+! top
+themoviedb.org##header:style(position:absolute !important)
+! top
+themoviedb.org##.nav-up:style(top:0px !important)
+
 ||thenaturallaboratory.com/cdn/wpm/  # https://thenaturallaboratory.com/cdn/wpm/babd83086w6100c671p96a62313md77ea07am.js
 
 thenewstack.io###tns-footer-bar
@@ -25198,16 +25282,30 @@ thewindowsclub.com##.calloutList
 thewindowsplus.org##.site-header
 thewindowsplus.org##.sidebar
 
-thg.ru##[href^="https://www.citilink.ru/"]
-thg.ru##[href^="https://vk.cc/"]
-||thg.ru/images/article_arrow_right_next.png
-||thg.ru/images/article_arrow_left_back.png
+! tomshardware.com, thg.ru, tomsguide.com
 ||thg.ru/images/thg_logo
-! "AD BLOCKER INTERFERENCE DETECTED"
-tomshardware.com##^script:has-text(window.vanilla)
+||thg.ru/images/article_arrow_left_back.png
+||thg.ru/images/article_arrow_right_next.png
+! tomshardware.com: lazyload data-original-mos
+    ! there are picture tags: https://www.w3schools.com/TAGS/tag_picture.asp
+    tomshardware.com##+js(set-attr, picture>source, srcset, [data-original-mos])
+    tomshardware.com##+js(set-attr, picture>img, src, [data-original-mos])
+    ! it works, but futurecdn.net is slow
+    ! lazyload data-original-mos
+    tomsguide.com##+js(set-attr, img.lazy-image-van, src, [data-original-mos])
 ! there is an exclusion in EasyList. Hmm, ok.
 tomshardware.com###logo
 tomshardware.*###logo
+    ! banners and promos
+thg.ru##[href^="https://www.citilink.ru/"]
+thg.ru##[href^="https://vk.cc/"]
+! "AD BLOCKER INTERFERENCE DETECTED"
+tomshardware.com##^script:has-text(window.vanilla)
+# georiot.com is already blocked
+tomshardware.com##a[href*="georiot.com"]
+tomshardware.com##.hawk-master-widget-hawk-wrapper
+tomshardware.com##.hawk-nest
+    ! other
 ! is in AdGuard
 tomshardware.com##.socialite-widget
 tomshardware.*##.socialite-widget
@@ -25231,11 +25329,6 @@ tomshardware.com##.uix_headerContainer > div:style(height:auto !important)
 !||api.vanilla.futurecdn.net/article/v3/related
 ||unpkg.com/react$domain=tomsguide.com  # I don't know why, but these scripts make loop with footprint.net call
 thg.ru###clnk_main
-! tomshardware.com: lazyload data-original-mos
-    ! there are picture tags: https://www.w3schools.com/TAGS/tag_picture.asp
-    tomshardware.com##+js(set-attr, picture>source, srcset, [data-original-mos])
-    tomshardware.com##+js(set-attr, picture>img, src, [data-original-mos])
-    ! it works, but futurecdn.net is slow
 
 thinkful.com###branding-bar
 thinkful.com##.tf-cm-signup
@@ -25529,6 +25622,11 @@ forums.tomsguide.com##.avatar
 
 tomshw.it##a[href="https://www.tomshw.it"]
 
+||tonido.com/images/for.svg
+||tonido.com/images/sun.svg
+tonido.com##.fade
+tonido.com###sun
+
 ! from Fanboy's
 tonkosti.ru##.journal-subscribe
 
@@ -25623,6 +25721,9 @@ torex.ru###animation_auto
 torex.ru##header p
 torex.ru##.scroll
 torex.ru##.cp-form-1
+
+! br br br at the top
+torlock.com##nav ~ br
 
 ||torlook.info/img/heading.png
 
@@ -26615,6 +26716,7 @@ usbmag.ru##.fixContainer
 ||usedguns.ru/images/air-gun.jpg
 ||usedguns.ru/images/*$image  # many noise pics. Main photos are not there.
 
+||userbenchmark.com/resources/img/ubmlogo/$image
 userbenchmark.com##.stickyTarget
 
 ! not consultants, but sometimes agressive elements
@@ -30069,7 +30171,7 @@ ru##.ErrorBox:has-text(AdBlock)
 # futurecdn.net  # "platform for specialist media with scalable, diversified brands  market leading brands  lead generation  advertising solutions  digital licensing  marketforce"
 # update: do not block imgs from there.
 # update: there are some tracking scripts there. When they blocked, techradar.com doesn't show imgs. Ok.
-! used by: techradar.com, toptenreviews.com
+! used by: techradar.com, toptenreviews.com, tomsharware.com
 futurecdn.net$script
 futurecdn.net$xhr
     ! ||futurecdn.net$xhr
