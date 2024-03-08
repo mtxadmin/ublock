@@ -6139,9 +6139,10 @@ dnschecker.org##.header-main-container:style(position:static !important)
 ||dns-shop.kz/*/user-notifications.js
 ||dns-shop.ru/*/page-notification.js
 ||dns-shop.kz/*/page-notification.js
-# затычка, уже случайно блокируется правилом ru.com, но и без этого скрипта всё работает. При обычной блокировке виснет на просмотре отзывов - F5 либо же так
-||dns-shop.ru/*/ru.comments-list.js$redirect=noop.js
-||dns-shop.kz/*/ru.comments-list.js$redirect=noop.js
+! затычка, уже случайно блокируется правилом ru.com, но и без этого скрипта всё работает. При обычной блокировке виснет на просмотре отзывов - F5 либо же так
+!||dns-shop.ru/*/ru.comments-list.js$redirect=noop.js
+!||dns-shop.kz/*/ru.comments-list.js$redirect=noop.js
+! Update: нет, так не годится, скрипт нужный, без него не развертывается второй уровень комментов. Исправил ru.com, надеюсь, что окончательно. See _marketing_r-t
     ! new year
 ||dns-shop.ru/*/garland.svg
 ||dns-shop.kz/*/garland.svg
@@ -6220,6 +6221,9 @@ dns-shop.ru,dns-shop.kz##.no-opinions-grade
     ! не надо подсовывать ненужную хрень в корзину
 dns-shop.ru,dns-shop.kz##.accessories__items
 dns-shop.ru,dns-shop.kz##.select-accessories
+dns-shop.ru,dns-shop.kz##.product-accessories
+dns-shop.ru,dns-shop.kz##.services-widget
+dns-shop.ru,dns-shop.kz###accessories-anchor
     ! с мерцающих поповеров тошнит
 dns-shop.ru,dns-shop.kz##span.product-info__search-icon
 dns-shop.ru,dns-shop.kz##span.product-info__search-icon_active
@@ -25305,6 +25309,7 @@ tomshardware.com##^script:has-text(window.vanilla)
 tomshardware.com##a[href*="georiot.com"]
 tomshardware.com##.hawk-master-widget-hawk-wrapper
 tomshardware.com##.hawk-nest
+tomsguide.com##.hawk-nest
     ! other
 ! is in AdGuard
 tomshardware.com##.socialite-widget
