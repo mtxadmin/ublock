@@ -88,6 +88,7 @@ ozon.ru##div[data-widget="webFeedbackForm"]
 ! "Добавьте в избранное" popup. 
 ! Не влияет на, собственно, избранное, просто визуальная фигня, чтобы задолбать человека
 ozon.ru##[id^=state-webAddToFavorite]
+ozon.ru##ozpopover
 finance.ozon.ru###modal-container:has-text(Закажите)
     ! banners and promos
 ||ozone.ru/assets/*-banner$script
@@ -137,6 +138,8 @@ ozon.ru##a[href^="https://www.ozon.ru/highlight/"]
 ! this one is a top banner. Also see erid in _removeparams
 ozon.ru##a[href*="?erid="]
 ozon.ru##a[href*="&erid="]
+! top banner 2024-03
+ozon.ru##div:matches-css(height:32px) img:matches-css(height:32px)
 !
 ozon.ru##li:has(> a[href^="/highlight/"])
 ozon.ru##a[href^="/highlight/"]
