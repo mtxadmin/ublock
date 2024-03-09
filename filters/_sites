@@ -953,6 +953,9 @@ advance-club.ru##.footer__form-section
 advancedelements.com##.header > .container
 advancedelements.com##.ft-social-widget
 
+!/plugins/elementor/assets/lib/dialog/dialog.min.js
+advanced-television.com##.dialog-widget
+
 adventure-guide.ru##.active.blog-page__right:style(position:static !important)
 
     ! banners and promos
@@ -8855,6 +8858,19 @@ fuqqt.com##.lnk
 fuqqt.com##figcaption
 fuqqt.com##footer
 
+# futurecdn.net  # "platform for specialist media with scalable, diversified brands  market leading brands  lead generation  advertising solutions  digital licensing  marketforce"
+# update: do not block imgs from there.
+# update: there are some tracking scripts there. When they blocked, techradar.com doesn't show imgs. Ok.
+! used by: techradar.com, toptenreviews.com, tomsharware.com
+futurecdn.net$script
+futurecdn.net$xhr
+    ! ||futurecdn.net$xhr
+    ! bordeaux.futurecdn.net/bordeaux.js
+    ! champagne.futurecdn.net/champagne.js
+    ! freyr.futurecdn.net/freyr.js
+    ! vanilla.futurecdn.net
+||futurecdn.net/toptenreviews/media/img/missing-image.svg$image  # toptenreviews.com
+
 fuzz-magazine.ru##.pic:has(img[src*="/news_default_"])
 fuzz-magazine.ru##.menuBlock:style(position:static !important)
 ||piter.tv/img/news_default_
@@ -9820,6 +9836,9 @@ grazhkod.ru##.footer-tell
 
 greendail.ru###footer
 
+greensboro.com##.breaking-container
+greensboro.com###main-body-container:style(padding-top:0px !important)
+
 greggsauto.net##header svg
 
 gribberries.ru##.vip_top_ob
@@ -9839,6 +9858,12 @@ grosh-blog.ru###masthead
 grosh-blog.ru##.code-block:has-text(/Поделись с друзьями|Новости от/)
 grosh-blog.ru##.cli-bar-popup.cli-modal-content
 grosh-blog.ru##.footer-widget-wrap
+
+! top title and some ad elements. Good to go.
+ground.news##.hideElementSiteWide
+ground.news###browser-extension-top
+! "Ask a question" strange form
+ground.news##.w-full.hidden
 
 ||groupon.com/javascripts/common/affiliate_widget/  # from EasyList
 
@@ -10128,6 +10153,8 @@ habr.com#?#section.tm-block_spacing-around:has(> div.tm-block__body > div.tm-pro
 # ||habr.com/kek/ - don't, it is json comments
 ! рейтинг свежих комментариев скрыли, теперь там заглушка с промо. Убираем.
 habr.com##.tm-votes-lever__score-fallback:has-text(Зарегистрируйтесь на Хабре)
+
+hddmag.com##span:has-text(No products found.)
 
 ||hirado.hu/*/microsites/*wallpaper*.  # from Hufilter
 ||hirado.hu/Newsreel/*_bg_*.  # from Hufilter
@@ -21454,6 +21481,7 @@ pornolab.net##.post-color-text:has-text(/Спасибо|спасибо/)
 pornolab.net###page_footer > .bCenter
 pornolab.net##div.post-align:has-text(Релизера можно поддержать)
 ! some annoying pictures
+||fastpic.org/big/2010/0301/ac/da93ac84a3a8cd5a5fbf94fd900182ac.$image
 ||fastpic.org/big/2011/0916/dc/bfddc1cf22892bfdb7b64e16d28776dc.$image
 ||fastpic.org/big/2012/0920/2a/c5367dce011d54c6d7376eda43bb612a.$image
 ||fastpic.org/big/2012/1015/f3/10352d06d26611369445f847932c09f3.$image
@@ -21562,6 +21590,7 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.org/big/2022/0210/77/9ca949ab1a66c940da8984b79bfea477.$image
 ||fastpic.org/big/2022/0210/d7/375854e6e638396b364d344b4f88a2d7.$image
 ||fastpic.org/big/2022/0224/e6/f0907c96d1f96a367a3b63a55f0469e6.$image
+||fastpic.org/big/2022/0310/a0/19550f5eb625ae1d2df8e3ed021c56a0.$image
 ||fastpic.org/big/2022/0319/02/04efae6e48018db315db505d02ef2b02.$image
 ||fastpic.org/big/2022/0320/7b/4626fd4a9a2d153f75cdb71a6c04d57b.$image
 ||fastpic.org/big/2022/0320/a6/a886c87dd6866415e97bc07902dc14a6.$image
@@ -24488,6 +24517,7 @@ tecadmin.net##.a-wrap
 
 tecart.de##.u-go-to
 
+||techaddressed.com/js/script.outbound-links.js
 techaddressed.com##.CTA
 
 techadvisor.com##.primaryNav-left--logo
@@ -25282,6 +25312,8 @@ the-village.ru##[class*=_-Header-]:style(padding-top:0px !important)
 thewindowsclub.com##a[href="https://www.thewindowsclub.com/pc-repair-tool"]
 ! useless TOC
 thewindowsclub.com##.calloutList
+! lazyload data-ezsrc
+thewindowsclub.com##+js(set-attr, img.ezlazyload, src, [data-ezsrc])
 
 thewindowsplus.org##.site-header
 thewindowsplus.org##.sidebar
@@ -25329,6 +25361,7 @@ tomshardware.com##.u-scrollButtons
 tomshardware.com##.trophyShowcase
 tomshardware.com##.future_quickThreadWidget
 tomshardware.com##.uix_headerContainer > div:style(height:auto !important)
+tomsguide.com##.sticky-nav
 ! tomsguide.com
 !||futurecdn.net$xhr - don't, its their mini-CDN site. images are there too now
 !||api.vanilla.futurecdn.net/article/v3/related
@@ -28087,6 +28120,8 @@ we-reads.com##.abs_row
 we-reads.com##.shared
 we-reads.com###footer > .container
 
+westerndigital.com##.region-selection-bar
+
 westernjournal.com##.white-logo
 westernjournal.com##.menu-top:style(position:static !important)
 westernjournal.com##.color-logo.ff-logo
@@ -30172,19 +30207,6 @@ ru##.ErrorBox:has-text(AdBlock)
 
 /tiara/*
 /tiara.min.js  # ||daumcdn.net/*/tiara.min.js
-
-# futurecdn.net  # "platform for specialist media with scalable, diversified brands  market leading brands  lead generation  advertising solutions  digital licensing  marketforce"
-# update: do not block imgs from there.
-# update: there are some tracking scripts there. When they blocked, techradar.com doesn't show imgs. Ok.
-! used by: techradar.com, toptenreviews.com, tomsharware.com
-futurecdn.net$script
-futurecdn.net$xhr
-    ! ||futurecdn.net$xhr
-    ! bordeaux.futurecdn.net/bordeaux.js
-    ! champagne.futurecdn.net/champagne.js
-    ! freyr.futurecdn.net/freyr.js
-    ! vanilla.futurecdn.net
-||futurecdn.net/toptenreviews/media/img/missing-image.svg$image  # toptenreviews.com
 
 ||hackr.io/blog/media/udacity-horizontal-banner.png
 
