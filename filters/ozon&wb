@@ -296,21 +296,24 @@ ozon.ru##div[data-review-uuid]:not(:has-text(/Вам помог этот отз�
 
     ! Wildberries
 ! their domains: wildberries.ru, wb.ru, paywb.com, paywb.ru, wb-bank.ru
+! old domains:
+! wildberries.co.il - now is redirect to global.wildberries.ru
+! wildberries.fr - now is redirect to wildberries.ru
 !
 ||wildberries.ru/stats/
-||wildberries.co.il/stats/
-||wildberries.fr/stats/
+!||wildberries.co.il/stats/
+!||wildberries.fr/stats/
     ! visited goods
 ||wildberries.ru/visitedgoods
-||wildberries.co.il/visitedgoods
-||wildberries.fr/visitedgoods
+!||wildberries.co.il/visitedgoods
+!||wildberries.fr/visitedgoods
 wildberries.ru##.j-recent-items
 ! don't edit, there are several divs named ".recently-watched", but only this is really "recently-watched"
-wildberries.ru,wildberries.co.il,wildberries.fr##.j-recent-items > .recently-watched
+wildberries.ru##.j-recent-items > .recently-watched
 !
 ||wildberries.ru/search/tagsbyurl
-||wildberries.co.il/search/tagsbyurl
-||wildberries.fr/search/tagsbyurl
+!||wildberries.co.il/search/tagsbyurl
+!||wildberries.fr/search/tagsbyurl
 !
 ||wb.ru/sdk/sdk.js$redirect=noop.js  # https://a.wb.ru/sdk/sdk.js and others
 ||wbstatic.net/j/externalStat.min.js
@@ -326,75 +329,79 @@ wildberries.ru,wildberries.co.il,wildberries.fr##.j-recent-items > .recently-wat
 ||wbbasket.ru/*/customTags/banners.min.$redirect=noopjs
     !||wbbasket.ru/vol0/j/spa/customTags/banners.min.$redirect=noopjs
     ! top
-wildberries.ru,wildberries.co.il,wildberries.fr##.header-bg:style(top:0px !important)
+wildberries.ru##.header-bg:style(top:0px !important)
 ! проблема с поисковой формой. Если убрать класс, то хотя бы placeholder виден
-wildberries.ru,wildberries.co.il,wildberries.fr##+js(remove-attr, class, .search-catalog__input)
+wildberries.ru##+js(remove-attr, class, .search-catalog__input)
 ! sticky duplicate
-wildberries.ru,wildberries.co.il,wildberries.fr##.product-line
+wildberries.ru##.product-line
 ! floating filters
-wildberries.ru,wildberries.co.il,wildberries.fr##.filters-block__wrap:style(position:static !important)
+wildberries.ru##.filters-block__wrap:style(position:static !important)
 ! swiper has top margin below zero
-wildberries.ru,wildberries.co.il,wildberries.fr##.product-page__slider-wrap:style(margin-top:0px !important)
+wildberries.ru##.product-page__slider-wrap:style(margin-top:0px !important)
     ! quick view
-wildberries.ru,wildberries.co.il,wildberries.fr##.preview-item
-wildberries.ru,wildberries.co.il,wildberries.fr##.j-open-product-popup
-!wildberries.ru,wildberries.co.il,wildberries.fr##.hover
+wildberries.ru##.preview-item
+wildberries.ru##.j-open-product-popup
+!wildberries.ru##.hover
     ! popups
-wildberries.ru,wildberries.co.il,wildberries.fr###vip-status-popup
-wildberries.ru,wildberries.co.il,wildberries.fr##.i-vip-status-popup
-wildberries.ru,wildberries.co.il,wildberries.fr##.j-vip-status-popup
-wildberries.ru,wildberries.co.il,wildberries.fr##.tooltipster-content:has-text(Используйте разные размеры карточек)
-wildberries.ru,wildberries.co.il,wildberries.fr##.tooltip-product-variant
+wildberries.ru###vip-status-popup
+wildberries.ru##.i-vip-status-popup
+wildberries.ru##.j-vip-status-popup
+wildberries.ru##.tooltipster-content:has-text(Используйте разные размеры карточек)
+wildberries.ru##.tooltip-product-variant
     ! promos and banners
-wildberries.ru,wildberries.co.il,wildberries.fr##.i-spec-action
-wildberries.ru,wildberries.co.il,wildberries.fr##.spec-action
-!wildberries.ru,wildberries.co.il,wildberries.fr##.new-carousels-and-banners
+wildberries.ru##.i-spec-action
+wildberries.ru##.spec-action
+!wildberries.ru##.new-carousels-and-banners
 ! top banner
-wildberries.ru,wildberries.co.il,wildberries.fr##.hair
+wildberries.ru##.hair
+wildberries.ru##[class^=banner_Container]
+! main page sliders - как-то они там странно грузятся. В остальных местах ок.
+wildberries.ru##.main-page__product
     ! old (striked out) prices
-wildberries.ru,wildberries.co.il,wildberries.fr##.price-last
-wildberries.ru,wildberries.co.il,wildberries.fr##.price-old-block
-wildberries.ru,wildberries.co.il,wildberries.fr##.product-card__sale
-wildberries.ru,wildberries.co.il,wildberries.fr##.price-block__old-price
+wildberries.ru##.price-last
+wildberries.ru##.price-old-block
+wildberries.ru##.product-card__sale
+wildberries.ru##.price-block__old-price
     ! labels
-wildberries.ru,wildberries.co.il,wildberries.fr##.product-card__tip-wrap
-wildberries.ru,wildberries.co.il,wildberries.fr##.product-card__tip
+wildberries.ru##.product-card__tip-wrap
+wildberries.ru##.product-card__tip
     ! credits
-wildberries.ru,wildberries.co.il,wildberries.fr##.price-block__credit-payment
-wildberries.ru,wildberries.co.il,wildberries.fr##.list-item__price-credit
+wildberries.ru##.price-block__credit-payment
+wildberries.ru##.list-item__price-credit
     ! up button
-wildberries.ru,wildberries.co.il,wildberries.fr##.j-quicknav
-wildberries.ru,wildberries.co.il,wildberries.fr##.quicknav-v1
+wildberries.ru##.j-quicknav
+wildberries.ru##.quicknav-v1
     ! footer
-wildberries.ru,wildberries.co.il,wildberries.fr##.social
-wildberries.ru,wildberries.co.il,wildberries.fr##.important-link
+wildberries.ru##.social
+wildberries.ru##.important-link
+wildberries.ru##[class^=Footer_AgeWarning]
     ! apps
-wildberries.ru,wildberries.co.il,wildberries.fr##.google-play
-wildberries.ru,wildberries.co.il,wildberries.fr##.app-store
-wildberries.ru,wildberries.co.il,wildberries.fr##.app-gallery
+wildberries.ru##.google-play
+wildberries.ru##.app-store
+wildberries.ru##.app-gallery
     ! pay cards
-!wildberries.ru,wildberries.co.il,wildberries.fr##.group
-!wildberries.ru,wildberries.co.il,wildberries.fr##.masterCard
-!wildberries.ru,wildberries.co.il,wildberries.fr##.mir
-!wildberries.ru,wildberries.co.il,wildberries.fr##.toPay
-!wildberries.ru,wildberries.co.il,wildberries.fr##.footer__pay-list
+!wildberries.ru##.group
+!wildberries.ru##.masterCard
+!wildberries.ru##.mir
+!wildberries.ru##.toPay
+!wildberries.ru##.footer__pay-list
     ! backgrounds
-wildberries.ru,wildberries.co.il,wildberries.fr##.navbar-pc__link:style(color:#000 !important)
-wildberries.ru,wildberries.co.il,wildberries.fr##.search-catalog__input:style(color:#000 !important)
-wildberries.ru,wildberries.co.il,wildberries.fr##.lego-background
+wildberries.ru##.navbar-pc__link:style(color:#000 !important)
+wildberries.ru##.search-catalog__input:style(color:#000 !important)
+wildberries.ru##.lego-background
     ! other
-!wildberries.ru,wildberries.co.il,wildberries.fr##.tooltipster-content
-wildberries.ru,wildberries.co.il,wildberries.fr##.suppliers-section
-wildberries.ru,wildberries.co.il,wildberries.fr##.compatability
-wildberries.ru,wildberries.co.il,wildberries.fr##.i-tags-group
-wildberries.ru,wildberries.co.il,wildberries.fr##.also-buy-wrapper
-wildberries.ru,wildberries.co.il,wildberries.fr##.scrolled-socials
-wildberries.ru,wildberries.co.il,wildberries.fr##.general-preloader
+!wildberries.ru##.tooltipster-content
+wildberries.ru##.suppliers-section
+wildberries.ru##.compatability
+wildberries.ru##.i-tags-group
+wildberries.ru##.also-buy-wrapper
+wildberries.ru##.scrolled-socials
+wildberries.ru##.general-preloader
 ! oneclick
-wildberries.ru,wildberries.co.il,wildberries.fr##.same-part-kt__btn-buy
-wildberries.ru,wildberries.co.il,wildberries.fr##.error500
+wildberries.ru##.same-part-kt__btn-buy
+wildberries.ru##.error500
 ! too large menu in the mobile mode
-wildberries.ru,wildberries.co.il,wildberries.fr##.footer__nav
+wildberries.ru##.footer__nav
 ! ответы продавцов, как и в Озоне, неинтересны, 99% из них - рекламная однотипная дичь
 wildberries.ru##.feedback__btn-block:has(.j-show-feedback-answer)
 ! флажки в отзывах. Зачем?
