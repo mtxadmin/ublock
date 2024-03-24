@@ -1130,6 +1130,8 @@ a1991.dscr.akamai.net$script  # page blocking scripts
 
 ! totop
 akbmoscow.ru##.topbutton
+akbmoscow.ru##.product__action-board_buyOneClick
+akbmoscow.ru##.product__action-board_review-discount
 
 akbtest.ru##[class*=positionfixed]:style(position:static !important)
 akbtest.tilda.ws##[class*=positionfixed]:style(position:static !important)
@@ -2485,6 +2487,13 @@ autoventuri.ru##.bx_areas
 ! from Fanboy's
 autowp.ru##.links
 
+auto-zap4asti.ru###action.action
+auto-zap4asti.ru##.form-one-click
+auto-zap4asti.ru##.characteristics__sticky
+auto-zap4asti.ru###watched
+auto-zap4asti.ru###bought-before
+auto-zap4asti.ru###pluses.pluses
+
 av.ru##.simple-banner
 
 @@||ava-avto.ru^$generichide,badfilter
@@ -2609,6 +2618,10 @@ avon.com###d-hero-carousel
 avtera.ru##.header-menu
 
 ||avtoall.ru/pic/articles_bg_men.png
+
+||avto-blogger.ru/*/avto-blogger.$image
+||avto-blogger.ru/wp-content/themes/avto-blog/assets/img/headerMiddle__back.jpg
+avto-blogger.ru##.headerMiddle__subTitle
 
 avtobot.net##.header-flag
 
@@ -4966,6 +4979,12 @@ cloudflare-quic.com##.mobile-nav:style(position:static !important)
 ||cloudfront.net/videojs/videojs-contrib-ads.js$script,important,redirect-rule=noopjs  # from uBlock filters
 ||cloudfront.net/vis_opt.js$important
 
+    ! top
+cloudinary.com##.header-frame:style(position:static !important)
+cloudinary.com###fixed-spacer
+cloudinary.com##.content-wrapper:style(padding-top:0px !important; padding-bottom:0px !important)
+    ! other
+
 cloudorian.com###reading-position-indicator
 
 cloudwards.net##.table-of-content
@@ -6643,6 +6662,9 @@ drivereasy.com##.votes
 
 drivertip.ru##.layout--page-title:style(padding-top:0px !important)
 
+! huge useless toc
+driveshero.com###ez-toc-container
+
 ! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
 drivetribe.com##.hyBTKR.sc-DNdyV
 drivetribe.com##.fnrkLU.sc-ipZHIp
@@ -7594,6 +7616,9 @@ etherscan.io##.d-lg-block
 
 etlib.ru###widget_add_ask
 etlib.ru##.top-rating-block > .summary
+! fake notices
+etlib.ru##.header__notice-count
+etlib.ru##.vacancy
 
 etm.ru##.city-modal
 etm.ru##.order_status
@@ -11417,8 +11442,14 @@ imarket.by##.modal
 imarket.by##.banner-bf
 
 ||imdb.com/tr/  # is in EasyPrivacy
-imdb.com##.oscars-site-stripe
 imdb.com##.ipc-logo
+    ! banners and promos
+imdb.com##div[data-testid=imdb-pro-sidebar-widget]
+! promo to register
+imdb.com##section[cel_widget_id="StaticFeature_NameSeen"]
+imdb.com##.imdb-editorial-single
+    ! other
+imdb.com##.oscars-site-stripe
 imdb.com##div.mini-article > .ab_widget
 
 ! videoads
@@ -12564,6 +12595,7 @@ kaskad61.ru##.sec-category
 ! top
 kasparov.ru##.pageTitle
 
+||kaspersky.com/tracking/  # ad scripts  # media.kaspersky.com/tracking/omniture/s_code_single_suite.js
 forum.kaspersky.com##.ipsSpacer_top.cTopicPostArea_noSize.ipsPad.ipsAreaBackground.cTopicPostArea
 forum.kaspersky.com##.ipsMessage_information.ipsMessage.ipsJS_hide.cAnnouncementPageTop
 forum.kaspersky.com##.ipsType_center.ipsMessage_information.ipsMessage.cAnnouncementContentTop
@@ -13629,6 +13661,9 @@ lanik.us##.search-header:style(margin-top:0px !important)
 
 laptop.ninja##.sg-popup-content
 laptop.ninja##.sgpb-popup-overlay
+
+laptopradar.com##.mediad
+laptopradar.com##.scrollsticky.stickyscroll_widget
 
 laroche-posay.ru##.home-banner-wr
 laroche-posay.ru##.home-top-banners
@@ -15143,6 +15178,8 @@ mediafire.com##.upGrade.avatarMenu-upgrade
 mediafire.com##.appPromo
 mediafire.com##.smUpgradeSpace
 mediafire.com##.appUgradeBadge
+! is in Adguard
+mediafire.com##.DLExtraInfo-downloadApp
 
 ||mediafort.ru/i/mainbg2.jpg
 mediafort.ru##.text-count
@@ -15525,6 +15562,9 @@ met-all.org##.footer
 metal-san.ru###logo-link-header
 metal-san.ru##.header-scroll
 metal-san.ru###brends-sidebar
+
+metlife.com##.alert-message
+metlife.com##.skip
 
 metricfire.com##.homepage-header__fade
 metricfire.com###animation
@@ -16176,6 +16216,10 @@ motphim123.com##.banner-preload
 movetocyprus.org###menu_mobile
 movetocyprus.org##.just-link.btn-small
     ! other
+
+||movie-censorship.com/inc/titel$image
+! left column with ads
+movie-censorship.com##.body2 > table > tbody > tr > td:nth-of-type(1):has(a[href*="out.php?"])
 
 moya-planeta.ru##.header-content
 moya-planeta.ru##.header-visual
@@ -19023,6 +19067,12 @@ planetofhotels.com##.c-anchor:style(position:static !important)
     ! popup
 planetofhotels.com##.region-page-bottom
 
+planfix.com##.pa-head .pa-head-title:style(margin-top:0px !important; color: initial !important)
+planfix.com##.pa-head:style(height:auto !important)
+planfix.com##.menu-wrapper:style(padding-top:0px !important)
+planfix.com##.menu a:style(color:initial !important)
+planfix.ru##.main-nav__logo
+
 ||planirovkainfo.ru/wp-content/themes/hotel-melbourne/js/flexslider/
 ! remove annoying scrolling
 ||planirovkainfo.ru/*/aos.js
@@ -21810,6 +21860,12 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||radikal.ru/i705/1603/5d/c8154e8acfc3.$image
 ||rips.club/img/group_vk.png
 ||t-ru.org/pic/ivi.png
+
+! popups
+rutraveller.ru##[id^=tm-poll-button]
+! seo
+rutraveller.ru##p.bth__txt
+rutraveller.ru##.footer__txt-sm
 
 ! https://pikabu.ru/story/chernoe_zerkalo_uzhe_zdes_7363440
 ||rutube.ru/*/survey.js
@@ -25717,6 +25773,12 @@ topgoogle.ru##.overlay
 
 top-hammam.ru###fancybox-wrap
 
+tophotels.ru##.js-banner-transport-up
+||hotelscheck.com.ru/csstx/images/big-horizont/$image
+tophotels.ru##[class^=big-horizont]
+tophotels.ru##.footer__txt-big
+tophotels.ru##.footer__title
+
 top-knife.ru##.brand-plugin-wrap
 
 topmobiletech.com##.fixed.sticky-header:style(position:static !important)
@@ -28662,6 +28724,8 @@ wrike.com##.layout__header:style(position:static !important)
 wrike.com##.comparison-header__shadow
 
 writingexplained.org##.inside-header
+
+||wsimg.com/parking-lander/  # is in EasyList
 
 wsj.net$script,domain=~wsj.com
     ! logos
