@@ -11443,14 +11443,21 @@ imarket.by##.banner-bf
 
 ||imdb.com/tr/  # is in EasyPrivacy
 imdb.com##.ipc-logo
+    ! popups
+imdb.com##.ab_widget
+!imdb.com##div.mini-article > .ab_widget
+imdb.com###logged_out_upsell
     ! banners and promos
 imdb.com##div[data-testid=imdb-pro-sidebar-widget]
 ! promo to register
 imdb.com##section[cel_widget_id="StaticFeature_NameSeen"]
 imdb.com##.imdb-editorial-single
+imdb.com##[data-testid="top-picks--sign-in-btn"]
+imdb.com##.ipc-title__description:has-text(Sign in)
+! "Rent the film" (paid Amazon) and other
+imdb.com##.ipc-poster-card__actions
     ! other
 imdb.com##.oscars-site-stripe
-imdb.com##div.mini-article > .ab_widget
 
 ! videoads
 imfdb.org##.jw-floating-dismissible
