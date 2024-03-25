@@ -2643,6 +2643,8 @@ avtocod.ru##.btn-div-cansel__item:has-text(пример)
 
 avtodispetcher.ru###reformal_panel
 
+avtoexperts.ru##.widget-question
+
 avtogai.ru##.slade_carousel
 avtogai.ru##.carousel-wrapper
 avtogai.ru##.foter-baners
@@ -2677,6 +2679,8 @@ avtoradio.ru##.rss
 avtoschoolzel.ru###rt-extension
 
 avtoshark.com##.bCarAnim
+! inline related
+avtoshark.com##.read-also
 
 avtoshkola16.ru##.spu-box
 
@@ -4985,6 +4989,7 @@ cloudcheckr.com##.news-bar
 cloudenius.com###masthead
 
 cloudflare.com###top-navbar:style(position:static !important)
+||cloudflare.com/ajax/libs/fastclick/*/fastclick.min.js  # https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js
 ||cloudflare.com/ajax/libs/mobile-detect/
 
 cloudflare-quic.com##.desktop-nav:style(position:static !important)
@@ -5566,6 +5571,7 @@ dadata.ru##.header__login-button:style(position:static !important)
 ||speedtest.dailymotion.com/latencies.js
 ! ad scripts
 ||dmcdn.net/pxl/
+dailymotion.com##[class^=ResponsiveHeader__logoContainer]
 
 ! transparent layer over content
 dailyway.ru###main > [href="http://forum.lifelongjourney.ru/"]
@@ -8857,6 +8863,8 @@ blog.f-secure.com##.b-page-content--offset:style(padding-top:0px !important)
 
 fsk-russia.ru##.back-call
 
+fss.ru##.overlay-notification-container:has-text(некорректное отображение)
+
 ||fssquad.com/hotlink-ok/$image
 fssquad.com##.userBanner
 
@@ -11489,11 +11497,12 @@ imgbase.ru###notice
 
 imgdrive.net###menu
 
+! 2024-03: closed
 ! работает в Firefox, в Opera не работает, так же, как и contains
-imgpay.ru##^script:has-text(Adblock)
-imgpay.ru###quote
-imgpay.ru##.jumbotron
-||imgpay.ru/reg/
+!imgpay.ru##^script:has-text(Adblock)
+!imgpay.ru###quote
+!imgpay.ru##.jumbotron
+!||imgpay.ru/reg/
 
 #||imgur.com/min/px.js  # is in Fanboy's  # matches /px.
 ! Uncaught TypeError: this.measure is null
@@ -14666,6 +14675,20 @@ ludovicperrichon.com##.main-header
 ludovicperrichon.com###bkgd_svg
 ludovicperrichon.com###bkgd_transparent
 ludovicperrichon.com##.header-title
+
+||lukoil-shop.com/local/templates/lukoil/images/404_back$image
+    ! popups
+lukoil-shop.com###region-detect-modal
+    ! top
+lukoil-shop.com##.header-fixed
+    ! other
+! totop
+lukoil-shop.com##.b-move-up-btn
+lukoil-shop.com##input#title-search-input:remove-attr(readonly)
+lukoil-shop.com##button.b-search-top__submit:remove-attr(disabled)
+lukoil-shop.com##.content-block:has-text(Просмотренные товары)
+! labels
+lukoil-shop.com##.statuses-product__new
 
 lullabot.com##.site-header.is-fixed:style(position:static !important)
 lullabot.com##.site-content:style(padding-top:0px !important)
@@ -20078,10 +20101,6 @@ provereno.media##.mistape_caption
 
 provoda.me##.b-catalog-application
 provoda.me##.b-footer__button
-
-! "Пожалуйста, отключите блокировщик рекламы Adblock"
-provse.news$script
-provse.news$inline-script
 
 forum.proxmox.com###top > div:has-text(/^$/)
 
