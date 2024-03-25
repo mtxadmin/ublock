@@ -1128,10 +1128,23 @@ a1991.dscr.akamai.net$script  # page blocking scripts
 ||akamaized.net/oil/
 /oil/*-release.chunk.js  # is in EasyList and Fanboy's
 
-! totop
-akbmoscow.ru##.topbutton
+akbauto.ru##.block-fixed
+akbauto.ru##.block-present
+akbauto.ru##.head-m-rating
+akbauto.ru##.tooltip
+akbauto.ru##.present-icon
+
+akbinfo.ru###logoWithName
+
+    ! banners and promos
+akbmoscow.ru###front-page-slider
 akbmoscow.ru##.product__action-board_buyOneClick
 akbmoscow.ru##.product__action-board_review-discount
+    ! other
+! totop
+akbmoscow.ru##.topbutton
+! circling search icon
+akbmoscow.ru###hb-search input:style(animation:none !important; webkit-animation:none !important)
 
 akbtest.ru##[class*=positionfixed]:style(position:static !important)
 akbtest.tilda.ws##[class*=positionfixed]:style(position:static !important)
@@ -4367,6 +4380,8 @@ carhack.ru##.g1-logo
 ||carierista.com/assets/images/hd_home.jpg
 
 carsalesbase.com##.logo-main-wrap-center
+
+||carservic.ru^$csp=script-src 'self' *  # site blocks copypaste  # https://github.com/uBlockOrigin/uBlock-issues/issues/3181
 
 ||carsguru.net/*/footer_car.png
 carsguru.net##.head__logo-link
@@ -11456,6 +11471,9 @@ imdb.com##[data-testid="top-picks--sign-in-btn"]
 imdb.com##.ipc-title__description:has-text(Sign in)
 ! "Rent the film" (paid Amazon) and other
 imdb.com##.ipc-poster-card__actions
+! "Rent the film" again
+imdb.com##[data-testid="tm-box-wb-overflow"]
+imdb.com##.pro-upsell__link
     ! other
 imdb.com##.oscars-site-stripe
 
@@ -23035,6 +23053,11 @@ wsimg.com$script,domain=~godaddy.com
 sizcontract.ru##.pays
 
 skai.gr###breaking-news
+
+! popup
+skat-ups.ru##.header-droppa-box.location-choose-block
+! promo
+skat-ups.ru##.club-link-box
 
 ! иначе там скрипты ошибки выдают. Лайки рубятся, но менее глубоко
 @@||sk-desantnik.ru/*/social-likes.min.js
