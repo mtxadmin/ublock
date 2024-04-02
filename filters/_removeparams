@@ -3567,6 +3567,7 @@ $removeparam=from,domain=dzen.*  # in general rule up there there is an exclusio
     ! "Rid" - see above. "From" is on zen, but I saw glitches on yandex.
 ya.ru$removeparam=from_type
 $removeparam=integration,domain=dzen.*|ya.ru|yandex.*
+ya.ru$removeparam=issue_tld
 ! lang
     /story/*?lang=$document,removeparam=|,domain=dzen.*|ya.ru|yandex.*  # from Ru AdList
 ya.ru,yandex.*$removeparam=lr  # from NeatURL
@@ -3593,7 +3594,7 @@ $removeparam=persistent_id,domain=ya.ru|yandex.*|dzen.ru  # from Adguard
 $removeparam=place,domain=dzen.*|yandex.*
 $removeparam=pokupki,domain=market.yandex.*  # from Ru AdList, modified
     ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
-ya.ru$removeparam=redirect_ts  # from Ru AdList
+ya.ru$removeparam=redirect_ts  # is in Ru AdList
 $removeparam=rs,domain=market.yandex.*  # some long id  # again
 $removeparam=search_source,domain=ya.ru|yandex.*  # from Ru AdList: ||yandex.*/search/$document,removeparam=search_source
 $removeparam=secdata,domain=dzen.*|ya.ru|yandex.*
