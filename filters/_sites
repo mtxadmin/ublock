@@ -9542,48 +9542,70 @@ globalnews.ca##.l-navbar__top
 globalnews.ca##.c-posts--inline
 globalnews.ca##.l-inlineStories
 
-||globus.ru/include/lazy_advantages.php
-    ! popups
-globus.ru###popupSetTown
-globus.ru##.fancybox-stage
-globus.ru##.fancybox-container
-globus.ru##.floating-block
-globus.ru##.popup-fabuza
-globus.ru###cboxContent:has(#cboxLoadedContent)
-globus.ru###colorbox.popup-mobile.popup-warning
-    ! banners
-globus.ru##.carousel_banner
-globus.ru##.banner-top
-globus.ru##.js-banner-top
-globus.ru###actions-in-globus
-globus.ru##.slider_main
-globus.ru##.banner-secondary
-    ! unfix top
-globus.ru##.stick-me:style(position:static !important)
-globus.ru##.header__sticky-menu:style(position:static !important)
-globus.ru##.js-sticky-menu:style(position:static !important)
-globus.ru###d-header:style(position:static !important)
-globus.ru##.is-affixed:style(position:static !important)
-globus.ru##.inner-wrapper-sticky:style(position:static !important)
-globus.ru##.d-header__top
-globus.ru##.js-header-offset
-globus.ru##.d-header__offset
-globus.ru##.menu__logo
-globus.ru##.item-card__header
-globus.ru##.basket-small__cart
-    ! seo
-globus.ru##.catalog-detail__additional-text
-globus.ru##.footer__background:style(border-top-left-radius:0px !important)
-globus.ru##.footer__background:style(border-top-right-radius:0px !important)
-globus.ru##.d-footer::before:style(border-top-left-radius:0px !important)
-globus.ru##.d-footer::before:style(border-top-right-radius:0px !important)
-    ! other
-!globus.ru##.header__middle - don't, contains search
-!globus.ru##.share__icon
-globus.ru##.share__icon_i_share
+!
+! Old design
+!
+!||globus.ru/include/lazy_advantages.php
+!||globus.ru/_next/static/chunks/pages/promo
+!    ! popups
+!globus.ru###popupSetTown
+!globus.ru##.fancybox-stage
+!globus.ru##.fancybox-container
+!globus.ru##.floating-block
+!globus.ru##.popup-fabuza
+!globus.ru###cboxContent:has(#cboxLoadedContent)
+!globus.ru###colorbox.popup-mobile.popup-warning
+!    ! banners
+!globus.ru##.carousel_banner
+!globus.ru##.banner-top
+!globus.ru##.js-banner-top
+!globus.ru###actions-in-globus
+!globus.ru##.slider_main
+!globus.ru##.banner-secondary
+!    ! unfix top
+!globus.ru##.stick-me:style(position:static !important)
+!globus.ru##.header__sticky-menu:style(position:static !important)
+!globus.ru##.js-sticky-menu:style(position:static !important)
+!globus.ru###d-header:style(position:static !important)
+!globus.ru##.is-affixed:style(position:static !important)
+!globus.ru##.inner-wrapper-sticky:style(position:static !important)
+!globus.ru##.d-header__top
+!globus.ru##.js-header-offset
+!globus.ru##.d-header__offset
+!globus.ru##.menu__logo
+!globus.ru##.item-card__header
+!globus.ru##.basket-small__cart
+!    ! seo
+!globus.ru##.catalog-detail__additional-text
+!globus.ru##.footer__background:style(border-top-left-radius:0px !important)
+!globus.ru##.footer__background:style(border-top-right-radius:0px !important)
+!globus.ru##.d-footer::before:style(border-top-left-radius:0px !important)
+!globus.ru##.d-footer::before:style(border-top-right-radius:0px !important)
+!    ! other
+!!globus.ru##.header__middle - don't, contains search
+!!globus.ru##.share__icon
+!globus.ru##.share__icon_i_share
 ! ugly pictures in warranty block on root
-globus.ru###warranty > .carousel-adaptive-wrapper > .bx-wrapper > .bx-viewport > .js-carousel-adaptive > div.block > .image
-globus.ru##.btn_preview
+!globus.ru###warranty > .carousel-adaptive-wrapper > .bx-wrapper > .bx-viewport > .js-carousel-adaptive > div.block > .image
+!globus.ru##.btn_preview
+!
+! New design (2024)
+!
+    ! popups
+globus.ru##div[data-role=content]:has-text(cookie)
+globus.ru##div[role=dialog]:has-text(cookie)
+globus.ru##div[aria-hidden="true"]:has-text(/^$/)
+    ! banners and promos
+!||globus.ru/files/cms/banners/
+! не, там через прокладку:
+||globus.ru/_next/image?url=https%3A%2F%2Fdigitalone.globus.ru%2Ffiles%2Fcms%2Fbanners%2F
+! ну и
+globus.ru##span:has(>img[preview^="https://digitalone.globus.ru/files/cms/banners/"])
+globus.ru##a[title="Великий пост"]
+globus.ru##.swiper-wrapper
+    ! other
+! totop
+globus.ru##button:has-text(Наверх)
 
 globusgurme.ru##.main-slider
 globusgurme.ru##.footer__t-small
@@ -12347,11 +12369,15 @@ jooble.org##div:matches-css(position:fixed)
 jooble.org##aside:has-text(Подпишитесь)
 jooble.org##p:has-text(вы скоро найдете)
 
-joom.com##[class^=logo]
-joom.com##[class^=product_]:has([class^=adBadge])
-joom.com,joom.ru##div[class^=discount__]
 joom.com/*/getGoogleAnalyticsClientID
 !||joomcdn.net/web-client/bugsnag$redirect=noopjs - error
+joom.com##[class^=logo]
+joom.com,joom.ru##[class^=jmtLogo_]
+    ! popups
+joom.ru##[class^=contextMenu]:has-text(вы будете перенаправлены на joom.com)
+    ! other
+joom.com##[class^=product_]:has([class^=adBadge])
+joom.com,joom.ru##div[class^=discount__]
 joom.com##div[aria-label="Карусель акций"]
 joom.com##div[aria-label="Carousel of elements"]
 ! "striked" prices
@@ -12765,9 +12791,10 @@ kinonews.ru##.submenu_newup:style(position:static !important)
 ! strange filters from RU Adblock. Disabled again
 @@||www.kinopoisk.ru^$generichide,badfilter
 @@||mc.yandex.ru^$script,domain=www.kinopoisk.ru,badfilter
-    ! banners
+    ! banners and promos
 kinopoisk.ru##[class^=styles_plusDesktopBrandingButton]
 kinopoisk.ru##[class*=ticketsButton]
+kinopoisk.ru##section:has(h3:has-text(Билеты в кино))
 kinopoisk.ru##.nameplate__button_type_tickets
 kinopoisk.ru##.nameplate__icon-wrapper
 kinopoisk.ru##.nameplate__item_type_tickets
@@ -21098,6 +21125,7 @@ rg.ru##.b-favourites-sources__list
 rg.ru##rg-share
 rg.ru##.b-vendors__wrap
 rg.ru##.b-vendors
+rg.ru##[class*="EditorialHeader_logo"]
 
 rgblog.ru##.header
 rgblog.ru##.mso-randomtext_widget
