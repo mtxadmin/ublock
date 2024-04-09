@@ -4705,6 +4705,9 @@ chillychiles.com##.top_bar:style(position:static !important)
 chillychiles.com##.announcementBar
 chillychiles.com##.ss-icon
 
+chinahandys.net##.btn-warning
+chinahandys.net##.price-table
+
 chinas-lafa.ru##.code-block
 
 chipdip.by##.header__fixed-block_show.header__fixed-block:style(position:static !important)
@@ -6587,15 +6590,19 @@ dotnet-helpers.com##.fusion-sb-toggle
 
 dou.ua###max-header-adv-id
 
+# uBlock filters exclusion rule: @@||downloadfreecourse.com^$generichide
+    ! popups
 ! cookies popup
 downloadfreecourse.com##.text
-# uBlock filters exclusion rule: @@||downloadfreecourse.com^$generichide
+downloadfreecourse.com##.cookies-warning
+downloadfreecourse.com##.auth-modal.fade.modal
+downloadfreecourse.com##.modal-backdrop
+    ! other
 downloadfreecourse.com##.icon-arrow-up
 downloadfreecourse.com##.logo-banner
 ||downloadfreecourse.com/assets/img/reactions/$image
 downloadfreecourse.com##.reactions
 downloadfreecourse.com##.share-box
-downloadfreecourse.com##.cookies-warning
 
 downloadly.win##.herald-responsive-header:style(position:static !important)
 
@@ -9981,6 +9988,9 @@ gsm-repiteri.ru##.mm_logo
 ||gsm-repiteri.ru/catalog/view/theme/metroshop/image/body_.jpg
 gsm-repiteri.ru##.call-us
 
+||gsmstellar.net/img/gsmstellar.png
+gsmstellar.net##.blrub-logo
+
 g-tex.su##.landing-scrolled:style(position:static !important)
 g-tex.su##.landing__wrap-menu:style(position:static !important)
 
@@ -11386,6 +11396,15 @@ i-fakt.ru##.logo-blog-info-widget-wrapper
 
 ifbest.org##.top-menu-left
 ifbest.org##.logo-banner
+
+    ! banners and promos
+igeekphone.com##.a-wrap
+igeekphone.com##div.igeek-widget.widget
+igeekphone.com##.smart-head-mid
+    ! top
+igeekphone.com##.trending-ticker
+igeekphone.com###smart-head:style(min-height:auto !important)
+    ! other
 
 igg-games.com###idModal.modal-content
 igg-games.com###HDQ
@@ -16327,6 +16346,8 @@ movetocyprus.org##.just-link.btn-small
 ! left column with ads
 movie-censorship.com##.body2 > table > tbody > tr > td:nth-of-type(1):has(a[href*="out.php?"])
 
+||movilesdualsim.com/blog/smart_firebase_sw.js
+
 moya-planeta.ru##.header-content
 moya-planeta.ru##.header-visual
 moya-planeta.ru##.header-line--visual
@@ -17420,6 +17441,7 @@ northsea.ru##.orderform_btn
 ||notebookcheck-ru.com/*/header_bg.svg$important
 ||notebookcheck-tr.com/*/header_bg.svg$important
 ||notebookcheck.se/*/header_bg.svg$important
+    ! banners and promos
 ! topbar
 notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.pl,notebookcheck.info,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.se###nbc_topbar
 ! top redirect ads
@@ -17427,9 +17449,11 @@ notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebook
 ! adblock msg
 notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.pl,notebookcheck.info,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.se###nbc_contentcontainer > div:has-text(switch off ad blockers)
 notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.pl,notebookcheck.info,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.se###rectmain
+notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.pl,notebookcheck.info,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.se###nbc_bb
+notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.pl,notebookcheck.info,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.se##.introa_whole
+    ! other
 ! sticky toc
 notebookcheck.net,notebookcheck.com,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.pl,notebookcheck.info,notebookcheck-ru.com,notebookcheck-tr.com,notebookcheck.se###toc
-! other
 ! is in Adguard
 notebookcheck.net##.socialarea
 
@@ -21114,6 +21138,8 @@ reuters.com###hp-newsletters
 ||api.reverso.net/stats/  # from Adguard
 ||cdn.reverso.net/ramjs/  # from Adguard
 ||cdn.reverso.net/rumjs/  # from Adguard
+
+review-plus.com##.code-block:has(script)
 
 reviewpoint.ru###mt-menu-wrap:style(position:static !important)
 reviewpoint.ru##.top-header-section
@@ -26689,6 +26715,9 @@ ukr-today.com##.message
 !faded
 ukr-today.com##.sidebar-box > .read-more
 
+ul.com###languagePrompt
+ul.com##.ul-global-nav-wrapper-logo
+
 ulefone.com##.footermsg
 ulefone.com##.index_banner
 ulefone.com##.indexFind
@@ -29770,6 +29799,7 @@ zdnet.com##.c-shortcodePinbox
 zdnet.com##.c-commerceBuyButton
 zdnet.com##.c-globalBreakingNews
 zdnet.com###taboola-below-home-thumbnails-homepage
+zdnet.com##.c-shortcodeMiniListicle
     ! other
 ! is in Adguard
 zdnet.com###ot-sdk-btn
