@@ -189,7 +189,7 @@
 ##[id*="callback"]:not(html):not(body):not(article)
 !
 !! very good and useful rules in general, but messengers, streaming and webinar services must be excluded
-~alfabank.ru,~aliexpress.com,~auto.ru,~bizon365.ru,~dhgate.com,~fincult.info,~hh.ru,~openai.com,~psbank.ru,~sberbank.ru,~theb.ai,~vtb.ru,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="Chat"]:not(html):not(body):not(article):not(section)
+~alfabank.ru,~aliexpress.com,~auto.ru,~bizon365.ru,~dhgate.com,~fincult.info,~followme2serbia.com,~hh.ru,~openai.com,~psbank.ru,~sberbank.ru,~theb.ai,~vtb.ru,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="Chat"]:not(html):not(body):not(article):not(section)
     ! Exclusions:
     ! aliexpress.com - useful support chat
     ! auto.ru - useful chat
@@ -220,6 +220,7 @@
     ! clickmeeting.com - videos/streams
     ! dhgate.com - useful support chat
     ! fincult.info - don't remember, I think, videos/streams
+    ! followme2serbia.com - .category-dostoprimechatelnosti
     ! gosuslugi.ru - useful support chat
     ! hh.ru - chats with employers
     ! icq.com - chat windows on a messenger site
@@ -344,6 +345,8 @@
 
 3xpush.com$important  # push ads network  # Checked:2023-10-10
 
+4fiit.cz  # ad scripts  # https://4fiit.cz/chatbot/...
+
 8x8.com  # from ShadowWhisperer's Chats
 
 aaawebstore.com$important  # shopify ad scripts  # "Convert More Visitors Into Customers"  # "Engage Customers with Push notification and Announcement bars"
@@ -419,6 +422,8 @@ aimtell.io
 
 airbud.io  # from ShadowWhisperer's Chats
 
+airport.ai  # from EasyList: external.airport.ai  # chat ai
+
 airpush.com$important  # from YHosts  # is in Adguard
 !+  api.airpush.com
 !+      mobileweb.api.airpush.com
@@ -453,6 +458,8 @@ alive5.com$important  # "Your visitors can now interact with an automated chatbo
 allowpush.com  # from GoodbyeAds
 
 allstat-pp.ru$important  #pushprofit.ru  # ad scripts
+
+almaintelligence.com  # from EasyList: assistant.almaintelligence.com
 
 alytics.ru
 !+  ae.alytics.ru
@@ -635,6 +642,8 @@ botpenguin.com
 
 botsnext.com  # from ShadowWhisperer's Chats
 
+botsonic.ai  # from ShadowWhisperer's Chats and EasyList
+
 botsupply.ai  # from ShadowWhisperer's Chats
 
 boundlessveil.com  # from Adguard
@@ -646,6 +655,8 @@ brainsins.com  # tracking and popup ad scripts
 britopush.com  # from Adguard  # Checked:2023-12-25
 
 brn.ai
+
+broadly.com  # from EasyList: chat.broadly.com
 
 browserpusher.com  # from Adguard
 
@@ -857,6 +868,8 @@ chatidcdn.com  # from ShadowWhisperer's Chats
 
 chatinator.com  # from Adguard
 
+chatling.ai  # from ShadowWhisperer's Chats
+
 chatlio.com  # from ShadowWhisperer's Chats
 
 chatntr.com  # from Adguard
@@ -878,6 +891,8 @@ chatrwireless.com  # from GoodbyeAds
 chatsupport.co  # from ShadowWhisperer's Chats
 
 chatterpal.me  # is in Adguard
+
+chatway.app  # from EasyList
 
 chatwing.com  # from ShadowWhisperer's Chats
 
@@ -969,7 +984,11 @@ contentsitesrv.com  # push ad scripts and near empty root  # is in uBlock filter
 
 continual.ly  # from ShadowWhisperer's Chats
 
+contrib.ai  # from ShadowWhisperer's Chats
+
 conversable.com  # from ShadowWhisperer's Chats
+
+conversationalsdevelopment.nl  # from EasyList
 
 conversica.com  # from ShadowWhisperer's Chats
 
@@ -1036,12 +1055,14 @@ customeriomail.com$important
 
 customerconnections.io  # from ShadowWhisperer's Chats
 
-customerly.io  # chat
+customerly.io  # chat  # is in EasyList
 
 czater.pl  # "Live chat i telefon na stronę  Co daje livechat i callback"
 chater.biz
 
 czpush.com  # from Adguard  # Zombie:2022-12-02
+
+czu.cz  # from EasyList: chatbot.pef.czu.cz  # api-test.oikt.czu.cz:7776/js/..  # logo.czu.cz/czu/chatbotloader.js
 
 dailygrow.ru  # "consutants"  # https://pikabu.ru/story/besplatnyiy_vidzhet_whatsapp_i_telegram_na_sayt_10157827
 
@@ -1147,6 +1168,8 @@ effect.com  # from ShadowWhisperer's Chats
 elev.io  # from ShadowWhisperer's Chats
 
 engagebay.com  # from EasyList
+
+engagement.ai  # from ShadowWhisperer's Chats
 
 engagespot.co  # push ads
 
@@ -1289,6 +1312,9 @@ gameball.co  #assets.gameball.co/widget/js/gameball-init.min.js
 
 gaze.pro  # from Ru AdList
 
+generaxion.com  # generaxion.fi
+generaxion.fi  # from EasyList
+
 gepush.com  # from MobileAdTrackers
 !+  talk.gepush.com
 !+      open.talk.gepush.com
@@ -1364,7 +1390,7 @@ grnewsletters.com  # AS46469 - GETRESPONSE-IMPLIX - GETRESPONSE, US
 
 getrxhere.co  # from GoodbyeAds
 
-getsitecontrol.com$important  # ad scripts  # getsitecontrol.com - surveys, email opt-in forms, contact forms, popups, follow, share buttons and live chats  # "Use custom forms and popups to connect with the audience"  #assets.getsitecontrol.com  #widgets.getsitecontrol.com
+getsitecontrol.com$important  # ad scripts  # getsitecontrol.com - surveys, email opt-in forms, contact forms, popups, follow, share buttons and live chats  # "Use custom forms and popups to connect with the audience"  #assets.getsitecontrol.com  #widgets.getsitecontrol.com  # is in EasyList and Ru AdList
 
 getsupernova.com  # from Adguard
 
@@ -1544,7 +1570,7 @@ in-page-push.net  # from GoodbyeAds
 
 hidepaypal2-static.inscoder.com$important  # "frequently requested feature on Shopify support forums for merchants who simply wants to hide the Paypal button on shopping cart page"
 
-insent.ai  # redirect to zoominfo.com  # is in Adguard
+insent.ai  # redirect to zoominfo.com  # is in Adguard and EasyList
 
 instabot.io  # from ShadowWhisperer's Chats
 
@@ -1634,6 +1660,8 @@ jumpoutpopup.ru$important  # "widgets"  # "Умные формы для сбор
 
 just-ai.com  #zenbot.just-ai.com
 
+justanswer.com  # from EasyList and ShadowWhisperer's Chats
+
 k50.ru
 !+  dev.k50.ru
 !+  generator.k50.ru
@@ -1669,6 +1697,8 @@ klickmode.biz  # "Click Allow"  # Checked:2024-01-03
 
 knd.ro  # 403 root  # from Ru AdList: push.knd.ro
 
+kodabots.com  # from EasyList
+
 kommunicate.io  # "AI chatbot"  # from Fanboy's: ||kommunicate.io/kommunicate/$media  # from ShadowWhisperer's Chats
 
 krible.com  #cdn.krible.com
@@ -1680,6 +1710,8 @@ kurlipush.com  # from Adguard
 kustomerapp.com  # from ShadowWhisperer's Chats
 
 ladesk.com  # from ShadowWhisperer's Chats
+
+laiye.com  # from ShadowWhisperer's Chats and EasyList
 
 lalapush.com  # from GoodbyeAds and EasyList
 
@@ -1907,7 +1939,7 @@ modulepush.com$important
 
 moengage.com  # from Adguard
 
-moin.ai  # from Adguard
+moin.ai  # from Adguard and EasyList
 
 molie.chat  # from GoodbyeAds
 
@@ -2015,7 +2047,11 @@ notifcationpushnow.com  # from EasyList
 
 notifica.re  # push ads
 
+notifications.ltd  # from EasyList
+
 notifpush.com  # from EasyPrivacy and Adguard
+
+notifstation.com  # from EasyList
 
 notify.solutions  # from Adguard
 
@@ -2045,6 +2081,8 @@ nuteqsolutions.com  # from ShadowWhisperer's Chats
 
 ocelotbot.com  # from ShadowWhisperer's Chats
 
+octadesk.services  # from EasyList: chat.octadesk.services
+
 oki-toki.net
 oki-toki.ru
 
@@ -2057,6 +2095,10 @@ olark.com$important  # chat
 omegatheme.com$important  # several naggy shopify apps  #omegatheme.com/cookies-notification/  #omegatheme.com/facebook-chat/
 
 ometrics.com  # from ShadowWhisperer's Chats
+
+omni.cafe  # from EasyList  # no root
+
+omnichannelengagementhub.com  # from ShadowWhisperer's Chats
 
 omnichat.ai  # from ShadowWhisperer's Chats
 
@@ -2857,6 +2899,8 @@ rapportboost.ai
 
 rapporto.ru
 
+raptive.ai  # from EasyList: production.raptive.ai  # no root
+
 raychat.io  # from ShadowWhisperer's Chats
 
 rbcall.com  # closed ?
@@ -2963,6 +3007,9 @@ roistat.net$important
 roko.mobi  # from ShadowWhisperer's Chats
 
 rollcall.com  #scout.rollcall.com
+
+rul.ai  # "ai chatbot"  # from EasyList
+rulai.wpenginepowered.com
 
 ruralrobin.com  # from Adguard
 
@@ -3249,6 +3296,8 @@ supapush.net  # from EasyList
 
 superblock.net  # pushover
 
+superchat.de  # from ShadowWhisperer's Chats and EasyList
+
 superpush.io
 
 surepush.cn  # from GoodbyeAds
@@ -3381,6 +3430,8 @@ traffgui.ru  # "Определение профилей ВКонтакте"
 trappush.com  # from Adguard
 
 trenchenious.com  # push ads
+
+trengo.eu  # from EasyList
 
 trk-convenire.com  # Push Ads - Tracker  # from Quidsup NoTrack-Blocklist
 
@@ -3522,7 +3573,7 @@ virtualspirits.com  # from ShadowWhisperer's Chats
 
 visitchattanooga.com  # from GoodbyeAds
 
-visitor.chat  # from Adguard
+visitor.chat  # from Adguard and EasyList
 
 voice-connect.ru
 !+  my.voice-connect.ru
@@ -3616,6 +3667,8 @@ wonderpush.com  # from MobileAdTrackers
 !+  by.wonderpush.com
 ! end of wonderpush.com
 
+worldfone.vn  # from EasyList  # "call center"  # livecall.worldfone.vn, worldchatbox.worldfone.vn  # from EasyList
+
 worldpush.co  # platform.io
 
 wotnot.io  # from ShadowWhisperer's Chats
@@ -3633,6 +3686,8 @@ wpush.biz$important  # disable AdGuard exceptions
 wpush.org  # from GoodbyeAds and Adguard
 wpush.io  # from ShadowWhisperer's Ads
 wpushorg.com  # from EasyList
+
+writesonic.com  # from ShadowWhisperer's Chats and EasyList  # "AI chatbots"
 
 wwpush22.com  # from EasyList
 
