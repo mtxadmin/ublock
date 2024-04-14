@@ -25,6 +25,10 @@ aliexpress.ru$removeparam=algo_exp_id
 aliexpress.com$removeparam=algo_expid
 aliexpress.ru$removeparam=algo_expid
 
+! Found independently. Hmm, it seems, I already have added it before
+aliexpress.com$removeparam=algo_pvid
+aliexpress.ru$removeparam=algo_pvid
+
 tmall.com$removeparam=ali_trackid  # from Adguard
 
 !aliexpress.com$removeparam=appKey - don't, it breaks related search
@@ -47,7 +51,7 @@ aliexpress.ru$removeparam=ck
 aliexpress.com$removeparam=cn
 aliexpress.ru$removeparam=cn
 
-||aliexpress.$removeparam=curPageLogUid  # from Adguard
+||aliexpress.$removeparam=curPageLogUid  # is in Adguard
     ! ||aliexpress.*^$removeparam=curPageLogUid  # from DandelionSprout's URLShortener
 
 ! Found independently.
@@ -121,7 +125,7 @@ aliexpress.ru$removeparam=pdp_ext_f
     !
     ! ||aliexpress.*^$removeparam=pdp_ext_f  # from DandelionSprout's URLShortener
 
-aliexpress.*$removeparam=pdp_npi  # from DandelionSprout's URLShortener
+aliexpress.*$removeparam=pdp_npi  # is in DandelionSprout's URLShortener
 
 ! Found independently, added 2022-01-11. Later: is in Adguard and DandelionSprout's URLShortener
 aliexpress.com$removeparam=pdp_pi
