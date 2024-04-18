@@ -3359,6 +3359,12 @@ bfm.ru##.share__title
 bfm.ru##.interesting-block
 bfm.ru##.font-b:has-text(Добавить BFM)
 
+! /images/*.gif is a good rule, but it breaks lazyloaded imgs. So, exclusion for the placeholder:
+@@||bg.ru/images/d.gif
+!bg.ru##+js(set-attr, img, src, [data-original]) - lazyloading workaround breaks some photos. Yes, it happens
+! ads
+bg.ru##div:has(>ul>li>span:has-text(/^Спецпроект$/i))
+
 bgmot.com##.aos-animate
 bgmot.com##.theme-main-menu
 
@@ -5082,6 +5088,7 @@ cnev.ru##.uk-sticky-fixed:style(position:static !important)
 
 ! that's from Ru AdList, disabled
 @@||cnews.ru^$generichide,badfilter
+||cnews.ru/inc/js/show_stat.js  # is in Adguard
     ! top
 cnews.ru##.tizer_stick:style(position:static !important)
 cnews.ru##.nav_stick:style(position:static !important)
@@ -5937,6 +5944,7 @@ dialog.ua##.be-with-us
 dialog.ua###fav
 ||dialog.ua/images/uploads/3d72c67e5893f2f3d05d528515022d5a.png
 dialog.ua##.news-content__title
+dialog.ua##.top-content-menu:style(margin-top:0px !important)
 
 diamondelectric.ru###region_select
 diamondelectric.ru###region_select_bg
@@ -7511,6 +7519,8 @@ enerplus.ru##.b-fastFixed
 ! popup
 engagebay.com##.engagebay-dashboard-noty
 engagebay.com##.testimonial-sec
+
+engine-codes.com##.cc-info
 
 englishdom.com##.banner-wrap
 englishdom.com##.js-arrow-top.b-arrow-top
@@ -9140,6 +9150,8 @@ gbhackers.com##.size-full.attachment-full
 ||gcdn.co/*/old-browser.js
 ||gcdn.co/*/stacktrace.js
 
+||gcticker.de/img/layout/$image
+
 gda.se##.article__overlay
 
 gde.ru##.main-about
@@ -9675,6 +9687,8 @@ goha.ru##.layout-menu:style(position:static !important)
 ||goha.ru/~$popup,domain=www.goha.ru  # from Ru AdList
 goha.ru##.layout-menu__sticky:style(position:static !important)
 goha.ru##.layout-footer-body__logo
+goha.ru/*&geodata=  # from Ru AdList: goha.ru*&geodata=
+||goha.ru*/event?hash=  # from Ru AdList
 
 goibibo.com##.offer-store-wrap
 goibibo.com##.slider
@@ -12001,6 +12015,9 @@ irecommend.ru##.ymarket-affiliate-widget
 irecommend.ru##.brosok
 ! is is not a teaser
 irecommend.ru#@#.views-field-teaser
+
+irn.ru##.gallery-cont:has(.bclick-tracker)
+irn.ru##.tgb
 
 irptorg.ru##.left_phones
 irptorg.ru##.under_logo
@@ -14616,6 +14633,10 @@ locatus.ru###map
 loccitane.com##.o-header--overlay:style(position:static !important)
 loccitane.com###site:style(padding-top:0px !important)
 
+||locks.ru/images/ban_$image
+! right animated banners
+locks.ru##td > p:has(img[src$=".gif"])
+
 lockspro.ru##.header-fixed
 
 lodki-lodki.ru###head_tel_block
@@ -14815,6 +14836,7 @@ m24.ru##.b-header-stripe01-wrapper_fixed
 m24.ru##.b-header-stripe02-and-stripe03-wrapper_fixed:style(position:static !important)
 m24.ru##.b-content:style(padding-top:0px !important)
 m24.ru##.b-header-wrapper:style(position:static !important)
+m24.ru##.stripe_fixed:style(position:static !important)
 
 ||macrium.com/files-2/next-webinar.jpg
 macrium.com###cover
@@ -16029,6 +16051,9 @@ mkr-rodniki.ru##[href*="http://goo.gl/"]
 ||mkr-rodniki.ru/medison.gif
 ||mkr-rodniki.ru/nashi.jpg
 ||mkr-rodniki.ru/vinoterra.gif
+
+mkset.ru##[class^=Topline_]:style(position:static !important; transition:none !important)
+mkset.ru##[class^=DesktopSpecialProject]
 
 mksguide.com##p.has-background:has-text(Something similar:)
 
@@ -18154,7 +18179,6 @@ online-courses.club##.admania_ftrattbtonbottom
 online-knigi.com##.glyphicon
 online-knigi.com##.fixed_desktop
 
-online-knizki.com##.stopcontent
 online-knizki.com##.bgh
 
 onlinepatent.ru##.aside-plate__holder
@@ -21475,6 +21499,8 @@ rt.ru##.is-popup.notification
 rt.ru##.rt-n-banner
 ! other
 
+rtk.lt###ccc.open
+
 rtl.hu##.vote-banner
 
 ||rts-tender.ru/*/2020_background.png
@@ -21516,6 +21542,10 @@ rucompromat.com$script  # site blocks copypaste
 
 ru-drivemusic.net##.author-description-star
 ru-drivemusic.net##.btn-mobile
+
+rufox.ru*/ncounter.pl?  # from Ru AdList
+rufox.ru##.stlinks
+rufox.ru##.lean
 
 ! (it is a duplicate header)
 rufusdownload.net##.header-sticky
@@ -21696,9 +21726,11 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ! some annoying pictures
 ||fastpic.org/big/2010/0301/ac/da93ac84a3a8cd5a5fbf94fd900182ac.$image
 ||fastpic.org/big/2011/0916/dc/bfddc1cf22892bfdb7b64e16d28776dc.$image
+||fastpic.org/big/2012/0918/81/6f5a0ea995b3e871716bbbb516fd7f81.$image
 ||fastpic.org/big/2012/0920/2a/c5367dce011d54c6d7376eda43bb612a.$image
 ||fastpic.org/big/2012/1015/f3/10352d06d26611369445f847932c09f3.$image
 ||fastpic.org/big/2012/1029/78/de0440e1b11810da4ea3793ffad0da78.$image
+||fastpic.org/big/2013/0115/b7/3ba824264eed6a454aaf9adca33331b7.$image
 ||fastpic.org/big/2013/0126/c4/9ee5e5f0d2b02d737172d8aa4ff61bc4.$image
 ||fastpic.org/big/2013/0208/99/79ab9f6b8e8a198573417130dae7b699.$image
 ||fastpic.org/big/2013/0224/15/5efa05c4f7d56a759ab250d57d61ff15.$image
@@ -21716,6 +21748,7 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.org/big/2017/0803/69/a4f5cc3fa4822eb538d940ae05352069.$image
 ||fastpic.org/big/2017/0804/a4/47ecbe85694e340e5f891e0fec9466a4.$image
 ||fastpic.org/big/2017/0905/c4/287440e087a80614f029e49dc81f3dc4.$image
+||fastpic.org/big/2017/0919/2a/33cb6111cf201e56e242b0be50abe32a.$image
 ||fastpic.org/big/2017/1102/ba/f4425a5be2b8f12b31332882a88926ba.$image
 ||fastpic.org/big/2017/1205/3c/31dd111f6b53750d3b98ab643ad93c3c.$image
 ||fastpic.org/big/2017/1218/b1/2b40b455ed7dc111d226b952565c8db1.$image
@@ -21775,7 +21808,7 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.org/big/2021/0908/5a/7c041735d8f2742a3fb851c3ebbe9a5a.$image
 ||fastpic.org/big/2021/0908/64/b51c23e961286030b091fac380ced364.$image
 ||fastpic.org/big/2021/0911/0b/b7baa90d330627e0086a93138d22870b.$image
-||fastpic.org/big/2021/0913/6f/2a35d252ba2615677d884a43b40d4e6f.$image
+||fastpic.org/big/2021/0912/fc/d6cb2bad1c3895aec96ffe60dca7f8fc.$image
 ||fastpic.org/big/2021/0913/6f/2a35d252ba2615677d884a43b40d4e6f.$image
 ||fastpic.org/big/2021/1002/5b/5b7774c56fe6a1788440508dd720755b.$image
 ||fastpic.org/big/2021/1002/f6/00e39f91f64be04e348e3478c4bc69f6.$image
@@ -24636,6 +24669,10 @@ systranbox.com##.header-middle-area
 ! totop
 systranbox.com##.BackTo
 systranbox.com###glt-translate-trigger
+
+t24.su##.header_banner_top
+t24.su##.header__banner
+t24.su##.header-top__container
 
 t3travel.ru##.footer
 t3travel.ru##.slick-slider
@@ -29427,6 +29464,9 @@ ymadam.net##[href="/astrologiya.php"]
 yoga.spb.ru##.e-pageUp
 yoga.spb.ru##.b-header_panel_logo
 
+! popup
+yoomoney.ru##.qa-faq
+
 youdo.com##.b-btnRequestTask.js-yaMetric
 
 youhunter.ru###footer-pane
@@ -30474,11 +30514,6 @@ d3ward.github.io##.gt-link
 ||gettyimages.*/pulse$ping  # is in EasyPrivacy
 
 ||vaikuttajamedia.fi^*/markuk_evastevaroitus.js  # from EasyList
-
-goha.ru*&geodata=  # from Ru AdList
-||goha.ru*/event?hash=  # from Ru AdList
-
-rufox.ru*/ncounter.pl?  # from Ru AdList
 
 !duunitori.fi
 ||duunitori.imgix.net/media/duunivahti-hero-desk.jpg
