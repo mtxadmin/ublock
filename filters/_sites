@@ -462,7 +462,8 @@
 4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)
 ! Ru AdList rule
 4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
-
+! banner
+4pda.to##div:style(background-image:none !important)
 
 ! This is NOT 4pda.ru.
 4pda.biz###headerbar
@@ -4401,6 +4402,9 @@ carqa.club##.wpqa-question.ask-button
 
 carsalesbase.com##.logo-main-wrap-center
 
+! invisible on-screen popup
+carscanner.info##.custom-header-media
+
 ||carservic.ru^$csp=script-src 'self' *  # site blocks copypaste  # https://github.com/uBlockOrigin/uBlock-issues/issues/3181
 
 ||carsguru.net/*/footer_car.png
@@ -6743,6 +6747,7 @@ drom.ru##a[href^="market://"]:upward(1)
 ||c.rdrom.ru/js/bundles/media/mouse-day
 ||c.rdrom.ru/js/bundles/media/clouds.
 ||c.rdrom.ru/js/bundles/media/car-day
+drom.ru##div[data-ga-stats-name="scroll_to_top_button"]
     ! logo
 !drom.ru##svg > g > path
 drom.ru##svg
@@ -7786,6 +7791,9 @@ evo-rus.com##.header-layout-1-logo
 evo-rus.com##.meta-comment
 evo-rus.com##.copr-post
 evo-rus.com###tie-infinte-posts-iframes-wrapper
+
+evrodetal.com.ua##.header-content_footer::after
+evrodetal.com.ua##.auto-search__fixed .autosearch-tools__wrap:style(position:static !important)
 
 evrofilm.com##.group.container > .container-inner > .pad.group
 
@@ -9897,6 +9905,7 @@ grafana.com##.page-footer__form
     ! other
 ! "Scroll for more" popups
 grafana.com##.scroll
+grafana.com##.sticky-avatar .topic-avatar:style(position:static !important)
 
 grammarly.com##[class*=banner]
 
@@ -15932,6 +15941,10 @@ mir-knigi.info##.add-fav
 mir-knigi.info##.col-sidebar
 mir-knigi.info##.full-comms
 ||mir-knigi.info/uploads/posts/books/no-cover.jpg
+
+||mirmatizov.ru/images/by_apis.png
+mirmatizov.ru##.shari_old
+mirmatizov.ru##.pseudoStickyBlock
 
 ||mirniy.ru/images/pic_3.png
 
@@ -26137,6 +26150,7 @@ travel.ru##.b-icon-appstore
 
 travelask.ru##.report-bug
 travelask.ru##.footer__bottom-age
+travelask.ru##.content-wrapper:style(margin-top:0px !important)
 
 travelata.ru##.popoverStack
 travelata.ru##.ui-widget-overlay
@@ -29596,6 +29610,8 @@ youtube.com,youtube-nocookie.com##.ytp-show-cards-title
 youtube.com,youtube-nocookie.com###wrapper #contentContainer:style(padding-top:0px !important)
 youtube.com,youtube-nocookie.com###header:style(transform:none !important)
     ! other
+
+youtubetranscript.com##.overlay
 
 ypapa.ru##.fake
 ypapa.ru##.yp-consult
