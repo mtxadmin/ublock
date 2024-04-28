@@ -5781,6 +5781,16 @@ degoo.com##.dot
 
 dekoriko.ru##nav.navigation:nth-of-type(1)
 
+!@@||delfi.lv^$generichide,badfilter  # uBlock exception. Hmm, at least animated logo
+delfi.lv##.logo
+    ! paywall
+delfi.lv##.paywall
+delfi.lv##*::after
+  ! delfi.lv##a::after
+  ! delfi.lv##p::after
+  ! delfi.lv##div::after
+    ! other
+
 ||delikateska.ru/*/delivery-banner$image
 ||delikateska.ru/*/delay$image
 ||delikateska.ru/*/icons/delivery/
@@ -6004,6 +6014,9 @@ plati.market##.popular_products_preview
     ! other
 
 digitaldefynd.com##.mega-stuck.mega-sticky:style(position:static !important)
+
+! popup
+digital-discount.ru##.right-bottom
 
 ||digitalocean.com/_next/static/chunks/pages/_error
 ! While scrolling, site breaks itself
@@ -7323,8 +7336,15 @@ ekran-ural.ru###fix-header
 
 ||eksmo.ru/js/cross.js$3p
 ||eksmo.ru/*/partners-widget
-eksmo.ru##.rows__sideburs
+    ! popups
 eksmo.ru##.faq-bot
+eksmo.ru##.popup18__bg_blur
+eksmo.ru##.popup18__bg
+eksmo.ru##div:style(filter:none !important; color:initial !important)
+eksmo.ru##div p:style(color:initial !important)
+eksmo.ru##.helper
+    ! other
+eksmo.ru##.rows__sideburs
 
 eku.ru###header-banner
 eku.ru##.humor-title
@@ -10198,6 +10218,8 @@ habr.com##.tm-company-profile-card
 habr.com##.tm-company-snippet__description
 habr.com##.tm-companies-rating
 habr.com##.tm-article-presenter__banner
+! promos
+freelance.habr.com##.content-list__item_marked
     ! popups
 habr.com##.tm-notification
 habr.com##.Vue-Toastification__container
@@ -21700,11 +21722,17 @@ ruspizda.com##.thumb_label
 ruspizda.com##.thumb_rating
 
 @@||rusprofile.ru^$generichide,badfilter
+    ! banners and promos
 ! banner
 rusprofile.ru##.buy-subs
+rusprofile.ru##.illustrate-hero
+rusprofile.ru##p:has-text(бизнес-решения)
+    ! other
 
 rusrappers.ru##.site-footer
 rusrappers.ru##.menu
+
+rusrek.com##.head-banner-desktop
 
 russianblogs.com##h1
 
@@ -21764,6 +21792,7 @@ pornolab.net##.post-color-text:has-text(/Спасибо|спасибо/)
 pornolab.net###page_footer > .bCenter
 pornolab.net##div.post-align:has-text(Релизера можно поддержать)
 ! some annoying pictures
+||fastpic.org/big/2009/1216/5e/8a4271c44c907f6ff66984a1951b865e.$image
 ||fastpic.org/big/2010/0301/ac/da93ac84a3a8cd5a5fbf94fd900182ac.$image
 ||fastpic.org/big/2011/0916/dc/bfddc1cf22892bfdb7b64e16d28776dc.$image
 ||fastpic.org/big/2012/0918/81/6f5a0ea995b3e871716bbbb516fd7f81.$image
@@ -21793,6 +21822,8 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.org/big/2017/1205/3c/31dd111f6b53750d3b98ab643ad93c3c.$image
 ||fastpic.org/big/2017/1218/b1/2b40b455ed7dc111d226b952565c8db1.$image
 ||fastpic.org/big/2018/0108/f4/c192b0b3d97828ef8ec068cd7d56edf4.$image
+||fastpic.org/big/2018/0111/a2/514c0067715e7ad4bb2b16a5863ed1a2.$image
+||fastpic.org/big/2018/0111/d6/c165b79e9c194850963b6fe7bb4e77d6.$image
 ||fastpic.org/big/2018/0222/72/3da798ffe01a9ce7de3e6ee13623d372.$image
 ||fastpic.org/big/2018/0919/82/67f0b225cca42f2f2f821f5b09e0e982.$image
 ||fastpic.org/big/2018/1221/7a/a5df62322255019145e9fe5083fdcd7a.$image
@@ -23979,6 +24010,7 @@ sportpremier.ru##.item-label
 sportpremier.ru##.credit-popup-open
 ||sportpremier.ru/*/mc.png
 
+@@||sports.ru^$generichide,badfilter
     ! banners
 sports.ru##[href^="https://trbna.co/"]
     ! other
