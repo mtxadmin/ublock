@@ -239,7 +239,8 @@ ozon.ru##div[data-widget=webGarageEntryPoint] > div:style(margin-top:0px !import
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
 ! обновленный вариант: не удаляет всё в категории, не удаляет все отзывы. Правило полезное, поэтому приходится править
-ozon.ru##div:has(>div:has-text(/^\s*Скидк(а|и)/i)):not([data-widget="webListReviews"]):not(:matches-path(//(search|category|my|gocheckout)/))
+! 2024-05: опять цепляется, отключено
+!ozon.ru##div:has(>div:has-text(/^\s*Скидк(а|и)/i)):not([data-widget="webListReviews"]):not(:matches-path(//(search|category|my|gocheckout)/))
 !ozon.ru##div:has(>span:has-text(/^\s*\d+\s*(балл(а|ов|) за отзыв|бонус(а|ов|))/i))
 !ozon.ru##div:has(>span:has-text(/^\s*^(ХИТЫ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор покупателей|Распродажа|Ликвидация|Оригинал|Цена что надо|Купон на скидку|Ozon Promo|Подарок от мтс|Соц. сертификат|Рассрочка 0%)$/i))
 !ozon.ru##span:has-text(%) - sometimes hides comments (##span)
