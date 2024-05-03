@@ -125,6 +125,8 @@
 
 /modules/clean/ux_analytics/*$important  # from EasyPrivacy
 
+/modules/consent  # from Adguard, modified
+
 /modules/cookiebanner/*$important  # from EasyList
 
 /modules/cookiebar/*$important  # from Adguard
@@ -145,7 +147,7 @@
 /modules/ed-shortbar/*
 
 /eu_cookie_compliance/*$important
-    ! /modules/eu_cookie_compliance/*
+    ! /modules/eu_cookie_compliance/*  # is in Adguard
     ! /modules/contrib/eu_cookie_compliance/*$important  # from Adguard
     ! that's no mistake, there are two forms there
 
@@ -187,6 +189,8 @@
     /mod_socialmedialinks/*  # is in 3 lists
 
 /modules/notifications.$domain=~forum.vivaldi.net  # from Fanboy's
+
+/modules/pdcookiepro/*  # from Adguard
 
 /modules/retailrocket/*
 
@@ -402,6 +406,8 @@
 /plugins/advertising/*  # from EasyList
 
 /plugins/advert_tcc*$important
+
+/plugins/adview$important
 
 /plugins/adv-popup-plugin/*
 
@@ -1040,6 +1046,8 @@
 
 /plugins/enua-privacy-policy/*  # from Adguard
 
+/plugins/epic-ad/*  # from Adguard
+
 /plugins/epic-news-element/*
 
 /plugins/error-notification/*
@@ -1354,6 +1362,7 @@
 /plugins/jquery-smooth-scroll/*
 
 /plugins/js-adblock/*  # from Adguard: ||mad4wheels.com/plugins/js-adblock/js/*.js
+/plugins/js-b/*  # from Adguard: ||mad4wheels.com/plugins/js-b/js/js-b.min.js
 
 /plugins/jslink/*
 
@@ -1834,6 +1843,7 @@
     ! /plugins/push-monkey-desktop-push-notifications/*
     ! /plugins/push_notification//  # from Adguard
     ! /plugins/push-notification/*  # from Adguard
+    ! /plugins/push-notification-*/js/pnfpb_pushscript_pwa.js  # from Adguard
     ! /plugins/push-notification-by-feedify/*
     ! /plugins/push-notifications-for-wp/*
     ! /plugins/push-notifications/*
@@ -2394,6 +2404,8 @@
     
 /plugins/videolock/*
 
+/plugins/videopack-ads  # from Adguard
+
 /plugins/video-popup/*
 
 /plugins/viperbar/*
@@ -2580,7 +2592,7 @@
     ! is in Web Annoyances Ultralist and Fanboy’s
     ###wpfront-scroll-top-container
 
-/plugins/wp-gdpr-
+/plugins/wp-gdpr-$important
     /wp-gdpr-  # is in EasyList and Fanboys
     ! /plugins/wp-gdpr-compliance/*  # from Adguard
 
@@ -2594,6 +2606,8 @@
 
 /plugins/wplivechat/*
 /plugins/wp-live-chat-support/*
+
+/plugins/wpmagus-consent-manager/*  # from Adguard
 
 /plugins/wp-mailinglist/*
 
