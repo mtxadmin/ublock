@@ -987,6 +987,14 @@ $removeparam=/lpurl[^=]*=/i  # /lpurl/ - see the header  # this maybe will break
 
 $removeparam=maf  # from Adguard and DandelionSprout's URLShortener
 
+$removeparam=marker
+    ! aviasales.ru$removeparam=marker  # ref
+    ! aviatravel.ru$removeparam=marker  # ref
+    ! ! already blocked
+    ! tp.media$removeparam=marker
+    ! ! already blocked
+    ! tp-em.com$removeparam=marker  # tp-em.com/entrypoint.js?marker
+
 $removeparam=marketing_id  # from DandelionSprout's URLShortener
 
 $removeparam=matchtype  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
@@ -2016,7 +2024,7 @@ $removeparam=uclickhash
 
 $removeparam=user_email_address  # from Adguard
 
-$removeparam=usqp  # from Adguard
+$removeparam=usqp  # is in Adguard
 
 $removeparam=/^utm_/i,important,domain=~youtube.com  # Campaign tracking (utm)  # is in NeatURL and RuAdList. Very common parameters.  # UTM - Urchin Tracking Modules
     ! Exclusions:
@@ -2459,8 +2467,6 @@ atlassian.net$removeparam=atlOrigin  # from Adguard
 autoteka.ru$removeparam=fromSource  # case-sensitive
 
 !aviasales.kz$removeparam=params - don't, useful
-
-aviatravel.ru$removeparam=marker  # ref
 
 awaliwa.com$removeparam=acr  # from Adguard
 awaliwa.com$removeparam=bd_vid  # from Adguard
@@ -3766,11 +3772,8 @@ totaljobs.com$removeparam=WT.mc_id
 
 ! already blocked
 ! u is url, don't block
-tp.media$removeparam=marker
 tp.media$removeparam=p
 tp.media$removeparam=trs
-! already blocked
-tp-em.com$removeparam=marker  # tp-em.com/entrypoint.js?marker
 
 trendyol.com$removeparam=/^tyutm_/i  # from Adguard and DandelionSprout's URLShortener
     ! trendyol.com$removeparam=tyutm_campaign  # from Adguard
