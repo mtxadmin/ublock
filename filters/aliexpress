@@ -21,7 +21,7 @@ aliexpress.ru$removeparam=algo_exp_id
     ! I suppose, this parameter Aliexpress-specific only
     ! $removeparam=algo_exp_id  # from DandelionSprout's URLShortener
 
-! Found independently. Confirmed by months of testing. Now it is in NeatURL too
+! Found independently. Confirmed by months of testing. Now it is in NeatURL too. Later: also is in DandelionSprout's ClearURLs for uBo
 aliexpress.com$removeparam=algo_expid
 aliexpress.ru$removeparam=algo_expid
 
@@ -29,7 +29,7 @@ aliexpress.ru$removeparam=algo_expid
 aliexpress.com$removeparam=algo_pvid
 aliexpress.ru$removeparam=algo_pvid
 
-tmall.com$removeparam=ali_trackid  # from Adguard
+tmall.com$removeparam=ali_trackid  # from Adguard and DandelionSprout's ClearURLs for uBo
 
 !aliexpress.com$removeparam=appKey - don't, it breaks related search
 
@@ -37,7 +37,7 @@ tmall.com$removeparam=ali_trackid  # from Adguard
 aliexpress.com$removeparam=browser_id
 aliexpress.ru$removeparam=browser_id
 
-! Found independently. Confirmed by months of testing. Now it is in NeatURL too
+! Found independently. Confirmed by months of testing. Now it is in NeatURL too and in DandelionSprout's ClearURLs for uBo
 aliexpress.com$removeparam=btsid
 aliexpress.ru$removeparam=btsid
 
@@ -109,6 +109,8 @@ aliexpress.ru$removeparam=initiative_id
 aliexpress.com$removeparam=item_id
 aliexpress.ru$removeparam=item_id
 
+||aliexpress.*^$removeparam=mall_affr  # from DandelionSprout's ClearURLs for uBo
+
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=mp
 aliexpress.ru$removeparam=mp
@@ -146,6 +148,11 @@ aliexpress.com$removeparam=rowan_msg_id
 aliexpress.ru$removeparam=rowan_msg_id
 
 alibaba.com$removeparam=__sceneInfo  # https://m.alibaba.com/product/62078657382/2022-trend-tube-case-design-TWS.html?__sceneInfo=%7B%22cacheTime%22%3A%221800000%22%2C%22type%22%3A%22appDetailShare%22%7D&from=Android
+
+taobao.com$removeparam=shareurl  # from DandelionSprout's ClearURLs for uBo
+tmall.com$removeparam=shareurl  # from DandelionSprout's ClearURLs for uBo
+
+taobao.com$removeparam=short_name  # from DandelionSprout's ClearURLs for uBo
 
 ! from Adguard, added 2022-02
 !||aliexpress.$removeparam=sk
