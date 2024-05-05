@@ -33,6 +33,10 @@
 !   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, ad-id)
 
+! Admitad ad-network third-party cookies
+*##+js(cookie-remover, /^admitad_/)
+    ! mvideo.ru##+js(cookie-remover, admitad_deduplication_cookie)
+
 *##+js(cookie-remover, adtech_uid)
     ! livejournal.com##+js(cookie-remover, adtech_uid)
     ! pleer.ru##+js(cookie-remover, adtech_uid)
@@ -59,6 +63,11 @@
         ! mvideo.ru##+js(cookie-remover, advcake_utm_webmaster)
         ! mvideo.ru##+js(cookie-remover, advcake_track_id)
         ! mvideo.ru##+js(cookie-remover, advcake_track_url)
+
+##+js(cookie-remover, ajs_anonymous_id)
+    ! digitalocean.com##+js(cookie-remover, ajs_anonymous_id)
+    ! substack.com##+js(cookie-remover, ajs_anonymous_id)
+    ! trello.com##+js(cookie-remover, ajs_anonymous_id)
 
 ! Bitrix first-party trackers
 ##+js(cookie-remover, /^BITRIX_SM_ABTEST_/)
@@ -108,6 +117,7 @@
 !   https://cookiedatabase.org/cookie/google-analytics/_dc_gtm_ua/
 !   https://cookiepedia.co.uk/cookie/12712424
 !   https://itecnote.com/tecnote/official-documentation-of-the-_dc_gtm-cookie-from-google-tag-manager/
+!   https://www.bitrix24.eu/about/cookie-policy/
 *##+js(cookie-remover, /^_dc_gtm_/)
     ! citilink.ru##+js(cookie-remover, /^_dc_gtm_/)
     ! eldorado.ru##+js(cookie-remover, /^_dc_gtm_/)
@@ -181,8 +191,10 @@
 
 ! Google Analytics third-party tracking cookies
 !   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
+!   https://www.bitrix24.eu/about/cookie-policy/
 *##+js(cookie-remover, _ga)
     ! 10minutemail.net##+js(cookie-remover, _ga)
+    ! citilink.ru##+js(cookie-remover, _ga)
     ! dns-shop.ru##+js(cookie-remover, _ga)
     ! eldorado.ru##+js(cookie-remover, _ga)
     ! mvideo.ru##+js(cookie-remover, _ga)
@@ -195,6 +207,7 @@
 ! also
 *##+js(cookie-remover, _gat)
 !   https://itecnote.com/tecnote/official-documentation-of-the-_dc_gtm-cookie-from-google-tag-manager/
+    ! andrewdenty.com##+js(cookie-remover, _gat)
     ! dns-shop.ru##+js(cookie-remover, _gat)
     ! gameplay.tips##+js(cookie-remover, _gat)
 *##+js(cookie-remover, /^_gat_/)
@@ -204,15 +217,22 @@
     ! citilink.ru##+js(cookie-remover, _gcl_au)
     ! dns-shop.ru##+js(cookie-remover, _gcl_au)
     ! eldorado.ru##+js(cookie-remover, _gcl_au)
-    ! pleer.ru##+js(cookie-remover, _gcl_au)
     ! mvideo.ru##+js(cookie-remover, _gcl_au)
+    ! pleer.ru##+js(cookie-remover, _gcl_au)
+    ! trello.com##+js(cookie-remover, _gcl_au)
 ! "_gid – used to identify the user"  # https://www.optimizesmart.com/google-analytics-cookies-ultimate-guide/ :
 *##+js(cookie-remover, _gid)
     ! 10minutemail.net##+js(cookie-remover, _gid)
+    ! andrewdenty.com##+js(cookie-remover, _gid)
+    ! citilink.ru##+js(cookie-remover, _gid)
     ! dns-shop.ru##+js(cookie-remover, _gid
     ! eldorado.ru##+js(cookie-remover, _gid)
     ! mozilla.org##+js(cookie-remover, _gid)
     ! mvideo.ru##+js(cookie-remover, _gid)
+
+*##+js(cookie-remover, /^gdeslon.ru/)
+    ! eldorado.ru##+js(cookie-remover, gdeslon.ru.__arc_domain)
+    ! eldorado.ru##+js(cookie-remover, gdeslon.ru.user_id)
 
 ! DoubleClick third-party persistent ad cookies
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
@@ -228,6 +248,11 @@
     ! meme-generator.ru##+js(cookie-remover, laravel_session)
     ! mindbox.in##+js(cookie-remover, laravel_session)
     ! mindboxindia.com##+js(cookie-remover, laravel_session)
+
+! Liveramp cookies
+! https://docs.liveramp.com/privacy-manager/en/cookies-set-by-ats.html
+! also: https://github.com/prebid/Prebid.js/issues/5882 : "If you remove the cookie "_lr_retry_request" and refresh, then the bids requests are done and the ads are displayed"
+*##+js(cookie-remover, /^_lr_/)
 
 ! not in the list of Ezoic cookies, but, it seems, they are theirs too. Last page visited.  # https://www.ezoic.com/terms/
 *##+js(cookie-remover, /^lp_[0-9]+$/)
@@ -425,6 +450,7 @@
     ! turbopages.org##+js(cookie-remover, _yasc)
     ! ya.ru##+js(cookie-remover, _yasc)
     ! yandex.ru##+js(cookie-remover, _yasc)
+! Yandex Metrica cookies
 *##+js(cookie-remover, /^_ym_/)
     ! *##+js(cookie-remover, _ym_d)
     ! *##+js(cookie-remover, _ym_debug)
@@ -432,7 +458,7 @@
     !   "this cookie determines whether a user has ad-blockers"
     ! *##+js(cookie-remover, _ym_isad)
     ! *##+js(cookie-remover, _ym_metrika_enabled)
-    ! *##+js(cookie-remover, _ym_uid)
+    ! *##+js(cookie-remover, _ym_uid)  # https://cookiedatabase.org/cookie/yandex-metrica/_ym_uid/
     ! *##+js(cookie-remover, /^_ym_visorc_/)
         ! Some examples:
         ! dns-shop.ru##+js(cookie-remover, _ym_d)
@@ -463,6 +489,7 @@
 *##+js(cookie-remover, yuidss)
 
 *##+js(cookie-remover, /_utm_/)
+    ! 247wallst.com##+js(cookie-remover, ws_utm_campaign)
     ! biglion.ru##+js(cookie-remover, /^raw_utm_/)
         ! biglion.ru##+js(cookie-remover, raw_utm_content)
         ! biglion.ru##+js(cookie-remover, raw_utm_medium
@@ -489,6 +516,11 @@ buffer.com##+js(cookie-remover, buffer-marketing.sig)
 citilink.ru##+js(cookie-remover, /^ab_test/)
     ! citilink.ru##+js(cookie-remover, ab_test)
     ! citilink.ru##+js(cookie-remover, ab_test_analytics)
+    ! citilink.ru##+js(cookie-remover, /^ab_test_listing_/)
+    ! citilink.ru##+js(cookie-remover, /^ab_test_main_/)
+citilink.ru##+js(cookie-remover, directCrm-session)
+citilink.ru##+js(cookie-remover, __exponea_etc__)
+citilink.ru##+js(cookie-remover, __exponea_time2__)
 citilink.ru##+js(cookie-remover, mindboxDeviceUUID)
 
 cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
@@ -516,7 +548,6 @@ crozdesk.com##+js(cookie-remover, conversion)
 ! url
 cubelelo.com##+js(cookie-remover, _landing_page)
 
-digitalocean.com##+js(cookie-remover, ajs_anonymous_id)
 digitalocean.com##+js(cookie-remover, first_landing_page)
 digitalocean.com##+js(cookie-remover, last_landing_page)
 digitalocean.com##+js(cookie-remover, last_landing_page_timestamp)
@@ -627,6 +658,7 @@ zabbix.com##+js(cookie-remover, bblastactivity)
 
 ! not session cookie, 10 years
 zoom.us##+js(cookie-remover, _zm_mtk_guid)
+zoom.us##+js(cookie-remover, _zm_visitor_guid)
 
 !! todo
 
@@ -661,3 +693,11 @@ intuit.com##+js(cookie-remover, qbn.qbo_sc)
 
 ! first url
 involve.me##+js(cookie-remover, first_lp)
+
+mvideo.ru##+js(cookie-remover, __cpatrack)
+mvideo.ru##+js(cookie-remover, __SourceTracker)
+mvideo.ru##+js(cookie-remover, __allsource)
+mvideo.ru##+js(cookie-remover, __sourceid)
+mvideo.ru##+js(cookie-remover, partnerSrc)
+
+eldorado.ru##+js(cookie-remover, ek_ab_test)
