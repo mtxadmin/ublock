@@ -1645,9 +1645,12 @@ _rebid.js  # from EasyList
 ##[id*="-dfp"]:not(html):not(body):not(article)
 ##[class*="leaderboard"]:not(html):not(body):not(article)
 ##[id*="leaderboard"]:not(html):not(body):not(article)
-##[class*="Marketing"]:not(html):not(body):not(article)
-~kodi.wiki,~learn.microsoft.com##[id*="Marketing"]:not(html):not(body):not(article)
+~airtable.com##[class*="Marketing"]:not(html):not(body):not(article)
     ! Exclusions:
+    ! airtable.com - main content
+~airtable.com,~kodi.wiki,~learn.microsoft.com##[id*="Marketing"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! airtable.com - main content
     ! kodi.wiki - don't remember, but definitely not marketing
     ! learn.microsoft.com - main section
 ~surveymonkey.com##[class*="marketing"]:not(html):not(body):not(article)
