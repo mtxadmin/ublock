@@ -904,6 +904,7 @@ ad-norma.ru##.carousel
 ado.hu###lapSlider
 
 ||adobe.com/*/get_flash_player.gif$3p
+||adobe.com/td_redirect.html  # from EasyList
     ! popups
 adobe.com##.locale-modal
 adobe.com##locale-modal
@@ -2647,6 +2648,11 @@ avon.com###d-hero-carousel
 avtera.ru##.header-menu
 
 ||avtoall.ru/pic/articles_bg_men.png
+    ! popups
+avtoall.ru##.region-selection-confirmation-wrapper
+    ! top
+avtoall.ru###page-scroll-header
+    ! other
 
 ||avto-blogger.ru/*/avto-blogger.$image
 ||avto-blogger.ru/wp-content/themes/avto-blog/assets/img/headerMiddle__back.jpg
@@ -4415,6 +4421,8 @@ careersinpoland.com##[class^=Job__Image-]
 careta.info##.date
 careta.info###right-sidebar > div
 
+||carfax.com/img_myap/  # from EasyList
+
 carguts.ru##noindex
 carguts.ru###colophon
 
@@ -4533,6 +4541,10 @@ celsis.ru###soput
 
 celt.ru##+js(rc, page--loading)
 celt.ru##.client-online
+! top
+celt.ru##.header-top
+! footer
+celt.ru##.blockquote:has-text(перепечатка)
 
 censor.net##.section-container-main:style(position:static !important)
 censor.net##.logo-center-container
@@ -4752,6 +4764,8 @@ chipdip.ru##.top-box-fixed:style(position:static !important)
 chipmk.ru###header
 
 chistayrabota.ru###site-desc
+
+chita.ru##[class*=sticky_]:style(position:static !important)
 
 	! popups
 chitai-gorod.ru##.change-city-container__popup-confirmation.change-city
@@ -7094,9 +7108,13 @@ e1.ru##button[data-test="report-news-button"] + div[class]
 ! popup
 eapteka.ru##.headerCity-root-bubble--adaptive
 
+    ! banners and promos
 easeus.com##[class^=article_banner]
 easeus.com##.box_all
 easeus.com##[class^=epm_banner]
+easeus.com##.box_fixed
+easeus.com##.button_box
+    ! other
 
 eastsideco.io
 ! script with fixed button: contactforms.eastsideco.io/assets/forms.js
@@ -7941,6 +7959,13 @@ expert.ru##.content-share-buttons
 
 expertbani.ru##.author_rank
 
+    ! popups
+expert-gepatolog.ru###overlay
+    ! top
+expert-gepatolog.ru##.tp-header
+expert-gepatolog.ru##.phones-block-apply
+    ! other
+
 ||expert-kachestva.ru/wp-content/themes/expert/images/star.png
 ||expert-kachestva.ru/wp-content/themes/expert/images/li.png
 ||expert-kachestva.ru/wp-content/themes/expert/images/hstar.png
@@ -8659,6 +8684,11 @@ fontanka.ru##.footer__white-wrapper
 fontanka.ru##div:has-text(/^18\+$/)
 fontanka.ru##svg[data-test=logo]
 
+! popup
+food.ru##[class^=Onboarding_wrapper]
+! top
+food.ru##[class^=header_sticky]:style(position:static !important)
+
 foodandhealth.ru###ag_warning_header
 
 foodclick.kz##.modx_evo_inner_modal
@@ -9361,9 +9391,11 @@ getapp.com##[class*=_withSticky_]:style(position:static !important)
 
 ! todo :-(
 @@||getcourse.ru
+getcourse.ru$script,3p  # 3p ad scripts  # слегка задалбывает. Third-party точно не нужны там
 ||getcourse.ru/get-current-time$important
 ||getcourse.ru:8080/get-current-time$important
 ||getcourse.ru/public/img/default_profile$image
+||getcourse.ru/public/js/gccounter.js
 ||getcourse.ru/res/monitoring.js$important
 ||getcourse.ru/res/time-monitoring/
 ||getcourse.ru/fileservice/file/download/a/61213/sc/289/h/5e6d862c81a7a7b5dfdf6aa37cb42333.jpg$important
@@ -9371,7 +9403,13 @@ getapp.com##[class*=_withSticky_]:style(position:static !important)
 ||getcourse.ru/fileservice/file/thumbnail/h/8b3c4aae9bda204f5b40cec3a19bcd3a.jpg$important
 ||getcourse.ru/fileservice/file/thumbnail/h/AB.eec25bef38a9eef24d409d14c50f34b7.png$important
 ||getcourse.ru/fileservice/file/thumbnail/h/b8a38a7002bcbd4e6a63eeada13b59e5.png$important
-
+    ! top
+getcourse.ru##.Menu__desktop-left
+getcourse.ru##.Menu:style(position:static !important)
+    ! banners and promos
+getcourse.ru##.Feedbacks
+    ! other
+    
 getdroidtips.com##.after-header-container
 getdroidtips.com##.site-header
 
@@ -10347,6 +10385,8 @@ habr.com#?#section.tm-block_spacing-around:has(> div.tm-block__body > div.tm-pro
 # ||habr.com/kek/ - don't, it is json comments
 ! рейтинг свежих комментариев скрыли, теперь там заглушка с промо. Убираем.
 habr.com##.tm-votes-lever__score-fallback:has-text(Зарегистрируйтесь на Хабре)
+
+||hackr.io/blog/media/udacity-horizontal-banner.png
 
 hddmag.com##span:has-text(No products found.)
 
@@ -11953,7 +11993,6 @@ intergame.org##.t-rec:style(padding-top:0px !important)
 intergame.org##.t770__topwrapper:style(height:auto !important)
     ! popups
 intergame.org##.t-popup__container-animated
-intergame.org##.t-popup:has-text(/Зарегистрируйтесь|подпишитесь/)
     ! subs
 intergame.org##.t-container:has-text(/Подпишитесь|ПО РАБОТЕ С КЛИЕНТАМИ/)
     ! other
@@ -13521,6 +13560,13 @@ kp.ru##.kpfooter
 ! from Fanboy's
 kp.ru##.seti
 
+one.kr.ua##.go-top-footer
+one.kr.ua##body:style(padding-top:0px !important)
+one.kr.ua##.preloader
+one.kr.ua##.block-logo:style(display:initial !important)
+one.kr.ua##.top-header:style(display:initial !important)
+one.kr.ua##.block-nav:style(display:initial !important)
+
 kraftshop.hu###header_content_wrap
 
 kramola.info###navbar
@@ -14271,6 +14317,9 @@ lifehacker.ru##.left-sidebar__sticky-container:style(position:static !important)
 
 ||lifelink.ru/img/lifelink_banner$image
 
+lifewire.com##.toc-wrapper:style(position:static !important)
+lifewire.com##.sticky-toc-widget:style(position:static !important)
+
 life-with-cars.ru##.bottom-header-wrapper:style(position:static !important)
 
 ||liga.net/js/remp.js  # is in Ru AdList and Fanboy's
@@ -14896,6 +14945,10 @@ lviv.media##.c-news-widget
 lviv.media##.l-numeric:has(a[data-badge="Реклама"])
 lviv.media##.c-footer-subscribe
 
+lvnews.org.ua##.scrollweb
+lvnews.org.ua##.footerStaticText
+||lvnews.org.ua/frontend/assets/build/zaglushka_news.jpg
+
 ! not really code blocks (they are different), but banners
 lynxbee.com##.code-block
 
@@ -15451,6 +15504,10 @@ medihost.ru###info:style(margin-top:0px !important)
 
 medikforum.ru##.rd-navbar-panel
 
+! popup
+medikom.ua##.telegram
+medikom.ua##.helper
+
 medilife.com.ua###specials_btn
 
 medimetriks.com##.acsb-trigger
@@ -15919,6 +15976,12 @@ miloserdie.ru##.footer-branding
 miloserdie.ru##.footer-credits
 
 miltor.ru##.navbar-header
+
+mind.ua##.header_new_sticky:style(position:static !important)
+mind.ua##.b-info-post__counter
+mind.ua##.read-also_banner
+mind.ua##.post__frame:has-text(телеграм)
+mind.ua##.post__views
 
 mindboxindia.com##.show-pv.protected-view-modal
 
@@ -16635,6 +16698,8 @@ lk.mts.ru##.popup__overlay
 mts.ru##.popup--open:style(overflow:visible !important)
 mts.ru###ask-current-city
 mts.ru##.top-msg
+||mts.ru/js/bundles/mtsofficialpopup.js
+mts.ru##.mts-official-telegram-popup
     ! banners and promos
 mts.ru##.banner_htop.banner
 mts.ru###banner_po_umolchaniyu_dlya_ssp_vside
@@ -18472,6 +18537,10 @@ orel-shop.ru##footer:style(filter:none !important)
 
 organicfact.ru##.site-heading
 
+@@||organic-people.com/pl/lite/widget/$1p
+organic-people.com##.t-sbs-anim_started
+organic-people.com##+js(set, ym, noopFunc)
+
 blog.orneling.se##[href^="https://go.altaro.com/"]
 blog.orneling.se##.widget-title:has-text(Twitter)
 blog.orneling.se##.top-comments
@@ -20011,6 +20080,11 @@ pr-cy.ru##.ipsUserPhoto
 predelanet.ru##.alert
 predelanet.ru##.page:style(padding-top:0px !important)
 predelanet.ru##.site-header__phone
+
+premium-clinic.ru##.sticky-new-header
+premium-clinic.ru##.fixed-bottom
+premium-clinic.ru##.footer-sticky
+premium-clinic.ru##.new-header
 
 premiumproxy.net$inline-script
 premiumproxy.net##center > font
@@ -22865,6 +22939,8 @@ sendpic.org##h1
 
 sendpulse.com##.main-nav__logo
 
+||sendspace.com/defaults/sendspace-pop.html  # from EasyList
+
 sense-lang.org##.logo_container
 sense-lang.org##.addbygoogle
 
@@ -23282,6 +23358,7 @@ simplilearn.com#@#.social-container
 simplilearn.com##.background-wrapper
 simplilearn.com##.filter-sticky-menu .category.article
 simplilearn.com##.video-menu
+simplilearn.com###BenifitTab
 
 sirlagz.net##.blogtitle
 sirlagz.net##.description
@@ -23983,6 +24060,7 @@ sport.ua##li:has(a[href^="https://sport.ua/betting/"])
 ||sport-express.ru/*/dg-bnr.svg
 ||sport-express.ru^*/betcity/  # is in Ru AdList
 ||sport-express.ru/fb/img/icons/notifications.svg
+||sport-express.ru/js/clever_ads.js
     ! top
 sport-express.ru##.se-menu-top:style(position:static !important)
 sport-express.ru##.se-header-mob:style(position:static !important)
@@ -25811,8 +25889,15 @@ tiktok.com##[class*=StyledLinkLogo]
 ||tildacdn.com/js/tilda-errors  # ad telemetry script
 ||tildacdn.com/js/tilda-stat  # ad telemetry script
 ||tildacdn.com/*/noroot.png
-||tildacdn.com/js/tilda-popup
-  ##.t-popup
+    !
+    ! Большинство сайтов злоупотребляет диалоговыми окнами, поэтому по умолчанию они убраны
+    ! Исключения прописаны для найденных или же сообщённых случаев - в частном порядке либо через Github
+||tildacdn.com/js/tilda-popup$domain=~art-mosreg.ru|~organic-people.com
+~art-mosreg.ru,~organic-people.com##.t-popup
+    ! Примеры не все, к сожалению
+    ! intergame.org##.t-popup:has-text(/Зарегистрируйтесь|подпишитесь/)
+    ! tizer.io##.t-popup
+! Также см. отключенные попапы для Wordpress и других движков и сервисов
 
 time.com##.grecaptcha-logo
 time.com##.grecaptcha-badge
@@ -25960,7 +26045,6 @@ tiu.ru##.ek-button
 tiu.ru###besida
 ||tiu.ru/renders/certification_widget/$3p
 
-tizer.io##.t-popup
 tizer.io##.t228__positionfixed
 tizer.io##.t-sticky_going.tn-atom__sticky-wrapper:style(position:static !important)
 
@@ -27558,8 +27642,7 @@ veterinarka.ru###header
 
 vetert.ru###sitename
 
-! магазин продается, заказы не принимаются
-vezuvdom.ru
+vezuvdom.ru  # магазин продается, заказы не принимаются
 
 vgtimes.ru##.vgt_logo4
 vgtimes.ru##.handle
@@ -27569,6 +27652,17 @@ vgtimes.ru##a:style(color:initial !important)
 vhod-cabinet.kz##.btn-box
 
 ||viacode.com/images/mp_diagram/mrbeanwithtext.png
+
+    ! popups
+viasun.ru##.ot-request-box
+viasun.ru###messengers
+    ! banners and promos
+viasun.ru##.expert
+viasun.ru##.agency_slider
+viasun.ru##.subscriptions__item
+! seo
+viasun.ru##.main-description
+    ! other
 
 ||vibraporn.com/images/vibraporn.com/__tad
 ||vibraporn.com/images/vibraporn.com/tad
@@ -27638,6 +27732,9 @@ vikent.ru##.vikent-panel
 village-eco.com##.site-header__fixed:style(position:static !important)
 village-eco.com##.site-header__socials
 village-eco.com##.hhh.form_fot
+
+! popup
+vilmorin.ru##.besoin-info
 
 vinylko.ru##.b-product-groups-gallery__counter-wrap
 
@@ -27777,6 +27874,7 @@ v-lodke.ru##.s_credit
 v-lodke.ru##.s_yellow_line
 ||v-lodke.ru/image/data/temp/2/01.png
 
+||vm.ru/img/vmru-header$image
 vm.ru##.lyr:style(position:static !important)
 
 vmarena.com##.footer-main
@@ -28162,6 +28260,8 @@ vsemtoy.ru##.adv_bottom_block
 vsemtoy.ru##.company_bottom_block
 vsemtoy.ru##.brands_slider
 vsemtoy.ru##.brand_main_wrapper
+
+vseojkt.ru##.header-shadow
 
 vseovannoi.ru##.sidebar
 
@@ -30203,6 +30303,8 @@ zoocenter.bg##.bottom-freezed-bar
 zoohit.*,zooplus.*##.uxt-carousel
 zoohit.*,zooplus.*##[class^=GoTopButton]
 
+zoo-discont.ru##.tizers
+
 ||zoomagazin.eu/images/chat-icon.png
 
 zoon.ru###serviceNavPanel:style(position:static !important)
@@ -30648,8 +30750,6 @@ ru##.ErrorBox:has-text(AdBlock)
 
 /tiara/*
 /tiara.min.js  # ||daumcdn.net/*/tiara.min.js
-
-||hackr.io/blog/media/udacity-horizontal-banner.png
 
 d3ward.github.io##.gt-link
 
