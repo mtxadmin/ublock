@@ -3673,6 +3673,8 @@ blackview-shop.com##.product-labels
 
 bladeforum.ru##.rules
 
+bladehq.com##.icon-tiktok
+
 ||s.blamper.ru/js/app/widgets/common/FakeChat/
 
 bleepingcomputer.com##.error.message:has-text(Javascript Disabled Detected)
@@ -4198,6 +4200,9 @@ browserstack.com$inline-script  # site blocks copypaste
 browserstack.com##+js(rc,page-wrapper-on-load)
 ! large inline toc
 browserstack.com##.guide-toc
+
+||brutalica.ru/image/catalog/brutalica.$image
+brutalica.ru###stiky_box
 
 ||bryansktoday.ru/images/unknownuser2.png
 bryansktoday.ru##aside.module:has-text(Последние комментарии)
@@ -8784,6 +8789,8 @@ foreignpolicy.com##.content-ungated
     ! other
 
 forest-home.ru###fixed_toolbar
+forest-home.ru##.header2-fixed-align
+forest-home.ru##.quick_view
 
 for-gun.ru###WTextTop-phones-mobile
 for-gun.ru##.item > .btn-warning.btn
@@ -9043,13 +9050,21 @@ fuqqt.com##footer
 # update: do not block imgs from there.
 # update: there are some tracking scripts there. When they blocked, techradar.com doesn't show imgs. Ok.
 ! used by: techradar.com, toptenreviews.com, tomsharware.com
-futurecdn.net$script
-futurecdn.net$xhr
+!futurecdn.net$script
+!futurecdn.net$xhr
     ! ||futurecdn.net$xhr
     ! bordeaux.futurecdn.net/bordeaux.js
     ! champagne.futurecdn.net/champagne.js
     ! freyr.futurecdn.net/freyr.js
     ! vanilla.futurecdn.net
+    ! Update 2024: Ok, some narrowing:
+    !@@||search-api.fie.futurecdn.net$script
+    !@@||vanilla.futurecdn.net$script
+    !@@||slice.vanilla.futurecdn.net$script
+    ! Or, better:
+    bordeaux.futurecdn.net$script,xhr
+    champagne.futurecdn.net$script,xhr
+    freyr.futurecdn.net$script,xhr
 ||futurecdn.net/toptenreviews/media/img/missing-image.svg$image  # toptenreviews.com
 
 fuzz-magazine.ru##.pic:has(img[src*="/news_default_"])
@@ -9851,6 +9866,10 @@ goodstone.realty##.b-slid_text
 ||goodstone.realty/images/slid/*$image
 ||goodstone.realty/images/ytong.jpg
 
+googleblog.com##.adb-header:style(position:static !important)
+googleblog.com##.adb-hero-area:style(position:static !important)
+googleblog.com##.content-wrap:style(padding-top:0px !important)
+
 gordonua.com$inline-script  # site blocks copypaste
 gordonua.com##header:style(background:none !important)
 gordonua.com##.form-control:style(background:none !important)
@@ -10184,6 +10203,8 @@ gunsbroker.ru##.notice
 gunsbroker.ru##.notification
 gunsbroker.ru##[href^="/sprkl/"]
 gunsbroker.ru##.i-am-old--popup
+
+gunshop.com.ua##.bar-fixed-b
 
 gunshouse.ru##.top
 
@@ -11441,6 +11462,10 @@ iamondemand.com##.author-wrapper
 iamondemand.com##.elementor-heading-title
 
 ||ibathroom.ru/wp-content/uploads/2016/12/HelpProject2.jpg
+
+ibis.net.ua##.language-tooltip__block
+ibis.net.ua##.float
+ibis.net.ua##.send_typo_edit
 
 ibm.com##.cm-pill
 ibm.com###cm-proactive-popup
@@ -13830,6 +13855,8 @@ lambdatest.com##.btn_test_cta
 
 laminat-msc.ru##.article-rate
 laminat-msc.ru##.rating
+
+lamnia.com###nav-container:style(position:static !important)
 
 ||lamoda.ru/z?  # from EasyPrivacy
 ! После удаления баннеров главная страница необычно чиста :-) Но меню и поиск работают. Рекламное мельтешение не отвлекает от выбора.
@@ -16856,6 +16883,8 @@ myfitnesspal.com##.MuiSnackbarContent-root
 ! myfreshworks.com##.overlay-container - don't, there are useful popups there
 
 mygoodknife.com###pqnp-win
+mygoodknife.com##.header-webmax-banner
+mygoodknife.com##.header-main-menu:style(position:static !important)
 
 ||myjane.ru/i/content-bg2.png
 ||myjane.ru/i/footer-$image
@@ -17545,6 +17574,8 @@ nix.ru###online_credit
 nix.ru###front_eye
 
 nixstats.com##a, nav#top, .box, #login input, .box h2:style(color:initial !important)
+
+nksmart.ru##.header-middle
 
 ||nlcafe.hu/*hirdetes  # from Hufilter
 ||nlcafe.hu/data/files/*_hatter*.  # from Hufilter
@@ -21361,6 +21392,7 @@ rezat.ru##.item__oneclick-link
 rezat.ru###params-inform-layer-ready
 rezat.ru##.item-wobblers
 rezat.ru##.footer-bottom
+||rezat.ru/img/9-may$image
 
 rezbaderevo.ru###site-header
 ||rezbaderevo.ru/*/place.png
@@ -21914,6 +21946,7 @@ pornolab.net###page_footer > .bCenter
 pornolab.net##div.post-align:has-text(Релизера можно поддержать)
 ! some annoying pictures
 ||fastpic.org/big/2009/1216/5e/8a4271c44c907f6ff66984a1951b865e.$image
+||fastpic.org/big/2010/0102/d7/178fc81dd8245c71a8fbe22bd52d0bd7.$image
 ||fastpic.org/big/2010/0301/ac/da93ac84a3a8cd5a5fbf94fd900182ac.$image
 ||fastpic.org/big/2011/0916/dc/bfddc1cf22892bfdb7b64e16d28776dc.$image
 ||fastpic.org/big/2012/0918/81/6f5a0ea995b3e871716bbbb516fd7f81.$image
@@ -21935,6 +21968,7 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.org/big/2015/0426/c0/ea84007230dc8c14aaecdc0cfca6a4c0.$image
 ||fastpic.org/big/2015/0726/5a/763ab58ace5f50dbcf59558fc515775a.$image
 ||fastpic.org/big/2015/1004/78/9c258d77574d63a04e18496eca8a9e78.$image
+||fastpic.org/big/2016/1114/6e/e548ce1a9c6d88372b208ed551f9736e.$image
 ||fastpic.org/big/2017/0803/69/a4f5cc3fa4822eb538d940ae05352069.$image
 ||fastpic.org/big/2017/0804/a4/47ecbe85694e340e5f891e0fec9466a4.$image
 ||fastpic.org/big/2017/0905/c4/287440e087a80614f029e49dc81f3dc4.$image
@@ -24181,6 +24215,11 @@ sputnik8.com##.gtm-modal-offer-discount
 sputnik8.com##.gtm-act_order-banner
 sputnik8.com##.screen-bottombar
     ! other
+
+spyderco.com##.site-footer
+
+spyderco-russia.ru##.bmarker
+spyderco-russia.ru##a::after
 
 sqlauthority.com##.l-section-h:style(padding-top:0px !important)
 sqlauthority.com##.at_top
