@@ -2,7 +2,7 @@
 
 #### Yet another smart Blokada hosts file
 
-The name says "Blokada", but it is pretty compartible for any app which supports asterisks in hosts.
+The name says "Blokada", but it is pretty compartible for any app which supports asterisks (wildcards) in hosts.
 
 This is the [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) for blocking ads, counters, telemetry and [other things](policy_en.md). It is generated from the files of [the parent project](../README_en.md) and is periodically updated.
 
@@ -94,6 +94,18 @@ Cons:
 DNS66 is another hosts-blocking app. But:
 - Its depelopment stopped in 2021
 - It [does not support](https://github.com/julian-klode/dns66/issues/423) asterisks in hosts
+
+## Pi-Hole
+
+Pi-Hole is a well-known Linux-based locally hosted app. I can't understand, is it support wildcards or not
+
+https://www.reddit.com/r/pihole/comments/bu8fvz/enhance_pihole_with_wildcard_blocking_adguard/
+
+https://discourse.pi-hole.net/t/using-blocklist-to-add-wildcard-blocked-domains/13561
+
+https://discourse.pi-hole.net/t/support-wildcards-in-local-dns-records/32098/24
+
+https://www.reddit.com/r/pihole/comments/bu8fvz/enhance_pihole_with_wildcard_blocking_adguard/
 
 ## Other
 
