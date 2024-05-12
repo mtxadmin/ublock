@@ -2419,6 +2419,8 @@ _tizers.  # from Ru AdList
     ! syloe.com##.cta-img
     ! varonis.com##.cta-block
 ~nixstats.com,~redhat.com##[class$="-cta"]:not(html):not(body):not(article)
+! "##.alert-info.alert.signup-cta" does not fall in. Weird. Ok, here an addition:
+~nixstats.com,~redhat.com##[class*="-cta "]:not(html):not(body):not(article)
     ! nixstats.com: <button class="btn btn-cta" type="submit">login</button>
 ##[id$="-cta"]:not(html):not(body):not(article)
     ! ##.footer-cta
@@ -2673,6 +2675,7 @@ _chartbeat.js  # from EasyPrivacy
 /discourse-fingerprint_  # from EasyPrivacy
 /doctracking.  # from EasyPrivacy
 /dspixel.js$important
+/dwanalytics-  # is in EasyPrivacy and Adguard
 /dwell/log?  # is in EasyPrivacy
 /easylocation/*
 /eloqua
