@@ -2,6 +2,8 @@
 
 #### Yet another smart Blokada hosts file
 
+The name says "Blokada", but it is pretty compartible for any app which supports asterisks in hosts.
+
 This is the [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)) for blocking ads, counters, telemetry and [other things](policy_en.md). It is generated from the files of [the parent project](../README_en.md) and is periodically updated.
 
 Applying of the hosts file can be useful for general ad blocking in the system, not just in the browser.
@@ -69,6 +71,29 @@ https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt
 - Enable query logging (Settings -> Query logging). This can be very useful to find out which domains was blocked and which was not.
 
 *Nebulo has an interesting feature: Non-VPN mode. So, theoretically, you can use AND Blokada, AND Nebulo. Or AND Blokada, AND any non-filtering VPN app. This is a very promising feature. But in practice, since Android can send DNS queries only on port 53, and the system cannot allow you to set port number in Nebulo lower than 1024, you have to [make a local port redirect](https://github.com/Ch4t4r/Nebulo/blob/master/docs/NONVPNMODE.md) for that.*
+
+## AdAway
+
+AdAway is well-known app, free and opensource. But:
+- It needs root
+- It is [unknown](https://github.com/AdAway/AdAway/issues/4086), does it support asterisks in hosts or not.
+
+## NextDNS
+
+NextDNS is a service, not an app, but it's worth mentioning.
+Pros:
+- It is [efficient](https://github.com/serverless-dns/blocklists/pull/81#issuecomment-1381256209) with larger lists
+Cons:
+- The free version is [still](https://github.com/mtxadmin/ublock/issues/54#issuecomment-1381079479) unusable, query limit is far too low
+- You cannot add your blocklist to the system
+- Paid plans [still](https://github.com/serverless-dns/blocklists/pull/81#issuecomment-1383155144) "launching soon"
+- Its blog stopped in [2022](https://blog.rethinkdns.com/)
+
+## DNS66
+
+DNS66 is another hosts-blocking app. But:
+- Its depelopment stopped in 2021
+- It [does not support](https://github.com/julian-klode/dns66/issues/423) asterisks in hosts
 
 ## Other
 
