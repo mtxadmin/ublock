@@ -25,7 +25,9 @@ If your phone is rooted, you can also block ad hosts in [system hosts file](host
 
 For this hosts file version, you have to install an app which can works with asterisks in subdomains. At the moment, I know only one such app: Blokada. Update: @ignoramous recommends another filtering app: Nebulo. There are other DNS filtering apps, but they do not support asterisks.
 
-## Blokada
+## Blokada (deprecated)
+
+Update: in later versions of Blokada there are no possibility to add custom lists. And the authors removed old working versions from Github. So this app is useless now.
 
 Blokada is opensource and free app to filter traffic on the DNS level. I used it for several years, it is a functional and stable app (but only 4.11.1, see below).
 
@@ -39,6 +41,8 @@ Attention:
 - In newest versions of Blokada v4 there is [a bug](https://github.com/blokadaorg/blokada/issues/900) which leads to miss some ad requests. Last known good version:
 
 https://github.com/blokadaorg/blokada/releases/download/4.11.1/blokada-v4.11.1.apk
+
+Update: The authors removed this working version from Github.
 
 The address of the hosts file of this project:
 ```
