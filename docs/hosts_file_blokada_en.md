@@ -80,7 +80,7 @@ https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt
 
 AdAway is well-known app, free and opensource. But:
 - It needs root
-- It is [unknown](https://github.com/AdAway/AdAway/issues/4086), does it support asterisks in hosts or not.
+- [It does not](https://github.com/AdAway/AdAway/issues/678) support asterisks. Asterisks can be in the whitelist there, but the blacklist is ordinary system [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)).
 
 ## NextDNS
 
