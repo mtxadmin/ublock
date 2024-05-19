@@ -8424,6 +8424,8 @@ filmz.ru##.top-img
 
 filtrvody.com##.pos-fix:style(position:static !important)
 
+fin.sale###newsticker
+
 financc.ru##.head_top
 
 financefuel.ru##noindex
@@ -9076,6 +9078,10 @@ fuqqt.com##footer
     freyr.futurecdn.net$script,xhr
 ||futurecdn.net/toptenreviews/media/img/missing-image.svg$image  # toptenreviews.com
 
+futurnitura.com##.sticky-block:style(position:static !important)
+futurnitura.com##.subscribe-side-block
+futurnitura.com###headerfixed
+
 fuzz-magazine.ru##.pic:has(img[src*="/news_default_"])
 fuzz-magazine.ru##.menuBlock:style(position:static !important)
 ||piter.tv/img/news_default_
@@ -9481,6 +9487,9 @@ ghacks.net##.ghacks-header > .bg--darkGray
 gidonline.io##.ct-avatar
 
 gidparazit.ru##.sts_frame
+
+gidpotkanyam.ru##.gidpotkanyam-footer-container:style(position:static !important)
+gidpotkanyam.ru##.gidpotk:style(position:static !important)
 
 gidroguru.com###slidebox
 gidroguru.com##.add_company
@@ -14356,6 +14365,7 @@ lifehacker.ru##.lh-user-info
 lifehacker.ru##.widgets-renderer-item_comments
 lifehacker.ru##.left-sidebar__sticky-container:style(position:static !important)
 lifehacker.ru##.footer__text-rating
+lifehacker.ru##.card-menu.list-wrapper:style(position:static !important)
 
 ||lifelink.ru/img/lifelink_banner$image
 
@@ -17345,6 +17355,7 @@ netop.com##.top-wrapper
 ||netop.com/_hcms/perf
 
 netpoddelka.ru##.header-main
+netpoddelka.ru##blockquote:has-text(/(Рекомендуем почитать|Читать также):/)
 
 networkinterview.com##.top_site_main
 networkinterview.com##.wmc-list-currencies
@@ -20423,6 +20434,8 @@ proton.by##.cs-float:style(position:static !important)
 proton.by##div .cs-float
 
 protoolreviews.com##.stuck
+
+protos.ru##.i_logo
 
 	! top
 provereno.media##.header_style_wrapper:style(position:static !important)
@@ -24386,6 +24399,13 @@ starmommy.com##.sticky-header:style(position:static !important)
 
 ||stars-s.ru/img/astra.png
 
+star-tex.ru##.popup-overlay
+star-tex.ru##.pop-join-invite
+! inline related
+star-tex.ru##.wiki-recommended-article
+star-tex.ru##.welcome-content__container
+star-tex.ru##.page-content:style(padding-bottom:0px !important)
+
 startfilm.ru###takeover_up
 startfilm.ru##.film_online_message
 startfilm.ru##.button2.navbar-nav.nav
@@ -25656,6 +25676,20 @@ texterra.ru##.guideankor
 texterra.ru##.menu-top
 texterra.ru###matnav
 texterra.ru##div.incut
+
+! site blocks copypaste:
+! <script type="rocketlazyloadscript">document.addEventListener("copy", (event) => {var pagelink = "\nИсточник: %Текстиль Гуру%";event.clipboardData.setData("text", document.getSelection() + pagelink);event.preventDefault();});</script>
+! See https://github.com/gorhill/uBlock/wiki/Resources-Library#aeldjs-
+textilegu.ru##+js(addEventListener-defuser, , , runAt, idle)
+textilegu.ru##+js(addEventListener-defuser, , , runAt, end)
+! But it still works. So:
+textilegu.ru$inline-script
+! inline promo - именно так. Там еще есть комменты в конце страницы, то полезное и под это не попадает
+textilegu.ru##.expert-review > .expert-review-expert
+textilegu.ru##.cs-expertPlagin-tpl
+textilegu.ru##.popUp-box-expert_plag
+textilegu.ru##.expert-review-expert-bio__avatar
+textilegu.ru##.tg_widget
 
 ! site breaks copypaste
 textove.com$inline-script
@@ -27027,6 +27061,14 @@ ukk-autoschool.ru###sp-section-1
 ukr.net##.wrapper:style(display:initial !important)
 
 ukrainianwall.com##.nav-logotype
+
+ukrarmor.com.ua##.modal-preload
+ukrarmor.com.ua##.subscribe-popup
+ukrarmor.com.ua##.popup--subscribe.popup
+ukrarmor.com.ua##.modal_load
+ukrarmor.com.ua##.banner-bar
+ukrarmor.com.ua##.header:style(position:static !important)
+ukrarmor.com.ua##.page__header:style(position:static !important)
 
 ukrnews24.net##.header-line-2
 
