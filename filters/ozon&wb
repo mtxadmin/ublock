@@ -321,7 +321,7 @@ ozon.ru##div:has(>div>span:has-text(/0 комментариев|1 коммент
 ozon.ru##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/))
 ! and also. Old design.
 ! reviews without text are useless
-ozon.ru##div[data-review-uuid]:not(:has-text(/Вам помог этот отзыв\?|Показать весь отзыв/))
+ozon.ru##div[data-review-uuid]:not(:has-text(/Вам помог этот отзыв\?|Показать весь отзыв/)):not(:matches-path(/my/reviews))
 ! just img
 ||ozone.ru/s3/my-account-api-img/*/OD-ok.png$image
 
