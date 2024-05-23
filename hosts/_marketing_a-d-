@@ -4953,7 +4953,7 @@ a-new.ru  # from GoodbyeAds
 
 anews.one  # ad scripts  # push.anews.one  # anews.one/assets/js/update.js
 
-anexia-it.com  # from Adguard
+anexia-it.com  # from Adguard  # seems tracking domain of anexia.com - see Adguard
 
 anexinet.com
 !+  insights.anexinet.com
@@ -5825,8 +5825,6 @@ appjs.site  # ad scripts
 
 appk.mobi  # from BlockListProject - Ads
 
-apple.co  # from PeterDaveHello's URL Shorteners
-
 apple.news  # ad redirects  # is in PeterDaveHello's URL Shorteners
 
 apple-11.ru  # from 10Zin Host Database  # Checked:2024-05-10
@@ -6223,6 +6221,8 @@ appswiss.ch  # from GoodbyeAds
 appsyoga.com  # from EasyList
 
 appt12mn.com  # from Ru AdList
+! from Ru AdList
+##a[href*="//appt12mn.com/"]
 
 apptap.com
 !+  api.apptap.com
@@ -6315,9 +6315,7 @@ apromoweb.com  # from GoodbyeAds
 aproxtrack2.com  # from GoodbyeAds
 
 aprtn.com$important  # actionpay
-aprtx.com$important  # actionpay
-
-aprtx.com  # from Ru AdList
+aprtx.com$important  # actionpay  # also is in Ru AdList
 
 apruvd.com  # from ShadowWhisperer's Tracking
 
@@ -6472,6 +6470,8 @@ aqueousdt.com  # from ShadowWhisperer's Tracking
 aquete.com  # from Antipopads-re
 
 aquicore.com  # from ShadowWhisperer's Tracking
+!+  pr.aquicore.com
+! end of aquicore.com
 
 aqva.pl  # from Mayakyler's link-shorteners
 
@@ -6833,6 +6833,8 @@ artemisaffiliates.com  # from Adguard
 artemyarovikov.ru  # from 10Zin Host Database
 
 artfut.com  # from Ru AdList
+    # ad scripts  # artfut.com/static/tagtag.min.js?campaign_code=
+    ||artfut.com^$script,important,redirect-rule=noop.txt  # Adguard rule
 
 arthacreativeservices.com  # from ShadowWhisperer's Ads
 
@@ -9334,8 +9336,6 @@ bcprm.com  # Unknown - Advertising  # from Quidsup NoTrack-Blocklist
 
 bcuiaw.com  # from EasyList
 
-beats.is  # from PeterDaveHello's URL Shorteners
-
 becomporstrk.com  # from Adguard
 
 becsn.net  # from ShadowWhisperer's UrlShorteners
@@ -11578,22 +11578,22 @@ bitlyli.com  # from ShadowWhisperer's UrlShorteners
 bitlylinks.com  # from ShadowWhisperer's UrlShorteners
 1drv.ms  # bitly  # is in PeterDaveHello's URL Shorteners
 adpmsg.com  # bitly url shortener
-apple.co  # bitly url shortener
+apple.co  # bitly url shortener  # also is in PeterDaveHello's URL Shorteners
 appr.vg  # bitly url shortener
-beats.is  # bitly url shortener
+beats.is  # bitly url shortener  # also is in PeterDaveHello's URL Shorteners
 es.pn  # bitly url shortener
 gdgd.io  # bitly url shortener
-glo.li  # bitly url shortener
-ift.tt  # bitly url shortener
-j.mp  # bitly url shortener
+glo.li  # bitly url shortener  # also is in PeterDaveHello's URL Shorteners
+ift.tt  # bitly url shortener  # also is in PeterDaveHello's URL Shorteners
+j.mp  # bitly url shortener  # ad links  # also is in PeterDaveHello's URL Shorteners
 mapq.st  # bitly url shortener
-nyti.ms  # bitly url shortener
+nyti.ms  # bitly url shortener  # also is in PeterDaveHello's URL Shorteners
 pontoon.me  # bitly url shortener
 shetty.cc  # bitly url shortener
 slurm.club  # bitly url shortener
-swoo.sh  # bitly url shortener
+swoo.sh  # bitly url shortener  # also is in PeterDaveHello's URL Shorteners
 theac.cc  # bitly url shortener
-uafly.co  # bitly url shortener
+uafly.co  # bitly url shortener  # also is in PeterDaveHello's URL Shorteners
 free-shorturl-bitly.com
 
 bit-ad.com  # from Adguard
@@ -14070,6 +14070,8 @@ bubblebedroom.com  # from ShadowWhisperer's Tracking
 bubblenik.com  # from Ru AdList
 
 bubblesmedia.net  # ad network  # now is in Ru AdList
+! from Ru AdList
+##a[href*="//sub"][href*="bubblesmedia."]
 
 bubblestat.com  # from Adguard
 
@@ -14261,6 +14263,10 @@ bunchbox.co  # from Adguard
 bunchofads.com  # from BlockListProject - Ads
 
 bundasnovinhas.com  # from Dan Pollock's hosts file
+
+bundlebyte.net
+! from Ru AdList
+##a[href*="://go.bundlebyte.net/r/"]
 
 bung.ie  # from PeterDaveHello's URL Shorteners
 
@@ -19767,6 +19773,10 @@ coscale.com  # from ShadowWhisperer's Tracking
 
 cosmi.io  # from Adguard
 
+cosmolot.me  # parked
+! from Ru AdList
+##a[href*="cosmolot.me/"][href*="banner"]
+
 cosmosads.com  # from ShadowWhisperer's Ads
 
 cosmosjackson.com  # ad scripts  # is in EasyPrivacy
@@ -21778,6 +21788,10 @@ dafeb.ru  # from Ru AdList
 daffaite.com  # from Antipopads-re
 
 daftsex.com  # from uBlock filters
+
+dagamah.com
+! from Ru AdList
+##a[href*="//dagamah.com/"]
 
 d-agency.net  # root 500  # from Ru AdList
 
