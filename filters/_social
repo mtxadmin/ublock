@@ -162,8 +162,12 @@ _social_fb.  # from Fanboy’s
     ###fb_icon
     ! from Adguard
     ###fb-root:not(body):not(html)
-~facebook.com,~fb.com,~alfamiles.com,~onetwotrip.com,~ozon.ru,~ozon.by,~ozon.com##[class*="-fb"]:not(html):not(body):not(article):not([class^=css-fb]):not(h1):not(h2):not(h3)
+~facebook.com,~fb.com,~alfamiles.com,~onetwotrip.com,~ozon.ru,~ozon.by,~ozon.com##[class*="-fb"]:not(html):not(body):not(article):not([class*=css-fb]):not(h1):not(h2):not(h3)
 ~facebook.com,~fb.com,~alfamiles.com,~onetwotrip.com,~ozon.ru,~ozon.by,~ozon.com##[id*="-fb"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! earlier it was [class^=css-fb] for random classes like .css-fb3dw2
+    ! but it turns out this rule doesn't catch "markdown-html css-fb3dw2", so it transformed to [class*=css-fb]
+    !
     ! is in Fanboy's
     ##.icn-fb
 ~facebook.com,~fb.com,~alfabank.ru,~alfamiles.com,~onetwotrip.com,~ozon.ru,~ozon.by,~ozon.com##[class*="_fb"]:not(html):not(body):not(article)
