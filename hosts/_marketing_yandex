@@ -32,7 +32,7 @@ adfox.yandex.ru
 ~retail.ru##[id*="adfox"]:not(html):not(body):not(article)
     ! Exclusions:
     ! retail.ru - main div #main_div_adfox
-! from EasyList
+! from EasyList and Ru AdList
 ##div[id^="adfox_"]
 ! from RU AdList, modified
 ##a[href*="//ads.adfox.ru/"]
@@ -40,6 +40,10 @@ adfox.yandex.ru
 ##div[id^="AdFox_banner_"]
 ! задолбали. Чуть глубже:
 ##a[href*="ads.adfox.ru/"]
+
+ya-browser.ru
+! from Ru AdList
+##a[href*="://ya-browser.ru/r/"]
 
 advertising.yandex.ru$important,all
 adfstat.yandex.ru  # from Adguard
