@@ -2143,6 +2143,9 @@ aspektcenter.ru##blockquote
 asrock.com###loading_BG
 asrock.com###floating-button
 
+assistent-system.ru$inline-script  # site blocks copypaste
+assistent-system.ru##+js(set-attr, img, src, [data-lazy-src])
+
 assistentus.ru##.footer_left
 assistentus.ru##.ukp
 ! left menu
@@ -6692,6 +6695,7 @@ dotnet-helpers.com##.fusion-sb-toggle
 dou.ua###max-header-adv-id
 
 # uBlock filters exclusion rule: @@||downloadfreecourse.com^$generichide
+||downloadfreecourse.com/assets/img/adb.webp
     ! popups
 ! cookies popup
 downloadfreecourse.com##.text
@@ -7315,6 +7319,7 @@ educba.com##.quiz-sticky
 ||educba.com/ajax/js/ckk.js
 educba.com##.sixths
 educba.com##.footer-widgets
+educba.com##.blog-af-hr-eml
 
 edugeek.net##.options_block
 edugeek.net###notices
@@ -24867,6 +24872,10 @@ sustavlive.ru##.test-posts-box
 
 suvan.ru###header1
 
+svetilnik.info$inline-script  # site blocks copypaste
+svetilnik.info##+js(set-attr, img, src, [data-lzl-src])
+svetilnik.info##+js(set-attr, iframe, src, [data-lzl-v-src])
+svetilnik.info##img.lzl:style(opacity:initial !important)
 svetilnik.info###webnavoz_button_style2_main
 
 svetitok.ru###menu_wrap:style(position:static !important)
@@ -30035,6 +30044,8 @@ youtube.com,youtube-nocookie.com##.ytp-show-cards-title
     ! top of channels. See #61
 youtube.com,youtube-nocookie.com###wrapper #contentContainer:style(padding-top:0px !important)
 youtube.com,youtube-nocookie.com###header:style(transform:none !important)
+    ! shorts in the search
+youtube.com,youtube-nocookie.com##ytd-reel-shelf-renderer
     ! other
 
 youtubetranscript.com##.overlay
