@@ -13,7 +13,7 @@ api.passport.yandex.ru$third-party
 ! ads and telemetry
 
 ! adfox belongs to Yandex. A pair of cosmetic rules about it are also here
-adfox.ru$important,all
+adfox.ru$important,all  # also is in Ru AdList
 !+  ads.adfox.ru
 !+  help.adfox.ru
 !+  iva.adfox.ru
@@ -21,9 +21,8 @@ adfox.ru$important,all
 !+  myt.adfox.ru
 adfox.net$important,all
 !+  banners.adfox.net
-adfox.me  # from MobileAdTrackers
 adfox.cz  # from ShadowWhisperer's Ads
-adfox.ru  # from Ru AdList
+adfox.me  # from MobileAdTrackers
 adfox-external-l3-engine.stable.qloud-b.yandex.net
 /adfox$important,all
     ! ||yastatic.net/pcode/adfox/*$important
@@ -34,10 +33,10 @@ adfox.yandex.ru
     ! retail.ru - main div #main_div_adfox
 ! from EasyList and Ru AdList
 ##div[id^="adfox_"]
-! from RU AdList, modified
-##a[href*="//ads.adfox.ru/"]
 ! from AdGuard
 ##div[id^="AdFox_banner_"]
+! from RU AdList, modified
+!##a[href*="//ads.adfox.ru/"]
 ! задолбали. Чуть глубже:
 ##a[href*="ads.adfox.ru/"]
 
