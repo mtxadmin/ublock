@@ -1627,9 +1627,10 @@ _rebid.js  # from EasyList
 ##[id*="Banner"]:not(html):not(body):not(article)
 ! don't block *banner* by id or class
 ! ##[role="banner"] - in general, don't
-~booknet.ua##[class^="bn_"]:not(html):not(body):not(article)
+~booknet.ua,~ozon.ru,~ozon.kz##[class^="bn_"]:not(html):not(body):not(article)
     ! Exclusions:
     ! booknet.ua - many bn_* classes (by site name, BookNet)
+    ! ozon - random classes
 ~booknet.ua##[id^="bn_"]:not(html):not(body):not(article)
     ! Exclusions:
     ! booknet.ua - many bn_* classes (by site name, BookNet)
