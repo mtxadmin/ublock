@@ -74,6 +74,7 @@ ozon.ru###stickyHeader:style(padding:initial !important; margin:initial !importa
 ||ozone.ru/_nuxt/uw-*-atom-sku-shelf-goods.  # from Ru AdList
 !||ozone.ru/assets/*/bx-  # location popups  # don't, too broad, this breaks some ui elements. Instead:
 !||ozone.ru/assets/*/bx-fe-ui-kit-typography-helper.js  # location popups  # don't, it breaks json loading
+!||ozone.ru/assets/*/vendor-vue.js$redirect=noop.js  # в этом скрипте есть функция про прилепленный заголовок. Но без него подгрузка в поиске не идёт
 ozon.ru##.modal:has-text(город)
 ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли):not(:has-text(Не нашли нужный фильтр))
@@ -104,6 +105,10 @@ finance.ozon.ru###modal-container:has-text(Закажите)
 !||ozone.ru/s3/cms/$image - don't, category icons
 ||ozone.ru/assets/marketing
 !||ozone.ru/s3/video/cover/$image - hmmm...?
+!
+! Ru AdList rule hides recommendations after order. I think, they are useful.
+ozon.ru#@#html:not([style*="overflow:"]) [data-widget="skuGrid"]
+!
 ozon.ru##[data-widget="banner"]
 ozon.ru##a[href^="/travel/info/hotels-cashback/"]
 ozon.ru##[data-widget="objectBannerList"]
