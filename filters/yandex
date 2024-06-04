@@ -65,7 +65,7 @@ yandex.*##.interview
 ||yastatic.net/s3/home/notifications/$image
 
 ! fake warning about youtube
-yandex.ru##.Organic-Warning
+yandex.*##.Organic-Warning
 
 realty.ya.ru##.Popup:has([class*=tooltip])
 
@@ -134,24 +134,24 @@ go.yandex##.lc-logo-block__logo-container
 ya.ru##[class^=NavBarLogo]
 ya.ru##.HeaderDesktopLogo
 ya.ru##.HeaderDesktop-Logo
-yandex.ru##noindex:has(a[href="//ya.ru/"])
+yandex.*##noindex:has(a[href="//ya.ru/"])
     ! top
 go.yandex##.lc-header-lpc__fixed-wrapper:style(position:static !important)
-yandex.ru##.lc-header-lpc__fixed-wrapper:style(position:static !important)
+yandex.*##.lc-header-lpc__fixed-wrapper:style(position:static !important)
 
 ! from Ru AdList
 ya.ru##.market-feed
 
 ! top banners
 ||avatars.mds.yandex.net/get-market-adv/
-market.yandex.ru##a[href*="/special/"]
+market.yandex.*##a[href*="/special/"]
 
 ! price
-market.yandex.ru##[data-auto="price-description"]
-market.yandex.ru##[data-auto="snippet-price-current"]
-market.yandex.ru##[data-auto="snippet-price-old"]:style(font-size:20px !important)
-market.yandex.ru##[data-auto="snippet-price-old"]>span:has-text(без:)
-market.yandex.ru##div::before
+market.yandex.*##[data-auto="price-description"]
+market.yandex.*##[data-auto="snippet-price-current"]
+market.yandex.*##[data-auto="snippet-price-old"]:style(font-size:20px !important)
+market.yandex.*##[data-auto="snippet-price-old"]>span:has-text(без:)
+market.yandex.*##div::before
 
 !fenek.market.yandex.ru - maybe don't, captcha
 !fenek.market.yandex.ru/*/event?hash
@@ -226,9 +226,9 @@ yandex.*##.content-with-thumb
 ! maps
 yandex.*##[class^=_id_branding]
 ! seems non-working. Todo.
-    yandex.ru##._id_branding_mastercard
-    yandex.ru##._id_branding_yandex-gasstation
-    yandex.ru##._id_branding_yandex-gasstation
+    yandex.*##._id_branding_mastercard
+    yandex.*##._id_branding_yandex-gasstation
+    yandex.*##._id_branding_yandex-gasstation
     ! is in Adguard
     yandex.*##._id_branding_tele2
 yandex.*##.branding-control
@@ -248,21 +248,21 @@ yandex.*##.showcase-button-view
 yandex.*##.business-card-view__offers
 yandex.*##.business-post-view
 ! top
-yandex.ru##iframe[src*="iframe-ux-feedback.html"]
+yandex.*##iframe[src*="iframe-ux-feedback.html"]
 ||yandex.net/*/uxfeedback/
 
 ! Yandex.Popups, блин. Хватит уже выстреливать в лицо всякое
-!yandex.ru##.Popup2 - don`t, там не только реклама. Нужно сузить условия
+!yandex.*##.Popup2 - don`t, там не только реклама. Нужно сузить условия
 ! вот, например - 2023-10
 ya.ru,yandex.*##.Popup2:has-text(Яндекс Браузер)
 ! что-то раннее
 yandex.*###popup-wrapper
 yandex.*###modal
-yandex.ru##.cl-modal-unauth
-yandex.ru##.modal__backdrop
-yandex.ru###modal_unauth
-yandex.ru##.desktop-interview-modal
-yandex.ru##.Modal:has-text(поиск Яндекса)
+yandex.*##.cl-modal-unauth
+yandex.*##.modal__backdrop
+yandex.*###modal_unauth
+yandex.*##.desktop-interview-modal
+yandex.*##.Modal:has-text(поиск Яндекса)
 
 yandex.*##.layout__right
 !yandex.*##.content__right_cols_12.content__right
@@ -320,33 +320,33 @@ ya.ru##.search3__placeholder
 yandex.*##.answer-form
 ||yastatic.net/answers/_/assets/desktop/$image
 
-market.yandex.ru##.n-carousel
-market.yandex.ru##.n-entrypoint-carousel__inner
-market.yandex.ru##.lg-cc_visible
-market.yandex.ru##.lg-cc
-market.yandex.ru##.footer-market__column_order_last
-market.yandex.ru##.footer-market__column_half
-market.yandex.ru##.footer-market__column
-!market.yandex.ru##.metrika_js_inited
-market.yandex.ru##.market-metrika
-!market.yandex.ru##.popup2_target_anchor
-!market.yandex.ru##.wishlist-control_js_inited
-market.yandex.ru##.b-popup-complain
-market.yandex.ru##canvas
-market.yandex.ru##div.theme_light:has-text(вы смотрели)
-market.yandex.ru##div.theme_light:has-text(Популярные бренды)
-market.yandex.ru##div.section:has-text(Вы смотрели)
-market.yandex.ru##div.section:has-text(Популярные бренды)
-market.yandex.ru##div.section:has-text(Подпишитесь)
+market.yandex.*##.n-carousel
+market.yandex.*##.n-entrypoint-carousel__inner
+market.yandex.*##.lg-cc_visible
+market.yandex.*##.lg-cc
+market.yandex.*##.footer-market__column_order_last
+market.yandex.*##.footer-market__column_half
+market.yandex.*##.footer-market__column
+!market.yandex.*##.metrika_js_inited
+market.yandex.*##.market-metrika
+!market.yandex.*##.popup2_target_anchor
+!market.yandex.*##.wishlist-control_js_inited
+market.yandex.*##.b-popup-complain
+market.yandex.*##canvas
+market.yandex.*##div.theme_light:has-text(вы смотрели)
+market.yandex.*##div.theme_light:has-text(Популярные бренды)
+market.yandex.*##div.section:has-text(Вы смотрели)
+market.yandex.*##div.section:has-text(Популярные бренды)
+market.yandex.*##div.section:has-text(Подпишитесь)
 ||aflt.market.yandex.ru/widget$third-party
-market.yandex.ru##.n-marketplace-informer
-market.yandex.ru##.main > noindex
-market.yandex.ru##.n-region-notification
-market.yandex.ru##div:style(background-image:none !important)
-market.yandex.ru##.n-w-tab__discount_icon
-market.yandex.ru##.widget-loader__paranja
+market.yandex.*##.n-marketplace-informer
+market.yandex.*##.main > noindex
+market.yandex.*##.n-region-notification
+market.yandex.*##div:style(background-image:none !important)
+market.yandex.*##.n-w-tab__discount_icon
+market.yandex.*##.widget-loader__paranja
 ! new design with random fixed elements
-market.yandex.ru##*:matches-css(position:fixed)
+market.yandex.*##*:matches-css(position:fixed)
 ! from Adguard
 market.yandex.*##div[data-apiary-widget-name="@MarketNode/ReviewPollPopup"]
 ! from Adguard
@@ -357,32 +357,32 @@ market.yandex.*##div[data-apiary-widget-id="/bannerAfterReverseScroll"]
 ||avatars.mds.yandex.net/get-marketcms/$image
 ||yastatic.net/market-export/_/i/express-delivery/$image
 !plus
-market.yandex.ru##div[data-zone-name="CASHBACK"]
+market.yandex.*##div[data-zone-name="CASHBACK"]
 !plus
-market.yandex.ru##[id^=deal-terms-hint-tooltip]
+market.yandex.*##[id^=deal-terms-hint-tooltip]
 !loans
-market.yandex.ru##div[data-auto="financial-product-label"]
+market.yandex.*##div[data-auto="financial-product-label"]
 !apps
-market.yandex.ru##div[data-apiary-widget-id="/footer/appPromoLoader"]
+market.yandex.*##div[data-apiary-widget-id="/footer/appPromoLoader"]
 !seo
-market.yandex.ru##noindex >p
+market.yandex.*##noindex >p
 ! "вы смотрели"
-market.yandex.ru##div[data-apiary-widget-id="/footer/history"]
+market.yandex.*##div[data-apiary-widget-id="/footer/history"]
 ||yandex.net/autobanner/
-market.yandex.ru##.brandTheme-default
+market.yandex.*##.brandTheme-default
 ! scroll
-market.yandex.ru##body:style(overflow:initial !important)
+market.yandex.*##body:style(overflow:initial !important)
 ! top
-market.yandex.ru##div[data-apiary-widget-name="@MarketNode/StickyProductCard"]
+market.yandex.*##div[data-apiary-widget-name="@MarketNode/StickyProductCard"]
 ! loans
-market.yandex.ru##div[data-zone-name="BnplWidget"]
+market.yandex.*##div[data-zone-name="BnplWidget"]
 ! label
-market.yandex.ru##[data-baobab-name="customerChoice"]
+market.yandex.*##[data-baobab-name="customerChoice"]
 
 ! "Q"
-yandex.ru##a[href="/q/"]:has(svg)
-yandex.ru##div:has-text(/^Вы\s+знаете\s+ответ\s+на\s+этот\s+вопрос/)
-yandex.ru##a:has-text(Скачайте приложение)
+yandex.*##a[href="/q/"]:has(svg)
+yandex.*##div:has-text(/^Вы\s+знаете\s+ответ\s+на\s+этот\s+вопрос/)
+yandex.*##a:has-text(Скачайте приложение)
 
 ! logos
 ya.ru,yandex.*##.header2__logo
@@ -396,7 +396,7 @@ ya.ru,yandex.*##.headline__logo
 ya.ru,yandex.*##.search3__logo
 ya.ru,yandex.*##.lc-header-lpc__logo-container
 ya.ru,yandex.*##.lc-logo-block__logo-container
-market.yandex.ru##noindex:has(>svg)
+market.yandex.*##noindex:has(>svg)
 ||yastatic.net/s3/frontend/yandex-lego/serp-header/
 
 ! $third-party will not work, it loads in frame
@@ -414,26 +414,26 @@ ya.ru,yandex.*##[class^=PageAside__stickyContainer]:style(position:static !impor
 ya.ru,yandex.*##[class^=PostPhoneCallerBlockArenda]
 ya.ru,yandex.*##.UserSurveys
 
-realty.yandex.ru##.GalleryGuadeloupe:has-text(Яндекс.Директ)
-realty.yandex.ru###offer-gallery-aside-ad__rtb
-realty.yandex.ru##.b-article_realty-not-draft__footer
+realty.yandex.*##.GalleryGuadeloupe:has-text(Яндекс.Директ)
+realty.yandex.*###offer-gallery-aside-ad__rtb
+realty.yandex.*##.b-article_realty-not-draft__footer
 
 ||yandex.ru/api/static/sw.js
 
-uslugi.yandex.ru##.SerpStickyPanel
-uslugi.yandex.ru##.PortalHeader:style(position:static !important)
-uslugi.yandex.ru##.WorkerStickyHeader
-uslugi.yandex.ru##.Footer-Badges
+uslugi.yandex.*##.SerpStickyPanel
+uslugi.yandex.*##.PortalHeader:style(position:static !important)
+uslugi.yandex.*##.WorkerStickyHeader
+uslugi.yandex.*##.Footer-Badges
 
 ! "updater"
 ##.ya-browser-updater
 ##.ya-browser-updater__stripe
-!yandex.ru##div:has-text(Скачайте) - it seems it is not very good filter?
-yandex.ru##[href^="https://browser.yandex.ru"]
+!yandex.*##div:has-text(Скачайте) - it seems it is not very good filter?
+yandex.*##[href^="https://browser.yandex.ru"]
 ||yandex.net/browser-updater/
 /ya_browser_updater.js
 
-yandex.ru##[class*=installAppButtonTooltip]
+yandex.*##[class*=installAppButtonTooltip]
 
 yandex.*##.desk-notif-card_plus-wallet_yes
 
@@ -576,28 +576,28 @@ zen.yandex.*##.article-subscribe-banner
 ##.ya-share2-static__button
 
 ! from RU AdList
-yandex.ru##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
+yandex.*##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 ! from RU AdList, earlier
-!yandex.ru##+js(cookie-remover, /^blcrm|^bltsr|^discussion$/)
+!yandex.*##+js(cookie-remover, /^blcrm|^bltsr|^discussion$/)
 ! from Ru Adlist. Was. Now it breaks some functional, see #82
-!yandex.ru##+js(set-constant.js, Math.random, trueFunc)
+!yandex.*##+js(set-constant.js, Math.random, trueFunc)
 
 ! Adguard rule, 2024-03, just for reference
 !yandex.*##:matches-path(/maps).toponym-card-view__overview > div.toponym-card-view__section:has(> div.banner-placeholder-view)
 
 ! from Ru Adlist
-yandex.ru##.b-page:style(padding-top: 0 !important)
+yandex.*##.b-page:style(padding-top: 0 !important)
 
 ! from AdGuard
-yandex.ru##.direct_type_search
+yandex.*##.direct_type_search
 
 ! from AdGuard
-yandex.ru##.incut > div.direct
+yandex.*##.incut > div.direct
 
 ! from Ru Adlist
-yandex.ru##.serp-header:style(margin-top: 0 !important)
+yandex.*##.serp-header:style(margin-top: 0 !important)
 ! from AdGuard
-yandex.ru##.serp-item div.direct-snippet
+yandex.*##.serp-item div.direct-snippet
 
 ya.ru,yandex.*##.init__age
 
@@ -605,7 +605,7 @@ ya.ru,yandex.*##.init__age
 ||yandex.net/get-direct$domain=~e.mail.ru
 
 ! from AdGuard and Ru AdList
-yandex.ru##div[id^="BlogPost"][data-state*="/promo/popup/"]
+yandex.*##div[id^="BlogPost"][data-state*="/promo/popup/"]
 
 ||yandex.*/clck/  # beacons and images  #previous: ||yandex.*/clck/counter
     ! ||yandex.ru/clck/  # is in EasyPrivacy
@@ -626,7 +626,7 @@ yandex.ru##div[id^="BlogPost"][data-state*="/promo/popup/"]
 ||yastatic.net/pcode-dynamic/
 ||yastatic.net/pcode-native/loaders/
 
-passport.yandex.ru##.passp-social-block
+passport.yandex.*##.passp-social-block
 
 yandex.ru/monitoring
 ||yandex.*/monitoring
@@ -635,11 +635,11 @@ yandex.ru/monitoring
     
 
 ! https://pikabu.ru/story/kak_navsegda_pochti_ubrat_reklamu_v_yandekspochte_7379776?cid=174758068
-mail.yandex.ru##.ns-view-rcnxnpi+div
-mail.yandex.ru##.ns-view-infoline-box+div
+mail.yandex.*##.ns-view-rcnxnpi+div
+mail.yandex.*##.ns-view-infoline-box+div
 ! https://pikabu.ru/story/kak_ubrat_reklamu_v_yandekspochte_7564444
-!mail.yandex.ru##.ns-view-id-*:contains(Реклама) - doesn't work
-mail.yandex.ru##[class^=ns-view-id-]:contains(Реклама)
+!mail.yandex.*##.ns-view-id-*:contains(Реклама) - doesn't work
+mail.yandex.*##[class^=ns-view-id-]:contains(Реклама)
 
 ||yandex.ru/services/inception
 
@@ -661,10 +661,10 @@ zen.yandex.*##.hint-eula
 
 ||captcha-backgrounds.s3.yandex.net/static/default-background.jpg
 
-yandex.ru##.BlogPost
-yandex.ru##.b-page_scroll-disabled_yes:style(overflow-y:auto !important)
+yandex.*##.BlogPost
+yandex.*##.b-page_scroll-disabled_yes:style(overflow-y:auto !important)
 
-local.yandex.ru##.header__container:style(position:static !important)
+local.yandex.*##.header__container:style(position:static !important)
 
 ! all this block from Ru AdList
 ! for example, it works on kinopoisk.ru
@@ -699,61 +699,61 @@ yandex.*,ya.ru##.alice-fab
 yandex.*,ya.ru##.alice-fab__promo
 
 ! is in Ru AdList
-zen.yandex.ru##.feed__row > .feed__item-wrap div::after:style(background: transparent !important)
+zen.yandex.*##.feed__row > .feed__item-wrap div::after:style(background: transparent !important)
 ||zen.yandex.ru/media/stub-sw.js
 
 ! is in Ru AdList
-yandex.ru##.floating-links
+yandex.*##.floating-links
 
 ! попытка решить "в лоб" яндекс.директ. Пусть будет, для истории. Правильный метод у коллег из Ru AdList
-!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-2kyfm7669.png/orig")))
-!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-gp41w8605.png/orig")))
-!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-fj9532421.png/orig")))
-!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-yzyo31629.png/orig")))
-!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-qg40o8010.png/orig")))
-!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15285/serpt-17g445151.png/orig")))
-!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39011/serpt-ovxz39526.png/orig")))
-!yandex.ru##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39681/serpt-04dny3208.png/orig")))
-!yandex.ru##li.serp-item:has([class*=label_type_eksrj])
-!yandex.ru##li.serp-item:has([class*=label_type_ltryi])
-!yandex.ru##li.serp-item:has([class*=label_type_aqftb])
-!yandex.ru##li.serp-item:has([class*=label_type_sjker])
-!yandex.ru##li.serp-item:has([class*=label_type_qwwsk])
-!yandex.ru##li.serp-item:has([class*=label_type_ktpeo])
-!yandex.ru##li.serp-item:has([class*=label_type_fxwkv])
-!yandex.ru##li.serp-item:has([class*=label_type_vhfet])
-!yandex.ru##li.serp-item:has([class*=label_type_qeetm])
-!yandex.ru##li.serp-item:has([class*=label_type_whmqp])
-!yandex.ru##li.serp-item:has([class*=label_type_nvwao])
-!yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
-!yandex.ru##li.serp-item:has([class*=label_type_atipl])
-!yandex.ru##li.serp-item:has([class*=label_type_imuti])
-!yandex.ru##li.serp-item:has([class*=label_type_eliyn])
-!yandex.ru##li.serp-item:has([class*=label_type_vnvog])
-!yandex.ru##li.serp-item:has([class*=label_type_wuss])
-!yandex.ru##li.serp-item:has([class*=label_type_jtocp])
-!yandex.ru##li.serp-item:has([class*=label_type_nyhzo])
-!yandex.ru##li.serp-item:has([class*=label_type_aroxf])
-!yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
-!yandex.ru##li.serp-item:has([class*=label_type_hyaxq])
+!yandex.*##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-2kyfm7669.png/orig")))
+!yandex.*##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-gp41w8605.png/orig")))
+!yandex.*##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15207/serpt-fj9532421.png/orig")))
+!yandex.*##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-yzyo31629.png/orig")))
+!yandex.*##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15230/serpt-qg40o8010.png/orig")))
+!yandex.*##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/15285/serpt-17g445151.png/orig")))
+!yandex.*##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39011/serpt-ovxz39526.png/orig")))
+!yandex.*##li.serp-item:has([class*=label_type_]:matches-css(background-image:url("https://avatars.mds.yandex.net/get-serp/39681/serpt-04dny3208.png/orig")))
+!yandex.*##li.serp-item:has([class*=label_type_eksrj])
+!yandex.*##li.serp-item:has([class*=label_type_ltryi])
+!yandex.*##li.serp-item:has([class*=label_type_aqftb])
+!yandex.*##li.serp-item:has([class*=label_type_sjker])
+!yandex.*##li.serp-item:has([class*=label_type_qwwsk])
+!yandex.*##li.serp-item:has([class*=label_type_ktpeo])
+!yandex.*##li.serp-item:has([class*=label_type_fxwkv])
+!yandex.*##li.serp-item:has([class*=label_type_vhfet])
+!yandex.*##li.serp-item:has([class*=label_type_qeetm])
+!yandex.*##li.serp-item:has([class*=label_type_whmqp])
+!yandex.*##li.serp-item:has([class*=label_type_nvwao])
+!yandex.*##li.serp-item:has([class*=label_type_hyaxq])
+!yandex.*##li.serp-item:has([class*=label_type_atipl])
+!yandex.*##li.serp-item:has([class*=label_type_imuti])
+!yandex.*##li.serp-item:has([class*=label_type_eliyn])
+!yandex.*##li.serp-item:has([class*=label_type_vnvog])
+!yandex.*##li.serp-item:has([class*=label_type_wuss])
+!yandex.*##li.serp-item:has([class*=label_type_jtocp])
+!yandex.*##li.serp-item:has([class*=label_type_nyhzo])
+!yandex.*##li.serp-item:has([class*=label_type_aroxf])
+!yandex.*##li.serp-item:has([class*=label_type_hyaxq])
+!yandex.*##li.serp-item:has([class*=label_type_hyaxq])
 
 
 ||yandex.ru/bell/api/v1/get-ticker
 
 !||avatars.mds.yandex.net/get-zen_doc/$image - don't. It is not only avatars, it is main pictures as well
 
-yandex.ru##.card-banner-view
+yandex.*##.card-banner-view
 
-zen.yandex.ru##.article-render__block_embed
+zen.yandex.*##.article-render__block_embed
 
-zen.yandex.ru##.article-header-mobile__channel-header-wrapper:style(position:static !important)
-zen.yandex.ru##.article-header-mobile__sticky-wrapper:style(position:static !important)
+zen.yandex.*##.article-header-mobile__channel-header-wrapper:style(position:static !important)
+zen.yandex.*##.article-header-mobile__sticky-wrapper:style(position:static !important)
 
 cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js  # from AdGuard Spyware filter
 ||jsdelivr.net/*/watch.js  # slightly more generic
 
 ! is in Adguard
-yandex.ru##.neo-advert
+yandex.*##.neo-advert
 ! is in Adguard
 yandex.*##.news-story__share
 yandex.*##.section-header__share-icon
@@ -764,7 +764,7 @@ yandex.*##.news-app > div.news-navigation-menu__wrapper ~ div[class][data-log-id
 ya.ru##.services-suggest
 
 ! Ru AdList rule. Works on 2021-03
-yandex.ru##div[class*=" news-"][class$="_mode_daas"]
+yandex.*##div[class*=" news-"][class$="_mode_daas"]
 ||yastatic.net/daas/  # ad scripts  # is in Ru Ad List
 ||yandex.net/get-ynews-logo/
 ! подсовывает "fake-яндекс-новости" с цензурированной подборкой
@@ -800,7 +800,7 @@ afisha.yandex.*##[class^=AfishaAppWrapper]
 ||kp.yandex.net/images/bnnr/brand/  # from Ru AdList
 ||kp.yandex.net/js/brand  # from Ru AdList
 
-yandex.ru##.services-new__promo-bubble
+yandex.*##.services-new__promo-bubble
 
 ! погода  https://habr.com/ru/company/gms/blog/566030/#comment_23226220
 yandex.*##.b-page__container :matches-css(width: 0px)
@@ -808,17 +808,17 @@ yandex.*##.b-page__container .content__bottom + div
 yandex.*##.b-page__container .content__bottom + div + div
 yandex.*##.map-left-pane__link + div
 
-rasp.yandex.ru##.SearchPageSidebar
+rasp.yandex.*##.SearchPageSidebar
 
 ! maybe random
-travel.yandex.ru##.SkyAw
+travel.yandex.*##.SkyAw
 
 ! banners on home
 ||yastatic.net/www/$image
 ||yastatic.net/s3/home-static/$image
 
 ! banners in news
-!yandex.ru##[class*=__column] - don't, hides zen posts
+!yandex.*##[class*=__column] - don't, hides zen posts
 yandex.*##[class*=_type_native]
 yandex.*##[class*=-banger]
 yandex.*##.button_primary:has-text(в избранное)
@@ -868,17 +868,17 @@ music.yandex.ru$3p  # even non-yandex, even scripts. Let's block it.
 ! is in Adguard
 yandex.*##.search-lavka-view
 
-yandex.ru##.mg-sticky:style(position:static !important)
-yandex.ru##.mg-sticky__inner:style(position:static !important)
+yandex.*##.mg-sticky:style(position:static !important)
+yandex.*##.mg-sticky__inner:style(position:static !important)
 
 ! Ru Ad List rule
-disk.yandex.ru##div[class^="direct"]:not([class^="directory-content"])
+disk.yandex.*##div[class^="direct"]:not([class^="directory-content"])
 
 # from Ru AdList
 yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno .serp-adv__counter)
 
-yandex.ru##.SerpFooter-Carriage
-yandex.ru##+js(rc,SerpFooter_ny)
+yandex.*##.SerpFooter-Carriage
+yandex.*##+js(rc,SerpFooter_ny)
 
 yandex.*##.header-turbo
 ||avatars.mds.yandex.net/get-turbo/$image
