@@ -68,6 +68,12 @@ ozon.ru##.white-bg:style(position:static !important)
 ozon.ru##section[data-widget="searchHistory"]
 ozon.ru##[data-widget="searchHistory"] ~ [data-widget="skuGrid"]
 ozon.ru###stickyHeader:style(padding:initial !important; margin:initial !important; height:auto !important)
+!ozon.ru###stickyHeader div:style(position:static !important) - don't, the top breaks on click on search form
+!ozon.ru##div::before - don't, photos disappear in search  results
+!ozon.ru##.search-bar-wrapper div:style(padding-top:0px !important) - don't, search form disappears on click
+ozon.ru##div[data-widget="row"]:has-text(/^$/)
+ozon.ru##div[data-widget="container"]:style(margin-top:0px !important)
+ozon.ru##div[data-widget="stickyContainer"]:style(top:0px !important; bottom:0px !important)
     ! popups
 ||ozone.ru/_nuxt/marketing-all-adv_banner.  # from Ru AdList
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
@@ -240,6 +246,10 @@ ozon.ru##.type-brand.suggestions-item
 ! при поиске автозапчастей навязчиво вылезает "гараж" - убираем его, при необходимости оно есть в меню
 ||ozone.ru/graphics/automoto/garage_entry_point/image_add_car.webp$image
 ozon.ru##div[data-widget=webGarageEntryPoint] > div:style(margin-top:0px !important; margin-bottom:0px !important; padding-top:0px !important; padding-bottom:0px !important)
+! promo after order
+ozon.ru##[data-widget=orderDoneDisclaimer]
+! sidebar
+ozon.ru##div[data-custom-block^="pdp-faq"]
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
