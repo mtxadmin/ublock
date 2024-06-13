@@ -894,6 +894,119 @@ yandex.*##+js(rc,SerpFooter_ny)
 yandex.*##.header-turbo
 ||avatars.mds.yandex.net/get-turbo/$image
 
+||kinopoisk.ru/install?
+||avatars.mds.yandex.net/get-ott/$image
+||avatars.mds.yandex.net/get-bunker/$image
+! strange filters from RU Adblock. Disabled again
+@@||www.kinopoisk.ru^$generichide,badfilter
+@@||mc.yandex.ru^$script,domain=www.kinopoisk.ru,badfilter
+    ! banners and promos
+kinopoisk.ru##[class^=styles_plusDesktopBrandingButton]
+kinopoisk.ru##[class*=ticketsButton]
+kinopoisk.ru##section:has(h3:has-text(Билеты в кино))
+kinopoisk.ru##.nameplate__button_type_tickets
+kinopoisk.ru##.nameplate__icon-wrapper
+kinopoisk.ru##.nameplate__item_type_tickets
+kinopoisk.ru##[class*=watchOnlineButton]
+kinopoisk.ru##.js-ott-widget__button_orange.feature_online_button_film.movie-online-button.js-ott-widget__button
+kinopoisk.ru##.watch-online-button-description
+kinopoisk.ru##a.kinopoisk-header-featured-menu__item.kinopoisk-header-featured-menu-item
+kinopoisk.ru##.kinopoisk-header-featured-menu
+kinopoisk.ru###partial_component__watch-online-button
+kinopoisk.ru##[class^="carousel__item"]:has(.promo-badge)
+kinopoisk.ru##a[href*="//hd.kinopoisk.ru"]
+||kinopoisk.ru/main-page/api/hd/
+! is in Adguard
+kinopoisk.ru##.underheader-superbanner-wrapper
+! also from Ru AdList
+kinopoisk.ru##.underheader-superbanner-wrapper:style(min-height: 0 !important)
+! from Ru AdList
+kinopoisk.ru##+js(abort-on-property-read, Object.prototype.AdfoxEvents)
+! is in Ru AdList
+kinopoisk.ru##div[id*="_superbanner_"]
+! Еще какой-то анимированный баннер посередине
+kinopoisk.ru##[id*="_third_banner"]
+! from Ru AdList and Fanboy's
+kinopoisk.ru##div[class^="promo"][style^="bottom:"]
+kinopoisk.ru##.hd-nameplate
+! is in AdGuard
+kinopoisk.ru##div[id*="direct_R-A-"]
+! promos
+kinopoisk.ru##em.stk-reset
+kinopoisk.ru##[class*=style_buttonPlus]
+kinopoisk.ru##[class^=styles_blockClassName]:has(#hd-onboarding-block)
+    ! header
+kinopoisk.ru##div[class*="header"][class*="_body"]:style(position:static !important)
+kinopoisk.ru##[class*=styles_header]:style(position:static !important)
+kinopoisk.ru##.header-fresh-partial-component__body:style(position:static !important)
+kinopoisk.ru###kinopoisk-header-sticky-container:style(position:static !important)
+! from Ru AdList
+kinopoisk.ru###header-info-bg:style(background-color: transparent !important; background-image: none !important)
+kinopoisk.ru##li.header-fresh-partial-component__navigation-item
+kinopoisk.ru##.kinopoisk-header-logo__img
+kinopoisk.ru##div:matches-css(position:fixed):style(position:static ! important)
+kinopoisk.ru##.sticky__inner_fixed:style(position:static !important)
+kinopoisk.ru##.sticky__inner_header-offset:style(position:static !important)
+kinopoisk.ru##.sticky__inner_sticky_top:style(position:static !important)
+kinopoisk.ru##.sticky__inner:style(position:static !important)
+kinopoisk.ru##.app__header:style(position:static !important)
+    ! footer
+kinopoisk.ru##.footer-partial-component__content-apps
+kinopoisk.ru##.footer-partial-component__bottom-info-age
+    ! sidebar
+kinopoisk.ru##.media-news__sidebar-bottom
+    ! up button
+kinopoisk.ru##.app__elevator
+kinopoisk.ru##.desktop-layout-with-sidebar__elevator
+kinopoisk.ru##button[aria-label="В начало страницы"]
+    ! trailers and teasers
+kinopoisk.ru##.new-trailers
+! is in Adguard
+kinopoisk.ru##.rightTeaser
+kinopoisk.ru##.trailer-promo
+kinopoisk.ru##.trailer-promo-block
+kinopoisk.ru##.trailer-promo__content
+kinopoisk.ru##.trailer-promo__gradient
+! from Ru AdList and Fanboy's
+kinopoisk.ru##div[data-type="teaserspec"]
+||kinopoisk.ru/*/discovery/trailer/  # kinopoisk.ru/<id>/<id>/<id>/discovery/trailer/  # looks like it's a counter
+@@||www.kinopoisk.ru^**/discovery/*&embedid=$subdocument,domain=www.kinopoisk.ru,badfilter
+    ! other
+||kinopoisk.ru/api/navigation-history/
+kinopoisk.ru##[class^=styles_badgeWithBigTitle]
+kinopoisk.ru##[class^=styles_buttonsContainer]
+kinopoisk.ru##[class^=styles_restriction]
+kinopoisk.ru##[class^=styles_share]
+kinopoisk.ru##[class^=styles_nameplate]
+kinopoisk.ru##.block_cashup
+!kinopoisk.ru##.adblock-detector-partial-component_visible_show
+!kinopoisk.ru##.adblock-detector-partial-component
+kinopoisk.ru##.mod
+kinopoisk.ru###forma.disabled.response
+kinopoisk.ru###last_film
+kinopoisk.ru###m05g:style(margin-bottom:0px !important)
+kinopoisk.ru##.addTextTo
+kinopoisk.ru##.notifications
+kinopoisk.ru##.preview-card-container
+! is in Fanboy's
+kinopoisk.ru###GOWrapper
+! is in Ru AdList
+kinopoisk.ru##html:not(#id):style(background-color: #e6e6e6 !important)
+! from Ru AdList
+kinopoisk.ru##.shadow.shadow-restyle:style(box-shadow: 0 -8px 15px #333333 !important)
+! from Ru AdList
+kinopoisk.ru##.page-content > #header-info-bg + div[id]:not([class]):style(margin-bottom: 40px !important)
+! new design?
+kinopoisk.ru##[class^=styles_branding]
+kinopoisk.ru##[class*=styles_store]
+kinopoisk.ru##.social-section
+kinopoisk.ru##.media-news__side
+kinopoisk.ru###footer-share-buttons
+kinopoisk.ru##.media-news__promo
+kinopoisk.ru##[class*=styles_geotag]
+! почему-то постеры иногда не показываются. 2024-06
+kinopoisk.ru##img::before
+
 turbopages.org##.turbo-image
 turbopages.org##.button_width_max.button_primary.button_type_link.button
 turbopages.org##.ext-embed
