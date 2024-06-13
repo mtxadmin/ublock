@@ -440,46 +440,47 @@ yandex.*##[class*=installAppButtonTooltip]
 
 yandex.*##.desk-notif-card_plus-wallet_yes
 
-zen.yandex.*##.zen-ui-header-container__wrapper:style(position:absolute !important)
-zen.yandex.*##.article-right-block__stick-wrapper:has-text(Понравилось?)
-zen.yandex.*##.article-render__block_quote:has-text(/подписаться на канал|палец вверх/)
+dzen.ru,zen.yandex.*##.zen-ui-header-container__wrapper:style(position:absolute !important)
+dzen.ru,zen.yandex.*##.article-right-block__stick-wrapper:has-text(Понравилось?)
+dzen.ru,zen.yandex.*##.article-render__block_quote:has-text(/подписаться на канал|палец вверх/)
     ! logo
-zen.yandex.*##.ui-lib-header2__logo
-zen.yandex.*##.ui-lib-logo
+dzen.ru,zen.yandex.*##.ui-lib-header2__logo
+dzen.ru,zen.yandex.*##.ui-lib-logo
     ! top
-zen.yandex.*##.ui-lib-header2:style(position:static !important)
-zen.yandex.*##.ui-lib-header-container2:style(position:static !important)
-zen.yandex.*##.ui-lib-header-container2__wrapper:style(position:static !important)
-zen.yandex.*##.zen-header:style(position:static !important)
+dzen.ru,zen.yandex.*##.ui-lib-header2:style(position:static !important)
+dzen.ru,zen.yandex.*##.ui-lib-header-container2:style(position:static !important)
+dzen.ru,zen.yandex.*##.ui-lib-header-container2__wrapper:style(position:static !important)
+dzen.ru,zen.yandex.*##.zen-header:style(position:static !important)
     ! right
-zen.yandex.*##.sticky-container:style(position:static !important)
-zen.yandex.*##.article-right-suggested-publications-wrapper__sticky:style(top:0px !important)
-zen.yandex.*##.article-right-suggested-publications-wrapper:style(padding-top:0px !important)
+dzen.ru,zen.yandex.*##.sticky-container:style(position:static !important)
+dzen.ru,zen.yandex.*##.article-right-suggested-publications-wrapper__sticky:style(top:0px !important)
+dzen.ru,zen.yandex.*##.article-right-suggested-publications-wrapper:style(padding-top:0px !important)
     ! popups
-zen.yandex.*##.article-feedback-observer
+dzen.ru,zen.yandex.*##.article-feedback-observer
 ||avatars.mds.yandex.net/get-zen-logos/$image
 ||avatars.mds.yandex.net/get-zen_pictures/$image
-zen.yandex.*##[src^="https://yastatic.net/naydex/zen-yandex-ru/"]
-zen.yandex.*##div:has-text(В приложении удобнее):has-text("Яндекс.Дзен на главном экране")
+dzen.ru,zen.yandex.*##[src^="https://yastatic.net/naydex/zen-yandex-ru/"]
+dzen.ru,zen.yandex.*##div:has-text(В приложении удобнее):has-text("Яндекс.Дзен на главном экране")
     ! smiles
-zen.yandex.*##.zen-ui-emoji-bar__icon
-zen.yandex.*##.comment-editor-emojis
+dzen.ru,zen.yandex.*##.zen-ui-emoji-bar__icon
+dzen.ru,zen.yandex.*##.comment-editor-emojis
 ! removing some begging for subs
-zen.yandex.*##.article-render__block_quote:has-text(Подпишитесь)
-zen.yandex.*##b:has-text(Подпишитесь)
-zen.yandex.*##.ui-lib-likes-count
-zen.yandex.*##.article-render__block:has-text(/(С|с)тавьте лайк/)
+dzen.ru,zen.yandex.*##.article-render__block_quote:has-text(Подпишитесь)
+dzen.ru,zen.yandex.*##b:has-text(Подпишитесь)
+dzen.ru,zen.yandex.*##.ui-lib-likes-count
+dzen.ru,zen.yandex.*##.article-render__block:has-text(/(С|с)тавьте лайк/)
     ! banners and promos
-zen.yandex.*##.article__bottom-embed
-zen.yandex.*##[class$=__ad-content]
-zen.yandex.*##.browser-article
-zen.yandex.*##.article__s2s
-zen.yandex.*##.feed__item-wrap:has(.zen-ui-channel-info__subtitle-text:has-text(promo))
-zen.yandex.*##.feed__item-wrap:has(div[data-name=zen2-article-header-ad-text])
+dzen.ru,zen.yandex.*##.article__bottom-embed
+dzen.ru,zen.yandex.*##[class$=__ad-content]
+dzen.ru,zen.yandex.*##.browser-article
+dzen.ru,zen.yandex.*##.article__s2s
+dzen.ru,zen.yandex.*##.feed__item-wrap:has(.zen-ui-channel-info__subtitle-text:has-text(promo))
+dzen.ru,zen.yandex.*##.feed__item-wrap:has(div[data-name=zen2-article-header-ad-text])
     ! other
-zen.yandex.*##.article-stats-view-redesign__info-container
-zen.yandex.*##.article-stat__info
-zen.yandex.*##.article-stats-view__info-inner
+dzen.ru,zen.yandex.*##.article-stats-view-redesign__info-container
+dzen.ru,zen.yandex.*##.article-stat__info
+dzen.ru,zen.yandex.*##.article-stats-view__info-inner
+||dzen.ru/api/v4/stats/
 ||zen.yandex.ru/api/v4/stats/
 ||zen.yandex.by/api/v4/stats/
 ||zen.yandex.com/api/v4/stats/
@@ -493,6 +494,7 @@ zen.yandex.*##.article-stats-view__info-inner
 ||zen.yandex.ua/api/v4/stats/
 ||zen.yandex.uz/api/v4/stats/
 
+||dzen.ru/widget-loader$important
 ||zen.yandex.ru/widget-loader$important
 ||zen.yandex.by/widget-loader$important
 ||zen.yandex.com/widget-loader$important
@@ -506,6 +508,7 @@ zen.yandex.*##.article-stats-view__info-inner
 ||zen.yandex.ua/widget-loader$important
 ||zen.yandex.uz/widget-loader$important
 
+||dzen.ru/api/comments/log-comment-stats
 ||zen.yandex.ru/api/comments/log-comment-stats
 ||zen.yandex.by/api/comments/log-comment-stats
 ||zen.yandex.com/api/comments/log-comment-stats
@@ -519,6 +522,7 @@ zen.yandex.*##.article-stats-view__info-inner
 ||zen.yandex.ua/api/comments/log-comment-stats
 ||zen.yandex.uz/api/comments/log-comment-stats
 
+||dzen.ru/api/v3/launcher/stats
 ||zen.yandex.ru/api/v3/launcher/stats
 ||zen.yandex.by/api/v3/launcher/stats
 ||zen.yandex.com/api/v3/launcher/stats
@@ -532,6 +536,7 @@ zen.yandex.*##.article-stats-view__info-inner
 ||zen.yandex.ua/api/v3/launcher/stats
 ||zen.yandex.uz/api/v3/launcher/stats
 
+||dzen.ru/editor-api/v2/client-error-proxy
 ||zen.yandex.ru/editor-api/v2/client-error-proxy
 ||zen.yandex.by/editor-api/v2/client-error-proxy
 ||zen.yandex.com/editor-api/v2/client-error-proxy
@@ -545,14 +550,14 @@ zen.yandex.*##.article-stats-view__info-inner
 ||zen.yandex.ua/editor-api/v2/client-error-proxy
 ||zen.yandex.uz/editor-api/v2/client-error-proxy
 
-zen.yandex.*##.publication-sticky-header_is-sticky.publication-sticky-header_active.publication-sticky-header_page-type_article:style(position:static !important)
-zen.yandex.*##.article-subscribe-banner
+dzen.ru,zen.yandex.*##.publication-sticky-header_is-sticky.publication-sticky-header_active.publication-sticky-header_page-type_article:style(position:static !important)
+dzen.ru,zen.yandex.*##.article-subscribe-banner
 
 ! Hmm.. needs recheck
 !||yastatic.net/s3/zen-lib/publishers/
 
 ! from Ru AdList, modified
-~zen.yandex.ru,~zen.yandex.by,~zen.yandex.com,~zen.yandex.com.am,~zen.yandex.com.tr,~zen.yandex.fr,~zen.yandex.kz,~zen.yandex.lv,~zen.yandex.md,~zen.yandex.tm,~zen.yandex.ua,~zen.yandex.uz##a[href*="zen.yandex."] > img:not([src*="gstatic.com"]):not([onload*="google"]):not([jsaction])
+~dzen.ru,~zen.yandex.ru,~zen.yandex.by,~zen.yandex.com,~zen.yandex.com.am,~zen.yandex.com.tr,~zen.yandex.fr,~zen.yandex.kz,~zen.yandex.lv,~zen.yandex.md,~zen.yandex.tm,~zen.yandex.ua,~zen.yandex.uz##a[href*="zen.yandex."] > img:not([src*="gstatic.com"]):not([onload*="google"]):not([jsaction])
 
 ||static-mon.yandex.net/static/main.js$important  # from RU AdList, modified
 !||static-mon.yandex.net  # and don't block it whole
@@ -631,7 +636,7 @@ yandex.*##div[id^="BlogPost"][data-state*="/promo/popup/"]
 
 passport.yandex.*##.passp-social-block
 
-yandex.ru/monitoring
+||yandex.ru/monitoring
 ||yandex.*/monitoring
     !mail.yandex.ru/monitoring_liza.txt  # is in Adguard: ||mail.yandex.*/monitoring_liza.txt
     !yandex.ru/monitoring.txt
@@ -658,7 +663,7 @@ yandex.*##.zen-app
 yandex.*##.zen-page__wrapper
 yandex.*##.channels-list-sidebar__container-1r
 
-zen.yandex.*##.hint-eula
+dzen.ru,zen.yandex.*##.hint-eula
 
 ##.ya-widget-preloader
 
@@ -705,6 +710,7 @@ yandex.*,ya.ru##.AliceFabButton
 
 ! is in Ru AdList
 zen.yandex.*##.feed__row > .feed__item-wrap div::after:style(background: transparent !important)
+||dzen.ru/media/stub-sw.js
 ||zen.yandex.ru/media/stub-sw.js
 
 ! is in Ru AdList
@@ -749,10 +755,10 @@ yandex.*##.floating-links
 
 yandex.*##.card-banner-view
 
-zen.yandex.*##.article-render__block_embed
+dzen.ru,zen.yandex.*##.article-render__block_embed
 
-zen.yandex.*##.article-header-mobile__channel-header-wrapper:style(position:static !important)
-zen.yandex.*##.article-header-mobile__sticky-wrapper:style(position:static !important)
+dzen.ru,zen.yandex.*##.article-header-mobile__channel-header-wrapper:style(position:static !important)
+dzen.ru,zen.yandex.*##.article-header-mobile__sticky-wrapper:style(position:static !important)
 
 cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js  # from AdGuard Spyware filter
 ||jsdelivr.net/*/watch.js  # slightly more generic
