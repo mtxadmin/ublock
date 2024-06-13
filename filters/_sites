@@ -23198,6 +23198,8 @@ sestroretsk-arms.ru##.t886__wrapper
 sevenforums.com###sfheader
 sevenforums.com##.infeed1
 
+sewist.com##.switcher
+
 ||sexcams.pro/templates/stripchat-sexcams-heart.svg
 
 ||sex-mom-sex.com/images/
@@ -24280,6 +24282,9 @@ sport-marafon.ru##.blog-info
 sportmarket.su##.heightFix
 
 ||sportmaster.ru/web-api/v1/brands/
+! Uncaught ReferenceError: loadTimeData is not defined
+!sportmaster.ru##+js(set, loadTimeData, noopFunc) - doesn't work
+sportmaster.ru##+js(set, loadTimeData, noopFunc)
     ! header
 sportmaster.ru##.headerBar:style(position:static !important)
 sportmaster.ru##.sm-header__banner
@@ -24293,12 +24298,24 @@ sportmaster.ru##.sm-header-city
 sportmaster.ru##.yk_above_rotator
 sportmaster.ru##.sm-banner
 sportmaster.ru##.sm-header-main-banner
+! labels
+sportmaster.ru##.sm-product-plates
+sportmaster.ru##.sm-product-kits-link
+    ! do not collapse description
+sportmaster.ru##.sm-product-properties__table-wrp:style(display:initial !important)
+sportmaster.ru##tr:style(display:initial !important)
+sportmaster.ru##.sm-product-properties__toggle
+! recommendations don't work, so let's remove them
+! там еще отзывы не показываются, но это уж потом
+sportmaster.ru##.product__recommendations
     ! other
 sportmaster.ru##.custom-evil-content
 sportmaster.ru##.sp-review-recommended
 sportmaster.ru##sm-subscribe-new-ui
 sportmaster.ru##.section-item:has-text(/ИКОНЫ|PREMIUM|ПОПОЛАМ/)
 sportmaster.ru##.sm-footer-right-block__block:has-text(скидки первым)
+! sidebar
+sportmaster.ru##.product__info__wrapper:style(position:static !important)
 
 sportmegashop.com##.footer-icons
 
@@ -31022,4 +31039,9 @@ d3ward.github.io##.gt-link
 !techviewleo.com
 ! lazyload: span with background, data-ezbg
 ! techviewleo.com##+js(set-attr, span.ezlazyload, style, background-image:url([data-ezbg]))  - doesn't work, of course
+
+! from uBlock filters (modified)  # https://github.com/uBlockOrigin/uAssets/issues/7178
+!#if env_chromium
+||carsensor.net/usedcar/modules/clicklog_$xhr,1p,important,redirect=noop.txt
+!#endif
 
