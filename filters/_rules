@@ -3905,7 +3905,9 @@ _site/gotop.  # from Ru AdList
 /gdprDialog.  # from Fanboy's
 /nanoGDPR.  # from Fanboy's
 /util/gdpr/*  # from Fanboy's and EasyList
-##[class*="GDPR"]:not(html):not(body):not(article)
+~coursera.org##[class*="GDPR"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! coursera.org - .rc-withGDPR is a main div
 ##[id*="GDPR"]:not(html):not(body):not(article)
 ##[class*="Gdpr"]:not(html):not(body):not(article)
 ##[id*="Gdpr"]:not(html):not(body):not(article)
