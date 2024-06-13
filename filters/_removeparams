@@ -1010,7 +1010,7 @@ $removeparam=mc_eid  # Campaign tracking (MailChimp)  # https://www.learndigital
 $removeparam=media
     ! livejournal.com$removeparam=media
         ! from Ru AdList: ||livejournal.com/*.html?media|$removeparam=|media,domain=livejournal.com
-        ! ||livejournal.com/*.html?media|$removeparam=|media,domain=livejournal.com  
+        ! ||livejournal.com/*.html?media|$removeparam=|media,domain=livejournal.com
     ! ?media&ila_camaign=$document,removeparam=media  # from Ru AdList
 
 $removeparam=medium
@@ -1091,7 +1091,7 @@ $removeparam=ncid  # Campaign tracking (others)  # https://www.parse.ly/help/pos
 
 !$removeparam=network ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799  # https://support.google.com/google-ads/answer/6277564
     megaknihy.cz$removeparam=network  # from Adguard  # there are many MS ad params
-    
+
 $removeparam=noads  # tracking on parked domains
 
 $removeparam=nosto  # from DandelionSprout's URLShortener
@@ -1153,7 +1153,7 @@ $removeparam=/^oft_/i
 $removeparam=oly_anon_id  # is in Adguard and uBlock filters  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
 $removeparam=oly_enc_id,important  # is in Adguard and uBlock filters  # https://www.bleepingcomputer.com/news/security/new-firefox-privacy-feature-strips-urls-of-tracking-parameters/
     ! https://github.com/brave/brave-browser/issues/13644
-    ! 
+    !
     ! @@||greenbuildingadvisor.com^$removeparam=oly_enc_id  # from Adguard
 
 $removeparam=_openstat,important  # Campaign tracking (Yandex)  # https://yandex.com/support/direct/statistics/url-tags.html  # from NeatURL, Adguard, Ru AdList, uBlock filters
@@ -1315,7 +1315,7 @@ $removeparam=/pvid=/i  # /pvid$/ - see the header
     !
     ! taobao.com$removeparam=app_pvid  # from Adguard
     !
-    ! Found independently. Confirmed by months of testing. 
+    ! Found independently. Confirmed by months of testing.
     ! Update: don't, it breaks search filters in category :-(
     ! Update2. Ok, cleaner urls are more important. Removing again.
     ! Update3. It turns out Adguard has this rule too.
@@ -1447,7 +1447,7 @@ $removeparam=/^ref_/i
 $removeparam=/_ref_[^=]*=/i,$domain=~bing.com|~duckduckgo.com|~google.com|~ya.ru|~yahoo.com
     ! Exclusions:
     ! Search engines - do not remove queries. Strangely, the regexp catches the value of param, not name. Update: see the header
-    ! 
+    !
     ! $removeparam=ref_src,doc  # from DandelionSprout's URLShortener
     ! $removeparam=action_ref_map  # Action Map  # from NeatURL and Adguard
     ! $removeparam=wpa_ref_id  # from DandelionSprout's URLShortener
@@ -1479,7 +1479,7 @@ $removeparam=/referer[^=]*=/i
 ! /referrer/ - see the header
 $removeparam=/referrer[^=]*=/i$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion|~x.com
     ! Exclusions:
-    ! Search engines - do not remove queries. Strangely, the regexp catches the value of param, not name. 
+    ! Search engines - do not remove queries. Strangely, the regexp catches the value of param, not name.
     !   Update: the explanation found, see the header. Regexp modified, exclusions for search engines removed
     ! twitter - inner(!) error while scrolling (in https://twitter.com/i/api/graphql/ ). Also see #52
     ! possible todos (github is definitely not): $removeparam=referrer,domain=~f4map.com|~deviantart.com|~github.com|~discover.*|~vimeo.*  # from DandelionSprout's URLShortener
@@ -2311,7 +2311,7 @@ alza.de$removeparam=kampan  # from Adguard
 ! amazon
 ! Found independently, but cannot be applied in uBlock Origin as in NeatURL
 ! That is not URL parameter, but URL ending: $/ref@amazon.*
-! Note: in NeatURL amazon.com is amazon.* . It should work, but need to test 
+! Note: in NeatURL amazon.com is amazon.* . It should work, but need to test
 ! 2022: ref parameter (?ref=)is recommended to exclude by Adguard
 !
 @@||amazon.*/gp/slredirect/picassoRedirect.html^$removeparam  # from DandelionSprout's URLShortener  # don't know, but ok
@@ -3549,7 +3549,7 @@ realsrv.com$removeparam  # from Adguard: ||syndication.realsrv.com/splash.php?$r
 
 reddit.com$removeparam=correlation_id  # from Adguard
 reddit.com$removeparam=post_fullname  # from Adguard
-reddit.com$removeparam=rdt  # now is in uBlock filters 
+reddit.com$removeparam=rdt  # now is in uBlock filters
 reddit.com$removeparam=share_id  # from Adguard
 
 redgifs.com$removeparam=for  # from Adguard:||thumbs4.redgifs.com/*&for=$removeparam=for
@@ -3941,7 +3941,7 @@ $removeparam=do-waremd5,domain=market.yandex.*
 $removeparam=feed_exp,domain=dzen.*|ya.ru|yandex.*
 dzen.ru$removeparam=force_common_feed  # from Ru AdList
 $removeparam=from,domain=dzen.*  # in general rule up there there is an exclusion. Seems strange, todo
-    ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck! 
+    ! ||yandex.ru$removeparam=|from|rid|integration|place|secdata - recheck!
     ! Update: "rid" seems ad-related and now is in Ru AdList
     ! Update: I found such link, it was the set of parameters of zen. Good. And "feed_exp" too.
     ! "Rid" - see the header. "From" is on zen, but I saw glitches on yandex.
@@ -4301,4 +4301,6 @@ lenovo.com$removeparam=orgRef  # from DandelionSprout's URLShortener
 bolshayastrana.com$removeparam=sub_id  # ref
 
 viasun.ru$removeparam=hash  # ref
+
+trck.wargaming.net$removeparam  # from Adguard
 
