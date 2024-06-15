@@ -5460,6 +5460,7 @@ coursehero.com
     !coursehero.com##.blocker-wrapper
     !||coursehero.com/doc-asset/blur/*$image
 
+||coursera.org/*/eventing/  # is in uBlock filters
 coursera.org##.LearnerOutcomes__container
 coursera.org##.rc-UserTestimonialsSection
 
@@ -15532,10 +15533,15 @@ medimetriks.com##.flexslider
 
 ||medium.com^*/performance/  # is in EasyPrivacy
 ||lightstep.medium.systems^*/reports  # is in EasyPrivacy
+/_/batch|$xmlhttprequest,1p  # is in Fanboy's  # medium sites
     ! paywall
 medium.com###regwall-background-color
 medium.com##.c.s:has-text(Read the rest)
 medium.com##p:has-text(free member-only stor)
+medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,blog.themoviedb.org,towardsdatascience.com##div:has(>h2:has-text(Create an account to read))
+medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,blog.themoviedb.org,towardsdatascience.com##div:has-text(/^$/)
+    ! popups
+medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,blog.themoviedb.org,towardsdatascience.com##div:has(>div>div>div>div>[data-testid="close-button"])
     ! top
 medium.com##div:has-text(/^Published in$/)
     ! sticky columns. They can't be unsticked smoothly. Let's remove them then, they are too naggy
@@ -15544,14 +15550,14 @@ medium.com##div:has-text(/^Published in$/)
 !medium.com##+js(aopw, style)
 medium.com##main ~div>div>div
 ! medium.com and medium-based blogs:
-medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,towardsdatascience.com##nav
+medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,blog.themoviedb.org,towardsdatascience.com##nav
     ! floating button below
-!medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,towardsdatascience.com##*:matches-css(position:sticky):style(position:static !important)
-medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,towardsdatascience.com##*:watch-attr(position):matches-css(position:sticky):remove()
-!medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,towardsdatascience.com##*:matches-css(position:sticky):has-text(sign up for free)
-medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,towardsdatascience.com##div:has(>div>.pw-multi-vote-count)
+!medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,blog.themoviedb.org,towardsdatascience.com##*:matches-css(position:sticky):style(position:static !important)
+medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,blog.themoviedb.org,towardsdatascience.com##*:watch-attr(position):matches-css(position:sticky):remove()
+!medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,blog.themoviedb.org,towardsdatascience.com##*:matches-css(position:sticky):has-text(sign up for free)
+medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,blog.themoviedb.org,towardsdatascience.com##div:has(>div>.pw-multi-vote-count)
     ! background color
-medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,towardsdatascience.com##*:style(background-color:initial !important)
+medium.com,betterprogramming.pub,codeburst.io,faun.pub,jetruby.com,itnext.io,blog.themoviedb.org,towardsdatascience.com##*:style(background-color:initial !important)
     ! banners and promos
 medium.com##div>p:has-text(free member-only stories left this month)
 medium.com##div:has(>div>p:has-text(Learn on the go with our new app))
@@ -30847,8 +30853,6 @@ ru##.ErrorBox:has-text(AdBlock)
 
 ! is in Ru AdList, Fanboy's, EasyList
 ###sliding-popup.sliding-popup-bottom
-
-/_/batch|$xmlhttprequest,1p  # is in Fanboy's
 
 &idsite=*&send_image=$image  # is in EasyPrivacy
 
