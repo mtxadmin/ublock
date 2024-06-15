@@ -1602,6 +1602,8 @@ androidpolice.com##.header
 
 androidtvnews.com##.gb-container
 
+androproblem.ru##.spec
+
 anekdot.eu##.txt11
 
 ||anekdot.ru/favicon
@@ -2472,6 +2474,7 @@ autonews.ru##.social-widgets__container-block
 autonews.ru##.item-car-service
 autonews.ru##.js-header-popup
 autonews.ru##.header__rubric__popup
+autonews.ru##.bottom-menu
 
 auto-online.ru##.paralax
 auto-online.ru##.slider
@@ -4479,6 +4482,11 @@ carsalesbase.com##.logo-main-wrap-center
 ! invisible on-screen popup
 carscanner.info##.custom-header-media
 
+! from uBlock filters (modified)  # https://github.com/uBlockOrigin/uAssets/issues/7178
+!#if env_chromium
+||carsensor.net/usedcar/modules/clicklog_$xhr,1p,important,redirect=noop.txt
+!#endif
+
 ||carservic.ru^$csp=script-src 'self' *  # site blocks copypaste  # https://github.com/uBlockOrigin/uBlock-issues/issues/3181
 
 ||carsguru.net/*/footer_car.png
@@ -4572,6 +4580,8 @@ cdek.ru##.mobile-apps-wrap
 
 cdnvideo.ru##.top__new
 cdnvideo.ru##.clients
+
+cellularnews.com##.sticky-show.sticky-social-media
 
 celsis.ru##.phone-first
 celsis.ru##.call
@@ -5486,6 +5496,8 @@ cpl.com##.sticky__apply:style(position:static !important)
 ! top banner
 cpu-benchmark.org##.bn-hero
 
+cq.ru##.post-buttons
+
 ||crash-tests.net/images/crash.jpg
 crash-tests.net###tdTopBG
 crash-tests.net###addBookmarkContainer
@@ -6356,6 +6368,9 @@ dns-shop.ru,dns-shop.kz##.homepage__action-tinder
 dns-shop.ru,dns-shop.kz##.app-link
 dns-shop.ru,dns-shop.kz##.homepage__actual-offers
 dns-shop.ru,dns-shop.kz##.homepage__top-grid
+dns-shop.ru,dns-shop.kz##.app-link
+dns-shop.ru,dns-shop.kz##.homepage__action-tinder
+dns-shop.ru,dns-shop.kz##.homepage__actual-offers
     ! unfixed sidebar
 club.dns-shop.*##.sidebar:style(position:absolute !important)
     ! footer
@@ -6476,6 +6491,8 @@ dns-shop.ru,dns-shop.kz##.menu-contacts__apps
 dns-shop.ru##.info-block__logo
 dns-shop.ru##.viewed-products-slider
 dns-shop.ru##[class^=whats-next__info-logo]
+dns-shop.ru##.homepage__top-gid:style(height:auto !important)
+dns-shop.ru##.product-card-tabs__buy-bottom
 
 dobraprace.cz##.jobOffer__box-jobs-odber
 
@@ -7883,6 +7900,11 @@ everythingkodibuilds.com##.head-pz:style(position:static !important)
 everythingkodibuilds.com##.buttonsupandlh
 everythingkodibuilds.com###sidepar-wid
 everythingkodibuilds.com##.separator
+everythingkodibuilds.com##.discount-container
+everythingkodibuilds.com###backTop.toTopB
+everythingkodibuilds.com###lamiabutton
+everythingkodibuilds.com##.StikyHead:style(position:static !important)
+everythingkodibuilds.com##p:has-text(VPN)
 
 evgeniypopov.com###side-block-youtube
 evgeniypopov.com###sidebar
@@ -8184,6 +8206,8 @@ fandom.com##.fandom-community-header:style(color:initial !important)
 fandom.com##.fandom-community-header a:style(color:initial !important)
 fandom.com##.community-header-wrapper:style(height:auto !important)
 fandom.com##.fandom-community-header__background
+fandom.com##.sitenotice
+fandom.com##.sitenotice-wrapper
     ! global navigation bar is useless
 fandom.com###WikiaBar
 fandom.com###globalNavigation
@@ -10349,6 +10373,7 @@ habr.com##.tm-companies-rating
 habr.com##.tm-article-presenter__banner
 ! promos
 freelance.habr.com##.content-list__item_marked
+habr.com##.article-donation-block
     ! popups
 habr.com##.tm-notification
 habr.com##.Vue-Toastification__container
@@ -10456,6 +10481,8 @@ habr.com#?#section.tm-block_spacing-around:has(> div.tm-block__body > div.tm-pro
 habr.com##.tm-votes-lever__score-fallback
 
 ||hackr.io/blog/media/udacity-horizontal-banner.png
+
+handmade-garden.ru##.logo0
 
 hddmag.com##span:has-text(No products found.)
 
@@ -12273,6 +12300,8 @@ itc.ua##.hotlinetable-righttop
 ! from Fanboy's
 itc.ua##.verticalPageNav
 
+itch.io##.youtube_mobile_banner_widget
+
 it-community.in.ua###widget-posts-tiles
 it-community.in.ua###wt-slider
 
@@ -12437,6 +12466,8 @@ ixbt.com##.line__logo
 ixbt.com##.tm-logo
 ixbt.com##.tm-wrapper:style(position:static !important)
 ixbt.com###page-wrapper:style(padding-top:0px !important)
+ixbt.com###top_menu:style(position:static !important)
+ixbt.com###top_menu_wrapper:style(position:static !important)
     ! other
 ixbt.com##.mini.right.column
 ixbt.com##center > form > table > tbody
@@ -12454,6 +12485,8 @@ ixbt.com##div.panel-default.panel:has-text(Об авторе)
     ! ||forum.ixbt.com/pofig.gif
     ! ||forum.ixbt.com/puke.gif
     ! ||forum.ixbt.com/up.gif
+||forum.ixbt.com/*.svg
+    ! ||forum.ixbt.com/weep.svg$image
 ! hover dots on photos
 ixbt.com##._gallery::after:style(background:none !important)
 
@@ -13283,6 +13316,8 @@ kodi-guide.com###ez-toc-container
 
 koditips.com##.mtsnb
 koditips.com##.entry-content > .entry-content > div
+koditips.com##.entry-content > div:has-text(VPN)
+koditips.com##.sow-tabs
 
 kogdavyydet.ru###raspisanie2
 
@@ -15938,8 +15973,6 @@ microdev.it###site-header
 microfocus.com###logo_container
 microfocus.com##.navbar-brand-link
 
-||microsoft-watch.com/restore/middle.php
-
 mignews.com.ua$inline-script  # some script AdBlock blocker
 
 !too big toc
@@ -16567,6 +16600,9 @@ moyo.ua##.widget-opener
 moyo.ua##.js-show-call-back-modal.call-back-title
 moyo.ua##.header_phone--wrapper
 
+moyoauto.ru$inline-script  # site blocks copypaste
+||moyoauto.ru/sys.js
+
 ||moyzamok.ru/pages/bnr$image
 moyzamok.ru###brnds
 
@@ -16629,6 +16665,14 @@ mrsanteh.ru##.ymarker
 
 msbuy.ru##body > div:nth-of-type(1):style(position:static !important)
 msbuy.ru##.header
+
+msdmanuals.com##.modal-dialog
+msdmanuals.com##[class*=Logo_headerLogo_]
+msdmanuals.com##[class*=StickyFooter]:style(position:static !important)
+msdmanuals.com##.fade
+msdmanuals.com##[class*=TopicHead_switch]
+msdmanuals.com##[class*=StickyFooter]:style(position:static !important)
+msdmanuals.com##[class*=TopicFHead]
 
 msendpointmgr.com##.gridlove-logo
 msendpointmgr.com###gridlove-header-sticky.gridlove-header-sticky:style(position:static !important)
@@ -17179,6 +17223,10 @@ nationalreview.com###primary-menu
 natropinkah.ru###header
 natropinkah.ru##.shop_torg_sml_div
 natropinkah.ru##.recommend_text-big
+
+nauchniestati.ru##.headers
+nauchniestati.ru##.btn-success.btn
+nauchniestati.ru##.adv_block_context
 
 naumen.ru##.nau-tg-widget
 
@@ -18959,6 +19007,8 @@ paylocity.com##.branding-company-logo
 ||paypal.com/credit-presentment/log
 ||paypal.com/tagmanager/  # is in Adguard
 
+pazziongaming.com##.et_pb_button
+
     ! banners
 ||pb.wtf/t4zet/$image
 ||piratbit.org/t4zet/$image
@@ -20433,6 +20483,8 @@ provoda.me##.b-footer__button
 
 forum.proxmox.com###top > div:has-text(/^$/)
 
+proz.com##.upgrade-btn
+
 ||pro-zdorovie.com/pl/fileservice/video-hosting/statistic
 ! test
 @@||pro-zdorovie.com/*/modal.js
@@ -20467,6 +20519,8 @@ psbank.ru##.slider-wrapper
 psbank.ru##rtl-banner-slider
     ! top
 psbank.ru##.rui-tab-header-pagination-after-disabled
+
+psdinfo.pro##.QUICK_ACTION_BAR
 
 psychologies.ru##.header__wrapper:style(position:static !important)
 psychologies.ru##.app-header__wrapper:style(position:static !important)
@@ -20675,6 +20729,11 @@ rabbitsfun.com##.picture-arrows
 rabbitsfun.com##.new-gallery__overlay
 rabbitsfun.com##.buttonmore
 rabbitsfun.com##.footer-mob
+
+rabit.ru##.header__phone-name
+rabit.ru##.headerphone-link.headermobile-phone
+rabit.ru##.article__composition
+rabit.ru##.articleimportant--sales.articleimportant
 
 ||rabota.ru/*/promoted.json
 ||rabota.ru/static/images/rabota-pattern.svg
@@ -22140,6 +22199,7 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.org/big/2022/1012/da/91965ee0702f145981f7d4752a707cda.$image
 ||fastpic.org/big/2022/1013/2a/f7c2bb6ff2c9d7f3507464e1938c472a.$image
 ||fastpic.org/big/2022/1013/34/0d5001ce3f9c4d2e5ef49e81f2667f34.$image
+||fastpic.org/big/2022/1021/5c/b981f768ea044fe10e38be0547f5ae5c.$image
 ||fastpic.org/big/2022/1023/05/087548d90885d2df52ad66f38f5c1a05.$image
 ||fastpic.org/big/2022/1103/b6/9c2453a1deb9401dfb4d8364307c4db6.$image
 ||fastpic.org/big/2022/1108/83/3e55d7c3df0d9ef21dc20e5f2f5fd083.$image
@@ -22151,6 +22211,7 @@ pornolab.net##div.post-align:has-text(Релизера можно поддерж
 ||fastpic.org/big/2022/0608/18/9f109fdc7abbaf457e6a054ef6194318.$image
 ||fastpic.org/big/2023/0821/63/c8599f9282f947a47c4974a2ca42d663.$image
 ||fastpic.org/big/2023/0921/19/b807af04b7d39869489552cd2d34b519.$image
+||fastpic.org/big/2023/1005/b3/64827929bd526672418ce316f114c1b3.$image
 ||fastpic.ru/big/2009/1023/67/335f721dba8c4afaba20160aec267e67.$image
 ||fastpic.ru/big/2009/1216/5e/8a4271c44c907f6ff66984a1951b865e.$image
 ||fastpic.ru/big/2011/0916/dc/bfddc1cf22892bfdb7b64e16d28776dc.$image
@@ -23492,6 +23553,9 @@ sketchup.com##.d-header:style(position:static !important; margin-top:0px !import
 sketchup.com###main-outlet:style(padding-top:0px !important)
 sketchup.com###top-navbar
 
+skillbox.ru##.bg-modal-overlay
+skillbox.ru##.stk-grid__layout_reverse
+
 skillscouter.com##[class*="22ybar"]
 
 ||skillset.com/img/dashboard/icon_upgrade.png
@@ -23613,6 +23677,8 @@ smallseotools.com###FITS_con
 smallseotools.com###grammarbtn
     ! other
 
+smartadm.ru##b:has-text(репост)
+
 smartblogger.com##.sticky-element
 
 ! It is not scroller button, it is calc button. Making exception from Fanboy’s Annoyance List general rule (and this list too)
@@ -23631,6 +23697,7 @@ smarthome.news##.author__holder
 ||smarthomebeginner.com/*/editors-pick.png
 smarthomebeginner.com##.BestAzon_Amazon_Link
 smarthomebeginner.com##.widget_ls_content_block
+smarthomebeginner.com##blockquote:has-text(Join Us)
 
 smarthomebit.com##.about-wrapper
 
@@ -23661,6 +23728,8 @@ smart-planets.ru###masthead
 
 smartrecruiters.com##.summary
 smartrecruiters.com##.alert:has-text(browser)
+
+smarts-iptv.com##.ask-mobile
 
 smarttvbox.com.ua###footerLine
 
@@ -23996,6 +24065,7 @@ specodegda.ru##.here
 specodegda.ru##.association_siz
 ! removing order buttons from catalog list
 specodegda.ru##.catalogue__wrapper > .product__btn
+specodegda.ru##.catalogue__mobile:style(position:static !important)
 
 ||specodegdaopt.ru/*/specodegdalogo.gif
 ||specodegdaopt.ru/*/jumbotron.jpg
@@ -24734,6 +24804,7 @@ sub-cult.ru###g-breadcrumb
 ||subscribe.ru/stat/
 
 substack.com##.main-menu-content:style(position:static !important)
+substack.com##.mobile-footer-ufi
 ||substackcdn.com/image/*.gif
 
 sumka-kobura.ru###panel
@@ -25366,6 +25437,9 @@ techrepublic.com##p:has-text(Download this article as a PDF (free registration r
 ! inline related
 techrepublic.com##p > strong:has-text("/^SEE:/")
 
+techrocks.ru##.telegram_block
+techrocks.ru###staya_jobs_container.b-staya-widget-hor
+
 techsolveprac.com##.mh-widget
 
 techspot.com##.intro
@@ -25915,6 +25989,8 @@ thewindowsclub.com##a[href="https://www.thewindowsclub.com/pc-repair-tool"]
 thewindowsclub.com##.calloutList
 ! lazyload data-ezsrc
 thewindowsclub.com##+js(set-attr, img.ezlazyload, src, [data-ezsrc])
+! inline related
+thewindowsclub.com##p:has-text(/^Read:/)
 
 thewindowsplus.org##.site-header
 thewindowsplus.org##.sidebar
@@ -26142,6 +26218,7 @@ tinkoff.ru##div:matches-css(height:110px):has-text(/^$/)
 ||tinkoffjournal.ru/*/tinkoff-web-tracker.js
 ||tinkoff.ru/system/images/app-image
 tinkoff.ru##.app__wrapper
+journal.tinkoff.ru##[class^=_articleRef_]
 
 ||timeweb.ru/parking/$3p
 
@@ -27631,6 +27708,13 @@ v-banyu.ru##img:style(opacity:1 !important)
 vbr.ru##.footer-links-apps
 
 ||vc.ru/hit  # is in Adguard
+    ! popups
+vc.ru##.mobile-bar
+vc.ru##.mobile-bar-container
+vc.ru##.bar--top.bar
+vc.ru##.bar--bottom.bar
+vc.ru##.sidebar__tint
+vc.ru##.dstr-fl
     ! sticky elements
 vc.ru##.sticky.comments__navigation:style(position:static !important)
 vc.ru##.main_menu:style(position:static !important)
@@ -27639,6 +27723,8 @@ vc.ru##.layout__column--sticky:style(position:static !important)
 vc.ru##.layout__column--sticky.layout__column--right
 ! yes, absolute. 2023-04
 vc.ru##.layout__sticky:style(position:absolute !important)
+vc.ru##.content__floating
+vc.ru##[class^=comments_updates]
     ! flying comments
 vc.ru##.flying-photo:remove()
 ! yes, this one too. Icon is animated and changing its shape when new comments arrive
@@ -27658,6 +27744,7 @@ vc.ru##a[href*="utm_campai"]
 vc.ru##.icon--v_rouble
 ! gif avatars
 vc.ru##.subsite-video-avatar
+vc.ru##.comments__show-all-always
 
 vceguide.com##[src="https://vceguide.com/wp-content/uploads/2019/02/VCEplus-refund-money.gif"]
 vceguide.com###masthead
@@ -28294,6 +28381,9 @@ vpnranks.com##p:has-text(VPN)
 vpnranks.com##.expose-box
 ! other
 vpnranks.com##.author-summary
+vpnranks.com##.text-center.warning-snippit-ttl
+vpnranks.com##.warning-snippit-inr
+vpnranks.com##.sc-html
 
 vpnscanner.com##tr.nitro-offscreen
 vpnscanner.com##.niche_table
@@ -30277,6 +30367,8 @@ zdorovaya-eda.com##.custom_terms
 zdorovaya-eda.com###content-previews
 zdorovaya-eda.com##.block-mainsitesettings-mainsitesettings-read-more
 
+zdorovemira.ru###head_top_block
+
 zdorovieiuspex.ru##.header
 zdorovieiuspex.ru##noindex
 
@@ -30941,12 +31033,4 @@ d3ward.github.io##.gt-link
 !techviewleo.com
 ! lazyload: span with background, data-ezbg
 ! techviewleo.com##+js(set-attr, span.ezlazyload, style, background-image:url([data-ezbg]))  - doesn't work, of course
-
-! from uBlock filters (modified)  # https://github.com/uBlockOrigin/uAssets/issues/7178
-!#if env_chromium
-||carsensor.net/usedcar/modules/clicklog_$xhr,1p,important,redirect=noop.txt
-!#endif
-
-moyoauto.ru$inline-script  # site blocks copypaste
-||moyoauto.ru/sys.js
 
