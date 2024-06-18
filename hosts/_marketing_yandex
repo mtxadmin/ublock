@@ -24,32 +24,32 @@ adfox.net$important,all
 adfox.cz  # from ShadowWhisperer's Ads
 adfox.me  # from MobileAdTrackers
 adfox-external-l3-engine.stable.qloud-b.yandex.net
-/adfox$important,all
-    ! ||yastatic.net/pcode/adfox/*$important
 adfox.yandex.ru
-##[class*="adfox"]:not(html):not(body):not(article)
-~retail.ru##[id*="adfox"]:not(html):not(body):not(article)
-    ! Exclusions:
-    ! retail.ru - main div #main_div_adfox
-! from EasyList and Ru AdList
-##div[id^="adfox_"]
-! from AdGuard
-##div[id^="AdFox_banner_"]
-! from RU AdList, modified
-!##a[href*="//ads.adfox.ru/"]
-! задолбали. Чуть глубже:
-##a[href*="ads.adfox.ru/"]
+    /adfox$important,all
+        ! ||yastatic.net/pcode/adfox/*$important
+    ##[class*="adfox"]:not(html):not(body):not(article)
+    ~retail.ru##[id*="adfox"]:not(html):not(body):not(article)
+        ! Exclusions:
+        ! retail.ru - main div #main_div_adfox
+    ! from EasyList and Ru AdList
+    ##div[id^="adfox_"]
+    ! from AdGuard
+    ##div[id^="AdFox_banner_"]
+    ! from RU AdList, modified
+    !##a[href*="//ads.adfox.ru/"]
+    ! задолбали. Чуть глубже:
+    ##a[href*="ads.adfox.ru/"]
 
 ya-browser.ru
-! from Ru AdList
-##a[href*="://ya-browser.ru/r/"]
+    ! from Ru AdList
+    ##a[href*="://ya-browser.ru/r/"]
 
 advertising.yandex.ru$important,all
 adfstat.yandex.ru  # from Adguard
 
 ||an.yandex.  # from Adguard
 an.yandex.ru$important,all
-/cdn-cgi/pe/bag2?r[]=*an.yandex.ru  # from Ru AdList
+    /cdn-cgi/pe/bag2?r[]=*an.yandex.ru  # from Ru AdList
 
 
     ! metrics and trackers
@@ -108,7 +108,7 @@ external-promo-metrics.yandex.net  # from Adguard
 
 ! metrika yandex hosts mostly from https://hosts-file.net/ad_servers.txt
 ! disable any whitelists
-! Don't know, make these hosts $third-party or not. 
+! Don't know, make these hosts $third-party or not.
     ! metrica.yandex.*$important,all
 metrica.yandex.by$important,all
 metrica.yandex.com$important,all
@@ -136,18 +136,18 @@ web-metrica.yandex.kz$important,all
 web-metrica.yandex.net$important,all
 web-metrica.yandex.ru$important,all
 web-metrica.yandex.ua$important,all
-/metric.js
-/metrica.js$important,all
-/metrica/*  # is in EasyPrivacy: /metrica/sp.js
-/metrics.js$important,all,domain=~factorio.com
-    ! Exclusions:
-    ! factorio.com: js for download stats. Not yandex and not tracking
-/metrika/*$important,all
-/metrika.js$important,all
-/yametrika/*
-/yandex-metrica-watch/*
-! is in AdGuard
-##a[href^="https://metrika.yandex.ru/stat/"]
+    /metric.js
+    /metrica.js$important,all
+    /metrica/*  # is in EasyPrivacy: /metrica/sp.js
+    /metrics.js$important,all,domain=~factorio.com
+        ! Exclusions:
+        ! factorio.com: js for download stats. Not yandex and not tracking
+    /metrika/*$important,all
+    /metrika.js$important,all
+    /yametrika/*
+    /yandex-metrica-watch/*
+    ! is in AdGuard
+    ##a[href^="https://metrika.yandex.ru/stat/"]
 
 metrika-informer.com$important,all
 
@@ -159,11 +159,11 @@ jstracer.yandex.ru$important,all
 !strm.yandex.net - maybe too
 ! but:
 log.strm.yandex.ru
-||strm.yandex.ru/ping
-||strm.yandex.net/cmatch
-||strm.yandex.ru/perf
-! is in Adguard
-||strm.yandex.ru/log?
+    ||strm.yandex.ru/ping
+    ||strm.yandex.net/cmatch
+    ||strm.yandex.ru/perf
+    ! is in Adguard
+    ||strm.yandex.ru/log?
 
     ! banners
 
@@ -176,9 +176,9 @@ awaps.yandex.kz$important,all
 awaps.yandex.net$important,all
 awaps.yandex.ru$important,all
 awaps.yandex.ua$important,all
-/ya-awaps2/*  # from Ru AdList
-||yastatic.net/awaps-ad-sdk-js$important,all
-    ! ||yastatic.net/awaps-ad-sdk-js/
+    /ya-awaps2/*  # from Ru AdList
+    ||yastatic.net/awaps-ad-sdk-js$important,all
+        ! ||yastatic.net/awaps-ad-sdk-js/
 
 bs.yandex.ru$important,all
 bs-meta.yandex.ru  # from MVPS
@@ -190,8 +190,8 @@ csp.yandex.net  # no-csp-reports: * true
 direct.yandex.ru$important,all
 !+  api.direct.yandex.ru
 ! disable any whitelists. Third-party option doesn't work on search pages on yandex.ru, so block it completely
-! from Ru AdList
-##iframe[src*="directadvert"]
+    ! from Ru AdList
+    ##iframe[src*="directadvert"]
 
 ||kiks.yandex.  # from Adguard
 kiks.yandex.ru$important,all
@@ -233,15 +233,15 @@ browser.mobile.yandex.net
 mobile-browser.mobile.yandex.net
 mobile-browser.tst.mobile.yandex.net
 ya-distrib.ru
-! from Ru AdList, generalized
-##a[href*="ya-distrib.ru"]
+    ! from Ru AdList, generalized
+    ##a[href*="ya-distrib.ru"]
 
 
 ! "updater"
 browser-updater.yandex.net$important,all  # from Ru AdList
 updater.mobile.yandex.net
 updater.tst.mobile.yandex.net
-||yastatic.net/browser-updater/$important,all
+    ||yastatic.net/browser-updater/$important,all
 
 # don't block mobile.yandex.net entirely
 addappter.mobile.yandex.net
@@ -358,7 +358,7 @@ ttnet.yandex.com.tr  # from Dan Pollock's hosts file
 
 uxfeedback-cdn.s3.yandex.net
 
-webvisor.com  # ad scripts. Yandex?  # update: it seems, Yandex  # Yandex - Tracker  # is in Quidsup NoTrack-Blocklist 
+webvisor.com  # ad scripts. Yandex?  # update: it seems, Yandex  # Yandex - Tracker  # is in Quidsup NoTrack-Blocklist
 !+  appmetrica.webvisor.com
 !+  mobile.webvisor.com
 !+      startup.mobile.webvisor.com
