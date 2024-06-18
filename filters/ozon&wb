@@ -73,7 +73,6 @@ ozon.ru###stickyHeader:style(padding:initial !important; margin:initial !importa
 !ozon.ru##.search-bar-wrapper div:style(padding-top:0px !important) - don't, search form disappears on click
 ozon.ru##div[data-widget="row"]:has-text(/^$/)
 ozon.ru##div[data-widget="container"]:style(margin-top:0px !important)
-ozon.ru##div[data-widget="stickyContainer"]:style(top:0px !important; bottom:0px !important)
     ! popups
 ||ozone.ru/_nuxt/marketing-all-adv_banner.  # from Ru AdList
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
@@ -99,6 +98,8 @@ ozon.ru##div[data-widget="webFeedbackForm"]
 ozon.ru##[id^=state-webAddToFavorite]
 ozon.ru##ozpopover
 finance.ozon.ru###modal-container:has-text(Закажите)
+!finance.ozon.ru##.paranja -  don't block all popups
+finance.ozon.ru##.paranja:has-text(/Зв(е|ё)зды/i)
     ! banners and promos
 ||ozone.ru/assets/*-banner$script
 ||ozon.ru/graphics/img/  # from Ru AdList
@@ -167,6 +168,10 @@ ozon.ru##[data-widget="setOfPreviews"]
 !ozon.ru##div:has(> a[href^="/highlight/"])
 !ozon.ru##div:has(>a[href*=campaign])
 ! v2:
+ozon.ru##[data-widget="stickyContainer"]:style(top:0px !important; bottom:0px !important)
+! blocks in the order's page:
+ozon.ru##[data-widget="stickyContainer"]:style(position:static !important)
+! top ad, as far as I remember
 ozon.ru##[data-widget="stickyContainer"]:has-text(Открыть в приложении)
 ozon.ru##a[href^="/highlight/"]
 ozon.ru##a[href^="https://ozon.ru/highlight/"]
@@ -378,6 +383,8 @@ wildberries.ru##.j-recent-items > .recently-watched
 ||wbbasket.ru/*/customTags/banners.min.$redirect=noopjs
     !||wbbasket.ru/vol0/j/spa/customTags/banners.min.$redirect=noopjs
     ! top
+wildberries.ru##a:style(color:initial !important)
+wildberries.ru##span:style(color:initial !important)
 wildberries.ru##.header-bg:style(top:0px !important)
 ! проблема с поисковой формой. Если убрать класс, то хотя бы placeholder виден
 wildberries.ru##+js(remove-attr, class, .search-catalog__input)
