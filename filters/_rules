@@ -5029,7 +5029,10 @@ turboimagehost.com##.modal-footer
 /icon/*.gif
     ! ||lvrach.ru/lvrach/images/icon/16plus.gif
     ! ||xbmc.ru/forum/images/icons/icon1.gif
-/icons/*.gif
+/icons/*.gif$domain=~kinopoisk.ru
+    ! Exclusions:
+    ! kinopoisk.ru - interface icons. See #83
+    !
     ! ||4pna.com/images/icons/icon1.gif
     ! ||forum.fonarevka.ru/images/icons/*.gif
     ! ||forum.guns.ru/forums/icons/icon*.gif
