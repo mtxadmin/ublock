@@ -1655,7 +1655,9 @@ _rebid.js  # from EasyList
     ! airtable.com - main content
     ! kodi.wiki - don't remember, but definitely not marketing
     ! learn.microsoft.com - main section
-~surveymonkey.com##[class*="marketing"]:not(html):not(body):not(article)
+~splav.ru,~surveymonkey.com##[class*="marketing"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! splav.ru - main content (.marketing-text in reviews)
 ##[id*="marketing"]:not(html):not(body):not(article)
 ##[class*="motivation"]:not(html):not(body):not(article)
 ##[id*="motivation"]:not(html):not(body):not(article)
@@ -1855,6 +1857,7 @@ _rebid.js  # from EasyList
 ##.banners-zones
 ##.banners-zones-container
 ##.banner-text
+##.banner_top
 ##.banner__top
 ##.banner-top-content
 ##.banner-top-wrapper
