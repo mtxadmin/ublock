@@ -4,7 +4,6 @@
 !
 ! Yandex ad domains
 
-
 ! apps wanted api.passport.yandex.ru/suggested_accounts/ - see also graph.facebook.com
 api.passport.yandex.ru$third-party
 
@@ -51,7 +50,6 @@ adfstat.yandex.ru  # from Adguard
 an.yandex.ru$important,all
     /cdn-cgi/pe/bag2?r[]=*an.yandex.ru  # from Ru AdList
 
-
     ! metrics and trackers
 
 appmetrica.yandex.net$important,all
@@ -97,14 +95,12 @@ clck.yandex.com
 clck.yandex.com.tr
 clck.yandex.kz
 clck.yandex.ru
-clck.yandex.ua
+!clck.yandex.ua   # till 2022
 ||yandex.*/clck/  # from Ru AdList
 ||yandex.ru/click/  # from Ru AdList
 
 dr.yandex.net  # from ShadowWhisperer's Ads
 dr2.yandex.net  # from ShadowWhisperer's Ads
-
-external-promo-metrics.yandex.net  # from Adguard
 
 ! metrika yandex hosts mostly from https://hosts-file.net/ad_servers.txt
 ! disable any whitelists
@@ -113,29 +109,29 @@ external-promo-metrics.yandex.net  # from Adguard
 metrica.yandex.by$important,all
 metrica.yandex.com$important,all
 metrica.yandex.com.tr$important,all
-metrica.yandex.com.ua$important,all
+!metrica.yandex.com.ua$important,all  # till 2022
 metrica.yandex.kz$important,all
 metrica.yandex.net$important,all
 metrica.yandex.ru$important,all
-metrica.yandex.ua$important,all
+!metrica.yandex.ua$important,all  # till 2022
     metrika.yandex.$important,all  # is in Ru AdList
 metrika.yandex.by$important,all
 metrika.yandex.com$important,all
 metrika.yandex.com.tr$important,all
-metrika.yandex.com.ua$important,all
+!metrika.yandex.com.ua$important,all  # till 2022
 metrika.yandex.kz$important,all
 metrika.yandex.net$important,all
 metrika.yandex.ru$important,all
-metrika.yandex.ua$important,all
+!metrika.yandex.ua$important,all  # till 2022
     ! web-metrica.yandex.*$important,all
 web-metrica.yandex.by$important,all
 web-metrica.yandex.com$important,all
 web-metrica.yandex.com.tr$important,all
-web-metrica.yandex.com.ua$important,all
+!web-metrica.yandex.com.ua$important,all
 web-metrica.yandex.kz$important,all
 web-metrica.yandex.net$important,all
 web-metrica.yandex.ru$important,all
-web-metrica.yandex.ua$important,all
+!web-metrica.yandex.ua$important,all  # till 2022
     /metric.js
     /metrica.js$important,all
     /metrica/*  # is in EasyPrivacy: /metrica/sp.js
@@ -171,11 +167,11 @@ log.strm.yandex.ru
 awaps.yandex.by$important,all
 awaps.yandex.com$important,all
 awaps.yandex.com.tr$important,all
-awaps.yandex.com.ua$important,all
+!awaps.yandex.com.ua$important,all  # till 2022
 awaps.yandex.kz$important,all
 awaps.yandex.net$important,all
 awaps.yandex.ru$important,all
-awaps.yandex.ua$important,all
+!awaps.yandex.ua$important,all  # till 2022
     /ya-awaps2/*  # from Ru AdList
     ||yastatic.net/awaps-ad-sdk-js$important,all
         ! ||yastatic.net/awaps-ad-sdk-js/
@@ -235,7 +231,6 @@ mobile-browser.tst.mobile.yandex.net
 ya-distrib.ru
     ! from Ru AdList, generalized
     ##a[href*="ya-distrib.ru"]
-
 
 ! "updater"
 browser-updater.yandex.net$important,all  # from Ru AdList
@@ -337,7 +332,7 @@ plus.yandex.net  # app requests
 plus.yandex.ru
 
 sba.yandex.net
-sba.yandex.ru  # ad redirects
+sba.yandex.ru  # ad redirects  # again  # https://sba.yandex.ru/redirect?url=...
 
 offerwall.yandex.net  # from Adguard
 
