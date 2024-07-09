@@ -7,7 +7,7 @@
 
 !! domains
 
-4pdd.ru  # app requests to geoip.4pdd.ru and 504 root
+4pdd.ru  # app requests to geoip.4pdd.ru and 504 root  # now is in several blocklists
 
 4sync.com  # some app wants to go there. Not official, of course - 4sync doesn't have any. Very suspicious. And 4sync (paid cloud service) doesn't have free plan.
 
@@ -19,8 +19,8 @@ magicplayer-s.acestream.org
 magicplayer-api.torrentstream.org  # from Adguard
 magicplayer-s.torrentstream.org  # from Adguard
 
-s1.adguard.com  # from Adguard (sic!)
-dnscheck.adguard.com  # from Adguard (sic!)
+!s1.adguard.com  # from Adguard (sic!)
+!dnscheck.adguard.com  # from Adguard (sic!)
 
 # don't block entirely
 analytics-lab.agora.io
@@ -32,7 +32,7 @@ ap5.agora.io  # app request
 logservice.agora.io
 logservice-north-america.agora.io
 logservice-rtm.agora.io
-log-sig.agora.io
+!log-sig.agora.io
 report-america.agora.io
 report-edge.agora.io  # app request  # "Agora analytics"
 report-india.agora.io
@@ -51,15 +51,15 @@ webcollector-1.agora.io
 webcollector-1abr-cn.agora.io
 webcollector-2.agora.io
 webcollector-rtm.agora.io
-/projectagora.min.js$important  # from ABP
+    /projectagora.min.js$important  # from ABP
 
-data.alexa.com  # from NextDNS native-tracking-domains alexa
+!data.alexa.com  # from NextDNS native-tracking-domains alexa
 device-metrics-us.amazon.com  # from NextDNS native-tracking-domains alexa
 device-metrics-us-2.amazon.com  # from NextDNS native-tracking-domains alexa
 
-stat.alibaba.com  # from Adguard
+!stat.alibaba.com  # from Adguard
 
-dc.altamob.com  # from Adguard
+!dc.altamob.com  # from Adguard
 
 api.mediation.amberweather.com  # from Adguard
 aqi.wd.amberweather.com  # from Adguard
@@ -132,8 +132,8 @@ an.avast.com  # from GoodbyeAds
 ans.avast.com  # from GoodbyeAds
 bugs-bunny.sb.avast.com  # from GoodbyeAds
 bugs-bunny-stage.sb.avast.com  # from GoodbyeAds
-bugs-bunny-test.sb.avast.com  # from GoodbyeAds
-ff.avast.com
+!bugs-bunny-test.sb.avast.com  # from GoodbyeAds
+ff.avast.com  # +
     ! analytics.ff.avast.com  # from MobileAdTrackers
     ! analytics-test.ff.avast.com  # from GoodbyeAds
     ! analytics.ns1.ff.avast.com  # from MobileAdTrackers
@@ -183,17 +183,13 @@ cloudrail.com
 
 ! mobile telemetry and ads ("crashlytics.advertising.id")  # for instance, https://stackoverflow.com/questions/55138527/firebase-crashlytics-use-of-advertising-id or https://developers.google.com/ad-manager/mobile-ads-sdk/android/crashlytics
 crashlytics.com$important  # is in Dan Pollock's hosts file
-!+  firebase.crashlytics.com
-!+  outbound.crashlytics.com
 crashlytics.ru  # from ShadowWhisperer's Tracking
 crashlytics2.l.google.com
 crashlyticsreports-pa.googleapis.com  # app requests
 betas.to
 
-ads.cricbuzz.com  # from Adguard
-adops.cricbuzz.com  # from Adguard
-
-statistics.videofarm.daum.net  # zombie
+!ads.cricbuzz.com  # from Adguard
+!adops.cricbuzz.com  # from Adguard
 
 directservices.it  # app telemetry and empty root
 
@@ -215,7 +211,7 @@ adv-ettoday.cdn.hinet.net  # from Adguard
 
 # About Facebook Pixel: https://www.facebook.com/business/help/952192354843755
 # About Facebook Graph: from GoodbyeAds: "We block graph.facebook.com. The reason is that this domain serves many of the ads. So, in order to use Facebook, you should consider to whitelist either facebook's main app, or whitelist graph.facebook.com in your ad blocker — otherwise the Facebook app will not work (there are no problems with facebook lite app and other facebook client apps). If you are using Facebook lite messenger, then whitelist the app or whitelist mqtt-mini.facebook.com. Otherwise messenger will not work. We always recommend our users to use Open Source Facebook Clients for 100% ad free experience."
-ak.facebook.com  # zombie  # creative.ak.facebook.com  # from Dan Pollock's hosts file  # zombie
+!ak.facebook.com  # zombie  # creative.ak.facebook.com  # from Dan Pollock's hosts file  # zombie
 api.facebook.com  # api.facebook.com$domain=~facebook.com|~fb.com,important  # https://clinetworking.com/2018/06/03/1984-called/
 b-graph.facebook.com  # block!  # b-graph.facebook.com$domain=~facebook.com|~fb.com,important  # from 1Hosts
 graph.facebook.com  # block!  # graph.facebook.com$domain=~facebook.com|~fb.com,important  # is in many lists  graph.facebook.com  # many mobile apps are trying to read facebook graph. Blocked, even it might broke some facebook functionality  #! facebook
@@ -226,7 +222,7 @@ pixel.facebook.com  # from Adguard  # is in many lists
 staticxx.facebook.com  # staticxx.facebook.com$domain=~facebook.com|~fb.com,important  # from 1Hosts
 z-p3-api.facebook.com  # z-p3-api.facebook.com$domain=~facebook.com|~fb.com,important  # from 1Hosts
 z-p3-sonar.fdar1-1.fna.fbcdn.net  # z-p3-sonar.fdar1-1.fna.fbcdn.net$domain=~facebook.com|~fb.com,important  # from 1Hosts
-static.ak.fbcdn.net  # static.ak.fbcdn.net$domain=~facebook.com|~fb.com  # is in Anti-Facebook
+!static.ak.fbcdn.net  # static.ak.fbcdn.net$domain=~facebook.com|~fb.com  # is in Anti-Facebook
 
 notifications.farpost.ru  # app telemetry
 
@@ -250,10 +246,10 @@ firebaselogging.googleapis.com  # Firebase - Tracker  # from Quidsup NoTrack-Blo
 api.green-way.com.ua  # app requests  # don't block root
 
 # it turned out that hicloud.com is Huawei Cloud. Don't block entirely, only some subdomains
-campaign2b-dra.himovie.hicloud.com
+!campaign2b-dra.himovie.hicloud.com
 campaigncs-dra.himovie.hicloud.com
 campaign-dra.jos.hicloud.com
-campaign-dra.music.hicloud.com
+!campaign-dra.music.hicloud.com
 campaign-dre.music.hicloud.com
 campaign-himovie.hicloud.com
 campaign-music.hicloud.com
@@ -267,9 +263,9 @@ geo-drcn.platform.hicloud.com
 geo-dre.platform.hicloud.com
 geo-drru.platform.hicloud.com
 grs.hicloud.com  # from NextDNS native-tracking-domains huawei
-hiapplog.hicloud.com
-himessageapi.hicloud.com
-inappadm.hicloud.com
+!hiapplog.hicloud.com
+!himessageapi.hicloud.com
+!inappadm.hicloud.com
 location.hicloud.com
 logbak.hicloud.com
 logservice.hicloud.com  # is in NextDNS native-tracking-domains huawei
@@ -282,7 +278,7 @@ metrics.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
 metrics1.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
 metrics2.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
 metrics3.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
-metrics4.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
+!metrics4.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
 metrics5.data.hicloud.com  # is in NextDNS native-tracking-domains huawei
 metrics-dra.dt.hicloud.com  # is in NextDNS native-tracking-domains huawei
 metrics-drcn.dt.hicloud.com  # is in NextDNS native-tracking-domains huawei
@@ -299,7 +295,7 @@ metrics6.dt.hicloud.com  # from NextDNS native-tracking-domains huawei
 push1.hicloud.com
 push5.hicloud.com
 push6.hicloud.com
-push8.hicloud.com
+!push8.hicloud.com
 push9.hicloud.com
 pushaix1.hicloud.com
 userbehavior-reader-drcn.himovie.hicloud.com
@@ -327,14 +323,14 @@ ivymobile.com
 ! blocked by some list in Blokada. Seems, it is telemetry from the Ivymobile bookreader app.
 !api.ivymobile.com
 
-mxplayer.j2inter.com  # from Adguard: i.mxplayer.j2inter.com
+mxplayer.j2inter.com  # +  # from Adguard: i.mxplayer.j2inter.com
 
 ! Potplayer tracking
 ! also see daum.net in _marketing__subdomains - it seems, China trackers
 ad.kakao.com  # from GoodbyeAds
 tr.ds.kakao.com  # from Adguard
 kyson.kakao.com  # from GoodbyeAds
-play.kakao.com  # from https://potplayer.club/net-blocking.html
+!+  play.kakao.com  # from https://potplayer.club/net-blocking.html
 tiara.kakao.com  # from GoodbyeAds
 videoads.kakao.com  # from GoodbyeAds
 videostats.kakao.com  # from Peter Lowe's hosts file
@@ -346,15 +342,15 @@ kingsoft-office-service.com  # abroad-ad.kingsoft-office-service.com  # from Adg
 
 sensors.larkplayerapp.com  # from Adguard
 
-ad.lgappstv.com  # is in BlockListProject/SmartTV
+!ad.lgappstv.com  # is in BlockListProject/SmartTV
 aic-ngfts.lge.com  # is in BlockListProject/SmartTV
 control-zoo-dtsstage.tvinteractive.tv  # is in BlockListProject/SmartTV
-game.internetat.tv  # is in BlockListProject/SmartTV
+!game.internetat.tv  # is in BlockListProject/SmartTV
 infolink.pavv.co.kr  # is in BlockListProject/SmartTV
-lgad.cjpowercast.com  # is in BlockListProject/SmartTV
+!lgad.cjpowercast.com  # is in BlockListProject/SmartTV
 lgtvonline.lge.com  # from github.com/asterriya/regex-ads/
 ngfts.lge.com  # is in BlockListProject/SmartTV
-premium-videos.telly.com  # is in BlockListProject/SmartTV
+!premium-videos.telly.com  # is in BlockListProject/SmartTV
 smartshare.lgtvsdp.com  # is in BlockListProject/SmartTV
 us.ibs.lgappstv.com  # is in BlockListProject/SmartTV
 us.lgtvsdp.com  # is in BlockListProject/SmartTV
@@ -380,19 +376,19 @@ localads.maps.me  # Maps.me app: "Advertisement on maps"
 localbiz.maps.me
 localads-statistics.maps.me  # from GoodbyeAds
 
-stats-a.maxthon.com  # from Adguard
+!stats-a.maxthon.com  # from Adguard
 
 analyticsdcs.ccs.mcafee.com  # McAfee - Tracker  # from Quidsup NoTrack-Blocklist
 directads.mcafee.com  # from Dan Pollock's hosts file
 
-snoop.minecraft.net  # Microsoft - Tracker  # from Quidsup NoTrack-Blocklist
+!snoop.minecraft.net  # Microsoft - Tracker  # from Quidsup NoTrack-Blocklist
 
 vik-analytics.moonactive.net  # from GoodbyeAds
 vik-analytics-gke.moonactive.net  # from GoodbyeAds
 
 download-stats.mozilla.org  # from Adguard
-ostats.mozilla.com  # from Dan Pollock's hosts file
-sostats.mozilla.com  # from Dan Pollock's hosts file
+!ostats.mozilla.com  # from Dan Pollock's hosts file
+!sostats.mozilla.com  # from Dan Pollock's hosts file
 ! telemetry.mozilla.org  # app requests  # see _marketing_subdomains
 telemetry-experiment.cdn.mozilla.net  # Mozilla - Tracker  # from Quidsup NoTrack-Blocklist
 telemetry-incoming.r53-2.services.mozilla.com  # Mozilla - Tracker  # from Quidsup NoTrack-Blocklist
@@ -521,7 +517,7 @@ signalfx.com  # telemetry service
 
 appgift.sinaapp.com  # from Adguard
 
-mystatus.skype.com  # from Ru AdList
+!mystatus.skype.com  # from Ru AdList
 
 adserving-dmoo.enterprise.slack.com
 
@@ -556,7 +552,7 @@ tr.snapchat.com  # from Adguard
 tr6.snapchat.com  # from GoodbyeAds
 # ghs.googlehosted.com  # hmm...
 
-sensors.snaptubeapp.com  # from Adguard
+!sensors.snaptubeapp.com  # from Adguard
 
 ! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
 snssdk.com  # China root  # root redirects to toutiao.com
@@ -604,8 +600,6 @@ analytics-sg.tiktok.com  # from Adguard
 
 trackjs.com  # telemetry scripts
 
-telemetry-new.tradingview.com  # zombie
-
 advertisers.truecaller.com
 pushid-noneu.truecaller.com  # from MobileAdTrackers
 ads-router-noneu.truecaller.com  # from Adaway
@@ -644,7 +638,7 @@ cloud.unity3d.com
 ! analytics.cloud.unity3d.com  # from Energized Blu and Adguard
 ! cdp.cloud.unity3d.com  # from Energized Blu, MobileAdTrackers, Adguard
 ! perf-events.cloud.unity3d.com  # from MobileAdTrackers
-!+  uca.cloud.unity3d.com
+! uca.cloud.unity3d.com  # +
     ! config.uca.cloud.unity3d.com  # is in MobileAdTrackers
     ! data-optout-service.uca.cloud.unity3d.com  # is in MobileAdTrackers
 ! userreporting.cloud.unity3d.com  # from MobileAdTrackers and Energized Blu
@@ -721,9 +715,9 @@ urbandroid.org  # app requests to sleep.urbandroid.org
 
 ads.viber.com  # from MobileAdTrackers
 ads-d.viber.com  # from MobileAdTrackers
-ads.aws.viber.com  # from MobileAdTrackers
+!ads.aws.viber.com  # from MobileAdTrackers
 
-t.vimeo.com  # from Adguard
+!t.vimeo.com  # from Adguard
 
 #api.vk.com  # block!  # api.vk.com$domain=~vk.com|~foto-map.ru,important  # update: don't. It needed for apps (official and third-party)
 stats.vk-portal.net  # is in EasyPrivacy
@@ -739,7 +733,7 @@ updateservice.vl.ru  # app telemetry
 
 crosspromo.voodoo.io  # from Adguard
 
-h5.wannaplay.cn  # from Adguard
+!h5.wannaplay.cn  # from Adguard
 
 t.wayfair.com  # from Adguard
 
@@ -837,10 +831,10 @@ xitong.xiaomi.com  # from GoodbyeAds
 xmpush.xiaomi.com  # from GoodbyeAds
 zhuti.xiaomi.com  # from GoodbyeAds
     ! xiaomi.net
-chat.xiaomi.net  # from GoodbyeAds
-device.xiaomi.net  # from MobileAdTrackers
-files.xiaomi.net  # from GoodbyeAds
-micloud.xiaomi.net  # from GoodbyeAds
+!chat.xiaomi.net  # from GoodbyeAds
+!device.xiaomi.net  # from MobileAdTrackers
+files.xiaomi.net  # from GoodbyeAds  # subdomains
+micloud.xiaomi.net  # from GoodbyeAds  # subdomains
 msg.xiaomi.net  # from GoodbyeAds
 !resolver.msg.xiaomi.net  # from Adguard
 resource.xiaomi.net  # from GoodbyeAds
@@ -894,12 +888,12 @@ tracking.miui.com  # also is in NextDNS native-tracking-domains xiaomi
 sys.miui.com
 !+  intl.sys.miui.com
 !+  metok.sys.miui.com
-vip.miui.com  # from GoodbyeAds
+vip.miui.com  # from GoodbyeAds  # subdomains
     ! other
 stat.duokanbox.com
-ms.cmcm.com
+!ms.cmcm.com
 xlmc.sandai.net  # etl.xlmc.sandai.net
-sstc.ngrok.xiaomiqiu.cn  # from GoodbyeAds
+!sstc.ngrok.xiaomiqiu.cn  # from GoodbyeAds
 xiaomitq.com  # from GoodbyeAds
 
 soft.export.yandex.ru  # ||soft.export.yandex.ru/status.xml?stat=dayuse&banerid=
@@ -907,7 +901,7 @@ soft.export.yandex.ru  # ||soft.export.yandex.ru/status.xml?stat=dayuse&banerid=
 bi.yeshen.com  # from Adguard
 launcher.us.yeshen.com  # from Adguard
 
-s2.youtube.com  # from Adguard
+!s2.youtube.com  # from Adguard
 
 yumenetworks.com  # from BlockListProject/SmartTV
 
