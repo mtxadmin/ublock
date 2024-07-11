@@ -15,6 +15,36 @@
 
 !! domains
 
+! sbermegamarket.ru is now megamarket.ru
+||megamarket.ru/*/promoContent/
+||megamarket.ru/*/promoContentService/
+||megamarket.ru/api/mobile/v1/cxappadmin/alarmScreen/get
+||api.megamarket.tech/api/colibri/events/track
+    ! popups
+megamarket.ru##.header-user-address__selector
+    ! banners
+megamarket.ru##.banner-view
+megamarket.ru##.landing-banner-view__control
+megamarket.ru##.home-aside-slider
+megamarket.ru##.square-banners-list
+megamarket.ru##.mobile-app-widget
+! top banner
+megamarket.ru##.mass-communication
+megamarket.ru##.header-entry-point__app
+megamarket.ru##.big-slider__slide
+megamarket.ru##.tile__item-banner
+megamarket.ru##.banner-view__content
+megamarket.ru##.ddl_campaign_link
+megamarket.ru##.ddl_campaign.banner-image
+    ! other
+megamarket.ru##.subscription-form
+megamarket.ru##.money-bonus
+megamarket.ru##.item-price__price-drop
+megamarket.ru##.item-add2fav
+megamarket.ru##.to-favorite-button
+megamarket.ru##.spinner
+||megamarket.ru/api/*/customerRecentlyViewedService/goods/list
+
     ! Ozon
 ||ozon.ru/referral/
 ||ozon.by/referral/
@@ -261,6 +291,7 @@ ozon.ru##[data-widget=orderDoneDisclaimer]
 ozon.ru##div[data-custom-block^="pdp-faq"]
 ozon.ru##div[data-widget="seasonWidget"]
 ozon.ru##div[data-widget="webProductMainWidget"]
+ozon.ru##div:has(>div>div>p:has-text(Вы бы сэкономили))
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
