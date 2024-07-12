@@ -207,9 +207,10 @@ ozon.ru##[data-widget="stickyContainer"]:style(top:0px !important; bottom:0px !i
 ozon.ru##[data-widget="stickyContainer"]:style(position:static !important)
 ! top ad, as far as I remember
 ozon.ru##[data-widget="stickyContainer"]:has-text(Открыть в приложении)
-ozon.ru##a[href^="/highlight/"]
-ozon.ru##a[href^="https://ozon.ru/highlight/"]
-ozon.ru##a[href^="https://www.ozon.ru/highlight/"]
+! Ссылки на промо-раздел. Но нужно исключение - если уже там. Баллы, как минимум
+ozon.ru##a[href^="/highlight/"]:not(:matches-path(/highlight))
+ozon.ru##a[href^="https://ozon.ru/highlight/"]:not(:matches-path(/highlight))
+ozon.ru##a[href^="https://www.ozon.ru/highlight/"]:not(:matches-path(/highlight))
 !
 ! this one is a top banner. Also see erid in _removeparams
 ozon.ru##a[href*="?erid="]
