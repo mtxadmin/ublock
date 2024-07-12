@@ -208,6 +208,7 @@ ozon.ru##[data-widget="stickyContainer"]:style(position:static !important)
 ! top ad, as far as I remember
 ozon.ru##[data-widget="stickyContainer"]:has-text(Открыть в приложении)
 ! Ссылки на промо-раздел. Но нужно исключение - если уже там. Баллы, как минимум
+ozon.ru##li:has(> a[href^="/highlight/"])
 ozon.ru##a[href^="/highlight/"]:not(:matches-path(/highlight))
 ozon.ru##a[href^="https://ozon.ru/highlight/"]:not(:matches-path(/highlight))
 ozon.ru##a[href^="https://www.ozon.ru/highlight/"]:not(:matches-path(/highlight))
@@ -218,8 +219,6 @@ ozon.ru##a[href*="&erid="]
 ! top banner 2024-03
 ozon.ru##div:matches-css(height:32px) img:matches-css(height:32px)
 !
-ozon.ru##li:has(> a[href^="/highlight/"])
-ozon.ru##a[href^="/highlight/"]
 ozon.ru##div:has(>p:has-text(Оформить подписку))
 !ozon.ru##[data-widget="webPrice"] button:has-text(Ozon Картой)
 ozon.ru##button span:has-text(Ozon Картой)
