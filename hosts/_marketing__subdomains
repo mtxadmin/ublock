@@ -319,7 +319,7 @@ adv.rutube.ru$important,all
 adv.vz.ru  # from Adguard
 adv.wp.pl  # from Dan Pollock's hosts file
 !adv.zapal.ru  # from Dan Pollock's hosts file
-adv.zarabotki.ru
+!adv.zarabotki.ru
 
 ||advert.
 advert.kp.ru  # adgraphics from kp.ru
@@ -1626,9 +1626,9 @@ securemetrics.nbnco.com.au  # from GoodbyeAds
 securetags.esri.com.tr  # from Adguard
 securetags.img.com.br  # from Adguard
 
-/sentry.$domain=~avito.ru
+/sentry.$redirect=noopjs,domain=~avito.ru
     ! Exclusions:
-    ! avito.ru - crashes
+    ! avito.ru - crashes (redirect=noopjs not tested)
 sentry.srv.habr.com
 sentry.hh.ru
 sentry.innologica.com
@@ -2218,7 +2218,7 @@ telemetry.soundcloud.com
 tizer.passion.ru  # from Adguard
 tizer.pohudetdoma.ru  # from Adguard
 tizer.ukraine-ru.net  # from Adguard
-tizer.adv.zarabotki.ru
+!tizer.adv.zarabotki.ru
 
 ||tk.
 tk.abt.com  # from Adguard
@@ -2798,8 +2798,6 @@ wgrcoj.aizel.ru  # from GoodbyeAds
 adgrx.com.tech.akadns.net  # adgrx
 !+  rtb.adgrx.com.tech.akadns.net
 !+      rtbx.adgrx.com.tech.akadns.net
-comscore.akadns.net  # comscore
-!+  oss-ad.comscore.akadns.net
 eyeblaster.akadns.net  # eyeblaster
 webtrends.akadns.net  # webtrends
 !+  ots.webtrends.akadns.net
