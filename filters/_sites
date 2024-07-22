@@ -18696,8 +18696,18 @@ orsk.ru##div[bs_id]
 ! from Adguard
 orsk.ru##.bs_bottom
 
+orteka.ru##+js(set-attr, img.lazyload, src, [data-src])
+    ! popups
+||orteka.ru/bitrix/js/main/core/core.min.js  # location requests
+orteka.ru##.header-city__wrapper
+orteka.ru##.widget
+orteka.ru##.sherlock_container
+    ! banners and promos
 orteka.ru##.main_big_banner
 orteka.ru##.main-banners
+orteka.ru##.ddl_campaign
+orteka.ru##.mainpage__main-slider
+    ! other
 orteka.ru##.fixicons__container
 orteka.ru##.elastic__item--badges
 orteka.ru##.header-middle
@@ -25880,10 +25890,6 @@ textilegu.ru##+js(addEventListener-defuser, , , runAt, idle)
 textilegu.ru##+js(addEventListener-defuser, , , runAt, end)
 ! But it still works. So:
 textilegu.ru$inline-script
-! inline promo - именно так. Там еще есть комменты в конце страницы, то полезное и под это не попадает
-textilegu.ru##.expert-review > .expert-review-expert
-textilegu.ru##.popUp-box-expert_plag
-textilegu.ru##.expert-review-expert-bio__avatar
 textilegu.ru##.tg_widget
 
 ! site breaks copypaste
