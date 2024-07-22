@@ -112,6 +112,7 @@ ozon.ru##div[data-widget="container"]:style(margin-top:0px !important)
 !||ozone.ru/assets/*/bx-  # location popups  # don't, too broad, this breaks some ui elements. Instead:
 !||ozone.ru/assets/*/bx-fe-ui-kit-typography-helper.js  # location popups  # don't, it breaks json loading
 !||ozone.ru/assets/*/vendor-vue.js$redirect=noop.js  # в этом скрипте есть функция про прилепленный заголовок. Но без него подгрузка в поиске не идёт
+||ir.ozone.ru/s3/pdp-api/heart$image
 ozon.ru##.modal:has-text(город)
 ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли):not(:has-text(Не нашли нужный фильтр))
@@ -289,6 +290,7 @@ ozon.ru##div[data-widget=webGarageEntryPoint] > div:style(margin-top:0px !import
 ozon.ru##[data-widget=orderDoneDisclaimer]
 ! sidebar
 ozon.ru##div[data-custom-block^="pdp-faq"]
+||ozone.ru/s3/pdp-api/
 ozon.ru##div[data-widget="seasonWidget"]
 ozon.ru##div[data-widget="webProductMainWidget"]
 ozon.ru##div:has(>div>div>p:has-text(Вы бы сэкономили))
