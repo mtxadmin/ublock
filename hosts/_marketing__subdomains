@@ -1629,6 +1629,19 @@ securetags.img.com.br  # from Adguard
 /sentry.$redirect=noopjs,domain=~avito.ru
     ! Exclusions:
     ! avito.ru - crashes (redirect=noopjs not tested)
+/sentry$script,redirect=noopjs,domain=~avito.ru
+    ! Exclusions:
+    @@/flu/player/sentry$script  # Microsoft video player (NodeJS) on some sites
+    @@||avito.ru/dstatic/build/client/sentry  # avito is completely broken without it  # update: disabled again  # update2: enabled again, silently blocks all. Just this one script.
+    !
+    /sentry.bundle.min.js  # sentry.io library, see https://github.com/getsentry/sentry-javascript
+    /sentry/*
+        ! /sentry/bundle.min.js
+        ! /sentry-logger.js  # from EasyPrivacy
+        ! ||atlassian.com/sentry/
+        ! ||avito.ru/dstatic/build/sentry
+        ! ||ferra.ru/sentry/
+    ||github.com/getsentry/$3p
 sentry.srv.habr.com
 sentry.hh.ru
 sentry.innologica.com
