@@ -113,6 +113,10 @@ ozon.ru##div[data-widget="container"]:style(margin-top:0px !important)
 !||ozone.ru/assets/*/bx-fe-ui-kit-typography-helper.js  # location popups  # don't, it breaks json loading
 !||ozone.ru/assets/*/vendor-vue.js$redirect=noop.js  # в этом скрипте есть функция про прилепленный заголовок. Но без него подгрузка в поиске не идёт
 ||ir.ozone.ru/s3/pdp-api/heart$image
+! not popup (a promo), but also heart
+||ir-2.ozone.ru/s3/my-account-api-img/heart$image
+! not popup (a promo), but also heart
+ozon.ru##[data-widget="orderDoneStatus"] ~ [data-widget=cellList]
 ozon.ru##.modal:has-text(город)
 ozon.ru##.bWarnPoup
 ozon.ru##*:matches-css(position:fixed):has-text(Не нашли):not(:has-text(Не нашли нужный фильтр))
