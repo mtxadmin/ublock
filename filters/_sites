@@ -3874,6 +3874,10 @@ bluecatreports.com##.has-background-primary.section
 
 bmwclub.ru##.uix_navigationLogoText
 
+bn.ru##.bn-popup-gazeta__detail
+bn.ru##.right-sidebar-banners
+bn.ru##.bn-unisender
+
 boards.net##.bksmb
 boards.net###remove_ads_link
 boards.net###ad-desktop-top
@@ -4883,6 +4887,9 @@ chudochashca.ru##.site-header-inner
 
     ! popups
 cian.ru##[class*=-overlay-]
+cian.ru##[class*=--arrow_tooltip]
+cian.ru##button[data-name=ChatbotButton]
+cian.ru##[data-name=RegionSelectCall]
     ! header
 !||cian.site/frontend/mainpage/$image
 ||cian.site/frontend/$image
@@ -4909,6 +4916,11 @@ cian.ru##[class*=--container--]:has-text(Проекты домов, доступ
 cian.ru##.finance-occ
 ! inline promo
 cian.ru##.offtop-wrap
+! promos
+cian.ru##[data-name="Recommendation"]
+||cian.site/frontend/audience-assets/static/visitedOffers/
+||cdn-cian.ru/frontend/ca/ca.js  # is in Adguard
+||cian.ru/feed-page/v2/mobile-site/get-recommendations/
     ! subscriptions
 cian.ru##[class*=digest]
 cian.ru##[class*=subscribe]
@@ -4918,7 +4930,10 @@ cian.ru##[class*=c-selfads]
 cian.ru##[class*=c-services]
 ||cian.site/realty/journal/$image
 cian.ru##[class^=post-card-content__main-img-container]
+cian.ru##[data-name=B2BModeSwitcher]
+cian.ru##[data-name="DownloadAppBanner"]
     ! counters
+||cian.ru/ajax/log-error/
 ||cian.ru/browser-telemetry/
 ||cian.ru/ebc-analytics/
 ||cian.ru/sopr-experiments/  # cian.ru/sopr-experiments/listing-user-activity-time-mobile-site/  # also see sopr-api.cian.ru
@@ -4933,8 +4948,12 @@ cian.ru##.c-footer-legal
 cian.ru##.c-footer-group-mobile
 ||cian.site/frontend/footer/
 cian.ru##.c-footer-asterisk
+cian.ru##[class*=--age--]
     ! seo
 cian.ru##div[class*=--title--]
+cian.ru##[data-name="SeoDescription"]
+    ! apps
+cian.ru##[data-name="AppsList"]
     ! other
 cian.ru##[class^=post-card-info__views]
 cian.ru##[class^=discussed_]
@@ -4944,6 +4963,9 @@ cian.ru##.smart_old_style_container
 cian.ru##[class*=--form-container--]
 ! cian.ru##[class*=--banner--] - don't, looks like it needs rechecking
 cian.ru##[class*=-logo-]
+! left sidebar
+cian.ru##[data-web-ui-test-id="MainMenuContainer"]:style(position:static !important)
+cian.ru##[data-name=QuickFilters] *:style(display:initial !important)
 
 ||cifrus.ru/img/mini.png
 cifrus.ru##.img-circle
@@ -12355,6 +12377,7 @@ itc.ua##.hotlinetable-righttop
 ||itc.ua/*/hl-logo.svg
 ! from Fanboy's
 itc.ua##.verticalPageNav
+itc.ua##.intro:has(a[href*="hotline.finance"])
 
 itch.io##.youtube_mobile_banner_widget
 
@@ -20273,6 +20296,12 @@ tajikistantimes.com##.header
 prian.ru##.content-b_link
 prian.ru##.b-form_subscribe
 prian.ru##.pr-b-object-interview
+||prian.ru/sys/savestat.php
+! ref long id
+prian.ru##+js(remove-attr.js, data-show)
+! ad offers
+prian.ru##.b-object-min__title
+prian.ru##.b-object-min__title ~ .list
 
 ||price.ru/images/icon/apple.svg
 ||price.ru/images/qr.svg
@@ -26911,6 +26940,8 @@ tsn24.ru##.text-share
 tsn24.ru##.text-note
 tsn24.ru##.text-share_social
 
+||tsnbase.ru/img/kvartirnik.gif
+
 ttpsc.com##html:style(opacity:initial !important)
 
 tts.ru###topScroller
@@ -27853,6 +27884,7 @@ vc.ru##.icon--v_rouble
 ! gif avatars
 vc.ru##.subsite-video-avatar
 vc.ru##.comments__show-all-always
+vc.ru##blockquote::before
 
 vceguide.com##[src="https://vceguide.com/wp-content/uploads/2019/02/VCEplus-refund-money.gif"]
 vceguide.com###masthead
