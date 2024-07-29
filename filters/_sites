@@ -354,6 +354,9 @@
 4dk.ru##.head-nav
 4dk.ru##.subsBlock
 
+4filters.ru/*/top_button.$image
+4filters.ru###smoothup
+
 ||4heating.ru/img/ic4.png
 ||4heating.ru/img/ic5.png
 
@@ -1888,6 +1891,8 @@ aptekiplus.ru##.footer__download
 aptekiplus.ru##.header-mobile-app
     ! other
 
+aquabright.ru###sp-bottom::before
+
 aquabum.ru##.note
 
 aqua-city-sar.ru##.home-section__logo
@@ -3198,8 +3203,12 @@ bastyon.com,pocketnet.app###footerWrapper:style(position:static !important)
 ||batraim.com/ads/  # some sort of provider?
 
 ||baucenter.ru/*/retailrocket_tracking.js
-baucenter.ru##.page-header_wrap:style(position:static !important)
+    ! popups
 baucenter.ru##.have-tooltip.send-message.custom-popup
+baucenter.ru##.city-tooltip
+    ! top
+baucenter.ru##.page-header_wrap:style(position:static !important)
+    ! other
 
 bauer-power.net###header-wrapper
 
@@ -4491,6 +4500,8 @@ carhack.ru##.g1-logo
 ||carierista.com/assets/images/hd_home.jpg
 
 carlightvision.com##nav:style(height:auto !important)
+
+carlines.ru##.masthead-banner
 
     ! popups
 carqa.club##.wpqa-question.ask-button
@@ -6543,11 +6554,12 @@ dns-shop.ru,dns-shop.kz##.reaction-modal__list
 dns-shop.ru,dns-shop.kz##.reaction-modal__title
 dns-shop.ru,dns-shop.kz##.menu-contacts__apps
     ! other
-dns-shop.ru##.info-block__logo
-dns-shop.ru##.viewed-products-slider
-dns-shop.ru##[class^=whats-next__info-logo]
-dns-shop.ru##.homepage__top-gid:style(height:auto !important)
-dns-shop.ru##.product-card-tabs__buy-bottom
+dns-shop.ru,dns-shop.kz##.info-block__logo
+dns-shop.ru,dns-shop.kz##.viewed-products-slider
+dns-shop.ru,dns-shop.kz##[class^=whats-next__info-logo]
+dns-shop.ru,dns-shop.kz##.homepage__top-gid:style(height:auto !important)
+dns-shop.ru,dns-shop.kz##.product-card-tabs__buy-bottom
+dns-shop.ru,dns-shop.kz##.bookmarks-btn_cover
 
 dobraprace.cz##.jobOffer__box-jobs-odber
 
@@ -7074,6 +7086,9 @@ dualshockers.com##.article-alert
 duckduckgo.com###header_wrapper:style(top:0px !important)
 duckduckgo.com##.header-wrap:style(position:static !important)
 duckduckgo.com##.header--aside__item
+    ! footer
+! promos
+duckduckgo.com##.footer
     ! other
 duckduckgo.com##.is-invisible:style(visibility:visible !important)
 ! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
@@ -7326,6 +7341,8 @@ econet.ru##.article_info_block:has-text(telegram-канале)
 econet.ru##a[href^="https://vk.com/"]
 econet.ru##a[href^="https://www.pinterest.ru/"]
 econet.ru##.social_networks_top_fixed
+
+ecotrend.by##.control:style(position:static !important)
 
 eda.ru##.sticky-wrapper
 eda.ru##.user-bar__svg-bookmark
@@ -9488,6 +9505,9 @@ geeksforgeeks.org##.shell
 ||geeksgod.com/beardeddragon/tortoise.js
 
 geekville.ru##.td-header-sp-logo
+
+geizer.com##.order-info-block
+geizer.com##.header-button
 
 g-ek.com##.h-c-header__bar:style(position:static !important)
 
@@ -13771,9 +13791,12 @@ ksta.de##.dm_page_info
 ksta.de##.dm_block_header_optional
     ! other
 
+kstati.news$inline-script  # site blocks copypaste  # it breaks top search, but copypaste is more important
     ! top
 kstati.news##.date
 kstati.news##.restriction
+kstati.news##.login-social
+kstati.news##.wrap__:style(height:auto !important)
     ! bottom
 kstati.news###footerContent:style(height:auto !important)
 kstati.news###footerMain:style(height:auto !important)
@@ -13891,6 +13914,8 @@ kuvalda.ru##.product-tabs__header_fixed
 kuvalda.ru##.section_white
 ! top
 kuvalda.ru##.header-announcement
+
+kvanta.ru##.header-html-1
 
 blog.kvv213.com/wp-content/uploads/2015/06/20140906_080522.jpg
 blog.kvv213.com##hgroup
@@ -15336,6 +15361,9 @@ manicurshop.ru##.su-header-contacts_phones
 manicurshop.ru##.su-header-contacts
 manicurshop.ru##.su-header-info
     ! other
+
+manrule.ru##.gallery-image:hover::before
+manrule.ru##.gallery-grid__image::before
 
 manualslib.com###manualban
 manualslib.com##.headerwr
@@ -18481,6 +18509,9 @@ onclass.com##.meeting-review-form
 onclass.com##app-chrome-reference
     ! other
 
+onebigshop.ru##[href="https://onebigshop.ru/"]
+onebigshop.ru##.m-title
+
 oneplus.com###header_raffle
 ||oneplus.net/attachments/1536/1536171-b16d5fa668e74a58b6d3a6cadeeabe20.jpg
 oneplus.com##.card-deck-wrapper
@@ -18958,6 +18989,9 @@ overthewire.org###topmenu:style(position:static !important)
 overthewire.org##ul:style(margin-top:0px !important)
 overthewire.org###shortcuts
     ! other
+
+o-vode.net$inline-script
+o-vode.net##.social-wrap
 
     ! top
 owncloud.com###site-navigation:style(position:static !important)
@@ -21077,6 +21111,8 @@ ratnikshop.ru##.owp-floating-bar
 ravak.ru###header-brand
 
 raymond.cc###aa_wpfs_wrap
+
+razmero.ru$inline-script  # site blocks copypaste
 
 ||razreshenie-oryzhie.ru/weapon.png
 
@@ -23602,6 +23638,8 @@ silkengirl.com,silkengirl.net##.buttons_row
 silkengirl.com,silkengirl.net##.footer_navigation
     ! other
 
+silverkomp.ru$inline-script  # site blocks copypaste
+
 ||silverpic.com/*.mp4
 ||silverpic.com/images/splogo$image
 silverpic.com##canvas
@@ -25998,6 +26036,15 @@ thefirearmblog.com###header
 thefreedictionary.com##.logo-holder
 thefreedictionary.com##.icon-notif
 
+! lazyload imgs are from third party closed sites
+the-fundament.ru##.distr-vidget-block
+the-fundament.ru###right2
+the-fundament.ru###left2
+the-fundament.ru###right1
+the-fundament.ru###left1
+the-fundament.ru##.right
+the-fundament.ru##.left
+
 thegadgetbuyer.com##.widget-area
 thegadgetbuyer.com##.entry-author
 
@@ -26437,6 +26484,8 @@ tjournal.ru##.v-plus-badge
 tkaner.com##.tgtg
 tkaner.com##.tnl_link
 tkaner.com##.header-float
+
+tkanexpert.ru$inline-script  # site blocks copypaste
 
 tkaney.ru##.arrow-topsroll_site
 tkaney.ru##.article-after_post
@@ -26946,6 +26995,8 @@ tsargrad.tv##.fly-start
 tsargrad.tv##.fly-on-scroll
 tsargrad.tv##.fly-top-news
 tsargrad.tv##.header__special-link-gold
+
+tsaristrussia.ru$inline-script  # site blocks copypaste
 
 tsinkaz.kz##.se-pre-con
 
@@ -27969,6 +28020,9 @@ veliki.com.ua##.bottom
 
 ||vembu.com/*/download-free-trial.png
 
+||ventkam.ru/*/head-back.jpg
+ventkam.ru##.mg-nav-widget-area-back
+
 ||vento.ru/*/insta_1.png
 ||vento.ru/*/tm_0.png
     ! popups
@@ -28020,6 +28074,12 @@ vesma.today##.picture__imageWrapper
 vesma.today##[href="https://vesma.today/send-news"]
 vesma.today###widget_14
 vesma.today##article.font-text.layout__textbox.content-pad > p
+
+||v-filter.ru/?counter
+v-filter.ru##.lh_wrap
+v-filter.ru##.lf_text
+v-filter.ru##.uss-copy-seo
+v-filter.ru##.banner-item
 
 vg247.com##.nav_trending
 vg247.com##.logo
@@ -28341,7 +28401,7 @@ vodasovet.ru##.mobile-navigation
 
 vodatyt.ru##.code-block
 ! site breaks copypaste. But some inline scripts are needed
-vodatyt.ru##^script:has-text(/(oncontextmenu|oncopy)/)
+vodatyt.ru##^script:has-text(/(oncontextmenu|oncopy|event.clipboardData.setData)/)
 
 vodkomotornik.ru##.pmregfaright.pmregfaleft
 vodkomotornik.ru##.pmregfa
