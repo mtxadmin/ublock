@@ -62,6 +62,7 @@ megamarket.ru##.spinner
 ||ozon.ru/st/service-worker/
 ||ozone.ru/s3/hotsale-api/$image
 ||ozone.ru/assets/*/marketing-hotsale$script
+||ozone.ru/assets/*/rtb/  # ad scripts
 ||ozone.ru/_nuxt/pdp-all-sharing-button*
 ||ozone.ru/graphics/new_no_photo.png$redirect=2x2.png
 ||ozone.ru/assets/cms-desktop-promo
@@ -285,6 +286,8 @@ ozon.ru##[data-widget="seasonWidget"]
 ozon.ru##div:matches-css(height:32px):has(img:matches-css(height:32px))
 ! top banner 2024-02
 ozon.ru##div:has(>img[elementtiming*="lcp_eltiming_webToAppBanner"])
+    ! update: Adguard rule
+    ! ozon.ru##img[elementtiming*="Banner"]
 ! реклама в выпадающем списке при поиске
 ozon.ru##.type-brand.suggestions-item
 ! при поиске автозапчастей навязчиво вылезает "гараж" - убираем его, при необходимости оно есть в меню
@@ -298,6 +301,8 @@ ozon.ru##div[data-custom-block^="pdp-faq"]
 ozon.ru##div[data-widget="seasonWidget"]
 ozon.ru##div[data-widget="webProductMainWidget"]
 ozon.ru##div:has(>div>div>p:has-text(Вы бы сэкономили))
+! Adguard rule
+ozon.ru##div[data-widget="advVideoBannerMobile"]:remove()
     ! labels
 ozon.ru##section:has(span:has-text("Распродажа Зимы"))
 ozon.ru##section:has(span:has-text(/^[−-][0-9]+%$/))
