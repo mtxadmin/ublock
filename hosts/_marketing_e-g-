@@ -3276,9 +3276,9 @@ exoads.click$all  # from EasyList
 
 exoclick.com$important  # ad network. (mobile?)
 exosrv.com$important,all
-!ads.exosrv.com  #rtb.exoclick.com  #syndication.exoclick.com  #syndication.exosrv.com  # from RU AdList
-/exoclick-
-##iframe[src*="ads.exosrv.com"]
+    !ads.exosrv.com  #rtb.exoclick.com  #syndication.exoclick.com  #syndication.exosrv.com  # from RU AdList
+    /exoclick-
+    ##iframe[src*="ads.exosrv.com"]
 
 exodsp.com  # from ShadowWhisperer's Ads
 
@@ -6810,8 +6810,8 @@ fullspeeddownload.com  # from Adguard
 fullstaak.com  # from ShadowWhisperer's Ads
 
 fullstory.com$important  # from Peter Lowe’s Ad and tracking server list  # "hidden causes of lost revenue"
-!!d33wubrfki0l68.cloudfront.net - not all scripts are tracking  # but many...  #https://d33wubrfki0l68.cloudfront.net/js/e27089c486d52aa7959344993fc028d6449eb3f1/js/scripts.js
-/fullstory.js  # ad scripts
+    !!d33wubrfki0l68.cloudfront.net - not all scripts are tracking  # but many...  #https://d33wubrfki0l68.cloudfront.net/js/e27089c486d52aa7959344993fc028d6449eb3f1/js/scripts.js
+    /fullstory.js  # ad scripts
 
 fulltango.com  # from ShadowWhisperer's Ads
 
@@ -7811,7 +7811,7 @@ gemius.pl$important  # disable Adguard exceptions
 !+          gemius.pl.hit.gemius.pl
 !+      pljidm.hit.gemius.pl
 ! end of gemius.pl
-# gemius.at - closed
+! gemius.at - closed
 gemius.be$important
 !+  mpanel.gemius.be
 !+  panel.gemius.be
@@ -7858,7 +7858,7 @@ gemius.ro$important
 !+  smwpanel.gemius.ro
 !+  spanel.gemius.ro
 ! end of gemius.ro
-# gemius.ru - closed
+! gemius.ru - closed
 gemius.si$important
 !+  simail.gemius.si
 !+      reseller.simail.gemius.si
@@ -7880,14 +7880,14 @@ gemius.com.ua$important
 !+  snlpanel.gemius.com.ua
 !+  spanel.gemius.com.ua
 ! end of gemius.com.ua
-.hit.gemius.*.js  # from Adguard
-.hit.gemius.*?  # from Adguard
-/gemius$important
-    ! /gemius.$important
-    ! /gemius/*$important
-    ! /gemius_id.js
-/xgemius$important  # from EasyPrivacy, modified
-/xgenius.  # from EasyPrivacy
+    .hit.gemius.*.js  # from Adguard
+    .hit.gemius.*?  # from Adguard
+    /gemius$important
+        ! /gemius.$important
+        ! /gemius/*$important
+        ! /gemius_id.js
+    /xgemius$important  # from EasyPrivacy, modified
+    /xgenius.  # from EasyPrivacy
 
 gemmaanalytics.com  # from ShadowWhisperer's Tracking
 
@@ -9003,7 +9003,7 @@ glasssmash.site$all  # from EasyList
 glassview.com  # from ShadowWhisperer's Ads
 
 glavpunkt.ru  # ad scripts  # https://glavpunkt.ru/js/punkts-widget/postmessage.js
-/glavpunkt.$script
+    /glavpunkt.$script
 
 glavsnabsbit.ru  # from 10Zin Host Database
 
@@ -9485,8 +9485,8 @@ goals101.in  # from ShadowWhisperer's Tracking
 goalsmedia.com$important
 
 goaserv.com$all  # from EasyList and Quidsup NoTrack-Blocklist
-! is in EasyList
-##a[href^="https://go.goaserv.com/"]
+    ! is in EasyList
+    ##a[href^="https://go.goaserv.com/"]
 
 goasrv.com  # from EasyList
 
@@ -10960,8 +10960,8 @@ gvisit.com  # from Adguard
 
 gvsi.com  # from ShadowWhisperer's Tracking
 
-# gvt1.com - do not block entirely! it is a google service domain, and blocking it disables reading of QR-codes
-# v2:
+! gvt1.com - do not block entirely! it is a google service domain, and blocking it disables reading of QR-codes
+! v2:
 redirector.gvt1.com$important  # from Adguard: @@||redirector.gvt1.com/videoplayback/id/*/source/dclk_video_ads/*
 
 gvt2.com  # is in many lists
@@ -11006,6 +11006,8 @@ gymn-7.ru  # from 10Zin Host Database  # Checked:2024-01-19
 gyra.ru  # from 10Zin Host Database
 
 gyro186.ru  # from 10Zin Host Database
+
+gyro-n.com  # from EasyPrivacy
 
 gyroscooter86.ru  # from 10Zin Host Database  # Checked:2024-01-26
 
