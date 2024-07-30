@@ -1481,7 +1481,10 @@ _rebid.js  # from EasyList
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-~babyblog.ru,~cnn.com##[class$="-ad"]:not(html):not(body):not(article):not(#maincontent)
+~babyblog.ru,~businessinsider.com,~cnn.com##[class$="-ad"]:not(html):not(body):not(article):not(#maincontent)
+    ! Exclusions:
+    businessinsider.com - .with-rail-video-ad is main content (part of)
+    !
     ! is in EasyList
     ##.gpt-ad
     ! is in EasyList
