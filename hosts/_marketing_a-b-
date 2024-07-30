@@ -215,8 +215,8 @@ aaddzz.com  # from Peter Lowe's hosts file
 ! don't block aadrm.com - MS resourse for RMS, seems legit: https://social.technet.microsoft.com/Forums/ru-RU/67daf77b-d159-4c51-91dc-2b62f1b551a0/problem-with-account-verification-aadrmcom
 
 a-ads.com$important,all  # Anonymous Ads - Advertising  # is in Quidsup NoTrack-Blocklist and EasyList
-! is in Adguard:
-##iframe[src^="//ad.a-ads.com/"]
+    ! is in Adguard:
+    ##iframe[src^="//ad.a-ads.com/"]
 
 aads.us  # from BlockListProject - Ads  # Checked:2024-07-09
 
@@ -1137,9 +1137,9 @@ actionlink.jp  # from NextDNS CNAME Cloaking Blocklist
 
 actionlocker.com  # from BlockListProject - Ads
 
-# action-media.ru  # from GoodbyeAds  # is in Badmojr 1Hosts: Xtra
-# action-media.ru - don't: action-press.ru, academygms.ru fd.ru, glavbukh.ru, menobr.ru, seminar.ru and others are making calls to ||api.action-media.ru/callback for content, they don't have content by themselves
-# AS209684
+! action-media.ru  # from GoodbyeAds  # is in Badmojr 1Hosts: Xtra
+! action-media.ru - don't: action-press.ru, academygms.ru fd.ru, glavbukh.ru, menobr.ru, seminar.ru and others are making calls to ||api.action-media.ru/callback for content, they don't have content by themselves
+! AS209684
 action-marketing.ru  # action-media.ru
 
 action-mcfr.ru  # Action site widgets - https://cdn.action-mcfr.ru/widgets/loader.js
@@ -2398,7 +2398,7 @@ agoop.net  # is in several lists  # subdomains from Adaway  # root error
 
 agora.bg  # from ShadowWhisperer's Ads
 
-# don't block agora.io entirely. See subdomains in _telemetry
+! don't block agora.io entirely. See subdomains in _telemetry
 
 agorahtag.tech  # from ShadowWhisperer's Ads, EasyPrivacy, Adguard
 
@@ -3822,8 +3822,8 @@ aloha-news.net  # from Antipopads-re  # Checked:2024-04-20
 alonged.com  # ad scripts  # is in Ru AdList
 
 alooma.com$important  # ad scripts
-/alooma-latest.min.js  #https://dt2sdf0db8zob.cloudfront.net/jssdk/track/alooma-latest.min.js
-/track/alooma-  # 3p ad scripts  # is in EasyPrivacy
+    /alooma-latest.min.js  #https://dt2sdf0db8zob.cloudfront.net/jssdk/track/alooma-latest.min.js
+    /track/alooma-  # 3p ad scripts  # is in EasyPrivacy
 
 alooma.io  # from ShadowWhisperer's Tracking
 
@@ -5690,7 +5690,7 @@ appfollow.io
 
 appgrade.ru  # closed  # from Adguard
 
-# apphb.com - in general, don't block or block granularly  # shopify ad scripts  #variantswatches.apphb.com/collectionpageswatchesscript.js  #variantswatches.apphb.com/productpageswatchscript.js
+! apphb.com - in general, don't block or block granularly  # shopify ad scripts  #variantswatches.apphb.com/collectionpageswatchesscript.js  #variantswatches.apphb.com/productpageswatchscript.js
 
 apphero.co  # ad scripts
 
@@ -7142,8 +7142,7 @@ assoc-amazon.jp  # from Adguard
 
 associateprograms.com  # associateprograms.com/directory/listing/adcombo
 
-associates-amazon.com  # z-na.associates-amazon.com/onetag/  # no root
-/onetag/*  # is in Adguard and EasyPrivacy
+associates-amazon.com  # z-na.associates-amazon.com/onetag/  # no root  # see /onetag/*
 
 associationanalytics.com  # from ShadowWhisperer's Tracking
 
@@ -7717,7 +7716,7 @@ autodengi.com  # from Adguard
 
 autodisco.de  # from GoodbyeAds
 
-# from GoodbyeAds
+! from GoodbyeAds
 autodiscover.ac
 autodiscover.academy
 autodiscover.af
@@ -12549,9 +12548,9 @@ bodloster.com  # from github.com/asterriya/regex-ads/  # is in Energized and Goo
 bodog.eu  # from Dan Pollock's hosts file
 
 bodyclick.net$important
-/bodyclick.  # from AdGuard
-! is in Ru AdList
-##a[href*="/bodyclick.net"]
+    /bodyclick.  # from AdGuard
+    ! is in Ru AdList
+    ##a[href*="/bodyclick.net"]
 
 boecker-ziemen.de  # from ShadowWhisperer's Tracking
 
