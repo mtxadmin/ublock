@@ -129,16 +129,16 @@ bongacams10.com$third-party  # from EasyList
 bongacams2.com$third-party
 bongacams3.com$important,third-party  # bongacams
 bongacams5.com$third-party
-! is in Ru AdList
-##a[href^="https://bongacams"][href*="com/track?"]
-! is in EasyList
-##a[href*="//bongacams.com/track?"]
-! is in Ru AdList
-##a[href^="https://bongacams"][href*="com/track?"]
-! previous:
-!##[href^="https://bongacams3.com/track"]
-! from Ru AdList
-~bongacams.com##iframe[src*="bongacams.com"]
+    ! is in Ru AdList
+    ##a[href^="https://bongacams"][href*="com/track?"]
+    ! is in EasyList
+    ##a[href*="//bongacams.com/track?"]
+    ! is in Ru AdList
+    ##a[href^="https://bongacams"][href*="com/track?"]
+    ! previous:
+    !##[href^="https://bongacams3.com/track"]
+    ! from Ru AdList
+    ~bongacams.com##iframe[src*="bongacams.com"]
 
 booked.net$3p
 
@@ -156,10 +156,10 @@ capterra.co.uk$3p
 
 ||cdn13.com^$script,3p,domain=~leafy.pro  # from EasyList  # ad scripts  # don't block videos from there
 
-# cdncloudcart.com  # ad scripts and popups  # empty root
-# Do not block domain entirely - there are can be css and images from there. But scripts are really needed to block
-# Hmm, not all scripts... Interesting.
-# Even their loader? Not sure, but ok. But there is root case:
+! cdncloudcart.com  # ad scripts and popups  # empty root
+! Do not block domain entirely - there are can be css and images from there. But scripts are really needed to block
+! Hmm, not all scripts... Interesting.
+! Even their loader? Not sure, but ok. But there is root case:
 ||cdncloudcart.com/assets/site/js/modules/enable-push.min.js
 
 ! see cdn-tinkoff.ru at tinkoff.ru below
@@ -184,7 +184,7 @@ craft.co$3p  # craft.co/adcombo, but they have useful reviews
 
 credible.com$3p
 
-crozdesk.com$3p
+crozdesk.com$3p  # 3p xhrs, suspicious. But the site looks useful
 
 csgo.tm$3p  # money for nothing
 
@@ -217,7 +217,7 @@ digiseller.ru$domain=~digiseller.ru|~plati.market|~wmcentre.net  # 2023-02: curr
 digiseller.com$3p
 digiseller.market$3p
 mydigishop.biz$3p  # old, parked
-#i-digiseller.ru$3p   #old, closed
+!i-digiseller.ru$3p   #old, closed
 mydigiseller.ru$3p
 plati.ru$3p  # root redirects to plati.market
 plati.market$3p
@@ -252,7 +252,7 @@ edn.ru$third-party  # from Ru AdList
 
 ege-study.ru$3p  # from Ru AdList, modified
 
-# e-katalog.ru & nadavi.ru
+! e-katalog.ru & nadavi.ru
 e-katalog.ru##.fix-shadow.fix-preset
 e-katalog.ru$3p,important  # ad scripts from e-katalog.ru
 nadavi.ru$important  # задолбали. Также см. в _aliexpress
@@ -437,7 +437,7 @@ ipgeolocation.io$3p
 ipify.org$3p,important
 
 ipinfo.io$3p,important  # in Ru AdList, EasyPrivacy, ShadowWhisperer's Tracking
-ipinfo.info$3p  # from ShadowWhisperer's Tracking
+ipinfo.info$3p  # from ShadowWhisperer's Tracking and EasyPrivacy
 
 iplocation.com$3p  # from ShadowWhisperer's Tracking
 iplocation.net$3p  # from ShadowWhisperer's Tracking
@@ -546,7 +546,7 @@ ndtv.com$3p  # ad video popups
 ndtvimg.com$domain=~ndtv.com
 
 netlify.app$script,3p  # ad scripts  # is in GoodbyeAds  # don't block images and css, only scripts
-# do not block entirely. At least, not css. 
+! do not block entirely. At least, not css. 
 netlify.com$3p,important,script,image  # ad scripts. Shopify but not only.  # "Increase your conversion rates, customize your user experience and experiment with pricing, layouts and promotions"  #disco-flipclock.netlify.com/main.js  #shopify-backorder-3c367a.netlify.com  #https://identity.netlify.com/v1/netlify-identity-widget.js
 
 netology.ru$3p  # ads
@@ -598,7 +598,7 @@ pochtabank.ru$3p  # ad scripts (loans)
 pocketsurvey.com$3p
 
 podari-zhizn.ru$3p
-###widget-grantlife
+    ###widget-grantlife
 
 popsters.ru$3p  # transferred from _marketing
 
@@ -695,7 +695,7 @@ sidex.ru$3p  # 3p ad scripts  # sidex.ru/js/install_extension.js
 ||sinoptik.ua/informers$third-party
 ||informers.sinoptik.ua^$third-party
 ||pinformer.sinoptik.ua^$third-party
-###SinoptikInformer
+    ###SinoptikInformer
 
 sirv.com$3p,script
 
@@ -811,10 +811,10 @@ topdb.ru$3p
 
 tradingview.com$3p  # from marketing
 
-# not all subdomains - see the issue about vscode
+! do not block all subdomains - see the issue about vscode
 trafficmanager.net$3p,domain=~teams.microsoft.com  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.trafficmanager.net
 
-# объединяет проекты TopHotels, HotelsBonus, TurPoisk, RuTraveller
+! объединяет проекты TopHotels, HotelsBonus, TurPoisk, RuTraveller
 travelpassport.ru$domain=~tophotels.ru|~topturizm.ru  # 3p scripts on these sites. Maybe just there.
 
 treeum.net$3p  # ad scripts
