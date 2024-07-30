@@ -417,8 +417,8 @@ ofeetles.pro  # from Adguard
 
 oferta.to  # from ShadowWhisperer's UrlShorteners
 
-# all links are malformed (https://r.oferting.es/r/?utm_source...) - useless marketing site
-# from GoodbyeAds: trac.*
+! all links are malformed (https://r.oferting.es/r/?utm_source...) - useless marketing site
+! from GoodbyeAds: trac.*
 oferting.net
 oferting.org
 oferting.co.uk
@@ -626,8 +626,8 @@ oghub.io  # from Adguard and NextDNS CNAME Cloaking Blocklist
 ogms.co  # from ShadowWhisperer's UrlShorteners
 
 ognyvo.ru  # from Ru AdList
-! is in Ru AdList
-##.js-ognyvo__item
+    ! is in Ru AdList
+    ##.js-ognyvo__item
 
 ogocvet.ru  # from GoodbyeAds
 
@@ -1249,6 +1249,7 @@ onetag.net  # from ShadowWhisperer's Tracking
 onetag.io  # from Adguard
 onetag.io.edgekey.net  # from Adaway
 onetag-sys.com$important  # from Adguard and EasyList
+    /onetag/*  # is in Adguard and EasyPrivacy
 
 onetech.group  # from ShadowWhisperer's Ads
 
@@ -1896,8 +1897,8 @@ openx.org$important
 ! end of openx.org
 openx.jp  # from BlockListProject - Ads
 servedbyopenx.com$important  # from Peter Lowe's hosts file  # openx
-/openx_  # is in EasyList
-/openx.js$important
+    /openx_  # is in EasyList
+    /openx.js$important
 
 openxadex.com  # from ShadowWhisperer's Ads
 
@@ -2069,12 +2070,12 @@ optaim.com  # from Adaway  # empty root
 
 optanon.com$important  # acquired by onetrust. Cookie nags
 optanon.blob.core.windows.net$important  # acquired by onetrust. Cookie nags
-/optanon/*$important
-/optanon$script,important  #/optanon.js$important
-##[class*="optanon"]:not(html):not(body):not(article)
-##[id*="optanon"]:not(html):not(body):not(article)
-! is in EasyList and Fanboy's
-##.ot-sdk-show-settings
+    /optanon/*$important
+    /optanon$script,important  #/optanon.js$important
+    ##[class*="optanon"]:not(html):not(body):not(article)
+    ##[id*="optanon"]:not(html):not(body):not(article)
+    ! is in EasyList and Fanboy's
+    ##.ot-sdk-show-settings
 
 optasports.com  # from ShadowWhisperer's Tracking
 
@@ -2177,8 +2178,8 @@ optimizely.com$important
 optimizely.com.edgekey.net  # from GoodbyeAds
 optimizely.co.uk  # from ShadowWhisperer's Tracking
 optimize.ly  # from PeterDaveHello's URL Shorteners and ShadowWhisperer's Tracking
-/optimizely-  # is in EasyPrivacy
-/optimizelyjs/*  # is in EasyPrivacy
+    /optimizely-  # is in EasyPrivacy
+    /optimizelyjs/*  # is in EasyPrivacy
 
 optimizelyapis.com  # from BlockListProject - Ads
 
@@ -2652,78 +2653,78 @@ outbrain.it  # from ShadowWhisperer's Ads
 outbra.in  # from ShadowWhisperer's Ads
 outbrainimg.com$important  # from Dan Pollock's hosts file and EasyPrivacy
 outbrainimg.com.edgekey.net  # from Adaway
-/cdn-cgi/pe/bag2?*odb.outbrain.com  # from Fanboy's
-/outbrain?  # from Fanboy's
-/outbrain.js$important  # from Fanboy's
-/outbrainAd.  # from Fanboy's
-/outbrain-load-  # from Fanboy's
-/outbrain/base?  # from Fanboy's
-##[class*="outbrain"]:not(html):not(body):not(article)
-    ! the list is not full, just _some_ rules
-    ! from Fanboy's
-    !##.ArticleFooter-outbrain
-    ! from Fanboy's
-    !##.Atom-outbrain
-    ! from Fanboy's
-    !##.box-outbrain
-    ! from Fanboy's
-    !##.c2_outbrain
-    ! from Fanboy's
-    !##.component-outbrain
-    ! from Fanboy's
-    !##.nok-outbrain-list
-    ! from Fanboy's
-    !##.ob-smartfeed-wrapper
-    ! from Fanboy's
-    !##.outbrain
-    ! from Fanboy's
-    !##.outbrain-ads
-    ! from Fanboy's
-    !##.outbrain-bloc
-    ! from Fanboy's
-    !##.outbrain-content
-    ! from Fanboy's
-    !##.outbrain-group
-    ! from Fanboy's
-    !##.outbrain-module
-    ! from Fanboy's
-    !##.outbrain-placeholder
-    ! from Fanboy's
-    !##.outbrain-recommended
-    ! from Fanboy's
-    !##.outbrain-relateds
-    ! from Fanboy's
-    !##.outbrain-widget
-    ! from Fanboy's
-    !##.outbrain-wrap
-    ! from Fanboy's
-    !##.outbrain-wrapper
-    ! from Fanboy's
-    !##.outbrainWidget
-    ! from Fanboy's
-    !##.outbrain__main
-    ! from Fanboy's
-    !##.outbrain_container
-    ! from Fanboy's
-    !##.outbrain_skybox
-    ! from Fanboy's
-    !##.outbrainbox
-    ! from Fanboy's
-    !##.pane-bonnier-outbrain-outbrain-video-vr3-widget
-    ! from Fanboy's
-    !##.pmc-outbrain-amp-widget
-    ! from Fanboy's
-    !##.sics-component__outbrain
-    ! from Fanboy's
-    !##.tr-outbrain-container
-    ! from Fanboy's
-    !##.widget_ione-outbrain
-    ! from Fanboy's
-    !##.widget_outbrain
-    ! from Fanboy's
-    !##.yom-outbrain
-! is in Fanboy's
-##.OUTBRAIN
+    /cdn-cgi/pe/bag2?*odb.outbrain.com  # from Fanboy's
+    /outbrain?  # from Fanboy's
+    /outbrain.js$important  # from Fanboy's
+    /outbrainAd.  # from Fanboy's
+    /outbrain-load-  # from Fanboy's
+    /outbrain/base?  # from Fanboy's
+    ##[class*="outbrain"]:not(html):not(body):not(article)
+        ! the list is not full, just _some_ rules
+        ! from Fanboy's
+        !##.ArticleFooter-outbrain
+        ! from Fanboy's
+        !##.Atom-outbrain
+        ! from Fanboy's
+        !##.box-outbrain
+        ! from Fanboy's
+        !##.c2_outbrain
+        ! from Fanboy's
+        !##.component-outbrain
+        ! from Fanboy's
+        !##.nok-outbrain-list
+        ! from Fanboy's
+        !##.ob-smartfeed-wrapper
+        ! from Fanboy's
+        !##.outbrain
+        ! from Fanboy's
+        !##.outbrain-ads
+        ! from Fanboy's
+        !##.outbrain-bloc
+        ! from Fanboy's
+        !##.outbrain-content
+        ! from Fanboy's
+        !##.outbrain-group
+        ! from Fanboy's
+        !##.outbrain-module
+        ! from Fanboy's
+        !##.outbrain-placeholder
+        ! from Fanboy's
+        !##.outbrain-recommended
+        ! from Fanboy's
+        !##.outbrain-relateds
+        ! from Fanboy's
+        !##.outbrain-widget
+        ! from Fanboy's
+        !##.outbrain-wrap
+        ! from Fanboy's
+        !##.outbrain-wrapper
+        ! from Fanboy's
+        !##.outbrainWidget
+        ! from Fanboy's
+        !##.outbrain__main
+        ! from Fanboy's
+        !##.outbrain_container
+        ! from Fanboy's
+        !##.outbrain_skybox
+        ! from Fanboy's
+        !##.outbrainbox
+        ! from Fanboy's
+        !##.pane-bonnier-outbrain-outbrain-video-vr3-widget
+        ! from Fanboy's
+        !##.pmc-outbrain-amp-widget
+        ! from Fanboy's
+        !##.sics-component__outbrain
+        ! from Fanboy's
+        !##.tr-outbrain-container
+        ! from Fanboy's
+        !##.widget_ione-outbrain
+        ! from Fanboy's
+        !##.widget_outbrain
+        ! from Fanboy's
+        !##.yom-outbrain
+    ! is in Fanboy's
+    ##.OUTBRAIN
 
 outcomes4me.com  # subdomain from GoodbyeAds
 
@@ -2769,8 +2770,8 @@ outplayr.com  # ad redirects and no root
 !+  us1.outplayr.com
 ! end of outplayr.com
 
-# "convert your free readers to paid members ... analytics ...  Calls To Action"
-# "we integrate Plausible Analytics with your site" - see plausible.io (blocked)
+! "convert your free readers to paid members ... analytics ...  Calls To Action"
+! "we integrate Plausible Analytics with your site" - see plausible.io (blocked)
 outpost.pub
 outpostpublishingcoop.com
 
@@ -3705,7 +3706,7 @@ paybackvocal.com  # from Adguard
 paybrides.org  # from Ru AdList
 
 pay-click.ru$important
-/pay-click.
+    /pay-click.
 payclick.com$important
 payclick.it  # from Adguard
 
@@ -4225,7 +4226,7 @@ perfettimedia.com  # from ShadowWhisperer's Tracking
 perfiliate.com  # from Peter Lowe's hosts file
 
 perfluence.net
-# perfluence.com - don't, not related
+! perfluence.com - don't, not related
 
 perfmelab.com$important  # ad scripts  # "место на рынке AdTech"  # is in AdGuard and RU AdList
 
@@ -4315,7 +4316,7 @@ perics.com  # from EasyList
 
 perimeterx.net
 perimeterx.com
-/perimeterx/*  # ad scripts  # "behavior-based predictive analytics, machine learning models, sensors, detectors and enforcers"  # is in EasyPrivacy and Adguard
+    /perimeterx/*  # ad scripts  # "behavior-based predictive analytics, machine learning models, sensors, detectors and enforcers"  # is in EasyPrivacy and Adguard
 
 perinstallcash.com  # from Adguard
 
@@ -5039,8 +5040,8 @@ piwik.pro
 !+  srv.piwik.pro
 !+  testing.piwik.pro
 ! end of piwik
-/piwik-$domain=~piwik.org  # from Ru AdList
-/piwik/*$domain=~piwik.org  # from Ru AdList
+    /piwik-$domain=~piwik.org  # from Ru AdList
+    /piwik/*$domain=~piwik.org  # from Ru AdList
 
 piwikanalytics.win  # from ShadowWhisperer's Tracking  # Checked:2024-06-21
 
@@ -6031,9 +6032,9 @@ pointroll.com$important
 !+  clients.pointroll.com
 !+  ev.pointroll.com
 pointroll.speedera.net
-!# [PointRoll][72.32.153.176 - 72.32.153.183]
-/PointRoll.
-/PointRollAnonymous.
+    !# [PointRoll][72.32.153.176 - 72.32.153.183]
+    /PointRoll.
+    /PointRollAnonymous.
 
 pointtopoint.com  # from ShadowWhisperer's Ads
 pointtopointuae.com  # from ShadowWhisperer's Ads
@@ -6501,7 +6502,7 @@ porncrash.com  # from GoodbyeAds
 porndeals.com  # from GoodbyeAds and EasyList
 
 porndiscounts.com  # ads
-##a[href*="porndiscounts.com"]
+    ##a[href*="porndiscounts.com"]
 
 porndl.org  # from GoodbyeAds
 
@@ -6546,7 +6547,7 @@ pornmin.com  # from GoodbyeAds
 pornmult.biz  # zombie
 
 pornnetworkdeals.com  # ads
-##a[href*="pornnetworkdeals.com"]
+    ##a[href*="pornnetworkdeals.com"]
 
 pornnperfect.com  # from GoodbyeAds  # Checked:2024-05-11
 
@@ -6814,8 +6815,8 @@ postscanner.ru  # from 10Zin Host Database  # Checked:2024-02-23
 postscript.io  # "SMS marketing software"
 ||shopify.com/*/postscript-$script
 micro.ps  # postscript.io
-/postscript-sdk.js$important
-/postscript-widget.js$important
+    /postscript-sdk.js$important
+    /postscript-widget.js$important
 
 postsupport.net$all  # from Adguard
 
@@ -7116,9 +7117,9 @@ prebidserver.org$important
 prebidserver.net$important
 prebid-server.com  # from ShadowWhisperer's Ads
 prebidwrapper.com  # from EasyList
-/prebid/*$important  # from EasyList, modified
-/prebid1.$important  # from EasyList, modified
-/prebid.$important  # is in EasyList, modified
+    /prebid/*$important  # from EasyList, modified
+    /prebid1.$important  # from EasyList, modified
+    /prebid.$important  # is in EasyList, modified
 
 precisead.com  # from Dan Pollock's hosts file
 
@@ -7866,7 +7867,7 @@ profitsurvey365.live  # from EasyList
 profittask.com$important  # ad network
 
 profitwell.com$important  # "Subscription business financial metrics"  # ad scripts
-/profitwell.js$important  # and their (profitwell) script, earlier
+    /profitwell.js$important  # and their (profitwell) script, earlier
 
 profity.org
 
@@ -8228,11 +8229,11 @@ propellerads-cn.com
 propellerclick.com$important
 propellerinsights.com  # from ShadowWhisperer's Tracking
 propeller-tracking.com  # from Dan Pollock's hosts file
-/propeller.php$third-party,popup  # from Ru AdList
-=propellerads$popup  # from Ru AdList
-/propeller-ads  # from uBlock filters
-/propeller_ou.php$popup  # from Ru AdList
-/propeller_out.php$popup  # from Ru AdList
+    /propeller.php$third-party,popup  # from Ru AdList
+    =propellerads$popup  # from Ru AdList
+    /propeller-ads  # from uBlock filters
+    /propeller_ou.php$popup  # from Ru AdList
+    /propeller_out.php$popup  # from Ru AdList
 
 propelmedia.com  # from ShadowWhisperer's Ads
 
@@ -9615,12 +9616,12 @@ quanta-wave.com  # from Adguard
 quantcast.com$important  # from Peter Lowe's hosts file  # is in hpHosts, Blogscan, Adguard
 quantcast.net  # from BlockListProject - Tracking
 quantcast.de  # from ShadowWhisperer's Tracking
-/quantcast.js  # from EasyPrivacy
-/quantcast.xml  # from EasyPrivacy
-/quantcast/*  # from EasyPrivacy
-/quantcast_  # from EasyPrivacy
-/quantcastanalyticsmodule.  # from EasyPrivacy
-/quantcastjs/*  # from EasyPrivacy
+    /quantcast.js  # from EasyPrivacy
+    /quantcast.xml  # from EasyPrivacy
+    /quantcast/*  # from EasyPrivacy
+    /quantcast_  # from EasyPrivacy
+    /quantcastanalyticsmodule.  # from EasyPrivacy
+    /quantcastjs/*  # from EasyPrivacy
 
 quantcount.com  # is in AdGuard and hpHosts’ Ad and tracking servers
 
@@ -9641,8 +9642,8 @@ quantserve.com$important
 !+  westpac.quantserve.com
 quantserve.com.akadns.net
 quantserve.net  # Quantcast - Tracker  # from Quidsup NoTrack-Blocklist
-||quantserve.  # from Ru AdList
-/quantserve.com/*  # from EasyPrivacy
+    ||quantserve.  # from Ru AdList
+    /quantserve.com/*  # from EasyPrivacy
 
 quantumadblocker.com  # from EasyList
 
