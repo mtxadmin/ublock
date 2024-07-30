@@ -472,8 +472,8 @@ $removeparam=campid  # maybe we can encounter false positives on some camp-relat
 $removeparam=camp_id  # maybe we can encounter false positives on some camp-related sites :-) But "camp" more likely equals "campaign"
     ! bindright.com$removeparam=camp_id  # from DandelionSprout's URLShortener
 
-# cid - do not generally remove parameter! It is used by several forum engines and sites. See discussion at https://github.com/Smile4ever/Neat-URL/issues/226
-# c_id is not so wide, but: https://github.com/Smile4ever/Neat-URL/issues/232
+! cid - do not generally remove parameter! It is used by several forum engines and sites. See discussion at https://github.com/Smile4ever/Neat-URL/issues/226
+! c_id is not so wide, but: https://github.com/Smile4ever/Neat-URL/issues/232
 $removeparam=c_id,domain=~libsyn.com  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # from NeatURL
 
 $removeparam=/^cj_/i
@@ -1350,7 +1350,7 @@ $removeparam=ranSiteID  # from DandelionSprout's URLShortener
     ! chemistwarehouse.com.au$removeparam=ranSiteID  # from Adguard
     ! microsoft.com$removeparam=ranSiteID  # from Adguard
 
-# recipientId - do not remove in general. Though it is being used in Oracle Eloqua
+! recipientId - do not remove in general. Though it is being used in Oracle Eloqua
 
 $removeparam=ref,important,domain=~cssportal.com|~flowlu.com|~privyr.com
     ! Exclusions:
@@ -1684,9 +1684,9 @@ $removeparam=spm
 
 $removeparam=sdsrc  # from DandelionSprout's URLShortener
 
-# seller_name - seems don't  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+! seller_name - seems don't  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
-# senderId - do not remove in general. Though it is being used in Oracle Eloqua
+! senderId - do not remove in general. Though it is being used in Oracle Eloqua
 
 $removeparam=settings_tracking  # from DandelionSprout's URLShortener
 
@@ -2254,7 +2254,7 @@ adjust.com$removeparam=user_agent  # from Adguard
 ! already blocked. But.
 adnxs.com$removeparam,important  # from uBlock filters
 
-# from Adguard (sic!): $removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
+! from Adguard (sic!): $removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
 adguard.com$removeparam=aid  # from Adguard
 adguard-dns.com$removeparam=aid  # from Adguard
 adguard-vpn.com$removeparam=aid  # from Adguard
@@ -2383,7 +2383,7 @@ amazon.*$removeparam=hydadcr  # from Adguard
 ||amazon.*^$removeparam=imprToken  # from DandelionSprout's URLShortener
 amazon.*$removeparam=ingress  # from Adguard
 amazon.*$removeparam=initialIssue  # from Adguard
-# do not block keywords parameter  # Update: hmmm... something changed?
+! do not block keywords parameter  # Update: hmmm... something changed?
 amazon.com$removeparam=keywords  # NOT search itself (it's k=), but ref to it
 ||amazon.*$removeparam=linkCode  # is in DandelionSprout's URLShortener and Adguard  # ref?
 ||amazon.*^$removeparam=lp_asins  # from DandelionSprout's URLShortener
@@ -2935,8 +2935,8 @@ google.*$removeparam=gs_rn  # from NeatURL
 ||www.google.*/search?$removeparam=newwindow  # from Ru AdList
 ||google.*/search$removeparam=oe  # from Adguard
 ||google.*/search?$removeparam=oq  # is in Ru AdList and Adguard  # seems ref
-#google.*/search$removeparam=prmd  # some id. Block?
-# don't block q param - it's search text
+!google.*/search$removeparam=prmd  # some id. Block?
+! don't block q param - it's search text
 ||www.google.*/search?$removeparam=sca_esv  # from Ru AdList
 google.*/search$removeparam=sa  # from Adguard
     ! ||www.google.*/search?$removeparam=sa  # from Ru AdList
@@ -3638,7 +3638,7 @@ selected.com$removeparam=clickedFromCategory  # from DandelionSprout's URLShorte
 
 seo-fast.ru$removeparam=r  # ref  # https://vc.ru/u/2191904-dmitry/787958-13-saytov-dlya-zarabotka-v-internete-chast-1?comment=6269156
 
-#sevenforums.com$removeparam=__cf_chl_jschl_tk__  # don`t, it seems, it is "DDoS protection by Cloudflare" param
+!sevenforums.com$removeparam=__cf_chl_jschl_tk__  # don`t, it seems, it is "DDoS protection by Cloudflare" param
 
 ! sextgem.com - blocked entirely, just for information
 sextgem.com$removeparam=id  # from uBlock filters
@@ -4048,7 +4048,7 @@ $removeparam=stid,domain=dzen.*|ya.ru|yandex.*
         ! ||yandex.*/sport/$removeparam=stid  # from Adguard
 ya.ru,yandex.*$removeparam=suggest_reqid
     ! ||yandex.*/search/$removeparam=suggest_reqid  # from Adguard
-#market.yandex.*$removeparam=text - don't, it blocks search on the market
+!market.yandex.*$removeparam=text - don't, it blocks search on the market
 ||docs.yandex.$removeparam=uid  # from Adguard
 ||market.yandex.$removeparam=vid  # from Adguard
 yandex.com$removeparam=appmetrica_tracking_id  # ref
@@ -4310,3 +4310,10 @@ kufar.by$removeparam=searchid  # from Ru AdList
 $removeparam=xs,domain=skimresources.com|skimlinks.com|redirectingat.com  # from DandelionSprout's URLShortener
 
 trck.wargaming.net$removeparam  # from Adguard
+
+! already blocked, but
+zdtc.app$removeparam=cd62  # long tracking id
+zdtc.app$removeparam=cd63  # long tracking id
+zdtc.app$removeparam=el  # ref
+zdtc.app$removeparam=i  # ref
+zdtc.app$removeparam=merchant  # ref
