@@ -11,7 +11,43 @@
 ! Something doesn't work? Something is missing? Please, feel free to write about it here:
 ! https://github.com/mtxadmin/ublock/issues/new
 
+
+!
+! good start from Ru AdList:
+! Бесплатные DNS-сервисы и не бесплатные домены первого уровня,
+! крайне часто использующихся для мошеннических схем,
+! распространения навязчивой рекламы и вирусов.
+!
+changeip.name$third-party
+chickenkiller.com$important,third-perty
+||dyndns-$third-party,script,subdocument
+||dyndns.$third-party,script,subdocument
+itsaol.com$third-party
+quelliclub.ru$third-party  # Checked:2024-08-05
+servebbs.net$third-party
+!
+||asia^$third-party,script,subdocument,xmlhttprequest,domain=~gallerix.org
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~forum.worldofwarships.ru|~hdvbplayer.tk|~live-gol.net|~philips.ru|~softpir.com|~sportings.pw|~sportsvideoline3.pw|~tefal.ru|~videosofsport1.pw|~xn--drakulastrem-b7e.com
+||xyz^$third-party,script,xmlhttprequest,domain=~anidub.com|~animedia.pro|~animeheaven.ru|~app.element.io|~assistir-filme.biz|~avtomaty-i-bonusy.com|~chelentano.top|~coomeet.com|~crackstreams.com|~crackstreams.ga|~csgoreports.com|~cvid.kiev.ua|~estream.to|~europixhd.io|~films.hds-stream.com|~funtik.tv|~getvi.tv|~hanime.tv|~hentaiz.org|~herokuapp.com|~infoua.biz|~jokehd.com|~jokerswidget.com|~kinobig.me|~kinoguru.be|~kinoguru.me|~kristinita.ru|~live-golf.stream|~lookbase.xyz|~magicfilm.net|~mail.google.com|~map-a-date.cc|~matchat.online|~mikeamigorein.xyz|~miranimbus.ru|~my.mail.ru|~nccg.ru|~newdeaf.club|~newdmn.icu|~onmovies.se|~playjoke.xyz|~roadhub.ru|~roblox.com|~sextop.net|~soccer365.ru|~soonwalk.net|~sportsbay.org|~streetbee.io|~streetbee.ru|~telerium.live|~uacycling.info|~uploadedpremiumlink.net|~vk.com|~vmeste.tv|~web.app
+!
+! Исключения
+@@||12go.asia/dist/prod/build.*.js|$third-party,script
+@@||12go.asia/tools/form/$third-party,script
+@@||gallerix.asia^$domain=gallerix.ru
+@@||multilanguage.xyz^$third-party,script,xmlhttprequest
+@@||myvi.xyz/embed/$third-party,subdocument
+@@||nyan.pw^$third-party,script,xmlhttprequest
+@@||recheck.12go.asia/*/recheck|$third-party,xmlhttprequest
+
+
 !! domains
+! banner host ionos (wants cookies) AS8560
+1and1.com$3p
+1und1.de$3p
+app-de-1und1-login.herokuapp.com$domain=~1and1.com|1und1.de
+go-to-1und.herokuapp.com$domain=~1and1.com|1und1.de
+leredsite.herokuapp.com$domain=~1and1.com|1und1.de
+
 
 1cont.ru$3p  # ad scripts
 
@@ -26,11 +62,28 @@
 2ip.ua$3p  # from GoodbyeAds
 @@||2ip.ua/images/*.png
 
+2mydns.net$3p
+
 3cx.com$third-party,important  # chats and calls (but also legal PBX)
+
+3utilities.com  # root redirects to noip.com  # many scam subdomains
+
+3xforum.ro$3p
+    ! adipexp.3xforum.ro  # from Dan Pollock's hosts file and BlockListProject - Ads  # zombie
+    ! buylevitra.3xforum.ro  # from Dan Pollock's hosts file  # zombie
+    ! mariyforum.3xforum.ro  # from ShadowWhisperer's URL Shorteners
+    ! meridiameridia.3xforum.ro  # from Dan Pollock's hosts file and BlockListProject - Ads  # zombie
+    ! soma.3xforum.ro  # from Dan Pollock's hosts file  # zombie
+    ! tramadol2006.3xforum.ro  # from Dan Pollock's hosts file and BlockListProject - Ads  # zombie
+    ! valiumvalium.3xforum.ro  # from Dan Pollock's hosts file and BlockListProject - Ads  # zombie
+    ! viagraviagra.3xforum.ro  # from Dan Pollock's hosts file and BlockListProject - Ads  # zombie
+    ! xanaxxanax.3xforum.ro  # from Dan Pollock's hosts file and BlockListProject - Ads  # zombie
 
 3rs.ru$3p  # "-2013"  # from Adguard
 
 4u2movie.com$3p,media,redirect=noopmp3-0.1s  # from uBlock filters
+
+5v.pl$3p  # scam subdomains  # hoster
 
 6sense.com$3p  # from Blogscan  # is in several lists
 
@@ -93,6 +146,9 @@ bce-tyt.ru$3p
 
 beboss.ru$3p  # from Adguard
 
+beget.com$3p
+beget.tech$3p  # has subdomains from Coin Blocker List
+
 besmarty.ru$3p  # spam
 
 bestplaces.net$3p,important
@@ -144,6 +200,8 @@ booked.net$3p
 
 boosty.to$3p  # монетизация VK от mail.ru
 
+bounceme.net$3p  # noip.com
+
 burdastyle.ru$3p  # ad xhrs
 
 buymeacoffee.com$3p  # ad popups  # domain should not be blocked, see #19 and #50 (it happens...)
@@ -186,6 +244,8 @@ credible.com$3p
 
 crozdesk.com$3p  # 3p xhrs, suspicious. But the site looks useful
 
+csb.app$3p  # codesandbox.io domain  # 404 root  # 2024: error root  # many ad subdomains
+
 csgo.tm$3p  # money for nothing
 
 currencyrate.today$3p
@@ -202,9 +262,37 @@ datalock.ru$3p
 
 db-ip.com$important,third-party,all  # from EasyPrivacy and ShadowWhisperer's Tracking. I think, don't, see https://github.com/ShadowWhisperer/BlockLists/pull/84  # Update: I was wrong. Moved to _crms
 
+dd-dns.de$3p  # subdomains from Phishing URL Blocklist
+
 ddestiny.ru$3p  # "-2018 game developers"  # from Adguard
 
 !ddos-guard.net$3p - in general, don't
+
+ddns.com.br$3p
+
+ddns.name$3p  # many junk domains - see public hosts files  # no root  # now redirects to changeip.com
+
+ddns.net$3p  # DDNS service  # many spam subdomains  # from Energized Blu and others  # noip.com
+    ! 01272744229.ddns.net  # from Energized Blu
+    ! 01fckgwxqweod01.ddns.net  # from Energized Blu
+    ! 02google.ddns.net  # from Energized Blu
+    ! 07092017.ddns.net  # from Energized Blu
+    ! 07777770.ddns.net  # from Energized Blu
+    ! 0955.ddns.net  # from Energized Blu
+    ! activemobistore.ddns.net  # https://community.blueliv.com/#!/s/5db2b3c182df413ea93333c5  # Mobile Malware and APT Espionage: Prolific, Pervasive, and Cross-Platform
+    ! cbyxhuxo663.ddns.net  # https://community.blueliv.com/#!/s/5db2b3c182df413ea93333c5  # Mobile Malware and APT Espionage: Prolific, Pervasive, and Cross-Platform
+    ! coinmining.ddns.net  # from Coin Blocker List
+    ! fingers1.ddns.net  # https://community.blueliv.com/#!/s/5db2ab8c82df413eaf337310  # Hunting Raccoon: The New Masked Bandit On The Block
+    ! onlycash.ddns.net  # from Coin Blocker List
+    ! paypal-mmm.ddns.net
+    ! paypal-onlinec.ddns.net
+    ! paypalservice232.ddns.net
+    ! simplechatpoint.ddns.net  # https://community.blueliv.com/#!/s/5db2b3c182df413ea93333c5  # Mobile Malware and APT Espionage: Prolific, Pervasive, and Cross-Platform
+
+ddnsfree.com$3p  # ddnsfree.com - dynu.com. Closed all scam subdomains
+
+ddnsking.com$3p  # many junk domains  # root redirects to noip.com  # many scam subdomains
+    ! paypal-supportess.ddnsking.com
 
 dhgate.com$3p  # from Ru AdList
 
@@ -241,6 +329,16 @@ discord.com.ru$third-party
 discord.org.ru$third-party
 discord-pc.ru$third-party
 
+dnsabr.com$3p  # many junk domains
+    ! paypal-verifyssl.dnsabr.com
+
+dnsalias.com$3p  # Oracle Dyn
+    ! projop.dnsalias.com  # from Adguard
+
+do.am$3p  # root redirects to ucoz.ru
+    ||do.am/stat  # redirect to ucoz  # from Adguard
+    10000visit.do.am  # ad scripts  # ucoz  # closed?
+
 docdoc.ru$third-party  # docdoc
 sberhealth.ru$third-party  # docdoc
 
@@ -248,9 +346,34 @@ market.dota2.net$3p  # money for nothing
 
 drako.ru$3p
 
+duckdns.org$3p  # many spam subdomains  # duckdns.org (free dynamic DNS)
+    ! !+  resume-0.duckdns.org
+    ! ! end of duckdns.org
+    komkommi.duckdns.org
+
+dynadot.com$3p
+
+dynalias.com$3p  # subdomains from Coin Blocker List  # Oracle DynDNS
+
+dynamic-dns.net$3p  # from GoodbyeAds
+
+dyndns.dk$3p  # from Dan Pollock's hosts file: x8x.dyndns.dk  # DynDNS
+
+dyndns.info$3p  # Oracle Dyn  # subdomains from Dan Pollock's hosts file  # Oracle DynDNS
+
+dyndns.org$3p  # dyn.com, Oracle Dyn
+    p2pool-cologne.dyndns.org  # from Coin Blocker List  # Checked:2024-08-05
+
+dyndns-mail.com$3p  # subdomains  # Oracle DynDNS
+
+dynu.com$3p  # from Dan Pollock's hosts file: www69.dynu.com  # DynDNS
+
 edn.ru$third-party  # from Ru AdList
 
 ege-study.ru$3p  # from Ru AdList, modified
+
+ehost.tj$3p  # from Ru AdList
+    parviz.ehost.tj  # from Ru AdList
 
 ! e-katalog.ru & nadavi.ru
 e-katalog.ru##.fix-shadow.fix-preset
@@ -293,9 +416,44 @@ finevpn.org$all,third-party  # from Ru AdList
 
 fluidsurveys.com$3p  # FluidSurveys - closed (joined Surveymonkey.com)
 
+fo.ru$3p
+    banner-storage.fo.ru  # is in Ru AdList
+
+for-our.info$3p
+
 forte.kz$3p  # скрипты рассрочки
 
 fortrader.org$3p  # ad scripts  # transferred from marketing
+
+free.fr$3p  # many spam subdomains  # from Energized Blu
+    ! 000tristanprod.free.fr
+    ! 10000verges.free.fr
+    ! 1000bannerx.free.fr
+    ! 100filles.free.fr
+    ! 123boy.free.fr
+    ! 123branlemoi.free.fr
+    ! 123kia.free.fr
+    ! 123latina.free.fr
+    ! 1sexe1.free.fr
+    ! 1zone1.free.fr
+    ! abonne100.free.fr
+    ! akcr.free.fr
+    ! albaphotos.free.fr
+    ! aldo061.free.fr
+    ! aldo063.free.fr
+    ! alice20.free.fr
+    ! aliciatrans.free.fr
+    ! alizedusud.free.fr
+    ! amatrixe.free.fr
+    ! amatvideo.free.fr
+    ! angelinna.free.fr
+    ! aphrodisia01.free.fr
+    ! ciel7.free.fr
+    ! habbotips.free.fr  # from Online Malicious URL Blocklist
+    ! teenx.free.fr
+    ! ...
+
+freedynamicdns.net$3p
 
 free-kassa.ru$third-party
 
@@ -306,6 +464,8 @@ freshsales.io$domain=~freshdesk.com|~freshdes.net|~freshworks.com|~freshsales.io
 widget.freshworks.com$3p,important
 
 from-ua.com$third-party,subdocument  # from Ru AdList
+
+ftp.sh$3p
 
 furnituremalldirect.com$script,3p  # ad scripts (furniture)
 
@@ -337,6 +497,8 @@ disney.io$3p
 disney.com$3p
 
 ||seal.godaddy.com^$third-party  # from Fanboy's
+
+godaddysites.com$3p  # 404 root  # many scam subdomains
 
 goodvas.com$3p  # МТС English (from mts_podpiski). Do not block entirely.
 
@@ -386,6 +548,9 @@ hidemyname.info$all,third-party  # from Ru AdList
 
 hitex.com.ua$3p  # from Ru AdList
 
+@@||hopto.org^$generichide,badfilter  # from Adguard Chinese
+hopto.org$3p  # DDNS service
+
 host-tracker.com$3p  # from MVPS and Ru AdList  # moved to 3p
 
 @@||hotbot.ai/widget.js  # booking service
@@ -398,6 +563,8 @@ httpschecker.net$3p  # 3p requests
 hubspot.com$important,script,domain=~hubspot.com|~hubspot.net|~hsappstatic.net  # Hubspot - Tracker  # from Quidsup NoTrack-Blocklist  # don't block css
 hubspot.net$important,script,domain=~hubspot.com|~hubspot.net|~hsappstatic.net  # Hubspot - Tracker  # from Quidsup NoTrack-Blocklist  # don't block css
 hsappstatic.net$domain=~hubspot.com|~hubspot.net|~hsappstatic.net
+
+hyperphp.com$3p  # error root  # dyndns?
 
 imgbox.com$script,third-party  # from EasyList
 
@@ -432,6 +599,13 @@ ipfarm.net$3p  # from ShadowWhisperer's Tracking  # cmd ip
 ipfind.com$3p
 ipfind.co$3p
 
+! ipfs: https://docs.ipfs.io/concepts/what-is-ipfs/
+ipfs.com$3p  # from ShadowWhisperer's Tracking
+ipfs.io$3p 
+ipfs.dweb.link$3p
+ipfs.w3s.link$3p
+infura-ipfs.io$3p
+
 ipgeolocation.io$3p
 
 ipify.org$3p,important
@@ -444,7 +618,13 @@ iplocation.net$3p  # from ShadowWhisperer's Tracking
 
 !itmatrix.ru$script,3p  # don't block, even scripts
 
+is-best.net$3p  # from GoodbyeAds  # error root
+
 jango.com$3p  # from EasyList  # radio, do not block entirely
+
+jino.ru$3p
+jino-net.ru$3p  # from Dan Pollock's hosts file: mesotherapy.jino-net.ru
+myjino.ru  # many subdomains from from Coin Blocker List
 
 jobbio.com$third-party  # from EasyList
 
@@ -486,6 +666,8 @@ lfirmal.com$3p  # ads
 lightyeardocs.com.au$3p
 
 likes.ru$3p  # likes.ru/js/widget/build/widget.js
+
+lima-city.de$3p  # hosting  # from Coin Blocker List
 
 linkedin.com$3p,script
 licdn.com$domain=~linkedin.com  # linkedin scripts on third-party sites  # 3p ad scripts  # linkedin host  # snap.licdn.com/li.lms-analytics/insight.min.js
@@ -538,9 +720,80 @@ monitorus.ru$3p  # uptime.monitorus.ru  # from Adguard
 
 muz-tv.ru$3p
 
+my.id$3p  # root error
+    alert-service.my.id$all  # from uBlock filters - Badware
+    analytics.argust.my.id  # from ShadowWhisperer's Tracking
+    analytics.dsmg.my.id  # from ShadowWhisperer's Tracking
+    autoleads.my.id  # from ShadowWhisperer's Scam
+    cbnet.my.id  # from ShadowWhisperer's UrlShorteners
+    entrylevel.my.id  # from ShadowWhisperer's Malware
+    gaez.my.id  # from ShadowWhisperer's Scam
+    jadomasak.my.id  # from ShadowWhisperer's Malware
+    liveviralvideo18.private-x.my.id$all  # from uBlock filters - Badware
+    movieee.my.id  # from ShadowWhisperer's Malware
+    nyaa-tan.my.id$important  # from uBlock filters
+        ! zxc.nyaa-tan.my.id$important  # from Adguard
+    spotify.my.id  # from ShadowWhisperer's Scam
+    stats.onbox.my.id  # from ShadowWhisperer's Tracking
+    terbarutahunini2022.my.id  # from ShadowWhisperer's Malware
+    tukangcau.my.id  # from ShadowWhisperer's Scam
+    unp.my.id  # from ShadowWhisperer's UrlShorteners
+
+mycomputer.com$3p  # hoster
+    123counter.mycomputer.com  # from Dan Pollock's hosts file
+
+myddns.me$3p
+
+myfreesites.net$3p  # no root  # many scam subdomains
+
+myftp.org$3p  # noip.com
+    whiterose.myftp.org  # ad redirects
+
+mypi.co$3p  # DynDNS service
+
 myradio24.com$3p
 
 mysearches.co$3p  # 3p scripts. Possible marketing or scam
+
+myserver.org$3p
+    x888x.myserver.org  # from Dan Pollock's hosts file
+
+myvnc.com$3p  # DDNS service
+    0day.myvnc.com
+    account-denied1.myvnc.com
+    amazonservice-aws.myvnc.com
+    apple-settings.myvnc.com
+    appleid-appleid.myvnc.com
+    connect-secure.myvnc.com
+    deutshe-bank.myvnc.com
+    dhl-dpgroup.myvnc.com
+    lastdelivery.myvnc.com
+    login-microsoft0.myvnc.com
+    login-webmail.myvnc.com
+    myapplecardsupport.myvnc.com
+    myluxtrust.myvnc.com
+    netflx-access.myvnc.com
+    netflx-pt.myvnc.com
+    package-status.myvnc.com
+    paypai-servlces.myvnc.com
+    paypalassistance.myvnc.com
+    paypalcm.myvnc.com
+    paypalsecureservice.myvnc.com
+    rubletaski.myvnc.com
+    updatewells-acct.myvnc.com
+    venturesolution.myvnc.com
+    verifypaypalaccount.myvnc.com
+    wellfargowebsupport.myvnc.com
+    wells01-faster.myvnc.com
+    wellsecurity-check.myvnc.com
+
+adriverm.narod2.ru  # from Adguard
+buthoprus.narod.ru  # from BlockListProject - Ads
+dimpy.narod.ru  # from Ru AdList
+internetine-tv.narod.ru  # from blocks of Lithuania
+nobodyspeakstruth.narod.ru  # from BlockListProject - Ads
+rbstobovaw.narod.ru  # from BlockListProject - Ads
+seelisten.narod.ru  # from blocks of Lithuania
 
 ndtv.com$3p  # ad video popups
 ndtvimg.com$domain=~ndtv.com
@@ -548,6 +801,20 @@ ndtvimg.com$domain=~ndtv.com
 netlify.app$script,3p  # ad scripts  # is in GoodbyeAds  # don't block images and css, only scripts
 ! do not block entirely. At least, not css. 
 netlify.com$3p,important,script,image  # ad scripts. Shopify but not only.  # "Increase your conversion rates, customize your user experience and experiment with pricing, layouts and promotions"  #disco-flipclock.netlify.com/main.js  #shopify-backorder-3c367a.netlify.com  #https://identity.netlify.com/v1/netlify-identity-widget.js
+netlify.app$3p  # many spam subdomains
+!appnetlify.app - closed
+    078outlookoffic.netlify.app  # from Energized Blu
+    08-372officeout9-0.netlify.app  # from Energized Blu
+    0instagram.netlify.app  # from Energized Blu
+    0u7l-0k0fice.netlify.app  # from Energized Blu
+    cancerferro.netlify.app
+    fantastic-salamander-c721cb.netlify.app$all  # from uBlock filters - Badware
+    geo-lookup.netlify.app  # from ShadowWhisperer's Tracking
+    netlify-rum.netlify.app  # from EasyPrivacy
+    privacyfriendly.netlify.app  # from EasyPrivacy
+    signin-att.netlify.app
+    support-reopening-limite-accounts-one.netlify.app$all  # from uBlock filters - Badware
+    ticket-09887-table-update.netlify.app$all  # from uBlock filters - Badware
 
 netology.ru$3p  # ads
 
@@ -560,7 +827,18 @@ nifigas.ru$3p
 
 ninjaworld.ru$3p
 
+no-ip.biz$3p  # many spam subdomains  # from Energized Blu
+
+no-ip.com$3p
+noip.com$3p  # DDNS service  # has many subdomains from Coin Blocker List
+
+no-ip.info$3p  # many spam subdomains  # from Energized Blu
+
+no-ip.org$3p  # many spam subdomains  # from Energized Blu
+
 websecurity.norton.com$3p  # is in EasyPrivacy and Fanboy's
+
+now.sh$3p  # it seems, there are too many spam apps there.
 
 ogurcova-portal.com$3p
 
@@ -575,6 +853,9 @@ otto.de$3p  # from Blogscan
 otus.pw$3p  # spam
 
 overplay.net$third-party
+
+own-free-website.com$3p
+page.tl$3p  # root redirects to own-free-website.com
 
 pages.dev$3p  # ad scripts
 
@@ -608,6 +889,13 @@ pornoadvid.info$3p  # from Adguard
 
 pornovau.club$3p  # from Adguard
 
+pp.ua$3p  # many subdomains in different lists  # DynDNS
+    ! .pp.ua^$script,3p  # from Ru AdList
+    ! blablabla.pp.ua  # from Adguard
+    ! ili.pp.ua  # from Adguard
+    ! smi.pp.ua  # from EasyList
+    ! and others
+
 pravoved.ru$third-party
 api-pravoved.s3.amazonaws.com$domain=~pravoved.ru
 
@@ -640,6 +928,57 @@ pustoty.net$third-party  # from Ru AdList
 
 quotemedia.com$3p  # 3p scripts  # "Stock Market Data"
 
+! see https://yandex.ru/search/?text=rackcdn.com
+! and many ad scripts (maybe not only)
+! but sometimes css from there are necessary. Hmm... Let's make an exclusion
+@@||rackcdn.com$css
+! so do not block it by hosts
+rackcdn.com
+! just for history, part of the list:
+    ! 0124498474f7c13ac9a2-6b191446002b31342189d56cabcf5227.r11.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 118d654612df63bc8395-aecfeaabe29a34ea9a877711ec6d8aed.r37.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 32e1dff65ea4eb3627ed-f1ecc94c86a56d3e42e512fcfd192886.r6.cf1.rackcdn.com  # from BlockListProject - Ads
+    ! 39788f3ee241c9c77fa5-5f3f962c17f4c19066268fe915d96f9f.ssl.cf1.rackcdn.com  # from ShadowWhisperer's URL Shorteners
+    ! 3dc265e90c6d9fa3cc0c-3f982316dc17e6e99fe1b47483239d63.r95.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 4002dbde88aebefdb1f7-8f93653c470e43727b1b565964867247.r51.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 418e158b80bc0381719c-c51e63b7e27054c59548bc9120302775.r53.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 4e4356b68404a5138d2d-33393516977f9ca8dc54af2141da2a28.ssl.cf1.rackcdn.com  # from EasyPrivacy
+    ! 517144eec2f5c89bd8f6-a079a5fb528b2ce366edd77d796ba7e0.ssl.cf2.rackcdn.com  # from ShadowWhisperer's Ads
+    ! 5555c0e19278c10ce23e-e43b9b9293b141a8c68c3bbff03519a0.r36.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 5f8174fcf50c8f3fcaa2-1d2bf932855ebd52407efbb6cb4b64e5.r49.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 6a036421edec9693c962-4d1f758fa5668c904b9cd6e76bdc0d97.r71.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 6a802238f18629454f48-5fd47577f4847dded97d514126394433.r3.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 6b8a953b2bf7788063d5-6e453f33ecbb90f11a62a5c376375af3.r71.cf5.rackcdn.com  # from BlockListProject - Ads
+    ! 6e32870d409e7dd29e74-1f888a5500a4bf77de3933bbc73268d9.r21.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 7303a09a9435e14d2141-577d252383f9c1423860b10142058ad7.r27.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 829331534d183e7d1f6a-8d91cc88b27b979d0ea53a10ce8855ec.r96.cf5.rackcdn.com  # from BlockListProject - Ads
+    ! 829331534d183e7d1f6a-8d91cc88b27b979d0ea53a10ce8855ec.r96.cf5.rackcdn.com  # from Dan Pollock's hosts file
+    ! 833b446bf809d05d8cbe-22d497cab0248fe8bf9979b2e6155da2.r90.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! 86b541515e8fd82cbfbb-d93e4837fafc2fbc08e0b8cb1f23e9ee.ssl.cf1.rackcdn.com  # from ShadowWhisperer's URL Shorteners
+    ! 97b1c56132dfcdd90f93-0c5c8388c0a5897e648f883e2c86dc72.r54.cf5.rackcdn.com  # from BlockListProject - Ads
+    ! a04296f070c0146f314d-0dcad72565cb350972beb3666a86f246.r50.cf5.rackcdn.com  # from BlockListProject - Ads
+    ! a98dc034c7781a941eba-bac02262202668bbe918ea9fb5289cd2.r58.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! b17261b2b5010f3c6c93-d77e110c9a6908e75cd02fbd7eb24572.r86.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! c3319585.ssl.cf0.rackcdn.com  # from ShadowWhisperer's Tracking
+    ! c3319586.ssl.cf0.rackcdn.com  # from ShadowWhisperer's Tracking
+    ! c479636.r36.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! c479842.r42.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! c683207.ssl.cf2.rackcdn.com  # from ShadowWhisperer's URL Shorteners
+    ! c753738.r38.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! c829aeaf4090c1289783-9ad4110c8011547ec25e241b917b5aab.r35.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! d06915f22873285e84a9-9954fed71f1f51f77e6d1b38cb5af421.r69.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com  # from Adguard
+    ! d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com  # from BlockListProject - Ads
+    ! d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com  # from Ru AdList
+    ! d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com  # from ShadowWhisperer's Tracking
+    ! dc4d4996bc86498d8959-7dc0216bc6cc2f4ed239035dfc17235b.r83.cf3.rackcdn.com  # from BlockListProject - Ads
+    ! dcdd29eaa743c493e732-7dc0216bc6cc2f4ed239035dfc17235b.ssl.cf3.rackcdn.com  # from BlockListProject - Ads
+    ! dcdd29eaa743c493e732-7dc0216bc6cc2f4ed239035dfc17235b.ssl.cf3.rackcdn.com  # from ShadowWhisperer's Tracking
+    ! e004777c130eade00234-5ddb36df15af65ab8482e83373c53fe5.r41.cf1.rackcdn.com  # from ShadowWhisperer's Ads
+    ! e32e0c3c972d179cd1d0-1847ac4c91d55b307d162b6d5ad07fe3.r71.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! e46fa8d94b17745ac277-ae524ab82d83e9108c081b44b53c4ff2.r94.cf2.rackcdn.com  # from BlockListProject - Ads
+    ! ec01c392919812c4f818-79afe539d963810002081e6e2a51e67e.ssl.cf2.rackcdn.com  # from BlockListProject - Ads
+
 radiant.net$third-party  # mx2.radiant.net/Redirect/...  # Canadian provider. But it spams.
 
 rbc.ru$script,domain=~rbc.ru|~rbk.ru  # strange 3p scripts
@@ -648,9 +987,13 @@ recruitics.com$3p  # is in Adguard  # ad redirects, but..
 
 recurly.com$3p  # ad scripts  # don't block at hosts  # "Subscription Billing"
 
+redirectme.net$3p  # DDNS service
+
 reformal.ru$important,third-party  # adline  # feedback service
 
 regmarkets.ru$3p  # ad scripts
+
+regruhosting.ru$3p  # no root  # many scam subdomains
 
 rockthevote.com$3p
 
@@ -676,6 +1019,8 @@ secureservercdn.net$script,3p
 
 seeip.org$third-party,important  # is in EasyPrivacy and Ru AdList
 
+selfip.com$3p  # subdomains from Coin Blocker List  # Oracle DynDNS
+
 sematext.com$3p  # Sematext - Tracker  # from Quidsup NoTrack-Blocklist  # moved to 3p
 
 sendpulse.com$3p
@@ -685,6 +1030,16 @@ senler.ru$third-party,domain=~vk.com
 seo-monster.ru$3p  # from Adguard
 
 serank.ru$3p  # from Adguard
+
+serveblog.net$3p  # root redirects to noip.com  # ad redirects  # some domains of serveblog.net (Free dynamic DNS, no-ip.com)
+
+serveftp.com$3p  # root redirects to noip.com  # many scam subdomains
+
+serveirc.com$3p  # root redirects to noip.com  # many scam subdomains
+
+servepics.com$3p  # DDNS service  # scam subdomains  # noip.com
+
+servequake.com$3p  # root redirects to noip.com
 
 setka.io$third-party
 
@@ -698,6 +1053,13 @@ sidex.ru$3p  # 3p ad scripts  # sidex.ru/js/install_extension.js
     ###SinoptikInformer
 
 sirv.com$3p,script
+
+site123.me$3p
+    iptvtelevizija.site123.me  # from blocks of Lithuania
+
+sitebeat.site$3p  # no root  # many scam subdomains
+
+sitey.me$3p  # no root  # many scam subdomains
 
 slashdot.org$3p  # from EasyList
 
@@ -729,6 +1091,8 @@ squadhelp.com$3p  # ad scripts  # naming company
 sravni.ru$3p
 sravnikupi.ru$3p
 
+stackpathdns.com$3p  # don't  # Hmmm... Some startups use they subdomains, but...  # from Coin Blocker List
+
 statuscake.com$3p  # Traffic Cake - Tracker  # from Quidsup NoTrack-Blocklist  # moved to sites
 
 stcatherines-stuttgart.de$3p,script
@@ -740,6 +1104,8 @@ stop-list.info$third-party
 ! don't block scripts from stormwall.pro$third-party , they are strangely needed. See zerocoolpro.biz for example
 
 sucuri.net3p  # "We Clean and Protect Websites"
+
+surge.sh$3p
 
 surveyanalytics.com$3p
 
@@ -772,6 +1138,9 @@ survio.com$3p
 svitnews.com$3p  # is in Ru AdList and Adguard
 
 synergyacademy.com$3p  # spam
+
+sytes.net$3p  # DDNS service  # has many subdomains from Coin Blocker List  # from Dan Pollock's hosts file
+sytes.fr$3p
 
 tdnu.ru$3p,script  # Ru AdList rule: *$script,3p,domain=tdnu.ru
 
@@ -809,10 +1178,14 @@ topclimat.ru$3p
 
 topdb.ru$3p
 
+tor2web.to$3p
+
 tradingview.com$3p  # from marketing
 
 ! do not block all subdomains - see the issue about vscode
 trafficmanager.net$3p,domain=~teams.microsoft.com  # ad scripts  # zombie  #bingshoppingtool-t2app-prod.trafficmanager.net
+
+transip.net$3p  # colo.transip.net
 
 ! объединяет проекты TopHotels, HotelsBonus, TurPoisk, RuTraveller
 travelpassport.ru$domain=~tophotels.ru|~topturizm.ru  # 3p scripts on these sites. Maybe just there.
@@ -838,6 +1211,26 @@ twincdn.com$3p,script,image  # from uBlock filters
 typekit.net$third-party,script  # embedded https://use.typekit.net/kdm2zue.js - it is not a font
 
 ucheba.ru$3p  # from Adguard: api.ucheba.ru$third-party
+
+! ucoz
+    ! from Ru AdList: ucoz-форумы
+    ##.a-buttons.blue-but.a-check
+    ! from Ru AdList: ucoz-форумы
+    ##.a-buttons.green-but.a-clock
+!
+    ! ucoz.ru
+a.ucoz.ru  # from Peter Lowe's Ad and tracking server list
+anti-ban.ucoz.ru  # from Ru AdList
+teasers.ucoz.ru  # from Adguard
+    ! ucoz.com
+raskrutka.ucoz.com  # from MVPS
+stock-exchange.ucoz.com  # from Ru AdList
+    ! ucoz.net
+a.ucoz.net  # from MVPS and Peter Lowe's hosts file
+s212.ucoz.net  # from MVPS
+ucounter.ucoz.net  # from MVPS
+    ! ucoz.ua  # 2024: now redirect to .ru
+    ! ucoz.club
 
 uguide.ru$3p
 
@@ -877,9 +1270,18 @@ webex.ru$third-party  # from Ru AdList
 
 weboborona.ru$3p
 
+webredirect.org$3p  # DDNS service  # scam subdomains
+
+website.org$3p
+c.pl$3p  # from GoodbyeAds  # website.org
+
+weebly.com$3p  # many spam subdomains and empty root  # from Energized Blu, GoodbyeAds, Coin Blocker List
+
 week.news$3p  # is in RU AdList
 
 wi-fi.ru$3p  # ad banners and cross-site ad scripts  # static.wi-fi.ru/mtt/banners/  #https://static.wi-fi.ru/mtt/banners/libs/1.5.3/all.js
+
+wix.com$3p  # from Coin Blocker List - ok, they closed all the spammers
 
 ! money for nothing
 wmcentre.net$3p
@@ -895,14 +1297,22 @@ xn-----xlcfvffioc4g.xn--p1ai$third-party  # курсы-по-ит.рф  # from Ru
 
 x-tk.ru$3p
 
+ydns.eu$3p
+ydns.io$3p
+
 yelp.com$3p
 yelpcdn.com$domain=~yelp.com
+
+yola.com$3p
+yolasite.com$3p
 
 yourcodereview.com$3p  # spam
 
 yournewhosting.com$3p  # "© 2001-2008"  # from Adguard
 
 ywxi.net$third-party,domain=~mcafee.com|~mcafeesecure.com  # from Fanboy's
+
+zapto.org$3p  # DDNS service
 
 ! this is not _marketing and _consulnants in general. Moved here.
 zendesk.com$third-party
@@ -955,5 +1365,8 @@ salesiq.zoho.com  # ad scripts  # is in EasyList
 !+  wiki.zoho.com
 !+  writer.zoho.com
 !+  zmverify.zoho.com
+! end of zoho.com
+
+zzz.com.ua
 
 !! todo
