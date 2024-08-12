@@ -361,6 +361,31 @@ toolbar.msn.com
     install.toolbar.msn.com
 toolbar-prod-ch1.search.live.com
 
+! trafficmanager.net - don't block all subdomains. It is a "dyndns-like" service from Azure. See https://learn.microsoft.com/en-us/azure/app-service/configure-domain-traffic-manager
+! t-msedge.net - next step in redirection, see #87
+ams1.next.a.prd.aadg.trafficmanager.net  # ad scripts
+analytics-listener.trafficmanager.net  # from Adaway
+bingads.trafficmanager.net
+bingshoppingtool-t2app-prod.trafficmanager.net  # from ShadowWhisperer's Tracking
+browser.events.data.microsoft.com  # from ShadowWhisperer's Tracking
+browser.events.data.trafficmanager.net  # from ShadowWhisperer's Tracking
+collector-main.trafficmanager.net  # from Adaway
+databrokerservice.trafficmanager.net  # from The SNAFU Blocklist
+databrokerservice2.trafficmanager.net  # from The SNAFU Blocklist
+databrokerservice3.trafficmanager.net  # from The SNAFU Blocklist
+databrokerservicedev.trafficmanager.net  # from The SNAFU Blocklist
+databrokerservicelab.trafficmanager.net  # from The SNAFU Blocklist
+databrokerserviceperf.trafficmanager.net  # from The SNAFU Blocklist
+databrokerservicestg.trafficmanager.net  # from The SNAFU Blocklist
+dc.trafficmanager.net  # from BlockListProject - Ads
+ghochv3eng.trafficmanager.net  # from Adguard and NextDNS CNAME Cloaking Blocklist
+inappprod.trafficmanager.net  # from BlockListProject - Ads
+linkury-services-stats.trafficmanager.net  # from BlockListProject - Ads
+o365diagtelemetry.trafficmanager.net  # from Adguard
+settingsfd-geo.trafficmanager.net  # https://habr.com/ru/company/globalsign/blog/592407/#comment_23767121
+targetednotifications-tm.trafficmanager.net  # from ShadowWhisperer's URL Shorteners
+    ||trafficmanager.net/uet/tracking_script?  # from EasyPrivacy
+
 udc.msn.com  # from Dan Pollock's hosts file
 
 uhf.microsoft.com  # ad xhrs
