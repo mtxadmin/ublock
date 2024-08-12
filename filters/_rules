@@ -3925,6 +3925,7 @@ _site/gotop.  # from Ru AdList
 !
 -gdpr-min.js  # from EasyList
 /dist/gdpr-*$domain=~express.co.uk  # from EasyList
+/gdpr.js$important
 /gdpr/native-message  # from EasyList
 /gdpr/pdcc.  # from Fanboy's
 /gdpr/tracker-loaders.js  # from EasyList
@@ -4107,6 +4108,7 @@ _site/gotop.  # from Ru AdList
     ! /angular-cookie-law.min.js$important  # from Adguard
 /avia-snippet-cookieconsent.js  # from Adguard: /js/avia-snippet-cookieconsent.js
 /aviso_cookies.  # from EasyList
+/becookiebar.js  # from Fanboy's
 /booster_eu_cookie*$important
 /cmp/*  # "consent manager policy"
     ! /cmp/heycookie.js  # from Adguard
@@ -4122,31 +4124,35 @@ _site/gotop.  # from Ru AdList
     ! ||bigcommerce.com/shared/js/storefront/consent-manager-  # from Adguard
 /coockiealert.  # from EasyList
 /cookiealert.$important  # from Adguard
+/cookiebanner.$important
 /cookiebanner/*$important
 /cookie-banner$important  # is in EasyList, Fanboy’s, Adguard
 -cookie-banner-$~image  # from EasyList
 /cookiebar.$important  # from AdGuard
 /cookiebar/*
 /cookie-cnil/*  # from EasyList
-/cookie-consent/*$important  # from Adguard
-/cookie-consent.$important
-    ! /cookie-consent.js$important
-    ! /cookie-consent.*.min.js  # from Adguard
+/cookie-consent$important,domain=~github.com|~gitlab.com
+    ! /cookie-consent?  # from Adguard
+    ! /cookie-consent-
+        ! /cookie-consent-*$script
+            ! /cookie-consent-manager.js  # from Adguard
+            ! /scripts/cookie-consent-  # from Adguard, modified
+    ! /cookie-consent/*$important  # from Adguard
+    ! /cookie-consent.$important
+        ! /cookie-consent.js$important
+        ! /cookie-consent.*.min.js  # from Adguard
 /cookie_consent.js$important
-/cookie-consent?  # from Adguard
 -cookie-consent.js  # from EasyList
 _CookieConsent.js  # from EasyList
 /cookieconsent$important
     ! /cookieconsent.*$important  # from AdGuard
         ! /cookieconsent.min.js$important
     ! /cookieconsent/*$important
+    ! /cookieconsent_  # from Adguard
     ! /cookieconsent2/*$important
         ! ||cloudflare.com/ajax/libs/cookieconsent2/  # from EasyList
     ! /cookieconsentbar.  # from EasyList
     ! /cookieconsentpub/*$important  # from Fanboy's, modified
-/cookie-consent-*$script
-    ! /cookie-consent-manager.js  # from Adguard
-    ! /scripts/cookie-consent-  # from Adguard, modified
 -cookie-consent/$stylesheet  # from Fanboy's
 /cookiecontrol$important
 .cookiecuttr. # is in Fanboy's and EasyList
@@ -4155,6 +4161,8 @@ _CookieConsent.js  # from EasyList
 -cookie-form.lib.  # from EasyList
 /cookieinfo.  # is in EasyList, AdGuard and Fanboy's
 /cookie-info.$important  # from Adguard
+/cookielaw/*  # from Fanboy's, EasyList
+/cookielaw.$~stylesheet  # from Fanboy's, EasyList
 /cookie_law/*$script,important  # from Adguard
 -cookie-law.js  # from Adguard
 _cookie_law.js  # from EasyList
@@ -4165,7 +4173,6 @@ _cookie_law.js  # from EasyList
 /cookie-law-info-public.js  # from Adguard
 /cookielayover.  # from EasyList
 /cookielex/*$important  # from Adguard
-
 /cookie-line.  # from EasyList
 -cookie-message.js  # from Adguard and EasyList
 /cookie-notice/*$script,important  # from AdGuard and Fanboy's
@@ -4254,6 +4261,7 @@ _christmaslights.js  # from Ru AdList
 /snowflakes.min.js  # not from cdnjs.cloudflare.com/ajax/libs/snowstorm/, but similar annoyance
 /snow-storm/*$script  # from Ru AdList
 /snowstorm.js  # from Ru AdList
+/snowstorm2.js  # from Fanboy's
 /snowstorm/lights/  # from Ru AdList
 /snowstorm.min.js  # from Ru AdList
 /snow-storm-*$script  # from Ru AdList
