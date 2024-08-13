@@ -42,7 +42,10 @@ Attention:
 
 https://github.com/blokadaorg/blokada/releases/download/4.11.1/blokada-v4.11.1.apk
 
-Update: The authors removed this working version from Github.
+Update: The authors removed this working version from Github. Options:
+- Download latest v4 from https://github.com/blokadaorg/blokada/releases/tag/archive - latest v4 version there is from 2023-02
+- Download from Russian site (4pda)[https://4pda.to/forum/index.php?showtopic=828196] - but v4 branch there has only 4.8.3 release
+
 
 The address of the hosts file of this project:
 ```
