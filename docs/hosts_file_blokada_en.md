@@ -58,6 +58,8 @@ After adding this new host list, go to *Ad blocking Sessions* and set options:
 
 @ignoramous [recommends](https://github.com/mtxadmin/ublock/issues/54#issuecomment-1381255510) another filtering app: Nebulo. Free and opensource.
 
+Update: its depelopment [stopped](https://github.com/ch4t4r/nebulo) in 2022
+
 Project resources:
 - [Nebulo](https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen). Yes, you can download this app right from the Google Play Market
 - [XDA developers thread](https://forum.xda-developers.com/t/app-5-0-nebulo-dns-changer-for-doh-dot-against-censorship-open-source-no-root.4156645/)
