@@ -97,6 +97,16 @@ Cons:
 - Paid plans [still](https://github.com/serverless-dns/blocklists/pull/81#issuecomment-1383155144) "launching soon"
 - Its blog stopped in [2022](https://blog.rethinkdns.com/)
 
+## AdGuard
+
+Pros:
+- It has versions for Windows, Android, iOS
+- It supports custom filters (like this). Didn't tested it though.
+
+Cons:
+- App can filter traffic for the whole system, but it is [paid](https://adguard.com/en/adguard-android/overview.html) (~30$ a year or ~100$ lifetime)
+- The app is not open source
+
 ## DNS66
 
 DNS66 is another hosts-blocking app. But:
