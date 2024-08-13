@@ -85,8 +85,10 @@ AdAway is well-known app, free and opensource. But:
 ## NextDNS
 
 NextDNS is a service, not an app, but it's worth mentioning.
+
 Pros:
 - It is [efficient](https://github.com/serverless-dns/blocklists/pull/81#issuecomment-1381256209) with larger lists
+
 Cons:
 - The free version is [still](https://github.com/mtxadmin/ublock/issues/54#issuecomment-1381079479) unusable, query limit is far too low
 - You cannot add your blocklist to the system
@@ -96,12 +98,12 @@ Cons:
 ## DNS66
 
 DNS66 is another hosts-blocking app. But:
-- Its depelopment stopped in 2021
+- Its depelopment [stopped](https://github.com/julian-klode/dns66) in 2021
 - It [does not support](https://github.com/julian-klode/dns66/issues/423) asterisks in hosts
 
 ## Pi-Hole
 
-Pi-Hole is a well-known Linux-based locally hosted app. I can't understand, is it support wildcards or not
+Pi-Hole is a well-known Linux-based locally hosted app. I can't understand, does it support wildcards or not
 
 https://www.reddit.com/r/pihole/comments/bu8fvz/enhance_pihole_with_wildcard_blocking_adguard/
 
