@@ -84,7 +84,7 @@ https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt
 ## AdAway
 
 AdAway is well-known app, free and opensource. But:
-- It needs root
+- It needs root. Update: now it can work without root too (local VPN mode)
 - [It does not](https://github.com/AdAway/AdAway/issues/678) support asterisks. Asterisks can be in the whitelist there, but the blacklist is ordinary system [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)).
 
 ## NextDNS
