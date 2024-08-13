@@ -40,7 +40,7 @@ Attention:
 - There are two versions of Blokada: v4 and v5. Fifth CANNOT add custom lists, use fourth
 - In newest versions of Blokada v4 there is [a bug](https://github.com/blokadaorg/blokada/issues/900) which leads to miss some ad requests. Last known good version:
 
-https://github.com/blokadaorg/blokada/releases/download/4.11.1/blokada-v4.11.1.apk
+<strike>https://github.com/blokadaorg/blokada/releases/download/4.11.1/blokada-v4.11.1.apk</strike>
 
 Update: The authors removed this working version from Github. Options:
 - Download latest v4 from https://github.com/blokadaorg/blokada/releases/tag/archive - latest v4 version there is from 2023-02
