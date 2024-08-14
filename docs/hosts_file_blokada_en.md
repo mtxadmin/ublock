@@ -40,9 +40,12 @@ Attention:
 - There are two versions of Blokada: v4 and v5. Fifth CANNOT add custom lists, use fourth
 - In newest versions of Blokada v4 there is [a bug](https://github.com/blokadaorg/blokada/issues/900) which leads to miss some ad requests. Last known good version:
 
-https://github.com/blokadaorg/blokada/releases/download/4.11.1/blokada-v4.11.1.apk
+<strike>https://github.com/blokadaorg/blokada/releases/download/4.11.1/blokada-v4.11.1.apk</strike>
 
-Update: The authors removed this working version from Github.
+Update: The authors removed this working version from Github. Options:
+- Download latest v4 from https://github.com/blokadaorg/blokada/releases/tag/archive - latest v4 version there is from 2023-02
+- Download from Russian site [4pda](https://4pda.to/forum/index.php?showtopic=828196) (downloading there needs registration, or you will see 404 errors) - but v4 branch there has only 4.8.3 release
+
 
 The address of the hosts file of this project:
 ```
@@ -81,7 +84,7 @@ https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt
 ## AdAway
 
 AdAway is well-known app, free and opensource. But:
-- It needs root
+- It needs root. Update: now it can work without root too (local VPN mode)
 - [It does not](https://github.com/AdAway/AdAway/issues/678) support asterisks. Asterisks can be in the whitelist there, but the blacklist is ordinary system [hosts file](https://en.wikipedia.org/wiki/Hosts_(file)).
 
 ## NextDNS
@@ -96,6 +99,16 @@ Cons:
 - You cannot add your blocklist to the system
 - Paid plans [still](https://github.com/serverless-dns/blocklists/pull/81#issuecomment-1383155144) "launching soon"
 - Its blog stopped in [2022](https://blog.rethinkdns.com/)
+
+## AdGuard
+
+Pros:
+- It has versions for Windows, Android, iOS
+- It supports custom filters (like this). Didn't tested it though.
+
+Cons:
+- App can filter traffic for the whole system, but it is [paid](https://adguard.com/en/adguard-android/overview.html) (~30$ a year or ~100$ lifetime)
+- The app is not open source
 
 ## DNS66
 
