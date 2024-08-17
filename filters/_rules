@@ -1589,10 +1589,11 @@ _rebid.js  # from EasyList
     ##div[id^="adrotate_widgets-"]
     ! is in EasyList
     ##.adrotate_widgets
-~24ru.com,~mediafire.com,~obi.ru,~yandex.*##[class^="ads"]:not(html):not(body):not(article):not(#issue)
+~24ru.com,~mediafire.com,~obi.ru,~thesaurus.com,~yandex.*##[class^="ads"]:not(html):not(body):not(article):not(#issue)
     ! Exclusions:
     ! 24ru.com - adv board (buy/sell etc.)
     ! mediafire.com - "ads dl-box" class of the download button
+    ! thesaurus.com - main div (.ads-enabled)
 ~e-du.ru,~yandex.*##[id^="ads"]:not(html):not(body):not(article)
     ! from Ru AdList: ##div[id^="ads_games_"]
     ! is in EasyList: ##.ads-fr
@@ -1626,10 +1627,11 @@ _rebid.js  # from EasyList
     ! is in EasyList
     ##.advertisement-content
 ##[id*="advert"]:not(html):not(body):not(article)
-~aliexpress.com,~aliexpress.ru,~clickup.com,~dzen.ru,~westerndigital.com##[class*="Banner"]:not(html):not(body):not(article):not(#Header)
+~aliexpress.com,~aliexpress.ru,~clickup.com,~dzen.ru,~ultimate-guitar.com,~westerndigital.com##[class*="Banner"]:not(html):not(body):not(article):not(#Header)
     ! Exclusions:
     ! clickup.com - main section, .hasBanner
     ! dzen.ru - .article-thematic-banners__articleThematicBanners-lP - это полезная кнопка, пусть будет. Плюс еще там текст статьи .article-render__withThematicBanners-7w, ну так. See #83
+    ! ultimate-guitar.com - main div (.SiteWideBanner)
 ##[id*="Banner"]:not(html):not(body):not(article)
 ! don't block *banner* by id or class
 ! ##[role="banner"] - in general, don't
