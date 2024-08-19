@@ -1133,6 +1133,7 @@ _banner_rotator.php  # from Adguard
 /js.ng/*  # from CJX's EasyList Lite, modified
 /landing/*$domain=~gosuslugi.ru|~etutorium.com|~qiwi.com|~univerpp.ru|~univer-pp.ru|~walletone.com
 /lazy-loader-banner/*
+@@/images/lazy_placeholder.gif
 /mads/gma
 /main-banner/*
 /marketing.js
@@ -2989,7 +2990,8 @@ _urchin.js  # from Fanboy's
 /video-ga.js  # from EasyPrivacy
 /videojs-analytics.  # from EasyPrivacy
 /videojs-tracking.  # from EasyPrivacy
-/videojs.ga.  # from EasyPrivacy
+/videojs.ga.$important  # from EasyPrivacy
+    ! /videojs.ga.js$important  # from EasyPrivacy
 /videolog?vid=  # from EasyPrivacy
 /videotracking*$important
     ! /videotracking/*  # from EasyPrivacy
@@ -3990,7 +3992,7 @@ _site/gotop.  # from Ru AdList
 /nc-rgpd-cookies.  # from Fanboy's
 /ob_rgpd/*  # from Fanboy's
 /onpc-rgpd/*  # from Fanboy's
-/rgpd.js  # from Fanboy's
+/rgpd.js$important  # from Fanboy's and EasyList
 /rgpd/iab/*  # from Fanboy's
 /rgpd/js/*  # from Fanboy's
 /rgpd_cookie_  # from Fanboy's
