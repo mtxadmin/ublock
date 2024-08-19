@@ -552,6 +552,7 @@ analytics.chase.com  # from Adaway
 analytics.test.cheggnet.com  # from EasyPrivacy
 analytics.cinemax.tv  # from Adguard
 analytics.cn.ru  # from Adguard
+analytics.cnblogs.com  # from EasyPrivacy: analytics.cnblogs.com  # root error
 analytics.cnfanart.com  # from Adguard
 analytics.comunio.de  # from EasyPrivacy
 analytics.corusent.com  # from Adguard
@@ -642,7 +643,7 @@ analytics.tiktoksim.com  # from ShadowWhisperer's Tracking
 analytics.tn.kz  # from Ru AdList
 analytics.tntsports.cl  # from Adguard
 analytics.trutv.com  # from MVPS
-analytics.m7g.twitch.tv  # from Adguard
+analytics.m7g.twitch.tv  # from Adguard and EasyPrivacy
 analytics.ngs55.ru  # from Adguard
 analytics.twitter.com$important  # from EasyPrivacy
 analytics.vendemore.com
@@ -781,7 +782,7 @@ clicks.wawlabs.com  # from Adguard
 ||cmp.$domain=~dns-shop.*
 cmp.acronymfinder.com  # from Adguard
 cmp.deondernemer.nl  # from EasyList
-cmp.ganref.jp  # from Adguard
+cmp.ganref.jp  # from Adguard  # photo site
 cmp.heise.de  # https://cmp.heise.de/unified/wrapperMessagingWithoutDetection.js
 cmp.impress.co.jp  # from Adguard
 cmp.infopro-digital.com  # from EasyList
@@ -852,6 +853,7 @@ consent.amateurphotographer.co.uk  # from EasyList
 consent.berliner-kurier.de  # from EasyList
 consent.boerse-online.de  # from Adguard
 consent.dropbox.com  # from Adguard
+consent.economist.com  # from Adguard
 consent.faz.net  # from EasyList
 consent.finanzen.net  # from Adguard
 consent.google.com  # ||consent.google.com/$subdocument
@@ -1807,6 +1809,8 @@ metrics.thegrocer.co.uk  # from Adguard
 metrics.themercury.com.au  # from Adguard
 metrics.thinkbaby.co.uk  # from Adguard
 metrics.three.co.uk  # from Adguard
+metrics.tiaa.org  # from Adguard
+metrics.tiaa-cref.org  # from Adguard
 metrics.tips.com.au  # from Adguard
 metrics.tnkase.com  # from Adguard
 metrics.tommy.com  # from Adguard
@@ -2059,7 +2063,7 @@ push.daksham.in$important  # empty root  # in 2 lists
 push.englishraven.com  # from Adguard
 push.newscraft.io  # from Adguard
 push.systranbox.com
-push.yandex.ru  # app request
+!push.yandex.ru  # app request  # needed for telemost.yandex.ru (web and possible mobile)
 push.zdips.ru  # from Adguard
 push.zhanzhang.baidu.com  # http://push.zhanzhang.baidu.com/push.js
 
@@ -2075,6 +2079,12 @@ pxl.iqm.com  # iqm.com - Tracker  # from Quidsup NoTrack-Blocklist
 /redirect.
 redirect.2gis.com  # is in Ru AdList
 redirect.ovh.net
+
+||ref.
+ref.clubtv.pro  # from blocks of Lithuania
+ref.elitehrv.com  # from EasyPrivacy
+ref.nix.ru  # private URL shortener
+ref.trade.re  # from Mayakyler's link-shorteners
 
 ||rehs.  # from Hufilter: ||rehs.*.hu^
 
@@ -2428,12 +2438,19 @@ smetrics.tesco.com  # Tesco.Com - Tracker  # from Quidsup NoTrack-Blocklist
 smetrics.tescobank.com  # Adobe - Tracker  # from Quidsup NoTrack-Blocklist
 smetrics.theathletesfoot.com.au  # from Adguard
 smetrics.three.co.uk  # from Adguard
+smetrics.tiaa.org  # from Adguard
+smetrics.tiaa-cref.org  # from Adguard
+smetrics.ticket.dk  # from Adguard
+smetrics.ticket.fi  # from Adguard
+smetrics.ticket.no  # from Adguard
+smetrics.ticket.se  # from Adguard
 smetrics.tiffany.com.br  # from Adguard
 smetrics.tiffany.com.mx  # from Adguard
 smetrics.tiffany.kr  # from Adguard
 smetrics.tiffany.ru  # from Adguard
 smetrics.time.com  # from Adguard
 smetrics.timeout.com  # from Adguard
+smetrics.toyota.com  # from Adguard
 smetrics.travelmoneyonline.co.uk  # from Adguard
 smetrics.trendmicro.co.jp  # from Adguard
 smetrics.truenergy.com.au  # from Adguard
@@ -2553,6 +2570,7 @@ stats.cnevids.com  # from Adguard
 stats.consultnn.ru
 stats.datawrapper.de  # tracking images  # is in Adguard  # do not block datawrapper.de entirely
 stats.ft.com  # from Adguard
+stats.ibtimes.sg  # from EasyPrivacy
 stats.imgpay.ru  # from Adguard
 stats.infox.sg
 stats.kod.ru  # ad scripts  # is in Adguard and EasyPrivacy
@@ -2901,6 +2919,17 @@ track.netzero.net  # from Adguard
 track.nifty.com  # from Adguard
 track.noz.de  # from Adguard
 track.nzz.ch  # from Adguard
+track.opentable.ae  # from EasyPrivacy
+track.opentable.ca  # from EasyPrivacy
+track.opentable.com  # from EasyPrivacy
+track.opentable.de  # from EasyPrivacy
+track.opentable.es  # from EasyPrivacy
+track.opentable.hk  # from EasyPrivacy
+track.opentable.ie  # from EasyPrivacy
+track.opentable.it  # from EasyPrivacy
+track.opentable.jp  # from EasyPrivacy
+track.opentable.nl  # from EasyPrivacy
+track.opentable.sg  # from EasyPrivacy
 track.pokestats.gg  # from Adguard  # pokemons
 track.postkodlotteriet.se  # from Adguard
 track.promptfile.com  # from Adguard
@@ -3796,6 +3825,8 @@ metricus.artlebedev.ru
 
 affiliation.arukereso.hu  # from Hufilter: ||affiliation.arukereso.hu/pbox/
 
+collect.asics.com  # from EasyPrivacy
+
 thj.astrakhan.ru  # from Adguard
 
 instagram.astv.ru  # from Adguard
@@ -3844,6 +3875,8 @@ mobile-tracking.aviasales.ru  # from GoodbyeAds
 metrics-lxc136.aviasales.ru  # from GoodbyeAds
 oqbimz.aviasales.ru  # from GoodbyeAds
 pulse.aviasales.ru  # from Ru AdList
+sp.aviasales.ru  # from EasyPrivacy
+sp.aviasales.com  # from EasyPrivacy
 
 mgo.avid.com  # ad redirects
 
@@ -4094,6 +4127,8 @@ yoda.breakcold.com  # yoda.breakcold.com/static/recorder-v2.js
 
 !zlolhl.briefly.ru  # from GoodbyeAds
 
+meter.bref.sh  # from Adguard
+
 !goku.brightcove.com  # goku.brightcove.com/1pix.gif  # is in MVPS
 sadmin.brightcove.com  # sadmin.brightcove.com/js/BrightcoveExperiences.js
 
@@ -4227,6 +4262,10 @@ veqvek.cp24.com  # from GoodbyeAds
 
 mkpzmq.crocs.ru  # from Adguard
 
+outreach.crossref.org  # from Adguard
+
+l.ctrl.blog  # from EasyPrivacy
+
 pics99.cumlouder.com  # from EasyList
 
 !date.cursorinfo.co.il  # from Adguard
@@ -4236,6 +4275,8 @@ openapi.cymera.com  # from Adaway
 chatbot-cdn.czso.cz  # from Adguard
 
 !cache.daredorm.com  # from MVPS
+
+pm.dailykos.com  # from EasyPrivacy
 
 counter.darkreader.app  # from uBlock filters
 statistics.darkreader.app  # from uBlock filters
@@ -4284,6 +4325,8 @@ oneclicksociallogin.devcloudsoftware.com
 
 directmail.dhgate.com
 survey.dhgate.com
+
+regmdr.pref.ims.dialog-direct.com  # from Adguard and EasyPrivacy
 
 api.digikala.com$important  # from Adguard
 
@@ -4335,7 +4378,7 @@ wfkemc.dmsky.ru  # from GoodbyeAds
 
 clickd.dnagenotek.com  # "DNA Genotek"
 
-eventstream.dodopizza.com  # from Adguard
+eventstream.dodopizza.com  # from Adguard and EasyPrivacy
 
 banners.dogfart.com  # from MVPS
 
@@ -4476,6 +4519,8 @@ script.app.flomllr.com  # shopify scripts
 execution-ci360.flypgs.com  # tracker scripts  # execution-ci360.flypgs.com/js/ot-all.min.js
 
 !a.fobos.tv  # from Ru AdList
+
+sm-sp.followfollow.com  # from Adguard  # soccer site
 
 ab-machine.forbes.com  # from GoodbyeAds
 aax.forbes.com$important  # from ABP
@@ -5008,6 +5053,8 @@ orbit.lun.ua  # ad scripts  # is in Ru AdList
 
 cm8.lycos.com  # from MVPS
 
+mailderef.mail.com  # from Adguard
+
 legacy-telemetry.malwarebytes.com  # Malwarebytes - Tracker  # from Quidsup NoTrack-Blocklist
 genesis.malwarebytes.com  # from EasyPrivacy
 links.e.malwarebytes.com  # from iam-py-test's anti-redirectors
@@ -5021,6 +5068,8 @@ adbn.masterinvest.info  # from Adguard
 eloquamarketing.masterlock.com  # from Adguard
 
 !cmd.maturexxxporno.net  # from Adguard
+
+web.care.mclaren.org  # from Adguard
 
 casino-ad-mediation.me2zengame.com  # from Adguard
 
@@ -5218,8 +5267,6 @@ nkis.nikkei.com  # from Adguard
 
 webmetrics.nintendo-europe.com  # from Adguard
 
-ref.nix.ru  # private URL shortener
-
 data-e3d4300b49.n-tv.de  # is in Adguard
 sourcepoint.n-tv.de
 
@@ -5305,6 +5352,8 @@ b666.penzainform.ru  # from Adguard
 abtesting.perfectcorp.com  # from Adaway
 appad-api-01.perfectcorp.com  # from Adaway
 clad.perfectcorp.com  # from Adaway
+
+asdref.petmountain.com  # from Adguard
 
 ms-trackingapi.phenompeople.com  # is in EasyPrivacy  # don't block entirely
 
@@ -5610,6 +5659,8 @@ shopify-chat.shopifyapps.com  # from ShadowWhisperer's Chats
 
 asg.shudhdesiporn.com  # from Adguard
 
+platformsolutions.shutterstock.com  # from Adguard
+
 vote.sibnet.ru  # from Adguard
 
 te.signonsandiego.com  # from Dan Pollock's hosts file
@@ -5617,6 +5668,8 @@ te.signonsandiego.com  # from Dan Pollock's hosts file
 mefaux.silverlife.ru  # from Adguard
 
 adsystem.simplemachines.org  # from MVPS
+
+w-profiling.simplii.com  # from EasyPrivacy
 
 t.simply-hentai.com  # from uBlock filters
 
@@ -5814,6 +5867,16 @@ dclk.themarker.com  # is in MVPS and Dan Pollock's hosts file
 meitavads-18723.kxcdn.com  # ad scripts
 
 thestrad-gb.thestrad.com  # from Adguard
+
+check3.tiaa.org  # from Adguard
+check3.tiaabank.com  # from Adguard
+check3-qa1.test.tiaabank.com  # from Adguard
+check3-qa2.test.tiaabank.com  # from Adguard
+app.am.tiaa-cref.org  # from Adguard
+app.info.tiaa-cref.org  # from Adguard
+check3.tiaa-cref.org  # from Adguard
+insights.tiaa-cref.org  # from Adguard
+learn.tiaa-cref.org  # from Adguard
 
 c.ticketmanager.com
 
