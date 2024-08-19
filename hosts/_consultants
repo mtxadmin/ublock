@@ -58,7 +58,7 @@
 /firebase-app.js
 /firebase.js  # from Adguard, modified
 /firebasejs/*
-/firebase-messaging.js
+/firebase-messaging.js  # is in Adguard
 /firebase-messaging-sw.js
 /firebase_subscribe.js
 /fuckadblock$script,important
@@ -173,7 +173,6 @@
 /web-push-$important  # is in Fanboy's  # my old version (Fanboy's is more general): /web-push-client/*$important
 /whatschat$important
 /widgets/eu-cookie-law/*$important
-/wrapperMessagingWithoutDetection.js  # from Adguard
 /wutime_adblocktracker/*$important
 !
 ! cosmetic filters
@@ -209,7 +208,7 @@
     ! openai.com - ChatGPT
     ! theb.ai - ChatGPT
     ! worknf.ru - don't remember, I think, videos/streams
-~advance24.online,~alfabank.ru,~aliexpress.com,~auto.ru,~bastyon.com,~pocketnet.app,~bizon365.ru,~clickmeeting.com,~dhgate.com,~fincult.info,~followme2serbia.com,~gosuslugi.ru,~chatik.hh.ru,~icq.com,~openai.com,~psbank.ru,~sberbank.ru,~telemetr.io,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
+~advance24.online,~alfabank.ru,~aliexpress.com,~auto.ru,~bastyon.com,~pocketnet.app,~bizon365.ru,~clickmeeting.com,~dhgate.com,~fincult.info,~followme2serbia.com,~gosuslugi.ru,~chatik.hh.ru,~icq.com,~openai.com,~psbank.ru,~sberbank.ru,~telemetr.io,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
     ! Exclusions:
     ! advance24.online - videos/streams
     ! aliexpress.com - useful support chat
@@ -231,9 +230,9 @@
     ! twitch.tv - videos/streams
     ! vk.com - chat windows on a social network
     ! worknf.ru - don't remember, I think, videos/streams
-    ! telemost.yandex.ru - like Russian Zoom, videoconferences (bad, but it was a nice try)
+    ! yandex.ru - like Russian Zoom, videoconferences (bad, but it was a nice try; telemost.yandex.ru and yandex.ru/chat)
     ! youtube.com - videos/streams. See #61
-~alfabank.ru,~bizon365.ru,~clickmeeting.com,~facebook.com,~gosuslugi.ru,~chatik.hh.ru,~openai.com,~psbank.ru,~sberbank.ru,~telethon.dev,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~youtube.com,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"])
+~alfabank.ru,~bizon365.ru,~clickmeeting.com,~facebook.com,~gosuslugi.ru,~chatik.hh.ru,~openai.com,~psbank.ru,~sberbank.ru,~telethon.dev,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"])
     ! Exclusions:
     ! banks - useful support chat
     ! bizon365.ru - videos/streams
@@ -246,6 +245,7 @@
     ! twitch.tv - videos/streams
     ! vk.com - chat windows on a social network
     ! worknf.ru - don't remember, I think, videos/streams
+    ! yandex.ru - chat window for telemost.yandex.ru (or yandex.ru/chat)
     ! youtube.com - videos/streams. See #61
     ! zoom.us - teleconference service
 !
@@ -565,10 +565,9 @@ beesender.com$important  # from Adguard
 
 bespokechat.com  # from ShadowWhisperer's Chats
 
-bigreal.org$important  # is in Peter Lowe’s Ad and tracking server list  # push ad scripts (/pushJs/)
-forwardrb.bid$important  # Checked:2024-08-05
-hrbpark.bid$important
-realpush.media$important
+bigreal.org$important  # is in Peter Lowe’s Ad and tracking server list  # push ad scripts (/pushJs/)  # realpush
+forwardrb.bid$important  # realpush  # Checked:2024-08-05
+hrbpark.bid$important  # realpush
 
 bihunekus.com  # push ad scripts
 
@@ -1456,7 +1455,7 @@ gotalk.ru  #www.gotalk.ru
 got-a-message.com  # "Click here to start"
 presstocontinue.com  # "Click here to start"
 pornoleaky.com  # "Click here to start"
-beabsolom.com  # similar to  # "Click here to start"
+beabsolom.com  # similar to  # "Click here to start"  # Checked:2024-08-14
 streamyourvid.com  # "Click here to start"
 alespeonor.com  # "Click here to start"
 dumbpop.com  # "Click here to start"
@@ -1473,7 +1472,7 @@ gravitel.ru
 
 greechat.com  # from ShadowWhisperer's Chats
 
-gresokie.com  # from Ru AdList
+gresokie.com  # from Ru AdList  # Checked:2024-08-14
 
 growthpush.com  # from GoodbyeAds
 
@@ -2027,6 +2026,8 @@ neopush.io  # from EasyList
 
 neptuneadspush.com  # from GoodbyeAds
 
+netalerts.io  # no root  # from Peter Lowe's: tracking.netalerts.io
+
 netroxsc.com
 netroxsc.ru
 
@@ -2255,7 +2256,7 @@ propushka.com  # from Ru AdList
 prostor-lite.ru  # from Ru AdList
 
 provely.io  # "Boost Conversions By ... Social Proof"  # ad popups
-||amazonaws.com/provely-public/
+    ||amazonaws.com/provely-public/
 
 provesrc.com$important  # "converting social proof notifications"  # from uBlock filters  #||cdn.provesrc.com/provesrc.js
 
@@ -2350,7 +2351,7 @@ pushads.biz$important  # push ads network
 
 pushads.io  # from EasyList
 
-pushadv.biz  # from Adguard  # Checked:2024-05-28
+pushadv.biz  # from Adguard
 
 pushadvert.bid  # push ad scripts  # is in Ru AdList
 
@@ -2957,7 +2958,7 @@ reallygoodchatbots.com  # from ShadowWhisperer's Chats
 
 realpush.digital  # from Adguard
 
-realpush.media  # from Adguard
+realpush.media$important  # realpush  # is in Adguard
 
 realpush.net$important  # push ads network
 realpush.network  # from GoodbyeAds
@@ -3492,7 +3493,7 @@ twin24.ai
 
 twintwoo.ai  # "chatbot"  # ad scripts
 
-ugrastes.uk  # from Ru AdList
+ugrastes.uk  # from Ru AdList  # Checked:2024-08-14
 
 uhchat.net  # from Adguard and ShadowWhisperer's Chats
 
