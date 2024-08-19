@@ -96,6 +96,9 @@ clck.yandex.com.tr
 clck.yandex.kz
 clck.yandex.ru
 !clck.yandex.ua   # till 2022
+    !
+clck.dzen.ru  # from ShadowWhisperer's Tracking
+    !
 ||yandex.*/clck/  # from Ru AdList
 ||yandex.ru/click/  # from Ru AdList
 
@@ -212,7 +215,7 @@ zen-test.yandex.ru  # from Ru AdList
 300.ya.ru  # Yandex URL shortener
 
 ad-constructor.yandex.ru
-adsdk.yandex.ru
+adsdk.yandex.ru  # also is in ShadowWhisperer's Tracking
 http-check-headers.yandex.ru
 uptime-info.yandex.ru
 
@@ -288,7 +291,7 @@ search.mobile.yandex.net
 setup-wizard.mobile.yandex.net
 setup-wizard.tst.mobile.yandex.net
 shell-resizer.mobile.yandex.net
-soft.export.yandex.ru  # soft.export.yandex.ru/status.xm  # soft.export.yandex.ru/status.xml?... - Yandex browser statistics
+soft.export.yandex.ru  # soft.export.yandex.ru/status.xm  # soft.export.yandex.ru/status.xml?... - Yandex browser statistics  # ||soft.export.yandex.ru/status.xml?stat=dayuse&banerid=
 sovengard.mobile.yandex.net
 staging-startup.mobile.yandex.net
 startup.ios.mobile.yandex.net
@@ -310,7 +313,9 @@ awsync.yandex.ru  # from Adguard and Ru AdList
 share.yandex.ru$important,all
 share.yandex.net$important,all
 
-static-mon.yandex.net$important  # from Ru AdList
+static-mon.yandex.net$important,all  # from Ru AdList
+    ||static-mon.yandex.net$script,redirect=noopjs  # from Ru AdList
+    ||static-mon.yandex.net$xmlhttprequest,redirect=nooptext  # from Ru AdList
 
 z5h64q92x9.net
 !+  pssp.z5h64q92x9.net
@@ -334,14 +339,25 @@ plus.yandex.ru
 sba.yandex.net
 sba.yandex.ru  # ad redirects  # again  # https://sba.yandex.ru/redirect?url=...
 
-offerwall.yandex.net  # from Adguard
+offerwall.yandex.net  # from Adguard and BlockListProject - Ads
 
 # update: let's block this "messenger" completely
 messenger.yandex.net
     ! seen on one of Yandex sites
     ! tools.messenger.yandex.net
-messenger.yandex.ru
+!messenger.yandex.ru  # needed for yandex.telemost
     ! uniproxy.messenger.yandex.ru
+        ! messenger.yandex.ru
+        ! api.messenger.yandex.ru
+        ! backend.messenger.yandex.ru
+        ! chats.messenger.yandex.ru
+        ! chats-sandbox.messenger.yandex.ru
+        ! crashreport.messenger.yandex.ru
+        ! download.messenger.yandex.ru
+        ! external.files.messenger.yandex.ru
+        ! files.messenger.yandex.ru
+        ! images.messenger.yandex.ru
+        ! uniproxy.messenger.yandex.ru
 ||yastatic.net/s3/chat-static/
 chat.s3.yandex.net
 
