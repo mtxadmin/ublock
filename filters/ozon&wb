@@ -160,6 +160,8 @@ ozon.ru##a[href^="/travel/info/hotels-cashback/"]
 ozon.ru##[data-widget="objectBannerList"]
 ozon.ru##[data-widget="advVideoBannerMobile"]
 ozon.ru##a:has(>img[data-lcp-name*="advVideoBannerMobile"])
+! Ru AdList rule
+ozon.ru##[data-lcp-name*="anner-"]
 ozon.ru##[data-widget="webPremiumPointsInfo"]
 ozon.ru##[data-widget="webMarketingLabels"]
 ozon.ru##[data-widget="premiumBanner"]
@@ -386,7 +388,7 @@ ozon.ru##span:has-text(Условия доставки из-за рубежа):s
 ozon.ru##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в ответ/)))
 ! new design
 ozon.ru##div:has(>div>span:has-text(/0 комментариев|1 комментарий/))
-ozon.ru##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/))
+ozon.ru##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/)):not(div[reviewuuid])
 ! and also. Old design.
 ! reviews without text are useless
 ozon.ru##div[data-review-uuid]:not(:has-text(/Вам помог этот отзыв\?|Показать весь отзыв/)):not(:matches-path(/my/reviews))
