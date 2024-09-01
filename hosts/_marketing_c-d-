@@ -1443,13 +1443,31 @@ cedato.com$important  # from Peter Lowe's hosts file and Blogscan
 cedatoplayer.com  # from ShadowWhisperer's Ads
 
 cedexis.com$important  # other: radar.cedexis.com/...  # is in Adguard and from Ru AdList
+! do not block cedexis.net and cdx.cedexis.net. Instead block:
+flipd.cedexis.net
+flipg.cedexis.net
+flipm.cedexis.net
+flipp.cedexis.net
+init.cedexis.net
+radar.cedexis.net
+    ! cedexis.net has ad CNAMEs, but it has also some useful subdomains
+    ! uBlock Origin filters: "CDNs must not be blocked"
+    ! cedexis.com$3p,badfilter  # from uBlock filters – Unbreak  # later removed
+    ! cedexis.net$3p,badfilter  # from uBlock filters – Unbreak
+    ! See issues:
+    ! https://github.com/uBlockOrigin/uAssets/issues/7005
+    ! https://github.com/uBlockOrigin/uAssets/issues/7012#issuecomment-592815205
+    ! https://github.com/blocklistproject/Lists/issues/503
+    ! https://github.com/mtxadmin/ublock/issues/89
 cedexis-radar.net  # from Adguard
 !+  init.cedexis-radar.net
 ! end of cedexis-radar.net
-
-cedexis.net  # from EasyPrivacy
-
 cedexis-test.com  # CedexisRadar - Tracker  # from Quidsup NoTrack-Blocklist
+    /cedexis.js  # from EasyPrivacy
+    /cedexis.radar.js  # from EasyPrivacy
+    /vendor/cedexis/*  # from EasyPrivacy
+    cedexis-ssl.cdn.warpcache.net  # CedexisRadar - Tracker  # from Quidsup NoTrack-Blocklist
+    hstats.hepsiburada.com  # CedexisRadar CNAME - Tracker  # from Quidsup NoTrack-Blocklist
 
 ceepq.com  # from EasyList
 
