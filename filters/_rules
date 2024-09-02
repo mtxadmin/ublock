@@ -3608,7 +3608,8 @@ _wtInit.js  # from Fanboy's
 ##.to-bottom
 ###toolbar_scrollup
 ##.toolbar-scrollup
-~biomarkt.de,~fss.ru,~hashdork.com,~onlinesim.io,~scat.kz,~thestrad.com,~ugona.net,~urban3p.ru###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper):not(.site):not(.page-wrapper)
+! Ok, too manu exclusions here. Disabled.
+!~biomarkt.de,~fss.ru,~hashdork.com,~onlinesim.io,~scat.kz,~thestrad.com,~ugona.net,~urban3p.ru###top:not(html):not(body):not(article):not(table):not(.p-pageWrapper):not(.btPageWrap):not(.wrapper):not(.wrap):not(.main-page-wrapper):not(.global-wrapper):not(.site):not(.page-wrapper)
     ! Exclusions:
     ! biomarkt.de - #top is a main div (#87)
     ! fss.ru - #top is a header (.wrapper > #top)
@@ -3618,11 +3619,12 @@ _wtInit.js  # from Fanboy's
     ! thestrad.com - #top is a main div
     ! ugona.net - ul .pagination #top
     ! urban3p.ru - top menu (body > #top .top > top-container)
-~alfaprojet.ru,~gnu.org,~nano-editor.org,~planetazdorovo.ru,~urban3p.ru##.top:not(html):not(body):not(article):not(table):not(ul)
+!~alfaprojet.ru,~gnu.org,~nano-editor.org,~planetazdorovo.ru,~urban3p.ru##.top:not(html):not(body):not(article):not(table):not(ul)
     ! Exclusions:
     ! alfaprojet.ru - .top is a part of main div
     ! gnu.org - .top is a main div ()
     ! planetazdorovo.ru - not totop button, useful map popups
+    ! pufgun.com - not totop button, part of main content
     ! urban3p.ru - top menu (body > #top .top > top-container)
 ##.top-btn
 ###top-but
