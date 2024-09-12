@@ -118,7 +118,7 @@ DNS66 is another hosts-blocking app. But:
 
 ## Pi-Hole
 
-Pi-Hole is a well-known Linux-based locally hosted app. I can't understand, does it support wildcards or not
+Pi-Hole is a well-known Linux-based locally hosted app. It still doesn't support wildcard domains in blocklists
 
 https://www.reddit.com/r/pihole/comments/bu8fvz/enhance_pihole_with_wildcard_blocking_adguard/
 
@@ -127,6 +127,12 @@ https://discourse.pi-hole.net/t/using-blocklist-to-add-wildcard-blocked-domains/
 https://discourse.pi-hole.net/t/support-wildcards-in-local-dns-records/32098/24
 
 https://www.reddit.com/r/pihole/comments/bu8fvz/enhance_pihole_with_wildcard_blocking_adguard/
+
+Additionally, it doesn't support regexes in blocklists. Example ("Domains on Adlists: 0" after importing):
+
+https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list
+
+This is [by design](https://discourse.pi-hole.net/t/collection-of-regex-for-blacklisting/43178/10).
 
 ## Other
 
