@@ -1062,7 +1062,7 @@ _banner_rotator.php  # from Adguard
 /dfpsds.  # from EasyList
 /dfpsearchads.  # from EasyList
 /disable-devtool$important,all
-    ||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js  # from uBlock filters
+    ||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js  # from uBlock filters and Adguard
     ||motphim123.com/assets/js/disable-devtool.min.js  # from uBlock filters
 /disable-selection-  # is in Fanboy's
 /discourse-adplugin-  # ad scripts  # is in EasyList
@@ -2583,6 +2583,7 @@ _analytics.js?  # from EasyPrivacy
 /analytics.$important
     ! /analytics.js$important  # uBlock exclusion
     ! /analytics.min.js$important
+    ! /ezais/analytics?  # is in EasyPrivacy
     ! and many many EasyPrivacy rules
 .analytics.min.  # from EasyPrivacy
 /analytics^
@@ -2590,7 +2591,7 @@ _analytics.js?  # from EasyPrivacy
     ||hh.ru/analytics^  # is in Adguard
     ||career.ru/analytics^
     ||rabota.by/analytics?  # is in EasyPrivacy
-/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~globalvoices.org|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~twitter.com|~zoho.com|~zoho.eu
+/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~globalvoices.org|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~twitter.com|~x.com|~zoho.com|~zoho.eu
     ! Exclusions:
     ! alfabank - финансовая аналитика по счету
     ! duckduckgo - it blocks any search about analytics. Other search systems are ok.
@@ -2602,6 +2603,7 @@ _analytics.js?  # from EasyPrivacy
         ! увы, но иначе в Сбербанк и Домклик не входит
         !||sberbank.ru/*analytics$script,redirect=noopjs
         @@||sberbank.ru/*analytics$script
+    ! x.com (Twitter): @@||twimg.com/responsive-web/client-web/shared~bundle.AccountAnalytics~bundle.UserProfile...
     !
     ! zoho - internal(?) analitycs
     ! /rest/analytics/*  # is in EasyPrivacy
@@ -4189,6 +4191,7 @@ _cookie_law.js  # from EasyList
 /cookie-notice/*$script,important  # from AdGuard and Fanboy's
 /cookienotice.$important  # is in EasyList, AdGuard and Fanboy's
 /cookienotification.$important  # from Adguard
+/cookienotificationbar.min.js$important  # from Adguard
 /cookie_notification.js
 /cookie.policy.  # from SecurityEntire CookieFilter
 /cookie-policy.js$important  # from Adguard
