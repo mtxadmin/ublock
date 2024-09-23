@@ -100,9 +100,6 @@ bingads.glbdns2.microsoft.com
     ! resources.bingads.glbdns2.microsoft.com
     ! si.bingads.glbdns2.microsoft.com
 
-! in many sources, for instance, see https://brave.com/popular-browsers-first-run/
-browser.events.data.msn.com
-
 c.bing.com  # from MVPS
 !c.microsoft.com  # from Ru AdList
 c.msn.com  # is in Dan Pollock's hosts file
@@ -169,9 +166,17 @@ microsoftedgewelcome.microsoft.com
 
 edge.skype.com  # https://brave.com/popular-browsers-first-run/
 
+ecs.office.com  # net requests  # https://github.com/parseword/nolovia/issues/7
 engagement.office.com  # app requests
 
 events.data.microsoft.com  # https://www.bleepingcomputer.com/news/microsoft/windows-10-hosts-file-blocking-telemetry-is-now-flagged-as-a-risk/
+    ! browser.events.data.microsoft.com  # from ShadowWhisperer's Tracking
+    ! mobile.events.data.microsoft.com  # net requests
+events.data.msn.com
+    ! in many sources, for instance, see https://brave.com/popular-browsers-first-run/
+    ! browser.events.data.msn.com
+events.data.trafficmanager.net
+    ! browser.events.data.trafficmanager.net  # from ShadowWhisperer's Tracking
 
 !fe2.update.microsoft.com.akadns.net
 
@@ -208,6 +213,8 @@ in.appcenter.ms  # do not block appcenter.ms entirely  # blocked by some adlist 
 iris.microsoft.com  # https://brave.com/popular-browsers-first-run/
 
 !lb1.www.ms.akadns.net  # from Dan Pollock's hosts file
+
+logging.pw.adn.cloud  # from EasyPrivacy  # MS ADN Cloud?  # adn.de, adncloud.de ?
 
 measure.office.com  # from Peter Lowe's hosts file
 !+  fp.measure.office.com
@@ -367,8 +374,6 @@ ams1.next.a.prd.aadg.trafficmanager.net  # ad scripts
 analytics-listener.trafficmanager.net  # from Adaway
 bingads.trafficmanager.net
 bingshoppingtool-t2app-prod.trafficmanager.net  # from ShadowWhisperer's Tracking
-browser.events.data.microsoft.com  # from ShadowWhisperer's Tracking
-browser.events.data.trafficmanager.net  # from ShadowWhisperer's Tracking
 collector-main.trafficmanager.net  # from Adaway
 databrokerservice.trafficmanager.net  # from The SNAFU Blocklist
 databrokerservice2.trafficmanager.net  # from The SNAFU Blocklist
@@ -409,7 +414,7 @@ watson.data.microsoft.com.akadns.net
 wns.windows.com  # push notifications for Windows. See https://docs.microsoft.com/ru-ru/windows/privacy/manage-windows-1809-endpoints
 wns.notify.windows.com.akadns.net  # https://www.bleepingcomputer.com/news/microsoft/windows-10-hosts-file-blocking-telemetry-is-now-flagged-as-a-risk/
 
-xandr.com  # MS ad platform
+xandr.com  # MS ad platform  # "advertising and analytics subsidiary of Microsoft"  # is in Blogscan and EasyList
 !+  curate.xandr.com
 !+  invest.xandr.com
 !+  monetize.xandr.com
