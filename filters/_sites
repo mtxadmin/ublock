@@ -1801,6 +1801,12 @@ apexsql.com###top_menu_main_logo
 
 aphorismos.ru/_informer/*
 
+||apkpure.com/analytics
+
+apnews.com##.Page-trendingZephr
+apnews.com##.Page-header-stickyWrap:style(position:static !important)
+apnews.com##.Enhancement:has-text(RELATED)
+
 apomusic.ru##.site-desc-wr
 
 # @@||www.aport.ru^$generichide,badfilter  # yes, that rule is needed
@@ -2693,6 +2699,8 @@ avon.com###TopNavigationContainer:style(position:static !important)
 avon.com###d-hero-carousel
 
 avtera.ru##.header-menu
+
+avto.pro##.news_seo_block
 
 ||avtoall.ru/pic/articles_bg_men.png
     ! popups
@@ -8284,6 +8292,9 @@ fajn-brigady.cz##.jak-najit-brigadu-side-image
 fajn-brigady.cz##.featured-posts
     ! other
 
+fakty.com.ua##.navbar-logo-text
+fakty.com.ua##.how-to-edit
+
 fakty.ua##.shapka_fix:style(position:static !important)
 fakty.ua##.weather_widget
 ! NOT ad banner, this is sidebar with related articles
@@ -8521,6 +8532,8 @@ ferma.expert$inline-script  # site blocks copypaste
 ferma.expert##.waves-footer
 ferma.expert###recallbar:style(position:static !important)
 ferma.expert##.header2
+
+ferma.land$inline-script  # site blocks copypaste
 
 fermer.ru##.navbar-nav:style(position:static !important)
 fermer.ru##.menu:style(position:static !important)
@@ -8870,6 +8883,7 @@ fontanka.ru##svg[data-test=logo]
 food.ru##[class^=Onboarding_wrapper]
 ! top
 food.ru##[class^=header_sticky]:style(position:static !important)
+food.ru###rate-or-share
 
 foodandhealth.ru###ag_warning_header
 
@@ -9402,6 +9416,9 @@ garvis.ca##.header
 gastronom.ru##[class*=_nps_]
 gastronom.ru##[class^=_sidebar_]
 gastronom.ru##[class*=_ageLimitIcon_]
+! top sticky
+gastronom.ru###teleported
+gastronom.ru###rating:has-text(войдите)
 
 gaw.ru##.tx
 
@@ -10625,6 +10642,9 @@ hideproxy.me##.hidemeproxy__button--get.hidemeproxy__button--primary.hidemeproxy
 hideproxy.me##.hidemeproxy__frame-header:style(position:static !important)
 ! some empty span - overlay?
 hideproxy.me##.hidemeproxy__frame
+
+! useless pictures with logo
+hinative.com##img[src*="ogp-v2.hinative.com/ogp/question"]
 
 hipolink.net##.ArticleContent__notificationText
 
@@ -18540,6 +18560,7 @@ olore.ru##.fone
 olx.ua,olx.kz###headerLogo
 olx.ua,olx.kz##.navi:style(position:static !important)
 olx.ua,olx.kz###innerLayout:style(padding-top:0px !important)
+olx.ua##a[href="/uk/"] span
     ! banners and promos
 olx.ua,olx.kz##.siteinfobox
 olx.ua,olx.kz###mainpageAds
@@ -18745,6 +18766,8 @@ opera.com##.hf__label,.hf__label::after:style(height:auto !important; padding-to
 opera.com##.sub-header
 
 operatingquadrant.com###header
+
+opnsense.org###info_bar
 
 optakula74.ru##.ir-arriba
 
@@ -20508,6 +20531,8 @@ prnt.sc##.header
 
 proakkym.info##.arrow-topsroll_site
 
+pro-arbuz.ru###toc_container
+
 probirka.org##.slick-track
 probirka.org##.store-links
 probirka.org##p:has-text(Telegram-канале)
@@ -20749,6 +20774,7 @@ psafe.ru##.contact
 psafe.ru##.tp-revslider-mainul
 psafe.ru##h4 > span
 
+||psbank.ru/personaloffering/
 	! popups
 ! False positive in Ru AdList and Adguard: not only cookie(?) popups, but useful interface buttons too
 ib.psbank.ru#@#.cdk-overlay-container
@@ -26176,6 +26202,12 @@ tgstat.com##body .wrapper .content-page:style(padding-top:0px !important)
 
 tgstat.ru##.content-page:style(padding-top:0px !important)
 
+thealphacentauri.net##.comment-form-area:has-text(два кліки)
+! paywall
+thealphacentauri.net##.post:has(.entry-title:has-text(Захищено:))
+! fake notification counter
+thealphacentauri.net##.notification-badge:has-text(/^1$/)
+
 thearraypost.com##.td-loader-gif
 thearraypost.com##.ss-popup-overlay
 
@@ -28111,6 +28143,7 @@ v-banyu.ru##img:style(opacity:1 !important)
 vbr.ru##.footer-links-apps
 
 ||vc.ru/hit  # is in Adguard
+||vc.ru/static/special/yota-stratum/  # from Adguard
     ! popups
 vc.ru##.mobile-bar
 vc.ru##.mobile-bar-container
@@ -28484,6 +28517,9 @@ vkcyprus.com###logo-mob
 
 vkernel.ro###header
 vkernel.ro##.clasadiv
+
+vkusneda.ru$inline-script  # site breaks copypaste
+vkusneda.ru###toc_container
 
 ||vkusnyy.top/*/sunrise_background1.jpg
 
@@ -28991,6 +29027,14 @@ vshf.ru##.cs-header-company-info__description
 @@||vsthouse.ru^$generichide,badfilter
 
 vsugrobe.ru##.overlay
+
+vsvoemdome.ru$inline-script  # site blocks copypaste
+vsvoemdome.ru###ez-toc-container
+vsvoemdome.ru##+js(set-attr, img[data-lazyloaded], src, [data-src])
+vsvoemdome.ru##.article_author
+vsvoemdome.ru##.subscribe_info
+vsvoemdome.ru##.find_error
+vsvoemdome.ru##.notice
 
     ! popups
 vtb.ru##.modal-send__content
