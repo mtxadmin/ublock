@@ -8011,6 +8011,13 @@ pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[da
     ! https://pikabu.ru/story/v_donetske_vozlozhili_tsvetyi_v_pamyat_o_zakharchenko_10408551
     ! https://pikabu.ru/story/putin_zayavil_chto_pervostepennoe_vnimanie_udelyaet_voprosam_svo_10406320
 
+pikabu.ru##span:has-text(/^Fanatic$/):style(color:#D0D0D0 !important)
+pikabu.ru##article.story:has(.user__nick[data-name="Fanatic"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
+pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="Fanatic"]):not(:matches-path(/\/story\//))~div
+pikabu.ru##.comment__body:has(.comment__header>.comment__user> a > .user__nick:has-text(/^Fanatic$/)):style(color:#F0F0F0)
+pikabu.ru##.rv-related:has(.story__header:has(.story__user-info > .user__nick[data-name="Fanatic"]))
+    ! https://t.me/baba_i_kit/29840
+
 pikabu.ru##span:has-text(/^nikitaabbasov$/):style(color:#D0D0D0 !important)
 pikabu.ru##article.story:has(.user__nick[data-name="nikitaabbasov"]):not(:matches-path(/@)):not(:matches-path(/\/story\//))
 pikabu.ru##.story__header:has(.story__user-info > .user__nick[data-name="nikitaabbasov"]):not(:matches-path(/\/story\//))~div
