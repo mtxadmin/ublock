@@ -7,6 +7,16 @@
 
 !! domains
 
+360safe.com  # root 504  # https://www.reddit.com/r/Android/comments/ektg8u/chinese_spyware_preinstalled_on_all_samsung/
+!+  cloud.360safe.com
+    ! mvconf.cloud.360safe.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
+    ! mclean.cloud.360safe.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
+360totalsecurity.com
+360.cn  # https://www.reddit.com/r/Android/comments/ektg8u/chinese_spyware_preinstalled_on_all_samsung/
+!+  f.360.cn
+!+  s.360.cn
+! end of 360 cn spying
+
 4pdd.ru  # app requests to geoip.4pdd.ru and 504 root  # now is in several blocklists
 
 4sync.com  # some app wants to go there. Not official, of course - 4sync doesn't have any. Very suspicious. And 4sync (paid cloud service) doesn't have free plan.
@@ -53,6 +63,9 @@ webcollector-2.agora.io
 webcollector-rtm.agora.io
     /projectagora.min.js$important  # from ABP
 
+allawnos.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
+allawntech.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
+
 !data.alexa.com  # from NextDNS native-tracking-domains alexa
 device-metrics-us.amazon.com  # from NextDNS native-tracking-domains alexa
 device-metrics-us-2.amazon.com  # from NextDNS native-tracking-domains alexa
@@ -73,7 +86,12 @@ api-hprof.odkl.ru  # odnoklassniki.ru telemetry service
 
 bugpilot.io
 
+coloros.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
+
 digma.ai  # "Continuous Feedback platform ... collects code runtime data using OpenTelemetry behind the scenes"
+
+dmevent.net  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491480390  # root redirects to dmevent7.modoo.at
+modoo.at  # Korean site
 
 collector-hpn.ghostery.net  # from Adguard
 
@@ -128,13 +146,16 @@ splash.appsgeyser.com  # from Adguard
 
 an.avast.com  # from GoodbyeAds
 ans.avast.com  # from GoodbyeAds
-bugs-bunny.sb.avast.com  # from GoodbyeAds
-bugs-bunny-stage.sb.avast.com  # from GoodbyeAds
-!bugs-bunny-test.sb.avast.com  # from GoodbyeAds
+sb.avast.com
+    ! bugs-bunny.sb.avast.com  # from GoodbyeAds
+    ! bugs-bunny-stage.sb.avast.com  # from GoodbyeAds
+    ! !bugs-bunny-test.sb.avast.com  # from GoodbyeAds
+    ! shepherd.sb.avast.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 ff.avast.com  # +
     ! analytics.ff.avast.com  # from MobileAdTrackers
     ! analytics-test.ff.avast.com  # from GoodbyeAds
     ! analytics.ns1.ff.avast.com  # from MobileAdTrackers
+    ! apkrep.ff.avast.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491480390
     ! apkrep-stage.ff.avast.com  # from GoodbyeAds
     ! apkrep-test.ff.avast.com  # from GoodbyeAds
     ! feed.ff.avast.com  # from GoodbyeAds
@@ -241,6 +262,8 @@ plusone.google.com  # ||plusone.google.com^$third-party,important  # from Ru AdL
 clouderrorreporting.googleapis.com  # Google - Tracker  # from Quidsup NoTrack-Blocklist
 firebaselogging.googleapis.com  # Firebase - Tracker  # from Quidsup NoTrack-Blocklist
 
+gos-gsp.io  # no root  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
+
 api.green-way.com.ua  # app requests  # don't block root
 
 # it turned out that hicloud.com is Huawei Cloud. Don't block entirely, only some subdomains
@@ -296,6 +319,7 @@ push6.hicloud.com
 !push8.hicloud.com
 push9.hicloud.com
 pushaix1.hicloud.com
+servicesupport.hicloud.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 userbehavior-reader-drcn.himovie.hicloud.com
 wap2.hispace.hicloud.com
 wap3.hispace.hicloud.com
@@ -471,6 +495,17 @@ opera-api.com  # app ads
 redir.opera.com  # https://brave.com/popular-browsers-first-run/
 speeddials.opera.com  # https://brave.com/popular-browsers-first-run/
 
+oppomobile.com  # from GoodbyeAds  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
+!+  ads.oppomobile.com
+!+  browser.oppomobile.com
+!+  cdo.oppomobile.com
+!+  magzine.oppomobile.com
+!+  ocloud.oppomobile.com
+!+  push.oppomobile.com
+!+  weather.oppomobile.com
+! end of oppomobile.com
+esa-reg-eup.myoppo.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
+
 adserver.pandora.com  # from Adguard
 
 prod-telemetry.paradox-interactive.com  # paradox-interactive.com - Tracker  # from Quidsup NoTrack-Blocklist
@@ -495,6 +530,8 @@ quicinc.com  # app requests to telemetry.swe.quicinc.com, root redirects to qual
 !+  swe.quicinc.com
 !+      telemetry.swe.quicinc.com
 ! end of quicinc.com
+
+realmemobile.com  # from GoodbyeAds  # also https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 
 # Roku is a paid streaming service and with analytics inside.
 roku.com  # from Blogscan  # is in BlockListProject/SmartTV  # from from github.com/asterriya/regex-ads/: (ads|captive|cloudservices|logs).roku.com
@@ -524,13 +561,19 @@ samba.tv
 samsungacr.com  # is in BlockListProject/SmartTV
 samsungadhub.com  # from Energized Blu and EasyList  # Samsung - Advertising  # from Quidsup NoTrack-Blocklist  # Zombie:2022-09-20
 samsungads.com  # from BlockListProject/SmartTV
+capi.samsungcloud.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
+dir-apis.samsungdm.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 samsungotn.net  # from BlockListProject/SmartTV
 samsungrm.net  # from BlockListProject/SmartTV
+sspapi-prd.samsungrs.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 samsungcloudsolution.com  # from BlockListProject/SmartTV
 samsungcloudsolution.net  # from BlockListProject/SmartTV
 samsungtvads.com  # Samsung - Advertising  # from Quidsup NoTrack-Blocklist
+pushmessage.samsung.com
+    ! sdk.pushmessage.samsung.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 bigdata.ssp.samsung.com  # from NextDNS native-tracking-domains samsung
-us-api.mcsvc.samsung.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
+mcsvc.samsung.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491480390  # https://github.com/hagezi/dns-blocklists/issues/273 - possible breaking
+    ! us-api.mcsvc.samsung.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
 eu-auth2.samsungosp.com  # is in BlockListProject/SmartTV
 push.samsungosp.com  # is in BlockListProject/SmartTV: gld.push.samsungosp.com
 gpm.samsungqbe.com  # is in BlockListProject/SmartTV
@@ -540,7 +583,8 @@ osb-apps-v2.samsungqbe.com  # is in BlockListProject/SmartTV
 scs.samsungqbe.com  # is in BlockListProject/SmartTV
 img-resize-cdn-prod.samsungnyc.com  # is in BlockListProject/SmartTV
 ocfconnect-shard-eu02-euwest1.samsungiotcloud.com  # is in BlockListProject/SmartTV
-uimetadata.samsungiotcloud.com  # is in BlockListProject/SmartTV
+uimetadata.samsungiotcloud.com  # is in BlockListProject/SmartTV  # also https://github.com/hagezi/dns-blocklists/issues/273 - possible breaking
+!ospserver.net - don't, Samsung firmware at least
 
 sentry.io$important,all  # feedback and application monitoring service, commercial. I doubt it is a good idea to send errors somewhere.
 !+  a.sentry.io
@@ -549,6 +593,8 @@ sentry.io$important,all  # feedback and application monitoring service, commerci
 !+  services.sentry.io
 sentry-cdn.com$important,all  #browser.sentry-cdn.com
     ! see /sentry. at _marketing__subdomains
+
+sfr.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491480390  # root redirects to alticefrance.com
 
 signalfx.com  # telemetry service
 
@@ -614,6 +660,12 @@ stat.sputnik.ru
 
 networksdk.ssacdn.com  # from Adguard
 
+st-av.net  # no root  # https://github.com/hagezi/dns-blocklists/issues/273 - possible breaking
+!+  api.st-av.net
+! end of st-av.net
+
+telemetry.api.swiftkey.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
+
 swtest.ru  # some app (pdd) wants to go there. No way.  # 504 root
 !+  app.swtest.ru
 !+  cz.swtest.ru
@@ -636,6 +688,8 @@ ads.tiktok.com
 ads.tiktok.com.edgekey.net
 ads-sg.tiktok.com  # from EasyList
 analytics-sg.tiktok.com  # from Adguard
+
+tmo.net  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491480390  # no root
 
 trackjs.com  # telemetry scripts
 
@@ -845,7 +899,7 @@ meihua.xiaomi.com  # from GoodbyeAds
 mibi.xiaomi.com  # from GoodbyeAds
 migc.xiaomi.com  # from GoodbyeAds
 mistat.xiaomi.com  # from Adguard: abtest.mistat.intl.xiaomi.com abtest.mistat.xiaomi.com
-!+  data.mistat.xiaomi.com  # xiaomi spying  # https://forum.adguard.com/index.php?threads/Решено-Шпионские-домены-miui.13437/  # also is in NextDNS native-tracking-domains xiaomi
+!+  data.mistat.xiaomi.com  # xiaomi spying  # https://forum.adguard.com/index.php?threads/Решено-Шпионские-домены-miui.13437/  # also is in NextDNS native-tracking-domains xiaomi  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 mistat.india.xiaomi.com
 !data.mistat.india.xiaomi.com  # from Adguard and NextDNS native-tracking-domains xiaomi
 mistat.rus.xiaomi.com
@@ -868,12 +922,14 @@ video.xiaomi.com  # from GoodbyeAds
 xiazai.xiaomi.com  # from GoodbyeAds
 xitong.xiaomi.com  # from GoodbyeAds
 xmpush.xiaomi.com  # from GoodbyeAds
+    ! fr.register.xmpush.global.xiaomi.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 zhuti.xiaomi.com  # from GoodbyeAds
     ! xiaomi.net
 !chat.xiaomi.net  # from GoodbyeAds
 !device.xiaomi.net  # from MobileAdTrackers
 files.xiaomi.net  # from GoodbyeAds  # subdomains
 micloud.xiaomi.net  # from GoodbyeAds  # subdomains
+    ! find.api.micloud.xiaomi.net  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 msg.xiaomi.net  # from GoodbyeAds
 !resolver.msg.xiaomi.net  # from Adguard
 resource.xiaomi.net  # from GoodbyeAds
@@ -889,9 +945,10 @@ resolver.gslb.mi-idc.com  # from Adguard
 browser.miui.com  # from GoodbyeAds
 huangye.miui.com  # from GoodbyeAds
     ! mp.huangye.miui.com  # from Adguard
-inf.miui.com  # from GoodbyeAds: mcc.intl.inf.miui.com
+inf.miui.com  # from GoodbyeAds: mcc.intl.inf.miui.com  # also https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 intl.miui.com
     ! but without update.intl.miui.com - #91. (Also possible ru-unlock.update.intl.miui.com)
+    ! and not without api.sec.intl.miui.com - https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1878186975
     !
     ! activity.browser.intl.miui.com  # from Adguard
     ! adv.sec.intl.miui.com  # from Adguard
