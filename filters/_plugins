@@ -176,9 +176,9 @@
 
 /modules/hifacebookconnect/*  # Drupal module
 
-/modules/it.tiscali.portal.homepage.v2/*  # from Adguard: ||tiscali.it/export/system/modules/it.tiscali.portal.homepage.v2/resources/js/shp-pasyc.js
+/modules/kixelltag/*  # from Adguard: /modules/kixelltag/views/js/kst-$script
 
-/modules/mod_jpayday/*  # from Adguard
+/modules/it.tiscali.portal.homepage.v2/*  # from Adguard: ||tiscali.it/export/system/modules/it.tiscali.portal.homepage.v2/resources/js/shp-pasyc.js
 
 /modules/lastorder/*
 
@@ -198,10 +198,14 @@
 
 /modules/mod_jtwitter/*  # Drupal module  # is in EasyList
 
+/modules/mod_jpayday/*  # from Adguard
+
 /modules/mod_socialmedialinks/*
     /mod_socialmedialinks/*  # is in 3 lists
 
 /modules/notifications.$domain=~forum.vivaldi.net  # from Fanboy's
+
+/modules/opartstat/*  # from Adguard
 
 /modules/pdcookiepro/*  # from Adguard
 
@@ -227,6 +231,8 @@
 /modules/yametrika/*$important
 
 /modules/yellowprice/*
+
+/modules/x13eucookies/*  # from Adguard
 
 /modules/xeory-social/*  # from Adguard
 
@@ -759,6 +765,8 @@
 
 /plugins/contact-widgets/*
 
+/plugins/consent-magic-pro/*  # from Adguard
+
 /plugins/consentmanager/*  # from EasyList
 
 /plugins/content/jllike/*  # from Adguard
@@ -788,15 +796,16 @@
 
 /plugins/cookie*$~stylesheet,important
     ! /plugins/cookie-$~stylesheet,important
-        !/plugins/cookie-$~stylesheet  # from Fanboy's
-        !/plugins/cookies-and-content-security-policy/*  # https://wordpress.org/plugins/cookies-and-content-security-policy/  # now is in Adguard
-        !/plugins/cookieconsent/*$important  # from Adguard
-        !/plugins/cookie-consent/*$important
-        !/plugins/cookieinfo/*$important
-        !/plugins/cookie-law-info/*$important
-        !/plugins/cookielay/public/*/cookielay.$domain=die-autodoktoren.tv  # from Adguard
-        !/plugins/cookie-notice/*  # from Fanboy's and Adguard
-        !/cookie-notice/*$script,important  # from Fanboy's and Adguard
+        ! /plugins/cookie-$~stylesheet  # from Fanboy's
+        ! /plugins/cookies-and-content-security-policy/*  # https://wordpress.org/plugins/cookies-and-content-security-policy/  # now is in Adguard
+        ! /plugins/cookieconsent/*$important  # from Adguard
+        ! /plugins/cookie-consent/*$important
+        ! /plugins/cookieinfo/*$important
+        ! /plugins/cookie-law-info/*$important
+            ! /plugins/cookie-law-info/*$important  # from Adguard
+        ! /plugins/cookielay/public/*/cookielay.$domain=die-autodoktoren.tv  # from Adguard
+        ! /plugins/cookie-notice/*$important  # from Fanboy's and Adguard
+            /cookie-notice/*$script,important  # from Fanboy's and Adguard
     ! /plugins/cookieinfo/*$important
     ! /plugins/cookie-law-info/*  # from Fanboy's
     ! /plugins/cookiemedia/*
@@ -1078,6 +1087,8 @@
 
 /plugins/epic-news-element/*
 
+/plugins/error-content/*
+
 /plugins/error-notification/*
 
 /plugins/eucookie/*  # from Adguard
@@ -1330,6 +1341,8 @@
     ! @@/wp-content/plugins/imedia-basic/adserver-*.js$domain=sgxnifty.org|dollarindex.org|cacfutures.org|dowfutures.org|nasdaqfutures.org|spfutures.org|ftsefutures.org|daxfutures.org|nikkeifutures.org|niftyfutures.org|comexlive.org|mcxlive.org|ncdexlive.org  # from Adguard
     ! @@||liveindex.org/wp-content/plugins/imedia-basic/*.js  # from Adguard
     ! @@||liveindex.org/wp-content/plugins/imedia-basic/*$script,1p  # from uBlock filters
+
+/plugins/incognito_dectector/*  # from Adguard
 
 /plugins/indeed-affiliate-pro/*
 /plugins/indeed-social-media/*  # from Adguard
@@ -2005,6 +2018,8 @@
 
 /plugins/rs-likes/*
 
+/plugins/rss-antenna/*  # from Adguard
+
 /plugins/rt-social/*$~stylesheet  # is in Fanboy's
 /plugins/rtsocial/*  # from Ru AdList
 
@@ -2291,6 +2306,8 @@
 
 /plugins/sweetalert/*  # from Adguard
 
+/plugins/swiftninjapro-inspect-element-console-blocker/*  # from Adguard
+
 /plugins/system/adblockerdetect*$important
 /plugins/system/ampz/  # bauen-und-heimwerken.de/plugins/system/ampz/ampz/js/ampz.min.js  # see https://www.roosterz.nl/joomla-extensions/ampz : "AMPZ - Best Social Sharing Extension for Joomla!"
 /plugins/system/codedesign_gdpr/*$important
@@ -2451,6 +2468,8 @@
 /plugins/vast-*$important  # from uBlock filters: */player/plugins/vast-*.js$script
 
 /plugins/vdz-google-analytics/*  # from EasyPrivacy
+
+/plugins/vi-abtest/*
 
 /plugins/videobg/*
 
@@ -2653,7 +2672,7 @@
 
 /plugins/wp-gdpr-$important
     /wp-gdpr-  # is in EasyList and Fanboys
-    ! /plugins/wp-gdpr-compliance/*  # from Adguard
+    ! /plugins/wp-gdpr-compliance/*  # is in Adguard
 
 /plugins/wp-google-analytics-events/*$important
 
