@@ -1,0 +1,41 @@
+﻿!! It is a sublist of Yet another small uBlock filter list
+! See https://github.com/mtxadmin/ublock for details
+!
+!
+! Marketing sites which has a lot of subdomains
+!
+! For the performance reasons all this subdomains should not be included in small mobile-oriented hosts file.
+! (But it still can be included in wildcard ("Blokada") list and full pi-hole-oriented hosts file)
+!
+
+!! domains
+
+avadacom.com  # from Adguard  # no root
+
+marketingcloudqaops.com  # from Adguard
+!+  ftp-qa1.marketingcloudqaops.com
+!+  sfap-qa1.marketingcloudqaops.com
+!+  sock-qa1.marketingcloudqaops.com
+marketingcloudqaapis.com  # from Adguard
+!+  connector-qa1.marketingcloudqaapis.com
+!+  editor-qa1.marketingcloudqaapis.com
+sfmctest.com  # from Adguard
+!+  deeplinking.sfmctest.com
+sfmc-content.com  # from Adguard
+!+  cp-sap.sfmc-content.com
+sfmc-marketing.com  # from Adguard
+!+  click-sap.sfmc-marketing.com
+!+  view-sap.sfmc-marketing.com
+sfmc-marketingqa.com  # from Adguard
+!+  view-qa1.sfmc-marketingqa.com
+sfmc-osl.com  # from Adguard
+sfmc-tlsprovisioningqa.com  # from Adguard
+!end of marketingqa.com  # from Adguard
+
+ubembed.com  # Unbounce - Advertising  # is in Quidsup NoTrack-Blocklist
+!+  events.ubembed.com
+!+  js.ubembed.com
+!+  pages.ubembed.com
+! end of ubembed
+
+!! todo
