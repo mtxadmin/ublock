@@ -528,6 +528,8 @@ gumroad.com$3p  # "Creators deserve to get paid for their work  Start selling  E
 
 handsetdetection.com$3p
 
+hcn.health$3p  # ad scripts
+
 hentaibaka.one$3p  # from uBlock filters
 
 hide.mn$all,third-party  # from Ru AdList
@@ -1173,9 +1175,11 @@ ticketmanager.com$3p  #activehosted.com
 ticketmanager.io$3p
 
 ! not completely third-party, but only inside their bunch of domains
-tinkoff.ru$domain=~tinkoff.ru|~tinkoffjournal.ru|tinkoffinsurance.ru  # ad scripts (maybe credits)
-cdn-tinkoff.ru$domain=~tinkoff.ru|~tinkoffjournal.ru|tinkoffinsurance.ru  # 3p ad scripts
-tinkoffinsurance.ru$domain=~tinkoff.ru|~tinkoffjournal.ru|tinkoffinsurance.ru
+tinkoff.ru$domain=~tinkoff.ru|~tinkoffjournal.ru|~tinkoffinsurance.ru  # ad scripts (maybe credits)
+    ! also 3p:
+    ! forma.tinkoff.ru/static/onlineScript.js
+cdn-tinkoff.ru$domain=~tinkoff.ru|~tinkoffjournal.ru|~tinkoffinsurance.ru  # 3p ad scripts
+tinkoffinsurance.ru$domain=~tinkoff.ru|~tinkoffjournal.ru|~tinkoffinsurance.ru
 
 topclimat.ru$3p
 
