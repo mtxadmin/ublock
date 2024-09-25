@@ -4282,7 +4282,9 @@ _christmaslights.js  # from Ru AdList
 /snowstorm-min.js  # cdnjs.cloudflare.com/ajax/libs/snowstorm/
 _snowstorm-min.js  # from Ru AdList
 /snoweffect.js
-/snowplow/*$script  # from EasyPrivacy  # https://a.trellocdn.com/lib/snowplow/2.9.0.js
+/snowplow$script
+    ! /snowplow/*$script  # from EasyPrivacy  # https://a.trellocdn.com/lib/snowplow/2.9.0.js
+    ! /snowplow.*.js  # from Adguard
 /wp-snow-effect/*  # from Ru AdList
 /wp-snow-effect-pro/*  # from Ru AdList
 ||cdnjs.cloudflare.com/ajax/libs/snowstorm/$script,important  # from uBlock
