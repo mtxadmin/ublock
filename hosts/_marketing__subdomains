@@ -34,8 +34,6 @@ ad.crwdcntrl.net$important
 ad.demotivation.me  # from Adguard
 !ad.depo.hu  # from Hufilter
 ad.ettoday.net$all  # from Adguard
-!ad.eurosport.com  # from Peter Lowe's hosts file  # zombie
-ad.eva.ru
 ad.f1cd.ru  # from Ru AdList
 ad.foxitsoftware.com
 ad.foxnetworks.com  # from MVPS
@@ -236,7 +234,8 @@ ads.thetimes.co.uk
 ads.thetrainingofo.com  # from MVPS
 ads.tripod.com  # [Tracking.Cookie]  # from MVPS
 ads.tvb.com  # from Adguard
-!ads.xtribeapp.com  # zombie
+ads.uol.com  # ad scripts  # "Programmatic media platform"  # root is a news site
+ads.uol.com.br
 ads.cdn.viber.com  # Viber - Advertising  # from Quidsup NoTrack-Blocklist
 ads.vnumedia.com  # from Peter Lowe's
 ads.watson.ch
@@ -247,6 +246,7 @@ ads.warnerbros.com  # from MVPS  # +
 ads.yachtsworld.ru
 ads.xhamster.com  # from MVPS
 ads.xn--mgbkt9eckr.net  # from Adguard
+!ads.xtribeapp.com  # zombie
 ads.zalo.me  # from ShadowWhisperer's Ads
 !ads.ztod.com  # from MVPS
 
@@ -776,6 +776,7 @@ clicks.adultplex.com  # from GoodbyeAds
 clicks.biletix.ru
 clicks.deliveroo.co.uk  # from Peter Lowe's
 clicks.eventbrite.com  # from iam-py-test's anti-redirectors
+clicks.meetup.com  # from Adguard
 clicks.moy.su  # from Ru AdList
 clicks.rbs.co.uk  # root is legit
 clicks.wawlabs.com  # from Adguard
@@ -817,6 +818,7 @@ cmpv2.macworld.co.uk  # from Adguard
 !||cnt.winporn.  # from Adguard
 !||cnt.yeptube.  # from Adguard
 !||cnt.vivatube.  # from Adguard
+cnt.didiglobal.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
 cnt.hd21.com  # from uBlock filters
 cnt.krasland.ru
 cnt.nov.ru  # from GoodbyeAds
@@ -1479,9 +1481,11 @@ email.bridgestonegolf.com  # ExactTarget AS22606
 email.credible.com
 email.etsy.com  # from iam-py-test's anti-redirectors
     ! ablink.email.etsy.com  # from iam-py-test's anti-redirectors
+email.e.mylens.ai  # from Adguard
 email.pandadoc.com  # email.email.pandadoc.com
 email.grunenthal.com  # from Adguard
 email.hackerearth.com  # ad redirects, Sendgrid
+email.lcfc.playmetrics.com  # from Adguard
 email.mxtoolbox.com
 email.nationalgeographic.com
 email.sans.org
@@ -1582,7 +1586,11 @@ insights.samsung.com  # from Adaway and NextDNS native-tracking-domains samsung
 ||link.
 link.blurb.com  # ad redirects
 link.snob.ru  # private URL shortener
+link.thirdlove.com  # from Adguard
 !link.email.usmagazine.com  # from iam-py-test's anti-redirectors  # see at email.
+
+||links.
+links.skillbox.ru  # from Adguard
 
 /log.
 log.book.baidu.com  # from GoodbyeAds
@@ -1662,7 +1670,7 @@ metrics.amd.com  # from BlockListProject - Ads
 metrics.americancityandcounty.com  # from BlockListProject - Ads
 metrics.apartmentfinder.com  # from BlockListProject - Ads
 metrics.apartments.com  # from BlockListProject - Ads
-metrics.apple.com  # from GoodbyeAds
+metrics.apple.com  # from GoodbyeAds and Adguard
 metrics.fe.apple-dns.net  # Apple - Tracker  # from Quidsup NoTrack-Blocklist
 metrics.argenta.be  # from Adguard
 metrics.argenta.eu  # from Adguard
@@ -1798,6 +1806,7 @@ metrics.skynews.com.au  # from Adguard
 metrics.strokeawareness.com  # from Adguard
 metrics.suncorp.com.au  # from Adguard
 metrics.suncorpbank.com.au  # from Adguard
+metrics.swap.gg$all  # from Adguard
 metrics.taste.com.au  # from Adguard
 metrics.tecentriq-hcp.com  # from Adguard
 metrics.ted.com  # from Adaway
@@ -2787,7 +2796,6 @@ telemetry.soundcloud.com
 /tizer.
 tizer.passion.ru  # from Adguard
 tizer.pohudetdoma.ru  # from Adguard
-tizer.ukraine-ru.net  # from Adguard
 !tizer.adv.zarabotki.ru
 
 ||tk.
@@ -3590,6 +3598,8 @@ pushtoast-a.akamaihd.net
 protectsurf-a.akamaihd.net  # from uBlock filters
 speee-ad.akamaized.net  # from SecurityEntire BaseFilter
 
+dap-dist.akamaized.net  # dap-dist.akamaized.net/dapentropy.js  # "Akamai Data Activation Platform (DAP) .. audience segments .. bid-stream"
+
 coads.akipress.org  # from Ru AdList
 
 xoomer.alice.it  # from Dan Pollock's hosts file
@@ -3662,10 +3672,11 @@ log.aliyuncs.com
 err.taobao.com
 !dm.taobaojuhuasuan.cn  # Aliexpress marketing from Energized Blu
     ! in-app Aliexpress related marketing from Energized Blu
+accscdn.m.taobao.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
 acs4baichuan.m.taobao.com
-acs.m.taobao.com
+acs.m.taobao.com  # also https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
 adashbc.m.taobao.com
-adashbc.ut.taobao.com
+adashbc.ut.taobao.com  # also https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
 adash.m.taobao.com
 adashx4ae.ut.taobao.com
 adashx4yt.m.taobao.com
@@ -4049,8 +4060,6 @@ zoomumba.bigpoint.com  # from Adguard
 
 !amptrack.bild.de  # Google Amp - Tracker  # from Quidsup NoTrack-Blocklist
 
-hello.biletix.ru
-
 analytics-ingress-global.bitmovin.com  # root seems legit  # from Dan Pollock's hosts file
 licensing.bitmovin.com
 
@@ -4210,6 +4219,8 @@ fin.cian.ru
 sopr-api.cian.ru  # also see ||cian.ru/sopr-experiments/
 fgbgtt.cian.ru  # from Adguard
 
+adsp.ciner.com.tr  # from Dan Pollock's hosts file
+
 target-test.cisco.com  # from Adguard  # target
 
 brands-logo.s1.citilink.ru
@@ -4279,11 +4290,11 @@ pics99.cumlouder.com  # from EasyList
 
 openapi.cymera.com  # from Adaway
 
-chatbot-cdn.czso.cz  # from Adguard
-
 !cache.daredorm.com  # from MVPS
 
 pm.dailykos.com  # from EasyPrivacy
+
+dmxleo.dailymotion.com  # is in https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175  # it is also in Dan Pollock’s and EasyList  # don't block root - see #80
 
 counter.darkreader.app  # from uBlock filters
 statistics.darkreader.app  # from uBlock filters
@@ -4430,6 +4441,10 @@ geowidget.easypack24.net
 adn.ebay.com  # from GoodbyeAds
 ads.ebay.com  # from GoodbyeAds
 autotrack.g.ebay.com  # from GoodbyeAds
+backstory.ebay.com
+    ||backstory.ebay.  # from Adguard
+edgetrksvc.ebay.com
+    ||edgetrksvc.ebay.  # from Adguard
 epnt.ebay.com  # from GoodbyeAds
 mobiletelemetry.ebay.com  # from GoodbyeAds
 ocsrest.ebay.com  # ad scripts from ||ocsrest.ebay.com/ocsrsapp/
@@ -4513,7 +4528,8 @@ mdsngpush.finanzen.net  # ad push  # is in Fanboy's
 
 engine.findaphd.com  # from Adguard
 
-agents.finuslugi.ru  # refs
+agents.finuslugi.ru  # refs  # again
+    ||finuslugi.ru/go/
 
 alireviews-cdn.fireapps.vn
 
@@ -4621,10 +4637,14 @@ snat.goguardian.com  # from Adguard
 x3-policy-maker.goguardian.com  # from Adguard
 x3-predictor.goguardian.com  # from Adguard
 
+i.goit.global  # URL shortener
+
 zxvttq.goldapple.ru  # from GoodbyeAds
 
 bk.goodline.info  # from Adguard
 webchat.goodline.info
+
+segment-api.goodrx.com  # from Adguard
 
 telem.sre.gopuff.com  # from Adguard
 
@@ -5270,6 +5290,8 @@ landing.newgensoft.com
 uk-tracking.nextdoor.com  # from Adaway
 us-tracking.nextdoor.com  # from Adaway
 
+cstat.nextel.com.ua  # cstat.nextel.com.ua:8443/tracking/script/...
+
 cdn-rum.ngenix.net  # is in EasyPrivacy and Ru AdList
 
 !adpriv.nikkei.com  # from Adguard
@@ -5348,6 +5370,7 @@ wstat.ozon.ru  # from Adguard
 xapi.ozon.ru  # is in Ru AdList
 xapi.ozon.by
 nowatermark.ozone.ru
+s.ozon.ru  # URL shortener
 
 adfree-stat.p3g.hu  # from Hufilter
 
@@ -5437,8 +5460,6 @@ smscenter.primatel.ru
 t.procrastinator.tips  # from Adguard
 
 cgicounter.puretec.de  # from Dan Pollock's hosts file  # ionos.de
-
-bobcat.pushplay.nl  # from Adguard
 
 !news.pustgovorjat.ru  # from Adguard
 
@@ -5637,8 +5658,7 @@ layer-in-image.prom.app.sberdevices.ru  # already blocked as 3p, see in _crms  #
 
 visitor.sbis.ru  # ad xhrs  # visitor.sbis.ru/consumertracking/service/user_error/
 
-info.scene7.com  # from Adguard
-
+posthog.scrolller.com  # internal stats
 yotta.scrolller.com  # from EasyList and Adguard
 
 adrs.sdo.com  # Chinese  # from Adguard
@@ -6043,6 +6063,8 @@ adf.underhentai.net  # from uBlock filters
 outs.unicom.co.uk  #outs.unicom.co.uk/link.php?
 
 ! see unity3d.com in _telemetry
+
+shorturl.unityassets4free.com  # from Adguard
 
 views.unsplash.com
 
