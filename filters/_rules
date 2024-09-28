@@ -2469,7 +2469,8 @@ _tizers.  # from Ru AdList
 ##.ctaText
     ##.ctaText ~ .postTitle
     ! tested on several sites. Maybe needs correcting.
-    ##.ctaText:upward(2)
+    ! uBlock said, it's invalid. But I didn't seen such inserts since then. Maybe, this rule is unneeded
+    !##.ctaText:upward(2)
     ##a:has(.ctaText)
 ##.ctaButton
     ##a:has(.ctaButton)
