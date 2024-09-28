@@ -1663,7 +1663,7 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
         ! oracle.com - there are many elements with class="selectionShareable"
     ! support.google.com - main div (scSharedMaterialcardroot scSharedMaterialcardelevated scSharedMaterialcardborder etc.)
 ##[title^="Follow me on "]
-##[id*="Share"]:not(html):not(body):not(article):not(:matches-path(\^/phpvirtualbox\/))
+##[id*="Share"]:not(html):not(body):not(article):not(:matches-path(/\^/phpvirtualbox\//))
     ! Exclusions:
     ! phpVirtualBox instances - Shared folders
 ! Too many exclusions. Disabled. 
