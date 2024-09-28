@@ -1699,8 +1699,9 @@ _rebid.js  # from EasyList
 ##[class^="WNAd"]:not(html):not(body):not(article)
 ##[id^="WNAd"]:not(html):not(body):not(article)
 ! Browsec ad popups
-##[class^=_Not][class*=_Big_In]:has-text(You’re using Browsec Free)
-##[class^=_Not][class*=_Big]:has-text(VPN)
+! uBlock said, it's invalid.
+!##[class^=_Not][class*=_Big_In]:has-text(You’re using Browsec Free)
+!##[class^=_Not][class*=_Big]:has-text(VPN)
 ! other
 ! Ru AdList rule
 ##[data-la-block]
@@ -2469,7 +2470,7 @@ _tizers.  # from Ru AdList
 ##.ctaText
     ##.ctaText ~ .postTitle
     ! tested on several sites. Maybe needs correcting.
-    ! uBlock said, it's invalid. But I didn't seen such inserts since then. Maybe, this rule is unneeded
+    ! uBlock said, it's invalid. But I haven't seen such inserts since then. Maybe, this rule is unneeded
     !##.ctaText:upward(2)
     ##a:has(.ctaText)
 ##.ctaButton
