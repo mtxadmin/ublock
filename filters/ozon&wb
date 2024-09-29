@@ -156,6 +156,8 @@ finance.ozon.ru##.paranja:has-text(/Зв(е|ё)зды/i)
 ||ozone.ru/assets/marketing
 !||ozone.ru/s3/video/cover/$image - hmmm...?
 ||ozone.ru/s3/cdn-public/ozon_card_banner$image
+||ozone.ru/s3/*/card-landing$image
+||ozone.ru/s3/*/hero-landing$image
 !
 ! Ru AdList rule hides recommendations after order. I think, they are useful.
 ozon.ru#@#html:not([style*="overflow:"]) [data-widget="skuGrid"]
@@ -289,6 +291,9 @@ ozon.ru##a[href="https://finance.ozon.ru/"]:has(img)
 finance.ozon.ru##.notification:has-text(подписку)
 finance.ozon.ru##.premium-benefit-card
 finance.ozon.ru###modal-container:has(button:has-text(Получить бесплатно))
+finance.ozon.ru##.swiper-banners
+finance.ozon.ru##.benefits
+finance.ozon.ru##.landing
 ! и вот на это навязывание смотреть надоело. Иконку с топа убираем, пункт меню оставляем
 !ozon.ru##a[href="/travel/"]:has(img)  # v1
 ozon.ru##a[href^="/travel/"]:has(img)
@@ -409,6 +414,7 @@ ozon.ru##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/)):not(div[reviewu
 ozon.ru##div[data-review-uuid]:not(:has-text(/Вам помог этот отзыв\?|Показать весь отзыв/)):not(:matches-path(/my/reviews))
 ! just img
 ||ozone.ru/s3/my-account-api-img/*/OD-ok.png$image
+finance.ozon.ru##.bank-logo
 
 
     ! Wildberries
