@@ -193,7 +193,9 @@ byteoversea.com  # 504 root
 !i.byteoversea.com
 !log.byteoversea.com
 !log15.byteoversea.com
+!p16-ad.byteoversea.com  # is in Adguard
 !rtlog.byteoversea.com
+!v16-ad.byteoversea.com  # is in Adguard
 bytedapm.com
 
 cloudrail.com
@@ -202,6 +204,7 @@ cloudrail.com
 
 ! mobile telemetry and ads ("crashlytics.advertising.id")  # for instance, https://stackoverflow.com/questions/55138527/firebase-crashlytics-use-of-advertising-id or https://developers.google.com/ad-manager/mobile-ads-sdk/android/crashlytics
 crashlytics.com$important  # is in Dan Pollock's hosts file
+    ! settings.crashlytics.com  # app requests
 crashlytics.ru  # from ShadowWhisperer's Tracking
 crashlytics2.l.google.com
 crashlyticsreports-pa.googleapis.com  # app requests
@@ -532,6 +535,7 @@ quicinc.com  # app requests to telemetry.swe.quicinc.com, root redirects to qual
 ! end of quicinc.com
 
 realmemobile.com  # from GoodbyeAds  # also https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
+    ! bdapi-in-ads.realmemobile.com  # is in Adguard
 
 # Roku is a paid streaming service and with analytics inside.
 roku.com  # from Blogscan  # is in BlockListProject/SmartTV  # from from github.com/asterriya/regex-ads/: (ads|captive|cloudservices|logs).roku.com
@@ -747,6 +751,8 @@ eloqua-tracking.unity3d.com  # from GoodbyeAds
 eloqua-trackings.unity.com  # from GoodbyeAds
 eloqua-trackings.unity3d.com  # from GoodbyeAds
 !
+iads.unity3d.com  # from Adguard
+!
 iap.unity3d.com
     ! ecommerce.iap.unity3d.com  # ad requests
     ! events.iap.unity3d.com  # from Adguard
@@ -761,6 +767,8 @@ internal.unity3d.com
 !+  mz.internal.unity3d.com
     ! mediation-tracking.prd.mz.internal.unity3d.com  # from Adguard
     ! tracking.prd.mz.internal.unity3d.com  # from Energized Blu and MobileAdTrackers
+!
+mediation.unity3d.com  # from Adguard
 !
 mz.unity3d.com
     ! events.mz.unity3d.com  # app ads
