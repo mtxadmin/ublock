@@ -1005,10 +1005,13 @@ affluentinvestor.com##center
 ||afisha.ru/img/common/ad-fallback.png
 !||rl0.ru/afisha/$image - Hmm, in general, don't
 ||afisha.ru/img/top-banners/
+||afisha.ru/v1/event/
 afisha.ru##div:matches-css(position:fixed)
 afisha.ru##span:has-text(Вместо рекламы)
 afisha.ru##div:has(>picture>img[alt="скачать приложение"])
 afisha.ru##section[aria-label="Смотреть в Okko"]
+afisha.ru##[class^=RunningLine_Container]
+afisha.ru##[class^=Footer_App]
 
 afisha21.ru###headers
 
@@ -11799,6 +11802,8 @@ i-fakt.ru##.logo-blog-info-widget-wrapper
 ifbest.org##.top-menu-left
 ifbest.org##.logo-banner
 
+||ifunny.co/api/  # ad 1p pings
+
     ! banners and promos
 igeekphone.com##.a-wrap
 igeekphone.com##div.igeek-widget.widget
@@ -16858,6 +16863,9 @@ moyo.ua##.widget-opener
 moyo.ua##.js-show-call-back-modal.call-back-title
 moyo.ua##.header_phone--wrapper
 moyo.ua##.main-wrap:style(padding-top:0px !important)
+moyo.ua##strong:has-text(:)
+moyo.ua##.main-wrap:style(padding-top:0px !important)
+! promos in related
 moyo.ua##strong:has-text(:)
 
 moyoauto.ru$inline-script  # site blocks copypaste
@@ -26091,21 +26099,28 @@ temowind.ru###sidebar
 temowind.ru###footer
 
 ! larsenal.ru and tempgun.ru are using similar engine
+! Uncaught TypeError: $(...).ihavecookies is not a function
+tempgun.ru##+js(set, Object.prototype.ihavecookies, noopFunc)
+    ! top
 tempgun.ru###headerfixed
 ||tempgun.ru/upload/CNext/e88/e8823066d4a44af44082b07060462467.svg  # logo
-tempgun.ru##.brand
+    ! banners and promos
 tempgun.ru##.banner
-tempgun.ru##.zoom
-! stickers
+tempgun.ru##.maxwidth-banner
+    ! stickers
 tempgun.ru##.like_icons
 tempgun.ru##.stickers
-! list compactization:
+    ! list compactization
 ||tempgun.ru/*/no_photo_medium.png
 tempgun.ru##.image_wrapper_block > a:has(img[src*="/no_photo"])
 tempgun.ru##.image_wrapper_block:style(margin-top:0px !important; margin-bottom:0px !important)
 tempgun.ru##.image_wrapper_block:style(height:auto !important)
 tempgun.ru##.item.catalog_item_wrapp:style(height:auto !important)
 tempgun.ru##.catalog_item:style(padding-top:0px !important; padding-bottom:0px !important)
+    ! other
+tempgun.ru##.brand
+tempgun.ru##.brands_slider_wrapp
+tempgun.ru##.zoom
 ! removing left menu items which are duplicated in the catalog
 tempgun.ru##.catalog_block.menu_top_block
 ! removing buttons in the list
@@ -26117,9 +26132,6 @@ tempgun.ru##.sa_block:has(.item-stock:has-text(Есть в наличии))
 tempgun.ru##.logo_and_menu-row .inner-table-block:style(height:auto !important)
 tempgun.ru##.logo_and_menu-row .search-wrapper:style(height:auto !important)
 tempgun.ru##.item_slider:style(padding-top:0px !important; padding-bottom:0px !important)
-tempgun.ru##.brands_slider_wrapp
-! Uncaught TypeError: $(...).ihavecookies is not a function
-tempgun.ru##+js(set, Object.prototype.ihavecookies, noopFunc)
 
 temp-mail.io##.apps
 
