@@ -1174,8 +1174,11 @@ $removeparam=oref
     ! nextgov.com$removeparam=oref  # from Adguard
     ! $removeparam=oref,domain=defenseone.com|govexec.com|nextgov.com|route-fifty.com  # from Adguard
 
-$removeparam=origin
+$removeparam=origin,domain=~yandex.ru
 $removeparam=Origin
+    ! Exclusions:
+    ! yandex.ru/maps - possible error
+    ! 
     ! $removeparam=origin,denyallow=platform.twitter.com,domain=yle.fi|flaticon.com|drop.com|symbolab.com|archive.org|norton.com|philips.*|nordstrom.com|buzzfeed.com|buzzfeednews.com  # from DandelionSprout's URLShortener
     ! search.brave.com$removeparam=origin  # from DandelionSprout's URLShortener
     ! dailymotion.com$removeparam=origin  # from Adguard
