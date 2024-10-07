@@ -1511,7 +1511,9 @@ _bg.svg$image
 
 
 ! Disable css selection restrictions
-*##html,body,body *:style(user-select:auto !important; -webkit-user-select:auto !important; -webkit-touch-callout: auto !important; -moz-user-select:auto !important; -ms-user-select:auto !important; -o-user-select:auto !important; -khtml-user-select:auto !important)
+~yandex.ru*##html,body,body *:style(user-select:auto !important; -webkit-user-select:auto !important; -webkit-touch-callout: auto !important; -moz-user-select:auto !important; -ms-user-select:auto !important; -o-user-select:auto !important; -khtml-user-select:auto !important)
+    ! Exclusions:
+    ! yandex.ru/maps - incorrect working on maps
 
 
 ! There are many wordpress blogs with "inline related posts" blocks. It is really annoying. Here is solution to hide that [un]related blocks. It also cannot work as general rule, so - block:
