@@ -21421,6 +21421,11 @@ realadmin.ru###userOnline-wrapper
 ! is in Adguard
 realadmin.ru###contactable
 
+    ! popups
+real-avto.com##.order-form
+real-avto.com##.fancybox-container
+    ! other
+
 realitylovers.com##.logo_img
 realitylovers.com##+js(remove-attr.js, class, body.disclaimerOpen)
 ||rlcontent.com/*/enjoyVR.png
@@ -26698,11 +26703,15 @@ journal.tinkoff.ru##[class^=studentBadge]
 tinkoff.ru##.article-header__wallpaper:style(background-image:none !important)
 tinkoff.ru##.article-header:style(color:#000 !important)
 tinkoff.ru##.article-header:style(background-color:initial !important)
+    ! avatars and promos on it
+||tinkoffjournal.ru/fama/tj_prod/static/default_avatars/$image
+journal.tinkoff.ru##[class^=_studentBadge_]
     ! other
 tinkoff.ru##div:matches-css(height:110px):has-text(/^$/)
 ||tinkoffjournal.ru/eris/$image  # ||tinkoffjournal.ru/*/loader-loaf-*.png
 ||tinkoffjournal.ru/incoming_minicover*.gif
 ||tinkoffjournal.ru/*/tinkoff-web-tracker.js
+
 ||tinkoff.ru/system/images/app-image
 tinkoff.ru##.app__wrapper
 journal.tinkoff.ru##[class^=_articleRef_]
