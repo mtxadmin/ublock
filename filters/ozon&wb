@@ -344,8 +344,8 @@ ozon.ru##div:has(>div:has-text(/^\s*^(Осталось|Новинка)$/i)):matc
 ozon.ru##section:has(>div:has-text(/^\s*^(Остал(о|а)сь (мало|[0-9]+ шт))$/i)):matches-path(//(search|category)/)
 !
 ! хорошо, но в категориях цепляется, очищает описания. Может, пока тупо сделать два правила? Ладно, попробуем пока условие на путь
-ozon.ru##div:has(>div:has-text(/^\s*^(ХИТЫ НЕДЕЛИ|АКЦИЯ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор покупателей|Распродажа|Ликвидация|Оригинал|Цена что надо|Купон на скидку|Ozon Promo|PRE-SALE 11.11|ЧЁРНАЯ ПЯТНИЦА|Соц. сертификат|Рассрочка 0%|−[0-9]+% по промокоду)$/i)):matches-path(/product)
-ozon.ru##div:has(>div:has-text(/^Вам ещ(е|ё)/))
+ozon.ru,ozon.kz##div:has(>div:has-text(/^\s*^(ХИТЫ НЕДЕЛИ|АКЦИЯ НЕДЕЛИ|ХОТ СЕЙЛ|Новинка|Хит|Выбор покупателей|Распродажа|Ликвидация|Оригинал|Цена что надо|Купон на скидку|Ozon Promo|PRE-SALE 11.11|ЧЁРНАЯ ПЯТНИЦА|Соц. сертификат|Рассрочка 0%|−[0-9]+% по промокоду|possible on credit)$/i)):matches-path(/product)
+ozon.ru,ozon.kz##div:has(>div:has-text(/^Вам ещ(е|ё)/))
 ! generanized
 ozon.ru##section > div:has(>div>svg[width][height]):has(>div)
 ! аккуратнее, ранее выбор размера иногда попадал
@@ -375,8 +375,8 @@ ozon.ru##a:has(img[alt="Ozon Job"])
 !ozon.ru##div[trackinginfo] - payment methods fall in in (/gocheckout)
 ozon.ru##*:remove-attr(trackinginfo)
     ! apps
-ozon.ru##p:has-text(Наведите камеру и скачайте)
-ozon.ru##p:has-text(Наведите камеру и скачайте) ~ div:has(img[src*="/group"])
+ozon.ru##p:has-text(/Наведите камеру и скачайте|Point your camera and download/i)
+ozon.ru##p:has-text((/Наведите камеру и скачайте|Point your camera and download/i) ~ div:has(img[src*="/group"])
 ||ozone.ru/s3/cms/*/qr-code$image
     ! socials
 ozon.ru##a[title="VK"]
