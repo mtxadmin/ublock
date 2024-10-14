@@ -444,6 +444,8 @@ ozon.*##div:has-text(/^\s*Товар куплен на OZON\s*$/)
 ! not a button, but seo text
 ozon.*##[data-widget="createReviewButton"]:has-text(честный рейтинг)
 ozon.*###section-characteristics > small:has-text(Информация о технических характеристиках, комплекте поставки)
+    ! oneclick
+ozon.*##[data-widget="webOneClickButton"]
     ! bottom
 ozon.*##a:has(img[alt="Ozon Job"])
     ! tracking
