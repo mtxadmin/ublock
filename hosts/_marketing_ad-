@@ -1856,7 +1856,7 @@ adfound.com  # from BlockListProject - Ads
 
 ! see adfox in _marketing_yandex
 
-adfpoint.com  # from Adguard
+adfpoint.com  # campaign.aliexpress.com  # is in Adguard
 
 adframesrc.com
 !+  p.adframesrc.com
@@ -2547,7 +2547,7 @@ adlabs.ru$all  # is in Ru AdList: |ws*//*adlabs.ru^  # Adlabs domains  # AS20100
     /adlabs.
 adlabs-cdn.com  # luxup.ru
 adlabs-mobile.ru
-adlabsnetworks.com$important
+adlabsnetworks.com$important  # ad network
 !+  medianet.adlabsnetworks.com
 adlabsnetworks.ru
 adlmerge.com
@@ -3205,7 +3205,9 @@ admodex.com  # from Phishing URL Blocklist
 
 admolly.com$important  # ad network
 
-admon.ai  # from ShadowWhisperer's Tracking
+admon.ai  # "solutions for display, CPA, and affiliate advertising"  # is in ShadowWhisperer's Tracking
+
+!admon.com - don't, Advanced Monitors Corporation
 
 admon.com.vn  # no root  # from GoodbyeAds
 
@@ -3604,8 +3606,7 @@ adop.co.kr
 adop.me  # zombie
 adop.pw  # from Adguard
 
-adoperator.com$important  # is in Energized Blu
-adoperator.com  # ad network
+adoperator.com$important  # ad network  # is in Energized Blu
 
 adoperatorcore.com  # from GoodbyeAds
 !+  eu.adoperatorcore.com
@@ -6131,12 +6132,18 @@ adthru.com  # from Dan Pollock's hosts file
 
 adthunder.com  # from ShadowWhisperer's Ads
 
-adtidy.net  # from Ru AdList
+! adtidy.net  # from Ru AdList  # this is strange. Looks like it is an Adguard domain too? As adtidy.org  # root 504
+    ! email-link.adtidy.net
+    ! engine.adtidy.net
+    ! link.adtidy.net
+    ! s10.adtidy.net
+    ! static.adtidy.net
+    ! testadguardhome.adtidy.net
 
-! adtidy.org - Adguard filters host, don't block  # root 404  #
-! email-link.adtidy.org  # from Peter Lowe's  # don't - see https://github.com/badmojr/1Hosts/issues/879
-! email-open.adtidy.org  # from Peter Lowe's  # maybe false positive too
-! link.adtidy.org  # maybe false positive too
+! adtidy.org - Adguard filters host, don't block  # root 404  # Also #92 :-(
+    ! email-link.adtidy.org  # from Peter Lowe's  # don't - see https://github.com/badmojr/1Hosts/issues/879
+    ! email-open.adtidy.org  # from Peter Lowe's  # maybe false positive too
+    ! link.adtidy.org  # maybe false positive too
 
 adtiger.de$important  # from Peter Lowe's hosts file, Dan Pollock's hosts file, MobileAdTrackers
 
@@ -7233,6 +7240,8 @@ advertmedia.com  # from BlockListProject - Ads
 
 advertmedia.de  # from Peter Lowe's hosts file
 
+advertmobile.net  # ad company
+
 advertnative.com  # from MobileAdTrackers  # Advertnative - Advertising  # from Quidsup NoTrack-Blocklist
 
 advertnetworks.com  # from Adguard
@@ -7283,8 +7292,7 @@ advert-solutions.com  # from EasyList
 
 advertsource.co.uk  # from EasyList and Adguard
 
-advertstar.net  # from GoodbyeAds
-
+advertstar.net  # ad company  # is in GoodbyeAds
 advertstar.ru  # from Adguard
 
 advertstatic.com  # from BlockListProject - Ads
@@ -7547,6 +7555,7 @@ adv-plus.com  # from BlockListProject - Ads
 advpoints.com  # from Adguard
 
 advrtas.com  # "mobile ads"
+advrtas.io  # advrtas.com
 
 advrush.com  # from Ru AdList
 
@@ -7691,6 +7700,8 @@ adwheel.co  # from ShadowWhisperer's Ads
 
 ad-wheel.com  # from Adguard
 
+adwhit.com  # ad company
+
 adwidecenter.com  # ad scripts
 
 adwidgets.ru
@@ -7731,7 +7742,14 @@ adwised.com  # from ShadowWhisperer's Ads
 
 adwisegroup.com  # from ShadowWhisperer's Ads
 
-adwist.ru  # from Ru AdList and Adguard
+adwist.ru  # is in Ru AdList and Adguard
+adwist.net  # ad platform
+
+adwit.com  # ad company
+!adwit.org - don't, not related, podcasts
+adwitads.com  # "web ad development"  # root 401
+adwitglobal.com
+adwitindia.com  # ad agency
 
 adwitty.com  # from Dan Pollock's hosts file
 
