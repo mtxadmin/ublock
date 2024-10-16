@@ -863,7 +863,9 @@ _adverts.js  # from EasyList
 /baner_*$important
 /banery/*
 /%21banery/*
-!/banner*$important,domain=~archive.org|~doshirak.com|~sberbank.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it. Update: maybe asterisk was needed
+!/banner*$important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~webinar.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it. Update: maybe asterisk was needed
+    ! Exclusions:
+    ! mts-link.ru, webinar.ru - rus webinars, doesn't work without
 /banner*$all,important,domain=~archive.org|~doshirak.com|~sberbank.ru|~sbis.ru
     ! ##[src^="/images/banner"]
     ! /banner/*$important
@@ -2588,14 +2590,14 @@ _analytics.js?  # from EasyPrivacy
     ||hh.ru/analytics^  # is in Adguard
     ||career.ru/analytics^
     ||rabota.by/analytics?  # is in EasyPrivacy
-/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~globalvoices.org|~mts-link.ru|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~zoho.com|~zoho.eu
+/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~globalvoices.org|~mts-link.ru|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~webinar.ru|~zoho.com|~zoho.eu
     ! Exclusions:
     ! alfabank - финансовая аналитика по счету
     ! duckduckgo - it blocks any search about analytics. Other search systems are ok.
     ! github - granular rules:
         ! ||githubassets.com/assets/vendors-node_modules_github_hydro-analytics  # analytics  # this one must be unblocked - some functionality is broken (labels and editing)
         ! ||githubassets.com/assets/ui_packages_analytics-provider_analytics-provider_ts-app_assets_modules_react-code-view_pages  # this one must be unblocked
-    ! mts-link - temp
+    ! mts-link.ru, webinar.ru - rus webinars, doesn't work without
     ! ozon.ru: 2023-10 - блокировка https://cdn2.ozone.ru/assets/*/autosplit-common-common_video-player_mixins_analytics_ts.js теперь приводит к отказу карусели в продукте.
     ! sberbank & domclick:
         ! увы, но иначе в Сбербанк и Домклик не входит
