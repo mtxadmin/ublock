@@ -273,6 +273,8 @@ ozon.*##[data-widget="stickyContainer"]:style(top:0px !important; bottom:0px !im
 ozon.*##[data-widget="stickyContainer"]:style(position:static !important)
 ! top ad, as far as I remember
 ozon.*##[data-widget="stickyContainer"]:has-text(Открыть в приложении)
+! and bottom left
+ozon.*##p:has-text(бесплатное приложение) ~ div
 ! Ссылки на промо-раздел. Но нужно исключение - если уже там. Баллы, как минимум
 ozon.*##li:has(> a[href^="/highlight/"])
 ozon.*##a[href^="/highlight/"]:not(:matches-path(/highlight))
