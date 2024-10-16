@@ -2154,9 +2154,10 @@ securemetrics.nbnco.com.au  # from GoodbyeAds
 securetags.esri.com.tr  # from Adguard
 securetags.img.com.br  # from Adguard
 
-/sentry.$redirect=noopjs,domain=~avito.ru
+/sentry.$redirect=noopjs,domain=~avito.ru|~mts-link.ru|~webinar.ru
     ! Exclusions:
     ! avito.ru - crashes (redirect=noopjs not tested)
+    ! mts-link.ru, webinar.ru - rus webinars, doesn't work without sentry.webinar.ru
 /sentry$script,redirect=noopjs,domain=~avito.ru
     ! Exclusions:
     @@/flu/player/sentry$script  # Microsoft video player (NodeJS) on some sites
