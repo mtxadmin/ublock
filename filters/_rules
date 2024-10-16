@@ -2582,7 +2582,10 @@ volveter.ru##.has_offer_prop
 /amp-analytics
 /amp-geo-  # from EasyPrivacy
 _analytics.js?  # from EasyPrivacy
-/analytics.$important
+/analytics.$important$domain=~mts-link.ru
+    ! Exclusions:
+    ! mts-link - temp
+    ! 
     ! /analytics.js$important  # uBlock exclusion
     ! /analytics.min.js$important
     ! /ezais/analytics?  # is in EasyPrivacy
