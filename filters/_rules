@@ -2582,27 +2582,20 @@ volveter.ru##.has_offer_prop
 /amp-analytics
 /amp-geo-  # from EasyPrivacy
 _analytics.js?  # from EasyPrivacy
-/analytics.$important$domain=~mts-link.ru
-    ! Exclusions:
-    ! mts-link - temp
-    ! 
-    ! /analytics.js$important  # uBlock exclusion
-    ! /analytics.min.js$important
-    ! /ezais/analytics?  # is in EasyPrivacy
-    ! and many many EasyPrivacy rules
 .analytics.min.  # from EasyPrivacy
 /analytics^
 /analytics?
     ||hh.ru/analytics^  # is in Adguard
     ||career.ru/analytics^
     ||rabota.by/analytics?  # is in EasyPrivacy
-/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~globalvoices.org|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~zoho.com|~zoho.eu
+/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~globalvoices.org|~mts-link.ru|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~zoho.com|~zoho.eu
     ! Exclusions:
     ! alfabank - финансовая аналитика по счету
     ! duckduckgo - it blocks any search about analytics. Other search systems are ok.
     ! github - granular rules:
         ! ||githubassets.com/assets/vendors-node_modules_github_hydro-analytics  # analytics  # this one must be unblocked - some functionality is broken (labels and editing)
         ! ||githubassets.com/assets/ui_packages_analytics-provider_analytics-provider_ts-app_assets_modules_react-code-view_pages  # this one must be unblocked
+    ! mts-link - temp
     ! ozon.ru: 2023-10 - блокировка https://cdn2.ozone.ru/assets/*/autosplit-common-common_video-player_mixins_analytics_ts.js теперь приводит к отказу карусели в продукте.
     ! sberbank & domclick:
         ! увы, но иначе в Сбербанк и Домклик не входит
@@ -2617,6 +2610,12 @@ _analytics.js?  # from EasyPrivacy
     !||cnn.com/analytics/  # from EasyPrivacy
     ! and many many EasyPrivacy rules
     ! false positive: !https://services.rome2rio.com/api/1.5/json/search?key=...&analytics=true&debugFeatures=&debugExperiments=&groupOperators=true
+    !/analytics.$important - subrule
+        ! /analytics.js$important  # uBlock exclusion
+        ! /analytics.min.js$important
+        ! /ezais/analytics?  # is in EasyPrivacy
+        ! /js/analytics.  # from EasyPrivacy
+        ! and many many EasyPrivacy rules
 /analytics-*$important
     /analytics-event
         ! /analytics-event-  # from EasyPrivacy
@@ -2785,7 +2784,7 @@ _hightraffic_code.js  # from EasyPrivacy
 /internal/page_view?  # is in EasyPrivacy
 /jquery.blockui.js
 /js/analitics.  # is in EasyPrivacy
-/js/analytics.  # from EasyPrivacy
+!/js/analytics.  # from EasyPrivacy
 /js/parking.*$script
 /js/tracking/*  # is in EasyPrivacy
 /karamba/*  # Yandex tracker
