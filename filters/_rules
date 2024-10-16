@@ -863,10 +863,11 @@ _adverts.js  # from EasyList
 /baner_*$important
 /banery/*
 /%21banery/*
-!/banner*$important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~webinar.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it. Update: maybe asterisk was needed
+!old ver: /banner*$important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~webinar.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it. Update: maybe asterisk was needed
+/banner*$all,important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~sbis.ru|~webinar.ru
     ! Exclusions:
     ! mts-link.ru, webinar.ru - rus webinars, doesn't work without
-/banner*$all,important,domain=~archive.org|~doshirak.com|~sberbank.ru|~sbis.ru
+    !
     ! ##[src^="/images/banner"]
     ! /banner/*$important
     ! /banner.js$important
