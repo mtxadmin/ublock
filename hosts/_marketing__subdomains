@@ -2154,17 +2154,17 @@ securemetrics.nbnco.com.au  # from GoodbyeAds
 securetags.esri.com.tr  # from Adguard
 securetags.img.com.br  # from Adguard
 
+/sentry$script,redirect=noopjs,domain=~avito.ru|~mts-link.ru|~webinar.ru
 /sentry.$redirect=noopjs,domain=~avito.ru|~mts-link.ru|~webinar.ru
-    ! Exclusions:
-    ! avito.ru - crashes (redirect=noopjs not tested)
-    ! mts-link.ru, webinar.ru - rus webinars, doesn't work without sentry.webinar.ru
-/sentry$script,redirect=noopjs,domain=~avito.ru
     ! Exclusions:
     @@/flu/player/sentry$script  # Microsoft video player (NodeJS) on some sites
     @@||avito.ru/dstatic/build/client/sentry  # avito is completely broken without it  # update: disabled again  # update2: enabled again, silently blocks all. Just this one script.
     @@||sportmaster.ru/upload/content/application/ru_sm3/prod/front/assets/sentry
     !
     /sentry.bundle.min.js  # sentry.io library, see https://github.com/getsentry/sentry-javascript
+    ! Exclusions:
+    ! avito.ru - crashes (redirect=noopjs not tested)
+    ! mts-link.ru, webinar.ru - rus webinars, doesn't work without sentry.webinar.ru
     /sentry/*
         ! /sentry/bundle.min.js
         ! /sentry-logger.js  # from EasyPrivacy
