@@ -2046,6 +2046,9 @@ armguns.ru###menu_wrap:style(position:static !important)
 
 armma.ru##.person
 
+! popup
+armorlubricants.com###form-in-out
+
 armourbook.com##.himage
 armourbook.com##.footbox
 
@@ -2107,6 +2110,9 @@ arstechnica.com###top > div:has-text(/^$/)
 arstechnica.com###social-left
 
 art4x4.ru###headerbar
+
+art-dot.ru##.js_sidebar-share
+art-dot.ru##.btn__buy.btn__main.btn:has-text(Посмотреть цены)
 
 ! placeholder
 artemida-hunter.ru###headerfixed
@@ -2809,6 +2815,7 @@ avtovzglyad.ru##.header-specproject
 
 avtozakony.ru##.article-nav
 
+avtozam.com##.entry-header *:style(position:static !important; color:initial !important)
 avtozam.com##.consultant
 avtozam.com##.widget_consult_widget
 
@@ -7532,6 +7539,9 @@ ekipirovka.ru##.catalog-detail-buttons
 ekipirovka.ru##.new_leader_disc
 ekipirovka.ru##.vk_groups_title
 
+ekipland.ru##a[href*=utm]
+ekipland.ru##.blok-blog:has([href^="https://vk.com/"])
+
 ||e-knives.ru/*/top-pic.jpg
 e-knives.ru##.site-counters
 e-knives.ru##.ico-bot
@@ -8124,6 +8134,9 @@ exgirlfriendmarket.com##.pic-nav
 exgirlfriendmarket.com##.btns
 exgirlfriendmarket.com##.more
 exgirlfriendmarket.com##p
+
+! popup
+exist.ru##.master-message
 
 ||exkinoray.tv/pic/reliz/*.gif
 
@@ -8783,6 +8796,8 @@ fiskars.ru##.m-navigation:style(position:static !important)
 fiskars.ru##.desktop:style(position:static !important)
 
 fitsmallbusiness.com##.content-disclosure
+
+five-sport.ru###comments-block
 
 fixim.ru##.logo_line:style(position:static !important)
 fixim.ru##.logo_line_fix
@@ -10453,6 +10468,9 @@ gunshouse.ru##.top
 
 gunslaw.ru##header
 
+gunsmarket24.ru##.top-info-block
+gunsmarket24.ru##.top-block-item
+
 gunsparts.ru##.button-fixed
 gunsparts.ru###minigeo
 gunsparts.ru##.info-header
@@ -12110,6 +12128,14 @@ infodroid.ru###mt-menu-wrap:style(position:static !important)
 
 infoit.com.ua##.widget_block.widget
 
+infolifan.ru$inline-script  # site blocks copypaste
+infolifan.ru$script  # site blocks copypaste
+infolifan.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
+! top
+infolifan.ru##.jptop
+! videos are strange there
+infolifan.ru##.ytb__item
+
 infomeat.ru###auto_scroll_menu
 infomeat.ru###table_right_banner1
 infomeat.ru###table_right_banner2
@@ -13101,14 +13127,19 @@ kanobu.ru##.wrap > main:not(#id):style(margin-top: calc(-100vh + 10px) !importan
 ! from RU AdList
 kanobu.ru##.wrap > header ~ div[style*="background"] > a
 
+||kant.ru/_next/static/media/app_qrcode$image
     ! popups
 kant.ru##.kant__header-geo__choice
+kant.ru##[class^=LocalityInfo_info_]
     ! banners and promos
 kant.ru##.js-banners-item
 kant.ru##.js-banners-list
 kant.ru##.kant__main__promo
 kant.ru##.kant__categories__slider--brands
 kant.ru##.kant__catalog__special-offer
+kant.ru##[class^=ProductCard_podeli_]
+    ! top
+kant.ru##[class*=Header_middleLineSticky_]:style(position:static !important)
     ! other
 
 ||kanzoboz.ru/data/chuvak2/$image
@@ -13620,10 +13651,21 @@ komplektmarket.ru##body > .pointer
 
 kompyutery-programmy.ru##blockquote
 
+    ! popups
 komus.ru##.b-regionConfirm
+komus.ru##.tippy-popper
+    ! banners and promos
+komus.ru##.js-banner-link
+komus.ru##.week-price-block
+komus.ru##.footer__banner
+komus.ru##.full-width-banner-carousel
+komus.ru##.configurable-banner-carousel
+    ! other
 komus.ru##.achtung
 komus.ru##.online_call
 komus.ru##.b-sticker__wrapper
+komus.ru##.news-subscription
+komus.ru##.b-header__overlay
 
 kondicionershik.ru##.header-desc
 
@@ -15554,6 +15596,12 @@ maskiest.ru##.t-store__card__mark
 
 masqueespadas.com##.fusion-slider-container
 
+# site blocks copypaste
+master.shop##div:style(user-select:initial !important)
+master.shop##.preloader_wrapper
+! fake notifications (0 and 4)
+master.shop##.count_goods_cart
+
 masteravannoy.ru##blockquote:has-text(/Если вам нужны мастера|удобный сервис|зарегистрируйтесь/)
 
 ||mastergrad.com$script
@@ -16260,6 +16308,8 @@ militaryarms.ru##.single.post > noindex
 ||militaryarticle.ru/templates/yoo_catalyst/images/background/*$image
 militaryarticle.ru###block-toolbar
 militaryarticle.ru###block-bottom
+
+military-chronicle.com##.dt-logo
 
 militaryfactory.com##.contentStripOuter:style(background:none !important)
 
@@ -17066,6 +17116,8 @@ mts-gpon.ru##.mx-trf-form
 
 mtservice.ru##.main_header__contacts
 
+mts-link.ru##.headline
+
 muk.training##.el-logo
 muk.training##.el-text-next-to-logo
 
@@ -17501,6 +17553,9 @@ nauchniestati.ru##.btn-success.btn
 nauchniestati.ru##.adv_block_context
 
 naumen.ru##.nau-tg-widget
+naumen.ru##.slider_block
+naumen.ru##.products_line__action
+naumen.ru##.block__btns.last-block
 
 ||naurfo.ru/*/naurfo.ru.jpg  # default news img
 ||naurfo.ru/images/news/diagnoz/$image  # banners
@@ -18397,6 +18452,9 @@ odveryah.ru##.footer-info
 ||office24by7.com/assets/js/floating-totop-button.min.js
 office24by7.com##.ofc__whatsapp
 
+! popups
+officemag.ru##.TipTip
+
 off-road-all.ru###main-addition:style(position:static !important)
 off-road-all.ru##.uk-sticky-fixed.uk-sticky:style(position:static !important)
 
@@ -18545,6 +18603,10 @@ oidview.com###info
 oidview.com##.green
 oidview.com###freetrial
 oidview.com##.green-menu
+
+oiler.pro##.calm_down
+oiler.pro###call-me-button
+oiler.pro##.services
 
 ||oka.fm/*/age.png
 
@@ -21142,6 +21204,9 @@ radiopotok.ru###fl-top
 radiopotok.ru##.marquee1
 
 radioskot.ru##.headpicterefun
+
+! inline related
+rad-star.ru##.rlink-modern
 
 radugamaster.ru##.nav-collapse
 radugamaster.ru##.header
@@ -25147,6 +25212,9 @@ strikeplanet.ru##.tocompare
 strikeplanet.ru##.oldcost
 strikeplanet.ru##.bx_catalog_item_controls
 
+strikeshop.com.ua###popup
+strikeshop.com.ua##.ribbon-banner
+
 ||stripe.com/v3/fingerprinted/
 
 strmir.ru##.l-header__top:style(position:static !important)
@@ -25402,6 +25470,8 @@ svyaznoy.ru##.b-nav-catalog__phone-tel
 ||svyaznoy.ru/upload/files/svg/product-sticker$image
 svyaznoy.ru##.b-product-block__stickers
 svyaznoy.ru##.b-header__fixed-margin
+
+swapmotor.ru##+js(set-attr, img[decoding="async"], src, [data-src])
 
 sweepatic.com##.site-nav-logo
 ! empty nav
@@ -27070,6 +27140,9 @@ translate.ru##.topBlog
 translate.ru##.app-download
 ! ads on site
 translate.ru###bttAdv
+
+transmissioncar.com##+js(set-attr, iframe.ezlazyload, src, [data-ezsrc])
+transmissioncar.com##+js(set-attr, img[decoding="async"], src, [data-ezsrc])
 
 ||trashbox.ru/img/top_menu_mobile$image
 trashbox.ru##.img_top_menu_button
@@ -30348,6 +30421,10 @@ xn--90afqsbambik.xn--p1ai##.product-page__credit
 ! москва.слободской-лес.рф
 xn--80adxhks.xn----9sbjfsfefvbc3afg.xn--p1ai##.top-header:style(position:static !important)
 xn--80adxhks.xn----9sbjfsfefvbc3afg.xn--p1ai##.bottom-header:style(margin-top:0 !important)
+
+! севрсп.рф
+! inline related
+xn--b1af5adcd.xn--p1ai##.related_link
 
 ! inline related
 xn--b1ahgrjafjgng.xn--p1ai##.middle-articles
