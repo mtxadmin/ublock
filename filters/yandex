@@ -154,6 +154,18 @@ market.yandex.*##[data-auto="snippet-price-old"]:style(font-size:20px !important
 market.yandex.*##[data-auto="snippet-price-old"]>span:has-text(без:)
 market.yandex.*##div::before
 
+market.yandex.*##[data-apiary-widget-name="@market/CpcLinkService"]
+! кнопки страниц зачем-то деактивированы, возвращаем удобство
+market.yandex.*##a:has-text(/^\d+$/):style(pointer-events:initial !important)
+
+! в рассрочку ("сплит")
+market.yandex.*##[data-baobab-name="financialProductBadge"]
+||yastatic.net/s3/market-static/export-static/admon/
+! some frames
+||yastatic.net/s3/market-static/export-static/h/gtmmarket.html  # &userId
+||yastatic.net/s3/market-static/export-static/*/vk$image
+market.yandex.*##[data-autotest-social-name]
+
 !fenek.market.yandex.ru - maybe don't, captcha
 !fenek.market.yandex.ru/*/event?hash
 !||market.yandex.ru/*/event?
