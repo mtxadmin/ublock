@@ -527,7 +527,7 @@ rbcz.io  # from ShadowWhisperer's UrlShorteners  # Checked:2024-06-21
 
 rbese.com  # from BlockListProject - Ads
 
-rbfive.bid  # from Adguard
+rbfive.bid  # ad scripts  # is in Adguard
 
 rbfour.bid  # ad scripts  # is in Ru AdList, ShadowWhisperer's Ads, Adguard
 
@@ -1835,6 +1835,8 @@ relap.ru
     ##a[href*="https://relap.io/r?"]
     ! from Ru AdList
     ##div[class*="relap"][class*="-rec-item"]
+    ! from Ru AdList, I think
+    ##a[href*="/relap.io/adv/"]
 
 relappro.com  # from Adguard
 
@@ -4730,7 +4732,9 @@ salaxe.com  # from EasyList  # Checked:2024-09-22
 
 salcalifornia.com  # from 10Zin Host Database  # scam subdomains
 
-saleads.pro  # ad network
+saleads.pro  # ad network  # ad imgs
+    ! at the moment, it was seen only here:
+    gkbru.ru##a[href*="saleads.pro/"]
 
 salebot.pro  # ad scripts
 
@@ -5032,6 +5036,10 @@ sarcoma.space  # from EasyList
 sardine.ai  # from ShadowWhisperer's Tracking and EasyPrivacy
 
 sare25.com  # from Adguard
+
+sarimsolus.com
+    ! from Ru AdList, I think
+    ##a[href*="/sarimsolus.com/"]
 
 sarky.org  # from BlockListProject - Tracking
 
