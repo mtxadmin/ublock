@@ -253,7 +253,7 @@ ozon.*##[data-widget="skuScroll"]:matches-path(/orderlist)
 ozon.*##[data-widget="objectGrid3"]:has-text(Ловите часы)
 ! ads in the mobile menu
 ozon.*##[data-widget=islandSeparator] ~ div[data-widget=objectGrid1]
-ozon.*##[data-widget="island"]
+ozon.*##[data-widget="island"]:not(:matches-path(/my))
 ozon.*##[data-widget="container"]:has-text(Все товары Хот Сейл)
 ozon.*##button:has-text(Premium)
 ozon.*##.skeleton-banner
