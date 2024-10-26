@@ -363,6 +363,10 @@ $removeparam=awc  # from Adguard
 
 $removeparam=bbaid  # from DandelionSprout's URLShortener
 
+$removeparam=bemobdata  # from Adguard
+
+$removeparam=_bhlid  # from Adguard
+
 $removeparam=bidmatchtype  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 
 $removeparam=_branch_match_id  # from Adguard and DandelionSprout's URLShortener
@@ -627,7 +631,7 @@ $removeparam=criterionid  # Microsoft tracking URL parameters: https://help.ads.
 
 $removeparam=cs_fpid  # from DandelionSprout's URLShortener
 
-$removeparam=cuid  # from Adguard
+$removeparam=cuid  # from Adguard and Ru AdList
     @@||mootoon.co.kr^$removeparam=cuid  # from Adguard  # didn't recheck yet
 
 $removeparam=/^cx_/i
@@ -768,15 +772,18 @@ $removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~e.mail.ru|~ne
     ! you.163.com$removeparam=from  # from Adguard
     ! bandcamp.com$removeparam=from  # from Adguard
     ! bilibili.com$removeparam=from  # from Adguard and DandelionSprout's ClearURLs for uBo
+    ! boosty.to$removeparam=from  # from Adguard
     ! column.sp.baseball.findfriends.jp$removeparam=from  # from Adguard
     ! diepresse.com$removeparam=from  # from DandelionSprout's ClearURLs for uBo
     ! doda.jp$removeparam=from  # from Adguard
     ! fmworld.net$removeparam=from  # from Adguard
+    ! fontanka.ru$removeparam=from  # from Adguard
     ! hh.ru$removeparam=from
     ! indeed.com$removeparam=from  # also is in DandelionSprout's ClearURLs for uBo and Adguard
     ! jetbrains.com$removeparam=from  # from Adguard
     ! jlcpcb.com$removeparam=from  # from Adguard
     ! kingsoft.jp$removeparam=from  # from Adguard
+    ! lidea.today$removeparam=from  # from Adguard
     ! myoji-kamon.net$removeparam=from  # from Adguard
     ! oshiete.goo.ne.jp$removeparam=from  # from Adguard
     ! pikabu.ru$removeparam=from
@@ -802,11 +809,6 @@ $removeparam=from,domain=~yandex.*|~account.mail.ru|~auth.mail.ru|~e.mail.ru|~ne
     ! from=*_portal&lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
 
 $removeparam=_from  # from DandelionSprout's URLShortener
-
-$removeparam=frommail
-    ! $removeparam=frommail,domain=mail.ru|sportmail.ru  # from Ru AdList
-    ! mail.ru*frommail=1$document,removeparam=|frommail=1,domain=mail.ru  # from Ru AdList
-    ! sportmail.ru*frommail=1$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
 
 $removeparam=ftag  # from DandelionSprout's URLShortener
 
@@ -1714,7 +1716,9 @@ $removeparam=settings_tracking  # from DandelionSprout's URLShortener
 $removeparam=/^_sgm_/i
     ! $removeparam=_sgm_action  # from Adguard
     ! $removeparam=_sgm_campaign  # from Adguard
+    ! $removeparam=_sgm_pinned  # from Adguard
     ! $removeparam=_sgm_source  # from Adguard
+    ! $removeparam=_sgm_term  # from Adguard
 
 $removeparam=share
     ! boosty.to$removeparam=share  # ?share=post_link
@@ -2120,6 +2124,9 @@ $removeparam=/^utm_/i,important,domain=~youtube.com  # Campaign tracking (utm)  
     ! $document,removeparam=utm_p,domain=pulse.mail.ru  # from Ru AdList
     ! megaknihy.cz$removeparam=utm_si  # from Adguard
     ! nationalgeographic.com$removeparam=utm_rd  # from Adguard
+    ! privatbank.ua$removeparam=utm_addrid  # from Adguard
+    ! privatbank.ua$removeparam=utm_jeref  # from Adguard
+    ! privatbank.ua$removeparam=utm_positionUrl  # from Adguard
     ! quizangel.com$removeparam=utm_site_source  # from Adguard
     ! quizangel.com$removeparam=utm_site_medium  # from Adguard
     ! quizangel.com$removeparam=utm_site_campaign  # from Adguard
@@ -2152,8 +2159,12 @@ $removeparam=/^utm_/i,important,domain=~youtube.com  # Campaign tracking (utm)  
     ! Strange-looking form:
     ! $removeparam=/^amp;utm_/  # from DandelionSprout's URLShortener
     ! @@mailinglist$removeparam=/^utm_/i  # from DandelionSprout's URLShortener
+    !
+    ! Also. Ru AdList rule
+    ~axd.semestr.ru,~b-kontur.ru,~math.semestr.ru##a[href*="&utm_medium=cpa"][target="_blank"]
 
 $removeparam=/^utm-/i  # from DandelionSprout's URLShortener  # didn't see this form, but ok. Ah, no, at least, yandex has it
+    ! $removeparam=utm-source  # from Ru AdList
     ! $removeparam=utm-term,domain=yandex.*
         ! ||yandex.*/promo/$removeparam=utm-term  # from Adguard
 
@@ -2236,7 +2247,7 @@ $removeparam=wx_statusbar_hidden  # from DandelionSprout's URLShortener
 
 $removeparam=xcust  # from DandelionSprout's URLShortener
 
-$removeparam=xtor  # Campaign link tracking  # https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/campaigns-javascript-en/marketing-campaigns-javascript-en/#direct-method_5  # from Adguard and DandelionSprout's URLShortener
+$removeparam=xtor  # Campaign link tracking  # https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/campaigns-javascript-en/marketing-campaigns-javascript-en/#direct-method_5  # from Adguard, DandelionSprout's URLShortener, Ru AdList
 
 $removeparam=yandexuid  # from DandelionSprout's URLShortener
 
@@ -2621,6 +2632,9 @@ booking.com$removeparam=sid  # sid, yes, can and should be removed
 !booking.com$removeparam=ss  # query in text form in search results, url is working in the new browser. This text field can be removed from query, but the search will work only in two stages, not very good
 booking.com$removeparam=ssne  # query in text form in search results, url is working in the new browser. This field seems to can be safely removed
 booking.com$removeparam=ssne_untouched  # query in text form in search results, url is working in the new browser. This field seems to can be safely removed
+
+boosty.to$removeparam=_1ld  # from Adguard
+boosty.to$removeparam=_1lp  # from Adguard
 
 bolshayastrana.com$removeparam=sub_id  # ref
 
@@ -3319,11 +3333,16 @@ loginfra.com$removeparam=sy  # from Adguard
 ! mail.ru services
 ! form "$removeparam=..,domain=.." here is just for params sorting convenience
 $removeparam=cr,domain=mail.ru|sportmail.ru  # from Ru AdList
+$removeparam=back,domain=e.mail.ru  # from Ru AdList
 $removeparam=exp_article,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=exp_id,domain=mail.ru|sportmail.ru
     ! mail.ru*exp_id=$document,removeparam=|,domain=mail.ru  # from Ru AdList
     ! sportmail.ru*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
 $removeparam=fm,domain=mail.ru|sportmail.ru  # from Ru AdList
+$removeparam=frommail,domain=mail.ru|sportmail.ru  # from Ru AdList
+    ! mail.ru*frommail=1$document,removeparam=|frommail=1,domain=mail.ru  # from Ru AdList
+    ! sportmail.ru*frommail=1$document,xmlhttprequest,removeparam=|,domain=sportmail.ru  # from Ru AdList
+$removeparam=fromnews,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=fromprefix,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=fromwidget,domain=mail.ru|sportmail.ru  # from Ru AdList
 ! $removeparam=rf,domain=mail.ru|sportmail.ru  # from Ru AdList - see rf
@@ -3618,10 +3637,10 @@ ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=layout_page_index
     ozon.kz/*/?miniapp=supermarket$removeparam=miniapp
 ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=oos_search  # now is in Adguard
 ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=opened
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=perehod
+ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=perehod  # now is in Ru AdList
 ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=pid  # ref
 ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=prev_collection
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=__rr
+ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=__rr  # now is in Ru AdList
 ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=sh  # doesn't work though
 ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=start_page_id
 ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=tf_state
@@ -3716,9 +3735,12 @@ rambler.ru$removeparam=readmore  # from Ru AdList, modified
 ! already blocked
 realsrv.com$removeparam  # from Adguard: ||syndication.realsrv.com/splash.php?$removeparam
 
+reddit.com$removeparam=%243p  # from Adguard
+reddit.com$removeparam=%24deep_link  # from Adguard
 reddit.com$removeparam=correlation_id  # from Adguard
 reddit.com$removeparam=post_fullname  # from Adguard
-reddit.com$removeparam=rdt  # now is in uBlock filters
+reddit.com$removeparam=post_index  # from Adguard
+reddit.com$removeparam=rdt  # now is in uBlock filters and Adguard
 reddit.com$removeparam=share_id  # from Adguard
 
 redgifs.com$removeparam=for  # from Adguard:||thumbs4.redgifs.com/*&for=$removeparam=for
@@ -4100,6 +4122,8 @@ walmart.com$removeparam=veh  # from DandelionSprout's URLShortener
     ! ||walmart.$removeparam=wl10  # from DandelionSprout's URLShortener
     ! ||walmart.$removeparam=wl11  # from DandelionSprout's URLShortener
     ! ||walmart.$removeparam=wl12  # from DandelionSprout's URLShortener
+
+washingtonpost.com$removeparam=itid  # from Adguard
 
 weather.com$removeparam=par  # from Adguard
 
