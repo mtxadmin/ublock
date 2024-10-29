@@ -249,6 +249,13 @@
 ||2gis.ru/museum/$important  # "old browser" popup
 ! geo popups
 2gis.ru###modal
+    ! banners and promos
+! это неинтересно. Тупая реклама.
+2gis.ru##div:has(>span:has-text(/Это интересно|Реклама/))
+! и это еще не всё. Вата лезет со ссылками
+! простой вариант - цепляет ссылки в организациях. Они, конечно, кривые, но. Так что чуть сложнее
+2gis.ru##div:has(>header):has(span:has(a[href*="link.2gis.ru"]))
+2gis.ru##div:has(>header):has(div:has(a[href*="link.2gis.ru"]))
     ! other
 ! is in Ru AdList
 2gis.ru##a[href*="://redirect.2gis.com/adv/"]
@@ -2753,6 +2760,8 @@ avtom-2.ru###text1
 
 avtomir.ru##.textpage__topimg
 
+avtomotospec.ru$inline-script  # site blocks copypaste
+
 avtonomnoeteplo.ru###SForm
 avtonomnoeteplo.ru###topper.toptop
 
@@ -3280,6 +3289,8 @@ bbc.com###brand
 bbk.ru##.slider__home-banner
 
 bcs-express.ru##.banner-open-account-with-bg
+
+beautyart.pro##.kr-footer-bg
 
 beauty-shop.ru##.article-block-subscribe
 
@@ -6032,6 +6043,9 @@ depo.ua##.openPost-more
 derevianniesideniy.ru###hits
 derevianniesideniy.ru##.dostavka
 
+dermatologcentr.ru$inline-script  # site blocks copypaste
+dermatologcentr.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
+
 desantura.ru###lenta:style(height:auto !important)
 desantura.ru###flag:style(height:auto !important)
 ||1c-bitrix-cdn.ru/*/lenta.png
@@ -6698,6 +6712,7 @@ doctu.ru##.smi_logo
 ||doctu.ru/img/bgr_partn.jpg
 doctu.ru##.mainpage:style(padding-top:0px !important; padding-bottom:0px !important)
 doctu.ru##.mainpage:style(background-image:none !important)
+doctu.ru##.tab-nav:style(position:static !important)
 
 doginhouse.ru##.img-featured
 doginhouse.ru##.sfsi_Sicons
@@ -6711,6 +6726,8 @@ doit.software##.call_to_action
 
 doktordick.com##.ui-widget.ui-dialog
 doktordick.com##.ui-widget-overlay
+
+doktorlaser.ru##.logo-main-wrap
 
 ||dokumenty.tv/mp3petbaner.jpg
 
@@ -10732,6 +10749,7 @@ hackernoon.com##.u-tintBgColor:style(background-color:white !important)
 hackernoon.com##.u-fixed:style(position:static !important)
 hackernoon.com###top:style(position:static !important)
 hackernoon.com##.about-page-link
+hackernoon.com##.notice:has-text(brand)
 
 hackmag.com##.sticky-container
 
@@ -15100,6 +15118,12 @@ lleo.me###flake2
 lleo.me##.shr
 lleo.me##h1
 
+    ! popups
+l-med.ru##.archi-widget-btn
+l-med.ru##.warning-banner
+l-med.ru##.fixed_wrapper
+    ! other
+
 lo4d.com##.logobar
 lo4d.com##.header-unpin
 
@@ -15938,6 +15962,9 @@ medlib.net##.copy2
 
 medmebel.ru##.bx_catalog-compare-list-small
 medmebel.ru##.fav_products_small
+
+! top
+med-otzyv.ru##.top
 
 ||medportal.ru/assets/footer/age_restriction
 
@@ -19933,6 +19960,10 @@ plasticbreast.ru##.block-block.block
 plasticbreast.ru##.view-stars
 plasticbreast.ru###knopko
 
+plasticology.ru##.cs-header__vk-button
+plasticology.ru##.cs-entry__author
+plasticology.ru##.has-background
+
 ! see plati.market above at digiseller
 ! see plati.* above at digiseller
 
@@ -23076,6 +23107,10 @@ salesdoor.com###wizard_confirmation
 ! popup
 salezshark.com###whatsapp.whats-app
 
+salonveronika.ru##.mobile-header-whatsapp
+! popup
+salonveronika.ru##.apply-link
+
 salsus.ru##.flex__header__contacts
 salsus.ru##.work-time
 salsus.ru##.callme-button
@@ -24115,6 +24150,17 @@ skillset.com##.question-hero
 ||skillshare.com/events/track  # is in Adguard
 skillshare.com###site-banner
 skillshare.com##.download-mobile-app-button
+
+    ! popups
+skin.ru##.layout-sidepanel-overlay
+    ! top
+skin.ru##.header-container__left
+    ! banners and promos
+skin.ru##.banner-slide
+skin.ru##.layout-subscribe
+skin.ru##.layout-footer-brands
+skin.ru##.article__products
+    ! other
 
 skipedia.ru###header
 
@@ -30411,6 +30457,8 @@ xn----7sbpzbpmgdge.xn--p1ai##.g_button
 
 ! пятаяпередача.рф
 xn--80aaaoea1ebkq6dxec.xn--p1ai##.interactive-widget
+
+xn--80aaf3axmme8h.xn--p1ai$inline-script  # автоюрайт.рф  # site blocks copypaste
 
 # автошколаподольск.рф
 xn--80aafj2acecwbcbk6ae1hrd.xn--p1ai##.page-preloader
