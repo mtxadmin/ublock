@@ -456,7 +456,7 @@ ozon.*##a:has(img[alt="Ozon Job"])
 ozon.*##*:remove-attr(trackinginfo)
     ! apps
 ozon.*##p:has-text(/Наведите камеру и скачайте|Point your camera and download/i)
-ozon.*##p:has-text((/Наведите камеру и скачайте|Point your camera and download/i) ~ div:has(img[src*="/group"])
+ozon.*##p:has-text(/Наведите камеру и скачайте|Point your camera and download/i) ~ div:has(img[src*="/group"])
 ||ozone.ru/s3/cms/*/qr-code$image
     ! socials
 ozon.*##a[title="VK"]
