@@ -1071,6 +1071,7 @@ aireng.ru##.pop-block
 air-gun.ru###popover_region
     ! top
 ||air-gun.ru/images/call_phone.png
+||air-gun.ru/images/small/noimg.jpg
 air-gun.ru##.call_phone
     ! show photos
 air-gun.ru##.slick-slide::before
@@ -2669,6 +2670,12 @@ aviasales.ru##.aviasales-app__navbar-wrap:style(position:static !important)
 aviasales.ru##.page-header__bottom
 aviasales.ru##.navbar__tabs-wrap
 aviasales.ru##.header__title-form
+    ! banners and promos
+aviasales.ru##div[data-test-id="hot-tickets"]
+aviasales.ru##div[data-test-id="city-poi-card"]
+aviasales.ru###tippy-2
+!aviasales.ru##input[data-test-id="booking-checkbox"]:remove-attr(checked) - doesn't work properly
+aviasales.ru##label[data-test-id="checkbox"]:has-text(/в\s*новой\s*вкладке/):remove()
     ! other
 
 avidreaders.ru##.footer
