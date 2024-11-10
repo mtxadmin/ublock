@@ -230,6 +230,7 @@ ozon.*#@#:not([data-widget="modalLayout"]) > * > [data-widget="skuGrid"]
 ! вторые строки - блок картинок, пока адблок думает при обработке больших массивов карточек. Дубликаты для комфорта.
 ! Вот это вот "средство от всего" вечно везде лезет. Не покупал я такое, это реклама. И выглядит неприятно.
 ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/kislorodnyy-ochistitel-brandfree"])
+ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/kislorodnyy-pyatnovyvoditel-brandfree"])
 ||ozone.ru/s3/multimedia-s/wc250/6745816828.jpg
 ! Скотч еще тоже задолбали подсовывать. Никогда не покупал и не смотрел.
 ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/dvustoronniy-skotch"])
@@ -242,6 +243,8 @@ ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/tualetnaya-bumaga-zew
 ! Бритвы какие-то, тоже не запрашивал
 ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/smennye-kassety-gillette"])
 ||ozone.ru/s3/multimedia-1-2/wc250/6931309430.jpg
+! И еще сберовские телевизоры начали навяливать без повода
+ozon.ru##div:has(>a[href^="/product/sber-"])
 !
 ozon.*##[data-widget="skuGridSimple"]:has-text(Лучшие предложения)
 ozon.*##[data-widget="skuShelfGoods"]
