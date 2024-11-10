@@ -10,6 +10,7 @@
 ||mail.ru/api-proxy/rb-mimic/  # from Ru AdList
 ||mail.ru/front-metrics/
 ||imgsmail.ru/2promo/  # ad scripts (octavius)
+||imgsmail.ru/assets/user-settings/new-user-setting-promo.mp4
 ||imgsmail.ru/*/logger-preset/  # ||imgsmail.ru/hb/e.mail.ru/@mail-core/logger-preset/
 ||imgsmail.ru/*/ph-logo/
 ||imgsmail.ru/widget.js
@@ -21,7 +22,11 @@
 ||mail.ru/getaway/  # from Ru AdList: /getaway/$popup,domain=mail.ru
 ||mail.ru/*/getaway/  # from Ru AdList: /getaway/$popup,domain=mail.ru
 ||imgsmail.ru/js/promisified-dom-events/
+||imgsmail.ru/test.js  # xray.send('test-from-mail-cdn')
+||imgsmail.ru/*/test.js  # imgsmail.ru/antares/test/test.js
 
+    ! popups
+mail.ru##.geomap-tooltip
     ! top
 mail.ru##.pm-logo
 mail.ru##.pm-menu__left__vk-logo
@@ -59,6 +64,8 @@ mail.ru##ul[data-testid="news-content"]
 mail.ru##a[data-testid="news-tabs-tab-item-ukraine2022"]
 mail.ru###asteroid-tv
 mail.ru##.asteroids-widgets__item
+mail.ru##.news-item:has(a[href*="news.mail.ru/politics/"])
+mail.ru##.tv-widget
     ! other
 ! https://pikabu.ru/story/mailru__adblock_plus_kak_skryit_reklamu_7650259
 mail.ru##.layout__column_right
