@@ -26,7 +26,9 @@ adfox-external-l3-engine.stable.qloud-b.yandex.net
 adfox.yandex.ru
     /adfox$important,all
         ! ||yastatic.net/pcode/adfox/*$important
-    ##[class*="adfox"]:not(html):not(body):not(article)
+    ~bes.media##[class*="adfox"]:not(html):not(body):not(article)
+        ! Exclusions:
+        ! bes.media - main div .adfox-added
     ~retail.ru##[id*="adfox"]:not(html):not(body):not(article)
         ! Exclusions:
         ! retail.ru - main div #main_div_adfox
