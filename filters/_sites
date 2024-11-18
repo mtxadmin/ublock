@@ -433,6 +433,10 @@
 !it seems, it doesn't properly works. And definitely doesn't work on mobile
 !4pda.ru,4pda.to##*:matches-css(height:/90.\d+/)
 !4pda.to##img:matches-css(height:90px)
+! background banners
+4pda.to##*:matches-css(background-image: /^url/):style(background:none !important)
+! and their links
+4pda.to##div[itemprop="description"]
     ! right square big banner (doesn't work properly)
 4pda.ru,4pda.to##img[src^="https://s.4pda.to"]:matches-css(height:300px):matches-css(width:300px)
 4pda.ru,4pda.to##*:matches-css(width:300px)
@@ -3427,6 +3431,9 @@ beru.ru##div.section:has-text(Этот товар любят)
 beru.ru##div:matches-css(position:fixed)
 beru.ru##button:matches-css(position:fixed)
 
+! top
+bes.media###headerMenuWrapp
+
 ||besmarty.ru/assets/top-plugin/$image
 besmarty.ru##.w-top-plugin
 besmarty.ru###vertical-ticker
@@ -5181,6 +5188,7 @@ citilink.ru##.best-opinion-window
 citilink.ru##.footer__social-group-ico
 citilink.ru##.PersonalDataConfirm
 citilink.ru##.ConfiguratorBox
+citilink.ru##div:has(>svg)
 
 citrix.com##.page-banner
 
@@ -6114,6 +6122,7 @@ dev.to##.crayons-article-actions:style(position:static !important)
 deviantart.com##[href="https://www.deviantart.com"]
 
 devicemag.com##.dynamic-author-description
+devicemag.com##.widget:has-text(/About/i)
 
 devopsconf.io##.header-features::before
 
@@ -6541,6 +6550,8 @@ dns-shop.ru,dns-shop.kz##.homepage__top-grid
 dns-shop.ru,dns-shop.kz##.app-link
 dns-shop.ru,dns-shop.kz##.homepage__action-tinder
 dns-shop.ru,dns-shop.kz##.homepage__actual-offers
+! duplicate fixed header
+dns-shop.ru,dns-shop.kz##.navigation-header-product
     ! unfixed sidebar
 club.dns-shop.*##.sidebar:style(position:absolute !important)
     ! footer
@@ -6564,6 +6575,7 @@ dns-shop.ru,dns-shop.kz##.stories__card:has-text(/(Р|р)еклама/)
 dns-shop.ru,dns-shop.kz##.action-swiper
 dns-shop.ru,dns-shop.kz##.info-banner
 dns-shop.ru,dns-shop.kz##.digital-gift-card
+dns-shop.ru,dns-shop.kz##.product-card__accessories
     ! stickers
 dns-shop.ru,dns-shop.kz##.additional-vobler
 dns-shop.ru,dns-shop.kz##.product-info__voblers
@@ -12807,6 +12819,8 @@ ixbt.com##div.panel-default.panel:has-text(Об авторе)
     ! ||forum.ixbt.com/weep.svg$image
 ! hover dots on photos
 ixbt.com##._gallery::after:style(background:none !important)
+! seo
+ixbt.com##.project-info
 
 ixsystems.com###header
 
@@ -15329,6 +15343,10 @@ lpgenerator.ru##.santa
 lpgenerator.ru##div.entryFull_body__linkBlock
 lpgenerator.ru##.fixedMenu:style(position:static !important)
 lpgenerator.ru##a.footerSocIcons__iconItem
+
+||lr-club.com/mega2_new.gif
+||lr-club.com/qrator.png
+||lr-club.com/shop.gif
 
 lsgeotar.ru##.ls-top-header
 
@@ -20855,6 +20873,7 @@ profi-user.ru##.form-bl
 
 !profteh.com##.modal
 profteh.com##.school-avatar
+profteh.com##.fa-fade
 
 proftools.ru##.left_block
 proftools.ru##.logo_wrapp
@@ -22258,10 +22277,17 @@ rootmyandroid.org##.ulp-overlay
 
 rootmygalaxy.net##.mtsnb-fixed.mtsnb-top
 
+    ! top
+root-nation.com##.td-main-sidebar
+! duplicate fixed header
+root-nation.com##.td-header-sticky-smart
+    ! banners and promos
 ! top banner
 root-nation.com##.size-full.aligncenter
-! top
-root-nation.com##.td-main-sidebar
+! inline related
+root-nation.com##p:has-text(Читайте также:)
+root-nation.com##p:has-text(Читайте также:) + ul
+    ! other
 
 ||rootusers.com/wp-content/uploads/2017/02/red-hat-certified-engineer-rhce-video-course-box.jpg
 
@@ -24916,6 +24942,8 @@ spoilertime.ru###banneryan
 sport.ua##a[href^="https://sport.ua/betting/"]
 sport.ua##li:has(a[href^="https://sport.ua/betting/"])
 
+sport24.ru##div:has(>div>div:has-text(/^Быть игре!$/))
+
 ||sport-express.ru/*/dg-bnr.svg
 ||sport-express.ru^*/betcity/  # is in Ru AdList
 ||sport-express.ru/fb/img/icons/notifications.svg
@@ -26443,6 +26471,9 @@ tenorshare.ru###return-top.return-top
 ||tenti.ru/*/watch.js
 tenti.ru##.cont-pay
 
+! popup
+tenzystech.com###wabutton.wabtn
+
 teplo.guru###colorbox
 teplo.guru###cboxOverlay
 
@@ -27160,6 +27191,10 @@ tophotels.ru##.footer__txt-big
 tophotels.ru##.footer__title
 
 top-knife.ru##.brand-plugin-wrap
+
+top-mob.com##div:has(>p:has-text(Telegram))
+! inline related
+top-mob.com##.internal-linking-related-contents
 
 topmobiletech.com##.fixed.sticky-header:style(position:static !important)
 topmobiletech.com##.saxon-textwidget
