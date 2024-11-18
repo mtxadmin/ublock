@@ -251,9 +251,14 @@ ozon.*##[data-widget="skuShelfGoods"]
 ! naggy inline related in mobile orders
 ozon.*##[data-widget="skuScroll"]:matches-path(/orderlist)
 ! related BEFORE the description
-! update: they removed it?
+! update: did they removed it?
 !ozon.*##[data-widget="skuGrid"]:has-text(Подобрали для вас)
 ozon.*##[data-widget="objectGrid3"]:has-text(Ловите часы)
+! related inline
+ozon.*##div[data-widget="skuScroll"]:has(span:has-text(Покупают вместе))
+! related inline
+!ozon.*##[data-widget=islandSeparator] + div[data-widget=container]:has-text(Рекомендуем также)
+ozon.*##[data-widget=islandSeparator] + div[data-widget=container]:has(div[data-widget="skuScroll"])
 ! ads in the mobile menu
 ozon.*##[data-widget=islandSeparator] ~ div[data-widget=objectGrid1]
 ozon.*##[data-widget="island"]:not(:matches-path(/my/order)):not(:matches-path(/my/fav))
@@ -380,6 +385,10 @@ ozon.ru##a[href*="ozon.ru/promo/"]
 ozon.by##a[href*="ozon.by/promo/"]
 ozon.com##a[href*="ozon.com/promo/"]
 ozon.kz##a[href*="ozon.kz/promo/"]
+ozon.ru##a[href="https://ballon.ozon.ru/"]
+ozon.by##a[href="https://ballon.ozon.by/"]
+ozon.com##a[href="https://ballon.ozon.com/"]
+ozon.kz##a[href="https://ballon.ozon.kz/"]
 ozon.*##[data-widget="seasonWidget"]
 ! top banner 2023-11
 ozon.*##div:matches-css(height:32px):has(img:matches-css(height:32px))
@@ -389,6 +398,10 @@ ozon.*##div:has(>img[elementtiming*="lcp_eltiming_webToAppBanner"])
     ! ozon.ru##img[elementtiming*="Banner"]
 ! реклама в выпадающем списке при поиске
 ozon.*##.type-brand.suggestions-item
+! странное промо в мобильном меню
+ozon.*##a:has(span:has-text(/^Fashion$/))
+! unfix too big mobile bottom bar
+ozon.*##[data-widget="webContainerFixed"]:style(position:static !important)
 ! при поиске автозапчастей навязчиво вылезает "гараж" - убираем его, при необходимости оно есть в меню
 ||ozone.ru/graphics/automoto/garage_entry_point/image_add_car.webp$image
 ozon.*##div[data-widget=webGarageEntryPoint] > div:style(margin-top:0px !important; margin-bottom:0px !important; padding-top:0px !important; padding-bottom:0px !important)
