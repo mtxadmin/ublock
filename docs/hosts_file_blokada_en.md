@@ -130,7 +130,7 @@ https://discourse.pi-hole.net/t/support-wildcards-in-local-dns-records/32098/24
 
 https://www.reddit.com/r/pihole/comments/bu8fvz/enhance_pihole_with_wildcard_blocking_adguard/
 
-Additionally, it doesn't support regexes in blocklists. Example ("Domains on Adlists: 0" after importing):
+Additionally, it doesn't support regexes or wildcards in blocklists. Example ("Domains on Adlists: 0" after importing):
 
 https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list
 
