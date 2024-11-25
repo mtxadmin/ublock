@@ -46,6 +46,7 @@ Update: The authors removed this working version from Github. Options:
 - Download latest v4 from https://github.com/blokadaorg/blokada/releases/tag/archive - latest v4 version there is from 2023-02, so-called blokada4-final.apk, and it's NOT working properly, bypassing most of the ads
 - Download from Russian site [4pda](https://4pda.to/forum/index.php?showtopic=828196) (downloading there needs registration, or you will see 404 errors) - but v4 branch there has only 4.8.3 release
 - Search app's apk on third-party sites. I don't really trust them, but... It can be found here: [1](https://apkcombo.com/blokada-4/org.blokada.alarm/download/phone-4.15.0-apk), [2](https://www.apkmirror.com/apk/blokada/blokada-3/blokada-3-4-15-0-release/blokada-4-15-0-android-apk-download/), but they are different, very suspicious! Virustotal says they both are not invected ([1](https://www.virustotal.com/gui/file/1f8cfc7454134eacecb543dd9636fe1c12f289c86217f40a5b4816d63575bfe0),[2](https://www.virustotal.com/gui/file/ba76d9a881412e1fe8eb310c0b26cd14897087e01997ca0647aa7d7a4a3a959a)), but libs in there are different. I wouldn't install this.
+- Lastly, I [pulled](https://stackoverflow.com/questions/4032960/how-do-i-get-an-apk-file-from-an-android-device) well-working apk from my phone and put it [here](https://github.com/mtxadmin/ublock/raw/refs/heads/master/docs/blokada%204.11.1.apk)
 
 
 The address of the hosts file of this project:
