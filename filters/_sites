@@ -7186,10 +7186,16 @@ dtf.ru/hit/
 dtf.ru/booster/
 dtf.ru/chan/
 !dtf.ru/initialData
+    ! unfix elements
 dtf.ru##.l-fixed:style(position:static !important)
 dtf.ru##.sticky_sidebar:style(position:static !important)
 dtf.ru##.layout__column--sticky:style(position:static !important)
 dtf.ru##.layout__sticky:style(position:static !important)
+dtf.ru##.bar--top.bar:style(position:static !important)
+dtf.ru##.content-footer--floating
+dtf.ru##.aside:style(position:static !important)
+dtf.ru##.sidebar:style(max-height:initial !important)
+    ! other
 dtf.ru##.live
 dtf.ru##.subsite_card_short_with_content
 dtf.ru##.kojima-sidebar-item
@@ -16137,15 +16143,18 @@ medtehno.ru###composite_header_contacts
 
 ||meduniver.com/images/logoznak-3.png  # don't know why /logo$image rule don't work here
 
+    ! top
 meduza.io##.MaterialPanel-sticked.MaterialPanel-root
 meduza.io##.Header-logo
-!meduza.io##h2 - in general, don't
-meduza.io##[class^=DonatesTeaser]
 meduza.io##.TopBar-container
-! inline related
-meduza.io##[class*="RelatedBlock-module_center"]
 ! top
 meduza.io##.Layout-module-banner
+meduza.io##.TopBar-module-root
+    ! other
+!meduza.io##h2 - in general, don't
+meduza.io##[class^=DonatesTeaser]
+! inline related
+meduza.io##[class*="RelatedBlock-module_center"]
 
 meduzza.ru###topMiniBasket
 meduzza.ru##.js__city-check.city-check
