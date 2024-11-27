@@ -280,7 +280,7 @@ campaign-music.hicloud.com
 datacollector-dra.dt.hicloud.com  # from NextDNS native-tracking-domains huawei
 datacollector-drcn.dt.hicloud.com  # from NextDNS native-tracking-domains huawei
 datacollector-dre.dt.hicloud.com  # is in NextDNS native-tracking-domains huawei
-datacollector-drru.dt.hicloud.com  # is in NextDNS native-tracking-domains huawei
+datacollector-drru.dt.hicloud.com  # app requests  # is in NextDNS native-tracking-domains huawei
 geo.hicloud.com
 geo-dra.platform.hicloud.com
 geo-drcn.platform.hicloud.com
@@ -326,6 +326,9 @@ servicesupport.hicloud.com  # https://github.com/hagezi/dns-blocklists/issues/79
 userbehavior-reader-drcn.himovie.hicloud.com
 wap2.hispace.hicloud.com
 wap3.hispace.hicloud.com
+    ! app requests:
+    ! datacollector-drru.dt.dbankcloud.cn
+    ! datacollector-drru.dt.hicloud.com
 
 igg.com  # pay-fb.igg.com  # "video game developer"
 
@@ -419,7 +422,6 @@ telemetry-experiment.cdn.mozilla.net  # Mozilla - Tracker  # from Quidsup NoTrac
 telemetry-incoming.r53-2.services.mozilla.com  # Mozilla - Tracker  # from Quidsup NoTrack-Blocklist
 
 ! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
-rtlog.musical.ly
 api-boot.tiktokv.com
 api-core-boot.tiktokv.com
 applog.musical.ly  # also is in ShadowWhisperer's Tracking
@@ -457,7 +459,7 @@ mon-ru.tiktokv.com
 mon.us.tiktokv.com
 mon-va.tiktokv.com  # from Adaway
     ||mon*-*.tiktokv.us^  # from Adguard
-rtlog.musical.ly  # from ShadowWhisperer's Tracking
+rtlog.musical.ly  # is in ShadowWhisperer's Tracking
 rtlog.musical.ly.edgekey.net  # from ShadowWhisperer's Tracking
 rtlog.byteoversea.com  # from ShadowWhisperer's Tracking
 rtlog.tiktokv.com  # from ShadowWhisperer's Tracking
@@ -676,7 +678,7 @@ swtest.ru  # some app (pdd) wants to go there. No way.  # 504 root
 !+  temp.swtest.ru
 ! end of swtest.ru
 
-adback.tango.me  # from Adguard
+!adback.tango.me  # from Adguard
 adinfo.tango.me  # from Adguard
 
 log.tapatalk.com  # from MobileAdTrackers
