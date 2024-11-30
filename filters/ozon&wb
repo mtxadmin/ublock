@@ -265,9 +265,13 @@ ozon.*##[data-widget="skuGridSimple"]:has-text(Лучшие предложени
 ozon.*##[data-widget="skuShelfGoods"]
 ! naggy inline related in mobile orders
 ozon.*##[data-widget="skuScroll"]:matches-path(/orderlist)
+!
 ! related BEFORE the description
 ! update: did they removed it?
 !ozon.*##[data-widget="skuGrid"]:has-text(Подобрали для вас)
+! update: new vesion. Появляется не всегда, причём.
+ozon.*##div[data-widget="row"]:has(>div[data-widget="column"] >div[data-widget=webCurrentSeller]) + div[data-widget=webPdpGrid] > div[data-widget="row"]:has(span:has-text(Рекомендуем также))
+!
 ozon.*##[data-widget="objectGrid3"]:has-text(Ловите часы)
 ! related inline
 ozon.*##div[data-widget="skuScroll"]:has(span:has-text(Покупают вместе))
@@ -519,10 +523,14 @@ ozon.*##[data-widget="webSharingButton"]
 ! Озон силён своей моментальной логистикой. Но вот это обычный алиэкспресс, ещё и с заморочками.
 ! да, заказывать можно, но нужно, чтобы этот момент был виднее
 ozon.*##span:has-text(Условия доставки из-за рубежа):style(color:red !important)
+!
 ! многие продавцы пишут полную фигню, тупую, однообразную и рекламную, в качестве ответов на отзывы. Задолбало.
 ozon.*##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в ответ/)))
 ! new design
 ozon.*##div:has(>div>span:has-text(/0 комментариев|1 комментарий/))
+! new design again
+ozon.*##button:has(>div:has-text(/0 комментариев|1 комментарий/))
+!
 ozon.*##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/)):not(div[reviewuuid])
 ! and also. Old design.
 ! reviews without text are useless
