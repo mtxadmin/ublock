@@ -7204,6 +7204,8 @@ dtf.ru##.sidebar__footer__icon
 ! "online" dot on avatars
 dtf.ru##.comment__avatar--online::after
 dtf.ru##.subsite-card__description
+! ломает верстку блока
+dtf.ru##.block-quote__line
 
     ! banners and promos
 dtln.ru##.tm-bnr
@@ -10575,6 +10577,13 @@ gunmag.com.ua##.btTickerSlider
 gunmag.com.ua##.bt_bb_banner
 
 gunnalag.com##.float-header
+
+    ! popups
+guns.club##.bottom-popup
+guns.club##.menu-bottom
+    ! banners and promos
+guns.club##.market-slider
+    ! other
 
 ! recheck
 !forum.guns.ru##.altcolor1 > tbody > tr
@@ -16204,10 +16213,14 @@ megafon.ru##.mf_super-offer
 megafon.ru##.gadget_personal_offers_ng
 megafon.ru##.tile_personal
 megafon.ru##.available-options-interesting
+megafon.ru##.loyalty-system-buttons__wrapper-container
+megafon.ru##.start-price-block
     ! other
 megafon.ru##.mfui-tile > svg
 megafon.ru##.footer__app-badge
 megafon.ru##.footer__networks-list
+megafon.ru##.footer-v2__apps-block
+megafon.ru##.footer-v2__apps-discount-container
 
 ! sbermegamarket.ru is now megamarket.ru
 ! see it in ozon&wb
@@ -30512,6 +30525,8 @@ xda-developers.com##+js(abort-on-property-write.js, adonisHash)
 
 ! it can contain animated gifs (formally .jpg files)
 xdaforums.com##.avatar
+! top
+xdaforums.com###top > div:has-text(/^$/)
 
 xdrv.ru##.youtube
 xdrv.ru##.left_block
