@@ -4067,11 +4067,20 @@ bookafan.website##.orig-name
 book-erix.info##.inner-header-banner
 book-erix.info##.main-header
 
+||booking.com/js_errors
 ||booking.com/*/track^  # from Adguard
-booking.com##.header-signin-prompt
-booking.com##.promote_article__overlay
-booking.com##.promote_article
+||bstatic.com/psb/cross-sell/
 ||bstatic.com/static/js/error_catcher_bec_cloudfront_sd/
+    ! popups
+booking.com##.promote_article
+booking.com##.promote_article__overlay
+booking.com##.header-signin-prompt
+booking.com##.cross-sell-modal-exposure-point
+booking.com##.bui-overlay
+booking.com##.security-popup
+    ! banners and promos
+booking.com##.hero-banner-wrapper
+    ! other
 
 booknet.ua##.modal:has([class^=modal-booknet-offer])
 booknet.ua##.bn_header:style(position:static !important)
@@ -12196,6 +12205,17 @@ imma.ru##.mfp-bg
 imma.ru##.main-slider__wrap
 imma.ru##.app-buttons
 imma.ru##.child
+
+    ! popups
+! ad popup
+imobie.com##.nav-side
+imobie.com##.rs_clm4_top
+imobie.com##.sptnavbar
+    ! banners and promos
+    ! top
+imobie.com##.sptdk_logo.sptbar_logo
+imobie.com##.navlogonew
+    ! other
 
 imperiatools.ru##.widget-html
 imperiatools.ru###iview
@@ -27175,6 +27195,9 @@ tkani.land##.fcon__wrap
 tkani.land##.sbml
     ! other
 
+tkanir.ru##.tnl_link
+tkanir.ru##.header-float
+
     ! top
 ||tk-turin.ru/*/forest.png
 tk-turin.ru##.phone-ico
@@ -28276,7 +28299,7 @@ unpictures.ru$inline-script  # site blocks copypaste
 
 ||unpkg.com/eventemitter
 ||unpkg.com/imask
-||unpkg.com/web-vitals  # ad tracking scripts  #https://unpkg.com/web-vitals@1.1.0/dist/web-vitals.umd.js
+||unpkg.com/web-vitals  # ad tracking scripts  #https://unpkg.com/web-vitals@1.1.0/dist/web-vitals.umd.js  # also is in Adguard
 ! shopify scripts
 ! upd: not only. There are some non-ad scripts there
 !unpkg.com
