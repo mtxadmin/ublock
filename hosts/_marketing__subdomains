@@ -704,8 +704,9 @@ beacon.wikia-services.com  #https://beacon.wikia-services.com/__track/
 ||browser-update.  # from uBlock filters - Badware: ||browser-update.*.top^
 
 ! chatbots and noisy consultants on sites
-/chat.$domain=~bizon365.ru|~domclick.ru|~etutorium.com|~kuki.ai|~openai.com|~worknf.ru
+/chat.$domain=~bizon365.ru|~booking.com|~domclick.ru|~etutorium.com|~kuki.ai|~openai.com|~worknf.ru
     ! Exclusions:
+    ! booking.com - useful chats
     ! kuki.ai - chatbot, not embedded, just single-user AI
     ! openai.com - chatbot, not embedded, just single-user AI
 chat.buymeacoffee.com
@@ -3117,7 +3118,7 @@ tracking.service.cz.nl  # from Adguard
 tracking.deltadefense.com
 tracking.deutscheladies.de  # from EasyPrivacy
 tracking.devoteladies.de  # from EasyPrivacy
-tracking.digitalocean.com  # from EasyPrivacy
+tracking.digitalocean.com  # from EasyPrivacy, Quidsup NoTrack-Blocklist
 tracking.directservices.it
 tracking.direxion.com  # from Adguard
 tracking.dominanteladies.de  # from EasyPrivacy
@@ -4242,6 +4243,8 @@ creatives.cliphunter.com  # from EasyList
 csp-reporting.cloudflare.com  # from EasyPrivacy
 tr.www.cloudflare.com  # from Adguard
 
+aab.devicetests.com  # is in Adguard
+
 !adinterax.cnet.com
 adinterax.cnet.com.edgesuite.net  # from MVPS
 
@@ -4986,6 +4989,7 @@ vast4.kinogo.la  # from Adguard
 prostoimya.kino-o-voine.ru  # from Adguard
 
 ma.kinopoisk.ru  # ma.kinopoisk.ru/api-frontend//graphql
+mc.kinopoisk.ru  # from Mahakala
 
 technopolis.kirov.ru  # from Dan Pollock's hosts file
 
@@ -5707,6 +5711,15 @@ adm.shinobi.jp  # from EasyList
 
 tqqxrg.shopandshow.ru  # from Adguard
 
+log-collector.shopee.co.id  # Shopee - Tracker  # from Quidsup NoTrack-Blocklist
+log-collector.shopee.co.th  # Shopee - Tracker  # from Quidsup NoTrack-Blocklist
+log-collector.shopee.com.br  # Shopee - Tracker  # from Quidsup NoTrack-Blocklist
+log-collector.shopee.com.my  # Shopee - Tracker  # from Quidsup NoTrack-Blocklist
+log-collector.shopee.ph  # Shopee - Tracker  # from Quidsup NoTrack-Blocklist
+log-collector.shopee.sg  # Shopee - Tracker  # from Quidsup NoTrack-Blocklist
+log-collector.shopee.tw  # Shopee - Tracker  # from Quidsup NoTrack-Blocklist
+log-collector.shopee.vn  # Shopee - Tracker  # from Quidsup NoTrack-Blocklist
+
 s.shopify.com$important  # from MVPS HOSTS file  # in AdGuard: ||s.shopify.com/visit/record.gif?
 stats.shopify.com$important  # is in AdGuard and EasyPricacy
 v.shopify.com$important  # is in AdGuard and EasyPricacy  #v.shopify.com/internal_errors/track
@@ -6205,6 +6218,8 @@ stsdk.vivoglobal.com  # from Adaway
 
 !1l-hit.vkplay.ru  # from Ru AdList
 
+ms.vk.com  # from EasyPrivacy
+
 nps.vl.ru  # app requests  # tested for months
 chronos.vl.ru  # from Ru AdList
 
@@ -6327,6 +6342,8 @@ pp.wqa.ru
 optimizely.wsj.com  # wsj.com - Tracker  # from Quidsup NoTrack-Blocklist
 
 pushlog.wsoft.ru  # Wsoft.ru - Tracker  # from Quidsup NoTrack-Blocklist
+
+cloudmetrics.xenforo.com  # is in EasyPrivacy
 
 !# xfinity - comcast paid tv
 !businesschat.xfinity.com
