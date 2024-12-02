@@ -795,7 +795,8 @@ _adsys.js  # from Adguard
     ! ||tropki.ru/sites/default/files/advagg_js/
 =advanced-ads-  # from EasyList
 _advert/  # from EasyList
-/advert.js$important
+/advert.$script,important
+    ! /advert.js$important
 /advert-  # from EasyList
 /advert3.js$important
 /advertise.
@@ -1125,6 +1126,7 @@ _banner_rotator.php  # from Adguard
 /istripper/*  # ads on many sites  # is in EasyList and uBlock filters
 /javascript_adblockdetector/front_front_abagent.js  # from Adguard
 /jllikepro/js/buttons.
+?local_ga_js=  # EasyPrivacy rule, very useful (https://some_site.com/?local_ga_js=<some_hash>)
 /jquery.adsplace
 /jquery.adsplacer
 /jquery.bootstrap.scrollspy.js
@@ -1397,7 +1399,7 @@ _rebid.js  # from EasyList
     ! ||vmeste.xyz/vast/  # from Ru AdList
     ! ||api.yapfiles.ru/vast/  # from Ru AdList
     ! ||ykt.ru/vast/$xmlhttprequest  # from Ru AdList
-/vast.
+/vast.$important
     ! /vast.js
         ! /handler_static/js/vast.js  # from Ru AdList
         ! /testserial/vendor/vast.js  # from Ru AdList
@@ -3009,6 +3011,7 @@ _urchin.js  # from Fanboy's
 /videojs-tracking.  # from EasyPrivacy
 /videojs.ga.$important  # from EasyPrivacy
     ! /videojs.ga.js$important  # from EasyPrivacy
+    ||unpkg.com/videojs-vast-vpaid$important  # from Adguard
 /videolog?vid=  # from EasyPrivacy
 /videotracking*$important
     ! /videotracking/*  # from EasyPrivacy
