@@ -11,6 +11,9 @@ api.passport.yandex.ru$third-party
 
 ! ads and telemetry
 
+ads.yandex.com  # from Mahakala
+ads.yandex.ru
+
 ! adfox belongs to Yandex. A pair of cosmetic rules about it are also here
 adfox.ru$important,all  # also is in Ru AdList
 !+  ads.adfox.ru
@@ -45,9 +48,15 @@ ya-browser.ru
     ! from Ru AdList
     ##a[href*="://ya-browser.ru/r/"]
 
-advertising.yandex.ru$important,all
-adfstat.yandex.ru  # ad tracker imgs  # is in Adguard
+abt.s3.yandex.net  # from Mahakala, Adguard
 
+advertising.yandex.ru$important,all
+adfstat.yandex.ru  # ad tracker imgs  # is in Adguard, ShadowWhisperer's Tracking
+
+aflt.market.yandex.ru  # from Mahakala
+aflt.market.yandex.by
+aflt.market.yandex.com
+aflt.market.yandex.kz
 aflt.travel.yandex.ru  # 3p ad aff widgets  # https://aflt.travel.yandex.ru/widgets/api.js  # https://aflt.market.yandex.ru/widget/script/api
 aflt.travel.yandex.by
 aflt.travel.yandex.com
@@ -58,6 +67,9 @@ an.yandex.ru$important,all
     /cdn-cgi/pe/bag2?r[]=*an.yandex.ru  # from Ru AdList
 
     ! metrics and trackers
+
+ap.yandex-net.ru
+    ! report.ap.yandex-net.ru  # from Peter Lowe's hosts file
 
 appmetrica.yandex.net$important,all
 !+  api.appmetrica.yandex.net
@@ -74,7 +86,7 @@ appmetrika.yandex.ru$important,all
 appmetrica.yandex.$important,all
 ! end of appmetrica.yandex
 
-amc.yandex.ru  # ads  # is in Adguard
+amc.yandex.ru  # ads  # is in Adguard, ShadowWhisperer's Tracking
 
 api-metrica.yandex.ru
 web-metrica.yandex.ru
@@ -82,7 +94,16 @@ web-metrica.yandex.ru
 mc.yandex.ru$important,all
 !+  mediascope.mc.yandex.ru
 ! end of mc.yandex.ru
+mc.yandex.by$important  # from Mahakala
 mc.yandex.com$important  # from Adguard and Ru AdList
+mc.yandex.com.tr  # from Mahakala
+mc.yandex.kz$important  # is in Mahakala
+mc.yandex.md  # from Mahakala
+mc.yandex.net$important
+
+media-adv.market.yandex.ru  # from Mahakala
+
+ms.yandex.ru  # from Mahakala, Dan Pollock's hosts file
 
 ya-counter.ru  # from Ru AdList
 
@@ -95,6 +116,7 @@ ymetrica1.com
 qos-api.ott.yandex.net  # Yandex - Tracker  # from Quidsup NoTrack-Blocklist
 ! video tracking?
 tracking.ott.yandex.net
+tracking.ott.yandex.ru  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
 
 ! clck.yandex hosts from https://hosts-file.net/ad_servers.txt
 clck.yandex.by
@@ -111,6 +133,12 @@ clck.dzen.ru  # from ShadowWhisperer's Tracking
 
 dr.yandex.net  # from ShadowWhisperer's Ads
 dr2.yandex.net  # from ShadowWhisperer's Ads
+
+extmaps-api.yandex.net  # from BlockListProject - Ads, Mahakala, EasyPrivacy
+
+grade.market.yandex.ru  # from BlockListProject - Ads, Cameleon, Mahakala
+
+media-adv.market.yandex.ru  # First Party - Advertising  # from Quidsup NoTrack-Blocklist
 
 ! metrika yandex hosts mostly from https://hosts-file.net/ad_servers.txt
 ! disable any whitelists
@@ -152,12 +180,15 @@ web-metrica.yandex.ru$important,all
     /metrika.js$important,all
     /yametrika/*
     /yandex-metrica-watch/*
+    ||yandex.ru/watch/$important,all
     ! is in AdGuard
     ##a[href^="https://metrika.yandex.ru/stat/"]
 
 metrika-informer.com$important,all
 
 metrica-yandex.com  # from GoodbyeAds
+
+lbs.yandex.ru  # from Mahakala
 
 ! some embed modules from 3rd sites
 jstracer.yandex.ru$important,all
@@ -170,6 +201,8 @@ log.strm.yandex.ru
     ||strm.yandex.ru/perf
     ! is in Adguard
     ||strm.yandex.ru/log?
+
+yandexmetrica.com  # from Mahakala
 
     ! banners
 
@@ -186,12 +219,15 @@ awaps.yandex.ru$important,all
     ||yastatic.net/awaps-ad-sdk-js$important,all
         ! ||yastatic.net/awaps-ad-sdk-js/
 
+ba.yandex.net  # from Mahakala
+
 bs.yandex.ru$important,all
 bs-meta.yandex.ru  # from MVPS
+bs-metadsp.yandex.ru  # from Mahakala
 
 !cloud-api.yandex.ru  # app requests  # but: @@||cloud-api.yandex.ru/telemost_front/v2/telemost/conferences
 
-csp.yandex.net  # no-csp-reports: * true
+csp.yandex.net  # no-csp-reports: * true  # is in EasyPrivacy
 
 direct.yandex.ru$important,all
 !+  api.direct.yandex.ru
@@ -207,6 +243,7 @@ statchecker.yandex.ru  # from Ru AdList
 webmaster.yandex.ru$important,all  # from Adguard, modified
 
 yabs.yandex.ru$important,all
+yabs.yandex.kz  # from ShadowWhisperer's Tracking
 
 yandexadexchange.net$important,all
 !+  dsp.yandexadexchange.net
@@ -314,6 +351,8 @@ yastore.mobile.yandex.net
 
 awsync.yandex.ru  # from Adguard and Ru AdList
 
+myip.yandex.ru  # from ShadowWhisperer's Tracking
+
 ! share buttons
 share.yandex.ru$important,all
 share.yandex.net$important,all
@@ -343,6 +382,8 @@ button.blogs.yandex.net
 plus.yandex.net  # app requests
 plus.yandex.ru
 
+portal-xiva.yandex.net  # from Mahakala
+
 sba.yandex.net
 sba.yandex.ru  # ad redirects  # again  # https://sba.yandex.ru/redirect?url=...
 
@@ -369,13 +410,16 @@ messenger.yandex.net
 ||yandex.ru/chat?$domain=~yandex.ru
 chat.s3.yandex.net
 
+sender.yandex.ru
+    ! click.sender.yandex.ru  # from BlockListProject - Ads, Mahakala
+
 ya.cc  # 404 root  # maybe yandex URL shortener
 
 taxi-promotions.s3.yandex.net  # app request
 
-ttnet.yandex.com.tr  # from Dan Pollock's hosts file
+ttnet.yandex.com.tr  # from Dan Pollock's hosts file, Mahakala, BlockListProject - Ads
 
-uaas.yandex.ru  # from Ru AdList
+uaas.yandex.ru  # from Ru AdList, Mahakala, Adguard
 
 uxfeedback.yandex.net  # app requests
 uxfeedback-cdn.s3.yandex.net
@@ -388,6 +432,7 @@ webvisor.com  # ad scripts. Yandex?  # update: it seems, Yandex  # Yandex - Trac
 webvisor.org  # ad scripts
 webvisor.ru  # from Adguard
 web-visor.com  # from Adguard
+    ||yandex.ru/webvisor/$important,all
 
 yandex-context.ru  # ad scripts  # https://yandex-context.ru/?context=js&callback=jsonp_callback_xxx
 
