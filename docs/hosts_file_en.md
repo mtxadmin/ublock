@@ -37,8 +37,10 @@ Update 2023: Now it is not recommended to change Windows hosts file - this can m
 
 ## Resume
 
-The address of the hosts file of this project:
+The addresses of the hosts files of this project:
 
-**https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt**
+- **https://mtxadmin.github.io/hosts_pi-hole.txt** - full version for Pi-Hole
+- **https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt** - shortened list for Android
+- **https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt** - version with wildcard domains. See [details](https://github.com/mtxadmin/ublock/blob/master/docs/hosts_file_blokada_en.md)
 
 Please note that there is no point in adding this file to uBlock Origin, although it understands this format - it’s better to use [full version of subscription](../README.md) for this.
