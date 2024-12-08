@@ -37,8 +37,10 @@ Update 2023: В настоящее время не рекомендуется и
 
 ## Резюме
 
-Адрес файла hosts данного проекта:
+Адреса файлов hosts данного проекта:
 
-**https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt**
+- **https://mtxadmin.github.io/hosts_pi-hole.txt** - полная версия для Pi-Hole
+- **https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt** - сокращенный список для Android
+- **https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts_blokada.txt** - версия с wildcard-доменами. См. [подробнее](https://github.com/mtxadmin/ublock/blob/master/docs/hosts_file_blokada_en.md) на английском
 
 Обратите внимание, что нет смысла добавлять данный файл в uBlock Origin, хотя он и понимает этот формат - используйте лучше [полную версию подписки](../README.md) для этого. 
