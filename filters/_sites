@@ -437,11 +437,15 @@
 4pda.to##*:matches-css(background-image: /^url/):style(background:none !important)
 ! and their links
 4pda.to##div[itemprop="description"]
+! top banner 2024-12. Removing works, but slow
+4pda.to##a[href*="4pda.to/pages/go/"]:has(img[src*="4pda.ws"])
     ! right square big banner (doesn't work properly)
 4pda.ru,4pda.to##img[src^="https://s.4pda.to"]:matches-css(height:300px):matches-css(width:300px)
 4pda.ru,4pda.to##*:matches-css(width:300px)
 4pda.ru,4pda.to##img[src^="https://s.4pda.to"]:matches-css(height:240px):matches-css(width:240px)
 !4pda.ru,4pda.to##*:matches-css(width:240px)
+    ! background banners
+4pda.to##*:style(background-image:none !important)
     ! top menu banners
 4pda.to##.menu-main-item > [href^="https://4pda.to/huawei/"]
     ! logo
@@ -482,7 +486,7 @@
 ! banner
 4pda.to##div:style(background-image:none !important)
 
-! This is NOT 4pda.ru.
+! This is NOT 4pda.to (ex 4pda.ru).
 4pda.biz###headerbar
 4pda.biz###sidebar-a
 4pda.biz##.deepest.mod-color.module
@@ -1611,12 +1615,17 @@ androidauthority.com##.buy-holder
 ! lazyload srcset
   ! now it uses picture tag (https://www.w3schools.com/TAGS/tag_picture.asp) and works well
 
+    ! banners and promos
+androidcentral.com##.featured_product_block
+    ! top
 androidcentral.com##.region-site-header
 androidcentral.com##.notices
 androidcentral.com##.sticky-nav
+androidcentral.com##.p-navSticky + div:has-text(/^$/)
+    ! other
 androidcentral.com##.how-we-test__body
-! promos
-androidcentral.com##.featured_product_block
+
+android-example.ru##+js(rc,share)
 
 androidfeel.ru##.header
 androidfeel.ru##.all-wrap:style(background:none !important; background-color:white !important)
@@ -1807,6 +1816,14 @@ open-sharing.com###top
 pixcloud.ru###wrapper > div > center
 pixcloud.ru##fieldset
 xpicture.ru##.other_text
+
+    ! banners and promos
+anyrecover.com##.btn-box
+anyrecover.com##.product-download-wra
+anyrecover.com##.secure-btn
+anyrecover.com##.article-video-box
+    ! other
+anyrecover.com##.author-review
 
 ! from Adguard
 aok-erleben.de##div[data-module="cookie-manager-dialog"]
@@ -2761,6 +2778,8 @@ avito.ru##[class*=story-previewer]
 
 avon.com###TopNavigationContainer:style(position:static !important)
 avon.com###d-hero-carousel
+
+avsforum.com##.p-header-banner
 
 avtera.ru##.header-menu
 
@@ -5858,6 +5877,9 @@ czub.cz##.o-job:style(position:static !important)
 
 d3.ru##.b-user_cover-photo
 
+dacharai.ru$inline-script  # site blocks copypaste
+dacharai.ru##+js(set-attr, img, src, [data-lazy-src])
+
 dachniy-ugolok.ru##.message
 dachniy-ugolok.ru##.shipping_and_payment
 
@@ -6156,6 +6178,8 @@ deviantart.com##[href="https://www.deviantart.com"]
 devicemag.com##.dynamic-author-description
 devicemag.com##.widget:has-text(/About/i)
 
+devicetests.com##.avatar
+
 devopsconf.io##.header-features::before
 
 devopscube.com##.navbar-dummy
@@ -6329,11 +6353,18 @@ digitalocean.com##[class*=ProductFeature]
 digitalocean.com##[class*=FooterSectionProduct]
     ! other
 
+    ! top
 digitaltrends.com##.b-nav__logo
 digitaltrends.com##.h-nav-container.b-nav:style(position:static !important)
-digitaltrends.com##a.b-foot__app
-digitaltrends.com##.b-foot__social
 digitaltrends.com##.b-sticky
+digitaltrends.com##.h-toc.b-toc:style(position:static !important)
+    ! inline related
+digitaltrends.com##.b-related-links
+digitaltrends.com##h3:has-text(See more)
+digitaltrends.com##h3:has-text(See more) + ul
+    ! other
+digitaltrends.com##.b-foot__app
+digitaltrends.com##.b-foot__social
 
     ! top
 digitbin.com##.entry-title:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important;)
@@ -7421,6 +7452,8 @@ easeus.com##.button_box
 eastsideco.io
 ! script with fixed button: contactforms.eastsideco.io/assets/forms.js
 
+easydoit.ru$inline-script  # site blocks copypaste
+easydoit.ru##+js(set-attr, img.lazy, src, [data-src])
 easydoit.ru##div.table-responsive
 
 easylist.to##+js(cookie-remover.js)
@@ -8875,6 +8908,8 @@ firewall.cx##p.box-info
 
 firmao.net###callBackWrapper
 
+firmwarefile.com$inline-script  # site blocks copypaste
+
 firstbase-baseball.ru##.hover-effect
 
 firstbyte.ru##.head_slog
@@ -9042,6 +9077,11 @@ fonarik-market.ru##.r-header:style(position:static !important)
 fonarik-market.ru##.shop-regions-ip-analyzer
 
 ||fonelab.com/images/broken-android-phone-data-extraction/$image
+
+fonepaw.com##.right-sidebar-revision
+fonepaw.com##.icon-mac
+fonepaw.com##h3:has-text(FonePaw)
+fonepaw.com###PostProductbox2
 
 ||fontanka.ru/static/asdk/asdk.js
 ||fontanka.ru/static/assets/js/adblock
@@ -9500,6 +9540,8 @@ gamedeus.ru##.please
 
 gameduell.de$domain=~gameduell.com|~gameduell.de  # from GoodbyeAds, modified
 
+gameguru.ru##[href="https://gameguru.ru/lootguru/"]
+
 ||gamemag.ru/images/no_avatar.jpg
 ||gamemag.ru/images/galleries/icons/$image
     ! logos
@@ -9730,6 +9772,7 @@ geeksforgeeks.org##div:nth-of-type(4) > p:has-text(/GeeksforGeeks|Please Improve
 geeksforgeeks.org##.def-title_wrap
 geeksforgeeks.org##.vote-wrap
 geeksforgeeks.org##.shell
+geeksforgeeks.org##.author_badge
 
 ||geeksgod.com/beardeddragon/tortoise.js
 
@@ -9813,6 +9856,8 @@ getcourse.ru##.Feedbacks
     
 getdroidtips.com##.after-header-container
 getdroidtips.com##.site-header
+! inline related
+getdroidtips.com##.blue.note-box:has-text(Also Read)
 
 @@||getfreecourses.$generichide,badfilter  # parked?
     ! https://github.com/uBlockOrigin/uAssets/issues/5667
@@ -10542,6 +10587,8 @@ gs.market##.subscribe-section
 
 gsketchup.ru###Top_bar:style(position:static !important)
 
+gsmchoice.com##.rsc-s--sticky
+
 gsmforum.ru###notices
 
 gsm-repiteri.ru##.mm_logo
@@ -10869,6 +10916,9 @@ hipolink.net##.ArticleContent__notificationText
 holofly.ru##.main__button
 
 hologramart.ru##noindex
+
+howto-do.it##.kadence-sticky-header:style(position:static !important)
+howto-do.it###ez-toc-container
 
 hranidengi.ru##.ban1
 
@@ -12414,6 +12464,9 @@ inoreader.com##+js(set-constant, gn, true)
 
 inpearls.ru$inline-script  # site breaks copypaste
 inpearls.ru###right-side-bar
+
+inpics.net##.inside-right-sidebar
+inpics.net##.wp-post-author
 
 ||inpixio.com/main-handler.js  # ad popunders  # google ads in code  # cloud.inpixio.com/main-handler.js
 
@@ -19120,6 +19173,8 @@ operatingquadrant.com###header
 
 opnsense.org###info_bar
 
+oppostockrom.com$inline-script  # site blocks copypaste
+
 optakula74.ru##.ir-arriba
 
     ! top
@@ -20920,6 +20975,8 @@ prnt.sc##.header
 
 proakkym.info##.arrow-topsroll_site
 
+proantab.ru$inline-script  # site blocks copypaste
+
 pro-arbuz.ru###toc_container
 
 pro-avto.su$inline-script  # site blocks copypaste
@@ -21762,6 +21819,10 @@ realitylovers.com##.footer-articles
 realitylovers.com##.subfooter
 
 realme.com##.sec-banner
+realme.com##.toApp-wrapper
+realme.com##.informationdialog-icon-play
+
+realmedriver.com$inline-script  # site blocks copypaste
 
 realnoevremya.ru##.age
 
@@ -24542,6 +24603,8 @@ smartnator.com##.container:style(filter:none !important; -webkit-filter:none !im
 
 ||smartphone.ua/inc/images/all-bg.jpg
 
+smartphonus.com##.postauthorwrap
+
 smart-planets.ru###masthead
 
 smartrecruiters.com##.summary
@@ -26311,6 +26374,8 @@ techrepublic.com##p > strong:has-text("/^SEE:/")
 techrocks.ru##.telegram_block
 techrocks.ru###staya_jobs_container.b-staya-widget-hor
 
+techsbyte.com##.wpb_wrapper:style(position:static !important)
+
 techsolveprac.com##.mh-widget
 
 techspot.com##.intro
@@ -27742,6 +27807,8 @@ tsn24.ru##.text-note
 tsn24.ru##.text-share_social
 
 ||tsnbase.ru/img/kvartirnik.gif
+
+tsvety-plant.ru$inline-script  # site blocks copypaste
 
 ttpsc.com##html:style(opacity:initial !important)
 
@@ -30186,6 +30253,11 @@ wired.com##.paywall-bar__consumer-marketing-unit
 wired.com##.paywall-modal
 wired.com##.paywall-modal__overlay
 wired.com##.paywall-truncation-message
+    ! banners and promos
+wired.com###link-banner
+wired.com##.page__event_banner
+! just inline promos
+wired.com##.paywall:has(a[href^="https://subscribe.wired.com/"])
     ! share icons
 !wired.com##.social-icons - is in _social
 !wired.com##.social-icons__link - is in _social
@@ -30207,6 +30279,7 @@ wired.com##.journey-template--leaderboard
 wired.com##.cm-rail-container
 wired.com##.grid--item.contributors
 wired.com##.should-hold-space
+wired.com##div[class*=ActionBarWrapperContent]
 
 wise.com##.navbar-background:style(position:static !important)
 wise.com##.btn-success
@@ -30545,11 +30618,16 @@ xda-developers.com##+js(abort-on-property-write.js, adonisHash)
 ! disable exclusion from AdGuard Mobile Ads filter
 @@||xda-cdn.com^$badfilter
 ||xda-developers.com/data/avatars/$image  # sometimes there are gifs disquised as jpg
+! inline related
+xda-developers.com##.article.article-card
+xda-developers.com##.w-sharing-bottom
 
+    ! top
+xdaforums.com###top > div:has-text(/^$/)
+xdaforums.com##.uix_sidebar--scroller div:style(position:static !important)
+    ! other
 ! it can contain animated gifs (formally .jpg files)
 xdaforums.com##.avatar
-! top
-xdaforums.com###top > div:has-text(/^$/)
 
 xdrv.ru##.youtube
 xdrv.ru##.left_block
@@ -31697,6 +31775,8 @@ z-safe.ru##div.module:has-text(Производители)
 
 ztedevices.com##.annoucement-bar
 ztedevices.com##.redirect-store-wrap
+
+ztegid.ru###head
 
 zteusa.com##.shopify-section--header:style(position:static !important)
 zteusa.com##.ProductItem__LabelList
