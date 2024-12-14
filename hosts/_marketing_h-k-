@@ -5783,6 +5783,15 @@ ipify.org.herokudns.com
 ipinfo.info  # from Adguard
 
 ! see ipinfo.io in _sites
+! Update: blocked.
+ipinfo.io$important
+    ! from uBlock filters – Unbreak
+    @@||ipinfo.io/json$xhr,domain=futbollibre.online
+    ipinfo.io,host.io##.sticky_nav:style(position:static !important)
+    ipinfo.io,host.io##.header-inner:style(position:static !important)
+    ipinfo.io,host.io##.bd-sidebar:style(position:static !important)
+    ipinfo.io###overlay
+    host.io##.hostio-header:style(position:static !important)
 
 ipinfodb.com  # is in MVPS HOSTS and hpHosts’ Ad and tracking servers  #api.ipinfodb.com/v3/ip-city/?key=
 
