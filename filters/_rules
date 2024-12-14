@@ -2651,7 +2651,11 @@ _analytics.js?  # from EasyPrivacy
 /atrk.gif
 /autotrack.js  # is in AdGuard and EasyPrivacy
 /autotrack.carbon.js  # from EasyPrivacy
-/beacon*$important
+/beacon*$important,domain=~amazon.com
+    ! Exclusions:
+    ! Amazon - css: ||media-amazon.com/images/*/css/beacon*.css
+    /beacon*$important,~stylesheet,domain=amazon.com
+    ! 
     ! /beacon.js$important
     ! /beacon.min.js$important
     ! /cdn-cgi/challenge-platform/h/g/beacon/*$xmlhttprequest,~third-party  # from Adguard
