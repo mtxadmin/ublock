@@ -2941,6 +2941,8 @@ axosoft.com##.subscribe-modal
 
 ayende.com##.leftSide
 
+ayojakarta.com##.read__next
+
 ayzdorov.ru##.topbutton
 ayzdorov.ru##.head_sprite
 ayzdorov.ru##.new-call
@@ -7246,6 +7248,9 @@ dtf.ru##.comment__avatar--online::after
 dtf.ru##.subsite-card__description
 ! ломает верстку блока
 dtf.ru##.block-quote__line
+! redirects. dtf.ru && vc.ru
+dtf.ru##[href^="https://api.dtf.ru/"]
+dtf.ru##.sidebar-item:has-text(/Реклама|Приложения/)
 
     ! banners and promos
 dtln.ru##.tm-bnr
@@ -12669,12 +12674,6 @@ iphones.ru##.post_author_desc
 iphones.ru##div.relatedlist__header
 iphones.ru##.post__left-dotted-block
 iphones.ru##.header__menu-write
-
-ipinfo.io,host.io##.sticky_nav:style(position:static !important)
-ipinfo.io,host.io##.header-inner:style(position:static !important)
-ipinfo.io,host.io##.bd-sidebar:style(position:static !important)
-ipinfo.io###overlay
-host.io##.hostio-header:style(position:static !important)
 
 ipip.net##.alert-info.alert
 
@@ -19954,6 +19953,11 @@ phoenixnap.com##.ct-shortcode
 ! empty toc
 phoenixnap.com##.ftwp-wrap
 
+||phonearena.com/_track.php  # from EasyPrivacy
+||phonearena.com/js/ops/taina.js  # from EasyList
+    ! ||s-cdn.phonearena.com/js/ops/taina.js  # from Adguard
+! @@||phonearena.com/?b=$~third-party  # from Fanboy's, Ru AdList
+
 phonedady.com##.selector-wrapper
 
 phoneradar.com###mvp-main-nav-top
@@ -26159,6 +26163,8 @@ techbro.ru###sidebar-wrapper:style(position:static !important; margin-left:auto 
 techbro.ru##div.egg-list
 
 techbytelab.com##div:has(>a[href*="amazon.com"])
+! useless sidebar
+techbytelab.com###ajoda
 
 tech-coffee.net##.fixed-nav:style(top:0px !important)
 tech-coffee.net##.background-cover
@@ -27452,6 +27458,12 @@ topshouse.ru##.section-slider
 topshouse.ru##.footer
 topshouse.ru##.index-new
 topshouse.ru###footer
+
+    ! popups
+topsmartfonov.com##.tcbfw_button
+topsmartfonov.com##.prevPostBox
+topsmartfonov.com##.nextPostBox
+    ! other
 
 toptal.com##.subscribe_card
 
@@ -28824,6 +28836,8 @@ vc.ru##.subsite-video-avatar
 vc.ru##.comments__show-all-always
 vc.ru##blockquote::before
 vc.ru##.donation
+! redirects. dtf.ru && vc.ru
+vc.ru##[href^="https://api.vc.ru/"]
 
 vceguide.com##[src="https://vceguide.com/wp-content/uploads/2019/02/VCEplus-refund-money.gif"]
 vceguide.com###masthead
