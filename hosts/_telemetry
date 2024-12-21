@@ -64,6 +64,7 @@ webcollector-rtm.agora.io
     /projectagora.min.js$important  # from ABP
 
 allawnos.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
+    ! But lk-fastboot-us.allawnos.com is needed
 allawntech.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
 
 !data.alexa.com  # from NextDNS native-tracking-domains alexa
@@ -411,6 +412,8 @@ directads.mcafee.com  # from Dan Pollock's hosts file
 
 !snoop.minecraft.net  # Microsoft - Tracker  # from Quidsup NoTrack-Blocklist
 
+tongji.meizu.com  # Meizu - Tracker  # from Quidsup NoTrack-Blocklist
+
 vik-analytics.moonactive.net  # from GoodbyeAds
 vik-analytics-gke.moonactive.net  # from GoodbyeAds
 
@@ -420,6 +423,9 @@ download-stats.mozilla.org  # from Adguard
 ! telemetry.mozilla.org  # app requests  # see _marketing_subdomains
 telemetry-experiment.cdn.mozilla.net  # Mozilla - Tracker  # from Quidsup NoTrack-Blocklist
 telemetry-incoming.r53-2.services.mozilla.com  # Mozilla - Tracker  # from Quidsup NoTrack-Blocklist
+
+palm.id  # app on Chinese phones by Transsion (tech.palm.id: Tecno, Infinix, Itel)
+palm.tech  # "AccessDenied Anonymous access is forbidden ... https://api.alibabacloud.com/troubleshoot"
 
 ! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
 api-boot.tiktokv.com
@@ -537,7 +543,39 @@ quicinc.com  # app requests to telemetry.swe.quicinc.com, root redirects to qual
 ! end of quicinc.com
 
 realmemobile.com  # from GoodbyeAds  # also https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
+    ! But at least, these are needed:
+    ! lk.realmemobile.com
+    ! ota.realmemobile.com
+    ! Maybe also:
+    ! lkf.realmemobile.com
+    ! otaafsg-cost.realmemobile.com
+    ! otafsg.realmemobile.com
+    ! otafsg1.realmemobile.com
+    ! otafsg-cost.realmemobile.com
+    ! ota-recruit.realmemobile.com
+    ! ota-recruit-in.realmemobile.com
+    ! ota-recruit-sg.realmemobile.com
+    ! 
+    ! There are a lot of ad domains there - see _telemetry_all.
+    ! So, let's just make an exclusion
+    !
+    ! adx-ads.realmemobile.com
+    ! adx-id-ads.realmemobile.com
+    ! adx-in-ads.realmemobile.com
+    ! b1-ads.realmemobile.com
+    ! bdapi-ads.realmemobile.com
+    ! bdapi-id-ads.realmemobile.com
     ! bdapi-in-ads.realmemobile.com  # is in Adguard
+    ! ...
+    ! data-ads.realmemobile.com
+    ! data-cl-f-ads.realmemobile.com
+    ! data-cl-id-ads.realmemobile.com
+    ! data-cl-in-ads.realmemobile.com
+    ! data-f-ads.realmemobile.com
+    ! data-id-ads.realmemobile.com
+    ! data-in-ads.realmemobile.com
+    ! data-sg-ads.realmemobile.com
+    ! ... and counting
 
 # Roku is a paid streaming service and with analytics inside.
 roku.com  # from Blogscan  # is in BlockListProject/SmartTV  # from from github.com/asterriya/regex-ads/: (ads|captive|cloudservices|logs).roku.com
