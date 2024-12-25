@@ -3120,8 +3120,10 @@ _urchin.js  # from Fanboy's
 /webanalyticsssl.  # from EasyPrivacy
 _webanalytics.  # from EasyPrivacy
 .webmetrics.js  # from EasyPrivacy
-/web-pixel-shopify-app-pixel@  # is in EasyPrivacy
-/web-pixel-shopify-custom-pixel@  # is in EasyPrivacy
+/web-pixel
+    ! /web-pixel-shopify-app-pixel@  # is in EasyPrivacy
+    ! /web-pixel-shopify-custom-pixel@  # is in EasyPrivacy
+    ! /wpm/strict/app/web-pixel  # is in Adguard
 .Webtrends.js  # from Fanboy's
 _WebTrends.js  # from Fanboy's
 _wtBase.js  # from Fanboy's
@@ -3129,6 +3131,11 @@ _wtInit.js  # from Fanboy's
 /wherego_tracker.js  # from Adguard
 /wle_tracker.js
 /?wordfence
+/wpm/*
+    ! /wpm/strict/app/web-pixel  # is in Adguard
+    ! another ad scripts
+/wpm@$script
+    ! seen with /wpm/ : /wpm@<random_id>/web-pixel-<random_id>/sandbox/worker.modern.js
 /wp-slimstat/*  # is in 3 lists
 /wt?p=  # is in EasyPrivacy
 /ymap.heatmap.min.js
@@ -4161,6 +4168,7 @@ _site/gotop.  # from Ru AdList
     ! /consentbanner-fragment/*  # from EasyList
     ! /consentbar/consent-bar.min.js  # from EasyList
     ! /consent-mapping/*
+    ! /consent-tracking-api/*
     ! ||bigcommerce.com/shared/js/storefront/consent-manager-  # from Adguard
 /coockiealert.  # from EasyList
 /cookiealert.$important  # from Adguard
