@@ -2270,6 +2270,13 @@ ataka-ssm.ru###dhtmlgoodies_marquee
 aternos.org$script,redirect-rule=noopjs  # from uBlock filters  # "free Minecraft servers"
 ||aternos.org/panel/ajax/reportDetection.php?$xhr,1p  # from uBlock filters
 
+! empty overlay
+atlantispool.uz##.PVTOEq:has-text(/^$/)
+! empty overlay
+atlantispool.uz##.wixui-footer
+    ! atlantispool.uz##div[data-testid="screenWidthContainerBg"]
+    ! atlantispool.uz##div:has(>div[data-testid="screenWidthContainerBg"])
+
 ! atlassian.com
 ||api.atlassian.com/metal/ingest  # is in Adguard
 ||atlassian.com/gateway/api/*/batch  # is in Adguard
@@ -7112,6 +7119,8 @@ droid-life.com##.site__header
 
 droidviews.com##.title-area
 droidviews.com##[href*="/sponsored-posts/"]
+! inline related
+droidviews.com##p:has(.yoast-link-suggestion__value)
 
 ! top
 droidwin.com##.bricks-mobile-menu-wrapper
@@ -9153,6 +9162,9 @@ forbes.com##.site-wrapper:style(padding-top:0px !important)
 ! inline "related" (not very related though, they are promos)
 forbes.com##.recirc-module
 forbes.com##.marketPlace
+! banner button on the top
+forbes.com##a[href^="https://account.forbes.com/subscribe"]
+forbes.com##.newsLetterSubscriptionLink
     ! other
 ||forbesimg.com/simple-site/nr-agent/index.js  # new relic and google tags
 forbes.com##.contrib-bio
@@ -15771,6 +15783,7 @@ malls.ru##table:has-text(в Telegram-канале)
 blog.malwarebytes.com##body > .hidden-xs
 ! gifs
 forums.malwarebytes.com##.cAuthorPane_photo
+malwarebytes.com##.site-header__actions
 
 ! top
 malwaretips.com##.p-navSticky ~ div:style(height:auto !important)
@@ -19661,11 +19674,18 @@ papigun.ru##.warningblock
 parachutes.su##.ty-quick-view-button
 parachutes.su##.button-container
 
+! Wix platform
 ||parastorage.com/services/shoutout-get-subscriber/
 ||parastorage.com/services/wix-perf-measure/
 ||parastorage.com/*/fedops-logger
 ||parastorage.com/services/chat-worker/
-||parastorage.com/services/wix-thunderbolt/dist/feature-telemetry-wix-code-sdk
+||parastorage.com/services/wixstores-client-worker
+||parastorage.com/*/thunderbolt
+    ! ||parastorage.com/pages/pages/thunderbolt
+||parastorage.com/services/wix-thunderbolt
+    ! ||parastorage.com/services/wix-thunderbolt/dist/animationsWixCodeSdk
+    ! ||parastorage.com/services/wix-thunderbolt/dist/feature-telemetry-wix-code-sdk
+/_partials/wix-thunderbolt/*  # for sites on Wix platform
 
 parazit-info.ru##noindex
 
@@ -26278,6 +26298,9 @@ technadu.com##.main_header
 technadu.com##.kvpn
 ! other
 
+! inline related
+technastic.com##.related-post-wrap
+
 ! theia-sticky-sidebar
 technewstoday.com##.smart-head-sticky:style(position:static !important)
 
@@ -30374,6 +30397,9 @@ wisesoft.co.uk###header
 wisesoft.co.uk###mainnav
 
 ||ecom.wix.com/storefront/cartwidgetPopup
+! Wix platform
+||wix.com/bolt-performance
+||wixapps.net/api/v1/bulklog
 
 wizcase.com###sidebar-top-vendors
 
