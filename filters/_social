@@ -1762,7 +1762,10 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ! too many exclusions (not all here). Disabled.
 !~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru,~business2community.com##[class*="social"]:not(html):not(body):not(article)
 ! on nalog.ru it is not social buttons, it is a tax name
-~nalog.ru##[id*="social"]:not(html):not(body):not(article)
+~nalog.ru,~zerotier.com##[id*="social"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! nalog.ru - Russian Tax Service, needed to login through Gosuslugi or for tax-related options, don't remember
+    ! zerotier.com - #94: google, github, microsoft. Only dev-related services
 ##[class*="Sociaux"]:not(html):not(body):not(article)
 ##[id*="Sociaux"]:not(html):not(body):not(article)
 ##[class*="sociaux"]:not(html):not(body):not(article)
