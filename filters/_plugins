@@ -371,7 +371,7 @@
 
 /plugins/ad-invalid-click-protector/*
 
-/plugins/adw-parsley/*  # from EasyPrivacy
+/plugins/admin-bar-customizer/*  # from Adguard, uBlock filters - Badware
 
 /plugins/adredux/*  # https://wordpress.org/plugins/adredux/
 
@@ -425,6 +425,10 @@
 
 /plugins/advanced-popups/*
 
+/plugins/advanced-user-manager/*  # from Adguard, uBlock filters - Badware
+
+/plugins/advanced-widget-manage/*  # from Adguard, uBlock filters - Badware
+
 /plugins/advert/*$important  # from Adguard
 
 /plugins/advertising/*  # from EasyList
@@ -434,6 +438,8 @@
 /plugins/adview$important
 
 /plugins/adv-popup-plugin/*
+
+/plugins/adw-parsley/*  # from EasyPrivacy
 
 /plugins/affiai/*
 
@@ -659,6 +665,8 @@
 
 /plugins/btccalc/*
 
+/plugins/btr_gdpr_cookie/*  # from Adguard
+
 /plugins/buddypress-sitewide-activity-widget/*
 
 /plugins/buttonizer-multifunctional-button/*
@@ -684,7 +692,7 @@
 /plugins/bww-wp-advertising  # from uBlock filters: ||petri.com/wp-content/plugins/bww-wp-advertising^
     /bww-advertising  # from uBlock filters: ||petri.com/wp-json/bww-advertising^
 
-/plugins/burst-statistics/*
+/plugins/burst-statistics/*  # is in Adguard
 
 /plugins/cactus-ads/*
 /plugins/cactus-channel/*
@@ -706,7 +714,7 @@
 /plugins/carrot-quest/*$important  # popup ads. Also see carrotquest.io
 
 /plugins/catfish-advert-banner/*$~stylesheet
-    ! /plugins/catfish-advert-banner/*$script  # from uBlock filters
+    ! /plugins/catfish-advert-banner/*$script  # from uBlock filters, Adguard
     ! ||111.90.150.149/wp-content/plugins/catfish-advert-banner/catjs.php  # from Adguard
 
 /plugins/catman/*  # from EasyPrivacy
@@ -781,6 +789,8 @@
 
 /plugins/contact-widgets/*
 
+/plugins/content-blocker/*  # from Adguard, uBlock filters - Badware
+
 /plugins/consent-magic-pro/*  # from Adguard
 
 /plugins/consentmanager/*  # from EasyList
@@ -825,7 +835,7 @@
     ! /plugins/cookieinfo/*$important
     ! /plugins/cookie-law-info/*  # from Fanboy's
     ! /plugins/cookiemedia/*
-    ! /plugins/cookies-and-content-security-policy  # from Fanboy's and EasyList
+    ! /plugins/cookies-and-content-security-policy  # from Fanboy's, EasyList, Adguard
     ! /plugins/cookies-for-comments/*$important
         /cookies-for-comments/*  # is in EasyList and Fanboy's
 
@@ -887,10 +897,16 @@
 
 /plugins/custom-coupons/*
 
+/plugins/custom-css-injector/*  # from Adguard, uBlock filters - Badware
+
 /plugins/custom-facebook-feed/*
 /plugins/custom-facebook-feed-pro/*
 
 /plugins/custom-fan-gate-plugin/*
+
+/plugins/custom-footer-generator/*  # from Adguard, uBlock filters - Badware
+
+/plugins/custom-login-styler/*  # from Adguard, uBlock filters - Badware
 
 /plugins/custom-scrollbar/*
 
@@ -1001,6 +1017,8 @@
 
 /plugins/dynamic-headers/*  # old plugin, but I saw it in the wild. It was custom header, if you look into code: https://wordpress.org/plugins/dynamic-headers/ . Remove that fancy header images.
 
+/plugins/dynamic-sidebar-manager/*  # from Adguard, uBlock filters - Badware
+
 /plugins/dynamic-to-top/*
     /dynamic-to-top/*  # is in Ru AdList
 
@@ -1053,6 +1071,8 @@
 /plugins/easy-telefon-bar/*
 
 /plugins/easy-testimonials/*
+
+/plugins/easy-themes-manager/*  # from Adguard, uBlock filters - Badware
 
 /plugins/easy-twitter-  # is in Fanboy's
     ! /plugins/easy-twitter-feeds/*  # from EasyList
@@ -1190,6 +1210,8 @@
 
 /plugins/foobar-notifications-lite/*
 
+/plugins/form-builder-pro/*  # from Adguard, uBlock filters - Badware
+
 /plugins/forminator/*
 
 /plugins/formlift/*
@@ -1275,6 +1297,8 @@
 
 /plugins/go-ads/*
 
+/plugins/goal-tracker-ga/*  # from Adguard
+
 /plugins/gobot/*
     # https://wphive.com/plugins/gobot/ : "generate qualified leads"
     # https://wpprotools.io/plugins/gobot/ : chatbot
@@ -1300,6 +1324,7 @@
 !/plugins/gp-premium/* - don't. https://wpmacroverse.com/plugins/gp-premium/ : "GP Premium is a premium plugin that extends the GeneratePress free theme"
 
 /plugins/gpt3-ai-content-generator/*
+/plugins/gpt3-ai-content-generator-premium/*
 
 /plugins/gravitate-event-tracking/*$important
     _event_tracking.  # from EasyPrivacy
@@ -1360,7 +1385,7 @@
     ! @@||liveindex.org/wp-content/plugins/imedia-basic/*.js  # from Adguard
     ! @@||liveindex.org/wp-content/plugins/imedia-basic/*$script,1p  # from uBlock filters
 
-/plugins/incognito_dectector/*  # from Adguard
+/plugins/incognito_dectector/*  # from Adguard, uBlock filters
 
 /plugins/indeed-affiliate-pro/*
 /plugins/indeed-social-media/*  # from Adguard
@@ -1838,7 +1863,8 @@
     ! /plugins/pmc-plugins/pmc-google-universal-analytics/*
     ! /plugins/pmc-plugins/pmc-onetrust/*
     ! /plugins/pmc-plugins/onesignal-free-web-push-notifications/*
-    ! /plugins/pmc-plugins/pmc-social-share-bar/*
+    ! /plugins/pmc-plugins/pmc-social-share-bar/*  # is in Adguard
+    ! /plugins/pmc-plugins/pmc-trackonomics/*  # from Adguard
 
 /plugins/poll-wp/*
 
@@ -1891,6 +1917,8 @@
 
 /plugins/prebidjs/*  # from EasyList
 
+/plugins/pressidium-cookie-consent  # from Adguard
+
 /plugins/productaddicons/*
 
 /plugins/profit_builder/*
@@ -1915,7 +1943,7 @@
 
 /plugins/pup-ad-stack/*  # from EasyList
 
-/plugins/pup-comscore/*  # from EasyPrivacy
+/plugins/pup-comscore/*  # from EasyPrivacy, Adguard
 
 /plugins/push*$important
     ! /plugins/push-monkey-desktop-push-notifications/*
@@ -1952,6 +1980,8 @@
     /quick-adsense-reloaded/*  # is in EasyList
 
 /plugins/quick-bar/*
+
+/plugins/quick-cache-cleaner/*  # from Adguard, uBlock filters - Badware
 
 /plugins/quick-gush/*  # from Ru AdList
 
@@ -2013,6 +2043,8 @@
 /plugins/resads/*
 
 /plugins/responsive-cookie-consent/*  # from Adguard
+
+/plugins/responsive-menu-builder/*  # from Adguard, uBlock filters - Badware
 
 /plugins/responsive-notifications/*
 
@@ -2110,6 +2142,8 @@
 
 /plugins/seofilter/*
 
+/plugins/seo-optimizer-pro/*  # from Adguard, uBlock filters - Badware
+
 /plugins/seraphinite-post-docx-source/*
 
 /plugins/sexybookmarks/*$~stylesheet  # is in Fanboy's
@@ -2162,6 +2196,8 @@
 /plugins/simple-monero-miner-coin-hive/*  # from Adguard
 
 /plugins/simple-notices-pro/*
+
+/plugins/simple-post-enhancer/*  # from Adguard, uBlock filters - Badware
 
 /plugins/simple-scroll-to-top-button/*
 
@@ -2241,6 +2277,7 @@
     ! /plugins/social-locker/*  # from Adguard
     ! /plugins/sociallocker-  # from Adguard
     ! /plugins/sociallocker-next-premium/*$script,css  # from uBlock filters
+    ! /plugins/social-media-integrator/*  # from Adguard, uBlock filters - Badware
     ! /plugins/social-network-tabs/*$important
     ! /plugins/social-plug/*
     ! /plugins/social-pug/*
@@ -2332,6 +2369,7 @@
 /plugins/svecc-infinite-scroll/*
 
 /plugins/sweetalert/*  # from Adguard
+/plugins/sweetalert2/*  # from Adguard
 
 /plugins/swiftninjapro-inspect-element-console-blocker/*  # from Adguard
 
@@ -2546,7 +2584,7 @@
 /plugins/webtech-topbar/*$important  # from Adguard Chinese
     ! @@||ibf.tw/user/plugins/webtech-topbar/fuckadblock.js  # from Adguard Chinese
     
-/plugins/webtoffee-gdpr-cookie-consent/*$important  # is in Adguard
+/plugins/webtoffee-gdpr-cookie-consent/*$important  # is in Adguard, Fanboy's
 
 /plugins/wechat-shop/*
     ! ||myqqjd.com/wp-content/plugins/*.js   # from Adguard Chinese
@@ -2633,7 +2671,10 @@
 
 /plugins/wp-adblock-dedect/*$important  # from Adguard: /plugins/wp-adblock-dedect/js/dedect.js^
 
+/plugins/wp-adblock-detector/*  # from Adguard
+
 /plugins/wpadcenter/*  # https://wordpress.org/plugins/wpadcenter/
+/plugins/wpadcenter-pro/*  # from Adguard
 
 /plugins/wp-ad-guru/*$important
     /wp-ad-guru/*  # from EasyList
@@ -2641,6 +2682,8 @@
 /plugins/wp-advertising/*  # from EasyList
 
 /plugins/wp-analytify/*$important
+
+/plugins/wp-associate-post-r2/*  # from Adguard
 
 /plugins/wp-banners/*  # from uBlock filters
 
@@ -2754,6 +2797,8 @@
 /plugins/wp-reading-progress/*
 
 !/plugins/wp-rocket/* - don't block: caching, images...
+/plugins/wp-rocket/assets/js/wpr-beacon.  # from Adguard
+/plugins/wp-rocket/assets/js/lcp-beacon.  # from Adguard
 
 /plugins/wp-safelink/*$important
 /plugins/wp-safelink-v*$important
