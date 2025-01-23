@@ -668,6 +668,21 @@ kununu.com$3p  # job site? 3p scripts
 
 ladoshki.com$3p  # "-2015"  # from Adguard
 
+# https://en.wikipedia.org/wiki/Lazada is Asian e-commerce, ok, but it is very suspicious to see their 3p scripts
+lazada.com$3p
+lazada.com.my$3p
+lazada.com.ph$3p  # ad redirects
+    adsense.lazada.com.ph
+    ali.lazada.com.ph
+    api.lazada.com.ph
+    taobao.lazada.com.ph
+lazada.co.id$3p
+lazada.co.th$3p
+lazada.sg$3p
+lazada.vn$3p
+    ! seems it is their CDN
+lazcdn.com$domain=~lazada.com|~lazada.com.my|~lazada.com.ph|~lazada.co.id|~lazada.co.th|~lazada.sg|~lazada.vn  # ad scripts  # no root
+
 leadberry.com$3p  # from Adguard: ||leadberry.com/trackers/$third-party
 
 leadconnectorhq.com$3p  # 3p ad scripts  # is in ShadowWhisperer's Tracking
@@ -1318,6 +1333,9 @@ wmcentre.xyz$3p
 world-weather.ru$3p  # weather informers
 
 wpscan.com$3p
+
+xhamsterlive.com$3p  # from uBlock filters  # 2025
+xhamsterpremium.com$3p  # from uBlock filters  # 2025
 
 x-lines.ru$3p
 
