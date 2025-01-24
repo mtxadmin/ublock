@@ -1178,6 +1178,8 @@ $removeparam=oref
     ! $removeparam=oref,domain=defenseone.com|govexec.com|nextgov.com|route-fifty.com  # from Adguard
 
 $removeparam=origin,domain=~yandex.ru
+    ! Exclusions:
+    @@$removeparam=origin,domain=vk.com,to=id.vk.com  # VK login with QR
 $removeparam=Origin
     ! Exclusions:
     ! yandex.ru/maps - possible error
@@ -1645,10 +1647,13 @@ $removeparam=sc_channel  # Campaign tracking (sc)  # from NeatURL
 $removeparam=sc_cid  # Campaign tracking (Adobe Analytics)  # from NeatURL
 $removeparam=sc_content  # Campaign tracking (sc)  # from NeatURL
 $removeparam=sc_country  # Campaign tracking (sc)  # from NeatURL
+$removeparam=sc_customer  # from uBlock filters
+$removeparam=sc_eh  # from uBlock filters
 $removeparam=sc_geo  # Campaign tracking (sc)  # from NeatURL
 $removeparam=sc_out
     ! yahoo.co.jp$removeparam=sc_out  # from Adguard
 $removeparam=sc_outcome  # Campaign tracking (sc)  # from NeatURL
+$removeparam=sc_uid  # from uBlock filters
 
 $removeparam=s_cid  # Campaign tracking (Omniture)  # https://moz.com/community/q/omniture-tracking-code-urls-creating-duplicate-content  # from NeatURL, Adguard, uBlock filters
 
@@ -3742,6 +3747,7 @@ reddit.com$removeparam=correlation_id  # from Adguard
 reddit.com$removeparam=post_fullname  # from Adguard
 reddit.com$removeparam=post_index  # from Adguard
 reddit.com$removeparam=rdt  # now is in uBlock filters and Adguard
+reddit.com$removeparam=recap_redirect  # from Adguard
 reddit.com$removeparam=share_id  # from Adguard
 
 redgifs.com$removeparam=for  # from Adguard:||thumbs4.redgifs.com/*&for=$removeparam=for
