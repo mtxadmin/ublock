@@ -31,6 +31,7 @@ ad.beritasatumedia.com  # from MVPS
 ad.cbonds.info  # from Adguard
 !ad.cnet-basic-performance.akadns.net  # zombie
 ad.crwdcntrl.net$important
+ad.deepthought.industries  # from Adguard
 ad.demotivation.me  # from Adguard
 !ad.depo.hu  # from Hufilter
 ad.ettoday.net$all  # from Adguard
@@ -41,6 +42,7 @@ ad.hi5.com  # from MVPS
 ad.host-tracker.com
 ad.hutor.ru  # from Ru AdList
 ad.iloveinterracial.com  # from MVPS
+ad.inston.ltd  # from Adguard
 ad.investopedia.com
 ad.iplayer.org  # from Adguard
 ad.ir.ru
@@ -238,6 +240,7 @@ ads.tvb.com  # from Adguard
 ads.uol.com  # ad scripts  # "Programmatic media platform"  # root is a news site
 ads.uol.com.br
 ads.cdn.viber.com  # Viber - Advertising  # from Quidsup NoTrack-Blocklist
+ads.vk.com
 ads.vnumedia.com  # from Peter Lowe's
 ads.watson.ch
 ads.whippedass.com  # from MVPS
@@ -635,6 +638,7 @@ analytics.sixtmiddleeast.com  # from Adguard
 analytics.slashdotmedia.com$important  #[Piwik.Analytics]  # is in MVPS
 analytics.sports.ru  # from Ru AdList
 analytics.spotify.com  # Spotify - Tracker  # from Quidsup NoTrack-Blocklist
+analytics.strapi.io  # from uBlock filters
 analytics.sydney.edu.au  # from Adguard
 analytics.tecart.de  # analytics.tecart.de/matomo.js
 analytics.technopoint.ru
@@ -757,7 +761,7 @@ click.allkeyshop.com  # from Peter Lowe's
 click.e.bbcmail.co.uk  # from Peter Lowe's
 click.classmates.com  # from Peter Lowe's
 click.cloudcheckr.com
-click.discord.com  # from Peter Lowe's
+click.discord.com  # from Peter Lowe's, iam-py-test's anti-redirectors
 click.execrank.com
 click.mkt.grab.com  # from Peter Lowe's
 click.greatlearning.in
@@ -802,7 +806,7 @@ cmp.osano.com  # from EasyList
 cmp.parkers.co.uk  # from EasyList
 cmp.playpilot.com  # from EasyList
 cmp.pcwelt.de  # from EasyList
-cmp.redge.media  # from Adguard
+cmp.redge.media$important  # from Adguard
 cmp.seniorguide.jp  # from Adguard
 cmp.cdn.thesun.co.uk  # from EasyList
 cmp.cdn.thesun.ie  # from EasyList
@@ -1645,6 +1649,7 @@ marketing.blueliv.com
 marketing.desertcart.ae
 marketing.desertcart.com  # from Peter Lowe's
 marketing.trainingdoyens.com
+marketing.trvl.yandex.net
 
 /metric.
 metric.armstrongceilings.com  # from Adguard
@@ -2051,6 +2056,7 @@ privacy.outdoorsg.com  # ad frames
 privacy.selbst.de  # from Adguard
 
 /promo.
+//promo.$important  # Ru AdList exclusions
 promo.avto.ru
 promo.ccbill.com
 promo.cermati.com
@@ -2107,7 +2113,7 @@ ref.trade.re  # from Mayakyler's link-shorteners
 
 /reklam.  # from github.com/asterriya/regex-ads/
 
-/reklama.
+/reklama.$important
 reklama.botevgrad.com  # from MVPS
 reklama.ngs.ru
 reklama.ntv.ru
@@ -2785,6 +2791,7 @@ tds.megabonus.com
 /telemetry.
 telemetry.acronic.com
 telemetry.acronis.com
+telemetry.adblockplus.org  # from ShadowWhisperer's Tracking  # 2025
 telemetry.algolia.com
 telemetry.art19.com  # from uBlock filters  # https://www.reddit.com/r/uBlockOrigin/comments/fqjltj/podcast_advert/
 telemetry.battle.net
@@ -3672,6 +3679,8 @@ acjs.aliyun.com  # from Adaway
 aliyuncs.com  # ad scripts and tracker imgs and empty root
 log.aliyuncs.com  # subs exist
     !||aliyuncs.com/r.png
+    ! arms-retcode.aliyuncs.com
+    ! arms-retcode-sg.aliyuncs.com
     ! beacon-api.aliyuncs.com  # from Adaway
     !||log*.aliyuncs.com^  # from Adguard
     !easeusinfo.us-east-1.log.aliyuncs.com
@@ -4168,6 +4177,8 @@ sedo.cachefly.net  # ||sedo.cachefly.net$domain=~sedoparking.com
 
 !m-metrics.capitalone.com  # from Adaway
 
+track.canva.com$all  # from iam-py-test's anti-redirectors
+
 events.cardsmobile.ru  # from Adguard
 
 iralerts.careerbliss.com  # ad redirects
@@ -4212,9 +4223,13 @@ s5.charliehebdo.fr  # from EasyPrivacy
 
 www-banner.chat.ru  # from Peter Lowe's hosts file
 
+data.cheatography.com  # from uBlock filters
+
 client-metrics.chess.com  # from Adguard
 
 chesterstandard-gb.chesterstandard.co.uk  # from Adguard
+
+email-sendgrid-deep-linking.chewy.com  # from iam-py-test's anti-redirectors
 
 event.chitai-gorod.ru  # from Adguard
 
@@ -4466,7 +4481,6 @@ stats.ebay.com  # from GoodbyeAds
 epnt.ebay.com$important  # is in EasyList  # epnt.ebay.com/static/epn-smart-tools.js
 
 digitalmarketing.citibankonline.com-v2.edgekey.net
-mobileads.indiatimes.com-v1.edgesuite.net
 marketingassets.staples.com.edgekey.net  # from Adaway
 
 satarget.csu.edu.au  # from Adguard  # target
@@ -4534,6 +4548,8 @@ a.fapcat.com  # is in uBlock filters  # ad scripts
 
 cash.femjoy.com  # from EasyList
 
+fp-it-tracker.fengkongcloud.com  # don't block root, it needed for Deepseek  # from ShadowWhisperer's Tracking
+
 id.ferra.ru  # ad xhrs
 
 !mdsngpush.finanzen.net  # ad push  # is in Fanboy's
@@ -4583,10 +4599,10 @@ on.ft.com  # URL shortener  # bitly
 
 elq-trk.fullsail.edu  # from Adguard
 
+    ! also see _sites
+ad-assets.futurecdn.net
 bordeaux.futurecdn.net$important  # is in Adguard, EasyList and ABP
 champagne.futurecdn.net  # from Adguard
-||futurecdn.net/bordeaux.js$all  # from EasyPrivacy
-||futurecdn.net^*/abp.js  # from EasyPrivacy
 
 adst.fwdcdn.com
 sinst.fwdcdn.com$important  # ad scripts
@@ -4802,6 +4818,156 @@ chatbot.hyve.group
 r.i.ua  # tracking images  # http://r.i.ua/s?...  # is in Adguard: ://r.i.ua^
 
 net.iberostar.com  # many subdomains from Adguard
+63-217-112-145.static.pccwglobal.net.iberostar.com  # from Adguard
+ak-br-cdn.kwai.net.iberostar.com  # from EasyPrivacy
+akv2-br-cdn.kwai.net.iberostar.com  # from EasyPrivacy, Adguard
+ali-pro-origin-pull.kwai.net.iberostar.com  # from EasyPrivacy, Adguard
+ali-pro-pull.kwai.net.iberostar.com  # from EasyPrivacy, Adguard
+appassets.androidplatform.net.iberostar.com  # from Adguard
+app.chat.global.xiaomi.net.iberostar.com  # from EasyPrivacy
+appfloor.appcpi.net.iberostar.com  # from EasyPrivacy, Adguard
+atl-b24-link.ip.twelve99.net.iberostar.com  # from EasyPrivacy
+aws-br-cdn.kwai.net.iberostar.com  # from EasyPrivacy
+aws-br-pic.kwai.net.iberostar.com  # from EasyPrivacy
+bolt-gcdn.sc-cdn.net.iberostar.com  # from EasyPrivacy
+bs-pro-origin-pull.kwai.net.iberostar.com  # from EasyPrivacy
+dev-cenam-mobilefirst.tmx-internacional.net.iberostar.com  # from EasyPrivacy
+dit.whatsapp.net.iberostar.com  # from EasyPrivacy
+dls-b23-link.ip.twelve99.net.iberostar.com  # from EasyPrivacy
+dpm.demdex.net.iberostar.com  # from EasyPrivacy
+external-bos5-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+find.api.micloud.xiaomi.net.iberostar.com  # from EasyPrivacy
+g-br-cdn.kwai.net.iberostar.com  # from EasyPrivacy
+g-fallback.whatsapp.net.iberostar.com  # from EasyPrivacy
+gitlab.mobiuspace.net.iberostar.com  # from EasyPrivacy
+googleads.g.doubleclick.net.iberostar.com  # from EasyPrivacy
+instagram.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+ipv4-cs.intsig.net.iberostar.com  # from EasyPrivacy
+jkanime.net.iberostar.com  # from EasyPrivacy
+media.fmid5-1.fna.whatsapp.net.iberostar.com  # from EasyPrivacy
+p16-tiktokcdn-com.akamaized.net.iberostar.com  # from EasyPrivacy
+report.appmetrica.yandex.net.iberostar.com  # from EasyPrivacy, Adguard
+resolver.msg.global.xiaomi.net.iberostar.com  # from EasyPrivacy, Adguard
+scontent-cdg4-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+scontent-cdg4-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+scontent.fpbc1-2.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+server2.www1.dr.goldenserviceawards.net.jumia.co.ke  # from EasyPrivacy
+skyapi.live.net.iberostar.com  # from EasyPrivacy
+sonar6-akl1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-ams2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-arn2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-atl3-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-atl3-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-bcn1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-ber1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-bkk1-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-bog2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-bom1-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-bos5-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-bru2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-ccu1-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-cdg4-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-cdg4-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-cdg4-3.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-cgk1-3.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-cph2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-cpt1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-del2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-den4-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-dfw5-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-doh1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-dub4-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-dus1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-eze1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-fco2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-fml20-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-for1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-fra3-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-fra3-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-fra5-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-fra5-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-gig4-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-gmp1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-gru2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-gua1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-ham3-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-hbe1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-hel3-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-hkg1-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-hkt1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-hou1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-hyd1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-iad3-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-iev1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-ist1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-itm1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-jnb1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-kul2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-lax3-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-lga3-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-lhr6-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-lim1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-lis1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-los2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-maa2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mad1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mad2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-man2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mba1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mct1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mia3-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mnl1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mrs2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mrs2-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-msp1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mty2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-muc2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-mxp1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-nrt1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-ord5-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-otp1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-pmo1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-pnq1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-prg1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-qro1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-scl2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-sea1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-sin6-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-sjc3-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-sof1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-ssn1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-syd2-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-tir3-2.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-tpe1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-vie1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-waw1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-xsp1-3.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-xxb1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-yyz1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6-zrh1-1.xx.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fcul1-1.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fgdl1-3.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fgdl1-4.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fgym1-1.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fhmo1-2.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fmlm1-1.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fmzt1-1.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fnog1-1.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fntr4-1.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fpbc1-1.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fpbc1-2.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fver1-1.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+sonar6.fzih1-1.fna.fbcdn.net.iberostar.com  # from EasyPrivacy
+static.whatsapp.net.iberostar.com  # from EasyPrivacy
+stats.g.doubleclick.net.iberostar.com  # from EasyPrivacy
+tx-br-cdn.kwai.net.iberostar.com  # from EasyPrivacy
+tx-pro-pull.kwai.net.iberostar.com  # from EasyPrivacy
+txv2-br-cdn.kwai.net.iberostar.com  # from EasyPrivacy
+v16m-default.akamaized.net.iberostar.com  # from EasyPrivacy
+whoami.akamai.net.iberostar.com  # from EasyPrivacy
+ws-br-cdn.kwai.net.iberostar.com  # from EasyPrivacy
+ws-pro-origin-pull.kwai.net.iberostar.com  # from EasyPrivacy
+ws-pro-pull.kwai.net.iberostar.com  # from EasyPrivacy
 
 ads.ibibo.com  # goibibo.com
 
@@ -4849,7 +5015,8 @@ mo7her.incest.click  # from GoodbyeAds
 
 t.indeed.com  # from Adaway
 
-mobileads.indiatimes.com  # from Adaway
+mobileads.indiatimes.com$important  # from Adaway, Adguard
+mobileads.indiatimes.com-v1.edgesuite.net
 
 na.ingrammicro.com  # from ShadowWhisperer's Ads
 
@@ -4925,6 +5092,8 @@ stat.it168.com  # from MVPS
 welcome.item24.hu  # from Adguard
 welcome.item24.mx  # from Adguard
 welcome.item24.se  # from Adguard
+
+jitsu.ixbt.com  # from Ru AdList
 
 rencontres-coquines.jacquieetmichel.net  # from uBlock filters
 
@@ -5199,11 +5368,12 @@ snippets.mozilla.com  # from Ru AdList
 
 pop.mrstiff.com  # from Adguard
 
-a.mts.ru  # is in EasyPrivacy and Adguard
+a.mts.ru  # is in EasyPrivacy, Adguard, Ru AdList
 api-marketolog.mts.ru  # from Ru AdList
 client-analytics.mts.ru  # from EasyPrivacy
 l.mts.ru  # ads
 mtsopros.mts.ru  # ad xhrs
+tag.a.mts.ru
 
 !a.multik-online.net  # from Ru AdList  # zombie
 
