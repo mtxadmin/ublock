@@ -78,6 +78,8 @@ realty.ya.ru##.Popup:has([class*=tooltip])
 
 ya.ru,yandex.*##.desk-notif-card_promo_yes
 
+ya.ru,yandex.*##a[href^="/promo/"]
+
 ||yastatic.net/partner-code-bundles/
 
 ya.ru,yandex.*##.distr-popup__content
@@ -143,6 +145,8 @@ ya.ru##[class^=NavBarLogo]
 ya.ru##.HeaderDesktopLogo
 ya.ru##.HeaderDesktop-Logo
 ya.ru,yandex.*##noindex:has(a[href="//ya.ru/"])
+ya.ru,yandex.*##div:has(>a[href="//ya.ru"])
+
     ! top
 go.yandex##.lc-header-lpc__fixed-wrapper:style(position:static !important)
 yandex.*##.lc-header-lpc__fixed-wrapper:style(position:static !important)
@@ -948,6 +952,7 @@ kinopoisk.ru##.kinopoisk-header-featured-menu
 kinopoisk.ru###partial_component__watch-online-button
 kinopoisk.ru##[class^="carousel__item"]:has(.promo-badge)
 kinopoisk.ru##a[href*="//hd.kinopoisk.ru"]
+kinopoisk.ru##[class^=styles_watchingServices]
 ||kinopoisk.ru/main-page/api/hd/
 ! is in Adguard
 kinopoisk.ru##.underheader-superbanner-wrapper
