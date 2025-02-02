@@ -1303,7 +1303,7 @@ _rebid.js  # from EasyList
     ! ||film-adult.net/*/rekl/  # from Adguard
     ! ||filsrver.com/video/*/rekl/  # from Adguard
     ! ||rus-linux.net/rekl/  # from Adguard
-/reklam/*$domain=~reklam.com.tr  # from EasyList
+/reklam/*
 /reklama*$important
 /renderbanner.do?  # is in EasyList
 /retargeting/*
@@ -4782,8 +4782,9 @@ _snowstorm-min.js  # from Ru AdList
 !! countdowns
 ~bizon365.ru,~clickmeeting.com,~worknf.ru##[class*="Countdown"]:not(html):not(body):not(article)
 ##[id*="Countdown"]:not(html):not(body):not(article)
-~bizon365.ru,~clickmeeting.com,~pornolab.net,~usersdrive.com,~worknf.ru##[class*="countdown"]:not(html):not(body):not(article)
+~bizon365.ru,~clickmeeting.com,~needrom.com,~pornolab.net,~usersdrive.com,~worknf.ru##[class*="countdown"]:not(html):not(body):not(article)
     ! Exclusions:
+    ! needrom.com - file service, countdown is seems to be needed to download
     ! usersdrive.com - file service, countdown is needed to download
 ~usersdrive.com##[id*="countdown"]:not(html):not(body):not(article)
     ! Exclusions:
