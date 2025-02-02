@@ -961,6 +961,10 @@ $removeparam=irgwc  # from Adguard and Ru AdList
 !$removeparam=keyword - definitely not!  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
     $removeparam=keyword,domain=bindright.com|lendgo.com  # from DandelionSprout's URLShortener
 
+$removeparam=km_adgroup  # from DandelionSprout's URLShortener
+$removeparam=km_partner  # from DandelionSprout's URLShortener
+    smartrecruiters.com$removeparam=km_matchtype  # from DandelionSprout's URLShortener
+
 $removeparam=_kx  # from Adguard and uBlock filters
     ! moodfabrics.com$removeparam=_kx  # from Adguard
 
@@ -4069,6 +4073,8 @@ x.com$removeparam=cn
 x.com$removeparam=cxt  # is in uBlock filters, Adguard
 x.com$removeparam=s  # is in uBlock filters
 x.com$removeparam=t  # is in Adguard
+
+ubereats.com$removeparam=marketing-visitor-id  # from DandelionSprout's URLShortener
 
 udemy.com$removeparam=btn  # from DandelionSprout's URLShortener
 
