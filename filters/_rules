@@ -4784,10 +4784,11 @@ _snowstorm-min.js  # from Ru AdList
 ##[id*="Countdown"]:not(html):not(body):not(article)
 ~bizon365.ru,~clickmeeting.com,~needrom.com,~pornolab.net,~usersdrive.com,~worknf.ru##[class*="countdown"]:not(html):not(body):not(article)
     ! Exclusions:
-    ! needrom.com - file service, countdown is seems to be needed to download
+    ! needrom.com - file service (not public, and just ROMs), countdown is seems to be needed to download
     ! usersdrive.com - file service, countdown is needed to download
-~usersdrive.com##[id*="countdown"]:not(html):not(body):not(article)
+~needrom.com,~usersdrive.com##[id*="countdown"]:not(html):not(body):not(article)
     ! Exclusions:
+    ! needrom.com - file service (not public, and just ROMs), countdown is seems to be needed to download
     ! usersdrive.com - file service, countdown is needed to download
 ##[class^="timer"]:not(html):not(body):not(article)
 ~tomato-timer.com##[id^="timer"]:not(html):not(body):not(article)
