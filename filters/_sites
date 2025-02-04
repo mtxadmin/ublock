@@ -3664,6 +3664,8 @@ bigmir.net##.category-maps__container
 bigmir.net##.page:style(padding-top:0px !important)
 bigmir.net##.news__slider
 bigmir.net##body>.page:style(padding-top:0px !important)
+! from Ru AdList, I think
+##img[src*="://c.bigmir.net/"],
 
 bigpicture.ru##.search_form:style(position:static !important)
     ! seo
@@ -21972,6 +21974,7 @@ redcocktube.com##.s_desc
 ||w3-reporting-csp.reddit.com/reports  # no-csp-reports: * true
 ! disable rule from Fanboy’s Enhanced Tracking List
 @@*$generichide,domain=reddit.com,badfilter
+@@||redditstatic.com/shreddit/en-US/ads-carousel$script  # /ads rule  # not ads, but img carousel
     ! unfix top
 reddit.com##div:matches-css(position:sticky)
 reddit.com##div:matches-css(position:fixed)
@@ -22010,6 +22013,12 @@ reddit.com##div[data-redditstyle=true]
 ||redditstatic.com/avatars/defaults/$image
 ||redditmedia.com/*/styles/profileIcon_snoo$image
 ||redditstatic.com/shreddit/assets/snoovatar$image
+    ! show spoilers
+! https://www.reddit.com/r/factorio/comments/1g6xy3v/you_are_not_ready_spoilerfree/
+reddit.com##.blurred:style(filter:none !important; background:initial !important)
+reddit.com##.overlay
+reddit.com##.outer:style(height:auto !important)
+reddit.com##.bg-scrim
     ! other
 ! from EasyList
 reddit.com##div[id^="overlay-sidebar-atf-"]
@@ -22029,6 +22038,8 @@ reddit.com##button:has-text(Back to Top)
 ! annoying pictures in the right column
 reddit.com##faceplate-tracker .object-cover
 reddit.com##shreddit-loading
+! "Recently visited". What a dumb widget, and it breaks the design
+reddit.com##left-nav-recent-communities
 
 ||redfin.com/rift?  # from EasyPrivacy
 
@@ -22544,6 +22555,9 @@ rootmyandroid.org##.ulp-overlay
 
 rootmygalaxy.net##.mtsnb-fixed.mtsnb-top
 
+@@||root-nation.com^$generichide,badfilter  # Ru AdList exception
+    ! popups
+root-nation.com##.custom-toggle
     ! top
 root-nation.com##.td-main-sidebar
 ! duplicate fixed header
@@ -22554,6 +22568,7 @@ root-nation.com##.size-full.aligncenter
 ! inline related
 root-nation.com##p:has-text(Читайте также:)
 root-nation.com##p:has-text(Читайте также:) + ul
+root-nation.com##p:has(strong:has-text(Read also:))
     ! other
 
 ||rootusers.com/wp-content/uploads/2017/02/red-hat-certified-engineer-rhce-video-course-box.jpg
@@ -32104,8 +32119,6 @@ zzbabes.com###bclose
 ||googleapis.com/pixelperfect/
 
 /disable_click.min.js$important
-
-/affiliate/*
 
 /footer.png
 
