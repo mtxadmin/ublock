@@ -3618,26 +3618,28 @@ otsuka-shokai.co.jp$removeparam=oiid  # from Adguard
 otto.de$removeparam=ActionID  # from Adguard
 ottoversand.at$removeparam=ActionID  # from Adguard
 
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=abt_att
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=advert  # now is in Ru AdList and Adguard
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=asb  # now is in Ru AdList
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=asb2  # is in Adguard and Ru AdList
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=att  # att=1, att=3
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=avtc  # is in Ru AdList and Adguard
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=avte  # is in Ru AdList and Adguard
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=avts  # is in Ru AdList and Adguard
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=_bctx  # now is in Ru AdList
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=с  # ref
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=category_was_predicted
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=deny_category_prediction
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=ectx
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=_fr
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=from_global
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=from_sku  # now is in Adguard
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=from_url  # now is in Adguard
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=keywords  # now is in Adguard
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=layout_container
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=layout_page_index
+! ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=... - it seems, such form works not good
+ozon.*$removeparam=abt_att
+ozon.*$removeparam=advert  # now is in Ru AdList and Adguard
+ozon.*$removeparam=asb  # now is in Ru AdList
+ozon.*$removeparam=asb2  # is in Adguard and Ru AdList
+ozon.*$removeparam=at  # tracking id
+ozon.*$removeparam=att  # att=1, att=3
+ozon.*$removeparam=avtc  # is in Ru AdList and Adguard
+ozon.*$removeparam=avte  # is in Ru AdList and Adguard
+ozon.*$removeparam=avts  # is in Ru AdList and Adguard
+ozon.*$removeparam=_bctx  # now is in Ru AdList
+ozon.*$removeparam=с  # ref
+ozon.*$removeparam=category_was_predicted
+ozon.*$removeparam=deny_category_prediction
+ozon.*$removeparam=ectx
+ozon.*$removeparam=_fr
+ozon.*$removeparam=from_global
+ozon.*$removeparam=from_sku  # now is in Adguard
+ozon.*$removeparam=from_url  # now is in Adguard
+ozon.*$removeparam=keywords  # now is in Adguard
+ozon.*$removeparam=layout_container
+ozon.*$removeparam=layout_page_index
 !ozon.ru$removeparam=miniapp - don't, incorrect redirection at least on sellers
     ||ozon.ru/product/$removeparam=miniapp
     ||ozon.by/product/$removeparam=miniapp
@@ -3645,15 +3647,15 @@ ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=layout_page_index
     ozon.ru/*/?miniapp=supermarket$removeparam=miniapp
     ozon.by/*/?miniapp=supermarket$removeparam=miniapp
     ozon.kz/*/?miniapp=supermarket$removeparam=miniapp
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=oos_search  # now is in Adguard
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=opened
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=perehod  # now is in Ru AdList
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=pid  # ref
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=prev_collection
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=__rr  # now is in Ru AdList
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=sh  # doesn't work though
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=start_page_id
-ozon.ru,ozon.by,ozon.com,ozon.kz$removeparam=tf_state
+ozon.*$removeparam=oos_search  # now is in Adguard
+ozon.*$removeparam=opened
+ozon.*$removeparam=perehod  # now is in Ru AdList
+ozon.*$removeparam=pid  # ref
+ozon.*$removeparam=prev_collection
+ozon.*$removeparam=__rr  # now is in Ru AdList
+ozon.*$removeparam=sh  # doesn't work though
+ozon.*$removeparam=start_page_id
+ozon.*$removeparam=tf_state
 
 ! already blocked
 p7s1.io$removeparam=country  # from Adguard: ||middleware.p7s1.io/galileo/v1/tracking?device=*&country=*&path=$removeparam=/^(device|country|path)=/,xmlhttprequest
