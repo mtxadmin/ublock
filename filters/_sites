@@ -5283,6 +5283,8 @@ classcentral.com##.site-header__branding
 classmag.ru##.slider
 classmag.ru###anketa-wrapper
 
+cleverrust.ru$inline-script  # site blocks copypaste
+
 ||clib.me/themes/zeropoint/css/5.jpg
 clib.me###name-and-slogan
 
@@ -5711,6 +5713,11 @@ covertarget.com*_*.php  # from EasyList
 ||cp24.com/*/image.png
 
 cpanet.com##.birdseye-header:style(position:static !important)
+
+cpartisans.org##div[data-testid="screenWidthContainerBg"]:remove()
+cpartisans.org##img:style(filter:none !important)
+! overlay
+cpartisans.org##.wixui-footer
 
 cpl.com##.sticky__apply:style(position:static !important)
 ||cpl.com/vault/images/$image
@@ -7840,6 +7847,9 @@ electro-mpo.ru##.s-float-header:style(position:static !important)
 ! lazyload data-ezsrc
 electronicshacks.com##+js(set-attr, img.ezlazyload, src, [data-ezsrc])
 
+electronicsweekly.com###loading
+electronicsweekly.com##.widget-description
+
     ! top
 electro-skuter.ru##.wrapper-inner > .contacts
 electro-skuter.ru##.header-bottom-column
@@ -8145,6 +8155,19 @@ etm.ru##.order_status
 etm.ru##.act_blocks
 
 etogribok.ru##.site-header
+
+||etohd.net/clickworker.js
+etohd.net##.header-container
+etohd.net##.heading
+etohd.net##.title
+etohd.net##.btn
+etohd.net##.th-rating
+etohd.net##.th-views
+etohd.net##.th-actions
+etohd.net##.video-description
+etohd.net##.video-buttons
+etohd.net##.th-description
+etohd.net##.footer-container
 
 etomesto.ru###podbutton
 
@@ -8618,6 +8641,8 @@ fanzon-portal.ru##.subscribe-form-fix
 fapcat.com##+js(set-attr, img.lazyload, src, [data-src])
 
 faptm.ru###sliza-wgt-button
+
+faqpda.ru##.io-title-description
 
     ! banners and promos
 farfor.ru##.b-bigSlider
@@ -9902,6 +9927,9 @@ getdroidtips.com##.blue.note-box:has-text(Also Read)
     ! https://github.com/uBlockOrigin/uAssets/issues/5667
     ! https://github.com/uBlockOrigin/uAssets/issues/6727
 
+! inline related
+getdroidtips.com##p:has-text(Also Read:)
+
 ||getfreedumps.com/images/registernow.png
 getfreedumps.com##.sidebar1
 
@@ -10771,6 +10799,12 @@ guru99.com##a[rel^=sponsored] > img
 guruadmin.ru###header2
 guruadmin.ru##.addzakl
 
+gurudroid.net$inline-script  # site blocks copypaste
+gurudroid.net##.mask-overlay
+gurudroid.net##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
+gurudroid.net##img:style(opacity:initial !important)
+gurudroid.net##picture:style(opacity:initial !important)
+
 gurvip.ru##.elementor-button:has-text(/обратный звонок/i)
 gurvip.ru##.ast-custom-button:has-text(/обратный звонок/i)
 gurvip.ru##.elementor-widget-wrap:has-text(/обратный звонок/i)
@@ -10936,6 +10970,11 @@ habr.com##.tm-votes-lever__score-fallback
 
 ||hackr.io/blog/media/udacity-horizontal-banner.png
 
+halabtech.com##.modal-dialog
+halabtech.com###pop-alert-modal
+halabtech.com##.slider-container
+halabtech.com##.marquee-set
+
 handmade-garden.ru##.logo0
 
 hddmag.com##span:has-text(No products found.)
@@ -10970,6 +11009,9 @@ howto-do.it##.kadence-sticky-header:style(position:static !important)
 howto-do.it###ez-toc-container
 
 hranidengi.ru##.ban1
+
+hr-pedia.ru##.elementor-background-overlay
+hr-pedia.ru##.eael-reading-progress-wrap
 
 ||hsto.org/getpro/neuro-habr/
 ||hsto.org/getpro/effect/  # also effect.habr.com
@@ -12836,6 +12878,8 @@ itechguides.com##.orange-background
 
 itechlounge.net##hgroup
 
+itel-life.com##.box-recommend
+
 it-fm.ru##header
 
 ||itgeared.com/images/website/itgeared.png
@@ -12940,12 +12984,14 @@ ittalents.cz###bottom_man
 ittalents.cz###bottom_street
     ! other
 
+! For now, block all scripts
+it-tehnik.ru$script
+! later
+it-tehnik.ru$inline-script  # site blocks copypaste
 it-tehnik.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
 it-tehnik.ru##.posts-view-carousel
 ! it-tehnik.ru$script:contains(requestNotificationPermission) - doesn't (and shouldn't) work.
 it-tehnik.ru##^script:has-text(requestNotificationPermission)
-! For now, block all scripts
-it-tehnik.ru$script
 ! and remove useless header
 it-tehnik.ru##.header
 it-tehnik.ru##.like-but
@@ -13875,6 +13921,8 @@ kohls.com##.footer-top__native-app
     ! other
 
 kokoc.com##.blog-banner
+kokoc.com##.telegram_banner_desc
+kokoc.com##.body__cursor
 
     ! popups
 kolchuga.ru##.mfp-modal-btn
@@ -21221,6 +21269,8 @@ prophotos.ru##.navbar--hide.navbar:style(position:static !important)
 prophotos.ru##.navbar__header__subscribe
 ||prophotos.ru/assets/icons/navbar_socials$image
 
+proporodysobak.ru$inline-script  # site blocks copypaste
+
 pro-remontnik.com##.logo-section
 pro-remontnik.com##.footer-bottom
 pro-remontnik.com###toc_container
@@ -21926,8 +21976,14 @@ realme.com##.hover-img
 
 realmedriver.com$inline-script  # site blocks copypaste
 
+realmehelp.com$inline-script  # site blocks copypaste
+realmehelp.com$script  # site blocks copypaste.
+realmehelp.com##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
 realmehelp.com##.arrow-topsroll_site
+! inline related
 realmehelp.com##blockquote:has-text(Читайте также)
+realmehelp.com##.search-header_line
+realmehelp.com##.description-post_author
 
 realnoevremya.ru##.age
 
@@ -22499,6 +22555,9 @@ rnk.ru##.incontentButton
     ! other
 
 roadlesstraveledstore.com##.right-float-post
+
+robimgood.com.ua##.elementor-video
+robimgood.com.ua##.box2
 
 robotpoweredhome.com##.inside-header
 robotpoweredhome.com##pre:has-text(Robot)
@@ -24163,6 +24222,11 @@ sewist.com##.switcher
 
 ||sex-mom-sex.com/images/
 
+sexreliz.cc##header
+sexreliz.cc##h2
+sexreliz.cc##time
+sexreliz.cc###cd-top
+
 sexvideos.rodeo##.text-block
 
 ||sexyaporno.com/*/skinonly.jpg
@@ -25382,6 +25446,7 @@ sportwiki.to##.prelinetext
 sportwiki.to###sportswiki-idea
 ! other
 
+||spotify.com/embed-podcast/$subdocument
 spotify.com##.Root__now-playing-bar
 
 spr.ru##.moduleToolBars
@@ -26717,6 +26782,8 @@ telemetr.io##.list-header:style(position:static !important)
 telenor.hu##.hero-carousel
 telenor.hu##.hero-top-banner
 
+tellsmart.ru##.np-top-header-wrap
+
 telltrue.net##.overlay
 
 temowind.ru###header
@@ -26936,6 +27003,8 @@ thecodebuzz.com##.ticker-wrapper
 thecodebuzz.com##.widget-area:style(position:static !important)
 
 thedailybeast.com##.NavMobile__wrapper:style(position:static !important)
+
+thedigitalprojectmanager.com##.b-shortlist__featured
 
 thedrive.com##header:style(margin-left:0px !important)
 
@@ -29259,6 +29328,8 @@ virtualizationhowto.com##.sidebar
 
 virustotal.com##vt-ui-contact-fab
 virustotal.com##.footer-action-icons
+! fake notification indicator
+virustotal.com##[data-testid="unread-notifications-indicator"]
 
 visasam.ru$inline-script # ad popups
 visasam.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
@@ -29412,6 +29483,11 @@ vmware.com##.CoveoErrorReport
 vmware.com##.relatedResources
 ! strange empty
 docs.vmware.com##.backdrop
+
+vngsmservices.com##.marquee-set
+vngsmservices.com##[href^="https://www.facebook.com/"]
+! popups
+vngsmservices.com##.hidden-xs
 
 vodasovet.ru##.mobile-navigation
 
@@ -31441,6 +31517,8 @@ ypapa.ru##.yp-consult
 
 ytbdownload.com##.open.popup
 
+ytechb.com##.ytechb-footer-bar-fixed
+
 ||ytmp3.plus/ba  # from EasyList
 
 ytong.ru##.header__inner:style(position:static !important)
@@ -31786,6 +31864,8 @@ zen-top.ru##.b-related
 zen-top.ru##.menu-podval-container
 
 zerkalo.io##.b-youtube-sbscr
+zerkalo.io##body > div:style(height:auto !important)
+zerkalo.io##article > div:has-text(/^$/)
 
 zerocoolpro.biz##.Notices.FloatingContainer
 zerocoolpro.biz##.Notice.panel
