@@ -572,6 +572,7 @@ wildberries.ru##.j-recent-items > .recently-watched
     ! getting rid of js errors on mobile:
 !||wb.ru/sdk/sdk.js$redirect=noop.js
 ||wb.ru/*/customTags/banners$redirect=noop.js
+||wildberries.ru/get-geo-info  # user-geo-data.wildberries.ru/get-geo-info
 ||wildberries.ru/public/v1/banners$redirect=noop.js
 ||wb.ru/vol0/data/banners$redirect=noop.js
 ||wbstatic.net/data/banners$redirect=noop.js
@@ -600,6 +601,10 @@ wildberries.ru##.i-vip-status-popup
 wildberries.ru##.j-vip-status-popup
 wildberries.ru##.tooltipster-content:has-text(Используйте разные размеры карточек)
 wildberries.ru##.tooltip-product-variant
+! from Ru AdList
+wildberries.ru##.jqmOverlay
+! from Ru AdList
+wildberries.ru##.jqmWindow
     ! promos and banners
 wildberries.ru##.i-spec-action
 wildberries.ru##.spec-action
@@ -609,6 +614,18 @@ wildberries.ru##.hair
 wildberries.ru##[class^=banner_Container]
 ! main page sliders - как-то они там странно грузятся. В остальных местах ок.
 wildberries.ru##.main-page__product
+! from Adguard
+wildberries.ru##div[href^="https://safetyvpn.ru"][banner-id][title="Социальная реклама"]
+! from Adguard, Ru AdList
+wildberries.ru##.main-page__banner
+! from Adguard, Ru AdList
+wildberries.ru##.main-page__banner-info
+! from Adguard
+wildberries.ru##.j-promo-carousel-wrapper
+! from Adguard
+wildberries.ru##.j-advert-block-wrapper
+! from Adguard, Ru AdList
+wildberries.ru##.footer__banner
     ! old (striked out) prices
 wildberries.ru##.price-last
 wildberries.ru##.price-old-block
