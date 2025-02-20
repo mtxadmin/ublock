@@ -865,9 +865,10 @@ _adverts.js  # from EasyList
 /banery/*
 /%21banery/*
 !old ver: /banner*$important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~webinar.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it. Update: maybe asterisk was needed
-/banner*$all,important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~sbis.ru|~webinar.ru
+/banner*$all,important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~sbis.ru|~webinar.ru|~wildberries.*
     ! Exclusions:
     ! mts-link.ru, webinar.ru - rus webinars, doesn't work without
+    ! wildberries.ru/by/kg - russian marketplace, needs tuning
     !
     ! ##[src^="/images/banner"]
     ! /banner/*$important
@@ -2326,10 +2327,10 @@ _tizers.  # from Ru AdList
 /promos/*  # is in Ru AdList
     ! /promos/pixels?  # from EasyPrivacy
 /promotion/*$domain=~doogee.cc
-/promotions/*
+/promotions/*$domain=~wildberries.*
     ! ||gbtcdn.com/GB/images/promotion/*$image
     ! ||mvideo.ru/media/promotions/*$image
-    ! ||wbstatic.net/promotions/
+    ! ||wbstatic.net/promotions/ - earlier version. Later wbbasket.ru/vol2/site/j/spa/services/promotions/ became needed
 /promo_tracking.  # from EasyPrivacy
 /promo_tracking/*  # from EasyPrivacy
 /searchpromote/*
