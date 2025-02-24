@@ -3006,6 +3006,8 @@ github.com$removeparam=reference_location  # from Adguard
 
 glami.cz$removeparam=/ga[ct]id[^=]*=/i  # from Adguard
 
+glavred.net$removeparam=_gl  # combined ref
+
 globus.ru$removeparam=hyper
 globus.ru$removeparam=search-err
 
@@ -3044,6 +3046,7 @@ google.*$removeparam=gs_rn  # from NeatURL
 ||www.google.*/search?$removeparam=newwindow  # from Ru AdList
 ||google.*/search$removeparam=oe  # from Adguard
 ||google.*/search?$removeparam=oq  # is in Ru AdList and Adguard  # seems ref
+||google.*/url$removeparam=opi  # possible trackid
 !google.*/search$removeparam=prmd  # some id. Block?
 ! don't block q param - it's search text
 ||www.google.*/search?$removeparam=sca_esv  # from Ru AdList
@@ -3293,6 +3296,11 @@ lazada.vn$removeparam=mkttid  # from Adguard
 lazada.com.my$removeparam=mp  # from DandelionSprout's ClearURLs for uBo
 lazada.com.my$removeparam=pa  # from DandelionSprout's ClearURLs for uBo
 lazada.com.my$removeparam=pos  # from DandelionSprout's ClearURLs for uBo
+
+lemonde.fr$removeparam=lmd_medium
+!lemonde.fr$removeparam=lmd_campaign
+lemonde.fr$removeparam=lmd_creation
+lemonde.fr$removeparam=lmd_source
 
 lenovo.com$removeparam=orgRef  # from DandelionSprout's URLShortener
 
