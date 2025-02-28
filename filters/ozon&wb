@@ -536,7 +536,7 @@ ozon.*##button:has(>div:has-text(/0 комментариев|1 коммента�
 ozon.*##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/)):not(div[reviewuuid])
 ! and also. Old design.
 ! reviews without text are useless
-ozon.*##div[data-review-uuid]:not(:has-text(/Вам помог этот отзыв\?|Показать весь отзыв/)):not(:matches-path(/my/reviews|/context/client_opinion))
+ozon.*##div[data-review-uuid]:not(:has-text(/Вам помог этот|Показать весь отзыв/)):not(:matches-path(/my/reviews|/context/client_opinion))
 ! just img
 ||ozone.ru/s3/my-account-api-img/*/OD-ok.png$image
 finance.ozon.*##.bank-logo
