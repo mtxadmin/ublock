@@ -8667,6 +8667,9 @@ farfor.ru##.app-factoid
 farfor.ru##.main__page-app
     ! other
 
+fashion-geek.ru$inline-script  # site breaks copypaste
+fashion-geek.ru##.content__attention
+
 fastcompany.com##.post__readTime
 
     ! popups
@@ -12189,6 +12192,8 @@ ign.com##.wiki-bar:style(position:static !important)
 igromania.ru##.headerline_outer:style(position:static !important)
 igromania.ru##.hmenu_before
 
+igrozoom.ru##.ignore-select.rightside
+
 iguides.ru###topLine:style(position:static !important)
 iguides.ru##.logo_store
 iguides.ru###topLineLogo
@@ -12719,6 +12724,7 @@ investfuture.ru###header-branding:style(height:auto !important)
 
 ||investing.com/*/_error$script
 ||investing.com/api/editions/streamer
+||investing.com/Broker_Button_New/$image
 education.investing.com$script  # https://si.education.investing.com/inv/prebid.js  # https://si.education.investing.com/inv/imhb.js
     ! popups
 investing.com##[class^=watchlist-onboarding-drawer]
@@ -12727,6 +12733,7 @@ investing.com##.blur-sm:style(filter:none !important)
 investing.com##[class*=proAppControl]
     ! top
 investing.com##div[class*=header_sticky]:style(position:static !important)
+investing.com###bottom-nav-row:style(position:static !important)
     ! other
 investing.com##.notification
 investing.com##.alertText
@@ -15027,6 +15034,11 @@ lifehacker.ru##.widgets-renderer__sticky:style(position:static !important)
 
 ||lifelink.ru/img/lifelink_banner$image
 
+! big promo banner
+lifepodium.ru##a[href^="https://t.me/+"] img
+! inline related
+lifepodium.ru##blockquote
+
 lifewire.com##.toc-wrapper:style(position:static !important)
 lifewire.com##.sticky-toc-widget:style(position:static !important)
 lifewire.com##.header-nav-spotlight__link
@@ -17048,6 +17060,8 @@ mob-mobile.ru##.sliders
 
 ||mobzon.ru/adbp/adbp.js  # from Ru AdList
 
+modaok.ru$inline-script  # site breaks copypaste
+
 ! general rule for bg_ sometimes doesn't work here due to exclusions in lists. Ok, let's repeat it.
 ||moddb.com/*/bg_header_logo.png
 ||moddb.com/*/bg_header.png
@@ -18298,6 +18312,8 @@ newsyou.info##.wrapper-footer p
 ! big logo at top
 newtimes.ru##.navbar:style(height:auto !important)
 ! other
+
+newtrands.com###main-nav:style(position:static !important)
 
 newxxx24.cc##.active
 
@@ -20281,6 +20297,8 @@ pix-feed.com$inline-script  # site changes copied text
 ! unstick header
 pix-feed.com##.html_header_top:style(position:static !important)
 pix-feed.com##.html_header_sticky:style(position:static !important)
+! casino banner
+pix-feed.com##.code-block
 
 pizzapirat.ru##.small-cart:style(position:static !important)
 
@@ -21556,6 +21574,8 @@ qiwi.com##[class^=account-avatar-icon]
 qiwi.com##.qw-top-info
 qiwi.com##[class^=auth-double-footer-social]
 qiwi.com##[class^=cookies-]
+
+qllo.ru##.wp-block-media-text__content
 
 qna.center###errmsg
 qna.center##.mt5.mb5.well
@@ -25935,6 +25955,11 @@ studytonight.com##.fab
 studytonight.com###topNavAlertSlider
 studytonight.com##.position-fixed
 
+||stuki-druki.com/images/stuki-druki.com.jpg
+stuki-druki.com##.side-menu-nav138
+stuki-druki.com##html:style(background:initial !important)
+stuki-druki.com##body:style(background:initial !important)
+
 ! is in AdGuard and Fanboy's
 ||platform.stumbleupon.com/*/widgets.js$3p
 
@@ -26277,6 +26302,17 @@ tako-shop.com##.content_footer_left
 
 taktikatula.ru##.product-services
 taktikatula.ru##.dp-product__payment-list
+
+talentsy.ru##.js-prize
+talentsy.ru##.modal-content
+talentsy.ru##.open.modal
+talentsy.ru##.postprofbanner
+talentsy.ru##.footer-number
+talentsy.ru##.course-block
+talentsy.ru##.blogrelations
+talentsy.ru##.relateproffbanner
+talentsy.ru###collection_id
+talentsy.ru##noindex
 
 tamilsex24.com##.list
 
@@ -26828,6 +26864,13 @@ telemetr.io##.list-header:style(position:static !important)
 
 telenor.hu##.hero-carousel
 telenor.hu##.hero-top-banner
+
+    ! top
+teletype.in##.menu__logo_image
+teletype.in##.menu__content:style(position:static !important)
+teletype.in##.menu__backdrop
+teletype.in##.menu:style(padding-top:0px !important)
+    ! other
 
 tellsmart.ru##.np-top-header-wrap
 
@@ -29735,6 +29778,12 @@ vozduhstroy.ru##.bcomment.bsidebar
 vozduhstroy.ru##.bopros.bsidebar
 vozduhstroy.ru##.title_also
 
+vplate.ru##.gallery-grid__image::before
+vplate.ru##.article_menu_entry
+vplate.ru##.cover-bottom
+! dumb unrelated links after comments
+vplate.ru##.wrapper:has(.content_comment) ~ *
+
 vpnhook.com###header
 
 vpnmentor.com###mbj-notify-bar-wrapper
@@ -30600,6 +30649,8 @@ wisesoft.co.uk###mainnav
 ||wixapps.net/api/v1/bulklog
 
 wizcase.com###sidebar-top-vendors
+
+wlooks.ru##.gallery-image::before
 
 w-lovers.ru##.form:has-text(18 лет)
 w-lovers.ru###popup_iframe_wrapper
