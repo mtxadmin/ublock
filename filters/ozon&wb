@@ -56,6 +56,11 @@ megamarket.ru##.spinner
 ||ozon.com/tracker/
 ||ozon.kz/tracker/
 !
+!||ozone.ru/*/tracker.$script,redirect-rule=noopjs
+! The requested module './vendors/@ozon-ob-foundation/tracker.*.js' does not provide an export named 's'
+! import{s}from"./event-bus.BPrKTjVw.js";var a="TRACKER",e=r=>s({...r,name:a});export{e as s};
+@@||ozone.ru/*/tracker.$script  # temp exclusion
+!
 ||ozon.ru/api/v3/performance
 ||ozon.by/api/v3/performance
 ||ozon.com/api/v3/performance
