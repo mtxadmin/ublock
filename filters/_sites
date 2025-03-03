@@ -9166,10 +9166,17 @@ fontanka.ru##.footer__white-wrapper
 fontanka.ru##div:has-text(/^18\+$/)
 fontanka.ru##svg[data-test=logo]
 
-! popup
+    ! popups
 food.ru##[class^=Onboarding_wrapper]
-! top
+    ! banners and promos
+! решили выезжать на доставке, значит. Ну, такое.
+food.ru##[class^=scrollIntoViewOrderProducts]
+food.ru###order-products
+food.ru##[class*=orderProducts]
+food.ru##[class^=loginBlock_loginBlock]
+    ! top
 food.ru##[class^=header_sticky]:style(position:static !important)
+    ! other
 food.ru###rate-or-share
 
 foodandhealth.ru###ag_warning_header
@@ -9711,12 +9718,20 @@ garsingshop.ru##.header-bottom__logo
 
 garvis.ca##.header
 
+    ! banners and promos
+gastronom.ru##[class^=_headerAd_]
+! под Магнит легли, половина верхнего меню - галимая реклама, вторая половина бесполезна
+gastronom.ru##[class^=_link_]
+gastronom.ru##[class*=_authorDesktop_]:has-text(Магнит)
+!gastronom.ru###rating:has-text(войдите) - кнопку поменяли, но пользы ей не добавили
+gastronom.ru###rating
+gastronom.ru##[class^=_additional_] div:has-text(Пройти опрос)
+    ! other
 gastronom.ru##[class*=_nps_]
 gastronom.ru##[class^=_sidebar_]
 gastronom.ru##[class*=_ageLimitIcon_]
 ! top sticky
 gastronom.ru###teleported
-gastronom.ru###rating:has-text(войдите)
 
 gaw.ru##.tx
 
@@ -14084,6 +14099,7 @@ b-kontur.ru##[class^=SupportButton]
 ||koolinar.ru/media/svg/new-logo-header.svg
 koolinar.ru##.u-header:style(position:static !important)
 koolinar.ru##.list-inline
+koolinar.ru##.b-footer__subscribe
 
 koreanautoreview.com$inline-script  # site blocks copypaste
 koreanautoreview.com##+js(set-attr, img, src, [data-lazy-src])
@@ -14359,6 +14375,8 @@ kulikavto.ru##.header-name
 kulikavto.ru##.site-copy
 kulikavto.ru##.year-rating
 
+kulinarenok.ru##.recipe-link.panel__link
+
 kulturologia.ru##.need-login
 ! Ru AdList: @@||kulturologia.ru^$generichide
 kulturologia.ru##.article__share
@@ -14465,6 +14483,10 @@ kyky.org##.article__content__related
 
 kylas.io##.callIcon
 
+kylinariya.ru$inline-script  # site blocks copypaste
+kylinariya.ru###header_menu
+kylinariya.ru##.error_send
+
 lab102.ru###zadat-vopros
 lab102.ru##.pop-block
 
@@ -14503,6 +14525,8 @@ lada-4x4.net##.header-content
 ladomed.com##.topScrolls
 ladomed.com##.cart_closed
 ladomed.com##.footer_send
+
+ladyelena.ru##.rating_widget
 
 ||lady-war.ru/inwidget/
 lady-war.ru##.PhoneHead
@@ -15802,6 +15826,14 @@ magesy.blog##strong:has-text(Adblock)
 magesy.blog##.sidebar-container
 	! other
 
+    ! banners and promos
+||maggi.ru/sites/default/files/styles/embedded_banner_slider$image
+! promos
+maggi.ru##.recipe-products
+maggi.ru##.slick-slider
+maggi.ru##.rate-widget
+    ! other
+
 magic-drive.ru##.offer-slide
 
 magizoo.ru##.mainpage__main_slider
@@ -16547,13 +16579,19 @@ menunedeli.ru##+js(addEventListener-defuser, /oncontextmenu/)
 ||menunedeli.ru/*/panel.js
 menunedeli.ru##^script:contains(PushNotifications)
 menunedeli.ru##^script:contains(require)
+    ! popups
+menunedeli.ru##.fixed-bottom-blk
     ! top
 ||menunedeli.ru/wp-content/themes/freshfruits11/img/extra-header.png
 menunedeli.ru##.head__logo
-    ! banners
+    ! banners and promos
 ||menunedeli.ru/*/frm_banner
 ||menunedeli.ru/*/icon_cook$image
 ||menunedeli.ru/wp-content/uploads/2018/06/01-2.png  # instagram sub
+! from Adguard
+menunedeli.ru##.save-recipe-blk
+menunedeli.ru##.menu-blk > .menu
+menunedeli.ru##.skip-utm-forward.gc
     ! other
 ||menunedeli.ru/wp-content/uploads/2014/11/37/10.png  # big arrow down
 ! lenta menu
@@ -16561,8 +16599,6 @@ menunedeli.ru##.head__logo
 !
 menunedeli.ru##.hidden-email-blk
 menunedeli.ru##.extra-box
-! from Adguard
-menunedeli.ru##.save-recipe-blk
 
 meraki.com##.nav
 meraki.com##.bold-rounded-box
