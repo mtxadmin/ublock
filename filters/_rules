@@ -2447,9 +2447,10 @@ _tizers.  # from Ru AdList
     ! steelsafeshop.ru##.cta-phone
     ! syloe.com##.cta-img
     ! varonis.com##.cta-block
-~nixstats.com,~redhat.com##[class$="-cta"]:not(html):not(body):not(article)
+~electronicdesign.com,~nixstats.com,~redhat.com##[class$="-cta"]:not(html):not(body):not(article)
 ! "##.alert-info.alert.signup-cta" does not fall in. Weird. Ok, here an addition:
 ~nixstats.com,~redhat.com##[class*="-cta "]:not(html):not(body):not(article)
+    ! electronicdesign.com: .above-cta is main content
     ! nixstats.com: <button class="btn btn-cta" type="submit">login</button>
 ##[id$="-cta"]:not(html):not(body):not(article)
     ! ##.footer-cta
