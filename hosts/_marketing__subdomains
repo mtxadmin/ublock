@@ -15,9 +15,13 @@ a02342.thestrad.com  # https://a02342.thestrad.com/wrapperMessagingWithoutDetect
 /ablink.
     ! ablink.email.etsy.com  # from iam-py-test's anti-redirectors  # see at email.
 
-/ad.  # this form is time-proven, but it can be ||ad. (not including some elements though)
+/ad.$domain=~teletype.in  # this form is time-proven, but it can be ||ad. (not including some elements though)
     ! ||ad.kinozal.  # from Ru AdList
     ! ||ad.kinozaltv.  # from Ru AdList
+    !
+    ! Exclusions:
+    ! teletype.in - non-ad script (teletype.in/static/AD.[...])
+    !
 ad.12dt.com  # from Quidsup NoTrack-Blocklist
 !ad.3dnews.com
 ad.a8.net
@@ -1589,6 +1593,9 @@ insights.algolia.io  # from Adguard
 insights.dice.com  # from Adaway
 insights.recruitics.com
 insights.samsung.com  # from Adaway and NextDNS native-tracking-domains samsung
+
+://insights-collector.  # from EasyPrivacy
+insights-collector.gog.com
 
 ||link.
 link.2gis.ru  # ad redirects
