@@ -224,6 +224,7 @@
 24tv.ua##.grid-container::after
 24tv.ua###nav-additional
     ! other
+24tv.ua##app-header
 
 24video-sexy.com##.footer
 24video-sexy.com##.inner-page__fav
@@ -5022,6 +5023,9 @@ chitai-gorod.ru##.footer-section_subscribe
 
 ! logo
 chitat-knigi.com##.link-no-color
+
+chitat-online.net##.logo-colored
+chitat-online.net##.theme-swiper-btn
 
     ! unstick elements
 chizhik.club##div:matches-css(position:fixed):style(position:static !important)
@@ -13280,11 +13284,16 @@ jooble.org##aside:has-text(Подпишитесь)
 jooble.org##p:has-text(вы скоро найдете)
 
 joom.com/*/getGoogleAnalyticsClientID
+||joom.com/api/*/events
 !||joomcdn.net/web-client/bugsnag$redirect=noopjs - error
 joom.com##[class^=logo]
 joom.com,joom.ru##[class^=jmtLogo_]
     ! popups
 joom.ru##[class^=contextMenu]:has-text(вы будете перенаправлены на joom.com)
+||joom.com/api/*/users/self/adulthoodPopup
+    ! banners and promos
+||joom.com/api/*/rewardWheel
+||joom.com/api/*/trendingLinks
     ! other
 joom.com##[class^=product_]:has([class^=adBadge])
 joom.com,joom.ru##div[class^=discount__]
@@ -13891,6 +13900,12 @@ knigionline.net##.helper_buttons
 knigionline.net##.h1
 knigionline.net##.podborr22
 
+knigi-online.org##.page-head
+knigi-online.org##.saved
+knigi-online.org###story
+knigi-online.org##.header
+knigi-online.org##.pmovie__player
+
 knigkindom.ru$inline-script  # site is changing title
 knigkindom.ru##body:style(color:white !important)
 knigkindom.ru###bottombar
@@ -14046,6 +14061,8 @@ kommersant.ru##.rubric_lenta__item:has(.uho__name:has-text(Путин))
     ! other
 ! is in Fanboy's
 kommersant.ru##.network
+kommersant.ru##.lenta_news
+kommersant.ru##.iconbox
 
 ||komplektmarket.ru/images/yamarket2.png
 komplektmarket.ru##body > .pointer
@@ -18617,7 +18634,6 @@ novoeizdanie.com##.header_desc_search
 novoeizdanie.com##.full_desc_menu
 
 novoglam.com###heading
-novoglam.com###textLogo
 novoglam.com###myGalleryTags
 novoglam.com###shortRight
 
@@ -20377,6 +20393,9 @@ planetazdorovo.ru##.block-fixed_price
 ! Uncaught ReferenceError: toastr is not defined
 !planetazdorovo.ru##+js(set, toastr, noopFunc)
 ! Uncaught TypeError: toastr.success is not a function
+planetazdorovo.ru##.accept-city-block
+planetazdorovo.ru##.block-fixed-footer
+planetazdorovo.ru##.header-sub:style(position:static !important)
     ! top
 planetazdorovo.ru##.popup-layout, .mav-main-layout, .filter-layout:style(position:static !important)
 planetazdorovo.ru##.pre-header-main .nav-user-action:style(margin-top:0px !important)
@@ -20384,13 +20403,18 @@ planetazdorovo.ru##.nav-main-all
 planetazdorovo.ru##.header-main
     ! banners and promos
 planetazdorovo.ru##.slider-banner__wrap
+planetazdorovo.ru##.main-right-banner
+planetazdorovo.ru##.main-first
+planetazdorovo.ru##.banner-footer
     ! apps
 planetazdorovo.ru##.footer-navigation__store
 planetazdorovo.ru##.footer-navigation__store-link
+planetazdorovo.ru##.nav-footer__stores
     ! other
 ! oneclick
 planetazdorovo.ru##.item-card__action-buyNow
 planetazdorovo.ru##.slider-benefits
+planetazdorovo.ru##.item-card-buyNow-button
 
 planetcrust.com##.avia-testimonial-wrapper
 
@@ -20560,6 +20584,8 @@ plitkanadom.ru##.zoom-images
 plotina.in.ua###mvp-main-nav-top:style(position:static !important)
 plotina.in.ua##.mvp-fixed1:style(position:static !important)
 plotina.in.ua##.mvp-fixed2:style(position:static !important)
+
+pluggedin.ru##.new-black-top:style(position:static !important)
 
 ! The site is going worse and worse.
 ||pluralsight.com/guides/_next/static/  # the site blocks itself in case of an error. What a #$%?
@@ -27777,6 +27803,8 @@ topsmartfonov.com##.nextPostBox
     ! other
 
 toptal.com##.subscribe_card
+toptal.com##.internal-linking-ticker-list
+toptal.com##.internal-linking-container
 
 toptechtalk.xyz##.admania-sitetitle
 toptechtalk.xyz##.admania-header-eighth-top
@@ -29108,6 +29136,8 @@ v-banyu.ru##img:style(opacity:1 !important)
 vbr.ru##.footer-links-apps
 
 ||vc.ru/hit  # is in Adguard
+||vc.ru/index.worker.js
+||vc.ru/registersw.js
 ||vc.ru/static/special/yota-stratum/  # from Adguard
     ! popups
 vc.ru##.mobile-bar
