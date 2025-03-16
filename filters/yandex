@@ -247,6 +247,16 @@ ya.ru,yandex.*##.content-with-thumb
 ya.ru,yandex.*##.content-with-thumb_bordered_yes
 ya.ru,yandex.*##.content-with-thumb_margin_no
 
+! lavka
+    ! popups
+lavka.yandex.*##html:remove-attr(data-hide-scroll)
+yandex.*##[data-testid="modal"]:has([data-testid="install-app-modal"])
+yandex.*##[data-testid="install-app-modal"]
+yandex.*##[data-testid="backdrop"]
+yandex.*##[data-testid="footerInfoCenter"]
+yandex.*##[data-testid-item="demo-catalog-popup"]
+    ! other
+
 ! maps
 yandex.*##[class^=_id_branding]
 ! seems non-working. Todo.
