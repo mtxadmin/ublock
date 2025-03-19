@@ -2592,6 +2592,8 @@ bestbuy.com$removeparam=refdomain  # from DandelionSprout's URLShortener
 betcity.ru$removeparam=icm  # from Adguard
 betcity.ru$removeparam=widget_id  # from Adguard
 
+bibliboba.com$removeparam=set
+
 bigin.com$removeparam=source_from  # ref
 
 bilibili.com$removeparam=bbid  # from DandelionSprout's ClearURLs for uBo
@@ -4232,8 +4234,9 @@ $removeparam=integration,domain=dzen.*|ya.ru|yandex.*
 ya.ru$removeparam=issue_tld
 ! lang
     /story/*?lang=$document,removeparam=|,domain=dzen.*|ya.ru|yandex.*  # from Ru AdList
-ya.ru,yandex.*$removeparam=lr  # from NeatURL
+ya.ru,yandex.*$removeparam=lr  # is in NeatURL  # some id
 ya.ru,yandex.*$removeparam=lrredircnt  # from NeatURL
+ya.ru$removeparam=maybe_ads  # suspicious param in suggest
 ||market.yandex.$removeparam=mclid  # from Adguard
 ya.ru,yandex.*$removeparam=mlid  # from Adguard, modified
     ! ||yandex.*/news/$removeparam=mlid  # from Adguard
@@ -4255,6 +4258,7 @@ $removeparam=persistent_id,domain=ya.ru|yandex.*|dzen.ru  # from Adguard
         ! ||yandex.*/news/$removeparam=persistent_id  # from Adguard
         ! ||yandex.*/sport/$removeparam=persistent_id  # from Adguard
 $removeparam=place,domain=dzen.*|yandex.*
+ya.ru$removeparam=platform  # suspicious param in suggest
 $removeparam=pokupki,domain=market.yandex.*  # from Ru AdList, modified
     ! ?pokupki=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 $removeparam=redircnt,domain=ya.ru|yandex.*  # from Ru AdList
@@ -4263,20 +4267,24 @@ $removeparam=rs,domain=market.yandex.*  # some long id  # again
 $removeparam=search_domain,domain=ya.ru|yandex.*  # from Ru AdList
 $removeparam=search_source,domain=ya.ru|yandex.*  # from Ru AdList: ||yandex.*/search/$document,removeparam=search_source
 $removeparam=secdata,domain=dzen.*|ya.ru|yandex.*
+ya.ru$removeparam=show_experiment  # suspicious param in suggest
 ||disk.yandex.$removeparam=sk  # from Adguard
 $removeparam=sku,domain=market.yandex.*
 $removeparam=source-serpid,domain=ya.ru|yandex.*  # from Adguard
     ! ||yandex.*/images/$removeparam=source-serpid  # from Adguard
+ya.ru$removeparam=srv  # suspicious param in suggest
 $removeparam=stid,domain=dzen.*|ya.ru|yandex.*
     ! dzen.ru$removeparam=stid  # from Adguard and Ru AdList
     ! yandex.*$removeparam=stid  # from Adguard, modified
         ! ||yandex.*/news/$removeparam=stid  # from Adguard
         ! ||yandex.*/sport/$removeparam=stid  # from Adguard
-ya.ru,yandex.*$removeparam=suggest_reqid
-    ! ||yandex.*/search/$removeparam=suggest_reqid  # from Adguard
+ya.ru,yandex.*$removeparam=suggest_reqid  # suspicious param in suggest
+    ! ||yandex.*/search/$removeparam=suggest_reqid  # is in Adguard
 !market.yandex.*$removeparam=text - don't, it blocks search on the market
 ||docs.yandex.$removeparam=uid  # from Adguard
 ||market.yandex.$removeparam=vid  # from Adguard
+ya.ru$removeparam=wiz  # suspicious param in suggest
+ya.ru$removeparam=yu  # some id
 yandex.com$removeparam=appmetrica_tracking_id  # ref
 
 ykt.ru$removeparam=/(news_interesting|news_plus|news_popular|news_recent|promo_inner)[^=]*=/i  # from Ru AdList, modified
