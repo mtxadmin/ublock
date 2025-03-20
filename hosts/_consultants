@@ -37,10 +37,12 @@
 /callme.min.js
 /callmenow/js/*
 /call.tracker.js
-/chat/*$domain=~coco.gg|~meet.google.com|~hh.ru|~profteh.com|~sberbank.ru
+/chat/*$domain=~coco.gg|~deepseek.com|~meet.google.com|~hh.ru|~openai.com|~profteh.com|~sberbank.ru
     ! Exclusions:
+    ! deepseek.com - chatbot, not embedded, just single-user AI
     ! meet.google.com - conference/chat service
     ! hh.ru - chat (useful, not bots, not "consultants")
+    ! openai.com - chatbot, not embedded, just single-user AI
     ! profteh.com - big pdd platform
     ! sberbank.ru - support chat, but useful
 /chatbot/*
@@ -949,6 +951,8 @@ clickdesk-dot-sandbox-dot-agile-crm-cloud.appspot.com$important
 
 clicklive.ru
 
+clickpush.biz
+
 clickstar.me$important  # push ad network
 
 clicktex.com$important  # push ads network
@@ -1160,6 +1164,9 @@ doyoudreamup.com  # from ShadowWhisperer's Chats
 dpns-notifications.com  # from EasyList
 
 ! drift.com in _marketing__a_lot_of_subs
+! driftt.com in _marketing__a_lot_of_subs
+! drift.me in _marketing__a_lot_of_subs
+! drftclk-609.com in _marketing__a_lot_of_subs
 
 driveback.ru  # from Ru AdList
 
@@ -1645,6 +1652,12 @@ interactions.net  # interactions.com
 
 ! intercom.com in _marketing__a_lot_of_subs
 ! intercom.io in _marketing__a_lot_of_subs
+! intercomassets.com in _marketing__a_lot_of_subs
+! intercomcdn.com in _marketing__a_lot_of_subs
+! intercom-clicks.com in _marketing__a_lot_of_subs
+! intercom-mail.com in _marketing__a_lot_of_subs
+! intercom-attachments-1.com in _marketing__a_lot_of_subs
+! intercom-attachments-7.com in _marketing__a_lot_of_subs
 
 inthechat.com  # from ShadowWhisperer's Chats
 
@@ -2371,7 +2384,7 @@ purechat.com$important  # chat
 ! end of purechat.com
 purechatcdn.com  # seems parked now  # is in ShadowWhisperer's Chats
 
-puserving.com
+! puserving.com in _marketing__a_lot_of_subs
 
 push.delivery  # from EasyPrivacy
 
