@@ -176,6 +176,7 @@ any.yandex.uz
 
 ap.yandex-net.ru
     ! report.ap.yandex-net.ru  # from Peter Lowe's hosts file
+    ! startup-mobile.ap.yandex-net.ru  # app requests  # is in Adguard
 
 api-metrica.yandex.by
 api-metrica.yandex.com
@@ -219,6 +220,9 @@ appmetrika.yandex.net$important,all
 appmetrika.yandex.org
 appmetrika.yandex.ru$important,all
 appmetrika.yandex.uz
+!
+appmetrica.io
+appmetrica.ru
 
 autofill.yandex.by
 autofill.yandex.com
@@ -264,6 +268,23 @@ awsync.yandex.ru  # from Adguard and Ru AdList
 awsync.yandex.uz
 
 ba.yandex.net  # from Mahakala
+
+! yandex.browser hosts
+browser.yandex.ru
+    ! api.browser.yandex.ru  # mobile telemetry
+browser.yandex.net
+    ! crash-reports.browser.yandex.net  # telemetry
+browser.mobile.yandex.net
+    ! voice.browser.mobile.yandex.net
+getyabrowser.com
+ya-browser.ru
+    ! from Ru AdList
+    ##a[href*="://ya-browser.ru/r/"]
+ya-distrib.ru
+    ! from Ru AdList, generalized
+    ##a[href*="ya-distrib.ru"]
+    ||yastatic.net/browser-updater/$important,all
+browser-updater.yandex.net$important,all  # from Ru AdList
 
 bs.yandex.ru$important,all
 bs-meta.yandex.ru  # from MVPS
@@ -316,6 +337,8 @@ direct.yandex.uz
 
 dr.yandex.net  # from ShadowWhisperer's Ads
 dr2.yandex.net  # from ShadowWhisperer's Ads
+
+soft.export.yandex.ru  # soft.export.yandex.ru/status.xm  # soft.export.yandex.ru/status.xml?... - Yandex browser statistics  # ||soft.export.yandex.ru/status.xml?stat=dayuse&banerid=  # also net requests
 
 extmaps-api.yandex.net  # from BlockListProject - Ads, Mahakala, EasyPrivacy
 
@@ -418,19 +441,6 @@ metrika.yandex.org$important,all
 metrika.yandex.ru$important,all
 !metrika.yandex.ua$important,all  # till 2022
 metrika.yandex.uz$important,all
-    ! web-metrica.yandex.*$important,all
-web-metrica.yandex.by$important,all
-web-metrica.yandex.com$important,all
-web-metrica.yandex.com.tr$important,all
-!web-metrica.yandex.com.ua$important,all
-web-metrica.yandex.kg$important,all
-web-metrica.yandex.kz$important,all
-web-metrica.yandex.md$important,all
-web-metrica.yandex.net$important,all
-web-metrica.yandex.org$important,all
-web-metrica.yandex.ru$important,all
-!web-metrica.yandex.ua$important,all  # till 2022
-web-metrica.yandex.uz$important,all
     /metric.js
     /metrica.js$important,all
     /metrica/*  # is in EasyPrivacy: /metrica/sp.js
@@ -448,6 +458,70 @@ web-metrica.yandex.uz$important,all
 metrica-yandex.com  # from GoodbyeAds
 
 metrika-informer.com$important,all
+
+! don't block mobile.yandex.net entirely
+addappter.mobile.yandex.net
+addappter-api.mobile.yandex.net
+advisor-retail.mobile.yandex.net
+advisor-widget.mobile.yandex.net
+advisor-widget.tst.mobile.yandex.net
+analytics.mobile.yandex.net$important,all
+analytics-slb.mobile.yandex.net$important,all
+appmetrica.ios.mobile.yandex.net
+banners.mobile.yandex.net$important,all  # is in Adguard
+banners-slb.mobile.yandex.net  # is in Adguard
+banners.tst.mobile.yandex.net
+browser.mobile.yandex.net
+certificate.mobile.yandex.net
+certificate.tst.mobile.yandex.net
+!certificate-partners.mobile.yandex.net
+demo.mobile.yandex.net
+demo.tst.mobile.yandex.net
+dialer.mobile.yandex.net
+dialer.tst.mobile.yandex.net
+front.mobile.yandex.net
+ios.mobile.yandex.net
+iosproxy.mobile.yandex.net
+iosproxy-partners.mobile.yandex.net
+launcher.mobile.yandex.net
+launcher.tst.mobile.yandex.net
+launcher-cache.mobile.yandex.net
+lbs-slb.mobile.yandex.net
+lockscreen.mobile.yandex.net
+lockscreen.tst.mobile.yandex.net
+metro.mobile.yandex.net  # yandex.metro works ok
+misc.mobile.yandex.net
+mobile-browser.mobile.yandex.net
+mobile-browser.tst.mobile.yandex.net
+news.mobile.yandex.net
+oauth.mobile.yandex.net
+oauth.tst.mobile.yandex.net
+promotions.mobile.yandex.net
+promotions.tst.mobile.yandex.net
+public.yastore-mds.mobile.yandex.net
+registrator.mobile.yandex.net
+registrator.tst.mobile.yandex.net
+search.mobile.yandex.net
+setup-wizard.mobile.yandex.net
+setup-wizard.tst.mobile.yandex.net
+shell-resizer.mobile.yandex.net
+sovengard.mobile.yandex.net
+staging-startup.mobile.yandex.net
+startup.ios.mobile.yandex.net
+startup.mobile.yandex.net$important,all
+startup.tst.mobile.yandex.net
+startup-partners.ios.mobile.yandex.net
+startup-partners.mobile.yandex.net
+startup-slb.mobile.yandex.net
+tst.mobile.yandex.net
+updater.mobile.yandex.net
+updater.tst.mobile.yandex.net
+yastore.mobile.yandex.net
+    ! front.yastore.mobile.yandex.net
+    ! public-storage.yastore.mobile.yandex.net
+    ! public-storage-resized.yastore.mobile.yandex.net
+    ! public-storage-slb.yastore.mobile.yandex.net
+    ! retail.yastore.mobile.yandex.net
 
 ms.yandex.by
 ms.yandex.com
@@ -619,6 +693,20 @@ webmaster.yandex.org
 webmaster.yandex.ru$important,all  # from Adguard, modified
 webmaster.yandex.uz
 
+    ! web-metrica.yandex.*$important,all
+web-metrica.yandex.by$important,all
+web-metrica.yandex.com$important,all
+web-metrica.yandex.com.tr$important,all
+!web-metrica.yandex.com.ua$important,all
+web-metrica.yandex.kg$important,all
+web-metrica.yandex.kz$important,all
+web-metrica.yandex.md$important,all
+web-metrica.yandex.net$important,all
+web-metrica.yandex.org$important,all
+web-metrica.yandex.ru$important,all
+!web-metrica.yandex.ua$important,all  # till 2022
+web-metrica.yandex.uz$important,all
+
 webvisor.com  # ad scripts. Yandex?  # update: it seems, Yandex  # Yandex - Tracker  # is in Quidsup NoTrack-Blocklist
 !+  appmetrica.webvisor.com
 !+  mobile.webvisor.com
@@ -679,92 +767,5 @@ zen-test.yandex.net
 zen-test.yandex.org
 zen-test.yandex.ru  # from Ru AdList
 zen-test.yandex.uz
-
-    ! yandex.browser hosts
-
-getyabrowser.com
-browser.yandex.ru
-    ! api.browser.yandex.ru  # mobile telemetry
-browser.yandex.net
-    ! crash-reports.browser.yandex.net  # telemetry
-browser.mobile.yandex.net
-    ! voice.browser.mobile.yandex.net
-mobile-browser.mobile.yandex.net
-mobile-browser.tst.mobile.yandex.net
-ya-browser.ru
-    ! from Ru AdList
-    ##a[href*="://ya-browser.ru/r/"]
-ya-distrib.ru
-    ! from Ru AdList, generalized
-    ##a[href*="ya-distrib.ru"]
-
-! "updater"
-browser-updater.yandex.net$important,all  # from Ru AdList
-updater.mobile.yandex.net
-updater.tst.mobile.yandex.net
-    ||yastatic.net/browser-updater/$important,all
-
-# don't block mobile.yandex.net entirely
-addappter.mobile.yandex.net
-addappter-api.mobile.yandex.net
-advisor-retail.mobile.yandex.net
-advisor-widget.mobile.yandex.net
-advisor-widget.tst.mobile.yandex.net
-analytics.mobile.yandex.net$important,all
-analytics-slb.mobile.yandex.net$important,all
-appmetrica.ios.mobile.yandex.net
-banners.mobile.yandex.net$important,all  # is in Adguard
-banners-slb.mobile.yandex.net  # is in Adguard
-banners.tst.mobile.yandex.net
-certificate.mobile.yandex.net
-certificate.tst.mobile.yandex.net
-!certificate-partners.mobile.yandex.net
-demo.mobile.yandex.net
-demo.tst.mobile.yandex.net
-dialer.mobile.yandex.net
-dialer.tst.mobile.yandex.net
-front.mobile.yandex.net
-ios.mobile.yandex.net
-iosproxy.mobile.yandex.net
-iosproxy-partners.mobile.yandex.net
-launcher.mobile.yandex.net
-launcher.tst.mobile.yandex.net
-launcher-cache.mobile.yandex.net
-lbs-slb.mobile.yandex.net
-lockscreen.mobile.yandex.net
-lockscreen.tst.mobile.yandex.net
-metro.mobile.yandex.net  # yandex.metro works ok
-misc.mobile.yandex.net
-mobile-browser.mobile.yandex.net
-mobile-browser.tst.mobile.yandex.net
-news.mobile.yandex.net
-oauth.mobile.yandex.net
-oauth.tst.mobile.yandex.net
-promotions.mobile.yandex.net
-promotions.tst.mobile.yandex.net
-public.yastore-mds.mobile.yandex.net
-registrator.mobile.yandex.net
-registrator.tst.mobile.yandex.net
-search.mobile.yandex.net
-setup-wizard.mobile.yandex.net
-setup-wizard.tst.mobile.yandex.net
-shell-resizer.mobile.yandex.net
-soft.export.yandex.ru  # soft.export.yandex.ru/status.xm  # soft.export.yandex.ru/status.xml?... - Yandex browser statistics  # ||soft.export.yandex.ru/status.xml?stat=dayuse&banerid=  # also net requests
-sovengard.mobile.yandex.net
-staging-startup.mobile.yandex.net
-startup.ios.mobile.yandex.net
-startup.mobile.yandex.net$important,all
-startup-mobile.ap.yandex-net.ru  # app requests  # is in Adguard
-startup.tst.mobile.yandex.net
-startup-partners.ios.mobile.yandex.net
-startup-partners.mobile.yandex.net
-startup-slb.mobile.yandex.net
-tst.mobile.yandex.net
-yastore.mobile.yandex.net
-    ! front.yastore.mobile.yandex.net
-    ! public-storage.yastore.mobile.yandex.net
-    ! public-storage-resized.yastore.mobile.yandex.net
-    ! public-storage-slb.yastore.mobile.yandex.net
-    ! retail.yastore.mobile.yandex.net
 
 !! todo
