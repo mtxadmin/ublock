@@ -659,6 +659,7 @@ adblockdetector/$important
 /ads_*$important,domain=~vk.com
 /ads-  # from EasyList: .com/ads-
     /ads-iframe/*$important  # from ABP
+    /ads-prebid.js$important
 /ads.*$important,~stylesheet
     ! /ads.css$important - hmm, uBlock filters recommends remove it. Ok.
     ! /ads.gif$important
@@ -3619,7 +3620,10 @@ _wtInit.js  # from Fanboy's
 ###scroller
     ! alfaplan.ru###scroller
     ! texterra.ru###scroller
-~intickets.ru##.scroller
+~goodgame.ru,~intickets.ru##.scroller
+    ! Exclusions:
+    ! goodgame.ru - main div
+    !
     ! chatrating.ru##.active.scroller
     ! itsyourip.com##.scroller.fixed-goto-top
 ##.scroll-fix-btn
