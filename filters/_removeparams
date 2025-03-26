@@ -3231,6 +3231,10 @@ $removeparam=igshid,domain=instagram.com|threads.net  # from Adguard
 
 intickets.ru$removeparam=int_enter_url
 
+investing.com$removeparam=activity  # ref
+investing.com$removeparam=rdata  # ref
+!investing.com$removeparam=type  # ref  # don't, break
+
 jasonsavard.com$removeparam=cUrl  # from Adguard: jasonsavard.com$removeparam=/cUrl|ref/
 
 jiji.com$removeparam=g  # from Adguard
@@ -4218,10 +4222,10 @@ $removeparam=country_code,domain=dzen.*|ya.ru|yandex.*
     !zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
     ! Update: now dzen.ru and yandex.*
         ! ?country_code=$document,removeparam=|,domain=zen.yandex.*  # from Ru AdList
-$removeparam=cpc,domain=market.yandex.*  # is in Ru AdList, modified
+$removeparam=cpc,domain=market.yandex.*  # some very long id  # is in Ru AdList, modified
     ! ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*  # from Ru AdList
 ||yandex.*/search/$removeparam=did  # from Adguard
-$removeparam=do-waremd5,domain=market.yandex.*
+$removeparam=do-waremd5,domain=market.yandex.*  # some id
 $removeparam=feed_exp,domain=dzen.*|ya.ru|yandex.*
 dzen.ru$removeparam=force_common_feed  # from Ru AdList
 $removeparam=from,domain=dzen.*  # in general rule up there there is an exclusion. Seems strange, todo
@@ -4269,7 +4273,7 @@ $removeparam=search_source,domain=ya.ru|yandex.*  # from Ru AdList: ||yandex.*/s
 $removeparam=secdata,domain=dzen.*|ya.ru|yandex.*
 ya.ru$removeparam=show_experiment  # suspicious param in suggest
 ||disk.yandex.$removeparam=sk  # from Adguard
-$removeparam=sku,domain=market.yandex.*
+$removeparam=sku,domain=market.yandex.*  # some id (not sku, it's in the main url)
 $removeparam=source-serpid,domain=ya.ru|yandex.*  # from Adguard
     ! ||yandex.*/images/$removeparam=source-serpid  # from Adguard
 ya.ru$removeparam=srv  # suspicious param in suggest
@@ -4282,6 +4286,7 @@ ya.ru,yandex.*$removeparam=suggest_reqid  # suspicious param in suggest
     ! ||yandex.*/search/$removeparam=suggest_reqid  # is in Adguard
 !market.yandex.*$removeparam=text - don't, it blocks search on the market
 ||docs.yandex.$removeparam=uid  # from Adguard
+market.yandex.ru$removeparam=uniqueId  # some id
 ||market.yandex.$removeparam=vid  # from Adguard
 ya.ru$removeparam=wiz  # suspicious param in suggest
 ya.ru$removeparam=yu  # some id
