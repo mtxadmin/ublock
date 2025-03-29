@@ -243,6 +243,7 @@ ozon.*##[data-widget="premiumBanner"]
 !
 !ozon.*##[data-widget="skuGrid"] - too broad, there are useful recommendations there
 ozon.*##div[data-widget="skuGrid"]:has-text(/Вы покупали|Вы смотрели/)
+ozon.*##div[data-widget-disallow] div:has-text(/Вы (смотрели|покупали)/)
 ozon.*##div[data-widget="skuGrid"]:has-text(Рекомендуем):matches-path(/cart)
 !ozon.*##:not([data-widget="modalLayout"]) > * > [data-widget="skuGrid"] - Ru AdList rule, но тоже слишком широкое. Активное на 2024-03
 ! Не, там неплохие рекомендации. Да, там заметно есть навязчивая реклама, но на удивление вменяемо (хотя несколько позиций достали, потом уберу их как делал с Али).
@@ -543,9 +544,10 @@ ozon.*##span:has-text(Условия доставки из-за рубежа):st
 ! многие продавцы пишут полную фигню, тупую, однообразную и рекламную, в качестве ответов на отзывы. Задолбало.
 ozon.*##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в ответ/)))
 ! new design
-ozon.*##div:has(>div>span:has-text(/0 комментариев|1 комментарий/))
+!ozon.*##div:has(>div>span:has-text(/0 комментариев|1 комментарий/))
 ! new design again
-ozon.*##button:has(>div:has-text(/0 комментариев|1 комментарий/))
+!ozon.*##button:has(>div:has-text(/0 комментариев|1 комментарий/))
+! в конце концов, эту хрень скрыли по клику. Отлично.
 !
 ozon.*##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/)):not(div[reviewuuid])
 ! and also. Old design.
