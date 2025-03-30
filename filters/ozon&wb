@@ -245,6 +245,7 @@ ozon.*##[data-widget="premiumBanner"]
 !
 !ozon.*##[data-widget="skuGrid"] - too broad, there are useful recommendations there
 ozon.*##div[data-widget="skuGrid"]:has-text(/Вы покупали|Вы смотрели/)
+ozon.*##div[data-widget="skuLine"]:has(span:has-text(Вы смотрели))
 ozon.*##div[data-widget-disallow] div:has-text(/Вы (смотрели|покупали)/)
 ozon.*##div[data-widget="skuGrid"]:has-text(Рекомендуем):matches-path(/cart)
 !ozon.*##:not([data-widget="modalLayout"]) > * > [data-widget="skuGrid"] - Ru AdList rule, но тоже слишком широкое. Активное на 2024-03
