@@ -179,6 +179,12 @@
 
 1samtexnik.ru###toc_container
 
+1st-c.ru$inline-script  # site blocks copypaste
+1st-c.ru$script  # site blocks copypaste
+1st-c.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
+1st-c.ru##.jptop
+1st-c.ru###masthead
+
 1tvch.ru##.slider-top
 
 220.guru##.widgettitle
@@ -2393,7 +2399,7 @@ author.today##.layout-fixed:style(margin-top:0px !important)
 author.today##section.content:style(margin-top:0px !important)
 author.today##.reader-header:style(position:static !important; border-bottom:none !important; border-left:none !important)
 
-||auto.ru/-/ajax/$~xhr  # is in EasyPrivacy now
+||auto.ru/-/ajax/$~xhr  # auto.ru/-/ajax/mag/events_log/  # is in EasyPrivacy now
 ||auto.ru/-/ajax/desktop/events_log/
 ||auto.ru/-/ajax/desktop/getSearchlineHistory/  # post xhrs
 !||auto.ru/-/ajax/mag/events_log/  # EasyPrivacy rule
@@ -2416,6 +2422,9 @@ auto.ru##.FullScreenSplashCarBanner
 ! auth banners
 auto.ru##.Modal:not(:matches-path(auth.auto.ru))
 auto.ru##[class*=IndexBackButton_sticky]
+! totop
+auto.ru##[class^=UpButton]
+auto.ru##.up-button
     ! banners and promos
 auto.ru##.FilterBannerCreditSber
 auto.ru##.CardBenefits
@@ -2462,7 +2471,6 @@ auto.ru##.Share
     ! top
 auto.ru##.Header2Placeholder
 auto.ru##[class^=CardStickyBar]
-auto.ru##.up-button
     ! sidebar
 auto.ru##.ScrollableSidebar:style(position:static !important)
     ! other
@@ -3650,6 +3658,8 @@ bigdatacloud.com##.header-offset
 bigdatacloud.com##.active-sticky:style(position:static !important)
 bigdatacloud.com##.header-scrolled-contents:style(position:static !important)
 
+bigdauto.ru##.aitc
+
 big-forum.ru###ipsLayout_header:style(background:none !important)
 
 bigin.com##.float-btn
@@ -4033,6 +4043,8 @@ bluecamroo.com##.tryFeature
 bluecatreports.com##.has-background-primary.section
 
 bmwclub.ru##.uix_navigationLogoText
+
+||bmwguide.ru/*/bmw-email-background.png
 
 bn.ru##.bn-popup-gazeta__detail
 bn.ru##.right-sidebar-banners
@@ -7104,6 +7116,7 @@ drive2.ru##.c-infoblock:has-text(Зарегистрироваться)
 drive2.ru##.c-bavcard
 ! banner after post
 drive2.ru##div:matches-css(min-height:/5\d\d/)
+drive2.ru##.x-text:has-text(Войдите или зарегистрируйтесь)
     ! top
 drive2.com,drive2.ru##.c-index-title
 drive2.com,drive2.ru##.l-header:style(position:static !important)
@@ -7502,6 +7515,8 @@ e1.ru##button[data-test="report-news-button"] + div[class]
 
 ! popup
 eapteka.ru##.headerCity-root-bubble--adaptive
+
+earbudsarena.com##.entry-header > div:has-text(affiliate)
 
 ! ex androidforums.com
 earlybird.club##.noticeContent
@@ -14156,6 +14171,7 @@ koolinar.ru##.b-footer__subscribe
 
 koreanautoreview.com$inline-script  # site blocks copypaste
 koreanautoreview.com##+js(set-attr, img, src, [data-lazy-src])
+koreanautoreview.com##.add
 
 ||koronapay.com/*/zk-logotype-clr.svg
 koronapay.com##.menu__logo
@@ -16040,6 +16056,8 @@ manualslib.com##.headerwr
 manualslib.com##.google-play-app
 ! is in Adguard
 manualslib.com##p.abp_adv_s-title
+manualslib.com##.comment-jumbo
+manualslib.com##.tagsbg
 
 manualstech.com##.header
 
@@ -23094,6 +23112,8 @@ rusprofile.ru##.illustrate-hero
 rusprofile.ru##p:has-text(бизнес-решения)
     ! other
 
+rusrappers.ru$inline-script  # site blocks copypaste
+rusrappers.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
 rusrappers.ru##.site-footer
 rusrappers.ru##.menu
 
@@ -24130,6 +24150,10 @@ scalyr.com##.list_container:style(position:static !important)
 
 scat.kz##.spark-footer
 scat.kz##div[data-component-id=SabreDxContainerFooter]
+
+! scee.ru - former lishou.ru
+scee.ru$inline-script  # site blocks copypaste
+scee.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
 
 scfh.ru##.menu:style(position:static !important)
 
@@ -29209,6 +29233,8 @@ vbalashihe.ru##.Prokrutra
 ||v-banyu.ru/wp-content/themes/Newspaper/js/tagdiv_theme.js
 v-banyu.ru##img:style(opacity:1 !important)
 
+vbr.ru##[class^=BrandingTop_]
+vbr.ru##[class^=Logo_wrapper]
 vbr.ru##.footer-links-apps
 
 ||vc.ru/hit  # is in Adguard
