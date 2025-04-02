@@ -2380,9 +2380,10 @@ _tizers.  # from Ru AdList
     ! travel.ru##.b-footer-mobile-app-promo-icon
     ! wildberries.ru##.j-promo-carousel-wrapper
 ##[id*="promotion"]:not(html):not(body):not(article)
-~alibaba.com,~aliexpress.com,~aliexpress.ru,~chess.com,~mwave.com.au##[class*="promotion"]:not(html):not(body):not(article)
+~alibaba.com,~aliexpress.com,~aliexpress.ru,~chess.com,~mwave.com.au,~psbank.ru##[class*="promotion"]:not(html):not(body):not(article)
     ! Exclusions:
-    ! alibaba.com, aliexpress.com: .promotion is a regular price, not a promo
+    ! alibaba.com, aliexpress.com - .promotion is a regular price, not a promo
+    ! psbank.ru - not promos in common sense
     !
     ! ##.close-promotion
     ! ##.promotion-box
