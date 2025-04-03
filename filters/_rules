@@ -2605,13 +2605,14 @@ _analytics.js?  # from EasyPrivacy
     ||hh.ru/analytics^  # is in Adguard
     ||career.ru/analytics^
     ||rabota.by/analytics?  # is in EasyPrivacy
-/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~globalvoices.org|~mts-link.ru|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~webinar.ru|~zoho.com|~zoho.eu
+/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~gitlab.com|~globalvoices.org|~mts-link.ru|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~webinar.ru|~zoho.com|~zoho.eu
     ! Exclusions:
     ! alfabank - финансовая аналитика по счету
     ! duckduckgo - it blocks any search about analytics. Other search systems are ok.
     ! github - granular rules:
         ! ||githubassets.com/assets/vendors-node_modules_github_hydro-analytics  # analytics  # this one must be unblocked - some functionality is broken (labels and editing)
         ! ||githubassets.com/assets/ui_packages_analytics-provider_analytics-provider_ts-app_assets_modules_react-code-view_pages  # this one must be unblocked
+    ! gitlab.com - seems non-tracking https://gitlab.com/assets/webpack/commons-pages.groups.analytics.dashboards-pages.groups.harbor.repositories-pages.groups.iteration...chunk.js
     ! mts-link.ru, webinar.ru - rus webinars, doesn't work without
     ! ozon.ru: 2023-10 - блокировка https://cdn2.ozone.ru/assets/*/autosplit-common-common_video-player_mixins_analytics_ts.js теперь приводит к отказу карусели в продукте.
     ! sberbank & domclick:
