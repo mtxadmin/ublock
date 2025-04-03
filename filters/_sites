@@ -8847,7 +8847,11 @@ fermer.ru##.navbar-fixed-top:style(position:static !important)
 fermer.ru##.navbar-default.navbar-fixed-top.navbar:style(position:static !important)
 fermer.ru##.navbar-collapse:style(position:static !important)
 
+||ferra.ru/atlas/metrics
+||ferra.ru/fenwick  # suspicious xhrs
 ferra.ru##.text.commercial-item
+ferra.ru##div:has(>.text:has-text(cookies):has(a))
+ferra.ru##._smallerHeader
 
 fetter1901.ru##.mobile-phone
 fetter1901.ru##.page_section_promo
@@ -10156,8 +10160,23 @@ techno-tim.github.io##+js(rc,blur)
 !
 xainey.github.io##.panel-cover--overlay
 
-gitlab.com##.content-wrapper:style(margin-top:0px !important; padding-bottom:0px !important)
+gitlab.com##+js(rc, hero-scroll-gallery__container--animate-hero)
+||gitlab.com/assets/webpack/analytics.*.js  # Adguard rule
+    ! banners and promos
+gitlab.com##.banner
+gitlab.com##.auto-devops-callout
+! non-removable
+gitlab.com##.gl-alert:has-text(push or pull repositories using SSH)
+gitlab.com##.project-page-sidebar-block:has-text(Invite your team)
+    ! top
 gitlab.com##.issue-sticky-header
+gitlab.com##.top-bar-container
+gitlab.com##.brand-logo
+gitlab.com##.content-wrapper:style(padding-top:0px !important; margin-top:0px !important; padding-bottom:0px !important)
+    ! left sidebar
+gitlab.com##.super-sidebar,.global-nav,.sidebar-toggle:style(position:absolute !important)
+gitlab.com##.super-sidebar,.global-nav,.sidebar-toggle:style(bottom:auto !important)
+    ! other
 
 ||giveawayoftheday.com/ticker/  # from Adguard
 giveawayoftheday.com##.lengthy_giveaway
