@@ -95,7 +95,7 @@ bat.r.msn.com  # Microsoft - Tracker  # from Quidsup NoTrack-Blocklist
 ||bing.com/qbox  # https://brave.com/popular-browsers-first-run/
 
 bingads.microsoft.com  # Microsoft - Advertising  # is in Quidsup NoTrack-Blocklist
-!bingads.trafficmanager.net  # azure.bingads.trafficmanager.net  # moved to marketing
+!bingads.trafficmanager.net  # azure.bingads.trafficmanager.net  # see here in another block
 bingads.glbdns2.microsoft.com
     ! resources.bingads.glbdns2.microsoft.com
     ! si.bingads.glbdns2.microsoft.com
@@ -169,6 +169,7 @@ edge.skype.com  # https://brave.com/popular-browsers-first-run/
 edgeoffer.microsoft.com  # from ShadowWhisperer's Ads  # 2025
 
 ecs.office.com  # net requests  # https://github.com/parseword/nolovia/issues/7
+ecs.office.trafficmanager.net
 engagement.office.com  # app requests
 
 events.data.microsoft.com  # https://www.bleepingcomputer.com/news/microsoft/windows-10-hosts-file-blocking-telemetry-is-now-flagged-as-a-risk/
@@ -179,6 +180,7 @@ events.data.msn.com
     ! browser.events.data.msn.com
 events.data.trafficmanager.net
     ! browser.events.data.trafficmanager.net  # from ShadowWhisperer's Tracking
+    ! eu.events.data.trafficmanager.net
 
 !fe2.update.microsoft.com.akadns.net
 
@@ -374,6 +376,7 @@ toolbar-prod-ch1.search.live.com
 ! t-msedge.net - next step in redirection, see #87
 !ams1.next.a.prd.aadg.trafficmanager.net  # ad scripts
 analytics-listener.trafficmanager.net  # from Adaway
+applicationinsights.trafficmanager.net
 bingads.trafficmanager.net
 bingshoppingtool-t2app-prod.trafficmanager.net  # from ShadowWhisperer's Tracking
 collector-main.trafficmanager.net  # from Adaway
