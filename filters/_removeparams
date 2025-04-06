@@ -753,13 +753,14 @@ $removeparam=fref  # from Ru AdList
 
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
-$removeparam=from,domain=~yandex.*|~account.mail.ru|~alfabank.ru|~auth.mail.ru|~e.mail.ru|~nextdns.io|~sberbank.ru|~tradingview.com
+$removeparam=from,domain=~account.mail.ru|~auth.mail.ru|~alfabank.ru|~e.mail.ru|~nextdns.io|~sberbank.ru|~tradingview.com|~uds.app|~yandex.*
     ! Exceptions:
     ! auth.mail.ru exception is from Ru AdList. Don't know, but ok. Update: removing it prevent useful popups, so it's really ok.
     ! account.mail.ru - v2 of it (auth.mail.ru)
     ! alfabank.ru - from is "date from"
     ! nextdns.io - #53: dashboard (https://api.nextdns.io/profiles/)  # now is in DandelionSprout's URLShortener
     ! tradingview.com - graphs: !wss://data.tradingview.com/socket.io/websocket?from=symbols%2FBTCUSD%2F&date=
+    ! uds.app - it sets from to itself and doesn't work without it
     ! yandex, sberbank.ru - don't remember exactly, but they are definitely needed
     !
     /?from=yanews$removeparam=from  # from Ru AdList
@@ -3337,6 +3338,9 @@ linkedin.com$removeparam=updateEntityUrn  # from DandelionSprout's URLShortener
 linksynergy.com$removeparam=u1  # from Adguard
 linksynergy.com$removeparam=u2  # from Adguard
 linksynergy.com$removeparam=id
+
+! already blocked
+litnet.com$removeparam=_lnref  # ref
 
 ! already blocked
 litres.ru$removeparam=lfrom  # ref
