@@ -280,6 +280,8 @@ ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/smennye-kassety-gille
 ||ozone.ru/s3/multimedia-1-2/wc250/6931309430.jpg
 ! И еще сберовские телевизоры начали навяливать без повода
 ozon.ru##div:has(>a[href^="/product/sber-"])
+! Пакеты эти с помидорами на фотке ну вечно лезут постоянно
+ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/pakety-s-rezinkoy-dlya-hraneniya-produktov"])
 !
 ozon.*##[data-widget="skuGridSimple"]:has-text(Лучшие предложения)
 ozon.*##[data-widget="skuShelfGoods"]
@@ -300,7 +302,7 @@ ozon.*##div[data-widget="skuScroll"]:has(span:has-text(Покупают вмес
 ozon.*##[data-widget=islandSeparator] + div[data-widget=container]:has(div[data-widget="skuScroll"])
 ! ads in the mobile menu
 ozon.*##[data-widget=islandSeparator] ~ div[data-widget=objectGrid1]
-ozon.*##[data-widget="island"]:not(:matches-path(/my/order)):not(:matches-path(/my/fav))
+ozon.*##[data-widget="island"]:not(:matches-path(/my/order)):not(:matches-path(/my/fav)):not(:matches-path(/seller))
 ozon.*##[data-widget="container"]:has-text(Все товары Хот Сейл)
 ozon.*##button:has-text(Premium)
 ozon.*##.skeleton-banner
