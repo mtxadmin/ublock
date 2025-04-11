@@ -59,6 +59,9 @@
     ! other
 101hotels.ru##.ribbon-small
 
+apteka.103.by##div:has-text(cookie)
+apteka.103.by##div:matches-css(position:fixed)
+
 10ballov.ru##.announce
 10ballov.ru##.need-help
 
@@ -2113,6 +2116,8 @@ armma.ru##.person
 ! popup
 armorlubricants.com###form-in-out
 
+armory24.ru##.prmn-cmngr__confirm
+
 armourbook.com##.himage
 armourbook.com##.footbox
 
@@ -2762,6 +2767,8 @@ aviasales.ru##label[data-test-id="checkbox"]:has-text(/в\s*новой\s*вкл�
 
 avidreaders.ru##.footer
 
+a-vikup.ru$inline-script  # site blocks copypaste
+
 ! Exclusion
 !||avito.ru/*/build/sentry
 !||avito.st/*/build/sentry
@@ -2989,6 +2996,7 @@ ayzdorov.ru##.topbutton
 ayzdorov.ru##.head_sprite
 ayzdorov.ru##.new-call
 ayzdorov.ru##.new-number
+ayzdorov.ru##.obsydit_usocial
 
 ||azimut.su/azimut_graphics/ads$image
 
@@ -6717,6 +6725,8 @@ dns-shop.ru,dns-shop.kz##.action-swiper
 dns-shop.ru,dns-shop.kz##.info-banner
 dns-shop.ru,dns-shop.kz##.digital-gift-card
 dns-shop.ru,dns-shop.kz##.product-card__accessories
+dns-shop.ru,dns-shop.kz##.product-card__buy-together
+dns-shop.ru,dns-shop.kz###soft-bundle-block
     ! stickers
 dns-shop.ru,dns-shop.kz##.additional-vobler
 dns-shop.ru,dns-shop.kz##.product-info__voblers
@@ -8857,6 +8867,10 @@ fermer.ru##.navbar-fixed-top:style(position:static !important)
 fermer.ru##.navbar-default.navbar-fixed-top.navbar:style(position:static !important)
 fermer.ru##.navbar-collapse:style(position:static !important)
 
+||fermilon.ru/wp-content/themes/fermilon/images/site-question-to-expert.jpg
+fermilon.ru##.nav-header
+fermilon.ru##.bar-scroll__sticky
+
 ||ferra.ru/atlas/metrics
 ||ferra.ru/fenwick  # suspicious xhrs
 ferra.ru##.text.commercial-item
@@ -9230,6 +9244,9 @@ food.ru##[class^=header_sticky]:style(position:static !important)
 food.ru###rate-or-share
 
 foodandhealth.ru###ag_warning_header
+
+! top sticky bar
+foodandscience.org##.banner--stick
 
 foodclick.kz##.modx_evo_inner_modal
 foodclick.kz##.seoitkod_content
@@ -9770,6 +9787,9 @@ garsingshop.ru##.soc-container__title
 garsingshop.ru##.header-bottom__logo
 
 garvis.ca##.header
+
+||gastrocure.net/images/zapis.jpg
+gastrocure.net##.customzapis-na-priem
 
     ! banners and promos
 gastronom.ru##[class^=_headerAd_]
@@ -10837,6 +10857,7 @@ guns.club##.market-slider
 ! recheck
 !forum.guns.ru##.altcolor1 > tbody > tr
 forum.guns.ru##.hidehban
+forum.guns.ru###hidehban
 ! signatures
 forum.guns.ru##.wbr > p:has-text(----------)
 forum.guns.ru##.hidevban
@@ -13649,6 +13670,8 @@ kanzoboz.ru##.important-text-slider
 kanzoboz.ru##.firm_left_logo
 kanzoboz.ru##.birthday_block
 
+kapilarya.com##.yt-banner
+
 kapos.hu##.newsScroller
 
 ||kapterka.su/*/kap_pic.jpg
@@ -16227,6 +16250,8 @@ mate.com.ua$inline-script  # site blocks copypaste
 
 mathworks.com###country-unselected
 
+matiz-daewoo.ru##.shapo
+
 matovsky.com##.navbar
 matovsky.com##.container:style(padding-top:0px !important; padding-bottom:0px !important)
 
@@ -16384,6 +16409,10 @@ med-expres.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
 ||medi.ru/imagen/bnr_2018_to_register.jpg
 ||medi.ru/imagen/lvpic1.jpg
 medi.ru##.warn1
+! banner
+medi.ru##.cat_tsr
+! top
+medi.ru##.fx_margin
 
 media73.ru###main_weather
 media73.ru##.header-fix:style(position:absolute !important)
@@ -18228,6 +18257,8 @@ ndv.ru##.main-header__complex-mark
 neboleem.net##.knopki
 neboleem.net##.contentvstavka
 neboleem.net###random
+! inline related
+neboleem.net##.chitat
 
 ! from Fanboy's
 nededik.com##.kosehbr
@@ -19008,6 +19039,10 @@ objectiv.tv##.b-text em
 objectiv.tv##.echo_seo_text
 
 ||obninsk.name/*/0_banners/
+
+oboronashop.ru##.prmn-cmngr__confirm
+! oneclick
+oboronashop.ru##.product_quickadd
 
 ||oborontech.ru/upload/redsign_devfunc_nophoto/$image
 oborontech.ru##.addbodypadding
@@ -23257,10 +23292,12 @@ pornolab.net##.post-b:has-text(/СПАСИБО/)
 pornolab.net##.post-color-text:has-text(/Спасибо|спасибо/)
 pornolab.net###page_footer > .bCenter
 pornolab.net##div.post-align:has-text(Релизера можно поддержать)
+pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ! some annoying pictures
 ||fastpic.org/big/2009/1216/5e/8a4271c44c907f6ff66984a1951b865e.$image
 ||fastpic.org/big/2010/0102/d7/178fc81dd8245c71a8fbe22bd52d0bd7.$image
 ||fastpic.org/big/2010/0301/ac/da93ac84a3a8cd5a5fbf94fd900182ac.$image
+||fastpic.org/big/2021/0108/a8/b450a2112b933ce2fb2e8b08669036a8.$image
 ||fastpic.org/big/2011/0703/8d/4360c534ee55ab841b608e9c1ecab68d.$image
 ||fastpic.org/big/2011/0916/dc/bfddc1cf22892bfdb7b64e16d28776dc.$image
 ||fastpic.org/big/2011/1007/a7/e45328eec7a346c9f5e0904bd70469a7.$image
@@ -26661,6 +26698,8 @@ techcrunch.com##.sidebar
 techcult.com##.title-area
 
 techdirectarchive.com##.njt-nofi-container
+! ads
+techdirectarchive.com##.code-block
 
 techdiving.pro###header-inner > [href="https://www.techdiving.pro/"]
 
@@ -27677,8 +27716,8 @@ timetrial.ru##.noise-bg
     ! other
 timetrial.ru##.footer__pay
 
+||timeweb.ru/parking/$3p
 timeweb.cloud##.video-player
-
 timeweb.com###header
 timeweb.com##.ia-splitter:style(padding-top:0px !important)
 
@@ -27712,7 +27751,9 @@ tinkoff.ru##section[id="rec-team"]
 tinkoff.ru##.recommender-showcase
 tinkoff.ru##.HeaderCTA_cta
 tinkoff.ru##.Informer_informer
-journal.tinkoff.ru##[class^=studentBadge]
+t-j.ru##[class^=_studentBadge_]
+    ! journal.tinkoff.ru##[class^=studentBadge]
+    ! journal.tinkoff.ru##[class^=_studentBadge_]
 t-j.ru##[class^=_wrapper_]:has-text(/телеграм|подписывайтесь/i)
     ! backgrounds
 tinkoff.ru##.article-header__wallpaper:style(background-image:none !important)
@@ -27720,7 +27761,6 @@ tinkoff.ru##.article-header:style(color:#000 !important)
 tinkoff.ru##.article-header:style(background-color:initial !important)
     ! avatars and promos on it
 ||tinkoffjournal.ru/fama/tj_prod/static/default_avatars/$image
-journal.tinkoff.ru##[class^=_studentBadge_]
 t-j.ru##[class^=_commentAvatarIcon]
 t-j.ru##[class^=_commentAvatarIcon]
     ! other
@@ -27729,12 +27769,11 @@ tinkoff.ru##div:matches-css(height:110px):has-text(/^$/)
 ||tinkoffjournal.ru/incoming_minicover*.gif
 ||tinkoffjournal.ru/*/tinkoff-web-tracker.js
 t-j.ru##[class^=chevronDownBox]
-
 ||tinkoff.ru/system/images/app-image
 tinkoff.ru##.app__wrapper
-journal.tinkoff.ru##[class^=_articleRef_]
-
-||timeweb.ru/parking/$3p
+! inline related
+t-j.ru##[class^=_articleRef_]
+    ! journal.tinkoff.ru##[class^=_articleRef_]
 
 tion.ru##.tes-loader__overlay
 
@@ -29558,6 +29597,9 @@ victel63.ru##.widget-view-fixed
 
 victoriametrics.com##.customer_logo
 
+! banner
+vidal.ru##.avs-box
+
 videocardbenchmark.net###sidebar
 videocardbenchmark.net###blocker
 
@@ -30444,6 +30486,9 @@ washingtontimes.com##strong:has-text(Click here)
 
 watchmusic.ru##.Notice
 
+watchuseek.com###header-banner
+watchuseek.com##.trust-description.show-more
+
 water-service.com.ua##.art-header
 
 waxashop.ru$inline-script  # site blocks copypaste
@@ -30807,6 +30852,8 @@ windowscentral.com##.sticky-nav:style(position:static !important)
     ! other
 !inline
 windowscentral.com##.hawk-nest
+! inline related
+windowscentral.com##aside
 
 windowslatest.com##.block-title > span:has-text(Advertisement)
 
@@ -31258,6 +31305,8 @@ xda-developers.com##+js(abort-on-property-write.js, adonisHash)
 ! inline related
 xda-developers.com##.article.article-card
 xda-developers.com##.w-sharing-bottom
+! reflinks to amazon
+xda-developers.com##.tag
 
     ! popups
 xdaforums.com##.uix_welcomeSection
