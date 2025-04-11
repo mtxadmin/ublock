@@ -145,7 +145,7 @@ ya.ru##[class^=NavBarLogo]
 ya.ru##.HeaderDesktopLogo
 ya.ru##.HeaderDesktop-Logo
 ya.ru,yandex.*##noindex:has(a[href="//ya.ru/"])
-ya.ru,yandex.*##div:has(>a[href="//ya.ru"])
+!ya.ru,yandex.*##div:has(>a[href="//ya.ru"]) - blocks search form, see #100. form > div > a href="//ya.ru" + div [HeaderForm-InputContainer]  - и вот этот последний вот блокируется
 
     ! top
 go.yandex##.lc-header-lpc__fixed-wrapper:style(position:static !important)
@@ -451,6 +451,7 @@ market.yandex.*##noindex:has(>svg)
 
 ya.ru,yandex.*##.NavBarLogo
 ya.ru,yandex.*##[class^=PSHeaderLogo]
+ya.ru,yandex.*##.HeaderLogo
 ya.ru,yandex.*##.PSHeaderLogo360
 ya.ru,yandex.*##.PSHeaderLogo360-Ya
 ya.ru,yandex.*##.FooterApps__link
