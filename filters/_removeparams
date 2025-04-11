@@ -4243,6 +4243,7 @@ ya.ru$removeparam=issue_tld
 ! lang
     /story/*?lang=$document,removeparam=|,domain=dzen.*|ya.ru|yandex.*  # from Ru AdList
 ya.ru,yandex.*$removeparam=lr  # is in NeatURL  # some id
+    ya.ru,yandex.*##input[name=lr]:remove()
 ya.ru,yandex.*$removeparam=lrredircnt  # from NeatURL
 ya.ru$removeparam=maybe_ads  # suspicious param in suggest
 ||market.yandex.$removeparam=mclid  # from Adguard
