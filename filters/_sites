@@ -2894,6 +2894,9 @@ avtoradio.ru##.rss
 ||avtoschool.ru/images/foot-car-2.png
 ||avtoschool.ru/images/glavriba/$image
 
+! whatsapp popup
+avtoschoolcao.ru##.wats-but-of-main
+
 avtoschoolzel.ru###rt-extension
 
 avtoshark.com$inline-script  # site blocks copypaste
@@ -5355,6 +5358,11 @@ clickpay.com##.scroll-to-fixed-fixed:style(position:static !important)
 
 clickup.com##[class^=CuConsentBanner]
 
+clientbase.ru##.fixed_banner
+clientbase.ru##.sending-mail
+clientbase.ru###formAcc
+clientbase.ru##.head-slider-text__ofert
+
 ||clients-cdnnow.ru/*logo*.png
 
 climateexchangeplc.com##.index-post-thumbnail
@@ -7051,9 +7059,14 @@ door.ru##.rasprodazha_dverey
 
 doorchange.ru##.footer
 
+dosaaf.ru##.error_fly
+
 ||dosaaf-odincovo.ru/images/financepress/$image
 ||dosaaf-odincovo.ru/images/Akcija/$image
 dosaaf-odincovo.ru##.home-intro
+
+||dosaaf-zao.ru/images/otziv$image
+dosaaf-zao.ru###sp-slider
 
 dostupnaya-strana.ru##.toolbar-bottom
 dostupnaya-strana.ru##[src*="userfiles/баннеры/"]
@@ -7331,6 +7344,8 @@ dtf.ru##.bar--top.bar:style(position:static !important)
 dtf.ru##.content-footer--floating
 dtf.ru##.aside:style(position:static !important)
 dtf.ru##.sidebar:style(max-height:initial !important)
+    ! banners and promos
+dtf.ru##a[href^="/plus/"]
     ! other
 dtf.ru##.live
 dtf.ru##.subsite_card_short_with_content
@@ -7345,6 +7360,7 @@ dtf.ru##.block-quote__line
 ! redirects. dtf.ru && vc.ru
 dtf.ru##[href^="https://api.dtf.ru/"]
 dtf.ru##.sidebar-item:has-text(/Реклама|Приложения/)
+dtf.ru##.author__avatar-sticker:style(transform:none !important)
 
     ! banners and promos
 dtln.ru##.tm-bnr
@@ -20336,10 +20352,17 @@ phoenixnap.com##.ct-shortcode
 ! empty toc
 phoenixnap.com##.ftwp-wrap
 
-||phonearena.com/_track.php  # from EasyPrivacy
+||phonearena.com/_track.php  # is in EasyPrivacy
 ||phonearena.com/js/ops/taina.js  # from EasyList
     ! ||s-cdn.phonearena.com/js/ops/taina.js  # from Adguard
 ! @@||phonearena.com/?b=$~third-party  # from Fanboy's, Ru AdList
+! fake notifications
+phonearena.com##.bg-magenta
+phonearena.com##.promo-banner
+phonearena.com##.regwall-benefits-banner
+! long "about author" block
+phonearena.com##.author-byline-body
+phonearena.com##.preloader
 
 phonedady.com##.selector-wrapper
 
@@ -21593,6 +21616,10 @@ prostomob.com##.td-post-content i:has-text(подпис)
 
 prostor2000.ru##.moduletable_warning-mess
 
+prostoy.ru##.registration-form
+prostoy.ru###kdn_call_consultant
+prostoy.ru##.bgcrm-center
+
 prostozamok.ru###sliderFrame
 
 prosud24.ru##.number-telefons
@@ -22246,6 +22273,8 @@ realadmin.ru###contactable
 real-avto.com##.order-form
 real-avto.com##.fancybox-container
     ! other
+real-avto.com##pf-widget
+real-avto.com##.lucky-hours-con
 
 realitylovers.com##.logo_img
 realitylovers.com##+js(remove-attr.js, class, body.disclaimerOpen)
@@ -27717,12 +27746,15 @@ timetrial.ru##.noise-bg
 timetrial.ru##.footer__pay
 
 ||timeweb.ru/parking/$3p
+||timeweb.ru/parking/img/parking-banner
+timeweb.ru##.parking-banner__link
 timeweb.cloud##.video-player
 timeweb.com###header
 timeweb.com##.ia-splitter:style(padding-top:0px !important)
 
 ||cdn-tinkoff.ru/twa/
 ||tinkoff.ru/sl/  # ref links
+||tinkoffjournal.ru/*/mercury-tracking-event.js  # 2025
 !
 ! site blocks copypaste
 secrets.tinkoff.ru$inline-script
@@ -27755,6 +27787,7 @@ t-j.ru##[class^=_studentBadge_]
     ! journal.tinkoff.ru##[class^=studentBadge]
     ! journal.tinkoff.ru##[class^=_studentBadge_]
 t-j.ru##[class^=_wrapper_]:has-text(/телеграм|подписывайтесь/i)
+t-j.ru##[class^=_banner_]
     ! backgrounds
 tinkoff.ru##.article-header__wallpaper:style(background-image:none !important)
 tinkoff.ru##.article-header:style(color:#000 !important)
