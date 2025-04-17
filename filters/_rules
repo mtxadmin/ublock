@@ -1197,7 +1197,10 @@ _banner_rotator.php  # from Adguard
     ! ||tulapressa.ru/partner/  # from Ru AdList
     ! ||ukrbuy.com/partner/  # from Ru AdList
     ! ||volgo-mame.ru/partner/  # from Ru AdList
-/partners/*
+/partners/*$domain=~psbank.ru
+    ! Exclusions:
+    ! psbank.ru - cashback promos
+    !
     ! /uploads/partners/*.swf  # from Adguard
     ! ||allbasketball.org/uploads/partners/  # from Adguard
     ! ||anti-malware.ru/images/partners/  # from Adguard
@@ -2364,11 +2367,12 @@ _tizers.  # from Ru AdList
     ##.promo_top
     ##.promo_widget
 ##[id*="-promo"]:not(html):not(body):not(article)
-~5turistov.ru,~aliexpress.com,~aliexpress.ru,~funpay.com,~e.mail.ru,~stepik.org,~yoomoney.ru##[class*="-promo"]:not(html):not(body):not(article):not(.node-promoted):not(.content):not(.content__header)
+~5turistov.ru,~aliexpress.com,~aliexpress.ru,~funpay.com,~e.mail.ru,~psbank.ru,~stepik.org,~yoomoney.ru##[class*="-promo"]:not(html):not(body):not(article):not(.node-promoted):not(.content):not(.content__header)
     ! Exclusions:
     ! 5turistov.ru - main: "mainContainer-inner promo-container container--promo js-promo-container js-main-container"
     ! cbsnews.com - "content__header  content__header--no-promo", but it has "yes-promos". Added ".content__header"
     ! funpay.com - main: "content-promo content-promo-index"
+    ! psbank.ru - cashback promos
     !
     ! delikateska.ru##.header-promo-container
     ! popup
