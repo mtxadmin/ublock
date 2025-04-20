@@ -54,7 +54,7 @@ megafonpro.ru
 ! end of megafonpro.ru
 ! Мегафон так делает. При переходе на заблокированный сайт редиректит на eromir.pro
 ! https://habr.com/ru/post/356258/#comment_11144264
-eromir.pro$important
+eromir.pro$important  # Checked:2025-03-04
 
 ! Много подписок в каталоге mts
 ! "Музыка на *111#  Каталог с музыкальными новинками и победителями хит-парадов."
@@ -63,7 +63,10 @@ eromir.pro$important
 ! "5,09 руб. с НДС за 1 день"
 ! AS197808 - TSK-AS, RU
 inform-mobil.ru$important
-immo.ru$important
+! immo.ru$important
+! Update: правило immo.ru$important цепляет нормальный ican-immo.ru
+! Этот случай есть в https://github.com/gorhill/uBlock/wiki/Syntax-quirks , ага
+||immo.ru^$important
 !+  wap.immo.ru
 interakt.ru
 !+  api.interakt.ru
