@@ -160,7 +160,7 @@ market.yandex.*##a[href*="/special/"]
 
 ! price
 market.yandex.*##[data-auto="price-description"]
-market.yandex.*##[data-auto="snippet-price-current"]
+!market.yandex.*##[data-auto="snippet-price-current"] - don't, see #101
 market.yandex.*##[data-auto="snippet-price-old"]:style(font-size:20px !important)
 market.yandex.*##[data-auto="snippet-price-old"]>span:has-text(без:)
 market.yandex.*##div::before
