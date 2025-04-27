@@ -1053,6 +1053,9 @@ afisha.ru##[class^=Footer_App]
 
 afisha21.ru###headers
 
+! loans
+afitron.ru##.bnpl-button-container
+
 afrodita.guru##.logo-info
 ||afrodita.guru/wp-content/themes/afrodita/i/back_head.png
 afrodita.guru##.ask-a-Question
@@ -5241,6 +5244,8 @@ citilink.ru##div[data-meta-name=BannersLayout]
 citilink.ru##div[data-meta-name=BannersLayout__static-slider]
 citilink.ru##section[data-meta-name="ProductListLayout__banners"]
 citilink.ru##div > a[href*="/promo/"]
+! top banner
+citilink.ru##[class*=StyledWrapper-Wrapper]
     ! "консультанты"
 citilink.ru##.product-card-ask-expert
 citilink.ru##.ProductPageConsultationSection__ask-expert-block
@@ -5287,6 +5292,7 @@ citilink.ru##.ProductPageCreditSection__block
 citilink.ru##.ProductPageCreditSection__credit-block
 citilink.ru##div[data-meta-name=Credit]
 citilink.ru##div[data-meta-name=Installment]
+citilink.ru##.ya-pay-widget
     ! stickers
 citilink.ru##.ProductLabelsSet
 citilink.ru##div:has(>span:has-text(/Рассрочка|Промокод/))
@@ -5583,6 +5589,8 @@ comments.ua###foote-text
 comnews.ru###last-comments
 
 secure.comodo.com/trustlogo/
+
+companium.ru##main > img:style(position:static !important)
 
 ! empty row
 comparitech.com##.home-nav
@@ -6750,6 +6758,7 @@ dns-shop.ru,dns-shop.kz##.digital-gift-card
 dns-shop.ru,dns-shop.kz##.product-card__accessories
 dns-shop.ru,dns-shop.kz##.product-card__buy-together
 dns-shop.ru,dns-shop.kz###soft-bundle-block
+dns-shop.ru,dns-shop.kz##.product-warranty__item:has(.product-warranty__price:not(:has-text(/^0/)))
     ! stickers
 dns-shop.ru,dns-shop.kz##.additional-vobler
 dns-shop.ru,dns-shop.kz##.product-info__voblers
@@ -6816,8 +6825,9 @@ dns-shop.ru,dns-shop.kz##.benefit
 dns-shop.ru,dns-shop.kz##.guide-helper
 dns-shop.ru,dns-shop.kz##.left-filters__consult-wrap
     ! other
-! отзывы попадают под social
-dns-shop.ru,dns-shop.kz#@##product-card-social-activity
+! отзывы попадают под social. Целиком social не надо, там и социалочки есть
+!dns-shop.ru,dns-shop.kz#@##product-card-social-activity
+    ! upd: всё-таки вынесено исключение в social
 ||dns-shop.ru/*/choice-guide.png
 ||dns-shop.kz/*/choice-guide.png
 ||dns-shop.ru/ajax-state/voblers/
@@ -6853,6 +6863,8 @@ dns-shop.ru,dns-shop.kz##[class^=whats-next__info-logo]
 dns-shop.ru,dns-shop.kz##.homepage__top-gid:style(height:auto !important)
 dns-shop.ru,dns-shop.kz##.product-card-tabs__buy-bottom
 dns-shop.ru,dns-shop.kz##.bookmarks-btn_cover
+! почему-то фотки затемняются, лучше без этого
+dns-shop.ru,dns-shop.kz##.ow-photos__link:style(opacity:initial !important)
 
 dobraprace.cz##.jobOffer__box-jobs-odber
 
@@ -11404,6 +11416,7 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-drop:has-text(Понятно)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=wrapper-]:has-text(cookie)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay:has-text(Зарегистрируйтесь)
+hh.ru##[class^=magritte-drop-base]:has-text(Ваш регион)
     ! top
 hh.ru,career.ru##.HH-RelatedVacanciesPreview-StickyContainer
 hh.ru,career.ru##.navi__menu:style(position:static !important)
@@ -16014,6 +16027,9 @@ magazin-t.ru##.header-menu-fixed:style(position:static !important)
 ||magazin-vann.ru/img/door.jpg
 magazin-vann.ru##div.novelty_s
 
+mag-device.ru##.top-phones
+mag-device.ru##.cm-processed-form.cm-processing-personal-data
+
 !||magesy.blog/wp-content/plugins/  # from uBlock filters  # old rule, now it is ineffective
 ! in general, the site is useless. No info, all links are shorted. I don't want to block it though
 ! some rules
@@ -17078,6 +17094,11 @@ miradmin.ru##.io-title-description
 miradmin.ru##.k-soderganie
 
 miraheze.org##.mh-notice
+    ! top
+miraheze.org###mw-head-base:style(margin-top:0px !important)
+miraheze.org###ca-purge
+miraheze.org###p-cactions
+    ! other
 
 mir-automoto.ru##.slides_container
 
@@ -17298,6 +17319,9 @@ mobilespecs.net###submenu > div:has(img[src*="/logo"])
     ! other
 
 mobilewithprices.com##.coverc
+
+mobilewood.com##.btn:has-text(/один клик/i)
+mobilewood.com##.gocredit
 
 mobiltelefon.ru##i:has-text(Подписывайтесь)
 
@@ -21255,6 +21279,9 @@ powershelladministrator.com##.custom-header-image
 powershellcenter.com/images/PowerShellBanner2.png
 powershellcenter.com##.widget-area
 
+! top
+powershellcommands.com##.transform.absolute
+
 powershellexplained.com##.avatar-img
 powershellexplained.com###markdown-toc
 powershellexplained.com###index
@@ -21740,6 +21767,8 @@ psbank.ru##.cdk-overlay-backdrop
 psbank.ru##.cdk-global-overlay-wrapper:has-text(одобрен кредит)
 psbank.ru##.cdk-overlay-container:has(.persoffering-popup-dialog)
     ! banners and promos
+! they put to banners not only marketing things, but part of interface buttons
+psbank.ru#@#.banner
 psbank.ru##.slider-wrapper
 psbank.ru##rtl-banner-slider
 psbank.ru##.sidebar-card-proposal
@@ -22576,6 +22605,10 @@ relax-volga.ru##.top-menu-wrapper:style(position:static !important)
 relax-volga.ru##.header-inner
 relax-volga.ru##.header-push
 relax-volga.ru##.header-panel-left
+
+relise.ru##.shop-rating
+relise.ru##.productcarusel-title
+relise.ru##.owl-carousel
 
 reloading.cc###elSiteTitle
 ! don't generalize
@@ -31367,6 +31400,8 @@ xcom-shop.ru##[href^="https://www.xcom-shop.ru/pages/configurator/"]:has(img)
     ! other
 xcom-shop.ru##.eaist
 xcom-shop.ru##.product-block-description__last-block-wrap
+xcom-shop.ru##.SmartCaptcha-Shield
+xcom-shop.ru##.card-sticky
 
 xcook.info##.branding
 xcook.info##.receipt_rating
