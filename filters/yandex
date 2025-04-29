@@ -187,6 +187,7 @@ market.yandex.*##.ds-badge
 !fenek.market.yandex.ru/*/event?hash
 !||market.yandex.ru/*/event?
 
+||yastatic.net/s3/distribution/yanalytics/  # ad scripts
 ||yastatic.net/s3/frontend/granny/$image
 
 ya.ru,yandex.*##.serp-header__nav
@@ -936,6 +937,13 @@ ya.ru,yandex.*##.button_primary:has-text(в избранное)
 ||yastatic.net/nearest.js
 
 music.yandex.ru$3p  # even non-yandex, even scripts. Let's block it.
+    ! banners and promos
+music.yandex.*##[class*=VibeBlock_root_freemium]
+music.yandex.*##[class*=NavbarDesktopUnauthorizedBar_title]
+music.yandex.*##[class*=NavbarDesktopUnauthorizedBar_subtitle]
+! background
+music.yandex.ru##canvas
+    ! other
 
 ! is in Adguard
 ya.ru,yandex.*##.search-lavka-view
