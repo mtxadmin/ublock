@@ -2616,7 +2616,7 @@ _analytics.js?  # from EasyPrivacy
     ||hh.ru/analytics^  # is in Adguard
     ||career.ru/analytics^
     ||rabota.by/analytics?  # is in EasyPrivacy
-/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~gitlab.com|~globalvoices.org|~mts-link.ru|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~webinar.ru|~zoho.com|~zoho.eu
+/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~gitlab.com|~globalvoices.org|~mts-link.ru|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~webinar.ru|~market.yandex.ru|~zoho.com|~zoho.eu
     ! Exclusions:
     ! alfabank - финансовая аналитика по счету
     ! duckduckgo - it blocks any search about analytics. Other search systems are ok.
@@ -2630,9 +2630,10 @@ _analytics.js?  # from EasyPrivacy
         ! увы, но иначе в Сбербанк и Домклик не входит
         !||sberbank.ru/*analytics$script,redirect=noopjs
         @@||sberbank.ru/*analytics$script
-    ! x.com (Twitter): @@||twimg.com/responsive-web/client-web/shared~bundle.AccountAnalytics~bundle.UserProfile...
-    !
+    ! x.com (Twitter) - @@||twimg.com/responsive-web/client-web/shared~bundle.AccountAnalytics~bundle.UserProfile...
+    ! market.yandex.ru - @@||yastatic.net/s3/market-b2c-static-production/white-desktop/browser-light/browser-light.browser.analytics
     ! zoho - internal(?) analitycs
+    !
     ! /rest/analytics/*  # is in EasyPrivacy
     ! /vwfiles/analytics/*  # from EasyPrivacy
     !
