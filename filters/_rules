@@ -1466,11 +1466,13 @@ _rebid.js  # from EasyList
 !    ! /widget/?45;*|1|1|1|1  # strange rule from Ru AdList
     ||market.yandex.ru/widget/*$third-party,script  # from Ru AdList
 !/widget.min.js$important,domain=~sbis.ru
-/widget/*$~stylesheet,domain=~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru|~ozon.by|~ozon.com|~rzd.ru|~sbis.ru  # v2
+/widget/*$~stylesheet,domain=~tickets.afisha.ru|~contacts.google.com|~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru|~ozon.by|~ozon.com|~rzd.ru|~sbis.ru  # v2
     ! Exclusions:
     !
+    ! tickets.afisha.ru: tickets.afisha.ru/wl/widget/ seems useful
     ! ozon: useful inner widgets
     ! rzd : useful inner widgets
+    ! contacts.google.com: contacts.google.com/widget/ seems useful
 /widget-a-b.js  # from Ru AdList
 /widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~banki.ru|~dns-shop.ru|~domclick.ru|~embedly.com|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
     ! Exclusions:
@@ -3600,6 +3602,7 @@ _wtInit.js  # from Fanboy's
 ##.label_up_scroll
 ##.link_top
 ##.media-infinity-footer__up
+##.modestra-scrollto-top
 ###move_up
 ##.move_up
 ##.nav-icon-home
@@ -4926,8 +4929,9 @@ _snowstorm-min.js  # from Ru AdList
 !! brands list
 ###all_brands
 ##.b-brands
-~carsguru.net,~itel-life.com##.brand
+~carsguru.net,~e.foundation,~itel-life.com##.brand
     ! Exclusions:
+    ! e.foundation - non-profit org, just list of brands
     ! itel-life.com - main content
 ##.brand-list
 ##.brand_picture
@@ -5504,6 +5508,7 @@ discordemoji.com$3p
 /jquery.jconveyorticker.min.js
 /jquery.marquee
 /jquery.newsticker.min.js
+/newsTicker$script
 /ticker.min.js
 ##.fadeOutRightNewsTicker
 ##.hp-ticker
