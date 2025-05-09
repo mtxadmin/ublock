@@ -6738,6 +6738,9 @@ dns-shop.ru,dns-shop.kz##.homepage__action-tinder
 dns-shop.ru,dns-shop.kz##.homepage__actual-offers
 ! duplicate fixed header
 dns-shop.ru,dns-shop.kz##.navigation-header-product
+dns-shop.ru,dns-shop.kz##.theme-of-the-week
+dns-shop.ru,dns-shop.kz##.site-banner-item
+dns-shop.ru,dns-shop.kz##.site-banner-list
     ! unfixed sidebar
 club.dns-shop.*##.sidebar:style(position:absolute !important)
     ! footer
@@ -6847,6 +6850,7 @@ dns-shop.ru,dns-shop.kz##.homepage-post-stat
 dns-shop.ru,dns-shop.kz##.on-air
 dns-shop.ru,dns-shop.kz##.product-buy__sub
 dns-shop.ru,dns-shop.kz##.catalog-product__zoom
+dns-shop.ru,dns-shop.kz##.menu-contacts__find-error
 ||dns-shop.ru/*/empty-result.png
 ||dns-shop.kz/*/empty-result.png
 ! from Adguard (for ru)
@@ -10882,6 +10886,8 @@ g-tv.online
 
 guidesgame.ru###branding_link
 
+guidingtech.com##.wp-block-kadence-rowlayout
+
 ||guim.co.uk/libs/iframe-messenger/
 
 guitarmetrics.com##.header-sticky:style(position:static !important)
@@ -11184,6 +11190,9 @@ hddmag.com##span:has-text(No products found.)
 
 hellosmartlife.com##.about-copy
 hellosmartlife.com##.about-wrapper
+
+hetmanrecovery.com##._nav-arrow__prev-article
+hetmanrecovery.com##._nav-arrow__next-article
 
 hide.me##.c-btn__primary
 ! top ad button
@@ -13139,6 +13148,9 @@ itmain.ru##.title:has-text(Наши клиенты)
 itmain.ru##.clients
 itmain.ru##.top:style(position:static !important)
 
+itmen.help##.btn-primary
+itmen.help###step1:has-text(Стоимость)
+
 ||itnan.ru/madrobots.png
 
 itnotes.org.ua##.custom-header
@@ -13217,6 +13229,7 @@ it-tehnik.ru##^script:has-text(requestNotificationPermission)
 ! and remove useless header
 it-tehnik.ru##.header
 it-tehnik.ru##.like-but
+it-tehnik.ru##.live-comments
 
 itworkroom.com###site-generator
 itworkroom.com###blog-title-wrap
@@ -13382,6 +13395,10 @@ jellyfin.org##.article:style(margin-top:0px !important; margin-bottom:0px !impor
 jellyfin.org##.sideaffix
 
 jetbrains.com##.acceptance-popup
+
+jetsanza.com##.jeg_sticky_nav
+jetsanza.com##.jnews_inline_related_post_wrapper
+jetsanza.com##.jeg_author_desc
 
 jetsetter.com##.hero-gallery-container
 
@@ -13795,11 +13812,7 @@ kaypu.com###float_menu:style(position:static !important)
 
 kazaknation.com##.slider-container
 
-    ! popups
-kazanexpress.ru##.popups-container
-kazanexpress.ru##.event-modal
-kazanexpress.ru##.scroller
-    ! other
+! see kazanexpress.ru in ozon&wb
 
 kdelo.ru##.topLine
 kdelo.ru##noindex
@@ -14978,6 +14991,15 @@ lenovo.com###ipdetect_differentCountryModal
 ||lenremont.ru/wp-content/plugins/lenremont-coupon/
 lenremont.ru##.button-bar__top-button
 
+! Retail site
+||lenta.com/assets-ng/scripts/kaspersky/
+||lenta.com/ngsw$script
+lenta.com##.constructor-block__banners
+lenta.com##.lenta-app-qr
+lenta.com##.install-apps
+lenta.com##.benefits-data
+
+! News site
 lenta.ru$inline-script  # site tries to load ad modules
 ||lenta.ru/assets/webpack/pwaBundle
 ||lenta.ru/assets/webpack/vendorsPwa
@@ -19591,6 +19613,8 @@ onmsft.com##+js(addEventListener-defuser.js)
 ! top
 onmsft.com##.inside-header:style(padding-top:0px !important; padding-bottom:0px !important)
 
+onoutbukax.ru##.smooth-scroll
+
 ont.by##.l-footer__app
 
 ooo-asteko.ru###masthead
@@ -19870,6 +19894,7 @@ ostraining.com##.ost-box-image
 ostrovok.ru##.homepage-mobile-wrapper
 ostrovok.ru##[class^=Footer__rewards]
 ostrovok.ru##[class^=Seo__content]
+ostrovok.ru##.zenemailcollectorV2
 
 ||oszone.net/ibm.html  # from Ru AdList
 oszone.net###professor
@@ -22341,6 +22366,7 @@ rcpay.ru##.landing-app
     ! other
 ! not popup, just image
 rcpay.ru##.auth-modal__image
+rcpay.ru##.offer-redirect__info > p
 ||rcpay.ru/assets/logo-$image,redirect=1x1.gif
 
 rcpmag.com##.RCPMAG
@@ -22448,6 +22474,7 @@ redcocktube.com##.s_desc
 ||reddit.com/desktopapi/v1/comments_page_ads$important
 ||reddit.com/errors
 ||reddit.com/static/$3p  # is in Fanboy's
+!||reddit.com/svc/shreddit/events  # seems don't
 ||reddit.com/sw.$script  # service worker
 !||reddit.com/svc/shreddit/perfMetrics
     /shreddit/perfMetrics  # from EasyPrivacy
@@ -22480,6 +22507,7 @@ reddit.com##[src^="data:image/png;base64,"]
     ! popups
 reddit.com##xpromo-nsfw-blocking-modal-desktop
 reddit.com##*:style(filter:none !important)
+reddit.com##faceplate-tracker:has-text(New to Reddit?)
     ! banners and promos
 ! from uBlock filters
 reddit.com##div[class][data-before-content="advertisement"]:not([id])
@@ -22596,6 +22624,8 @@ reedr.ru##.social_rm
 
 reg.ru##.b-help-button
 
+||regard.ru/_next/static/images/flower  # девятомай
+||regard.ru/_next/static/images/topbar  # девятомай
 regard.ru###loginbar
 regard.ru##.lot.bblock-long.block > noindex
 regard.ru##.minitextblock
@@ -22604,6 +22634,9 @@ regard.ru###rsidebar
 regard.ru##button:has-text(Быстрый заказ)
 !regard.ru##button:style(animation-play-state:paused !important)
 regard.ru##button::after
+! top
+regard.ru##[class^=MainBar]:style(position:static !important)
+regard.ru##[class^=FloatingPanel]
 
 regexbuddy.com##.buynow
 regexbuddy.com###label
@@ -22673,6 +22706,7 @@ remontka.pro##.rem-leftbar:style(position:absolute !important)
 remontka.pro##.rem-bottom
 remontka.pro##.uk-panel-box-primary
 remontka.pro##.rem-linkdiv
+remontka.pro##.uk-button:has-text(Поддержать)
 
 remontnick.ru##.rk-all-articles
 remontnick.ru###carousel-action
@@ -23470,6 +23504,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2013/0720/d9/fd2c43826509f2e6b6752621661aedd9.$image
 ||fastpic.org/big/2013/0902/39/2b559911308e8ab10a87e908c1807039.$image
 ||fastpic.org/big/2013/0921/94/c6e574858db665a84e20ebae6fd5ba94.$image
+||fastpic.org/big/2013/1018/25/370ba34d72c8b41b32e94759b39d7a25.$image
 ||fastpic.org/big/2013/1027/74/8f88b34450660a4f3dad8082eee67674.$image
 ||fastpic.org/big/2013/1112/cf/447b4d9d02b3fceec6b588f025aca5cf.$image
 ||fastpic.org/big/2014/0113/50/7bcd426c20411ba69790eb1ad4315f50.$image
@@ -23495,6 +23530,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2015/0320/43/8203f23f6259880c7f4b0d7dc0777643.$image
 ||fastpic.org/big/2015/0401/66/58f34f93a41f6bba7c04351090dcbd66.$image
 ||fastpic.org/big/2015/0407/66/b6783f79fc44b0474a04187a82d08a66.$image
+||fastpic.org/big/2015/0413/f0/febd0ceb1e6679d5bd8a31ff97f9d3f0.$image
 ||fastpic.org/big/2015/0426/c0/ea84007230dc8c14aaecdc0cfca6a4c0.$image
 ||fastpic.org/big/2015/0515/94/e4e125f604654064081a9fe458ac2a94.$image
 ||fastpic.org/big/2015/0521/48/bd99cdc743327d91f995175e933aff48.$image
@@ -23560,8 +23596,12 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2020/0310/91/f2ccd2508c56d8c2549f9dea3b4d8991.$image
 ||fastpic.org/big/2020/0402/3e/38c8bad163e6d3b4ba38c9aa72a7ba3e.$image
 ||fastpic.org/big/2020/0403/af/aa961e9f80629d581d8e116491b891af.$image
+||fastpic.org/big/2020/0406/46/47dacf18f54b179ec0f4b18b414d4046.$image
+||fastpic.org/big/2020/0407/ef/6f72c565c77d26eb240e4ebf3630e9ef.$image
 ||fastpic.org/big/2020/0521/99/1c5be135a6191922b04b1e4336bfeb99.$image
 ||fastpic.org/big/2020/0611/5a/4f482c2198617b423af38f1d894ed15a.$image
+||fastpic.org/big/2021/0122/ab/64a62c824e931a9048f085c5374b79ab.$image
+||fastpic.org/big/2021/0627/bd/e333d59c77a6dd962e238cf81afdb0bd.$image
 ||fastpic.org/big/2021/0808/e3/9eeeb7cfe18e69bb770ecd3e736476e3.$image
 ||fastpic.org/big/2020/0810/4e/00bd4d0afe9c11103e043980e2ee644e.$image
 ||fastpic.org/big/2020/0915/16/7fb54380d2c1b276eeeb7a6e5108d016.$image
@@ -23597,7 +23637,6 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2021/0721/0f/8f886294159f9b2be6742862720ea40f.$image
 ||fastpic.org/big/2021/0805/9b/246ffa9d071336fe4ac62a46e5de6b9b.$image
 ||fastpic.org/big/2021/0805/de/68862b44d1ff1d5a5d6f5415354a7ade.$image
-||fastpic.org/big/2022/0827/4b/c34742def93c93052fd308608d35ae4b.$image
 ||fastpic.org/big/2021/0907/90/e3093f3c3e3beffe3194172cdd6b2290.$image
 ||fastpic.org/big/2021/0907/e5/9a4625f064ca14c1d7c6561ee36d6de5.$image
 ||fastpic.org/big/2021/0908/2d/a1a729c90a2a5519ef5bb307a1d44f2d.$image
@@ -23655,6 +23694,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2022/0707/81/c80b63d3ed4af9deb8008f7d356e8481.$image
 ||fastpic.org/big/2022/0713/2b/f8d70297ede10a413e7ed257b7b51f2b.$image
 ||fastpic.org/big/2022/0713/9f/3eaea605f4a5dcfce5374edbb831639f.$image
+||fastpic.org/big/2022/0715/9a/e614c236c6e7be93f460931b58c2079a.$image
 ||fastpic.org/big/2022/0716/a0/440b2656012724d789a62d5a02cd31a0.$image
 ||fastpic.org/big/2022/0716/b6/f24a02a4337391ec43e44da03f4ad5b6.$image
 ||fastpic.org/big/2022/0717/07/c94a161ac32502e0a9a143d095f81a07.$image
@@ -23672,6 +23712,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2022/0810/8e/ad8ca6d04584c22fb048e5af6cf5948e.$image
 ||fastpic.org/big/2022/0817/71/9602509237e8d65d270b286613a72c71.$image
 ||fastpic.org/big/2022/0824/6d/e33c889a0a6759b3edda8deb07c0ea6d.$image
+||fastpic.org/big/2022/0827/4b/c34742def93c93052fd308608d35ae4b.$image
 ||fastpic.org/big/2022/0921/2f/9b1f3ccc1f3fdfc024477dedaadf482f.$image
 ||fastpic.org/big/2022/0926/92/46c58ea789093b5f44049d947a165a92.$image
 ||fastpic.org/big/2022/1012/da/91965ee0702f145981f7d4752a707cda.$image
@@ -23686,6 +23727,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2022/1112/9c/f3aaa9106274f47e8584f0dd1df4eb9c.$image
 ||fastpic.org/big/2023/0212/74/006dc9b571f6433d3144bb78e9a1be74.$image
 ||fastpic.org/big/2023/0212/ca/5590db19600049603c6a0dbae48bc3ca.$image
+||fastpic.org/big/2023/0213/78/b0be1fc2c259b423805dd69c23655c78.$image
 ||fastpic.org/big/2023/0223/5c/6c8005b1af3ab3c2e99d88f684e1575c.$image
 ||fastpic.org/big/2023/0317/7e/b633831231818b6fa67eddbf8d52567e.$image
 ||fastpic.org/big/2023/0319/5e/af1080bb4dd6acb8f94ab2dc9c8fc35e.$image
@@ -23696,6 +23738,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2023/1005/b3/64827929bd526672418ce316f114c1b3.$image
 ||fastpic.org/big/2024/0127/c3/55b73d80232c8eb87161177a29d43fc3.$image
 ||fastpic.org/big/2024/0414/40/f43872717994be71e9791d2280882c40.$image
+||fastpic.org/big/2024/0806/3f/8df632c2a9e203423b85ba71689a753f.$image
 ||fastpic.org/big/2024/0911/77/5efb3825b9d04376f88f180742d2f377.$image
 ||fastpic.ru/big/2009/1023/67/335f721dba8c4afaba20160aec267e67.$image
 ||fastpic.ru/big/2009/1216/5e/8a4271c44c907f6ff66984a1951b865e.$image
@@ -25066,8 +25109,6 @@ skat-ups.ru##.header-droppa-box.location-choose-block
 ! promo
 skat-ups.ru##.club-link-box
 
-! иначе там скрипты ошибки выдают. Лайки рубятся, но менее глубоко
-@@||sk-desantnik.ru/*/social-likes.min.js
 sk-desantnik.ru##.social-likes
 sk-desantnik.ru##.developer
 sk-desantnik.ru##.header-brand-wrap
@@ -25391,6 +25432,8 @@ sobyanin.ru##.form__count
 sobyanin.ru##.social-widgets__tags
 sobyanin.ru##.form__wrapper:has-text(Подпиши)
     ! other
+
+softcomputers.org##.blogtop
 
 softikbox.com##.header > .wrapper
 
@@ -26092,6 +26135,9 @@ starwindsoftware.com##+js(set, Object.prototype.theiaStickySidebar, noopFunc)
 state.gov##+js(ra,oncopy)
 state.gov##+js(ra,onpaste)
 state.gov##+js(ra,oncut)
+||state.gov/adrum
+    ! ||eum.state.gov/adrum
+    ! ||eum.state.gov/eumcollector/beacons/browser/v1/EUM-AAB-AUV/adrum
 
 ||at.staticfiles.at/img/privacywall/
 
@@ -26843,6 +26889,9 @@ techcult.com##.title-area
 techdirectarchive.com##.njt-nofi-container
 ! ads
 techdirectarchive.com##.code-block
+techdirectarchive.com##.header-carousel-posts-wrap
+techdirectarchive.com##.glide--carousel
+techdirectarchive.com##.primary-navbar
 
 techdiving.pro###header-inner > [href="https://www.techdiving.pro/"]
 
@@ -27098,6 +27147,7 @@ techstronghold.com##body.fixed-nav:style(padding-top:0px !important)
 ||techsupportforum.com/forums/images/sk/logonew.png
 techsupportforum.com###head_image
 techsupportforum.com##.p-header-banner
+techsupportforum.com##.p-body-sidebar
 
 ||techtarget.com^*/GetCookiesWithCallback?  # from EasyPrivacy
     ! top
@@ -29903,6 +29953,8 @@ vkusneda.ru###toc_container
 
 ||vkusnyy.top/*/sunrise_background1.jpg
 
+vkuso.ru##.contest-banner
+
     ! popups
 vkusvill.ru##.modal-layout
 vkusvill.ru##.modal
@@ -31039,6 +31091,8 @@ windowsreport.com##.refmedprd-b
 windowsreport.com##.breadcrumbs>span::after
 ! inline related
 windowsreport.com##.related-articles
+windowsreport.com##.main-content__affiliate-disclosure
+windowsreport.com###reading-progress-bar
 
 windows-school.ru##.uk-grid.xl-table.top
 
@@ -31052,6 +31106,9 @@ windowstechno.com##.avatar
 windowstune.ru##.theme-switch-btn
 
 windwix.ru##.profile_box
+
+! inline related
+winhelponline.com##.rp
 
 !non-sticky header without animations
 winitpro.ru##img:style(transition:none !important)
@@ -31311,6 +31368,7 @@ worksiz.ru##.wrapper-bottom:style(position:static !important)
 worldofplayers.ru##.notice
 
 ! don't: worldota.net$script  # ad scripts of ostrovok.ru  #cnt.worldota.net/ads.js
+||worldota.net/travel/marketing_campaigns/$image
 
 wargaming.net*/?pub_id=$popup  # from Ru AdList
 warthunder.ru*/free_registration?r=$popup  # from Ru AdList
