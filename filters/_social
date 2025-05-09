@@ -1634,8 +1634,14 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 -social-buttons-  # is in Fanboy's
 /social-buttons.js$important
 -social-icon-  # is in Fanboy's and Ru AdList
-/social-likes.  # from EasyList, modified
+/social-likes.$domain=~pruffme.com|~sk-desantnik.ru  # from EasyList, modified
 /social-likes.min.js$important,domain=~pruffme.com|~sk-desantnik.ru
+    ! Exclusions:
+    !||pruffme.com/assets/js/jquery/social/social-likes.min.js$redirect=noopjs
+    ! Uncaught TypeError: $(...).socialLikes is not a function
+    ! @@pruffme.com/assets/js/jquery/social/social-likes.min.js
+    ! иначе там скрипты ошибки выдают. Лайки рубятся, но менее глубоко
+    ! @@||sk-desantnik.ru/*/social-likes.min.js
 /social1.  # is in Fanboy’s, RU AdList
 /social-logos/*$important
 /social_plugins/*
