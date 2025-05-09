@@ -3631,6 +3631,8 @@ onelink.me$removeparam=c
 
 opensource.com$removeparam=intcmp
 
+ostrovok.ru$removeparam=partner_slug
+
 otsuka-shokai.co.jp$removeparam=oiid  # from Adguard
 
 otto.de$removeparam=ActionID  # from Adguard
@@ -4223,7 +4225,7 @@ yahoo.co.jp$removeparam=sc_e  # from Adguard
 
 ! yandex, dzen (yandex service), yandex.market, etc
 ! form "$removeparam=..,domain=.." here is just for params sorting convenience
-$removeparam=/^[0-9]+=/,domain=dzen.*|ya.ru|yandex.*  # it was strange param yandex.ru$removeparam=62558...
+$removeparam=/^[0-9]+=/,domain=dzen.*|ya.ru|yandex.*  # it was strange param yandex.ru$removeparam=62558...  # again: market.yandex.ru$removeparam=10315...
 $removeparam=country_code,domain=dzen.*|ya.ru|yandex.*
     !zen.yandex.*$removeparam=country_code  # from Ru AdList, modified
     ! Update: now dzen.ru and yandex.*
