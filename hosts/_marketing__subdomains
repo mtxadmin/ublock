@@ -81,6 +81,7 @@ ad.period-calendar.com  # from AdGuard
 ad.playground.ru  # from Malvertising filter list by Disconnect
 ad.pphungary.hu  # from Hufilter
 !ad.rambler.ru
+ad.srv.rc.today  # rcpay.ru domain
 ad.snappea.com  # from AdGuard
 ad.starlightmedia.ua  # from Ru AdList
 !ad.supportal.hu  # from Hufilter  # 401 root, but I don't care
@@ -230,7 +231,7 @@ ads.pro-market.net.edgesuite.net  # from Dan Pollock's hosts file
 ads.publicdisgrace.com  # from MVPS
 ads.reddit.com$important  # from uBlock filters
 ads.reembed.com
-ads.roblox.com  # from Adaway
+ads.roblox.com  # from Adaway  # First Party - Advertising  # from Quidsup NoTrack-Blocklist
 ads.cdn.rovio.com  # from Malvertising filter list by Disconnect
 !ads.samsung.com  # from EasyList
 ads.sexandsubmission.com  # from MVPS
@@ -245,7 +246,7 @@ ads.tvb.com  # from Adguard
 ads.uol.com  # ad scripts  # "Programmatic media platform"  # root is a news site
 ads.uol.com.br
 ads.cdn.viber.com  # Viber - Advertising  # from Quidsup NoTrack-Blocklist
-ads.vk.com
+ads.vk.com$important,all
 ads.vnumedia.com  # from Peter Lowe's
 ads.watson.ch
 ads.whippedass.com  # from MVPS
@@ -716,6 +717,10 @@ beacon.wikia-services.com  #https://beacon.wikia-services.com/__track/
 
 ||browser-update.  # from uBlock filters - Badware: ||browser-update.*.top^
 
+||callback.
+!callback.kontur.ru
+callback.lenremont.ru  # ad popups
+
 ! chatbots and noisy consultants on sites
 /chat.$domain=~bizon365.ru|~booking.com|~deepseek.com|~domclick.ru|~etutorium.com|~kuki.ai|~openai.com|~worknf.ru
     ! Exclusions:
@@ -872,6 +877,7 @@ consent.amateurphotographer.co.uk  # from EasyList
 consent.berliner-kurier.de  # from EasyList
 consent.boerse-online.de  # from Adguard
 consent.dropbox.com  # from Adguard
+consent.dw.com  # from Adguard
 consent.economist.com  # from Adguard
 consent.faz.net  # from EasyList
 consent.finanzen.net  # from Adguard
@@ -1537,6 +1543,7 @@ go.gem.com  # ad redirects. Gem.com is some hiring CRM
 go.iastate.edu
 go.ibis.shop  # ad redirects
 go.ign.com
+go.intel-academy.com  # from Mayakyler's link-shorteners
 go.isostech.com  # from EasyList
 go.jc.fm  # from PeterDaveHello's URL Shorteners
 go.mail.ru
@@ -1551,14 +1558,17 @@ go.mindmanager.com
 go.mira-estate.com
 go.mitchell1.com  # is in EasyPrivacy and Adguard
 go.mysku.me  # internal URL shortener which steals cashback
+go.nasa.gov  # from Mayakyler's link-shorteners
 go.newgensoft.com  # ad redirects
 go.onshape.com  # from Adguard: tracking.go.onshape.com
 go.provident.bank  # from Adguard: tracking.go.provident.bank
 go.rutgers.edu
 go.salesscreen.com
 go.skillfactory.ru
+go.skilllabs.io  # from Mayakyler's link-shorteners
 go.skimresources.com  # from iam-py-test's anti-redirectors
 go.sky.pro
+go.sony.tw  # from Mayakyler's link-shorteners
 go.tass.ru  # ad redirects
 go.techtarget.com$all  # is in EasyPrivacy
 go.ticketmanager.com
@@ -2199,10 +2209,12 @@ sentry.srv.habr.com
 sentry.hh.ru
 sentry.innologica.com
 !sentry.kanobu.ru
+sentry.lenta.tech
 sentry.obs.mts.ru
 !sentry.web.prod.ya.mvideo.ru
-sentry.k8s.portal.s  # yes, portal.s, a typo, but request was to http://sentry.k8s.portal.s/api/13/store/?sentry_key=...
+!sentry.k8s.portal.s  # yes, portal.s, a typo, but request was to http://sentry.k8s.portal.s/api/13/store/?sentry_key=...
 sentry.k8s.portal.su  # my corrected version, clearly
+sentry.regard.ru
 sentry.samoletx.com
 sentry.timeweb.cloud
 sentry.wixpress.com
@@ -3492,6 +3504,8 @@ bang.360.cn  # from Energized Blu
 !fx.sj.360.cn  # from Energized Blu
 stat.m.360.cn  # from Adguard
 
+fc.3dmgame.com  # from Adguard Chinese
+
 zlolhl.3dnews.ru  # from Adguard
 
 assets-ads.3dtuning.com$important  # from Adguard
@@ -4116,6 +4130,8 @@ zznfip.bork.ru  # from GoodbyeAds
 
 !popular-tracker.brainly.com  # from Ru AdList
 
+on.bp.com  # from Mayakyler's link-shorteners
+
 ! from Dan Pollock's hosts file
 counter1.bravenet.com
 counter10.bravenet.com
@@ -4280,6 +4296,12 @@ creatives.cliphunter.com  # from EasyList
 
 csp-reporting.cloudflare.com  # from EasyPrivacy
 tr.www.cloudflare.com  # from Adguard
+
+on.cnn.com  # from Mayakyler's link-shorteners
+
+push-static.dbankcdn.com
+
+s.deepl.com  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
 
 aab.devicetests.com  # is in Adguard
 
@@ -4493,6 +4515,20 @@ ads.ebay.com  # from GoodbyeAds
 autotrack.g.ebay.com  # from GoodbyeAds
 backstory.ebay.com
     ||backstory.ebay.  # from Adguard
+backstory.ebay.ca  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.co.uk  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.com.au  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.com.hk  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.com.my  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.com.sg  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.de  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.es  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.fr  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.ie  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.it  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.nl  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.ph  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
+backstory.ebay.pl  # eBay - Tracker  # from Quidsup NoTrack-Blocklist
 edgetrksvc.ebay.com
     ||edgetrksvc.ebay.  # from Adguard
 epnt.ebay.com  # from GoodbyeAds
@@ -4531,6 +4567,8 @@ sw88.espn.com  # from Peter Lowe's hosts file
 misc.espritgames.ru
 
 tklyfe.esthetic-nails.ru  # from Adguard
+
+adasset.ethersaga.online  # from Adguard Chinese
 
 nasi.etherscan.com  # from EasyPrivacy
 
@@ -4608,6 +4646,8 @@ start.fotostrana.ru  # from Adguard
 b.fox.com  # from Adaway
 
 !sg.freeimg.ru  # from Adguard
+
+tl.foxnews.com  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
 
 c0.froala.com
 
@@ -5168,6 +5208,11 @@ tr2.kaspersky.co.uk  # from GoodbyeAds
 tr2.kaspersky.com  # from GoodbyeAds
 tr2.kaspersky.ru  # from Adguard
 
+fp.kaspersky-labs.com
+	! https://ru.fp.kaspersky-labs.com/cld_track?cid=
+	! https://ru.fp.kaspersky-labs.com/oxwdsq?cid=
+    ! w-44965.fp.kaspersky-labs.com
+
 shop.kicker.de  # from Adguard
 
 a-counter.kiev.ua  # from Ru AdList
@@ -5196,8 +5241,6 @@ rating.km.ua  # from Adguard
 pfconm.koleso.ru  # from GoodbyeAds
 
 feeds.kommersant.ru  # feeds.kommersant.ru/komcounter/readcounter
-
-!callback.kontur.ru
 
 adxwxw.kp.ru  # from frogeye
 
@@ -5241,6 +5284,9 @@ forecast.lemonde.fr$important
 
 ! https://pikabu.ru/story/lenta_vyi_ryibnyiy_sup_kushali_7921339
 crm.lenta.com
+online-partners.lenta.com
+growthbook-proxy.lenta.tech  # ad xhrs
+otel-collector.lenta.tech  # ||otel-collector.lenta.tech/v1/traces  # ad xhrs
 
 id.lenta.ru  # ad xhrs  # id.lenta.ru/jsonrpc
 !montblanc.lenta.ru  # from Adguard
@@ -5255,6 +5301,8 @@ a.letsjerk.org  # from Adguard
 a.letsjerk.to  # from Adguard
 
 mqldrm.lgcity.ru  # from Adguard
+
+snap.licdn.com  # LinkedIn - Tracker  # from Quidsup NoTrack-Blocklist
 
 chatbot.lifecell.ua  # from Adguard
 
@@ -5283,6 +5331,8 @@ web-push.test.loccitane.com  # from GoodbyeAds
 cerohj.loccitane.ru  # from Adguard
 
 !pion.loveserials.net  # from Adguard
+
+on.louisvuitton.com  # from Mayakyler's link-shorteners
 
 wt.lovfot.ru  # from Ru AdList
 
@@ -5330,6 +5380,9 @@ analytics-tracking.meetup.com  # from EasyPrivacy
 alarm-screen.megamarket.ru
 
 embed.megogo.net  # Embedding blocks
+
+clickhz.meizu.com  # Meizu - Tracker  # from Quidsup NoTrack-Blocklist
+norma-external-collect.meizu.com  # Meizu - Tracker  # from Quidsup NoTrack-Blocklist
 
 l.melty.fr  # is in Adguard
 tracking.melty.es  # error root
@@ -5479,8 +5532,10 @@ b.netall.ru$important  # ad scripts  # is in Ru AdList and Adguard
 
 !cdn-widgets-woven.netdna-ssl.com  # zombie
 
+customerevents.netflix.com  # Netflix - Tracker  # from Quidsup NoTrack-Blocklist
 ichnaea-web.netflix.com  # from Adaway
 nmtracking.netflix.com  # from Adaway
+nrdp.nccp.netflix.com  # Netflix - Tracker  # from Quidsup NoTrack-Blocklist
 presentationtracking.netflix.com  # from Adaway
 
 !imonitor.nethost.cz  # from Peter Lowe's hosts file
@@ -5619,6 +5674,8 @@ ms-trackingapi.phenompeople.com  # is in EasyPrivacy  # don't block entirely
 
 wap.phonearena.com
 
+ads-static.phonepe.com  # from Adaway
+
 ss.photospecialist.co.uk  # from EasyPrivacy
 
 !creatives.pichunter.com  # from EasyList
@@ -5729,7 +5786,7 @@ rcmjs.rambler.ru  # ad scripts  # "{"name":"recommender_api","version""
 rcounter.rambler.ru  # from Adguard
 scnt.rambler.ru  # from Ru AdList
 scounter.rambler.ru  # from Adguard
-ssp.rambler.ru$important  # from EasyPrivacy
+ssp.rambler.ru$important  # from EasyPrivacy, Adguard
 subscriptions.rambler.ru  # from Adguard
 sync.rambler.ru$important  # from EasyPrivacy
 trafffgen.rambler.ru  # from Ru AdList
@@ -5771,6 +5828,8 @@ iot-logser.realme.com  # from Adaway
 
 insight.recruitics.com
 !monitoring.recruitics.com
+
+v.redd.it  # from Mayakyler's link-shorteners
 
 alb.reddit.com  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
 e.reddit.com  # from Adguard
@@ -6264,7 +6323,7 @@ esttut.tsum.ru  # from Adguard
 
 !vs.tucows.com  # from Peter Lowe's hosts file
 
-at.tumblr.com  # from PeterDaveHello's URL Shorteners
+at.tumblr.com  # from PeterDaveHello's URL Shorteners, Mayakyler's link-shorteners
 
 reports.tunein.com
 
@@ -6323,6 +6382,8 @@ adf.underhentai.net  # from uBlock filters
 
 outs.unicom.co.uk  #outs.unicom.co.uk/link.php?
 
+s.uniqlo.com  # from Mayakyler's link-shorteners
+
 ! see unity3d.com in _telemetry
 
 shorturl.unityassets4free.com  # from Adguard
@@ -6376,6 +6437,8 @@ platform.devel.via-mobi.com
 platform.via-mobi.com
 !simpler.via-mobi.com
 www.via-mobi.com
+
+at.vibe.com  # from Mayakyler's link-shorteners
 
 !ads.videosz.com  # from MVPS
 banners.videosz.com  # from MVPS
