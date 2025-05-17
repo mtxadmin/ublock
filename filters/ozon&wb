@@ -358,7 +358,11 @@ ozon.*##div:matches-css(height:32px) img:matches-css(height:32px)
 ozon.*##div:has(>p:has-text(Оформить подписку))
 !ozon.*##[data-widget="webPrice"] button:has-text(Ozon Картой)
 ozon.*##[data-widget="webPricePerStars"]
-ozon.*##button span:has-text(Ozon Картой)
+!ozon.*##button span:has-text(Ozon Картой)
+! maybe useful. Instead let's calm down the card price:
+ozon.*##button span:has-text(Ozon Картой) div:style(background:initial !important; color:initial !important; padding-left:0px !important; padding-right:0px !important)
+ozon.*##button span:has-text(Ozon Картой):style(font-size:20px !important; transition:none !important)
+!
 ! not aside column, but banner
 ! update: there is an "real" aside there too
 !ozon.*##aside
