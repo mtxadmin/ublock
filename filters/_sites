@@ -2304,6 +2304,9 @@ asus.com##[class*="filterButtonWrapper"]
 asus.com##.asusOfficialProductMenu:style(position:static !important)
 asus.com##[class^=HeaderDesktop__logo]
 asus.com##[class^=Footer__communityLink]
+asus.com##.reminder-info
+asus.com###rogLogo
+asus.com##[class^=Header__asusLogo]
 
 ataka-ssm.ru###dhtmlgoodies_marquee
 
@@ -8617,6 +8620,9 @@ extreme-shop.ru##.cmsmasters_theme_icon_slide_top
 extremetube.com##.text-link
 extremetube.com###onpagetext
 
+ex-u.ru$inline-script  # site blocks copypaste
+ex-u.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
+
 eyeo.com###site-header
 
 ||ezar.ru/wp-content/uploads/2017/03/Webinar-300x250.jpeg
@@ -14200,6 +14206,13 @@ kolesa.ru##.widget-comments.widget
 kolesa.ru##.link-to-catalog
 kolesa.ru##.widget-major-auto-test-drive
 
+! top loans banner
+kolesa-darom.ru##.panel
+! popup
+kolesa-darom.ru##.header-city-tooltip
+
+kolesadom.ru##.bottom-center
+
 kolundrov.ru##.whb-general-header-inner:style(height:auto !important)
 kolundrov.ru##.single-breadcrumbs-wrapper:style(margin-top:0px !important)
 kolundrov.ru##.title-shop
@@ -17554,6 +17567,10 @@ mosautoshina.ru##.hit_description
 mosautoshina.ru##.mastercardgif
 mosautoshina.ru##.visagif
 mosautoshina.ru###reg
+mosautoshina.ru##.action-image
+mosautoshina.ru##.product-actions-carousel
+mosautoshina.ru###actions.product-actions
+mosautoshina.ru###alternatives.products-list
 
 mosavtoshkola.org##.ledforma-statiy
 mosavtoshkola.org##.leadforma-1
@@ -20185,6 +20202,7 @@ partitionwizard.com##.article-summary
 ! inline related
 partitionwizard.com##.article-recommend
 partitionwizard.com##.main-menu-download-btn
+partitionwizard.com##.article-down-btn
 
 partnerkin.com##.sdv_item
 partnerkin.com##.banner_block_300_400_left
@@ -21816,6 +21834,8 @@ psbank.ru##rtl-banner-slider
 psbank.ru##.sidebar-card-proposal
     ! top
 psbank.ru##.rui-tab-header-pagination-after-disabled
+psbank.ru##.login-page__logo
+    ! other
 
 psdinfo.pro##.QUICK_ACTION_BAR
 
@@ -22979,10 +22999,11 @@ rk-rti.ru##.popup-policy
 ||rk-rti.ru/*/icon-arrow.png
 rk-rti.ru##.b-start-arrow
 
+||rlsnet.ru/js/statistics/  # is in Adguard
     ! popups
 rlsnet.ru##.attention-modal
     ! banners and promos
-rlsnet.ru##.btn-primary
+!rlsnet.ru##.btn-primary - don't, туда же попадают и цены, они пусть будут
     ! other
 rlsnet.ru##.side-bar-block
 rlsnet.ru##.b-side-bar__top-link
@@ -27840,6 +27861,7 @@ tiktok.com##[class*=StyledLinkLogo]
 ||tildacdn.com/js/tilda-events
 ||tildacdn.com/js/tilda-fallback  # https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js
 ||tildacdn.com/js/tilda-stat  # ad telemetry script
+||tildacdn.com/js/tilda-upwidget
 ||tildacdn.com/*/noroot.png
     !
     ! Большинство сайтов злоупотребляет диалоговыми окнами, поэтому по умолчанию они убраны
@@ -28384,6 +28406,8 @@ travmatik.com##.mainheadertext
 travmatik.com##[src*="data:image/png;base64,"]
 
 treasury.gov###usa-header:style(position:static !important)
+
+treeofbonsai.ru$inline-script  # site blocks copypaste
 
 trekker.net##.site-header
 
@@ -32246,6 +32270,9 @@ zachestnyibiznes.ru##.to-stat
 zaeto.ru##div:nth-of-type(1) > center > table > tbody > tr:nth-of-type(1)
 
 zagony.ru###vote-layer
+
+zakipyati.ru$inline-script  # site blocks copypaste
+zakipyati.ru##+js(set-attr, img, src, [data-lazy-src])
 
 zakon.kz##.vkurse_logo
 
