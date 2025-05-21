@@ -234,6 +234,7 @@ finance.ozon.*##.paranja:has-text(/Зв(е|ё)зды/i)
 ||ozone.ru/_nuxt/cms-all-banner*
 ||ozone.ru/graphics/bx/
 ||ozon.*/highlight/$important  # from Ru AdList: @@||ozon.ru/highlight/kursk-$elemhide
+||ozone.ru/s3/cms/*/logo_ozon$image
 ||ozone.ru/s3/marketing-api/
 ||ozonusercontent.com/s3/marketing-api/
 ||ozone.ru/s3/fs-chat-api/$image  # banners
@@ -593,6 +594,7 @@ finance.ozon.*##.bg-new
 ||wildberries.ru/stats/
 !||wildberries.co.il/stats/
 !||wildberries.fr/stats/
+||wildberries.ru/webapi/stats/events$redirect-rule=nooptext
     ! visited goods
 ||wildberries.ru/visitedgoods
 !||wildberries.co.il/visitedgoods
@@ -614,6 +616,7 @@ wildberries.ru##.j-recent-items > .recently-watched
 !||wb.ru/sdk/sdk.js$redirect=noop.js
 ||wb.ru/*/customTags/banners$redirect=noop.js
 ||wildberries.ru/get-geo-info  # user-geo-data.wildberries.ru/get-geo-info
+||wildberries.ru/journal/api/v1/set  # tracking xhrs: ||journal-bt.wildberries.ru/journal/api/v1/set
 ||wildberries.ru/public/v1/banners$redirect=noop.js
 ||wb.ru/vol0/data/banners$redirect=noop.js
 ||wbstatic.net/data/banners$redirect=noop.js
@@ -648,6 +651,9 @@ wildberries.ru##.tooltip-product-variant
 wildberries.ru##.jqmOverlay
 ! from Ru AdList
 wildberries.ru##.jqmWindow
+wildberries.ru##.tooltip-menu-purchases-cert
+wildberries.ru##.subscription-popup__wrapper.popup
+wildberries.ru##.overlay
     ! promos and banners
 wildberries.ru##.i-spec-action
 wildberries.ru##.spec-action
@@ -669,6 +675,9 @@ wildberries.ru##.j-promo-carousel-wrapper
 wildberries.ru##.j-advert-block-wrapper
 ! from Adguard, Ru AdList
 wildberries.ru##.footer__banner
+! wallet promo
+wildberries.ru##.wb-wallet--base.wb-wallet
+wildberries.ru##.service-fee
     ! old (striked out) prices
 wildberries.ru##.price-last
 wildberries.ru##.price-old-block
@@ -680,9 +689,10 @@ wildberries.ru##.price__wrap del
     ! labels
 wildberries.ru##.product-card__tip-wrap
 wildberries.ru##.product-card__tip
-    ! credits
+    ! loans
 wildberries.ru##.price-block__credit-payment
 wildberries.ru##.list-item__price-credit
+wildberries.ru##.b-top__bpl-switch:has-text(Оплатить потом)
     ! up button
 wildberries.ru##.j-quicknav
 wildberries.ru##.quicknav-v1
