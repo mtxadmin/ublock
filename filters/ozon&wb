@@ -151,6 +151,11 @@ mm.ru##.seller-container:style(position:static !important)
 !||ozone.ru/assets/*/vendor- - don't: vendor-core.js, vendor-vue.js
 !||ozone.ru/assets/cms-desktop-top-bar - don't
 !
+! Этот скрипт показывает адрес доставки в заголовке. Но заодно он запрашивает location постоянно. Задолбало.
+||ozone.ru/assets/*/addressBookMap-all-addressbook-bar.js$redirect=noopjs
+! Еще один, вызывается при вызове карты и блокирует её. Этот оставляем, тем более, что он не каждый раз запрашивает же, как предыдущий
+!||ozone.ru/assets/*/addressBookMap-address-book-container.js$redirect=noopjs
+!
 ||v.ozone.ru/vod/*/tile.mp4  # видео в карточках: слегка подбешивает
 ! Update: слишком радикально. Там иногда полезное. Плюс вроде видео в отзывах попадает
 ! Update2: видео в отзывах отломалось независимо от этого. Не нашел причину, что-то со скриптами, но дело не в этом правиле. 
@@ -298,6 +303,8 @@ ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/smennye-kassety-gille
 ozon.ru##div:has(>a[href^="/product/sber-"])
 ! Пакеты эти с помидорами на фотке ну вечно лезут постоянно
 ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/pakety-s-rezinkoy-dlya-hraneniya-produktov"])
+! Дичь убираем
+ozon.ru##.tile-root:has-text(Арбидол)
 !
 ozon.*##[data-widget="skuGridSimple"]:has-text(Лучшие предложения)
 ozon.*##[data-widget="skuShelfGoods"]
