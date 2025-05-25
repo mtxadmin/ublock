@@ -66,8 +66,11 @@ webcollector-rtm.agora.io
 allawnos.com  # telemetry from Chinese phones: Realme, Itel confirmed
     # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
     ! But lk-fastboot-us.allawnos.com may be needed in case of non-EU Realme device
-shtranssion.com  # their additional domain (now used for emails)
-
+    ! opex-service-eu.allawnos.com  # from Mahakala
+    ! opex-service-sg.allawnos.com  # from Mahakala
+shtranssion.com  # their additional domain (now used for emails)  # also is in Mahakala
+    ! mis.shtranssion.com  # from BlockListProject - Ads
+    ! public.shtranssion.com  # Unknown - Tracker  # from Quidsup NoTrack-Blocklist
 allawntech.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
 
 !data.alexa.com  # from NextDNS native-tracking-domains alexa
@@ -431,6 +434,7 @@ palm.id  # app on Chinese phones by Transsion (tech.palm.id: Tecno, Infinix, Ite
 palm.tech  # "AccessDenied Anonymous access is forbidden ... https://api.alibabacloud.com/troubleshoot"
 
 ! Tik-Tok logs  https://www.securitylab.ru/analytics/510846.php
+api16-normal-c-useast1a.tiktokv.com
 api-boot.tiktokv.com
 api-core-boot.tiktokv.com
 applog.musical.ly  # also is in ShadowWhisperer's Tracking
@@ -488,6 +492,7 @@ xlog-va.musical.ly.edgesuite.net  # from ShadowWhisperer's Tracking
 xlog-va.tiktokv.com  # from ShadowWhisperer's Tracking
 xlog-va.byteoversea.com  # from ShadowWhisperer's Tracking
 xlog-va.byteoversea.com.edgesuite.net  # from ShadowWhisperer's Tracking
+api16-normal-c-useast1a.tiktokv.com.domain.name  # from Mahakala
 
 myinstashot.com  # "Hello" root  # from Adguard
 
@@ -610,6 +615,7 @@ samsungadhub.com  # from Energized Blu and EasyList  # Samsung - Advertising  # 
 samsungads.com  # from BlockListProject/SmartTV
 capi.samsungcloud.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 dir-apis.samsungdm.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
+samsung-gamelauncher.com  # api.glb.samsung-gamelauncher.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
 samsungotn.net  # from BlockListProject/SmartTV
 samsungrm.net  # from BlockListProject/SmartTV
 sspapi-prd.samsungrs.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
@@ -619,8 +625,14 @@ samsungtvads.com  # Samsung - Advertising  # from Quidsup NoTrack-Blocklist
 pushmessage.samsung.com
     ! sdk.pushmessage.samsung.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491434175
 bigdata.ssp.samsung.com  # from NextDNS native-tracking-domains samsung
+    ! ew1.reg.bigdata.ssp.samsung.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
 mcsvc.samsung.com  # https://github.com/hagezi/dns-blocklists/issues/794#issuecomment-1491480390  # https://github.com/hagezi/dns-blocklists/issues/273 - possible breaking
     ! us-api.mcsvc.samsung.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
+sca.samsung.com
+    ! prd.sca.samsung.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
+data-private.samsunghealth.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
+diagmon-policy.samsungdm.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
+diagmon-serviceapi.samsungdm.com  # Samsung - Tracker  # from Quidsup NoTrack-Blocklist
 eu-auth2.samsungosp.com  # is in BlockListProject/SmartTV
 push.samsungosp.com  # is in BlockListProject/SmartTV: gld.push.samsungosp.com
 gpm.samsungqbe.com  # is in BlockListProject/SmartTV
@@ -774,6 +786,8 @@ ping.ublock.org  # from Peter Lowe's hosts file
 insight.ucweb.com
     ! adn.insight.ucweb.com  # from Adguard
 
+analytics.unity3d.com  # app requests
+!
 cloud.unity3d.com
 ! analytics.cloud.unity3d.com  # from Energized Blu and Adguard
 ! cdp.cloud.unity3d.com  # from Energized Blu, MobileAdTrackers, Adguard
@@ -794,6 +808,8 @@ eloqua-tracking.unity3d.com  # from GoodbyeAds
 eloqua-trackings.unity.com  # from GoodbyeAds
 eloqua-trackings.unity3d.com  # from GoodbyeAds
 !
+iads.unity3d.com  # from ShadowWhisperer's Ads
+!
 iads.unity3d.com  # from Adguard
 !
 iap.unity3d.com
@@ -811,12 +827,19 @@ internal.unity3d.com
     ! mediation-tracking.prd.mz.internal.unity3d.com  # from Adguard
     ! tracking.prd.mz.internal.unity3d.com  # from Energized Blu and MobileAdTrackers
 !
-mediation.unity3d.com  # from Adguard
+o.isx.unity3d.com  # from Steven Black Unified hosts
+w.isx.unity3d.com  # from Steven Black Unified hosts
+!
+mediation.unity3d.com  # app requests  # is in Adguard
 !
 mz.unity3d.com
     ! events.mz.unity3d.com  # app ads
 !
+operate-sdk-telemetry.unity3d.com  # from ShadowWhisperer's Tracking, Mahakala
+!
 stats.unity3d.com  # from MobileAdTrackers
+!
+tracker.unity3d.com  # from Mahakala
 !
 hwstats.unity3d.com  # from Energized Blu and Adguard
 !
@@ -847,11 +870,13 @@ unityads.unity3d.com  # from Energized Blu
 ! publisher-event.unityads.unity3d.com
 ! tracking.adsx.unityads.unity3d.com
 ! end of unityads.unity3d.com
+unityads.unitychina.cn  # from Mahakala
 !
 unity3d.com.edgekey.net  # from GoodbyeAds
 !+  unityads.unity3d.com.edgekey.net  # is in Adaway
 unityads.unitychina.cn  # from Energized Blu
 ! config.unityads.unitychina.cn
+cdn-creatives-akamaistls-prd.acquire.unity3dusercontent.com  # from Mahakala
 
 tracking.unrealengine.com  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
 
@@ -862,6 +887,11 @@ ads-d.viber.com  # from MobileAdTrackers
 !ads.aws.viber.com  # from MobileAdTrackers
 
 !t.vimeo.com  # from Adguard
+
+monitor-stsdk.vivo.com.cn  # Vivo - Tracker  # from Quidsup NoTrack-Blocklist
+news-abroad.vivo.com  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
+ort-stsdk.vivo.com.cn  # Vivo - Tracker  # from Quidsup NoTrack-Blocklist
+picanalysis.vivo.com.cn  # Vivo - Tracker  # from Quidsup NoTrack-Blocklist
 
 #api.vk.com  # block!  # api.vk.com$domain=~vk.com|~foto-map.ru,important  # update: don't. It needed for apps (official and third-party)
 stats.vk-portal.net  # is in EasyPrivacy
