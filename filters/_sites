@@ -1097,8 +1097,15 @@ aif.ru###subscription_sidebar_block
 
 aiotestking.com##.best-seller.btn
 
+    ! popups
 ! popup background
 airbnb.*##header + div.dir-ltr.dir:has-text(/^$/)
+airbnb.*##[data-testid="modal-container"]:has-text(Теперь мы)
+airbnb.*##[data-testid="modal-container"]:has(svg)
+    ! other
+airbnb.*##[date-testid="tab-bar-new-badge"]
+! video icons (!)
+airbnb.*##video[data-testid="tab-bar-entry-video"]
 
 aireng.ru##.pop-block
 
@@ -1298,7 +1305,7 @@ aslife.ru##.main-slider
 ||ocenka-alfabank.ru/dist/img/alfa_icon_adv$image
     ! top
 alfabank.ru##.page__header:style(position:static !important)
-alfabank.ru###switch:style(position:static ! important)
+alfabank.ru###switch:style(position:static !important)
 alfabank.ru##.page-layout__headings:style(padding-top:0px !important)
 alfabank.ru##h1:style(margin-top:0px !important; margin-bottom:0px !important)
 alfabank.ru##.footer__inner:style(padding-top:0px !important)
@@ -7302,6 +7309,8 @@ drom.ru##button[data-ga-stats-name=scroll_to_top_button]
 drom.ru##.stats
 drom.ru##div[data-ga-stats-name="widgetNewBlock"]
 drom.ru##div:has(>.b-tire-scroll):style(position:static !important)
+! ?
+drom.ru##.drom-mobile
 ! lazyload: data-src
     drom.ru##+js(set-attr, img[data-lazy="true"], src, [data-src])
     ! site hides imgs by inline css. Very strange why
@@ -7361,7 +7370,7 @@ drtuber.com##.premium-video-wrapper
 ||drupal.org/files/drupal-wordmark.svg
 
 ||dsk1.ru/img/new-main/icons/phone.svg
-dsk1.ru##.v3-header:style(position:static ! important)
+dsk1.ru##.v3-header:style(position:static !important)
 dsk1.ru##.v3-shynav.v3-header-wrapper
 dsk1.ru##.v3-shynav.v3-header-wrapper
 dsk1.ru##.accept-cookies
@@ -8049,7 +8058,7 @@ elyts.ru##.btn-whatsapp
 elyts.ru##.service__container
 elyts.ru##.main-brands-list
 
-em-an.ru##.top_bar_menu:style(position:static ! important)
+em-an.ru##.top_bar_menu:style(position:static !important)
 em-an.ru##.top_bar:style(position:static !important)
 
 ||e-mba.ru/advcakeAsync.js
@@ -11312,7 +11321,6 @@ hausberg.ru##.infoline
 hausberg.ru###sbscr-bar
 hausberg.ru##.back-link
 
-!hbr.org##.sticky-top-header:style(position:static ! important)
 hbr.org##.persistent-banner
 hbr.org##.sticky-top-header:style(position:static !important)
 
@@ -19133,7 +19141,7 @@ nxlog.co##.icon
 ||nytimes.com^*/data-layer?  # is in EasyPrivacy
 ||nyt.com/ads/tpc-check.html
 nytimes.com##div:matches-css(position:fixed)
-nytimes.com##*:matches-css(position:fixed):style(position:static ! important)
+nytimes.com##*:matches-css(position:fixed):style(position:static !important)
 
 ! popup
 nzmir.ru##.sg_seo_modal_block
@@ -22035,7 +22043,7 @@ quizlet.com##.SetPage-adzWrapper
     ! top
 quora.com##.logo_fill
 quora.com##[class*=position__Fixed]:style(position:static !important)
-quora.com##.q-sticky:style(position:static ! important)
+quora.com##.q-sticky:style(position:static !important)
 quora.com##.q-fixed:style(position:static !important)
 quora.com##.q-box:has-text(/^$/):matches-css(height:50px)
     ! paywall
@@ -32092,7 +32100,7 @@ yourdailygerman.com###new-branding
 yourdailygerman.com###top-wrapper:style(position:static !important)
 yourdailygerman.com##.nl_sub_toggle
 yourdailygerman.com##.sticky-footer-wrap-bg:style(position:static !important)
-yourdailygerman.com##.sticky-footer-wrap:style(position:static ! important)
+yourdailygerman.com##.sticky-footer-wrap:style(position:static !important)
 yourdailygerman.com##.mailpoet_form
 
 ||yourdailygirls.com/gifs/
