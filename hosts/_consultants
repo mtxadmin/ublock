@@ -192,66 +192,37 @@
 ##[id*="callback"]:not(html):not(body):not(article)
 !
 !! very good and useful rules in general, but messengers, streaming and webinar services must be excluded
-~alfabank.ru,~aliexpress.com,~auto.ru,~bizon365.ru,~dhgate.com,~fincult.info,~hh.ru,~openai.com,~psbank.ru,~sberbank.ru,~theb.ai,~vtb.ru,~worknf.ru,~telemost.yandex.ru,~youtube.com##[class*="Chat"]:not(html):not(body):not(article):not(section)
-    ! Exclusions:
-    ! aliexpress.com - useful support chat
-    ! auto.ru - useful chat
-    ! banks - useful support chat
-    ! bizon365.ru - videos/streams
-    ! dhgate.com - useful support chat
-    ! fincult.info - don't remember, I think, videos/streams
-    ! hh.ru - chats on a job site
-    ! openai.com - ChatGPT
-    ! theb.ai - ChatGPT
-    ! telemost.yandex.ru - like Russian Zoom, videoconferences (bad, but it was a nice try)
-    ! youtube.com - videos/streams. See #61
-~alfabank.ru,~openai.com,~psbank.ru,~sberbank.ru,~striveapp.ru,~theb.ai,~vtb.ru,~worknf.ru##[id*="Chat"]:not(html):not(body):not(article):not(section)
-    ! Exclusions:
-    ! banks - useful support chat
-    ! openai.com - ChatGPT
-    ! striveapp.ru - Trello-like service, chats in tasks
-    ! theb.ai - ChatGPT
-    ! worknf.ru - don't remember, I think, videos/streams
-~advance24.online,~alfabank.ru,~aliexpress.com,~auto.ru,~bastyon.com,~pocketnet.app,~bizon365.ru,~clickmeeting.com,~dhgate.com,~fincult.info,~followme2serbia.com,~gosuslugi.ru,~chatik.hh.ru,~icq.com,~openai.com,~profteh.com,~psbank.ru,~sberbank.ru,~telemetr.io,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
-    ! Exclusions:
+~advance24.online,~alfabank.ru,~aliexpress.com,~auto.ru,~bastyon.com,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~gosuslugi.ru,~hh.ru,~openai.com,~pocketnet.app,~profteh.com,~psbank.ru,~sberbank.ru,~striveapp.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[class*="Chat"]:not(html):not(body):not(article):not(section)
+~advance24.online,~alfabank.ru,~aliexpress.com,~auto.ru,~bastyon.com,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~gosuslugi.ru,~hh.ru,~openai.com,~pocketnet.app,~profteh.com,~psbank.ru,~sberbank.ru,~striveapp.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[id*="Chat"]:not(html):not(body):not(article):not(section)
+~advance24.online,~alfabank.ru,~aliexpress.com,~auto.ru,~bastyon.com,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~gosuslugi.ru,~hh.ru,~openai.com,~pocketnet.app,~profteh.com,~psbank.ru,~sberbank.ru,~striveapp.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"])
+~advance24.online,~alfabank.ru,~aliexpress.com,~auto.ru,~bastyon.com,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~gosuslugi.ru,~hh.ru,~openai.com,~pocketnet.app,~profteh.com,~psbank.ru,~sberbank.ru,~striveapp.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"])
+    ! Exclusions (combined. Add them to all rules to be sure):
     ! advance24.online - videos/streams
     ! aliexpress.com - useful support chat
     ! auto.ru - useful chat
     ! banks - useful support chat
     ! bastyon.com, pocketnet.app - a social platform
     ! bizon365.ru - videos/streams
-    ! chatik.hh.ru - chats on a job site
     ! clickmeeting.com - videos/streams
+    ! deepseek.com - ChatGPT-like chatbot, not embedded, just single-user AI
     ! dhgate.com - useful support chat
+    ! facebook.com - chats in a social network
     ! fincult.info - don't remember, I think, videos/streams
     ! followme2serbia.com - .category-dostoprimechatelnosti
     ! gosuslugi.ru - useful support chat
-    ! hh.ru - chats with employers
-    ! icq.com - chat windows on a messenger site
-    ! openai.com - ChatGPT
+    ! hh.ru - chats with employers on a job site
+    ! icq.com - chat windows on a messenger site. Was owned by mail.ru. Closed.
+    ! openai.com - ChatGPT-like chatbot, not embedded, just single-user AI
     ! profteh.com - big pdd platform
+    ! striveapp.ru - Trello-like service, chats in tasks
     ! telemetr.io - don't remember
-    ! theb.ai - ChatGPT
-    ! twitch.tv - videos/streams
-    ! vk.com - chat windows on a social network
-    ! worknf.ru - don't remember, I think, videos/streams
-    ! yandex.ru - like Russian Zoom, videoconferences (bad, but it was a nice try; telemost.yandex.ru and yandex.ru/chat)
-    ! youtube.com - videos/streams. See #61
-~alfabank.ru,~bizon365.ru,~clickmeeting.com,~deepseek.com,~facebook.com,~gosuslugi.ru,~chatik.hh.ru,~openai.com,~psbank.ru,~sberbank.ru,~telethon.dev,~theb.ai,~twitch.tv,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"])
-    ! Exclusions:
-    ! banks - useful support chat
-    ! bizon365.ru - videos/streams
-    ! clickmeeting.com - videos/streams
-    ! deepseek.com - chatbot, not embedded, just single-user AI
-    ! gosuslugi.ru - useful support chat
-    ! hh.ru - chats with employers
-    ! openai.com - ChatGPT
     ! telethon.dev - don't remember, maybe teleconference site
-    ! theb.ai - ChatGPT
+    ! tenchat.ru - not a chat service, some kind of a marketing wannabe-social network
+    ! theb.ai - ChatGPT-like chatbot, not embedded, just single-user AI
     ! twitch.tv - videos/streams
     ! vk.com - chat windows on a social network
     ! worknf.ru - don't remember, I think, videos/streams
-    ! yandex.ru - chat window for telemost.yandex.ru (or yandex.ru/chat)
+    ! yandex.ru - like Russian Zoom, videoconferences (bad, but it was a nice try; telemost.yandex.ru -> yandex.ru/chat)
     ! youtube.com - videos/streams. See #61
     ! zoom.us - teleconference service
 !
