@@ -7459,6 +7459,7 @@ duckduckgo.com##.header--aside__item
 duckduckgo.com##.footer
 duckduckgo.com##div:has(>div>div>span[data-testid="feedback-prompt"])
 duckduckgo.com##.feedback-btn
+duckduckgo.com##button:has-text(Share Feedback)
     ! other
 duckduckgo.com##.is-invisible:style(visibility:visible !important)
 ! from https://www.reddit.com/r/uBlockOrigin/comments/bghc9n/facebook_filter_list/
@@ -13624,6 +13625,9 @@ kak-bog.ru##.h1header
 kak-bog.ru###shapka
 
 kakoydomstroit.ru##.elementor-image
+
+kak-pochemy.ru$inline-script  # site blocks copypaste
+kak-pochemy.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
 
 kak-podkluchit.ru###headermiddle
 kak-podkluchit.ru###headerdown
@@ -19877,6 +19881,9 @@ osboxes.org##.widget-recent-posts
 
 os-helper.ru##.group.sidebar-top
 
+oslovah.ru$inline-script  # site blocks copypaste
+oslovah.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
+
 osmc.tv##.big.header-link
 
 ws-front.osnova.io  # ad websocket?
@@ -24952,6 +24959,9 @@ shopify.com##.remix-header:style(position:static !important)
     ! other
 
 shop-modern.ru$inline-script  # site blocks copypaste
+
+shopnwf.org###modalEmailSignup
+shopnwf.org##.site-top-header
 
 shopolog.ru##.b-catalog:has-text(Подписаться)
 shopolog.ru##.modal
@@ -30329,6 +30339,7 @@ volveter.ru##.shine::before
 ! don't edit
 volveter.ru##.image_wrapper_block img:style(position:static !important)
 volveter.ru##.tab_slider_wrapp
+volveter.ru##.price_txt > .text > span
 
 ||vooosoo.ru/*/body_background.png
 vooosoo.ru##.background
@@ -32654,6 +32665,9 @@ znaipravodo.ru###head_top_block.head_top
 znak.com##.donate_text
 znak.com##.menu_donate
 znak.com##.minilogo
+
+znakizodiaka.info$inline-script  # site blocks copypaste
+znakizodiaka.info##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
 
 znanija.com##.sg-header--fixed:style(position:static !important)
 znanija.com##.sg-icon-as-button
