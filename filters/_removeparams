@@ -578,6 +578,7 @@ $removeparam=clicktime  # from DandelionSprout's URLShortener
     $removeparam=gclid  # Campaign tracking (Google Analytics, ga)  # from NeatURL, Adguard, Ru AdList, uBlock filters
         ! ||youtube.com^*gclid*$removeparam=gclid  # by gorhill. See https://github.com/uBlockOrigin/uBlock-issues/issues/760#issuecomment-719952467  # also it is found indepedently and presents in NeatURL. Very popular parameter.
     $removeparam=iclid  # from Adguard
+    $removeparam=mclid  # from NoADS_RU
     dell.com$removeparam=nclid  # from DandelionSprout's URLShortener
     $removeparam=pclid  # from Ru AdList
     cz$removeparam=sznclid  # some Czech params
@@ -837,20 +838,20 @@ $removeparam=gaa_n  # from DandelionSprout's URLShortener
 $removeparam=gaa_sig  # from DandelionSprout's URLShortener
 $removeparam=gaa_ts  # from DandelionSprout's URLShortener
 
-$removeparam=gci  # from Adguard
-
-$removeparam=_gid  # from DandelionSprout's URLShortener
-
-$removeparam=_gl  # is in Ru AdList and uBlock filters
-    ! 24tv.ua$removeparam=_gl
-
-$removeparam=gm  # from Ru AdList, modified
+$removeparam=gad_source  # seems like it's new Google analytics param. Together with gbraid
 
 $removeparam=gbraid  # Google ads/analytics  # from Adguard and uBlock filters
 
+$removeparam=gci  # from Adguard
+
 $removeparam=gclsrc  # Campaign tracking (Google Analytics, ga)  # from NeatURL, Adguard, uBlock filters
 
-$removeparam=_gl  # from Adguard
+$removeparam=_gid  # from DandelionSprout's URLShortener
+
+$removeparam=_gl  # is in Ru AdList, uBlock filters, Adguard
+    ! 24tv.ua$removeparam=_gl
+
+$removeparam=gm  # from Ru AdList, modified
 
 $removeparam=GoogleAnalytics__ga  # from DandelionSprout's URLShortener
 $removeparam=google_gid  # from DandelionSprout's URLShortener
@@ -2331,6 +2332,9 @@ adressa.no$removeparam=/^rs[0-9]/i  # from DandelionSprout's URLShortener
 
 ! adshares.net - blocked entirely, just for information. But.
 adshares.net$removeparam=cid  # from Adguard
+
+! adsninja.ca - blocked entirely, just for information
+adsninja.ca$removeparam=url  # from uBlock filters
 
 ! adweek.com - blocked entirely, just for information. But.
 adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
