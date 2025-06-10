@@ -418,13 +418,13 @@ ozon.*##[data-widget="objectLine"]:has-text(/распродаж/i)
 ozon.*##div[data-widget="skuGrid"]:matches-path(miniapp=)
 ozon.*##[data-widget="cell"]:has-text(Время призов)
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
-         ozon.ru##a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"]
+                            ozon.ru##a[href*="/product/elektronnyy-podarochnyy-sertifikat"]
 ozon.by##div:has(>a[href^="https://www.ozon.by/product/elektronnyy-podarochnyy-sertifikat"])
-         ozon.by##a[href^="https://www.ozon.by/product/elektronnyy-podarochnyy-sertifikat"]
+                            ozon.by##a[href*="/product/elektronnyy-podarochnyy-sertifikat"]
 ozon.com##div:has(>a[href^="https://www.ozon.com/product/elektronnyy-podarochnyy-sertifikat"])
-         ozon.com##a[href^="https://www.ozon.com/product/elektronnyy-podarochnyy-sertifikat"]
+                             ozon.com##a[href*="/product/elektronnyy-podarochnyy-sertifikat"]
 ozon.kz##div:has(>a[href^="https://www.ozon.kz/product/elektronnyy-podarochnyy-sertifikat"])
-         ozon.kz##a[href^="https://www.ozon.kz/product/elektronnyy-podarochnyy-sertifikat"]
+                            ozon.kz##a[href*="/product/elektronnyy-podarochnyy-sertifikat"]
 ozon.ru##a[href^="https://www.ozon.ru/landing/"]:has(img)
 ozon.by##a[href^="https://www.ozon.by/landing/"]:has(img)
 ozon.com##a[href^="https://www.ozon.com/landing/"]:has(img)
@@ -434,18 +434,21 @@ ozon.*##a[href^="/landing/"]
 ozon.*##a[href^="/partpayment/"]
 ozon.*##a[href^="/premium/"]
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/special/care/"])
-         ozon.ru##a[href^="https://www.ozon.ru/special/care/"]
+                            ozon.ru##a[href*="/special/care/"]
 ozon.by##div:has(>a[href^="https://www.ozon.by/special/care/"])
-         ozon.by##a[href^="https://www.ozon.by/special/care/"]
+                            ozon.by##a[href*="/special/care/"]
 ozon.com##div:has(>a[href^="https://www.ozon.com/special/care/"])
-         ozon.com##a[href^="https://www.ozon.com/special/care/"]
+                             ozon.com##a[href*="/special/care/"]
 ozon.kz##div:has(>a[href^="https://www.ozon.kz/special/care/"])
-         ozon.kz##a[href^="https://www.ozon.kz/special/care/"]
+                            ozon.kz##a[href*="/special/care/"]
 ozon.*##[data-widget="userAvatar"]
 ozon.ru##a[href="https://finance.ozon.ru/"]:has(img)
 ozon.by##a[href="https://finance.ozon.by/"]:has(img)
 ozon.com##a[href="https://finance.ozon.com/"]:has(img)
 ozon.kz##a[href="https://finance.ozon.kz/"]:has(img)
+ozon.*##a[href^="https://pvz.ozon.ru/"]:has(img)
+ozon.*##a[href^="https://seller.ozon.ru/"]:has(img)
+ozon.*##a[href^="https://www.ozon.ru/business/"]:has(img)
 finance.ozon.*##.notification:has-text(подписку)
 finance.ozon.*##.premium-benefit-card
 finance.ozon.*###modal-container:has(button:has-text(Получить бесплатно))
