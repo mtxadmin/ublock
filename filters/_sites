@@ -7165,15 +7165,17 @@ drimsim.com##.remodal-bg:style(filter:none !important)
 drive.ru##.feedsub
 
     ! banners and promos
-drive2.ru##.g-column-wide > .c-block:has-text(Реклама)
-drive2.ru##.c-infoblock:has-text(Зарегистрироваться)
-drive2.ru##.c-bavcard
+drive2.com,drive2.ru##.g-column-wide > .c-block:has-text(Реклама)
+drive2.com,drive2.ru##.c-header:has-text(Реклама)
+drive2.com,drive2.ru##.c-infoblock:has-text(Зарегистрироваться)
+drive2.com,drive2.ru##.c-bavcard
 ! banner after post
-drive2.ru##div:matches-css(min-height:/5\d\d/)
-drive2.ru##.x-text:has-text(Войдите или зарегистрируйтесь)
+drive2.com,drive2.ru##div:matches-css(min-height:/5\d\d/)
+drive2.com,drive2.ru##.x-text:has-text(Войдите или зарегистрируйтесь)
     ! top
 drive2.com,drive2.ru##.c-index-title
 drive2.com,drive2.ru##.l-header:style(position:static !important)
+drive2.com,drive2.ru##.c-top__tagline
     ! "я езжу на"
 drive2.com,drive2.ru##.c-user-card__cars
 drive2.com,drive2.ru##.c-user-mcard__meta
@@ -7187,7 +7189,9 @@ drive2.com,drive2.ru##.infoblock
 drive2.com,drive2.ru##.c-nightdrive
 drive2.com,drive2.ru##.c-pc-grid
 ! too big avatar
-drive2.ru##.c-user-lcard__pic
+drive2.com,drive2.ru##.c-user-lcard__pic
+! now they hide content by default
+drive2.com,drive2.ru##*:matches-css(visibility:hidden):style(visibility:initial !important)
 
 drivecard.club##.main-link > span
 
@@ -7947,6 +7951,7 @@ electro-mpo.ru##.s-float-header:style(position:static !important)
 
 ! lazyload data-ezsrc
 electronicshacks.com##+js(set-attr, img.ezlazyload, src, [data-ezsrc])
+electronicshacks.com###sticky-nav:style(position:static !important)
 
 electronicsweekly.com###loading
 electronicsweekly.com##.widget-description
@@ -9230,6 +9235,7 @@ focus.ua##.s-content > ul:has-text(ЧИТАЙТЕ ТАКЖЕ)
 focus.ua##p:has(strong:has-text(Telegram))
     ! other
 
+||forum.fonarevka.ru/images/misc/fonarevka-ru.png$image
 forum.fonarevka.ru###krsmPageNav
 forum.fonarevka.ru###krtab_content
 forum.fonarevka.ru###posts > .page
@@ -9827,6 +9833,8 @@ garvis.ca##.header
 ||gastrocure.net/images/zapis.jpg
 gastrocure.net##.customzapis-na-priem
 
+gastroe.ru##.bottom-line
+
     ! banners and promos
 gastronom.ru##[class^=_headerAd_]
 ! под Магнит легли, половина верхнего меню - галимая реклама, вторая половина бесполезна
@@ -9862,6 +9870,8 @@ gazeta.ua###header-wrapper
 gazeta.ua###menu-wrapper:style(margin-top:0px !important)
     ! other
 gazeta.ua###body_branding
+
+||gazprombank.ru/upload/mtm/  # matomo (ex-piwik) scripts
 
     ! popups
 gb.ru##.mn-region-suggest
@@ -10372,6 +10382,8 @@ glavred.net##.article__mistake
 
 glazdik.ru###dead-link
 glazdik.ru##.pre_post_info
+
+global-batteries.com##.code-block
 
 globalnews.ca##.l-article__details
 globalnews.ca##p > strong:has-text(READ MORE:)
@@ -14599,6 +14611,8 @@ kunalranpura.com##.blog-icon-fill
 kunalranpura.com##.post-metadata__readTime
 kunalranpura.com##a[href="https://www.kunalranpura.com"]
 
+kuper.ru##[class*=BrandNavigation_logo]
+
 ||kupibonus.ru/*partner=$third-party  # from Adguard
 ||kupibonus.ru/*/main_bg2.jpg
 ||kupibonus.ru/upload/resize_cache/iblock/$image  # ad images
@@ -15041,6 +15055,7 @@ lepide.com##.content-sec-form
 ||leroymerlin.kz/qrerror/
 leroymerlin.ru##p:has-text(отключить VPN)
 ||lemanapro.ru/tm.js
+||lemanapro.ru/*/qr.svg
     ! header
 leroymerlin.kz,leroymerlin.ru##ab-mobile-app
 leroymerlin.kz,leroymerlin.ru##.market-tab
@@ -15079,6 +15094,7 @@ leroymerlin.ru##div[data-qa-promo-carousel]
 leroymerlin.ru##[data-qa^="shock-price"]
 ||lemanapro.ru/*/promorazdel$image
 lemanapro.ru##[data-qa-carousel]
+lemanapro.ru##[data-qa="offer-card-container"]
     ! paying options
 leroymerlin.kz,leroymerlin.ru##.footer-main__pay
     ! sticky
@@ -16024,6 +16040,8 @@ madeiradata.com##form:has-text(STAY IN TOUCH)
 
 madlifes.com##+js(rc, backdrop-blur-md)
 madlifes.com##.fixed:has-text(cookies)
+
+madloba.info##.support-link
 
 mafia-guns.ru##.hcenter__social
 mafia-guns.ru##.header__bottom
@@ -20690,6 +20708,10 @@ pizzapirat.ru##.small-cart:style(position:static !important)
 pizzasushiwok.ru##.vert
 pizzasushiwok.ru##.apps
 
+pkcellpower.com##.right_nav
+pkcellpower.com##.head_layer:style(position:static !important)
+pkcellpower.com##.path_bar:style(position:static !important)
+
 ||pkclinok.ru/image/data/Baneri/
 pkclinok.ru##.section-slider-top
 
@@ -21800,6 +21822,7 @@ provereno.media###header:style(min-height:auto !important)
 provereno.media###header div:style(min-height:auto !important)
 	! other
 provereno.media##.mistape_caption
+provereno.media##.simple-banner
 
 provoda.me##.b-catalog-application
 provoda.me##.b-footer__button
@@ -23028,6 +23051,7 @@ rlsnet.ru##.footer__s-text
 rlsnet.ru##.b-side-bar:style(position:static !important)
 ! seo
 rlsnet.ru##.description
+rlsnet.ru##.js-reserve-pharmacy
 
 rmgcufa.ru##.nav-container:style(position:static !important)
 rmgcufa.ru##.nav-fixed:style(position:static !important)
@@ -25186,6 +25210,10 @@ skitalets.ru##.nav-link:style(color:initial !important)
 skitalets.ru##footer:style(color:initial !important)
 skitalets.ru##.footer-nav ul a:style(color:initial !important)
 
+||skladchinmore.net/images/h-content_img.png
+skladchinmore.net##.notice-content
+skladchinmore.net##.shopping-view-block
+
 sklcustoms.ru##.scroll-down.down-scroll
 
 skpodolsk1.ru##.sc_layouts_row_fixed_on:style(position:static !important)
@@ -27068,6 +27096,8 @@ technopark.ru##.recommendations-box
 technopark.ru##.credit-button
 
 ! technopoint.ru is dns-shop.ru project, look in there
+
+technopodbor.ru##.haggle-button
 
 technosova.ru##.bottomline
 technosova.ru###top_header_menu
@@ -29197,6 +29227,8 @@ universal-guns.ru##.flexBoxContacts
 unix.com##.pb-userinfo-wrapXXX
 
 unixforum.org##.headerbar
+
+||unizap.ru/navigathion/upimg.png$image
 
 unizoo.ru##.event-banner-b
 unizoo.ru##.card-b-stuff
