@@ -513,7 +513,7 @@ ozon.*##div:has(>div:has-text(/^[0-9]+% возвратов$/))
 ozon.*##div:has(>div:has-text(/^\s*Доберите до скидки/i)):not(:matches-path(/\/my\//))
 ozon.*##div:has(>div:has-text(/^\s*\d+\s*(балл(а|ов|) за отзыв|бонус(а|ов|))$/i))
 !
-ozon.*##div:has(>div:has-text(/^\s*^(Осталось|Новинка)$/i)):matches-path(//(search|category)/)
+!ozon.*##div:has(>div:has-text(/^\s*^(Осталось|Новинка)$/i)):matches-path(//(search|category)/)
 !ozon.*##section:has(>div:has-text(/^\s*^(Остал(о|а)сь (мало|[0-9]+ шт))$/i)):matches-path(//(search|category)/)
 !
 ! хорошо, но в категориях цепляется, очищает описания. Может, пока тупо сделать два правила? Ладно, попробуем пока условие на путь
