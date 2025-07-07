@@ -221,6 +221,7 @@ ozon.*##[data-widget="feedbackTile"]
 ! Не влияет на, собственно, избранное, просто визуальная фигня, чтобы задолбать человека
 ozon.*##[id^=state-webAddToFavorite]
 ozon.*##ozpopover
+ozon.*##div[append="true"][mountto="body"]
 ! totop
 ozon.*##[data-widget="homeButton"]
 finance.ozon.*###modal-container:has-text(Закажите)
@@ -263,7 +264,6 @@ ozon.*##[data-lcp-name*="anner-"]
 ozon.*##[data-widget="webPremiumPointsInfo"]
 ozon.*##[data-widget="webMarketingLabels"]
 ozon.*##[data-widget="premiumBanner"]
-ozon.*##[data-widget="seasonWidget"]
 !
 !ozon.*##[data-widget="skuGrid"] - too broad, there are useful recommendations there
 ozon.*##div[data-widget="skuGrid"]:has-text(/Вы покупали|Вы смотрели/)
@@ -395,7 +395,6 @@ ozon.kz##a[href^="https://www.ozon.kz/product/elektronnyy-lotereynyy-bilet"]
     ozon.kz##div:matches-css(height:156px):has(a[href^="https://www.ozon.kz/product/elektronnyy-lotereynyy-bilet"])
 ! temp debug
 !ozon.ru##[data-widget="container"]:has-text(Реклама):not(:matches-path(/\/(category|search)\//))
-ozon.*##[data-widget=objectLine]:has-text(Ловите часы продажи)
 ozon.*##[data-widget="row"]:has(div[data-widget="blackFridayCounter"])
 ozon.*##div:has(>img[src*="/blackfriday-"])
 ozon.*##[data-widget="skuLine"]:has-text(Лучшие предложения)
@@ -415,7 +414,10 @@ ozon.*##[data-widget="webListReviews"] ~ [data-widget="skuGrid"]:not(:matches-pa
 ! избранное захламляется посторонними вкраплениями. Оставляем только своё избранное.
 ozon.*##[data-widget="caption"]:has-text(Подобрано для вас) ~ [data-widget="paginator"]:matches-path(/my/favorites)
 ozon.*##[data-widget="actionCards"]
-ozon.*##[data-widget="objectLine"]:has-text(/распродаж/i)
+ozon.*##[data-widget="objectLine"]
+    ! earlier:
+    ! ozon.*##[data-widget="objectLine"]:has-text(/распродаж/i)
+    ! ozon.*##[data-widget="objectLine"]:has-text(Ловите часы продажи)
 ozon.*##div[data-widget="skuGrid"]:matches-path(miniapp=)
 ozon.*##[data-widget="cell"]:has-text(Время призов)
 ozon.ru##div:has(>a[href^="https://www.ozon.ru/product/elektronnyy-podarochnyy-sertifikat"])
@@ -472,7 +474,6 @@ ozon.ru##a[href="https://ballon.ozon.ru/"]
 ozon.by##a[href="https://ballon.ozon.by/"]
 ozon.com##a[href="https://ballon.ozon.com/"]
 ozon.kz##a[href="https://ballon.ozon.kz/"]
-ozon.*##[data-widget="seasonWidget"]
 ! top banner 2023-11
 ozon.*##div:matches-css(height:32px):has(img:matches-css(height:32px))
 ! top banner 2024-02
@@ -540,6 +541,7 @@ ozon.*##div:has(>span:has-text(/^Частями по /))
 ozon.*##span:has-text(/^Частями по /)
 ozon.*##div:has(> span:has-text(В рассрочку))
 ozon.*##a[href^="/modal/pdp_installment"]
+ozon.*##div[data-widget="cellList"]:has-text(Без переплат)
     ! seo
 ozon.*##[data-widget="semanticText"]
 ozon.*##[data-widget="tagList"]
