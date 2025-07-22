@@ -202,6 +202,8 @@
 
 /modules/mod_jpayday/*  # from Adguard
 
+/modules/mod_s5_contact_popup/*
+
 /modules/mod_socialmedialinks/*
     /mod_socialmedialinks/*  # is in 3 lists
 
@@ -559,7 +561,7 @@
 
 /plugins/automatic-social-locker/*  # from EasyList
 
-/plugins/autors-by-webnavoz/*
+!/plugins/autors-by-webnavoz/*  - see below at webnavoz
 
 /plugins/auto-terms-of-service-and-privacy-policy/*
 
@@ -860,6 +862,8 @@
 
 /plugins/copy-the-code/*$important
 
+/plugins/copy-to-clipboard/*
+
 /plugins/cordova-plugin-admobpro/*$important  # from EasyList
 /plugins/cordova-plugin-facebook4/*
 /plugins/cordova-plugin-fingerprint-aio/*$important
@@ -1074,6 +1078,8 @@
 /plugins/easy-sticky-notification-bar/*
 
 /plugins/easy-table-of-contents/*
+    ! /plugins/easy-table-of-contents/vendor/js-cookie/*
+    ! /plugins/easy-table-of-contents/vendor/sticky-kit/*
     !||planirovkainfo.ru/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/
     !||planirovkainfo.ru/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/
     !||planirovkainfo.ru/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/
@@ -1105,6 +1111,10 @@
         ! @@||elance-odesk.com/marketing-ui/master/js/interstitial.js  # from Fanboy's
 
 /plugins/elegance-modal-box/*
+
+/plugins/elementor/assets/lib/dialog/dialog.min.js
+    ##.dialog-widget
+        ! advanced-television.com##.dialog-widget
 
 /plugins/elfsight-countdown-timer-cc/*
 /plugins/elfsight-popup-cc/*  # from EasyList
@@ -1149,7 +1159,7 @@
 
 /plugins/expert-review/*
 
-/plugins/experts-by-webnavoz/*
+!/plugins/experts-by-webnavoz/*  - see below at webnavoz
 
 /plugins/express-ad-code-manager/*  # from Adguard
 
@@ -1193,6 +1203,7 @@
 /plugins/fiwex/*
 
 /plugins/fixed-toc/*  # also, this plugin breaks scrolling, so let's definitely block it
+    ##.ftwp-wrap
 
 /plugins/flare/*$~stylesheet  # is in Fanboy's
 
@@ -1597,7 +1608,7 @@
 
 /plugins/mailoptin/*$important  # see mailoptin.io
 
-/plugins/malihu-scrollbar-plugin/*
+/plugins/malihu-scrollbar-plugin/*  # jquery
     /malihu-custom-scrollbar-plugin/*  # autoreview.ru: not in /plugins/. Let's make a more global rule
         /jquery.mcustomscrollbar  # part of it
 
@@ -1867,11 +1878,13 @@
 
 /plugins/pg-advanced-ads/*
 
+/plugins/picassowp/js/pp_shortcodes.js
+
 /plugins/pinterest-$~stylesheet  # is in Fanboy's
     ! /plugins/pinterest-pin-it-button-on-image-hover-and-post/*  # from EasyList
 
 ! "manage Facebook Pixel  Created by AdEspresso, a certified Facebook Marketing Partner and #1 Facebook Ads Partner"
-/plugins/pixel-caffeine/*$important  # also see adespresso.com
+/plugins/pixel-caffeine/*$important  # also see adespresso.com  # now is in EasyPrivacy
 
 /plugins/pixelyoursite/*
 
@@ -2405,6 +2418,8 @@
 
 /plugins/sweetalert/*  # from Adguard
 /plugins/sweetalert2/*  # from Adguard
+    ||jsdelivr.net/npm/sweetalert2  # ad popup scripts
+    ##.swal2-container
 
 /plugins/swiftninjapro-inspect-element-console-blocker/*  # from Adguard
 
@@ -2615,6 +2630,12 @@
 /plugins/weblizar-pinterest-feeds/*
 
 /plugins/webnavoz*  # marketing guys
+    ! Also:
+    /plugins/autors-by-webnavoz/*
+    /plugins/experts-by-webnavoz/*
+    !/plugins/social-by-webnavoz/*  - see above at social
+    !
+    ! /plugins/webnavoz-button/*
     ! /plugins/webnavoz-notification-box
     ! /plugins/webnavoz-re-plugin
     ! /plugins/webnavoz-stream-gallery/*
@@ -2738,11 +2759,14 @@
 
 /plugins/wp-click-track/*  # from EasyPrivacy
 
+/plugins/wp-consent-api/*
+
 /plugins/wpconsent-premium/*  # from EasyList
 
 /plugins/wp-content-copy-protection/*  # from Adguard, uBlock, Ru AdList
 
 /plugins/wp-coupons-and-deals/*
+/plugins/wp-coupons-and-deals-premium/*
 
 /plugins/wp-cta-top-bar/*
 
@@ -2959,6 +2983,8 @@
 /plugins/yikes-inc-easy-mailchimp-extender/*
 
 /plugins/yith-woocommerce-membership-premium/*
+
+/plugins/yml-for-yandex-market/*
 
 /plugins/yop-poll/*
 /plugins/yop-poll-pro/*
