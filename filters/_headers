@@ -134,6 +134,7 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
     ! towardsdatascience.com##a[aria-label=Homepage]
 ##.custom-logo
     ! cisoclub.ru##.custom-logo
+    ! hatchjs.com##.custom-logo
     ! pcmobitech.com##.custom-logo
 ##.blog-logo
     ! helpadmins.ru##.blog-logo
@@ -144,6 +145,8 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
     ! remont-vann.ru##.b-logo
 ##.branding__logo
 ##.brand-logo
+###brand-logo
+    ! michaelscodingspot.com###brand-logo
 ##.brandlogo
 ##.b-toplogo
 ##.center_logo
@@ -209,13 +212,16 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 ##.headerimg
     ! kehidatermal.hu##.headerimg
     ! win13.ru##.headerimg
+###header-img
 ###headerlogo
 ##.headerlogo
 ###HeaderLogo
+##.HeaderLogo
 ##.headerLogo
 ###header-logo
 ##.header-logo
     ! arstechnica.com###header-logo
+    ! howtouselinux.com##.header-logo
     ! makeuseof.com##.header-logo
     ! obustroeno.com###header-logo
     ! ocomp.info###header-logo
@@ -242,13 +248,17 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
     ! blackview.hk##.header-text
     ! fuckingbreak.com##.header-text
     ! guitarmetrics.com##.header-text
+###header-text
+    ! bissquit.com###header-text
 ##.header_title
     ! exabait.ru##.header_title
 ##.header-title
+    ! it can block Zabbix nav
     ! graylog.org##.header-title
     ! happinesswithinyou.com##.header-title
     ! livejournal.com##.header-title
     ! ludovicperrichon.com##.header-title
+    ! nkmk.me##.header-title
 ##.header__title
     ! gorlor.com##.header__title
     ! xn----7sbajpjolckn2o.xn--p1ai##.header__title
@@ -406,6 +416,7 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 ##.mh-header-text
 ##.mh-site-logo
     ! autoexpertjournal.ru##.mh-site-logo
+    ! defaultreasoning.com##.mh-site-logo
     ! itigic.com##.mh-site-logo
     ! travelindependent.ru##.mh-header-text
     ! travelindependent.ru##.mh-site-logo
@@ -513,17 +524,19 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 ##.site-info
 ##.site__logo
 ###site-logo
+    ! endeavouros.com###site-logo
     ! kindkino.ru###site-logo
+    ! windows101tricks.com###site-logo
+    ! wintips.org###site-logo
 ##.site-logo
     ! aliexpress.com##.site-logo
     ! digitalcitizen.life##.site-logo
     ! huawei-helpers.ru##.site-logo
     ! itproguru.com##.site-logo
     ! netcraft.com##.site-logo
+    ! opticomp.ru##.site-logo
     ! river-forum.ru##.site-logo
     ! stroy-okey.ru##.site-logo
-    ! windows101tricks.com###site-logo
-    ! wintips.org###site-logo
 ##.siteLogo
 ##.sitelogo
 ###siteLogo
@@ -536,6 +549,7 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 ##.site-logotype
     ! ilike.guru##.site-logotype
     ! vodatyt.ru##.site-logotype
+##.sitename
 ###site-name
 ##.site-name
     ! 1fin-market.com##.site-name
@@ -1183,6 +1197,8 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 !
 *##.main-nav:style(position:static !important)
 !
+*##.navigation-bar:style(position:static !important)
+!
 *###NavigationContainer:style(position:static !important)
 !
 *##.nav-menu:style(position:static !important)
@@ -1358,7 +1374,10 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 !
 *###main:style(background-image:none !important; padding-top:0px !important; margin-top:0px !important)
     ! background and padding-top/margin-top rules were in online_films. Also see _headers_examples
-
+!
+*##.main-container:style(display:initial !important; background-image:none !important; padding-top:0px !important; margin-top:0px !important)
+    ! psbank.ru##.main-container:style(background-image:none !important)
+    ! vmware.com##.main-container:style(display:initial !important)
 
 ! After successful approbation of unfixing headers let's unfix footers too.
     ! Earlier:
