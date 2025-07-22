@@ -984,6 +984,7 @@ _banner_rotator.php  # from Adguard
     ! /upload/bx/*  # from Ru AdList
     ! ||rugrad.eu/bx/  # from Ru AdList
 /campaigns/*
+/clipboard.js  # /plugins/clipboard.js/dist/clipboard.min.js 
 /clipboard.min.js$important,domain=~play-with-docker.com
 /cdn-cgi/pe/bag2?r$important  # generalized rule. Sources from Ru AdList (see all mentioned domains here too):
     ! /cdn-cgi/pe/bag2?r*aksessuarov.ru
@@ -1149,6 +1150,7 @@ _banner_rotator.php  # from Adguard
     ! music.yandex.ru - not landings, these urls are API-driven (api.music.yandex.ru/landing/block/chart?limit=10 , api.music.yandex.ru/landing/block/editorial/new-releases/ALL_albums_of_the_month)
 /lazy-loader-banner/*
 @@/images/lazy_placeholder.gif
+/lead-generation.min.js
 /mads/gma
 /main-banner/*
 /marketing.js
@@ -1900,7 +1902,8 @@ _rebid.js  # from EasyList
 ##.banner-top-content
 ##.banner-top-wrapper
 ##.banner-wrapper
-! from AdGuard and Ru Adlist
+##.banner_wrapper
+! from Adguard and Ru Adlist
 ##.b-banner
 ##.bets-online
 ##.b-direct
@@ -2023,6 +2026,10 @@ _rebid.js  # from EasyList
 ##.Header-banner
 ##.header_banner
 ##.header-banner
+##.header__banner
+    ! fome.ru##.header__banner
+    ! huntflow.ru##.header__banner
+    ! t24.su##.header__banner
 ##.header-donation
 ##.hero-carousel-slide-block
 ##.home-carousel
@@ -2736,6 +2743,7 @@ _chartbeat.js  # from EasyPrivacy
 /counter.php?$~object  # from Ru AdList
 /counters^  # from RU AdList
 /crossdevice.min.js$important
+/csp-violation-report
 /ctracker/*$domain=~charmtracker.com  # from EasyPrivacy  # charmtracker.com is not a ad tracker
 /cycounter.  # from Ru AdList
 /cycounter^  # from Ru AdList
@@ -2794,8 +2802,9 @@ _chartbeat.js  # from EasyPrivacy
     sbermegamarket.ru##+js(set, FingerprintJS.load,noopFunc)
 /foresee/*  # from Ru AdList
 ?frm=script&se_referrer=  # from AdGuard
-/frontend-metrics/*
+/frontend-metrics/*$important
     ! ||cian.ru/frontend-metrics/
+    ! and some other
 /ga_setup.js$important
 /ga_social_tracking.js  # from Ru AdList
 _gatrack.js  # from EasyPrivacy
@@ -2980,7 +2989,7 @@ _sdc.js  # from Fanboy's
 /smarttagging.js
 _social_tracking.js  # from EasyPrivacy
 /sourcebuster/*
-/sourcebuster.min.js
+/sourcebuster.min.js$important  # now is in Ru Adlist
 /ssi/rc.js
 /stat/count  # is in EasyPrivacy
 /stat/log
@@ -3385,6 +3394,7 @@ _wtInit.js  # from Fanboy's
     !###backtotop
     !##.btn-totop
     !##.b-totop
+    !##.c-backtotop
     !###fImgtotop
     !##.j-scrolltotop
     !###meltotop
@@ -3643,6 +3653,7 @@ _wtInit.js  # from Fanboy's
 ##.scroll__btn
 ###scroll-button
 ##.scroll_down
+##.scroll-down
 ###scroller
     ! alfaplan.ru###scroller
     ! texterra.ru###scroller
@@ -3658,6 +3669,7 @@ _wtInit.js  # from Fanboy's
 ###scrollTo
     ! gb.ru###scrollTo
 ##.scroll-to-fixed-fixed
+###scroll-top
 ##.scroll-top-btn
 ###Scroll_Top_Button
 ##.scroll-top-link
@@ -3770,6 +3782,7 @@ _wtInit.js  # from Fanboy's
 ##.up-button
 ##.up-button_js
 ##.up-button-page
+##.up-button-visible
 ###updown
 ###upDown
 ##.upDown
@@ -4883,6 +4896,10 @@ _snowstorm-min.js  # from Ru AdList
 ##.buy_one_click-btn
 ###buyOneClickButton
 ##.bxr-one-click-buy
+##.clickBuyButton
+    ! kolundrov.ru##.clickBuyButton
+    ! mag-shp.ru##.clickBuyButton
+    ! opticomp.ru##.clickBuyButton
 ##.click-order-fast
 ##.fast-buy
 ##.fast_buy
@@ -5388,6 +5405,7 @@ yoursmileys.ru$image,third-party
     ||4pda.to/*/dancer.gif$important
     ||4pda.to/*/devil.gif$important
     ||4pda.to/*/download.gif$important
+    ||4pda.to/*/drinks.gif$important
     ||4pda.to/*/girl_cray.gif$important
     ||4pda.to/*/happy.gif$important
     ||4pda.to/*/heart.gif$important
@@ -5885,6 +5903,13 @@ tarif-24.ru##.mh-ticker-bottom
 ##.bio-description
 ##.bio-gravatar
 ##.box_author
+##.elementor-author-box__bio
+##.grofile
+    ##.widget-grofile
+    ! "about author" widget
+    ! geekeefy.wordpress.com##.grofile
+    ! pw999.wordpress.com##.widget-grofile
+    ! thesurlyadmin.com##.grofile
 ##.mks_author_widget
 ##.post-author
 !##.postauthor - don't, it is used in PhpBB
