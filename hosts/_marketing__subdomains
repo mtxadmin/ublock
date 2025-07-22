@@ -34,6 +34,7 @@ ad.bench.utorrent.com  # from GoodbyeAds
 ad.beritasatumedia.com  # from MVPS
 ad.cbonds.info  # from Adguard
 !ad.cnet-basic-performance.akadns.net  # zombie
+ad.codeby.school
 ad.crwdcntrl.net$important
 ad.deepthought.industries  # from Adguard
 ad.demotivation.me  # from Adguard
@@ -231,7 +232,7 @@ ads.pro-market.net.edgesuite.net  # from Dan Pollock's hosts file
 ads.publicdisgrace.com  # from MVPS
 ads.reddit.com$important  # from uBlock filters
 ads.reembed.com
-ads.roblox.com  # from Adaway  # First Party - Advertising  # from Quidsup NoTrack-Blocklist
+ads.roblox.com$important  # from Adaway  # First Party - Advertising  # from Quidsup NoTrack-Blocklist, Adguard
 ads.cdn.rovio.com  # from Malvertising filter list by Disconnect
 !ads.samsung.com  # from EasyList
 ads.sexandsubmission.com  # from MVPS
@@ -570,6 +571,7 @@ analytics.comunio.de  # from EasyPrivacy
 analytics.corusent.com  # from Adguard
 analytics.credible.com
 analytics.dns-shop.ru
+analytics.dns-shop.kz
 analytics.docdoc.ru
 analytics.dpd.com  # from Adguard
 analytics.edgekey.net$important # +
@@ -2092,6 +2094,7 @@ promo.rzonline.ru  # from Adguard
 promo.sarbc.ru
 promo.sberhealth.ru
 !promo.sebnews.ru
+promo.selectel.ru
 promo.tutotoons.com  # tutotoons.com - Advertising  # from Quidsup NoTrack-Blocklist
 
 /promos.
@@ -2191,6 +2194,7 @@ securetags.img.com.br  # from Adguard
 /sentry$script,redirect=noopjs,domain=~avito.ru|~mts-link.ru|~webinar.ru
 /sentry.$redirect=noopjs,domain=~avito.ru|~mts-link.ru|~webinar.ru
 /?sentry_key=$domain=~avito.ru|~mts-link.ru|~webinar.ru  # is in EasyPrivacy  # tightly connected with .sentry requests, so make the same domain exclusions
+/?sentry_version=  # EasyPrivacy rule
     ! Exclusions:
     @@/flu/player/sentry$script  # Microsoft video player (NodeJS) on some sites
     @@||avito.ru/dstatic/build/client/sentry  # avito is completely broken without it  # update: disabled again  # update2: enabled again, silently blocks all. Just this one script.
@@ -2213,6 +2217,7 @@ sentry.hh.ru
 sentry.innologica.com
 !sentry.kanobu.ru
 sentry.lenta.tech
+sentry.mm.ru
 sentry.obs.mts.ru
 !sentry.web.prod.ya.mvideo.ru
 !sentry.k8s.portal.s  # yes, portal.s, a typo, but request was to http://sentry.k8s.portal.s/api/13/store/?sentry_key=...
@@ -3815,6 +3820,8 @@ top-shop-magazin.ru  # Ali hidden dropshipping?  # root 504  # see in _marketing
 vkoff.ru  # root redirects to Google  # see in _marketing__subdomains
 s.click.aliexpress.com  # from Ru AdList
 
+glitchtip.alikson.ru  # sentry
+
 loggw-exsdk.alipay.com  # from GoodbyeAds
 
 smart.allocine.fr  # from Adguard
@@ -3842,6 +3849,7 @@ assoc-redirect.amazon.com  # ad redirects
 mads.amazon.com  # from Adguard
 ads-setu-proxy.amazon.com  # from Mahakala
 ads-setu-proxy-eu.amazon.com  # from Mahakala
+affiliate-program.amazon.com
 
 2betadservice.s3-ap-northeast-1.amazonaws.com  # from ShadowWhisperer's Ads
 browsec-promo.s3.eu-central-1.amazonaws.com  # ads  # is in Adguard
@@ -5260,6 +5268,8 @@ rotabanner.kulichki.net  # from EasyList
 
 !intelliworker.kupivip.ru  # from Adguard
 
+sentry-ingest.kuper.ru
+
 athena.api.kwalee.com  # from Adguard
 
 v1-c73e.kxcdn.com  # from Adguard and Ru AdList
@@ -5752,6 +5762,8 @@ smscenter.primatel.ru
 
 t.procrastinator.tips  # from Adguard
 
+p.psb.ru  # URL shortener
+
 psvpromo.psvgamestudio.com  # from Adguard
 
 cgicounter.puretec.de  # from Dan Pollock's hosts file  # ionos.de
@@ -6041,6 +6053,8 @@ analytics-api.sky.pro
 
 a.slashdotmedia.com  # from uBlock filters
 
+to.slurm.io  # URL shortener
+
 zlolhl.smart-lab.ru  # from Adguard
 
 !topnews.smi.one  # from Ru AdList
@@ -6314,6 +6328,7 @@ ads-segment-profile-noneu.truecaller.com  # from Mahakala
 ! it seems, they are non-ad and legit service. Ok
 ! "Each review has a personal story"
 !trustpilot.com
+ecommplugins-scripts.trustpilot.com  # ad scripts
 ecommplugins-trustboxsettings.trustpilot.com  # ad scripts
 invitejs.trustpilot.com  # from EasyPrivacy
 
