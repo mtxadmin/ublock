@@ -196,7 +196,7 @@ _social_fb.  # from Fanboy’s
 ~facebook.com##a[onclick^="window.open('https://www.facebook.com/sharer.php"]
 ! is in Fanboy's
 ##.facebook.icon
-! from Web Annoyances Ultralist
+! is in Web Annoyances Ultralist
 ##.fa-facebook
 ! from Web Annoyances Ultralist (modified)
 ~belarus2020.org##.fa-facebook-f
@@ -1386,6 +1386,8 @@ t.me##+js(rc, shine)
 ! Notifications: title is flickering. Very annoying.
 ! web.telegram.org##+js(set, document.title, undefined) - video chat joining error
 !
+web.telegram.org##.Modal:has-text(Service Worker)
+!
 ! standard Telegram ads
 web.telegram.org##.Message.SponsoredMessage
 web.telegram.org##.is-sponsored
@@ -1848,6 +1850,7 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ##[class*=head-social]:not(body)
     ! See some examples at backups/_socials_examples
 ##[class^=social-icon]:not(body)
+    ! ##.social-icons and other
     ! See some examples at backups/_socials_examples
 ##[class^=social-likes]:not(body)
     ! See some examples at backups/_socials_examples
