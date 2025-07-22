@@ -211,6 +211,8 @@ ya.ru,yandex.*##.header-favorites-button__link
 ya.ru,yandex.*##.favorites-icon
 ya.ru,yandex.*##.copyright-tech
 
+yandex.ru##.HeaderDesktop-Actions.HeaderDesktopActions
+
 ! is in Ru AdList (as is. And this is not about yandex - seen on rambler)
 ##.serp-block_type_market-offers
 
@@ -300,6 +302,10 @@ yandex.*##iframe[src*="iframe-ux-feedback.html"]
     ! ||yandex.net/market-export/_/uxfeedback/
 ||yastatic.net/*/uxfeedback
     ! ||yastatic.net/s3/travel/static/_/uxfeedback.html
+yandex.*##.search-business-snippet-view__badge:has-text(Реклама)
+yandex.*##._prioritized.business-verified-badge
+yandex.*##.business-verified-badge
+yandex.*##.search-business-snippet-view__neurosummary
 
 
 ! Yandex.Popups, блин. Хватит уже выстреливать в лицо всякое
@@ -471,9 +477,14 @@ ya.ru,yandex.*##[class^=PageAside__logo]
 ya.ru,yandex.*##[class^=PageAside__stickyContainer]:style(position:static !important)
 ya.ru,yandex.*##[class^=PostPhoneCallerBlockArenda]
 ya.ru,yandex.*##.UserSurveys
+surveys.yandex.ru$3p  # ad scripts  # ||surveys.yandex.ru/fb/widget.js
+pay.yandex.ru$3p  # 3p scripts
 
-# Про Wiki комменты типа "РКН: иностранный владелец ресурса нарушает закон РФ" совершенно неинтересны
+! Про Wiki комменты типа "РКН: иностранный владелец ресурса нарушает закон РФ" совершенно неинтересны
+! now is in Adguard
 ya.ru,yandex.*##.Warning_type_roskomnadzor
+! "некоторые ссылки отсутствуют в поиске"
+ya.ru,yandex.*##.RequestMeta
 
 realty.yandex.*##.GalleryGuadeloupe:has-text(Яндекс.Директ)
 realty.yandex.*###offer-gallery-aside-ad__rtb
@@ -524,6 +535,7 @@ dzen.ru,zen.yandex.*##[src^="https://yastatic.net/naydex/zen-yandex-ru/"]
 dzen.ru,zen.yandex.*##div:has-text(В приложении удобнее):has-text("Яндекс.Дзен на главном экране")
 dzen.ru##[class*=mobile-bottom-navigation]:style(position:static !important)
 dzen.ru##[class*=geolocation__tooltip]
+yandex.*##.popup:has(.tooltip-content-view)
     ! smiles
 dzen.ru,zen.yandex.*##.zen-ui-emoji-bar__icon
 dzen.ru,zen.yandex.*##.comment-editor-emojis
@@ -724,6 +736,9 @@ ya.ru,yandex.*##.i-zalogin-cookie
 ya.ru,yandex.*##.zalogin-head
 ya.ru,yandex.*##.zalogin-smart
 
+! Adguard rule
+yandex.*###search-result > li:has(span:contains(/[PРeеkклaаmмaа]{7}/)):remove()
+
     ! рекламки дзена
 ! from RU AdList
 ##a[href*="zen.yandex."] > img:not([src*="gstatic.com"]):not([onload*="google"]):not([jsaction])
@@ -882,6 +897,8 @@ afisha.yandex.*##[class^=AfishaAppWrapper]
 
 ya.ru,yandex.*##.services-new__promo-bubble
 
+ya.ru##.hockeyman
+
 ! погода  https://habr.com/ru/company/gms/blog/566030/#comment_23226220
 ya.ru,yandex.*##.b-page__container :matches-css(width: 0px)
 ya.ru,yandex.*##.b-page__container .content__bottom + div
@@ -941,6 +958,10 @@ ya.ru,yandex.*##.button_primary:has-text(в избранное)
 !test
 !||yandex.ru/api/status - this rule cause an error in doc viewer in y.drive
 ||yastatic.net/nearest.js
+
+! site logos in search (showed only for dzen.ru, this is yandex service)
+||yastatic.net/naydex/yandex-search/$image
+yandex.ru##.Thumb
 
 music.yandex.ru$3p  # even non-yandex, even scripts. Let's block it.
     ! banners and promos
