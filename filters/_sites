@@ -76,6 +76,10 @@ apteka.103.by##div:matches-css(position:fixed)
 123ru.net##big
 29ru.net###n123MainTitle
 
+12go.asia##.card:has(section:has-text(Popular Routes))
+! from Ru AdList, I think
+~12go.asia##form[action^="//12go.asia/"][target="_blank"] > .powered
+
 12kalibr.com##.content-sm:style(padding-top:0px !important; padding-bottom:0px !important)
 
 ||12kolibr.ru/*/buttombg.png
@@ -6671,6 +6675,9 @@ discovery.com##.o-FooterFresh__m-Info
 diskpart.com##.js-toc-box
 diskpart.com###post-sidebar
 
+disposablemail.com##.navbar
+disposablemail.com##.logoMargin
+
 ! from Ru AdList
 disqus.com##+js(href-sanitizer, a[href^="https://disq.us/url?url="], [title])
 disqus.com##.recommend-post-title
@@ -10141,8 +10148,7 @@ geeksforgeeks.org##.header-main__slider:style(position:static !important)
 geeksforgeeks.org##.header-main__slider-sticky
 geeksforgeeks.org##.header-main__wrapper:style(position:static !important)
 geeksforgeeks.org##._logo
-geeksforgeeks.org###header-main__slider-outer-div:style(position:static
-!important)
+geeksforgeeks.org###header-main__slider-outer-div:style(position:static !important)
     ! unfix elements
 geeksforgeeks.org##.leftSideBarParent:style(position:static !important)
 geeksforgeeks.org##.sideBar:style(position:static !important; height:auto !important)
@@ -11609,9 +11615,13 @@ hft.ru##.footer__pay
     ! ||hh.ru/stat  # is in Adguard
     ! ||career.ru/stat
     ! ||hh.kz/stat
+||hh.ru/anatskytic  # is in Adguard
 !
 ||hh.ru/*/vk__min_.svg
 ||hh.ru/*/ok__min_.svg
+!
+||hhcdn.ru/file/*.gif$image
+||hh.ru/static/static/images/no-chats$image
 !
 ||hhcdn.ru/ichameleon/$image
 ||hhcdn.ru/uxfeedback/
@@ -11621,7 +11631,8 @@ hh.ru##+js(set, publicPath, empty)
     ! popups
 hh.ru##[class^=wrapper]:has-text(приложении)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=overlay]
-hh.ru##[class^=container--]
+! update: устарело и цепляет лишнее
+!hh.ru##[class^=container--]
 ! задолбали продвигать свой автопоиск
 hh.ru##.supernova-notification:has-text(автопоиск)
 hh.ru##.supernova-navi-counter_dot-only
@@ -11684,6 +11695,7 @@ hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.k
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=smiles-wrapper]
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##div.noprint:has-text(Напишите телефон, чтобы)
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=branded-snippet-decoration]
+hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-banner]
     ! logos
 /employer-logo/$image,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
   ! ||hhcdn.ru/employer-logo/$image
@@ -11728,57 +11740,63 @@ hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.k
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-viewers-count
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.noprint > div:has-text(Сейчас эту вакансию)
     ! different promo blocks (not all!)
-hh.ru##.tmpl_hh_content:style(color:initial !important)
-hh.ru##strong:style(color:initial !important)
-hh.ru##.tmpl_hh_wrapper:style(color:initial !important; background:none !important)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_content:style(color:initial !important)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##strong:style(color:initial !important)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_wrapper:style(color:initial !important; background:none !important)
 !
-hh.ru##.tmpl_hh_advantages
-hh.ru##.tmpl_hh_banner
-hh.ru##.tmpl_hh_benefits
-hh.ru##.tmpl_hh_bens
-hh.ru##.tmpl_hh_brands
-hh.ru##.tmpl_hh_blue
-hh.ru##.tmpl_hh_content__slogn
-hh.ru##.tmpl_hh_corp
-hh.ru##.tmpl_hh_head
-hh.ru##.tmpl_hh_header
-hh.ru##.tmpl-hh-header
-hh.ru##.tmplt_hh-header
-hh.ru##.tmpl_hh_head__content
-hh.ru##.tmpl-hh-header__wrapper
-hh.ru##.tmpl_hh_hero
-hh.ru##.tmpl_hh_flex
-hh.ru##.tmpl_hh_footer
-hh.ru##.tmpl_hh_gap
-hh.ru##.tmpl_hh_geo
-hh.ru##.tmpl_hh_icons
-hh.ru##.tmpl_hh_intro
-hh.ru##.tmpl_hh_logo
-hh.ru##.tmpl_hh_marque
-hh.ru##.tmpl_hh_marquee__item
-hh.ru##.tmpl_hh_offer
-hh.ru##.tmpl_hh_photo
-hh.ru##.tmpl_hh_project
-hh.ru##.tmpl_hh_reward
-hh.ru##.tmpl_hh_slider
-hh.ru##.tmpl_hh_sliderFooter
-hh.ru##.tmpl_hh_sliderSlogan
-hh.ru##.tmpl_hh_social
-hh.ru##.tmpl_hh_start
-hh.ru##.tmpl_hh_success
-hh.ru##.tmpl_hh_ticker
-hh.ru##.tmpl_hh_title
-hh.ru##.tmpl_hh_top
-hh.ru##.tmpl_hh_why
-hh.ru##.tmpl_hh_worths
-hh.ru##.tmpl_hh_zero
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_advantages
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl-hh__adv
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_banner
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_benefits
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_bens
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_brands
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_blue
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_content__slogn
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_corp
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_head
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_header
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl-hh-header
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmplt_hh-header
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_head__content
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl-hh-header__wrapper
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_hero
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_flex
+! not a footer, some inline promos
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_footer
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl-hh-footer
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_gap
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_geo
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_icons
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_intro
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_join
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_logo
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_marque
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_marquee__item
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_offer
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_photo
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_project
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_reward
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_slider
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_sliderFooter
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_sliderSlogan
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_social
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl-hh__swiper-slide
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_start
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_success
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_ticker
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_title
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_top
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_why
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl-hh__why
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_worths
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_zero
 ! new design? (not everywhere)
-hh.ru##.wrap_hh_logo_1
-hh.ru##.wrap_hh_header
-hh.ru##.wrap_hh_footer
-hh.ru##.wrap_hh_intro
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.wrap_hh_logo_1
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.wrap_hh_header
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.wrap_hh_footer
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.wrap_hh_intro
 ! and some other
-hh.ru##.peach-vac__footer
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.peach-vac__footer
     ! other
 ! spam vacancies
 hh.ru,career.ru##div.vacancy-serp-item:has-text(/Компьютерный мастер|Мастер по ремонту компьютеров|Выездной системный администратор|выезды к клиентам/)
@@ -11795,6 +11813,9 @@ hh.ru##[class*=blocked-activator]
 hh.ru##[class^="error-picture-"]
 ! pic
 hh.ru##[class^=backplate-module]:has([class^=picture-widget-module])
+! "Сейчас смотрят"
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_style-secondary]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-wrap-container]:has([class^=magritte-scroll-wrapper])
 
 ||hightech.plus/api/textteasers/
 hightech.plus##[class^=bottom-injection]
@@ -16637,6 +16658,7 @@ mate.com.ua$inline-script  # site blocks copypaste
 
 mathworks.com###country-unselected
 
+matiz-club.ru##.focus-logo
 matiz-club.ru##.cAuthorPane_photoWrap
 
 matiz-daewoo.ru##.shapo
@@ -30146,8 +30168,7 @@ vc.ru##.live
 vc.ru##.author__avatar:has(video)
 ! точки на аватарах
 vc.ru##.author__avatar--online::after
-! дергается строчка у автора - время-телеграм-время. Дергается, даже
-если убрать телеграм (vc.ru##.content-header__telegram). Убираем всё нафиг.
+! дергается строчка у автора - время-телеграм-время. Дергается, даже если убрать телеграм (vc.ru##.content-header__telegram). Убираем всё нафиг.
 vc.ru##.string-switch
     ! other
 vc.ru##.main_menu__container
@@ -33702,9 +33723,6 @@ d3ward.github.io##.gt-link
 !techviewleo.com
 ! lazyload: span with background, data-ezbg
 ! techviewleo.com##+js(set-attr, span.ezlazyload, style, background-image:url([data-ezbg]))  - doesn't work, of course
-
-! from Ru AdList, I think
-~12go.asia##form[action^="//12go.asia/"][target="_blank"] > .powered
 
 ! from Ru AdList, I think
 ##a[href*="/mosday.ru/ad/"]
