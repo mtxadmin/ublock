@@ -756,7 +756,7 @@ $removeparam=fref  # from Ru AdList
 
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
-$removeparam=from,domain=~account.mail.ru|~auth.mail.ru|~alfabank.ru|~e.mail.ru|~nextdns.io|~sberbank.ru|~tradingview.com|~uds.app|~yandex.*
+$removeparam=from,from=~alfabank.ru|~account.mail.ru|~id.mail.ru|~auth.mail.ru|~e.mail.ru|~nextdns.io|~sberbank.ru|~tradingview.com|~uds.app|~yandex.*
     ! Exceptions:
     ! auth.mail.ru exception is from Ru AdList. Don't know, but ok. Update: removing it prevent useful popups, so it's really ok.
     ! account.mail.ru - v2 of it (auth.mail.ru)
