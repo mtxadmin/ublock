@@ -43,6 +43,9 @@
 ! disable AdGuard exception
 @@/\/www.yandex.*\/search/$generichide,badfilter
 
+||yandex.*/count/  # is in EasyPrivacy
+||yandex.*/an/rtbcount/  # is in EasyPrivacy
+
 ||ya.ru/*/web-api/log
 ||yandex.ru/*/web-api/log
 ||yandex.by/*/web-api/log
@@ -694,6 +697,7 @@ ya.ru,yandex.*##div[id^="BlogPost"][data-state*="/promo/popup/"]
 
 ||yandex.*/clck/  # beacons and images  #previous: ||yandex.*/clck/counter
     ! ||yandex.ru/clck/  # is in EasyPrivacy
+    ! ||yandex.com/clck/  # is in EasyPrivacy
     ! in EasyPrivacy: ||yandex.*/clck/$script
     ! in EasyPrivacy: ||yandex.*/clck/$xmlhttprequest
     ! in EasyPrivacy: ||yandex.*/clck/$image
