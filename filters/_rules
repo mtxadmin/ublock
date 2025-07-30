@@ -6039,6 +6039,7 @@ tarif-24.ru##.mh-ticker-bottom
 
 !! local resources
 ||localhost^$3p,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost  # Block Outsider Intrusion into LAN  # in the wild: didomi.io calls script http://localhost/web/tracking-hbspt-management-v2.js
+*$strict3p,ipaddress=lan,from=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost  # Block Outsider Intrusion into LAN
 @@://localhost/$generichide  # from EasyList
 
 
