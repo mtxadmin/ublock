@@ -7289,8 +7289,8 @@ shoort.io  # from ShadowWhisperer's UrlShorteners
 
 shootmedia-hk.com  #tracking.shootmedia-hk.com
 
-shop.app  # shopify ad scripts  # again
-    /checkouts/internal/preloads.js  # sometimes 1p
+!shop.app  # shopify ad scripts  # again  # false-positive - it's a payment provider. See #106
+    !/checkouts/internal/preloads.js  # sometimes 1p
 
 shop4fit.ru  # from GoodbyeAds
 
