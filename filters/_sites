@@ -1288,6 +1288,7 @@ aslife.ru##.tn-atom
     ! logos
 !alfabank.ru##svg - don't, svg.icon-button.. are useful inteface buttons
 alfabank.ru##[class^=Hlayout_logo_]
+alfabank.ru##[data-test-id="section-header-logo"]
     ! banners and promos
 alfabank.ru##.fin-health-banner
 ||gcdn.co/*/benefit-banner.png
@@ -2011,6 +2012,9 @@ aptekamos.ru###ama-modal-app-overlay
 	! top
 aptekamos.ru###ama-header
 aptekamos.ru###am-pc-header-logo-c
+    ! banners and promos
+aptekamos.ru###am-mob-ammbanner
+aptekamos.ru###am-mob-ammbanner-c
 	! other
 aptekamos.ru##.d-table-td-la
 aptekamos.ru##.am-widget-container:has-text(Новости)
@@ -2045,6 +2049,9 @@ aquacomm.ru##.head_top
 aquacomm.ru##.top_line
 aquacomm.ru##noindex
 
+aquafunproject.com##.topbar:style(height:auto !important)
+aquafunproject.com##.hero:style(height:auto !important)
+
 ||aquakmv.com/forum/ban/$image
 
 aquanet-shop.ru##.button-popup
@@ -2054,6 +2061,9 @@ aquanet-shop.ru##.shop-flex
 
 aquaphor.ru##.fixed-cart-container
 aquaphor.ru##+js(cookie-remover.js, sbjs)
+
+aquapolis60.ru##.header_bg::after
+aquapolis60.ru###video_bg
 
 aqua-rmnt.com##.box-option
 
@@ -4627,6 +4637,11 @@ burlutsky.su##.grid-overlay
 
 burmistr.ru##.banner
 burmistr.ru##h2:has-text(задать вопросы можно)
+
+burninghut.ru##.header-burger
+burninghut.ru##.widgets-area--after-first-paragraph
+burninghut.ru##.quote-photo
+burninghut.ru##.layout-default__header:style(position:static !important)
 
 business2community.com$inline-script  # site breaks copypaste
 business2community.com$script  # site breaks copypaste
@@ -10834,6 +10849,9 @@ gorodtroika.ru##.header-hero:style(color:initial !important)
 
 ||gorposmos.ru/skript/forum/2.png
 
+goru.travel##.spam-mail
+goru.travel##.footer-description
+
     ! top
 ! top placeholder
 gorzdrav.org##.c-fixing-controller
@@ -11671,13 +11689,15 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay:has-text(Зарегистрируйтесь)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-drop-base]:has-text(Ваш регион)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-tooltip]:has-text(фильтры)
-hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-modal-overlay]:has-text(/Выделение области|мессенджере/)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-modal-overlay]:has-text(/Выделение области|мессенджере|Добавим фото|выделит вас/)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-action-bar-is-fixed]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-card]:has-text(/Как вам результаты|Станьте заметнее/)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=setka-container]:has-text(Станьте заметнее)
     ! top
 hh.ru,career.ru##.HH-RelatedVacanciesPreview-StickyContainer
 hh.ru,career.ru##.navi__menu:style(position:static !important)
 hh.ru##.tmpl_hh_top:style(position:static !important)
-hh.ru##.tmpl_hh_content:style(margin-top:0px !important; margin-bottom:0px !important)
+hh.ru##.tmpl_hh_content:style(margin-top:0px !important; margin-bottom:0px !important; background-color:initial !important)
 hh.ru##[class^=important-notifications]
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-button:style(color:initial !important; background:#fff !important)
 hh.ru##.peach-vac__header
@@ -11729,7 +11749,7 @@ hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.k
 !hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=card-wrapper]
 ! а вот это точно сплошное промо
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-scrollable-container]
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-banner]
+hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-banner]:not(:has(.g-user-content))
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(Рекомендация по)
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=banner-image]
     ! logos
@@ -16248,6 +16268,8 @@ lucheeotoplenie.ru##.sticky-sidebar-left
 lucheeotoplenie.ru###fixmenu:style(position:static !important)
 lucheeotoplenie.ru##.fx-toc
 
+ludi.by##.social-sharer-wrapper
+
 ludovicperrichon.com##.main-header
 ludovicperrichon.com###bkgd_svg
 ludovicperrichon.com###bkgd_transparent
@@ -17323,6 +17345,9 @@ mezzoguild.com##ul
 mezzoguild.com##h3
 mezzoguild.com##section
 mezzoguild.com##.js--open-popover
+
+! not autogenerated
+mfarma.ru$inline-script  # site blocks copypaste
 
 mgctk.ru##.cat-item:has-text(Руководитель)
 
@@ -20308,6 +20333,8 @@ ostrovok.ru##.homepage-mobile-wrapper
 ostrovok.ru##[class^=Footer__rewards]
 ostrovok.ru##[class^=Seo__content]
 ostrovok.ru##.zenemailcollectorV2
+!ostrovok.ru##[class^=SwipeablePopup_] - don't, too broad
+ostrovok.ru##[class^=SwipeablePopup_swipeablePopup]
 
 ||oszone.net/ibm.html  # from Ru AdList
 oszone.net###professor
@@ -28616,6 +28643,9 @@ tjournal.ru##.head-notifies__toggler> .head-notifies__badge:has-text(/^\s*1\s*$/
 tjournal.ru##.live
 tjournal.ru##.mobile-bar-container
 tjournal.ru##.support
+    ! fixed buttons
+t-j.ru###comments-button
+t-j.ru##[class^=_tabbar_]
     ! other
 tjournal.ru##.layout__column--sticky:style(position:static !important)
 tjournal.ru##.content__write-suggestion
@@ -31601,6 +31631,8 @@ wikihow.com##.sidebox:has-text(Quizzes)
 
 ! from EasyList. Wikipedia is a great project.
 @@||wikipedia.org^$generichide
+! on mobile, tap somewhere on the page popups a menu
+m.wikipedia.org##.toggle-list__checkbox
 
     ! banners and promos
 wikiporn.tv##h2:has-text( Ads)
