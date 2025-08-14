@@ -398,6 +398,8 @@ media-adv.market.yandex.org
 media-adv.market.yandex.ru  # First Party - Advertising  # from Quidsup NoTrack-Blocklist, Mahakala
 media-adv.market.yandex.uz
 
+mediabilling.yandex.ru  # app requests  # external-api.mediabilling.yandex.ru  # tested for months
+
 # update: let's block this "messenger" completely
 messenger.yandex.net
     ! seen on one of Yandex sites
@@ -554,6 +556,8 @@ myip.yandex.uz
 
 offerwall.yandex.net  # from Adguard and BlockListProject - Ads
 
+mobileproxy.passport.yandex.net  # app requests  # tested for months
+
 qos-api.ott.yandex.net  # Yandex - Tracker  # from Quidsup NoTrack-Blocklist
 ! video tracking?
 tracking.ott.yandex.net
@@ -646,7 +650,10 @@ log.strm.yandex.net
     ||strm.yandex.net/cmatch
     ||strm.yandex.ru/perf
 
-taxi-promotions.s3.yandex.net  # app request
+cabconnect.org  # app requests  # mobile-metrica.cabconnect.org  # no root
+taxi-promotions.s3.yandex.net  # app requests
+startup.mob.taxi.yandex.net  # app requests
+taxiaid.org  # app requests  # ads.taxiaid.org  # empty root
 
 ttnet.yandex.by
 ttnet.yandex.com
