@@ -87,6 +87,8 @@ aria.microsoft.com
 adncdnend.azureedge.net  # ad scripts
 loader-cdn.azureedge.net  # from EasyPrivacy
 
+adsdk.microsoft.com$important  # from EasyList
+
 bat.bing.com$important  # from many lists
 !+  r.bat.bing.com
 ! end of bat.bing.com
@@ -175,6 +177,8 @@ engagement.office.com  # app requests
 events.data.microsoft.com  # https://www.bleepingcomputer.com/news/microsoft/windows-10-hosts-file-blocking-telemetry-is-now-flagged-as-a-risk/
     ! browser.events.data.microsoft.com  # from ShadowWhisperer's Tracking
     ! mobile.events.data.microsoft.com  # net requests
+    ! self.events.data.microsoft.com  # net requests
+    ! server.events.data.microsoft.com  # net requests
 events.data.msn.com
     ! in many sources, for instance, see https://brave.com/popular-browsers-first-run/
     ! browser.events.data.msn.com
