@@ -73,6 +73,7 @@ _gaTrack.js  # from EasyPrivacy
 -google-tag-manager/$script,important # is in EasyPrivacy
 /google-tracking/*  # is in AdGuard: /wp-content/cache/busting/google-tracking/*
 /gtm.js$important
+/ima3.js$important  # from uBlock filters
 .initdoubleclickadselementcontent?
 ||google.com/ads/$important  # is in ABP
 ||google.com/afs/$important  # from ABP
@@ -639,8 +640,8 @@ s0-2mdn-net.l.google.com  # from Adaway
 adsense.com$important  # adsense
 adsense.de  # from BlockListProject - Ads
 adsense.su$important  # adsense
-/adsense$important  # adsense
-/adsid/*  # adsense
+    /adsense$important  # adsense
+    /adsid/*  # adsense
 
 ! Google DoubleClick domains
 !# [Google / DoubleClick][AS15169][66.249.64.0 - 66.249.95.255]
@@ -736,9 +737,9 @@ doubleclick.host  # from Ru AdList
 doubleclick.co.uk  # from ShadowWhisperer's Ads
 doubleclick.pro  # from ShadowWhisperer's Ads
 doubleclickbygoogle.com  # from EasyList
-#!||static.doubleclick.net$important
-#!||g.doubleclick.net$important
-#!||pubads.g.doubleclick.net$important
+    #!||static.doubleclick.net$important
+    #!||g.doubleclick.net$important
+    #!||pubads.g.doubleclick.net$important
 
 doubleclick.ne.jp$important  # there are some exceptions in standard lists, let's disable completely
 
@@ -751,7 +752,6 @@ doubleclick.shockwave.com
 doubleclick.d4p.net
 anon.doubleclick.speedera.net$important
 fms2.doubleclick.speedera.net
-
 
 !! google
 
@@ -950,7 +950,7 @@ adservice.google.nu
 adservice.google.pf
 adservice.google.ph
 adservice.google.pk
-adservice.google.pl
+adservice.google.pl$important
 adservice.google.pn
 adservice.google.ps
 adservice.google.pt
@@ -995,10 +995,12 @@ adwords.l.google.com
 adwords.google.nl
 analytics.google.com$important
 gg.google.com  # from github.com/Cybo1927/Google-Ad-Analytic-Blocker/ and hpHosts’ Ad and tracking servers
-googleadapis.l.google.com
+googleadapis.l.google.com$important,all
 gstaticadssl.l.google.com
 
-fundingchoices.google.com  # from Fanboy's
+assistant.google.com  # Google  ? Google Assistant (Does not appear to break it)  # from ShadowWhisperer's Bloat
+
+fundingchoices.google.com$important  # from Fanboy's
 fundingchoicesmessages.google.com$important  # ad scripts  # is in uBlock filters  # is in 3 lists
 
 googleadservices.com$important,all  # disable RU ADList exceptions
@@ -1304,42 +1306,139 @@ appsgrowthpromo-pa.clients6.google.com  # ad xrhs
 #!alt8-mtalk.google.com
 
 ! googleapis.com ad&telemetry subdomains
+!googleapis.i.google.com  # from BlockListProject - Ads, 
+accesspoints.googleapis.com  # from ShadowWhisperer's Tracking
+accountcapabilities-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
 ad-creatives-public.commondatastorage.googleapis.com
-!android-context-data.googleapis.com  # app requests  # is in ShadowWhisperer's Bloat  # don't know, what is it
-    ! preprod-android-context-data.googleapis.com
-androidtvchannels-pa.googleapis.com  # from Adguard
-androidtvwatsonfe-pa.googleapis.com  # from Adguard
-jnn-pa.googleapis.com  # https://tipsforefficiency.com/jnn-pa-googleapis-com/: "jnn-pa.googleapis.com is a consent management processor created by the German company Usercentrics GmbH."
-!notifications-pa.googleapis.com - don't block this one! it breaks all the network on Android. Found out on tests, luckily.
-
-
-#!fonts.googleapis.com
-#! telemetry?
-#!play.googleapis.com
-#!youtubei.googleapis.com
-#!mtalk.google.com
-#!geller-pa.googleapis.com
-#!people-pa.googleapis.com
-
+ajax.googleapis.com$important  # is in EasyList
+androidattestationvalidation-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+android-context-data.googleapis.com  # app requests  # preprod-android-context-data.googleapis.com  # is in ShadowWhisperer's Bloat  # don't know, what is it
+androidresumeonreboot-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
 analyticsinsights-pa.googleapis.com  # from Phentora's AdguardPersonalList
 analyticssearch-pa.googleapis.com  # from Phentora's AdguardPersonalList
-auditrecording-pa.googleapis.com  # app requests  # tested for months
+androidtvchannels-pa.googleapis.com  # from Adguard, ShadowWhisperer's Tracking
+androidtvwatsonfe-pa.googleapis.com  # from Adguard
+auditrecording-pa.googleapis.com  # app requests  # tested for months  # is in ShadowWhisperer's Tracking
+autopush-geller-pa.sandbox.googleapis.com  # Google  ? Notifications    (Does not break 2FA)  # from ShadowWhisperer's Bloat
+bluestacks-cloud-appplayer-logs.storage.googleapis.com  # from ShadowWhisperer's Tracking
+calendarpushsubscription-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+chromecontentsuggestions-pa.googleapis.com  # from ShadowWhisperer's Ads
+chromefeedcontentsuggestions-pa.googleapis.com  # from ShadowWhisperer's Ads
+chromesyncentities-pa.googleapis.com  # Google  ? Syncs user data/settings  # from ShadowWhisperer's Bloat
 clientmetrics-pa.googleapis.com  # this one works ok
-clouderrorreporting.googleapis.com  # Google - Tracker  # from Quidsup NoTrack-Blocklist
+clientservices.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+clienttracing-pa.googleapis.com  # from ShadowWhisperer's Tracking
+cloudconfig.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+cloudsearch.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+clouderrorreporting.googleapis.com$important  # Google - Tracker  # from Quidsup NoTrack-Blocklist, ShadowWhisperer's Tracking
+!contactsui-pa.googleapis.com  # from ShadowWhisperer Bloat:  # Google    Contacts
 content-analyticsinsights-pa.googleapis.com  # from Phentora's AdguardPersonalList
-crashlyticsreports-pa.googleapis.com  # app requests  # this one too
-firebaselogging.googleapis.com  # Firebase - Tracker  # from Quidsup NoTrack-Blocklist
-footprints-pa.googleapis.com  # app requests  # and this
-geomobileservices-pa.googleapis.com  # app requests  # tested for months
-growth-pa.googleapis.com  # app requests  # tested for months
+content-autofill.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+content-partnersbadge-pa.googleapis.com  # from ShadowWhisperer's URL Shorteners
+crashlyticsreports-pa.googleapis.com  # app requests  # this one too  # is in ShadowWhisperer's Tracking
+crosfresnel-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+cryptauthdevicesync.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+cryptauthvault.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+cuscochromeextension-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+datamixer-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+deviceintegritytokens-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+device-provisioning.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+digitalassetlinks.googleapis.com  # app requests  # tested for months
+!discover-pa.googleapis.com  # from ShadowWhisperer Bloat:  # Google
+embeddedassistant.googleapis.com  # Google  ? Google Assistant (Does not appear to break it)  # from ShadowWhisperer's Bloat
+! FCM - Firebase Cloud Messaging
+fcm.googleapis.com  # from ShadowWhisperer's Ads
+fcmconnection.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+fcm-stream.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+fcmtoken.googleapis.com  # from ShadowWhisperer's Ads
+fcm-xmpp.googleapis.com  # from ShadowWhisperer's Ads
+federatedml-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+feedback-pa.googleapis.com  # from ShadowWhisperer's Tracking
+federatedml-pa.googleapis.com  # Google - Tracker  # from Quidsup NoTrack-Blocklist
+!findmydevice-pa.googleapis.com  # from ShadowWhisperer's Tracking  # maybe legit
+firebasedynamiclinks.googleapis.com  # from Mahakala
+firebasedynamiclinks-ipv4.googleapis.com  # from BlockListProject - Ads
+firebaseinappmessaging.googleapis.com  # Google  FireBase  # from ShadowWhisperer's Bloat
+firebaseinstallations.googleapis.com  # from ShadowWhisperer's Tracking
+firebaselogging.googleapis.com  # Firebase - Tracker  # from Quidsup NoTrack-Blocklist, ShadowWhisperer's Tracking
+firebaselogging-pa.googleapis.com  # from ShadowWhisperer's Tracking
+firebaseperusertopics-pa.googleapis.com  # Google  FireBase  # from ShadowWhisperer's Bloat
+firebaseremoteconfig.googleapis.com  # Google  FireBase  # from ShadowWhisperer's Bloat
+firebasestorage.googleapis.com  # Google  FireBase  # from ShadowWhisperer's Bloat
+firestore.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+!fonts.googleapis.com  # app requests  # is in EasyList  # hmm... scripts and stylesheets are in the exclusions
+footprints-pa.googleapis.com  # app requests  # and this  # is in ShadowWhisperer's Tracking
+#!geller-pa.googleapis.com  # ?
+gem-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+geoar.googleapis.com  # from ShadowWhisperer's Tracking
+geofilter.storage.googleapis.com  # from ShadowWhisperer's Tracking
+geofilter-compress.storage.googleapis.com  # from ShadowWhisperer's Tracking
+geomobileservices-pa.googleapis.com  # app requests  # tested for months  # is in ShadowWhisperer's Tracking
+geotimezones.googleapis.com  # Google  ? Timezone info  # from ShadowWhisperer's Bloat
+!gmscompliance-pa.googleapis.com  # from ShadowWhisperer's Tracking
+gnpfesdk-pa.googleapis.com  # Google  ? Google Nearby  # from ShadowWhisperer's Bloat
+googlehomefoyer-pa.googleapis.com  # Google  ? Google Home setup  # from ShadowWhisperer's Bloat
+googleonebackup-pa.googleapis.com  # Google  ? Google One Backup  # from ShadowWhisperer's Bloat
+growth-pa.googleapis.com  # app requests  # tested for months  # Google - Advertising  # is in Quidsup NoTrack-Blocklist, ShadowWhisperer's Bloat
 imasdk.googleapis.com$important,all  # see https://better.fyi/trackers/imasdk.googleapis.com/ for example: "Display ads in your application's video, audio, and game content."
-lamssettings-pa.googleapis.com  # app requests  # that's good
-myphonenumbers-pa.googleapis.com  # app requests  # seems ok
-photosdata-pa.googleapis.com  # app requests  # tested for months
+infinitedata-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+instantmessaging-pa.googleapis.com  # Google  ? Instant Messaging  # from ShadowWhisperer's Bloat
+instantmessaging-pa-us.googleapis.com  # Google  ? Instant Messaging  # from ShadowWhisperer's Bloat
+jnn-pa.googleapis.com  # https://tipsforefficiency.com/jnn-pa-googleapis-com/: "jnn-pa.googleapis.com is a consent management processor created by the German company Usercentrics GmbH."  # is in ShadowWhisperer's Tracking
+lamssettings-pa.googleapis.com  # app requests  # that's good  # Google  ? Large Array Manipulation Service  # is in ShadowWhisperer's Bloat
+mdh-pa.googleapis.com  # from ShadowWhisperer's Tracking
+mobilecrashreporting.googleapis.com  # from ShadowWhisperer's Tracking, BlockListProject - Ads
+mobiledataplan-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+mobilenetworkscoring-pa.googleapis.com  # from ShadowWhisperer's Tracking, BlockListProject - Ads
+#!mtalk.google.com  # ?
+myphonenumbers-pa.googleapis.com  # app requests  # seems ok  # Google  # is in ShadowWhisperer's Bloat
+!notifications-pa.googleapis.com - don't block this one! it breaks all the network on Android. Found out on tests, luckily.
+!oauthaccountmanager.googleapis.com  # from ShadowWhisperer Bloat:  # Google  # ? Oauth
+ogads-pa.googleapis.com  # from EasyList, Peter Lowe's, ShadowWhisperer's Ads
+ogads-pa.clients6.google.com  # from ShadowWhisperer's Ads
+ondevicesafety-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+optimizationguide-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+os-u.storage.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+passwordsleakcheck-pa.googleapis.com  # Software      Chrome (Compare site to leaked sites)  *Tracking  # from ShadowWhisperer's Bloat
+#!people-pa.googleapis.com  # ?
+peoplestack-pa.googleapis.com  # Google    People  # from ShadowWhisperer's Bloat
+phonedeviceverification-pa.googleapis.com  # Google  ? (Does not break 2FA)  # from ShadowWhisperer's Bloat
+phonedeviceverification-pa-prod.samdbox.googleapis.com  # from BlockListProject - Ads
+photosdata-pa.googleapis.com  # app requests  # tested for months  # Google  Photos  # is in ShadowWhisperer's Bloat
+#!play.googleapis.com  # ?
+playapprecommendations.googleapis.com  # from ShadowWhisperer's Tracking
+!proactivebackend-pa.googleapis.com  # from ShadowWhisperer Bloat:  # Google
+pubsub.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+recommendationengine.googleapis.com  # from ShadowWhisperer's Tracking
 regioninfo-pa.googleapis.com  # app requests  # tested for months
-xgapromomanager-pa.googleapis.com  # app requests  # tested for months
+retail.googleapis.com  # from ShadowWhisperer's Tracking
+! safebrowsing - hmm..
+safebrowsing.googleapis.com  # from ShadowWhisperer's Tracking
+safebrowsing.google.com  # from ShadowWhisperer's Tracking
+safebrowsing-cache.google.com  # from ShadowWhisperer's Tracking
+safebrowsing.cache.l.google.com  # from ShadowWhisperer's Tracking
+safebrowsing.googleusercontent.com  # from ShadowWhisperer's Tracking
+safebrowsingohttpgateway.googleapis.com  # from ShadowWhisperer's Tracking
+scone-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+securitydomain-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+semanticlocation-pa.googleapis.com  # from ShadowWhisperer's Tracking
+signaler-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+sticker-pa.googleapis.com  # Google  Stickers  # from ShadowWhisperer's Bloat
+subscriptionssettings-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+ulp1p-pa.googleapis.com  # from ShadowWhisperer's Tracking
+userlocation.googleapis.com  # from ShadowWhisperer's Tracking
+userpaneltv-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+voilatile-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+voledevice-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
+xgapromomanager-pa.googleapis.com  # app requests  # tested for months  # is in ShadowWhisperer's Ads
+#!youtubei.googleapis.com  # ?
+zerostateproxy-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
 
+! https://www.reddit.com/r/homelab/comments/fuuhoz/how_to_know_the_real_site_names_behind_1e100net/
 !1e100.net
+
+googleoptimize.com$important  # Google - Tracker  # from Quidsup NoTrack-Blocklist and EasyPrivacy
+googleoptimize-cn.com  # from EasyPrivacy
 
 googlesyndication.com$important,all
 !+  c.googlesyndication.com
@@ -1348,8 +1447,8 @@ googlesyndication.com$important,all
 ! end of c.googlesyndication.com
 
 googletagmanager.com$important,all
-
 www-googletagmanager.l.google.com$important
+googletagmanager-cn.com  # from EasyPrivacy
 
 googletagservices.com$important,all
 
@@ -1377,6 +1476,9 @@ nojsstats.appspot.com  # [Google / DoubleClick][AS15169]  # from MVPS
 ||google.com/log?$important
 
 googleanalytics.com  # from Peter Lowe's hosts file
+google-analytics-cn.com  # from EasyPrivacy
+
+mail-ads.google.com  # from ShadowWhisperer's URL Shorteners
 
 marketingplatform.google.com  # doubleclick
 
@@ -1398,12 +1500,6 @@ googleads-cn.com  # from EasyList
 googleadservices-cn.com  # from EasyList
 googlevads-cn.com  # from EasyList
 
-googleoptimize.com$important  # Google - Tracker  # from Quidsup NoTrack-Blocklist and EasyPrivacy
-
-mail-ads.google.com  # from ShadowWhisperer's URL Shorteners
-
-google-analytics-cn.com  # from EasyPrivacy
-googleoptimize-cn.com  # from EasyPrivacy
-googletagmanager-cn.com  # from EasyPrivacy
-
 google-analyticals.com  # from uBlock filters – Unbreak
+
+app.goo.gl  # Google  ? URL Shortener  # from ShadowWhisperer's Bloat
