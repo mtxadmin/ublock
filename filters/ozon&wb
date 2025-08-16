@@ -523,7 +523,7 @@ ozon.*##section:has(span:has-text(/^[−-][0-9]+%$/))
 ozon.*##div:has(>div:has-text(/^(Применили |)[-−][0-9]+%$/))
 !ozon.*##div:has(>div:has-text(/^Больше [0-9]+% выкуп/))
 ozon.*##div[data-widget="webMarketingLabels"]:has-text(/^Больше [0-9]+% выкуп/)
-ozon.*##div:has(>div:has-text(/^[0-9]+% возвратов$/))
+!ozon.*##div:has(>div:has-text(/^[0-9]+% возвратов$/)) - sometimes it removes all description instead
 ozon.*##div:has(>div:has-text(/^\s*Доберите до скидки/i)):not(:matches-path(/\/my\//))
 ozon.*##div:has(>div:has-text(/^\s*\d+\s*(балл(а|ов|) за отзыв|бонус(а|ов|))$/i))
 !
