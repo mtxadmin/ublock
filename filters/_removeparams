@@ -202,9 +202,14 @@ $removeparam=afCreativeId  # from DandelionSprout's URLShortener
     ! shopyourlikes.com$removeparam=afCreativeId
 
 $removeparam=aff,important
+    ! eventbrite.ca$removeparam=aff  # from Adguard
+    ! ||billing.purevpn.com/aff.php$removeparam=aff  # from Adguard
 
 $removeparam=/^aff_/i,important
     ! good old rule from Prx: aff (one of)
+    ! $removeparam=aff_c
+        ! go.getproton.me$removeparam=aff_c  # from Adguard
+        ! get.surfshark.net$removeparam=aff_c  # from Adguard
     ! $removeparam=aff_click_id  # from DandelionSprout's URLShortener
     ! $removeparam=aff_fcid  # is in DandelionSprout's URLShortener
         ! ||aliexpress.$removeparam=aff_fcid  # from Adguard
@@ -212,6 +217,7 @@ $removeparam=/^aff_/i,important
     ! $removeparam=aff_fsk  # is in DandelionSprout's URLShortener
         ! ||aliexpress.$removeparam=aff_fsk  # is in Adguard
     ! $removeparam=aff_id
+        ! get.surfshark.net$removeparam=aff_id  # from Adguard
     ! $removeparam=/^aff_id[0-9]/  # from DandelionSprout's URLShortener
     ! $removeparam=aff_platform  # it was specific Aliexpress rule, confirmed by months of testing. Author of NeatURL decided to make it general. I agree with him.
     ! ||aliexpress.*^$removeparam=aff_request_id  # from DandelionSprout's ClearURLs for uBo
@@ -253,9 +259,10 @@ $removeparam=/^affi/i
     ! $removeparam=affiliates_ad_id  # from DandelionSprout's URLShortener
     $removeparam=affiliate_source,important
         ! @@$removeparam=affiliate_source  # from DandelionSprout's URLShortener
-    ! ||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest  # from Adguard
+    ! carwow.de$removeparam=affiliate_ref  # from Adguard
     ! dhits.docomo.ne.jp$removeparam=affiliate  # from Adguard  # blocked
     ! flipkart.com$removeparam=affid  # from Adguard
+    ! ||azby.fmworld.net/cgi-bin/common/rd.cgi?$removeparam=affitest  # from Adguard
     ! fon.bet$removeparam=affijet-click  # from Adguard
     ! otto.de$removeparam=AffiliateID  # from Adguard
     ! $removeparam=AffiliateID,domain=otto.de|ottoversand.at  # from Adguard
@@ -364,6 +371,9 @@ $removeparam=awc  # from Adguard
 $removeparam=bbaid  # from DandelionSprout's URLShortener
 
 $removeparam=bemobdata  # from Adguard
+
+$removeparam=beyond_uzcvid  # from Adguard
+$removeparam=beyond_uzmcvid  # from Adguard
 
 $removeparam=_bhlid  # from Adguard
 
@@ -807,13 +817,14 @@ $removeparam=from,from=~alfabank.ru|~account.mail.ru|~id.mail.ru|~auth.mail.ru|~
     ! $removeparam=from,domain=apkpure.com|bandcamp.com|browserling.com|luisaviaroma.com|sogou.com|store.hbr.org|app.snyk.io|onlinepngtools.com|indiatimes.com|jetbrains.com  # from DandelionSprout's URLShortener
     !
     ! And yandex rules:
-    ! ||yandex.*/news/$removeparam=from  # from Adguard
-    ! ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
-    ! ||yandex.*/news*?from=main$document=campaign,removeparam=|,domain=yandex.*  # from Ru AdList
-    ! ?from=tabbar$document,removeparam=|from,domain=ya.ru|yandex.*  # from Ru AdList
-    ! ?from=yanews$document,removeparam=|  # from Ru AdList
-    ! from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
-    ! from=*_portal&lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
+    ||yandex.*/news/$removeparam=from  # from Adguard
+    ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
+    ||yandex.*/news*?from=main$document=campaign,removeparam=|,domain=yandex.*  # from Ru AdList
+    ?from=tabbar$document,removeparam=|from,domain=ya.ru|yandex.*  # from Ru AdList
+    ?from=yanews$document,removeparam=|  # from Ru AdList
+    from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
+    from=*_portal&lang=$document,removeparam=|,domain=dzen.*|yandex.*  # from Ru AdList
+    ||practicum.yandex.*$removeparam=from  # from Adguard
 
 $removeparam=_from  # from DandelionSprout's URLShortener
 
@@ -1407,6 +1418,7 @@ $removeparam=ref,important,domain=~cssportal.com|~flowlu.com|~privyr.com
     ! gillian-guide.github.io$removeparam=ref  # from Adguard
     ! goodreads.com$removeparam=ref  # from Adguard
     ! ^ref=hackernoon.com^$removeparam=ref  # from DandelionSprout's URLShortener
+    ! hokkaido-np.co.jp$removeparam=ref  # from Adguard
     ! huffingtonpost.it$removeparam=ref  # from Adguard
     ! jasonsavard.com$removeparam=/cUrl|ref/  # from Adguard
     ! video.laxd.com$removeparam=ref  # from Adguard
@@ -1422,6 +1434,7 @@ $removeparam=ref,important,domain=~cssportal.com|~flowlu.com|~privyr.com
     ! track.sendle.com/tracking$removeparam=ref  # from DandelionSprout's ClearURLs for uBo
     ! speee-ad.jp$removeparam=ref  # from Adguard
     ! uspoloassn.com$removeparam=ref  # from Adguard
+    ! weareholy.com$removeparam=ref  # from Adguard
     ! chunichi.co.jp$removeparam=ref  # from Adguard
     ! ieagent.jp$removeparam=ref  # from Adguard
     ! kitizawa.com$removeparam=ref  # from Adguard
@@ -2062,6 +2075,9 @@ $removeparam=ttd_tdid  # from DandelionSprout's URLShortener
 $removeparam=ttduuid  # from DandelionSprout's URLShortener
 
 $removeparam=tw_document_href  # from DandelionSprout's URLShortener
+$removeparam=tw_medium  # from Adguard
+$removeparam=tw_profile_id  # from Adguard
+$removeparam=tw_source  # from Adguard
 
 ! @@$removeparam=twitchToken  # from DandelionSprout's URLShortener  # recheck
 ||amazon.*^$removeparam=twitchToken  # from DandelionSprout's URLShortener
@@ -2201,6 +2217,8 @@ $removeparam=utparam
     ! tmall.com$removeparam=utparam  # from DandelionSprout's ClearURLs for uBo
     ! ||aliexpress.*^$removeparam=utparam  # from DandelionSprout's URLShortener
 
+$removeparam=uzcid  # from Adguard
+
 $removeparam=vc_lpp  # from Adguard
     ! Valuecommerce ( https://help.valuecommerce.ne.jp/mer/dl/ITP2.0_for_iTAG.pdf )
 
@@ -2215,6 +2233,7 @@ $removeparam=via
         ! $removeparam=via,domain=ya.ru  # from Ru AdList
     ! ^via=futurepedia^$removeparam=via  # from DandelionSprout's URLShortener
     ! $removeparam=/^via=rss$/  # from DandelionSprout's URLShortener
+    ! nicovideo.jp$removeparam=via  # from Adguard
     ! ^via=toolbar^$removeparam=via,domain=user.qzone.qq.com  # from DandelionSprout's URLShortener
     ! $removeparam=via,domain=sincode.ai|skillshare.com|thedailybeast.com  # from DandelionSprout's URLShortener
     ! ||sciencedirect.com/*?via%3D$removeparam=/^via%3D/  # from Adguard
@@ -2369,6 +2388,8 @@ airbnb.ru$removeparam=|source_impression_id|euid
     ! don't remove c parameter:
     !airbnb.com$removeparam=|source_impression_id|euid|c
     !airbnb.ru$removeparam=|source_impression_id|euid|c
+
+airvpn.org$removeparam=referred_by  # from Adguard
 
 alexa.com$removeparam=cdt  # from Adguard: ||data.alexa.com/data/$xmlhttprequest,removeparam=/cdt|ref/
 
