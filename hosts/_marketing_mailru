@@ -26,6 +26,8 @@
 ||imgsmail.ru/test.js  # xray.send('test-from-mail-cdn')
 ||imgsmail.ru/*/test.js  # imgsmail.ru/antares/test/test.js
 ||mail.ru/_nuxt/onboarding$image
+||img.imgsmail.ru/mail.login/*/img/*bg.jpg$image
+||mail.ru/feedback/$subdocument
 
     ! popups
 mail.ru##.geomap-tooltip
@@ -62,6 +64,7 @@ mail.ru##.widget__icon
 ! bottom
 mail.ru##.margin_left_off
 mail.ru##.margin_right_off
+mail.ru##[class*=Card__cardFluidWidth]:has-text(VK ID)
     ! trash
 ||imgsmail.ru/assets/horo_icons/
 mail.ru##.horoscope
@@ -93,7 +96,7 @@ mail.ru##.amb_more-pulse
 
 !! domains
 
-1l-hit.mail.ru  # from EasyPrivacy and Adguard
+1l-hit.mail.ru  # from EasyPrivacy, Adguard, Ru AdList
 1l-view.mail.ru  # from Dan Pollock's hosts file
 privacy-cs.mail.ru  # ad scripts  # is in Ru AdList
 
@@ -114,6 +117,8 @@ mail.ru##.badbrowser__atom
     ##a[onclick*="offergate-amigo"]
     ! all other amigo sites were gone
 
+an.mail.ru  # from ShadowWhisperer's Tracking
+
 appsmail.ru  # ||appsmail.ru/share/
 
 banners.mail.ru
@@ -127,6 +132,8 @@ calls.mail.ru  # ad frames
 connect.mail.ru$important  # 3p ad scripts  # ||connect.mail.ru$third-party,important
 
 cspreport.mail.ru
+
+lf1.mail.ru  # from ShadowWhisperer's Tracking
 
 likemore-fe.go.mail.ru
 likemore-go.imgsmail.ru  # is in RU AdList and EasyPrivacy
@@ -968,6 +975,8 @@ top7.list.ru
 marusia-news-widget.go.mail.ru  # 3p ad scripts
 marusia-web.go.mail.ru  # popups
 
+media-advcycle.imgsmail.ru  # from Adguard, Ru AdList
+
 media-stat.mail.ru  # from Ru AdList
 
 mediascope.mail.ru  # app banners
@@ -978,9 +987,13 @@ mediator.imgsmail.ru  # from Adguard
 mradx.net  # mail.ru tracker imgs
 mradx.ru  # from Ru AdList  # 2025
 
+my.mail.ru  # from ShadowWhisperer's Tracking
+
 ok.mail.ru  # from Ru AdList
 
 online.mirabilis.com  # from Ru AdList  # yes, ICQ belongs to mail.ru
+
+privacy-cs.mail.ru  # from NoADS_RU
 
 pulsarback.mail.ru  # from EasyPrivacy
 
@@ -988,6 +1001,12 @@ pulse.mail.ru$3p  # ||pulse.mail.ru/pulse-widget.js$domain=~mail.ru  # is in Ru 
 
 push-me.mail.ru  # app requests
 alt-push-me.mail.ru  # app requests
+
+r.mail.ru  # from BlockListProject - Tracking, ShadowWhisperer's Tracking
+
+r0.mail.ru  # from Ru AdList
+
+r3.mail.ru  # from BlockListProject - Ads, ShadowWhisperer's Tracking
 
 radar.mail.ru
 radar.imgsmail.ru$important  # is in EasyPrivacy and Ru AdList
@@ -1002,7 +1021,9 @@ reklamas.mail.ru
 
 relap.mail.ru  # from Ru AdList
 
-rs.mail.ru$important  # from EasyPrivacy
+rs.mail.ru$important  # from EasyPrivacy, ShadowWhisperer's Tracking
+
+showbiz.mail.ru  # from NoADS_RU, BlockListProject - Ads
 
 swa.mail.ru$important  # from Adguard and EasyPrivacy: swa.mail.ru/cgi-bin/counters
 
@@ -1840,6 +1861,7 @@ top4.mail.ru
 top5.mail.ru  # from Dan Pollock's hosts file
 top6.mail.ru
 top7.mail.ru
+top10.mail.ru  # from Cameleon
 
 top-abd.mail.ru$important  # from Ru AdList
 
@@ -1855,7 +1877,7 @@ tv.mail.ru  # from blocks of Lithuania
 
 webagent.mail.ru  # from Ru AdList
 
-xray.mail.ru
+xray.mail.ru  # is in Ru AdList
 alt-xray.mail.ru
 xray.imgsmail.ru
 alt-xray.imgsmail.ru
