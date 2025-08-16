@@ -13,6 +13,9 @@
 
 taobao.com$removeparam=activityId  # from Adguard
 
+aliexpress.com$removeparam=aem_p4p_detail
+    ! $removeparam=aem_p4p_detail  # from DandelionSprout's URLShortener  # seems like, this in only Aliexpress param
+
 aliexpress.com$removeparam=afSmartRedirect  # is in DandelionSprout's URLShortener
 
 ! Found independently.
@@ -178,6 +181,8 @@ aliexpress.ru$removeparam=_t
 ||aliexpress.*^$removeparam=__tppBottom  # from DandelionSprout's URLShortener
 
 taobao.com$removeparam=traceId  # from Adguard
+
+aliexpress.com$removeparam=trafficChannel
 
 aliexpress.*$removeparam=tt  # from DandelionSprout's URLShortener
 
