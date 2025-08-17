@@ -13,117 +13,95 @@
 
 taobao.com$removeparam=activityId  # from Adguard
 
-aliexpress.com$removeparam=aem_p4p_detail
+aliexpress.*$removeparam=aem_p4p_detail
     ! $removeparam=aem_p4p_detail  # from DandelionSprout's URLShortener  # seems like, this in only Aliexpress param
 
-aliexpress.com$removeparam=afSmartRedirect  # is in DandelionSprout's URLShortener
+aliexpress.*$removeparam=afSmartRedirect  # is in DandelionSprout's URLShortener
 
 ! Found independently.
-aliexpress.com$removeparam=algo_exp_id
-aliexpress.ru$removeparam=algo_exp_id
+aliexpress.*$removeparam=algo_exp_id
     ! I suppose, this parameter Aliexpress-specific only
     ! $removeparam=algo_exp_id  # from DandelionSprout's URLShortener
 
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too. Later: also is in DandelionSprout's ClearURLs for uBo
-aliexpress.com$removeparam=algo_expid
-aliexpress.ru$removeparam=algo_expid
+aliexpress.*$removeparam=algo_expid
 
 ! Found independently. Hmm, it seems, I already have added it before
-aliexpress.com$removeparam=algo_pvid
-aliexpress.ru$removeparam=algo_pvid
+aliexpress.*$removeparam=algo_pvid
 
 tmall.com$removeparam=ali_trackid  # from Adguard and DandelionSprout's ClearURLs for uBo
 
 !aliexpress.com$removeparam=appKey - don't, it breaks related search
 
 ! Found independently. 
-aliexpress.com$removeparam=browser_id
-aliexpress.ru$removeparam=browser_id
+aliexpress.*$removeparam=browser_id
 
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too and in DandelionSprout's ClearURLs for uBo
-aliexpress.com$removeparam=btsid
-aliexpress.ru$removeparam=btsid
+aliexpress.*$removeparam=btsid
 
 tmall.com$removeparam=bxsign  # from Adguard
 
 ! Found independently, added 2021-04-25
-aliexpress.com$removeparam=ck
-aliexpress.ru$removeparam=ck
+aliexpress.*$removeparam=ck
 
 ! Found independently.
-aliexpress.com$removeparam=cn
-aliexpress.ru$removeparam=cn
+aliexpress.*$removeparam=cn
 
 ||aliexpress.$removeparam=curPageLogUid  # is in Adguard
     ! ||aliexpress.*^$removeparam=curPageLogUid  # from DandelionSprout's URLShortener
 
 ! Found independently.
-aliexpress.com$removeparam=cv
-aliexpress.ru$removeparam=cv
+aliexpress.*$removeparam=cv
     ! ||aliexpress.*^$removeparam=cv  # from DandelionSprout's URLShortener
 
 ! Found independently, added 2022-01-11
-aliexpress.com$removeparam=compareFields
-aliexpress.ru$removeparam=compareFields
+aliexpress.*$removeparam=compareFields
 
 !aliexpress.com$removeparam=dl - don't!
 
 ! Found independently. Also it is in the Adguard and DandelionSprout's URLShortener
 aliexpress.com$removeparam=dp
-aliexpress.ru$removeparam=dp
 
 ! Found independently (2022-04)
 aliexpress.com$removeparam=_evo_buckets
-aliexpress.ru$removeparam=_evo_buckets
 
 ! from NeatURL (6.0, added here 2022-02). Seems variation of algo_exp_id and algo_expid so it looks logical
 aliexpress.com$removeparam=expid
-aliexpress.ru$removeparam=expid
 
 ! Found independently, earlier than 2021-04. Seems fully working
 aliexpress.com$removeparam=fromDetail
-aliexpress.ru$removeparam=fromDetail
 
 ! Testing was relatively short, but this parameter seems useless
 aliexpress.com$removeparam=_ga
-aliexpress.ru$removeparam=_ga
 
 aliexpress.com$removeparam=gatewayAdapt
-aliexpress.ru$removeparam=gatewayAdapt
     ! ||aliexpress.*^$removeparam=gatewayAdapt  # from DandelionSprout's URLShortener
 
 ! Found independently.
 aliexpress.com$removeparam=gclid
-aliexpress.ru$removeparam=gclid
 
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=gps-id
-aliexpress.ru$removeparam=gps-id
     ! Later: unusual Ru AdList form (it seems, all the parameters will be removed):
     ! .html?gps-id=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
     ! ||aliexpress.*^$removeparam=gps-id  # from DandelionSprout's URLShortener
 
 ! from NeatURL (6.0, added here 2022-02)
 aliexpress.com$removeparam=initiative_id
-aliexpress.ru$removeparam=initiative_id
     ! ||aliexpress.*^$removeparam=initiative_id  # from DandelionSprout's URLShortener
 
 ! Found independently (2022-04)
 aliexpress.com$removeparam=item_id
-aliexpress.ru$removeparam=item_id
 
 ||aliexpress.*^$removeparam=mall_affr  # from DandelionSprout's ClearURLs for uBo
 
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=mp
-aliexpress.ru$removeparam=mp
 
 ! Found independently.
 aliexpress.com$removeparam=m_page_id
-aliexpress.ru$removeparam=m_page_id
 
-aliexpress.com$removeparam=pdp_ext_f
-aliexpress.ru$removeparam=pdp_ext_f
+aliexpress.*$removeparam=pdp_ext_f
     ! unusual Ru AdList form (it seems, all the parameters will be removed):
     !.html?pdp_ext_f=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
     ! See gps-id above
@@ -133,22 +111,18 @@ aliexpress.ru$removeparam=pdp_ext_f
 aliexpress.*$removeparam=pdp_npi  # is in DandelionSprout's URLShortener
 
 ! Found independently, added 2022-01-11. Later: is in Adguard and DandelionSprout's URLShortener
-aliexpress.com$removeparam=pdp_pi
-aliexpress.ru$removeparam=pdp_pi
+aliexpress.*$removeparam=pdp_pi
 
 taobao.com$removeparam=ptl  # from Adguard
 
 ! Found independently.
-aliexpress.com$removeparam=rmsg
-aliexpress.ru$removeparam=rmsg
+aliexpress.*$removeparam=rmsg
 
 ! Found independently, added 2021-04-25
-aliexpress.com$removeparam=rowan_id1
-aliexpress.ru$removeparam=rowan_id1
+aliexpress.*$removeparam=rowan_id1
 
 ! Found independently, added 2021-04-25
-aliexpress.com$removeparam=rowan_msg_id
-aliexpress.ru$removeparam=rowan_msg_id
+aliexpress.*$removeparam=rowan_msg_id
 
 alibaba.com$removeparam=__sceneInfo  # https://m.alibaba.com/product/62078657382/2022-trend-tube-case-design-TWS.html?__sceneInfo=%7B%22cacheTime%22%3A%221800000%22%2C%22type%22%3A%22appDetailShare%22%7D&from=Android
 
@@ -164,15 +138,13 @@ taobao.com$removeparam=short_name  # from DandelionSprout's ClearURLs for uBo
 ! transferred to _removeparams
 
 ! Found independently, added 2021-05-28
-aliexpress.com$removeparam=sku_id
-aliexpress.ru$removeparam=sku_id
+aliexpress.*$removeparam=sku_id
 
 ! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=_t
-aliexpress.ru$removeparam=_t
+aliexpress.*$removeparam=_t
     ! ||aliexpress.*^$removeparam=_t  # from DandelionSprout's URLShortener
 
-!aliexpress.com$removeparam=t - don't, it breaks related search
+!aliexpress.*$removeparam=t - don't, it breaks related search
 
 ! is in Adguard, added 2022-02
 ||aliexpress.$removeparam=terminal_id  # is in Adguard
@@ -182,19 +154,17 @@ aliexpress.ru$removeparam=_t
 
 taobao.com$removeparam=traceId  # from Adguard
 
-aliexpress.com$removeparam=trafficChannel
+aliexpress.*$removeparam=trafficChannel
 
 aliexpress.*$removeparam=tt  # from DandelionSprout's URLShortener
 
 ! Found independently, added 2021-04-25
-aliexpress.com$removeparam=ug_edm_item_id
-aliexpress.ru$removeparam=ug_edm_item_id
+aliexpress.*$removeparam=ug_edm_item_id
 
 $removeparam=union_lens,domain=tmall.com|taobao.com  # from Adguard
 
 ! Found independently. Confirmed by months of testing. Now it is in NeatURL too
-aliexpress.com$removeparam=ws_ab_test
-aliexpress.ru$removeparam=ws_ab_test
+aliexpress.*$removeparam=ws_ab_test
 
 taobao.com$removeparam=xId  # from Adguard
 
@@ -207,11 +177,9 @@ taobao.com$removeparam=xId  # from Adguard
 !shareId
 !terminal_id
 
-aliexpress.com$removeparam=scenario
-aliexpress.ru$removeparam=scenario
+aliexpress.*$removeparam=scenario
 
-aliexpress.com$removeparam=tpp_rcmd_bucket_id
-aliexpress.ru$removeparam=tpp_rcmd_bucket_id
+aliexpress.*$removeparam=tpp_rcmd_bucket_id
 
 
 !! alibaba filters and subdomains
@@ -255,129 +223,129 @@ alibaba.com##.sc-hd-download-link
 !! aliexpress filters and subdomains
 
     ! random banners
-aliexpress.com,aliexpress.ru##._2lsU7
-aliexpress.com,aliexpress.ru##._3KrBP
-aliexpress.com,aliexpress.ru##._1kiVr
+aliexpress.*##._2lsU7
+aliexpress.*##._3KrBP
+aliexpress.*##._1kiVr
 
     ! history
-aliexpress.com,aliexpress.ru##.buyer-activity-bit
-aliexpress.com,aliexpress.ru###historyOuterBox
-aliexpress.com,aliexpress.ru##.show-history
-aliexpress.com,aliexpress.ru##.shopping-history
+aliexpress.*##.buyer-activity-bit
+aliexpress.*###historyOuterBox
+aliexpress.*##.show-history
+aliexpress.*##.shopping-history
 
     ! promotions
 !promotion.aliexpress.com - don't, coupons use it
 ||alicdn.com/g/aemod/ae-pc-promoteSingleBanner/
-aliexpress.com,aliexpress.ru##a[href*="/promo/"]
-aliexpress.com,aliexpress.ru##.festival-header
-aliexpress.com,aliexpress.ru##.festival-sub-venue
-aliexpress.com,aliexpress.ru##.aff-banner
-aliexpress.com,aliexpress.ru##.banner-big-sale
-aliexpress.com,aliexpress.ru##.banner-big-sale-wrap
-aliexpress.com,aliexpress.ru###bigsale-notice
-aliexpress.com,aliexpress.ru##.global-sale-main
-aliexpress.com,aliexpress.ru##.global-sale-module-title
-aliexpress.com,aliexpress.ru##[class*=bannerLink]
-aliexpress.com,aliexpress.ru##[class*=styles_carousel]
-aliexpress.com,aliexpress.ru##.fmcg-banner
-aliexpress.com,aliexpress.ru##.instore-info-rcmds
-aliexpress.com##[class^=price-banner]
-aliexpress.com##div[data-spm="newuser"]
-aliexpress.com##div[data-spm="sale_savings"]
+aliexpress.*##a[href*="/promo/"]
+aliexpress.*##.festival-header
+aliexpress.*##.festival-sub-venue
+aliexpress.*##.aff-banner
+aliexpress.*##.banner-big-sale
+aliexpress.*##.banner-big-sale-wrap
+aliexpress.*###bigsale-notice
+aliexpress.*##.global-sale-main
+aliexpress.*##.global-sale-module-title
+aliexpress.*##[class*=bannerLink]
+aliexpress.*##[class*=styles_carousel]
+aliexpress.*##.fmcg-banner
+aliexpress.*##.instore-info-rcmds
+aliexpress.*##[class^=price-banner]
+aliexpress.*##div[data-spm="newuser"]
+aliexpress.*##div[data-spm="sale_savings"]
 
     ! banner in empty shopping cart
-shoppingcart.aliexpress.com##.big-sale.empty-default
-shoppingcart.aliexpress.com##.empty-default
+shoppingcart.aliexpress.*##.big-sale.empty-default
+shoppingcart.aliexpress.*##.empty-default
 
     ! carousel sliders (only active)
-aliexpress.com,aliexpress.ru##.prime-slideshow
+aliexpress.*##.prime-slideshow
 
     ! cookies notice
 ! is in AdGuard, Fanboy's, EasyList
-aliexpress.com,aliexpress.ru##.aliexpress-notice
-aliexpress.com,aliexpress.ru###j-aliexpress-notice
+aliexpress.*##.aliexpress-notice
+aliexpress.*###j-aliexpress-notice
 
     ! social login
-aliexpress.com,aliexpress.ru##.flyout-signIn-type
-aliexpress.com,aliexpress.ru##.login-sns-wrap
+aliexpress.*##.flyout-signIn-type
+aliexpress.*##.login-sns-wrap
 
     ! app
-aliexpress.com,aliexpress.ru##.sf-download-app
-aliexpress.com,aliexpress.ru##.mobile-app
-aliexpress.com,aliexpress.ru##.android-link
-aliexpress.com,aliexpress.ru##.iphone-link
-aliexpress.com,aliexpress.ru###mobile-download
-aliexpress.com##[class^=appScan-]
-aliexpress.com##[class*=down-load-app--menuItem]
+aliexpress.*##.sf-download-app
+aliexpress.*##.mobile-app
+aliexpress.*##.android-link
+aliexpress.*##.iphone-link
+aliexpress.*###mobile-download
+aliexpress.*##[class^=appScan-]
+aliexpress.*##[class*=down-load-app--menuItem]
 
 ! totop
-aliexpress.com##.comet-icon-chevronup
-aliexpress.com##.comet-back-top
+aliexpress.*##.comet-icon-chevronup
+aliexpress.*##.comet-back-top
 
 ! right
-aliexpress.com##[class^=action--container]:style(position:static !important)
+aliexpress.*##[class^=action--container]:style(position:static !important)
 
-aliexpress.com##[class^=survey--wrap]
+aliexpress.*##[class^=survey--wrap]
 
     ! register banners
-aliexpress.com###user-benefits
-aliexpress.com,aliexpress.ru##li.member-entry-product-item
+aliexpress.*###user-benefits
+aliexpress.*##li.member-entry-product-item
 
 !campaign.aliexpress.com  # ad popups - see in _marketing__subdomains
-aliexpress.com,aliexpress.ru##[href^="//campaign.aliexpress.com/"]
-aliexpress.com,aliexpress.ru##a[href^="https://campaign.aliexpress.com/"]
-aliexpress.com,aliexpress.ru##.container-shadow:has(a[href^="https://campaign.aliexpress.com/"])
+aliexpress.*##[href^="//campaign.aliexpress.com/"]
+aliexpress.*##a[href^="https://campaign.aliexpress.com/"]
+aliexpress.*##.container-shadow:has(a[href^="https://campaign.aliexpress.com/"])
 
 ! is in Ru AdList (https://forums.lanik.us/viewtopic.php?f=102&t=44550)
-aliexpress.com,aliexpress.ru###J_xiaomi_dialog
+aliexpress.*###J_xiaomi_dialog
 !alimebot.aliexpress.com  # from https://forums.lanik.us/viewtopic.php?f=102&t=44550 - see in _marketing__subdomains
 
-aliexpress.ru##[class^=CampaignEntrance]
-aliexpress.ru##[class^=FestivalVenue_]
+aliexpress.*##[class^=CampaignEntrance]
+aliexpress.*##[class^=FestivalVenue_]
 ||aliexpress.ru/mixer/widgets/bx/TopBanner/
 ||st.aliexpress.ru/mixer-storage/homePage/static/mixer-widgets/$image
 
     ! store banners
-aliexpress.com,aliexpress.ru##.product-store-banner
-aliexpress.com,aliexpress.ru##.store-banner
-aliexpress.ru##[class^=StoreBanner]
-aliexpress.com##[class^=description--store-banner]
+aliexpress.*##.product-store-banner
+aliexpress.*##.store-banner
+aliexpress.*##[class^=StoreBanner]
+aliexpress.*##[class^=description--store-banner]
 
-aliexpress.ru##[class^=InfoBanner]
+aliexpress.*##[class^=InfoBanner]
 
 ! banner
-aliexpress.com##.sale-space
+aliexpress.*##.sale-space
 
     ! fixed elements
-aliexpress.com,aliexpress.ru##.float-image
-aliexpress.com##.fixed-header:style(position:static !important)
-aliexpress.com##.left-affix.next-affix:style(position:static !important)
-aliexpress.com,aliexpress.ru##.detail-fixed-tab:style(position:static !important)
-aliexpress.com,aliexpress.ru##.search-feedback-wrap
-aliexpress.com##.item-store-wrap > .store-name
-aliexpress.com##.channel-menu:style(position:static !important)
-aliexpress.com,aliexpress.ru##.img-view-wrap > div:style(position:static !important; top:auto !important)
-aliexpress.com##.alime-avatar
-aliexpress.com###J_xiaomi_dialog:has-text(Need help?)
-aliexpress.com###J_xiaomi_dialog:has-text(Eva):has-text(Reason for order close)
-aliexpress.com##.safe-info-hook
-aliexpress.ru##[class^=FixedStoreInfoBar_]:style(position:static !important)
-aliexpress.ru##.ui-fixed-panel
+aliexpress.*##.float-image
+aliexpress.*##.fixed-header:style(position:static !important)
+aliexpress.*##.left-affix.next-affix:style(position:static !important)
+aliexpress.*##.detail-fixed-tab:style(position:static !important)
+aliexpress.*##.search-feedback-wrap
+aliexpress.*##.item-store-wrap > .store-name
+aliexpress.*##.channel-menu:style(position:static !important)
+aliexpress.*##.img-view-wrap > div:style(position:static !important; top:auto !important)
+aliexpress.*##.alime-avatar
+aliexpress.*###J_xiaomi_dialog:has-text(Need help?)
+aliexpress.*###J_xiaomi_dialog:has-text(Eva):has-text(Reason for order close)
+aliexpress.*##.safe-info-hook
+aliexpress.*##[class^=FixedStoreInfoBar_]:style(position:static !important)
+aliexpress.*##.ui-fixed-panel
     ! pseudo filler
-aliexpress.com##.placeholder-div
-aliexpress.com##div[data-role="for_header_fixed"]
+aliexpress.*##.placeholder-div
+aliexpress.*##div[data-role="for_header_fixed"]
 
     ! hover icons on photos
-aliexpress.com##.atwl-btn-wrap
+aliexpress.*##.atwl-btn-wrap
 
     ! labels
-aliexpress.ru##[class^=product-snippet_ProductSnippet__tag]
+aliexpress.*##[class^=product-snippet_ProductSnippet__tag]
 
     ! idea is good but realization is bad
-aliexpress.com,aliexpress.ru##.ask-buyers
+aliexpress.*##.ask-buyers
 
     ! left filters menu
-aliexpress.com##.left-menu-container:style(max-height:none !important)
+aliexpress.*##.left-menu-container:style(max-height:none !important)
 
     ! gif animations
 ||alicdn.com/kf/*.gif
@@ -1273,76 +1241,76 @@ aliexpress.com##.left-menu-container:style(max-height:none !important)
 ||alicdn.com/kf/HTB14YdikRjTBKNjSZFNq6ysFXXa9.jpg
 ||alicdn.com/kf/Sa1021a99fb2c44c7b2b02950c9ab76e8g.jpg
     ! А, так это была реклама (AD на фото)! Сжечь её!
-aliexpress.com##.other-store-more > div > div > div:has-text(/AD/)
-aliexpress.com##div:has(>div>div>span:has-text(/^AD$/))
-aliexpress.com##div.next-slick-active.next-slick-slide:has(div:has-text(/^AD$/))
-aliexpress.com##a:has(div:has-text(/^AD$/))
-aliexpress.com##.search-item-card-wrapper-gallery:has(div:has-text(/^AD$/i))
+aliexpress.*##.other-store-more > div > div > div:has-text(/AD/)
+aliexpress.*##div:has(>div>div>span:has-text(/^AD$/))
+aliexpress.*##div.next-slick-active.next-slick-slide:has(div:has-text(/^AD$/))
+aliexpress.*##a:has(div:has-text(/^AD$/))
+aliexpress.*##.search-item-card-wrapper-gallery:has(div:has-text(/^AD$/i))
 
-!!aliexpress.com##.next-overlay-wrapper - don`t, not only ad popups. Again: don't!
+!!aliexpress.*##.next-overlay-wrapper - don`t, not only ad popups. Again: don't!
 ! Instead that: block empty overlay
 ! it blocks delivery map. Update: it doesn't, it was an error on Ali side  Update2: hmm... Again. Iframe - cainiao-global.aliexpress.com
-aliexpress.com##.next-overlay-backdrop:has-text(/^$/)
+aliexpress.*##.next-overlay-backdrop:has-text(/^$/)
 
 ! popups
-aliexpress.com##div[class*=product-fix-sns]
+aliexpress.*##div[class*=product-fix-sns]
 
 ! popups 2025-04
-aliexpress.com##.go_gs
-aliexpress.com##.go_gp
+aliexpress.*##.go_gs
+aliexpress.*##.go_gp
 
-aliexpress.com##.law-18-dialog
+aliexpress.*##.law-18-dialog
 
-aliexpress.com##.vehicles-container
+aliexpress.*##.vehicles-container
 
 ! popups
-aliexpress.com##.law-model-container
-aliexpress.com##.comet-modal-mask
-aliexpress.com##*:style(filter:none !important)
+aliexpress.*##.law-model-container
+aliexpress.*##.comet-modal-mask
+aliexpress.*##*:style(filter:none !important)
 
     ! sidebar
-aliexpress.com,aliexpress.ru##.sidebar-newuser
-aliexpress.com,aliexpress.ru###j-multi-sidebar-outer
-aliexpress.com,aliexpress.ru##.promotion-sidebar-content
-aliexpress.com,aliexpress.ru##.multi-sidebar-tab
-aliexpress.com,aliexpress.ru##[class^=styles_body]
+aliexpress.*##.sidebar-newuser
+aliexpress.*###j-multi-sidebar-outer
+aliexpress.*##.promotion-sidebar-content
+aliexpress.*##.multi-sidebar-tab
+aliexpress.*##[class^=styles_body]
 
     ! popups
-aliexpress.ru##[class^=CouponPopup]
-aliexpress.ru##[class*=Dialog__background]
-aliexpress.ru##[class*=AuthContextWidget_UserAgreementModal]
-aliexpress.ru##[class^=RegionalSettingsHeaderItem_Tooltip__tooltip-content]
-aliexpress.ru##[class^=ShipToHeaderItem_Backdrop]
-aliexpress.ru##[class^=ShipToHeaderItem_Tooltip__tooltipWrapper]:has-text(Все верно)
-aliexpress.ru##[class^=ShipToHeaderItem_GeoTooltip]
-aliexpress.ru##[class^=ShipToHeaderItem_Tootlip]
+aliexpress.*##[class^=CouponPopup]
+aliexpress.*##[class*=Dialog__background]
+aliexpress.*##[class*=AuthContextWidget_UserAgreementModal]
+aliexpress.*##[class^=RegionalSettingsHeaderItem_Tooltip__tooltip-content]
+aliexpress.*##[class^=ShipToHeaderItem_Backdrop]
+aliexpress.*##[class^=ShipToHeaderItem_Tooltip__tooltipWrapper]:has-text(Все верно)
+aliexpress.*##[class^=ShipToHeaderItem_GeoTooltip]
+aliexpress.*##[class^=ShipToHeaderItem_Tootlip]
 
 ! other
 ! from uBlock filters
-aliexpress.com##body:style(overflow: auto !important; padding: 0 !important;)
-aliexpress.com##.use-coupons-info-lang-limit:style(font-size:15px !important)
-aliexpress.com##.mobile-discount-trigger
-aliexpress.com,aliexpress.ru##.ng-mobile
-aliexpress.com,aliexpress.ru##.site-footer
-aliexpress.com##.robot-wrapper
-aliexpress.com,aliexpress.ru##.hm-left
-aliexpress.com,aliexpress.ru###tmall-entrance
+aliexpress.*##body:style(overflow: auto !important; padding: 0 !important;)
+aliexpress.*##.use-coupons-info-lang-limit:style(font-size:15px !important)
+aliexpress.*##.mobile-discount-trigger
+aliexpress.*##.ng-mobile
+aliexpress.*##.site-footer
+aliexpress.*##.robot-wrapper
+aliexpress.*##.hm-left
+aliexpress.*###tmall-entrance
 ||i.alicdn.com/*/tmall-slogan.gif
 ||i.alicdn.com/*/mall-slogan-2x.gif
-aliexpress.com###j-price-extra-wrap
-shoppingcart.aliexpress.com###header-categories
-aliexpress.com##.p-payment-type
-aliexpress.com##.ui-balloon-lb.im-contact-tips.ui-balloon
-aliexpress.com##.category-menu:style(position:static !important)
-shoppingcart.aliexpress.com##.payment-cabinet
-aliexpress.com,aliexpress.ru##.store-header-bg
+aliexpress.*###j-price-extra-wrap
+shoppingcart.aliexpress.*###header-categories
+aliexpress.*##.p-payment-type
+aliexpress.*##.ui-balloon-lb.im-contact-tips.ui-balloon
+aliexpress.*##.category-menu:style(position:static !important)
+shoppingcart.aliexpress.*##.payment-cabinet
+aliexpress.*##.store-header-bg
 ! from Ru AdList forum
-aliexpress.com##[data-role="enter-promotion"]
-aliexpress.com##.product-fix-sns
-aliexpress.com##.hot-products
-aliexpress.com###fd-channel-title
-aliexpress.com,aliexpress.ru##.fm-sns
-aliexpress.ru##[class*=SnowFloatPanel_]:style(position:static !important)
+aliexpress.*##[data-role="enter-promotion"]
+aliexpress.*##.product-fix-sns
+aliexpress.*##.hot-products
+aliexpress.*###fd-channel-title
+aliexpress.*##.fm-sns
+aliexpress.*##[class*=SnowFloatPanel_]:style(position:static !important)
 
 ||alibaba.com/ts?  # is in EasyPrivacy
 ||taobao.com/ts  #||fourier.taobao.com/ts
@@ -1350,6 +1318,7 @@ aliexpress.ru##[class*=SnowFloatPanel_]:style(position:static !important)
 
 ||aliexpress.com/sw.js  # new 2020
 ||aliexpress.ru/sw.js
+||aliexpress.us/sw.js
 
 ||aliexpress.com/h5/mtop.aliexpress.usertouch
 ||aliexpress.com/h5/mtop.global.ug.webpush
@@ -1362,107 +1331,107 @@ aliexpress.ru##[class*=SnowFloatPanel_]:style(position:static !important)
 
 ||ase.aliexpress.com/upload/web/info  # 3p xhrs
 
-aliexpress.ru##[class^=Header_Logo]
-aliexpress.ru##[class*=HeaderPDP_Logo]
-aliexpress.ru##[class^=RedHeader_Logo]
+aliexpress.*##[class^=Header_Logo]
+aliexpress.*##[class*=HeaderPDP_Logo]
+aliexpress.*##[class^=RedHeader_Logo]
 !.site-logo is removed by general rule, but there is a margin
-aliexpress.com##.site-logo:style(padding:0px !important)
-aliexpress.com##[class^=pc-header--logo]
-aliexpress.ru##[class^=styles_campaignWrapper]
-aliexpress.ru##[class^=IntroductionCarousel]
+aliexpress.*##.site-logo:style(padding:0px !important)
+aliexpress.*##[class^=pc-header--logo]
+aliexpress.*##[class^=styles_campaignWrapper]
+aliexpress.*##[class^=IntroductionCarousel]
     ! apps
-aliexpress.ru##[class*=styles_appsIcon]
-aliexpress.ru##[class*=footerApps]
-aliexpress.ru##[class*=_appIcon]
-aliexpress.ru##[class*=_appsIcon]
-aliexpress.ru##[class^=SnowFooter_StoreButton]
+aliexpress.*##[class*=styles_appsIcon]
+aliexpress.*##[class*=footerApps]
+aliexpress.*##[class*=_appIcon]
+aliexpress.*##[class*=_appsIcon]
+aliexpress.*##[class^=SnowFooter_StoreButton]
 ||aliexpress.ru/mixer-storage/qr-code.png
-aliexpress.com##._header_qrCode_
-aliexpress.com##img[alt="download APP"]
+aliexpress.*##._header_qrCode_
+aliexpress.*##img[alt="download APP"]
     ! "benefits"
-aliexpress.ru##[class*=_benefits]
-    !aliexpress.ru##[class^=styles_benefits]
-    !aliexpress.ru##[class^=Footer_styles__benefits]
+aliexpress.*##[class*=_benefits]
+    !aliexpress.*##[class^=styles_benefits]
+    !aliexpress.*##[class^=Footer_styles__benefits]
 
-aliexpress.ru##[class^=RedModuleBanner]
-aliexpress.ru##[class^=PseudoSmartBanner]
+aliexpress.*##[class^=RedModuleBanner]
+aliexpress.*##[class^=PseudoSmartBanner]
 
-aliexpress.ru##[class^=Footer_styles__social]
+aliexpress.*##[class^=Footer_styles__social]
 
-aliexpress.com,aliexpress.ru##.product-fix-wrap
+aliexpress.*##.product-fix-wrap
 
      !! seo
-aliexpress.com##.hot-words
-aliexpress.ru##[class^=Header_HotWords]
-aliexpress.ru##[class*=HotSearch__crossLinks]
-aliexpress.ru##[class*=SimilarSuggestions]
-aliexpress.com##.header-desc
+aliexpress.*##.hot-words
+aliexpress.*##[class^=Header_HotWords]
+aliexpress.*##[class*=HotSearch__crossLinks]
+aliexpress.*##[class*=SimilarSuggestions]
+aliexpress.*##.header-desc
     ! footer with seo links
-aliexpress.com,aliexpress.ru##.cross-link
-aliexpress.com,aliexpress.ru###crosslink
-aliexpress.com,aliexpress.ru##.seo-left
-aliexpress.com,aliexpress.ru###seo-category-teletext
-aliexpress.com,aliexpress.ru##.seo-container
-aliexpress.com,aliexpress.ru##.seo-page-content
-aliexpress.com,aliexpress.ru##.footer-copywrite
-aliexpress.com,aliexpress.ru##.teletext-section
-aliexpress.com,aliexpress.ru##.cf-wrapper
-aliexpress.com##[class^=bottom--container]
-aliexpress.com##[class^=relatedSearch]
-aliexpress.com##[class^=cross-link--crossLink]
+aliexpress.*##.cross-link
+aliexpress.*###crosslink
+aliexpress.*##.seo-left
+aliexpress.*###seo-category-teletext
+aliexpress.*##.seo-container
+aliexpress.*##.seo-page-content
+aliexpress.*##.footer-copywrite
+aliexpress.*##.teletext-section
+aliexpress.*##.cf-wrapper
+aliexpress.*##[class^=bottom--container]
+aliexpress.*##[class^=relatedSearch]
+aliexpress.*##[class^=cross-link--crossLink]
 
 ! "did you find?"
-aliexpress.ru##[class^=SearchPool]
+aliexpress.*##[class^=SearchPool]
 
-aliexpress.ru##+js(set,window.Tracker,noopFunc)
-aliexpress.ru##+js(set,tracker.install,noopFunc)
-aliexpress.ru##+js(set,tracker.log,noopFunc)
+aliexpress.*##+js(set,window.Tracker,noopFunc)
+aliexpress.*##+js(set,tracker.install,noopFunc)
+aliexpress.*##+js(set,tracker.log,noopFunc)
 
 
 ! is in Adguard and Ru AdList (https://forums.lanik.us/viewtopic.php?f=102&t=44550)
-aliexpress.com,aliexpress.ru###ae-ru-privacy-banner
-aliexpress.com,aliexpress.ru###ae-ru-privacy-banner__container
+aliexpress.*###ae-ru-privacy-banner
+aliexpress.*###ae-ru-privacy-banner__container
 ||alicdn.com/*/privacy-policy-banner/  # from https://forums.lanik.us/viewtopic.php?f=102&t=44550
-aliexpress.com##.all-categories-banner
-aliexpress.com###categories-banner
+aliexpress.*##.all-categories-banner
+aliexpress.*###categories-banner
 ||alicdn.com/ae-affiliate-ui/$image
-aliexpress.ru##.multi-sidebar-tab
-aliexpress.ru##[class^=MultiSidebarTab]
-aliexpress.ru##.rus-mall-img
+aliexpress.*##.multi-sidebar-tab
+aliexpress.*##[class^=MultiSidebarTab]
+aliexpress.*##.rus-mall-img
 ||aliexpress.ru/mixer-storage/homePage/IntroductionBanner$image
-aliexpress.ru##[class*=SnowSaleBanner]
+aliexpress.*##[class*=SnowSaleBanner]
 
     ! brands list
-aliexpress.ru###brands-wall-box
-aliexpress.ru##[class^=SearchSideFilter_FilterBrands]
+aliexpress.*###brands-wall-box
+aliexpress.*##[class^=SearchSideFilter_FilterBrands]
 
 ! store banner
-aliexpress.com##div.astore_J_module:nth-of-type(2)
+aliexpress.*##div.astore_J_module:nth-of-type(2)
 
-aliexpress.com##.uniform-banner-box-right
-aliexpress.com##[class*=big-sale-card]
+aliexpress.*##.uniform-banner-box-right
+aliexpress.*##[class*=big-sale-card]
 
-aliexpress.com##.place-container > .report-btn-wrap
+aliexpress.*##.place-container > .report-btn-wrap
 
-aliexpress.com##.store-header-bg
-aliexpress.com##.ng-mobile
-aliexpress.com##.logo-base
-aliexpress.com##.ae-logo
-aliexpress.com###aliLogo
-aliexpress.com##.hm-left-store
-aliexpress.com##.fm-logo
-aliexpress.com##[class*=euCuplogo]
+aliexpress.*##.store-header-bg
+aliexpress.*##.ng-mobile
+aliexpress.*##.logo-base
+aliexpress.*##.ae-logo
+aliexpress.*###aliLogo
+aliexpress.*##.hm-left-store
+aliexpress.*##.fm-logo
+aliexpress.*##[class*=euCuplogo]
 
 ! marquees
-aliexpress.com##.marqueeBoxView.marqueeContentView
-aliexpress.com##.messages_container
+aliexpress.*##.marqueeBoxView.marqueeContentView
+aliexpress.*##.messages_container
 
 !wp.aliexpress.com  # wp.aliexpress.com/trace.gif?event= - see in _marketing__subdomains
 
 !ru-aebridge.aliexpress.com.gds.alibabadns.com  # don't. Blocks flashsales
 
 ! strange popup layer
-aliexpress.com##.__resizable_base__
+aliexpress.*##.__resizable_base__
 
 
 !! unneeded hosts, tested for months
@@ -1506,7 +1475,7 @@ aliexpress.com##.__resizable_base__
 !||alicdn.com/uab/
 !||alicdn.com/*/uab/
 !||alicdn.com/sd/ncpc/nc.js
-aliexpress.com#@#.nc_wrapper
+aliexpress.*#@#.nc_wrapper
 
 ! lighthouse.aliexpress.com/shopcart/buyer_pay_low_notice_ajax.htm
 lighthouse.aliexpress.com/buyer/user_prevention_loss_ajax.htm
@@ -1521,24 +1490,24 @@ us.ynuf.alipay.com  # also is in Opera adblocker
 us.ynuf.aliapp.org  # us.ynuf.aliapp.org/service/um.json
 
 ! sometimes needed
-!aliexpress.com##.in-store-more
-!aliexpress.com##.other-store-more
+!aliexpress.*##.in-store-more
+!aliexpress.*##.other-store-more
 
 ! rules for affiliate stripe (some of them). Just for answering to.
-!aliexpress.com#@#.share_content
-!aliexpress.com#@#.share_product
-!aliexpress.com#@#.share_product_content
-!aliexpress.com##.share_content:style(position:static !important)
-!aliexpress.com##.share_to
-!aliexpress.com##.share_setting
+!aliexpress.*#@#.share_content
+!aliexpress.*#@#.share_product
+!aliexpress.*#@#.share_product_content
+!aliexpress.*##.share_content:style(position:static !important)
+!aliexpress.*##.share_to
+!aliexpress.*##.share_setting
 
 ! banner
-aliexpress.com##.nuBitBox
+aliexpress.*##.nuBitBox
 
-aliexpress.com##.quick-access-title
+aliexpress.*##.quick-access-title
 
-aliexpress.com,aliexpress.ru##[class^=styles_middleBlock]
-! aliexpress.com,aliexpress.ru##[class^=styles_wrapper]  don't, it blocks some unrelated popups elements
+aliexpress.*##[class^=styles_middleBlock]
+! aliexpress.*##[class^=styles_wrapper]  don't, it blocks some unrelated popups elements
 
 ||aliexpress.com/statistics/
 ||aliexpress.com/*/statistics/
@@ -1560,13 +1529,13 @@ aliexpress.com,aliexpress.ru##[class^=styles_middleBlock]
 ||alicdn.com/*/ctl/ctl.js
 
 ! from AdGuard
-aliexpress.com,aliexpress.ru###newuser-activity-config:remove()
+aliexpress.*###newuser-activity-config:remove()
 
 ! deblur!
-aliexpress.com##+js(remove-attr, class, .blur, stay)
-! for history: aliexpress.com##body:style(-webkit-filter:blur(0); filter:blur(0); -webkit-filter: none; filter:none)
+aliexpress.*##+js(remove-attr, class, .blur, stay)
+! for history: aliexpress.*##body:style(-webkit-filter:blur(0); filter:blur(0); -webkit-filter: none; filter:none)
 
-! false-positive rule in EasyList and Fanboy's: aliexpress.ru##div[class^="styles_wrapper_"]
+! false-positive rule in EasyList and Fanboy's: aliexpress.*##div[class^="styles_wrapper_"]
 aliexpress.ru#@#div[class^="styles_wrapper_"]
 
 !/sufei/*
@@ -1590,7 +1559,7 @@ yupoo.com$3p  # Aliexpress banner
 aliexpress.ru,domain=~aliexpress.ru|~tmall.ru  # Aliexpress cookie
 tmall.ru$important,domain=~aliexpress.ru|~tmall.ru
 tmall.ru##.logo-gif
-taobao.com$domain=~taobao.com|~aliexpress.com|~aliexpress.ru   # see cloud.video.taobao.com above
+taobao.com$domain=~taobao.com|~aliexpress.com|~aliexpress.ru|~aliexpress.us   # see cloud.video.taobao.com above
 taobao.com$popup,third-party  # from Adguard Chinese
 
 ! from EasyList China
@@ -1605,11 +1574,11 @@ taobao.com$popup,third-party  # from Adguard Chinese
 ||aliexpress.com/ci_bb  # tracking images  # us-click.aliexpress.com/ci_bb?...
 
 ! "brand stories" banners
-aliexpress.com,aliexpress.ru##.story-info
-aliexpress.com,aliexpress.ru##.brand-story-wrap
-aliexpress.com,aliexpress.ru##.brand-store-wrap
+aliexpress.*##.story-info
+aliexpress.*##.brand-story-wrap
+aliexpress.*##.brand-store-wrap
 
-aliexpress.com,aliexpress.ru##.drogue-poplayer-modal
+aliexpress.*##.drogue-poplayer-modal
 
 ||img.alicdn.com/imgextra/$image  # banners
 
