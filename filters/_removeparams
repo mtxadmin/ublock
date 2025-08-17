@@ -835,7 +835,10 @@ $removeparam=/^ga_/i  # Campaign tracking (Google Analytics, ga)  # from NeatURL
     ! $removeparam=ga_sid  # from DandelionSprout's URLShortener
     ! $removeparam=ga_vid  # from DandelionSprout's URLShortener
 
-$removeparam=_ga,important  # from Ru AdList and Adguard
+~aliexpress.*$removeparam=_ga,important  # from Ru AdList and Adguard
+    ! Exclusions:
+    ! Aliexpress - now it uses this :-(
+    !
     ! unusual Ru AdList form (it seems, all the parameters will be removed):
         ! .com/?_ga=$document,removeparam=|  # from Ru AdList
         ! .net/?_ga=$document,removeparam=|  # from Ru AdList
