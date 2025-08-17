@@ -4137,20 +4137,36 @@ local.alipcsec.com
     ! aliyun.com
 acjs.aliyun.com  # from Adaway
     ! aliyuncs.com
-aliyuncs.com  # ad scripts and tracker imgs and empty root
-log.aliyuncs.com  # subs exist
+!aliyuncs.com rule was written in ~2020 for Aliexpress. In 2025 it turned out that some Chinese domains needed aliyuncs.com subdomains
+!aliyuncs.com  # ad scripts and tracker imgs and empty root
     !||aliyuncs.com/r.png
-    ! arms-retcode.aliyuncs.com
-    ! arms-retcode-sg.aliyuncs.com
-    ! beacon-api.aliyuncs.com  # from Adaway
-    !||log*.aliyuncs.com^  # from Adguard
-    !easeusinfo.us-east-1.log.aliyuncs.com
-    !fineboost-loghub.ap-southeast-1.log.aliyuncs.com  # from Adaway
+arms-retcode.aliyuncs.com  # at least
+arms-retcode-sg.aliyuncs.com
+retcode-us-west-1.arms.aliyuncs.com
     !retcode-us-west-1.arms.aliyuncs.com/r.png
-    !
+beacon-api.aliyuncs.com  # from Adaway
+coocentpromotion.oss-us-west-1.aliyuncs.com  # from BlockListProject - Ads
+!+  log.aliyuncs.com  # subdomains exist
+    !||log*.aliyuncs.com^  # from Adguard
+log-global.aliyuncs.com  # from ShadowWhisperer's Tracking, EasyPrivacy
+adash.man.aliyuncs.com  # from Adguard, anudeepND blacklist
+adash-emas.cn-hangzhou.aliyuncs.com  # from Mahakala
+xpjcg.oss-accelerate.aliyuncs.com  # from Adguard Chinese
+star-seo.oss-ap-northeast-1.aliyuncs.com  # from Adguard Chinese
+mobantong.oss-cn-hangzhou.aliyuncs.com  # from Adguard Chinese
+coocentpromotion.oss-us-west-1.aliyuncs.com  # from anudeepND blacklist
+all-filehub.oss-ap-southeast-1.aliyuncs.com  # from Steven Black Unified hosts
+audience-network-apps.oss-us-east-1.aliyuncs.com  # from ShadowWhisperer's Ads
+tututu46.oss-accelerate.aliyuncs.com  # from ShadowWhisperer's Ads
     ! taobao
-log-global.aliyuncs.com  # from ShadowWhisperer's Tracking
+adash-c.ut.taobao.com  # from BlockListProject - Ads
+adash.ut.taobao.com  # from BlockListProject - Ads
+adashww.ut.taobao.com  # from BlockListProject - Ads
+adashx4id.ut.taobao.com  # from BlockListProject - Ads
+adashx4sg.ut.taobao.com  # from BlockListProject - Ads
+adashxbeta.ut.taobao.com  # from BlockListProject - Ads
 err.taobao.com
+fourier.taobao.com  # ad tracker  # is in several lists
 !dm.taobaojuhuasuan.cn  # Aliexpress marketing from Energized Blu
     ! in-app Aliexpress related marketing from Energized Blu
 accscdn.m.taobao.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
