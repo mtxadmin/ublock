@@ -197,6 +197,9 @@ ozon.*###stickyHeader:style(padding:initial !important; margin:initial !importan
 !ozon.*##.search-bar-wrapper div:style(padding-top:0px !important) - don't, search form disappears on click
 ozon.*##div[data-widget="row"]:has-text(/^$/)
 ozon.*##div[data-widget="container"]:style(margin-top:0px !important)
+! in mobile, search is not clickable
+!ozon.ru##+js(ra, readonly) - deprecated and doesn't work
+ozon.ru##input:remove-attr(readonly)
     ! popups
 ||ozone.ru/_nuxt/marketing-all-adv_banner.  # from Ru AdList
 ||ozone.ru/_nuxt/subscriptions-desktop-submit-email-pop-up*
