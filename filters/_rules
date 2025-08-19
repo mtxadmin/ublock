@@ -1454,6 +1454,7 @@ _rebid.js  # from EasyList
 /videojs.ads
 /videojs-contrib-ads.*$important
 /videojs-contrib-ads/*$important
+/videojs-share$important
 /view.js$domain=~livejournal.com  # from Ru AdList and Adguard, modified
 /viewc.js  # from Ru AdList, modified
 /vinos.js?$important
@@ -3948,7 +3949,10 @@ _site/gotop.  # from Ru AdList
     !##.header__cookie
     ! is in EasyList and Fanboy’s
     !##.widget_eu_cookie_law_widget
-##[id*="cookie"]:not(html):not(body):not(article)
+~cookiedatabase.org##[id*="cookie"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! cookiedatabase.org - main content
+    !
     ! the list is not full, just _some_ rules
     !
     ! from Fanboy's
