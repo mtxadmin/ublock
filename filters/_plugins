@@ -140,6 +140,8 @@
 
 /modules/consent  # from Adguard, modified
 
+/modules/content_protector/*  # from Ru AdList
+
 /modules/cookiebanner/*$important  # from EasyList
 
 /modules/cookiebar/*$important  # from Adguard
@@ -190,6 +192,8 @@
 
 /modules/mbn_offers/*
     ! ||windowscentral.com/sites/all/modules/mbn_offers/  # from Adguard
+
+/modules/mod_aikon_magic_popup/*  # from Ru AdList
 
 /modules/modal/*  # Drupal module
 
@@ -799,6 +803,8 @@
 
 /plugins/contact-widgets/*
 
+/plugins/content/djsuggester/*  # from Ru AdList
+
 /plugins/content-blocker/*  # from Adguard, uBlock filters - Badware
 
 /plugins/consent-magic-pro/*  # from Adguard
@@ -872,7 +878,7 @@
 /plugins/cordova-plugin-safariviewcontroller/*
 /plugins/cordova-plugin-statusbar/*
 /plugins/cordova-plugin-x-socialsharing/*$important  # from Fanboy's and EasyList
-/plugins/onesignal-cordova-plugin/*
+/plugins/onesignal-cordova-plugin/*$important
 
 /plugins/countdown-wpdevart-extended/*
 
@@ -1180,6 +1186,7 @@
 /plugins/fancier-author-box/*
 
 ! /plugins/fancybox-for-wordpress/*  # don't. "FancyBox is a tool for displaying images"
+    ||free-software.com.ua/wp-content/plugins/fancybox-for-wordpress/  # from Ru AdList
 
 /plugins/fasterim-optin/*  # from EasyList
 
@@ -1914,6 +1921,8 @@
 
 /plugins/popunderpro/*
 
+/plugins/popup$domain=paragraf.net.ua  # from Ru AdList
+
 /plugins/popup-builder/*$important  # is in Adguard and Ru AdList
     ! There is an exclusion in uBlock filters:
     ! @@/wp-content/plugins/popup-builder-$image,css,script,1p  # from uBlock filters – Unbreak
@@ -2271,6 +2280,8 @@
 
 /plugins/sitewide-message/*
 
+/plugins/slick-social-share-buttons/*  # from Ru AdList
+
 /plugins/slide-anything/owl-carousel/*
 
 /plugins/slide-in/*$script  # is in Fanboy's
@@ -2288,6 +2299,8 @@
 /plugins/smart-facebook-page-like
 
 /plugins/smart-logo-showcase-lite/*
+
+/plugins/sme-facebook-likebox-sidebar/*  # from Ru AdList
 
 /plugins/smio-push-notification/*
     /smio-push-notification/*  # from Adguard
@@ -2328,8 +2341,10 @@
     ! /plugins/sociallocker-  # from Adguard
     ! /plugins/sociallocker-next-premium/*$script,css  # from uBlock filters
     ! /plugins/social-media-integrator/*  # from Adguard, uBlock filters - Badware
+    ! /plugins/social-media-widget/*  # from Ru AdList
     ! /plugins/social-network-tabs/*$important
     ! /plugins/social-plug/*
+    ! /plugins/social-profiles-widget/*  # from Ru AdList
     ! /plugins/social-pug/*
     ! /plugins/social-share-buttons-by-supsystic/*  # from Adguard
     ! /plugins/socialsnap/*
@@ -2556,7 +2571,7 @@
 
 /plugins/ultimate-social-media-icons/*
 
-/plugins/ultimate-social-media-plus/*$important  # from Adguard
+/plugins/ultimate-social-media-plus/*$important  # from Adguard, Ru AdList
 
 /plugins/ump-exacttarget/*$important  # see janrain.com
 
