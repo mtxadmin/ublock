@@ -5538,6 +5538,13 @@ cloudwards.net##.table-of-content
 
 ||clubhunters.ru/wp-content/themes/copy/js/common.min.js  # site blocks copypaste
 
+||clubok.travel/public/rgo-preloader.gif
+! subscribe ads
+clubok.travel##.t-card
+clubok.travel##.modal-telegram
+! labels
+clubok.travel##.c-badge
+
 club-renault.ru##header
 club-renault.ru###ipsLayout_mainArea > .ipsList_inline
 
@@ -10340,6 +10347,7 @@ getmatch.ru##.b-go-top
 getmatch.ru##.b-salaries-banner
 getmatch.ru##.company__list
 getmatch.ru##app-people
+getmatch.ru##.b-vacancies-tg-banner
 
 ! forum signatures
 forums.getpaint.net##.cPost_contentWrap > .ipsResponsive_hidePhone
@@ -11320,6 +11328,7 @@ habr.com##.tm-company-profile-card
 habr.com##.tm-company-snippet__description
 habr.com##.tm-companies-rating
 habr.com##.tm-article-presenter__banner
+habr.com##.floating-image
 ! promos
 freelance.habr.com##.content-list__item_marked
 habr.com##.article-donation-block
@@ -11780,6 +11789,10 @@ hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.k
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-banner]:not(:has(.g-user-content))
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(Рекомендация по)
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=banner-image]
+!hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=wrapper--]  - too broad
+hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=wrapper--]:has-text(headconf)
+! promo
+hh.ru##[class^=wrapper-steps]
     ! logos
 /employer-logo/$image,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
   ! ||hhcdn.ru/employer-logo/$image
@@ -22562,9 +22575,12 @@ qwbabes.com##.icon-loop
 qwbabes.com##p
 qwbabes.com##.aside
 
+    ! top
 chat.qwen.ai##.mobile-userName
 chat.qwen.ai##.mobile-greeting
 chat.qwen.ai##.font-semibold:has-text(Ask Qwen)
+chat.qwen.ai##.absolute:has-text(/^$/)
+    ! other
 
 qwerty.ru##.owl-carousel
 qwerty.ru###soch-icon
