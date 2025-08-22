@@ -58,6 +58,10 @@ After adding this new host list, go to *Ad blocking Sessions* and set options:
 - Advanced adblocking rules: Yes
 - Smart List: No
 - CName-Blocking: Yes
+And in *App settings*:
+- Start on boot: Yes
+- Background animation: Yes
+- Keep alive: Yes
 
 ## Nebulo
 
