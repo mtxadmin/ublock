@@ -557,6 +557,7 @@ _social_insta.svg
 ! is in Fanboy's and Ru AdList
 ~instagram.com##img[alt="Instagram"]
 ##.td-icon-instagram
+instagram.com##svg[aria-label="Instagram"]
 
 
 
@@ -1016,9 +1017,12 @@ _pinterest_icon.png
 ! is in Adguard and Fanboy's
 ##a[href^="https://pinterest.com/pin/create/"]
 ##.iconPinterest
-
 pinterest.com##div[data-test-id="fullPageSignupModal"]
 pinterest.com##.active.noButtonStyles > div
+pinterest.com##div[aria-label="Home"]:has(svg)
+pinterest.com##div:style(gap:initial !important)
+! useless and promo-filled left menu
+pinterest.com###VerticalNavContent
 
 
 
