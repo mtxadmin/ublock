@@ -84,6 +84,10 @@ apteka.103.by##div:matches-css(position:fixed)
 ||12kolibr.ru/*/buttombg.png
 12kolibr.ru##.c12-header
 
+12storeez.com##.UserGeoConfirmTooltip
+12storeez.com##.HeaderCollectionsTabs__item-text:style(color:initial !important)
+12storeez.com##.BodyText:style(color:initial !important)
+
 12x70.ru##.menu:style(position:static !important)
 
 ||13k.ru/images/jobs.png
@@ -5503,6 +5507,9 @@ clipchamp.com##[class^=Blog-module--CTA]
 
 ||clipmyhorse.tv/res/null  # null images
 
+clipr.ai##.banner-line
+clipr.ai##.w-nav:style(position:static !important)
+
 clockks.com##.logo-wrapper-block
 
 cloudadministrator.net###hero-header
@@ -5681,6 +5688,8 @@ coffeemag.kz,horeca24.kz##.content__toggle
 coffeemag.kz,horeca24.kz##.wrapper::after
     ! other
 coffeemag.kz,horeca24.kz##.footer__promo
+
+cohostpodcasting.com##.div-progress
 
 coindesk.com##.pricing-wrapper-spacer
 coindesk.com##.site-nav:style(position:static !important)
@@ -6990,6 +6999,8 @@ dns-shop.ru,dns-shop.kz##.catalog-rsu-switch__new-tip
 dns-shop.ru,dns-shop.kz##[class^=universal-modal]:has([class^=confirm-city])
 dns-shop.ru,dns-shop.kz##[class^=city-select] > [class*=modal]
 dns-shop.ru,dns-shop.kz##[class^=chat-btn]
+dns-shop.ru,dns-shop.kz##[class^=confirm-city]
+dns-shop.ru,dns-shop.kz##[class*=bottom-sheet]
     ! всякая ерунда на странице товара
 dns-shop.ru,dns-shop.kz##.gift-bonuses-container
 dns-shop.ru,dns-shop.kz##.complaint-container
@@ -8925,6 +8936,8 @@ fandom.com###Scroller
 fandom.com###ScrollerText
 fandom.com###Contenter
 fandom.com##.sticky-modules-wrapper:style(position:static !important)
+fandom.com##.wds-mobile-drawer
+fandom.com##.ready.toc
     ! other
 fandom.com,wikia.com###WikiaRailWrapper
 fandom.com,wikia.com##.WikiaNotifications
@@ -10887,6 +10900,8 @@ gorodtroika.ru##.header-hero:style(color:initial !important)
 goru.travel##.spam-mail
 goru.travel##.footer-description
 
+    ! popups
+gorzdrav.org##.ui-modal-dialog
     ! top
 ! top placeholder
 gorzdrav.org##.c-fixing-controller
@@ -10901,6 +10916,8 @@ gorzdrav.org##.Features
 gorzdrav.org##.Product-bonuses
 ! labels
 gorzdrav.org##.Product-label
+gorzdrav.org##.banner-slide
+gorzdrav.org##.home-banner
     ! carousels
 gorzdrav.org##.owl-carousel
 gorzdrav.org##.js-carousel--products
@@ -10910,6 +10927,7 @@ gorzdrav.org##.c-gallery--outside
 ||gorzdrav.org/*/app-gallery-footer-gz.svg
 ||gorzdrav.org/*/app-qr-footer-gz.svg
 gorzdrav.org##.c-footer__qr
+gorzdrav.org##.application-button
     ! other
 ! lazyload data-src (without errors)
     gorzdrav.org##+js(set-attr, img.lazyload, src, [data-src])
@@ -11719,7 +11737,8 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru##.supernova-notification:has-text(автопоиск)
 hh.ru##.supernova-navi-counter_dot-only
 !hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay - todo, there are some useful popups
-    hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay:has-text(Пусть поднимает бот)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay:has-text(/(П|п)усть поднимает бот/)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-scroll-container]:has-text(/(П|п)усть поднимает бот/)
 ! too broad, sometimes it's useful
 !hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-notification
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-notification:has-text(/Откликайтесь|Укажите|Ваш регион/)
@@ -11732,6 +11751,11 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-action-bar-is-fixed]
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-card]:has-text(/Как вам результаты|Станьте заметнее/)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=setka-container]:has-text(Станьте заметнее)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-card]:has([class^=rating-label])
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-card]:has-text(в соцсети|соцсети для)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-mobile-container]:has-text(/Разместим\s+его\s+в\s+Сетке/)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-overlay]:has-text(/Разместим\s+его\s+в\s+Сетке/)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=floating-button]
     ! top
 hh.ru,career.ru##.HH-RelatedVacanciesPreview-StickyContainer
 hh.ru,career.ru##.navi__menu:style(position:static !important)
@@ -11753,10 +11777,8 @@ hh.ru##.promo-banner-earn-money
 ||hh.ru/*/mobile-banner$image  # old design
 hh.ru##.supernova-footer-mobile-banner
 hh.ru##div[class^=footer-mobile-banner]
-hh.ru##.tmpl_hh_video
 hh.ru##video
 ||hhcdn.ru/file/*.mp4
-hh.ru##.tmpl_hh_banner
 hh.ru##.HH-SmartBanner
 hh.ru##.HH-SmartBanner-Button
 hh.ru##.smartbanner
@@ -11773,29 +11795,30 @@ hh.ru##[class^=infoblock]
 hh.ru##[class^=infoblock-content--]
 hh.ru##.vacancy-description > .bloko-text
 hh.ru##.bloko-button:has-text(руб)
-hh.ru###animation
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg###animation
 ! promo
-hh.ru##button[data-qa="negotiations-vacancy_summary"]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##button[data-qa="negotiations-vacancy_summary"]
 ! inline
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##div.banner-place-wrapper_show-on-l
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##div.banner-place-wrapper_show-on-l
 ! inline
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.serp-special
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.serp-special
 ! inline
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=smiles-wrapper]
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##div.noprint:has-text(Напишите телефон, чтобы)
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=branded-snippet-decoration]
-! это пока хз
-!hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=card-wrapper]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=smiles-wrapper]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##div.noprint:has-text(Напишите телефон, чтобы)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=branded-snippet-decoration]
+! это пока хз. Update: противопоказаний не выявлено
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=card-wrapper]
 ! а вот это точно сплошное промо
-!hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-scrollable-container] - too broad. Useful elements on company pages
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-banner]:not(:has(.g-user-content))
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(Рекомендация по)
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=banner-image]
-!hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=wrapper--]  - too broad
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=wrapper--]:has-text(headconf)
+!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-scrollable-container] - too broad. Useful elements on company pages
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-banner]:not(:has(.g-user-content))
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(Рекомендация по)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=banner-image]
+!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=wrapper--]  - too broad
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=wrapper--]:has-text(headconf)
 ! promo
 hh.ru##[class^=wrapper-steps]
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##button:has-text(Узнать статистику)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##button:has-text(Узнать статистику)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(Поднимать автоматически)
     ! logos
 /employer-logo/$image,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
   ! ||hhcdn.ru/employer-logo/$image
@@ -11841,6 +11864,8 @@ hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.k
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-viewers-count
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.noprint > div:has-text(Сейчас эту вакансию)
 hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_typography-label-4-regular]:has-text(Сейчас смотр)
+!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_style-secondary] - too broad
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_style-secondary]:has-text(Сейчас эту вакансию)
     ! different promo blocks (not all!)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_content:style(color:initial !important)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##strong:style(color:initial !important)
@@ -11878,7 +11903,7 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_marquee__item
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_numbers
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_offer
-hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_pads
+!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_pads - don't, some companies use it as a main content
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_photo
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_project
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_reward
@@ -11890,8 +11915,10 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_start
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_success
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_ticker
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_tickers
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_title
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_top
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_video
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_why
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl-hh__why
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_worths
@@ -11903,6 +11930,10 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.wrap_hh_intro
 ! and some other
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.peach-vac__footer
+    ! тупые кнопки ответов
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.peach-vac__footer
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=buttons-wrapper]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=vacancy-response-questions]
     ! other
 ! spam vacancies
 hh.ru,career.ru##div.vacancy-serp-item:has-text(/Компьютерный мастер|Мастер по ремонту компьютеров|Выездной системный администратор|выезды к клиентам/)
@@ -11919,9 +11950,6 @@ hh.ru##[class*=blocked-activator]
 hh.ru##[class^="error-picture-"]
 ! pic
 hh.ru##[class^=backplate-module]:has([class^=picture-widget-module])
-! "Сейчас смотрят"
-!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_style-secondary] - too broad
-hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_style-secondary]:has-text(Сейчас эту вакансию)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-card-style-secondary]:has-text(/Продвижение резюме|нашими экспертами/)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-wrap-container]:has([class^=magritte-scroll-wrapper])
 hh.ru##.marquee2
@@ -14427,6 +14455,8 @@ knife.media##.widget-recent
 knife.ru##.geolocation
 knife.ru##.foot_panel_all:style(position:static !important)
 
+knifemania.ru##.tygh-top-panel:style(position:static !important)
+
 kniga-online.club##.tech_info
 
 kniga-online.com##.owl-carousel
@@ -15726,6 +15756,8 @@ likegeeks.com##.nd-social-links
 likegeeks.com##.main-header-row
 likegeeks.com##.widget-area:style(position:static !important)
 
+lime.link##.gh-head-logo
+
 line-f.ru##.footer__ipsc
 
 lingoda.com##.faq--seo--hero--section
@@ -16901,6 +16933,8 @@ mebelsuite.ru###site-header
 medaboutme.ru##.listelem
 
 medbe.ru$inline-script  # site breaks copypaste
+
+||medcentr-balakovo.ru/source/nofoto.jpg
 
 ! not autogenerated
 medcentr-diana-spb.ru$inline-script  # site blocks copypaste
@@ -18166,6 +18200,8 @@ mp3party.net##.t-dsc
 ||mp3party.net/static/head-background
 ||mp3party.net/static/bottom-girls
 
+mpgu.su##.royalSlider
+
 wiki.mpstats.io##nav:style(position:absolute !important; padding-top:0px !important; padding-bottom:0px !important; height:auto !important)
 mpstats.io##.v-btn--fixed
 mpstats.io##.snow
@@ -18706,6 +18742,9 @@ napolke.ru##[class^=Footer__PartnerLogoWrap]
 napolke.ru##[class^=CreditBlock__Wrap]
 napolke.ru##[class^=OffersPage__PriceLikeDislikeWrapper]
 napolke.ru##[class^=Offers__ProfitableIconWrapper]
+
+napopravku.ru##.footer-review__img
+napopravku.ru##.footer-app-banner
 
 napravah.com##.inform-block
 
@@ -19476,6 +19515,8 @@ nozhikov.ru##.ya_credit
 nozhikov.ru##.footer_fire_info
 
 nozhiman.ru###tcb_call_1
+nozhiman.ru##.menufix:style(position:static !important)
+||nozhiman.ru/image/catalog/paymetod/positivessl$image
 
 nplus1.ru###latest:style(position:static !important)
 nplus1.ru##.article-footer
@@ -21238,10 +21279,12 @@ planetazdorovo.ru##.slider-banner__wrap
 planetazdorovo.ru##.main-right-banner
 planetazdorovo.ru##.main-first
 planetazdorovo.ru##.banner-footer
+planetazdorovo.ru##.platfomni-board-search
     ! apps
 planetazdorovo.ru##.footer-navigation__store
 planetazdorovo.ru##.footer-navigation__store-link
 planetazdorovo.ru##.nav-footer__stores
+planetazdorovo.ru##.pre-header-android-app
     ! other
 ! oneclick
 planetazdorovo.ru##.item-card__action-buyNow
@@ -21498,6 +21541,10 @@ pocket-lint.com##.trending-slide
 pocket-lint.com##.block-leader
 
 pocketpair.jp##.wixui-header
+
+podcastrocket.net##.et_pb_menu__logo-wrap
+podcastrocket.net##.et_builder_inner_content:style(position:static !important)
+podcastrocket.net##.convertkit_form_0_tb_footer
 
 podgotoffka.ru###headFixed
 podgotoffka.ru##noindex
@@ -22093,6 +22140,8 @@ prodaman.ru##.ui-header-fixed:style(position:static !important)
 
 prodive.ru##.smartfilter:style(position:static !important)
 prodive.ru##.cheaper_form
+
+||prodoctorov.ru/*/empty-reviews.svg
 
 ! banners
 productplacementblog.com##a[href^="https://www.productplacement.com/"]:has(img)
@@ -26838,6 +26887,8 @@ steamcommunity.com###footerLogo
     ! other
 steamcommunity.com###ItemControls
 
+steel-gun.ru##.confirm-popup-container
+
 steelsafeshop.ru##.switch_open
 steelsafeshop.ru##.scrollSidebar
 steelsafeshop.ru##.helper-pickup-wrapper
@@ -28548,15 +28599,27 @@ tigo.com.co##.notification-sticky-bottom
 tiktok.com##[class*=StyledLinkLogo]
 
 ||tildacdn.com/js/tilda-errors  # ad telemetry script
+||tildacdn.one/js/tilda-errors
+!
 ||tildacdn.com/js/tilda-events
+||tildacdn.one/js/tilda-events
+!
 ||tildacdn.com/js/tilda-fallback  # https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js
+||tildacdn.one/js/tilda-fallback
+!
 ||tildacdn.com/js/tilda-stat  # ad telemetry script
+||tildacdn.one/js/tilda-stat
+!
 ||tildacdn.com/js/tilda-upwidget
+||tildacdn.one/js/tilda-upwidget
+!
 ||tildacdn.com/*/noroot.png
+||tildacdn.one/*/noroot.png
     !
     ! Большинство сайтов злоупотребляет диалоговыми окнами, поэтому по умолчанию они убраны
     ! Исключения прописаны для найденных или же сообщённых случаев - в частном порядке либо через Github
 ||tildacdn.com/js/tilda-popup$domain=~art-mosreg.ru|~organic-people.com
+||tildacdn.one/js/tilda-popup$domain=~art-mosreg.ru|~organic-people.com
 ~art-mosreg.ru,~organic-people.com##.t-popup
     ! Примеры не все, к сожалению
     ! intergame.org##.t-popup:has-text(/Зарегистрируйтесь|подпишитесь/)
@@ -30638,6 +30701,8 @@ vilmorin.ru##.besoin-info
 
 vinylko.ru##.b-product-groups-gallery__counter-wrap
 
+||viper.to/images/misc/viperlogo$image
+
 vipgur.ru##.but_fly-leter
 
 ! logos
@@ -31106,6 +31171,8 @@ vpshostingninja.com##.su-button
 
 vrachmedik.ru##.help-search-doctor
 vrachmedik.ru##.our-offers
+
+||vrach-russia.ru/assets/img/doc.png
 
 vsanuzel.ru###link-top:style(position:static !important)
 vsanuzel.ru##.menu-thumb
