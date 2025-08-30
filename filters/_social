@@ -305,11 +305,12 @@ facebook.com###pagelet_ego_pane
 facebook.com###pagelet_video_home_watch_list_rhc
 ! logo
 facebook.com##[href="https://www.facebook.com/"]
+facebook.com##div[aria-label="Facebook"]
 ! unfix
 ! don't - header jumps
 !facebook.com##div:matches-css(position:fixed):style(position:static !important)
 ! and again
-facebook.com##*:matches-css(position:fixed):style(position:static !important)
+!facebook.com##*:matches-css(position:fixed):style(position:static !important)  # now doesn't work well
 facebook.com##[aria-label="Not Logged In"]
     ! popups
 facebook.com##[role="dialog"]:has-text(cookies)
