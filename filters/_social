@@ -881,16 +881,17 @@ platform.twitter.com/widgets.js$important,domain=~threadreaderapp.com
 ! Oh, yes! Long-awaited feature! https://github.com/uBlockOrigin/uBlock-issues/issues/2531
 twitter.com##+js(href-sanitizer, a[href^="https://t.co/"])
 !
-~twitter.com,~x.com##[class*="Tweet"]:not(html):not(body):not(article)
-~twitter.com,~x.com##[id*="Tweet"]:not(html):not(body):not(article)
-~twitter.com,~x.com,~livejournal.com##[class*="tweet"]:not(html):not(body):not(article)
-~twitter.com,~x.com##[id*="tweet"]:not(html):not(body):not(article)
-~twitter.com,~x.com##[class*="Twitter"]:not(html):not(body):not(article)
-~twitter.com,~x.com##[id*="Twitter"]:not(html):not(body):not(article)
-~twitter.com,~x.com,~belarus2020.org,~livejournal.com,~addons.opera.com##[class*="twitter"]:not(html):not(body):not(article)
+~threadreaderapp.com,~twitter.com,~x.com##[class*="Tweet"]:not(html):not(body):not(article)
+~threadreaderapp.com,~twitter.com,~x.com##[id*="Tweet"]:not(html):not(body):not(article)
+~threadreaderapp.com,~twitter.com,~x.com,~livejournal.com##[class*="tweet"]:not(html):not(body):not(article)
+~threadreaderapp.com,~twitter.com,~x.com##[id*="tweet"]:not(html):not(body):not(article)
+~threadreaderapp.com,~twitter.com,~x.com##[class*="Twitter"]:not(html):not(body):not(article)
+~threadreaderapp.com,~twitter.com,~x.com##[id*="Twitter"]:not(html):not(body):not(article)
+~threadreaderapp.com,~twitter.com,~x.com,~belarus2020.org,~livejournal.com,~addons.opera.com##[class*="twitter"]:not(html):not(body):not(article)
     ! Exclusions:
     ! addons.opera.com - ".twitter-typeahead" is a search form there
-~twitter.com,~x.com##[id*="twitter"]:not(html):not(body):not(article)
+    ! threadreaderapp.com - a twitter-oriented service
+~threadreaderapp.com,~twitter.com,~x.com##[id*="twitter"]:not(html):not(body):not(article)
     ! from Fanboy's
     !###advanced-twitter-widget
     !~belarus2020.org##.fa-twitter
