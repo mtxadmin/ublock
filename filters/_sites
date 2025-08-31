@@ -26,6 +26,10 @@
 1000.menu###shortcut_buttons
 1000.menu###user_ratings
 
+1000bankov.ru##.header__myCity
+1000bankov.ru##a[href*="?goto"]
+1000bankov.ru##.header__up
+
 1000-receptov.ru###slidebox-custom-block
 
 ||1001xxx.com/images/
@@ -3278,6 +3282,9 @@ babyblog.ru##.adults-only
 
 ||bacakomik.co/*.gif  # from uBlock filters: *.gif$domain=bacakomik.co,image
 
+back.one##.catalog-box
+back.one##.flying-col-movable
+
 backblaze.com##.nav-primary
 backblaze.com###header-content > div >div:style(position:static !important)
 backblaze.com##.top-header-alert:style(position:static !important)
@@ -3360,6 +3367,9 @@ banisauni.ru###header
 banki.ru##.header-mobile
 banki.ru##.header-content
 banki.ru##*:matches-css(position:fixed)
+! logo
+banki.ru##a[href="/dialog/"] svg
+banki.ru##div[class*="Sticky"]:style(position:static !important)
     ! banners and promos
 ||banki.ru/*/HomePageBundle/slider/$image  # banners
 banki.ru##div:has(>a[href^="/news/special_project/"])
@@ -3407,6 +3417,8 @@ banki.ru##[class^=TabsPanel]
 banki.ua##.b-fb-overlay
 ! from Fanboy's
 banki.ua##.b-fb-popup
+
+bankinform.ru##a[href*="/stat/click"]
 
 bankiros.ru##.xxx-application-middle
 
@@ -4538,6 +4550,8 @@ bristol.ru##.banner-section
 bristol.ru##.lottie-player
     ! other
 
+brobank.ru##.lead__btn
+
 brodude.ru##.meta-posts___item
 brodude.ru##.comments.post__header-meta-info-item
 
@@ -4859,6 +4873,9 @@ casabugatti.com##.utility-nav
 
 casemir.ru##.StickyHeader__Box:style(position:static !important)
 casemir.ru##.-Sticky.StickyHeader:style(position:static !important)
+
+cashback-carta.ru###header-left
+cashback-carta.ru###sidebar-card
 
 cashbacki.top##[href^="https://letyshops.com/welcome"]
 
@@ -7030,6 +7047,7 @@ dns-shop.ru,dns-shop.kz##.slider-tabs
 dns-shop.ru,dns-shop.kz##.news-widget
 dns-shop.ru,dns-shop.kz##.products-page__category-seo-description
 dns-shop.ru,dns-shop.kz##.homepage-post-stat
+! right "live" comments
 dns-shop.ru,dns-shop.kz##.on-air
 dns-shop.ru,dns-shop.kz##.product-buy__sub
 dns-shop.ru,dns-shop.kz##.catalog-product__zoom
@@ -7059,6 +7077,9 @@ dns-shop.ru,dns-shop.kz##.bookmarks-btn_cover
 ! почему-то фотки затемняются, лучше без этого
 dns-shop.ru,dns-shop.kz##.ow-photos__link:style(opacity:initial !important)
 dns-shop.ru##[class^=smart-consult]
+||dns-shop.ru/_nuxt/img/header-logo
+||dns-shop.ru/qrerror/
+
 
 dobraprace.cz##.jobOffer__box-jobs-odber
 
@@ -9210,6 +9231,10 @@ filtrvody.com##.pos-fix:style(position:static !important)
 
 fin.sale###newsticker
 
+finabank.ru##.popup_exit_wrap
+finabank.ru##.present-block
+finabank.ru##.header__top:style(position:static !important)
+
 finam.ru###finfin-header:style(position:static !important)
 finam.ru###infinity-ui-left-header:style(position:static !important)
 
@@ -9278,6 +9303,7 @@ finuslugi.ru##.registerModal
 finuslugi.ru##.modal-popup
     ! fixed
 finuslugi.ru##.fixed-help
+finuslugi.ru##.cb-header__fixed:style(position:static !important)
     ! other
 finuslugi.ru##.bottom-message
 finuslugi.ru##.interesting-categories
@@ -9841,6 +9867,9 @@ from-ua.com##.sidebar-nav__overlay
 frontendmasters.com##.FmLogo
 frontendmasters.com##.diagonal
 
+fs.com##.float_contain
+fs.com##.sub-box
+
 blog.f-secure.com##.b-page-content--offset:style(padding-top:0px !important)
 
 fsk-russia.ru##.back-call
@@ -10142,6 +10171,10 @@ gda.se##.article__overlay
 gde.ru##.main-about
 ||gde.ru/*/16.png
 gde.moscow##.main-about
+
+gde-cashback.ru##.month-cash
+gde-cashback.ru##a[href^="https://gde-cashback.ru/go/"]
+gde-cashback.ru##.service-box
 
 ! logo
 gdedostavka.ru##[href="https://gdedostavka.ru"]
@@ -11469,6 +11502,8 @@ habr.com##.tm-votes-lever__score-fallback
 habr.com##.tm-sexy-sidebar:style(position:static !important)
 habr.com##.tm-article-sticky-panel:style(position:static !important)
 habr.com##.tm-digest-subscription
+! inline author
+habr.com##.persona
 
 ||hackr.io/blog/media/udacity-horizontal-banner.png
 
@@ -11521,6 +11556,7 @@ howto-do.it###ez-toc-container
 howtouselinux.com##.entry-content > div
 
 hranidengi.ru##.ban1
+hranidengi.ru##a[href*="rfnd.io"]
 
 hr-pedia.ru##.elementor-background-overlay
 hr-pedia.ru##.eael-reading-progress-wrap
@@ -11819,6 +11855,7 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru##[class^=wrapper-steps]
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##button:has-text(Узнать статистику)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(Поднимать автоматически)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(/(П|п)однимать автоматически|(П|п)усть поднимает бот/)
     ! logos
 /employer-logo/$image,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
   ! ||hhcdn.ru/employer-logo/$image
@@ -13477,6 +13514,11 @@ itechguides.com##.orange-background
 itechlounge.net##hgroup
 
 itel-life.com##.box-recommend
+
+itelon.ru##.articles__marketing
+itelon.ru##.header__btns
+itelon.ru##.header__contacts
+itelon.ru##.popup
 
 it-fm.ru##header
 
@@ -16285,6 +16327,9 @@ lostfilm.tv##.f-news--photos
     ! other
 ||lostfilm*/plugin_checker.min.js  # Ru AdList rule  # https://www.lostfilm.tv/js/plugin_checker.min.js
 
+||lostpix.com/pic_lospix/lostpix.png
+||lostpix.com/pic_lospix/oh.png
+
 lotostube.com##.bottom
 
 ||lovchy.ru/i/footerBack.jpg
@@ -16594,6 +16639,10 @@ majorgeeks.com##.colleft:style(height:auto !important)
 majorgeeks.com##.colright:style(height:auto !important)
 
 majornetwork.net###header
+
+||makapital.ru/*/mainbg.jpg
+makapital.ru##.header-img-otr
+makapital.ru##.navbarouter:style(position:static !important)
 
 mak-auto.ru##.fly_forms
 mak-auto.ru##.subscribe_button
@@ -17740,6 +17789,8 @@ mista.ru##.user-line
 mista.ru##.ta-center
 mista.ru##.advice
 
+misterbankir.ru##a[href*="rfnd.io"]
+
 ! animated gifs, even they are png or jpg
 scratch.mit.edu##.postavatar
 
@@ -17935,6 +17986,8 @@ momoporn.com##.technological
 mona.ru###callReq
 
 ||monday.com/prod/event
+
+moneyzz.ru##a[href*="&erid"]
 
 monitis.com###masthead
 monitis.com##[href^="https://info.monitis.com/"]
@@ -20497,6 +20550,10 @@ otepleivode.ru##.footer-yellow
 
 ot-help.ru##.page-title
 
+otkazanet.ru###sb_menu_anketa
+otkazanet.ru###ob_top
+otkazanet.ru##a[href*="/go.php"]
+
 otkluchit.ru$inline-script  # site breaks copypaste
 otkluchit.ru##.heder_man
 
@@ -20914,6 +20971,8 @@ perfectnaked.com###footer-text
 performancegunworks.com##.jeg_midbar
 
 blogs.perl.org##[id^=module-aux-about-author]
+
+perplexity.ai##.shadow-md:has-text(Instant answers)
 
 perspekt174.ru##.fly_forms
 
@@ -22203,6 +22262,8 @@ programiz.com##.toc-trigger:style(position:static !important)
 programiz.com##.notice-bar-top
 programiz.com##.vote-share-wrapper
 
+programmerall.com##.logo-name
+
 ||programming4.us/images/bo-left-mnu.png
 
 programmingoneonone.com$inline-script  # ad redirects
@@ -22402,6 +22463,13 @@ psbank.ru##.rui-tab-header-pagination-after-disabled
 psbank.ru##.login-page__logo
     ! other
 
+||psbank-certifikat.ru/assets/hero-banner
+psbank-certifikat.ru##.hero
+psbank-certifikat.ru##.registration-card
+psbank-certifikat.ru##.choose-cert
+psbank-certifikat.ru##.how-to-content
+psbank-certifikat.ru##.card-link
+
 psbnpf.ru###app:style(padding-top:0px !important)
 psbnpf.ru##.no-results-message__icon
 psbnpf.ru##dotlottie-player
@@ -22544,6 +22612,8 @@ pythonru.com##.author-box-wrap
 pythonru.com##.td-affix:style(position:static !important)
 
 python-scripts.com##noindex
+
+pythonworld.ru###letpy
 
 pythonz.net##.text-center.card > .card-body
 
@@ -22765,6 +22835,7 @@ ramayoga.ru##.header__fixed:style(position:static !important)
 ||vp.rambler.ru$domain=motor.ru
     ! urls
 ||rambler.ru/api/v4/okko-metrics
+||rambler.ru/browser/check
 ||rambler.ru/clicks/
 ||rambler.ru/likes/
     ! ||developers.rambler.ru/likes/
@@ -22800,6 +22871,7 @@ rambler.ru##.commercial-branding > div[class][style^="order:"] div:style(min-hei
 rambler.ru###headline
 # totop
 rambler.ru##._3mubT
+rambler.ru##button[aria-label="Вернуться к началу страницы"]
 ! Adguard rule
 rambler.ru###root div[data-blocks] div:not([aria-label]):empty:style(min-height: 0 !important;)
 ! footer svg logo
@@ -25362,6 +25434,11 @@ serveradmin.ru##.info.box:has-text(Комментарии)
 serveradmin.ru##.entry > h4:has-text(Подписывайся)
 
 serverbrain.org##.thumbsup
+
+serverflow.ru##.main__pdf
+serverflow.ru##.main__delivery
+serverflow.ru##.js-callback-toggle
+serverflow.ru##.subscribe
 
 server-partition-magic.com##.bigimg
 server-partition-magic.com##.prosale
@@ -28307,6 +28384,9 @@ theblock.co##.headlineMarquee
 ! from EasyList
 theblockcrypto.com##.d-lg-block
 
+||thecashback.ru/wp-content/uploads/2017/09/cropped-cashback
+thecashback.ru##a[href^="https://go.cityclub.finance"]
+
 thecodebuzz.com##.has-background
 thecodebuzz.com##.ticker-wrapper
 thecodebuzz.com##.widget-area:style(position:static !important)
@@ -28555,6 +28635,8 @@ thomasmaurer.ch###sticky-header:style(position:static !important)
 thoughtco.com###header_1-0, .header-condensed.header.comp:style(position: relative !important; top: 0 !important;)
 
 thousandbabes.com##.header
+
+threadreaderapp.com##.card
 
 threatcrowd.org##div:nth-of-type(1):style(position:static !important; width:auto !important)
 
@@ -28865,6 +28947,7 @@ t-military.ru##.bxr-phone-number
 tm-shop.ru##.credit-catalog
 
 tms-outsource.com##.cs-logo
+tms-outsource.com##.abh_about_tab.author
 
 ! tochka.net - "disable Adblock" script
 tochka.net##script:contains(klcheck)
@@ -32704,6 +32787,8 @@ xrest.net##.text-video
 
 xroom.su##.sf-like-box
 
+xvestor.ru##[class^=styles_arrowIcon]
+
 ||xvideos.com/lvcsm/abck-banners/  # is in uBlock filters
 ||xvideos.com/picserror/  # is in EasyPrivacy
 ||xvideos.com/zoneload/  # is in EasyList
@@ -32711,6 +32796,9 @@ xvideos.com##img:style(filter:none !important)
 ! player bar
 xvideos.com#@#.progress-bar
 !! site scrolls up. Don't know why
+
+xxbrits.com##.popup_age-holder
+xxbrits.com##.description-box
 
 xxvideos.cc##.footer
 xxvideos.cc##.advbox
