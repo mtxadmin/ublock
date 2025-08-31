@@ -289,6 +289,7 @@ adserver.co.il  # from Dan Pollock's hosts file  # zombie
 adserver.janes.net  # from Dan Pollock's hosts file
 adserver.janes.org  # from Dan Pollock's hosts file
 adserver.jolt.co.uk  # from Dan Pollock's hosts file
+adserver.va3.megaphone.cloud  # https://blog.lime.link/megaphone-is-now-on-multiple-block-lists-for-tracking-podcast-listeners/
 adserver.news.com.au  # from Malvertising filter list by Disconnect
 !adserver.tupa-germania.ru
 !adserver.uproxx.com  # from Dan Pollock's hosts file  # zombie
@@ -391,6 +392,7 @@ adx.wowfi.com  # from EasyList
 /aff.  # I suspected it earlier, yes, but general subdomains form is from github.com/asterriya/regex-ads/
 aff.adguard.com  # "партнёрская программа для вебмастеров"
 aff.bstatic.com  # booking domain  # is in Adguard
+aff.cincin.exchange
 aff.sportsevents365.com  # from Ru AdList: aff.sportsevents365.com*/banners/
 aff.teshop.cz  # from Adguard
 
@@ -932,6 +934,7 @@ counter.aport.ru  # from Dan Pollock's hosts file
 counter.bloke.com   # +  # from Dan Pollock's hosts file
 counter.drom.ru  # is in EasyPrivacy
 counter.kaspersky.com  # from Dan Pollock's hosts file
+counter.kupiprodai.ru  # 3p ad scripts
 counter.megagroup.ru
 counter.nn.ru  # from Adguard
 counter.nv.ua  # from Ru AdList
@@ -1622,6 +1625,7 @@ insights-collector.gog.com
 ||link.
 link.2gis.ru  # ad redirects
 link.blurb.com  # ad redirects
+link.hwschool.pro  # spam  # to.click
 link.snob.ru  # private URL shortener
 link.thirdlove.com  # from Adguard
 link.tuseti.ru  # ad scripts
@@ -5070,6 +5074,7 @@ engine.findaphd.com  # from Adguard
 
 agents.finuslugi.ru  # refs  # again
     ||finuslugi.ru/go/
+wa.finuslugi.ru  # matomo scripts
 
 alireviews-cdn.fireapps.vn
 
@@ -5839,6 +5844,11 @@ alarm-screen.megamarket.ru
 
 sentry-dsn-customers.megamarket.tech  # Sentry - Tracker  # from Quidsup NoTrack-Blocklist
 
+! https://blog.lime.link/megaphone-is-now-on-multiple-block-lists-for-tracking-podcast-listeners/ :
+! "Megaphone tracks listeners"
+! "traffic.megaphone.fm which is just a CNAME for adserver.va3.megaphone.cloud"
+traffic.megaphone.fm
+
 embed.megogo.net  # Embedding blocks
 
 clickhz.meizu.com  # Meizu - Tracker  # from Quidsup NoTrack-Blocklist
@@ -6169,6 +6179,8 @@ i.plug.it  # ad scripts  # is in hpHosts’ Ad and tracking servers
 nativ.podruzke.ru  # from Adguard
 
 !info.ponyfiction.org  # ad pings
+
+lp.pop-corn.org  # spam
 
 public.porn.fr  # from EasyList
 
@@ -6690,6 +6702,7 @@ c.ticketmanager.com
 
 ads-service.tiktok.com  # from Mahakala
 
+neo.tildacdn.com  # neo.tildacdn.com/js/tilda-fallback-1.0.min.js
 sysstat.tildacdn.com  # sysstat.tildacdn.com/api/img/error/  # stat.tildacdn.com/event/
 
 va.tilde.com  # from ShadowWhisperer's Chats
@@ -6697,6 +6710,8 @@ va.tilde.com  # from ShadowWhisperer's Chats
 !ape-asset-tag.timeinc.com
 
 cybertonica.tinkoff.ru  # their trackers's subdomain (not all trackers, of course)
+emails.tinkoff.ru  # spam
+    ! link.emails.tinkoff.ru  # spam
 l.tinkoff.ru  # URL shortener
 
 !ad.tiscali.com  # from Dan Pollock's hosts file
