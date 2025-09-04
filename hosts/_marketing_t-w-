@@ -463,7 +463,7 @@ tapdaq-adverts.global.ssl.fastly.net  # from Adguard
 tapdb.com  # from Adguard
 tapdb.net$all  # from Adguard and EasyList
 
-tapefailure.com  # from BlockListProject - Tracking
+tapefailure.com  # from BlockListProject - Tracking  # Checked:2025-09-04
 
 tapfiliate.com$important  # ad scripts  # is in 2 lists  # "affiliate marketing programs"
 
@@ -1457,7 +1457,7 @@ terriblethumb.com  # from Peter Lowe's hosts file
 
 terrificompany.com  # Unknown - Advertising  # from Quidsup NoTrack-Blocklist
 
-territoria-remonta.ru  # from Adguard
+territoria-remonta.ru  # from Adguard  # Checked:2025-09-04
 
 territorybrand.ru  # "Представительство бренда"
 id.page  # tracking cookies  # redirect to territorybrand.ru
@@ -2012,7 +2012,7 @@ theoriginalfusion.com  # from ShadowWhisperer's Ads
 
 theotime.net  # from Dan Pollock's hosts file
 
-theoutplay.com  # from EasyList
+theoutplay.com  # from EasyList  # Checked:2025-09-04
 
 theoverheat.com$all  # from EasyList  # Checked:2025-06-04
 
@@ -3120,7 +3120,7 @@ todaymix.ru  # from Adguard
 
 todayoman.com  # from ShadowWhisperer's Ads
 
-todayresearch.com  # from Dan Pollock's hosts file  # Checked:2025-08-01
+todayresearch.com  # from Dan Pollock's hosts file
 
 todhamilton.pro  # ad scripts and redirects  # is in EasyList  # Checked:2025-06-04
 
@@ -4427,7 +4427,7 @@ trads.io  # from GoodbyeAds
 traek.io  # from ShadowWhisperer's Tracking
 
 traf.biz  # from Ru AdList
-traf.store  # ad xhrs  # 404 root
+traf.store  # ad xhrs  # 404 root  # Checked:2025-09-04
 
 traf-3rs.com  # from NoADS_RU  # Checked:2025-07-12
 
@@ -4595,7 +4595,7 @@ trafficforce.com$important  # ad network  # is in Peter Lowe's hosts file
 
 trafficfuel.com  # from Adguard
 
-traffic-funnel.website  # Checked:2025-08-01
+traffic-funnel.website
 
 trafficg.com  # from MVPS
 
@@ -4644,7 +4644,7 @@ traffic-isobar.ru
 
 trafficjam.cn  # from GoodbyeAds
 
-trafficjmp.com  # from GoodbyeAds  # Checked:2025-08-01
+trafficjmp.com  # from GoodbyeAds
 
 trafficjoint.com  # from Adguard
 
@@ -4925,7 +4925,7 @@ traglencium.com  # from GoodbyeAds
 
 traidet.com$all  # from NoADS_RU  # Checked:2025-06-04
 
-traildelsfars.com  # from Peter Lowe's Ad and tracking server list  # Checked:2025-08-01
+traildelsfars.com  # from Peter Lowe's Ad and tracking server list
 
 trailer-games.com  # from Ru AdList
 
@@ -5528,7 +5528,7 @@ trk-imps.com$important  # from uBlock filters  # Checked:2025-06-19
 
 trkinator.com  # from GoodbyeAds
 
-trkingace.com  # from GoodbyeAds
+trkingace.com  # from GoodbyeAds  # Checked:2025-09-04
 
 trkingad.com  # from ShadowWhisperer's Tracking
 
@@ -6348,7 +6348,7 @@ tvadsync.com  # from Adaway
 
 tvcok.ru  # from Adguard
 
-tvdez.com  # from uBlock filters  # Checked:2025-08-01
+tvdez.com  # from uBlock filters
 
 tvgoods.ru  # from Ru AdList  # Checked:2025-06-19
 
@@ -7216,6 +7216,14 @@ ultrashort.me  # URL shortener  # is in ShadowWhisperer's UrlShorteners
 ultrasponsor.com  # from Dan Pollock's hosts file  # Checked:2025-08-30
 
 ultrasurfing.com  # naggy new tab openings
+    ! Update. this rule blocks openings, but it's better to autoclose those tabs
+    ! Also, we need to block the domain in hosts file.
+    ! So, let's undo this rule for uBlock, and instead use a js function
+    ultrasurfing.com$badfilter
+    ! Adguard: "window.close() usage is restricted in the Chrome browser. In this case tab will only be closed when using AdGuard Browser extension."
+    ultrasurfing.com##+js(window-close-if)
+    ! another
+    ultrasurfing.com##+js(nowoif)
 
 ultravpnoffers.com$all  # from EasyList
 
@@ -7424,7 +7432,7 @@ unilead.net$important  # ad network
 unilead.in  # "Digital Marketing. Search Engine Optimization, Pay Per Click Advertising, Social Media Marketing, Web Analytics, Email Marketing"
 unilead.ru  # gone?
 unileadnetwork.com$important
-unileadsolutions.com
+unileadsolutions.com  # Checked:2025-09-04
 
 unilevernotices.com  # from Blogscan
 
@@ -8011,7 +8019,7 @@ url.rw  # from ShadowWhisperer's UrlShorteners
 
 url.sg  # URL shortener  # is in ShadowWhisperer's UrlShorteners
 
-url1.io  # URL shortener  # is in iam-py-test's anti-redirectors and ShadowWhisperer's UrlShorteners  # Checked:2025-08-30
+url1.io  # URL shortener  # is in iam-py-test's anti-redirectors and ShadowWhisperer's UrlShorteners
 
 url2.fr  # from PeterDaveHello's URL Shorteners and
 url2.in  # from ShadowWhisperer's UrlShorteners
@@ -8148,7 +8156,7 @@ urlok.ru  # URL shortener
 
 urlot.com  # from Mayakyler's link-shorteners
 
-urlpire.com  # from Mayakyler's link-shorteners  # Checked:2025-08-01
+urlpire.com  # from Mayakyler's link-shorteners
 
 urlplus.link  # from ShadowWhisperer's UrlShorteners
 
@@ -8560,7 +8568,7 @@ userzoom.com  # from Adguard
 
 uses.it  # zombie
 
-usesentry.com  # ad xhrs  # is in Adguard
+usesentry.com  # ad xhrs  # is in Adguard, Ru AdList
 
 useshort.com  # URL shortener  # is in ShadowWhisperer's UrlShorteners
 
@@ -9011,7 +9019,7 @@ valueimpression.com  # from ShadowWhisperer's Ads
 
 valuepay.com  # from BlockListProject - Ads
 
-valuepornmedia.com  # from EasyList
+valuepornmedia.com  # from EasyList  # Checked:2025-09-04
 
 valuepotion.com  # from ShadowWhisperer's Ads
 valuepotion.io  # from ShadowWhisperer's Ads
@@ -9287,7 +9295,7 @@ veeplay.com  # from ShadowWhisperer's Ads
 
 veeseo.com  # Veeseo - Tracker  # from Quidsup NoTrack-Blocklist
 
-veeso.co  # from ShadowWhisperer's Ads  # Checked:2025-08-01
+veeso.co  # from ShadowWhisperer's Ads
 
 veev.to$important  # from Adguard  # "Monetize your content"  # "Upload & share your content and earn money online"
 ! @@||veev.to^$generichide  # from Adguard
@@ -11037,7 +11045,7 @@ voip96.ru  # from GoodbyeAds
 
 voipmessage.info  # from ShadowWhisperer's Tracking
 
-voipnewswire.net  # from Adguard  # Checked:2025-08-01
+voipnewswire.net  # from Adguard
 
 voiztrail.com  # from ShadowWhisperer's Tracking
 
@@ -11228,11 +11236,11 @@ vpnoffers.cc  # from GoodbyeAds
 
 vpn-offers.org  # from EasyList
 
-vpnrequired.com  # from GoodbyeAds  # Checked:2025-04-28
+vpnrequired.com  # from GoodbyeAds
 
 vpnsafebrowsing.com$all  # from Adguard
 
-vpnur.com  # from ShadowWhisperer's Tracking  # Checked:2025-08-30
+vpnur.com  # from ShadowWhisperer's Tracking
 
 vpon.com  # from Peter Lowe's hosts file
 
@@ -11367,7 +11375,7 @@ vsl-track.info  # from Adguard
 
 vsn.si  # from ShadowWhisperer's Ads
 
-vsochi-park-hotel.ru  # from GoodbyeAds
+vsochi-park-hotel.ru  # from GoodbyeAds  # Checked:2025-09-04
 
 vstarstore.com  # from GoodbyeAds
 
@@ -13497,7 +13505,7 @@ windowsapps.com  # from SecurityEntire fake domains list
 
 windowsavings.pro  # from Adguard  # Checked:2025-07-12
 
-windowsexperts.pro  # from Adguard
+windowsexperts.pro  # from Adguard  # Checked:2025-09-04
 
 windowslite.net  # all links are short  # from Adguard: download.windowslite.net
 
@@ -13676,7 +13684,7 @@ wize.life  # no root  # from uBlock filters: ||wize.life/js/require/sb/web-push/
 
 wizio.io  # from ShadowWhisperer's Ads
 
-wizmzp.com  # from Ru AdList
+wizmzp.com  # from Ru AdList  # Checked:2025-09-04
 
 wjcf.co  # from PeterDaveHello's URL Shorteners
 
@@ -13762,7 +13770,7 @@ wmober.com  # from EasyList
 
 wmojo.com  # from PeterDaveHello's URL Shorteners
 
-wm-panel.com  # from Adguard
+wm-panel.com  # from Adguard  # Checked:2025-09-04
 
 wmplace.ru  # from Ru AdList
 
@@ -13941,7 +13949,7 @@ wootmedia.net  # from Adguard
 
 wootric.com$important  # is in Ru AdList and EasyPrivacy  # Wootric - Tracker  # is in Quidsup NoTrack-Blocklist
 
-wootwood.com  # from GoodbyeAds
+wootwood.com  # from GoodbyeAds  # Checked:2025-09-04
 
 wooview.io  # from ShadowWhisperer's Tracking
 
@@ -14074,7 +14082,7 @@ worldtraffic.trade  # from GoodbyeAds
 
 worldwide-cash.net  # from Peter Lowe's hosts file
 
-worldwidedigitalads.com  # from Peter Lowe's hosts file  # Checked:2025-07-12
+worldwidedigitalads.com  # from Peter Lowe's hosts file
 
 worldwidemoving.co.uk  # from GoodbyeAds
 
