@@ -1149,6 +1149,9 @@ _banner_rotator.php  # from Adguard
     ! Exclusions:
     ! pruffme.com - webinar service (not only used by spammers)
     ! music.yandex.ru - not landings, these urls are API-driven (api.music.yandex.ru/landing/block/chart?limit=10 , api.music.yandex.ru/landing/block/editorial/new-releases/ALL_albums_of_the_month)
+/landings/*
+    ! ||kontur.ru/landings/
+    ! ||mokka.ru/landings/  # mokka.ru/landings/seo-promo/
 /lazy-loader-banner/*
 @@/images/lazy_placeholder.gif
 /lead-generation.min.js
@@ -2809,7 +2812,7 @@ _chartbeat.js  # from EasyPrivacy
     sbermegamarket.ru##+js(set, FingerprintJS.load,noopFunc)
 /foresee/*  # from Ru AdList
 ?frm=script&se_referrer=  # from AdGuard
-/frontend-metrics/*$important
+/frontend-metrics/*$important,all
     ! ||cian.ru/frontend-metrics/
     ! and some other
 /ga_setup.js$important
@@ -4394,7 +4397,7 @@ _snowstorm-min.js  # from Ru AdList
 /16+.png
 /16plus.png
 !/18.jpg - don't, it's too wide with jpg
-/18.png$domain=~codingame.com
+/18.png$domain=~codingame.com|~opentopomap.org
 /18.svg
 /18+.png
 /18+.svg
