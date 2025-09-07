@@ -613,6 +613,7 @@ $removeparam=/^cm_mmc/  # from Adguard
 $removeparam=cmpid  # Campaign tracking (others)  # https://www.parse.ly/help/post/4843/campaign-data-tracking/  # is in NeatURL and Adguard  # https://learn.microsoft.com/en-us/advertising/guides/url-tracking-upgraded-urls
     ! @@||img*.nga$removeparam=cmpid  # from Adguard
     ! $removeparam=cmpid  # from DandelionSprout's URLShortener
+    ! $removeparam=cmpid,domain=coupons.albertsons.com|coupons.safeway.com  # from MrBukLau's
     ! flipkart.com$removeparam=cmpid  # from Adguard
 
 $removeparam=coagent  # from DandelionSprout's URLShortener
@@ -764,12 +765,13 @@ $removeparam=fref  # from Ru AdList
 
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
-$removeparam=from,from=~alfabank.ru|~account.mail.ru|~id.mail.ru|~auth.mail.ru|~e.mail.ru|~nextdns.io|~sberbank.ru|~tradingview.com|~uds.app|~yandex.*
+$removeparam=from,from=~alfabank.ru|~account.mail.ru|~id.mail.ru|~auth.mail.ru|~e.mail.ru|~nextdns.io|~ozone.ru|~sberbank.ru|~tradingview.com|~uds.app|~yandex.*
     ! Exceptions:
     ! auth.mail.ru exception is from Ru AdList. Don't know, but ok. Update: removing it prevent useful popups, so it's really ok.
     ! account.mail.ru - v2 of it (auth.mail.ru)
     ! alfabank.ru - from is "date from"
     ! nextdns.io - #53: dashboard (https://api.nextdns.io/profiles/)  # now is in DandelionSprout's URLShortener
+    ! ozon - videos
     ! tradingview.com - graphs: !wss://data.tradingview.com/socket.io/websocket?from=symbols%2FBTCUSD%2F&date=
     ! uds.app - it sets from to itself and doesn't work without it
     ! yandex, sberbank.ru - don't remember exactly, but they are definitely needed
