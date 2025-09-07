@@ -33073,9 +33073,10 @@ youtube.com,youtube-nocookie.com##.annotation.iv-branding
 ! is in EasyList
 youtube.com,youtube-nocookie.com##.ytp-ad-progress-list
 	! 2020-08: videos sometimes were black. I didn't find the cause, so here is workaround
-youtube.com,youtube-nocookie.com##.html5-video-player:style(position:static !important; overflow:hidden !important)
-youtube.com,youtube-nocookie.com##.html5-video-container:style(position:static !important; overflow:hidden !important)
+!youtube.com,youtube-nocookie.com##.html5-video-player:style(position:static !important; overflow:hidden !important)
+!youtube.com,youtube-nocookie.com##.html5-video-container:style(position:static !important; overflow:hidden !important)
 youtube.com,youtube-nocookie.com##.ytp-iv-video-content:style(position:static !important; overflow:hidden !important)
+    ! 2025: some videos went black again. Commented two rules just above
 !
 youtube.com,youtube-nocookie.com#@#.video-annotations
 youtube.com,youtube-nocookie.com#@#[class*="-ad-"]
