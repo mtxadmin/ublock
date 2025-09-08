@@ -614,7 +614,7 @@ ozon.*##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в отв
 !ozon.*##button:has(>div:has-text(/0 комментариев|1 комментарий/))
 ! в конце концов, эту хрень скрыли по клику. Отлично.
 !
-ozon.*##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/)):not(div[reviewuuid])
+ozon.*##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/)):not(:matches-path(/my/reviews)):not(div[reviewuuid])
 ! and also. Old design.
 ! reviews without text are useless
 ozon.*##div[data-review-uuid]:not(:has-text(/Вам помог этот|Показать весь отзыв/)):not(:matches-path(//my/reviews|/context/client_opinion/))
