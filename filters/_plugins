@@ -396,7 +396,7 @@
 
 /plugins/adsanity*$important  # from uBlock filters
     ! /plugins/adsanity-  # from EasyList
-    ! /plugins/adsanity-adblock-detection/*$important  # from Adguard
+    ! /plugins/adsanity-adblock-detection/*$important  # from Adguard, uBlock filters
 
 /plugins/ads-for-wp/*$important  # https://wordpress.org/plugins/ads-for-wp/
 
@@ -513,6 +513,8 @@
 /plugins/ansolution-cookie/*  # from Adguard
 
 /plugins/anti_ad_blocker/*  # from EasyList
+
+/plugins/anti-adblocker/*  # from uBlock filters
 
 /plugins/anti-block/*  # from EasyList
 
@@ -1266,6 +1268,8 @@
 
 /plugins/full-site-editing/premium-content/*
 
+/plugins/funnel-builder/*  # /wp-content/plugins/funnel-builder/woofunnels/assets/js/utm-tracker.min.js
+
 /plugins/fuzqing-ad-plus/*$important
     ! @@||koyi.pub/wp-content/plugins/fuzqing-ad-plus/assets/js/*.js  # from Adguard Chinese
 
@@ -1897,6 +1901,7 @@
 /plugins/pixel-caffeine/*$important  # also see adespresso.com  # now is in EasyPrivacy
 
 /plugins/pixelyoursite/*
+/plugins/pixelyoursite-pro/*  # from uBlock filters
 
 /plugins/platinumpopup/*  # from EasyList
 
@@ -2626,6 +2631,7 @@
 /plugins/virtualspirits-chatbot/*
 
 /plugins/visitors-traffic-  # from EasyPrivacy
+    ! /plugins/visitors-traffic-real-time-statistics/*
 
 /plugins/vote2x/*
 
