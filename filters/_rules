@@ -1033,13 +1033,33 @@ _banner_rotator.php  # from Adguard
 /dcmads.js
 /deb.html$frame,1p  # from uBlock filters
 /deblocker.min.js
+/detect.dev.js  # from EasyList
 -detect-adblock.  # from EasyList
 /detectadblock.js
 /detect-adblock.js
 /detectadblockpc.js
+/detect.dev.js  # from Fanboy's
 /detector.min.js$important
 /dev-console-detect.js
-/devtools-detect.js
+/devtools-detect$script,important
+    ! @@||cdn77.monster/js/devtools-detector.js$domain=dizipal438.com  # from Ru AdList
+    ! @@||jsdelivr.net/npm/devtools-detector$domain=9tsu.vip  # from EasyList
+    ! @@||m73ns.xyz/js/devtools-detector.js$script  # from Ru AdList
+    ! /devtools-detect.js  # is in EasyList
+    ! /devtools-detect/index.js  # from EasyList
+    ! /devtools-detector.  # from Ru AdList
+        ! /devtools-detector.js  # from EasyList
+        ! /devtools-detector.min.js  # from EasyList
+    ! ||bhplay.me/player/assets/devtools-detector/*$script,1p  # from uBlock filters
+    ! ||jsdelivr.net/*/devtools-detector  # from MrBukLau's
+        ! ||jsdelivr.net/npm/devtools-detector  # from EasyList
+            ! ||jsdelivr.net/npm/devtools-detector$domain=phimz.org  # from uBlock filters
+            ! ||jsdelivr.net/npm/devtools-detector$script,domain=superembeds.com  # from uBlock filters
+        ! ||subnhanhz.online/static/js/devtools-detector.js  # from uBlock filters
+    ! ||osmanonline.co.uk/*/devtools-detector/  # from uBlock filters
+    ! ||trdiziizle1.com/player/js/devtools-detector.js  # from uBlock filters
+    ! ||vidomo.xyz/assets/js/devtools-detector.js$important  # from uBlock filters
+    ! ||vnoo.net/*/devtools-detector.js  # from MrBukLau's
 /devicead/*  # from EasyList
 /dfp/*
     ! /dfp/async.  # from EasyList
@@ -1070,9 +1090,17 @@ _banner_rotator.php  # from Adguard
 /dfpInAngular.  # from EasyList
 /dfpsds.  # from EasyList
 /dfpsearchads.  # from EasyList
-/disable-devtool$important,all
-    ||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js  # from uBlock filters and Adguard
-    ||motphim123.com/assets/js/disable-devtool.min.js  # from uBlock filters
+/disable-devtool$script,important,all
+    ! /disable-devtool.js  # from EasyList
+    ! /disable-devtool.min.js  # from EasyList
+    ! ||chaojizhibo.net/*/disable-devtool.js  # from MrBukLau's
+    ! ||jsdelivr.net/*/disable-devtool  # from MrBukLau's
+        ! ||jsdelivr.net/npm/disable-devtool  # from EasyList
+    ! ||jsdelivr.net/*/disable-devtool.min.js  # from MrBukLau's
+    ! ||jsdelivr.net/npm/disable-devtool/disable-devtool.min.js  # from uBlock filters and Adguard
+    ! ||motphim123.com/assets/js/disable-devtool.min.js  # from uBlock filters
+/disable-right-click-  # from Ru AdList
+/disable-right-click/*  # from Ru AdList
 /disable-selection-  # is in Fanboy's
 /discourse-adplugin-  # ad scripts  # is in EasyList
 /dragscroll/*
@@ -3880,10 +3908,13 @@ _backtotop.  # from Ru AdList
 -scroll-to-top/  # from Ru AdList
 /scroll-to-top.  # from Ru AdList
 /scroll-to-top/*  # from Ru AdList
-/scrolltotop/*  # from Ru AdList
-/scrolltotop.js
-/scrolltotop.min.  # from Ru AdList
-/scrolltotopconcat.  # from Ru AdList
+/scrolltotop
+    ! /scrolltotop/*  # from Ru AdList
+    ! /scrolltotop.js  # is in EasyList
+        ! /scrolltotop.min.  # from Ru AdList
+    ! /scrollToTop.min.js  # from EasyList
+    ! /scrollToTop.png  # from EasyList
+    ! /scrolltotopconcat.  # from Ru AdList
 /scrollup$image
     ! /scrollUp.png.webp
     ! /scrollup.svg
