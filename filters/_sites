@@ -1637,6 +1637,9 @@ ammoland.com##a[href^="https://amolnd.us/"]
 amountwork.com##.modal-content:has-text(Make bookmarks)
 amountwork.com##.modal-wrap:has-text(Make bookmarks)
 
+amperof.ru###toc_container
+amperof.ru##.relator_box
+
 ||amperordirect.com/*/bkgrd-v.gif
 
 am-seo.ru###top
@@ -2689,6 +2692,9 @@ automiet.ru##.wrapfixed:style(position:static !important)
 ||automn.ru/images/neo/icons.png
 automn.ru##.authorright
 automn.ru###webmixer
+automn.ru###topmenu a:style(padding-top:0px !important)
+automn.ru###top:style(height:auto !important)
+automn.ru##.adw
 
 automotoprofi.ru##.p-head
 
@@ -2727,6 +2733,10 @@ auto-online.ru##.b_voting
 
 ! signatures
 autopeople.ru##.sgn
+
+autopiter.ru##.ReactModalPortal:has([class^=PriceLevelWarningModal])
+autopiter.ru##[class*=oldBrowser]
+autopiter.ru##[class^=NewUserNotices]
 
 ||autopodolsk.ru/*/bmv$image
 autopodolsk.ru##.logo__link
@@ -2783,6 +2793,7 @@ autotonkosti.ru##.region-header.region
 autotonkosti.ru##.sub-title
 autotonkosti.ru##.butts
 autotonkosti.ru##.submitted-user
+||autotonkosti.ru/*/telegram-advert.png
 
 autotravel.ru##.search-box:style(margin-top:0px !important)
 
@@ -4342,6 +4353,10 @@ borncity.com##.pea_cook_bottomright.pea_cook_wrapper
 bor-stroy.com###carousel-example-generic
 bor-stroy.com##.home
 
+boslla.com###fkcart-floating-toggler
+boslla.com##.mfp-wrap
+boslla.com##.mfp-bg
+
 botify.com##.w-nav:style(position:static !important)
 botify.com##.main-nav-bg
 botify.com##.enews
@@ -4836,6 +4851,7 @@ carhack.ru##.g1-logo
 ||carierista.com/assets/images/hd_home.jpg
 
 carlightvision.com##nav:style(height:auto !important)
+||carlightvision.com/wp-content/uploads/Group$image
 
 carlines.ru##.masthead-banner
 
@@ -4877,6 +4893,10 @@ carsharingblog.ru##.advices
 carsharingblog.ru##.footer-ask
 
 carsharingi.ru###cake-alert
+
+! сплошная реклама заправок
+carspress.ru##.td-main-sidebar
+carspress.ru##p:has-text(/^$/)
 
 ||cartridgecollectors.org/images/house/join.png
 cartridgecollectors.org##.house-topic-above-post-stream
@@ -7314,6 +7334,12 @@ door.ru##.rasprodazha_dverey
 
 doorchange.ru##.footer
 
+! popups
+dopsvet.com##.scrollable-phone
+dopsvet.com##.scrollable-menu-button
+! top
+dopsvet.com##.phone-time
+
 dosaaf.ru##.error_fly
 
 ||dosaaf-odincovo.ru/images/financepress/$image
@@ -8545,6 +8571,11 @@ eureca.ru##.left_stick
 ||www.eures.gov.cy/mlsi/dl/eures/eures.nsf/smartslides.html$subdocument
     ! именно с www, ага. Ну, пусть будет.
 
+euroauto.ru##[class^=promo-banner]
+euroauto.ru##noindex
+euroauto.ru##.qr-img
+euroauto.ru##.popover-content
+
 eurobabeindex.com###jsddm > h1
 
 euro-diski.ru###name_site
@@ -8727,6 +8758,7 @@ exgirlfriendmarket.com##p
 
 ! popup
 exist.ru##.master-message
+exist.ru##.shop-data__confirm-office-container
 
 ||exkinoray.tv/pic/reliz/*.gif
 
@@ -8954,6 +8986,7 @@ fandom.com##.community-header-wrapper:style(height:auto !important)
 fandom.com##.fandom-community-header__background
 fandom.com##.sitenotice
 fandom.com##.sitenotice-wrapper
+fandom.com##.global-top-navigation__fandom-logo
     ! global navigation bar is useless
 fandom.com###WikiaBar
 fandom.com###globalNavigation
@@ -8963,6 +8996,7 @@ fandom.com##.global-navigation__nav
 fandom.com##.global-navigation__bottom:style(position:static !important)
 fandom.com##.wds-global-navigation-wrapper
 fandom.com##.fandom-sticky-header
+fandom.com##.global-explore-navigation:style(position:absolute !important)
     ! footer
 fandom.com##.wds-global-footer
 fandom.com##.WikiaFooter
@@ -9028,6 +9062,9 @@ farfor.ru##.b-bigSlider
 farfor.ru##.app-factoid
 farfor.ru##.main__page-app
     ! other
+
+! popup
+farpost.ru##.bzr-viewdir-status_purpose_subscription
 
 fashion-geek.ru$inline-script  # site breaks copypaste
 fashion-geek.ru##.content__attention
@@ -11766,8 +11803,15 @@ hft.ru##.footer__pay
     ! ||hh.ru/stat  # is in Adguard
     ! ||career.ru/stat
     ! ||hh.kz/stat
+||hh.ru/api/fl$redirect=noop.js
+||hh.ru/js/External/smart-script.js
+||hh.ru/js/External/TargetAds_WebSDK.js
+||hh.ru/shared/__federation_expose_security
 ||hh.ru/anatskytic  # ad pings  # is in Adguard
 ||hh.ru/shards/anything_of_the_day_analytics  # ad pings
+!
+||hh.ru/proxy-webapp/webSocket.sw.js
+||hh.ru/proxy-webapp/webSocket.sw.js$redirect=noop.js
 !
 ||hh.ru/*/vk__min_.svg
 ||hh.ru/*/ok__min_.svg
@@ -11782,6 +11826,8 @@ hft.ru##.footer__pay
 !
 ! "Automatic publicPath is not supported in this browser"
 hh.ru##+js(set, publicPath, empty)
+hh.ru##img[src^="data:image/png;base64,"]
+hh.ru##+js(addEventListener-defuser.js)
     ! popups
 hh.ru##[class^=wrapper]:has-text(приложении)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=overlay]
@@ -11793,6 +11839,7 @@ hh.ru##.supernova-navi-counter_dot-only
 !hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay - todo, there are some useful popups
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay:has-text(/(П|п)усть поднимает бот|бот в мессенджере/)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-scroll-container]:has-text(/(П|п)усть поднимает бот/)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(/(П|п)усть поднимает бот/)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-overlay]:has-text(/(П|п)усть поднимает бот/)
 ! too broad, sometimes it's useful
 !hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-notification
@@ -11934,6 +11981,7 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_banner
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_benefits
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_bens
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_bg:style(background:initial !important)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_brands
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_blue
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_content__slogn
@@ -11963,6 +12011,7 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 !hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_pads - don't, some companies use it as a main content
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_photo
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_project
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_promo
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_reward
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_slider
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_sliderFooter
@@ -11975,6 +12024,7 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_tickers
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_title
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_top
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_values
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_video
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_why
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl-hh__why
@@ -13826,6 +13876,14 @@ jaxenter.com##h4:has-text(SEE MORE:)
 ja-zdorov.ru##.logo-wrap
 ja-zdorov.ru###sidebar
 
+jeep-market.ru##.popup-container
+jeep-market.ru##.popup-bg
+jeep-market.ru##.popup-wrapper
+jeep-market.ru##.btn-extra
+jeep-market.ru##.btn-wishlist
+jeep-market.ru##.cntct_btn_mn
+jeep-market.ru##.navbar-nav:style(position:static !important)
+
 jeffbrown.tech##.background-image-page-header-overlay
 jeffbrown.tech##.bs-social
 
@@ -14781,6 +14839,12 @@ kontur.ru##.support-center-container
 koolinar.ru##.u-header:style(position:static !important)
 koolinar.ru##.list-inline
 koolinar.ru##.b-footer__subscribe
+
+koreanaparts.ru##.popup-announcement
+koreanaparts.ru###modal-accept-region
+koreanaparts.ru##.notification
+koreanaparts.ru##.no-products__form
+koreanaparts.ru##.head-phone-wrapp
 
 ! not autogenerated
 koreanautoreview.com$inline-script  # site blocks copypaste
@@ -16818,6 +16882,11 @@ marvel.com##.terms-notice
 marwat-tech.com##.theiaStickySidebarIfy:style(position:static !important)
 
 mashinapro.ru##.slick-slider
+
+mashina-shop.ru##.bam-regions-confirm-content
+mashina-shop.ru##.header--wrap-phones
+mashina-shop.ru##.header--wrap-call-phone
+mashina-shop.ru##noindex
 
 mashmaster.ru##.contentbar:style(padding-left:20px !important)
 
@@ -20840,6 +20909,8 @@ partnerkin.com##.content-block:has(.pblog_profit)
 
 partsdubai.ru$inline-script  # site blocks copypaste
 
+partstut.ru##.b-pts-info-panel
+
 ||pass4sure2u.com/*/certleader.jpg
 
 passeidireto.com##.pop_register
@@ -20940,6 +21011,8 @@ pcworld.com##.primaryNav--article:style(position:static !important)
 pcworld.com###pcworld-logo
 pcworld.com##.primaryFooter-top
 pcworld.com##.product-widget
+
+pddmaster.ru###authorbox2
 
 ! popup
 p-dip.ru##body > div:has-text(Для любых предложений по сайту)
@@ -22056,6 +22129,12 @@ prajwaldesai.com##.bs-pinning-block:style(position:static !important)
 prajwaldesai.com##.header-inner
 prajwaldesai.com##.gb-button
 prajwaldesai.com##.gb-container
+
+prava.expert##blockquote
+prava.expert##.sidebar__section.experts
+prava.expert##[id^=feedot--quiz]
+prava.expert##[id^=feedot--inline-form]
+prava.expert##.consult
 
 pravbaza.ru##.sticky_menu
 pravbaza.ru###toc_container
@@ -24547,6 +24626,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2022/0731/41/4cac8aed4c0c92dde2f9ade625394241.$image
 ||fastpic.org/big/2022/0731/d8/74d3320a10bfa0c99a8f85ff8c3ee1d8.$image
 ||fastpic.org/big/2022/0810/67/9b02dae0168e225fd0f9f4e6dec6e967.$image
+||fastpic.org/big/2022/0817/84/a6028e5657b417503f7c2570649f6f84.$image
 ||fastpic.org/big/2022/0810/8e/ad8ca6d04584c22fb048e5af6cf5948e.$image
 ||fastpic.org/big/2022/0817/71/9602509237e8d65d270b286613a72c71.$image
 ||fastpic.org/big/2022/0824/6d/e33c889a0a6759b3edda8deb07c0ea6d.$image
@@ -24573,6 +24653,8 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2023/0821/63/c8599f9282f947a47c4974a2ca42d663.$image
 ||fastpic.org/big/2023/0921/19/b807af04b7d39869489552cd2d34b519.$image
 ||fastpic.org/big/2023/1005/b3/64827929bd526672418ce316f114c1b3.$image
+||fastpic.org/big/2023/1213/63/9a7b9206692f744deebbfe0275a73763.$image
+||fastpic.org/big/2023/1231/9c/ca7535b9082693c4b159f6f79758739c.$image
 ||fastpic.org/big/2024/0127/c3/55b73d80232c8eb87161177a29d43fc3.$image
 ||fastpic.org/big/2024/0414/40/f43872717994be71e9791d2280882c40.$image
 ||fastpic.org/big/2024/0806/3f/8df632c2a9e203423b85ba71689a753f.$image
@@ -26433,6 +26515,9 @@ sovcombank.ru##.CookieOffer__section
 sovcombank.ru##.Header__logoImage
 sovcombank.ru##.PageSlider
 sovcombank.ru##.swiper-container-horizontal
+sovcombank.ru##a[href="/"]:has(svg)
+! под тиньков-журнал косят, но криво-криво. Рекламы наваливают в разы больше
+journal.sovcombank.ru##div:has-text(/^\s*Факт дня/)
 
 sovet.help###header
 
@@ -27458,6 +27543,9 @@ svetilov.ru$inline-script  # site blocks copypaste
 
 svetitok.ru###menu_wrap:style(position:static !important)
 
+svetodiod96.ru##.showed.region--modal
+svetodiod96.ru##.hand-btn
+
 svetodiodoff.ru##.jcarousel-container
 svetodiodoff.ru##.span_link
 svetodiodoff.ru###usefull_link_block
@@ -28135,6 +28223,8 @@ tecmint.com##.inside-header
 ! inline related
 tecmint.com##p > strong:has-text(You might also like:)
 tecmint.com##.gb-container:has(.gb-headline)
+
+tecupdater.com##.wp-block-buttons
 
 teenhooker.net$frame,1p  # from uBlock filters
 
@@ -32071,8 +32161,14 @@ wilgood.ru###widgetGift
 wilgood.ru###popup_wheel
 wilgood.ru##.widget-franchise
 wilgood.ru##noindex
+! ad popups
+wilgood.ru##.fancybox__container
+wilgood.ru##.popup-diagnostics-wrapper
     ! banners and promos
 wilgood.ru##.three_docs
+wilgood.ru##.slider_popular_services
+wilgood.ru##.slider_popular_issues
+wilgood.ru##.footer_form
     ! other
 ! inline related
 wilgood.ru##.r-link
