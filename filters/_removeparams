@@ -441,6 +441,7 @@ $removeparam=/campaign[^=]*=/i,domain=~recruitics.com|~wikipedia.org|~youtube.co
     ! $removeparam=effect_campaign  # from DandelionSprout's URLShortener
     ! $removeparam=elqCampaignId  # from DandelionSprout's URLShortener
     ! $removeparam=hmb_campaign  # Campaign tracking (Humble Bundle)  # from NeatURL
+    ! $removeparam=gad_campaignid  # from uBlock filters
     ! $removeparam=int_campaign  # from DandelionSprout's URLShortener
     ! $removeparam=ir_campaignid  # from Adguard and uBlock filters
     ! $removeparam=_mak_partner_campaign  # from DandelionSprout's URLShortener
@@ -646,6 +647,7 @@ $removeparam=cuid,important  # from Adguard and Ru AdList
     ! @@||mootoon.co.kr^$removeparam=cuid  # from Adguard  # didn't recheck yet
     ! @@||em.dynamicyield.com^$removeparam=cuid  # from Adguard  # this one is definetely ad-related
 
+googletagmanager.com$removeparam=cx  # from uBlock filters  # already blocked, just for information
 $removeparam=/^cx_/i
     ! $removeparam=/^cx_click/
         ! $removeparam=cx_click  # from Adguard and uBlock filters
@@ -882,6 +884,7 @@ $removeparam=gs_l  # Google general parameter  # from NeatURL  # also is in Dand
     ||google.*/search$removeparam=gs_l  # from Adguard
 
 $removeparam=gtm  # from Ru AdList
+    ! ||googletagmanager.com/gtag/js?id=$removeparam=gtm  # from uBlock filters
 
 $removeparam=guccounter  # from Adguard
     ! $removeparam=guccounter  # from Adguard
@@ -939,6 +942,9 @@ $removeparam=idealoid
 !$removeparam=/^ifsearch/i ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 !$removeparam=/^ifnative/i ?  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
 !$removeparam=/^ifpla/i ?  # hmm..  # Microsoft tracking URL parameters: https://help.ads.microsoft.com/apex/index/3/en/56799
+
+$removeparam=igsh
+    ! instagram.com$removeparam=igsh  # from uBlock filters and Adguard  # Update 2025: now uBlock generalized it
 
 $removeparam=/^ila_/i
     ! $removeparam=ila_camaign  # from Ru AdList
@@ -1455,9 +1461,9 @@ $removeparam=/^ref_/i
         ! amazon.*$removeparam=ref_  # Found independently. Is in NeatURL too
         ! imdb.com$removeparam=ref_  # from NeatURL and Adguard
         ! $removeparam=ref_src  # from Ru AdList
-            ! $removeparam=ref_src,domain=twitter.com|x.com  # from Adguard
+            ! $removeparam=ref_src,domain=twitter.com|x.com  # from Adguard, uBlock filters
         ! $removeparam=ref_url  # from Ru AdList
-            ! $removeparam=ref_url,domain=twitter.com|x.com  # from Adguard
+            ! $removeparam=ref_url,domain=twitter.com|x.com  # from Adguard, uBlock filters
     ! ||amazon.*^$removeparam=/^ref_?=/  # from DandelionSprout's ClearURLs for uBo
     ! coconala.com$removeparam=ref_kind  # from Adguard
     ! coconala.com$removeparam=ref_no  # from Adguard
@@ -3277,7 +3283,7 @@ indeed.com$removeparam=assa
 inporn.com$removeparam=r
 
 instagram.com$removeparam=ig_rid  # from Adguard and uBlock filters
-instagram.com$removeparam=igsh  # from uBlock filters and Adguard
+! instagram.com$removeparam=igsh  # from uBlock filters and Adguard  # Update 2025: now uBlock generalized it - see the param in the section above
 $removeparam=igshid,domain=instagram.com|threads.net  # from Adguard
     ! instagram.com$removeparam=igshid  # is in Adguard and uBlock filters
         ! Seems, this parameter is specific for Instagram
