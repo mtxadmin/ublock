@@ -211,7 +211,12 @@
 /modules/mod_socialmedialinks/*
     /mod_socialmedialinks/*  # is in 3 lists
 
-/modules/notifications.$domain=~forum.vivaldi.net  # from Fanboy's
+/modules/notifications.$domain=~paste.crdroid.net|~learner.mycreds.ca|~forums.opera.com|~forum.vivaldi.net  # from Fanboy's, EasyList
+    ! Exclusions:
+    ! paste.crdroid.net - from EasyList
+    ! learner.mycreds.ca - from EasyList
+    ! forums.opera.com - from EasyList
+    ! forum.vivaldi.net - from Fanboy's
 
 /modules/opartstat/*  # from Adguard
 
@@ -1906,6 +1911,8 @@
 /plugins/platinumpopup/*  # from EasyList
 
 /plugins/plugin_consensacceptcookies  # from Adguard
+
+/plugins/plugin-notifiche-  # from EasyList
 
 /plugins/pmc-plugins/*
     ! /plugins/pmc-plugins/pmc-adm-v2/*
