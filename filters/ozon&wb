@@ -231,6 +231,7 @@ ozon.*##[data-widget="feedbackTile"]
 ! "Добавьте в избранное" popup. 
 ! Не влияет на, собственно, избранное, просто визуальная фигня, чтобы задолбать человека
 ozon.*##[id^=state-webAddToFavorite]
+ozon.*##[id^=state-webAddToFavorite]:remove()
 ozon.*##ozpopover
 ozon.*##div[append="true"][mountto="body"]
 ! totop
@@ -318,7 +319,7 @@ ozon.ru##div:has(>a[href^="/product/sber-"])
 ozon.*##[data-widget="skuGrid"] div:has(>a[href*="/product/pakety-s-rezinkoy-dlya-hraneniya-produktov"])
 ! Дичь убираем
 ozon.ru##.tile-root:has-text(Арбидол)
-! сплошной трэш, в основном брелки со слезливостями. Лезет без разбору, задолбало.
+! сплошной трэш, в основном брелки со слезливостями. Лезет без разбору, задолбало. Там сложно фильтровать, но хоть часть убрать.
 ozon.ru##.tile-root:has-text(/подарок (сыну|дочке)|подарок с пожеланием|спаси и сохрани|сертификат/)
 !
 ozon.*##[data-widget="skuGridSimple"]:has-text(Лучшие предложения)
@@ -575,6 +576,8 @@ ozon.*##*:remove-attr(trackinginfo)
 ozon.*##p:has-text(/Наведите камеру и скачайте|Point your camera and download/i)
 ozon.*##p:has-text(/Наведите камеру и скачайте|Point your camera and download/i) ~ div:has(img[src*="/group"])
 ||ozone.ru/s3/cms/*/qr-code$image
+ozon.*##[href^="https://galaxystore.samsung.com"]
+ozon.*##[href^="https://global.app.mi.com/details"]
     ! socials
 ozon.*##a[title="VK"]
 ozon.*##a[title="Одноклассники"]
