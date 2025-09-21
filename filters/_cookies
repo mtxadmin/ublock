@@ -37,6 +37,11 @@
 *##+js(cookie-remover, /^admitad_/)
     ! mvideo.ru##+js(cookie-remover, admitad_deduplication_cookie)
 
+*##+js(cookie-remover, /^adsplacerPro/)
+    ! adsplacerProCity
+    ! adsplacerProCountry
+    ! adsplacerProReferrer
+
 *##+js(cookie-remover, adtech_uid)
     ! livejournal.com##+js(cookie-remover, adtech_uid)
     ! pleer.ru##+js(cookie-remover, adtech_uid)
@@ -190,8 +195,12 @@
     ! thewindowsclub.com##+js(cookie-remover, ezepvv)
 
 ! Facebook Pixel
+! https://habr.com/ru/articles/915732/ : tracking cookies on localhost
 *##+js(cookie-remover, _fbp)
 *##+js(cookie-remover, _fbc)
+
+! feedot.com tracking
+*##+js(cookie-remover, /^feedot_/)
 
 ! Google Analytics third-party tracking cookies
 !   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
@@ -245,6 +254,8 @@
 ! New Relic third-party ad cookies
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, JSESSIONID)
+
+! see _landing_page at Shopify analytics
 
 ! laravel_session - in general, don't(?), it is a Laravel session id. And also it is http-only
 !*##+js(cookie-remover, laravel_session)
@@ -324,10 +335,52 @@
     ! api.farfor.ru##+js(cookie-remover, rerf)
     ! mibf.info##+js(cookie-remover, rerf)
 
+! Sourcebuster/Woocommerce analytics
+! https://cookiedatabase.org/cookie/sourcebuster-js/sbjs_first_add/
+! https://cookiedatabase.org/cookie/sourcebuster-js/sbjs_migrations/
+! and so on
+*##+js(cookie-remover, /^sbjs_/)
+    ! ref
+    !*##+js(cookie-remover, /^sbjs_current/)
+    !*##+js(cookie-remover, /^sbjs_current_add/)
+    !
+    ! ref
+    !*##+js(cookie-remover, sbjs_first)
+    !*##+js(cookie-remover, sbjs_first_add)
+    !
+    ! some id
+    !*##+js(cookie-remover, sbjs_migrations)
+    !
+    ! hardware/sysinfo id
+    !*##+js(cookie-remover, sbjs_udata)
+    !
+    ! session cookie id. Browser can and will remove it by itself, of course.
+    !*##+js(cookie-remover, sbjs_session)
+
 *##+js(cookie-remover, sh2lastfid)
     ! dsezon.ru##+js(cookie-remover, sh2lastfid)
     ! ruskeala.ru##+js(cookie-remover, sh2lastfid)
     ! sotohit.ru##+js(cookie-remover, sh2lastfid)
+
+! Shopify analytics
+! https://www.shopify.com/legal/cookies
+*##+js(cookie-remover, _landing_page)
+    ! ref url
+    ! bulbamerica.com##+js(cookie-remover, _landing_page)
+    ! cubelelo.com##+js(cookie-remover, _landing_page)
+    ! hotwav.com##+js(cookie-remover, _landing_page)
+    ! popl.co##+js(cookie-remover, _landing_page)
+    ! tradenrg.co.uk##+js(cookie-remover, _landing_page)
+*##+js(cookie-remover, shop_analytics)
+*##+js(cookie-remover, _shop_app_analytics)
+*##+js(cookie-remover, _shopify_essential)
+*##+js(cookie-remover, _shopify_essential_)
+    ! Hmmm... "Contains an opaque token that is used to identify a device for all essential purposes."
+*##+js(cookie-remover, _shopify_marketing)
+*##+js(cookie-remover, _shopify_s)
+*##+js(cookie-remover, _shopify_t)
+    ! "Shopify analytics"
+*##+js(cookie-remover, _shopify_y)
 
 ! Adobe third-party persistent ad cookies
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
@@ -355,8 +408,14 @@
     ! eldorado.ru##+js(cookie-remover, tmr_lvidTS)
     ! pleer.ru##+js(cookie-remover, tmr_lvid)
     ! pleer.ru##+js(cookie-remover, tmr_lvidTS)
+    ! tbank.ru##+js(cookie-remover, tmr_lvid)
+    ! tbank.ru##+js(cookie-remover, tmr_lvidTS)
 ! https://www.change.org/policies/cookies
 *##+js(cookie-remover, tmr_reqNum)
+
+*##+js(cookie-remover, _tracking_consent)
+    ! bulbamerica.com##+js(cookie-remover, _tracking_consent)
+    ! tradenrg.co.uk##+js(cookie-remover, _tracking_consent)
 
 *##+js(cookie-remover, /visit/i)
     !*##+js(cookie-remover, BITRIX_SM_LAST_VISIT)
@@ -509,8 +568,29 @@
 
 24review.ru##+js(cookie-remover, watched)
 
+automost52.ru##+js(cookie-remover)
+    !automost52.ru##+js(cookie-remover, surfer_uuid)
+    ! ref
+    !automost52.ru##+js(cookie-remover, la_page_depth)
+    ! and some random names
+
+avto.pro##+js(cookie-remover, proAnalyticsReflog)
+avto.pro##+js(cookie-remover, pref)
+
+avto-moto8.com##+js(cookie-remover)
+    !avto-moto8.com##+js(cookie-remover, jgsIox)
+    !avto-moto8.com##+js(cookie-remover, jgsIox_hits)
+    ! and some random names
+
 beeline.ru##+js(cookie-remover, abtest_new_basket)
 beeline.ru##+js(cookie-remover, abtest_new_basket_shop)
+
+bolshoyvopros.ru##+js(cookie-remover, ref_site)
+bolshoyvopros.ru##+js(cookie-remover, /_time$/)
+! some ids
+bolshoyvopros.ru##+js(cookie-remover, rs)
+bolshoyvopros.ru##+js(cookie-remover, ru)
+bolshoyvopros.ru##+js(cookie-remover, rd)
 
 buffer.com##+js(cookie-remover, buffer-marketing)
 buffer.com##+js(cookie-remover, buffer-marketing.sig)
@@ -549,21 +629,28 @@ creatio.com##+js(cookie-remover, /^visid_incap_/)
 
 crozdesk.com##+js(cookie-remover, conversion)
 
-! url
-cubelelo.com##+js(cookie-remover, _landing_page)
-
 digitalocean.com##+js(cookie-remover, first_landing_page)
 digitalocean.com##+js(cookie-remover, last_landing_page)
 digitalocean.com##+js(cookie-remover, last_landing_page_timestamp)
+
+dns-shop.ru##+js(cookie-remover, ab_spa)
 
 drivecentric.com##+js(cookie-remover, Ignitify)
 
 ! not session cookie, 10 years
 eksmo.ru##+js(cookie-remover, eid)
 
+eldorado.ru##+js(cookie-remover, ek_ab_test)
+
 empoweringsystems.com##+js(cookie-remover, _wpfuj)
 
 fanboy.co.nz##+js(cookie-remover)
+
+firmao.net##+js(cookie-remover, initialWebpage)
+firmao.net##+js(cookie-remover, pk_campaign)
+firmao.net##+js(cookie-remover, pk_campaign_set)
+! visitorid
+firmao.net##+js(cookie-remover, vjs)
 
 ! ref
 fleeg.com##+js(cookie-remover, custom_origin_first)
@@ -582,13 +669,27 @@ forbes.com##+js(cookie-remover, fadve2etid)
 fridaycrm.com##+js(cookie-remover, income_point_uri)
 !fridaycrm.com##+js(cookie-remover, income_point_referer) - as /refer/
 
+! httpOnly 
+gaana.com##+js(cookie-remover, reftoken)
+
 gameplay.tips##+js(cookie-remover, caosLocalGa)
 gameplay.tips##+js(cookie-remover, caosLocalGa_gid)
 
+gold-vision.com##+js(cookie-remover, _monsterinsights_uj)
+
 google.com##+js(cookie-remover, DV)
+
+! httpOnly 
+growsmartmarketing.com##+js(cookie-remover, apbct_urls)
+! httpOnly
+!growsmartmarketing.com##+js(cookie-remover, apbct_site_referer) - as /refer/
 
 ! "{"landing_page_url":"https%3A%2F%2Fwww.hellobonsai.com%2F","initial_referrer" ..."
 hellobonsai.com##+js(cookie-remover, bonsai_attribution_data)
+
+https-rulesets.org##+js(cookie-remover, __tad)
+https-rulesets.org##+js(cookie-remover, uuid)
+https-rulesets.org##+js(cookie-remover, parking_session)
 
 ! some visitor ids
 indeed.com##+js(cookie-remover, CTK)
@@ -597,17 +698,48 @@ indeed.com##+js(cookie-remover, RF)
 indeed.com##+js(cookie-remover, RQ)
 indeed.com##+js(cookie-remover, UD)
 
+intuit.com##+js(cookie-remover, ADRUM_BT)
+intuit.com##+js(cookie-remover, hosted-shell)
+intuit.com##+js(cookie-remover, qbn.qbo_sc)
+
 investing.com##+js(cookie-remover, adBlockerNewUserDomains)
 investing.com##+js(cookie-remover, lifetime_page_view_count)
 ! some visitor id
 investing.com##+js(cookie-remover, smd)
 ! some visitor id 1 year cookie
 investing.com##+js(cookie-remover, udid)
+! some visitor id 1 year cookie
+investing.com##+js(cookie-remover, inudid)
+! some params
+investing.com##+js(cookie-remover, invab)
+investing.com##+js(cookie-remover, user-browser-sessions)
 
 invideo.io##+js(cookie-remover, /^amp_/)
 
+! first url
+involve.me##+js(cookie-remover, first_lp)
+
+kuper.ru##+js(cookie-remover, external_analytics_anonymous_id)
+kuper.ru##+js(cookie-remover, rl_anonymous_id)
+
+kuzovnoi-msk.ru##+js(cookie-remover, ref)
+
+lemanapro.ru##+js(cookie-remover, uid_experiment)
+
+ludi.by##+js(cookie-remover, wordpress_gdpr_first_time_url)
+
+manualslib.com##+js(cookie-remover, stcookid)
+
 ! http-only, but
 learn.microsoft.com##+js(cookie-remover, original_req_url)
+
+mirzap.ru##+js(cookie-remover, /^utmstat_/)
+
+mvideo.ru##+js(cookie-remover, __cpatrack)
+mvideo.ru##+js(cookie-remover, __SourceTracker)
+mvideo.ru##+js(cookie-remover, __allsource)
+mvideo.ru##+js(cookie-remover, __sourceid)
+mvideo.ru##+js(cookie-remover, partnerSrc)
 
 nethunt.com##+js(cookie-remover, NH-EXIT-BANNER)
 
@@ -619,12 +751,31 @@ nordvpn.com##+js(cookie-remover, /^popups_/i)
 ozon.ru##+js(cookie-remover, ADDRESSBOOKBAR_WEB_CLARIFICATION)
 finance.ozon.ru##+js(cookie-remover, /trackerSessionId/i)
 
+! track url
+! didn't find general information about it. There are other cookies from Sourcebuster
+planetofhotels.com##+js(cookie-remover, lptp)
+planetofhotels.com##+js(cookie-remover, /^SSESS/)
+
 price.ru##+js(cookie-remover, ruid)
+
+producthunt.com##+js(cookie-remover, track_code)
+
+! httpOnly
+prov-telegram.ru##+js(cookie-remover, siteStatistics)
+
+qnap.com##+js(cookie-remover, _ALGOLIA)
+
+radreads.co##+js(cookie-remover, __sl-fingerprint)
 
 reallysimplesystems.com##+js(cookie-remover, MoneypennyRef)
 
 rnk.ru##+js(cookie-remover, ASE_anonymousId)
 rnk.ru##+js(cookie-remover, ASE_SlideBannerShowedPeriod_15)
+
+ru-shopping.ru##+js(cookie-remover, nc_Netshop_RecentGoods_sid)
+
+! ref
+salescrm.org##+js(cookie-remover, mailchimp_landing_site)
 
 ! httpOnly id
 slashdot.org##+js(cookie-remover, VISITOR)
@@ -642,12 +793,33 @@ softr.io##+js(cookie-remover, slip)
 ! visit time
 softr.io##+js(cookie-remover, slid)
 
+! ref
+sovcombank.ru##+js(cookie-remover, scb_utmz)
+
 squarespace.com##+js(cookie-remover, SS_ANALYTICS_ID)
 squarespace.com##+js(cookie-remover, SS_MID)
 
 squareup.com##+js(cookie-remover, _solidshop_guest_token)
 
+! ids
+stroy-podskazka.ru##+js(cookie-remover, LastView)
+
+substack.com##+js(cookie-remover, ajs_anonymous_id)
+
+tbank.ru##+js(cookie-remover, dsp_click_id)
+tbank.ru##+js(cookie-remover, utm_date_set)
+tbank.ru##+js(cookie-remover, utm_source)
+tbank.ru##+js(cookie-remover, pageLanding)
+t-j.ru##+js(cookie-remover, dsp_click_id)
+t-j.ru##+js(cookie-remover, utm_date_set)
+t-j.ru##+js(cookie-remover, utm_source)
+
+vidal.ru##+js(cookie-remover, /^banner-show/)
+
 vseinstrumenti.ru##+js(cookie-remover, reftoken)
+
+vwvortex.com##+js(cookie-remover, guest_hash)
+vwvortex.com##+js(cookie-remover, CAFN)
 
 ! ref
 webflow.com##+js(cookie-remover, wf_first_touch)
@@ -655,53 +827,23 @@ webflow.com##+js(cookie-remover, wf_first_touch_v2)
 
 wynk.in##+js(cookie-remover, nonLoggedInUser)
 
+! бивуак.рф
+xn--80abdxm6c.xn--p1ai##+js(cookie-remover, cartGuestId)
+
 yandex.ru##+js(cookie-remover, usurveys)
 
 zabbix.com##+js(cookie-remover, bbdiscussion_view)
 zabbix.com##+js(cookie-remover, bblastactivity)
+
+zdnet.com##+js(cookie-remover, OptanonAlertBoxClosed)
+zdnet.com##+js(cookie-remover, OptanonConsent)
+
+znaiauto.ru##+js(cookie-remover)
+    !znaiauto.ru##+js(cookie-remover, antibot_hits)
+    ! and some random names
 
 ! not session cookie, 10 years
 zoom.us##+js(cookie-remover, _zm_mtk_guid)
 zoom.us##+js(cookie-remover, _zm_visitor_guid)
 
 !! todo
-
-! httpOnly 
-gaana.com##+js(cookie-remover, reftoken)
-
-! ref
-salescrm.org##+js(cookie-remover, mailchimp_landing_site)
-
-producthunt.com##+js(cookie-remover, track_code)
-
-ru-shopping.ru##+js(cookie-remover, nc_Netshop_RecentGoods_sid)
-
-firmao.net##+js(cookie-remover, initialWebpage)
-firmao.net##+js(cookie-remover, pk_campaign)
-firmao.net##+js(cookie-remover, pk_campaign_set)
-! visitorid
-firmao.net##+js(cookie-remover, vjs)
-
-radreads.co##+js(cookie-remover, __sl-fingerprint)
-
-gold-vision.com##+js(cookie-remover, _monsterinsights_uj)
-
-! httpOnly 
-growsmartmarketing.com##+js(cookie-remover, apbct_urls)
-! httpOnly
-!growsmartmarketing.com##+js(cookie-remover, apbct_site_referer) - as /refer/
-
-intuit.com##+js(cookie-remover, ADRUM_BT)
-intuit.com##+js(cookie-remover, hosted-shell)
-intuit.com##+js(cookie-remover, qbn.qbo_sc)
-
-! first url
-involve.me##+js(cookie-remover, first_lp)
-
-mvideo.ru##+js(cookie-remover, __cpatrack)
-mvideo.ru##+js(cookie-remover, __SourceTracker)
-mvideo.ru##+js(cookie-remover, __allsource)
-mvideo.ru##+js(cookie-remover, __sourceid)
-mvideo.ru##+js(cookie-remover, partnerSrc)
-
-eldorado.ru##+js(cookie-remover, ek_ab_test)
