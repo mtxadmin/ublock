@@ -16,6 +16,33 @@
 
 ! apbct_* - CleanTalk Spam Protect cookies. They intend to be useful, but can be tracking. See examples below (referrer etc.)
 !   https://cleantalk.org/help/cookies-description
+!   https://cookiedatabase.org/service/cleantalk-spam-protect/
+!       "Observed behavioural data", twice
+!   It seems, they are session, so we can set them to remove them anyway
+*##+js(cookie-remover, /^apbct_/)
+cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_cookies_test)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_headless)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_page_hits)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_pixel_url)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_prev_referer)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_site_landing_ts)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_site_referer)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_timestamp)
+    ! cloudstorageinfo.org##+js(cookie-remover, apbct_urls)
+    ! httpOnly
+    ! growsmartmarketing.com##+js(cookie-remover, apbct_urls)
+    ! httpOnly
+    ! growsmartmarketing.com##+js(cookie-remover, apbct_site_referer) - as /refer/
+    ! osteopluscct.ru##+js(cookie-remover, apbct_prev_referer)
+    ! osteopluscct.ru##+js(cookie-remover, apbct_timestamp)
+    ! osteopluscct.ru##+js(cookie-remover, apbct_site_landing_ts)
+    ! osteopluscct.ru##+js(cookie-remover, apbct_page_hits)
+    ! osteopluscct.ru##+js(cookie-remover, apbct_cookies_test)
+    ! httpOnly
+    ! magileads.eu##+js(cookie-remover, apbct_urls)
+    ! httpOnly
+    ! magileads.eu##+js(cookie-remover, apbct_site_referer) - as /refer/
 
 ! ustream.tv third-party targeted advertising
 !   https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
@@ -615,16 +642,6 @@ citilink.ru##+js(cookie-remover, __exponea_etc__)
 citilink.ru##+js(cookie-remover, __exponea_time2__)
 citilink.ru##+js(cookie-remover, mindboxDeviceUUID)
 
-cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
-    ! cloudstorageinfo.org##+js(cookie-remover, apbct_cookies_test)
-    ! cloudstorageinfo.org##+js(cookie-remover, apbct_headless)
-    ! cloudstorageinfo.org##+js(cookie-remover, apbct_page_hits)
-    ! cloudstorageinfo.org##+js(cookie-remover, apbct_pixel_url)
-    ! cloudstorageinfo.org##+js(cookie-remover, apbct_prev_referer)
-    ! cloudstorageinfo.org##+js(cookie-remover, apbct_site_landing_ts)
-    ! cloudstorageinfo.org##+js(cookie-remover, apbct_site_referer)
-    ! cloudstorageinfo.org##+js(cookie-remover, apbct_timestamp)
-    ! cloudstorageinfo.org##+js(cookie-remover, apbct_urls)
 ! fingerprinting
 cloudstorageinfo.org##+js(cookie-remover, ct_screen_info)
 
@@ -686,11 +703,6 @@ gameplay.tips##+js(cookie-remover, caosLocalGa_gid)
 gold-vision.com##+js(cookie-remover, _monsterinsights_uj)
 
 google.com##+js(cookie-remover, DV)
-
-! httpOnly 
-growsmartmarketing.com##+js(cookie-remover, apbct_urls)
-! httpOnly
-!growsmartmarketing.com##+js(cookie-remover, apbct_site_referer) - as /refer/
 
 ! "{"landing_page_url":"https%3A%2F%2Fwww.hellobonsai.com%2F","initial_referrer" ..."
 hellobonsai.com##+js(cookie-remover, bonsai_attribution_data)
