@@ -381,6 +381,14 @@
 *##+js(cookie-remover, _shopify_t)
     ! "Shopify analytics"
 *##+js(cookie-remover, _shopify_y)
+! also, there is a strong suspicion that cookies _s and _y in fact are _shopify_s and _shopify_y (they exist on such sites both, with and without "_shopify" prefix)
+*##+js(cookie-remover, _s)
+*##+js(cookie-remover, _y)
+    ! Examples:
+    ! cubelelo.com##+js(cookie-remover, _s)
+    ! cubelelo.com##+js(cookie-remover, _y)
+    ! hotwav.com##+js(cookie-remover, _s)
+    ! hotwav.com##+js(cookie-remover, _y)
 
 ! Adobe third-party persistent ad cookies
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
