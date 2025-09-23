@@ -2487,8 +2487,9 @@ _tizers.  # from Ru AdList
 ##[id*="CallToAction"]:not(html):not(body):not(article)
 ##[class*="callToAction"]:not(html):not(body):not(article)
 ##[id*="callToAction"]:not(html):not(body):not(article)
-~money.yandex.ru,~youtube.com##[class*="call-to-action"]:not(html):not(body):not(article)
+~bitrix24.net,~money.yandex.ru,~youtube.com##[class*="call-to-action"]:not(html):not(body):not(article)
     ! Exclusions:
+    ! bitrix24.net - some non-ad buttons
     ! money.yandex.ru - Don't remember
     ! youtube.com - links .yt-core-attributed-string__link--call-to-action-color
 ##[id*="call-to-action"]:not(html):not(body):not(article)
@@ -3988,9 +3989,10 @@ _site/gotop.  # from Ru AdList
     !##.header__cookie
     ! is in EasyList and Fanboy’s
     !##.widget_eu_cookie_law_widget
-~cookiedatabase.org##[id*="cookie"]:not(html):not(body):not(article)
+~cookiedatabase.org,~cookiesearch.org##[id*="cookie"]:not(html):not(body):not(article)
     ! Exclusions:
     ! cookiedatabase.org - main content
+    ! cookiesearch.org - main content
     !
     ! the list is not full, just _some_ rules
     !
@@ -4425,7 +4427,7 @@ _snowstorm-min.js  # from Ru AdList
 
 
 !! age notices
-/16.png$domain=~codingame.com
+/16.png$domain=~codingame.com|~tildacdn.com
 /16+.png
 /16plus.png
 !/18.jpg - don't, it's too wide with jpg
