@@ -20,7 +20,7 @@
 !       "Observed behavioural data", twice
 !   It seems, they are session, so we can set them to remove them anyway
 *##+js(cookie-remover, /^apbct_/)
-cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
+    ! cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
     ! cloudstorageinfo.org##+js(cookie-remover, apbct_cookies_test)
     ! cloudstorageinfo.org##+js(cookie-remover, apbct_headless)
     ! cloudstorageinfo.org##+js(cookie-remover, apbct_page_hits)
@@ -97,7 +97,9 @@ cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
         ! mvideo.ru##+js(cookie-remover, advcake_track_url)
 
 ##+js(cookie-remover, ajs_anonymous_id)
+    ! atlassian.com##+js(cookie-remover, ajs_anonymous_id)
     ! digitalocean.com##+js(cookie-remover, ajs_anonymous_id)
+    ! soundcloud.com##+js(cookie-remover, ajs_anonymous_id)
     ! substack.com##+js(cookie-remover, ajs_anonymous_id)
     ! trello.com##+js(cookie-remover, ajs_anonymous_id)
 
@@ -409,8 +411,8 @@ cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
     ! "Shopify analytics"
 *##+js(cookie-remover, _shopify_y)
 ! also, there is a strong suspicion that cookies _s and _y in fact are _shopify_s and _shopify_y (they exist on such sites both, with and without "_shopify" prefix)
-*##+js(cookie-remover, _s)
-*##+js(cookie-remover, _y)
+!*##+js(cookie-remover, _s)
+!*##+js(cookie-remover, _y)
     ! Examples:
     ! cubelelo.com##+js(cookie-remover, _s)
     ! cubelelo.com##+js(cookie-remover, _y)
@@ -496,6 +498,10 @@ cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
     ! zapier.com##+js(cookie-remover, visitor_id)
     !  non-session cookie, several months
     ! zoom.us##+js(cookie-remover, _zm_visitor_guid)
+
+! Tealium tracking cookies
+! https://docs.tealium.com/iq-tag-management/data-layer/cookies/
+!*##+js(cookie-remover, /^utag_/)
 
 ! XSRF-TOKEN - in general, don't(?): it is typically a token for form sending security
 ! It should be strictly session though. Todo for research.
@@ -603,6 +609,9 @@ cloudstorageinfo.org##+js(cookie-remover, /^apbct_/)
 
 24review.ru##+js(cookie-remover, watched)
 
+atlassian.com##+js(cookie-remover, atlCohort)
+atlassian.com##+js(cookie-remover, ldAnonymousId)
+
 automost52.ru##+js(cookie-remover)
     !automost52.ru##+js(cookie-remover, surfer_uuid)
     ! ref
@@ -704,6 +713,8 @@ gold-vision.com##+js(cookie-remover, _monsterinsights_uj)
 
 google.com##+js(cookie-remover, DV)
 
+grafana.com##+js(cookie-remover, rl_anonymous_id)
+
 ! "{"landing_page_url":"https%3A%2F%2Fwww.hellobonsai.com%2F","initial_referrer" ..."
 hellobonsai.com##+js(cookie-remover, bonsai_attribution_data)
 
@@ -792,6 +803,8 @@ reallysimplesystems.com##+js(cookie-remover, MoneypennyRef)
 rnk.ru##+js(cookie-remover, ASE_anonymousId)
 rnk.ru##+js(cookie-remover, ASE_SlideBannerShowedPeriod_15)
 
+root-nation.com##+js(cookie-remover, dwqa_anonymous)
+
 ru-shopping.ru##+js(cookie-remover, nc_Netshop_RecentGoods_sid)
 
 ! ref
@@ -824,7 +837,8 @@ squareup.com##+js(cookie-remover, _solidshop_guest_token)
 ! ids
 stroy-podskazka.ru##+js(cookie-remover, LastView)
 
-substack.com##+js(cookie-remover, ajs_anonymous_id)
+substack.com##+js(cookie-remover, ab_experiment_sampled)
+substack.com##+js(cookie-remover, ab_testing_id)
 
 tbank.ru##+js(cookie-remover, dsp_click_id)
 tbank.ru##+js(cookie-remover, utm_date_set)
