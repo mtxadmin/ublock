@@ -1662,6 +1662,8 @@ analxxx.me##.full
 anaops.com###footer
 anaops.com##.likes-text
 
+anapamedia.ru##.ult-carousel-wrapper
+
 anchem.ru##[src^="http://anchem.ru/bruker_lcms/"]
 ||anchem.ru/forum/ZEEnit2.gif
 ||anchem.ru/forum/files/chemreactor/$image
@@ -2718,6 +2720,8 @@ automn.ru###topmenu a:style(padding-top:0px !important)
 automn.ru###top:style(height:auto !important)
 automn.ru##.adw
 
+automost52.ru$inline-script  # site blocks copypaste
+
 automotoprofi.ru##.p-head
 
 ||autonet.ru/extra/autoclub_informer.aspx  # from Adguard
@@ -3515,6 +3519,15 @@ banyafest.ru##a:style(color:blue !important)
 
 banyaspec.com##.photobg
 
+! нафига в рекомендуемых отсутствующее?
+barboss-etalon.ru##.kind-item:has(.kind-additional__btns:has-text(Нет в наличии))
+barboss-etalon.ru##.site-footer-bot
+||barboss-etalon.ru/shared/vk-id/
+barboss-etalon.ru##.collections_block:has(.kinds-block__title:has-text(Аксессуары))
+barboss-etalon.ru##.card-block
+! totop
+barboss-etalon.ru##.link-top-btn
+
 baron.kz##.is-sticky
 
 barrist.ru##.wikilogy-toolbar
@@ -3973,6 +3986,8 @@ bitpump.ru###hyipgosite
 ||bitrix.info/bx_stat  # from EasyPrivacy
 ||bitrix24.com/bitrix/js/ui/feedback/  # tracking scripts
 ||bitrix24.com/bitrix/js/im/old-chat-embedding/
+! strangely disappearing button
+bitrix24.net##+js(rc, b24net-text-btn--call-to-action)
     ! popups
 ! и окошко это неотключаемое задолбало
 bitrix24.com##.popup-window:has-text(Select your Bitrix24 most used items)
@@ -5436,6 +5451,7 @@ cisa-service.ru##.widgets
 
 ||cisco.com/v1/netid  # dsc.cisco.com/v1/netid?apikey=...
 cisco.com###fwt-logo
+cisco.com##.headerTitle
 
 cisoclub.ru##.header-advertisement
 cisoclub.ru##.social-widgets
@@ -6800,10 +6816,15 @@ dignited.com##.site-header-inner:style(position:static !important)
 
     ! popups
 dikoed.ru##.banner__container
+dikoed.ru##.banner__ruletka
+dikoed.ru##.product_fixedBuyBtn
+    ! top
+dikoed.ru##.dikoed-header:style(position:static !important)
     ! banners and promos
 dikoed.ru##.what-to-try-section
 dikoed.ru##.bg-red
 dikoed.ru##.item__sale-preview:has-text(Съедено уже)
+dikoed.ru##.owl-carousel
     ! other
 
 diletant.media##.footer-main__section_notice
@@ -7369,6 +7390,9 @@ domter.ru##.mfp-dlf-timepopup
 ! sidebar
 domter.ru##.block-domter-dlf-zhk-request
 
+donday-taganrog.ru###menubar:style(position:static !important)
+donday-taganrog.ru###menubar a:style(color:initial !important)
+
 ||don-holod.ru/wp-content/uploads/2021/03/podarok_korobka_rozhdestvo_195305_1280x720.jpg
 
 donsimon.net##.__b-popup1__.b-modal
@@ -7541,6 +7565,8 @@ drivereasy.com##.votes
     ! other
 
 drivertip.ru##.layout--page-title:style(padding-top:0px !important)
+drivertip.ru$inline-script  # site blocks copypaste
+drivertip.ru##+js(set-attr, img[decoding="async"], src, [data-lazy-src])
 
 ! huge useless toc
 driveshero.com###ez-toc-container
@@ -8014,6 +8040,9 @@ echofm.online##div[class^="sc-"]:style(animation:none !important)
 echofm.online##div:matches-css(position:sticky):style(position:static !important)
 
 eco-dush.ru##.fix-scroll
+
+eco-ferma24.ru##[href="https://eco-ferma24.ru"]
+eco-ferma24.ru##.elementor-widget-wrap div:has(a[href="https://eco-ferma24.ru"])
 
 ecoline-air.ru##.header_top:style(position:static !important)
 ecoline-air.ru##.open_req
@@ -9327,6 +9356,9 @@ fileinfo.com##.scrollnav
 
 ||files4you.org/images/f4y_mod_upl.png
 
+fileshki.ru##.storefront-product-pagination
+fileshki.ru##.storefront-sticky-add-to-cart
+
 filestash.app###oem
 
 filext.com###svg-links
@@ -9995,6 +10027,11 @@ fss.ru##.overlay-notification-container:has-text(некорректное ото
 ||fssquad.com/hotlink-ok/$image
 fssquad.com##.userBanner
 
+||ft.com/*/errors.js
+||ft.com/*/errors.js$redirect-rule=noopjs
+! Uncaught ReferenceError: handleScriptError is not defined
+ft.com##+js(set, handleScriptError, noopFunc)
+ft.com##+js(set, script.onerror, noopFunc)
     ! paywall (but not removed)
 ||ft.com/*/mobile-article-blur.png
 ft.com###article-trial-barrier:style(background-image:none !important; text-indent:initial !important; left:0px !important)
@@ -10626,7 +10663,7 @@ docs.github.com##.article-grid-toc-content:style(position:static !important)
 docs.github.com##.octicon
 docs.github.com##.toggle-images
 ! from NoCoin Filter List  ! https://forums.lanik.us/viewtopic.php?f=91&t=42871
-||github.io^$third-party,xmlhttprequest,websocket,domain=~docuss.org|~facebook.com|~gametactic.org|~github.com|~github.io|~tumblr.com|~wottactic.com
+!||github.io^$third-party,xmlhttprequest,websocket,domain=~docuss.org|~facebook.com|~gametactic.org|~github.com|~github.io|~tumblr.com|~wottactic.com  # in general, strongly don't
 !
 ||buttons.github.io/buttons.js$3p  # is in Fanboy's
 
@@ -11311,6 +11348,10 @@ g-tv.online##.ab-player
 g-tv.online##.ab-notification
 ! с адблоком не работает, выплевывает ошибки. Ну и нафиг их.
 g-tv.online
+
+guessthetest.com##.ct-modal
+guessthetest.com##.oxy-modal-backdrop
+guessthetest.com###div_go_top
 
 guidesgame.ru###branding_link
 
@@ -12056,6 +12097,7 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_about
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_advantages
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl-hh__adv
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_aside
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_banner
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_benefit
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_benefits
@@ -13123,6 +13165,9 @@ imobie.com##.navlogonew
 
 imperiatools.ru##.widget-html
 imperiatools.ru###iview
+
+||imperva.com/*/Imperva$image
+imperva.com##.affixed:style(position:static !important)
 
 improvescripting.com###AnnouncementDiv.FloatAnnounce
 improvescripting.com##.top-link
@@ -14920,6 +14965,9 @@ kontur.ru##.text-block
 kontur.ru##[class^=SupportButton-supportWidgetButton]
 b-kontur.ru##[class^=SupportButton]
 kontur.ru##.support-center-container
+||kontur.ru/Files/Modules/ProductActionPopup/$image
+||kontur.ru/Files/Modules/Product/$image
+kontur.ru##.policy-notification
 
 ||koolinar.ru/media/svg/new-logo-header.svg
 koolinar.ru##.u-header:style(position:static !important)
@@ -15192,6 +15240,9 @@ kstati.news##.wrap__:style(height:auto !important)
 kstati.news###footerContent:style(height:auto !important)
 kstati.news###footerMain:style(height:auto !important)
     ! other
+
+||ktalk.ru/api/metrics
+||ktalk.ru/api/metrics$redirect-rule=noopjs
 
 ||kuban.ru/img/topnews.png
 kuban.ru##.above_postlist
@@ -15982,6 +16033,9 @@ life-with-cars.ru##.bottom-header-wrapper:style(position:static !important)
 
 lightrun.com##astro-island
 
+likebarbos.ru##.whatsapp-fix-btn
+likebarbos.ru##.mail-subscribe-container
+
 likegeeks.com##.nd-social-links
 likegeeks.com##.main-header-row
 likegeeks.com##.widget-area:style(position:static !important)
@@ -16103,6 +16157,9 @@ linuxshelltips.com##p strong:has-text(You might also like:)
 
 linuxtect.com##.site-branding
 linuxtect.com##.inside-header
+
+liotec.ru##.sticky-block:style(position:static !important)
+liotec.ru##.animate-load
 
 ||liquidweb.com/*/refer-a-friend$image
 ||liquidweb.com/*/vps-sidebar$image
@@ -16419,6 +16476,7 @@ lleo.me###flake2
 ||lleo.me/dnevnik/design/userpick/$image
 lleo.me##.shr
 lleo.me##h1
+lleo.me##.onlines
 
     ! popups
 l-med.ru##.archi-widget-btn
@@ -17160,6 +17218,10 @@ meatinfo.ru##.hotListButton
 meatinfo.ru###analytical-report
 meatinfo.ru##.info-block
 
+meatnsk.ru##.card-block
+meatnsk.ru##.link-top-btn
+meatnsk.ru##.recent-block
+
 meatreview.com##.fixed-header-w
 meatreview.com##.page-content-field-w
 meatreview.com##.image-fader
@@ -17451,6 +17513,8 @@ megafon.ru##.footer-v2__apps-discount-container
 
 ! sbermegamarket.ru is now megamarket.ru
 ! see it in ozon&wb
+
+megagroup.ru##.mg-global-messengers
 
 ||megaobzor.com/images/121.png
 ||megaobzor.com/images/mologo.jpg
@@ -18162,6 +18226,8 @@ mokka.ru##.rivax-logo
 mokka.ru##a[href="#loan-request"]
 mokka.ru##.sidebar-container-inner:style(position:static !important)
 mokka.ru##.post-reading-progress-indicator
+
+moldovainform.md##.site
 
 molot.biz##.nav-extra-fixed:style(position:static !important; padding-top:0px !important)
 molot.biz##.nav-extra-b:style(position:static !important)
@@ -23699,6 +23765,9 @@ reloading.su##.j-category-discription
 ||relook.ru/i/logo2.png
 relook.ru##.poll-block-wrap
 
+remarked.ru##.calculate_benefit_button
+remarked.ru##.connect-sticky
+
     ! top
 reminder.media##[class^="_header_overlay"]
 reminder.media##a[href^="https://reminder.media/report/"]
@@ -25968,6 +26037,7 @@ shopify.com##a[href="https://www.shopify.com"]
 shopify.com##.subnav-wrapper
 shopify.com##.one-signup__container
 shopify.com##.remix-header:style(position:static !important)
+shopify.com##header div:style(opacity:initial !important)
     ! other
 
 shopnwf.org###modalEmailSignup
@@ -27524,6 +27594,7 @@ stroy-okey.ru##.sb-rk-bn-item
 stroy-podskazka.ru##div:has-text(Информация предоставлена в справочных целях)
 stroy-podskazka.ru##.gallery-image::before
 stroy-podskazka.ru##.gallery-grid__image::before
+stroy-podskazka.ru###lastview_block
 
 strugacki.ru##.bot-menu:style(position:static !important)
 strugacki.ru##.bot-left:style(position:static !important; height:auto !important; width:auto !important)
@@ -29061,6 +29132,9 @@ tiktok.com##[class*=StyledLinkLogo]
 !
 ||tildacdn.com/*/noroot.png
 ||tildacdn.one/*/noroot.png
+!
+||tildaapi.com/event/
+!
     !
     ! Большинство сайтов злоупотребляет диалоговыми окнами, поэтому по умолчанию они убраны
     ! Исключения прописаны для найденных или же сообщённых случаев - в частном порядке либо через Github
@@ -30810,6 +30884,8 @@ forum.vashdom.ru###headerProxy
 forum.vashdom.ru##table
 forum.vashdom.ru##.all-threads
 
+vasilievskiebany.ru##div:matches-css(position:fixed):style(position:static !important)
+
 ! popups
 vasko.ru##.swal2-modal
 vasko.ru##.swal2-popup
@@ -31560,6 +31636,8 @@ volveter.ru##.shine::before
 volveter.ru##.image_wrapper_block img:style(position:static !important)
 volveter.ru##.tab_slider_wrapp
 volveter.ru##.price_txt > .text > span
+
+volzsky.ru###popup
 
 ||vooosoo.ru/*/body_background.png
 vooosoo.ru##.background
@@ -33286,6 +33364,10 @@ yamed.ru##.pojo-a11y-toolbar-overlay
 ! inline form
 yamed.ru##.wrapper-form
 
+yampi.ru##.scroll-block
+yampi.ru##.popover
+yampi.ru##.small:has-text(сообщите продавцу)
+
 yapl.ru###masthead > table
 
 yaplakal.com,yap.ru##noindex
@@ -33992,6 +34074,9 @@ zoohit.*,zooplus.*##.uxt-carousel
 zoohit.*,zooplus.*##[class^=GoTopButton]
 
 zoo-discont.ru##.tizers
+
+! unrelated related in the center
+zoogum.ru##.cblock
 
 ! popup
 zoom.us##.livesdk__invitation
