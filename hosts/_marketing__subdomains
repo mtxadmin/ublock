@@ -15,7 +15,10 @@ a02342.thestrad.com  # https://a02342.thestrad.com/wrapperMessagingWithoutDetect
 /ablink.
     ! ablink.email.etsy.com  # from iam-py-test's anti-redirectors  # see at email.
 
-/ad.$domain=~teletype.in  # this form is time-proven, but it can be ||ad. (not including some elements though)
+/ad.$domain=~teletype.in|~thread-community.net  # this form is time-proven, but it can be ||ad. (not including some elements though)
+    ! Exclusions:
+    ! Teletype (teletype.in, thread-community.net) - https://teletype.in/static/AD.*.css
+    !
     ! ||ad.kinozal.  # from Ru AdList
     ! ||ad.kinozaltv.  # from Ru AdList
     !
@@ -903,7 +906,7 @@ consent.themeteocompany.com  # from EasyList
 consent.t-mobile.cz  # from EasyList
 consent.yahoo.com
 
-||cookie.
+||cookie.$domain=~cookie.is
 ||cookies.
 cookie.aerostatonet.it  # from EasyList
 cookies.gardena.net  # from EasyList
@@ -935,7 +938,7 @@ counter.bloke.com   # +  # from Dan Pollock's hosts file
 counter.drom.ru  # is in EasyPrivacy
 counter.kaspersky.com  # from Dan Pollock's hosts file
 counter.kupiprodai.ru  # 3p ad scripts
-counter.megagroup.ru
+counter.megagroup.ru  # 3p ad scripts
 counter.nn.ru  # from Adguard
 counter.nv.ua  # from Ru AdList
 counter.offguru.ru
@@ -2118,10 +2121,16 @@ promotion.vesti.lv  # from Ru AdList
 /push.$domain=~yandex.ru
 push.akket.com  # from Adguard
 push.apusapps.com  # from Adaway
+push.asahiinteractive.com  # from EasyList
 push.autosaratov.ru  # from Ru AdList
 push.daksham.in$important  # empty root  # in 2 lists
 push.englishraven.com  # from Adguard
+push.forja.ma  # from EasyList
+push.ictsd.org  # from EasyList
+push.idowa.de  # from EasyList
+push.intreface.com  # from EasyList
 push.newscraft.io  # from Adguard
+push.rollout.io  # from EasyList
 push.systranbox.com
 !push.yandex.ru - see in _marketing_yandex
 push.zdips.ru  # from Adguard
@@ -2647,6 +2656,7 @@ stat.pravmir.ru  # from GoodbyeAds
 stat.sputnik.ru  # see _fakenews
 stat.stars.ru  #[WebBug]  # from MVPS
 ||stat.tiara.  # from Adguard
+stat.tildaapi.com$important  # posts to stat.tildaapi.com/event/
 stat.tildacdn.com$important  # is in EasyPrivacy  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
 stat.tvigle.ru  # from Adguard
 stat.tvrain.ru
@@ -4527,6 +4537,7 @@ push.api.bbci.co.uk  # from Fanboy's
 
 froling.bee.pl  # from Dan Pollock's hosts file
 
+dl.beeline.ru  # URL Shortener  # spam
 ops.beeline.ru  # from Ru AdList
 
 mmi.bemobile.ua  # from GoodbyeAds
@@ -4761,6 +4772,8 @@ push-static.dbankcdn.com
 s.deepl.com  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
 
 aab.devicetests.com  # is in Adguard
+
+user-events-notifier.dns-shop.ru
 
 !adinterax.cnet.com
 adinterax.cnet.com.edgesuite.net  # from MVPS
@@ -5210,7 +5223,7 @@ voxel.gosuslugi.ru  # tracking pixels
 
 ipdswg.go-to-sport.ru  # from Adguard
 
-s.gpb.ru  # reflinks
+s.gpb.ru  # reflinks  # URL Shortener  # spam
 
 satgt.grafana.com  # from Adguard
 
@@ -5735,6 +5748,7 @@ drvive.lamoda.ru  # from Adguard
 !vkgsdl.lassieshop.ru  # from GoodbyeAds
 
 ! "Feature management platform"
+clientstream.launchdarkly.com  # app requests  # is in Adguard
 !emailtracking.launchdarkly.com  # AS15169 - GOOGLE, US  # "Continuous Delivery"
 events.launchdarkly.com  # is in Adguard and EasyPrivacy  # AS15169 - GOOGLE, US  # "Continuous Delivery"  # ad xhrs
 
@@ -6420,7 +6434,7 @@ aztwwe.satom.ru  # from Adguard
 
 !rek5.savefrom.net  # from ShadowWhisperer's URL Shorteners
 
-s.sber.ru  # private URL shortener
+s.sber.ru  # private URL shortener  # spam
 
 bfds.sberbank.ru
 clickstream.sberbank.ru
@@ -6666,6 +6680,8 @@ p.tanx.com  # from Adguard
 posthog.tarnkappe.info  # from uBlock filters
 
 !ampmetrics.techcrunch.com  # from Adaway
+
+t.tb.ru  # URL Shortener  # spam
 
 dlpjgh.techport.ru  # from Adguard
 
