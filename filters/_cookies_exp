@@ -10,10 +10,16 @@
 
 !! general rules
 
+!! domains
+
 101.ru##+js(cookie-remover, uniqClientId)
 101.ru##+js(cookie-remover, incomeUrl)
 101.ru##+js(cookie-remover, srvr101)
 101.ru##+js(cookie-remover, lastTime)
+
+247wallst.com##+js(cookie-remover, ws_combined_utms)
+247wallst.com##+js(cookie-remover, ws_session_depth)
+247wallst.com##+js(cookie-remover, ws_utm_campaign)
 
 ! random cookies
 2ip.ua##+js(cookie-remover)
@@ -23,6 +29,9 @@
 9gag.com##+js(cookie-remover, gag_lru)
 9gag.com##+js(cookie-remover, sign_up_referer)
 9gag.com##+js(cookie-remover, ts1)
+9gag.com##+js(cookie-remover, auto_log)
+
+addictivetips.com##+js(cookie-remover, datadome)
 
 advancedelements.com##+js(cookie-remover, QuiversSession)
 
@@ -54,8 +63,6 @@ afisha.ru##+js(cookie-remover, ruid)
 !aliexpress.ru##+js(cookie-remover, xman_f)
 !aliexpress.ru##+js(cookie-remover, xman_us_f)
 
-atlassian.com##+js(cookie-remover, ajs_anonymous_id)
-atlassian.com##+js(cookie-remover, atlCohort)
 atlassian.com##+js(cookie-remover, atl_xid.xc)
 
 altaro.com##+js(cookie-remover, AltaroSoftware)
@@ -65,6 +72,8 @@ amazon.com##+js(cookie-remover, session-id)
 amazon.com##+js(cookie-remover, session-id-time)
 amazon.com##+js(cookie-remover, session-token)
 amazon.com##+js(cookie-remover, ubid-main)
+
+audiohunter.ru##+js(cookie-remover, pmvid)
 
 auto.ru##+js(cookie-remover, autoru_sid)
 auto.ru##+js(cookie-remover, autoruuid)
@@ -115,14 +124,30 @@ bing.com##+js(cookie-remover, SRCHHPGUSR)
 bing.com##+js(cookie-remover, SRCHUID)
 bing.com##+js(cookie-remover, SRCHUSR)
 
+bki-okb.ru##+js(cookie-remover, spsc)
+wgt.bki-okb.ru##+js(cookie-remover, spid)
+
 breakcold.com##+js(cookie-remover, /^ph_phc_.*_posthog/)
 breakcold.com##+js(cookie-remover, posthog_id)
+
+brigo.ru##+js(cookie-remover, brigo.ru_SALE_UID)
+
+canada.ca##+js(cookie-remover, ak_bmsc)
+canada.ca##+js(cookie-remover, bm_sv)
+
+canva.com##+js(cookie-remover, CAI)
+canva.com##+js(cookie-remover, __cuid)
 
 ! site blocks browser even without those rules.  
 ! PerimeterX. blocked.
 capterra.com##+js(cookie-remover, experimentSessionId)
 capterra.com##+js(cookie-remover, _pxhd)
 capterra.com##+js(cookie-remover, SignUpShowingProductToSaveExperiment)
+
+! httpOnly visitor id
+cbssys.com##+js(cookie-remover, .Nop.Customer)
+! httpOnly "1"
+cbssys.com##+js(cookie-remover, .Nop.RecentlyViewedProducts)
 
 censor.net##+js(cookie-remover, cf_clearance)
 censor.net##+js(cookie-remover, user_session)
@@ -148,6 +173,8 @@ citilink.ru##+js(cookie-remover, _tuid)
 ! non-session visitor id, 2 years
 citilink.ru##+js(cookie-remover, _userGUID)
 
+cnet.com##+js(cookie-remover, _mfuuid_)
+
 docs.cntd.ru##+js(cookie-remover, auth_sso_session)
 docs.cntd.ru##+js(cookie-remover, blockInfo)
 
@@ -156,10 +183,17 @@ comparebeforebuying.com##+js(cookie-remover, _TS_)
 consultant.ru##+js(cookie-remover, CID)
 consultant.ru##+js(cookie-remover, spid)
 
+! httpOnly
+crozdesk.com##+js(cookie-remover, _crozdesk-app_session)
+
 cubelelo.com##+js(cookie-remover, _cmp_a)
-cubelelo.com##+js(cookie-remover, _s)
-cubelelo.com##+js(cookie-remover, _shopify_s)
-cubelelo.com##+js(cookie-remover, _y)
+
+deezer.com##+js(cookie-remover, _abck)
+deezer.com##+js(cookie-remover, ak_bmsc)
+deezer.com##+js(cookie-remover, bm_mi)
+deezer.com##+js(cookie-remover, bm_sv)
+deezer.com##+js(cookie-remover, bm_sz)
+deezer.com##+js(cookie-remover, dzr_uniq_id)
 
 dns-shop.ru##+js(cookie-remover, _ab_)
 dns-shop.ru##+js(cookie-remover, cartUserCookieIdent_v3)
@@ -211,6 +245,11 @@ dzen.ru##+js(cookie-remover, Session_id)
 dzen.ru##+js(cookie-remover, sso_status)
 ! +some random cookie
 
+easeus.com##+js(cookie-remover, cjConsent)
+easeus.com##+js(cookie-remover, cjUser)
+
+econet.ru##+js(cookie-remover, _econet_session)
+
 edimdoma.ru##+js(cookie-remover, _edimdoma_session_id)
 edimdoma.ru##+js(cookie-remover, quizPopupDietTimer)
 
@@ -239,6 +278,11 @@ blog.eldorado.ru##+js(cookie-remover, __zzatgib-w-eldorado)
 
 empireg.ru##+js(cookie-remover, pmvid)
 
+facebook.com##+js(cookie-remover, sb)
+
+! non-session http-only cookie, 3 months
+farfor.ru##+js(cookie-remover, sessionid)
+
 fasko.ru##+js(cookie-remover, landing)
 
 ! id
@@ -247,12 +291,23 @@ fb.ru##+js(cookie-remover, a)
 fb.ru##+js(cookie-remover, fbru)
 
 garant.ru##+js(cookie-remover, garantId)
+! non-session visitorid, several years
+garant.ru##+js(cookie-remover, garantId)
 
 ! changed bitrix trackers (see above)
 garmin.ru##+js(cookie-remover, GARMIN_CO_GUEST_ID)
 garmin.ru##+js(cookie-remover, GARMIN_CO_SALE_UID)
 
 garm-shop.ru##+js(cookie-remover, viewed)
+
+! visitor id
+geeksforgeeks.org##+js(cookie-remover, gfg_nluid)
+
+getapp.com##+js(cookie-remover, compareBasket)
+getapp.com##+js(cookie-remover, gapct)
+getapp.com##+js(cookie-remover, gauid)
+getapp.com##+js(cookie-remover, getapp.session)
+getapp.com##+js(cookie-remover, /^save_count_/)
 
 docs.github.com##+js(cookie-remover, _docs-events)
 
@@ -268,7 +323,6 @@ translate.google.com##+js(cookie-remover, OTZ)
 !
 accounts.google.com##+js(cookie-remover, __Host-GAPS)
 
-grafana.com##+js(cookie-remover, rl_anonymous_id)
 !grafana.com##+js(cookie-remover, rl_group_id)
 !grafana.com##+js(cookie-remover, rl_group_trait)
 grafana.com##+js(cookie-remover, rl_session)
@@ -277,6 +331,10 @@ grafana.com##+js(cookie-remover, rl_session)
 
 gsmarena.com##+js(cookie-remover, keyw)
 gsmarena.com##+js(cookie-remover, lpe)
+
+! httpOnly
+gumroad.com##+js(cookie-remover, _gumroad_guid)
+gumroad.com##+js(cookie-remover, _mkra_stck)
 
 habr.com##+js(cookie-remover, habr_uuid)
 
@@ -289,11 +347,9 @@ homecredit.ru##+js(cookie-remover, last_seen)
 
 hotwav.com##+js(cookie-remover, _cmp_a)
 hotwav.com##+js(cookie-remover, keep_alive)
-hotwav.com##+js(cookie-remover, _landing_page)
-hotwav.com##+js(cookie-remover, _s)
-hotwav.com##+js(cookie-remover, _shopify_y)
-hotwav.com##+js(cookie-remover, _shopify_s)
-hotwav.com##+js(cookie-remover, _y)
+
+! visitor id
+icedrive.net##+js(cookie-remover, icedrive)
 
 imdb.com##+js(cookie-remover, csm-hit)
 ! non-session cookie, 10+ years
@@ -312,20 +368,43 @@ investing.com##+js(cookie-remover, smd)
 ! id
 investing.com##+js(cookie-remover, udid)
 investing.com##+js(cookie-remover, user-browser-sessions)
-ru.investing.com##+js(cookie-remover, __cflb)
+investing.com##+js(cookie-remover, __cflb)
 ru.investing.com##+js(cookie-remover, _dd_s)
 ru.investing.com##+js(cookie-remover, page_equity_viewed)
 ru.investing.com##+js(cookie-remover, SideBlockUser)
 
+! non-session visitor id, 10 years
+irecommend.ru##+js(cookie-remover, ss_uid)
+! non-session visitor id, 3 years
+irecommend.ru##+js(cookie-remover, stats_u_a)
+
 ishooter.ru##+js(cookie-remover, guest_guid)
 
 ixbt.com##+js(cookie-remover, _ix)
+! some ids
+ixbt.com##+js(cookie-remover, _ix)
+ixbt.com##+js(cookie-remover, __eventn_id)
 
 justwatch.com##+js(cookie-remover, jw_id)
 justwatch.com##+js(cookie-remover, jw/user)
 justwatch.com##+js(cookie-remover, jw_user)
 
 kinogo.biz##+js(cookie-remover, viewed_ids)
+
+! non-session short-term cookie
+kinopoisk.ru##+js(cookie-remover, coockoos)
+! non-session http-only cookie with some id, 10 years
+kinopoisk.ru##+js(cookie-remover, i)
+! non-session cookie with some num id, 15 years
+kinopoisk.ru##+js(cookie-remover, mda2_beacon)
+! non-session short-term cookie, value:"movie-{num}"
+kinopoisk.ru##+js(cookie-remover, sgst)
+! non-session http-only short term cookie with some numid
+kinopoisk.ru##+js(cookie-remover, tc)
+! non-session 1 year cookie, empty
+kinopoisk.ru##+js(cookie-remover, yandex_login)
+! non-session short-term cookie, "noauth:{numid}"
+kinopoisk.ru##+js(cookie-remover, ya_sess_id)
 
 !kns.ru##+js(cookie-remover, ip_login_num) # "1"
 kns.ru##+js(cookie-remover, pc)
@@ -359,6 +438,12 @@ leroymerlin.ru##+js(cookie-remover, uid_experiment)
 leroymerlin.ru##+js(cookie-remover, user-geolocation)
 api.leroymerlin.ru##+js(cookie-remover, NSC_ESNS)
 
+talker.lifehacker.ru##+js(cookie-remover, io)
+
+lifewire.com##+js(cookie-remover, globalTI_SID)
+lifewire.com##+js(cookie-remover, Mint)
+lifewire.com##+js(cookie-remover, TMog)
+
 linkedin.com##+js(cookie-remover, bcookie)
 linkedin.com##+js(cookie-remover, bscookie)
 linkedin.com##+js(cookie-remover, lidc)
@@ -385,9 +470,14 @@ mail.ru##+js(cookie-remover, oid)
 mail.ru##+js(cookie-remover, ph)
 mail.ru##+js(cookie-remover, s)
 
+medium.com##+js(cookie-remover, /^dd_cookie_test_/)
+medium.com##+js(cookie-remover, _dd_s)
+
 medwegonok.ru##+js(cookie-remover, flat_r_mb)
 
 memegenerator.net##+js(cookie-remover, GaExperimentTickets)
+
+mibf.info##+js(cookie-remover, ipp_uid)
 
 microsoft.com##+js(cookie-remover, mbox)
 learn.microsoft.com##+js(cookie-remover, original_req_url)
@@ -402,6 +492,8 @@ morakniv-russia.ru##+js(cookie-remover, PHPSESSID)
 motor.ru##+js(cookie-remover, uid)
 
 moyzamok.ru##+js(cookie-remover, cookiessid)
+
+mp3-cherry.com##+js(cookie-remover, file_view)
 
 m-strana.ru##+js(cookie-remover, BITRIX_SM_FAVORITES_UID)
 
@@ -418,6 +510,8 @@ mvideo.ru##+js(cookie-remover, sub_id2_c)
 sentry.web.prod.ya.mvideo.ru##+js(cookie-remover, __lhash_)
 
 mysku.club##+js(cookie-remover, _avid)
+
+mysky.club##+js(cookie-remover, _avid)
 
 ndtv.com##+js(cookie-remover, PublisherProvidedIdsNew)
 social.ndtv.com##+js(cookie-remover, rediruri)
@@ -443,8 +537,16 @@ nozhikov.ru##+js(cookie-remover, first_current_location)
 ! url
 nozhikov.ru##+js(cookie-remover, current_location)
 
+nutshell.com##+js(cookie-remover, dotcomngx)
+
+nxlog.co##+js(cookie-remover, nxlbackoffice_session)
+
+nytimes.com##+js(cookie-remover, datadome)
+
 ! some id
 obi.ru##+js(cookie-remover, private_content_version)
+
+office24by7.com##+js(cookie-remover, drip_unique_id)
 
 ohota-magazin.ru##+js(cookie-remover, shop_viewed)
 
@@ -472,10 +574,6 @@ onlinetrade.ru##+js(cookie-remover, session_id)
 ! some id
 osdn.net##+js(cookie-remover, __rvi)
 
-osteopluscct.ru##+js(cookie-remover, apbct_timestamp)
-osteopluscct.ru##+js(cookie-remover, apbct_site_landing_ts)
-osteopluscct.ru##+js(cookie-remover, apbct_page_hits)
-osteopluscct.ru##+js(cookie-remover, apbct_cookies_test)
 osteopluscct.ru##+js(cookie-remover, ct_checkjs)
 
 ozon.ru##+js(cookie-remover, __Secure-ext_xcid)
@@ -531,12 +629,18 @@ pleer.ru##+js(cookie-remover, rulesconfirm)
 pleer.ru##+js(cookie-remover, /t3_sid_/)
 pleer.ru##+js(cookie-remover, top100_id)
 
+poe.com##+js(cookie-remover, p-b)
+
+popl.co##+js(cookie-remover, _cmp_a)
+
 price.ru##+js(cookie-remover, puid)
 price.ru##+js(cookie-remover, otherSessionData)
 price.ru##+js(cookie-remover, session)
 price.ru##+js(cookie-remover, sessionLastAction)
 price.ru##+js(cookie-remover, embryo)
 price.ru##+js(cookie-remover, uuts)
+
+prostozamok.ru##+js(cookie-remover, stat_id)
 
 quto.ru##+js(cookie-remover, uid)
 
@@ -559,12 +663,15 @@ regard.ru##+js(cookie-remover, screen_size)
 rezka.ag##+js(cookie-remover, dle_user_taken)
 rezka.ag##+js(cookie-remover, dle_user_token)
 
-root-nation.com##+js(cookie-remover, dwqa_anonymous)
+riserphone.com##+js(cookie-remover, TwUserTrackingCookieName)
+riserphone.com##+js(cookie-remover, SignupTrackId)
 
 send.cm##+js(cookie-remover, aff)
 send.cm##+js(cookie-remover, __cf_bm)
 
 seosniffer.com##+js(cookie-remover, seosniffer_session)
+
+serviceform.com##+js(cookie-remover, /mixpanel/)
 
 ! already blocked
 similarweb.com##+js(cookie-remover, _abck)
@@ -573,6 +680,29 @@ similarweb.com##+js(cookie-remover, bm_sz)
 similarweb.com##+js(cookie-remover, loyal-user)
 similarweb.com##+js(cookie-remover, sgID)
 
+! non-session http-only visitor id, 1 year
+i1.social.s-msft.com##+js(cookie-remover, .ASPXANONYMOUS)
+
+softwareadvice.com##+js(cookie-remover, _dd_s)
+
+solarwinds.com#+js(cookie-remover, akacd_PR_AWS)
+
+soundcloud.com##+js(cookie-remover, datadome)
+
+splunk.com##+js(cookie-remover, trackAffiliate)
+
+! httpOnly visitor id
+sportmaster.ru##+js(cookie-remover, UDID)
+! httpOnly visitor id
+sportmaster.ru##+js(cookie-remover, SMAUTH)
+sportmaster.ru##+js(cookie-remover, srv_id)
+! httpOnly
+sportmaster.ru##+js(cookie-remover, SMID)
+! httpOnly
+cdn.sportmaster.ru##+js(cookie-remover, sd_srv_id)
+
+stackerhq.com##+js(cookie-remover, stacker_onboarding)
+
 ! http-only
 stackexchange.com##+js(cookie-remover, prov)
     ! stackexchange sites:
@@ -580,6 +710,8 @@ askubuntu.com##+js(cookie-remover, prov)
 stackoverflow.com##+js(cookie-remover, prov)
 serverfault.com##+js(cookie-remover, prov)
 superuser.com##+js(cookie-remover, prov)
+
+steamcommunity.com##+js(cookie-remover, recentlyVisitedAppHubs)
 
 steampowered.com##+js(cookie-remover, bm_sv)
 
@@ -590,11 +722,36 @@ stopgame.ru##+js(cookie-remover, stopgame)
 streamlineresults.com##+js(cookie-remover, _cq_duid)
 streamlineresults.com##+js(cookie-remover, _cq_suid)
 
-substack.com##+js(cookie-remover, ajs_anonymous_id)
+t.me##+js(cookie-remover, stel_ssid)
+
+! some ids
+tbank.ru##+js(cookie-remover, dco.id)
+tbank.ru##+js(cookie-remover, __P__wuid)
+tbank.ru##+js(cookie-remover, __P__wuid_last_update_time)
+tbank.ru##+js(cookie-remover, __P__wuid_visit_id)
+tbank.ru##+js(cookie-remover, __P__wuid_visit_persistence)
+tbank.ru##+js(cookie-remover, stDeIdU)
+tbank.ru##+js(cookie-remover, vIdUid)
+tbank.ru##+js(cookie-remover, stLaEvTi)
+tbank.ru##+js(cookie-remover, stSeStTi)
+t-j.ru##+js(cookie-remover, __P__wuid)
+t-j.ru##+js(cookie-remover, __P__wuid_last_update_time)
+t-j.ru##+js(cookie-remover, stDeIdU)
+t-j.ru##+js(cookie-remover, vIdUid)
+t-j.ru##+js(cookie-remover, stLaEvTi)
+t-j.ru##+js(cookie-remover, stSeStTi)
 
 technocity.ru##+js(cookie-remover, LIVECHAT_GUEST_HASH)
 
+! parked
+tfile.vip##+js(cookie-remover, __tad)
+
 thestreet.com##+js(cookie-remover, _pbjs_userid_consent_data)
+
+! parked
+torrentino.in##+js(cookie-remover, __tad)
+torrentino.in##+js(cookie-remover, caf_ipaddr)
+torrentino.in##+js(cookie-remover, expiry_partner)
 
 ! id
 translate.ru##+js(cookie-remover, _ppup)
@@ -602,16 +759,23 @@ translate.ru##+js(cookie-remover, __utma)
 translate.ru##+js(cookie-remover, __utmb)
 translate.ru##+js(cookie-remover, __utmt)
 translate.ru##+js(cookie-remover, __utmz)
+! some id
+translate.ru##+js(cookie-remover, _ppup)
+
+translated.turbopages.org##+js(cookie-remover, OptanonAlertBoxClosed)
 
 ! not session cookie, 10 years
 tutu.ru##+js(cookie-remover, SESSIONID)
 ! not session cookie, 1 year
 avia.tutu.ru##+js(cookie-remover, X-Installation-Id)
+tutu.ru##+js(cookie-remover, need_propagation)
 
 tvklik.ru##+js(cookie-remover, /^0tvklik/)
 
 twitter.com##+js(cookie-remover, ct0)
 twitter.com##+js(cookie-remover, guest_id)
+twitter.com##+js(cookie-remover, gt)
+twitter.com##+js(cookie-remover, ct0)
 
 ulefone.com##+js(cookie-remover, history[0][ProId])
 ulefone.com##+js(cookie-remover, history[0][Name])
@@ -653,6 +817,18 @@ vseinstrumenti.ru##+js(cookie-remover, vi_represent_id)
 vseinstrumenti.ru##+js(cookie-remover, vi_represent_type)
 vseinstrumenti.ru##+js(cookie-remover, wucf)
 
+webflow.com##+js(cookie-remover, wf_logout)
+webflow.com##+js(cookie-remover, _px3)
+webflow.com##+js(cookie-remover, _pxvid)
+webflow.com##+js(cookie-remover, wf_exp_uniqueId)
+
+wikihow.com##+js(cookie-remover, _pbjs_userid_consent_data)
+wikihow.com##+js(cookie-remover, views)
+! visitor id, non-session cookie, 10 years
+wikihow.com##+js(cookie-remover, whv)
+
+winterscoming.biz##+js(cookie-remover, uuid)
+
 woman.ru##+js(cookie-remover, user-loyality)
 woman.ru##+js(cookie-remover, forum_creator)
 woman.ru##+js(cookie-remover, woman_uid)
@@ -672,6 +848,9 @@ yandex.ru##+js(cookie-remover, ys)
 
 yahoo.com##+js(cookie-remover, GUCS)
 
+passport.yandex.ru##+js(cookie-remover, mda2_beacon)
+passport.yandex.ru##+js(cookie-remover, mda2_domains)
+
 youtube.com##+js(cookie-remover, CONSISTENCY)
 youtube.com##+js(cookie-remover, /^ST-/)
 ! id
@@ -685,215 +864,8 @@ supportcommunity.zebra.com##+js(cookie-remover, sfdc-stream)
 zona.media##+js(cookie-remover, mz.t)
 zona.media##+js(cookie-remover, mz.t_search)
 
-!! todo
-
-translated.turbopages.org##+js(cookie-remover, OptanonAlertBoxClosed)
-
-t.me##+js(cookie-remover, stel_ssid)
-
-mibf.info##+js(cookie-remover, ipp_uid)
-
-audiohunter.ru##+js(cookie-remover, pmvid)
-
-deezer.com##+js(cookie-remover, _abck)
-deezer.com##+js(cookie-remover, ak_bmsc)
-deezer.com##+js(cookie-remover, bm_mi)
-deezer.com##+js(cookie-remover, bm_sv)
-deezer.com##+js(cookie-remover, bm_sz)
-deezer.com##+js(cookie-remover, dzr_uniq_id)
-
-! some id
-translate.ru##+js(cookie-remover, _ppup)
-
-bki-okb.ru##+js(cookie-remover, spsc)
-wgt.bki-okb.ru##+js(cookie-remover, spid)
-
-econet.ru##+js(cookie-remover, _econet_session)
-
-poe.com##+js(cookie-remover, p-b)
-
-nxlog.co##+js(cookie-remover, nxlbackoffice_session)
-
-solarwinds.com#+js(cookie-remover, akacd_PR_AWS)
-
-addictivetips.com##+js(cookie-remover, datadome)
-
-prostozamok.ru##+js(cookie-remover, stat_id)
-
-talker.lifehacker.ru##+js(cookie-remover, io)
-
-brigo.ru##+js(cookie-remover, brigo.ru_SALE_UID)
-
-lifewire.com##+js(cookie-remover, globalTI_SID)
-lifewire.com##+js(cookie-remover, Mint)
-lifewire.com##+js(cookie-remover, TMog)
-
-tutu.ru##+js(cookie-remover, need_propagation)
-
-wikihow.com##+js(cookie-remover, _pbjs_userid_consent_data)
-wikihow.com##+js(cookie-remover, views)
-! visitor id, non-session cookie, 10 years
-wikihow.com##+js(cookie-remover, whv)
-
-easeus.com##+js(cookie-remover, cjConsent)
-easeus.com##+js(cookie-remover, cjUser)
 
 ! httponly cookies
 zoom.us##+js(cookie-remover, _zm_chtaid)
 zoom.us##+js(cookie-remover, _zm_ctaid)
-
-247wallst.com##+js(cookie-remover, ws_combined_utms)
-247wallst.com##+js(cookie-remover, ws_session_depth)
-247wallst.com##+js(cookie-remover, ws_utm_campaign)
-
-! non-session short-term cookie
-kinopoisk.ru##+js(cookie-remover, coockoos)
-! non-session http-only cookie with some id, 10 years
-kinopoisk.ru##+js(cookie-remover, i)
-! non-session cookie with some num id, 15 years
-kinopoisk.ru##+js(cookie-remover, mda2_beacon)
-! non-session short-term cookie, value:"movie-{num}"
-kinopoisk.ru##+js(cookie-remover, sgst)
-! non-session http-only short term cookie with some numid
-kinopoisk.ru##+js(cookie-remover, tc)
-! non-session 1 year cookie, empty
-kinopoisk.ru##+js(cookie-remover, yandex_login)
-! non-session short-term cookie, "noauth:{numid}"
-kinopoisk.ru##+js(cookie-remover, ya_sess_id)
-
-! non-session visitorid, several years
-garant.ru##+js(cookie-remover, garantId)
-
-canada.ca##+js(cookie-remover, ak_bmsc)
-canada.ca##+js(cookie-remover, bm_sv)
-
-canva.com##+js(cookie-remover, CAI)
-canva.com##+js(cookie-remover, __cuid)
-
-championat.com##+js(cookie-remover, cuid)
-
-winterscoming.biz##+js(cookie-remover, uuid)
-
-! non-session visitor id, 10 years
-irecommend.ru##+js(cookie-remover, ss_uid)
-! non-session visitor id, 3 years
-irecommend.ru##+js(cookie-remover, stats_u_a)
-
-! non-session http-only visitor id, 1 year
-i1.social.s-msft.com##+js(cookie-remover, .ASPXANONYMOUS)
-
-! visitor id
-geeksforgeeks.org##+js(cookie-remover, gfg_nluid)
-
-! non-session http-only cookie, 3 months
-farfor.ru##+js(cookie-remover, sessionid)
-
-! track url
-planetofhotels.com##+js(cookie-remover, lptp)
-! hard id
-planetofhotels.com##+js(cookie-remover, sbjs_udata)
-! ref
-planetofhotels.com##+js(cookie-remover, sbjs_current)
-! ref
-planetofhotels.com##+js(cookie-remover, sbjs_first)
-! ref
-planetofhotels.com##+js(cookie-remover, sbjs_first_add)
-! ref
-planetofhotels.com##+js(cookie-remover, sbjs_current_add)
-! id
-planetofhotels.com##+js(cookie-remover, sbjs_migrations)
-planetofhotels.com##+js(cookie-remover, /^SSESS/
-
-passport.yandex.ru##+js(cookie-remover, mda2_beacon)
-passport.yandex.ru##+js(cookie-remover, mda2_domains)
-
-9gag.com##+js(cookie-remover, auto_log)
-
-cnet.com##+js(cookie-remover, _mfuuid_)
-
-facebook.com##+js(cookie-remover, sb)
-
-! visitor id
-icedrive.net##+js(cookie-remover, icedrive)
-
-twitter.com##+js(cookie-remover, gt)
-twitter.com##+js(cookie-remover, ct0)
-
-nutshell.com##+js(cookie-remover, dotcomngx)
-
-getapp.com##+js(cookie-remover, compareBasket)
-getapp.com##+js(cookie-remover, gapct)
-getapp.com##+js(cookie-remover, gauid)
-getapp.com##+js(cookie-remover, getapp.session)
-getapp.com##+js(cookie-remover, /^save_count_/)
-
-soundcloud.com##+js(cookie-remover, ajs_anonymous_id)
-soundcloud.com##+js(cookie-remover, datadome)
-
-! parked
-tfile.vip##+js(cookie-remover, __tad)
-
-! parked
-torrentino.in##+js(cookie-remover, __tad)
-torrentino.in##+js(cookie-remover, caf_ipaddr)
-torrentino.in##+js(cookie-remover, expiry_partner)
-
-medium.com##+js(cookie-remover, /^dd_cookie_test_/)
-medium.com##+js(cookie-remover, _dd_s)
-
-mp3-cherry.com##+js(cookie-remover, file_view)
-
-steamcommunity.com##+js(cookie-remover, recentlyVisitedAppHubs)
-
-! httpOnly
-gumroad.com##+js(cookie-remover, _gumroad_guid)
-gumroad.com##+js(cookie-remover, _mkra_stck)
-
-webflow.com##+js(cookie-remover, _pxvid)
-webflow.com##+js(cookie-remover, wf_exp_uniqueId)
-
-! httpOnly visitor id
-sportmaster.ru##+js(cookie-remover, UDID)
-! httpOnly visitor id
-sportmaster.ru##+js(cookie-remover, SMAUTH)
-sportmaster.ru##+js(cookie-remover, srv_id)
-! httpOnly
-sportmaster.ru##+js(cookie-remover, SMID)
-! httpOnly
-cdn.sportmaster.ru##+js(cookie-remover, sd_srv_id)
-
-! httpOnly
-crozdesk.com##+js(cookie-remover, _crozdesk-app_session)
-
-nytimes.com##+js(cookie-remover, datadome)
-
-riserphone.com##+js(cookie-remover, TwUserTrackingCookieName)
-riserphone.com##+js(cookie-remover, SignupTrackId)
-
-stackerhq.com##+js(cookie-remover, stacker_onboarding)
-
-atlassian.com##+js(cookie-remover, ldAnonymousId)
-
-! httpOnly
-magileads.eu##+js(cookie-remover, apbct_urls)
-! httpOnly
-!magileads.eu##+js(cookie-remover, apbct_site_referer) - as /refer/
-
-! httpOnly visitor id
-cbssys.com##+js(cookie-remover, .Nop.Customer)
-! httpOnly "1"
-cbssys.com##+js(cookie-remover, .Nop.RecentlyViewedProducts)
-
-popl.co##+js(cookie-remover, _cmp_a)
-popl.co##+js(cookie-remover, _landing_page)
-
-serviceform.com##+js(cookie-remover, /mixpanel/)
-
-splunk.com##+js(cookie-remover, trackAffiliate)
-
-softwareadvice.com##+js(cookie-remover, _dd_s)
-
-webflow.com##+js(cookie-remover, wf_logout)
-webflow.com##+js(cookie-remover, _px3)
-
-office24by7.com##+js(cookie-remover, drip_unique_id)
+!! todo
