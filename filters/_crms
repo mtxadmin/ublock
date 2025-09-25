@@ -141,6 +141,12 @@ avia.ru$3p  # from Adguard
 
 aviabay.ru$3p,all  # from Ru AdList: |ws*//*aviabay.ru^
 
+!avs.io  # ad redirects  # aviasales private URL shortener
+    ! there are also some images there on img.avs.io
+    ! Hmm... Ok, moved to _crms
+avs.io$3p
+    @@img.avs.io
+
 bagirastyle.ru$3p  # ad scripts  # is in Adguard
 
 ||bbb.org$third-party  # from Fanboy's, modified
@@ -1029,6 +1035,8 @@ rackcdn.com
     ! ec01c392919812c4f818-79afe539d963810002081e6e2a51e67e.ssl.cf2.rackcdn.com  # from BlockListProject - Ads
 
 radiant.net$third-party  # mx2.radiant.net/Redirect/...  # Canadian provider. But it spams.
+
+ramfy.ru$3p  # ad scripts
 
 rbc.ru$script,domain=~rbc.ru|~rbk.ru  # strange 3p scripts
 
