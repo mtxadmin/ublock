@@ -1297,6 +1297,7 @@ metrics.alfabank.ru$redirect-rule=noopjs
 ||alfabank.ru/*/logger$redirect-rule=noopjs
 ||alfabank.ru/*/system/log
 ||alfabank.gcdn.co/media/cpas/main-feedback-form/huawei-button
+||alfabank.ru/*/background$image
     ! popups
 alfabank.ru##[class^=header-warning__root]:has-text(блокировщик контента)
 aslife.ru##.t824__popup
@@ -1320,6 +1321,7 @@ alfabank.ru##.mobile-bank__banner-logo
 alfabank.ru##[class^=main-carousel_]
 alfabank.ru##.swiper-slide:has(article[data-test-id="main-carousel-slide"])
 alfabank.ru##[class*=Notification]:has-text(Минцифры)
+alfabank.ru##[class*=page__banner]
 alfastrah.ru##.slider-banners
 alfastrah.ru##.rate-us
 aslife.ru##.main-slider
@@ -4282,6 +4284,8 @@ bmwclub.ru##.uix_navigationLogoText
 bn.ru##.bn-popup-gazeta__detail
 bn.ru##.right-sidebar-banners
 bn.ru##.bn-unisender
+
+bnawinwin.club###masthead > .site-container
 
 boards.net##.bksmb
 boards.net###remove_ads_link
@@ -7301,6 +7305,8 @@ doginhouse.ru##.img-featured
 doginhouse.ru##.sfsi_Sicons
 doginhouse.ru###ez-toc-container
 
+dogovor-obrazets.ru##.spasibo
+
 dohod.ru##.banner-bpif
 dohod.ru##.upward
 
@@ -7402,6 +7408,9 @@ donday-taganrog.ru###menubar:style(position:static !important)
 donday-taganrog.ru###menubar a:style(color:initial !important)
 
 ||don-holod.ru/wp-content/uploads/2021/03/podarok_korobka_rozhdestvo_195305_1280x720.jpg
+
+donshimoda.ru##body:style(background-color:initial !important)
+donshimoda.ru###page:style(top:0px !important)
 
 donsimon.net##.__b-popup1__.b-modal
 donsimon.net##.pps
@@ -8145,6 +8154,10 @@ edugeek.net###notices
 
 ||edumarket.ru/help/widget_consult.js
 edumarket.ru##.consult_q
+
+edunetwork.ru##.q-drawer-container
+edunetwork.ru##.s-bottom-toolbar
+edunetwork.ru##.a-running-line
 
 ! top promo
 edureka.co##.become-professional-btn
@@ -11943,6 +11956,7 @@ hft.ru##.footer__pay
 ||hh.ru/build/static/images/applicant-auth-bg$image
 ||hh.ru/build/static/images/common-auth-bg$image
 ||hh.ru/build/static/images/big-promo$image
+||hhcdn.ru/brand-snippet-pictures/$image
 !
 ||hhcdn.ru/ichameleon/$image
 ||hhcdn.ru/uxfeedback/
@@ -12048,7 +12062,6 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 ! promos (social)
 hh.ru##[class^=setka-container]
 hh.ru##[class*=wrapper-]:has([class*=big-promo-])
-
     ! logos
 /employer-logo/$image,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
   ! ||hhcdn.ru/employer-logo/$image
@@ -12191,6 +12204,8 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-wrap-container]:has([class^=magritte-scroll-wrapper])
 hh.ru##.marquee2
 hh.ru##button:style(color:initial !importnant)
+! Похоже на кнопки "купить" в общем списке продуктов во многих интернет-магазинах. Может, сначала всё-таки зайти и описание прочитать?
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(/Откликнуться|Связаться/):matches-path(/search/vacancy)
 
 ||hightech.plus/api/textteasers/
 hightech.plus##[class^=bottom-injection]
@@ -13291,6 +13306,8 @@ infopackets.com##.sidebar
 
 ||infoplease.com/*/overlay.png
 infoplease.com##.addBlockerPopUp
+
+inforesist.org##.lang-modal
 
 website.informer.com###wi-plugin-corner
 
@@ -15628,6 +15645,8 @@ lead4pass.com##.free-des
 
 ||leadconnectorhq.com/chat-widget/$important
 
+leader-id.ru##[data-fetch-key="TheHeaderLogo:0"]
+
 leadertask.ru##noindex
 leadertask.ru##.wp-block-lazyblock-knopka
 
@@ -16734,6 +16753,13 @@ m24.ru##.b-content:style(padding-top:0px !important)
 m24.ru##.b-header-wrapper:style(position:static !important)
 m24.ru##.stripe_fixed:style(position:static !important)
 
+||macards.ru/bitrix/js/yandex.metrika/
+macards.ru##.side-block:has-text(Подписаться)
+macards.ru##.front_tizers
+macards.ru##.sticky-sidebar__inner:style(position:static !important)
+! duplicate menu
+macards.ru##.menu-row.logo-row
+
 ||macrium.com/files-2/next-webinar.jpg
 macrium.com###cover
 macrium.com###navbar .contact-numbers
@@ -17253,6 +17279,12 @@ mebelsuite.ru###site-header
 
 medaboutme.ru##.listelem
 
+! top
+medams.ru##.newblock
+! картинка уехала вниз и вообще не нужна
+||medams.ru/*/kartinka-sverhu.png$image
+medams.ru##.sample-popup-button
+
 medbe.ru$inline-script  # site breaks copypaste
 
 ||medcentr-balakovo.ru/source/nofoto.jpg
@@ -17516,6 +17548,8 @@ megafon.ru##.tile_personal
 megafon.ru##.available-options-interesting
 megafon.ru##.loyalty-system-buttons__wrapper-container
 megafon.ru##.start-price-block
+megafon.ru##.gtm-banner
+megafon.ru##.main-page-banner-v2
     ! other
 megafon.ru##.mfui-tile > svg
 megafon.ru##.footer__app-badge
@@ -17602,6 +17636,10 @@ mentoday.ru##.yandex-player-widget__player
 mentoday.ru##.video-recommendation
 mentoday.ru##.detail-video-recommendation
 
+||menunedeli.com/chtm/s/metric/
+    ! ||menunedeli.com/chtm/s/metric/behaviourBeacon  # ad pings
+    ! ||menunedeli.com/chtm/s/metric/behaviour.gif?...
+!
     ! site breaks copypaste
 menunedeli.ru##^script:has-text($(document).on('copy'))
 menunedeli.ru##^script:has-text("Автор запретил копирование")
@@ -29246,6 +29284,7 @@ timeweb.com###header
 timeweb.com##.ia-splitter:style(padding-top:0px !important)
 
 ||cdn-tinkoff.ru/twa/
+||tinkoff.ru/gateway/v1/events  # ad pings and xhrs
 ||tinkoff.ru/sl/  # ref links
 ||tinkoffjournal.ru/*/mercury-tracking-event.js  # 2025
 !
@@ -33212,6 +33251,14 @@ xn--80axgaaqjw.xn--p1ai##.plogo
 xn----8sbjufbbcmolbtcflf.xn--p1ai###ipsDebug_footer
 
 xn----8sbmnbjdi5acl5a.xn--p1ai##header
+
+! сытый-шарик.рф
+||xn----8sbybi8adi0d0ab.xn--p1ai/*/page-title-default.png
+||xn----8sbybi8adi0d0ab.xn--p1ai/*/preloader$image
+! top marquee
+xn----8sbybi8adi0d0ab.xn--p1ai##.center-block-contayner
+! bottom sticky duplicate
+xn----8sbybi8adi0d0ab.xn--p1ai##.woodmart-sticky-btn
 
 ||xn--90abj6adui5e.xn--p1ai/*/vo_header.jpg
 ||xn--90abj6adui5e.xn--p1ai/*/voentorg.png
