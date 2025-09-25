@@ -3455,6 +3455,10 @@ _wtInit.js  # from Fanboy's
 !
 ! other
 !
+##[aria-label="home"]
+##[aria-label="Home"]
+##[aria-label="Наверх"]
+##[aria-label="Вернуться к началу страницы"]
 ! many js totops
 ##a[href$="scrollToTop()"]
     ! cov.su##[href="javascript:t190_scrollToTop()"]
@@ -3550,7 +3554,6 @@ _wtInit.js  # from Fanboy's
 ##.bt_up
 ##.bt_up_scroll
 ##.but-scroll
-##button[aria-label="Наверх"]
 ###button_down
 ##.button_down
 ##.button-go-top
@@ -6139,8 +6142,11 @@ tarif-24.ru##.mh-ticker-bottom
 /swfs/*$important
 /swfobject/*$important
 ! I cannot found solution for /phpvirtualbox/, but for private LAN IPs it works.
-/swfobject.js$important,domain=~roscosmos.ru|~172.16.*|~192.168.*|~10.*
-/swfobject.min.js$important
+/swfobject.js$important,domain=~pruffme.com|~rc.show|~roscosmos.ru|~172.16.*|~192.168.*|~10.*
+/swfobject.min.js
+    ! Exclusions:
+    ! rc.show / pruffme.com - Russian webinar service. Yes, it's bugged under the hood
+    ! roscosmos.ru - Russian SpaceX (almost)
 
 
 
