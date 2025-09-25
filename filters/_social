@@ -1688,10 +1688,11 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
     ! zenkit.com - classes *virtual-scroller* are false positive
 ~facebook.com,~vk.com##[id*="follow"]:not(html):not(body):not(article)
 
-~support.google.com,~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article):not(.selectionShareable)
+~alfabank.ru,~support.google.com,~officeapps.live.com,~joom.com##[class*="Share"]:not(html):not(body):not(article):not(.selectionShareable)
     ! Exclusions:
     ! .selectionShareable - see /plugins/selection-sharer/*
         ! oracle.com - there are many elements with class="selectionShareable"
+    ! alfabank.ru - false-positive, internal non-social divs
     ! support.google.com - main div (scSharedMaterialcardroot scSharedMaterialcardelevated scSharedMaterialcardborder etc.)
 ##[title^="Follow me on "]
 ##[id*="Share"]:not(html):not(body):not(article):not(:matches-path(/\^/phpvirtualbox\//))
