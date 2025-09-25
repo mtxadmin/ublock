@@ -26522,6 +26522,8 @@ smarttvnews.ru##.logo_section_wrap
 
 smclinic.ru##.n-header-banner
 smclinic.ru##.m-slider
+smclinic.ru##.wrapper__box:style(padding-top:0px !important)
+smclinic.ru##.sub-logo
 
 sm-eko.ru##.popup-win
 
@@ -28050,6 +28052,7 @@ tavro-kozha.ru##.main-inside:style(padding-top:0px !important)
 
 tbank.ru##[data-testid="scroll-to-top-button"]
 tbank.ru##[data-test="first-menu"]:style(position:static !important)
+tbank.ru##[role="application"]
 
 tbmmarket.ru##.header-location__widget-question
 tbmmarket.ru###telefon
@@ -33527,7 +33530,12 @@ yoursunny.com##.site-header-subtitle
 ! ||youtube.com/yts/cssbin/ - it is css, don't block!
 /csi_204*  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
 /generate_204  # from EasyList
-/youtubei/v1/log_event  # from https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/
+/youtubei/v1/log_event  # is in https://github.com/Cybo1927/Google-Ad-Analytic-Blocker/  # also is in Adguard
+    ! ||youtube.com/youtubei/v1/log_event?  # from Adguard, EasyPrivacy
+    ! ||youtubekids.com/youtubei/v1/log_event?  # from EasyPrivacy
+    ! ||youtube-nocookie.com/youtubei/v1/log_event?  # from Adguard, EasyPrivacy
+    ! ||youtube.googleapis.com/youtubei/v1/log_event?  # from EasyPrivacy
+/v1/log_event  # is in EasyPrivacy
 ||youtube.com/cspreport/
 ||youtube.com/get_midroll_  # from EasyList
 ||youtube.com/error_  # and my too
