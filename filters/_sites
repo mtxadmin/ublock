@@ -2432,7 +2432,16 @@ community.atlassian.com##.atl-comment-likes
 
 atmosaicrm.com##.modal
 
+    ! popups
+atomy.ru##div:has-text(/^$/)
+    ! top
 atomy.ru##.gnbPartWrap:style(position:static !important)
+atomy.ru##.hdr-logo
+    ! banners and promos
+atomy.ru##.mainBn
+atomy.ru##.floatingBx
+atomy.ru##.lyr-notice.layer-wrap
+    ! other
 
 atonce.com##.rightCtaContainer
 atonce.com##header
@@ -3378,7 +3387,6 @@ baha.com##.header-fixed:style(height:auto !important)
 baikalinc.ru##.sticked
 baikalinc.ru##.hero.first-screen
 
-baiqueaccessories.com##[aria-label="home"]
 baiqueaccessories.com##footer button
 baiqueaccessories.com##footer buttom
 baiqueaccessories.com##.bricks-mobile-menu-wrapper
@@ -5026,7 +5034,6 @@ ccna7.com##.sgpb-theme-1-overlay
     ! popups
 cdek.ru##.modals-container
 cdek.ru##.help-customer-wrapper:style(position:static !important)
-cdek.ru##[aria-label="Вернуться к началу страницы"]
     ! logo
 cdek.ru##.t228__imglogo
     ! apps
@@ -16196,6 +16203,8 @@ litvak.me##.f_blank
 live4fun.ru##.head_center
 live4fun.ru##.top_users.block
 
+||livedigital.space/collect
+
 liveexpert.ru##.applications-section
 liveexpert.ru##.online-wrapper
 
@@ -21209,6 +21218,9 @@ pemato.de###colophon
 
 pentan.info###topnews
 
+! hmm... But better than nothing
+pentest-tools.com##.overflow-hidden:has(img)
+
 penzainform.ru###currency-logo
 penzainform.ru##noindex
 
@@ -23037,11 +23049,18 @@ rabota.ru##.page-header__left-logo
 rabota.ru##.vacancy-fixed-actions:style(position:static !important)
 rabota.ru##.vacancy-card__fixed-footer-wrapper_opened:style(position:static !important)
 rabota.ru##.vacancy-card__fixed-footer-wrapper:style(position:static !important)
-    ! other
+    ! popups
 rabota.ru##.location-tooltip
+rabota.ru##.dialog__content:has-text(Находите работу быстрее)
+rabota.ru##.overlay
+    ! banners and promos
+rabota.ru##.get-app
+rabota.ru##.notify:has-text(Минцифры)
+! "Сам себя не похвалишь - никто не похвалит". Это у них свои вакансии в топе висят
+rabota.ru##.r-serp__item:has(.vacancy-tags__tag_premium)
+    ! other
 rabota.ru##.filters-minimized
 rabota.ru##.vacancy-card__fixed-actions
-rabota.ru##.get-app
 
 rabotaeu.net##h1
 rabotaeu.net##.logo-lnk
@@ -23168,7 +23187,6 @@ rambler.ru##.commercial-branding > div[class][style^="order:"] div:style(min-hei
 rambler.ru###headline
 # totop
 rambler.ru##._3mubT
-rambler.ru##button[aria-label="Вернуться к началу страницы"]
 ! Adguard rule
 rambler.ru###root div[data-blocks] div:not([aria-label]):empty:style(min-height: 0 !important;)
 ! footer svg logo
@@ -23530,7 +23548,6 @@ reddit.com##faceplate-tracker[noun=user_avatar]
 ! top
 reddit.com##button[id=get-app]
 ! logo
-reddit.com##a[aria-label="Home"]
 redd.it###reddit-logo
 reddit.com##.snoo-empty-comments
 reddit.com##[src^="data:image/png;base64,"]
@@ -25810,6 +25827,8 @@ seosniffer.com##div:has(>script)
 seotoaster.com##.sms-popup-wrapper
 
 septik.guru##.logoarea
+
+seranking.com###userflow-ui
 
 ||serfish.com/root/img/serfish$image
 ||serfish.com/root/img/quarium$image
@@ -30063,6 +30082,8 @@ tutsnode.*##.main-navigation
     ! top
 tutu.ru##[class^=__logo__]
 tutu.ru###DBdesktopBillboard
+tutu.ru##[aria-label="Логотип"]
+tutu.ru##[data-ti="heading-2"]:has-text(Туту)
     ! popups
 tutu.ru##[class*=__openDown__]
 tutu.ru##[class*=__shadowEnd__]
@@ -32274,6 +32295,9 @@ whatcar.com##[class^=HeroAdCTA-HeroAdContainer]
 
 whatsabyte.com##p:has-text(Disclaimer):has-text(affiliate)
 
+whoisxmlapi.com##.common-info-modal-wrapper
+whoisxmlapi.com##+js(rc, blurred)
+
 whoosh.bike##.t972__banner
 
     ! banners
@@ -32948,6 +32972,8 @@ xelent.ru##.tech-widget
 
 ||xfit.ru/apple.svg
 xfit.ru##.fab
+xfit.ru##.current-city .outer
+xfit.ru##.main-slider
 
 ||xhamster.com/mlxhl/v1/for-page
 ||xhamster.com/service-worker-fake.js
