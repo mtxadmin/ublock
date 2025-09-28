@@ -264,6 +264,7 @@ finance.ozon.*##.paranja:has-text(/Зв(е|ё)зды/i)
 ||ozone.ru/s3/cdn-public/ozon_card_banner$image
 ||ozone.ru/s3/*/card-landing$image
 ||ozone.ru/s3/*/hero-landing$image
+||ozone.ru/assets/*/black-friday/entry.marketing.js
 !
 ! Ru AdList rule hides recommendations after order. I think, they are useful.
 ozon.*#@#html:not([style*="overflow:"]) [data-widget="skuGrid"]
@@ -546,6 +547,8 @@ ozon.*##section > div:has(>div>svg[width][height]):has(>div)
 !
 ! 2024-08 замечен лейбл сверху - редко, но бывает.
 ozon.*##.tile-brand-logo
+! нафиг идите со своими морковками, они только в приложении
+ozon.ru##aside div:has(>div>div>div>span:has-text(морковок)):not(:has-text(Категория))
     ! loans
 ozon.*##div[type="annotation"]:has-text(/(Р|р)ассрочк/)
 ! тут ранее встречалась какая-то ошибка, но не была зафиксирована
@@ -739,11 +742,13 @@ wildberries.ru##.price__wrap del
     ! labels
 wildberries.ru##.product-card__tip-wrap
 wildberries.ru##.product-card__tip
+wildberries.ru##[class*=promoPanel-]
     ! loans
 wildberries.ru##.price-block__credit-payment
 wildberries.ru##.list-item__price-credit
 wildberries.ru##.b-top__bpl-switch:has-text(Оплатить потом)
 wildberries.ru##.installment-commission
+wildberries.ru##button[class*=badgeCredit]
     ! up button
 wildberries.ru##.j-quicknav
 wildberries.ru##.quicknav-v1
@@ -777,6 +782,8 @@ wildberries.ru##.scrolled-socials
 wildberries.ru##.general-preloader
 ! oneclick
 wildberries.ru##.same-part-kt__btn-buy
+! oneclick
+wildberries.ru##[class*=buyNowButton]
 wildberries.ru##.error500
 ! too large menu in the mobile mode
 wildberries.ru##.footer__nav
@@ -792,6 +799,7 @@ wildberries.ru##.feedback__state
 wildberries.ru##.feedback__sellers-reply
 wildberries.ru##.product-feedbacks::before
 wildberries.ru##.product-feedbacks::after
+wildberries.ru##[class^=feedbackContainer]
 
 !! todo
 
