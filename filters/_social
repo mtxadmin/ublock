@@ -232,8 +232,9 @@ _social_fb.  # from Fanboy’s
 ~facebook.com,~fb.com,~onetwotrip.com,~ozon.ru,~ozon.by,~ozon.com##[id^="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com,~google.com,~onetwotrip.com,~ozon.ru,~ozon.by,~ozon.com##[class$="FB"]:not(html):not(body):not(article)
 ~facebook.com,~fb.com,~ozon.ru,~ozon.by,~ozon.com##[id$="FB"]:not(html):not(body):not(article)
-~facebook.com,~fb.com,~aliexpress.com,~aliexpress.ru,~alfamiles.com,~belarus2020.org,~bite-byte.ru,~doma-karkas.ru,~linkedin.com,~onetwotrip.com,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~ozon.by,~ozon.com##[class^="fb"]:not(html):not(body):not(article):not([class^="fb2"]):not([class^="fbtn"])
+~facebook.com,~fb.com,~aliexpress.com,~aliexpress.ru,~alfamiles.com,~belarus2020.org,~bite-byte.ru,~deepseek.com,~doma-karkas.ru,~linkedin.com,~onetwotrip.com,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~ozon.by,~ozon.com##[class^="fb"]:not(html):not(body):not(article):not([class^="fb2"]):not([class^="fbtn"])
     ! Exclusions:
+    ! deepseek.com - random class names
     ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
     ! ozon - random two-letter and other classes
 ~facebook.com,~fb.com,~aliexpress.com,~alfamiles.com,~microsoft.com,~onetwotrip.com,~ozon.ru,~ozon.by,~ozon.com##[id^="fb"]:not(html):not(body):not(article):not(.fb-post)
@@ -1967,6 +1968,8 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ##.shareit
 ! is in 3 lists
 ##.sharePage
+! is in Adguard
+##.shares
 ##.share-this
 ###share-this
 ! is in Fanboy's
