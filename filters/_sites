@@ -2137,6 +2137,8 @@ arcenal-m.ru##.box.relative
 @@||arcgis.com^$generichide
 ||arcgis.com/js/app/telemetry.js$redirect=noopjs  # still "TypeError: Telemetry.init is not a function"
 
+||archakov.su/bitrix/templates/archi/img/no_detail_photo.jpg$image
+
 ! bad exclusion from EasyList. It unblocks many hidden blocks on archived pages
 @@||web.archive.org^$generichide,badfilter
 ! static header
@@ -2579,6 +2581,8 @@ auto.ru##[class*=IndexBackButton_sticky]
 auto.ru##[class^=UpButton]
 ! totop (generic hide)
 auto.ru##.up-button
+auto.ru##[class^=ArticleAddGaragePopup]
+auto.ru##.ArticleAddGarageContent
     ! banners and promos
 auto.ru##.FilterBannerCreditSber
 auto.ru##.CardBenefits
@@ -2610,6 +2614,8 @@ auto.ru##[class^=ListingDealers]
 auto.ru##[class^=ListingItemPromoGoToApp]
 ! inline subscribe block
 auto.ru##[class^=ButtonBlock]:has-text(Telegram)
+auto.ru##[class^=LogbookCardBannerPlus]
+auto.ru##[class^=LogbookContextSnippet]
     ! labels
 auto.ru##[class^=PersonalizedFeedOfferItem__badge]
 auto.ru##[class^=PersonalizedFeedOfferItem__discountBadge]
@@ -2809,6 +2815,12 @@ auto-rostov.ru##.avatar
 
 autorus.ru##[src^="data:image/jpg;base64,"]
 
+autoset.by##.pop-up-top
+autoset.by##.header__top-text
+autoset.by##.header__top-phone
+autoset.by##.header__bg:style(position:static !important)
+autoset.by##.js-up-btn
+
 ||autoset.ru/assets/img/delivery_image.jpg
 ||autoset.ru/assets/img/message_image.png
 
@@ -2898,33 +2910,29 @@ aviales.ru##.topmenu:style(position:static !important)
 
 ||avianews.ru/if/
 
+! aviasales.kz, aviasales.ru
     ! top
-aviasales.kz##.header__title-form
-aviasales.kz##.page-header__titles
-aviasales.kz##div[data-selene-widget=navbar] div:style(position:static !important)
+aviasales.*###oldBrowserModal
+aviasales.*##.aviasales-app__navbar-wrap:style(position:static !important)
+aviasales.*##.page-header__bottom
+aviasales.*##.page-header__titles
+aviasales.*##.navbar__tabs-wrap
+aviasales.*##.header__title-form
+aviasales.*##div[data-selene-widget=navbar] div:style(position:static !important)
     ! banners and promos
-aviasales.kz##div[data-selene-widget="premium_free_markets_banner"]
-aviasales.kz##div:has-text(Мы используем cookie)
-aviasales.kz##div[data-selene-widget="email_subscription_form"]
-    ! "открыть ostrovok.ru в новой вкладке" / "открыть booking.com в новой вкладке"
-aviasales.kz##label[data-test-id="checkbox"]:has-text("в новой вкладке")
-aviasales.kz##input[data-test-id="booking-checkbox"]:remove-attr(checked)
-aviasales.kz##input[data-test-id="no-cashback-label"]:remove-attr(checked)
+aviasales.*##div[data-test-id="hot-tickets"]
+aviasales.*##div[data-test-id="city-poi-card"]
+aviasales.*###tippy-2
+!aviasales.*##input[data-test-id="booking-checkbox"]:remove-attr(checked) - doesn't work properly
+aviasales.*##div[data-selene-widget="premium_free_markets_banner"]
+aviasales.*##div:has-text(Мы используем cookie)
+aviasales.*##div[data-selene-widget="email_subscription_form"]
+   ! "открыть ostrovok.ru в новой вкладке" / "открыть booking.com в новой вкладке"
+aviasales.*##label[data-test-id="checkbox"]:has-text(/в\s*новой\s*вкладке/):remove()
+aviasales.*##input[data-test-id="booking-checkbox"]:remove-attr(checked)
+aviasales.*##input[data-test-id="no-cashback-label"]:remove-attr(checked)
     ! other
-
-    ! top
-aviasales.ru###oldBrowserModal
-aviasales.ru##.aviasales-app__navbar-wrap:style(position:static !important)
-aviasales.ru##.page-header__bottom
-aviasales.ru##.navbar__tabs-wrap
-aviasales.ru##.header__title-form
-    ! banners and promos
-aviasales.ru##div[data-test-id="hot-tickets"]
-aviasales.ru##div[data-test-id="city-poi-card"]
-aviasales.ru###tippy-2
-!aviasales.ru##input[data-test-id="booking-checkbox"]:remove-attr(checked) - doesn't work properly
-aviasales.ru##label[data-test-id="checkbox"]:has-text(/в\s*новой\s*вкладке/):remove()
-    ! other
+aviasales.*##div:has(button[data-test-id="accept-cookies-button"])
 
 avidreaders.ru##.footer
 
@@ -5231,6 +5239,10 @@ chess.com##.chess-logo
 chess.com##.slideshow
 chess.com###dismissable-sidebar-embed-player-section
 
+chesscul.com##.elementor-location-header .elementor-widget-image
+
+chessinprogress.com##.cover
+
 chevy-niva.ru###wrapheader
 ! forum signatures
 chevy-niva.ru##div.postbody:has(br):has-text(_________________)
@@ -6415,6 +6427,8 @@ dcode.fr###logo
 dcode.fr###up-button
 dcode.fr###slideout
 
+dcodesnippet.com##.product-banner
+
 dd-wrt.com###header-wrap:style(position:static !important)
 dd-wrt.com###header_wrap:style(position:static !important)
 dd-wrt.com###header_wrap:style(background-position-y:0px !important)
@@ -6507,6 +6521,7 @@ delikateska.ru##.header-main__main
     ! bottom
 delikateska.ru##.pp-mobile-price__cashback
 delikateska.ru##.pp-mobile-price:style(position:static !important)
+delikateska.ru##.footer-qr
     ! other
 delikateska.ru##.question
 delikateska.ru##.main-nav > .phone_number
@@ -8077,6 +8092,8 @@ eda.ru##.user-bar__svg-bookmark
 eda.ru##.projects-menu
 eda.ru###billboard
 
+eda-land.ru##.article_footer_bottom
+
 ||edazii.ru/qrcode/$image
 
 ||eddiejackson.net/web_images/web_pic.png
@@ -8601,6 +8618,12 @@ esg-moscow.ru###calculator
 esg-moscow.ru##.button-termin
 esg-moscow.ru###logo-container
 esg-moscow.ru##.more
+
+esh-derevenskoe.ru##.popup-mobile
+esh-derevenskoe.ru##.product-card__subscribe
+esh-derevenskoe.ru##.index-fresh-slider
+esh-derevenskoe.ru##.footer-block__back
+esh-derevenskoe.ru##.footer-block__app
 
 e-siz.ru##.is-bottom-fixed:style(position:static !important)
 e-siz.ru##.s-payments-list
@@ -9274,6 +9297,11 @@ fbm.ru##.post-bottom
 fedoraproject.org##.toolbar:style(position:static !important)
 fedoraproject.org##.nav-panel-explore:style(position:static !important)
 fedoraproject.org##.toc-menu:style(position:static !important)
+
+fedsp.com##.city-detect
+fedsp.com###fedsp-messenger
+||fedsp.com/images/2018/do_you_have_question_new.png$image
+fedsp.com##.do_you_have_question
 
 ||feedburner.com/~a/  # from EasyList
 
@@ -10029,6 +10057,9 @@ freshworks.com##.inpage-scroll:style(position:static !important)
 freshworks.com##.banner-default
 
 frickelsoft.net##body:style(background-color:white !important)
+
+! duplicate top
+frombaskervilles.com##.catalog-element-panel
 
 from-ua.com##.mCustomScrollbar
 from-ua.com##.sidebar-nav__overlay
@@ -14885,6 +14916,9 @@ kolesa-darom.ru##.header-city-tooltip
 
 kolesadom.ru##.bottom-center
 
+koleso.ru##[class^=LayoutModal_arrow_up]
+koleso.ru##[class*=Menu_ButtonRecordWidget]
+
 kolundrov.ru##.whb-general-header-inner:style(height:auto !important)
 kolundrov.ru##.single-breadcrumbs-wrapper:style(margin-top:0px !important)
 kolundrov.ru##.title-shop
@@ -15473,6 +15507,8 @@ lady-war.ru##.PhoneHead
 lady-war.ru##.headInfo
 lady-war.ru##.cartAd
 lady-war.ru##.sale-lab
+
+lakomstvadlyasobak.ru##.header__locations
 
 lakshmikanth.com##.gh-head-logo
 lakshmikanth.com##.gh-head-actions
@@ -17810,6 +17846,8 @@ mi.com###hd.xm-fixed:style(position:static !important)
 mi.com##.xm-fixed-box
 mi.com###wp:style(margin-top:0px !important)
 
+||miasnota.ru/local/templates/dresscode_custom/images/background-repeated.jpg$image
+
 ||mibdepot.com/ximages/mibDepotLogo.jpg
 
 michaelscodingspot.com###brand-image
@@ -18824,6 +18862,15 @@ mvideo.ru##mvid-you-watched
 
 mwave.com.au##.internalLinks:style(position:static !important)
 mwave.com.au##.terms_conditions_footer
+
+myasnoemesto.ru##.btn-fixed-bottom-login
+myasnoemesto.ru##.ml_wrapper
+
+myasnoepodvorie.ru###zonePopover
+myasnoepodvorie.ru##.popover-overlay
+myasnoepodvorie.ru##.connector
+myasnoepodvorie.ru##.adv-popover-content
+myasnoepodvorie.ru###connectorPopover
 
 myaso-portal.ru##div > [href^="/bitrix/rk.php"]
 myaso-portal.ru##.dev
@@ -20639,6 +20686,8 @@ optimakomp.ru###header
 optimizesmart.com$inline-script  # site blocks copypaste
 optimizesmart.com###in-page-book-banner-container
 
+optovkin.com##.head-banner
+
 ||orabote.biz/test/$image
 
 ||oracle.com/js/stats.js  # is in EasyPrivacy
@@ -20818,6 +20867,7 @@ ostraining.com##.alert-info.alert.uk-alert
 ostraining.com##.ost-box-image
 
 ||ostrovok.ru/hc/static/funnel.js
+||ostrovok.ru/hc/event
 ostrovok.ru##.homepage-mobile-wrapper
 ostrovok.ru##[class^=Footer__rewards]
 ostrovok.ru##[class^=Seo__content]
@@ -20825,6 +20875,7 @@ ostrovok.ru##.zenemailcollectorV2
 !ostrovok.ru##[class^=SwipeablePopup_] - don't, too broad
 ostrovok.ru##[class^=SwipeablePopup_swipeablePopup]
 ostrovok.ru##[class^=MobileHeader]:style(position:static !important)
+ostrovok.ru##[class*=MobileApp-module__qrCode]
 
 ||oszone.net/ibm.html  # from Ru AdList
 oszone.net###professor
@@ -21245,6 +21296,9 @@ p-dip.ru##body > div:has-text(Для любых предложений по са
 pechenek.net##[href^="https://ru.spamguardapp.com/"]
 pechenek.net##.mega-sticky:style(position:static !important)
 pechenek.net##.yadengi
+
+pecik.ru##.form
+pecik.ru##.footer-form > div:has-text(напишите нам)
 
 ||ped-kopilka.ru/templates/cabinet/images/ca_header.jpg
 
@@ -22525,6 +22579,9 @@ privyr.com##.transition-all:has(.fa-rocket-launch)
 prmira.ru##.close-block
 
 prnt.sc##.header
+
+||proactions.ru/rest/stats/hits/
+||proactions.ru/centrifugo/connection/websocket
 
 proakkym.info##.arrow-topsroll_site
 
@@ -24558,6 +24615,8 @@ rusprofile.ru##p:has-text(бизнес-решения)
 
 rusrek.com##.head-banner-desktop
 
+russia.ru##.header-menu:style(visibility:visible !important; opacity:initial !important)
+
 russianblogs.com##h1
 
 ||russianfood.com/images/blg.png
@@ -25116,6 +25175,9 @@ rybachka-iz-karelii.org###footer
 
 rybalka.guru##.middle-header-wrapper
 
+||ryboedov.ru/local/templates/optima/img/val-bg-fish.webp$image
+ryboedov.ru###questions-block
+
     ! top
 ||rzd.ru/api/media/resources/$image
 rzd.ru##.head-text
@@ -25259,6 +25321,8 @@ saigaclub.ru##.product-grid > div > .compare
 ! other
 saigaclub.ru###menu > div
 
+saigatina.ru##[class$=right-mobile]
+
 saitavtoshkoly.ru##.widget_categories
 
 sakhalife.ru##.icon-18
@@ -25304,6 +25368,10 @@ samlib.ru##nobr
 samlib.ru##noindex
 
 samodelino.ru##hd_container
+
+samohodoff.ru##.welcome-pt-message
+samohodoff.ru##.welcome-pt-overlay
+samohodoff.ru##div:has(>a[href="/services/shinomontazh/"]:has(img))
 
 samoletplus.ru##.container:has-text(cookie)
 samoletplus.ru##[class^=HeaderLogo]
@@ -26047,6 +26115,10 @@ shkolkovo.net##.notifier
 shkolkovo.net##.catalog-menu:style(position:static !important)
 shkolkovo.net##.block-header:style(position:static !important)
 
+shmops.ru##.bh-widget-page.mobil_call_but
+! oneclick
+shmops.ru##.buy_click
+
 shoot-club.ru##.t651__btn
 shoot-club.ru##.t269__mainwrapper > .js-form-proccess
 
@@ -26066,6 +26138,10 @@ shoowbizz.com##.bg
 
 shop220.ru###title
 shop220.ru###float_panel:style(position:static !important)
+
+shop-bb.ru##.header-wrapper
+shop-bb.ru##.floating_cart_content_wrapper
+shop-bb.ru##.header_sidemenu
 
 shopcarry.ru##.tmenu:style(position:static !important)
 
@@ -26168,6 +26244,8 @@ shtorydekor.ru##div.JRPP_wrap
 siapress.ru###lastcomment
 
 siarzhuk.by##.site-header
+
+siberina.ru##.sliders-main
 
 sibkray.ru##.b-header__nav:style(margin-top:0px !important; margin-bottom:0px !important)
 
@@ -26654,6 +26732,8 @@ sntclub.ru##.t-cover
 ||sobaka.ru/*/countersApi.js
 ||sobaka.ru/assets/*/smm-dialog/smm-dialog.js
 sobaka.ru##.b-site-footer__age
+
+sobakanamyase.ru##.storefront-product-pagination
 
 ||sobesednik.ru/images/logo1.png
 
@@ -28884,6 +28964,8 @@ theblockcrypto.com##.d-lg-block
 
 ||thecashback.ru/wp-content/uploads/2017/09/cropped-cashback
 thecashback.ru##a[href^="https://go.cityclub.finance"]
+
+thechesswebsite.com##.poper-popup
 
 thecodebuzz.com##.has-background
 thecodebuzz.com##.ticker-wrapper
@@ -31720,6 +31802,9 @@ voplit.ru##.age-marker
 ||forum.vorota.de/images/focus/pattern.png
 @@||forum.vorota.de^$generichide,badfilter
 
+||voskresnayayarmarka.ru/img/mini_no_img.png
+voskresnayayarmarka.ru##.text-right.kontakt
+
     ! popups
 vostok.ru##.region_confirm_popup
     ! useless backgrounds
@@ -32345,6 +32430,8 @@ whatcar.com##[class^=HeroAdCTA-HeroAdContainer]
 
 whatsabyte.com##p:has-text(Disclaimer):has-text(affiliate)
 
+whattyre.com###hankook-side-image
+
 whoisxmlapi.com##.common-info-modal-wrapper
 whoisxmlapi.com##+js(rc, blurred)
 
@@ -32726,6 +32813,8 @@ woodtools.ru##.reportlinks
 woodtools.ru###google_translate_element
 translate.google.com$domain=woodtools.ru
 s3.amazonaws.com$domain=woodtools.ru
+
+woofa.ru##[href="http://woofa.ru"]
 
 woomhost.com##.top-header-fixed:style(position:static !important)
 woomhost.com##.blok-on-phon
@@ -33156,6 +33245,10 @@ xn----7sbaegss0bebjcb2g.xn--p1ai###page-footer
 xn----7sbalhqhjuihncyoq.xn--p1ai##.head__recall
 xn----7sbalhqhjuihncyoq.xn--p1ai##.product-card-badges
 
+! мясная-миска.рф
+xn----7sbb5akicf9af1md.xn--p1ai##[class$=__positionfixed]
+xn----7sbb5akicf9af1md.xn--p1ai##[class$=right-mobile]:has(button)
+
 ||xn----7sbbnhrpcfpibrobpr6b1n.xn--p1ai/*/rek_fixed.js
 xn----7sbbnhrpcfpibrobpr6b1n.xn--p1ai###rek_fixed
 xn----7sbbnhrpcfpibrobpr6b1n.xn--p1ai##noindex
@@ -33201,6 +33294,9 @@ xn----7sbfmr1adiv9a.xn--p1ai##.custom-header.header-middle
 ! мастер-стол.рф
 xn----7sbpzbpmgdge.xn--p1ai##.g_button
 
+! собачкинажрачка.рф
+xn--80aaaab6ampe0ag5ae1gh.xn--p1ai##.smotreli
+
 ! пятаяпередача.рф
 xn--80aaaoea1ebkq6dxec.xn--p1ai##.interactive-widget
 
@@ -33245,6 +33341,10 @@ xn--80aiikwliqi.xn--80ao21a##.b-user-content:has-text(Надежное сотр�
 ! ужаль.рф
 xn--80alq3a0c.xn--p1ai$inline-script  # site breaks copypaste
 ||ужаль.рф$inline-script  # site breaks copypaste
+
+! москорма.рф
+xn--80atfbibof.xn--p1ai##.frm_lead
+||cdnvideo.ru$image,domain=xn--80atfbibof.xn--p1ai  # баннеров там сильно перебор. Да, часть полезных картинок уходит, но баннеров сильно больше
 
 xn--80avc2av3a.xn--p1ai##.header
 
