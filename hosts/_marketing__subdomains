@@ -723,7 +723,7 @@ beacon.walmart.com  # from EasyPrivacy
 beacon.walmart.com.akadns.net
 beacon.wikia-services.com  #https://beacon.wikia-services.com/__track/
 
-/br.$domain=~alfabank.ru|~chess.com
+/br.$domain=~alfabank.ru|~chess.com|~lichess.org
 
 ||browser-update.  # from uBlock filters - Badware: ||browser-update.*.top^
 
@@ -939,6 +939,7 @@ counter.aport.ru  # from Dan Pollock's hosts file
 counter.bloke.com   # +  # from Dan Pollock's hosts file
 counter.drom.ru  # is in EasyPrivacy
 counter.kaspersky.com  # from Dan Pollock's hosts file
+counter.kuper.ru
 counter.kupiprodai.ru  # 3p ad scripts
 counter.megagroup.ru  # 3p ad scripts
 counter.nn.ru  # from Adguard
@@ -4588,6 +4589,9 @@ zoomumba.bigpoint.com  # from Adguard
 
 !amptrack.bild.de  # Google Amp - Tracker  # from Quidsup NoTrack-Blocklist
 
+sstats.bitdefender.com  # from EasyPrivacy
+  sstats.bitdefender.com$xhr,redirect=noop.txt,important  # from EasyPrivacy
+
 analytics-ingress-global.bitmovin.com  # root seems legit  # from Dan Pollock's hosts file
 licensing.bitmovin.com
 
@@ -5094,6 +5098,8 @@ fp-it-tracker.fengkongcloud.com  # don't block root, it needed for Deepseek  # f
 id.ferra.ru  # ad xhrs
 
 !mdsngpush.finanzen.net  # ad push  # is in Fanboy's
+
+ga.finam.ru  # from EasyPrivacy: ||ga.finam.ru/metrics
 
 engine.findaphd.com  # from Adguard
 
@@ -5740,6 +5746,7 @@ rotabanner.kulichki.net  # from EasyList
 
 !intelliworker.kupivip.ru  # from Adguard
 
+chat-widget.kuper.ru
 sentry-ingest.kuper.ru
 
 athena.api.kwalee.com  # from Adguard
@@ -7155,6 +7162,8 @@ botd2.wordpress.com  #[WebBug]  # from MVPS
 !s0.wp.com - don't block
 sherlockedgeek.wordpress.com
 
+# ostrovok tech domain
+da.worldota.net  # da.worldota.net/lib/dadl/latest/dadl.min.js
 dap.worldota.net  # tracking post xhrs : dap.worldota.net/api/v1/ingest
 
 s1.wp.com  # from EasyList
