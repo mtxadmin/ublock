@@ -1177,10 +1177,11 @@ _banner_rotator.php  # from Adguard
 /jquerymin18.js  # from Adguard
 /jsmd.min.js$important
 /js.ng/*  # from CJX's EasyList Lite, modified
-/landing/*$domain=~gosuslugi.ru|~etutorium.com|~menunedeli.ru|~mts-link.ru|~qiwi.com|~pruffme.com|~univerpp.ru|~univer-pp.ru|~walletone.com|~music.yandex.*
+/landing/*$domain=~gosuslugi.ru|~etutorium.com|~menunedeli.ru|~mts-link.ru|~ozon.*|~ozone.ru|~qiwi.com|~pruffme.com|~univerpp.ru|~univer-pp.ru|~walletone.com|~music.yandex.*
     ! Exclusions:
     ! menunedeli.ru - main css and imgs in /landing/ path
     ! mts-link.ru - webinar service
+    ! ozon - marketplace, in general it is false-positive, useful css&scripts
     ! pruffme.com - webinar service (not only used by spammers)
     ! music.yandex.ru - not landings, these urls are API-driven (api.music.yandex.ru/landing/block/chart?limit=10 , api.music.yandex.ru/landing/block/editorial/new-releases/ALL_albums_of_the_month)
 /landings/*
@@ -1367,7 +1368,7 @@ _rebid.js  # from EasyList
 /rotban/*  # from Adguard: /rotban/rotator.js
 /RTABlur*$script
 /RTAModal*$script
-/rtr/*$script,important
+/rtr/*$script,all,important
     ! ||am/rtr/$script  # from Ru AdList
     ! ||biz/rtr/$script  # from Ru AdList
     ! ||by/rtr/$script  # from Ru AdList
@@ -1383,7 +1384,7 @@ _rebid.js  # from EasyList
     ! ||org/rtr/$script  # from Ru AdList
     ! ||pl/rtr/$script  # from Ru AdList
     ! ||ro/rtr/$script  # from Ru AdList
-    ! ||ru/rtr/$script  # from Ru AdList
+    ! ||ru/rtr/$script,xmlhttprequest  # from Ru AdList
     ! ||so/rtr/$script  # from Ru AdList
     ! ||tv/rtr/$script  # from Ru AdList
     ! ||ua/rtr/$script  # from Ru AdList
@@ -2797,6 +2798,7 @@ _chartbeat.js  # from EasyPrivacy
 /cycounter^  # from Ru AdList
 .d-engine.js  # from EasyPrivacy
 /detectmobilebrowser.js
+/detector.js
 /devicepx-jetpack.js$important  # https://wordpress.org/support/topic/remove-render-blocking-javascript-devicepx-jetpack-js/
 -didomi.js  # from EasyPrivacy
 /discourse-fingerprint_  # from EasyPrivacy
