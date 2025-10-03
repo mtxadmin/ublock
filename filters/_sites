@@ -1586,6 +1586,7 @@ amalgama-lab.com##.title
 amalgama-lab.com##.forest
     ! other
 
+! amazon.com, amazon.com.au, amazon.ca, amazon.co.uk, amazon.in, amazon.sa, ...
 ||amazon.com/gp/cerberus  # trackers?
 ||ssl-images-amazon.com/images/*/dasf-  # is in EasyList
 ||amazon.*/ajax/counter?  # from EasyPricacy
@@ -1594,22 +1595,23 @@ amalgama-lab.com##.forest
 ||a2z.com/x.png  # tracking
 @@||amazon.*/*uedata$first-party,image,badfilter  # No exclusion for amazon. Also added $important up in general rules
     ! popups
-amazon.com##.nav-flyout
+amazon.*##.nav-flyout
+amazon.*##.nav-nav-assistant
     ! banners and promos
-amazon.com##.a-carousel
+amazon.*##.a-carousel
 ! errors 500 from EU with dog pictures
-amazon.com##[href^="/dogsofamazon"]
+amazon.*##[href^="/dogsofamazon"]
     ! top
-amazon.com###shortcut-menu
+amazon.*###shortcut-menu
     ! other
 ! see in _marketing: fls-na.amazon.com$important
 ! see in _marketing: cloudfront-labs.amazonaws.com$important
-amazon.com##.nav-flyout.nav-coreFlyout.glow-toaster-slot-default.glow-toaster-theme-default.glow-toaster.a-section
-amazon.com##.rhf-border
-amazon.com##.unified_widget
-amazon.com###cerberusVotingContainer
-amazon.com###detail-ilm_div
-amazon.com###woodstock-detail
+amazon.*##.nav-flyout.nav-coreFlyout.glow-toaster-slot-default.glow-toaster-theme-default.glow-toaster.a-section
+amazon.*##.rhf-border
+amazon.*##.unified_widget
+amazon.*###cerberusVotingContainer
+amazon.*###detail-ilm_div
+amazon.*###woodstock-detail
 aws.amazon.com##.m-nav-panel-exits
 aws.amazon.com##.lb-blog-nav:style(position:static !important)
 aws.amazon.com###aws-page-content:style(margin-top:0px !important; padding-top:0px !important)
@@ -2391,6 +2393,8 @@ assistentus.ru##.sb-slidebar:style(position:absolute !important)
 assistentus.ru##.promo_bottom
 assistentus.ru##.footer_level_two
 assistentus.ru##.index_subscribe
+assistentus.ru##.tg_widget
+assistentus.ru##.sb-slidebar:style(position:static !important)
 
 assistive.site##.subheader:style(position:static !important)
 
@@ -5097,6 +5101,8 @@ centrahubcrm.com##.circle-ripple
 centrash.ru##[href="pochta_bank.html"]
 
 centr-hirurgii.ru##.pop-up-overlay
+
+centrmag.ru##.js-consent.b-consent
 
 centrparts.com##.header
 centrparts.com##.site-branding
@@ -8234,7 +8240,7 @@ e-katalog.ru##.fix-menu-position
 e-katalog.ru##.fix-menu
 e-katalog.ru##.stripe-recommended.side-menu
 ! other
-/nadavi-api/*  # e-katalog.ru & nadavi.ru
+!/nadavi-api/*  # e-katalog.ru & nadavi.ru  # moved to marketing
     ! ||basetop.ru/nadavi-api/
     ! ||topmira.com/nadavi-api/
 
@@ -13556,6 +13562,7 @@ intezer.com##.dashboard-overlay
 intickets.ru##*:style(user-select:initial !important)
 ! stuck scroll
 intickets.ru##div:remove-class(scroller-inner)
+intickets.ru##.page-header:style(position:static !important)
 
 intrepidintegration.com###animatedComponent
 
