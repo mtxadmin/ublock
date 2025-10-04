@@ -18,13 +18,13 @@
 ! крайне часто использующихся для мошеннических схем,
 ! распространения навязчивой рекламы и вирусов.
 !
-changeip.name$third-party
-chickenkiller.com$important,third-party
+changeip.name$third-party,all
+chickenkiller.com$important,third-party,all
 ||dyndns-$third-party,script,subdocument
 ||dyndns.$third-party,script,subdocument
-itsaol.com$third-party
-quelliclub.ru$third-party  # Checked:2024-08-05
-servebbs.net$third-party
+itsaol.com$third-party,all
+quelliclub.ru$third-party,all  # Checked:2024-08-05
+servebbs.net$third-party,all
 !
 ||asia^$third-party,script,subdocument,xmlhttprequest,domain=~gallerix.org
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~forum.worldofwarships.ru|~hdvbplayer.tk|~live-gol.net|~philips.ru|~softpir.com|~sportings.pw|~sportsvideoline3.pw|~tefal.ru|~videosofsport1.pw|~xn--drakulastrem-b7e.com
@@ -396,8 +396,8 @@ ehost.tj$3p  # from Ru AdList
 ! e-katalog.ru & nadavi.ru
 e-katalog.ru##.fix-shadow.fix-preset
 e-katalog.ru$3p,important  # ad scripts from e-katalog.ru
-nadavi.ru$important  # задолбали. Также см. в _aliexpress
-nadavi.net$important  # from Adguard
+!nadavi.ru$important  # задолбали. Также см. в _aliexpress  # moved to _marketing
+!nadavi.net$important  # from Adguard  # moved to _marketing
 
 embrace.io$3p
 
@@ -1350,6 +1350,8 @@ weebly.com$3p  # many spam subdomains and empty root  # from Energized Blu, Good
 week.news$3p  # is in RU AdList
 
 wfolio.ru$third-party,script  # ad scripts
+
+whomyip.com$third-party  # from EasyPrivacy
 
 wi-fi.ru$3p  # ad banners and cross-site ad scripts  # static.wi-fi.ru/mtt/banners/  #https://static.wi-fi.ru/mtt/banners/libs/1.5.3/all.js
 
