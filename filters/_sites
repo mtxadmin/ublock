@@ -1591,7 +1591,9 @@ amalgama-lab.com##.title
 amalgama-lab.com##.forest
     ! other
 
-! amazon.com, amazon.com.au, amazon.ca, amazon.co.uk, amazon.in, amazon.sa, ...
+! amazon.ae|amazon.ca|amazon.cn|amazon.co.jp|amazon.co.uk|amazon.com|amazon.com.au|amazon.de|amazon.es|amazon.fr|amazon.in|amazon.nl|amazon.sg
+! + amazon.sa, ...
+! + aboutamazon.com|amazon.*|amzn.to
 ||amazon.com/gp/cerberus  # trackers?
 ||ssl-images-amazon.com/images/*/dasf-  # is in EasyList
 ||amazon.*/ajax/counter?  # from EasyPricacy
@@ -2786,6 +2788,8 @@ autonews.ru##.item-car-service
 autonews.ru##.js-header-popup
 autonews.ru##.header__rubric__popup
 autonews.ru##.bottom-menu
+! inline related
+autonews.ru##.js-theme-materials.article__related
 
 auto-online.ru##.paralax
 auto-online.ru##.slider
@@ -2964,6 +2968,7 @@ avidreaders.ru##.footer
 ||avito.ru/*/build/modern/clickstream
 ||avito.st/*/build/modern/clickstream
 ||avito.ru/dstatic/j/mon-check.js
+||avito.ru/js/recommendations  # suspicious posts
     ! unstick top
 !avito.ru##*:matches-css(position:sticky):style(position:static !important) - моргает
 avito.ru##[class*=index-stickyHeader]:style(position:static !important)
@@ -5890,6 +5895,12 @@ comebuy.cc##.rh-sticky-container.sidebar
 
 comflot.ru##.description
 
+||comfy.ua/media/promo_category/backgrounds/$image
+comfy.ua##.stories-banners
+comfy.ua##.str-ban
+comfy.ua##.prom-cat-wdgt
+comfy.ua##.promo-category-widget
+
 comidoc.net##.jss111
 comidoc.net##.MuiButton-sizeLarge
 comidoc.net##.MuiPaper-root
@@ -7558,6 +7569,8 @@ dream-russo.dreamwidth.org###header
 
 dricar.ru##.name
 dricar.ru##.avatar
+
+||driff.ru/aj/action_analytics.php
 
 drimsim.com##.intro.block
 drimsim.com##.menu:style(position:static !important)
@@ -22668,7 +22681,10 @@ profesia.cz##.popoffer-box
 !inline subscribe
 profesia.cz##.native-agent
 
-||profi.ru/clientLogger/
+||profi.ru/clientLogger
+    ! ||profi.ru/clientLogger/
+    ! ||profi.ru/clientLogger?
+||profi.ru/profi_q_sttc/  # suspicious scripts with id
 profi.ru##.wizard-landing-conversion_fixed:style(position:fixed !important)
 ! top banner
 profi.ru##.whoweare
