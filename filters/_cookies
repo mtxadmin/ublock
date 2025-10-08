@@ -524,7 +524,8 @@
 !*##+js(cookie-remover, i) - don't block
     sso.dzen.ru##+js(cookie-remover, i)
     ya.ru##+js(cookie-remover, i)
-    yandex.ru##+js(cookie-remover, i)
+    ! on disk.yandex.ru there is internal redirect and script abort loading. Maybe on some other yandex services too, need to watch
+    ~disk.yandex.ru,yandex.ru##+js(cookie-remover, i)
 !
 ! is_gdpr and is_gdpr_b are not present in the links above but exists in some pivacy policies.
 ! view-source:https://notify.events/en/blog/wix-notifications-setup-guide
