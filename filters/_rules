@@ -1512,11 +1512,11 @@ _rebid.js  # from EasyList
 !/widget.min.js$important,domain=~sbis.ru
 /widget/*$~stylesheet,domain=~tickets.afisha.ru|~alfabank.ru|~contacts.google.com|~hypercomments.com|~hse.ru|~alicdn.com|~arcgis.com|~domclick.ru|~ozon.ru|~ozon.by|~ozon.com|~rzd.ru|~sbis.ru  # v2
     ! Exclusions:
-    ! alfabank.ru: useful inner widgets
     ! tickets.afisha.ru: tickets.afisha.ru/wl/widget/ seems useful
+    ! alfabank.ru: useful inner widgets
+    ! contacts.google.com: contacts.google.com/widget/ seems useful
     ! ozon: useful inner widgets
     ! rzd : useful inner widgets
-    ! contacts.google.com: contacts.google.com/widget/ seems useful
 /widget-a-b.js  # from Ru AdList
 /widgets/*$~stylesheet,domain=~aliexpress.com|~aliexpress.ru|~banki.ru|~dns-shop.ru|~domclick.ru|~embedly.com|~gosuslugi.ru|~leroymerlin.ru|~sberbank.ru|~sbis.ru
     ! Exclusions:
@@ -2781,7 +2781,13 @@ _chartbeat.js  # from EasyPrivacy
 /count.js
 /count.php  # from Ru AdList
 ^counter.$image,3p  # from Ru AdList
-/counter^$important  # from RU AdList, modified
+/counter^$important,domain=~bitrix24.*  # from RU AdList, modified
+    ! Exclusions:
+    ! Bitrix24 - internal counters. But, just to be sure:
+        ||bitrix24.com/*/counter$3p
+        ||bitrix24.net/*/counter$3p
+        ||bitrix24.ru/*/counter$3p
+    !
 /counter_$domain=~images.stopgame.ru  # from Ru AdList
     ! Exclusions:
     ! images.stopgame.ru - false positive at https://stopgame.ru/game/counter_strike_source  # https://github.com/easylist/ruadlist/issues/61
