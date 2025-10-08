@@ -1746,13 +1746,16 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ##img[alt^="Share this"]
 ! from Fanboy's
 ##img[alt^="Share This"]
-~clickmeeting.com,~votesmart.appspot.com,~mts-link.ru,~webinar.ru##[class*="Sharing"]:not(html):not(body):not(article)
-~clickmeeting.com,~votesmart.appspot.com,~mts-link.ru,~webinar.ru##[id*="Sharing"]:not(html):not(body):not(article)
-~clickmeeting.com,~votesmart.appspot.com,~linkedin.com,~drive.google.com,~mts-link.ru,~webinar.ru##[class*="sharing"]:not(html):not(body):not(article):not(.sharing-enabled):not(#device-sharing):not(#folder-sharing)
-~clickmeeting.com,~votesmart.appspot.com,~linkedin.com,~mts-link.ru,~webinar.ru##[id*="sharing"]:not(html):not(body):not(article):not(#device-sharing):not(#folder-sharing)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~webinar.ru##[class*="Sharing"]:not(html):not(body):not(article)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~webinar.ru##[id*="Sharing"]:not(html):not(body):not(article)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~webinar.ru##[class*="sharing"]:not(html):not(body):not(article):not(.sharing-enabled):not(#device-sharing):not(#folder-sharing)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~webinar.ru##[id*="sharing"]:not(html):not(body):not(article):not(#device-sharing):not(#folder-sharing)
     ! Exclusions:
+    ! bitrix24 - internal widgets. But, just to be sure:
+        ||bitrix24.com/*/sharing$3p
+        ||bitrix24.net/*/sharing$3p
+        ||bitrix24.ru/*/sharing$3p!
     ! mts-link.ru, webinar.ru - screensharing*, main div
-!
 !
 ! ends with -soc
 ##[class$="-soc"]:not(html):not(body):not(article)
