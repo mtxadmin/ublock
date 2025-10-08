@@ -2393,11 +2393,17 @@ _tizers.  # from Ru AdList
 ://promo.$3p
 /app.promo*$script
 /load-promo/*  # from Ru AdList
-/promo.$important
+/promo.$important,domain=~bitrix24.*
     ! /promo.js$important
     ! /promo.php
 /promo?
-/promo/*$~stylesheet,domain=~livejournal.com|~mts.ru  # mts.ru loads non-ad /Promo/ links in lk
+/promo/*$~stylesheet,domain=~bitrix24.*|~livejournal.com|~mts.ru  # mts.ru loads non-ad /Promo/ links in lk
+    ! Exclusions:
+    ! bitrix24 - internal sh*t. But, just to be sure:
+        ||bitrix24.com/*/promo$3p
+        ||bitrix24.net/*/promo$3p
+        ||bitrix24.ru/*/promo$3p
+    !
     ! /promo/impression?  # from EasyPrivacy
 /promo_b/*  # from Adguard: /images/promo_b/*
 /promobanner
@@ -2684,14 +2690,20 @@ volveter.ru##.has_offer_prop
 /amp-geo-  # from EasyPrivacy
 _analytics.js?  # from EasyPrivacy
 .analytics.min.  # from EasyPrivacy
-/analytics^
+/analytics^$domain=~bitrix24.*
+    ! Exclusions:
+    ! bitrix24 - internal sh*t. But, just to be sure:
+        ||bitrix24.com/*/analytics$3p
+        ||bitrix24.net/*/analytics$3p
+        ||bitrix24.ru/*/analytics$3p
 /analytics?
     ||hh.ru/analytics^  # is in Adguard
     ||career.ru/analytics^
     ||rabota.by/analytics?  # is in EasyPrivacy
-/analytics/$important,domain=~alfabank.ru|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~gitlab.com|~globalvoices.org|~mts-link.ru|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~webinar.ru|~market.yandex.ru|~zoho.com|~zoho.eu
+/analytics/$important,domain=~alfabank.ru|~bitrix24.*|~dropbox.com|~duckduckgo.com|~fandom.com|~github.com|~gitlab.com|~globalvoices.org|~mts-link.ru|~ozon.ru|~rome2rio.com|~sberbank.ru|~trello.com|~twitch.tv|~x.com|~twitter.com|~twimg.com|~webinar.ru|~market.yandex.ru|~zoho.com|~zoho.eu
     ! Exclusions:
     ! alfabank - финансовая аналитика по счету
+    ! bitrix24 - internal sh*t. See just above
     ! duckduckgo - it blocks any search about analytics. Other search systems are ok.
     ! github - granular rules:
         ! ||githubassets.com/assets/vendors-node_modules_github_hydro-analytics  # analytics  # this one must be unblocked - some functionality is broken (labels and editing)
