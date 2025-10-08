@@ -869,8 +869,12 @@ _adverts.js  # from EasyList
 /banery/*
 /%21banery/*
 !old ver: /banner*$important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~webinar.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it. Update: maybe asterisk was needed
-/banner*$all,important,domain=~archive.org|~doshirak.com|~gosuslugi.ru|~ktalk.ru|~mts-link.ru|~qwen.ai|~sberbank.ru|~sbis.ru|~webinar.ru|~wildberries.*
+/banner*$all,important,domain=~archive.org|~bitrix24.*|~doshirak.com|~gosuslugi.ru|~ktalk.ru|~mts-link.ru|~qwen.ai|~sberbank.ru|~sbis.ru|~webinar.ru|~wildberries.*
     ! Exclusions:
+    ! bitrix24 - internal banners module. But, just to be sure:
+        ||bitrix24.com/*/banner$3p
+        ||bitrix24.net/*/banner$3p
+        ||bitrix24.ru/*/banner$3p
     ! gosuslugi.ru - rus gov service portal
     ! ktalk.ru - internal banners on a webinar service
     ! mts-link.ru, webinar.ru - rus webinars, doesn't work without
@@ -2782,8 +2786,9 @@ _chartbeat.js  # from EasyPrivacy
 /count.php  # from Ru AdList
 ^counter.$image,3p  # from Ru AdList
 /counter^$important,domain=~bitrix24.*  # from RU AdList, modified
+    ! Also see ||counter. rule in _marketing__subdomains - now it specifical to subdomains
     ! Exclusions:
-    ! Bitrix24 - internal counters. But, just to be sure:
+    ! bitrix24 - internal counters. But, just to be sure:
         ||bitrix24.com/*/counter$3p
         ||bitrix24.net/*/counter$3p
         ||bitrix24.ru/*/counter$3p
