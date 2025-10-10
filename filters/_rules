@@ -869,7 +869,7 @@ _adverts.js  # from EasyList
 /banery/*
 /%21banery/*
 !old ver: /banner*$important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~webinar.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it. Update: maybe asterisk was needed
-/banner*$all,important,domain=~archive.org|~bitrix24.*|~doshirak.com|~gosuslugi.ru|~ktalk.ru|~mts-link.ru|~qwen.ai|~sberbank.ru|~sbis.ru|~webinar.ru|~wildberries.*
+/banner*$all,important,domain=~archive.org|~bitrix24.*|~doshirak.com|~gosuslugi.ru|~ktalk.ru|~livejournal.com|~mts-link.ru|~qwen.ai|~sberbank.ru|~sbis.ru|~webinar.ru|~wildberries.*
     ! Exclusions:
     ! bitrix24 - internal banners module. But, just to be sure:
         ||bitrix24.com/*/banner$3p
@@ -877,6 +877,7 @@ _adverts.js  # from EasyList
         ||bitrix24.ru/*/banner$3p
     ! gosuslugi.ru - rus gov service portal
     ! ktalk.ru - internal banners on a webinar service
+    ! livejournal.com - rus blog service, merged css
     ! mts-link.ru, webinar.ru - rus webinars, doesn't work without
     ! qwen.ai - chatbot, not embedded, just single-user AI. chat.qwen.ai/api/v1/configs/banners
     ! wildberries.ru/by/kg - russian marketplace, needs tuning
