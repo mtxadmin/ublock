@@ -3266,8 +3266,11 @@ _wtInit.js  # from Fanboy's
 ##.article__meta__post-views
 ##.article-views
 ##.blog-views
-~yandex.*##.counter
-~turbopages.org,~yandex.*##.counters
+ktalk.ru,~turbopages.org,~yandex.*##.counter
+ktalk.ru,~turbopages.org,~yandex.*##.counters
+    ! Exclusions:
+    ! ktalk.ru - useful timers
+    ! yandex & their turbopages.org - don't remember, but something useful
 ##.count_views
 ##.count-visitor
 ##.entry-meta__views
@@ -4932,8 +4935,12 @@ _snowstorm-min.js  # from Ru AdList
     ! pruffme.com - webinar service, countdown to start
     ! rc.show - webinar service, countdown to start
     ! usersdrive.com - file service, countdown is needed to download
-~gosuslugi.ru##[class^="timer"]:not(html):not(body):not(article)
-~tomato-timer.com##[id^="timer"]:not(html):not(body):not(article)
+~gosuslugi.ru,~ktalk.ru,~tomato-timer.com##[class^="timer"]:not(html):not(body):not(article)
+~gosuslugi.ru,~ktalk.ru,~tomato-timer.com##[id^="timer"]:not(html):not(body):not(article)
+    ! Exclusions:
+    gosuslugi.ru - useful timers
+    ktalk.ru - useful timers
+    tomato-timer.com - useful timers
 ! ad countdowns
 ###county
 /county.js
