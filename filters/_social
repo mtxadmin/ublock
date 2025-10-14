@@ -88,7 +88,8 @@ make-1-btc-per-day.blogspot.no  # spam
 !
 an.facebook.com  # from Adguard
 api.facebook.com$third-party  # from Anti-Facebook
-badge.facebook.com$third-party  # from Anti-Facebook
+api-read.facebook.com$third-party
+badge.facebook.com$third-party  # from Anti-Facebook, EasyList
 graph.facebook.com$third-party,xmlhttprequest  # from Anti-Facebook
 ||graph.facebook.com/?id=$third-party  # from Anti-Facebook
 lithium.facebook.com  # from ShadowWhisperer's Chats
@@ -109,6 +110,21 @@ socialplugin.facebook.net  # from ShadowWhisperer's Chats
 ||facebook.com^*/like.php$important,domain=~facebook.com  # from Fanboy's
 ||facebook.com/*/plugins/$important,domain=~facebook.com  # from Adguard
 ||facebook.com/plugins/$important,domain=~facebook.com  # from Adguard and Anti-Facebook
+    ! ||facebook.com/plugins/share_button.php?$third-party  # from EasyList
+    ! ||facebook.com^*/plugins/share_button.php?$third-party  # from EasyList
+    ! ||facebook.com/plugins/activity.php?$third-party  # from EasyList
+    ! ||facebook.com/plugins/facepile.php?$third-party  # from EasyList
+    ! ||facebook.com/plugins/fan.php?$third-party  # from EasyList
+    ! ||facebook.com/plugins/follow.php$third-party  # from EasyList
+    ! ||facebook.com/plugins/like.php?$third-party  # from EasyList
+    ! ||facebook.com/plugins/like_box.php$third-party  # from EasyList
+    ! ||facebook.com/plugins/likebox/$third-party  # from EasyList
+    ! ||facebook.com/plugins/page.php?$third-party  # from EasyList
+    ! ||facebook.com/plugins/recommendations.php?$third-party  # from EasyList
+    ! ||facebook.com/plugins/send.php?$third-party  # from EasyList
+    ! ||facebook.com/plugins/subscribe.php$third-party  # from EasyList
+    ! ||facebook.com^*/plugins/like.php?$third-party  # from EasyList
+    ! ||facebook.com^*/plugins/page.php?$third-party  # from EasyList
 ||facebook.com/restserver.php?*.getStats&$third-party  # from Anti-Facebook
 ||api-read.facebook.com/restserver.php?api_key=$third-party  # from Anti-Facebook
 ||facebook.com/share/$third-party
@@ -513,7 +529,7 @@ vk.com##.TopHomeLink
 ! hosts
 ! comments are preferably inline with  #
 !
-badges.instagram.com$third-party  # Webpages - Icons  # from ShadowWhisperer's Bloat
+badges.instagram.com$third-party  # Webpages - Icons  # from ShadowWhisperer's Bloat, EasyList
 graph.instagram.com$third-party  # Instagram  # from ShadowWhisperer's Bloat  # also see graph.facebook.com
 survey.instagram.com$third-party  # Survey - Instagram  # from ShadowWhisperer's Bloat
 !
@@ -573,7 +589,7 @@ instagram.com##svg[aria-label="Instagram"]
 ! comments are preferably inline with  #
 !
 #api.ok.ru  # api.ok.ru$domain=~ok.ru|~odnoklassniki.ru  # update: don't. It needed for OK app
-connect.ok.ru$important  # from hpHosts’ Ad and tracking servers 
+connect.ok.ru$important  # from hpHosts, EasyList
 !
 !
 ! urls
@@ -1174,6 +1190,7 @@ dzen.ru##[class^=content--subscribe-banner]
 !
 ! hosts
 ! comments are preferably inline with  #
+platform.linkedin.com$third-party  # from EasyList
 !
 !
 ! urls
