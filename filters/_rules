@@ -1500,6 +1500,8 @@ _rebid.js  # from EasyList
 /videojs-contrib-ads.*$important
 /videojs-contrib-ads/*$important
 /videojs-share$important
+    ! @@||livesicilia.it/wp-content/plugins/digistream/digiplayer/js/videojs-share.min.js?$script,~third-party  # from EasyList
+    ! @@||qds.it/wp-content/plugins/digistream/digiplayer/js/videojs-share.min.js?$script,~third-party  # from EasyList
 /view.js$domain=~livejournal.com  # from Ru AdList and Adguard, modified
 /viewc.js  # from Ru AdList, modified
 /vinos.js?$important
@@ -1705,10 +1707,12 @@ _rebid.js  # from EasyList
     ! is in EasyList
     ##.advertisement-content
 ##[id*="advert"]:not(html):not(body):not(article)
-~aliexpress.com,~aliexpress.ru,~clickup.com,~dzen.ru,~ultimate-guitar.com,~westerndigital.com,~music.yandex.*##[class*="Banner"]:not(html):not(body):not(article):not(#Header)
+~alfabank.ru,~aliexpress.com,~aliexpress.ru,~clickup.com,~dzen.ru,~gosuslugi.ru,~ultimate-guitar.com,~westerndigital.com,~music.yandex.*##[class*="Banner"]:not(html):not(body):not(article):not(#Header)
     ! Exclusions:
+    ! alfabank - rus bank, some internal info
     ! clickup.com - main section, .hasBanner
     ! dzen.ru - .article-thematic-banners__articleThematicBanners-lP - это полезная кнопка, пусть будет. Плюс еще там текст статьи .article-render__withThematicBanners-7w, ну так. See #83
+    ! gosuslugi.ru - rus gov service, some internal info
     ! ultimate-guitar.com - main div (.SiteWideBanner)
     ! music.yandex.ru - main div (.WithTopBanner*)
 ##[id*="Banner"]:not(html):not(body):not(article)
