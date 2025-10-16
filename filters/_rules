@@ -2424,9 +2424,12 @@ _tizers.  # from Ru AdList
 /promo_tracking.  # from EasyPrivacy
 /promo_tracking/*  # from EasyPrivacy
 /searchpromote/*
-##[id*="Promo"]:not(html):not(body):not(article)
-##[class*="Promo"]:not(html):not(body):not(article)
-##[id*="promo"]:not(html):not(body):not(article)
+~chess.com,~lichess.org##[id*="Promo"]:not(html):not(body):not(article)
+~chess.com,~lichess.org##[class*="Promo"]:not(html):not(body):not(article)
+~chess.com,~lichess.org##[id*="promo"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! chess - promotion (pawn to)
+!
 ! too many exclusions
 !~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru,~redhat.com##[class*="promo"]:not(html):not(body):not(article)
     ! Exclusions:
@@ -2447,11 +2450,12 @@ _tizers.  # from Ru AdList
     ##.promo_line
     ##.promo_top
     ##.promo_widget
-##[id*="-promo"]:not(html):not(body):not(article)
-~5turistov.ru,~aliexpress.com,~aliexpress.ru,~funpay.com,~e.mail.ru,~psbank.ru,~stepik.org,~yoomoney.ru##[class*="-promo"]:not(html):not(body):not(article):not(.node-promoted):not(.content):not(.content__header)
+~5turistov.ru,~aliexpress.*,~chess.com,~funpay.com,~lichess.org,~e.mail.ru,~psbank.ru,~stepik.org,~yoomoney.ru##[id*="-promo"]:not(html):not(body):not(article)
+~5turistov.ru,~aliexpress.*,~chess.com,~funpay.com,~lichess.org,~e.mail.ru,~psbank.ru,~stepik.org,~yoomoney.ru##[class*="-promo"]:not(html):not(body):not(article):not(.node-promoted):not(.content):not(.content__header)
     ! Exclusions:
     ! 5turistov.ru - main: "mainContainer-inner promo-container container--promo js-promo-container js-main-container"
     ! cbsnews.com - "content__header  content__header--no-promo", but it has "yes-promos". Added ".content__header"
+    ! chess - promotion (pawn to)
     ! funpay.com - main: "content-promo content-promo-index"
     ! psbank.ru - cashback promos
     !
@@ -2466,8 +2470,8 @@ _tizers.  # from Ru AdList
     ! techport.ru##.techbonuses-promo-block-wrapper-parent
     ! travel.ru##.b-footer-mobile-app-promo-icon
     ! wildberries.ru##.j-promo-carousel-wrapper
-##[id*="promotion"]:not(html):not(body):not(article)
-~alibaba.com,~aliexpress.com,~aliexpress.ru,~chess.com,~mwave.com.au,~psbank.ru##[class*="promotion"]:not(html):not(body):not(article)
+~alibaba.com,~aliexpress.*,~chess.com,~lichess.org,~mwave.com.au,~psbank.ru##[id*="promotion"]:not(html):not(body):not(article)
+~alibaba.com,~aliexpress.*,~chess.com,~lichess.org,~mwave.com.au,~psbank.ru##[class*="promotion"]:not(html):not(body):not(article)
     ! Exclusions:
     ! alibaba.com, aliexpress.com - .promotion is a regular price, not a promo
     ! psbank.ru - not promos in common sense
