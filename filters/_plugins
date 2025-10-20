@@ -118,6 +118,8 @@
 
 /modules/advancedpopupcreator/*  # PrestaShop module
 
+/modules/advertisements/*$important  # from Adguard
+
 /modules/affiliate_links/*
 
 /modules/antibot/*
@@ -180,7 +182,7 @@
 
 /modules/gpt/*
 
-/modules/hifacebookconnect/*  # Drupal module
+/modules/hifacebookconnect/*$important  # Drupal module  # is in EasyList
 
 /modules/kixelltag/*  # from Adguard: /modules/kixelltag/views/js/kst-$script
 
@@ -366,6 +368,8 @@
 /plugins/additionalgoods/*
 
 /plugins/add-link-to-copied-text/*$important
+
+/plugins/addthis/*
 
 /plugins/addthis-all/*
 
@@ -1614,6 +1618,8 @@
 /plugins/lw-adblocker/*
 
 /plugins/mailchimp*  # also see mailchimp hosts in _marketing
+    ! /plugins/mailchimp-for-wp/
+        ##.mc4wp-form
     ! /plugins/mailchimp-top-bar/*
 /plugins/mc4wp-premium/*  # also see mc4wp.com
 
@@ -2301,7 +2307,7 @@
 
 /plugins/sitewide-message/*
 
-/plugins/slick-social-share-buttons/*  # from Ru AdList
+/plugins/slick-social-share-buttons/*  # from Ru AdList, EasyList
 
 /plugins/slide-anything/owl-carousel/*
 
@@ -2321,7 +2327,7 @@
 
 /plugins/smart-logo-showcase-lite/*
 
-/plugins/sme-facebook-likebox-sidebar/*  # from Ru AdList
+/plugins/sme-facebook-likebox-sidebar/*  # from Ru AdList, EasyList
 
 /plugins/smio-push-notification/*
     /smio-push-notification/*  # from Adguard
@@ -2594,7 +2600,7 @@
 
 /plugins/ultimate-social-media-icons/*
 
-/plugins/ultimate-social-media-plus/*$important  # from Adguard, Ru AdList
+/plugins/ultimate-social-media-plus/*$important  # from Adguard, Ru AdList, EasyList
 
 /plugins/ump-exacttarget/*$important  # see janrain.com
 
@@ -2723,6 +2729,17 @@
 /plugins/woocommerce-lottery-wordpress-prizes-and-lotteries/*
 /plugins/woocommerce-notification/*  # from EasyList
 /plugins/woocommerce-side-cart-premium/*
+    ! woocommerce top bar
+    ##.whb-top-bar
+    ! kolundrov.ru##.whb-top-bar
+    ! smartled.by##.whb-top-bar
+    ! xn----8sbybi8adi0d0ab.xn--p1ai##.whb-top-bar
+    *##.whb-main-header:style(position:static !important)
+    ! doogeephone.com##.whb-main-header:style(position:static !important)
+    ! xn----8sbybi8adi0d0ab.xn--p1ai##.whb-main-header:style(position:static !important)
+    *##.whb-general-header-inner:style(height:auto !important)
+    ! kolundrov.ru##.whb-general-header-inner:style(height:auto !important)
+    ! xn----8sbybi8adi0d0ab.xn--p1ai##.whb-general-header-inner:style(height:auto !important)
 
 @@/plugins/woodev-russian-post/*
 
@@ -2753,6 +2770,7 @@
 /plugins/wordpress-popup/*$important,~stylesheet  # from Ru AdList  # in Ru AdList there are exclusion for css. Hmm... Ok.
     ! @@||cdn.afk.guide/wp-content/plugins/wordpress-popup/assets/js/adb.min.js  # "hustle_optin_adBlock_detector"  # from Adguard
     ! ||media.fidoalliance.org/wp-content/plugins/wordpress-popup/$script  # from Adguard
+    ! ||hellointerior.jp/note/wp-content/plugins/wordpress-popup/assets/hustle-ui/js/hustle-ui.min.js  # from EasyList
     ! ||infomercado.pe/wp-content/plugins/wordpress-popup/assets/hustle-ui/js/hustle-ui.min.js  # from Adguard
     ! ||kleingeldhelden.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/js/hustle-ui.min.js$domain=kleingeldhelden.com  # from Adguard
     ! ||mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/js/front.min.js  # from Adguard
