@@ -1557,6 +1557,8 @@ alpindustria.ru###top-link
 
 alpinefile.ru###getfavor
 
+alpinequest.net##.title-card
+
     ! popups
 alser.kz##.ask-location
 alser.kz##.location-modal
@@ -1911,6 +1913,10 @@ anviks.ru##[id^=opener_call_request]
 anwb.nl##.PONCHO-navigation__logo
 
 any.do##.intercom-launcher__root
+
+anyconnect.com##.mega-menu-flyout
+anyconnect.com##.dl-pdf-main-container
+anyconnect.com##.njt-nofi-container
 
 ! bunch of image hostings (mirrors? looks like it is the same engine)
 anypictures.ru$inline-script
@@ -6788,6 +6794,8 @@ dialog.ua###fav
 dialog.ua##.news-content__title
 dialog.ua##.top-content-menu:style(margin-top:0px !important)
 
+dialuch.ru##.footer div:style(position:static !important)
+
 diamondelectric.ru###region_select
 diamondelectric.ru###region_select_bg
 
@@ -10782,8 +10790,12 @@ github.com##.gh-header-sticky
 github.com##.gh-header-shadow
 ! header is white - make its background black again
 github.com##.header-logged-out:style(background-color:black !important)
+github.com##[class*=HeaderMetadata-module__stickyContainer]
+github.com###sticky-sidebar-top-sentinel
+github.com###sticky-sidebar-bottom-sentinel
     ! fixed elements
 docs.github.com##.tooltipped
+github.com##[data-testid="sticky-sidebar"]:style(position:static !important)
     ! banners and promos
 github.com##.react-code-size-details-in-header:has-text(GitHub Copilot)
 github.com##[class^=types__StyledButton]:has-text(GitHub Copilot)
@@ -12080,17 +12092,17 @@ hft.ru##.footer__pay
 ||hhcdn.ru/uxfeedback/
 !
 ! "Automatic publicPath is not supported in this browser"
-hh.ru##+js(set, publicPath, empty)
-hh.ru##img[src^="data:image/png;base64,"]
-hh.ru##+js(addEventListener-defuser.js)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##+js(set, publicPath, empty)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##img[src^="data:image/png;base64,"]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##+js(addEventListener-defuser.js)
     ! popups
-hh.ru##[class^=wrapper]:has-text(приложении)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=wrapper]:has-text(приложении)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=overlay]
 ! update: устарело и цепляет лишнее
 !hh.ru##[class^=container--]
 ! задолбали продвигать свой автопоиск
-hh.ru##.supernova-notification:has-text(автопоиск)
-hh.ru##.supernova-navi-counter_dot-only
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-notification:has-text(автопоиск)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-navi-counter_dot-only
 !hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay - todo, there are some useful popups
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-modal-overlay:has-text(/(П|п)усть поднимает бот|бот в мессенджере/)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-scroll-container]:has-text(/(П|п)усть поднимает бот/)
@@ -12114,44 +12126,44 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-overlay]:has-text(/Разместим\s+его\s+в\s+Сетке/)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=floating-button]
     ! top
-hh.ru,career.ru##.HH-RelatedVacanciesPreview-StickyContainer
-hh.ru,career.ru##.navi__menu:style(position:static !important)
-hh.ru##.tmpl_hh_top:style(position:static !important)
-hh.ru##.tmpl_hh_content:style(margin-top:0px !important; margin-bottom:0px !important; background-color:initial !important)
-hh.ru##[class^=important-notifications]
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-button:style(color:initial !important; background:#fff !important)
-hh.ru##.peach-vac__header
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.HH-RelatedVacanciesPreview-StickyContainer
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.navi__menu:style(position:static !important)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_top:style(position:static !important)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmpl_hh_content:style(margin-top:0px !important; margin-bottom:0px !important; background-color:initial !important)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=important-notifications]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-button:style(color:initial !important; background:#fff !important)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.peach-vac__header
     ! banners and promos
 !hh.ru##.noprint - don't
-hh.ru##.resumesearch__registration
-hh.ru##.bloko-button:has-text(Рекомендация)
-hh.ru##.app-banner
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.banner-substrate
-! from RuAdlist
-hh.ru##.banner-place
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.resumesearch__registration
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-button:has-text(Рекомендация)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.app-banner
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.banner-substrate
+! from RuAdlist, modified
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.banner-place
 ||hh.ru/*/promo-banner-earn-money/
-hh.ru##.promo-banner-earn-money
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.promo-banner-earn-money
 ||hh.ru/*/mobile-banner$image  # old design
-hh.ru##.supernova-footer-mobile-banner
-hh.ru##div[class^=footer-mobile-banner]
-hh.ru##video
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-footer-mobile-banner
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##div[class^=footer-mobile-banner]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##video
 ||hhcdn.ru/file/*.mp4
-hh.ru##.HH-SmartBanner
-hh.ru##.HH-SmartBanner-Button
-hh.ru##.smartbanner
-hh.ru##.smartbanner__content
-hh.ru##.swiper-wrapper
-hh.ru##.applicant-services-slider
-hh.ru##.applicant-services-slider-container
-hh.ru##.work-in-company-banner
-hh.ru##.supernova-dropdown-badge
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.HH-SmartBanner
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.HH-SmartBanner-Button
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.smartbanner
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.smartbanner__content
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.swiper-wrapper
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.applicant-services-slider
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.applicant-services-slider-container
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.work-in-company-banner
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-dropdown-badge
 ! inline
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-serp-subscription
-hh.ru##[class^=infoblock]
-!hh.ru##[class^=infoblock--]
-hh.ru##[class^=infoblock-content--]
-hh.ru##.vacancy-description > .bloko-text
-hh.ru##.bloko-button:has-text(руб)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-serp-subscription
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=infoblock]
+!hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=infoblock--]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=infoblock-content--]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-description > .bloko-text
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-button:has-text(руб)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg###animation
 ! promo
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##button[data-qa="negotiations-vacancy_summary"]
@@ -12178,53 +12190,55 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(Поднимать автоматически)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(/(П|п)однимать автоматически|(П|п)усть поднимает бот/)
 ! promos (social)
-hh.ru##[class^=setka-container]
-hh.ru##[class*=wrapper-]:has([class*=big-promo-])
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=setka-container]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=wrapper-]:has([class*=big-promo-])
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=banner-container]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=footer-app-banner]
     ! logos
 /employer-logo/$image,domain=hh.ru|career.ru|hh.by|rabota.by|hh.kz|hh.uz|hh1.az|hh.ua|grc.ua|headhunter.ge|headhunter.kg
   ! ||hhcdn.ru/employer-logo/$image
   ! ||hh.ru/employer-logo/$image
   ! ||hh.kz/employer-logo/$image
 ||hh.ru/logos/$image
-hh.ru##.idc-logo-block
-hh.ru##.tmplt_hh-logo
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=footer-nav-logo]
-hh.ru##.employer-sidebar__logo-container
-hh.ru##[class^=logo-]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.idc-logo-block
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.tmplt_hh-logo
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=footer-nav-logo]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.employer-sidebar__logo-container
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=logo-]
     ! socials
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-gap_top:has-text(Вход через соцсети)
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-form-item:has-text(через соцсеть)
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.account-login-social-icons
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_small
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_mail
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_ok
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_fb
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_vk
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_li
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_gplus
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_dnr
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-gap_top:has-text(Вход через соцсети)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-form-item:has-text(через соцсеть)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.account-login-social-icons
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_small
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_mail
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_ok
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_fb
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_vk
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_li
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_gplus
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-social-icon_dnr
 ||i.hh.ru/css/globals/blocks/dashboard-tiles/viber__min_.svg
     ! apps
 ||hh.ru/*/index-messengers-bots/
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.messengers-bots-qr-code
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.messengers-bots-qr-code-wrapper
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-footer-nav-mobile
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-app-buttons
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=mobile-app-button]
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.stay-in-touch
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=qr-code--]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.messengers-bots-qr-code
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.messengers-bots-qr-code-wrapper
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-footer-nav-mobile
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-app-buttons
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=mobile-app-button]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.stay-in-touch
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=qr-code--]
     ! counters
 ! inadequate counter
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-form-row:has(.vacancy-viewers-count)
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##span:has-text(/^смотрят$/)
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-viewers-count
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=online-users]
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=count--]
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-navi-counter_dot-only
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-viewers-count
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.noprint > div:has-text(Сейчас эту вакансию)
-hh.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_typography-label-4-regular]:has-text(Сейчас смотр)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.bloko-form-row:has(.vacancy-viewers-count)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##span:has-text(/^смотрят$/)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-viewers-count
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=online-users]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=count--]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-navi-counter_dot-only
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-viewers-count
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.noprint > div:has-text(Сейчас эту вакансию)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_typography-label-4-regular]:has-text(Сейчас смотр)
 !hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_style-secondary] - too broad
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-text_style-secondary]:has-text(Сейчас эту вакансию)
     ! different promo blocks (not all!)
@@ -12304,24 +12318,24 @@ hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhun
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=vacancy-response-questions]
     ! other
 ! spam vacancies
-hh.ru,career.ru##div.vacancy-serp-item:has-text(/Компьютерный мастер|Мастер по ремонту компьютеров|Выездной системный администратор|выезды к клиентам/)
-hh.ru##.account-login-social-icon
-hh.ru##.applicant-phone-container
-hh.ru##div.serp-special
-hh.ru##.supernova-dashboard-footer
-hh.ru##.related-vacancies-preview_sticky:style(position:static !important)
-hh.ru##.idc-head
-hh.ru##.idc-footer
-hh.ru##.index-section-vacancies-of-the-day
-hh.ru##.vacancy-serp-sticky-filters-button
-hh.ru##[class*=blocked-activator]
-hh.ru##[class^="error-picture-"]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##div.vacancy-serp-item:has-text(/Компьютерный мастер|Мастер по ремонту компьютеров|Выездной системный администратор|выезды к клиентам/)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.account-login-social-icon
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.applicant-phone-container
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##div.serp-special
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.supernova-dashboard-footer
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.related-vacancies-preview_sticky:style(position:static !important)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.idc-head
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.idc-footer
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.index-section-vacancies-of-the-day
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.vacancy-serp-sticky-filters-button
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=blocked-activator]
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^="error-picture-"]
 ! pic
-hh.ru##[class^=backplate-module]:has([class^=picture-widget-module])
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=backplate-module]:has([class^=picture-widget-module])
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class*=magritte-card-style-secondary]:has-text(/Продвижение резюме|нашими экспертами/)
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-wrap-container]:has([class^=magritte-scroll-wrapper])
-hh.ru##.marquee2
-hh.ru##button:style(color:initial !importnant)
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##.marquee2
+hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##button:style(color:initial !importnant)
 ! Похоже на кнопки "купить" в общем списке продуктов во многих интернет-магазинах. Может, сначала всё-таки зайти и описание прочитать?
 hh.ru,hhcdn.ru,career.ru,hh.by,rabota.by,hh.kz,hh.uz,hh1.az,hh.ua,grc.ua,headhunter.ge,headhunter.kg##[class^=magritte-button]:has-text(/Откликнуться|Связаться/):matches-path(/search/vacancy)
 
@@ -14136,6 +14150,8 @@ jango.com###songpicking-intro
 jango.com###main-logo
 
 japantoday.com##.widget--animated
+
+jasonschaefer.com##header
 
 ||jauns.lv/backgrounds/$image
 ! top
@@ -24141,6 +24157,9 @@ researchgate.net##.lite-page::before
 
 resellerspanel.com##.top-wrap:style(position:static !important)
 
+resilio.com###sidebar_form
+resilio.com##.w-nav.s-navbar-block:style(position:static !important)
+
 ||resistance.today/templates/resistancetoday/images/object559494904.png
 resistance.today###up
 
@@ -24912,6 +24931,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2014/0603/fd/3ebc65f8fbafba189be309404e6ffffd.$image
 ||fastpic.org/big/2014/0604/5c/ef2df013f360ee551e0a7fdbd63a115c.$image
 ||fastpic.org/big/2014/0605/e3/9075d1b50d314d568f20f2d7422dcce3.$image
+||fastpic.org/big/2014/0608/1b/201db65f423807346aff7ed4f0c59d1b.$image
 ||fastpic.org/big/2014/0828/53/7015072392eb0c9f37f64ccdfe83c953.$image
 ||fastpic.org/big/2014/0911/f7/f071114dc838a3dc45eb4905bf1d72f7.$image
 ||fastpic.org/big/2014/0928/8e/857466829f2ce49581748c58db009c8e.$image
@@ -25143,8 +25163,10 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2023/1231/9c/ca7535b9082693c4b159f6f79758739c.$image
 ||fastpic.org/big/2024/0127/c3/55b73d80232c8eb87161177a29d43fc3.$image
 ||fastpic.org/big/2024/0414/40/f43872717994be71e9791d2280882c40.$image
+||fastpic.org/big/2024/0622/49/9df33895e4cc5e62a7185a5e49480e49.$image
 ||fastpic.org/big/2024/0806/3f/8df632c2a9e203423b85ba71689a753f.$image
 ||fastpic.org/big/2024/0911/77/5efb3825b9d04376f88f180742d2f377.$image
+||fastpic.org/big/2014/1127/30/91436a862c3baccb00181966c43d2430.$image
 ||fastpic.org/big/2024/1224/63/b48b871793c4be30fa9120a35e7d8c63.$image
 ||fastpic.ru/big/2009/1023/67/335f721dba8c4afaba20160aec267e67.$image
 ||fastpic.ru/big/2009/1216/5e/8a4271c44c907f6ff66984a1951b865e.$image
@@ -26762,6 +26784,9 @@ smart-lab.ru##.brokers_block
 smart-lab.ru##.user_rek
 smart-lab.ru##.scrollDown
 smart-lab.ru##.toggle
+smart-lab.ru##.lower-banner
+smart-lab.ru##.post-page__banner
+smart-lab.ru##.app-box
 
     ! top
 smartled.by##.breadcrumbs-location-below_header,.single-breadcrumbs-wrapper:style(margin-top:0px !important)
@@ -28847,6 +28872,9 @@ te-le2.ru##blockquote:style(box-shadow:none !important)
 ||te-le2.ru/wp-content/themes/tele2/images/quote.png
 
 tele2-kak.ru###ampz_flyin
+
+! not autogenerated
+telefonu.top$inline-script  # site blocks copypaste
 
 telega.in##.page_loader
 telega.io##.page_loader
@@ -32724,8 +32752,8 @@ wikihow.com##.sidebox:has-text(Quizzes)
 
 ! from EasyList. Wikipedia is a great project.
 @@||wikipedia.org^$generichide
-! on mobile, tap somewhere on the page popups a menu
-m.wikipedia.org##.toggle-list__checkbox
+! on mobile, tap somewhere on the page popups a menu. Update: not only on m.wikipedia.org, but also on usual en.wikipedia.org
+wikipedia.org##.toggle-list__checkbox
 
     ! banners and promos
 wikiporn.tv##h2:has-text( Ads)
@@ -33575,6 +33603,7 @@ xn----8sbybi8adi0d0ab.xn--p1ai##header:style(transition:none !important)
     ! other
 ! bottom sticky duplicate
 xn----8sbybi8adi0d0ab.xn--p1ai##.woodmart-sticky-btn
+xn----8sbybi8adi0d0ab.xn--p1ai##.widget_recently_viewed_products
 
 ||xn--90abj6adui5e.xn--p1ai/*/vo_header.jpg
 ||xn--90abj6adui5e.xn--p1ai/*/voentorg.png
