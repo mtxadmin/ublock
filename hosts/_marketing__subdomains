@@ -1632,9 +1632,10 @@ insights.samsung.com  # from Adaway and NextDNS native-tracking-domains samsung
 ://insights-collector.  # from EasyPrivacy
 insights-collector.gog.com
 
-||link.$domain=~alfabank.ru
+||link.$domain=~alfabank.ru,~storjshare.io
     ! Exclusions:
     ! link.alfabank.ru - not an url shortener
+    ! link.storjshare.io - not an url shortener
 link.2gis.ru  # ad redirects
 link.blurb.com  # ad redirects
 link.hwschool.pro  # spam  # to.click
@@ -1931,6 +1932,7 @@ matomo.sytes.fr  # from ShadowWhisperer's Tracking
 matomo.x5.ru  # from ShadowWhisperer's Tracking
 
 /newsletter.
+newsletter.beautydea.it  # from EasyList
 newsletter.bigcommerce.com  # o1.newsletter.bigcommerce.com
 newsletter.cermati.com
 newsletter.damart.be
@@ -2253,11 +2255,11 @@ sentry.justwatch.com  # from Adaway  # First Party - Tracker  # from Quidsup NoT
 sentry.kontur.host
 sentry.lenta.tech
 sentry.mm.ru
-sentry.obs.mts.ru
 !sentry.web.prod.ya.mvideo.ru
+sentry.obs.mts.ru
+sentry.ozon.ru  # Sentry - Tracker  # from Quidsup NoTrack-Blocklist
 !sentry.k8s.portal.s  # yes, portal.s, a typo, but request was to http://sentry.k8s.portal.s/api/13/store/?sentry_key=...
 sentry.k8s.portal.su  # my corrected version, clearly
-sentry.ozon.ru  # Sentry - Tracker  # from Quidsup NoTrack-Blocklist
 sentry.regard.ru
 sentry.samoletx.com
 sentry.timeweb.cloud
@@ -4548,7 +4550,7 @@ a1.api.bbc.co.uk  # from Ru AdList
 ! BBC
 !ssc.api.bbc.com  # is in EasyPrivacy
 !sa.bbc.com  # from Adguard
-gn-flagpoles.api.bbci.co.uk  # from Fanboy's
+gn-flagpoles.api.bbci.co.uk  # from Fanboy's, EasyList
 mybbc-analytics.files.bbci.co.uk
 push.api.bbci.co.uk  # from Fanboy's
 
@@ -5687,6 +5689,8 @@ u.jd.com
 
 ajdivotdelbloab24.jio.com  # from Adguard
 
+rtcstats-server-pilot.jitsi.net  # from Mahakala
+
 partner-api.jobbio.com  # from Dan Pollock's hosts file
 
 !jtrackern.joins.com  # from GoodbyeAds
@@ -6107,6 +6111,8 @@ ads-sdk.nianticlabs.com  # from Adguard
 !adpriv.nikkei.com  # from Adguard
 nkis.nikkei.com  # from Adguard
 
+infostroy.nnov.ru  # from EasyPrivacy
+
 data-e3d4300b49.n-tv.de  # is in Adguard
 sourcepoint.n-tv.de
 
@@ -6283,6 +6289,8 @@ jvs.price.ru  # from Adguard
 track.price.ru  # from Adguard
 krutilka.price.ru  # from Ru AdList: ||krutilka.price.ru/count_
 
+t.pridat.eu  # from EasyList
+
 skorozvon.primatel.ru
 smscenter.primatel.ru
 
@@ -6362,6 +6370,8 @@ decals.rcgroups.net  # from EasyList
 ! c.rdrom.ru  # app requests  # tested for months  # update: they placed web (drom.ru) scripts there.
 
 !wp.readhere.in  # from GoodbyeAds
+
+data.reachplc.com  # from EasyList
 
 !br.realitykings.com  # from MVPS
 !cache.realitykings.com  # from MVPS
