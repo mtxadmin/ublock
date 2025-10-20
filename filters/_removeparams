@@ -1957,11 +1957,12 @@ $removeparam=sms_uph  # from Adguard
 $removeparam=soc_src  # Yahoo general parameter  # from NeatURL
 $removeparam=soc_trk  # Yahoo general parameter  # from NeatURL
 
-$removeparam=source,denyallow=googlevideo.com,domain=~4pda.to|~alfabank.ru|~ft.com|~youtube.com|~kavin.rocks|~tokhmi.xyz|~moomoo.me|~syncpundit.io|~mha.fi|~whatever.social|~garudalinux.org|~rivo.lol|~aeong.one|~daviteusz.eu|~jae.fi|~mint.lgbt|~il.ax|~privacy.com.de|~esmailelbob.xyz|~projectsegfau.lt|~privacydev.net|~palveluntarjoaja.eu|~plibre.com|~smnz.de|~adminforge.de|~qdi.fi|~hostux.net
-$removeparam=Source,denyallow=googlevideo.com,domain=~4pda.to|~alfabank.ru|~ft.com|~youtube.com|~kavin.rocks|~tokhmi.xyz|~moomoo.me|~syncpundit.io|~mha.fi|~whatever.social|~garudalinux.org|~rivo.lol|~aeong.one|~daviteusz.eu|~jae.fi|~mint.lgbt|~il.ax|~privacy.com.de|~esmailelbob.xyz|~projectsegfau.lt|~privacydev.net|~palveluntarjoaja.eu|~plibre.com|~smnz.de|~adminforge.de|~qdi.fi|~hostux.net
+$removeparam=source,denyallow=googlevideo.com,domain=~4pda.to|~alfabank.ru|~search.brave.com|~search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion|~ft.com|~youtube.com|~kavin.rocks|~tokhmi.xyz|~moomoo.me|~syncpundit.io|~mha.fi|~whatever.social|~garudalinux.org|~rivo.lol|~aeong.one|~daviteusz.eu|~jae.fi|~mint.lgbt|~il.ax|~privacy.com.de|~esmailelbob.xyz|~projectsegfau.lt|~privacydev.net|~palveluntarjoaja.eu|~plibre.com|~smnz.de|~adminforge.de|~qdi.fi|~hostux.net
+$removeparam=Source,denyallow=googlevideo.com,domain=~4pda.to|~alfabank.ru|~search.brave.com|~search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion|~ft.com|~youtube.com|~kavin.rocks|~tokhmi.xyz|~moomoo.me|~syncpundit.io|~mha.fi|~whatever.social|~garudalinux.org|~rivo.lol|~aeong.one|~daviteusz.eu|~jae.fi|~mint.lgbt|~il.ax|~privacy.com.de|~esmailelbob.xyz|~projectsegfau.lt|~privacydev.net|~palveluntarjoaja.eu|~plibre.com|~smnz.de|~adminforge.de|~qdi.fi|~hostux.net
     ! Exclusions:
     ! - 4pda: source is a search parameter (https://4pda.to/forum/index.php?act=search&source=all&forums%5B%5D=all)
     ! - alfabank.ru: Russian bank
+    ! - brave.com: from DandelionSprout's
     ! - ft.com: "Error 400  The source parameter is required and must be a valid system code"
     ! - youtube  # this exclusion is also in DandelionSprout's URLShortener
     ! - and all YouTube Piped instances (on 2022-11): kavin.rocks,tokhmi.xyz,moomoo.me,syncpundit.io,mha.fi,whatever.social,garudalinux.org,rivo.lol,aeong.one,daviteusz.eu,jae.fi,mint.lgbt,il.ax,privacy.com.de,esmailelbob.xyz,projectsegfau.lt,privacydev.net,palveluntarjoaja.eu,plibre.com,smnz.de,adminforge.de,qdi.fi,hostux.net - see #51 and https://github.com/TeamPiped/Piped/wiki/Instances
@@ -4247,6 +4248,8 @@ sohu.com$removeparam=_f  # from Adguard
 sohu.com$removeparam=_trans_  # from Adguard
 
 so-net.ne.jp$removeparam=SmRcid  # from Adguard
+
+downloads.sourceforge.net$removeparam=r  # from DandelionSprout's URLShortener
 
 spektr.press$removeparam=tg_rhash
 
