@@ -690,6 +690,9 @@ wildberries.ru##[class*=productLineInvisible]
 wildberries.ru##[class*=productLine-]:style(position:static !important)
 wildberries.ru##[class*=productLine-]::before:style(position:static !important)
 wildberries.ru##[class*=productLine-]::after:style(position:static !important)
+! блевотный фиолетовый вылез 2025-10. Я понимаю, что у них это типа корпоративный цвет, но смотреть неприятно.
+! Поставил что-то понейтральнее. Совсем убирать не стоит, там белые иконки, рассчитанные на темный фон
+wildberries.ru##.header:style(background:lightblue !important)
     ! quick view
 wildberries.ru##.preview-item
 wildberries.ru##.j-open-product-popup
@@ -708,6 +711,7 @@ wildberries.ru##.tooltip-menu-purchases-cert
 wildberries.ru##.subscription-popup__wrapper.popup
 wildberries.ru##.overlay
     ! banners and promos
+||wbbasket.ru/*/crm-bnrs/
 wildberries.ru##.i-spec-action
 wildberries.ru##.spec-action
 !wildberries.ru##.new-carousels-and-banners
@@ -738,6 +742,8 @@ wildberries.ru##.credit-widget
 wildberries.ru##.main-page__banners-mini
 wildberries.ru##.courier-informer-text
 wildberries.ru##.delivery-block__courier-informer
+! top promo items. They exist in the top menu, unneeded duplicates
+wildberries.ru##.simple-menu__diamonds
     ! old (striked out) prices
 wildberries.ru##.price-last
 wildberries.ru##.price-old-block
@@ -778,6 +784,12 @@ wildberries.ru##.app-gallery
 wildberries.ru##.navbar-pc__link:style(color:#000 !important)
 wildberries.ru##.search-catalog__input:style(color:#000 !important)
 wildberries.ru##.lego-background
+    ! delivery code
+! в десктопной версии скрывается qr-код, это неудобно. Ну и чуть поджал для компактности.
+wildberries.ru##.delivery-qr:style(display:initial !important)
+wildberries.ru##.delivery-qr__main:style(max-width:none !important)
+wildberries.ru##.delivery-qr__code-wrap:style(float:right !important)
+wildberries.ru##.delivery-qr:style(padding-top:0px !important; padding-bottom:0px !important)
     ! other
 !wildberries.ru##.tooltipster-content
 wildberries.ru##.suppliers-section
