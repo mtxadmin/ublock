@@ -4324,7 +4324,10 @@ _site/gotop.  # from Ru AdList
     ! /cmp/int_cmp.  # from Adguard
 /cmp_shim.js  # from Adguard
 -cnil-popup-  # from EasyList
-/consent*$important
+/consent*$important,domain=~accounts.google.com
+    ! Exclusions:
+    ! accounts.google.com - some internal settings
+    !
     ! /consent.js
     ! /consent/*
     ! /consentbanner-fragment/*  # from EasyList
