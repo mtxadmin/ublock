@@ -470,6 +470,10 @@ ya.ru,yandex.*##a[href="/q/"]:has(svg)
 ya.ru,yandex.*##div:has-text(/^Вы\s+знаете\s+ответ\s+на\s+этот\s+вопрос/)
 ya.ru,yandex.*##a:has-text(Скачайте приложение)
 
+! lavka
+yandex.ru##[role=dialog]:has-text(перейти в приложение)
+yandex.ru##[class^=HeaderWrapper]:style(position:static !important)
+
 ! logos
 ya.ru,yandex.*##.header2__logo
 ya.ru,yandex.*##.header3__logo-ru
@@ -500,7 +504,9 @@ ya.ru,yandex.*##[class^=PageAside__logo]
 ya.ru,yandex.*##[class^=PageAside__stickyContainer]:style(position:static !important)
 ya.ru,yandex.*##[class^=PostPhoneCallerBlockArenda]
 ya.ru,yandex.*##.UserSurveys
-surveys.yandex.ru$3p  # ad scripts  # ||surveys.yandex.ru/fb/widget.js
+surveys.yandex.ru  # ad scripts  # ||surveys.yandex.ru/fb/widget.js
+    ! update: not 3p - in that way yandex services invoke it, and that looks not good
+    ! maybe here will be some kind of domain whitelist
 pay.yandex.ru$3p  # 3p scripts
 
 ! Про Wiki комменты типа "РКН: иностранный владелец ресурса нарушает закон РФ" совершенно неинтересны
