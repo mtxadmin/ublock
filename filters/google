@@ -138,3 +138,8 @@ google.*##div[aria-modal="true"]:has-text(cookies)
 
 ! don't know why was it needed. Everything works already
 meet.google.com#@#div[aria-live]
+
+! too slow start
+!myaccount.google.com##div:matches-css(position:fixed):style(position:static !important)
+! much better
+myaccount.google.com##div[jsslot]:style(position:static !important)
