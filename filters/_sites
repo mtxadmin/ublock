@@ -1320,10 +1320,13 @@ metrics.alfabank.ru$redirect-rule=noopjs
 ||alfabank.ru/*/system/log
 ||alfabank.gcdn.co/media/cpas/main-feedback-form/huawei-button
 ||alfabank.ru/*/background$image
+||alfabank.ru/stats/
+||alfabank.ru/services/browser-error-logger/
     ! popups
 alfabank.ru##[class^=header-warning__root]:has-text(блокировщик контента)
 aslife.ru##.t824__popup
 aslife.ru##.tn-atom
+alfabank.ru##[data-test-id="voice-of-client"]
     ! logos
 !alfabank.ru##svg - don't, svg.icon-button.. are useful inteface buttons
 alfabank.ru##[class^=Hlayout_logo_]
@@ -1350,6 +1353,10 @@ aslife.ru##.main-slider
 ||ocenka-alfabank.ru/dist/img/alfa_icon_work$image
 ||ocenka-alfabank.ru/dist/img/alfa_icon_adv$image
 alfabank.ru##.module-digitalSalesSpecialOffersVerticalSlider
+alfabank.ru##[data-test-id="advice-banner"]
+||alfabank.ru/public/s3/static/partneroffers/$image
+||alfaonline.servicecdn.ru/public/s3/static/loyalty/$image
+||alfaonline.servicecdn.ru/public/s3/static/partneroffers/$image
     ! top
 alfabank.ru##.page__header:style(position:static !important)
 alfabank.ru###switch:style(position:static !important)
@@ -3090,6 +3097,8 @@ avtobot.net##.header-flag
 
 avtocod.ru##.has-blur:style(filter:none !important; -webkit-filter:none !important)
 avtocod.ru##.btn-div-cansel__item:has-text(пример)
+! inline related
+avtocod.ru##.article-view__more
 
 avtodispetcher.ru###reformal_panel
 
