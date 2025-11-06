@@ -211,21 +211,27 @@ apteka.103.by##div:matches-css(position:fixed)
 220.guru###scroll-button
 220.guru##.post-footer
 
+    ! popups
 220-volt.ru##.toolsbar-wrap
-220-volt.ru##.scroll-to-fixed-fixed:style(position:static !important)
-220-volt.ru##.pre-fix:style(position:static !important)
-!220-volt.ru##.page-container > div:nth-of-type(3)
+220-volt.ru##.city-offer-modal
+    ! top
+220-volt.ru##.header-main:style(padding-top:0px !important; padding-bottom:0px !important)
+220-volt.ru##.header > div:has-text(/^$/)
+    ! banners and promos
 220-volt.ru##.new-item-list-discount
-220-volt.ru##.js-sticky:style(position:static !important)
 220-volt.ru##.bannerArea
 220-volt.ru##[href="/subscribe/"]
 220-volt.ru##.text-small:has-text(Подпишитесь)
 220-volt.ru##.text-small:has-text(офертой)
-||220-volt.ru/*/gglpl.svg
-220-volt.ru##.header-main:style(padding-top:0px !important; padding-bottom:0px !important)
-220-volt.ru##.footer-social-list
 220-volt.ru##.main-producers-slider
 220-volt.ru##.main-producers-slider-wrapper
+    ! other
+220-volt.ru##.scroll-to-fixed-fixed:style(position:static !important)
+220-volt.ru##.pre-fix:style(position:static !important)
+!220-volt.ru##.page-container > div:nth-of-type(3)
+220-volt.ru##.js-sticky:style(position:static !important)
+||220-volt.ru/*/gglpl.svg
+220-volt.ru##.footer-social-list
 
 22oa.ru###branding
 22oa.ru###sidebar
@@ -1370,6 +1376,7 @@ alfastrah.ru##.fake-header
 alfabank.ru##aside:style(position:static !important)
 alfabank.ru##[class^=backward-button]
 alfabank.ru##.login__qr.qr-login
+alfabank.ru##[data-test-id="initial-app-loader"]
 ||alfabank.ru/67d4f9e82794b440330d4551fc3b855f.jpg
 ||alfastrah.ru/docs/images/life.jpg
 ||alfastrah.ru/docs/images/life_1.jpg
@@ -5438,6 +5445,7 @@ chipdip.by##.header__fixed-block_show.header__fixed-block:style(position:static 
 chipdip.ru##.top-box-fixed:style(position:static !important)
 chipdip.ru###notification
 chipdip.ru###headerfixed:style(position:static !important)
+chipdip.ru##.header__menu:style(height:auto !important)
 
 chipmk.ru###header
 
@@ -11065,6 +11073,8 @@ glavkniga.ru##.kp_demo_container
 glavkniga.ru##.sim-slider
 glavkniga.ru##.article_introductory_end
 glavkniga.ru##.article_introductory_end_text
+
+glavmed-shop.ru###consultation
 
 ! inner push ads
 glavportal.com$script
@@ -18807,6 +18817,9 @@ welcome.mosreg.ru##.w_slider:style(visibility:visible !important; opacity:initia
 mosregtoday.ru##[aria-label="cookie-agreement"]
 mosregtoday.ru##footer div:style(position:static !important)
 
+mosroba.ru##.xoo-wsc-basket
+mosroba.ru##li.product > .add_to_cart_button
+
 mosstroi.market##div.box:nth-of-type(4)
 
 moszapchasti.ru###footer
@@ -20058,6 +20071,8 @@ noa-lit.ru##.logo_s
 ||nocensor.biz/go/$popup  # from EasyList
 ||nocensor.world/go/
 nocensor.world##.alwocme4ir
+
+||nomadquest.ru/img/no_photo.jpeg
 
 ||nonano.ru/a1sys/$image
     ! top
@@ -25781,6 +25796,8 @@ samag.ru###popmechanic-paranja
 samag.ru##.popmechanic-close
 samag.ru###popmechanic-snippet
 
+samarovka.ru##.alert
+
 sambt.ru###header
 
 samelectric.ru##.gp-banner
@@ -28378,6 +28395,8 @@ svoboda.org##.banner
 svoboda.org##.banner__a
     ! other
 
+||svoe-zagorodom.ru/clickstreams/
+
 ||svoizabor.ru/$inline-script  # script there disables onselectstart. Bad practice, uncomfortable.
 
     ! top
@@ -28813,6 +28832,10 @@ technipages.com##.user-profile.widget
     ! popups
 ! cookie popup
 technoavia.ru##.Agreement
+technoavia.ru##[class^=PageMessage]
+technoavia.ru##[class^=UiKitButtonScrollUp]
+    ! top
+technoavia.ru##[class^=UiAppHeaderLight]:style(position:static !important)
     ! banners and promos
 technoavia.ru##.TopBaners
 technoavia.ru##.BanersOnHome
@@ -30421,7 +30444,11 @@ tripandme.ru##.b-share--post.b-share
     ! top
 tripster.ru##.welcome-top
 tripster.ru##.welcome-search:style(margin-top:0px !important)
+    ! banners and promos
+tripster.ru##.post__search
+tripster.ru##p:has-text(Выбрать экскурсию):has(a)
     ! other
+tripster.ru##.showMore
 
 ! ad links (paid excursions etc)
 trip-together.ru##[href^="https://trip-together.ru/out/"]
@@ -31061,6 +31088,8 @@ ultimatewindowssecurity.com##h2:has-text(/Free Security Log Resources by Randy|S
 ultrafiolet.guru##.callme-header2
 
 !ululuysk.com##p:has-text({ads) - old weird non-working rule
+
+ultrasurfing.com$popup
 
 ||u-mama.ru/images/structure/share-yt.png
 ||u-mama.ru/images/structure/share-inst.png
@@ -32324,18 +32353,20 @@ vostok.ru##.region_confirm_popup
 ||vostok.ru/uploads/global/images/catalogcategory/original/$image
 !old: ||cdn.vostok.ru/uploads/global/images/catalogcategory/original/9b6425f3e1dba34a1476344e88cc67e88b23972e.jpg
 shop.vostok.ru###layout:style(background-image:none !important)
+    ! banners and promos
+vostok.ru##.homepage-promo
+vostok.ru##.subscribe-container
+    !vostok.ru##.popup-form.subscribe-container
+    !vostok.ru##.footer-form.subscribe-container
+    !
     ! other
 shop.vostok.ru##.catalog-menu-regulations
-shop.vostok.ru##.show.popup-form.subscribe-container
 !shop.vostok.ru##.opened.freez.submenu
 shop.vostok.ru##.product-pager
-shop.vostok.ru##.footer-form.subscribe-container
 !shop.vostok.ru##.opened.submenu
-shop.vostok.ru##.catalog-menu-regulations
 shop.vostok.ru###comments:has-text(Отзывов пока нет, вы можете сделать это первым)
 shop.vostok.ru##.price-notice
 shop.vostok.ru##.email_catalog_s
-shop.vostok.ru##.homepage-promo
 
 ||vozduhstroy.ru/js/rlr.js
 ||vozduhstroy.ru/*/fonsod.gif
