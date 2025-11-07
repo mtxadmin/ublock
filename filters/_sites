@@ -2982,6 +2982,9 @@ avcore.ru##.just_for_sorting
 @@||avcore.ru^$generichide,badfilter
 ! and now they show error 1020.
 
+avenuerent.ru##.telegram_ico
+avenuerent.ru##.long_rent_wa
+
 avepizza.ru###footer-pane:style(position:static !important)
 
 avfx.ru##s
@@ -14234,6 +14237,8 @@ iz.ru##.article_page__left__top__views
 ! moving blocks in sidebar
 iz.ru##.float_href_block:style(transition:none !important)
 
+izazap.org##.more-stories
+
 ||izbrannoe.com/upload/iblock/118/11861fd69003d3766cfc63cb6c64b6ee.jpg
 izbrannoe.com##.header-top
 izbrannoe.com##.wrap_subscribe
@@ -18781,6 +18786,11 @@ moscowbooks.ru##.button_top
 moscow-city.guide###line-scroll
 moscow-city.guide###sp-up
 
+moscowmap.ru##.t-content-2column-aside
+moscowmap.ru##.head-info
+moscowmap.ru##.t-text-simple.t-content-wrapper
+moscowmap.ru##.t-content-wrapper > .t-text-simple
+
 mosdef.ru##.header-location-hint
 ||mosdef.ru/*/bottom_line.svg
 ||mosdef.ru/*/left-banner.jpg
@@ -20073,6 +20083,8 @@ noa-lit.ru##.logo_s
 nocensor.world##.alwocme4ir
 
 ||nomadquest.ru/img/no_photo.jpeg
+! тупо сгенерированные что ли тексты
+nomadquest.ru##.cursor-pointer.group:has(p:has-text(/^(Представьте себе|Когда я впервые)/))
 
 ||nonano.ru/a1sys/$image
     ! top
@@ -25105,6 +25117,8 @@ rusturkey.com##[href^="/main/banner-redirect/"]
 
 rutoken.ru##.scroll
 
+! идея хорошая, но задалбывает вычищать эти "pic" при копировании текста
+rutracker.org##+js(set-attr, img, alt)
 rutracker.org,pornolab.net##.top-alert
 rutracker.org,pornolab.net##.avatar
 rutracker.org,pornolab.net###tor_blocked
@@ -28396,6 +28410,7 @@ svoboda.org##.banner__a
     ! other
 
 ||svoe-zagorodom.ru/clickstreams/
+svoe-zagorodom.ru##.popup-agree
 
 ||svoizabor.ru/$inline-script  # script there disables onselectstart. Bad practice, uncomfortable.
 
@@ -29761,6 +29776,12 @@ tigo.com.co##.notification-sticky-bottom
 ||ttwstatic.com/obj/tiktok-web-us/pns/tiktok-cookie-banner/
 tiktok.com##[class*=StyledLinkLogo]
 
+! some css here are naggy too, like animations and opacity. In these cases, js AND css
+||tildacdn.com/js/tilda-animation
+||tildacdn.com/css/tilda-animation
+!
+||tildacdn.com/js/tilda-cover
+!
 ||tildacdn.com/js/tilda-errors  # ad telemetry script
 ||tildacdn.one/js/tilda-errors
 !
@@ -29769,6 +29790,9 @@ tiktok.com##[class*=StyledLinkLogo]
 !
 ||tildacdn.com/js/tilda-fallback  # https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js
 ||tildacdn.one/js/tilda-fallback
+!
+||tildacdn.com/js/tilda-popup
+||tildacdn.com/css/tilda-popup
 !
 ||tildacdn.com/js/tilda-stat  # ad telemetry script
 ||tildacdn.one/js/tilda-stat
@@ -34731,6 +34755,13 @@ zhartun.me##.noprint
 zheldorinform.ru##.icon-at
 zheldorinform.ru##.page__header_date-day
 zheldorinform.ru##.page__header_date-week
+
+zhilibyli.ru##div:style(position:static !important)
+zhilibyli.ru##+js(rc, r_hidden)
+zhilibyli.ru##+js(rc, r_anim)
+zhilibyli.ru##+js(set-attr, img[decoding="async"], src, [data-original])
+journal.zhilibyli.ru##.t-btn
+journal.zhilibyli.ru##.t-cover
 
 zhitov.ru###upper.icon-up-circled
 
