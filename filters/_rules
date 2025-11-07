@@ -2427,11 +2427,12 @@ _tizers.  # from Ru AdList
 /promo_tracking.  # from EasyPrivacy
 /promo_tracking/*  # from EasyPrivacy
 /searchpromote/*
-~chess.com,~lichess.org##[id*="Promo"]:not(html):not(body):not(article)
-~chess.com,~lichess.org##[class*="Promo"]:not(html):not(body):not(article)
-~chess.com,~lichess.org##[id*="promo"]:not(html):not(body):not(article)
+~chess.com,~lichess.org,~xn--d1abb2a.xn--p1ai##[id*="Promo"]:not(html):not(body):not(article)
+~chess.com,~lichess.org,~xn--d1abb2a.xn--p1ai##[class*="Promo"]:not(html):not(body):not(article)
+~chess.com,~lichess.org,~xn--d1abb2a.xn--p1ai##[id*="promo"]:not(html):not(body):not(article)
     ! Exclusions:
     ! chess - promotion (pawn to)
+    ! xn--d1abb2a.xn--p1ai (едем.рф) - main content
 !
 ! too many exclusions
 !~rusbestrailways.com,~hh.ru,~kodi.tv,~idsv.ru,~fermer.ru,~redhat.com##[class*="promo"]:not(html):not(body):not(article)
