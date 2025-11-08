@@ -316,6 +316,11 @@
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 !*##+js(cookie-remover, mte_use_lonpoll)
 
+*##+js(cookie-remover, /^Optanon/)
+    ! merriam-webster.com##+js(cookie-remover,OptanonConsent)
+    ! zdnet.com##+js(cookie-remover, OptanonAlertBoxClosed)
+    ! zdnet.com##+js(cookie-remover, OptanonConsent)
+
 ! PHPSESSID - in general, don't(?), it is a PHP session id. And also it is http-only, but not everywhere
 !*##+js(cookie-remover, PHPSESSID)
 ! Sometimes it is different:
@@ -869,9 +874,6 @@ yandex.ru##+js(cookie-remover, usurveys)
 
 zabbix.com##+js(cookie-remover, bbdiscussion_view)
 zabbix.com##+js(cookie-remover, bblastactivity)
-
-zdnet.com##+js(cookie-remover, OptanonAlertBoxClosed)
-zdnet.com##+js(cookie-remover, OptanonConsent)
 
 znaiauto.ru##+js(cookie-remover)
     !znaiauto.ru##+js(cookie-remover, antibot_hits)
