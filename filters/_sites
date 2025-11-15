@@ -3751,6 +3751,9 @@ bcs-express.ru##button:has-text(Оставить отзыв)
 bcs-express.ru##.banner-open-account-with-bg
     ! other
 
+beatport.com##[class*=PriceButton]
+beatport.com##[class*=AddToCart]
+
 beautyart.pro##.kr-footer-bg
 
 beauty-shop.ru##.article-block-subscribe
@@ -4560,6 +4563,9 @@ bookvoed.ru###cityDetect
 bookvoed.ru##a[href^="/redirect/karusel/stat?"]
 ! logo
 bookvoed.ru##a[href="https://www.bookvoed.ru/"][class]
+
+boomplay.com##.gaussianWrap
+boomplay.com##.sidebar:style(position:absolute !important)
 
 ! disable exclusion in Fanboy's
 @@*$generichide,domain=boredpanda.com,badfilter
@@ -12037,6 +12043,9 @@ holofly.ru##.main__button
 
 hologramart.ru##noindex
 
+||holychords.pro/assets/img/subscribe-instagram
+holychords.pro##.noprint #login
+
 hovatek.com##.icon-bar
 hovatek.com##.sidebar-main
 
@@ -18534,6 +18543,14 @@ mixei.ru###wgo_events
 
 mixprise.ru###header
 
+mixupload.org##.links-mobile
+mixupload.org##.ms_ftr_ss
+mixupload.org##.promote-track
+mixupload.org##.ga-unlimited
+mixupload.org###wrapper:style(padding-top:0px !important)
+! unfix. not static
+mixupload.org###sidebar:style(position:absolute !important)
+
 mizomed.ru##.head-bg
 
 m-jedi.ru##.art-header-jpeg
@@ -19002,6 +19019,13 @@ mp3-cherry.com##.info-text
 ! top
 mp3-cherry.com##body > .center:style(margin-top:0px !important)
 
+! seo
+mp3from.info##.page__caption
+! исходно лого (обычно стандартное, отключенное) квадратное - сплющиваем. Убирать не стоит, там неплохая голосовалка
+mp3from.info##div.page__img:style(aspect-ratio:4/1 !important)
+! лого на полосе плеера
+mp3from.info##.plr__img
+
 mp3party.net##.header
 mp3party.net##.rbt-list
 mp3party.net##.t-dsc
@@ -19009,6 +19033,9 @@ mp3party.net##.t-dsc
 ||mp3party.net/static/bottom-girls
 
 mpgu.su##.royalSlider
+
+mpmux.com###reviewModal
+mpmux.com##.modal-backdrop
 
 wiki.mpstats.io##nav:style(position:absolute !important; padding-top:0px !important; padding-bottom:0px !important; height:auto !important)
 mpstats.io##.v-btn--fixed
@@ -21798,6 +21825,12 @@ perfectnaked.com###footer-text
 
 performancegunworks.com##.jeg_midbar
 
+performerpedia.com##.overlay-age-verify
+performerpedia.com###boton-votar-flotante
+performerpedia.com##.btn-purchase
+performerpedia.com##.banner-wrapper-mobile-vod
+performerpedia.com##.footer-claim-button
+
 blogs.perl.org##[id^=module-aux-about-author]
 
 ||perplexity.ai/rest/event/analytics  # is in 3 lists
@@ -22079,6 +22112,8 @@ piratbit.top##.alert-info.alert
 piratehaven.ws##.floating-header
 
 pisni.org.ua##[src="/clipart/drb_ig.jpg"]
+
+pisni.ua##.pp-shade.pp-area
 
 pissrip.net##.adult-warning-block
 pissrip.net##.adult-warning
@@ -23458,6 +23493,13 @@ pureskin.pro##.upper.mmname
 
 purina.ru##.promo-modal
 purina.ru##.b-page-loading
+
+pussyspace.com##.livecam_4items_box
+pussyspace.com##.footerdesc p
+pussyspace.com###detach-button-host
+pussyspace.com##.cam_div
+pussyspace.com##.carouselTopScroll
+pussyspace.com##.exOfferAff
 
 pussystate.com##.header
 pussystate.com##.menu
@@ -34514,6 +34556,14 @@ yurymerkulov.ru$inline-script  # site blocks copypaste
 ! popup
 yurymerkulov.ru##.right-bottom
 
+||z3.fm/themes/classic/assets/images/face.png
+! пустой футер
+z3.fm##.footer-content
+! колонка лого радио слева - для навигации не нужна
+z3.fm##.radio_list
+! ок, я сильно против мешающихся fixed элементов, но вот тут при длинном списке в поиске плеер нужно закрепить, без этого просто неудобно
+z3.fm###bottom-fix:style(position:sticky !important)
+
 ||zabbix.com/dist/images/fd87efa6da9bed3fd8c9cfb442a3d537.svg  # logo
     ! unfix and compact
 zabbix.com###header:style(position:static !important; padding-top:0px !important)
@@ -34691,6 +34741,7 @@ zavod1.ru###contactformc1
 zaycev.net##button:has-text(/Подписка|(К|к)упить доступ/)
 zaycev.net##aside>div:has-text(Расскажи о)
 zaycev.net##aside>div:has-text(Подписаться)
+zaycev.net##div:has(>button):matches-css(position:sticky)
     ! dynamic scroller
 zaycev.net##li:has(a[href^="https://news.zaycev.net/"])
 zaycev.net##a[href^="https://news.zaycev.net/"]
