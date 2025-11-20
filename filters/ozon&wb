@@ -237,6 +237,10 @@ ozon.*##ozpopover
 ozon.*##div[append="true"][mountto="body"]
 ! totop
 ozon.*##[data-widget="homeButton"]
+ozon.ru##[data-popper-placement="bottom"]
+ozon.ru##[data-widget="notificationSubscriptionBanner"]
+! overlay
+ozon.ru##div:has-text(/^$/):style(background-color:initial !important)
 finance.ozon.*###modal-container:has-text(Закажите)
 !finance.ozon.*##.paranja -  don't block all popups
 finance.ozon.*##.paranja:has-text(/Зв(е|ё)зды|Платите где хотите/i)
@@ -259,6 +263,7 @@ finance.ozon.ru##.title:has-text(приложени)
     ! ||ozone.ru/*logo_ozon$image
 ||ozone.ru/s3/marketing-api/
 ||ozonusercontent.com/s3/marketing-api/
+||ozonusercontent.com/s3/travel-marketing-data/
 ||ozone.ru/s3/fs-chat-api/$image  # banners
 !||ozone.ru/s3/cms/$image - don't, category icons
 ||ozone.ru/assets/marketing
