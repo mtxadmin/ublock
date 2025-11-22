@@ -1768,7 +1768,9 @@ _rebid.js  # from EasyList
 ~clutch.ua,~depo.ua,~kodi.wiki,~politeka.net,~strana.today,~strana.ua,~znaj.ua##[id*="partner"]:not(html):not(body):not(article):not(.adpartner_branding):not(#adpartner_branding)
     ! id="adpartner_branding"
     ! ##.partner_links
-##[class*="paywall"]:not(html):not(body):not(article)
+~reuters.com##[class*="paywall"]:not(html):not(body):not(article)
+    ! Exclusions:
+    ! reuters.com - yes, the site is paywalled, but ##.paywall-* is the main div
 ##[id*="paywall"]:not(html):not(body):not(article)
 ##[class*="reklam"]:not(html):not(body):not(article)
 ##[id*="reklam"]:not(html):not(body):not(article)
@@ -3006,6 +3008,7 @@ _pagespeed_beacon?  # from AdGuard
     ! ||paypalobjects.com^*/pixel.gif  # from EasyPrivacy
 .pixel.archive.  # from EasyPrivacy
 /platform-detect
+/plausible.js  # is in Adguard
 /publishertag.js  # is in EasyPrivacy
 /pum-site-scripts.  # ad scripts  # /wp-content/uploads/pum/pum-site-scripts.js  # is in Fanboy's
 /purecounter.js
