@@ -1336,6 +1336,7 @@ metrics.alfabank.ru$redirect-rule=noopjs
 ||alfabank.ru/*/background$image
 ||alfabank.ru/stats/
 ||alfabank.ru/services/browser-error-logger/
+||alfabank.ru/services/stats/
     ! popups
 alfabank.ru##[class^=header-warning__root]:has-text(блокировщик контента)
 aslife.ru##.t824__popup
@@ -7498,6 +7499,7 @@ docker.com##.sidebar:style(max-height:none !important)
 docpahomov.ru##.menu_fixed:style(position:static !important)
 
 docs-python.ru##.btn-outline-success
+docs-python.ru##.fixed-height:has([id^=yandex_rtb])
 
 doctor.ru##.avatar
 doctor.ru##.youtube_cobntainer
@@ -10738,6 +10740,8 @@ geeksforgeeks.org##.login-modal-div
 geeksforgeeks.org##.tooltip
 geeksforgeeks.org##.darkMode-wrap
 geeksforgeeks.org##.modal-container
+||geeksforgeeks.org/wp-content/themes/iconic-one/js/event-promotion.min.js
+geeksforgeeks.org###saleModal.saleModalPanel
     ! banners and promos
 geeksforgeeks.org##a[href^="https://practice.geeksforgeeks.org"]
 geeksforgeeks.org##.footer_advertise_btn_box
@@ -11931,6 +11935,8 @@ habr.com##.tm-company-card__avatar
 habr.com##.tm-company-profile-card
 habr.com##.tm-company-snippet__logo-link
 habr.com##.hint-trigger-button
+! ивенты - галимая реклама самих себя
+habr.com##.tm-block:has(.tm-event-card)
     ! popups
 habr.com##.tm-notification
 habr.com##.Vue-Toastification__container
@@ -21893,6 +21899,8 @@ blogs.perl.org##[id^=module-aux-about-author]
 
 ||perplexity.ai/rest/event/analytics  # is in 3 lists
 perplexity.ai##.shadow-md:has-text(Instant answers)
+! top
+perplexity.ai##.h-bannerHeight
 
 perspekt174.ru##.fly_forms
 
@@ -24609,6 +24617,7 @@ resellerspanel.com##.top-wrap:style(position:static !important)
 
 resilio.com###sidebar_form
 resilio.com##.w-nav.s-navbar-block:style(position:static !important)
+resilio.com##.s-nav-btn-item
 
 ||resistance.today/templates/resistancetoday/images/object559494904.png
 resistance.today###up
@@ -32671,6 +32680,8 @@ vpnranks.com##.sc-html
 vpnscanner.com##tr.nitro-offscreen
 vpnscanner.com##.niche_table
 
+vpoisketurov.ru##.sitetitle
+
 ||vpoxod.ru/index-slider/$image
 vpoxod.ru##.footer-error-text
 vpoxod.ru##.main_slider_wrapper
@@ -34046,6 +34057,9 @@ xn---63-5cdesg4ei.xn--p1ai##.main-preview
     ! other
 
 xn-----6kcalbbrfn0iijf7msb.xn--p1ai##.header-main
+
+! автостекло74.рф
+xn--74-6kcip4ahvd0ajc.xn--p1ai###ez-toc-container
 
 xn----7sbabh2chctdbd0au5g.xn--p1ai##.custom_akcii
 xn----7sbabh2chctdbd0au5g.xn--p1ai##section > .container
