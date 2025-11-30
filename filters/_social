@@ -1440,6 +1440,10 @@ web.telegram.org##.is-sponsored
 ! f..ng stories
 web.telegram.org###StoryRibbon
 web.telegram.org##.stories-list
+web.telegram.org##[class^=_suggestionContainer]
+! strange, but it works
+web.telegram.org##.chatlist-container:style(--stories-scrolled: 92px;)
+web.telegram.org###chatlist-container:style(--stories-scrolled:auto !important)
 !
 !
 !   Hide messages that contain:
