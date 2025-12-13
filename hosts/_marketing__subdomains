@@ -26,6 +26,7 @@ a02342.thestrad.com  # https://a02342.thestrad.com/wrapperMessagingWithoutDetect
     ! teletype.in - non-ad script (teletype.in/static/AD.[...])
     !
 ad.12dt.com  # from Quidsup NoTrack-Blocklist
+ad.163.com  # from Cameleon, BlockListProject - Ads
 !ad.3dnews.com
 ad.a8.net
 ad.about.co.kr  # from EasyList
@@ -540,6 +541,7 @@ affilo.lingerio.cz  # from Adguard
 !/analytics. - duplicates rule in _rules
 ||analytics.
 /analytics-cdn.
+analytics.163.com$important  # from Adguard, ShadowWhisperer's Tracking
 analytics.74.ru  # from GoodbyeAds
 analytics.76.ru
 analytics.academy.com  # from EasyPrivacy
@@ -2259,6 +2261,7 @@ sentry.kontur.host
 sentry.lenta.tech
 sentry.luxnet.ua
 sentry.mm.ru
+sentry.music.163.com  # from AWAvenue Ads
 !sentry.web.prod.ya.mvideo.ru
 sentry.obs.mts.ru
 sentry.ozon.ru  # Sentry - Tracker  # from Quidsup NoTrack-Blocklist
@@ -2765,6 +2768,7 @@ swebmetrics.zebra.com  # from Adguard
 
 ||tags.
 tags.acmeaom.com  # from Adaway
+tags.chip.de  # from Adguard
 tags.msnbc.com  # from BlockListProject - Ads
 tags.msnbc.com.edgekey.net  # from BlockListProject - Ads
 tags.nationwide.com
@@ -3950,6 +3954,52 @@ wttd.madeleine.fr  # from Adguard
 wttd.madeleine.gr  # from Adguard
 
 !! domains
+
+! 163.com  # no root  # from MobileAdTrackers  # false positive
+adclient.163.com  # from Cameleon, BlockListProject - Ads
+adgeo.163.com  # from Cameleon, BlockListProject - Ads
+clientlog3.music.163.com  # from Adguard
+clientlogsf.music.163.com  # from Adguard
+clientlogdep.music.163.com  # from Adguard
+crashlytics.163.com  # from ShadowWhisperer's Tracking
+dun.163.com
+dun.163yun.com
+    ! ac.dun.163.com  # from EasyPrivacy
+    ! ac.dun.163yun.com  # from EasyPrivacy
+    ! fp-upload.dun.163.com  # from EasyPrivacy
+    ! ye.dun.163yun.com  # from Adguard  
+    ! ac.dun.163yun.com  # from Mahakala
+g.163.com  # from BlockListProject - Ads, Mahakala
+img.163.com  # from BlockListProject - Ads
+log.study.163.com  # from Mahakala
+netapm.music.163.com  # from Adguard, Mahakala
+popme.163.com  # from BlockListProject - Ads
+tag.163.com  # from BlockListProject - Ads
+temp.163.com  # from BlockListProject - Ads, Mahakala
+!
+! todo to recheck:
+!
+!api.iplay.163.com  # from Mahakala
+!baoxian.163.com  # from Mahakala
+!caipiao.163.com  # from Mahakala
+!channel.m.163.com  # from Mahakala
+!corp.163.com  # from Mahakala
+!dl.reg.163.com  # from Mahakala
+!e-p4p.163.com  # from Mahakala
+!fl.reg.163.com  # from Mahakala
+!gb.corp.163.com  # from Mahakala
+!ipservice.163.com  # from Mahakala
+!irpmt.mail.163.com  # from Mahakala
+!n.3g.163.com  # from Mahakala
+!nex.163.com  # from Mahakala
+!r.mail.163.com  # from Mahakala
+!rec.g.163.com  # from Mahakala
+!ulink.cc.163.com  # from Mahakala
+!upload.easyread.163.com  # from Mahakala
+!iad.g.163.com  # from AWAvenue Ads
+!nex.163.com  # from AWAvenue Ads
+!yaolu.mh.163.com  # from Mahakala
+!yaolu.yuedu.163.com  # from Mahakala
 
 st-1.1fichier.com  # [Piwik.Analytics]  # from MVPS
 
@@ -5914,6 +5964,12 @@ eloquamarketing.masterlock.com  # from Adguard
 
 !cmd.maturexxxporno.net  # from Adguard
 
+ads-sdk.mattel163.com  # from Adguard, Mahakala
+geo.mattel163.com  # from Adguard, Mahakala, ShadowWhisperer's Tracking
+push-sdk.mattel163.com  # from Mahakala, ShadowWhisperer's URL Shorteners
+tc-log.mattel163.com  # from Adguard, Mahakala
+tc-sentry.mattel163.com  # from Mahakala
+
 web.care.mclaren.org  # from Adguard
 
 casino-ad-mediation.me2zengame.com  # from Adguard
@@ -6328,6 +6384,8 @@ t.procrastinator.tips  # from Adguard
 p.psb.ru  # URL shortener
 
 psvpromo.psvgamestudio.com  # from Adguard
+
+log.pullcenter.live  # from Adguard
 
 cgicounter.puretec.de  # from Dan Pollock's hosts file  # ionos.de
 
