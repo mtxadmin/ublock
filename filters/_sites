@@ -1337,6 +1337,7 @@ metrics.alfabank.ru$redirect-rule=noopjs
 ||alfabank.ru/stats/
 ||alfabank.ru/services/browser-error-logger/
 ||alfabank.ru/services/stats/
+||alfabank.servicecdn.ru/*/D_header.svg
     ! popups
 alfabank.ru##[class^=header-warning__root]:has-text(блокировщик контента)
 aslife.ru##.t824__popup
@@ -3521,6 +3522,13 @@ back.one##.flying-col-movable
 backblaze.com##.nav-primary
 backblaze.com###header-content > div >div:style(position:static !important)
 backblaze.com##.top-header-alert:style(position:static !important)
+
+backingtrackx.com##.top-title
+backingtrackx.com##.upreg
+backingtrackx.com##.up-top1
+backingtrackx.com##.upreg
+backingtrackx.com##.up-top1
+backingtrackx.com##.title-ru
 
 baeldung.com##body:style(font-family:initial !important)
 baeldung.com##.language-shell:style(font-weight:800 !important; font-family:monospace !important)
@@ -6873,6 +6881,9 @@ dezbox.ru##.footer-ask
 
 dgl.ru##.fixed-wrapper
 ||dgl.ru/js/dgl/yamarket.js
+dgl.ru##.slider-container
+dgl.ru##.header-day
+dgl.ru###wrapper:style(padding-top:0px !important)
 
 ||dhresource.com/survey/
     ! popups
@@ -7027,6 +7038,9 @@ digitalocean.com##[class*=ProductFeature]
 digitalocean.com##[class*=FooterSectionProduct]
     ! other
 
+digital-razor.ru##.article__cta-card
+digital-razor.ru##.pc-card-list-section
+
     ! top
 digitaltrends.com##.b-nav__logo
 digitaltrends.com##.h-nav-container.b-nav:style(position:static !important)
@@ -7109,6 +7123,9 @@ dirtyyoungbitches.com###gallery-text
 dirtyyoungbitches.com##.details
 dirtyyoungbitches.com##.zone-on-bottom
 dirtyyoungbitches.com###footer
+
+disco80.xyz###left_toolbar
+disco80.xyz##.logo_font
 
 ||discordapp.com/widget
 
@@ -10344,6 +10361,8 @@ freexxxhunter.cc##.vertbars
 freshports.org##.amazon
 freshports.org##.fullwidth:has(.logo)
 
+freshrecords.net##.carousel
+
 freshworks.com##.inpage-scroll:style(position:static !important)
 freshworks.com##.banner-default
 
@@ -11289,6 +11308,9 @@ globusgurme.ru##.baner-inner
 glotr.uz##.main-menu:style(position:static !important)
 glotr.uz##.secondary-header:style(position:static !important)
 glotr.uz##.page:style(margin-top:0px !important)
+
+glukhov.org###TableOfContents
+glukhov.org##.widget-taglist
 
 gluster.org##.pageHeader--sticky:style(position:static !important)
 
@@ -18018,6 +18040,8 @@ megafon.ru##.footer-v2__apps-discount-container
 
 megagroup.ru##.mg-global-messengers
 
+megalyrics.ru##+js(rc, aos-animate)
+
 ||megaobzor.com/images/121.png
 ||megaobzor.com/images/mologo.jpg
 megaobzor.com###menu
@@ -19280,6 +19304,9 @@ mtservice.ru##.main_header__contacts
 
 mts-link.ru##.headline
 mts-link.ru##.marquee-slider-container
+
+! overlay
+mufm.me##body > div:has-text(/^$/)
 
 muk.training##.el-logo
 muk.training##.el-text-next-to-logo
@@ -27606,6 +27633,7 @@ spaces.im###header_path
 spaces.im##.unauth_header
 spaces.im###apps_widget
 ||spaces.im/api/*/view/
+spaces.im##.system-message
 
 spa-hammam.ru##.clone.site-header
 
@@ -27968,22 +27996,28 @@ sportpremier.ru##.credit-popup-open
 
 @@||sports.ru^$generichide,badfilter
 ||sports.ru/cross-recommender/  # 3p ad scripts
-    ! banners
+    ! banners and promos
 sports.ru##[href^="https://trbna.co/"]
+sports.ru##.app-button
+sports.ru##.webpush
+sports.ru##.subscribe__form
+sports.ru##.subscribe__button
+sports.ru##.write-post__description
+sports.ru##.write-post__picture
+sports.ru##.write-post__title
+sports.ru##.write-post:style(min-height:auto !important)
     ! other
 sports.ru##.interstitial
-sports.ru##.app-button
 sports.ru##.main-footer__social-block
 sports.ru##.nav-item:has-text(Букмекеры)
 sports.ru##.description-text
 sports.ru##.blog-post__header-social
 sports.ru##.material-item__social-line
-sports.ru##.webpush
 sports.ru##.data-track-click
-sports.ru##.subscribe__form
-sports.ru##.subscribe__button
 sports.ru##.footer-recommendation
 sports.ru##.footer-support
+sports.ru##.navigation-progress-bar
+sports.ru##.post-content__aside:style(position:static !important)
 
 ||sportsnet.ca/*-logo.jpg$redirect=1x1.gif  # constantly requests blocked img
 
@@ -29686,6 +29720,8 @@ textilegu.ru##.tg_widget
 textove.com$inline-script
 textove.com$script
 
+text-pesenok.ru##.panel:style(position:static !important)
+
 tgrm.su##a.b-channel__item:has(span:has-text(ТОП-КАНАЛ))
 tgrm.su##.app-header__fixed:style(position:static !important)
 
@@ -30348,6 +30384,8 @@ tokar.guru##.leftBlock-sticky
 
 tokarchuk.ru###hi
 tokarchuk.ru###header
+
+toloka.to##.nav_top a:style(color:initial !important)
 
 tomas.kz##.invite-mobile-app
 
@@ -31900,6 +31938,7 @@ vc.ru##.context-list-option:has(.context-list-option__label:has-text(Plus))
 vc.ru##.widget-pro-blogs
 ! promo
 vc.ru##.comments-limit__expand-always
+vc.ru##.widget-top-subsites
     ! sticky elements
 vc.ru##.sticky.comments__navigation:style(position:static !important)
 vc.ru##.main_menu:style(position:static !important)
@@ -33903,6 +33942,8 @@ xbabe.com##.header-holder
 
 xbmc.ru##[id^=td_post] > div:has-text(__________________)
 xbmc.ru##[id^=td_post] > hr
+
+xbox.com##.sl-hero
 
 x-car.ru###pollModal
 
