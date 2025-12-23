@@ -2044,6 +2044,7 @@ $removeparam=SRC  # from DandelionSprout's URLShortener
     !
     ! 1688.com$removeparam=src  # from Adguard
     ! aliexpress.com$removeparam=src
+    ! apple.com$removeparam=src  # ref
     ! idealo.de$removeparam=src  # from DandelionSprout's ClearURLs for uBo
     ! $document,removeparam=src,domain=go.mail.ru|r.mail.ru  # from Ru AdList
     ! logbinder.com$removeparam=src  # ref
@@ -2699,14 +2700,17 @@ americanas.com.br$removeparam=pfm_pos  # from Adguard
 americanas.com.br$removeparam=pfm_page  # from Adguard
 americanas.com.br$removeparam=pfm_type  # from Adguard
 
+apple.com$removeparam=at  # some id  
 apple.com$removeparam=cid  # from Adguard
-apple.com$removeparam=ct  # from Adguard
+apple.com$removeparam=cId  # cid
+apple.com$removeparam=ct  # some id  # is in Adguard
 apple.com$removeparam=itscg
-    ! music.apple.com$removeparam=itscg  # from Adguard
+    ! music.apple.com$removeparam=itscg  # some id  # is in Adguard
     ! tv.apple.com$removeparam=itscg  # from Adguard
 apple.com$removeparam=itsct
-    ! music.apple.com$removeparam=itsct  # from Adguard
+    ! music.apple.com$removeparam=itsct  # some id  # is in Adguard
     ! tv.apple.com$removeparam=itsct  # from Adguard
+apple.com$removeparam=lId  # lid  # some num id  # from Adguard
 apple.com$removeparam=pt  # from Adguard
 
 ! blocked but
@@ -2882,6 +2886,9 @@ booking.com$removeparam=sid  # sid, yes, can and should be removed
 !booking.com$removeparam=ss  # query in text form in search results, url is working in the new browser. This text field can be removed from query, but the search will work only in two stages, not very good
 booking.com$removeparam=ssne  # query in text form in search results, url is working in the new browser. This field seems to can be safely removed
 booking.com$removeparam=ssne_untouched  # query in text form in search results, url is working in the new browser. This field seems to can be safely removed
+
+! already blocked
+boom.ru$removeparam=share_auth  # some id
 
 boosty.to$removeparam=_1ld  # from Adguard
 boosty.to$removeparam=_1lp  # from Adguard
