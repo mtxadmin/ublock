@@ -1336,6 +1336,7 @@ metrics.alfabank.ru$redirect-rule=noopjs
 ||alfabank.ru/*/background$image
 ||alfabank.ru/stats/
 ||alfabank.ru/services/browser-error-logger/
+||alfabank.ru/services/browser-info-logger/
 ||alfabank.ru/services/stats/
 ||alfabank.servicecdn.ru/*/D_header.svg
     ! popups
@@ -3850,6 +3851,9 @@ belbaza31.ru##.bp-personal:style(position:static !important)
 
 bellaestetica.ru##.specialist
 
+! logo
+bellona.org###header .inline-block
+
 ||beloruslavka.ru/wp-content/plugins/beloruslavkaphone/
 beloruslavka.ru##.alert
 ! popups
@@ -5525,6 +5529,7 @@ chistayrabota.ru###site-desc
 chita.ru##[class*=sticky_]:style(position:static !important)
 
 chitaem-online.com##.slider
+chitaem-online.com##.top_content_info b
 
 	! popups
 chitai-gorod.ru##.change-city-container__popup-confirmation.change-city
@@ -7871,6 +7876,7 @@ droidviews.com##.title-area
 droidviews.com##[href*="/sponsored-posts/"]
 ! inline related
 droidviews.com##p:has(.yoast-link-suggestion__value)
+droidviews.com##.cke_widget_drag_handler_container
 
 ! top
 droidwin.com##.bricks-mobile-menu-wrapper
@@ -8709,6 +8715,9 @@ elyts.ru##.main-brands-list
 
 em-an.ru##.top_bar_menu:style(position:static !important)
 em-an.ru##.top_bar:style(position:static !important)
+
+emastered.com##.master-track-button
+emastered.com##.navbar-section:style(position:static !important)
 
 ||e-mba.ru/advcakeAsync.js
 e-mba.ru##^script:has-text(PostAffTracker)
@@ -10735,8 +10744,13 @@ gearopen.com###top-link
 
 ||gecid.com/inc/brclick.$popup  # from Ru AdList
 
+    ! popups
 geekhacker.ru###content-sticky-panel
 geekhacker.ru##.float-posts-nav
+    ! inline related
+geekhacker.ru##p:has-text("Читайте также:")
+geekhacker.ru##a.yarpp-relate-item-block:has-text("Читайте также:")
+    ! other
 
 geekjob.ru##.btn-floating
 
@@ -11764,6 +11778,9 @@ guide-tours.ru##[href="https://guide-tours.ru"]:has(img)
 guide-tours.ru##.elementor-section-content-middle
 
 guidingtech.com##.wp-block-kadence-rowlayout
+guidingtech.com$script
+guidingtech.com$inline-script
+guidingtech.com##+js(set-attr, img[decoding="async"], src, [data-src])
 
 ||guim.co.uk/libs/iframe-messenger/
 
@@ -11883,6 +11900,7 @@ news.guru.ua##a.s
 guru99.com##.kt-info-svg-icon
 ! logos
 guru99.com##a[rel^=sponsored] > img
+guru99.com##button:has([href^="https://google.com/preferences/source"])
 
 guruadmin.ru###header2
 guruadmin.ru##.addzakl
@@ -16455,6 +16473,8 @@ lichess.org##header:style(justify-content: flex-end !important)
 lichess.org###main-wrap:style(margin-top:0px !important)
 lichess.org###topnav.hover:style(z-index:1000 !important)
     ! other
+lichess.org###topnav a:style(opacity:initial !important)
+lichess.org###main-wrap:style(position:absolute !important;top:55px !important)
 
 life.ru##[class^=styles_logo]
 life.ru##[class^=ButtonTop]
@@ -17517,6 +17537,8 @@ markakachestva.ru##.aliexpress-block
 markakachestva.ru##.megasimka
 
 markdanilov.com##.cart.button
+
+markdownlang.com##.VPLocalNav:style(position:static !important)
 
 ||marketbeat.com/scripts/modal/*  # from uBlock filters
 marketbeat.com##.hello-bar
@@ -18823,6 +18845,10 @@ momoporn.com##.technological
 mona.ru###callReq
 
 ||monday.com/prod/event
+
+monetnik.ru###lead-magnet
+monetnik.ru##.modal__overlay
+monetnik.ru##.action
 
 moneyzz.ru##a[href*="&erid"]
 
@@ -20144,6 +20170,8 @@ newyorker.com##div[class^="paywall"]
 ||nexplorer.ru/*/nners/$image
 nexplorer.ru##.header_container
 nexplorer.ru##.header
+
+nexprotec.com##.GdImMiniBox
 
 ||nextinpact.com/assets/images/autopromo-adblock  # from Ru AdList
 
@@ -29692,6 +29720,7 @@ teusink.net###header-wrapper
 texkom.ru##.ag_cnotice_window
 ! sticky duplicate
 texkom.ru##.float-header-wrapper
+texkom.ru##.container-firstblock-vin
 
 texnoblogger.com##.header-wrap
 texnoblogger.com##body:style(background:none !important)
@@ -30359,6 +30388,9 @@ tm-shop.ru##.credit-catalog
 
 tms-outsource.com##.cs-logo
 tms-outsource.com##.abh_about_tab.author
+tms-outsource.com##.sbc_random_posts_widget
+tms-outsource.com##.cs-sidebar__inner:style(position:static !important)
+tms-outsource.com##.wiip-inserted-widget
 
 tochka.com##[class^=assistant-chat]
 tochka.com##.header-space
@@ -30936,6 +30968,8 @@ tsn24.ru##.text-note
 tsn24.ru##.text-share_social
 
 ||tsnbase.ru/img/kvartirnik.gif
+
+tsprof.ru##.widget-banner-layout
 
 ttpsc.com##html:style(opacity:initial !important)
 
@@ -33328,6 +33362,11 @@ whatcar.com##[class^=HeroAdCTA-HeroAdContainer]
 whatsabyte.com##p:has-text(Disclaimer):has-text(affiliate)
 
 whattyre.com###hankook-side-image
+
+whippedcreamsounds.com##.uagb-popup-builder__wrapper--banner
+
+whitneyhouston.com##.mfp-wrap
+whitneyhouston.com##.mfp-bg
 
 whoisxmlapi.com##.common-info-modal-wrapper
 whoisxmlapi.com##+js(rc, blurred)
