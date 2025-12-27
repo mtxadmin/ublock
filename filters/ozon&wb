@@ -246,6 +246,9 @@ finance.ozon.*###modal-container:has-text(Закажите)
 finance.ozon.*##.paranja:has-text(/Зв(е|ё)зды|Платите где хотите/i)
 finance.ozon.ru##.qr-container:has-text(приложение)
 finance.ozon.ru##.title:has-text(приложени)
+ozon.*##div:has([data-widget="modalLayout"]):has-text(Списки стали личными подборками)
+ozon.*##[data-widget="filtersTagList"] div:matches-css(position:fixed)
+ozon.*##[class="vue-portal-target"]:has-text(Успейте получить баллы)
     ! banners and promos
 ||ozone.ru/assets/*-banner$script
 ||ozon.ru/graphics/img/  # from Ru AdList
@@ -640,6 +643,9 @@ ozon.*##div[data-review-uuid]:not(:has-text(/Вам помог этот|Пока
 finance.ozon.*##.bank-logo
 ! бэкграунд почему-то вылезает наверх и закрывает всё. Так что без вариантов убираем
 finance.ozon.*##.bg-new
+! в мобильной версии блок "Рекомендуем также" находится ДО кнопки "Купить"
+! этот фильтр срабатывает только на мобильной версии. Убирание этого блока, в целом полезного, в целом лучше, чем тупо прибитая кнопка "Купить", отнимающая место на экране
+ozon.*##[data-widget="skuGrid3"]:has(span:has-text(/Подобрали для вас|Рекомендуем также/))
 
     ! Wildberries
 ! their domains: wildberries.ru, wb.ru, paywb.com, paywb.ru, wb-bank.ru
