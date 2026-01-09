@@ -400,10 +400,12 @@
 
 /plugins/adroadblock/*
 
-/plugins/adrotate/*$important  # https://wordpress.org/plugins/adrotate/  # now is in EasyList
-/plugins/adrotate-pro/*$important  # from Adguard, EasyList
-    /adrotate/*$important  # from EasyList
-    /jquery.adrotate.
+/plugins/adrotate$important
+    ! /plugins/adrotate/*$important  # https://wordpress.org/plugins/adrotate/  # now is in EasyList
+    ! /plugins/adrotate-pro/*$important  # from Adguard, EasyList
+    ! /plugins/adrotate-pro-latest/*  # from EasyList
+        /adrotate/*$important  # from EasyList
+        /jquery.adrotate.
 
 /plugins/adsense-click-fraud-monitoring-master/*
 
@@ -692,7 +694,7 @@
 
 /plugins/boxzilla/*
 
-/plugins/brave-popup-builder/*  # from Ru AdList
+/plugins/brave-popup-builder/*  # from Ru AdList, EasyList
 
 /plugins/breaking-news-ticker/*
 
