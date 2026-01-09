@@ -21,9 +21,10 @@
 ! Something doesn't work? Something is missing? Please, feel free to write about it here:
 ! https://github.com/mtxadmin/ublock/issues/new
 
-
-
+!
+!!
 !! headers and header logos
+!!
 !   in general, do not block ###header, ###masthead, ##.site-branding or similar - they often contain search and menus
 !   of course, there may be some exclusions here (but it is unlikely)
 !   below there are some of old logo rules, just for information
@@ -903,9 +904,10 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 /sitelogo/*
 /sitelogo$image
 
-
-
+!
+!!
 !! remove contacts in the head.
+!!
 ! They should be in the footer only or in the contacts menu. Do not print them in the beginning of every page.
 ##[class^="header_contact"]:not(html):not(body):not(article)
 ##[class^="header-contact"]:not(html):not(body):not(article)
@@ -1035,9 +1037,10 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
     ! vseinstrumenti.ru##.header-phone
     ! vseinstrumenti.ru##.header-phone-notice
 
-
-
+!
+!!
 !! unblock page scrolling (overflow:visible !important)
+!!
 ! unblock page scrolling when modal popup is opened (even if the popup was removed by uBlock)
 ! in _headers_examples you can see some of the catched sites. But keep in mind that there are many, many more.
 !
@@ -1060,8 +1063,10 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 *##.fancybox-lock:style(overflow:visible !important)
     ! initially it was overflow:auto but the default is overflow:visible . Auto may add a parasite scrollbar sometimes. See https://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow
 
-
+!
+!!
 !! unstick header
+!!
 ! Many sites are using annoying sticky elements. Which also hide useful screenspace.
 ! in _headers_examples you can see some of the catched sites. But keep in mind that there are many, many more.
 !
@@ -1352,8 +1357,10 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 !
 *##.td-affix:style(position:static !important)
 
-
+!
+!!
 !! remove empty space from top and bottom (margin-top:0px !important; padding-top:0px !important; margin-bottom:0px !important; padding-bottom:0px !important)
+!!
 !
 ~pikabu.ru,~srg-it.ru,*##header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important; filter:none !important; -webkit-filter:none !important)
 !
@@ -1361,7 +1368,7 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 *##.header:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important; filter:none !important; -webkit-filter:none !important)
 *##.Header:style(position:static ! important; padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important; filter:none !important; -webkit-filter:none !important)
 
-
+!
 !
 *###page:style(background-image:none !important; margin-top:0px !important; padding-top:0px !important; margin-bottom:0px !important; padding-bottom:0px !important; margin-top:0px !important)
 
@@ -1371,7 +1378,7 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 !
 *##.fixed-panel:style(position:static !important)
 
-
+!
 !
 ~wikipedia.org,~kodi.wiki,*###content:style(padding-top:0px !important; padding-bottom:0px !important; margin-top:0px !important; margin-bottom:0px !important; filter:none !important; -webkit-filter:none !important)
     ! Exclusions:
@@ -1414,14 +1421,15 @@ _logo.$image,domain=~factorio.fandom.com|~opera.com
 !
 *##.site-footer-container:style(position:static !important)
 
-
+!
 ! possible todo
 budetinteresno.info##.wrapper:style(padding-top:0px !important)
 stigviewer.com##.wrapper:style(padding-top:0px !important)
 
-
-
+!
+!!
 !! remove bottom bars and other sticky elements
+!!
 ##.bottom-bar
 ###fixbar
 ##.fixed_panel
@@ -1457,9 +1465,10 @@ stigviewer.com##.wrapper:style(padding-top:0px !important)
 /jquery.sticky-sidebar
 /jquery.sticky-kit.js
 
-
-
+!
+!!
 !! backgrounds
+!!
 ! remove annoying page backgrounds
 ! (rules similar to "unblock page scrolling" block)
 !
@@ -1559,15 +1568,15 @@ _bg.svg$image
 ! see /header$image rule above
 /pagebg.jpg
 
-
+!
 ! Disable css selection restrictions
 ~yandex.ru,*##html,body,body *:style(user-select:auto !important; -webkit-user-select:auto !important; -webkit-touch-callout: auto !important; -moz-user-select:auto !important; -ms-user-select:auto !important; -o-user-select:auto !important; -khtml-user-select:auto !important)
     ! Exclusions:
     ! yandex.ru/maps - incorrect working on maps
 
-
+!
 ! There are many wordpress blogs with "inline related posts" blocks. It is really annoying. Here is solution to hide that [un]related blocks. It also cannot work as general rule, so - block:
 *##a[rel=nofollow]:has(.postTitle)
 
-
+!
 #*$script,header=via  # https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header
