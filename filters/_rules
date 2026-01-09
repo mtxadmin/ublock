@@ -10,7 +10,7 @@
 !
 ! Something doesn't work? Something is missing? Please, feel free to write about it here:
 ! https://github.com/mtxadmin/ublock/issues/new
-
+!
 
 *$ping,3p  # EasyPrivacy rule
 ||de/|$xhr,3p  # Ru AdList rule - catches many random ad domains
@@ -42,18 +42,19 @@
 /point/?method=video_link&xl=$xmlhttprequest  # Ru AdList rule
 /transparent.gif?ray=  # EasyPrivacy rule
 
-
+!
 ! Antiphishing rule from from uBlock filters:
 ||apple.com-  # from uBlock filters - Badware: ||apple.com-*.live^
 
-
+    !
     ! 88x31 banners
+    !
 _8831.gif  # from Ru AdList
 /8831_1.gif  # from Ru AdList
 ! from Adguard
 ##img[width="88"][height="31"]
 
-
+!
 -120x60.  # is in EasyList
 _120x240.  # from EasyList
 _120x240_  # from EasyList
@@ -61,8 +62,9 @@ _120x240_  # from EasyList
 -120x400.  # from EasyList
 _120x500.  # from EasyList
 
-
+    !
     ! 120x600 banners
+    !
 -120x600  # from Adguard
 -120x600-  # from EasyList
 -120x600.  # from EasyList
@@ -91,15 +93,16 @@ _120x600  # from Adguard
 120x600b  # from Adguard
 _120x600_  # from EasyList
 
-
+    !
     ! 125x600 banners
+    !
 /125x600-  # from EasyList
 /125x600_  # from EasyList
 _125x600_  # from EasyList
 ! from Ru AdList
 ##img[width="120"][height="600"]
 
-
+!
 _128x600.  # from EasyList
 /130x600-  # from EasyList
 /130x600.  # from EasyList
@@ -115,18 +118,20 @@ _160x300.  # from EasyList
 _160x300_  # from EasyList
 _160x350.  # from EasyList
 
-
+    !
     ! 160x400 banners
+    !
 -160x400-  # from EasyList
 /160x400-  # from EasyList
 /160x400_  # from EasyList
 _160x400.  # from EasyList
 
-
+!
 _160x500.  # from EasyList
 
-
+    !
     ! 160x600 banners
+    !
 ,160x600;  # from EasyList
 .160x600_  # from EasyList
 -160x600  # from Adguard
@@ -162,7 +167,7 @@ _160x600  # from Adguard
 ! from Ru AdList
 ##img[width="160"][height="600"]
 
-
+!
 /170x700.  # from EasyList
 /190x600.  # from EasyList
 /190_900.  # from EasyList
@@ -178,8 +183,9 @@ _200x250.png  # from Adguard
 /240x800/*  # from EasyList
 /300x150_  # from EasyList
 
-
+    !
     ! 300x250 banners
+    !
 .300x250.  # from EasyList
 .300x250_  # from EasyList
 -300-250.  # from EasyList
@@ -199,12 +205,13 @@ _300x250-  # from EasyList
 _300x250.  # from EasyList
 _300x250_  # from EasyList
 
-
+!
 =300x300;  # from EasyList
 /300x350.  # from EasyList
 
-
+    !
     ! 300x600 banners
+    !
 -300x600.  # from EasyList
 /300-600_  # from EasyList
 /300x600-  # from EasyList
@@ -212,7 +219,7 @@ _300x250_  # from EasyList
 _300x600.  # from EasyList
 _300x600_  # from EasyList
 
-
+!
 _billboard_320x100.iframe.  # from Adguard Chinese
 _320x250_  # from EasyList
 /320x250.  # from EasyList
@@ -220,9 +227,9 @@ _323x120_  # from EasyList
 /335x205_  # from EasyList
 _336x120.  # from EasyList
 
-
-
+    !
     ! 336x280 banners
+    !
 -336x280  # from Adguard
 _336x280  # from Adguard
 /336x280  # from Adguard
@@ -231,7 +238,7 @@ _336x280  # from Adguard
     ! /336x280_  # from EasyList
 =336x280;  # from EasyList
 
-
+!
 _350_100.  # from EasyList
 _350_100_  # from EasyList
 _350x100.  # from EasyList
@@ -253,8 +260,9 @@ _460x60.  # from EasyList
 468x15.h  # from Adguard
 /468-20.  # from EasyList
 
-
+    !
     ! 468x60 banners
+    !
 ,468x60-  # from EasyList
 ,468x60;  # from EasyList
 .468x60-  # from EasyList
@@ -313,14 +321,15 @@ _468x60b.  # from EasyList
 ! from Ru AdList and Adguard
 ##img[width="468"][height="60"]
 
-
+!
 -468x70.  # from EasyList
 /468x70-  # from EasyList
 /468x72.  # from EasyList
 /468x72_  # from EasyList
 
-
+    !
     ! 468x80 banners
+    !
 .468x80-  # from EasyList
 .468x80.  # from EasyList
 .468x80/  # from EasyList
@@ -350,7 +359,7 @@ _468_80_  # from EasyList
 /80x468_  # from EasyList
 Banner468x60  # from Adguard
 
-
+!
 -468x90.  # from EasyList
 _468x90.  # from EasyList
 _468x90_  # from EasyList
@@ -363,13 +372,14 @@ _468x120.  # from EasyList
 /468x280.  # from EasyList
 /468x280_  # from EasyList
 
-
+!
 /470x030_  # from EasyList
 /480x030.  # from EasyList
 /480x030_  # from EasyList
 
-
+    !
     ! 480x60 banners
+    !
 .480x60-  # from EasyList
 .480x60.  # from EasyList
 .480x60/  # from EasyList
@@ -391,10 +401,10 @@ _480x60_  # from EasyList
 /480x60_  # from EasyList
 =480x60;  # from EasyList
 
-
+!
 /480x70_  # from EasyList
 
-
+!
 -486x60.  # from EasyList
 /486x60_  # from EasyList
 _486x60.  # from EasyList
@@ -408,14 +418,15 @@ _580x100  # from Adguard
 /600_120_  # from EasyList
 /600-160-  # from EasyList
 
-
+    !
     ! 600x90 banners
+    !
 /600-90.  # from EasyList
 /600_90_  # from EasyList
 /600x90.  # from EasyList
 -600x90-  # from EasyList
 
-
+!
 _600x100.png  # from Adguard
 _610x120.gif  # from Adguard
 /640x80-  # from EasyList
@@ -435,23 +446,25 @@ _700_150_  # from EasyList
 _700_200_  # from EasyList
 /700_200.  # from EasyList
 
-
+    !
     ! 720x90 banners
+    !
 -720x90-  # from EasyList
 -720x90.  # from EasyList
 _720_90.  # from EasyList
 _720x90.  # from EasyList
 _720x90_  # from EasyList
 
-
+!
 /720x140-$image
     ! ||tutby.gcdn.co/n/os/03/5/720x140-1_bf.png  # from Adguard
     ! ||dh.img.tyt.by/n/os/03/5/720x140-1_bf.png  # from Adguard
 _728.gif  # from Adguard
 _728x60.  # from EasyList
 
-
+    !
     ! 728x90 banners
+    !
 ,728x90,  # from EasyList
 .728x90-  # from EasyList
 .728x90.  # from EasyList
@@ -501,7 +514,7 @@ _728by90  # from Adguard
 ! is in RuAdList and Adguard
 ##img[width="728"][height="90"]
 
-
+!
 _728x150.  # from EasyList
 /728_200.  # from EasyList
 /728_200_  # from EasyList
@@ -531,8 +544,9 @@ _800x100.  # from EasyList
 -980x60-  # from EasyList
 -988x60.  # from EasyList
 
-
+!!
 !! banners
+!!
 !
 ! urls
 ! comments is preferably inline with  # 
@@ -2277,9 +2291,10 @@ _rebid.js  # from EasyList
 ! is in Ru AdList
 ##.ya-direct
 
-
-
-! fluid web player ads and ad popups
+!
+!!
+!! fluid web player ads and ad popups
+!!
 ###fluid-buffer_spot
 ###fluid-onpause_spot
 ###fluid-ontop_spots
@@ -2290,10 +2305,10 @@ _rebid.js  # from EasyList
 ##.spot-player
 ###spot-player
 
-
-
-
+!
+!!
 !! teasers
+!!
 /adv_teasers.  # is in EasyList
 /nettyzer/*
 /teaser*$domain=~vento.ru
@@ -2400,9 +2415,10 @@ _tizers.  # from Ru AdList
 ##.tizers_block
 ##.tizzers
 
-
-
+!
+!!
 !! promos
+!!
 ! is in EasyList
 ://promo.$3p
 /app.promo*$script
@@ -2496,9 +2512,10 @@ _tizers.  # from Ru AdList
     ! azcentral.com##promo-story-bucket-short
     ! desmoinesregister.com##promo-story-bucket-short
 
-
-
+!
+!!
 !! callouts and calls to action
+!!
 /alert-popup/*
 /cta/*
 /intervolga.conversionpro/*
@@ -2581,9 +2598,10 @@ _tizers.  # from Ru AdList
 ##.headerCta-Lo
 ###hellobar
 
-
-
+!
+!!
 !! inline related inserts in blogs, random inline blog insertions
+!!
 ##.ctaText
     ##.ctaText ~ .postTitle
     ! tested on several sites. Maybe needs correcting.
@@ -2609,8 +2627,9 @@ _tizers.  # from Ru AdList
     ! sportmedcentr.com##.perelink-block
     ! urologydonetsk.ru##.perelink-block
 
-
+!!
 !! ad "offers"
+!!
 ! from Ru AdList, I think
 ##a[href*="/api/redirect?offerid="]
 ##.abstract-offer
@@ -2645,9 +2664,10 @@ volveter.ru##.has_offer_prop
 
 /click?pid=*&offer$popup,domain=~checkmoney.com.ua  # from EasyList
 
-
-
+!
+!!
 !! ad "testimonials"
+!!
 ##.testimonial
 ##.testimonials
 	! golosobraz.ru###testimonials
@@ -2658,9 +2678,10 @@ volveter.ru##.has_offer_prop
 	! regexbuddy.com##.testimonial
 	! staff.am##.testimonials
 
-
-
+!
+!!
 !! counters and trackers
+!!
 !
 ! hosts
 ! comments is preferably inline with  #
@@ -3307,14 +3328,15 @@ _wtInit.js  # from Fanboy's
     ! luckyfood.ru - main div
 ##.views-count
 
-
+!!
 !! Base64 reflinks
+!!
 ! todo: doesn't work /goto/aHR0*
 /nojs/Base64.js
 
-
-
+!!
 !! ratings and surveys
+!!
 /rate.widget.js
 ! generalized
 ~aliexpress.com,~aliexpress.ru,~air-gun.ru,~backit.me,~epn.bz,~support.google.com,~dobrodel.ru,~lichess.org,~mosreg.ru,~mos.ru,~neorabote.net,~news2.ru,~trimble.com,~wildberries.ru,~wildberries.co.il,~wildberries.fr,~yandex.ru,~youtube.com##[class*="feedback"]:not(html):not(body):not(.deferredfeedback):not(.has-feedback):not(#content)
@@ -3390,9 +3412,9 @@ _wtInit.js  # from Fanboy's
 /orphus.gif
 /smcsurvey
 
-
-
+!!
 !! up button (and down too, sometimes)
+!!
 ! Ru AdList and Fanboy's rule
 ##[aria-label="Back to top"]
 ##[class$="-arrow-up"]:not(html):not(body)
@@ -4029,8 +4051,7 @@ _site/gotop.  # from Ru AdList
 /up-button.png
 /widget/buttontop/*
 
-
-
+!
 !! cookies
 ! generalized
 ##[class*="Cookie"]:not(html):not(body):not(article)
@@ -4466,9 +4487,10 @@ _cookie_policy_  # from Fanboy's and AdGuard
 /wrappermessagingwithoutdetection.js$important  # is in Fanboy's, EasyList, Adguard
 /ws5_eucookie/*  # from EasyList
 
-
-
+!
+!!
 !! snowflakes
+!!
 -christmasification-  # from Ru AdList
 _christmaslights.js  # from Ru AdList
 /christmas-snow.js  # from Ru AdList
@@ -4501,9 +4523,10 @@ _snowstorm-min.js  # from Ru AdList
 ||cdnjs.cloudflare.com/ajax/libs/snowstorm/$script,important  # from uBlock
 ##.snowflake
 
-
-
+!
+!!
 !! age notices
+!!
 /16.png$domain=~codingame.com|~tildacdn.com
 /16+.png
 /16plus.png
@@ -4543,9 +4566,10 @@ _snowstorm-min.js  # from Ru AdList
 ##.rating-18
 ##.ww-18-plus
 
-
-
+!
+!!
 !! register alert
+!!
 ##.cGuestTeaser
 ###elGuestTerms
 ###greeting_section
@@ -4576,9 +4600,10 @@ _snowstorm-min.js  # from Ru AdList
 ##.welcome-msg
 ###welcome_widget
 
-
-
+!
+!!
 !! apps
+!!
 /applestore.png
 /app__app-store.png
 /app-icon-app-store.svg
@@ -4646,9 +4671,10 @@ _snowstorm-min.js  # from Ru AdList
 ##.site-footer_menu--mobile-app-links
 ##.t-appdownload
 
-
-
+!
+!!
 !! signatures on forums
+!!
 ||steamsignature.com^$third-party  # from RU Adlist
 ##.author-signature
 ##.comment-signiture
@@ -4674,9 +4700,10 @@ _snowstorm-min.js  # from Ru AdList
 ##.UserSignature
 ##.yafsignature
 
-
-
+!
+!!
 !! subscribe forms
+!!
 /ico_subscribe.png
 /newsletter/*  # ||nitrocdn.com/*/newsletter/
 /newsletterwidget/*
@@ -4778,23 +4805,27 @@ _snowstorm-min.js  # from Ru AdList
 ! from Fanboy's
 ##.widget_newsletters
 
-
-
+!
+!!
 !! js off
+!!
 ##.javascriptoff
 ##.no-jscript
 ###noscript-warning
 
-
-
+!
+!!
 !! scripts
+!!
 ! scripts in uploads folder are highly suspicious
 ! Not ideal Adguard rule, but 99%+ sites are covered well
 /wp-content/uploads/*/*.js$domain=~linode.com  # initially from Adguard
     ! on linode.com: /wp-content/uploads/bb-plugin/cache/*.js
 
-
+!
+!!
 !! viewed products
+!!
 /recently-viewed/*
 ##.catalog-products-viewed
     ! 338lm.ru##.catalog-products-viewed
@@ -4821,9 +4852,10 @@ _snowstorm-min.js  # from Ru AdList
 ###visitedGoodsContanier
 ##.widget-part-products-viewed
 
-
-
+!
+!!
 !! payment methods
+!!
 ! С 2022-02 правила по платежным системам морально устарели... По крайней мере, в России и Беларуси.
 !/applepay.*$image
 !/googlepay.*$image
@@ -4953,9 +4985,10 @@ _snowstorm-min.js  # from Ru AdList
 !##.visa
 !##.visae
 
-
-
+!
+!!
 !! countdowns
+!!
 ~bizon365.ru,~clickmeeting.com,~needrom.com,~pornolab.net,pruffme.com,~rc.show,~usersdrive.com,~worknf.ru##[class*="Countdown"]:not(html):not(body):not(article)
 ~bizon365.ru,~clickmeeting.com,~needrom.com,~pornolab.net,pruffme.com,~rc.show,~usersdrive.com,~worknf.ru##[id*="Countdown"]:not(html):not(body):not(article)
 ~bizon365.ru,~clickmeeting.com,~needrom.com,~pornolab.net,pruffme.com,~rc.show,~usersdrive.com,~worknf.ru##[class*="countdown"]:not(html):not(body):not(article)
@@ -4987,9 +5020,10 @@ _snowstorm-min.js  # from Ru AdList
 /sales-countdown-timer/*
 /ultimate-countdown-timer*$important
 
-
-
+!
+!!
 !! quickorder buttons
+!!
 /buyoneclick/
 /buyoneclick.js
 /singleclick.js
@@ -5067,8 +5101,10 @@ _snowstorm-min.js  # from Ru AdList
 ##.singleclick
 ##.wrapp_one_click
 
-
+!
+!!
 !! quickviews
+!!
 ##.catalog-fast-view
 ##.fast-view
 ##.fast_view_block
@@ -5079,8 +5115,10 @@ _snowstorm-min.js  # from Ru AdList
 ##.quick-view
 ##.quick-view-btn
 
-
+!
+!!
 !! brands list
+!!
 ###all_brands
 ##.b-brands
 ~carsguru.net,~e.foundation,~itel-life.com##.brand
@@ -5120,9 +5158,10 @@ _snowstorm-min.js  # from Ru AdList
 /images/brand*$image
 /logos/*$domain=~vse.fm
 
-
-
+!
+!!
 !! modals - was experimental, disabled
+!!
 !~calc.ytong.ru,~forumhouse.ru,~dns-shop.ru,~pass.rzd.ru,~sketchup.com,~bonus-spasibo.ru,~spasibosberbank.ru##.fade
 !~forumhouse.ru,~dns-shop.ru,~pass.rzd.ru##.modal
 !~forumhouse.ru,~dns-shop.ru,~pass.rzd.ru##.modal-body
@@ -5149,7 +5188,10 @@ _snowstorm-min.js  # from Ru AdList
 !~drupal.org###colorbox
 !##.b-visitModal2_popup
 
+!
+!!
 !! modals v2
+!!
 turboimagehost.com##.fade
 turboimagehost.com##.modal
 turboimagehost.com##.modal-footer
@@ -5260,8 +5302,10 @@ turboimagehost.com##.modal-footer
     ! /tardisrocinante/screx.js
     ! /tardisrocinante/script_delay.js
 
-
-! noisy gifs and smiles
+!
+!!
+!! noisy gifs and smiles
+!!
 ! (some sites use not only *.gif there)
 !
 ! annoying gifs rules
@@ -5657,9 +5701,10 @@ discordemoji.com$3p
 /wp-emoji*$script,stylesheet
     ! /wp-emoji.js
 
-
-
+!
+!!
 !! tickers and marquees
+!!
 /news-ticker/*
 /jquery.jconveyorticker.min.js
 /jquery.marquee
@@ -5696,9 +5741,10 @@ moiobzor.su###webticker
 prosud24.ru###showticker
 tarif-24.ru##.mh-ticker-bottom
 
-
-
+!
+!!
 !! popups about "wrong browser"
+!!
 /browser-updater/*  # is in Adguard, modified
 /browser-update-toolbar/*
 /browser-update-toolbar.js
@@ -5707,9 +5753,10 @@ tarif-24.ru##.mh-ticker-bottom
 /outdatedbrowser/*
 /outdatedbrowser.min.js
 
-
-
+!
+!!
 !! seo and copyrights
+!!
 /copirate.js
 /copy.js  # from Ru AdList
 /copy.min.js
@@ -5764,8 +5811,10 @@ tarif-24.ru##.mh-ticker-bottom
 ##.seoText
 ##.seotop
 
-
+!
+!!
 !! add to favorites
+!!
 ##[href="javascript:bookmark()"]
 ##.add2fav
 ##.add_fav
@@ -5790,10 +5839,10 @@ tarif-24.ru##.mh-ticker-bottom
     ! lordfilms-s.art##.ffav
     ! zetserial.online##.ffav
 
-
-
-
+!
+!!
 !! forum engines elements
+!!
 /avatar/*.gif  # many noisy forum gifs
 /file.php?avatar=*.gif  # many noisy forum gifs
 /folder_hot.gif
@@ -5922,8 +5971,10 @@ tarif-24.ru##.mh-ticker-bottom
 ##.classic-textwidget
 ##.custom-classic-textwidget
 
-
+!
+!!
 !! "Reading time" labels
+!!
 ##[class*=reading-time]
     ##.byline-reading-time
         ! lakshmikanth.com##.byline-reading-time
@@ -6083,9 +6134,10 @@ tarif-24.ru##.mh-ticker-bottom
 ##.notification-bar
 ###notification-bar
 
-
-
-! bottom bars
+!
+!!
+!! bottom bars
+!!
 ###bottom-bar
     !martijnbrant.net###bottom-bar
 ~rvc.global##.bottom-bar
@@ -6106,8 +6158,8 @@ tarif-24.ru##.mh-ticker-bottom
     !cloudwards.net##.sticky-bottom-bar
     !commquer.com##.sticky-bottom-bar
 
-
-
+!
+!
 ##.footer-text
     !fishingstore.ru##.footer-text
     !iseptick.ru##.footer-text
@@ -6123,9 +6175,10 @@ tarif-24.ru##.mh-ticker-bottom
 ##.qpsButton
 ##.youcandoblock
 
-
-
+!
+!!
 !! discount badges and stickers
+!!
 ~pikabu.monster,~vps.today##.badge
     ! Exclusions:
     ! pikabu.monter: analytical service, doesn't sell items
@@ -6142,9 +6195,10 @@ tarif-24.ru##.mh-ticker-bottom
     ! popadiv10.ru##.stickers
     ! volveter.ru##.stickers
 
-
-
+!
+!!
 !! "old prices" (marketing striked)
+!!
 ##.old-price
     ! air-gun.ru##.old-price
     ! vseinstrumenti.ru##.old-price
@@ -6154,9 +6208,10 @@ tarif-24.ru##.mh-ticker-bottom
     ! kns.ru##.price-old
     ! petrasport.ru##.price-old
 
-
-
+!
+!!
 !! fonts
+!!
 ! Block third-party fonts:  https://collinmbarrett.com/block-web-fonts/
 !*$font,third-party,domain=~aliexpress.com|~alicdn.com|~trello.com - don't. Many sites uses special icons from custom fonts.
 ! Also see https://fanboy.co.nz/fanboy-antifonts.txt
@@ -6166,16 +6221,18 @@ tarif-24.ru##.mh-ticker-bottom
 ! It seems it is not a good idea... Disabled
 !fonts.gstatic.com^$important,domain=floatplane.com|google.com|youtube.com|bloble.io|regexpal.com
 
-
-
+!
+!!
 !! local resources
+!!
 ||localhost^$3p,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost  # Block Outsider Intrusion into LAN  # in the wild: didomi.io calls script http://localhost/web/tracking-hbspt-management-v2.js
 *$strict3p,ipaddress=lan,from=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost  # Block Outsider Intrusion into LAN
 @@://localhost/$generichide  # from EasyList
 
-
-
+!
+!!
 !! swf
+!!
 ! swf is buggy, non-secure and deprecated
 ! also see https://github.com/swfobject/swfobject : "SWFObject is no longer in active development. Flash Player is on the decline, and the authors of SWFObject have moved on to other projects."
 ! update: from 2020-12-31 Adobe Flash is end of life. See https://www.adobe.com/products/flashplayer/end-of-life.html
@@ -6226,9 +6283,10 @@ tarif-24.ru##.mh-ticker-bottom
     ! rc.show / pruffme.com - Russian webinar service. Yes, it's bugged under the hood
     ! roscosmos.ru - Russian SpaceX (almost)
 
-
-
+!
+!!
 !! disabling serice workers
+!!
 ! https://developers.google.com/web/fundamentals/primers/service-workers/
 ! https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
 /offline-service-worker.js
@@ -6248,9 +6306,10 @@ tarif-24.ru##.mh-ticker-bottom
     ! Exclusions:
     ! hh.ru: for their chatik  # Update: unneeded
 
-
-
+!
+!!
 !! sticky
+!!
 /advanced-hooks-sticky-header
 /carbon_sticky.js
 /carbon_sticky_ads.js
@@ -6308,9 +6367,10 @@ tarif-24.ru##.mh-ticker-bottom
     ! mobizap.ru###default-select-region-modal
     ! partslist.su###default-select-region-modal
 
-
-
+!
+!!
 !! reading progress stripes
+!!
 /jquery.progressbar.min.js
 /nprogress/nprogress.js
 #.eb-reading-progress
@@ -6329,14 +6389,16 @@ tarif-24.ru##.mh-ticker-bottom
 ##.scroll-bar
 ###wtr-progress
 
-
-
+!
+!!
 !! related articles in the miidle of the text (inline related)
+!!
 ##.inlinemore
 
-
-
+!
+!!
 !! other
+!!
 ##[href="http://www.e-host.org.ua"]
 ##[href^="https://www.paypal.me/"]
 ###dmca_button
@@ -6379,11 +6441,11 @@ tarif-24.ru##.mh-ticker-bottom
 ##.widget_recent_comments
 /recent_comments_widget.js
 
-
+!
 ! shopify 3p loans
 ##shopify-payment-terms
 
-
+!
 # франшиза citysites.ua / portal-goroda.ru / citysites.info
 # несколько десятков сайтов, ага. Днепропетровск, Севастополь - в одном флаконе
 /cap.jpg
@@ -6394,16 +6456,15 @@ tarif-24.ru##.mh-ticker-bottom
 ##app-companies-news
 *##.article-card:has-text(/Гороскоп|зодиак/)
 
-
-
+!
 ! всякие библиотеки, большей частью подлитресовские
 ##.stopcontent
     ! (не всё)
     ! knizki.com##.stopcontent
     ! online-knizki.com##.stopcontent
 
-
-
+!
+!
 !! It is a sublist of Yet another small uBlock filter list
 ! See https://github.com/mtxadmin/ublock for details
 !
