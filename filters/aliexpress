@@ -5,8 +5,6 @@
 ! Alibaba and Aliexpress related hosts and filters
 ! update: hosts transferred to _marketing__subdomains
 
-
-
 !! URL parameters
 
 ! See aff_ parameters in _removeparams
@@ -168,7 +166,6 @@ aliexpress.*$removeparam=ws_ab_test
 
 taobao.com$removeparam=xId  # from Adguard
 
-
 ! todo: aliexpress parameters
 !srcSns
 !spreadType
@@ -180,7 +177,6 @@ taobao.com$removeparam=xId  # from Adguard
 aliexpress.*$removeparam=scenario
 
 aliexpress.*$removeparam=tpp_rcmd_bucket_id
-
 
 !! alibaba filters and subdomains
 ! many rules match earlier added rules for Aliexpress
@@ -219,7 +215,6 @@ alibaba.com##.pmod-social-card
 alibaba.com##.next-progress-line
 ! "get the app"
 alibaba.com##.sc-hd-download-link
-
 
 !! aliexpress filters and subdomains
 
@@ -1262,7 +1257,7 @@ aliexpress.*##div[class*=product-fix-sns]
 
 ! popups 2025-04
 aliexpress.*##.go_gs
-aliexpress.*##.go_gp
+!aliexpress.*##.go_gp - update: now it's a catalog list too
 
 aliexpress.*##.law-18-dialog
 
@@ -1395,7 +1390,6 @@ aliexpress.*##+js(set,window.Tracker,noopFunc)
 aliexpress.*##+js(set,tracker.install,noopFunc)
 aliexpress.*##+js(set,tracker.log,noopFunc)
 
-
 ! is in Adguard and Ru AdList (https://forums.lanik.us/viewtopic.php?f=102&t=44550)
 aliexpress.*###ae-ru-privacy-banner
 aliexpress.*###ae-ru-privacy-banner__container
@@ -1440,7 +1434,6 @@ aliexpress.*##.messages_container
 
 ! strange popup layer
 aliexpress.*##.__resizable_base__
-
 
 !! unneeded hosts, tested for months
 
@@ -1555,7 +1548,6 @@ aliexpress.ru#@#div[class^="styles_wrapper_"]
 
 !cfus.aliyun.com
 
-
 !/pointman/*
 ||alicdn.com/pointman/
 ||alicdn.com/*/pointman/
@@ -1598,7 +1590,6 @@ alibabacloud.com##.hmod-alicloud-contact-sales-support
 aliexpress.*##a:has-text(/^$/)
 aliexpress.*##span[ae_button_type="detail-sns-shares"]
 
-
 !! Ali related sites stealing cashback
 
 ali.onl  # ali url shortener which often used to steal cashback
@@ -1606,7 +1597,6 @@ ali.pub  # ali url shortener which often used to steal cashback
 s.click.aliexpress.com  # ali url shortener which often used to steal cashback
 ! ali indirect cashback-stealing links
 ##[href^="http://s.click.aliexpress.com/"]
-
 
 ali.click
 epn.bz  # if you want to allow: @@||epn.bz$first-party  # epn.bz related sites stealing cashback
@@ -1623,8 +1613,6 @@ mysaleday.com
 allshops.me
 alii.pub  # epn
 shp.pub  # epn
-
-
 
 !! sites not directly related to Aliexpress itself, but discussion forums about it, product listings and reviews, etc
 
