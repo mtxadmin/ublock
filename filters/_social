@@ -1798,16 +1798,17 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ##img[alt^="Share this"]
 ! from Fanboy's
 ##img[alt^="Share This"]
-~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~webinar.ru##[class*="Sharing"]:not(html):not(body):not(article)
-~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~webinar.ru##[id*="Sharing"]:not(html):not(body):not(article)
-~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~webinar.ru##[class*="sharing"]:not(html):not(body):not(article):not(.sharing-enabled):not(#device-sharing):not(#folder-sharing)
-~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~webinar.ru##[id*="sharing"]:not(html):not(body):not(article):not(#device-sharing):not(#folder-sharing)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~teleboss.ru,~webinar.ru##[class*="Sharing"]:not(html):not(body):not(article)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~teleboss.ru,~webinar.ru##[id*="Sharing"]:not(html):not(body):not(article)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~teleboss.ru,~webinar.ru##[class*="sharing"]:not(html):not(body):not(article):not(.sharing-enabled):not(#device-sharing):not(#folder-sharing)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~teleboss.ru,~webinar.ru##[id*="sharing"]:not(html):not(body):not(article):not(#device-sharing):not(#folder-sharing)
     ! Exclusions:
     ! bitrix24 - internal widgets. But, just to be sure:
         ||bitrix24.com/*/sharing$3p
         ||bitrix24.net/*/sharing$3p
         ||bitrix24.ru/*/sharing$3p!
     ! mts-link.ru, webinar.ru - screensharing*, main div
+    ! teleboss.ru - screensharing
 !
 ! ends with -soc
 ##[class$="-soc"]:not(html):not(body):not(article)
