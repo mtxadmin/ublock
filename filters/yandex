@@ -6,7 +6,6 @@
 ! 
 ! (domains see in _marketing_yandex)
 
-
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 ! doesn't work
 !yandex.*,yastatic.net##+js(remove-attr.js, onclick|onmousedown )
@@ -825,6 +824,8 @@ yandex.*,ya.ru###alice-fab
 yandex.*,ya.ru##.alice-fab__promo
 yandex.*,ya.ru##.AliceFabButton
 
+yandex.*,ya.ru##.YndxBug
+
 ! is in Ru AdList
 zen.yandex.*##.feed__row > .feed__item-wrap div::after:style(background: transparent !important)
 ||dzen.ru/media/stub-sw.js
@@ -864,7 +865,6 @@ ya.ru,yandex.*##.floating-links
 !yandex.*##li.serp-item:has([class*=label_type_aroxf])
 !yandex.*##li.serp-item:has([class*=label_type_hyaxq])
 !yandex.*##li.serp-item:has([class*=label_type_hyaxq])
-
 
 ||yandex.ru/bell/api/v1/get-ticker
 
@@ -1148,7 +1148,6 @@ turbopages.org##.ext-embed
 turbopages.org##.ext-embed__loader
 turbopages.org##.header_wide-logo
 turbopages.org##.turbo-image_type_logo
-
 
 ! zen.yandex.ru parameters todo
 ! from
