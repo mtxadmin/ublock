@@ -24,8 +24,6 @@
 ! As a workaround, for instance, you can add [^=]*= construction or something similar, it will cover 99,9% cases
 !   Note: /^name/  doesn't need to convert to /^name[^=]*=/  ("param2=name" cannot match /^name/)
 
-
-
 !! rules
 
 ! Good policy from Adguard:
@@ -821,9 +819,10 @@ $removeparam=fref  # from Ru AdList
 
 ! from - in general, don't. Yandex sometimes glitches.
 ! v2: with yandex excluded
-$removeparam=from,from=~alfabank.ru|~jlcpcb.com|~account.mail.ru|~id.mail.ru|~auth.mail.ru|~e.mail.ru|~nextdns.io|~ozon.ru|~ozone.ru|~sberbank.ru|~tradingview.com|~uds.app|~yandex.*
+$removeparam=from,from=~alfabank.ru|~jlcpcb.com|~account.mail.ru|~id.mail.ru|~auth.mail.ru|~e.mail.ru|~auto.ru|~nextdns.io|~ozon.ru|~ozone.ru|~sberbank.ru|~tradingview.com|~uds.app|~yandex.*
     ! Exceptions:
     ! auth.mail.ru exception is from Ru AdList. Don't know, but ok. Update: removing it prevent useful popups, so it's really ok.
+    ! auto.ru - it needed. Yandex project.
     ! account.mail.ru - v2 of it (auth.mail.ru)
     ! alfabank.ru - from is "date from"
     ! jlcpcb.com - exclusion from Adguard. Ok.
@@ -2461,7 +2460,6 @@ $removeparam=yredirect  # from Ru AdList
 $removeparam=zmg_code  # from DandelionSprout's URLShortener
 
 $removeparam=_zucks_suid  # from Adguard
-
 
 !! domains
 
