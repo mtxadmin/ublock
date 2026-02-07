@@ -1206,7 +1206,9 @@ _banner_rotator.php  # from Adguard
     ! ozon - marketplace, in general it is false-positive, useful css&scripts
     ! pruffme.com - webinar service (not only used by spammers)
     ! music.yandex.ru - not landings, these urls are API-driven (api.music.yandex.ru/landing/block/chart?limit=10 , api.music.yandex.ru/landing/block/editorial/new-releases/ALL_albums_of_the_month)
-/landings/*
+/landings/*$domain=~wildberries.ru
+    ! Exclusions:
+    ! wildberries.ru - marketplace scripts, seems like a false positive
     ! ||kontur.ru/landings/
     ! ||mokka.ru/landings/  # mokka.ru/landings/seo-promo/
 /lazy-loader-banner/*
