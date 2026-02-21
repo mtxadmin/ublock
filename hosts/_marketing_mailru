@@ -4,7 +4,6 @@
 !
 ! Tracking and marketing subdomains of mail.ru
 
-
 !! rules
 
 ||mail.ru/api-proxy/rb-mimic/  # from Ru AdList
@@ -99,7 +98,6 @@ mail.ru##.amb_more-pulse
 
 1l-hit.mail.ru  # from EasyPrivacy, Adguard, Ru AdList
 1l-view.mail.ru  # from Dan Pollock's hosts file
-privacy-cs.mail.ru  # ad scripts  # is in Ru AdList
 
 ad.mail.ru$important
 alt-ad.mail.ru
@@ -978,6 +976,11 @@ marusia-web.go.mail.ru  # popups
 
 media-advcycle.imgsmail.ru  # from Adguard, Ru AdList
 
+media-poll.mail.ru
+media-trend.mail.ru
+
+media-sellgate.mail.ru  # root 403
+
 media-stat.mail.ru  # from Ru AdList
 
 mediascope.mail.ru  # app banners
@@ -990,15 +993,33 @@ mradx.ru  # from Ru AdList  # 2025
 
 my.mail.ru  # from ShadowWhisperer's Tracking
 
+news.mail.ru  # also in in _fakenews
+
 ok.mail.ru  # from Ru AdList
 
-online.mirabilis.com  # from Ru AdList  # yes, ICQ belongs to mail.ru
+!online.mirabilis.com  # from Ru AdList  # yes, ICQ belongs to mail.ru  # closed
 
-privacy-cs.mail.ru  # from NoADS_RU
+predict.mail.ru  # root 403
+    ! analytics.predict.mail.ru
+    ! api.predict.mail.ru
+    ! esc.predict.mail.ru
+    ! five.predict.mail.ru
+    ! geo-apart.predict.mail.ru
+    ! ptd.predict.mail.ru
+    ! sochi-park.predict.mail.ru
+    ! staging-analytics.predict.mail.ru
+    ! staging-esc.predict.mail.ru
+    ! staging-sochi-park.predict.mail.ru
+    ! weblink.predict.mail.ru
+
+privacy-cs.mail.ru  # ad scripts  # is in Ru AdList, NoADS_RU
 
 pulsarback.mail.ru  # from EasyPrivacy
 
-pulse.mail.ru$3p  # ||pulse.mail.ru/pulse-widget.js$domain=~mail.ru  # is in Ru AdList
+# root now redirects to dzen.ru - Yandex projects. 
+# they suppose to be competitors, and not broadcast propaganda together, aren't they?
+pulse.mail.ru  # ||pulse.mail.ru/pulse-widget.js$domain=~mail.ru  # is in Ru AdList
+pulse-streamhub.mail.ru
 
 push-me.mail.ru  # app requests
 alt-push-me.mail.ru  # app requests
@@ -1877,6 +1898,8 @@ top-staging.mail.ru  # from Adguard and uBlock filters
 trk.mail.ru$all
 
 tv.mail.ru  # from blocks of Lithuania
+
+vfokuse.mail.ru  # also in in _fakenews
 
 webagent.mail.ru  # from Ru AdList
 
