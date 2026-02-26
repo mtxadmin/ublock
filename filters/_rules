@@ -885,8 +885,9 @@ _adverts.js  # from EasyList
 /banery/*
 /%21banery/*
 !old ver: /banner*$important,domain=~archive.org|~doshirak.com|~mts-link.ru|~sberbank.ru|~webinar.ru - this one sometimes doesn't work. So, after experiments, adding $all parameter to it. Update: maybe asterisk was needed
-/banner*$all,important,domain=~archive.org|~bitrix24.*|~doshirak.com|~gosuslugi.ru|~ktalk.ru|~livejournal.com|~mts-link.ru|~qwen.ai|~sberbank.ru|~sbis.ru|~webinar.ru|~wildberries.*
+/banner*$all,important,domain=~aliexpress.*|~archive.org|~bitrix24.*|~doshirak.com|~gosuslugi.ru|~ktalk.ru|~livejournal.com|~mts-link.ru|~qwen.ai|~sberbank.ru|~sbis.ru|~webinar.ru|~wildberries.*
     ! Exclusions:
+    ! aliexpress.* - internal banners module
     ! bitrix24 - internal banners module. But, just to be sure:
         ||bitrix24.com/*/banner$3p
         ||bitrix24.net/*/banner$3p
@@ -2732,8 +2733,9 @@ volveter.ru##.has_offer_prop
 /amp-geo-  # from EasyPrivacy
 _analytics.js?  # from EasyPrivacy
 .analytics.min.  # from EasyPrivacy
-/analytics^$domain=~bitrix24.*
+/analytics^$domain=~aliexpress.*|~bitrix24.*
     ! Exclusions:
+    ! aliexpress.* - internal sh*t
     ! bitrix24 - internal sh*t. But, just to be sure:
         ||bitrix24.com/*/analytics$3p
         ||bitrix24.net/*/analytics$3p
