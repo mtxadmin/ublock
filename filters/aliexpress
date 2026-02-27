@@ -1255,6 +1255,8 @@ aliexpress.*##.search-item-card-wrapper-gallery:has(div:has-text(/^AD$/i))
 ! Instead that: block empty overlay
 ! it blocks delivery map. Update: it doesn't, it was an error on Ali side  Update2: hmm... Again. Iframe - cainiao-global.aliexpress.com
 aliexpress.*##.next-overlay-backdrop:has-text(/^$/)
+! location popups
+aliexpress.*##[class*=ShipToHeaderItem_GeoTooltip]
 
 ! popups
 aliexpress.*##div[class*=product-fix-sns]
