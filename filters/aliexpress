@@ -218,6 +218,9 @@ alibaba.com##.sc-hd-download-link
 
 !! aliexpress filters and subdomains
 
+    ! top
+aliexpress.*##[class^=snow-container_SnowContainer]:style(position:static !important)
+
     ! random banners
 !aliexpress.*##._2lsU7
 !aliexpress.*##._3KrBP
@@ -257,7 +260,7 @@ shoppingcart.aliexpress.*##.empty-default
 aliexpress.*##.prime-slideshow
 aliexpress.*##.slick-slider
 
-    ! banner sliders
+    ! banner carousel sliders
 aliexpress.*##[class^=CarouselShelfWrapper]
 aliexpress.*##[class^=CarouselBanner]
 
