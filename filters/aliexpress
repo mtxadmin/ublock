@@ -220,6 +220,12 @@ alibaba.com##.sc-hd-download-link
 
     ! top
 aliexpress.*##[class^=snow-container_SnowContainer]:style(position:static !important)
+! popup, дубликат заголовка
+aliexpress.*##[class^=SnowStickyOffer]
+aliexpress.*##[class^=RedFilter_FilterHeader]:style(position:static !important)
+
+    ! bottom
+aliexpress.*##[class^=RedFooter_FooterTop]
 
     ! random banners
 !aliexpress.*##._2lsU7
@@ -251,6 +257,17 @@ aliexpress.*##.instore-info-rcmds
 aliexpress.*##[class^=price-banner]
 aliexpress.*##div[data-spm="newuser"]
 aliexpress.*##div[data-spm="sale_savings"]
+!
+! подсовываемое промо-говно, карточки товаров
+aliexpress.ru##[class*=red-snippet_RedSnippet__vertical]:has(span[class^=snippet-element]:has-text(Рекомендуем))
+!aliexpress.ru##[data-type="UniversalSnippet"]:has([data-type="PartWrap-Text"]:has-text(Рекомендуем))
+aliexpress.ru##[class*=SnowSearchProductFeed_List__universalSnippetLink]:has([data-type="PartWrap-Text"]:has-text(Рекомендуем))
+!
+! подсовываемое промо-говно, раздел магазины
+aliexpress.*##[class^=RedTopShops_]
+!
+! подсовываемое промо-говно, раздел в корзине
+aliexpress.*##[class^=SnowCartRecommendWrapper]
 
     ! banner in empty shopping cart
 shoppingcart.aliexpress.*##.big-sale.empty-default
@@ -263,6 +280,7 @@ aliexpress.*##.slick-slider
     ! banner carousel sliders
 aliexpress.*##[class^=CarouselShelfWrapper]
 aliexpress.*##[class^=CarouselBanner]
+aliexpress.*##[class^=ModuleBannerNew]
 
     ! cookies notice
 ! is in AdGuard, Fanboy's, EasyList
@@ -310,6 +328,7 @@ aliexpress.*##[class^=FestivalVenue_]
 ||aliexpress.ru/mixer/widgets/bx/TopBanner/
 ||st.aliexpress.ru/mixer-storage/homePage/static/mixer-widgets/$image
 
+
     ! store banners
 aliexpress.*##.product-store-banner
 aliexpress.*##.store-banner
@@ -346,6 +365,8 @@ aliexpress.*##.atwl-btn-wrap
     ! labels
 aliexpress.*##[class^=product-snippet_ProductSnippet__tag]
 ||alicdn.com/kf/*/96x96.png
+aliexpress.*##[class^=red-snippet_RedSnippet__promoTags]
+aliexpress.*##[data-type="PartWrap-Image"]
 
     ! idea is good but realization is bad
 aliexpress.*##.ask-buyers
@@ -1293,6 +1314,8 @@ aliexpress.*##[class^=ShipToHeaderItem_Backdrop]
 aliexpress.*##[class^=ShipToHeaderItem_Tooltip__tooltipWrapper]:has-text(Все верно)
 aliexpress.*##[class^=ShipToHeaderItem_GeoTooltip]
 aliexpress.*##[class^=ShipToHeaderItem_Tootlip]
+aliexpress.*##[class^=RedSearchBar_Dropdown__backdrop]
+aliexpress.*##[class*=SnowOnboardingWidget]
 
 ! other
 ! from uBlock filters
@@ -1320,6 +1343,7 @@ aliexpress.*##.hot-products
 aliexpress.*###fd-channel-title
 aliexpress.*##.fm-sns
 aliexpress.*##[class*=SnowFloatPanel_]:style(position:static !important)
+aliexpress.*##[class^=SnowAuthContextWidget_AuthForm__loginIcon]
 
 ||alibaba.com/ts?  # is in EasyPrivacy
 ||taobao.com/ts  #||fourier.taobao.com/ts
@@ -1354,7 +1378,6 @@ aliexpress.*##[class*=footerApps]
 aliexpress.*##[class*=_appIcon]
 aliexpress.*##[class*=_appsIcon]
 aliexpress.*##[class^=SnowFooter_StoreButton]
-aliexpress.*##[class^=RedFooter_FooterTop]
 ||aliexpress.ru/mixer-storage/qr-code.png
 aliexpress.*##._header_qrCode_
 aliexpress.*##img[alt="download APP"]
@@ -1530,6 +1553,8 @@ aliexpress.*##[class^=styles_middleBlock]
 ||aliyun.com/scratchCardSlide/
 ||aliyun.com/*/scratchCardSlide/
 ||aliyun.com/error
+||aliexpress.ru/v1/collect/
+||aliexpress.ru/aer-jsonapi/ppc/ad-tracker/
 
 !gpsfront.aliexpress.com - it's related products, don't block!
 !gpsfront.aliexpress.com/getRecommendingResults.do
