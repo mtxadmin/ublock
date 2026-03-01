@@ -443,6 +443,7 @@
     ! /plugins/advanced-ads-responsive/*
     ! /plugins/advanced-ads-tracking/*
     /advanced-ads-*$domain=~wordpress.org  # is in EasyList
+    /advanced-ads-pro/modules/*$script  # is in EasyList
     ! is in EasyList
     ##.advads-widget
     ! is in EasyList
@@ -463,6 +464,8 @@
 /plugins/advanced-widget-manage/*  # from Adguard, uBlock filters - Badware
 
 /plugins/advert/*$important  # from Adguard
+
+/plugins/advertise/*
 
 /plugins/advertising/*  # from EasyList
 
@@ -914,6 +917,9 @@
 /plugins/countdown-wpdevart-extended/*
 
 /plugins/counter/*$important
+
+/plugins/counter-block/*$important
+    ! @@||clcouncil.org/wp-content/plugins/counter-block/assets/js/counter.js?$script,~third-party  # from EasyPrivacy  # from EasyPrivacy
 
 /plugins/counter-number-showcase/*
 
@@ -2217,7 +2223,7 @@
 
 /plugins/screets-lcx/*
 
-/plugins/script-manager/*
+/plugins/script-manager/*  # now is in EasyList
     ! ||hanime.xxx/wp-content/plugins/script-manager/assets/js/script-manager.js  # from Adguard
     ! ||hentaidude.xxx/wp-content/plugins/script-manager/  # from EasyList
     ! /plugins/script-manager/assets/js/script-manager.js$domain=nhentai.io|hanime.xxx|hentaihaven.xxx  # from Adguard
