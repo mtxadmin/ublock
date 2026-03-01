@@ -1786,10 +1786,11 @@ _rebid.js  # from EasyList
 ~clutch.ua,~depo.ua,~kodi.wiki,~politeka.net,~strana.today,~strana.ua,~znaj.ua##[id*="partner"]:not(html):not(body):not(article):not(.adpartner_branding):not(#adpartner_branding)
     ! id="adpartner_branding"
     ! ##.partner_links
-~reuters.com##[class*="paywall"]:not(html):not(body):not(article)
+~klerk.ru,~reuters.com##[id*="paywall"]:not(html):not(body):not(article)
+~klerk.ru,~reuters.com##[class*="paywall"]:not(html):not(body):not(article)
     ! Exclusions:
+    ! klerk.ru - yes, the site is paywalled, but ##.paywall is the main div
     ! reuters.com - yes, the site is paywalled, but ##.paywall-* is the main div
-##[id*="paywall"]:not(html):not(body):not(article)
 ##[class*="reklam"]:not(html):not(body):not(article)
 ##[id*="reklam"]:not(html):not(body):not(article)
     ! from EasyList
