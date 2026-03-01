@@ -658,6 +658,9 @@ ozon.*##[data-widget="annotation"]:has-text(применяются рекоме�
 ! wildberries.co.il - now is redirect to global.wildberries.ru
 ! wildberries.fr - now is redirect to wildberries.ru
 !
+||wildberries.ru/__internal/banners/
+||wildberries.co.il/__internal/banners/
+||wildberries.fr/__internal/banners/
 ||wildberries.ru/stats/
 !||wildberries.co.il/stats/
 !||wildberries.fr/stats/
@@ -731,6 +734,7 @@ wildberries.ru##.tooltip-menu-purchases-cert
 wildberries.ru##.subscription-popup__wrapper.popup
 wildberries.ru##.overlay
 wildberries.ru##[class*=subscriptionPopupOverlay]
+wildberries.ru##.tooltip-simple:has-text(сертификат)
     ! banners and promos
 ||wbbasket.ru/*/crm-bnrs/
 wildberries.ru##.i-spec-action
@@ -765,6 +769,10 @@ wildberries.ru##.courier-informer-text
 wildberries.ru##.delivery-block__courier-informer
 ! top promo items. They exist in the top menu, unneeded duplicates
 wildberries.ru##.simple-menu__diamonds
+! "Лотерейные билеты"
+wildberries.ru##[href="/lk/myorders/mechtalliontickets"]
+wildberries.ru##[class^="profile-premium"]
+wildberries.ru##a[href^="/subscription"]
     ! old (striked out) prices
 wildberries.ru##.price-last
 wildberries.ru##.price-old-block
