@@ -2011,7 +2011,9 @@ $removeparam=Source,denyallow=googlevideo.com,domain=~4pda.to|~alfabank.ru|~sear
     ! $removeparam=Source,domain=facebook.com|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion|messenger.com|evga.com  # from DandelionSprout's URLShortener
     ! $removeparam=/^source=igodigital$/  # from DandelionSprout's URLShortener
 
-$removeparam=/^sourceid=/i
+~aliexpress.*$removeparam=/^sourceid=/i
+    ! Exclusions:
+    ! aliexpress.* - in some scenarios, site uses this param for internal functions and doesn't work without it
     ! ||google.*/search$removeparam=sourceid  # from Adguard, Ru AdList and DandelionSprout's ClearURLs for uBo
     ! stripchat.com$removeparam=sourceId  # from Adguard
 
