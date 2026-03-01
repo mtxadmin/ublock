@@ -136,7 +136,7 @@ taobao.com$removeparam=short_name  # from DandelionSprout's ClearURLs for uBo
 ! transferred to _removeparams
 
 ! Found independently, added 2021-05-28
-aliexpress.*$removeparam=sku_id
+!aliexpress.*$removeparam=sku_id  # Update: don't. It's a variant inside sku, "sub-sku"
 
 ! Found independently. Confirmed by months of testing.
 aliexpress.*$removeparam=_t
@@ -260,7 +260,7 @@ aliexpress.*##div[data-spm="sale_savings"]
 !
 ! подсовываемое промо-говно, карточки товаров
 aliexpress.ru##[class*=red-snippet_RedSnippet__vertical]:has(span[class^=snippet-element]:has-text(Рекомендуем))
-!aliexpress.ru##[data-type="UniversalSnippet"]:has([data-type="PartWrap-Text"]:has-text(Рекомендуем))
+!aliexpress.ru##[data-type="UniversalSnippet"]:has([data-type="PartWrap-Text"]:has-text(Рекомендуем)) - это оставляет пробелы, более полный вариант вот:
 aliexpress.ru##[class*=SnowSearchProductFeed_List__universalSnippetLink]:has([data-type="PartWrap-Text"]:has-text(Рекомендуем))
 !
 ! подсовываемое промо-говно, раздел магазины
