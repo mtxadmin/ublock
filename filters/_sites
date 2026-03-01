@@ -6224,6 +6224,8 @@ cont.ws##.channels-panel
 container-solutions.com##.line-top-nav
 ||container-solutions.com/hs-fs/hubfs/$image  # inline related
 
+continue.dev##.pointer-events-none.fixed:has-text(/^$/)
+
 convergeddevices.net###sidebar
 convergeddevices.net###ez-toc-container
 
@@ -21231,6 +21233,8 @@ nliner.by##.news-popular__views
 ||onliner.by/user/avatar/  # noisy gifs in the comments
 onliner.by##.growl-error.growl
 onliner.by##p:has-text(блокировщик рекламы)
+onliner.by##.scrolling-button__container
+onliner.by##.news-media_extended
 
 onlinesim.ru###support
 
@@ -35434,12 +35438,18 @@ zosoptic.ru###phonenum
 ||zosoptic.ru/*/card_sberbank.png
 zosoptic.ru##.agree_button2_slim
 
+||zr.ru/_next/static/media/defaultLogo$image
     ! top
 zr.ru##.header__wrap_fixed:style(position:static !important)
 zr.ru##.header__container:style(position:static !important)
+zr.ru##[class^=styled__LogoContainer]
 	! banners and promos
 zr.ru###wide_readmore:has-text(/Выиграй/i)
 zr.ru##.dondo
+zr.ru##li:has(a[href*="/max.ru"])
+! inline related (seems not related. Maybe some sort of internal banners)
+zr.ru##.readmore
+zr.ru##[class^=styled__Readmore]
     ! socials
 zr.ru##li:has(a[href^="https://ok.ru/"])
 zr.ru##li:has-text(можно читать в)
@@ -35447,8 +35457,6 @@ zr.ru##li:has-text(можно читать в)
 zr.ru##noindex
 zr.ru##.popular__item-counters
 zr.ru##.story-note-subscribe
-! inline related (seems not related. Maybe some sort of internal banners)
-zr.ru##.readmore
 zr.ru##.fly_forms
 zr.ru##.logo-row
 zr.ru###for_footer
