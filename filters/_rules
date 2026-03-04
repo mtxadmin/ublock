@@ -4747,12 +4747,13 @@ _snowstorm-min.js  # from Ru AdList
 ##[class*="morning_email"]:not(html):not(body):not(article)
 ##[id*="morning_email"]:not(html):not(body):not(article)
 ~youtube.com##[class*="Subscr"]:not(html):not(body):not(article)
-~beeonline.ru,~senler.ru,~vk.com##[id*="Subscr"]:not(html):not(body):not(article)
 ! disabled !~adblockplus.org##[class*="subscr"]:not(html):not(body):not(article)
-~beeonline.ru,~platformaofd.ru,~senler.ru,~tgstat.ru,~vk.com##[id*="subscr"]:not(html):not(body):not(article)
+~beeonline.ru,~platformaofd.ru,~senler.ru,~tgstat.ru,~vk.com,~mail.yandex.ru##[id*="Subscr"]:not(html):not(body):not(article)
+~beeonline.ru,~platformaofd.ru,~senler.ru,~tgstat.ru,~vk.com,~mail.yandex.ru##[id*="subscr"]:not(html):not(body):not(article)
     ! Exclusions:
     ! platformaofd.ru - not only socials, but useful buttons too
     ! vk.com - useful buttons
+    ! mail.yandex.ru - false positive
     ! youtube.com - useful buttons
 ! other
 ###dgit-daily-form
