@@ -1845,14 +1845,15 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ~nalog.ru##[class*="Social"]:not(html):not(body):not(article)
     !from Fanboy's: Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
     !##div[class^="SocialIcons_"]
-~nalog.ru##[id*="Social"]:not(html):not(body):not(article)
 ! too many exclusions (not all here). Disabled.
 !~github.com,~koofr.eu,~lamoda.ru,~passport.yandex.ru,~business2community.com##[class*="social"]:not(html):not(body):not(article)
 ! on nalog.ru it is not social buttons, it is a tax name
-~dns-shop.*,~nalog.ru,~zerotier.com##[id*="social"]:not(html):not(body):not(article)
+~dns-shop.*,~nalog.ru,~mail.yandex.ru,~zerotier.com##[id*="Social"]:not(html):not(body):not(article)
+~dns-shop.*,~nalog.ru,~mail.yandex.ru,~zerotier.com##[id*="social"]:not(html):not(body):not(article)
     ! Exclusions:
     ! dns-shop - #product-card-social-activity is reviews div
     ! nalog.ru - Russian Tax Service, needed to login through Gosuslugi or for tax-related options, don't remember
+    ! mail.yandex.ru - false positive
     ! zerotier.com - #94: google, github, microsoft. Only dev-related services
 ##[class*="Sociaux"]:not(html):not(body):not(article)
 ##[id*="Sociaux"]:not(html):not(body):not(article)
