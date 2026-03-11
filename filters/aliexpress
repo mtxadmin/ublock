@@ -93,6 +93,9 @@ aliexpress.com$removeparam=item_id
 
 ||aliexpress.*^$removeparam=mall_affr  # from DandelionSprout's ClearURLs for uBo
 
+! Found independently, added 2026-03-12
+aliexpress.*$removeparam=mixer_rcmd_bucket_id  # some suspicious thing
+
 ! Found independently. Confirmed by months of testing.
 aliexpress.com$removeparam=mp
 
@@ -111,6 +114,9 @@ aliexpress.*$removeparam=pdp_npi  # is in DandelionSprout's URLShortener
 ! Found independently, added 2022-01-11. Later: is in Adguard and DandelionSprout's URLShortener
 aliexpress.*$removeparam=pdp_pi
 
+! Found independently, added 2026-03-12
+aliexpress.*$removeparam=pdp_trigger_item_id  # some suspicious num id
+
 taobao.com$removeparam=ptl  # from Adguard
 
 ! Found independently.
@@ -122,12 +128,21 @@ aliexpress.*$removeparam=rowan_id1
 ! Found independently, added 2021-04-25
 aliexpress.*$removeparam=rowan_msg_id
 
+! Found independently, added 2026-03-12
+aliexpress.*$removeparam=ru_algo_pv_id  # some suspicious long id
+
+! Found independently, added long time ago
+aliexpress.*$removeparam=scenario  # ref
+
 alibaba.com$removeparam=__sceneInfo  # https://m.alibaba.com/product/62078657382/2022-trend-tube-case-design-TWS.html?__sceneInfo=%7B%22cacheTime%22%3A%221800000%22%2C%22type%22%3A%22appDetailShare%22%7D&from=Android
 
 taobao.com$removeparam=shareurl  # from DandelionSprout's ClearURLs for uBo
 tmall.com$removeparam=shareurl  # from DandelionSprout's ClearURLs for uBo
 
 taobao.com$removeparam=short_name  # from DandelionSprout's ClearURLs for uBo
+
+! Found independently, added 2026-03-12
+aliexpress.*$removeparam=shpMethod
 
 ! from Adguard, added 2022-02
 !||aliexpress.$removeparam=sk
@@ -148,7 +163,12 @@ aliexpress.*$removeparam=_t
 ||aliexpress.$removeparam=terminal_id  # is in Adguard
     ! ||aliexpress.*^$removeparam=terminal_id  # is in DandelionSprout's URLShortener
 
-||aliexpress.*^$removeparam=__tppBottom  # from DandelionSprout's URLShortener
+aliexpress.*$removeparam=__tppBottom  # from DandelionSprout's URLShortener
+
+! Found independently, added 2026-03-12
+aliexpress.*$removeparam=tpp_rcmd  # seems like ref
+! Found independently, added long time ago
+aliexpress.*$removeparam=tpp_rcmd_bucket_id
 
 taobao.com$removeparam=traceId  # from Adguard
 
@@ -174,17 +194,6 @@ taobao.com$removeparam=xId  # from Adguard
 !shareId
 !terminal_id
 
-
-aliexpress.*$removeparam=mixer_rcmd_bucket_id  # some suspicious id
-
-aliexpress.*$removeparam=pdp_trigger_item_id  # some suspicious num id
-
-aliexpress.*$removeparam=ru_algo_pv_id  # some suspicious long id
-
-aliexpress.*$removeparam=scenario  # ref
-
-aliexpress.*$removeparam=tpp_rcmd  # seems like ref
-aliexpress.*$removeparam=tpp_rcmd_bucket_id
 
 !! alibaba filters and subdomains
 ! many rules match earlier added rules for Aliexpress
