@@ -2184,6 +2184,10 @@ $removeparam=tracking_type  # from DandeliafftagonSprout's URLShortener
 $removeparam=tracking_user  # from DandelionSprout's URLShortener
 
 $removeparam=traffic_id  # from DandelionSprout's URLShortener
+$removeparam=traffic_source
+    ! adweek.com - blocked entirely, just for information. But.
+    !adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
+    !aliexpress.*$removeparam=traffic_source
 $removeparam=traffic_type  # from DandelionSprout's URLShortener
 
 ! @@$removeparam=transaction_id  # from DandelionSprout's URLShortener  # recheck
@@ -2525,9 +2529,6 @@ adshares.net$removeparam=cid  # from Adguard
 
 ! adsninja.ca - blocked entirely, just for information
 adsninja.ca$removeparam=url  # from uBlock filters
-
-! adweek.com - blocked entirely, just for information. But.
-adweek.com$removeparam=traffic_source  # from Adguard and uBlock filters – Unbreak
 
 ! already blocked
 adthrive.com$removeparam  # from uBlock filters
