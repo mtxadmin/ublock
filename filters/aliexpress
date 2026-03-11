@@ -174,8 +174,16 @@ taobao.com$removeparam=xId  # from Adguard
 !shareId
 !terminal_id
 
-aliexpress.*$removeparam=scenario
 
+aliexpress.*$removeparam=mixer_rcmd_bucket_id  # some suspicious id
+
+aliexpress.*$removeparam=pdp_trigger_item_id  # some suspicious num id
+
+aliexpress.*$removeparam=ru_algo_pv_id  # some suspicious long id
+
+aliexpress.*$removeparam=scenario  # ref
+
+aliexpress.*$removeparam=tpp_rcmd  # seems like ref
 aliexpress.*$removeparam=tpp_rcmd_bucket_id
 
 !! alibaba filters and subdomains
