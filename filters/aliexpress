@@ -1307,6 +1307,10 @@ aliexpress.*##.next-overlay-backdrop:has-text(/^$/)
 ! location popups
 aliexpress.*##[class*=ShipToHeaderItem_GeoTooltip]
 
+! favicon
+||aestatic.net/mixer-storage/favicon
+    ! ||aestatic.net/mixer-storage/favicon-updated/favicon
+
 ! popups
 aliexpress.*##div[class*=product-fix-sns]
 
@@ -1372,6 +1376,7 @@ aliexpress.*##[class*=SnowFloatPanel_]:style(position:static !important)
 aliexpress.*##[class^=SnowAuthContextWidget_AuthForm__loginIcon]
 ! error icon (not the error text - it's useful)
 aliexpress.*##[class^=ComboSearchProductFeedV2_Error__icon]
+aliexpress.*##[class*=SnowPdpErrorBoundary_SnowPdpErrorBoundary__icon]
 
 ||alibaba.com/ts?  # is in EasyPrivacy
 ||taobao.com/ts  #||fourier.taobao.com/ts
