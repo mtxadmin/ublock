@@ -276,6 +276,7 @@ aliexpress.*##.instore-info-rcmds
 aliexpress.*##[class^=price-banner]
 aliexpress.*##div[data-spm="newuser"]
 aliexpress.*##div[data-spm="sale_savings"]
+aliexpress.*##[data-floor-name="pc2024-sale-banner-placeholder"]
 !
 ! подсовываемое промо-говно, карточки товаров
 aliexpress.ru##[class*=red-snippet_RedSnippet__vertical]:has(span[class^=snippet-element]:has-text(Рекомендуем))
@@ -349,6 +350,9 @@ aliexpress.*##[class^=FestivalVenue_]
 ||aliexpress.ru/bx-mixer-ssr  # aer-reasons.aliexpress.ru/bx-mixer-ssr
 ||st.aliexpress.ru/mixer-storage/homePage/static/mixer-widgets/$image
 !||aliexpress.ru/widget - don't, отзывы
+
+aliexpress.*##.a11y-tab-nav
+aliexpress.*##.group-floor:style(position:static !important)
 
     ! store banners
 aliexpress.*##.product-store-banner
