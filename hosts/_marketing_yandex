@@ -140,18 +140,27 @@ uniproxy.alice.yandex.net
 ! 2026: seems like Alice ads/promos
 alicepro.yandex.ru
 
+!amc.yandex.az
 amc.yandex.by
+!amc.yandex.cloud
+!amc.yandex.co.il
 amc.yandex.com
 !amc.yandex.com.am
+!amc.yandex.com.ge
 amc.yandex.com.tr
-amc.yandex.eu
+!amc.yandex.ee
+!amc.yandex.eu
 !amc.yandex.fr
 !amc.yandex.kg
 amc.yandex.kz
+!amc.yandex.lt
+!amc.yandex.lv
 !amc.yandex.md
 !amc.yandex.net
 !amc.yandex.org
 amc.yandex.ru  # ads  # is in Adguard, ShadowWhisperer's Tracking, Ru AdList
+!amc.yandex.tj
+!amc.yandex.tm
 amc.yandex.uz
 !amc.yango.com
 
@@ -317,6 +326,7 @@ browser.yandex.ru
 browser.yandex.com  # from hxehex's russia mobile internet whitelist
 browser.yandex.net
     ! crash-reports.browser.yandex.net  # telemetry
+    ! sync.browser.yandex.net
 browser.yandex.by
 browser.yandex.com.am
 browser.yandex.com.tr
@@ -462,21 +472,30 @@ media-adv.market.yandex.uz
 market-baobab.yandex.ru  # ad pings
 market-click-baobab.yandex.ru  # from Adguard
 
-mc.yandex.by$important  # from Mahakala
+mc.yandex.az
+mc.yandex.by$important  # is in Mahakala
 mc.yandex.cloud
-mc.yandex.com$important  # from Adguard and Ru AdList
+mc.yandex.co.il
+mc.yandex.com$important  # is in Adguard and Ru AdList
 mc.yandex.com.am
-mc.yandex.com.tr  # from Mahakala
+mc.yandex.com.ge
+mc.yandex.com.tr  # is in Mahakala
+mc.yandex.ee
 mc.yandex.eu
+mc.yandex.fr
 mc.yandex.kg
 mc.yandex.kz$important  # is in Mahakala
+mc.yandex.lt
 mc.yandex.lv
-mc.yandex.md  # from Mahakala
+mc.yandex.md  # is in Mahakala
 mc.yandex.net$important
-mc.yandex.org
+!mc.yandex.org
 mc.yandex.ru$important,all
 !+  mediascope.mc.yandex.ru
 ! end of mc.yandex.ru
+    mc.yandex.ru$redirect-rule=noop.js
+mc.yandex.tj
+mc.yandex.tm
 mc.yandex.uz
 mc.yango.com
 
@@ -737,7 +756,7 @@ statchecker.yandex.ru  # from Ru AdList
 statchecker.yandex.uz
 
 static-mon.yandex.net$important,all  # from Ru AdList
-    ||static-mon.yandex.net$script,redirect=noopjs  # from Ru AdList
+    ||static-mon.yandex.net$script,redirect=noopjs  # is in Ru AdList
     ||static-mon.yandex.net$xmlhttprequest,redirect=nooptext  # from Ru AdList
 
 !strm.yandex.ru$important --video, don't block entirely
