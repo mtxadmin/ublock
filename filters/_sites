@@ -1344,6 +1344,7 @@ metrics.alfabank.ru$redirect-rule=noopjs
 ||alfabank.ru/services/browser-info-logger/
 ||alfabank.ru/services/stats/
 ||alfabank.servicecdn.ru/*/D_header.svg
+||alfaonline.servicecdn.ru/public/s3/static/content-lib/$image  # logos
     ! popups
 alfabank.ru##[class^=header-warning__root]:has-text(блокировщик контента)
 aslife.ru##.t824__popup
@@ -4216,6 +4217,18 @@ bitpump.ru###hyipgosite
 ||bitrix.info/bx_stat  # from EasyPrivacy
 ||bitrix24.com/bitrix/js/ui/feedback/  # tracking scripts
 ||bitrix24.com/bitrix/js/im/old-chat-embedding/
+!
+! Not very good solution, just a workaround
+!@@||bitrix24.ru/bitrix/js/calendar/counters/$1p
+!@@||bitrix24.ru/bitrix/js/ui/cnt/dist/cnt.$1p
+!@@||bitrix24.ru/bitrix/js/landing/$1p
+!@@||bitrix24.ru/bitrix/*/chat.$1p
+!@@||bitrix24.ru/bitrix/js/im/v2/lib/logger/$1p
+! TypeError: can't access property "setConfig", o.Logger is undefined
+! TypeError: can't access property "init", b.PromoManager is undefined
+!bitrix24.ru##+js(set, b.PromoManager, noopFunc)
+!bitrix24.ru##+js(set, b.PromoManager.init, noopFunc)
+!
 ! strangely disappearing button
 bitrix24.net##+js(rc, b24net-text-btn--call-to-action)
     ! third-party forms
@@ -18943,6 +18956,8 @@ modernsurvivalblog.com##+js(set-attr, img.perfmatters-lazy, src, [data-src])
 modrinth.com##.navtabs-transition:style(height:auto !important)
 # 95
 modrinth.com##.text-button-textSelected:style(color:initial !important)
+
+modus-auto.ru##.open-valuation-widget
 
 ||moe-online.ru/themes/default/front/js/probaclick/dist/probaclick.umd.js
 moe-online.ru##.header-line-1-back
