@@ -3709,9 +3709,11 @@ $removeparam=frommail,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=fromnews,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=fromprefix,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=fromwidget,domain=mail.ru|sportmail.ru  # from Ru AdList
+$removeparam=h,domain=mail.ru,imgsmail.ru  # tracker imgs & links
 $removeparam=hasnavig,domain=mail.ru  # from Ru AdList
 $removeparam=mailday,domain=mail.ru  # from Ru AdList
-
+$removeparam=message_id,domain=mail.ru,imgsmail.ru  # tracker imgs & links
+$removeparam=/^email/,domain=mail.ru,imgsmail.ru  # tracker imgs & links
 ! $removeparam=rf,domain=mail.ru|sportmail.ru  # from Ru AdList - see rf
 $removeparam=smotri_id,domain=mail.ru|sportmail.ru  # from Ru AdList, modified
     ! smotri_id=$document,removeparam=|smotri_id,domain=mail.ru  # from Ru AdList
