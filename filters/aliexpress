@@ -58,38 +58,38 @@ aliexpress.*$removeparam=compareFields
 !aliexpress.com$removeparam=dl - don't!
 
 ! Found independently. Also it is in the Adguard and DandelionSprout's URLShortener
-aliexpress.com$removeparam=dp
+aliexpress.*$removeparam=dp
 
 ! Found independently (2022-04)
-aliexpress.com$removeparam=_evo_buckets
+aliexpress.*$removeparam=_evo_buckets
 
 ! from NeatURL (6.0, added here 2022-02). Seems variation of algo_exp_id and algo_expid so it looks logical
-aliexpress.com$removeparam=expid
+aliexpress.*$removeparam=expid
 
 ! Found independently, earlier than 2021-04. Seems fully working
-aliexpress.com$removeparam=fromDetail
+aliexpress.*$removeparam=fromDetail
 
 ! Testing was relatively short, but this parameter seems useless
-aliexpress.com$removeparam=_ga
+aliexpress.*$removeparam=_ga
 
-aliexpress.com$removeparam=gatewayAdapt
+aliexpress.*$removeparam=gatewayAdapt
     ! ||aliexpress.*^$removeparam=gatewayAdapt  # from DandelionSprout's URLShortener
 
 ! Found independently.
-aliexpress.com$removeparam=gclid
+aliexpress.*$removeparam=gclid
 
 ! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=gps-id
+aliexpress.*$removeparam=gps-id
     ! Later: unusual Ru AdList form (it seems, all the parameters will be removed):
     ! .html?gps-id=$document,removeparam=|,domain=aliexpress.*  # from Ru AdList
     ! ||aliexpress.*^$removeparam=gps-id  # from DandelionSprout's URLShortener
 
 ! from NeatURL (6.0, added here 2022-02)
-aliexpress.com$removeparam=initiative_id
+aliexpress.*$removeparam=initiative_id
     ! ||aliexpress.*^$removeparam=initiative_id  # from DandelionSprout's URLShortener
 
 ! Found independently (2022-04)
-aliexpress.com$removeparam=item_id
+aliexpress.*$removeparam=item_id
 
 ||aliexpress.*^$removeparam=mall_affr  # from DandelionSprout's ClearURLs for uBo
 
@@ -97,10 +97,10 @@ aliexpress.com$removeparam=item_id
 aliexpress.*$removeparam=mixer_rcmd_bucket_id  # some suspicious thing
 
 ! Found independently. Confirmed by months of testing.
-aliexpress.com$removeparam=mp
+aliexpress.*$removeparam=mp
 
 ! Found independently.
-aliexpress.com$removeparam=m_page_id
+aliexpress.*$removeparam=m_page_id
 
 aliexpress.*$removeparam=pdp_ext_f
     ! unusual Ru AdList form (it seems, all the parameters will be removed):
