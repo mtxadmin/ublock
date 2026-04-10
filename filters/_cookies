@@ -240,6 +240,7 @@
     ! dns-shop.ru##+js(cookie-remover, _ga)
     ! eldorado.ru##+js(cookie-remover, _ga)
     ! mvideo.ru##+js(cookie-remover, _ga)
+    ! opera.com##+js(cookie-remover, _ga)
 *##+js(cookie-remover, /^_ga_/)
     ! 10minutemail.net##+js(cookie-remover, /^_ga_/)
     ! dns-shop.ru##+js(cookie-remover, /^_ga_/)
@@ -407,6 +408,7 @@
     ! tradenrg.co.uk##+js(cookie-remover, _landing_page)
 *##+js(cookie-remover, shop_analytics)
 *##+js(cookie-remover, _shop_app_analytics)
+*##+js(cookie-remover, _shopify_analytics)
 *##+js(cookie-remover, _shopify_essential)
 *##+js(cookie-remover, _shopify_essential_)
     ! Hmmm... "Contains an opaque token that is used to identify a device for all essential purposes."
@@ -427,6 +429,10 @@
 ! Adobe third-party persistent ad cookies
 ! https://www.nvidia.com/en-us/about-nvidia/cookie-policy/
 *##+js(cookie-remover, /^s_vi_/)
+
+! Suspicious cookie on many sites
+##+js(cookie-remover, __tad)
+    ! https-rulesets.org##+js(cookie-remover, __tad)
 
 ! Mail.ru third party tracking cookie
 ! https://cookiedatabase.org/cookie/mail-ru/tmr_detect/
@@ -715,6 +721,9 @@ gaana.com##+js(cookie-remover, reftoken)
 gameplay.tips##+js(cookie-remover, caosLocalGa)
 gameplay.tips##+js(cookie-remover, caosLocalGa_gid)
 
+genius.com##+js(cookie-remover, /ab_test/)
+genius.com##+js(cookie-remover, genius_first_impression)
+
 gold-vision.com##+js(cookie-remover, _monsterinsights_uj)
 
 google.com##+js(cookie-remover, DV)
@@ -724,7 +733,9 @@ grafana.com##+js(cookie-remover, rl_anonymous_id)
 ! "{"landing_page_url":"https%3A%2F%2Fwww.hellobonsai.com%2F","initial_referrer" ..."
 hellobonsai.com##+js(cookie-remover, bonsai_attribution_data)
 
-https-rulesets.org##+js(cookie-remover, __tad)
+! ref
+hs-codes.com##+js(cookie-remover, ert4tdf)
+
 https-rulesets.org##+js(cookie-remover, uuid)
 https-rulesets.org##+js(cookie-remover, parking_session)
 
@@ -785,8 +796,12 @@ nordvpn.com##+js(cookie-remover, /^popups_/i)
     ! nordvpn.com##+js(cookie-remover, popups_referrer)
     ! nordvpn.com##+js(cookie-remover, popups_session_duration)
 
+opera.com##+js(cookie-remover, /^cookie_consent_/i)
+
 ozon.ru##+js(cookie-remover, ADDRESSBOOKBAR_WEB_CLARIFICATION)
 finance.ozon.ru##+js(cookie-remover, /trackerSessionId/i)
+
+pisni.ua##+js(cookie-remover, /track/i)
 
 ! track url
 ! didn't find general information about it. There are other cookies from Sourcebuster
@@ -815,6 +830,9 @@ ru-shopping.ru##+js(cookie-remover, nc_Netshop_RecentGoods_sid)
 
 ! ref
 salescrm.org##+js(cookie-remover, mailchimp_landing_site)
+
+! httpOnly id
+shop.app##+js(cookie-remover, _shop_app_essential)
 
 ! httpOnly id
 slashdot.org##+js(cookie-remover, VISITOR)
@@ -853,6 +871,8 @@ tbank.ru##+js(cookie-remover, pageLanding)
 t-j.ru##+js(cookie-remover, dsp_click_id)
 t-j.ru##+js(cookie-remover, utm_date_set)
 t-j.ru##+js(cookie-remover, utm_source)
+
+turboscribe.ai##+js(cookie-remover, /^_ga_/)
 
 vidal.ru##+js(cookie-remover, /^banner-show/)
 
