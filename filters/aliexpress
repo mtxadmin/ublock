@@ -91,6 +91,9 @@ aliexpress.*$removeparam=initiative_id
 ! Found independently (2022-04)
 aliexpress.*$removeparam=item_id
 
+! Found independently, added 2026-04
+aliexpress.*$removeparam=item_segment_id
+
 ||aliexpress.*^$removeparam=mall_affr  # from DandelionSprout's ClearURLs for uBo
 
 ! Found independently, added 2026-03-12
@@ -153,6 +156,10 @@ aliexpress.*$removeparam=shpMethod
 ! Found independently, added 2021-05-28
 !aliexpress.*$removeparam=sku_id  # Update: don't. It's a variant inside sku, "sub-sku"
 
+! Found independently, added 2026-04
+aliexpress.*$removeparam=spmC
+aliexpress.*$removeparam=spmD
+
 ! Found independently. Confirmed by months of testing.
 aliexpress.*$removeparam=_t
     ! ||aliexpress.*^$removeparam=_t  # from DandelionSprout's URLShortener
@@ -174,7 +181,11 @@ taobao.com$removeparam=traceId  # from Adguard
 
 aliexpress.*$removeparam=trafficChannel
 
+aliexpress.*$removeparam=traffic_source
+
 aliexpress.*$removeparam=tt  # from DandelionSprout's URLShortener
+
+aliexpress.*$removeparam=type_rcmd
 
 ! Found independently, added 2021-04-25
 aliexpress.*$removeparam=ug_edm_item_id
