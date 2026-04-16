@@ -4242,6 +4242,8 @@ cmap.alibaba.com
 hydra.alibaba.com  # from Adaway
 offer.alibaba.com  # is in Dan Pollock’s hosts file and hpHosts’ Ad and tracking servers
 !tracelog.www.alibaba.com  # from Adguard
+    ! alipay.com
+loggw-exsdk.alipay.com  # from GoodbyeAds
     ! alipcsec.com
 local.alipcsec.com
     ! aliyun.com
@@ -4249,7 +4251,7 @@ acjs.aliyun.com  # from Adaway
     ! aliyuncs.com
 !aliyuncs.com rule was written in ~2020 for Aliexpress. In 2025 it turned out that some Chinese domains needed aliyuncs.com subdomains
 !aliyuncs.com  # ad scripts and tracker imgs and empty root
-    !||aliyuncs.com/r.png
+    ||aliyuncs.com/r.png
 arms-retcode.aliyuncs.com  # at least
 arms-retcode-sg.aliyuncs.com
 retcode-us-west-1.arms.aliyuncs.com
@@ -4366,8 +4368,6 @@ vkoff.ru  # root redirects to Google  # see in _marketing__subdomains
 s.click.aliexpress.com  # from Ru AdList
 
 glitchtip.alikson.ru  # sentry
-
-loggw-exsdk.alipay.com  # from GoodbyeAds
 
 smart.allocine.fr  # from Adguard
 smart2.allocine.fr  # from Adguard
@@ -7479,7 +7479,7 @@ cards-sea-nfl.yinzcam.com  # from Adaway
 config-sea-nfl.yinzcam.com  # from Adaway
 resources-us.yinzcam.com  # from Adaway
 
-!atm.youku.com  # subs exist  #+  # from Dan Pollock's hosts file
+atm.youku.com  # subs exist  #+  # from Dan Pollock's hosts file
 lstat.youku.com  # from Dan Pollock's hosts file
 pay.youku.com  # ad scripts
 !stat.youku.com  # zombie
