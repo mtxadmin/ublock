@@ -1716,10 +1716,11 @@ _rebid.js  # from EasyList
 ~adblockplus.org,~yandex.*##[id$="_ads"]:not(html):not(body):not(article)
 ##[class*="Advert"]:not(html):not(body):not(article):not(main):not(aside)
 ##[id*="Advert"]:not(html):not(body):not(article):not(main):not(aside)
-~e.mail.ru,~pluggedin.ru,~prace.cz,~radikal.ru,~yandex.*##[class*="advert"]:not(html):not(body):not(article):not(main):not(aside)
+~e.mail.ru,~pluggedin.ru,~prace.cz,~radikal.ru,~spr.ru,~yandex.*##[class*="advert"]:not(html):not(body):not(article):not(main):not(aside)
     ! Exclusions:
     ! pluggedin.ru - .banner-advertise is main div
     ! prace.cz - .search-result__advert
+    ! spr.ru - there are real ads there, but also main content too. Excluded.
     !
     ! is in EasyList
     ##.advert-block
