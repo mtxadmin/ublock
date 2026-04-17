@@ -2701,8 +2701,9 @@ auto.ru##.Popup_withTail
 auto.ru##.SafeDealParanjaPopup
 auto.ru##.ReturningSplash
 auto.ru##.FullScreenSplashCarBanner
-! auth banners
-!auto.ru##.Modal:not(:matches-path(auth.auto.ru)) - seems too broad
+! auth banners.
+! seems too broad. On the other hand, their auth popups are really naggy
+auto.ru##.Modal:not(:matches-path(auth.auto.ru))
 auto.ru##[class*=IndexBackButton_sticky]
 ! totop
 auto.ru##[class^=UpButton]
