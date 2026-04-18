@@ -2678,6 +2678,7 @@ author.today##.reader-header:style(position:static !important; border-bottom:non
 ||auto.ru/-/ajax/desktop/getSearchlineHistory/  # post xhrs
 !||auto.ru/-/ajax/mag/events_log/  # EasyPrivacy rule
 ||auto.ru/-/ajax/mag/getOffersAutoru/  # NOT EasyPrivacy rule
+||avto.ru/autoru/background$image
 ||avto.ru/autoru/journal-logo$image  # yes, aVto.ru is aUto.ru too now.
 ||avto.ru/autoru/views$image
 ||avto.ru/autoru/fingerprintjs$redirect-rule=noopjs
@@ -3008,7 +3009,16 @@ autospot.ru##.header__tooltip
     ! banners and promos
 autospot.ru##.head-banner
 autospot.ru##.home-selection-banner
+autospot.ru##.banner-create
     ! other
+||api.autospot.ru/core/rest/user/visit/
+||api.autospot.ru/core/rest/utils/experiment/
+!||api.autospot.ru/core/rest/seo/meta-v2/
+!||api.autospot.ru/core/rest/seo/meta-v2/$redirect-rule=noop.json
+! title description keywords h1 h2 seo_text seo_text_template seo_text_custom
+autospot.ru##.preview-filter-snackbar:style(position:static !important)
+autospot.ru##.banner-container
+autospot.ru##.car-card__price-credit
 
 autostat.ru##.Block-subscribe
 
@@ -3129,9 +3139,6 @@ avidreaders.ru##.footer
 ||avito.st/*/build/fingerprint
 ||avito.ru/stat/  # is in EasyPrivacy
 ||avito.st/stat/
-    ! ||avito.ru/stat/radar
-||avito.ru/*/build/modern/clickstream
-||avito.st/*/build/modern/clickstream
 ||avito.ru/dstatic/j/mon-check.js
 ||avito.ru/js/recommendations  # suspicious posts
     ! unstick top
@@ -17773,6 +17780,26 @@ many-books.org###header
 ||mapilab.ru/images/top_banner.jpg
 ||mapilab.ru/images/Stamp.png
 
+    ! popups
+marcar.ru##.modal-widget-btn
+    ! banners and promos
+! promos
+marcar.ru##.special-block
+! promo tags
+marcar.ru##.sale__tag
+! promo tags
+marcar.ru##.tags__area
+marcar.ru##.form-block
+marcar.ru##.bloglist-block
+marcar.ru##.bank-block
+marcar.ru##.review-block
+marcar.ru##noindex
+marcar.ru##.footer-block
+marcar.ru##.car__adv.special__card
+marcar.ru##.scroll-elements
+marcar.ru##.buttons__area
+    ! other
+
 marieclaire.ru##.nav__promoLinkA
 marieclaire.ru##.nav__logo
 
@@ -26444,8 +26471,6 @@ samohodoff.ru##.welcome-pt-message
 samohodoff.ru##.welcome-pt-overlay
 samohodoff.ru##div:has(>a[href="/services/shinomontazh/"]:has(img))
 
-||samokat.ru/api/clickstream
-
 samoletplus.ru##.container:has-text(cookie)
 samoletplus.ru##[class^=HeaderLogo]
 
@@ -29101,7 +29126,6 @@ svoboda.org##.banner
 svoboda.org##.banner__a
     ! other
 
-||svoe-zagorodom.ru/clickstreams/
 svoe-zagorodom.ru##.popup-agree
 
 ||svoizabor.ru/$inline-script  # script there disables onselectstart. Bad practice, uncomfortable.
@@ -34478,6 +34502,10 @@ xdrv.ru##.left_block
 
 xelent.ru##.tech-widget
 
+!xenonopt2.ru$inline-script
+xenonopt2.ru##.main-container::selection
+xenonopt2.ru##.allpage:style(background:none !important)
+
 ||xfit.ru/apple.svg
 xfit.ru##.fab
 xfit.ru##.current-city .outer
@@ -35690,6 +35718,7 @@ zoom.us##.livesdk__invitation
 zoon.ru###serviceNavPanel:style(position:static !important)
 zoon.ru##.zoon-social-list-group
 zoon.ru###description-seo-service-two
+zoon.ru##.service-block-nav-placeholder
 
 zosoptic.ru##.ordercall
 zosoptic.ru##.yamarket
