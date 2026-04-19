@@ -168,6 +168,7 @@ ya.ru,yandex.*##noindex:has(a[href="//ya.ru/"])
 ya.ru###logotip-tekst
 ya.ru###primery-otvetov-poiska-s-alisoj
 yandex.*##[class*=LogoLink]
+yandex.ru##noindex:has([data-auto="logoYandexLink"])
 
     ! top
 go.yandex##.lc-header-lpc__fixed-wrapper:style(position:static !important)
@@ -466,6 +467,7 @@ market.yandex.*##noindex >p
 ! "вы смотрели"
 market.yandex.*##div[data-apiary-widget-id="/footer/history"]
 ||yandex.net/autobanner/
+||yandex.net/advert
 market.yandex.*##.brandTheme-default
 ! scroll
 market.yandex.*##body:style(overflow:initial !important)
@@ -733,7 +735,12 @@ ya.ru,yandex.*##.serp-item div.direct-snippet
 ya.ru,yandex.*##.init__age
 
 ! Ru AdList rule. Don't know why the exclusion here, but seems ok
-||yandex.net/get-direct$domain=~e.mail.ru
+! Update: no, exclusion is not ok
+!||yandex.net/get-direct$domain=~e.mail.ru
+||yandex.net/get-direct$important
+
+||ya.ru/portal/*feed_geo=  # Ru AdList rule
+||ya.ru/portal/flagman/flags  # some ids
 
 ! from AdGuard and Ru AdList
 ya.ru,yandex.*##div[id^="BlogPost"][data-state*="/promo/popup/"]
@@ -1017,6 +1024,7 @@ ya.ru,yandex.*##.button_primary:has-text(в избранное)
 !test
 !||yandex.ru/api/status - this rule cause an error in doc viewer in y.drive
 ||yastatic.net/nearest.js
+||yastatic.net/nearest.js$redirect-rule=noop.js
 
 ! site logos in search (showed only for dzen.ru, this is yandex service)
 ||yastatic.net/naydex/yandex-search/$image
