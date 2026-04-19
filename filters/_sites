@@ -1354,6 +1354,9 @@ aslife.ru##.tn-atom
 alfabank.ru##[data-test-id="voice-of-client"]
 ! странный кривой попап
 alfabank.ru##[data-test-id="pfmV3ExcludeOperation"]
+! еще один странный кривой попап
+alfabank.ru##span::before
+alfabank.ru##.module-digitalSalesSpecialOffersSplash
     ! logos
 !alfabank.ru##svg - don't, svg.icon-button.. are useful inteface buttons
 alfabank.ru##[class^=Hlayout_logo_]
@@ -2679,6 +2682,7 @@ author.today##.reader-header:style(position:static !important; border-bottom:non
 !||auto.ru/-/ajax/mag/events_log/  # EasyPrivacy rule
 ||auto.ru/-/ajax/mag/getOffersAutoru/  # NOT EasyPrivacy rule
 ||avto.ru/autoru/background$image
+||avto.ru/autoru/calls
 ||avto.ru/autoru/journal-logo$image  # yes, aVto.ru is aUto.ru too now.
 ||avto.ru/autoru/views$image
 ||avto.ru/autoru/fingerprintjs$redirect-rule=noopjs
@@ -2714,6 +2718,8 @@ auto.ru##[class^=ArticleAddGaragePopup]
 auto.ru##.ArticleAddGarageContent
 auto.ru##.Tooltip2
 auto.ru##[class^=SalonVerifiedPopup]
+! "Позвоните по этому объявлению первым! Возможно, продавец ждёт именно вас."
+auto.ru##.NotificationBase__wrapper
     ! banners and promos
 /article_banner$domain=auto.ru,image
 auto.ru##.FilterBannerCreditSber
@@ -2759,12 +2765,16 @@ auto.ru##[class^=BadgeHistory4Call]
 auto.ru##.CardCallbackButton
 ! inline promos
 auto.ru##.ListingCars__carousel
+! липовая цена "со скидками" - это с кредитом, trade in и прочим
+auto.ru##[class^=PriceUsedOfferNew__maxDiscount]
     ! labels
 auto.ru##[class^=PersonalizedFeedOfferItem__badge]
 auto.ru##[class^=PersonalizedFeedOfferItem__discountBadge]
 auto.ru##[class^=OfferPriceBadge]
 auto.ru##[class^=PersonalizedFeedOfferItem__badge]
 auto.ru##[class^=PersonalizedFeedOfferItem__fairPriceBadge]
+! ничего полезного там не нашлось, только промо и мусор
+auto.ru##[class^=ListingItemUniversalThumb__badges]
     ! seo
 auto.ru##.Footer__seo-text
     ! apps
