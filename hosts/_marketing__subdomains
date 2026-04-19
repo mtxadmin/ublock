@@ -753,7 +753,7 @@ beacon.wikia-services.com  #https://beacon.wikia-services.com/__track/
 callback.lenremont.ru  # ad popups
 
 ! chatbots and noisy consultants on sites
-/chat.$domain=~bizon365.ru|~booking.com|~boosty.to|~deepseek.com|~domclick.ru|~etutorium.com|~kuki.ai|~openai.com|~qwen.ai|~worknf.ru
+/chat.$domain=~bizon365.ru|~booking.com|~boosty.to|~deepseek.com|~domclick.ru|~etutorium.com|~kuki.ai|~openai.com|~qwen.ai|~wildberries.ru|~worknf.ru
     ! Exclusions:
     ! booking.com - useful chats
     ! boosty.to - not subdomain, just script at static.boosty.to/js/Chat , ok, unblocked
@@ -761,6 +761,7 @@ callback.lenremont.ru  # ad popups
     ! kuki.ai - chatbot, not embedded, just single-user AI
     ! openai.com - chatbot, not embedded, just single-user AI
     ! qwen.ai - chatbot, not embedded, just single-user AI
+    ! wildberries.ru - useful chats
 chat.buymeacoffee.com
 chat.digiseller.ru
 chat.olx.kz
@@ -2272,6 +2273,7 @@ securetags.img.com.br  # from Adguard
         ! ||ferra.ru/sentry/
     ||github.com/getsentry/$3p
 sentry.archive.org  # Sentry - Tracker  # from Quidsup NoTrack-Blocklist
+sentry.autospot.ru
 sentry.clubok.travel
 sentry.srv.habr.com  # Sentry - Tracker  # is in Quidsup NoTrack-Blocklist
 sentry.hh.ru
@@ -2291,6 +2293,7 @@ sentry.ozon.ru  # Sentry - Tracker  # from Quidsup NoTrack-Blocklist
 !sentry.k8s.portal.su  # my corrected version, clearly
 sentry.regard.ru
 sentry.samoletx.com
+sentry.sberauto.com
 sentry.timeweb.cloud
 sentry.wixpress.com
 sentry.worldota.net  # ostrovok.ru tech domain
@@ -4494,6 +4497,7 @@ adobe.autoscout24.se  # from Adguard
 zgwxoy.autoscout24.ro  # from Adguard
 
 anblzv.autospot.ru  # from Adguard
+collect.autospot.ru  # tracking imgs
 
 ans.avast.com  # from frogeye, iam-py-test's anti-norton-tracking
 ans.avast.co.jp  # from frogeye
@@ -4526,8 +4530,8 @@ safethings.avira.com  # telemetry  # https://3dnews.ru/1061902/routeri-tplink-ot
 cs.avito.ru  # ad xhrs (clickstream)
 ||avito.ru/clickstream/  # ad xhrs
 mon.avito.ru  # tracking images
-sntr.avito.ru  # Sentry - Tracker  # from Quidsup NoTrack-Blocklist
-stats.avito.ru  # ad xhrs
+sntr.avito.ru  # Sentry - Tracker  # is in Quidsup NoTrack-Blocklist
+stats.avito.ru  # ad xhrs  # now is in Adguard
 
 sentry-relay.avs.io
 wpush.avs.io
@@ -7370,7 +7374,7 @@ chat.wildberries.kg
 chat-prod.wildberries.ru
 chat-prod.wildberries.by
 chat-prod.wildberries.kg
-journal-bt.wildberries.ru  # trackings xhrs: ||journal-bt.wildberries.ru/journal/api/v1/set
+journal-bt.wildberries.ru  # trackings xhrs: ||journal-bt.wildberries.ru/journal/api/v1/set  # now is in Adguard
 !journal-bt.wildberries.by
 !journal-bt.wildberries.kg
 statistics-bt.wildberries.ru  # from Mahakala  # First Party - Tracker  # from Quidsup NoTrack-Blocklist
