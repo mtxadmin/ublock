@@ -2987,6 +2987,8 @@ auto-rostov.ru##.avatar
 
 autorus.ru##[src^="data:image/jpg;base64,"]
 
+autoscout24.ru##.hfo-nav
+
 autoset.by##.pop-up-top
 autoset.by##.header__top-text
 autoset.by##.header__top-phone
@@ -3142,6 +3144,8 @@ avidreaders.ru##.footer
 ||avito.ru/dstatic/j/mon-check.js
 ||avito.st/dstatic/j/mon-check.js
 ||avito.ru/js/recommendations  # suspicious posts
+||avito.ru/web/1/network/check
+||avito.ru/static/background-check-report
     ! очень падающий сайтик, и очень хочет нарушать privacy
 !||avito.st/dstatic/build/client/*/clickstream
 !||avito.st/dstatic/build/client/*/clickstream$redirect-rule=noopjs
@@ -3161,6 +3165,10 @@ avito.ru##.sticky-header
 ! и снизу там еще дубликат
 avito.ru##[class^=push-root]
 avito.ru##.js-item-view-title-info
+    ! logos
+avito.ru##[class^=logo-]
+avito.ru##[class^=style-sellerLogo]
+avito.ru##[class^=Logo-module-logo]
     ! popups
 !avito.ru##[class*=tooltip-placement-bottom] - breaks categories popup. Banners?
 avito.ru##[class*=tooltip-placement-bottom]:has-text(ваш город)
@@ -3182,6 +3190,10 @@ avito.ru##[class^=items-banner]
 ! в просмотре фото висит кнопка "купить с доставкой", что за бред
 avito.ru##div:has(button[data-marker="gallery-delivery-button"])
 avito.ru##div:has(>p:has-text(В кредит от ))
+! подсунутые неадекватные запросу промо
+avito.ru##[class^=iva-item-content]:has([class^=native-video-root])
+! dumb promo badges
+avito.ru##[class^=iva-item-badgeBarStep]
     ! спам и разводки
 avito.ru##.js-catalog-item-enum:has-text(Компьютерный мастер)
     ! socials
@@ -3189,14 +3201,15 @@ avito.ru##[class^=index-social-]
 avito.ru##[class^=social-auth]
 avito.ru##[class^=auth-app-social-auth-text]
 avito.ru##[class^=social-post-links-block]
+    ! loans
+avito.ru##[class^=auto-monthly-payment]
+    ! seo
+avito.ru##[class^=seo-tags-module-seoTags]
     ! other
-avito.ru##[class^=logo-]
-avito.ru##[class^=style-sellerLogo]
 avito.ru##.icon-forbidden
 avito.ru##[class^=css-]:has-text(Войдите в профиль)
 ! background images
 avito.ru##[class^=styles-module-cover]
-avito.ru##[class^=Logo-module-logo]
 ! рекламные stories
 avito.ru##[class*=story-previewer]
 ! тупые предустановленные ответы. См. hh с такой же дурью
@@ -3205,6 +3218,7 @@ avito.ru##div[data-marker="icebreakers/extended-input"] div:not(:has(textarea)):
 avito.ru##div[data-marker^="badge-title"]:has(span:has-text(Эковклад))
 avito.ru##[class^=items\.modulecontainer]
 avito.ru##[class^=read-more-slider-block]
+avito.ru##[data-marker="footer/applications"]
 
 avon.com###TopNavigationContainer:style(position:static !important)
 avon.com###d-hero-carousel
@@ -9448,6 +9462,8 @@ experts-exchange.com##[class^=solutionComment]:has-text(/^$/)
 
 experty.io##.footermenu__icons
 
+expireddomains.com##.rotating-nav-container
+
 ||explotex.com/img/main_pics/3/small.jpg
 explotex.com##.topline:style(height:auto !important)
 
@@ -10525,6 +10541,18 @@ freexvideos.tv##.video-rate-buttons
 
 freexxxhunter.cc##.active
 freexxxhunter.cc##.vertbars
+
+||freshauto.ru/assets/modules/cookie_consent  # cookie_consent-...
+    ! popups
+freshauto.ru##.f-delivery-city-popup
+    ! banners and promos
+freshauto.ru##.bannerLink
+freshauto.ru##.promo-banner-slider
+freshauto.ru##.main-page-services
+freshauto.ru##.app-wide
+    ! loans
+freshauto.ru##.card-info__delivery-price
+    ! other
 
 ||fresher.ru/widget/
 
@@ -15575,6 +15603,8 @@ kolesa.ru##.marked-post
 kolesa.ru##.widget-comments.widget
 kolesa.ru##.link-to-catalog
 kolesa.ru##.widget-major-auto-test-drive
+! уже проданные - нафиг не нужны. Да, там есть галка в настройках, но она по умолчанию выключена и про неё надо помнить. Незачем, лучше сразу убрать их.
+kolesa.ru##.car-card-horizontal:has(.price-sold)
 
 ! top loans banner
 kolesa-darom.ru##.panel
@@ -26698,6 +26728,15 @@ savethevideo.com##.notification
 ||saveyou.ru/forum/gfx_serenity/misc/*$image
 
 sbcode.net##.md-sidebar:style(position:static !important)
+
+    ! logos
+sberauto.com##[data-testid="client.Header.LogoLink"]
+    ! banners and promos
+sberauto.com##noindex
+sberauto.com##div:has(>span:has-text(Умный помощник для быстрого подбора))
+sberauto.com##[data-testid="bannerListing"]
+sberauto.com##[data-testid="callMeBanner"]
+    ! other
 
 ! sbrf
 ||sberbank.ru/*/logoheader.png
