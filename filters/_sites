@@ -3140,7 +3140,17 @@ avidreaders.ru##.footer
 ||avito.ru/stat/  # is in EasyPrivacy
 ||avito.st/stat/
 ||avito.ru/dstatic/j/mon-check.js
+||avito.st/dstatic/j/mon-check.js
 ||avito.ru/js/recommendations  # suspicious posts
+    ! очень падающий сайтик, и очень хочет нарушать privacy
+!||avito.st/dstatic/build/client/*/clickstream
+!||avito.st/dstatic/build/client/*/clickstream$redirect-rule=noopjs
+avito.ru##+js(prevent-fetch, /\/web\/1\/(clickstream|collect)/)
+avito.ru##+js(prevent-xhr, /\/web\/1\/(clickstream|collect)/)
+!||avito.st/dstatic/build/client/*/background-check
+!||avito.st/dstatic/build/client/*/background-check$redirect-rule=noopjs
+avito.ru##+js(prevent-fetch, /\/web\/1\/background-check\/(status|init|verify)/)
+avito.ru##+js(prevent-xhr, /\/web\/1\/background-check\/(status|init|verify)/)
     ! unstick top
 !avito.ru##*:matches-css(position:sticky):style(position:static !important) - моргает
 avito.ru##[class*=index-stickyHeader]:style(position:static !important)
