@@ -9,6 +9,8 @@ api.passport.yandex.ru$third-party
 
 !! domains
 
+cm.expert  # 3p scripts
+
 300.ya.ru  # Yandex URL shortener
 
 aab-pub.s3.yandex.net$important,all  # a-b tests
@@ -382,6 +384,7 @@ clck.dzen.ru  # from ShadowWhisperer's Tracking
 !cloud-api.yandex.ru  # app requests  # but: @@||cloud-api.yandex.ru/telemost_front/v2/telemost/conferences
 
 csp.yandex.net  # no-csp-reports: * true  # is in EasyPrivacy
+    ||yandex.net/csp
 
 datalens.yandex  # from ShadowWhisperer's Tracking
 
@@ -584,6 +587,10 @@ metrica-yandex.com  # from GoodbyeAds
 
 metrika-informer.com$important,all
 
+verify.yandex.ru
+network-lc.ru  # yandex
+icmp0.ru  # yandex  # "ok" root
+
 ! don't block mobile.yandex.net entirely
 addappter.mobile.yandex.net
 addappter-api.mobile.yandex.net
@@ -755,7 +762,7 @@ statchecker.yandex.org
 statchecker.yandex.ru  # from Ru AdList
 statchecker.yandex.uz
 
-static-mon.yandex.net$important,all  # from Ru AdList
+static-mon.yandex.net$important,all  # is in Ru AdList, Adguard
     ||static-mon.yandex.net$script,redirect=noopjs  # is in Ru AdList
     ||static-mon.yandex.net$xmlhttprequest,redirect=nooptext  # from Ru AdList
 
@@ -894,6 +901,7 @@ yandex-context.ru  # ad scripts  # https://yandex-context.ru/?context=js&callbac
 
 yandexmetric.com  # from ShadowWhisperer's Tracking
 yandexmetrica.com  # is in Mahakala, Peter Lowe's
+yandexmetrika.com  # no root
 yandex-metrica.ru  # from Ru AdList
 
 ! yandex.metrica? Finland, but Yandex DNS. Now closed? Let's block anyway.
