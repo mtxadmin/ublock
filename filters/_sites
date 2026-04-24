@@ -8057,8 +8057,11 @@ droidwin.com##.bricks-mobile-menu-wrapper
 droidwin.com##.bricks-mobile-menu-wrapper::before
 
 drom.ru$domain=drive2.ru  # from Ru AdList
-drom.ru$inline-script  # site blocks copypaste
+!drom.ru$inline-script  # site blocks copypaste
+! слишком жестко. Мягче:
+drom.ru##+js(acs, addEventListener)
 ||forums.drom.ru/images/awards/$image
+||drom.ru/ctr/event  # tracker
 ||drom.ru/dummy.  # is in EasyPrivacy
 ||drom.ru/gmetrics/  # falls to rule &cx=c&gtm= in Adguard and EasyPrivacy
 ||drom.ru/dpg/  # suspicious script
