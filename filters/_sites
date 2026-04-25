@@ -1301,6 +1301,11 @@ akned.ru##.navigation
 
 ||akonit-med.ru/templates/skin/images/breadcrumb.jpg
 
+! весь этот "калькулятор" ради сбора телефонов
+akppcenter.com###calculator
+
+akpphelp.ru###bug
+
 ||aksessuary-vanna.ru/i/snow_sky.png
 aksessuary-vanna.ru##.nav-fixed
 
@@ -3162,7 +3167,10 @@ avidreaders.ru##.footer
 ||avito.ru/dstatic/j/mon-check.js
 ||avito.st/dstatic/j/mon-check.js
 ||avito.ru/js/recommendations  # suspicious posts
+||avito.ru/static/remote-verification/
 ||avito.ru/web/1/network/check
+||avito.ru/api/1/stats/
+||avito.ru/web/1/delivery/  # suspicious posts
 ||avito.ru/static/background-check-report
     ! очень падающий сайтик, и очень хочет нарушать privacy
 !||avito.st/dstatic/build/client/*/clickstream
@@ -3216,6 +3224,8 @@ avito.ru##[class^=iva-item-content]:has([class^=native-video-root])
 ! dumb promo badges
 avito.ru##[class^=iva-item-badgeBarStep]
 avito.ru##div:has(>div>div:has-text(/^Уникальное предложение/))
+! автосалонные "скидки", набор стандартный - кредит, trade in, допы
+avito.ru##div:has(>div:has(>p:has-text(Скидки от дилера)))
     ! спам и разводки
 avito.ru##.js-catalog-item-enum:has-text(Компьютерный мастер)
     ! socials
@@ -3226,6 +3236,7 @@ avito.ru##[class^=social-post-links-block]
     ! loans
 avito.ru##[class^=auto-monthly-payment]
 avito.ru##div:has(>div>p:has-text(/^В кредит от/))
+avito.ru##[data-marker="installments-promoblock"]
     ! seo
 avito.ru##[class^=seo-tags-module-seoTags]
     ! other
@@ -3242,6 +3253,8 @@ avito.ru##div[data-marker^="badge-title"]:has(span:has-text(Эковклад))
 avito.ru##[class^=items\.modulecontainer]
 avito.ru##[class^=read-more-slider-block]
 avito.ru##[data-marker="footer/applications"]
+||avito.st/static/ims/graphic_library_ru_404_error$image
+||avito.st/static/ims/graphic_library_ru_500_error$image
 
 avon.com###TopNavigationContainer:style(position:static !important)
 avon.com###d-hero-carousel
@@ -8422,8 +8435,23 @@ e1.ru##*:matches-css(position:fixed)
 ! from Adguard
 e1.ru##button[data-test="report-news-button"] + div[class]
 
-! popup
+||eapteka.ru/*/events/watch  # tracker endpoint  # don't block /events/ entirely, there are other useful points: events/cart, events/favorite, events/purchase
+||eapteka.ru/*/events/page
+||eapteka.ru/*/banners
+||eapteka.ru/*/recommendation
+eapteka.ru##+js(prevent-fetch, /\/v4\/banners/)
+eapteka.ru##+js(prevent-fetch, /\/v3\/events\/(page|watch)/)
+eapteka.ru##+js(prevent-xhr, /\/v4\/banners/)
+eapteka.ru##+js(prevent-xhr, /\/v3\/events\/(page|watch)/)
+! Блокируем запросы к сервису рекомендаций
+||recommendation-backend.service.eapteka.ru^$xmlhttprequest
+||eapteka.ru/api/v4/promotions/
+    ! popups
 eapteka.ru##.headerCity-root-bubble--adaptive
+    ! banners and promos
+! loans
+eapteka.ru##.product-element__partial-payment
+    ! other
 
 earbudsarena.com##.entry-header > div:has-text(affiliate)
 
