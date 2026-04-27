@@ -244,7 +244,7 @@ ozon.*##[data-widget="homeButton"]
 ozon.ru##[data-popper-placement="bottom"]
 ozon.ru##[data-widget="notificationSubscriptionBanner"]
 ! overlay
-ozon.ru##div:has-text(/^$/):style(background-color:initial !important)
+ozon.ru##div:has-text(/^$/):not(:matches-path(ozon.ru/modal)):style(background-color:initial !important)
 finance.ozon.*###modal-container:has-text(Закажите)
 !finance.ozon.*##.paranja -  don't block all popups
 finance.ozon.*##.paranja:has-text(/Зв(е|ё)зды|Платите где хотите/i)
