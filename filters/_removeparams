@@ -1634,7 +1634,7 @@ $removeparam=/^refer_/
     ! temu.com$removeparam=refer_page_el_sn  # from DandelionSprout's URLShortener
 
 ! /referer/ - see the header
-$removeparam=/referer[^=]*=/i
+~ozon.ru$removeparam=/referer[^=]*=/i
 ! /referrer/ - see the header
 $removeparam=/referrer[^=]*=/i$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion|~x.com
     ! Exclusions:
