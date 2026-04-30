@@ -258,7 +258,10 @@ _social_fb.  # from Fanboy’s
     ! lichess.org - false positive
     ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
     ! ozon - random two-letter and other classes
-~facebook.com,~fb.com,~aliexpress.com,~alfamiles.com,~microsoft.com,~onetwotrip.com,~ozon.ru,~ozon.by,~ozon.com##[id^="fb"]:not(html):not(body):not(article):not(.fb-post):not([id^="fb2"])
+~facebook.com,~fb.com,~aliexpress.com,~alfamiles.com,~cloudflare.com,~microsoft.com,~onetwotrip.com,~ozon.ru,~ozon.by,~ozon.com##[id^="fb"]:not(html):not(body):not(article):not(.fb-post):not([id^="fb2"])
+    ! Exclusions:
+    ! cloudflare - random two-letter classes
+    !
     ! is in Ru AdList and Fanboy's
     ###fb_icon
     ! from Adguard
@@ -649,8 +652,9 @@ ok.ru##.invite-block
 ##.icons-ok
 ##.like-od
 ##.odnoklassniki
-~belarus2020.org,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~ozon.by,~ozon.com,~ok.ru##.ok
+~belarus2020.org,~cloudflare.com,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~ozon.by,~ozon.com,~ok.ru##.ok
     ! Exclusions:
+    ! cloudflare - random two-letter classes
     ! flagma.cz - not odnoklassniki, OK button
     ! belarus2020.org - voting platform (not very successful, but)
     ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random classes, medium engine
@@ -997,8 +1001,9 @@ twitter.com##+js(href-sanitizer, a[href^="https://t.co/"])
 ##.ico-tw
 ##.ico-twttr
 ##.like-tw
-~belarus2020.org,~fandom.com,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~ozon.by,~ozon.com##.tw
+~belarus2020.org,~cloudflare.com,~fandom.com,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~ozon.by,~ozon.com##.tw
     ! Exclusions:
+    ! cloudflare - random two-letter classes
     ! fandom.com: false-positive, there are no socials in wikis
     ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
     ! ozon - random two-letter and other classes
@@ -2356,8 +2361,9 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ##.like-us
 ##.likeUsLayer
 ##.likes-widget-placeholder
-~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~ozon.by,~ozon.com,~livejournal.com##.lj
+~cloudflare.com,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~ozon.ru,~ozon.by,~ozon.com,~livejournal.com##.lj
     ! Exclusions:
+    ! cloudflare - random two-letter classes
     ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
     ! ozon - random two-letter and other classes
 ##.lj-like
@@ -2365,8 +2371,9 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ##.menu-icon-tw
 ##.menu-icon-go
 ##.repost-button
-~belarus2020.org,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~nnmclub.to,~ozon.ru,~ozon.by,~ozon.com##.tg
+~belarus2020.org,~cloudflare.com,~medium.com,~betterprogramming.pub,~faun.pub,~jetruby.com,~itnext.io,~towardsdatascience.com,~nnmclub.to,~ozon.ru,~ozon.by,~ozon.com##.tg
     ! Exclusions:
+    ! cloudflare - random two-letter classes
     ! medium.com,betterprogramming.pub,faun.pub,jetruby.com,itnext.io,towardsdatascience.com - random two-letter classes, medium engine
     ! nnmclub.to - main table
     ! ozon - random two-letter and other classes
