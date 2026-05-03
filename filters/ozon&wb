@@ -516,6 +516,8 @@ ozon.kz##a[href="https://ballon.ozon.kz/"]
 ozon.*##div:matches-css(height:32px):has(img:matches-css(height:32px))
 ! top banner 2024-02
 ozon.*##div:has(>img[elementtiming*="lcp_eltiming_webToAppBanner"])
+! is in Adguard
+ozon.*##[data-widget="webToAppBanner"]
     ! update: Adguard rule
     ! ozon.ru##img[elementtiming*="Banner"]
 ! реклама в выпадающем списке при поиске
@@ -636,12 +638,13 @@ ozon.*##[data-widget="webSharingButton"]
 ozon.*##span:has-text(Условия доставки из-за рубежа):style(color:red !important)
 !
 ! многие продавцы пишут полную фигню, тупую, однообразную и рекламную, в качестве ответов на отзывы. Задолбало.
-ozon.*##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в ответ/)))
+!ozon.*##div[data-review-uuid] ~ div:has(div[comments]:has(a:has-text(/^в ответ/)))
 ! new design
 !ozon.*##div:has(>div>span:has-text(/0 комментариев|1 комментарий/))
 ! new design again
 !ozon.*##button:has(>div:has-text(/0 комментариев|1 комментарий/))
 ! в конце концов, эту хрень скрыли по клику. Отлично.
+! update 2026-04: в новом дизайне первое правило начало скрывать отзывы в мобильной теме. Отключено до переработки.
 !
 ozon.*##div[celltrackinginfo]:not(:matches-path(/reviewVuuid/)):not(:matches-path(/my/reviews)):not(:matches-path(/context/client_opinion):not(div[reviewuuid])
 ! and also. Old design.
