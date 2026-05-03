@@ -2657,6 +2657,9 @@ audi-club.ru#@#.activeSmallLogo
 audi-club.ru##.adv_strings_wrapper
 audi-club.ru##.XenAdvShop
 
+audioaidynamics.com##.w-full:has-text(cookies)
+audioaidynamics.com##.animate-scroll
+
 audiobooks.pw##noindex
 
 ||audiocleaner.ai/img/gitft.png
@@ -3405,14 +3408,18 @@ avtoved.guru##.headersmenu
 
 ||avtovzglyad.ru/offline-sw.js
 ||avtovzglyad.ru/static/front/js/fcm/  # firebase
-avtovzglyad.ru##.rating
-avtovzglyad.ru##.ring
+    ! banners and promos
 avtovzglyad.ru##.header-specproject
 avtovzglyad.ru##.socials-subscription
 ! inline related
 avtovzglyad.ru##article[data-position="right"]
 ! inline related
 avtovzglyad.ru##article.skim-figure
+! see viqeo.tv
+avtovzglyad.ru##section.video:has(.viqeo-external_player)
+    ! others
+avtovzglyad.ru##.rating
+avtovzglyad.ru##.ring
 
 avtozakony.ru##.article-nav
 
@@ -6682,6 +6689,10 @@ cutegirlporn.com##.gal-link
 ||cxid.info/other/$image  # banners
 cxid.info##.last10Table
 cxid.info##.cxidlogos
+
+||cyanite.ai/wp-content/uploads/2023/05/CYANITE-Logo$image
+cyanite.ai##.et_pb_section_0_tb_header
+cyanite.ai##.et_pb_sticky:style(position:static !important)
 
 cyberciti.biz###site_tagline
 cyberciti.biz##.nixcraft-p-container
@@ -29015,6 +29026,7 @@ strikeshop.com.ua###popup
 strikeshop.com.ua##.ribbon-banner
 
 ||stripe.com/v3/fingerprinted/
+||stripe.com/v3/fingerprinted/$redirect=noop.js
 
 striveapp.ru##.jump:style(animation:none !important)
 
@@ -29165,6 +29177,15 @@ sumki.ru##.star-voted
 
 sumtips.com##.czr-btta.czr-btt.btn
 sumtips.com##.primary-navbar__wrapper:style(position:static !important)
+
+||suno.com/api/statsig/  # suspicious posts
+    ! ||studio-api-prod.suno.com/api/statsig/
+||suno.com/agg-receiver-service/
+||suno.com/v1/initialize  # seems don't  # no, it's ok
+||suno.com/9i3s/  # 1p script  # is in Adguard
+    ! banners and promos
+suno.com##div:has-text(/^Upgrade to Pro$/)
+suno.com##div:has(>div:has-text(/^Upgrade for full song$/))
 
 sunporno.com##.safelink
 
