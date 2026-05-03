@@ -4656,6 +4656,7 @@ froling.bee.pl  # from Dan Pollock's hosts file
 
 dl.beeline.ru  # URL Shortener  # spam
 ops.beeline.ru  # from Ru AdList
+sentry-relay.beeline.ru
 
 mmi.bemobile.ua  # from GoodbyeAds
 
@@ -4918,6 +4919,8 @@ iguazu.doordash.com  # from Adguard
 otel-mobile.doordash.com  # from EasyPrivacy, Adguard
 
 newsletter-tracking.dw.com
+
+recommendation-backend.service.eapteka.ru  # это внутренний сервис, запросы к нему можно блокировать
 
 clck.edadeal.ru  # clck.edadeal.ru/click  # is in Adguard
 geopicker.edadeal.ru  # geopicker.edadeal.ru/api/v1/popular?country_geo_id=..&lang=..&lat=..&lng=..
@@ -6892,6 +6895,10 @@ sp-consent.stuttgarter-zeitung.de  # from Adguard
 
 sumologic.stv.tv  # from uBlock filters
 
+m-stratovibe.prod.suno.com  # is in Adguard
+    ||m-stratovibe.prod.suno.com^$xhr,redirect-rule=noop.json  # is in Adguard
+s.prod.suno.com  # only tracking scripts here
+
 t.superjob.ru  # tracking image  # https://t.superjob.ru/i?...
 
 cc.swiftype.com  # from Adaway
@@ -7068,6 +7075,8 @@ c.trello.com  # c.trello.com/i?stm=...
 nedstat.tripod.com  # from MVPS
 
 ads-segment-profile-noneu.truecaller.com  # from Mahakala
+cookies.truecaller.com
+metis.truecaller.com  # is in Adguard, EasyPrivacy
 
 ! it seems, they are non-ad and legit service. Ok
 ! "Each review has a personal story"
