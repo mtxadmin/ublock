@@ -1635,6 +1635,8 @@ $removeparam=/^refer_/
 
 ! /referer/ - see the header
 ~ozon.ru$removeparam=/referer[^=]*=/i
+    ! Exclusions:
+    ! ozon.ru - needed for some non-ad api calls
 ! /referrer/ - see the header
 $removeparam=/referrer[^=]*=/i$domain=~twitter.com|~twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion|~x.com
     ! Exclusions:
@@ -2685,6 +2687,7 @@ amazon.*$removeparam=/^srs?=/  # from DandelionSprout's ClearURLs for uBo
 ! ||amazon.*^$removeparam=store_ref  # from DandelionSprout's URLShortener  # blocked as /_ref$/
 ||amazon.$removeparam=SubscriptionId  # from DandelionSprout's URLShortener
 amazon.*$removeparam=th  # Found independently  # is in DandelionSprout's URLShortener and Adguard
+amazon.*$removeparam=/^trd-us/  # Found independently 
 amazon.*$removeparam=ts_id  # from Adguard
 ||amazon.*/hz/contact-us/csp$removeparam=/Version/i  # from Adguard
 amazon.*$removeparam=visitId  # from Adguard
