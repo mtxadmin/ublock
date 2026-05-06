@@ -10057,10 +10057,17 @@ finabank.ru##.popup_exit_wrap
 finabank.ru##.present-block
 finabank.ru##.header__top:style(position:static !important)
 
-||finam.ru/metrics  # from EasyPrivacy
+||finam.ru/metrics  # https://ga.finam.ru/metrics  # is in EasyPrivacy
 ||finam.ru/plugin/  # suspicious posts
+    ! top
 finam.ru###finfin-header:style(position:static !important)
 finam.ru###infinity-ui-left-header:style(position:static !important)
+    ! popups
+! totop
+finam.ru###finfin-local-plugin-block-item-footer
+    ! banners and promos
+finam.ru##p:has([href^="https://broker.finam.ru/landing/"])
+    ! other
 
 financc.ru##.head_top
 
@@ -14366,6 +14373,7 @@ investim.guru$inline-script  # site blocks copypaste
 ||investing.com/*/_error$script
 ||investing.com/api/editions/streamer
 ||investing.com/Broker_Button_New/$image
+||investing.com/gcode/  # is in uBlock filters, EasyList
 education.investing.com$script  # https://si.education.investing.com/inv/prebid.js  # https://si.education.investing.com/inv/imhb.js
     ! popups
 investing.com##[class^=watchlist-onboarding-drawer]
@@ -28723,6 +28731,7 @@ sportwiki.to##.prelinetext
 sportwiki.to###sportswiki-idea
 ! other
 
+-spclient.spotify.com/gabo-receiver-service*/v3/events  # Adguard rule
 ||spotify.com/embed-podcast/$subdocument
 spotify.com##.Root__now-playing-bar
 
