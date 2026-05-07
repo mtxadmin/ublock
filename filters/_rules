@@ -2877,7 +2877,11 @@ _chartbeat.js  # from EasyPrivacy
 /counter.js$important
 /counter.min.js$important
 /counter.php?$~object  # from Ru AdList
-/counters^  # from RU AdList
+/counters^$domain=~gosuslugi.ru|~traktorist.ua|~work.ua  # initially from Ru AdList
+    ! Exclusions:
+    ! gosuslugi.ru - not trackers, seems to be json counter of notifications
+    ! traktorist.ua - exclusion is from Ru AdList
+    ! work.ua - exclusion is from Ru AdList
 /crossdevice.min.js$important
 /csp-violation-report
 /ctracker/*$domain=~charmtracker.com  # from EasyPrivacy  # charmtracker.com is not a ad tracker
