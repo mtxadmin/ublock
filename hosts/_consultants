@@ -176,11 +176,12 @@
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-##[class*="callback"]:not(html):not(body):not(article):not(.has-validation-callback)
+~avtocod.ru##[class*="callback"]:not(html):not(body):not(article):not(.has-validation-callback)
     ! Exclusions:
     !
     ! .has-validation-callback :
-    ! eapteka.ru - from: has-validation-callback
+        ! eapteka.ru - from: has-validation-callback
+    ! avtocod.ru - .callback-form* are auth-form
     ! expats.cz - job apply form: default-form has-validation-callback
     ! saphyte.cloud - login form: login-form has-validation-callback
 ##[id*="callback"]:not(html):not(body):not(article)
