@@ -558,9 +558,10 @@ _468.gif  # from CJX's EasyList Lite
 .ace.advertising.  # from EasyList
 /achecker.js
 ! here are some false positives in URL. But generally this rule is very good
-/ad/*$important,all,domain=~1000.menu|~alza.de|~condenast-media.gcdn.co|~dhresource.com|~etutorium.com|~fandom.com|~fastpic.org|~habr.com|~habrastorage.org|~imagebam.com|~imagevenue.com|~imfdb.org|~livemaster.ru|~ozon.ru|~pussyspace.com|~xnxx.com|~xvideos.com|~xvideos-cdn.com|~z3.fm
+/ad/*$important,all,domain=~1000.menu|~alza.de|~auto.ru|~condenast-media.gcdn.co|~dhresource.com|~etutorium.com|~fandom.com|~fastpic.org|~habr.com|~habrastorage.org|~imagebam.com|~imagevenue.com|~imfdb.org|~livemaster.ru|~ozon.ru|~pussyspace.com|~xnxx.com|~xvideos.com|~xvideos-cdn.com|~z3.fm
     ! Exclusions:
     ! alza.de - images (https://cdn.alza.de/Foto/f8/AD/ADL27u31p.jpg)
+    ! auto.ru - Nissan AD is a car model :-)  (.../nissan/ad/...)
     ! condenast-media.gcdn.co (admagazine.ru) is not ads, it is Arch Design
     ! fandom.com - random 2-symbol folders in url
     ! fastpic.org - random 2-symbol folders in url
@@ -982,8 +983,14 @@ _banner120_2.gif  # from Adguard
 _banner_rotator.php  # from Adguard
 /_banners/*
 /bans/*
-/bitrix/js/arturgolubev.cookiealert/*
     ! ||stopgame.ru/bans/  # from Adguard
+/bitrix/js/arturgolubev.cookiealert/*
+/bitrix/images/arturgolubev.cookiealert/*
+    ! ||texkom.ru/bitrix/js/arturgolubev.cookiealert/
+    ! ||texkom.ru/bitrix/images/arturgolubev.cookiealert/
+/bitrix/js/yandex.metrika/*
+    ! ||kuzov-media.ru/bitrix/js/yandex.metrika/
+    ! ||macards.ru/bitrix/js/yandex.metrika/
 /bitrix/tools/conversion/*
 /bitrix/spread.php?$important  # is in RU AdList, EasyPrivacy, AdGuard
 /bitrix/services/main/ajax.php?action=yandex%3Ametrika
@@ -1589,8 +1596,9 @@ _rebid.js  # from EasyList
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-~babyblog.ru,~businessinsider.com,~cnn.com##[class$="-ad"]:not(html):not(body):not(article):not(#maincontent)
+~autocentre.ua,~babyblog.ru,~businessinsider.com,~cnn.com##[class$="-ad"]:not(html):not(body):not(article):not(#maincontent)
     ! Exclusions:
+    autocentre.ua - .js-insert-ad is main content
     businessinsider.com - .with-rail-video-ad is main content (part of)
     !
     ! is in EasyList
