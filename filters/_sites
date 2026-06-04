@@ -8369,6 +8369,7 @@ dublikat-nomer.com##.sppb-media
 duckduckgo.com###header_wrapper:style(top:0px !important)
 duckduckgo.com##.header-wrap:style(position:static !important)
 duckduckgo.com##.header--aside__item
+duckduckgo.com##.header__logo-wrap
     ! footer
 ! promos
 duckduckgo.com##.footer
@@ -28744,6 +28745,9 @@ sportwiki.to###sportswiki-idea
 -spclient.spotify.com/gabo-receiver-service*/v3/events  # Adguard rule
 ||spotify.com/embed-podcast/$subdocument
 spotify.com##.Root__now-playing-bar
+spotify.com##button:has-text(Premium)
+spotify.com##.encore-internal-color-text-subdued:has-text(Install App)
+spotify.com##.encore-internal-color-text-base:has-text(Download app)
 
 spr.ru##.moduleToolBars
 
@@ -29313,6 +29317,11 @@ sumtips.com##.primary-navbar__wrapper:style(position:static !important)
 ||suno.com/agg-receiver-service/
 ||suno.com/v1/initialize  # seems don't  # no, it's ok
 ||suno.com/9i3s/  # 1p script  # is in Adguard
+    ! popups
+! naggy popups
+suno.com###suno-toast-viewport-bottom:has-text(Song details updated successfully)
+suno.com###suno-toast-viewport-bottom:has-text(/^$/):style(height:auto !important)
+suno.com###suno-toast-viewport-top:has-text(/^$/):style(height:auto !important)
     ! banners and promos
 suno.com##div:has-text(/^Upgrade to Pro$/)
 suno.com##div:has(>div:has-text(/^Upgrade for full song$/))
