@@ -1391,6 +1391,9 @@ alfabank.ru##[class^=main-carousel_]
 alfabank.ru##.swiper-slide:has(article[data-test-id="main-carousel-slide"])
 alfabank.ru##[class*=Notification]:has-text(Минцифры)
 alfabank.ru##[class*=page__banner]
+alfabank.ru##[data-test-id="advice-widget-trainer-banner"]:has-text(Вам одобрен кредит)
+alfabank.ru##[data-test-id="context-recommendations"]
+alfabank.ru##[data-test-id="alfa-jackpot-banner"]
 alfastrah.ru##.slider-banners
 alfastrah.ru##.rate-us
 aslife.ru##.main-slider
@@ -2699,6 +2702,7 @@ author.today##.reader-header:style(position:static !important; border-bottom:non
 ||auto.ru/-/ajax/$~xhr  # auto.ru/-/ajax/mag/events_log/  # is in EasyPrivacy now
 ||auto.ru/-/ajax/desktop/events_log/
 ||auto.ru/-/ajax/desktop/getSearchlineHistory/  # post xhrs
+||auto.ru/-/ajax/desktop/sendUserChoice/
 !||auto.ru/-/ajax/mag/events_log/  # EasyPrivacy rule
 ||auto.ru/-/ajax/mag/getOffersAutoru/  # NOT EasyPrivacy rule
 ||avto.ru/autoru/background$image
@@ -4830,6 +4834,10 @@ bookvoed.ru##a[href="https://www.bookvoed.ru/"][class]
 
 boomplay.com##.gaussianWrap
 boomplay.com##.sidebar:style(position:absolute !important)
+
+boosty.to##[class*=module_avatar]
+boosty.to##[class*=module_blogTitle]
+boosty.to##[class^=ScrollUpButton]
 
 ! disable exclusion in Fanboy's
 @@*$generichide,domain=boredpanda.com,badfilter
@@ -14850,6 +14858,8 @@ j4web.ru##.header-content
 jacalu.de###banner-wrapper
 jacalu.de##.dynamic-words
 
+jackrighteous.com##.appstle-loyalty-button
+
 jackworthen.com###header-text-nav-wrap:style(padding-top:0px !important; padding-bottom:0px !important)
 jackworthen.com##.news-bar
 jackworthen.com###primary:style(width:auto !important)
@@ -17826,6 +17836,8 @@ magazin01.ru##.sections-slider
 magazin01.ru###popup_iframe_wrapper
 magazin01.ru##.cd-modal-bg
 magazin01.ru##+js(rc, wrapper1)
+magazin01.ru###headerfixed
+magazin01.ru##.sticky-block:style(position:static !important)
 
 ||magazin-santechniki.ru/*/images/head_bg_840.png
 ||magazin-santechniki.ru/*/images/cart.png
@@ -26106,6 +26118,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2013/0302/66/4bc6cf36153fab1c27f80bb8adae4b66.$image
 ||fastpic.org/big/2013/0415/b2/9ef3b3a092c18756994f4a0a938572b2.$image
 ||fastpic.org/big/2013/0501/d7/50ac69da626c04a8bc9c1f230c6609d7.$image
+||fastpic.org/big/2013/0526/80/733e818403bfc7e61b8a1853c222a480.$image
 ||fastpic.org/big/2013/0614/3a/6f48ea025e1f8da512312ecaa008753a.$image
 ||fastpic.org/big/2013/0720/d9/fd2c43826509f2e6b6752621661aedd9.$image
 ||fastpic.org/big/2013/0902/39/2b559911308e8ab10a87e908c1807039.$image
@@ -29347,6 +29360,9 @@ suno.com###suno-toast-viewport-top:has-text(/^$/):style(height:auto !important)
 suno.com##div:has-text(/^Upgrade to Pro$/)
 suno.com##div:has(>div:has-text(/^Upgrade for full song$/))
 
+sunoaiwiki.com##.right-sidebar:style(position:static !important)
+!sunoaiwiki.com##.sidebar-pane:style(position:static !important)
+
 sunporno.com##.safelink
 
 superdom.ua##.nav-top:style(position:static !important)
@@ -31221,6 +31237,14 @@ tophotels.ru##.footer__title
 
 top-knife.ru##.brand-plugin-wrap
 
+topmediai.com##.seedance-popup
+topmediai.com##.activity-dialog-entry-container
+topmediai.com##aside
+topmediai.com##.activity-floating-entry
+topmediai.com##.activity-top-header-banner
+topmediai.com##.off-50-percent-tag
+topmediai.com##.join-program
+
 top-mob.com##div:has(>p:has-text(Telegram))
 ! inline related
 top-mob.com##.internal-linking-related-contents
@@ -32746,6 +32770,7 @@ vc.ru##.widget-pro-blogs
 ! promo
 vc.ru##.comments-limit__expand-always
 vc.ru##.widget-top-subsites
+vc.ru##.sticky-stack-sidebar__section > div:has-text(Подписка)
     ! sticky elements
 vc.ru##.sticky.comments__navigation:style(position:static !important)
 vc.ru##.main_menu:style(position:static !important)
