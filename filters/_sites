@@ -2702,7 +2702,7 @@ author.today##.reader-header:style(position:static !important; border-bottom:non
 ||auto.ru/-/ajax/$~xhr  # auto.ru/-/ajax/mag/events_log/  # is in EasyPrivacy now
 ||auto.ru/-/ajax/desktop/events_log/
 ||auto.ru/-/ajax/desktop/getSearchlineHistory/  # post xhrs
-||auto.ru/-/ajax/desktop/sendUserChoice/
+||auto.ru/-/ajax/desktop/sendUserChoice/  # suspicious posts
 !||auto.ru/-/ajax/mag/events_log/  # EasyPrivacy rule
 ||auto.ru/-/ajax/mag/getOffersAutoru/  # NOT EasyPrivacy rule
 ||avto.ru/autoru/background$image
@@ -2909,6 +2909,10 @@ autoglassworld.ru##.lvp-block:has(h3:has-text(ранее смотрели))
 ||auto-gps.ru/img/paycard.png
 auto-gps.ru##.divgrey
 auto-gps.ru##.blk_manufactur1
+
+autoinstruction.ru##a[href="https://autoinstruction.ru/"]:has(img)
+autoinstruction.ru##.ain11:has-text(использует куки)
+autoinstruction.ru##.adpc
 
 autoitscript.com##.ipsClearfix.ipsList_noSpacing.ipsList_inline
 autoitscript.com##.ipsSpacer_top.cTopicPostArea_noSize.ipsPad.ipsAreaBackground.cTopicPostArea
@@ -32139,6 +32143,10 @@ udemy.com##.udlite-btn:has-text(/Share|Поделиться/)
 uft.me###clickbg
  inline related
 udemy.com##[class*=show-more--container--]
+
+! top login menu
+udio.com##.fixed:style(position:absolute !important)
+udio.com##a[href="/pricing"]:has-text(Trial)
 
 !udemyfreecourses.org$inline-script  # ad popups
 ||udemyfreecourses.org/images/udemy-free-courses.jpg
