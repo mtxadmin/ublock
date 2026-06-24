@@ -1371,6 +1371,7 @@ alfabank.ru##[data-test-id="pfmV3ExcludeOperation"]
 ! еще один странный кривой попап
 alfabank.ru##span::before
 alfabank.ru##.module-digitalSalesSpecialOffersSplash
+alfabank.ru##[data-focus-lock-disabled]:has([role="dialog"]:has-text(Потеряли связь с вами))
     ! logos
 !alfabank.ru##svg - don't, svg.icon-button.. are useful inteface buttons
 alfabank.ru##[class^=Hlayout_logo_]
@@ -3283,7 +3284,18 @@ avito.ru##[class^=iva-item-badgeBarStep]
 avito.ru##div:has(>div>div:has-text(/^Уникальное предложение/))
 ! автосалонные "скидки", набор стандартный - кредит, trade in, допы
 avito.ru##div:has(>div:has(>p:has-text(Скидки от дилера)))
+avito.ru##div:has(>h2:has-text(Предложения дилера))
+! перекупы
+avito.ru##[class^=iva-item-content]:has([class^=SnippetBadge-title]:has-text(яПомогаю))
 avito.ru##[class*=styles-module]:has(>[class*=styles-module-h-full]:has-text(/^$/))
+! inline promos
+avito.ru##section:has(a[href*=context])
+! inline related
+avito.ru##section:has(a[data-marker="journal-auto/universal-content-block/button"])
+! inline related
+avito.ru##[data-marker="journal-auto/read-more-slider-block"]
+! inline related (tg)
+avito.ru##section:has(a[href^="https://t.me/avito_auto_journal/"])
     ! спам и разводки
 avito.ru##.js-catalog-item-enum:has-text(Компьютерный мастер)
     ! socials
@@ -3332,6 +3344,18 @@ avtoall.ru##.region-selection-confirmation-wrapper
     ! top
 avtoall.ru###page-scroll-header
     ! other
+avtoall.ru##.header-icon__max
+avtoall.ru##.header-left-one-link
+avtoall.ru##.sber-spasibo
+avtoall.ru##.price-offer-business
+avtoall.ru###mmenu:style(height:auto !important)
+avtoall.ru##.yandex-split
+avtoall.ru##.item-business
+avtoall.ru##.related-forGood
+avtoall.ru##.related-goods
+avtoall.ru##.bottom-history
+avtoall.ru##.footer__whatsapp
+avtoall.ru##.left-history
 
 ||avto-blogger.ru/*/avto-blogger.$image
 ||avto-blogger.ru/wp-content/themes/avto-blog/assets/img/headerMiddle__back.jpg
@@ -5618,6 +5642,11 @@ charter97.org##.l-sidebar__inner:style(position:static !important)
 chartio.com##.tutorial-toc__wrapper
 
 ||chat.hu/imgadverts  # from Hufilter
+
+chatgpt.com##.btn:has-text(Upgrade)
+chatgpt.com##.button-glimmer-cta
+chatgpt.com###stage-sidebar-tiny-bar
+chatgpt.com##.group:has(.header-wordmark)
 
 chayka-sport.ru##.main_ico_phone
 
@@ -10986,6 +11015,8 @@ garant.ru##.wf2-popover
 garant.ru##.grwf2_backdrop
 garant.ru##.info-important
 garant.ru##.price.card
+garant.ru##.transient
+garant.ru##.system.card:has-text(Демо-доступ)
 
 garethjones294.com###header
 
@@ -12520,6 +12551,8 @@ halabtech.com##.modal-dialog
 halabtech.com###pop-alert-modal
 halabtech.com##.slider-container
 halabtech.com##.marquee-set
+
+halykbank.kz##.fixed.w-full
 
 handmade-garden.ru##.logo0
 
@@ -18469,6 +18502,8 @@ medimetriks.com##.flexslider
 ||medium.com^*/performance/  # is in EasyPrivacy
 ||lightstep.medium.systems^*/reports  # is in EasyPrivacy
 /_/batch|$xmlhttprequest,1p  # is in Fanboy's  # medium sites
+! Meduim now drops off the session. Let's block their scripts to see the content, at least
+||medium.com$script
     ! paywall
 medium.com###regwall-background-color
 medium.com##.c.s:has-text(Read the rest)
@@ -28287,6 +28322,7 @@ sostav.ru##.bl-header__brand
 sostav.ru##.bl-header:style(position:static !important)
 sostav.ru##.bl-header::before
     ! other
+sostav.ru##.bl-share-feed
 
 ! форма поиска съехала и отожрала правую колонку. Придется удалять.
 sotka.guru##.ya-site-form__search-input
@@ -30457,6 +30493,10 @@ terrikon.com##.keywords
 ||tescomaonline.com/media/images/slider/$image
 tescomaonline.com##.slider.owl-carousel
 
+tesera.ru##.visual
+tesera.ru###footer p:style(position:static !important)
+tesera.ru###footer ul:style(position:static !important)
+
 teslarati.com##.body-top-pad:style(padding-top:15px !important)
 
 teslatarget.ru###fancybox-wrap
@@ -32162,6 +32202,7 @@ udemy.com##[class*=show-more--container--]
 ! top login menu
 udio.com##.fixed:style(position:absolute !important)
 udio.com##a[href="/pricing"]:has-text(Trial)
+udio.com##li[data-sidebar="menu-item"]:has(a[href="/pricing"]:has(svg))
 
 !udemyfreecourses.org$inline-script  # ad popups
 ||udemyfreecourses.org/images/udemy-free-courses.jpg
