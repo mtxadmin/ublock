@@ -648,6 +648,7 @@ analytics.msk1.ru
 analytics.nexonm.com  # +  # from GoodbyeAds
 analytics.ngs.ru  # ngs.ru - Tracker  # from Quidsup NoTrack-Blocklist
 analytics.ngs24.ru  # ad scripts
+analytics.ngs55.ru  # from Adguard
 analytics.nike.com  # Nike.Com - Tracker  # from Quidsup NoTrack-Blocklist
 analytics.okazii.ro  # from EasyPrivacy
 analytics.oneplus.cn  # oneplus.cn - Tracker  # from Quidsup NoTrack-Blocklist
@@ -688,12 +689,13 @@ analytics.tn.kz  # from Ru AdList
 analytics.tntsports.cl  # from Adguard
 analytics.trutv.com  # from MVPS
 analytics.m7g.twitch.tv  # from Adguard and EasyPrivacy
-analytics.ngs55.ru  # from Adguard
 analytics.twitter.com$important  # from EasyPrivacy
 analytics.vendemore.com
 analytics.mobile.walmart.com  # Walmart.Com - Tracker  # from Quidsup NoTrack-Blocklist
 analytics.mobile-cdn.walmart.com.akadns.net  # from Adaway
 analytics.wpmucdn.com
+analytics.yahoo.com  # is in 3 lists
+analytics.yougile.com
 analytics.zeekit.co  # from Adguard
 analytics.zendesk.com  # from Adaway
 
@@ -856,6 +858,7 @@ cmp.osano.com  # from EasyList
 cmp.parkers.co.uk  # from EasyList
 cmp.playpilot.com  # from EasyList
 cmp.pcwelt.de  # from EasyList
+cmp.prisa.com  # https://cmp.prisa.com/dist/cmp_ep.js
 cmp.redge.media$important  # from Adguard
 cmp.seniorguide.jp  # from Adguard
 cmp.cdn.thesun.co.uk  # from EasyList
@@ -4193,7 +4196,7 @@ dap-dist.akamaized.net  # dap-dist.akamaized.net/dapentropy.js  # "Akamai Data A
 
 coads.akipress.org  # from Ru AdList
 
-groupib-ac.alfabank.ru
+!groupib-ac.alfabank.ru - don't, first login hangs
 groupib-nib.alfabank.ru
 sentry-mobile.alfabank.ru
 
@@ -4292,7 +4295,7 @@ fourier.taobao.com  # ad tracker  # is in several lists
     ! in-app Aliexpress related marketing from Energized Blu
 accscdn.m.taobao.com  # https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
 acs4baichuan.m.taobao.com
-acs.m.taobao.com  # also https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
+acs.m.taobao.com  # app requests  # also https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
 adashbc.m.taobao.com
 adashbc.ut.taobao.com  # also https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1278
 adash.m.taobao.com
@@ -5464,6 +5467,8 @@ u.habr.com  # URL shortener and reflinks
 
 !bigyapan.hamropatro.com  # from Adguard
 
+livetex.halykbank.kz  # !+  # see livetex.ru
+
 em.hartenergy.com
 
 !tarantula.hashicorp.com  # ad scripts  # is in Adguard
@@ -6254,6 +6259,7 @@ landing.newgensoft.com
 
 uk-tracking.nextdoor.com  # from Adaway
 us-tracking.nextdoor.com  # from Adaway
+flask.nextdoor.com  # flask.nextdoor.com/pixel?pid=...
 
 cstat.nextel.com.ua  # cstat.nextel.com.ua:8443/tracking/script/...
 
@@ -6854,17 +6860,25 @@ im-sentry.sportmaster.ru
 senoval.sports.ru  # from Ru AdList
 t.sports.ru  # from Adguard and Ru AdList
 
+adeventtracker.spotify.com  # from Adaway
 adeventtrackermonitoring.spotify.com  # from Adguard
+adstudio.spotify.com  # from Adguard Chinese, AWAvenue Ads
+aet.spotify.com  # from Adguard
 gew4-spclient.spotify.com
     ! -spclient.spotify.com/gabo-receiver-service*/v3/events  # Adguard rule
-pixel-static.spotify.com  # Spotify - Tracker  # from Quidsup NoTrack-Blocklist
-wl.spotify.com  # from Peter Lowe's
-heads-ak.spotify.com  # from BlockListProject - Ads
+heads-ak.spotify.com  # from BlockListProject - Ads, AWAvenue Ads
 heads-ak-spotify-com.akamaized.net  # from BlockListProject - Ads
-heads-ak.spotify.com.edgesuite.net  # from BlockListProject - Ads
+heads-ak.spotify.com.edgesuite.net  # from BlockListProject - Ads, Adguard Chinese
+heads-fa.spotify.com  # from Adguard Chinese, AWAvenue Ads
 heads-fab.spotify.com  # from BlockListProject - Ads
 heads4-ak.spotify.com.edgesuite.net  # from BlockListProject - Ads
 heads4-akp.spotify.com.edgesuite.net  # from BlockListProject - Ads
+log2.spotify.com  # from Adguard
+open.spotify.com  # from NextDNS Affiliate & Tracking
+pixel.spotify.com  # from Adguard
+pixels.spotify.com  # from Adguard
+pixel-static.spotify.com  # Spotify - Tracker  # from Quidsup NoTrack-Blocklist, Adguard
+wl.spotify.com  # from Peter Lowe's, Adguard, NextDNS Affiliate & Tracking
 
 rek5.ssyoutube.com  # from ShadowWhisperer's URL Shorteners
 
