@@ -284,6 +284,7 @@ apteka.103.by##div:matches-css(position:fixed)
 ||2gis.ru/museum/$important  # "old browser" popup
 ! geo popups
 2gis.ru###modal
+2gis.ru##div:has-text(/^(Не уходите со страницы|Получить кешбэк)/)
     ! banners and promos
 ! это неинтересно. Тупая реклама.
 2gis.ru##div:has(>span:has-text(/Это интересно|Реклама/))
@@ -1392,7 +1393,9 @@ alfabank.ru##[class^=main-carousel_]
 alfabank.ru##.swiper-slide:has(article[data-test-id="main-carousel-slide"])
 alfabank.ru##[class*=Notification]:has-text(Минцифры)
 alfabank.ru##[class*=page__banner]
-alfabank.ru##[data-test-id="advice-widget-trainer-banner"]:has-text(Вам одобрен кредит)
+!alfabank.ru##[data-test-id="advice-widget-trainer-banner"]:has-text(Вам одобрен кредит)
+! Не, там вообще всё сплошное промо.
+alfabank.ru##[data-test-id="advice-widget-trainer-banner"]
 alfabank.ru##[data-test-id="context-recommendations"]
 alfabank.ru##[data-test-id="alfa-jackpot-banner"]
 alfastrah.ru##.slider-banners
@@ -2717,6 +2720,8 @@ author.today##.reader-header:style(position:static !important; border-bottom:non
 ||avto.ru/autoru/views$image
 ||yastatic.net/s3/vertis-frontend/internal-frontend/marketing/
 ! There is a general rule in Ru AdList. Hmmm, ok.
+! вешает десятки подозрительных обфусцированных ивентов и, похоже, ломает скролл
+auto.ru##+js(aeld)
     ! logos
 ||yastatic.net/s3/vertis-front-deploy/_autoru-frontend/journal-logo$image
 ||yastatic.net/s3/vertis-front-deploy/_autoru-frontend/background$image
@@ -2738,6 +2743,9 @@ auto.ru##.FullScreenSplashCarBanner
 ! auth banners.
 ! seems too broad. On the other hand, their auth popups are really naggy
 auto.ru##.Modal:has(.LoginFrame):not(:matches-path(auth.auto.ru))
+auto.ru##[class^=Modal]:has([class^=AuthOnboardingPopup])
+auto.ru##[class^=Overlay]
+auto.ru##[class^=LogbookListingLeftSideBarVideo__onboardingOverlay]
 auto.ru##[class*=IndexBackButton_sticky]
 ! totop
 auto.ru##[class^=UpButton]
@@ -2826,6 +2834,8 @@ auto.ru##.Share
 auto.ru##.Header2Placeholder
 auto.ru##[class^=CardStickyBar]
 auto.ru##[class*=HeaderWithBackButton]:style(position:static !important)
+! blocks scrolling
+auto.ru##.TopBgKolya
     ! sidebar
 auto.ru##.ScrollableSidebar:style(position:static !important)
     ! other
@@ -3047,6 +3057,8 @@ auto-rostov.ru###branding
 auto-rostov.ru##.ipsBadge
 auto-rostov.ru##.avatar
 
+autort.ru$inline-script
+
 autorus.ru##[src^="data:image/jpg;base64,"]
 
 autoscout24.ru##.hfo-nav
@@ -3225,7 +3237,10 @@ avilon-trade.ru##.footer__button-block
 ||avito.ru/stat/  # is in EasyPrivacy
 ||avito.st/stat/
 ||avito.ru/dstatic/j/mon-check.js
+||avito.ru/dstatic/j/mon-check.js$redirect-rule=noopjs
 ||avito.st/dstatic/j/mon-check.js
+||avito.st/dstatic/j/mon-check.js$redirect-rule=noopjs
+||avito.st/dstatic/build/client/ru-RU/fingerprint$redirect-rule=noopjs
 ||avito.ru/js/recommendations  # suspicious posts
 ||avito.ru/static/remote-verification/
 ||avito.ru/web/1/network/check
@@ -3298,6 +3313,7 @@ avito.ru##section:has(a[data-marker="journal-auto/universal-content-block/button
 avito.ru##[data-marker="journal-auto/read-more-slider-block"]
 ! inline related (tg)
 avito.ru##section:has(a[href^="https://t.me/avito_auto_journal/"])
+avito.ru##[data-marker="new-cars-leadgen-form/form-container"]
     ! спам и разводки
 avito.ru##.js-catalog-item-enum:has-text(Компьютерный мастер)
     ! socials
@@ -4388,6 +4404,9 @@ bintray.com##.swampup-banner
 
 biochemicum.ru##.post_head_bg
 
+bip.ru##[class^=PlateNumberEditButton]
+bip.ru##[class^=ScrollButton]
+
 birdinflight.com##[href="/ru/sponsorship"]
 birdinflight.com##.icon-depositphotos
 
@@ -5355,6 +5374,9 @@ can-opener.org##.top-title-slide
 
 capital-gain.ru##.support-caption
 
+! totop
+capitan-1.ru##.top:has(>svg)
+
 ||capterra.com/*/b/s|  # from Adguard
 ||capterra.com/*/collector  # from Adguard
 capterra.com##[data-testid="knowledge-base-content-cta"]
@@ -5387,6 +5409,7 @@ cardana.ru$script  # site blocks copypaste
 card-oil.ru##.modal-bnr
 card-oil.ru##.bnr-modal-request
 card-oil.ru##button[data-modal="consultModal"]
+card-oil.ru##.top-alert
 
 careerist.ru##.modal
 careerist.ru##.list-archive
@@ -8525,6 +8548,9 @@ dvinatoday.ru##.modal-c
 dvinatoday.ru##.modal-w
 dvinatoday.ru##.a-d-v-detail
 dvinatoday.ru##.with-basis
+
+dv-pro.ru##.popup
+dv-pro.ru###overlay
 
 dvprogram-state-gov.ru$inline-script  # site breaks copypaste
 
@@ -15207,6 +15233,7 @@ kadets.net##.topbutton
 ||kaiten.ru/assets/js/kw-sendsay-popup.js
 kaiten.ru##dialog
 kaiten.ru##.kw-sendsay-popup
+kaiten.ru##.kw-banner-2
 
 ||kaitlyn.guru/custom/webgl_background.js
 
@@ -20249,6 +20276,8 @@ m-zaschita.ru##.product-page__btn--one-click
 
 n8n.io##.opacity-0:style(opacity:initial !important)
 
+naavtotrasse.ru##.banner-landingapage
+
 ||nag.ru/orphus/orphus.gif
 nag.ru###OA_34
 nag.ru##.develop
@@ -20418,6 +20447,8 @@ nascompares.com##.wpcf7 ~ *
 nascompares.com##.wpcf7
 nascompares.com##[href="https://nascompares.com/daily-deals/"]:has(img)
 ||nascompares.com/wp-content/uploads/2022/01/commentsymbol.png
+
+nasha4x4.ru##[class*=widget]:style(position:static !important)
 
 nashdoctor.com##.tabs3d
 ||nashdoctor.com/data/uploads/video_bg/$media
@@ -22731,6 +22762,10 @@ petzl.ru##.page-footer__header
 pfvektor.com##.main-slider
 pfvektor.com##.side-navbar:style(position:static !important)
 pfvektor.com##.html
+
+pgnews.ru##.c-top-menu:style(position:static !important)
+pgnews.ru##.plug__c-top-menu
+pgnews.ru##.right-sidebar-f:style(position:static !important)
 
 phag-rostov.ru##.animate__animated
 phag-rostov.ru##.banner-hospital
@@ -26466,6 +26501,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2024/0911/77/5efb3825b9d04376f88f180742d2f377.$image
 ||fastpic.org/big/2014/1127/30/91436a862c3baccb00181966c43d2430.$image
 ||fastpic.org/big/2024/1224/63/b48b871793c4be30fa9120a35e7d8c63.$image
+||fastpic.org/big/2026/0401/69/e055b6ef852e760aaee38cced1de2069.$image
 ||fastpic.ru/big/2009/1023/67/335f721dba8c4afaba20160aec267e67.$image
 ||fastpic.ru/big/2009/1216/5e/8a4271c44c907f6ff66984a1951b865e.$image
 ||fastpic.ru/big/2011/0916/dc/bfddc1cf22892bfdb7b64e16d28776dc.$image
@@ -26629,6 +26665,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||radikal.ru/i705/1603/5d/c8154e8acfc3.$image
 ||rips.club/img/group_vk.png
 ||rutracker.cc/ranks/compete_sport_winner.gif  # moving gif
+||rutracker.cc/ranks/compete_sport_prize_winner.gif
 ||t-ru.org/pic/ivi.png
 
 ! popups
@@ -30944,6 +30981,7 @@ ticketscloud.org##.navbar-event-sticky-se
 ticketscloud.org##.showroom-widget-box__mobile
 ticketscloud.org##.showroom-event-slide__cover
 
+||ticktick.com/datacollect/event/
 ticktick.com##[class^=brand_]
 
 tiger-gun.ru##.fixed_block_top:style(position:static !important)
@@ -32005,6 +32043,9 @@ tverisport.ru##.fixedpanel:style(position:static !important)
 !tverisport.ru###big_menu:style(transition:none !important; transform:none !important)
 tverisport.ru###big_menu
 tverisport.ru##.menuspoiler
+
+tverlife.ru##body > .container
+tverlife.ru##.logo-area
 
 ||tvn.hu/tvn/kepek/xpoker.hu/  # from Hufilter  # xpoker.hu seems closed.
 
@@ -34222,6 +34263,7 @@ webworld.md##+js(cookie-remover.js)
 ! useless aside
 weeek.net##.components-container-articles
 weeek.net##.gradient.w-button
+weeek.net##.FastNotifications:has-text(Network error)
 
 weekend4travel.ru##.align-left-logo
 ! такая кнопка справа, да
