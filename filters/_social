@@ -93,6 +93,7 @@ api.facebook.com$third-party  # from Anti-Facebook
 api-read.facebook.com$third-party
 badge.facebook.com$third-party  # from Anti-Facebook, EasyList
 graph.facebook.com$third-party,xmlhttprequest  # from Anti-Facebook
+graph-fallback.facebook.com$third-party,xmlhttprequest
 ||graph.facebook.com/?id=$third-party  # from Anti-Facebook
 lithium.facebook.com  # from ShadowWhisperer's Chats
 edge.mqtt.facebook.com$third-party  # from AdAway
@@ -547,6 +548,7 @@ vk.com##.TopHomeLink
 !
 badges.instagram.com$third-party  # Webpages - Icons  # from ShadowWhisperer's Bloat, EasyList
 graph.instagram.com$third-party  # Instagram  # from ShadowWhisperer's Bloat  # also see graph.facebook.com
+graph-fallback.instagram.com$third-party
 survey.instagram.com$third-party  # Survey - Instagram  # from ShadowWhisperer's Bloat
 !
 ! urls
@@ -1814,16 +1816,17 @@ web.telegram.org##.message-list-item.Message:has(a[href^="https://tiny.cc/"])
 ##img[alt^="Share this"]
 ! from Fanboy's
 ##img[alt^="Share This"]
-~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~teleboss.ru,~webinar.ru##[class*="Sharing"]:not(html):not(body):not(article)
-~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~teleboss.ru,~webinar.ru##[id*="Sharing"]:not(html):not(body):not(article)
-~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~teleboss.ru,~webinar.ru##[class*="sharing"]:not(html):not(body):not(article):not(.sharing-enabled):not(#device-sharing):not(#folder-sharing)
-~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~teleboss.ru,~webinar.ru##[id*="sharing"]:not(html):not(body):not(article):not(#device-sharing):not(#folder-sharing)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~tab.digital,~teleboss.ru,~webinar.ru##[class*="Sharing"]:not(html):not(body):not(article)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~tab.digital,~teleboss.ru,~webinar.ru##[id*="Sharing"]:not(html):not(body):not(article)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~tab.digital,~teleboss.ru,~webinar.ru##[class*="sharing"]:not(html):not(body):not(article):not(.sharing-enabled):not(#device-sharing):not(#folder-sharing)
+~bitrix24.*,~clickmeeting.com,~linkedin.com,~drive.google.com,~mts-link.ru,~tab.digital,~teleboss.ru,~webinar.ru##[id*="sharing"]:not(html):not(body):not(article):not(#device-sharing):not(#folder-sharing)
     ! Exclusions:
     ! bitrix24 - internal widgets. But, just to be sure:
         ||bitrix24.com/*/sharing$3p
         ||bitrix24.net/*/sharing$3p
         ||bitrix24.ru/*/sharing$3p!
     ! mts-link.ru, webinar.ru - screensharing*, main div
+    ! tab.digital - board sharing
     ! teleboss.ru - screensharing
 !
 ! ends with -soc
