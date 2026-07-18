@@ -277,6 +277,9 @@ apteka.103.by##div:matches-css(position:fixed)
 2do2go.ru##.page_nav-spacer
 2do2go.ru##.progress
 
+2droida.ru##.layout-button-up
+2droida.ru##.footer-mail-form
+
 ||2gis.com/widget-constructor/  # 3p widget scripts
 ||bss.2gis.com/bss-ext/  # suspicious posts
     ! popups
@@ -1193,6 +1196,8 @@ air-gun.ru##.icons8-share
 air-gun.ru##.skidka
 air-gun.ru##+js(set, Cackle, noopFunc)
 air-gun.ru##+js(set, Cackle.bootstrap, noopFunc)
+
+airoom.ru##.wd-sticky-btn
 
 ||airsoft-rus.ru/images/mailToDirector.png
 ! menu
@@ -4099,6 +4104,7 @@ beeline.kz##.h2_space:has-text(Интернет-магазин)
 ||beeline.ru/*/bee-logo/
 ||beeline.ru/*/roamingbanner.jpg
 ||beeline.ru/upload/images/roaming/
+beeline.ru##[class*=region-confirmation]
 
 beermoneyforum.com##.xtr-message-block-text
 ||beermoneyforum.com/styles/xentr/exclusive/images/shape/$image
@@ -6004,6 +6010,10 @@ cian.ru##[data-web-ui-test-id="MainMenuContainer"]:style(position:static !import
 cian.ru##[data-name=QuickFilters] *:style(display:initial !important)
 
 ||cifrus.ru/img/mini.png
+    ! popups
+cifrus.ru##.region-confirm
+cifrus.ru##.sticky-product-bar
+    ! other
 cifrus.ru##.img-circle
 cifrus.ru###pop_up_bl
 cifrus.ru###menu_bottom
@@ -6012,6 +6022,9 @@ cifrus.ru###menu.navbar:style(position:static !important)
 ||cifrus.ru/new/image/3goda-min.png
 cifrus.ru##.product_3goda
 cifrus.ru##.view-buy-bat
+cifrus.ru###sidebar
+cifrus.ru###top-menu:style(margin-bottom:0px !important)
+cifrus.ru###cart_fly > .main-set
 
 ||cimg.co/w/bn/$image
 
@@ -6030,6 +6043,7 @@ cisco.com##.headerTitle
 cisoclub.ru##.header-advertisement
 cisoclub.ru##.social-widgets
 
+||citilink.ru/collect
     ! popups
 !citilink.ru##.fresnel-container - no, too broad and hides useful filters
     ! banners and promos
@@ -7751,6 +7765,8 @@ dns-shop.ru,dns-shop.kz##.user-avatar__online
     ! кредиты
 dns-shop.ru,dns-shop.kz##.credit-info
 dns-shop.ru,dns-shop.kz##.credit-calculator-open-link
+dns-shop.ru##.shop-view__voblers-item_type_credit
+dns-shop.ru##[class*=base-shop-view__voblers-item_type_credit]
     ! бренды
 dns-shop.ru,dns-shop.kz##.brand-logo
 dns-shop.ru,dns-shop.kz##.product-card-top__brand
@@ -16117,17 +16133,22 @@ kotel.guru###fancybox-loading
 
 kotelock.ru##.main-block-parent:style(background-image:none !important)
 
+    ! popups
 kotofoto.ru##.city-confirm
+    ! top
 kotofoto.ru##.logo-top
+kotofoto.ru##.stickyfid.stickylid:style(position:static !important)
+    ! banners and promos
 kotofoto.ru##.centalslider
 kotofoto.ru##.ban1slider
 kotofoto.ru##.bannerbl
 kotofoto.ru##.tovsl.blochvov
-kotofoto.ru##.stickyfid.stickylid:style(position:static !important)
 kotofoto.ru##.slprisecarta
 kotofoto.ru##div.catdescription
 kotofoto.ru##.sale-violet-row
 kotofoto.ru##.ketkoin-prod
+kotofoto.ru##.aprove_ul
+    ! other
 kotofoto.ru##.footergsboks
 ||selcdn.net/img/foter/$image
 
@@ -18697,6 +18718,9 @@ megabonus.com##.megabonus_projects
     ! popups
 megafon.ru##.ng_personal_popup
 megafon.ru##.ng_personal_popup_start
+megafon.ru##[class*=ConfirmRegionTooltip]
+megafon.ru##[class^=FixedSummary]
+megafon.ru##[class^=Notification]:has-text(куки)
     ! banners and promos
 ||megafon.ru/static/blocks/newLkBanner/$image
 ||megafon.ru/tariffs/media/$image
@@ -18709,12 +18733,18 @@ megafon.ru##.loyalty-system-buttons__wrapper-container
 megafon.ru##.start-price-block
 megafon.ru##.gtm-banner
 megafon.ru##.main-page-banner-v2
-    ! other
-megafon.ru##.mfui-tile > svg
+megafon.ru##[class*=CreditOrInstallmentTooltip]
+megafon.ru##[class*=GssGoodsLayout_wrapper]
+megafon.ru##[class^=MFBenefits]
+megafon.ru##[class^=ProductCard_installment]
+    ! apps
 megafon.ru##.footer__app-badge
 megafon.ru##.footer__networks-list
 megafon.ru##.footer-v2__apps-block
 megafon.ru##.footer-v2__apps-discount-container
+megafon.ru##[class^=AppLinks]
+    ! other
+megafon.ru##.mfui-tile > svg
 
 ! sbermegamarket.ru is now megamarket.ru
 ! see it in ozon&wb
@@ -19982,6 +20012,7 @@ mts.ru##.top-msg
 mts.ru##.mts-official-telegram-popup
 mts.ru##[class^=geolocation-confirm]
 mts.ru##[class^=toast-notification]
+mts.ru##.confirm-region-wrapper
     ! banners and promos
 mts.ru##.banner_htop.banner
 mts.ru###banner_po_umolchaniyu_dlya_ssp_vside
@@ -19993,6 +20024,12 @@ mts.ru##.card-benefits__margin
 mts.ru##.universal-header-banner__poster
 mts.ru##.benefits-option
 mts.ru##.mm-web-product-card-benefits
+! loans
+mts.ru##.product-bnpl-block
+mts.ru##.product-price-list-item__trade-in-button
+mts.ru##.product-price-list-item__or-caption
+    ! top
+mts.ru##.header-block__controls-wrapper--fixed:style(position:static !important)
     ! apps
 mts.ru##.article-block__body-app
 mts.ru##.article-block__body-content-bold:has-text(МТС Поиск)
@@ -20013,6 +20050,7 @@ mts.ru##.footer__text-wrapper
 mts-gpon.ru##.mx-trf-form
 !||mts.ru/api/banners - don't?
 !||mts.ru/api/sharing/counters - don't
+mts.ru##.sticky-panel
 
 mtservice.ru##.main_header__contacts
 
@@ -30092,6 +30130,7 @@ technologyadvice.com##.blog-single__back-btn
 technologys.info###rt-footer-surround
 
 ||technopark.ru/mindbox-services-worker.js
+||technopark.ru/technopark/photos_resized/shelf_banner$image
     ! popups
 technopark.ru##.mail-collect-popup
 technopark.ru##.js-city-picker-popup.city-picker
@@ -30103,6 +30142,12 @@ technopark.ru##.tp-popover-new
     ! banners and promos
 technopark.ru##.js-gtm-promo
 technopark.ru##.personal-price-banner
+technopark.ru##.brand-recommendation
+technopark.ru##.product-prices__bonus
+technopark.ru##.app-footer-apps
+technopark.ru##.product-page-short-accessories
+technopark.ru##.product-page-related-products
+technopark.ru##.innova-new-block
     ! top
 technopark.ru##.header__main--fixed:style(position:static !important)
     ! other
