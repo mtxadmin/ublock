@@ -176,7 +176,7 @@
 ! general first, specific last
 ! comments is in separate line(s) before the string (as uBlock Origin editor says, inline is not correct)
 !
-~avtocod.ru##[class*="callback"]:not(html):not(body):not(article):not(.has-validation-callback)
+~avtocod.ru,~tab.digital##[class*="callback"]:not(html):not(body):not(article):not(.has-validation-callback)
     ! Exclusions:
     !
     ! .has-validation-callback :
@@ -184,14 +184,15 @@
     ! avtocod.ru - .callback-form* are auth-form
     ! expats.cz - job apply form: default-form has-validation-callback
     ! saphyte.cloud - login form: login-form has-validation-callback
+    ! tab.digital - endpoint
 ##[id*="callback"]:not(html):not(body):not(article)
 !
 !! very good and useful rules in general, but messengers, streaming and webinar services must be excluded
-~advance24.online,~alfabank.ru,~aliexpress.*,~audacityteam.org,~auto.ru,~bastyon.com,~bitrix24.*,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~meet.google.com,~gosuslugi.ru,~hh.ru,~kimi.com,~ktalk.ru,~libreelec.tv,~lichess.org,~menunedeli.*,~openai.com,~pocketnet.app,~profteh.com,~pruffme.com,~psbank.ru,~qwen.ai,~rc.show,~sberbank.ru,~striveapp.ru,~teleboss.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~veosuno.ru,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[class*="Chat"]:not(html):not(body):not(article):not(section)
-~advance24.online,~alfabank.ru,~aliexpress.*,~audacityteam.org,~auto.ru,~bastyon.com,~bitrix24.*,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~meet.google.com,~gosuslugi.ru,~hh.ru,~kimi.com,~ktalk.ru,~libreelec.tv,~lichess.org,~menunedeli.*,~openai.com,~pocketnet.app,~profteh.com,~pruffme.com,~psbank.ru,~qwen.ai,~rc.show,~sberbank.ru,~striveapp.ru,~teleboss.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~veosuno.ru,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[id*="Chat"]:not(html):not(body):not(article):not(section)
-~advance24.online,~alfabank.ru,~aliexpress.*,~audacityteam.org,~auto.ru,~bastyon.com,~bitrix24.*,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~meet.google.com,~gosuslugi.ru,~hh.ru,~kimi.com,~ktalk.ru,~libreelec.tv,~lichess.org,~menunedeli.*,~openai.com,~pocketnet.app,~profteh.com,~pruffme.com,~psbank.ru,~qwen.ai,~rc.show,~sberbank.ru,~striveapp.ru,~teleboss.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~veosuno.ru,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"]):not([class*="skachat"])
-~advance24.online,~alfabank.ru,~aliexpress.*,~audacityteam.org,~auto.ru,~bastyon.com,~bitrix24.*,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~meet.google.com,~gosuslugi.ru,~hh.ru,~kimi.com,~ktalk.ru,~libreelec.tv,~lichess.org,~menunedeli.*,~openai.com,~pocketnet.app,~profteh.com,~pruffme.com,~psbank.ru,~qwen.ai,~rc.show,~sberbank.ru,~striveapp.ru,~teleboss.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~veosuno.ru,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"]):not([id*="skachat"])
-/chat/*$domain=~advance24.online|~alfabank.ru|~aliexpress.*|~audacityteam.org|~auto.ru|~bastyon.com|~bitrix24.*|~bizon365.ru|~clickmeeting.com|~deepseek.com|~dhgate.com|~facebook.com|~fincult.info|~followme2serbia.com|~meet.google.com|~gosuslugi.ru|~hh.ru|~kimi.com|~ktalk.ru|~libreelec.tv|~lichess.org|~menunedeli.*|~openai.com|~pocketnet.app|~profteh.com|~pruffme.com|~psbank.ru|~qwen.ai|~rc.show|~sberbank.ru|~striveapp.ru|~teleboss.ru|~telemetr.io|~telethon.dev|~tenchat.ru|~theb.ai|~twitch.tv|~veosuno.ru|~vk.com|~vtb.ru|~worknf.ru|~yandex.ru|~youtube.com|~zoom.us
+~advance24.online,~alfabank.ru,~aliexpress.*,~audacityteam.org,~auto.ru,~bastyon.com,~bitrix24.*,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~gdebenz.*,~meet.google.com,~gosuslugi.ru,~hh.ru,~kimi.com,~ktalk.ru,~libreelec.tv,~lichess.org,~menunedeli.*,~openai.com,~pocketnet.app,~profteh.com,~pruffme.com,~psbank.ru,~qwen.ai,~rc.show,~sberbank.ru,~striveapp.ru,~teleboss.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~veosuno.ru,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[class*="Chat"]:not(html):not(body):not(article):not(section)
+~advance24.online,~alfabank.ru,~aliexpress.*,~audacityteam.org,~auto.ru,~bastyon.com,~bitrix24.*,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~gdebenz.*,~meet.google.com,~gosuslugi.ru,~hh.ru,~kimi.com,~ktalk.ru,~libreelec.tv,~lichess.org,~menunedeli.*,~openai.com,~pocketnet.app,~profteh.com,~pruffme.com,~psbank.ru,~qwen.ai,~rc.show,~sberbank.ru,~striveapp.ru,~teleboss.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~veosuno.ru,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[id*="Chat"]:not(html):not(body):not(article):not(section)
+~advance24.online,~alfabank.ru,~aliexpress.*,~audacityteam.org,~auto.ru,~bastyon.com,~bitrix24.*,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~gdebenz.*,~meet.google.com,~gosuslugi.ru,~hh.ru,~kimi.com,~ktalk.ru,~libreelec.tv,~lichess.org,~menunedeli.*,~openai.com,~pocketnet.app,~profteh.com,~pruffme.com,~psbank.ru,~qwen.ai,~rc.show,~sberbank.ru,~striveapp.ru,~teleboss.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~veosuno.ru,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[class*="chat"]:not(html):not(body):not(article):not(section):not([class*="perchatki"]):not([class*="skachat"])
+~advance24.online,~alfabank.ru,~aliexpress.*,~audacityteam.org,~auto.ru,~bastyon.com,~bitrix24.*,~bizon365.ru,~clickmeeting.com,~deepseek.com,~dhgate.com,~facebook.com,~fincult.info,~followme2serbia.com,~gdebenz.*,~meet.google.com,~gosuslugi.ru,~hh.ru,~kimi.com,~ktalk.ru,~libreelec.tv,~lichess.org,~menunedeli.*,~openai.com,~pocketnet.app,~profteh.com,~pruffme.com,~psbank.ru,~qwen.ai,~rc.show,~sberbank.ru,~striveapp.ru,~teleboss.ru,~telemetr.io,~telethon.dev,~tenchat.ru,~theb.ai,~twitch.tv,~veosuno.ru,~vk.com,~vtb.ru,~worknf.ru,~yandex.ru,~youtube.com,~zoom.us##[id*="chat"]:not(html):not(body):not(article):not(section):not([id*="perchatki"]):not([id*="skachat"])
+/chat/*$domain=~advance24.online|~alfabank.ru|~aliexpress.*|~audacityteam.org|~auto.ru|~bastyon.com|~bitrix24.*|~bizon365.ru|~clickmeeting.com|~deepseek.com|~dhgate.com|~facebook.com|~fincult.info|~followme2serbia.com|~gdebenz.*|~meet.google.com|~gosuslugi.ru|~hh.ru|~kimi.com|~ktalk.ru|~libreelec.tv|~lichess.org|~menunedeli.*|~openai.com|~pocketnet.app|~profteh.com|~pruffme.com|~psbank.ru|~qwen.ai|~rc.show|~sberbank.ru|~striveapp.ru|~teleboss.ru|~telemetr.io|~telethon.dev|~tenchat.ru|~theb.ai|~twitch.tv|~veosuno.ru|~vk.com|~vtb.ru|~worknf.ru|~yandex.ru|~youtube.com|~zoom.us
     ! Exclusions (combined. Add them to all rules to be sure):
     ! advance24.online - videos/streams
     ! aliexpress.com - useful support chat
@@ -208,6 +209,7 @@
     ! facebook.com - chats in a social network
     ! fincult.info - don't remember, I think, videos/streams
     ! followme2serbia.com - .category-dostoprimechatelnosti
+    ! gdebenz.ru/org - useful service
     ! meet.google.com - conference/chat service
     ! gosuslugi.ru - useful support chat
     ! hh.ru - chats with employers on a job site
@@ -1140,7 +1142,7 @@ directtalk.com.br  # from EasyList, ShadowWhisperer's Chats
 
 direqt.ai  # from ShadowWhisperer's Chats
 
-disrepush.com  # from Adguard
+disrepush.com  # from Adguard  # Checked:2026-07-09
 
 dixa.com  # from ShadowWhisperer's Chats
 
@@ -1386,7 +1388,7 @@ freshbots.ai  # from Adguard and ShadowWhisperer's Chats
 
 ! freshchat.com in _marketing__a_lot_of_subs
 
-frogator.com  # from Adguard
+frogator.com  # from Adguard  # Checked:2026-07-09
 
 frontapp.com
 !+  data.frontapp.com
@@ -1837,7 +1839,7 @@ leadia.services  #api.cloudleadia.com  #form.cloudleadia.com
     ##.leadia_widget_text
     ##.lw_minimized
 
-leadnumber.ru  # from Ru AdList  # Checked:2026-05-14
+leadnumber.ru  # from Ru AdList
 
 leadoo.com$important  # chatbot  # "turn website visitors into qualified leads"
 interactiveads.ai$important  # leadoo
@@ -1982,7 +1984,7 @@ marketingcontrols.com  # push ads  # "Click Allow to confirm that you are not a 
 marva.ru$important  # "Зачем нужен онлайн-консультант?"  # Checked:2026-06-13
 
 master-push.com  # from Adguard
-master-push.net  # from Adguard
+master-push.net  # from Adguard  # Checked:2026-07-09
 
 maxarta.com  # bazarro
 
@@ -2226,7 +2228,7 @@ o-key.online  # o-key.ai
 o-key-ai.ru  # o-key.ai  # Checked:2026-05-02
 o-keyai.tilda.ws  # o-key.ai
 ai4bot.ru  # o-key.ai
-biz-automation.tech  # o-key.ai
+biz-automation.tech  # o-key.ai  # Checked:2026-07-09
 for-you.dev  # o-key.ai
 okey-ai.pro  # Checked:2026-03-13
 okey-ai.xyz  # Checked:2026-05-02
@@ -2429,7 +2431,7 @@ prowlapp.com
 
 psh.one  # push ad scripts and empty root
 
-pshmetrk.com  # from iam-py-test's antimalware  # Checked:2026-05-14
+pshmetrk.com  # from iam-py-test's antimalware
 
 psplugin.com  # from ShadowWhisperer's Chats
 
@@ -2469,7 +2471,7 @@ push.express$important  # push ads network
 
 push.gold$important  # push ads network  # Zombie:2022-09-20
 
-push.guru$important  # push ads network  # Checked:2026-05-14
+push.guru$important  # push ads network
 
 push.house$important  # push ads network
 gotohouse1.club  # push.house
@@ -2562,7 +2564,7 @@ pushbasitop.ru$important  #pushprofit.ru
 
 pushbaza.com  # from Fanboy's, Adguard, EasyList, Ru AdList
 
-pushbeacon.com  # from ShadowWhisperer's Ads  # Checked:2026-05-02
+pushbeacon.com  # from ShadowWhisperer's Ads
 
 pushbird.com  # from Adguard
 
@@ -2704,7 +2706,7 @@ pushine.info  # from Ru AdList
 
 pushington.info  # from Ru AdList
 
-pushingwatchfulturf.com  # from EasyList
+pushingwatchfulturf.com  # from EasyList  # Checked:2026-07-09
 
 pushinkaa.com  # from GoodbyeAds
 
@@ -2813,8 +2815,6 @@ pushnevis.com  # from Adguard
 
 pushnews.eu
 pushnews.org  # from Adguard
-pushnews24.com  # from GoodbyeAds  # Checked:2025-12-23
-
 pushnice.com  # from Adguard
 
 pushninja.com  # from ShadowWhisperer's Ads
@@ -2845,7 +2845,7 @@ pushologies.com  # from ShadowWhisperer's Ads
 
 pushoperations.com  # from GoodbyeAds
 
-pushort.com  # from EasyList  # Checked:2026-03-13
+pushort.com  # from EasyList
 
 pushosub.com  # from Adguard
 
@@ -2876,7 +2876,7 @@ pushpong.net  # from GoodbyeAds and EasyList
 
 pushpro.co.za  # from Adguard
 
-pushpro.io  # from ShadowWhisperer's Ads  # Checked:2026-06-13
+pushpro.io  # from ShadowWhisperer's Ads
 
 pushprofit.net  # from EasyList
 
@@ -3022,7 +3022,7 @@ qbutton.ru
 
 qepolax.com  # from Ru AdList, Adguard
 
-qform24.com  # from Adguard
+qform24.com  # from Adguard  # Checked:2026-07-09
 
 qmerce.com
 
@@ -3190,7 +3190,7 @@ rulai.wpenginepowered.com
 
 ruralrobin.com  # from Adguard
 
-rvrpushserv.com  # from GoodbyeAds
+rvrpushserv.com  # from GoodbyeAds  # Checked:2026-07-09
 rvrpushsrv.com  # from GoodbyeAds  # Checked:2026-01-07
 
 saascredit.ru
@@ -3342,7 +3342,7 @@ skobeeff.ru  #widget.skobeeff.ru
 
 skorozvon.ru  # "Cкорозвон является программой для холодных звонков"
 
-skytel.me  # Checked:2026-01-07
+skytel.me
 xn--80aklci5ak.xn--p1ai  # скайтел.рф
 skytel.mn
 
@@ -3997,7 +3997,7 @@ zotabox.com$important
 
 zpush.biz$important  # push ads network
 
-zunipush.com  # from ShadowWhisperer's Ads
+zunipush.com  # from ShadowWhisperer's Ads  # Checked:2026-07-09
 
 zvonobot.ru
 !+  pes.zvonobot.ru
