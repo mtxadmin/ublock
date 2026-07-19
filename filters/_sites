@@ -1417,7 +1417,15 @@ alfabank.ru##[data-test-id="advice-banner-content"]
 !alfabank.ru##section:has(>button:has-text(К вашей карте за минуту))
 alfabank.ru##section:has(>button:has-text(Альфа-Смарт))
 alfabank.ru##section:has(>button:has-text(/Зарплата каждый день|Деньги подешевели/))
-alfabank.ru##[data-test-id^="product-view-component"]:has-text(/Не ждите|Первое снятие бесплатно|Зарплата уже сегодня|Одобрили кредитную карту/)
+!
+! ранее (позднее при изменениях зацепила нужное)
+!alfabank.ru##[data-test-id^="product-view-component"]:has-text(/Не ждите|Первое снятие бесплатно|Зарплата уже сегодня|Одобрили кредитную карту/)
+! обновленный, более гранулярный вариант:
+! это строчки снизу под кнопками
+alfabank.ru##button:has-text(/Не ждите|Первое снятие бесплатно|Зарплата уже сегодня|Одобрили кредитную карту/)
+! а это кнопки целиком - тут аккуратнее
+alfabank.ru##[data-test-id^="product-view-component"]:has-text(/Не ждите зарплату|Одобрили (деньги|кредитную карту)/)
+!
 alfabank.ru##[data-test-id="main-carousel-wrapper"]:has-text(/Для вас|Деньги за рекомендации|Альфа-Выгодно|Лучший кэшбэк|Инвестиции/)
 alfabank.ru##[data-test-id="referral-carousel-widget"]
 alfabank.ru##[data-test-id="bonus-carousel"]
@@ -11205,6 +11213,10 @@ gdebenz.*###tab-pill
 gdebenz.ru##.gbc-a-ya,.bya,.prof-login:style(background-color:rgb(220, 160, 160) !important; background-image:none !important;)
 ! иконка внутри неё.
 gdebenz.ru##.bya
+! "Умный подбор" застрял в центре экрана. Сгоняем его вниз, чтобы не лез.
+gdebenz.ru###pick-float:style(bottom:0px !important)
+! После убирания лишних кнопок поправляем
+gdebenz.ru##.mtop:style(padding-top:30px !important)
 
 gde-cashback.ru##.month-cash
 gde-cashback.ru##a[href^="https://gde-cashback.ru/go/"]
