@@ -65,6 +65,13 @@
 ||yandex.kz/*/api/client-log
 ||yandex.net/*/api/client-log
 
+||ya.ru/*/api/*/log/
+||yandex.ru/*/api/*/log/
+||yandex.by/*/api/*/log/
+||yandex.com/*/api/*/log/
+||yandex.kz/*/api/*/log/
+||yandex.net/*/api/*/log/
+
 ||ya.ru/*/web-api/log
 ||yandex.ru/*/web-api/log
 ||yandex.by/*/web-api/log
@@ -136,6 +143,9 @@ ya.ru,yandex.*##.menu-plus-promo
 ya.ru,yandex.*##.mheader3__plus
 ya.ru,yandex.*##a[href^="http://plus.yandex."]
 ya.ru,yandex.*##a[href^="https://plus.yandex."]
+! новый домен для плюса
+ya.ru,yandex.*##a[href^="http://sp.yandex."]
+ya.ru,yandex.*##a[href^="https://sp.yandex."]
 ya.ru,yandex.*##[data-zone-name=yaPlusBadge]
 afisha.yandex.*##div:has-text(/^до [0-9]+%$/)
 
@@ -187,6 +197,7 @@ ya.ru##.market-feed
 market.yandex.*###\/content\/page\/fancyPage\/defaultPage\/loginAgitation
 market.yandex.*###\/marketfrontDynamicPopupLoader42:has-text(/(Войдите|в аккаунте)/i)
 market.yandex.*###\/content\/popup:has-text(/(Войдите|в аккаунте)/i)
+travel.yandex.*##div:matches-css(position:fixed):has(a[href*="go.yandex"])
 
 ! top banners
 ||avatars.mds.yandex.net/get-market-adv/
@@ -344,6 +355,9 @@ yandex.*##.map-controls:style(width:auto !important)
 ! https://travel.yandex.ru
 ||yastatic.net/s3/travel-frontend-illustrations/LotteryHeader$image
 ||yastatic.net/s3/travel-frontend-illustrations/DesktopIndexLogo$image
+! тут у них пробелы дизайнерские. Поэтому еще дублирующее правило
+ya.ru,yandex.*##a[href][aria-label^="Перейти на главную"]
+ya.ru,yandex.*##a[href][aria-label^="Перейти на"][aria-label*="главную"]
 
 ! оверлей поверх средней колонки, из-за этого не нажимается ничего там
 uslugi.yandex.ru##.Loader-Overlay
