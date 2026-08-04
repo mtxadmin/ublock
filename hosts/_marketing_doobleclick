@@ -76,6 +76,7 @@ _gaTrack.js  # from EasyPrivacy
 .initdoubleclickadselementcontent?
 ||google.com/ads/$important  # is in ABP
 ||google.com/afs/$important  # from ABP
+||google.com/log?$important
 ~zen.yandex.*##[class*="adsense"]:not(html):not(body):not(article)
 ##[id*="adsense"]:not(html):not(body):not(article)
     ! is in CJX's EasyList Lite
@@ -642,6 +643,12 @@ adsense.su$important  # adsense
     /adsense$important  # adsense
     /adsid/*  # adsense
 
+geoapi123.appspot.com  # [Google / DoubleClick][AS15169]  # from MVPS
+ip-geo.appspot.com  # [Google / DoubleClick][AS15169]  # from MVPS
+nojsstats.appspot.com  # [Google / DoubleClick][AS15169]  # from MVPS
+
+dmtry.com  # is in Adguard
+
 ! Google DoubleClick domains
 !# [Google / DoubleClick][AS15169][66.249.64.0 - 66.249.95.255]
 !# [Google / DoubleClick][AS15169][72.14.192.0 - 72.14.255.255]
@@ -1001,6 +1008,9 @@ assistant.google.com  # Google  ? Google Assistant (Does not appear to break it)
 fundingchoices.google.com$important  # from Fanboy's
 fundingchoicesmessages.google.com$important  # ad scripts  # is in uBlock filters  # is in 3 lists
 
+googleads.github.io$important
+    ||github.io/videojs-ima/
+
 googleadservices.com$important,all  # disable RU ADList exceptions
 !+  afs.googleadservices.com
 ! end of googleadservices.com
@@ -1223,6 +1233,10 @@ id.google.vu
 id.google.ws
 id.l.google.com
 
+mail-ads.google.com  # from ShadowWhisperer's URL Shorteners
+
+marketingplatform.google.com  # doubleclick
+
 googleplaysetvices.com  # from BlockListProject - Ads
 
 googlepositions.com  # from BlockListProject - Ads  # Checked:2025-08-16
@@ -1239,6 +1253,7 @@ adservice.google.cat
 adservice.google.boats
 adservice.google.berlin
 adservice.google.com.au
+adservice.g.cn
 attributiontrackingga.googlecode.com
 analytics-api-samples.googlecode.com$important
 afs.googleusercontent.com
@@ -1299,7 +1314,24 @@ appsgrowthpromo-pa.clients6.google.com  # ad xrhs
 #!alt7-mtalk.google.com
 #!alt8-mtalk.google.com
 
+mobileads.google.com
+
+partnerad.l.google.com  # from Disconnect
+
 plus.google.com
+
+video-stats.video.google.com  # from Disconnect
+    ||video-stats.video.google.  # from Ru AdList
+
+googleadsserving.cn  # from Adaway
+googleads-cn.com  # from EasyList
+googleadservices-cn.com  # from EasyList
+googlevads-cn.com  # from EasyList
+
+google-analyticals.com  # from uBlock filters – Unbreak
+
+googleanalytics.com  # from Peter Lowe's hosts file
+google-analytics-cn.com  # from EasyPrivacy
 
 ! googleapis.com ad&telemetry subdomains
 !googleapis.i.google.com  # from BlockListProject - Ads, 
@@ -1433,6 +1465,8 @@ zerostateproxy-pa.googleapis.com  # Google  # from ShadowWhisperer's Bloat
 ! https://www.reddit.com/r/homelab/comments/fuuhoz/how_to_know_the_real_site_names_behind_1e100net/
 !1e100.net
 
+googlefinland.com  # from ShadowWhisperer's Ads  # root redirects to ads.google.com
+
 googleoptimize.com$important  # Google - Tracker  # from Quidsup NoTrack-Blocklist and EasyPrivacy
 googleoptimize-cn.com  # from EasyPrivacy
 
@@ -1453,51 +1487,12 @@ googletraveladservices.com$important
 
 csi.gstatic.com$important  # from many lists
 
-#! Update: it is not very good solution to disable youtube ads from hosts.
-#!r3---sn-n8v7knee.googlevideo.com
-#!r3---sn-385ou-8v1s.googlevideo.com
-#!r1---sn-385ou-8v1z.googlevideo.com
-#!r5---sn-385ou-8v1s.googlevideo.com
-#!r6---sn-385ou-8v1s.googlevideo.com
-#!r4---sn-385ou-8v1s.googlevideo.com
-#!r5---sn-385ou-8v1z.googlevideo.com
-#!r6---sn-385ou-8v1z.googlevideo.com
+mng-ads.com
 
 urchin.com$important #[Urchin Tracking Module]  # doubleclick  # from MVPS
-
-geoapi123.appspot.com  # [Google / DoubleClick][AS15169]  # from MVPS
-ip-geo.appspot.com  # [Google / DoubleClick][AS15169]  # from MVPS
-nojsstats.appspot.com  # [Google / DoubleClick][AS15169]  # from MVPS
-
-||google.com/log?$important
-
-googleanalytics.com  # from Peter Lowe's hosts file
-google-analytics-cn.com  # from EasyPrivacy
-
-mail-ads.google.com  # from ShadowWhisperer's URL Shorteners
-
-marketingplatform.google.com  # doubleclick
-
-partnerad.l.google.com  # from Disconnect
-
-video-stats.video.google.com  # from Disconnect
 
 fcmatch.youtube.com
 
 s.youtube.com  # from Ru AdList
 
-||video-stats.video.google.  # from Ru AdList
-
-googleads.github.io$important
-||github.io/videojs-ima/
-
-googleadsserving.cn  # from Adaway
-googleads-cn.com  # from EasyList
-googleadservices-cn.com  # from EasyList
-googlevads-cn.com  # from EasyList
-
-google-analyticals.com  # from uBlock filters – Unbreak
-
-app.goo.gl  # Google  ? URL Shortener  # from ShadowWhisperer's Bloat
-
-googlefinland.com  # from ShadowWhisperer's Ads  # root redirects to ads.google.com
+!! todo
