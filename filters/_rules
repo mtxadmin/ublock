@@ -1746,12 +1746,13 @@ _rebid.js  # from EasyList
     ! is in EasyList
     ##.advertisement-content
 ##[id*="advert"]:not(html):not(body):not(article)
-~alfabank.ru,~aliexpress.com,~aliexpress.ru,~clickup.com,~dzen.ru,~gosuslugi.ru,~ultimate-guitar.com,~westerndigital.com,~music.yandex.*##[class*="Banner"]:not(html):not(body):not(article):not(#Header)
+~alfabank.ru,~aliexpress.com,~aliexpress.ru,~clickup.com,~dzen.ru,~gosuslugi.ru,~ostrovok.ru,~ultimate-guitar.com,~westerndigital.com,~music.yandex.*##[class*="Banner"]:not(html):not(body):not(article):not(#Header)
     ! Exclusions:
     ! alfabank - rus bank, some internal info
     ! clickup.com - main section, .hasBanner
     ! dzen.ru - .article-thematic-banners__articleThematicBanners-lP - это полезная кнопка, пусть будет. Плюс еще там текст статьи .article-render__withThematicBanners-7w, ну так. See #83
     ! gosuslugi.ru - rus gov service, some internal info
+    ! ostrovok.ru: main div (ApartmentPage_hotelWrapper_newBanner__xxx)
     ! ultimate-guitar.com - main div (.SiteWideBanner)
     ! music.yandex.ru - main div (.WithTopBanner*)
 ##[id*="Banner"]:not(html):not(body):not(article)
