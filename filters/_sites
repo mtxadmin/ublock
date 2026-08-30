@@ -2122,6 +2122,7 @@ apexsql.com###top_menu_main_logo
 aphorismos.ru/_informer/*
 
 ||apkpure.com/analytics
+apkpure.com##.nav-download-management
 
 apnews.com##.Page-trendingZephr
 apnews.com##.Page-header-stickyWrap:style(position:static !important)
@@ -15517,6 +15518,7 @@ kaspi.kz##.smart-banner
 kaspi.kz##.main-screen-index__phone
 kaspi.kz##.main-screen-index
 kaspi.kz##.app-qr
+kaspi.kz##.main-screen-index__wrapper
 
 kasta.ua##.widget-bar
 
@@ -16081,6 +16083,9 @@ kontur.ru##.support-center-container
 ||kontur.ru/Files/Modules/ProductActionPopup/$image
 ||kontur.ru/Files/Modules/Product/$image
 kontur.ru##.policy-notification
+kontur.ru##[class*=actionsWrapper]
+kontur.ru##[class*=_container_]:has-text(Начните изучать)
+kontur.ru##[class*=_showNearSupportCenter]
 
 ||koolinar.ru/media/svg/new-logo-header.svg
 koolinar.ru##.u-header:style(position:static !important)
@@ -17994,9 +17999,13 @@ mafix.ru##.service
 magazilla.ru##.tdtopline
 
 ||magazin01.ru/bitrix/templates/aspro_max_copy/images/loaders/$image
-magazin01.ru##.sections-slider
-magazin01.ru###popup_iframe_wrapper
+    ! popups
 magazin01.ru##.cd-modal-bg
+magazin01.ru###popup_iframe_wrapper
+magazin01.ru###obRoot:has(div[id=obTip])
+    ! banners and promos
+magazin01.ru##.sections-slider
+    ! other
 magazin01.ru##+js(rc, wrapper1)
 magazin01.ru###headerfixed
 magazin01.ru##.sticky-block:style(position:static !important)
@@ -19017,6 +19026,9 @@ metro-cc.ru##.modal-root
     ! banners and promos
 metro-cc.ru##.teaser-branded
 metro-cc.ru##.banner-retail-rocket
+! seo
+metro-cc.ru##.text-bottom
+metro-cc.ru##.padding-from-footer
     ! labels
 metro-cc.ru##.product-card-photo__flags
 metro-cc.ru##.product-card-photo__discount
@@ -31023,6 +31035,8 @@ tomshardware.com##.u-scrollButtons
 tomshardware.com##.trophyShowcase
 tomshardware.com##.future_quickThreadWidget
 tomsguide.com##.sticky-nav
+tomsguide.com###publisherDetails
+tomsguide.com##.custom-link-menu-item
 ! tomsguide.com
 !||futurecdn.net$xhr - don't, its their mini-CDN site. images are there too now
 !||api.vanilla.futurecdn.net/article/v3/related
