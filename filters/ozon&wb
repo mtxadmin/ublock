@@ -309,9 +309,11 @@ ozon.*##[data-widget="travelBanner"]
 ozon.*##div[data-widget="skuGrid"]:has-text(/Вы покупали|Вы смотрели/)
 ozon.*##div[data-widget="skuLine"]:has(span:has-text(Вы смотрели))
 ozon.*##div[data-widget-disallow] div:has-text(/Вы (смотрели|покупали)/)
+ozon.*##[data-widget="tileGridDesktop"]:has(span:has-text(Вы смотрели))
 ozon.*##div[data-widget="skuGrid"]:has-text(Рекомендуем):matches-path(/cart)
 ozon.*##[data-widget=tileScrollDesktop]:has(span.tsHeadline600Medium:has-text(Покупают вместе))
 ozon.*##[data-widget=tileScrollDesktop]:has(span.tsHeadline600Medium:has-text(Рекомендуем также))
+ozon.*##[data-widget="tileGridDesktop"]:has(span:has-text(Рекомендуем также))
 !ozon.*##:not([data-widget="modalLayout"]) > * > [data-widget="skuGrid"] - Ru AdList rule, но тоже слишком широкое. Активное на 2024-03
 ! Не, там неплохие рекомендации. Да, там заметно есть навязчивая реклама, но на удивление вменяемо (хотя несколько позиций достали, потом уберу их как делал с Али).
 ! Плюс, это всё сначала грузится и показывается, а потом резко исчезает - не нравится. Если бы отрабатывало быстрее, было бы приемлемо, а так не особо.
