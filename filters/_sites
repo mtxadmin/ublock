@@ -4403,7 +4403,7 @@ bikelifeforms.ru###header
 bikelifeforms.ru###plus
 ||bikelifeforms.ru/wp-content/themes/bike/images/bike-repair-bottom.jpg
 
-bild.de$doc,replace=/"adBlockWallEnabled":true/"adBlockWallEnabled":false/  # from uBlock filters
+!bild.de$doc,replace=/"adBlockWallEnabled":true/"adBlockWallEnabled":false/  # from uBlock filters
 
 bilee.com##.navbar
 
@@ -12074,15 +12074,16 @@ gosnomerok.pro##.eb-dialog
 
 ! I strongly dislike telemetry, but this seems legitimate. O-o-ok.
 ! update: or not? hmm..
-||gosuslugi.ru/api/opentracing
-||gosuslugi.ru/api/opentracing$redirect-rule=noopjson
-||gosuslugi.ru/health/
-||gosuslugi.ru/health/$redirect-rule=noop.js
+! update2: possibly need retesting
+!||gosuslugi.ru/api/opentracing
+!||gosuslugi.ru/api/opentracing$redirect-rule=noopjson
+!||gosuslugi.ru/health/
+!||gosuslugi.ru/health/$redirect-rule=noop.js
 ||gosuslugi.ru/*/banners$redirect-rule=noopjs
-||gosuslugi.ru/api/mp-metrics
-||gosuslugi.ru/api/mp-metrics$redirect-rule=noop.json
-||gosuslugi.ru/node-api/components-metrics
-gosuslugi.ru##+js(aeld, click, , runAt, end, elements, a)
+!||gosuslugi.ru/api/mp-metrics
+!||gosuslugi.ru/api/mp-metrics$redirect-rule=noop.json
+!||gosuslugi.ru/node-api/components-metrics
+!gosuslugi.ru##+js(aeld, click, , runAt, end, elements, a)
 gosuslugi.ru##.footer:style(position:static !important)
 gosuslugi.ru##.p-footer:style(position:static !important)
 !test
