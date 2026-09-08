@@ -497,6 +497,8 @@ mc.yandex.ru$important,all
 !+  mediascope.mc.yandex.ru
 ! end of mc.yandex.ru
     mc.yandex.ru$redirect-rule=noop.js
+    ! внезапно, некоторые сайты при мягкой блокировке ломаются, а при жесткой работают. Пример - gosuslugi.ru (Angular). В таких случаях отключаем редирект-пустышку
+    mc.yandex.ru$redirect=none,important,domain=gosuslugi.ru
 mc.yandex.tj
 mc.yandex.tm
 mc.yandex.uz
