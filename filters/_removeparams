@@ -883,7 +883,7 @@ $removeparam=from,from=~alfabank.ru|~jlcpcb.com|~account.mail.ru|~id.mail.ru|~au
     ! And yandex rules:
     ||yandex.*/news/$removeparam=from  # from Adguard
     ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*  # from Ru AdList
-    ||yandex.*/news*?from=main$document=campaign,removeparam=|,domain=yandex.*  # from Ru AdList
+    !||yandex.*/news*?from=main$document=campaign,removeparam$domain=yandex.*  # from Ru AdList
     ?from=tabbar$document,removeparam=|from,domain=ya.ru|yandex.*  # from Ru AdList
     ?from=yanews$document,removeparam=|  # from Ru AdList
     from=*_portal&lang=$document,removeparam=|,domain=yandex.*  # from Ru AdList
@@ -3721,11 +3721,11 @@ $removeparam=frommail,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=fromnews,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=fromprefix,domain=mail.ru|sportmail.ru  # from Ru AdList
 $removeparam=fromwidget,domain=mail.ru|sportmail.ru  # from Ru AdList
-$removeparam=h,domain=mail.ru,imgsmail.ru  # tracker imgs & links
+$removeparam=h,domain=mail.ru|imgsmail.ru  # tracker imgs & links
 $removeparam=hasnavig,domain=mail.ru  # from Ru AdList
 $removeparam=mailday,domain=mail.ru  # from Ru AdList
-$removeparam=message_id,domain=mail.ru,imgsmail.ru  # tracker imgs & links
-$removeparam=/^email/,domain=mail.ru,imgsmail.ru  # tracker imgs & links
+$removeparam=message_id,domain=mail.ru|imgsmail.ru  # tracker imgs & links
+$removeparam=/^email/,domain=mail.ru|imgsmail.ru  # tracker imgs & links
 ! $removeparam=rf,domain=mail.ru|sportmail.ru  # from Ru AdList - see rf
 $removeparam=smotri_id,domain=mail.ru|sportmail.ru  # from Ru AdList, modified
     ! smotri_id=$document,removeparam=|smotri_id,domain=mail.ru  # from Ru AdList
