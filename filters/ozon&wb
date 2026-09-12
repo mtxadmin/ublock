@@ -262,6 +262,8 @@ finance.ozon.ru##.title:has-text(приложени)
 ozon.*##div:has([data-widget="modalLayout"]):has-text(Списки стали личными подборками)
 ozon.*##[data-widget="filtersTagList"] div:matches-css(position:fixed)
 ozon.*##[class="vue-portal-target"]:has-text(Успейте получить баллы)
+ozon.*##[data-testid="notice-modal-paranja"]:has-text(/Без переплат|по кредитной карте|За покупки картой|до 100% расходов|/)
+ozon.*##[data-testid="notice-modal-paranja"]:has(button:has-text(Оформить карту))
     ! banners and promos
 ||ozone.ru/assets/*-banner$script
 ||ozon.ru/graphics/img/  # from Ru AdList
@@ -600,7 +602,7 @@ ozon.*##span:has-text(/^Частями по /)
 ozon.*##div:has(> span:has-text(В рассрочку))
 ozon.*##a[href^="/modal/pdp_installment"]
 ozon.*##div[data-widget="cellList"]:has-text(Без переплат)
-ozon.*##[data-testid="notice-modal-paranja"]:has-text(/Без переплат|по кредитной карте/)
+ozon.*##[data-testid="credit-card-widget"]
     ! seo
 ozon.*##[data-widget="semanticText"]
 ozon.*##[data-widget="tagList"]
