@@ -2474,11 +2474,12 @@ _tizers.  # from Ru AdList
 /promo_tracking.  # from EasyPrivacy
 /promo_tracking/*  # from EasyPrivacy
 /searchpromote/*
-~chess.com,~lichess.org,~xn--d1abb2a.xn--p1ai##[id*="Promo"]:not(html):not(body):not(article)
-~chess.com,~lichess.org,~xn--d1abb2a.xn--p1ai##[class*="Promo"]:not(html):not(body):not(article)
-~chess.com,~lichess.org,~xn--d1abb2a.xn--p1ai##[id*="promo"]:not(html):not(body):not(article)
+~chess.com,~lichess.org,~vknext.net,~xn--d1abb2a.xn--p1ai##[id*="Promo"]:not(html):not(body):not(article)
+~chess.com,~lichess.org,~vknext.net,~xn--d1abb2a.xn--p1ai##[class*="Promo"]:not(html):not(body):not(article)
+~chess.com,~lichess.org,~vknext.net,~xn--d1abb2a.xn--p1ai##[id*="promo"]:not(html):not(body):not(article)
     ! Exclusions:
     ! chess - promotion (pawn to)
+    ! vknext.net - main content
     ! xn--d1abb2a.xn--p1ai (едем.рф) - main content
 !
 ! too many exclusions
@@ -5064,11 +5065,12 @@ _snowstorm-min.js  # from Ru AdList
     ! pruffme.com - webinar service, countdown to start
     ! rc.show - webinar service, countdown to start
     ! usersdrive.com - file service, countdown is needed to download
-~gosuslugi.ru,~ktalk.ru,~life-pay.ru,~tomato-timer.com##[class^="timer"]:not(html):not(body):not(article)
-~gosuslugi.ru,~ktalk.ru,~life-pay.ru,~tomato-timer.com##[id^="timer"]:not(html):not(body):not(article)
+~gosuslugi.ru,~ktalk.ru,~librain.ru,~life-pay.ru,~tomato-timer.com##[class^="timer"]:not(html):not(body):not(article)
+~gosuslugi.ru,~ktalk.ru,~librain.ru,~life-pay.ru,~tomato-timer.com##[id^="timer"]:not(html):not(body):not(article)
     ! Exclusions:
     gosuslugi.ru - useful timers
     ktalk.ru - useful timers
+    librain.ru - download timer, but downloads are correct. Let it be as an exclusion.
     life-pay.ru - password recovery button (.timer_button or .timer-button)
     tomato-timer.com - useful timers
 ! ad countdowns
