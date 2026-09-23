@@ -1082,12 +1082,27 @@ affluentinvestor.com##center
 !||rl0.ru/afisha/$image - Hmm, in general, don't
 ||afisha.ru/img/top-banners/
 ||afisha.ru/v1/event/
+||afisha.ru/img/common/sber-prime/$image
+    ! top
 afisha.ru##div:matches-css(position:fixed)
+    ! popups
+afisha.ru##[data-test="CITY-SWITCHER"] > div:has-text(Ваш город)
+    ! banners and promos
 afisha.ru##span:has-text(Вместо рекламы)
 afisha.ru##div:has(>picture>img[alt="скачать приложение"])
 afisha.ru##section[aria-label="Смотреть в Okko"]
-afisha.ru##[class^=RunningLine_Container]
+afisha.ru##[data-test="SLIDER"]:has(img[src*="/img/common/sber-prime/"])
+!afisha.ru##[data-test="BUTTON CONTROL-PREV"]:has(img[src*="/img/common/sber-prime/"])
+    ! apps
 afisha.ru##[class^=Footer_App]
+afisha.ru##img[src*="/img/common/afisha-app-"]
+    ! sber chat
+||afisha.ru/img/common/ai/giga$image
+afisha.ru##a[href^="/ai/"]:has(img)
+afisha.ru##img[src^="/img/common/ai/"]
+afisha.ru###ai-assistant-input
+    ! other
+afisha.ru##[class^=RunningLine_Container]
 
 afisha21.ru###headers
 
@@ -5785,6 +5800,8 @@ cherrynudes.com##font
 cherrynudes.com##.entry-icon
 cherrynudes.com##.entry
 
+||chess.com/service/user-activity/chesscom.user_activity  # is in Adguard
+    ! popups
 ! freemium ads
 !chess.com##.upgrade-modal
 !chess.com###upgrade-modal
@@ -5797,9 +5814,12 @@ chess.com##.modal-trial-body
 chess.com##.modal-trial-header
 chess.com##.locked-message-locked
 chess.com###ready-to-play-banner
+chess.com##.cc-modal-backdrop
+chess.com##.modal-trial-guest
 ! other
 chess.com###old-browser-modal
 chess.com##.notifications-request-component
+    ! other
 chess.com##.chess-logo
 chess.com##.slideshow
 chess.com###dismissable-sidebar-embed-player-section
@@ -12833,6 +12853,7 @@ hcdatest.com###lz_overlay_eyecatcher
 ||h-cdn.com/loader.js?customer=
 
 hclips.com##.modal
+hclips.com##.modal-age-verification
 hclips.com##.header__network
 
 ||hd21.com/ajax/track?  # from uBlock filters
@@ -16927,8 +16948,6 @@ leroymerlin.kz,leroymerlin.ru##.header-inner:style(position:static !important)
 leroymerlin.kz,leroymerlin.ru##uc-header:style(position:static !important)
 leroymerlin.kz,leroymerlin.ru##uc-sticky-header:style(position:static !important)
 leroymerlin.kz,leroymerlin.ru##.mowk68k_header-footer
-! top banner
-leroymerlin.ru##[class$=_main_page] > picture
     ! location popup
 leroymerlin.kz,leroymerlin.ru##.header-location-hint
 leroymerlin.kz,leroymerlin.ru##.popover-location
@@ -16951,12 +16970,16 @@ leroymerlin.ru##div[data-qa-offer-carousel]
 leroymerlin.ru##div[data-qa-promo-carousel]
 ||leroymerlin.ru/*/shock-price.svg
 leroymerlin.ru##[data-qa^="shock-price"]
+! top banner
+leroymerlin.ru##[class$=_main_page] > picture
 ||lemanapro.ru/*/promorazdel$image
 lemanapro.ru##[data-qa-carousel]
 lemanapro.ru##[data-qa="offer-card-container"]
 lemanapro.ru##[data-qa="push-promo-banner"]
 lemanapro.ru##[data-qa="banners-carousel"]
 lemanapro.ru##[data-qa="page-banners"]
+! top banner
+lemanapro.ru##[class*=_placements]
     ! loans
 lemanapro.ru##[data-qa="yandexsplit_mf-pdp"]
     ! paying options
@@ -26396,6 +26419,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||fastpic.org/big/2014/0911/f7/f071114dc838a3dc45eb4905bf1d72f7.$image
 ||fastpic.org/big/2014/0928/8e/857466829f2ce49581748c58db009c8e.$image
 ||fastpic.org/big/2014/1002/bb/661adbf8cf781a107c1ee1a9eeba7dbb.$image
+||fastpic.org/big/2014/1016/e4/ee3c9f8b0be79b09a676e2278e0e5be4.$image
 ||fastpic.org/big/2015/0114/77/742af4484e5a47d1c390f01342c49477.$image
 ||fastpic.org/big/2015/0114/7e/4c4205e640dc636651d89f791266c37e.$image
 ||fastpic.org/big/2015/0114/cf/cef1b760fd8ce297a271f9fb16c099cf.$image
@@ -26766,6 +26790,7 @@ pornolab.net##.post-color-text:has-text(ЛОВИ ПОЗИТИФ)
 ||imageban.ru/out/2010/10/20/0ce29d01d1c696654b2b8eb182cdda9a.$image
 ||imageban.ru/out/2010/10/20/be80063170e5e41c8cecdaf060f9d1b4.$image
 ||imageban.ru/out/2018/12/06/028cbda372e272916502fa6d9a36818c.$image
+||imageup.ru/*.gif$image
 ||imgbox.com/16/5d/Bu61cBPB_o.$image
 ||imgbox.com/49/48/8jYsuzjl_o.$image
 ||imgbox.com/5e/3a/WeqiM7Ya_o.$image
@@ -29603,6 +29628,7 @@ sumtips.com##.primary-navbar__wrapper:style(position:static !important)
 ||suno.com/agg-receiver-service/
 ||suno.com/v1/initialize  # seems don't  # no, it's ok
 ||suno.com/9i3s/  # 1p script  # is in Adguard
+||cdn-o.suno.com/cms/*.mp4$media  # ad videos
     ! logos
 suno.com##a[href="/?homeNav=1"]:has(svg)
     ! popups
@@ -29610,9 +29636,19 @@ suno.com##a[href="/?homeNav=1"]:has(svg)
 suno.com###suno-toast-viewport-bottom:has-text(Song details updated successfully)
 suno.com###suno-toast-viewport-bottom:has-text(/^$/):style(height:auto !important)
 suno.com###suno-toast-viewport-top:has-text(/^$/):style(height:auto !important)
+suno.com##.absolute:has-text(Notifications)
     ! banners and promos
 suno.com##div:has-text(/^Upgrade to Pro$/)
 suno.com##div:has(>div:has-text(/^Upgrade for full song$/))
+! naggy texts on root
+suno.com##.\[\@media\(max-height\:699px\)\]\:mt-20
+! top banner
+suno.com##.w-full:has-text(Explore our best)
+! bottom toasts
+! don't block, or on-button popups will break
+!suno.com##next-route-announcer
+!suno.com##next-route-announcer ~ *
+    ! other
 
 sunoaiwiki.com##.right-sidebar:style(position:static !important)
 !sunoaiwiki.com##.sidebar-pane:style(position:static !important)
@@ -31675,6 +31711,8 @@ tproger.ru##.tp-layout-default__listok-top-container
 tproger.ru##.tp-widget-daily-call
 tproger.ru##.tp-information-warning
 
+tprokat.ru###popup_iframe_wrapper
+
 ||track24.ru/img/bnrs  # from Ru AdList  # post tracker service
 
 ! [EFF Tracker Detection] - from https://adaway.org/hosts.txt
@@ -32539,6 +32577,16 @@ unclinic.ru##.meta-cat
 unclinic.ru##.menu-item.btn
 
 understandingwar.org##.block-nice-menus:style(position:static !important)
+
+    ! popups
+undetectr.com##[class^=WelcomePopup_overlay]
+undetectr.com##[class^=ExitIntentPopup_overlay]
+undetectr.com##[class^=BuyFounderToasts]
+undetectr.com##[class^=AwardBadge]
+undetectr.com##[class^=StickyBottomBar]
+    ! top
+undetectr.com##[class^=AnnouncementBar]
+    ! other
 
     ! top
 unews.pro##.toolbarBox:style(position:static !important)
