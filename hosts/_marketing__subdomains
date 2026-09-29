@@ -1655,7 +1655,7 @@ insights.samsung.com  # from Adaway and NextDNS native-tracking-domains samsung
 ://insights-collector.  # from EasyPrivacy
 insights-collector.gog.com
 
-||link.$domain=~alfabank.ru,~storjshare.io
+||link.$domain=~alfabank.ru|~storjshare.io
     ! Exclusions:
     ! link.alfabank.ru - not an url shortener
     ! link.storjshare.io - not an url shortener
@@ -6929,9 +6929,11 @@ sp-consent.stuttgarter-zeitung.de  # from Adguard
 
 sumologic.stv.tv  # from uBlock filters
 
+!hcaptcha-assets-prod.suno.com  # don't
+!hcaptcha-endpoint-prod.suno.com  # don't
 m-stratovibe.prod.suno.com  # is in Adguard
     ||m-stratovibe.prod.suno.com^$xhr,redirect-rule=noop.json  # is in Adguard
-s.prod.suno.com  # only tracking scripts here
+!s.prod.suno.com  # only tracking scripts here  # update: don't, it blocks playing in some cases
 
 t.superjob.ru  # tracking image  # https://t.superjob.ru/i?...
 
@@ -7371,6 +7373,9 @@ adsassets-ipv6.waze.com  # from Adguard
 ads-resources.waze.com  # from Adguard
 
 a.wb.ru
+  ! a.wb.ru/sdk/sdk.js  # SDK для сбора аналитических данных и формирования цифрового отпечатка браузера
+  ! a.wb.ru/clickmap/sdk.js
+  ! a.wb.ru/e/
 
 demand.wbresearch.com
 
