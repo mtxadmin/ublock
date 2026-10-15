@@ -780,6 +780,8 @@ statchecker.yandex.uz
 static-mon.yandex.net$important,all  # is in Ru AdList, Adguard
     ||static-mon.yandex.net$script,redirect=noopjs  # is in Ru AdList
     ||static-mon.yandex.net$xmlhttprequest,redirect=nooptext  # from Ru AdList
+! and:
+    ||yandex.*/static-mon/event
 
 !strm.yandex.ru$important --video, don't block entirely
 !strm.yandex.net - maybe too
