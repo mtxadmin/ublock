@@ -2104,7 +2104,7 @@ $removeparam=/^stm_/i  # Campaign tracking (stm)  # from NeatURL
     ! shopee.ph$removeparam=stm_medium  # from Adguard
     ! shopee.ph$removeparam=stm_source  # from Adguard
 
-$removeparam=/^subid/i
+~vk.com,~vkuser.net$removeparam=/^subid/i
     ! $removeparam=subid1  # domain parking ids
     !   already blocked
     ! adcell.com$removeparam=subId  # from Adguard
@@ -4341,6 +4341,10 @@ substack.com$removeparam=publication_id  # from Adguard
 substack.com$removeparam=post_id  # from Adguard
 substack.com$removeparam=r  # from DandelionSprout's, Adguard
 substack.com$removeparam=triedRedirect  # from DandelionSprout's, Adguard
+
+suno.com$removeparam=pre_signup_origin
+suno.com$removeparam=redirected_from
+suno.com$removeparam=signup_source
 
 synergyacademy.com$removeparam=marketer  # ref
 synergyacademy.com$removeparam=produkt  # ref
