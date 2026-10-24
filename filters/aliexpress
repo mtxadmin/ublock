@@ -291,6 +291,7 @@ aliexpress.*##[data-floor-name="pc2024-sale-banner-placeholder"]
 aliexpress.*##[class^=InlineBanner]
 !
 ! подсовываемое промо-говно, карточки товаров
+! Update: да, всё верно, это промо-говно и мало общего с запросом. Хотя пустые ответы и выглядят не очень.
 aliexpress.ru##[class*=red-snippet_RedSnippet__vertical]:has(span[class^=snippet-element]:has-text(Рекомендуем))
 !aliexpress.ru##[data-type="UniversalSnippet"]:has([data-type="PartWrap-Text"]:has-text(Рекомендуем)) - это оставляет пробелы, более полный вариант вот:
 aliexpress.ru##[class*=SnowSearchProductFeed_List__universalSnippetLink]:has([data-type="PartWrap-Text"]:has-text(Рекомендуем))
