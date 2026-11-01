@@ -1449,6 +1449,13 @@ alfabank.ru##[data-test-id="investments-carousel"]
 alfabank.ru##[data-test-id="channel-cell--investment"]
 alfabank.ru##[data-test-id="channel-cell--al_fa_vygodno"]
 alfabank.ru##[data-test-id="channel-cell--whats_new"]
+alfabank.ru##section[data-test-id="event-triggered-widget"]
+alfabank.ru##[data-test-id="alfa-smart-trainer"]
+!alfabank.ru##.swiper - don't
+!alfabank.ru##.swiper-wrapper - don't
+alfabank.ru##[role=button]:has-text(/Альфа-(Смарт|Тревел)/)
+alfabank.ru##[data-test-id="marketplace-square-carousel-card"]
+alfabank.ru##[data-sdui-element="FigmaFrame"]:has-text(/Альфа-Интеллект/)
 ||alfabank.ru/public/s3/static/partneroffers/$image
 ||alfaonline.servicecdn.ru/public/s3/static/loyalty/$image
 ||alfaonline.servicecdn.ru/public/s3/static/partneroffers/$image
@@ -5635,6 +5642,8 @@ cdnnow.ru##.page-header--main.page-header:style(position:static !important)
 cdnvideo.ru##.top__new
 cdnvideo.ru##.clients
 
+||cdnvideohub.com/v3/events
+
 cellularnews.com##.sticky-show.sticky-social-media
 
 celsis.ru##.phone-first
@@ -5906,6 +5915,7 @@ chipdip.ru##.top-box-fixed:style(position:static !important)
 chipdip.ru###notification
 chipdip.ru###headerfixed:style(position:static !important)
 chipdip.ru##.header__menu:style(height:auto !important)
+chipdip.ru###platichastyami.platichastyami
 
 chipmk.ru###header
 
@@ -6894,6 +6904,8 @@ culture.ru##.header_search:style(position:static !important)
 
 currenttime.tv/a/signup-sidebar-widget/  # from Fanboy's
 currenttime.tv###snippet-censorship
+
+cursor.com##nav:style(translate:none !important)
 
 custhelp.com##.MessageContainerFailure.MessageContainer
 
@@ -12729,6 +12741,8 @@ hideproxy.me##.hidemeproxy__frame
 
 hidkitpros.com##.search-and-category-button
 
+hidnation.com##.cart-sidebar-trigger
+
 ! useless pictures with logo
 hinative.com##img[src*="ogp-v2.hinative.com/ogp/question"]
 
@@ -14153,6 +14167,10 @@ imdb.com##.ipc-poster-card__actions
 ! "Rent the film" again
 imdb.com##[data-testid="tm-box-wb-overflow"]
 imdb.com##.pro-upsell__link
+    ! regwall
+imdb.com##[class*=SignInGateCard]
+imdb.com##[data-testid="review-summary-teaser-card"]
+imdb.com##+js(rc,blur-[5px])
     ! other
 imdb.com##.oscars-site-stripe
 
@@ -19496,6 +19514,8 @@ mm.ru##.footer-contacts-download
 mm.ru##.mm-hint:has(.location-text-hint)
 mm.ru##.app-footer-top__column--app-store
 
+||live.mmcdn.com/minifap/
+
     ! top
 mmenu.com##.scroll_div:style(position:static !important)
 mmenu.com##.header
@@ -24705,6 +24725,7 @@ chat.qwen.ai##.font-semibold:has-text(Ask Qwen)
 chat.qwen.ai##.absolute:has-text(/^$/)
     ! other
 chat.qwen.ai##.chat-container-statement
+chat.qwen.ai##.satisfaction-rating
 
 qwerty.ru##.owl-carousel
 qwerty.ru###soch-icon
@@ -29650,6 +29671,7 @@ sumtips.com##.primary-navbar__wrapper:style(position:static !important)
 ||suno.com/agg-receiver-service/
 ||suno.com/v1/initialize  # seems don't  # no, it's ok
 ||suno.com/9i3s/  # 1p script  # is in Adguard
+    !||suno.com/9i3s/gs/ccm/
 ||cdn-o.suno.com/cms/*.mp4$media  # ad videos
     ! logos
 suno.com##a[href="/?homeNav=1"]:has(svg)
@@ -29659,6 +29681,7 @@ suno.com###suno-toast-viewport-bottom:has-text(Song details updated successfully
 suno.com###suno-toast-viewport-bottom:has-text(/^$/):style(height:auto !important)
 suno.com###suno-toast-viewport-top:has-text(/^$/):style(height:auto !important)
 suno.com##.absolute:has-text(Notifications)
+suno.com##.modal-overlay
     ! banners and promos
 suno.com##div:has-text(/^Upgrade to Pro$/)
 suno.com##div:has(>div:has-text(/^Upgrade for full song$/))
